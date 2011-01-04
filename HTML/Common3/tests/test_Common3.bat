@@ -1,0 +1,1 @@
+c:\xampp\php\phpunit.bat \Test\Standard c:\xampp\php\PEAR\HTML\Common3\tests\HTML_Common3_TestSuite_Standard3.php

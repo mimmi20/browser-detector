@@ -1,0 +1,1 @@
+c:\xampp\php\phpunit.bat \Test\HTML_CSS3_AllTests c:\xampp\php\PEAR\HTML\Common3\tests\HTML_CSS3_AllTests.php > c:\xampp\php\PEAR\HTML\Common3\tests\test_CSS3.txt

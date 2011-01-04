@@ -1,0 +1,194 @@
+@import url(pvg.head.css);
+@import url(standard_navigation.css);
+@import url(standard_modules.css);
+@import url(standard_forms.css);
+@import url(standard_zusatz.css);
+@import url(standard_google.css);
+/* @import url(mr_money.css); */
+
+* {margin:0;padding:0;}
+
+.floatfix                    {height:1%;}
+html>body .floatfix            {height:auto;overflow:hidden;}
+.clear                        {clear:both;padding-top:10px;}
+.clearfix:after             {content:".";display:block;height:0;clear:both;visibility:hidden;}
+/* Hides from IE-mac \*/
+* html .clearfix             {height:1%;}
+/* End hide from IE-mac */
+
+/* standards */
+body                        {font:12px Arial,Tahoma,sans-serif;min-width:1180px;}
+map                            {z-index:10000;}
+blockquote                    {padding-left:50px;}
+
+a {color:#00C;}
+a img {border:0;}
+a:hover {color:#f00;}
+a:visited {color:#551a8b;}
+
+li a                        {font-weight:normal;text-decoration:underline;}
+td                            {height:25px;line-height:25px;}
+thead td                    {background-color:#eaeaea;}
+h1                            {font-size:14px;display:block;margin:0;}
+hr, hr.light                {height:1px;width:555px;color:#f00;background:#f00;border:none;padding:0 10px;}
+hr.light                    {color:#ccc;background:#ccc;}
+a.top                        {float:right; width:30px;display:block;color:#fff;margin-right:10px;background:url(../resources/images/icons/top.gif) no-repeat right;text-decoration:none;}
+
+.ancor                        {background:#cf8;}
+.small                        {font-size:11px;color:#666;}
+.smallStd                    {font-size:11px;color:#000;}
+.smallest                    {font-size:10px;color:#666;}
+.normal                        {font-weight:normal;}
+.center                        {text-align:center;vertical-align:middle;}
+.red                        {color:#c03;}
+.green                        {color:#73ba24;}
+.lft                        {float:left;}
+.rgt                        {float:right;}
+.gradient                    {background:#fe0000 url(../resources/images/step_bg.gif) repeat-x;color:#fff;height:25px;text-align:left;padding:0 5px;}
+.dummyLnk                    {color:#00c !important;text-decoration:underline;cursor:pointer;}
+
+.h1                            {height:25px;font-weight:bold;text-indent:15px;background:#eaeaea url(../resources/images/info/info_service_bg.gif) no-repeat left;}
+.noBorder                    {border:0;vertical-align:middle;}
+.nowrap                        {white-space:nowrap;}
+
+/** min-width for IE **/
+* html #pageContainer        {width:expression(document.body.clientWidth < 1180 ? "1180px" : "auto");}
+
+#globalContent                {margin-left:220px;margin-right:200px;height:1%;}
+
+/* admedia */
+.adMedia                    {width:400px;padding:0 20px 0 40px;}
+.MainPage                    {height:320px;}
+.ContentPage                {height:510px;}
+* html .ContentPage            {height:570px;}
+
+#FlexTop                    {text-align:center;font-size:1px;}
+html>body #FlexTop div        {margin:0 auto;}
+#FlexSky                    {float:right;height:auto;width:175px;}
+#FlexPop                    {top:0;left:0;position:absolute;z-index:100000;}
+
+#pageRight                    {float:right;width:190px;height:auto;overflow:hidden;padding-right:10px;}
+#pageContent                {margin-top:5px;margin-bottom:5px;}
+
+/* überschriften */
+.pageContentHeader            {display:block;background:#f3f3f3;border:1px solid #eaeaea;}
+.pageContentHeader h1        {color:#fff;display:table;width:30%;font-weight:bold;line-height:21px;white-space:nowrap;padding:0 10px;background:#f00 url(/img/layout_products/ecken/rot_links.gif) no-repeat right top;}
+.pageContentHeader a        {float:right;line-height:21px;padding-right:10px;}
+* html .pageContentHeader h1 {display:inline;width:30%;padding:2px 10px;}
+
+.mainImage                    {border:1px solid #eaeaea;border-width:0 1px 1px 1px;}
+
+/* box in hauptkategorien */
+.startTipp                    {display:none;}
+.startBlock                    {margin-bottom:5px;}
+.startBlock img                {margin-right:10px;}
+.startBlock td                 {vertical-align:top;background:#FAFBF5;border:1px solid #eaeaea;}
+.startBlock p                {padding:5px 5px 5px 15px;letter-spacing:0.08em;margin-left:5px;line-height:12px;font-weight:bold;background:url(../resources/images/info/angebot_pfeil.gif) no-repeat left 9px;white-space:nowrap;}
+.startBlock a, a.main        {display:block;margin-left:19px;}
+a.main                        {line-height:20px;}
+
+/* thema des monats auf startseite */
+.topicOfMonth                {width:100%;margin-top:5px;}
+.topicOfMonth p                {padding:0 3px 5px 5px;border:1px solid #eaeaea;border-top:none;}
+.topicOfMonth p img            {float:left;width:170px;height:40px;margin:0 7px 0 -5px;}
+
+/* content */
+.text                        {border:1px solid #eaeaea;border-top:none;border-collapse:collapse;min-height:100px;}
+.text h1                    {color:#666;font-size:14px;font-weight:bold;padding-left:10px;margin-top:5px;}
+.text h2                    {width:80%;font-size:18px;font-weight:bold;padding:5px 5px 10px 5px;}
+.text h3                    {width:95%;font-size:13px;font-weight:bold;margin:10px 0 5px 10px;border-bottom:1px solid #eaeaea;}
+.text p                        {padding:0 10px 10px 10px;}
+.text table                    {font-size:12px;width:100%;}
+* html .text table            {width:99.7%;}
+.text table thead            {font-weight:bold;font-size:13px;padding:5px;background:#D1DEF7;}
+
+.text ul, .text ol                        {margin:.4em 2.5em;}
+.text ul li                                {background:url(../resources/images/info/info_pfeil.gif) no-repeat .3em .3em;padding:.3em 0 .3em 2em;list-style:none;}
+.text ul li a                            {font-weight:normal;text-decoration:underline;}
+/* farbwechsel bei listen */
+.text ul li.firstLi                        {background-color:#fff;}
+.text ul li.secondLi                    {background-color:#FAFBF5;}
+
+.text table.text_table                    {vertical-align:middle;background-color:#FAFBF5;}
+.text table.text_table thead            {font-weight:bold;font-size:13px;padding:5px;background:#D1DEF7;}
+.text table.text_table td                {padding:5px;border:1px solid #fff;}
+.text table.text_table td.leftCol        {text-align:left;padding-left:10px;font-weight:bold;}
+.text table.text_table td.mainCol        {background:#D1DEF7;}
+
+.iframe                            {display:table;text-align:center;}
+.clearframe                     {background:#F5F6F6;}
+.clearframe .iframe                {display:block;text-align:left;padding:0;}
+
+.inlineTbl                        {width:100%;margin:.41em 0 0 0;vertical-align:middle;border:1px solid #eaeaea;background:#fff;font-size:1em;}
+* html .inlineTbl table            {width:99.7%;}
+.text .inlineTbl                {margin:.41em 2.55em .83em 2.55em;width:92%;vertical-align:middle;border:1px solid #eaeaea;background:#fff;font-size:1em;}
+.inlineTbl thead                {font-weight:bold;font-size:13px;padding:5px;background:#f3f3f3;}
+.inlineTbl tr                    {background:#fafbf5;}
+.inlineTbl td                    {padding:2px 5px;line-height:normal;}
+.inlineTbl td.leftCol            {text-align:left;padding-left:10px;font-weight:bold;}
+.inlineTbl td.mainCol            {background:#eaeaea;}
+.inlineTbl tr.keyBorder,
+.inlineTbl tr.keyBorder td      {background:#fafbf5;}
+.inlineTbl tr.okRow td            {background:#cf9;}
+.inlineTbl tr.badRow td            {background:#ffe9d2;}
+
+/* empfehlen, drucken */
+.buttons                    {float:right;border:none;font-size:11px;padding-right:3px;text-align:right;vertical-align:middle;}
+.buttons a                    {text-decoration:none;}
+
+.kreditRechner                {border-spacing:0px;}
+.kreditRechner td            {background-color:#FAFBF5;padding:0 10px;}
+.kreditRechnerSmall            {width:100%;padding-left:10px;background:#FAFBF5;}
+.krediteOutput tr            {background-color:#FAFBF5;}
+.kredite td                    {text-align:center;vertical-align:middle;}
+.kredite td.left            {text-align:left;padding-left:10px;font-weight:bold;}
+.kredite td.zumRechner        {text-align:left;background:#FAFBF5;vertical-align:middle;padding-left:10px;}
+.reiter                        {line-height:25px;font-size:12px;background-color:#fff;margin:0;border-top:1px solid #fff;}
+.kredit_info td                {background-color:#FAFBF5;padding:2px 10px;vertical-align:middle;}
+.kredit_info INPUT            {font-size:10px;}
+
+.partner td                    {background:#FAFBF5;padding:0 10px;}
+.partner td .right            {float:right;padding-right:20em;}
+#partner                    {margin:10px 0;text-align:center;}
+#partner .container            {width:578px;margin:0 auto;}
+.pre                        {height:188px;background:url(../resources/images/werbung/partner_theme_01.gif) no-repeat top center;}
+.btn, .btn_v2                {float:left;width:286px;height:42px;font-size:13px;text-align:center;margin:144px 0 0 1px;background:url(../resources/images/werbung/partner_theme_01_button.jpg) no-repeat top left;}
+html>body .btn                {margin:144px 0 0 2px;}
+.btn_v2                        {width:182px;height:60px;margin:10px 2px;background:url(../resources/images/werbung/partner_theme_03_button.jpg) no-repeat;}
+.btn a                        {display:block;margin-top:12px;height:42px;}
+.btn_v2 a                    {display:block;margin-top:15px;height:60px;}
+.howto .btn, #popup .btn    {float:none;margin:0;}
+#popup .btn                    {margin:0 0 20px 25%;}
+* html #popup .btn            {margin:10px 0 10px 25%;}
+html>body #popup .btn a        {padding-top:0.8em;}
+.howto                        {border:none;background:none;}
+.howto td                    {border:none;background:none;padding:10px;}
+
+/** partner popup **/
+#popup                        {width:580px;background:#fff;}
+#popup p                    {margin:5px;padding:5px;}
+#popup .header                {height:70px;}
+#popup .footer                {color:#666;height:30px;padding:0 20px;background:#eaeaea;}
+#popup .footer a            {color:#666;padding:0 5px;font-size:12px;}
+
+/* girokonten */
+.text table.giro td                        {vertical-align:top;}
+
+/* giro reiter */
+.text table.giroreiter                     {border:1px solid #eaeaea;}
+.text table.giroreiter a                {font-weight:bold;font-size:14px;}
+.activeCol                                 {background:#FE0000;border-left:5px solid #000;}
+.activeCol a                            {color:#fff;margin-left:.2em;}
+.activeCol a:hover                        {color:#FFC080;}
+.sleepCol                                 {background:#FAFBF5;border-left:5px solid #eaeaea;}
+.sleepCol a                                {color:#999;margin-left:.2em;}
+.sleepCol a:hover                        {color:#FFC080;}
+
+.leistungsvergleich td                    {padding:.2em 0;background:#fff;}
+.leistungsvergleich img                    {margin:.3em 0;}
+
+/* giro leistungsvergleich */
+.text table.giro_lv                        {width:200px;float:left;}
+.text table.giro_lv thead td            {background:#eaeaea;font-weight:bold;font-size:13px;padding:.3em;}
+.text table.giro_lv    td                    {padding:.5em;height:100%;background:#FAFBF5;}
+.text table.first                        {width:150px;font-weight:bold;margin-left:.5em;}

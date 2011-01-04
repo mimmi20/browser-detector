@@ -1,0 +1,246 @@
+form                            {display:inline;}
+form input, select                {font-size:12px;}
+form input.search                {font-size:10px;border:1px solid #000;margin:5px 0px 5px 5px;}
+form input.button                {color:#000;background:#FFF;font-size:10px;border:1px solid #000;margin:5px 0px 5px 5px;}
+
+.text img.nlImg                    {float:left;margin:0 1em .5em 1.7em;}
+*html .text img.nlImg            {margin:.7em 1em;}
+*html .text p.nlParagraph        {padding:.5em;}
+
+/* newsletter landing */
+.nlIframe,
+.nlMyform                        {width:90%;padding:20px;text-align:center;}
+*html .nlIframe                    {clear:both;width:100%;padding:0;}
+*html .nlMyform                    {clear:both;width:100%;}
+html>body .nlIframe                {float:left;}
+html>body .nlMyform                {float:left;}
+html>body .nlClear                {clear:both;}
+
+.myform                            {display:table;width:100%;padding:20px;text-align:center;}
+*+html .myform                    {width:auto;}
+
+.nlMyform input, 
+.nlMyform select, 
+.nlMyform option, 
+.nlMyform textarea,
+.myform input, 
+.myform select, 
+.myform option, 
+.myform textarea                {font-size:13px;margin:2px;vertical-align:middle;}
+.myform textarea,
+.myform textarea                {width:225px;}
+.nlMyform table,
+.myform table                    {background:#f3f3f3;text-align:left;border:1px solid #ccc;border-width:0 1px 1px 0;}
+html>body .nlMyform table        {margin:20px;}
+html>body .myform table            {margin:20px;}
+.nlMyform table td,
+.myform table td                {width:50%;height:25px;padding:0px 3px;border:1px solid #ccc;border-width:1px 0 0 1px;}
+.nlMyform table td.blue,
+.myform table td.blue            {font-size:13px;font-weight:bold;color:#000;}
+.blue_footer                    {font-size:13px;color:#000;background:#EAEAEA;}
+.blue_header                    {color:#000;font-size:14px;line-height:25px;font-weight:bold;background:#EAEAEA;}
+.nlMyform input.button_compare,
+.myform input.button_compare    {width:100px;font-size:13px;margin:5px;}
+
+#frmErrorBlock1,
+#frmErrorBlock2,
+#frmErrorBlock             {width:500px;display:none;margin:0 0 1em 2.55em;background:#ffebe3;border:1px dashed red;}
+#frmErrorBlock1 ul,
+#frmErrorBlock2 ul,
+#frmErrorBlock ul         {width:auto;margin:0 3.5em .4em 3.5em;}
+#frmErrorBlock1 li,
+#frmErrorBlock2 li,
+#frmErrorBlock li        {background:url(../resources/images/icons/error_arrow.gif) no-repeat .5em .5em;text-align:left;}
+
+.keyError                 {display:none;color:red;}
+.keyErrorActive            {display:list-item;}
+.keyBorder,
+.keyBorder td            {background:none;}
+.keyBorderActive,
+.keyBorderActive td        {color:red;background:#ffebe3;}
+
+.inlDiv                    {margin:1em 2em;}
+.pkvCalc                {margin:2em;}
+.pkvCalc table td        {text-align:left;}
+.pkvCalc option            {padding-right:3px;}
+#powered                {color:#666;font-size:.9em;padding:0 4em;}
+
+#stepTbl                 {border:1px solid #ccc;border-width:1px 1px 0 1px;width:500px !important;}
+#stepTbl td             {width:25%;color:#ccc;background:#f3f3f3;border-left:5px solid #ccc;padding:.1em .3em;font-weight:bold;}
+#stepTbl td a             {color:#ccc;font-weight:bold;}
+#stepTbl td.active         {background:#4A6BCA url(../resources/images/bg_blue.gif) repeat-x;color:#fff;border-color:#6c3;}
+#stepTbl td.active a     {color:#fff;}
+
+#stepbox                 {padding:0;background:#f3f3f3;width:500px;border:1px solid #ccc;}
+html>body #stepbox        {width:498px;}
+#stepbox ul             {list-style:none;margin:0;}
+#stepbox li             {color:#fff;float:left;padding:.5em 1em;color:#ccc;background:none;font-weight:bold;border-left:5px solid #ccc;}
+#stepbox li.active         {color:#fff;background:#4A6BCA url(../resources/images/bg_blue.gif) repeat-x;border-color:#6c3;}
+
+.cdbox                    {padding:1em 0;width:500px;border:1px solid #ccc;border-width:0 1px;}
+html>body .cdbox        {width:498px;}
+.cdbox dt                {float:left;width:70px;padding:.3em .3em .3em 1.5em;}
+.cdbox dd                 {margin-left:80px;padding:.45em 1em 0 0;}
+.cdbox dd div             {border:1px solid #e1e1e1;padding:0;background:#fff;}
+.cdbox dd div img        {height:.8em;vertical-align:baseline;display:block;}
+
+.step1                    {width:10%;}
+.step2                    {width:20%;}
+.step3                    {width:40%;}
+.step3a                    {width:60%;}
+.step4                    {width:80%;}
+.step5                    {width:100%;}
+
+.fstRow                                {background:#fff;}
+.scdRow                                {background:#e2e2e2;}
+
+.pkvbox                                        {border:1px solid #666;width:580px;margin:0 0 10px 10px;}
+.pkvbox table                                {border:1px solid #ccc;}
+.pkvbox td                                     {padding:.3em;vertical-align:top;}
+.pkvbox tableTbl                            {margin:0 !important;width:100%;border:none;}
+.pkvbox .blueBG                                {background-image:url(../resources/images/bg_bluex50.gif);}
+.pkvbox .h3                                 {font-size:1.2em;color:#666;padding:.3em 2.5em;font-weight:normal;}
+.pkvbox .inUl                                 {padding:1em 0 0 .75em;font-weight:normal;}
+.pkvbox .highlight                            {background:#ccc;font-weight:bold;color:#fff;padding:.5em;}
+.pkvbox .fstRow                                {background:#fff;}
+.pkvbox .scdRow                                {background:#e2e2e2;}
+.pkvbox    .nobrd                                {border:none;}
+.pkvbox li                                    {line-height:16px;}
+.pkvbox .fstLi                                {background-color:#fff;}
+.pkvbox .scdLi                                {background-color:#e2e2e2;}
+.pkvbox .ovrRow                                {background:#cf8;}
+.pkvbox input.txt                            {width:14em;}
+.pkvbox select.half,
+.pkvbox input.half                            {width:9.5em;}
+.pkvbox select.quarter                        {width:4.5em;}
+.pkvbox input.quarter                        {width:4em;}
+.pkvbox select.birthday                        {width:3.4em;margin:0 .4em 0 .2em;}
+.pkvbox select.birthmonth                    {width:3.4em;margin:0 .3em;}
+.pkvbox select.birthyear                    {width:4.4em;margin:0 0 0 .4em}
+.pkvbox select.slt                            {width:14em;}
+html>body .pkvbox select.slt                {width:14.3em;}
+.pkvbox textarea                            {width:16.3em;height:5em;}
+html>body .pkvbox textarea                    {width:17.8em;}
+
+.pkvbox dl                                    {height:1%;border-bottom:1px solid #666;}
+html>body .pkvbox dl                        {overflow:hidden;}
+.pkvbox dl div                                {padding:.5em;}
+.pkvbox dt                                    {clear:left;float:left;width:20.5em;padding:.5em;}
+.pkvbox dd                                    {margin-left:21.5em;padding:.5em;}
+.pkvbox dt label                            {font-weight:bold;font-size:.9em;}
+
+/* mini formular */
+.pkvbox dl.mini                                {height:3em;float:left;width:289px;}
+html>body .pkvbox dl.mini                    {width:290px;}
+.pkvbox dl.mini div                            {padding:.5em;}
+.pkvbox .mini dt                            {clear:left;float:left;width:9.7em;padding:.8em .2em;}
+html>body .pkvbox .mini dt                    {padding:.6em .2em;}
+.pkvbox .mini dd                            {margin-left:9.7em;padding:.5em .1em;}
+.pkvbox .mini input.txt                        {width:11em;}
+.pkvbox .mini select.half,
+.pkvbox .mini input.half                    {width:7.5em;}
+.pkvbox .mini select.quarter                {width:2.9em;}
+.pkvbox .mini input.quarter                    {width:3.2em;}
+html>body .pkvbox .mini input.quarter        {width:2.9em;}
+.pkvbox .mini select.birthday                {width:3.2em;margin:0;}
+.pkvbox .mini select.birthmonth                {width:3.2em;margin:0 .2em;}
+.pkvbox .mini select.birthyear                {width:3.9em;margin:0;}
+.pkvbox .mini select.slt                    {width:11em;}
+html>body .pkvbox .mini select.slt            {width:11.3em;}
+
+.pkvbox .opt                                {text-align:left;padding:5px 10px;border:1px solid #666;border-width:0 0 1px 0;background:#efd;}
+.pkvbox .opt dl                                {font-size:.9em;}
+.pkvbox .opt dt                                {clear:left;float:left;width:20em;padding:.2em .5em;}
+.pkvbox .opt dd                                {margin-left:21.5em;padding:.2em .5em;font-weight:bold;}
+
+.pkvbox .noBrd                                {border:none;}
+
+.pkvbox .insurance .fstRow                    {background:#efd;}
+.pkvbox .insurance .scdRow                    {background:#F8FFF0;}
+
+.pkvbox .stepbox                             {padding:0 15px;background:#888 url(../resources/images/bg_bluex50.gif) repeat-x top;border-bottom:1px solid #666;}
+.pkvbox .stepbox ul                         {list-style:none;background:url(../resources/images/pkv/separator.gif) no-repeat left bottom;margin:0;}
+.pkvbox .stepbox li                         {float:left;padding:.4em 2em;color:#fff;font-weight:bold;background:url(../resources/images/pkv/separator.gif) no-repeat right bottom;}
+.pkvbox .stepbox li.active                     {color:#fff;background:#fff url(../resources/images/bg_green.gif) repeat-x top;}
+
+.pkvbox .stepboxCcl                         {padding:0 1.5em;background:#888 url(../resources/images/bg_bluex50.gif) repeat-x top;border-bottom:1px solid #666;}
+.pkvbox .stepboxCcl ul                         {list-style:none;background:url(../resources/images/pkv/separator.gif) no-repeat left bottom;margin:0;}
+.pkvbox .stepboxCcl li                         {float:left;padding:0;color:#fff;font-weight:bold;background:url(../resources/images/pkv/separator.gif) no-repeat right bottom;}
+.pkvbox .stepboxCcl li.active                 {color:#fff;background:#fff url(../resources/images/bg_green.gif) repeat-x top;}
+.pkvbox .stepboxCcl li a                     {display:block;color:#fff;font-weight:bold;}
+.pkvbox .stepboxCcl li a .separator            {padding:.4em 1em;}
+.pkvbox .stepboxCcl li a:hover                 {color:#fff;font-weight:bold;background:#fff url(../resources/images/bg_green.gif) repeat-x top;text-decoration:none;}
+.pkvbox .stepboxCcl li a:hover .separator,
+.pkvbox .stepboxCcl li.active .separator    {padding:.4em 1em;background:url(../resources/images/pkv/separator.gif) no-repeat right bottom;}
+
+.pkvboxCcl                                    {position:relative;width:796px;font-size:.75em;padding:0;margin:0;border:none;}
+.pkvbox .iframeCcl                            {border:none;font-size:.9em;background:#888 url(../resources/images/bg_bluex160.gif) repeat-x top;padding:0;width:796px;margin-top:30px;}
+.pkvbox .iframeCcl ul                        {margin:0;border:1px solid #fff;border-width:0 1px 1px 0;}
+.pkvbox .iframeCcl li                        {text-align:center;background:none;}
+.pkvbox .iframeCcl li.active                {width:159px;}
+.pkvbox .iframeCcl li a                     {width:159px;font-weight:normal;text-decoration:none;margin:0;}
+.pkvbox .iframeCcl li a:hover                 {font-weight:normal;text-decoration:underline;}
+.pkvbox .iframeCcl li.active a,
+.pkvbox .iframeCcl li active a:hover        {font-weight:bold;}
+.pkvbox .iframeCcl li a .separator,
+.pkvbox .iframeCcl li a:hover .separator,
+.pkvbox .iframeCcl li.active .separator        {padding:.4em .2em;border:1px solid #fff;border-width:1px 0 0 1px;background:none;}
+.pkvbox .iframeCcl li a.noItem,
+.pkvbox .iframeCcl li a.noItem:hover        {color:#3956b3;text-decoration:none;background:none;}
+
+.pkvTsr                                     {overflow:hidden;text-align:left !important;}
+
+
+.pkvbox .keyBorderActive,
+.pkvbox .insurance .keyBorderActive            {background:#ffebe3;}
+.pkvbox .btn                                {cursor:pointer;}
+.pkvbox .more                                {color:#00c;padding:.5em;background:#efd;}
+.pkvbox .small                                {font-size:.9em;}
+.pkvbox .smaller                            {font-size:.8em;}
+.pkvintro                                    {margin-right:2em;padding-right:5em;background:#fff url(../resources/images/info/siegel.gif) no-repeat top right;}
+
+.cclbox                                        {width:auto;margin:10px;}
+.cclbox    p                                    {padding:10px;}
+.cclbox .ccl dl                                {border:none;}
+.cclbox .ccl dt                                {clear:left;float:left;width:18em;padding:.3em .5em 0 3em;}
+.cclbox .ccl dd                                {margin-left:20.5em;padding:.3em .5em 0 1em;font-weight:bold;}
+.cclbox .ccl .btn                            {margin:.7em 0 .5em 0;}
+
+.cclLogo                                     {position:absolute;top:-20px;left:10px;}
+.cclTsr                                     {position:absolute;top:-30px;right:10px;}
+
+/* pkv rechner */
+.pkvbox .rslt                                {float:left;width:21.5em;}
+.pkvbox .rslt dl                            {height:2.2em;}
+.pkvbox .rslt dt                            {width:9.9em;padding:.3em;}
+html>body .pkvbox .rslt dt                    {padding:.3em;}
+.pkvbox dt label                            {font-weight:normal;}
+.pkvbox .rslt dd                            {margin-left:11.4em;padding:.2em 0;font-size:.9em;}
+.pkvbox .rslt select.quarter                {width:4.7em;}
+.pkvbox .rslt select.slt                    {width:13em;}
+.pkvbox .rslt input,
+.pkvbox .rslt select                        {font-size:.9em;}
+
+.pkvbox .middle                                {border:1px solid #a3ccff;border-width:0 1px;}
+*+html .pkvbox .middle                        {width:21.3em;}
+
+.pkvbox .wide dt                            {width:11em;}
+.pkvbox .wide dd                            {margin-left:12.5em;}
+
+.pkvbox .higher                                {padding-top:.3em;border-bottom:1px solid #a3ccff;}
+
+.pkvbox .higher                                {height:2.2em;}
+* html .pkvbox .higher                        {height:2.7em;}
+* html .pkvbox dl.higher                    {height:2.7em;}
+
+.pkvbox .high,
+.pkvbox dl.high                                {height:3.6em;}
+
+.cclSmall                                     {border:1px solid #fff;margin:.5em 0;background:#E5F1FF;font-size:.8em;}
+.cclSmall .blueBG                            {border-left:5px solid #6c3;padding:.3em 1.5em;}
+.cclSmall dt                                {clear:left;float:left;width:15em;padding:.2em 1.9em;}
+
+.thxbox                                     {margin:.41em 2.5em .83em 2.5em;padding:.5em;border:1px solid #eaeaea;background:#f0f6fe;}
+.thxbox a                                     {font-weight:bold;}
+.thxbox p                                     {padding:.3em 0;text-align:left !important;}
+.thxbox .line                                 {margin:.5em 0;}

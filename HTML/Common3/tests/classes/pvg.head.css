@@ -1,0 +1,57 @@
+#head, #main, #foot {font-size:100.01%; line-height:1.4em; min-width:980px;}
+* html #head table {font-size:.85em;}
+* html #head .loginbox {font-size:.7em;}
+html>body #foot {font-size:1em;}
+#head {margin-top:10px;}
+#head h1 {font-size:1.8em; font-weight:normal; margin-top:.3em; padding-bottom:.2em; border-bottom:1px solid #d6d6d6;}
+#main {padding:0 10px;z-index:2;}
+#head .loginbox {float:right;background:url(http://www.preisvergleich.de/img/line-bg.gif);width:271px;margin-right:10px}
+#head .loginbox .tp {width:250px;padding:2px 10px;background:#f3f3f3;text-align:center;}
+#head .loginbox .tp a {padding:0 3px;}
+#head .loginbox form {padding:5px 10px;}
+#head .loginbox .ttl {width:120px;}
+#head .lostpw {margin-top:3px;width:255px;}
+#head .btnwide {width:123px;height:19px;border:0;background:url(http://www.preisvergleich.de/img/buttons/login_wide.gif) no-repeat;}
+#head .lgo {margin:0; border-bottom:0;}
+#head .lgo img {margin-left:10px;}
+
+#head .nav {width:100%;border-collapse:collapse;}
+#head .nav .flg {border-collapse:collapse;margin-left:50px;}
+#head .nav .flg td {white-space:nowrap; font-weight:bold; border-right:1px solid #fff; background:#ac3f3f url(http://www.preisvergleich.de/img/menu-bg.gif) repeat-x top;}
+#head .nav .flg td.active {background:#f00 url(http://www.preisvergleich.de/img/menu-active-bg.gif) repeat-x top;}
+#head .nav .flg td.eyecatch {background:#fd8510 url(http://www.preisvergleich.de/img/menu-eyecatch-bg.gif) repeat-x top;}
+#head .nav .flg td a {display:block; padding:0 8px; height:32px; line-height:32px; color:#fff; text-decoration:none; border-bottom:1px solid #fff; background:url(http://www.preisvergleich.de/img/white-corner.gif) no-repeat 100% 3px;}
+#head .nav .flg td.active a {border-bottom:1px solid #f00; background-position:right top;}
+
+#head .search {width:100%; background:#fefefe url(http://www.preisvergleich.de/img/search-bg.gif) repeat-x bottom;}
+#head .search form {padding:5px 0;}
+#head .search label {font-size:1.1em; font-weight:bold;}
+#head .search .txt {width:300px;}
+#head .search td {height:35px;}
+#head .search td#sbnav {font-size:12px;background:#f00;text-align:center;height:20px;}
+#head .search td#sbnav a {padding:0 5px;color:#fff;font-weight:bold;}
+
+#foot {padding-bottom:20px; font-size:.75em; text-align:center;}
+#foot p {margin-top:1em;;}
+#foot .nav {color:#fff; background:#f00; line-height:2em;}
+#foot .nav a {margin:0 3px; color:#fff; text-decoration:none;}
+#foot .lang {float:right; margin:.4em 10px 0 0;}
+#foot .copy {margin:.4em 0 0 160px; color:#666; font-style:italic;}
+#foot .startpage {color:#666;}
+#foot .startpage a {font-size:1.6em;}
+
+/* category layer */
+#allCats {position:absolute; top:94px; left:100px; padding:0 0 10px 20px; text-align:left; width:680px; font-size:12px; border:1px solid #f00; background:#fff; z-index:1000000}
+#allCats .cats {float:left; width:150px; margin-right:15px;}
+#allCats .cats p {margin-top:1em;line-height:normal;}
+#allCats .cats strong {color:#ac3f3f;}
+#allCats .cats span {display:block; margin-left:5px;}
+
+* html #allCats {top:111px;width:700px;}
+*+html #allCats {top:108px;}
+* html .minWidth {width:100%;border-collapse:collapse;}
+* html .minWidth .blind {float:left;width:1000px;}
+* html .minWidthContent {clear:left;}
+* html .groupnav li {margin:0;}
+* html #head .loginbox {margin-right:5px}
+* html #head .loginbox .tp {width:255px;}

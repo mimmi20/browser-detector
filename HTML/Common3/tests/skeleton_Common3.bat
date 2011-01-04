@@ -1,0 +1,1 @@
+c:\xampp\php\phpunit.bat --skeleton-test HTML_Common3 c:\xampp\php\PEAR\HTML\Common3.php

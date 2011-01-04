@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit>
+    <loggers>
+        <file ident="HTML_CSS TestSuite Bugs"
+              name="C:\Programme\Zend\ZendServer\bin\PEAR\tests\HTML_CSS\tests/%I_%Y%M%D.log"
+              level="debug">
+            <conf>
+                <append>0</append>    
+                <lineFormat>[%1$s] %2$s: %4$s</lineFormat>
+                <timeFormat>%Y-%m-%d %H:%M:%S</timeFormat>
+            </conf>
+        </file>    
+        <growl ident="HTML_CSS TestSuite failed" 
+               name="PEAR_TestListener" 
+               level="warning">
+            <conf>
+                <sticky>1</sticky>
+            </conf>
+        </growl>       
+        <composite>
+            <file ident="HTML_CSS TestSuite Bugs" />
+            <growl ident="HTML_CSS TestSuite failed" />
+        </composite>
+    </loggers>
+</phpunit>
