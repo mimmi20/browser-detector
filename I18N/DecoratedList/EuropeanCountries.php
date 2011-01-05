@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2\DecoratedList;
+namespace I18N\DecoratedList;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: DecoartedList :: EuropeanCountries                 |
+// | PEAR :: I18N :: DecoartedList :: EuropeanCountries                 |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,22 +19,22 @@ namespace I18Nv2\DecoratedList;
 // $Id: EuropeanCountries.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::DecoratedList::EuropeanCountries
+ * I18N::DecoratedList::EuropeanCountries
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/DecoratedList/Filter.php';
+require_once 'I18N/DecoratedList/Filter.php';
 
 /**
- * I18Nv2_DecoratedList_EuropeanCountries
+ * I18N_DecoratedList_EuropeanCountries
  * 
- * Use only for decorating I18Nv2_Country.
+ * Use only for decorating I18N_Country.
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
 class EuropeanCountries extends Filter

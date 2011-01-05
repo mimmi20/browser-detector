@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: DecoratedList :: HtmlEntities                      |
+// | PEAR :: I18N :: DecoratedList :: HtmlEntities                      |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -14,23 +14,23 @@
 // $Id: HtmlEntities.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::DecoratedList::HtmlEntities
+ * I18N::DecoratedList::HtmlEntities
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/DecoratedList.php';
+require_once 'I18N/DecoratedList.php';
 
 /**
- * I18Nv2_Decorator_HtmlEntities
+ * I18N_Decorator_HtmlEntities
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
-class I18Nv2_DecoratedList_HtmlEntities extends I18Nv2_DecoratedList
+class I18N_DecoratedList_HtmlEntities extends I18N_DecoratedList
 {
     /** 
      * decorate

@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: Encoding                                           |
+// | PEAR :: I18N :: Encoding                                           |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,20 +19,20 @@ namespace I18Nv2;
 // $Id: Encoding.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::Encoding
+ * I18N::Encoding
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
 /**
- * I18Nv2_Encoding
+ * I18N_Encoding
  *
  * List of common and not so common character sets and their aliases.
  * 
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  * @static
  */
@@ -62,7 +62,7 @@ class Encoding
     function isEncoding($encoding)
     {
         $name = I18Nv3_Encoding::standardize($encoding);
-        return isset($GLOBALS['_I18Nv2_Encoding_Names'][$name]);
+        return isset($GLOBALS['_I18N_Encoding_Names'][$name]);
     }
     
     /**
@@ -75,7 +75,7 @@ class Encoding
      */
     function isAlias($encoding)
     {
-        return (bool) I18Nv2_Encoding::forAlias($encoding);
+        return (bool) I18N_Encoding::forAlias($encoding);
     }
     
     /**
@@ -88,9 +88,9 @@ class Encoding
      */
     function exists($encoding)
     {
-        $name = I18Nv2_Encoding::standardize($encoding);
-        return isset($GLOBALS['_I18Nv2_Encoding_Names'][$name]) or
-            I18Nv2_Encoding::forAlias($name) !== false;
+        $name = I18N_Encoding::standardize($encoding);
+        return isset($GLOBALS['_I18N_Encoding_Names'][$name]) or
+            I18N_Encoding::forAlias($name) !== false;
     }
     
     /**
@@ -103,11 +103,11 @@ class Encoding
      */
     function nameOf($encoding)
     {
-        $encoding = I18Nv2_Encoding::standardize($encoding);
-        if (isset($GLOBALS['_I18Nv2_Encoding_Names'][$encoding])) {
-            return $GLOBALS['_I18Nv2_Encoding_Names'][$encoding];
+        $encoding = I18N_Encoding::standardize($encoding);
+        if (isset($GLOBALS['_I18N_Encoding_Names'][$encoding])) {
+            return $GLOBALS['_I18N_Encoding_Names'][$encoding];
         }
-        return I18Nv2_Encoding::forAlias($encoding);
+        return I18N_Encoding::forAlias($encoding);
     }
     
     /**
@@ -120,9 +120,9 @@ class Encoding
      */
     function aliasesOf($encoding)
     {
-        $name = I18Nv2_Encoding::standardize($encoding);
-        if (isset($GLOBALS['_I18Nv2_Encoding_Aliases'][$name])) {
-            return $GLOBALS['_I18Nv2_Encoding_Aliases'][$name];
+        $name = I18N_Encoding::standardize($encoding);
+        if (isset($GLOBALS['_I18N_Encoding_Aliases'][$name])) {
+            return $GLOBALS['_I18N_Encoding_Aliases'][$name];
         }
         return array();
     }
@@ -137,10 +137,10 @@ class Encoding
      */
     function forAlias($alias)
     {
-        $name = I18Nv2_Encoding::standardize($alias);
-        foreach (array_keys($GLOBALS['_I18Nv2_Encoding_Aliases']) as $a) {
-            if (in_array($name, $GLOBALS['_I18Nv2_Encoding_Aliases'][$a])) {
-                return $GLOBALS['_I18Nv2_Encoding_Names'][$a];
+        $name = I18N_Encoding::standardize($alias);
+        foreach (array_keys($GLOBALS['_I18N_Encoding_Aliases']) as $a) {
+            if (in_array($name, $GLOBALS['_I18N_Encoding_Aliases'][$a])) {
+                return $GLOBALS['_I18N_Encoding_Names'][$a];
             }
         }
         return false;
@@ -148,7 +148,7 @@ class Encoding
     
 }
 
-$GLOBALS['_I18Nv2_Encoding_Names']  = array(
+$GLOBALS['_I18N_Encoding_Names']  = array(
     'US-ASCII'                                      => 'US-ASCII',
     'ISO-10646-UTF-1'                               => 'ISO-10646-UTF-1',
     'ISO-646-BASIC'                                 => 'ISO_646.basic',
@@ -400,7 +400,7 @@ $GLOBALS['_I18Nv2_Encoding_Names']  = array(
     'HZ-GB-2312'                                    => 'HZ-GB-2312',
 );
 
-$GLOBALS['_I18Nv2_Encoding_Aliases'] = array(
+$GLOBALS['_I18N_Encoding_Aliases'] = array(
     'US-ASCII' => array(
         'ISO-IR-6',
         'ANSI-X3-4-1986',

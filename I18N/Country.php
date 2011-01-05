@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: Country                                            |
+// | PEAR :: I18N :: Country                                            |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,23 +19,23 @@ namespace I18Nv2;
 // $Id: Country.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::Country
+ * I18N::Country
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/CommonList.php';
+require_once 'I18N/CommonList.php';
 
 /**
- * I18Nv2_Country
+ * I18N_Country
  * 
  * List of ISO-3166 two letter country code to country name mapping.
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
  * @access      public
- * @package     I18Nv2
+ * @package     I18N
  */
 class Country extends CommonList
 {
@@ -48,7 +48,7 @@ class Country extends CommonList
      */
     protected function loadLanguage($language)
     {
-        return @include 'I18Nv2/Country/' . $language . '.php';
+        return @include 'I18N/Country/' . $language . '.php';
     }
     
     /**

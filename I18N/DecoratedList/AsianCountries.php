@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: DecoartedList :: AsianCountries                    |
+// | PEAR :: I18N :: DecoartedList :: AsianCountries                    |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -14,25 +14,25 @@
 // $Id: AsianCountries.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::DecoratedList::AsianCountries
+ * I18N::DecoratedList::AsianCountries
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/DecoratedList/Filter.php';
+require_once 'I18N/DecoratedList/Filter.php';
 
 /**
- * I18Nv2_DecoratedList_AsianCountries
+ * I18N_DecoratedList_AsianCountries
  * 
- * Use only for decorating I18Nv2_Country.
+ * Use only for decorating I18N_Country.
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
-class I18Nv2_DecoratedList_AsianCountries extends I18Nv2_DecoratedList_Filter
+class I18N_DecoratedList_AsianCountries extends I18N_DecoratedList_Filter
 {
     /**
      * Keys for Asian countries

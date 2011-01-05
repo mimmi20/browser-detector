@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: DecoratedList                                      |
+// | PEAR :: I18N :: DecoratedList                                      |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,26 +19,26 @@ namespace I18Nv2;
 // $Id: DecoratedList.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::DecoratedList
+ * I18N::DecoratedList
  * 
- * Decorator for I18Nv2_CommonList objects.
+ * Decorator for I18N_CommonList objects.
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
 /**
- * I18Nv2_DecoratedList
+ * I18N_DecoratedList
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
-class I18Nv2_DecoratedList
+class I18N_DecoratedList
 {
     /**
-     * I18Nv2_(Common|Decorated)List
+     * I18N_(Common|Decorated)List
      * 
      * @access  protected
      * @var     object
@@ -49,12 +49,12 @@ class I18Nv2_DecoratedList
      * Constructor
      * 
      * @access  public
-     * @param   object  $list   I18Nv2_DecoratedList or I18Nv2_CommonList
+     * @param   object  $list   I18N_DecoratedList or I18N_CommonList
      */
-    function I18Nv2_DecoratedList(&$list)
+    function I18N_DecoratedList(&$list)
     {
-        if (is_a($list, 'I18Nv2_CommonList') ||
-            is_a($list, 'I18Nv2_DecoratedList')) {
+        if (is_a($list, 'I18N_CommonList') ||
+            is_a($list, 'I18N_DecoratedList')) {
             $this->list = &$list;
         }
     }
@@ -111,13 +111,13 @@ class I18Nv2_DecoratedList
      * Decorate this list
      *
      * @access  public
-     * @return  object  I18NV2_DecoratedList
+     * @return  object  I18N_DecoratedList
      * @param   string  $type
      */
     function &toDecoratedList($type)
     {
-        require_once 'I18Nv2/DecoratedList/'. $type .'.php';
-        $decoratedList = 'I18Nv2_DecoratedList_' . $type;
+        require_once 'I18N/DecoratedList/'. $type .'.php';
+        $decoratedList = 'I18N_DecoratedList_' . $type;
         return new $decoratedList($this);
     }
 

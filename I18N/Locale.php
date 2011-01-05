@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: Locale                                             |
+// | PEAR :: I18N :: Locale                                             |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,44 +19,44 @@ namespace I18Nv2;
 // $Id: Locale.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::Locale
+ * I18N::Locale
  * 
- * @package      I18Nv2
+ * @package      I18N
  * @category     Internationalisation
  */
 
 /**#@+ Constants **/
-define('I18Nv2_NUMBER',                     'number');
-define('I18Nv2_CURRENCY',                   'currency');
-define('I18Nv2_DATE',                       'date');
-define('I18Nv2_TIME',                       'time');
-define('I18Nv2_DATETIME',                   'datetime');
+define('I18N_NUMBER',                     'number');
+define('I18N_CURRENCY',                   'currency');
+define('I18N_DATE',                       'date');
+define('I18N_TIME',                       'time');
+define('I18N_DATETIME',                   'datetime');
 
-define('I18Nv2_NUMBER_FLOAT' ,              'float');
-define('I18Nv2_NUMBER_INTEGER' ,            'integer');
+define('I18N_NUMBER_FLOAT' ,              'float');
+define('I18N_NUMBER_INTEGER' ,            'integer');
 
-define('I18Nv2_CURRENCY_LOCAL',             'local');
-define('I18Nv2_CURRENCY_INTERNATIONAL',     'international');
+define('I18N_CURRENCY_LOCAL',             'local');
+define('I18N_CURRENCY_INTERNATIONAL',     'international');
 
-define('I18Nv2_DATETIME_SHORT',             'short');
-define('I18Nv2_DATETIME_DEFAULT',           'default');
-define('I18Nv2_DATETIME_MEDIUM',            'medium');
-define('I18Nv2_DATETIME_LONG',              'long');
-define('I18Nv2_DATETIME_FULL',              'full');
+define('I18N_DATETIME_SHORT',             'short');
+define('I18N_DATETIME_DEFAULT',           'default');
+define('I18N_DATETIME_MEDIUM',            'medium');
+define('I18N_DATETIME_LONG',              'long');
+define('I18N_DATETIME_FULL',              'full');
 /**#@-*/
 
 require_once 'PEAR.php';
-require_once 'I18Nv2.php';
+require_once 'I18N.php';
 
 /** 
- * I18Nv2_Locale
+ * I18N_Locale
  *
  * @author       Michael Wallner <mike@php.net>
  * @version      $Revision: 5 $
  * @access       public
- * @package      I18Nv2
+ * @package      I18N
  */
-class I18Nv2_Locale
+class I18N_Locale
 {
     /**
      * Initialized Locale
@@ -216,9 +216,9 @@ class I18Nv2_Locale
      * @access  public
      * @param   string  $locale
      */
-    function I18Nv2_Locale($locale = null, $paranoid = false)
+    function I18N_Locale($locale = null, $paranoid = false)
     {
-        $locale or $locale = I18Nv2::lastLocale(0, 'locale');
+        $locale or $locale = I18N::lastLocale(0, 'locale');
         $this->setLocale($locale);
         $this->setParanoid($paranoid);
     }
@@ -226,7 +226,7 @@ class I18Nv2_Locale
     /**
      * Set locale
      * 
-     * This automatically calls I18Nv2_Locale::initialize()
+     * This automatically calls I18N_Locale::initialize()
      *
      * @access  public
      * @return  string  used system locale
@@ -236,7 +236,7 @@ class I18Nv2_Locale
     function setLocale($locale, $force = false)
     {
         if (!$force && $this->initialized == $locale) {
-            $last = I18Nv2::lastLocale(0, true);
+            $last = I18N::lastLocale(0, true);
             if (is_array($last)) {
                 if (    $locale == $last['syslocale']   || 
                         $locale == $last['locale']      ||
@@ -260,7 +260,7 @@ class I18Nv2_Locale
     function initialize($locale)
     {
         $this->initialized = $locale;
-        $this->usedLocale = I18Nv2::setLocale($locale);
+        $this->usedLocale = I18N::setLocale($locale);
         
         $jan = $mon = mktime(1,1,1,1,1,1990);
         $feb = $tue = mktime(1,1,1,2,6,1990);
@@ -326,14 +326,14 @@ class I18Nv2_Locale
                 strftime('%b', $dec),
             );
             
-            $info = I18Nv2::getInfo();
+            $info = I18N::getInfo();
             
             /*
              * The currency symbol is old shit on Win2k, though.
              * Some get extended/overwritten with other local conventions.
              */
             $this->currencyFormats = array(
-                I18Nv2_CURRENCY_LOCAL => array(
+                I18N_CURRENCY_LOCAL => array(
                     $info['currency_symbol'],
                     $info['int_frac_digits'],
                     $info['mon_decimal_point'],
@@ -347,7 +347,7 @@ class I18Nv2_Locale
                     $info['n_sign_posn'],
                     $info['p_sign_posn'],
                 ),
-                I18Nv2_CURRENCY_INTERNATIONAL => array(
+                I18N_CURRENCY_INTERNATIONAL => array(
                     $info['int_curr_symbol'],
                     $info['int_frac_digits'],
                     $info['mon_decimal_point'],
@@ -364,12 +364,12 @@ class I18Nv2_Locale
             );
             
             $this->numberFormats = array(
-                I18Nv2_NUMBER_FLOAT => array(
+                I18N_NUMBER_FLOAT => array(
                     $info['frac_digits'],
                     $info['decimal_point'],
                     $info['thousands_sep']
                 ),
-                I18Nv2_NUMBER_INTEGER => array(
+                I18N_NUMBER_INTEGER => array(
                     '0',
                     $info['decimal_point'],
                     $info['thousands_sep']
@@ -381,26 +381,26 @@ class I18Nv2_Locale
     
             if (!count($this->dateTimeFormats)) {
                 $this->dateTimeFormats = array(
-                    I18Nv2_DATETIME_SHORT   => 
-                        $this->dateFormats[I18Nv2_DATETIME_SHORT]
+                    I18N_DATETIME_SHORT   => 
+                        $this->dateFormats[I18N_DATETIME_SHORT]
                         . ', ' .
-                        $this->timeFormats[I18Nv2_DATETIME_SHORT],
-                    I18Nv2_DATETIME_MEDIUM   => 
-                        $this->dateFormats[I18Nv2_DATETIME_MEDIUM]
+                        $this->timeFormats[I18N_DATETIME_SHORT],
+                    I18N_DATETIME_MEDIUM   => 
+                        $this->dateFormats[I18N_DATETIME_MEDIUM]
                         . ', ' .
-                        $this->timeFormats[I18Nv2_DATETIME_MEDIUM],
-                    I18Nv2_DATETIME_DEFAULT   => 
-                        $this->dateFormats[I18Nv2_DATETIME_DEFAULT]
+                        $this->timeFormats[I18N_DATETIME_MEDIUM],
+                    I18N_DATETIME_DEFAULT   => 
+                        $this->dateFormats[I18N_DATETIME_DEFAULT]
                         . ', ' .
-                        $this->timeFormats[I18Nv2_DATETIME_DEFAULT],
-                    I18Nv2_DATETIME_LONG   => 
-                        $this->dateFormats[I18Nv2_DATETIME_LONG]
+                        $this->timeFormats[I18N_DATETIME_DEFAULT],
+                    I18N_DATETIME_LONG   => 
+                        $this->dateFormats[I18N_DATETIME_LONG]
                         . ', ' .
-                        $this->timeFormats[I18Nv2_DATETIME_LONG],
-                    I18Nv2_DATETIME_FULL   => 
-                        $this->dateFormats[I18Nv2_DATETIME_FULL]
+                        $this->timeFormats[I18N_DATETIME_LONG],
+                    I18N_DATETIME_FULL   => 
+                        $this->dateFormats[I18N_DATETIME_FULL]
                         . ', ' .
-                        $this->timeFormats[I18Nv2_DATETIME_FULL],
+                        $this->timeFormats[I18N_DATETIME_FULL],
                 );
             }
             $this->updateCache($this->usedLocale);
@@ -463,7 +463,7 @@ class I18Nv2_Locale
      */
     function loadExtension()
     {
-        $locale = I18Nv2::lastLocale(0, true);
+        $locale = I18N::lastLocale(0, true);
         if (isset($locale)) {
             $dir = dirname(__FILE__);
             foreach (array($locale['language'], $locale['locale']) as $lc) {
@@ -482,11 +482,11 @@ class I18Nv2_Locale
      */
     function setDefaults()
     {
-        $this->currentTimeFormat        = $this->timeFormats[I18Nv2_DATETIME_DEFAULT];
-        $this->currentDateFormat        = $this->dateFormats[I18Nv2_DATETIME_DEFAULT];
-        $this->currentDateTimeFormat    = $this->dateTimeFormats[I18Nv2_DATETIME_DEFAULT];
-        $this->currentNumberFormat      = $this->numberFormats[I18Nv2_NUMBER_FLOAT];
-        $this->currentCurrencyFormat    = $this->currencyFormats[I18Nv2_CURRENCY_INTERNATIONAL];
+        $this->currentTimeFormat        = $this->timeFormats[I18N_DATETIME_DEFAULT];
+        $this->currentDateFormat        = $this->dateFormats[I18N_DATETIME_DEFAULT];
+        $this->currentDateTimeFormat    = $this->dateTimeFormats[I18N_DATETIME_DEFAULT];
+        $this->currentNumberFormat      = $this->numberFormats[I18N_NUMBER_FLOAT];
+        $this->currentCurrencyFormat    = $this->currencyFormats[I18N_CURRENCY_INTERNATIONAL];
     }
     
     /**
@@ -509,7 +509,7 @@ class I18Nv2_Locale
      *
      * @access  public
      * @return  mixed   Returns &true; on success or <classname>PEAR_Error</classname> on failure.
-     * @param   int     $format     a I18Nv2_CURRENCY constant
+     * @param   int     $format     a I18N_CURRENCY constant
      * @param   bool    $custom     whether to use a defined custom format
      */
     function setCurrencyFormat($format, $custom = false)
@@ -533,7 +533,7 @@ class I18Nv2_Locale
      *
      * @access  public
      * @return  mixed   Returns &true; on success or <classname>PEAR_Error</classname> on failure.
-     * @param   int     $format     a I18Nv2_NUMBER constant
+     * @param   int     $format     a I18N_NUMBER constant
      * @param   bool    $custom     whether to use a defined custom format
      */
     function setNumberFormat($format, $custom = false)
@@ -557,7 +557,7 @@ class I18Nv2_Locale
      *
      * @access  public
      * @return  mixed   Returns &true; on success or <classname>PEAR_Error</classname> on failure.
-     * @param   int     $format     a I18Nv2_DATETIME constant
+     * @param   int     $format     a I18N_DATETIME constant
      * @param   bool    $custom     whether to use a defined custom format
      */
     function setDateFormat($format, $custom = false)
@@ -581,7 +581,7 @@ class I18Nv2_Locale
      *
      * @access  public
      * @return  mixed
-     * @param   int     $format     a I18Nv2_DATETIME constant
+     * @param   int     $format     a I18N_DATETIME constant
      * @param   bool    $custom     whether to use a defined custom format
      */
     function setTimeFormat($format, $custom = false)
@@ -605,7 +605,7 @@ class I18Nv2_Locale
      *
      * @access  public
      * @return  mixed
-     * @param   int     $format     a I18Nv2_DATETIME constant
+     * @param   int     $format     a I18N_DATETIME constant
      * @param   bool    $custom     whether to use a defined custom format
      */
     function setDateTimeFormat($format, $custom = false)

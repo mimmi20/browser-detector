@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: CommonList                                         |
+// | PEAR :: I18N :: CommonList                                         |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,17 +19,17 @@ namespace I18Nv2;
 // $Id: CommonList.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::CommonList
+ * I18N::CommonList
  *
  * @author      Michael Wallner <mike@php.net>
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
 /**
- * I18Nv2_CommonList
+ * I18N_CommonList
  *
- * Base class for I18Nv2_Country and I18Nv2_Language that performs some basic
+ * Base class for I18N_Country and I18N_Language that performs some basic
  * work, so code doesn't get written twice or even more often in the future.
  *
  * @author      Michael Wallner <mike@php.net>
@@ -72,8 +72,8 @@ class CommonList
     public function __construct($language = null, $encoding = null)
     {
         if (!$this->setLanguage($language)) {
-            if (class_exists('I18Nv2')) {
-                $l = \I18Nv2::lastLocale(0, true);
+            if (class_exists('I18N')) {
+                $l = \I18N::lastLocale(0, true);
                 if (!isset($l) || !$this->setLanguage($l['language'])) {
                     $this->setLanguage('en');
                 }
@@ -234,13 +234,13 @@ class CommonList
      * Decorate this list
      *
      * @access  public
-     * @return  object  I18NV2_DecoratedList
+     * @return  object  I18N_DecoratedList
      * @param   string  $type
      */
     public function toDecoratedList($type)
     {
-        require_once 'I18Nv2/DecoratedList/'. $type .'.php';
-        $decoratedList = 'I18Nv2_DecoratedList_' . $type;
+        require_once 'I18N/DecoratedList/'. $type .'.php';
+        $decoratedList = 'I18N_DecoratedList_' . $type;
         return new $decoratedList($this);
     }
 }

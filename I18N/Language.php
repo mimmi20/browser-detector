@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: Language                                           |
+// | PEAR :: I18N :: Language                                           |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,13 +19,13 @@ namespace I18Nv2;
 // $Id: Language.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2_Language
+ * I18N_Language
  * 
  * List of ISO-639-1 two letter language code to language name mapping.
  * 
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
 class Language extends CommonList
@@ -39,7 +39,7 @@ class Language extends CommonList
      */
     protected function loadLanguage($language)
     {
-        return @include 'I18Nv2/Language/' . $language . '.php';
+        return @include 'I18N/Language/' . $language . '.php';
     }
 
     /**

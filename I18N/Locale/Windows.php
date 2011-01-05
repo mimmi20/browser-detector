@@ -4,7 +4,7 @@
 */
 
 
-$windows = &I18Nv2::getStaticProperty('windows');
+$windows = I18N::getStaticProperty('windows');
 $windows = array(
 
     'de_DE' => 'deu',

@@ -1,11 +1,11 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace I18Nv2;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: AreaCode                                           |
+// | PEAR :: I18N :: AreaCode                                           |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -19,25 +19,25 @@ namespace I18Nv2;
 // $Id: AreaCode.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::AreaCode
+ * I18N::AreaCode
  *
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/CommonList.php';
+require_once 'I18N/CommonList.php';
 
 /**
- * I18Nv2_AreaCode
+ * I18N_AreaCode
  *
  * List of two letter country code to international area code mapping.
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
  * @access      public
- * @package     I18Nv2
+ * @package     I18N
  */
-class I18Nv2_AreaCode extends I18Nv2_CommonList
+class I18N_AreaCode extends I18N_CommonList
 {
     /**
      * Codes
@@ -283,16 +283,16 @@ class I18Nv2_AreaCode extends I18Nv2_CommonList
     /**
      * Merge Country
      *
-     * Merge this list with an I18Nv2_Country list to a new I18Nv2_CommonList,
+     * Merge this list with an I18N_Country list to a new I18N_CommonList,
      * where the international area codes map to the full country name.
      *
      * @access  public
-     * @return  object  I18Nv2_CommonList
-     * @param   object  $country I18Nv2_Country
+     * @return  object  I18N_CommonList
+     * @param   object  $country I18N_Country
      */
     function &mergeCountry(&$country)
     {
-        $list = &new I18Nv2_CommonList(
+        $list = &new I18N_CommonList(
             $country->getLanguage(),
             $encoding = $country->getEncoding()
         );

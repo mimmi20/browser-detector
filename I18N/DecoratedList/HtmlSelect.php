@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: DecoratedList :: HtmlSelect                        |
+// | PEAR :: I18N :: DecoratedList :: HtmlSelect                        |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -14,24 +14,24 @@
 // $Id: HtmlSelect.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::DecoratedList::HtmlSelect
+ * I18N::DecoratedList::HtmlSelect
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/DecoratedList.php';
+require_once 'I18N/DecoratedList.php';
 
 /**
- * I18Nv2_DecoratedList_HtmlSelect
+ * I18N_DecoratedList_HtmlSelect
  * 
  * Example:
  * <code>
- *   require_once 'I18Nv2/Country.php';
- *   require_once 'I18Nv2/DecoratedList/HtmlSelect.php';
+ *   require_once 'I18N/Country.php';
+ *   require_once 'I18N/DecoratedList/HtmlSelect.php';
  * 
- *   $country = &new I18Nv2_Country('de', 'iso-8859-1');
- *   $select  = &new I18Nv2_DecoratedList_HtmlSelect($country);
+ *   $country = &new I18N_Country('de', 'iso-8859-1');
+ *   $select  = &new I18N_DecoratedList_HtmlSelect($country);
  *   $select->attributes['select']['name'] = 'country';
  *   $select->selected['DE'] = true;
  *   echo $select->getAllCodes();
@@ -39,10 +39,10 @@ require_once 'I18Nv2/DecoratedList.php';
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
-class I18Nv2_DecoratedList_HtmlSelect extends I18Nv2_DecoratedList
+class I18N_DecoratedList_HtmlSelect extends I18N_DecoratedList
 {
     /**
      * HTML attributes of the select and the option tags

@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------+
-// | PEAR :: I18Nv2 :: DecoartedList :: OceanianCountries                 |
+// | PEAR :: I18N :: DecoartedList :: OceanianCountries                 |
 // +----------------------------------------------------------------------+
 // | This source file is subject to version 3.0 of the PHP license,       |
 // | that is available at http://www.php.net/license/3_0.txt              |
@@ -14,25 +14,25 @@
 // $Id: OceanianCountries.php 5 2009-12-27 20:39:52Z tmu $
 
 /**
- * I18Nv2::DecoratedList::OceanianCountries
+ * I18N::DecoratedList::OceanianCountries
  * 
- * @package     I18Nv2
+ * @package     I18N
  * @category    Internationalization
  */
 
-require_once 'I18Nv2/DecoratedList/Filter.php';
+require_once 'I18N/DecoratedList/Filter.php';
 
 /**
- * I18Nv2_DecoratedList_OceanianCountries
+ * I18N_DecoratedList_OceanianCountries
  * 
- * Use only for decorating I18Nv2_Country.
+ * Use only for decorating I18N_Country.
  *
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision: 5 $
- * @package     I18Nv2
+ * @package     I18N
  * @access      public
  */
-class I18Nv2_DecoratedList_OceanianCountries extends I18Nv2_DecoratedList_Filter
+class I18N_DecoratedList_OceanianCountries extends I18N_DecoratedList_Filter
 {
     /**
      * Keys for Oceanian countries
