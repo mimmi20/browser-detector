@@ -16,7 +16,7 @@ namespace I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: Language.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N_Language
@@ -24,7 +24,7 @@ namespace I18N;
  * List of ISO-639-1 two letter language code to language name mapping.
  * 
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  */
@@ -39,7 +39,7 @@ class Language extends CommonList
      */
     protected function loadLanguage($language)
     {
-        return @include 'I18N/Language/' . $language . '.php';
+        return @include 'Language/' . $language . '.php';
     }
 
     /**

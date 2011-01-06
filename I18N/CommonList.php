@@ -16,7 +16,7 @@ namespace I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: CommonList.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::CommonList
@@ -33,7 +33,7 @@ namespace I18N;
  * work, so code doesn't get written twice or even more often in the future.
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @access      public
  */
 class CommonList
@@ -191,7 +191,7 @@ class CommonList
     {
         if ('UTF-8' !== $this->encoding) {
             $codes = $this->codes;
-            array_walk($codes, array(&$this, '_iconv'));
+            array_walk($codes, array($this, '_iconv'));
             return $codes;
         }
         return $this->codes;
@@ -201,7 +201,7 @@ class CommonList
      * @access  private
      * @return  void
      */
-    private function _iconv(&$code, $key)
+    private function _iconv($code, $key)
     {
         $code = iconv('UTF-8', $this->encoding .'//TRANSLIT', $code);
     }
@@ -239,9 +239,7 @@ class CommonList
      */
     public function toDecoratedList($type)
     {
-        require_once 'I18N/DecoratedList/'. $type .'.php';
-        $decoratedList = 'I18N_DecoratedList_' . $type;
+        $decoratedList = '\\I18N\\DecoratedList\\' . $type;
         return new $decoratedList($this);
     }
 }
-?>

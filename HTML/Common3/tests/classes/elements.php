@@ -7,7 +7,7 @@
 * @author      Adam Daniel <adaniel1@eesus.jnj.com>
 * @author      Bertrand Mansion <bmansion@mamasam.com>
 * @author      Alexey Borzov <avb@php.net>
-* @version     CVS: $Id: elements.php 11 2010-10-10 19:17:21Z tmu $
+* @version     CVS: $Id$
 * @ignore
 */
 

@@ -16,7 +16,7 @@ namespace I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: Encoding.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::Encoding
@@ -31,7 +31,7 @@ namespace I18N;
  * List of common and not so common character sets and their aliases.
  * 
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  * @static
@@ -61,7 +61,7 @@ class Encoding
      */
     function isEncoding($encoding)
     {
-        $name = I18Nv3_Encoding::standardize($encoding);
+        $name = self::standardize($encoding);
         return isset($GLOBALS['_I18N_Encoding_Names'][$name]);
     }
     
@@ -75,7 +75,7 @@ class Encoding
      */
     function isAlias($encoding)
     {
-        return (bool) I18N_Encoding::forAlias($encoding);
+        return (bool) self::forAlias($encoding);
     }
     
     /**
@@ -88,9 +88,9 @@ class Encoding
      */
     function exists($encoding)
     {
-        $name = I18N_Encoding::standardize($encoding);
+        $name = self::standardize($encoding);
         return isset($GLOBALS['_I18N_Encoding_Names'][$name]) or
-            I18N_Encoding::forAlias($name) !== false;
+            self::forAlias($name) !== false;
     }
     
     /**
@@ -103,11 +103,11 @@ class Encoding
      */
     function nameOf($encoding)
     {
-        $encoding = I18N_Encoding::standardize($encoding);
+        $encoding = self::standardize($encoding);
         if (isset($GLOBALS['_I18N_Encoding_Names'][$encoding])) {
             return $GLOBALS['_I18N_Encoding_Names'][$encoding];
         }
-        return I18N_Encoding::forAlias($encoding);
+        return self::forAlias($encoding);
     }
     
     /**
@@ -120,7 +120,7 @@ class Encoding
      */
     function aliasesOf($encoding)
     {
-        $name = I18N_Encoding::standardize($encoding);
+        $name = self::standardize($encoding);
         if (isset($GLOBALS['_I18N_Encoding_Aliases'][$name])) {
             return $GLOBALS['_I18N_Encoding_Aliases'][$name];
         }
@@ -137,7 +137,7 @@ class Encoding
      */
     function forAlias($alias)
     {
-        $name = I18N_Encoding::standardize($alias);
+        $name = self::standardize($alias);
         foreach (array_keys($GLOBALS['_I18N_Encoding_Aliases']) as $a) {
             if (in_array($name, $GLOBALS['_I18N_Encoding_Aliases'][$a])) {
                 return $GLOBALS['_I18N_Encoding_Names'][$a];

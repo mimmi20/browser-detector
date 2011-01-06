@@ -1,6 +1,6 @@
 <?php
 /**
-* $Id: cs.php 5 2009-12-27 20:39:52Z tmu $
+* $Id$
 * @author <mishal(@)centrum.cz>
 */
 

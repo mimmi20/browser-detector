@@ -43,7 +43,7 @@ namespace HTML\Common3\Root;
  * @package  \HTML\Common3\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @version  SVN: $Id: Pre.php 11 2010-10-10 19:17:21Z tmu $
+ * @version  SVN: $Id$
  * @link     http://pear.php.net/package/\HTML\Common3\
  */
 
@@ -170,7 +170,7 @@ class Preextends \HTML\Common3\Textimplements \HTML\Common3\Face
      * @var     string
      * @access  protected
      */
-    const VERSION = '$Id: Pre.php 11 2010-10-10 19:17:21Z tmu $';
+    const VERSION = '$Id$';
 
     // }}} properties
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: ko.php 5 2009-12-27 20:39:52Z tmu $
+ * $Id$
  */
 $this->codes = array(
     'ADP' => '안도라 페세타',

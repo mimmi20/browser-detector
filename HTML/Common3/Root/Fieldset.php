@@ -43,7 +43,7 @@ namespace HTML\Common3\Root;
  * @package  \HTML\Common3\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @version  SVN: $Id: Fieldset.php 11 2010-10-10 19:17:21Z tmu $
+ * @version  SVN: $Id$
  * @link     http://pear.php.net/package/\HTML\Common3\
  */
 
@@ -267,7 +267,7 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * @var     string
      * @access  protected
      */
-    const VERSION = '$Id: Fieldset.php 11 2010-10-10 19:17:21Z tmu $';
+    const VERSION = '$Id$';
 
     // }}} properties
     // {{{ __construct

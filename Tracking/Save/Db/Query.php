@@ -7,7 +7,7 @@
  *
  * @package    Unister_Tracking_Tracking
  * @subpackage Save
- * @version    $Id: Query.php 4125 2010-11-23 16:11:05Z t.mueller $
+ * @version    $Id$
  */
 
 class Unister_Tracking_Tracking_Save_Db_Query extends Unister_Tracking_Tracking_Save_Db_Abstract

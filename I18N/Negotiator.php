@@ -20,7 +20,7 @@ namespace I18N;
 // |            Michael Wallner <mike@iworks.at>                          |
 // +----------------------------------------------------------------------+
 //
-// $Id: Negotiator.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::Negotiator
@@ -35,7 +35,7 @@ namespace I18N;
  * @author      Naoki Shima <murahachibu@php.net>
  * @author      Wolfram Kriesing <wk@visionp.de>
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @access      public
  * @package     I18N
  */

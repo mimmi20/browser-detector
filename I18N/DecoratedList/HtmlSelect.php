@@ -11,7 +11,7 @@
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: HtmlSelect.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::DecoratedList::HtmlSelect
@@ -38,7 +38,7 @@ require_once 'I18N/DecoratedList.php';
  * </code>
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  */

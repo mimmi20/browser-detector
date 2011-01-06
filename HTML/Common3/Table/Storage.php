@@ -47,7 +47,7 @@ namespace HTML\Common3\Table;
  * @package  \HTML\Common3\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @version  SVN: $Id: Storage.php 11 2010-10-10 19:17:21Z tmu $
+ * @version  SVN: $Id$
  * @link     http://pear.php.net/package/\HTML\Common3\
  */
 
@@ -152,7 +152,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @var     string
      * @access  protected
      */
-    const VERSION = '$Id: Storage.php 11 2010-10-10 19:17:21Z tmu $';
+    const VERSION = '$Id$';
 
     // }}} properties
     // {{{ setAutoFill

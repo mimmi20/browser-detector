@@ -11,7 +11,7 @@
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: SouthAmericanCountries.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::DecoratedList::SouthAmericanCountries
@@ -28,7 +28,7 @@ require_once 'I18N/DecoratedList/Filter.php';
  * Use only for decorating I18N_Country.
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  */

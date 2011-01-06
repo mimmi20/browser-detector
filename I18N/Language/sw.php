@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: sw.php 5 2009-12-27 20:39:52Z tmu $
+ * $Id$
  */
 $this->codes = array(
     'aa' => 'Afar',

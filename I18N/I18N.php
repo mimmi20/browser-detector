@@ -16,7 +16,7 @@ namespace HTML\I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: I18N.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N
@@ -31,7 +31,7 @@ define('I18N_WIN', defined('OS_WINDOWS') ? OS_WINDOWS : (strToUpper(substr(PHP_O
  * I18N - Internationalization v2
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  * @static
@@ -91,7 +91,7 @@ class I18N
             return false;
         }
 
-        $language = substr($locale, 0,2);
+        $language = substr($locale, 0, 2);
 
         if (I18N_WIN) {
             @putEnv('LANG='     . $language);

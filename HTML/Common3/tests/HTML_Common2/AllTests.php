@@ -38,7 +38,7 @@
  * @package    HTML_Common2
  * @author     Alexey Borzov <avb@php.net>
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    CVS: $Id: AllTests.php 11 2010-10-10 19:17:21Z tmu $
+ * @version    CVS: $Id$
  * @link       http://pear.php.net/package/HTML_Common2
  */
 

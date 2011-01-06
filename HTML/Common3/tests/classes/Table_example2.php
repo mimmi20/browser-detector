@@ -4,7 +4,7 @@
 * This example will output html websafe colors in a table
 * using HTML_Table.
 */
-// $Id: Table_example2.php 11 2010-10-10 19:17:21Z tmu $
+// $Id$
 
 require_once 'HTML/Table.php';
 

@@ -11,7 +11,7 @@ namespace Test;
  * @package  HTML_CSS3
  * @author   Laurent Laville <pear@laurent-laville.org>
  * @license  http://www.opensource.org/licenses/bsd-license.php BSD
- * @version  CVS: $Id: HTML_CSS3_TestSuite_Output.php 11 2010-10-10 19:17:21Z tmu $
+ * @version  CVS: $Id$
  * @link     http://pear.php.net/package/HTML_CSS
  * @since    File available since Release 1.5.2
  */

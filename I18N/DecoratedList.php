@@ -16,7 +16,7 @@ namespace I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: DecoratedList.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::DecoratedList
@@ -31,11 +31,11 @@ namespace I18N;
  * I18N_DecoratedList
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  */
-class I18N_DecoratedList
+class DecoratedList
 {
     /**
      * I18N_(Common|Decorated)List
@@ -51,11 +51,11 @@ class I18N_DecoratedList
      * @access  public
      * @param   object  $list   I18N_DecoratedList or I18N_CommonList
      */
-    function I18N_DecoratedList(&$list)
+    function __construct($list)
     {
         if (is_a($list, 'I18N_CommonList') ||
             is_a($list, 'I18N_DecoratedList')) {
-            $this->list = &$list;
+            $this->list = $list;
         }
     }
 
@@ -114,10 +114,9 @@ class I18N_DecoratedList
      * @return  object  I18N_DecoratedList
      * @param   string  $type
      */
-    function &toDecoratedList($type)
+    function toDecoratedList($type)
     {
-        require_once 'I18N/DecoratedList/'. $type .'.php';
-        $decoratedList = 'I18N_DecoratedList_' . $type;
+        $decoratedList = '\\I18N\\DecoratedList\\' . $type;
         return new $decoratedList($this);
     }
 
@@ -182,4 +181,3 @@ class I18N_DecoratedList
         return $this->list->getEncoding();
     }
 }
-?>

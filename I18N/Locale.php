@@ -16,7 +16,7 @@ namespace I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: Locale.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::Locale
@@ -45,18 +45,15 @@ define('I18N_DATETIME_LONG',              'long');
 define('I18N_DATETIME_FULL',              'full');
 /**#@-*/
 
-require_once 'PEAR.php';
-require_once 'I18N.php';
-
 /** 
  * I18N_Locale
  *
  * @author       Michael Wallner <mike@php.net>
- * @version      $Revision: 5 $
+ * @version      $Revision$
  * @access       public
  * @package      I18N
  */
-class I18N_Locale
+class Locale
 {
     /**
      * Initialized Locale
@@ -64,7 +61,7 @@ class I18N_Locale
      * @access  protected
      * @var     string
      */
-    var $initialized = '';
+    protected $initialized = '';
     
     /**
      * Full day names
@@ -72,7 +69,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $days = array();
+    protected $days = array();
     
     /**
      * Full month names
@@ -80,7 +77,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $months = array();
+    protected $months = array();
     
     /**
      * Abbreviated day names
@@ -88,7 +85,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $abbrDays = array();
+    protected $abbrDays = array();
     
     /**
      * Abbreviated month names
@@ -96,7 +93,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $abbrMonths = array();
+    protected $abbrMonths = array();
     
     /**
      * Registered date formats
@@ -104,7 +101,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $dateFormats = array();
+    protected $dateFormats = array();
 
     /**
      * Registered time formats
@@ -112,7 +109,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $timeFormats = array();
+    protected $timeFormats = array();
 
     /**
      * Registered datetime formats
@@ -120,7 +117,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $dateTimeFormats = array();
+    protected $dateTimeFormats = array();
 
     /**
      * Registered number formats
@@ -128,7 +125,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $numberFormats = array();
+    protected $numberFormats = array();
 
     /**
      * Registered currency formats
@@ -136,7 +133,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $currencyFormats = array();
+    protected $currencyFormats = array();
     
     /**
      * Current time format
@@ -144,7 +141,7 @@ class I18N_Locale
      * @access  protected
      * @var     mixed
      */
-    var $currentTimeFormat = null;
+    protected $currentTimeFormat = null;
 
     /**
      * Current date format
@@ -152,7 +149,7 @@ class I18N_Locale
      * @access  protected
      * @var     mixed
      */
-    var $currentDateFormat = null;
+    protected $currentDateFormat = null;
 
     /**
      * Current datetime format
@@ -160,7 +157,7 @@ class I18N_Locale
      * @access  protected
      * @var     mixed
      */
-    var $currentDateTimeFormat = null;
+    protected $currentDateTimeFormat = null;
 
     /**
      * Current number format
@@ -168,7 +165,7 @@ class I18N_Locale
      * @access  protected
      * @var     mixed
      */
-    var $currentNumberFormat = null;
+    protected $currentNumberFormat = null;
 
     /**
      * Current currency format
@@ -176,7 +173,7 @@ class I18N_Locale
      * @access  protected
      * @var     mixed
      */
-    var $currentCurrencyFormat = null;
+    protected $currentCurrencyFormat = null;
     
     /**
      * Custom formats
@@ -184,7 +181,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $customFormats = array();
+    protected $customFormats = array();
     
     /**
      * Locale Data Cache
@@ -192,7 +189,7 @@ class I18N_Locale
      * @access  protected
      * @var     array
      */
-    var $cache = array();
+    protected $cache = array();
     
     /**
      * Whether to reset the global locale after each call
@@ -200,7 +197,7 @@ class I18N_Locale
      * @access  protected
      * @var     bool
      */
-    var $paranoid = false;
+    protected $paranoid = false;
     
     /**
      * Store system locale for paranoid mode
@@ -208,7 +205,7 @@ class I18N_Locale
      * @access  protected
      * @var     string
      */
-    var $usedLocale = '';
+    protected $usedLocale = '';
     
     /**
      * Constructor
@@ -216,7 +213,7 @@ class I18N_Locale
      * @access  public
      * @param   string  $locale
      */
-    function I18N_Locale($locale = null, $paranoid = false)
+    function __construct($locale = null, $paranoid = false)
     {
         $locale or $locale = I18N::lastLocale(0, 'locale');
         $this->setLocale($locale);
@@ -238,9 +235,10 @@ class I18N_Locale
         if (!$force && $this->initialized == $locale) {
             $last = I18N::lastLocale(0, true);
             if (is_array($last)) {
-                if (    $locale == $last['syslocale']   || 
-                        $locale == $last['locale']      ||
-                        $locale == $last['language']) {
+                if ($locale == $last['syslocale']   || 
+                    $locale == $last['locale']      ||
+                    $locale == $last['language']
+                ) {
                     return $last['syslocale'];
                 }
             } elseif ($last == $locale) {
@@ -859,4 +857,3 @@ class I18N_Locale
         }
     }
 }
-?>

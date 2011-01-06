@@ -34,7 +34,7 @@
  * @package  HTML_Entities
  * @author   Charles Brunet <charles.fmj@gmail.com>
  * @license  http://www.opensource.org/licenses/bsd-license.html BSD License
- * @version  CVS: $Id: Exception.php 4111 2010-11-18 17:38:16Z t.mueller $
+ * @version  CVS: $Id$
  * @link     http://pear.php.net/package/HTML_Entities
  */
 

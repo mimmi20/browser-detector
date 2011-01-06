@@ -16,16 +16,7 @@ namespace I18N;
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: AreaCode.php 5 2009-12-27 20:39:52Z tmu $
-
-/**
- * I18N::AreaCode
- *
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/CommonList.php';
+// $Id$
 
 /**
  * I18N_AreaCode
@@ -33,11 +24,11 @@ require_once 'I18N/CommonList.php';
  * List of two letter country code to international area code mapping.
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @access      public
  * @package     I18N
  */
-class I18N_AreaCode extends I18N_CommonList
+class AreaCode extends CommonList
 {
     /**
      * Codes
@@ -290,9 +281,9 @@ class I18N_AreaCode extends I18N_CommonList
      * @return  object  I18N_CommonList
      * @param   object  $country I18N_Country
      */
-    function &mergeCountry(&$country)
+    function mergeCountry(&$country)
     {
-        $list = &new I18N_CommonList(
+        $list = new CommonList(
             $country->getLanguage(),
             $encoding = $country->getEncoding()
         );
@@ -312,4 +303,3 @@ class I18N_AreaCode extends I18N_CommonList
     }
 
 }
-?>

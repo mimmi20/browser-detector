@@ -11,7 +11,7 @@
 // | Copyright (c) 2004 Michael Wallner <mike@iworks.at>                  |
 // +----------------------------------------------------------------------+
 //
-// $Id: HtmlEntities.php 5 2009-12-27 20:39:52Z tmu $
+// $Id$
 
 /**
  * I18N::DecoratedList::HtmlEntities
@@ -26,7 +26,7 @@ require_once 'I18N/DecoratedList.php';
  * I18N_Decorator_HtmlEntities
  *
  * @author      Michael Wallner <mike@php.net>
- * @version     $Revision: 5 $
+ * @version     $Revision$
  * @package     I18N
  * @access      public
  */
