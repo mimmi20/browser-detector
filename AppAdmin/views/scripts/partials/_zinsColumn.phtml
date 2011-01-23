@@ -1,0 +1,25 @@
+<?php
+/**
+ * Layout fuer den Kredit-Vergleich
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Layout
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _zinsColumn.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+if ($this->boni) :
+    if ($this->effZinsUnten != $this->effZinsOben) : /* Zinsband */
+        echo number_format($this->effZinsUnten, 2, ',', '.'); ?>&nbsp;&mdash;&nbsp;<?php echo number_format($this->effZinsOben, 2, ',', '.'); ?> %<?php
+    elseif ($this->zinssatzIsCleaned) :
+        echo number_format($this->zinssatzCleaned, 2, ',', '.'); ?> %<?php
+    else:
+        echo number_format($this->effZins, 2, ',', '.'); ?> %<?php
+    endif;
+else:
+    echo number_format($this->effZins, 2, ',', '.'); ?> %<?php
+endif;

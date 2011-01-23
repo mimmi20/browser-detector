@@ -1,0 +1,20 @@
+<?php
+/**
+ * View
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _kreditOptions.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<div class="options">
+    <strong>Kreditbetrag:</strong> <?php echo $this->euroFormat($this->kreditbetrag); ?>
+    &nbsp;&nbsp;
+    <strong>Laufzeit:</strong> <?php echo $this->laufzeitName; ?>
+    &nbsp;&nbsp;
+    <strong>Verwendung:</strong> <?php echo $this->vzweckLabel; ?>
+</div>

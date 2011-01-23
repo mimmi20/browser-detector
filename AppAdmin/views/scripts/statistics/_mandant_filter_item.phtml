@@ -1,0 +1,22 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _mandant_filter_item.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<div class="<?php echo $this->klasse; ?> filters<?php echo $this->id . $this->partner['p_id']; ?>">
+    <div class="rollDownButton"<?php if(isset($this->partner['childrenIds'])) { ?> onclick="jQuery('<?php echo $this->partner['childrenIds']; ?>').toggle();"<?php } ?>></div>
+    <div class="labelColor" style="background-color: #<?php echo $this->partner['color']; ?>;"></div>
+    <label for="filters<?php echo $this->id; ?>-<?php echo $this->partner['p_id']; ?>"><?php echo $this->partner['name']; ?></label>
+    <input type="checkbox" name="filters[]" id="<?php echo 'filters' . $this->id . '-' . $this->partner['p_id']; ?>" value="<?php echo $this->partner['p_id']; ?>"<?php if(isset($this->partner['childrenCbx'])) { ?> onclick="<?php if(isset($this->partner['childrenIds'])) { ?>if (this.checked) {jQuery('<?php echo $this->partner['childrenIds']; ?>').show();}<?php } ?>jQuery('<?php echo $this->partner['childrenCbx']; ?>').attr('checked', this.checked).attr('disabled', !this.checked);updateCheckbox(jQuery('<?php echo $this->partner['childrenCbx']; ?>'));"<?php } else { ?> onclick="updateCheckbox(this);" disabled="disabled"<?php } ?> />
+    <!--<?php echo $this->formCheckbox('filters[]', $this->partner['p_id'], array('checked' => false, 'style' => 'height: 12px;', 'id' => 'filters' . $this->id . '-' . $this->partner['p_id'])); ?>-->
+    <div style="clear: both"></div>
+</div>

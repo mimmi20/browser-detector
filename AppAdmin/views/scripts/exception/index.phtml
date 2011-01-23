@@ -1,0 +1,72 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: index.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<h2>Unerwartete Ausnahmen (Exceptions)</h2>
+<div id="tabs" class="newStatistics" style="display:none;">
+    <ul class="tabs">
+        <li><a class="current" href="#other" onclick="this.href=getOverviewUrlNew('<?php echo $this->basedUrl(array('module'=>'kredit-admin','controller'=>'statistics','action'=>'overview-new','detailValue'=>'exception')); ?>'); return false;">Exceptions</a></li>
+    </ul>
+    <div class="panes">
+        <div id="other">&nbsp;</div>
+    </div>
+</div>
+<div style="display:none;">
+    <input type="hidden" id="sparteValue" value="-1" />
+    <input type="hidden" id="groupValue" value="40" />
+    <input type="hidden" id="filterDateStart" value="<?php echo $this->min; ?>" />
+    <input type="hidden" id="filterDateEnd" value="<?php echo $this->max; ?>" />
+    <input type="hidden" id="campaigns" value="-1" />
+
+</div>
+
+<div id="jqAnchorGraphic" class="newStatistics ui-corner-all ui-widget-content" style="margin:0 0 20px 0;">&nbsp;</div>
+
+<div class="statisticsListGraphic" id="jqTemplate" style="display:none;">
+    <div class="head"><span>&nbsp;</span></div>
+    <div class="content">
+        <div id="excStat_" class="statPlotGraphic"></div>
+        <div id="table_" class="tablePlotGraphic">
+            <table class="CalcData plot" id="tablePlot" summary="Statistik">
+                <tbody>
+                    <tr><td>&nbsp;</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bottom" style="display:none;"><span>&nbsp;</span></div>
+</div>
+
+<div class="list">
+    <div class="content">
+        <div class="table" id="errorTable"></div>
+        <div class="filter">
+             <?php if (null !== $this->paginator) echo $this->paginationControl($this->paginator, 'Sliding', 'exception/pagination.phtml', array('module' => 'kredit-admin','controller' => 'exception','action'  => 'get-error-list')); ?>
+        </div>
+
+    </div>
+    <div class="bottom"><span>&nbsp;</span></div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+    jQuery("#tabs .tabs a.current").trigger('click');
+
+    template = jQuery('#jqTemplate').clone();
+    template.appendTo('#jqAnchorGraphic');
+    template.css('display', 'block');
+
+    statistic(template, 'Summary_Exceptions', 'Exceptions', 'Exceptions', 'Laufzeitumgebung', '#,###,###,###.', 'no');
+
+    getErrorList('<?php echo $this->basedUrl(array('module' => 'kredit-admin', 'controller' => 'exception', 'action' => 'get-error-list','page' => $this->page), 'default', false); ?>', '<?php echo $this->page; ?>');
+/* ]]> */
+</script>

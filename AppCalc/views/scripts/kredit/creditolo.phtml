@@ -1,0 +1,19 @@
+<?php
+/**
+ * View
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: creditolo.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+foreach ($this->empfaenger as $empfaenger) {
+?>
+eine E-Mail wurde an <?php echo $empfaenger->anrede; ?> <?php echo $empfaenger->name; ?> (<?php echo $empfaenger->email; ?>) versandt.<br />
+<?php
+}

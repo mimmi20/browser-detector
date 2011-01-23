@@ -1,0 +1,40 @@
+<?php
+/**
+ * Layout f&uuml;r den Tagesgeld-Vergleich
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Layout
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _testsiegerColumn.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+?>
+<td class="center"
+    <?php if ($this->kreditTestsieger) { ?>title="Testsieger <?php echo $this->kreditInstitutTitle; ?>"<?php } ?>
+    onmousedown="logThisClick('<?php echo $this->sparte; ?>_<?php echo $this->kreditinstitut; ?>');"
+    onclick="<?php echo $this->goto; ?>">
+<?php if ($this->kreditTestsieger) { ?>
+    <img class="jq_iconToolTip"
+         id="<?php echo $this->kreditinstitut; ?>_tipp"
+         src="<?php echo $this->kreditTestsiegerPic; ?>"
+         alt="Testsieger <?php echo $this->kreditInstitutTitle; ?>"
+         title="Testsieger <?php echo $this->kreditInstitutTitle; ?>"
+         width="37"
+         height="35"
+         onmouseover="return overlib(document.getElementById('<?php echo $this->kreditinstitut; ?>_ansicht').innerHTML,WRAPMAX,100,BGCLASS,'picture');"
+         onmouseout="return nd();" />
+    <span id="<?php echo $this->kreditinstitut; ?>_ansicht"
+          style="position:relative;display:none;">
+        <img id="<?php echo $this->kreditinstitut; ?>_ansicht_2"
+             style="position:absolute;top:0px;left:0px;"
+             src="<?php echo $this->kreditTestsiegerFullPic; ?>"
+             alt="Testsieger <?php echo $this->kreditInstitutTitle; ?>"
+             title="Testsieger <?php echo $this->kreditInstitutTitle; ?>" />
+    </span>
+<?php } ?>
+    &nbsp;
+</td>

@@ -1,0 +1,24 @@
+<?php
+/**
+ * View
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: form.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+$functionName = 'show_form_'.$this->sparteId.'_'.$this->caid.'_'.$this->laufzeit.'_'.$this->zweck.'_'.$this->betrag;
+
+?>
+jQuery.creditcalc.<?php echo $functionName; ?> = function() {
+    var s = this;
+
+    s.setFormContent('<?php echo $this->formText; ?>');
+}
+
+jQuery.creditcalc.<?php echo $functionName; ?>();

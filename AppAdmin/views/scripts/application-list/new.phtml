@@ -1,0 +1,100 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: new.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<h2>
+    Antr&auml;ge
+</h2>
+<!--
+<div class="list">
+    <div class="content">
+        <div class="filter">
+            <form  class="filterform" action="<?php echo $this->basedUrl(array('module' => 'kredit-admin', 'controller' => 'application-list'), null, true) ?>" method="post">
+                Von
+                <?php echo $this->formText('filters[dateFrom]', $this->dateFrom, array('class' => 'FilterDate', 'maxlength' => 10)); ?>
+                <?php echo $this->formText('filters[timeFrom]', $this->timeFrom, array('class' => 'FilterTime', 'maxlength' => 5)); ?>
+                Bis
+                <?php echo $this->formText('filters[dateUntil]', $this->dateUntil, array('class' => 'FilterDate', 'maxlength' => 10)); ?>
+                <?php echo $this->formText('filters[timeUntil]', $this->timeUntil, array('class' => 'FilterTime', 'maxlength' => 5)); ?>
+                <?php echo $this->formSubmit('applyFilters', 'Anwenden'); ?>
+            </form>
+            <div class="buttons">
+                <a href="<?php echo $this->basedUrl(array('module' => 'kredit-admin', 'controller' => 'application-list', 'action' => 'new'), 'default', true); ?>">Antrag hinzuf&uuml;gen</a>
+            </div>
+        </div>
+
+        <div class="table">
+        <table class="Data" summary="Antragsübersicht">
+            <colgroup>
+                <col style="width:20px" />
+                <col span="7" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Schl&uuml;ssel</th>
+                    <th>erstellt</th>
+                    <th>Antragsteller</th>
+                    <th>Status</th>
+                    <th>Gesellschaft<br />Tarif</th>
+                    <th>Sparte</th>
+                    <th>Aktivit&auml;t</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+<?php
+if (is_object($this->paginator)) :
+    foreach ($this->paginator->getItemsByPage($this->paginator->getCurrentPageNumber()) as $row) :
+?>
+                <tr class="<?php echo $this->cycle(array('cycle1', 'cycle2'))->next(); ?>" >
+                    <td>
+
+                    </td>
+                    <td>
+                        <?php echo $row->processID; ?>
+                    </td>
+                    <td>
+                        <?php echo date('d.m.Y H:i', strtotime($row->date)); ?> Uhr
+                    </td>
+                    <td><?php echo $this->escape($row->name); ?></td>
+                    <td>
+                        ohne Status
+                    </td>
+                    <td>
+                        <?php echo $this->escape($row->institut); ?><br />
+                        <?php //echo $this->escape($row->institut); ?>
+                    </td>
+                    <td><?php echo $this->escape($row->sparte); ?></td>
+                    <td>
+                        keine Aktivität
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+<?php
+    endforeach;
+endif;
+?>
+            </tbody>
+        </table>
+        </div>
+        <div class="filter">
+            <?php if (null !== $this->queryPaginator) echo $this->paginationControl($this->queryPaginator, 'Sliding', 'pagination.phtml', array('module' => 'kredit-admin','controller' => 'application-list','action'  => 'new')); ?>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bottom"><span>&nbsp;</span></div>
+</div>
+-->

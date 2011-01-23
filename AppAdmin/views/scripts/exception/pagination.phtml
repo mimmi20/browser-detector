@@ -1,0 +1,32 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: pagination.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<div class="pagination">
+    <?php foreach ($this->pagesInRange as $page): ?>
+        <?php if ($page != $this->current): ?>
+            <div class="paginationItem paginationItemInactive class-<?php echo $page; ?>">
+                <a href="javascript:void()" onclick="getErrorList('<?php echo $this->basedUrl(array('module'=>$this->module,'controller' => $this->controller,'action' => $this->action,'page' => $page), 'default', false); ?>', '<?php echo $page; ?>'); return false;">
+                    <?php echo $page; ?>
+                </a>
+            </div>
+        <?php else: ?>
+            <div class="paginationItem paginationItemActive class-<?php echo $page; ?>">
+                <a href="javascript:void()" onclick="getErrorList('<?php echo $this->basedUrl(array('module'=>$this->module,'controller' => $this->controller,'action' => $this->action,'page' => $page), 'default', false); ?>', '<?php echo $page; ?>'); return false;">
+                    <?php echo $page; ?>
+                </a>
+            </div>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    <div class="clear"></div>
+</div>

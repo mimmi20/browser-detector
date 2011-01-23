@@ -1,0 +1,59 @@
+<?php
+declare(ENCODING = 'iso-8859-1');
+namespace Credit\Core\Service;
+
+/**
+ * Model
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Models
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: Resources.php 30 2011-01-06 21:58:02Z tmu $
+ */
+
+/**
+ * Model
+ *
+ * @category  Kreditrechner
+ * @package   Models
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ */
+class Resources extends ServiceAbstract
+{
+    /**
+     * Class Constructor
+     *
+     * @return \Credit\Core\Service\Resources
+     */
+    public function __construct()
+    {
+        $this->_model = new \Credit\Core\Model\Resources();
+    }
+
+    /**
+     * returns a list of possible Resources
+     *
+     * @return array  a list of all resources
+     * @access public
+     */
+    public function getList()
+    {
+        return $this->_model->getCached('resources')->getList();
+    }
+
+    /**
+     * cleans the model cache
+     *
+     * calls the {@link _cleanCache} function with defined tag name
+     *
+     * @return \Credit\Core\Service\Resources
+     */
+    public function cleanCache()
+    {
+        return $this->cleanTaggedCache('resources');
+    }
+}

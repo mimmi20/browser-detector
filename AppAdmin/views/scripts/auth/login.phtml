@@ -1,0 +1,20 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: login.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<div class="loginBox">
+<?php echo $this->form; ?>
+<?php if ($this->message): ?>
+<?php echo $this->message; ?>
+<?php endif; ?>
+</div>

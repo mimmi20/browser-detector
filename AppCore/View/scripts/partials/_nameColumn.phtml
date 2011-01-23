@@ -1,0 +1,38 @@
+<?php
+/**
+ * Layout f&uuml;r den Tagesgeld-Vergleich
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _nameColumn.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+?>
+<td class="nameCol<?php if ($this->teaser): ?> teaser<?php endif; ?>">
+    <?php if ($this->showKreditName) { ?>
+    <div>
+    <?php } ?>
+        <strong><?php echo $this->kreditInstitutTitle; ?></strong>
+        <span class="jq_infoToolTipp">
+            (
+            <a class="jq_infoToolTipp"
+               id="<?php echo $this->kreditinstitut; ?>_info"
+               rel="ccInfo<?php echo $this->kreditinstitut . $this->sparte;?>"
+               href="javascript:void(0);"
+               onmousedown="loadInfo('<?php echo $this->product; ?>');"
+               <?php if (!$this->internal): ?>onclick="<?php echo $this->goto; ?>"<?php endif; ?>
+               title="Information &uuml;ber <?php echo $this->kreditInstitutTitle; ?>">
+                Info
+            </a>
+            )
+        </span>
+    <?php if ($this->showKreditName) { ?>
+    </div>
+    <div class="kosten"><?php echo $this->kreditName; ?><?php if ($this->pixel): ?><img src="<?php echo $this->pixel; ?>" style="display:none;height:1px;width:1px;" alt="" /><?php endif; ?></div>
+    <?php } ?>
+</td>

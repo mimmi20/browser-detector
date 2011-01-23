@@ -1,0 +1,30 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: mail-docs.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<h2>Dokumenten Download f&uuml;r Mail-Zusammenstellung</h2>
+<h3>SoftFair Infodokumente</h3>
+<ul>
+    <?php if (count((array)$this->infoFiles) == 0): ?>
+    <li>
+        Keine Dokumente freigeschlaten!
+    </li>
+    <?php endif; ?>
+    <?php foreach((array)$this->infoFiles as $displayName => $resourceName): ?>
+    <li>
+        <a href="<?php echo $this->basedUrl(array('controller' => 'kredit-admin', 'action' => 'download-document', 'document' => $resourceName['fileName'], 'aid' => $this->aid), 'default', true);?>" target="_blank">
+            <?php echo $displayName ?>
+        </a>
+    </li>
+    <?php endforeach; ?>
+</ul>

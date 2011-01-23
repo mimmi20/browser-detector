@@ -1,0 +1,202 @@
+/* Companies */
+.axa,
+.bankofscottland,
+.barclaycard,
+.bmw,
+.bmwfs,
+.bon,
+.carcredit,
+.cetelem,
+.cetelem-gebrauchtwagen,
+.cetelem-neuwagen,
+.cetelem-sonstiges,
+.cetelem_gebrauchtwagen,
+.cetelem_neuwagen,
+.cetelem_sonstiges,
+.citibank,
+.comdirect,
+.crediteurope,
+.crediteuropebank,
+.creditolo,
+.creditplus,
+.dab,
+.dkb,
+.drklein,
+.dsl,
+.easycredit,
+.ffs,
+.ffs_auto,
+.ffs-auto,
+.fortis,
+.gemoney,
+.hanseatic,
+.hypo,
+.i822direkt,
+.ikano,
+.ingdiba,
+.ingdiba_auto,
+.ingdiba_moebel,
+.ingdiba-auto,
+.ingdiba-moebel,
+.kaupthing,
+.mbbank,
+.netbank,
+.norisbank,
+.postbank,
+.rbs,
+.santander,
+.santander-direkt,
+.santander_direkt,
+.seb,
+.smava,
+.sparda,
+.spkH,
+.swk,
+.targo,
+.unicredit,
+.vwbank,
+.wuestenrot {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.axa {
+    background-image: url(###IMAGE_URL_O###gesellschaften/axa.gif);
+}
+.bankofscottland {
+    background-image: url(###IMAGE_URL_O###gesellschaften/bankofscottland.gif);
+}
+.barclaycard {
+    background-image: url(###IMAGE_URL_O###gesellschaften/barclaycard.gif);
+}
+.bmw {
+    background-image: url(###IMAGE_URL_O###gesellschaften/bmw.gif);
+}
+.bmwfs {
+    background-image: url(###IMAGE_URL_O###gesellschaften/bmwfs.gif);
+}
+.bon {
+    background-image: url(###IMAGE_URL_O###gesellschaften/bon.gif);
+}
+.carcredit {
+    background-image: url(###IMAGE_URL_O###gesellschaften/carcredit.gif);
+}
+.cetelem,
+.cetelem-gebrauchtwagen,
+.cetelem-neuwagen,
+.cetelem-sonstiges,
+.cetelem_gebrauchtwagen,
+.cetelem_neuwagen,
+.cetelem_sonstiges {
+    background-image: url(###IMAGE_URL_O###gesellschaften/cetelem.gif);
+}
+.citibank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/citibank.gif);
+}
+.comdirect {
+    background-image: url(###IMAGE_URL_O###gesellschaften/comdirect.gif);
+}
+.crediteurope,
+.crediteuropebank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/crediteurope.gif);
+}
+.creditolo {
+    background-image: url(###IMAGE_URL_O###gesellschaften/creditolo.gif);
+}
+.creditplus {
+    background-image: url(###IMAGE_URL_O###gesellschaften/creditplus.gif);
+}
+.dab {
+    background-image: url(###IMAGE_URL_O###gesellschaften/dab.gif);
+}
+.dkb {
+    background-image: url(###IMAGE_URL_O###gesellschaften/dkb.gif);
+}
+.drklein {
+    background-image: url(###IMAGE_URL_O###gesellschaften/drklein.gif);
+}
+.dsl {
+    background-image: url(###IMAGE_URL_O###gesellschaften/dsl.gif);
+}
+.easycredit {
+    background-image: url(###IMAGE_URL_O###gesellschaften/easycredit.gif);
+}
+.ffs,
+.ffs_auto,
+.ffs-auto {
+    background-image: url(###IMAGE_URL_O###gesellschaften/ffs.gif);
+}
+.fortis {
+    background-image: url(###IMAGE_URL_O###gesellschaften/fortis.gif);
+}
+.gemoney {
+    background-image: url(###IMAGE_URL_O###gesellschaften/gemoney.gif);
+}
+.hanseatic {
+    background-image: url(###IMAGE_URL_O###gesellschaften/hanseatic.gif);
+}
+.hypo {
+    background-image: url(###IMAGE_URL_O###gesellschaften/hypo.gif);
+}
+.i822direkt {
+    background-image: url(###IMAGE_URL_O###gesellschaften/i822direkt.gif);
+}
+.ikano {
+    background-image: url(###IMAGE_URL_O###gesellschaften/ikano.gif);
+}
+.ingdiba,
+.ingdiba_auto,
+.ingdiba_moebel,
+.ingdiba-auto,
+.ingdiba-moebel {
+    background-image: url(###IMAGE_URL_O###gesellschaften/ingdiba.gif);
+}
+.kaupthing {
+    background-image: url(###IMAGE_URL_O###gesellschaften/kaupthing.gif);
+}
+.mbbank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/mbbank.gif);
+}
+.netbank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/netbank.gif);
+}
+.norisbank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/norisbank.gif);
+}
+.postbank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/postbank.gif);
+}
+.rbs {
+    background-image: url(###IMAGE_URL_O###gesellschaften/rbs.gif);
+}
+.santander,
+.santander-direkt,
+.santander_direkt {
+    background-image: url(###IMAGE_URL_O###gesellschaften/santander.gif);
+}
+.seb {
+    background-image: url(###IMAGE_URL_O###gesellschaften/seb.gif);
+}
+.smava {
+    background-image: url(###IMAGE_URL_O###gesellschaften/smava.gif);
+}
+.spkH {
+    background-image: url(###IMAGE_URL_O###gesellschaften/spkH.gif);
+}
+.swk {
+    background-image: url(###IMAGE_URL_O###gesellschaften/swk.gif);
+}
+.targo {
+    background-image: url(###IMAGE_URL_O###gesellschaften/targo.gif);
+}
+.unicredit {
+    background-image: url(###IMAGE_URL_O###gesellschaften/unicredit.gif);
+}
+.vwbank {
+    background-image: url(###IMAGE_URL_O###gesellschaften/vwbank.gif);
+}
+.wuestenrot {
+    background-image: url(###IMAGE_URL_O###gesellschaften/wuestenrot.gif);
+}

@@ -1,0 +1,357 @@
+<?php
+/**
+ * View
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: xml-long.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+?>
+<xml dataset="<?php echo $this->reportNr; ?>">
+    <paid><?php echo $this->rData['paid']; ?></paid>
+    <kreditbetrag><?php echo $this->rData['kreditbetrag']; ?></kreditbetrag>
+    <laufzeit><?php echo $this->rData['laufzeit']; ?></laufzeit>
+    <vzweck><?php echo ((isset($this->rData['zweck'])) ? $this->rData['zweck'] : ''); ?></vzweck>
+    <test><?php echo ((isset($this->rData['test'])) ? $this->rData['test'] : ''); ?></test>
+    <kreditinstitut><?php echo $this->rData['kreditinstitut']; ?></kreditinstitut>
+    <sparte><?php echo $this->rData['sparte']; ?></sparte>
+    <bonitaet><?php echo ((isset($this->rData['boniLevel'])) ? $this->rData['boniLevel'] : 'medium'); ?></bonitaet>
+    <uuid><?php echo $this->uuid; ?></uuid>
+    <personen>
+        <person nummer="1">
+            <anrede person="1"><?php echo $this->rData['kn1']['anrede']; ?></anrede>
+            <titel person="1"><?php echo $this->rData['kn1']['titel']; ?></titel>
+            <vorname person="1"><?php echo $this->rData['kn1']['vorname']; ?></vorname>
+            <nachname person="1"><?php echo $this->rData['kn1']['nachname']; ?></nachname>
+            <geburtsname person="1"><?php echo $this->rData['kn1']['gebname']; ?></geburtsname>
+            <geburtsort person="1"><?php echo $this->rData['kn1']['gebort']; ?></geburtsort>
+            <gebdatum person="1" komplett="<?php echo $this->rData['kn1']['gebdatum']['komplett']; ?>">
+                <tag person="1"><?php echo $this->rData['kn1']['gebdatum']['tag']; ?></tag>
+                <monat person="1"><?php echo $this->rData['kn1']['gebdatum']['monat']; ?></monat>
+                <jahr person="1"><?php echo $this->rData['kn1']['gebdatum']['jahr']; ?></jahr>
+            </gebdatum>
+            <land person="1">Info nicht verfuegbar</land>
+            <familienstand person="1"><?php echo $this->rData['kn1']['familie']; ?></familienstand>
+            <nationality person="1"><?php echo $this->rData['kn1']['nationality']; ?></nationality>
+            <adressen person="1">
+                <adresse type="aktuell" person="1">
+                    <strasse person="1"><?php echo $this->rData['kn1']['strasse']; ?></strasse>
+                    <hausnr person="1"><?php echo $this->rData['kn1']['hausnr']; ?></hausnr>
+                    <plz person="1"><?php echo ((isset($this->rData['kn1']['plz'])) ? $this->rData['kn1']['plz'] : ''); ?></plz>
+                    <ort person="1"><?php echo $this->rData['kn1']['ort']; ?></ort>
+                    <seit person="1">
+                        <monat person="1"><?php echo ((isset($this->rData['kn1']['wohnhaftseit']['Monat'])) ? $this->rData['kn1']['wohnhaftseit']['Monat'] : ''); ?></monat>
+                        <jahr person="1"><?php echo ((isset($this->rData['kn1']['wohnhaftseit']['Jahr'])) ? $this->rData['kn1']['wohnhaftseit']['Jahr'] : ''); ?></jahr>
+                    </seit>
+                </adresse>
+                <adresse type="davor" person="1">
+                    <strasse person="1"><?php echo ((isset($this->rData['kn1']['strassedavor'])) ? $this->rData['kn1']['strassedavor'] : ''); ?></strasse>
+                    <hausnr person="1"><?php echo ((isset($this->rData['kn1']['hausnrdavor'])) ? $this->rData['kn1']['hausnrdavor'] : ''); ?></hausnr>
+                    <plz person="1"><?php echo ((isset($this->rData['kn1']['pltdavor'])) ? $this->rData['kn1']['plzdavor'] : ''); ?></plz>
+                    <ort person="1"><?php echo ((isset($this->rData['kn1']['ortdavor'])) ? $this->rData['kn1']['ortdavor'] : ''); ?></ort>
+                </adresse>
+                <gemeinsamerhaushalt person="1"><?php echo ((isset($this->rData['kn1']['gemeinsamerhaushalt'])) ? $this->rData['kn1']['gemeinsamerhaushalt'] : ''); ?></gemeinsamerhaushalt>
+            </adressen>
+            <kontakt person="1">
+                <email person="1"><?php echo $this->rData['kn1']['email']; ?></email>
+                <telefone person="1">
+                    <telefon type="normal" person="1">
+                        <vorwahl person="1"><?php echo $this->rData['kn1']['vorwahl']; ?></vorwahl>
+                        <telefon person="1"><?php echo $this->rData['kn1']['telefon']; ?></telefon>
+                    </telefon>
+                    <telefon type="abends" person="1">
+                        <vorwahl person="1"><?php echo ((isset($this->rData['kn1']['vorwahlabends'])) ? $this->rData['kn1']['vorwahlabends'] : ''); ?></vorwahl>
+                        <telefon person="1"><?php echo ((isset($this->rData['kn1']['telefonabends'])) ? $this->rData['kn1']['telefonabends'] : ''); ?></telefon>
+                    </telefon>
+                    <telefon type="mobil" person="1">
+                        <vorwahl person="1"><?php echo ((isset($this->rData['kn1']['vorwahlmobil'])) ? $this->rData['kn1']['vorwahlmobil'] : ''); ?></vorwahl>
+                        <telefon person="1"><?php echo ((isset($this->rData['kn1']['telefonmobil'])) ? $this->rData['kn1']['telefonmobil'] : ''); ?></telefon>
+                    </telefon>
+                </telefone>
+            </kontakt>
+            <beruf person="1">
+                <berufsgruppe person="1"><?php echo $this->rData['kn1']['berufsgruppe']; ?></berufsgruppe>
+                <berufname person="1"><?php echo $this->rData['kn1']['berufname']; ?></berufname>
+                <branche person="1"><?php echo $this->rData['kn1']['branche']; ?></branche>
+                <probezeit person="1"><?php echo ((isset($this->rData['kn1']['probezeit'])) ? $this->rData['kn1']['probezeit'] : ''); ?></probezeit>
+            </beruf>
+            <einkommen person="1">
+                <netto person="1"><?php echo $this->rData['kn1']['einkommen']['netto']; ?></netto>
+                <vermietung person="1"><?php echo $this->rData['kn1']['einkommen']['vermietung']; ?></vermietung>
+                <unterhalt person="1"><?php echo $this->rData['kn1']['einkommen']['unterhalt']; ?></unterhalt>
+                <rente person="1"><?php echo $this->rData['kn1']['einkommen']['rente']; ?></rente>
+                <zins person="1"><?php echo $this->rData['kn1']['einkommen']['zins']; ?></zins>
+                <neben person="1" type="angestellt"><?php echo $this->rData['kn1']['einkommen']['neben']['a']; ?></neben>
+                <neben person="1" type="selbst"><?php echo $this->rData['kn1']['einkommen']['neben']['s']; ?></neben>
+                <sonst person="1"><?php echo $this->rData['kn1']['einkommen']['sonst']; ?></sonst>
+            </einkommen>
+            <ausgaben person="1">
+                <miete person="1"><?php echo $this->rData['kn1']['ausgaben']['miete']; ?></miete>
+                <bausparen person="1"><?php echo $this->rData['kn1']['ausgaben']['bausparen']; ?></bausparen>
+                <lebensversicherung person="1"><?php echo $this->rData['kn1']['ausgaben']['lv']; ?></lebensversicherung>
+                <krankenversicherung person="1"><?php echo $this->rData['kn1']['ausgaben']['pkv']; ?></krankenversicherung>
+                <sonstigeversicherung person="1"><?php echo $this->rData['kn1']['ausgaben']['sonstversicherung']; ?></sonstigeversicherung>
+                <unterhalt person="1"><?php echo $this->rData['kn1']['ausgaben']['unterhalt']; ?></unterhalt>
+            </ausgaben>
+            <haushalt person="1">
+                <personen person="1"><?php echo ((isset($this->rData['kn1']['personenhaushalt'])) ? $this->rData['kn1']['personenhaushalt'] : ''); ?></personen>
+                <kinder person="1" type="anzahl gesamt"><?php echo ((isset($this->rData['kn1']['kinderhaushalt'])) ? $this->rData['kn1']['kinderhaushalt'] : ''); ?></kinder>
+                <kinder person="1" type="anzahl kindergeldberechtigt"><?php echo ((isset($this->rData['kn1']['anzkkg'])) ? $this->rData['kn1']['anzkkg'] : ''); ?></kinder>
+            </haushalt>
+            <wohneigentum person="1"><?php echo $this->rData['kn1']['wohneigentum']; ?></wohneigentum>
+            <wohnsituation person="1"><?php echo $this->rData['kn1']['wohnsituation']; ?></wohnsituation>
+            <arbeitgeber person="1">
+                <ag type="aktuell" person="1">
+                    <name person="1"><?php echo $this->rData['kn1']['agname']; ?></name>
+                    <ort person="1"><?php echo $this->rData['kn1']['ortag']; ?></ort>
+                    <plz person="1"><?php echo $this->rData['kn1']['plzag']; ?></plz>
+                    <strasse person="1"><?php echo $this->rData['kn1']['strasseag']; ?></strasse>
+                    <hausnr person="1"><?php echo $this->rData['kn1']['hausnrag']; ?></hausnr>
+                    <seit person="1">
+                        <monat person="1"><?php echo ((isset($this->rData['kn1']['beschseit']['Monat'])) ? $this->rData['kn1']['beschseit']['Monat'] : ''); ?></monat>
+                        <jahr person="1"><?php echo ((isset($this->rData['kn1']['beschseit']['Jahr'])) ? $this->rData['kn1']['beschseit']['Jahr'] : ''); ?></jahr>
+                    </seit>
+                    <istbefristet><?php echo ((isset($this->rData['kn1']['arbefristet'])) ? $this->rData['kn1']['arbefristet'] : ''); ?></istbefristet>
+<?php if ((isset($this->rData['kn1']['arbefristet'])) && $this->rData['kn1']['arbefristet'] == 'JA') : ?>
+                    <befristet>
+                        <monat person="1"><?php echo $this->rData['kn1']['befristetbis']['Monat']; ?></monat>
+                        <jahr person="1"><?php echo $this->rData['kn1']['befristetbis']['Jahr']; ?></jahr>
+                    </befristet>
+<?php endif; ?>
+                </ag>
+                <ag type="davor" person="1">
+                    <name person="1"><?php echo $this->rData['kn1']['agnamevorher']; ?></name>
+                    <ort person="1"><?php echo $this->rData['kn1']['ortagvorher']; ?></ort>
+                    <plz person="1"><?php echo $this->rData['kn1']['plzagvorher']; ?></plz>
+                    <strasse person="1"><?php echo $this->rData['kn1']['strasseagvorher']; ?></strasse>
+                    <hausnr person="1"><?php echo $this->rData['kn1']['hausnragvorher']; ?></hausnr>
+                </ag>
+            </arbeitgeber>
+            <hatpkw person="1"><?php echo $this->rData['kn1']['hatpkw']; ?></hatpkw>
+            <hatkrad person="1"><?php echo $this->rData['kn1']['hatkrad']; ?></hatkrad>
+            <hatec person="1"><?php echo $this->rData['kn1']['hatec']; ?></hatec>
+            <kredite person="1" anzahl="<?php echo $this->rData['kn1']['anzkredit']['weitere']; ?>">
+<?php
+if ($this->rData['kn1']['anzkredit']['weitere'] > 1) {
+    for ($i = 0, $j = $this->rData['kn1']['anzkredit']['weitere']; $i < $j; ++$i) {
+?>
+                <kredit person="1" nummer="<?php echo $i; ?>">
+                    <art person="1" kredit="<?php echo $i; ?>"><?php echo $this->kreditArten[$this->rData['kn1']['kredit'][$i]['Art']]; ?></art>
+                    <rahmen person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Rahmen']; ?></rahmen>
+                    <rate person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Rate']; ?></rate>
+                    <restlaufzeit person="1" kredit="<?php echo $i; ?>">
+                        <monat person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Restlaufzeit']['Monat']; ?></monat>
+                        <jahr person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Restlaufzeit']['Jahr']; ?></jahr>
+                    </restlaufzeit>
+                    <umschuldung person="1" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn1']['kredit'][$i]['Umschuldung'])) ? $this->rData['kn1']['kredit'][$i]['Umschuldung'] : ''); ?></umschuldung>
+                    <restschuld person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Restschuld']; ?></restschuld>
+                    <blz person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Blz']; ?></blz>
+                    <konto person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Kto']; ?></konto>
+                    <kontoseit person="1" kredit="<?php echo $i; ?>">
+                        <monat person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Ktbesteht']['Monat']; ?></monat>
+                        <jahr person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Ktbesteht']['Jahr']; ?></jahr>
+                    </kontoseit>
+                </kredit>
+<?php
+    }
+}
+?>
+            </kredite>
+            <dreimonate person="1">Info nicht verfuegbar</dreimonate>
+        </person>
+<?php
+if (isset($this->rData['anzahl'])
+    && $this->rData['anzahl'] > 1
+    && isset($this->rData['kn2'])
+    && is_array($this->rData['kn2'])
+    && count($this->rData['kn2']) > 1
+) :
+?>
+        <person nummer="2">
+            <anrede person="2"><?php echo ((isset($this->rData['kn2']['anrede'])) ? $this->rData['kn2']['anrede'] : ''); ?></anrede>
+            <titel person="2"><?php echo ((isset($this->rData['kn2']['titel'])) ? $this->rData['kn2']['titel'] : ''); ?></titel>
+            <vorname person="2"><?php echo ((isset($this->rData['kn2']['vorname'])) ? $this->rData['kn2']['vorname'] : ''); ?></vorname>
+            <nachname person="2"><?php echo ((isset($this->rData['kn2']['nachname'])) ? $this->rData['kn2']['nachname'] : ''); ?></nachname>
+            <geburtsname person="2"><?php echo ((isset($this->rData['kn2']['gebname'])) ? $this->rData['kn2']['gebname'] : ''); ?></geburtsname>
+            <geburtsort person="2"><?php echo ((isset($this->rData['kn2']['gebort'])) ? $this->rData['kn2']['gebort'] : ''); ?></geburtsort>
+            <gebdatum person="2" komplett="<?php echo ((isset($this->rData['kn2']['gebdatum']['komplett'])) ? $this->rData['kn2']['gebdatum']['komplett'] : ''); ?>">
+                <tag person="2"><?php echo ((isset($this->rData['kn2']['gebdatum']['tag'])) ? $this->rData['kn2']['gebdatum']['tag'] : ''); ?></tag>
+                <monat person="2"><?php echo ((isset($this->rData['kn2']['gebdatum']['monat'])) ? $this->rData['kn2']['gebdatum']['monat'] : ''); ?></monat>
+                <jahr person="2"><?php echo ((isset($this->rData['kn2']['gebdatum']['jahr'])) ? $this->rData['kn2']['gebdatum']['jahr'] : ''); ?></jahr>
+            </gebdatum>
+            <land person="2">Info nicht verfuegbar</land>
+            <familienstand person="2"><?php echo ((isset($this->rData['kn2']['familie'])) ? $this->rData['kn2']['familie'] : ''); ?></familienstand>
+            <nationality person="2"><?php echo ((isset($this->rData['kn2']['nationality'])) ? $this->rData['kn2']['nationality'] : ''); ?></nationality>
+            <adressen person="2">
+                <adresse type="aktuell" person="2">
+                    <gleicheadresse person="2"><?php echo ((isset($this->rData['kn2']['gleicheadresse'])) ? $this->rData['kn2']['gleicheadresse'] : ''); ?></gleicheadresse>
+<?php
+if (!isset($this->rData['kn1']['gemeinsamerhaushalt'])
+    || $this->rData['kn1']['gemeinsamerhaushalt'] == 'NEIN'
+    || $this->rData['kn1']['gemeinsamerhaushalt'] == 'NEIN' && (
+        !isset($this->rData['kn2']['gleicheadresse'])
+        || $this->rData['kn2']['gleicheadresse'] == 'NEIN')):
+?>
+                    <strasse person="2"><?php echo ((isset($this->rData['kn2']['strasse'])) ? $this->rData['kn2']['strasse'] : ''); ?></strasse>
+                    <hausnr person="2"><?php echo ((isset($this->rData['kn2']['hausnr'])) ? $this->rData['kn2']['hausnr'] : ''); ?></hausnr>
+                    <plz person="2"><?php echo ((isset($this->rData['kn2']['plz'])) ? $this->rData['kn2']['plz'] : ''); ?></plz>
+                    <ort person="2"><?php echo ((isset($this->rData['kn2']['ort'])) ? $this->rData['kn2']['ort'] : ''); ?></ort>
+<?php
+endif;
+?>
+                    <seit person="2">
+                        <monat person="2"><?php echo ((isset($this->rData['kn2']['wohnhaftseit']['Monat'])) ? $this->rData['kn2']['wohnhaftseit']['Monat'] : ''); ?></monat>
+                        <jahr person="2"><?php echo ((isset($this->rData['kn2']['wohnhaftseit']['Jahr'])) ? $this->rData['kn2']['wohnhaftseit']['Jahr'] : ''); ?></jahr>
+                    </seit>
+                </adresse>
+                <adresse type="davor" person="2">
+                    <strasse person="2"><?php echo ((isset($this->rData['kn2']['strassedavor'])) ? $this->rData['kn2']['strassedavor'] : ''); ?></strasse>
+                    <hausnr person="2"><?php echo ((isset($this->rData['kn2']['hausnrdavor'])) ? $this->rData['kn2']['hausnrdavor'] : ''); ?></hausnr>
+                    <plz person="2"><?php echo ((isset($this->rData['kn2']['plzdavor'])) ? $this->rData['kn2']['plzdavor'] : ''); ?></plz>
+                    <ort person="2"><?php echo ((isset($this->rData['kn2']['ortdavor'])) ? $this->rData['kn2']['ortdavor'] : ''); ?></ort>
+                </adresse>
+            </adressen>
+            <kontakt person="2">
+                <gleicherkontakt person="2"><?php echo ((isset($this->rData['kn2']['gleicherkontakt'])) ? $this->rData['kn2']['gleicherkontakt'] : ''); ?></gleicherkontakt>
+<?php
+if (!isset($this->rData['kn2']['gleicherkontakt'])
+    || $this->rData['kn2']['gleicherkontakt'] == 'NEIN') :
+?>
+                <email person="2"><?php echo ((isset($this->rData['kn2']['email'])) ? $this->rData['kn2']['email'] : ''); ?></email>
+                <telefone person="2">
+                    <telefon type="normal" person="2">
+                        <vorwahl person="2"><?php echo ((isset($this->rData['kn2']['vorwahl'])) ? $this->rData['kn2']['vorwahl'] : ''); ?></vorwahl>
+                        <telefon person="2"><?php echo ((isset($this->rData['kn2']['telefon'])) ? $this->rData['kn2']['telefon'] : ''); ?></telefon>
+                    </telefon>
+                    <telefon type="abends" person="2">
+                        <vorwahl person="2"><?php echo ((isset($this->rData['kn2']['vorwahlabends'])) ? $this->rData['kn2']['vorwahlabends'] : ''); ?></vorwahl>
+                        <telefon person="2"><?php echo ((isset($this->rData['kn2']['telefonabends'])) ? $this->rData['kn2']['telefonabends'] : ''); ?></telefon>
+                    </telefon>
+                    <telefon type="mobil" person="2">
+                        <vorwahl person="2"><?php echo ((isset($this->rData['kn2']['vorwahlmobil'])) ? $this->rData['kn2']['vorwahlmobil'] : ''); ?></vorwahl>
+                        <telefon person="2"><?php echo ((isset($this->rData['kn2']['telefonmobil'])) ? $this->rData['kn2']['telefonmobil'] : ''); ?></telefon>
+                    </telefon>
+                </telefone>
+<?php
+endif;
+?>
+            </kontakt>
+            <beruf person="2">
+                <berufsgruppe person="2"><?php echo ((isset($this->rData['kn2']['berufsgruppe'])) ? $this->rData['kn2']['berufsgruppe'] : ''); ?></berufsgruppe>
+                <berufname person="2"><?php echo ((isset($this->rData['kn2']['berufname'])) ? $this->rData['kn2']['berufname'] : ''); ?></berufname>
+                <branche person="2"><?php echo ((isset($this->rData['kn2']['branche'])) ? $this->rData['kn2']['branche'] : ''); ?></branche>
+                <probezeit person="2"><?php echo ((isset($this->rData['kn2']['probezeit'])) ? $this->rData['kn2']['probezeit'] : ''); ?></probezeit>
+            </beruf>
+            <einkommen person="2">
+                <netto person="2"><?php echo ((isset($this->rData['kn2']['einkommen']['netto'])) ? $this->rData['kn2']['einkommen']['netto'] : ''); ?></netto>
+                <vermietung person="2"><?php echo ((isset($this->rData['kn2']['einkommen']['vermietung'])) ? $this->rData['kn2']['einkommen']['vermietung'] : ''); ?></vermietung>
+                <unterhalt person="2"><?php echo ((isset($this->rData['kn2']['einkommen']['unterhalt'])) ? $this->rData['kn2']['einkommen']['unterhalt'] : ''); ?></unterhalt>
+                <rente person="2"><?php echo ((isset($this->rData['kn2']['einkommen']['rente'])) ? $this->rData['kn2']['einkommen']['rente'] : ''); ?></rente>
+                <zins person="2"><?php echo ((isset($this->rData['kn2']['einkommen']['zins'])) ? $this->rData['kn2']['einkommen']['zins'] : ''); ?></zins>
+                <neben person="2" type="angestellt"><?php echo ((isset($this->rData['kn2']['einkommen']['neben']['a'])) ? $this->rData['kn2']['einkommen']['neben']['a'] : ''); ?></neben>
+                <neben person="2" type="selbst"><?php echo ((isset($this->rData['kn2']['einkommen']['neben']['s'])) ? $this->rData['kn2']['einkommen']['neben']['s'] : ''); ?></neben>
+                <sonst person="2"><?php echo ((isset($this->rData['kn2']['einkommen']['sonst'])) ? $this->rData['kn2']['einkommen']['sonst'] : ''); ?></sonst>
+            </einkommen>
+            <ausgaben person="2">
+                <miete person="2"><?php echo ((isset($this->rData['kn2']['ausgaben']['miete'])) ? $this->rData['kn2']['ausgaben']['miete'] : ''); ?></miete>
+                <bausparen person="2"><?php echo ((isset($this->rData['kn2']['ausgaben']['bausparen'])) ? $this->rData['kn2']['ausgaben']['bausparen'] : ''); ?></bausparen>
+                <lebensversicherung person="2"><?php echo ((isset($this->rData['kn2']['ausgaben']['lv'])) ? $this->rData['kn2']['ausgaben']['lv'] : ''); ?></lebensversicherung>
+                <krankenversicherung person="2"><?php echo ((isset($this->rData['kn2']['ausgaben']['pkv'])) ? $this->rData['kn2']['ausgaben']['pkv'] : ''); ?></krankenversicherung>
+                <sonstigeversicherung person="2"><?php echo ((isset($this->rData['kn2']['ausgaben']['sonstversicherung'])) ? $this->rData['kn2']['ausgaben']['sonstversicherung'] : ''); ?></sonstigeversicherung>
+                <unterhalt person="2"><?php echo ((isset($this->rData['kn2']['ausgaben']['unterhalt'])) ? $this->rData['kn2']['ausgaben']['unterhalt'] : ''); ?></unterhalt>
+            </ausgaben>
+            <haushalt person="2">
+                <personen person="2"><?php echo ((isset($this->rData['kn2']['personenhaushalt'])) ? $this->rData['kn2']['personenhaushalt'] : ''); ?></personen>
+                <kinder person="2" type="anzahl gesamt"><?php echo ((isset($this->rData['kn2']['kinderhaushalt'])) ? $this->rData['kn2']['kinderhaushalt'] : ''); ?></kinder>
+                <kinder person="2" type="anzahl kindergeldberechtigt"><?php echo ((isset($this->rData['kn2']['anzkkg'])) ? $this->rData['kn2']['anzkkg'] : ''); ?></kinder>
+            </haushalt>
+            <wohneigentum person="2"><?php echo ((isset($this->rData['kn2']['wohneigentum'])) ? $this->rData['kn2']['wohneigentum'] : ''); ?></wohneigentum>
+            <wohnsituation person="2"><?php echo ((isset($this->rData['kn2']['wohnsituation'])) ? $this->rData['kn2']['wohnsituation'] : ''); ?></wohnsituation>
+            <arbeitgeber person="2">
+                <ag type="aktuell" person="2">
+                    <name person="2"><?php echo ((isset($this->rData['kn2']['agname'])) ? $this->rData['kn2']['agname'] : ''); ?></name>
+                    <ort person="2"><?php echo ((isset($this->rData['kn2']['ortag'])) ? $this->rData['kn2']['ortag'] : ''); ?></ort>
+                    <plz person="2"><?php echo ((isset($this->rData['kn2']['plzag'])) ? $this->rData['kn2']['plzag'] : ''); ?></plz>
+                    <strasse person="2"><?php echo ((isset($this->rData['kn2']['strasseag'])) ? $this->rData['kn2']['strasseag'] : ''); ?></strasse>
+                    <hausnr person="2"><?php echo ((isset($this->rData['kn2']['hausnrag'])) ? $this->rData['kn2']['hausnrag'] : ''); ?></hausnr>
+                    <seit person="2">
+                        <monat person="2"><?php echo ((isset($this->rData['kn2']['beschseit']['Monat'])) ? $this->rData['kn2']['beschseit']['Monat'] : ''); ?></monat>
+                        <jahr person="2"><?php echo ((isset($this->rData['kn2']['beschseit']['Jahr'])) ? $this->rData['kn2']['beschseit']['Jahr'] : ''); ?></jahr>
+                    </seit>
+                    <istbefristet><?php echo ((isset($this->rData['kn2']['arbefristet'])) ? $this->rData['kn2']['arbefristet'] : ''); ?></istbefristet>
+<?php if ((isset($this->rData['kn2']['arbefristet'])) && $this->rData['kn2']['arbefristet'] == 'JA') : ?>
+                    <befristet>
+                        <monat person="2"><?php echo ((isset($this->rData['kn2']['befristetbis']['Monat'])) ? $this->rData['kn2']['befristetbis']['Monat'] : ''); ?></monat>
+                        <jahr person="2"><?php echo ((isset($this->rData['kn2']['befristetbis']['Jahr'])) ? $this->rData['kn2']['befristetbis']['Jahr'] : ''); ?></jahr>
+                    </befristet>
+<?php endif; ?>
+                </ag>
+                <ag type="davor" person="2">
+                    <name person="2"><?php echo ((isset($this->rData['kn2']['agnamevorher'])) ? $this->rData['kn2']['agnamevorher'] : ''); ?></name>
+                    <ort person="2"><?php echo ((isset($this->rData['kn2']['ortagvorher'])) ? $this->rData['kn2']['ortagvorher'] : ''); ?></ort>
+                    <plz person="2"><?php echo ((isset($this->rData['kn2']['plzagvorher'])) ? $this->rData['kn2']['plzagvorher'] : ''); ?></plz>
+                    <strasse person="2"><?php echo ((isset($this->rData['kn2']['strasseagvorher'])) ? $this->rData['kn2']['strasseagvorher'] : ''); ?></strasse>
+                    <hausnr person="2"><?php echo ((isset($this->rData['kn2']['hausnragvorher'])) ? $this->rData['kn2']['hausnragvorher'] : ''); ?></hausnr>
+                </ag>
+            </arbeitgeber>
+            <hatpkw person="2"><?php echo ((isset($this->rData['kn2']['hatpkw'])) ? $this->rData['kn2']['hatpkw'] : ''); ?></hatpkw>
+            <hatkrad person="2"><?php echo ((isset($this->rData['kn2']['hatkrad'])) ? $this->rData['kn2']['hatkrad'] : ''); ?></hatkrad>
+            <hatec person="2"><?php echo ((isset($this->rData['kn2']['hatec'])) ? $this->rData['kn2']['hatec'] : ''); ?></hatec>
+            <kredite person="2" anzahl="<?php echo ((isset($this->rData['kn2']['anzkredit']['weitere'])) ? $this->rData['kn2']['anzkredit']['weitere'] : ''); ?>">
+<?php
+if ($this->rData['kn2']['anzkredit']['weitere'] > 1) {
+    for ($i = 0, $j = $this->rData['kn2']['anzkredit']['weitere']; $i < $j; ++$i) {
+?>
+                <kredit person="2" nummer="<?php echo $i; ?>">
+                    <art person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->kreditArten[$this->rData['kn2']['kredit'][$i]['Art']])) ? $this->kreditArten[$this->rData['kn2']['kredit'][$i]['Art']] : ''); ?></art>
+                    <rahmen person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Rahmen'])) ? $this->rData['kn2']['kredit'][$i]['Rahmen'] : ''); ?></rahmen>
+                    <rate person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Rate'])) ? $this->rData['kn2']['kredit'][$i]['Rate'] : ''); ?></rate>
+                    <restlaufzeit person="2" kredit="<?php echo $i; ?>">
+                        <monat person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Monat'])) ? $this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Monat'] : ''); ?></monat>
+                        <jahr person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Jahr'])) ? $this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Jahr'] : ''); ?></jahr>
+                    </restlaufzeit>
+                    <umschuldung person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Umschuldung'])) ? $this->rData['kn2']['kredit'][$i]['Umschuldung'] : ''); ?></umschuldung>
+                    <restschuld person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Restschuld'])) ? $this->rData['kn2']['kredit'][$i]['Restschuld'] : ''); ?></restschuld>
+                    <blz person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Blz'])) ? $this->rData['kn2']['kredit'][$i]['Blz'] : ''); ?></blz>
+                    <konto person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Kto'])) ? $this->rData['kn2']['kredit'][$i]['Kto'] : ''); ?></konto>
+                    <kontoseit person="2" kredit="<?php echo $i; ?>">
+                        <monat person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Ktbesteht']['Monat'])) ? $this->rData['kn2']['kredit'][$i]['Ktbesteht']['Monat'] : ''); ?></monat>
+                        <jahr person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Ktbesteht']['Jahr'])) ? $this->rData['kn2']['kredit'][$i]['Ktbesteht']['Jahr'] : ''); ?></jahr>
+                    </kontoseit>
+                </kredit>
+<?php
+    }
+}
+?>
+            </kredite>
+        </person>
+<?php
+endif;
+?>
+    </personen>
+    <auszahlung>
+        <restschuld><?php echo ((isset($this->rData['kn1']['restschuld'])) ? $this->rData['kn1']['restschuld'] : ''); ?></restschuld>
+        <termin><?php echo ((isset($this->rData['kn1']['auszahlung'])) ? $this->rData['kn1']['auszahlung'] : ''); ?></termin>
+        <kommentar><?php echo ((isset($this->rData['kn1']['comment'])) ? $this->rData['kn1']['comment'] : ''); ?></kommentar>
+        <kontodaten>
+            <inhaber><?php echo ((isset($this->rData['kn1']['kontoinhaber'])) ? $this->rData['kn1']['kontoinhaber'] : ''); ?></inhaber>
+            <blz><?php echo ((isset($this->rData['kn1']['blz'])) ? $this->rData['kn1']['blz'] : ''); ?></blz>
+            <konto><?php echo ((isset($this->rData['kn1']['kto'])) ? $this->rData['kn1']['kto'] : ''); ?></konto>
+            <kontoseit>
+                <monat><?php echo ((isset($this->rData['kn1']['bankseit']['Monat'])) ? $this->rData['kn1']['bankseit']['Monat'] : ''); ?></monat>
+                <jahr><?php echo ((isset($this->rData['kn1']['bankseit']['Jahr'])) ? $this->rData['kn1']['bankseit']['Jahr'] : ''); ?></jahr>
+            </kontoseit>
+        </kontodaten>
+        <einzug><?php echo ((isset($this->rData['kn1']['datumeinzug'])) ? $this->rData['kn1']['datumeinzug'] : ''); ?></einzug>
+    </auszahlung>
+    <weiteres>
+        <agbeinv><?php echo ((isset($this->rData['kn1']['agbeinv'])) ? $this->rData['kn1']['agbeinv'] : 0); ?></agbeinv>
+        <weitereAntraege><?php echo ((isset($this->rData['kn1']['mehrantrag'])) ? $this->rData['kn1']['mehrantrag'] : 0); ?></weitereAntraege>
+    </weiteres>
+</xml>

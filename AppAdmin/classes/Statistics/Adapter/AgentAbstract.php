@@ -1,0 +1,100 @@
+<?php
+/**
+ * Klasse zum Erstellen der Statistik
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Statistics
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: AgentAbstract.php 30 2011-01-06 21:58:02Z tmu $
+ */
+
+/**
+ * Klasse zum Erstellen der Statistik
+ *
+ * @category  Kreditrechner
+ * @package   Statistics
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @abstract
+ */
+abstract class KreditAdmin_Class_Statistics_Adapter_AgentAbstract
+    extends KreditAdmin_Class_StatisticsAbstract
+{
+    /**
+     * calculates the summary for user agents for statistics
+     *
+     * @param string  $sparte    the name for the sparte
+     * @param string  $type      the type of logging
+     * @param integer $summary   the kind of information
+     * @param string  $campaigns a comma separated list of campaign ids
+     *
+     * @return array
+     */
+    protected function calculateAgent(
+        $expression,
+        array $group = array(),
+        array $order = array(),
+        array $fields = array(),
+        $sparte = 'Kredit',
+        $campaigns = '',
+        $where = null
+    )
+    {
+        if (is_numeric($sparte)) {
+            $spartenModel = new \Credit\Core\Model\Sparten();
+            $sparte       = $spartenModel->getName($sparte);
+        }
+
+        $model = new \Credit\Core\Model\LogAgent();
+        $dateStart = $this->_filter->getDateStartIso();
+        $dateEnd   = $this->_filter->getDateEndIso();
+
+        $fields[] = new \Zend\Db\Expr($expression);
+        $fields[] = $this->_filter->getGroupSet()->getTimespanExpression('la');
+
+        $select = $model->getCalculationSource(
+            $expression,
+            $this->_filter->getGroupSet()->getTimespanExpression('la'),
+            $group,
+            $order,
+            $fields,
+            $campaigns,
+            $where,
+            $this->_filter->getGroupSet()->getGroupExpression('la'),
+            $dateStart,
+            $dateEnd
+        );
+
+        //$this->concatDateFilter($select);
+
+        return $this->processQuery($select, 'browser', $campaigns, 1);
+    }
+
+    /**
+     * Encode ResultSet for the View
+     *
+     * @param array   $result ??
+     *
+     * @return Json
+     */
+    public function createTable(
+        array $result,
+        $format = true,
+        $summeAnz = true,
+        $grafisch = false,
+        $expression = ''
+    )
+    {
+        $expression = '';
+        $format     = false;
+        $summeAnz   = true;
+        $grafisch   = true;
+
+        return parent::createTableWithPercent(
+            $result, false, $format, $summeAnz, $grafisch, $expression
+        );
+    }
+}

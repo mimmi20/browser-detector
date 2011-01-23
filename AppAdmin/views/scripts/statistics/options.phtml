@@ -1,0 +1,57 @@
+<?php
+/**
+ * Main-Layout für direkten Aufruf oder Aufruf im IFrame
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: options.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<div class="list navList">
+
+    <div class="head">
+        <span>Statistik Filter</span>
+    </div>
+    <div class="content">
+        <div class="table">
+        <form class="optionFormGraph" method="post" action="javascript:void();" onsubmit="var newUrl=rewriteOverviewUrlNew();if(newUrl) {jQuery('#other').load(newUrl);} return false;">
+            <fieldset>
+                <legend>Anzeige einschr&auml;nken</legend>
+                <label for="filterDateStart">Von:</label>
+                <?php echo $this->formText('filterDateStart', $this->filterDateStart, array('class' => 'jqDatePicker')) ?>
+                <label for="filterDateEnd">Bis:</label>
+                <?php echo $this->formText('filterDateEnd', $this->filterDateEnd, array('class' => 'jqDatePicker')) ?>
+                <label for="groupValue">Gruppierung:</label>
+                <?php echo $this->formSelect('groupValue', $this->groupValue, array(), array(
+                    10 => 'Monat',
+                    20 => 'Woche',
+                    30 => 'Tag',
+                    40 => 'Stunde'/**/
+                )); ?>
+                <label for="sparteValue">Sparte:</label>
+                <?php echo $this->formSelect('sparteValue', $this->sparteValue, array(), $this->sparten); ?>
+            </fieldset>
+            <fieldset class="partner">
+                <legend>Portale/Kampagnen</legend>
+                <input type="hidden" value="" id="campaigns" name="campaigns" />
+                <?php foreach($this->portals as $portal): ?>
+                    <?php echo $this->partial('statistics/_mandant_filter_item.phtml', array('partner' => $portal, 'klasse' => 'statusFilter', 'id' => '')); ?>
+                    <?php foreach($portal['children'] as $child): ?>
+                        <?php echo $this->partial('statistics/_mandant_filter_item.phtml', array('partner' => $child, 'klasse' => 'statusFilterSub', 'id' => 'C')); ?>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            </fieldset>
+            <fieldset>
+                <legend>&nbsp;</legend>
+                <input type="submit" value="Anwenden" />
+            </fieldset>
+        </form>
+        </div>
+    </div>
+    <div class="bottom"><span>&nbsp;</span></div>
+</div>

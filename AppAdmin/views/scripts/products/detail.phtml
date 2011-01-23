@@ -1,0 +1,220 @@
+<?php
+/**
+ * Layout für den Index-Controller
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: detail.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<h2>
+    URL's f&uuml;r Produkt
+</h2>
+
+<div class="list">
+    <div class="content">
+        <div class="filter">
+            <div class="buttons">
+                <?php if ($this->maxUrls > count($this->allUrls)) {?>
+                <a href="<?php echo $this->basedUrl(array(
+                    'module' => 'kredit-admin',
+                    'controller' => 'url',
+                    'action'  => 'edit',
+                    'product' => $this->product,
+                    'url'     => 0
+                )) ?>/">neue URL anlegen</a>
+                <?php } ?>&nbsp;
+            </div>
+        </div>
+        <div class="table">
+            <table id="sortableTable" class="Data" summary="Übersicht Produktdetails">
+                <colgroup>
+                    <col style="width:20px;" />
+                    <col span="10" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>ID</th>
+                        <th>Portal</th>
+                        <th>normale URL</th>
+                        <th>URL f&uuml;r Teaser</th>
+                        <th>Z&auml;hlpixel</th>
+                        <th>Z&auml;hlpixel f&uuml;r Teaser</th>
+                        <th>ist ein Teaser</th>
+                        <th>interne Antragsstrecke ?</th>
+                        <th>spezielle Laufzeiten f&uuml;r den Teaser</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($this->allUrls as $url) : ?>
+                    <tr class="<?php echo $this->cycle(array('fstRow','scdRow'))->next(); ?>">
+                        <td class="first edit" title="Url bearbeiten">
+                            <a href="<?php echo $this->basedUrl(array(
+                            'module' => 'kredit-admin',
+                            'controller' => 'url',
+                            'action'  => 'edit',
+                            'product' => $url->kp_id,
+                            'url'     => $url->tku_id
+                        )); ?>/">&nbsp;</a>
+                        </td>
+                        <td><?php echo $url->tku_id; ?></td>
+                        <td><?php echo $url->portal; ?></td>
+                        <td class="url"><?php echo $url->tku_url; ?></td>
+                        <td class="url"><?php echo $url->tku_url_teaser; ?></td>
+                        <td><?php echo $url->tku_pixel; ?></td>
+                        <td><?php echo $url->tku_pixel_teaser; ?></td>
+                        <td><a href="<?php echo $this->home; ?>admin/backend/setteaser/url/<?php echo $url->tku_id; ?>/produkt/<?php echo $url->kp_id; ?>/teaser/<?php echo $url->tku_teaser; ?>/"><img src="<?php echo $this->imageUrl; ?><?php if (!$url->tku_teaser) { echo 'n';} ?>ok.png" alt="" title="die Url <?php echo $url->tku_id; ?> <?php if ($url->tku_teaser) { echo 'nicht ';} ?>als Teaser markieren" /></a></td>
+                        <td><a href="<?php echo $this->home; ?>admin/backend/setinternal/url/<?php echo $url->tku_id; ?>/produkt/<?php echo $url->kp_id; ?>/internal/<?php echo $url->tku_internal; ?>/"><img src="<?php echo $this->imageUrl; ?><?php if (!$url->tku_internal) { echo 'n';} ?>ok.png" alt="" title="die Url <?php echo $url->tku_id; ?> <?php if ($url->tku_internal) { echo 'nicht ';} ?>f&uuml;r die interne Antragsstrecke markieren" /></a></td>
+                        <td><?php echo $url->tku_teaser_lz; ?></td>
+                        <td>
+                            <div class="trash"  title="Url l&ouml;schen">
+                                <a href="<?php echo $this->home; ?>admin/backend/deleteurl/product/<?php echo $url->kp_id; ?>/url/<?php echo $url->tku_id; ?>/"></a>
+                            </div>
+                            <div class="small">TODO: l&ouml;schen ??, Details anzeigen</div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="filter">
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bottom"><span>&nbsp;</span></div>
+</div>
+
+<h2>
+    Zinss&auml;tze f&uuml;r Produkt
+</h2>
+
+<div class="list">
+    <div class="content">
+        <div class="filter">
+            <div class="buttons">
+                <a href="<?php echo $this->basedUrl(array(
+                    'module' => 'kredit-admin',
+                    'controller' => 'zins',
+                    'action'  => 'edit',
+                    'product' => $this->product,
+                    'zins'    => 0
+                )) ?>/">Neuen Zinssatz anlegen</a>
+            </div>
+        </div>
+        <div class="table">
+            <table class="Data" summary="Übersicht Zinssätze">
+                <colgroup>
+                    <col style="width:20px;" />
+                    <col span="11" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>ID</th>
+                        <th>Betrag</th>
+                        <th>Laufzeit</th>
+                        <th>Start</th>
+                        <th>Zinssatz</th>
+                        <th>Zinsband (Min-Max)</th>
+                        <th>2/3 Zins</th>
+                        <th>R&uuml;ckfallzins</th>
+                        <th>Negativ-Zins</th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($this->allZins as $zins) : ?>
+                    <tr class="<?php echo $this->cycle(array('fstRow','scdRow'))->next(); ?>">   
+                        <td class="first edit" title="Zinssatz bearbeiten">
+                            <a href="<?php echo $this->basedUrl(array(
+                            'module' => 'kredit-admin',
+                            'controller' => 'zins',
+                            'action'  => 'edit',
+                            'product' => $zins->kp_id,
+                            'zins'     => $zins->uid
+                        )); ?>/">&nbsp;</a>
+                        </td>            
+                        <td><?php echo $zins->uid; ?></td>
+                        <td><?php echo $zins->betrag; ?> &euro;</td>
+                        <td><?php echo $zins->laufzeit; ?> Monat(e)</td>
+                        <td><?php echo date('d.m.Y', strtotime($zins->start)); ?></td>
+                        <td><?php echo $this->percentageFormat($zins->zinssatz); ?></td>
+                        <td><?php echo $this->percentageFormat($zins->zinssatzunten) 
+                                    . ' - ' . $this->percentageFormat($zins->zinssatzoben); ?></td>
+                        <td><?php echo $this->percentageFormat($zins->zinssatz23); ?></td>
+                        <td><?php echo $this->percentageFormat($zins->zinssatzR); ?></td>
+                        <td><?php echo $this->percentageFormat($zins->zinssatzN); ?></td>
+                        <td>
+                            <div class="trash"  title="Url l&ouml;schen">
+                                <a onclick="return (confirm('Sind Sie sicher?'))"                      
+                                    href="<?php echo $this->basedUrl(array(
+                                        'module' => 'kredit-admin',
+                                        'controller' => 'zins',
+                                        'action'  => 'delete',
+                                        'product' => $zins->kp_id,
+                                        'zins'     => $zins->uid
+                                        )); ?> 
+                                  /">&nbsp;</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <!--<a href="<?php echo $this->home; ?>admin/backend/deleteurl/product/<?php echo $zins->kp_id; ?>/url/<?php echo $zins->uid; ?>/"><img src="<?php echo $this->imageUrl; ?>trash.png" title="Url l&ouml;schen" /></a>-->
+                            </div>
+                            <div class="info" title="Produkt-Details anzeigen">&nbsp;</div>
+                            <div class="small">TODO:Details anzeigen</div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="filter">
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bottom"><span>&nbsp;</span></div>
+</div>
+<!--
+
+<table summary="Zinsübersicht">
+<tr>
+<th>ID</th>
+<th>Betrag</th>
+<th>Laufzeit</th>
+<th>Start</th>
+<th>Zinssatz</th>
+<th>&nbsp;</th>
+</tr>
+<?php
+foreach ($this->allZins as $zins) {
+?>
+<tr class="<?php echo $this->cycle(array('fstRow','scdRow'))->next(); ?>">
+<td><?php echo $zins->uid; ?></td>
+<td><?php echo $zins->betrag; ?> &euro;</td>
+<td><?php echo $zins->laufzeit; ?> Monat(e)</td>
+<td><?php echo $zins->start; ?></td>
+<td><?php echo number_format($zins->zinssatz, 2, ',', '.'); ?> %</td>
+<td>
+    &nbsp;TODO: Details anzeigen
+</td>
+</tr>
+<?php
+}
+$anzahl = count($this->allZins);
+?>
+<tr><td colspan="3"><?php echo $anzahl; ?> <?php if ($anzahl == 1) { ?>Zinssatz<?php } else { ?>Zinss&auml;tze<?php } ?></td></tr>
+<tr><td colspan="3">neuen Zinssatz anlegen</td><td><a href="<?php echo $this->home; ?>admin/backend/editzins/product/<?php echo $this->product; ?>/zins/0/"><img src="<?php echo $this->imageUrl; ?>add.png" alt="eine neue Url anlegen" title="eine neue Url anlegen" /></a></td></tr>
+</table>
+</div>
+</div>
+</div>
+-->

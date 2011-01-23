@@ -1,0 +1,33 @@
+<?php
+/**
+ * View
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: antrag.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+$functionName = 'show_antrag_'.$this->sparteId.'_'.$this->caid.'_'.$this->zweck.'_'.$this->laufzeit.'_'.$this->betrag.'_'.$this->product.'_'.$this->instituteCode;
+
+echo $this->getJsFile($this->partnerId,$this->campaignId,$this->mode.DS.'antrag1','js',true);
+
+echo $this->getJsFile($this->partnerId,$this->campaignId,$this->mode.DS.'antrag1','js',true);
+?>
+
+function <?php echo $functionName; ?>() {
+<?php if (isset($this->redirect)) { ?>
+    window.open('<?php echo $this->redirect; ?>', '_blank', 'width=1024,height=768,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes');
+<?php } else { ?>
+    overlib('<?php echo $this->antragText; ?>',CAPTION,'Antrag f&uuml;r <?php echo ucfirst($this->sparte); ?>',STICKY,CLOSECLICK,HIDESELECTBOXES,MIDX,0,MIDY,0,WIDTH,800,CLOSETEXT,'schliessen',CLOSETITLE,'schliessen',AUTOSTATUS,BGCLASS,'info',FGCLASS,'fginfo',CAPTIONFONTCLASS,'capinfo', CLOSEFONTCLASS, 'capinfo');
+    init_validate();
+
+    //called_functions[called_functions.length] = '<?php echo $functionName; ?>';
+<?php } ?>
+}
+
+<?php echo $functionName; ?>();

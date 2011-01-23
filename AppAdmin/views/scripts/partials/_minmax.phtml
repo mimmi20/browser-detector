@@ -1,0 +1,22 @@
+<?php
+/**
+ * Layout fuer den Vergleich
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Layout
+ * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _minmax.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+
+?>
+<td class="betragCol"
+    onclick="<?php echo $this->goto; ?>"
+    onmousedown="logThisClick('<?php echo $this->sparte; ?>_<?php echo $this->kreditinstitut; ?>');"
+    title="Jetzt ein <?php echo ucfirst($this->sparte); ?> Konto bei der <?php echo $this->kreditInstitutTitle; ?> er&ouml;ffnen!">
+    <span><?php echo number_format($this->min, 2, ',', '.'); ?> &euro;</span>
+    <span><?php echo number_format($this->max, 2, ',', '.'); ?> &euro;</span>
+</td>

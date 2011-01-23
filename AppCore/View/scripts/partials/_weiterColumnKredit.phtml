@@ -1,0 +1,19 @@
+<?php
+/**
+ * View
+ *
+ * PHP version 5
+ *
+ * @category  Kreditrechner
+ * @package   Views
+ * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: _weiterColumnKredit.phtml 30 2011-01-06 21:58:02Z tmu $
+ */
+?>
+<td class="btn<?php if ($this->internal) { ?> internal<?php } ?>"
+    onclick="<?php echo $this->goto; ?>"
+    onmousedown="logThisClick('<?php echo $this->sparte; ?>_<?php echo $this->kreditinstitut; ?>');"
+    title="Weiter zum Kredit Antrag <?php echo $this->kreditInstitutTitle; ?>">
+    &nbsp;
+</td>
