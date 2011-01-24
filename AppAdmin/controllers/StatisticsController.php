@@ -66,7 +66,7 @@ class KreditAdmin_StatisticsController
                     'provision'     => 'Provision',
                 );
 
-                $rit = \Credit\Core\Model\Interface::getInterfacesTarifs(
+                $rit = \\AppCore\\Model\Interface::getInterfacesTarifs(
                     $filter['date_start'], $filter['date_end']
                 );
 
@@ -103,7 +103,7 @@ class KreditAdmin_StatisticsController
 
                 $this->view->statBerechnungenVPTotals = $this->getStatisticsBerechnungenVerteilungPortaleTotals($statBerechnungenVerteilungPortale);
 
-                $partnerModel = new \Credit\Core\Model\Partner();
+                $partnerModel = new \AppCore\Model\Partner();
                 $this->view->partnerTable = $partnerModel->fetchAll()->toArray();
 
                 $this->view->tarifsTable = $interfacesTarifs;
@@ -152,7 +152,7 @@ class KreditAdmin_StatisticsController
         );
         $detailValue = strtolower($this->_getParam('detailValue', 'click'));
 
-        $modelSparte = new \Credit\Core\Model\Sparten();
+        $modelSparte = new \AppCore\Model\Sparten();
         $s           = $modelSparte->find($sparte);
         $sparte      = '';
 
@@ -294,7 +294,7 @@ class KreditAdmin_StatisticsController
                 $campaigns = substr($campaigns, 0, strlen($campaigns) - 1);
             }
 
-            $model = new \Credit\Core\Model\Campaigns();
+            $model = new \AppCore\Model\Campaigns();
             $paid  = $model->getPortalName($paid);
 
             $date          = new \Zend\Date\Date($datum / 1000, \Zend\Date\Date::TIMESTAMP);
@@ -369,7 +369,7 @@ class KreditAdmin_StatisticsController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $spartenModel = new \Credit\Core\Model\Sparten();
+            $spartenModel = new \AppCore\Model\Sparten();
             $sparte       = $spartenModel->getName($sparte);
         }
 
@@ -392,7 +392,7 @@ class KreditAdmin_StatisticsController
 
         $content = '"' . implode('";"', $fields) . '"' . "\n";
 
-        $antragsModel = new \Credit\Core\Model\Antraege();
+        $antragsModel = new \AppCore\Model\Antraege();
         $select = $antragsModel->select();
 
         if (null !== $select) {

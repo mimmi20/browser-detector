@@ -33,7 +33,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $sparte     = (int) $this->_getParam('sparte', 0, 'Int');
         $institutId = (int) $this->_getParam('institut', 0, 'Int');
 
-        $modelApplications = new \Credit\Core\Model\Produkte();
+        $modelApplications = new \AppCore\Model\Produkte();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
 
@@ -117,7 +117,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             //Get Content
             $validApplications[$key]->Content = array();
 
-            $institutModel = new \Credit\Core\Model\Institute();
+            $institutModel = new \AppCore\Model\Institute();
 
             $institut = $institutModel->find($validApplications[$key]->ki_id)
                 ->current();
@@ -130,7 +130,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
                 $validApplications[$key]->institut  = '';
             }
 
-            $spartenModel = new \Credit\Core\Model\Sparten();
+            $spartenModel = new \AppCore\Model\Sparten();
             $sparte       = $spartenModel->find($validApplications[$key]->s_id)
                 ->current();
             $validApplications[$key]->s_active = $sparte->active;
@@ -155,7 +155,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             $product = $this->_getParam('kp_id', 0, 'Int');
         }
 
-        $model = new \Credit\Core\Model\Produkte();
+        $model = new \AppCore\Model\Produkte();
         $form  = $this->_getForm();
         $row   = $this->getEditedRow($model, $product);
 
@@ -243,7 +243,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             $active  = (int) ((boolean) $this->_getParam('aktiv', 1, 'Int'));
             $active  = 1 - $active;
 
-            $model = new \Credit\Core\Model\Produkte();
+            $model = new \AppCore\Model\Produkte();
             $model->update(
                 array('kp_active' => $active), 'kp_id = ' . $product
             );
@@ -351,7 +351,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
 
         $form->setAction($action);
 
-        $instituteModel = new \Credit\Core\Model\Institute();
+        $instituteModel = new \AppCore\Model\Institute();
         $oInstitute     = $instituteModel->fetchAll($instituteModel->getList());
         $institute      = array(0 => 'bitte wählen');
 
@@ -363,7 +363,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $idInstitute = $form->getElement('ki_id');
         $idInstitute->setMultiOptions($institute);
 
-        $usageModel = new \Credit\Core\Model\Usage();
+        $usageModel = new \AppCore\Model\Usage();
         /*
         $oInstitute     = $usageModel->fetchAll($instituteModel->getList());
         $institute      = array(0 => 'bitte wählen');
@@ -379,7 +379,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
 
         /*
         // Liste aller Kampagnen erstellen
-        $campaignModel = new \Credit\Core\Model\Campaigns();
+        $campaignModel = new \AppCore\Model\Campaigns();
 
         $select     = $campaignModel->select();
         $oCampaigns = $campaignModel->fetchAll();

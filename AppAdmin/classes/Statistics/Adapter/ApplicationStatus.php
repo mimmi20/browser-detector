@@ -45,7 +45,7 @@ class KreditAdmin_Class_Statistics_Adapter_ApplicationStatus
     {
         /*
         if (is_numeric($sparte)) {
-            $spartenModel = new \Credit\Core\Model\Sparten();
+            $spartenModel = new \AppCore\Model\Sparten();
             $sparte       = $spartenModel->getName($sparte);
         }
         */
@@ -60,7 +60,7 @@ class KreditAdmin_Class_Statistics_Adapter_ApplicationStatus
         $expression = $this->_getExpression($summary);
         $field      = 'portal';
 
-        $model  = new \Credit\Core\Model\StatEinfach();
+        $model  = new \AppCore\Model\StatEinfach();
         $select = $model->getCalculationSource(
             $expression,
             $campaigns,

@@ -29,7 +29,7 @@ class KreditAdmin_InstituteController
      */
     public function indexAction()
     {
-        $modelApplications = new \Credit\Core\Model\Institute();
+        $modelApplications = new \AppCore\Model\Institute();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
         $list       = $modelApplications->getList();
@@ -60,7 +60,7 @@ class KreditAdmin_InstituteController
             $institut = (int) $this->_getParam('ki_id', 0, 'Int');
         }
 
-        $model = new \Credit\Core\Model\Institute();
+        $model = new \AppCore\Model\Institute();
         $form  = $this->_getForm();
 
         $row = $this->getEditedRow($model, $institut);
@@ -114,7 +114,7 @@ class KreditAdmin_InstituteController
             $active   = (int) ((boolean) $this->_getParam('aktiv', 1, 'Int'));
             $active   = 1 - $active;
 
-            $model = new \Credit\Core\Model\Institute();
+            $model = new \AppCore\Model\Institute();
             $model->update(
                 array('ki_active' => $active), 'ki_id = ' . $institut
             );

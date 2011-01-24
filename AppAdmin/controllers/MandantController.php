@@ -46,7 +46,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
      */
     public function partnerAction()
     {
-        $dbPartner  = new \Credit\Core\Model\Portale();
+        $dbPartner  = new \AppCore\Model\Portale();
         $parentList = $dbPartner->fetchList();
 
         //array mit allen Partnern
@@ -121,7 +121,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $portal = $this->_getParam('p_id', 0, 'Int');
         }
 
-        $model = new \Credit\Core\Model\Portale();
+        $model = new \AppCore\Model\Portale();
         $form  = $this->_getPortaleForm();
         $row   = $this->getEditedRow($model, $portal);
 
@@ -149,7 +149,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $active = (int) ((boolean) $this->_getParam('aktiv', 1, 'Int'));
             $active = 1 - $active;
 
-            $model = new \Credit\Core\Model\Portale();
+            $model = new \AppCore\Model\Portale();
             $model->update(array('active' => $active), 'p_id = ' . $portal);
         }
 
@@ -182,7 +182,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $portal = $this->_getParam('p_id', 0, 'Int');
         }
 
-        $model = new \Credit\Core\Model\Campaigns();
+        $model = new \AppCore\Model\Campaigns();
         $form  = $this->_getCampaignForm();
 
         if ($campaign > 0) {
@@ -216,7 +216,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $active   = (int) ((boolean) $this->_getParam('aktiv', 0, 'Int'));
             $active   = 1 - $active;
 
-            $model = new \Credit\Core\Model\Campaigns();
+            $model = new \AppCore\Model\Campaigns();
             $model->update(
                 array('active' => $active), 'id_campaign = ' . $campaign
             );
@@ -233,7 +233,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
      * validates the form data
      *
      * @param Zend_Form                         $form
-     * @param \Credit\Core\Model\ModelAbstract $model
+     * @param \\AppCore\\Model\ModelAbstract $model
      * @param mixed                             $row
      * @param mixed                             $field
      * @param mixed                             $deleteField
@@ -241,7 +241,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
      * @return void
      */
     private function _getForm(
-        Zend_Form $form, \Credit\Core\Model\ModelAbstract $model, $row, $field,
+        Zend_Form $form, \\AppCore\\Model\ModelAbstract $model, $row, $field,
         $deleteField)
     {
         if ($this->getRequest()->isPost()
@@ -290,7 +290,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
     private function _getCampaignForm()
     {
         // Liste aller Kampagnen erstellen
-        $campaignModel = new \Credit\Core\Model\Campaigns();
+        $campaignModel = new \AppCore\Model\Campaigns();
 
         $oCampaigns = $campaignModel->fetchAll();
         $campaigns  = array(0 => 'bitte wählen');

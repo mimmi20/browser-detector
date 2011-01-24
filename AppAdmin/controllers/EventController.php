@@ -56,7 +56,7 @@ class KreditAdmin_EventController extends KreditCore_Controller_AdminAbstract
             $form->populate($this->_request->getParams());
 
             if ($form->isValid($this->_request->getParams())) {
-                $model = new \Credit\Core\Model\Event();
+                $model = new \AppCore\Model\Event();
                 $row   = $model->createRow($form->getValues());
                 $row->save();
 
@@ -81,7 +81,7 @@ class KreditAdmin_EventController extends KreditCore_Controller_AdminAbstract
     private function _getForm()
     {
         // Liste aller Laufzeiten erstellen
-        $dbEventType = new \Credit\Core\Model\EventType();
+        $dbEventType = new \AppCore\Model\EventType();
         $events      = array();
         $select      = $dbEventType->select();
 

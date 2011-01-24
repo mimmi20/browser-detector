@@ -29,7 +29,7 @@ class KreditAdmin_ApplicationListController
      */
     public function indexAction()
     {
-        $modelApplications = new \Credit\Core\Model\Antraege();
+        $modelApplications = new \AppCore\Model\Antraege();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
 
@@ -74,7 +74,7 @@ class KreditAdmin_ApplicationListController
 
         $this->initAjax();
 
-        $antragsModel = new \Credit\Core\Model\Antraege();
+        $antragsModel = new \AppCore\Model\Antraege();
 
         $select = $antragsModel->select();
         $select->from(
@@ -91,7 +91,7 @@ class KreditAdmin_ApplicationListController
         $select->where('((`idPortalService` != ?', 'sent by mail');
 
         $rows   = $antragsModel->fetchAll($select);
-        $antrag = new KreditCore_Class_Credit_Antrag();
+        $antrag = new \AppCore\Credit\Antrag();
 
         if (APPLICATION_ENV != SERVER_ONLINE_TEST
             && APPLICATION_ENV != SERVER_ONLINE_TEST2
@@ -119,7 +119,7 @@ class KreditAdmin_ApplicationListController
 
 
 
-            $text = \Credit\Core\Globals::createXML(
+            $text = \AppCore\Globals::createXML(
                 $requestData, $row->knID, $row->creditLine, $this->view
             );
 
@@ -208,7 +208,7 @@ class KreditAdmin_ApplicationListController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $spartenModel = new \Credit\Core\Model\Sparten();
+            $spartenModel = new \AppCore\Model\Sparten();
             $sparte       = $spartenModel->getName($sparte);
         }
 
@@ -232,7 +232,7 @@ class KreditAdmin_ApplicationListController
         $headerFields = $fields;
         $fields[]     = 'data';
 
-        $antragsModel = new \Credit\Core\Model\Antraege();
+        $antragsModel = new \AppCore\Model\Antraege();
         $select = $antragsModel->select();
 
         if (null !== $select) {
@@ -286,12 +286,12 @@ class KreditAdmin_ApplicationListController
                 unset($data['SERVER']);
 
                 /*
-                $text = \Credit\Core\Globals::createXML(
+                $text = \AppCore\Globals::createXML(
                     $data, $row->knID, $row->creditLine, $this->view
                 );
                 */
 
-                $data = \Credit\Core\Globals::combineArrayKeys($data);
+                $data = \AppCore\Globals::combineArrayKeys($data);
 
 
                 foreach ($data as $key => $value) {

@@ -55,7 +55,7 @@ class KreditAdmin_Class_Statistics_Adapter_Summary_Exceptions
 
         $expression = 'count(*) AS `count`';
 
-        $exceptionModel = new \Credit\Core\Model\Exception();
+        $exceptionModel = new \AppCore\Model\Exception();
         $select         = $exceptionModel->select();
         $select->from(
             'exception',

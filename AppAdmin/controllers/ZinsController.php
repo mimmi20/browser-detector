@@ -59,7 +59,7 @@ class KreditAdmin_ZinsController extends KreditCore_Controller_AdminAbstract
             $zinsId = 0;
         }
 
-        $model = new \Credit\Core\Model\Zins();
+        $model = new \AppCore\Model\Zins();
         $form  = $this->_getForm();
 
         $row = $this->getEditedRow($model, $zinsId);
@@ -185,7 +185,7 @@ class KreditAdmin_ZinsController extends KreditCore_Controller_AdminAbstract
             return;
         }
 
-        $model = new \Credit\Core\Model\Zins();
+        $model = new \AppCore\Model\Zins();
         $row   = $this->getEditedRow($model, $zins);
         $row->delete();
 

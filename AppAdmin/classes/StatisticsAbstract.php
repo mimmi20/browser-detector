@@ -33,7 +33,7 @@ abstract class KreditAdmin_Class_StatisticsAbstract
     protected $_mandant;
 
     /**
-     * @var \Credit\Core\Model\Application
+     * @var \\AppCore\\Model\Application
      */
     protected $_dbApplication;
 
@@ -55,7 +55,7 @@ abstract class KreditAdmin_Class_StatisticsAbstract
         $this->_mandant = new KreditAdmin_Class_Statistics_MandantResolver();
         $this->_logger  = \Zend\Registry::get('log');
 
-        $this->_dbApplication = new \Credit\Core\Model\StatEinfach();
+        $this->_dbApplication = new \AppCore\Model\StatEinfach();
     }
 
     /**
@@ -76,7 +76,7 @@ abstract class KreditAdmin_Class_StatisticsAbstract
      */
     public function getSparten()
     {
-        $sparten = new \Credit\Core\Model\Sparten();
+        $sparten = new \AppCore\Model\Sparten();
         $select  = $sparten->select('sparten');
 
         if (null !== $select) {

@@ -59,7 +59,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
             $urlId = 0;
         }
 
-        $model = new \Credit\Core\Model\Url();
+        $model = new \AppCore\Model\Url();
         $form = $this->_getForm();
 
         $row = $this->getEditedRow($model, $urlId);
@@ -214,7 +214,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
         }
 
         if ($url) {
-            $data = new \Credit\Core\Model\Core_Url();
+            $data = new \AppCore\Model\Core_Url();
             $data->load($url);
             $data->delete($url);
         }
@@ -254,7 +254,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
         }
 
         // Liste aller Kampagnen erstellen
-        $campaignModel = new \Credit\Core\Model\Campaigns();
+        $campaignModel = new \AppCore\Model\Campaigns();
 
         $oCampaigns = $campaignModel->fetchAll();
         $campaigns  = array(0 => 'bitte wählen');

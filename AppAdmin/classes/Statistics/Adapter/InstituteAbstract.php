@@ -40,7 +40,7 @@ abstract class KreditAdmin_Class_Statistics_Adapter_InstituteAbstract
     {
         /*
         if (is_numeric($sparte)) {
-            $spartenModel = new \Credit\Core\Model\Sparten();
+            $spartenModel = new \AppCore\Model\Sparten();
             $sparte       = $spartenModel->getName($sparte);
         }
         /**/
@@ -54,7 +54,7 @@ abstract class KreditAdmin_Class_Statistics_Adapter_InstituteAbstract
 
         $field = 'institute';
 
-        $model  = new \Credit\Core\Model\StatEinfach();
+        $model  = new \AppCore\Model\StatEinfach();
         $select = $model->getCalculationSource(
             $expression,
             $campaigns,

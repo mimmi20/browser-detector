@@ -22,12 +22,12 @@
 class KreditAdmin_Class_Statistics_Event
 {
     /**
-     * @var \Credit\Core\Model\Event
+     * @var \\AppCore\\Model\Event
      */
     private $_dbEvent;
 
     /**
-     * @var \Credit\Core\Model\EventType
+     * @var \\AppCore\\Model\EventType
      */
     private $_dbEventType;
 
@@ -43,8 +43,8 @@ class KreditAdmin_Class_Statistics_Event
      */
     public function __construct()
     {
-        $this->_dbEvent     = new \Credit\Core\Model\Event();
-        $this->_dbEventType = new \Credit\Core\Model\EventType();
+        $this->_dbEvent     = new \AppCore\Model\Event();
+        $this->_dbEventType = new \AppCore\Model\EventType();
     }
 
     /**

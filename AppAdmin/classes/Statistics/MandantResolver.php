@@ -29,7 +29,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
     private $_featMandants;
 
     /**
-     * @var \Credit\Core\Model\Partner
+     * @var \\AppCore\\Model\Partner
      */
     private $_dbPartner;
 
@@ -41,7 +41,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
     public function __construct()
     {
         $this->_featMandants = array(0 => true);
-        $this->_dbPartner    = new \Credit\Core\Model\Portale();
+        $this->_dbPartner    = new \AppCore\Model\Portale();
 
         $this->addAllMandants();
     }
