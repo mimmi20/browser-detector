@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit;
+namespace AppCore\Credit;
 
 /**
  * Klasse für Kredit-Anfragen (Berechnungen)
@@ -89,10 +89,10 @@ class Calculator extends CreditAbstract
             return array();
         }
 
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $campaign      = $campaignModel->find($this->_caid)->current();
 
-        $spartenModel = new \Credit\Core\Service\Sparten();
+        $spartenModel = new \AppCore\Service\Sparten();
         $sparte       = $spartenModel->find($this->_sparte)->current();
 
         //var_dump(count($activeProducts->toArray()));
@@ -163,7 +163,7 @@ class Calculator extends CreditAbstract
     {
         $activeProducts = false;
 //var_dump('bb', $this->_caid);
-        $calculator = new \Credit\Core\Credit\Input();
+        $calculator = new \AppCore\Credit\Input();
         $calculator
             ->setLaufzeit($this->_laufzeit)
             ->setKreditbetrag($this->_betrag)
@@ -173,7 +173,7 @@ class Calculator extends CreditAbstract
             ->setTeaserOnly($this->_teaserOnly)
             ->setBestOnly($this->_bestOnly)
             ->setBoni($this->_bonus)
-            ->setMode(\Credit\Core\Credit\Input::FALLBACK);
+            ->setMode(\AppCore\Credit\Input::FALLBACK);
 
         if ($this->_onlyProduct) {
             $calculator->setOnlyProduct($this->_onlyProduct);
@@ -190,7 +190,7 @@ class Calculator extends CreditAbstract
 
         /*
         if (false === $activeProducts) {
-            $calculator->setMode(\Credit\Core\Credit\Input::FALLBACK);
+            $calculator->setMode(\AppCore\Credit\Input::FALLBACK);
 
             $activeProducts = $calculator->calculate();
         }
@@ -228,7 +228,7 @@ class Calculator extends CreditAbstract
                           . DS . $kreditinstitut . '.gif';
 
         //Namen der Klasse anhand des Institutes festlegen
-        $klasse = '\\Credit\\Core\\Model\\CalcResult\\' . ucfirst($kreditinstitut);
+        $klasse = '\\AppCore\\Model\\CalcResult\\' . ucfirst($kreditinstitut);
 
         //Result-Klasse erzeugen
         $result = new $klasse();
@@ -451,14 +451,14 @@ class Calculator extends CreditAbstract
     /**
      * detect if the link target is internal or external from the campaign
      *
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param \Zend\Db\Table\Row           $campaign
      * @param boolean                     $isRecalc
      *
      * @return boolean if TRUE, the product is NOT allowed in the actual result
      */
     private function _detectInternal(
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         \Zend\Db\Table\Row $campaign,
         $isRecalc = false)
     {
@@ -514,11 +514,11 @@ class Calculator extends CreditAbstract
      * creates a Output Formater to the the product information and
      * sets global values (which do not change in this calculation) to it
      *
-     * @return KreditCore_Class_Credit_Calc
+     * @return \AppCore\Credit\Calc
      */
     private function _setOutputFormater()
     {
-        $formater = new \Credit\Core\Credit\Output($this->_mode);
+        $formater = new \AppCore\Credit\Output($this->_mode);
         $formater
             ->setLaufzeit($this->_laufzeit)
             ->setKreditbetrag($this->_betrag)
@@ -538,11 +538,11 @@ class Calculator extends CreditAbstract
      * creates a Info Formater to the the product information and
      * sets global values (which do not change in this calculation) to it
      *
-     * @return KreditCore_Class_Credit_Calc
+     * @return \AppCore\Credit\Calc
      */
     private function _setInfoFormater()
     {
-        $formater = new \Credit\Core\Credit\Info();
+        $formater = new \AppCore\Credit\Info();
         $formater
             ->setLaufzeit($this->_laufzeit)
             ->setMode($this->_mode)
@@ -598,13 +598,13 @@ class Calculator extends CreditAbstract
     /**
      * gets the product information and parses it
      *
-     * @param \Zend\Db\Table\Row           $campaign the actual campaign
-     * @param \Credit\Core\Model\CalcResult $result   the current dataset
+     * @param \Zend\Db\Table\Row        $campaign the actual campaign
+     * @param \AppCore\Model\CalcResult $result   the current dataset
      *
-     * @return KreditCore_Class_Credit_Calc
+     * @return \AppCore\Credit\Calc
      */
     private function _parseInfo(
-        \Zend\Db\Table\Row $campaign, \Credit\Core\Model\CalcResult $result)
+        \Zend\Db\Table\Row $campaign, \AppCore\Model\CalcResult $result)
     {
         if ('no' == $campaign->loadInfo) {
             $result->info = $this->_infoFormater->info(false);

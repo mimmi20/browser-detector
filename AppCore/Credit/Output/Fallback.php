@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Output;
+namespace AppCore\Credit\Output;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -25,9 +25,9 @@ namespace Credit\Core\Credit\Output;
 class Fallback extends OutputAbstract
 {
     /**
-     * @return KreditCore_Class_Credit_Output_Fallback
+     * @return \AppCore\Credit\Output\Fallback
      */
-    public function getOfferLink(\Credit\Core\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Model\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 
@@ -46,7 +46,7 @@ class Fallback extends OutputAbstract
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -54,7 +54,7 @@ class Fallback extends OutputAbstract
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $teaser = false)
     {
         /*
@@ -78,9 +78,9 @@ class Fallback extends OutputAbstract
     }
 
     /**
-     * @return KreditCore_Class_Credit_Output_Fallback
+     * @return \AppCore\Credit\Output\Fallback
      */
-    public function getInfoLink(\Credit\Core\Model\CalcResult $result)
+    public function getInfoLink(\AppCore\Model\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 
@@ -96,7 +96,7 @@ class Fallback extends OutputAbstract
         $infoParams['kreditInstitut'] = $this->_institut;
         $infoParamsTeaser             = array();
 
-        $infoLnk = \Credit\Core\Globals::postToGetUrl(
+        $infoLnk = \AppCore\Globals::postToGetUrl(
             $baseUrl,
             $infoParams,
             $int
@@ -111,7 +111,7 @@ class Fallback extends OutputAbstract
             $infoParamsTeaser['partner_id']     = $this->_caid;
             $infoParamsTeaser['kreditInstitut'] = $this->_institut;
 
-            $infoLnkTeaser = \Credit\Core\Globals::postToGetUrl(
+            $infoLnkTeaser = \AppCore\Globals::postToGetUrl(
                 $baseUrl,
                 $infoParamsTeaser,
                 $int
@@ -130,7 +130,7 @@ class Fallback extends OutputAbstract
     /**
      * sets the base url
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     protected function getBaseUrl()
     {

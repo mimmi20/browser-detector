@@ -58,7 +58,7 @@ class KreditCore_Class_Credit_Input_Fallback
             $isKredit = true;
         }
 
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $campaign      = $campaignModel->find($this->_caid)->current();
 
         /*
@@ -220,7 +220,7 @@ class KreditCore_Class_Credit_Input_Fallback
         /*
          * create SQL to fill the tamporary table
          */
-        $model  = new \Credit\Core\Model\Institute();
+        $model  = new \AppCore\Model\Institute();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('i' => 'institute'),
@@ -400,7 +400,7 @@ class KreditCore_Class_Credit_Input_Fallback
             )
         );
 
-        $campaignModel = new \Credit\Core\Model\Campaigns();
+        $campaignModel = new \AppCore\Model\Campaigns();
         $innerSelect   = $campaignModel->select()->setIntegrityCheck(false);
         $innerSelect->from(
             array('ca' => 'campaigns'),
@@ -447,7 +447,7 @@ class KreditCore_Class_Credit_Input_Fallback
          * general campaign as fallback for the actual camapign
          */
 
-        $zinsModel  = new \Credit\Core\Model\Zins();
+        $zinsModel  = new \AppCore\Model\Zins();
         $zinsSelect = $zinsModel->select()->setIntegrityCheck(false);
         $zinsSelect->from(
             array('zx' => 'zins'),
@@ -538,7 +538,7 @@ class KreditCore_Class_Credit_Input_Fallback
         /*
          * create SQL to fill the tamporary table
          */
-        $urlModel  = new \Credit\Core\Model\Url();
+        $urlModel  = new \AppCore\Model\Url();
         $urlSelect = $urlModel->select()->setIntegrityCheck(false);
         $urlSelect->from(
             array('u' => 'urls'),

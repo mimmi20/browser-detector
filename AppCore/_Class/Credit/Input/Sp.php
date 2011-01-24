@@ -34,7 +34,7 @@ class KreditCore_Class_Credit_Input_Sp
         $sparte = $this->getSparte();
 
         if (!is_numeric($sparte)) {
-            $sparteModel = new \Credit\Core\Model\Sparten();
+            $sparteModel = new \AppCore\Model\Sparten();
             $sparte      = $sparteModel->getId($sparte);
         }
 

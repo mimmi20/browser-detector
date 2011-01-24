@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -74,7 +74,7 @@ class LogCredits extends ModelAbstract
         $postData['kreditinstitut'] = null;
         $postData['sparte']         = null;
 
-        $modelProduct = new \Credit\Core\Service\Produkte();
+        $modelProduct = new \AppCore\Service\Produkte();
         $ok = $modelProduct->lade(
             $postData['product'],
             $postData['kreditinstitut'],
@@ -85,7 +85,7 @@ class LogCredits extends ModelAbstract
             return null;
         }
 
-        $portalModel = new \Credit\Core\Service\Campaigns();
+        $portalModel = new \AppCore\Service\Campaigns();
         $paid        = null;
         $hostname    = null;
         $istTest     = (isset($postData['test']) && $postData['test']);
@@ -153,7 +153,7 @@ class LogCredits extends ModelAbstract
                               ? (int) ((boolean) $postData['kn1']['mehrantrag'])
                               : 0);
 
-        $modelSparte = new \Credit\Core\Model\Sparten();
+        $modelSparte = new \AppCore\Model\Sparten();
         $select = $modelSparte->select()->setIntegrityCheck(false);
         $select->from(
             array('s' => 'sparten'),
@@ -166,10 +166,10 @@ class LogCredits extends ModelAbstract
         //$spartenId = substr('00' . $row->uid, -2) . '-';
         //$processId = $row->code . '-';
 
-        $usageModel = new \Credit\Core\Service\Usage();
+        $usageModel = new \AppCore\Service\Usage();
         $verwendung = $usageModel->name($postData['zweck']);
 
-        $modelInstitut = new \Credit\Core\Model\Institute();
+        $modelInstitut = new \AppCore\Model\Institute();
         $select        = $modelInstitut->select();
         $select->from(
             array('i' => 'institute'),
@@ -183,7 +183,7 @@ class LogCredits extends ModelAbstract
         /*
         $processId .= substr('000' . $row->uid, -3) . '-' . $spartenId;
 
-        $modelAntrag = new \Credit\Core\Model\Antraege();
+        $modelAntrag = new \AppCore\Model\Antraege();
         $select      = $modelAntrag->select()->setIntegrityCheck(false);
         $select->from(
             array('log_credits'),
@@ -198,7 +198,7 @@ class LogCredits extends ModelAbstract
         $dataSet->processID = $processId;
         */
 
-        $kundeModel = new \Credit\Core\Model\Kunde();
+        $kundeModel = new \AppCore\Model\Kunde();
         $suche      = $kundeModel->search($postData);
         $customerId = null;
 
@@ -324,7 +324,7 @@ class LogCredits extends ModelAbstract
         $portal = '';
 
         if (!$istTest && isset($postData['creditLine'])) {
-            $campaignModel = new \Credit\Core\Service\Campaigns();
+            $campaignModel = new \AppCore\Service\Campaigns();
             $campaignId    = $campaignModel->getId($postData['paid']);
             $campaign      = $campaignModel->find($campaignId)->current();
 

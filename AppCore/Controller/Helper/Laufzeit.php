@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * ActionHelper Class to detect the user agent and to set actions according to
@@ -32,12 +32,12 @@ class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
      * Class constructor
      *
      * @access public
-     * @return \Credit\Core\Controller\Helper\Laufzeit
+     * @return \\AppCore\\Controller\Helper\Laufzeit
      */
     public function __construct()
     {
         $this->_logger  = \Zend\Registry::get('log');
-        $this->_service = new \Credit\Core\Service\Laufzeit();
+        $this->_service = new \AppCore\Service\Laufzeit();
     }
     
     /**

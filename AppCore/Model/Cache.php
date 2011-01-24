@@ -1,9 +1,9 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
- * \Credit\Core\Model\Cache
+ * \\AppCore\\Model\Cache
  *
  * Cache proxy for models, proxies calls to the model to
  * the Zend_Cache class cache.
@@ -16,7 +16,7 @@ namespace Credit\Core\Model;
  */
 
 /**
- * \Credit\Core\Model\Cache
+ * \\AppCore\\Model\Cache
  *
  * Cache proxy for models, proxies calls to the model to
  * the Zend_Cache class cache.

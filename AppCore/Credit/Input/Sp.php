@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Input;
+namespace AppCore\Credit\Input;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -36,7 +36,7 @@ class Sp extends InputAbstract
         $sparte = $this->getSparte();
 
         if (!is_numeric($sparte)) {
-            $sparteModel = new \Credit\Core\Service\Sparten();
+            $sparteModel = new \AppCore\Service\Sparten();
             $sparte      = $sparteModel->getId($sparte);
         }
 

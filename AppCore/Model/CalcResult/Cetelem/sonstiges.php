@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model\CalcResult\Cetelem;
+namespace AppCore\Model\CalcResult\Cetelem;
 
 /**
  * the CalcResult is a virtual/temporary Table, which represents the result of
@@ -28,7 +28,7 @@ namespace Credit\Core\Model\CalcResult\Cetelem;
  * @copyright 2007-2010 Unister GmbH
  * @deprecated
  */
-class sonstiges extends \Credit\Core\Model\CalcResult\Cetelem
+class sonstiges extends \AppCore\Model\CalcResult\Cetelem
 {
     //
 }

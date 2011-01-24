@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -62,10 +62,10 @@ class StatEinfach extends ModelAbstract
         $additionalWhere = ''
     )
     {
-        $spartenModel = new \Credit\Core\Service\Sparten();
+        $spartenModel = new \AppCore\Service\Sparten();
         $sparte       = $spartenModel->getId($sparte);
 
-        //$typeModel = new \Credit\Core\Model\Types();
+        //$typeModel = new \AppCore\Model\Types();
         //$type      = $typeModel->getId($type);
 
         $select = $this->select(false)->setIntegrityCheck(false);
@@ -150,7 +150,7 @@ class StatEinfach extends ModelAbstract
      * @param Zend_Db_Select $select a sql query object
      * @param string         $type   one kind of type
      *
-     * @return \Credit\Core\Model\StatEinfach
+     * @return \\AppCore\\Model\StatEinfach
      */
     private function _concatTypeFilter(Zend_Db_Select $select, $type)
     {
@@ -190,7 +190,7 @@ class StatEinfach extends ModelAbstract
      * @param Zend_Db_Select $select a sql query object
      * @param string         $type   one kind of type
      *
-     * @return \Credit\Core\Model\StatEinfach
+     * @return \\AppCore\\Model\StatEinfach
      */
     private function _concatInstituteFilter(Zend_Db_Select $select, $type)
     {

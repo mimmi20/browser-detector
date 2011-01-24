@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class Campaigns extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\Campaigns
+     * @return \\AppCore\\Service\Campaigns
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\Campaigns();
+        $this->_model = new \AppCore\Model\Campaigns();
     }
 
     /**
@@ -179,7 +179,7 @@ class Campaigns extends ServiceAbstract
      *
      * @param integer $campaignId
      *
-     * @return \Credit\Core\Model\Campaign
+     * @return \\AppCore\\Model\Campaign
      * @access public
      */
     public function getDefaultCampaign($campaignId)
@@ -197,16 +197,16 @@ class Campaigns extends ServiceAbstract
     }
 
     /**
-     * returns an \Credit\Core\Model\Portal object for an campaign id
+     * returns an \\AppCore\\Model\Portal object for an campaign id
      *
      * @param integer $campaignId
      *
-     * @return \Credit\Core\Service\Portale
+     * @return \\AppCore\\Service\Portale
      * @access public
      */
     public function getPortal($campaignId)
     {
-        $dbPortale = new \Credit\Core\Service\Portale();
+        $dbPortale = new \AppCore\Service\Portale();
 
         return $dbPortale->loadByCampaign($campaignId);
     }
@@ -216,7 +216,7 @@ class Campaigns extends ServiceAbstract
      *
      * @param integer $campaignId
      *
-     * @return \Credit\Core\Model\Campaign
+     * @return \\AppCore\\Model\Campaign
      * @access public
      */
     public function getTestCampaign($campaignId)
@@ -270,7 +270,7 @@ class Campaigns extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\Campaigns
+     * @return \\AppCore\\Service\Campaigns
      */
     public function cleanCache()
     {

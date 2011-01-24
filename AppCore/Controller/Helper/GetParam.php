@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * ActionHelper Class to detect the user agent and to set actions according to
@@ -55,7 +55,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      *   object e.g. 'Int' for using \Zend\Validator\Int'
      * 2 a string containing an type, with an underscore added as first
      *   character, if you want to use a custom validator
-     *   e.g. '_\Credit\Core\Class\Validate\Plz'
+     *   e.g. '_\\AppCore\\Class\Validate\Plz'
      * 3 an validator object
      * 4 an array containing strings or objects like in numbers 1-3
      *
@@ -71,7 +71,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         $default = null,
         $validator = null)
     {
-        return \Credit\Core\Globals::getParamFromArray(
+        return \AppCore\Globals::getParamFromArray(
             $this->getRequest()->getParams(),
             $paramName,
             $default,

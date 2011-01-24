@@ -20,7 +20,7 @@
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
-abstract class \Credit\Core\Credit\Input_Abstract
+abstract class \AppCore\Credit\Input\AbstractInput
 {
     protected $_db = null;
 
@@ -53,7 +53,7 @@ abstract class \Credit\Core\Credit\Input_Abstract
     /**
      * the class contructor
      *
-     * @return \Credit\Core\Credit\Input_Abstract
+     * @return \AppCore\Credit\Input\AbstractInput
      */
     public function __construct()
     {
@@ -122,7 +122,7 @@ abstract class \Credit\Core\Credit\Input_Abstract
      */
     public function setCaid($campaignId)
     {
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $this->_caid   = $campaignModel->getId($campaignId);
 
         if (false !== $this->_caid) {
@@ -367,7 +367,7 @@ abstract class \Credit\Core\Credit\Input_Abstract
                            `ttp`.`effZinsUnten`
                    ELSE `ttp`.`effZins` END';
 
-        $model  = new \Credit\Core\Model\Produkte();
+        $model  = new \AppCore\Model\Produkte();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('ttp' => '__tmp_table_products'),

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Input;
+namespace AppCore\Credit\Input;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -56,7 +56,7 @@ abstract class InputAbstract
     /**
      * the class contructor
      *
-     * @return \Credit\Core\Credit\Input_Abstract
+     * @return \AppCore\Credit\Input\AbstractInput
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ abstract class InputAbstract
      */
     public function setCaid($campaignId)
     {//var_dump('yy', $campaignId);
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $this->_caid   = $campaignModel->getId($campaignId);
 
         if (false !== $this->_caid) {
@@ -370,7 +370,7 @@ abstract class InputAbstract
                            `ttp`.`effZinsUnten`
                    ELSE `ttp`.`effZins` END';
 
-        $model  = new \Credit\Core\Model\Produkte();
+        $model  = new \AppCore\Model\Produkte();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('ttp' => '__tmp_table_products'),

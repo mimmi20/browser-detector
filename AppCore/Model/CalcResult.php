@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * the CalcResult is a virtual/temporary Table, which represents the result of

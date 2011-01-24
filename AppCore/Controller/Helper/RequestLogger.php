@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * ActionHelper Class to log the request
@@ -81,7 +81,7 @@ class RequestLogger extends \Zend\Controller\Action\Helper\AbstractHelper
             'isTest'    => (int) $isTest
         );
 
-        $requestModel = new \Credit\Core\Model\Request();
+        $requestModel = new \AppCore\Model\Request();
         $requestId    = $requestModel->insert($daten);
 
         $request->setParam('requestId', (int) $requestId);

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -725,7 +725,7 @@ class Campaigns extends ModelAbstract
     }
 
     /**
-     * returns an \Credit\Core\Service\Portal object for an campaign id
+     * returns an \\AppCore\\Service\Portal object for an campaign id
      *
      * @param integer $campaignId
      *
@@ -734,7 +734,7 @@ class Campaigns extends ModelAbstract
      */
     public function getPortal($campaignId)
     {
-        $dbPortale = new \Credit\Core\Service\Portale();
+        $dbPortale = new \AppCore\Service\Portale();
 
         return $dbPortale->loadByCampaign($campaignId);
     }

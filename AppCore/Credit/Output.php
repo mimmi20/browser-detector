@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit;
+namespace AppCore\Credit;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -100,7 +100,7 @@ class Output
     /**
      * @param integer $mode the new mode for calculation
      *
-     * @return KreditCore_Class_Credit_Output
+     * @return \AppCore\Credit\Output
      * @access public
      */
     public function setMode($mode = self::FALLBACK)
@@ -134,24 +134,24 @@ class Output
      *
      * @param string $mode
      *
-     * @return KreditCore_Class_Credit_Output
+     * @return \AppCore\Credit\Output
      */
     private function _setFormater($mode = self::FALLBACK)
     {
         switch ($mode) {
             case self::JS:
-                $formater = '\\Credit\\Core\\Credit\\Output\\Js';
+                $formater = '\\AppCore\\Credit\\Output\\Js';
                 break;
             case self::IFRAME:
-                $formater = '\\Credit\\Core\\Credit\\Output\\Iframe';
+                $formater = '\\AppCore\\Credit\\Output\\Iframe';
                 break;
             case self::CURL:
-                $formater = '\\Credit\\Core\\Credit\\Output\\Curl';
+                $formater = '\\AppCore\\Credit\\Output\\Curl';
                 break;
             case self::FALLBACK:
                 // Break intentionally omitted
             default:
-                $formater = '\\Credit\\Core\\Credit\\Output\\Fallback';
+                $formater = '\\AppCore\\Credit\\Output\\Fallback';
                 break;
         }
 
@@ -164,7 +164,7 @@ class Output
      * get the formater, if no formater is defined i will define the default
      * formater
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function getFormater()
     {
@@ -178,7 +178,7 @@ class Output
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output
+     * @return \AppCore\Credit\Output
      * @access public
      */
     public function setModeName($value)

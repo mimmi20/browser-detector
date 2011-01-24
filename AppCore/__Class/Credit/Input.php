@@ -19,8 +19,8 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class \Credit\Core\Credit\Input
-    extends \Credit\Core\Credit\Input_Abstract
+class \\AppCore\\Credit\Input
+    extends \AppCore\Credit\Input\AbstractInput
 {
     CONST SP = 0;
     CONST FALLBACK = 1;
@@ -143,13 +143,13 @@ class \Credit\Core\Credit\Input
                      * default mode (stored procedures)
                      * not active at the moment (11.11.2010 thm)
                      */
-                    $calculator = new \Credit\Core\Credit\Input_Sp();
+                    $calculator = new \\AppCore\\Credit\Input_Sp();
                     break;
                 case self::FALLBACK:
                     // Break intentionally omitted
                 default:
                     //Fallback mode
-                    $calculator = new \Credit\Core\Credit\Input_Fallback();
+                    $calculator = new \AppCore\Credit\Input\Fallback();
                     break;
             }
 

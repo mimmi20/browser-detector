@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class Produkte extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\Produkte
+     * @return \\AppCore\\Service\Produkte
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\Produkte();
+        $this->_model = new \AppCore\Model\Produkte();
     }
 
     /**
@@ -127,7 +127,7 @@ class Produkte extends ServiceAbstract
             return null;
         }
 
-        $zinsModel = new \Credit\Core\Service\Zins();
+        $zinsModel = new \AppCore\Service\Zins();
         return $zinsModel->getZins($productId, $laufzeit, $betrag);
     }
 
@@ -145,7 +145,7 @@ class Produkte extends ServiceAbstract
             return null;
         }
 
-        $urlModel = new \Credit\Core\Service\Url();
+        $urlModel = new \AppCore\Service\Url();
         return $urlModel->getUrl($productId, $caid, $teaser);
     }
 
@@ -178,7 +178,7 @@ class Produkte extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\Produkte
+     * @return \\AppCore\\Service\Produkte
      */
     public function cleanCache()
     {

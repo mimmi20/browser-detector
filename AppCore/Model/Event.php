@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -45,7 +45,7 @@ class Event extends ModelAbstract
     protected $_referenceMap = array(
        'EventType'  => array(
            'columns'           =>  array('EventTypeId'),
-           'refTableClass'     =>  '\Credit\Core\Model\EventType',
+           'refTableClass'     =>  '\\AppCore\\Model\EventType',
            'refColumns'        =>  array('EventTypeId')
        )
     );

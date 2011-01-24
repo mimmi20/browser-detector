@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * ActionHelper Class to detect the user agent and to set actions according to
@@ -101,7 +101,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
             return $this->_setParams($request, $return);
         }
 
-        $camapignModel = new \Credit\Core\Service\Campaigns();
+        $camapignModel = new \AppCore\Service\Campaigns();
         $caid          = $camapignModel->getId($this->getActionController()->getHelper('GetCampaignId')->direct());
 
         $partnerId  = '';
@@ -114,7 +114,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
             $this->_requestData['paid'] = $this->_paid;
             $this->_requestData['caid'] = $this->_caid;
 
-            $portalModel = new \Credit\Core\Service\Portale();
+            $portalModel = new \AppCore\Service\Portale();
             $portal      = $portalModel->find($this->_paid)->current();
 
             if (is_object($portal)) {
@@ -135,7 +135,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
         
         //var_dump($partnerId, $campaignId);
 
-        \Credit\Core\Globals::defineImageUrl($partnerId, $campaignId);
+        \AppCore\Globals::defineImageUrl($partnerId, $campaignId);
 
         $sparte = $this->getActionController()->getHelper('GetParam')->direct(
             'sparte',
@@ -143,7 +143,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
             'Alnum'
         );
 
-        $spartenModel = new \Credit\Core\Service\Sparten();
+        $spartenModel = new \AppCore\Service\Sparten();
         $sparte       = $spartenModel->getId($sparte);
         
         //replace Sparte with its Id
@@ -186,7 +186,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
                ? trim($_SERVER['HTTP_USER_AGENT'])
                : '');
 
-        $model = new \Credit\Core\Service\Campaigns();
+        $model = new \AppCore\Service\Campaigns();
 
         return $model->loadCaid(
             $caid,

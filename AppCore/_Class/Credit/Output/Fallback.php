@@ -19,13 +19,13 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class KreditCore_Class_Credit_Output_Fallback
-    extends KreditCore_Class_Credit_Output_Abstract
+class \AppCore\Credit\Output\Fallback
+    extends \AppCore\Credit\Output\AbstractOutput
 {
     /**
-     * @return KreditCore_Class_Credit_Output_Fallback
+     * @return \AppCore\Credit\Output\Fallback
      */
-    public function getOfferLink(\Credit\Core\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Model\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 
@@ -44,7 +44,7 @@ class KreditCore_Class_Credit_Output_Fallback
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -52,7 +52,7 @@ class KreditCore_Class_Credit_Output_Fallback
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $teaser = false)
     {
         /*
@@ -76,9 +76,9 @@ class KreditCore_Class_Credit_Output_Fallback
     }
 
     /**
-     * @return KreditCore_Class_Credit_Output_Fallback
+     * @return \AppCore\Credit\Output\Fallback
      */
-    public function getInfoLink(\Credit\Core\Model\CalcResult $result)
+    public function getInfoLink(\AppCore\Model\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 
@@ -94,7 +94,7 @@ class KreditCore_Class_Credit_Output_Fallback
         $infoParams['kreditInstitut'] = $this->_institut;
         $infoParamsTeaser             = array();
 
-        $infoLnk = \Credit\Core\Globals::postToGetUrl(
+        $infoLnk = \AppCore\Globals::postToGetUrl(
             $baseUrl,
             $infoParams,
             $int
@@ -109,7 +109,7 @@ class KreditCore_Class_Credit_Output_Fallback
             $infoParamsTeaser['partner_id']     = $this->_caid;
             $infoParamsTeaser['kreditInstitut'] = $this->_institut;
 
-            $infoLnkTeaser = \Credit\Core\Globals::postToGetUrl(
+            $infoLnkTeaser = \AppCore\Globals::postToGetUrl(
                 $baseUrl,
                 $infoParamsTeaser,
                 $int
@@ -128,7 +128,7 @@ class KreditCore_Class_Credit_Output_Fallback
     /**
      * sets the base url
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     protected function getBaseUrl()
     {

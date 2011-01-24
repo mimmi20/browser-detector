@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\View\Helper;
+namespace AppCore\View\Helper;
 
 /**
  * View-Helper
@@ -56,7 +56,7 @@ class IncludeFile extends \Zend\View\Helper\AbstractHelper
         $this->mode = $mode;
 
         if (!\Zend\Registry::isRegistered('_imageUrl')) {
-            \Credit\Core\Globals::defineImageUrl($paid, $caid);
+            \AppCore\Globals::defineImageUrl($paid, $caid);
         }
 
         $content = '';

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class Institute extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\Institute
+     * @return \\AppCore\\Service\Institute
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\Institute();
+        $this->_model = new \AppCore\Model\Institute();
     }
 
     /**
@@ -113,7 +113,7 @@ class Institute extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\Institute
+     * @return \\AppCore\\Service\Institute
      */
     public function cleanCache()
     {

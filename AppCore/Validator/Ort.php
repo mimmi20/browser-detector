@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Validator;
+namespace AppCore\Validator;
 
 /**
  * Validator für Ortsnamen
@@ -70,7 +70,7 @@ class Ort extends \Zend\Validator\AbstractValidator
     public function __construct()
     {
         $this->_emptyValidator  = new \Zend\Validator\NotEmpty();
-        $this->_nameValidator   = new \Credit\Core\Class\Validate\Alpha();
+        $this->_nameValidator   = new \\AppCore\\Class\Validate\Alpha();
 
         $this->_lengthValidator = new \Zend\Validator\StringLength(
             2, null, 'iso-8859-1'

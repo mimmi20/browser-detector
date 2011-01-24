@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Output;
+namespace AppCore\Credit\Output;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -28,7 +28,7 @@ class Curl extends OutputAbstract
      * @return void
      * @access public
      */
-    public function getOfferLink(\Credit\Core\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Model\CalcResult $result)
     {
         return $this->setOfferLinks(
             $result, $this->_baseUrl
@@ -39,7 +39,7 @@ class Curl extends OutputAbstract
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -47,7 +47,7 @@ class Curl extends OutputAbstract
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl

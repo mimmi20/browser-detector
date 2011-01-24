@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model\CalcResult\Ingdiba;
+namespace AppCore\Model\CalcResult\Ingdiba;
 
 /**
  * the CalcResult is a virtual/temporary Table, which represents the result of
@@ -28,7 +28,7 @@ namespace Credit\Core\Model\CalcResult\Ingdiba;
  * @copyright 2007-2010 Unister GmbH
  * @deprecated
  */
-class auto extends \Credit\Core\Model\CalcResult\Ingdiba
+class auto extends \AppCore\Model\CalcResult\Ingdiba
 {
     //nothing to do here
 }

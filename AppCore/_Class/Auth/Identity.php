@@ -86,7 +86,7 @@ class KreditCore_Class_Auth_Identity
      */
     public function getRolle()
     {
-        $rolleModel = new \Credit\Core\Model\Rolle();
+        $rolleModel = new \AppCore\Model\Rolle();
 
         return $rolleModel->getName($this->getRolleId());
     }

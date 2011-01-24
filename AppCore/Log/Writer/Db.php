@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Log\Writer;
+namespace AppCore\Log\Writer;
 
 /**
  * Zend Framework
@@ -80,7 +80,7 @@ class Db extends \Zend\Log\Writer\AbstractWriter
             $priority  = $event['priorityName'];
         }
 
-        $model = new \Credit\Core\Model\ExceptionModel();
+        $model = new \AppCore\Model\ExceptionModel();
         $model->insertException(
             $exception,
             new \Zend\Controller\Request\Http(),

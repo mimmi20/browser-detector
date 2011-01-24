@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit;
+namespace AppCore\Credit;
 
 /**
  * Klasse für Kredit-Infos
@@ -73,7 +73,7 @@ class Info extends CreditAbstract
 
         $institut = null;
 
-        $modelProdukte = new \Credit\Core\Model\Produkte();
+        $modelProdukte = new \AppCore\Model\Produkte();
         if (!$this->_product
             || !$modelProdukte->lade($this->_product, $institut, $this->_sparte)
         ) {

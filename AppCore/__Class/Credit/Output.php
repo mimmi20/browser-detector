@@ -19,7 +19,7 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class KreditCore_Class_Credit_Output
+class \AppCore\Credit\Output
 {
     CONST FALLBACK = 0;
     CONST JS = 1;
@@ -97,7 +97,7 @@ class KreditCore_Class_Credit_Output
     /**
      * @param integer $mode the new mode for calculation
      *
-     * @return KreditCore_Class_Credit_Output
+     * @return \AppCore\Credit\Output
      * @access public
      */
     public function setMode($mode = self::FALLBACK)
@@ -131,24 +131,24 @@ class KreditCore_Class_Credit_Output
      *
      * @param string $mode
      *
-     * @return KreditCore_Class_Credit_Output
+     * @return \AppCore\Credit\Output
      */
     private function _setFormater($mode = self::FALLBACK)
     {
         switch ($mode) {
             case self::JS:
-                $formater = 'KreditCore_Class_Credit_Output_Js';
+                $formater = '\AppCore\Credit\Output_Js';
                 break;
             case self::IFRAME:
-                $formater = 'KreditCore_Class_Credit_Output_Iframe';
+                $formater = '\AppCore\Credit\Output_Iframe';
                 break;
             case self::CURL:
-                $formater = 'KreditCore_Class_Credit_Output_Curl';
+                $formater = '\AppCore\Credit\Output_Curl';
                 break;
             case self::FALLBACK:
                 // Break intentionally omitted
             default:
-                $formater = 'KreditCore_Class_Credit_Output_Fallback';
+                $formater = '\AppCore\Credit\Output\Fallback';
                 break;
         }
 
@@ -161,7 +161,7 @@ class KreditCore_Class_Credit_Output
      * get the formater, if no formater is defined i will define the default
      * formater
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function getFormater()
     {
@@ -175,7 +175,7 @@ class KreditCore_Class_Credit_Output
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output
+     * @return \AppCore\Credit\Output
      * @access public
      */
     public function setModeName($value)

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -102,6 +102,6 @@ class GeodbName extends ModelAbstract
      */
     private function _encode($item, $entities = true)
     {
-        return \Credit\Core\Globals::encode($item, $entities);
+        return \AppCore\Globals::encode($item, $entities);
     }
 }

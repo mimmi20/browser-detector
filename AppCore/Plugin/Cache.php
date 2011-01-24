@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Plugin;
+namespace AppCore\Plugin;
 
 /**
  * Plugin Class to cache the whole application

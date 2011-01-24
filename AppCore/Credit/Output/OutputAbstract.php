@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Output;
+namespace AppCore\Credit\Output;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -80,7 +80,7 @@ abstract class OutputAbstract
     /**
      * the class contructor
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function __construct()
     {
@@ -96,7 +96,7 @@ abstract class OutputAbstract
     /**
      * @param integer $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setLaufzeit($value)
     {
@@ -116,7 +116,7 @@ abstract class OutputAbstract
     /**
      * @param integer $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setKreditbetrag($value)
     {
@@ -136,13 +136,13 @@ abstract class OutputAbstract
     /**
      * @param integer|string $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setCaid($value)
     {
         $this->_caid = $value;
 
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
 
         $this->setCampaign($campaignModel->getCampaignName($value));
 
@@ -160,7 +160,7 @@ abstract class OutputAbstract
     /**
      * @param integer|string $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setCampaign($value)
     {
@@ -180,7 +180,7 @@ abstract class OutputAbstract
     /**
      * @param integer $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setZweck($value)
     {
@@ -200,13 +200,13 @@ abstract class OutputAbstract
     /**
      * @param integer|string $value the new sparte
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setSparte($value)
     {
         $this->_sparte = $value;
 
-        $model = new \Credit\Core\Service\Sparten();
+        $model = new \AppCore\Service\Sparten();
         $name  = $model->getName($value);
         $this->setSparteName($name);
 
@@ -224,7 +224,7 @@ abstract class OutputAbstract
     /**
      * @param integer|string $value the new sparte
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setSparteName($value)
     {
@@ -244,7 +244,7 @@ abstract class OutputAbstract
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setTeaserOnly($value)
     {
@@ -264,7 +264,7 @@ abstract class OutputAbstract
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setBestOnly($value)
     {
@@ -284,7 +284,7 @@ abstract class OutputAbstract
     /**
      * @param integer $value the product id for the calculation
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setOnlyProduct($value)
     {
@@ -310,7 +310,7 @@ abstract class OutputAbstract
     /**
      * @param string $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setOnlyInstitut($value)
     {
@@ -330,7 +330,7 @@ abstract class OutputAbstract
     /**
      * @param string $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setInstitut($value)
     {
@@ -350,7 +350,7 @@ abstract class OutputAbstract
     /**
      * @param string $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setProduct($value)
     {
@@ -370,7 +370,7 @@ abstract class OutputAbstract
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setTeaser($value)
     {
@@ -390,7 +390,7 @@ abstract class OutputAbstract
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setInternal($value)
     {
@@ -410,7 +410,7 @@ abstract class OutputAbstract
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setModeName($value)
     {
@@ -430,7 +430,7 @@ abstract class OutputAbstract
     /**
      * @param boolean $value the value for the variable
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     public function setTest($test)
     {
@@ -549,9 +549,9 @@ abstract class OutputAbstract
     }
 
     /**
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getOfferLink(\Credit\Core\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Model\CalcResult $result)
     {
         $baseUrl = rtrim(\Zend\Registry::get('_urlDir'), '/') . '/';
 
@@ -568,15 +568,15 @@ abstract class OutputAbstract
     /**
      * sets the created URLs  to the given object
      *
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param string                      $baseUrl
      * @param string                      $offerLnkSecure
      * @param string                      $offerLnkSecureTeaser
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     protected function setOfferLinks(
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $baseUrl,
         $offerLnkSecure = '',
         $offerLnkSecureTeaser = '')
@@ -599,7 +599,7 @@ abstract class OutputAbstract
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -607,7 +607,7 @@ abstract class OutputAbstract
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl
@@ -625,9 +625,9 @@ abstract class OutputAbstract
     }
 
     /**
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getAntragsParams(\Credit\Core\Model\CalcResult $result)
+    public function getAntragsParams(\AppCore\Model\CalcResult $result)
     {
         $result->antragParams = $this->getOfferParams();
 
@@ -635,9 +635,9 @@ abstract class OutputAbstract
     }
 
     /**
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getInfoParams(\Credit\Core\Model\CalcResult $result)
+    public function getInfoParams(\AppCore\Model\CalcResult $result)
     {
         $result->infoParams = $this->getInfoParamsInternal();
 
@@ -645,9 +645,9 @@ abstract class OutputAbstract
     }
 
     /**
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getInfoLink(\Credit\Core\Model\CalcResult $result)
+    public function getInfoLink(\AppCore\Model\CalcResult $result)
     {
         //$baseUrl  = rtrim(\Zend\Registry::get('_urlDir'), '/') . '/';
         //$infoLink = $baseUrl . 'kreditrechner-informationen-zum-anbieter.html';
@@ -662,7 +662,7 @@ abstract class OutputAbstract
         $infoParams['kreditInstitut'] = $this->_institut;
         $infoParamsTeaser             = array();
 
-        $infoLnk = \Credit\Core\Globals::postToGetUrl(
+        $infoLnk = \AppCore\Globals::postToGetUrl(
             $infoLink,
             $infoParams
         );
@@ -676,7 +676,7 @@ abstract class OutputAbstract
             $infoParamsTeaser['partner_id']     = $this->_caid;
             $infoParamsTeaser['kreditInstitut'] = $this->_institut;
 
-            $infoLnkTeaser = \Credit\Core\Globals::postToGetUrl(
+            $infoLnkTeaser = \AppCore\Globals::postToGetUrl(
                 $infoLink,
                 $infoParamsTeaser
             );
@@ -695,7 +695,7 @@ abstract class OutputAbstract
      * @return array
      */
     protected function getOfferLinkWithUrl(
-        \Credit\Core\Model\CalcResult $result, $baseUrl)
+        \AppCore\Model\CalcResult $result, $baseUrl)
     {
         $int = (\Zend\Registry::get('_urlDir') == \Zend\Registry::get('_home'));
 
@@ -726,7 +726,7 @@ abstract class OutputAbstract
         if ($this->_isinternal) {
             $antragParams = $this->getOfferParams();
 
-            $offerLnk = \Credit\Core\Globals::postToGetUrl(
+            $offerLnk = \AppCore\Globals::postToGetUrl(
                 $offerLnk, $antragParams, $int
             );
 
@@ -734,7 +734,7 @@ abstract class OutputAbstract
                 $antragParams           = $antragParams;
                 $antragParams['teaser'] = 1;
 
-                $offerLnkTeaser = \Credit\Core\Globals::postToGetUrl(
+                $offerLnkTeaser = \AppCore\Globals::postToGetUrl(
                     $offerLnkTeaser, $antragParams, $int
                 );
             }
@@ -749,7 +749,7 @@ abstract class OutputAbstract
     /**
      * sets the base url
      *
-     * @return KreditCore_Class_Credit_Output_Abstract
+     * @return \AppCore\Credit\Output\AbstractOutput
      */
     protected function getBaseUrl()
     {

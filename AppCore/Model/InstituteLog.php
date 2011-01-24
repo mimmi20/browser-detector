@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -89,7 +89,7 @@ class InstituteLog extends ModelAbstract
      */
     public function getInstituteColor($kiId)
     {
-        $institut = new \Credit\Core\Service\Institute();
+        $institut = new \AppCore\Service\Institute();
 
         return $institut->getColor($kiId);
     }

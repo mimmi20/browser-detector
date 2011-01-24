@@ -122,7 +122,7 @@ abstract class KreditCore_Class_Credit_Input_Abstract
      */
     public function setCaid($campaignId)
     {
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $this->_caid   = $campaignModel->getId($campaignId);
 
         if (false !== $this->_caid) {
@@ -367,7 +367,7 @@ abstract class KreditCore_Class_Credit_Input_Abstract
                            `ttp`.`effZinsUnten`
                    ELSE `ttp`.`effZins` END';
 
-        $model  = new \Credit\Core\Model\Produkte();
+        $model  = new \AppCore\Model\Produkte();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('ttp' => '__tmp_table_products'),

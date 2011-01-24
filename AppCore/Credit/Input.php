@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit;
+namespace AppCore\Credit;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -145,13 +145,13 @@ class Input extends Input\InputAbstract
                      * default mode (stored procedures)
                      * not active at the moment (11.11.2010 thm)
                      */
-                    $calculator = new \Credit\Core\Credit\Input\Sp();
+                    $calculator = new \AppCore\Credit\Input\Sp();
                     break;
                 case self::FALLBACK:
                     // Break intentionally omitted
                 default:
                     //Fallback mode
-                    $calculator = new \Credit\Core\Credit\Input\Fallback();
+                    $calculator = new \AppCore\Credit\Input\Fallback();
                     break;
             }
             

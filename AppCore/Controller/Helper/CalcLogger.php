@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * Service-Finder für alle Kredit-Services
@@ -44,7 +44,7 @@ class CalcLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         
         $getParamHelper = $this->getActionController()->getHelper('GetParam');
 
-        \Credit\Core\Globals::log(
+        \AppCore\Globals::log(
             $getParamHelper->direct('requestId', null, 'Int'),
             $getParamHelper->direct('product', null, 'Int'),
             $getParamHelper->direct('kreditinstitut', '', 'Alpha'),

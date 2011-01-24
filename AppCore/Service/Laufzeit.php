@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class Laufzeit extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\Laufzeit
+     * @return \\AppCore\\Service\Laufzeit
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\Laufzeit();
+        $this->_model = new \AppCore\Model\Laufzeit();
     }
 
     /**
@@ -103,7 +103,7 @@ class Laufzeit extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\Laufzeit
+     * @return \\AppCore\\Service\Laufzeit
      */
     public function cleanCache()
     {

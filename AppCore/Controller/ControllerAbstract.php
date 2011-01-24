@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller;
+namespace AppCore\Controller;
 
 /**
  * abstrakte Basis-Klasse für alle Controller
@@ -171,7 +171,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      */
     protected function decode($item, $entities = true)
     {
-        return \Credit\Core\Globals::decode($item, $entities);
+        return \AppCore\Globals::decode($item, $entities);
     }
 
     /**
@@ -187,7 +187,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      */
     protected function encode($item, $entities = true)
     {
-        return \Credit\Core\Globals::encode($item, $entities);
+        return \AppCore\Globals::encode($item, $entities);
     }
 
     /**
@@ -214,7 +214,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
     protected function loadPaid($value)
     {
         $agent           = '';
-        $campaignService = new \Credit\Core\Service\Campaigns();
+        $campaignService = new \AppCore\Service\Campaigns();
 
         $campaignService->loadCaid(
             $value,
@@ -227,7 +227,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 
         $this->_campaignId = $campaignService->getName($this->_caid);
 
-        $portalService    = new \Credit\Core\Service\Portale();
+        $portalService    = new \AppCore\Service\Portale();
         $this->_partnerId = $portalService->getName($this->_paid);
     }
 
@@ -241,7 +241,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      */
     protected function checkPaid($value)
     {
-        return \Credit\Core\Globals::checkPaid($value);
+        return \AppCore\Globals::checkPaid($value);
     }
 
     /**

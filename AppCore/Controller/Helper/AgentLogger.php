@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * ActionHelper Class to detect the user agent and to set actions according to
@@ -47,7 +47,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request = $this->getRequest();
 
         $this->_requestData = $request->getParams();
-        $browscap           = new \Credit\Core\Browscap();
+        $browscap           = new \\AppCore\\Browscap();
 
         $userAgent = $this->_getUserAgent();
 
@@ -58,7 +58,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $browser = $browscap->getBrowser($userAgent, false);
 
         if ('Default Browser' == $browser->Browser) {
-            $campaignService = new \Credit\Core\Service\Campaigns();
+            $campaignService = new \AppCore\Service\Campaigns();
             $campaignName    = $campaignService->getName(
                 $this->getActionController()->getHelper('GetParam')->direct('campaign_id')
             );
@@ -81,7 +81,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
                 break;
         }
 
-        $oBrowser = new \Credit\Core\Model\Browser();
+        $oBrowser = new \AppCore\Model\Browser();
 
         $browserClass = $oBrowser->searchByBrowser(
             $browser->Browser, $browser->Version, $browser->Platform, $bits
@@ -148,7 +148,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $noLog    = false;
         $isTest   = false;
 
-        if (\Credit\Core\Globals::isBlocked($remoteAddress)) {
+        if (\AppCore\Globals::isBlocked($remoteAddress)) {
             $noResult = true;
         }
 
@@ -159,7 +159,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         */
 
         $unitest = (boolean) $this->getActionController()->getHelper('GetParam')->direct('unitest');
-        if ($unitest || \Credit\Core\Globals::isTest($remoteAddress)) {
+        if ($unitest || \AppCore\Globals::isTest($remoteAddress)) {
             $isTest = true;
         }
 

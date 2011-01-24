@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class Sparten extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\Sparten
+     * @return \\AppCore\\Service\Sparten
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\Sparten();
+        $this->_model = new \AppCore\Model\Sparten();
     }
 
     /**
@@ -116,7 +116,7 @@ class Sparten extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\Sparten
+     * @return \\AppCore\\Service\Sparten
      */
     public function cleanCache()
     {

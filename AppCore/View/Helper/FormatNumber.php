@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\View\Helper;
+namespace AppCore\View\Helper;
 
 /**
  * View-Helper

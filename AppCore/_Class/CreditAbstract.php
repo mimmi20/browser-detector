@@ -20,7 +20,7 @@
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
-abstract class KreditCore_Class_CreditAbstract
+abstract class \AppCore\Credit\CreditAbstract
 {
     /**
      * gewünschte Laufzeit des Kredites

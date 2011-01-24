@@ -261,7 +261,7 @@ class KreditCore_Class_Interface_PortalService
         }
 
         $results = array();
-        $data    = \Credit\Core\Globals::combineArrayKeys($data);
+        $data    = \AppCore\Globals::combineArrayKeys($data);
         $data    = $this->_mapData($data);
 
         //set default values if not available
@@ -400,26 +400,26 @@ class KreditCore_Class_Interface_PortalService
     {
         switch ($key) {
             case 'berufsgruppe':
-                $value = \Credit\Core\Globals::getBerufsgruppe(
+                $value = \AppCore\Globals::getBerufsgruppe(
                     $value, false
                 );
                 break;
             case 'nationality':
-                if (isset(\Credit\Core\Globals::$generalStates[$value])) {
-                    $value = \Credit\Core\Globals::$generalStates[$value];
+                if (isset(\AppCore\Globals::$generalStates[$value])) {
+                    $value = \AppCore\Globals::$generalStates[$value];
                 }
                 break;
             case 'branche':
-                $value = \Credit\Core\Globals::getBranche($value);
+                $value = \AppCore\Globals::getBranche($value);
                 break;
             case 'wohneigentum':
-                $value = \Credit\Core\Globals::getWohneigentum($value);
+                $value = \AppCore\Globals::getWohneigentum($value);
                 break;
             case 'wohnsituation':
-                $value = \Credit\Core\Globals::getWohnsituation($value);
+                $value = \AppCore\Globals::getWohnsituation($value);
                 break;
             case 'familie':
-                $value = \Credit\Core\Globals::getFamilyState($value);
+                $value = \AppCore\Globals::getFamilyState($value);
                 break;
             case 'hatec':
                 switch ($value) {

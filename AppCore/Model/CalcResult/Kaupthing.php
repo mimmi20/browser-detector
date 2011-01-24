@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model\CalcResult;
+namespace AppCore\Model\CalcResult;
 
 /**
  * the CalcResult is a virtual/temporary Table, which represents the result of
@@ -27,7 +27,7 @@ namespace Credit\Core\Model\CalcResult;
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class Kaupthing extends \Credit\Core\Model\CalcResult
+class Kaupthing extends \AppCore\Model\CalcResult
 {
     /**
      * checks if the result is valid

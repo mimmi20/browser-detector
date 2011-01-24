@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core;
+namespace AppCore;
 
 /**
  * Klasse, die Funktionen enthält, die an verschiedenen Stellen benötigt werden,
@@ -623,8 +623,8 @@ class Globals
 
                 $xml = '';
             }
-        } elseif ($class == '\Credit\Core\Model\CalcResult'
-            || is_subclass_of($value, '\Credit\Core\Model\CalcResult')
+        } elseif ($class == '\AppCore\Model\CalcResult'
+            || is_subclass_of($value, '\AppCore\Model\CalcResult')
         ) {
             $xml = '<' . $key . '>'
                  . self::_ia2xml($value->toArray(), $level)
@@ -730,7 +730,7 @@ class Globals
      *   object e.g. 'Int' for using \Zend\Validator\Int'
      * 2 a string containing an type, with an underscore added as first
      *   character, if you want to use a custom validator
-     *   e.g. '_\Credit\Core\Class\Validate\Plz'
+     *   e.g. '_\\AppCore\\Class\Validate\Plz'
      * 3 an validator object
      * 4 an array containing strings or objects like in numbers 1-3
      *
@@ -1180,7 +1180,7 @@ class Globals
      *
      * @param string $useragent   the user agent string
      *
-     * @return \Credit\Core\Model\Browser object
+     * @return \\AppCore\\Model\Browser object
      * @access public
      * @static
      */
@@ -1193,7 +1193,7 @@ class Globals
          */
         $browser = $browscap->getBrowser($useragent, false);
 
-        $browserModel = new \Credit\Core\Model\Browser();
+        $browserModel = new \AppCore\Model\Browser();
         $oBrowser     = $browserModel->searchByBrowser(
             ((isset($browser->Browser)) ? $browser->Browser : ''),
             ((isset($browser->Version)) ? $browser->Version : ''),
@@ -1454,7 +1454,7 @@ class Globals
             return true;
         }
 
-        $modelInstitute = new \Credit\Core\Service\Institute();
+        $modelInstitute = new \AppCore\Service\Institute();
         $instituteId    = $modelInstitute->getId($institut);
         $instituteName  = $institut;
 
@@ -1467,7 +1467,7 @@ class Globals
         $lnktype = self::_cleanLnkType($lnktype);
 
         if ($instituteId) {
-            $modelCampaign = new \Credit\Core\Service\Campaigns();
+            $modelCampaign = new \AppCore\Service\Campaigns();
             $paid          = null;
             $hostname      = null;
             $sparteName    = null;
@@ -1492,7 +1492,7 @@ class Globals
             
             if ($isActive && $productId) {
                 $instituteName = null;
-                $modelProduct  = new \Credit\Core\Service\Produkte();
+                $modelProduct  = new \AppCore\Service\Produkte();
 
                 $isActive = $modelProduct->lade(
                     $productId, $instituteName, $sparteName
@@ -1508,7 +1508,7 @@ class Globals
             if (!$isActive) {
                 $instituteName .= '-INACTIVE';
             } else {
-                $modelUrl = new \Credit\Core\Model\Url();
+                $modelUrl = new \AppCore\Model\Url();
                 $url      = $modelUrl->getFromProduct($productId, $campaignId);
                 $internal = false;
 
@@ -1537,7 +1537,7 @@ class Globals
             }
         }
 
-        $modelInstitut = new \Credit\Core\Model\InstituteLog();
+        $modelInstitut = new \AppCore\Model\InstituteLog();
         $institut      = $modelInstitut->getId($instituteName);
         
         if (false === $institut) {
@@ -1552,7 +1552,7 @@ class Globals
             $institut = (int) $modelInstitut->insert($data);
         }
 
-        $modelTypes = new \Credit\Core\Model\Types();
+        $modelTypes = new \AppCore\Model\Types();
         $lnktype    = $modelTypes->getId($lnktype);
 
         //Statistik loggen
@@ -1654,7 +1654,7 @@ class Globals
         }
 
         try {
-            $agentModel = new \Credit\Core\Model\LogAgent();
+            $agentModel = new \AppCore\Model\LogAgent();
             $data = array(
                 'agent_id'    => (int) $agentId,
                 'browserId'   => (int) $browserId,
@@ -1711,10 +1711,10 @@ class Globals
 
         $provision = 0;
 
-        $produktModel = new \Credit\Core\Model\Produkte();
+        $produktModel = new \AppCore\Model\Produkte();
         $outerSelect  = $produktModel->select();
 
-        $institutModel   = new \Credit\Core\Model\InstituteLog();
+        $institutModel   = new \AppCore\Model\InstituteLog();
         $instituteSelect = $institutModel->select();
         $instituteSelect->from(
             array('ifl' => 'institute_for_log'),
@@ -1722,7 +1722,7 @@ class Globals
         );
         $instituteSelect->where('`ifl`.`kli_id` = ? ', $institut);
 
-        $componentModel  = new \Credit\Core\Model\Produkte();
+        $componentModel  = new \AppCore\Model\Produkte();
         $componentSelect = $componentModel->select()->setIntegrityCheck(false);
         $componentSelect->from(
             array('pc' => 'produkt_components'),
@@ -1898,7 +1898,7 @@ class Globals
      */
     public static function checkPaid($value)
     {
-        $modelCampaign = new \Credit\Core\Service\Campaigns();
+        $modelCampaign = new \AppCore\Service\Campaigns();
 
         if (is_numeric($value)) {
             $needClean = false;
@@ -1910,7 +1910,7 @@ class Globals
             return true;
         }
 
-        $modelPortal = new \Credit\Core\Service\Portale();
+        $modelPortal = new \AppCore\Service\Portale();
 
         return $modelPortal->checkPaid($value);
     }
@@ -1931,7 +1931,7 @@ class Globals
                ? trim($_SERVER['HTTP_USER_AGENT'])
                : '');
 
-        $model  = new \Credit\Core\Service\Campaigns();
+        $model  = new \AppCore\Service\Campaigns();
         $model->loadCaid(
             $value,
             $requestData,
@@ -1953,7 +1953,7 @@ class Globals
      */
     public static function getDefaultLaufzeit($sparte)
     {
-        $model  = new \Credit\Core\Model\Sparten();
+        $model  = new \AppCore\Model\Sparten();
 
         return $model->getDefaultLaufzeit($sparte);
     }
@@ -2317,7 +2317,7 @@ class Globals
                 }
                 break;
             case 'paid':
-                $campaignModel = new \Credit\Core\Service\Campaigns();
+                $campaignModel = new \AppCore\Service\Campaigns();
                 $campaignId    = $campaignModel->getId($value);
                 return $campaignModel->find($campaignId)->current()->name;
                 break;

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Log\Formatter;
+namespace AppCore\Log\Formatter;
 
 /**
  * Zend Framework

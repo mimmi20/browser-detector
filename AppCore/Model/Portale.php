@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -240,7 +240,7 @@ class Portale extends ModelAbstract
             $portalId = null;
         }
 
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
 
         return $dbCampaigns->getCampaignsFromPortal($portalId, $withTests);
     }
@@ -256,7 +256,7 @@ class Portale extends ModelAbstract
      */
     public function getChildListPartly($campaigns = '', $withTests = true)
     {
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
 
         return $dbCampaigns->getCampaignsFromPortal($campaigns, $withTests);
     }
@@ -271,7 +271,7 @@ class Portale extends ModelAbstract
      */
     public function getChildListComplete($withTests = true)
     {
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
 
         return $dbCampaigns->getCampaignsFromPortal(null, $withTests);
     }
@@ -285,7 +285,7 @@ class Portale extends ModelAbstract
      */
     public function loadByCampaign($campaign = '')
     {
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
         $campaignId  = $dbCampaigns->getId($campaign);
 
         if (!$campaignId) {

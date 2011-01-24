@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -327,7 +327,7 @@ class Produkte extends ModelAbstract
             return null;
         }
 
-        $zinsModel = new \Credit\Core\Service\Zins();
+        $zinsModel = new \AppCore\Service\Zins();
         return $zinsModel->getZins($productId, $laufzeit, $betrag);
     }
 
@@ -344,7 +344,7 @@ class Produkte extends ModelAbstract
             return null;
         }
 
-        $urlModel = new \Credit\Core\Service\Url();
+        $urlModel = new \AppCore\Service\Url();
         return $urlModel->getUrl($productId, $caid, $teaser = false);
     }
 

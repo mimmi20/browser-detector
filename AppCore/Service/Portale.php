@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class Portale extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\Portale
+     * @return \\AppCore\\Service\Portale
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\Portale();
+        $this->_model = new \AppCore\Model\Portale();
     }
 
     /**
@@ -64,7 +64,7 @@ class Portale extends ServiceAbstract
             $portalId = null;
         }
 
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
         return $dbCampaigns->getCampaignsFromPortal($portalId, $withTests);
     }
 
@@ -78,7 +78,7 @@ class Portale extends ServiceAbstract
      */
     public function getChildListPartly($campaigns = '', $withTests = true)
     {
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
         return $dbCampaigns->getCampaignsFromPortal($campaigns, $withTests);
     }
 
@@ -90,7 +90,7 @@ class Portale extends ServiceAbstract
      */
     public function getChildListComplete($withTests = true)
     {
-        $dbCampaigns = new \Credit\Core\Service\Campaigns();
+        $dbCampaigns = new \AppCore\Service\Campaigns();
         return $dbCampaigns->getCampaignsFromPortal(null, $withTests);
     }
 
@@ -124,7 +124,7 @@ class Portale extends ServiceAbstract
         $return = $this->_model->getCached('portal')->checkPaid($value);
 
         if (!$return) {
-            $dbCampaigns = new \Credit\Core\Service\Campaigns();
+            $dbCampaigns = new \AppCore\Service\Campaigns();
             $return      = $dbCampaigns->checkCaid($value);
         }
 
@@ -224,7 +224,7 @@ class Portale extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\Portale
+     * @return \\AppCore\\Service\Portale
      */
     public function cleanCache()
     {

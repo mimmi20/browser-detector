@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller\Helper;
+namespace AppCore\Controller\Helper;
 
 /**
  * Service-Finder für alle Kredit-Services
@@ -32,7 +32,7 @@ class Service extends \Zend\Controller\Action\Helper\AbstractHelper
      * @param string $service The name of the Service
      * @param string $module  The name of the module
      *
-     * @return \Credit\Core\Service\Abstract The servics class
+     * @return \\AppCore\\Service\Abstract The servics class
      * @access public
      */
     public function getService($service, $module = 'kredit-core')
@@ -70,7 +70,7 @@ class Service extends \Zend\Controller\Action\Helper\AbstractHelper
      * @param string $service The name of the Service
      * @param string $module  The name of the module
      *
-     * @return \Credit\Core\Service\Abstract The servics class
+     * @return \\AppCore\\Service\Abstract The servics class
      * @access public
      */
     public function direct($service, $module = 'kredit-core')

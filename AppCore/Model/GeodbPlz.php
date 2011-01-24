@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -99,6 +99,6 @@ class GeodbPlz extends ModelAbstract
      */
     private function _decode($item, $entities = true)
     {
-        return \Credit\Core\Globals::decode($item, $entities);
+        return \AppCore\Globals::decode($item, $entities);
     }
 }

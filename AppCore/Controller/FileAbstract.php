@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller;
+namespace AppCore\Controller;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -160,7 +160,7 @@ abstract class FileAbstract extends ControllerAbstract
         $file = (string) $this->_helper->getParam(
             'file',
             '',
-            '_\\Credit\\Core\\Validator\\FileName'
+            '_\\AppCore\\Validator\\FileName'
         );
         var_dump($file);
 
@@ -185,7 +185,7 @@ abstract class FileAbstract extends ControllerAbstract
         $file = (string) $this->_helper->getParam(
             'file',
             '',
-            '_\\Credit\\Core\\Validator\\FileName'
+            '_\\AppCore\\Validator\\FileName'
         );
 
         //$this->_logger->info($file);

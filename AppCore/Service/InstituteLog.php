@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -27,11 +27,11 @@ class InstituteLog extends ServiceAbstract
     /**
      * Class Constructor
      *
-     * @return \Credit\Core\Service\InstituteLog
+     * @return \\AppCore\\Service\InstituteLog
      */
     public function __construct()
     {
-        $this->_model = new \Credit\Core\Model\InstituteLog();
+        $this->_model = new \AppCore\Model\InstituteLog();
     }
 
     /**
@@ -44,7 +44,7 @@ class InstituteLog extends ServiceAbstract
      */
     public function getInstituteColor($kiId)
     {
-        $institut = new \Credit\Core\Service\Institute();
+        $institut = new \AppCore\Service\Institute();
         return $institut->getColor($kiId);
     }
 
@@ -67,7 +67,7 @@ class InstituteLog extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \Credit\Core\Service\InstituteLog
+     * @return \\AppCore\\Service\InstituteLog
      */
     public function cleanCache()
     {

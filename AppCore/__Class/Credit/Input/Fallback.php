@@ -19,8 +19,8 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class \Credit\Core\Credit\Input_Fallback
-    extends \Credit\Core\Credit\Input_Abstract
+class \AppCore\Credit\Input\Fallback
+    extends \AppCore\Credit\Input\AbstractInput
 {
     private $_now = null;
 
@@ -32,7 +32,7 @@ class \Credit\Core\Credit\Input_Fallback
     /**
      * the class contructor
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     public function __construct()
     {
@@ -58,7 +58,7 @@ class \Credit\Core\Credit\Input_Fallback
             $isKredit = true;
         }
 
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $campaign      = $campaignModel->find($this->_caid)->current();
 
         /*
@@ -85,7 +85,7 @@ class \Credit\Core\Credit\Input_Fallback
     /**
      * creates the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _createTables()
     {
@@ -212,7 +212,7 @@ class \Credit\Core\Credit\Input_Fallback
      *
      * @param \Zend\Db\Table\Row $campaign
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _fillTables(\Zend\Db\Table\Row $campaign,
         \Zend\Db\Table\Row $defaultCampaign)
@@ -220,7 +220,7 @@ class \Credit\Core\Credit\Input_Fallback
         /*
          * create SQL to fill the tamporary table
          */
-        $model  = new \Credit\Core\Model\Institute();
+        $model  = new \AppCore\Model\Institute();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('i' => 'institute'),
@@ -400,7 +400,7 @@ class \Credit\Core\Credit\Input_Fallback
             )
         );
 
-        $campaignModel = new \Credit\Core\Model\Campaigns();
+        $campaignModel = new \AppCore\Model\Campaigns();
         $innerSelect   = $campaignModel->select()->setIntegrityCheck(false);
         $innerSelect->from(
             array('ca' => 'campaigns'),
@@ -447,7 +447,7 @@ class \Credit\Core\Credit\Input_Fallback
          * general campaign as fallback for the actual camapign
          */
 
-        $zinsModel  = new \Credit\Core\Model\Zins();
+        $zinsModel  = new \AppCore\Model\Zins();
         $zinsSelect = $zinsModel->select()->setIntegrityCheck(false);
         $zinsSelect->from(
             array('zx' => 'zins'),
@@ -538,7 +538,7 @@ class \Credit\Core\Credit\Input_Fallback
         /*
          * create SQL to fill the tamporary table
          */
-        $urlModel  = new \Credit\Core\Model\Url();
+        $urlModel  = new \AppCore\Model\Url();
         $urlSelect = $urlModel->select()->setIntegrityCheck(false);
         $urlSelect->from(
             array('u' => 'urls'),
@@ -633,7 +633,7 @@ class \Credit\Core\Credit\Input_Fallback
     /**
      * updates the urls in the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _updateRows($defaultCampaign)
     {
@@ -806,7 +806,7 @@ class \Credit\Core\Credit\Input_Fallback
      * deletes inactive products or products without Url from the
      * temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _deleteWithoutUrl()
     {
@@ -837,7 +837,7 @@ class \Credit\Core\Credit\Input_Fallback
     /**
      * updates the Teaser field in the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _updateTeasers()
     {
@@ -923,7 +923,7 @@ class \Credit\Core\Credit\Input_Fallback
     /**
      * updates the Teaser field in the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _updateTeasersInSingleRow(
         stdClass $row,

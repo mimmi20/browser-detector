@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -45,7 +45,7 @@ class Kunde extends ModelAbstract
      *
      * @param array $input the data about the customer
      *
-     * @return \Credit\Core\Model\Kunde
+     * @return \\AppCore\\Model\Kunde
      */
     public function mapInput(array $input, $customerId = null)
     {
@@ -73,7 +73,7 @@ class Kunde extends ModelAbstract
      *
      * @param array $input the data about the customer
      *
-     * @return \Credit\Core\Model\Kunde
+     * @return \\AppCore\\Model\Kunde
      */
     public function updateInput(array $input, $customerId = null)
     {
@@ -158,7 +158,7 @@ class Kunde extends ModelAbstract
 
         $berufsstatus = (int) $input['berufsgruppe'];
 
-        $beruf = \Credit\Core\Globals::getBerufsgruppe($berufsstatus);
+        $beruf = \AppCore\Globals::getBerufsgruppe($berufsstatus);
         $dataSet->BerufsBezeichnung   = $beruf;
 
         switch ($berufsstatus) {
@@ -286,7 +286,7 @@ class Kunde extends ModelAbstract
      * @param Kunde $kunde
      * @return Integer ID des Kunden
      */
-    public function existiertKunde(\Credit\Core\Model\Kunde $kunde)
+    public function existiertKunde(\\AppCore\\Model\Kunde $kunde)
     {
         $md = md5(
             strtolower($kunde->Nachname) . '_' .

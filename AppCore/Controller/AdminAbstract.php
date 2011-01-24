@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller;
+namespace AppCore\Controller;
 
 /**
  * Basis-Klasse für den Adminbereich mit Anmeldung
@@ -151,7 +151,7 @@ abstract class AdminAbstract extends ControllerAbstract
                     $this->_identity      = $identity;
                     $this->view->identity = $identity;
 
-                    $modelAcl    = new \Credit\Core\Model\Acl();
+                    $modelAcl    = new \AppCore\Model\Acl();
                     $basisRollen = $modelAcl->getBaseRolesByRoleName(
                         $user->Rolle
                     );
@@ -279,7 +279,7 @@ abstract class AdminAbstract extends ControllerAbstract
      */
     private function _setupRoles()
     {
-        $modelAcl = new \Credit\Core\Model\Acl();
+        $modelAcl = new \AppCore\Model\Acl();
 
         // Basis-Rollen
         $roles = $modelAcl->getRoles('Basis');
@@ -311,7 +311,7 @@ abstract class AdminAbstract extends ControllerAbstract
     private function _setupResources()
     {
         // Ressourcen
-        $modelAcl   = new \Credit\Core\Model\Acl();
+        $modelAcl   = new \AppCore\Model\Acl();
         $ressources = $modelAcl->getResourcesRoles();
 
         foreach ($ressources as $res) {
@@ -374,7 +374,7 @@ abstract class AdminAbstract extends ControllerAbstract
             $parents    = array();
             $resources  = array();
 
-            $resourcesModel = new \Credit\Core\Model\Resources();
+            $resourcesModel = new \AppCore\Model\Resources();
             /*
             $resArray       = $resourcesModel->fetchAll()->toArray();
             foreach ($resArray as $resource) {
@@ -383,7 +383,7 @@ abstract class AdminAbstract extends ControllerAbstract
             */
             $resources = $resourcesModel->getList();
 
-            $navigationModel = new \Credit\Core\Model\Navigation();
+            $navigationModel = new \AppCore\Model\Navigation();
             $navigationItems = $navigationModel->getNavigation($rollen);
 
             foreach ($navigationItems as $nav) {
@@ -435,7 +435,7 @@ abstract class AdminAbstract extends ControllerAbstract
     /**
      * sucht einen Datensatz oder erstellt einen neuen
      *
-     * @param \Credit\Core\Model\ModelAbstract $model das Datenmodell
+     * @param \\AppCore\\Model\ModelAbstract $model das Datenmodell
      * @param integer                           $rowNumber die ID des zu
      *                                          öffnenden Datensatzes
      *
@@ -443,7 +443,7 @@ abstract class AdminAbstract extends ControllerAbstract
      * @access protected
      */
     protected function getEditedRow(
-        \Credit\Core\Model\ModelAbstract $model, $rowNumber = 0)
+        \\AppCore\\Model\ModelAbstract $model, $rowNumber = 0)
     {
         $rowNumber = (int) $rowNumber;
 

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Input;
+namespace AppCore\Credit\Input;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -34,7 +34,7 @@ class Fallback extends InputAbstract
     /**
      * the class contructor
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     public function __construct()
     {
@@ -60,7 +60,7 @@ class Fallback extends InputAbstract
             $isKredit = true;
         }
 
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
         $campaign      = $campaignModel->find($this->_caid)->current();
 
         $this->_createTables();
@@ -88,7 +88,7 @@ class Fallback extends InputAbstract
     /**
      * creates the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _createTables()
     {
@@ -215,7 +215,7 @@ class Fallback extends InputAbstract
      *
      * @param \Zend\Db\Table\Row $campaign
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _fillTables(\Zend\Db\Table\Row $campaign,
         \Zend\Db\Table\Row $defaultCampaign)
@@ -223,7 +223,7 @@ class Fallback extends InputAbstract
         /*
          * create SQL to fill the tamporary table
          */
-        $model  = new \Credit\Core\Model\Institute();
+        $model  = new \AppCore\Model\Institute();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('i' => 'institute'),
@@ -403,7 +403,7 @@ class Fallback extends InputAbstract
             )
         );
 
-        $campaignModel = new \Credit\Core\Model\Campaigns();
+        $campaignModel = new \AppCore\Model\Campaigns();
         $innerSelect   = $campaignModel->select()->setIntegrityCheck(false);
         $innerSelect->from(
             array('ca' => 'campaigns'),
@@ -450,7 +450,7 @@ class Fallback extends InputAbstract
          * general campaign as fallback for the actual camapign
          */
 
-        $zinsModel  = new \Credit\Core\Model\Zins();
+        $zinsModel  = new \AppCore\Model\Zins();
         $zinsSelect = $zinsModel->select()->setIntegrityCheck(false);
         $zinsSelect->from(
             array('zx' => 'zins'),
@@ -542,7 +542,7 @@ class Fallback extends InputAbstract
         /*
          * create SQL to fill the tamporary table
          */
-        $urlModel  = new \Credit\Core\Model\Url();
+        $urlModel  = new \AppCore\Model\Url();
         $urlSelect = $urlModel->select()->setIntegrityCheck(false);
         $urlSelect->from(
             array('u' => 'urls'),
@@ -639,7 +639,7 @@ class Fallback extends InputAbstract
     /**
      * updates the urls in the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _updateRows($defaultCampaign)
     {
@@ -816,7 +816,7 @@ class Fallback extends InputAbstract
      * deletes inactive products or products without Url from the
      * temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _deleteWithoutUrl()
     {
@@ -853,7 +853,7 @@ class Fallback extends InputAbstract
     /**
      * updates the Teaser field in the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _updateTeasers()
     {
@@ -941,7 +941,7 @@ class Fallback extends InputAbstract
     /**
      * updates the Teaser field in the temporary Table
      *
-     * @return \Credit\Core\Credit\Input_Fallback
+     * @return \AppCore\Credit\Input\Fallback
      */
     private function _updateTeasersInSingleRow(
         \stdClass $row,

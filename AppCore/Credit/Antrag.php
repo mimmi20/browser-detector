@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit;
+namespace AppCore\Credit;
 
 /**
  * Klasse fuer Kredit-Antr�ge
@@ -206,7 +206,7 @@ class Antrag extends CreditAbstract
         $institut   = null;
         $sparteName = null;
 
-        $modelProdukte = new \Credit\Core\Service\Produkte();
+        $modelProdukte = new \AppCore\Service\Produkte();
         if (!$this->_product
             || !$modelProdukte->lade($this->_product, $institut, $sparteName)
         ) {
@@ -251,7 +251,7 @@ class Antrag extends CreditAbstract
             && array_key_exists($this->_zweck, $usages)
             && array_key_exists($laufzeit, $laufzeiten)
         ) {
-            $calculator = new KreditCore_Class_Credit_Calc();
+            $calculator = new \AppCore\Credit\Calc();
             $calculator
                 ->setCaid($this->_caid)
                 ->setSparte($this->_sparte)
@@ -266,7 +266,7 @@ class Antrag extends CreditAbstract
 
         if (!isset($data['kreditResult'][$key])
             || !($data['kreditResult'][$key]
-                instanceof \Credit\Core\Model\CalcResult)
+                instanceof \AppCore\Model\CalcResult)
         ) {
             $data['reason'] = 'recalculation failed';
 
@@ -298,7 +298,7 @@ class Antrag extends CreditAbstract
         }
 
         //used for mapping for portalservice
-        $data['berufsgruppe'] = \Credit\Core\Globals::getBerufsgruppe();
+        $data['berufsgruppe'] = \AppCore\Globals::getBerufsgruppe();
 
         $data['zins']    = $zins;
         $data['min']     = $data['kreditResult'][$key]->min;
@@ -318,7 +318,7 @@ class Antrag extends CreditAbstract
             $data['creditLine'] = $this->_requestData['creditLine'];
         } else {
             //get the type of credit line
-                    $campaignModel      = new \Credit\Core\Model\Campaigns();
+                    $campaignModel      = new \AppCore\Model\Campaigns();
             $data['creditLine'] = $campaignModel->getLine($this->_caid);
         }
 
@@ -401,7 +401,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the surname
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapSurname()
     {
@@ -417,7 +417,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the firstname
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapFirstname()
     {
@@ -433,7 +433,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the email
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapEmail()
     {
@@ -449,7 +449,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the gender
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapSex()
     {
@@ -465,7 +465,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the postal code
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapPostcode()
     {
@@ -481,7 +481,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the title
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapTitle()
     {
@@ -497,7 +497,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the city
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapCity()
     {
@@ -513,7 +513,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the street
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapStreet()
     {
@@ -529,7 +529,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the housenumber
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapHouseNumber()
     {
@@ -545,7 +545,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the phone number (without prefix)
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapPhone()
     {
@@ -561,7 +561,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the phone number prefix
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapPhonePrefix()
     {
@@ -577,7 +577,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the mobile number (without prefix)
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapMobile()
     {
@@ -593,7 +593,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the mobile number prefix
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapMobilePrefix()
     {
@@ -609,7 +609,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the birthday (day part)
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapBirthDay()
     {
@@ -625,7 +625,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the birthday (month part)
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapBirthMonth()
     {
@@ -641,7 +641,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the birthday (year part)
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapBirthYear()
     {
@@ -657,7 +657,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the family state
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapFamilyState()
     {
@@ -673,7 +673,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the country
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapCountry()
     {
@@ -689,7 +689,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the profession
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapProfession()
     {
@@ -705,7 +705,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the AGB
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapAgb()
     {
@@ -721,7 +721,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the contact wish
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapContact()
     {
@@ -737,7 +737,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the Schufa
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapSchufa()
     {
@@ -753,7 +753,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the first time info (Probezeit)
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapFirstTime()
     {
@@ -769,7 +769,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the three months info
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapThreeMonths()
     {
@@ -785,7 +785,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the income
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapIncome()
     {
@@ -799,7 +799,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the amount of people for the credit request
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapAnzahl()
     {
@@ -815,7 +815,7 @@ class Antrag extends CreditAbstract
     /**
      * maps the boni level for the credit request
      *
-     * @return KreditCore_Class_Credit_Antrag
+     * @return \AppCore\Credit\Antrag
      */
     private function _mapBoniLevel()
     {
@@ -841,7 +841,7 @@ class Antrag extends CreditAbstract
      */
     private function _getKrediteAntragSteps(array $data)
     {
-        $campaignModel = new \Credit\Core\Service\Campaigns();
+        $campaignModel = new \AppCore\Service\Campaigns();
 
         $pfad         = '';
         $data['type'] = 'clickout';
@@ -1228,7 +1228,7 @@ class Antrag extends CreditAbstract
         $dataToSend = $data;
         unset($dataToSend['kreditResult']);
 
-        $text = \Credit\Core\Globals::createXML(
+        $text = \AppCore\Globals::createXML(
             $requestData, $reportNr, $data['creditLine'], $this->_view
         );
 
@@ -1327,7 +1327,7 @@ class Antrag extends CreditAbstract
 
             try {
                 //store the request
-                $antrag     = new \Credit\Core\Model\LogCredits();
+                $antrag     = new \AppCore\Model\LogCredits();
                 $returnData = $antrag->getAntragData($postData);
             } catch (Exception $e) {
                 $this->_logger->err($e);
@@ -1353,11 +1353,11 @@ class Antrag extends CreditAbstract
     private function _getKrediteAntragData(array $data)
     {
         //TODO: sort the array, to be able to delete this asort
-        asort(\Credit\Core\Globals::$generalStates, SORT_STRING);
+        asort(\AppCore\Globals::$generalStates, SORT_STRING);
 
-        $data['staatsangeh']   = \Credit\Core\Globals::$generalStates;
-        $data['berufsgruppe']  = \Credit\Core\Globals::getProfession();
-        //$data['kn_brancheben'] = \Credit\Core\Globals::$generalBusiness;
+        $data['staatsangeh']   = \AppCore\Globals::$generalStates;
+        $data['berufsgruppe']  = \AppCore\Globals::getProfession();
+        //$data['kn_brancheben'] = \AppCore\Globals::$generalBusiness;
 
         return $data;
     }
@@ -1386,7 +1386,7 @@ class Antrag extends CreditAbstract
         $url = ''
     )
     {
-        return \Credit\Core\Globals::buildURL(
+        return \AppCore\Globals::buildURL(
             $controller, $action, $module, $postData, $int, $url
         );
     }
@@ -1399,7 +1399,7 @@ class Antrag extends CreditAbstract
      */
     private function _getLaufzeitList()
     {
-        $modelLaufzeit = new \Credit\Core\Service\Laufzeit();
+        $modelLaufzeit = new \AppCore\Service\Laufzeit();
 
         return $modelLaufzeit->getList($this->_sparte);
     }
@@ -1432,7 +1432,7 @@ class Antrag extends CreditAbstract
         }
 
         $ids           = $this->_loadPaid($requestData['caid']);
-        $portalService = new \Credit\Core\Service\Portale();
+        $portalService = new \AppCore\Service\Portale();
 
         $subject = ((isset($requestData['test']) && $requestData['test'])
                  ? '!!Test!! - ': '')
@@ -1446,7 +1446,7 @@ class Antrag extends CreditAbstract
         $bcc = array();
 
         try {
-            return \Credit\Core\Globals::sendMail(
+            return \AppCore\Globals::sendMail(
                 $email, $text, $html, $cc, $bcc, $subject
             );
         } catch (Exception $e) {
@@ -1555,7 +1555,7 @@ class Antrag extends CreditAbstract
      */
     private function _getUsageList()
     {
-        $usageModel = new \Credit\Core\Service\Usage();
+        $usageModel = new \AppCore\Service\Usage();
 
         return $usageModel->getList();
     }
@@ -1570,7 +1570,7 @@ class Antrag extends CreditAbstract
      */
     private function _getLaufzeitName($laufzeit = KREDIT_LAUFZEIT_DEFAULT)
     {
-        $modelLaufzeit = new \Credit\Core\Service\Laufzeit();
+        $modelLaufzeit = new \AppCore\Service\Laufzeit();
 
         return $modelLaufzeit->name($this->_sparte, $laufzeit);
     }
@@ -1585,7 +1585,7 @@ class Antrag extends CreditAbstract
      */
     private function _getUsage($usage = KREDIT_VERWENDUNGSZWECK_SONSTIGES)
     {
-        $usageModel = new \Credit\Core\Service\Usage();
+        $usageModel = new \AppCore\Service\Usage();
 
         return $usageModel->name($usage);
     }
@@ -2165,7 +2165,7 @@ class Antrag extends CreditAbstract
         $caid     = null;
         $hostName = null;
 
-        $campaignService = new \Credit\Core\Service\Campaigns();
+        $campaignService = new \AppCore\Service\Campaigns();
 
         $campaignService->loadCaid(
             $value,

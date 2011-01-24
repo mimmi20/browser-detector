@@ -20,8 +20,8 @@
  * @copyright 2007-2010 Unister GmbH
  * @deprecated
  */
-class \Credit\Core\Credit\Input_Sp
-    extends \Credit\Core\Credit\Input_Abstract
+class \\AppCore\\Credit\Input_Sp
+    extends \AppCore\Credit\Input\AbstractInput
 {
     /**
      * calculates the credit results using a stored procedure
@@ -34,7 +34,7 @@ class \Credit\Core\Credit\Input_Sp
         $sparte = $this->getSparte();
 
         if (!is_numeric($sparte)) {
-            $sparteModel = new \Credit\Core\Model\Sparten();
+            $sparteModel = new \AppCore\Model\Sparten();
             $sparte      = $sparteModel->getId($sparte);
         }
 

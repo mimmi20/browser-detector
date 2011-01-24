@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model;
+namespace AppCore\Model;
 
 /**
  * Model
@@ -58,7 +58,7 @@ class Bearbeiter
      * @param string $userName the User Name
      * @param string $password the password
      *
-     * @return \Credit\Core\Model\Bearbeiter
+     * @return \\AppCore\\Model\Bearbeiter
      * @access public
      */
     public function setCredentials($userName, $password)

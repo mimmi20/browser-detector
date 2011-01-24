@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller;
+namespace AppCore\Controller;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -198,7 +198,7 @@ abstract class CalcAbstract extends ControllerAbstract
 
         $this->_laufzeit = (int) $this->_helper->getParam(
             'laufzeit',
-            \Credit\Core\Globals::getDefaultLaufzeit($this->_sparte),
+            \AppCore\Globals::getDefaultLaufzeit($this->_sparte),
             'Int'
         );
 
@@ -355,7 +355,7 @@ abstract class CalcAbstract extends ControllerAbstract
 
         $noResult = (boolean) $this->_helper->getParam('noResult', 0, 'Int');
 
-        $modelCampaign = new \Credit\Core\Model\Campaigns();
+        $modelCampaign = new \AppCore\Model\Campaigns();
         $active        = $modelCampaign->checkCaid($this->_caid, false);
 
         if ($noResult || !$active) {
@@ -370,7 +370,7 @@ abstract class CalcAbstract extends ControllerAbstract
         }
 
         if ($this->_mode == 'xml' || $this->_mode == 'fallback') {
-            return \Credit\Core\Globals::serializeXml($ergebnis);
+            return \AppCore\Globals::serializeXml($ergebnis);
         }
 
         //var_dump($ergebnis);
@@ -455,7 +455,7 @@ abstract class CalcAbstract extends ControllerAbstract
         $onlyInstitut = $this->_helper->getParam('OnlyInstitut', '', 'Alpha');
         $onlyProduct  = $this->_helper->getParam('OnlyProduct', 0);
 
-        $calculator = new KreditCore_Class_Credit_Calc();
+        $calculator = new \AppCore\Credit\Calc();
         $calculator
             ->setView($this->view)
             ->setCaid($this->_caid)
@@ -584,7 +584,7 @@ abstract class CalcAbstract extends ControllerAbstract
         }
 
         $antragText   = '';
-        $productModel = new \Credit\Core\Service\Produkte();
+        $productModel = new \AppCore\Service\Produkte();
 
         $ok = $productModel->lade(
             $productId, $this->_institut, $this->_spartenName
@@ -604,7 +604,7 @@ abstract class CalcAbstract extends ControllerAbstract
         $this->view->mode       = strtolower($this->_mode);
 
         $this->_institut = strtolower($this->_institut);
-        $instituteModel  = new \Credit\Core\Model\Institute();
+        $instituteModel  = new \AppCore\Model\Institute();
         $instituteName   = $instituteModel->getName(
             $instituteModel->getId($this->_institut)
         );
@@ -636,7 +636,7 @@ abstract class CalcAbstract extends ControllerAbstract
         $ip = $this->_helper->getParam('IP', '0.0.0.0', 'Ip');
 
         try {
-            $antragGenerator = new KreditCore_Class_Credit_Antrag();
+            $antragGenerator = new \AppCore\Credit\Antrag();
 
             $antragGenerator
                 ->setCaid($this->_caid)
@@ -717,7 +717,7 @@ abstract class CalcAbstract extends ControllerAbstract
             $this->view->nachname = $data['nachname'];
         }
 
-        $this->view->berufsgruppe = \Credit\Core\Globals::getProfession();
+        $this->view->berufsgruppe = \AppCore\Globals::getProfession();
 
         $profession    = (int) $this->_helper->getParam(
             'kn1_berufsgruppe', KREDIT_BERUFSGRUPPE_KEINE, 'Int'
@@ -727,15 +727,15 @@ abstract class CalcAbstract extends ControllerAbstract
         );
         $this->view->selectedProfession    = $profession;
         $this->view->selectedProfessionTwo = $professionTwo;
-        $this->view->branche       = \Credit\Core\Globals::$generalBranches;
-        $this->view->familyState   = \Credit\Core\Globals::$generalFamily;
-        $this->view->nationality   = \Credit\Core\Globals::$generalStates;
-        $this->view->monate        = \Credit\Core\Globals::$generalMonths;
-        $this->view->wohneigentum  = \Credit\Core\Globals::$generalWohneigentum;
-        $this->view->wohnsituation = \Credit\Core\Globals::$generalWohnsituation;
-        $this->view->wohnhaftSeitM = \Credit\Core\Globals::$generalMonths;
-        $this->view->ecCards       = \Credit\Core\Globals::$generalEcCards;
-        $this->view->wohnhaftSeitJ = \Credit\Core\Globals::wohnhaftSeitJ();
+        $this->view->branche       = \AppCore\Globals::$generalBranches;
+        $this->view->familyState   = \AppCore\Globals::$generalFamily;
+        $this->view->nationality   = \AppCore\Globals::$generalStates;
+        $this->view->monate        = \AppCore\Globals::$generalMonths;
+        $this->view->wohneigentum  = \AppCore\Globals::$generalWohneigentum;
+        $this->view->wohnsituation = \AppCore\Globals::$generalWohnsituation;
+        $this->view->wohnhaftSeitM = \AppCore\Globals::$generalMonths;
+        $this->view->ecCards       = \AppCore\Globals::$generalEcCards;
+        $this->view->wohnhaftSeitJ = \AppCore\Globals::wohnhaftSeitJ();
 
         if (isset($data['kreditResult'][$key])) {
             $this->view->antragData = $data['kreditResult'][$key];
@@ -797,7 +797,7 @@ abstract class CalcAbstract extends ControllerAbstract
         $requestId = (int) $this->_helper->getParam('requestId');
         $type      = ((isset($data['type'])) ? $data['type'] : 'click');
 
-        \Credit\Core\Globals::log(
+        \AppCore\Globals::log(
             $requestId,
             $productId,
             $this->_institut,
@@ -834,7 +834,7 @@ abstract class CalcAbstract extends ControllerAbstract
         $this->view->product    = (int) $this->_helper->getParam('product', 0, 'Int');
         $this->view->mode       = strtolower($this->_mode);
 
-        $infoObj = new KreditCore_Class_Credit_Info();
+        $infoObj = new \AppCore\Credit\Info();
         $infoObj->setLaufzeit($this->_laufzeit);
         $infoObj->setMode($this->_mode);
         if (is_object($this->view)) {
@@ -881,13 +881,13 @@ abstract class CalcAbstract extends ControllerAbstract
 
         switch ($field) {
             case 'strasse':
-                $strassenValidator = new \Credit\Core\Class\Validate\Alpha();
+                $strassenValidator = new \\AppCore\\Class\Validate\Alpha();
                 $validator[]       = $strassenValidator;
                 break;
             case 'plz':
                 // Break intentionally omitted
             case 'PLZ':
-                $plzValidator = new \Credit\Core\Class\Validate\Plz();
+                $plzValidator = new \\AppCore\\Class\Validate\Plz();
                 $validator[]  = 'Int';
                 $validator[]  = $plzValidator;
                 break;
@@ -903,18 +903,18 @@ abstract class CalcAbstract extends ControllerAbstract
                 $validator[] = 'Int';
                 break;
             case 'ort':
-                $ortValidator = new \Credit\Core\Class\Validate\Ort();
+                $ortValidator = new \\AppCore\\Class\Validate\Ort();
                 $validator[]  = $ortValidator;
                 break;
             case 'email':
                 $validator[] = 'EmailAddress';
                 break;
             case 'gebdatum':
-                $dateValidat = new \Credit\Core\Class\Validate\Birthday('d.m.Y');
+                $dateValidat = new \\AppCore\\Class\Validate\Birthday('d.m.Y');
                 $validator[] = $dateValidat;
                 break;
             case 'besch_bis':
-                $dateValidator = new \Credit\Core\Class\Validate\Date('d.m.Y');
+                $dateValidator = new \\AppCore\\Class\Validate\Date('d.m.Y');
                 $validator[]   = $dateValidator;
                 break;
             default:
@@ -942,7 +942,7 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function getLaufzeitList()
     {
-        $modelLaufzeit = new \Credit\Core\Model\Laufzeit();
+        $modelLaufzeit = new \AppCore\Model\Laufzeit();
 
         return $modelLaufzeit->getList($this->_sparte);
     }
@@ -955,7 +955,7 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function getUsageList()
     {
-        $usageModel = new \Credit\Core\Model\Usage();
+        $usageModel = new \AppCore\Model\Usage();
 
         return $usageModel->getList();
     }
@@ -970,7 +970,7 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function getLaufzeitName($laufzeit = KREDIT_LAUFZEIT_DEFAULT)
     {
-        $modelLaufzeit = new \Credit\Core\Model\Laufzeit();
+        $modelLaufzeit = new \AppCore\Model\Laufzeit();
 
         return $modelLaufzeit->name($this->_sparte, $laufzeit);
     }
@@ -985,7 +985,7 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function getUsage($usage = KREDIT_VERWENDUNGSZWECK_SONSTIGES)
     {
-        $usageModel = new \Credit\Core\Model\Usage();
+        $usageModel = new \AppCore\Model\Usage();
 
         return $usageModel->name($usage);
     }

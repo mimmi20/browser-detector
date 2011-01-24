@@ -1,9 +1,9 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Model\Cache;
+namespace AppCore\Model\Cache;
 
 /**
- * \Credit\Core\Model\Cache_Abstract
+ * \\AppCore\\Model\Cache_Abstract
  *
  * Cache proxy for models, proxies calls to the model to
  * the Zend_Cache class cache.
@@ -16,7 +16,7 @@ namespace Credit\Core\Model\Cache;
  */
 
 /**
- * \Credit\Core\Model\Cache_Abstract
+ * \\AppCore\\Model\Cache_Abstract
  *
  * Cache proxy for models, proxies calls to the model to
  * the Zend_Cache class cache.
@@ -59,7 +59,7 @@ abstract class CacheAbstract
     protected $_backendOptions = array();
 
     /**
-     * @var \Credit\Core\Model\Abstract
+     * @var \\AppCore\\Model\Abstract
      */
     protected $_model;
 
@@ -76,11 +76,11 @@ abstract class CacheAbstract
     /**
      * Constructor
      *
-     * @param \Credit\Core\Model\ModelAbstract $model
+     * @param \\AppCore\\Model\ModelAbstract $model
      * @param array|Zend_Config $options
      */
     public function __construct(
-        \Credit\Core\Model\ModelAbstract $model,
+        \\AppCore\\Model\ModelAbstract $model,
         $options = null,
         $tagged = null)
     {
@@ -103,7 +103,7 @@ abstract class CacheAbstract
     * Set options using setter methods
     *
     * @param array $options
-    * @return \Credit\Core\Model\Abstract
+    * @return \\AppCore\\Model\Abstract
     */
     public function setOptions(array $options)
     {

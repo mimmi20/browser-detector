@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Controller;
+namespace AppCore\Controller;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien

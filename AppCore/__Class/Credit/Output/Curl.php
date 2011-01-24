@@ -19,14 +19,14 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class KreditCore_Class_Credit_Output_Curl
-    extends KreditCore_Class_Credit_Output_Abstract
+class \AppCore\Credit\Output_Curl
+    extends \AppCore\Credit\Output\AbstractOutput
 {
     /**
      * @return void
      * @access public
      */
-    public function getOfferLink(\Credit\Core\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Model\CalcResult $result)
     {
         return $this->setOfferLinks(
             $result, $this->_baseUrl
@@ -37,7 +37,7 @@ class KreditCore_Class_Credit_Output_Curl
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -45,7 +45,7 @@ class KreditCore_Class_Credit_Output_Curl
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl

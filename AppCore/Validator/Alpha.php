@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Validator;
+namespace AppCore\Validator;
 
 /**
  * geänderter Validator für Strings ohne Ziffern

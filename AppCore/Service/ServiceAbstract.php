@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Service;
+namespace AppCore\Service;
 
 /**
  * Service
@@ -26,12 +26,12 @@ namespace Credit\Core\Service;
 abstract class ServiceAbstract
 {
     /**
-     * @var \Credit\Core\Model\ModelAbstract
+     * @var \\AppCore\\Model\ModelAbstract
      */
     protected $_model = null;
 
     /**
-     * @var \Credit\Core\Model\Cache_Abstract
+     * @var \\AppCore\\Model\Cache_Abstract
      */
     protected $_cache = null;
 

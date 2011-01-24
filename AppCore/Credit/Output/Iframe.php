@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace Credit\Core\Credit\Output;
+namespace AppCore\Credit\Output;
 
 /**
  * Controller-Klasse zum Ausliefern von Javascript-Dateien
@@ -25,9 +25,9 @@ namespace Credit\Core\Credit\Output;
 class Iframe extends OutputAbstract
 {
     /**
-     * @return KreditCore_Class_Credit_Output_Iframe
+     * @return \AppCore\Credit\Output_Iframe
      */
-    public function getOfferLink(\Credit\Core\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Model\CalcResult $result)
     {
         $int = ($this->_urlDirAntrag == \Zend\Registry::get('_home'));
 
@@ -58,13 +58,13 @@ class Iframe extends OutputAbstract
         $antragParams = $this->getOfferParams();
 
         if ($this->_isinternal) {
-            $offerLnk = \Credit\Core\Globals::postToGetUrl(
+            $offerLnk = \AppCore\Globals::postToGetUrl(
                 $offerLnk, $antragParams, $int
             );
 
             if ($offerLnkTeaser != '') {
                 $antragParams   = $antragParams;
-                $offerLnkTeaser = \Credit\Core\Globals::postToGetUrl(
+                $offerLnkTeaser = \AppCore\Globals::postToGetUrl(
                     $offerLnkTeaser, $antragParams, $int
                 );
             }
@@ -79,7 +79,7 @@ class Iframe extends OutputAbstract
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \Credit\Core\Model\CalcResult $result
+     * @param \AppCore\Model\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -87,7 +87,7 @@ class Iframe extends OutputAbstract
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \Credit\Core\Model\CalcResult $result,
+        \AppCore\Model\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl . 'iframe/kredite/function/antrag'

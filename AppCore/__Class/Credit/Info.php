@@ -19,7 +19,7 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class KreditCore_Class_Credit_Info extends KreditCore_Class_CreditAbstract
+class KreditCore_Class_Credit_Info extends \AppCore\Credit\CreditAbstract
 {
     /**
      * @var    \Zend\View\View object
@@ -70,7 +70,7 @@ class KreditCore_Class_Credit_Info extends KreditCore_Class_CreditAbstract
 
         $institut = null;
 
-        $modelProdukte = new \Credit\Core\Model\Produkte();
+        $modelProdukte = new \AppCore\Model\Produkte();
         if (!$this->_product
             || !$modelProdukte->lade($this->_product, $institut, $this->_sparte)
         ) {
