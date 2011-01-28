@@ -284,7 +284,7 @@ class Negotiator
         );
         $ctry = $this->_getMatch(
             (is_array($countries) ? $countries : array()), 
-            @$this->_country[$lang], 
+            (is_array($this->_country[$lang]) ? $this->_country[$lang] : array()), 
             $this->_defaultCountry
         );
         return strtolower($lang) . ($ctry ? '_' . strtoupper($ctry) : '');
