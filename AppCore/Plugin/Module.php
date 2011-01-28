@@ -25,37 +25,6 @@ namespace AppCore\Plugin;
 class Module extends \Zend\Controller\Plugin\AbstractPlugin
 {
     /**
-     * function called before routing the request
-     *
-     * @param \Zend\Controller\Request\AbstractRequest $request the Request
-     *
-     * @return void
-     * @access public
-     */
-    public function routeStartup(\Zend\Controller\Request\AbstractRequest $request)
-    {
-        $front = \Zend\Controller\Front::getInstance();
-
-        $router = $front->getRouter();
-        
-        /*
-        $config = new \Zend\Config\Ini(APPLICATION_PATH . DS . 'configs' . DS . 'routes.ini');
-        $router = new \Zend\Controller\Router\Rewrite();
-        $router->addConfig($config, 'routes');
-        */
-        
-        $restRoute = new \Zend\Rest\Route(
-            $front, 
-            array(), 
-            array(
-                'default' => array('index', 'credits', 'js', 'css', 'kampagne')
-            )
-        );
-        
-        $router->addRoute('default', $restRoute);
-    }
-
-    /**
      * function called before dispatching
      *
      * TODO: in Module_Controller_Plugin_ModuleInit verschieben

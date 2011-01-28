@@ -62,6 +62,8 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     {
         parent::__construct();
         
+        $isAjax = $this->getRequest()->isXmlHTTPRequest();
+        
         $this->setContexts(array(
             'json' => array(
                 'suffix'    => 'json',
@@ -76,18 +78,47 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
                 'headers'   => array('Content-Type' => 'application/xml')
             ),
             'xhtml'  => array(
-                'suffix'    => ($this->getRequest()->isXmlHTTPRequest() ? 'xajax' : 'xhtml'),
+                'suffix'    => ($isAjax ? 'xajax' : 'xhtml'),
                 'headers'   => array('Content-Type' => 'application/xhtml+xml'),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
-            'html'  => array(
-                'suffix'    => ($this->getRequest()->isXmlHTTPRequest() ? 'ajax' : 'html'),
+            'xhtmlmp'  => array(
+                'suffix'    => ($isAjax ? 'xajaxmp' : 'xhtmlmp'),
                 'headers'   => array('Content-Type' => 'text/html'),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
+            ),
+            'html'  => array(
+                'suffix'    => ($isAjax ? 'ajax' : 'html'),
+                'headers'   => array('Content-Type' => 'text/html'),
+                'callbacks' => array(
+                    'post' => 'postHtmlContext'
+                )
+            ),
+            'chtml'  => array(
+                'suffix'    => ($isAjax ? 'cajax' : 'chtml'),
+                'headers'   => array('Content-Type' => 'text/html'),
+                'callbacks' => array(
+                    'post' => 'postHtmlContext'
+                )
+            ),
+            'wap'  => array(
+                'suffix'    => 'wap',
+                'headers'   => array('Content-Type' => 'text/html'),
+                'callbacks' => array(
+                    'post' => 'postHtmlContext'
+                )
+            ),
+            'rss'  => array(
+                'suffix'    => 'rss',
+                'headers'   => array('Content-Type' => 'text/html')
+            ),
+            'atom'  => array(
+                'suffix'    => 'atom',
+                'headers'   => array('Content-Type' => 'text/html')
             ),
             'css'  => array(
                 'suffix'    => 'css',
@@ -101,7 +132,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     }
 
     /**
-     * JSON post processing
+     * HTML post processing
      *
      * JSON serialize view variables to response body
      *
@@ -129,14 +160,12 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
                 $headerPlace = $this->_headers[$headerName]['placement'];
             }
             
-            //$headerValue = (($headerType == 'http-equiv') ? strtolower($header['value']) : $header['value']);
-            
             $view->headMeta($header['value'], $headerName, $headerType, array(), $headerPlace);
         }
     }
 
     /**
-     * Initialize AJAX context switching
+     * Initialize Negogiation context switching
      *
      * Checks for XHR requests; if detected, attempts to perform context switch.
      *
@@ -169,7 +198,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         \Zend\Registry::set('\\Zend\\Locale\\Locale', $oLocale);
         
         // detect the content type and search a matching context
-        $type = $negotiator->getTypeMatch(array('application/xhtml+xml', 'application/xml', 'text/html', 'text/xml', 'text/javascript', 'text/css'));
+        $type = $negotiator->getTypeMatch(array(/*'application/xhtml+xml', 'application/xml',*/ 'text/html', 'text/xml', 'text/javascript', 'text/css'));
         
         $contexts = $this->getContexts();
         //var_dump($format, $contexts[$format]);
