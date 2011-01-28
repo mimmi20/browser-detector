@@ -47,7 +47,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request = $this->getRequest();
 
         $this->_requestData = $request->getParams();
-        $browscap           = new \\AppCore\\Browscap();
+        $browscap           = new \AppCore\Browscap();
 
         $userAgent = $this->_getUserAgent();
 

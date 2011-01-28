@@ -174,8 +174,10 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
      */
     public function initContext($format = null)
     {
+        $defaultLocale = \Zend\Locale\Locale::getDefault();
+        
         // nintialize the Negotiator object
-        $negotiator = new \I18N\Negotiator('de', 'iso-8859-1', 'de', 'application/xhtml+xml');
+        $negotiator = new \I18N\Negotiator($defaultLocale, 'utf-8', 'de', 'application/xhtml+xml');
         
         // detect the encoding and set it to the registry and the view
         $encoding = $negotiator->getEncodingMatch(array('utf-8', 'iso-8859-1', 'utf-16'));
@@ -217,11 +219,11 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         
         if (in_array($format, array('html', 'ajax'))) {
             $view->doctype()->setDoctype($this->_useHtmlFive ? \Zend\View\Helper\Doctype::HTML5 : \Zend\View\Helper\Doctype::HTML4_STRICT);
-        } elseif (in_array($format, array('xhtml', 'xajax'))) {
+        } elseif (in_array($format, array('xhtml', 'xajax', 'xhtmlmp', 'xajaxmp'))) {
             $view->doctype()->setDoctype($this->_useHtmlFive ? \Zend\View\Helper\Doctype::XHTML5 : \Zend\View\Helper\Doctype::XHTML1_STRICT);
         }
         
-        if (in_array($format, array('html', 'xhtml'))) {
+        if (in_array($format, array('html', 'xhtml', 'xhtmlmp'))) {
             $layout->enableLayout();
         } else {
             $layout->disableLayout();

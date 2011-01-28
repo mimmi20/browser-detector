@@ -295,8 +295,8 @@ class Bootstrap extends \Zend\Application\Bootstrap
         $front = $this->getResource('FrontController');
         
         $pluginsToRegister = array(
-            123 => '\\Credit\\Core\\Plugin\\Module',
-            126 => '\\Credit\\Core\\Plugin\\Cache'
+            123 => '\\AppCore\\Plugin\\Module',
+            126 => '\\AppCore\\Plugin\\Cache'
         );
 
         foreach ($pluginsToRegister as $stackIndex => $plugin) {
@@ -591,7 +591,7 @@ class Bootstrap extends \Zend\Application\Bootstrap
         //register module specific view helper for the core module
         $view->addHelperPath(
             LIB_PATH . DS . 'Credit' . DS . 'Core' . DS . 'View' . DS .
-            'Helper' . DS, '\\Credit\\Core\\View\\Helper'
+            'Helper' . DS, '\\AppCore\\View\\Helper'
         );
 
         //register module specific view helper for the core module
@@ -605,7 +605,7 @@ class Bootstrap extends \Zend\Application\Bootstrap
         //register unspecific action helper
         \Zend\Controller\Action\HelperBroker::addPath(
             LIB_PATH . DS . 'Credit' . DS . 'Core' . DS . 'Controller' . DS .
-            'Helper' . DS, '\\Credit\\Core\\Controller\\Helper'
+            'Helper' . DS, '\\AppCore\\Controller\\Helper'
         );
 
         // Add it to the ViewRenderer
