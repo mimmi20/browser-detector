@@ -122,54 +122,13 @@ class Negotiator
      * ZE2 Constructor
      * @ignore
      */
-    public function __construct($defaultLanguage = 'en', $defaultEncoding = 'iso-8859-1', $defaultCountry = '', $defaultType = 'text/html')
+    public function __construct($defaultEncoding = 'iso-8859-1', $defaultType = 'text/html')
     {
-        $this->_defaultCountry  = $defaultCountry;
-        $this->_defaultLanguage = $defaultLanguage;
         $this->_defaultEncoding = $defaultEncoding;
         $this->_defaultType     = $defaultType;
         
-        $this->_negotiateLanguage();
         $this->_negotiateEncoding();
         $this->_negotiateType();
-    }
-    
-    /**
-     * Negotiate Language
-     *
-     * @return  void
-     */
-    private function _negotiateLanguage()
-    {
-        if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
-            return;
-        }
-        foreach(explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']) as $lang) {
-            // Cut off any q-value that might come after a semi-colon
-            if ($pos = strpos($lang, ';')) {
-                $lang = trim(substr($lang, 0, $pos));
-            }
-            if (strstr($lang, '-')) {
-                list($pri, $sub) = explode('-', $lang);
-                if ($pri == 'i') {
-                    /**
-                    * Language not listed in ISO 639 that are not variants
-                    * of any listed language, which can be registerd with the
-                    * i-prefix, such as i-cherokee
-                    */
-                    $lang = $sub;
-                } else {
-                    $lang = $pri;
-                    $this->singleI18NCountry();
-                    if ($this->I18NCountry->isValidCode($sub)) {
-                        $this->_country[$lang][] = strtoupper($sub);
-                    } else { 
-                        $this->_langVariation[$lang][] = $sub;
-                    }
-                }
-            }
-            $this->_acceptLanguage[] = $lang;
-        }
     }
     
     /**
@@ -190,7 +149,7 @@ class Negotiator
     }
     
     /**
-     * Negotiate Encoding
+     * Negotiate the Content Type
      *
      * @return  void
      */
@@ -205,33 +164,6 @@ class Negotiator
             }
         }
         //var_dump($this->_acceptType);
-    }
-    
-    /**
-     * Find Country Match
-     *
-     * @return  array
-     * @param   string  $lang
-     * @param   array   $countries
-     */
-    public function getCountryMatch($lang, $countries = null)
-    {
-        return $this->_getMatch(
-            (is_array($countries) ? $countries : array()),
-            @$this->_country[$lang],
-            $this->_defaultCountry
-        );
-    }
- 
-    /**
-     * Return variant info for passed parameter.
-     *
-     * @return  string
-     * @param   string  $lang
-     */
-    public function getVariantInfo($lang)
-    {
-        return isset($this->_langVariation[$lang]) ? $this->_langVariation[$lang] : null;
     }
 
     /**
@@ -249,45 +181,6 @@ class Negotiator
         );
         
         return strtolower($match);
-    }
-
-    /**
-     * Find Language match
-     *
-     * @return  string
-     * @param   array   $langs
-     */
-    public function getLanguageMatch($langs = null)
-    {
-        $match = $this->_getMatch(
-            (is_array($langs) ? $langs : array()), 
-            $this->_acceptLanguage,
-            $this->_defaultLanguage
-        );
-        
-        return strtolower($match);
-    }
-    
-    /**
-     * Find locale match
-     *
-     * @return  string
-     * @param   array   $langs
-     * @param   array   $countries
-     */
-    public function getLocaleMatch($langs = null, $countries = null)
-    {
-        $lang = $this->_getMatch(
-            (is_array($langs) ? $langs : array()), 
-            $this->_acceptLanguage, 
-            $this->_defaultLanguage
-        );
-        $ctry = $this->_getMatch(
-            (is_array($countries) ? $countries : array()), 
-            (is_array($this->_country[$lang]) ? $this->_country[$lang] : array()), 
-            $this->_defaultCountry
-        );
-        return strtolower($lang) . ($ctry ? '_' . strtoupper($ctry) : '');
     }
 
     /**
@@ -329,61 +222,5 @@ class Negotiator
             return $result;
         }
         return $default;
-    }
-    
-    /**
-     * Find Country name for country code passed 
-     * 
-     * @return  void
-     * @param   string  $code   country code
-     */
-    private function getCountryName($code)
-    {
-        $this->singleI18NCountry();
-        return $this->I18NCountry->getName($code);
-    }
-
-    /**
-     * Find Country name for country code passed 
-     * 
-     * @return  void
-     * @param   string      $code   language code
-     */
-    private function getLanguageName($code)
-    {
-        $this->singleI18NLanguage();
-        return $this->I18NLang->getName($code);
-    }
-
-    /**
-     * Create the Language helper object
-     * 
-     * @return  object
-     */
-    private function singleI18NLanguage()
-    {
-        if (!isset($this->I18NLang)) {
-            $this->I18NLang = new Language(
-                $this->_defaultLanguage, 
-                $this->_defaultEncoding
-            );
-        }
-        return $this->I18NLang;
-    }
-
-    /**
-     * Create the Country helper object
-     * 
-     * @return  object
-     */
-    public function singleI18NCountry()
-    {
-        if (!isset($this->I18NCountry)) {
-            $this->I18NCountry = new Country(
-                $this->_defaultLanguage,
-                $this->_defaultEncoding
-            );
-        }
-        return $this->I18NCountry;
     }
 }
