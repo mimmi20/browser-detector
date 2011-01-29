@@ -119,10 +119,16 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
     public function init()
     {
         $this->initView();
+        
+        $this->_config = new \Zend\Config\Config($this->getInvokeArg('bootstrap')->getOptions());
 
         $this->_logger     = \Zend\Registry::get('log');
         $this->_redirector = $this->getHelper('Redirector');
         $this->_context    = $this->getHelper('contentNegogation');
+        $this->_context->setDefaultEncoding($this->_config->negogation->encoding->default);
+        $this->_context->setDefaultType($this->_config->negogation->contenttype->default);
+        $this->_context->setMatchingEncoding($this->_config->negogation->encoding->match);
+        $this->_context->setMatchingType($this->_config->negogation->contenttype->match);
     }
 
     /**
