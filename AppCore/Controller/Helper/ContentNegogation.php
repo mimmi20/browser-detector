@@ -58,9 +58,9 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($options = null)
     {
-        parent::__construct();
+        parent::__construct($options);
         
         $isAjax = $this->getRequest()->isXmlHTTPRequest();
         
