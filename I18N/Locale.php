@@ -463,7 +463,7 @@ class Locale
     {
         $locale = I18N::lastLocale(0, true);
         if (isset($locale)) {
-            $dir = dirname(__FILE__);
+            $dir = __DIR__;
             foreach (array($locale['language'], $locale['locale']) as $lc) {
                 if (is_file($dir . '/Locale/' . $lc . '.php')) {
                     include $dir . '/Locale/' . $lc . '.php';
