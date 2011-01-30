@@ -9,11 +9,11 @@
  * @version    $Id$
  */
 
-require_once(dirname(__FILE__).'/Tracking/Exception.php');
-require_once(dirname(__FILE__).'/Tracking/Item/Interface.php');
-require_once(dirname(__FILE__).'/Tracking/Save/Interface.php');
-require_once(dirname(__FILE__).'/Tracking/Item/Track.php');
-require_once(dirname(__FILE__).'/Tracking/Item/Profile.php');
+require_once(__DIR__.'/Tracking/Exception.php');
+require_once(__DIR__.'/Tracking/Item/Interface.php');
+require_once(__DIR__.'/Tracking/Save/Interface.php');
+require_once(__DIR__.'/Tracking/Item/Track.php');
+require_once(__DIR__.'/Tracking/Item/Profile.php');
 
 /**
  * Unister Tracking
