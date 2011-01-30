@@ -81,7 +81,7 @@ class RequestLogger extends \Zend\Controller\Action\Helper\AbstractHelper
             'isTest'    => (int) $isTest
         );
 
-        $requestModel = new \AppCore\Model\Request();
+        $requestModel = new \AppCore\Model\Requests();
         $requestId    = $requestModel->insert($daten);
 
         $request->setParam('requestId', (int) $requestId);

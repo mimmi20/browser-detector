@@ -22,14 +22,14 @@ namespace AppCore\Model;
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class Request extends ModelAbstract
+class Requests extends ModelAbstract
 {
     /**
      * Table name
      *
      * @var String
      */
-    protected $_name = 'request';
+    protected $_name = 'requests';
 
     /**
      * Primary key

@@ -160,8 +160,19 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 
         //set headers
         $this->_helper->header->setDefaultHeaders();
+
+        $this->_helper->agentLogger();
+        $this->_helper->requestLogger();
         
         $this->_context->initContext($this->_helper->getParam('format', null));
+
+        //set headers
+        if ($this->_response->canSendHeaders()) {
+            $this->_response->setHeader('robots', 'noindex,follow', true);
+            $this->_response->setHeader(
+                'Cache-Control', 'public, max-age=3600', true
+            );
+        }
     }
 
     /**

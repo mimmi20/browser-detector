@@ -62,7 +62,7 @@ class Db extends \Zend\Log\Writer\AbstractWriter
      * @return void
      */
     protected function _write($event)
-    {
+    {//var_dump($event);exit;
         if (!isset($event['message'])
             || $event['message'] == ''
         ) {

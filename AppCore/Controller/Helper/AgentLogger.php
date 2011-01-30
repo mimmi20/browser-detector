@@ -56,6 +56,10 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request->setParam('agent', null);
 
         $browser = $browscap->getBrowser($userAgent, false);
+        var_dump($browser);
+        
+        $x = new \TeraWurfl\TeraWurfl();
+        var_dump($x->getDeviceCapabilitiesFromAgent($userAgent));
 
         if ('Default Browser' == $browser->Browser) {
             $campaignService = new \AppCore\Service\Campaigns();
@@ -200,9 +204,8 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
              * detect the servers user agent, in js-mode this is the clients
              * user agent, in the other modes this is set by the portal
              */
-            $userAgent = ((isset($_SERVER['HTTP_USER_AGENT']))
-                       ? strip_tags(trim((string) $_SERVER['HTTP_USER_AGENT']))
-                       : '');
+            $support   = new \TeraWurfl\Support();
+            $userAgent = $support->getUserAgent();
         }
 
         return $userAgent;
