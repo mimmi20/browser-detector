@@ -501,7 +501,7 @@ html { height: 100%; }
     public function testParseFile()
     {
         // parsing a file contents
-        $fn  = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stylesheet.css';
+        $fn  = __DIR__ . DIRECTORY_SEPARATOR . 'stylesheet.css';
         $e   = $this->css->parseFile($fn);
 
         $gs  = array('body' =>
@@ -584,7 +584,7 @@ p, div#black { color: black; }
 div{ color: green; }
 p { margin-left: 3em; }
 ';
-        $fn       = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stylesheet.css';
+        $fn       = __DIR__ . DIRECTORY_SEPARATOR . 'stylesheet.css';
         $css_data = array($fn, $strcss);
 
         $e   = $this->css->parseData($css_data);
@@ -676,7 +676,7 @@ p, div#black { color: black; }
 div{ color: green; }
 p { margin-left: 3em; }
 ';
-        $fn       = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stylesheet.css';
+        $fn       = __DIR__ . DIRECTORY_SEPARATOR . 'stylesheet.css';
         $css_data = array($fn, $strcss);
         $messages = array();
 
@@ -792,7 +792,7 @@ p { margin-left: 3em; }
         $str      = $this->css->toString();
         $this->assertSame($str, $exp1line, 'online string output does not match');
 
-        $tmpFile = tempnam(dirname(__FILE__), 'CSS');
+        $tmpFile = tempnam(__DIR__, 'CSS');
         // to file, multi lines
         $this->css->oneline = false;   // PHP5 signature, see __set() for PHP4
         try {
