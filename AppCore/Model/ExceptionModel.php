@@ -1,6 +1,6 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
 namespace AppCore\Model;
+declare(ENCODING = 'iso-8859-1');
 
 /**
  * Model
