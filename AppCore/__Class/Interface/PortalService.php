@@ -8,7 +8,7 @@
  * @package   Interface
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: PortalService.php 4197 2010-12-09 14:20:54Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

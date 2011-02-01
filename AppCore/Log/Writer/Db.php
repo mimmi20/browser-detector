@@ -20,7 +20,7 @@ namespace AppCore\Log\Writer;
  * @subpackage Writer
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Db.php 30 2011-01-06 21:58:02Z tmu $
+ * @version    $Id$
  */
 
 /**
@@ -29,7 +29,7 @@ namespace AppCore\Log\Writer;
  * @subpackage Writer
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Db.php 30 2011-01-06 21:58:02Z tmu $
+ * @version    $Id$
  */
 class Db extends \Zend\Log\Writer\AbstractWriter
 {

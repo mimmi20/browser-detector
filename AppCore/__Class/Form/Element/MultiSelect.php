@@ -8,7 +8,7 @@
  * @package   Form
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: MultiSelect.php 3966 2010-10-25 04:59:52Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

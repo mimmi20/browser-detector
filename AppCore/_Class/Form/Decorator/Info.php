@@ -8,7 +8,7 @@
  * @package   Form
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Info.php 30 2011-01-06 21:58:02Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -28,7 +28,7 @@
  * @category  Kreditrechner
  * @package   Form
  * @copyright 2007-2010 Unister GmbH
- * @version   $Id: Info.php 30 2011-01-06 21:58:02Z tmu $
+ * @version   $Id$
  */
 class KreditCore_Class_Form_Decorator_Info extends Zend_Form_Decorator_Abstract
 {

@@ -8,7 +8,7 @@
  * @package   Credit
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Curl.php 4273 2010-12-16 17:54:02Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

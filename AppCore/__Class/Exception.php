@@ -16,7 +16,7 @@
  * @package    Controller
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc.
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Exception.php 4126 2010-11-24 17:40:28Z t.mueller $
+ * @version    $Id$
  */
 
 /**

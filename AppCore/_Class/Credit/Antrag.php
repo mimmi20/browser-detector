@@ -8,7 +8,7 @@
  * @package   Credit
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Antrag.php 10 2011-01-16 21:55:33Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**

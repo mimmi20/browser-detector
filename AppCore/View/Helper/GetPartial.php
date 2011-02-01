@@ -11,7 +11,7 @@ namespace AppCore\View\Helper;
  * @package   View_Helper
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: GetPartial.php 30 2011-01-06 21:58:02Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**

@@ -8,7 +8,7 @@
  * @package   Controller
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Mail.php 4286 2010-12-21 09:23:01Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

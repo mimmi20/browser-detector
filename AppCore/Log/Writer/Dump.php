@@ -20,7 +20,7 @@ namespace AppCore\Log\Writer;
  * @subpackage Writer
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Db.php 4131 2010-11-26 12:09:19Z t.mueller $
+ * @version    $Id$
  */
 
 /**
@@ -29,18 +29,18 @@ namespace AppCore\Log\Writer;
  * @subpackage Writer
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Db.php 4131 2010-11-26 12:09:19Z t.mueller $
+ * @version    $Id$
  */
 class Dump extends \Zend\Log\Writer\AbstractWriter
 {
     /**
-     * Create a new instance of \Zend\Log\Logger_Writer_Db
+     * Create a new instance of Zend_Log_Writer_Db
      *
      * @param  array|Zend_Config $config
-     * @return \Zend\Log\Logger_Writer_Db
-     * @throws \Zend\Log\Exception
+     * @return Zend_Log_Writer_Db
+     * @throws Zend_Log_Exception
      */
-    static public function factory($config = array())
+    static public function factory($config)
     {
         return new self();
     }
@@ -48,7 +48,7 @@ class Dump extends \Zend\Log\Writer\AbstractWriter
     /**
      * Formatting is not possible on this writer
      */
-    public function setFormatter(\Zend\Log\Formatter $formatter)
+    public function setFormatter(Zend_Log_Formatter_Interface $formatter)
     {
         throw new \Zend\Log\Exception(
             get_class($this) . ' does not support formatting'
@@ -67,14 +67,9 @@ class Dump extends \Zend\Log\Writer\AbstractWriter
                   ? $event['priorityName'] : 'unknown');
 
         if (isset($event['message'])) {
-            $message = $this->_addLine($event['message'], $event);
+            $message = $event['message'];
 
-
-
-            if (is_object($message)
-                && (get_class($message) == 'Exception'
-                || is_subclass_of($message, 'Exception'))
-            ) {
+            if (is_object($message) && ($message instanceof \Exception)) {
                 $sMessage  = $this->_addLine($message->getMessage(), $event);
                 $fullTrace = $message->getTrace();
                 $traceKeys = array_keys($fullTrace);
@@ -85,18 +80,26 @@ class Dump extends \Zend\Log\Writer\AbstractWriter
                                . (isset($trace['file'])
                                 ? $trace['file'] . ' --> ' . $trace['line']
                                 : '')
-                               . ': '. $trace['class'] . $trace['type']
-                               . $trace['function'] . '()' . "\n";
+                               . ': '
+                               . (isset($trace['class']) ? $trace['class'] : '')
+                               . (isset($trace['type']) ? $trace['type'] : '')
+                               . $trace['function'] . '()'
+                               . "\n";
                 }
 
                 $priority = 'EXCEPTION';
                 $message  = $sMessage;
+            } else {
+                $message = $this->_addLine($message, $event);
             }
         } else {
-            $message  = 'no message';
+            $message  = 'no other message';
         }
 
         $priority .= ' (' . APPLICATION_ENV . ')';
+        $message   = 'PHP Version: ' . phpversion() . "\n"
+                   . 'XDebug: ' . phpversion('xdebug') . "\n"
+                   . $message;
 
         \Zend\Debug::dump($message, $priority, true);
     }

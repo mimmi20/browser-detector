@@ -11,7 +11,7 @@ namespace AppCore\Controller\Helper;
  * @package     Controller-Helper
  * @copyright   Copyright (c) 2010 Unister GmbH
  * @author      Stefan Barthel <stefan.barthel@unister-gmbh.de>
- * @version     $Id: NormalizeDate.php 30 2011-01-06 21:58:02Z tmu $
+ * @version     $Id$
  */
 
 /**

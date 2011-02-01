@@ -8,7 +8,7 @@
  * @package   Credit
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Output.php 4184 2010-12-07 15:30:19Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

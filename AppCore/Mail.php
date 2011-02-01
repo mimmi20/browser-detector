@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'iso-8859-1');
+namespace AppCore;
+
 /**
  * sends email using the mailqueue
  *
@@ -19,7 +22,7 @@
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class KreditCore_Class_Mail
+class Mail
 {
     private $_memberToId = 5180;
     private $_memberFromId = 7000;
@@ -298,6 +301,29 @@ class KreditCore_Class_Mail
      */
     public function send()
     {
+        if (!Zend_Registry::isRegistered('_config')) {
+            /*
+             * _config is not defined at the moment
+             * the error occured before finishing bootstrapping
+             */
+            return false;
+        }
+
+        $config = Zend_Registry::get('_config');
+
+        //check, if Email is enabled
+        //-> do not try to send, if disabled (mostly it raises errors then)
+        if (!isset($config->newmaildb->enabled)
+            || !$config->newmaildb->enabled
+        ) {
+            return false;
+        }
+
+        //serialize the mail headers
+        if (!is_array($email)) {
+            $email = array($email);
+        }
+
         $logger = \Zend\Registry::get('log');
 
         /**

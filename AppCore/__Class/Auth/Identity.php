@@ -8,7 +8,7 @@
  * @package   Auth
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Identity.php 3876 2010-10-04 16:55:31Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

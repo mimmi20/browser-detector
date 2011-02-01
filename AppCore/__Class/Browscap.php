@@ -22,7 +22,7 @@
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: Browscap.php 4123 2010-11-22 17:09:10Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

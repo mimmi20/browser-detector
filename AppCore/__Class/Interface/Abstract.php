@@ -7,7 +7,7 @@
  * @copyright   Copyright (c) 2010 Unister GmbH
  * @author      Unister GmbH <teamleitung-dev@unister-gmbh.de>
  * @author      Sven Boehme <sven.boehme@unister-gmbh.de>
- * @version     $Id:$
+ * @version     $Id$
  */
 
 /**

@@ -25,7 +25,7 @@ namespace AppCore;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: Browscap.php 30 2011-01-06 21:58:02Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**

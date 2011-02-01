@@ -9,7 +9,7 @@
  * @subpackage Auth_Adapter
  * @copyright  Copyright (c) 2010 Unister GmbH
  * @author     Uwe Woithe <uwe.woithe@unister-gmbh.de>
- * @version    SVN: $Id: Ldap.php 4228 2010-12-13 18:09:23Z t.mueller $
+ * @version    SVN: $Id$
  */
 
 class KreditCore_Class_Auth_Ldap implements Zend_Auth_Adapter_Interface

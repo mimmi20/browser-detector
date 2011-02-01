@@ -7,7 +7,7 @@
  * @copyright   Copyright (c) 2010 Unister GmbH
  * @author      Unister GmbH <teamleitung-dev@unister-gmbh.de>
  * @author      Sven Boehme <sven.boehme@unister-gmbh.de>
- * @version     $Id: Abstract.php 30 2011-01-06 21:58:02Z tmu $
+ * @version     $Id$
  */
 
 /**

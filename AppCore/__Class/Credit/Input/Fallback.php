@@ -8,7 +8,7 @@
  * @package   Credit
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Fallback.php 4258 2010-12-15 16:22:14Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

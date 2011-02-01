@@ -7,7 +7,7 @@ namespace AppCore\View\Helper;
  * @package   View_Helper
  * @copyright 2007-2010 Unister GmbH
  * @author    Stefan Barthel <stefan.barthel@unister-gmbh.de>
- * @version   $Id: PercentageFormat.php 30 2011-01-06 21:58:02Z tmu $
+ * @version   $Id$
  */
 
 /**

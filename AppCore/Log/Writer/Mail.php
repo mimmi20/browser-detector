@@ -20,7 +20,7 @@ namespace AppCore\Log\Writer;
  * @subpackage Writer
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Mail.php 23576 2010-12-23 23:25:44Z ramon $
+ * @version    $Id$
  */
 
 /**
@@ -35,7 +35,7 @@ namespace AppCore\Log\Writer;
  * @subpackage Writer
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Mail.php 23576 2010-12-23 23:25:44Z ramon $
+ * @version    $Id$
  */
 class Mail extends \Zend\Log\Writer\Mail
 {

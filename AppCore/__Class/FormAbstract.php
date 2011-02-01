@@ -8,7 +8,7 @@
  * @package   Form
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: FormAbstract.php 4063 2010-11-14 21:17:55Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**

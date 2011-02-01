@@ -8,7 +8,7 @@
  * @package   Credit
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Abstract.php 4284 2010-12-21 08:47:03Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 /**
