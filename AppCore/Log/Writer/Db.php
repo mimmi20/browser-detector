@@ -86,14 +86,14 @@ class Db extends \Zend\Log\Writer\AbstractWriter
             $request->getParams(),
             array('uri' => $request->getRequestUri())
         );
-
+        //var_dump($event);exit;
         /**/
-        $model = new \Application\Model\Entities\Exceptions();
+        $model = new \Model\Entities\Exceptions();
         $model->setMessage($exception->getMessage());
         $model->setTrace($exception->getTraceAsString());
         $model->setEnviroment(APPLICATION_ENV);
-        //$model->setRequest(serialize($requestParams));
-        $model->setLevel($level);
+        $model->setRequest(serialize($requestParams));
+        $model->setLevel($event['priorityName']);
         /*
         $model->insertException(
             $exception,

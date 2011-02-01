@@ -482,7 +482,9 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
             return current($haystack);
         }
         
-        if ($result = current($a = array_intersect($needle, $haystack))) {
+        $a = array_intersect($needle, $haystack);
+        
+        if ($result = current($a)) {
             return $result;
         }
         return $default;
