@@ -130,12 +130,12 @@ class Mail extends \Zend\Log\Writer\Mail
     }
 
     /**
-     * Create a new instance of Zend_Log_Writer_Mail
+     * Create a new instance of \AppCore\Log\Writer\Mail
      *
-     * @param  array|Zend_Config $config
-     * @return Zend_Log_Writer_Mail
+     * @param  array|\Zend\Config\Config $config
+     * @return \AppCore\Log\Writer\Mail
      */
-    static public function factory($config)
+    static public function factory($config = array())
     {
         $config = self::_parseConfig($config);
         $mail = self::_constructMailFromConfig($config);
@@ -159,7 +159,7 @@ class Mail extends \Zend\Log\Writer\Mail
      * Set the layout
      *
      * @param \Zend\Layout\Layout|array $layout
-     * @return Zend_Log_Writer_Mail
+     * @return \AppCore\Log\Writer\Mail
      * @throws \Zend\Log\Exception
      */
     public function setLayout($layout)

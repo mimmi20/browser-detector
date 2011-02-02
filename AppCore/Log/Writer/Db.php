@@ -36,8 +36,8 @@ class Db extends \Zend\Log\Writer\AbstractWriter
     /**
      * Create a new instance of \Zend\Log\Logger_Writer_Db
      *
-     * @param  array|Zend_Config $config
-     * @return \Zend\Log\Logger_Writer_Db
+     * @param  array|\Zend\Config\Config $config
+     * @return \Zend\Log\Writer\Db
      * @throws \Zend\Log\Exception
      */
     static public function factory($config = array())

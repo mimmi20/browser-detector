@@ -56,10 +56,10 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request->setParam('agent', null);
 
         $browser = $browscap->getBrowser($userAgent, false);
-        var_dump($browser);
+        //var_dump($browser);
         
-        $x = new \TeraWurfl\TeraWurfl();
-        var_dump($x->getDeviceCapabilitiesFromAgent($userAgent));
+        //$x = new \TeraWurfl\TeraWurfl();
+        //var_dump($x->getDeviceCapabilitiesFromAgent($userAgent));
 
         if ('Default Browser' == $browser->Browser) {
             $campaignService = new \AppCore\Service\Campaigns();

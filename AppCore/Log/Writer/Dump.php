@@ -34,13 +34,13 @@ namespace AppCore\Log\Writer;
 class Dump extends \Zend\Log\Writer\AbstractWriter
 {
     /**
-     * Create a new instance of Zend_Log_Writer_Db
+     * Create a new instance of \AppCore\Log\Writer\Dump
      *
-     * @param  array|Zend_Config $config
-     * @return Zend_Log_Writer_Db
-     * @throws Zend_Log_Exception
+     * @param  array|\Zend\Config\Config $config
+     * @return \AppCore\Log\Writer\Dump
+     * @throws \Zend\Log\Exception
      */
-    static public function factory($config)
+    static public function factory($config = array())
     {
         return new self();
     }
@@ -48,7 +48,7 @@ class Dump extends \Zend\Log\Writer\AbstractWriter
     /**
      * Formatting is not possible on this writer
      */
-    public function setFormatter(Zend_Log_Formatter_Interface $formatter)
+    public function setFormatter(\Zend\Log\Formatter $formatter)
     {
         throw new \Zend\Log\Exception(
             get_class($this) . ' does not support formatting'
