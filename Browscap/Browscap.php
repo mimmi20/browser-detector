@@ -63,6 +63,7 @@ class Browscap
     private $_patterns   = array();
     private $_properties = array();
     private $_logger     = null;
+    private $_config     = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -76,8 +77,10 @@ class Browscap
             $config = array();
         }
         
-        if (isset($config['browscap']['cache'])) {
-            $cacheConfig = $config['browscap']['cache'];
+        $this->_config = $config;
+        
+        if (isset($this->_config['browscap']['cache'])) {
+            $cacheConfig = $this->_config['browscap']['cache'];
             
             $this->_cache = \Zend\Cache\Cache::factory(
                 $cacheConfig['frontend'],
@@ -203,13 +206,10 @@ class Browscap
      */
     private function _updateCache()
     {
-        $config    = \Zend\Registry::get('_config');
-        $localFile = $config->browscap->localepath;
-
         if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
-            $browsers = parse_ini_file($localFile, true, INI_SCANNER_RAW);
+            $browsers = parse_ini_file($this->_localFile, true, INI_SCANNER_RAW);
         } else {
-            $browsers = parse_ini_file($localFile, true);
+            $browsers = parse_ini_file($this->_localFile, true);
         }
 
         array_shift($browsers);
@@ -223,15 +223,14 @@ class Browscap
             'Parent'
         );
 
-        $orderArgs  = '$a, $b';
-        $orderLogic = '$a=strlen($a);
-                       $b=strlen($b);
-                       return$a==$b?0:($a<$b?1:-1);';
-
         $this->_userAgents  = array_keys($browsers);
         usort(
             $this->_userAgents,
-            create_function($orderArgs, $orderLogic)
+            function($a, $b) {
+                $a = strlen($a);
+                $b = strlen($b);
+                return ($a == $b ? 0 :($a < $b ? 1 : -1));
+            }
         );
 
         //$aUserAgentKeys  = array_flip($this->_userAgents);
