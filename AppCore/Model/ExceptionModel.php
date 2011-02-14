@@ -36,7 +36,7 @@ class ExceptionModel extends ModelAbstract
      *
      * @var String
      */
-    protected $_name = 'exception';
+    protected $_name = 'exceptions';
 
     /**
      * Inserts an Exception into Database

@@ -47,7 +47,9 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request = $this->getRequest();
 
         $this->_requestData = $request->getParams();
-        $browscap           = new \AppCore\Browscap();
+        
+        $config   = \Zend\Registry::get('_config');
+        $browscap = new \Browscap\Browscap($config->browscap, $this->_logger);
 
         $userAgent = $this->_getUserAgent();
 
@@ -56,11 +58,13 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request->setParam('agent', null);
 
         $browser = $browscap->getBrowser($userAgent, false);
-        //var_dump($browser);
+        var_dump($browser);
         
-        //$x = new \TeraWurfl\TeraWurfl();
-        //var_dump($x->getDeviceCapabilitiesFromAgent($userAgent));
+        $wurflDb = \Zend\Registry::get('wurfldb');
+        $x = new \TeraWurfl\TeraWurfl(null, $wurflDb);
+        var_dump($x->getDeviceCapabilitiesFromAgent($userAgent));
 
+        exit;
         if ('Default Browser' == $browser->Browser) {
             $campaignService = new \AppCore\Service\Campaigns();
             $campaignName    = $campaignService->getName(

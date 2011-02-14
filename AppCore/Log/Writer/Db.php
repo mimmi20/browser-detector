@@ -88,18 +88,20 @@ class Db extends \Zend\Log\Writer\AbstractWriter
         );
         //var_dump($event);exit;
         /**/
-        $model = new \Model\Entities\Exceptions();
+        $model = new \AppCore\Model\ExceptionModel();
+        /*
         $model->setMessage($exception->getMessage());
         $model->setTrace($exception->getTraceAsString());
         $model->setEnviroment(APPLICATION_ENV);
         $model->setRequest(serialize($requestParams));
         $model->setLevel($event['priorityName']);
-        /*
+        /**/
+        
         $model->insertException(
             $exception,
             new \Zend\Controller\Request\Http(),
             $priority
         );
-        */
+        /**/
     }
 }

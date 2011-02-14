@@ -44,6 +44,13 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      * @var \Zend\Log\Logger
      */
     protected $_logger = null;
+    
+    /**
+     * holds the data about the actual record
+     *
+     * @var \Zend\Db\Table\Row
+     */
+    protected $_data = null;
 
     /**
      * Konstruktor
