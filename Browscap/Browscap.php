@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'iso-8859-1');
-namespace AppCore;
+namespace Browscap;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -68,18 +68,36 @@ class Browscap
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
      */
-    public function __construct()
+    public function __construct($config = null, $log = null)
     {
-        $config = \Zend\Registry::get('_config');
+        if (is_object($config) && method_exists($config, 'toArray')) {
+            $config = $config->toArray();
+        } elseif (!is_array($config)) {
+            $config = array();
+        }
+        
+        if (isset($config['browscap']['cache'])) {
+            $cacheConfig = $config['browscap']['cache'];
+            
+            $this->_cache = \Zend\Cache\Cache::factory(
+                $cacheConfig['frontend'],
+                $cacheConfig['backend'],
+                $cacheConfig['front'],
+                $cacheConfig['back']
+            );
+        }
+        
+        $file = __DIR__ . '/data/browscap.ini';
+        
+        if (isset($config['browscap']['inifile'])) {
+            $file = (string) $config['browscap']['inifile'];
+        }
+        
+        $his->setLocaleFile(realpath($file))
 
-        $this->_cache = \Zend\Cache\Cache::factory(
-            $config->browscap->cache->frontend,
-            $config->browscap->cache->backend,
-            $config->browscap->cache->front->toArray(),
-            $config->browscap->cache->back->toArray()
-        );
-
-        $this->_logger = \Zend\Registry::get('log');
+        if ($log instanceof \Zend\Log\Log) {
+            $this->_logger = $log;
+        }
     }
 
     /**
@@ -158,7 +176,9 @@ class Browscap
         try {
             return $this->_updateCache();
         } catch (Exception $e) {
-            $this->_logger->err($e);
+            if ($this->_logger instanceof \Zend\Log\Log) {
+                $this->_logger->err($e);
+            }
 
             return array();
         }
