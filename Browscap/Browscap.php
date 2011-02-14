@@ -79,8 +79,8 @@ class Browscap
         
         $this->_config = $config;
         
-        if (isset($this->_config['browscap']['cache'])) {
-            $cacheConfig = $this->_config['browscap']['cache'];
+        if (isset($this->_config['cache'])) {
+            $cacheConfig = $this->_config['cache'];
             
             $this->_cache = \Zend\Cache\Cache::factory(
                 $cacheConfig['frontend'],
@@ -92,11 +92,11 @@ class Browscap
         
         $file = __DIR__ . '/data/browscap.ini';
         
-        if (isset($config['browscap']['inifile'])) {
-            $file = (string) $config['browscap']['inifile'];
+        if (isset($config['inifile'])) {
+            $file = (string) $config['inifile'];
         }
         
-        $his->setLocaleFile(realpath($file))
+        $this->setLocaleFile(realpath($file));
 
         if ($log instanceof \Zend\Log\Log) {
             $this->_logger = $log;
@@ -127,14 +127,20 @@ class Browscap
             preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent))
         );
 
-        if (!$array = $this->_cache->load($cacheId)) {
+        if (!($this->_cache instanceof \Zend\Cache\Cache) 
+            || !$array = $this->_cache->load($cacheId)
+        ) {
             $cacheGlobalId = 'agentsGlobal';
 
             // Load the cache at the first request
-            if (!$agentsGlobal = $this->_cache->load($cacheGlobalId)) {
+            if (!($this->_cache instanceof \Zend\Cache\Cache) 
+                || !$agentsGlobal = $this->_cache->load($cacheGlobalId)
+            ) {
                 $agentsGlobal = $this->_getBrowserFromCache();
 
-                $this->_cache->save($agentsGlobal, $cacheGlobalId);
+                if ($this->_cache instanceof \Zend\Cache\Cache) {
+                    $this->_cache->save($agentsGlobal, $cacheGlobalId);
+                }
             }
 
             $browser = array();
@@ -163,7 +169,9 @@ class Browscap
                 $array[$agentsGlobal['properties'][(int)$key]] = $value;
             }
 
-            $this->_cache->save($array, $cacheId);
+            if ($this->_cache instanceof \Zend\Cache\Cache) {
+                $this->_cache->save($array, $cacheId);
+            }
         }
 
         return $bReturnAsArray ? $array : (object) $array;
