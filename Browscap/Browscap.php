@@ -155,8 +155,8 @@ class Browscap
                             $agentsGlobal['userAgents'][$key]
                         );
 
-                        $browser = $value = $browser
-                                          + $agentsGlobal['browsers'][$key];
+                        $browser = $browser
+                                 + $agentsGlobal['browsers'][$key];
 
                         break;
                     }
