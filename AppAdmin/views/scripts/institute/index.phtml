@@ -52,7 +52,7 @@
 if (isset($this->paginator) && is_object($this->paginator)) :
     foreach ($this->paginator->getItemsByPage($this->paginator->getCurrentPageNumber()) as $institut) :
 ?>
-                    <tr class="<?php echo $this->cycle(array('cycle1', 'cycle2'))->next(); ?>" title="das Institut '<?php echo $institut->ki_name; ?>' ist <?php if (!$institut->ki_active) {
+                    <tr class="<?php echo $this->cycle(array('cycle1', 'cycle2'))->next(); ?>" title="das Institut '<?php echo $institut->codename; ?>' ist <?php if (!$institut->active) {
     echo 'nicht ';
 } ?>aktiviert">
                         <td class="first edit" title="Institut bearbeiten">
@@ -61,22 +61,22 @@ if (isset($this->paginator) && is_object($this->paginator)) :
         'module' => 'kredit-admin',
         'controller' => 'institute',
         'action'   => 'edit',
-        'institut' => $institut->ki_id
+        'institut' => $institut->idInstitutes
     )
 ); ?>">&nbsp;</a>
                         </td>
-                        <td><?php echo $institut->ki_id; ?></td>
-                        <td><?php echo $institut->ki_name; ?></td>
-                        <td><?php echo $institut->ki_title; ?></td>
+                        <td><?php echo $institut->idInstitutes; ?></td>
+                        <td><?php echo $institut->codename; ?></td>
+                        <td><?php echo $institut->name; ?></td>
                         <td><?php echo $institut->ki_ordering; ?></td>
                         <td style="color:#<?php echo $institut->color; ?>;"><?php echo $institut->color; ?></td>
 <?php
-if (!$institut->ki_active) {
+if (!$institut->active) {
     $class = 'nok';
-    $title = "das Institut '$institut->ki_name' aktivieren";
+    $title = "das Institut '$institut->codename' aktivieren";
 } else {
     $class = 'ok';
-    $title = "das Institut '$institut->ki_name' deaktivieren";
+    $title = "das Institut '$institut->codename' deaktivieren";
 }
 ?>
                         <td class="<?php echo $class; ?>" title="<?php echo $title; ?>">
@@ -85,21 +85,21 @@ if (!$institut->ki_active) {
         'module' => 'kredit-admin',
         'controller' => 'institute',
         'action'   => 'activate',
-        'institut' => $institut->ki_id,
-        'aktiv'    => $institut->ki_active
+        'institut' => $institut->idInstitutes,
+        'aktiv'    => $institut->active
     )
 ) ?>/">&nbsp;</a>
                         </td>
                         <td>
-                            <div class="info" title="Produkte anzeigen">
+                            <div class="info" title="Products anzeigen">
                                 <a href="<?php echo $this->basedUrl(
     array(
         'module' => 'kredit-admin',
         'controller' => 'products',
         'action'   => 'index',
-        'institut' => $institut->ki_id
+        'institut' => $institut->idInstitutes
     )
-) ?>/">Produkte anzeigen</a>
+) ?>/">Products anzeigen</a>
                             </div>
                             <div class="small">TODO: l&ouml;schen ??, Details anzeigen</div>
                         </td>

@@ -76,15 +76,15 @@ abstract class KreditAdmin_Class_StatisticsAbstract
      */
     public function getSparten()
     {
-        $sparten = new \AppCore\Model\Sparten();
-        $select  = $sparten->select('sparten');
+        $categories = new \AppCore\Model\Sparten();
+        $select  = $categories->select('categories');
 
         if (null !== $select) {
-            $select->columns('s_name')
+            $select->columns('name')
                 ->where('`active` = ? ', 1)
                 ->setIntegrityCheck(false);
 
-            $rows = $sparten->fetchAll($select);
+            $rows = $categories->fetchAll($select);
             $rows = $rows->toArray();
         } else {
             $rows = array();
@@ -92,7 +92,7 @@ abstract class KreditAdmin_Class_StatisticsAbstract
 
         $s = array();
         foreach ($rows as $row) {
-            $s[$row['s_name']] = $row['s_name'];
+            $s[$row['name']] = $row['name'];
         }
 
         return $s;

@@ -33,7 +33,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $sparte     = (int) $this->_getParam('sparte', 0, 'Int');
         $institutId = (int) $this->_getParam('institut', 0, 'Int');
 
-        $modelApplications = new \AppCore\Model\Produkte();
+        $modelApplications = new \AppCore\Model\Products();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
 
@@ -42,34 +42,34 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         if (null !== $select) {
             if ($portal) {
                 $select->where(
-                    ' kp_id IN (SELECT u.kp_id
+                    ' idProducts IN (SELECT u.idProducts
                     FROM urls AS u WHERE u.p_id = ? )',
                     $portal
                 );
             }
             if ($campaign) {
                 $select->where(
-                    ' kp_id IN (SELECT u.kp_id
-                    FROM urls AS u WHERE u.id_campaign = ? )',
+                    ' idProducts IN (SELECT u.idProducts
+                    FROM urls AS u WHERE u.idCampaigns = ? )',
                     $campaign
                 );
             }
             if ($sparte) {
                 $select->where(
-                    ' kp_id IN (SELECT pc.kp_id
-                    FROM produkt_components AS pc WHERE pc.s_id = ? )',
+                    ' idProducts IN (SELECT pc.idProducts
+                    FROM produkt_components AS pc WHERE pc.idCategories = ? )',
                     $sparte
                 );
             }
             if ($institutId) {
-                $select->where(' ki_id = ? ', $institutId);
+                $select->where(' idInstitutes = ? ', $institutId);
             }
             $paginatorAdapter = new Zend_Paginator_Adapter_DbSelect(
-                $select->order(array('ki_id', 'kp_desc'))
+                $select->order(array('idInstitutes', 'kp_desc'))
             );
 
             $this->createPagination(
-                $paginatorAdapter, $pageNumber, 'getValidPaginationProdukte'
+                $paginatorAdapter, $pageNumber, 'getValidPaginationProducts'
             );
         }
 
@@ -95,7 +95,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
                 'institut' => $institutId
             )
         );
-        $this->view->headTitle('Produkte', 'PREPEND');
+        $this->view->headTitle('Products', 'PREPEND');
     }
 
     /**
@@ -106,7 +106,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
      * @return void
      * @access protected
      */
-    protected function getValidPaginationProdukte(
+    protected function getValidPaginationProducts(
         array $applications = array())
     {
         $validApplications = array();
@@ -119,29 +119,29 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
 
             $institutModel = new \AppCore\Model\Institute();
 
-            $institut = $institutModel->find($validApplications[$key]->ki_id)
+            $institut = $institutModel->find($validApplications[$key]->idInstitutes)
                 ->current();
 
             if (is_object($institut)) {
-                $validApplications[$key]->ki_active = $institut->ki_active;
-                $validApplications[$key]->institut  = $institut->ki_title;
+                $validApplications[$key]->active = $institut->active;
+                $validApplications[$key]->institut  = $institut->name;
             } else {
-                $validApplications[$key]->ki_active = false;
+                $validApplications[$key]->active = false;
                 $validApplications[$key]->institut  = '';
             }
 
-            $spartenModel = new \AppCore\Model\Sparten();
-            $sparte       = $spartenModel->find($validApplications[$key]->s_id)
+            $categoriesModel = new \AppCore\Model\Sparten();
+            $sparte       = $categoriesModel->find($validApplications[$key]->idCategories)
                 ->current();
             $validApplications[$key]->s_active = $sparte->active;
-            $validApplications[$key]->sparte   = $sparte->s_name;
+            $validApplications[$key]->sparte   = $sparte->name;
         }
 
         return $validApplications;
     }
 
     /**
-     * Action zur Bearbeitung eines Produktes
+     * Action zur Bearbeitung eines Productss
      *
      * @return void
      */
@@ -151,11 +151,11 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
 
         if (isset($this->_requestData['product'])) {
             $product = $this->_getParam('product', 0, 'Int');
-        } elseif (isset($this->_requestData['kp_id'])) {
-            $product = $this->_getParam('kp_id', 0, 'Int');
+        } elseif (isset($this->_requestData['idProducts'])) {
+            $product = $this->_getParam('idProducts', 0, 'Int');
         }
 
-        $model = new \AppCore\Model\Produkte();
+        $model = new \AppCore\Model\Products();
         $form  = $this->_getForm();
         $row   = $this->getEditedRow($model, $product);
 
@@ -163,7 +163,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             && false !== $this->getRequest()->getParam('submit', false)
         ) {
             $params              = $this->getRequest()->getParams();
-            $params['kp_usages'] = implode(',', $params['kp_usages']);
+            $params['usages'] = implode(',', $params['usages']);
 
             if ($form->isValid($params)) {
                 $params = $form->getValues();
@@ -171,7 +171,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
                 if ($product > 0) {
                     $row->setFromArray($params);
                 } else {
-                    unset($params['kp_id']);
+                    unset($params['idProducts']);
                     $row = $model->createRow($params);
                 }
 
@@ -208,13 +208,13 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             $institutId = $this->_getParam('institut', 0, 'Int');
 
             if ($sparte) {
-                $row->s_id = $sparte;
+                $row->idCategories = $sparte;
             }
             if ($institutId) {
-                $row->ki_id = $institutId;
+                $row->idInstitutes = $institutId;
             }
 
-            $row->kp_usages = explode(',', $row->kp_usages);
+            $row->usages = explode(',', $row->usages);
 
             $form->populate($row->toArray());
         }
@@ -225,7 +225,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
     }
 
     /**
-     * Action zum Aktivieren/Deaktivieren eines Produktes
+     * Action zum Aktivieren/Deaktivieren eines Productss
      *
      * @return void
      */
@@ -243,9 +243,9 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             $active  = (int) ((boolean) $this->_getParam('aktiv', 1, 'Int'));
             $active  = 1 - $active;
 
-            $model = new \AppCore\Model\Produkte();
+            $model = new \AppCore\Model\Products();
             $model->update(
-                array('kp_active' => $active), 'kp_id = ' . $product
+                array('active' => $active), 'idProducts = ' . $product
             );
         }
 
@@ -257,7 +257,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
     }
 
     /**
-     * Action zur Anzeige der Details zu einem Produkte
+     * Action zur Anzeige der Details zu einem Products
      *
      * @return void
      */
@@ -281,9 +281,9 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         }
 
         //URLs
-        $sql = 'SELECT u.*, p.p_name AS portal
-                FROM (urls AS u JOIN portale AS p ON (u.p_id=p.p_id))
-                WHERE u.kp_id = :id ORDER BY p.p_name';
+        $sql = 'SELECT u.*, p.name AS portal
+                FROM (urls AS u JOIN partnerSites AS p ON (u.p_id=p.idPartnerSites))
+                WHERE u.idProducts = :id ORDER BY p.name';
 
         $stmt = $this->_db->prepare($sql);
         $stmt->bindParam(':id', $product, \PDO::PARAM_INT);
@@ -292,7 +292,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
 
         $this->view->allUrls = $rows;
 
-        $sql  = 'SELECT COUNT(*) AS count FROM portale';
+        $sql  = 'SELECT COUNT(*) AS count FROM partnerSites';
         $stmt = $this->_db->prepare($sql);
         $stmt->execute();
         $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
@@ -300,7 +300,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $this->view->maxUrls = $rows[0]->count;
 
         //Zinssätze
-        $sql = 'SELECT z.* FROM zins AS z WHERE z.kp_id = :id
+        $sql = 'SELECT z.* FROM zins AS z WHERE z.idProducts = :id
                 ORDER BY z.start DESC, z.betrag, z.laufzeit';
 
         $stmt = $this->_db->prepare($sql);
@@ -356,11 +356,11 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $institute      = array(0 => 'bitte wählen');
 
         foreach ($oInstitute as $actualInstitute) {
-            $institute[$actualInstitute->ki_id] = $actualInstitute->ki_title
-            . ' (' . $actualInstitute->ki_name . ')';
+            $institute[$actualInstitute->idInstitutes] = $actualInstitute->name
+            . ' (' . $actualInstitute->codename . ')';
         }
 
-        $idInstitute = $form->getElement('ki_id');
+        $idInstitute = $form->getElement('idInstitutes');
         $idInstitute->setMultiOptions($institute);
 
         $usageModel = new \AppCore\Model\Usage();
@@ -369,12 +369,12 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $institute      = array(0 => 'bitte wählen');
 
         foreach ($oInstitute as $actualInstitute) {
-            $institute[$actualInstitute->ki_id] = $actualInstitute->ki_title
-            . ' (' . $actualInstitute->ki_name . ')';
+            $institute[$actualInstitute->idInstitutes] = $actualInstitute->name
+            . ' (' . $actualInstitute->codename . ')';
         }
         */
 
-        $idUsage = $form->getElement('kp_usages');
+        $idUsage = $form->getElement('usages');
         $idUsage->setMultiOptions($usageModel->getList());
 
         /*
@@ -386,11 +386,11 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
         $campaigns  = array(0 => 'bitte wählen');
 
         foreach ($oCampaigns as $actualCampaign) {
-            $campaigns[$actualCampaign->id_campaign] = $actualCampaign->p_name;
+            $campaigns[$actualCampaign->idCampaigns] = $actualCampaign->name;
         }
 
         // Kampagnen
-        $idCampaignMain = $form->getElement('id_campaign');
+        $idCampaignMain = $form->getElement('idCampaigns');
         $idCampaignMain->setMultiOptions($campaigns);
         */
 

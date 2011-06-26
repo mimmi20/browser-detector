@@ -44,8 +44,8 @@ abstract class KreditAdmin_Class_Statistics_Adapter_AgentAbstract
     )
     {
         if (is_numeric($sparte)) {
-            $spartenModel = new \AppCore\Model\Sparten();
-            $sparte       = $spartenModel->getName($sparte);
+            $categoriesModel = new \AppCore\Model\Sparten();
+            $sparte       = $categoriesModel->getName($sparte);
         }
 
         $model = new \AppCore\Model\LogAgent();

@@ -160,7 +160,7 @@ class KreditAdmin_StatisticsController
             $s      = $s->current();
 
             if (is_object($s)) {
-                $sparte = $s->s_name;
+                $sparte = $s->name;
             }
         }
 
@@ -369,8 +369,8 @@ class KreditAdmin_StatisticsController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $spartenModel = new \AppCore\Model\Sparten();
-            $sparte       = $spartenModel->getName($sparte);
+            $categoriesModel = new \AppCore\Model\Sparten();
+            $sparte       = $categoriesModel->getName($sparte);
         }
 
         //initialize date filter
@@ -435,7 +435,7 @@ class KreditAdmin_StatisticsController
         $this->view->filterDateStart = $filter->getDateStartString();
         $this->view->filterDateEnd   = $filter->getDateEndString();
         $this->view->groupValue      = $filter->getGroupValue();
-        $this->view->sparten         = $this->_statisticAppStatus->getSparten();
+        $this->view->categories         = $this->_statisticAppStatus->getSparten();
 
         //Whitelist all Mandants until we should be able to filter by Id's
         $this->_statisticAppStatus->getWhitelist()->addAllMandants();
@@ -482,7 +482,7 @@ class KreditAdmin_StatisticsController
         $childRows = $mandantHandler->getKampagnenList($campaigns, false);
 
         foreach ($childRows as $actualChild) {
-            $childArray[$actualChild->p_name] = $actualChild->toArray();
+            $childArray[$actualChild->name] = $actualChild->toArray();
         }
 
         $this->getResponse()->setBody(Zend_Json::encode($childArray));

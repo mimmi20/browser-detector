@@ -13,7 +13,7 @@
  */
 ?>
 <h2>
-    Produkte
+    Products
 </h2>
 <div class="list">
     <div class="content">
@@ -53,23 +53,23 @@ if (!is_object($product)) {
     continue;
 }
 //Produkt, Institut uns Sparte sind aktiviert
-$active  = ($product->kp_active && $product->ki_active && $product->s_active);
+$active  = ($product->active && $product->active && $product->s_active);
 //Institut uns Sparte sind aktiviert
-$active2 = ($product->ki_active && $product->s_active);
+$active2 = ($product->active && $product->s_active);
 ?>
                     <tr class="<?php echo $this->cycle(array('odd', 'even'))->next(); ?>">
-                        <td class="first edit" title="Produkt bearbeiten"><a href="<?php echo str_replace(array('###product###', '%23%23%23product%23%23%23'), $product->kp_id, $this->editUrl); ?>/">&nbsp;</a>
+                        <td class="first edit" title="Produkt bearbeiten"><a href="<?php echo str_replace(array('###product###', '%23%23%23product%23%23%23'), $product->idProducts, $this->editUrl); ?>/">&nbsp;</a>
                         </td>
-                        <td><?php echo $product->kp_id; ?></td>
+                        <td><?php echo $product->idProducts; ?></td>
                         <td><?php echo $product->institut; ?></td>
                         <td><?php echo $product->sparte; ?></td>
                         <td><?php echo $product->kp_desc; ?></td>
-                        <td><?php echo $product->kp_rahmen_min; ?></td>
-                        <td><?php echo $product->kp_rahmen_max; ?></td>
-                        <td><?php echo $product->kp_annahme; ?></td>
-                        <td><?php echo $product->kp_entscheidung; ?></td>
+                        <td><?php echo $product->min; ?></td>
+                        <td><?php echo $product->max; ?></td>
+                        <td><?php echo $product->annahme; ?></td>
+                        <td><?php echo $product->entscheidung; ?></td>
 <?php
-if (!$product->kp_testsieger) {
+if (!$product->testsieger) {
     $class = 'nok';
 } else {
     $class = 'ok';
@@ -77,7 +77,7 @@ if (!$product->kp_testsieger) {
 ?>
                         <td class="<?php echo $class; ?>">&nbsp;</td>
 <?php
-if (!$product->kp_boni) {
+if (!$product->boni) {
     $class = 'nok';
 } else {
     $class = 'ok';
@@ -88,7 +88,7 @@ if (!$product->kp_boni) {
 if (!$active2) {
     $class = 'lock';
     $title = '';
-    if (!$product->ki_active) { $title .= 'das Institut'; }
+    if (!$product->active) { $title .= 'das Institut'; }
     if (!$product->s_active) { $title .= 'die Sparte'; }
     $title .= ' ist nicht aktiviert';
 } elseif(!$active) {
@@ -105,8 +105,8 @@ if (!$active2) {
                                     'module' => 'kredit-admin',
                                     'controller' => 'products',
                                     'action'  => 'activate',
-                                    'product' => $product->kp_id,
-                                    'aktiv'   => $product->kp_active
+                                    'product' => $product->idProducts,
+                                    'aktiv'   => $product->active
                                 )) ?>/">
                             <?php } ?>
                             &nbsp;
@@ -120,7 +120,7 @@ if (!$active2) {
                                     'module' => 'kredit-admin',
                                     'controller' => 'products',
                                     'action'  => 'detail',
-                                    'product' => $product->kp_id
+                                    'product' => $product->idProducts
                                 )) ?>/">Produkt-Details anzeigen</a>
                             </div>
                             <div class="small">TODO: l&ouml;schen ??</div>

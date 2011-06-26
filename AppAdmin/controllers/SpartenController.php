@@ -35,7 +35,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
 
         if (null !== $select) {
             $paginatorAdapter = new Zend_Paginator_Adapter_DbSelect(
-                $select->order('s_name')
+                $select->order('name')
             );
 
             $this->createPagination($paginatorAdapter, $pageNumber);
@@ -53,10 +53,10 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
     {
         $sparte = 0;
 
-        //s_id is set in update form
-        // -> prefer s_id
-        if (isset($this->_requestData['s_id'])) {
-            $sparte = $this->_getParam('s_id', 0, 'Int');
+        //idCategories is set in update form
+        // -> prefer idCategories
+        if (isset($this->_requestData['idCategories'])) {
+            $sparte = $this->_getParam('idCategories', 0, 'Int');
         } elseif (isset($this->_requestData['sparte'])) {
             $sparte = $this->_getParam('sparte', 0, 'Int');
         }
@@ -71,16 +71,16 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
         ) {
             if ($form->isValid($this->getRequest()->getParams())) {
                 if ($sparte > 0) {
-                     $model->update($form->getValues(), 's_id = ' . $sparte);
+                     $model->update($form->getValues(), 'idCategories = ' . $sparte);
                 } else {
                     $values = $form->getValues();
-                    unset($values['s_id']);
+                    unset($values['idCategories']);
                     $model->insert($values);
                 }
 
                 $this->_redirector->gotoSimple(
                     'index',
-                    'sparten',
+                    'categories',
                     'kredit-admin'
                 );
                 return;
@@ -114,12 +114,12 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
             $active = 1 - (int) $active;
 
             $model = new \AppCore\Model\Sparten();
-            $model->update(array('active' => $active), 's_id = ' . $sparte);
+            $model->update(array('active' => $active), 'idCategories = ' . $sparte);
         }
 
         $this->_redirector->gotoSimple(
             'index',
-            'sparten',
+            'categories',
             'kredit-admin'
         );
     }

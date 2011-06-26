@@ -72,10 +72,10 @@ foreach( (array)$this->partner as $key => $partner): $cycleClass = ($i % 2);
 <?php
 if (!$partner['active']) {
     $class = 'nok';
-    $title = "das Portal '".$partner['p_name']."' aktivieren";
+    $title = "das Portal '".$partner['name']."' aktivieren";
 } else {
     $class = 'ok';
-    $title = "das Portal '".$partner['p_name']."' deaktivieren";
+    $title = "das Portal '".$partner['name']."' deaktivieren";
 }
 ?>
                         <td class="first <?php echo $class; ?>" title="<?php echo $title; ?>">
@@ -105,7 +105,7 @@ $cycleClass = ($i % 2);
                             'module' => 'kredit-admin',
                             'controller' => 'mandant',
                             'action'   => 'editcampaign',
-                            'campaign' => $child['id_campaign'],
+                            'campaign' => $child['idCampaigns'],
                             'portal'   => $partner['p_id']
                         )); ?>">&nbsp;</a>
                         </td>
@@ -113,16 +113,16 @@ $cycleClass = ($i % 2);
 <?php
 if(!$child['css']) {
     $class = 'lock';
-    $title = "die Kampagne '".$child['p_name']."' ist blockiert, CSS-Datei fehlt";
+    $title = "die Kampagne '".$child['name']."' ist blockiert, CSS-Datei fehlt";
 } elseif ($child['pic'] == 'lock') {
     $class = 'lock';
-    $title = "die Kampagne '".$child['p_name']."' ist blockiert, ggf. erst Partner aktivieren";
+    $title = "die Kampagne '".$child['name']."' ist blockiert, ggf. erst Partner aktivieren";
 } elseif ($child['active']) {
     $class = 'ok';
-    $title = "die Kampagne '".$child['p_name']."' deaktivieren";
+    $title = "die Kampagne '".$child['name']."' deaktivieren";
 } else {
     $class = 'nok';
-    $title = "die Kampagne '".$child['p_name']."' aktivieren";
+    $title = "die Kampagne '".$child['name']."' aktivieren";
 }
 ?>
                         <td class="first <?php echo $class; ?>" title="<?php echo $title; ?>">
@@ -131,7 +131,7 @@ if(!$child['css']) {
                             'module' => 'kredit-admin',
                             'controller' => 'mandant',
                             'action'   => 'activatecampaign',
-                            'campaign' => $child['id_campaign'],
+                            'campaign' => $child['idCampaigns'],
                             'aktiv'    => $child['active']
                         )); ?>">&nbsp;</a>
                             <?php } ?>
@@ -147,9 +147,9 @@ if(!$child['css']) {
 ?>
                         <td class="first <?php echo $class; ?>" title="<?php echo $title; ?>">&nbsp;</td>
                         <td><strong><?php echo $partner['adresse']; ?></strong><i>::<?php echo $child['name'] ?></i></td>
-                        <td><?php echo $child['p_name']; ?></td>
+                        <td><?php echo $child['name']; ?></td>
                         <td>
-                            /css/<?php echo $child['id_campaign']; ?>.css
+                            /css/<?php echo $child['idCampaigns']; ?>.css
                         </td>
                         <td><?php echo $child['name']; ?></td>
                         <td style="color:#<?php echo $child['color']; ?>;"><?php echo $child['color']; ?></td>

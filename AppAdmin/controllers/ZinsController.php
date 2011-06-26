@@ -36,8 +36,8 @@ class KreditAdmin_ZinsController extends KreditCore_Controller_AdminAbstract
 
         if (isset($this->_requestData['product'])) {
             $product = (int) $this->_getParam('product', 0, 'Int');
-        } elseif (isset($this->_requestData['kp_id'])) {
-            $product = (int) $this->_getParam('kp_id', 0, 'Int');
+        } elseif (isset($this->_requestData['idProducts'])) {
+            $product = (int) $this->_getParam('idProducts', 0, 'Int');
         } else {
             $product = 0;
         }
@@ -63,7 +63,7 @@ class KreditAdmin_ZinsController extends KreditCore_Controller_AdminAbstract
         $form  = $this->_getForm();
 
         $row = $this->getEditedRow($model, $zinsId);
-        $row['kp_id'] = $product;
+        $row['idProducts'] = $product;
 
         if ($this->getRequest()->isPost()
             && false !== $this->getRequest()->getParam('submit', false)

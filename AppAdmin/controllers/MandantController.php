@@ -46,7 +46,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
      */
     public function partnerAction()
     {
-        $dbPartner  = new \AppCore\Model\Portale();
+        $dbPartner  = new \AppCore\Model\PartnerSites();
         $parentList = $dbPartner->fetchList();
 
         //array mit allen Partnern
@@ -63,7 +63,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
                 $aPa[$pid]['color']  = '';
 
                 $cssPfad = APPLICATION_PATH . DS . '_campaigns' . DS .
-                           $aPa[$pid]['p_name'] . '.css';
+                           $aPa[$pid]['name'] . '.css';
                 if (file_exists($cssPfad)) {
                     $aPa[$pid]['css'] = true;
                 }
@@ -75,7 +75,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
                 $campaignList = $dbPartner->getChildList($oPartner);
 
                 foreach ($campaignList as $oCampaign) {
-                    $cid = $oCampaign->id_campaign;
+                    $cid = $oCampaign->idCampaigns;
 
                     $aPa[$pid]['childs'][$cid] = $oCampaign->toArray();
                     $aPa[$pid]['childs'][$cid]['css']    = false;
@@ -85,7 +85,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
 
                     $cssPfad = APPLICATION_PATH . DS
                              . '_campaigns' . DS
-                             . $aPa[$pid]['childs'][$cid]['p_name']
+                             . $aPa[$pid]['childs'][$cid]['name']
                              . '.css';
                     if (file_exists($cssPfad)) {
                         $aPa[$pid]['childs'][$cid]['css'] = true;
@@ -121,7 +121,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $portal = $this->_getParam('p_id', 0, 'Int');
         }
 
-        $model = new \AppCore\Model\Portale();
+        $model = new \AppCore\Model\PartnerSites();
         $form  = $this->_getPortaleForm();
         $row   = $this->getEditedRow($model, $portal);
 
@@ -149,7 +149,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $active = (int) ((boolean) $this->_getParam('aktiv', 1, 'Int'));
             $active = 1 - $active;
 
-            $model = new \AppCore\Model\Portale();
+            $model = new \AppCore\Model\PartnerSites();
             $model->update(array('active' => $active), 'p_id = ' . $portal);
         }
 
@@ -172,8 +172,8 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
 
         if (isset($this->_requestData['campaign'])) {
             $campaign = $this->_getParam('campaign', 0, 'Int');
-        } elseif (isset($this->_requestData['id_campaign'])) {
-            $campaign = $this->_getParam('id_campaign', 0, 'Int');
+        } elseif (isset($this->_requestData['idCampaigns'])) {
+            $campaign = $this->_getParam('idCampaigns', 0, 'Int');
         }
 
         if (isset($this->_requestData['portal'])) {
@@ -192,7 +192,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $row->p_id = $portal;
         }
 
-        $this->_getForm($form, $model, $row, $campaign, 'id_campaign');
+        $this->_getForm($form, $model, $row, $campaign, 'idCampaigns');
 
         $this->view->headTitle('Kampagne bearbeiten', 'PREPEND');
     }
@@ -218,7 +218,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
 
             $model = new \AppCore\Model\Campaigns();
             $model->update(
-                array('active' => $active), 'id_campaign = ' . $campaign
+                array('active' => $active), 'idCampaigns = ' . $campaign
             );
         }
 
@@ -296,7 +296,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
         $campaigns  = array(0 => 'bitte wählen');
 
         foreach ($oCampaigns as $actualCampaign) {
-            $campaigns[$actualCampaign->id_campaign] = $actualCampaign->p_name;
+            $campaigns[$actualCampaign->idCampaigns] = $actualCampaign->name;
         }
 
         // Form laden

@@ -56,8 +56,8 @@ class KreditAdmin_InstituteController
 
         if (isset($this->_requestData['institut'])) {
             $institut = (int) $this->_getParam('institut', 0, 'Int');
-        } elseif (isset($this->_requestData['ki_id'])) {
-            $institut = (int) $this->_getParam('ki_id', 0, 'Int');
+        } elseif (isset($this->_requestData['idInstitutes'])) {
+            $institut = (int) $this->_getParam('idInstitutes', 0, 'Int');
         }
 
         $model = new \AppCore\Model\Institute();
@@ -73,7 +73,7 @@ class KreditAdmin_InstituteController
                     $row->setFromArray($form->getValues());
                 } else {
                     $values = $form->getValues();
-                    unset($values['ki_id']);
+                    unset($values['idInstitutes']);
                     $row = $model->createRow($values);
                 }
 
@@ -116,7 +116,7 @@ class KreditAdmin_InstituteController
 
             $model = new \AppCore\Model\Institute();
             $model->update(
-                array('ki_active' => $active), 'ki_id = ' . $institut
+                array('active' => $active), 'idInstitutes = ' . $institut
             );
         }
 

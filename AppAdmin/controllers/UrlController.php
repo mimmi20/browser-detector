@@ -36,8 +36,8 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
 
         if (isset($this->_requestData['product'])) {
             $product = (int) $this->_getParam('product', 0, 'Int');
-        } elseif (isset($this->_requestData['kp_id'])) {
-            $product = (int) $this->_getParam('kp_id', 0, 'Int');
+        } elseif (isset($this->_requestData['idProducts'])) {
+            $product = (int) $this->_getParam('idProducts', 0, 'Int');
         } else {
             $product = 0;
         }
@@ -53,8 +53,8 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
 
         if (isset($this->_requestData['url'])) {
             $urlId = (int) $this->_getParam('url', 0, 'Int');
-        } elseif (isset($this->_requestData['tku_id'])) {
-            $urlId = (int) $this->_getParam('tku_id', 0, 'Int');
+        } elseif (isset($this->_requestData['idUrls'])) {
+            $urlId = (int) $this->_getParam('idUrls', 0, 'Int');
         } else {
             $urlId = 0;
         }
@@ -63,7 +63,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
         $form = $this->_getForm();
 
         $row = $this->getEditedRow($model, $urlId);
-        $row['kp_id'] = $product;
+        $row['idProducts'] = $product;
 
         if ($this->getRequest()->isPost()
             && false !== $this->getRequest()->getParam('submit', false)
@@ -73,7 +73,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
                     $row->setFromArray($form->getValues());
                 } else {
                     $values = $form->getValues();
-                    unset($values['tku_id']);
+                    unset($values['idUrls']);
                     $row = $model->createRow($values);
                 }
 
@@ -126,7 +126,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
         $active = (int) ((boolean) $this->_getParam('teaser', 1, 'Int'));
         $active = 1 - $active;
 
-        $sql = 'UPDATE urls SET tku_teaser = :aktiv WHERE tku_id = :id';
+        $sql = 'UPDATE urls SET teaser = :aktiv WHERE idUrls = :id';
 
         $stmt = $this->_db->prepare($sql);
         $stmt->bindParam(':aktiv', $active, \PDO::PARAM_INT);
@@ -171,7 +171,7 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
         $active = (int) ((boolean) $this->_getParam('internal', 1, 'Int'));
         $active = 1 - $active;
 
-        $sql = 'UPDATE urls SET tku_internal = :aktiv WHERE tku_id= :id';
+        $sql = 'UPDATE urls SET internal = :aktiv WHERE idUrls= :id';
 
         $stmt = $this->_db->prepare($sql);
         $stmt->bindParam(':aktiv', $active, \PDO::PARAM_INT);
@@ -260,11 +260,11 @@ class KreditAdmin_UrlController extends KreditCore_Controller_AdminAbstract
         $campaigns  = array(0 => 'bitte wählen');
 
         foreach ($oCampaigns as $actualCampaign) {
-            $campaigns[$actualCampaign->id_campaign] = $actualCampaign->p_name;
+            $campaigns[$actualCampaign->idCampaigns] = $actualCampaign->name;
         }
 
         // Kampagnen
-        $idCampaignMain = $form->getElement('id_campaign');
+        $idCampaignMain = $form->getElement('idCampaigns');
         $idCampaignMain->setMultiOptions($campaigns);
 
         return $form;

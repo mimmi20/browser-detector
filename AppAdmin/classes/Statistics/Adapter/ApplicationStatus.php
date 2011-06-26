@@ -45,8 +45,8 @@ class KreditAdmin_Class_Statistics_Adapter_ApplicationStatus
     {
         /*
         if (is_numeric($sparte)) {
-            $spartenModel = new \AppCore\Model\Sparten();
-            $sparte       = $spartenModel->getName($sparte);
+            $categoriesModel = new \AppCore\Model\Sparten();
+            $sparte       = $categoriesModel->getName($sparte);
         }
         */
 
@@ -66,7 +66,7 @@ class KreditAdmin_Class_Statistics_Adapter_ApplicationStatus
             $campaigns,
             $sparte,
             $type,
-            array($field => 'ca.p_name'),
+            array($field => 'ca.name'),
             $this->_filter->getGroupSet()->getTimespanExpression(),
             $this->_filter->getGroupSet()->getGroupExpression(),
             $this->_filter->getDateStartIso(),
@@ -75,7 +75,7 @@ class KreditAdmin_Class_Statistics_Adapter_ApplicationStatus
         );
 
         $select->where('`se`.`datum` like \'' . $datum . '%\'');
-        $select->where('`ca`.`p_name` = ?', $paid);
+        $select->where('`ca`.`name` = ?', $paid);
 
         /*
         if ($type == 'clickoutsale') {
@@ -84,10 +84,10 @@ class KreditAdmin_Class_Statistics_Adapter_ApplicationStatus
             $select->where('ifl.isInternal = 0');
         }
 
-        $select->where('ifl.ki_id IS NOT NULL');
+        $select->where('ifl.idInstitutes IS NOT NULL');
         */
 
-        $select->group('ii.ki_name');
+        $select->group('ii.codename');
         $select->order(new \Zend\Db\Expr('`count` DESC'));
 
         $this->concatGroupFilter($select);

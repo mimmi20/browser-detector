@@ -40,7 +40,7 @@ class KreditAdmin_Class_Statistics_Adapter_Summary_QuoteClicks
             $modelSparte = new \AppCore\Model\Sparten();
             $s           = $modelSparte->find($sparte)->current();
             if (is_object($s)) {
-                $sparte = $s->s_name;
+                $sparte = $s->name;
             } else {
                 return array();
             }

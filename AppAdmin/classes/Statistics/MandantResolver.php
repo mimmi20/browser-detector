@@ -41,7 +41,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
     public function __construct()
     {
         $this->_featMandants = array(0 => true);
-        $this->_dbPartner    = new \AppCore\Model\Portale();
+        $this->_dbPartner    = new \AppCore\Model\PartnerSites();
 
         $this->addAllMandants();
     }
@@ -70,13 +70,13 @@ class KreditAdmin_Class_Statistics_MandantResolver
 
         if (false !== $parents) {
             foreach ($parents as $parent) {
-                $this->_featMandants[$parent->p_name] = $parent->toArray();
+                $this->_featMandants[$parent->name] = $parent->toArray();
                 $childs = $this->_dbPartner->getChildList($parent);
 
                 foreach ($childs as $child) {
-                    $cName = $child->p_name;
+                    $cName = $child->name;
                     $this->_featMandants[$cName] = $child->toArray();
-                    $this->_featMandants[$cName]['parent'] = $parent->p_name;
+                    $this->_featMandants[$cName]['parent'] = $parent->name;
                 }
             }
 
@@ -183,10 +183,10 @@ class KreditAdmin_Class_Statistics_MandantResolver
         unset($mandants[0]);
 
         foreach ($mandants as $mandant) {
-            if (isset($mandant['id_campaign'])
-                && in_array($mandant['id_campaign'], $campaigns)
+            if (isset($mandant['idCampaigns'])
+                && in_array($mandant['idCampaigns'], $campaigns)
             ) {
-                $references[] = $mandant['p_name'];
+                $references[] = $mandant['name'];
             }
         }
 
@@ -269,7 +269,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
 
         $parentArray = array();
         foreach ($parentRows as $row) {
-            $parentArray[$row->p_name] = $row;
+            $parentArray[$row->name] = $row;
         }
 
         return $parentArray;
@@ -287,7 +287,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
 
         if (false !== $parentRows) {
             foreach ($parentRows as $row) {
-                $pName = $row->p_name;
+                $pName = $row->name;
 
                 $parentArray[$pName] = $row->toArray();
 
@@ -302,7 +302,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
                         continue;
                     }
 
-                    $cId = $child['id_campaign'];
+                    $cId = $child['idCampaigns'];
 
                     $parentArray[$pName]['children'][$id]['p_id'] = $cId;
 

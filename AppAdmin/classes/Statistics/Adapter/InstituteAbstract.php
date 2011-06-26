@@ -40,8 +40,8 @@ abstract class KreditAdmin_Class_Statistics_Adapter_InstituteAbstract
     {
         /*
         if (is_numeric($sparte)) {
-            $spartenModel = new \AppCore\Model\Sparten();
-            $sparte       = $spartenModel->getName($sparte);
+            $categoriesModel = new \AppCore\Model\Sparten();
+            $sparte       = $categoriesModel->getName($sparte);
         }
         /**/
 
@@ -61,7 +61,7 @@ abstract class KreditAdmin_Class_Statistics_Adapter_InstituteAbstract
             $sparte,
             $type,
             array(
-                $field  => new \Zend\Db\Expr("ifnull(`ii`.`ki_name`,'')"),
+                $field  => new \Zend\Db\Expr("ifnull(`ii`.`codename`,'')"),
                 'color' => new \Zend\Db\Expr("ifnull(`ii`.`color`,'ccc')")
             ),
             $this->_filter->getGroupSet()->getTimespanExpression(),

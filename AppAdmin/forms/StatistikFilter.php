@@ -80,7 +80,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             ->setAttrib('multiple', 'multiple')
             ->setAttrib('onchange', 'updateCampaigns(this);');
 
-        $partnerModel = new \AppCore\Model\Portale();
+        $partnerModel = new \AppCore\Model\PartnerSites();
         $select       = $partnerModel->select();
 
         if (null !== $select) {
@@ -103,16 +103,16 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
         $campaigns     = $campaignModel->fetchAll($select->where('p_id = ?', -1)->order('name'));
         */
 
-        $spartenElement = new KreditCore_Class_Form_Element_Select('sparteValue');
-        $spartenElement
+        $categoriesElement = new KreditCore_Class_Form_Element_Select('sparteValue');
+        $categoriesElement
             ->setLabel('Sparten:')
             ->setAttrib('size', '8')
             ->setValue(1);
 
-        $spartenModel = new \AppCore\Model\Sparten();
-        $spartenList  = $spartenModel->fetchAll();
-        foreach ($spartenList as $sparte) {
-            $spartenElement->addMultiOption($sparte['s_id'], $sparte['s_name']);
+        $categoriesModel = new \AppCore\Model\Sparten();
+        $categoriesList  = $categoriesModel->fetchAll();
+        foreach ($categoriesList as $sparte) {
+            $categoriesElement->addMultiOption($sparte['idCategories'], $sparte['name']);
         }
 
         $submitElement = new KreditCore_Class_Form_Element_Submit('submit');
@@ -182,7 +182,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
                 //$interfaceElement,
                 //$beratungAntragElement,
                 //$statusElement,
-                $spartenElement
+                $categoriesElement
             )
         );
 
@@ -193,7 +193,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
         );
         $this->addDisplayGroup(array('portale'), 'gpartner', array('legend' => 'Partner'));
         $this->addDisplayGroup(array('campaigns'), 'gcampaign', array('legend' => 'Kampagne'));
-        $this->addDisplayGroup(array('sparteValue'), 'gsparten', array('legend' => 'Sparte'));
+        $this->addDisplayGroup(array('sparteValue'), 'gcategories', array('legend' => 'Sparte'));
 
         $this->addElements(
             array(

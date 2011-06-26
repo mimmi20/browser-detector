@@ -60,22 +60,22 @@
                             'module' => 'kredit-admin',
                             'controller' => 'url',
                             'action'  => 'edit',
-                            'product' => $url->kp_id,
-                            'url'     => $url->tku_id
+                            'product' => $url->idProducts,
+                            'url'     => $url->idUrls
                         )); ?>/">&nbsp;</a>
                         </td>
-                        <td><?php echo $url->tku_id; ?></td>
+                        <td><?php echo $url->idUrls; ?></td>
                         <td><?php echo $url->portal; ?></td>
-                        <td class="url"><?php echo $url->tku_url; ?></td>
-                        <td class="url"><?php echo $url->tku_url_teaser; ?></td>
-                        <td><?php echo $url->tku_pixel; ?></td>
-                        <td><?php echo $url->tku_pixel_teaser; ?></td>
-                        <td><a href="<?php echo $this->home; ?>admin/backend/setteaser/url/<?php echo $url->tku_id; ?>/produkt/<?php echo $url->kp_id; ?>/teaser/<?php echo $url->tku_teaser; ?>/"><img src="<?php echo $this->imageUrl; ?><?php if (!$url->tku_teaser) { echo 'n';} ?>ok.png" alt="" title="die Url <?php echo $url->tku_id; ?> <?php if ($url->tku_teaser) { echo 'nicht ';} ?>als Teaser markieren" /></a></td>
-                        <td><a href="<?php echo $this->home; ?>admin/backend/setinternal/url/<?php echo $url->tku_id; ?>/produkt/<?php echo $url->kp_id; ?>/internal/<?php echo $url->tku_internal; ?>/"><img src="<?php echo $this->imageUrl; ?><?php if (!$url->tku_internal) { echo 'n';} ?>ok.png" alt="" title="die Url <?php echo $url->tku_id; ?> <?php if ($url->tku_internal) { echo 'nicht ';} ?>f&uuml;r die interne Antragsstrecke markieren" /></a></td>
-                        <td><?php echo $url->tku_teaser_lz; ?></td>
+                        <td class="url"><?php echo $url->url; ?></td>
+                        <td class="url"><?php echo $url->urlTeaser; ?></td>
+                        <td><?php echo $url->pixel; ?></td>
+                        <td><?php echo $url->pixel_teaser; ?></td>
+                        <td><a href="<?php echo $this->home; ?>admin/backend/setteaser/url/<?php echo $url->idUrls; ?>/produkt/<?php echo $url->idProducts; ?>/teaser/<?php echo $url->teaser; ?>/"><img src="<?php echo $this->imageUrl; ?><?php if (!$url->teaser) { echo 'n';} ?>ok.png" alt="" title="die Url <?php echo $url->idUrls; ?> <?php if ($url->teaser) { echo 'nicht ';} ?>als Teaser markieren" /></a></td>
+                        <td><a href="<?php echo $this->home; ?>admin/backend/setinternal/url/<?php echo $url->idUrls; ?>/produkt/<?php echo $url->idProducts; ?>/internal/<?php echo $url->internal; ?>/"><img src="<?php echo $this->imageUrl; ?><?php if (!$url->internal) { echo 'n';} ?>ok.png" alt="" title="die Url <?php echo $url->idUrls; ?> <?php if ($url->internal) { echo 'nicht ';} ?>f&uuml;r die interne Antragsstrecke markieren" /></a></td>
+                        <td><?php echo $url->teaserLz; ?></td>
                         <td>
                             <div class="trash"  title="Url l&ouml;schen">
-                                <a href="<?php echo $this->home; ?>admin/backend/deleteurl/product/<?php echo $url->kp_id; ?>/url/<?php echo $url->tku_id; ?>/"></a>
+                                <a href="<?php echo $this->home; ?>admin/backend/deleteurl/product/<?php echo $url->idProducts; ?>/url/<?php echo $url->idUrls; ?>/"></a>
                             </div>
                             <div class="small">TODO: l&ouml;schen ??, Details anzeigen</div>
                         </td>
@@ -138,7 +138,7 @@
                             'module' => 'kredit-admin',
                             'controller' => 'zins',
                             'action'  => 'edit',
-                            'product' => $zins->kp_id,
+                            'product' => $zins->idProducts,
                             'zins'     => $zins->uid
                         )); ?>/">&nbsp;</a>
                         </td>            
@@ -159,7 +159,7 @@
                                         'module' => 'kredit-admin',
                                         'controller' => 'zins',
                                         'action'  => 'delete',
-                                        'product' => $zins->kp_id,
+                                        'product' => $zins->idProducts,
                                         'zins'     => $zins->uid
                                         )); ?> 
                                   /">&nbsp;</a>
@@ -167,7 +167,7 @@
                         </td>
                         <td>
                             <div>
-                                <!--<a href="<?php echo $this->home; ?>admin/backend/deleteurl/product/<?php echo $zins->kp_id; ?>/url/<?php echo $zins->uid; ?>/"><img src="<?php echo $this->imageUrl; ?>trash.png" title="Url l&ouml;schen" /></a>-->
+                                <!--<a href="<?php echo $this->home; ?>admin/backend/deleteurl/product/<?php echo $zins->idProducts; ?>/url/<?php echo $zins->uid; ?>/"><img src="<?php echo $this->imageUrl; ?>trash.png" title="Url l&ouml;schen" /></a>-->
                             </div>
                             <div class="info" title="Produkt-Details anzeigen">&nbsp;</div>
                             <div class="small">TODO:Details anzeigen</div>

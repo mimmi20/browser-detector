@@ -21,7 +21,7 @@
             <div class="buttons">
                 <a href="<?php echo $this->basedUrl(array(
                     'module' => 'kredit-admin',
-                    'controller' => 'sparten',
+                    'controller' => 'categories',
                     'action' => 'edit',
                     'sparte' => 0
                 )) ?>/">neue Sparte anlegen</a>
@@ -50,44 +50,44 @@
 if (isset($this->paginator) && is_object($this->paginator)) :
 foreach ($this->paginator->getItemsByPage($this->paginator->getCurrentPageNumber()) as $sparte) :
 ?>
-                    <tr class="<?php echo $this->cycle(array('fstRow','scdRow'))->next(); ?>" title="die Sparte '<?php echo $sparte->s_name; ?>' ist <?php if (!$sparte->active) { echo 'nicht ';} ?>aktiviert">
+                    <tr class="<?php echo $this->cycle(array('fstRow','scdRow'))->next(); ?>" title="die Sparte '<?php echo $sparte->name; ?>' ist <?php if (!$sparte->active) { echo 'nicht ';} ?>aktiviert">
                         <td class="first edit" title="Sparte bearbeiten"><a href="<?php echo $this->basedUrl(array(
                             'module' => 'kredit-admin',
-                            'controller' => 'sparten',
+                            'controller' => 'categories',
                             'action' => 'edit',
-                            'sparte' => $sparte->s_id
+                            'sparte' => $sparte->idCategories
                         )); ?>">&nbsp;</a>
                         </td>
-                        <td><?php echo $sparte->s_id; ?></td>
-                        <td><?php echo $sparte->s_name; ?></td>
+                        <td><?php echo $sparte->idCategories; ?></td>
+                        <td><?php echo $sparte->name; ?></td>
                         <td><?php echo $sparte->defaultLaufzeit; ?></td>
                         <td><?php echo $sparte->LEAD_Id; ?></td>
                         <td><?php echo $sparte->Code; ?></td>
 <?php
 if (!$sparte->active) {
     $class = 'nok';
-    $title = "die Sparte '$sparte->s_name' aktivieren";
+    $title = "die Sparte '$sparte->name' aktivieren";
 } else {
     $class = 'ok';
-    $title = "die Sparte '$sparte->s_name' deaktivieren";
+    $title = "die Sparte '$sparte->name' deaktivieren";
 }
 ?>
                         <td class="<?php echo $class; ?>" title="<?php echo $title; ?>">
                             <a href="<?php echo $this->basedUrl(array(
                                 'module' => 'kredit-admin',
-                                'controller' => 'sparten',
+                                'controller' => 'categories',
                                 'action' => 'activate',
-                                'sparte' => $sparte->s_id,
+                                'sparte' => $sparte->idCategories,
                                 'aktiv'  => $sparte->active
                             )) ?>/">&nbsp;</a></td>
                         <td>
-                            <div class="info" title="Produkte anzeigen">
+                            <div class="info" title="Products anzeigen">
                                 <a href="<?php echo $this->basedUrl(array(
                                     'module' => 'kredit-admin',
                                     'controller' => 'products',
                                     'action' => 'index',
-                                    'sparte' => $sparte->s_id
-                                )) ?>/">Produkte anzeigen</a>
+                                    'sparte' => $sparte->idCategories
+                                )) ?>/">Products anzeigen</a>
                             </div>
                             <div class="small">TODO: l&ouml;schen ??, Details anzeigen</div>
                         </td>
@@ -100,7 +100,7 @@ endif;
             </table>
         </div>
         <div class="filter">
-            <?php if (null !== $this->queryPaginator) echo $this->paginationControl($this->queryPaginator, 'Sliding', 'pagination.phtml', array('module' => 'kredit-admin','controller' => 'sparten','action'  => 'index')); ?>
+            <?php if (null !== $this->queryPaginator) echo $this->paginationControl($this->queryPaginator, 'Sliding', 'pagination.phtml', array('module' => 'kredit-admin','controller' => 'categories','action'  => 'index')); ?>
             <div class="clear"></div>
         </div>
     </div>
