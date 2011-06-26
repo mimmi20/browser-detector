@@ -76,7 +76,7 @@ class Zins extends ModelAbstract
 
         if (!isset(self::$_prepared['getzins'])) {
             $select = $this->select();
-            $select->where('kp_id = :product');
+            $select->where('idProducts = :product');
             $select->where('laufzeit = :laufzeit');
             $select->where('betrag <= :betrag');
             $select->where(new \Zend\Db\Expr('NOT zinssatz IS NULL'));

@@ -203,9 +203,9 @@ class \AppCore\Credit\Antrag extends \AppCore\Credit\CreditAbstract
         $institut   = null;
         $sparteName = null;
 
-        $modelProdukte = new \AppCore\Service\Produkte();
+        $modelProducts = new \AppCore\Service\Products();
         if (!$this->_product
-            || !$modelProdukte->lade($this->_product, $institut, $sparteName)
+            || !$modelProducts->lade($this->_product, $institut, $sparteName)
         ) {
             $data['reason'] = 'product not available';
 
@@ -219,8 +219,8 @@ class \AppCore\Credit\Antrag extends \AppCore\Credit\CreditAbstract
             return $data;
         }
 
-        $product = $modelProdukte->find($this->_product)->current();
-        $usages  = explode(',', $product->kp_usages);
+        $product = $modelProducts->find($this->_product)->current();
+        $usages  = explode(',', $product->usages);
         if (!in_array($this->_zweck, $usages)) {
             //product is not available for the selected useage
             $data['reason'] = 'wrong usage';
@@ -1429,7 +1429,7 @@ class \AppCore\Credit\Antrag extends \AppCore\Credit\CreditAbstract
         }
 
         $ids           = $this->_loadPaid($requestData['caid']);
-        $portalService = new \AppCore\Service\Portale();
+        $portalService = new \AppCore\Service\PartnerSites();
 
         $subject = ((isset($requestData['test']) && $requestData['test'])
                  ? '!!Test!! - ': '')

@@ -40,7 +40,7 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
     /**
      * function called after routing the request
      *
-     * TODO: aufspalten: Module-abhängige Teile verlagern
+     * TODO: aufspalten: Module-abhÃ¤ngige Teile verlagern
      *
      * @param \Zend\Controller\Request\AbstractRequest $request the Request
      *
@@ -224,9 +224,9 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link log} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
      *
      * @return void
      */

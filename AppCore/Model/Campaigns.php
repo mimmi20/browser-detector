@@ -36,7 +36,7 @@ class Campaigns extends ModelAbstract
      *
      * @var String
      */
-    protected $_primary = 'id_campaign';
+    protected $_primary = 'idCampaigns';
 
     /**
      * array of already used prepared statements
@@ -47,187 +47,72 @@ class Campaigns extends ModelAbstract
     private static $_prepared = array();
 
     /**
-     * cleans a given partner id
+     * cleans a given campaign id
      *
      * @param string $caid        the campaign id
      * @param array  $requestData the given request data
      * @param string $agent       the user agent
      *
-     * @return string|integer
+     * @return integer|null
      */
-    public function cleanCaid($caid, $requestData = array(), $agent = '')
+    public function cleanCaid($caid)
     {
-        if (is_numeric($caid)) {
-            /*
-             * partner id is already numeric
-             * ->no cleaning needed
-             */
-
-            if (0 >= (int) $caid) {
-                return 0;
-            }
-
-            return (int) $caid;
+        if (!$this->_check($caid)) {
+            //campaign id in wrong format
+            return null;
         }
 
-        if (!is_string($caid)) {
-            /*
-             * partner id in wrong format
-             * ->set to default
-             */
-            return 0;
-        }
-
-        if (!is_array($requestData)) {
-            $requestData = array();
-        }
-
-        if (!is_string($agent)) {
-            /*
-             * user agent in wrong format
-             */
-            $agent = '';
-        }
-
-        if (substr($caid, 0, 1) == '_') {
-            $caid = substr($caid, 1);
-        }
-
-        /*
-         * rewrite caid, because of wrong portal implementation in the past
-         */
-        if ($caid == 'preisvergleichde'
-            && isset($requestData['portal'])
-            && $requestData['portal'] == 'finanzen.shopping.de'
-        ) {
-            $caid = 'shoppingde';
-        }
-        if ($caid == 'geldde'
-            && $agent == 'auto.de'
-        ) {
-            $caid = 'autode';
-        }
-
-        /*
-         * rewrite caid to test campaign, if test flag is set
-         */
-        if (isset($requestData['unitest']) && substr($caid, -4) != 'test') {
-            $caid .= 'test';
-        }
-
-        return $caid;
+        return (int) $caid;
     }
 
     /**
-     * cleans a given partner id and loads the partner and host information
+     * cleans a given campaign id and loads the partner and host information
      *
-     * @param string|integer $paid        (input) the partner id to be loaded
+     * @param string|integer $paid        (input) the campaign id to be loaded
      * @param array          $requestData the given request data
      * @param string         $agent       the user agent
-     * @param integer        $paid        the partner id
-     * @param integer        $caid        the campaign id
-     * @param string         $hostname    the hostname from the campaign
+     * @param integer        &$paid       the partner id
+     * @param integer        &$caid       the campaign id
+     * @param string         &$hostname   the hostname from the campaign
      * @param boolean        $isTest      TRUE, if the Request is a test
      *
      * @return boolean
      */
     public function loadCaid(
         $value,
-        $requestData = array(),
-        $agent = '',
-        $paid = null,
-        $caid = null,
-        $hostname = null,
-        $isTest = false)
+        &$paid = null,
+        &$caid = null,
+        &$hostname = null)
     {
-        if (!is_array($requestData)) {
-            $requestData = array();
+        $result = $this->_loadCaid($value);
+
+        if (is_array($result)) {
+            $paid     = $result['paid'];
+            $caid     = $result['caid'];
+            $hostname = $result['hostname'];
+
+            return true;
         }
 
-        if (!is_string($agent)) {
-            $agent = '';
-        }
+        return false;
+    }
 
-        $caid = $this->cleanCaid($value, $requestData, $agent);
-
-        if ($isTest) {
-            $campaign = $this->getTestCampaign($caid);
-
-            if (null !== $campaign) {
-                $caid = (int) $campaign->id_campaign;
-            }
-        }
-
-        if (!$this->checkCaid($caid, false)) {
-            return false;
-        }
-
-        if (is_numeric($caid)) {
-            $postfix = 'n';
-            $type    = \PDO::PARAM_INT;
-        } else {
-            $postfix = 'x';
-            $type    = \PDO::PARAM_STR;
-        }
-
-        if (!isset(self::$_prepared['loadcaid_' . $postfix])) {
-            /**
-             * @var Zend_Db_Table_Select
-             */
-            $select = $this->select()->setIntegrityCheck(false);
-
-            $select->from(
-                array('c' => $this->_name),
-                array(
-                    'name' => 'c.name',
-                    'pid'  => 'c.p_id',
-                    'uid'  => 'c.id_campaign'
-                )
-            );
-
-            if (is_numeric($caid)) {
-                $select->where('`c`.`id_campaign` = :caid');
-            } else {
-                $select->where('`c`.`p_name` = :caid');
-            }
-
-            $select->limit(1);
-
-            self::$_prepared['loadcaid_' . $postfix] =
-                new \Zend\Db\Statement\Pdo($this->_db, $select);
-        }
-
-        $stmt = self::$_prepared['loadcaid_' . $postfix];
-        $stmt->bindParam(':caid', $caid, $type);
-
-        try {
-            $stmt->execute();
-
-            /**
-             * @var stdClass
-             */
-            $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
-        } catch (\Zend\Db\Statement\Exception $e) {
-            $this->_logger->err($e);
-
-            return false;
-        }
-
-        if (isset($rows[0])) {
-            //the campaign was found -> load the data
-            $hostname = $rows[0]->name;
-            $paid     = (int) $rows[0]->pid;
-            $caid     = (int) $rows[0]->uid;
-
-            return array(
-                'caid' => $caid,
-                'paid' => $paid,
-                'hostname' => $hostname
-            );
-        } else {
-            //the campaign was not found
-            return false;
-        }
+    /**
+     * cleans a given campaign id and loads the partner and host information
+     *
+     * @param string|integer $paid        (input) the campaign id to be loaded
+     * @param array          $requestData the given request data
+     * @param string         $agent       the user agent
+     * @param integer        &$paid       the partner id
+     * @param integer        &$caid       the campaign id
+     * @param string         &$hostname   the hostname from the campaign
+     * @param boolean        $isTest      TRUE, if the Request is a test
+     *
+     * @return boolean|array
+     */
+    public function loadCaidArray($value)
+    {
+        return $this->_loadCaid($value);
     }
 
     /**
@@ -237,77 +122,115 @@ class Campaigns extends ModelAbstract
      *
      * @return boolean
      */
-    public function checkCaid($value, $needClean = true)
+    public function checkCaid($value)
     {
-        if (!is_string($value) && !is_numeric($value)) {
-            //partner id in wrong format
+        if (!($caid = $this->cleanCaid($value))) {
+            //campaign id in wrong format
             return false;
         }
 
-        if (is_numeric($value) && 0 >= (int) $value) {
+        if (false === $this->getId($caid)) {
             return false;
         }
 
-        if ($needClean) {
-            $caid = $this->cleanCaid($value, array(), '');
+        return true;
+    }
 
-            if (is_int($caid) && 0 >= $caid) {
-                return false;
-            }
-        } else {
-            $caid = $value;
-        }
+    /**
+     * cleans a given campaign id and loads the partner and host information
+     *
+     * @param integer $caid the campaign id to be loaded
+     *
+     * @return boolean|array
+     */
+    private function _loadCaid($caid)
+    {
+        $row = $this->_load($caid);
 
-        if (is_numeric($caid)) {
-            $postfix = 'n';
-            $type    = \PDO::PARAM_INT;
-        } else {
-            $postfix = 'x';
-            $type    = \PDO::PARAM_STR;
-        }
-
-        if (!isset(self::$_prepared['checkcaid_' . $postfix])) {
-            /**
-             * @var Zend_Db_Table_Select
-             */
-            $select = $this->select();
-            $select->from(
-                array('c' => $this->_name),
-                array('count' => new \Zend\Db\Expr('COUNT(*)'))
+        if (is_object($row) && $row instanceof \Zend\Db\Table\Row) {
+            //the campaign was found -> load the data
+            return array(
+                'caid'     => (int) $row->idCampaigns,
+                'paid'     => (int) $row->idPartnerSites,
+                'hostname' => $row->name
             );
-            if (is_numeric($caid)) {
-                $select->where('`c`.`id_campaign` = :caid');
-            } else {
-                $select->where('`c`.`p_name` = :caid');
-            }
-
-            $select->limit(1);
-
-            self::$_prepared['checkcaid_' . $postfix] =
-                new \Zend\Db\Statement\Pdo($this->_db, $select);
         }
 
-        $stmt = self::$_prepared['checkcaid_' . $postfix];
-        $stmt->bindParam(':caid', $caid, $type);
+        //the campaign was not found
+        return false;
+    }
 
-        try {
-            $stmt->execute();
+    /**
+     * loads a campaign rowset
+     *
+     * @param integer $campaignId
+     *
+     * @return \Zend\Db\Table\Row|null
+     */
+    private function _load($campaignId)
+    {
+        $campaignId = $this->getId($this->cleanCaid($campaignId));
 
-            /**
-             * @var stdClass
-             */
-            $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
-        } catch (\Zend\Db\Statement\Exception $e) {
-            $this->_logger->err($e);
+        if (false === $campaignId) {
+            //campaignId ist not valid
+            return null;
+        }
 
+        $row = $this->find($campaignId)->current();
+
+        if (is_object($row) && $row instanceof \Zend\Db\Table\Row) {
+            return $row;
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * checks, if a campaign id is a positive number or a string
+     *
+     * @param mixed $caid the value to check
+     *
+     * @return boolean
+     */
+    private function _check($caid)
+    {
+        if (!is_numeric($caid)) {
+            //campaign id in wrong format
             return false;
         }
 
-        if (isset($rows[0]) && $rows[0]->count) {
-            //Campaign exists
-            return true;
+        if (0 >= (int) $caid) {
+            //negative numbers are not allowed
+            return false;
         }
 
+        if (!$caid) {
+            /*
+             * campaign id in wrong format
+             */
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * checks, if a campaign for the given id is activated
+     *
+     * @param integer $caid der Wert, der geprüft werden soll
+     *
+     * @return boolean
+     */
+    public function isActive($caid)
+    {
+        $row = $this->_load($caid);
+
+        if (is_object($row) && $row instanceof \Zend\Db\Table\Row) {
+            //the campaign was found -> load the data
+            return (boolean) $row->active;
+        }
+
+        //the campaign was not found
         return false;
     }
 
@@ -321,55 +244,27 @@ class Campaigns extends ModelAbstract
      */
     public function getId($value = null)
     {
-        if (empty($value)) {
-            //partner id in wrong format
-            return false;
-        }
-
-        if (!is_string($value) && !is_numeric($value)) {
-            //partner id in wrong format
-            return false;
-        }
-
-        if (is_numeric($value) && 0 >= (int) $value) {
-            return false;
-        }
-
         $value = $this->cleanCaid($value);
 
-        if (is_numeric($value)) {
-            $postfix = 'n';
-            $type    = \PDO::PARAM_INT;
-        } else {
-            $postfix = 'x';
-            $value   = ucfirst(strtolower($value));
-            $type    = \PDO::PARAM_STR;
-        }
-
-        if (!isset(self::$_prepared['getid_' . $postfix])) {
+        if (!isset(self::$_prepared['getid'])) {
             /**
              * @var Zend_Db_Table_Select
              */
             $select = $this->select();
             $select->from(
                 array('c' => $this->_name),
-                array('id' => 'id_campaign')
+                array('id' => 'idCampaigns')
             );
 
-            if (is_numeric($value)) {
-                $select->where('`c`.`id_campaign` = :caid');
-            } else {
-                $select->where('`c`.`p_name` = :caid');
-            }
-
+            $select->where('`c`.`idCampaigns` = :caid');
             $select->limit(1);
 
-            self::$_prepared['getid_' . $postfix] =
-                new \Zend\Db\Statement\Pdo($this->_db, $select);
+            self::$_prepared['getid'] =
+                new \Zend\Db\Statement\Pdo($this->_db, $select->assemble());
         }
 
-        $stmt = self::$_prepared['getid_' . $postfix];
-        $stmt->bindParam(':caid', $value, $type);
+        $stmt = self::$_prepared['getid'];
+        $stmt->bindParam(':caid', $value, \PDO::PARAM_INT);
 
         try {
             $stmt->execute();
@@ -394,205 +289,125 @@ class Campaigns extends ModelAbstract
     /**
      * returns the id for a campaign
      *
-     * @param mixed $value id or name of the campaign
+     * @param integer|string $value id or name of the campaign
+     *
+     * @return boolean|integer FALSE, if the Campagne don't exist,
+     *                         the  ID of the Campagne otherwise
+     */
+    public function getIdFromName($value = null)
+    {
+        if (!isset(self::$_prepared['getidfromname'])) {
+            /**
+             * @var Zend_Db_Table_Select
+             */
+            $select = $this->select();
+            $select->from(
+                array('c' => $this->_name),
+                array('id' => 'idCampaigns')
+            );
+
+            $select->where('`c`.`name` = :caid');
+            $select->limit(1);
+
+            self::$_prepared['getidfromname'] =
+                new \Zend\Db\Statement\Pdo($this->_db, $select->assemble());
+        }
+
+        $stmt = self::$_prepared['getidfromname'];
+        $stmt->bindParam(':caid', $value, \PDO::PARAM_STR);
+
+        try {
+            $stmt->execute();
+
+            /**
+             * @var stdClass
+             */
+            $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
+        } catch (\Zend\Db\Statement\Exception $e) {
+            $this->_logger->err($e);
+
+            return false;
+        }
+
+        if (!isset($rows[0]) || !isset($rows[0]->id)) {
+            return false;
+        } else {
+            return (int) $rows[0]->id;
+        }
+    }
+
+    /**
+     * returns the id for a campaign
+     *
+     * @param mixed $campaignId id or name of the campaign
      *
      * @return string ein leerer String, wenn die Kampagne nicht existiert,
      *                ansonsten der Name der Kampagne
      * @access protected
      */
-    public function getPortalName($value)
+    public function getPortalName($campaignId)
     {
-        return $this->_getName($value, false);
+        $portal = $this->getPortal($campaignId);
+        
+        return $prtal->getName();
     }
 
     /**
      * returns the name for a campaign
      *
-     * @param mixed $value id or name of the campaign
+     * @param integer $caid id or name of the campaign
      *
-     * @return string ein leerer String, wenn die Kampagne nicht existiert,
-     *                ansonsten der Name der Kampagne
-     * @access protected
+     * @return string an empty String, if the campaign does not exist,
+     *                the campaign name otherwise
      */
-    public function getCampaignName($value)
+    public function getCampaignName($caid)
     {
-        return $this->_getName($value, true);
-    }
+        $row = $this->_load($caid);
 
-    /**
-     * this function is a alias for {@link getCampaignName}
-     *
-     * @param mixed $value id or name of the campaign
-     *
-     * @return string ein leerer String, wenn die Kampagne nicht existiert,
-     *                ansonsten der Name der Kampagne
-     * @access protected
-     */
-    public function getName($value)
-    {
-        return $this->_getName($value, true);
+        if (is_object($row) && $row instanceof \Zend\Db\Table\Row) {
+            //the campaign was found -> load the data
+            return $row->name;
+        }
+        
+        return null;
     }
 
     /**
      * returns the id for a campaign
      *
-     * @param mixed   $value id or name of the campaign
-     * @param boolean $p     a flag to tell if the name of the campaign or
-     *                       the name of the portal should be returned
-     *
-     * @return string an empty string, if the campaign don't exist,
-     *                the name of the campaign/portal otherwise
-     * @access protected
-     */
-    private function _getName($value, $p = true)
-    {
-        if (!is_string($value) && !is_numeric($value)) {
-            //partner id in wrong format
-            return '';
-        }
-
-        if (is_numeric($value) && 0 >= (int) $value) {
-            return '';
-        }
-
-        $value = $this->cleanCaid($value);
-
-        if (is_numeric($value)) {
-            $postfix = 'n';
-            $type    = \PDO::PARAM_INT;
-        } else {
-            $value = ucfirst(strtolower($value));
-            $type  = \PDO::PARAM_STR;
-
-            if ($p) {
-                $postfix = 'p';
-            } else {
-                $postfix = 'x';
-            }
-        }
-
-        if (!isset(self::$_prepared['getname_' . $postfix])) {
-            /**
-             * @var Zend_Db_Table_Select
-             */
-            $select = $this->select();
-            $select->from(
-                array('c' => $this->_name),
-                array('name' => 'p_name')
-            );
-
-            if (is_numeric($value)) {
-                $select->where('`c`.`id_campaign` = :name');
-            } else {
-                if ($p) {
-                    $select->where('`c`.`p_name` = :name');
-                } else {
-                    $select->where('`c`.`name` = :name');
-                }
-            }
-
-            $select->limit(1);
-
-            self::$_prepared['getname_' . $postfix] =
-                new \Zend\Db\Statement\Pdo($this->_db, $select);
-        }
-
-        $stmt = self::$_prepared['getname_' . $postfix];
-        $stmt->bindParam(':name', $value, $type);
-
-        try {
-            $stmt->execute();
-
-            /**
-             * @var stdClass
-             */
-            $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
-        } catch (\Zend\Db\Statement\Exception $e) {
-            $this->_logger->err($e);
-
-            return '';
-        }
-
-        if (!isset($rows[0]) || !isset($rows[0]->name)) {
-            return '';
-        } else {
-            return $rows[0]->name;
-        }
-    }
-
-    /**
-     * returns the id for a campaign
-     *
-     * @param mixed $value id or name of the campaign
+     * @param integer $caid id or name of the campaign
      *
      * @return string ein leerer String, wenn die Kampagne nicht existiert,
      *                ansonsten der Name der Kampagne
      * @access protected
      */
-    public function getLine($value)
+    public function getLine($caid)
     {
-        if (!is_string($value) && !is_numeric($value)) {
-            //partner id in wrong format
-            return 'oneStep';
-        }
+        $row = $this->_load($caid);
 
-        if (is_numeric($value) && 0 >= (int) $value) {
-            return 'oneStep';
-        }
-
-        $value = $this->cleanCaid($value);
-
-        if (is_numeric($value)) {
-            $postfix = 'n';
-            $type    = \PDO::PARAM_INT;
-        } else {
-            $postfix = 'x';
-            $value   = ucfirst(strtolower($value));
-            $type    = \PDO::PARAM_STR;
-        }
-
-        if (!isset(self::$_prepared['getline_' . $postfix])) {
-            /**
-             * @var Zend_Db_Table_Select
-             */
-            $select = $this->select();
-            $select->from(
-                array('c' => $this->_name),
-                array('creditLine')
-            );
-
-            if (is_numeric($value)) {
-                $select->where('`c`.`id_campaign` = :caid');
-            } else {
-                $select->where('`c`.`p_name` = :caid');
-            }
-
-            $select->limit(1);
-
-            self::$_prepared['getline_' . $postfix] =
-                new \Zend\Db\Statement\Pdo($this->_db, $select);
-        }
-
-        $stmt = self::$_prepared['getline_' . $postfix];
-        $stmt->bindParam(':caid', $value, $type);
-
-        try {
-            $stmt->execute();
-
-            /**
-             * @var stdClass
-             */
-            $rows = $stmt->fetchAll(\PDO::FETCH_OBJ);
-        } catch (\Zend\Db\Statement\Exception $e) {
-            $this->_logger->err($e);
-
-            return 'oneStep'; //default
-        }
-
-        if (!isset($rows[0]) || !isset($rows[0]->creditLine)) {
+        if (!is_object($row) || !isset($row->creditLine)) {
             return 'oneStep'; //default
         } else {
-            return $rows[0]->creditLine;
+            return $row->creditLine;
+        }
+    }
+
+    /**
+     * returns the color for a campaign
+     *
+     * @param integer $caid id or name of the campaign
+     *
+     * @return string the string 'ddd', if the campaign does not exist,
+     *                the name of the campaign color otherwise
+     */
+    public function getColor($caid)
+    {
+        $row = $this->_load($caid);
+
+        if (!is_object($row) || !isset($row->color)) {
+            return 'ddd'; //default
+        } else {
+            return $row->color;
         }
     }
 
@@ -648,16 +463,16 @@ class Campaigns extends ModelAbstract
                 ) {
                     $parentList->where('p_id IN (:portal)');
                 } elseif (is_string($portalId)) {
-                    $parentList->where('p_name = :portal');
+                    $parentList->where('name = :portal');
                 } elseif (is_numeric($portalId)) {
                     $parentList->where('p_id = :portal');
                 }
             }
 
-            $parentList->order('p_id', 'p_name');
+            $parentList->order('p_id', 'name');
 
             if (!$withTests) {
-                $parentList->where('p_name not like \'%test\'');
+                $parentList->where('name not like \'%test\'');
             }
 
             self::$_prepared['getfromportal_' . $postfix] =
@@ -714,7 +529,7 @@ class Campaigns extends ModelAbstract
             return null;
         }
 
-        $newCampaignId = $this->getId($portal->p_name);
+        $newCampaignId = $this->getIdFromName($portal->name);
         $campaign      = $this->find($newCampaignId)->current();
 
         if (is_object($campaign)) {
@@ -725,7 +540,7 @@ class Campaigns extends ModelAbstract
     }
 
     /**
-     * returns an \\AppCore\\Service\Portal object for an campaign id
+     * returns an \AppCore\Service\Portal object for an campaign id
      *
      * @param integer $campaignId
      *
@@ -734,7 +549,7 @@ class Campaigns extends ModelAbstract
      */
     public function getPortal($campaignId)
     {
-        $dbPortale = new \AppCore\Service\Portale();
+        $dbPortale = new \AppCore\Service\PartnerSites();
 
         return $dbPortale->loadByCampaign($campaignId);
     }
@@ -745,7 +560,6 @@ class Campaigns extends ModelAbstract
      * @param integer $campaignId
      *
      * @return \Zend\Db\Table\Row
-     * @access public
      */
     public function getTestCampaign($campaignId)
     {
@@ -762,23 +576,23 @@ class Campaigns extends ModelAbstract
         }
 
         //aktuelle Kampagne ist eine Test-Kampagne
-        if (substr($campaign->p_name, -4) == 'test') {
+        if (substr($campaign->name, -4) == 'test') {
             return $campaign;
         }
 
         $defaultCampaign = $this->getDefaultCampaign($campaignId);
 
         if (null === $defaultCampaign
-            || null === $defaultCampaign->id_campaign
+            || null === $defaultCampaign->idCampaigns
         ) {
             return null;
         }
 
-        if (substr($defaultCampaign->p_name, -4) == 'test') {
+        if (substr($defaultCampaign->name, -4) == 'test') {
             return $defaultCampaign;
         }
 
-        $newCampaignId = $this->getId($defaultCampaign->p_name . 'test');
+        $newCampaignId = $this->getId($defaultCampaign->name . 'test');
 
         if (false === $newCampaignId) {//keine Test-Kampagne vorhanden
             return null;
@@ -808,17 +622,12 @@ class Campaigns extends ModelAbstract
      * was found.
      *
      * @param  mixed $key The value(s) of the primary keys.
-     * @return \Zend\Db\Table\Rowset_Abstract Row(s) matching the criteria.
-     * @throws Zend_Db_Table_Exception
+     * @return \Zend\Db\Table\Rowset\Abstract Row(s) matching the criteria.
+     * @throws \Zend\Db\Table\Exception
      */
     public function find($campaignId = null)
     {
-        if (!is_numeric($campaignId)) {
-            //partner id in wrong format
-            $campaignId = 0;
-        } elseif (0 >= (int) $campaignId) {
-            $campaignId = 0;
-        }
+        $campaignId = (int) $this->getId($campaignId);
 
         $campaignId = $this->cleanCaid($campaignId);
 
@@ -835,10 +644,10 @@ class Campaigns extends ModelAbstract
                 array('c' => $this->_name)
             );
 
-            $select->where('`c`.`id_campaign` = :caid');
+            $select->where('`c`.`idCampaigns` = :caid');
 
             self::$_prepared['find'] =
-                new \Zend\Db\Statement\Pdo($this->_db, $select);
+                new \Zend\Db\Statement\Pdo($this->_db, $select->assemble());
         }
 
         $stmt = self::$_prepared['find'];

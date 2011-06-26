@@ -29,14 +29,14 @@ class Sparten extends ModelAbstract
      *
      * @var String
      */
-    protected $_name = 'sparten';
+    protected $_name = 'categories';
 
     /**
      * Primary key
      *
      * @var String
      */
-    protected $_primary = 's_id';
+    protected $_primary = 'idCategories';
 
     /**
      * array of already used prepared statements
@@ -79,9 +79,9 @@ class Sparten extends ModelAbstract
                 array('count' => new \Zend\Db\Expr('COUNT(*)'))
             );
             if (is_numeric($value)) {
-                $select->where('s.s_id = :sparte');
+                $select->where('s.idCategories = :sparte');
             } else {
-                $select->where('s.s_name = :sparte');
+                $select->where('s.name = :sparte');
             }
             $select->where(new \Zend\Db\Expr('s.active = 1'));
 
@@ -149,13 +149,13 @@ class Sparten extends ModelAbstract
             $select = $this->select();
             $select->from(
                 array('s' => $this->_name),
-                array('id' => 's_id')
+                array('id' => 'idCategories')
             );
 
             if (is_numeric($value)) {
-                $select->where('s.s_id = :sparte');
+                $select->where('s.idCategories = :sparte');
             } else {
-                $select->where('s.s_name = :sparte');
+                $select->where('s.name = :sparte');
             }
 
             $select->where(new \Zend\Db\Expr('s.active = 1'));
@@ -217,7 +217,7 @@ class Sparten extends ModelAbstract
             return false;
         }
 
-        return $name->s_name;
+        return $name->name;
     }
 
     /**
@@ -247,9 +247,9 @@ class Sparten extends ModelAbstract
             $select = $this->select();
 
             if (is_numeric($sparte)) {
-                $select->where('s_id = :sparte');
+                $select->where('idCategories = :sparte');
             } else {
-                $select->where('s_name = :sparte');
+                $select->where('name = :sparte');
             }
             $select->limit(1);
 
@@ -298,13 +298,13 @@ class Sparten extends ModelAbstract
      * @return \Zend\Db\Table\Rowset_Abstract Row(s) matching the criteria.
      * @throws Zend_Db_Table_Exception
      */
-    public function find($spartenId = null)
+    public function find($categoriesId = null)
     {
-        if (!is_numeric($spartenId)) {
+        if (!is_numeric($categoriesId)) {
             //partner id in wrong format
-            $spartenId = 0;
-        } elseif (0 >= (int) $spartenId) {
-            $spartenId = 0;
+            $categoriesId = 0;
+        } elseif (0 >= (int) $categoriesId) {
+            $categoriesId = 0;
         }
 
         if (!isset(self::$_prepared['find'])) {
@@ -316,13 +316,13 @@ class Sparten extends ModelAbstract
                 array('i' => $this->_name)
             );
 
-            $select->where('`i`.`s_id` = :id');
+            $select->where('`i`.`idCategories` = :id');
             self::$_prepared['find'] =
                 new \Zend\Db\Statement\Pdo($this->_db, $select);
         }
 
         $stmt = self::$_prepared['find'];
-        $stmt->bindParam(':id', $spartenId, \PDO::PARAM_INT);
+        $stmt->bindParam(':id', $categoriesId, \PDO::PARAM_INT);
 
         try {
             $stmt->execute();

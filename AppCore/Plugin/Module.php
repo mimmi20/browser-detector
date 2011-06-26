@@ -37,24 +37,7 @@ class Module extends \Zend\Controller\Plugin\AbstractPlugin
     public function dispatchLoopStartup(
         \Zend\Controller\Request\AbstractRequest $request)
     {
-        //Init and inflect Layout
-        $layout = \Zend\Layout\Layout::getMvcInstance();
-        $module = $request->getModuleName();
-
-        $front     = \Zend\Controller\Front::getInstance();
-        $moduleDir = $front->getModuleDirectory($module);
         
-        $layout->setLayoutPath(
-            APPLICATION_PATH . DS . 'layouts' . DS . 'scripts' . DS
-        );
-
-        if (\Zend\Registry::get('_urlType') == 'INT') {
-            //No Include set Layout to Module Name
-            $layout->setLayout('default', false);
-        } else {
-            //Include, set Layout to embedded
-            $layout->setLayout('embedded', false);
-        }
     }
 
     /**

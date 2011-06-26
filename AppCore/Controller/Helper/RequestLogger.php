@@ -46,39 +46,32 @@ class RequestLogger extends \Zend\Controller\Action\Helper\AbstractHelper
     public function log()
     {
         $request = $this->getRequest();
+        $ip      = $this->_getIp();
 
-        /*
-         * log only, if calculation is //required
-         * and it is't a unit test
-         */
-        if (SERVER_ONLINE_TEST == APPLICATION_ENV
-            || SERVER_ONLINE_TEST2 == APPLICATION_ENV
-        ) {
-            $request->setParam('requestId', null);
-
-            return;
-        }
-
-        $this->_requestData = $request->getParams();
-        $ip                 = $this->_getIp();
-
-        $agentId = $this->getActionController()->getHelper('GetParam')->direct('agentId');
-        $isTest  = $this->getActionController()->getHelper('GetParam')->direct('isTest', false);
+        $browserId  = $this->getActionController()->getHelper('GetParam')->direct('browserId');
+        $agentId    = $this->getActionController()->getHelper('GetParam')->direct('agentId');
+        $campaignId = $this->getActionController()->getHelper('GetParam')->direct('caid');
+        $isTest     = $this->getActionController()->getHelper('GetParam')->direct('isTest', false);
 
         // store the request into database and connect to session
         $daten = array(
-            'host'      => $request->getServer('HTTP_HOST'),
-            'agent_id'  => $agentId,
-            'accept'    => $request->getServer('HTTP_ACCEPT'),
-            'language'  => $request->getServer('HTTP_ACCEPT_LANGUAGE'),
-            'encoding'  => $request->getServer('HTTP_ACCEPT_ENCODING'),
-            'charset'   => $request->getServer('HTTP_ACCEPT_CHARSET'),
-            'cookie'    => $request->getServer('HTTP_COOKIE'),
-            'IP'        => $ip,
-            'uri'       => $request->getRequestUri(),
-            'referrer'  => $request->getServer('HTTP_REFERER'),
-            'SessionId' => session_id(),
-            'isTest'    => (int) $isTest
+            'protocol'    => $request->getServer('SERVER_PROTOCOL'),
+            'method'      => $request->getServer('REQUEST_METHOD'),
+            'host'        => $request->getServer('HTTP_HOST'),
+            'idCampaigns' => ($campaignId ? $campaignId : new \Zend\Db\Expr('NULL')),
+            'idBrowsers'  => ($browserId ? $browserId : new \Zend\Db\Expr('NULL')),
+            'idAgents'    => ($agentId ? $agentId : new \Zend\Db\Expr('NULL')),
+            'accept'      => $request->getServer('HTTP_ACCEPT'),
+            'language'    => $request->getServer('HTTP_ACCEPT_LANGUAGE'),
+            'encoding'    => $request->getServer('HTTP_ACCEPT_ENCODING'),
+            'charset'     => $request->getServer('HTTP_ACCEPT_CHARSET'),
+            'cookie'      => $request->getServer('HTTP_COOKIE'),
+            'IP'          => $ip,
+            'uri'         => $request->getRequestUri(),
+            'referrer'    => $request->getServer('HTTP_REFERER'),
+            'SessionId'   => session_id(),
+            'isTest'      => (int) $isTest,
+            'fullRequest' => \Zend\Json\Json::encode($request->getServer())
         );
 
         $requestModel = new \AppCore\Model\Requests();
@@ -89,9 +82,9 @@ class RequestLogger extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link log} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
      *
      * @return void
      */

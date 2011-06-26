@@ -49,7 +49,7 @@ class LocalizeNumber extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
      * @param int|float   $number
      *

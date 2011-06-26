@@ -132,7 +132,7 @@ abstract class InputAbstract
             $portal = $campaignModel->getPortal($campaignId);
 
             if (is_object($portal)) {
-                $this->setPaid($portal->p_id);
+                $this->setPaid($portal->idPartnerSites);
             } else {
                 $this->setPaid(null);
             }
@@ -370,7 +370,7 @@ abstract class InputAbstract
                            `ttp`.`effZinsUnten`
                    ELSE `ttp`.`effZins` END';
 
-        $model  = new \AppCore\Model\Produkte();
+        $model  = new \AppCore\Model\Products();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('ttp' => '__tmp_table_products'),
@@ -383,7 +383,7 @@ abstract class InputAbstract
                 'kreditAnnahme'           => 'ttp.kreditAnnahme',
                 'kreditTestsieger'        => 'ttp.kreditTestsieger',
                 'kreditEntscheidung'      => 'ttp.kreditEntscheidung',
-                'kreditEntscheidung_Sort' => 'ttp.kreditEntscheidung_Sort',
+                'kreditentscheidungSorted' => 'ttp.kreditentscheidungSorted',
                 'boni'                    => 'ttp.boni',
                 'ordering'                => 'ttp.ordering',
                 'zinsgutschrift'          => 'ttp.zinsgutschrift',
@@ -419,11 +419,11 @@ abstract class InputAbstract
         );
 
         $select->joinLeft(
-            array('p' => 'produkte'),
-            '`ttp`.`product` = `p`.`kp_id`',
+            array('p' => 'Products'),
+            '`ttp`.`product` = `p`.`idProducts`',
             array(
                 // Produktinformation
-                'info' => new \Zend\Db\Expr('IFNULL(`p`.`kp_info`, \'\')')
+                'info' => new \Zend\Db\Expr('IFNULL(`p`.`info`, \'\')')
             )
         );
 

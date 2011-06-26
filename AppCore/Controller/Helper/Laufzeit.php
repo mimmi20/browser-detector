@@ -61,9 +61,9 @@ class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link log} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
      *
      * @return string
      */

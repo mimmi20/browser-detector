@@ -36,7 +36,7 @@ class \AppCore\Credit\Output_Iframe
         } else {
             //read URL for offer
             $offerLnk       = (string) $result->url;
-            $offerLnkTeaser = (string) $result->url_teaser;
+            $offerLnkTeaser = (string) $result->urlTeaser;
 
             if ('' == $offerLnkTeaser) {
                 $offerLnkTeaser = $offerLnk;

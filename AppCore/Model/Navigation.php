@@ -68,7 +68,7 @@ class Navigation extends ModelAbstract
             `n`.`Navigation_Id` IS NULL)' : '(`n`.`Navigation_Id` = ' .
             $parentId . ')') . ' AND (`n`.`active` = 1))',
             array(
-                'res_name'       => 'Name',
+                'rename'       => 'Name',
                 'res_controller' => 'Controller',
                 'res_action'     => 'Action'
             )

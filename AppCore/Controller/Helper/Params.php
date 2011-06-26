@@ -50,7 +50,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
      * @param string $service The name of the Service
      * @param string $module  The name of the module
      *
-     * @return null|array
+     * @return void
      */
     public function get($return = false, $useNegotiation = false)
     {
@@ -83,119 +83,21 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
         $view = $this->getActionController()->view;
 
         $view->setEncoding($encoding);
-        $view->encoding = $encoding;
+        //$view->encoding = $encoding;
 
-        /*
-         * do not preset other values in admin module
-         */
-        if ('kredit-admin' == strtolower($request->getModuleName())) {
-            return $this->_setParams($request, $return);
-        }
-
-        $controller = strtolower($request->getControllerName());
-
-        /*
-         * other values not needed in geo controller
-         */
-        if ('geo' == $controller) {
-            return $this->_setParams($request, $return);
-        }
-
-        $camapignModel = new \AppCore\Service\Campaigns();
-        $caid          = $camapignModel->getId($this->getActionController()->getHelper('GetCampaignId')->direct());
-
-        $partnerId  = '';
-        $campaignId = '';
-        
-        $this->_requestData['paid'] = 0;
-        $this->_requestData['caid'] = 0;
-
-        if ($caid && $this->_loadPaid($caid)) {
-            $this->_requestData['paid'] = $this->_paid;
-            $this->_requestData['caid'] = $this->_caid;
-
-            $portalModel = new \AppCore\Service\Portale();
-            $portal      = $portalModel->find($this->_paid)->current();
-
-            if (is_object($portal)) {
-                $partnerId = $portal->p_name;
-            } else {
-                $this->_logger->err(
-                    'Portal not found for given ID ' . $this->_paid
-                );
-                $partnerId = '';
-            }
-
-            $campaign   = $camapignModel->find($this->_caid)->current();
-            $campaignId = $campaign->p_name;
-        }
-
-        $this->_requestData['partner_id']  = $partnerId;
-        $this->_requestData['campaign_id'] = $campaignId;
-        
-        //var_dump($partnerId, $campaignId);
-
-        \AppCore\Globals::defineImageUrl($partnerId, $campaignId);
-
-        $sparte = $this->getActionController()->getHelper('GetParam')->direct(
-            'sparte',
-            KREDIT_SPARTE_KREDIT,
-            'Alnum'
-        );
-
-        $spartenModel = new \AppCore\Service\Sparten();
-        $sparte       = $spartenModel->getId($sparte);
-        
-        //replace Sparte with its Id
-        $this->_requestData['sparte']      = $sparte;
-        $this->_requestData['spartenName'] = $spartenModel->getName($sparte);
-        
-        return $this->_setParams($request, $return);
+        $this->_setParams($request, $return);
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link log} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
      *
      * @return null|array
      */
     public function direct($return = false)
     {
         return $this->get($return);
-    }
-
-    /**
-     * lädt die Partner/Campaign-ID
-     *
-     * @param integer|string $caid die Partner/Campaign-ID
-     *
-     * @return boolean
-     */
-    private function _loadPaid($caid)
-    {
-        if (!is_string($caid) && !is_int($caid)) {
-            $this->_paid     = 0;
-            $this->_caid     = 0;
-            $this->_hostName = '';
-
-            return false;
-        }
-
-        $agent = ((isset($_SERVER['HTTP_USER_AGENT']))
-               ? trim($_SERVER['HTTP_USER_AGENT'])
-               : '');
-
-        $model = new \AppCore\Service\Campaigns();
-
-        return $model->loadCaid(
-            $caid,
-            $this->_requestData,
-            $agent,
-            $this->_paid,
-            $this->_caid,
-            $this->_hostName
-        );
     }
 
     /**

@@ -44,7 +44,7 @@ class Sparten extends ServiceAbstract
      */
     public function check($value)
     {
-        return $this->getCached('sparten')->check($value);
+        return $this->getCached('categories')->check($value);
     }
 
     /**
@@ -58,7 +58,7 @@ class Sparten extends ServiceAbstract
      */
     public function getId($value)
     {
-        return $this->_model->getCached('sparten')->getId($value);
+        return $this->_model->getCached('categories')->getId($value);
     }
 
     /**
@@ -72,7 +72,7 @@ class Sparten extends ServiceAbstract
      */
     public function getName($value)
     {
-        return $this->_model->getCached('sparten')->getName($value);
+        return $this->_model->getCached('categories')->getName($value);
     }
 
     /**
@@ -85,7 +85,7 @@ class Sparten extends ServiceAbstract
      */
     public function getDefaultLaufzeit($sparte)
     {
-        return $this->_model->getCached('sparten')->getDefaultLaufzeit($sparte);
+        return $this->_model->getCached('categories')->getDefaultLaufzeit($sparte);
     }
 
     /**
@@ -106,9 +106,9 @@ class Sparten extends ServiceAbstract
      * @return \Zend\Db\Table\Rowset_Abstract Row(s) matching the criteria.
      * @throws Zend_Db_Table_Exception
      */
-    public function find($spartenId = null)
+    public function find($categoriesId = null)
     {
-        return $this->_model->getCached('campaign')->find($spartenId);
+        return $this->_model->getCached('campaign')->find($categoriesId);
     }
 
     /**
@@ -120,6 +120,6 @@ class Sparten extends ServiceAbstract
      */
     public function cleanCache()
     {
-        return $this->cleanTaggedCache('sparten');
+        return $this->cleanTaggedCache('categories');
     }
 }

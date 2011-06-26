@@ -36,7 +36,7 @@ class Url extends ModelAbstract
      *
      * @var String
      */
-    protected $_primary = 'tku_id';
+    protected $_primary = 'idUrls';
 
     /**
      * returns the actual Zins
@@ -57,8 +57,8 @@ class Url extends ModelAbstract
         }
 
         $select = $this->select();
-        $select->where('kp_id = ?', (int) $productId);
-        $select->where('id_campaign = ?', (int) $caid);
+        $select->where('idProducts = ?', (int) $productId);
+        $select->where('idCampaigns = ?', (int) $caid);
         $select->where(new \Zend\Db\Expr('active = 1'));
         $select->limit(1);
 
@@ -89,10 +89,10 @@ class Url extends ModelAbstract
             return null;
         }
 
-        if ($teaser && $result->tku_url_teaser) {
-            return $result->tku_url_teaser;
+        if ($teaser && $result->urlTeaser) {
+            return $result->urlTeaser;
         }
 
-        return $result->tku_url;
+        return $result->url;
     }
 }

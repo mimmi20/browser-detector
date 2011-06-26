@@ -61,7 +61,7 @@ abstract class FileAbstract extends ControllerAbstract
      *
      * @var string
      */
-    protected $_spartenName = '';
+    protected $_categoriesName = '';
 
     protected $_content = '';
 
@@ -143,7 +143,7 @@ abstract class FileAbstract extends ControllerAbstract
         $this->_campaignId = strtolower(
             $this->_helper->getParam('campaign_id', '', 'Alpha')
         );
-        $this->_spartenName = $this->_helper->getParam('spartenName', '', 'Alpha');
+        $this->_categoriesName = $this->_helper->getParam('categoriesName', '', 'Alpha');
         $this->_mode = strtolower($this->_helper->getParam('mode', 'html', 'Alpha'));
 
         $this->_cache = \Zend\Registry::get('_fileCache');

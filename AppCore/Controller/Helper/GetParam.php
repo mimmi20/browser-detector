@@ -27,9 +27,9 @@ namespace AppCore\Controller\Helper;
 class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
 {
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link log} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
      *
      * @return null|array
      */
@@ -71,11 +71,89 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         $default = null,
         $validator = null)
     {
-        return \AppCore\Globals::getParamFromArray(
-            $this->getRequest()->getParams(),
-            $paramName,
+        $requestData = $this->getRequest()->getParams();
+        
+        if ($paramName === null || count($requestData) == 0) {
+            return $default;
+        }
+
+        if (!isset($requestData[$paramName])
+            || $requestData[$paramName] === null
+        ) {
+            return $default;
+        }
+
+        if (is_object($requestData[$paramName])) {
+            // no other handling for objects
+            return $requestData[$paramName];
+        }
+
+        if (is_array($requestData[$paramName])) {
+            $value = array_pop($requestData[$paramName]);
+        } else {
+            $value = $requestData[$paramName];
+        }
+
+        return $this->getActionController()->getHelper('CheckParam')->direct(
+            $value,
             $default,
-            $validator
+            $this->_defineValidators($validator)
         );
+    }
+
+    /**
+     * defines a Zend_Validate object based on $validator
+     *
+     * @param mixed $validator
+     *
+     * @return Zend_Validate|null
+     */
+    private function _defineValidators($validator)
+    {
+        //create Validator Object, if Validator Type is set
+        if ($validator === null) {
+            return null;
+        }
+
+        if (is_object($validator)
+            && is_subclass_of($validator, '\\Zend\\Validator\\AbstractValidator')
+        ) {
+            //nothing to change
+            return $validator;
+        }
+
+        if (is_string($validator)) {
+            if (substr($validator, 0, 1) == '_') {
+                $validatorTwo = substr($validator, 1);
+            } else {
+                $validatorTwo = '\\Zend\\Validator\\' . $validator;
+            }
+
+            return new $validatorTwo();
+        }
+
+        if (is_array($validator)) {
+            $validatorBase = $validator;
+            $validator     = new \Zend\Validator\ValidatorChain();
+
+            foreach ($validatorBase as $sValidatorName) {
+                if (is_string($sValidatorName)) {
+                    if (substr($sValidatorName, 0, 1) == '_') {
+                        $validatorTwo = substr($sValidatorName, 1);
+                    } else {
+                        $validatorTwo = '\\Zend\\Validator\\' . $sValidatorName;
+                    }
+                    $validator->addValidator(new $validatorTwo());
+                } elseif (is_object($sValidatorName)
+                    && is_subclass_of($sValidatorName, '\\Zend\\Validator\\AbstractValidator')
+                ) {
+                    $validator->addValidator($sValidatorName);
+                }
+            }
+
+            return $validator;
+        } else {
+            return null;
+        }
     }
 }

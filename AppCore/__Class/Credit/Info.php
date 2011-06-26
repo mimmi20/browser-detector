@@ -70,24 +70,24 @@ class KreditCore_Class_Credit_Info extends \AppCore\Credit\CreditAbstract
 
         $institut = null;
 
-        $modelProdukte = new \AppCore\Model\Produkte();
+        $modelProducts = new \AppCore\Model\Products();
         if (!$this->_product
-            || !$modelProdukte->lade($this->_product, $institut, $this->_sparte)
+            || !$modelProducts->lade($this->_product, $institut, $this->_sparte)
         ) {
             //product not given or product is not available or inactive
             return '';
         }
 
-        $product = $modelProdukte->find($this->_product)->current();
+        $product = $modelProducts->find($this->_product)->current();
 
-        $usages  = explode(',', $product->kp_usages);
+        $usages  = explode(',', $product->usages);
         if (!in_array($this->_zweck, $usages)) {
             //product is not available for the selected useage
             return '';
         }
 
         if (null === $fromDb) {
-            $fromDb = ('' != $product->kp_info);
+            $fromDb = ('' != $product->info);
         }
 
         if (\Zend\Registry::isRegistered('_fileCache')) {
@@ -99,9 +99,9 @@ class KreditCore_Class_Credit_Info extends \AppCore\Credit\CreditAbstract
         if (!is_object($this->_cache)
             || !$productinfo = $this->_cache->load($cacheId)
         ) {
-            $max  = $product->kp_rahmen_max;
-            $min  = $product->kp_rahmen_min;
-            $zins = $modelProdukte->getZins(
+            $max  = $product->max;
+            $min  = $product->min;
+            $zins = $modelProducts->getZins(
                 $this->_product,
                 $this->_laufzeit,
                 $this->_betrag
@@ -109,7 +109,7 @@ class KreditCore_Class_Credit_Info extends \AppCore\Credit\CreditAbstract
 
             if ($fromDb) {
                 //get Info from database
-                $productinfo = $product->kp_info;
+                $productinfo = $product->info;
             } else {
                 //get Info from a template
                 if (!$institut) {

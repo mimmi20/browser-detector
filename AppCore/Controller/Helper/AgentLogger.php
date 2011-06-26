@@ -58,18 +58,18 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request->setParam('agent', null);
 
         $browser = $browscap->getBrowser($userAgent, false);
-        var_dump($browser);
+        $caid    = $this->getActionController()->getHelper('GetCampaignId')->direct();
+        //var_dump($browser->Browser, $browser->wurflKey);
         
-        $wurflDb = \Zend\Registry::get('wurfldb');
-        $x = new \TeraWurfl\TeraWurfl(null, $wurflDb);
-        var_dump($x->getDeviceCapabilitiesFromAgent($userAgent));
+        //$wurflDb = \Zend\Registry::get('wurfldb');
+        //$x = new \TeraWurfl\TeraWurfl(null, $wurflDb);
+        //$x->getDeviceCapabilitiesFromAgent($userAgent);
+        //var_dump($x->getDeviceCapability('id'));
 
-        exit;
+        //exit;
         if ('Default Browser' == $browser->Browser) {
             $campaignService = new \AppCore\Service\Campaigns();
-            $campaignName    = $campaignService->getName(
-                $this->getActionController()->getHelper('GetParam')->direct('campaign_id')
-            );
+            $campaignName    = $campaignService->getName($caid);
 
             $browser->Browser .= ' (' . $campaignName . ')';
         }
@@ -89,37 +89,77 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
                 break;
         }
 
-        $oBrowser = new \AppCore\Model\Browser();
+        $oBrowser = new \AppCore\Service\Browsers();
 
         $browserClass = $oBrowser->searchByBrowser(
             $browser->Browser, $browser->Version, $browser->Platform, $bits
         );
 
+        $browserId = null;
+        
+        $db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();
+        
         if ($browserClass) {
-            $request->setParam('agentId', $browserClass->browserId);
+            $browserId = $browserClass->idBrowsers;
         } else {
-            $aBrowser = (array) $browser;
-
+            //var_dump($browser);exit;
+            
+            $aBrowser = array(
+                'browserName'              => $browser->Browser,
+                'platformName'             => $browser->Platform,
+                'platformVersion'          => $browser->Version,
+                'platformMajorVer'         => $browser->MajorVer,
+                'platformMinorVer'         => $browser->MinorVer,
+                'platformIsWin16'          => $browser->Win16,
+                'platformIsWin32'          => $browser->Win32,
+                'platformIsWin64'          => $browser->Win64,
+                'hasAlphaState'            => $browser->Alpha,
+                'hasBetaState'             => $browser->Beta,
+                'supportsFrames'           => $browser->Frames,
+                'supportsIframes'          => $browser->IFrames,
+                'supportsTables'           => $browser->Tables,
+                'supportsCookies'          => $browser->Cookies,
+                'supportsBackgroundSounds' => $browser->BackgroundSounds,
+                'suppertsCdf'              => $browser->CDF,
+                'supportsVbScript'         => $browser->VBScript,
+                'supportsJavaApplets'      => $browser->JavaApplets,
+                'supportsJavaScript'       => $browser->JavaScript,
+                'supportsActiveXControls'  => $browser->ActiveXControls,
+                'supportedCssVersion'      => $browser->CssVersion,
+                'supportsCSS'              => $browser->supportsCSS,
+                'isBanned'                 => $browser->isBanned,
+                'isMobileDevice'           => $browser->isMobileDevice,
+                'isSyndicationReader'      => $browser->isSyndicationReader,
+                'isCrawler'                => $browser->Crawler,
+                'isAol'                    => $browser->AOL,
+                'aolVersion'               => $browser->aolVersion,
+                'wurflKey'                 => $browser->wurflKey
+            );
+            /**/
             //delete array field which are not mapped into database
             unset($aBrowser['browser_name']);
             unset($aBrowser['browser_name_regex']);
             unset($aBrowser['browser_name_pattern']);
-            unset($aBrowser['MajorVer']);
-            unset($aBrowser['MinorVer']);
-            unset($aBrowser['Alpha']);
-            unset($aBrowser['Beta']);
             unset($aBrowser['Parent']);
 
             try {
-                $request->setParam('agentId', $oBrowser->insert($aBrowser));
+                $query = 'INSERT INTO `browsers` (`' . implode('`,`', array_keys($aBrowser)). '`) VALUES (\'' . implode('\',\'', array_values($aBrowser)) . '\') ON DUPLICATE KEY UPDATE `createDate`=unix_timestamp()';
+                $db->query($query);
+                $browserId = $db->lastInsertId();
             } catch (Exception $e) {
                 $this->_logger->error($e);
 
-                $request->setParam('agentId', null);
+                $browserId = null;
             }
         }
 
         $request->setParam('agent', $userAgent);
+        $request->setParam('browserId', $browserId);
+        
+        $query = 'INSERT INTO `agents` (`idBrowsers`,`agent`,`createDate`) VALUES (' . ($browserId ? $browserId : 'NULL') . ', ' . $db->quote($userAgent) . ', unix_timestamp()) ON DUPLICATE KEY UPDATE `createDate`=unix_timestamp()';
+        $db->query($query);
+        $agentId = $db->lastInsertId();
+        $request->setParam('agentId', $agentId);
 
         if ($browser->isBanned) {
             /*
@@ -152,34 +192,20 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
                        ? strip_tags(trim((string) $_SERVER['REMOTE_ADDR']))
                        : '');
 
-        $noResult = false;
-        $noLog    = false;
-        $isTest   = false;
-
-        if (\AppCore\Globals::isBlocked($remoteAddress)) {
-            $noResult = true;
-        }
-
-        /*
-        if ($browser->Crawler || $noResult) {
-            $noLog = true;
-        }
-        */
-
+        $isTest  = false;
         $unitest = (boolean) $this->getActionController()->getHelper('GetParam')->direct('unitest');
         if ($unitest || \AppCore\Globals::isTest($remoteAddress)) {
             $isTest = true;
         }
 
-        //$request->setParam('noLog', $noLog);
-        $request->setParam('noResult', $noResult);
+        $request->setParam('noResult', false);
         $request->setParam('isTest', $isTest);
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link log} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
      *
      * @return void
      */

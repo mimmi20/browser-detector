@@ -92,7 +92,7 @@ class LogAgent extends ModelAbstract
                 $campaigns = '-1';
             }
 
-            $select->where('`la`.`id_campaign` IN (' . $campaigns . ')');
+            $select->where('`la`.`idCampaigns` IN (' . $campaigns . ')');
         }
         $select->where('`la`.`from` = \'C\'');
 

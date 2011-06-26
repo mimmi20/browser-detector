@@ -59,7 +59,6 @@ class Bearbeiter
      * @param string $password the password
      *
      * @return \\AppCore\\Model\Bearbeiter
-     * @access public
      */
     public function setCredentials($userName, $password)
     {
@@ -77,7 +76,6 @@ class Bearbeiter
      * (non-PHPdoc)
      *
      * @return Zend_Auth_Result
-     * @access public
      * @see    library/Zend/Auth/Adapter/Zend_Auth_Adapter_Interface
      */
     public function authenticate()
@@ -87,33 +85,87 @@ class Bearbeiter
         if (null === $this->_userName
             || null === $this->_password
         ) {
-            return new Zend_Auth_Result(
-                Zend_Auth_Result::FAILURE_CREDENTIAL_INVALID,
+            return new \Zend\Auth\Result(
+                \Zend\Auth\Result::FAILURE_CREDENTIAL_INVALID,
                 null,
                 array('Authentifizierung fehlgeschlagen!')
             );
         }
 
         $username = strtolower($this->_userName);
+        $password = md5($this->_password);
 
-        $select->where('Login = 1')
-            ->where('Benutzername = ?', $username)
-            ->where('Passwort = ?', md5($this->_password))/**/;
+        $select->where('`Login` = 1');
 
-        $rows = $this->fetchAll($select);
+        $config = \Zend\Registry::get('_config');
+        if ($config->ldap->enabled == 0) {
+            // check password, if ldap is not enabled
+            $select->where('`Passwort` = ?', $password)
+                ->where('`Benutzername` = ?', $username);
+        } else {
+            $select->where('(`LDapName` = \'' . $username .'\') OR (`Benutzername` = \'' . $username .'\' AND `Passwort` = \'' . $password .'\')');
+        }
 
-        if (isset($rows[0]) && $rows[0]->Benutzername == $username) {
-            return new Zend_Auth_Result(
-                Zend_Auth_Result::SUCCESS,
-                new KreditCore_Class_Auth_Identity($rows[0]),
+        $rows  = $this->fetchAll($select);
+        $valid = false;
+
+        if (isset($rows[0])) {
+            if ($config->ldap->enabled == 0) {
+                if ($rows[0]->Benutzername == $username) {
+                    $valid = true;
+                }
+            } else {
+                if ($rows[0]->Benutzername == $username
+                    || $rows[0]->LDapName == $username
+                ) {
+                    $valid = true;
+                }
+
+                if ($rows[0]->LDapName == $username) {
+                    $auth = \Zend\Auth::getInstance();
+
+                    /*
+                     * u.woithe Change 2010-11-18 for Bug30718
+                     */
+                    $resultAuthLdap = new \AppCore\Auth\Ldap(
+                        $this->_userName,
+                        $this->_password,
+                        $auth
+                    );
+                    $resultLdap = $resultAuthLdap->authenticate();
+                    $resultCode = $resultLdap->getCode();
+
+                    if ($resultCode != \Zend\Auth\Result::SUCCESS) {
+                        /*
+                         * Search in LDAP was not successfull
+                         */
+                        $this->_logger->warn(
+                            'Benutzerkonto \'' . $username .
+                            '\' ist in der Datenbank nicht vorhanden oder ' .
+                            'Passwort falsch.'
+                        );
+
+                        $valid = false;
+                    }
+                    // u.woithe End
+                }
+            }
+        }
+
+        if ($valid) {
+            return new \Zend\Auth\Result(
+                \Zend\Auth\Result::SUCCESS,
+                new \AppCore\Auth\Identity($rows[0]),
                 array()
             );
-        } else {
-            return new Zend_Auth_Result(
-                Zend_Auth_Result::FAILURE_CREDENTIAL_INVALID,
-                null,
-                array('Authentifizierung fehlgeschlagen!')
-            );
         }
+
+        $this->_logger->warn('Login of User \'' . $username . '\' failed');
+
+        return new \Zend\Auth\Result(
+            \Zend\Auth\Result::FAILURE_CREDENTIAL_INVALID,
+            null,
+            array('Authentifizierung fehlgeschlagen!')
+        );
     }
 }

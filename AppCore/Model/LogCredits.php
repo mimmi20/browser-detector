@@ -74,7 +74,7 @@ class LogCredits extends ModelAbstract
         $postData['kreditinstitut'] = null;
         $postData['sparte']         = null;
 
-        $modelProduct = new \AppCore\Service\Produkte();
+        $modelProduct = new \AppCore\Service\Products();
         $ok = $modelProduct->lade(
             $postData['product'],
             $postData['kreditinstitut'],
@@ -156,14 +156,14 @@ class LogCredits extends ModelAbstract
         $modelSparte = new \AppCore\Model\Sparten();
         $select = $modelSparte->select()->setIntegrityCheck(false);
         $select->from(
-            array('s' => 'sparten'),
-            array('uid' => 's_id', 'code' => 'Code')
+            array('s' => 'categories'),
+            array('uid' => 'idCategories', 'code' => 'Code')
         );
-        $select->where('s_name = ?', $postData['sparte']);
+        $select->where('name = ?', $postData['sparte']);
 
         $row = $modelSparte->fetchAll($select)->current();
 
-        //$spartenId = substr('00' . $row->uid, -2) . '-';
+        //$categoriesId = substr('00' . $row->uid, -2) . '-';
         //$processId = $row->code . '-';
 
         $usageModel = new \AppCore\Service\Usage();
@@ -173,15 +173,15 @@ class LogCredits extends ModelAbstract
         $select        = $modelInstitut->select();
         $select->from(
             array('i' => 'institute'),
-            array('uid' => 'ki_id', 'title' => 'ki_title')
+            array('uid' => 'idInstitutes', 'title' => 'name')
         );
-        $select->where('ki_name = ?', $postData['kreditinstitut']);
+        $select->where('codename = ?', $postData['kreditinstitut']);
 
         $row           = $modelInstitut->fetchAll($select)->current();
         $instituteName = $row->title;
 
         /*
-        $processId .= substr('000' . $row->uid, -3) . '-' . $spartenId;
+        $processId .= substr('000' . $row->uid, -3) . '-' . $categoriesId;
 
         $modelAntrag = new \AppCore\Model\Antraege();
         $select      = $modelAntrag->select()->setIntegrityCheck(false);

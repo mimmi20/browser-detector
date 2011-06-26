@@ -44,11 +44,9 @@ class Campaigns extends ServiceAbstract
      * @return string
      * @access public
      */
-    public function cleanCaid($caid, $requestData = array(), $agent = '')
+    public function cleanCaid($caid)
     {
-        return $this->_model->getCached('campaign')->cleanCaid(
-            $caid, $requestData, $agent
-        );
+        return $this->_model->getCached('campaign')->cleanCaid($caid);
     }
 
     /**
@@ -67,16 +65,11 @@ class Campaigns extends ServiceAbstract
      */
     public function loadCaid(
         $value,
-        $requestData = array(),
-        $agent = '',
         &$paid = null,
         &$caid = null,
-        &$hostname = null,
-        $isTest = false)
+        &$hostname = null)
     {
-        $result = $this->_model->getCached('campaign')->loadCaid(
-            $value, $requestData, $agent, $paid, $caid, $hostname, $isTest
-        );
+        $result = $this->_model->getCached('campaign')->loadCaidArray($value);
 
         if (is_array($result)) {
             $paid     = $result['paid'];
@@ -92,16 +85,28 @@ class Campaigns extends ServiceAbstract
     /**
      * checks, if a campaign for the given id exists
      *
-     * @param mixed $value der Wert, der geprüft werden soll
+     * @param integer $caid der Wert, der geprüft werden soll
      *
      * @return boolean
      * @access protected
      */
-    public function checkCaid($value, $needClean = true)
+    public function checkCaid($caid)
     {
-        return $this->_model->getCached('campaign')->checkCaid(
-            $value, $needClean
-        );
+        return $this->_model->getCached('campaign')->checkCaid($caid);
+    }
+
+    /**
+     * returns the id for a campaign
+     *
+     * @param integer $caid id or name of the campaign
+     *
+     * @return boolean|integer FALSE, wenn die Sparte nicht existiert,
+     *                         ansonsten die ID der Sparte
+     * @access protected
+     */
+    public function getId($caid)
+    {
+        return $this->_model->getCached('campaign')->getId($caid);
     }
 
     /**
@@ -113,9 +118,9 @@ class Campaigns extends ServiceAbstract
      *                         ansonsten die ID der Sparte
      * @access protected
      */
-    public function getId($value)
+    public function getIdFromName($value)
     {
-        return $this->_model->getCached('campaign')->getId($value);
+        return $this->_model->getCached('campaign')->getIdFromName($value);
     }
 
     /**
@@ -179,34 +184,38 @@ class Campaigns extends ServiceAbstract
      *
      * @param integer $campaignId
      *
-     * @return \\AppCore\\Model\Campaign
+     * @return \Zend\Db\Table\Row
      * @access public
      */
     public function getDefaultCampaign($campaignId)
     {
         $portal = $this->getPortal($campaignId);
 
-        if (is_object($portal)) {
-            $portalName    = $portal->p_name;
-            $newCampaignId = $this->getId($portalName);
-        } else {
-            $newCampaignId = null;
+        if (null === $portal) {
+            return null;
         }
 
-        return $this->find($newCampaignId)->current();
+        $newCampaignId = $this->getIdFromName($portal->name);
+        $campaign      = $this->find($newCampaignId)->current();
+
+        if (is_object($campaign)) {
+            return $campaign;
+        } else {
+            return null;
+        }
     }
 
     /**
-     * returns an \\AppCore\\Model\Portal object for an campaign id
+     * returns an \AppCore\Model\Portal object for an campaign id
      *
      * @param integer $campaignId
      *
-     * @return \\AppCore\\Service\Portale
+     * @return \AppCore\Service\PartnerSites
      * @access public
      */
     public function getPortal($campaignId)
     {
-        $dbPortale = new \AppCore\Service\Portale();
+        $dbPortale = new \AppCore\Service\PartnerSites();
 
         return $dbPortale->loadByCampaign($campaignId);
     }
@@ -216,7 +225,7 @@ class Campaigns extends ServiceAbstract
      *
      * @param integer $campaignId
      *
-     * @return \\AppCore\\Model\Campaign
+     * @return \AppCore\Model\Campaign
      * @access public
      */
     public function getTestCampaign($campaignId)
@@ -270,10 +279,22 @@ class Campaigns extends ServiceAbstract
      *
      * calls the {@link _cleanCache} function with defined tag name
      *
-     * @return \\AppCore\\Service\Campaigns
+     * @return \AppCore\Service\Campaigns
      */
     public function cleanCache()
     {
         return $this->cleanTaggedCache('campaign');
+    }
+
+    /**
+     * checks, if a campaign for the given id is activated
+     *
+     * @param integer $caid der Wert, der geprüft werden soll
+     *
+     * @return boolean
+     */
+    public function isActive($caid)
+    {
+        return $this->_model->getCached('campaign')->isActive($caid);
     }
 }

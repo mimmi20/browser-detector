@@ -29,33 +29,6 @@ use Zend\Controller\Request\AbstractRequest,
 abstract class ControllerAbstract extends \Zend\Rest\Controller
 {
     /**
-     * Code for the Partner
-     *
-     * @var integer
-     */
-    protected $_paid = 0;//partner-ID
-
-    /**
-     * Code for an Campaign of an Partner
-     *
-     * @var integer
-     */
-    protected $_caid = 0;//campaign-ID
-
-    /**
-     *
-     * @var string
-     */
-    protected $_hostName = '';
-
-    /**
-     * the mode to display the content
-     *
-     * @var string
-     */
-    protected $_mode = 'html';
-
-    /**
      * Database object
      *
      * @var Zend_Db_Adapter_Pdo_Mysql
@@ -85,16 +58,6 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
     protected $_module = '';
 
     /**
-     * @var array
-     */
-    protected $_requestData = array();
-
-    /**
-     * @var integer
-     */
-    protected $_requestId = null;
-
-    /**
      * @var Zend_Controller_Action_Helper_Redirector
      */
     protected $_redirector = null;
@@ -109,6 +72,8 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      * @var \Zend\Log\Logger
      */
     protected $_logger = null;
+    
+    protected $_time = 0;
 
     /**
      * initializes the Controller
@@ -125,10 +90,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_logger     = \Zend\Registry::get('log');
         $this->_redirector = $this->getHelper('Redirector');
         $this->_context    = $this->getHelper('contentNegogation');
-        $this->_context->setDefaultEncoding($this->_config->negogation->encoding->default);
-        $this->_context->setDefaultType($this->_config->negogation->contenttype->default);
-        $this->_context->setMatchingEncoding($this->_config->negogation->encoding->match);
-        $this->_context->setMatchingType($this->_config->negogation->contenttype->match);
+        $this->_context->setConfig($this->_config->negogation);
     }
 
     /**
@@ -140,10 +102,10 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      */
     public function preDispatch()
     {
+        $this->_time = \microtime(true);
         parent::preDispatch();
         
-        $this->_requestData = $this->_helper->params(true);
-        $this->_helper->cache();
+        $this->_helper->params(true);
 
         $this->_request  = $this->getRequest();
         $this->_response = $this->getResponse();
@@ -152,9 +114,8 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_controller = strtolower($this->_request->getControllerName());
         $this->_module     = strtolower($this->_request->getModuleName());
         $this->_config     = \Zend\Registry::get('_config');
-        $this->_requestId  = $this->_helper->getParam('requestId', null);
 
-        $this->view->module = $this->_module;
+        //$this->view->module = $this->_module;
 
         $this->_db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();
 
@@ -164,6 +125,8 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_helper->agentLogger();
         $this->_helper->requestLogger();
         
+        $layout = \Zend\Layout\Layout::getMvcInstance();
+        $this->_context->setLayout($layout);
         $this->_context->initContext($this->_helper->getParam('format', null));
 
         //set headers
@@ -173,6 +136,20 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
                 'Cache-Control', 'public, max-age=3600', true
             );
         }
+    }
+
+    /**
+     * (non-PHPdoc)
+     *
+     * @see    library/Zend/Controller/Zend_Controller_Action#preDispatch()
+     * @return void
+     * @access public
+     */
+    public function postDispatch()
+    {
+        $this->view->duration = \microtime(true) - $this->_time;
+        
+        parent::postDispatch();
     }
 
     /**
@@ -244,7 +221,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 
         $this->_campaignId = $campaignService->getName($this->_caid);
 
-        $portalService    = new \AppCore\Service\Portale();
+        $portalService    = new \AppCore\Service\PartnerSites();
         $this->_partnerId = $portalService->getName($this->_paid);
     }
 

@@ -3,7 +3,7 @@ declare(ENCODING = 'iso-8859-1');
 namespace AppCore\Controller\Helper;
 
 /**
- * Service-Finder für alle Kredit-Services
+ * Service-Finder fÃ¼r alle Kredit-Services
  *
  * PHP version 5
  *
@@ -15,7 +15,7 @@ namespace AppCore\Controller\Helper;
  */
 
 /**
- * Service-Finder für alle Kredit-Services
+ * Service-Finder fÃ¼r alle Kredit-Services
  *
  * @category  Kreditrechner
  * @package   Controller-Helper
@@ -43,6 +43,7 @@ class CalcLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $this->_requestData = $request->getParams();
         
         $getParamHelper = $this->getActionController()->getHelper('GetParam');
+        $caid           = $this->getActionController()->getHelper('GetCampaignId')->direct();
 
         \AppCore\Globals::log(
             $getParamHelper->direct('requestId', null, 'Int'),
@@ -56,7 +57,7 @@ class CalcLogger extends \Zend\Controller\Action\Helper\AbstractHelper
             $getParamHelper->direct(
                 'vzweck', KREDIT_VERWENDUNGSZWECK_SONSTIGES, 'Int'
             ),
-            $getParamHelper->direct('caid', null, 'Int'),
+            $getParamHelper->direct('caid', $caid, 'Int'),
             $getParamHelper->direct('sparte', KREDIT_SPARTE_KREDIT, 'Int'),
             $getParamHelper->direct('agentId', null, 'Int'),
             $getParamHelper->direct('spider', false),
@@ -67,9 +68,9 @@ class CalcLogger extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link getService} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link getService} verwendet
      *
      * @param string $service The name of the Service
      * @param string $module  The name of the module

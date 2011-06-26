@@ -31,47 +31,27 @@ abstract class CacheAbstract
     /**
      * @var array Class methods
      */
-    protected $_classMethods;
+    protected $_classMethods = array();
 
     /**
      * @var Zend_Cache
      */
-    protected $_cache;
+    protected $_cache = null;
+    
+    /**
+     * @var \Zend\Config
+     */
+    protected $_options = null;
 
     /**
-     * @var string Frontend cache type, should be Class
+     * @var \AppCore\Model\Abstract
      */
-    protected $_frontend;
-
-    /**
-     * @var string Backend cache type
-     */
-    protected $_backend;
-
-    /**
-     * @var array Frontend options
-     */
-    protected $_frontendOptions = array();
-
-    /**
-     * @var array Backend options
-     */
-    protected $_backendOptions = array();
-
-    /**
-     * @var \\AppCore\\Model\Abstract
-     */
-    protected $_model;
+    protected $_model = null;
 
     /**
      * @var string The tag this call will be stored against
      */
-    protected $_tagged;
-
-    /**
-     * @var Zend_Config
-     */
-    //protected $_config = null;
+    protected $_tagged = '';
 
     /**
      * Constructor
@@ -80,43 +60,16 @@ abstract class CacheAbstract
      * @param array|Zend_Config $options
      */
     public function __construct(
-        \\AppCore\\Model\ModelAbstract $model,
+        \AppCore\Model\ModelAbstract $model,
         $options = null,
         $tagged = null)
     {
-        $this->_model  = $model;
-
-        if (!empty($options) && $options instanceof Zend_Config) {
-            $options = $options->toArray();
-        }
-
-        if (!empty($options) && is_array($options)) {
-            $this->setOptions($options);
-        }
+        $this->_model   = $model;
+        $this->_options = $options;
 
         if (!empty($tagged)) {
             $this->setTagged($tagged);
         }
-    }
-
-   /**
-    * Set options using setter methods
-    *
-    * @param array $options
-    * @return \\AppCore\\Model\Abstract
-    */
-    public function setOptions(array $options)
-    {
-        if (null === $this->_classMethods) {
-            $this->_classMethods = get_class_methods($this);
-        }
-        foreach ($options as $key => $value) {
-            $method = 'set' . ucfirst($key);
-            if (in_array($method, $this->_classMethods)) {
-                $this->$method($value);
-            }
-        }
-        return $this;
     }
 
     /**
@@ -137,67 +90,24 @@ abstract class CacheAbstract
      */
     public function getCache()
     {
-        $config = \Zend\Registry::get('_config');
-
-        if ($config->modelcache->enable) {
-            if (null === $this->_cache) {
-                $this->_cache = \Zend\Cache\Cache::factory(
-                    $this->_frontend,
-                    $this->_backend,
-                    $this->_frontendOptions,
-                    $this->_backendOptions
-                );
-            }
-            return $this->_cache;
-        } else {
-            return $this->_model;
-        }
-    }
-
-    /**
-     * Set the frontend options
-     *
-     * @param array $frontend
-     */
-    public function setFrontendOptions(array $frontend)
-    {
-        $this->_frontendOptions = $frontend;
-        $this->_frontendOptions['cached_entity'] = $this->_model;
-    }
-
-    /**
-     * Set the backend options
-     *
-     * @param array $backend
-     */
-    public function setBackendOptions(array $backend)
-    {
-        $this->_backendOptions = $backend;
-    }
-
-    /**
-     * Set the backend cache type
-     *
-     * @param string $backend
-     */
-    public function setBackend($backend)
-    {
-        $this->_backend = $backend;
-    }
-
-    /**
-     * Set the frontend cache type
-     *
-     * @param string $frontend
-     */
-    public function setFrontend($frontend)
-    {
-        if ('ClassFrontend' != $frontend) {
-            throw new \Zend\Exception(
-                'Frontend type must be \'ClassFrontend\''
+        if (null === $this->_cache) {
+            $frontendOptions = $this->_options->frontend->options->toArray();
+            $frontendOptions['cached_entity']  = $this->_model;
+            //$frontendOptions['cached_methods'] = get_methods($this->_model);
+            //unset($frontendOptions['cached_methods']['save']);
+            
+            $this->_cache = \Zend\Cache\Cache::factory(
+                $this->_options->frontend->name, 
+                $this->_options->backend->name, 
+                $frontendOptions, 
+                $this->_options->backend->options->toArray(),
+                $this->_options->frontend->customFrontendNaming,
+                $this->_options->backend->customBackendNaming,
+                $this->_options->frontendBackendAutoload
             );
         }
-        $this->_frontend = $frontend;
+        
+        return $this->_cache;
     }
 
     /**

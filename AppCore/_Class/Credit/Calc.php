@@ -89,8 +89,8 @@ class \AppCore\Credit\Calc extends \AppCore\Credit\CreditAbstract
         $campaignModel = new \AppCore\Service\Campaigns();
         $campaign      = $campaignModel->find($this->_caid)->current();
 
-        $spartenModel = new \AppCore\Service\Sparten();
-        $sparte       = $spartenModel->find($this->_sparte)->current();
+        $categoriesModel = new \AppCore\Service\Sparten();
+        $sparte       = $categoriesModel->find($this->_sparte)->current();
 
         //var_dump(count($activeProducts->toArray()));
 
@@ -131,7 +131,7 @@ class \AppCore\Credit\Calc extends \AppCore\Credit\CreditAbstract
             'Step',
             '0',
             'Partner',
-            $campaign->p_name,
+            $campaign->name,
             'New'
         );
 
@@ -299,9 +299,9 @@ class \AppCore\Credit\Calc extends \AppCore\Credit\CreditAbstract
              * backend
              * Reason: BMW has 2 institutes with different pictures
              */
-            $fileName     = 'testsieger/' . strtolower($sparte->s_name)
+            $fileName     = 'testsieger/' . strtolower($sparte->name)
                           . '/' . $kreditinstitut . '.gif';
-            $fileNameFull = 'testsieger/' . strtolower($sparte->s_name)
+            $fileNameFull = 'testsieger/' . strtolower($sparte->name)
                           . '/' . $kreditinstitut . '_full.gif';
             $filePath     = HOME_PATH . DS . 'images' . DS . $fileName;
             $filePathFull = HOME_PATH . DS . 'images' . DS . $fileNameFull;

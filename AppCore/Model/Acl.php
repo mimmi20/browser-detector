@@ -45,7 +45,6 @@ class Acl extends ModelAbstract
      *                     'Benutzer'
      *
      * @return null|\Zend\Db\Table\Rowset Liste der Rollen
-     * @access public
      */
     public function getRoles($type = null)
     {
@@ -86,39 +85,9 @@ class Acl extends ModelAbstract
     }
 
     /**
-     * Aktualisiert die Ressourcen-Liste in der Datenbank
-     *
-     * TODO: rewrite to Zend_Db
-     *
-     * @param array $reslist a list of Resources to add into database
-     *
-     * @return void
-     * @access public
-     */
-    public function updateResourceTree(array $reslist)
-    {
-        foreach ($reslist as $res) {
-            $sql = 'INSERT INTO
-                        ressource
-                        (Name,Controller,Action)
-                    VALUES
-                        ("' . $res['res_name'] . '","' . $res['controller'] .
-                        '","' . $res['action'] . '") ON DUPLICATE KEY ' .
-                        'UPDATE Controller = "' . $res['controller'] .
-                        '", Action = "' . $res['action'] . '"';
-            try {
-                $this->_db->query($sql)->fetchAll();
-            } catch (Exception $e) {
-                $this->_logger->err($e);
-            }
-        }
-    }
-
-    /**
      * Gibt alle Ressourcen inkl. Rollen zureck
      *
      * @return null|\Zend\Db\Table\Rowset Liste der Ressourcen mit den Rollen
-     * @access public
      */
     public function getResourcesRoles()
     {
@@ -152,10 +121,7 @@ class Acl extends ModelAbstract
      * Gibt alle Ressourcen zurueck wo Rollen ausser SuperAdmin zugreifen
      * duerfen
      *
-     * TODO: rewrite to Zend_Db
-     *
      * @return null|\Zend\Db\Table\Rowset
-     * @access public
      */
     public function getAllowedRessources()
     {
@@ -194,7 +160,6 @@ class Acl extends ModelAbstract
      * @param string $rolename the name of the role to search
      *
      * @return null|\Zend\Db\Table\Rowset
-     * @access public
      */
     public function getBaseRolesByRoleName($rolename = null)
     {
@@ -233,13 +198,10 @@ class Acl extends ModelAbstract
     /**
      * Gibt die Rollen zurueck
      *
-     * TODO: rewrite to Zend_Db
-     *
      * @param string $type the roletype
      *                     possible values are 'Basis' and 'TODO'
      *
      * @return null|\Zend\Db\Table\Rowset
-     * @access public
      */
     public function getRolesList($type = 'Basis')
     {
@@ -274,95 +236,6 @@ class Acl extends ModelAbstract
             $this->_logger->err($e);
 
             return null;
-        }
-    }
-
-    /**
-     * Aktualisiert die Rechte
-     *
-     * TODO: rewrite to Zend_Db
-     *
-     * @param string $rolename the Name of a role
-     * @param string $resname  the Name of a resource
-     * @param string $right    the Right to set
-     *
-     * @return boolean
-     * @access public
-     */
-    public function updateRight($rolename, $resname, $right)
-    {
-        $sql = 'INSERT INTO
-                    ressource_x_rolle
-                    (RessourceId,RolleId,Recht)
-                    SELECT
-                        (SELECT RessourceId FROM ressource WHERE Name = "' .
-                        $resname . '") AS RessourceId,
-                        (SELECT RolleId FROM rolle WHERE Name = "' . $rolename .
-                        '") AS RolleId,
-                        "' . $right . '"
-                ON DUPLICATE KEY UPDATE
-                    RessourceId = (SELECT RessourceId FROM ressource WHERE ' .
-                    'Name = "' . $resname . '"),
-                    RolleId = (SELECT RolleId FROM rolle WHERE Name = "' .
-                    $rolename . '"),
-                    Recht = "' . $right . '"';
-        try {
-            $this->_db->query($sql)->fetchAll();
-            return true;
-        } catch (Exception $e) {
-            $this->_logger->err($e);
-
-            return false;
-        }
-    }
-
-    /**
-     * Erstellt eine Zuordung zwischen Benutzer- und Basis-Rolle
-     *
-     * TODO: rewrite to Zend_Db
-     *
-     * @param integer $userrole the parent role
-     * @param integer $baserole the child role
-     *
-     * @return boolean
-     * @access public
-     */
-    public function mapRoles($userrole, $baserole)
-    {
-        $sql = 'INSERT IGNORE INTO rolle_x_rolle (RolleId1,RolleId2) VALUES ('
-             . $userrole . ',' . $baserole . ')';
-        try {
-            $this->_db->query($sql)->fetchAll();
-            return true;
-        } catch (Exception $e) {
-            $this->_logger->err($e);
-
-            return false;
-        }
-    }
-
-    /**
-     * Entfernt eine Zuordung zwischen Benutzer- und Basis-Rolle
-     *
-     * TODO: rewrite to Zend_Db
-     *
-     * @param integer $userrole the parent role
-     * @param integer $baserole the child role
-     *
-     * @return boolean
-     * @access public
-     */
-    public function demapRoles($userrole, $baserole)
-    {
-        $sql = 'DELETE FROM rolle_x_rolle WHERE RolleId1 = ' . $userrole
-             . ' AND RolleId2 = ' . $baserole;
-        try {
-            $this->_db->query($sql)->fetchAll();
-            return true;
-        } catch (Exception $e) {
-            $this->_logger->err($e);
-
-            return false;
         }
     }
 }

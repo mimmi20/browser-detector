@@ -3,7 +3,7 @@ declare(ENCODING = 'iso-8859-1');
 namespace AppCore\Controller\Helper;
 
 /**
- * Service-Finder für alle Kredit-Services
+ * Service-Finder fÃ¼r alle Kredit-Services
  *
  * PHP version 5
  *
@@ -15,7 +15,7 @@ namespace AppCore\Controller\Helper;
  */
 
 /**
- * Service-Finder für alle Kredit-Services
+ * Service-Finder fÃ¼r alle Kredit-Services
  *
  * @category  Kreditrechner
  * @package   Controller-Helper
@@ -113,13 +113,13 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
         if ($this->getResponse()->canSendHeaders()) {
             $this->getResponse()->setHttpResponseCode($responseCode);
             $this->getResponse()->setRawHeader(
-                'HTTP/1.1 ' . $responseCode . ' ' .
+                $this->getRequest()->getServer('SERVER_PROTOCOL') .
+                ' ' . $responseCode . ' ' .
                 $this->_statusCodes[$responseCode]
             );
-            $this->getResponse()->setHeader('robots', 'noindex,nofollow', true);
+            $this->getResponse()->setHeader('robots', 'noindex,nofollow,nostore', true);
             $this->getResponse()->setHeader('Cache-Control', 'no-cache', true);
             $this->getResponse()->setHeader('Pragma', 'no-cache', true);
-            $this->getResponse()->setHeader('Content-Language', 'de_DE', true);
             $this->getResponse()->setHeader(
                 'Last-Modified', gmdate('D, d M Y H:i:s') . ' GMT', true
             );
@@ -163,9 +163,9 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
-     * wird als Alias für die Funktion {@link getService} verwendet
+     * wird als Alias fÃ¼r die Funktion {@link getService} verwendet
      *
      * @param string $service The name of the Service
      * @param string $module  The name of the module

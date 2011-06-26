@@ -32,8 +32,10 @@ class Calculator extends CreditAbstract
     private $_view = null;
 
     /**
-     * ??
-     * @var    boolean
+     * a flag to tell, that only products with that flag should be calculated,
+     * if all products should be calculated, the flag must set to NULL
+     *
+     * @var    boolean|null
      * @access private
      */
     private $_bonus = null;
@@ -78,7 +80,13 @@ class Calculator extends CreditAbstract
      */
     public function calc($isRecalc = false)
     {
-        $activeProducts = $this->_calc();
+        $productsModel  = new \AppCore\Service\Products();
+        $activeProducts = $productsModel->getList(
+            $this->_sparte, 
+            $this->_zweck, 
+            false, 
+            $this->_onlyProduct
+        );
 
         if (false === $activeProducts      //calculation failed
             || count($activeProducts) == 0 //no result
@@ -86,19 +94,17 @@ class Calculator extends CreditAbstract
             /*
              * calculation failed or no result
              */
-            return array();
+            return array('count' => 0);
         }
 
         $campaignModel = new \AppCore\Service\Campaigns();
         $campaign      = $campaignModel->find($this->_caid)->current();
 
-        $spartenModel = new \AppCore\Service\Sparten();
-        $sparte       = $spartenModel->find($this->_sparte)->current();
-
-        //var_dump(count($activeProducts->toArray()));
+        $categoriesModel = new \AppCore\Service\Sparten();
+        $sparte          = $categoriesModel->find($this->_sparte)->current();
 
         if (!is_object($campaign) || !is_object($sparte)) {
-            return array();
+            return array('count' => 0);
         }
 
         // set output and info formater before looping throw the result
@@ -106,39 +112,130 @@ class Calculator extends CreditAbstract
             ->_setInfoFormater();
 
         $institutes = array();
+        $i          = -1;
+        $validCount = 0;
 
         foreach ($activeProducts as $row) {
-            //teaser only, ignore others
-            if ($this->_teaserOnly && !$row->teaser) {
-                //var_dump('no teaser');
-                continue;
-            }
-
-            /*
-             * filter for a specific product/institute, if flags are set
-             */
-            if ($this->_filterProduct($row)) {
-                //var_dump('wrong institute/product');
-                continue;
-            }
-
-            $institutes = $this->_doCalculation(
-                $row, $institutes, $campaign, $sparte, $isRecalc
+            ++$i;
+            
+            $productId = (int) $row->product;
+            
+            $institutes[$i] = array(
+                'status'    => '',
+                'message'   => '',
+                'productId' => $productId,
+                'product'   => $row->kreditName,
+                'institut'  => $row->kreditInstitutTitle
             );
+            
+            if (!$row->iactive) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'institute not active';
+                
+                continue;
+            }
+            
+            if (!$row->sactive) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'category not active';
+                
+                continue;
+            }
+            
+            if (!$row->active || !$productsModel->check($productId)) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'product not active';
+                
+                continue;
+            }
+            
+            if (!$row->cactive) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'product component not active';
+                
+                continue;
+            }
+            
+            $usages = explode(',', $row->usages);
+
+            if (!in_array($this->_zweck, $usages)) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'product not available in selected category';
+                
+                continue;
+            }
+            
+            if (null!== $row->min && $this->_betrag < $row->min) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'kredit amount lower than product minimum amount';
+                
+                continue;
+            }
+            
+            if (null !== $row->max && $this->_betrag > $row->max) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'kredit amount greater than product maximum amount';
+                
+                continue;
+            }
+            
+            $interface = strtolower($productsModel->getInterface($productId));
+            
+            if (!$interface) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'no calculation interface for product';
+                
+                continue;
+            }
+            
+            $interfaceClass = '\\AppCore\\Credit\\Calculator\\' . ucfirst($interface);
+            $oInterface     = new $interfaceClass();
+            
+            $oInterface
+                ->setOnlyProduct($productId)
+                ->setLaufzeit($this->_laufzeit)
+                ->setKreditbetrag($this->_betrag)
+                ->setZweck($this->_zweck)
+                ->setCaid($this->_caid)
+                ->setSparte($this->_sparte)
+                ->setTeaserOnly($this->_teaserOnly)
+                ->setBestOnly($this->_bestOnly)
+                ->setBoni($this->_bonus);
+                
+            $result = $oInterface->calculate();
+            
+            if (!is_array($result) || !isset($result[0])) {
+                $institutes[$i]['status']  = 'skipped';
+                $institutes[$i]['message'] = 'no calaculation result in interface';
+                
+                continue;
+            }
+            
+            $institutes[$i] = array_merge($institutes[$i], $result[0]);
+            
+            // active products
+            $institutes[$i] = $this->_doCalculation($institutes[$i], $campaign, $sparte, false);
+            
+            
+            $institutes[$i]['status']    = 'ok';
+            
+            ++$validCount;
         }
-
-        //var_dump($institutes);
-
+        
         $aTrack = array(
             'Antrag',
             'Step',
             '0',
             'Partner',
-            $campaign->p_name,
+            $campaign->name,
             'New'
         );
 
-        return $institutes;
+        return array(
+            'result'      => $institutes, 
+            'activeCount' => $validCount, 
+            'fullCount'   => count($institutes)
+        );
     }
 
     /**
@@ -148,55 +245,10 @@ class Calculator extends CreditAbstract
      * @access public
      */
     public function setCaid($value)
-    {//var_dump('xx', $value);
+    {
         $this->_caid = (int) $value;
 
         return $this;
-    }
-
-    /**
-     * do the calculation with the input adapter
-     *
-     * @return array
-     */
-    private function _calc()
-    {
-        $activeProducts = false;
-//var_dump('bb', $this->_caid);
-        $calculator = new \AppCore\Credit\Input();
-        $calculator
-            ->setLaufzeit($this->_laufzeit)
-            ->setKreditbetrag($this->_betrag)
-            ->setZweck($this->_zweck)
-            ->setCaid($this->_caid)
-            ->setSparte($this->_sparte)
-            ->setTeaserOnly($this->_teaserOnly)
-            ->setBestOnly($this->_bestOnly)
-            ->setBoni($this->_bonus)
-            ->setMode(\AppCore\Credit\Input::FALLBACK);
-
-        if ($this->_onlyProduct) {
-            $calculator->setOnlyProduct($this->_onlyProduct);
-        } elseif ($this->_onlyInstitut) {
-            $calculator->setOnlyInstitut($this->_onlyInstitut);
-        }
-
-        /*
-         * deactivated
-         * SQL for Stored Procedure needs to be updated
-         */
-        $activeProducts = $calculator->calculate();
-        //var_dump($this->_caid, count($activeProducts->toArray()));
-
-        /*
-        if (false === $activeProducts) {
-            $calculator->setMode(\AppCore\Credit\Input::FALLBACK);
-
-            $activeProducts = $calculator->calculate();
-        }
-        */
-
-        return $activeProducts;
     }
 
     /**
@@ -208,18 +260,12 @@ class Calculator extends CreditAbstract
      * @return array
      */
     private function _doCalculation(
-        \Zend\Db\Table\Row $row,
-        array $institutes,
+        array $product,
         \Zend\Db\Table\Row $campaign,
         \Zend\Db\Table\Row $sparte,
         $isRecalc = false)
     {
-        $kreditinstitut = strtolower($row->kreditinstitut);
-        $key            = $kreditinstitut . $row->product;
-
-        if (isset($institutes[$key])) {
-            return $institutes;
-        }
+        $kreditinstitut = strtolower($product['institut']);
 
         /*
          * TODO: make it possible to define the picture in the backend
@@ -228,12 +274,12 @@ class Calculator extends CreditAbstract
                           . DS . $kreditinstitut . '.gif';
 
         //Namen der Klasse anhand des Institutes festlegen
-        $klasse = '\\AppCore\\Model\\CalcResult\\' . ucfirst($kreditinstitut);
+        $resultClass = '\\AppCore\\Model\\CalcResult\\' . ucfirst($product['institut']);
 
         //Result-Klasse erzeugen
-        $result = new $klasse();
+        $result = new $resultClass();
 
-        $result->bind($row);
+        $result->bind($product);
 
         /*
          * validate result only, if this is not a recalculation
@@ -247,13 +293,13 @@ class Calculator extends CreditAbstract
             if (!$result->isValid()
                 || !file_exists($companyImageName)
             ) {
-                return $institutes;
+                return $product;
             }
         }
 
         // look into the campaign and overwrite the product value
         if ($this->_detectInternal($result, $campaign, $isRecalc)) {
-            return $institutes;
+            return $institute;
         }
 
         if ($result->effZins != $result->effZinsUnten
@@ -272,8 +318,7 @@ class Calculator extends CreditAbstract
             $result->effZinsOben  = $maxZins;
         }
 
-        $result->companyPicture = \Zend\Registry::get('_imageUrlRoot')
-                                . 'gesellschaften/' . $kreditinstitut . '.gif';
+        $result->companyPicture = '/images/gesellschaften/' . $kreditinstitut . '.gif';
 
         $bearbeitungsGebuehr         = 0;
         $result->bearbeitungsGebuehr = $bearbeitungsGebuehr;
@@ -315,9 +360,9 @@ class Calculator extends CreditAbstract
              * backend
              * Reason: BMW has 2 institutes with different pictures
              */
-            $fileName     = 'testsieger/' . strtolower($sparte->s_name)
+            $fileName     = 'testsieger/' . strtolower($sparte->name)
                           . '/' . $kreditinstitut . '.gif';
-            $fileNameFull = 'testsieger/' . strtolower($sparte->s_name)
+            $fileNameFull = 'testsieger/' . strtolower($sparte->name)
                           . '/' . $kreditinstitut . '_full.gif';
             $filePath     = HOME_PATH . DS . 'images' . DS . $fileName;
             $filePathFull = HOME_PATH . DS . 'images' . DS . $fileNameFull;
@@ -325,12 +370,9 @@ class Calculator extends CreditAbstract
             if (file_exists($filePath)
                 && file_exists($filePathFull)
             ) {
-                //image root path
-                $irp = \Zend\Registry::get('_imageUrlRoot');
-
                 //the pictures were found
-                $result->kreditTestsieger_Pic     = $irp . $fileName;
-                $result->kreditTestsieger_fullPic = $irp . $fileNameFull;
+                $result->kreditTestsieger_Pic     = '/images/' . $fileName;
+                $result->kreditTestsieger_fullPic = '/images/' . $fileNameFull;
             } else {
                 /*
                  * the pictures were not found
@@ -361,9 +403,7 @@ class Calculator extends CreditAbstract
         }
 
         //Produkt in das Ergebnis übernehmen
-        $institutes[$key] = $result;
-
-        return $institutes;
+        return $result->toArray();
     }
 
     /**
@@ -388,7 +428,7 @@ class Calculator extends CreditAbstract
     public function setBonus($bonus)
     {
         if (null !== $bonus) {
-            $this->_bonus = (int) $bonus;
+            $this->_bonus = (boolean) $bonus;
         } else {
             $this->_bonus = null;
         }
@@ -452,7 +492,7 @@ class Calculator extends CreditAbstract
      * detect if the link target is internal or external from the campaign
      *
      * @param \AppCore\Model\CalcResult $result
-     * @param \Zend\Db\Table\Row           $campaign
+     * @param \Zend\Db\Table\Row          $campaign
      * @param boolean                     $isRecalc
      *
      * @return boolean if TRUE, the product is NOT allowed in the actual result

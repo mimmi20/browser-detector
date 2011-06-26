@@ -62,8 +62,8 @@ class StatEinfach extends ModelAbstract
         $additionalWhere = ''
     )
     {
-        $spartenModel = new \AppCore\Service\Sparten();
-        $sparte       = $spartenModel->getId($sparte);
+        $categoriesModel = new \AppCore\Service\Sparten();
+        $sparte       = $categoriesModel->getId($sparte);
 
         //$typeModel = new \AppCore\Model\Types();
         //$type      = $typeModel->getId($type);
@@ -78,7 +78,7 @@ class StatEinfach extends ModelAbstract
             )
         );
 
-        $select->where('`se`.`s_id` = ?', $sparte);
+        $select->where('`se`.`idCategories` = ?', $sparte);
 
         $select->where(
             new \Zend\Db\Expr(
@@ -98,8 +98,8 @@ class StatEinfach extends ModelAbstract
         $this->_concatTypeFilter($select, $type);
 
         $select->join(
-            array('i' => 'institute_for_log'),
-            '`i`.`kli_id` = `se`.`kli_id`',
+            array('i' => 'institutesForLog'),
+            '`i`.`idInstitutesForLog` = `se`.`idInstitutesForLog`',
             array()
         );
 
@@ -112,7 +112,7 @@ class StatEinfach extends ModelAbstract
 
         $select->join(
             array('ca' => 'campaigns'),
-            '`ca`.`id_campaign` = `se`.`id_campaign`',
+            '`ca`.`idCampaigns` = `se`.`idCampaigns`',
             array()
         );
 
@@ -120,18 +120,18 @@ class StatEinfach extends ModelAbstract
             if ('' == $campaigns) {
                 $campaigns = '-1';
             }
-            $select->where('`ca`.`id_campaign` IN (' . $campaigns . ')');
+            $select->where('`ca`.`idCampaigns` IN (' . $campaigns . ')');
         }
 
         $select->join(
-            array('s' => 'sparten'),
-            '`s`.`s_id` = `se`.`s_id`',
+            array('s' => 'categories'),
+            '`s`.`idCategories` = `se`.`idCategories`',
             array()
         );
 
         $select->joinLeft(
             array('ii' => 'institute'),
-            '`i`.`ki_id` = `ii`.`ki_id`',
+            '`i`.`idInstitutes` = `ii`.`idInstitutes`',
             array()
         );
 
@@ -206,7 +206,7 @@ class StatEinfach extends ModelAbstract
             case 'antrag':
                 // Break intentionally omitted
             case 'info':
-                $select->where('`ii`.`ki_id` IS NOT NULL');
+                $select->where('`ii`.`idInstitutes` IS NOT NULL');
                 break;
             default:
                 // nothing to do here

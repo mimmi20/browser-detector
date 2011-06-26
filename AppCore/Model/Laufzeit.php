@@ -81,20 +81,20 @@ class Laufzeit extends ModelAbstract
                 array('name', 'value')
             );
             $select->join(
-                array('ls' => 'laufzeit_sparte'),
+                array('ls' => 'laufzeitCategories'),
                 'ls.laufzeit_id=l.laufzeit_id',
                 array()
             );
             
             if (is_numeric($sparte)) {
-                $select->where('ls.s_id = :sparte');
+                $select->where('ls.idCategories = :sparte');
             } else {
                 $select->join(
-                    array('s' => 'sparten'),
-                    's.s_id=ls.s_id',
+                    array('s' => 'categories'),
+                    's.idCategories=ls.idCategories',
                     array()
                 );
-                $select->where('s.s_name = :sparte');
+                $select->where('s.name = :sparte');
             }
             $select->order(array('l.value'));
 
@@ -167,7 +167,7 @@ class Laufzeit extends ModelAbstract
                 array('name')
             );
             $select->join(
-                array('ls' => 'laufzeit_sparte'),
+                array('ls' => 'laufzeitCategories'),
                 'ls.laufzeit_id=l.laufzeit_id',
                 array()
             );
@@ -175,14 +175,14 @@ class Laufzeit extends ModelAbstract
             $select->where('l.value = :laufzeit');
 
             if (is_numeric($sparte)) {
-                $select->where('ls.s_id = :sparte');
+                $select->where('ls.idCategories = :sparte');
             } else {
                 $select->join(
-                    array('s' => 'sparten'),
-                    's.s_id=ls.s_id',
+                    array('s' => 'categories'),
+                    's.idCategories=ls.idCategories',
                     array()
                 );
-                $select->where('s.s_name = :sparte');
+                $select->where('s.name = :sparte');
             }
 
             $select->order(array('l.value'))
@@ -258,7 +258,7 @@ class Laufzeit extends ModelAbstract
                 array('count' => new \Zend\Db\Expr('COUNT(*)'))
             );
             $select->join(
-                array('ls' => 'laufzeit_sparte'),
+                array('ls' => 'laufzeitCategories'),
                 'ls.laufzeit_id=l.laufzeit_id',
                 array()
             );
@@ -267,14 +267,14 @@ class Laufzeit extends ModelAbstract
 
             if ('' != $sparte) {
                 if (is_numeric($sparte)) {
-                    $select->where('ls.s_id = :sparte');
+                    $select->where('ls.idCategories = :sparte');
                 } else {
                     $select->join(
-                        array('s' => 'sparten'),
-                        's.s_id=ls.s_id',
+                        array('s' => 'categories'),
+                        's.idCategories=ls.idCategories',
                         array()
                     );
-                    $select->where('s.s_name = :sparte');
+                    $select->where('s.name = :sparte');
                 }
             }
 

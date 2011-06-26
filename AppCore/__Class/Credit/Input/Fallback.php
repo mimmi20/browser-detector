@@ -75,7 +75,7 @@ class \AppCore\Credit\Input\Fallback
 
         $this->_createTables();
         $this->_fillTables($campaign, $defaultCampaign);
-        $this->_updateRows((int) $defaultCampaign->id_campaign);
+        $this->_updateRows((int) $defaultCampaign->idCampaigns);
         $this->_updateTeasers();
         $this->_deleteWithoutUrl();
 
@@ -128,7 +128,7 @@ class \AppCore\Credit\Input\Fallback
                 `kreditAnnahme` VARCHAR(26) NOT NULL DEFAULT \'60\',
                 `kreditTestsieger` ' . $integer . ' NOT NULL DEFAULT 0,
                 `kreditEntscheidung` VARCHAR(26) DEFAULT \'2 Tage\',
-                `kreditEntscheidung_Sort` ' . $decimal . ' NOT NULL DEFAULT 99,
+                `kreditentscheidungSorted` ' . $decimal . ' NOT NULL DEFAULT 99,
                 `boni` ' . $integer . ' NOT NULL DEFAULT 0,
                 `ordering` ' . $integer . ' NOT NULL DEFAULT 0,
                 `zinsgutschrift` VARCHAR(20) NOT NULL DEFAULT \'j&auml;hrlich\',
@@ -226,104 +226,104 @@ class \AppCore\Credit\Input\Fallback
             array('i' => 'institute'),
             array(
                 // Name der Bank
-                'kreditInstitutTitle' => 'i.ki_title',
+                'kreditInstitutTitle' => 'i.name',
                 // Code-Name der Bank
-                'kreditinstitut' => 'i.ki_name'
+                'kreditinstitut' => 'i.codename'
             )
         );
-        $select->where('i.ki_active = 1');
+        $select->where('i.active = 1');
 
         $select->join(
-            array('p' => 'produkte'),
-            'i.ki_id = p.ki_id',
+            array('p' => 'Products'),
+            'i.idInstitutes = p.idInstitutes',
             array(
                 // product id
-                'product' => 'p.kp_id',
+                'product' => 'p.idProducts',
                 // Annahmewahrscheinlichkeit
-                'kreditAnnahme' => 'p.kp_annahme',
+                'kreditAnnahme' => 'p.annahme',
                 // hat ein Testsieger-Bild? (ja/nein)
-                'kreditTestsieger' => 'p.kp_testsieger',
+                'kreditTestsieger' => 'p.testsieger',
                 // Entscheidungszeitraum als String mit "Tage" am Ende bzw.
                 // sofort
-                'kreditEntscheidung' => 'p.kp_entscheidung',
+                'kreditEntscheidung' => 'p.entscheidung',
                 // Entscheidungszeitraum als Zahl fuer die Sortierung
-                'kreditEntscheidung_Sort' => 'p.kp_entscheidung_sort',
+                'kreditentscheidungSorted' => 'p.entscheidungSorted',
                 // bonitaetsabhaengig? (ja/nein)
-                // Produkteinstellung kann vom Zinssatz ueberschrieben werden
+                // Productsinstellung kann vom Zinssatz ueberschrieben werden
                 'boni' => new \Zend\Db\Expr(
                     '@boni := (CASE
-                     WHEN z.boni IS NULL THEN p.kp_boni
+                     WHEN z.boni IS NULL THEN p.boni
                      WHEN z.boni > 0 THEN 1
                      ELSE 0 END)'
                 ),
                 // ordering
-                'ordering' => 'p.kp_ordering',
+                'ordering' => 'p.ordering',
                 // Zeitraum der Zinsgutschrift als String ("jaehrlich")
-                'zinsgutschrift' => 'p.kp_zinsgutschrift',
-                'anlagezeitraum' => 'p.kp_anlagezeitraum',
+                'zinsgutschrift' => 'p.zinsgutschrift',
+                'anlagezeitraum' => 'p.anlagezeitraum',
                 // Gebuehr fuer EC-Karte (fuer Girokonten)
-                'ecgeb' => 'p.kp_ecgeb',
+                'ecgeb' => 'p.ecgeb',
                 // Gebuehr fuer Kreditkarte (fuer Girokonten)
-                'kreditkartengeb' => 'p.kp_kreditkartengeb',
+                'kreditkartengeb' => 'p.kreditkartengeb',
                 // Gebuehr fuer Kontofuehrung (fuer Girokonten)
-                'kontofuehrung' => 'p.kp_kontofuehrung',
+                'kontofuehrung' => 'p.kontofuehrung',
                 // minimaler Anlagebetrag
-                'min' => new \Zend\Db\Expr('IFNULL(p.kp_rahmen_min, 0.0)'),
+                'min' => new \Zend\Db\Expr('IFNULL(p.min, 0.0)'),
                 // maximaler Anlagebetrag
-                'max' => new \Zend\Db\Expr('IFNULL(p.kp_rahmen_max, 0.0)'),
+                'max' => new \Zend\Db\Expr('IFNULL(p.max, 0.0)'),
                 // the product has an info stored inside the database
                 'infoAvailable' => new \Zend\Db\Expr(
                     'CASE
-                     WHEN p.kp_info IS NULL THEN 0
-                     WHEN CHAR_LENGTH(p.kp_info) > 0 THEN 1
+                     WHEN p.info IS NULL THEN 0
+                     WHEN CHAR_LENGTH(p.info) > 0 THEN 1
                      ELSE 0 END'
                 ),
                 // erlaubte Verwendungszwecke als kommaseparierte Liste
-                'usages' => 'p.kp_usages'
+                'usages' => 'p.usages'
             )
         );
-        $select->where('p.kp_active = 1');
+        $select->where('p.active = 1');
         $select->where(
-            '((p.kp_rahmen_min <= ' . (int) $this->_kreditbetrag . ') OR
-              (p.kp_rahmen_min IS NULL))'
+            '((p.min <= ' . (int) $this->_kreditbetrag . ') OR
+              (p.min IS NULL))'
         );
         $select->where(
-            '((p.kp_rahmen_max >= ' . (int) $this->_kreditbetrag . ') OR
-              (p.kp_rahmen_max IS NULL))'
+            '((p.max >= ' . (int) $this->_kreditbetrag . ') OR
+              (p.max IS NULL))'
         );
 
         //$this->_logger->info($this->_boni);
 
         if (null !== $this->_boni) {
-            $select->where('p.kp_boni = ' . (int) $this->_boni);
+            $select->where('p.boni = ' . (int) $this->_boni);
         }
-        if (substr($campaign->p_name, -4) != 'test') {
+        if (substr($campaign->name, -4) != 'test') {
             $select->where(
-                'FIND_IN_SET(\'' . $this->_zweck . '\', p.kp_usages) ' .
+                'FIND_IN_SET(\'' . $this->_zweck . '\', p.usages) ' .
                 'IS NOT NULL'
             );
             $select->where(
-                'FIND_IN_SET(\'' . $this->_zweck . '\', p.kp_usages) > 0'
+                'FIND_IN_SET(\'' . $this->_zweck . '\', p.usages) > 0'
             );
         }
 
         $select->join(
             array('pc' => 'produkt_components'),
-            'p.kp_id = pc.kp_id',
+            'p.idProducts = pc.idProducts',
             array(
-                // Name des Produktes
+                // Name des Productss
                 'kreditName' => 'pc.description'
             )
         );
         $select->where('pc.active = 1');
 
         $select->join(
-            array('s' => 'sparten'),
-            'pc.s_id = s.s_id',
+            array('s' => 'categories'),
+            'pc.idCategories = s.idCategories',
             array()
         );
         $select->where('s.active = 1');
-        $select->where('s.s_id = ' . (int) $this->_sparte);
+        $select->where('s.idCategories = ' . (int) $this->_sparte);
 
         $select->join(
             array('z' => 'zins'),
@@ -406,36 +406,36 @@ class \AppCore\Credit\Input\Fallback
             array('ca' => 'campaigns'),
             array(
                 'anzahl' => new \Zend\Db\Expr('COUNT(*)'),
-                'ca.id_campaign'
+                'ca.idCampaigns'
             )
         );
         $innerSelect->where('ca.active = 1');
         $innerSelect->where(
-            '(ca.id_campaign IS NULL) OR ' .
-            '(ca.id_campaign IN (2,' . (int) $defaultCampaign->id_campaign .
+            '(ca.idCampaigns IS NULL) OR ' .
+            '(ca.idCampaigns IN (2,' . (int) $defaultCampaign->idCampaigns .
             ',' . (int) $this->_caid . '))'
         );
 
         $innerSelect->join(
             array('u' => 'urls'),
-            'ca.id_campaign = u.id_campaign',
-            array('u.kp_id')
+            'ca.idCampaigns = u.idCampaigns',
+            array('u.idProducts')
         );
         if ($this->_teaseronly) {
-            $innerSelect->where('u.tku_teaser = 1');
+            $innerSelect->where('u.teaser = 1');
         }
-        $innerSelect->group(array('u.kp_id', 'ca.p_name'));
-        $innerSelect->order(array('u.kp_id', 'ca.p_name'));
+        $innerSelect->group(array('u.idProducts', 'ca.name'));
+        $innerSelect->order(array('u.idProducts', 'ca.name'));
 
         $select->joinLeft(
             array('pu' => $innerSelect),
-            'p.kp_id = pu.kp_id',
+            'p.idProducts = pu.idProducts',
             array(
                 'anzahl' => 'pu.anzahl',
-                'campaignId' => 'pu.id_campaign',
+                'campaignId' => 'pu.idCampaigns',
                 'portal' => new \Zend\Db\Expr(
                     'CASE
-                     WHEN pu.anzahl > 0 THEN pu.id_campaign
+                     WHEN pu.anzahl > 0 THEN pu.idCampaigns
                      ELSE -1 END'
                 )
             )
@@ -453,10 +453,10 @@ class \AppCore\Credit\Input\Fallback
             array('zx' => 'zins'),
             array(new \Zend\Db\Expr('MAX(zx.betrag)'))
         );
-        $zinsSelect->where('zx.kp_id = p.kp_id');
+        $zinsSelect->where('zx.idProducts = p.idProducts');
         $zinsSelect->where('zx.betrag <= ' . (int) $this->_kreditbetrag);
         $zinsSelect->where('zx.laufzeit = ' . (int) $this->_laufzeit);
-        $zinsSelect->group('zx.kp_id');
+        $zinsSelect->group('zx.idProducts');
 
         $select->where(
             new \Zend\Db\Expr('z.betrag = (' . $zinsSelect->assemble() . ')')
@@ -469,7 +469,7 @@ class \AppCore\Credit\Input\Fallback
                    `kreditAnnahme`,
                    `kreditTestsieger`,
                    `kreditEntscheidung`,
-                   `kreditEntscheidung_Sort`,
+                   `kreditentscheidungSorted`,
                    `boni`,
                    `ordering`,
                    `zinsgutschrift`,
@@ -504,13 +504,13 @@ class \AppCore\Credit\Input\Fallback
         if ((int) $this->_onlyproduct) {
             //nur das gewuenschte Produkt ausgeben
             if (strpos($this->_onlyproduct, ',') !== false) {
-                $select->where('p.kp_id IN (' . $this->_onlyproduct . ')');
+                $select->where('p.idProducts IN (' . $this->_onlyproduct . ')');
             } else {
-                $select->where('p.kp_id = ' . $this->_onlyproduct);
+                $select->where('p.idProducts = ' . $this->_onlyproduct);
             }
         } elseif ($this->_onlyinstitut) {
             //nur das gewuenschte Institut ausgeben
-            $select->where('i.ki_name = \'' . $this->_onlyinstitut . '\'');
+            $select->where('i.codename = \'' . $this->_onlyinstitut . '\'');
         }
 
         if ($this->_bestonly) {
@@ -543,63 +543,63 @@ class \AppCore\Credit\Input\Fallback
         $urlSelect->from(
             array('u' => 'urls'),
             array(
-                'product' => 'u.kp_id',
-                'internal' => 'u.tku_internal',
+                'product' => 'u.idProducts',
+                'internal' => 'u.internal',
                 'teaser' => new \Zend\Db\Expr(
                     'CASE
-                     WHEN u.tku_teaser IS NULL OR u.tku_teaser = 0 THEN 0
-                     WHEN u.tku_teaser_lz = \'\' THEN 1
+                     WHEN u.teaser IS NULL OR u.teaser = 0 THEN 0
+                     WHEN u.teaserLz = \'\' THEN 1
                      WHEN FIND_IN_SET(\'' . (int) $this->_laufzeit .
-                     '\', tku_teaser_lz) IS NOT NULL AND FIND_IN_SET(\'' .
-                    (int) $this->_laufzeit . '\', tku_teaser_lz) > 0 THEN 1
+                     '\', teaserLz) IS NOT NULL AND FIND_IN_SET(\'' .
+                    (int) $this->_laufzeit . '\', teaserLz) > 0 THEN 1
                     ELSE 0 END'
-                ),//'u.tku_teaser',
-                'pixel' => 'u.tku_pixel',
+                ),//'u.teaser',
+                'pixel' => 'u.pixel',
                 'url' => new \Zend\Db\Expr(
                     'CASE
-                     WHEN u.tku_teaser IS NULL OR u.tku_teaser = 0 THEN
-                     u.tku_url
-                     WHEN u.tku_teaser_lz = \'\' THEN u.tku_url_teaser
+                     WHEN u.teaser IS NULL OR u.teaser = 0 THEN
+                     u.url
+                     WHEN u.teaserLz = \'\' THEN u.urlTeaser
                      WHEN FIND_IN_SET(\'' . (int) $this->_laufzeit .
-                     '\', tku_teaser_lz) IS NOT NULL AND FIND_IN_SET(\'' .
-                    (int) $this->_laufzeit . '\', tku_teaser_lz) > 0 THEN
-                    u.tku_url_teaser
-                    ELSE u.tku_url END'
-                ),//'u.tku_url',
+                     '\', teaserLz) IS NOT NULL AND FIND_IN_SET(\'' .
+                    (int) $this->_laufzeit . '\', teaserLz) > 0 THEN
+                    u.urlTeaser
+                    ELSE u.url END'
+                ),//'u.url',
                 'urlTeaser' => new \Zend\Db\Expr(
                     'CASE
-                     WHEN u.tku_teaser IS NULL OR u.tku_teaser = 0 THEN \'\'
-                     WHEN u.tku_teaser_lz = \'\' THEN u.tku_url_teaser
+                     WHEN u.teaser IS NULL OR u.teaser = 0 THEN \'\'
+                     WHEN u.teaserLz = \'\' THEN u.urlTeaser
                      WHEN FIND_IN_SET(\'' . (int) $this->_laufzeit .
-                     '\', tku_teaser_lz) IS NOT NULL AND FIND_IN_SET(\'' .
-                    (int) $this->_laufzeit . '\', tku_teaser_lz) > 0 THEN
-                    u.tku_url_teaser
+                     '\', teaserLz) IS NOT NULL AND FIND_IN_SET(\'' .
+                    (int) $this->_laufzeit . '\', teaserLz) > 0 THEN
+                    u.urlTeaser
                     ELSE \'\' END'
-                ),//'u.tku_url_teaser',
+                ),//'u.urlTeaser',
                 'teaserZone' => new \Zend\Db\Expr(
                     'CASE
-                     WHEN u.tku_teaser IS NULL OR u.tku_teaser = 0 THEN \'\'
+                     WHEN u.teaser IS NULL OR u.teaser = 0 THEN \'\'
                      WHEN FIND_IN_SET(\'' . (int) $this->_laufzeit .
-                     '\', tku_teaser_lz) IS NOT NULL AND FIND_IN_SET(\'' .
-                    (int) $this->_laufzeit . '\', tku_teaser_lz) > 0 THEN
-                    u.tku_teaser_lz ELSE \'\' END'
-                ),//'tku_teaser_lz'
+                     '\', teaserLz) IS NOT NULL AND FIND_IN_SET(\'' .
+                    (int) $this->_laufzeit . '\', teaserLz) > 0 THEN
+                    u.teaserLz ELSE \'\' END'
+                ),//'teaserLz'
             )
         );
         $urlSelect->where('u.active = 1');
 
         $urlSelect->join(
             array('ca' => 'campaigns'),
-            'u.id_campaign = ca.id_campaign',
+            'u.idCampaigns = ca.idCampaigns',
             array(
-                'portal' => 'ca.p_name',
-                'campaignId' => 'ca.id_campaign'
+                'portal' => 'ca.name',
+                'campaignId' => 'ca.idCampaigns'
             )
         );
         $urlSelect->where('ca.active = 1');
         $urlSelect->where(
-            '(ca.id_campaign IS NULL) OR ' .
-            '(ca.id_campaign IN (2,' . (int) $defaultCampaign->id_campaign .
+            '(ca.idCampaigns IS NULL) OR ' .
+            '(ca.idCampaigns IN (2,' . (int) $defaultCampaign->idCampaigns .
             ',' . (int) $this->_caid . '))'
         );
 
@@ -641,9 +641,9 @@ class \AppCore\Credit\Input\Fallback
         $queryTwo = 'SELECT COUNT(*) AS anzahl, `u`.`active`
                      FROM (`urls` AS `u` JOIN `campaigns` AS `ca` ON
                      ((`ca`.`active`=1) AND
-                      (`ca`.`id_campaign`=`u`.`id_campaign`)))
-                     WHERE `u`.`kp_id` = :product AND
-                     `ca`.`id_campaign` = :caid GROUP BY `u`.`active`';
+                      (`ca`.`idCampaigns`=`u`.`idCampaigns`)))
+                     WHERE `u`.`idProducts` = :product AND
+                     `ca`.`idCampaigns` = :caid GROUP BY `u`.`active`';
 
         $stmtTwo = new \Zend\Db\Statement\Pdo($this->_db, $queryTwo);
         $stmtTwo->setFetchMode(\Zend\Db\Db::FETCH_OBJ);
@@ -724,7 +724,7 @@ class \AppCore\Credit\Input\Fallback
         ) {
             $stmtOne->bindValue(':uid', $uid, \PDO::PARAM_INT);
 
-            // Produkte mit deaktivierter Url loeschen
+            // Products mit deaktivierter Url loeschen
             $stmtOne->execute();
 
             return;
@@ -747,7 +747,7 @@ class \AppCore\Credit\Input\Fallback
             ) {
                 $stmtOne->bindValue(':uid', $uid, \PDO::PARAM_INT);
 
-                // Produkte mit deaktivierter Url loeschen
+                // Products mit deaktivierter Url loeschen
                 $stmtOne->execute();
 
                 return;
@@ -811,19 +811,19 @@ class \AppCore\Credit\Input\Fallback
     private function _deleteWithoutUrl()
     {
         if (!(int) $this->_onlyproduct && !$this->_onlyinstitut) {
-            // nicht aktive Produkte loeschen
+            // nicht aktive Products loeschen
             $query = 'DELETE FROM '
                    . $this->_db->quoteIdentifier($this->_tempTableProducts)
                    . ' WHERE `portal` < 0 AND `product`
-                      IN (SELECT `u`.`kp_id` FROM `urls` AS `u`
-                      WHERE `u`.`id_campaign`=:caid)';
+                      IN (SELECT `u`.`idProducts` FROM `urls` AS `u`
+                      WHERE `u`.`idCampaigns`=:caid)';
 
             $stmt = new \Zend\Db\Statement\Pdo($this->_db, $query);
             $stmt->bindValue(':caid', $this->_caid, \PDO::PARAM_INT);
             $stmt->execute();
         }
 
-        // nicht aktive Produkte und Produkte ohne url loeschen
+        // nicht aktive Products und Products ohne url loeschen
         $query = 'DELETE FROM '
                . $this->_db->quoteIdentifier($this->_tempTableProducts)
                . ' WHERE `teaser` < 0 OR `url` = \'\' OR `url` IS NULL ';
@@ -865,10 +865,10 @@ class \AppCore\Credit\Input\Fallback
         $stmtTwo->setFetchMode(\Zend\Db\Db::FETCH_OBJ);
         $rowsTwo = $stmtTwo->fetchAll();
 
-        $queryThree = 'SELECT `u`.`tku_teaser_lz` AS `teaser_zone`
+        $queryThree = 'SELECT `u`.`teaserLz` AS `teaser_zone`
                        FROM `urls` AS `u`
-                       WHERE `u`.`kp_id` = :product
-                       AND `u`.`id_campaign`= :caid';
+                       WHERE `u`.`idProducts` = :product
+                       AND `u`.`idCampaigns`= :caid';
         $stmtThree  = new \Zend\Db\Statement\Pdo($this->_db, $queryThree);
         $stmtThree->setFetchMode(\Zend\Db\Db::FETCH_OBJ);
 

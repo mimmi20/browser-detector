@@ -29,14 +29,14 @@ class InstituteLog extends ModelAbstract
      *
      * @var String
      */
-    protected $_name = 'institute_for_log';
+    protected $_name = 'institutesForLog';
 
     /**
      * Primary key
      *
      * @var String
      */
-    protected $_primary = 'kli_id';
+    protected $_primary = 'idInstitutesForLog';
 
     /**
      * liefert die ID eines Types
@@ -60,13 +60,13 @@ class InstituteLog extends ModelAbstract
         $select = $this->select();
         $select->from(
             array('i' => $this->_name),
-            array('id' => 'kli_id')
+            array('id' => 'i.idInstitutesForLog')
         );
         if (is_numeric($value)) {
-            $select->where('i.kli_id = ?', (int) $value);
+            $select->where('i.idInstitutesForLog = ?', (int) $value);
         } else {
             $value = ucfirst(strtolower((string) $value));
-            $select->where('i.kli_name = ?', $value);
+            $select->where('i.name = ?', $value);
         }
         $select->limit(1);
 

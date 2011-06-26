@@ -36,5 +36,5 @@ class Requests extends ModelAbstract
      *
      * @var String
      */
-    protected $_primary = 'uid';
+    protected $_primary = 'idRequests';
 }

@@ -61,7 +61,7 @@ abstract class CalcAbstract extends ControllerAbstract
      *
      * @var string
      */
-    protected $_spartenName = '';
+    protected $_categoriesName = '';
 
     /**
      * ID des Verwendungszweckes
@@ -188,8 +188,8 @@ abstract class CalcAbstract extends ControllerAbstract
         $this->_campaignId = strtolower(
             $this->_helper->getParam('campaign_id', '', 'Alpha')
         );
-        $this->_spartenName = strtolower(
-            $this->_helper->getParam('spartenName', '', 'Alpha')
+        $this->_categoriesName = strtolower(
+            $this->_helper->getParam('categoriesName', '', 'Alpha')
         );
         $this->_institut = strtolower(
             $this->_helper->getParam('kreditinstitut', '', 'Alpha')
@@ -394,7 +394,7 @@ abstract class CalcAbstract extends ControllerAbstract
 
         $this->view->alleLaufzeiten = $alz;
         $this->view->url            = \Zend\Registry::get('_urlDir');
-        $this->view->sparte         = $this->_spartenName;
+        $this->view->sparte         = $this->_categoriesName;
         $this->view->sparteId       = $this->_sparte;
         $this->view->laufzeit       = $this->_laufzeit;
         $this->view->zweck          = $this->_zweck;
@@ -411,7 +411,7 @@ abstract class CalcAbstract extends ControllerAbstract
                 $this->_partnerId,
                 $this->_campaignId,
                 $this->_mode,
-                'calc' . DS . $this->_spartenName,
+                'calc' . DS . $this->_categoriesName,
                 true
             )
         );
@@ -501,7 +501,7 @@ abstract class CalcAbstract extends ControllerAbstract
             ) . 'form'
         );
         $this->view->form     = $form;
-        $this->view->sparte   = $this->_spartenName;
+        $this->view->sparte   = $this->_categoriesName;
         $this->view->sparteId = $this->_sparte;
         $this->view->laufzeit = $this->_laufzeit;
         $this->view->zweck    = $this->_zweck;
@@ -584,10 +584,10 @@ abstract class CalcAbstract extends ControllerAbstract
         }
 
         $antragText   = '';
-        $productModel = new \AppCore\Service\Produkte();
+        $productModel = new \AppCore\Service\Products();
 
         $ok = $productModel->lade(
-            $productId, $this->_institut, $this->_spartenName
+            $productId, $this->_institut, $this->_categoriesName
         );
 
         if (!$ok) {
@@ -595,7 +595,7 @@ abstract class CalcAbstract extends ControllerAbstract
             return $this->view->render($this->_controller . '/antrag.phtml');
         }
 
-        $this->view->sparte     = $this->_spartenName;
+        $this->view->sparte     = $this->_categoriesName;
         $this->view->sparteId   = $this->_sparte;
         $this->view->paid       = $this->_paid;
         $this->view->caid       = $this->_caid;
@@ -741,9 +741,9 @@ abstract class CalcAbstract extends ControllerAbstract
             $this->view->antragData = $data['kreditResult'][$key];
 
             if ($data['kreditResult'][$key]->teaser
-                && $data['kreditResult'][$key]->url_teaser
+                && $data['kreditResult'][$key]->urlTeaser
             ) {
-                $url = $data['kreditResult'][$key]->url_teaser;
+                $url = $data['kreditResult'][$key]->urlTeaser;
             } else {
                 $url = $data['kreditResult'][$key]->url;
             }
@@ -825,7 +825,7 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function getInfo()
     {
-        $this->view->sparte     = $this->_spartenName;
+        $this->view->sparte     = $this->_categoriesName;
         $this->view->sparteId   = $this->_sparte;
         $this->view->paid       = $this->_paid;
         $this->view->caid       = $this->_caid;
@@ -840,7 +840,7 @@ abstract class CalcAbstract extends ControllerAbstract
         if (is_object($this->view)) {
             $infoObj->setView($this->view);
         }
-        $infoObj->setSparte($this->_spartenName);
+        $infoObj->setSparte($this->_categoriesName);
         $infoObj->setProduct($this->view->product);
         $ergebnis = $infoObj->info(true, null);
 

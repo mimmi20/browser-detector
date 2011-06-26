@@ -26,36 +26,26 @@ class GetZins extends \Zend\View\Helper\AbstractHelper
      * @param int               $dezimal
      * @param string            $default    is returned if $zahl is null
      */
-    public function getZins($resultSet = null)
+    public function direct($resultSet = null)
     {
         $result  = '';
         $dezimal = 2;
 
-        if ($resultSet->boni) {
-            if ($resultSet->effZinsOben != $resultSet->effZinsUnten) {
-                $result = $this->view->formatNumber($resultSet->effZinsUnten, $dezimal)
+        if ($resultSet['boni']) {
+            if ($resultSet['effZinsOben'] != $resultSet['effZinsUnten']) {
+                $result = $this->view->getHelper('formatNumber')->direct($resultSet['effZinsUnten'], $dezimal)
                         . '&nbsp;-&nbsp;'
-                        . $this->view->formatNumber($resultSet->effZinsOben, $dezimal);
-            } elseif ($resultSet->zinssatzIsCleaned) {
-                $result = $this->view->formatNumber($resultSet->zinssatzCleaned, $dezimal);
+                        . $this->view->getHelper('formatNumber')->direct($resultSet['effZinsOben'], $dezimal);
+            } elseif ($resultSet['zinssatzIsCleaned']) {
+                $result = $this->view->getHelper('formatNumber')->direct($resultSet['zinssatzCleaned'], $dezimal);
             } else {
                 $result = '<span class="ccAb">ab</span> '
-                        . $this->view->formatNumber($resultSet->effZins, $dezimal);
+                        . $this->view->getHelper('formatNumber')->direct($resultSet['effZins'], $dezimal);
             }
         } else {
-            $result = $this->view->formatNumber($resultSet->effZins, $dezimal);
+            $result = $this->view->getHelper('formatNumber')->direct($resultSet['effZins'], $dezimal);
         }
 
         return $result . ' %';
-    }
-    
-    /**
-     * Strategy pattern: helper method to invoke
-     *
-     * @return mixed
-     */
-    public function direct($resultSet = null)
-    {
-        return $this->getZins($resultSet);
     }
 }

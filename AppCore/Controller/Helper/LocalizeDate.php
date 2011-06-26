@@ -55,7 +55,7 @@ class LocalizeDate extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode für Services
+     * Default-Methode fÃ¼r Services
      *
      * @param   string|integer|\Zend\Date\Date|array $date
      *

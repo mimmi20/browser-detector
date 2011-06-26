@@ -31,11 +31,6 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
     protected $_cache;
 
     /**
-     * @var array cache options
-     */
-    protected $_cacheOptions = array();
-
-    /**
      * @var Zend_Config
      */
     protected $_config = null;
@@ -72,37 +67,6 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
     }
 
     /**
-     * Set the cache options
-     *
-     * @param array $options
-     */
-    public function setCacheOptions(array $options)
-    {
-        $this->_cacheOptions = $options;
-    }
-
-    /**
-     * Get the cache options
-     *
-     * @return array
-     */
-    public function getCacheOptions()
-    {
-        if (empty($this->_cacheOptions)) {
-            $config      = \Zend\Registry::get('_config');
-            $modelConfig = $config->modelcache;
-
-            $this->_cacheOptions = array(
-                'frontend'        => $modelConfig->frontend,
-                'backend'         => $modelConfig->backend,
-                'frontendOptions' => $modelConfig->front->toArray(),
-                'backendOptions'  => $modelConfig->back->toArray()
-            );
-        }
-        return $this->_cacheOptions;
-    }
-
-    /**
      * Query the cache
      *
      * @param string $tagged The tag to save data to
@@ -111,26 +75,16 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      */
     public function getCached($tagged = null)
     {
-        $config = \Zend\Registry::get('_config');
+        if (null === $this->_cache) {
+            $this->_cache = new Cache\ModelCache(
+                $this,
+                $this->_config->resources->cachemanager->model
+            );
 
-        if ($config->modelcache->enable) {
-            if (null === $this->_cache) {
-                $this->_cache = new Cache(
-                    $this,
-                    $this->getCacheOptions()
-                );
-
-                $this->_cache->setTagged($tagged);
-            }
-
-            return $this->_cache;
-        } else {
-            /*
-             * the cache is disabled
-             * -> use the model directly
-             */
-            return $this;
+            $this->_cache->setTagged($tagged);
         }
+
+        return $this->_cache;
     }
 
     /**
@@ -141,13 +95,7 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      */
     public function getCache()
     {
-        $config = \Zend\Registry::get('_config');
-
-        if ($config->modelcache->enable) {
-            return $this->_cache->getCache();
-        } else {
-            return $this;
-        }
+        return $this->_cache->getCache();
     }
 
     /**
@@ -170,12 +118,6 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      */
     public function clean($mode = 'all', $tags = array())
     {
-        $config = \Zend\Registry::get('_config');
-
-        if ($config->modelcache->enable) {
-            return $this->_cache->getCache()->clean($mode, $tags);
-        } else {
-            return $this;
-        }
+        return $this->_cache->getCache()->clean($mode, $tags);
     }
 }

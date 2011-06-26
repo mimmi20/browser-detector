@@ -590,8 +590,9 @@ class Globals
          * replace &xdash; here
          * they will cause an error, which will end the string
          */
-        $value = str_replace(array('&ndash;', '&mdash;'), '-', $value);
-        $value = self::decode((string) $value, false);
+        $value  = str_replace(array('&ndash;', '&mdash;'), '-', $value);
+        $helper = new \AppCore\Controller\Helper\Decode();
+        $value  = $helper->direct((string) $value, false);
 
         return '<' . $key . '><![CDATA[' . $value . ']]></' . $key . '>';
     }
@@ -639,39 +640,6 @@ class Globals
     }
 
     /**
-     * decodes an value from utf-8 to iso
-     *
-     * @param string  $text     the string to decode
-     * @param boolean $entities an flag,
-     *                          if TRUE the string will be encoded with
-     *                          htmlentities
-     *
-     * @return string
-     * @access public
-     * @static
-     */
-    public static function decode($text, $entities = true)
-    {
-        if (is_string($text) && $text != '') {
-            $encoding = mb_detect_encoding($text . ' ', 'UTF-8,ISO-8859-1');
-
-            if ('UTF-8' == $encoding) {
-                $text = utf8_decode($text);
-            }
-
-            if ($entities) {
-                if (version_compare(PHP_VERSION, '5.2.3', '>')) {
-                    $text = htmlentities($text, ENT_QUOTES, 'iso-8859-1', true);
-                } else {
-                    $text = htmlentities($text, ENT_QUOTES, 'iso-8859-1');
-                }
-            }
-        }
-
-        return $text;
-    }
-
-    /**
      * encodes an value from iso to utf-8
      *
      * @param string  $text     the string to decode
@@ -713,184 +681,6 @@ class Globals
     public static function getProfession()
     {
         return self::$_generalProfession;
-    }
-
-    /**
-     * Gets a parameter from the {@link $_request Request object}.  If the
-     * parameter does not exist, NULL will be returned.
-     *
-     * If the parameter does not exist and $default is set, then
-     * $default will be returned instead of NULL.
-     *
-     * If $validator is set, the value of the parameter will be validated. If
-     * the validation fails, $default will be returned.
-     *
-     * The following values are possible as $validator:
-     * 1 a string containing an type, if you want to use an Zend_Validator
-     *   object e.g. 'Int' for using \Zend\Validator\Int'
-     * 2 a string containing an type, with an underscore added as first
-     *   character, if you want to use a custom validator
-     *   e.g. '_\\AppCore\\Class\Validate\Plz'
-     * 3 an validator object
-     * 4 an array containing strings or objects like in numbers 1-3
-     *
-     * @param array   $requestData assoziative array of all given params
-     * @param string  $paramName   the name of the param
-     * @param mixed   $default     the default value
-     * @param mixed   $validator   the type for an validator, an validator
-     *                             object or an array of validatortypes/
-     *                             validatorobjects
-     *
-     * @return mixed
-     * @access public
-     * @static
-     */
-    public static function getParamFromArray(
-        array $requestData = array(),
-        $paramName = null,
-        $default = null,
-        $validator = null)
-    {
-        if ($paramName === null || count($requestData) == 0) {
-            return $default;
-        }
-
-        if (!isset($requestData[$paramName])
-            || $requestData[$paramName] === null
-        ) {
-            return $default;
-        }
-
-        if (is_object($requestData[$paramName])) {
-            // no other handling for objects
-            return $requestData[$paramName];
-        }
-
-        if (is_array($requestData[$paramName])) {
-            $value = array_pop($requestData[$paramName]);
-        } else {
-            $value = $requestData[$paramName];
-        }
-
-        $data  = array();
-        $value = strip_tags(trim($value));
-
-        //create Validator Object, if Validator Type is set
-        $validator = self::_defineValidators($validator);
-
-        if (is_array($value)) {
-            $data[$paramName] = array();
-            $keys             = array_keys($value);
-
-            foreach ($keys as $keyTwo) {
-                $data[$paramName][$keyTwo] = self::_checkParam(
-                    $value[$keyTwo],
-                    $paramName,
-                    $default,
-                    $validator
-                );
-            }
-        } else {
-            $data[$paramName] = self::_checkParam(
-                $value,
-                $paramName,
-                $default,
-                $validator
-            );
-        }
-
-        return $data[$paramName];
-    }
-
-    /**
-     * defines a Zend_Validate object based on $validator
-     *
-     * @param mixed $validator
-     *
-     * @return Zend_Validate|null
-     */
-    private static function _defineValidators($validator)
-    {
-        //create Validator Object, if Validator Type is set
-        if ($validator === null) {
-            return null;
-        }
-
-        if (is_object($validator)
-            && is_subclass_of($validator, '\\Zend\\Validator\\AbstractValidator')
-        ) {
-            //nothing to change
-            return $validator;
-        }
-
-        if (is_string($validator)) {
-            if (substr($validator, 0, 1) == '_') {
-                $validatorTwo = substr($validator, 1);
-            } else {
-                $validatorTwo = '\\Zend\\Validator\\' . $validator;
-            }
-
-            return new $validatorTwo();
-        }
-
-        if (is_array($validator)) {
-            $validatorBase = $validator;
-            $validator     = new \Zend\Validator\ValidatorChain();
-
-            foreach ($validatorBase as $sValidatorName) {
-                if (is_string($sValidatorName)) {
-                    if (substr($sValidatorName, 0, 1) == '_') {
-                        $validatorTwo = substr($sValidatorName, 1);
-                    } else {
-                        $validatorTwo = '\\Zend\\Validator\\' . $sValidatorName;
-                    }
-                    $validator->addValidator(new $validatorTwo());
-                } elseif (is_object($sValidatorName)
-                    && is_subclass_of($sValidatorName, '\\Zend\\Validator\\AbstractValidator')
-                ) {
-                    $validator->addValidator($sValidatorName);
-                }
-            }
-
-            return $validator;
-        } else {
-            return null;
-        }
-    }
-
-    /**
-     * validates the value
-     *
-     * @param string                 $value     the value to check
-     * @param string                 $paramName the name of the variable
-     * @param mixed                  $default   the default value, if the given
-     *                                          value is not valid
-     * @param \Zend\Validator\Abstract $validator
-     *
-     * @return string
-     */
-    private static function _checkParam(
-        $value, $paramName, $default, $validator = null)
-    {
-        if ('' != $value) {
-            $value = self::decode(strip_tags(trim($value)), false);
-        }
-
-        if (is_subclass_of($validator, '\Zend\Validator\Abstract')) {
-            if (!$validator->isValid($value)) {
-                return $default;
-            }
-        }
-
-        $functionName = 'check' . ucfirst(strtolower($paramName));
-
-        if (method_exists(__class__, $functionName)) {
-            if (!self::$functionName($value)) {
-                return $default;
-            }
-        }
-
-        return $value;
     }
 
     /**
@@ -1444,6 +1234,8 @@ class Globals
         array $requestData = array(),
         $isTest = 0)
     {
+        return true;
+        
         /*
          * do not log anything while testing
          * -> causes errors when using sqlite (on clause)
@@ -1492,7 +1284,7 @@ class Globals
             
             if ($isActive && $productId) {
                 $instituteName = null;
-                $modelProduct  = new \AppCore\Service\Produkte();
+                $modelProduct  = new \AppCore\Service\Products();
 
                 $isActive = $modelProduct->lade(
                     $productId, $instituteName, $sparteName
@@ -1518,8 +1310,8 @@ class Globals
                     $internal = true;
                 } elseif ($campaign->externalLinks == 'auto'
                     && null !== $url
-                    && isset($url->tku_internal)
-                    && $url->tku_internal
+                    && isset($url->internal)
+                    && $url->internal
                 ) {
                     $internal = true;
                 }
@@ -1529,8 +1321,8 @@ class Globals
                 }
 
                 if (null !== $url
-                    && isset($url->tku_teaser)
-                    && $url->tku_teaser
+                    && isset($url->teaser)
+                    && $url->teaser
                 ) {
                     $instituteName .= '-TEASER';
                 }
@@ -1545,8 +1337,8 @@ class Globals
              * the institute-flag-combination was not found in the database
              */
             $data = array(
-                'kli_name' => $instituteName,
-                'ki_id'    => $instituteId ? $instituteId : null
+                'name' => $instituteName,
+                'idInstitutes'    => $instituteId ? $instituteId : null
             );
             
             $institut = (int) $modelInstitut->insert($data);
@@ -1554,7 +1346,8 @@ class Globals
 
         $modelTypes = new \AppCore\Model\Types();
         $lnktype    = $modelTypes->getId($lnktype);
-
+        
+        /*
         //Statistik loggen
         self::_logDatasetStatistikEinfach(
             $lnktype,
@@ -1586,7 +1379,7 @@ class Globals
             $zweck,
             $requestData
         );
-
+        /**/
         return true;
     }
 
@@ -1639,43 +1432,17 @@ class Globals
     private static function _logAgentId(
         $agentId, $browserId, $campaignId, $from = 'C')
     {
-        /*
-         * do not log agent while testing
-         * -> causes errors when using sqlite (on clause)
-         */
-        if (APPLICATION_ENV == SERVER_ONLINE_TEST
-            || APPLICATION_ENV == SERVER_ONLINE_TEST2
-        ) {
-            return;
-        }
-
-        if (!(in_array($from, array('C', 'S')))) {
-            $from = 'C';
-        }
-
         try {
-            $agentModel = new \AppCore\Model\LogAgent();
-            $data = array(
-                'agent_id'    => (int) $agentId,
-                'browserId'   => (int) $browserId,
-                'id_campaign' => (int) $campaignId,
-                'from'        => $from,
-                'zeit'        => new \Zend\Db\Expr('NOW()'),
-                'anzahl'      => 1
-            );
-            $agentModel->insert($data);
-            /*
             $db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();
             
-            $sql = 'INSERT INTO `log_agent` '
-                 . '(`agent_id`,`browserId`,`id_campaign`,`from`,`zeit`,'
-                 . '`anzahl`) VALUES '
-                 . '(\'' . (int) $agentId . '\',\'' . (int) $browserId . '\',\''
-                 . (int) $campaignId . '\',\'' . $from . '\', NOW(), 1)'
-                 . ' ON DUPLICATE KEY UPDATE `anzahl`=`anzahl`+1';
+            $sql = 'INSERT INTO `logAgent` '
+                 . '(`idBrowsers`,`idCampaigns`,`date`,`amount`) VALUES '
+                 . '(\'' . (int) $browserId . '\',\''
+                 . (int) $campaignId . '\', CURDATE(), 1)'
+                 . ' ON DUPLICATE KEY UPDATE `amount`=`amount`+1';
 
             $db->query($sql);
-            */
+            /**/
         } catch (Exception $e) {
             $logger = \Zend\Registry::get('log');
             $logger->err($e);
@@ -1711,35 +1478,35 @@ class Globals
 
         $provision = 0;
 
-        $produktModel = new \AppCore\Model\Produkte();
+        $produktModel = new \AppCore\Model\Products();
         $outerSelect  = $produktModel->select();
 
         $institutModel   = new \AppCore\Model\InstituteLog();
         $instituteSelect = $institutModel->select();
         $instituteSelect->from(
-            array('ifl' => 'institute_for_log'),
-            array('ifl.ki_id')
+            array('ifl' => 'institutesForLog'),
+            array('ifl.idInstitutes')
         );
-        $instituteSelect->where('`ifl`.`kli_id` = ? ', $institut);
+        $instituteSelect->where('`ifl`.`idInstitutesForLog` = ? ', $institut);
 
-        $componentModel  = new \AppCore\Model\Produkte();
+        $componentModel  = new \AppCore\Model\Products();
         $componentSelect = $componentModel->select()->setIntegrityCheck(false);
         $componentSelect->from(
             array('pc' => 'produkt_components'),
-            array('pc.kp_id')
+            array('pc.idProducts')
         );
-        $componentSelect->where('`pc`.`s_id` = ? ', $sparte);
+        $componentSelect->where('`pc`.`idCategories` = ? ', $sparte);
 
         if ($type == KREDIT_LOG_SALE) {
             $outerSelect->from(
-                array('p' => 'produkte'),
-                array('provision' => 'kp_provision_sale')
+                array('p' => 'Products'),
+                array('provision' => 'provisionSale')
             );
             $outerSelect->where(
-                '`p`.`ki_id` = ( ? ) ', $instituteSelect->assemble()
+                '`p`.`idInstitutes` = ( ? ) ', $instituteSelect->assemble()
             );
             $outerSelect->where(
-                '`p`.`kp_id` IN ( ? ) ', $componentSelect->assemble()
+                '`p`.`idProducts` IN ( ? ) ', $componentSelect->assemble()
             );
 
             $row = $produktModel->fetchRow($outerSelect);
@@ -1751,14 +1518,14 @@ class Globals
             || $type == KREDIT_LOG_CLICKOUT_INFO
         ) {
             $outerSelect->from(
-                array('p' => 'produkte'),
-                array('provision' => 'kp_provision_click')
+                array('p' => 'Products'),
+                array('provision' => 'provisionClick')
             );
             $outerSelect->where(
-                '`p`.`ki_id` = ( ? ) ', $instituteSelect->assemble()
+                '`p`.`idInstitutes` = ( ? ) ', $instituteSelect->assemble()
             );
             $outerSelect->where(
-                '`p`.`kp_id` IN ( ? ) ', $componentSelect->assemble()
+                '`p`.`idProducts` IN ( ? ) ', $componentSelect->assemble()
             );
 
             $row = $produktModel->fetchRow($outerSelect);
@@ -1771,8 +1538,8 @@ class Globals
             $laufzeit = 0;
         }
 
-        $sql = 'INSERT INTO `stat_einfach` (`datum`,`id_type`,`kli_id`,'
-             . '`id_campaign`,`s_id`,`anzahl`,`sum`,`lz`,`pr`) VALUES '
+        $sql = 'INSERT INTO `stat_einfach` (`datum`,`id_type`,`idInstitutesForLog`,'
+             . '`idCampaigns`,`idCategories`,`anzahl`,`sum`,`lz`,`pr`) VALUES '
              . '(NOW(), \'' . $type . '\', \'' . $institut . '\', \''
              . $partnerId . '\',\'' . $sparte . '\',1,' . $betrag . ','
              . $laufzeit . ',' . $provision . ') '
@@ -1832,8 +1599,8 @@ class Globals
             $requestData, 'agentIdClient', 'NULL'
         );
 
-        $sql = 'INSERT INTO `log_requests` (`requestId`,`id_campaign`,'
-             . '`id_type`,`s_id`,`betrag`,`laufzeit`,`kli_id`,`zweck`,'
+        $sql = 'INSERT INTO `log_requests` (`requestId`,`idCampaigns`,'
+             . '`id_type`,`idCategories`,`betrag`,`laufzeit`,`idInstitutesForLog`,`zweck`,'
              . '`server_ip`,`client_ip`,`client_agent_id`,`server_agent_id`,'
              . '`client_referrer`,`server_referrer`) '
              . 'VALUES (\'' . $requestId . '\',\'' . $partnerId . '\','
@@ -1871,8 +1638,8 @@ class Globals
     private static function _logDatasetStatistik(
         $type, $institut, $partnerId, $betrag, $zweck, $sparte, $laufzeit)
     {
-        $sql = 'INSERT INTO `kredit_statistik` (`betrag`,`kli_id`,'
-             . '`id_campaign`,`zweck`,`id_type`,`laufzeit`,`s_id`,`zeit`,'
+        $sql = 'INSERT INTO `kredit_statistik` (`betrag`,`idInstitutesForLog`,'
+             . '`idCampaigns`,`zweck`,`id_type`,`laufzeit`,`idCategories`,`zeit`,'
              . '`anzahl`) VALUES (\'' . $betrag . '\',\'' . $institut . '\','
              . '\'' . $partnerId . '\',\'' . $zweck . '\',\'' . $type . '\','
              . '\'' . $laufzeit . '\',\'' . $sparte . '\','
@@ -1910,7 +1677,7 @@ class Globals
             return true;
         }
 
-        $modelPortal = new \AppCore\Service\Portale();
+        $modelPortal = new \AppCore\Service\PartnerSites();
 
         return $modelPortal->checkPaid($value);
     }

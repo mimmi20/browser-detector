@@ -703,7 +703,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
         } else {
             //URL für Angebot auslesen
             $offerLnk       = (string) $result->url;
-            $offerLnkTeaser = (string) $result->url_teaser;
+            $offerLnkTeaser = (string) $result->urlTeaser;
 
             if ('' == $offerLnkTeaser) {
                 $offerLnkTeaser = $offerLnk;
