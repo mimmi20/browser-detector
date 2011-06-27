@@ -91,7 +91,7 @@ class KreditAdmin_IndexController extends KreditCore_Controller_AdminAbstract
             'laufzeitCategories',
             'navigation',
             'portale',
-            'produkt_components',
+            'productComponents',
             'Products',
             'ressource',
             'ressource_x_rolle',

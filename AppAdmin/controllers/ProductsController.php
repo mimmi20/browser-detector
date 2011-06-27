@@ -57,7 +57,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
             if ($sparte) {
                 $select->where(
                     ' idProducts IN (SELECT pc.idProducts
-                    FROM produkt_components AS pc WHERE pc.idCategories = ? )',
+                    FROM productComponents AS pc WHERE pc.idCategories = ? )',
                     $sparte
                 );
             }
