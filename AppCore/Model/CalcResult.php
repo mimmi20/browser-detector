@@ -68,8 +68,8 @@ class CalcResult
      */
     public function __get($param)
     {
-        if (isset($this->_result->$param)) {
-            return $this->_result->$param;
+        if (isset($this->_result[$param])) {
+            return $this->_result[$param];
         } else {
             return null;
         }
@@ -85,8 +85,8 @@ class CalcResult
      */
     public function __set($param, $newValue)
     {
-        if (isset($this->_result->$param)) {
-            $this->_result->$param = $newValue;
+        if (isset($this->_result[$param])) {
+            $this->_result[$param] = $newValue;
         }
 
         return $this;
@@ -97,12 +97,22 @@ class CalcResult
      *
      * Can be overloaded/supplemented by the child class
      *
-     * @param Zend_Db_Table_Row $result an associative array or object
+     * @param array|Zend_Db_Table_Row $result an associative array or object
      *
      * @return KreditCore_Model_CalcResult
      */
-    public function bind(Zend_Db_Table_Row $result)
+    public function bind($result)
     {
+        if ($result instanceof Zend_Db_Table_Row) {
+            $result = $result->toArray();
+        }
+        
+        if (!is_array($result)) {
+            throw new Zend_Exception(
+                '$result must be an array or an instance of Zend_Db_Table_Row'
+            );
+        }
+        
         $this->_result = $result;
 
         return $this;
@@ -115,6 +125,6 @@ class CalcResult
      */
     public function toArray()
     {
-        return $this->_result->toArray();
+        return $this->_result;
     }
 }

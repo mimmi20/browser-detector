@@ -36,8 +36,6 @@ class Info extends CreditAbstract
      */
     private $_product = 0;
 
-    private $_cache = null;
-
     /**
      * get the information about an institute and its credits
      *
@@ -71,37 +69,20 @@ class Info extends CreditAbstract
             return '';
         }
 
-        $institut = null;
+        $front = \Zend\Controller\Front::getInstance();
+        $cache = $front->getParam('bootstrap')->getResource('cachemanager')->getCache('file');
+        
+        $cacheId  = 'productinfo_' . $this->_product;
 
-        $modelProducts = new \AppCore\Model\Products();
-        if (!$this->_product
-            || !$modelProducts->lade($this->_product, $institut, $this->_sparte)
-        ) {
-            //product not given or product is not available or inactive
-            return '';
-        }
+        if (!$productinfo = $cache->load($cacheId)) {
+            $modelProducts = new \AppCore\Service\Products();
+            $productinfo   = $modelProducts->getInformation($this->_product);
 
-        $product = $modelProducts->find($this->_product)->current();
-
-        $usages  = explode(',', $product->usages);
-        if (!in_array($this->_zweck, $usages)) {
-            //product is not available for the selected useage
-            return '';
-        }
-
-        if (null === $fromDb) {
-            $fromDb = ('' != $product->info);
-        }
-
-        if (\Zend\Registry::isRegistered('_fileCache')) {
-            $this->_cache = \Zend\Registry::get('_fileCache');
-        }
-        $cacheId      = 'productinfo_' . $this->_product;
-        $productinfo  = '';
-
-        if (!is_object($this->_cache)
-            || !$productinfo = $this->_cache->load($cacheId)
-        ) {
+            $product = $modelProducts->find($this->_product)->current();
+            
+            $modelInstitutes = new \AppCore\Service\Institutes();
+            $institut        = $modelInstitutes->getName($product->idInstitutes);
+            
             $max  = $product->max;
             $min  = $product->min;
             $zins = $modelProducts->getZins(
@@ -110,39 +91,28 @@ class Info extends CreditAbstract
                 $this->_betrag
             );
 
-            if ($fromDb) {
-                //get Info from database
-                $productinfo = $product->info;
-            } else {
-                //get Info from a template
-                if (!$institut) {
-                    /*
-                     * no institute found
-                     * -> rendering not possible
-                     */
-                    $productinfo = '';
-                } else {
-                    $this->_view->min      = $min;
-                    $this->_view->max      = $max;
-                    $this->_view->zins     = $zins;
-                    $this->_view->institut = $institut;
-                    $this->_view->mode     = $this->_mode;
-                    $this->_view->product  = $this->_product;
-                    $this->_view->sparte   = strtolower($this->_sparte);
+            //get Info from a template
+            if (!$productinfo) {
+                $this->_view->min      = $min;
+                $this->_view->max      = $max;
+                $this->_view->zins     = $zins;
+                $this->_view->institut = $institut;
+                $this->_view->mode     = $this->_mode;
+                $this->_view->product  = $this->_product;
+                $this->_view->sparte   = strtolower($this->_sparte);
 
-                    //include and aprse the template
-                    $productinfo = str_replace(
-                        array("\r\n", "\r", "\n", "\t"),
-                        '',
-                        $this->_view->getInstituteFile(
-                            strtolower($this->_sparte),
-                            $institut,
-                            $this->_mode,
-                            $this->_product,
-                            true
-                        )
-                    );
-                }
+                //include and aprse the template
+                $productinfo = str_replace(
+                    array("\r\n", "\r", "\n", "\t"),
+                    '',
+                    $this->_view->getInstituteFile(
+                        strtolower($this->_sparte),
+                        $institut,
+                        $this->_mode,
+                        $this->_product,
+                        true
+                    )
+                );
             }
 
             try {
@@ -150,7 +120,7 @@ class Info extends CreditAbstract
                  * cover the info with cdata marks and add a new root
                  * element to create a valid xml structure
                  */
-                $xmlInfo = '<productinfo id="' . $institut . '">
+                $xmlInfo = '<productinfo id="' . $this->_product . '">
                         <![CDATA[ ' . $productinfo . ' ]]>
                     </productinfo>';
 
@@ -182,9 +152,7 @@ class Info extends CreditAbstract
                 $productinfo
             );
 
-            if (is_object($this->_cache) && $productinfo != '') {
-                $this->_cache->save($productinfo, $cacheId);
-            }
+            $cache->save($productinfo, $cacheId);
         }
 
         return $productinfo;

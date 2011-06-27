@@ -170,6 +170,26 @@ class Products extends ServiceAbstract
     }
 
     /**
+     * returns the actual Zins
+     *
+     * @param integer $productId the product ID
+     *
+     * @return string
+     */
+    public function getInformation($productId)
+    {
+        if (!is_numeric($productId)) {
+            return '';
+        }
+
+        if (0 >= (int) $productId) {
+            return '';
+        }
+
+        return $this->_model->getCached('Products')->getInformation($productId);
+    }
+
+    /**
      * Fetches rows by primary key.  The argument specifies one or more primary
      * key value(s).  To find multiple rows by primary key, the argument must
      * be an array.

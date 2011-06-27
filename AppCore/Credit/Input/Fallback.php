@@ -311,7 +311,7 @@ class Fallback extends InputAbstract
         }
 
         $select->join(
-            array('pc' => 'produkt_components'),
+            array('pc' => 'productComponents'),
             'p.idProducts = pc.idProducts',
             array(
                 // Name des Productss
@@ -330,7 +330,7 @@ class Fallback extends InputAbstract
 
         $select->join(
             array('z' => 'zins'),
-            'pc.component_id = z.component_id',
+            'pc.idProductComponents = z.idProductComponents',
             array(
                 // effektiv-Zins
                 'effZins' => 'z.zinssatz',

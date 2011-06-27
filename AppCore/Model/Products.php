@@ -128,12 +128,12 @@ class Products extends ModelAbstract
                 array('id' => 'idProducts')
             );
             $select->join(
-                array('i' => 'institute'),
+                array('i' => 'institutes'),
                 '`i`.`idInstitutes`=`p`.`idInstitutes`',
                 array('institut' => 'codename')
             );
             $select->join(
-                array('pc' => 'produkt_components'),
+                array('pc' => 'productComponents'),
                 '`pc`.`idProducts`=`p`.`idProducts`',
                 array()
             );
@@ -244,7 +244,7 @@ class Products extends ModelAbstract
                 )
             );
             $select->join(
-                array('pc' => 'produkt_components'),
+                array('pc' => 'productComponents'),
                 'p.idProducts = pc.idProducts',
                 array(
                     'cactive'    => 'pc.active',
@@ -408,6 +408,67 @@ class Products extends ModelAbstract
         }
         
         return null;
+    }
+
+    /**
+     * returns the actual Zins
+     *
+     * @param integer $productId the product ID
+     *
+     * @return string
+     */
+    public function getInformation($productId)
+    {
+        if (!is_numeric($productId)) {
+            return '';
+        }
+
+        if (0 >= (int) $productId) {
+            return '';
+        }
+
+        if (!isset(self::$_prepared['getInformation'])) {
+            /**
+             * @var Zend_Db_Table_Select
+             */
+            $select = $this->select()->setIntegrityCheck(false);
+            $select->from(
+                array('p' => $this->_name), array()
+            );
+
+            $select->where('p.idProducts = :id');
+            
+            $select->joinLeft(
+                array('pi' => 'productInformation'),
+                '`p`.`idProducts` = `pi`.`idProducts`',
+                array('info' => new \Zend\Db\Expr("IFNULL(GROUP_CONCAT(pi.info), '')"))
+            );
+
+            self::$_prepared['getInformation'] =
+                new \Zend\Db\Statement\Pdo($this->_db, $select);
+        }
+
+        $stmt = self::$_prepared['getInformation'];
+        $stmt->bindParam(':id', $productId, \PDO::PARAM_INT);
+
+        try {
+            $stmt->execute();
+
+            /**
+             * @var stdClass
+             */
+            $rows = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        } catch (\Zend\Db\Statement\Exception $e) {
+            $this->_logger->err($e);
+
+            $rows = array();
+        }
+
+        if (isset($rows[0]) && $rows[0]['info']) {
+            return $rows[0]['info'];
+        }
+        
+        return '';
     }
 
     /**

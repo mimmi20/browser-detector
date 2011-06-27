@@ -199,16 +199,8 @@ class Db extends CalculatorAbstract
                 'teaser'                  => 'ttp.teaser',
                 'teaserZone'              => 'ttp.teaser_zone',
                 'portal'                  => 'ttp.portal',
-                'infoAvailable'           => 'ttp.infoAvailable'
-            )
-        );
-
-        $select->joinLeft(
-            array('pi' => 'productInformation'),
-            '`ttp`.`product` = `pi`.`idProducts`',
-            array(
-                // Produktinformation
-                'info' => new \Zend\Db\Expr('IFNULL(`pi`.`info`, \'\')')
+                'infoAvailable'           => 'ttp.infoAvailable',
+                'info'                    => new \Zend\Db\Expr('NULL')
             )
         );
 

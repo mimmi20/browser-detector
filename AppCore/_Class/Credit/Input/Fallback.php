@@ -308,7 +308,7 @@ class KreditCore_Class_Credit_Input_Fallback
         }
 
         $select->join(
-            array('pc' => 'produkt_components'),
+            array('pc' => 'productComponents'),
             'p.idProducts = pc.idProducts',
             array(
                 // Name des Productss
@@ -327,7 +327,7 @@ class KreditCore_Class_Credit_Input_Fallback
 
         $select->join(
             array('z' => 'zins'),
-            'pc.component_id = z.component_id',
+            'pc.idProductComponents = z.idProductComponents',
             array(
                 // effektiv-Zins
                 'effZins' => 'z.zinssatz',

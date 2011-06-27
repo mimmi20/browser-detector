@@ -189,6 +189,7 @@ class Calculator extends CreditAbstract
             }
             
             $interfaceClass = '\\AppCore\\Credit\\Calculator\\' . ucfirst($interface);
+            //var_dump($row, $interface, $interfaceClass);exit;
             $oInterface     = new $interfaceClass();
             
             $oInterface
@@ -217,7 +218,7 @@ class Calculator extends CreditAbstract
             $institutes[$i] = $this->_doCalculation($institutes[$i], $campaign, $sparte, false);
             
             
-            $institutes[$i]['status']    = 'ok';
+            $institutes[$i]['status'] = 'ok';
             
             ++$validCount;
         }
@@ -265,7 +266,7 @@ class Calculator extends CreditAbstract
         \Zend\Db\Table\Row $sparte,
         $isRecalc = false)
     {
-        $kreditinstitut = strtolower($product['institut']);
+        $kreditinstitut = strtolower($product['kreditinstitut']);
 
         /*
          * TODO: make it possible to define the picture in the backend
@@ -274,13 +275,13 @@ class Calculator extends CreditAbstract
                           . DS . $kreditinstitut . '.gif';
 
         //Namen der Klasse anhand des Institutes festlegen
-        $resultClass = '\\AppCore\\Model\\CalcResult\\' . ucfirst($product['institut']);
-
+        $resultClass = '\\AppCore\\Model\\CalcResult\\' . ucfirst($kreditinstitut);
+        //var_dump($product, $resultClass);exit;
         //Result-Klasse erzeugen
         $result = new $resultClass();
 
         $result->bind($product);
-
+        //var_dump($isRecalc, $result->isValid(), file_exists($companyImageName), $result);exit;
         /*
          * validate result only, if this is not a recalculation
          */
@@ -558,7 +559,7 @@ class Calculator extends CreditAbstract
      */
     private function _setOutputFormater()
     {
-        $formater = new \AppCore\Credit\Output($this->_mode);
+        $formater = new Output($this->_mode);
         $formater
             ->setLaufzeit($this->_laufzeit)
             ->setKreditbetrag($this->_betrag)
@@ -582,7 +583,7 @@ class Calculator extends CreditAbstract
      */
     private function _setInfoFormater()
     {
-        $formater = new \AppCore\Credit\Info();
+        $formater = new Info();
         $formater
             ->setLaufzeit($this->_laufzeit)
             ->setMode($this->_mode)
@@ -649,17 +650,15 @@ class Calculator extends CreditAbstract
         if ('no' == $campaign->loadInfo) {
             $result->info = $this->_infoFormater->info(false);
         } else {
-            if (!$result->info) {
-                /*
-                 * the product information is not loaded from database
-                 * -> load it now (maybe from a template)
-                 */
-                $this->_infoFormater->setProduct($result->product);
+            /*
+             * the product information is not loaded from database
+             * -> load it now (maybe from a template)
+             */
+            $this->_infoFormater->setProduct($result->product);
 
-                $result->info = $this->_infoFormater->info(
-                    true, (boolean) $result->infoAvailable
-                );
-            }
+            $result->info = $this->_infoFormater->info(
+                true, (boolean) $result->infoAvailable
+            );
 
             //replace the placeholders
             $result->info = str_replace(

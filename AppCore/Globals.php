@@ -1492,7 +1492,7 @@ class Globals
         $componentModel  = new \AppCore\Model\Products();
         $componentSelect = $componentModel->select()->setIntegrityCheck(false);
         $componentSelect->from(
-            array('pc' => 'produkt_components'),
+            array('pc' => 'productComponents'),
             array('pc.idProducts')
         );
         $componentSelect->where('`pc`.`idCategories` = ? ', $sparte);
