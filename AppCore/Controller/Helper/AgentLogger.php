@@ -103,7 +103,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
             $browserId = $browserClass->idBrowsers;
         } else {
             //var_dump($browser);exit;
-            
+
             $aBrowser = array(
                 'browserName'              => $browser->Browser,
                 'platformName'             => $browser->Platform,
@@ -155,7 +155,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
 
         $request->setParam('agent', $userAgent);
         $request->setParam('browserId', $browserId);
-        
+
         $query = 'INSERT INTO `agents` (`idBrowsers`,`agent`,`createDate`) VALUES (' . ($browserId ? $browserId : 'NULL') . ', ' . $db->quote($userAgent) . ', unix_timestamp()) ON DUPLICATE KEY UPDATE `createDate`=unix_timestamp()';
         $db->query($query);
         $agentId = $db->lastInsertId();
@@ -203,9 +203,9 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
     }
 
     /**
-     * Default-Methode fÃ¼r Services
+     * Default-Methode für Services
      *
-     * wird als Alias fÃ¼r die Funktion {@link log} verwendet
+     * wird als Alias für die Funktion {@link log} verwendet
      *
      * @return void
      */

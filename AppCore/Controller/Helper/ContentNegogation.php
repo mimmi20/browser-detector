@@ -60,7 +60,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
      * @var boolean
      */
     private $_useHtmlFive = false;
-    
+
     /**
      * a flag to tell that XHTML1 should be used instead of HTML4
      * 
@@ -267,8 +267,6 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
          * detect the encoding and set it to the registry and the view
          */
         $encoding = $this->_getEncodingMatch();
-        \Zend\Registry::set('_encoding', $encoding);
-
         mb_internal_encoding($encoding);
         mb_regex_encoding($encoding);
 
@@ -482,6 +480,24 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         }
         
         $this->_wantedType = $contentType;
+        
+        return $this;
+    }
+    
+    /**
+     * sets a flag that the browser is prefered over the user definition
+     * 
+     * @param array|\Zend\Config\Config|string $type
+     *
+     * @return ContentNegogation
+     */
+    public function setPreferBowser($preferBrowser = false)
+    {
+        if ($preferBrowser) {
+            $this->_preferBrowser = true;
+        } else {
+            $this->_preferBrowser = false;
+        }
         
         return $this;
     }
