@@ -624,8 +624,8 @@ class Globals
 
                 $xml = '';
             }
-        } elseif ($class == '\AppCore\Model\CalcResult'
-            || is_subclass_of($value, '\AppCore\Model\CalcResult')
+        } elseif ($class == '\AppCore\Service\CalcResult'
+            || is_subclass_of($value, '\AppCore\Service\CalcResult')
         ) {
             $xml = '<' . $key . '>'
                  . self::_ia2xml($value->toArray(), $level)

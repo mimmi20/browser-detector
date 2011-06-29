@@ -27,6 +27,17 @@ namespace AppCore\Controller\Helper;
 class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
 {
     /**
+     * Class constructor
+     *
+     * @access public
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->_logger = \Zend\Registry::get('log');
+    }
+    
+    /**
      * Default-Methode für Services
      *
      * wird als Alias für die Funktion {@link log} verwendet
@@ -69,7 +80,8 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
     public function getParam(
         $paramName = null,
         $default = null,
-        $validator = null)
+        $validator = null,
+        &$changed = false)
     {
         $requestData = $this->getRequest()->getParams();
         
@@ -82,23 +94,56 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         ) {
             return $default;
         }
+        
+        $check = true;
 
         if (is_object($requestData[$paramName])) {
-            // no other handling for objects
-            return $requestData[$paramName];
-        }
-
-        if (is_array($requestData[$paramName])) {
+            $value = $requestData[$paramName];
+            $check = false;
+        } elseif (is_array($requestData[$paramName])) {
             $value = array_pop($requestData[$paramName]);
         } else {
             $value = $requestData[$paramName];
         }
 
-        return $this->getActionController()->getHelper('CheckParam')->direct(
+        $value = $this->getActionController()->getHelper('checkParam')->direct(
             $value,
             $default,
             $this->_defineValidators($validator)
         );
+        
+        return $value;//$this->_getParamFromSession($paramName, $value, $changed);
+    }
+    
+    /**
+     * TODO:
+     *
+     * @param string $paramName   the name of the param
+     * @param mixed  $default     the default value
+     *
+     * @return mixed
+     */
+    private function _getParamFromSession($paramName, $default = null, &$changed = false)
+    {
+        $param = $default;
+        
+        if (!isset($_SESSION->$paramName) 
+            || null === $_SESSION->$paramName 
+            || $param != $_SESSION->$paramName
+        ) {
+            $_SESSION->$paramName = $param;
+            
+            $message = "param '" . $paramName . "' not taken from session";
+            $changed = true;
+        } else {
+            $param   = $_SESSION->$paramName;
+            $message = "took param '" . $paramName . "' from session";
+        }
+        
+        $_SESSION->messages[] = $message;
+        $this->_logger->debug($message);
+        
+        return $param;
     }
 
     /**

@@ -27,7 +27,7 @@ class Iframe extends OutputAbstract
     /**
      * @return \AppCore\Credit\Output_Iframe
      */
-    public function getOfferLink(\AppCore\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Service\CalcResult $result)
     {
         $int = ($this->_urlDirAntrag == \Zend\Registry::get('_home'));
 
@@ -79,7 +79,7 @@ class Iframe extends OutputAbstract
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -87,7 +87,7 @@ class Iframe extends OutputAbstract
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl . 'iframe/kredite/function/antrag'

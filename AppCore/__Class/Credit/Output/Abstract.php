@@ -548,7 +548,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
     /**
      * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getOfferLink(\AppCore\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Service\CalcResult $result)
     {
         $baseUrl = rtrim(\Zend\Registry::get('_urlDir'), '/') . '/';
 
@@ -565,7 +565,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
     /**
      * sets the created URLs  to the given object
      *
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param string                      $baseUrl
      * @param string                      $offerLnkSecure
      * @param string                      $offerLnkSecureTeaser
@@ -573,7 +573,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
      * @return \AppCore\Credit\Output\AbstractOutput
      */
     protected function setOfferLinks(
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         $baseUrl,
         $offerLnkSecure = '',
         $offerLnkSecureTeaser = '')
@@ -596,7 +596,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -604,7 +604,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl
@@ -624,7 +624,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
     /**
      * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getAntragsParams(\AppCore\Model\CalcResult $result)
+    public function getAntragsParams(\AppCore\Service\CalcResult $result)
     {
         $result->antragParams = $this->getOfferParams();
 
@@ -634,7 +634,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
     /**
      * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getInfoParams(\AppCore\Model\CalcResult $result)
+    public function getInfoParams(\AppCore\Service\CalcResult $result)
     {
         $result->infoParams = $this->getInfoParamsInternal();
 
@@ -644,7 +644,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
     /**
      * @return \AppCore\Credit\Output\AbstractOutput
      */
-    public function getInfoLink(\AppCore\Model\CalcResult $result)
+    public function getInfoLink(\AppCore\Service\CalcResult $result)
     {
         //$baseUrl  = rtrim(\Zend\Registry::get('_urlDir'), '/') . '/';
         //$infoLink = $baseUrl . 'kreditrechner-informationen-zum-anbieter.html';
@@ -692,7 +692,7 @@ abstract class \AppCore\Credit\Output\AbstractOutput
      * @return array
      */
     protected function getOfferLinkWithUrl(
-        \AppCore\Model\CalcResult $result, $baseUrl)
+        \AppCore\Service\CalcResult $result, $baseUrl)
     {
         $int = (\Zend\Registry::get('_urlDir') == \Zend\Registry::get('_home'));
 

@@ -162,7 +162,6 @@ abstract class FileAbstract extends ControllerAbstract
             '',
             '_\\AppCore\\Validator\\FileName'
         );
-        var_dump($file);
 
         if (!$file) {
             //set headers

@@ -63,25 +63,25 @@ class Fallback extends Calculator\Db
         $this->_createTables();
         $this->_fillTables();
         
-        if (!$this->getRowsCount()) {var_dump('not filled');
+        if (!$this->getRowsCount()) {
             return array();
         }
         
         $this->_updateRows();
         
-        if (!$this->getRowsCount()) {var_dump('cleared while updating');
+        if (!$this->getRowsCount()) {
             return array();
         }
         
         $this->_updateTeasers();
         
-        if (!$this->getRowsCount()) {var_dump('cleared while updating teasers');
+        if (!$this->getRowsCount()) {
             return array();
         }
         
         $this->_deleteWithoutUrl();
         
-        if (!$this->getRowsCount()) {var_dump('cleared while updating urls');
+        if (!$this->getRowsCount()) {
             return array();
         }
 
@@ -209,7 +209,7 @@ class Fallback extends Calculator\Db
         } catch (\Zend\Db\Statement\Exception $e) {
             $this->_logger->err($e);
         }
-var_dump($this->getRows());
+
         return $this;
     }
 
@@ -629,7 +629,7 @@ var_dump($this->getRows());
         $stmt->execute();
         
         //var_dump(count($this->getRows()->toArray()));
-var_dump($this->getRows());
+
         return $this;
     }
 
@@ -655,7 +655,7 @@ var_dump($this->getRows());
                   . $this->_db->quoteIdentifier($this->_tempTableProducts)
                   . ' WHERE `uid` = :uid';
         $stmtOne  = new \Zend\Db\Statement\Pdo($this->_db, $queryOne);
-var_dump($this->getRows());
+
         $queryThree = 'UPDATE '
                     . $this->_db->quoteIdentifier($this->_tempTableProducts)
                     . ' SET `internal`=:internal, `url`=:url,
@@ -682,8 +682,6 @@ var_dump($this->getRows());
         $stmt->setFetchMode(\Zend\Db\Db::FETCH_OBJ);
         $rows = $stmt->fetchAll();
         
-        //var_dump('bb', count($this->getRows()->toArray()));
-
         foreach ($rows as $row) {
             //$this->_logger->info(print_r($row, true));
 
@@ -692,8 +690,6 @@ var_dump($this->getRows());
             );
         }
         
-        //var_dump('cc', count($this->getRows()->toArray()));
-var_dump($this->getRows());
         return $this;
     }
 
@@ -824,8 +820,6 @@ var_dump($this->getRows());
         $stmt->execute();
         /**/
         
-        //var_dump('dd', count($this->getRows()->toArray()));
-
         return $this;
     }
 
@@ -912,8 +906,6 @@ var_dump($this->getRows());
             $stmtTwo->execute();
         }
         
-        //var_dump('ee', count($this->getRows()->toArray()));
-var_dump($this->getRows());
         return $this;
     }
 

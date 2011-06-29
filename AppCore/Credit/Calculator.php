@@ -189,7 +189,6 @@ class Calculator extends CreditAbstract
             }
             
             $interfaceClass = '\\AppCore\\Credit\\Calculator\\' . ucfirst($interface);
-            //var_dump($row, $interface, $interfaceClass);exit;
             $oInterface     = new $interfaceClass();
             
             $oInterface
@@ -275,13 +274,13 @@ class Calculator extends CreditAbstract
                           . DS . $kreditinstitut . '.gif';
 
         //Namen der Klasse anhand des Institutes festlegen
-        $resultClass = '\\AppCore\\Model\\CalcResult\\' . ucfirst($kreditinstitut);
-        //var_dump($product, $resultClass);exit;
+        $resultClass = '\\AppCore\\Service\\CalcResult';
+        
         //Result-Klasse erzeugen
-        $result = new $resultClass();
+        $result = new $resultClass($kreditinstitut);
 
         $result->bind($product);
-        //var_dump($isRecalc, $result->isValid(), file_exists($companyImageName), $result);exit;
+        
         /*
          * validate result only, if this is not a recalculation
          */
@@ -492,14 +491,14 @@ class Calculator extends CreditAbstract
     /**
      * detect if the link target is internal or external from the campaign
      *
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param \Zend\Db\Table\Row          $campaign
      * @param boolean                     $isRecalc
      *
      * @return boolean if TRUE, the product is NOT allowed in the actual result
      */
     private function _detectInternal(
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         \Zend\Db\Table\Row $campaign,
         $isRecalc = false)
     {
@@ -639,13 +638,13 @@ class Calculator extends CreditAbstract
     /**
      * gets the product information and parses it
      *
-     * @param \Zend\Db\Table\Row        $campaign the actual campaign
-     * @param \AppCore\Model\CalcResult $result   the current dataset
+     * @param \Zend\Db\Table\Row          $campaign the actual campaign
+     * @param \AppCore\Service\CalcResult $result   the current dataset
      *
      * @return \AppCore\Credit\Calc
      */
     private function _parseInfo(
-        \Zend\Db\Table\Row $campaign, \AppCore\Model\CalcResult $result)
+        \Zend\Db\Table\Row $campaign, \AppCore\Service\CalcResult $result)
     {
         if ('no' == $campaign->loadInfo) {
             $result->info = $this->_infoFormater->info(false);

@@ -26,7 +26,7 @@ class \AppCore\Credit\Output_Curl
      * @return void
      * @access public
      */
-    public function getOfferLink(\AppCore\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Service\CalcResult $result)
     {
         return $this->setOfferLinks(
             $result, $this->_baseUrl
@@ -37,7 +37,7 @@ class \AppCore\Credit\Output_Curl
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -45,7 +45,7 @@ class \AppCore\Credit\Output_Curl
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         $teaser = false)
     {
         return $baseUrl

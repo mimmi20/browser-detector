@@ -27,7 +27,7 @@ class Fallback extends OutputAbstract
     /**
      * @return \AppCore\Credit\Output\Fallback
      */
-    public function getOfferLink(\AppCore\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Service\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 
@@ -46,7 +46,7 @@ class Fallback extends OutputAbstract
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -54,7 +54,7 @@ class Fallback extends OutputAbstract
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         $teaser = false)
     {
         /*
@@ -80,7 +80,7 @@ class Fallback extends OutputAbstract
     /**
      * @return \AppCore\Credit\Output\Fallback
      */
-    public function getInfoLink(\AppCore\Model\CalcResult $result)
+    public function getInfoLink(\AppCore\Service\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 

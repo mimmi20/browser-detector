@@ -263,7 +263,7 @@ class \AppCore\Credit\Antrag extends \AppCore\Credit\CreditAbstract
 
         if (!isset($data['kreditResult'][$key])
             || !($data['kreditResult'][$key]
-                instanceof \AppCore\Model\CalcResult)
+                instanceof \AppCore\Service\CalcResult)
         ) {
             $data['reason'] = 'recalculation failed';
 

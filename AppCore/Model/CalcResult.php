@@ -28,7 +28,7 @@ namespace AppCore\Model;
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
-class CalcResult
+abstract class CalcResult
 {
     /**
      * Name of the table in the db schema relating to child class
@@ -48,16 +48,6 @@ class CalcResult
      * @var Zend_Db_Table_Row
      */
     protected $_result = null;
-
-    /**
-     * Konstruktor
-     *
-     * @return KreditCore_Model_CalcResult
-     */
-    public function __construct()
-    {
-        //$this->_db = Zend_Db_Table_Abstract::getDefaultAdapter();
-    }
 
     /**
      * Returns the value of a param
@@ -103,12 +93,12 @@ class CalcResult
      */
     public function bind($result)
     {
-        if ($result instanceof Zend_Db_Table_Row) {
+        if ($result instanceof \Zend\Db\Table\Row) {
             $result = $result->toArray();
         }
         
         if (!is_array($result)) {
-            throw new Zend_Exception(
+            throw new \Zend\Exception(
                 '$result must be an array or an instance of Zend_Db_Table_Row'
             );
         }

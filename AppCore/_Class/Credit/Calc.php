@@ -212,7 +212,7 @@ class \AppCore\Credit\Calc extends \AppCore\Credit\CreditAbstract
                           . DS . $kreditinstitut . '.gif';
 
         //Namen der Klasse anhand des Institutes festlegen
-        $klasse = '\AppCore\Model\CalcResult_' . ucfirst($kreditinstitut);
+        $klasse = '\AppCore\Service\CalcResult_' . ucfirst($kreditinstitut);
 
         //Result-Klasse erzeugen
         $result = new $klasse();
@@ -435,14 +435,14 @@ class \AppCore\Credit\Calc extends \AppCore\Credit\CreditAbstract
     /**
      * detect if the link target is internal or external from the campaign
      *
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param Zend_Db_Table_Row           $campaign
      * @param boolean                     $isRecalc
      *
      * @return boolean if TRUE, the product is NOT allowed in the actual result
      */
     private function _detectInternal(
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         Zend_Db_Table_Row $campaign,
         $isRecalc = false)
     {
@@ -583,12 +583,12 @@ class \AppCore\Credit\Calc extends \AppCore\Credit\CreditAbstract
      * gets the product information and parses it
      *
      * @param Zend_Db_Table_Row           $campaign the actual campaign
-     * @param \AppCore\Model\CalcResult $result   the current dataset
+     * @param \AppCore\Service\CalcResult $result   the current dataset
      *
      * @return \AppCore\Credit\Calc
      */
     private function _parseInfo(
-        Zend_Db_Table_Row $campaign, \AppCore\Model\CalcResult $result)
+        Zend_Db_Table_Row $campaign, \AppCore\Service\CalcResult $result)
     {
         if ('no' == $campaign->loadInfo) {
             $result->info = $this->_infoFormater->info(false);

@@ -25,7 +25,7 @@ class \AppCore\Credit\Output\Fallback
     /**
      * @return \AppCore\Credit\Output\Fallback
      */
-    public function getOfferLink(\AppCore\Model\CalcResult $result)
+    public function getOfferLink(\AppCore\Service\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 
@@ -44,7 +44,7 @@ class \AppCore\Credit\Output\Fallback
      * creates the URL for the credit request form
      *
      * @param string                      $baseUrl
-     * @param \AppCore\Model\CalcResult $result
+     * @param \AppCore\Service\CalcResult $result
      * @param boolean                     $teaser
      *
      * @return string
@@ -52,7 +52,7 @@ class \AppCore\Credit\Output\Fallback
     protected function getLink(
         $baseUrl,
         $offerLnk,
-        \AppCore\Model\CalcResult $result,
+        \AppCore\Service\CalcResult $result,
         $teaser = false)
     {
         /*
@@ -78,7 +78,7 @@ class \AppCore\Credit\Output\Fallback
     /**
      * @return \AppCore\Credit\Output\Fallback
      */
-    public function getInfoLink(\AppCore\Model\CalcResult $result)
+    public function getInfoLink(\AppCore\Service\CalcResult $result)
     {
         $baseUrl = rtrim($this->_urlDirAntrag, '/') . '/';
 

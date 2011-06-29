@@ -266,7 +266,7 @@ class Antrag extends CreditAbstract
 
         if (!isset($data['kreditResult'][$key])
             || !($data['kreditResult'][$key]
-                instanceof \AppCore\Model\CalcResult)
+                instanceof \AppCore\Service\CalcResult)
         ) {
             $data['reason'] = 'recalculation failed';
 
