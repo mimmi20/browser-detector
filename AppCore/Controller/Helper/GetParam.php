@@ -49,7 +49,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         $default = null,
         $validator = null)
     {
-        return $this->getParam($paramName, $default, $validator);
+        return $this->getParamFromName($paramName, $default, $validator);
     }
 
     /**
@@ -77,7 +77,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return mixed
      */
-    public function getParam(
+    public function getParamFromName(
         $paramName = null,
         $default = null,
         $validator = null,
@@ -107,12 +107,34 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         }
 
         $value = $this->getActionController()->getHelper('checkParam')->direct(
-            $value,
+            $this->_cleanParam($value),
             $default,
             $this->_defineValidators($validator)
         );
         
-        return $value;//$this->_getParamFromSession($paramName, $value, $changed);
+        return $this->_getParamFromSession($paramName, $value, $changed);
+    }
+
+    /**
+     * clean Parameters taken from GET or POST Variables
+     *
+     * @return string
+     */
+    private function _cleanParam($param)
+    {
+        if (true === $param
+            || false === $param
+            || is_object($param)
+            || is_numeric($param)
+        ) {
+            return $param;
+        }
+        
+        if (is_array($param)) {
+            return array_map(array($this, '_cleanParam'), $param);
+        }
+
+        return strip_tags(trim(urldecode(stripslashes($param))));
     }
     
     /**
@@ -138,6 +160,10 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         } else {
             $param   = $_SESSION->$paramName;
             $message = "took param '" . $paramName . "' from session";
+        }
+        
+        if (!isset($_SESSION->messages)) {
+            $_SESSION->messages = array();
         }
         
         $_SESSION->messages[] = $message;

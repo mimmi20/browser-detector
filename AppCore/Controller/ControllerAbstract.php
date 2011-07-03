@@ -91,19 +91,6 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_redirector = $this->getHelper('Redirector');
         $this->_context    = $this->getHelper('contentNegogation');
         $this->_context->setConfig($this->_config->negogation);
-    }
-
-    /**
-     * (non-PHPdoc)
-     *
-     * @see    library/Zend/Controller/Zend_Controller_Action#preDispatch()
-     * @return void
-     * @access public
-     */
-    public function preDispatch()
-    {
-        $this->_time = \microtime(true);
-        parent::preDispatch();
         
         $this->_helper->params(true);
 
@@ -118,6 +105,19 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         //$this->view->module = $this->_module;
 
         $this->_db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();
+    }
+
+    /**
+     * (non-PHPdoc)
+     *
+     * @see    library/Zend/Controller/Zend_Controller_Action#preDispatch()
+     * @return void
+     * @access public
+     */
+    public function preDispatch()
+    {
+        $this->_time = \microtime(true);
+        parent::preDispatch();
 
         //set headers
         $this->_helper->header->setDefaultHeaders();
@@ -271,6 +271,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      * @return array
      * @access protected
      */
+    /*
     protected function getParams()
     {
         $sources = $this->_request->getParamSources();

@@ -187,6 +187,10 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
                 'suffix'    => 'atom',
                 'headers'   => array('Content-Type' => 'application/atom+xml')
             ),
+            'soap'  => array(
+                'suffix'    => 'soap',
+                'headers'   => array('Content-Type' => 'application/soap+xml')
+            ),
             'css'  => array(
                 'suffix'    => 'css',
                 'headers'   => array('Content-Type' => 'text/css')
@@ -197,15 +201,24 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
             ),
             'pdf'  => array(
                 'suffix'    => 'pdf',
-                'headers'   => array('Content-Type' => 'application/pdf')
+                'headers'   => array('Content-Type' => 'application/pdf'),
+                'callbacks' => array(
+                    'post' => 'postPdfContext'
+                )
             ),
             'excel5'  => array(
                 'suffix'    => 'excel5',
-                'headers'   => array('Content-Type' => 'application/vnd.ms-excel')
+                'headers'   => array('Content-Type' => 'application/vnd.ms-excel'),
+                'callbacks' => array(
+                    'post' => 'postExcelContext'
+                )
             ),
             'excel2007'  => array(
                 'suffix'    => 'excel2007',
-                'headers'   => array('Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+                'headers'   => array('Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),
+                'callbacks' => array(
+                    'post' => 'postExcelContext'
+                )
             )
         ));
     }
@@ -244,6 +257,26 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
             
             $view->headMeta($header['value'], $headerName, $headerType, array(), $headerPlace);
         }
+    }
+
+    /**
+     * Excel post processing
+     *
+     * @return void
+     */
+    public function postExcelContext()
+    {
+        //TODO: need to implement
+    }
+
+    /**
+     * PDF post processing
+     *
+     * @return void
+     */
+    public function postPdfContext()
+    {
+        //TODO: need to implement
     }
 
     /**

@@ -61,9 +61,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
         $keys = array_keys($this->_requestData);
 
         foreach ($keys as $key) {
-            $this->_requestData[$key] = $this->_cleanParam(
-                $this->_requestData[$key]
-            );
+            $this->_requestData[$key] = $this->getActionController()->getHelper('getParam')->direct($key);
         }
 
         /*
@@ -98,20 +96,6 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
     public function direct($return = false)
     {
         return $this->get($return);
-    }
-
-    /**
-     * clean Parameters taken from GET or POST Variables
-     *
-     * @return string
-     */
-    private function _cleanParam($param)
-    {
-        if (is_string($param)) {
-            return strip_tags(trim(urldecode($param)));
-        } else {
-            return $param;
-        }
     }
     
     private function _setParams($request, $return = false)
