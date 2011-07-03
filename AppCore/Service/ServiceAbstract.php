@@ -76,7 +76,7 @@ abstract class ServiceAbstract
         $this->_model
             ->getCached()
             ->getCache()
-            ->clean(\Zend\Cache\Cache::CLEANING_MODE_MATCHING_ANY_TAG, array($tag));
+            ->clean(\Zend\Cache\Frontend\Core::CLEANING_MODE_MATCHING_ANY_TAG, array($tag));
 
         return $this;
     }

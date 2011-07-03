@@ -29,7 +29,7 @@ class Products extends ModelAbstract
      *
      * @var String
      */
-    protected $_name = 'Products';
+    protected $_name = 'products';
 
     /**
      * Primary key

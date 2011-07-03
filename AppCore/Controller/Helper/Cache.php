@@ -220,7 +220,7 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
         $cache->start();
 
         //nur bereinigen, wenn nicht im Cache
-        $cache->clean(\Zend\Cache\Cache::CLEANING_MODE_OLD);
+        $cache->clean(\Zend\Cache\Frontend\Core::CLEANING_MODE_OLD);
     }
 
     /**

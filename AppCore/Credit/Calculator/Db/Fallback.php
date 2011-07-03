@@ -237,7 +237,7 @@ class Fallback extends Calculator\Db
         $select->where('i.active = 1');
 
         $select->join(
-            array('p' => 'Products'),
+            array('p' => 'products'),
             'i.idInstitutes = p.idInstitutes',
             array(
                 // product id

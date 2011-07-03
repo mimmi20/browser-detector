@@ -49,7 +49,9 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $this->_requestData = $request->getParams();
         
         $config   = \Zend\Registry::get('_config');
-        $browscap = new \Browscap\Browscap($config->browscap, $this->_logger);
+        $front    = \Zend\Controller\Front::getInstance();
+        $cache    = $front->getParam('bootstrap')->getResource('cachemanager')->getCache('browscap');
+        $browscap = new \Browscap\Browscap($config->browscap, $this->_logger, $cache);
 
         $userAgent = $this->_getUserAgent();
 

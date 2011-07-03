@@ -134,8 +134,8 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     private function _doCalculate($caid, $sparte, $laufzeit, $betrag, $zweck)
     {
-        $usages     = $this->_helper->usages->getList();
-        $laufzeiten = $this->_helper->laufzeit->getList($sparte);
+        $usages     = $this->getActionController()->getHelper('usages')->getList();
+        $laufzeiten = $this->getActionController()->getHelper('laufzeit')->getList($sparte);
         
         $result = array(
             'result' => array(),
@@ -170,7 +170,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         $calculator = new \AppCore\Credit\Calculator();
         $calculator
             ->setCaid($caid)
-            ->setView($this->view)
+            ->setView($this->getActionController()->view)
             ->setSparte($sparte)
             ->setLaufzeit($laufzeit)
             ->setZweck($zweck)
