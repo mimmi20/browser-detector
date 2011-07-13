@@ -69,7 +69,7 @@ class Browscap
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
      */
-    public function __construct($config = null, $log = null)
+    public function __construct($config = null, $log = null, $cache = null)
     {
         if (is_object($config) && method_exists($config, 'toArray')) {
             $config = $config->toArray();
@@ -79,7 +79,9 @@ class Browscap
         
         $this->_config = $config;
         
-        if (isset($this->_config['cache'])) {
+        if ($cache instanceof \Zend\Cache\Frontend\Core) {
+            $this->_cache = $cache;
+        } elseif (isset($this->_config['cache'])) {
             $cacheConfig = $this->_config['cache'];
             
             $this->_cache = \Zend\Cache\Cache::factory(
@@ -127,18 +129,18 @@ class Browscap
             preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent))
         );
 
-        if (!($this->_cache instanceof \Zend\Cache\Cache) 
+        if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
             || !$array = $this->_cache->load($cacheId)
         ) {
             $cacheGlobalId = 'agentsGlobal';
 
             // Load the cache at the first request
-            if (!($this->_cache instanceof \Zend\Cache\Cache) 
+            if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
                 || !$agentsGlobal = $this->_cache->load($cacheGlobalId)
             ) {
                 $agentsGlobal = $this->_getBrowserFromCache();
 
-                if ($this->_cache instanceof \Zend\Cache\Cache) {
+                if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                     $this->_cache->save($agentsGlobal, $cacheGlobalId);
                 }
             }
@@ -169,7 +171,7 @@ class Browscap
                 $array[$agentsGlobal['properties'][(int)$key]] = $value;
             }
 
-            if ($this->_cache instanceof \Zend\Cache\Cache) {
+            if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                 $this->_cache->save($array, $cacheId);
             }
         }
