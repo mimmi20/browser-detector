@@ -117,7 +117,7 @@ abstract class FileAbstract extends ControllerAbstract
         parent::preDispatch();
 
         if (!$this->_request->isGet()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
@@ -165,7 +165,7 @@ abstract class FileAbstract extends ControllerAbstract
 
         if (!$file) {
             //set headers
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
         } else {
             $this->getCachedFile($file);
 
@@ -194,7 +194,7 @@ abstract class FileAbstract extends ControllerAbstract
              * no file requested, or invalid file name
              * set headers
              */
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
             return;
         }
 
@@ -209,7 +209,7 @@ abstract class FileAbstract extends ControllerAbstract
              * invalid campaign set
              * set headers
              */
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
             return;
         }
 

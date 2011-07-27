@@ -46,10 +46,11 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     public function direct(
         $paramName = null,
+        $encoding = 'utf-8',
         $default = null,
         $validator = null)
     {
-        return $this->getParamFromName($paramName, $default, $validator);
+        return $this->getParamFromName($paramName, $encoding, $default, $validator);
     }
 
     /**
@@ -79,6 +80,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     public function getParamFromName(
         $paramName = null,
+        $encoding = 'utf-8',
         $default = null,
         $validator = null,
         &$changed = false)
@@ -107,7 +109,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         }
 
         $value = $this->getActionController()->getHelper('checkParam')->direct(
-            $this->_cleanParam($value),
+            $this->_cleanParam($value, $encoding),
             $default,
             $this->_defineValidators($validator)
         );
@@ -120,19 +122,20 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return string
      */
-    private function _cleanParam($param)
+    private function _cleanParam($param, $encoding)
     {
         if (true === $param
             || false === $param
             || is_object($param)
-            || is_numeric($param)
         ) {
             return $param;
         }
         
         if (is_array($param)) {
-            return array_map(array($this, '_cleanParam'), $param);
+            return array_map(array($this, '_cleanParam'), $param, $encoding);
         }
+        
+        $param = iconv(strtoupper($encoding), 'UTF-8//TRANSLIT//IGNORE', $param);
 
         return strip_tags(trim(urldecode(stripslashes($param))));
     }

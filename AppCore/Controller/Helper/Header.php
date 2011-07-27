@@ -99,7 +99,7 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return void
      */
-    public function setNotFoundHeaders($responseCode = 404)
+    public function setErrorHeaders($responseCode = 404, $message = '')
     {
         $this->getActionController()->getHelper('ViewRenderer')->setNoRender();
         $this->getActionController()->getHelper('Layout')->disableLayout();
@@ -128,7 +128,7 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
             );
         }
 
-        $this->getResponse()->setBody('');
+        $this->getResponse()->setBody($message);
         $this->getRequest()->setDispatched(true);
     }
 

@@ -152,21 +152,21 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
          */
         $this->addContexts(array(
             'xhtml'  => array(
-                'suffix'    => ($isAjax ? 'xajax' : 'xhtml'),
+                'suffix'    => 'xhtml',
                 'headers'   => array('Content-Type' => 'application/xhtml+xml'),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
             'xhtmlmp'  => array(
-                'suffix'    => ($isAjax ? 'xajaxmp' : 'xhtmlmp'),
+                'suffix'    => 'xhtmlmp',
                 'headers'   => array('Content-Type' => 'application/vnd.wap.xhtml+xml'),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
             'html'  => array(
-                'suffix'    => ($isAjax ? 'ajax' : 'html'),
+                'suffix'    => 'html',
                 'headers'   => array('Content-Type' => 'text/html'),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
@@ -542,13 +542,26 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
      */
     private function _negotiateEncoding()
     {
-        $request    = $this->getRequest();
-        $server     = $request->getServer('HTTP_ACCEPT_CHARSET');
+        $request     = $this->getRequest();
+        $server      = $request->getServer('HTTP_ACCEPT_CHARSET');
+        $contentType = $request->getServer('CONTENT_TYPE');
         
-        if (null === $server) {
-            $charsets = array_keys(\Zend\Locale\Locale::getHttpCharset());
-        } else {
+        if ($contentType 
+            && false !== strpos($contentType, ';') 
+            && false !== strpos($contentType, 'charset=')
+        ) {
+            $types = explode(';', $contentType);
+            
+            foreach ($types as $type) {
+                if (false !== strpos($type, 'charset=')) {
+                    $charsets = array(trim(str_replace('charset=', '', $type))); 
+                    break;
+                }
+            }
+        } elseif ($server) {
             $charsets = explode(',', $server);
+        } else {
+            $charsets = array_keys(\Zend\Locale\Locale::getHttpCharset());
         }
         
         $this->_acceptEncoding = $this->_break($charsets);
