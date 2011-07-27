@@ -29,7 +29,7 @@ class KreditAdmin_ZinsController extends KreditCore_Controller_AdminAbstract
     public function editAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
@@ -168,7 +168,7 @@ class KreditAdmin_ZinsController extends KreditCore_Controller_AdminAbstract
     public function deleteAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }

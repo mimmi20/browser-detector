@@ -232,7 +232,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
     public function activateAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
@@ -264,7 +264,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
     public function detailAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }

@@ -55,13 +55,13 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
         if (!$config->admin->enabled
             || (!$config->admin->isAdmin && !$config->admin->hasAdmin)
         ) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
 
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
@@ -140,7 +140,7 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
     public function doLoginAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
@@ -273,7 +273,7 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
         $this->_destroyIdendity();
 
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setNotFoundHeaders();
+            $this->_helper->header->setErrorHeaders();
 
             return;
         }
