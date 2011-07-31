@@ -195,7 +195,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
                        : '');
 
         $isTest  = false;
-        $unitest = (boolean) $this->getActionController()->getHelper('GetParam')->direct('unitest');
+        $unitest = (boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('unitest');
         if ($unitest || \AppCore\Globals::isTest($remoteAddress)) {
             $isTest = true;
         }
@@ -225,7 +225,7 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     private function _getUserAgent()
     {
-        $userAgent = $this->getActionController()->getHelper('GetParam')->direct('Agent', '');
+        $userAgent = $this->getActionController()->getHelper('getParam')->getParamFromName('Agent', '');
 
         /*
          * detect the clients user agent, in js/iframe mode this is not set

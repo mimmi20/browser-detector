@@ -101,7 +101,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_controller = strtolower($this->_request->getControllerName());
         $this->_module     = strtolower($this->_request->getModuleName());
         $this->_config     = \Zend\Registry::get('_config');
-
+        //var_dump($this->_action, $this->_controller, $this->_module);
         //$this->view->module = $this->_module;
 
         $this->_db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();

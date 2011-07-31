@@ -42,11 +42,11 @@ class GetCampaignId extends \Zend\Controller\Action\Helper\AbstractHelper
             return null;
         }
         
-        if ($caid = $controller->getHelper('GetParam')->direct('campaignId')) {
+        if ($caid = $controller->getHelper('getParam')->getParamFromName('campaignId')) {
             return (int) $caid;
         }
         
-        if ($caid = $controller->getHelper('GetParam')->direct('caid')) {
+        if ($caid = $controller->getHelper('getParam')->getParamFromName('caid')) {
             return (int) $caid;
         }
         

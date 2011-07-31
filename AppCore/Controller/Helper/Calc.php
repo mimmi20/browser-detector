@@ -62,12 +62,17 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         $_SESSION->messages = array();
         $changed            = false;
         
-        $noResult = (boolean) $this->getActionController()->getHelper('GetParam')->direct('noResult', 0, 'Int', $changed);
-        $caid     = (int) $this->getActionController()->getHelper('GetParam')->direct('caid', 1, 'Int', $changed);
-        $sparte   = (int) $this->getActionController()->getHelper('GetParam')->direct('sparte', 1, 'Int', $changed);
-        $laufzeit = number_format($this->getActionController()->getHelper('GetParam')->direct('laufzeit', 48, null, $changed), 1);
-        $betrag   = (int) $this->getActionController()->getHelper('GetParam')->direct('betrag', 10000, 'Int', $changed);
-        $zweck    = (int) $this->getActionController()->getHelper('GetParam')->direct('zweck', 8, 'Int', $changed);
+        if (null === $this->getActionController()) {
+            throw new \Exception('no action controller');
+        }
+        
+        var_dump($this->getActionController());exit;
+        $noResult = (boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('noResult', 0, 'Int', $changed);
+        $caid     = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('caid', 1, 'Int', $changed);
+        $sparte   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('sparte', 1, 'Int', $changed);
+        $laufzeit = number_format($this->getActionController()->getHelper('getParam')->getParamFromName('laufzeit', 48, null, $changed), 1);
+        $betrag   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('betrag', 10000, 'Int', $changed);
+        $zweck    = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('zweck', 8, 'Int', $changed);
         
         $result            = array();
         $_SESSION->changed = $changed;
@@ -175,12 +180,12 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
             ->setLaufzeit($laufzeit)
             ->setZweck($zweck)
             ->setKreditbetrag($betrag)
-            ->setBestOnly((boolean) $this->getActionController()->getHelper('GetParam')->direct('bestOnly', 0, 'Int'))
-            ->setBonus($this->getActionController()->getHelper('GetParam')->direct('boni', null, 'Int'))
-            ->setTeaserOnly((boolean) $this->getActionController()->getHelper('GetParam')->direct('teaserOnly', 0, 'Int'))
-            ->setOnlyProduct($this->getActionController()->getHelper('GetParam')->direct('product'))
-            ->setOnlyInstitut(strtolower($this->getActionController()->getHelper('GetParam')->direct('institut')))
-            ->setTest((boolean) $this->getActionController()->getHelper('GetParam')->direct('isTest', 0, 'Int'));
+            ->setBestOnly((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('bestOnly', 0, 'Int'))
+            ->setBonus($this->getActionController()->getHelper('getParam')->getParamFromName('boni', null, 'Int'))
+            ->setTeaserOnly((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('teaserOnly', 0, 'Int'))
+            ->setOnlyProduct($this->getActionController()->getHelper('getParam')->getParamFromName('product'))
+            ->setOnlyInstitut(strtolower($this->getActionController()->getHelper('getParam')->getParamFromName('institut')))
+            ->setTest((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('isTest', 0, 'Int'));
 
         try {
             $result = array_merge($result, $calculator->calc());

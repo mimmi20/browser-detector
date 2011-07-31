@@ -48,10 +48,10 @@ class RequestLogger extends \Zend\Controller\Action\Helper\AbstractHelper
         $request = $this->getRequest();
         $ip      = $this->_getIp();
 
-        $browserId  = $this->getActionController()->getHelper('GetParam')->direct('browserId');
-        $agentId    = $this->getActionController()->getHelper('GetParam')->direct('agentId');
-        $campaignId = $this->getActionController()->getHelper('GetParam')->direct('caid');
-        $isTest     = $this->getActionController()->getHelper('GetParam')->direct('isTest', false);
+        $browserId  = $this->getActionController()->getHelper('getParam')->getParamFromName('browserId');
+        $agentId    = $this->getActionController()->getHelper('getParam')->getParamFromName('agentId');
+        $campaignId = $this->getActionController()->getHelper('getParam')->getParamFromName('caid');
+        $isTest     = $this->getActionController()->getHelper('getParam')->getParamFromName('isTest', false);
 
         // store the request into database and connect to session
         $daten = array(
@@ -101,7 +101,7 @@ class RequestLogger extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     private function _getIp()
     {
-        $ip = $this->getActionController()->getHelper('GetParam')->direct('IP');
+        $ip = $this->getActionController()->getHelper('getParam')->getParamFromName('IP');
 
         if (is_string($ip) && '' != $ip) {
             return $ip;

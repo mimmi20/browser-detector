@@ -46,11 +46,10 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     public function direct(
         $paramName = null,
-        $encoding = 'utf-8',
         $default = null,
         $validator = null)
     {
-        return $this->getParamFromName($paramName, $encoding, $default, $validator);
+        return $this->getParamFromName($paramName, $default, $validator);
     }
 
     /**
@@ -80,7 +79,41 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     public function getParamFromName(
         $paramName = null,
-        $encoding = 'utf-8',
+        $default = null,
+        $validator = null,
+        &$changed = false)
+    {
+        return $this->getParamFromNameAndConvert($paramName, null, $default, $validator, $changed);
+    }
+
+    /**
+     * Gets a parameter from the {@link $_request Request object}. If the
+     * parameter does not exist, NULL will be returned.
+     *
+     * If the parameter does not exist and $default is set, then
+     * $default will be returned instead of NULL.
+     *
+     * If $validator is set, the value of the parameter will be validated. If
+     * the validation fails, $default will be returned.
+     * The following values are possible as $validator:
+     * 1 a string containing an type, if you want to use an Zend_Validator
+     *   object e.g. 'Int' for using \Zend\Validator\Int'
+     * 2 a string containing an type, with an underscore added as first
+     *   character, if you want to use a custom validator
+     *   e.g. '_\\AppCore\\Class\Validate\Plz'
+     * 3 an validator object
+     * 4 an array containing strings or objects like in numbers 1-3
+     *
+     * @param string $paramName   the name of the param
+     * @param mixed  $default     the default value
+     * @param mixed  $validator   the type for an validator, an validator object
+     *                            or an array of validatortypes/validatorobjects
+     *
+     * @return mixed
+     */
+    public function getParamFromNameAndConvert(
+        $paramName = null,
+        $encoding = null,
         $default = null,
         $validator = null,
         &$changed = false)
@@ -109,7 +142,7 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         }
 
         $value = $this->getActionController()->getHelper('checkParam')->direct(
-            $this->_cleanParam($value, $encoding),
+            $this->_cleanParamAndConvert($value, $encoding),
             $default,
             $this->_defineValidators($validator)
         );
@@ -122,7 +155,17 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return string
      */
-    private function _cleanParam($param, $encoding)
+    private function _cleanParam($param)
+    {
+        return $this->_cleanParamAndConvert($param, null);
+    }
+
+    /**
+     * clean Parameters taken from GET or POST Variables
+     *
+     * @return string
+     */
+    private function _cleanParamAndConvert($param, $encoding = null)
     {
         if (true === $param
             || false === $param
@@ -132,10 +175,16 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
         }
         
         if (is_array($param)) {
-            return array_map(array($this, '_cleanParam'), $param, $encoding);
+            $keys = array_keys($param);
+            
+            foreach ($keys as $key) {
+                $param[$key] = $this->_cleanParamAndConvert($param[$key], $encoding);
+            }
         }
         
-        $param = iconv(strtoupper($encoding), 'UTF-8//TRANSLIT//IGNORE', $param);
+        if (null !== $encoding) {
+            $param = iconv(strtoupper($encoding), 'UTF-8//TRANSLIT//IGNORE', $param);
+        }
 
         return strip_tags(trim(urldecode(stripslashes($param))));
     }

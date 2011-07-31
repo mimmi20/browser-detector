@@ -169,14 +169,7 @@ class Campaigns extends ModelAbstract
      */
     private function _load($campaignId)
     {
-        $campaignId = $this->getId($this->cleanCaid($campaignId));
-
-        if (false === $campaignId) {
-            //campaignId ist not valid
-            return null;
-        }
-
-        $row = $this->find($campaignId)->current();
+        $row = $this->find($this->cleanCaid($campaignId))->current();
 
         if (is_object($row) && $row instanceof \Zend\Db\Table\Row) {
             return $row;

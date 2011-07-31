@@ -75,7 +75,7 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
         mb_regex_encoding($encoding);
 
         foreach ($keys as $key) {
-            $this->_requestData[$key] = $this->getActionController()->getHelper('getParam')->direct($key, $encoding);
+            $this->_requestData[$key] = $this->getActionController()->getHelper('getParam')->getParamFromNameAndConvert($key, $encoding);
         }
 
         $view = $this->getActionController()->view;
