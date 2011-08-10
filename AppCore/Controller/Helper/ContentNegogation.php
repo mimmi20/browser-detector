@@ -291,7 +291,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     {
         /*
          * set the accepted encodings/content types
-         * TODO: check if its better to fins a better name for this
+         * TODO: check if its better to find a better name for this
          */
         $this->_negotiateEncoding();
         $this->_negotiateType();

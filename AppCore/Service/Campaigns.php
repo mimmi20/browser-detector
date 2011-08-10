@@ -35,6 +35,17 @@ class Campaigns extends ServiceAbstract
     }
 
     /**
+     * returns the id of an institute
+     *
+     * @return Zend_Db_Table_Select
+     * @access public
+     */
+    public function getList()
+    {
+        return $this->_model->getCached('campaign')->getList();
+    }
+
+    /**
      * cleans a given partner id
      *
      * @param string $caid        the campaign id

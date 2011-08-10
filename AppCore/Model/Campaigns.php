@@ -47,6 +47,45 @@ class Campaigns extends ModelAbstract
     private static $_prepared = array();
 
     /**
+     * returns the id of an institute
+     *
+     * @return Zend_Db_Table_Select
+     * @access public
+     */
+    public function getList()
+    {
+        if (!isset(self::$_prepared['getlist'])) {
+            $select = $this->select()->setIntegrityCheck(false);
+
+            $select->from(
+                array('ca' => $this->_name)
+            );
+            
+            $select->order(array('active', 'ordering', 'name'));
+
+            self::$_prepared['getlist'] =
+                new \Zend\Db\Statement\Pdo($this->_db, $select);
+        }
+
+        $stmt = self::$_prepared['getlist'];
+
+        try {
+            $stmt->execute();
+
+            /**
+             * @var array
+             */
+            $campaignsList = $stmt->fetchAll(\PDO::FETCH_CLASS);
+        } catch (\Zend\Db\Statement\Exception $e) {
+            $this->_logger->err($e);
+
+            $campaignsList = array();
+        }
+
+        return $campaignsList;
+    }
+
+    /**
      * cleans a given campaign id
      *
      * @param string $caid        the campaign id

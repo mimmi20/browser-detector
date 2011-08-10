@@ -129,6 +129,9 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_context->setLayout($layout);
         $this->_context->initContext($this->_helper->getParam('format', null));
 
+        
+        //var_dump($this->getRequest()->getActionName(), $this->getRequest()->getControllerName());
+        
         //set headers
         if ($this->_response->canSendHeaders()) {
             $this->_response->setHeader('robots', 'noindex,follow', true);

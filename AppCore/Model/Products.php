@@ -222,7 +222,7 @@ class Products extends ModelAbstract
             $postfix .= 'i';
         }
 
-        if (!isset(self::$_prepared['loadcaid_' . $postfix])) {
+        if (!isset(self::$_prepared['getlist_' . $postfix])) {
             $select = $this->select()->setIntegrityCheck(false);
 
             $select->from(
@@ -232,7 +232,8 @@ class Products extends ModelAbstract
                     'usages'  => 'p.usages', 
                     'active'  => 'p.active',
                     'min'     => 'p.min',
-                    'max'     => 'p.max'
+                    'max'     => 'p.max',
+                    'logo'    => 'p.logo'
                 )
             );
             $select->join(
@@ -240,7 +241,8 @@ class Products extends ModelAbstract
                 'i.idInstitutes = p.idInstitutes',
                 array(
                     'iactive'             => 'i.active', 
-                    'kreditInstitutTitle' => 'i.name'
+                    'kreditInstitutTitle' => 'i.name',
+                    'ilogo'               => 'i.logo'
                 )
             );
             $select->join(
@@ -269,11 +271,11 @@ class Products extends ModelAbstract
                     ->where('i.active = 1');
             }
 
-            self::$_prepared['loadcaid_' . $postfix] =
+            self::$_prepared['getlist_' . $postfix] =
                 new \Zend\Db\Statement\Pdo($this->_db, $select);
         }
 
-        $stmt = self::$_prepared['loadcaid_' . $postfix];
+        $stmt = self::$_prepared['getlist_' . $postfix];
         $stmt->bindParam(':sparte', $sparteId, \PDO::PARAM_INT);
 
         if ((int) $productOnly > 0) {

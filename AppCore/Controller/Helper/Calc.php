@@ -32,7 +32,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return void
      */
-    public function calc()
+    public function calcResult()
     {
         return $this->_getResult();
     }
@@ -66,7 +66,6 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
             throw new \Exception('no action controller');
         }
         
-        var_dump($this->getActionController());exit;
         $noResult = (boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('noResult', 0, 'Int', $changed);
         $caid     = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('caid', 1, 'Int', $changed);
         $sparte   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('sparte', 1, 'Int', $changed);

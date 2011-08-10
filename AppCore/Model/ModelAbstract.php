@@ -64,6 +64,8 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
 
         $this->_config = \Zend\Registry::get('_config');
         $this->_logger = \Zend\Registry::get('log');
+        
+        $this->_db->exec("SET NAMES 'utf8';");
     }
 
     /**

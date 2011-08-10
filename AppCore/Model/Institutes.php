@@ -175,8 +175,35 @@ class Institutes extends ModelAbstract
      */
     public function getList()
     {
-        $select = $this->select();
-        return $select->order('name');
+        if (!isset(self::$_prepared['getlist'])) {
+            $select = $this->select()->setIntegrityCheck(false);
+
+            $select->from(
+                array('i' => $this->_name)
+            );
+            
+            $select->order(array('active', 'ordering', 'name'));
+
+            self::$_prepared['getlist'] =
+                new \Zend\Db\Statement\Pdo($this->_db, $select);
+        }
+
+        $stmt = self::$_prepared['getlist'];
+
+        try {
+            $stmt->execute();
+
+            /**
+             * @var array
+             */
+            $institutesList = $stmt->fetchAll(\PDO::FETCH_CLASS);
+        } catch (\Zend\Db\Statement\Exception $e) {
+            $this->_logger->err($e);
+
+            $institutesList = array();
+        }
+
+        return $institutesList;
     }
 
     /**
@@ -187,9 +214,7 @@ class Institutes extends ModelAbstract
      */
     public function getListArray()
     {
-        $select = $this->getList();
-        
-        return $this->fetchAll($select)->toArray();
+        return $this->getList();
     }
 
     /**
