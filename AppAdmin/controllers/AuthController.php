@@ -21,6 +21,21 @@
  */
 class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
 {
+    private _config = null;
+
+    /**
+     * initializes the Controller
+     *
+     * @return void
+     * @access public
+     */
+    public function init()
+    {
+        parent::init();
+        
+        $this->_config = new \Zend\Config\Config($this->getInvokeArg('bootstrap')->getOptions());
+    }
+    
     /**
      * Check if a Identity is set. If we got no Identity, redirect to
      * Login Page.
@@ -51,9 +66,8 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
         }
 
         //block access to Admin Area, if not enabled
-        $config = \Zend\Registry::get('_config');
-        if (!$config->admin->enabled
-            || (!$config->admin->isAdmin && !$config->admin->hasAdmin)
+        if (!$this->_config->admin->enabled
+            || (!$this->_config->admin->isAdmin && !$this->_config->admin->hasAdmin)
         ) {
             $this->_helper->header->setErrorHeaders();
 
@@ -160,14 +174,12 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
                 $account->setCredentials($name, $password);
                 $authResult = $auth->authenticate($account);
 
-                $config = \Zend\Registry::get('_config');
-
                 /*
                  * double check if the LDAP is enabled
                  */
                 if ($authResult->isValid()
                     && $authResult->getCode() == Zend_Auth_Result::SUCCESS
-                    && $config->ldap->enabled == 1
+                    && $this->_config->ldap->enabled == 1
                 ) {
                     /*
                      * u.woithe Change 2010-11-18 for Bug30718
@@ -296,10 +308,10 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
         $front     = \Zend\Controller\Front::getInstance();
         $basePath  = $front->getModuleDirectory('kredit-admin');
 
-        $config = new \Zend\Config\Ini($basePath .
+        $this->_config = new \Zend\Config\Ini($basePath .
                     '/configs/forms/login.ini', 'form');
 
-        return new Zend_Form($config);
+        return new Zend_Form($this->_config);
     }
 
     /**
