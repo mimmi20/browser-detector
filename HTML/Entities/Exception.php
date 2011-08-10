@@ -1,4 +1,6 @@
 <?php
+declare(ENCODING = 'iso-8859-1');
+namespace HTML\Entities;
 /* vim: set noai expandtab ts=4 st=4 sw=4: */
 
 /**
@@ -50,8 +52,6 @@ require_once "PEAR/Exception.php";
  * @version  Release: 0.2.2
  * @link     http://pear.php.net/package/HTML_Entities
  */
-class HTML_Entities_Exception extends PEAR_Exception
+class Exception extends \Exception
 {
 }
-
-?>

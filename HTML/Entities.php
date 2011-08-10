@@ -1,4 +1,6 @@
 <?php
+declare(ENCODING = 'iso-8859-1');
+namespace HTML;
 /* vim: set noai expandtab ts=4 st=4 sw=4: */
 
 /**
@@ -38,8 +40,6 @@
  * @link     http://pear.php.net/package/HTML_Entities
  */
 
-require_once 'HTML/Entities/Exception.php';
-
 /**
  * Convert utf8 (or other text encoding) to HTML entities, and vice-versa
  *
@@ -75,7 +75,7 @@ require_once 'HTML/Entities/Exception.php';
  * @version  Release: 0.2.2
  * @link     http://pear.php.net/package/HTML_Entities
  */
-class HTML_Entities
+class Entities
 {
     /**
      * Convert special chars to named entities.
@@ -177,7 +177,7 @@ class HTML_Entities
                 }
                 $text = iconv($charset, $outset, $text);
                 if ($test === false) {
-                    throw new HTML_Entities_Exception('HTML_Entities:
+                    throw new \HTML\Entities\Exception('HTML_Entities:
                         iconv conversion error');
                 }
             } else {
@@ -685,5 +685,3 @@ class HTML_Entities
         return $a;
     }
 }
-
-?>
