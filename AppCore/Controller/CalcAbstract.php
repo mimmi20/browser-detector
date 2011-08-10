@@ -117,6 +117,19 @@ abstract class CalcAbstract extends ControllerAbstract
     protected $_function = 'calc';
 
     /**
+     * initializes the Controller
+     *
+     * @return void
+     * @access public
+     */
+    public function init()
+    {
+        parent::init();
+        
+        $this->_config = new \Zend\Config\Config($this->getInvokeArg('bootstrap')->getOptions());
+    }
+
+    /**
      * (non-PHPdoc)
      *
      * @see    library/Zend/Controller/Zend_Controller_Action#preDispatch()
@@ -134,8 +147,7 @@ abstract class CalcAbstract extends ControllerAbstract
          * block access to Calculation Controllers, if this is the Admin Server
          * if a calculation is needed use the needed objects directly
          */
-        $config = \Zend\Registry::get('_config');
-        if ($config->admin->enabled && $config->admin->isAdmin) {
+        if ($this->_config->admin->enabled && $this->_config->admin->isAdmin) {
             $this->_helper->header->setErrorHeaders();
 
             return;
@@ -566,11 +578,7 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function getAntrag()
     {
-        //$this->_logger->info('getAntrag');
-
-        $config = \Zend\Registry::get('_config');
-
-        if ($config->sitecache->enable) {
+        if ($this->_config->sitecache->enable) {
             //Cancel the Caching for this function
             $cache = \Zend\Registry::get('siteCache');
             $cache->cancel();
@@ -869,9 +877,7 @@ abstract class CalcAbstract extends ControllerAbstract
             return;
         }
 
-        $config = \Zend\Registry::get('_config');
-
-        if ($config->sitecache->enable) {
+        if ($this->_config->sitecache->enable) {
             //Cancel the Caching for this function
             $cache = \Zend\Registry::get('siteCache');
             $cache->cancel();
@@ -1001,14 +1007,12 @@ abstract class CalcAbstract extends ControllerAbstract
      */
     protected function initSession()
     {
-        $config = \Zend\Registry::get('_config');
-
         //Session
-        Zend_Session::setOptions($config->session->toArray());
+        Zend_Session::setOptions($this->_config->session->toArray());
         Zend_Session::setSaveHandler(
             new KreditCore_Class_Session_SaveHandler_Db(
                 \Zend\Db\Table\AbstractTable::getDefaultAdapter(),
-                $config->sessionparams->toArray()
+                $this->_config->sessionparams->toArray()
             )
         );
         Zend_Session::start();

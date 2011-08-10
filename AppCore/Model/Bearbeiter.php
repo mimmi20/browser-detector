@@ -96,16 +96,8 @@ class Bearbeiter
         $password = md5($this->_password);
 
         $select->where('`Login` = 1');
-
-        $config = \Zend\Registry::get('_config');
-        if ($config->ldap->enabled == 0) {
-            // check password, if ldap is not enabled
-            $select->where('`Passwort` = ?', $password)
-                ->where('`Benutzername` = ?', $username);
-        } else {
-            $select->where('(`LDapName` = \'' . $username .'\') OR (`Benutzername` = \'' . $username .'\' AND `Passwort` = \'' . $password .'\')');
-        }
-
+        $select->where('(`LDapName` = \'' . $username .'\') OR (`Benutzername` = \'' . $username .'\' AND `Passwort` = \'' . $password .'\')');
+        
         $rows  = $this->fetchAll($select);
         $valid = false;
 

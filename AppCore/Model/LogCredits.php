@@ -311,11 +311,10 @@ class LogCredits extends ModelAbstract
         array $postData, \Zend\Db\Table\Row $kunde, $istTest,
         $verwendung, $instituteName)
     {
-        $config = \Zend\Registry::get('_config');
-
         $postData['idPortalService'] = null;
+        $this->_config = new \Zend\Config\Config($this->getActionController()->getInvokeArg('bootstrap')->getOptions());
 
-        if (!$config->interfaces->enabled) {
+        if (!$this->_config->interfaces->enabled) {
             $postData['transmitStatus'] = 'Interface not enabled';
 
             return $postData;

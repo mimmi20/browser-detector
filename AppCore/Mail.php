@@ -329,8 +329,8 @@ class Mail
         /**
          * instance DB Object
          */
-        $mailDbParams = \Zend\Registry::get('_config')->newmaildb->toArray();
-        $mailDbParams['profiler'] = false;//('1' == $mailDbParams['profiler']);
+        //$mailDbParams = \Zend\Registry::get('_config')->newmaildb->toArray();
+        //$mailDbParams['profiler'] = false;//('1' == $mailDbParams['profiler']);
 
         try {
             $db = \Zend\Db\Db::factory($mailDbParams['type'], $mailDbParams);

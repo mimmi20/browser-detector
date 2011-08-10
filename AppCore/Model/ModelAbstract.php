@@ -55,14 +55,15 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      * @return void
      * @access public
      */
-    public function __construct($config = array())
+    public function init()
     {
-        parent::__construct($config);
-
+        parent::init();
+        
         $this->_db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();
         $this->_db->setFetchMode(\Zend\Db\Db::FETCH_OBJ);
-
-        $this->_config = \Zend\Registry::get('_config');
+        
+        $front = \Zend\Controller\Front::getInstance();
+        $this->_config = new \Zend\Config\Config($front->getParam('bootstrap')->getOptions());
         $this->_logger = \Zend\Registry::get('log');
         
         $this->_db->exec("SET NAMES 'utf8';");

@@ -26,15 +26,20 @@ namespace AppCore\Controller\Helper;
  */
 class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
 {
+    private $_config = null;
+    
     /**
      * Class constructor
      *
      * @access public
      * @return void
      */
-    public function __construct()
+    public function init()
     {
+        parent::init();
+        
         $this->_logger = \Zend\Registry::get('log');
+        $this->_config = new \Zend\Config\Config($this->getActionController()->getInvokeArg('bootstrap')->getOptions());
     }
     
     /**
@@ -48,10 +53,9 @@ class AgentLogger extends \Zend\Controller\Action\Helper\AbstractHelper
 
         $this->_requestData = $request->getParams();
         
-        $config   = \Zend\Registry::get('_config');
         $front    = \Zend\Controller\Front::getInstance();
         $cache    = $front->getParam('bootstrap')->getResource('cachemanager')->getCache('browscap');
-        $browscap = new \Browscap\Browscap($config->browscap, $this->_logger, $cache);
+        $browscap = new \Browscap\Browscap($this->_config->browscap, $this->_logger, $cache);
 
         $userAgent = $this->_getUserAgent();
 

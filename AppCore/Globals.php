@@ -1776,16 +1776,6 @@ class Globals
             return false;
         }
 
-        $config = \Zend\Registry::get('_config');
-
-        //check, if Email is enabled
-        //-> do not try to send, if disabled (mostly it raises errors then)
-        if (!isset($config->newmaildb->enabled)
-            || !$config->newmaildb->enabled
-        ) {
-            return false;
-        }
-
         //serialize the mail headers
         if (!is_array($email)) {
             $email = array($email);

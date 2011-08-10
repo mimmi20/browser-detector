@@ -29,9 +29,11 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
     /**
      * @var array
      */
-    protected $_requestData = array();
+    private $_requestData = array();
 
-    protected $_logger = null;
+    private $_logger = null;
+    
+    private $_config = null;
 
     /**
      * Class constructor
@@ -39,9 +41,10 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
      * @access public
      * @return void
      */
-    public function __construct()
+    public function init()
     {
         $this->_logger = \Zend\Registry::get('log');
+        $this->_config = new \Zend\Config\Config($this->getActionController()->getInvokeArg('bootstrap')->getOptions());
     }
 
     /**
@@ -111,13 +114,11 @@ class Params extends \Zend\Controller\Action\Helper\AbstractHelper
     
     private function _setEncoding()
     {
-        $config = \Zend\Registry::get('_config');
-
         $allowedEncodings = array('iso-8859-1', 'iso-8859-15', 'utf-8', 'utf-16');
 
         //default encoding is defined in config
-        $encoding = ((isset($config->encoding))
-                  ? $config->encoding
+        $encoding = ((isset($this->_config->encoding))
+                  ? $this->_config->encoding
                   : 'iso-8859-1');
 
         //encoding is requested from portal

@@ -26,6 +26,8 @@ namespace AppCore\Controller\Helper;
  */
 class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
 {
+    private $_config = null;
+    
     /**
      * Class constructor
      *
@@ -35,6 +37,7 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
     public function __construct()
     {
         $this->_logger = \Zend\Registry::get('log');
+        $this->_config = new \Zend\Config\Config($this->getActionController()->getInvokeArg('bootstrap')->getOptions());
     }
     
     /**
@@ -62,9 +65,7 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
             return;
         }
 
-        $config = \Zend\Registry::get('_config');
-
-        if (!$config->sitecache->enable) {
+        if (!$this->_config->sitecache->enable) {
             /*
              * site cache is not enabled
              * -> no Cache
@@ -84,9 +85,9 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
         }
 
         $optionsFront = array(
-            'lifetime' => (int) $config->sitecache->lifetime,
-            'debug_header' => (boolean) $config->sitecache->debug,
-            'default_options' => $config->sitecache->defaults->toArray(),
+            'lifetime' => (int) $this->_config->sitecache->lifetime,
+            'debug_header' => (boolean) $this->_config->sitecache->debug,
+            'default_options' => $this->_config->sitecache->defaults->toArray(),
             'regexps' => array(
                 '^/$' => array(
                     'cache' => false
@@ -206,11 +207,11 @@ class Cache extends \Zend\Controller\Action\Helper\AbstractHelper
                 )
             )
         );
-        $optionsBack  = $config->sitecache->back->toArray();
+        $optionsBack  = $this->_config->sitecache->back->toArray();
 
         $cache = \Zend\Cache\Cache::factory(
-            $config->sitecache->frontend,
-            $config->sitecache->backend,
+            $this->_config->sitecache->frontend,
+            $this->_config->sitecache->backend,
             $optionsFront,
             $optionsBack
         );

@@ -30,6 +30,8 @@ class Input extends Input\InputAbstract
     private $_mode = 0;
 
     private $_cache = null;
+    
+    private $_config = null;
 
     /**
      * Konstruktor
@@ -40,8 +42,7 @@ class Input extends Input\InputAbstract
     public function __construct()
     {
         parent::__construct();
-
-        $config = \Zend\Registry::get('_config');
+        $this->_config = new \Zend\Config\Config($this->getActionController()->getInvokeArg('bootstrap')->getOptions());
 
         if ($config->calccache->enable) {
             $this->_cache = \Zend\Cache\Cache::factory(

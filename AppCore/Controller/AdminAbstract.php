@@ -81,6 +81,19 @@ abstract class AdminAbstract extends ControllerAbstract
     }
 
     /**
+     * initializes the Controller
+     *
+     * @return void
+     * @access public
+     */
+    public function init()
+    {
+        parent::init();
+        
+        $this->_config = new \Zend\Config\Config($this->getInvokeArg('bootstrap')->getOptions());
+    }
+
+    /**
      * Check if a Identity is set. If we got no Identity, redirect to
      * Login Page.
      *
@@ -108,9 +121,8 @@ abstract class AdminAbstract extends ControllerAbstract
         }
 
         //block access to Admin Area, if not enabled
-        $config = \Zend\Registry::get('_config');
-        if (!$config->admin->enabled
-            || (!$config->admin->isAdmin && !$config->admin->hasAdmin)
+        if (!$this->_config->admin->enabled
+            || (!$this->_config->admin->isAdmin && !$this->_config->admin->hasAdmin)
         ) {
             $this->_helper->header->setErrorHeaders();
 
@@ -351,15 +363,14 @@ abstract class AdminAbstract extends ControllerAbstract
      */
     private function _createNavigation($rollen)
     {
-        $config = \Zend\Registry::get('_config');
         $cache  = null;
 
-        if ($config->navicache->enable) {
+        if ($this->_config->navicache->enable) {
             $cache = \Zend\Cache\Cache::factory(
-                $config->navicache->frontend,
-                $config->navicache->backend,
-                $config->navicache->front->toArray(),
-                $config->navicache->back->toArray()
+                $this->_config->navicache->frontend,
+                $this->_config->navicache->backend,
+                $this->_config->navicache->front->toArray(),
+                $this->_config->navicache->back->toArray()
             );
         }
 
