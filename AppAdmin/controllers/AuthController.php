@@ -62,20 +62,20 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
                 'Cache-Control', 'private, max-age=3600', true
             );
 
-            $this->_helper->header->setDefaultHeaders();
+            $this->broker('header')->setDefaultHeaders();
         }
 
         //block access to Admin Area, if not enabled
         if (!$this->_config->admin->enabled
             || (!$this->_config->admin->isAdmin && !$this->_config->admin->hasAdmin)
         ) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
 
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -154,7 +154,7 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
     public function doLoginAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -285,7 +285,7 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
         $this->_destroyIdendity();
 
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }

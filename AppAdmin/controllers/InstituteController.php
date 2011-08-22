@@ -103,7 +103,7 @@ class KreditAdmin_InstituteController
     public function activateAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }

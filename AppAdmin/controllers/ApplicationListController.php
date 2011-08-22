@@ -67,7 +67,7 @@ class KreditAdmin_ApplicationListController
     public function exportNotSentDatasetsAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -163,7 +163,7 @@ class KreditAdmin_ApplicationListController
     public function exportCsvAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }

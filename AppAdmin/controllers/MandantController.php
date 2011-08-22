@@ -33,7 +33,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
         parent::preDispatch();
 
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -138,7 +138,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
     public function activateportalAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -205,7 +205,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
     public function activatecampaignAction()
     {
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
