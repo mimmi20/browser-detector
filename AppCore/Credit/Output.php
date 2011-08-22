@@ -76,14 +76,14 @@ class Output
      *
      * @access public
      * @return void
-     * @throws \Zend\Exception
+     * @throws \InvalidArgumentException
      */
     public function __call($m, $a)
     {
         $formater = $this->getFormater();
 
         if (!is_callable(array($formater, $m))) {
-            throw new \Zend\Exception(
+            throw new \InvalidArgumentException(
                 'unknown function ' . get_class($this) . '::' . $m . ' called'
             );
         }

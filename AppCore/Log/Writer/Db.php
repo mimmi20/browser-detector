@@ -76,27 +76,18 @@ class Db extends \Zend\Log\Writer\AbstractWriter
             $exception = $event['message'];
             $priority  = 'Exception';
         } else {
-            $exception = new \Zend\Exception($event['message']);
+            $exception = new \Exception($event['message']);
             $priority  = $event['priorityName'];
         }
-        
+        //var_dump(3, $event);//exit;
         $request = new \Zend\Controller\Request\Http();
-
+//var_dump(5);
         $requestParams = array_merge(
             $request->getParams(),
             array('uri' => $request->getRequestUri())
         );
-        //var_dump($event);exit;
-        /**/
-        $model = new \AppCore\Model\ExceptionModel();
         /*
-        $model->setMessage($exception->getMessage());
-        $model->setTrace($exception->getTraceAsString());
-        $model->setEnviroment(APPLICATION_ENV);
-        $model->setRequest(serialize($requestParams));
-        $model->setLevel($event['priorityName']);
-        /**/
-        
+        $model = new \AppCore\Model\ExceptionModel();
         $model->insertException(
             $exception,
             new \Zend\Controller\Request\Http(),

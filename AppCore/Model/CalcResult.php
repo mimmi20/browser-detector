@@ -98,7 +98,7 @@ abstract class CalcResult
         }
         
         if (!is_array($result)) {
-            throw new \Zend\Exception(
+            throw new \InvalidArgumentException(
                 '$result must be an array or an instance of Zend_Db_Table_Row'
             );
         }

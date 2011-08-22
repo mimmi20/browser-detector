@@ -32,7 +32,7 @@ class CalcResult extends ServiceAbstract
     public function __construct($institute = null)
     {
         if (null === $institute || !is_string($institute)) {
-            throw new \Zend\Exception('Parameter $institute is missing or not a string');
+            throw new \InvalidArgumentException('Parameter $institute is missing or not a string');
         }
         
         $institute = ucfirst(strtolower($institute));
@@ -84,8 +84,8 @@ class CalcResult extends ServiceAbstract
         }
         
         if (!is_array($result)) {
-            throw new \Zend\Exception(
-                '$result must be an array or an instance of Zend_Db_Table_Row'
+            throw new \InvalidArgumentException(
+                '$result must be an array or an instance of \\Zend\\Db\\Table\\Row'
             );
         }
         

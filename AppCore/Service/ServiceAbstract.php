@@ -47,7 +47,7 @@ abstract class ServiceAbstract
     {
         //these functions are not cached
         if (!is_callable(array($this->_model, $method))) {
-            throw new \Zend\Exception(
+            throw new \BadFunctionCallException(
                 'unknows function \'' . $method . '\' called'
             );
         }

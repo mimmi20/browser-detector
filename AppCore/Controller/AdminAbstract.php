@@ -124,13 +124,13 @@ abstract class AdminAbstract extends ControllerAbstract
         if (!$this->_config->admin->enabled
             || (!$this->_config->admin->isAdmin && !$this->_config->admin->hasAdmin)
         ) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
 
         if (!$this->_request->isGet() && !$this->_request->isPost()) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -210,7 +210,7 @@ abstract class AdminAbstract extends ControllerAbstract
     public function indexAction()
     {
         //set headers
-        $this->_helper->header->setErrorHeaders();
+        $this->broker('header')->setErrorHeaders();
     }
 
     /**

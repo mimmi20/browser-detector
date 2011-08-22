@@ -148,7 +148,7 @@ abstract class CalcAbstract extends ControllerAbstract
          * if a calculation is needed use the needed objects directly
          */
         if ($this->_config->admin->enabled && $this->_config->admin->isAdmin) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }
@@ -251,7 +251,7 @@ abstract class CalcAbstract extends ControllerAbstract
     public function formAction()
     {
         //set headers
-        $this->_helper->header->setErrorHeaders();
+        $this->broker('header')->setErrorHeaders();
     }
 
     /**
@@ -295,7 +295,7 @@ abstract class CalcAbstract extends ControllerAbstract
         $this->_helper->viewRenderer->setNoRender();
 
         if (isset($this->_requestData['logClick'])) {
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
             return;
         }
 
@@ -328,11 +328,11 @@ abstract class CalcAbstract extends ControllerAbstract
                     $this->_logger->err($e);
 
                     $output = '';
-                    $this->_helper->header->setErrorHeaders();
+                    $this->broker('header')->setErrorHeaders();
                 }
                 break;
             default:
-                $this->_helper->header->setErrorHeaders();
+                $this->broker('header')->setErrorHeaders();
                 break;
         }
 
@@ -872,7 +872,7 @@ abstract class CalcAbstract extends ControllerAbstract
 
         if (!$field || !isset($this->_requestData[$field])) {
             //das angefragte Feld ist nicht vorhanden
-            $this->_helper->header->setErrorHeaders();
+            $this->broker('header')->setErrorHeaders();
 
             return;
         }

@@ -24,7 +24,7 @@ namespace AppCore\Controller\Helper;
  */
 
 /**
- * Simplify AJAX context switching based on requested format
+ * Simplify context switching based on requested format on allowed content type
  *
  * @uses       \Zend\Controller\Action\Helper\AbstractHelper
  * @category   Zend
@@ -35,23 +35,26 @@ namespace AppCore\Controller\Helper;
  */
 class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
 {
+	const PLACEMENT_APPEND  = 'APPEND';
+	const PLACEMENT_PREPEND = 'PREPEND';
+	
     /**
      * headers which are possibliy added as html header into the content
      * 
      * @var array
      */
     private $_headers = array(
-        'content-language' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'content-type' => array('placement' => 'PREPEND', 'keyType' => 'http-equiv'),
-        'content-length' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'content-style-type' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'content-script-type' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'expires' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'pragma' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'refresh' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'reply-to' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'cache-control' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
-        'last-modified' => array('placement' => 'APPEND', 'keyType' => 'http-equiv'),
+        'content-language' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'content-type' => array('placement' => self::PLACEMENT_PREPEND, 'keyType' => 'http-equiv'),
+        'content-length' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'content-style-type' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'content-script-type' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'expires' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'pragma' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'refresh' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'reply-to' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'cache-control' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
+        'last-modified' => array('placement' => self::PLACEMENT_APPEND, 'keyType' => 'http-equiv'),
     );
     
     /**
@@ -248,7 +251,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         foreach ($headers as $header) {
             $headerName  = strtolower($header['name']);
             $headerType  = 'name';
-            $headerPlace = 'APPEND';
+            $headerPlace = self::PLACEMENT_APPEND;
             
             if (isset($this->_headers[$headerName])) {
                 $headerType  = $this->_headers[$headerName]['keyType'];

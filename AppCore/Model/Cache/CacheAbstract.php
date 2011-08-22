@@ -136,7 +136,7 @@ abstract class CacheAbstract
     public function __call($method, $params)
     {
         if (!is_callable(array($this->_model, $method))) {
-            throw new \Zend\Exception(
+            throw new \BadFunctionCallException(
                 'Method \'' . $method . '\' does not exist in class \'' .
                 get_class($this->_model) . '\''
             );

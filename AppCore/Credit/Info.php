@@ -125,7 +125,7 @@ class Info extends CreditAbstract
                     </productinfo>';
 
                 $xml = new \SimpleXMLElement($xmlInfo);
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 /*
                  * produkt info contains characters, who can not
                  * converted to utf-8
@@ -134,7 +134,7 @@ class Info extends CreditAbstract
                 $xml         = null;
                 $message     = 'Info: ' . $xmlInfo . "\n\n" . $e->getMessage();
 
-                $triggerException = new \Zend\Exception(
+                $triggerException = new \UnexpectedValueException(
                     $message, $e->getCode, $e
                 );
 

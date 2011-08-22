@@ -457,7 +457,7 @@ class LogCredits extends ModelAbstract
             $postData['idPortalService'] = '-1';
             $postData['transmittedData'] = array();
             $postData['transmitStatus']  = 'fail: ' . $e->getMessage();
-        } catch (\Zend\Exception $e) {
+        } catch (\Exception $e) {
             $this->_logger->err($e);
 
             $postData['idPortalService'] = '-2';
