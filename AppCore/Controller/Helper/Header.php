@@ -174,6 +174,6 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
      */
     public function direct()
     {
-        //
+        return $this;
     }
 }

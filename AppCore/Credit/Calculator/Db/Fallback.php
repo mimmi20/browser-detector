@@ -127,14 +127,13 @@ class Fallback extends Calculator\Db
         $query = 'CREATE ' . $temporary . ' TABLE IF NOT EXISTS `'
                . $this->_tempTableProducts . '` (
                 `uid` ' . $integer . ' AUTO_INCREMENT,
-                `kreditInstitutTitle` VARCHAR(50) NOT NULL DEFAULT \'\',
-                `kreditinstitut` VARCHAR(50) NOT NULL DEFAULT \'\',
-                `product` ' . $integer . ' NOT NULL DEFAULT -1,
-                `kreditName` VARCHAR(75) NOT NULL DEFAULT \'\',
+                `kreditInstitutTitle` VARCHAR(50) DEFAULT NULL,
+                `kreditinstitut` VARCHAR(50) DEFAULT NULL,
+                `product` ' . $integer . ' DEFAULT NULL,
+                `kreditName` VARCHAR(75) DEFAULT NULL,
                 `kreditAnnahme` VARCHAR(26) NOT NULL DEFAULT \'60\',
                 `kreditTestsieger` ' . $integer . ' NOT NULL DEFAULT 0,
-                `kreditEntscheidung` VARCHAR(26) DEFAULT \'2 Tage\',
-                `kreditentscheidungSorted` ' . $decimal . ' NOT NULL DEFAULT 99,
+                `kreditentscheidung` ' . $decimal . ' NOT NULL DEFAULT 2,
                 `boni` ' . $integer . ' NOT NULL DEFAULT 0,
                 `ordering` ' . $integer . ' NOT NULL DEFAULT 0,
                 `zinsgutschrift` VARCHAR(20) NOT NULL DEFAULT \'j&auml;hrlich\',
@@ -142,17 +141,17 @@ class Fallback extends Calculator\Db
                 `ecgeb` VARCHAR(75),
                 `kreditkartengeb` VARCHAR(100),
                 `kontofuehrung` VARCHAR(150),
-                `effZins` ' . $decimal . ',
-                `effZinsOben` ' . $decimal . ',
-                `effZinsUnten` ' . $decimal . ',
+                `effZins` ' . $decimal . ' DEFAULT NULL,
+                `effZinsOben` ' . $decimal . ' DEFAULT NULL,
+                `effZinsUnten` ' . $decimal . ' DEFAULT NULL,
                 `zinssatzIsCleaned` ' . $integer . ' DEFAULT 0,
-                `zinssatzCleaned` ' . $decimal . ',
-                `effZinsN` ' . $decimal . ',
-                `effZinsR` ' . $decimal . ',
+                `zinssatzCleaned` ' . $decimal . ' DEFAULT NULL,
+                `effZinsN` ' . $decimal . ' DEFAULT NULL,
+                `effZinsR` ' . $decimal . ' DEFAULT NULL,
                 `showAb` ' . $integer . ' DEFAULT 1,
                 `step` ' . $integer . ' DEFAULT 0,
-                `min` ' . $integer . ' DEFAULT 0,
-                `max` ' . $integer . ' DEFAULT 0,
+                `min` ' . $integer . ' DEFAULT NULL,
+                `max` ' . $integer . ' DEFAULT NULL,
                 `monatlicheRate` ' . $decimal . ' DEFAULT 0,
                 `gesamtKreditbetrag` ' . $decimal . ' DEFAULT 0,
                 `kreditKosten` ' . $decimal . ' DEFAULT 0,
@@ -161,12 +160,12 @@ class Fallback extends Calculator\Db
                 `url` VARCHAR(255),
                 `urlTeaser` VARCHAR(255),
                 `pixel` VARCHAR(150),
-                `teaser` ' . $integer . ' DEFAULT -1,
-                `portal` ' . $integer . ' DEFAULT -1,
+                `teaser` ' . $integer . ' DEFAULT NULL,
+                `portal` ' . $integer . ' DEFAULT NULL,
                 `anzahl` ' . $integer . ' DEFAULT 0,
-                `campaignId` ' . $integer . ' DEFAULT -1,
-                `teaser_zone` VARCHAR(255) DEFAULT \'\',
-                `usages` VARCHAR(255) DEFAULT \'\',
+                `campaignId` ' . $integer . ' DEFAULT NULL,
+                `teaser_zone` VARCHAR(255) DEFAULT NULL,
+                `usages` VARCHAR(255) DEFAULT NULL,
                 `infoAvailable` ' . $integer . ' DEFAULT 0,
                 PRIMARY KEY (`uid`)' . $keys . '
                 )
@@ -190,15 +189,15 @@ class Fallback extends Calculator\Db
                  IF NOT EXISTS '
                . $this->_tempTableUrls . ' (
                 `uid` ' . $integer . ' AUTO_INCREMENT,
-                `product` ' . $integer . ' NOT NULL DEFAULT -1,
+                `product` ' . $integer . ' DEFAULT NULL,
                 `internal` ' . $integer . ' DEFAULT 0,
-                `teaser` ' . $integer . ' DEFAULT -1,
+                `teaser` ' . $integer . ' DEFAULT 0,
                 `url` VARCHAR(255),
                 `urlTeaser` VARCHAR(255),
                 `pixel` VARCHAR(150),
                 `portal` VARCHAR(255),
-                `campaignId` ' . $integer . ' DEFAULT -1,
-                `teaserZone` VARCHAR(255) DEFAULT \'\',
+                `campaignId` ' . $integer . ' DEFAULT NULL,
+                `teaserZone` VARCHAR(255) DEFAULT NULL,
                 PRIMARY KEY (`uid`)
                 )
                 ' . $engine . ' ' . $charset . ';';
@@ -249,8 +248,6 @@ class Fallback extends Calculator\Db
                 // Entscheidungszeitraum als String mit "Tage" am Ende bzw.
                 // sofort
                 'kreditEntscheidung' => 'p.entscheidung',
-                // Entscheidungszeitraum als Zahl fuer die Sortierung
-                'kreditentscheidungSorted' => 'p.entscheidungSorted',
                 // bonitaetsabhaengig? (ja/nein)
                 // Productsinstellung kann vom Zinssatz ueberschrieben werden
                 'boni' => new \Zend\Db\Expr(
@@ -470,7 +467,6 @@ class Fallback extends Calculator\Db
                    `kreditAnnahme`,
                    `kreditTestsieger`,
                    `kreditEntscheidung`,
-                   `kreditentscheidungSorted`,
                    `boni`,
                    `ordering`,
                    `zinsgutschrift`,
@@ -520,7 +516,7 @@ class Fallback extends Calculator\Db
         }
 
         $query .= $select->assemble();
-        //var_dump($query);
+        //var_dump($query);exit;
 
         /*
          * fill the tamporary table

@@ -197,7 +197,7 @@ class Products extends ModelAbstract
     public function getList(
         $sparteId, $usage = 8, $ignoreInactive = true, $productOnly = null)
     {
-        if (!is_numeric($sparteId)) {
+        if (!is_numeric($sparteId)) {var_dump('Sparte not numeric');
             return array();
         }
 

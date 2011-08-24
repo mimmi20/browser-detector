@@ -130,8 +130,7 @@ class Fallback extends InputAbstract
                 `kreditName` VARCHAR(75) NOT NULL DEFAULT \'\',
                 `kreditAnnahme` VARCHAR(26) NOT NULL DEFAULT \'60\',
                 `kreditTestsieger` ' . $integer . ' NOT NULL DEFAULT 0,
-                `kreditEntscheidung` VARCHAR(26) DEFAULT \'2 Tage\',
-                `kreditentscheidungSorted` ' . $decimal . ' NOT NULL DEFAULT 99,
+                `kreditEntscheidung` ' . $integer . ' NOT NULL DEFAULT 2,
                 `boni` ' . $integer . ' NOT NULL DEFAULT 0,
                 `ordering` ' . $integer . ' NOT NULL DEFAULT 0,
                 `zinsgutschrift` VARCHAR(20) NOT NULL DEFAULT \'j&auml;hrlich\',
@@ -249,8 +248,6 @@ class Fallback extends InputAbstract
                 // Entscheidungszeitraum als String mit "Tage" am Ende bzw.
                 // sofort
                 'kreditEntscheidung' => 'p.entscheidung',
-                // Entscheidungszeitraum als Zahl fuer die Sortierung
-                'kreditentscheidungSorted' => 'p.entscheidungSorted',
                 // bonitaetsabhaengig? (ja/nein)
                 // Productsinstellung kann vom Zinssatz ueberschrieben werden
                 'boni' => new \Zend\Db\Expr(
@@ -472,7 +469,6 @@ class Fallback extends InputAbstract
                    `kreditAnnahme`,
                    `kreditTestsieger`,
                    `kreditEntscheidung`,
-                   `kreditentscheidungSorted`,
                    `boni`,
                    `ordering`,
                    `zinsgutschrift`,

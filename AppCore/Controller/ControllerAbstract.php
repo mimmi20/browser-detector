@@ -91,25 +91,12 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_request  = $this->getRequest();
         $this->_response = $this->getResponse();
 
-        //var_dump(strtolower($this->_request->getActionName()));
-        //var_dump(strtolower($this->_request->getControllerName()));
-        //var_dump(strtolower($this->_request->getModuleName()));
-
-        
-        $this->_redirector = $this->broker('Redirector');
-		$this->getFrontController()->getHelperBroker()->register('contentNegogation', new \AppCore\Controller\Helper\ContentNegogation());
+        $this->_redirector = $this->_helper->Redirector;
 		
-		$this->_context  = $this->broker('contentNegogation');
+		$this->_context  = $this->_helper->contentNegogation();
 		$this->_context->setConfig($this->_config->negogation);
 		
-		//var_dump(1, $this->_redirector, $this->_context);
-		$this->getFrontController()->getHelperBroker()->register('header', new \AppCore\Controller\Helper\Header());
-        $this->getFrontController()->getHelperBroker()->register('params', new \AppCore\Controller\Helper\Params());//getStack()->push(new \AppCore\Controller\Helper\Params())
-        $this->getFrontController()->getHelperBroker()->register('getParam', new \AppCore\Controller\Helper\GetParam());
-        $this->getFrontController()->getHelperBroker()->register('agentLogger', new \AppCore\Controller\Helper\AgentLogger());
-		$this->getFrontController()->getHelperBroker()->register('requestLogger', new \AppCore\Controller\Helper\RequestLogger());
-		
-		$this->broker('params')->direct(true);
+		$this->_helper->params(true);
 
         $this->_action     = strtolower($this->_request->getActionName());
         $this->_controller = strtolower($this->_request->getControllerName());
@@ -135,9 +122,9 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         parent::preDispatch();
 
         //set headers
-		$this->broker('header')->setDefaultHeaders();
-		$this->broker('agentLogger')->direct();
-		$this->broker('requestLogger')->direct();
+		$this->_helper->header()->setDefaultHeaders();
+		$this->_helper->agentLogger();
+		$this->_helper->requestLogger();
         
         $layout = \Zend\Layout\Layout::getMvcInstance();
         $this->_context->setLayout($layout);

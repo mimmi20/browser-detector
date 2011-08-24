@@ -76,7 +76,12 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         $result            = array();
         $_SESSION->changed = $changed;
         
-        if (!isset($_SESSION->result) || !is_array($_SESSION->result) || $changed) {
+        if (!isset($_SESSION->result) 
+			|| !is_array($_SESSION->result) 
+			|| !isset($_SESSION->result['status'])
+			|| 'ok' != $_SESSION->result['status']
+			|| true //$changed
+		) {
             $modelCampaign = new \AppCore\Service\Campaigns();
             $status        = 'fail';
         
@@ -118,8 +123,11 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
                 ), 
                 $result
             );
-            
-            $_SESSION->result = $result;
+            //var_dump($result);
+			if ('ok' == $result['status']) {
+				$_SESSION->result = $result;
+			}
+			
             $_SESSION->messages[] = 'result not from session';
         } else {
             $result = $_SESSION->result;

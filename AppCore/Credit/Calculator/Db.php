@@ -168,7 +168,6 @@ class Db extends CalculatorAbstract
                 'kreditAnnahme'           => 'ttp.kreditAnnahme',
                 'kreditTestsieger'        => 'ttp.kreditTestsieger',
                 'kreditEntscheidung'      => 'ttp.kreditEntscheidung',
-                'kreditentscheidungSorted' => 'ttp.kreditentscheidungSorted',
                 'boni'                    => 'ttp.boni',
                 'ordering'                => 'ttp.ordering',
                 'zinsgutschrift'          => 'ttp.zinsgutschrift',
