@@ -13,6 +13,9 @@ namespace AppCore\Plugin;
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
+ 
+use Zend\Controller\Request;
+use Zend\Controller\Plugin\AbstractPlugin;
 
 /**
  * Plugin Class to cache the whole application
@@ -22,7 +25,7 @@ namespace AppCore\Plugin;
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class Cache extends \Zend\Controller\Plugin\AbstractPlugin
+class Cache extends AbstractPlugin
 {
     /**
      * function called after routing the request

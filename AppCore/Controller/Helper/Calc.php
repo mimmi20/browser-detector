@@ -28,13 +28,13 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
     /**
      * loads the service class
      *
-     * @param string $requestType The type of the request
+     * @param string $details the detail level of the output
      *
      * @return void
      */
-    public function calcResult()
+    public function calcResult($details = 'full')
     {
-        return $this->_getResult();
+        return $this->_getResult($details);
     }
 
     /**
@@ -42,14 +42,13 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * wird als Alias für die Funktion {@link getService} verwendet
      *
-     * @param string $service The name of the Service
-     * @param string $module  The name of the module
+     * @param string $details  The name of the module
      *
      * @return void
      */
-    public function direct()
+    public function direct($details = 'full')
     {
-        return $this->_getResult();
+        return $this->_getResult($details);
     }
     
     /**
@@ -57,7 +56,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return void
      */
-    private function _getResult()
+    private function _getResult($details = 'full')
     {
         $_SESSION->messages = array();
         $changed            = false;
@@ -65,13 +64,23 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         if (null === $this->getActionController()) {
             throw new \Exception('no action controller');
         }
+		
+		$allowedDetails = array(
+			'full', 'short', 'id'
+		);
+		
+		if (!is_string($details) || !in_array($details, $allowedDetails)) {
+			$details = 'full';
+		}
         
         $noResult = (boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('noResult', 0, 'Int', $changed);
         $caid     = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('caid', 1, 'Int', $changed);
         $sparte   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('sparte', 1, 'Int', $changed);
-        $laufzeit = number_format($this->getActionController()->getHelper('getParam')->getParamFromName('laufzeit', 48, null, $changed), 1);
-        $betrag   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('betrag', 10000, 'Int', $changed);
-        $zweck    = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('zweck', 8, 'Int', $changed);
+        $loanPeriod = number_format($this->getActionController()->getHelper('getParam')->getParamFromName('laufzeit', 48, null, $changed), 1);
+        $loanAmount   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('betrag', 10000, 'Int', $changed);
+        $usage    = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('zweck', 8, 'Int', $changed);
+		
+		$this->getActionController()->view->laufzeit = $loanPeriod;
         
         $result            = array();
         $_SESSION->changed = $changed;
@@ -106,8 +115,36 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
                  */
                 $reason = 'campaign is deactivated';
                 $result = array();
+            } elseif ($loanAmount < KREDIT_BETRAG_MIN) {
+                /*
+                 * the requested loan amount is lower than the defined minimum
+                 * -> the calculation is skipped
+                 */
+                $reason = 'amount is lower than minimum';
+                $result = array();
+            } elseif ($loanAmount > KREDIT_BETRAG_MAX) {
+                /*
+                 * the requested loan amount is greater than the defined maximum
+                 * -> the calculation is skipped
+                 */
+                $reason = 'amount is larger than maximum';
+                $result = array();
+            } elseif (!array_key_exists($usage, $this->getActionController()->getHelper('usages')->getList())) {
+                /*
+                 * the requested usage is not supported
+                 * -> the calculation is skipped
+                 */
+                $reason = 'usage is not unknown/not supported';
+                $result = array();
+            } elseif (!array_key_exists($loanPeriod, $this->getActionController()->getHelper('laufzeit')->getList($sparte))) {
+                /*
+                 * the requested loan period is not supported
+                 * -> the calculation is skipped
+                 */
+                $reason = 'loan period is unknown/not supported';
+                $result = array();
             } else {
-                $result = $this->_doCalculate($caid, $sparte, $laufzeit, $betrag, $zweck);
+                $result = $this->_doCalculate($caid, $sparte, $loanPeriod, $loanAmount, $usage, $details);
                 $reason = $result['reason'];
                 
                 if (is_array($result['result']) && 0 < count($result['result'])) {
@@ -123,7 +160,8 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
                 ), 
                 $result
             );
-            //var_dump($result);
+            
+			// save the result into the session, only the calculation did not fail
 			if ('ok' == $result['status']) {
 				$_SESSION->result = $result;
 			}
@@ -144,49 +182,23 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
      * @return string    The rendered Calculation Content
      * @access protected
      */
-    private function _doCalculate($caid, $sparte, $laufzeit, $betrag, $zweck)
+    private function _doCalculate($caid, $sparte, $loanPeriod, $loanAmount, $usage, $details = 'full')
     {
-        $usages     = $this->getActionController()->getHelper('usages')->getList();
-        $laufzeiten = $this->getActionController()->getHelper('laufzeit')->getList($sparte);
-        
         $result = array(
             'result' => array(),
             'reason' => 'no result, parameters may be missing',
             'status' => 'fail'
         );
-        
-        if ($betrag < KREDIT_BETRAG_MIN) {
-            $result['reason'] = 'amount is lower than minimum';
-            
-            return $result;
-        }
-        
-        if ($betrag > KREDIT_BETRAG_MAX) {
-            $result['reason'] = 'amount is larger than maximum';
-            
-            return $result;
-        }
-        
-        if (!array_key_exists($zweck, $usages)) {
-            $result['reason'] = 'usage is not unknown/not supported';
-            
-            return $result;
-        }
-        
-        if (!array_key_exists($laufzeit, $laufzeiten)) {
-            $result['reason'] = 'time range is unknown/not supported';
-            
-            return $result;
-        }
 
         $calculator = new \AppCore\Credit\Calculator();
         $calculator
             ->setCaid($caid)
             ->setView($this->getActionController()->view)
             ->setSparte($sparte)
-            ->setLaufzeit($laufzeit)
-            ->setZweck($zweck)
-            ->setKreditbetrag($betrag)
+            ->setLaufzeit($loanPeriod)
+            ->setZweck($usage)
+            ->setKreditbetrag($loanAmount)
+			->setDetails($details)
             ->setBestOnly((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('bestOnly', 0, 'Int'))
             ->setBonus($this->getActionController()->getHelper('getParam')->getParamFromName('boni', null, 'Int'))
             ->setTeaserOnly((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('teaserOnly', 0, 'Int'))

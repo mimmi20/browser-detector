@@ -82,6 +82,12 @@ abstract class CreditAbstract
     protected $_test = false;
 
     /**
+     * @var    string
+     * @access protected
+     */
+    protected $_details = 'full';
+
+    /**
      * @var \Zend\Log\Logger
      */
     protected $_logger = null;
@@ -250,5 +256,35 @@ abstract class CreditAbstract
     public function getTest()
     {
         return $this->_test;
+    }
+
+    /**
+     * @param string $test the value for the variable
+     *
+     * @return void
+     * @access public
+     */
+    public function setDetails($details)
+    {
+		$allowedDetails = array(
+			'full', 'short', 'id'
+		);
+		
+		if (!is_string($details) || !in_array($details, $allowedDetails)) {
+			$details = 'full';
+		}
+		
+        $this->_details = $details;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     * @access public
+     */
+    public function getDetails()
+    {
+        return $this->_details;
     }
 }

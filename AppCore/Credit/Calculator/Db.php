@@ -73,6 +73,7 @@ class Db extends CalculatorAbstract
         $zweck    = $this->getZweck();
         $boni     = $this->getBoni();
         $best     = $this->getBestOnly();
+		$details  = $this->getDetails();
 
         $cacheParams = array(
             (($this->_mode) ? 'FALLBACK' : 'SP'),
@@ -84,7 +85,8 @@ class Db extends CalculatorAbstract
             (($product != '') ? str_replace(array(',', ' '), 'x', $product) : 'x'),
             (int) $zweck,
             (($boni !== null) ? (int) $boni : 'x'),
-            (int) $best
+            (int) $best,
+			$details
         );
         
         
@@ -126,7 +128,8 @@ class Db extends CalculatorAbstract
                 ->setBestOnly($best)
                 ->setOnlyProduct($product)
                 ->setZweck($zweck)
-                ->setBoni($boni);
+                ->setBoni($boni)
+				->setDetails($details);
 
             //var_dump('calculator called');
             $result = $calculator->calculate();
@@ -155,52 +158,82 @@ class Db extends CalculatorAbstract
                            `ttp`.`effZinsUnten`
                    ELSE `ttp`.`effZins` END';
 
+		$fields = array();
+		switch ($this->getDetails()) {
+			case 'id':
+				$fields = array('uid' => 'ttp.uid');
+				break;
+			case 'short':
+				$fields = array(
+					'uid'                 => 'ttp.uid',
+					'kreditInstitutTitle' => 'ttp.kreditInstitutTitle',
+					'kreditinstitut'      => 'ttp.kreditinstitut',
+					'product'             => 'ttp.product',
+					'kreditName'          => 'ttp.kreditName',
+					'kreditTestsieger'    => 'ttp.kreditTestsieger',
+					'boni'                => 'ttp.boni',
+					'monatlicheRate'      => 'ttp.monatlicheRate',
+					'kreditKosten'        => 'ttp.kreditKosten',
+					'internal'            => 'ttp.internal',
+					'pixel'               => 'ttp.pixel',
+					'teaser'              => 'ttp.teaser',
+					'info'                => new \Zend\Db\Expr('NULL')
+				);
+				break;
+			case 'full':
+                // Break intentionally omitted
+			default:
+				$fields = array(
+					'uid'                     => 'ttp.uid',
+					'kreditInstitutTitle'     => 'ttp.kreditInstitutTitle',
+					'kreditinstitut'          => 'ttp.kreditinstitut',
+					'product'                 => 'ttp.product',
+					'kreditName'              => 'ttp.kreditName',
+					'kreditAnnahme'           => 'ttp.kreditAnnahme',
+					'kreditTestsieger'        => 'ttp.kreditTestsieger',
+					'kreditEntscheidung'      => 'ttp.kreditEntscheidung',
+					'boni'                    => 'ttp.boni',
+					'ordering'                => 'ttp.ordering',
+					'zinsgutschrift'          => 'ttp.zinsgutschrift',
+					'anlagezeitraum'          => 'ttp.anlagezeitraum',
+					'ecgeb'                   => 'ttp.ecgeb',
+					'kreditkartengeb'         => 'ttp.kreditkartengeb',
+					'kontofuehrung'           => 'ttp.kontofuehrung',
+					'effZins'                 => new \Zend\Db\Expr(
+						$effZinsCondition
+					),
+					'effZinsOben'             => 'ttp.effZinsOben',
+					'effZinsUnten'            => 'ttp.effZinsUnten',
+					'zinssatzCleaned'         => 'ttp.zinssatzCleaned',
+					'zinssatzIsCleaned'       => 'ttp.zinssatzIsCleaned',
+					'effZinsN'                => 'ttp.effZinsN',
+					'effZinsR'                => 'ttp.effZinsR',
+					'showAb'                  => 'ttp.showAb',
+					'step'                    => 'ttp.step',
+					'min'                     => 'ttp.min',
+					'max'                     => 'ttp.max',
+					'monatlicheRate'          => 'ttp.monatlicheRate',
+					'gesamtKreditbetrag'      => 'ttp.gesamtKreditbetrag',
+					'kreditKosten'            => 'ttp.kreditKosten',
+					'kostenErsterMonat'       => 'ttp.kostenErsterMonat',
+					'internal'                => 'ttp.internal',
+					'url'                     => 'ttp.url',
+					'pixel'                   => 'ttp.pixel',
+					'teaser'                  => 'ttp.teaser',
+					'teaserZone'              => 'ttp.teaser_zone',
+					'portal'                  => 'ttp.portal',
+					'infoAvailable'           => 'ttp.infoAvailable',
+					'info'                    => new \Zend\Db\Expr('NULL')
+				);
+				break;
+		}
+				   
+				   
         $model  = new \AppCore\Model\Products();
         $select = $model->select()->setIntegrityCheck(false);
         $select->from(
             array('ttp' => '__tmp_table_products'),
-            array(
-                'uid'                     => 'ttp.uid',
-                'kreditInstitutTitle'     => 'ttp.kreditInstitutTitle',
-                'kreditinstitut'          => 'ttp.kreditinstitut',
-                'product'                 => 'ttp.product',
-                'kreditName'              => 'ttp.kreditName',
-                'kreditAnnahme'           => 'ttp.kreditAnnahme',
-                'kreditTestsieger'        => 'ttp.kreditTestsieger',
-                'kreditEntscheidung'      => 'ttp.kreditEntscheidung',
-                'boni'                    => 'ttp.boni',
-                'ordering'                => 'ttp.ordering',
-                'zinsgutschrift'          => 'ttp.zinsgutschrift',
-                'anlagezeitraum'          => 'ttp.anlagezeitraum',
-                'ecgeb'                   => 'ttp.ecgeb',
-                'kreditkartengeb'         => 'ttp.kreditkartengeb',
-                'kontofuehrung'           => 'ttp.kontofuehrung',
-                'effZins'                 => new \Zend\Db\Expr(
-                    $effZinsCondition
-                ),
-                'effZinsOben'             => 'ttp.effZinsOben',
-                'effZinsUnten'            => 'ttp.effZinsUnten',
-                'zinssatzCleaned'         => 'ttp.zinssatzCleaned',
-                'zinssatzIsCleaned'       => 'ttp.zinssatzIsCleaned',
-                'effZinsN'                => 'ttp.effZinsN',
-                'effZinsR'                => 'ttp.effZinsR',
-                'showAb'                  => 'ttp.showAb',
-                'step'                    => 'ttp.step',
-                'min'                     => 'ttp.min',
-                'max'                     => 'ttp.max',
-                'monatlicheRate'          => 'ttp.monatlicheRate',
-                'gesamtKreditbetrag'      => 'ttp.gesamtKreditbetrag',
-                'kreditKosten'            => 'ttp.kreditKosten',
-                'kostenErsterMonat'       => 'ttp.kostenErsterMonat',
-                'internal'                => 'ttp.internal',
-                'url'                     => 'ttp.url',
-                'pixel'                   => 'ttp.pixel',
-                'teaser'                  => 'ttp.teaser',
-                'teaserZone'              => 'ttp.teaser_zone',
-                'portal'                  => 'ttp.portal',
-                'infoAvailable'           => 'ttp.infoAvailable',
-                'info'                    => new \Zend\Db\Expr('NULL')
-            )
+            $fields
         );
 
         $order = array();

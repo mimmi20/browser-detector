@@ -200,7 +200,8 @@ class Calculator extends CreditAbstract
                 ->setSparte($this->_sparte)
                 ->setTeaserOnly($this->_teaserOnly)
                 ->setBestOnly($this->_bestOnly)
-                ->setBoni($this->_bonus);
+                ->setBoni($this->_bonus)
+				->setDetails($this->_details);
                 
             $result = $oInterface->calculate();
             

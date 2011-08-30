@@ -242,12 +242,12 @@ class Fallback extends Calculator\Db
                 // product id
                 'product' => 'p.idProducts',
                 // Annahmewahrscheinlichkeit
-                'kreditAnnahme' => 'p.annahme',
+                'kreditAnnahme' => 'p.acceptanceProbability',
                 // hat ein Testsieger-Bild? (ja/nein)
                 'kreditTestsieger' => 'p.testsieger',
                 // Entscheidungszeitraum als String mit "Tage" am Ende bzw.
                 // sofort
-                'kreditEntscheidung' => 'p.entscheidung',
+                'kreditEntscheidung' => 'p.decisionPeriod',
                 // bonitaetsabhaengig? (ja/nein)
                 // Productsinstellung kann vom Zinssatz ueberschrieben werden
                 'boni' => new \Zend\Db\Expr(
