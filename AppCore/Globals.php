@@ -624,8 +624,8 @@ class Globals
 
                 $xml = '';
             }
-        } elseif ($class == '\AppCore\Service\CalcResult'
-            || is_subclass_of($value, '\AppCore\Service\CalcResult')
+        } elseif ($class == '\App\Service\CalcResult'
+            || is_subclass_of($value, '\App\Service\CalcResult')
         ) {
             $xml = '<' . $key . '>'
                  . self::_ia2xml($value->toArray(), $level)
@@ -983,7 +983,7 @@ class Globals
          */
         $browser = $browscap->getBrowser($useragent, false);
 
-        $browserModel = new \AppCore\Model\Browser();
+        $browserModel = new \App\Model\Browser();
         $oBrowser     = $browserModel->searchByBrowser(
             ((isset($browser->Browser)) ? $browser->Browser : ''),
             ((isset($browser->Version)) ? $browser->Version : ''),
@@ -1246,7 +1246,7 @@ class Globals
             return true;
         }
 
-        $modelInstitute = new \AppCore\Service\Institute();
+        $modelInstitute = new \App\Service\Institute();
         $instituteId    = $modelInstitute->getId($institut);
         $instituteName  = $institut;
 
@@ -1259,7 +1259,7 @@ class Globals
         $lnktype = self::_cleanLnkType($lnktype);
 
         if ($instituteId) {
-            $modelCampaign = new \AppCore\Service\Campaigns();
+            $modelCampaign = new \App\Service\Campaigns();
             $paid          = null;
             $hostname      = null;
             $sparteName    = null;
@@ -1284,7 +1284,7 @@ class Globals
             
             if ($isActive && $productId) {
                 $instituteName = null;
-                $modelProduct  = new \AppCore\Service\Products();
+                $modelProduct  = new \App\Service\Products();
 
                 $isActive = $modelProduct->lade(
                     $productId, $instituteName, $sparteName
@@ -1300,7 +1300,7 @@ class Globals
             if (!$isActive) {
                 $instituteName .= '-INACTIVE';
             } else {
-                $modelUrl = new \AppCore\Model\Url();
+                $modelUrl = new \App\Model\Url();
                 $url      = $modelUrl->getFromProduct($productId, $campaignId);
                 $internal = false;
 
@@ -1329,7 +1329,7 @@ class Globals
             }
         }
 
-        $modelInstitut = new \AppCore\Model\InstituteLog();
+        $modelInstitut = new \App\Model\InstituteLog();
         $institut      = $modelInstitut->getId($instituteName);
         
         if (false === $institut) {
@@ -1344,7 +1344,7 @@ class Globals
             $institut = (int) $modelInstitut->insert($data);
         }
 
-        $modelTypes = new \AppCore\Model\Types();
+        $modelTypes = new \App\Model\Types();
         $lnktype    = $modelTypes->getId($lnktype);
         
         /*
@@ -1478,10 +1478,10 @@ class Globals
 
         $provision = 0;
 
-        $produktModel = new \AppCore\Model\Products();
+        $produktModel = new \App\Model\Products();
         $outerSelect  = $produktModel->select();
 
-        $institutModel   = new \AppCore\Model\InstituteLog();
+        $institutModel   = new \App\Model\InstituteLog();
         $instituteSelect = $institutModel->select();
         $instituteSelect->from(
             array('ifl' => 'institutesForLog'),
@@ -1489,7 +1489,7 @@ class Globals
         );
         $instituteSelect->where('`ifl`.`idInstitutesForLog` = ? ', $institut);
 
-        $componentModel  = new \AppCore\Model\Products();
+        $componentModel  = new \App\Model\Products();
         $componentSelect = $componentModel->select()->setIntegrityCheck(false);
         $componentSelect->from(
             array('pc' => 'productComponents'),
@@ -1665,7 +1665,7 @@ class Globals
      */
     public static function checkPaid($value)
     {
-        $modelCampaign = new \AppCore\Service\Campaigns();
+        $modelCampaign = new \App\Service\Campaigns();
 
         if (is_numeric($value)) {
             $needClean = false;
@@ -1677,7 +1677,7 @@ class Globals
             return true;
         }
 
-        $modelPortal = new \AppCore\Service\PartnerSites();
+        $modelPortal = new \App\Service\PartnerSites();
 
         return $modelPortal->checkPaid($value);
     }
@@ -1698,7 +1698,7 @@ class Globals
                ? trim($_SERVER['HTTP_USER_AGENT'])
                : '');
 
-        $model  = new \AppCore\Service\Campaigns();
+        $model  = new \App\Service\Campaigns();
         $model->loadCaid(
             $value,
             $requestData,
@@ -1720,7 +1720,7 @@ class Globals
      */
     public static function getDefaultLaufzeit($sparte)
     {
-        $model  = new \AppCore\Model\Sparten();
+        $model  = new \App\Model\Sparten();
 
         return $model->getDefaultLaufzeit($sparte);
     }
@@ -2074,7 +2074,7 @@ class Globals
                 }
                 break;
             case 'paid':
-                $campaignModel = new \AppCore\Service\Campaigns();
+                $campaignModel = new \App\Service\Campaigns();
                 $campaignId    = $campaignModel->getId($value);
                 return $campaignModel->find($campaignId)->current()->name;
                 break;

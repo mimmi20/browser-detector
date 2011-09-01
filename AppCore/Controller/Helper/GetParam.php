@@ -201,25 +201,13 @@ class GetParam extends \Zend\Controller\Action\Helper\AbstractHelper
     {
         $param = $default;
         
-        if (!isset($_SESSION->$paramName) 
-            || null === $_SESSION->$paramName 
-            || $param != $_SESSION->$paramName
-        ) {
+        if (!isset($_SESSION->$paramName) || null === $_SESSION->$paramName) {
             $_SESSION->$paramName = $param;
             
-            $message = "param '" . $paramName . "' not taken from session";
             $changed = true;
         } else {
-            $param   = $_SESSION->$paramName;
-            $message = "took param '" . $paramName . "' from session";
+            $param = $_SESSION->$paramName;
         }
-        
-        if (!isset($_SESSION->messages)) {
-            $_SESSION->messages = array();
-        }
-        
-        $_SESSION->messages[] = $message;
-        $this->_logger->debug($message);
         
         return $param;
     }

@@ -87,7 +87,7 @@ class Db extends \Zend\Log\Writer\AbstractWriter
             array('uri' => $request->getRequestUri())
         );
         /*
-        $model = new \AppCore\Model\ExceptionModel();
+        $model = new \App\Model\ExceptionModel();
         $model->insertException(
             $exception,
             new \Zend\Controller\Request\Http(),

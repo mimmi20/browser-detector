@@ -163,7 +163,7 @@ abstract class AdminAbstract extends ControllerAbstract
                     $this->_identity      = $identity;
                     $this->view->identity = $identity;
 
-                    $modelAcl    = new \AppCore\Model\Acl();
+                    $modelAcl    = new \App\Model\Acl();
                     $basisRollen = $modelAcl->getBaseRolesByRoleName(
                         $user->Rolle
                     );
@@ -291,7 +291,7 @@ abstract class AdminAbstract extends ControllerAbstract
      */
     private function _setupRoles()
     {
-        $modelAcl = new \AppCore\Model\Acl();
+        $modelAcl = new \App\Model\Acl();
 
         // Basis-Rollen
         $roles = $modelAcl->getRoles('Basis');
@@ -323,7 +323,7 @@ abstract class AdminAbstract extends ControllerAbstract
     private function _setupResources()
     {
         // Ressourcen
-        $modelAcl   = new \AppCore\Model\Acl();
+        $modelAcl   = new \App\Model\Acl();
         $ressources = $modelAcl->getResourcesRoles();
 
         foreach ($ressources as $res) {
@@ -385,7 +385,7 @@ abstract class AdminAbstract extends ControllerAbstract
             $parents    = array();
             $resources  = array();
 
-            $resourcesModel = new \AppCore\Model\Resources();
+            $resourcesModel = new \App\Model\Resources();
             /*
             $resArray       = $resourcesModel->fetchAll()->toArray();
             foreach ($resArray as $resource) {
@@ -394,7 +394,7 @@ abstract class AdminAbstract extends ControllerAbstract
             */
             $resources = $resourcesModel->getList();
 
-            $navigationModel = new \AppCore\Model\Navigation();
+            $navigationModel = new \App\Model\Navigation();
             $navigationItems = $navigationModel->getNavigation($rollen);
 
             foreach ($navigationItems as $nav) {

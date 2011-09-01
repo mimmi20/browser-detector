@@ -37,7 +37,7 @@ class Usage extends \Zend\Controller\Action\Helper\AbstractHelper
     public function __construct()
     {
         $this->_logger  = \Zend\Registry::get('log');
-        $this->_service = new \AppCore\Service\Usage();
+        $this->_service = new \App\Service\Usage();
     }
     
     /**

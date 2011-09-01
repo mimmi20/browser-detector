@@ -96,9 +96,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 		$this->_context  = $this->_helper->contentNegogation();
 		$this->_context->setConfig($this->_config->negogation);
 		
-		$this->_helper->params(true);
-
-        $this->_action     = strtolower($this->_request->getActionName());
+		$this->_action     = strtolower($this->_request->getActionName());
         $this->_controller = strtolower($this->_request->getControllerName());
         $this->_module     = strtolower($this->_request->getModuleName());
 
@@ -123,8 +121,6 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 
         //set headers
 		$this->_helper->header()->setDefaultHeaders();
-		$this->_helper->agentLogger();
-		$this->_helper->requestLogger();
         
         $layout = \Zend\Layout\Layout::getMvcInstance();
         $this->_context->setLayout($layout);
@@ -202,34 +198,6 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
     }
 
     /**
-     * lädt die Partner/Campaign-ID
-     *
-     * @param mixed $value die Partner/Campaign-ID
-     *
-     * @return void
-     * @access protected
-     */
-    protected function loadPaid($value)
-    {
-        $agent           = '';
-        $campaignService = new \AppCore\Service\Campaigns();
-
-        $campaignService->loadCaid(
-            $value,
-            $this->_requestData,
-            $agent,
-            $this->_paid,
-            $this->_caid,
-            $this->_hostName
-        );
-
-        $this->_campaignId = $campaignService->getName($this->_caid);
-
-        $portalService    = new \AppCore\Service\PartnerSites();
-        $this->_partnerId = $portalService->getName($this->_paid);
-    }
-
-    /**
      * checkt die Partner-ID
      *
      * @param mixed $value der Wert, der geprüft werden soll
@@ -267,38 +235,6 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $var = trim($var);
 
         return $var;
-    }
-
-    /**
-     * Recursively stripslashes string/array
-     *
-     * @return array
-     * @access protected
-     */
-    /*
-    protected function getParams()
-    {
-        $sources = $this->_request->getParamSources();
-        $this->_request->setParamSources(array());
-
-        $params = $this->_request->getParams();
-
-        if (in_array('_GET', $sources)) {
-            $params = array_merge($params, $_GET);
-        }
-
-        if (in_array('_POST', $sources)) {
-            $params = array_merge($params, $_POST);
-        }
-
-        $this->_requestData = array_map(
-            array($this, 'clean'),
-            $params
-        );
-
-        $this->_request->setParamSources($sources);
-
-        return $this->_requestData;
     }
 
     /**

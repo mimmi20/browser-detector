@@ -91,7 +91,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
 			|| 'ok' != $_SESSION->result['status']
 			|| true //$changed
 		) {
-            $modelCampaign = new \AppCore\Service\Campaigns();
+            $modelCampaign = new \App\Service\Campaigns();
             $status        = 'fail';
         
             if ($noResult) {
@@ -190,7 +190,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
             'status' => 'fail'
         );
 
-        $calculator = new \AppCore\Credit\Calculator();
+        $calculator = new \App\Credit\Calculator();
         $calculator
             ->setCaid($caid)
             ->setView($this->getActionController()->view)
