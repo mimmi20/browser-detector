@@ -95,14 +95,14 @@ abstract class KreditAdmin_Class_Statistics_Adapter_CampaignAbstract
     {
         /*
         if (is_numeric($sparte)) {
-            $categoriesModel = new \AppCore\Model\Sparten();
+            $categoriesModel = new \App\Model\Sparten();
             $sparte       = $categoriesModel->getName($sparte);
         }
         */
 
         $field = 'portal';
 
-        $model  = new \AppCore\Model\StatEinfach();
+        $model  = new \App\Model\StatEinfach();
         $select = $model->getCalculationSource(
             $expression,
             $campaigns,

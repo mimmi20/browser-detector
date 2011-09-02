@@ -43,8 +43,8 @@ class KreditAdmin_Class_Statistics_Event
      */
     public function __construct()
     {
-        $this->_dbEvent     = new \AppCore\Model\Event();
-        $this->_dbEventType = new \AppCore\Model\EventType();
+        $this->_dbEvent     = new \App\Model\Event();
+        $this->_dbEventType = new \App\Model\EventType();
     }
 
     /**

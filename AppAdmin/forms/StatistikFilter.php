@@ -80,7 +80,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             ->setAttrib('multiple', 'multiple')
             ->setAttrib('onchange', 'updateCampaigns(this);');
 
-        $partnerModel = new \AppCore\Model\PartnerSites();
+        $partnerModel = new \App\Model\PartnerSites();
         $select       = $partnerModel->select();
 
         if (null !== $select) {
@@ -98,7 +98,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             ->setAttrib('size', '8');
 
         /*
-        $campaignModel = new \AppCore\Model\Campaigns();
+        $campaignModel = new \App\Model\Campaigns();
         $select        = $campaignModel->select();
         $campaigns     = $campaignModel->fetchAll($select->where('p_id = ?', -1)->order('name'));
         */
@@ -109,7 +109,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             ->setAttrib('size', '8')
             ->setValue(1);
 
-        $categoriesModel = new \AppCore\Model\Sparten();
+        $categoriesModel = new \App\Model\Sparten();
         $categoriesList  = $categoriesModel->fetchAll();
         foreach ($categoriesList as $sparte) {
             $categoriesElement->addMultiOption($sparte['idCategories'], $sparte['name']);

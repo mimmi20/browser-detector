@@ -46,7 +46,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
      */
     public function partnerAction()
     {
-        $dbPartner  = new \AppCore\Model\PartnerSites();
+        $dbPartner  = new \App\Model\PartnerSites();
         $parentList = $dbPartner->fetchList();
 
         //array mit allen Partnern
@@ -121,7 +121,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $portal = $this->_getParam('p_id', 0, 'Int');
         }
 
-        $model = new \AppCore\Model\PartnerSites();
+        $model = new \App\Model\PartnerSites();
         $form  = $this->_getPortaleForm();
         $row   = $this->getEditedRow($model, $portal);
 
@@ -149,7 +149,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $active = (int) ((boolean) $this->_getParam('aktiv', 1, 'Int'));
             $active = 1 - $active;
 
-            $model = new \AppCore\Model\PartnerSites();
+            $model = new \App\Model\PartnerSites();
             $model->update(array('active' => $active), 'p_id = ' . $portal);
         }
 
@@ -182,7 +182,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $portal = $this->_getParam('p_id', 0, 'Int');
         }
 
-        $model = new \AppCore\Model\Campaigns();
+        $model = new \App\Model\Campaigns();
         $form  = $this->_getCampaignForm();
 
         if ($campaign > 0) {
@@ -216,7 +216,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
             $active   = (int) ((boolean) $this->_getParam('aktiv', 0, 'Int'));
             $active   = 1 - $active;
 
-            $model = new \AppCore\Model\Campaigns();
+            $model = new \App\Model\Campaigns();
             $model->update(
                 array('active' => $active), 'idCampaigns = ' . $campaign
             );
@@ -290,7 +290,7 @@ class KreditAdmin_MandantController extends KreditCore_Controller_AdminAbstract
     private function _getCampaignForm()
     {
         // Liste aller Kampagnen erstellen
-        $campaignModel = new \AppCore\Model\Campaigns();
+        $campaignModel = new \App\Model\Campaigns();
 
         $oCampaigns = $campaignModel->fetchAll();
         $campaigns  = array(0 => 'bitte wählen');

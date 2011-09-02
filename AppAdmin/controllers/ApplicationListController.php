@@ -29,7 +29,7 @@ class KreditAdmin_ApplicationListController
      */
     public function indexAction()
     {
-        $modelApplications = new \AppCore\Model\Antraege();
+        $modelApplications = new \App\Model\Antraege();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
 
@@ -74,7 +74,7 @@ class KreditAdmin_ApplicationListController
 
         $this->initAjax();
 
-        $antragsModel = new \AppCore\Model\Antraege();
+        $antragsModel = new \App\Model\Antraege();
 
         $select = $antragsModel->select();
         $select->from(
@@ -91,7 +91,7 @@ class KreditAdmin_ApplicationListController
         $select->where('((`idPortalService` != ?', 'sent by mail');
 
         $rows   = $antragsModel->fetchAll($select);
-        $antrag = new \AppCore\Credit\Antrag();
+        $antrag = new \App\Credit\Antrag();
 
         if (APPLICATION_ENV != SERVER_ONLINE_TEST
             && APPLICATION_ENV != SERVER_ONLINE_TEST2
@@ -208,7 +208,7 @@ class KreditAdmin_ApplicationListController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $categoriesModel = new \AppCore\Model\Sparten();
+            $categoriesModel = new \App\Model\Sparten();
             $sparte       = $categoriesModel->getName($sparte);
         }
 
@@ -232,7 +232,7 @@ class KreditAdmin_ApplicationListController
         $headerFields = $fields;
         $fields[]     = 'data';
 
-        $antragsModel = new \AppCore\Model\Antraege();
+        $antragsModel = new \App\Model\Antraege();
         $select = $antragsModel->select();
 
         if (null !== $select) {

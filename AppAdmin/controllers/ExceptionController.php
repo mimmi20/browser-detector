@@ -138,7 +138,7 @@ class KreditAdmin_ExceptionController
      */
     protected function createErrorList()
     {
-        $modelException = new \AppCore\Model\Exception();
+        $modelException = new \App\Model\Exception();
         $select         = $modelException->select();
         $select->order('Throw DESC');
         $select->limit(20, $this->_pageNumber * 20);

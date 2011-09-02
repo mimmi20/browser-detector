@@ -28,7 +28,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
      */
     public function indexAction()
     {
-        $modelApplications = new \AppCore\Model\Sparten();
+        $modelApplications = new \App\Model\Sparten();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
         $select     = $modelApplications->select();
@@ -61,7 +61,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
             $sparte = $this->_getParam('sparte', 0, 'Int');
         }
 
-        $model = new \AppCore\Model\Sparten();
+        $model = new \App\Model\Sparten();
         $form  = $this->_getForm();
 
         $row = $this->getEditedRow($model, $sparte);
@@ -113,7 +113,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
             $active = (boolean) $this->_getParam('aktiv', 1, 'Int');
             $active = 1 - (int) $active;
 
-            $model = new \AppCore\Model\Sparten();
+            $model = new \App\Model\Sparten();
             $model->update(array('active' => $active), 'idCategories = ' . $sparte);
         }
 
@@ -130,7 +130,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
     private function _getForm()
     {
         // Liste aller Laufzeiten erstellen
-        $laufzeitModel = new \AppCore\Model\Laufzeit();
+        $laufzeitModel = new \App\Model\Laufzeit();
         $select        = $laufzeitModel->select()->order('value');
         $oLaufzeiten   = $laufzeitModel->fetchAll($select);
         $laufzeiten    = array(0 => 'bitte wählen');

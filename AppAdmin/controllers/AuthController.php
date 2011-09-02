@@ -166,7 +166,7 @@ class KreditAdmin_AuthController extends KreditCore_Controller_Abstract
             $form->populate($params);
             if ($form->isValid($params)) {
                 $auth     = Zend_Auth::getInstance();
-                $account  = new \AppCore\Model\Bearbeiter();
+                $account  = new \App\Model\Bearbeiter();
                 $name     = $form->getElement('name')->getValue();
                 $password = $form->getElement('password')->getValue();
 

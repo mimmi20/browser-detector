@@ -41,7 +41,7 @@ class KreditAdmin_Class_Statistics_MandantResolver
     public function __construct()
     {
         $this->_featMandants = array(0 => true);
-        $this->_dbPartner    = new \AppCore\Model\PartnerSites();
+        $this->_dbPartner    = new \App\Model\PartnerSites();
 
         $this->addAllMandants();
     }

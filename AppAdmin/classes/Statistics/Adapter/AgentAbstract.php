@@ -44,11 +44,11 @@ abstract class KreditAdmin_Class_Statistics_Adapter_AgentAbstract
     )
     {
         if (is_numeric($sparte)) {
-            $categoriesModel = new \AppCore\Model\Sparten();
+            $categoriesModel = new \App\Model\Sparten();
             $sparte       = $categoriesModel->getName($sparte);
         }
 
-        $model = new \AppCore\Model\LogAgent();
+        $model = new \App\Model\LogAgent();
         $dateStart = $this->_filter->getDateStartIso();
         $dateEnd   = $this->_filter->getDateEndIso();
 

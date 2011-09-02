@@ -37,7 +37,7 @@ class KreditAdmin_Class_Statistics_Adapter_Summary_QuoteClicks
         $sparte = 'Kredit', $type = 'click', $summary = 0, $campaigns = '')
     {
         if (is_numeric($sparte)) {
-            $modelSparte = new \AppCore\Model\Sparten();
+            $modelSparte = new \App\Model\Sparten();
             $s           = $modelSparte->find($sparte)->current();
             if (is_object($s)) {
                 $sparte = $s->name;

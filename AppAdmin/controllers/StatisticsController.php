@@ -103,7 +103,7 @@ class KreditAdmin_StatisticsController
 
                 $this->view->statBerechnungenVPTotals = $this->getStatisticsBerechnungenVerteilungPortaleTotals($statBerechnungenVerteilungPortale);
 
-                $partnerModel = new \AppCore\Model\Partner();
+                $partnerModel = new \App\Model\Partner();
                 $this->view->partnerTable = $partnerModel->fetchAll()->toArray();
 
                 $this->view->tarifsTable = $interfacesTarifs;
@@ -152,7 +152,7 @@ class KreditAdmin_StatisticsController
         );
         $detailValue = strtolower($this->_getParam('detailValue', 'click'));
 
-        $modelSparte = new \AppCore\Model\Sparten();
+        $modelSparte = new \App\Model\Sparten();
         $s           = $modelSparte->find($sparte);
         $sparte      = '';
 
@@ -294,7 +294,7 @@ class KreditAdmin_StatisticsController
                 $campaigns = substr($campaigns, 0, strlen($campaigns) - 1);
             }
 
-            $model = new \AppCore\Model\Campaigns();
+            $model = new \App\Model\Campaigns();
             $paid  = $model->getPortalName($paid);
 
             $date          = new \Zend\Date\Date($datum / 1000, \Zend\Date\Date::TIMESTAMP);
@@ -369,7 +369,7 @@ class KreditAdmin_StatisticsController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $categoriesModel = new \AppCore\Model\Sparten();
+            $categoriesModel = new \App\Model\Sparten();
             $sparte       = $categoriesModel->getName($sparte);
         }
 
@@ -392,7 +392,7 @@ class KreditAdmin_StatisticsController
 
         $content = '"' . implode('";"', $fields) . '"' . "\n";
 
-        $antragsModel = new \AppCore\Model\Antraege();
+        $antragsModel = new \App\Model\Antraege();
         $select = $antragsModel->select();
 
         if (null !== $select) {
