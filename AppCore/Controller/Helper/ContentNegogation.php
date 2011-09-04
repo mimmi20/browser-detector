@@ -112,14 +112,27 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
      * @var array
      */
     private $_wantedType = array();
-    
+
     /**
-     * a flag to tell the browser properties should be used instead of the 
-     * user definition
-     * 
-     * @var boolean
+     * Save default content type.
+     *
+     * @var string
      */
-    private $_preferBrowser = true;
+    private $_defaultLanguage;
+
+    /**
+     * HTTP_ACCEPT
+     * 
+     * @var array
+     */
+    private $_acceptLanguage = array();
+
+    /**
+     * the content type which is wished to deliver
+     * 
+     * @var array
+     */
+    private $_wantedLanguage = array();
     
     /**
      * an \Zend\Layout\Layout instance 
@@ -146,11 +159,9 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     {
         parent::__construct($options);
         
-        $isAjax = $this->getRequest()->isXmlHTTPRequest();
-        
         /*
          * the supported content types
-         * TODO: check if different suffixes for ajax and normal htnl content 
+         * TODO: check if different suffixes for ajax and normal html content 
          *       are needed
          */
         $this->addContexts(array(
@@ -298,11 +309,13 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
          */
         $this->_negotiateEncoding();
         $this->_negotiateType();
+        $this->_negotiateLanguage();
         
         /*
          * detect the encoding and set it to the registry and the view
          */
         $encoding = $this->_getEncodingMatch();
+        
         mb_internal_encoding($encoding);
         mb_regex_encoding($encoding);
 
@@ -313,7 +326,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         /*
          * detect the locale and set it to the registry
          */
-        $sLocale = \Zend\Locale\Locale::findLocale();
+        $sLocale = $this->_getLanguageMatch();
         
         $oLocale = new \Zend\Locale\Locale($sLocale);
         \Zend\Registry::set('Zend_Locale', $oLocale);
@@ -344,9 +357,9 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
             }
         }
         
-        if (in_array($format, array('html', 'ajax'))) {
+        if (in_array($format, array('html'))) {
             $view->doctype()->setDoctype($this->_useHtmlFive ? \Zend\View\Helper\Doctype::HTML5 : ($this->_useXhtml ? \Zend\View\Helper\Doctype::XHTML1_TRANSITIONAL : \Zend\View\Helper\Doctype::HTML4_LOOSE));
-        } elseif (in_array($format, array('xhtml', 'xajax', 'xhtmlmp', 'xajaxmp'))) {
+        } elseif (in_array($format, array('xhtml', 'xhtmlmp'))) {
             $view->doctype()->setDoctype($this->_useHtmlFive ? \Zend\View\Helper\Doctype::XHTML5 : \Zend\View\Helper\Doctype::XHTML1_STRICT);
         }
         
@@ -379,8 +392,9 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         if (null !== $this->_layout) {
             // set the doctype depending on the content type or disable the layout
             $layout = $this->_layout;
+            $isAjax = $this->getRequest()->isXmlHTTPRequest();
             
-            if (in_array($format, array('html', 'xhtml', 'xhtmlmp'))) {
+            if (!$isAjax && in_array($format, array('html', 'xhtml', 'xhtmlmp'))) {
                 $layout->enableLayout();
             } else {
                 $layout->disableLayout();
@@ -419,24 +433,6 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     }
     
     /**
-     * sets a flag that the browser is prefered over the user definition
-     * 
-     * @param boolean $preferBrowser
-     *
-     * @return ContentNegogation
-     */
-    public function setPreferBrowser($preferBrowser = true)
-    {
-        if ($preferBrowser) {
-            $this->_preferBrowser = true;
-        } else {
-            $this->_preferBrowser = false;
-        }
-        
-        return $this;
-    }
-    
-    /**
      * sets the default encoding
      * 
      * @param string $encoding
@@ -463,6 +459,22 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     {
         if (is_string($contentType)) {
             $this->_defaultType = $contentType;
+        }
+        
+        return $this;
+    }
+    
+    /**
+     * sets the default content type
+     * 
+     * @param string $contentType
+     *
+     * @return ContentNegogation
+     */
+    public function setDefaultLanguage($language)
+    {
+        if (is_string($language)) {
+            $this->_defaultLanguage = $language;
         }
         
         return $this;
@@ -521,21 +533,34 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     }
     
     /**
-     * sets a flag that the browser is prefered over the user definition
+     * sets the default content type
      * 
-     * @param array|\Zend\Config\Config|string $type
+     * @param array|\Zend\Config\Config|string $contentType
      *
      * @return ContentNegogation
      */
-    public function setPreferBowser($preferBrowser = false)
+    public function setMatchingLanguage($language)
     {
-        if ($preferBrowser) {
-            $this->_preferBrowser = true;
-        } else {
-            $this->_preferBrowser = false;
+        if ($language instanceof \Zend\Config\Config) {
+            $language = $language->toArray();
         }
         
+        if (!is_array($language) && !is_string($language)) {
+            return $this;
+        }
+        
+        if (!is_array($language)) {
+            $language = array($language);
+        }
+        
+        $this->_wantedLanguage = $language;
+        
         return $this;
+    }
+    
+    private function _negotiateLanguage()
+    {
+        $this->_acceptLanguage = $this->_getFromHttp('HTTP_ACCEPT_LANGUAGE');
     }
     
     /**
@@ -546,8 +571,9 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
     private function _negotiateEncoding()
     {
         $request     = $this->getRequest();
-        $server      = $request->getServer('HTTP_ACCEPT_CHARSET');
         $contentType = $request->getServer('CONTENT_TYPE');
+        
+        $charsets = array();
         
         if ($contentType 
             && false !== strpos($contentType, ';') 
@@ -557,17 +583,17 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
             
             foreach ($types as $type) {
                 if (false !== strpos($type, 'charset=')) {
-                    $charsets = array(trim(str_replace('charset=', '', $type))); 
+                    $charset = trim(str_replace('charset=', '', $type)); 
                     break;
                 }
             }
-        } elseif ($server) {
-            $charsets = explode(',', $server);
+            
+            $this->_acceptEncoding = array($charset => 1.0);
+        } elseif ($request->getServer('HTTP_ACCEPT_CHARSET')) {
+            $this->_acceptEncoding = $this->_getFromHttp('HTTP_ACCEPT_CHARSET');
         } else {
-            $charsets = array_keys(\Zend\Locale\Locale::getHttpCharset());
+            $this->_acceptEncoding = \Zend\Locale\Locale::getHttpCharset();
         }
-        
-        $this->_acceptEncoding = $this->_break($charsets);
     }
     
     /**
@@ -577,44 +603,42 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
      */
     private function _negotiateType()
     {
-        $request    = $this->getRequest();
-        $accept     = $request->getServer('HTTP_ACCEPT');
-        
-        if (null === $accept) {
-            return;
-        }
-        
-        $this->_acceptType = $this->_break($accept);
+        $this->_acceptType = $this->_getFromHttp('HTTP_ACCEPT');
     }
-    
+
     /**
-     * breaks a string into a array and deletes the weight of the parts
+     * Return the accepted charset of the client
      *
-     * @param string|array $input
-     *
-     * @return array
+     * @return string
      */
-    private function _break($input)
+    private function _getFromHttp($header)
     {
-        if (!is_string($input) && !is_array($input)) {
+        $httpValues = getenv($header);
+
+        if ($httpValues === false) {
             return array();
         }
-        
-        if (is_array($input)) {
-            $arrayInput = $input;
-        } else {
-            $arrayInput = explode(',', $input);
-        }
-        
-        $arrayOutput = array();
-        
-        foreach ($arrayInput as $inputString) {
-            if (!empty($inputString)) {
-                $arrayOutput[] = preg_replace('/;.*/', '', $inputString);
+
+        $vauesToReturn = array();
+        $accepted = preg_split('/,\s*/', $httpValues);
+        foreach ($accepted as $accept) {
+            if (empty($accept) === true) {
+                continue;
             }
+
+            if (strpos($accept, ';') !== false) {
+                $quality = (float) substr($accept, (strpos($accept, '=') + 1));
+                $accept  = substr($accept, 0, strpos($accept, ';'));
+            } else {
+                $quality = 1.0;
+            }
+            
+            $accept = strtolower(trim($accept));
+            
+            $vauesToReturn[$accept] = $quality;
         }
-        
-        return $arrayOutput;
+
+        return $vauesToReturn;
     }
 
     /**
@@ -648,34 +672,55 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         
         return strtolower($match);
     }
+
+    /**
+     * Find Content type match
+     *
+     * @return  string
+     */
+    private function _getLanguageMatch()
+    {
+        $match = $this->_getMatch(
+            (is_array($this->_wantedLanguage) ? $this->_wantedLanguage : array()), 
+            $this->_acceptLanguage,
+            $this->_defaultLanguage
+        );
+        
+        return strtolower($match);
+    }
     
     /**
      * Return first matched value from first and second parameter.
      * If there is no match found, then return third parameter.
      * 
      * @return  string
-     * @param   array   $needle   the possible values set by the user
-     * @param   array   $haystack the possible values taken from browser
-     * @param   string  $default  the fefault value set by the user
+     * @param   array   $wantedEntries   the possible values set by the user
+     * @param   array   $acceptedEntries the possible values taken from browser
+     * @param   string  $default         the fefault value set by the user
      */
-    private function _getMatch(array $needle, array $haystack, $default = '')
+    private function _getMatch(array $wantedEntries, array $acceptedEntries, $default = '')
     {
-        if (!$haystack) {
+        if (!$acceptedEntries) {
             return $default;
         }
         
-        if (!$needle) {
-            return current($haystack);
+        if (!$wantedEntries) {
+            return current($acceptedEntries);
         }
         
-        //var_dump($this->_preferBrowser, $haystack, $needle);
-        if ($this->_preferBrowser) {
-            $a = array_intersect($haystack, $needle);
-        } else {
-            $a = array_intersect($needle, $haystack);
+        $wantedEntries = array_flip($wantedEntries);
+        
+        $primarySort   = array();
+        $secondarySort = array();
+        
+        foreach ($wantedEntries as $key => $row) {
+            $primarySort[$key]   = isset($acceptedEntries[$key]) ? (float) $acceptedEntries[$key] : 0.0;
+            $secondarySort[$key] = $row;
         }
         
-        if ($result = current($a)) {
+        array_multisort($primarySort, SORT_DESC, $secondarySort, SORT_ASC, $wantedEntries);
+        
+        if ($result = current(array_keys($wantedEntries))) {
             return $result;
         }
         

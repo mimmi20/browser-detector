@@ -70,7 +70,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
 		);
 		
 		if (!is_string($details) || !in_array($details, $allowedDetails)) {
-			$details = 'full';
+			$details = 'id';
 		}
         
         $noResult = (boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('noResult', 0, 'Int', $changed);

@@ -62,7 +62,7 @@ class Db extends \Zend\Log\Writer\AbstractWriter
      * @return void
      */
     protected function _write($event)
-    {//var_dump($event);exit;
+    {var_dump($event, PHP_VERSION);exit;
         if (!isset($event['message'])
             || $event['message'] == ''
         ) {
@@ -76,7 +76,7 @@ class Db extends \Zend\Log\Writer\AbstractWriter
             $exception = $event['message'];
             $priority  = 'Exception';
         } else {
-            $exception = new \Exception($event['message']);
+            $exception = new \RuntimeException($event['message']);
             $priority  = $event['priorityName'];
         }
         //var_dump(3, $event);//exit;
