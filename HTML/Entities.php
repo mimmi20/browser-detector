@@ -218,7 +218,7 @@ class Entities
             }
             if (!is_null($search_str)) {
                 $text = preg_replace_callback($search_str,
-                        'HTML_Entities::_utf8ord', $text);
+                        'self::_utf8ord', $text);
             }
         } else if ($charset == 'iso-8859-1') {
             $text = utf8_decode($text);
