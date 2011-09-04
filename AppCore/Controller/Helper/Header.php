@@ -117,7 +117,7 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
                 ' ' . $responseCode . ' ' .
                 $this->_statusCodes[$responseCode]
             );
-            $this->getResponse()->setHeader('robots', 'noindex,nofollow,nostore', true);
+            $this->getResponse()->setHeader('X-Robots-Tag', 'noindex,nofollow,nostore', true);
             $this->getResponse()->setHeader('Cache-Control', 'no-cache', true);
             $this->getResponse()->setHeader('Pragma', 'no-cache', true);
             $this->getResponse()->setHeader(
@@ -153,7 +153,7 @@ class Header extends \Zend\Controller\Action\Helper\AbstractHelper
                 . ' GMT', true
             );
             $this->getResponse()->setHeader('Pragma', 'no-cache', true);
-            $this->getResponse()->setHeader('robots', 'index,follow', true);
+            $this->getResponse()->setHeader('X-Robots-Tag', 'index,follow', true);
             $this->getResponse()->setHeader(
                 'Cache-Control',
                 'public, max-age=3600',

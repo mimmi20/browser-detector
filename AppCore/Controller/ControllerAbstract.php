@@ -131,7 +131,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         
         //set headers
         if ($this->_response->canSendHeaders()) {
-            $this->_response->setHeader('robots', 'noindex,follow', true);
+            $this->_response->setHeader('x-robots-tag', 'noindex,follow', true);
             $this->_response->setHeader(
                 'Cache-Control', 'public, max-age=3600', true
             );

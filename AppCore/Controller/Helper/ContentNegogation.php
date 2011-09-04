@@ -166,70 +166,91 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
          */
         $this->addContexts(array(
             'xhtml'  => array(
-                'suffix'    => 'xhtml',
-                'headers'   => array('Content-Type' => 'application/xhtml+xml'),
+                'suffix'  => 'xhtml',
+                'headers' => array(
+                    'Content-Type' => 'application/xhtml+xml',
+                    'Content-Language' => '###locale###'
+                ),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
             'xhtmlmp'  => array(
-                'suffix'    => 'xhtmlmp',
-                'headers'   => array('Content-Type' => 'application/vnd.wap.xhtml+xml'),
+                'suffix'  => 'xhtmlmp',
+                'headers' => array(
+                    'Content-Type' => 'application/vnd.wap.xhtml+xml',
+                    'Content-Language' => '###locale###'
+                ),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
             'html'  => array(
-                'suffix'    => 'html',
-                'headers'   => array('Content-Type' => 'text/html'),
+                'suffix'  => 'html',
+                'headers' => array(
+                    'Content-Type' => 'text/html',
+                    'Content-Language' => '###locale###'
+                ),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
             'wap'  => array(
-                'suffix'    => 'wap',
-                'headers'   => array('Content-Type' => 'text/vnd.wap.wml'),
+                'suffix'  => 'wap',
+                'headers' => array(
+                    'Content-Type' => 'text/vnd.wap.wml',
+                    'Content-Language' => '###locale###'
+                ),
                 'callbacks' => array(
                     'post' => 'postHtmlContext'
                 )
             ),
             'rss'  => array(
-                'suffix'    => 'rss',
-                'headers'   => array('Content-Type' => 'application/rss+xml')
+                'suffix'  => 'rss',
+                'headers' => array(
+                    'Content-Type' => 'application/rss+xml',
+                    'Content-Language' => '###locale###'
+                )
             ),
             'atom'  => array(
-                'suffix'    => 'atom',
-                'headers'   => array('Content-Type' => 'application/atom+xml')
+                'suffix'  => 'atom',
+                'headers' => array(
+                    'Content-Type' => 'application/atom+xml',
+                    'Content-Language' => '###locale###'
+                )
             ),
             'soap'  => array(
-                'suffix'    => 'soap',
-                'headers'   => array('Content-Type' => 'application/soap+xml')
+                'suffix'  => 'soap',
+                'headers' => array(
+                    'Content-Type' => 'application/soap+xml',
+                    'Content-Language' => '###locale###'
+                )
             ),
             'css'  => array(
-                'suffix'    => 'css',
-                'headers'   => array('Content-Type' => 'text/css')
+                'suffix'  => 'css',
+                'headers' => array('Content-Type' => 'text/css')
             ),
             'js'  => array(
-                'suffix'    => 'js',
-                'headers'   => array('Content-Type' => 'text/javascript')
+                'suffix'  => 'js',
+                'headers' => array('Content-Type' => 'text/javascript')
             ),
             'pdf'  => array(
-                'suffix'    => 'pdf',
-                'headers'   => array('Content-Type' => 'application/pdf'),
+                'suffix'  => 'pdf',
+                'headers' => array('Content-Type' => 'application/pdf'),
                 'callbacks' => array(
                     'post' => 'postPdfContext'
                 )
             ),
             'excel5'  => array(
-                'suffix'    => 'excel5',
-                'headers'   => array('Content-Type' => 'application/vnd.ms-excel'),
+                'suffix'  => 'excel5',
+                'headers' => array('Content-Type' => 'application/vnd.ms-excel'),
                 'callbacks' => array(
                     'post' => 'postExcelContext'
                 )
             ),
             'excel2007'  => array(
-                'suffix'    => 'excel2007',
-                'headers'   => array('Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),
+                'suffix'  => 'excel2007',
+                'headers' => array('Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),
                 'callbacks' => array(
                     'post' => 'postExcelContext'
                 )
@@ -251,13 +272,21 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
          */
         $response = $this->getResponse();
         $headers  = $response->getHeaders();
+        $response->clearHeaders();
+        
         $view     = $this->getActionController()->view;
         
-        $encoding = \Zend\Registry::get('_encoding');
+        $encoding       = \Zend\Registry::get('_encoding');
+        $view->encoding = $encoding;
+        
+        $oLocale      = \Zend\Registry::get('Zend_Locale');
+        $view->locale = (string) $oLocale;
         
         if ($view->doctype()->isHtml5()) {
             $view->headMeta()->setCharset($encoding);
         }
+        
+        $outputHeaders = array();
         
         foreach ($headers as $header) {
             $headerName  = strtolower($header['name']);
@@ -269,7 +298,19 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
                 $headerPlace = $this->_headers[$headerName]['placement'];
             }
             
-            $view->headMeta($header['value'], $headerName, $headerType, array(), $headerPlace);
+            $outputHeaders[$headerName] = array(
+                'value' => $header['value'],
+                'type'  => $headerType,
+                'place' => $headerPlace
+            );
+        }
+        
+        foreach ($outputHeaders as $headerName => $header) {
+            if ('content-type' != $headerName || !$view->doctype()->isHtml5()) {
+                $view->headMeta($header['value'], $headerName, $header['type'], array(), $header['place']);
+            }
+            
+            $response->setHeader($headerName, $header['value'], true);
         }
     }
 
@@ -322,6 +363,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         $view = $this->getActionController()->view;
 
         $view->setEncoding($encoding);
+        \Zend\Registry::set('_encoding', $encoding);
         
         /*
          * detect the locale and set it to the registry
@@ -330,6 +372,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         
         $oLocale = new \Zend\Locale\Locale($sLocale);
         \Zend\Registry::set('Zend_Locale', $oLocale);
+        $view->locale = (string) $oLocale;
         
         /*
          * detect the content type and search a matching context
@@ -367,9 +410,16 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
         $headers = $this->getHeaders($format);
         if (!empty($headers)) {
             $headerKeys = array_keys($headers);
+            $response   = $this->getResponse();
             
             foreach ($headerKeys as $header) {
-                $headers[$header] .= '; charset=' . $encoding;
+                if (false !== strpos($headers[$header], '###locale###')) {
+                    $headers[$header] = str_replace('###locale###', (string) $oLocale, $headers[$header]);
+                } else {
+                    $headers[$header] .= '; charset=' . $encoding;
+                }
+                
+                $response->setHeader($header, $headers[$header], true);
             }
             
             $this->setHeaders($format, $headers);
@@ -653,7 +703,7 @@ class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
             $this->_acceptEncoding, 
             $this->_defaultEncoding
         );
-        
+        //var_dump($this->_wantedEncoding, $this->_acceptEncoding, $this->_defaultEncoding);
         return strtolower($match);
     }
 
