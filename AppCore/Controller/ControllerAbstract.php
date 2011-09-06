@@ -76,6 +76,16 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
     protected $_time = 0;
 
     /**
+     * @var string the actual identity
+     */
+    protected $_identity;
+
+    /**
+     * @var Zend_Acl
+     */
+    protected $_acl;
+
+    /**
      * initializes the Controller
      *
      * @return void
@@ -127,14 +137,199 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->_context->initContext($this->_helper->getParam('format', null));
 
         
-        //var_dump($this->getRequest()->getActionName(), $this->getRequest()->getControllerName());
-        
         //set headers
         if ($this->_response->canSendHeaders()) {
             $this->_response->setHeader('x-robots-tag', 'noindex,follow', true);
             $this->_response->setHeader(
                 'Cache-Control', 'public, max-age=3600', true
             );
+        }
+		
+		$this->view->identity = null;
+		$loggedIn             = false;
+		$errorMessage         = '';
+		
+		if (!isset($_SESSION->identity)/*
+			|| !($_SESSION->identity instanceof \Zend\Auth\Result)*/
+		) {
+			$userService = new \App\Service\Users();
+			$user = $userService->find(\App\Model\Users::USER_GUEST)->current();
+			/*
+			$_SESSION->identity = new \Zend\Auth\Result(
+                \Zend\Auth\Result::SUCCESS,
+                new \App\Auth\Identity($user),
+                array()
+            );
+			/**/
+			$_SESSION->identity = new \App\Auth\Identity($user);
+		}
+		
+		$identity = $_SESSION->identity->getIdentity();
+		$resName  = '';
+		
+		if ($identity) {
+			$this->_createAcl();
+			
+			$ressourceParams = array(
+				'controller',
+				$this->_module,
+				$this->_controller,
+				$this->_action
+			);
+
+			$resName = implode('_', $ressourceParams);
+			
+			//$user    = $identity->getUser();
+			$role    = $identity->getRolle();
+			$roleId  = $identity->getRolleId();
+			$allowed = false;
+
+			if (strtolower($role) != 'gast') {
+				$allowed = $this->_acl->isAllowed($role, $resName);
+			}
+			/*
+			if ($allowed) {
+				$this->_identity      = $identity;
+				$this->view->identity = $identity;
+
+				$modelAcl    = new \App\Service\Acl();
+				$basisRollen = $modelAcl->getBaseRolesByRoleName($role);
+				$rollen      = array();
+				$rollen[]    = $roleId;
+
+				foreach ($basisRollen as $basisRolle) {
+					$rollen[] = $basisRolle->RolleId;
+				}
+
+				$nav  = $this->_createNavigation($rollen);
+				$menu = new KreditCore_View_Helper_Navigation_Menu();
+				$menu->setView($this->view)
+					->setAcl($this->_acl)
+					->setRole($role)
+					->setUlClass('first-of-type');
+
+				$menuOptions = array(
+					'ulClass'  => 'first-of-type',
+					'indent'   => '                        ',
+					'minDepth' => 0,
+					'maxDepth' => 3,
+					'onlyActiveBranch' => false
+				);
+
+				$loggedIn     = true;
+				$errorMessage = '';
+			} else {
+				$errorMessage = 'Zugriff nicht erlaubt';
+			}
+			/**/
+		}
+
+		
+		//var_dump(isset($_SESSION->identity), $resName, $allowed, $this->_acl);exit;
+		
+		/*
+
+		if (isset($_SESSION->identity)
+            && $_SESSION->identity instanceof Zend_Auth_Result
+			&& 'not-logged-in' != $this->_action
+        ) {
+            $identity = $_SESSION->identity->getIdentity();
+        } elseif ('notLoggedIn' == $this->_action) {
+			$loggedIn = true;
+		}
+
+        if (!$loggedIn) {var_dump('redirect');exit;
+            $this->_forward(
+                'not-logged-in',
+                null,
+                null,
+                array('error' => $errorMessage)
+            );
+        }
+		/**/
+    }
+
+    /**
+     * Creates ACL
+     *
+     * @return void
+     */
+    private function _createAcl()
+    {
+        // TODO: Add cacheing
+        $this->_acl = new \Zend\Acl\Acl();
+        $this->_setupRoles();
+        $this->_setupResources();
+
+        \Zend\Registry::set('_acl', $this->_acl);
+    }
+
+    /**
+     * Creates roles from Database
+     *
+     * @return void
+     */
+    private function _setupRoles()
+    {
+        $modelAcl = new \App\Service\Acl();
+
+        // Basis-Rollen
+        $roles = $modelAcl->getRoles('Basis');
+        foreach ($roles as $role) {
+            $this->_acl->addRole(new \Zend\Acl\Role\GenericRole($role->name));
+        }
+
+        // Benutzer-Rollen
+        $roles = $modelAcl->getRoles('Benutzer');
+        foreach ($roles as $role) {
+            $parents = (trim($role->elternrollen) != '')
+                     ? explode(',', $role->elternrollen)
+                     : null;
+
+            if (!is_null($parents)) {
+                $this->_acl->addRole(new \Zend\Acl\Role\GenericRole($role->name), $parents);
+            } else {
+                $this->_acl->addRole(new \Zend\Acl\Role\GenericRole($role->name));
+            }
+        }
+    }
+
+    /**
+     * Loads resources from database
+     *
+     * @return void
+     */
+    private function _setupResources()
+    {
+        // Ressourcen
+        $modelAcl   = new \App\Service\Acl();
+        $ressources = $modelAcl->getResourcesRoles();
+
+        foreach ($ressources as $res) {
+            if (!$this->_acl->hasRole($res['rolle'])) {
+                $this->_logger->err(
+                    'Rolle \'' . $res['rolle'] . '\' dont exist'
+                );
+
+                continue;
+            }
+
+            if (!$this->_acl->hasResource($res['ressource'])) {
+                $this->_acl->addResource(
+                    new \Zend\Acl\Resource\GenericResource($res['ressource'])
+                );
+            }
+
+            switch ($res['recht']) {
+                case 'allow':
+                    $this->_acl->allow($res['rolle'], $res['ressource']);
+                    break;
+                case 'deny':
+                    // Break intentionally omitted
+                default:
+                    $this->_acl->deny($res['rolle'], $res['ressource']);
+                    break;
+            }
         }
     }
 
