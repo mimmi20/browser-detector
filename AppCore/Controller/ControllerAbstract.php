@@ -182,12 +182,8 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 			//$user    = $identity->getUser();
 			$role    = $identity->getRolle();
 			$roleId  = $identity->getRolleId();
-			$allowed = false;
-
-			if (strtolower($role) != 'gast') {
-				$allowed = $this->_acl->isAllowed($role, $resName);
-			}
-			/*
+			$allowed = $this->_acl->isAllowed($role, $resName);
+			
 			if ($allowed) {
 				$this->_identity      = $identity;
 				$this->view->identity = $identity;
@@ -202,7 +198,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 				}
 
 				$nav  = $this->_createNavigation($rollen);
-				$menu = new KreditCore_View_Helper_Navigation_Menu();
+				$menu = new \AppCore\View\Helper\Navigation\Menu();
 				$menu->setView($this->view)
 					->setAcl($this->_acl)
 					->setRole($role)
@@ -221,24 +217,11 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 			} else {
 				$errorMessage = 'Zugriff nicht erlaubt';
 			}
-			/**/
 		}
 
+		//var_dump(isset($_SESSION->identity), $resName, $allowed, $loggedIn);exit;
 		
-		//var_dump(isset($_SESSION->identity), $resName, $allowed, $this->_acl);exit;
-		
-		/*
-
-		if (isset($_SESSION->identity)
-            && $_SESSION->identity instanceof Zend_Auth_Result
-			&& 'not-logged-in' != $this->_action
-        ) {
-            $identity = $_SESSION->identity->getIdentity();
-        } elseif ('notLoggedIn' == $this->_action) {
-			$loggedIn = true;
-		}
-
-        if (!$loggedIn) {var_dump('redirect');exit;
+		if (!$loggedIn) {
             $this->_forward(
                 'not-logged-in',
                 null,
@@ -246,7 +229,6 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
                 array('error' => $errorMessage)
             );
         }
-		/**/
     }
 
     /**
@@ -274,22 +256,30 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $modelAcl = new \App\Service\Acl();
 
         // Basis-Rollen
-        $roles = $modelAcl->getRoles('Basis');
+        $roles = $modelAcl->getRoles('Base');
         foreach ($roles as $role) {
-            $this->_acl->addRole(new \Zend\Acl\Role\GenericRole($role->name));
+            $oRole = new \Zend\Acl\Role\GenericRole($role->name);
+            
+            if (!$this->_acl->hasRole($oRole)) {
+                $this->_acl->addRole($oRole);
+            }
         }
 
         // Benutzer-Rollen
-        $roles = $modelAcl->getRoles('Benutzer');
+        $roles = $modelAcl->getRoles('User');
         foreach ($roles as $role) {
+            $oRole = new \Zend\Acl\Role\GenericRole($role->name);
+            
             $parents = (trim($role->elternrollen) != '')
                      ? explode(',', $role->elternrollen)
                      : null;
-
-            if (!is_null($parents)) {
-                $this->_acl->addRole(new \Zend\Acl\Role\GenericRole($role->name), $parents);
-            } else {
-                $this->_acl->addRole(new \Zend\Acl\Role\GenericRole($role->name));
+            
+            if (!$this->_acl->hasRole($oRole)) {
+                if (!is_null($parents)) {
+                    $this->_acl->addRole($oRole, $parents);
+                } else {
+                    $this->_acl->addRole($oRole);
+                }
             }
         }
     }
@@ -308,7 +298,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         foreach ($ressources as $res) {
             if (!$this->_acl->hasRole($res['rolle'])) {
                 $this->_logger->err(
-                    'Rolle \'' . $res['rolle'] . '\' dont exist'
+                    'Role \'' . $res['rolle'] . '\' don\'t exist'
                 );
 
                 continue;
