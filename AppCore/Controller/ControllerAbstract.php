@@ -152,7 +152,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 		if (!isset($_SESSION->identity)/*
 			|| !($_SESSION->identity instanceof \Zend\Auth\Result)*/
 		) {
-			$userService = new \App\Service\Users();
+			$userService = new \App\Model\Users();
 			$user = $userService->find(\App\Model\Users::USER_GUEST)->current();
 			/*
 			$_SESSION->identity = new \Zend\Auth\Result(
@@ -179,11 +179,10 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 
 			$resName = implode('_', $ressourceParams);
 			
-			//$user    = $identity->getUser();
+			$user    = $identity->getUser();
 			$role    = $identity->getRolle();
-			$roleId  = $identity->getRolleId();
 			$allowed = $this->_acl->isAllowed($role, $resName);
-			
+			//var_dump($allowed, $user, $role, $resName);exit;
 			if ($allowed) {
 				$this->_identity      = $identity;
 				$this->view->identity = $identity;
@@ -191,7 +190,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 				$modelAcl    = new \App\Service\Acl();
 				$basisRollen = $modelAcl->getBaseRolesByRoleName($role);
 				$rollen      = array();
-				$rollen[]    = $roleId;
+				$rollen[]    = $identity->getRolleId();
 
 				foreach ($basisRollen as $basisRolle) {
 					$rollen[] = $basisRolle->RolleId;
@@ -211,6 +210,8 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 					'maxDepth' => 3,
 					'onlyActiveBranch' => false
 				);
+				
+				$this->view->navlist = $menu->render($nav);
 
 				$loggedIn     = true;
 				$errorMessage = '';
@@ -221,7 +222,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
 
 		//var_dump(isset($_SESSION->identity), $resName, $allowed, $loggedIn);exit;
 		
-		if (!$loggedIn) {
+		if (!$loggedIn && 'not-logged-in' != $this->_action) {
             $this->_forward(
                 'not-logged-in',
                 null,
@@ -238,89 +239,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
      */
     private function _createAcl()
     {
-        // TODO: Add cacheing
-        $this->_acl = new \Zend\Acl\Acl();
-        $this->_setupRoles();
-        $this->_setupResources();
-
-        \Zend\Registry::set('_acl', $this->_acl);
-    }
-
-    /**
-     * Creates roles from Database
-     *
-     * @return void
-     */
-    private function _setupRoles()
-    {
-        $modelAcl = new \App\Service\Acl();
-
-        // Basis-Rollen
-        $roles = $modelAcl->getRoles('Base');
-        foreach ($roles as $role) {
-            $oRole = new \Zend\Acl\Role\GenericRole($role->name);
-            
-            if (!$this->_acl->hasRole($oRole)) {
-                $this->_acl->addRole($oRole);
-            }
-        }
-
-        // Benutzer-Rollen
-        $roles = $modelAcl->getRoles('User');
-        foreach ($roles as $role) {
-            $oRole = new \Zend\Acl\Role\GenericRole($role->name);
-            
-            $parents = (trim($role->elternrollen) != '')
-                     ? explode(',', $role->elternrollen)
-                     : null;
-            
-            if (!$this->_acl->hasRole($oRole)) {
-                if (!is_null($parents)) {
-                    $this->_acl->addRole($oRole, $parents);
-                } else {
-                    $this->_acl->addRole($oRole);
-                }
-            }
-        }
-    }
-
-    /**
-     * Loads resources from database
-     *
-     * @return void
-     */
-    private function _setupResources()
-    {
-        // Ressourcen
-        $modelAcl   = new \App\Service\Acl();
-        $ressources = $modelAcl->getResourcesRoles();
-
-        foreach ($ressources as $res) {
-            if (!$this->_acl->hasRole($res['rolle'])) {
-                $this->_logger->err(
-                    'Role \'' . $res['rolle'] . '\' don\'t exist'
-                );
-
-                continue;
-            }
-
-            if (!$this->_acl->hasResource($res['ressource'])) {
-                $this->_acl->addResource(
-                    new \Zend\Acl\Resource\GenericResource($res['ressource'])
-                );
-            }
-
-            switch ($res['recht']) {
-                case 'allow':
-                    $this->_acl->allow($res['rolle'], $res['ressource']);
-                    break;
-                case 'deny':
-                    // Break intentionally omitted
-                default:
-                    $this->_acl->deny($res['rolle'], $res['ressource']);
-                    break;
-            }
-        }
+        $this->_acl = \Zend\Registry::get('_acl');
     }
 
     /**
@@ -440,5 +359,89 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $text = trim($text);
 
         return $text;
+    }
+
+    /**
+     * Creates Navigation object
+     *
+     * @param mixed $rollen the roles to be in the Navigation
+     *
+     * @return void
+     * @access private
+     */
+    private function _createNavigation($rollen)
+    {
+        $cache  = null;
+
+        $front = \Zend\Controller\Front::getInstance();
+		$cache = $front->getParam('bootstrap')->getResource('cachemanager')->getCache('navi');
+
+        $cacheId = 'navi_' . ((is_array($rollen))
+                 ? implode('_', $rollen)
+                 : $rollen);
+
+        if (!is_object($cache)
+            || !$navigation = $cache->load($cacheId)
+        ) {
+            $navigation = new \Zend\Navigation\Navigation();
+            $parents    = array();
+            $resources  = array();
+
+            $resourcesModel = new \App\Model\Resources();
+            /*
+            $resArray       = $resourcesModel->fetchAll()->toArray();
+            foreach ($resArray as $resource) {
+                $resources[$resource['RessourceId']] = $resource['Controller'];
+            }
+            */
+            $resources = $resourcesModel->getList();
+
+            $navigationModel = new \App\Model\Navigation();
+            $navigationItems = $navigationModel->getNavigation($rollen);
+
+            foreach ($navigationItems as $nav) {
+                if (isset($nav['parent_id']) && $nav['parent_id'] != 0) {
+                    $parents[$nav['parent_id']] = true;
+                }
+            }
+
+            foreach ($navigationItems as $nav) {
+                $page = new \Zend\Navigation\AbstractPage_Mvc();
+
+                $page
+                    ->setController($resources[$nav['resource_id']])
+                    ->setAction($nav['res_action'])
+                    ->setModule('kredit-admin')
+                    ->setLabel($nav['nav_name'])
+                    ->setTitle($nav['nav_name'])
+                    ->setResource($resources[$nav['resource_id']]);
+
+                $page->navigation_id = $nav['nav_id'];
+
+                if ($nav['parent_id'] == 0) {
+                    if (array_key_exists($nav['nav_id'], $parents)) {
+                        $navigation->addPage($page);
+                        $newPage = clone $page;
+                        $newPage->navigation_id = null;
+                        $page->addPage($newPage);
+                    } else {
+                        $navigation->addPage($page);
+                    }
+                } else {
+                    $container = $navigation->findOneBy(
+                        'navigation_id', $nav['parent_id']
+                    );
+                    $container->addPage($page);
+                }
+            }
+
+            if (is_object($cache)) {
+                $cache->save($navigation, $cacheId);
+            }
+        }
+
+        \Zend\Registry::set('navigation', $navigation);
+
+        return $navigation;
     }
 }
