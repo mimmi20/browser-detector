@@ -406,7 +406,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
             }
 
             foreach ($navigationItems as $nav) {
-                $page = new \Zend\Navigation\AbstractPage_Mvc();
+                $page = new \Zend\Navigation\Page\Mvc();
 
                 $page
                     ->setController($resources[$nav['resource_id']])
