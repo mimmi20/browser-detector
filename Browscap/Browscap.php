@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace Browscap;
 
 /**
@@ -21,7 +21,7 @@ namespace Browscap;
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
@@ -31,7 +31,7 @@ namespace Browscap;
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2007-2010 Unister GmbH
