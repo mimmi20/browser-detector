@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Controller\Helper;
 
 /**
@@ -7,9 +7,9 @@ namespace AppCore\Controller\Helper;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -17,9 +17,9 @@ namespace AppCore\Controller\Helper;
 /**
  * Service-Finder für alle Kredit-Services
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
@@ -53,7 +53,7 @@ class CalcLogger extends \Zend\Controller\Action\Helper\AbstractHelper
             $getParamHelper->direct(
                 'kreditbetrag', KREDIT_KREDITBETRAG_DEFAULT, 'Int'
             ),
-            $getParamHelper->direct('laufzeit', KREDIT_LAUFZEIT_DEFAULT, 'Int'),
+            $getParamHelper->direct('loanPeriod', KREDIT_LAUFZEIT_DEFAULT, 'Int'),
             $getParamHelper->direct(
                 'vzweck', KREDIT_VERWENDUNGSZWECK_SONSTIGES, 'Int'
             ),

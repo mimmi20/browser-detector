@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Controller\Helper;
 
 /**
@@ -35,9 +35,9 @@ namespace AppCore\Controller\Helper;
  */
 class ContentNegogation extends \Zend\Controller\Action\Helper\ContextSwitch
 {
-	const PLACEMENT_APPEND  = 'APPEND';
-	const PLACEMENT_PREPEND = 'PREPEND';
-	
+    const PLACEMENT_APPEND  = 'APPEND';
+    const PLACEMENT_PREPEND = 'PREPEND';
+    
     /**
      * headers which are possibliy added as html header into the content
      * 

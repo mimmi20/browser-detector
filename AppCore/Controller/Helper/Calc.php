@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Controller\Helper;
 
 /**
@@ -7,9 +7,9 @@ namespace AppCore\Controller\Helper;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id: CalcLogger.php 31 2011-06-26 22:02:43Z tmu $
  */
@@ -17,9 +17,9 @@ namespace AppCore\Controller\Helper;
 /**
  * Service-Finder für alle Kredit-Services
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
@@ -64,33 +64,33 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         if (null === $this->getActionController()) {
             throw new \Exception('no action controller');
         }
-		
-		$allowedDetails = array(
-			'full', 'short', 'id'
-		);
-		
-		if (!is_string($details) || !in_array($details, $allowedDetails)) {
-			$details = 'id';
-		}
         
-        $noResult = (boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('noResult', 0, 'Int', $changed);
-        $caid     = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('caid', 1, 'Int', $changed);
-        $sparte   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('sparte', 1, 'Int', $changed);
-        $loanPeriod = number_format($this->getActionController()->getHelper('getParam')->getParamFromName('laufzeit', 48, null, $changed), 1);
-        $loanAmount   = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('betrag', 10000, 'Int', $changed);
+        $allowedDetails = array(
+            'full', 'short', 'id'
+        );
+        
+        if (!is_string($details) || !in_array($details, $allowedDetails)) {
+            $details = 'id';
+        }
+        var_dump($_SESSION);
+        $noResult = $_SESSION->noResult;
+        $caid     = $_SESSION->caid;
+        $sparte   = $_SESSION->category;
+        $loanPeriod = number_format($this->getActionController()->getHelper('getParam')->getParamFromName('loanPeriod', 48, null, $changed), 1);
+        $loanAmount = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('betrag', 10000, 'Int', $changed);
         $usage    = (int) $this->getActionController()->getHelper('getParam')->getParamFromName('zweck', 8, 'Int', $changed);
-		
-		$this->getActionController()->view->laufzeit = $loanPeriod;
+        
+        $this->getActionController()->view->loanPeriod = $loanPeriod;
         
         $result            = array();
         $_SESSION->changed = $changed;
         
         if (!isset($_SESSION->result) 
-			|| !is_array($_SESSION->result) 
-			|| !isset($_SESSION->result['status'])
-			|| 'ok' != $_SESSION->result['status']
-			|| true //$changed
-		) {
+            || !is_array($_SESSION->result) 
+            || !isset($_SESSION->result['status'])
+            || 'ok' != $_SESSION->result['status']
+            || true //$changed
+        ) {
             $modelCampaign = new \App\Service\Campaigns();
             $status        = 'fail';
         
@@ -136,7 +136,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
                  */
                 $reason = 'usage is not unknown/not supported';
                 $result = array();
-            } elseif (!array_key_exists($loanPeriod, $this->getActionController()->getHelper('laufzeit')->getList($sparte))) {
+            } elseif (!array_key_exists($loanPeriod, $this->getActionController()->getHelper('loanPeriod')->getList($sparte))) {
                 /*
                  * the requested loan period is not supported
                  * -> the calculation is skipped
@@ -161,11 +161,11 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
                 $result
             );
             
-			// save the result into the session, only the calculation did not fail
-			if ('ok' == $result['status']) {
-				$_SESSION->result = $result;
-			}
-			
+            // save the result into the session, only the calculation did not fail
+            if ('ok' == $result['status']) {
+                $_SESSION->result = $result;
+            }
+            
             $_SESSION->messages[] = 'result not from session';
         } else {
             $result = $_SESSION->result;
@@ -194,11 +194,11 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         $calculator
             ->setCaid($caid)
             ->setView($this->getActionController()->view)
-            ->setSparte($sparte)
+            ->setCategory($sparte)
             ->setLaufzeit($loanPeriod)
             ->setZweck($usage)
             ->setKreditbetrag($loanAmount)
-			->setDetails($details)
+            ->setDetails($details)
             ->setBestOnly((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('bestOnly', 0, 'Int'))
             ->setBonus($this->getActionController()->getHelper('getParam')->getParamFromName('boni', null, 'Int'))
             ->setTeaserOnly((boolean) $this->getActionController()->getHelper('getParam')->getParamFromName('teaserOnly', 0, 'Int'))

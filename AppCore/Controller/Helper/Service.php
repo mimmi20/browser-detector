@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Controller\Helper;
 
 /**
@@ -7,9 +7,9 @@ namespace AppCore\Controller\Helper;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -17,9 +17,9 @@ namespace AppCore\Controller\Helper;
 /**
  * Service-Finder für alle Kredit-Services
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class Service extends \Zend\Controller\Action\Helper\AbstractHelper

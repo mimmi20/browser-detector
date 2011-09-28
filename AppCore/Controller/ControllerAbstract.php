@@ -1,15 +1,17 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Controller;
+
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
  * abstrakte Basis-Klasse für alle Controller
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -20,9 +22,9 @@ use Zend\Controller\Request\AbstractRequest,
 /**
  * abstrakte Basis-Klasse für alle Controller
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
@@ -96,25 +98,25 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $this->initView();
         try {
         $this->_config = new \Zend\Config\Config($this->getInvokeArg('bootstrap')->getOptions());
-		$this->_logger = $this->getInvokeArg('bootstrap')->getResource('log');
-		
+        $this->_logger = $this->getInvokeArg('bootstrap')->getResource('log');
+        
         $this->_request  = $this->getRequest();
         $this->_response = $this->getResponse();
 
         $this->_redirector = $this->_helper->Redirector;
-		
-		$this->_context  = $this->_helper->contentNegogation();
-		$this->_context->setConfig($this->_config->negogation);
-		
-		$this->_action     = strtolower($this->_request->getActionName());
+        
+        $this->_context  = $this->_helper->contentNegogation();
+        $this->_context->setConfig($this->_config->negogation);
+        
+        $this->_action     = strtolower($this->_request->getActionName());
         $this->_controller = strtolower($this->_request->getControllerName());
         $this->_module     = strtolower($this->_request->getModuleName());
 
         $this->_db = \Zend\Db\Table\AbstractTable::getDefaultAdapter();
-		
-		} catch (\Exception $e) {
-			var_dump($e->getMessage(), $e->getTraceAsString());
-		}
+        
+        } catch (\Exception $e) {
+            var_dump($e->getMessage(), $e->getTraceAsString());
+        }
     }
 
     /**
@@ -130,7 +132,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         parent::preDispatch();
 
         //set headers
-		$this->_helper->header()->setDefaultHeaders();
+        $this->_helper->header()->setDefaultHeaders();
         
         $layout = \Zend\Layout\Layout::getMvcInstance();
         $this->_context->setLayout($layout);
@@ -144,85 +146,85 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
                 'Cache-Control', 'public, max-age=3600', true
             );
         }
-		
-		$this->view->identity = null;
-		$loggedIn             = false;
-		$errorMessage         = '';
-		
-		if (!isset($_SESSION->identity)/*
-			|| !($_SESSION->identity instanceof \Zend\Auth\Result)*/
-		) {
-			$userService = new \App\Model\Users();
-			$user = $userService->find(\App\Model\Users::USER_GUEST)->current();
-			/*
-			$_SESSION->identity = new \Zend\Auth\Result(
+        
+        $this->view->identity = null;
+        $loggedIn             = false;
+        $errorMessage         = '';
+        
+        if (!isset($_SESSION->identity)/*
+            || !($_SESSION->identity instanceof \Zend\Auth\Result)*/
+        ) {
+            $userService = new \App\Model\Users();
+            $user = $userService->find(\App\Model\Users::USER_GUEST)->current();
+            /*
+            $_SESSION->identity = new \Zend\Auth\Result(
                 \Zend\Auth\Result::SUCCESS,
                 new \App\Auth\Identity($user),
                 array()
             );
-			/**/
-			$_SESSION->identity = new \App\Auth\Identity($user);
-		}
-		
-		$identity = $_SESSION->identity->getIdentity();
-		$resName  = '';
-		
-		if ($identity) {
-			$this->_createAcl();
-			
-			$ressourceParams = array(
-				'controller',
-				$this->_module,
-				$this->_controller,
-				$this->_action
-			);
+            /**/
+            $_SESSION->identity = new \App\Auth\Identity($user);
+        }
+        
+        $identity = $_SESSION->identity->getIdentity();
+        $resName  = '';
+        
+        if ($identity) {
+            $this->_createAcl();
+            
+            $ressourceParams = array(
+                'controller',
+                $this->_module,
+                $this->_controller,
+                $this->_action
+            );
 
-			$resName = implode('_', $ressourceParams);
-			
-			$user    = $identity->getUser();
-			$role    = $identity->getRolle();
-			$allowed = $this->_acl->isAllowed($role, $resName);
-			//var_dump($allowed, $user, $role, $resName);exit;
-			if ($allowed) {
-				$this->_identity      = $identity;
-				$this->view->identity = $identity;
+            $resName = implode('_', $ressourceParams);
+            
+            $user    = $identity->getUser();
+            $role    = $identity->getRolle();
+            $allowed = $this->_acl->isAllowed($role, $resName);
+            //var_dump($allowed, $user, $role, $resName);exit;
+            if ($allowed) {
+                $this->_identity      = $identity;
+                $this->view->identity = $identity;
 
-				$modelAcl    = new \App\Service\Acl();
-				$basisRollen = $modelAcl->getBaseRolesByRoleName($role);
-				$rollen      = array();
-				$rollen[]    = $identity->getRolleId();
+                $modelAcl    = new \App\Service\Acl();
+                $basisRollen = $modelAcl->getBaseRolesByRoleName($role);
+                $rollen      = array();
+                $rollen[]    = $identity->getRolleId();
 
-				foreach ($basisRollen as $basisRolle) {
-					$rollen[] = $basisRolle->RolleId;
-				}
+                foreach ($basisRollen as $basisRolle) {
+                    $rollen[] = $basisRolle->RolleId;
+                }
 
-				$nav  = $this->_createNavigation($rollen);
-				$menu = new \AppCore\View\Helper\Navigation\Menu();
-				$menu->setView($this->view)
-					->setAcl($this->_acl)
-					->setRole($role)
-					->setUlClass('first-of-type');
+                $nav  = $this->_createNavigation($rollen);
+                $menu = new \AppCore\View\Helper\Navigation\Menu();
+                $menu->setView($this->view)
+                    ->setAcl($this->_acl)
+                    ->setRole($role)
+                    ->setUlClass('first-of-type');
 
-				$menuOptions = array(
-					'ulClass'  => 'first-of-type',
-					'indent'   => '                        ',
-					'minDepth' => 0,
-					'maxDepth' => 3,
-					'onlyActiveBranch' => false
-				);
-				
-				$this->view->navlist = $menu->render($nav);
+                $menuOptions = array(
+                    'ulClass'  => 'first-of-type',
+                    'indent'   => '                        ',
+                    'minDepth' => 0,
+                    'maxDepth' => 3,
+                    'onlyActiveBranch' => false
+                );
+                
+                $this->view->navlist = $menu->render($nav);
 
-				$loggedIn     = true;
-				$errorMessage = '';
-			} else {
-				$errorMessage = 'Zugriff nicht erlaubt';
-			}
-		}
+                $loggedIn     = true;
+                $errorMessage = '';
+            } else {
+                $errorMessage = 'Zugriff nicht erlaubt';
+            }
+        }
 
-		//var_dump(isset($_SESSION->identity), $resName, $allowed, $loggedIn);exit;
-		
-		if (!$loggedIn && 'not-logged-in' != $this->_action) {
+        //var_dump(isset($_SESSION->identity), $resName, $allowed, $loggedIn);exit;
+        
+        if (!$loggedIn && 'not-logged-in' != $this->_action) {
             $this->_forward(
                 'not-logged-in',
                 null,
@@ -374,7 +376,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
         $cache  = null;
 
         $front = \Zend\Controller\Front::getInstance();
-		$cache = $front->getParam('bootstrap')->getResource('cachemanager')->getCache('navi');
+        $cache = $front->getParam('bootstrap')->getResource('cachemanager')->getCache('navi');
 
         $cacheId = 'navi_' . ((is_array($rollen))
                  ? implode('_', $rollen)

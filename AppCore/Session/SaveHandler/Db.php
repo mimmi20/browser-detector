@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Session\SaveHandler;
 
 /**
@@ -7,9 +7,9 @@ namespace AppCore\Session\SaveHandler;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Session
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id: Db.php 24 2011-02-01 20:55:24Z tmu $
  */
@@ -17,9 +17,9 @@ namespace AppCore\Session\SaveHandler;
 /**
  * Savehandler zum Speichern der Session in einer Datenbank
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Session
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class Db

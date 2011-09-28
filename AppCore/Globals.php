@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore;
 
 /**
@@ -8,9 +8,9 @@ namespace AppCore;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -19,9 +19,9 @@ namespace AppCore;
  * Klasse, die Funktionen enthält, die an verschiedenen Stellen benötigt werden,
  * aber nicht vererbt werden können
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class Globals
@@ -1204,7 +1204,7 @@ class Globals
      * @param string  $institut    The selected institute
      * @param string  $lnktype     The type of the request
      * @param integer $betrag      The amount for the calculation
-     * @param integer $laufzeit    The timespan for the calculation
+     * @param integer $loanPeriod    The timespan for the calculation
      * @param integer $zweck       The usage for the calculation
      * @param integer $partnerId   The Id for the campaign of the request
      * @param integer $sparteId    The sparte for the calculation
@@ -1224,7 +1224,7 @@ class Globals
         $institut,
         $lnktype,
         $betrag,
-        $laufzeit,
+        $loanPeriod,
         $zweck,
         $campaignId,
         $sparteId,
@@ -1355,7 +1355,7 @@ class Globals
             $campaignId,
             $sparteId,
             $betrag,
-            $laufzeit
+            $loanPeriod
         );
 
         self::_logDatasetStatistik(
@@ -1365,7 +1365,7 @@ class Globals
             $betrag,
             $zweck,
             $sparteId,
-            $laufzeit
+            $loanPeriod
         );
 
         self::_logRequest(
@@ -1374,7 +1374,7 @@ class Globals
             $lnktype,
             $sparteId,
             $betrag,
-            $laufzeit,
+            $loanPeriod,
             $institut,
             $zweck,
             $requestData
@@ -1457,14 +1457,14 @@ class Globals
      * @param integer $partnerId ??
      * @param integer $sparte    ??
      * @param integer $betrag    ??
-     * @param integer $laufzeit  ??
+     * @param integer $loanPeriod  ??
      *
      * @return void
      * @access private
      * @static
      */
     private static function _logDatasetStatistikEinfach(
-        $type, $institut, $partnerId, $sparte, $betrag, $laufzeit)
+        $type, $institut, $partnerId, $sparte, $betrag, $loanPeriod)
     {
         /*
          * do not log statistik while testing
@@ -1535,16 +1535,16 @@ class Globals
             }
         } else {
             $betrag   = 0;
-            $laufzeit = 0;
+            $loanPeriod = 0;
         }
 
         $sql = 'INSERT INTO `stat_einfach` (`datum`,`id_type`,`idInstitutesForLog`,'
              . '`idCampaigns`,`idCategories`,`anzahl`,`sum`,`lz`,`pr`) VALUES '
              . '(NOW(), \'' . $type . '\', \'' . $institut . '\', \''
              . $partnerId . '\',\'' . $sparte . '\',1,' . $betrag . ','
-             . $laufzeit . ',' . $provision . ') '
+             . $loanPeriod . ',' . $provision . ') '
              . 'ON DUPLICATE KEY UPDATE `anzahl`=`anzahl` + 1,`sum`=`sum` + '
-             . $betrag . ', `lz`=`lz` + ' . $laufzeit
+             . $betrag . ', `lz`=`lz` + ' . $loanPeriod
              . ',`pr`=`pr`+ ' . $provision;
 
         try {
@@ -1568,7 +1568,7 @@ class Globals
         $type,
         $sparte,
         $betrag,
-        $laufzeit,
+        $loanPeriod,
         $institut,
         $zweck,
         array $requestData = array())
@@ -1600,12 +1600,12 @@ class Globals
         );
 
         $sql = 'INSERT INTO `log_requests` (`requestId`,`idCampaigns`,'
-             . '`id_type`,`idCategories`,`betrag`,`laufzeit`,`idInstitutesForLog`,`zweck`,'
+             . '`id_type`,`idCategories`,`betrag`,`loanPeriod`,`idInstitutesForLog`,`zweck`,'
              . '`server_ip`,`client_ip`,`client_agent_id`,`server_agent_id`,'
              . '`client_referrer`,`server_referrer`) '
              . 'VALUES (\'' . $requestId . '\',\'' . $partnerId . '\','
              . '\'' . $type . '\',\'' . $sparte . '\',\'' . $betrag . '\','
-             . '\'' . $laufzeit . '\',\'' . $institut . '\',\'' . $zweck . '\','
+             . '\'' . $loanPeriod . '\',\'' . $institut . '\',\'' . $zweck . '\','
              . '\'' . $ipServer . '\',\'' . $ipClient . '\','
              . (int) $clientAgentId . ',' . (int) $serverAgentId . ','
              . '\'' . $referrerClient . '\',\'' . $referrerServer . '\')';
@@ -1629,20 +1629,20 @@ class Globals
      * @param integer $betrag    ??
      * @param integer $zweck     ??
      * @param integer $sparte    ??
-     * @param integer $laufzeit  ??
+     * @param integer $loanPeriod  ??
      *
      * @return void
      * @access private
      * @static
      */
     private static function _logDatasetStatistik(
-        $type, $institut, $partnerId, $betrag, $zweck, $sparte, $laufzeit)
+        $type, $institut, $partnerId, $betrag, $zweck, $sparte, $loanPeriod)
     {
         $sql = 'INSERT INTO `kredit_statistik` (`betrag`,`idInstitutesForLog`,'
-             . '`idCampaigns`,`zweck`,`id_type`,`laufzeit`,`idCategories`,`zeit`,'
+             . '`idCampaigns`,`zweck`,`id_type`,`loanPeriod`,`idCategories`,`zeit`,'
              . '`anzahl`) VALUES (\'' . $betrag . '\',\'' . $institut . '\','
              . '\'' . $partnerId . '\',\'' . $zweck . '\',\'' . $type . '\','
-             . '\'' . $laufzeit . '\',\'' . $sparte . '\','
+             . '\'' . $loanPeriod . '\',\'' . $sparte . '\','
              . 'NOW(),1) '
              . 'ON DUPLICATE KEY UPDATE `anzahl`=`anzahl`+1';
 
@@ -1710,9 +1710,9 @@ class Globals
     }
 
     /**
-     * liefert die beforzugte Laufzeit für eine Sparte
+     * liefert die beforzugte Laufzeit für eine Category
      *
-     * @param string $sparte der Name der Sparte
+     * @param string $sparte der Name der Category
      *
      * @return integer
      * @access public
@@ -1720,7 +1720,7 @@ class Globals
      */
     public static function getDefaultLaufzeit($sparte)
     {
-        $model  = new \App\Model\Sparten();
+        $model  = new \App\Model\Categories();
 
         return $model->getDefaultLaufzeit($sparte);
     }

@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\View\Helper\Navigation;
 
 /**
@@ -7,15 +7,15 @@ namespace AppCore\View\Helper\Navigation;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   View_Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
 
 /**
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   View_Helper
  */
 class Menu extends \Zend\View\Helper\Navigation\Menu

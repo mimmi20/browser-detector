@@ -1,9 +1,9 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\View\Helper;
 
 /**
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   View_Helper
  * @copyright 2007-2010 Unister GmbH
  * @author    Stefan Barthel <stefan.barthel@unister-gmbh.de>
@@ -11,7 +11,7 @@ namespace AppCore\View\Helper;
  */
 
 /**
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   View_Helper
  * @copyright 2007-2010 Unister GmbH
  */

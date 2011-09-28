@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace AppCore\Controller\Helper;
 
 /**
@@ -8,9 +8,9 @@ namespace AppCore\Controller\Helper;
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -19,9 +19,9 @@ namespace AppCore\Controller\Helper;
  * ActionHelper Class to detect the user agent and to set actions according to
  * it
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller-Helper
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
@@ -45,9 +45,9 @@ class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return string
      */
-    public function name($sparte, $laufzeit = KREDIT_LAUFZEIT_DEFAULT)
+    public function name($sparte, $loanPeriod = KREDIT_LAUFZEIT_DEFAULT)
     {
-        return $this->_service->name($sparte, $laufzeit);
+        return $this->_service->name($sparte, $loanPeriod);
     }
     
     /**
@@ -67,8 +67,8 @@ class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return string
      */
-    public function direct($laufzeit = KREDIT_LAUFZEIT_DEFAULT)
+    public function direct($loanPeriod = KREDIT_LAUFZEIT_DEFAULT)
     {
-        return $this->name($laufzeit);
+        return $this->name($loanPeriod);
     }
 }
