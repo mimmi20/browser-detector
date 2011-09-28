@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace HTML\Entities;
 /* vim: set noai expandtab ts=4 st=4 sw=4: */
 

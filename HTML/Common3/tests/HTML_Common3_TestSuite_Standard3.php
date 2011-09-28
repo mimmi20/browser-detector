@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace Test;
 
 // Call HTML_Common3_TestSuite_Standard::main() if this source file is executed directly.

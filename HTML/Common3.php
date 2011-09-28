@@ -1,5 +1,5 @@
 <?php
-declare(ENCODING = 'iso-8859-1');
+declare(ENCODING = 'utf-8');
 namespace HTML;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
