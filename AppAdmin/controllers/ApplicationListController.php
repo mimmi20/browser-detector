@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * Controller-Klasse, zur Verwaltung der eingegangenen Kreditanträge
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_ApplicationListController
@@ -208,7 +208,7 @@ class KreditAdmin_ApplicationListController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $categoriesModel = new \App\Model\Sparten();
+            $categoriesModel = new \App\Model\Categories();
             $sparte       = $categoriesModel->getName($sparte);
         }
 
@@ -225,7 +225,7 @@ class KreditAdmin_ApplicationListController
 
         $fields = array(
             'knID', 'portal', 'institut', 'date', 'anrede', 'name', 'adresse',
-            'kontakt', 'telefon', 'mobil', 'kreditbetrag', 'laufzeit', 'sparte',
+            'kontakt', 'telefon', 'mobil', 'kreditbetrag', 'loanPeriod', 'sparte',
             'KundeId', 'idPortalService', 'creditLine', 'mehrAntrag'
         );
 

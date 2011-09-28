@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,12 +14,12 @@
 /**
  * Controller-Klasse, die das Backend steuert
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
+class KreditAdmin_CategoriesController extends KreditCore_Controller_AdminAbstract
 {
     /**
      * indexAction-Methode wird aufgerufen wenn keine Action angegeben wurde
@@ -28,7 +28,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
      */
     public function indexAction()
     {
-        $modelApplications = new \App\Model\Sparten();
+        $modelApplications = new \App\Model\Categories();
 
         $pageNumber = $this->_getParam('page', 1, 'Int');
         $select     = $modelApplications->select();
@@ -41,11 +41,11 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
             $this->createPagination($paginatorAdapter, $pageNumber);
         }
 
-        $this->view->headTitle('Sparten', 'PREPEND');
+        $this->view->headTitle('Categories', 'PREPEND');
     }
 
     /**
-     * Action zur Bearbeitung einer Sparte
+     * Action zur Bearbeitung einer Category
      *
      * @return void
      */
@@ -61,7 +61,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
             $sparte = $this->_getParam('sparte', 0, 'Int');
         }
 
-        $model = new \App\Model\Sparten();
+        $model = new \App\Model\Categories();
         $form  = $this->_getForm();
 
         $row = $this->getEditedRow($model, $sparte);
@@ -91,11 +91,11 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
 
         $this->view->form = $form;
 
-        $this->view->headTitle('Sparte bearbeiten', 'PREPEND');
+        $this->view->headTitle('Category bearbeiten', 'PREPEND');
     }
 
     /**
-     * Action zum Aktivieren/Deaktivieren einer Sparte
+     * Action zum Aktivieren/Deaktivieren einer Category
      *
      * @return void
      */
@@ -113,7 +113,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
             $active = (boolean) $this->_getParam('aktiv', 1, 'Int');
             $active = 1 - (int) $active;
 
-            $model = new \App\Model\Sparten();
+            $model = new \App\Model\Categories();
             $model->update(array('active' => $active), 'idCategories = ' . $sparte);
         }
 
@@ -130,13 +130,13 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
     private function _getForm()
     {
         // Liste aller Laufzeiten erstellen
-        $laufzeitModel = new \App\Model\Laufzeit();
-        $select        = $laufzeitModel->select()->order('value');
-        $oLaufzeiten   = $laufzeitModel->fetchAll($select);
-        $laufzeiten    = array(0 => 'bitte wählen');
+        $loanPeriodModel = new \App\Model\Laufzeit();
+        $select        = $loanPeriodModel->select()->order('value');
+        $oLaufzeiten   = $loanPeriodModel->fetchAll($select);
+        $loanPeriods    = array(0 => 'bitte wählen');
 
         foreach ($oLaufzeiten as $aktLaufzeit) {
-            $laufzeiten[$aktLaufzeit->laufzeit_id] = $aktLaufzeit->name;
+            $loanPeriods[$aktLaufzeit->loanPeriod_id] = $aktLaufzeit->name;
         }
 
         // Form laden
@@ -151,7 +151,7 @@ class KreditAdmin_SpartenController extends KreditCore_Controller_AdminAbstract
 
         // Kampagnen
         $defaultLaufzeit = $form->getElement('defaultLaufzeit');
-        $defaultLaufzeit->setMultiOptions($laufzeiten);
+        $defaultLaufzeit->setMultiOptions($loanPeriods);
 
         return $form;
     }

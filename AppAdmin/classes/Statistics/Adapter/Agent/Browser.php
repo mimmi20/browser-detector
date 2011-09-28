@@ -5,9 +5,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -16,9 +16,9 @@
  * Klasse zum Erstellen der Statistik der festgestellten Browser ohne
  * Berücksichtgung von Version, Betriebssystem usw.
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_Class_Statistics_Adapter_Agent_Browser

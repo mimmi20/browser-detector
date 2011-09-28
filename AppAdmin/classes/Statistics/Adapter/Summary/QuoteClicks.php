@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -15,9 +15,9 @@
  * Klasse zum Erstellen der Statistik für die Quote Clickout/Pageimpression bzw.
  * Sales/Clickouts
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_Class_Statistics_Adapter_Summary_QuoteClicks
@@ -37,8 +37,8 @@ class KreditAdmin_Class_Statistics_Adapter_Summary_QuoteClicks
         $sparte = 'Kredit', $type = 'click', $summary = 0, $campaigns = '')
     {
         if (is_numeric($sparte)) {
-            $modelSparte = new \App\Model\Sparten();
-            $s           = $modelSparte->find($sparte)->current();
+            $modelCategory = new \App\Model\Categories();
+            $s           = $modelCategory->find($sparte)->current();
             if (is_object($s)) {
                 $sparte = $s->name;
             } else {

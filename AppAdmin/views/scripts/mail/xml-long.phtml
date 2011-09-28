@@ -16,7 +16,7 @@
 <xml dataset="<?php echo $this->reportNr; ?>">
     <paid><?php echo $this->rData['paid']; ?></paid>
     <kreditbetrag><?php echo $this->rData['kreditbetrag']; ?></kreditbetrag>
-    <laufzeit><?php echo $this->rData['laufzeit']; ?></laufzeit>
+    <loanPeriod><?php echo $this->rData['loanPeriod']; ?></loanPeriod>
     <vzweck><?php echo ((isset($this->rData['zweck'])) ? $this->rData['zweck'] : ''); ?></vzweck>
     <test><?php echo ((isset($this->rData['test'])) ? $this->rData['test'] : ''); ?></test>
     <kreditinstitut><?php echo $this->rData['kreditinstitut']; ?></kreditinstitut>
@@ -145,10 +145,10 @@ if ($this->rData['kn1']['anzkredit']['weitere'] > 1) {
                     <art person="1" kredit="<?php echo $i; ?>"><?php echo $this->kreditArten[$this->rData['kn1']['kredit'][$i]['Art']]; ?></art>
                     <rahmen person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Rahmen']; ?></rahmen>
                     <rate person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Rate']; ?></rate>
-                    <restlaufzeit person="1" kredit="<?php echo $i; ?>">
-                        <monat person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Restlaufzeit']['Monat']; ?></monat>
-                        <jahr person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Restlaufzeit']['Jahr']; ?></jahr>
-                    </restlaufzeit>
+                    <restloanPeriod person="1" kredit="<?php echo $i; ?>">
+                        <monat person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['RestloanPeriod']['Monat']; ?></monat>
+                        <jahr person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['RestloanPeriod']['Jahr']; ?></jahr>
+                    </restloanPeriod>
                     <umschuldung person="1" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn1']['kredit'][$i]['Umschuldung'])) ? $this->rData['kn1']['kredit'][$i]['Umschuldung'] : ''); ?></umschuldung>
                     <restschuld person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Restschuld']; ?></restschuld>
                     <blz person="1" kredit="<?php echo $i; ?>"><?php echo $this->rData['kn1']['kredit'][$i]['Blz']; ?></blz>
@@ -312,10 +312,10 @@ if ($this->rData['kn2']['anzkredit']['weitere'] > 1) {
                     <art person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->kreditArten[$this->rData['kn2']['kredit'][$i]['Art']])) ? $this->kreditArten[$this->rData['kn2']['kredit'][$i]['Art']] : ''); ?></art>
                     <rahmen person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Rahmen'])) ? $this->rData['kn2']['kredit'][$i]['Rahmen'] : ''); ?></rahmen>
                     <rate person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Rate'])) ? $this->rData['kn2']['kredit'][$i]['Rate'] : ''); ?></rate>
-                    <restlaufzeit person="2" kredit="<?php echo $i; ?>">
-                        <monat person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Monat'])) ? $this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Monat'] : ''); ?></monat>
-                        <jahr person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Jahr'])) ? $this->rData['kn2']['kredit'][$i]['Restlaufzeit']['Jahr'] : ''); ?></jahr>
-                    </restlaufzeit>
+                    <restloanPeriod person="2" kredit="<?php echo $i; ?>">
+                        <monat person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['RestloanPeriod']['Monat'])) ? $this->rData['kn2']['kredit'][$i]['RestloanPeriod']['Monat'] : ''); ?></monat>
+                        <jahr person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['RestloanPeriod']['Jahr'])) ? $this->rData['kn2']['kredit'][$i]['RestloanPeriod']['Jahr'] : ''); ?></jahr>
+                    </restloanPeriod>
                     <umschuldung person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Umschuldung'])) ? $this->rData['kn2']['kredit'][$i]['Umschuldung'] : ''); ?></umschuldung>
                     <restschuld person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Restschuld'])) ? $this->rData['kn2']['kredit'][$i]['Restschuld'] : ''); ?></restschuld>
                     <blz person="2" kredit="<?php echo $i; ?>"><?php echo ((isset($this->rData['kn2']['kredit'][$i]['Blz'])) ? $this->rData['kn2']['kredit'][$i]['Blz'] : ''); ?></blz>

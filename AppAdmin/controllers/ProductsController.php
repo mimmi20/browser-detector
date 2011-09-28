@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * Controller-Klasse, die das Backend steuert
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
@@ -130,7 +130,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
                 $validApplications[$key]->institut  = '';
             }
 
-            $categoriesModel = new \App\Model\Sparten();
+            $categoriesModel = new \App\Model\Categories();
             $sparte       = $categoriesModel->find($validApplications[$key]->idCategories)
                 ->current();
             $validApplications[$key]->s_active = $sparte->active;
@@ -301,7 +301,7 @@ class KreditAdmin_ProductsController extends KreditCore_Controller_AdminAbstract
 
         //Zinssätze
         $sql = 'SELECT z.* FROM zins AS z WHERE z.idProducts = :id
-                ORDER BY z.start DESC, z.betrag, z.laufzeit';
+                ORDER BY z.start DESC, z.betrag, z.loanPeriod';
 
         $stmt = $this->_db->prepare($sql);
         $stmt->bindParam(':id', $product, \PDO::PARAM_INT);

@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * abstrakte Klasse mit Backend-Funktionen für die Statistik
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
@@ -74,9 +74,9 @@ abstract class KreditAdmin_Class_StatisticsAbstract
      *
      * @return KreditAdmin_Class_Statistics_Filter
      */
-    public function getSparten()
+    public function getCategories()
     {
-        $categories = new \App\Model\Sparten();
+        $categories = new \App\Model\Categories();
         $select  = $categories->select('categories');
 
         if (null !== $select) {
@@ -245,7 +245,7 @@ abstract class KreditAdmin_Class_StatisticsAbstract
      *
      * @return KreditAdmin_Class_StatisticsAbstract
      */
-    protected function concatSparteFilter(Zend_Db_Select $select, $sparte)
+    protected function concatCategoryFilter(Zend_Db_Select $select, $sparte)
     {
         $select->where('`a`.`sparte` = ?', $sparte);
 

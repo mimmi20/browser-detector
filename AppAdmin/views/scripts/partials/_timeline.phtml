@@ -23,12 +23,12 @@ foreach($this->alleLaufzeiten as $lz => $lzName) {
     if ($this->mode == 'html') {
         $requestNav = '&amp;vzweck='.$this->zweck.'&amp;kreditbetrag='.$this->kreditbetrag.'&amp;ccstart=1';
 ?>
-        <li<?php if ($this->laufzeit == $lz) { ?> class="active"<?php } else { ?>><a rel="nofollow" href="<?php echo $this->url; ?>?laufzeit=<?php echo $lz . $requestNav; ?>"<?php } ?>><span style="display:block;" class="separator"><?php echo $lzName; ?></span><?php if($this->laufzeit != $lz): ?></a><?php endif; ?></li>
+        <li<?php if ($this->loanPeriod == $lz) { ?> class="active"<?php } else { ?>><a rel="nofollow" href="<?php echo $this->url; ?>?loanPeriod=<?php echo $lz . $requestNav; ?>"<?php } ?>><span style="display:block;" class="separator"><?php echo $lzName; ?></span><?php if($this->loanPeriod != $lz): ?></a><?php endif; ?></li>
 <?php
     } elseif ($this->mode == 'js') {
         $target  = 'var u=\''.$this->zweck.'\';var t=\''.$lz.'\';var a=\''.$this->kreditbetrag.'\';calc(u, t, a);reform(u, t, a);return false;';
 ?>
-        <li<?php if ($this->laufzeit == $lz) { ?> class="active"<?php } else { if ($i == 0) { ?> id="hover"<?php } ?>><a<?php if ($i == 0) { ?> class="first"<?php } ?> rel="nofollow" href="javascript:void(0);" onclick="<?php echo $target; ?>"<?php } ?>><span class="separator"><?php echo $lzName; ?></span><?php if($this->laufzeit != $lz): ?></a><?php endif; ?></li>
+        <li<?php if ($this->loanPeriod == $lz) { ?> class="active"<?php } else { if ($i == 0) { ?> id="hover"<?php } ?>><a<?php if ($i == 0) { ?> class="first"<?php } ?> rel="nofollow" href="javascript:void(0);" onclick="<?php echo $target; ?>"<?php } ?>><span class="separator"><?php echo $lzName; ?></span><?php if($this->loanPeriod != $lz): ?></a><?php endif; ?></li>
 <?php
     }
     $i++;

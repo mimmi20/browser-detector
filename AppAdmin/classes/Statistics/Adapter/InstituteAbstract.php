@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * Klasse zum Erstellen der Statistik
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Statistics
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @abstract
  */
@@ -40,7 +40,7 @@ abstract class KreditAdmin_Class_Statistics_Adapter_InstituteAbstract
     {
         /*
         if (is_numeric($sparte)) {
-            $categoriesModel = new \App\Model\Sparten();
+            $categoriesModel = new \App\Model\Categories();
             $sparte       = $categoriesModel->getName($sparte);
         }
         /**/

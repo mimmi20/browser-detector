@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * Controller-Klasse für die Statistik
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_StatisticsController
@@ -152,8 +152,8 @@ class KreditAdmin_StatisticsController
         );
         $detailValue = strtolower($this->_getParam('detailValue', 'click'));
 
-        $modelSparte = new \App\Model\Sparten();
-        $s           = $modelSparte->find($sparte);
+        $modelCategory = new \App\Model\Categories();
+        $s           = $modelCategory->find($sparte);
         $sparte      = '';
 
         if (null !== $s) {
@@ -369,7 +369,7 @@ class KreditAdmin_StatisticsController
             strtolower($this->_getParam('sparteValue', 'Kredit'))
         );
         if (is_numeric($sparte)) {
-            $categoriesModel = new \App\Model\Sparten();
+            $categoriesModel = new \App\Model\Categories();
             $sparte       = $categoriesModel->getName($sparte);
         }
 
@@ -386,7 +386,7 @@ class KreditAdmin_StatisticsController
 
         $fields = array(
             'knID', 'portal', 'institut', 'date', 'anrede', 'name', 'adresse',
-            'kontakt', 'telefon', 'mobil', 'kreditbetrag', 'laufzeit', 'sparte',
+            'kontakt', 'telefon', 'mobil', 'kreditbetrag', 'loanPeriod', 'sparte',
             'KundeId', 'idPortalService', 'creditLine', 'mehrAntrag'
         );
 
@@ -435,7 +435,7 @@ class KreditAdmin_StatisticsController
         $this->view->filterDateStart = $filter->getDateStartString();
         $this->view->filterDateEnd   = $filter->getDateEndString();
         $this->view->groupValue      = $filter->getGroupValue();
-        $this->view->categories         = $this->_statisticAppStatus->getSparten();
+        $this->view->categories         = $this->_statisticAppStatus->getCategories();
 
         //Whitelist all Mandants until we should be able to filter by Id's
         $this->_statisticAppStatus->getWhitelist()->addAllMandants();

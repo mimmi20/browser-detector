@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Form
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * Form
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Form
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
@@ -105,11 +105,11 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
 
         $categoriesElement = new KreditCore_Class_Form_Element_Select('sparteValue');
         $categoriesElement
-            ->setLabel('Sparten:')
+            ->setLabel('Categories:')
             ->setAttrib('size', '8')
             ->setValue(1);
 
-        $categoriesModel = new \App\Model\Sparten();
+        $categoriesModel = new \App\Model\Categories();
         $categoriesList  = $categoriesModel->fetchAll();
         foreach ($categoriesList as $sparte) {
             $categoriesElement->addMultiOption($sparte['idCategories'], $sparte['name']);
@@ -193,7 +193,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
         );
         $this->addDisplayGroup(array('portale'), 'gpartner', array('legend' => 'Partner'));
         $this->addDisplayGroup(array('campaigns'), 'gcampaign', array('legend' => 'Kampagne'));
-        $this->addDisplayGroup(array('sparteValue'), 'gcategories', array('legend' => 'Sparte'));
+        $this->addDisplayGroup(array('sparteValue'), 'gcategories', array('legend' => 'Category'));
 
         $this->addElements(
             array(

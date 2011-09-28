@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @version   SVN: $Id$
  */
@@ -14,9 +14,9 @@
 /**
  * Standart-Controller für das Backend
  *
- * @category  Kreditrechner
+ * @category  CreditCalc
  * @package   Controller
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
 class KreditAdmin_IndexController extends KreditCore_Controller_AdminAbstract
@@ -87,8 +87,8 @@ class KreditAdmin_IndexController extends KreditCore_Controller_AdminAbstract
             'eventtype',
             'institute',
             'interfaces_types',
-            'laufzeiten',
-            'laufzeitCategories',
+            'loanPeriods',
+            'loanPeriodCategories',
             'navigation',
             'portale',
             'productComponents',
