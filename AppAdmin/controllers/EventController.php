@@ -80,7 +80,7 @@ class KreditAdmin_EventController extends KreditCore_Controller_AdminAbstract
      */
     private function _getForm()
     {
-        // Liste aller Laufzeiten erstellen
+        // Liste aller LoanPeriodsen erstellen
         $dbEventType = new \App\Model\EventType();
         $events      = array();
         $select      = $dbEventType->select();

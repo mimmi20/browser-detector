@@ -88,7 +88,7 @@ class KreditAdmin_IndexController extends KreditCore_Controller_AdminAbstract
             'institute',
             'interfaces_types',
             'loanPeriods',
-            'loanPeriodCategories',
+            'periodCategories',
             'navigation',
             'portale',
             'productComponents',

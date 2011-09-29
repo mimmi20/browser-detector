@@ -65,7 +65,7 @@
     template.appendTo('#jqAnchorGraphic');
     template.css('display', 'block');
 
-    statistic(template, 'Summary_Exceptions', 'Exceptions', 'Exceptions', 'Laufzeitumgebung', '#,###,###,###.', 'no');
+    statistic(template, 'Summary_Exceptions', 'Exceptions', 'Exceptions', 'LoanPeriodsumgebung', '#,###,###,###.', 'no');
 
     getErrorList('<?php echo $this->basedUrl(array('module' => 'kredit-admin', 'controller' => 'exception', 'action' => 'get-error-list','page' => $this->page), 'default', false); ?>', '<?php echo $this->page; ?>');
 /* ]]> */

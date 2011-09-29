@@ -135,7 +135,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             'clickout,Institute_Click,Anzahl Clickouts' => 'Anzahl',
             'clickout,Institute_Summary,Kreditsumme Clickouts' => 'Kreditsumme',
             'clickout,Institute_SummaryPercent,&empty; Kreditsumme Clickouts' => '&empty; Kreditsumme',
-            'clickout,Institute_TimePercent,&empty; Laufzeit Clickouts' => '&empty; Laufzeit'
+            'clickout,Institute_TimePercent,&empty; LoanPeriods Clickouts' => '&empty; LoanPeriods'
         );
         foreach ($options as $key => $value) {
             $typeClickoutElement->addMultiOption($key, $value);
@@ -149,7 +149,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             'clickoutsale,Institute_Click,Anzahl Clickouts (Internal)' => 'Anzahl',
             'clickoutsale,Institute_Summary,Kreditsumme Clickouts (Internal)' => 'Kreditsumme',
             'clickoutsale,Institute_SummaryPercent,&empty; Kreditsumme Clickouts (Internal)' => '&empty; Kreditsumme',
-            'clickoutsale,Institute_TimePercent,&empty; Laufzeit Clickouts (Internal)' => '&empty; Laufzeit'
+            'clickoutsale,Institute_TimePercent,&empty; LoanPeriods Clickouts (Internal)' => '&empty; LoanPeriods'
         );
         foreach ($options as $key => $value) {
             $typeClickoutSaleElement->addMultiOption($key, $value);
@@ -163,7 +163,7 @@ class KreditAdmin_Form_StatistikFilter extends KreditCore_Class_FormAbstract
             'sale,Institute_Click,Anzahl Sales' => 'Anzahl',
             'sale,Institute_Summary,Kreditsumme Sales' => 'Kreditsumme',
             'sale,Institute_SummaryPercent,&empty; Kreditsumme Sales' => '&empty; Kreditsumme',
-            'sale,Institute_TimePercent,&empty; Laufzeit Sales' => '&empty; Laufzeit'
+            'sale,Institute_TimePercent,&empty; LoanPeriods Sales' => '&empty; LoanPeriods'
         );
         foreach ($options as $key => $value) {
             $typeSaleElement->addMultiOption($key, $value);

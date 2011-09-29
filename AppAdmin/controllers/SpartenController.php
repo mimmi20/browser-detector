@@ -129,14 +129,14 @@ class KreditAdmin_CategoriesController extends KreditCore_Controller_AdminAbstra
      */
     private function _getForm()
     {
-        // Liste aller Laufzeiten erstellen
-        $loanPeriodModel = new \App\Model\Laufzeit();
+        // Liste aller LoanPeriodsen erstellen
+        $loanPeriodModel = new \App\Model\LoanPeriods();
         $select        = $loanPeriodModel->select()->order('value');
-        $oLaufzeiten   = $loanPeriodModel->fetchAll($select);
+        $oLoanPeriodsen   = $loanPeriodModel->fetchAll($select);
         $loanPeriods    = array(0 => 'bitte wählen');
 
-        foreach ($oLaufzeiten as $aktLaufzeit) {
-            $loanPeriods[$aktLaufzeit->loanPeriod_id] = $aktLaufzeit->name;
+        foreach ($oLoanPeriodsen as $aktLoanPeriods) {
+            $loanPeriods[$aktLoanPeriods->idLoanPeriods] = $aktLoanPeriods->name;
         }
 
         // Form laden
@@ -150,8 +150,8 @@ class KreditAdmin_CategoriesController extends KreditCore_Controller_AdminAbstra
         $form   = new Zend_Form($config);
 
         // Kampagnen
-        $defaultLaufzeit = $form->getElement('defaultLaufzeit');
-        $defaultLaufzeit->setMultiOptions($loanPeriods);
+        $defaultLoanPeriods = $form->getElement('defaultLoanPeriods');
+        $defaultLoanPeriods->setMultiOptions($loanPeriods);
 
         return $form;
     }
