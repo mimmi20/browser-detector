@@ -1710,7 +1710,7 @@ class Globals
     }
 
     /**
-     * liefert die beforzugte Laufzeit für eine Category
+     * liefert die beforzugte LoanPeriods für eine Category
      *
      * @param string $sparte der Name der Category
      *
@@ -1718,11 +1718,11 @@ class Globals
      * @access public
      * @static
      */
-    public static function getDefaultLaufzeit($sparte)
+    public static function getDefaultLoanPeriods($sparte)
     {
         $model  = new \App\Model\Categories();
 
-        return $model->getDefaultLaufzeit($sparte);
+        return $model->getDefaultLoanPeriods($sparte);
     }
 
     /**

@@ -24,7 +24,7 @@ namespace AppCore\Controller\Helper;
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  */
-class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
+class LoanPeriods extends \Zend\Controller\Action\Helper\AbstractHelper
 {
     private $_service = null;
     
@@ -32,12 +32,12 @@ class Laufzeit extends \Zend\Controller\Action\Helper\AbstractHelper
      * Class constructor
      *
      * @access public
-     * @return \\AppCore\\Controller\Helper\Laufzeit
+     * @return \\AppCore\\Controller\Helper\LoanPeriods
      */
     public function __construct()
     {
         $this->_logger  = \Zend\Registry::get('log');
-        $this->_service = new \App\Service\Laufzeit();
+        $this->_service = new \App\Service\LoanPeriods();
     }
     
     /**

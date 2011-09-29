@@ -195,7 +195,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
             ->setCaid($caid)
             ->setView($this->getActionController()->view)
             ->setCategory($sparte)
-            ->setLaufzeit($loanPeriod)
+            ->setLoanPeriods($loanPeriod)
             ->setZweck($usage)
             ->setKreditbetrag($loanAmount)
             ->setDetails($details)
