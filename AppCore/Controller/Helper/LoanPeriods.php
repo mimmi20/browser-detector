@@ -45,7 +45,7 @@ class LoanPeriods extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return string
      */
-    public function name($sparte, $loanPeriod = KREDIT_LAUFZEIT_DEFAULT)
+    public function name($sparte, $loanPeriod = KREDIT_LOANPERIOD_DEFAULT)
     {
         return $this->_service->name($sparte, $loanPeriod);
     }
@@ -67,7 +67,7 @@ class LoanPeriods extends \Zend\Controller\Action\Helper\AbstractHelper
      *
      * @return string
      */
-    public function direct($loanPeriod = KREDIT_LAUFZEIT_DEFAULT)
+    public function direct($loanPeriod = KREDIT_LOANPERIOD_DEFAULT)
     {
         return $this->name($loanPeriod);
     }

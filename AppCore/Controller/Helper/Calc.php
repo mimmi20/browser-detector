@@ -72,7 +72,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
         if (!is_string($details) || !in_array($details, $allowedDetails)) {
             $details = 'id';
         }
-        var_dump($_SESSION);
+        
         $noResult = $_SESSION->noResult;
         $caid     = $_SESSION->caid;
         $sparte   = $_SESSION->category;
@@ -136,7 +136,7 @@ class Calc extends \Zend\Controller\Action\Helper\AbstractHelper
                  */
                 $reason = 'usage is not unknown/not supported';
                 $result = array();
-            } elseif (!array_key_exists($loanPeriod, $this->getActionController()->getHelper('loanPeriod')->getList($sparte))) {
+            } elseif (!array_key_exists($loanPeriod, $this->getActionController()->getHelper('loanPeriods')->getList($sparte))) {
                 /*
                  * the requested loan period is not supported
                  * -> the calculation is skipped

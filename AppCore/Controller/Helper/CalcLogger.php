@@ -53,7 +53,7 @@ class CalcLogger extends \Zend\Controller\Action\Helper\AbstractHelper
             $getParamHelper->direct(
                 'kreditbetrag', KREDIT_KREDITBETRAG_DEFAULT, 'Int'
             ),
-            $getParamHelper->direct('loanPeriod', KREDIT_LAUFZEIT_DEFAULT, 'Int'),
+            $getParamHelper->direct('loanPeriod', KREDIT_LOANPERIOD_DEFAULT, 'Int'),
             $getParamHelper->direct(
                 'vzweck', KREDIT_VERWENDUNGSZWECK_SONSTIGES, 'Int'
             ),
