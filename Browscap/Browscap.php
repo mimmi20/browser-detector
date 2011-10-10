@@ -71,7 +71,7 @@ class Browscap
      */
     public function __construct($config = null, $log = null, $cache = null)
     {
-        if (is_object($config) && method_exists($config, 'toArray')) {
+        if ($config instanceof \Zend\Config\Config) {
             $config = $config->toArray();
         } elseif (!is_array($config)) {
             $config = array();
@@ -81,7 +81,7 @@ class Browscap
         
         if ($cache instanceof \Zend\Cache\Frontend\Core) {
             $this->_cache = $cache;
-        } elseif (isset($this->_config['cache'])) {
+        } elseif (!empty($config['cache'])) {
             $cacheConfig = $this->_config['cache'];
             
             $this->_cache = \Zend\Cache\Cache::factory(
@@ -92,6 +92,7 @@ class Browscap
             );
         }
         
+        // default data file
         $file = __DIR__ . '/data/browscap.ini';
         
         if (isset($config['inifile'])) {
@@ -100,7 +101,7 @@ class Browscap
         
         $this->setLocaleFile(realpath($file));
 
-        if ($log instanceof \Zend\Log\Log) {
+        if ($log instanceof \Zend\Log\Logger) {
             $this->_logger = $log;
         }
     }
@@ -117,12 +118,9 @@ class Browscap
     public function getBrowser($sUserAgent = null, $bReturnAsArray = false)
     {
         // Automatically detect the useragent
-        if (null === $sUserAgent) {
-            if (isset($_SERVER['HTTP_USER_AGENT'])) {
-                $sUserAgent = $_SERVER['HTTP_USER_AGENT'];
-            } else {
-                $sUserAgent = '';
-            }
+        if (empty($sUserAgent) || !is_string($sUserAgent)) {
+            $support    = new Support();
+            $sUserAgent = $support->getUserAgent();
         }
 
         $cacheId = 'agent_' . md5(
@@ -150,7 +148,7 @@ class Browscap
                 && is_array($agentsGlobal['patterns'])
             ) {
                 foreach ($agentsGlobal['patterns'] as $key => $pattern) {
-                    if (preg_match($pattern . 'i', $sUserAgent)) {
+                    if (preg_match($pattern, $sUserAgent)) {
                         $browser = array(
                             $sUserAgent, // Original useragent
                             trim(strtolower($pattern), '@'),
@@ -248,7 +246,7 @@ class Browscap
 
         foreach ($this->_userAgents as $sUserAgent) {
             $this->_parseAgents(
-                $browsers, $sUserAgent, /*$aUserAgentKeys,*/ $aPropertiesKeys
+                $browsers, $sUserAgent, $aPropertiesKeys
             );
         }
 

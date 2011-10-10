@@ -28,7 +28,7 @@ class Support
      * The HTTP Headers that Tera-WURFL will look through to find the best User Agent, if one is not specified
      * @var Array
      */
-    private static $_userAgentHeaders = array(
+    private $_userAgentHeaders = array(
         'HTTP_X_DEVICE_USER_AGENT',
         'HTTP_X_ORIGINAL_USER_AGENT',
         'HTTP_X_OPERAMINI_PHONE_UA',
@@ -54,12 +54,16 @@ class Support
     {
         $userAgent = '';
         
-        if (isset($_POST['UA'])) {
+        if (isset($_POST['agent'])) {
+            $userAgent = $this->_cleanParam($_POST['agent']);
+        } elseif (isset($_GET['agent'])) {
+            $userAgent = $this->_cleanParam($_GET['agent']);
+        } elseif (isset($_POST['UA'])) {
             $userAgent = $this->_cleanParam($_POST['UA']);
         } elseif (isset($_GET['UA'])) {
             $userAgent = $this->_cleanParam($_GET['UA']);
         } else {
-            foreach (self::$_userAgentHeaders as $header) {
+            foreach ($this->_userAgentHeaders as $header) {
                 if (array_key_exists($header, $this->_source) 
                     && $this->_source[$header]
                 ) {
@@ -100,39 +104,52 @@ class Support
     
     public static function formatBytes($bytes)
     {
-        $unim = array("B","KB","MB","GB","TB","PB");
-        $c = 0;
-        while ($bytes>=1024) {
+        $unim = array('B', 'KB', 'MB', 'GB', 'TB', 'PB');
+        $c     = 0;
+        
+        while ($bytes >= 1024) {
             $c++;
-            $bytes = $bytes/1024;
+            $bytes = $bytes / 1024;
         }
-        return number_format($bytes,($c ? 2 : 0),".",",")." ".$unim[$c];
+        return number_format($bytes, ($c ? 2 : 0), '.', ',') . ' ' . $unim[$c];
     }
     
-    public static function formatBitrate($bytes,$seconds)
+    public static function formatBitrate($bytes, $seconds)
     {
-        $unim = array("bps","Kbps","Mbps","Gbps","Tbps","Pbps");
+        $unim = array('bps', 'Kbps', 'Mbps', 'Gbps', 'Tbps', 'Pbps');
         $bits = $bytes * 8;
-        $bps = $bits / $seconds;
-        $c = 0;
-        while ($bps>=1000) {
+        $bps  = $bits / $seconds;
+        $c    = 0;
+        
+        while ($bps >= 1000) {
             $c++;
-            $bps = $bps/1000;
+            $bps = $bps / 1000;
         }
-        return number_format($bps,($c ? 2 : 0),".",",")." ".$unim[$c];
+        return number_format($bps, ($c ? 2 : 0), '.', ',') . ' ' . $unim[$c];
     }
     
     public static function showBool($var)
     {
-        if($var === true)return("true");
-        if($var === false)return("false");
-        return($var);
+        if ($var === true) {
+            return('true');
+        }
+        
+        if ($var === false) {
+            return('false');
+        }
+        
+        return $var;
     }
     
     public static function showLogLevel($num)
     {
-        $log_arr = array(1=>"LOG_CRIT",4=>"LOG_ERR",5=>"LOG_WARNING",6=>"LOG_NOTICE");
-        return($log_arr[$num]);
+        $log_arr = array(
+            1 => 'LOG_CRIT',
+            4 => 'LOG_ERR',
+            5 => 'LOG_WARNING',
+            6 => 'LOG_NOTICE'
+        );
+        return $log_arr[$num];
     }
 
     /**

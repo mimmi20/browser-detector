@@ -44,29 +44,67 @@ class UserAgent
      * @var string
      */
     private $_agent = '';
+    
+    /**
+     * the detected browser
+     *
+     * @var StdClass
+     */
+    private $_browser = null;
 
     /**
      * a \Zend\Cache object
      *
-     * @var bool
+     * @var \Zend\Cache
      */
     private $_cache = null;
+    
+    /*
+     * @var \Zend\Log\Logger
+     */
+    private $_logger = null;
+    
+    /**
+     * @var \Zend\Config\Config
+     */
+    private $_config = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
+     *
+     * @throws Exceptions\AgentNotStringException
      */
-    public function __construct($config = null, $cache = null)
+    public function __construct($agent = null, $config = null, $logger = null, $cache = null)
     {
-        if (is_object($config) && method_exists($config, 'toArray')) {
-            $config = $config->toArray();
-        } elseif (!is_array($config)) {
-            $config = array();
+        if (null === $agent) {
+            $support = new Support();
+            $agent   = $support->getUserAgent();
+        }
+        if (!is_string($agent)) {
+            throw new Exceptions\AgentNotStringException(
+                'the user agent must be a string'
+            );
         }
         
+        $this->_agent = $agent;
+        
+        if ($config instanceof \Zend\Config\Config) {
+            $config = $config->toArray();
+        }
+        
+        if (null !== $config && !is_array($config)) {
+            throw new Exceptions\WrongConfigObjectException(
+                'the config must be an array or an instance of \\Zend\\Config\\Config'
+            );
+        }
+        
+        $this->_config = $config;
+        
+        $this->_cache = null;
         if ($cache instanceof \Zend\Cache\Frontend\Core) {
             $this->_cache = $cache;
-        } elseif (isset($config['cache'])) {
+        } elseif (!empty($config['cache']) && is_array($config['cache'])) {
             $cacheConfig = $config['cache'];
             
             $this->_cache = \Zend\Cache\Cache::factory(
@@ -77,17 +115,41 @@ class UserAgent
             );
         }
         
-        $file = __DIR__ . '/data/browscap.ini';
-        
-        if (isset($config['inifile'])) {
-            $file = (string) $config['inifile'];
+        if (null === $this->_cache && null !== $cache) {
+            throw new Exceptions\WrongCacheObjectException(
+                'the cache must be an instance of \\Zend\\Cache\\Frontend\\Core'
+            );
         }
-        
-        $this->setLocaleFile(realpath($file));
 
-        if ($log instanceof \Zend\Log\Log) {
-            $this->_logger = $log;
+        if ($logger instanceof \Zend\Log\Logger) {
+            $this->_logger = $logger;
+        } elseif (null !== $logger) {
+            throw new Exceptions\WrongCacheObjectException(
+                'the logger must be an instance of \\Zend\\Log\\Logger'
+            );
         }
+        
+        $this->_browser = $this->_detect();
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string $sUserAgent   the user agent string
+     * @param bool   $bReturnAsArray whether return an array or an object
+     *
+     * @return stdClas|array the object containing the browsers details.
+     *                       Array if $bReturnAsArray is set to true.
+     */
+    private function _detect($sUserAgent = null, $bReturnAsArray = false)
+    {
+        $browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
+        
+        if (!empty($sUserAgent) && is_string($sUserAgent)) {
+            $this->_agent = $sUserAgent;
+        }
+
+        return $browscap->getBrowser($this->_agent);
     }
 
     /**
@@ -101,208 +163,16 @@ class UserAgent
      */
     public function getBrowser($sUserAgent = null, $bReturnAsArray = false)
     {
-        // Automatically detect the useragent
-        if (null === $sUserAgent) {
-            if (isset($_SERVER['HTTP_USER_AGENT'])) {
-                $sUserAgent = $_SERVER['HTTP_USER_AGENT'];
-            } else {
-                $sUserAgent = '';
-            }
-        }
-
-        $cacheId = 'agent_' . md5(
-            preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent))
-        );
-
-        if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-            || !$array = $this->_cache->load($cacheId)
-        ) {
-            $cacheGlobalId = 'agentsGlobal';
-
-            // Load the cache at the first request
-            if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-                || !$agentsGlobal = $this->_cache->load($cacheGlobalId)
-            ) {
-                $agentsGlobal = $this->_getBrowserFromCache();
-
-                if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                    $this->_cache->save($agentsGlobal, $cacheGlobalId);
-                }
-            }
-
-            $browser = array();
-            if (isset($agentsGlobal['patterns'])
-                && is_array($agentsGlobal['patterns'])
-            ) {
-                foreach ($agentsGlobal['patterns'] as $key => $pattern) {
-                    if (preg_match($pattern . 'i', $sUserAgent)) {
-                        $browser = array(
-                            $sUserAgent, // Original useragent
-                            trim(strtolower($pattern), '@'),
-                            $agentsGlobal['userAgents'][$key]
-                        );
-
-                        $browser = $browser
-                                 + $agentsGlobal['browsers'][$key];
-
-                        break;
-                    }
-                }
-            }
-
-            // Add the keys for each property
-            $array = array();
-            foreach ($browser as $key => $value) {
-                $array[$agentsGlobal['properties'][(int)$key]] = $value;
-            }
-
-            if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                $this->_cache->save($array, $cacheId);
-            }
-        }
-
-        return $bReturnAsArray ? $array : (object) $array;
+        return $this->_detect($sUserAgent, $bReturnAsArray);
     }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @return array
-     */
-    private function _getBrowserFromCache()
+    
+    public function getAgent()
     {
-        try {
-            return $this->_updateCache();
-        } catch (Exception $e) {
-            if ($this->_logger instanceof \Zend\Log\Log) {
-                $this->_logger->err($e);
-            }
-
-            return array();
-        }
+        return $this->_agent;
     }
-
-    /**
-     * sets the name of the local file
-     *
-     * @param string $file the file name
-     *
-     * @return void
-     */
-    public function setLocaleFile($file)
+    
+    public function __toString()
     {
-        $this->_localFile = $file;
-    }
-
-    /**
-     * Parses the ini file and updates the cache files
-     *
-     * @return array
-     */
-    private function _updateCache()
-    {
-        if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
-            $browsers = parse_ini_file($this->_localFile, true, INI_SCANNER_RAW);
-        } else {
-            $browsers = parse_ini_file($this->_localFile, true);
-        }
-
-        array_shift($browsers);
-
-        $this->_properties  = array_keys($browsers['DefaultProperties']);
-        array_unshift(
-            $this->_properties,
-            'browser_name',
-            'browser_name_regex',
-            'browser_name_pattern',
-            'Parent'
-        );
-
-        $this->_userAgents  = array_keys($browsers);
-        usort(
-            $this->_userAgents,
-            function($a, $b) {
-                $a = strlen($a);
-                $b = strlen($b);
-                return ($a == $b ? 0 :($a < $b ? 1 : -1));
-            }
-        );
-
-        //$aUserAgentKeys  = array_flip($this->_userAgents);
-        $aPropertiesKeys = array_flip($this->_properties);
-
-        foreach ($this->_userAgents as $sUserAgent) {
-            $this->_parseAgents(
-                $browsers, $sUserAgent, /*$aUserAgentKeys,*/ $aPropertiesKeys
-            );
-        }
-
-        // Save the keys lowercased if needed
-        if ($this->_lowercase) {
-            $this->_properties = array_map('strtolower', $this->_properties);
-        }
-
-        return array(
-            'browsers'   => $this->_browsers,
-            'userAgents' => $this->_userAgents,
-            'patterns'   => $this->_patterns,
-            'properties' => $this->_properties
-        );
-    }
-
-    /**
-     * Parses the user agents
-     *
-     * @return bool whether the file was correctly written to the disk
-     */
-    private function _parseAgents(
-        $browsers, $sUserAgent, $aPropertiesKeys)
-    {
-        $browser = array();
-
-        $userAgent = $sUserAgent;
-        $parents   = array($userAgent);
-        while (isset($browsers[$userAgent]['Parent'])) {
-            $parents[] = $browsers[$userAgent]['Parent'];
-            $userAgent = $browsers[$userAgent]['Parent'];
-        }
-        unset($userAgent);
-
-        $parents     = array_reverse($parents);
-        $browserData = array();
-
-        foreach ($parents as $parent) {
-            if (isset($browsers[$parent]) && is_array($browsers[$parent])) {
-                $browserData = array_merge($browserData, $browsers[$parent]);
-            }
-        }
-
-        $search  = array('\*', '\?');
-        $replace = array('.*', '.');
-        $pattern = preg_quote($sUserAgent, '@');
-
-        $this->_patterns[] = '@'
-                           . '^'
-                           . str_replace($search, $replace, $pattern)
-                           . '$'
-                           . '@';
-
-        foreach ($browserData as $key => $value) {
-            $key = $aPropertiesKeys[$key];
-
-            switch ($value) {
-                case 'true':
-                    $browser[$key] = true;
-                    break;
-                case 'false':
-                    $browser[$key] = false;
-                    break;
-                default:
-                    $browser[$key] = $value;
-                    break;
-            }
-        }
-
-        $this->_browsers[] = $browser;
+        return $this->getAgent();
     }
 }
