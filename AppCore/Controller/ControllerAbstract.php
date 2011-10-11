@@ -47,7 +47,7 @@ abstract class ControllerAbstract extends \Zend\Rest\Controller
     /**
      * @var string the actual controller
      */
-    protected $_controller ='';
+    protected $_controller = '';
 
     /**
      * @var string the actual action
