@@ -1,0 +1,21 @@
+#!/bin/sh
+
+source=${1}
+destination=${2}
+
+if test -z "$source"
+then
+    echo "patches folder expected"
+    exit 0
+fi
+
+if test -z "$destination"
+then
+    echo "destination folder expected"
+    exit 0
+fi
+
+for patch in `ls ${source}/*.patch`
+do
+    patch -l -f -p0 -d ${destination} -i ${patch}
+done

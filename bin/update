@@ -1,0 +1,71 @@
+#!/bin/sh
+
+release=$1
+
+if test -z "$release"
+then
+    echo "SYNTAX ERROR: release parameter expected"
+    echo "./update [RELEASE]"
+    echo "example: ./update 1.0"
+    exit 0
+fi
+
+path=/var/www/vhosts/kreditcalc.geld.de
+tmp=temp
+svnpath=https://subversion.unister-gmbh.de/kredit.geld.de/tags/release-$release
+
+#create backup
+echo "create Backup"
+tar -czf $path/backup/`date +%Y%m%d%H%M`_kreditcalc_geld_de.tgz $path/{public,application,library}
+
+#delete directories
+echo "loesche Temp-Verzeichnis"
+rm -rf $path/$tmp/*
+
+#delete cache files
+#Ordner loeschen
+echo "loesche Cache"
+rm -rf $path/data/cache/{aidu,browser,date,db,doctrine,filecache,locale,navigation,sitecache,tests}/*
+rm -rf $path/data/log/{error,exception,tests}/*
+rm -rf $path/data/{browser,plugincache}/*
+
+echo "Bitte SVN Benutzernamen eingeben"
+read svnusername
+
+echo "Bitte SVN Password eingeben"
+read -s svnpassword
+
+#svn export
+svn export $svnpath --username $svnusername --password $svnpassword --non-interactive $path/$tmp --force
+
+#sync export
+directories="library application public scripts"
+for directory in $directories
+do
+	rsync -vrpt --delete $path/$tmp/$directory/ $path/$directory/ 
+done
+
+chmod 777 --recursive --silent $path/data
+
+#init
+#$path/scripts/initialize $path
+
+#copy runmode.php
+#cp $path/httpdocs/runmode.stage.php $path/httpdocs/runmode.php
+
+#create php config
+echo "erzeuge PHP-Config"
+php $path/scripts/rewriteIni.php
+
+#minify CSS und JS Files
+echo "minify CSS/JS Files"
+php $path/scripts/compress.php
+
+#put current revision to revisionfile
+svn info $svnpath --username $svnusername --password $svnpassword --non-interactive | grep "^Revision" | awk '{print $2}' > $path/revision
+
+#apply all patches
+#echo $path
+#`dirname $0`/patchall $path/patches $path
+
+date

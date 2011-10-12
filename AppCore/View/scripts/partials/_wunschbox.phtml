@@ -1,30 +1,0 @@
-<?php
-/**
- * View
- *
- * PHP version 5
- *
- * @category  Kreditrechner
- * @package   Views
- * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
- * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id$
- */
-?>
-<div id="wunschbox" class="floatfix">
-    <h2>Unverbindliche Kreditanfrage</h2>
-    <ul>
-        <li>Nettodarlehensbetrag: <strong> <?php echo $this->euroFormat($this->kreditbetrag); ?></strong></li>
-        <li>LoanPeriods: <strong> <?php echo $this->loanPeriodName; ?></strong></li>
-        <li>Verwendungszweck: <strong> <?php echo $this->vzweckLabel; ?></strong></li>
-        <li>Bank: <strong> <?php echo $this->institut; ?></strong></li>
-        <li>Rate: <strong> <?php echo $this->euroFormat($this->rate); ?></strong></li>
-        <li>Zinssatz: <strong> <?php echo $this->prozent; ?></strong></li>
-    </ul>
-<?php
-if (isset($this->boniLevel) && '' != $this->boniLevel):
-?>
-    <div class="annahme<?php if (isset($this->boniLevel) && $this->boniLevel == 'good') { ?> high<?php } else { ?> medium<?php } ?>">&nbsp;</div>
-<?php
-elseif (isset($this->high) && $this->high):?>    <img class="annahme" alt="" src="<?php echo $this->imageUrl; ?>antrag/annahme_h.png" /><?phpendif;?>
-</div>
