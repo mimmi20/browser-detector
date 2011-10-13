@@ -301,6 +301,10 @@ class Browscap
                            . '@';
 
         foreach ($browserData as $key => $value) {
+            if (!isset($aPropertiesKeys[$key])) {
+                continue;
+            }
+            
             $key = $aPropertiesKeys[$key];
 
             switch ($value) {
