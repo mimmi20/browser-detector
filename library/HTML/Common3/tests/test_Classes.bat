@@ -1,1 +1,0 @@
-c:\xampp\php\php.exe -d error_reporting="E_ALL | E_STRICT" c:\xampp\htdocs\classes\classes_test.php > c:\xampp\php\PEAR\tests\test.txt
