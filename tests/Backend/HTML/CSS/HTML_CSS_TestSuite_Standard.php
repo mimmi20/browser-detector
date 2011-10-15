@@ -540,7 +540,7 @@ html { height: 100%; }
     {
         $this->css->setXhtmlCompliance(false);
         // parsing a file contents
-        $fn  = __DIR__ . DIRECTORY_SEPARATOR . 'stylesheet.css';
+        $fn  = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stylesheet.css';
         $e   = $this->css->parseFile($fn);
         $msg = PEAR::isError($e) ? $e->getMessage() : null;
         $this->assertFalse(PEAR::isError($e), $msg);
@@ -626,7 +626,7 @@ p, div#black { color: black; }
 div{ color: green; }
 p { margin-left: 3em; }
 ';
-        $fn       = __DIR__ . DIRECTORY_SEPARATOR . 'stylesheet.css';
+        $fn       = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stylesheet.css';
         $css_data = array($fn, $strcss);
 
         $e   = $this->css->parseData($css_data);
@@ -720,7 +720,7 @@ p, div#black { color: black; }
 div{ color: green; }
 p { margin-left: 3em; }
 ';
-        $fn       = __DIR__ . DIRECTORY_SEPARATOR . 'stylesheet.css';
+        $fn       = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stylesheet.css';
         $css_data = array($fn, $strcss);
         $messages = array();
 
@@ -842,7 +842,7 @@ p { margin-left: 3em; }
         $str      = $this->css->toString();
         $this->assertSame($str, $exp1line, 'online string output does not match');
 
-        $tmpFile = tempnam(__DIR__, 'CSS');
+        $tmpFile = tempnam(dirname(__FILE__), 'CSS');
         // to file, multi lines
         $this->css->oneline
              = false;   // PHP5 signature, see __set() for PHP4
@@ -1152,18 +1152,18 @@ EOD;
     {
         $strcss = <<<EOD
 @media print {
-    body {
-        font-size: 10pt;
-        font-family: times new roman, times, serif;
-    }
+	body {
+		font-size: 10pt;
+		font-family: times new roman, times, serif;
+	}
 
-    #navigation {
-        display: none;
-    }
+	#navigation {
+		display: none;
+	}
 }
 
 p {
-    font-weight: bold;
+	font-weight: bold;
 }
 EOD;
 

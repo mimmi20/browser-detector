@@ -2,7 +2,7 @@
 <phpunit>
     <loggers>
         <file ident="HTML_CSS TestSuite Bugs"
-              name="C:\Programme\Zend\ZendServer\bin\PEAR\tests\HTML_CSS\tests/%I_%Y%M%D.log"
+              name="@test_dir@/HTML_CSS/tests/%I_%Y%M%D.log"
               level="debug">
             <conf>
                 <append>0</append>    

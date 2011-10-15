@@ -20,7 +20,7 @@ if (!defined('PHPUnit_MAIN_METHOD')) {
 require_once 'PHPUnit/Framework/TestSuite.php';
 require_once 'PHPUnit/TextUI/TestRunner.php';
 
-chdir(__DIR__);
+chdir(dirname(__FILE__));
 
 require_once 'HTML_CSS_TestSuite_Standard.php';
 require_once 'HTML_CSS_TestSuite_Output.php';
