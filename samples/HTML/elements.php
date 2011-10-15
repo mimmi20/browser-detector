@@ -7,16 +7,13 @@
 * @author      Adam Daniel <adaniel1@eesus.jnj.com>
 * @author      Bertrand Mansion <bmansion@mamasam.com>
 * @author      Alexey Borzov <avb@php.net>
-* @version     CVS: $Id$
+* @version     CVS: $Id: elements.php 86 2011-10-13 19:17:16Z tmu $
 * @ignore
 */
 
-require_once 'HTML/Common3/Root/Form.php';
+require_once 'HTML/QuickForm.php';
 
-ini_set('display_errors', 1);
-ini_set('error_reporting', E_ALL | E_Strict);
-
-$form = new HTML_Common3_Root_Form('frmTest', 'get');
+$form =& new HTML_QuickForm('frmTest', 'get');
 
 // Use a two-label template for the elements that require some comments
 $twoLabel = <<<_HTML
@@ -31,12 +28,10 @@ $twoLabel = <<<_HTML
 </tr>
 _HTML;
 
-/*
 $renderer =& $form->defaultRenderer();
 $renderer->setElementTemplate($twoLabel, 'iadvChk');
 $renderer->setElementTemplate($twoLabel, 'iautoComp');
-*/
-/*
+
 // Fills with some defaults values
 $form->setDefaults(array(
     'itxtTest'  => 'Test Text Box',
@@ -50,36 +45,34 @@ $form->setDefaults(array(
     'ichkABC'   => array('A'=>true,'B'=>true),
     'dateTest1' => array('d'=>11, 'm'=>1, 'Y'=>2003)
 ));
-*/
-/*
+
 $form->setConstants(array(
     'dateTest3' => time()
 ));
-*/
 
 // Elements will be displayed in the order they are declared
-$form->addElement('header', null, HTML_APPEND);
+$form->addElement('header', '', 'Normal Elements');
 // Classic form elements
-$form->addElement('hidden', null, HTML_APPEND, 'ihidTest');
-$form->addElement('text', null, HTML_APPEND, 'itxtTest');
-$form->addElement('textarea', array('rows' => 3, 'cols' => 20), HTML_APPEND, 'itxaTest');
-$form->addElement('password', null, HTML_APPEND, 'ipwdTest');
-$form->addElement('checkbox', null, HTML_APPEND, 'ichkTest');
-$form->addElement('radio', null, HTML_APPEND, 'iradTest');
-$form->addElement('radio', null, HTML_APPEND, 'iradTest');
-$form->addElement('button', array('onclick' => "alert('This is a test');"), HTML_APPEND, 'ibtnTest');
-$form->addElement('reset', null, HTML_APPEND, 'iresTest');
-$form->addElement('submit', null, HTML_APPEND, 'isubTest');
-$form->addElement('image', null, HTML_APPEND, 'iimgTest');
-$select =& $form->addElement('select', array('A'=>'A', 'B'=>'B','C'=>'C','D'=>'D'), HTML_APPEND, 'iselTest');
-//$select->setSize(5);
-//$select->setMultiple(true);
+$form->addElement('hidden', 'ihidTest', 'hiddenField');
+$form->addElement('text', 'itxtTest', 'Test Text:');
+$form->addElement('textarea', 'itxaTest', 'Test TextArea:', array('rows' => 3, 'cols' => 20));
+$form->addElement('password', 'ipwdTest', 'Test Password:');
+$form->addElement('checkbox', 'ichkTest', 'Test CheckBox:', 'Check the box');
+$form->addElement('radio', 'iradTest', 'Test Radio Buttons:', 'Check the radio button #1', 1);
+$form->addElement('radio', 'iradTest', '(Not a group)', 'Check the radio button #2', 2);
+$form->addElement('button', 'ibtnTest', 'Test Button', array('onclick' => "alert('This is a test');"));
+$form->addElement('reset', 'iresTest', 'Test Reset');
+$form->addElement('submit', 'isubTest', 'Test Submit');
+$form->addElement('image', 'iimgTest', 'http://pear.php.net/gifs/pear-icon.gif');
+$select =& $form->addElement('select', 'iselTest', 'Test Select:', array('A'=>'A', 'B'=>'B','C'=>'C','D'=>'D'));
+$select->setSize(5);
+$select->setMultiple(true);
 
-$form->addElement('header', null, HTML_APPEND);
+$form->addElement('header', '', 'Custom Elements');
 // Date elements
-$form->addElement('date', array('format'=>'dmY', 'minYear'=>2010, 'maxYear'=>2001), HTML_APPEND, 'dateTest1');
-$form->addElement('date', array('format'=>'d-F-Y H:i', 'language'=>'de', 'optionIncrement' => array('i' => 5)), HTML_APPEND, 'dateTest2');
-$form->addElement('date', array('format'=>'l d M Y'), HTML_APPEND, 'dateTest3');
+$form->addElement('date', 'dateTest1', 'Date1:', array('format'=>'dmY', 'minYear'=>2010, 'maxYear'=>2001));
+$form->addElement('date', 'dateTest2', 'Date2:', array('format'=>'d-F-Y H:i', 'language'=>'de', 'optionIncrement' => array('i' => 5)));
+$form->addElement('date', 'dateTest3', 'Today is:', array('format'=>'l d M Y'));
 
 $main[0] = "Pop";
 $main[1] = "Rock";
@@ -97,17 +90,16 @@ $secondary[2][7] = "Beethoven";
 $opts[] = $main;
 $opts[] = $secondary;
 
-$hs =& $form->addElement('hierselect', array('style' => 'width: 20em;'), HTML_APPEND, 'ihsTest');
-//$hs->setOptions($opts);
+$hs =& $form->addElement('hierselect', 'ihsTest', 'Hierarchical select:', array('style' => 'width: 20em;'), '<br />');
+$hs->setOptions($opts);
 
-$form->addElement('advcheckbox', array('off', 'on'), HTML_APPEND, 'iadvChk');
+$form->addElement('advcheckbox', 'iadvChk', array('Advanced checkbox:', 'Unlike standard checkbox, this element <b>has</b> a value<br />when it is not checked.'), 'Check the box', null, array('off', 'on'));
 
-$form->addElement('autocomplete', array('size' => 30), HTML_APPEND, 'iautoComp');
+$form->addElement('autocomplete', 'iautoComp', array('Your favourite fruit:', 'This is autocomplete element.<br />Start typing and see how it suggests possible completions.'), array('Pear', 'Orange', 'Apple'), array('size' => 30));
 
 
-$form->addElement('header', null, HTML_APPEND, '');
+$form->addElement('header', '', 'Grouped Elements');
 // Grouped elements
-/*
 $name['last'] = &HTML_QuickForm::createElement('text', 'last', null, array('size' => 30));
 $name['first'] = &HTML_QuickForm::createElement('text', 'first', null, array('size' => 20));
 $form->addGroup($name, 'name', 'Name (last, first):', ',&nbsp;');
@@ -133,8 +125,8 @@ $buttons[] = &HTML_QuickForm::createElement('reset', null, 'Reset');
 $buttons[] = &HTML_QuickForm::createElement('image', 'iimgTest', 'http://pear.php.net/gifs/pear-icon.gif');
 $buttons[] = &HTML_QuickForm::createElement('button', 'ibutTest', 'Test Button', array('onClick' => "alert('This is a test');"));
 $form->addGroup($buttons, null, null, '&nbsp;', false);
-*/
-/*
+
+
 // applies new filters to the element values
 $form->applyFilter('__ALL__', 'trim');
 // Adds some validation rules
@@ -142,16 +134,15 @@ $form->addRule('itxtTest', 'Test Text is a required field', 'required');
 $form->addRule('itxaTest', 'Test TextArea is a required field', 'required');
 $form->addRule('itxaTest', 'Test TextArea must be at least 5 characters', 'minlength', 5);
 $form->addRule('ipwdTest', 'Password must be between 8 to 10 characters', 'rangelength', array(8, 10));
-*/
+
 // Tries to validate the form
-/*
 if ($form->validate()) {
     // Form is validated, then processes the data
     $form->freeze();
     $form->process('myProcess', false);
     echo "\n<HR>\n";
 }
-*/
+
 // Process callback
 function myProcess($values)
 {

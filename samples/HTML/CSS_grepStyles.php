@@ -11,7 +11,7 @@
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  2006-2008 Laurent Laville
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD
- * @version    CVS: $Id$
+ * @version    CVS: $Id: CSS_grepStyles.php 86 2011-10-13 19:17:16Z tmu $
  * @link       http://pear.php.net/package/HTML_CSS
  * @since      File available since Release 1.1.0
  * @ignore

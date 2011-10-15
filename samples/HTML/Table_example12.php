@@ -4,7 +4,7 @@
 * This example shows how you can set row and col attributes
 * with HTML_Table.
 */
-// $Id$
+// $Id: Table_example12.php 86 2011-10-13 19:17:16Z tmu $
 
 require_once 'HTML/Common3/Root/Table.php';
 

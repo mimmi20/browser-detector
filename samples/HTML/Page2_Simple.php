@@ -16,12 +16,9 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id$
+// $Id: Page2_Simple.php 86 2011-10-13 19:17:16Z tmu $
 
-require_once 'HTML/Common3/Root/Html.php';
-
-ini_set('display_errors', 1);
-ini_set('error_reporting', E_ALL | E_Strict);
+require_once 'HTML/Page2.php';
 
 // With no initial settings, the following defaults are set:
 //    -> lineends = unix (\12)
@@ -30,12 +27,11 @@ ini_set('error_reporting', E_ALL | E_Strict);
 //    -> language = en
 //    -> cache = false
 
-$page = new HTML_Common3_Root_Html(array('doctype'=>'none','tab'=>'  '));
+$page = new HTML_Page2();
+ 
+// Page title defaults to "New XHTML 1.0 Transitional Compliant Page"
 
-// "simple" Page title defaults to "New Page"
-
-$page->addBodyContent("<h1>Headline</h1>");
-$page->addBodyContent("<p>Some text</p>");
-$page->display ();
-
+$page->addBodyContent('<h1>Headline</h1>');
+$page->addBodyContent('<p>Copyright 2003 The PHP Group</p>');
+$page->display();
 ?>

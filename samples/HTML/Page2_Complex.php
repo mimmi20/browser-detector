@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id$
+// $Id: Page2_Complex.php 86 2011-10-13 19:17:16Z tmu $
 
 require_once 'HTML/Page2.php';
 require_once 'HTML/Table.php';

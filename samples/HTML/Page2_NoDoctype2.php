@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id$
+// $Id: Page2_NoDoctype2.php 86 2011-10-13 19:17:16Z tmu $
 
 require_once 'HTML/Common3/Root/Html.php';
 
@@ -30,11 +30,12 @@ ini_set('error_reporting', E_ALL | E_Strict);
 //    -> language = en
 //    -> cache = false
 
-$page = new HTML_Common3_Root_Html();
- 
-// Page title defaults to "New XHTML 1.0 Transitional Compliant Page"
+$page = new HTML_Common3_Root_Html(array('doctype'=>'none','tab'=>'  '));
 
-$page->addBodyContent('<h1>Headline</h1>');
-$page->addBodyContent('<p>Copyright 2003 The PHP Group</p>');
-echo $page;//->display();
+// "simple" Page title defaults to "New Page"
+
+$page->addBodyContent("<h1>Headline</h1>");
+$page->addBodyContent("<p>Some text</p>");
+$page->display ();
+
 ?>
