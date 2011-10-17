@@ -1058,7 +1058,7 @@ implements \HTML\Common3\Face
     {
         $js_escape = array(
             "\r" => '\r',
-            "\n" => '\n',
+            "\n" => "\n",
             "\t" => '\t',
             "'" => "\\'",
             '"' => '\"',

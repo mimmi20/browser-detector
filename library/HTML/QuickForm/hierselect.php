@@ -629,7 +629,7 @@ JAVASCRIPT;
     {
         return strtr($str,array(
             "\r"    => '\r',
-            "\n"    => '\n',
+            "\n"    => "\n",
             "\t"    => '\t',
             "'"     => "\\'",
             '"'     => '\"',

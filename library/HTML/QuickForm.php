@@ -1753,7 +1753,7 @@ class HTML_QuickForm extends HTML_Common
         $test = array();
         $js_escape = array(
             "\r"    => '\r',
-            "\n"    => '\n',
+            "\n"    => "\n",
             "\t"    => '\t',
             "'"     => "\\'",
             '"'     => '\"',

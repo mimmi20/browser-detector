@@ -274,7 +274,7 @@ class HTML_QuickForm2_JavascriptBuilder
         } elseif (is_string($value)) {
             return '"' . strtr($value, array(
                                 "\r" => '\r',
-                                "\n" => '\n',
+                                "\n" => "\n",
                                 "\t" => '\t',
                                 "'"  => "\\'",
                                 '"'  => '\"',

@@ -80,7 +80,7 @@ class HTML_Javascript_Convert
     {
         $js_escape = array(
             "\r"    => '\r',
-            "\n"    => '\n',
+            "\n"    => "\n",
             "\t"    => '\t',
             "'"     => "\\'",
             '"'     => '\"',
