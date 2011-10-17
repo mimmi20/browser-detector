@@ -583,7 +583,7 @@ implements \HTML\Common3\Face
         }
 
         if (isset($allNamespace[$dt][$ve]) 
-            && !$this->getNamespace(false, ''
+            && !$this->getNamespace(false, '')
         ) {
             $this->setNamespace($allNamespace[$dt][$ve], '');
         }
@@ -4667,7 +4667,7 @@ implements \HTML\Common3\Face
 
             $str = \HTML\Entities::encode(
                 $str, HTML_Entities::NAMES, $coding
-            }
+            );
 
             $str = $this->replace($str, 'br');
         } elseif ($what == 'um') {
