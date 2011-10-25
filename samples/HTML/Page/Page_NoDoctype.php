@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id: Page_NoDoctype.php,v 1.4 2003/07/13 00:18:45 thesaur Exp $
+// $Id$
 
 require_once "HTML/Page.php";
 

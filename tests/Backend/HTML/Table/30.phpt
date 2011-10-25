@@ -2,7 +2,7 @@
 30.phpt: colgroup usage with col tags
 --FILE--
 <?php
-// $Id: 30.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 
@@ -37,39 +37,39 @@ echo $table->toHTML();
 ?>
 --EXPECT--
 <table>
-	<colgroup span="3" class="group1">
-		<col style="font-size: 120%;" />
-		<col class="col2" />
-		<col align="right" />
-	</colgroup>
-	<tr>
-		<td>Foo</td>
-		<td>Bar</td>
-		<td>Test</td>
-	</tr>
-	<tr>
-		<td>Foo</td>
-		<td>Bar</td>
-		<td>Test</td>
-	</tr>
-	<tr>
-		<td>Foo</td>
-		<td>Bar</td>
-		<td>Test</td>
-	</tr>
-	<tr>
-		<td>Foo</td>
-		<td>Bar</td>
-		<td>Test</td>
-	</tr>
-	<tr>
-		<td>Foo</td>
-		<td>Bar</td>
-		<td>Test</td>
-	</tr>
-	<tr>
-		<td>Foo</td>
-		<td>Bar</td>
-		<td>Test</td>
-	</tr>
+    <colgroup span="3" class="group1">
+        <col style="font-size: 120%;" />
+        <col class="col2" />
+        <col align="right" />
+    </colgroup>
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Test</td>
+    </tr>
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Test</td>
+    </tr>
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Test</td>
+    </tr>
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Test</td>
+    </tr>
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Test</td>
+    </tr>
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Test</td>
+    </tr>
 </table>

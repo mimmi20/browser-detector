@@ -2,7 +2,7 @@
 24.phpt: thead, tfoot, 2 tbodies (with ids) and addRow
 --FILE--
 <?php
-// $Id: 24.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 
@@ -30,36 +30,36 @@ echo $table->toHTML();
 ?>
 --EXPECT--
 <table>
-	<thead>
-		<tr>
-			<td>Test</td>
-		</tr>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<td>Test</td>
-		</tr>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</tfoot>
-	<tbody id="tbody1">
-		<tr>
-			<td>Test</td>
-		</tr>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</tbody>
-	<tbody id="tbody2">
-		<tr>
-			<td>Test</td>
-		</tr>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </tfoot>
+    <tbody id="tbody1">
+        <tr>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </tbody>
+    <tbody id="tbody2">
+        <tr>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </tbody>
 </table>

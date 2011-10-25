@@ -2,7 +2,7 @@
 /**
  * Usage example for HTML_QuickForm2_Controller: simple
  *
- * @version SVN: $Id: simple.php 295159 2010-02-16 12:44:18Z avb $
+ * @version SVN: $Id$
  * @author  Alexey Borzov <avb@php.net>
  * @author  Bertrand Mansion <php@mamasam.com>
  * @ignore

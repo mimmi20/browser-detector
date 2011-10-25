@@ -2,12 +2,12 @@
 /**
 * Examples of usage for HTML_QuickForm: fancy validation with addFormRule()
 *
-* $Id: formrule.php 236645 2007-05-29 19:12:26Z avb $
+* $Id$
 * 
 * @category    HTML
 * @package     HTML_QuickForm
 * @author      Alexey Borzov <avb@php.net>
-* @version     CVS: $Id: formrule.php 236645 2007-05-29 19:12:26Z avb $
+* @version     CVS: $Id$
 * @ignore
 */
 

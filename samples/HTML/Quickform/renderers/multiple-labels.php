@@ -5,7 +5,7 @@
  * @category    HTML
  * @package     HTML_QuickForm
  * @author      Jon Wood <jon@jellybob.co.uk>
- * @version     CVS: $Id: multiple-labels.php 236645 2007-05-29 19:12:26Z avb $
+ * @version     CVS: $Id$
  * @ignore
  */
 

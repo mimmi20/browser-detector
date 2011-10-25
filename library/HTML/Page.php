@@ -17,7 +17,7 @@
 // |          Klaus Guenther <klaus@capitalfocus.org>                     |
 // +----------------------------------------------------------------------+
 //
-// $Id: Page.php,v 1.29 2003/11/03 07:38:40 thesaur Exp $
+// $Id$
 
 require_once 'PEAR.php';
 require_once 'HTML/Common.php';

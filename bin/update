@@ -42,7 +42,7 @@ svn export $svnpath --username $svnusername --password $svnpassword --non-intera
 directories="library application public scripts"
 for directory in $directories
 do
-	rsync -vrpt --delete $path/$tmp/$directory/ $path/$directory/ 
+    rsync -vrpt --delete $path/$tmp/$directory/ $path/$directory/ 
 done
 
 chmod 777 --recursive --silent $path/data

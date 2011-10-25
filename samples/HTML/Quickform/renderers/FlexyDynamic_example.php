@@ -6,7 +6,7 @@
  * @category    HTML
  * @package     HTML_QuickForm
  * @author      Ron McClain <mixtli@cats.ucsc.edu>
- * @version     CVS: $Id: FlexyDynamic_example.php 236645 2007-05-29 19:12:26Z avb $
+ * @version     CVS: $Id$
  * @ignore
  */
 
@@ -86,9 +86,9 @@ $form->accept($renderer);
 
 $options = &PEAR::getStaticProperty('HTML_Template_Flexy','options');
 $options = array(
-	'templateDir' => './templates',
-	'compileDir' => './templates/build',
-	'debug' => 0
+    'templateDir' => './templates',
+    'compileDir' => './templates/build',
+    'debug' => 0
 );
 $tpl =& new HTML_Template_Flexy($options);
 

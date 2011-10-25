@@ -5,11 +5,11 @@
  * The example uses all Rule classes provided with HTML_QuickForm2 and also
  * showcases rule chaining.
  *
- * $Id: builtin-rules.php 310418 2011-04-21 11:24:16Z avb $
+ * $Id$
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
     <style type="text/css">

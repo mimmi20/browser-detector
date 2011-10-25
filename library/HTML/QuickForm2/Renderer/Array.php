@@ -40,7 +40,7 @@
  * @author     Bertrand Mansion <golgote@mamasam.com>
  * @author     Thomas Schulz <ths@4bconsult.de>
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    SVN: $Id: Array.php 309777 2011-03-28 10:41:11Z avb $
+ * @version    SVN: $Id$
  * @link       http://pear.php.net/package/HTML_QuickForm2
  */
 

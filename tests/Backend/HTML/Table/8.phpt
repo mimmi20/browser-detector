@@ -2,7 +2,7 @@
 8.phpt: testing taboffset
 --FILE--
 <?php
-// $Id: 8.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('', 1);
 
@@ -16,8 +16,8 @@ foreach($data as $key => $value) {
 echo $table->toHTML();
 ?>
 --EXPECT--
-	<table>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</table>
+    <table>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </table>

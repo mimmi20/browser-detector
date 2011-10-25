@@ -7,7 +7,7 @@
 * @author      Adam Daniel <adaniel1@eesus.jnj.com>
 * @author      Bertrand Mansion <bmansion@mamasam.com>
 * @author      Alexey Borzov <avb@php.net>
-* @version     CVS: $Id: ITDynamic_example2.php 236645 2007-05-29 19:12:26Z avb $
+* @version     CVS: $Id$
 * @ignore
 */
 require_once 'HTML/QuickForm.php';

@@ -2,7 +2,7 @@
 13.phpt: 2 row 1 column, setCellContents / getCellContents
 --FILE--
 <?php
-// $Id: 13.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 
@@ -23,10 +23,10 @@ echo $table->toHTML();
 Test
 FOOBAR
 <table>
-	<tr>
-		<td>FOOBAR</td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-	</tr>
+    <tr>
+        <td>FOOBAR</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
 </table>

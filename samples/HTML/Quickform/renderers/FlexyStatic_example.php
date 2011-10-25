@@ -6,7 +6,7 @@
  * @category    HTML
  * @package     HTML_QuickForm
  * @author      Ron McClain <mixtli@cats.ucsc.edu>
- * @version     CVS: $Id: FlexyStatic_example.php 236645 2007-05-29 19:12:26Z avb $
+ * @version     CVS: $Id$
  * @ignore
  */
 
@@ -16,9 +16,9 @@ require_once('HTML/QuickForm/Renderer/ObjectFlexy.php');
 
 function myProcess($values)
 {
-	echo "<pre>";
-	var_dump($values);
-	echo "</pre>";
+    echo "<pre>";
+    var_dump($values);
+    echo "</pre>";
 }
 
 $form = new HTML_QuickForm('form', 'POST');
@@ -120,11 +120,11 @@ if ($form->validate()) {
 // setup a template object
 $options = &PEAR::getStaticProperty('HTML_Template_Flexy','options');
 $options = array(
-	'templateDir' => './templates',
-	'compileDir' => './templates/build',
-	'forceCompile' => 1,
-	'debug' => 0,
-	'local' => 'en'
+    'templateDir' => './templates',
+    'compileDir' => './templates/build',
+    'forceCompile' => 1,
+    'debug' => 0,
+    'local' => 'en'
 );
 
 $template = new HTML_Template_Flexy($options);

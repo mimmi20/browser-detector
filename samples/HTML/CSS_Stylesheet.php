@@ -11,7 +11,7 @@
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  2003-2008 Klaus Guenther, Laurent Laville
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD
- * @version    CVS: $Id: CSS_Stylesheet.php 86 2011-10-13 19:17:16Z tmu $
+ * @version    CVS: $Id$
  * @link       http://pear.php.net/package/HTML_CSS
  * @ignore
  */

@@ -6,7 +6,7 @@
  * @package     HTML_QuickForm
  * @author      Thomas Schulz <ths@4bconsult.de>
  * @author      Alexey Borzov <avb@php.net>
- * @version     CVS: $Id: SmartyDynamic_example.php 236645 2007-05-29 19:12:26Z avb $
+ * @version     CVS: $Id$
  * @ignore
  */
 

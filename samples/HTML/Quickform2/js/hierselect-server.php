@@ -2,7 +2,7 @@
 /**
  * Usage example for HTML_QuickForm2 package: AJAX-backed hierselect element, AJAX server
  *
- * $Id: hierselect-server.php 303930 2010-10-02 06:35:36Z avb $
+ * $Id$
  */
 
 require_once 'HTML/AJAX/Server.php';

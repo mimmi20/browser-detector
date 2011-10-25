@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id: Page2_Simple2.php 86 2011-10-13 19:17:16Z tmu $
+// $Id$
 
 require_once 'HTML/Common3/Root/Html.php';
 

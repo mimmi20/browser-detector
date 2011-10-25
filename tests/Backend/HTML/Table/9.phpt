@@ -2,7 +2,7 @@
 9.phpt: 6 row 3 column, updateAllAttributes
 --FILE--
 <?php
-// $Id: 9.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('width="400"');
 
@@ -42,34 +42,34 @@ echo $table->toHTML();
 ?>
 --EXPECT--
 <table width="400">
-	<tr>
-		<td bgcolor="pink">Foo</td>
-		<td bgcolor="pink" align="right">Bar</td>
-		<td bgcolor="pink" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="pink">Foo</td>
-		<td bgcolor="pink" align="right">Bar</td>
-		<td bgcolor="pink" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="pink">Foo</td>
-		<td bgcolor="pink" align="right">Bar</td>
-		<td bgcolor="pink" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="pink">Foo</td>
-		<td bgcolor="pink" align="right">Bar</td>
-		<td bgcolor="pink" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="pink">Foo</td>
-		<td bgcolor="pink" align="right">Bar</td>
-		<td bgcolor="pink" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="pink">Foo</td>
-		<td bgcolor="pink" align="right">Bar</td>
-		<td bgcolor="pink" align="right">Test</td>
-	</tr>
+    <tr>
+        <td bgcolor="pink">Foo</td>
+        <td bgcolor="pink" align="right">Bar</td>
+        <td bgcolor="pink" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="pink">Foo</td>
+        <td bgcolor="pink" align="right">Bar</td>
+        <td bgcolor="pink" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="pink">Foo</td>
+        <td bgcolor="pink" align="right">Bar</td>
+        <td bgcolor="pink" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="pink">Foo</td>
+        <td bgcolor="pink" align="right">Bar</td>
+        <td bgcolor="pink" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="pink">Foo</td>
+        <td bgcolor="pink" align="right">Bar</td>
+        <td bgcolor="pink" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="pink">Foo</td>
+        <td bgcolor="pink" align="right">Bar</td>
+        <td bgcolor="pink" align="right">Test</td>
+    </tr>
 </table>

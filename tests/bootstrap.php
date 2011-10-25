@@ -9,7 +9,7 @@
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
  * @license   http://www.unister.de     Unister License
- * @version   SVN: $Id: bootstrap.php 157 2011-10-10 04:24:31Z tmu $
+ * @version   SVN: $Id$
  * @link      todo
  */
 

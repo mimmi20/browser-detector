@@ -1152,18 +1152,18 @@ EOD;
     {
         $strcss = <<<EOD
 @media print {
-	body {
-		font-size: 10pt;
-		font-family: times new roman, times, serif;
-	}
+    body {
+        font-size: 10pt;
+        font-family: times new roman, times, serif;
+    }
 
-	#navigation {
-		display: none;
-	}
+    #navigation {
+        display: none;
+    }
 }
 
 p {
-	font-weight: bold;
+    font-weight: bold;
 }
 EOD;
 

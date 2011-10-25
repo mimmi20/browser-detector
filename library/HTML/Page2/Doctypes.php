@@ -16,7 +16,7 @@
 // | Author:  Klaus Guenther <klaus@capitalfocus.org>                     |
 // +----------------------------------------------------------------------+
 //
-// $Id: Doctypes.php 316386 2011-09-07 21:54:41Z kguest $
+// $Id$
 
 /**
  * This file contains an array of doctype declarations.

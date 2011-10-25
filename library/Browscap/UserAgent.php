@@ -25,7 +25,7 @@ namespace Browscap;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: Browscap.php 65 2011-09-28 20:06:46Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**

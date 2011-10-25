@@ -17,7 +17,7 @@
  * @author      Matteo Di Giovinazzo <matteodg@infinito.it>
  * @copyright   2001-2011 The PHP Group
  * @license     http://www.php.net/license/3_01.txt PHP License 3.01
- * @version     CVS: $Id: autocomplete.php 317587 2011-10-01 07:55:53Z avb $
+ * @version     CVS: $Id$
  * @link        http://pear.php.net/package/HTML_QuickForm
  */
 
@@ -153,24 +153,24 @@ function setCaretToPosition(input, position) {
 }
 
 function replaceSelection (input, replaceString) {
-	var len = replaceString.length;
+    var len = replaceString.length;
     if (input.setSelectionRange) {
         var selectionStart = input.selectionStart;
         var selectionEnd = input.selectionEnd;
 
         input.value = input.value.substring(0, selectionStart) + replaceString + input.value.substring(selectionEnd);
-		input.selectionStart  = selectionStart + len;
-		input.selectionEnd  = selectionStart + len;
+        input.selectionStart  = selectionStart + len;
+        input.selectionEnd  = selectionStart + len;
     }
     else if (document.selection) {
         var range = document.selection.createRange();
-		var saved_range = range.duplicate();
+        var saved_range = range.duplicate();
 
         if (range.parentElement() == input) {
             range.text = replaceString;
-			range.moveEnd("character", saved_range.selectionStart + len);
-			range.moveStart("character", saved_range.selectionStart + len);
-			range.select();
+            range.moveEnd("character", saved_range.selectionStart + len);
+            range.moveStart("character", saved_range.selectionStart + len);
+            range.select();
         }
     }
     input.focus();

@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id: Page_Complex.php,v 1.6 2003/11/03 07:36:23 thesaur Exp $
+// $Id$
 
 require_once 'HTML/Page.php';
 require_once 'HTML/Table.php';

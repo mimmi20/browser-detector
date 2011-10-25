@@ -5,7 +5,7 @@
  * all options of 'to' select on form submit. This is necessary since
  * unselected options obviously won't send any values.
  *
- * $Id: dualselect.js 310525 2011-04-26 18:42:03Z avb $
+ * $Id$
  */
 
 qf.elements.dualselect = (function() {

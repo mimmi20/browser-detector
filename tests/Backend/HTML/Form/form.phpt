@@ -11,7 +11,7 @@ error_reporting = 2047
  *
  * @category HTML
  * @package  HTML_Form
- * @version  $Id: form.phpt,v 1.10 2005/03/18 13:37:40 danielc Exp $
+ * @version  $Id$
  */
 
 if (!defined('PATH_SEPARATOR')) {

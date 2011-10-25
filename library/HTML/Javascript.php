@@ -16,7 +16,7 @@
 // | Authors: Tal Peer <tal@php.net>                                      |
 // |          Pierre-Alain Joye <paj@pearfr.org>                          |
 // +----------------------------------------------------------------------+
-// $Id: Javascript.php 193835 2005-08-18 08:55:07Z alan_k $
+// $Id$
 
 /**
  * A class for performing basic JavaScript operations

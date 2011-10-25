@@ -23,7 +23,7 @@
  * @author     Daniel Convissor <danielc@php.net>
  * @copyright  1997-2005 The PHP Group
  * @license    http://www.php.net/license/3_0.txt  PHP License
- * @version    $Id: Form.php,v 1.22 2005/10/16 18:57:35 danielc Exp $
+ * @version    $Id$
  * @link       http://pear.php.net/package/HTML_Form
  */
 

@@ -11,7 +11,7 @@
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  2003-2009 Klaus Guenther, Laurent Laville
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD
- * @version    CVS: $Id: CSS_Inline.php,v 1.12 2009/01/19 23:22:38 farell Exp $
+ * @version    CVS: $Id$
  * @link       http://pear.php.net/package/HTML_CSS
  * @ignore
  */

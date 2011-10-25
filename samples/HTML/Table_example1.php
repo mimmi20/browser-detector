@@ -4,7 +4,7 @@
 * This example shows how you can set row and col attributes
 * with HTML_Table.
 */
-// $Id: Table_example1.php 86 2011-10-13 19:17:16Z tmu $
+// $Id$
 
 require_once 'HTML/Table.php';
 $table =& new HTML_Table('width = "400"');

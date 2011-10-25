@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id: Page2_Complex.php 160728 2004-06-07 17:40:56Z thesaur $
+// $Id$
 
 require_once 'HTML/Page2.php';
 require_once 'HTML/Table.php';

@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id: Page2_Frameset.php 162026 2004-06-24 17:23:08Z thesaur $
+// $Id$
 
 require_once 'HTML/Page2.php';
 

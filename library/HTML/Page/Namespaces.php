@@ -16,7 +16,7 @@
 // | Author:  Klaus Guenther <klaus@capitalfocus.org>                     |
 // +----------------------------------------------------------------------+
 //
-// $Id: Namespaces.php,v 1.2 2003/07/12 23:43:20 thesaur Exp $
+// $Id$
 
 /**
  * This file contains an array of namespace declarations.

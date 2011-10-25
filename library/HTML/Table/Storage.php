@@ -46,7 +46,7 @@
  * @author     Adam Daniel <adaniel1@eesus.jnj.com>
  * @author     Bertrand Mansion <bmansion@mamasam.com>
  * @license    http://www.opensource.org/licenses/bsd-license.php New BSD License
- * @version    CVS: $Id: Storage.php 234674 2007-04-29 16:31:06Z wiesemann $
+ * @version    CVS: $Id$
  * @link       http://pear.php.net/package/HTML_Table
  */
 

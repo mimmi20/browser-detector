@@ -16,7 +16,7 @@
 // | Author:  Klaus Guenther <klaus@capitalfocus.org>                     |
 // +----------------------------------------------------------------------+
 //
-// $Id: Doctypes.php,v 1.5 2003/07/12 06:45:33 thesaur Exp $
+// $Id$
 
 /**
  * This file contains an array of doctype declarations.

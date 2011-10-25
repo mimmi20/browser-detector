@@ -19,7 +19,7 @@ namespace Browscap;
  * @package    Controller
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc.
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Exception.php 64 2011-09-28 20:06:21Z tmu $
+ * @version    $Id$
  */
 
 /**

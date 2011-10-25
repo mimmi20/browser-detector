@@ -9,7 +9,7 @@
  * @package  HTML_Select
  * @author   Adam Daniel <adaniel1@eesus.jnj.com>
  * @license  PHP License http://php.net/license
- * @version  SVN: $Id: Select.php 295058 2010-02-14 14:02:45Z cweiske $
+ * @version  SVN: $Id$
  * @link     http://pear.php.net/package/HTML_Select
  */
 

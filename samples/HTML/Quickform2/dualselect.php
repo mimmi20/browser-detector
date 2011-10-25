@@ -9,7 +9,7 @@
  * It also demonstrates how to plug in element's javascript and how to use
  * client-side validation with custom element.
  *
- * $Id: dualselect.php 310540 2011-04-27 07:28:25Z avb $
+ * $Id$
  */
 
 require_once 'HTML/QuickForm2.php';

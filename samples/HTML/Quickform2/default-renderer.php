@@ -5,11 +5,11 @@
  * The example demonstrates how the default renderer can be used and abused.
  * It also provides a default stylesheet.
  *
- * $Id: default-renderer.php 288534 2009-09-21 15:21:42Z avb $
+ * $Id$
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
     <style type="text/css">

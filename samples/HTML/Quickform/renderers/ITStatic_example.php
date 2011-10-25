@@ -5,11 +5,11 @@
 * @category    HTML
 * @package     HTML_QuickForm
 * @author      Bertrand Mansion <bmansion@mamasam.com>
-* @version     CVS: $Id: ITStatic_example.php 236645 2007-05-29 19:12:26Z avb $
+* @version     CVS: $Id$
 * @ignore
 */
 
-// $Id: ITStatic_example.php 236645 2007-05-29 19:12:26Z avb $
+// $Id$
 
 require_once('HTML/QuickForm.php');
 require_once('HTML/QuickForm/Renderer/ITStatic.php');

@@ -2,7 +2,7 @@
 /**
  * Usage example for HTML_QuickForm2_Controller: wizard
  *
- * @version SVN: $Id: wizard.php 295963 2010-03-08 14:33:43Z avb $
+ * @version SVN: $Id$
  * @author  Alexey Borzov <avb@php.net>
  * @ignore
  */

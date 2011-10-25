@@ -16,7 +16,7 @@
 // | Author: Klaus Guenther <klaus@capitalfocus.org>                      |
 // +----------------------------------------------------------------------+
 //
-// $Id: Frame.php 162026 2004-06-24 17:23:08Z thesaur $
+// $Id$
 
 /**
  * The PEAR::HTML_Page2 package provides a simple interface for generating an XHTML compliant page
@@ -24,7 +24,7 @@
  * @category HTML
  * @package  HTML_Page2
  * @version  0.6.2
- * @version  $Id: Frame.php 162026 2004-06-24 17:23:08Z thesaur $
+ * @version  $Id$
  * @license  http://www.php.net/license/3_0.txt PHP License 3.0
  * @author   Adam Daniel <adaniel1@eesus.jnj.com>
  * @author   Klaus Guenther <klaus@capitalfocus.org>

@@ -2,7 +2,7 @@
 /**
  * Usage example for HTML_QuickForm2 package: AJAX-backed hierselect element, option loader
  *
- * $Id: hierselect-loader.php 303934 2010-10-02 13:05:51Z avb $
+ * $Id$
  */
 
 /**

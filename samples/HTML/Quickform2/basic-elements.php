@@ -2,11 +2,11 @@
 /**
  * Usage example for HTML_QuickForm2 package: basic elements
  *
- * $Id: basic-elements.php 303934 2010-10-02 13:05:51Z avb $
+ * $Id$
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
     <style type="text/css">

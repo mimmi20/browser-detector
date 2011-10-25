@@ -71,7 +71,7 @@ do
         ssh $user@$slave "find $destination/data/cache/$cachedir -type f | xargs rm" | tee -a $log
     done
     
-	echo "--- COMMAND: wget -q --delete-after http://[$slave]/xcache-admin/clear" | tee -a $log
+    echo "--- COMMAND: wget -q --delete-after http://[$slave]/xcache-admin/clear" | tee -a $log
     wget -q --delete-after http://[$slave]/xcache-admin/clear
 done
 

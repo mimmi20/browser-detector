@@ -2,7 +2,7 @@
 15.phpt: 2 row 2 column, setHeaderContents
 --FILE--
 <?php
-// $Id: 15.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('width="400"');
 
@@ -22,12 +22,12 @@ echo $table->toHTML();
 ?>
 --EXPECT--
 <table width="400">
-	<tr>
-		<th bgcolor="blue" align="right">Header</th>
-		<td bgcolor="yellow" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="yellow" align="right">Test</td>
-		<td bgcolor="yellow" align="right">Test</td>
-	</tr>
+    <tr>
+        <th bgcolor="blue" align="right">Header</th>
+        <td bgcolor="yellow" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="yellow" align="right">Test</td>
+        <td bgcolor="yellow" align="right">Test</td>
+    </tr>
 </table>

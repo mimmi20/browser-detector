@@ -56,7 +56,7 @@
  * @author     Adam Daniel <adaniel1@eesus.jnj.com>
  * @author     Bertrand Mansion <bmansion@mamasam.com>
  * @license    http://www.opensource.org/licenses/bsd-license.php New BSD License
- * @version    CVS: $Id: Table.php 297540 2010-04-05 19:58:39Z wiesemann $
+ * @version    CVS: $Id$
  * @link       http://pear.php.net/package/HTML_Table
  */
 

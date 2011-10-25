@@ -11,7 +11,7 @@
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @copyright  2005-2009 Klaus Guenther, Laurent Laville
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD
- * @version    CVS: $Id: css_error_custom.php,v 1.9 2009/01/19 23:22:39 farell Exp $
+ * @version    CVS: $Id$
  * @link       http://pear.php.net/package/HTML_CSS
  * @since      File available since Release 1.0.0RC1
  * @ignore

@@ -2,7 +2,7 @@
 17.phpt: 3 row 2 column, setCaption
 --FILE--
 <?php
-// $Id: 17.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('width="400"');
 
@@ -26,16 +26,16 @@ echo $table->toHTML();
 ?>
 --EXPECT--
 <table width="400">
-	<tr>
-		<th bgcolor="yellow" align="right">Test</th>
-		<td bgcolor="yellow" align="right">Test</td>
-	</tr>
-	<tr>
-		<td bgcolor="yellow" align="right">Test</td>
-		<td bgcolor="yellow" align="right">Test</td>
-	</tr>
-	<tr>
-		<th bgcolor="yellow" align="right">Test</th>
-		<th bgcolor="yellow" align="right">Test</th>
-	</tr>
+    <tr>
+        <th bgcolor="yellow" align="right">Test</th>
+        <td bgcolor="yellow" align="right">Test</td>
+    </tr>
+    <tr>
+        <td bgcolor="yellow" align="right">Test</td>
+        <td bgcolor="yellow" align="right">Test</td>
+    </tr>
+    <tr>
+        <th bgcolor="yellow" align="right">Test</th>
+        <th bgcolor="yellow" align="right">Test</th>
+    </tr>
 </table>

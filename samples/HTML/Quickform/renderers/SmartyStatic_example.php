@@ -6,7 +6,7 @@
  * @package     HTML_QuickForm
  * @author      Bertrand Mansion <bmansion@mamasam.com>
  * @author      Thomas Schulz <ths@4bconsult.de>
- * @version     CVS: $Id: SmartyStatic_example.php 236645 2007-05-29 19:12:26Z avb $
+ * @version     CVS: $Id$
  * @ignore
  */
 

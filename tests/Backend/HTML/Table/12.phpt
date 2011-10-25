@@ -2,7 +2,7 @@
 12.phpt: 2 row 2 column, setAutoGrow / getAutoGrow
 --FILE--
 <?php
-// $Id: 12.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 
@@ -24,12 +24,12 @@ echo $table->toHTML();
 --EXPECT--
 bool(true)
 <table>
-	<tr>
-		<td>Test</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>Test</td>
-	</tr>
+    <tr>
+        <td>Test</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>Test</td>
+    </tr>
 </table>

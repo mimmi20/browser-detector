@@ -9,7 +9,7 @@
  * $ pear install twig/Twig
  * </code>
  *
- * $Id: array-twig.php 317459 2011-09-29 10:44:10Z avb $
+ * $Id$
  */
 
 require_once 'HTML/QuickForm2.php';

@@ -16,7 +16,7 @@
 // | Authors: Tal Peer <tal@php.net>                                      |
 // |          Pierre-Alain Joye <paj@pearfr.org>                          |
 // +----------------------------------------------------------------------+
-// $Id: Convert.php 196165 2005-09-16 02:31:18Z alan_k $
+// $Id$
 /**
  * A class for converting PHP variables into JavaScript variables
  *

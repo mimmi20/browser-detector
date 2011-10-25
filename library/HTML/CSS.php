@@ -38,7 +38,7 @@
  * @author    Laurent Laville <pear@laurent-laville.org>
  * @copyright 2003-2009 Klaus Guenther, Laurent Laville
  * @license   http://www.opensource.org/licenses/bsd-license.php  New BSD License
- * @version   CVS: $Id: CSS.php,v 1.89 2009/07/03 15:52:22 farell Exp $
+ * @version   CVS: $Id$
  * @link      http://pear.php.net/package/HTML_CSS
  * @since     File available since Release 0.2.0
  */

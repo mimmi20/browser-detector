@@ -2,7 +2,7 @@
 23.phpt: thead, tbody and addRow (tfoot not in output)
 --FILE--
 <?php
-// $Id: 23.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 
@@ -22,20 +22,20 @@ echo $table->toHTML();
 ?>
 --EXPECT--
 <table>
-	<thead>
-		<tr>
-			<td>Test</td>
-		</tr>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Test</td>
-		</tr>
-		<tr>
-			<td>Test</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+        </tr>
+    </tbody>
 </table>

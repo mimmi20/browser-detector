@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace Compressor;
+
 /**
  * jsmin.php - PHP implementation of Douglas Crockford's JSMin.
  *

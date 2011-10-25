@@ -4,7 +4,7 @@
  *
  * NB: This usage example requires HTML_AJAX package to work.
  *
- * $Id: hierselect-ajax.php 303930 2010-10-02 06:35:36Z avb $
+ * $Id$
  */
 
 require_once 'HTML/QuickForm2.php';

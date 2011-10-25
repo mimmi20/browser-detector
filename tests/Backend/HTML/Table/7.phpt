@@ -2,7 +2,7 @@
 7.phpt: 3 row 3 column, getCellAttributes / getRowAttributes
 --FILE--
 <?php
-// $Id: 7.phpt 297540 2010-04-05 19:58:39Z wiesemann $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('width="400"');
 
