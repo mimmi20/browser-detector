@@ -73,6 +73,11 @@ class UserAgent
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
      *
+     * @param string                          $agent
+     * @param array|\Zend\Config\Config       $config
+     * @param \Zend\Log\Logger                $logger
+     * @param array|\Zend\Cache\Frontend\Core $cache
+     *
      * @throws Exceptions\AgentNotStringException
      */
     public function __construct($agent = null, $config = null, $logger = null, $cache = null)
@@ -135,8 +140,8 @@ class UserAgent
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $sUserAgent   the user agent string
-     * @param bool   $bReturnAsArray whether return an array or an object
+     * @param string  $sUserAgent     the user agent string
+     * @param boolean $bReturnAsArray whether return an array or an object
      *
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
@@ -155,8 +160,8 @@ class UserAgent
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $sUserAgent   the user agent string
-     * @param bool   $bReturnAsArray whether return an array or an object
+     * @param string  $sUserAgent     the user agent string
+     * @param boolean $bReturnAsArray whether return an array or an object
      *
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
@@ -166,11 +171,21 @@ class UserAgent
         return $this->_detect($sUserAgent, $bReturnAsArray);
     }
     
+    /**
+     * returns the stored user agent
+     *
+     * @return string
+     */
     public function getAgent()
     {
         return $this->_agent;
     }
     
+    /**
+     * returns the stored user agent
+     *
+     * @return string
+     */
     public function __toString()
     {
         return $this->getAgent();

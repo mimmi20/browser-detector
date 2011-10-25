@@ -68,6 +68,10 @@ class Browscap
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
+     *
+     * @param array|\Zend\Config\Config       $config
+     * @param \Zend\Log\Logger                $log
+     * @param array|\Zend\Cache\Frontend\Core $cache
      */
     public function __construct($config = null, $log = null, $cache = null)
     {
