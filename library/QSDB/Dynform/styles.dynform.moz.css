@@ -1,0 +1,60 @@
+/* CSS Document */
+
+
+.dynform {
+	display:table;
+	margin:auto;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+}
+
+.dynform .title {
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+}
+
+.dynform input, .dynform select {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+}
+
+.dynformFieldRow {
+	padding-top:5px;
+	padding-bottom:5px;
+	display:table-row;
+}
+
+.dynformLabel {
+	width:100px;
+	padding-left:10px;
+	display:table-cell;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.dynformInput {
+	width:200px;
+	display:table-cell;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.dynformInput img {
+	vertical-align:middle;
+}
+
+.dynformMessage{
+	padding-left:10px;
+	color:.FF0000;
+	display:table-cell;
+}
+
+.dynformSubmitButton {
+	padding-top:10px;
+	padding-left:110px;
+}
+
+.dynformTextArea { 
+	padding-left:10px;
+}
