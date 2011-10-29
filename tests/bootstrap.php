@@ -27,7 +27,7 @@
 /*
  * Maximize Memory Limit
  */
-ini_set('memory_limit', '3072M');
+// ini_set('memory_limit', '3072M');
 ini_set('display_errors', 1);
 error_reporting(E_COMPILE_ERROR|E_RECOVERABLE_ERROR|E_ERROR|E_CORE_ERROR);
 
@@ -127,11 +127,11 @@ require_once LIB_PATH . DS . 'Zend' . DS . 'Log' . DS . 'Formatter.php';
 require_once LIB_PATH . DS . 'Zend' . DS . 'Log' . DS . 'Formatter' . DS . 'Simple.php';
 //require_once LIB_PATH . DS . 'Zend' . DS . 'Auth' . DS . 'Adapter' . DS . 'AdapterInterface.php';
 
-require_once LIB_PATH . DS . 'AppCore' . DS . 'Controller' . DS . 'ControllerAbstract.php';
+// require_once LIB_PATH . DS . 'AppCore' . DS . 'Controller' . DS . 'ControllerAbstract.php';
 
-require_once LIB_PATH . DS . 'App' . DS . 'Credit' . DS . 'CreditAbstract.php';
-require_once LIB_PATH . DS . 'App' . DS . 'Credit' . DS . 'Input' . DS . 'InputAbstract.php';
-require_once LIB_PATH . DS . 'App' . DS . 'Credit' . DS . 'Output' . DS . 'OutputAbstract.php';
-require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult.php';
-require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult' . DS . 'Ingdiba.php';
-require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult' . DS . 'Cetelem.php';
+// require_once LIB_PATH . DS . 'App' . DS . 'Credit' . DS . 'CreditAbstract.php';
+// require_once LIB_PATH . DS . 'App' . DS . 'Credit' . DS . 'Input' . DS . 'InputAbstract.php';
+// require_once LIB_PATH . DS . 'App' . DS . 'Credit' . DS . 'Output' . DS . 'OutputAbstract.php';
+// require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult.php';
+// require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult' . DS . 'Ingdiba.php';
+// require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult' . DS . 'Cetelem.php';

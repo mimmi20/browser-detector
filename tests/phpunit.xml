@@ -1,6 +1,5 @@
 <!-- <phpunit backupGlobals="true"
          backupStaticAttributes="false"
-         bootstrap="./bootstrap.php"
          cacheTokens="true"
          colors="false"
          convertErrorsToExceptions="true"
@@ -16,7 +15,7 @@
          testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
          strict="false"
          verbose="true"> -->
-<phpunit>
+<phpunit bootstrap="./bootstrap.php">
     <testsuites>
         <testsuite name="TM Core Api">
             <directory>./Backend/</directory>
