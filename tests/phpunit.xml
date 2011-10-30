@@ -24,6 +24,11 @@
     <filter>
         <whitelist>
             <directory suffix=".php">../library</directory>
+            <exclude>
+                <directory>../library/Zend</directory>
+                <directory>../library/Doctrine</directory>
+                <directory suffix=".phtml">../library</directory>
+            </exclude>
         </whitelist>
     </filter>
 </phpunit>
