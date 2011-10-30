@@ -407,7 +407,7 @@ abstract class Unister_Finance_Abstract
         return $rtn;
     }
 
-	protected function ia2xml(array $array, $level = 0)
+    protected function ia2xml(array $array, $level = 0)
     {
         $xml    = "";
         $level2 = $level + 1;
@@ -457,17 +457,17 @@ abstract class Unister_Finance_Abstract
         return $xml;
     }
 
-	/**
-	 * Enter description here...
-	 *
-	 * @param array $data
-	 *
-	 * @return string
-	 * @access public
-	 */
-	public function serializeXml(array $data)
+    /**
+     * Enter description here...
+     *
+     * @param array $data
+     *
+     * @return string
+     * @access public
+     */
+    public function serializeXml(array $data)
     {
-		$xmlString = '<result />';
+        $xmlString = '<result />';
 
         try {
             if (is_array($data)) {
@@ -489,6 +489,6 @@ abstract class Unister_Finance_Abstract
             return "<?xml version='1.0'?><result />";
         }
 
-		return $xml->asXML();
-	}
+        return $xml->asXML();
+    }
 }

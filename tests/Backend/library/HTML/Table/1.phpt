@@ -2,7 +2,7 @@
 1.phpt: addRow 1 row 1 column with no extra options
 --FILE--
 <?php
-// $Id: 1.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

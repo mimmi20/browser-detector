@@ -2,7 +2,7 @@
 25.phpt: tbody, tfoot and addRow (thead not in output)
 --FILE--
 <?php
-// $Id: 25.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

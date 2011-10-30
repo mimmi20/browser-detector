@@ -2,7 +2,7 @@
 20.phpt: addRow with indexed columns (row 0, col 3; row 1, col 2)
 --FILE--
 <?php
-// $Id: 20.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

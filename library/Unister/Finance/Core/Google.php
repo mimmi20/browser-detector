@@ -8,7 +8,7 @@
  * @package   Google
  * @author    Stephan Wiese <info@wwwiese.de> 2005
  * @copyright 2007-2009 Unister GmbH
- * @version   SVN: $Id: Google.php 13 2011-01-06 21:27:04Z tmu $
+ * @version   SVN: $Id$
  */
 require_once LIB_PATH . 'Unister' . DS . 'Finance' . DS . 'Core' . DS . 'Abstract.php';
 /**

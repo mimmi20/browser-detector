@@ -2,7 +2,7 @@
 15.phpt: 2 row 2 column, setHeaderContents
 --FILE--
 <?php
-// $Id: 15.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('width="400"');
 

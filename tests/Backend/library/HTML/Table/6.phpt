@@ -2,7 +2,7 @@
 6.phpt: 6 row 3 column, setColAttributes / updateColAttributes (switching colors on each row)
 --FILE--
 <?php
-// $Id: 6.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table('width="400"');
 

@@ -2,7 +2,7 @@
 28.phpt: thead, tfoot, tbody with array functionality of setCellContents()
 --FILE--
 <?php
-// $Id: 28.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table(null, null, false);
 

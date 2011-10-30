@@ -40,17 +40,17 @@ function dataGrid(jsClass,requestFile)
   this.m_jsClass = jsClass; //load the name of the dataGrid class instance here
   
   //current 'in edit' variables
-	this.m_rowid = ""; //current edit cell rowid 
-	this.m_colid = ""; //current edit cell colid
-	this.m_editid = ""; //current edit cell htmlid (or blank if none)
-	this.m_oldval = ""; //saved old value for current edit cell
+    this.m_rowid = ""; //current edit cell rowid 
+    this.m_colid = ""; //current edit cell colid
+    this.m_editid = ""; //current edit cell htmlid (or blank if none)
+    this.m_oldval = ""; //saved old value for current edit cell
   
   this.m_move_ajax = "ok"; //sack used for row position moves and sorting
   this.m_move_pos = 1;
   this.m_move_sortcol = "";
   this.m_move_sortdesc=false;
   
-	this.m_ajax = new Array(); //sacks used for cell updates
+    this.m_ajax = new Array(); //sacks used for cell updates
   this.m_busyArr = new Array(); //the html ids of the busy elements
   this.m_busyCnt = 0; //number of busy elements
   
@@ -127,7 +127,7 @@ function dg_checkChange(me, rowid, colid, htmlid)
     return;
   }
                           
-  var index = me.m_ajax.length;  	
+  var index = me.m_ajax.length;      
   var a = new sack();
   me.m_ajax[index]=a;
   a.requestFile = me.m_requestFile;
@@ -150,13 +150,13 @@ function dg_checkChange(me, rowid, colid, htmlid)
 function dg_checkChangeSaved(me,index)
 {
   var a = me.m_ajax[index];
-	if(a.response != "") 
+    if(a.response != "") 
   {
-		me.msgUpdateFailed(a);
+        me.msgUpdateFailed(a);
     defaultStatus = "";
-		var elem = document.getElementById(a.edit_htmlid);
+        var elem = document.getElementById(a.edit_htmlid);
     elem.checked = a.edit_oldval; 
-	}
+    }
   me.busyRemove(a.edit_htmlid);
   me.m_ajax[index]="";
 }
@@ -211,20 +211,20 @@ function dg_editCell(me, rowid, colid, htmlid)
     //SELECT Columns        
     //======================================================================
     case 'select':
-		  editContent = "<select " + onblur + ">";
+          editContent = "<select " + onblur + ">";
       if(coldef.selectvalues!=undefined) for(opt in coldef.selectvalues)
       {
         editContent += '<option value="' + dg_esc(coldef.selectvalues[opt]) + '"';
         if(dg_esc(coldef.selectvalues[opt]) == dg_esc(me.m_oldval)) editContent += " selected"
         editContent += ">" + coldef.selectvalues[opt] + "</option>";
       }  
-      editContent += "</select>";		
-		  cell.innerHTML = editContent;
+      editContent += "</select>";        
+          cell.innerHTML = editContent;
 /*      
       selObj = document.getElementById('editCell');
-		  if (selObj.options!=null) 
+          if (selObj.options!=null) 
       {
-		    for(i=0; i<selObj.options.length; i++) 
+            for(i=0; i<selObj.options.length; i++) 
         {
           //alert(selObj.options[i].text);
           if(dg_esc(selObj.options[i].text) == me.m_oldval) 
@@ -242,22 +242,22 @@ function dg_editCell(me, rowid, colid, htmlid)
     //======================================================================
     case 'selectkey':
       me.m_oldKey = document.getElementById(htmlid+'.h').value;
-		  editContent = "<select " + onblur2 + ">";
+          editContent = "<select " + onblur2 + ">";
       if(coldef.selectvalues!=undefined) for(opt in coldef.selectvalues)
       {
         editContent += "<option value='" + opt + "'";
         if(opt == me.m_oldKey) editContent += " selected"
         editContent += ">" + coldef.selectvalues[opt] + "</option>";
       }  
-      editContent += "</select>";		
-		  cell.innerHTML = editContent;
+      editContent += "</select>";        
+          cell.innerHTML = editContent;
       break;
             
     //======================================================================
     //TEXTAREA Columns        
     //======================================================================
     case 'textarea':        
-		  editContent = "<textarea " + onblur + " style='" + coldef["style"] +"'>" + dg_esc(me.m_oldval) + "</textarea>";
+          editContent = "<textarea " + onblur + " style='" + coldef["style"] +"'>" + dg_esc(me.m_oldval) + "</textarea>";
       cell.innerHTML = editContent;
       break;
 
@@ -265,8 +265,8 @@ function dg_editCell(me, rowid, colid, htmlid)
     //TEXT Columns   
     //======================================================================
     case 'text':    
-		  editContent = "<input " + onblur + " type='text' size='15' value='" + dg_esc(me.m_oldval) + "'>";
-		  cell.innerHTML = editContent;
+          editContent = "<input " + onblur + " type='text' size='15' value='" + dg_esc(me.m_oldval) + "'>";
+          cell.innerHTML = editContent;
       break;
 
     //======================================================================
@@ -277,7 +277,7 @@ function dg_editCell(me, rowid, colid, htmlid)
       //defaultStatus = "read only";
       return;
     }//switch
-	document.getElementById('editCell').focus();
+    document.getElementById('editCell').focus();
   }
 }
 
@@ -285,7 +285,7 @@ function dg_editCell(me, rowid, colid, htmlid)
 function dg_onBlur(me,n) 
 {
   var newval = n.value;
-		
+        
   //alert(newval + "\n" + me.m_oldval);
   //defaultStatus = "Saving Change: new=" + newval + " col=" + me.m_colid + " row=" + me.m_rowid;
   
@@ -296,26 +296,26 @@ function dg_onBlur(me,n)
   } 
   else
   { 
-	  me.busyAdd(me.m_editid);
+      me.busyAdd(me.m_editid);
     document.getElementById(me.m_editid).innerHTML = dg_esc(newval);
-  	
-    var index = me.m_ajax.length;  	
-  	var a = new sack();
+      
+    var index = me.m_ajax.length;      
+      var a = new sack();
     me.m_ajax[index]=a;
-  	a.requestFile = me.m_requestFile;
-  	
+      a.requestFile = me.m_requestFile;
+      
     a.setVar("ajax", "updcell");
     a.setVar("tbl", me.m_jsClass);
-  	a.setVar("rowid", me.m_rowid);
-  	a.setVar("colid", me.m_colid);
-  	a.setVar("new", newval);
-  	a.setVar("old", me.m_oldval);
+      a.setVar("rowid", me.m_rowid);
+      a.setVar("colid", me.m_colid);
+      a.setVar("new", newval);
+      a.setVar("old", me.m_oldval);
         
-  	a.edit_htmlid = me.m_editid;
+      a.edit_htmlid = me.m_editid;
     a.edit_oldval = me.m_oldval;
-  	
-  	a.onCompletion = function(){ dg_onSaved(me,index); };
-  	a.runAJAX();
+      
+      a.onCompletion = function(){ dg_onSaved(me,index); };
+      a.runAJAX();
   }
   me.m_oldval = "";
   me.m_editid = "";
@@ -327,18 +327,18 @@ function dg_onBlur(me,n)
 //event handler ajax response on edit box save  
 function dg_onSaved(me,index) 
 {
-  var a = me.m_ajax[index];				
+  var a = me.m_ajax[index];                
   var htmlid = a.edit_htmlid; 
   if (htmlid != "") 
   {
-	  if (a.response != "") 
+      if (a.response != "") 
     {
-		  me.msgUpdateFailed(a);
-		  //document.getElementById(htmlid).innerHTML = a.getVar("old"); //does not work because "old" is escaped...
-		  document.getElementById(htmlid).innerHTML = a.edit_oldval;
-	  }
+          me.msgUpdateFailed(a);
+          //document.getElementById(htmlid).innerHTML = a.getVar("old"); //does not work because "old" is escaped...
+          document.getElementById(htmlid).innerHTML = a.edit_oldval;
+      }
     me.busyRemove(a.edit_htmlid);
-	  me.m_ajax[index] = "";
+      me.m_ajax[index] = "";
   }
 }
 
@@ -348,7 +348,7 @@ function dg_onSaved(me,index)
 function dg_onSelectkeyBlur(me,n) 
 {
   var newkey = n.value;
-		
+        
   //alert("dg_saveCellKey newkey=" + newkey + " oldkey=" + me.m_oldKey);
 
   if (newkey == me.m_oldKey) 
@@ -358,26 +358,26 @@ function dg_onSelectkeyBlur(me,n)
   } 
   else
   { 
-	  me.busyAdd(me.m_editid);
+      me.busyAdd(me.m_editid);
     document.getElementById(me.m_editid).innerHTML = '<input type="hidden" id="' + me.m_editid + '.h" value="' + dg_esc(newkey) + '">' + dg_esc(me.m_columns[me.m_colid].selectvalues[newkey]);
-  	
-    var index = me.m_ajax.length;  	
-  	var a = new sack();
+      
+    var index = me.m_ajax.length;      
+      var a = new sack();
     me.m_ajax[index]=a;
-  	a.requestFile = me.m_requestFile;
-  	
+      a.requestFile = me.m_requestFile;
+      
     a.setVar("ajax", "updcell");
     a.setVar("tbl", me.m_jsClass);
-  	a.setVar("rowid", me.m_rowid);
-  	a.setVar("colid", me.m_colid);
-  	a.setVar("new", newkey);
-  	a.setVar("old", me.m_oldKey);
+      a.setVar("rowid", me.m_rowid);
+      a.setVar("colid", me.m_colid);
+      a.setVar("new", newkey);
+      a.setVar("old", me.m_oldKey);
         
-  	a.edit_htmlid = me.m_editid;
+      a.edit_htmlid = me.m_editid;
     a.edit_oldval = me.m_oldval;
-  	
-  	a.onCompletion = function(){ dg_onSaved(me,index); };
-  	a.runAJAX();
+      
+      a.onCompletion = function(){ dg_onSaved(me,index); };
+      a.runAJAX();
     me.m_ajax[index]=a;
   }
   me.m_oldKey = "";
@@ -418,13 +418,13 @@ function dg_navigate(me,pos,sortcol)
   var a = new sack();
   me.m_move_ajax=a;
   a.requestFile = me.m_requestFile;
-  	
+      
   a.setVar("ajax", "nav");
   a.setVar("tbl", me.m_jsClass);
   a.setVar("pos", pos);
   a.setVar("sortcol", sortcol);
   a.setVar("sortdesc", (me.m_move_sortdesc?1:0));
-  	
+      
   a.onCompletion = function(){ dg_navigate2(me); };
   a.runAJAX();
 }
@@ -439,7 +439,7 @@ function dg_navigate2(me)
   var data = me.m_move_ajax.response;
   
   //update table data
-	//CHANGE THM: replace '.' with '-'
+    //CHANGE THM: replace '.' with '-'
   if(data != "") document.getElementById(me.m_jsClass + "-span").innerHTML = data;
   
   //make move available again

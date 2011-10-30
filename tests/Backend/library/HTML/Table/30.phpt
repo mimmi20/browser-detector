@@ -2,7 +2,7 @@
 30.phpt: colgroup usage with col tags
 --FILE--
 <?php
-// $Id: 30.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

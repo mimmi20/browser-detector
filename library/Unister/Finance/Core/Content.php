@@ -9,7 +9,7 @@
  * @author    Marko Schreiber <marko.schreiber@unister-gmbh.de>
  * @author    Thomas Mueller <thomas.mueller@unister-gmbh.de>
  * @copyright 2007-2009 Unister GmbH
- * @version   SVN: $Id: Content.php 13 2011-01-06 21:27:04Z tmu $
+ * @version   SVN: $Id$
  */
 require_once LIB_PATH . 'Unister' . DS . 'Finance' . DS . 'Core' . DS . 'Abstract.php';
 /**

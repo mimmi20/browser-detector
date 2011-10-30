@@ -2,7 +2,7 @@
 29.phpt: colgroup usage with multiple colgroups
 --FILE--
 <?php
-// $Id: 31.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

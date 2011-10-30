@@ -3,7 +3,7 @@
 class Unister_View_Helper_Navigation_Menu
     extends Zend_View_Helper_Navigation_Menu
 {
-	/**
+    /**
      * Returns an HTML string containing an 'a' element for the given page if
      * the page's href is not empty, and a 'span' element if it is empty
      *

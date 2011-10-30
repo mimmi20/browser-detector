@@ -2,7 +2,7 @@
 24.phpt: thead, tfoot, 2 tbodies (with ids) and addRow
 --FILE--
 <?php
-// $Id: 24.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

@@ -2,7 +2,7 @@
 13.phpt: 2 row 1 column, setCellContents / getCellContents
 --FILE--
 <?php
-// $Id: 13.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

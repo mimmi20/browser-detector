@@ -2,7 +2,7 @@
 22.phpt: thead, tfoot, tbody and addCol
 --FILE--
 <?php
-// $Id: 22.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 

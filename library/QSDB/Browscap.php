@@ -23,7 +23,7 @@
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
  * @license   http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License
- * @version   SVN: $Id: Browscap.php 13 2011-01-06 21:27:04Z tmu $
+ * @version   SVN: $Id$
  * @link      http://garetjax.info/projects/browscap/
  */
 

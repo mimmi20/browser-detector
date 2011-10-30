@@ -8,7 +8,7 @@
  * @package  HTML_CSS
  * @author   Laurent Laville <pear@laurent-laville.org>
  * @license  http://www.opensource.org/licenses/bsd-license.php BSD
- * @version  CVS: $Id: HTML_CSS_TestSuite_Output.php 102 2011-10-25 21:18:56Z  $
+ * @version  CVS: $Id$
  * @link     http://pear.php.net/package/HTML_CSS
  * @since    File available since Release 1.5.2
  */

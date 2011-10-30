@@ -2,7 +2,7 @@
 18.phpt: addCol 1 cell 2 column with no extra options
 --FILE--
 <?php
-// $Id: 18.phpt 102 2011-10-25 21:18:56Z  $
+// $Id$
 require_once 'HTML/Table.php';
 $table = new HTML_Table();
 
