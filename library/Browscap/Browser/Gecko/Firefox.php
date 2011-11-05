@@ -19,6 +19,7 @@ namespace Browscap\Browser\Gecko;
  * @version    $id$
  */
 
+use 
 /**
  * FirefoxUserAgentHanlder
  *
@@ -29,7 +30,7 @@ namespace Browscap\Browser\Gecko;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_FirefoxHandler extends WURFL_Handlers_Handler
+class Firefox
 {
     protected $prefix = 'FIREFOX';
     

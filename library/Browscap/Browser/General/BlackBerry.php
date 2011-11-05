@@ -31,7 +31,7 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
-class WURFL_Handlers_BlackBerryHandler extends WURFL_Handlers_Handler
+class BlackBerry extends WURFL_Handlers_Handler
 {
     public function __construct($wurflContext, $userAgentNormalizer = null)
     {

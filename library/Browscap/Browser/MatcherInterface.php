@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\General;
+namespace Browscap\Browser;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -30,7 +30,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-interface WURFL_Handlers_Matcher
+interface MatcherInterface
 {
     
     /**

@@ -200,7 +200,7 @@ class HTML_QuickForm2_Renderer_ArrayTest extends PHPUnit_Framework_TestCase
                         ->setOption('static_labels', false);
 
         $array = $element->render($renderer)->toArray();
-        $this->assertType('array', $array['label']);
+        $this->assertInternalType('array', $array['label']);
 
         $array = $element->render(
                     $renderer->setOption('static_labels', true)->reset()

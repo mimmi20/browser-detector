@@ -30,7 +30,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_AppleHandler extends WURFL_Handlers_Handler
+class Apple
 {
     protected $prefix = 'APPLE';
     

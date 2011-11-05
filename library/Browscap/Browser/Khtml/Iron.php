@@ -29,7 +29,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_IronHandler extends WURFL_Handlers_Handler
+class Iron
 {
     protected $prefix = 'IRON';
     

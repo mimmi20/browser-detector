@@ -30,7 +30,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_AndroidHandler extends WURFL_Handlers_Handler
+class Android
 {
     protected $prefix = 'ANDROID';
     

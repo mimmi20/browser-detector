@@ -135,3 +135,5 @@ require_once LIB_PATH . DS . 'Zend' . DS . 'Log' . DS . 'Formatter' . DS . 'Simp
 // require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult.php';
 // require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult' . DS . 'Ingdiba.php';
 // require_once LIB_PATH . DS . 'App' . DS . 'Model' . DS . 'CalcResult' . DS . 'Cetelem.php';
+
+require_once LIB_PATH . DS . 'AppAdmin' . DS . 'Statistics' . DS . 'Adapter' . DS . 'AgentAbstract.php';

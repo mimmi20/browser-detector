@@ -30,7 +30,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_NokiaHandler extends WURFL_Handlers_Handler
+class Nokia
 {
     protected $prefix = 'NOKIA';
     

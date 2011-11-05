@@ -30,7 +30,7 @@ namespace Browscap\Browser\Trident;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_WindowsCEHandler extends WURFL_Handlers_Handler
+class WindowsCe
 {
     protected $prefix = 'WINDOWS_CE';
     const TOLLERANCE = 3;

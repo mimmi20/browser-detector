@@ -168,7 +168,7 @@ class HTML_QuickForm2_Element_SelectTest extends PHPUnit_Framework_TestCase
     {
         $sel = new HTML_QuickForm2_Element_Select();
         $optgroup = $sel->addOptgroup('Label');
-        $this->assertType('HTML_QuickForm2_Element_Select_Optgroup', $optgroup);
+        $this->assertInstanceOf('HTML_QuickForm2_Element_Select_Optgroup', $optgroup);
         $this->assertRegExp(
             '!^<select[^>]*>\\s*<optgroup[^>]+label="Label"[^>]*>\\s*</optgroup>\\s*</select>!',
             $sel->__toString()

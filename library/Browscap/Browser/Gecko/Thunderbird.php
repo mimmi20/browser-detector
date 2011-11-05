@@ -29,7 +29,7 @@ namespace Browscap\Browser\Gecko;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_ThunderbirdHandler extends WURFL_Handlers_Handler
+class Thunderbird
 {
     protected $prefix = 'THUNDERBIRD';
     

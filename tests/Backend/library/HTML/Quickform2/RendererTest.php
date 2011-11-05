@@ -119,7 +119,7 @@ class HTML_QuickForm2_RendererTest extends PHPUnit_Framework_TestCase
         HTML_Quickform2_Renderer::register($type, 'HTML_QuickForm2_FakeRenderer');
 
         $renderer = HTML_Quickform2_Renderer::factory($type);
-        $this->assertType('HTML_QuickForm2_Renderer', $renderer);
+        $this->assertInstanceOf('HTML_QuickForm2_Renderer', $renderer);
     }
 
     public function testRegisterOnlyOnce()

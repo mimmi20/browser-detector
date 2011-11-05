@@ -48,7 +48,7 @@
 require_once 'HTML/QuickForm2.php';
 
 /** Helper for PHPUnit includes */
-require_once dirname(__FILE__) . '/TestHelper.php';
+require_once dirname(dirname(__FILE__)) . '/TestHelper.php';
 
 /**
  * Unit test for HTML_QuickForm2 class

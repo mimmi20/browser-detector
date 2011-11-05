@@ -30,7 +30,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_SagemHandler extends WURFL_Handlers_Handler
+class Sagem
 {
     public function __construct($wurflContext, $userAgentNormalizer = null)
     {

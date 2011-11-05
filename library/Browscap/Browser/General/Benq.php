@@ -30,7 +30,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_BenQHandler extends WURFL_Handlers_Handler
+class Benq extends WURFL_Handlers_Handler
 {
     public function __construct($wurflContext, $userAgentNormalizer = null)
     {

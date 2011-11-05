@@ -29,7 +29,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_RockmeltHandler extends WURFL_Handlers_Handler
+class Rockmelt
 {
     protected $prefix = 'ROCKMELT';
     

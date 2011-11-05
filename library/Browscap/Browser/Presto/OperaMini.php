@@ -29,8 +29,8 @@ namespace Browscap\Browser\Presto;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_OperaMiniHandler extends WURFL_Handlers_Handler {
-
+class OperaMini
+{
     protected $prefix = 'OPERA_MINI';
 
     public function __construct($wurflContext, $userAgentNormalizer = null)

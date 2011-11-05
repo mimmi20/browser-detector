@@ -29,7 +29,7 @@ namespace Browscap\Browser\Presto;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_OperaHandler extends WURFL_Handlers_Handler
+class Opera
 {
     protected $prefix = 'OPERA';
     

@@ -29,7 +29,7 @@ namespace Browscap\Browser\Trident;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_MSIEHandler extends WURFL_Handlers_Handler
+class Msie
 {
     protected $prefix = 'MSIE';
     

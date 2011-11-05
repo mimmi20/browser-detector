@@ -161,7 +161,7 @@ class HTML_Common2_Test extends PHPUnit_Framework_TestCase
         $obj->setAttribute('baz', 2.5);
         $obj->mergeAttributes(array('foobar' => 42));
         foreach ($obj->getAttributes() as $attribute) {
-            $this->assertType('string', $attribute);
+            $this->assertInternalType('string', $attribute);
         }
     }
 

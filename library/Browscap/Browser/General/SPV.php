@@ -29,7 +29,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_SPVHandler extends WURFL_Handlers_Handler
+class SPV
 {
     protected $prefix = 'SPV';
     

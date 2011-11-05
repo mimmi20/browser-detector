@@ -29,7 +29,7 @@ namespace Browscap\Browser\Gecko;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_KonquerorHandler extends WURFL_Handlers_Handler
+class Konqueror
 {
     protected $prefix = 'KONQUEROR';
     

@@ -30,7 +30,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_GrundigHandler extends WURFL_Handlers_Handler
+class Grundig
 {
     public function __construct($wurflContext, $userAgentNormalizer = null)
     {

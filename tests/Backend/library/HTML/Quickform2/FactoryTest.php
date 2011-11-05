@@ -156,7 +156,7 @@ class HTML_QuickForm2_FactoryTest extends PHPUnit_Framework_TestCase
         HTML_QuickForm2_Factory::registerElement('fakeelement', 'FakeElement', dirname(__FILE__) . '/_files/FakeElement.php');
         $el = HTML_QuickForm2_Factory::createElement('fakeelement',
                 'fake', 'attributes', array('options' => '', 'label' => 'fake label'));
-        $this->assertType('FakeElement', $el);
+        $this->assertInstanceOf('FakeElement', $el);
         $this->assertEquals('fake', $el->name);
         $this->assertEquals(array('options' => '', 'label' => 'fake label'), $el->data);
         $this->assertEquals('attributes', $el->attributes);
@@ -258,7 +258,7 @@ class HTML_QuickForm2_FactoryTest extends PHPUnit_Framework_TestCase
         $rule = HTML_QuickForm2_Factory::createRule(
             'fakerule', $mockNode, 'An error message', 'Some options'
         );
-        $this->assertType('FakeRule', $rule);
+        $this->assertInstanceOf('FakeRule', $rule);
         $this->assertSame($mockNode, $rule->owner);
         $this->assertEquals('An error message', $rule->getMessage());
         $this->assertEquals('Some options', $rule->getConfig());

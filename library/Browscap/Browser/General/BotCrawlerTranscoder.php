@@ -30,7 +30,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WURFL_Handlers_BotCrawlerTranscoderHandler extends WURFL_Handlers_Handler
+class BotCrawlerTranscoder extends WURFL_Handlers_Handler
 {
     protected $prefix = 'BOT_CRAWLER_TRANSCODER';
     
