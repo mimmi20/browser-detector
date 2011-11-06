@@ -285,7 +285,7 @@ class HTML_QuickForm_group extends HTML_QuickForm_element
     public function toHtml()
     {
         include_once('HTML/QuickForm/Renderer/Default.php');
-        $renderer =& new HTML_QuickForm_Renderer_Default();
+        $renderer = new HTML_QuickForm_Renderer_Default();
         $renderer->setElementTemplate('{element}');
         $this->accept($renderer);
         return $renderer->toHtml();
@@ -518,7 +518,7 @@ class HTML_QuickForm_group extends HTML_QuickForm_element
     * is empty. It also performs some updates, e.g. freezes the created
     * elements if the group is already frozen.
     */
-    privatefunction _createElementsIfNotExist()
+    private function _createElementsIfNotExist()
     {
         if (empty($this->_elements)) {
             $this->_createElements();
