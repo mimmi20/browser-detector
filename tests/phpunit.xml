@@ -1,4 +1,6 @@
 <phpunit bootstrap="./bootstrap.php"
+         verbose="true">
+         <!--
          backupGlobals="false"
          backupStaticAttributes="false"
          cacheTokens="false"
@@ -12,8 +14,6 @@
          stopOnIncomplete="false"
          stopOnSkipped="false"
          strict="true"
-         verbose="true">
-         <!--
          processIsolation="false"
          testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
          colors="false" -->
