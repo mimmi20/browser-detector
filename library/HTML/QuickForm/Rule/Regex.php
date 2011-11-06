@@ -46,7 +46,7 @@ class HTML_QuickForm_Rule_Regex extends HTML_QuickForm_Rule
      * @var     array
      * @access  private
      */
-    var $_data = array(
+    private $_data = array(
                     'lettersonly'   => '/^[a-zA-Z]+$/',
                     'alphanumeric'  => '/^[a-zA-Z0-9]+$/',
                     'numeric'       => '/(^-?\d\d*\.\d*$)|(^-?\d\d*$)|(^-?\.\d\d*$)/',
@@ -59,7 +59,6 @@ class HTML_QuickForm_Rule_Regex extends HTML_QuickForm_Rule
      *
      * @param     string    $value      Value to be checked
      * @param     string    $regex      Regular expression
-     * @access    public
      * @return    boolean   true if value is valid
      */
     function validate($value, $regex = null)
@@ -82,7 +81,6 @@ class HTML_QuickForm_Rule_Regex extends HTML_QuickForm_Rule
      *
      * @param     string    $name       Name of rule
      * @param     string    $pattern    Regular expression pattern
-     * @access    public
      */
     function addData($name, $pattern)
     {

@@ -20,6 +20,8 @@ namespace Browscap\Browser\Khtml;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * AndroidUserAgentHanlder
  * 
@@ -30,7 +32,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Android
+class Android extends BrowserHandler
 {
     protected $prefix = 'ANDROID';
     

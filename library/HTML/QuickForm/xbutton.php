@@ -42,7 +42,7 @@ class HTML_QuickForm_xbutton extends HTML_QuickForm_element
     * @var      string
     * @access   private
     */
-    var $_content; 
+    private $_content; 
 
    /**
     * Class constructor
@@ -50,7 +50,6 @@ class HTML_QuickForm_xbutton extends HTML_QuickForm_element
     * @param    string  Button name
     * @param    string  Button content (HTML to add between <button></button> tags)
     * @param    mixed   Either a typical HTML attribute string or an associative array
-    * @access   public
     */
     function HTML_QuickForm_xbutton($elementName = null, $elementContent = null, $attributes = null)
     {

@@ -49,10 +49,9 @@ class HTML_QuickForm_button extends HTML_QuickForm_input
      * @param     mixed     $attributes     (optional)Either a typical HTML attribute string 
      *                                      or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function HTML_QuickForm_button($elementName=null, $value=null, $attributes=null)
+    public function __construct($elementName=null, $value=null, $attributes=null)
     {
         HTML_QuickForm_input::HTML_QuickForm_input($elementName, null, $attributes);
         $this->_persistantFreeze = false;
@@ -66,10 +65,9 @@ class HTML_QuickForm_button extends HTML_QuickForm_input
     /**
      * Freeze the element so that only its value is returned
      * 
-     * @access    public
      * @return    void
      */
-    function freeze()
+    public function freeze()
     {
         return false;
     } //end func freeze
@@ -77,4 +75,3 @@ class HTML_QuickForm_button extends HTML_QuickForm_input
     // }}}
  
 } //end class HTML_QuickForm_button
-?>

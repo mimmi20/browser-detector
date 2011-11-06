@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Label: Class for HTML <label> Elements
+ * HTMLCommon\Root\Label: Class for HTML <label> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Label
+// {{{ HTMLCommon\Root\Label
 
 /**
  * Class for HTML <label> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Labelextends \HTML\Common3implements \HTML\Common3\Face
+class Label extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,7 +76,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'label';
 
@@ -84,21 +83,19 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('for');
@@ -107,7 +104,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -115,7 +111,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -169,7 +164,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -215,7 +209,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * (and its parents)
      *
      * @var      array
-     * @access   protected
      */
     protected $_forbidElements = array(
         '#all' => array(
@@ -227,7 +220,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -247,7 +239,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -257,7 +248,7 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
         if ($name != '') {
             if ($name == 'for') {
                 if ($value === null || (string) $value == '') {
-                    throw new \HTML\Common3\CanNotRemoveAttributeException(
+                    throw new HTMLCommon\CanNotRemoveAttributeException(
                         "Required attribute 'for' can not be removed"
                     );
 
@@ -275,7 +266,7 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Returns the HTML representation of the element
      *
-     * This magic method allows using the instances of \HTML\Common3\ in string
+     * This magic method allows using the instances of HTMLCommon\ in string
      * contexts
      *
      * @param int     $step     the level in which should startet the output,
@@ -285,7 +276,6 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
      * @param boolean $levels   if TRUE the levels are added,
      *                          if FALSE the levels will be ignored
      *
-     * @access public
      * @return string
      * @see    HTML_Common::toHtml()
      * @see    HTML_Page2::toHtml()
@@ -308,7 +298,7 @@ class Labelextends \HTML\Common3implements \HTML\Common3\Face
     // }}} toHtml
 }
 
-// }}} \HTML\Common3\Root\Label
+// }}} HTMLCommon\Root\Label
 
 /*
  * Local variables:

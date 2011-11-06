@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Li: Class for HTML <li> Elements
+ * HTMLCommon\Root\Li: Class for HTML <li> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Li
+// {{{ HTMLCommon\Root\Li
 
 /**
  * Class for HTML <li> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Liextends \HTML\Common3implements \HTML\Common3\Face
+class Li extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,7 +76,6 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'li';
 
@@ -84,21 +83,19 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -107,7 +104,6 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -115,7 +111,6 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -171,7 +166,6 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -235,7 +229,6 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -262,8 +255,7 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
      * @param string  $weite   default for width
      * @param string  $display CSS display property
      *
-     * @access public
-     * @return \HTML\Common3\Root\A
+     * @return HTMLCommon\Root\A
      */
     public function addLink($lang, $func, $ref = '#', $key = '', $name = '',
                             $index = 0, $char = 'UTF-8', $titel = '',
@@ -280,7 +272,7 @@ class Liextends \HTML\Common3implements \HTML\Common3\Face
     // }}} addLink
 }
 
-// }}} \HTML\Common3\Root\Li
+// }}} HTMLCommon\Root\Li
 
 /*
  * Local variables:

@@ -159,121 +159,106 @@ class HTML_Page extends HTML_Common {
      * Contains the content of the &lt;body&gt; tag.
      * 
      * @var     array
-     * @access  private
      */
-    var $_body = array();
+    private $_body = array();
     
     /**
      * Controls caching of the page
      * 
      * @var     bool
-     * @access  private
      */
-    var $_cache = false;
+    private $_cache = false;
     
     /**
      * Contains the character encoding string
      * 
      * @var     string
-     * @access  private
      */
-    var $_charset = 'utf-8';
+    private $_charset = 'utf-8';
     
     /**
      * Contains the !DOCTYPE definition
      * 
      * @var array
-     * @access private
      */
-    var $_doctype = array('type'=>'xhtml','version'=>'1.0','variant'=>'transitional');
+    private $_doctype = array('type'=>'xhtml','version'=>'1.0','variant'=>'transitional');
     
     /**
      * Contains the page language setting
      * 
      * @var     string
-     * @access  private
      */
-    var $_language = 'en';
+    private $_language = 'en';
     
     /**
      * Array of meta tags
      * 
      * @var     array
-     * @access  private
      */
-    var $_metaTags = array( 'standard' => array ( 'Generator' => 'PEAR HTML_Page' ) );
+    private $_metaTags = array( 'standard' => array ( 'Generator' => 'PEAR HTML_Page' ) );
     
     /**
      * Document mime type
      * 
      * @var      string
-     * @access   private
      */
-    var $_mime = 'text/html';
+    private $_mime = 'text/html';
     
     /**
      * Document namespace
      * 
      * @var      string
-     * @access   private
      */
-    var $_namespace = '';
+    private $_namespace = '';
     
     /**
      * Array of linked scripts
      * 
      * @var      array
-     * @access   private
      */
-    var $_scripts = array();
+    private $_scripts = array();
     
     /**
      * Array of scripts placed in the header
      * 
      * @var  array
-     * @access   private
      */
-    var $_script = array();
+    private $_script = array();
     
     /**
      * Suppresses doctype
      * 
      * @var     boolean
-     * @access  private
      */
-    var $_simple = false;
+    private $_simple = false;
     
     /**
      * Array of included style declarations
      * 
      * @var     array
-     * @access  private
      */
-    var $_style = array();
+    private $_style = array();
     
     /**
      * Array of linked style sheets
      * 
      * @var     array
-     * @access  private
      */
-    var $_styleSheets = array();
+    private $_styleSheets = array();
     
     /**
      * HTML page title
      * 
      * @var     string
-     * @access  private
      */
-    var $_title = '';
+    private $_title = '';
     
     /**
      * Defines whether XML prolog should be prepended to XHTML documents
      * 
      * @var  bool
-     * @access   private
      */
-    var $_xmlProlog = true;
+    private $_xmlProlog = true;
     
     /**
      * Class constructor
@@ -291,9 +276,8 @@ class HTML_Page extends HTML_Common {
      * 
      * @param   mixed   $attributes     Associative array of table tag attributes
      *                                  or HTML attributes name="value" pairs
-     * @access  public
      */
-    function HTML_Page($attributes = array())
+    public function __construct($attributes = array())
     {
         
         if ($attributes) {
@@ -341,10 +325,9 @@ class HTML_Page extends HTML_Common {
     /**
      * Generates the HTML string for the &lt;body&lt; tag
      * 
-     * @access  private
      * @return  string
      */
-    function _generateBody()
+    private function _generateBody()
     {
         
         // get line endings
@@ -408,9 +391,8 @@ class HTML_Page extends HTML_Common {
      * Generates the HTML string for the &lt;head&lt; tag
      * 
      * @return string
-     * @access private
      */
-    function _generateHead()
+    private function _generateHead()
     {
         // close empty tags if XHTML
         if ($this->_doctype['type'] == 'html'){
@@ -545,9 +527,8 @@ class HTML_Page extends HTML_Common {
      * Returns the doctype declaration
      *
      * @return mixed
-     * @access private
      */
-    function _getDoctype()
+    private function _getDoctype()
     {
         require('HTML/Page/Doctypes.php');
         
@@ -605,9 +586,8 @@ class HTML_Page extends HTML_Common {
      * Retrieves the document namespace
      *
      * @return mixed
-     * @access private
      */
-    function _getNamespace()
+    private function _getNamespace()
     {
         require('HTML/Page/Namespaces.php');
         
@@ -660,9 +640,8 @@ class HTML_Page extends HTML_Common {
      *
      * @param   string  $string     The string to be parsed
      * @return string
-     * @access private
      */
-    function _parseDoctypeString($string)
+    private function _parseDoctypeString($string)
     {
         $split = explode(' ',strtolower($string));
         $elements = count($split);
@@ -687,9 +666,8 @@ class HTML_Page extends HTML_Common {
      * Objects must have a toString method.
      * 
      * @param mixed $content  New &lt;body&gt; tag content (may be passed as a reference)
-     * @access public
      */
-    function addBodyContent($content)
+    public function addBodyContent($content)
     {
         $this->_body[] =& $content;
     } // end addBodyContent    
@@ -699,9 +677,8 @@ class HTML_Page extends HTML_Common {
      * 
      * @param    string  $url        URL to the linked script
      * @param    string  $type       Type of script. Defaults to 'text/javascript'
-     * @access   public
      */
-    function addScript($url, $type="text/javascript")
+    public function addScript($url, $type="text/javascript")
     {
         $this->_scripts[$url] = $type;
     } // end func addScript
@@ -711,12 +688,11 @@ class HTML_Page extends HTML_Common {
      * Content can be a string or an object with a toString method.
      * Defaults to text/javascript.
      * 
-     * @access   public
      * @param    mixed   $content   Script (may be passed as a reference)
      * @param    string  $type      Scripting mime (defaults to 'text/javascript')
      * @return   void
      */
-    function addScriptDeclaration($content, $type = 'text/javascript')
+    public function addScriptDeclaration($content, $type = 'text/javascript')
     {
         $this->_script[strtolower($type)] =& $content;
     } // end func addScriptDeclaration
@@ -727,10 +703,9 @@ class HTML_Page extends HTML_Common {
      * @param    string  $url    URL to the linked style sheet
      * @param    string  $type   Mime encoding type
      * @param    string  $media  Media type that this stylesheet applies to
-     * @access   public
      * @return   void
      */
-    function addStyleSheet($url, $type = 'text/css', $media = null)
+    public function addStyleSheet($url, $type = 'text/css', $media = null)
     {
         $this->_styleSheets[$url]['mime']  = $type;
         $this->_styleSheets[$url]['media'] = $media;
@@ -741,12 +716,11 @@ class HTML_Page extends HTML_Common {
      * Content can be a string or an object with a toString method.
      * Defaults to text/css.
      * 
-     * @access   public
      * @param    mixed   $content   Style declarations (may be passed as a reference)
      * @param    string  $type      Type of stylesheet (defaults to 'text/css')
      * @return   void
      */
-    function addStyleDeclaration($content, $type = 'text/css')
+    public function addStyleDeclaration($content, $type = 'text/css')
     {
         $this->_style[strtolower($type)] =& $content;
     } // end func addStyleDeclaration
@@ -754,10 +728,9 @@ class HTML_Page extends HTML_Common {
     /**
      * Returns the current API version
      * 
-     * @access   public
      * @return   double
      */
-    function apiVersion()
+    public function apiVersion()
     {
         return 2.0;
     } // end func apiVersion
@@ -765,10 +738,9 @@ class HTML_Page extends HTML_Common {
     /**
      *  Disables prepending the XML prolog for XHTML documents
      * 
-     * @access   public
      * @return  void
      */
-    function disableXmlProlog()
+    public function disableXmlProlog()
     {
         $this->_xmlProlog = false;
     } // end func disableXmlProlog
@@ -776,10 +748,9 @@ class HTML_Page extends HTML_Common {
     /**
      *  Enables prepending the XML prolog for XHTML documents (default)
      * 
-     * @access   public
      * @return   void
      */
-    function enableXmlProlog()
+    public function enableXmlProlog()
     {
         $this->_xmlProlog = true;
     } // end func enableXmlProlog
@@ -787,10 +758,9 @@ class HTML_Page extends HTML_Common {
     /**
      * Returns the document charset encoding.
      * 
-     * @access public
      * @return string
      */
-    function getCharset()
+    public function getCharset()
     {
         return $this->_charset;
     } // end setCache
@@ -798,10 +768,9 @@ class HTML_Page extends HTML_Common {
     /**
      * Returns the document type string
      *
-     * @access public
      * @return string
      */
-    function getDoctypeString()
+    public function getDoctypeString()
     {
         $strDoctype = strtoupper($this->_doctype['type']);
         $strDoctype .= ' '.ucfirst(strtolower($this->_doctype['version']));
@@ -815,9 +784,8 @@ class HTML_Page extends HTML_Common {
      * Returns the document language.
      * 
      * @return string
-     * @access public
      */
-    function getLang()
+    public function getLang()
     {
         return $this->_language;
     } // end func getLang
@@ -826,9 +794,8 @@ class HTML_Page extends HTML_Common {
      * Return the title of the page.
      * 
      * @return   string
-     * @access   public
      */
-    function getTitle()
+    public function getTitle()
     {
         if (!$this->_title){
             if ($this->_simple) {
@@ -847,9 +814,8 @@ class HTML_Page extends HTML_Common {
      * Objects must have a toString method.
      * 
      * @param mixed $content New &lt;body&gt; tag content. May be an object. (may be passed as a reference)
-     * @access public
      */
-    function setBody($content)
+    public function setBody($content)
     {
         $this->unsetBody();
         $this->_body[] =& $content;
@@ -858,9 +824,8 @@ class HTML_Page extends HTML_Common {
     /**
      * Unsets the content of the &lt;body&gt; tag.
      * 
-     * @access public
      */
-    function unsetBody()
+    public function unsetBody()
     {
         $this->_body = array();
     } // end unsetBody
@@ -869,9 +834,8 @@ class HTML_Page extends HTML_Common {
      * Defines if the document should be cached by the browser. Defaults to false.
      * 
      * @param string $cache Options are currently 'true' or 'false'. Defaults to 'false'.
-     * @access public
      */
-    function setCache($cache = 'false')
+    public function setCache($cache = 'false')
     {
         if ($cache == 'true'){
             $this->_cache = true;
@@ -884,10 +848,9 @@ class HTML_Page extends HTML_Common {
      * Defines if the document should be cached by the browser. Defaults to false.
      * 
      * @param string $cache Options are currently 'true' or 'false'. Defaults to 'false'.
-     * @access  public
      * @return  void
      */
-    function setCharset($type = 'utf-8')
+    public function setCharset($type = 'utf-8')
     {
         $this->_charset = $type;
     } // end setCache
@@ -899,10 +862,9 @@ class HTML_Page extends HTML_Common {
      * when the class is initiated {@link HTML_Page}.
      * 
      * @param string $type   String containing a document type. Defaults to "XHTML 1.0 Transitional"
-     * @access  public
      * @return  void
      */
-    function setDoctype($type = "XHTML 1.0 Transitional")
+    public function setDoctype($type = "XHTML 1.0 Transitional")
     {
         $this->_doctype = $this->_parseDoctypeString($type);
     } // end func setDoctype
@@ -910,10 +872,9 @@ class HTML_Page extends HTML_Common {
     /**
      * Sets the global document language declaration. Default is English.
      * 
-     * @access public
      * @param string $lang Two-letter language designation.
      */
-    function setLang($lang = "en")
+    public function setLang($lang = "en")
     {
         $this->_language = strtolower($lang);
     } // end setLang
@@ -925,9 +886,8 @@ class HTML_Page extends HTML_Common {
      * @param string  $content  Value of the content tag
      * @param bool    $http_equiv     META type "http-equiv" defaults to NULL
      * @return void
-     * @access public
      */
-    function setMetaData($name, $content, $http_equiv = false)
+    public function setMetaData($name, $content, $http_equiv = false)
     {
         if ($http_equiv == true) {
             $this->_metaTags['http-equiv'][$name] = $content;
@@ -939,10 +899,9 @@ class HTML_Page extends HTML_Common {
     /**
      * Sets an http-equiv Content-Type meta tag
      * 
-     * @access   public
      * @return   void
      */
-    function setMetaContentType()
+    public function setMetaContentType()
     {
         $this->setMetaData('Content-Type', $this->_mime . '; charset=' . $this->_charset , true );
     } // end func setMetaContentType
@@ -956,9 +915,8 @@ class HTML_Page extends HTML_Common {
      * @param string  $url     Absolute URL or "self"
      * @param bool    $https   If $url = self, this allows for the https protocol defaults to NULL
      * @return void
-     * @access public
      */
-    function setMetaRefresh($time, $url = 'self', $https = false)
+    public function setMetaRefresh($time, $url = 'self', $https = false)
     {
         if ($url == 'self') {
             if ($https) { 
@@ -975,10 +933,9 @@ class HTML_Page extends HTML_Common {
      * Sets the document MIME encoding that is sent to the browser.
      * 
      * @param    string    $type
-     * @access   public
      * @return   void
      */
-    function setMimeEncoding($type = 'text/html')
+    public function setMimeEncoding($type = 'text/html')
     {
         $this->_mime = strtolower($type);
     } // end func setMimeEncoding
@@ -987,10 +944,9 @@ class HTML_Page extends HTML_Common {
      * Sets the document namespace
      * 
      * @param    string    $namespace  Optional. W3C namespaces are used by default.
-     * @access   public
      * @return   void
      */
-    function setNamespace($namespace = '')
+    public function setNamespace($namespace = '')
     {
         if (isset($namespace)){
             $this->_namespace = $namespace;
@@ -1003,10 +959,9 @@ class HTML_Page extends HTML_Common {
      * Sets the title of the page
      * 
      * @param    string    $title
-     * @access   public
      * @return   void
      */
-    function setTitle($title)
+    public function setTitle($title)
     {
         $this->_title = $title;
     } // end func setTitle
@@ -1015,11 +970,9 @@ class HTML_Page extends HTML_Common {
      * Generates and returns the complete page as a string.
      * 
      * @return string
-     * @access public
      */
-    function toHTML()
+    public function toHTML()
     {
-        
         // get line endings
         $lnEnd = $this->_getLineEnd();
         
@@ -1064,9 +1017,8 @@ class HTML_Page extends HTML_Common {
      *
      * @return  void
      * @since   2.0
-     * @access  public
      */
-    function toFile($filename)
+    public function toFile($filename)
     {
         if (function_exists('file_put_content')){
             file_put_content($filename, $this->toHtml());
@@ -1083,10 +1035,8 @@ class HTML_Page extends HTML_Common {
     
     /**
      * Outputs the HTML content to the screen.
-     * 
-     * @access    public
      */
-    function display()
+    public function display()
     {
         if(! $this->_cache) {
             header("Expires: Tue, 1 Jan 1980 12:00:00 GMT");
@@ -1101,6 +1051,4 @@ class HTML_Page extends HTML_Common {
         $strHtml = $this->toHTML();
         print $strHtml;
     } // end func display
-    
 }
-?>

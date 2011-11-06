@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Zero: Class for HTML Data (CDATA or PCDATA)
+ * HTMLCommon\Root\Zero: Class for HTML Data (CDATA or PCDATA)
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Zero
+// {{{ HTMLCommon\Root\Zero
 
 /**
  * Class for HTML Data (CDATA or PCDATA)
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Zeroextends \HTML\Common3implements \HTML\Common3\Face
+class Zero extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,21 +76,19 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = '';
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -99,7 +97,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array();
 
@@ -107,7 +104,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array();
 
@@ -116,7 +112,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * (and its parents)
      *
      * @var      array
-     * @access   protected
      */
     protected $_forbidElements = array(
         '#all' => array(
@@ -126,7 +121,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * value for text elements
      *
      * @var      string
-     * @access   protected
      */
     protected $_value = '';
 
@@ -134,7 +128,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -146,17 +139,16 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string|array $attributes Array of attribute 'name' => 'value' pairs
      *                                 or HTML attribute string
-     * @param \HTML\Common3\ $parent     pointer to the parent object
-     * @param \HTML\Common3\ $html       pointer to the HTML root object
+     * @param HTMLCommon\ $parent     pointer to the parent object
+     * @param HTMLCommon\ $html       pointer to the HTML root object
      *
-     * @return \HTML\Common3\
-     * @access public
+     * @return HTMLCommon\
      * @see    HTML_Common::HTML_Common()
      * @see    HTML_Common2::__construct()
      * @see    HTML_Page2::HTML_Page2()
      */
     public function __construct($attributes = null,
-    \HTML\Common3 $parent = null, \HTML\Common3 $html = null)
+    HTMLCommon $parent = null, HTMLCommon $html = null)
     {
         parent::__construct($attributes, $parent, $html);
 
@@ -175,13 +167,12 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * @param boolean $transform marks if the special chars should be transformed to
      *                           their HTML-equivalents
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE, $transform = true)
+    public function setValue($value, $flag = HTMLCommon::REPLACE, $transform = true)
     {
         $value     = (string)  $value;
         $transform = (boolean) $transform;
@@ -190,9 +181,9 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
             $value = $this->replace($value, 'all');
         }
 
-        if ($flag === HTML_APPEND) {
+        if ($flag === HTMLCommon::APPEND) {
             $this->_value .= $value;//$this->replace($value, 'all');
-        } elseif ($flag === HTML_REPLACE) {
+        } elseif ($flag === HTMLCommon::REPLACE) {
             $this->_value = $value;//$this->replace($value, 'all');
         } else {
             //prepend
@@ -209,7 +200,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      * NOTE: this function has no relation to the Attribute "value"
      *
      * @return string
-     * @access public
      */
     public function getValue()
     {
@@ -230,7 +220,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      * @see    HTML_Common2::toHtml()
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
@@ -261,7 +250,6 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -271,7 +259,7 @@ class Zeroextends \HTML\Common3implements \HTML\Common3\Face
     // }}} writeInner
 }
 
-// }}} \HTML\Common3\Root\Zero
+// }}} HTMLCommon\Root\Zero
 
 /*
  * Local variables:

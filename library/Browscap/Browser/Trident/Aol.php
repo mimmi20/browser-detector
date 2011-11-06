@@ -19,6 +19,8 @@ namespace Browscap\Browser\Trident;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * AOLHanlder
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Trident;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Aol
+class Aol extends BrowserHandler
 {
     protected $prefix = 'AOL';
     

@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Html: Class for HTML <html> Elements
+ * HTMLCommon\Root\Html: Class for HTML <html> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,40 +40,40 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3
+ * @package  HTMLCommon
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3
+ * @link     http://pear.php.net/package/HTMLCommon
  */
 
 /**
- * base class for \HTML\Common3
+ * base class for HTMLCommon
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * DTD class for \HTML\Common3
+ * DTD class for HTMLCommon
  */
 require_once 'HTML/Common3/Root/Dtd.php';
 
 /**
- * class Interface for \HTML\Common3
+ * class Interface for HTMLCommon
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Html
+// {{{ HTMLCommon\Root\Html
 
 /**
  * Class for HTML <html> Elements
  *
  * @category HTML
- * @package  \HTML\Common3
+ * @package  HTMLCommon
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3
+ * @link     http://pear.php.net/package/HTMLCommon
  */
-class Htmlextends \HTML\Common3implements \HTML\Common3\Face
+class Html extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -81,7 +81,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'html';
 
@@ -89,21 +88,19 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3 class itself
+     * HTMLCommon class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -112,7 +109,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -120,7 +116,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -173,7 +168,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(),
@@ -218,7 +212,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Pointer to the head object, the object is set up in Constructor
      *
      * @var      pointer
-     * @access   public
      */
     public $head = null;
 
@@ -226,7 +219,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Pointer to the body object, the object is set up in Constructor
      *
      * @var      pointer
-     * @access   public
      */
     public $body = null;
 
@@ -234,7 +226,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Pointer to the frameset object, the object is set up in Constructor
      *
      * @var      pointer
-     * @access   public
      */
     public $frameset = null;
 
@@ -242,7 +233,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an the Root of the HTML-Tree
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_isRootElement = true;
 
@@ -252,7 +242,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @var      boolean
      * @see      enableXmlProlog()
      * @see      disableXmlProlog()
-     * @access   protected
      */
     protected $_xmlProlog = false;
 
@@ -260,7 +249,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the language is already added to the <meta> tags
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_langAdded = false;
 
@@ -268,7 +256,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Pointer to the DTD object, the object is set up in Constructor
      *
      * @var      pointer
-     * @access   public
      */
     public $rootDtd = null;
 
@@ -276,7 +263,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -289,14 +275,13 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string|array $attributes Array of attribute 'name' => 'value'
      *                                 pairs or HTML attribute string
-     * @param \HTML\Common3 $parent     pointer to the parent object
-     * @param \HTML\Common3 $html       pointer to the HTML root object
+     * @param HTMLCommon $parent     pointer to the parent object
+     * @param HTMLCommon $html       pointer to the HTML root object
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function __construct($attributes = null,
-    \HTML\Common3 $parent = null, \HTML\Common3 $html = null)
+    HTMLCommon $parent = null, HTMLCommon $html = null)
     {
         $attributes = $this->parseAttributes($attributes);
 
@@ -336,7 +321,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * creates the main structure of an HTML File
      *
-     * @access protected
      * @return void
      */
     protected function createStructure()
@@ -370,7 +354,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
             $this->langAdded = true;
         }
 
-        $this->rootDtd = new \HTML\Common3\Root\Dtd($this->_attributes, $this,
+        $this->rootDtd = new HTMLCommon\Root\Dtd($this->_attributes, $this,
                                                    $this);
 
         $this->initDtd();
@@ -384,7 +368,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * initiates the DTD
      *
-     * @access protected
      * @return void
      */
     protected function initDtd()
@@ -408,7 +391,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * HTML is never empty
      *
      * @return boolean
-     * @access public
      * @see    getEmpty
      *
      * @assert() === false
@@ -426,7 +408,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * HTML is ever an root element
      *
      * @return boolean
-     * @access public
      *
      * @assert() === true
      */
@@ -444,8 +425,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param boolean $disabled TRUE, if the Element should be disabled
      *
-     * @return \HTML\Common3\Root\Html
-     * @access public
+     * @return HTMLCommon\Root\Html
      */
     public function setDisabled($disabled = false)
     {
@@ -460,7 +440,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * HTML can't be disabled
      *
      * @return boolean
-     * @access public
      *
      * @assert() === false
      */
@@ -476,12 +455,11 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * sets the parent object in the HTML tree
      * HTML has no parent
      *
-     * @param \HTML\Common3 $parent the parent object
+     * @param HTMLCommon $parent the parent object
      *
-     * @return \HTML\Common3\Root\Html
-     * @access protected
+     * @return HTMLCommon\Root\Html
      */
-    protected function setParent(\HTML\Common3 $parent)
+    protected function setParent(HTMLCommon $parent)
     {
         return $this;
     }
@@ -493,8 +471,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Returns the parent object in the HTML tree
      * HTML has no parent
      *
-     * @return \HTML\Common3\Root\Html
-     * @access public
+     * @return HTMLCommon\Root\Html
      *
      * @assert() === null
      */
@@ -510,12 +487,11 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * sets the root object in the HTML tree
      * HTML is the Root itself
      *
-     * @param \HTML\Common3 $html the root object
+     * @param HTMLCommon $html the root object
      *
-     * @return \HTML\Common3
-     * @access protected
+     * @return HTMLCommon
      */
-    protected function setHtml(\HTML\Common3 $html)
+    protected function setHtml(HTMLCommon $html)
     {
         return $this;
     }
@@ -527,8 +503,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Returns the root object in the HTML tree
      * HTML is the Root itself
      *
-     * @return \HTML\Common3
-     * @access public
+     * @return HTMLCommon
      *
      * @assert() === null
      */
@@ -545,8 +520,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param array $elements the new possible Element
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setIDs(array $elements)
     {
@@ -561,7 +535,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * return a list of all stored ID's
      *
-     * @access public
      * @return array
      *
      * @assert() === array()
@@ -578,7 +551,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Returns true, if the Element is empty, false otherwise
      *
      * @return array
-     * @access public
      */
     public function getDoctypes()
     {
@@ -591,7 +563,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Returns all possible DTD's
      *
      * @return array
-     * @access public
      */
     public function getDtd()
     {
@@ -604,7 +575,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * returns a list of all possible Namespaces
      *
-     * @access public
      * @return array
      */
     public function getAllNamespaces()
@@ -621,8 +591,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param boolean $addToDtd Indicator to set
      *
-     * @return \HTML\Common3\Root\Html
-     * @access public
+     * @return HTMLCommon\Root\Html
      */
     public function setAddToDtd($addToDtd = false)
     {
@@ -653,7 +622,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * to the DTD
      *
      * @return boolean
-     * @access public
      *
      * @assert() === false
      */
@@ -670,7 +638,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $lang the lang code for the element
      *
-     * @access public
      * @return void
      */
     public function setLang($lang)
@@ -702,8 +669,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $elementName Element name
      *
      * @return string The generated element id
-     * @access protected
-     * @throw  \HTML\Common3\InvalidArgumentException
+     * @throw  HTMLCommon\InvalidArgumentException
      * @see    HTML_QuickForm2_Node::generateId()
      */
     protected function generateId($elementName = '')
@@ -744,8 +710,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *                             foreign object
      *
      * @return bollean True, if the ID is stored, FALSE otherwise
-     * @access protected
-     * @throw  \HTML\Common3\InvalidArgumentException
+     * @throw  HTMLCommon\InvalidArgumentException
      * @see    HTML_QuickForm2_Node::storeId()
      */
     protected function storeId($id, $element = null)
@@ -786,8 +751,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $id Element id
      *
      * @return bollean True, if the ID is registered, FALSE otherwise
-     * @access protected
-     * @throw  \HTML\Common3\InvalidArgumentException
+     * @throw  HTMLCommon\InvalidArgumentException
      */
     protected function registerId($id)
     {
@@ -823,7 +787,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
             if ($isSelf === true) {
                 return true;
             } elseif ($usedBy != '') {
-                throw new \HTML\Common3\CanNotRegisterIDException(
+                throw new HTMLCommon\CanNotRegisterIDException(
                     'Registering of ID \'' . $id .
                     '\' was not possible! ID is used already:\'' .
                     $usedBy . '\'.');
@@ -845,8 +809,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param integer $offset new ident level for the element
      *
-     * @access public
-     * @return \HTML\Common3
+     * @return HTMLCommon
      * @see    HTML_Common::setTabOffset()
      * @see    setIndentLevel()
      * @deprecated
@@ -864,8 +827,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param integer $level new ident level for the Element
      *
-     * @return \HTML\Common3
-     * @access public
+     * @return HTMLCommon
      * @see    HTML_Common2::setIndentLevel()
      * @see    changeLevel()
      */
@@ -880,7 +842,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Returns the tabOffset
      *
-     * @access public
      * @return integer
      * @see    HTML_Common::getTabOffset()
      * @see    getIndentLevel()
@@ -898,7 +859,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Gets the indentation level
      *
      * @return integer
-     * @access public
      * @see    HTML_Common2::getIndentLevel()
      *
      * @assert() === 0
@@ -924,7 +884,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -983,7 +942,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * </code>
      *
      * @return void
-     * @access public
      * @see    HTML_Common::display()
      * @see    HTML_Page2::display()
      */
@@ -1053,7 +1011,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * </code>
      *
      * @return void
-     * @access public
      * @see    HTML_Common::display()
      * @see    HTML_Page2::display()
      */
@@ -1078,7 +1035,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -1112,13 +1068,12 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *                               replace the content. Use pre-defined
      *                               constants.
      *
-     * @return \HTML\Common3\Root\Html
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\Root\Html
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         return $this;
     }
@@ -1131,7 +1086,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * HTML has no value
      *
      * @return string
-     * @access public
      *
      * @assert() === ''
      */
@@ -1147,7 +1101,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * returns a list of all elements which are in in the parent tree of the
      * current element
      *
-     * @access protected
      * @return array
      */
     protected function getParentTree()
@@ -1162,8 +1115,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * returns an the Root Element of the object tree
      * HTML is the Root
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function getRoot()
     {
@@ -1179,7 +1131,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * HTML is the Root
      *
      * @return boolean
-     * @access public
      */
     public function isRoot()
     {
@@ -1200,8 +1151,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $need        (Optional) the need level for the new
      *                            attribute
      *
-     * @return \HTML\Common3\Root\Html
-     * @access public
+     * @return HTMLCommon\Root\Html
      */
     public function addDtdAttribute($elementName, $attribute, $type = 'CDATA',
         $need = '#IMPLIED')
@@ -1258,8 +1208,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $type        (Optional) the type for the new attribute
      * @param string $need        (Optional) the need level for the new attribute
      *
-     * @return \HTML\Common3\Root\Dtd
-     * @access public
+     * @return HTMLCommon\Root\Dtd
      */
     public function unsetDtdAttribute($elementName, $attribute)
     {
@@ -1283,8 +1232,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param boolean $xmlProlog the new flag
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setXmlProlog($xmlProlog = false)
     {
@@ -1304,7 +1252,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * returns the XML prolog flag
      *
      * @return boolean
-     * @access public
      * @see    getMimeEncoding()
      */
     public function getXmlProlog()
@@ -1346,8 +1293,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * $page->disableXmlProlog();
      * </code>
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      * @see    HTML_Page2::disableXmlProlog()
      */
     public function disableXmlProlog()
@@ -1374,8 +1320,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * $page->enableXmlProlog();
      * </code>
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      * @see    HTML_Page2::ensableXmlProlog()
      */
     public function enableXmlProlog()
@@ -1393,8 +1338,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $titlevalue the title string
      *
-     * @access public
-     * @return \HTML\Common3\Root\Title
+     * @return HTMLCommon\Root\Title
      */
     public function addTitle($titlevalue)
     {
@@ -1416,8 +1360,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $lang    the language for this meta
      * @param string $schema  the schema for this meta
      *
-     * @access public
-     * @return \HTML\Common3\Root\Meta
+     * @return HTMLCommon\Root\Meta
      */
     public function addMeta($type='name', $name = '', $content = '', $lang = '',
                             $schema = '')
@@ -1435,8 +1378,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $href the base href for the page
      *
-     * @access public
-     * @return \HTML\Common3\Root\Base
+     * @return HTMLCommon\Root\Base
      */
     public function addBase($href)
     {
@@ -1457,8 +1399,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $charset charset of <link>
      * @param array  $id      id for the <link>
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     public function addMetalink($href, $rel = 'stylesheet', $type = '',
                                 $charset = '', $id = '')
@@ -1480,8 +1421,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param mixed  $content Script (may be passed as a reference)
      * @param string $type    Scripting mime (defaults to 'text/javascript')
      *
-     * @access public
-     * @return \HTML\Common3\Root\Script
+     * @return HTMLCommon\Root\Script
      */
     public function addScriptDeclaration($content, $type = 'text/javascript')
     {
@@ -1499,8 +1439,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $url  URL to the linked script
      * @param string $type Type of script. Defaults to 'text/javascript'
      *
-     * @access public
-     * @return \HTML\Common3\Root\Script
+     * @return HTMLCommon\Root\Script
      */
     public function addScript($url, $type="text/javascript")
     {
@@ -1519,8 +1458,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $type  Mime encoding type
      * @param string $media Media type that this stylesheet applies to
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     public function addStyleSheet($url, $type = 'text/css', $media = null)
     {
@@ -1540,8 +1478,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param mixed  $content Style declarations (may be passed as a reference)
      * @param string $type    Type of stylesheet (defaults to 'text/css')
      *
-     * @access public
-     * @return \HTML\Common3\Root\Style
+     * @return HTMLCommon\Root\Style
      */
     public function addStyleDeclaration($content, $type = 'text/css')
     {
@@ -1564,8 +1501,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $type     File type
      * @param string $relation Relation of link, not used
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     public function addFavicon($href, $type = 'image/x-icon',
         $relation = 'shortcut icon')
@@ -1592,8 +1528,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *                           (default: 'rel').
      * @param array  $attributes Associative array of remaining attributes.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     public function addHeadLink($href, $relation, $relType = 'rel',
         $attributes = array())
@@ -1619,8 +1554,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $profile URL to profile
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setHeadProfile($profile = '')
     {
@@ -1644,7 +1578,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * detailing proper use.</p>
      *
      * @return string URL to profile
-     * @access public
      */
     public function getHeadProfile()
     {
@@ -1667,7 +1600,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * to whatever is currently in the array of body elements.</p>
      *
      * <p>The following constants are defined to be passed as the flag
-     * attribute: HTML_APPEND, HTML_PREPEND and HTML_REPLACE.
+     * attribute: HTMLCommon::APPEND, HTML_PREPEND and HTMLCommon::REPLACE.
      * Their usage should be quite clear from their names.</p>
      *
      * @param mixed $content New <body> tag content (may be passed as a
@@ -1675,10 +1608,9 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param int   $flag    Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
-    public function addBodyContent($content, $flag = HTML_APPEND)
+    public function addBodyContent($content, $flag = HTMLCommon::APPEND)
     {
 
         $this->body->addBodyContent($content, $flag);
@@ -1702,8 +1634,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param mixed $content New <body> tag content (may be passed as a
      *                       reference)
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function prependBodyContent($content)
     {
@@ -1730,8 +1661,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param mixed $content New <body> tag content. May be an object.
      *                       (may be passed as a reference)
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setBody($content)
     {
@@ -1746,8 +1676,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Unsets the content of the <body> tag.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function unsetBody()
     {
@@ -1769,8 +1698,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param array $attributes <body> tag attributes.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setBodyAttributes($attributes)
     {
@@ -1786,7 +1714,6 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * Return the title of the page.
      *
      * @return string
-     * @access public
      */
     public function getTitle()
     {
@@ -1803,8 +1730,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $content    Value of the content tag
      * @param bool   $http_equiv META type "http-equiv" defaults to null
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setMetaData($name, $content, $http_equiv = false)
     {
@@ -1822,8 +1748,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $name       Value of name or http-equiv tag
      * @param bool   $http_equiv META type "http-equiv" defaults to null
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function unsetMetaData($name, $http_equiv = false)
     {
@@ -1847,8 +1772,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param boolean $https if $url == self, this allows for the https
      *                       protocol defaults to null
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setMetaRefresh($time, $url = 'self', $https = false)
     {
@@ -1863,8 +1787,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Sets an http-equiv Content-Type <meta> tag
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setMetaContentType()
     {
@@ -1887,8 +1810,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $title the new page title
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function setTitle($title)
     {
@@ -1908,8 +1830,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $lang  the language for the Div
      * @param string $id    the id for the Div
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addDiv($style='', $class='', $lang='', $id='')
     {
@@ -1925,8 +1846,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * enables the Dublin Core Meta Tages
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function enableDublinCore()
     {
@@ -1941,8 +1861,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * enables the Dublin Core Meta Tages
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function disableDublinCore()
     {
@@ -1957,8 +1876,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * enables the Dublin Core Meta Tages
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function addCopyRight($copy)
     {
@@ -1975,8 +1893,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $author the Author message
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function addAuthor($author)
     {
@@ -1993,8 +1910,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $desc the Author message
      *
-     * @access public
-     * @return \HTML\Common3\Root\Html
+     * @return HTMLCommon\Root\Html
      */
     public function addDesc($desc)
     {
@@ -2007,7 +1923,7 @@ class Htmlextends \HTML\Common3implements \HTML\Common3\Face
     // }}} PAGE related functions **********************************************
 }
 
-// }}} \HTML\Common3\Root\Html
+// }}} HTMLCommon\Root\Html
 
 /*
  * Local variables:

@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\H1: Class for HTML <h1> Elements
+ * HTMLCommon\Root\H1: Class for HTML <h1> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,30 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\ <h?> Elements
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Root/H.php';
+use HTML\Common3\ElementsInterface;
 
-/**
- * class Interface for \HTML\Common3\
- */
-require_once 'HTML/Common3/Face.php';
-
-// {{{ \HTML\Common3\Root\H1
+// {{{ HTMLCommon\Root\H1
 
 /**
  * Class for HTML <h1> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class H1extends \HTML\Common3\Root\Himplements \HTML\Common3\Face
+class H1 extends H implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,7 +71,6 @@ class H1extends \HTML\Common3\Root\Himplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var        string
-     * @access    protected
      */
     protected $_elementName = 'h1';
 
@@ -84,14 +78,13 @@ class H1extends \HTML\Common3\Root\Himplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
     // }}} properties
 }
 
-// }}} \HTML\Common3\Root\H1
+// }}} HTMLCommon\Root\H1
 
 /*
  * Local variables:

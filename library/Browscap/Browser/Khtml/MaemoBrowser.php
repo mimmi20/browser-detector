@@ -19,6 +19,8 @@ namespace Browscap\Browser\Khtml;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * MaemoUserAgentHandler
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class MaemoBrowser
+class MaemoBrowser extends BrowserHandler
 {
     protected $prefix = 'MaemoBrowser';
 

@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Head: Class for HTML <head> Elements
+ * HTMLCommon\Root\Head: Class for HTML <head> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,37 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3
+ * @package  HTMLCommon
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3
+ * @link     http://pear.php.net/package/HTMLCommon
  */
 
 /**
- * base class for \HTML\Common3
+ * base class for HTMLCommon
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3
+ * class Interface for HTMLCommon
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Head
+// {{{ HTMLCommon\Root\Head
 
 /**
  * Class for HTML <head> Elements
  *
  * @category HTML
- * @package  \HTML\Common3
+ * @package  HTMLCommon
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3
+ * @link     http://pear.php.net/package/HTMLCommon
  */
-class Head
-extends \HTML\Common3
-implements \HTML\Common3\Face
+class Head extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -78,7 +76,6 @@ implements \HTML\Common3\Face
      * Pointer to the Title-Tag inside the Head
      *
      * @var      Pointer
-     * @access   protected
      */
     protected $_title = null;
 
@@ -86,7 +83,6 @@ implements \HTML\Common3\Face
      * Pointer to the Base-Tag inside the Head
      *
      * @var      Pointer
-     * @access   protected
      */
     protected $_base = null;
 
@@ -94,7 +90,6 @@ implements \HTML\Common3\Face
      * Pointer to the Favicon inside the Head
      *
      * @var      Pointer
-     * @access   protected
      */
     protected $_favicon = null;
 
@@ -102,7 +97,6 @@ implements \HTML\Common3\Face
      * Array of all Link-Tags inside the Head
      *
      * @var      Array
-     * @access   protected
      */
     protected $_link = array();
 
@@ -110,7 +104,6 @@ implements \HTML\Common3\Face
      * Array of all Meta-Tags inside the Head
      *
      * @var      Array
-     * @access   protected
      */
     protected $_meta = array();
 
@@ -118,7 +111,6 @@ implements \HTML\Common3\Face
      * Array of all Script-Tags inside the Head
      *
      * @var      Array
-     * @access   protected
      */
     protected $_script = array();
 
@@ -126,7 +118,6 @@ implements \HTML\Common3\Face
      * Array of all Style-Tags inside the Head
      *
      * @var      Array
-     * @access   protected
      */
     protected $_style = array();
 
@@ -134,7 +125,6 @@ implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'head';
 
@@ -142,21 +132,19 @@ implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3 class itself
+     * HTMLCommon class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -165,7 +153,6 @@ implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -173,7 +160,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -193,7 +179,6 @@ implements \HTML\Common3\Face
      * (and its parents)
      *
      * @var      array
-     * @access   protected
      */
     protected $_forbidElements = array(
         '#all' => array(
@@ -263,7 +248,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -291,7 +275,6 @@ implements \HTML\Common3\Face
      * Indicator to tell, if the Meta-Tags after Dublin Core are enabled
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_dc = false;
 
@@ -299,7 +282,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -315,7 +297,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -418,8 +399,7 @@ implements \HTML\Common3\Face
      * @param string $attributes Array of attribute 'name' => 'value'
      *                             pairs or HTML attribute string
      *
-     * @access public
-     * @return \HTML\Common3\Root\Title
+     * @return HTMLCommon\Root\Title
      */
     public function addTitle($titlevalue, $attributes = null)
     {
@@ -450,8 +430,7 @@ implements \HTML\Common3\Face
      * @param string $lang    the language for this meta
      * @param string $schema  the schema for this meta
      *
-     * @access public
-     * @return \HTML\Common3\Root\Meta
+     * @return HTMLCommon\Root\Meta
      */
     public function addMeta($type = 'name', $name = '', $content = '', $lang = '', $schema = '')
     {
@@ -498,8 +477,7 @@ implements \HTML\Common3\Face
      *
      * @param string $href the base href for the page
      *
-     * @access public
-     * @return \HTML\Common3\Root\Base
+     * @return HTMLCommon\Root\Base
      */
     public function addBase($href)
     {
@@ -531,8 +509,7 @@ implements \HTML\Common3\Face
      *                                 Either rel or rev (default: 'rel').
      * @param array|string $attributes Associative array of remaining attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link|null
+     * @return HTMLCommon\Root\Link|null
      */
     function addHeadLink($href, $relation, $relType = 'rel', $attributes = array())
     {
@@ -568,8 +545,7 @@ implements \HTML\Common3\Face
      * @param string $charset charset of <link>
      * @param array  $id      id for the <link>
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     public function addMetalink($href, $rel='stylesheet', $type='', $charset='',
                                 $id='')
@@ -603,8 +579,7 @@ implements \HTML\Common3\Face
      * @param mixed  $content Script (may be passed as a reference)
      * @param string $type    Scripting mime (defaults to 'text/javascript')
      *
-     * @access public
-     * @return \HTML\Common3\Root\Script
+     * @return HTMLCommon\Root\Script
      */
     public function addScriptDeclaration($content, $type = 'text/javascript')
     {
@@ -627,8 +602,7 @@ implements \HTML\Common3\Face
      * @param string $url  URL to the linked script
      * @param string $type Type of script. Defaults to 'text/javascript'
      *
-     * @access public
-     * @return \HTML\Common3\Root\Script
+     * @return HTMLCommon\Root\Script
      */
     public function addScript($url, $type="text/javascript")
     {
@@ -652,8 +626,7 @@ implements \HTML\Common3\Face
      * @param string $type  Mime encoding type
      * @param string $media Media type that this stylesheet applies to
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     public function addStyleSheet($url, $type = 'text/css', $media = null)
     {
@@ -677,8 +650,7 @@ implements \HTML\Common3\Face
      * @param mixed  $content Style declarations (may be passed as a reference)
      * @param string $type    Type of stylesheet (defaults to 'text/css')
      *
-     * @access public
-     * @return \HTML\Common3\Root\Style
+     * @return HTMLCommon\Root\Style
      */
     public function addStyleDeclaration($content, $type = 'text/css')
     {
@@ -705,8 +677,7 @@ implements \HTML\Common3\Face
      * @param string $type     File type
      * @param string $relation Relation of link
      *
-     * @access public
-     * @return \HTML\Common3\Root\Link
+     * @return HTMLCommon\Root\Link
      */
     function addFavicon($href, $type = 'image/x-icon', $relation = 'shortcut icon')
     {
@@ -736,8 +707,7 @@ implements \HTML\Common3\Face
      *
      * @param string $profile URL to profile
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     function setHeadProfile($profile = '')
     {
@@ -759,7 +729,6 @@ implements \HTML\Common3\Face
      * detailing proper use.</p>
      *
      * @return string $profile URL to profile
-     * @access public
      */
     public function getHeadProfile()
     {
@@ -773,7 +742,6 @@ implements \HTML\Common3\Face
      * Return the title of the page.
      *
      * @return   string
-     * @access   public
      */
     public function getTitle()
     {
@@ -790,8 +758,7 @@ implements \HTML\Common3\Face
      * @param string  $content    Value of the content tag
      * @param boolean $http_equiv META type "http-equiv" defaults to null
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function setMetaData($name, $content, $http_equiv = false)
     {
@@ -813,8 +780,7 @@ implements \HTML\Common3\Face
      * @param string  $name       Value of name or http-equiv tag
      * @param boolean $http_equiv META type "http-equiv" defaults to null
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function unsetMetaData($name, $http_equiv = false)
     {
@@ -840,8 +806,7 @@ implements \HTML\Common3\Face
      * @param boolean $https If $url == self, this allows for the https
      *                       protocol defaults to null
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function setMetaRefresh($time, $url = 'self', $https = false)
     {
@@ -864,8 +829,7 @@ implements \HTML\Common3\Face
     /**
      * Sets an http-equiv Content-Type meta tag
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function setMetaContentType()
     {
@@ -878,19 +842,18 @@ implements \HTML\Common3\Face
     /**
      * add a new Child Element
      *
-     * @param string|\HTML\Common3 $type       the HTML Tag for the new Child Element
-     *                                        or an \HTML\Common3 Child object
+     * @param string|HTMLCommon $type       the HTML Tag for the new Child Element
+     *                                        or an HTMLCommon Child object
      * @param string              $attributes Array of attribute 'name' => 'value'
      *                                        pairs or HTML attribute string
      * @param integer             $flag       Determines whether to prepend, append
      *                                        or replace the content. Use pre-defined
      *                                        constants.
      *
-     * @return null|\HTML\Common3
-     * @access public
-     * @throw  \HTML\Common3\Exception
+     * @return null|HTMLCommon
+     * @throw  HTMLCommon\Exception
      */
-    public function addElement($type, $attributes = null, $flag = HTML_APPEND)
+    public function addElement($type, $attributes = null, $flag = HTMLCommon::APPEND)
     {
         $root        = $this->getRoot();
         $docType     = $root->getDoctype(false);
@@ -911,7 +874,7 @@ implements \HTML\Common3\Face
             // If this is an object, attempt to generate the appropriate HTML
             // code.
             $element = $type;
-            if (is_subclass_of($type, '\HTML\Common3')) {
+            if (is_subclass_of($type, 'HTMLCommon')) {
                 $type = $element->getElementName();
 
                 if (!$attributes) {
@@ -1009,7 +972,6 @@ implements \HTML\Common3\Face
     /**
      * returns the meta-tags as array
      *
-     * @access public
      * @return array
      */
     public function getMeta()
@@ -1023,8 +985,7 @@ implements \HTML\Common3\Face
     /**
      * enables the Dublin Core Meta Tages
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function enableDublinCore()
     {
@@ -1037,8 +998,7 @@ implements \HTML\Common3\Face
     /**
      * enables the Dublin Core Meta Tages
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function disableDublinCore()
     {
@@ -1055,8 +1015,7 @@ implements \HTML\Common3\Face
      *
      * @param string $copy the copyright message
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function addCopyRight($copy)
     {
@@ -1077,8 +1036,7 @@ implements \HTML\Common3\Face
      *
      * @param string $author the Author message
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function addAuthor($author)
     {
@@ -1099,8 +1057,7 @@ implements \HTML\Common3\Face
      *
      * @param string $desc the Author message
      *
-     * @access public
-     * @return \HTML\Common3\Root\Head
+     * @return HTMLCommon\Root\Head
      */
     public function addDesc($desc)
     {
@@ -1116,7 +1073,7 @@ implements \HTML\Common3\Face
     // }}} addDesc
 }
 
-// }}} \HTML\Common3\Root\Head
+// }}} HTMLCommon\Root\Head
 
 /*
  * Local variables:

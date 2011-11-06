@@ -5,7 +5,7 @@ namespace HTML\Common3\Form;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Form_HiddenSelect: Class for pseudo HTML <select> Elements
+ * HTMLCommon\Form_HiddenSelect: Class for pseudo HTML <select> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,21 +40,21 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Root/Select.php';
+use HTML\Common3\Root\Select as HTMLSelectField;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Form_HiddenSelect
+// {{{ HTMLCommon\Form_HiddenSelect
 
 /**
  * Class for pseudo HTML <select> Elements
@@ -66,12 +66,12 @@ require_once 'HTML/Common3/Face.php';
  * selected values to be passed.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Face
+class HiddenSelect extends HTMLSelectField implements ElementsInterface
 {
     // {{{ properties
 
@@ -79,7 +79,6 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
@@ -87,7 +86,6 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -107,7 +105,6 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -122,7 +119,7 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
                     $id = (string) $this->getId();
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'name' can not be removed"
                         );
                     } else {
@@ -139,7 +136,7 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
                     $id = $root->generateId($this->getName());
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'id' can not be removed"
                         );
                     } else {
@@ -168,8 +165,7 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     /*
     public function setInput($type = 'file', $id = '', $class = '', $lang = '',
@@ -185,7 +181,6 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
      * returns the element type
      *
      * @return string the element type (mostly the same as the element name)
-     * @access public
      */
     public function getType()
     {
@@ -195,7 +190,7 @@ class HiddenSelectextends \HTML\Common3\Root\Selectimplements \HTML\Common3\Fa
     // }}} getType
 }
 
-// }}} \HTML\Common3\Form_HiddenSelect
+// }}} HTMLCommon\Form_HiddenSelect
 
 /*
  * Local variables:

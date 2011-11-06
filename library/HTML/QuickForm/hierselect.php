@@ -57,25 +57,22 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
      *
      * @see       setOptions()
      * @var       array
-     * @access    private
      */
-    var $_options = array();
+    private $_options = array();
     
     /**
      * Number of select elements on this group
      *
      * @var       int
-     * @access    private
      */
-    var $_nbElements = 0;
+    private $_nbElements = 0;
 
     /**
      * The javascript used to set and change the options
      *
      * @var       string
-     * @access    private
      */
-    var $_js = '';
+    private $_js = '';
 
     // }}}
     // {{{ constructor
@@ -89,10 +86,9 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
      *                                      or an associative array. Date format is passed along the attributes.
      * @param     mixed     $separator      (optional)Use a string for one separator,
      *                                      use an array to alternate the separators.
-     * @access    public
      * @return    void
      */
-    function HTML_QuickForm_hierselect($elementName=null, $elementLabel=null, $attributes=null, $separator=null)
+    public function __construct($elementName=null, $elementLabel=null, $attributes=null, $separator=null)
     {
         $this->HTML_QuickForm_element($elementName, $elementLabel, $attributes);
         $this->_persistantFreeze = true;
@@ -149,10 +145,9 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
      * </code>
      * 
      * @param     array    $options    Array of options defining each element
-     * @access    public
      * @return    void
      */
-    function setOptions($options)
+    public function setOptions($options)
     {
         $this->_options = $options;
 
@@ -180,11 +175,10 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
      *
      * @param     array     $array    Options for the first select element
      *
-     * @access    public
      * @deprecated          Deprecated since release 3.2.2
      * @return    void
      */
-    function setMainOptions($array)
+    public function setMainOptions($array)
     {
         $this->_options[0] = $array;
 
@@ -203,11 +197,10 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
      *
      * @param     array     $array    Options for the second select element
      *
-     * @access    public
      * @deprecated          Deprecated since release 3.2.2
      * @return    void
      */
-    function setSecOptions($array)
+    public function setSecOptions($array)
     {
         $this->_options[1] = $array;
 
@@ -233,10 +226,9 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
     /**
      * Sets the options for each select element
      *
-     * @access    private
      * @return    void
      */
-    function _setOptions()
+    private function _setOptions()
     {
         $toLoad = '';
         foreach (array_keys($this->_elements) AS $key) {
@@ -261,10 +253,9 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
      * @param     array     $value    An array of 2 or more values, for the first,
      *                                the second, the third etc. select
      *
-     * @access    public
      * @return    void
      */
-    function setValue($value)
+    public function setValue($value)
     {
         // fix for bug #6766. Hope this doesn't break anything more 
         // after bug #7961. Forgot that _nbElements was used in
@@ -280,10 +271,9 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
     /**
      * Creates all the elements for the group
      * 
-     * @access    private
      * @return    void
      */
-    function _createElements()
+    private function _createElements()
     {
         for ($i = 0; $i < $this->_nbElements; $i++) {
             $this->_elements[] =& new HTML_QuickForm_select($i, null, array(), $this->getAttributes());
@@ -293,7 +283,7 @@ class HTML_QuickForm_hierselect extends HTML_QuickForm_group
     // }}}
     // {{{ toHtml()
 
-    function toHtml()
+    public function toHtml()
     {
         $this->_js = '';
         if (!$this->_flagFrozen) {
@@ -481,7 +471,7 @@ JAVASCRIPT;
     // }}}
     // {{{ accept()
 
-    function accept(&$renderer, $required = false, $error = null)
+    public function accept(&$renderer, $required = false, $error = null)
     {
         $renderer->renderElement($this, $required, $error);
     } // end func accept
@@ -489,7 +479,7 @@ JAVASCRIPT;
     // }}}
     // {{{ onQuickFormEvent()
 
-    function onQuickFormEvent($event, $arg, &$caller)
+    public function onQuickFormEvent($event, $arg, &$caller)
     {
         if ('updateValue' == $event) {
             // we need to call setValue() so that the secondary option
@@ -529,9 +519,8 @@ JAVASCRIPT;
     * @param    int     Depth within options array
     * @link     http://pear.php.net/bugs/bug.php?id=16603
     * @return   array
-    * @access   private
     */
-    function _prepareOptions($ary, $depth)
+    private function _prepareOptions($ary, $depth)
     {
         if (!is_array($ary)) {
             $ret = $ary;
@@ -552,11 +541,10 @@ JAVASCRIPT;
    /**
     * Converts PHP array to its Javascript analog
     *
-    * @access private
     * @param  array     PHP array to convert
     * @return string    Javascript representation of the value
     */
-    function _convertArrayToJavascript($array)
+    private function _convertArrayToJavascript($array)
     {
         if (!is_array($array)) {
             return $this->_convertScalarToJavascript($array);
@@ -583,7 +571,7 @@ JAVASCRIPT;
     * @param    mixed
     * @return   string
     */
-    function _encodeNameValue($name, $value)
+    private function _encodeNameValue($name, $value)
     {
         return $this->_convertScalarToJavascript((string)$name) . ':'
                . $this->_convertArrayToJavascript($value);
@@ -595,11 +583,10 @@ JAVASCRIPT;
    /**
     * Converts PHP's scalar value to its Javascript analog
     *
-    * @access private
     * @param  mixed     PHP value to convert
     * @return string    Javascript representation of the value
     */
-    function _convertScalarToJavascript($val)
+    private function _convertScalarToJavascript($val)
     {
         if (is_bool($val)) {
             return $val ? 'true' : 'false';
@@ -621,11 +608,10 @@ JAVASCRIPT;
    /**
     * Quotes the string so that it can be used in Javascript string constants   
     *
-    * @access private
     * @param  string
     * @return string
     */
-    function _escapeString($str)
+    private function _escapeString($str)
     {
         return strtr($str,array(
             "\r"    => '\r',
@@ -639,4 +625,3 @@ JAVASCRIPT;
 
     // }}}
 } // end class HTML_QuickForm_hierselect
-?>

@@ -45,7 +45,6 @@
  * @package HTML_Javascript
  * @example examples/javascript.php Usage of HTML_Javascript
  * @licence http://www.php.net/license/3_0.txt PHP Licence 3.0
- * @access  public
  */
 
 //Error codes
@@ -115,25 +114,22 @@ class HTML_Javascript
      * Used to determaine if a script has been started
      *
      * @var    boolean $_started
-     * @access private
      */
-    var $_started = false;
+    private $_started = false;
 
     /**
      * The output mode specified for the script
      *
      * @var    integer $_mode
-     * @access private
      */
-    var $_mode = HTML_JAVASCRIPT_OUTPUT_RETURN;
+    private $_mode = HTML_JAVASCRIPT_OUTPUT_RETURN;
 
     /**
      * The file to direct the output to
      *
      * @var    string $_file
-     * @access private
      */
-    var $_file = '';
+    private $_file = '';
 
       
     // {{{ setOutputMode
@@ -148,10 +144,9 @@ class HTML_Javascript
      * @param  string   $file  the path to the file
      *                         (if $mode is {@link HTML_JAVASCRIPT_OUTPUT_FILE})
      * @see getOutputMode
-     * @access public
      * @return mixed    PEAR_Error or true
      */
-    function setOutputMode($mode = HTML_JAVASCRIPT_OUTPUT_RETURN, $file = NULL)
+    public function setOutputMode($mode = HTML_JAVASCRIPT_OUTPUT_RETURN, $file = NULL)
     {
         if($mode == HTML_JAVASCRIPT_OUTPUT_FILE ) {
             if(isset($file)) {
@@ -171,10 +166,9 @@ class HTML_Javascript
      * Get the output mode for the script
      *
      * @see setOutputMode
-     * @access public
      * @return mixed    PEAR_Error or true
      */
-    function getOutputMode()
+    public function getOutputMode()
     {
 
         return $this->_mode;
@@ -186,12 +180,11 @@ class HTML_Javascript
     /**
      * A custom error handler
      *
-     * @access private
      * @param  integer  $code the error code
      * @return mixed    false if the error code is invalid,
      *                  or a PEAR_Error otherwise
      */
-    function raiseError($code)
+    private function raiseError($code)
     {
         $ret = null;
         require_once 'PEAR.php';
@@ -239,11 +232,10 @@ class HTML_Javascript
      *                  with script that does not change the document (i.e.
      *                  alert does not change it).
      *
-     * @access public
      * @return mixed    a PEAR_Error if a script has been already started
      *                  or a string (HTML tag <script>)
      */
-    function startScript($defer = true)
+    public function startScript($defer = true)
     {
         $this->_started = true;
         $s      = $defer ? 'defer="defer"' : '';
@@ -260,9 +252,8 @@ class HTML_Javascript
      *
      * @return mixed    PEAR_Error if no script has been started
      *                  or the end tag for the script
-     * @access public
      */
-    function endScript()
+    public function endScript()
     {
         if ($this->_started) {
             $this->_started = false;
@@ -282,9 +273,8 @@ class HTML_Javascript
      * @param  string   $str the string returned from the calling function
      * @return mixed    depends on the output mode,
      *                  $str if it's HTML_JAVASCRIPT_OUTPUT_RETURN, true otherwise
-     * @access private
      */
-    function _out($str)
+    private function _out($str)
     {
         static $fp;
         if( isset($this) ){
@@ -327,12 +317,12 @@ class HTML_Javascript
     /**
      * A wrapper for document.writeln
      *
-     * @access public
      * @param  string  $str the string to output
      * @param  boolean $var set to true if $str is a variable name
+     *
      * @return mixed   PEAR_Error if no script was started or the processed string
      */
-    function write($str, $var = false)
+    public function write($str, $var = false)
     {
         if ($var) {
             $ret = HTML_Javascript::_out(
@@ -354,13 +344,13 @@ class HTML_Javascript
     /**
      * A wrapper for document.writeln with an addtional <br /> tag
      *
-     * @access public
      * @param  string  $str the string to output
      * @param  boolean $var set to true if $str is a variable name
+     *
      * @return mixed   PEAR_Error if no script was started *
      *                 or the processed string
      */
-    function writeLine($str, $var = false)
+    public function writeLine($str, $var = false)
     {
         if ($var) {
             return HTML_Javascript::_out(
@@ -382,13 +372,13 @@ class HTML_Javascript
     /**
      * A wrapper for alert
      *
-     * @access public
      * @param  string    $str the string to output
      * @param  boolean   $var set to true if $str is a variable name
+     *
      * @return mixed     PEAR_Error if no script was started
      *                   or the processed string
      */
-    function alert($str, $var = false)
+    public function alert($str, $var = false)
     {
         $alert  = 'alert(';
         $alert  .= $var?
@@ -409,9 +399,10 @@ class HTML_Javascript
      * @param  string $assign   the JS variable to assign the confirmation box to
      * @param  string $str      the string that will appear in the confirmation box
      * @param  bool   $var      whether $str is a JS var or not
+     *
      * @return string the processed string
      */
-    function confirm($str,$assign, $var = false)
+    public function confirm($str,$assign, $var = false)
     {
         if($var) {
             $confirm = 'confirm(' . $str . ')' . HTML_JAVASCRIPT_NL;
@@ -434,9 +425,10 @@ class HTML_Javascript
      * @param  string $assign  the JS var that the input will be assigned to
      * @param  string $default the default value
      * @param  string $var     wether $str is a JS var or not
+     *
      * @return mixed  PEAR_Error or the processed string
      */
-    function prompt($str, $assign, $default = '', $var = false)
+    public function prompt($str, $assign, $default = '', $var = false)
     {
         if ($var) {
             $prompt = 'prompt('.$str.', "'.$default.')"'.HTML_JAVASCRIPT_NL;
@@ -472,9 +464,10 @@ class HTML_Javascript
      *                          are set to yes or no, according to the boolean value.
      * @param  int   $top       the distance from the top, in pixels (only used if attr=false|true).
      * @param  int   $left      the distance from the left, in pixels (only used if attr=false|true).
+     *
      * @return mixed PEAR_Error on error or the processed string.
      */
-    function popup(
+    public function popup(
         $assign, $file, $title, $width, $height, $attr, $top = 300, $left = 300
     )
     {
@@ -517,10 +510,11 @@ class HTML_Javascript
      * @param  mixed  $attr     see popup()
      * @param  int    $top      distance from the top (in pixels
      * @param  int    $left     distance from the left (in pixels)
+     *
      * @see    popup()
      * @return the processed string
      */
-    function popupWrite(
+    public function popupWrite(
         $assign, $str, $title, $width, $height, $attr, $top = 300, $left = 300
     )
     {
@@ -558,4 +552,3 @@ class HTML_Javascript
 
     // }}} popupWrite
 }
-?>

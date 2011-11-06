@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace I18N\DecoratedList;
+
 // +----------------------------------------------------------------------+
 // | PEAR :: I18N :: DecoratedList :: HtmlSelect                        |
 // +----------------------------------------------------------------------+
@@ -12,15 +15,6 @@
 // +----------------------------------------------------------------------+
 //
 // $Id$
-
-/**
- * I18N::DecoratedList::HtmlSelect
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList.php';
 
 /**
  * I18N_DecoratedList_HtmlSelect
@@ -42,7 +36,7 @@ require_once 'I18N/DecoratedList.php';
  * @package     I18N
  * @access      public
  */
-class I18N_DecoratedList_HtmlSelect extends I18N_DecoratedList
+class HtmlSelect extends \I18N\DecoratedList
 {
     /**
      * HTML attributes of the select and the option tags

@@ -5,7 +5,7 @@ namespace HTML\Common3;
 /* vim: __set expandtab tabstop=4 shiftwidth=4 __set softtabstop=4: */
 
 /**
- * \HTML\Common3\Collection: This class implements Collection object in PHP
+ * HTMLCommon\Collection: This class implements Collection object in PHP
  *
  * PHP versions 5 and 6
  *
@@ -40,27 +40,27 @@ namespace HTML\Common3;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Diogo Souza da Silva <manifesto@manifesto.blog.br>
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-// {{{ \HTML\Common3\Collection
+// {{{ HTMLCommon\Collection
 
 /**
  * Iterator Class for Common3
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Diogo Souza da Silva <manifesto@manifesto.blog.br>
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Collectionimplements \Iterator
+class Collection implements \Iterator
 {
     // {{{ properties
 
@@ -68,7 +68,6 @@ class Collectionimplements \Iterator
      * length of this Collection
      *
      * @var      integer
-     * @access   protected
      */
     public $length = 0;
 
@@ -76,7 +75,6 @@ class Collectionimplements \Iterator
      * Array with all Elements of this Collection
      *
      * @var      array
-     * @access   private
      */
     private $_elements = array();
 
@@ -86,11 +84,10 @@ class Collectionimplements \Iterator
     /**
      * Class constructor
      *
-     * @param array|\HTML\Common3\Collection $array Array including all Elements which
+     * @param array|HTMLCommon\Collection $array Array including all Elements which
      *                                             should be part of this
      *                                             Collection in the Beginning
      *
-     * @access public
      * @return void
      */
     public function __construct($array = null)
@@ -98,7 +95,7 @@ class Collectionimplements \Iterator
         if (is_array($array)) {
             $this->_elements = $array;
             $this->count();
-        } elseif ($array instanceof \HTML\Common3\Collection) {
+        } elseif ($array instanceof HTMLCommon\Collection) {
             $this->_elements = $array->toArray();
             $this->count();
         }
@@ -110,18 +107,17 @@ class Collectionimplements \Iterator
     /**
      * Join(merge) an array or a collection into this one
      *
-     * @param array|\HTML\Common3\Collection $array Array including all Elements which
+     * @param array|HTMLCommon\Collection $array Array including all Elements which
      *                                             should be merged to this
      *                                             Collection
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function merge($array)
     {
         if (is_array($array)) {
             $this->_elements = array_merge($this->_elements, $array);
-        } elseif ($array instanceof \HTML\Common3\Collection) {
+        } elseif ($array instanceof HTMLCommon\Collection) {
             $this->_elements = array_merge($this->_elements, $array->toArray());
         }
 
@@ -142,8 +138,7 @@ class Collectionimplements \Iterator
      * @param string $arg1 key or value for the new collection item
      * @param string $arg2 value for the new collection item
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function add($arg1, $arg2 = '')
     {
@@ -174,8 +169,7 @@ class Collectionimplements \Iterator
      *
      * @param string $value value for the new collection item
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      * @see    add()
      */
     public function append($value)
@@ -194,8 +188,7 @@ class Collectionimplements \Iterator
      *
      * @param string $value value for the new collection item
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      * @see    add()
      */
     public function prepend($value)
@@ -214,8 +207,7 @@ class Collectionimplements \Iterator
      *
      * @param string $value value for the new collection item
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      * @see    add()
      */
     public function replace($value)
@@ -241,8 +233,7 @@ class Collectionimplements \Iterator
      *                         SORT_STRING
      *                         SORT_LOCALE_STRING
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function asort($flags = SORT_REGULAR)
     {
@@ -264,8 +255,7 @@ class Collectionimplements \Iterator
      *                         SORT_STRING
      *                         SORT_LOCALE_STRING
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function ksort($flags = SORT_REGULAR)
     {
@@ -287,8 +277,7 @@ class Collectionimplements \Iterator
      *                         SORT_STRING
      *                         SORT_LOCALE_STRING
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function sort($flags = SORT_REGULAR)
     {
@@ -303,7 +292,6 @@ class Collectionimplements \Iterator
     /**
      * count number of items
      *
-     * @access public
      * @return integer
      */
     public function count()
@@ -321,8 +309,7 @@ class Collectionimplements \Iterator
      *
      * @param string $key Key for the Search inside the Collection
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function remove($key)
     {
@@ -343,7 +330,6 @@ class Collectionimplements \Iterator
      *
      * @param string $key Key for the Search inside the Collection
      *
-     * @access public
      * @return boolean
      */
     public function keyExists($key)
@@ -357,7 +343,6 @@ class Collectionimplements \Iterator
     /**
      * Moves the cursor a step foward
      *
-     * @access public
      * @return mixed
      */
     public function next()
@@ -373,7 +358,6 @@ class Collectionimplements \Iterator
      *
      * @param string $key Key for the Search inside the Collection
      *
-     * @access public
      * @return boolean
      */
     public function seek($key)
@@ -400,7 +384,6 @@ class Collectionimplements \Iterator
      *
      * @param string $key Key for the Search inside the Collection
      *
-     * @access public
      * @return boolean
      * @see    seek()
      */
@@ -415,7 +398,6 @@ class Collectionimplements \Iterator
     /**
      * Moves the cursor a step back
      *
-     * @access public
      * @return mixed
      */
     public function back()
@@ -429,7 +411,6 @@ class Collectionimplements \Iterator
     /**
      * Moves the cursor a step back
      *
-     * @access public
      * @return mixed
      * @see    back()
      */
@@ -444,7 +425,6 @@ class Collectionimplements \Iterator
     /**
      * Puts the cursor at start
      *
-     * @access public
      * @return mixed
      */
     public function rewind()
@@ -458,7 +438,6 @@ class Collectionimplements \Iterator
     /**
      * Puts the cursor at start
      *
-     * @access public
      * @return mixed
      * @see    rewind()
      */
@@ -473,7 +452,6 @@ class Collectionimplements \Iterator
     /**
      * Puts cursor at the end
      *
-     * @access public
      * @return mixed
      */
     public function forward()
@@ -487,7 +465,6 @@ class Collectionimplements \Iterator
     /**
      * Puts cursor at the end
      *
-     * @access public
      * @return mixed
      * @see    forward
      */
@@ -502,7 +479,6 @@ class Collectionimplements \Iterator
     /**
      * Return the item in the cursor point
      *
-     * @access public
      * @return mixed
      */
     public function current()
@@ -516,7 +492,6 @@ class Collectionimplements \Iterator
     /**
      * Returns Actual cursor key
      *
-     * @access public
      * @return mixed
      */
     public function currentKey()
@@ -530,7 +505,6 @@ class Collectionimplements \Iterator
     /**
      * Returns Actual cursor key
      *
-     * @access public
      * @return mixed
      * @see    currentKey()
      */
@@ -545,7 +519,6 @@ class Collectionimplements \Iterator
     /**
      * Check if cursor is at a valid item
      *
-     * @access public
      * @return boolean
      */
     public function valid()
@@ -563,7 +536,6 @@ class Collectionimplements \Iterator
     /**
      * same as valid()
      *
-     * @access public
      * @return boolean
      * @see    valid()
      */
@@ -580,7 +552,6 @@ class Collectionimplements \Iterator
      *
      * @param string $key Key for the Search inside the Collection
      *
-     * @access public
      * @return null|Collection Item
      */
     public function __get($key)
@@ -602,7 +573,6 @@ class Collectionimplements \Iterator
      *
      * @param string $key Key for the Search inside the Collection
      *
-     * @access public
      * @return null|Collection Item
      * @see    __get()
      */
@@ -621,7 +591,6 @@ class Collectionimplements \Iterator
      * @param string $key  Key for the Search inside the Collection
      * @param mixed  $item Value for the Collection Item
      *
-     * @access public
      * @return null|Collection Item
      */
     public function __set($key, $item)
@@ -644,7 +613,6 @@ class Collectionimplements \Iterator
      * @param string $key  Key for the Search inside the Collection
      * @param mixed  $item Value for the Collection Item
      *
-     * @access public
      * @return null|Collection Item
      * @see    __set()
      */
@@ -659,8 +627,7 @@ class Collectionimplements \Iterator
     /**
      * resets all the collection, including keys
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function clear()
     {
@@ -676,7 +643,6 @@ class Collectionimplements \Iterator
     /**
      * return the size of the collection
      *
-     * @access public
      * @return integer
      * @see    count()
      */
@@ -691,7 +657,6 @@ class Collectionimplements \Iterator
     /**
      * returns if the collection is empty or not
      *
-     * @access public
      * @return boolean
      * @see    count()
      */
@@ -712,7 +677,6 @@ class Collectionimplements \Iterator
      *
      * @param mixed $obj Object|Item which should be searched inside the Collection
      *
-     * @access public
      * @return boolean
      * @see    indexOf
      */
@@ -733,7 +697,6 @@ class Collectionimplements \Iterator
      *
      * @param mixed $obj Object|Item which should be seached inside the Collection
      *
-     * @access public
      * @return mixed the index of the found Item, NULL if not found
      */
     public function indexOf($obj)
@@ -757,7 +720,6 @@ class Collectionimplements \Iterator
      *
      * @param mixed $obj Object|Item which should be seached inside the Collection
      *
-     * @access public
      * @return mixed the index of the found Item, NULL if not found
      */
     public function lastIndexOf($obj)
@@ -785,8 +747,7 @@ class Collectionimplements \Iterator
      * @param integer $end   last possition of the original Collection for the new
      *                       Collection
      *
-     * @access public
-     * @return \HTML\Common3\Collection|null
+     * @return HTMLCommon\Collection|null
      */
     public function subCollection($start, $end)
     {
@@ -827,8 +788,7 @@ class Collectionimplements \Iterator
      *
      * @param integer $size new Size for the Collection
      *
-     * @access public
-     * @return \HTML\Common3\Collection
+     * @return HTMLCommon\Collection
      */
     public function trimToSize($size)
     {
@@ -845,7 +805,6 @@ class Collectionimplements \Iterator
     /**
      * Return the xml of this collection
      *
-     * @access public
      * @return string
      */
     public function toXml()
@@ -877,7 +836,6 @@ class Collectionimplements \Iterator
     /**
      * Returns as an array of all Collection items
      *
-     * @access public
      * @return array
      */
     public function toArray()
@@ -891,7 +849,6 @@ class Collectionimplements \Iterator
     /**
      * Alias to __toArray()
      *
-     * @access public
      * @return array
      * @see    __toArray()
      */
@@ -903,7 +860,7 @@ class Collectionimplements \Iterator
     // }}} asArray
 }
 
-// }}} \HTML\Common3\Collection
+// }}} HTMLCommon\Collection
 
 /*
  * Local variables:

@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Form: Class for HTML <form> Elements
+ * HTMLCommon\Root\Form: Class for HTML <form> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,34 +40,39 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Form/Container.php';
+use HTML\Common3\Form\Container as CommonHTMLFormContainer;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Form
+use HTML\Common3\Form as FormElements;
+
+/**
+ * base class for HTMLCommon\
+ */
+use HTML\Common3 as HTMLCommon;
+
+// {{{ HTMLCommon\Root\Form
 
 /**
  * Class for HTML <form> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Form
-extends \HTML\Common3\Form\Container
-implements \HTML\Common3\Face
+class Form extends CommonHTMLFormContainer implements ElementsInterface
 {
     // {{{ properties
 
@@ -75,7 +80,6 @@ implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'form';
 
@@ -83,7 +87,6 @@ implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
@@ -91,7 +94,6 @@ implements \HTML\Common3\Face
      * pointer to an legend if added
      *
      * @var      Pointer
-     * @access   public
      */
     public $legend = null;
 
@@ -99,7 +101,6 @@ implements \HTML\Common3\Face
      * pointer to an fieldset if added
      *
      * @var      Pointer
-     * @access   public
      */
     public $fieldset = null;
 
@@ -107,21 +108,19 @@ implements \HTML\Common3\Face
      * array of all fieldses in the form
      *
      * @var      Pointer
-     * @access   public
      */
     public $fieldsets = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('name', 'action', 'method', 'id');
@@ -130,7 +129,6 @@ implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -138,7 +136,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -422,7 +419,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var        array
-     * @access    protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -499,7 +495,6 @@ implements \HTML\Common3\Face
      * (and its parents)
      *
      * @var        array
-     * @access    protected
      */
     protected $_forbidElements = array(
         '#all' => array(
@@ -511,7 +506,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -523,17 +517,16 @@ implements \HTML\Common3\Face
      *
      * @param string|array $attributes Array of attribute 'name' => 'value' pairs
      *                                 or HTML attribute string
-     * @param \HTML\Common3\ $parent     pointer to the parent object
-     * @param \HTML\Common3\ $html       pointer to the HTML root object
+     * @param HTMLCommon\ $parent     pointer to the parent object
+     * @param HTMLCommon\ $html       pointer to the HTML root object
      *
-     * @return \HTML\Common3\
-     * @access public
+     * @return HTMLCommon\
      * @see    HTML_Common::HTML_Common()
      * @see    HTML_Common2::__construct()
      * @see    HTML_Page2::HTML_Page2()
      */
     public function __construct($attributes = null,
-    \HTML\Common3 $parent = null, \HTML\Common3 $html = null)
+    HTMLCommon $parent = null, HTMLCommon $html = null)
     {
         $attributes = $this->parseAttributes($attributes);
 
@@ -552,8 +545,7 @@ implements \HTML\Common3\Face
     /**
      * set the default attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Form
+     * @return HTMLCommon\Root\Form
      */
     protected function initAttributes()
     {
@@ -574,8 +566,7 @@ implements \HTML\Common3\Face
      *
      * @param string $legend the legend string for the fieldset
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addFieldset($legend = 'Legend')
     {
@@ -604,8 +595,7 @@ implements \HTML\Common3\Face
      * @param string $lang  the language for the Div
      * @param string $id    the id for the Div
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addDiv($style='', $class='', $lang='', $id='')
     {
@@ -638,8 +628,7 @@ implements \HTML\Common3\Face
      * @param string  $weite   default for width
      * @param string  $display CSS display property
      *
-     * @access public
-     * @return \HTML\Common3\Root\A
+     * @return HTMLCommon\Root\A
      */
     public function addLink($lang, $func, $ref = '#', $key = '', $name = '',
                             $index = 0, $char = 'UTF-8', $titel = '',
@@ -664,8 +653,7 @@ implements \HTML\Common3\Face
      * @param string $summary the summary for the table
      * @param string $style   the CSS style for the table
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function addTable($lang='de', $class='', $summary='', $style='')
     {
@@ -689,8 +677,7 @@ implements \HTML\Common3\Face
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addInput($type = 'text', $id = '', $class = '', $lang = '',
                              $title = '', $value = '', $style = '')
@@ -709,7 +696,6 @@ implements \HTML\Common3\Face
      *
      * @param string $class the CSS class for the form
      *
-     * @access public
      * @return void
      */
     public function changeClass($class)
@@ -725,7 +711,6 @@ implements \HTML\Common3\Face
     /**
      * disables all fieldsets in this form
      *
-     * @access public
      * @return void
      */
     public function disableFieldset()
@@ -756,7 +741,6 @@ implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -770,7 +754,7 @@ implements \HTML\Common3\Face
                     $id = (string) $this->getId();
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'name' can not be removed"
                         );
                     } else {
@@ -809,8 +793,7 @@ implements \HTML\Common3\Face
      * @param string $class (optional) a CSS class for the form
      * @param string $style (optional) a CSS style definition for the form
      *
-     * @return \HTML\Common3\Root\Form
-     * @access public
+     * @return HTMLCommon\Root\Form
      */
     public function setForm($lang = '', $class = '', $style = '')
     {
@@ -845,7 +828,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -883,13 +865,12 @@ implements \HTML\Common3\Face
      * @param integer $flag  Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         $this->fieldset->setValue($value, $flag);
 
@@ -902,8 +883,8 @@ implements \HTML\Common3\Face
     /**
      * add a new Child Element
      *
-     * @param string|\HTML\Common3\ $type       the HTML Tag for the new Child Element
-     *                                        or an \HTML\Common3\ Child object
+     * @param string|HTMLCommon\ $type       the HTML Tag for the new Child Element
+     *                                        or an HTMLCommon\ Child object
      * @param string              $attributes Array of attribute 'name' => 'value'
      *                                        pairs or HTML attribute string
      * @param integer             $flag       Determines whether to prepend, append
@@ -914,11 +895,10 @@ implements \HTML\Common3\Face
      * @param string|array        $data       Element-specific data (not used)
      *
      * @return void
-     * @access public
-     * @throw  \HTML\Common3\Exception
+     * @throw  HTMLCommon\Exception
      */
     public function addFormElement($type, $attributes = null,
-    $flag = HTML_APPEND, $name = null, $labelText = null, $data = null)
+    $flag = HTMLCommon::APPEND, $name = null, $labelText = null, $data = null)
     {
         $i = count($this->_elements);
 
@@ -929,7 +909,7 @@ implements \HTML\Common3\Face
         $docType     = $root->getDoctype(false);
         $elementName = $this->getElementName();
 
-        if (!\HTML\Common3\Globals::getElementChildren($elementName)) {
+        if (!HTMLCommon\Globals::getElementChildren($elementName)) {
             return null;
         }
 
@@ -940,7 +920,7 @@ implements \HTML\Common3\Face
             // If this is an object, attempt to generate the appropriate HTML
             // code.
             $element = $type;
-            if (is_subclass_of($type, '\HTML\Common3')) {
+            if (is_subclass_of($type, 'HTMLCommon')) {
                 $type = $element->getElementName();
 
                 if (!$attributes) {
@@ -965,7 +945,7 @@ implements \HTML\Common3\Face
                 $type = 'script';
             } else {
                 //not supported
-                throw new \HTML\Common3\ChildElementNotSupportedException(
+                throw new HTMLCommon\ChildElementNotSupportedException(
                     'Type of Child Element \'' . get_class($element) .
                     '\' is not supported'
                 );
@@ -978,9 +958,7 @@ implements \HTML\Common3\Face
 
         switch ($type) {
         case 'reset':
-            require_once 'HTML/Common3/Form/Reset.php';
-
-            $type    = new \HTML\Common3\Form\Reset($attributes);
+            $type    = new FormElements\Reset($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
             $element->setValue($labelText);
 
@@ -988,10 +966,8 @@ implements \HTML\Common3\Face
         case 'text':
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
-            //var_dump($label);
-            require_once 'HTML/Common3/Form/Text.php';
 
-            $type    = new \HTML\Common3\Form\Text($attributes);
+            $type    = new FormElements\Text($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
@@ -999,16 +975,12 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/Password.php';
-
-            $type    = new \HTML\Common3\Form\Password($attributes);
+            $type    = new FormElements\Password($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
         case 'hidden':
-            require_once 'HTML/Common3/Form/Hidden.php';
-
-            $type    = new \HTML\Common3\Form\Hidden($attributes);
+            $type    = new FormElements\Hidden($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             $element->setValue($labelText);
@@ -1017,9 +989,7 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/Checkbox.php';
-
-            $type    = new \HTML\Common3\Form\Checkbox($attributes);
+            $type    = new FormElements\Checkbox($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
@@ -1027,16 +997,12 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/Radio.php';
-
-            $type    = new \HTML\Common3\Form\Radio($attributes);
+            $type    = new FormElements\Radio($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
         case 'submit':
-            require_once 'HTML/Common3/Form/Submit.php';
-
-            $type    = new \HTML\Common3\Form\Submit($attributes);
+            $type    = new FormElements\Submit($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
             $element->setValue($labelText);
 
@@ -1045,16 +1011,12 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/Image.php';
-
-            $type    = new \HTML\Common3\Form\Image($attributes);
+            $type    = new FormElements\Image($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
         case 'button':
-            require_once 'HTML/Common3/Form/Button.php';
-
-            $type    = new \HTML\Common3\Form\Button($attributes);
+            $type    = new FormElements\Button($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
             $element->setValue($labelText);
 
@@ -1063,16 +1025,12 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/File.php';
-
-            $type    = new \HTML\Common3\Form\File($attributes);
+            $type    = new FormElements\File($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
         case 'xbutton':
-            require_once 'HTML/Common3/Root/Button.php';
-
-            $type    = new \HTML\Common3\Root\Button($attributes);
+            $type    = new Button($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
             $element->setValue($labelText);
 
@@ -1081,9 +1039,7 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/StaticText.php';
-
-            $type    = new \HTML\Common3\Form\StaticText($attributes);
+            $type    = new FormElements\StaticText($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
@@ -1091,9 +1047,7 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Form/Html.php';
-
-            $type    = new \HTML\Common3\Form\Html($attributes);
+            $type    = new FormElements\Html($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
@@ -1101,24 +1055,18 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Root/A.php';
-
-            $type    = new \HTML\Common3\Root\A($attributes);
+            $type    = new A($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
         case 'hiddenselect':
-            require_once 'HTML/Common3/Form/HiddenSelect.php';
-
-            $type    = new \HTML\Common3\Form\HiddenSelect($attributes);
+            $type    = new FormElements\HiddenSelect($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
         case 'header':
             if (in_array('zero', $posElements)) {
-                require_once 'HTML/Common3/Root/Zero.php';
-
-                $type    = new \HTML\Common3\Root\Zero();
+                $type    = Zero();
                 $element = $this->fieldset->addElement($type, $attributes, $flag);
             } else {
                 //$this->fieldset->legend->setValue('');
@@ -1128,9 +1076,7 @@ implements \HTML\Common3\Face
             $label = $this->fieldset->addElement('label', array('for' => $name));
             $label->setValue($labelText);
 
-            require_once 'HTML/Common3/Root/Textarea.php';
-
-            $type    = new \HTML\Common3\Root\Textarea($attributes);
+            $type    = new Textarea($attributes);
             $element = $this->fieldset->addElement($type, $attributes, $flag);
 
             break;
@@ -1139,11 +1085,11 @@ implements \HTML\Common3\Face
             $ve = $docType['version'];
             $va = $docType['variant'];
 
-            $enabled = \HTML\Common3\Globals::isElementEnabled($type, $dt, $ve,
+            $enabled = HTMLCommon\Globals::isElementEnabled($type, $dt, $ve,
             $va);
 
             if (!$enabled) {
-                $replace = \HTML\Common3\Globals::getReplacement($elementName);
+                $replace = HTMLCommon\Globals::getReplacement($elementName);
 
                 if ($replace !== null && is_string($replace)) {
                     $type = $replace;
@@ -1171,7 +1117,7 @@ implements \HTML\Common3\Face
     // }}} addFormElement
 }
 
-// }}} \HTML\Common3\Root\Form
+// }}} HTMLCommon\Root\Form
 
 /*
  * Local variables:

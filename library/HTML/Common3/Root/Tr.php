@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Tr: Class for HTML <tr> Elements
+ * HTMLCommon\Root\Tr: Class for HTML <tr> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,32 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Table/Root.php';
+use HTML\Common3\Table\Root as CommonHTMLTableElement;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Tr
+// {{{ HTMLCommon\Root\Tr
 
 /**
  * Class for HTML <tr> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
+class Tr extends CommonHTMLTableElement implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +73,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'tr';
 
@@ -81,21 +80,19 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -104,7 +101,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -112,7 +108,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -125,7 +120,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -189,7 +183,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -210,8 +203,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $func   an array of attributes or an attribute string
      * @param string  $inhalt the cell content
      *
-     * @access public
-     * @return \HTML\Common3\Root\Td | \HTML\Common3\Root\Th | null
+     * @return HTMLCommon\Root\Td | HTMLCommon\Root\Th | null
      */
     public function addCell($type = 'td', $style = '', $width = 0, $span = 1,
                             $title = '', $abbr = '', $axis = '', $lang = 'de',
@@ -314,7 +306,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param string $fill the new autofill content
      *
-     * @access public
      * @return void
      */
     public function setAutoFill($fill)
@@ -342,7 +333,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Returns the autoFill value
      *
      * @return mixed
-     * @access public
      */
     public function getAutoFill()
     {
@@ -357,7 +347,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param boolean $grow TRUE, if the row should grow automatilly
      *
-     * @access public
      * @return void
      */
     public function setAutoGrow($grow)
@@ -372,7 +361,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Returns the autoGrow value
      *
      * @return boolean
-     * @access public
      */
     public function getAutoGrow()
     {
@@ -387,7 +375,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param integer $colnum the Amount of Cols
      *
-     * @access public
      * @return integer
      */
     public function setColCount($colnum)
@@ -405,7 +392,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * the spanned cells into account in the return value.
      *
      * @return integer
-     * @access public
      */
     public function getColCount()
     {
@@ -423,7 +409,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string $type the new row type, the new type for all cells in the row
      *                     possible values: 'th' or 'td'
      *
-     * @access public
      * @return void
      */
     public function setRowType($type)
@@ -434,7 +419,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
         $posElements = $this->getPosElements();
 
         if (in_array($type, $posElements) &&
-            array_key_exists($type, \HTML\Common3\Globals::$allElements)
+            array_key_exists($type, HTMLCommon\Globals::$allElements)
            ) {
             foreach ($this->cols as $col) {
                 $col->setElementName($type);
@@ -451,7 +436,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $colnum Column index
      * @param string  $type   'th' or 'td'
      *
-     * @access public
      * @return integer|null|PEAR_Error
      */
     public function setColType($colnum, $type)
@@ -463,7 +447,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
         $posElements = $this->getPosElements();
 
         if (in_array($type, $posElements) &&
-            array_key_exists($type, \HTML\Common3\Globals::$allElements)
+            array_key_exists($type, HTMLCommon\Globals::$allElements)
            ) {
             $this->adjustColCount($colnum, 'setColType');
 
@@ -491,7 +475,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $attributes Associative array or string of table
      *                            row attributes
      *
-     * @access public
      * @return void
      */
     public function setCellAttributes($colnum, $attributes)
@@ -528,7 +511,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $attributes Associative array or string of table row
      *                            attributes
      *
-     * @access public
      * @return void
      */
     public function updateCellAttributes($colnum, $attributes)
@@ -564,7 +546,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $colnum Column index
      *
      * @return array
-     * @access public
      */
     public function getCellAttributes($colnum)
     {
@@ -598,8 +579,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          in $row
      * @param string  $type     (optional) Cell type either 'th' or 'td'
      *
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @throws HTMLCommon\InvalidArgumentException
      * @return mixed
      */
     public function setCellContents($colnum, $contents, $type = 'td')
@@ -612,7 +592,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
             foreach ($contents as $content) {
                 if ($this->cols[$colnum - 1] !== null) {
                     $this->cols[$colnum - 1]->setElementName($type);
-                    $this->cols[$colnum - 1]->setValue($content, HTML_REPLACE);
+                    $this->cols[$colnum - 1]->setValue($content, HTMLCommon::REPLACE);
                 }
                 $colnum++;
 
@@ -621,12 +601,12 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
         } elseif (is_string($contents)) {
             if ($this->cols[$colnum - 1] !== null) {
                 $this->cols[$colnum - 1]->setElementName($type);
-                $this->cols[$colnum - 1]->setValue($contents, HTML_REPLACE);
+                $this->cols[$colnum - 1]->setValue($contents, HTMLCommon::REPLACE);
             }
         } else {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 'Parameter $contents must be an Array or a String in '.
-                '\HTML\Common3\Root\Tr::setCellContents'
+                'HTMLCommon\Root\Tr::setCellContents'
             );
         }
     }
@@ -642,9 +622,8 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $attributes (optional) Associative array or string of
      *                              table row attributes
      *
-     * @access public
      * @throws PEAR_Error
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setHeaderContents($colnum, $contents, $attributes = null)
     {
@@ -659,7 +638,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
                 if ($this->cols[$colnum - 1] !== null) {
                     $this->cols[$colnum - 1]->setElementName('th');
                     $this->cols[$colnum - 1]->setAttributes($attributes);
-                    $this->cols[$colnum - 1]->setValue($content, HTML_REPLACE);
+                    $this->cols[$colnum - 1]->setValue($content, HTMLCommon::REPLACE);
                 }
 
                 $colnum++;
@@ -668,12 +647,12 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
             if ($this->cols[$colnum - 1] !== null) {
                 $this->cols[$colnum - 1]->setElementName('th');
                 $this->cols[$colnum - 1]->setAttributes($attributes);
-                $this->cols[$colnum - 1]->setValue($contents, HTML_REPLACE);
+                $this->cols[$colnum - 1]->setValue($contents, HTMLCommon::REPLACE);
             }
         } else {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 'Parameter $contents must be an Array or a String in '.
-                '\HTML\Common3\Root\Tr::setCellContents'
+                'HTMLCommon\Root\Tr::setCellContents'
             );
         }
     }
@@ -686,7 +665,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param integer $colnum Column index
      *
-     * @access public
      * @return mixed
      */
     public function getCellContents($colnum)
@@ -715,7 +693,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string $type       (optional) Cell type either 'th' or 'td'
      *
      * @return integer
-     * @access public
      */
     public function addCol($contents = null, $attributes = null, $type = 'td')
     {
@@ -752,7 +729,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $attributes (optional) Associative array or string
      *                            of table row attributes
      *
-     * @access public
      * @return void
      */
     public function setColAttributes($colnum, $attributes = null)
@@ -770,7 +746,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $attributes (optional) Associative array or string
      *                            of table row attributes
      *
-     * @access public
      * @return void
      */
     public function updateColAttributes($colnum, $attributes = null)
@@ -793,8 +768,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $firstAttributes (optional) Which attributes should be
      *                                 applied to the first col, 1 or 2.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Tr
+     * @return HTMLCommon\Root\Tr
      */
     public function altColAttributes($start, $attributes1, $attributes2,
         $firstAttributes = 1)
@@ -825,7 +799,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed $attributes (optional) Associative array or
      *                          string of table row attributes
      *
-     * @access public
      * @throws PEAR_Error
      * @return void
      */
@@ -849,7 +822,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed $attributes (optional) Associative array or
      *                          string of table row attributes
      *
-     * @access public
      * @throws PEAR_Error
      * @return void
      */
@@ -878,7 +850,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -904,7 +875,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -945,8 +915,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string  $method Name of calling method
      * @param string  $type   type of cells to add
      *
-     * @access protected
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @throws HTMLCommon\InvalidArgumentException
      * @return void
      */
     protected function adjustColCount($colnum, $method, $type = 'td')
@@ -969,9 +938,9 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
                 /**/
                 return $this->getColCount();
             } else {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     'Invalid col reference[' . $colnum .
-                    '] in \HTML\Common3\Root\Tr::' . $method
+                    '] in HTMLCommon\Root\Tr::' . $method
                 );
             }
         }
@@ -991,7 +960,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            in <td>|<th> tags; true if attributes are to
      *                            be applied in <tr> tag
      *
-     * @access public
      * @return void
      */
     public function setRowAttributes($attributes, $inTR = true)
@@ -1032,7 +1000,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            in <td>|<th> tags; true if attributes are to
      *                            be applied in <tr> tag
      *
-     * @access public
      * @return void
      */
     public function updateRowAttributes($attributes, $inTR = true)
@@ -1049,7 +1016,6 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param integer $colnum Column index
      *
-     * @access public
      * @return void
      */
     public function setNullCell($colnum)
@@ -1064,7 +1030,7 @@ class Trextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
     // }}} setNullCell
 }
 
-// }}} \HTML\Common3\Root\Tr
+// }}} HTMLCommon\Root\Tr
 
 /*
  * Local variables:

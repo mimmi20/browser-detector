@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Script: Class for HTML <script> Elements
+ * HTMLCommon\Root\Script: Class for HTML <script> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,22 +40,22 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
 //Error codes
 
@@ -100,20 +100,18 @@ define('HTML_Common3_Root_SCRIPT_OUTPUT_ECHO', 2);
  */
 define('HTML_Common3_Root_SCRIPT_OUTPUT_FILE', 3);
 
-// {{{ \HTML\Common3\Root\Script
+// {{{ HTMLCommon\Root\Script
 
 /**
  * Class for HTML <script> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Script
-extends \HTML\Common3
-implements \HTML\Common3\Face
+class Script extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -121,7 +119,6 @@ implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'script';
 
@@ -129,7 +126,6 @@ implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array(
         'type' => 'text/javascript'
@@ -138,14 +134,13 @@ implements \HTML\Common3\Face
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('type');
@@ -154,7 +149,6 @@ implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -162,7 +156,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array();
 
@@ -170,7 +163,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -210,7 +202,6 @@ implements \HTML\Common3\Face
      * Used to determaine if a script has been started
      *
      * @var      boolean    $started
-     * @access   protected
      * @deprecated just for compatibility with HTML_JAVASCRIPT
      */
     protected $_started = false;
@@ -219,7 +210,6 @@ implements \HTML\Common3\Face
      * The output mode specified for the script
      *
      * @var      integer    $mode
-     * @access   protected
      */
     protected $_mode = HTML_Common3_Root_SCRIPT_OUTPUT_RETURN;
 
@@ -227,7 +217,6 @@ implements \HTML\Common3\Face
      * The file to direct the output to
      *
      * @var      string    $file
-     * @access   protected
      */
     protected $_file = '';
 
@@ -235,7 +224,6 @@ implements \HTML\Common3\Face
      * value for text elements
      *
      * @var      string
-     * @access   protected
      */
     protected $_value = array();
 
@@ -243,7 +231,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -253,8 +240,7 @@ implements \HTML\Common3\Face
     /**
      * set the default attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Script
+     * @return HTMLCommon\Root\Script
      */
     protected function initAttributes()
     {
@@ -277,13 +263,12 @@ implements \HTML\Common3\Face
      * @param integer $flag  Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         $value = (string) $value;
 
@@ -322,7 +307,6 @@ implements \HTML\Common3\Face
      *                             if FALSE the levels will be ignored
      *
      * @return string
-     * @access protected
      * @see    toHtml()
      */
     protected function write($elementName, $innerHTML, $step = null,
@@ -360,7 +344,7 @@ implements \HTML\Common3\Face
             break;
 
         default:
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 'Invalid output mode'
             );
             break;
@@ -380,16 +364,15 @@ implements \HTML\Common3\Face
      *                         written
      *
      * @return void
-     * @access public
-     * @throw  \HTML\Common3\FileNotExistException
+     * @throw  HTMLCommon\FileNotExistException
      */
     public function toFile($filename)
     {
         $filename = (string) $filename;
 
         if ($filename == '') {
-            throw new \HTML\Common3\InvalidArgumentException(
-                '\HTML\Common3\Root\Script::toFile() error: File name is missing'
+            throw new HTMLCommon\InvalidArgumentException(
+                'HTMLCommon\Root\Script::toFile() error: File name is missing'
             );
         }
 
@@ -406,8 +389,8 @@ implements \HTML\Common3\Face
         }
 
         if (!file_exists($filename)) {
-            throw new \HTML\Common3\FileNotExistException(
-                '\HTML\Common3\Root\Script::toFile() error: Failed to write to '
+            throw new HTMLCommon\FileNotExistException(
+                'HTMLCommon\Root\Script::toFile() error: Failed to write to '
                 . $filename
             );
         }
@@ -426,7 +409,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -543,7 +525,6 @@ implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -571,12 +552,11 @@ implements \HTML\Common3\Face
      *
      * @param string $str the string to output
      *
-     * @access public
      * @return void
      */
     public function addLine($str)
     {
-        $zero = new \HTML\Common3\Root\Zero();        $zero->setValue((string) $str, HTML_REPLACE, false);        $this->_elements[] = $zero;
+        $zero = new HTMLCommon\Root\Zero();        $zero->setValue((string) $str, HTMLCommon::REPLACE, false);        $this->_elements[] = $zero;
     }
 
     // }}} addLine
@@ -594,7 +574,6 @@ implements \HTML\Common3\Face
      *                      {@link HTML_Common3_Root_SCRIPT_OUTPUT_FILE})
      *
      * @see    getOutputMode
-     * @access public
      * @return mixed PEAR_Error or true
      */
     public function setOutputMode($mode = HTML_Common3_Root_SCRIPT_OUTPUT_RETURN,
@@ -604,8 +583,8 @@ implements \HTML\Common3\Face
             if (isset($file)) {
                 $this->_file = (string) $file;
             } else {
-                throw new \HTML\Common3\InvalidArgumentException(
-                    '\HTML\Common3\Root\Script::setOutputMode() error: ' .
+                throw new HTMLCommon\InvalidArgumentException(
+                    'HTMLCommon\Root\Script::setOutputMode() error: ' .
                     'A filename must be specified for setoutputMode()'
                 );
             }
@@ -622,7 +601,6 @@ implements \HTML\Common3\Face
      * Get the output mode for the script
      *
      * @see       setOutputMode
-     * @access public
      * @return mixed PEAR_Error or true
      */
     public function getOutputMode()
@@ -641,7 +619,6 @@ implements \HTML\Common3\Face
      *                       with script that does not change the document
      *                       (i.e.alert does not change it).
      *
-     * @access public
      * @return void
      * @deprecated just for compatibility with HTML_JAVASCRIPT
      */
@@ -662,7 +639,6 @@ implements \HTML\Common3\Face
      *
      * @return mixed PEAR_Error if no script has been started
      *               or the end tag for the script
-     * @access public
      * @return void
      * @deprecated just for compatibility with HTML_JAVASCRIPT
      */
@@ -679,7 +655,6 @@ implements \HTML\Common3\Face
      * @param string  $str the string to output
      * @param boolean $var set to true if $str is a variable name
      *
-     * @access protected
      * @return string
      */
     protected function getVar($str, $var = false)
@@ -700,7 +675,6 @@ implements \HTML\Common3\Face
      * @param string  $str the string to output
      * @param boolean $var set to true if $str is a variable name
      *
-     * @access protected
      * @return string|integer
      */
     protected function getVarInt($str, $var = false)
@@ -721,7 +695,6 @@ implements \HTML\Common3\Face
      * @param string  $str the string to output
      * @param boolean $var set to true if $str is a variable name
      *
-     * @access public
      * @return void
      */
     public function JSwrite($str, $var = false)
@@ -741,7 +714,6 @@ implements \HTML\Common3\Face
      * @param string  $str the string to output
      * @param boolean $var set to true if $str is a variable name
      *
-     * @access public
      * @return void
      */
     public function JSwriteln($str, $var = false)
@@ -761,8 +733,7 @@ implements \HTML\Common3\Face
      * @param string  $str the string to output
      * @param boolean $var set to true if $str is a variable name
      *
-     * @access public
-     * @return \HTML\Common3\Root\Zero
+     * @return HTMLCommon\Root\Zero
      */
     public function JSwriteLine($str, $var = false)
     {
@@ -781,8 +752,7 @@ implements \HTML\Common3\Face
      * @param string  $str the string to output
      * @param boolean $var set to true if $str is a variable name
      *
-     * @access public
-     * @return \HTML\Common3\Root\Zero
+     * @return HTMLCommon\Root\Zero
      */
     public function alert($str, $var = false)
     {
@@ -805,8 +775,7 @@ implements \HTML\Common3\Face
      * @param boolean $var    whether $str is a JS var or not
      * @param boolean $global if true, the JS var will be global
      *
-     * @return \HTML\Common3\Root\Zero
-     * @access public
+     * @return HTMLCommon\Root\Zero
      */
     public function confirm($str, $assign, $var = false, $global = true)
     {
@@ -836,8 +805,7 @@ implements \HTML\Common3\Face
      * @param boolean $var     wether $str is a JS var or not
      * @param boolean $global  if true, the JS var will be global
      *
-     * @return \HTML\Common3\Root\Zero
-     * @access public
+     * @return HTMLCommon\Root\Zero
      */
     public function prompt($str, $assign, $default = '', $var = false,
                            $global = true)
@@ -884,8 +852,7 @@ implements \HTML\Common3\Face
      * @param boolean $global if true, the JS var will be global
      * @param boolean $var    wether the parameters are JS vars or not
      *
-     * @return mixed \HTML\Common3\Root\Zero or PEAR_Error
-     * @access public
+     * @return mixed HTMLCommon\Root\Zero or PEAR_Error
      */
     public function popup(
         $assign, $file, $title, $width = 800, $height = 600, $attr = true,
@@ -894,8 +861,8 @@ implements \HTML\Common3\Face
     {
         $file    = (string)    $file;
         if ($file == '') {
-            throw new \HTML\Common3\InvalidArgumentException(
-                'File needed for Function \HTML\Common3\Root\Script::popup'
+            throw new HTMLCommon\InvalidArgumentException(
+                'File needed for Function HTMLCommon\Root\Script::popup'
             );
         }
 
@@ -908,9 +875,9 @@ implements \HTML\Common3\Face
 
         if (!is_array($attr)) {
             if (!is_bool($attr)) {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     'Parameter $attr should be either an array or a boolean in '
-                  . 'Function \HTML\Common3\Root\Script::popup'
+                  . 'Function HTMLCommon\Root\Script::popup'
                 );
             } else {
                 if ($attr === true) {
@@ -979,9 +946,9 @@ implements \HTML\Common3\Face
         if ($assign != '') {
             $assign_str = $assign . ' = ';
         } else {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 'Assign Parameter needed for Function ' .
-                '\HTML\Common3\Root\Script::popupwrite'
+                'HTMLCommon\Root\Script::popupwrite'
             );
         }
 
@@ -998,9 +965,9 @@ implements \HTML\Common3\Face
 
         if (!is_array($attr)) {
             if (!is_bool($attr)) {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     'Parameter $attr should be either an array or a boolean in '
-                  . 'Function \HTML\Common3\Root\Script::popupwrite'
+                  . 'Function HTMLCommon\Root\Script::popupwrite'
                 );
             } else {
                 if ($attr === true) {
@@ -1051,7 +1018,6 @@ implements \HTML\Common3\Face
      * @param string $str the string to be processed
      *
      * @return mixed the processed string
-     * @access public
      * @source
      */
     public function escapeString($str)
@@ -1072,7 +1038,7 @@ implements \HTML\Common3\Face
     // }}} escapeString
 }
 
-// }}} \HTML\Common3\Root\Script
+// }}} HTMLCommon\Root\Script
 
 /*
  * Local variables:

@@ -42,30 +42,13 @@ namespace HTML;
  * @link     http://pear.php.net/package/\HTML\CSS3
  */
 
-require_once 'HTML/Common3/Root/Style.php';
+use HTML\Common3\Root\Style as HTMLStyle;
 
 /**
  * class Interface for HTML_Common3
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-/**#@+
- * Basic error codes
- *
- * @var        integer
- */
-define('CSS3_ERROR_UNKNOWN', -1);
-define('CSS3_ERROR_INVALID_INPUT', -100);
-define('CSS3_ERROR_INVALID_GROUP', -101);
-define('CSS3_ERROR_NO_GROUP', -102);
-define('CSS3_ERROR_NO_ELEMENT', -103);
-define('CSS3_ERROR_NO_ELEMENT_PROPERTY', -104);
-define('CSS3_ERROR_NO_FILE', -105);
-define('CSS3_ERROR_WRITE_FILE', -106);
-define('CSS3_ERROR_INVALID_SOURCE', -107);
-define('CSS3_ERROR_INVALID_DEPS', -108);
-define('CSS3_ERROR_NO_ATRULE', -109);
-/**#@-*/
 
 // {{{ \HTML\CSS3
 
@@ -82,10 +65,23 @@ define('CSS3_ERROR_NO_ATRULE', -109);
  * @link     http://pear.php.net/package/\HTML\CSS3
  */
 
-class CSS3
-extends \HTML\Common3\Root\Style
-implements \HTML\Common3\Face
+class CSS3 extends HTMLStyle implements ElementsInterface
 {
+    // {{{ constants
+    
+    const ERROR_UNKNOWN = -1;
+    const ERROR_INVALID_INPUT = -100;
+    const ERROR_INVALID_GROUP = -101;
+    const ERROR_NO_GROUP = -102;
+    const ERROR_NO_ELEMENT = -103;
+    const ERROR_NO_ELEMENT_PROPERTY = -104;
+    const ERROR_NO_FILE = -105;
+    const ERROR_WRITE_FILE = -106;
+    const ERROR_INVALID_SOURCE = -107;
+    const ERROR_INVALID_DEPS = -108;
+    const ERROR_NO_ATRULE = -109;
+    
+    // }}} constants
     // {{{ properties
 
     /**
@@ -124,7 +120,6 @@ implements \HTML\Common3\Face
      *    Allow to have duplicate rules in selector. Useful for IE hack.
      *
      * @var      HTML_Common3_Collection
-     * @access   protected
      * @see      __set(), __get()
      */
     protected $_options = null;
@@ -133,7 +128,6 @@ implements \HTML\Common3\Face
      * Contains the CSS definitions.
      *
      * @var      array
-     * @access   private
      */
     private $_css = array();
 
@@ -142,7 +136,6 @@ implements \HTML\Common3\Face
      * defined in CSS
      *
      * @var      array
-     * @access   private
      */
     private $_alibis = array();
 
@@ -158,7 +151,6 @@ implements \HTML\Common3\Face
      * Contains grouped styles
      *
      * @var      array
-     * @access   private
      */
     private $_groups = array();
 
@@ -166,7 +158,6 @@ implements \HTML\Common3\Face
      * Number of CSS definition groups
      *
      * @var      integer
-     * @access   private
      */
     private $_groupCount = 0;
 
@@ -174,7 +165,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -188,7 +178,6 @@ implements \HTML\Common3\Face
      * @param string $value Attribute value (will be set to $name if omitted)
      *
      * @return void
-     * @access public
      * @see    setAttribute()
      */
     public function __set($name, $value)
@@ -207,7 +196,6 @@ implements \HTML\Common3\Face
      * @param string $name Attribute name
      *
      * @return string|null Attribute value, null if attribute does not exist
-     * @access public
      * @see    getAttribute()
      */
     public function __get($name)
@@ -221,7 +209,6 @@ implements \HTML\Common3\Face
     /**
      * Returns the current API version
      *
-     * @access public
      * @return string
      * @static
      * @see    HTML_Common::apiVersion()
@@ -239,7 +226,6 @@ implements \HTML\Common3\Face
     /**
      * set/reset the options to default values
      *
-     * @access protected
      * @return \HTML\CSS3
      */
     protected function initOptions()
@@ -280,7 +266,6 @@ implements \HTML\Common3\Face
      * Return all configuration options at once
      *
      * @return array
-     * @access public
      */
     public function getOptions()
     {
@@ -297,7 +282,6 @@ implements \HTML\Common3\Face
      * @param mixed  $value Option value
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    HTML_Common2::setOption()
      * @see    HTML_Common3::setOption()
      */
@@ -335,7 +319,6 @@ implements \HTML\Common3\Face
      * @param string $name Option name
      *
      * @return mixed|null Option value, null if option does not exist
-     * @access public
      * @see    HTML_Common2::getOption()
      * @see    HTML_Common3::getOption()
      *
@@ -374,7 +357,6 @@ implements \HTML\Common3\Face
      * @param bool $value flag to true if single line, false for multi lines
      *
      * @return \HTML\CSS3
-     * @access public
      */
     public function setSingleLineOutput($value)
     {
@@ -395,7 +377,6 @@ implements \HTML\Common3\Face
      *                    false otherwise
      *
      * @return \HTML\CSS3
-     * @access public
      */
     public function setOutputGroupsFirst($value)
     {
@@ -419,12 +400,11 @@ implements \HTML\Common3\Face
      *                            2 = deep array
      *
      * @return array|string
-     * @access public
      */
     public function parseSelectors($selectors, $outputMode = 0)
     {
         if (!is_string($selectors)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTML\Common3\Exception\InvalidArgumentException(
                 '\HTML\CSS3::parseSelectors() error: ' .
                 'string required for parameter $selectors, ' .
                 gettype($selectors) . ' given'
@@ -432,7 +412,7 @@ implements \HTML\Common3\Face
         }
 
         if (!is_int($outputMode)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTML\Common3\Exception\InvalidArgumentException(
                 '\HTML\CSS3::parseSelectors() error: ' .
                 'integer required for parameter $outputMode, ' .
                 gettype($outputMode) . ' given'
@@ -440,7 +420,7 @@ implements \HTML\Common3\Face
         }
 
         if ($outputMode < 0 || $outputMode > 2) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTML\Common3\Exception\InvalidArgumentException(
                 '\HTML\CSS3::parseSelectors() error: ' .
                 'values 0 | 1 | 2 expected for parameter $outputMode, ' .
                 $outputMode . ' given'
@@ -529,9 +509,8 @@ implements \HTML\Common3\Face
      *                    false otherwise
      *
      * @return     \HTML\CSS3
-     * @access     public
      */
-    function setXhtmlCompliance($value)
+    public function setXhtmlCompliance($value)
     {
         $this->setOption('xhtml', (boolean) $value);
 
@@ -545,7 +524,6 @@ implements \HTML\Common3\Face
      * sort and move simple declarative At-Rules to the top
      *
      * @return \HTML\CSS3
-     * @access protected
      */
     protected function sortAtRules()
     {
@@ -583,7 +561,6 @@ implements \HTML\Common3\Face
      * Return the list of supported At-Rules
      *
      * @return array
-     * @access public
      */
     public function getAtRulesList()
     {
@@ -613,13 +590,12 @@ implements \HTML\Common3\Face
      *                          @namespace
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    unsetAtRule()
      */
     public function createAtRule($atKeyword, $arguments = '')
     {
         if (!is_string($atKeyword)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::createAtRule() error: ' .
                 'string required for parameter $atKeyword, ' .
                 gettype($atKeyword) . ' given'
@@ -629,7 +605,7 @@ implements \HTML\Common3\Face
         $allowed_atrules = array('@charset', '@import', '@namespace');
 
         if (!in_array(strtolower($atKeyword), $allowed_atrules)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::createAtRule() error: ' .
                 'value of (' . implode(' | ', $allowed_atrules) .
                 ') required for parameter $atKeyword, ' . $atKeyword . ' given'
@@ -637,7 +613,7 @@ implements \HTML\Common3\Face
         }
 
         if (!is_string($arguments)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::createAtRule() error: ' .
                 'string required for parameter $arguments, ' .
                 gettype($arguments) . ' given'
@@ -645,7 +621,7 @@ implements \HTML\Common3\Face
         }
 
         if (empty($arguments)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::createAtRule() error: ' .
                 'none empty value required for parameter $arguments, \'' .
                 $arguments . '\' given'
@@ -677,12 +653,11 @@ implements \HTML\Common3\Face
      * @param string $atKeyword at-rule keyword
      *
      * @return \HTML\CSS3
-     * @access public
      */
     public function unsetAtRule($atKeyword)
     {
         if (!is_string($atKeyword)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::unsetAtRule() error: ' .
                 'string required for parameter $atKeyword, ' .
                 gettype($atKeyword) . ' given'
@@ -692,7 +667,7 @@ implements \HTML\Common3\Face
         $allowed_atrules = $this->getAtRulesList();
 
         if (!in_array(strtolower($atKeyword), $allowed_atrules)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::unsetAtRule() error: ' .
                 'value of (' . implode(' | ', $allowed_atrules) .
                 ') required for parameter $atKeyword, ' . $atKeyword . ' given'
@@ -702,7 +677,7 @@ implements \HTML\Common3\Face
         $atKeyword = strtolower((string) $atKeyword);
 
         if (!isset($this->_css[$atKeyword])) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::unsetAtRule() error: ' .
                 'unknown @rule for parameter $atKeyword given'
             );
@@ -734,14 +709,13 @@ implements \HTML\Common3\Face
      * @param bool   $duplicates (optional) Allow or disallow duplicates
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    getAtRuleStyle()
      */
     public function setAtRuleStyle($atKeyword, $arguments, $selectors,
     $property, $value, $duplicates = null)
     {
         if (!is_string($atKeyword)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::setAtRuleStyle() error: ' .
                 'string required for parameter $atKeyword, ' .
                 gettype($atKeyword) . ' given'
@@ -752,7 +726,7 @@ implements \HTML\Common3\Face
         $atKeyword       = strtolower((string) $atKeyword);
 
         if (!in_array($atKeyword, $allowed_atrules)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::setAtRuleStyle() error: ' .
                 'value of (' . implode(' | ', $allowed_atrules) .
                 ') required for parameter $atKeyword, ' . $atKeyword . ' given'
@@ -760,7 +734,7 @@ implements \HTML\Common3\Face
         }
 
         if (empty($arguments) && $atKeyword != '@font-face') {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::setAtRuleStyle() error: ' .
                 'not empty value for $atKeyword == ' . $atKeyword .
                 ' required for parameter $arguments, \'' .
@@ -769,7 +743,7 @@ implements \HTML\Common3\Face
         }
 
         if (!is_string($selectors)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::setAtRuleStyle() error: ' .
                 'string required for parameter $selectors, ' .
                 gettype($selectors) . ' given'
@@ -777,7 +751,7 @@ implements \HTML\Common3\Face
         }
 
         if (!is_string($property)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::setAtRuleStyle() error: ' .
                 'string required for parameter $property, ' .
                 gettype($property) . ' given'
@@ -785,7 +759,7 @@ implements \HTML\Common3\Face
         }
 
         if (!is_string($value)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::setAtRuleStyle() error: ' .
                 'string required for parameter $value, ' .
                 gettype($value) . ' given'
@@ -793,7 +767,7 @@ implements \HTML\Common3\Face
         }
 
         if (empty($property)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::createAtRule() error: ' .
                 'none empty value required for parameter $property, \'' .
                 $property . '\' given'
@@ -801,7 +775,7 @@ implements \HTML\Common3\Face
         }
 
         if (empty($value)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 '\HTML\CSS3::createAtRule() error: ' .
                 'none empty value required for parameter $value, \'' .
                 $value . '\' given'
@@ -859,7 +833,6 @@ implements \HTML\Common3\Face
      * @param string $property  property of a single declaration style block
      *
      * @return null|string
-     * @access public
      * @see    setAtRuleStyle()
      */
     public function getAtRuleStyle($atKeyword, $arguments, $selectors,
@@ -899,7 +872,6 @@ implements \HTML\Common3\Face
      *                          will return an automatically assigned integer.
      *
      * @return mixed
-     * @access public
      * @see    unsetGroup()
      */
     public function createGroup($selectors, $group = null)
@@ -941,7 +913,6 @@ implements \HTML\Common3\Face
      * @param mixed $group CSS definition group identifier
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    createGroup()
      */
     public function unsetGroup($group)
@@ -988,7 +959,6 @@ implements \HTML\Common3\Face
      * @param bool   $duplicates (optional) Allow or disallow duplicates.
      *
      * @return null|int Returns an integer if duplicates are allowed.
-     * @access public
      * @see    getGroupStyle()
      */
     public function setGroupStyle($group, $property, $value, $duplicates = null)
@@ -1034,7 +1004,6 @@ implements \HTML\Common3\Face
      * @param string $property Property defined
      *
      * @return array
-     * @access public
      * @see    setGroupStyle()
      */
     public function getGroupStyle($group, $property)
@@ -1079,7 +1048,6 @@ implements \HTML\Common3\Face
      * @param string $selectors Selector(s) to be defined, comma delimited.
      *
      * @return \HTML\CSS3
-     * @access public
      */
     public function addGroupSelector($group, $selectors)
     {
@@ -1116,7 +1084,6 @@ implements \HTML\Common3\Face
      * @param string $selectors Selector(s) to be removed, comma delimited.
      *
      * @return \HTML\CSS3
-     * @access public
      */
     public function removeGroupSelector($group, $selectors)
     {
@@ -1161,7 +1128,6 @@ implements \HTML\Common3\Face
      * @param bool   $duplicates (optional) Allow or disallow duplicates.
      *
      * @return null|integer
-     * @access public
      * @see    getStyle()
      */
     public function setStyle($element, $property, $value, $duplicates = null)
@@ -1207,7 +1173,6 @@ implements \HTML\Common3\Face
      * @param string $property Property defined
      *
      * @return mixed
-     * @access public
      * @see    setStyle()
      */
     public function getStyle($element, $property)
@@ -1269,8 +1234,7 @@ implements \HTML\Common3\Face
      *
      * @return     array|PEAR_Error
      * @since      version 1.1.0 (2007-01-01)
-     * @access     public
-     * @throws     \HTML\CSS3_ERROR_INVALID_INPUT
+     * @throws     \HTML\CSS3::ERROR_INVALID_INPUT
      * @link       http://www.php.net/en/ref.pcre.php
      *             Regular Expression Functions (Perl-Compatible)
      */
@@ -1362,7 +1326,6 @@ implements \HTML\Common3\Face
      * @param string $old Selector that is already defined
      *
      * @return boolean FALSE in a case of an error, TRUE otherwise
-     * @access public
      */
     public function setSameStyle($new, $old)
     {
@@ -1415,7 +1378,6 @@ implements \HTML\Common3\Face
      *                    otherwise
      *
      * @return \HTML\CSS3
-     * @access public
      */
     public function setCache($cache = true)
     {
@@ -1431,7 +1393,6 @@ implements \HTML\Common3\Face
      * Returns the cache option value
      *
      * @return boolean
-     * @access public
      * @see    setCache()
      */
     public function getCache()
@@ -1453,7 +1414,6 @@ implements \HTML\Common3\Face
      * @param string $filename (optional)
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    getContentDisposition()
      * @link   http://pear.php.net/bugs/bug.php?id=12195 Patch by Carsten Wiedmann
      */
@@ -1484,7 +1444,6 @@ implements \HTML\Common3\Face
      *
      * @return string|boolean boolean FALSE if no content disposition, otherwise
      *                        string for inline filename
-     * @access public
      * @see    setContentDisposition()
      * @link   http://pear.php.net/bugs/bug.php?id=12195 Patch by Carsten Wiedmann
      */
@@ -1505,7 +1464,6 @@ implements \HTML\Common3\Face
      * @param string $type (optional) Charset encoding; defaults to ISO-8859-1.
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    getCharset()
      */
     public function setCharset($type = 'iso-8859-1')
@@ -1524,7 +1482,6 @@ implements \HTML\Common3\Face
      * By default, \HTML\CSS3 uses iso-8859-1 encoding.
      *
      * @return string
-     * @access public
      * @see    setCharset()
      */
     public function getCharset()
@@ -1545,7 +1502,6 @@ implements \HTML\Common3\Face
      *                           duplicate style definitions
      *
      * @return \HTML\CSS3
-     * @access public
      * @see    createGroup(), setGroupStyle(), setStyle()
      */
     public function parseString($str, $duplicates = null)
@@ -1599,7 +1555,7 @@ implements \HTML\Common3\Face
                     $var = 'styles';
                 }
 
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     '\HTML\CSS3::parseString() error: ' .
                     'Invalid CSS structure (invalid data source) ' .
                     'given in parameter $' . $var
@@ -1734,8 +1690,7 @@ implements \HTML\Common3\Face
      * @param bool   $duplicates (optional) Allow or disallow duplicates.
      *
      * @return \HTML\CSS3|PEAR_Error
-     * @access public
-     * @throws \HTML\CSS3_ERROR_NO_FILE
+     * @throws \HTML\CSS3::ERROR_NO_FILE
      * @see    parseString()
      */
     public function parseFile($filename, $duplicates = null)
@@ -1749,7 +1704,7 @@ implements \HTML\Common3\Face
         }
 
         if (!file_exists($filename)) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 'file ' . $filename . ' does not exist'
             );
         }
@@ -1772,7 +1727,6 @@ implements \HTML\Common3\Face
      * @param bool  $duplicates (optional) Allow or disallow duplicates.
      *
      * @return     \HTML\CSS3
-     * @access     public
      * @see        parseString(), parseFile()
      */
     public function parseData($styles, $duplicates = null)
@@ -1815,15 +1769,14 @@ implements \HTML\Common3\Face
      * @param boolean $showWarnings TRUE, to show the warnings
      *
      * @return boolean|null
-     * @access public
-     * @throws \HTML\CSS3_ERROR_INVALID_DEPS, \HTML\CSS3_ERROR_INVALID_SOURCE
+     * @throws \HTML\CSS3::ERROR_INVALID_DEPS, \HTML\CSS3::ERROR_INVALID_SOURCE
      */
     public function validate($styles, &$messages, $showWarnings = true)
     {
         $php = phpversion();
         if (version_compare($php, '5.0.0', '<')) {
             return $this->raiseCssError(
-                \HTML\CSS3_ERROR_INVALID_DEPS, 
+                \HTML\CSS3::ERROR_INVALID_DEPS, 
                 'exception',
                 array(
                     'funcname' => __FUNCTION__,
@@ -1835,7 +1788,7 @@ implements \HTML\Common3\Face
         
         if (class_exists('Services_W3C_CSSValidator', false) === false) {
             return $this->raiseCssError(
-                \HTML\CSS3_ERROR_INVALID_DEPS, 
+                \HTML\CSS3::ERROR_INVALID_DEPS, 
                 'exception',
                 array(
                     'funcname' => __FUNCTION__,
@@ -1916,7 +1869,7 @@ implements \HTML\Common3\Face
                     }
                 }
 
-                $this->raiseCssError(\HTML\CSS3_ERROR_INVALID_SOURCE,
+                $this->raiseCssError(\HTML\CSS3::ERROR_INVALID_SOURCE,
                     ((count($r->errors) == 0) ? 'warning' : 'error'),
                     array('sourcenum' => $i,
                           'errcount' => count($r->errors),
@@ -1936,7 +1889,6 @@ implements \HTML\Common3\Face
      * Return the full contents of CSS data sources (parsed) in an array
      *
      * @return array
-     * @access public
      */
     public function toArray()
     {
@@ -1968,7 +1920,6 @@ implements \HTML\Common3\Face
      *                        for which inline CSS should be generated
      *
      * @return     string
-     * @access     public
      */
     public function toInline($element)
     {
@@ -2032,8 +1983,7 @@ implements \HTML\Common3\Face
      * @param string $filename Name of file that content the stylesheet
      *
      * @return     string
-     * @access     public
-     * @throws     \HTML\CSS3_ERROR_WRITE_FILE
+     * @throws     \HTML\CSS3::ERROR_WRITE_FILE
      * @see        toHtml()
      */
     public function toFile($filename)
@@ -2051,7 +2001,7 @@ implements \HTML\Common3\Face
 
         if (!file_exists($filename)) {
             return $this->raiseCssError(
-                \HTML\CSS3_ERROR_WRITE_FILE, 
+                \HTML\CSS3::ERROR_WRITE_FILE, 
                 'error',
                 array('filename' => $filename)
             );
@@ -2074,7 +2024,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      * @see    HTML_CSS::toString()
      */
     public function toString()
@@ -2096,7 +2045,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      * @see    HTML_Common2::toHtml()
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
@@ -2117,7 +2065,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -2261,7 +2208,6 @@ implements \HTML\Common3\Face
      * and contentDisposition headers
      *
      * @return     void
-     * @access     public
      * @see        writeInner()
      */
     public function display()
@@ -2279,7 +2225,6 @@ implements \HTML\Common3\Face
      * and contentDisposition headers
      *
      * @return void
-     * @access public
      */
     public function displayInner()
     {
@@ -2305,7 +2250,6 @@ implements \HTML\Common3\Face
      * returns the document MIME encoding that is sent to the browser.
      *
      * @return string
-     * @access public
      * @see    getMimeEncoding()
      *
      * @assert() === 'text/css'
@@ -2321,7 +2265,6 @@ implements \HTML\Common3\Face
     /**
      * returns the Content type
      *
-     * @access protected
      * @return string
      */
     protected function getContentType()

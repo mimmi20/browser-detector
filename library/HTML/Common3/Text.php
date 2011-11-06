@@ -5,7 +5,7 @@ namespace HTML\Common3;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Text: Base Class for the most of the HTML inline Elements
+ * HTMLCommon\Text: Base Class for the most of the HTML inline Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,43 +40,36 @@ namespace HTML\Common3;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * \HTML\Common3\Root\Zero represents the text Content
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Root/Zero.php';
+use HTML\Common3\ElementsInterface;
 
-/**
- * class Interface for \HTML\Common3\
- */
-require_once 'HTML/Common3/Face.php';
-
-// {{{ \HTML\Common3\Text
+// {{{ HTMLCommon\Text
 
 /**
  * abstract Base Class for the most of the HTML inline Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Text
-extends \HTML\Common3
-implements \HTML\Common3\Face
+abstract class Text extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -84,7 +77,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -163,7 +155,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -204,7 +195,6 @@ implements \HTML\Common3\Face
      * value for text elements
      *
      * @var      string
-     * @access   protected
      */
     protected $_value = null;
 
@@ -212,7 +202,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -224,22 +213,21 @@ implements \HTML\Common3\Face
      *
      * @param string|array $attributes Array of attribute 'name' => 'value' pairs
      *                                 or HTML attribute string
-     * @param \HTML\Common3\ $parent     pointer to the parent object
-     * @param \HTML\Common3\ $html       pointer to the HTML root object
+     * @param HTMLCommon\ $parent     pointer to the parent object
+     * @param HTMLCommon\ $html       pointer to the HTML root object
      *
-     * @return \HTML\Common3\
-     * @access public
+     * @return HTMLCommon\
      * @see    HTML_Common::HTML_Common()
      * @see    HTML_Common2::__construct()
      * @see    HTML_Page2::HTML_Page2()
      */
     public function __construct($attributes = null,
-    \HTML\Common3 $parent = null, \HTML\Common3 $html = null)
+    HTMLCommon $parent = null, HTMLCommon $html = null)
     {
         parent::__construct($attributes, $parent, $html);
 
         if ($this->getElementName() != '') {
-            $this->value = new \HTML\Common3\Root\Zero(); //all Elements expect zero
+            $this->value = new Root\Zero(); //all Elements expect zero
         } else {
             $this->value = ''; //the zero element
         }
@@ -255,13 +243,12 @@ implements \HTML\Common3\Face
      * @param integer $flag  Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         if (!$this->_elementEmpty) {
             if (is_object($this->value)) {
@@ -283,7 +270,6 @@ implements \HTML\Common3\Face
      * NOTE: this function has no relation to the Attribute "value"
      *
      * @return string
-     * @access public
      */
     public function getValue()
     {
@@ -310,7 +296,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -327,7 +312,7 @@ implements \HTML\Common3\Face
 
         if ($childcount) {
             foreach ($this->_elements as $element) {
-                if (is_subclass_of($element, '\HTML\Common3')) {
+                if (is_subclass_of($element, 'HTMLCommon')) {
                     if (is_object($element) && $element->isEnabled()) {
                         $txt .= $element->toHtml(
                             $step, $dump, $comments, $levels
@@ -343,7 +328,7 @@ implements \HTML\Common3\Face
                     }
                 } else {
                     /*
-                    throw new \HTML\Common3\ChildElementNotSupportedException(
+                    throw new HTMLCommon\ChildElementNotSupportedException(
                         'Type of Child Element \'' . get_class($element) .
                         '\' is not supported'
                     );
@@ -362,7 +347,7 @@ implements \HTML\Common3\Face
     // }}} writeInner
 }
 
-// }}} \HTML\Common3\Text
+// }}} HTMLCommon\Text
 
 /*
  * Local variables:

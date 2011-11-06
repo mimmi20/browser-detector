@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Menu: Class for HTML <menu> Elements
+ * HTMLCommon\Root\Menu: Class for HTML <menu> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,32 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Lists.php';
+use HTML\Common3\Lists as CommonHTMLList;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Menu
+// {{{ HTMLCommon\Root\Menu
 
 /**
  * Class for HTML <menu> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
+class Menu extends CommonHTMLList implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +73,6 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'menu';
 
@@ -81,21 +80,19 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -104,7 +101,6 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -118,7 +114,6 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      * (and its parents)
      *
      * @var      array
-     * @access   protected
      */
     protected $_forbidElements = array(
         '#all' => array(
@@ -130,7 +125,6 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -192,7 +186,6 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -202,8 +195,8 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
     /**
      * add a new Child Element
      *
-     * @param string|\HTML\Common3\ $type       the HTML Tag for the new Child
-     *                                        Element or an \HTML\Common3\ Child
+     * @param string|HTMLCommon\ $type       the HTML Tag for the new Child
+     *                                        Element or an HTMLCommon\ Child
      *                                        object
      * @param string              $attributes Array of attribute 'name' => 'value'
      *                                        pairs or HTML attribute string
@@ -211,11 +204,10 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
      *                                        append or replace the content.
      *                                        Use pre-defined constants.
      *
-     * @return null|\HTML\Common3\
-     * @access public
-     * @throw  \HTML\Common3\Exception
+     * @return null|HTMLCommon\
+     * @throw  HTMLCommon\Exception
      */
-    public function addElement($type, $attributes = null, $flag = HTML_APPEND)
+    public function addElement($type, $attributes = null, $flag = HTMLCommon::APPEND)
     {
         if (!isset($this->_attributes['type']) || $this->_attributes['type'] == 'list') {
             $this->_posElements = array(
@@ -239,7 +231,7 @@ class Menuextends \HTML\Common3\Listsimplements \HTML\Common3\Face
     // }}} addElement
 }
 
-// }}} \HTML\Common3\Root\Menu
+// }}} HTMLCommon\Root\Menu
 
 /*
  * Local variables:

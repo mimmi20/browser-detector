@@ -5,7 +5,7 @@ namespace HTML\Common3\Form;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * Abstract Base class for simple \HTML\Common3\ Form containers
+ * Abstract Base class for simple HTMLCommon\ Form containers
  *
  * PHP versions 5 and 6
  *
@@ -40,36 +40,31 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * Base class for all \HTML\Common3\ Form elements
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Form/Node.php';
+use HTML\Common3\ElementsInterface;
+
+// {{{ HTMLCommon\Form_Container
 
 /**
- * class Interface for \HTML\Common3\
- */
-require_once 'HTML/Common3/Face.php';
-
-// {{{ \HTML\Common3\Form_Container
-
-/**
- * Abstract Base class for simple \HTML\Common3\ Form containers
+ * Abstract Base class for simple HTMLCommon\ Form containers
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\Face
+abstract class Container extends Node implements ElementsInterface
 {
     // {{{ properties
 
@@ -77,21 +72,19 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * Array of field elements contained in this container
      *
      * @var      array
-     * @access   protected
      */
     protected $_fields = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('id', 'name');
@@ -100,7 +93,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -121,13 +113,12 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * @param string $value Attribute value, null if attribute is being removed
      *
      * @return void
-     * @access protected
      */
     protected function onAttributeChange($name, $value = null)
     {
         if ('name' == $name) {
             if (null === $value) {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     "Required attribute 'name' can not be removed"
                 );
             } else {
@@ -135,7 +126,7 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
             }
         } elseif ('id' == $name) {
             if (null === $value) {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     "Required attribute 'id' can not be removed"
                 );
             } else {
@@ -155,7 +146,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      *                        just return its current value
      *
      * @return boolean Old value of element's frozen status
-     * @access public
      */
     public function toggleFrozen($freeze = null)
     {
@@ -181,7 +171,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      *                            current value of the flag.
      *
      * @return boolean    Old value of "persistent freeze" flag
-     * @access public
      */
     public function persistentFreeze($persistent = null)
     {
@@ -204,7 +193,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * $_POST arrays would be for these elements.
      *
      * @return array|null
-     * @access public
      */
     public function getValue()
     {
@@ -213,7 +201,7 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
         foreach ($this->_fields as $child) {
             $value = $child->getValue();
             if (null !== $value) {
-                if ($child instanceof \HTML\Common3\Form_Container) {
+                if ($child instanceof HTMLCommon\Form_Container) {
                     $values = $this->arrayMerge($values, $value);
                 } else {
                     $name = $child->getName();
@@ -253,7 +241,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * @param array $b second array
      *
      * @return array resulting array
-     * @access protected
      */
     protected function arrayMerge(array $a, array $b)
     {
@@ -274,7 +261,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * Returns an array of this container's elements
      *
      * @return array Container elements
-     * @access public
      */
     public function getElements()
     {
@@ -290,18 +276,17 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * If the element was previously added to the container or to another
      * container, it is first removed there.
      *
-     * @param \HTML\Common3\Form\Node $element    Element to add
+     * @param HTMLCommon\Form\Node $element    Element to add
      * @param mixed                  $attributes Element attributes
      * @param integer                $flag       Determines whether to prepend,
      *                                           append or replace the content.
      *                                           Use pre-defined constants.
      *
-     * @return \HTML\Common3\Form\Node Added element
-     * @throws \HTML\Common3\InvalidArgumentException
-     * @access public
+     * @return HTMLCommon\Form\Node Added element
+     * @throws HTMLCommon\InvalidArgumentException
      */
-    public function appendChild(\HTML\Common3\Form\Node $element,
-        $attributes = null, $flag = HTML_APPEND)
+    public function appendChild(HTMLCommon\Form\Node $element,
+        $attributes = null, $flag = HTMLCommon::APPEND)
     {
         if ($this === $element->getContainer()) {
             $this->removeChild($element);
@@ -323,15 +308,15 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
     /**
      * Appends an element to the container (possibly creating it first)
      *
-     * If the first parameter is an instance of \HTML\Common3\Form\Node then all
+     * If the first parameter is an instance of HTMLCommon\Form\Node then all
      * other parameters are ignored and the method just calls {@link appendChild()}.
      * In the other case the element is first created via
-     * {@link \HTML\Common3\Factory::createElement()} and then added via the
+     * {@link HTMLCommon\Factory::createElement()} and then added via the
      * same method. This is a convenience method to reduce typing and ease
      * porting from HTML_QuickForm.
      *
-     * @param string|\HTML\Common3\ $type       the HTML Tag for the new Child Element
-     *                                        or an \HTML\Common3\ Child object
+     * @param string|HTMLCommon\ $type       the HTML Tag for the new Child Element
+     *                                        or an HTMLCommon\ Child object
      * @param string              $attributes Array of attribute 'name' => 'value'
      *                                        pairs or HTML attribute string
      * @param integer             $flag       Determines whether to prepend, append
@@ -340,15 +325,14 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * @param string              $name       Element name
      * @param array               $data       Element-specific data (not used)
      *
-     * @return \HTML\Common3\Form\Node the added element
-     * @throws \HTML\Common3\InvalidArgumentException
-     * @throws \HTML\Common3\NotFoundException
-     * @access public
+     * @return HTMLCommon\Form\Node the added element
+     * @throws HTMLCommon\InvalidArgumentException
+     * @throws HTMLCommon\NotFoundException
      */
-    public function addElement($type, $attributes = null, $flag = HTML_APPEND,
+    public function addElement($type, $attributes = null, $flag = HTMLCommon::APPEND,
     $name = null, array $data = array())
     {
-        if ($type instanceof \HTML\Common3\Form\Node) {
+        if ($type instanceof HTMLCommon\Form\Node) {
             return $this->appendChild($type, $attributes, $flag);
         } else {
             $element = parent::addElement($type, $attributes, $flag);
@@ -370,15 +354,14 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      *
      * If the reference object is not given, the element will be appended.
      *
-     * @param \HTML\Common3\Form\Node $element Element to remove
+     * @param HTMLCommon\Form\Node $element Element to remove
      *
-     * @return \HTML\Common3\Form\Node Removed object
-     * @access public
+     * @return HTMLCommon\Form\Node Removed object
      */
-    public function removeChild(\HTML\Common3\Form\Node $element)
+    public function removeChild(HTMLCommon\Form\Node $element)
     {
         if ($element->getContainer() !== $this) {
-            throw new \HTML\Common3\NotFoundException(
+            throw new HTMLCommon\NotFoundException(
                 "Element with name '".$element->getName()."' was not found"
             );
         }
@@ -400,14 +383,13 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      *
      * If the reference object is not given, the element will be appended.
      *
-     * @param \HTML\Common3\Form\Node $element   Element to insert
-     * @param \HTML\Common3\Form\Node $reference Reference to insert before
+     * @param HTMLCommon\Form\Node $element   Element to insert
+     * @param HTMLCommon\Form\Node $reference Reference to insert before
      *
-     * @return \HTML\Common3\Form\Node Inserted element
-     * @access public
+     * @return HTMLCommon\Form\Node Inserted element
      */
-    public function insertBefore(\HTML\Common3\Form\Node $element,
-                                 \HTML\Common3\Form\Node $reference = null)
+    public function insertBefore(HTMLCommon\Form\Node $element,
+                                 HTMLCommon\Form\Node $reference = null)
     {
         if (null === $reference) {
             return $this->appendChild($element);
@@ -424,7 +406,7 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
             }
             $offset++;
         }
-        throw new \HTML\Common3\NotFoundException(
+        throw new HTMLCommon\NotFoundException(
             "Reference element with name '".$reference->getName() .
             "' was not found"
         );
@@ -437,7 +419,6 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
      * Returns the number of elements in the container
      *
      * @return integer
-     * @access public
      */
     public function count()
     {
@@ -447,7 +428,7 @@ abstract class Containerextends \HTML\Common3\Form\Nodeimplements \HTML\Common
     // }}} count
 }
 
-// }}} \HTML\Common3\Form_Container
+// }}} HTMLCommon\Form_Container
 
 /*
  * Local variables:

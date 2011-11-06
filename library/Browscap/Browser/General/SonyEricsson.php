@@ -20,6 +20,8 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * SonyEricssonUserAgentHanlder
  *
@@ -30,7 +32,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class SonyEricsson
+class SonyEricsson extends BrowserHandler
 {
     protected $prefix = 'SONY_ERICSSON';
     

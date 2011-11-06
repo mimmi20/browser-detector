@@ -19,6 +19,8 @@ namespace Browscap\Browser\Gecko;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * KonquerorHandler
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Gecko;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Konqueror
+class Konqueror extends BrowserHandler
 {
     protected $prefix = 'KONQUEROR';
     

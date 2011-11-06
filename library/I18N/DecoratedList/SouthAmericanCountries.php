@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace I18N\DecoratedList;
+
 // +----------------------------------------------------------------------+
 // | PEAR :: I18N :: DecoartedList :: SouthAmericanCountries            |
 // +----------------------------------------------------------------------+
@@ -14,15 +17,6 @@
 // $Id$
 
 /**
- * I18N::DecoratedList::SouthAmericanCountries
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList/Filter.php';
-
-/**
  * I18N_DecoratedList_SouthAmericanCountries
  * 
  * Use only for decorating I18N_Country.
@@ -32,7 +26,7 @@ require_once 'I18N/DecoratedList/Filter.php';
  * @package     I18N
  * @access      public
  */
-class I18N_DecoratedList_SouthAmericanCountries extends I18N_DecoratedList_Filter
+class SouthAmericanCountries extends Filter
 {
     /**
      * Keys for SouthAmerican countries

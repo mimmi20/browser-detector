@@ -45,9 +45,8 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * Link display text
      * @var       string
      * @since     1.0
-     * @access    private
      */
-    var $_text = "";
+    private $_text = "";
 
     // }}}
     // {{{ constructor
@@ -61,13 +60,12 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * @param     mixed     $attributes     (optional)Either a typical HTML attribute string 
      *                                      or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */
-    function HTML_QuickForm_link($elementName=null, $elementLabel=null, $href=null, $text=null, $attributes=null)
+    public function __construct($elementName=null, $elementLabel=null, $href=null, $text=null, $attributes=null)
     {
-        HTML_QuickForm_element::HTML_QuickForm_element($elementName, $elementLabel, $attributes);
+        parent::__construct($elementName, $elementLabel, $attributes);
         $this->_persistantFreeze = false;
         $this->_type = 'link';
         $this->setHref($href);
@@ -82,11 +80,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * 
      * @param     string    $name   Input field name attribute
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */
-    function setName($name)
+    public function setName($name)
     {
         $this->updateAttributes(array('name'=>$name));
     } //end func setName
@@ -98,11 +95,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * Returns the element name
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      * @throws    
      */
-    function getName()
+    public function getName()
     {
         return $this->getAttribute('name');
     } //end func getName
@@ -115,11 +111,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * 
      * @param     string    $value  Value for password element
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */
-    function setValue($value)
+    public function setValue($value)
     {
         return;
     } //end func setValue
@@ -131,11 +126,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * Returns the value of the form element
      *
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */
-    function getValue()
+    public function getValue()
     {
         return;
     } // end func getValue
@@ -149,11 +143,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      *
      * @param     string    $href
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */
-    function setHref($href)
+    public function setHref($href)
     {
         $this->updateAttributes(array('href'=>$href));
     } // end func setHref
@@ -165,11 +158,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * Returns the textarea element in HTML
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      * @throws    
      */
-    function toHtml()
+    public function toHtml()
     {
         $tabs = $this->_getTabs();
         $html = "$tabs<a".$this->_getAttrString($this->_attributes).">";
@@ -185,11 +177,10 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
      * Returns the value of field without HTML tags (in this case, value is changed to a mask)
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      * @throws    
      */
-    function getFrozenHtml()
+    public function getFrozenHtml()
     {
         return;
     } //end func getFrozenHtml
@@ -197,4 +188,3 @@ class HTML_QuickForm_link extends HTML_QuickForm_static
     // }}}
 
 } //end class HTML_QuickForm_textarea
-?>

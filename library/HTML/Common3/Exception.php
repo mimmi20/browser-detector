@@ -3,7 +3,7 @@ declare(ENCODING = 'utf-8');
 namespace HTML\Common3;
 
 /**
- * Exception classes for \HTML\Common3\
+ * Exception classes for HTMLCommon\
  *
  * PHP versions 5 and 6
  *
@@ -38,20 +38,15 @@ namespace HTML\Common3;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * Base class for exceptions in PEAR
- */
-require_once 'PEAR/Exception.php';
-
-/**
- * Base class for exceptions in \HTML\Common3\ package
+ * Base class for exceptions in HTMLCommon\ package
  *
  * Such a base class is required by the Exception RFC:
  * http://pear.php.net/pepr/pepr-proposal-show.php?id=132
@@ -59,141 +54,11 @@ require_once 'PEAR/Exception.php';
  * thrown most of the time.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Exception extends \PEAR_Exception
-{
-}
-
-/**
- * Exception that denotes some resource was not found
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class NotFoundException extends Exception
-{
-}
-
-/**
- * Exception that denotes invalid arguments were passed
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class InvalidArgumentException extends Exception
-{
-}
-
-/**
- * Exception that denotes a requested file does not exist
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class FileNotExistException extends Exception
-{
-}
-
-/**
- * Exception that denotes a requested Doctype is not supported
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class DoctypeNotSupportedException extends Exception
-{
-}
-
-/**
- * Exception that denotes a attribute could not removed
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class CanNotRemoveAttributeException extends Exception
-{
-}
-
-/**
- * Exception that denotes a attribute could not changed
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class CanNotChangeAttributeException extends Exception
-{
-}
-
-/**
- * Exception that denotes that it was not possible to store an ID
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class CanNotStoreIDException extends Exception
-{
-}
-
-/**
- * Exception that denotes that it was not possible to register an ID
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class CanNotRegisterIDException extends Exception
-{
-}
-
-/**
- * Exception that denotes a requested Child Element is not supported
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class ChildElementNotSupportedException extends Exception
-{
-}
-
-/**
- * Exception that denotes a Namespace is not registered yet
- *
- * @category HTML
- * @package  \HTML\Common3\
- * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
- */
-class NamespaceNotRegisteredException extends Exception
+class Exception extends \Exception
 {
 }

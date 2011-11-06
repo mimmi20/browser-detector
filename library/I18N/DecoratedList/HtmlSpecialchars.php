@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace I18N\DecoratedList;
+
 // +----------------------------------------------------------------------+
 // | PEAR :: I18N :: DecoratedList :: HtmlSpecialchars                  |
 // +----------------------------------------------------------------------+
@@ -14,15 +17,6 @@
 // $Id$
 
 /**
- * I18N::DecoratedList::HtmlSpecialchars
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList.php';
-
-/**
  * I18N_Decorator_HtmlSpecialchars
  * 
  * When you are going to serve XHTML as XML or XHTML+XML then you will get 
@@ -33,7 +27,7 @@ require_once 'I18N/DecoratedList.php';
  * @package     I18N
  * @access      public
  */
-class I18N_DecoratedList_HtmlSpecialchars extends I18N_DecoratedList
+class HtmlSpecialchars extends \I18N\DecoratedList
 {
     /** 
      * decorate

@@ -45,7 +45,7 @@ class HTML_QuickForm_Rule_Compare extends HTML_QuickForm_Rule
     * @var array
     * @access private
     */
-    var $_operators = array(
+    private $_operators = array(
         'eq'  => '===',
         'neq' => '!==',
         'gt'  => '>',

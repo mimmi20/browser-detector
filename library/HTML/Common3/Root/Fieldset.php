@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Fieldset: Class for HTML <fieldset> Elements
+ * HTMLCommon\Root\Fieldset: Class for HTML <fieldset> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,37 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Form/Container.php';
+use HTML\Common3\Form\Container as CommonHTMLFormContainer;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Fieldset
+/**
+ * base class for HTMLCommon\
+ */
+use HTML\Common3 as HTMLCommon;
+
+// {{{ HTMLCommon\Root\Fieldset
 
 /**
  * Class for HTML <fieldset> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Face
+class Fieldset extends CommonHTMLFormContainer implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +78,6 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'fieldset';
 
@@ -81,7 +85,6 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
@@ -89,21 +92,19 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * pointer to an legend if added
      *
      * @var      Pointer
-     * @access   public
      */
     public $legend = null;
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -112,7 +113,6 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -120,7 +120,6 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -200,7 +199,6 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -265,7 +263,6 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -277,17 +274,16 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      *
      * @param string|array $attributes Array of attribute 'name' => 'value' pairs
      *                                 or HTML attribute string
-     * @param \HTML\Common3\ $parent     pointer to the parent object
-     * @param \HTML\Common3\ $html       pointer to the HTML root object
+     * @param HTMLCommon\ $parent     pointer to the parent object
+     * @param HTMLCommon\ $html       pointer to the HTML root object
      *
-     * @return \HTML\Common3\
-     * @access public
+     * @return HTMLCommon\
      * @see    HTML_Common::HTML_Common()
      * @see    HTML_Common2::__construct()
      * @see    HTML_Page2::HTML_Page2()
      */
     public function __construct($attributes = null,
-    \HTML\Common3 $parent = null, \HTML\Common3 $html = null)
+    HTMLCommon $parent = null, HTMLCommon $html = null)
     {
         parent::__construct($attributes, $parent, $html);
 
@@ -306,8 +302,7 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * @param string $lang  the language for the Div
      * @param string $id    the id for the Div
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addDiv($style = '', $class = '', $lang = '', $id = '')
     {
@@ -331,8 +326,7 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addInput($type = 'text', $id = '', $class = '', $lang = '',
                              $title = '', $value = '', $style = '')
@@ -356,8 +350,7 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
      * @param string $summary the summary for the table
      * @param string $style   the CSS style for the table
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function addTable($lang='de', $class='', $summary='', $style='')
     {
@@ -372,7 +365,7 @@ class Fieldsetextends \HTML\Common3\Form\Containerimplements \HTML\Common3\Fac
     // }}} addTable
 }
 
-// }}} \HTML\Common3\Root\Fieldset
+// }}} HTMLCommon\Root\Fieldset
 
 /*
  * Local variables:

@@ -20,6 +20,8 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * HTCUserAgentHandler
  * 
@@ -30,7 +32,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Htc
+class Htc extends BrowserHandler
 {
     public function __construct($wurflContext, $userAgentNormalizer = null)
     {

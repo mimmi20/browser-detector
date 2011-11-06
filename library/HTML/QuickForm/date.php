@@ -49,10 +49,9 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
    /**
     * Various options to control the element's display.
     *
-    * @access   private
     * @var      array
     */
-    var $_options = array(
+    private $_options = array(
         'language'         => 'en',
         'format'           => 'dMY',
         'minYear'          => 2001,
@@ -65,10 +64,9 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
 
    /**
     * These complement separators, they are appended to the resultant HTML
-    * @access   private
     * @var      array
     */
-    var $_wrap = array('', '');
+    private $_wrap = array('', '');
 
    /**
     * Options in different languages
@@ -76,10 +74,9 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     * Note to potential translators: to avoid encoding problems please send
     * your translations with "weird" letters encoded as HTML Unicode entities
     *
-    * @access   private
     * @var      array
     */
-    var $_locale = array(
+    private $_locale = array(
         'en'    => array (
             'weekdays_short'=> array ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'),
             'weekdays_long' => array ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
@@ -284,13 +281,12 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     * - 'emptyOptionText': The text displayed for the empty option.
     * - 'optionIncrement': Step to increase the option values by (works for 'i' and 's')
     *
-    * @access   public
     * @param    string  Element's name
     * @param    mixed   Label(s) for an element
     * @param    array   Options to control the element's display
     * @param    mixed   Either a typical HTML attribute string or an associative array
     */
-    function HTML_QuickForm_date($elementName = null, $elementLabel = null, $options = array(), $attributes = null)
+    public function __construct($elementName = null, $elementLabel = null, $options = array(), $attributes = null)
     {
         $this->HTML_QuickForm_element($elementName, $elementLabel, $attributes);
         $this->_persistantFreeze = true;
@@ -319,7 +315,7 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     // }}}
     // {{{ _createElements()
 
-    function _createElements()
+    private function _createElements()
     {
         $this->_separator = $this->_elements = array();
         $separator =  '';
@@ -439,10 +435,9 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     * @param    int     The start number
     * @param    int     The end number
     * @param    int     Increment by this value
-    * @access   private
     * @return   array   An array of numeric options.
     */
-    function _createOptionList($start, $end, $step = 1)
+    private function _createOptionList($start, $end, $step = 1)
     {
         for ($i = $start, $options = array(); $start > $end? $i >= $end: $i <= $end; $i += $step) {
             $options[$i] = sprintf('%02d', $i);
@@ -459,7 +454,7 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     * @param    string  A numeric string, possibly with leading zeros
     * @return   string  String with leading zeros removed
     */
-    function _trimLeadingZeros($str)
+    private function _trimLeadingZeros($str)
     {
         if (0 == strcmp($str, $this->_options['emptyOptionValue'])) {
             return $str;
@@ -471,7 +466,7 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     // }}}
     // {{{ setValue()
 
-    function setValue($value)
+    public function setValue($value)
     {
         if (empty($value)) {
             $value = array();
@@ -508,7 +503,7 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     // }}}
     // {{{ toHtml()
 
-    function toHtml()
+    public function toHtml()
     {
         include_once('HTML/QuickForm/Renderer/Default.php');
         $renderer =& new HTML_QuickForm_Renderer_Default();
@@ -520,7 +515,7 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     // }}}
     // {{{ accept()
 
-    function accept(&$renderer, $required = false, $error = null)
+    public function accept(&$renderer, $required = false, $error = null)
     {
         $renderer->renderElement($this, $required, $error);
     }
@@ -528,7 +523,7 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
     // }}}
     // {{{ onQuickFormEvent()
 
-    function onQuickFormEvent($event, $arg, &$caller)
+    public function onQuickFormEvent($event, $arg, &$caller)
     {
         if ('updateValue' == $event) {
             // we need to call setValue(), 'cause the default/constant value
@@ -541,4 +536,3 @@ class HTML_QuickForm_date extends HTML_QuickForm_group
 
     // }}}
 }
-?>

@@ -19,6 +19,8 @@ namespace Browscap\Browser\Khtml;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * SafariHanlder
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Safari
+class Safari extends BrowserHandler
 {
     protected $prefix = 'SAFARI';
     

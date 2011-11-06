@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace I18N\DecoratedList;
+
 // +----------------------------------------------------------------------+
 // | PEAR :: I18N :: DecoartedList :: NorthAmericanCountries            |
 // +----------------------------------------------------------------------+
@@ -14,15 +17,6 @@
 // $Id$
 
 /**
- * I18N::DecoratedList::NorthAmericanCountries
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList/Filter.php';
-
-/**
  * I18N_DecoratedList_NorthAmericanCountries
  * 
  * Use only for decorating I18N_Country.
@@ -32,7 +26,7 @@ require_once 'I18N/DecoratedList/Filter.php';
  * @package     I18N
  * @access      public
  */
-class I18N_DecoratedList_NorthAmericanCountries extends I18N_DecoratedList_Filter
+class NorthAmericanCountries extends Filter
 {
     /**
      * Keys for NorthAmerican countries

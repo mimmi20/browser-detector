@@ -40,14 +40,12 @@ class HTML_QuickForm_Rule
     * to determine which callback and which regex is to be used for validation
     *
     * @var  string
-    * @access   public
     */
     var $name;
 
    /**
     * Validates a value
     * 
-    * @access public
     * @abstract
     */
     function validate($value)
@@ -59,7 +57,6 @@ class HTML_QuickForm_Rule
     * Sets the rule name
     *
     * @param  string    rule name
-    * @access public
     */
     function setName($ruleName)
     {
@@ -70,7 +67,6 @@ class HTML_QuickForm_Rule
      * Returns the javascript test (the test should return true if the value is INVALID)
      *
      * @param     mixed     Options for the rule
-     * @access    public
      * @return    array     first element is code to setup validation, second is the check itself
      * @abstract
      */

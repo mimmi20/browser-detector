@@ -42,7 +42,6 @@ class HTML_QuickForm_Rule_Required extends HTML_QuickForm_Rule
      *
      * @param     string    $value      Value to check
      * @param     mixed     $options    Not used yet
-     * @access    public
      * @return    boolean   true if value is not empty
      */
     function validate($value, $options = null)

@@ -37,7 +37,6 @@
  * @subpackage Convert
  * @version 1.1.1
  * @licence http://www.php.net/license/3_0.txt PHP Licence 3.0
- * @access public
  * @example examples/js.php How to use Convert
  */
 
@@ -73,7 +72,6 @@ class HTML_Javascript_Convert
      * @param   string  the string to be processed
      * @return  mixed   the processed string
      *
-     * @access public
      * @source
      */
     function escapeString($str)
@@ -98,7 +96,6 @@ class HTML_Javascript_Convert
      * you can safely provide strings, arrays
      * or booleans as arguments for this function
      *
-     * @access public
      * @param  mixed   $var     the variable to convert
      * @param  string  $varname the variable name to declare
      * @param  boolean $global  if true, the JS var will be global
@@ -151,7 +148,6 @@ class HTML_Javascript_Convert
     /**
      * A custom error handler
      *
-     * @access public
      * @param  integer $code the error code
      * @return mixed   false if the error code is invalid,
      *                 or a PEAR_Error otherwise
@@ -178,7 +174,6 @@ class HTML_Javascript_Convert
     /**
      * Converts  a PHP string into a JS string
      *
-     * @access public
      * @param  string  $str     the string to convert
      * @param  string  $varname the variable name to declare
      * @param  boolean $global  if true, the JS var will be global
@@ -204,7 +199,6 @@ class HTML_Javascript_Convert
      * Note this function does not check the type of $bool, only if
      * the expression $bool is true or false.
      *
-     * @access public
      * @param  boolean $bool    the boolean variable
      * @param  string  $varname the variable name to declare
      * @param  boolean $global  set to true to make the JS variable global
@@ -227,7 +221,6 @@ class HTML_Javascript_Convert
     /**
      * Converts a PHP null variable into a JS null value.
      *
-     * @access public
      * @param  string  $varname the variable name to declare
      * @param  boolean $global  set to true to make the JS variable global
      * @return string  the value as javascript 
@@ -250,7 +243,6 @@ class HTML_Javascript_Convert
      * supports of multu-dimensional array.
      * Keeps keys as they are (associative arrays).
      *
-     * @access public
      * @param  string  $arr     the array to convert
      * @param  string  $varname the variable name to declare
      * @param  boolean $global  if true, the JS var will be global
@@ -317,7 +309,6 @@ class HTML_Javascript_Convert
      * supports of multu-dimensional array.
      * Keeps keys as they are (associative arrays).
      *
-     * @access public
      * @param  string  $arr     the array to convert
      * @param  string  $varname the variable name to declare
      * @param  boolean $new     if true, the JS var will be set
@@ -357,7 +348,6 @@ class HTML_Javascript_Convert
      * String variables are escaped (see {@link escapeString()}).
      *
      * @param  string  $param coment
-     * @access public
      * @return mixed return
      */
     function convertValue( $val )

@@ -19,15 +19,6 @@ namespace I18N\DecoratedList;
 // $Id$
 
 /**
- * I18N::DecoratedList::EuropeanCountries
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList/Filter.php';
-
-/**
  * I18N_DecoratedList_EuropeanCountries
  * 
  * Use only for decorating I18N_Country.

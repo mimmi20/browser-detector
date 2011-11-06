@@ -5,7 +5,7 @@ namespace HTML\Common3\Form;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Form_Password: Class for HTML <input type="password"> Elements
+ * HTMLCommon\Form_Password: Class for HTML <input type="password"> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,32 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Root/Input.php';
+use HTML\Common3\Root\Input as HTMLInputField;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Form_Password
+// {{{ HTMLCommon\Form_Password
 
 /**
  * Class for HTML <input type="password"> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
+class Password extends HTMLInputField implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +73,6 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array('type' => 'password');
 
@@ -81,7 +80,6 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -101,8 +99,6 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
-     * @return void
      */
     protected function onAttributeChange($name, $value = null)
     {
@@ -116,7 +112,7 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
                     $id = (string) $this->getId();
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'name' can not be removed"
                         );
                     } else {
@@ -133,7 +129,7 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
                     $id = $root->generateId($this->getName());
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'id' can not be removed"
                         );
                     } else {
@@ -171,8 +167,7 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function setInput($type = 'text', $id = '', $class = '', $lang = '',
                              $title = '', $value = '', $style = '')
@@ -187,7 +182,6 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * returns the element type
      *
      * @return string the element type (mostly the same as the element name)
-     * @access public
      */
     public function getType()
     {
@@ -197,7 +191,7 @@ class Passwordextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
     // }}} getType
 }
 
-// }}} \HTML\Common3\Form_Password
+// }}} HTMLCommon\Form_Password
 
 /*
  * Local variables:

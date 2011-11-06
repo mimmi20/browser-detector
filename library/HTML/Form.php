@@ -183,10 +183,9 @@ class HTML_Form
      * the the field's $default value
      *
      * @var array
-     * @access private
      * @since Property available since Release 1.3.0
      */
-    var $_default_params = array(
+    private $_default_params = array(
         'blank'       => false,
         'checkbox'    => 3,
         'file'        => false,
@@ -208,22 +207,20 @@ class HTML_Form
      * hasn't been set?
      *
      * @var boolean
-     * @access private
      * @see HTML_Form::setDefaultFromInput()
      * @since Property available since Release 1.3.0
      */
-    var $_default_from_input = true;
+    private $_default_from_input = true;
 
     /**
      * escape the $_GET/$_POST data that shows up in fields when a $default
      * hasn't been set?
      *
      * @var boolean
-     * @access private
      * @see HTML_Form::setEscapeDefaultFromInput()
      * @since Property available since Release 1.3.0
      */
-    var $_escape_default_from_input = true;
+    private $_escape_default_from_input = true;
 
 
     // }}}
@@ -243,7 +240,6 @@ class HTML_Form
      *                         in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      */
     function HTML_Form($action, $method = 'get', $name = '', $target = '',
                        $enctype = '', $attr = '')
@@ -315,7 +311,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayText(), HTML_Form::displayTextRow(),
      *      HTML_Form::returnText(), HTML_Form::returnTextRow()
@@ -349,7 +344,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::addPasswordOne(), HTML_Form::display(),
      *      HTML_Form::displayPassword(), HTML_Form::displayPasswordRow(),
      *      HTML_Form::returnPassword(), HTML_Form::returnPasswordRow(),
@@ -384,7 +378,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::addPassword(), HTML_Form::display(),
      *      HTML_Form::displayPassword(), HTML_Form::displayPasswordRow(),
      *      HTML_Form::returnPassword(), HTML_Form::returnPasswordRow(),
@@ -417,7 +410,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayCheckbox(), HTML_Form::displayCheckboxRow(),
      *      HTML_Form::returnCheckbox(), HTML_Form::returnCheckboxRow()
@@ -452,7 +444,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayTextarea(), HTML_Form::displayTextareaRow(),
      *      HTML_Form::returnTextarea(), HTML_Form::returnTextareaRow()
@@ -483,7 +474,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displaySubmit(), HTML_Form::displaySubmitRow(),
      *      HTML_Form::returnSubmit(), HTML_Form::returnSubmitRow()
@@ -513,7 +503,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayReset(), HTML_Form::displayResetRow(),
      *      HTML_Form::returnReset(), HTML_Form::returnResetRow()
@@ -555,7 +544,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displaySelect(), HTML_Form::displaySelectRow(),
      *      HTML_Form::returnSelect(), HTML_Form::returnSelectRow()
@@ -588,7 +576,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayRadio(), HTML_Form::displayRadioRow(),
      *      HTML_Form::returnRadio(), HTML_Form::returnRadioRow()
@@ -619,7 +606,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayImage(), HTML_Form::displayImageRow(),
      *      HTML_Form::returnImage(), HTML_Form::returnImageRow()
@@ -644,7 +630,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayHidden(), HTML_Form::returnHidden()
      */
@@ -668,7 +653,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayBlank(), HTML_Form::displayBlankRow(),
      *      HTML_Form::returnBlank(), HTML_Form::returnBlankRow()
@@ -699,7 +683,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayFile(), HTML_Form::displayFileRow(),
      *      HTML_Form::returnFile(), HTML_Form::returnFileRow(),
@@ -729,7 +712,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(),
      *      HTML_Form::displayPlaintext(), HTML_Form::displayPlaintextRow(),
      *      HTML_Form::returnPlaintext(), HTML_Form::returnPlaintextRow()
@@ -756,7 +738,6 @@ class HTML_Form
      *                                  be submitted in multipart format
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(), HTML_Form::end(), HTML_Form::returnStart()
      */
     function start($multipartformdata = false)
@@ -774,7 +755,6 @@ class HTML_Form
      *
      * @return void
      *
-     * @access public
      * @see HTML_Form::display(), HTML_Form::start(), HTML_Form::returnEnd()
      */
     function end()
@@ -796,7 +776,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayTextRow(), HTML_Form::addText(),
      *      HTML_Form::returnText(), HTML_Form::returnTextRow()
@@ -826,7 +805,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayText(), HTML_Form::addText(),
      *      HTML_Form::returnText(), HTML_Form::returnTextRow()
@@ -854,7 +832,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPasswordRow(), HTML_Form::addPassword(),
      *      HTML_Form::returnPassword(), HTML_Form::returnPasswordRow()
@@ -887,7 +864,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPasswordOneRow(),
      *      HTML_Form::displayPassword(), HTML_Form::addPassword(),
@@ -923,7 +899,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPasswordRow(),
      *      HTML_Form::displayPassword(), HTML_Form::addPassword(),
@@ -953,7 +928,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayCheckboxRow(), HTML_Form::addCheckbox(),
      *      HTML_Form::returnCheckbox(), HTML_Form::returnCheckboxRow()
@@ -980,7 +954,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayCheckboxRow(), HTML_Form::addCheckbox(),
      *      HTML_Form::returnCheckbox(), HTML_Form::returnCheckboxRow()
@@ -1010,7 +983,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayTextareaRow(), HTML_Form::addTextarea(),
      *      HTML_Form::returnTextarea(), HTML_Form::returnTextareaRow()
@@ -1044,7 +1016,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayTextareaRow(), HTML_Form::addTextarea(),
      *      HTML_Form::returnTextarea(), HTML_Form::returnTextareaRow()
@@ -1073,7 +1044,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySubmit(), HTML_Form::addSubmit(),
      *      HTML_Form::returnSubmit(), HTML_Form::returnSubmitRow()
@@ -1100,7 +1070,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySubmit(), HTML_Form::addSubmit(),
      *      HTML_Form::returnSubmit(), HTML_Form::returnSubmitRow()
@@ -1125,7 +1094,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayResetRow(), HTML_Form::addReset(),
      *      HTML_Form::returnReset(), HTML_Form::returnResetRow()
@@ -1152,7 +1120,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayReset(), HTML_Form::addReset(),
      *      HTML_Form::returnReset(), HTML_Form::returnResetRow()
@@ -1189,7 +1156,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySelectRow(), HTML_Form::addSelect(),
      *      HTML_Form::returnSelect(), HTML_Form::returnSelectRow()
@@ -1231,7 +1197,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySelect(), HTML_Form::addSelect(),
      *      HTML_Form::returnSelect(), HTML_Form::returnSelectRow()
@@ -1259,7 +1224,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayImageRow(), HTML_Form::addImage(),
      *      HTML_Form::returnImage(), HTML_Form::returnImageRow()
@@ -1288,7 +1252,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayImage(), HTML_Form::addImage(),
      *      HTML_Form::returnImage(), HTML_Form::returnImageRow()
@@ -1314,7 +1277,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::returnHidden(), HTML_Form::addHidden()
      */
@@ -1339,7 +1301,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayRadioRow(), HTML_Form::addRadio(),
      *      HTML_Form::returnRadio(), HTML_Form::returnRadioRow()
@@ -1367,7 +1328,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayRadio(), HTML_Form::addRadio(),
      *      HTML_Form::returnRadio(), HTML_Form::returnRadioRow()
@@ -1388,7 +1348,6 @@ class HTML_Form
      *
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayBlankRow(), HTML_Form::addBlank(),
      *      HTML_Form::returnBlank(), HTML_Form::returnBlankRow()
@@ -1413,7 +1372,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayBlank(), HTML_Form::addBlank(),
      *      HTML_Form::returnBlank(), HTML_Form::returnBlankRow()
@@ -1439,7 +1397,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayFileRow(), HTML_Form::addFile(),
      *      HTML_Form::returnFile(), HTML_Form::returnFileRow(),
@@ -1472,7 +1429,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayFile(), HTML_Form::addFile(),
      *      HTML_Form::returnFile(), HTML_Form::returnFileRow(),
@@ -1497,7 +1453,6 @@ class HTML_Form
      *
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPlaintextRow(), HTML_Form::addPlaintext(),
      *      HTML_Form::returnPlaintext(), HTML_Form::returnPlaintextRow()
@@ -1521,7 +1476,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPlaintext(), HTML_Form::addPlaintext(),
      *      HTML_Form::returnPlaintext(), HTML_Form::returnPlaintextRow()
@@ -1550,7 +1504,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayText(), HTML_Form::displayTextRow(),
      *      HTML_Form::returnTextRow(), HTML_Form::addText()
@@ -1585,7 +1538,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayText(), HTML_Form::displayTextRow(),
      *      HTML_Form::returnText(), HTML_Form::addText()
@@ -1620,7 +1572,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPassword(), HTML_Form::displayPasswordRow(),
      *      HTML_Form::returnPasswordRow(), HTML_Form::addPassword()
@@ -1657,7 +1608,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPassword(), HTML_Form::displayPasswordRow(),
      *      HTML_Form::returnPassword(), HTML_Form::addPassword()
@@ -1701,7 +1651,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPassword(), HTML_Form::displayPasswordRow(),
      *      HTML_Form::returnPassword(), HTML_Form::addPassword(),
@@ -1736,7 +1685,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayCheckbox(), HTML_Form::displayCheckboxRow(),
      *      HTML_Form::returnCheckboxRow(), HTML_Form::addCheckbox()
@@ -1767,7 +1715,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayCheckbox(), HTML_Form::displayCheckboxRow(),
      *      HTML_Form::returnCheckbox(), HTML_Form::addCheckbox()
@@ -1803,7 +1750,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayTextarea(), HTML_Form::displayTextareaRow(),
      *      HTML_Form::returnTextareaRow(), HTML_Form::addTextarea()
@@ -1845,7 +1791,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayTextarea(), HTML_Form::displayTextareaRow(),
      *      HTML_Form::returnTextareaRow(), HTML_Form::addTextarea()
@@ -1880,7 +1825,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySubmit(), HTML_Form::displaySubmitRow(),
      *      HTML_Form::returnSubmitRow(), HTML_Form::addSubmit()
@@ -1908,7 +1852,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySubmit(), HTML_Form::displaySubmitRow(),
      *      HTML_Form::returnSubmit(), HTML_Form::addSubmit()
@@ -1940,7 +1883,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayReset(), HTML_Form::displayResetRow(),
      *      HTML_Form::returnResetRow(), HTML_Form::addReset()
@@ -1968,7 +1910,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayReset(), HTML_Form::displayResetRow(),
      *      HTML_Form::returnReset(), HTML_Form::addReset()
@@ -2012,7 +1953,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySelect(), HTML_Form::displaySelectRow(),
      *      HTML_Form::returnSelectRow(), HTML_Form::addSelect()
@@ -2084,7 +2024,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displaySelect(), HTML_Form::displaySelectRow(),
      *      HTML_Form::returnSelect(), HTML_Form::addSelect()
@@ -2118,7 +2057,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayRadio(), HTML_Form::displayRadioRow(),
      *      HTML_Form::returnRadioRow(), HTML_Form::addRadio()
@@ -2150,7 +2088,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayRadio(), HTML_Form::displayRadioRow(),
      *      HTML_Form::returnRadio(), HTML_Form::addRadio()
@@ -2181,7 +2118,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayImage(), HTML_Form::displayImageRow(),
      *      HTML_Form::returnImageRow(), HTML_Form::addImage()
@@ -2211,7 +2147,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayImage(), HTML_Form::displayImageRow(),
      *      HTML_Form::returnImage(), HTML_Form::addImage()
@@ -2241,7 +2176,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayHidden(), HTML_Form::addHidden()
      */
@@ -2259,7 +2193,6 @@ class HTML_Form
      *
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayBlank(), HTML_Form::displayBlankRow(),
      *      HTML_Form::returnBlankRow(), HTML_Form::addBlank()
@@ -2285,7 +2218,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayBlank(), HTML_Form::displayBlankRow(),
      *      HTML_Form::returnBlank(), HTML_Form::addBlank()
@@ -2326,7 +2258,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayFile(), HTML_Form::displayFileRow(),
      *      HTML_Form::returnFileRow(), HTML_Form::addFile(),
@@ -2367,7 +2298,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayFile(), HTML_Form::displayFileRow(),
      *      HTML_Form::returnFile(), HTML_Form::addFile(),
@@ -2406,7 +2336,6 @@ class HTML_Form
      *                           in the element (example: 'id="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayFile(), HTML_Form::displayFileRow(),
      *      HTML_Form::returnFile(), HTML_Form::returnFileRow(),
@@ -2444,7 +2373,6 @@ class HTML_Form
      *                                  be submitted in multipart format
      * @return string
      *
-     * @access public
      * @see HTML_Form::display(), HTML_Form::returnEnd(), HTML_Form::start()
      */
     function returnStart($multipartformdata = false)
@@ -2476,7 +2404,6 @@ class HTML_Form
      *
      * @return string
      *
-     * @access public
      * @see HTML_Form::display(), HTML_Form::returnStart(), HTML_Form::start()
      */
     function returnEnd()
@@ -2507,7 +2434,6 @@ class HTML_Form
      *
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPlaintext(), HTML_Form::displayPlaintextRow(),
      *      HTML_Form::returnPlaintextRow(), HTML_Form::addPlaintext()
@@ -2531,7 +2457,6 @@ class HTML_Form
      *                           in the <td> element (example: 'class="foo"')
      * @return string
      *
-     * @access public
      * @static
      * @see HTML_Form::displayPlaintext(), HTML_Form::displayPlaintextRow(),
      *      HTML_Form::returnPlaintext(), HTML_Form::addPlaintext()
@@ -2577,7 +2502,6 @@ class HTML_Form
      *                          in the <caption> tag (example: 'class="foo"')
      * @return void
      *
-     * @access public
      * @see HTML_Form::end(), HTML_Form::returnEnd(),
      *      HTML_Form::setDefaultFromInput(),
      *      HTML_Form::setEscapeDefaultFromInput()

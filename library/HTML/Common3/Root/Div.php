@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Div: Class for HTML <div> Elements
+ * HTMLCommon\Root\Div: Class for HTML <div> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\ boxed Elements
+ * base class for HTMLCommon\ boxed Elements
  */
-require_once 'HTML/Common3/Box.php';
+use HTML\Common3\Box as CommonHTMLBoxElement;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Div
+// {{{ HTMLCommon\Root\Div
 
 /**
  * Class for HTML <div> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Divextends \HTML\Common3\Boximplements \HTML\Common3\Face
+class Div extends CommonHTMLBoxElement implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,7 +76,6 @@ class Divextends \HTML\Common3\Boximplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'div';
 
@@ -84,7 +83,6 @@ class Divextends \HTML\Common3\Boximplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -99,7 +97,6 @@ class Divextends \HTML\Common3\Boximplements \HTML\Common3\Face
      * @param string $lang  the language for the Div
      * @param string $id    the id for the Div
      *
-     * @access public
      * @return void
      */
     public function setDiv($style = '', $class = '', $lang = '', $id = '')
@@ -124,7 +121,7 @@ class Divextends \HTML\Common3\Boximplements \HTML\Common3\Face
     // }}} setDiv
 }
 
-// }}} \HTML\Common3\Root\Div
+// }}} HTMLCommon\Root\Div
 
 /*
  * Local variables:

@@ -48,33 +48,29 @@ class HTML_QuickForm_element extends HTML_Common
      * Label of the field
      * @var       string
      * @since     1.3
-     * @access    private
      */
-    var $_label = '';
+    private $_label = '';
 
     /**
      * Form element type
      * @var       string
      * @since     1.0
-     * @access    private
      */
-    var $_type = '';
+    private $_type = '';
 
     /**
      * Flag to tell if element is frozen
      * @var       boolean
      * @since     1.0
-     * @access    private
      */
-    var $_flagFrozen = false;
+    private $_flagFrozen = false;
 
     /**
      * Does the element support persistant data when frozen
      * @var       boolean
      * @since     1.3
-     * @access    private
      */
-    var $_persistantFreeze = false;
+    private $_persistantFreeze = false;
     
     // }}}
     // {{{ constructor
@@ -86,10 +82,9 @@ class HTML_QuickForm_element extends HTML_Common
      * @param    mixed      Label(s) for the element
      * @param    mixed      Associative array of tag attributes or HTML attributes name="value" pairs
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function HTML_QuickForm_element($elementName=null, $elementLabel=null, $attributes=null)
+    public function __construct($elementName=null, $elementLabel=null, $attributes=null)
     {
         HTML_Common::HTML_Common($attributes);
         if (isset($elementName)) {
@@ -107,10 +102,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns the current API version
      *
      * @since     1.0
-     * @access    public
      * @return    float
      */
-    function apiVersion()
+    public function apiVersion()
     {
         return 3.2;
     } // end func apiVersion
@@ -122,10 +116,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns element type
      *
      * @since     1.0
-     * @access    public
      * @return    string
      */
-    function getType()
+    public function getType()
     {
         return $this->_type;
     } // end func getType
@@ -138,10 +131,9 @@ class HTML_QuickForm_element extends HTML_Common
      * 
      * @param     string    $name   Input field name attribute
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setName($name)
+    public function setName($name)
     {
         // interface method
     } //end func setName
@@ -153,10 +145,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns the element name
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
-    function getName()
+    public function getName()
     {
         // interface method
     } //end func getName
@@ -169,10 +160,9 @@ class HTML_QuickForm_element extends HTML_Common
      *
      * @param     string    $value      Default value of the form element
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setValue($value)
+    public function setValue($value)
     {
         // interface
     } // end func setValue
@@ -184,10 +174,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns the value of the form element
      *
      * @since     1.0
-     * @access    public
      * @return    mixed
      */
-    function getValue()
+    public function getValue()
     {
         // interface
         return null;
@@ -199,10 +188,9 @@ class HTML_QuickForm_element extends HTML_Common
     /**
      * Freeze the element so that only its value is returned
      * 
-     * @access    public
      * @return    void
      */
-    function freeze()
+    public function freeze()
     {
         $this->_flagFrozen = true;
     } //end func freeze
@@ -213,11 +201,10 @@ class HTML_QuickForm_element extends HTML_Common
    /**
     * Unfreezes the element so that it becomes editable
     *
-    * @access public
     * @return void
     * @since  3.2.4
     */
-    function unfreeze()
+    public function unfreeze()
     {
         $this->_flagFrozen = false;
     }
@@ -229,10 +216,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns the value of field without HTML tags
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
-    function getFrozenHtml()
+    public function getFrozenHtml()
     {
         $value = $this->getValue();
         return (strlen($value)? htmlspecialchars($value): '&nbsp;') .
@@ -245,10 +231,9 @@ class HTML_QuickForm_element extends HTML_Common
    /**
     * Used by getFrozenHtml() to pass the element's value if _persistantFreeze is on
     * 
-    * @access private
     * @return string
     */
-    function _getPersistantData()
+    private function _getPersistantData()
     {
         if (!$this->_persistantFreeze) {
             return '';
@@ -269,10 +254,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns whether or not the element is frozen
      *
      * @since     1.3
-     * @access    public
      * @return    bool
      */
-    function isFrozen()
+    public function isFrozen()
     {
         return $this->_flagFrozen;
     } // end func isFrozen
@@ -286,10 +270,9 @@ class HTML_QuickForm_element extends HTML_Common
      * 
      * @param     bool    $persistant   True if persistant value
      * @since     2.0
-     * @access    public
      * @return    void
      */
-    function setPersistantFreeze($persistant=false)
+    public function setPersistantFreeze($persistant=false)
     {
         $this->_persistantFreeze = $persistant;
     } //end func setPersistantFreeze
@@ -302,10 +285,9 @@ class HTML_QuickForm_element extends HTML_Common
      * 
      * @param     string    $label  Display text for the element
      * @since     1.3
-     * @access    public
      * @return    void
      */
-    function setLabel($label)
+    public function setLabel($label)
     {
         $this->_label = $label;
     } //end func setLabel
@@ -317,10 +299,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Returns display text for the element
      * 
      * @since     1.3
-     * @access    public
      * @return    string
      */
-    function getLabel()
+    public function getLabel()
     {
         return $this->_label;
     } //end func getLabel
@@ -332,10 +313,9 @@ class HTML_QuickForm_element extends HTML_Common
      * Tries to find the element value from the values array
      * 
      * @since     2.7
-     * @access    private
      * @return    mixed
      */
-    function _findValue(&$values)
+    private function _findValue(&$values)
     {
         if (empty($values)) {
             return null;
@@ -364,10 +344,9 @@ class HTML_QuickForm_element extends HTML_Common
      * @param     mixed     $arg    event arguments
      * @param     object    &$caller calling object
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function onQuickFormEvent($event, $arg, &$caller)
+    public function onQuickFormEvent($event, $arg, &$caller)
     {
         switch ($event) {
             case 'createElement':
@@ -407,10 +386,9 @@ class HTML_QuickForm_element extends HTML_Common
     * @param HTML_QuickForm_Renderer    renderer object
     * @param bool                       Whether an element is required
     * @param string                     An error message associated with an element
-    * @access public
     * @return void 
     */
-    function accept(&$renderer, $required=false, $error=null)
+    public function accept(&$renderer, $required=false, $error=null)
     {
         $renderer->renderElement($this, $required, $error);
     } // end func accept
@@ -424,10 +402,9 @@ class HTML_QuickForm_element extends HTML_Common
     * Currently used to ensure that labels work on radio buttons and
     * checkboxes. Per idea of Alexander Radivanovich.
     *
-    * @access private
     * @return void 
     */
-    function _generateId()
+    private function _generateId()
     {
         static $idx = 1;
 
@@ -444,10 +421,9 @@ class HTML_QuickForm_element extends HTML_Common
     *
     * @param  array   array of submitted values to search
     * @param  bool    whether to return the value as associative array
-    * @access public
     * @return mixed
     */
-    function exportValue(&$submitValues, $assoc = false)
+    public function exportValue(&$submitValues, $assoc = false)
     {
         $value = $this->_findValue($submitValues);
         if (null === $value) {
@@ -464,10 +440,9 @@ class HTML_QuickForm_element extends HTML_Common
     *
     * @param  mixed   the value found in exportValue()
     * @param  bool    whether to return the value as associative array
-    * @access private
     * @return mixed
     */
-    function _prepareValue($value, $assoc)
+    private function _prepareValue($value, $assoc)
     {
         if (null === $value) {
             return null;
@@ -491,4 +466,3 @@ class HTML_QuickForm_element extends HTML_Common
     
     // }}}
 } // end class HTML_QuickForm_element
-?>

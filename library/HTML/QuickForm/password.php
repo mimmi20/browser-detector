@@ -49,13 +49,12 @@ class HTML_QuickForm_password extends HTML_QuickForm_input
      * @param     mixed     $attributes     (optional)Either a typical HTML attribute string 
      *                                      or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */
-    function HTML_QuickForm_password($elementName=null, $elementLabel=null, $attributes=null)
+    public function __construct($elementName=null, $elementLabel=null, $attributes=null)
     {
-        HTML_QuickForm_input::HTML_QuickForm_input($elementName, $elementLabel, $attributes);
+        parent::__construct($elementName, $elementLabel, $attributes);
         $this->setType('password');
     } //end constructor
     
@@ -67,10 +66,9 @@ class HTML_QuickForm_password extends HTML_QuickForm_input
      * 
      * @param     string    $size  Size of password field
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setSize($size)
+    public function setSize($size)
     {
         $this->updateAttributes(array('size'=>$size));
     } //end func setSize
@@ -83,10 +81,9 @@ class HTML_QuickForm_password extends HTML_QuickForm_input
      * 
      * @param     string    $maxlength  Maximum length of password field
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setMaxlength($maxlength)
+    public function setMaxlength($maxlength)
     {
         $this->updateAttributes(array('maxlength'=>$maxlength));
     } //end func setMaxlength
@@ -98,11 +95,10 @@ class HTML_QuickForm_password extends HTML_QuickForm_input
      * Returns the value of field without HTML tags (in this case, value is changed to a mask)
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      * @throws    
      */
-    function getFrozenHtml()
+    public function getFrozenHtml()
     {
         $value = $this->getValue();
         return ('' != $value? '**********': '&nbsp;') .
@@ -112,4 +108,3 @@ class HTML_QuickForm_password extends HTML_QuickForm_input
     // }}}
 
 } //end class HTML_QuickForm_password
-?>

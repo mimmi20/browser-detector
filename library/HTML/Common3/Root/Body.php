@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Body: Class for HTML <body> Elements
+ * HTMLCommon\Root\Body: Class for HTML <body> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Body
+// {{{ HTMLCommon\Root\Body
 
 /**
  * Class for HTML <body> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Bodyextends \HTML\Common3implements \HTML\Common3\Face
+class Body extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,7 +76,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'body';
 
@@ -84,21 +83,19 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -107,7 +104,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -115,7 +111,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -399,7 +394,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -487,7 +481,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -501,13 +494,12 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * @param integer $flag  Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         if (!$this->_elementEmpty) {
             $posElements = $this->getPosElements();
@@ -515,9 +507,9 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
 
             $value = (string)  $value;
 
-            if ($flag === HTML_APPEND) {
+            if ($flag === HTMLCommon::APPEND) {
                 $this->value .= $value;//$this->replace($value, 'all');
-            } elseif ($flag === HTML_REPLACE) {
+            } elseif ($flag === HTMLCommon::REPLACE) {
                 $this->value = $value;//$this->replace($value, 'all');
             } else {
                 //prepend
@@ -530,7 +522,7 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
             //var_dump(count($this->_elements));
 
             if (in_array($key, $posElements) &&
-                array_key_exists($key, \HTML\Common3\Globals::$allElements) &&
+                array_key_exists($key, HTMLCommon\Globals::$allElements) &&
                 !$this->_elementEmpty
                ) {
                 if ($leave === false) {
@@ -557,8 +549,7 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $lang  the language for the Div
      * @param string $id    the id for the Div
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addDiv($style = '', $class = '', $lang = '', $id = '')
     {
@@ -584,17 +575,16 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * to whatever is currently in the array of body elements.</p>
      *
      * <p>The following constants are defined to be passed as the flag
-     * attribute: \HTML\Common3\Root\APPEND, HTML_PREPEND and HTML_REPLACE.
+     * attribute: HTMLCommon\Root\APPEND, HTML_PREPEND and HTMLCommon::REPLACE.
      * Their usage should be quite clear from their names.</p>
      *
      * @param string  $content New <body> tag content
      * @param integer $flag    Determines whether to prepend, append or replace
      *                         the content. Use pre-defined constants.
      *
-     * @access public
      * @return void
      */
-    public function addBodyContent($content, $flag = HTML_APPEND)
+    public function addBodyContent($content, $flag = HTMLCommon::APPEND)
     {
         if (is_array($content)) {
             $content = (string) $content[0];
@@ -604,7 +594,7 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
             $content = (string) $content->toHtml();
             //$this->addElement($content);
             //return;
-        } elseif (is_subclass_of($content, '\HTML\Common3')) {
+        } elseif (is_subclass_of($content, 'HTMLCommon')) {
             $this->addElement($content, null, $flag);
             return;
         } else {
@@ -631,7 +621,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param mixed $content New <body> tag content (may be passed as a reference)
      *
-     * @access public
      * @return void
      */
     function prependBodyContent($content)
@@ -657,12 +646,11 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      * @param mixed $content New <body> tag content. May be an object.
      *                       (may be passed as a reference)
      *
-     * @access public
      * @return void
      */
     function setBody($content)
     {
-        $this->addBodyContent($content, HTML_REPLACE);
+        $this->addBodyContent($content, HTMLCommon::REPLACE);
     }
 
     // }}} setBody
@@ -671,7 +659,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Unsets the content of the <body> tag.
      *
-     * @access public
      * @return void
      */
     function unsetBody()
@@ -692,7 +679,6 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -726,7 +712,7 @@ class Bodyextends \HTML\Common3implements \HTML\Common3\Face
     // }}} writeInner
 }
 
-// }}} \HTML\Common3\Root\Body
+// }}} HTMLCommon\Root\Body
 
 /*
  * Local variables:

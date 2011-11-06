@@ -20,6 +20,8 @@ namespace Browscap\Browser\Khtml;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * AppleUserAgentHandler
  *
@@ -30,7 +32,7 @@ namespace Browscap\Browser\Khtml;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Apple
+class Apple extends BrowserHandler
 {
     protected $prefix = 'APPLE';
     

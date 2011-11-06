@@ -62,26 +62,26 @@ class HTML_QuickForm_Renderer_ObjectFlexy extends HTML_QuickForm_Renderer_Object
      * HTML_Template_Flexy instance
      * @var object $_flexy
      */
-    var $_flexy;
+    private $_flexy;
 
     /**
      * Current element index
      * @var integer $_elementIdx
      */
-    var $_elementIdx;
+    private $_elementIdx;
 
     /**
      * The current element index inside a group
      * @var integer $_groupElementIdx
      */
-    var $_groupElementIdx = 0;
+    private $_groupElementIdx = 0;
 
     /**
      * Name of template file for form html
      * @var string $_html
      * @see     setRequiredTemplate()
      */
-    var $_html = '';
+    private $_html = '';
 
     /**
      * Name of template file for form labels
@@ -95,7 +95,7 @@ class HTML_QuickForm_Renderer_ObjectFlexy extends HTML_QuickForm_Renderer_Object
      * element methods
      * @var string $_elementType
      */
-    var $_elementType = 'QuickformFlexyElement';
+    private $_elementType = 'QuickformFlexyElement';
    /**#@-*/
 
     /**
@@ -223,7 +223,6 @@ class HTML_QuickForm_Renderer_ObjectFlexy extends HTML_QuickForm_Renderer_Object
      * {html:h}
      * </pre>
      *
-     * @access public
      * @param string   Filename of template
      * @return void
      */
@@ -245,7 +244,6 @@ class HTML_QuickForm_Renderer_ObjectFlexy extends HTML_QuickForm_Renderer_Object
      * {label:h}
      * </pre>
      *
-     * @access public
      * @param string   Filename of template
      * @return void
      */

@@ -5,7 +5,7 @@ namespace HTML\Common3\Form;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Form\StaticText: Class for static Text
+ * HTMLCommon\Form\StaticText: Class for static Text
  *
  * PHP versions 5 and 6
  *
@@ -40,21 +40,21 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Root/Zero.php';
+use HTML\Common3\Root\Zero as HTMLZeroField;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Form\StaticText
+// {{{ HTMLCommon\Form\StaticText
 
 /**
  * Class for static Text
@@ -66,12 +66,12 @@ require_once 'HTML/Common3/Face.php';
  * selected values to be passed.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class StaticTextextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
+class StaticText extends HTMLZeroField implements ElementsInterface
 {
     // {{{ properties
 
@@ -79,7 +79,6 @@ class StaticTextextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
@@ -87,7 +86,6 @@ class StaticTextextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -107,7 +105,6 @@ class StaticTextextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -115,37 +112,12 @@ class StaticTextextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
     }
 
     // }}} onAttributeChange
-    // {{{ setInput
-
-    /**
-     * format this input
-     *
-     * @param string $type  the type for the input - ignored for this type
-     * @param string $id    the id for the input
-     * @param string $class the CSS class for the input
-     * @param string $lang  the language for the input
-     * @param string $title the title for the input
-     * @param string $value the value for the input
-     * @param string $style the CSS style for the input
-     *
-     * @access public
-     * @return \HTML\Common3\Root\Div
-     */
-    /*
-    public function setInput($type = 'file', $id = '', $class = '', $lang = '',
-                             $title = '', $value = '', $style = '')
-    {
-        parent::setInput('file', $id, $class, $lang, $title, $value, $style);
-    }
-    */
-    // }}} setInput
     // {{{ getType
 
     /**
      * returns the element type
      *
      * @return string the element type (mostly the same as the element name)
-     * @access public
      */
     public function getType()
     {
@@ -155,7 +127,7 @@ class StaticTextextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
     // }}} getType
 }
 
-// }}} \HTML\Common3\Form\StaticText
+// }}} HTMLCommon\Form\StaticText
 
 /*
  * Local variables:

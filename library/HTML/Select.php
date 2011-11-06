@@ -35,7 +35,7 @@ class HTML_Select extends HTML_Common
      * @since     1.0
      * @access    private
      */
-    var $_options = array();
+    private $_options = array();
     
     /**
      * Default values of the SELECT
@@ -44,7 +44,7 @@ class HTML_Select extends HTML_Common
      * @since     1.0
      * @access    private
      */
-    var $_values = array();
+    private $_values = array();
 
     /**
      * Class constructor
@@ -58,7 +58,6 @@ class HTML_Select extends HTML_Common
      * @param integer $tabOffset  Number of tabs to offset HTML source
      *
      * @since  1.0
-     * @access public
      */
     function HTML_Select(
         $name = '', $size = 1, $multiple = false,
@@ -84,7 +83,6 @@ class HTML_Select extends HTML_Common
      * Returns the current API version 
      * 
      * @since     1.0
-     * @access    public
      * @return    double
      */
     function apiVersion()
@@ -98,7 +96,6 @@ class HTML_Select extends HTML_Common
      * @param mixed $values Array or comma delimited string of selected values
      *
      * @since  1.0
-     * @access public
      * @return void
      */
     function setSelectedValues($values)
@@ -116,7 +113,6 @@ class HTML_Select extends HTML_Common
      * Returns an array of the selected values
      *
      * @since     1.0
-     * @access    public
      * @return    array of selected values
      */
     function getSelectedValues()
@@ -134,7 +130,6 @@ class HTML_Select extends HTML_Common
      *                            or an associative array
      *
      * @since  1.0
-     * @access public
      * @return void
      *
      * @see addStartOptionGroup()
@@ -159,7 +154,6 @@ class HTML_Select extends HTML_Common
      * @param array  $attributes HTML attribute associative array
      *
      * @return void
-     * @access public
      * @since  1.3.0
      *
      * @see addOptionGroup()
@@ -179,7 +173,6 @@ class HTML_Select extends HTML_Common
      * Stops an option group "</optgroup>"
      *
      * @return void
-     * @access public
      * @since  1.3.0
      *
      * @see addStartOptionGroup()
@@ -198,7 +191,6 @@ class HTML_Select extends HTML_Common
      * @param mixed $values Array or comma delimited string of selected values
      *
      * @since  1.0
-     * @access public
      * @return PEAR_Error on error or true
      * @throws PEAR_Error
      */
@@ -234,7 +226,6 @@ class HTML_Select extends HTML_Common
      * @param mixed $values Array or comma delimited string of selected values
      *
      * @since  1.2
-     * @access public
      * @return PEAR_Error on error or true
      * @throws PEAR_Error
      */
@@ -275,7 +266,6 @@ class HTML_Select extends HTML_Common
      * @param mixed  $values   Array or comma delimited string of selected values
      *
      * @since     1.0
-     * @access    public
      * @return    PEAR_Error on error or true
      * @throws    PEAR_Error
      */
@@ -365,7 +355,6 @@ class HTML_Select extends HTML_Common
      * @param mixed $param4   See function detail
      *
      * @since  1.1
-     * @access public
      * @return PEAR_Error on error or true, or false if no method to load
      *         the data could be determined.
      * @throws PEAR_Error
@@ -391,7 +380,6 @@ class HTML_Select extends HTML_Common
      * Returns the SELECT in HTML
      *
      * @since  1.0
-     * @access public
      * @return string HTML code
      */
     function toHtml()

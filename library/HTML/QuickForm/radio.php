@@ -45,9 +45,8 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * Radio display text
      * @var       string
      * @since     1.1
-     * @access    private
      */
-    var $_text = '';
+    private $_text = '';
 
     // }}}
     // {{{ constructor
@@ -61,12 +60,11 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * @param     string    Input field value
      * @param     mixed     Either a typical HTML attribute string or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function HTML_QuickForm_radio($elementName=null, $elementLabel=null, $text=null, $value=null, $attributes=null)
+    public function __construct($elementName=null, $elementLabel=null, $text=null, $value=null, $attributes=null)
     {
-        $this->HTML_QuickForm_element($elementName, $elementLabel, $attributes);
+        parent::__construct($elementName, $elementLabel, $attributes);
         if (isset($value)) {
             $this->setValue($value);
         }
@@ -84,10 +82,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * 
      * @param     bool    $checked  Whether the field is checked or not
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setChecked($checked)
+    public function setChecked($checked)
     {
         if (!$checked) {
             $this->removeAttribute('checked');
@@ -103,10 +100,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * Returns whether radio button is checked
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
-    function getChecked()
+    public function getChecked()
     {
         return $this->getAttribute('checked');
     } //end func getChecked
@@ -118,10 +114,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * Returns the radio element in HTML
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
-    function toHtml()
+    public function toHtml()
     {
         if (0 == strlen($this->_text)) {
             $label = '';
@@ -140,10 +135,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * Returns the value of field without HTML tags
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
-    function getFrozenHtml()
+    public function getFrozenHtml()
     {
         if ($this->getChecked()) {
             return '<tt>(x)</tt>' .
@@ -161,10 +155,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * 
      * @param     string    $text  Text to display near the radio button
      * @since     1.1
-     * @access    public
      * @return    void
      */
-    function setText($text)
+    public function setText($text)
     {
         $this->_text = $text;
     } //end func setText
@@ -176,10 +169,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * Returns the radio text 
      * 
      * @since     1.1
-     * @access    public
      * @return    string
      */
-    function getText()
+    public function getText()
     {
         return $this->_text;
     } //end func getText
@@ -194,10 +186,9 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
      * @param     mixed     $arg    event arguments
      * @param     object    &$caller calling object
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function onQuickFormEvent($event, $arg, &$caller)
+    public function onQuickFormEvent($event, $arg, &$caller)
     {
         switch ($event) {
             case 'updateValue':
@@ -235,7 +226,7 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
    /**
     * Returns the value attribute if the radio is checked, null if it is not
     */
-    function exportValue(&$submitValues, $assoc = false)
+    public function exportValue(&$submitValues, $assoc = false)
     {
         $value = $this->_findValue($submitValues);
         if (null === $value) {
@@ -248,4 +239,3 @@ class HTML_QuickForm_radio extends HTML_QuickForm_input
     
     // }}}
 } //end class HTML_QuickForm_radio
-?>

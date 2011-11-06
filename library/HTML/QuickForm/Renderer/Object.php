@@ -46,43 +46,43 @@ class HTML_QuickForm_Renderer_Object extends HTML_QuickForm_Renderer
      * The object being generated
      * @var QuickformForm
      */
-    var $_obj= null;
+    private $_obj= null;
 
     /**
      * Number of sections in the form (i.e. number of headers in it)
      * @var integer $_sectionCount
      */
-    var $_sectionCount;
+    private $_sectionCount;
 
     /**
     * Current section number
     * @var integer $_currentSection
     */
-    var $_currentSection;
+    private $_currentSection;
 
     /**
     * Object representing current group
     * @var object $_currentGroup
     */
-    var $_currentGroup = null;
+    private $_currentGroup = null;
 
     /**
      * Class of Element Objects
      * @var object $_elementType
      */
-    var $_elementType = 'QuickFormElement';
+    private $_elementType = 'QuickFormElement';
 
     /**
     * Additional style information for different elements  
     * @var array $_elementStyles
     */
-    var $_elementStyles = array();
+    private $_elementStyles = array();
 
     /**
     * true: collect all hidden elements into string; false: process them as usual form elements
     * @var bool $_collectHidden
     */
-    var $_collectHidden = false;
+    private $_collectHidden = false;
    /**#@-*/
 
 
@@ -90,7 +90,6 @@ class HTML_QuickForm_Renderer_Object extends HTML_QuickForm_Renderer
      * Constructor
      *
      * @param bool    true: collect all hidden elements
-     * @access public
      */
     function HTML_QuickForm_Renderer_Object($collecthidden = false) 
     {
@@ -101,7 +100,6 @@ class HTML_QuickForm_Renderer_Object extends HTML_QuickForm_Renderer
 
     /**
      * Return the rendered Object
-     * @access public
      */
     function toObject() 
     {
@@ -111,7 +109,6 @@ class HTML_QuickForm_Renderer_Object extends HTML_QuickForm_Renderer
     /**
      * Set the class of the form elements.  Defaults to QuickformElement.
      * @param string   Name of element class
-     * @access public
      */
     function setElementType($type)
     {

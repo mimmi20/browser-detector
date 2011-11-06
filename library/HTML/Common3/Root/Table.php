@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Table: Class for HTML <table> Elements
+ * HTMLCommon\Root\Table: Class for HTML <table> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,37 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Table/Root.php';
+use HTML\Common3\Table\Root as CommonHTMLTableElement;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Table
+/**
+ * base class for HTMLCommon\
+ */
+use HTML\Common3 as HTMLCommon;
+
+// {{{ HTMLCommon\Root\Table
 
 /**
  * Class for HTML <table> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
+class Table extends CommonHTMLTableElement implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,21 +78,19 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'table';
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -96,7 +99,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -114,7 +116,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -186,7 +187,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * Array of all col groups in this table
      *
      * @var      array
-     * @access   protected
      */
     protected $_colgroups = array();
 
@@ -194,7 +194,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * pointer to the caption of this table
      *
      * @var      pointer
-     * @access   protected
      */
     protected $_caption = null;
 
@@ -203,7 +202,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * needed)
      *
      * @var      array
-     * @access   protected
      */
     protected $_tRowGroups = array();
 
@@ -211,7 +209,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * count of all table bodies
      *
      * @var      integer
-     * @access   protected
      */
     protected $_tbodyCount = 0;
 
@@ -219,7 +216,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -232,14 +228,13 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param string|array $attributes Array of attribute 'name' => 'value' pairs
      *                                 or HTML attribute string
-     * @param \HTML\Common3\ $parent     pointer to the parent object
-     * @param \HTML\Common3\ $html       pointer to the HTML root object
+     * @param HTMLCommon\ $parent     pointer to the parent object
+     * @param HTMLCommon\ $html       pointer to the HTML root object
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function __construct($attributes = null,
-    \HTML\Common3 $parent = null, \HTML\Common3 $html = null)
+    HTMLCommon $parent = null, HTMLCommon $html = null)
     {
         parent::__construct($attributes, $parent, $html);
 
@@ -265,7 +260,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -315,7 +309,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -339,8 +332,8 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
     /**
      * add a new Child Element
      *
-     * @param string|\HTML\Common3\ $type       the HTML Tag for the new Child
-     *                                        Element or an \HTML\Common3\ Child
+     * @param string|HTMLCommon\ $type       the HTML Tag for the new Child
+     *                                        Element or an HTMLCommon\ Child
      *                                        object
      * @param string              $attributes Array of attribute 'name' => 'value'
      *                                        pairs or HTML attribute string
@@ -348,11 +341,10 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                                        append or replace the content.
      *                                        Use pre-defined constants.
      *
-     * @return null|\HTML\Common3\
-     * @access public
-     * @throw  \HTML\Common3\Exception
+     * @return null|HTMLCommon\
+     * @throw  HTMLCommon\Exception
      */
-    public function addElement($type, $attributes = null, $flag = HTML_APPEND)
+    public function addElement($type, $attributes = null, $flag = HTMLCommon::APPEND)
     {
         $element = parent::addElement($type, $attributes, $flag);
 
@@ -380,8 +372,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string $summary (optional) Cell type either 'th' or 'td'
      * @param string $style   (optional) a CSS style definition for the table
      *
-     * @return \HTML\Common3\Root\Table
-     * @access public
+     * @return HTMLCommon\Root\Table
      */
     public function setTable($lang = '', $class = '', $summary = '', $style = '')
     {
@@ -422,8 +413,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup (optional) The index of the body to set.
      *                          Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setAutoFill($fill, $rowGroup = null)
     {
@@ -453,7 +443,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          Pass null to set for all bodies.
      *
      * @return string
-     * @access public
      */
     public function getAutoFill($rowGroup = null)
     {
@@ -477,8 +466,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup (optional) The index of the body to set.
      *                          Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setAutoGrow($grow, $rowGroup = null)
     {
@@ -508,7 +496,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          Pass null to set for all bodies.
      *
      * @return boolean
-     * @access public
      */
     public function getAutoGrow($rowGroup = null)
     {
@@ -534,8 +521,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string $lang  (optional) the language for the whole table
      * @param string $class (optional) a CSS class for the table
      *
-     * @return \HTML\Common3\Root\Caption
-     * @access public
+     * @return HTMLCommon\Root\Caption
      */
     public function addCaption($value, $lang = '', $class = '')
     {
@@ -562,13 +548,12 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed  $attributes   Associative array or string of table row
      *                               attributes
      *
-     * @return \HTML\Common3\Root\Caption
-     * @access public
+     * @return HTMLCommon\Root\Caption
      */
     public function setCaption($captionvalue, $attributes = null)
     {
         if ($this->_caption === null) {
-            $caption       = $this->addElement('caption', $attributes);
+            $caption = $this->addElement('caption', $attributes);
             $this->_caption =& $caption;
         } else {
             $caption =& $this->_caption;
@@ -593,8 +578,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          in which case the attributes
      *                          will be repeated in a loop.
      *
-     * @return \HTML\Common3\Root\Table
-     * @access public
+     * @return HTMLCommon\Root\Table
      */
     public function addColgroup($attributes = null)
     {
@@ -613,8 +597,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed $attributes (optional) Associative array or string
      *                          of colgroup attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setColGroup($colAttr = null, $attributes = null)
     {
@@ -651,8 +634,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
     /**
      * Returns the HTML_Table_Storage object for <thead>
      *
-     * @access public
-     * @return \HTML\Common3\Root\Thead
+     * @return HTMLCommon\Root\Thead
      */
     public function getHeader()
     {
@@ -669,8 +651,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
     /**
      * Returns the HTML_Table_Storage object for <tfoot>
      *
-     * @access public
-     * @return \HTML\Common3\Root\Tfoot
+     * @return HTMLCommon\Root\Tfoot
      */
     public function getFooter()
     {
@@ -690,8 +671,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *
      * @param integer $body (optional) The index of the body to return.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Tbody
+     * @return HTMLCommon\Root\Tbody
      */
     public function getBody($body = 0)
     {
@@ -710,8 +690,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed $attributes (optional) Associative array or string of
      *                          table body attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Tbody
+     * @return HTMLCommon\Root\Tbody
      */
     public function addBody($attributes = null)
     {
@@ -730,8 +709,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param mixed   $attributes (optional) Associative array or string of
      *                            table body attributes
      *
-     * @access protected
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     protected function addRowGroup($body, $attributes = null)
     {
@@ -765,8 +743,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $body   Body index
      * @param string  $method Name of calling method
      *
-     * @access protected
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @throws HTMLCommon\InvalidArgumentException
      * @return void
      */
     protected function adjustTbodyCount($body, $method)
@@ -778,9 +755,9 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
                 $this->addBody();
             }
         } elseif (!isset($this->_tRowGroups[$body])) {
-            throw new \HTML\Common3\InvalidArgumentException(
+            throw new HTMLCommon\InvalidArgumentException(
                 'Invalid body reference[' . $body .
-                '] in \HTML\Common3\Root\Table::' . $method
+                '] in HTMLCommon\Root\Table::' . $method
             );
         }
     }
@@ -806,8 +783,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            attributes are to be applied in <tr> tag
      * @param integer $rowGroup   (optional) The index of the body to set.
      *
-     * @return \HTML\Common3\Root\Tr
-     * @access public
+     * @return HTMLCommon\Root\Tr
      */
     public function addRow($contents = null, $attributes = null, $type = 'td',
         $inTR = true, $rowGroup = 0)
@@ -846,8 +822,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rows     the Amount of Rows
      * @param integer $rowGroup (optional) The index of the body to set.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setRowCount($rows, $rowGroup = 0)
     {
@@ -873,7 +848,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          Pass null to set for all bodies.
      *
      * @return integer
-     * @access public
      */
     public function getRowCount($rowGroup = null)
     {
@@ -903,8 +877,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string  $type     'th' or 'td'
      * @param integer $rowGroup (optional) The index of the body to set.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setRowType($row, $type, $rowGroup = 0)
     {
@@ -933,7 +906,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            be applied in <tr> tag
      * @param integer $rowGroup   (optional) The index of the body to set.
      *
-     * @access public
      * @return mixed
      */
     public function setRowAttributes($row, $attributes, $inTR = true,
@@ -961,7 +933,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            be applied in <tr> tag
      * @param integer $rowGroup   (optional) The index of the body to set.
      *
-     * @access public
      * @return mixed
      */
     public function updateRowAttributes($row, $attributes = null, $inTR = true,
@@ -985,7 +956,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup (optional) The index of the body to set.
      *
      * @return array
-     * @access public
      */
     public function getRowAttributes($row, $rowGroup = 0)
     {
@@ -1016,7 +986,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup        (optional) The index of the body to
      *                                 set.
      *
-     * @access public
      * @return mixed
      */
     public function altRowAttributes($start, $attributes1, $attributes2,
@@ -1043,7 +1012,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param boolean $addNewColgroup (optional) if TRUE the missing columns
      *                                are placed into a new colgroup.
      *
-     * @access public
      * @return integer
      */
     public function setColCount($cols, $rowGroup = null, $addNewColgroup = false)
@@ -1119,7 +1087,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                          Pass null to set for all bodies.
      *
      * @return integer
-     * @access public
      */
     public function getColCount($row = null, $rowGroup = null)
     {
@@ -1164,8 +1131,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup (optional) The index of the body to set.
      *                          Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setColType($col, $type, $rowGroup = null)
     {
@@ -1201,7 +1167,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            Pass null to set for all bodies.
      *
      * @return integer
-     * @access public
      */
     public function addCol($contents = null, $attributes = null, $type = 'td',
         $rowGroup = null)
@@ -1240,8 +1205,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup   (optional) The index of the body to set.
      *                            Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setColAttributes($col, $attributes = null, $rowGroup = null)
     {
@@ -1271,8 +1235,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup   (optional) The index of the body to set.
      *                            Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function updateColAttributes($col, $attributes = null, $rowGroup = null)
     {
@@ -1307,8 +1270,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup        (optional) The index of the body to
      *                                 set.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function altColAttributes($start, $attributes1, $attributes2,
         $firstAttributes = 1, $rowGroup = null)
@@ -1350,7 +1312,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            row attributes
      * @param integer $rowGroup   (optional) The index of the body to set.
      *
-     * @access public
      * @return mixed
      */
     public function setCellAttributes($row, $col, $attributes, $rowGroup = 0)
@@ -1377,7 +1338,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            attributes
      * @param integer $rowGroup   (optional) The index of the body to set.
      *
-     * @access public
      * @throws PEAR_Error
      * @return mixed
      */
@@ -1406,7 +1366,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup (optional) The index of the body to set.
      *
      * @return array
-     * @access public
      */
     public function getCellAttributes($row, $col, $rowGroup = 0)
     {
@@ -1438,7 +1397,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param string  $type     (optional) Cell type either 'th' or 'td'
      * @param integer $rowGroup (optional) The index of the body to set.
      *
-     * @access public
      * @return mixed
      */
     public function setCellContents($row, $col, $contents, $type = 'td',
@@ -1462,7 +1420,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $col      Column index
      * @param integer $rowGroup (optional) The index of the body to set.
      *
-     * @access public
      * @return mixed
      * @throws PEAR_Error
      */
@@ -1492,7 +1449,6 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      *                            table row attributes
      * @param integer $rowGroup   (optional) The index of the body to set.
      *
-     * @access public
      * @return mixed
      */
     public function setHeaderContents($row, $col, $contents, $attributes = null,
@@ -1517,8 +1473,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup   (optional) The index of the body to set.
      *                            Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function setAllAttributes($attributes = null, $rowGroup = null)
     {
@@ -1547,8 +1502,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
      * @param integer $rowGroup   (optional) The index of the body to set.
      *                            Pass null to set for all bodies.
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function updateAllAttributes($attributes = null, $rowGroup = null)
     {
@@ -1570,7 +1524,7 @@ class Tableextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
     // }}} Cell related Functions
 }
 
-// }}} \HTML\Common3\Root\Table
+// }}} HTMLCommon\Root\Table
 
 /*
  * Local variables:

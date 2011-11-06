@@ -131,7 +131,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_elements = array();
+    private $_elements = array();
 
     /**
      * Array containing element name to index map
@@ -139,7 +139,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_elementIndex = array();
+    private $_elementIndex = array();
 
     /**
      * Array containing indexes of duplicate elements
@@ -147,7 +147,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_duplicateIndex = array();
+    private $_duplicateIndex = array();
 
     /**
      * Array containing required field IDs
@@ -155,23 +155,21 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */ 
-    var $_required = array();
+    private $_required = array();
 
     /**
      * Prefix message in javascript alert if error
      * @since     1.0
      * @var  string
-     * @access   public
      */ 
-    var $_jsPrefix = 'Invalid information entered.';
+    private $_jsPrefix = 'Invalid information entered.';
 
     /**
      * Postfix message in javascript alert if error
      * @since     1.0
      * @var  string
-     * @access   public
      */ 
-    var $_jsPostfix = 'Please correct these fields.';
+    private $_jsPostfix = 'Please correct these fields.';
 
     /**
      * Datasource object implementing the informal
@@ -180,7 +178,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  object
      * @access   private
      */
-    var $_datasource;
+    private $_datasource;
 
     /**
      * Array of default form values
@@ -188,7 +186,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_defaultValues = array();
+    private $_defaultValues = array();
 
     /**
      * Array of constant form values
@@ -196,7 +194,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_constantValues = array();
+    private $_constantValues = array();
 
     /**
      * Array of submitted form values
@@ -204,23 +202,21 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_submitValues = array();
+    private $_submitValues = array();
 
     /**
      * Array of submitted form files
      * @since     1.0
      * @var  integer
-     * @access   public
      */
-    var $_submitFiles = array();
+    private $_submitFiles = array();
 
     /**
      * Value for maxfilesize hidden element if form contains file input
      * @since     1.0
      * @var  integer
-     * @access   public
      */
-    var $_maxFileSize = 1048576; // 1 Mb = 1048576
+    private $_maxFileSize = 1048576; // 1 Mb = 1048576
 
     /**
      * Flag to know if all fields are frozen
@@ -228,7 +224,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  boolean
      * @access   private
      */
-    var $_freezeAll = false;
+    private $_freezeAll = false;
 
     /**
      * Array containing the form rules
@@ -236,14 +232,14 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_rules = array();
+    private $_rules = array();
 
     /**
      * Form rules, global variety
      * @var     array
      * @access  private
      */
-    var $_formRules = array();
+    private $_formRules = array();
 
     /**
      * Array containing the validation errors
@@ -251,7 +247,7 @@ class HTML_QuickForm extends HTML_Common
      * @var  array
      * @access   private
      */
-    var $_errors = array();
+    private $_errors = array();
 
     /**
      * Note for required fields in the form
@@ -259,14 +255,14 @@ class HTML_QuickForm extends HTML_Common
      * @since     1.0
      * @access    private
      */
-    var $_requiredNote = '<span style="font-size:80%; color:#ff0000;">*</span><span style="font-size:80%;"> denotes required field</span>';
+    private $_requiredNote = '<span style="font-size:80%; color:#ff0000;">*</span><span style="font-size:80%;"> denotes required field</span>';
 
     /**
      * Whether the form was submitted
      * @var       boolean
      * @access    private
      */
-    var $_flagSubmitted = false;
+    private $_flagSubmitted = false;
 
     // }}}
     // {{{ constructor
@@ -279,7 +275,6 @@ class HTML_QuickForm extends HTML_Common
      * @param    string      $target            (optional)Form's target defaults to '_self'
      * @param    mixed       $attributes        (optional)Extra attributes for <form> tag
      * @param    bool        $trackSubmit       (optional)Whether to track if the form was submitted by adding a special hidden field
-     * @access   public
      */
     function HTML_QuickForm($formName='', $method='post', $action='', $target='', $attributes=null, $trackSubmit = false)
     {
@@ -336,7 +331,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns the current API version
      *
      * @since     1.0
-     * @access    public
      * @return    float
      */
     function apiVersion()
@@ -354,7 +348,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     string    $include    Include path for element type
      * @param     string    $className  Element class name
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function registerElementType($typeName, $include, $className)
@@ -373,7 +366,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     string    $data1      Name of function, regular expression or HTML_QuickForm_Rule classname
      * @param     string    $data2      Object parent of above function or HTML_QuickForm_Rule file path
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function registerRule($ruleName, $type, $data1, $data2 = null)
@@ -391,7 +383,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string   $element         form name of element to check
      * @since     1.0
-     * @access    public
      * @return    boolean
      */
     function elementExists($element=null)
@@ -412,7 +403,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     mixed    $defaultsFilter      string or array of filter(s) to apply to default values
      * @param     mixed    $constantsFilter     string or array of filter(s) to apply to constants values
      * @since     3.3
-     * @access    public
      * @return    void
      * @throws    HTML_QuickForm_Error
      */
@@ -440,7 +430,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     array    $defaultValues       values used to fill the form
      * @param     mixed    $filter              (optional) filter(s) to apply to all default values
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    HTML_QuickForm_Error
      */
@@ -480,7 +469,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     mixed    $filter              (optional) filter(s) to apply to all default values    
      *
      * @since     2.0
-     * @access    public
      * @return    void
      * @throws    HTML_QuickForm_Error
      */
@@ -517,7 +505,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     int    $bytes    Size in bytes
      * @since     3.0
-     * @access    public
      * @return    void
      */
     function setMaxFileSize($bytes = 0)
@@ -540,7 +527,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns the value of MAX_FILE_SIZE hidden element
      *
      * @since     3.0
-     * @access    public
      * @return    int   max file size in bytes
      */
     function getMaxFileSize()
@@ -559,7 +545,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string     $elementType    type of element to add (text, textarea, file...)
      * @since     1.0
-     * @access    public
      * @return    HTML_QuickForm_Element
      * @throws    HTML_QuickForm_Error
      */
@@ -620,7 +605,6 @@ class HTML_QuickForm extends HTML_Common
      * @param    mixed      $element        element object or type of element to add (text, textarea, file...)
      * @since    1.0
      * @return   HTML_QuickForm_Element     a reference to newly added element
-     * @access   public
      * @throws   HTML_QuickForm_Error
      */
     function &addElement($element)
@@ -671,7 +655,6 @@ class HTML_QuickForm extends HTML_Common
     * element to a new position, you'll have to use removeElement():
     * $form->insertElementBefore($form->removeElement('foo', false), 'bar');
     *
-    * @access   public
     * @since    3.2.4
     * @param    HTML_QuickForm_element  Element to insert
     * @param    string                  Name of the element before which the new
@@ -743,7 +726,6 @@ class HTML_QuickForm extends HTML_Common
      *                                      used in the form element name ex: group[element]
      * @return   HTML_QuickForm_group       reference to a newly added group
      * @since    2.8
-     * @access   public
      * @throws   HTML_QuickForm_Error
      */
     function &addGroup($elements, $name=null, $groupLabel='', $separator=null, $appendName = true)
@@ -766,7 +748,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string     $element    Element name
      * @since     2.0
-     * @access    public
      * @return    HTML_QuickForm_element    reference to element
      * @throws    HTML_QuickForm_Error
      */
@@ -791,7 +772,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string     $element    Element name
      * @since     2.0
-     * @access    public
      * @return    mixed     element value
      * @throws    HTML_QuickForm_Error
      */
@@ -824,7 +804,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string     Element name
      * @since     2.0
-     * @access    public
      * @return    mixed     submitted element value or null if not set
      */    
     function getSubmitValue($elementName)
@@ -918,7 +897,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string    $element        Name of form element to check
      * @since     1.0
-     * @access    public
      * @return    string    error message corresponding to checked element
      */
     function getElementError($element)
@@ -937,7 +915,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     string    $element    Name of form element to set error for
      * @param     string    $message    Error message, if empty then removes the current error message
      * @since     1.0       
-     * @access    public
      * @return    void
      */
     function setElementError($element, $message = null)
@@ -977,7 +954,6 @@ class HTML_QuickForm extends HTML_Common
      * @param      mixed    $elements   Array of element names/objects or string of elements to be updated
      * @param      mixed    $attrs      Array or sting of html attributes
      * @since      2.10
-     * @access     public
      * @return     void
      */
     function updateElementAttr($elements, $attrs)
@@ -1011,7 +987,6 @@ class HTML_QuickForm extends HTML_Common
      * 
      * @param string    $elementName The element name
      * @param boolean   $removeRules True if rules for this element are to be removed too                     
-     * @access public
      * @since 2.0
      * @return HTML_QuickForm_element    a reference to the removed element
      * @throws HTML_QuickForm_Error
@@ -1059,7 +1034,6 @@ class HTML_QuickForm extends HTML_Common
      * @param    boolean    $reset         Client-side validation: reset the form element to its original value if there is an error?
      * @param    boolean    $force         Force the rule to be applied, even if the target form element does not exist
      * @since    1.0
-     * @access   public
      * @throws   HTML_QuickForm_Error
      */
     function addRule($element, $message, $type, $format=null, $validation='server', $reset = false, $force = false)
@@ -1125,7 +1099,6 @@ class HTML_QuickForm extends HTML_Common
      * @param    string     $validation    (optional)Where to perform validation: "server", "client"
      * @param    bool       $reset         Client-side: whether to reset the element's value to its original state if validation failed.
      * @since    2.5
-     * @access   public
      * @throws   HTML_QuickForm_Error
      */
     function addGroupRule($group, $arg1, $type='', $format=null, $howmany=0, $validation = 'server', $reset = false)
@@ -1214,7 +1187,6 @@ class HTML_QuickForm extends HTML_Common
     * The rule function/method should return true in case of successful 
     * validation and array('element name' => 'error') when there were errors.
     * 
-    * @access   public
     * @param    mixed   Callback, either function name or array(&$object, 'method')
     * @throws   HTML_QuickForm_Error
     */
@@ -1235,7 +1207,6 @@ class HTML_QuickForm extends HTML_Common
      * @param    mixed     $element       Form element name or array of such names
      * @param    mixed     $filter        Callback, either function name or array(&$object, 'method')
      * @since    2.0
-     * @access   public
      * @throws   HTML_QuickForm_Error
      */
     function applyFilter($element, $filter)
@@ -1301,7 +1272,6 @@ class HTML_QuickForm extends HTML_Common
     * The main difference is that existing keys will not be renumbered
     * if they are integers.
     *
-    * @access   public
     * @param    array   $a  original array
     * @param    array   $b  array which will be merged into first one
     * @return   array   merged array
@@ -1333,7 +1303,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string   $type     Form element type
      * @since     1.0
-     * @access    public
      * @return    boolean
      */
     function isTypeRegistered($type)
@@ -1348,7 +1317,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns an array of registered element types
      *
      * @since     1.0
-     * @access    public
      * @return    array
      */
     function getRegisteredTypes()
@@ -1365,7 +1333,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     string   $name    Validation rule name
      * @param     bool     Whether to automatically register subclasses of HTML_QuickForm_Rule
      * @since     1.0
-     * @access    public
      * @return    mixed    true if previously registered, false if not, new rule name if auto-registering worked
      */
     function isRuleRegistered($name, $autoRegister = false)
@@ -1403,7 +1370,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns an array of registered validation rules
      *
      * @since     1.0
-     * @access    public
      * @return    array
      */
     function getRegisteredRules()
@@ -1419,7 +1385,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string   $element     Form element name
      * @since     1.0
-     * @access    public
      * @return    boolean
      */
     function isElementRequired($element)
@@ -1435,7 +1400,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string   $element     Form element name
      * @since     1.0
-     * @access    public
      * @return    boolean
      */
     function isElementFrozen($element)
@@ -1455,7 +1419,6 @@ class HTML_QuickForm extends HTML_Common
      * @param     string   $pref        Prefix warning
      * @param     string   $post        Postfix warning
      * @since     1.1
-     * @access    public
      * @return    void
      */
     function setJsWarnings($pref, $post)
@@ -1472,7 +1435,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param     string   $note        Message indicating some elements are required
      * @since     1.1
-     * @access    public
      * @return    void
      */
     function setRequiredNote($note)
@@ -1487,7 +1449,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns the required note
      *
      * @since     2.0
-     * @access    public
      * @return    string
      */
     function getRequiredNote()
@@ -1500,7 +1461,6 @@ class HTML_QuickForm extends HTML_Common
 
     /**
      * Performs the server side validation
-     * @access    public
      * @since     1.0
      * @return    boolean   true if no error found
      * @throws    HTML_QuickForm_Error
@@ -1600,7 +1560,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @param    mixed   $elementList       array or string of element(s) to be frozen
      * @since     1.0
-     * @access   public
      * @throws   HTML_QuickForm_Error
      */
     function freeze($elementList=null)
@@ -1636,7 +1595,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns whether or not the whole form is frozen
      *
      * @since     3.0
-     * @access    public
      * @return    boolean
      */
     function isFrozen()
@@ -1653,7 +1611,6 @@ class HTML_QuickForm extends HTML_Common
      * @param    mixed     $callback        Callback, either function name or array(&$object, 'method')
      * @param    bool      $mergeFiles      Whether uploaded files should be processed too
      * @since    1.0
-     * @access   public
      * @throws   HTML_QuickForm_Error
      * @return   mixed     Whatever value the $callback function returns
      */
@@ -1674,7 +1631,6 @@ class HTML_QuickForm extends HTML_Common
     *
     * @param object     An HTML_QuickForm_Renderer object
     * @since 3.0
-    * @access public
     * @return void
     */
     function accept(&$renderer)
@@ -1696,7 +1652,6 @@ class HTML_QuickForm extends HTML_Common
    /**
     * Returns a reference to default renderer object
     *
-    * @access public
     * @since 3.0
     * @return object a default renderer object
     */
@@ -1720,7 +1675,6 @@ class HTML_QuickForm extends HTML_Common
      *
      * @return   string     Html version of the form
      * @since     1.0
-     * @access   public
      */
     function toHtml ($in_data = null)
     {
@@ -1739,7 +1693,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns the client side validation script
      *
      * @since     2.0
-     * @access    public
      * @return    string    Javascript to perform validation, empty string if no 'client' rules were added
      */
     function getValidationScript()
@@ -1836,7 +1789,6 @@ class HTML_QuickForm extends HTML_Common
      * Returns the values submitted by the form
      *
      * @since     2.0
-     * @access    public
      * @param     bool      Whether uploaded files should be returned too
      * @return    array
      */
@@ -1854,7 +1806,6 @@ class HTML_QuickForm extends HTML_Common
      * The description of the array structure is in HTML_QuickForm_Renderer_Array docs
      * 
      * @since     2.0
-     * @access    public
      * @param     bool      Whether to collect hidden elements (passed to the Renderer's constructor)
      * @return    array of form contents
      */
@@ -1877,7 +1828,6 @@ class HTML_QuickForm extends HTML_Common
      * if submitted value does not exist for the given element.
      *
      * @param  string   Name of an element
-     * @access public
      * @return mixed
      * @throws HTML_QuickForm_Error
      */
@@ -1911,7 +1861,6 @@ class HTML_QuickForm extends HTML_Common
      * corresponding to the elements present in the form.
      * 
      * @param   mixed   Array/string of element names, whose values we want. If not set then return all elements.
-     * @access  public
      * @return  array   An assoc array of elements' values
      * @throws  HTML_QuickForm_Error
      */
@@ -1951,7 +1900,6 @@ class HTML_QuickForm extends HTML_Common
     * This is useful since the _submitFiles and _submitValues arrays
     * may be completely empty after the trackSubmit value is removed.
     *
-    * @access public
     * @return bool
     */
     function isSubmitted()
@@ -1966,7 +1914,6 @@ class HTML_QuickForm extends HTML_Common
     /**
      * Tell whether a result from a QuickForm method is an error (an instance of HTML_QuickForm_Error)
      *
-     * @access public
      * @param mixed     result code
      * @return bool     whether $value is an error
      * @static
@@ -1982,7 +1929,6 @@ class HTML_QuickForm extends HTML_Common
     /**
      * Return a textual error message for an QuickForm error code
      *
-     * @access  public
      * @param   int     error code
      * @return  string  error message
      * @static

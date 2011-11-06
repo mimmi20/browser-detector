@@ -50,7 +50,6 @@ class HTML_QuickForm_text extends HTML_QuickForm_input
      * @param     mixed     $attributes     (optional)Either a typical HTML attribute string 
      *                                      or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function HTML_QuickForm_text($elementName=null, $elementLabel=null, $attributes=null)
@@ -68,7 +67,6 @@ class HTML_QuickForm_text extends HTML_QuickForm_input
      * 
      * @param     string    $size  Size of text field
      * @since     1.3
-     * @access    public
      * @return    void
      */
     function setSize($size)
@@ -84,7 +82,6 @@ class HTML_QuickForm_text extends HTML_QuickForm_input
      * 
      * @param     string    $maxlength  Maximum length of text field
      * @since     1.3
-     * @access    public
      * @return    void
      */
     function setMaxlength($maxlength)

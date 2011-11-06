@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Math: Class for HTML <math> Elements (from MATHML Namespace)
+ * HTMLCommon\Root\Math: Class for HTML <math> Elements (from MATHML Namespace)
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Math
+// {{{ HTMLCommon\Root\Math
 
 /**
  * Class for HTML <math> Elements (from MATHML Namespace)
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Mathextends \HTML\Common3implements \HTML\Common3\Face
+class Math extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,21 +76,19 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'math';
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -99,7 +97,6 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -188,7 +185,6 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -215,8 +211,7 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
      * @param string  $weite   default for width
      * @param string  $display CSS display property
      *
-     * @access public
-     * @return \HTML\Common3\Root\A
+     * @return HTMLCommon\Root\A
      */
     public function addLink($lang, $func, $ref = '#', $key = '', $name = '',
                             $index = 0, $char = 'UTF-8', $titel = '',
@@ -241,8 +236,7 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $summary the summary for the table
      * @param string $style   the CSS style for the table
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function addTable($lang='de', $class='', $summary='', $style='')
     {
@@ -266,8 +260,7 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
-     * @return \HTML\Common3\Root\Input
+     * @return HTMLCommon\Root\Input
      */
     public function addInput($type = 'text', $id = '', $class = '', $lang = '',
                              $title = '', $value = '', $style = '')
@@ -281,7 +274,7 @@ class Mathextends \HTML\Common3implements \HTML\Common3\Face
     // }}} addInput
 }
 
-// }}} \HTML\Common3\Root\Math
+// }}} HTMLCommon\Root\Math
 
 /*
  * Local variables:

@@ -42,7 +42,6 @@ class HTML_QuickForm_Rule_Range extends HTML_QuickForm_Rule
      *
      * @param     string    $value      Value to be checked
      * @param     mixed     $options    Int for length, array for range
-     * @access    public
      * @return    boolean   true if value is valid
      */
     function validate($value, $options)

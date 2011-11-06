@@ -50,7 +50,7 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @since     1.0
      * @access    private
      */
-    var $_options = array();
+    private $_options = array();
     
     /**
      * Default values of the SELECT
@@ -59,7 +59,7 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @since     1.0
      * @access    private
      */
-    var $_values = null;
+    private $_values = null;
 
     // }}}
     // {{{ constructor
@@ -72,7 +72,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @param     mixed     Data to be used to populate options
      * @param     mixed     Either a typical HTML attribute string or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function HTML_QuickForm_select($elementName=null, $elementLabel=null, $options=null, $attributes=null)
@@ -92,7 +91,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the current API version 
      * 
      * @since     1.0
-     * @access    public
      * @return    double
      */
     function apiVersion()
@@ -108,7 +106,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * 
      * @param     mixed    $values  Array or comma delimited string of selected values
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setSelected($values)
@@ -130,7 +127,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns an array of the selected values
      * 
      * @since     1.0
-     * @access    public
      * @return    array of selected values
      */
     function getSelected()
@@ -146,7 +142,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * 
      * @param     string    $name   Input field name attribute
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setName($name)
@@ -161,7 +156,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the element name
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function getName()
@@ -176,7 +170,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the element name (possibly with brackets appended)
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function getPrivateName()
@@ -196,7 +189,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      *
      * @param     mixed    $values  Array or comma delimited string of selected values
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setValue($value)
@@ -211,7 +203,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns an array of the selected values
      * 
      * @since     1.0
-     * @access    public
      * @return    array of selected values
      */
     function getValue()
@@ -227,7 +218,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * 
      * @param     int    $size  Size of select  field
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setSize($size)
@@ -242,7 +232,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the select field size
      * 
      * @since     1.0
-     * @access    public
      * @return    int
      */
     function getSize()
@@ -258,7 +247,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * 
      * @param     bool    $multiple  Whether the select supports multi-selections
      * @since     1.2
-     * @access    public
      * @return    void
      */
     function setMultiple($multiple)
@@ -277,7 +265,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the select mutiple attribute
      * 
      * @since     1.2
-     * @access    public
      * @return    bool    true if multiple select, false otherwise
      */
     function getMultiple()
@@ -296,7 +283,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @param     mixed     $attributes Either a typical HTML attribute string 
      *                                  or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function addOption($text, $value, $attributes=null)
@@ -328,7 +314,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @param     array    $arr     Associative array of options
      * @param     mixed    $values  (optional) Array or comma delimited string of selected values
      * @since     1.0
-     * @access    public
      * @return    PEAR_Error on error or true
      * @throws    PEAR_Error
      */
@@ -360,7 +345,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @param     string    $valueCol   (optional) Name of column to use as the OPTION value 
      * @param     mixed     $values     (optional) Array or comma delimited string of selected values
      * @since     1.0
-     * @access    public
      * @return    PEAR_Error on error or true
      * @throws    PEAR_Error
      */
@@ -395,7 +379,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @param     string    $valueCol   (optional) Name of column to use as the OPTION value 
      * @param     mixed     $values     (optional) Array or comma delimited string of selected values
      * @since     1.1
-     * @access    public
      * @return    void
      * @throws    PEAR_Error
      */
@@ -442,7 +425,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * @param     mixed     $param3     (optional) See function detail
      * @param     mixed     $param4     (optional) See function detail
      * @since     1.1
-     * @access    public
      * @return    PEAR_Error on error or true
      * @throws    PEAR_Error
      */
@@ -468,7 +450,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the SELECT in HTML
      *
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function toHtml()
@@ -513,7 +494,6 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
      * Returns the value of field without HTML tags
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function getFrozenHtml()

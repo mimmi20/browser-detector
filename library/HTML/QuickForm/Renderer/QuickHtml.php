@@ -56,7 +56,6 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
     /**
      * Constructor
      *
-     * @access public
      * @return void
      */
     function HTML_QuickForm_Renderer_QuickHtml()
@@ -74,7 +73,6 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
      *
      * @param string $data (optional) Any extra data to put before the end of the form
      *
-     * @access public
      * @return string
      */
     function toHtml($data = '')
@@ -103,7 +101,6 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
      *               for elements that have the same name (i.e. radio and checkbox), but
      *               different values
      *
-     * @access public
      * @return string The html for the QuickForm element
      * @throws HTML_QuickForm_Error
      */
@@ -148,7 +145,6 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
      * @param bool                      Whether an element is required
      * @param string                    An error message associated with an element
      *
-     * @access public
      * @return mixed HTML string of element if $immediateRender is set, else we just add the
      *               html to the global _html string 
      */
@@ -173,7 +169,6 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
      * Gets the html for a hidden element and adds it to the array.
      * 
      * @param HTML_QuickForm_element    hidden form element being visited
-     * @access public
      * @return void
      */
     function renderHidden(&$element)
@@ -193,7 +188,6 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
      * parent::finishGroup()
      *
      * @param    HTML_QuickForm_group   group being visited
-     * @access   public
      * @return   void
      */
     function finishGroup(&$group)

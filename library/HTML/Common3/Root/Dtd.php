@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Dtd: Class for a DTD
+ * HTMLCommon\Root\Dtd: Class for a DTD
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,30 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-
-require_once 'HTML/Common3/Root/Zero.php';
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Dtd
+// {{{ HTMLCommon\Root\Dtd
 
 /**
  * Class for a DTD
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
+class Dtd extends Zero implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +71,6 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * Array of additional Elements and Attributes in the DTD (ELEMENT)
      *
      * @var      array
-     * @access   protected
      */
     protected $_dtdElements = array();
 
@@ -81,7 +78,6 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -97,8 +93,7 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * @param string $type        (Optional) the type for the new attribute
      * @param string $need        (Optional) the need level for the new attribute
      *
-     * @return \HTML\Common3\Root\Dtd
-     * @access public
+     * @return HTMLCommon\Root\Dtd
      */
     public function addDtdAttribute($elementName, $attribute, $type = 'CDATA',
                                     $need = '#IMPLIED')
@@ -137,8 +132,7 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * @param string $type        (Optional) the type for the new attribute
      * @param string $need        (Optional) the need level for the new attribute
      *
-     * @return \HTML\Common3\Root\Dtd
-     * @access public
+     * @return HTMLCommon\Root\Dtd
      */
     public function unsetDtdAttribute($elementName, $attribute)
     {
@@ -164,8 +158,7 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      * @param string|array|null $subElements the name of the attribute which should
      *                                       be added
      *
-     * @return \HTML\Common3\Root\Dtd
-     * @access public
+     * @return HTMLCommon\Root\Dtd
      */
     public function addDtdElement($elementName, $subElements = null)
     {
@@ -207,13 +200,12 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
     {
         $txt = '';
-        $dtd = \HTML\Common3\Globals::getAllDtds();
+        $dtd = HTMLCommon\Globals::getAllDtds();
 
         $this->setIndentLevel(1);
         $docType   = $this->getDoctype(false);
@@ -278,7 +270,7 @@ class Dtdextends \HTML\Common3\Root\Zeroimplements \HTML\Common3\Face
     // }}} toHtml
 }
 
-// }}} \HTML\Common3\Root\Dtd
+// }}} HTMLCommon\Root\Dtd
 
 /*
  * Local variables:

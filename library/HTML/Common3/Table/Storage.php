@@ -5,9 +5,9 @@ namespace HTML\Common3\Table;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Table_Storage: Storage class for HTML::Common3 (Table) data
+ * HTMLCommon\Table_Storage: Storage class for HTML::Common3 (Table) data
  *
- * This class stores data for tables built with \HTML\Common3\Root\Table.
+ * This class stores data for tables built with HTMLCommon\Root\Table.
  * When having more than one instance, it can be used for grouping the table
  * into the parts <thead>...</thead>, <tfoot>...</tfoot> and <tbody>...</tbody>.
  *
@@ -44,47 +44,46 @@ namespace HTML\Common3\Table;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Table/Root.php';
+use HTML\Common3\Table\Root as CommonHTMLTableElement;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Table_Storage
+// {{{ HTMLCommon\Table_Storage
 
 /**
  * Base Class for HTML <tbody>, <tfoot> and <thead>
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3\Face
+abstract class Storage extends CommonHTMLTableElement implements ElementsInterface
 {
     // {{{ properties
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -93,7 +92,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -105,7 +103,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -150,7 +147,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -162,7 +158,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *
      * @param string $fill the new autofill content
      *
-     * @access public
      * @return void
      */
     public function setAutoFill($fill)
@@ -181,7 +176,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * Returns the autoFill value
      *
      * @return mixed
-     * @access public
      */
     public function getAutoFill()
     {
@@ -196,7 +190,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *
      * @param boolean $grow the new autogrow value
      *
-     * @access public
      * @return void
      */
     public function setAutoGrow($grow)
@@ -215,7 +208,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * Returns the autoGrow value
      *
      * @return boolean
-     * @access public
      */
     public function getAutoGrow()
     {
@@ -230,7 +222,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *
      * @param integer $rows the Amount of Rows
      *
-     * @access public
      * @return void
      */
     public function setRowCount($rows)
@@ -245,7 +236,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * Returns the number of rows in the table storage
      *
      * @return integer
-     * @access public
      */
     public function getRowCount()
     {
@@ -260,7 +250,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *
      * @param integer $cols the Amount of Cols
      *
-     * @access public
      * @return integer
      */
     public function setColCount($cols)
@@ -306,7 +295,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $rownum (Optional) Row index to serve for cols count
      *
      * @return integer
-     * @access public
      */
     public function getColCount($rownum = null)
     {
@@ -341,8 +329,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $rownum Row index
      * @param string  $type   'th' or 'td'
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setRowType($rownum, $type)
     {
@@ -363,8 +350,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $col  Column index
      * @param string  $type 'th' or 'td'
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setColType($col, $type)
     {
@@ -392,8 +378,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed   $attributes Associative array or string of table
      *                            row attributes
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setCellAttributes($rownum, $col, $attributes)
     {
@@ -441,8 +426,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed   $attributes Associative array or string of table row
      *                            attributes
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function updateCellAttributes($rownum, $col, $attributes)
     {
@@ -472,7 +456,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $col    Column index
      *
      * @return array
-     * @access public
      */
     public function getCellAttributes($rownum, $col)
     {
@@ -503,8 +486,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *                          in $row
      * @param string  $type     (optional) Cell type either 'th' or 'td'
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setCellContents($rownum, $col, $contents, $type = 'td')
     {
@@ -535,7 +517,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $rownum Row index
      * @param integer $col    Column index
      *
-     * @access public
      * @return array
      */
     public function getCellContents($rownum, $col)
@@ -559,9 +540,8 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed   $attributes (optional) Associative array or string of
      *                              table row attributes
      *
-     * @access public
      * @throws PEAR_Error
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setHeaderContents($rownum, $col, $contents, $attributes = null)
     {
@@ -591,8 +571,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *                            applied in <td>|<th> tags; true if
      *                            attributes are to be applied in <tr> tag
      *
-     * @return \HTML\Common3\Root\Tr
-     * @access public
+     * @return HTMLCommon\Root\Tr
      */
     public function addRow($contents = null, $attributes = null, $type = 'td',
         $inTR = true)
@@ -651,8 +630,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *                            in <td>|<th> tags; true if attributes are to
      *                            be applied in <tr> tag
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setRowAttributes($rownum, $attributes, $inTR = true)
     {
@@ -683,8 +661,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *                            in <td>|<th> tags; true if attributes are to
      *                            be applied in <tr> tag
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function updateRowAttributes($rownum, $attributes, $inTR = true)
     {
@@ -711,7 +688,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $rownum Row index
      *
      * @return array
-     * @access public
      */
     public function getRowAttributes($rownum)
     {
@@ -739,8 +715,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $firstAttributes (optional) Which attributes should be
      *                                 applied to the first row, 1 or 2.
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function altRowAttributes($start, $attributes1, $attributes2,
         $inTR = true, $firstAttributes = 1)
@@ -774,7 +749,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *                           table row attributes
      * @param string $type       (optional) Cell type either 'th' or 'td'
      *
-     * @access public
      * @return integer
      */
     public function addCol($contents = null, $attributes = null, $type = 'td')
@@ -844,8 +818,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed   $attributes (optional) Associative array or string
      *                            of table row attributes
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setColAttributes($col, $attributes = null)
     {
@@ -881,8 +854,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed   $attributes (optional) Associative array or string
      *                            of table row attributes
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function updateColAttributes($col, $attributes = null)
     {
@@ -923,8 +895,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $firstAttributes (optional) Which attributes should be
      *                                 applied to the first col, 1 or 2.
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function altColAttributes($start, $attributes1, $attributes2,
         $firstAttributes = 1)
@@ -949,8 +920,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed $attributes (optional) Associative array or
      *                          string of table row attributes
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function setAllAttributes($attributes = null)
     {
@@ -971,8 +941,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param mixed $attributes (optional) Associative array or
      *                          string of table row attributes
      *
-     * @access public
-     * @return \HTML\Common3\Table_Storage
+     * @return HTMLCommon\Table_Storage
      */
     public function updateAllAttributes($attributes = null)
     {
@@ -998,7 +967,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -1021,7 +989,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param boolean $levels   if TRUE the levels are added,
      *                          if FALSE the levels will be ignored
      *
-     * @access public
      * @return string
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
@@ -1045,8 +1012,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * @param integer $rownum Row index
      * @param string  $method Name of calling method
      *
-     * @access protected
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @throws HTMLCommon\InvalidArgumentException
      * @return void
      */
     protected function adjustRowCount($rownum, $method)
@@ -1067,9 +1033,9 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
                     $this->addRow();
                 } while ($this->getRowCount() < $rownum);
             } else {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     'Invalid row reference[' . $rownum .
-                    '] in \HTML\Common3\Table_Storage::' . $method
+                    '] in HTMLCommon\Table_Storage::' . $method
                 );
             }
         }
@@ -1083,7 +1049,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      *
      * @param boolean $useTGroups TRUE, if TGroups should be used, FALSE otherwise
      *
-     * @access public
      * @return void
      */
     public function setUseTGroups($useTGroups)
@@ -1098,7 +1063,6 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
      * Gets the useTGroups value
      *
      * @return boolean
-     * @access public
      */
     public function getUseTGroups()
     {
@@ -1108,7 +1072,7 @@ abstract class Storageextends \HTML\Common3\Table\Rootimplements \HTML\Common3
     // }}} getUseTGroups
 }
 
-// }}} \HTML\Common3\Table_Storage
+// }}} HTMLCommon\Table_Storage
 
 /*
  * Local variables:

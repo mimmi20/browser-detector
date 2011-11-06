@@ -53,10 +53,9 @@ class HTML_QuickForm_hiddenselect extends HTML_QuickForm_select
      * @param     mixed     Data to be used to populate options
      * @param     mixed     Either a typical HTML attribute string or an associative array (not used)
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function HTML_QuickForm_hiddenselect($elementName=null, $elementLabel=null, $options=null, $attributes=null)
+    public function __construct($elementName=null, $elementLabel=null, $options=null, $attributes=null)
     {
         HTML_QuickForm_element::HTML_QuickForm_element($elementName, $elementLabel, $attributes);
         $this->_persistantFreeze = true;
@@ -73,11 +72,10 @@ class HTML_QuickForm_hiddenselect extends HTML_QuickForm_select
      * Returns the SELECT in HTML
      *
      * @since     1.0
-     * @access    public
      * @return    string
      * @throws    
      */
-    function toHtml()
+    public function toHtml()
     {
         if (empty($this->_values)) {
             return '';
@@ -108,11 +106,10 @@ class HTML_QuickForm_hiddenselect extends HTML_QuickForm_select
    /**
     * This is essentially a hidden element and should be rendered as one  
     */
-    function accept(&$renderer)
+    public function accept(&$renderer)
     {
         $renderer->renderHidden($this);
     }
 
     // }}}
 } //end class HTML_QuickForm_hiddenselect
-?>

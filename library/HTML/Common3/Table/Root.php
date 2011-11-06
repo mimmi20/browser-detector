@@ -5,9 +5,9 @@ namespace HTML\Common3\Table;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Table\Root: Base Class for HTML table, tbody, tfoot, thead and tr
+ * HTMLCommon\Table\Root: Base Class for HTML table, tbody, tfoot, thead and tr
  *
- * This class stores data for tables built with \HTML\Common3\Root\Table. When having
+ * This class stores data for tables built with HTMLCommon\Root\Table. When having
  * more than one instance, it can be used for grouping the table into the
  * parts <thead>...</thead>, <tfoot>...</tfoot> and <tbody>...</tbody>.
  *
@@ -44,36 +44,36 @@ namespace HTML\Common3\Table;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Table\Root
+// {{{ HTMLCommon\Table\Root
 
 /**
  * Base Class for HTML <table>, <tbody>, <tfoot>, <thead> and <tr>
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
+abstract class Root extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -81,7 +81,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
@@ -90,7 +89,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * newly-created tbodies.
      *
      * @var      string
-     * @access   protected
      */
     protected $_autoFill = '';
 
@@ -100,7 +98,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * This is used as a default for newly-created tbodies.
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_autoGrow = true;
 
@@ -108,7 +105,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * Whether to use <thead>, <tfoot> and <tbody> or not
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_useTGroups = true;
 
@@ -116,7 +112,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * Count of Rows in this table/row group
      *
      * @var      integer
-     * @access   protected
      */
     protected $_rowCount = 0;
 
@@ -124,7 +119,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * Count of Cols in this table/row group
      *
      * @var      integer
-     * @access   protected
      */
     protected $_colCount = 0;
 
@@ -132,7 +126,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * Array of all rows in this table
      *
      * @var      array
-     * @access   protected
      */
     protected $_rows = array();
 
@@ -140,7 +133,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * Array of all columns in this table
      *
      * @var      array
-     * @access   protected
      */
     protected $_cols = array();
 
@@ -148,7 +140,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -160,7 +151,6 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param mixed $attributes Variable to test
      *
-     * @access protected
      * @return boolean
      */
     protected function isAttributesArray($attributes)
@@ -177,7 +167,7 @@ abstract class Rootextends \HTML\Common3implements \HTML\Common3\Face
     // }}} isAttributesArray
 }
 
-// }}} \HTML\Common3\Table\Root
+// }}} HTMLCommon\Table\Root
 
 /*
  * Local variables:

@@ -144,7 +144,6 @@ class Entities
      * @param string $charset Charset of the input string
      *
      * @return string The encoded text
-     * @access public
      * @static
      */
     public static function encode($text,
@@ -245,8 +244,6 @@ class Entities
      * @param array $matches The array returned by preg_replace. Indice 0 is
      *                          the utf8 char to convert.
      *
-     * @static
-     * @access private
      * @return string HTML numerical entity.
      */
     private static function _utf8ord($matches)
@@ -293,7 +290,6 @@ class Entities
      * @param string $charset Charset of the output
      *
      * @return string The encoded text
-     * @access public
      * @static
      */
     public static function decode($text,
@@ -370,8 +366,6 @@ class Entities
      * @param array $matches Array returned from preg_replace. The indice
      *                       1 contains the code, in decimal or hexadecimal.
      *
-     * @static
-     * @access private
      * @return string An utf8 char.
      */
     private static function _utf8chr($matches)
@@ -415,7 +409,6 @@ class Entities
      * @param int $options Compatibility mode. 
      * 
      * @return array The array of named entities, associated with utf8 chars.
-     * @access public
      * @static
      */
     public static function getTranslationTable($options = self::ALL)

@@ -72,9 +72,8 @@ class HTML_CSS_Error extends PEAR_Error
      * @param string $userinfo (optional) additional user/debug info
      *
      * @since      version 1.0.0 (2006-06-24)
-     * @access     public
      */
-    function HTML_CSS_Error($message = null,
+    public function HTML_CSS_Error($message = null,
         $code = null, $mode = null, $options = null, $userinfo = null
     ) {
         $this->__construct($message, $code, $mode, $options, $userinfo);
@@ -94,9 +93,8 @@ class HTML_CSS_Error extends PEAR_Error
      * @param string $userinfo (optional) additional user/debug info
      *
      * @since      version 1.0.0 (2006-06-24)
-     * @access     public
      */
-    function __construct($message = null,
+    public function __construct($message = null,
         $code = null, $mode = null, $options = null, $userinfo = null
     ) {
         if ($mode === null) {
@@ -152,9 +150,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     int                      error level
      * @since      version 1.0.0 (2006-06-24)
-     * @access     public
      */
-    function getLevel()
+    public function getLevel()
     {
         return $this->level;
     }
@@ -164,9 +161,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     void
      * @since      version 1.0.0 (2006-06-24)
-     * @access     public
      */
-    function log()
+    public function log()
     {
         $userinfo = $this->getUserInfo();
 
@@ -189,9 +185,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     string
      * @since      version 1.0.0 (2006-06-24)
-     * @access     public
      */
-    function sprintContextExec($format)
+    public function sprintContextExec($format)
     {
         $userinfo = $this->getUserInfo();
 
@@ -227,9 +222,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     void
      * @since      version 1.0.0 (2006-06-24)
-     * @access     private
      */
-    function _display($userinfo)
+    protected function _display($userinfo)
     {
         $displayDefault = array(
             'eol' => "<br/>\n",
@@ -255,9 +249,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     void
      * @since      version 1.0.0 (2006-06-24)
-     * @access     private
      */
-    function _log($userinfo)
+    protected function _log($userinfo)
     {
         $logDefault = array(
             'eol' => "\n",
@@ -324,9 +317,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     mixed
      * @since      version 0.3.3 (2004-05-20)
-     * @access     private
      */
-    function _handleError($code, $level)
+    protected function _handleError($code, $level)
     {
         if ($level == 'exception') {
             return PEAR_ERROR_DIE;
@@ -345,9 +337,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     string
      * @since      version 1.0.0 (2006-06-24)
-     * @access     private
      */
-    function _msgCallback($code, $userinfo)
+    protected function _msgCallback($code, $userinfo)
     {
         $errorMessages = HTML_CSS_Error::_getErrorMessage();
 
@@ -382,9 +373,8 @@ class HTML_CSS_Error extends PEAR_Error
      *
      * @return     string
      * @since      version 1.0.0 (2006-06-24)
-     * @access     private
      */
-    function _getErrorMessage()
+    protected function _getErrorMessage()
     {
         $messages = array(
             HTML_CSS_ERROR_UNKNOWN =>

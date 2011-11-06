@@ -19,6 +19,8 @@ namespace Browscap\Browser\Gecko;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * FirefoxUserAgentHanlder
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Gecko;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Thunderbird
+class Thunderbird extends BrowserHandler
 {
     protected $prefix = 'THUNDERBIRD';
     

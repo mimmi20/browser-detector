@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Meta: Class for HTML <meta> Elements
+ * HTMLCommon\Root\Meta: Class for HTML <meta> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,37 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Meta
+// {{{ HTMLCommon\Root\Meta
 
 /**
  * Class for HTML <meta> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Meta
-extends \HTML\Common3
-implements \HTML\Common3\Face
+class Meta extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -78,7 +76,6 @@ implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'meta';
 
@@ -86,21 +83,19 @@ implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('content', 'http-equiv', 'name');
@@ -109,7 +104,6 @@ implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = true;
 
@@ -117,7 +111,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array();
 
@@ -125,7 +118,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -161,7 +153,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -181,7 +172,6 @@ implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -194,7 +184,7 @@ implements \HTML\Common3\Face
         if ($name != '') {
             if ($name == 'content') {
                 if ($value === null) {
-                    throw new \HTML\Common3\CanNotRemoveAttributeException(
+                    throw new HTMLCommon\CanNotRemoveAttributeException(
                         "Required attribute 'content' can not be removed"
                     );
                 }
@@ -204,7 +194,7 @@ implements \HTML\Common3\Face
                 if ($value === null) {
                     if ((string) $this->getName() == '') {
                         //Attribute must be set, if "name" is not set
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'http-equiv' can not be removed"
                         );
                     } else {
@@ -220,7 +210,7 @@ implements \HTML\Common3\Face
                 if ($value === null) {
                     if ((string) $this->getAttribute('http-equiv') == '') {
                         //Attribute must be set, if "http-equiv" is not set
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'name' can not be removed"
                         );
                     } else {
@@ -290,7 +280,7 @@ implements \HTML\Common3\Face
     }
 }
 
-// }}} \HTML\Common3\Root\Meta
+// }}} HTMLCommon\Root\Meta
 
 /*
  * Local variables:

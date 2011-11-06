@@ -116,16 +116,16 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
             array('Opera/9.80 (Windows NT 6.1; U; en) Presto/2.9.168 Version/11.50', true, 'array', 'Opera', '11.50', 'Win7'),
             array('Mozilla/5.0 (Windows NT 6.0; rv:6.0) Gecko/20100101 Firefox/6.0', true, 'array', 'Firefox', '6.0', 'WinVista'),
             
-            array('Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5', true, 'array', 'iPad', '4.2', 'iPhone OS'),
-            array('Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)', true, 'array', 'Baidu', '2.0', 'unknown'),
-            array('Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5', true, 'array', 'iPhone', '4.3.3', 'iPhone OS'),
+            array('Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5', true, 'array', 'iPad', '4.2', 'iOS'),
+            array('Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)', true, 'array', 'Baidu', '0', 'unknown'),
+            array('Mozilla/5.0 (iPhone; U; CPU iOS 4_3_3 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5', true, 'array', 'iPhone', '4.3.3', 'iOS'),
             array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)', true, 'array', 'Internet Explorer', '9.0', 'Win7'),
             
-            array('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.15) Gecko/20101028 Iceweasel/3.5.15 unister-test-acceptance', true, 'array', 'Unister', '0', 'Unister'),
+            array('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.15) Gecko/20101028 Iceweasel/3.5.15 unister-test-acceptance', true, 'array', 'Unister-Testing', '0', 'Unister'),
             
             array('Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; HTC Dream Build/EPE54B) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17', true, 'array', 'Android Webkit', '2.1', 'Android'),
             array('Mozilla/5.0 (Linux; U; Android 2.2; de-de; HTC Desire 2.33.161.2 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1', true, 'array', 'Android Webkit', '2.2', 'Android'),
-            array('SonyEricssonW910i/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1', true, 'array', 'Access Netfront', '3.4', ''),
+            array('SonyEricssonW910i/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1', true, 'array', 'Access Netfront', '3.4', 'JAVA'),
         );
     }
 }

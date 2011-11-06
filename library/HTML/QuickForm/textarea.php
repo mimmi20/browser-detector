@@ -47,7 +47,7 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * @since     1.0
      * @access    private
      */
-    var $_value = null;
+    private $_value = null;
 
     // }}}
     // {{{ constructor
@@ -59,7 +59,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * @param     mixed     Label(s) for a field
      * @param     mixed     Either a typical HTML attribute string or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function HTML_QuickForm_textarea($elementName=null, $elementLabel=null, $attributes=null)
@@ -77,7 +76,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * 
      * @param     string    $name   Input field name attribute
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setName($name)
@@ -92,7 +90,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * Returns the element name
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function getName()
@@ -108,7 +105,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * 
      * @param     string    $value  Value for textarea element
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setValue($value)
@@ -123,7 +119,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * Returns the value of the form element
      *
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function getValue()
@@ -139,7 +134,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * 
      * @param     string    $wrap  Wrap type
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setWrap($wrap)
@@ -155,7 +149,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * 
      * @param     string    $rows  Height expressed in rows
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function setRows($rows)
@@ -171,7 +164,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * 
      * @param     string    $cols  Width expressed in cols
      * @since     1.0
-     * @access    public
      * @return    void
      */ 
     function setCols($cols)
@@ -186,7 +178,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * Returns the textarea element in HTML
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function toHtml()
@@ -209,7 +200,6 @@ class HTML_QuickForm_textarea extends HTML_QuickForm_element
      * Returns the value of field without HTML tags (in this case, value is changed to a mask)
      * 
      * @since     1.0
-     * @access    public
      * @return    string
      */
     function getFrozenHtml()

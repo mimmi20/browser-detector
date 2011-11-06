@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\H: Class for HTML <h1> .. <h6> Elements
+ * HTMLCommon\Root\H: Class for HTML <h1> .. <h6> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,50 +40,49 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\ Text Elements
+ * base class for HTMLCommon\ Text Elements
  */
-require_once 'HTML/Common3/Text.php';
+use HTML\Common3\Text as CommonHTMLText;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\H
+// {{{ HTMLCommon\Root\H
 
 /**
  * abstract Class for HTML <h1> .. <h6> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Hextends \HTML\Common3\Textimplements \HTML\Common3\Face
+abstract class H extends CommonHTMLText implements ElementsInterface
 {
     // {{{ properties
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -92,7 +91,6 @@ abstract class Hextends \HTML\Common3\Textimplements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -148,7 +146,6 @@ abstract class Hextends \HTML\Common3\Textimplements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -208,14 +205,13 @@ abstract class Hextends \HTML\Common3\Textimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
     // }}} properties
 }
 
-// }}} \HTML\Common3\Root\H
+// }}} HTMLCommon\Root\H
 
 /*
  * Local variables:

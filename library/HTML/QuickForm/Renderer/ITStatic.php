@@ -50,61 +50,61 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * An HTML_Template_IT or some other API compatible Template instance
     * @var object
     */
-    var $_tpl = null;
+    private $_tpl = null;
 
    /**
     * Rendered form name
     * @var string
     */
-    var $_formName = 'form';
+    private $_formName = 'form';
 
    /**
     * The errors that were not shown near concrete fields go here
     * @var array
     */
-    var $_errors = array();
+    private $_errors = array();
 
    /**
     * Show the block with required note?
     * @var bool
     */
-    var $_showRequired = false;
+    private $_showRequired = false;
 
    /**
     * Which group are we currently parsing ?
     * @var string
     */
-    var $_inGroup;
+    private $_inGroup;
 
    /**
     * Index of the element in its group
     * @var int
     */
-    var $_elementIndex = 0;
+    private $_elementIndex = 0;
 
    /**
     * If elements have been added with the same name
     * @var array
     */
-    var $_duplicateElements = array();
+    private $_duplicateElements = array();
 
    /**
     * How to handle the required tag for required fields
     * @var string
     */
-    var $_required = '{label}<font size="1" color="red">*</font>';
+    private $_required = '{label}<font size="1" color="red">*</font>';
 
    /**
     * How to handle error messages in form validation
     * @var string
     */
-    var $_error = '<font color="red">{error}</font><br />{html}';
+    private $_error = '<font color="red">{error}</font><br />{html}';
 
    /**
     * Collected HTML for hidden elements, if needed  
     * @var string
     */
-    var $_hidden = '';
+    private $_hidden = '';
    /**#@-*/
 
    /**
@@ -122,7 +122,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * Called when visiting a form, before processing any form elements
     *
     * @param    HTML_QuickForm  form object being visited
-    * @access   public
     * @return   void
     */
     function startForm(&$form)
@@ -141,7 +140,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * Called when visiting a form, after processing all form elements
     * 
     * @param    HTML_QuickForm  form object being visited
-    * @access   public
     * @return   void
     */
     function finishForm(&$form)
@@ -171,7 +169,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * Called when visiting a header element
     *
     * @param    HTML_QuickForm_header   header element being visited
-    * @access   public
     * @return   void
     */
     function renderHeader(&$header)
@@ -192,7 +189,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * @param    HTML_QuickForm_element  form element being visited
     * @param    bool                    Whether an element is required
     * @param    string                  An error message associated with an element
-    * @access   public
     * @return   void
     */
     function renderElement(&$element, $required, $error)
@@ -266,7 +262,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * Called when visiting a hidden element
     * 
     * @param    HTML_QuickForm_element  hidden element being visited
-    * @access   public
     * @return   void
     */
     function renderHidden(&$element)
@@ -286,7 +281,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * @param    HTML_QuickForm_group    group being visited
     * @param    bool                    Whether a group is required
     * @param    string                  An error message associated with a group
-    * @access   public
     * @return   void
     */
     function startGroup(&$group, $required, $error)
@@ -337,7 +331,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * Called when visiting a group, after processing all group elements
     *
     * @param    HTML_QuickForm_group    group being visited
-    * @access   public
     * @return   void
     */
     function finishGroup(&$group)
@@ -356,7 +349,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * will put a red star in front of the label if the element is required.
     *
     * @param    string      The required element template
-    * @access   public
     * @return   void
     */
     function setRequiredTemplate($template)
@@ -384,7 +376,6 @@ class HTML_QuickForm_Renderer_ITStatic extends HTML_QuickForm_Renderer
     * where you want the error message to appear in the form.
     *
     * @param    string      The element error template
-    * @access   public
     * @return   void
     */
     function setErrorTemplate($template)

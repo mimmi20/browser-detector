@@ -5,7 +5,7 @@ namespace HTML\Common3\Form;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Form_Checkbox: Class for HTML <input type="checkbox"> Elements
+ * HTMLCommon\Form_Checkbox: Class for HTML <input type="checkbox"> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,32 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Root/Input.php';
+use HTML\Common3\Root\Input as HTMLInputField;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Form_Checkbox
+// {{{ HTMLCommon\Form_Checkbox
 
 /**
  * Class for HTML <input type="checkbox"> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
+class Checkbox extends HTMLInputField implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +73,6 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array('type' => 'checkbox');
 
@@ -81,7 +80,6 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -101,7 +99,6 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -116,7 +113,7 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
                     $id = (string) $this->getId();
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'name' can not be removed"
                         );
                     } else {
@@ -133,7 +130,7 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
                     $id = $root->generateId($this->getName());
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'id' can not be removed"
                         );
                     } else {
@@ -172,7 +169,6 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
      * @return void
      */
     public function setInput($type = 'text', $id = '', $class = '', $lang = '',
@@ -188,7 +184,6 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
      * returns the element type
      *
      * @return string the element type (mostly the same as the element name)
-     * @access public
      */
     public function getType()
     {
@@ -198,7 +193,7 @@ class Checkboxextends \HTML\Common3\Root\Inputimplements \HTML\Common3\Face
     // }}} getType
 }
 
-// }}} \HTML\Common3\Form_Checkbox
+// }}} HTMLCommon\Form_Checkbox
 
 /*
  * Local variables:

@@ -5,7 +5,7 @@ namespace HTML\Common3;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Global: includes global variables for Common3
+ * HTMLCommon\Global: includes global variables for Common3
  *
  * PHP versions 5 and 6
  *
@@ -40,17 +40,17 @@ namespace HTML\Common3;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\Global
+ * @link     http://pear.php.net/package/HTMLCommon\Global
  */
 
-// {{{ \HTML\Common3\Globals
+// {{{ HTMLCommon\Globals
 
 /**
- * \HTML\Common3\Global: includes global variables for Common3
+ * HTMLCommon\Global: includes global variables for Common3
  *
  * Implements methods for working with HTML attributes, parsing and generating
  * attribute strings. Port of HTML_Common class for PHP4 originally written by
@@ -60,10 +60,10 @@ namespace HTML\Common3;
  * http://www.w3.org/TR/2008/WD-html5-20080610/ from 2008-06-10
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @final
  */
 final class Globals
@@ -74,8 +74,6 @@ final class Globals
      * Array of HTML Elements which exists
      *
      * @var      array
-     * @access   private
-     * @static
      */
     private static $_allElements = array(
         /* A */
@@ -1422,8 +1420,6 @@ final class Globals
      * Array of Attibutes which exists
      *
      * @var      array
-     * @access   private
-     * @static
      */
     private static $_allAttributes = array(
         /* Core Attributes */
@@ -2492,8 +2488,6 @@ final class Globals
      * Array of all possible Doctypes for the document
      *
      * @var      array
-     * @access   private
-     * @static
      */
     private static $_doctypes = array(
         'html' => array(
@@ -2546,8 +2540,6 @@ final class Globals
      * DTD File for the document
      *
      * @var      array
-     * @access   private
-     * @static
      */
     private static $_dtd = array(
         'html' => array(
@@ -2585,8 +2577,6 @@ final class Globals
      * all possible Name spaces for the document
      *
      * @var      array
-     * @access   private
-     * @static
      */
     private static $_allNamespaces = array(
         'html' => array(
@@ -2628,7 +2618,6 @@ final class Globals
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -2636,9 +2625,7 @@ final class Globals
     // {{{ getAllAttributes
 
     /**
-     * @access public
      * @return array
-     * @static
      */
     public static function getAllAttributes()
     {
@@ -2649,9 +2636,7 @@ final class Globals
     // {{{ getAllElements
 
     /**
-     * @access public
      * @return array
-     * @static
      */
     public static function getAllElements()
     {
@@ -2662,9 +2647,7 @@ final class Globals
     // {{{ getAllDocTypes
 
     /**
-     * @access public
      * @return array
-     * @static
      */
     public static function getAllDocTypes()
     {
@@ -2675,9 +2658,7 @@ final class Globals
     // {{{ getAllDtds
 
     /**
-     * @access public
      * @return array
-     * @static
      */
     public static function getAllDtds()
     {
@@ -2688,9 +2669,7 @@ final class Globals
     // {{{ getAllNamespaces
 
     /**
-     * @access public
      * @return array
-     * @static
      */
     public static function getAllNamespaces()
     {
@@ -2701,9 +2680,7 @@ final class Globals
     // {{{ isElementEmpty
 
     /**
-     * @access public
      * @return boolean|null NULL, if not defined in Globals
-     * @static
      */
     public static function isElementEmpty($elementName, $type = 'xhtml',
     $version = '1.0')
@@ -2725,9 +2702,7 @@ final class Globals
     // {{{ isElementEnabled
 
     /**
-     * @access public
      * @return boolean|null NULL, if not defined in Globals
-     * @static
      */
     public static function isElementEnabled($elementName, $type = 'xhtml',
     $version = '1.0', $variant = 'strict')
@@ -2757,9 +2732,7 @@ final class Globals
     // {{{ getReplacement
 
     /**
-     * @access public
      * @return string|null NULL, if no replacement is defined
-     * @static
      */
     public static function getReplacement($elementName)
     {
@@ -2776,9 +2749,7 @@ final class Globals
     // {{{ getElementChildren
 
     /**
-     * @access public
      * @return boolean
-     * @static
      */
     public static function getElementChildren($elementName)
     {
@@ -2795,9 +2766,7 @@ final class Globals
     // {{{ isAttributeLowerCased
 
     /**
-     * @access public
      * @return boolean
-     * @static
      */
     public static function isAttributeLowerCased($elementName, $attribute)
     {
@@ -2815,9 +2784,7 @@ final class Globals
     // {{{ getTypeName
 
     /**
-     * @access public
      * @return string|null NULL, if the attribute is not defined
-     * @static
      */
     public static function getTypeName($elementName, $attribute)
     {
@@ -2839,9 +2806,7 @@ final class Globals
     // {{{ getAttributeType
 
     /**
-     * @access public
      * @return mixed
-     * @static
      */
     public static function getAttributeType($elementName, $attribute)
     {
@@ -2859,9 +2824,7 @@ final class Globals
     // {{{ getAttributeReplacement
 
     /**
-     * @access public
      * @return string|null
-     * @static
      */
     public static function getAttributeReplacement($elementName, $attribute)
     {
@@ -2879,9 +2842,7 @@ final class Globals
     // {{{ getAttributeHasSpaces
 
     /**
-     * @access public
      * @return string|null
-     * @static
      */
     public static function getAttributeHasSpaces($elementName, $attribute)
     {
@@ -2899,9 +2860,7 @@ final class Globals
     // {{{ isUnderScoreAllowed
 
     /**
-     * @access public
      * @return boolean
-     * @static
      */
     public static function isUnderScoreAllowed($elementName, $attribute)
     {
@@ -2918,7 +2877,7 @@ final class Globals
     // }}} isUnderScoreAllowed
 }
 
-// }}} \HTML\Common3\Global
+// }}} HTMLCommon\Global
 
 /*
  * Local variables:

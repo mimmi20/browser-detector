@@ -19,6 +19,8 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * CatchAllUserAgentHanlder
  *
@@ -30,7 +32,7 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
-class CatchAllHandler extends WURFL_Handlers_Handler
+class CatchAllHandler extends BrowserHandler
 {
     protected $prefix = 'CATCH_ALL';
     const MOZILLA_TOLLERACE = 4;

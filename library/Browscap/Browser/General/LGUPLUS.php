@@ -19,6 +19,8 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * LGPLUSUserAgentHandler
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class LGUPLUS
+class LGUPLUS extends BrowserHandler
 {
     protected $prefix = 'LGUPLUS';
 

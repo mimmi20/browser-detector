@@ -20,6 +20,8 @@ namespace Browscap\Browser\Trident;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * WindowsCEUserAgentHandler
  *
@@ -30,7 +32,7 @@ namespace Browscap\Browser\Trident;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class WindowsCe
+class WindowsCe extends BrowserHandler
 {
     protected $prefix = 'WINDOWS_CE';
     const TOLLERANCE = 3;

@@ -52,43 +52,43 @@ class HTML_QuickForm_Renderer_ITDynamic extends HTML_QuickForm_Renderer
     * A template class (HTML_Template_ITX or HTML_Template_Sigma) instance
     * @var HTML_Template_ITX|HTML_Template_Sigma
     */
-    var $_tpl = null;
+    private $_tpl = null;
 
    /**
     * The errors that were not shown near concrete fields go here
     * @var array
     */
-    var $_errors = array();
+    private $_errors = array();
 
    /**
     * Show the block with required note?
     * @var bool
     */
-    var $_showRequired = false;
+    private $_showRequired = false;
 
    /**
     * A separator for group elements
     * @var mixed
     */
-    var $_groupSeparator = null;
+    private $_groupSeparator = null;
 
    /**
     * The current element index inside a group
     * @var integer
     */
-    var $_groupElementIdx = 0;
+    private $_groupElementIdx = 0;
 
    /**
     * Blocks to use for different elements  
     * @var array
     */
-    var $_elementBlocks = array();
+    private $_elementBlocks = array();
 
    /**
     * Block to use for headers
     * @var string
     */
-    var $_headerBlock = null;
+    private $_headerBlock = null;
    /**#@-*/
 
 
@@ -272,7 +272,6 @@ class HTML_QuickForm_Renderer_ITDynamic extends HTML_QuickForm_Renderer
     * 
     * @param mixed      element name or array ('element name' => 'block name')
     * @param string     block name if $elementName is not an array
-    * @access public
     * @return void
     */
     function setElementBlock($elementName, $blockName = null)
@@ -289,7 +288,6 @@ class HTML_QuickForm_Renderer_ITDynamic extends HTML_QuickForm_Renderer
     * Sets the name of a block to use for header rendering
     *
     * @param string     block name
-    * @access public
     * @return void
     */
     function setHeaderBlock($blockName)

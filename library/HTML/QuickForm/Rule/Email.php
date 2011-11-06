@@ -44,7 +44,6 @@ class HTML_QuickForm_Rule_Email extends HTML_QuickForm_Rule
      *
      * @param     string    $email          Email address
      * @param     boolean   $checkDomain    True if dns check should be performed
-     * @access    public
      * @return    boolean   true if email is valid
      */
     function validate($email, $checkDomain = false)

@@ -5,7 +5,7 @@ namespace HTML\Common3\Table;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Table_Cell: Class for HTML table cells (<td> and <th>) Elements
+ * HTMLCommon\Table_Cell: Class for HTML table cells (<td> and <th>) Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,36 +40,36 @@ namespace HTML\Common3\Table;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\ boxed Elements
+ * base class for HTMLCommon\ boxed Elements
  */
-require_once 'HTML/Common3/Box.php';
+use HTML\Common3\Box as CommonHTMLBoxElement;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Table_Cell
+// {{{ HTMLCommon\Table_Cell
 
 /**
  * Class for HTML table cells (<td> and <th>) Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Cellextends \HTML\Common3\Boximplements \HTML\Common3\Face
+abstract class Cell extends CommonHTMLBoxElement implements ElementsInterface
 {
     // {{{ properties
 
@@ -77,7 +77,6 @@ abstract class Cellextends \HTML\Common3\Boximplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -89,8 +88,7 @@ abstract class Cellextends \HTML\Common3\Boximplements \HTML\Common3\Face
      *
      * @param string $type the new type for this table cell
      *
-     * @access public
-     * @return \HTML\Common3\Table_Cell
+     * @return HTMLCommon\Table_Cell
      */
     public function setElementName($type)
     {
@@ -107,7 +105,7 @@ abstract class Cellextends \HTML\Common3\Boximplements \HTML\Common3\Face
     // }}} setElementName
 }
 
-// }}} \HTML\Common3\Table_Cell
+// }}} HTMLCommon\Table_Cell
 
 /*
  * Local variables:

@@ -49,12 +49,11 @@ class HTML_QuickForm_image extends HTML_QuickForm_input
      * @param     mixed     $attributes     (optional)Either a typical HTML attribute string 
      *                                      or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function HTML_QuickForm_image($elementName=null, $src='', $attributes=null)
+    public function __construct($elementName=null, $src='', $attributes=null)
     {
-        HTML_QuickForm_input::HTML_QuickForm_input($elementName, null, $attributes);
+        parent::__construct($elementName, null, $attributes);
         $this->setType('image');
         $this->setSource($src);
     } // end class constructor
@@ -67,10 +66,9 @@ class HTML_QuickForm_image extends HTML_QuickForm_input
      * 
      * @param     string    $src  source for image element
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setSource($src)
+    public function setSource($src)
     {
         $this->updateAttributes(array('src' => $src));
     } // end func setSource
@@ -83,10 +81,9 @@ class HTML_QuickForm_image extends HTML_QuickForm_input
      * 
      * @param     string    $border  border for image element
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setBorder($border)
+    public function setBorder($border)
     {
         $this->updateAttributes(array('border' => $border));
     } // end func setBorder
@@ -99,10 +96,9 @@ class HTML_QuickForm_image extends HTML_QuickForm_input
      * 
      * @param     string    $align  alignment for image element
      * @since     1.0
-     * @access    public
      * @return    void
      */
-    function setAlign($align)
+    public function setAlign($align)
     {
         $this->updateAttributes(array('align' => $align));
     } // end func setAlign
@@ -113,10 +109,9 @@ class HTML_QuickForm_image extends HTML_QuickForm_input
     /**
      * Freeze the element so that only its value is returned
      * 
-     * @access    public
      * @return    void
      */
-    function freeze()
+    public function freeze()
     {
         return false;
     } //end func freeze
@@ -124,4 +119,3 @@ class HTML_QuickForm_image extends HTML_QuickForm_input
     // }}}
 
 } // end class HTML_QuickForm_image
-?>

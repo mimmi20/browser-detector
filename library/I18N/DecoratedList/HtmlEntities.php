@@ -1,4 +1,7 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace I18N\DecoratedList;
+
 // +----------------------------------------------------------------------+
 // | PEAR :: I18N :: DecoratedList :: HtmlEntities                      |
 // +----------------------------------------------------------------------+
@@ -14,15 +17,6 @@
 // $Id$
 
 /**
- * I18N::DecoratedList::HtmlEntities
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList.php';
-
-/**
  * I18N_Decorator_HtmlEntities
  *
  * @author      Michael Wallner <mike@php.net>
@@ -30,7 +24,7 @@ require_once 'I18N/DecoratedList.php';
  * @package     I18N
  * @access      public
  */
-class I18N_DecoratedList_HtmlEntities extends I18N_DecoratedList
+class HtmlEntities extends \I18N\DecoratedList
 {
     /** 
      * decorate

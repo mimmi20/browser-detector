@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Style: Class for HTML <style> Elements
+ * HTMLCommon\Root\Style: Class for HTML <style> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,37 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Style
+// {{{ HTMLCommon\Root\Style
 
 /**
  * Class for HTML <style> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Style
-extends \HTML\Common3
-implements \HTML\Common3\Face
+class Style extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -78,7 +76,6 @@ implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'style';
 
@@ -86,7 +83,6 @@ implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array(
         'type' => 'text/css',
@@ -96,14 +92,13 @@ implements \HTML\Common3\Face
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('type', 'media');
@@ -112,7 +107,6 @@ implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -120,7 +114,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -132,7 +125,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -172,7 +164,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -182,8 +173,7 @@ implements \HTML\Common3\Face
     /**
      * set the default attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Style
+     * @return HTMLCommon\Root\Style
      */
     protected function initAttributes()
     {
@@ -212,7 +202,6 @@ implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -247,13 +236,12 @@ implements \HTML\Common3\Face
      * @param integer $flag  Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         $posElements = $this->getPosElements();
 
@@ -262,14 +250,14 @@ implements \HTML\Common3\Face
             //$root = $this->getRoot();
 
             if (in_array($key, $posElements) &&
-                array_key_exists($key, \HTML\Common3\Globals::$allElements) &&
+                array_key_exists($key, HTMLCommon\Globals::$allElements) &&
                 !$this->_elementEmpty
                ) {
                 $value = (string) $value;
 
-                if ($flag === HTML_APPEND) {
+                if ($flag === HTMLCommon::APPEND) {
                     $this->value .= $value;//$this->replace($value, 'all');
-                } elseif ($flag === HTML_REPLACE) {
+                } elseif ($flag === HTMLCommon::REPLACE) {
                     $this->value = $value;//$this->replace($value, 'all');
                 } else {
                     //prepend
@@ -278,7 +266,7 @@ implements \HTML\Common3\Face
             }
         } elseif (is_subclass_of($value, "html_common")) {
             $this->value = $value;
-        } elseif (is_subclass_of($value, '\HTML\Common3')) {
+        } elseif (is_subclass_of($value, 'HTMLCommon')) {
             $this->value = $value;
         }
 
@@ -294,7 +282,6 @@ implements \HTML\Common3\Face
      * NOTE: this function has no relation to the Attribute "value"
      *
      * @return string
-     * @access public
      */
     public function getValue()
     {
@@ -303,7 +290,7 @@ implements \HTML\Common3\Face
                 return (string) $this->value;
             } elseif (is_subclass_of($this->value, "html_common")) {
                 return $this->value->toHtml();
-            } elseif (is_subclass_of($this->value, '\HTML\Common3')) {
+            } elseif (is_subclass_of($this->value, 'HTMLCommon')) {
                 return $this->value->toHtml();
             } else {
                 return '';
@@ -325,7 +312,6 @@ implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -337,7 +323,7 @@ implements \HTML\Common3\Face
             (!is_object($this->value) && $this->value != '') ||
             (is_object($this->value) &&
              (is_subclass_of($this->value, "html_common")) ||
-             (is_subclass_of($this->value, '\HTML\Common3'))
+             (is_subclass_of($this->value, 'HTMLCommon'))
             )
            ) {
             $root       = $this->getRoot();
@@ -393,7 +379,7 @@ implements \HTML\Common3\Face
     // }}} writeInner
 }
 
-// }}} \HTML\Common3\Root\Style
+// }}} HTMLCommon\Root\Style
 
 /*
  * Local variables:

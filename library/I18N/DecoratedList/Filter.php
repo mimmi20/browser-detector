@@ -19,15 +19,6 @@ namespace I18N\DecoratedList;
 // $Id$
 
 /**
- * I18N::DecoratedList::Filter
- * 
- * @package     I18N
- * @category    Internationalization
- */
-
-require_once 'I18N/DecoratedList.php';
-
-/**
  * I18N_DecoratedList_Filter
  * 
  * The Filter Decorator only operates on getAllCodes().
@@ -35,7 +26,6 @@ require_once 'I18N/DecoratedList.php';
  * @author      Michael Wallner <mike@php.net>
  * @version     $Revision$
  * @package     I18N
- * @access      public
  */
 class Filter extends \I18N\DecoratedList
 {
@@ -44,7 +34,6 @@ class Filter extends \I18N\DecoratedList
      * 
      * exclude|include resp. false|true
      * 
-     * @access  public
      * @var     mixed
      */
     public $filter = 'include';
@@ -54,7 +43,6 @@ class Filter extends \I18N\DecoratedList
      * 
      * Keys that should be filtered
      * 
-     * @access  public
      * @var     array
      */
     public $elements = array();
@@ -62,11 +50,10 @@ class Filter extends \I18N\DecoratedList
     /** 
      * decorate
      * 
-     * @access  protected
      * @return  mixed
      * @param   mixed   $value
      */
-    protected function decorate($value)
+    public function decorate($value)
     {
         if (is_array($value)) {
             $result = array();

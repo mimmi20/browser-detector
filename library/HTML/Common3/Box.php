@@ -5,7 +5,7 @@ namespace HTML\Common3;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Box: Base Class for the most of boxed HTML Elements like
+ * HTMLCommon\Box: Base Class for the most of boxed HTML Elements like
  * <div> or <p>
  *
  * PHP versions 5 and 6
@@ -41,24 +41,24 @@ namespace HTML\Common3;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Box
+// {{{ HTMLCommon\Box
 
 /**
  * abstract Base Class for the most of the HTML boxed Elements
@@ -68,13 +68,13 @@ require_once 'HTML/Common3/Face.php';
  * Adam Daniel with contributions from numerous other developers.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
+abstract class Box extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -82,21 +82,19 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('id', 'class');
@@ -105,7 +103,6 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -113,7 +110,6 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -206,7 +202,6 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -265,8 +260,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * SVN Version for this class
      *
-     * @var     string
-     * @access  protected
+     * @var string
      */
     const VERSION = '$Id$';
 
@@ -280,8 +274,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $lang  the language for the Div
      * @param string $id    the id for the Div
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addDiv($style = '', $class = '', $lang = '', $id = '')
     {
@@ -314,8 +307,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param string  $weite   default for width
      * @param string  $display CSS display property
      *
-     * @access public
-     * @return \HTML\Common3\Root\A
+     * @return HTMLCommon\Root\A
      */
     public function addLink($lang, $func, $ref='#', $key='', $name='', $index=0,
                             $char='UTF-8', $titel='', $typ='text/html', $info='',
@@ -340,8 +332,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $summary the summary for the table
      * @param string $style   the CSS style for the table
      *
-     * @access public
-     * @return \HTML\Common3\Root\Table
+     * @return HTMLCommon\Root\Table
      */
     public function addTable($lang = 'de', $class = '', $summary = '', $style = '')
     {
@@ -365,8 +356,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $value the value for the input
      * @param string $style the CSS style for the input
      *
-     * @access public
-     * @return \HTML\Common3\Root\Div
+     * @return HTMLCommon\Root\Div
      */
     public function addInput($type = 'text', $id = '', $class = '', $lang = '',
                              $title = '', $value = '', $style = '')
@@ -387,8 +377,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $class (optional) a CSS class for the form
      * @param string $style (optional) a CSS style definition for the form
      *
-     * @return \HTML\Common3\Root\Form
-     * @access public
+     * @return HTMLCommon\Root\Form
      */
     public function addForm($lang = 'de', $class = '', $style = '')
     {
@@ -414,7 +403,6 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -429,7 +417,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
                     $id = $root->generateId($this->getName());
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'id' can not be removed"
                         );
                     } else {
@@ -442,7 +430,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
 
             if ($name == 'class') {
                 if ($value === null) {
-                    throw new \HTML\Common3\CanNotRemoveAttributeException(
+                    throw new HTMLCommon\CanNotRemoveAttributeException(
                         "Required attribute 'class' can not be removed"
                     );
                 }
@@ -458,7 +446,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Returns the HTML representation of the element
      *
-     * This magic method allows using the instances of \HTML\Common3\ in string
+     * This magic method allows using the instances of HTMLCommon\ in string
      * contexts
      *
      * @param int     $step     the level in which should startet the output,
@@ -468,7 +456,6 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
      * @param boolean $levels   if TRUE the levels are added,
      *                          if FALSE the levels will be ignored
      *
-     * @access public
      * @return string
      * @see    HTML_Common::toHtml()
      * @see    HTML_Page2::toHtml()
@@ -491,7 +478,7 @@ abstract class Boxextends \HTML\Common3implements \HTML\Common3\Face
     // }}} toHtml
 }
 
-// }}} \HTML\Common3\Box
+// }}} HTMLCommon\Box
 
 /*
  * Local variables:

@@ -19,6 +19,8 @@ namespace Browscap\Browser\Presto;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * OperaHanlder
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Presto;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Opera
+class Opera extends BrowserHandler
 {
     protected $prefix = 'OPERA';
     

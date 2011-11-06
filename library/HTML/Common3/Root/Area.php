@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Area: Class for HTML <area> Elements
+ * HTMLCommon\Root\Area: Class for HTML <area> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,35 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Area
+// {{{ HTMLCommon\Root\Area
 
 /**
  * Class for HTML <area> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Areaextends \HTML\Common3implements \HTML\Common3\Face
+class Area extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -76,7 +76,6 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'area';
 
@@ -84,21 +83,19 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('alt', 'href', 'nohref', 'id');
@@ -107,7 +104,6 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = true;
 
@@ -115,7 +111,6 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array();
 
@@ -123,7 +118,6 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -202,7 +196,6 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -212,8 +205,7 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * set the default attributes
      *
-     * @access public
-     * @return \HTML\Common3\Root\Area
+     * @return HTMLCommon\Root\Area
      */
     protected function initAttributes()
     {
@@ -242,7 +234,6 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
@@ -252,7 +243,7 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
         if ($name != '') {
             if ($name == 'alt') {
                 if ($value === null) {
-                    throw new \HTML\Common3\CanNotRemoveAttributeException(
+                    throw new HTMLCommon\CanNotRemoveAttributeException(
                         "Required attribute 'alt' can not be removed"
                     );
 
@@ -263,7 +254,7 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
             if ($name == 'href') {
                 if ($value === null) {
                     if ((string) $this->getAttribute('nohref') == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'href' can not be removed"
                         );
 
@@ -275,7 +266,7 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
             if ($name == 'nohref') {
                 if ($value === null) {
                     if ((string) $this->getAttribute('href') == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'nohref' can not be removed"
                         );
 
@@ -291,7 +282,7 @@ class Areaextends \HTML\Common3implements \HTML\Common3\Face
     // }}} onAttributeChange
 }
 
-// }}} \HTML\Common3\Root\Area
+// }}} HTMLCommon\Root\Area
 
 /*
  * Local variables:

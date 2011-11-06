@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Select: Class for HTML <select> Elements
+ * HTMLCommon\Root\Select: Class for HTML <select> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,32 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
-require_once 'HTML/Common3/Form/Element.php';
+use HTML\Common3\Form\Element as CommonHTMLFormElement;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Select
+// {{{ HTMLCommon\Root\Select
 
 /**
  * Class for HTML <select> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
+class Select extends CommonHTMLFormElement implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +73,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'select';
 
@@ -81,21 +80,19 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -104,7 +101,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -112,7 +108,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -125,7 +120,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -182,7 +176,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * List of option-Elements in this list
      *
      * @var      array
-     * @access   protected
      */
     protected $_list = array();
 
@@ -190,7 +183,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * List of all values of all option-Elements in this list
      *
      * @var      array
-     * @access   public
      */
     public $values = array();
 
@@ -198,7 +190,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * List of all possible values of all option-Elements in this list
      *
      * @var      array
-     * @access   public
      */
     public $possibleValues = array();
 
@@ -206,7 +197,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Whether element's value should persist when element is frozen
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_persistent = true;
 
@@ -214,7 +204,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -229,8 +218,7 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * @param mixed  $attributes Array of attribute 'name' => 'value' pairs or
      *                          HTML attribute string
      *
-     * @access public
-     * @return \HTML\Common3\Root\Option
+     * @return HTMLCommon\Root\Option
      */
     public function addOption($text, $value, $attributes = null)
     {
@@ -269,8 +257,7 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * @param mixed  $attributes Array of attribute 'name' => 'value' pairs or
      *                           HTML attribute string
      *
-     * @access public
-     * @return \HTML\Common3\Root\Optgroup
+     * @return HTMLCommon\Root\Optgroup
      */
     public function addOptgroup($label, $attributes = null)
     {
@@ -296,7 +283,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -346,7 +332,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -389,7 +374,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Returns an array of contained options
      *
      * @return array
-     * @access public
      */
     public function getOptions()
     {
@@ -403,7 +387,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * Returns the number of elements in the container
      *
      * @return integer
-     * @access public
      */
     public function count()
     {
@@ -419,7 +402,6 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * NOTE: this function has no relation to the Attribute "value"
      *
      * @return string
-     * @access public
      */
     public function getValue()
     {
@@ -461,13 +443,12 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * @param integer $flag  Determines whether to prepend, append or replace
      *                       the content. Use pre-defined constants.
      *
-     * @return \HTML\Common3\
-     * @access public
-     * @throws \HTML\Common3\InvalidArgumentException
+     * @return HTMLCommon\
+     * @throws HTMLCommon\InvalidArgumentException
      *
      * NOTE: this function has no relation to the Attribute "value"
      */
-    public function setValue($value, $flag = HTML_REPLACE)
+    public function setValue($value, $flag = HTMLCommon::REPLACE)
     {
         return $this;
     }
@@ -502,9 +483,8 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      *
      * @param array $options Array that holds all options to load
      *
-     * @throws \HTML\Common3\_InvalidArgumentException    if junk is given in $options
-     * @return \HTML\Common3\Root\Select
-     * @access public
+     * @throws HTMLCommon\_InvalidArgumentException    if junk is given in $options
+     * @return HTMLCommon\Root\Select
      */
     public function loadOptions(array $options)
     {
@@ -522,13 +502,12 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
      * @param mixed $container options will be added to this container
      * @param array $options   options array
      *
-     * @access protected
      * @return void
      */
     protected function loadOptionsFromArray($container, array $options)
     {
-        if (!is_subclass_of($container, '\HTML\Common3\Root\Select') &&
-            !is_subclass_of($container, '\HTML\Common3\Root\Optgroup')) {
+        if (!is_subclass_of($container, 'HTMLCommon\Root\Select') &&
+            !is_subclass_of($container, 'HTMLCommon\Root\Optgroup')) {
             return;
         }
 
@@ -545,7 +524,7 @@ class Selectextends \HTML\Common3\Form\Elementimplements \HTML\Common3\Face
     // }}} loadOptionsFromArray
 }
 
-// }}} \HTML\Common3\Root\Select
+// }}} HTMLCommon\Root\Select
 
 /*
  * Local variables:

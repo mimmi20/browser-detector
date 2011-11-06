@@ -74,7 +74,7 @@ class HTML_Table_Storage extends HTML_Common {
      * @var    string
      * @access private
      */
-    var $_autoFill = '&nbsp;';
+    private $_autoFill = '&nbsp;';
 
     /**
      * Automatically adds a new row or column if a given row or column index
@@ -82,49 +82,48 @@ class HTML_Table_Storage extends HTML_Common {
      * @var    bool
      * @access private
      */
-    var $_autoGrow = true;
+    private $_autoGrow = true;
 
     /**
      * Array containing the table structure
      * @var     array
      * @access  private
      */
-    var $_structure = array();
+    private $_structure = array();
 
     /**
      * Number of rows composing in the table
      * @var     int
      * @access  private
      */
-    var $_rows = 0;
+    private $_rows = 0;
 
     /**
      * Number of column composing the table
      * @var     int
      * @access  private
      */
-    var $_cols = 0;
+    private $_cols = 0;
 
     /**
      * Tracks the level of nested tables
      * @var    int
      * @access private
      */
-    var $_nestLevel = 0;
+    private $_nestLevel = 0;
 
     /**
      * Whether to use <thead>, <tfoot> and <tbody> or not
      * @var    bool
      * @access private
      */
-    var $_useTGroups = false;
+    private $_useTGroups = false;
 
     /**
      * Class constructor
      * @param    int      $tabOffset
      * @param    bool     $useTGroups        Whether to use <thead>, <tfoot> and
      *                                       <tbody> or not
-     * @access   public
      */
     function HTML_Table_Storage($tabOffset = 0, $useTGroups = false)
     {
@@ -135,7 +134,6 @@ class HTML_Table_Storage extends HTML_Common {
     /**
      * Sets the useTGroups value
      * @param   boolean   $useTGroups
-     * @access  public
      */
     function setUseTGroups($useTGroups)
     {
@@ -144,7 +142,6 @@ class HTML_Table_Storage extends HTML_Common {
 
     /**
      * Returns the useTGroups value
-     * @access   public
      * @return   boolean
      */
     function getUseTGroups()
@@ -155,7 +152,6 @@ class HTML_Table_Storage extends HTML_Common {
     /**
      * Sets the autoFill value
      * @param   mixed   $fill
-     * @access  public
      */
     function setAutoFill($fill)
     {
@@ -164,7 +160,6 @@ class HTML_Table_Storage extends HTML_Common {
 
     /**
      * Returns the autoFill value
-     * @access   public
      * @return   mixed
      */
     function getAutoFill()
@@ -175,7 +170,6 @@ class HTML_Table_Storage extends HTML_Common {
     /**
      * Sets the autoGrow value
      * @param    bool   $fill
-     * @access   public
      */
     function setAutoGrow($grow)
     {
@@ -184,7 +178,6 @@ class HTML_Table_Storage extends HTML_Common {
 
     /**
      * Returns the autoGrow value
-     * @access   public
      * @return   mixed
      */
     function getAutoGrow()
@@ -195,7 +188,6 @@ class HTML_Table_Storage extends HTML_Common {
     /**
      * Sets the number of rows in the table
      * @param    int     $rows
-     * @access   public
      */
     function setRowCount($rows)
     {
@@ -205,7 +197,6 @@ class HTML_Table_Storage extends HTML_Common {
     /**
      * Sets the number of columns in the table
      * @param    int     $cols
-     * @access   public
      */
     function setColCount($cols)
     {
@@ -214,7 +205,6 @@ class HTML_Table_Storage extends HTML_Common {
 
     /**
      * Returns the number of rows in the table
-     * @access   public
      * @return   int
      */
     function getRowCount()
@@ -229,7 +219,6 @@ class HTML_Table_Storage extends HTML_Common {
      * the spanned cells into account in the return value.
      *
      * @param    int    Row index to serve for cols count
-     * @access   public
      * @return   int
      */
     function getColCount($row = null)
@@ -250,7 +239,6 @@ class HTML_Table_Storage extends HTML_Common {
      * Sets a rows type 'TH' or 'TD'
      * @param    int         $row    Row index
      * @param    string      $type   'TH' or 'TD'
-     * @access   public
      */
 
     function setRowType($row, $type)
@@ -264,7 +252,6 @@ class HTML_Table_Storage extends HTML_Common {
      * Sets a columns type 'TH' or 'TD'
      * @param    int         $col    Column index
      * @param    string      $type   'TH' or 'TD'
-     * @access   public
      */
     function setColType($col, $type)
     {
@@ -283,7 +270,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    int        $col         Column index
      * @param    mixed      $attributes  Associative array or string of table
      *                                   row attributes
-     * @access   public
      * @throws   PEAR_Error
      */
     function setCellAttributes($row, $col, $attributes)
@@ -309,7 +295,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    int     $col         Column index
      * @param    mixed   $attributes  Associative array or string of table row
      *                                attributes
-     * @access   public
      */
     function updateCellAttributes($row, $col, $attributes)
     {
@@ -332,7 +317,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    int     $row         Row index
      * @param    int     $col         Column index
      * @return   array
-     * @access   public
      */
     function getCellAttributes($row, $col)
     {
@@ -362,7 +346,6 @@ class HTML_Table_Storage extends HTML_Common {
      *                                be set to this and the following columns
      *                                in $row
      * @param    string   $type       (optional) Cell type either 'TH' or 'TD'
-     * @access   public
      * @throws   PEAR_Error
      */
     function setCellContents($row, $col, $contents, $type = 'TD')
@@ -421,7 +404,6 @@ class HTML_Table_Storage extends HTML_Common {
      * Returns the cell contents for an existing cell
      * @param    int        $row    Row index
      * @param    int        $col    Column index
-     * @access   public
      * @return   mixed
      */
     function getCellContents($row, $col)
@@ -445,7 +427,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    mixed   $contents
      * @param    mixed   $attributes  Associative array or string of table row
      *                                attributes
-     * @access   public
      */
     function setHeaderContents($row, $col, $contents, $attributes = null)
     {
@@ -470,7 +451,6 @@ class HTML_Table_Storage extends HTML_Common {
      *                                           attributes are to be applied in
      *                                            TR tag
      * @return   int
-     * @access   public
      */
     function addRow($contents = null, $attributes = null, $type = 'td',
         $inTR = false)
@@ -506,7 +486,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    bool     $inTR           false if attributes are to be applied
      *                                    in TD tags; true if attributes are to
      *                                    be applied in TR tag
-     * @access   public
      * @throws   PEAR_Error
      */
     function setRowAttributes($row, $attributes, $inTR = false)
@@ -539,7 +518,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    bool     $inTR           false if attributes are to be applied
      *                                    in TD tags; true if attributes are to
      *                                    be applied in TR tag
-     * @access   public
      * @throws   PEAR_Error
      */
     function updateRowAttributes($row, $attributes = null, $inTR = false)
@@ -568,7 +546,6 @@ class HTML_Table_Storage extends HTML_Common {
      * Returns the attributes for a given row as contained in the TR tag
      * @param    int     $row         Row index
      * @return   array
-     * @access   public
      */
     function getRowAttributes($row)
     {
@@ -591,7 +568,6 @@ class HTML_Table_Storage extends HTML_Common {
      *                                      be applied in TR tag
      * @param    int      $firstAttributes  (optional) Which attributes should be
      *                                      applied to the first row, 1 or 2.
-     * @access   public
      */
     function altRowAttributes($start, $attributes1, $attributes2, $inTR = false,
         $firstAttributes = 1)
@@ -614,7 +590,6 @@ class HTML_Table_Storage extends HTML_Common {
      *                                table row attributes
      * @param    string   $type       (optional) Cell type either 'th' or 'td'
      * @return   int
-     * @access   public
      */
     function addCol($contents = null, $attributes = null, $type = 'td')
     {
@@ -644,7 +619,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    int      $col            Column index
      * @param    mixed    $attributes     (optional) Associative array or string
      *                                    of table row attributes
-     * @access   public
      */
     function setColAttributes($col, $attributes = null)
     {
@@ -664,7 +638,6 @@ class HTML_Table_Storage extends HTML_Common {
      * @param    int      $col            Column index
      * @param    mixed    $attributes     (optional) Associative array or string
      *                                    of table row attributes
-     * @access   public
      */
     function updateColAttributes($col, $attributes = null)
     {
@@ -683,7 +656,6 @@ class HTML_Table_Storage extends HTML_Common {
      * Sets the attributes for all cells
      * @param    mixed    $attributes        (optional) Associative array or
      *                                       string of table row attributes
-     * @access   public
      */
     function setAllAttributes($attributes = null)
     {
@@ -696,7 +668,6 @@ class HTML_Table_Storage extends HTML_Common {
      * Updates the attributes for all cells
      * @param    mixed    $attributes        (optional) Associative array or
      *                                       string of table row attributes
-     * @access   public
      */
     function updateAllAttributes($attributes = null)
     {
@@ -707,7 +678,6 @@ class HTML_Table_Storage extends HTML_Common {
 
     /**
      * Returns the table rows as HTML
-     * @access   public
      * @return   string
      */
     function toHtml($tabs = null, $tab = null)

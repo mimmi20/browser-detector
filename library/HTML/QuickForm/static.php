@@ -44,7 +44,7 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
      * @var       string
      * @access    private
      */
-    var $_text = null;
+    private $_text = null;
 
     // }}}
     // {{{ constructor
@@ -54,7 +54,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
      * 
      * @param     string    $elementLabel   (optional)Label
      * @param     string    $text           (optional)Display text
-     * @access    public
      * @return    void
      */
     function HTML_QuickForm_static($elementName=null, $elementLabel=null, $text=null)
@@ -72,7 +71,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
      * Sets the element name
      * 
      * @param     string    $name   Element name
-     * @access    public
      * @return    void
      */
     function setName($name)
@@ -86,7 +84,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
     /**
      * Returns the element name
      * 
-     * @access    public
      * @return    string
      */
     function getName()
@@ -101,7 +98,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
      * Sets the text
      *
      * @param     string    $text
-     * @access    public
      * @return    void
      */
     function setText($text)
@@ -116,7 +112,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
      * Sets the text (uses the standard setValue call to emulate a form element.
      *
      * @param     string    $text
-     * @access    public
      * @return    void
      */
     function setValue($text)
@@ -130,7 +125,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
     /**
      * Returns the static text element in HTML
      * 
-     * @access    public
      * @return    string
      */
     function toHtml()
@@ -144,7 +138,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
     /**
      * Returns the value of field without HTML tags
      * 
-     * @access    public
      * @return    string
      */
     function getFrozenHtml()
@@ -162,7 +155,6 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
      * @param     mixed     $arg    event arguments
      * @param     object    &$caller calling object
      * @since     1.0
-     * @access    public
      * @return    void
      * @throws    
      */

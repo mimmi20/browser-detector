@@ -55,7 +55,7 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
     * Uploaded file data, from $_FILES
     * @var array
     */
-    var $_value = null;
+    private $_value = null;
 
     // }}}
     // {{{ constructor
@@ -68,9 +68,8 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * @param     mixed     (optional)Either a typical HTML attribute string 
      *                      or an associative array
      * @since     1.0
-     * @access    public
      */
-    function HTML_QuickForm_file($elementName=null, $elementLabel=null, $attributes=null)
+    public function __construct($elementName=null, $elementLabel=null, $attributes=null)
     {
         HTML_QuickForm_input::HTML_QuickForm_input($elementName, $elementLabel, $attributes);
         $this->setType('file');
@@ -84,9 +83,8 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * 
      * @param     int    Size of file element
      * @since     1.0
-     * @access    public
      */
-    function setSize($size)
+    public function setSize($size)
     {
         $this->updateAttributes(array('size' => $size));
     } //end func setSize
@@ -98,10 +96,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * Returns size of file element
      * 
      * @since     1.0
-     * @access    public
      * @return    int
      */
-    function getSize()
+    public function getSize()
     {
         return $this->getAttribute('size');
     } //end func getSize
@@ -112,10 +109,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
     /**
      * Freeze the element so that only its value is returned
      * 
-     * @access    public
      * @return    bool
      */
-    function freeze()
+    public function freeze()
     {
         return false;
     } //end func freeze
@@ -134,9 +130,8 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * 
      * @param     mixed    Value for file element
      * @since     3.0
-     * @access    public
      */
-    function setValue($value)
+    public function setValue($value)
     {
         return null;
     } //end func setValue
@@ -148,10 +143,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * Returns information about the uploaded file
      *
      * @since     3.0
-     * @access    public
      * @return    array
      */
-    function getValue()
+    public function getValue()
     {
         return $this->_value;
     } // end func getValue
@@ -166,10 +160,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * @param     mixed     event arguments
      * @param     object    calling object
      * @since     1.0
-     * @access    public
      * @return    bool
      */
-    function onQuickFormEvent($event, $arg, &$caller)
+    public function onQuickFormEvent($event, $arg, &$caller)
     {
         switch ($event) {
             case 'updateValue':
@@ -200,10 +193,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * 
      * @param    string  Destination directory path
      * @param    string  New file name
-     * @access   public
      * @return   bool    Whether the file was moved successfully
      */
-    function moveUploadedFile($dest, $fileName = '')
+    public function moveUploadedFile($dest, $fileName = '')
     {
         if ($dest != ''  && substr($dest, -1) != '/') {
             $dest .= '/';
@@ -218,10 +210,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
     /**
      * Checks if the element contains an uploaded file
      *
-     * @access    public
      * @return    bool      true if file has been uploaded, false otherwise
      */
-    function isUploadedFile()
+    public function isUploadedFile()
     {
         return $this->_ruleIsUploadedFile($this->_value);
     } // end func isUploadedFile
@@ -233,10 +224,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      * Checks if the given element contains an uploaded file
      *
      * @param     array     Uploaded file info (from $_FILES)
-     * @access    private
      * @return    bool      true if file has been uploaded, false otherwise
      */
-    function _ruleIsUploadedFile($elementValue)
+    private function _ruleIsUploadedFile($elementValue)
     {
         if ((isset($elementValue['error']) && $elementValue['error'] == 0) ||
             (!empty($elementValue['tmp_name']) && $elementValue['tmp_name'] != 'none')) {
@@ -254,10 +244,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      *
      * @param     array     Uploaded file info (from $_FILES)
      * @param     int       Max file size
-     * @access    private
      * @return    bool      true if filesize is lower than maxsize, false otherwise
      */
-    function _ruleCheckMaxFileSize($elementValue, $maxSize)
+    private function _ruleCheckMaxFileSize($elementValue, $maxSize)
     {
         if (!empty($elementValue['error']) && 
             (UPLOAD_ERR_FORM_SIZE == $elementValue['error'] || UPLOAD_ERR_INI_SIZE == $elementValue['error'])) {
@@ -277,10 +266,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      *
      * @param     array     Uploaded file info (from $_FILES)
      * @param     mixed     Mime Type (can be an array of allowed types)
-     * @access    private
      * @return    bool      true if mimetype is correct, false otherwise
      */
-    function _ruleCheckMimeType($elementValue, $mimeType)
+    private function _ruleCheckMimeType($elementValue, $mimeType)
     {
         if (!HTML_QuickForm_file::_ruleIsUploadedFile($elementValue)) {
             return true;
@@ -299,10 +287,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
      *
      * @param     array     Uploaded file info (from $_FILES)
      * @param     string    Regular expression
-     * @access    private
      * @return    bool      true if name matches regex, false otherwise
      */
-    function _ruleCheckFileName($elementValue, $regex)
+    private function _ruleCheckFileName($elementValue, $regex)
     {
         if (!HTML_QuickForm_file::_ruleIsUploadedFile($elementValue)) {
             return true;
@@ -319,10 +306,9 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
     * Needs to be redefined here as $_FILES is populated differently from 
     * other arrays when element name is of the form foo[bar]
     * 
-    * @access    private
     * @return    mixed
     */
-    function _findValue()
+    private function _findValue()
     {
         if (empty($_FILES)) {
             return null;
@@ -355,4 +341,3 @@ class HTML_QuickForm_file extends HTML_QuickForm_input
 
     // }}}
 } // end class HTML_QuickForm_file
-?>

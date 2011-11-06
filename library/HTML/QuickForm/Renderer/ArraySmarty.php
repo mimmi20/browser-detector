@@ -92,41 +92,37 @@ require_once 'HTML/QuickForm/Renderer/Array.php';
  */
 class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
 {
-   /**#@+
-    * @access private
-    */
    /**
     * The Smarty template engine instance
     * @var object
     */
-    var $_tpl = null;
+    private $_tpl = null;
 
    /**
     * Current element index
     * @var integer
     */
-    var $_elementIdx = 0;
+    private $_elementIdx = 0;
 
     /**
     * The current element index inside a group
     * @var integer
     */
-    var $_groupElementIdx = 0;
+    private $_groupElementIdx = 0;
 
    /**
     * How to handle the required tag for required fields
     * @var string
     * @see      setRequiredTemplate()
     */
-    var $_required = '';
+    private $_required = '';
 
    /**
     * How to handle error messages in form validation
     * @var string
     * @see      setErrorTemplate()
     */
-    var $_error = '';
-   /**#@-*/
+    private $_error = '';
 
    /**
     * Constructor
@@ -134,11 +130,10 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * @param  Smarty  reference to the Smarty template engine instance
     * @param  bool    true: render an array of labels to many labels, $key 0 to 'label' and the oterh to "label_$key"
     * @param  bool    true: collect all hidden elements into string; false: process them as usual form elements
-    * @access public
     */
-    function HTML_QuickForm_Renderer_ArraySmarty(&$tpl, $staticLabels = false, $collectHidden = true)
+    public function __construct(&$tpl, $staticLabels = false, $collectHidden = true)
     {
-        $this->HTML_QuickForm_Renderer_Array($collectHidden, $staticLabels);
+        parent::__construct($collectHidden, $staticLabels);
         $this->_tpl =& $tpl;
     } // end constructor
 
@@ -146,10 +141,9 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * Called when visiting a header element
     *
     * @param    HTML_QuickForm_header   header element being visited
-    * @access   public
     * @return   void
     */
-    function renderHeader(&$header)
+    public function renderHeader(&$header)
     {
         if ($name = $header->getName()) {
             $this->_ary['header'][$name] = $header->toHtml();
@@ -165,10 +159,9 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * @param    HTML_QuickForm_group    group being visited
     * @param    bool                    Whether a group is required
     * @param    string                  An error message associated with a group
-    * @access   public
     * @return   void
     */
-    function startGroup(&$group, $required, $error)
+    public function startGroup(&$group, $required, $error)
     {
         parent::startGroup($group, $required, $error);
         $this->_groupElementIdx = 1;
@@ -178,13 +171,12 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * Creates an array representing an element containing
     * the key for storing this
     *
-    * @access private
     * @param  HTML_QuickForm_element    form element being visited
     * @param  bool                      Whether an element is required
     * @param  string                    Error associated with the element
     * @return array
     */
-    function _elementToArray(&$element, $required, $error)
+    protected function _elementToArray(&$element, $required, $error)
     {
         $ret = parent::_elementToArray($element, $required, $error);
 
@@ -250,11 +242,10 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
    /**
     * Stores an array representation of an element in the form array
     *
-    * @access private
     * @param array  Array representation of an element
     * @return void
     */
-    function _storeArray($elAry)
+    private function _storeArray($elAry)
     {
         if ($elAry) {
             $sKeys = $elAry['keys'];
@@ -281,10 +272,9 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * @param    boolean     The element required
     * @param    string      The element error
     * @see      setRequiredTemplate()
-    * @access   private
     * @return   void
     */
-    function _renderRequired(&$label, &$html, &$required, &$error)
+    private function _renderRequired(&$label, &$html, &$required, &$error)
     {
         $this->_tpl->assign(array(
             'label'    => $label,
@@ -312,10 +302,9 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * @param    string      The element html rendering
     * @param    string      The element error
     * @see      setErrorTemplate()
-    * @access   private
     * @return   void
     */
-    function _renderError(&$label, &$html, &$error)
+    private function _renderError(&$label, &$html, &$error)
     {
         $this->_tpl->assign(array('label' => '', 'html' => '', 'error' => $error));
         $error = $this->_tplFetch($this->_error);
@@ -336,10 +325,9 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * So we use the smarty eval plugin function    to do this.
     *
     * @param    string      The template source
-    * @access   private
     * @return   void
     */
-    function _tplFetch($tplSource)
+    private function _tplFetch($tplSource)
     {
         if (!function_exists('smarty_function_eval')) {
             require SMARTY_DIR . '/plugins/function.eval.php';
@@ -361,10 +349,9 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     *
     *
     * @param    string      The required element template
-    * @access   public
     * @return   void
     */
-    function setRequiredTemplate($template)
+    public function setRequiredTemplate($template)
     {
         $this->_required = $template;
     } // end func setRequiredTemplate
@@ -392,12 +379,10 @@ class HTML_QuickForm_Renderer_ArraySmarty extends HTML_QuickForm_Renderer_Array
     * where you want the formated error message to appear in the form.
     *
     * @param    string      The element error template
-    * @access   public
     * @return   void
     */
-    function setErrorTemplate($template)
+    public function setErrorTemplate($template)
     {
         $this->_error = $template;
     } // end func setErrorTemplate
 }
-?>

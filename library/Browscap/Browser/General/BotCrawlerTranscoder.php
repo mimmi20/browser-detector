@@ -20,6 +20,8 @@ namespace Browscap\Browser\General;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * BotCrawlerTranscoderUserAgentHanlder
  * 
@@ -30,7 +32,7 @@ namespace Browscap\Browser\General;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class BotCrawlerTranscoder extends WURFL_Handlers_Handler
+class BotCrawlerTranscoder extends BrowserHandler
 {
     protected $prefix = 'BOT_CRAWLER_TRANSCODER';
     

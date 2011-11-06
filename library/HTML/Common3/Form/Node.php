@@ -40,24 +40,24 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Form\Node
+// {{{ HTMLCommon\Form\Node
 
 /**
  * Abstract base class for all Common3 Form Elements and Containers
@@ -67,13 +67,13 @@ require_once 'HTML/Common3/Face.php';
  * of unique ids for elements which do not have ids explicitly set.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
+abstract class Node extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -81,7 +81,6 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      * Element's "frozen" status
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_frozen = false;
 
@@ -89,7 +88,6 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      * Whether element's value should persist when element is frozen
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_persistent = false;
 
@@ -97,15 +95,13 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      * the label for the element
      *
      * @var      pointer
-     * @access   protected
      */
     protected $_label = null;
 
     /**
      * Element containing current
      *
-     * @var      \HTML\Common3\Form_Container
-     * @access   protected
+     * @var      HTMLCommon\Form_Container
      */
     protected $_container = null;
 
@@ -113,7 +109,6 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -124,7 +119,6 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      * Returns the element's label
      *
      * @return string|null
-     * @access public
      */
     public function getLabel()
     {
@@ -142,8 +136,7 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      *
      * @param string $label Label for the element
      *
-     * @return \HTML\Common3\Form\Node
-     * @access public
+     * @return HTMLCommon\Form\Node
      */
     public function setLabel($label)
     {
@@ -162,7 +155,6 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      *                        just return its current value
      *
      * @return boolean Old value of element's frozen status
-     * @access public
      */
     public function toggleFrozen($freeze = null)
     {
@@ -187,7 +179,6 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
      *                            current value of the flag.
      *
      * @return boolean Old value of "persistent freeze" flag
-     * @access public
      */
     public function persistentFreeze($persistent = null)
     {
@@ -204,24 +195,23 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Adds the link to the element containing current
      *
-     * @param \HTML\Common3\Form_Container $container Element containing the current
+     * @param HTMLCommon\Form_Container $container Element containing the current
      *                                               one,
      *                                               null if the link should really
      *                                               be removed (if removing from
      *                                               container)
      *
-     * @throws \HTML\Common3\InvalidArgumentException If trying to set a
+     * @throws HTMLCommon\InvalidArgumentException If trying to set a
      *                               child of an element as its container
-     * @return \HTML\Common3\Form\Node
-     * @access protected
+     * @return HTMLCommon\Form\Node
      */
-    protected function setContainer(\HTML\Common3\Form_Container $container = null)
+    protected function setContainer(HTMLCommon\Form_Container $container = null)
     {
         if (null !== $container) {
             $check = $container;
             do {
                 if ($this === $check) {
-                    throw new \HTML\Common3\InvalidArgumentException(
+                    throw new HTMLCommon\InvalidArgumentException(
                         'Cannot set an element or its child as its own container'
                     );
                 }
@@ -241,8 +231,7 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
     /**
      * Returns the element containing current
      *
-     * @return \HTML\Common3\Form_Container|null
-     * @access public
+     * @return HTMLCommon\Form_Container|null
      */
     public function getContainer()
     {
@@ -252,7 +241,7 @@ abstract class Nodeextends \HTML\Common3implements \HTML\Common3\Face
     // }}} getContainer
 }
 
-// }}} \HTML\Common3\Form\Node
+// }}} HTMLCommon\Form\Node
 
 /*
  * Local variables:

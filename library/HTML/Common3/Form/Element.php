@@ -3,7 +3,7 @@ declare(ENCODING = 'utf-8');
 namespace HTML\Common3\Form;
 
 /**
- * Abstract Base class for simple \HTML\Common3\ Form elements (not Containers)
+ * Abstract Base class for simple HTMLCommon\ Form elements (not Containers)
  *
  * PHP versions 5 and 6
  *
@@ -38,50 +38,44 @@ namespace HTML\Common3\Form;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * Base class for all \HTML\Common3\ elements
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Form/Node.php';
+use HTML\Common3\ElementsInterface;
+
+// {{{ HTMLCommon\Form_Element
 
 /**
- * class Interface for \HTML\Common3\
- */
-require_once 'HTML/Common3/Face.php';
-
-// {{{ \HTML\Common3\Form_Element
-
-/**
- * Abstract Base class for simple \HTML\Common3\ Form elements (not Containers)
+ * Abstract Base class for simple HTMLCommon\ Form elements (not Containers)
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\Face
+abstract class Element extends Node implements ElementsInterface
 {
     // {{{ properties
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('id', 'name');
@@ -90,7 +84,6 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -110,14 +103,13 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      * @param string $name  Attribute name
      * @param string $value Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($name, $value = null)
     {
         if ('name' == $name) {
             if (null === $value) {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     "Required attribute 'name' can not be removed"
                 );
             } else {
@@ -125,7 +117,7 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
             }
         } elseif ('id' == $name) {
             if (null === $value) {
-                throw new \HTML\Common3\InvalidArgumentException(
+                throw new HTMLCommon\InvalidArgumentException(
                     "Required attribute 'id' can not be removed"
                 );
             } else {
@@ -141,7 +133,6 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      * returns the Name for this Element
      *
      * @return string
-     * @access public
      */
     public function getName()
     {
@@ -156,8 +147,7 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      *
      * @param string $name Element Name
      *
-     * @return \HTML\Common3\Form_Element
-     * @access public
+     * @return HTMLCommon\Form_Element
      */
     public function setName($name)
     {
@@ -175,8 +165,7 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      *
      * @param string $id the id for the element
      *
-     * @access public
-     * @return \HTML\Common3\Form_Element
+     * @return HTMLCommon\Form_Element
      */
     public function setId($id = null)
     {
@@ -199,7 +188,6 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      * returns the ID Attribute of the element
      *
      * @return string the id for the element
-     * @access public
      */
     public function getId()
     {
@@ -242,7 +230,6 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -279,7 +266,7 @@ abstract class Elementextends \HTML\Common3\Form\Nodeimplements \HTML\Common3\
     // }}} toHtml
 }
 
-// }}} \HTML\Common3\Form_Element
+// }}} HTMLCommon\Form_Element
 
 /*
  * Local variables:

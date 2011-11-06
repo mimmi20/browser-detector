@@ -120,19 +120,17 @@ class HTML_CSS extends HTML_Common
      *
      * @var        array
      * @since      1.4.0
-     * @access     private
      * @see        __set(), __get()
      */
-    var $options;
+    private $options;
 
     /**
      * Contains the CSS definitions.
      *
      * @var        array
      * @since      0.2.0
-     * @access     private
      */
-    var $_css = array();
+    private $_css = array();
 
     /**
      * Contains "alibis" (other elements that share a definition) of an element
@@ -140,36 +138,32 @@ class HTML_CSS extends HTML_Common
      *
      * @var        array
      * @since      0.2.0
-     * @access     private
      */
-    var $_alibis = array();
+    private $_alibis = array();
 
     /**
      * Contains last assigned index for duplicate styles
      *
      * @var        array
      * @since      0.3.0
-     * @access     private
      */
-    var $_duplicateCounter = 0;
+    private $_duplicateCounter = 0;
 
     /**
      * Contains grouped styles
      *
      * @var        array
      * @since      0.3.0
-     * @access     private
      */
-    var $_groups = array();
+    private $_groups = array();
 
     /**
      * Number of CSS definition groups
      *
      * @var        int
      * @since      0.3.0
-     * @access     private
      */
-    var $_groupCount = 0;
+    private $_groupCount = 0;
 
     /**
      * Error message callback.
@@ -178,10 +172,9 @@ class HTML_CSS extends HTML_Common
      *
      * @var        false|string|array
      * @since      1.0.0
-     * @access     private
      * @see        _initErrorStack()
      */
-    var $_callback_message = false;
+    private $_callback_message = false;
 
     /**
      * Error context callback.
@@ -189,10 +182,9 @@ class HTML_CSS extends HTML_Common
      *
      * @var        false|string|array
      * @since      1.0.0
-     * @access     private
      * @see        _initErrorStack()
      */
-    var $_callback_context = false;
+    private $_callback_context = false;
 
     /**
      * Error push callback.
@@ -201,10 +193,9 @@ class HTML_CSS extends HTML_Common
      *
      * @var        false|string|array
      * @since      1.0.0
-     * @access     private
      * @see        _initErrorStack()
      */
-    var $_callback_push = false;
+    private $_callback_push = false;
 
     /**
      * Error callback.
@@ -212,10 +203,9 @@ class HTML_CSS extends HTML_Common
      *
      * @var        false|string|array
      * @since      1.4.0
-     * @access     private
      * @see        _initErrorStack()
      */
-    var $_callback_error = false;
+    private $_callback_error = false;
 
     /**
      * Error handler callback.
@@ -223,10 +213,9 @@ class HTML_CSS extends HTML_Common
      *
      * @var        false|string|array
      * @since      1.0.0
-     * @access     private
      * @see        _initErrorStack()
      */
-    var $_callback_errorhandler = false;
+    private $_callback_errorhandler = false;
 
     /**
      * Associative array of key-value pairs
@@ -234,50 +223,18 @@ class HTML_CSS extends HTML_Common
      *
      * @var        array
      * @since      1.0.0
-     * @access     private
      * @see        _initErrorStack()
      */
-    var $_errorhandler_options = array();
+    private $_errorhandler_options = array();
 
     /**
      * Last error that might occured
      *
      * @var        false|mixed
      * @since      1.0.0RC2
-     * @access     private
      * @see        isError(), raiseError()
      */
-    var $_lastError = false;
-
-
-    /**
-     * Class constructor
-     *
-     * Class constructors :
-     * Zend Engine 1 uses HTML_CSS, while Zend Engine 2 uses __construct
-     *
-     * @param array $attributes (optional) Pass options to the constructor.
-     *                          Valid options are :
-     *                           - xhtml (sets xhtml compliance),
-     *                           - tab (sets indent string),
-     *                           - filename (name of file to be parsed),
-     *                           - cache (determines whether the nocache headers
-     *                             are sent),
-     *                           - oneline (whether to output each definition
-     *                             on one line),
-     *                           - groupsfirst (determines whether to output groups
-     *                             before elements)
-     *                           - allowduplicates (allow to have duplicate rules
-     *                             in selector)
-     * @param array $errorPrefs (optional) has to configure error handler
-     *
-     * @since      version 0.2.0 (2003-07-31)
-     * @access     public
-     */
-    function HTML_CSS($attributes = array(), $errorPrefs = array())
-    {
-        $this->__construct($attributes, $errorPrefs);
-    }
+    private $_lastError = false;
 
     /**
      * Class constructor
@@ -301,9 +258,8 @@ class HTML_CSS extends HTML_Common
      * @param array $errorPrefs (optional) has to configure error handler
      *
      * @since      version 1.4.0 (2007-12-13)
-     * @access     protected
      */
-    function __construct($attributes = array(), $errorPrefs = array())
+    public function __construct($attributes = array(), $errorPrefs = array())
     {
         $this->_initErrorStack($errorPrefs);
 
@@ -339,9 +295,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return     string                   compatible with php.version_compare()
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      */
-    function apiVersion()
+    public function apiVersion()
     {
         return '1.5.0';
     }
@@ -356,7 +311,6 @@ class HTML_CSS extends HTML_Common
      *
      * @return void
      * @since  version 1.4.0 (2007-12-13)
-     * @access public
      */
     function __set($option, $val)
     {
@@ -375,9 +329,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return mixed
      * @since  version 1.4.0 (2007-12-13)
-     * @access public
      */
-    function __get($option)
+    public function __get($option)
     {
         if (isset($this->options[$option])) {
             $r = $this->options[$option];
@@ -394,9 +347,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return array
      * @since  version 1.5.0 (2008-01-15)
-     * @access public
      */
-    function getOptions()
+    public function getOptions()
     {
         return $this->options;
     }
@@ -409,10 +361,9 @@ class HTML_CSS extends HTML_Common
      * @param string $string String used to indent ("\11", "\t", '  ', etc.).
      *
      * @since     version 1.4.0 (2007-12-13)
-     * @access    public
      * @return    void
      */
-    function setTab($string)
+    public function setTab($string)
     {
         $this->__set('tab', $string);
         parent::setTab($string);
@@ -426,10 +377,9 @@ class HTML_CSS extends HTML_Common
      * @param string $style "win", "mac", "unix" or custom string.
      *
      * @since   version 1.4.0 (2007-12-13)
-     * @access  public
      * @return  void
      */
-    function setLineEnd($style)
+    public function setLineEnd($style)
     {
         $this->__set('lineEnd', $style);
         parent::setLineEnd($style);
@@ -444,10 +394,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.3 (2004-05-20)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      */
-    function setSingleLineOutput($value)
+    public function setSingleLineOutput($value)
     {
         if (!is_bool($value)) {
             return $this->raiseError(
@@ -471,10 +420,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.3 (2004-05-20)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      */
-    function setOutputGroupsFirst($value)
+    public function setOutputGroupsFirst($value)
     {
         if (!is_bool($value)) {
             return $this->raiseError(
@@ -500,10 +448,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     mixed|PEAR_Error
      * @since      version 0.3.2 (2004-03-24)
-     * @access     protected
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      */
-    function parseSelectors($selectors, $outputMode = 0)
+    private function parseSelectors($selectors, $outputMode = 0)
     {
         if (!is_string($selectors)) {
             return $this->raiseError(
@@ -609,9 +556,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return     string
      * @since      version 0.3.2 (2004-03-24)
-     * @access     protected
      */
-    function collapseInternalSpaces($subject)
+    private function collapseInternalSpaces($subject)
     {
         $string = preg_replace('/\s+/', ' ', $subject);
         return $string;
@@ -621,10 +567,9 @@ class HTML_CSS extends HTML_Common
      * sort and move simple declarative At-Rules to the top
      *
      * @return     void
-     * @access     protected
      * @since      version 1.5.0 (2008-01-15)
      */
-    function sortAtRules()
+    private function sortAtRules()
     {
         // split simple declarative At-Rules from the other
         $return = array('atrules' => array(), 'newcss' => array());
@@ -659,10 +604,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.2 (2004-03-24)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      */
-    function setXhtmlCompliance($value)
+    public function setXhtmlCompliance($value)
     {
         if (!is_bool($value)) {
             return $this->raiseError(
@@ -683,9 +627,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return void
      * @since  version 1.5.0 (2008-01-15)
-     * @access public
      */
-    function getAtRulesList()
+    public function getAtRulesList()
     {
         $atRules = array('@charset', '@font-face',
                          '@import', '@media', '@page', '@namespace');
@@ -704,11 +647,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return void|PEAR_Error
      * @since  version 1.5.0 (2008-01-15)
-     * @access public
      * @throws HTML_CSS_ERROR_INVALID_INPUT
      * @see    unsetAtRule()
      */
-    function createAtRule($atKeyword, $arguments = '', $duplicates = null)
+    public function createAtRule($atKeyword, $arguments = '', $duplicates = null)
     {
         $allowed_atrules = array('@charset', '@import', '@namespace');
 
@@ -773,10 +715,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return void|PEAR_Error
      * @since  version 1.5.0 (2008-01-15)
-     * @access public
      * @throws HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_NO_ATRULE
      */
-    function unsetAtRule($atKeyword)
+    public function unsetAtRule($atKeyword)
     {
         $allowed_atrules = $this->getAtRulesList();
 
@@ -825,11 +766,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return void|PEAR_Error
      * @since  version 1.5.0 (2008-01-15)
-     * @access public
      * @throws HTML_CSS_ERROR_INVALID_INPUT
      * @see    getAtRuleStyle()
      */
-    function setAtRuleStyle($atKeyword, $arguments, $selectors, $property, $value,
+    public function setAtRuleStyle($atKeyword, $arguments, $selectors, $property, $value,
         $duplicates = null
     ) {
         $allowed_atrules = array('@media', '@page', '@font-face');
@@ -934,11 +874,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return void|PEAR_Error
      * @since  version 1.5.0 (2008-01-15)
-     * @access public
      * @throws HTML_CSS_ERROR_INVALID_INPUT
      * @see    setAtRuleStyle()
      */
-    function getAtRuleStyle($atKeyword, $arguments, $selectors, $property)
+    public function getAtRuleStyle($atKeyword, $arguments, $selectors, $property)
     {
         $allowed_atrules = $this->getAtRulesList();
 
@@ -1007,11 +946,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     mixed|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_INVALID_GROUP
      * @see        unsetGroup()
      */
-    function createGroup($selectors, $group = null)
+    public function createGroup($selectors, $group = null)
     {
         if (!is_string($selectors)) {
             return $this->raiseError(
@@ -1056,11 +994,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_NO_GROUP
      * @see        createGroup()
      */
-    function unsetGroup($group)
+    public function unsetGroup($group)
     {
         if (!is_int($group) && !is_string($group)) {
             return $this->raiseError(
@@ -1111,11 +1048,10 @@ class HTML_CSS extends HTML_Common
      * @return     void|int|PEAR_Error     Returns an integer if duplicates
      *                                     are allowed.
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_NO_GROUP
      * @see        getGroupStyle()
      */
-    function setGroupStyle($group, $property, $value, $duplicates = null)
+    public function setGroupStyle($group, $property, $value, $duplicates = null)
     {
         if (!is_int($group) && !is_string($group)) {
             return $this->raiseError(
@@ -1196,12 +1132,11 @@ class HTML_CSS extends HTML_Common
      *
      * @return     mixed|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_NO_GROUP,
      *             HTML_CSS_ERROR_NO_ELEMENT
      * @see        setGroupStyle()
      */
-    function getGroupStyle($group, $property)
+    public function getGroupStyle($group, $property)
     {
         if (!is_int($group) && !is_string($group)) {
             return $this->raiseError(
@@ -1265,10 +1200,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return   void|PEAR_Error
      * @since    version 0.3.0 (2003-11-03)
-     * @access   public
      * @throws   HTML_CSS_ERROR_NO_GROUP, HTML_CSS_ERROR_INVALID_INPUT
      */
-    function addGroupSelector($group, $selectors)
+    public function addGroupSelector($group, $selectors)
     {
         if (!is_int($group) && !is_string($group)) {
             return $this->raiseError(
@@ -1317,10 +1251,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return   void|PEAR_Error
      * @since    version 0.3.0 (2003-11-03)
-     * @access   public
      * @throws   HTML_CSS_ERROR_NO_GROUP, HTML_CSS_ERROR_INVALID_INPUT
      */
-    function removeGroupSelector($group, $selectors)
+    public function removeGroupSelector($group, $selectors)
     {
         if (!is_int($group) && !is_string($group)) {
             return $this->raiseError(
@@ -1378,11 +1311,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      * @see        getStyle()
      */
-    function setStyle($element, $property, $value, $duplicates = null)
+    public function setStyle($element, $property, $value, $duplicates = null)
     {
         if (!is_string($element)) {
             return $this->raiseError(
@@ -1456,12 +1388,11 @@ class HTML_CSS extends HTML_Common
      *
      * @return     mixed|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT,
      *             HTML_CSS_ERROR_NO_ELEMENT, HTML_CSS_ERROR_NO_ELEMENT_PROPERTY
      * @see        setStyle()
      */
-    function getStyle($element, $property)
+    public function getStyle($element, $property)
     {
         if (!is_string($element)) {
             return $this->raiseError(
@@ -1538,12 +1469,11 @@ class HTML_CSS extends HTML_Common
      *
      * @return     array|PEAR_Error
      * @since      version 1.1.0 (2007-01-01)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      * @link       http://www.php.net/en/ref.pcre.php
      *             Regular Expression Functions (Perl-Compatible)
      */
-    function grepStyle($elmPattern, $proPattern = null)
+    public function grepStyle($elmPattern, $proPattern = null)
     {
         if (!is_string($elmPattern)) {
             return $this->raiseError(
@@ -1624,10 +1554,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_NO_ELEMENT
      */
-    function setSameStyle($new, $old)
+    public function setSameStyle($new, $old)
     {
         if (!is_string($new)) {
             return $this->raiseError(
@@ -1703,10 +1632,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      */
-    function setCache($cache = true)
+    public function setCache($cache = true)
     {
         if (!is_bool($cache)) {
             return $this->raiseError(
@@ -1725,10 +1653,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     boolean
      * @since      version 1.4.0 (2007-12-13)
-     * @access     public
      * @see        setCache()
      */
-    function getCache()
+    public function getCache()
     {
         return $this->__get('cache');
     }
@@ -1745,13 +1672,12 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 1.3.0 (2007-10-22)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      * @see        getContentDisposition()
      * @link       http://pear.php.net/bugs/bug.php?id=12195
      *             Patch by Carsten Wiedmann
      */
-    function setContentDisposition($enable = true, $filename = '')
+    public function setContentDisposition($enable = true, $filename = '')
     {
         if (!is_bool($enable)) {
             return $this->raiseError(
@@ -1789,12 +1715,11 @@ class HTML_CSS extends HTML_Common
      * @return     mixed     boolean FALSE if no content disposition, otherwise
      *                       string for inline filename
      * @since      version 1.3.0 (2007-10-22)
-     * @access     public
      * @see        setContentDisposition()
      * @link       http://pear.php.net/bugs/bug.php?id=12195
      *             Patch by Carsten Wiedmann
      */
-    function getContentDisposition()
+    public function getContentDisposition()
     {
         return $this->__get('contentDisposition');
     }
@@ -1809,11 +1734,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      * @see        getCharset()
      */
-    function setCharset($type = 'iso-8859-1')
+    public function setCharset($type = 'iso-8859-1')
     {
         if (!is_string($type)) {
             return $this->raiseError(
@@ -1834,10 +1758,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     string
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @see        setCharset()
      */
-    function getCharset()
+    public function getCharset()
     {
         return $this->__get('charset');
     }
@@ -1853,11 +1776,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      * @see        createGroup(), setGroupStyle(), setStyle()
      */
-    function parseString($str, $duplicates = null)
+    public function parseString($str, $duplicates = null)
     {
         if (!is_string($str)) {
             return $this->raiseError(
@@ -2107,11 +2029,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_NO_FILE
      * @see        parseString()
      */
-    function parseFile($filename, $duplicates = null)
+    public function parseFile($filename, $duplicates = null)
     {
         if (!is_string($filename)) {
             return $this->raiseError(
@@ -2156,11 +2077,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 1.0.0RC2 (2005-12-15)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      * @see        parseString(), parseFile()
      */
-    function parseData($styles, $duplicates = null)
+    public function parseData($styles, $duplicates = null)
     {
         if (!is_array($styles)) {
             return $this->raiseError(
@@ -2215,11 +2135,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     boolean|PEAR_Error
      * @since      version 1.5.0 (2008-01-15)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT,
      *             HTML_CSS_ERROR_INVALID_DEPS, HTML_CSS_ERROR_INVALID_SOURCE
      */
-    function validate($styles, &$messages)
+    public function validate($styles, &$messages)
     {
         $php = phpversion();
         if (version_compare($php, '5.0.0', '<')) {
@@ -2312,9 +2231,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return     array
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      */
-    function toArray()
+    public function toArray()
     {
         $css = array();
 
@@ -2341,10 +2259,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     string|PEAR_Error
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT
      */
-    function toInline($element)
+    public function toInline($element)
     {
         if (!is_string($element)) {
             return $this->raiseError(
@@ -2408,11 +2325,10 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void|PEAR_Error
      * @since      version 0.3.0 (2003-11-03)
-     * @access     public
      * @throws     HTML_CSS_ERROR_INVALID_INPUT, HTML_CSS_ERROR_WRITE_FILE
      * @see        toString()
      */
-    function toFile($filename)
+    public function toFile($filename)
     {
         if (!is_string($filename)) {
             return $this->raiseError(
@@ -2446,9 +2362,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return     string
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      */
-    function toString()
+    public function toString()
     {
         // get line endings
         $lnEnd = $this->_getLineEnd();
@@ -2587,10 +2502,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void
      * @since      version 0.2.0 (2003-07-31)
-     * @access     public
      * @see        toString()
      */
-    function display()
+    public function display()
     {
         if (!headers_sent()) {
             if ($this->__get('cache') !== true) {
@@ -2623,9 +2537,8 @@ class HTML_CSS extends HTML_Common
      *
      * @return     void
      * @since      version 0.3.3 (2004-05-20)
-     * @access     private
      */
-    function _initErrorStack($prefs = array())
+    private function _initErrorStack($prefs = array())
     {
         // error message mapping callback
         if (isset($prefs['message_callback'])
@@ -2689,11 +2602,10 @@ class HTML_CSS extends HTML_Common
      * @param string  $level  The error level of the message.
      * @param array   $params Associative array of error parameters
      *
-     * @return     PEAR_Error
      * @since      version 1.0.0 (2006-06-24)
      * @access     private
      */
-    function _errorHandler($code, $level, $params)
+    private function _errorHandler($code, $level, $params)
     {
         include_once 'HTML/CSS/Error.php';
 
@@ -2727,10 +2639,9 @@ class HTML_CSS extends HTML_Common
      *
      * @return     object    PEAR_Error when default error handler is used
      * @since      version 0.3.3 (2004-05-20)
-     * @access     public
      * @see        _errorHandler()
      */
-    function raiseError()
+    public function raiseError()
     {
         $args = func_get_args();
         $this->_lastError
@@ -2745,13 +2656,11 @@ class HTML_CSS extends HTML_Common
      *
      * @return     boolean               TRUE if error raised, FALSE otherwise
      * @since      version 1.0.0RC2 (2005-12-15)
-     * @access     public
      */
-    function isError()
+    public function isError()
     {
          $res              = (!is_bool($this->_lastError));
          $this->_lastError = false;
          return $res;
     }
 }
-?>

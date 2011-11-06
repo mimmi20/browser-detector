@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\Audio: Class for HTML <audio> Elements
+ * HTMLCommon\Root\Audio: Class for HTML <audio> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,32 +40,30 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-
-require_once 'HTML/Common3/Root/Object.php';
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\Audio
+// {{{ HTMLCommon\Root\Audio
 
 /**
  * Class for HTML <audio> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
+class Audio extends HTMLObject implements ElementsInterface
 {
     // {{{ properties
 
@@ -73,7 +71,6 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'audio';
 
@@ -81,21 +78,19 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      * Associative array of attributes
      *
      * @var      array
-     * @access   protected
      */
     protected $_attributes = array();
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array();
@@ -104,7 +99,6 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -112,7 +106,6 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -192,7 +185,6 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -228,7 +220,6 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -244,7 +235,6 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function writeInner($dump = false, $comments = false, $levels = true)
     {
@@ -258,7 +248,7 @@ class Audioextends \HTML\Common3\Root\Objectimplements \HTML\Common3\Face
     // }}} writeInner
 }
 
-// }}} \HTML\Common3\Root\Audio
+// }}} HTMLCommon\Root\Audio
 
 /*
  * Local variables:

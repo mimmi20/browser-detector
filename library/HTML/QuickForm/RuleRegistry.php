@@ -41,7 +41,7 @@ class HTML_QuickForm_RuleRegistry
      * @var     array
      * @access  private
      */
-    var $_rules = array();
+    private $_rules = array();
 
 
     /**
@@ -50,7 +50,6 @@ class HTML_QuickForm_RuleRegistry
      * Usually, only one RuleRegistry object is needed, this is the reason
      * why it is recommended to use this method to get the validation object. 
      *
-     * @access    public
      * @static
      * @return    HTML_QuickForm_RuleRegistry
      */
@@ -81,7 +80,6 @@ class HTML_QuickForm_RuleRegistry
      * @param     string    $data1      Name of function, regular expression or
      *                                  HTML_QuickForm_Rule object class name
      * @param     string    $data2      Object parent of above function or HTML_QuickForm_Rule file path
-     * @access    public
      * @return    void
      */
     function registerRule($ruleName, $type, $data1, $data2 = null)
@@ -114,7 +112,6 @@ class HTML_QuickForm_RuleRegistry
      * Returns a reference to the requested rule object
      *
      * @param     string   $ruleName        Name of the requested rule
-     * @access    public
      * @return    HTML_QuickForm_Rule
      */
     function &getRule($ruleName)
@@ -139,7 +136,6 @@ class HTML_QuickForm_RuleRegistry
      *                                      to be validated
      * @param     mixed    $options         Options used by the rule
      * @param     mixed    $multiple        Whether to validate an array of values altogether
-     * @access    public
      * @return    mixed    true if no error found, int of valid values (when an array of values is given) or false if error
      */
     function validate($ruleName, $values, $options = null, $multiple = false)
@@ -166,7 +162,6 @@ class HTML_QuickForm_RuleRegistry
      * @param     string                        Element name, in case $element is 
      *                                          not an array
      * @param     array                         Rule data
-     * @access    public
      * @return    string    JavaScript for the rule
      */
     function getValidationScript(&$element, $elementName, $ruleData)

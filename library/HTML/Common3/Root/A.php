@@ -5,7 +5,7 @@ namespace HTML\Common3\Root;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Root\A: Class for HTML <a> Elements
+ * HTMLCommon\Root\A: Class for HTML <a> Elements
  *
  * PHP versions 5 and 6
  *
@@ -40,37 +40,35 @@ namespace HTML\Common3\Root;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\ Text Elements
+ * base class for HTMLCommon\ Text Elements
  */
-require_once 'HTML/Common3/Text.php';
+use HTML\Common3\Text as CommonHTMLText;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Root\A
+// {{{ HTMLCommon\Root\A
 
 /**
  * Class for HTML <a> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
-class A
-extends \HTML\Common3\Text
-implements \HTML\Common3\Face
+class A extends CommonHTMLText implements ElementsInterface
 {
     // {{{ properties
 
@@ -78,7 +76,6 @@ implements \HTML\Common3\Face
      * HTML Tag of the Element
      *
      * @var      string
-     * @access   protected
      */
     protected $_elementName = 'a';
 
@@ -86,21 +83,19 @@ implements \HTML\Common3\Face
      * pointer to an image var if added
      *
      * @var      Pointer
-     * @access   public
      */
     public $img = null;
 
     /**
      * List of attributes to which will be announced via
      * {@link onAttributeChange()} method rather than performed by
-     * \HTML\Common3\ class itself
+     * HTMLCommon\ class itself
      *
      * contains all required attributes
      *
      * @var      array
      * @see      onAttributeChange()
      * @see      getWatchedAttributes()
-     * @access   protected
      * @readonly
      */
     protected $_watchedAttributes = array('id', 'name', 'href');
@@ -109,7 +104,6 @@ implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -165,7 +159,6 @@ implements \HTML\Common3\Face
      * (and its parents)
      *
      * @var      array
-     * @access   protected
      */
     protected $_forbidElements = array(
         '#all' => array(
@@ -179,7 +172,6 @@ implements \HTML\Common3\Face
      * Array of Attibutes which are possible for an Element
      *
      * @var      array
-     * @access   protected
      */
     protected $_posAttributes = array(
         '#all' => array(
@@ -261,7 +253,6 @@ implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -281,7 +272,6 @@ implements \HTML\Common3\Face
      * @param string $nameValue Attribute name
      * @param string $value     Attribute value, null if attribute is being removed
      *
-     * @access protected
      * @return void
      */
     protected function onAttributeChange($nameValue, $value = null)
@@ -295,7 +285,7 @@ implements \HTML\Common3\Face
                     $id = (string) $this->getId();
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'name' can not be removed"
                         );
                     } else {
@@ -314,7 +304,7 @@ implements \HTML\Common3\Face
                     $id = $root->generateId($this->getName());
 
                     if ($id == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'id' can not be removed"
                         );
                     } else {
@@ -330,7 +320,7 @@ implements \HTML\Common3\Face
                     $name = (string) $this->getName();
 
                     if ($name == '') {
-                        throw new \HTML\Common3\CanNotRemoveAttributeException(
+                        throw new HTMLCommon\CanNotRemoveAttributeException(
                             "Required attribute 'href' can not be removed"
                         );
 
@@ -367,7 +357,6 @@ implements \HTML\Common3\Face
      * @param string       $weite   default for width
      * @param string       $display default for CSS-Attribute display
      *
-     * @access public
      * @return void
      */
     public function setLink($lang, $func, $ref = '#', $key = '', $name = '',
@@ -510,7 +499,7 @@ implements \HTML\Common3\Face
     // }}} setLink
 }
 
-// }}} \HTML\Common3\Root\A
+// }}} HTMLCommon\Root\A
 
 /*
  * Local variables:

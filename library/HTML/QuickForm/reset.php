@@ -49,7 +49,6 @@ class HTML_QuickForm_reset extends HTML_QuickForm_input
      * @param     mixed     $attributes     (optional)Either a typical HTML attribute string 
      *                                      or an associative array
      * @since     1.0
-     * @access    public
      * @return    void
      */
     function HTML_QuickForm_reset($elementName=null, $value=null, $attributes=null)
@@ -65,7 +64,6 @@ class HTML_QuickForm_reset extends HTML_QuickForm_input
     /**
      * Freeze the element so that only its value is returned
      * 
-     * @access    public
      * @return    void
      */
     function freeze()

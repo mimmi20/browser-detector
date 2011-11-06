@@ -5,7 +5,7 @@ namespace HTML\Common3;
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 
 /**
- * \HTML\Common3\Lists: Base Class for HTML <dir>, <menu>, <dl>, <ul> and <ol>
+ * HTMLCommon\Lists: Base Class for HTML <dir>, <menu>, <dl>, <ul> and <ol>
  * Elements
  *
  * PHP versions 5 and 6
@@ -41,36 +41,36 @@ namespace HTML\Common3;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
  * @version  SVN: $Id$
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  */
 
 /**
- * base class for \HTML\Common3\
+ * base class for HTMLCommon\
  */
-require_once 'HTML/Common3.php';
+use HTML\Common3 as HTMLCommon;
 
 /**
- * class Interface for \HTML\Common3\
+ * class Interface for HTMLCommon\
  */
-require_once 'HTML/Common3/Face.php';
+use HTML\Common3\ElementsInterface;
 
-// {{{ \HTML\Common3\Lists
+// {{{ HTMLCommon\Lists
 
 /**
  * Class for HTML <dir> Elements
  *
  * @category HTML
- * @package  \HTML\Common3\
+ * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @link     http://pear.php.net/package/\HTML\Common3\
+ * @link     http://pear.php.net/package/HTMLCommon\
  * @abstract
  */
-abstract class Listsextends \HTML\Common3implements \HTML\Common3\Face
+abstract class Lists extends HTMLCommon implements ElementsInterface
 {
     // {{{ properties
 
@@ -78,7 +78,6 @@ abstract class Listsextends \HTML\Common3implements \HTML\Common3\Face
      * Indicator to tell, if the Object is an empty HTML Element
      *
      * @var      boolean
-     * @access   protected
      */
     protected $_elementEmpty = false;
 
@@ -86,7 +85,6 @@ abstract class Listsextends \HTML\Common3implements \HTML\Common3\Face
      * Array of HTML Elements which are possible as child elements
      *
      * @var      array
-     * @access   protected
      */
     protected $_posElements = array(
         '#all' => array(
@@ -98,7 +96,6 @@ abstract class Listsextends \HTML\Common3implements \HTML\Common3\Face
      * SVN Version for this class
      *
      * @var     string
-     * @access  protected
      */
     const VERSION = '$Id$';
 
@@ -115,7 +112,6 @@ abstract class Listsextends \HTML\Common3implements \HTML\Common3\Face
      *                          if FALSE the levels will be ignored
      *
      * @return string
-     * @access public
      */
     public function toHtml($step = 0, $dump = false, $comments = false,
                                $levels = true)
@@ -136,7 +132,7 @@ abstract class Listsextends \HTML\Common3implements \HTML\Common3\Face
     // }}} toHtml
 }
 
-// }}} \HTML\Common3\Lists
+// }}} HTMLCommon\Lists
 
 /*
  * Local variables:
