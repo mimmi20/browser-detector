@@ -184,7 +184,7 @@ class Utils
             'SaferSurf',
             '\\x',
             'Agent'
-        )
+        );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isCrawler)) {
             return true;
