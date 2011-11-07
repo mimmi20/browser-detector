@@ -67,6 +67,7 @@ class HTML_QuickForm2_ControllerTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($controller->propagateId());
     }
 
+    /*
     public function testFindID()
     {
         try {
@@ -90,6 +91,7 @@ class HTML_QuickForm2_ControllerTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($controller->isWizard());
         $this->assertTrue($controller->propagateId());
     }
+    /**/
 
     public function testContainer()
     {

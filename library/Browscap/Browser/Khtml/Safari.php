@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Safari extends BrowserHandler
 {
-    protected $prefix = 'SAFARI';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Starting with Mozilla and Containing Safari and are not mobile browsers
      *
@@ -48,64 +41,35 @@ class Safari extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
         
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Safari');
-    }
-    
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        return $this->applyRecoveryMatch($userAgent);
-    }
-    private $safaris = array(
-        '' => 'safari',
-        '3.0' => 'safari_3_0',
-        '3.1' => 'safari_3_1',
-        '3.2' => 'safari_3_2',
-        '4.0' => 'safari_4_0',
-        '4.1' => 'safari_4_1',
-        '5.0' => 'safari_5_0',
-        '5.1' => 'safari_5_1',
-        '55'  => 'safari_5_0',
-        '65'  => 'safari_5_0',
-        '75'  => 'safari_5_1'
-);
-    
-    public function applyRecoveryMatch($userAgent)
-    {
-        $safariVersion = $this->safariVersion($userAgent);//var_dump($userAgent, $safariVersion);exit;
-        $safariId = 'safari';
-        if(isset($this->safaris[$safariVersion])) {
-            return $this->safaris[$safariVersion];
+        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit'))) {
+            return false;
         }
-        /*
-        //var_dump($userAgent, $safariVersion, $safariId);exit;
-        if($this->isDeviceExist($safariId)) {
-            return $safariId;
-        }
-        /**/
-        return 'generic_web_browser';
         
-    }
-    
-    const SAFARI_VERSION_PATTERN = '/.*Version\/(\d+\.\d+).*/';
-    const SAFARI_VERSION_PATTERN_EXT = '/.*Safari\/(\d{2})\d{2}\..*/';
-    private function safariVersion($userAgent)
-    {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mozilla') 
-            && WURFL_Handlers_Utils::checkIfContains($userAgent, 'Safari') 
-            && preg_match(self::SAFARI_VERSION_PATTERN, $userAgent, $match)
-) {
-            return $match[1];
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
         }
-        if(WURFL_Handlers_Utils::checkIfContains($userAgent, 'Safari') 
-            && preg_match(self::SAFARI_VERSION_PATTERN_EXT, $userAgent, $match)
-) {
-            return $match[1];
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chrome',
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'Palemoon',
+            'Rockmelt'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+            return false;
         }
-        return NULL;
+        
+        return $this->utils->checkIfContains($userAgent, 'Safari');
     }
-
 }

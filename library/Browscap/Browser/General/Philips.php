@@ -47,7 +47,7 @@ class Philips extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Philips') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'PHILIPS');
+        return $this->utils->checkIfStartsWith($userAgent, 'Philips') || $this->utils->checkIfStartsWith($userAgent, 'PHILIPS');
     }
     
     protected $prefix = 'PHILIPS';

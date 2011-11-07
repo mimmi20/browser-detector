@@ -33,17 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Msie extends BrowserHandler
 {
-    protected $prefix = 'MSIE';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-/*    
-    public function applyRecoveryMatch($userAgent){
-        return($userAgent == 'MSIE 9.0')? 'generic_web_browser': null;
-    }
-*/    
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
      *
@@ -52,11 +41,44 @@ class Msie extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
         
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mozilla') && WURFL_Handlers_Utils::checkIfContains($userAgent, 'MSIE');
+        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Maxthon',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Palemoon',
+            'Flock',
+            'AOL',
+            'TOB',
+            'Avant',
+            'MyIE',
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+            return false;
+        }
+        
+        return true;
     }
-
 }

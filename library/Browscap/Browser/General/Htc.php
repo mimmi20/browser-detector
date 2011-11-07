@@ -47,7 +47,7 @@ class Htc extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'HTC');
+        return $this->utils->checkIfContains($userAgent, 'HTC');
     }
     
     protected $prefix = 'HTC';

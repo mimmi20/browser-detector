@@ -47,7 +47,7 @@ class Pantech extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Pantech') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'PANTECH') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'PT-') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'PG-');
+        return $this->utils->checkIfStartsWith($userAgent, 'Pantech') || $this->utils->checkIfStartsWith($userAgent, 'PANTECH') || $this->utils->checkIfStartsWith($userAgent, 'PT-') || $this->utils->checkIfStartsWith($userAgent, 'PG-');
     }
     
     /**
@@ -59,11 +59,11 @@ class Pantech extends BrowserHandler
      */
     public function lookForMatchingUserAgent($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Pantech')) {
-            return WURFL_Handlers_Utils::ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::PANTECH_TOLLERANCE);
+        if($this->utils->checkIfStartsWith($userAgent, 'Pantech')) {
+            return $this->utils->ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::PANTECH_TOLLERANCE);
         }
-        $tollerance = WURFL_Handlers_Utils::firstSlash($userAgent);
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
+        $tollerance = $this->utils->firstSlash($userAgent);
+        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
     
     }
     

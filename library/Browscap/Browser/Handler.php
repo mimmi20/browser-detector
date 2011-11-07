@@ -32,39 +32,21 @@ namespace Browscap\Browser;
 abstract class Handler implements MatcherInterface
 {
     /**
-     * The next User Agent Handler
-     * @var WURFL_Handlers_Handler
-     */
-    private $nextHandler;
-    
-    /**
-     * @var WURFL_Request_UserAgentNormalizer
-     */
-    private $userAgentNormalizer;
-    
-    /**
      * @var string Prefix for this User Agent Handler
      */
-    protected $prefix;
-    
-    /**
-     * @var array Array of user agents with device IDs 
-     */
-    protected $userAgentsWithDeviceID;
+    protected $prefix = '';
     
     /**
      * @var WURFL_Xml_PersistenceProvider
      */
-    protected $persistenceProvider;
+    protected $persistenceProvider = null;
     
     /**
      * @var WURFL_Logger_Interface
      */
-    protected $logger;
-    /**
-     * @var WURFL_Logger_Interface
-     */
-    protected $undetectedDeviceLogger;
+    protected $logger = null;
+    
+    protected $utils = null;
     
     /**
      * @param WURFL_Context $wurflContext
@@ -72,17 +54,11 @@ abstract class Handler implements MatcherInterface
      */
     public function __construct($wurflContext, $userAgentNormalizer = null)
     {
-        
-        if(is_null($userAgentNormalizer)) {
-            $this->userAgentNormalizer = new WURFL_Request_UserAgentNormalizer_Null();
-        } else {
-            $this->userAgentNormalizer = $userAgentNormalizer;
-        }
         $this->logger = $wurflContext->logger;
-        //$this->undtectedDeviceLogger = $wurflContext->undetectedDeviceLogger;
-        
 
         $this->persistenceProvider = $wurflContext->persistenceProvider;
+        
+        $this->utils = new Utils();
     }
     
     /**
@@ -289,21 +265,21 @@ abstract class Handler implements MatcherInterface
      */
     public function lookForMatchingUserAgent($userAgent)
     {
-        $tollerance = WURFL_Handlers_Utils::firstSlash($userAgent);
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
+        $tollerance = $this->utils->firstSlash($userAgent);
+        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
     }
     
     /**
-     * Alias for WURFL_Handlers_Utils::risMatch()
+     * Alias for $this->utils->risMatch()
      * @param srray $userAgetsList
      * @param string $target
      * @param int $tollerance
-     * @see WURFL_Handlers_Utils::risMatch()
+     * @see $this->utils->risMatch()
      * @see WURFL_Handlers_Matcher_RISMatcher::match()
      */
     private function applyRisWithTollerance($userAgetsList, $target, $tollerance)
     {
-        return WURFL_Handlers_Utils::risMatch($userAgetsList, $target, $tollerance);
+        return $this->utils->risMatch($userAgetsList, $target, $tollerance);
     }
     
     /**
@@ -324,7 +300,7 @@ abstract class Handler implements MatcherInterface
     public function applyRecoveryCatchAllMatch($userAgent)
     {
         foreach($this->catchAllIds as $key => $deviceId) {
-            if(WURFL_Handlers_Utils::checkIfContains($userAgent, $key)) {
+            if($this->utils->checkIfContains($userAgent, $key)) {
                 return $deviceId;
             }
         }

@@ -66,6 +66,7 @@ class HTML_QuickForm2Test extends PHPUnit_Framework_TestCase
         $_POST = array();
     }
 
+    /*
     public function testTrackSubmit()
     {
         $form1 = new HTML_QuickForm2('track', 'post');
@@ -83,6 +84,7 @@ class HTML_QuickForm2Test extends PHPUnit_Framework_TestCase
         $form2 = new HTML_QuickForm2('notrack', 'get', null, false);
         $this->assertEquals(1, count($form2->getDataSources()));
     }
+    /**/
 
     public function testConstructorSetsIdAndMethod()
     {

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\Khtml;
+namespace Browscap\Browser\Gecko;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -22,7 +22,7 @@ namespace Browscap\Browser\Khtml;
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * ChromeUserAgentHanlder
+ * FirefoxUserAgentHanlder
  *
  *
  * @category   WURFL
@@ -31,10 +31,10 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Chromium extends BrowserHandler
+class Fennec extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Chromium and are not mobile browsers
+     * Intercept all UAs Containing Seamonkey and are not mobile browsers
      *
      * @param string $userAgent
      * @return boolean
@@ -45,7 +45,7 @@ class Chromium extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit', 'Chrome', 'Chromium'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko', 'Fennec'))) {
             return false;
         }
         
@@ -53,18 +53,21 @@ class Chromium extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Flock',
+        $isNotReallyAnFirefox = array(
+            // using also the Gecko rendering engine
+            'Maemo',
+            'Maxthon',
+            'Camino',
             'Galeon',
             'Lunascape',
-            'Iron',
-            'Maemo',
+            'Opera',
+            'Navigator',
             'Palemoon',
-            'Rockmelt'
+            'Flock',
+            'SeaMonkey'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
             return false;
         }
         

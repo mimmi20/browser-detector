@@ -47,7 +47,7 @@ class Grundig extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Grundig') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'GRUNDIG');
+        return $this->utils->checkIfStartsWith($userAgent, 'Grundig') || $this->utils->checkIfStartsWith($userAgent, 'GRUNDIG');
     }
     
     protected $prefix = 'GRUNDIG';

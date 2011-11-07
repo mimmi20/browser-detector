@@ -31,17 +31,10 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
  * @version    $id$
+ * @deprecated
  */
 class WindowsCe extends BrowserHandler
 {
-    protected $prefix = 'WINDOWS_CE';
-    const TOLLERANCE = 3;
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null) 
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs containing 'Mozilla/' and 'Windows CE'
      *
@@ -50,29 +43,6 @@ class WindowsCe extends BrowserHandler
      */
     public function canHandle($userAgent) 
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Mozilla/') && WURFL_Handlers_Utils::checkIfContains($userAgent, 'Windows CE');
+        return $this->utils->checkIfContains($userAgent, 'Mozilla/') && $this->utils->checkIfContains($userAgent, 'Windows CE');
     }
-    
-    /**
-     * Apply LD with a threshold of 3
-     *
-     * @param string $userAgent
-     * @return string
-     */
-    public function lookForMatchingUserAgent($userAgent) 
-    {
-        return WURFL_Handlers_Utils::ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::TOLLERANCE);
-    }
-    
-    /**
-     * Apply Recovery Match
-     *
-     * @param string $userAgent
-     * @return string
-     */
-    public function applyRecoveryMatch($userAgent) 
-    {
-        return 'generic_ms_mobile';
-    }
-
 }

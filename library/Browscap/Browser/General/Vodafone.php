@@ -48,7 +48,7 @@ class Vodafone extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Vodafone');
+        return $this->utils->checkIfStartsWith($userAgent, 'Vodafone');
     }
     
     /** 
@@ -57,8 +57,8 @@ class Vodafone extends BrowserHandler
      */
     public function lookForMatchingUserAgent($userAgent)
     {    
-        $tolerance = WURFL_Handlers_Utils::ordinalIndexOf($userAgent, '/', 3);        
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
+        $tolerance = $this->utils->ordinalIndexOf($userAgent, '/', 3);        
+        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
     }
 
 }

@@ -47,7 +47,7 @@ class Siemens extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'SIE-');
+        return $this->utils->checkIfStartsWith($userAgent, 'SIE-');
     }
     
     protected $prefix = 'SIEMENS';

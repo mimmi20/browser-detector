@@ -33,16 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Aol extends BrowserHandler
 {
-    protected $prefix = 'AOL';
-    
-    // LD Match Tollerance
-    const AOL_LD_TOLLERANCE = 5;
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing AOL and are not mobile browsers
      *
@@ -50,21 +40,43 @@ class Aol extends BrowserHandler
      * @return boolean
      */
     public function canHandle($userAgent) {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent))
-        {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
         
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'AOL');
+        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE', 'AOL'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Maxthon',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Palemoon',
+            'Flock',
+            'TOB',
+            'Avant',
+            'MyIE',
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+            return false;
+        }
+        
+        return true;
     }
-    
-    /**
-     * Apply LD Match with tollerance 5
-     *
-     */
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        return WURFL_Handlers_Utils::ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::AOL_LD_TOLLERANCE);
-    }
-
 }

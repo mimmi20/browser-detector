@@ -47,7 +47,7 @@ class LGUPLUS extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContainsAnyOf($userAgent, array('LGUPLUS', 'lgtelecom'));
+        return $this->utils->checkIfContainsAnyOf($userAgent, array('LGUPLUS', 'lgtelecom'));
     }
 
     
@@ -72,7 +72,7 @@ class LGUPLUS extends BrowserHandler
     public function applyRecoveryMatch($userAgent)
     {
         foreach($this->lgupluses as $deviceId => $values) {
-            if(WURFL_Handlers_Utils::checkIfContainsAll($userAgent, $values)) {
+            if($this->utils->checkIfContainsAll($userAgent, $values)) {
                 return $deviceId;
             }
         }

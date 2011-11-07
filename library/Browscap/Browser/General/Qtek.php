@@ -47,7 +47,7 @@ class Qtek extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Qtek');
+        return $this->utils->checkIfStartsWith($userAgent, 'Qtek');
     }
     
     protected $prefix = 'QTEK';

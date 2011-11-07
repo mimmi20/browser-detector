@@ -47,7 +47,7 @@ class Nec extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'NEC-') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'KGT');
+        return $this->utils->checkIfStartsWith($userAgent, 'NEC-') || $this->utils->checkIfStartsWith($userAgent, 'KGT');
     }
     
     /**
@@ -59,11 +59,11 @@ class Nec extends BrowserHandler
      */
     public function lookForMatchingUserAgent($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'NEC-')) {
-            $tollerance = WURFL_Handlers_Utils::firstSlash($userAgent);
-            return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
+        if($this->utils->checkIfStartsWith($userAgent, 'NEC-')) {
+            $tollerance = $this->utils->firstSlash($userAgent);
+            return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
         }
-        return WURFL_Handlers_Utils::ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::NEC_KGT_TOLLERANCE);
+        return $this->utils->ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::NEC_KGT_TOLLERANCE);
     }
     
     const NEC_KGT_TOLLERANCE = 2;

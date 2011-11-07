@@ -47,7 +47,7 @@ class Benq extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'BenQ') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'BENQ');
+        return $this->utils->checkIfStartsWith($userAgent, 'BenQ') || $this->utils->checkIfStartsWith($userAgent, 'BENQ');
     }
     
     protected $prefix = 'BENQ';

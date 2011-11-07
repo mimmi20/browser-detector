@@ -47,7 +47,7 @@ class Sanyo extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Sanyo') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'SANYO');
+        return $this->utils->checkIfStartsWith($userAgent, 'Sanyo') || $this->utils->checkIfStartsWith($userAgent, 'SANYO');
     }
     protected $prefix = 'SANYO';
 }

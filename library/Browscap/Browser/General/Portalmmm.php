@@ -47,7 +47,7 @@ class Portalmmm extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'portalmmm');
+        return $this->utils->checkIfStartsWith($userAgent, 'portalmmm');
     }
     
     /**

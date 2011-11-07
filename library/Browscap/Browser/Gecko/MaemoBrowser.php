@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\Khtml;
+namespace Browscap\Browser\Gecko;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class MaemoBrowser extends BrowserHandler
 {
-    protected $prefix = 'MaemoBrowser';
-
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-
     /**
      *
      * @param string $userAgent
@@ -47,16 +40,36 @@ class MaemoBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Maemo');
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko', 'Maemo'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnFirefox = array(
+            // using also the Gecko rendering engine
+            'Maxthon',
+            'Camino',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Navigator',
+            'Palemoon',
+            'SeaMonkey',
+            'Flock',
+            'Fennec'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+            return false;
+        }
+        
+        return true;
     }
-
-    public function lookForMatchingUserAgent($userAgent)
-    {
-         $tolerance = WURFL_Handlers_Utils::firstSpace($userAgent);
-        return parent::applyRisWithTollerance(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
-    }
-
-
-
-
 }

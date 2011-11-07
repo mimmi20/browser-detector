@@ -48,7 +48,7 @@ class BotCrawlerTranscoder extends BrowserHandler
      */
     public function canHandle($userAgent) {
         foreach($this->botCrawlerTranscoder as $key) {
-            if(WURFL_Handlers_Utils::checkIfContainsCaseInsensitive($userAgent, $key)) {
+            if($this->utils->checkIfContainsCaseInsensitive($userAgent, $key)) {
                 return true;
             }
         }

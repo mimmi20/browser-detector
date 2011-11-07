@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Konqueror extends BrowserHandler
 {
-    protected $prefix = 'KONQUEROR';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing Firefox and are not mobile browsers
      *
@@ -48,9 +41,38 @@ class Konqueror extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Konqueror');
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Konqueror', 'Gecko'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnFirefox = array(
+            // using also the Gecko rendering engine
+            'Maemo',
+            'Maxthon',
+            'Camino',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Navigator',
+            'Palemoon',
+            'SeaMonkey',
+            'Flock',
+            'Fennec',
+            'Firefox'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+            return false;
+        }
+        
+        return true;
     }
 }

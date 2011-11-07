@@ -49,7 +49,7 @@ class DoCoMo extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'DoCoMo');
+        return $this->utils->checkIfStartsWith($userAgent, 'DoCoMo');
     }
     
     /**
@@ -65,7 +65,7 @@ class DoCoMo extends BrowserHandler
     
     public function applyRecoveryMatch($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'DoCoMo/2')) {
+        if($this->utils->checkIfStartsWith($userAgent, 'DoCoMo/2')) {
             return 'docomo_generic_jap_ver2';
         }
         

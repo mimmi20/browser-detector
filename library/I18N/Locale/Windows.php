@@ -1,10 +1,13 @@
 <?php
+declare(ENCODING = 'utf-8');
+namespace I18N\Locale;
+
 /**
 * $Id$
 */
 
 
-$windows = I18N::getStaticProperty('windows');
+$windows = \I18N\I18N::getStaticProperty('windows');
 $windows = array(
 
     'de_DE' => 'deu',

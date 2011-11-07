@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Seamonkey extends BrowserHandler
 {
-    protected $prefix = 'SEAMONKEY';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing Seamonkey and are not mobile browsers
      *
@@ -48,10 +41,39 @@ class Seamonkey extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'SeaMonkey');
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko', 'SeaMonkey'))) {
+            return false;
+        }
+        
+        $isNotReallyAnFirefox = array(
+            'SnapPreviewBot',
+            'ScanAlert',
+            'spider',
+            'Nutch',
+            'webaroo',
+            'OneRiot',
+            // using also the Gecko rendering engine
+            'Maemo',
+            'Maxthon',
+            'Camino',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Navigator',
+            'Palemoon',
+            'Flock',
+            'Fennec'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+            return false;
+        }
+        
+        return true;
     }
     
     private $chromes = array(

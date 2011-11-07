@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Iron extends BrowserHandler
 {
-    protected $prefix = 'IRON';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing Iron and are not mobile browsers
      *
@@ -48,59 +41,33 @@ class Iron extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Iron');
-    }
-    
-    private $chromes = array(
-        '' => 'iron',
-        '1' => 'iron_1',
-        '2' => 'iron_2',
-        '3' => 'iron_3',
-        '4' => 'iron_4',
-        '5' => 'iron_5',
-        '6' => 'iron_6',
-        '7' => 'iron_7',
-        '8' => 'iron_8',
-        '9' => 'iron_9',
-        '10' => 'iron_10',
-        '11' => 'iron_11',
-        '12' => 'iron_12',
-        '13' => 'iron_13',
-        '14' => 'iron_14',
-        '15' => 'iron_15',
-        '16' => 'iron_16',
-        '17' => 'iron_17',
-        '18' => 'iron_18',
-        '19' => 'iron_19'
-);
-    
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        return $this->applyRecoveryMatch($userAgent);
-    }
-    
-    public function applyRecoveryMatch($userAgent)
-    {
-        $chromeVersion = $this->chromeVersion($userAgent);
-        $chromeId = 'iron';
-        if(isset($this->chromes[$chromeVersion])) {
-            return $this->chromes[$chromeVersion];
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit', 'Chrome', 'Iron'))) {
+            return false;
         }
         
-        return 'generic_web_browser';
-        
-    }
-    
-    const CHROME_VERSION_PATTERN = '/.*Iron\/(\d+).*/';
-    private function chromeVersion($userAgent)
-    {
-        if(preg_match(self::CHROME_VERSION_PATTERN, $userAgent, $match)) {
-            return $match[1];
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
         }
-        return NULL;
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Maemo',
+            'Palemoon',
+            'Rockmelt'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+            return false;
+        }
+        
+        return true;
     }
-    /**/
 }

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace HTML\I18N;
+namespace I18N;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 set softtabstop=4: */
 

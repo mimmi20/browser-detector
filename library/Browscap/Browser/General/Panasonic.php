@@ -47,7 +47,7 @@ class Panasonic extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Panasonic');
+        return $this->utils->checkIfStartsWith($userAgent, 'Panasonic');
     }
     
     protected $prefix = 'PANASONIC';

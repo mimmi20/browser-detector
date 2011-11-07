@@ -28,6 +28,7 @@
             <exclude>
                 <directory>../library/Zend</directory>
                 <directory>../library/Doctrine</directory>
+                <directory>../library/Unister</directory>
                 <directory suffix=".phtml">../library</directory>
             </exclude>
         </whitelist>

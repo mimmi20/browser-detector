@@ -34,13 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Apple extends BrowserHandler
 {
-    protected $prefix = 'APPLE';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs containing either 'iPhone' or 'iPod' or 'iPad'
      *
@@ -49,42 +42,39 @@ class Apple extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'iPhone') 
-            || WURFL_Handlers_Utils::checkIfContains($userAgent, 'iPod')
-            || WURFL_Handlers_Utils::checkIfContains($userAgent, 'iPad');
-    }
-    
-    /** 
-     *
-     * @param string $userAgent
-     * @return string
-     */
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        $tolerance = 0;
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Apple')) {
-            $tolerance = WURFL_Handlers_Utils::ordinalIndexOf($userAgent, ' ', 3);
-        } else {
-            $tolerance = WURFL_Handlers_Utils::firstSemiColonOrLength($userAgent);
-        }
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
-    }
-    
-    /**
-     *
-     * @param string $userAgent
-     * @return string
-     */
-    public function applyRecoveryMatch($userAgent)
-    {
-        if(WURFL_Handlers_Utils::checkIfContains($userAgent, 'iPad')) {
-            return 'apple_ipad_ver1';
-        }
-        if(WURFL_Handlers_Utils::checkIfContains($userAgent, 'iPod')) {
-            return 'apple_ipod_touch_ver1';
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+            return false;
         }
         
-        return 'apple_iphone_ver1';
+        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chrome',
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'Palemoon',
+            'Rockmelt'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('iPad', 'iPhone', 'iPod'))) {
+            return true;
+        }
+        
+        return false;
     }
-
 }

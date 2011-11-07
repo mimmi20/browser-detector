@@ -27,7 +27,7 @@
 /*
  * Maximize Memory Limit
  */
-// ini_set('memory_limit', '3072M');
+ini_set('memory_limit', '3072M');
 ini_set('display_errors', 1);
 error_reporting(E_COMPILE_ERROR|E_RECOVERABLE_ERROR|E_ERROR|E_CORE_ERROR);
 

@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Thunderbird extends BrowserHandler
 {
-    protected $prefix = 'THUNDERBIRD';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null) 
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing Thunderbird and are not mobile browsers
      *
@@ -48,56 +41,38 @@ class Thunderbird extends BrowserHandler
      */
     public function canHandle($userAgent) 
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Thunderbird');
-    }
-    
-    public function lookForMatchingUserAgent($userAgent)
-    {//var_dump($userAgent);exit;
-        return $this->applyRecoveryMatch($userAgent);
-    }
-    
-    private $safaris = array(
-        '' => 'thunderbird',
-        '1.0' => 'thunderbird_1',
-        '1.5' => 'thunderbird_1_5',
-        '2.0' => 'thunderbird_2',
-        '3.0' => 'thunderbird_3',
-        '3.1' => 'thunderbird_3_1',
-        '5.0' => 'thunderbird_5',
-        '6.0' => 'thunderbird_6',
-        '7.0' => 'thunderbird_7',
-        '8.0' => 'thunderbird_8',
-        '9.0' => 'thunderbird_9'
-);
-    
-    public function applyRecoveryMatch($userAgent) 
-    {
-        $safariVersion = $this->safariVersion($userAgent);//var_dump($userAgent, $safariVersion);exit;
-        $safariId = 'thunderbird';
-        if(isset($this->safaris[$safariVersion])) {
-            return $this->safaris[$safariVersion];
-        }
-        /*
-        //var_dump($userAgent, $safariVersion, $safariId);exit;
-        if($this->isDeviceExist($safariId)) {
-            return $safariId;
-        }
-        /**/
-        return 'generic_web_browser';
         
-    }
-    
-    const SAFARI_VERSION_PATTERN = '/.*Thunderbird\/(\d+\.\d).*/';
-    private function safariVersion($userAgent) 
-    {
-        if(preg_match(self::SAFARI_VERSION_PATTERN, $userAgent, $match)
-) {
-            return $match[1];
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Thunderbird', 'Gecko'))) {
+            return false;
         }
-        return NULL;
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnFirefox = array(
+            // using also the Gecko rendering engine
+            'Maemo',
+            'Maxthon',
+            'Camino',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Navigator',
+            'Palemoon',
+            'SeaMonkey',
+            'Flock',
+            'Fennec',
+            'Firefox'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+            return false;
+        }
+        
+        return true;
     }
-
 }

@@ -47,7 +47,7 @@ class Alcatel extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Alcatel') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'ALCATEL');
+        return $this->utils->checkIfStartsWith($userAgent, 'Alcatel') || $this->utils->checkIfStartsWith($userAgent, 'ALCATEL');
     }
     
     protected $prefix = 'ALCATEL';

@@ -48,7 +48,7 @@ class Kyocera extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'kyocera') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'QC-') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'KWC-');
+        return $this->utils->checkIfStartsWith($userAgent, 'kyocera') || $this->utils->checkIfStartsWith($userAgent, 'QC-') || $this->utils->checkIfStartsWith($userAgent, 'KWC-');
     }
     
     protected $prefix = 'KYOCERA';

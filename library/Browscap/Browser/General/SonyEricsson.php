@@ -49,7 +49,7 @@ class SonyEricsson extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'SonyEricsson');
+        return $this->utils->checkIfContains($userAgent, 'SonyEricsson');
     }
     
     /**
@@ -62,12 +62,12 @@ class SonyEricsson extends BrowserHandler
      */
     public function lookForMatchingUserAgent($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'SonyEricsson')) {
-            $tollerance = WURFL_Handlers_Utils::firstSlash($userAgent);
-            return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
+        if($this->utils->checkIfStartsWith($userAgent, 'SonyEricsson')) {
+            $tollerance = $this->utils->firstSlash($userAgent);
+            return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
         }
-        $tollerance = WURFL_Handlers_Utils::secondSlash($userAgent);
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
+        $tollerance = $this->utils->secondSlash($userAgent);
+        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
     
     }
 

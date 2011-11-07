@@ -70,11 +70,11 @@ class CatchAllHandler extends BrowserHandler
     public function applyConclusiveMatch($userAgent)
     {
         $deviceId = WURFL_Constants::GENERIC;
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mozilla')) {
+        if($this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             $deviceId = $this->applyMozillaConclusiveMatch($userAgent);
         } else {
-            $tollerance = WURFL_Handlers_Utils::firstSlash($userAgent);
-            $match = WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
+            $tollerance = $this->utils->firstSlash($userAgent);
+            $match = $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
             $deviceId = $this->userAgentsWithDeviceID[$match];
         }
         
@@ -92,7 +92,7 @@ class CatchAllHandler extends BrowserHandler
         }
         
         $this->logger->log('Applying Catch All Conclusive Match for ua: $userAgent');
-        $match = WURFL_Handlers_Utils::ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::MOZILLA_TOLLERACE);
+        $match = $this->utils->ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::MOZILLA_TOLLERACE);
         return $this->userAgentsWithDeviceID[$match];
     
     }
@@ -103,7 +103,7 @@ class CatchAllHandler extends BrowserHandler
         $this->mozilla5UserAgentsWithDeviceID = $this->persistenceProvider->load(self::MOZILLA5);
 
         if(!array_key_exists($userAgent, $this->mozilla5UserAgentsWithDeviceID)) {
-            $match = WURFL_Handlers_Utils::ldMatch(array_keys($this->mozilla5UserAgentsWithDeviceID), $userAgent, self::MOZILLA_TOLLERACE);
+            $match = $this->utils->ldMatch(array_keys($this->mozilla5UserAgentsWithDeviceID), $userAgent, self::MOZILLA_TOLLERACE);
         }
         
         if(!empty($match)) {
@@ -118,7 +118,7 @@ class CatchAllHandler extends BrowserHandler
         $this->logger->log('Applying Catch All Conclusive Match Mozilla 4 for ua: $userAgent');
         $this->mozilla4UserAgentsWithDeviceID = $this->persistenceProvider->load(self::MOZILLA4);
         if(!array_key_exists($userAgent, $this->mozilla4UserAgentsWithDeviceID)) {
-            $match = WURFL_Handlers_Utils::ldMatch(array_keys($this->mozilla4UserAgentsWithDeviceID), $userAgent, self::MOZILLA_TOLLERACE);
+            $match = $this->utils->ldMatch(array_keys($this->mozilla4UserAgentsWithDeviceID), $userAgent, self::MOZILLA_TOLLERACE);
         }
         
         if(!empty($match)) {
@@ -156,17 +156,17 @@ class CatchAllHandler extends BrowserHandler
     
     private function isMozilla5($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mozilla/5');
+        return $this->utils->checkIfStartsWith($userAgent, 'Mozilla/5');
     }
     
     private function isMozilla4($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mozilla/4');
+        return $this->utils->checkIfStartsWith($userAgent, 'Mozilla/4');
     }
     
     private function isMozilla($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mozilla');
+        return $this->utils->checkIfStartsWith($userAgent, 'Mozilla');
     }
 
 }

@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Rockmelt extends BrowserHandler
 {
-    protected $prefix = 'ROCKMELT';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing Chrome and are not mobile browsers
      *
@@ -48,48 +41,33 @@ class Rockmelt extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'RockMelt')
-            && WURFL_Handlers_Utils::checkIfContains($userAgent, 'Chrome');
-    }
-    
-    private $chromes = array(
-        '' => 'rockmelt',
-        '0.9' => 'rockmelt_0_9',
-        '1.0' => 'rockmelt_1'
-);
-    
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        return $this->applyRecoveryMatch($userAgent);
-    }
-    
-    public function applyRecoveryMatch($userAgent)
-    {
-        $chromeVersion = $this->chromeVersion($userAgent);
-        $chromeId = 'rockmelt';
-        //var_dump($userAgent, $chromeVersion);exit;
-        if(isset($this->chromes[$chromeVersion])) {
-            return $this->chromes[$chromeVersion];
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit', 'Chrome', 'RockMelt'))) {
+            return false;
         }
         
-        /*
-        if($this->isDeviceExist($chromeId)) {
-            return $chromeId;
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
         }
-        /**/
-        return 'generic_web_browser';
         
-    }
-    
-    const CHROME_VERSION_PATTERN = '/.*RockMelt\/(\d+\.\d).*/';
-    private function chromeVersion($userAgent)
-    {
-        if(preg_match(self::CHROME_VERSION_PATTERN, $userAgent, $match)) {
-            return $match[1];
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'Palemoon'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+            return false;
         }
-        return NULL;
+        
+        return true;
     }
 }

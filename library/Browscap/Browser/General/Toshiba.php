@@ -47,7 +47,7 @@ class Toshiba extends BrowserHandler
      */
     public function canHandle($userAgent) 
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Toshiba');
+        return $this->utils->checkIfStartsWith($userAgent, 'Toshiba');
     }
     
     protected $prefix = 'TOSHIBA';

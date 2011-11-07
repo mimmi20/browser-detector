@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\General;
+namespace Browscap\Browser\Presto;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -12,7 +12,6 @@ namespace Browscap\Browser\General;
  *
  * Refer to the COPYING file distributed with this package.
  *
- *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
@@ -23,7 +22,7 @@ namespace Browscap\Browser\General;
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * SharpUserAgentHandler
+ * OperaHandlder
  *
  *
  * @category   WURFL
@@ -32,23 +31,28 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Sharp extends BrowserHandler
+class OperaMobile extends BrowserHandler
 {
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
-     * Intercept all UAs starting with 'Sharp' or 'SHARP'
+     * Intercept all UAs Containing Opera Mini
      *
      * @param string $userAgent
-     * @return boolean 
+     * @return boolean
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfStartsWith($userAgent, 'Sharp') || $this->utils->checkIfStartsWith($userAgent, 'SHARP');
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Presto'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        return $this->utils->checkIfContains($userAgent, 'Opera Mobi');
     }
-    
-    protected $prefix = 'SHARP';
 }

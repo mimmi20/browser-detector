@@ -47,7 +47,7 @@ class Sagem extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Sagem') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'SAGEM');
+        return $this->utils->checkIfStartsWith($userAgent, 'Sagem') || $this->utils->checkIfStartsWith($userAgent, 'SAGEM');
     }
     
     protected $prefix = 'SAGEM';

@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class OperaMini extends BrowserHandler
 {
-    protected $prefix = 'OPERA_MINI';
-
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-
     /**
      * Intercept all UAs Containing Opera Mini
      *
@@ -48,27 +41,18 @@ class OperaMini extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Opera Mini');
-    }
-
-    private $operaMinis = array(
-        'Opera Mini/1' => 'browser_opera_mini_release1',
-        'Opera Mini/2' => 'browser_opera_mini_release2',
-        'Opera Mini/3' => 'browser_opera_mini_release3',
-        'Opera Mini/4' => 'browser_opera_mini_release4',
-        'Opera Mini/5' => 'browser_opera_mini_release5'
-);
-
-    public function applyRecoveryMatch($userAgent)
-    {
-        foreach($this->operaMinis as $key => $deviceId) {
-            if(WURFL_Handlers_Utils::checkIfContains($userAgent, $key)) {
-                return $deviceId;
-            }
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+            return false;
         }
-
-        return WURFL_Constants::GENERIC;
-
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Presto'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        return $this->utils->checkIfContains($userAgent, 'Opera Mini');
     }
-
 }

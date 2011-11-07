@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\Khtml;
+namespace Browscap\Browser\Trident;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -22,7 +22,7 @@ namespace Browscap\Browser\Khtml;
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * ChromeUserAgentHanlder
+ * AOLHanlder
  *
  *
  * @category   WURFL
@@ -31,21 +31,20 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Chromium extends BrowserHandler
+class Tob extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Chromium and are not mobile browsers
+     * Intercept all UAs Containing AOL and are not mobile browsers
      *
      * @param string $userAgent
      * @return boolean
      */
-    public function canHandle($userAgent)
-    {
+    public function canHandle($userAgent) {
         if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit', 'Chrome', 'Chromium'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE', 'TOB'))) {
             return false;
         }
         
@@ -53,18 +52,28 @@ class Chromium extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Flock',
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Maxthon',
             'Galeon',
             'Lunascape',
-            'Iron',
-            'Maemo',
+            'Opera',
             'Palemoon',
-            'Rockmelt'
+            'Flock',
+            'AOL',
+            'Avant',
+            'MyIE',
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
             return false;
         }
         

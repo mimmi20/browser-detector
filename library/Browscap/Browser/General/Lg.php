@@ -48,7 +48,7 @@ class Lg extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'LG') || WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'lg');
+        return $this->utils->checkIfContains($userAgent, 'LG') || $this->utils->checkIfStartsWith($userAgent, 'lg');
     }
     
     /**
@@ -58,7 +58,7 @@ class Lg extends BrowserHandler
      */
     public function lookForMatchingUserAgent($userAgent)
     {
-        $tolerance = WURFL_Handlers_Utils::indexOfOrLength($userAgent, '/', strpos($userAgent, 'LG'));
+        $tolerance = $this->utils->indexOfOrLength($userAgent, '/', strpos($userAgent, 'LG'));
         $userAgents = array_keys($this->userAgentsWithDeviceID);
         return parent::applyRisWithTollerance($userAgents, $userAgent, $tolerance);
 

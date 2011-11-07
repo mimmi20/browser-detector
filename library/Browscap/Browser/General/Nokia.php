@@ -49,7 +49,7 @@ class Nokia extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Nokia');
+        return $this->utils->checkIfContains($userAgent, 'Nokia');
     }
     
     /**
@@ -63,7 +63,7 @@ class Nokia extends BrowserHandler
     public function lookForMatchingUserAgent($userAgent)
     {
         //$tolerance = WU
-        $tolerance = WURFL_Handlers_Utils::indexOfAnyOrLength($userAgent, array('/', ' '), strpos($userAgent, 'Nokia'));
+        $tolerance = $this->utils->indexOfAnyOrLength($userAgent, array('/', ' '), strpos($userAgent, 'Nokia'));
         $userAgents = array_keys($this->userAgentsWithDeviceID);
         return parent::applyRisWithTollerance($userAgents, $userAgent, $tolerance);
     

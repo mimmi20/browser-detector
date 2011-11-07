@@ -51,7 +51,7 @@ class Motorola extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Mot-') || WURFL_Handlers_Utils::checkIfContains($userAgent, 'MOT-') || WURFL_Handlers_Utils::checkIfContains($userAgent, 'Motorola');
+        return $this->utils->checkIfContains($userAgent, 'Mot-') || $this->utils->checkIfContains($userAgent, 'MOT-') || $this->utils->checkIfContains($userAgent, 'Motorola');
     
     }
     
@@ -64,7 +64,7 @@ class Motorola extends BrowserHandler
      */
     public function applyRecoveryMatch($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfContains($userAgent, 'MIB/2.2') || WURFL_Handlers_Utils::checkIfContains($userAgent, 'MIB/BER2.2')) {
+        if($this->utils->checkIfContains($userAgent, 'MIB/2.2') || $this->utils->checkIfContains($userAgent, 'MIB/BER2.2')) {
             return 'mot_mib22_generic';
         }
         

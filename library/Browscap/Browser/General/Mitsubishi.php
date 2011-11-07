@@ -47,7 +47,7 @@ class Mitsubishi extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Mitsu');
+        return $this->utils->checkIfStartsWith($userAgent, 'Mitsu');
     }
         
     protected $prefix = 'MITSUBISHI';

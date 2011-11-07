@@ -48,7 +48,7 @@ class BlackBerry extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'BlackBerry') || WURFL_Handlers_Utils::checkIfContains($userAgent, 'Blackberry');
+        return $this->utils->checkIfContains($userAgent, 'BlackBerry') || $this->utils->checkIfContains($userAgent, 'Blackberry');
     }
     
     private $blackberryIds = array(
@@ -82,7 +82,7 @@ class BlackBerry extends BrowserHandler
             return WURFL_Constants::GENERIC;
         }
         foreach($this->blackberryIds as $v => $deviceId) {
-            if(WURFL_Handlers_Utils::checkIfStartsWith($version, $v)) {
+            if($this->utils->checkIfStartsWith($version, $v)) {
                 return $deviceId;
             }
         }

@@ -48,12 +48,12 @@ class SPV extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'SPV');
+        return $this->utils->checkIfContains($userAgent, 'SPV');
     }
     
     public function lookForMatchingUserAgent($userAgent)
     {
-        $tolerance = WURFL_Handlers_Utils::indexOfOrLength($userAgent, ';', strpos($userAgent, 'SPV'));
+        $tolerance = $this->utils->indexOfOrLength($userAgent, ';', strpos($userAgent, 'SPV'));
         return parent::applyRisWithTollerance(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
     }
     

@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Opera extends BrowserHandler
 {
-    protected $prefix = 'OPERA';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      *
      * @param string $userAgent
@@ -47,77 +40,28 @@ class Opera extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
         
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Opera');
-    }
-    
-    private $operas = array(
-        '' => 'opera',
-        '2.0' => 'opera_02_00',
-        '2.1' => 'opera_02_10',
-        '3.0' => 'opera_03_00',
-        '3.5' => 'opera_03_50',
-        '3.6' => 'opera_03_60',
-        '4.0' => 'opera_04_00',
-        '5.0' => 'opera_05_00',
-        '6.0' => 'opera_06_00',
-        '7.0' => 'opera_07_00',
-        '8.0' => 'opera_08_00',
-        '8.5' => 'opera_08_50',
-        '9.0' => 'opera_09_00',
-        '9.2' => 'opera_09_20',
-        '9.5' => 'opera_09_50',
-        '9.6' => 'opera_09_60',
-        '10.0' => 'opera_10_00',
-        '10.1' => 'opera_10_10',
-        '10.5' => 'opera_10_50',
-        '10.6' => 'opera_10_60',
-        '10.7' => 'opera_10_70',
-        '11.0' => 'opera_11_00',
-        '11.1' => 'opera_11_10',
-        '11.5' => 'opera_11_50',
-        '12.0' => 'opera_12_00'
-);
-    
-    const OPERA_TOLERANCE = 3;
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        return WURFL_Handlers_Utils::ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::OPERA_TOLERANCE);
-    }
-    
-    public function applyRecoveryMatch($userAgent)
-    {
-        $operaVersion = $this->operaVersion($userAgent);
-        $operaId = 'opera';
-        if(isset($this->operas[$operaVersion])) {
-            $operaId = $this->operas[$operaVersion];
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Presto'))) {
+            return false;
         }
         
-        if($this->isDeviceExist($operaId)) {
-            return $operaId;
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
         }
-
         
-        return 'generic_web_browser';
+        $isNotReallyAnOpera = array(
+            // using also the Gecko rendering engine
+            'Opera Mini',
+            'Opera Mobi'
+        );
         
-    }
-    
-
-    
-    const OPERA_VERSION_PATTERN = '/.*Opera[\s\/](\d+\.\d).*/';
-    const OPERA_VERSION_PATTERN_EXT = '/.*Version\/(\d+\.\d).*/';
-    private function operaVersion($userAgent)
-    {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'Opera/9.80') && preg_match(self::OPERA_VERSION_PATTERN_EXT, $userAgent, $match)) {
-            return $match[1];
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnOpera)) {
+            return false;
         }
-        if(preg_match(self::OPERA_VERSION_PATTERN, $userAgent, $match)) {
-            return $match[1];
-        }
-        return NULL;
+        
+        return $this->utils->checkIfContains($userAgent, 'Opera');
     }
-
 }

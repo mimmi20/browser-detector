@@ -45,8 +45,8 @@ class Samsung extends BrowserHandler
      * @return boolean
      */
     public function canHandle($userAgent) {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Samsung/SGH')
-                || WURFL_Handlers_Utils::checkIfStartsWithAnyOf($userAgent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
+        return $this->utils->checkIfContains($userAgent, 'Samsung/SGH')
+                || $this->utils->checkIfStartsWithAnyOf($userAgent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
 
 
@@ -62,22 +62,22 @@ class Samsung extends BrowserHandler
     {
         $tolerance = $this->tolerance($userAgent);
         $this->logger->log('$this->prefix :Applying Conclusive Match for ua: $userAgent with tolerance $tolerance');
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
+        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
     }
 
  
     private function tolerance($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfStartsWithAnyOf($userAgent, array('SEC-', 'SAMSUNG-', 'SCH'))) {
-            return WURFL_Handlers_Utils::firstSlash($userAgent);
+        if($this->utils->checkIfStartsWithAnyOf($userAgent, array('SEC-', 'SAMSUNG-', 'SCH'))) {
+            return $this->utils->firstSlash($userAgent);
         }
-        if(WURFL_Handlers_Utils::checkIfStartsWithAnyOf($userAgent, array('Samsung-','SPH', 'SGH'))) {
-            return WURFL_Handlers_Utils::firstSpace($userAgent);
+        if($this->utils->checkIfStartsWithAnyOf($userAgent, array('Samsung-','SPH', 'SGH'))) {
+            return $this->utils->firstSpace($userAgent);
         }
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'SAMSUNG/')) {
-            return WURFL_Handlers_Utils::secondSlash($userAgent);
+        if($this->utils->checkIfStartsWith($userAgent, 'SAMSUNG/')) {
+            return $this->utils->secondSlash($userAgent);
         }
-        return WURFL_Handlers_Utils::firstSlash($userAgent);
+        return $this->utils->firstSlash($userAgent);
     }
 
     protected $prefix = 'SAMSUNG';

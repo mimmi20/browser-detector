@@ -49,7 +49,7 @@ class Kddi extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'KDDI');
+        return $this->utils->checkIfContains($userAgent, 'KDDI');
     }
     
     /**
@@ -57,7 +57,7 @@ class Kddi extends BrowserHandler
     public function lookForMatchingUserAgent($userAgent)
     {
         $tolerance = $this->tolerance($userAgent);
-        return WURFL_Handlers_Utils::risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
+        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
     }
     
     /**
@@ -67,7 +67,7 @@ class Kddi extends BrowserHandler
      */
     public function applyRecoveryMatch($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfContains($userAgent, 'Opera')) {
+        if($this->utils->checkIfContains($userAgent, 'Opera')) {
             return 'opera';
         }
         return 'opwv_v62_generic';
@@ -75,15 +75,15 @@ class Kddi extends BrowserHandler
     
     private function tolerance($userAgent)
     {
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'KDDI/')) {
-            return WURFL_Handlers_Utils::secondSlash($userAgent);
+        if($this->utils->checkIfStartsWith($userAgent, 'KDDI/')) {
+            return $this->utils->secondSlash($userAgent);
         }
         
-        if(WURFL_Handlers_Utils::checkIfStartsWith($userAgent, 'KDDI')) {
-            return WURFL_Handlers_Utils::firstSlash($userAgent);
+        if($this->utils->checkIfStartsWith($userAgent, 'KDDI')) {
+            return $this->utils->firstSlash($userAgent);
         }
         
-        return WURFL_Handlers_Utils::indexOfOrLength($userAgent, ')');
+        return $this->utils->indexOfOrLength($userAgent, ')');
     
     }
 

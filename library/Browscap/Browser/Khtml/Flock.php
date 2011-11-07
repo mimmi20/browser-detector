@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Flock extends BrowserHandler
 {
-    protected $prefix = 'FLOCK';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs Containing Flock and are not mobile browsers
      *
@@ -48,46 +41,34 @@ class Flock extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if(WURFL_Handlers_Utils::isMobileBrowser($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
             return false;
         }
-        return WURFL_Handlers_Utils::checkIfContains($userAgent, 'Flock');
-    }
-    
-    public function lookForMatchingUserAgent($userAgent)
-    {//var_dump($userAgent);exit;
-        return $this->applyRecoveryMatch($userAgent);
-    }
-    private $safaris = array(
-        '' => 'flock',
-        '1.0' => 'flock_1',
-        '1.2' => 'flock_1',
-        '2.0' => 'flock_2',
-        '2.5' => 'flock_2',
-        '3.0' => 'flock_3',
-        '3.1' => 'flock_3_1',
-        '5.0' => 'flock_5'
-);
-    
-    public function applyRecoveryMatch($userAgent)
-    {
-        $safariVersion = $this->safariVersion($userAgent);//var_dump($userAgent, $safariVersion);exit;
-        $safariId = 'flock';
-        if(isset($this->safaris[$safariVersion])) {
-            return $this->safaris[$safariVersion];
-        }
-        return 'generic_web_browser';
         
-    }
-    
-    const SAFARI_VERSION_PATTERN = '/.*Flock\/(\d+\.\d).*/';
-    private function safariVersion($userAgent)
-    {
-        if(preg_match(self::SAFARI_VERSION_PATTERN, $userAgent, $match)
-) {
-            return $match[1];
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Flock'))) {
+            return false;
         }
-        return NULL;
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'Palemoon',
+            'Rockmelt'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+            return false;
+        }
+        
+        return true;
     }
-
 }
