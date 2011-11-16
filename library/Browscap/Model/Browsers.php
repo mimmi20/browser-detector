@@ -39,6 +39,21 @@ class Browsers extends ModelAbstract
      * @var String
      */
     protected $_primary = 'idBrowsers';
+    /*
+    CREATE TABLE `browsers` (
+        `idBrowsers` INT(10) NULL AUTO_INCREMENT,
+        `browser` VARCHAR(250) NULL,
+        `version` DECIMAL(10,2) UNSIGNED NULL,
+        `bits` INT UNSIGNED NULL,
+        `count` BIGINT UNSIGNED NULL,
+        PRIMARY KEY (`idBrowsers`),
+        INDEX `count` (`count`),
+        UNIQUE INDEX `browser_version_bits` (`browser`, `version`, `bits`)
+    )
+    COLLATE='utf8_general_ci'
+    ENGINE=InnoDB
+    ROW_FORMAT=DEFAULT
+    */
 
     /**
      * Loads a row from the database and binds the fields to the object
