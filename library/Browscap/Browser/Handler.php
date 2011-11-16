@@ -66,7 +66,10 @@ abstract class Handler implements MatcherInterface
      *
      * @return bool
      */
-    abstract public function canHandle($userAgent);
+    public function canHandle($userAgent)
+    {
+        return false;
+    }
     
     /**
      * detects the browser name from the given user agent

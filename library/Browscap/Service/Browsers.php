@@ -58,9 +58,9 @@ class Browsers extends ServiceAbstract
         return $this->_model->count($idBrowsers);
     }
     
-    public function countByName($browserName)
+    public function countByName($browserName, $browserVersion = 0.0, $bits = 0)
     {
-        return $this->_model->countByName($browserName);
+        return $this->_model->countByName($browserName, $browserVersion, $bits);
     }
     
     public function getAll()

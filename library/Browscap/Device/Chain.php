@@ -56,14 +56,47 @@ class Chain
     /**
      * detect the user agent
      *
-     * @param string $sUserAgent The user agent
+     * @param string $userAgent The user agent
      *
      * @return string
      */
-    public function detect($sUserAgent)
+    public function detect($userAgent)
     {
-        //detect device
+        $device = new \StdClass();
+        $device->name = 'unknown';
+        $device->version = 0.0;
+        $device->bits    = 0;
         
-        return 'unknown';
+        //$deviceModel = new Browsers();
+        
+        if ($this->_chain->count()) {
+            $this->_chain->top();
+            
+            while ($this->_chain->valid()) {
+                $class     = $this->_chain->current();
+                $className = __NAMESPACE__ . '\\Handlers\\' . $class;
+                $handler   = new $className();
+                
+                if ($handler->canHandle($userAgent)) {
+                    $device = $handler->detect($userAgent);
+                    var_dump($device);exit;
+                    //$deviceModel->countByName($class);
+                    
+                    return $device;
+                }
+                
+                $this->_chain->next();
+            }
+        }
+        
+        //if not deteceted yet, use ini file as fallback
+        $handler = new Handlers\CatchAll();
+        if ($handler->canHandle($userAgent)) {
+            $device = $handler->detect($userAgent);
+            //var_dump($device);exit;
+            //$deviceModel->countByName($device->browser, $device->version, $device->bits);
+        }
+        
+        return $device;
     }
 }

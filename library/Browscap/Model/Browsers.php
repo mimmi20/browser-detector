@@ -99,9 +99,9 @@ class Browsers extends ModelAbstract
         }
     }
     
-    public function countByName($browserName)
+    public function countByName($browserName, $browserVersion = 0.0, $bits = 0)
     {
-        $browser = $this->searchByBrowser($browserName);
+        $browser = $this->searchByBrowser($browserName, $browserVersion, $bits);
         
         if ($browser) {
             $browser->count += 1;
@@ -109,6 +109,8 @@ class Browsers extends ModelAbstract
             $browser = $this->createRow();
             
             $browser->browser = $browserName;
+            $browser->version = $browserVersion;
+            $browser->bits    = $bits;
             $browser->count   = 1;
         }
         
@@ -122,7 +124,7 @@ class Browsers extends ModelAbstract
             $this->_name, 
             array(
                 'name' => 'browser',
-                'count' => \Zend\Db\Exp('sum(`count`)')
+                'count' => new \Zend\Db\Expr('sum(`count`)')
             )
         );
         $select->group('browser');

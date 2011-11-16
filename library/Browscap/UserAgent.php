@@ -148,17 +148,68 @@ class UserAgent
      */
     private function _detect($sUserAgent = null, $bReturnAsArray = false)
     {
+        // define the User Agent object and set the default values
+        $object = new \StdClass();
+        $object->Browser  = 'Default Browser';
+        $object->Version  = 0;
+        $object->MajorVer = 0;
+        $object->MinorVer = 0;
+        $object->Platform = 'unknown';
+        $object->Alpha = false;
+        $object->Beta = false;
+        $object->Win16    = 0;
+        $object->Win32    = 0;
+        $object->Win64    = 0;
+        $object->Frames = false;
+        $object->IFrames = false;
+        $object->Tables = false;
+        $object->Cookies = false;
+        $object->BackgroundSounds = false;
+        $object->JavaScript = false;
+        $object->VBScript = false;
+        $object->JavaApplets = false;
+        $object->ActiveXControls = false;
+        $object->isBanned = false;
+        $object->isMobileDevice = false;
+        $object->isSyndicationReader = false;
+        $object->Crawler = false;
+        $object->CssVersion = 0;
+        $object->AolVersion = 0;
+        $object->wurflKey = 'generic';
+        $object->renderEngine = 'unknown';
+        
+        // detect the rendering engine
         $engineChain = new Engine\Chain();
         $engine      = $engineChain->detect($sUserAgent);
         
+        // detect the browser
         $browserChain = new Browser\Chain();
         $browser      = $browserChain->detect($sUserAgent);
         
+        // detect the operating system
         $osChain = new Os\Chain();
         $os      = $osChain->detect($sUserAgent);
         
+        // detect the device
         $deviceChain = new Device\Chain();
         $device      = $deviceChain->detect($sUserAgent);
+        
+        // take over the detected values to User Agent object
+        $object->Browser  = $browser->browser;
+        $object->Version  = $browser->version;
+        $object->MajorVer = (int) $browser->version;
+        $versions         = explode('.', $browser->version, 2);
+        $object->MinorVer = $versions[1];
+        
+        if (64 == $browser->bits) {
+            $object->Win64 = 1;
+        } elseif (32 == $browser->bits) {
+            $object->Win32 = 1;
+        } elseif (16 == $browser->bits) {
+            $object->Win16 = 1;
+        }
+        
+        return ($bReturnAsArray ? (array) $object : $object);
     }
 
     /**

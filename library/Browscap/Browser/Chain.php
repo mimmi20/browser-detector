@@ -67,7 +67,7 @@ class Chain
         $allBrowsers  = $browserModel->getAll();
         
         foreach ($allBrowsers as $singleBrowser) {
-            $this->_chain->add($singleBrowser->name, $singleBrowser->count);
+            $this->_chain->insert($singleBrowser->name, $singleBrowser->count);
         }
     }
     
@@ -80,8 +80,6 @@ class Chain
      */
     public function detect($userAgent)
     {
-        $this->_chain->top();
-        
         $browser = new \StdClass();
         $browser->browser = 'unknown';
         $browser->version = 0.0;
@@ -89,25 +87,32 @@ class Chain
         
         $browserModel = new Browsers();
         
-        while ($this->_chain->isValid()) {
-            $class   = $this->_chain->current();
-            $handler = new Handlers\$class();
+        if ($this->_chain->count()) {
+            $this->_chain->top();
             
-            if ($handler->canHandle($userAgent)) {
-                $browser = $handler->detect($userAgent);
+            while ($this->_chain->valid()) {
+                $class     = $this->_chain->current();
+                $className = __NAMESPACE__ . '\\Handlers\\' . $class;
+                $handler   = new $className();
                 
-                $browserModel->countByName($class);
+                if ($handler->canHandle($userAgent)) {
+                    $browser = $handler->detect($userAgent);
+                    var_dump($browser);exit;
+                    $browserModel->countByName($class);
+                    
+                    return $browser;
+                }
+                
+                $this->_chain->next();
             }
-            
-            $this->_chain->next();
         }
         
         //if not deteceted yet, use ini file as fallback
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $browser = $handler->detect($userAgent);
-            
-            $browserModel->countByName($browser->browser);
+            //var_dump($browser);exit;
+            $browserModel->countByName($browser->browser, $browser->version, $browser->bits);
         }
         
         return $browser;

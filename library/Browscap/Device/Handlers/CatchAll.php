@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser;
+namespace Browscap\Device\Handlers;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -12,35 +12,39 @@ namespace Browscap\Browser;
  *
  * Refer to the COPYING file distributed with this package.
  *
- *
  * @category   WURFL
- * @package    WURFL
+ * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
- * WURFL_Handlers_Matcher is the base interface that concrete classes 
- * must implement to retrieve a device with the given request    
+ * CatchAllUserAgentHanlder
+ *
  *
  * @category   WURFL
- * @package    WURFL
+ * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-interface MatcherInterface
+
+class CatchAll extends BrowserHandler
 {
-    
     /**
-     * Returns true if this handler can handle the given $userAgent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
      * @param string $userAgent
-     *
-     * @return bool
+     * @return boolean always true
      */
-    public function canHandle($userAgent);
+    public function canHandle($userAgent)
+    {
+        return true;
+    }
     
     /**
      * detects the browser name from the given user agent
@@ -49,6 +53,15 @@ interface MatcherInterface
      *
      * @return StdClass
      */
-    public function detect($userAgent);
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        
+        $detector = new \Browscap\Browscap();
+        $detected = $detector->getBrowser($userAgent);
+        
+        $class->device = 'unknown';
+        
+        return $class;
+    }
 }
-
