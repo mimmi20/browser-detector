@@ -41,9 +41,7 @@ class Support
     public function __construct($source = null)
     {
         if (is_null($source) || !is_array($source)) {
-            $this->_source = $_SERVER;
-            
-            return;
+            $source = $_SERVER;
         }
         
         $this->_source = $source;
@@ -59,8 +57,10 @@ class Support
         } elseif (isset($_GET['agent'])) {
             $userAgent = $this->_cleanParam($_GET['agent']);
         } elseif (isset($_POST['UA'])) {
+            //deprecated
             $userAgent = $this->_cleanParam($_POST['UA']);
         } elseif (isset($_GET['UA'])) {
+            //deprecated
             $userAgent = $this->_cleanParam($_GET['UA']);
         } else {
             foreach ($this->_userAgentHeaders as $header) {
@@ -131,11 +131,11 @@ class Support
     public static function showBool($var)
     {
         if ($var === true) {
-            return('true');
+            return 'true';
         }
         
         if ($var === false) {
-            return('false');
+            return 'false';
         }
         
         return $var;

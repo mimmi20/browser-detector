@@ -100,10 +100,10 @@ class Browscap
         $file = __DIR__ . '/data/browscap.ini';
         
         if (isset($config['inifile'])) {
-            $file = (string) $config['inifile'];
+            $file = realpath((string) $config['inifile']);
         }
         
-        $this->setLocaleFile(realpath($file));
+        $this->setLocaleFile($file);
 
         if ($log instanceof \Zend\Log\Logger) {
             $this->_logger = $log;

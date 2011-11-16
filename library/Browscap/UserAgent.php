@@ -148,13 +148,17 @@ class UserAgent
      */
     private function _detect($sUserAgent = null, $bReturnAsArray = false)
     {
-        $browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
+        $engineChain = new Engine\Chain();
+        $engine      = $engineChain->detect($sUserAgent);
         
-        if (!empty($sUserAgent) && is_string($sUserAgent)) {
-            $this->_agent = $sUserAgent;
-        }
-
-        return $browscap->getBrowser($this->_agent);
+        $browserChain = new Browser\Chain();
+        $browser      = $browserChain->detect($sUserAgent);
+        
+        $osChain = new Os\Chain();
+        $os      = $osChain->detect($sUserAgent);
+        
+        $deviceChain = new Device\Chain();
+        $device      = $deviceChain->detect($sUserAgent);
     }
 
     /**

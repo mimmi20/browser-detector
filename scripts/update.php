@@ -5,9 +5,9 @@ declare(ENCODING = 'utf-8');
 
 use Doctrine\ORM\Tools\EntityGenerator;
 
-ini_set('display_errors', 'On');
+ini_set('display_errors', 1);
 
-$libPath = realpath(__DIR__ . '/../../library');
+$libPath = realpath(__DIR__ . '/../library');
 
 // autoloaders
 require_once $libPath . '/Doctrine/Common/ClassLoader.php';
@@ -23,16 +23,18 @@ $classLoader->register();
 
 // config
 $config = new \Doctrine\ORM\Configuration();
-$config->setMetadataDriverImpl($config->newDefaultAnnotationDriver(realpath(__DIR__ . '/../Model/Entities')));
+$config->setMetadataDriverImpl($config->newDefaultAnnotationDriver(realpath(__DIR__ . '/../application/Model/Entities')));
 $config->setMetadataCacheImpl(new \Doctrine\Common\Cache\ArrayCache);
-$config->setProxyDir(realpath(__DIR__ . '/../Model/Proxies'));
+$config->setProxyDir(realpath(__DIR__ . '/../application/Model/Proxies'));
 $config->setProxyNamespace('Model\Proxies');
+$config->addEntityNamespace('', 'Model\Entities');
+$config->setAutoGenerateProxyClasses(true);
 
 
 $connectionParams = array(
-    'dbname' => 'kredit_geld_de',
+    'dbname' => 'browscap',
     'user' => 'root',
-    'password' => '',
+    'password' => 'mimmi',
     'host' => 'localhost',
     'driver' => 'pdo_mysql',
 );
@@ -65,7 +67,7 @@ $generator = new EntityGenerator();
 $generator->setUpdateEntityIfExists(true);
 $generator->setGenerateStubMethods(true);
 $generator->setGenerateAnnotations(true);
-$generator->generate($metadata, realpath(__DIR__ . '/../Model/Entities'));
+$generator->generate($metadata, realpath(__DIR__ . '/../application/Model/Entities'));
 
 print 'Done!';
 

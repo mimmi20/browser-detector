@@ -1,0 +1,90 @@
+<?php
+declare(ENCODING = 'utf-8');
+namespace Browscap\Service;
+
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+
+/**
+ * Model
+ *
+ * PHP version 5
+ *
+ * @category  CreditCalc
+ * @package   Models
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2007-2010 Unister GmbH
+ * @version   SVN: $Id: Browsers.php -1   $
+ */
+
+/**
+ * Model
+ *
+ * @category  CreditCalc
+ * @package   Models
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2007-2010 Unister GmbH
+ */
+class Browsers extends ServiceAbstract
+{
+    /**
+     * Class Constructor
+     *
+     * @return \App\Service\Browsers
+     */
+    public function __construct()
+    {
+        $this->_model = new \Browscap\Model\Browsers();
+    }
+
+    /**
+     * Loads a row from the database and binds the fields to the object
+     * properties
+     *
+     * @param mixed $browser (Optional) the browsers short name e.g. 'IE'
+     *
+     * @return boolean True if successful
+     * @access public
+     */
+    public function searchByBrowser(
+        $browser = null, $version = 0, $bits = null)
+    {
+        return $this->_model->getCached('browser')->searchByBrowser(
+            $browser, $version, $bits
+        );
+    }
+    
+    public function count($idBrowsers)
+    {
+        return $this->_model->count($idBrowsers);
+    }
+    
+    public function countByName($browserName)
+    {
+        return $this->_model->countByName($browserName);
+    }
+    
+    public function getAll()
+    {
+        return $this->_model->getCached('browser')->getAll();
+    }
+
+    /**
+     * cleans the model cache
+     *
+     * calls the {@link _cleanCache} function with defined tag name
+     *
+     * @return \App\Service\Browsers
+     */
+    public function cleanCache()
+    {
+        return $this->cleanTaggedCache('browser');
+    }
+}
+
+/*
+ * Local variables:
+ * tab-width: 4
+ * c-basic-offset: 4
+ * c-hanging-comment-ender-p: nil
+ * End:
+ */
