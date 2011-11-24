@@ -34,11 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Pantech extends BrowserHandler
 {
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs starting with 'Pantech','PANTECH','PT-' or 'PG-'
      *
@@ -51,22 +46,55 @@ class Pantech extends BrowserHandler
     }
     
     /**
-     * If starts with 'PT-', 'PG-' or 'PANTECH', use RIS with FS
-     * Otherwise LD with threshold 4
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
-     * @return string
+     *
+     * @return StdClass
      */
-    public function lookForMatchingUserAgent($userAgent)
+    public function detect($userAgent)
     {
-        if($this->utils->checkIfStartsWith($userAgent, 'Pantech')) {
-            return $this->utils->ldMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, self::PANTECH_TOLLERANCE);
-        }
-        $tollerance = $this->utils->firstSlash($userAgent);
-        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
-    
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
     }
     
-    const PANTECH_TOLLERANCE = 4;
-    protected $prefix = 'PANTECH';
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'unkonwn';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

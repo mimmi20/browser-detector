@@ -34,13 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Kddi extends BrowserHandler
 {
-    protected $prefix = 'KDDI';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs containing 'KDDI'
      *
@@ -53,38 +46,55 @@ class Kddi extends BrowserHandler
     }
     
     /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function lookForMatchingUserAgent($userAgent)
+    public function detect($userAgent)
     {
-        $tolerance = $this->tolerance($userAgent);
-        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
     }
     
     /**
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
+     *
      * @return string
      */
-    public function applyRecoveryMatch($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        if($this->utils->checkIfContains($userAgent, 'Opera')) {
-            return 'opera';
-        }
-        return 'opwv_v62_generic';
+        return 'unkonwn';
     }
     
-    private function tolerance($userAgent)
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
     {
-        if($this->utils->checkIfStartsWith($userAgent, 'KDDI/')) {
-            return $this->utils->secondSlash($userAgent);
-        }
-        
-        if($this->utils->checkIfStartsWith($userAgent, 'KDDI')) {
-            return $this->utils->firstSlash($userAgent);
-        }
-        
-        return $this->utils->indexOfOrLength($userAgent, ')');
-    
+        return 0.0;
     }
-
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

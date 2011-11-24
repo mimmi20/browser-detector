@@ -55,24 +55,22 @@ class CatchAll extends BrowserHandler
      */
     public function detect($userAgent)
     {
-        $class = new \StdClass();
-        
         $detector = new \Browscap\Browscap();
         $detected = $detector->getBrowser($userAgent);
         
-        $class->browser = $detected->Browser;
-        $class->version = $detected->Version;
+        $detected->browser = $detected->Browser;
+        $detected->version = $detected->Version;
         
         if ($detected->Win64) {
-            $class->bits = 64;
+            $detected->bits = 64;
         } elseif ($detected->Win32) {
-            $class->bits = 32;
+            $detected->bits = 32;
         } elseif ($detected->Win16) {
-            $class->bits = 16;
+            $detected->bits = 16;
         } else {
-            $class->bits = 0;
+            $detected->bits = 0;
         }
         
-        return $class;
+        return $detected;
     }
 }

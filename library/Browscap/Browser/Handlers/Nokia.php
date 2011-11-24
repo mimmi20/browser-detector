@@ -34,13 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Nokia extends BrowserHandler
 {
-    protected $prefix = 'NOKIA';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercepting All User Agents containing 'Nokia'
      *
@@ -53,42 +46,55 @@ class Nokia extends BrowserHandler
     }
     
     /**
-     *
-     * Apply RIS with FS(First Slash) after Nokia String as a threshold.
-     * 
-     * 
-     * @param string $userAgent
-     * @return string
-     */
-    public function lookForMatchingUserAgent($userAgent)
-    {
-        //$tolerance = WU
-        $tolerance = $this->utils->indexOfAnyOrLength($userAgent, array('/', ' '), strpos($userAgent, 'Nokia'));
-        $userAgents = array_keys($this->userAgentsWithDeviceID);
-        return parent::applyRisWithTollerance($userAgents, $userAgent, $tolerance);
-    
-    }
-
-    /**
-     * If the User Agent contains 'Series60' and 'Series80'. 
-     * Return 'nokia_generic_series60' and 'nokia_generic_series80' 
-     * respectively in case of success.
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
-     * @return string
+     *
+     * @return StdClass
      */
-    public function applyRecoveryMatch($userAgent)
+    public function detect($userAgent)
     {
-        if(!(strpos($userAgent, 'Nokia') === false)) {
-            if(strpos($userAgent, 'Series60') != 0) {
-                return 'nokia_generic_series60';
-            }
-            if(strpos($userAgent, 'Series80') != 0) {
-                return 'nokia_generic_series80';
-            }
-        }
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
         
-        return WURFL_Constants::GENERIC;
+        return $class;
     }
-
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'unkonwn';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

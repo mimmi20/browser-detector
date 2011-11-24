@@ -29,6 +29,11 @@ namespace Browscap;
  */
 
 /**
+ * the agent database model
+ */
+use \Browscap\Model;
+
+/**
  * Browscap.ini parsing class with caching and update capabilities
  *
  * @category  CreditCalc
@@ -140,74 +145,151 @@ class UserAgent
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string  $sUserAgent     the user agent string
+     * @param string  $userAgent     the user agent string
      * @param boolean $bReturnAsArray whether return an array or an object
      *
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    private function _detect($sUserAgent = null, $bReturnAsArray = false)
+    private function _detect($userAgent = null, $bReturnAsArray = false)
     {
-        // define the User Agent object and set the default values
-        $object = new \StdClass();
-        $object->Browser  = 'Default Browser';
-        $object->Version  = 0;
-        $object->MajorVer = 0;
-        $object->MinorVer = 0;
-        $object->Platform = 'unknown';
-        $object->Alpha = false;
-        $object->Beta = false;
-        $object->Win16    = 0;
-        $object->Win32    = 0;
-        $object->Win64    = 0;
-        $object->Frames = false;
-        $object->IFrames = false;
-        $object->Tables = false;
-        $object->Cookies = false;
-        $object->BackgroundSounds = false;
-        $object->JavaScript = false;
-        $object->VBScript = false;
-        $object->JavaApplets = false;
-        $object->ActiveXControls = false;
-        $object->isBanned = false;
-        $object->isMobileDevice = false;
-        $object->isSyndicationReader = false;
-        $object->Crawler = false;
-        $object->CssVersion = 0;
-        $object->AolVersion = 0;
-        $object->wurflKey = 'generic';
-        $object->renderEngine = 'unknown';
+        // Automatically detect the useragent
+        if (empty($userAgent) || !is_string($userAgent)) {
+            $support    = new Support();
+            $userAgent = $support->getUserAgent();
+        }
+
+        $agentModel = new Model\Agents();
+        $agent      = $agentModel->searchByAgent($userAgent);
+        $agentModel->count($agent->idAgents);
         
-        // detect the rendering engine
-        $engineChain = new Engine\Chain();
-        $engine      = $engineChain->detect($sUserAgent);
+        $engineModel = new Model\Engines();
+        if (null === $agent->idEngines || null === ($engine = $engineModel->find($agent->idEngines)->current())) {
+            // detect the Rendering Engine
+            $engineChain      = new Engine\Chain();
+            $engine           = $engineChain->detect($userAgent);
+            $agent->idEngines = $engineModel->countByName($engine->engine, $engine->version);
+        } else {
+            $engineModel->count($agent->idEngines);
+            $engine = (object) $engine->toArray();
+        }
         
-        // detect the browser
-        $browserChain = new Browser\Chain();
-        $browser      = $browserChain->detect($sUserAgent);
+        $browserModel = new Model\Browsers();
+        if (null === $agent->idBrowsers || null === ($browser = $browserModel->find($agent->idBrowsers)->current())) {
+            // detect the browser
+            $browserChain = new Browser\Chain();
+            $browser      = $browserChain->detect($userAgent);
+            
+            $agent->idBrowsers = $browser->idBrowsers;
+        } else {
+            $browserModel->count($agent->idBrowsers);
+            $browser = (object) $browser->toArray();
+        }
         
-        // detect the operating system
-        $osChain = new Os\Chain();
-        $os      = $osChain->detect($sUserAgent);
+        $browserDataModel = new Model\BrowserData();
+        if (null === $agent->idBrowserData) {
+            $agent->idBrowserData = $browserDataModel->countByName($browser->browser, $browser->version, $browser->bits, (array) $browser);
+        } else {
+            $browserDataModel->count($agent->idBrowserData);
+        }
+        
+        $osModel = new Model\Os();
+        if (null === $agent->idOs || null === ($os = $osModel->find($agent->idOs)->current())) {
+            // detect the Operating System
+            $osChain     = new Os\Chain();
+            $os          = $osChain->detect($userAgent);
+            $agent->idOs = $osModel->countByName($os->name, $os->version, $os->bits);
+        } else {
+            $osModel->count($agent->idOs);
+            $os = (object) $os->toArray();
+        }
         
         // detect the device
         $deviceChain = new Device\Chain();
-        $device      = $deviceChain->detect($sUserAgent);
-        
-        // take over the detected values to User Agent object
-        $object->Browser  = $browser->browser;
-        $object->Version  = $browser->version;
-        $object->MajorVer = (int) $browser->version;
-        $versions         = explode('.', $browser->version, 2);
-        $object->MinorVer = $versions[1];
-        
-        if (64 == $browser->bits) {
-            $object->Win64 = 1;
-        } elseif (32 == $browser->bits) {
-            $object->Win32 = 1;
-        } elseif (16 == $browser->bits) {
-            $object->Win16 = 1;
+        $device      = $deviceChain->detect($userAgent);
+        /*
+        $modelWurflData = new Model\WurflData();
+        if (null === $agent->idWurflData) {
+            $wurfl = $modelWurflData->count(null, $userAgent);
+            $agent->idWurflData = $wurfl->idWurflData;
+        } else {
+            $modelWurflData->count($agent->idWurflData, $userAgent);
+            
+            $wurfl = $modelWurflData->find($agent->idWurflData)->current();
         }
+        /**/
+        $modelBrowscapData = new Model\BrowscapData();
+        if (null === $agent->idBrowscapData || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())) {
+            // define the User Agent object and set the default values
+            $object = new \StdClass();
+            $object->Browser  = 'Default Browser';
+            $object->Version  = 0;
+            $object->MajorVer = 0;
+            $object->MinorVer = 0;
+            $object->Platform = 'unknown';
+            $object->Alpha = false;
+            $object->Beta = false;
+            $object->Win16    = 0;
+            $object->Win32    = 0;
+            $object->Win64    = 0;
+            $object->Frames = false;
+            $object->IFrames = false;
+            $object->Tables = false;
+            $object->Cookies = false;
+            $object->BackgroundSounds = false;
+            $object->JavaScript = false;
+            $object->VBScript = false;
+            $object->JavaApplets = false;
+            $object->ActiveXControls = false;
+            $object->isBanned = false;
+            $object->isMobileDevice = false;
+            $object->isSyndicationReader = false;
+            $object->Crawler = false;
+            $object->CssVersion = 0;
+            $object->AolVersion = 0;
+            $object->wurflKey = 'generic';
+            $object->renderEngine = 'unknown';
+            
+            // take over the detected values to User Agent object
+            $object->Browser  = $browser->browser;
+            
+            $version = $browser->version;
+            
+            if (false === strpos($version, '.')) {
+                $version = number_format($version, 2);
+            }
+            $object->Version  = $version;
+            $object->MajorVer = (int) $version;
+            
+            $versions         = explode('.', $version, 2);
+            $object->MinorVer = $versions[1];
+            
+            if (64 == $browser->bits) {
+                $object->Win64 = 1;
+            } elseif (32 == $browser->bits) {
+                $object->Win32 = 1;
+            } elseif (16 == $browser->bits) {
+                $object->Win16 = 1;
+            }
+            
+            $object->Platform     = $os->fullname;
+            $object->renderEngine = $engine->engine;
+            
+            //$object->wurflKey = $wurfl->wurflKey;
+            
+            $dataToStore = (array) $object;
+            unset($dataToStore['AolVersion']);
+            
+            $data = $modelBrowscapData->searchByBrowser($browser->browser, null, $browser->version, $browser->bits);
+            
+            $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
+            $agent->idBrowscapData = $data->idBrowscapData;
+        } else {
+            $modelBrowscapData->count($agent->idBrowscapData);
+            $object = (object) $object->toArray();
+        }
+        
+        $agent->save();
         
         return ($bReturnAsArray ? (array) $object : $object);
     }
@@ -215,15 +297,15 @@ class UserAgent
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string  $sUserAgent     the user agent string
+     * @param string  $userAgent     the user agent string
      * @param boolean $bReturnAsArray whether return an array or an object
      *
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    public function getBrowser($sUserAgent = null, $bReturnAsArray = false)
+    public function getBrowser($userAgent = null, $bReturnAsArray = false)
     {
-        return $this->_detect($sUserAgent, $bReturnAsArray);
+        return $this->_detect($userAgent, $bReturnAsArray);
     }
     
     /**

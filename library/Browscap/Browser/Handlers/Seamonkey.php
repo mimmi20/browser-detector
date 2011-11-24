@@ -76,44 +76,56 @@ class Seamonkey extends BrowserHandler
         return true;
     }
     
-    private $chromes = array(
-        '' => 'seamonkey',
-        '1.0' => 'seamonkey_1',
-        '1.1' => 'seamonkey_1_1',
-        '2.0' => 'seamonkey_2',
-        '2.1' => 'seamonkey_2_1',
-        '2.2' => 'seamonkey_2_2',
-        '2.3' => 'seamonkey_2_3',
-        '2.4' => 'seamonkey_2_4',
-        '2.5' => 'seamonkey_2_5',
-        '2.6' => 'seamonkey_2_6',
-);
-    
-    public function lookForMatchingUserAgent($userAgent)
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent)
     {
-        return $this->applyRecoveryMatch($userAgent);
-    }
-    
-    public function applyRecoveryMatch($userAgent)
-    {
-        $chromeVersion = $this->chromeVersion($userAgent);
-        $chromeId = 'seamonkey';
-        if(isset($this->chromes[$chromeVersion])) {
-            return $this->chromes[$chromeVersion];
-        }
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
         
-        return 'generic_web_browser';
-        
+        return $class;
     }
     
-    const CHROME_VERSION_PATTERN = '/.*SeaMonkey\/(\d+\.\d).*/';
-    private function chromeVersion($userAgent)
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
     {
-        if(preg_match(self::CHROME_VERSION_PATTERN, $userAgent, $match)) {
-            return $match[1];
-        }
-        return '';
+        return 'unkonwn';
     }
-    /**/
-
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

@@ -34,13 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class DoCoMo extends BrowserHandler
 {
-    protected $prefix = 'DOCOMO';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs starting with 'DoCoMo'
      *
@@ -53,24 +46,55 @@ class DoCoMo extends BrowserHandler
     }
     
     /**
-     * Exact Match
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
-     * @return string
+     *
+     * @return StdClass
      */
-    public function lookForMatchingUserAgent($userAgent)
+    public function detect($userAgent)
     {
-        return NULL;
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
     }
     
-    public function applyRecoveryMatch($userAgent)
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
     {
-        if($this->utils->checkIfStartsWith($userAgent, 'DoCoMo/2')) {
-            return 'docomo_generic_jap_ver2';
-        }
-        
-        return 'docomo_generic_jap_ver1';
-
+        return 'unkonwn';
     }
-
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

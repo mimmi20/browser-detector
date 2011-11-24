@@ -35,11 +35,6 @@ use Browscap\Browser\Handler as BrowserHandler;
 
 class BlackBerry extends BrowserHandler
 {
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs containing 'BlackBerry'
      *
@@ -51,55 +46,57 @@ class BlackBerry extends BrowserHandler
         return $this->utils->checkIfContains($userAgent, 'BlackBerry') || $this->utils->checkIfContains($userAgent, 'Blackberry');
     }
     
-    private $blackberryIds = array(
-        '2.' => 'blackberry_generic_ver2',
-        '3.2' => 'blackberry_generic_ver3_sub2',
-        '3.3' => 'blackberry_generic_ver3_sub30',
-        '3.5' => 'blackberry_generic_ver3_sub50',
-        '3.6' => 'blackberry_generic_ver3_sub60',
-        '3.7' => 'blackberry_generic_ver3_sub70',
-        '4.1' => 'blackberry_generic_ver4_sub10',
-           '4.2' => 'blackberry_generic_ver4_sub20',
-        '4.3' => 'blackberry_generic_ver4_sub30',
-        '4.5' => 'blackberry_generic_ver4_sub50',
-           '4.6' => 'blackberry_generic_ver4_sub60',
-        '4.7' => 'blackberry_generic_ver4_sub70',
-        '4.' => 'blackberry_generic_ver4',    
-        '5.' => 'blackberry_generic_ver5',
-        '6.' => 'blackberry_generic_ver6'
-    
-);
     /**
-     * Apply Recovery Match
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
-    public function applyRecoveryMatch($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $version = $this->blackberryVersion($userAgent);
-        if(is_null($version)) {
-            return WURFL_Constants::GENERIC;
-        }
-        foreach($this->blackberryIds as $v => $deviceId) {
-            if($this->utils->checkIfStartsWith($version, $v)) {
-                return $deviceId;
-            }
-        }
-        
-        return WURFL_Constants::GENERIC;
-        
+        return 'unkonwn';
     }
     
-    const BLACKBERRY_VERSION_PATTERN = '/Black[Bb]erry[^\/\s]+\/(\d.\d)/';
-    private function blackberryVersion($userAgent)
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
     {
-        if(preg_match(self::BLACKBERRY_VERSION_PATTERN, $userAgent, $matches)) {
-            return $matches[1];
-        }
-        return NULL;
+        return 0.0;
     }
     
-    protected $prefix = 'BLACKBERRY';
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }
 

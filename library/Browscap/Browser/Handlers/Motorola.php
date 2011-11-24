@@ -34,13 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Motorola extends BrowserHandler
 {
-    protected $prefix = 'MOTOROLA';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      *
      * Intercept all UAs starting with 'Mot-', or containing 'MOT-' or
@@ -52,23 +45,58 @@ class Motorola extends BrowserHandler
     public function canHandle($userAgent)
     {
         return $this->utils->checkIfContains($userAgent, 'Mot-') || $this->utils->checkIfContains($userAgent, 'MOT-') || $this->utils->checkIfContains($userAgent, 'Motorola');
-    
     }
     
     /**
-     * If the User Agent contains 'MIB/2.2' or 'MIB/BER2.2', 
-     * return 'mot_mib22_generic'
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
-    public function applyRecoveryMatch($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        if($this->utils->checkIfContains($userAgent, 'MIB/2.2') || $this->utils->checkIfContains($userAgent, 'MIB/BER2.2')) {
-            return 'mot_mib22_generic';
-        }
-        
-        return WURFL_Constants::GENERIC;
+        return 'unkonwn';
     }
-
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap;
+namespace Browscap\Exceptions;
 
 /**
  * Zend Framework

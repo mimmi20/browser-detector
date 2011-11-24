@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class LGUPLUS extends BrowserHandler
 {
-    protected $prefix = 'LGUPLUS';
-
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-
     /**
      *
      * @param string $userAgent
@@ -49,34 +42,57 @@ class LGUPLUS extends BrowserHandler
     {
         return $this->utils->checkIfContainsAnyOf($userAgent, array('LGUPLUS', 'lgtelecom'));
     }
-
     
     /**
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
-    public function applyConclusiveMatch($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        return WURFL_Constants::GENERIC;
+        return 'unkonwn';
     }
-
-
-    private $lgupluses = array(
-        'generic_lguplus_rexos_facebook_browser' => array('Windows NT 5', 'POLARIS'),
-        'generic_lguplus_rexos_webviewer_browser' => array('Windows NT 5'),
-        'generic_lguplus_winmo_facebook_browser' => array('Windows CE', 'POLARIS'),
-        'generic_lguplus_android_webkit_browser' => array('Android', 'AppleWebKit')
-);
-
-    public function applyRecoveryMatch($userAgent)
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
     {
-        foreach($this->lgupluses as $deviceId => $values) {
-            if($this->utils->checkIfContainsAll($userAgent, $values)) {
-                return $deviceId;
-            }
-        }
-        return 'generic_lguplus';
+        return 0.0;
     }
-
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

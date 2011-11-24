@@ -186,7 +186,7 @@ class Utils
             'Agent'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isCrawler)) {
+        if ($this->checkIfContainsAnyOf($userAgent, $isCrawler)) {
             return true;
         }
         

@@ -115,6 +115,8 @@ class Browsers extends ModelAbstract
         }
         
         $browser->save();
+        
+        return $browser->idBrowsers;
     }
     
     public function getAll()

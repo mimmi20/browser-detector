@@ -70,9 +70,7 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
         }
         $this->_db->setFetchMode(\Zend\Db\Db::FETCH_OBJ);
         
-        $front = \Zend\Controller\Front::getInstance();
-        //throw new \Exception('failure');
-        //var_dump($front->getParams(), $front->getPlugins());exit;
+        $front         = \Zend\Controller\Front::getInstance();
         $this->_config = \Zend\Registry::get('_config');
         $this->_logger = \Zend\Registry::get('log');
         

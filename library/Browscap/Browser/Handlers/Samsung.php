@@ -34,11 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Samsung extends BrowserHandler
 {
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      *
      * @param string $userAgent
@@ -48,21 +43,58 @@ class Samsung extends BrowserHandler
         return $this->utils->checkIfContains($userAgent, 'Samsung/SGH')
                 || $this->utils->checkIfStartsWithAnyOf($userAgent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
-
-
-     /**
-     * If UA starts with one of the following('SEC-', 'SAMSUNG-', 'SCH'), apply RIS with FS.
-     * If UA starts with one of the following('Samsung-','SPH', 'SGH'), apply RIS with First Space(not FS).
-     * If UA starts with 'SAMSUNG/', apply RIS with threshold SS(Second Slash)
+    
+    /**
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
-    public function lookForMatchingUserAgent($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $tolerance = $this->tolerance($userAgent);
-        $this->logger->log('$this->prefix :Applying Conclusive Match for ua: $userAgent with tolerance $tolerance');
-        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
+        return 'unkonwn';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
     }
 
  

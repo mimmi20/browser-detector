@@ -22,6 +22,11 @@ namespace Browscap\Engine;
 use \Browscap\Utils;
 
 /**
+ * the engine database model
+ */
+use \Browscap\Model\Engines;
+
+/**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
  * @package    WURFL
  * @see WURFL_UserAgentHandlerChain
@@ -46,11 +51,13 @@ class Chain
         
         $this->_chain = new \SplPriorityQueue();
         
-        //get all Engines
+        // get all Engines
+        $engineModel = new Engines();
+        $allEngines  = $engineModel->getAll();
         
-        //get amount of calls for each Engine
-        
-        //create list ordered by amount of calls
+        foreach ($allEngines as $singleEngine) {
+            $this->_chain->insert($singleEngine->name, $singleEngine->count);
+        }
     }
     
     /**
@@ -65,9 +72,6 @@ class Chain
         $engine = new \StdClass();
         $engine->name = 'unknown';
         $engine->version = 0.0;
-        $engine->bits    = 0;
-        
-        //$engineModel = new Browsers();
         
         if ($this->_chain->count()) {
             $this->_chain->top();
@@ -78,11 +82,7 @@ class Chain
                 $handler   = new $className();
                 
                 if ($handler->canHandle($userAgent)) {
-                    $engine = $handler->detect($userAgent);
-                    var_dump($engine);exit;
-                    //$engineModel->countByName($class);
-                    
-                    return $engine;
+                    return $handler->detect($userAgent);
                 }
                 
                 $this->_chain->next();
@@ -93,8 +93,6 @@ class Chain
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $engine = $handler->detect($userAgent);
-            //var_dump($engine);exit;
-            //$engineModel->countByName($engine->browser, $engine->version, $engine->bits);
         }
         
         return $engine;

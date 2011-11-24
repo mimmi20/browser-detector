@@ -27,7 +27,7 @@ use \Browscap\Utils;
 /**
  * the browser database model
  */
-use \Browscap\Service\Browsers;
+use \Browscap\Model\Browsers;
 
 /**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
@@ -53,7 +53,7 @@ class Chain
     protected $handler = null;
 
     /**
-     * Initializes the factory with an instance of all possible WURFL_Handlers_Handler objects from the given $context
+     * Initializes the factory with an instance of all possible Handler objects from the given $context
      * @param WURFL_Context $context
      */
     public function __construct()
@@ -81,9 +81,10 @@ class Chain
     public function detect($userAgent)
     {
         $browser = new \StdClass();
-        $browser->browser = 'unknown';
-        $browser->version = 0.0;
-        $browser->bits    = 0;
+        $browser->browser    = 'unknown';
+        $browser->version    = 0.0;
+        $browser->bits       = 0;
+        $browser->idBrowsers = null;
         
         $browserModel = new Browsers();
         
@@ -91,16 +92,21 @@ class Chain
             $this->_chain->top();
             
             while ($this->_chain->valid()) {
-                $class     = $this->_chain->current();
-                $className = __NAMESPACE__ . '\\Handlers\\' . $class;
+                $class     = preg_replace('/[^a-zA-Z0-9_]/', '', $this->_chain->current());
+                $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
                 $handler   = new $className();
                 
                 if ($handler->canHandle($userAgent)) {
-                    $browser = $handler->detect($userAgent);
-                    var_dump($browser);exit;
-                    $browserModel->countByName($class);
-                    
-                    return $browser;
+                    try {
+                        $browser = $handler->detect($userAgent);
+                        
+                        $browser->idBrowsers = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
+                        
+                        return $browser;
+                    } catch (\UnexpectedValueException $e) {
+                        // do nothing
+                        // TODO log this
+                    }
                 }
                 
                 $this->_chain->next();
@@ -111,8 +117,13 @@ class Chain
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $browser = $handler->detect($userAgent);
-            //var_dump($browser);exit;
-            $browserModel->countByName($browser->browser, $browser->version, $browser->bits);
+            
+            $browser->idBrowsers = $browserModel->searchByName($browser->browser, $browser->version, $browser->bits)->idBrowsers;
+            
+            $modelBrowscapData = new Model\BrowscapData();
+            $data              = $modelBrowscapData->searchByBrowser($browser->browser, null, $browser->version, $browser->bits);
+            
+            $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
         }
         
         return $browser;

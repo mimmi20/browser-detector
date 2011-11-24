@@ -61,8 +61,28 @@ class CatchAll extends BrowserHandler
         $detected = $detector->getBrowser($userAgent);
         
         $class->engine  = $detected->renderEngine;
-        $class->version = 0;
+        $class->version = $this->detectVersion($userAgent, $class->engine);
         
         return $class;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent, $engine = '')
+    {
+        $version = '';
+        
+        $doMatch = preg_match('/' . $engine . '\/(\d+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (int) $matches[1];
+        }
+        
+        return 0;
     }
 }

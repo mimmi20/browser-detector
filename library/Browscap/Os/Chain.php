@@ -22,6 +22,11 @@ namespace Browscap\Os;
 use \Browscap\Utils;
 
 /**
+ * the platform database model
+ */
+use \Browscap\Model\Os;
+
+/**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
  * @package    WURFL
  * @see WURFL_UserAgentHandlerChain
@@ -42,15 +47,17 @@ class Chain
      */
     public function __construct()
     {
-        $this->utils = new Utils();
-        
+        // the utility classes
+        $this->utils  = new Utils();
         $this->_chain = new \SplPriorityQueue();
         
-        //get all OS
+        // get all Browsers
+        $osModel = new Os();
+        $allOs   = $osModel->getAll();
         
-        //get amount of calls for each OS
-        
-        //create list ordered by amount of calls
+        foreach ($allOs as $singleOs) {
+            $this->_chain->insert($singleOs->name, $singleOs->count);
+        }
     }
     
     /**
@@ -67,7 +74,7 @@ class Chain
         $os->version = 'unknown';
         $os->bits    = 0;
         
-        //$osModel = new Browsers();
+        $osModel = new Os();
         
         if ($this->_chain->count()) {
             $this->_chain->top();
@@ -79,8 +86,6 @@ class Chain
                 
                 if ($handler->canHandle($userAgent)) {
                     $os = $handler->detect($userAgent);
-                    var_dump($os);exit;
-                    //$osModel->countByName($class);
                     
                     return $os;
                 }
@@ -93,8 +98,8 @@ class Chain
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $os = $handler->detect($userAgent);
-            //var_dump($os);exit;
-            //$osModel->countByName($os->browser, $os->version, $os->bits);
+            
+            $os->idOs = $osModel->searchByName($os->name, $os->version, $os->bits)->idOs;
         }
         
         return $os;

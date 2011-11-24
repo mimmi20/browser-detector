@@ -34,13 +34,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class SonyEricsson extends BrowserHandler
 {
-    protected $prefix = 'SONY_ERICSSON';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null)
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercept all UAs containing 'SonyEricsson'
      *
@@ -53,22 +46,55 @@ class SonyEricsson extends BrowserHandler
     }
     
     /**
-     * If UA starts with 'SonyEricsson', apply RIS with FS as a threshold.
-     * If UA contains 'SonyEricsson' somewhere in the middle,
-     * apply RIS with threshold second slash
+     * detects the browser name from the given user agent
      *
      * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->bits    = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
-    public function lookForMatchingUserAgent($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        if($this->utils->checkIfStartsWith($userAgent, 'SonyEricsson')) {
-            $tollerance = $this->utils->firstSlash($userAgent);
-            return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
-        }
-        $tollerance = $this->utils->secondSlash($userAgent);
-        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tollerance);
-    
+        return 'unkonwn';
     }
-
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        return 0.0;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return integer
+     */
+    protected function detectBits($userAgent)
+    {
+        return 0;
+    }
 }

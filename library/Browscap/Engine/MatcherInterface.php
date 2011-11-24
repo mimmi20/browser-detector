@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Os\Handlers;
+namespace Browscap\Engine;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -12,37 +12,43 @@ namespace Browscap\Os\Handlers;
  *
  * Refer to the COPYING file distributed with this package.
  *
+ *
  * @category   WURFL
- * @package    WURFL_Handlers
+ * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
  * @version    $id$
  */
 
 /**
- * MSIEAgentHanlder
- *
+ * WURFL_Handlers_Matcher is the base interface that concrete classes 
+ * must implement to retrieve a device with the given request    
  *
  * @category   WURFL
- * @package    WURFL_Handlers
+ * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Sun extends Linux
+interface MatcherInterface
 {
+    
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
+     * Returns true if this handler can handle the given $userAgent
      *
      * @param string $userAgent
-     * @return boolean
+     *
+     * @return bool
      */
-    public function canHandle($userAgent)
-    {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('SunOS'))) {
-            return false;
-        }
-        
-        return true;
-    }
+    public function canHandle($userAgent);
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect($userAgent);
 }
+
