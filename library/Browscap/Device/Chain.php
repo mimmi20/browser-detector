@@ -79,8 +79,6 @@ class Chain
                 
                 if ($handler->canHandle($userAgent)) {
                     $device = $handler->detect($userAgent);
-                    var_dump($device);exit;
-                    //$deviceModel->countByName($class);
                     
                     return $device;
                 }
@@ -93,8 +91,6 @@ class Chain
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $device = $handler->detect($userAgent);
-            //var_dump($device);exit;
-            //$deviceModel->countByName($device->browser, $device->version, $device->bits);
         }
         
         return $device;

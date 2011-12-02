@@ -139,7 +139,7 @@ class UserAgent
             );
         }
         
-        $this->_browser = $this->_detect();
+        $this->getBrowser();
     }
 
     /**
@@ -153,12 +153,6 @@ class UserAgent
      */
     private function _detect($userAgent = null, $bReturnAsArray = false)
     {
-        // Automatically detect the useragent
-        if (empty($userAgent) || !is_string($userAgent)) {
-            $support    = new Support();
-            $userAgent = $support->getUserAgent();
-        }
-
         $agentModel = new Model\Agents();
         $agent      = $agentModel->searchByAgent($userAgent);
         $agentModel->count($agent->idAgents);
@@ -207,16 +201,16 @@ class UserAgent
         // detect the device
         $deviceChain = new Device\Chain();
         $device      = $deviceChain->detect($userAgent);
-        /*
+        
         $modelWurflData = new Model\WurflData();
-        if (null === $agent->idWurflData) {
-            $wurfl = $modelWurflData->count(null, $userAgent);
-            $agent->idWurflData = $wurfl->idWurflData;
-        } else {
-            $modelWurflData->count($agent->idWurflData, $userAgent);
-            
-            $wurfl = $modelWurflData->find($agent->idWurflData)->current();
-        }
+        //if (null === $agent->idWurflData) {
+            $wurfl = $modelWurflData->count(null, $userAgent);exit;
+        //    $agent->idWurflData = $wurfl->idWurflData;
+        //} else {
+        //    $modelWurflData->count($agent->idWurflData, $userAgent);
+        //    
+        //    $wurfl = $modelWurflData->find($agent->idWurflData)->current();
+        //}
         /**/
         $modelBrowscapData = new Model\BrowscapData();
         if (null === $agent->idBrowscapData || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())) {
@@ -305,7 +299,25 @@ class UserAgent
      */
     public function getBrowser($userAgent = null, $bReturnAsArray = false)
     {
-        return $this->_detect($userAgent, $bReturnAsArray);
+        // Automatically detect the useragent
+        if (empty($userAgent) || !is_string($userAgent)) {
+            $support    = new Support();
+            $userAgent = $support->getUserAgent();
+        }
+
+        $cacheId = 'agent_' . md5(
+            preg_replace('/[^a-zA-Z0-9_]/', '_', urlencode($userAgent))
+        );
+        
+        if (!$array = $this->_cache->load($cacheId)) {
+            $array = $this->_detect($userAgent, $bReturnAsArray);
+
+            $this->_cache->save($array, $cacheId);
+        }
+        
+        return $this->_browser = $array;
+        
+        return ($bReturnAsArray ? (array) $this->_browser : (object) $this->_browser);
     }
     
     /**
@@ -326,5 +338,10 @@ class UserAgent
     public function __toString()
     {
         return $this->getAgent();
+    }
+    
+    public function toArray()
+    {
+        return $this->getBrowser(null, true);
     }
 }

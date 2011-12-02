@@ -58,7 +58,7 @@ class WurflData extends ModelAbstract
     public function count($idWurflData, $userAgent = '')
     {
         $wurflData = null;
-        /*
+        
         $wurflData = $this->find($idWurflData)->current();
         
         if ($wurflData) {
@@ -70,22 +70,22 @@ class WurflData extends ModelAbstract
             $wurflConfigFile = realpath(__DIR__ . DS . '..' . DS . 'data' . DS . 'wurfl' . DS . 'wurfl-config.xml');
             
             // Create WURFL Configuration from an XML config file
-            //$wurflConfig = new \Wurfl\Configuration\XmlConfig($wurflConfigFile);
+            $wurflConfig = new \Wurfl\Configuration\XmlConfig($wurflConfigFile);
              
             // Create a WURFL Manager Factory from the WURFL Configuration
-            //$wurflManagerFactory = new \Wurfl\WURFLManagerFactory($wurflConfig);
+            $wurflManagerFactory = new \Wurfl\WURFLManagerFactory($wurflConfig);
              
             // Create a WURFL Manager
-            //$wurflManager = $wurflManagerFactory->create();
-            //$device       = $wurflManager->getDeviceForUserAgent($userAgent);
-            
-            //$wurflData->wurflKey = $device->id;
-            //$wurflData->data     = \Zend\Json\Json::encode($device);
-            //$wurflData->count    = 1;
+            $wurflManager = $wurflManagerFactory->create();
+            $device       = $wurflManager->getDeviceForUserAgent($userAgent);
+            var_dump($device);exit;
+            $wurflData->wurflKey = $device->id;
+            $wurflData->data     = \Zend\Json\Json::encode($device->__toString());
+            $wurflData->count    = 1;
         }
         
         $wurflData->save();
-        /**/
+        var_dump($wurflData);exit;
         return $wurflData;
     }
     
