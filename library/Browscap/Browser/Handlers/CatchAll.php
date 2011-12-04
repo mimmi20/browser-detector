@@ -58,19 +58,20 @@ class CatchAll extends BrowserHandler
         $detector = new \Browscap\Browscap();
         $detected = $detector->getBrowser($userAgent);
         
-        $detected->browser = $detected->Browser;
-        $detected->version = $detected->Version;
+        $class = new \StdClass();
+        $class->browser = $detected->Browser;
+        $class->version = $detected->Version;
         
         if ($detected->Win64) {
-            $detected->bits = 64;
+            $class->bits = 64;
         } elseif ($detected->Win32) {
-            $detected->bits = 32;
+            $class->bits = 32;
         } elseif ($detected->Win16) {
-            $detected->bits = 16;
+            $class->bits = 16;
         } else {
-            $detected->bits = 0;
+            $class->bits = 0;
         }
         
-        return $detected;
+        return $class;
     }
 }

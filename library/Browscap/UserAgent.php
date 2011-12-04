@@ -203,15 +203,17 @@ class UserAgent
         $device      = $deviceChain->detect($userAgent);
         
         $modelWurflData = new Model\WurflData();
-        //if (null === $agent->idWurflData) {
-            $wurfl = $modelWurflData->count(null, $userAgent);exit;
-        //    $agent->idWurflData = $wurfl->idWurflData;
-        //} else {
-        //    $modelWurflData->count($agent->idWurflData, $userAgent);
-        //    
-        //    $wurfl = $modelWurflData->find($agent->idWurflData)->current();
-        //}
-        /**/
+        if (null === $agent->idWurflData) {
+            $wurfl = $modelWurflData->count(null, $userAgent);
+            //var_dump('$wurfl', $wurfl);
+            //exit;
+            $agent->idWurflData = $wurfl->idWurflData;
+        } else {
+            $modelWurflData->count($agent->idWurflData, $userAgent);
+            
+            $wurfl = $modelWurflData->find($agent->idWurflData)->current();
+        }
+        
         $modelBrowscapData = new Model\BrowscapData();
         if (null === $agent->idBrowscapData || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())) {
             // define the User Agent object and set the default values

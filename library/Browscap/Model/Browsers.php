@@ -59,15 +59,15 @@ class Browsers extends ModelAbstract
      * Loads a row from the database and binds the fields to the object
      * properties
      *
-     * @param mixed $browser (Optional) the browsers short name e.g. 'IE'
+     * @param mixed $browserName (Optional) the browsers short name e.g. 'IE'
      *
      * @return boolean True if successful
      * @access public
      */
     public function searchByBrowser(
-        $browser = null, $version = 0, $bits = null)
+        $browserName = null, $version = 0, $bits = null)
     {
-        if (!is_string($browser) || is_numeric($browser)) {
+        if (!is_string($browserName) || is_numeric($browserName)) {
             return false;
         }
 
@@ -80,13 +80,26 @@ class Browsers extends ModelAbstract
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 
-        $select->where('`b`.`browser` = ?', $browser);
+        $select->where('`b`.`browser` = ?', $browserName);
         $select->where('`b`.`version` = ?', $version);
         $select->where('`b`.`bits` = ?', (int) $bits);
 
         $select->limit(1);
 
-        return $this->fetchAll($select)->current();
+        $browser = $this->fetchAll($select)->current();
+        
+        if (!$browser) {
+            $browser = $this->createRow();
+            
+            $browser->browser = $browserName;
+            $browser->version = $version;
+            $browser->bits    = (int) $bits;
+            $browser->count   = 0;
+            
+            $browser->save();
+        }
+        
+        return $browser;
     }
     
     public function count($idBrowsers)
@@ -103,17 +116,7 @@ class Browsers extends ModelAbstract
     {
         $browser = $this->searchByBrowser($browserName, $browserVersion, $bits);
         
-        if ($browser) {
-            $browser->count += 1;
-        } else {
-            $browser = $this->createRow();
-            
-            $browser->browser = $browserName;
-            $browser->version = $browserVersion;
-            $browser->bits    = $bits;
-            $browser->count   = 1;
-        }
-        
+        $browser->count += 1;
         $browser->save();
         
         return $browser->idBrowsers;

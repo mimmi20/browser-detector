@@ -64,8 +64,6 @@ class WurflData extends ModelAbstract
         if ($wurflData) {
             $wurflData->count += 1;
         } else {
-            $wurflData = $this->createRow();
-            
             // Provide the absolute or relative path to your wurfl-config.xml
             $wurflConfigFile = realpath(__DIR__ . DS . '..' . DS . 'data' . DS . 'wurfl' . DS . 'wurfl-config.xml');
             
@@ -78,15 +76,37 @@ class WurflData extends ModelAbstract
             // Create a WURFL Manager
             $wurflManager = $wurflManagerFactory->create();
             $device       = $wurflManager->getDeviceForUserAgent($userAgent);
-            var_dump($device);exit;
-            $wurflData->wurflKey = $device->id;
-            $wurflData->data     = \Zend\Json\Json::encode($device->__toString());
-            $wurflData->count    = 1;
+            
+            $wurflData = $this->findByWurflkey($device->id)->current();
+            //var_dump('$device->id', $device->id, '$wurflData', $wurflData);
+            if ($wurflData) {
+                $wurflData->data   = serialize($device);
+                $wurflData->count += 1;
+            } else {
+                $wurflData = $this->createRow();
+                
+                $wurflData->wurflKey = $device->id;
+                $wurflData->data     = serialize($device);
+                $wurflData->count    = 1;
+            }
+        }
+        //var_dump('$wurflData', $wurflData);
+        //exit;
+        $wurflData->save();
+        
+        return $wurflData;
+    }
+    
+    public function findByWurflkey($wurflKey)
+    {
+        if (empty($wurflKey) || !is_string($wurflKey)) {
+            return 'generic';
         }
         
-        $wurflData->save();
-        var_dump($wurflData);exit;
-        return $wurflData;
+        $select = $this->select();
+        $select->where('wurflKey = ?', $wurflKey);
+        
+        return $this->fetchAll($select);
     }
     
     public function getResource()

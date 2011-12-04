@@ -50,22 +50,36 @@ class Os extends ModelAbstract
      * @access public
      */
     public function searchByName(
-        $os = null, $version = 0, $bits = null)
+        $osName = null, $version = 0, $bits = null)
     {
-        if (!is_string($os) || is_numeric($os)) {
+        if (!is_string($osName) || is_numeric($osName)) {
             return false;
         }
 
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 
-        $select->where('`b`.`os` = ?', $os);
+        $select->where('`b`.`os` = ?', $osName);
         $select->where('`b`.`version` = ?', $version);
         $select->where('`b`.`bits` = ?', (int) $bits);
 
         $select->limit(1);
 
-        return $this->fetchAll($select)->current();
+        $os = $this->fetchAll($select)->current();
+        
+        if (!$os) {
+            $os = $this->createRow();
+            
+            $os->os      = $osName;
+            $os->version = $version;
+            $os->osFull  = $osName . ' ' . $version;
+            $os->bits    = $bits;
+            $os->count   = 0;
+            
+            $os->save();
+        }
+        
+        return $os;
     }
     
     public function count($idOs)
@@ -82,18 +96,7 @@ class Os extends ModelAbstract
     {
         $os = $this->searchByName($osName, $osVersion, $bits);
         
-        if ($os) {
-            $os->count += 1;
-        } else {
-            $os = $this->createRow();
-            
-            $os->os      = $osName;
-            $os->version = $osVersion;
-            $os->osFull  = $osName . ' ' . $osVersion;
-            $os->bits    = $bits;
-            $os->count   = 1;
-        }
-        
+        $os->count += 1;
         $os->save();
         
         return $os->idOs;

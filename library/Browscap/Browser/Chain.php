@@ -118,12 +118,13 @@ class Chain
         if ($handler->canHandle($userAgent)) {
             $browser = $handler->detect($userAgent);
             
-            $browser->idBrowsers = $browserModel->searchByName($browser->browser, $browser->version, $browser->bits)->idBrowsers;
-            
+            $browser->idBrowsers = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
+            /*
             $modelBrowscapData = new Model\BrowscapData();
             $data              = $modelBrowscapData->searchByBrowser($browser->browser, null, $browser->version, $browser->bits);
             
             $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
+            /**/
         }
         
         return $browser;
