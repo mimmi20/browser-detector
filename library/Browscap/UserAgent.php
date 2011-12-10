@@ -245,9 +245,6 @@ class UserAgent
             $object->Platform            = $os->osFull;
             $object->Alpha               = false;
             $object->Beta                = false;
-            $object->Win16               = $detected->Win16;
-            $object->Win32               = $detected->Win32;
-            $object->Win64               = $detected->Win64;
             $object->Frames              = $detected->Frames;
             $object->IFrames             = $detected->IFrames;
             $object->Tables              = $detected->Tables;
@@ -262,7 +259,7 @@ class UserAgent
             $object->isSyndicationReader = $detected->isSyndicationReader;
             $object->Crawler             = $detected->Crawler;
             $object->CssVersion          = $detected->CssVersion;
-            $object->AolVersion          = $detected->AolVersion;
+            $object->AolVersion          = 0;
             $object->wurflKey            = $detected->wurflKey;
             $object->renderEngine        = $engine->engine;
             
@@ -273,10 +270,46 @@ class UserAgent
             
             $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
             $agent->idBrowscapData = $data->idBrowscapData;
+            
+            //var_dump(1, $object);exit;
+        } else {
+            $objectCopy = clone $object;
+            //var_dump(2, $object);exit;
+            $object = new \StdClass();
+            
+            // take over the detected values to User Agent object
+            $object->Browser             = $objectCopy->browser;
+            $object->Version             = $objectCopy->version;
+            $object->MajorVer            = $objectCopy->majorver;
+            $object->MinorVer            = $objectCopy->minorver;
+            $object->Win64               = $objectCopy->win64;
+            $object->Win32               = $objectCopy->win32;
+            $object->Win16               = $objectCopy->win16;
+            $object->Platform            = $objectCopy->platform;
+            $object->Alpha               = false;
+            $object->Beta                = false;
+            $object->Frames              = $objectCopy->frames;
+            $object->IFrames             = $objectCopy->iframes;
+            $object->Tables              = $objectCopy->tables;
+            $object->Cookies             = $objectCopy->cookies;
+            $object->BackgroundSounds    = $objectCopy->backgroundsounds;
+            $object->JavaScript          = $objectCopy->javascript;
+            $object->VBScript            = $objectCopy->vbscript;
+            $object->JavaApplets         = $objectCopy->javaapplets;
+            $object->ActiveXControls     = $objectCopy->activexcontrols;
+            $object->isBanned            = $objectCopy->isbanned;
+            $object->isMobileDevice      = $objectCopy->ismobiledevice;
+            $object->isSyndicationReader = $objectCopy->issyndicationreader;
+            $object->Crawler             = $objectCopy->crawler;
+            $object->CssVersion          = $objectCopy->cssversion;
+            $object->AolVersion          = 0;
+            $object->wurflKey            = $objectCopy->wurflkey;
+            $object->renderEngine        = $objectCopy->renderengine;
+            
+            //var_dump(2, $object);exit;
         }
         
         $agent->save();
-        
         $object->idAgents = $agent->idAgents;
         
         return ($bReturnAsArray ? (array) $object : $object);
@@ -303,11 +336,11 @@ class UserAgent
             '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
         );
         
-        if (!($array = $this->_cache->load($cacheId))) {
+        //if (!($array = $this->_cache->load($cacheId))) {
             $array = $this->_detect($userAgent, $bReturnAsArray);
 
-            $this->_cache->save($array, $cacheId);
-        }
+        //    $this->_cache->save($array, $cacheId);
+        //}
         
         return $this->_browser = $array;
         
