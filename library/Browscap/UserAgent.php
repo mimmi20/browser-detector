@@ -130,7 +130,7 @@ class UserAgent
                 'the cache must be an instance of \\Zend\\Cache\\Frontend\\Core'
             );
         }
-
+        
         if ($logger instanceof \Zend\Log\Logger) {
             $this->_logger = $logger;
         } elseif (null !== $logger) {
@@ -202,54 +202,28 @@ class UserAgent
         $deviceChain = new Device\Chain();
         $device      = $deviceChain->detect($userAgent);
         
+        /*
         $modelWurflData = new Model\WurflData();
-        if (null === $agent->idWurflData) {
-            $wurfl = $modelWurflData->count(null, $userAgent);
-            //var_dump('$wurfl', $wurfl);
-            //exit;
-            $agent->idWurflData = $wurfl->idWurflData;
-        } else {
-            $modelWurflData->count($agent->idWurflData, $userAgent);
-            
-            $wurfl = $modelWurflData->find($agent->idWurflData)->current();
-        }
-        
+        //if (null === $agent->idWurflData) {
+            $wurfl = $modelWurflData->count(null, $userAgent);exit;
+        //    $agent->idWurflData = $wurfl->idWurflData;
+        //} else {
+        //    $modelWurflData->count($agent->idWurflData, $userAgent);
+        //    
+        //    $wurfl = $modelWurflData->find($agent->idWurflData)->current();
+        //}
+        /**/
         $modelBrowscapData = new Model\BrowscapData();
         if (null === $agent->idBrowscapData || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())) {
             // define the User Agent object and set the default values
+            $browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
+            $detected = $browscap->getBrowser($userAgent);
+            
             $object = new \StdClass();
-            $object->Browser  = 'Default Browser';
-            $object->Version  = 0;
-            $object->MajorVer = 0;
-            $object->MinorVer = 0;
-            $object->Platform = 'unknown';
-            $object->Alpha = false;
-            $object->Beta = false;
-            $object->Win16    = 0;
-            $object->Win32    = 0;
-            $object->Win64    = 0;
-            $object->Frames = false;
-            $object->IFrames = false;
-            $object->Tables = false;
-            $object->Cookies = false;
-            $object->BackgroundSounds = false;
-            $object->JavaScript = false;
-            $object->VBScript = false;
-            $object->JavaApplets = false;
-            $object->ActiveXControls = false;
-            $object->isBanned = false;
-            $object->isMobileDevice = false;
-            $object->isSyndicationReader = false;
-            $object->Crawler = false;
-            $object->CssVersion = 0;
-            $object->AolVersion = 0;
-            $object->wurflKey = 'generic';
-            $object->renderEngine = 'unknown';
             
             // take over the detected values to User Agent object
-            $object->Browser  = $browser->browser;
-            
-            $version = $browser->version;
+            $object->Browser = $browser->browser;
+            $version         = $browser->version;
             
             if (false === strpos($version, '.')) {
                 $version = number_format($version, 2);
@@ -268,24 +242,42 @@ class UserAgent
                 $object->Win16 = 1;
             }
             
-            $object->Platform     = $os->fullname;
-            $object->renderEngine = $engine->engine;
-            
-            //$object->wurflKey = $wurfl->wurflKey;
+            $object->Platform            = $os->osFull;
+            $object->Alpha               = false;
+            $object->Beta                = false;
+            $object->Win16               = $detected->Win16;
+            $object->Win32               = $detected->Win32;
+            $object->Win64               = $detected->Win64;
+            $object->Frames              = $detected->Frames;
+            $object->IFrames             = $detected->IFrames;
+            $object->Tables              = $detected->Tables;
+            $object->Cookies             = $detected->Cookies;
+            $object->BackgroundSounds    = $detected->BackgroundSounds;
+            $object->JavaScript          = $detected->JavaScript;
+            $object->VBScript            = $detected->VBScript;
+            $object->JavaApplets         = $detected->JavaApplets;
+            $object->ActiveXControls     = $detected->ActiveXControls;
+            $object->isBanned            = $detected->isBanned;
+            $object->isMobileDevice      = $detected->isMobileDevice;
+            $object->isSyndicationReader = $detected->isSyndicationReader;
+            $object->Crawler             = $detected->Crawler;
+            $object->CssVersion          = $detected->CssVersion;
+            $object->AolVersion          = $detected->AolVersion;
+            $object->wurflKey            = $detected->wurflKey;
+            $object->renderEngine        = $engine->engine;
             
             $dataToStore = (array) $object;
             unset($dataToStore['AolVersion']);
             
-            $data = $modelBrowscapData->searchByBrowser($browser->browser, null, $browser->version, $browser->bits);
+            $data = $modelBrowscapData->searchByBrowser($object->Browser, null, $object->Version, $browser->bits);
             
             $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
             $agent->idBrowscapData = $data->idBrowscapData;
-        } else {
-            $modelBrowscapData->count($agent->idBrowscapData);
-            $object = (object) $object->toArray();
         }
         
         $agent->save();
+        
+        $object->idAgents = $agent->idAgents;
         
         return ($bReturnAsArray ? (array) $object : $object);
     }
@@ -307,11 +299,11 @@ class UserAgent
             $userAgent = $support->getUserAgent();
         }
 
-        $cacheId = 'agent_' . md5(
-            preg_replace('/[^a-zA-Z0-9_]/', '_', urlencode($userAgent))
+        $cacheId = 'agent_' . preg_replace(
+            '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
         );
         
-        if (!$array = $this->_cache->load($cacheId)) {
+        if (!($array = $this->_cache->load($cacheId))) {
             $array = $this->_detect($userAgent, $bReturnAsArray);
 
             $this->_cache->save($array, $cacheId);
