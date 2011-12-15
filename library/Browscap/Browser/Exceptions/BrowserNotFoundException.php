@@ -19,7 +19,7 @@ namespace Browscap\Browser\Exceptions;
  * @package    Controller
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc.
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: AgentNotStringException.php 102 2011-10-25 21:18:56Z  $
+ * @version    $Id$
  */
 
 /**

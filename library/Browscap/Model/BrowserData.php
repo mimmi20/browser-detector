@@ -13,7 +13,7 @@ namespace Browscap\Model;
  * @package   Models
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Browsers.php -1   $
+ * @version   SVN: $Id$
  */
 
 /**

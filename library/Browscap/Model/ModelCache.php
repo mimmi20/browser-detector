@@ -14,7 +14,7 @@ namespace Browscap\Model;
  * @package   Models
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: ModelCache.php 102 2011-10-25 21:18:56Z  $
+ * @version   SVN: $Id$
  */
 
 /**

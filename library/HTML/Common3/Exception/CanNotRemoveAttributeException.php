@@ -41,7 +41,7 @@ namespace HTML\Common3\Exception;
  * @package  HTMLCommon\
  * @author   Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license  http://opensource.org/licenses/bsd-license.php New BSD License
- * @version  SVN: $Id: Exception.php 102 2011-10-25 21:18:56Z tmu $
+ * @version  SVN: $Id$
  * @link     http://pear.php.net/package/HTMLCommon\
  */
 
