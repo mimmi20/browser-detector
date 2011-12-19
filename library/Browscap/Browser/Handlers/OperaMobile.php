@@ -82,7 +82,7 @@ class OperaMobile extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

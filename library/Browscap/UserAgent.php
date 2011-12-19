@@ -151,14 +151,24 @@ class UserAgent
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    private function _detect($userAgent = null, $bReturnAsArray = false)
+    private function _detect($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
     {
         $agentModel = new Model\Agents();
         $agent      = $agentModel->searchByAgent($userAgent);
+        
+        if (!is_object($agent)) {
+            $agent        = $agentModel->createRow();
+            $agent->agent = $userAgent;
+            $agent->save();
+        }
+        
         $agentModel->count($agent->idAgents);
         
         $engineModel = new Model\Engines();
-        if (null === $agent->idEngines || null === ($engine = $engineModel->find($agent->idEngines)->current())) {
+        if ($forceDetected 
+            || null === $agent->idEngines 
+            || null === ($engine = $engineModel->find($agent->idEngines)->current())
+        ) {
             // detect the Rendering Engine
             $engineChain      = new Engine\Chain();
             $engine           = $engineChain->detect($userAgent);
@@ -169,11 +179,16 @@ class UserAgent
         }
         
         $browserModel = new Model\Browsers();
-        if (null === $agent->idBrowsers || null === ($browser = $browserModel->find($agent->idBrowsers)->current())) {
+        if ($forceDetected 
+            || null === $agent->idBrowsers 
+            || null === ($browser = $browserModel->find($agent->idBrowsers)->current())
+        ) {
             // detect the browser
             $browserChain = new Browser\Chain();
             $browser      = $browserChain->detect($userAgent);
-            
+            if ('Dalvik/1.2.0 (L' == substr($userAgent, 0, 15)) {
+                var_dump($userAgent, $browser);exit;
+            }
             $agent->idBrowsers = $browser->idBrowsers;
         } else {
             $browserModel->count($agent->idBrowsers);
@@ -181,17 +196,22 @@ class UserAgent
         }
         
         $browserDataModel = new Model\BrowserData();
-        if (null === $agent->idBrowserData) {
+        if ($forceDetected 
+            || null === $agent->idBrowserData
+        ) {
             $agent->idBrowserData = $browserDataModel->countByName($browser->browser, $browser->version, $browser->bits, (array) $browser);
         } else {
             $browserDataModel->count($agent->idBrowserData);
         }
         
         $osModel = new Model\Os();
-        if (null === $agent->idOs || null === ($os = $osModel->find($agent->idOs)->current())) {
+        if ($forceDetected 
+            || null === $agent->idOs 
+            || null === ($os = $osModel->find($agent->idOs)->current())
+        ) {
             // detect the Operating System
             $osChain     = new Os\Chain();
-            $os          = $osChain->detect($userAgent);
+            $os          = $osChain->detect($userAgent);//var_dump($os);exit;
             $agent->idOs = $osModel->countByName($os->name, $os->version, $os->bits);
         } else {
             $osModel->count($agent->idOs);
@@ -214,7 +234,10 @@ class UserAgent
         //}
         /**/
         $modelBrowscapData = new Model\BrowscapData();
-        if (null === $agent->idBrowscapData || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())) {
+        if ($forceDetected 
+            || null === $agent->idBrowscapData 
+            || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())
+        ) {
             // define the User Agent object and set the default values
             $browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
             $detected = $browscap->getBrowser($userAgent);
@@ -241,7 +264,7 @@ class UserAgent
             } elseif (16 == $browser->bits) {
                 $object->Win16 = 1;
             }
-            
+            //var_dump($os);exit;
             $object->Platform            = $os->osFull;
             $object->Alpha               = false;
             $object->Beta                = false;
@@ -266,8 +289,7 @@ class UserAgent
             $dataToStore = (array) $object;
             unset($dataToStore['AolVersion']);
             
-            $data = $modelBrowscapData->searchByBrowser($object->Browser, null, $object->Version, $browser->bits);
-            
+            $data = $modelBrowscapData->searchByBrowser($object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);
             $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
             $agent->idBrowscapData = $data->idBrowscapData;
             
@@ -324,7 +346,7 @@ class UserAgent
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    public function getBrowser($userAgent = null, $bReturnAsArray = false)
+    public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
     {
         // Automatically detect the useragent
         if (empty($userAgent) || !is_string($userAgent)) {
@@ -337,7 +359,7 @@ class UserAgent
         );
         
         //if (!($array = $this->_cache->load($cacheId))) {
-            $array = $this->_detect($userAgent, $bReturnAsArray);
+            $array = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
 
         //    $this->_cache->save($array, $cacheId);
         //}
@@ -369,6 +391,6 @@ class UserAgent
     
     public function toArray()
     {
-        return $this->getBrowser(null, true);
+        return $this->getBrowser(null, true, false);
     }
 }

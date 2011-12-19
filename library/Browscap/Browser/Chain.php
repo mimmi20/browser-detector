@@ -92,7 +92,7 @@ class Chain
             $this->_chain->top();
             
             while ($this->_chain->valid()) {
-                $class     = preg_replace('/[^a-zA-Z0-9_]/', '', $this->_chain->current());
+                $class     = ucfirst(preg_replace('/[^a-zA-Z0-9_]/', '', $this->_chain->current()));
                 $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
                 $handler   = new $className();
                 
@@ -118,13 +118,11 @@ class Chain
         if ($handler->canHandle($userAgent)) {
             $browser = $handler->detect($userAgent);
             
-            $browser->idBrowsers = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
-            /*
-            $modelBrowscapData = new Model\BrowscapData();
-            $data              = $modelBrowscapData->searchByBrowser($browser->browser, null, $browser->version, $browser->bits);
+            $searchresult = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits);
             
-            $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
-            /**/
+            if ($searchresult) {
+                $browser->idBrowsers = $searchresult->idBrowsers;
+            }
         }
         
         return $browser;

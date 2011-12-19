@@ -72,10 +72,10 @@ class Windows extends OsHandler
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->version  = $this->detectVersion($userAgent);
-        $class->fullname = $class->name . ' ' . $class->version;
-        $class->bits     = $this->detectBits($userAgent);
+        $class->name    = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->osFull  = $class->name . ' ' . $class->version;
+        $class->bits    = $this->detectBits($userAgent);
         
         return $class;
     }

@@ -59,7 +59,7 @@ class Irix extends OsHandler
     {
         $class = new \StdClass();
         $class->name     = $this->detectBrowser($userAgent);
-        $class->fullname = $class->name;
+        $class->osFull   = $class->name;
         $class->version  = $this->detectVersion($userAgent);
         $class->bits     = $this->detectBits($userAgent);
         

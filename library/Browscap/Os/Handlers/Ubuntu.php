@@ -57,7 +57,7 @@ class Ubuntu extends Linux
     {
         $class = new \StdClass();
         $class->name     = $this->detectBrowser($userAgent);
-        $class->fullname = 'Ubuntu Linux';
+        $class->osFull   = 'Ubuntu Linux';
         $class->version  = $this->detectVersion($userAgent);
         $class->bits     = $this->detectBits($userAgent);
         

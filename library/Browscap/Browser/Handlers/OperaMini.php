@@ -82,7 +82,7 @@ class OperaMini extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

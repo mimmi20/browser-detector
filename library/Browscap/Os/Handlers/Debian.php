@@ -57,7 +57,7 @@ class Debian extends Linux
     {
         $class = new \StdClass();
         $class->name     = $this->detectBrowser($userAgent);
-        $class->fullname = 'Debian GNU Linux';
+        $class->osFull   = 'Debian GNU Linux';
         $class->version  = $this->detectVersion($userAgent);
         $class->bits     = $this->detectBits($userAgent);
         

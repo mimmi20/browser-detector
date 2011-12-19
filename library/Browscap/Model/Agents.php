@@ -66,7 +66,7 @@ class Agents extends ModelAbstract
      */
     public function searchByAgent($userAgent)
     {
-        if (!is_string($userAgent) || is_numeric($userAgent)) {
+        if (!is_string($userAgent)) {
             return false;
         }
 

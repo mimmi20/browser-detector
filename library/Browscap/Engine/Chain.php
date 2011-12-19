@@ -77,7 +77,7 @@ class Chain
             $this->_chain->top();
             
             while ($this->_chain->valid()) {
-                $class     = $this->_chain->current();
+                $class     = ucfirst($this->_chain->current());
                 $className = __NAMESPACE__ . '\\Handlers\\' . $class;
                 $handler   = new $className();
                 

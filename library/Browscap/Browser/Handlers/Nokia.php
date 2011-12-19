@@ -71,7 +71,7 @@ class Nokia extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

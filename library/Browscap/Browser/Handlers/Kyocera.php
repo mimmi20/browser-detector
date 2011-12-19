@@ -72,7 +72,7 @@ class Kyocera extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

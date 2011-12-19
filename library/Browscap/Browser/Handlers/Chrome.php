@@ -98,7 +98,7 @@ class Chrome extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

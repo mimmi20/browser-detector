@@ -96,7 +96,7 @@ abstract class Handler implements MatcherInterface
      */
     protected function detectEngine($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

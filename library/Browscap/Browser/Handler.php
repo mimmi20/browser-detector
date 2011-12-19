@@ -97,7 +97,7 @@ abstract class Handler implements MatcherInterface
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unkonwn';
+        return 'unknown';
     }
     
     /**

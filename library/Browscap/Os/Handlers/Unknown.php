@@ -32,7 +32,7 @@ use Browscap\Os\Handler as OsHandler;
  * @version    $id$
  */
 
-class CatchAll extends OsHandler
+class Unknown extends OsHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -57,37 +57,11 @@ class CatchAll extends OsHandler
     {
         $class = new \StdClass();
         
-        $detector = new \Browscap\Browscap();
-        $detected = $detector->getBrowser($userAgent);
-        
-        $class->name     = $detected->Platform;
-        $class->osFull   = $detected->Platform;
+        $class->name     = 'unknown';
+        $class->osFull   = 'unknown';
         $class->version  = 'unknown';
         $class->bits     = 0;
         
-        $windows = array(
-            'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
-            'WinNT', 'Win31', 'WinME'
-        );
-        if (in_array($class->name, $windows)) {
-            $osName = $class->name;
-            
-            if ('Win31' == $osName) {
-                $class->version = '3.1';
-            } else {
-                $class->version = substr($osName, 3);
-            }
-            $class->name     = 'Windows';
-            $class->osFull   = $class->name . ' ' . $class->version;
-            
-            if ('Win31' == $osName) {
-                $class->bits = 16;
-            } elseif ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'WOW64', 'Win64'))) {
-                $class->bits = 64;
-            } else {
-                $class->bits = 32;
-            }
-        }
         return $class;
     }
 }

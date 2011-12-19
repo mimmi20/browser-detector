@@ -65,7 +65,7 @@ class BrowscapData extends ModelAbstract
      * @access public
      */
     public function searchByBrowser(
-        $browser = null, $platform = null, $version = 0, $bits = null)
+        $browser = null, $platform = null, $version = 0, $bits = null, $wurflkey = null)
     {
         if (!is_string($browser) || is_numeric($browser)) {
             return false;
@@ -95,6 +95,10 @@ class BrowscapData extends ModelAbstract
         } elseif (16 == $bits) {
             $select->where('`bd`.`win16` = 1');
         }
+        
+        if (null !== $wurflkey) {
+            $select->where('`bd`.`wurflkey` = ?', $wurflkey);
+        }
 
         $select->limit(1);
 
@@ -113,6 +117,8 @@ class BrowscapData extends ModelAbstract
             } elseif (16 == $bits) {
                 $data->win16 = 1;
             }
+            $data->wurflkey = $wurflkey;
+            
             $data->save();
         }
         
