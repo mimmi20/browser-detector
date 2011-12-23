@@ -81,28 +81,11 @@ class Konqueror extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
      * @return string
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unknown';
+        return 'Konqueror';
     }
     
     /**
@@ -114,18 +97,12 @@ class Konqueror extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        return 0.0;
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
+        $doMatch = preg_match('/Konqueror\/([\d\.]+) /', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         return 0;
     }
 }

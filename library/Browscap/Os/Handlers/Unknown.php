@@ -43,7 +43,7 @@ class Unknown extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        return true;
+        return false;
     }
     
     /**

@@ -33,13 +33,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Vodafone extends BrowserHandler
 {
-    protected $prefix = 'VODAFONE';
-    
-    public function __construct($wurflContext, $userAgentNormalizer = null) 
-    {
-        parent::__construct($wurflContext, $userAgentNormalizer);
-    }
-    
     /**
      * Intercepting All User Agents Starting with 'Vodafone'
      *
@@ -50,16 +43,4 @@ class Vodafone extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'Vodafone');
     }
-    
-    /** 
-     * 
-     * @param string $userAgent
-     */
-    public function lookForMatchingUserAgent($userAgent)
-    {    
-        $tolerance = $this->utils->ordinalIndexOf($userAgent, '/', 3);        
-        return $this->utils->risMatch(array_keys($this->userAgentsWithDeviceID), $userAgent, $tolerance);
-    }
-
 }
-

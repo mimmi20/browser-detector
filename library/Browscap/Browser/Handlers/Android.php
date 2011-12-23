@@ -64,7 +64,8 @@ class Android extends BrowserHandler
             'Iron',
             'Maemo',
             'Palemoon',
-            'Rockmelt'
+            'Rockmelt',
+            'Midori'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
@@ -113,17 +114,5 @@ class Android extends BrowserHandler
     protected function detectVersion($userAgent)
     {
         return 0.0;
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
-        return 0;
     }
 }

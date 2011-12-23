@@ -41,7 +41,9 @@ class Firefox extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0')
+            && !$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
+        ) {
             return false;
         }
         
@@ -65,7 +67,11 @@ class Firefox extends BrowserHandler
             'Palemoon',
             'SeaMonkey',
             'Flock',
-            'Fennec'
+            'Fennec',
+            //Nutch
+            'Nutch',
+            'CazoodleBot',
+            'LOOQ'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -73,23 +79,6 @@ class Firefox extends BrowserHandler
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -113,34 +102,10 @@ class Firefox extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Firefox\/(\d+\.[\dab]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return (float) $matches[1];
-        }
-        
-        return 0;
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64'))) {
-            return 64;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win31', 'Win3.1', 'Windows 3.1'))) {
-            return 16;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'x86', 'i586', 'i686'))) {
-            return 32;
         }
         
         return 0;

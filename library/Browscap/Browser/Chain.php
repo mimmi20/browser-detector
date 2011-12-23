@@ -92,9 +92,22 @@ class Chain
             $this->_chain->top();
             
             while ($this->_chain->valid()) {
-                $class     = ucfirst(preg_replace('/[^a-zA-Z0-9_]/', '', $this->_chain->current()));
+                $class = ltrim($this->_chain->current(), '\\');
+                $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+                $class = preg_replace('/[^a-zA-Z ]/', '', $class);
+                $class = str_replace(' ', '', ucwords($class));
+                
                 $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
-                $handler   = new $className();
+                try {
+                    $handler = new $className();
+                } catch (\Exception $e) {
+                    echo "Class '$className' not found \n";
+                    
+                    // TODO log this
+                    
+                    $this->_chain->next();
+                    continue;
+                }
                 
                 if ($handler->canHandle($userAgent)) {
                     try {
@@ -106,6 +119,9 @@ class Chain
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
                         // TODO log this
+                        
+                        $this->_chain->next();
+                        continue;
                     }
                 }
                 

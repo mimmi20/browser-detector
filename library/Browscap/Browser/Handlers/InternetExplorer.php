@@ -69,8 +69,6 @@ class InternetExplorer extends BrowserHandler
             'Opera',
             'Palemoon',
             'Flock',
-            'AOL',
-            'TOB',
             'Avant',
             'MyIE',
             'AppleWebKit',
@@ -80,7 +78,8 @@ class InternetExplorer extends BrowserHandler
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
+            'WebTV',
+            'ArgClrInt'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -141,29 +140,5 @@ class InternetExplorer extends BrowserHandler
         }
         
         throw new Exceptions\BrowserNotFoundException('Internet Explorer not detected in user agent (' . $userAgent . ')');
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64'))) {
-            return 64;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win3.1', 'Windows 3.1'))) {
-            return 16;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win'))) {
-            return 32;
-        }
-        
-        return 0;
     }
 }

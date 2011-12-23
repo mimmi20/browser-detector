@@ -41,7 +41,7 @@ class Khtml extends EngineHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit'))) {
             return false;
         }
         
@@ -87,7 +87,19 @@ class Khtml extends EngineHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/Khtml\/(\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Khtml\/([\d\.\+]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (int) $matches[1];
+        }
+        
+        $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+) /', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (int) $matches[1];
+        }
+        
+        $doMatch = preg_match('/WebKit\/([\d\.\+]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return (int) $matches[1];

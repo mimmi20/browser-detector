@@ -43,7 +43,7 @@ class Unknown extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Presto', 'KHTML', 'AppleWebKit', 'Gecko'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Presto', 'KHTML', 'WebKit', 'Gecko'))) {
             return false;
         }
         

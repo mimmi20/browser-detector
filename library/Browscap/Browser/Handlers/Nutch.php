@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class FakeIE extends BrowserHandler
+class Nutch extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,39 +43,7 @@ class FakeIE extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla') 
-            || !$this->utils->checkIfContainsAll($userAgent, array('MSIE'))
-        ) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Maxthon',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Palemoon',
-            'Flock',
-            'AOL',
-            'TOB',
-            'Avant',
-            'MyIE',
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Nutch', 'CazoodleBot', 'LOOQ'))) {
             return false;
         }
         
@@ -87,15 +55,46 @@ class FakeIE extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $class = new \StdClass();
-        $class->browser = 'Fake IE';
-        $class->version = 0.00;
-        $class->bits    = 0;
+        return 'Nutch';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return float
+     */
+    protected function detectVersion($userAgent)
+    {
+        $doMatch = preg_match('/Nutch\/([\d\.]+) /', $userAgent, $matches);
         
-        return $class;
+        if ($doMatch) {
+            return (float) $matches[1];
+        }
+        
+        $doMatch = preg_match('/Nutch\-([\d\.]+) /', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (float) $matches[1];
+        }
+        
+        $doMatch = preg_match('/CazoodleBot\/([\d\.]+) /', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (float) $matches[1];
+        }
+        
+        $doMatch = preg_match('/LOOQ\/([\d\.]+) /', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (float) $matches[1];
+        }
+        
+        return 0;
     }
 }

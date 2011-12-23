@@ -56,12 +56,6 @@ class BrowserData extends ModelAbstract
             return false;
         }
 
-        if (!is_numeric($version)) {
-            return false;
-        }
-
-        $version = number_format((float) $version, 2);
-
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 

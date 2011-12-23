@@ -51,15 +51,10 @@ class Boxee extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $class = new \StdClass();
-        $class->browser = 'Boxee';
-        $class->version = 0.00;
-        $class->bits    = 0;
-        
-        return $class;
+        return 'Boxee';
     }
 }

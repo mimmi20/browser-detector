@@ -151,8 +151,54 @@ class UserAgent
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
+    public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
+    {
+        $start = microtime(true);
+        
+        // Automatically detect the useragent
+        if (empty($userAgent) || !is_string($userAgent)) {
+            echo 'detecting User Agent (using Support - Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+            
+            $support    = new Support();
+            $userAgent = $support->getUserAgent();
+            
+            echo 'detecting User Agent (using Support - End)  : ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        }
+        
+        echo 'detecting User Agent: ' . (microtime(true) - $start) . ' Sek.' . "\n";
+
+        $cacheId = 'agent_' . preg_replace(
+            '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
+        );
+        
+        //if (!($array = $this->_cache->load($cacheId))) {
+            echo 'detecting Browser (using _detect - Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+            $array = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
+            
+            echo 'detecting Browser (using _detect - End)  : ' . (microtime(true) - $start) . ' Sek.' . "\n";
+            
+
+        //    $this->_cache->save($array, $cacheId);
+        //}
+        
+        echo 'detecting User Agent (Finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
+        return $this->_browser = $array;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string  $userAgent     the user agent string
+     * @param boolean $bReturnAsArray whether return an array or an object
+     *
+     * @return stdClas|array the object containing the browsers details.
+     *                       Array if $bReturnAsArray is set to true.
+     */
     private function _detect($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
     {
+        $start = microtime(true);
+        
         $agentModel = new Model\Agents();
         $agent      = $agentModel->searchByAgent($userAgent);
         
@@ -162,7 +208,12 @@ class UserAgent
             $agent->save();
         }
         
+        echo "\t" . 'searching User Agent: ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         $agentModel->count($agent->idAgents);
+        
+        echo "\t" . 'counting User Agent: ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        echo "\t" . 'detecting rendering Engine (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
         $engineModel = new Model\Engines();
         if ($forceDetected 
@@ -178,6 +229,9 @@ class UserAgent
             $engine = (object) $engine->toArray();
         }
         
+        echo "\t" . 'detecting rendering Engine (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        echo "\t" . 'detecting Browser (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         $browserModel = new Model\Browsers();
         if ($forceDetected 
             || null === $agent->idBrowsers 
@@ -186,14 +240,15 @@ class UserAgent
             // detect the browser
             $browserChain = new Browser\Chain();
             $browser      = $browserChain->detect($userAgent);
-            if ('Dalvik/1.2.0 (L' == substr($userAgent, 0, 15)) {
-                var_dump($userAgent, $browser);exit;
-            }
+            
             $agent->idBrowsers = $browser->idBrowsers;
         } else {
             $browserModel->count($agent->idBrowsers);
             $browser = (object) $browser->toArray();
         }
+        
+        echo "\t" . 'detecting Browser (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        echo "\t" . 'detecting Browser-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
         $browserDataModel = new Model\BrowserData();
         if ($forceDetected 
@@ -203,6 +258,9 @@ class UserAgent
         } else {
             $browserDataModel->count($agent->idBrowserData);
         }
+        
+        echo "\t" . 'detecting Browser-Data (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        echo "\t" . 'detecting OS (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
         $osModel = new Model\Os();
         if ($forceDetected 
@@ -218,9 +276,17 @@ class UserAgent
             $os = (object) $os->toArray();
         }
         
+        echo "\t" . 'detecting OS (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        /*
+        echo "\t" . 'detecting Device (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         // detect the device
         $deviceChain = new Device\Chain();
         $device      = $deviceChain->detect($userAgent);
+        
+        echo "\t" . 'detecting Device (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        /**/
+        echo "\t" . 'detecting Browscap-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
         /*
         $modelWurflData = new Model\WurflData();
@@ -290,6 +356,9 @@ class UserAgent
             unset($dataToStore['AolVersion']);
             
             $data = $modelBrowscapData->searchByBrowser($object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);
+            if (!is_object($data)) {
+                var_dump($data, $object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);exit;
+            }
             $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
             $agent->idBrowscapData = $data->idBrowscapData;
             
@@ -331,42 +400,14 @@ class UserAgent
             //var_dump(2, $object);exit;
         }
         
+        echo "\t" . 'detecting Browscap-Data (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         $agent->save();
         $object->idAgents = $agent->idAgents;
         
+        echo "\t" . 'detecting Browscap (Finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         return ($bReturnAsArray ? (array) $object : $object);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent     the user agent string
-     * @param boolean $bReturnAsArray whether return an array or an object
-     *
-     * @return stdClas|array the object containing the browsers details.
-     *                       Array if $bReturnAsArray is set to true.
-     */
-    public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
-    {
-        // Automatically detect the useragent
-        if (empty($userAgent) || !is_string($userAgent)) {
-            $support    = new Support();
-            $userAgent = $support->getUserAgent();
-        }
-
-        $cacheId = 'agent_' . preg_replace(
-            '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
-        );
-        
-        //if (!($array = $this->_cache->load($cacheId))) {
-            $array = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
-
-        //    $this->_cache->save($array, $cacheId);
-        //}
-        
-        return $this->_browser = $array;
-        
-        return ($bReturnAsArray ? (array) $this->_browser : (object) $this->_browser);
     }
     
     /**

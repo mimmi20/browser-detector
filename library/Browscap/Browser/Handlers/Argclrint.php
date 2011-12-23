@@ -12,7 +12,6 @@ namespace Browscap\Browser\Handlers;
  *
  * Refer to the COPYING file distributed with this package.
  *
- *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
@@ -20,11 +19,19 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
+/**
+ * Handler Base class
+ */
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * BlackBerryUserAgentHanlder
- * 
+ * Browser Exceptions
+ */
+use Browscap\Browser\Exceptions;
+
+/**
+ * MSIEAgentHanlder
+ *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
@@ -32,18 +39,56 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-
-class BlackBerry extends BrowserHandler
+class Argclrint extends BrowserHandler
 {
     /**
-     * Intercept all UAs containing 'BlackBerry'
+     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
      *
      * @param string $userAgent
-     * @return string
+     * @return boolean
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfContains($userAgent, 'BlackBerry') || $this->utils->checkIfContains($userAgent, 'Blackberry');
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Argclrint'))) {
+            return false;
+        }
+        
+        if ($this->utils->isSpamOrCrawler($userAgent)) {
+            return false;
+        }
+        
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Maxthon',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Palemoon',
+            'Flock',
+            'AOL',
+            'TOB',
+            'Avant',
+            'MyIE',
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV',
+            'MSIE'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
@@ -72,7 +117,7 @@ class BlackBerry extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unknown';
+        return 'ArgClrInt';
     }
     
     /**
@@ -84,19 +129,12 @@ class BlackBerry extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        return 0.0;
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
+        $doMatch = preg_match('/Argclrint\/([\d\.]+);/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (float) $matches[1];
+        }
+        
         return 0;
     }
 }
-

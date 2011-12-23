@@ -56,9 +56,9 @@ class GeneralCrawlers extends BrowserHandler
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->browser = 'GeneralCrawlers';
-        $class->version = 'unknown';
-        $class->bits = 0;
+        $class->browser = 'General Crawlers';
+        $class->version = 0.00;
+        $class->bits    = 0;
         
         return $class;
     }

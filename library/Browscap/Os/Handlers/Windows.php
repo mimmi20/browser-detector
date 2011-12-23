@@ -53,6 +53,9 @@ class Windows extends OsHandler
         $isNotReallyAWindows = array(
             // using also the Trident rendering engine
             'Linux',
+            'Windows CE',
+            'Windows Phone OS',
+            'IEMobile'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {

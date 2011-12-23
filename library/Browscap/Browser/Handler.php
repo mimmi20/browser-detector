@@ -121,6 +121,18 @@ abstract class Handler implements MatcherInterface
      */
     protected function detectBits($userAgent)
     {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64'))) {
+            return 64;
+        }
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win3.1', 'Windows 3.1'))) {
+            return 16;
+        }
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win'))) {
+            return 32;
+        }
+        
         return 0;
     }
 }

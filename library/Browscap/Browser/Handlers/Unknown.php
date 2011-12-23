@@ -45,21 +45,4 @@ class Unknown extends BrowserHandler
     {
         return false;
     }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = 'unknown';
-        $class->version = 0.00;
-        $class->bits = 0;
-        
-        return $class;
-    }
 }

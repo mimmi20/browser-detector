@@ -75,12 +75,6 @@ class BrowscapData extends ModelAbstract
             $platform = 'unknown';
         }
 
-        if (!is_numeric($version)) {
-            return false;
-        }
-
-        $version = number_format((float) $version, 2);
-
         $select = $this->select();
         $select->from(array('bd' => $this->_name));
 
