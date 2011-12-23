@@ -179,6 +179,10 @@ class UserAgent
             
 
         //    $this->_cache->save($array, $cacheId);
+        //} else {
+        //    $agentModel = new Model\Agents();
+        //    $agent      = $agentModel->searchByAgent($userAgent);
+        //    $agentModel->count($agent->idAgents);
         //}
         
         echo 'detecting User Agent (Finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
@@ -304,9 +308,12 @@ class UserAgent
             || null === $agent->idBrowscapData 
             || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())
         ) {
+            echo "\t\t" . 'detecting Browscap-Data (init): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             // define the User Agent object and set the default values
             $browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
+            echo "\t\t" . 'detecting Browscap-Data (construct): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $detected = $browscap->getBrowser($userAgent);
+            echo "\t\t" . 'detecting Browscap-Data (getBrowser): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
             $object = new \StdClass();
             
@@ -314,10 +321,7 @@ class UserAgent
             $object->Browser = $browser->browser;
             $version         = $browser->version;
             
-            if (false === strpos($version, '.')) {
-                $version = number_format($version, 2);
-            }
-            $object->Version  = $version;
+            $object->Version  = $browser->version;
             $object->MajorVer = (int) $version;
             
             $versions         = explode('.', $version, 2);
@@ -354,18 +358,24 @@ class UserAgent
             
             $dataToStore = (array) $object;
             unset($dataToStore['AolVersion']);
+            echo "\t\t" . 'detecting Browscap-Data (set object): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
             $data = $modelBrowscapData->searchByBrowser($object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);
             if (!is_object($data)) {
                 var_dump($data, $object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);exit;
             }
+            
+            echo "\t\t" . 'detecting Browscap-Data (search browser): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+            
             $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
             $agent->idBrowscapData = $data->idBrowscapData;
             
-            //var_dump(1, $object);exit;
+            echo "\t\t" . 'detecting Browscap-Data (finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         } else {
+            echo "\t\t" . 'detecting Browscap-Data (init): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $objectCopy = clone $object;
-            //var_dump(2, $object);exit;
+            
+            echo "\t\t" . 'detecting Browscap-Data (clone): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $object = new \StdClass();
             
             // take over the detected values to User Agent object
@@ -397,7 +407,7 @@ class UserAgent
             $object->wurflKey            = $objectCopy->wurflkey;
             $object->renderEngine        = $objectCopy->renderengine;
             
-            //var_dump(2, $object);exit;
+            echo "\t\t" . 'detecting Browscap-Data (set object): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         }
         
         echo "\t" . 'detecting Browscap-Data (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
