@@ -73,6 +73,11 @@ class UserAgent
      * @var \Zend\Config\Config
      */
     private $_config = null;
+    
+    /**
+     * @var \Browscap\Broscap
+     */
+    private $_browscap = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -159,7 +164,7 @@ class UserAgent
         if (empty($userAgent) || !is_string($userAgent)) {
             echo 'detecting User Agent (using Support - Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
-            $support    = new Support();
+            $support   = new Support();
             $userAgent = $support->getUserAgent();
             
             echo 'detecting User Agent (using Support - End)  : ' . (microtime(true) - $start) . ' Sek.' . "\n";
@@ -180,9 +185,9 @@ class UserAgent
 
         //    $this->_cache->save($array, $cacheId);
         //} else {
-        //    $agentModel = new Model\Agents();
-        //    $agent      = $agentModel->searchByAgent($userAgent);
-        //    $agentModel->count($agent->idAgents);
+        //    $agentService = new Service\Agents();
+        //    $agent        = $agentService->searchByAgent($userAgent);
+        //    $agentService->count($agent->idAgents);
         //}
         
         echo 'detecting User Agent (Finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
@@ -203,43 +208,43 @@ class UserAgent
     {
         $start = microtime(true);
         
-        $agentModel = new Model\Agents();
-        $agent      = $agentModel->searchByAgent($userAgent);
+        $agentService = new Service\Agents();
+        $agent        = $agentService->searchByAgent($userAgent);
         
         if (!is_object($agent)) {
-            $agent        = $agentModel->createRow();
+            $agent        = $agentService->createRow();
             $agent->agent = $userAgent;
             $agent->save();
         }
         
         echo "\t" . 'searching User Agent: ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
-        $agentModel->count($agent->idAgents);
+        $agentService->count($agent->idAgents);
         
         echo "\t" . 'counting User Agent: ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting rendering Engine (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
-        $engineModel = new Model\Engines();
+        $engineService = new Service\Engines();
         if ($forceDetected 
             || null === $agent->idEngines 
-            || null === ($engine = $engineModel->find($agent->idEngines)->current())
+            || null === ($engine = $engineService->find($agent->idEngines)->current())
         ) {
             // detect the Rendering Engine
             $engineChain      = new Engine\Chain();
             $engine           = $engineChain->detect($userAgent);
-            $agent->idEngines = $engineModel->countByName($engine->engine, $engine->version);
+            $agent->idEngines = $engineService->countByName($engine->engine, $engine->version);
         } else {
-            $engineModel->count($agent->idEngines);
+            $engineService->count($agent->idEngines);
             $engine = (object) $engine->toArray();
         }
         
         echo "\t" . 'detecting rendering Engine (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting Browser (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
-        $browserModel = new Model\Browsers();
+        $browserService = new Service\Browsers();
         if ($forceDetected 
             || null === $agent->idBrowsers 
-            || null === ($browser = $browserModel->find($agent->idBrowsers)->current())
+            || null === ($browser = $browserService->find($agent->idBrowsers)->current())
         ) {
             // detect the browser
             $browserChain = new Browser\Chain();
@@ -247,36 +252,36 @@ class UserAgent
             
             $agent->idBrowsers = $browser->idBrowsers;
         } else {
-            $browserModel->count($agent->idBrowsers);
+            $browserService->count($agent->idBrowsers);
             $browser = (object) $browser->toArray();
         }
         
         echo "\t" . 'detecting Browser (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting Browser-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
-        $browserDataModel = new Model\BrowserData();
+        $browserDataService = new Service\BrowserData();
         if ($forceDetected 
             || null === $agent->idBrowserData
         ) {
-            $agent->idBrowserData = $browserDataModel->countByName($browser->browser, $browser->version, $browser->bits, (array) $browser);
+            $agent->idBrowserData = $browserDataService->countByName($browser->browser, $browser->version, $browser->bits, (array) $browser);
         } else {
-            $browserDataModel->count($agent->idBrowserData);
+            $browserDataService->count($agent->idBrowserData);
         }
         
         echo "\t" . 'detecting Browser-Data (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting OS (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
-        $osModel = new Model\Os();
+        $osService = new Service\Os();
         if ($forceDetected 
             || null === $agent->idOs 
-            || null === ($os = $osModel->find($agent->idOs)->current())
+            || null === ($os = $osService->find($agent->idOs)->current())
         ) {
             // detect the Operating System
             $osChain     = new Os\Chain();
             $os          = $osChain->detect($userAgent);//var_dump($os);exit;
-            $agent->idOs = $osModel->countByName($os->name, $os->version, $os->bits);
+            $agent->idOs = $osService->countByName($os->name, $os->version, $os->bits);
         } else {
-            $osModel->count($agent->idOs);
+            $osService->count($agent->idOs);
             $os = (object) $os->toArray();
         }
         
@@ -290,9 +295,9 @@ class UserAgent
         
         echo "\t" . 'detecting Device (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         /**/
-        echo "\t" . 'detecting Browscap-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
-        
         /*
+        echo "\t" . 'detecting Wurfl-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         $modelWurflData = new Model\WurflData();
         //if (null === $agent->idWurflData) {
             $wurfl = $modelWurflData->count(null, $userAgent);exit;
@@ -302,17 +307,26 @@ class UserAgent
         //    
         //    $wurfl = $modelWurflData->find($agent->idWurflData)->current();
         //}
+        
+        echo "\t" . 'detecting Wurfl-Data (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         /**/
-        $modelBrowscapData = new Model\BrowscapData();
+        echo "\t" . 'detecting Browscap-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
+        $rowscapDataService = new Service\BrowscapData();
+        echo "\t\t" . 'detecting Browscap-Data (Model-Init): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         if ($forceDetected 
             || null === $agent->idBrowscapData 
-            || null === ($object = $modelBrowscapData->find($agent->idBrowscapData)->current())
+            || null === ($object = $rowscapDataService->find($agent->idBrowscapData)->current())
         ) {
             echo "\t\t" . 'detecting Browscap-Data (init): ' . (microtime(true) - $start) . ' Sek.' . "\n";
-            // define the User Agent object and set the default values
-            $browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
+            
+            if (null === $this->_browscap) {
+                // define the User Agent object and set the default values
+                $this->_browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
+            }
+            
             echo "\t\t" . 'detecting Browscap-Data (construct): ' . (microtime(true) - $start) . ' Sek.' . "\n";
-            $detected = $browscap->getBrowser($userAgent);
+            $detected = $this->_browscap->getBrowser($userAgent);
             echo "\t\t" . 'detecting Browscap-Data (getBrowser): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
             $object = new \StdClass();
@@ -325,7 +339,7 @@ class UserAgent
             $object->MajorVer = (int) $version;
             
             $versions         = explode('.', $version, 2);
-            $object->MinorVer = $versions[1];
+            $object->MinorVer = (isset($versions[1]) ? $versions[1] : '0');
             
             if (64 == $browser->bits) {
                 $object->Win64 = 1;
@@ -360,14 +374,14 @@ class UserAgent
             unset($dataToStore['AolVersion']);
             echo "\t\t" . 'detecting Browscap-Data (set object): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
-            $data = $modelBrowscapData->searchByBrowser($object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);
+            $data = $rowscapDataService->searchByBrowser($object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);
             if (!is_object($data)) {
                 var_dump($data, $object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);exit;
             }
             
             echo "\t\t" . 'detecting Browscap-Data (search browser): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
-            $modelBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
+            $rowscapDataService->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
             $agent->idBrowscapData = $data->idBrowscapData;
             
             echo "\t\t" . 'detecting Browscap-Data (finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";

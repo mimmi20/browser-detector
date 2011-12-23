@@ -58,12 +58,13 @@ class Browscap
      *
      * @var array
      */
-    private $_userAgents = array();
-    private $_browsers   = array();
-    private $_patterns   = array();
-    private $_properties = array();
-    private $_logger     = null;
-    private $_config     = null;
+    private $_userAgents  = array();
+    private $_browsers    = array();
+    private $_patterns    = array();
+    private $_properties  = array();
+    private $_logger      = null;
+    private $_config      = null;
+    private $_globalCache = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -127,40 +128,40 @@ class Browscap
             $sUserAgent = $support->getUserAgent();
         }
 
-        $cacheId = 'agent_' . md5(
-            preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent))
-        );
+        $cacheId = 'agent_' . preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent));
 
         if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
             || !$array = $this->_cache->load($cacheId)
         ) {
-            $cacheGlobalId = 'agentsGlobal';
+            if (null === $this->_globalCache) {
+                $cacheGlobalId = 'agentsGlobal';
 
-            // Load the cache at the first request
-            if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-                || !$agentsGlobal = $this->_cache->load($cacheGlobalId)
-            ) {
-                $agentsGlobal = $this->_getBrowserFromCache();
+                // Load the cache at the first request
+                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
+                    || !$this->_globalCache = $this->_cache->load($cacheGlobalId)
+                ) {
+                    $this->_globalCache = $this->_getBrowserFromCache();
 
-                if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                    $this->_cache->save($agentsGlobal, $cacheGlobalId);
+                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_cache->save($this->_globalCache, $cacheGlobalId);
+                    }
                 }
             }
 
             $browser = array();
-            if (isset($agentsGlobal['patterns'])
-                && is_array($agentsGlobal['patterns'])
+            if (isset($this->_globalCache['patterns'])
+                && is_array($this->_globalCache['patterns'])
             ) {
-                foreach ($agentsGlobal['patterns'] as $key => $pattern) {
+                foreach ($this->_globalCache['patterns'] as $key => $pattern) {
                     if (preg_match($pattern, $sUserAgent)) {
                         $browser = array(
                             $sUserAgent, // Original useragent
                             trim(strtolower($pattern), '@'),
-                            $agentsGlobal['userAgents'][$key]
+                            $this->_globalCache['userAgents'][$key]
                         );
 
                         $browser = $browser
-                                 + $agentsGlobal['browsers'][$key];
+                                 + $this->_globalCache['browsers'][$key];
 
                         break;
                     }
@@ -170,7 +171,7 @@ class Browscap
             // Add the keys for each property
             $array = array();
             foreach ($browser as $key => $value) {
-                $array[$agentsGlobal['properties'][(int)$key]] = $value;
+                $array[$this->_globalCache['properties'][(int)$key]] = $value;
             }
 
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
