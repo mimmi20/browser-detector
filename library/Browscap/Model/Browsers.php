@@ -67,26 +67,26 @@ class Browsers extends ModelAbstract
     public function searchByBrowser(
         $browserName = null, $version = 0, $bits = null)
     {
-        if (!is_string($browserName) || is_numeric($browserName)) {
+        if (!is_string($browserName)) {
             return false;
         }
 
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 
-        $select->where('`b`.`browser` = ?', $browserName);
-        $select->where('`b`.`version` = ?', $version);
+        $select->where('`b`.`browser` = ?', (string) $browserName);
+        $select->where('`b`.`version` = ?', (string) $version);
         $select->where('`b`.`bits` = ?', (int) $bits);
 
         $select->limit(1);
-
+        echo $select->assemble() . "\n";
         $browser = $this->fetchAll($select)->current();
         
         if (!$browser) {
             $browser = $this->createRow();
             
-            $browser->browser = $browserName;
-            $browser->version = $version;
+            $browser->browser = (string) $browserName;
+            $browser->version = (string) $version;
             $browser->bits    = (int) $bits;
             $browser->count   = 0;
             

@@ -77,9 +77,22 @@ class Chain
             $this->_chain->top();
             
             while ($this->_chain->valid()) {
-                $class     = ucfirst($this->_chain->current());
-                $className = __NAMESPACE__ . '\\Handlers\\' . $class;
-                $handler   = new $className();
+                $class = ltrim($this->_chain->current(), '\\');
+                $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+                $class = preg_replace('/[^a-zA-Z ]/', '', $class);
+                $class = str_replace(' ', '', ucwords($class));
+                
+                $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
+                try {
+                    $handler = new $className();
+                } catch (\Exception $e) {
+                    echo "Class '$className' not found \n";
+                    
+                    // TODO log this
+                    
+                    $this->_chain->next();
+                    continue;
+                }
                 
                 if ($handler->canHandle($userAgent)) {
                     return $handler->detect($userAgent);

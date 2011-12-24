@@ -78,9 +78,9 @@ class BrowscapData extends ModelAbstract
         $select = $this->select();
         $select->from(array('bd' => $this->_name));
 
-        $select->where('`bd`.`browser` = ?', $browser);
-        $select->where('`bd`.`platform` = ?', $platform);
-        $select->where('`bd`.`version` = ?', $version);
+        $select->where('`bd`.`browser` = ?', (string) $browser);
+        $select->where('`bd`.`platform` = ?', (string) $platform);
+        $select->where('`bd`.`version` = ?', (string) $version);
         
         if (64 == $bits) {
             $select->where('`bd`.`win64` = 1');
@@ -91,19 +91,19 @@ class BrowscapData extends ModelAbstract
         }
         
         if (null !== $wurflkey) {
-            $select->where('`bd`.`wurflkey` = ?', $wurflkey);
+            $select->where('`bd`.`wurflkey` = ?', (string) $wurflkey);
         }
 
         $select->limit(1);
-
+        echo $select->assemble() . "\n";
         $data = $this->fetchAll($select)->current();
         
         if (!$data) {
             $data = $this->createRow();
             
-            $data->browser  = $browser;
-            $data->platform = $platform;
-            $data->version  = $version;
+            $data->browser  = (string) $browser;
+            $data->platform = (string) $platform;
+            $data->version  = (string) $version;
             if (64 == $bits) {
                 $data->win64 = 1;
             } elseif (32 == $bits) {
@@ -111,7 +111,7 @@ class BrowscapData extends ModelAbstract
             } elseif (16 == $bits) {
                 $data->win16 = 1;
             }
-            $data->wurflkey = $wurflkey;
+            $data->wurflkey = (string) $wurflkey;
             
             $data->save();
         }

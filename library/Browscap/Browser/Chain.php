@@ -133,7 +133,7 @@ class Chain
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $browser = $handler->detect($userAgent);
-            
+            echo print_r($browser, true);
             $searchresult = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits);
             
             if ($searchresult) {

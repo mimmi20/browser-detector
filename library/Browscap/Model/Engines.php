@@ -51,15 +51,15 @@ class Engines extends ModelAbstract
      */
     public function searchByName($engine = null, $version = 0)
     {
-        if (!is_string($engine) || is_numeric($engine)) {
+        if (!is_string($engine)) {
             return false;
         }
 
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 
-        $select->where('`b`.`engine` = ?', $engine);
-        $select->where('`b`.`version` = ?', $version);
+        $select->where('`b`.`engine` = ?', (string) $engine);
+        $select->where('`b`.`version` = ?', (string) $version);
 
         $select->limit(1);
 
@@ -85,8 +85,8 @@ class Engines extends ModelAbstract
         } else {
             $engine = $this->createRow();
             
-            $engine->engine  = $engineName;
-            $engine->version = $engineVersion;
+            $engine->engine  = (string) $engineName;
+            $engine->version = (string) $engineVersion;
             $engine->count   = 1;
         }
         

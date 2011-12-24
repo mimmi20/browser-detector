@@ -52,15 +52,15 @@ class BrowserData extends ModelAbstract
     public function searchByBrowser(
         $browser = null, $version = 0, $bits = null)
     {
-        if (!is_string($browser) || is_numeric($browser)) {
+        if (!is_string($browser)) {
             return false;
         }
 
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 
-        $select->where('`b`.`name` = ?', $browser);
-        $select->where('`b`.`version` = ?', $version);
+        $select->where('`b`.`name` = ?', (string) $browser);
+        $select->where('`b`.`version` = ?', (string) $version);
         $select->where('`b`.`bits` = ?', (int) $bits);
 
         $select->limit(1);
@@ -87,8 +87,8 @@ class BrowserData extends ModelAbstract
         } else {
             $browser = $this->createRow();
             
-            $browser->name    = $browserName;
-            $browser->version = $browserVersion;
+            $browser->name    = (string) $browserName;
+            $browser->version = (string) $browserVersion;
             $browser->bits    = $bits;
             $browser->data    = \Zend\Json\Json::encode($data);
             $browser->count   = 1;

@@ -52,15 +52,15 @@ class Os extends ModelAbstract
     public function searchByName(
         $osName = null, $version = 0, $bits = null)
     {
-        if (!is_string($osName) || is_numeric($osName)) {
+        if (!is_string($osName)) {
             return false;
         }
 
         $select = $this->select();
         $select->from(array('b' => $this->_name));
 
-        $select->where('`b`.`os` = ?', $osName);
-        $select->where('`b`.`version` = ?', $version);
+        $select->where('`b`.`os` = ?', (string) $osName);
+        $select->where('`b`.`version` = ?', (string) $version);
         $select->where('`b`.`bits` = ?', (int) $bits);
 
         $select->limit(1);
@@ -70,10 +70,10 @@ class Os extends ModelAbstract
         if (!$os) {
             $os = $this->createRow();
             
-            $os->os      = $osName;
-            $os->version = $version;
-            $os->osFull  = $osName . ' ' . $version;
-            $os->bits    = $bits;
+            $os->os      = (string) $osName;
+            $os->version = (string) $version;
+            $os->osFull  = $os->os . ($os->os != $os->version ? ' ' . $os->version : '');
+            $os->bits    = (int) $bits;
             $os->count   = 0;
             
             $os->save();
@@ -96,6 +96,10 @@ class Os extends ModelAbstract
     {
         $os = $this->searchByName($osName, $osVersion, $bits);
         
+        if (!$os) {
+            return false;
+        }
+
         $os->count += 1;
         $os->save();
         
