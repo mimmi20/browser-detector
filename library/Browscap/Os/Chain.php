@@ -40,6 +40,8 @@ class Chain
     private $_chain = null;
     
     protected $utils = null;
+    
+    private $_log = null;
 
     /**
      * Initializes the factory with an instance of all possible WURFL_Handlers_Handler objects from the given $context
@@ -58,6 +60,8 @@ class Chain
         foreach ($allOs as $singleOs) {
             $this->_chain->insert($singleOs->name, $singleOs->count);
         }
+        
+        $this->_log = \Zend\Registry::get('log');
     }
     
     /**
@@ -91,7 +95,7 @@ class Chain
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    // TODO log this
+                    $this->_log->err($e);
                     
                     $this->_chain->next();
                     continue;
@@ -104,7 +108,7 @@ class Chain
                         return $os;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        // TODO log this
+                        $this->_log->err($e);
                         
                         $this->_chain->next();
                         continue;

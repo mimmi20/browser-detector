@@ -51,6 +51,8 @@ class Chain
      * @var Browscap\Browser\Handler
      */
     protected $handler = null;
+    
+    private $_log = null;
 
     /**
      * Initializes the factory with an instance of all possible Handler objects from the given $context
@@ -69,6 +71,8 @@ class Chain
         foreach ($allBrowsers as $singleBrowser) {
             $this->_chain->insert($singleBrowser->name, $singleBrowser->count);
         }
+        
+        $this->_log = \Zend\Registry::get('log');
     }
     
     /**
@@ -103,7 +107,7 @@ class Chain
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    // TODO log this
+                    $this->_log->err($e);
                     
                     $this->_chain->next();
                     continue;
@@ -118,7 +122,7 @@ class Chain
                         return $browser;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        // TODO log this
+                        $this->_log->err($e);
                         
                         $this->_chain->next();
                         continue;
