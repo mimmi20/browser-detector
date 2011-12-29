@@ -74,7 +74,7 @@ class Mercury extends BrowserHandler
         $doMatch = preg_match('/Mercury3\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

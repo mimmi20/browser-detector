@@ -176,23 +176,25 @@ class UserAgent
             '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
         );
         
-        //if (!($array = $this->_cache->load($cacheId))) {
+        if ($forceDetected 
+            || !($browserArray = $this->_cache->load($cacheId))
+        ) {
             echo 'detecting Browser (using _detect - Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
-            $array = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
+            $browserArray = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
             
             echo 'detecting Browser (using _detect - End)  : ' . (microtime(true) - $start) . ' Sek.' . "\n";
             
 
-        //    $this->_cache->save($array, $cacheId);
-        //} else {
-        //    $agentService = new Service\Agents();
-        //    $agent        = $agentService->searchByAgent($userAgent);
-        //    $agentService->count($agent->idAgents);
-        //}
+            $this->_cache->save($browserArray, $cacheId);
+        } else {
+            $agentService = new Service\Agents();
+            $agent        = $agentService->searchByAgent($userAgent);
+            $agentService->count($agent->idAgents);
+        }
         
         echo 'detecting User Agent (Finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
-        return $this->_browser = $array;
+        return $browserArray;
     }
 
     /**
@@ -240,22 +242,29 @@ class UserAgent
         
         echo "\t" . 'detecting rendering Engine (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting Browser (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        echo "\t\t" . 'detecting Browser (init): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         
         $browserService = new Service\Browsers();
+        echo "\t\t" . 'detecting Browser (creating Model): ' . (microtime(true) - $start) . ' Sek.' . "\n";
+        
         if ($forceDetected 
             || null === $agent->idBrowsers 
             || null === ($browser = $browserService->find($agent->idBrowsers)->current())
         ) {
+            echo "\t\t" . 'detecting Browser (searching Browser failed): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             // detect the browser
             $browserChain = new Browser\Chain();
+            echo "\t\t" . 'detecting Browser (creating Chain): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $browser      = $browserChain->detect($userAgent);
-            
+            echo "\t\t" . 'detecting Browser (detecting Browser): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $agent->idBrowsers = $browser->idBrowsers;
         } else {
+            echo "\t\t" . 'detecting Browser (searching Browser succeded): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $browserService->count($agent->idBrowsers);
+            echo "\t\t" . 'detecting Browser (counting Browser): ' . (microtime(true) - $start) . ' Sek.' . "\n";
             $browser = (object) $browser->toArray();
         }
-        
+        echo "\t\t" . 'detecting Browser (Finish): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting Browser (End): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         echo "\t" . 'detecting Browser-Data (Start): ' . (microtime(true) - $start) . ' Sek.' . "\n";
         

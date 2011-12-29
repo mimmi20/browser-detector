@@ -71,6 +71,7 @@ class MicrosoftMobileExplorer extends BrowserHandler
             'Flock',
             'Avant',
             'MyIE',
+            //others
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -79,7 +80,9 @@ class MicrosoftMobileExplorer extends BrowserHandler
             'IEMobile',
             'BlackBerry',
             'WebTV',
-            'ArgClrInt'
+            'ArgClrInt',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

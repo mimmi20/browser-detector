@@ -45,6 +45,15 @@ class Ios extends OsHandler
             return false;
         }
         
+        $isNotReallyAWindows = array(
+            //Fakes
+            'User-Agent'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -87,34 +96,10 @@ class Ios extends OsHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Firefox\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/IphoneOSX\/(\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return (float) $matches[1];
-        }
-        
-        return 0;
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64'))) {
-            return 64;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win31', 'Win3.1', 'Windows 3.1'))) {
-            return 16;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'x86', 'i586', 'i686'))) {
-            return 32;
         }
         
         return 0;

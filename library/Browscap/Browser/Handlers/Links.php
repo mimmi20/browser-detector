@@ -74,7 +74,7 @@ class Links extends BrowserHandler
         $doMatch = preg_match('/Links \(([\d\.]+);.*\)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

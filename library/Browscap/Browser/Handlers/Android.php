@@ -65,7 +65,9 @@ class Android extends BrowserHandler
             'Maemo',
             'Palemoon',
             'Rockmelt',
-            'Midori'
+            'Midori',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

@@ -73,6 +73,7 @@ class MicrosoftOutlook extends BrowserHandler
             'TOB',
             'Avant',
             'MyIE',
+            //others
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -80,7 +81,9 @@ class MicrosoftOutlook extends BrowserHandler
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
+            'WebTV',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -114,13 +117,13 @@ class MicrosoftOutlook extends BrowserHandler
         $doMatch = preg_match('/Microsoft Office Outlook ([\d\.]+);/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/Microsoft Office\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

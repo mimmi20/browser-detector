@@ -88,7 +88,7 @@ class Chain
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    $this->_log->err($e);
+                    $this->_log->warn($e);
                     
                     $this->_chain->next();
                     continue;
@@ -101,7 +101,7 @@ class Chain
                         return $device;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        $this->_log->err($e);
+                        $this->_log->warn($e);
                         
                         $this->_chain->next();
                         continue;

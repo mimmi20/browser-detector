@@ -62,7 +62,9 @@ class Chrome extends BrowserHandler
             'Iron',
             'Maemo',
             'Palemoon',
-            'Rockmelt'
+            'Rockmelt',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

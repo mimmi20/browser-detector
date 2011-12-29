@@ -63,7 +63,9 @@ class MaemoBrowser extends BrowserHandler
             'Palemoon',
             'SeaMonkey',
             'Flock',
-            'Fennec'
+            'Fennec',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

@@ -55,7 +55,9 @@ class Windows extends OsHandler
             'Linux',
             'Windows CE',
             'Windows Phone OS',
-            'IEMobile'
+            'IEMobile',
+            //Fakes
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {

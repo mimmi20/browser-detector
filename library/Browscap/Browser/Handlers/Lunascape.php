@@ -19,10 +19,18 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
+/**
+ * Handler Base class
+ */
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * FirefoxUserAgentHanlder
+ * Browser Exceptions
+ */
+use Browscap\Browser\Exceptions;
+
+/**
+ * MSIEAgentHanlder
  *
  *
  * @category   WURFL
@@ -31,23 +39,21 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Firefox extends BrowserHandler
+class Lunascape extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Firefox and are not mobile browsers
+     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
      *
      * @param string $userAgent
      * @return boolean
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
-        ) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Lunascape'))) {
             return false;
         }
         
@@ -55,30 +61,30 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
             'Maxthon',
-            'Camino',
             'Galeon',
-            'Lunascape',
             'Opera',
-            'Navigator',
             'Palemoon',
-            'SeaMonkey',
             'Flock',
-            'Fennec',
-            //Nutch
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            //others
-            'MSIE',
+            'Avant',
+            'MyIE',
+            // other Browsers
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV',
+            'ArgClrInt',
             //Fakes
-            'User Agent'
+            'User agent'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
             return false;
         }
         
@@ -94,7 +100,7 @@ class Firefox extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Firefox';
+        return 'Lunascape';
     }
     
     /**
@@ -106,10 +112,16 @@ class Firefox extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Lunascape\/([\d\.ab]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            return (float) $matches[1];
+        }
+        
+        $doMatch = preg_match('/Lunascape ([\d\.ab]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return (float) $matches[1];
         }
         
         return 0;

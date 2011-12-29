@@ -50,6 +50,8 @@ class Linux extends OsHandler
             'Android',
             'Debian',
             'Ubuntu',
+            //Fakes
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {
@@ -102,30 +104,6 @@ class Linux extends OsHandler
         
         if ($doMatch) {
             return (float) $matches[1];
-        }
-        
-        return 0;
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64'))) {
-            return 64;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win31', 'Win3.1', 'Windows 3.1'))) {
-            return 16;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'x86', 'i586', 'i686'))) {
-            return 32;
         }
         
         return 0;

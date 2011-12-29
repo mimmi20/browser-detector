@@ -66,7 +66,9 @@ class Konqueror extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
-            'Firefox'
+            'Firefox',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

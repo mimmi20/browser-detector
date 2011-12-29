@@ -74,7 +74,7 @@ class Billigfluegefinal extends BrowserHandler
         $doMatch = preg_match('/BilligFluegeFinal\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

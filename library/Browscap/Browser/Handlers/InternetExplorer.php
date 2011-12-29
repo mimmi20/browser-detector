@@ -49,7 +49,7 @@ class InternetExplorer extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
@@ -71,6 +71,7 @@ class InternetExplorer extends BrowserHandler
             'Flock',
             'Avant',
             'MyIE',
+            // other Browsers
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -79,7 +80,10 @@ class InternetExplorer extends BrowserHandler
             'IEMobile',
             'BlackBerry',
             'WebTV',
-            'ArgClrInt'
+            'ArgClrInt',
+            'Firefox',
+            //Fakes
+            'User agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -139,6 +143,6 @@ class InternetExplorer extends BrowserHandler
             }
         }
         
-        throw new Exceptions\BrowserNotFoundException('Internet Explorer not detected in user agent (' . $userAgent . ')');
+        $class->version = 0;
     }
 }

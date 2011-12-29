@@ -64,6 +64,7 @@ class Avant extends BrowserHandler
             'AOL',
             'TOB',
             'MyIE',
+            //others
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -71,7 +72,9 @@ class Avant extends BrowserHandler
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
+            'WebTV',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

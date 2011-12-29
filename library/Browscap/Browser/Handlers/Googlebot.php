@@ -78,31 +78,31 @@ class Googlebot extends BrowserHandler
         $doMatch = preg_match('/Googlebot\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/Googlebot v([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/Googlebot-Image\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/Googlebot-News\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/Google\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

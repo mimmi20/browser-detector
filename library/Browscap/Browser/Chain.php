@@ -27,7 +27,7 @@ use \Browscap\Utils;
 /**
  * the browser database model
  */
-use \Browscap\Model\Browsers;
+use \Browscap\Service\Browsers;
 
 /**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
@@ -107,7 +107,7 @@ class Chain
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    $this->_log->err($e);
+                    $this->_log->warn($e);
                     
                     $this->_chain->next();
                     continue;
@@ -122,7 +122,7 @@ class Chain
                         return $browser;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        $this->_log->err($e);
+                        $this->_log->warn($e);
                         
                         $this->_chain->next();
                         continue;

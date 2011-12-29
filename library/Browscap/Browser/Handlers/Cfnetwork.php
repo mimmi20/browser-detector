@@ -80,7 +80,7 @@ class Cfnetwork extends BrowserHandler
         $doMatch = preg_match('/CFNetwork\/([\dab\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

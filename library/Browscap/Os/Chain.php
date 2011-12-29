@@ -24,7 +24,7 @@ use \Browscap\Utils;
 /**
  * the platform database model
  */
-use \Browscap\Model\Os;
+use \Browscap\Service\Os;
 
 /**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
@@ -95,7 +95,7 @@ class Chain
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    $this->_log->err($e);
+                    $this->_log->warn($e);
                     
                     $this->_chain->next();
                     continue;
@@ -108,7 +108,7 @@ class Chain
                         return $os;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        $this->_log->err($e);
+                        $this->_log->warn($e);
                         
                         $this->_chain->next();
                         continue;

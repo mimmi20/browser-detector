@@ -88,7 +88,9 @@ class Netscape extends BrowserHandler
             'Chrome',
             'Chromium',
             'Iron',
-            'Rockmelt'
+            'Rockmelt',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -122,7 +124,7 @@ class Netscape extends BrowserHandler
         $doMatch = preg_match('/Mozilla\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

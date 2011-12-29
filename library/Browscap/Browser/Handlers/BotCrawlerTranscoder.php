@@ -48,7 +48,6 @@ class BotCrawlerTranscoder extends BrowserHandler
         return false;
     }
 
-
     private $botCrawlerTranscoder = array(
         'bot',
         'crawler',

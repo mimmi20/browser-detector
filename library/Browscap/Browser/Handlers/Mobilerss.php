@@ -74,19 +74,19 @@ class Mobilerss extends BrowserHandler
         $doMatch = preg_match('/MobileRSS\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/MobileRSSFree\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/MobileRSSFree-iPad\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

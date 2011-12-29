@@ -52,6 +52,8 @@ class WindowsMobileOs extends OsHandler
         $isNotReallyAWindows = array(
             // using also the Trident rendering engine
             'Linux',
+            //Fakes
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {

@@ -63,6 +63,7 @@ class Aol extends BrowserHandler
             'TOB',
             'Avant',
             'MyIE',
+            //others
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -70,7 +71,9 @@ class Aol extends BrowserHandler
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
+            'WebTV',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

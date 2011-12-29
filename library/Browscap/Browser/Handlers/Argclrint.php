@@ -73,6 +73,7 @@ class Argclrint extends BrowserHandler
             'TOB',
             'Avant',
             'MyIE',
+            //others
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -81,7 +82,9 @@ class Argclrint extends BrowserHandler
             'IEMobile',
             'BlackBerry',
             'WebTV',
-            'MSIE'
+            'MSIE',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -132,7 +135,7 @@ class Argclrint extends BrowserHandler
         $doMatch = preg_match('/Argclrint\/([\d\.]+);/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

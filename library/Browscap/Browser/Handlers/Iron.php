@@ -61,7 +61,9 @@ class Iron extends BrowserHandler
             'Lunascape',
             'Maemo',
             'Palemoon',
-            'Rockmelt'
+            'Rockmelt',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -32,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class Flipboard extends BrowserHandler
+class ImageCrawlers extends GeneralCrawlers
 {
     /**
      * Final Interceptor: Intercept
@@ -43,11 +41,7 @@ class Flipboard extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Flipboard')) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -55,28 +49,15 @@ class Flipboard extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return string
+     * @return StdClass
      */
-    protected function detectBrowser($userAgent)
+    public function detect($userAgent)
     {
-        return 'Flipboard';
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return float
-     */
-    protected function detectVersion($userAgent)
-    {
-        $doMatch = preg_match('/Flipboard\/([\d\.]+) /', $userAgent, $matches);
+        $class = new \StdClass();
+        $class->browser = 'Image Crawlers';
+        $class->version = 0.00;
+        $class->bits    = 0;
         
-        if ($doMatch) {
-            return $matches[1];
-        }
-        
-        return 0;
+        return $class;
     }
 }

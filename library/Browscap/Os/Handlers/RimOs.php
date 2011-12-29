@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\Handlers;
+namespace Browscap\Os\Handlers;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -19,10 +19,10 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
+use Browscap\Os\Handler as OsHandler;
 
 /**
- * FirefoxUserAgentHanlder
+ * MSIEAgentHanlder
  *
  *
  * @category   WURFL
@@ -31,54 +31,30 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Firefox extends BrowserHandler
+class RimOs extends OsHandler
 {
     /**
-     * Intercept all UAs Containing Firefox and are not mobile browsers
+     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
      *
      * @param string $userAgent
      * @return boolean
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
-        ) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('BlackBerry'))) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'Palemoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            //Nutch
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            //others
-            'MSIE',
+        $isNotReallyAnLinux = array(
+            // special Linux versions
+            'Android',
+            'Debian',
+            'Ubuntu',
             //Fakes
-            'User Agent'
+            'User-Agent'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {
             return false;
         }
         
@@ -90,11 +66,29 @@ class Firefox extends BrowserHandler
      *
      * @param string $userAgent
      *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->name     = $this->detectBrowser($userAgent);
+        $class->osFull   = $class->name;
+        $class->version  = $this->detectVersion($userAgent);
+        $class->bits     = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Firefox';
+        return 'RimOs';
     }
     
     /**
@@ -106,10 +100,10 @@ class Firefox extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BlackBerry\/(\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            return (float) $matches[1];
         }
         
         return 0;

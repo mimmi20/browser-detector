@@ -63,6 +63,7 @@ class Tob extends BrowserHandler
             'AOL',
             'Avant',
             'MyIE',
+            //others
             'AppleWebKit',
             'Chrome',
             'Linux',
@@ -70,7 +71,9 @@ class Tob extends BrowserHandler
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
+            'WebTV',
+            //Fakes
+            'User Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -78,22 +81,5 @@ class Tob extends BrowserHandler
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
     }
 }

@@ -87,7 +87,7 @@ class Khtml extends EngineHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/Khtml\/([\d\.\+]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/KHTML\/([\d\.\+]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return (int) $matches[1];

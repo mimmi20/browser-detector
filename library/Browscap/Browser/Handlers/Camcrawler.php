@@ -19,10 +19,8 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
- * FirefoxUserAgentHanlder
+ * CatchAllUserAgentHanlder
  *
  *
  * @category   WURFL
@@ -31,54 +29,19 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Firefox extends BrowserHandler
+
+class Camcrawler extends ImageCrawlers
 {
     /**
-     * Intercept all UAs Containing Firefox and are not mobile browsers
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
      * @param string $userAgent
-     * @return boolean
+     * @return boolean always true
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
-        ) {
-            return false;
-        }
-        
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'Palemoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            //Nutch
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            //others
-            'MSIE',
-            //Fakes
-            'User Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Camcrawler')) {
             return false;
         }
         
@@ -94,7 +57,7 @@ class Firefox extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Firefox';
+        return 'Camcrawler';
     }
     
     /**
@@ -106,7 +69,7 @@ class Firefox extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Camcrawler\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

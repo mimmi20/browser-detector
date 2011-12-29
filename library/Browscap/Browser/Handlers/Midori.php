@@ -74,7 +74,7 @@ class Midori extends BrowserHandler
         $doMatch = preg_match('/Midori\/([\d\.]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;
