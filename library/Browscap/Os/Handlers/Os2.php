@@ -99,7 +99,7 @@ class OS2 extends OsHandler
         $doMatch = preg_match('/OS\/2 (\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

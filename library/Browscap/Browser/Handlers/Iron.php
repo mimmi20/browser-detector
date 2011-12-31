@@ -60,7 +60,7 @@ class Iron extends BrowserHandler
             'Galeon',
             'Lunascape',
             'Maemo',
-            'Palemoon',
+            'PaleMoon',
             'Rockmelt',
             //Fakes
             'User Agent'

@@ -41,11 +41,21 @@ class Trident extends EngineHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Trident'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto'))) {
             return false;
         }
         
-        return true;
+        if ($this->utils->checkIfContains($userAgent, 'Trident')) {
+            return true;
+        }
+        
+        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/') 
+            && $this->utils->checkIfContains($userAgent, 'MSIE')
+        ) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**
@@ -87,10 +97,10 @@ class Trident extends EngineHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/Trident\/(\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (int) $matches[1];
+            return $matches[1];
         }
         
         return 0;

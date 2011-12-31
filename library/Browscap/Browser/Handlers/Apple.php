@@ -63,7 +63,7 @@ class Apple extends BrowserHandler
             'Lunascape',
             'Iron',
             'Maemo',
-            'Palemoon',
+            'PaleMoon',
             'Rockmelt',
             //Fakes
             'User Agent'

@@ -45,6 +45,10 @@ class Khtml extends EngineHandler
             return false;
         }
         
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Presto'))) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -90,19 +94,19 @@ class Khtml extends EngineHandler
         $doMatch = preg_match('/KHTML\/([\d\.\+]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (int) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+) /', $userAgent, $matches);
         
         if ($doMatch) {
-            return (int) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/WebKit\/([\d\.\+]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (int) $matches[1];
+            return $matches[1];
         }
         
         return 0;

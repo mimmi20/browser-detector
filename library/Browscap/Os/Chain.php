@@ -42,6 +42,8 @@ class Chain
     protected $utils = null;
     
     private $_log = null;
+    
+    private $_service = null;
 
     /**
      * Initializes the factory with an instance of all possible WURFL_Handlers_Handler objects from the given $context
@@ -54,11 +56,13 @@ class Chain
         $this->_chain = new \SplPriorityQueue();
         
         // get all Browsers
-        $osModel = new Os();
-        $allOs   = $osModel->getAll();
+        $this->_service = new Os();
+        $allOs          = $this->_service->getAll();
         
         foreach ($allOs as $singleOs) {
-            $this->_chain->insert($singleOs->name, $singleOs->count);
+            if ($singleOs->name) {
+                $this->_chain->insert($singleOs->name, $singleOs->count);
+            }
         }
         
         $this->_log = \Zend\Registry::get('log');
@@ -78,8 +82,6 @@ class Chain
         $os->version = 'unknown';
         $os->bits    = 0;
         
-        $osModel = new Os();
-        
         if ($this->_chain->count()) {
             $this->_chain->top();
             
@@ -95,7 +97,7 @@ class Chain
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    $this->_log->warn($e);
+                    //$this->_log->warn($e);
                     
                     $this->_chain->next();
                     continue;
@@ -108,7 +110,7 @@ class Chain
                         return $os;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        $this->_log->warn($e);
+                        //$this->_log->warn($e);
                         
                         $this->_chain->next();
                         continue;
@@ -124,7 +126,11 @@ class Chain
         if ($handler->canHandle($userAgent)) {
             $os = $handler->detect($userAgent);
             
-            $os->idOs = $osModel->searchByName($os->name, $os->version, $os->bits)->idOs;
+            $os->idOs = $this->_service->searchByName($os->name, $os->version, $os->bits)->idOs;
+            
+            if ($os->name) {
+                $this->_chain->insert($os->name, 1);
+            }
         }
         
         return $os;

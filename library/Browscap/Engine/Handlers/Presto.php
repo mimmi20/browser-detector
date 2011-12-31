@@ -41,7 +41,13 @@ class Presto extends EngineHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Presto'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Presto'))
+            && !$this->utils->checkIfContainsAnyOf($userAgent, array('Opera'))
+        ) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Trident', 'Gecko'))) {
             return false;
         }
         
@@ -87,10 +93,10 @@ class Presto extends EngineHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/Presto\/(\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Presto\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (int) $matches[1];
+            return $matches[1];
         }
         
         return 0;

@@ -52,12 +52,7 @@ class Agents extends ServiceAbstract
     
     public function count($idAgents)
     {
-        $agent = $this->find($idAgents)->current();
-        
-        if ($agent) {
-            $agent->count += 1;
-            $agent->save();
-        }
+        return $this->_model->count($idAgents);
     }
     
     public function countByAgent($userAgent)

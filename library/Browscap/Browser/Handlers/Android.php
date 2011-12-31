@@ -63,7 +63,7 @@ class Android extends BrowserHandler
             'Lunascape',
             'Iron',
             'Maemo',
-            'Palemoon',
+            'PaleMoon',
             'Rockmelt',
             'Midori',
             //Fakes
@@ -75,23 +75,6 @@ class Android extends BrowserHandler
         }
         
         return $this->utils->checkIfContains($userAgent, 'Android');
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**

@@ -59,7 +59,7 @@ class Avant extends BrowserHandler
             'Galeon',
             'Lunascape',
             'Opera',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'AOL',
             'TOB',

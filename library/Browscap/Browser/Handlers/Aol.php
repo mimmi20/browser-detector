@@ -58,7 +58,7 @@ class Aol extends BrowserHandler
             'Galeon',
             'Lunascape',
             'Opera',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'TOB',
             'Avant',

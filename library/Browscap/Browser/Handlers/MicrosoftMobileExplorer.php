@@ -67,7 +67,7 @@ class MicrosoftMobileExplorer extends BrowserHandler
             'Galeon',
             'Lunascape',
             'Opera',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'Avant',
             'MyIE',

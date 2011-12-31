@@ -61,7 +61,7 @@ class Chrome extends BrowserHandler
             'Lunascape',
             'Iron',
             'Maemo',
-            'Palemoon',
+            'PaleMoon',
             'Rockmelt',
             //Fakes
             'User Agent'

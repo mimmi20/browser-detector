@@ -66,7 +66,7 @@ class Lunascape extends BrowserHandler
             'Maxthon',
             'Galeon',
             'Opera',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'Avant',
             'MyIE',
@@ -115,13 +115,13 @@ class Lunascape extends BrowserHandler
         $doMatch = preg_match('/Lunascape\/([\d\.ab]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         $doMatch = preg_match('/Lunascape ([\d\.ab]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

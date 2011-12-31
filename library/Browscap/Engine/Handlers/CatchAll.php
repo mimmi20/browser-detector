@@ -77,10 +77,10 @@ class CatchAll extends BrowserHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/' . $engine . '\/(\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/' . $engine . '\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (int) $matches[1];
+            return $matches[1];
         }
         
         return 0;

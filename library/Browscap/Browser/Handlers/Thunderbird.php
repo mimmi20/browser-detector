@@ -62,7 +62,7 @@ class Thunderbird extends BrowserHandler
             'Lunascape',
             'Opera',
             'Navigator',
-            'Palemoon',
+            'PaleMoon',
             'SeaMonkey',
             'Flock',
             'Fennec',

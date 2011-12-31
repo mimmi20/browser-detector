@@ -95,7 +95,6 @@ class BrowscapData extends ModelAbstract
         }
 
         $select->limit(1);
-        echo $select->assemble() . "\n";
         $data = $this->fetchAll($select)->current();
         
         if (!$data) {
@@ -119,13 +118,12 @@ class BrowscapData extends ModelAbstract
         return $data;
     }
     
-    public function count($idBrowserData)
+    public function count($idBrowscapData)
     {
-        $browser = $this->find($idBrowserData)->current();
+        $browser = $this->find($idBrowscapData)->current();
         
         if ($browser) {
-            $browser->count += 1;
-            $browser->save();
+            $this->update(array('count' => $browser->count + 1), 'idBrowscapData = ' . (int) $browser->idBrowscapData);
         }
     }
     

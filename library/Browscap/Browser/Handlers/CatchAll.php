@@ -74,4 +74,17 @@ class CatchAll extends BrowserHandler
         
         return $class;
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectAll()
+    {
+        $detector = new \Browscap\Browscap();
+        return $detector->getAllBrowsers();
+    }
 }

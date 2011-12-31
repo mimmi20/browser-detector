@@ -67,7 +67,7 @@ class InternetExplorer extends BrowserHandler
             'Galeon',
             'Lunascape',
             'Opera',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'Avant',
             'MyIE',
@@ -119,18 +119,19 @@ class InternetExplorer extends BrowserHandler
     protected function detectBrowser($userAgent, \StdClass $class = null)
     {
         $patterns = array(
-            '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => 10.00,
-            '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => 9.00,
-            '/Mozilla\/4\.0 \(compatible; MSIE 8\.0.*/'       => 8.00,
-            '/Mozilla\/4\.0 \(compatible; MSIE 7\.0.*/'       => 7.00,
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 6\.0.*/'  => 6.00,
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.5.*/'  => 5.50,
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.01.*/' => 5.01,
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.0.*/'  => 5.00,
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.01.*/' => 4.01,
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.0.*/'  => 4.00,
-            '/Mozilla\/.*\(.*compatible.*;.*MSIE 3\..*/'      => 3.00,
-            '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => 2.00
+            '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => '10.0',
+            '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
+            '/Mozilla\/4\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
+            '/Mozilla\/4\.0 \(compatible; MSIE 8\.0.*/'       => '8.0',
+            '/Mozilla\/4\.0 \(compatible; MSIE 7\.0.*/'       => '7.0',
+            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 6\.0.*/'  => '6.0',
+            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.5.*/'  => '5.5',
+            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.01.*/' => '5.01',
+            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.0.*/'  => '5.0',
+            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.01.*/' => '4.01',
+            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.0.*/'  => '4.0',
+            '/Mozilla\/.*\(.*compatible.*;.*MSIE 3\..*/'      => '3.0',
+            '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => '2.0'
         );
         
         $class->browser = 'Internet Explorer';

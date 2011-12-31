@@ -62,7 +62,7 @@ class Fennec extends BrowserHandler
             'Lunascape',
             'Opera',
             'Navigator',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'SeaMonkey',
             //Fakes

@@ -61,7 +61,7 @@ class Rockmelt extends BrowserHandler
             'Lunascape',
             'Iron',
             'Maemo',
-            'Palemoon',
+            'PaleMoon',
             //Fakes
             'User Agent'
         );

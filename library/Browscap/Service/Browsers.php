@@ -65,6 +65,7 @@ class Browsers extends ServiceAbstract
     
     public function getAll()
     {
+        return $this->_model->getAll();
         return $this->_model->getCached('browser')->getAll();
     }
 

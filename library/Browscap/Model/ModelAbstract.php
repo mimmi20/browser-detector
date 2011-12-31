@@ -133,6 +133,50 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
     }
     
     abstract public function getResource();
+
+    /**
+     * executes a statement
+     *
+     * @param \Zend\Db\Statement\Pdo $stmt
+     *
+     * @return array|boolean
+     */
+    protected function execute(
+        \Zend\Db\Statement\Pdo $stmt, $fetchMode = \PDO::FETCH_OBJ, $select = '',
+        $values = array())
+    {
+        try {
+            $stmt->execute();
+
+            /**
+             * @var array
+             */
+            return $stmt->fetchAll($fetchMode);
+        } catch (\Exception $e) {
+            $this->logExecuteError($e, $stmt, $fetchMode, $select, $values);
+
+            return false;
+        }
+    }
+
+    protected function logExecuteError(\Exception $e,
+        \Zend\Db\Statement\Pdo $stmt, $fetchMode = \PDO::FETCH_OBJ, $select = '',
+        $values = array())
+    {
+        if ($select instanceof \Zend\Db\Select) {
+            $select = $select->assemble();
+        }
+
+        $message   = $e->getMessage()
+            . "\n" . 'ErrorInfo: ' . serialize($stmt->errorInfo())
+            . "\n" . 'Query: ' . $select
+            . "\n" . 'Fetch Mode: ' . $fetchMode
+            . "\n" . 'Values: ' . serialize($values);
+
+        $exception = new \Exception($message, $e->getCode(), $e);
+
+        $this->_logger->err($exception);
+    }
 }
 
 /*

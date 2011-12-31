@@ -41,7 +41,7 @@ class Java extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAny($userAgent, array('Java'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Java'))) {
             return false;
         }
         
@@ -99,7 +99,7 @@ class Java extends OsHandler
         $doMatch = preg_match('/Java\/(\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

@@ -121,26 +121,26 @@ class Windows extends OsHandler
         $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            switch ((float) $matches[1]) {
-                case 6.2:
-                    $version = 8;
+            switch ($matches[1]) {
+                case '6.2':
+                    $version = '8';
                     break;
-                case 6.1:
-                    $version = 7;
+                case '6.1':
+                    $version = '7';
                     break;
-                case 6.0:
+                case '6.0':
                     $version = 'Vista';
                     break;
-                case 5.2:
-                    $version = 2003;
+                case '5.2':
+                    $version = '2003';
                     break;
-                case 5.1:
+                case '5.1':
                     $version = 'XP';
                     break;
-                case 5.0:
-                    $version = 2000;
+                case '5.0':
+                    $version = '2000';
                     break;
-                case 4.0:
+                case '4.0':
                 default:
                     $version = 'NT';
                     break;

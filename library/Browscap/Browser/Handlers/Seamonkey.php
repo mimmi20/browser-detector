@@ -64,7 +64,7 @@ class Seamonkey extends BrowserHandler
             'Lunascape',
             'Opera',
             'Navigator',
-            'Palemoon',
+            'PaleMoon',
             'Flock',
             'Fennec',
             //Fakes

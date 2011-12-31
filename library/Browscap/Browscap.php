@@ -133,35 +133,22 @@ class Browscap
         if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
             || !$array = $this->_cache->load($cacheId)
         ) {
-            if (null === $this->_globalCache) {
-                $cacheGlobalId = 'agentsGlobal';
-
-                // Load the cache at the first request
-                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-                    || !$this->_globalCache = $this->_cache->load($cacheGlobalId)
-                ) {
-                    $this->_globalCache = $this->_getBrowserFromCache();
-
-                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                        $this->_cache->save($this->_globalCache, $cacheGlobalId);
-                    }
-                }
-            }
+            $globalCache = $this->_getGlobalCache();
 
             $browser = array();
-            if (isset($this->_globalCache['patterns'])
-                && is_array($this->_globalCache['patterns'])
+            if (isset($globalCache['patterns'])
+                && is_array($globalCache['patterns'])
             ) {
-                foreach ($this->_globalCache['patterns'] as $key => $pattern) {
+                foreach ($globalCache['patterns'] as $key => $pattern) {
                     if (preg_match($pattern, $sUserAgent)) {
                         $browser = array(
                             $sUserAgent, // Original useragent
                             trim(strtolower($pattern), '@'),
-                            $this->_globalCache['userAgents'][$key]
+                            $globalCache['userAgents'][$key]
                         );
 
                         $browser = $browser
-                                 + $this->_globalCache['browsers'][$key];
+                                 + $globalCache['browsers'][$key];
 
                         break;
                     }
@@ -171,7 +158,7 @@ class Browscap
             // Add the keys for each property
             $array = array();
             foreach ($browser as $key => $value) {
-                $array[$this->_globalCache['properties'][(int)$key]] = $value;
+                $array[$globalCache['properties'][(int)$key]] = $value;
             }
 
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
@@ -180,6 +167,59 @@ class Browscap
         }
 
         return $bReturnAsArray ? $array : (object) $array;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string $sUserAgent   the user agent string
+     * @param bool   $bReturnAsArray whether return an array or an object
+     *
+     * @return stdClas|array the object containing the browsers details.
+     *                       Array if $bReturnAsArray is set to true.
+     */
+    private function _getGlobalCache()
+    {
+        if (null === $this->_globalCache) {
+            $cacheGlobalId = 'agentsGlobal';
+
+            // Load the cache at the first request
+            if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
+                || !$this->_globalCache = $this->_cache->load($cacheGlobalId)
+            ) {
+                $this->_globalCache = $this->_getBrowserFromCache();
+
+                if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                    $this->_cache->save($this->_globalCache, $cacheGlobalId);
+                }
+            }
+        }
+        
+        return $this->_globalCache;
+    }
+    
+    public function getAllBrowsers()
+    {
+        $globalCache = $this->_getGlobalCache();
+        
+        if (empty($globalCache)) {
+            return null;
+        }
+        
+        $allBrowsers = array();
+        
+        foreach (array_keys($globalCache['patterns']) as $key) {
+            $browser = $globalCache['browsers'][$key];
+            $array   = array();
+            
+            foreach ($browser as $key => $value) {
+                $array[$globalCache['properties'][(int)$key]] = $value;
+            }
+            
+            $allBrowsers[] = $array;
+        }
+        
+        return $allBrowsers;
     }
 
     /**

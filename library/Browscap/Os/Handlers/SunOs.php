@@ -97,7 +97,7 @@ class Sun extends Linux
         $doMatch = preg_match('/SunOS\/(\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

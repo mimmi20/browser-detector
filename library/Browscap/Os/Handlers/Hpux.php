@@ -99,7 +99,7 @@ class Hpux extends OsHandler
         $doMatch = preg_match('/HP-UX\/(\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

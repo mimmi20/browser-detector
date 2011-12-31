@@ -103,7 +103,7 @@ class RimOs extends OsHandler
         $doMatch = preg_match('/BlackBerry\/(\d+\.\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            return (float) $matches[1];
+            return $matches[1];
         }
         
         return 0;

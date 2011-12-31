@@ -36,7 +36,6 @@ use \Browscap\Service\Browsers;
  */
 class Chain
 {
-
     /**
      * @var \
      */
@@ -53,6 +52,8 @@ class Chain
     protected $handler = null;
     
     private $_log = null;
+    
+    private $_service = null;
 
     /**
      * Initializes the factory with an instance of all possible Handler objects from the given $context
@@ -65,11 +66,14 @@ class Chain
         $this->_chain = new \SplPriorityQueue();
         
         // get all Browsers
-        $browserModel = new Browsers();
-        $allBrowsers  = $browserModel->getAll();
+        $this->_service = new Browsers();
+        $allBrowsers    = $this->_service->getAll();
         
         foreach ($allBrowsers as $singleBrowser) {
-            $this->_chain->insert($singleBrowser->name, $singleBrowser->count);
+            if ($singleBrowser->name) {
+                echo "\t\t\t" . 'detecting Browser (Chain - add Browser [' . $singleBrowser->name . ', ' . $singleBrowser->count . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                $this->_chain->insert($singleBrowser->name, $singleBrowser->count);
+            }
         }
         
         $this->_log = \Zend\Registry::get('log');
@@ -84,65 +88,88 @@ class Chain
      */
     public function detect($userAgent)
     {
+        echo "\t\t\t" . 'detecting Browser (Chain - init): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
         $browser = new \StdClass();
         $browser->browser    = 'unknown';
         $browser->version    = 0.0;
         $browser->bits       = 0;
         $browser->idBrowsers = null;
-        
-        $browserModel = new Browsers();
-        
+        echo "\t\t\t" . 'detecting Browser (Chain - creating result class): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
         if ($this->_chain->count()) {
             $this->_chain->top();
-            
+            echo "\t\t\t" . 'detecting Browser (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             while ($this->_chain->valid()) {
                 $class = ltrim($this->_chain->current(), '\\');
                 $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
                 $class = preg_replace('/[^a-zA-Z ]/', '', $class);
                 $class = str_replace(' ', '', ucwords($class));
-                
+                echo "\t\t\t" . 'detecting Browser (Chain - creating class name [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                 $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
                 try {
                     $handler = new $className();
                 } catch (\Exception $e) {
                     echo "Class '$className' not found \n";
                     
-                    $this->_log->warn($e);
+                    //$this->_log->warn($e);
                     
                     $this->_chain->next();
                     continue;
                 }
                 
                 if ($handler->canHandle($userAgent)) {
+                    echo "\t\t\t" . 'detecting Browser (Chain - can handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                     try {
+                        echo "\t\t\t" . 'detecting Browser (Chain - can handle [' . $class . '] - start): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                         $browser = $handler->detect($userAgent);
                         
-                        $browser->idBrowsers = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
-                        
+                        $browser->idBrowsers = $this->_service->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
+                        echo "\t\t\t" . 'detecting Browser (Chain - can handle [' . $class . '] - end): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                         return $browser;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
                         $this->_log->warn($e);
-                        
+                        echo "\t\t\t" . 'detecting Browser (Chain - can not handle): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                         $this->_chain->next();
                         continue;
                     }
                 }
-                
+                echo "\t\t\t" . 'detecting Browser (Chain - can not handle): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                 $this->_chain->next();
             }
         }
-        
+        echo "\t\t\t" . 'detecting Browser (Chain - not found in chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
         //if not deteceted yet, use ini file as fallback
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $browser = $handler->detect($userAgent);
-            echo print_r($browser, true);
-            $searchresult = $browserModel->searchByBrowser($browser->browser, $browser->version, $browser->bits);
+            //echo print_r($browser, true);
+            $searchresult = $this->_service->searchByBrowser($browser->browser, $browser->version, $browser->bits);
             
             if ($searchresult) {
                 $browser->idBrowsers = $searchresult->idBrowsers;
             }
+            echo "\t\t\t" . 'detecting Browser (Chain - found in fallback [' . $browser->browser . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+            if ($browser->browser) {
+                $this->_chain->insert($browser->browser, 1);
+            }
+            /*
+            $allBrowsers = $handler->detectAll();
+            foreach ($allBrowsers as $singleBrowser) {
+                $bits = 0;
+                
+                if (!empty($singleBrowser['Win64']) && $singleBrowser['Win64']) {
+                    $bits = 64;
+                } elseif (!empty($singleBrowser['Win32']) && $singleBrowser['Win32']) {
+                    $bits = 32;
+                } elseif (!empty($singleBrowser['Win16']) && $singleBrowser['Win16']) {
+                    $bits = 16;
+                }
+                
+                if (!empty($singleBrowser['Browser'])) {
+                    $this->_service->searchByBrowser($singleBrowser['Browser'], empty($singleBrowser['Version']) ? '0' : $singleBrowser['Version'], $bits);
+                }
+            }
+            /**/
         }
         
         return $browser;
