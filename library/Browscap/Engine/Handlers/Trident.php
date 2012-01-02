@@ -53,11 +53,7 @@ class Trident extends EngineHandler
             return false;
         }
         
-        if ($this->utils->checkIfContains($userAgent, )) {
-            return true;
-        }
-        
-        return false;
+        return true;
     }
     
     /**
