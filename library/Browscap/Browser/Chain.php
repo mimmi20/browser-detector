@@ -62,17 +62,22 @@ class Chain
     public function __construct()
     {
         // the utility classes
-        $this->utils  = new Utils();
-        $this->_chain = new \SplPriorityQueue();
+        $this->utils    = new Utils();
+        $this->_chain   = new \SplPriorityQueue();
+        $this->_service = new Browsers();
         
         // get all Browsers
-        $this->_service = new Browsers();
-        $allBrowsers    = $this->_service->getAll();
+        $directory = __DIR__ . DS . 'Handlers' . DS;
+        $iterator  = new \DirectoryIterator($directory);
         
-        foreach ($allBrowsers as $singleBrowser) {
-            if ($singleBrowser->name) {
-                echo "\t\t\t" . 'detecting Browser (Chain - add Browser [' . $singleBrowser->name . ', ' . $singleBrowser->count . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
-                $this->_chain->insert($singleBrowser->name, $singleBrowser->count);
+        foreach ($iterator as $fileinfo) {
+            if ($fileinfo->isFile() && $fileinfo->isReadable()) {
+                $filename = $fileinfo->getBasename('.php');
+                
+                if ('CatchAll' != $filename) {
+                    //echo "\t\t\t" . 'detecting Browser (Chain - add Browser [' . $filename . ', 1]): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                    $this->_chain->insert($filename, 1);
+                }
             }
         }
         
@@ -100,9 +105,9 @@ class Chain
             echo "\t\t\t" . 'detecting Browser (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             while ($this->_chain->valid()) {
                 $class = ltrim($this->_chain->current(), '\\');
-                $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
-                $class = preg_replace('/[^a-zA-Z ]/', '', $class);
-                $class = str_replace(' ', '', ucwords($class));
+                //$class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+                //$class = preg_replace('/[^a-zA-Z ]/', '', $class);
+                //$class = str_replace(' ', '', ucwords($class));
                 echo "\t\t\t" . 'detecting Browser (Chain - creating class name [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                 $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
                 try {
@@ -128,12 +133,12 @@ class Chain
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
                         $this->_log->warn($e);
-                        echo "\t\t\t" . 'detecting Browser (Chain - can not handle): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                        echo "\t\t\t" . 'detecting Browser (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                         $this->_chain->next();
                         continue;
                     }
                 }
-                echo "\t\t\t" . 'detecting Browser (Chain - can not handle): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                echo "\t\t\t" . 'detecting Browser (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                 $this->_chain->next();
             }
         }
@@ -149,6 +154,12 @@ class Chain
                 $browser->idBrowsers = $searchresult->idBrowsers;
             }
             echo "\t\t\t" . 'detecting Browser (Chain - found in fallback [' . $browser->browser . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+            $class = ltrim($browser->browser, '\\');
+            $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+            $class = preg_replace('/[^a-zA-Z ]/', '', $class);
+            $class = str_replace(' ', '', ucwords($class));
+            $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
+            echo "Class '$className' not found \n";
             if ($browser->browser) {
                 $this->_chain->insert($browser->browser, 1);
             }

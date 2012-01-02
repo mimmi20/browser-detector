@@ -41,11 +41,15 @@ class GenericCrawler extends GeneralCrawlers
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0 (compatible; Scumbot/')) {
-            return false;
+        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0 (compatible; Scumbot/')
+            || $this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0 (compatible; Spider')
+            || $this->utils->checkIfStartsWith($userAgent, 'USER_AGENT')
+            || ($this->utils->checkIfStartsWith($userAgent, 'User') && $this->utils->checkIfContains($userAgent, 'Agent:'))
+        ) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -65,16 +69,16 @@ class GenericCrawler extends GeneralCrawlers
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Scumbot\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Scumbot\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

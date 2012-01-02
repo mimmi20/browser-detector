@@ -57,10 +57,6 @@ class Palemoon extends BrowserHandler
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
             'Maxthon',
@@ -81,7 +77,8 @@ class Palemoon extends BrowserHandler
             'WebTV',
             'ArgClrInt',
             //Fakes
-            'User agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -108,7 +105,7 @@ class Palemoon extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -118,6 +115,6 @@ class Palemoon extends BrowserHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

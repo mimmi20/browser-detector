@@ -43,7 +43,7 @@ class Wisebot extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContains($userAgent, 'WISEbot')) {
+        if (!$this->utils->checkIfContains($userAgent, 'WISEbot')) {
             return false;
         }
         
@@ -67,7 +67,7 @@ class Wisebot extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -77,6 +77,6 @@ class Wisebot extends BrowserHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

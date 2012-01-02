@@ -44,4 +44,16 @@ class Sagem extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'Sagem') || $this->utils->checkIfStartsWith($userAgent, 'SAGEM');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Sagem';
+    }
 }

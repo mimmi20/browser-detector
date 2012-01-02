@@ -43,7 +43,7 @@ class Wizz extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContains($userAgent, 'Wizz RSS News Reader')) {
+        if (!$this->utils->checkIfContains($userAgent, 'Wizz RSS News Reader')) {
             return false;
         }
         

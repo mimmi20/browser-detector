@@ -44,4 +44,16 @@ class Qtek extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'Qtek');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Qtek';
+    }
 }

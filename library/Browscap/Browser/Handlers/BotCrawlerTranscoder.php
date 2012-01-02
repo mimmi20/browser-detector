@@ -39,12 +39,14 @@ class BotCrawlerTranscoder extends BrowserHandler
      * @param string $userAgent
      * @return boolean 
      */
-    public function canHandle($userAgent) {
-        foreach($this->botCrawlerTranscoder as $key) {
-            if($this->utils->checkIfContainsCaseInsensitive($userAgent, $key)) {
+    public function canHandle($userAgent)
+    {
+        foreach ($this->botCrawlerTranscoder as $key) {
+            if ($this->utils->checkIfContainsCaseInsensitive($userAgent, $key)) {
                 return true;
             }
         }
+        
         return false;
     }
 
@@ -76,7 +78,6 @@ class BotCrawlerTranscoder extends BrowserHandler
         'indy library',
         'slurp',
         'crawl',
-        'wget',
         'ucweblient',
         //'rma',
         'snoopy',

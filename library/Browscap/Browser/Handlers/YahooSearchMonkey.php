@@ -43,7 +43,7 @@ class YahooSearchMonkey extends Yahoo
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Yahoo!', 'SearchMonkey'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Yahoo!', 'SearchMonkey'))) {
             return false;
         }
         

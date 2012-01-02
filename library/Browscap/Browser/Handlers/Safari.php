@@ -41,15 +41,13 @@ class Safari extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
+            && !$this->utils->checkIfStartsWith($userAgent, 'Safari/')
+        ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Safari', 'AppleWebKit', 'CFNetwork'))) {
             return false;
         }
         
@@ -64,15 +62,18 @@ class Safari extends BrowserHandler
             'Maemo',
             'PaleMoon',
             'Rockmelt',
+            //mobile Version
+            'Mobile',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
             return false;
         }
         
-        return $this->utils->checkIfContains($userAgent, 'Safari');
+        return true;
     }
     
     /**
@@ -92,16 +93,28 @@ class Safari extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Version\/([\d\.]+) Safari\/.*/', $userAgent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/Safari\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

@@ -41,15 +41,11 @@ class Fennec extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
         if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko', 'Fennec'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
             return false;
         }
         
@@ -66,7 +62,8 @@ class Fennec extends BrowserHandler
             'Flock',
             'SeaMonkey',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -93,16 +90,16 @@ class Fennec extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Fennec\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Fennec\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

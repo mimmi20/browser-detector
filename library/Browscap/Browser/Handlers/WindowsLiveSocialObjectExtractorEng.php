@@ -43,7 +43,7 @@ class WindowsLiveSocialObjectExtractorEng extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'Windows-Live-Social-Object-Extractor-Engine')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Windows-Live-Social-Object-Extractor-Engine')) {
             return false;
         }
         
@@ -67,16 +67,16 @@ class WindowsLiveSocialObjectExtractorEng extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Windows-Live-Social-Object-Extractor-Engine\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Windows-Live-Social-Object-Extractor-Engine\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

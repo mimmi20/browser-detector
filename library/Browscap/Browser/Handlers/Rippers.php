@@ -55,7 +55,7 @@ class Rippers extends GeneralCrawlers
     {
         $class = new \StdClass();
         $class->browser = 'Rippers';
-        $class->version = 0.00;
+        $class->version = '0';
         $class->bits    = 0;
         
         return $class;

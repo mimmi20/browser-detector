@@ -49,15 +49,11 @@ class Argclrint extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Argclrint'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('ArgClrInt'))) {
             return false;
         }
         
@@ -84,7 +80,8 @@ class Argclrint extends BrowserHandler
             'WebTV',
             'MSIE',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -92,23 +89,6 @@ class Argclrint extends BrowserHandler
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -128,16 +108,16 @@ class Argclrint extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Argclrint\/([\d\.]+);/', $userAgent, $matches);
+        $doMatch = preg_match('/Argclrint\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

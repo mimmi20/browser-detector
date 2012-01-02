@@ -41,7 +41,45 @@ class FakeIe extends FakeBrowser
      */
     public function canHandle($userAgent)
     {
-        return false;
+        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE'))) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+            return false;
+        }
+        
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Maxthon',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'PaleMoon',
+            'Flock',
+            'Avant',
+            'MyIE',
+            // other Browsers
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV',
+            'ArgClrInt',
+            'Firefox',
+            //Fakes
+            'User agent',
+            'User-Agent'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
@@ -55,7 +93,7 @@ class FakeIe extends FakeBrowser
     {
         $class = new \StdClass();
         $class->browser = 'Fake IE';
-        $class->version = 0.00;
+        $class->version = '0';
         $class->bits    = 0;
         
         return $class;

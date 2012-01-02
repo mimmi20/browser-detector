@@ -42,6 +42,26 @@ class Nokia extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfContains($userAgent, 'Nokia');
+        if (!$this->utils->checkIfContains($userAgent, 'Nokia')) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('OviBrowser', 'NokiaBrowser'))) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Nokia';
     }
 }

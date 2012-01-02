@@ -53,16 +53,21 @@ class Chain
     {
         $this->utils = new Utils();
         
-        $this->_chain = new \SplPriorityQueue();
+        $this->_chain   = new \SplPriorityQueue();
+        $this->_service = new Engines();
         
         // get all Engines
-        $this->_service = new Engines();
-        $allEngines     = $this->_service->getAll();
+        $directory = __DIR__ . DS . 'Handlers' . DS;
+        $iterator  = new \DirectoryIterator($directory);
         
-        foreach ($allEngines as $singleEngine) {
-            if ($singleEngine->name) {
-                echo "\t\t\t" . 'detecting rendering Engine (Chain - add Engine [' . $singleEngine->name . ', ' . $singleEngine->count . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
-                $this->_chain->insert($singleEngine->name, $singleEngine->count);
+        foreach ($iterator as $fileinfo) {
+            if ($fileinfo->isFile() && $fileinfo->isReadable()) {
+                $filename = $fileinfo->getBasename('.php');
+                
+                if ('CatchAll' != $filename) {
+                    //echo "\t\t\t" . 'detecting rendering Engine (Chain - add Engine [' . $filename . ', 1]): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                    $this->_chain->insert($filename, 1);
+                }
             }
         }
         
@@ -88,9 +93,9 @@ class Chain
             echo "\t\t\t" . 'detecting rendering Engine (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             while ($this->_chain->valid()) {
                 $class = ltrim($this->_chain->current(), '\\');
-                $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
-                $class = preg_replace('/[^a-zA-Z ]/', '', $class);
-                $class = str_replace(' ', '', ucwords($class));
+                //$class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+                //$class = preg_replace('/[^a-zA-Z ]/', '', $class);
+                //$class = str_replace(' ', '', ucwords($class));
                 echo "\t\t\t" . 'detecting rendering Engine (Chain - creating class name [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                 $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
                 try {
@@ -114,12 +119,12 @@ class Chain
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
                         $this->_log->warn($e);
-                        echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                        echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                         $this->_chain->next();
                         continue;
                     }
                 }
-                
+                echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
                 $this->_chain->next();
             }
         }
@@ -129,6 +134,12 @@ class Chain
         if ($handler->canHandle($userAgent)) {
             $engine = $handler->detect($userAgent);
             echo "\t\t\t" . 'detecting rendering Engine (Chain - found in fallback [' . $engine->engine . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";var_dump($userAgent, $engine);
+            $class = ltrim($engine->engine, '\\');
+            $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+            $class = preg_replace('/[^a-zA-Z ]/', '', $class);
+            $class = str_replace(' ', '', ucwords($class));
+            $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
+            echo "Class '$className' not found \n";
             if ($engine->engine) {
                 $this->_chain->insert($engine->engine, 1);
             }

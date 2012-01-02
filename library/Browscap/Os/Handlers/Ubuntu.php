@@ -39,12 +39,13 @@ class Ubuntu extends Linux
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Ubuntu'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Ubuntu', 'ubuntu'))) {
             return false;
         }
         
         $isNotReallyAWindows = array(
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -53,24 +54,6 @@ class Ubuntu extends Linux
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->osFull   = 'Ubuntu Linux';
-        $class->version  = $this->detectVersion($userAgent);
-        $class->bits     = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -90,16 +73,22 @@ class Ubuntu extends Linux
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Ubuntu\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Ubuntu\/([\d\.\-]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/ubuntu([\d\.\-]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

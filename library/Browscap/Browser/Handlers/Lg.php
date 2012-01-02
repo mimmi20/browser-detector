@@ -43,4 +43,16 @@ class Lg extends BrowserHandler
     {
         return $this->utils->checkIfContains($userAgent, 'LG') || $this->utils->checkIfStartsWith($userAgent, 'lg');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Lg';
+    }
 }

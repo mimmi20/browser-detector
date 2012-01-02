@@ -85,7 +85,7 @@ class Gecko extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -97,6 +97,6 @@ class Gecko extends EngineHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

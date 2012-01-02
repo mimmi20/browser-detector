@@ -43,11 +43,15 @@ class Midori extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Midori')) {
-            return false;
+        if ($this->utils->checkIfStartsWith($userAgent, 'Midori')) {
+            return true;
         }
         
-        return true;
+        if ($this->utils->checkIfContains($userAgent, 'Midori')) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**
@@ -67,16 +71,16 @@ class Midori extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Midori\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Midori\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

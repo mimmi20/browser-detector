@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * AOLHanlder
  *
@@ -31,7 +29,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Tob extends BrowserHandler
+class Tob extends InternetExplorer
 {
     /**
      * Intercept all UAs Containing AOL and are not mobile browsers
@@ -40,15 +38,11 @@ class Tob extends BrowserHandler
      * @return boolean
      */
     public function canHandle($userAgent) {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
         if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE', 'TOB'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
             return false;
         }
         
@@ -61,7 +55,6 @@ class Tob extends BrowserHandler
             'PaleMoon',
             'Flock',
             'AOL',
-            'Avant',
             'MyIE',
             //others
             'AppleWebKit',
@@ -73,7 +66,8 @@ class Tob extends BrowserHandler
             'BlackBerry',
             'WebTV',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -81,5 +75,20 @@ class Tob extends BrowserHandler
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent, \StdClass $class = null)
+    {
+        parent::detectBrowser($userAgent, $class);
+        
+        $class->browser = 'T-Online Browser (Internet Explorer)';
+        
     }
 }

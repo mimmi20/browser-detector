@@ -40,15 +40,11 @@ class MaemoBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko', 'Maemo'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Gecko', 'Maemo'))) {
             return false;
         }
         
@@ -65,7 +61,8 @@ class MaemoBrowser extends BrowserHandler
             'Flock',
             'Fennec',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -73,5 +70,17 @@ class MaemoBrowser extends BrowserHandler
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Maemo Browser';
     }
 }

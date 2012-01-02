@@ -49,15 +49,11 @@ class MicrosoftMobileExplorer extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
         if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE', 'IEMobile'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
             return false;
         }
         
@@ -82,7 +78,8 @@ class MicrosoftMobileExplorer extends BrowserHandler
             'WebTV',
             'ArgClrInt',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -109,7 +106,7 @@ class MicrosoftMobileExplorer extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -119,6 +116,6 @@ class MicrosoftMobileExplorer extends BrowserHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

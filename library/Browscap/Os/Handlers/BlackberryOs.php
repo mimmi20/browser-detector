@@ -29,7 +29,7 @@ namespace Browscap\Os\Handlers;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Blackberry extends Linux
+class BlackberryOs extends Linux
 {
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
@@ -45,6 +45,7 @@ class Blackberry extends Linux
         
         $isNotReallyAWindows = array(
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -53,24 +54,6 @@ class Blackberry extends Linux
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->osFull   = $class->name;
-        $class->version  = $this->detectVersion($userAgent);
-        $class->bits     = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -90,16 +73,16 @@ class Blackberry extends Linux
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/BlackBerry\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BlackBerry\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

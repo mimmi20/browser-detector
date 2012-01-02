@@ -65,16 +65,16 @@ class Camcrawler extends ImageCrawlers
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Camcrawler\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Camcrawler\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

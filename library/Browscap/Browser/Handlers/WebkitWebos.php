@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -32,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class WebkitWebos extends BrowserHandler
+class WebkitWebos extends MobileSafari
 {
     /**
      * Final Interceptor: Intercept
@@ -43,7 +41,11 @@ class WebkitWebos extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0 (webOS/')) {
+        if (!parent::canHandle($userAgent)) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContains($userAgent, 'webOS')) {
             return false;
         }
         
@@ -59,7 +61,7 @@ class WebkitWebos extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'WebKit/webOS';
+        return 'WebKit/webOS (Mobile Safari)';
     }
     
     /**
@@ -67,16 +69,16 @@ class WebkitWebos extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Mozilla/5.0 (webOS\/([\d\.]+);/', $userAgent, $matches);
+        $doMatch = preg_match('/webOS\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

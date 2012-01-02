@@ -38,4 +38,16 @@ class Sendo extends BrowserHandler
     {
         return(strpos($userAgent, 'Sendo') === 0);
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Sendo';
+    }
 }

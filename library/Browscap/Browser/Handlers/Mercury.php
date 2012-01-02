@@ -43,7 +43,7 @@ class Mercury extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mercury')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mercury3')) {
             return false;
         }
         
@@ -67,16 +67,16 @@ class Mercury extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Mercury3\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Mercury3\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

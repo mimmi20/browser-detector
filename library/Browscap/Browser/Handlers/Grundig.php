@@ -44,4 +44,16 @@ class Grundig extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'Grundig') || $this->utils->checkIfStartsWith($userAgent, 'GRUNDIG');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Grundig';
+    }
 }

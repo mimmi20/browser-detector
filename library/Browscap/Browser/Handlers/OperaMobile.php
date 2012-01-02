@@ -41,19 +41,17 @@ class OperaMobile extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
+            && !$this->utils->checkIfStartsWith($userAgent, 'Opera/')
+        ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Presto'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'Opera Mobi')) {
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
-        return $this->utils->checkIfContains($userAgent, 'Opera Mobi');
+        return true;
     }
     
     /**
@@ -73,16 +71,28 @@ class OperaMobile extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Akregator\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/Opera ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Opera Mobi\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

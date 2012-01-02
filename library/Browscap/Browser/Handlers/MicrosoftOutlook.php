@@ -49,15 +49,10 @@ class MicrosoftOutlook extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Outlook')) {
-            return false;
-        }
-        
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Microsoft Office')) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
+        if (!$this->utils->checkIfContains($userAgent, 'Outlook')
+            && !$this->utils->checkIfContains($userAgent, 'Microsoft Office')
+            && !$this->utils->checkIfContains($userAgent, 'MSOffice')
+        ) {
             return false;
         }
         
@@ -77,13 +72,12 @@ class MicrosoftOutlook extends BrowserHandler
             'AppleWebKit',
             'Chrome',
             'Linux',
-            'MSOffice',
-            'Outlook',
             'IEMobile',
             'BlackBerry',
             'WebTV',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -110,22 +104,34 @@ class MicrosoftOutlook extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Microsoft Office Outlook ([\d\.]+);/', $userAgent, $matches);
+        $doMatch = preg_match('/Microsoft Office Outlook ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/Microsoft Office\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Microsoft Outlook ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Microsoft Office\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

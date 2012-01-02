@@ -45,6 +45,7 @@ class Android extends Linux
         
         $isNotReallyAWindows = array(
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -53,24 +54,6 @@ class Android extends Linux
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->osFull   = $class->name;
-        $class->version  = $this->detectVersion($userAgent);
-        $class->bits     = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -90,16 +73,16 @@ class Android extends Linux
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Android\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Android\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

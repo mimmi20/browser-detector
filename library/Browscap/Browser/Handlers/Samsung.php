@@ -39,8 +39,25 @@ class Samsung extends BrowserHandler
      * @param string $userAgent
      * @return boolean
      */
-    public function canHandle($userAgent) {
+    public function canHandle($userAgent)
+    {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Jasmine', 'NetFront'))) {
+            return false;
+        }
+        
         return $this->utils->checkIfContains($userAgent, 'Samsung/SGH')
                 || $this->utils->checkIfStartsWithAnyOf($userAgent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Samsung';
     }
 }

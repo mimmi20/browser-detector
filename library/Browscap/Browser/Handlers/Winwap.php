@@ -43,7 +43,7 @@ class Winwap extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'WinWAP')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'WinWAP')) {
             return false;
         }
         
@@ -67,7 +67,7 @@ class Winwap extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -83,6 +83,6 @@ class Winwap extends BrowserHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

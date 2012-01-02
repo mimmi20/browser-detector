@@ -40,15 +40,7 @@ class Opera extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
-            return false;
-        }
-        
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Presto'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
+        if (!$this->utils->checkIfContains($userAgent, 'Opera')) {
             return false;
         }
         
@@ -57,14 +49,15 @@ class Opera extends BrowserHandler
             'Opera Mini',
             'Opera Mobi',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnOpera)) {
             return false;
         }
         
-        return $this->utils->checkIfContains($userAgent, 'Opera');
+        return true;
     }
     
     /**
@@ -84,16 +77,28 @@ class Opera extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Opera\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/Opera\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Opera ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

@@ -51,6 +51,7 @@ class Linux extends OsHandler
             'Debian',
             'Ubuntu',
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -59,24 +60,6 @@ class Linux extends OsHandler
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->osFull   = $class->name;
-        $class->version  = $this->detectVersion($userAgent);
-        $class->bits     = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -96,16 +79,16 @@ class Linux extends OsHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Firefox\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Linux\/([\d\.\-]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

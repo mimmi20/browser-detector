@@ -69,7 +69,7 @@ class WindowsMediaPlayer extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -79,12 +79,12 @@ class WindowsMediaPlayer extends BrowserHandler
             return $matches[1];
         }
         
-        $doMatch = preg_match('/NSPlayer\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/NSPlayer\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

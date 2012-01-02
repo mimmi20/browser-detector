@@ -57,7 +57,7 @@ class GeneralCrawlers extends BrowserHandler
     {
         $class = new \StdClass();
         $class->browser = 'General Crawlers';
-        $class->version = 0.00;
+        $class->version = '0';
         $class->bits    = 0;
         
         return $class;

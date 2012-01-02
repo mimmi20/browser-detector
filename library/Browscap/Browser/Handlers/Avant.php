@@ -41,15 +41,11 @@ class Avant extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
         if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE', 'Avant'))) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
             return false;
         }
         
@@ -74,7 +70,8 @@ class Avant extends BrowserHandler
             'BlackBerry',
             'WebTV',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

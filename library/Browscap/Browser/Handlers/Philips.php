@@ -44,4 +44,16 @@ class Philips extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'Philips') || $this->utils->checkIfStartsWith($userAgent, 'PHILIPS');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Philips';
+    }
 }

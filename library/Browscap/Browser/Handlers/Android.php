@@ -20,8 +20,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * AndroidUserAgentHanlder
  * 
@@ -32,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Android extends BrowserHandler
+class Android extends MobileSafari
 {
     /**
      * Intercept all UAs containing 'Android'
@@ -42,39 +40,17 @@ class Android extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Dalvik/')
+            && !parent::canHandle($userAgent)
+        ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'Android')) {
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'Midori',
-            //Fakes
-            'User Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
-            return false;
-        }
-        
-        return $this->utils->checkIfContains($userAgent, 'Android');
+        return true;
     }
     
     /**
@@ -86,18 +62,6 @@ class Android extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'unknown';
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return float
-     */
-    protected function detectVersion($userAgent)
-    {
-        return 0.0;
+        return 'Android Webkit (Mobile Safari)';
     }
 }

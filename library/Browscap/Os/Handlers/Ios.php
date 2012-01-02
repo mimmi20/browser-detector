@@ -41,12 +41,13 @@ class Ios extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('IphoneOSX'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'iPhone', 'iPod'))) {
             return false;
         }
         
         $isNotReallyAWindows = array(
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -55,24 +56,6 @@ class Ios extends OsHandler
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->osFull   = $class->name;
-        $class->version  = $this->detectVersion($userAgent);
-        $class->bits     = $this->detectBits($userAgent);
-        
-        return $class;
     }
     
     /**
@@ -92,16 +75,16 @@ class Ios extends OsHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/IphoneOSX\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/IphoneOSX\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

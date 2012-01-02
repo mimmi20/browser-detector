@@ -41,19 +41,17 @@ class OperaMini extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
+            && !$this->utils->checkIfStartsWith($userAgent, 'Opera/')
+        ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Presto'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'Opera Mini')) {
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
-        return $this->utils->checkIfContains($userAgent, 'Opera Mini');
+        return true;
     }
     
     /**
@@ -73,16 +71,16 @@ class OperaMini extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Opera Mini\/([\d\.]+);/', $userAgent, $matches);
+        $doMatch = preg_match('/Opera Mini\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

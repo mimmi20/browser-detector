@@ -41,7 +41,7 @@ class Flock extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
@@ -49,14 +49,9 @@ class Flock extends BrowserHandler
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
             'Chromium',
-            'Flock',
             'Galeon',
             'Lunascape',
             'Iron',
@@ -64,7 +59,8 @@ class Flock extends BrowserHandler
             'PaleMoon',
             'Rockmelt',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
@@ -91,16 +87,16 @@ class Flock extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Flock\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Flock\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

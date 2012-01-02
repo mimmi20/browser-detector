@@ -41,18 +41,13 @@ class Netscape extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
         $isNotReallyAnFirefox = array(
             // using also the Gecko rendering engine
             'Firefox',
-            'Gecko',
             'Maemo',
             'Maxthon',
             'Camino',
@@ -68,7 +63,7 @@ class Netscape extends BrowserHandler
             'Nutch',
             'CazoodleBot',
             'LOOQ',
-            // using also the Trident rendering engine
+            // using the Trident rendering engine
             'MSIE',
             'AOL',
             'TOB',
@@ -76,21 +71,21 @@ class Netscape extends BrowserHandler
             'MyIE',
             'AppleWebKit',
             'Chrome',
-            'Linux',
             'MSOffice',
             'Outlook',
             'IEMobile',
             'BlackBerry',
             'WebTV',
             'ArgClrInt',
-            // using also the KHTML rendering engine
+            // using the KHTML rendering engine
             'AppleWebKit',
             'Chrome',
             'Chromium',
             'Iron',
             'Rockmelt',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -117,16 +112,22 @@ class Netscape extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Mozilla\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/rv\:([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/Mozilla\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

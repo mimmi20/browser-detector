@@ -55,7 +55,7 @@ class LinkCheckers extends GeneralCrawlers
     {
         $class = new \StdClass();
         $class->browser = 'Link Checkers';
-        $class->version = 0.00;
+        $class->version = '0';
         $class->bits    = 0;
         
         return $class;

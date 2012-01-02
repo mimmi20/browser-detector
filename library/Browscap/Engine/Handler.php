@@ -104,7 +104,7 @@ abstract class Handler implements MatcherInterface
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {

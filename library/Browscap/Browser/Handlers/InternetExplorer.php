@@ -57,10 +57,6 @@ class InternetExplorer extends BrowserHandler
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
             'Maxthon',
@@ -71,6 +67,9 @@ class InternetExplorer extends BrowserHandler
             'Flock',
             'Avant',
             'MyIE',
+            //branded versions
+            'AOL',
+            'TOB',
             // other Browsers
             'AppleWebKit',
             'Chrome',
@@ -83,7 +82,8 @@ class InternetExplorer extends BrowserHandler
             'ArgClrInt',
             'Firefox',
             //Fakes
-            'User agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

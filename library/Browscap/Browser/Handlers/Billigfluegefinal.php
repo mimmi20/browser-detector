@@ -43,11 +43,13 @@ class Billigfluegefinal extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'BilligFluegeFinal')) {
-            return false;
+        if ($this->utils->checkIfStartsWith($userAgent, 'BilligFluegeFinal')
+            || $this->utils->checkIfStartsWith($userAgent, 'billigFluegeFinal')
+        ) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -67,16 +69,22 @@ class Billigfluegefinal extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/BilligFluegeFinal\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/BilligFluegeFinal\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/billigFluegeFinal\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

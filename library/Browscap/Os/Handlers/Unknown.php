@@ -43,6 +43,10 @@ class Unknown extends OsHandler
      */
     public function canHandle($userAgent)
     {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('WordPress', 'TYPO3', 'bot', 'AppEngine-Google', 'Feedfetcher-Google'))) {
+            return true;
+        }
+        
         return false;
     }
     

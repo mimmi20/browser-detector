@@ -42,4 +42,16 @@ class LGUPLUS extends BrowserHandler
     {
         return $this->utils->checkIfContainsAnyOf($userAgent, array('LGUPLUS', 'lgtelecom'));
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'LGUPLUS';
+    }
 }

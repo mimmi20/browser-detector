@@ -41,7 +41,7 @@ class Khtml extends EngineHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
             return false;
         }
         
@@ -85,7 +85,7 @@ class Khtml extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -97,7 +97,7 @@ class Khtml extends EngineHandler
             return $matches[1];
         }
         
-        $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
@@ -109,6 +109,12 @@ class Khtml extends EngineHandler
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/CFNetwork\/([\d\.\+]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

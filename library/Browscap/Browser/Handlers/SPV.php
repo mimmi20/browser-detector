@@ -43,4 +43,16 @@ class SPV extends BrowserHandler
     {
         return $this->utils->checkIfContains($userAgent, 'SPV');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'SPV';
+    }
 }

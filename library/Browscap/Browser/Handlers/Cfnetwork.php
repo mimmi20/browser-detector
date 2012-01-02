@@ -43,13 +43,9 @@ class Cfnetwork extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('CFNetwork'))
-            || $this->utils->checkIfContainsAll($userAgent, array('Darwin'))
+        if (!$this->utils->checkIfContains($userAgent, 'CFNetwork')
+            || $this->utils->checkIfContains($userAgent, 'Darwin')
         ) {
-            return false;
-        }
-        
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
             return false;
         }
         
@@ -73,16 +69,16 @@ class Cfnetwork extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/CFNetwork\/([\dab\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/CFNetwork\/([\dab\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

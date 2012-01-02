@@ -41,17 +41,19 @@ class Trident extends EngineHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto'))) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/') 
+            || !$this->utils->checkIfContainsAnyOf($userAgent, array('MSIE', 'Trident'))
+        ) {
             return false;
         }
         
-        if ($this->utils->checkIfContains($userAgent, 'Trident')) {
-            return true;
+        if (!$this->utils->checkIfContains($userAgent, 'MSIE')
+            && $this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto'))
+        ) {
+            return false;
         }
         
-        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/') 
-            && $this->utils->checkIfContains($userAgent, 'MSIE')
-        ) {
+        if ($this->utils->checkIfContains($userAgent, )) {
             return true;
         }
         
@@ -91,7 +93,7 @@ class Trident extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -103,6 +105,6 @@ class Trident extends EngineHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

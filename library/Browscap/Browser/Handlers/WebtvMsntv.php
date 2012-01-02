@@ -71,16 +71,16 @@ class WebtvMsntv extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/WebTV\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/WebTV\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

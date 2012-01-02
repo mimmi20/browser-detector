@@ -43,7 +43,7 @@ class YahooSiteExplorer extends Yahoo
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Yahoo!', 'Site Explorer'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Yahoo!', 'Site Explorer'))) {
             return false;
         }
         

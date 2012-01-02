@@ -41,11 +41,11 @@ class Seamonkey extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko', 'SeaMonkey'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Gecko', 'SeaMonkey'))) {
             return false;
         }
         
@@ -68,7 +68,8 @@ class Seamonkey extends BrowserHandler
             'Flock',
             'Fennec',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -95,16 +96,16 @@ class Seamonkey extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/SeaMonkey\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/SeaMonkey\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

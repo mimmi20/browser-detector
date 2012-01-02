@@ -51,10 +51,6 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if ($this->utils->isSpamOrCrawler($userAgent)) {
-            return false;
-        }
-        
         $isNotReallyAnFirefox = array(
             // using also the Gecko rendering engine
             'Maemo',
@@ -68,6 +64,7 @@ class Firefox extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
+            'Iceweasel',
             //Nutch
             'Nutch',
             'CazoodleBot',
@@ -75,7 +72,8 @@ class Firefox extends BrowserHandler
             //others
             'MSIE',
             //Fakes
-            'User Agent'
+            'User agent',
+            'User-Agent'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -102,7 +100,7 @@ class Firefox extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -112,6 +110,6 @@ class Firefox extends BrowserHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

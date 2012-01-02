@@ -35,7 +35,8 @@ class Windows extends OsHandler
 {
     private $_windows = array(
         'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
-        'WinNT', 'Win31', 'WinME', 'Windows NT'
+        'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows', 'Windows 98',
+        'Windows 95'
     );
     
     /**
@@ -57,6 +58,7 @@ class Windows extends OsHandler
             'Windows Phone OS',
             'IEMobile',
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -102,14 +104,14 @@ class Windows extends OsHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
         $version = '';
         
         foreach ($this->_windows as $winVersion) {
-            if ($this->utils->checkIfContainsAnyOf($userAgent, array($winVersion))) {
+            if ($this->utils->checkIfContains($userAgent, $winVersion)) {
                 $version = substr($winVersion, 3);
                 break;
             }
@@ -118,7 +120,42 @@ class Windows extends OsHandler
         if ('dows NT' != $version) {
             return $version;
         }
-        $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $userAgent, $matches);
+        
+        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            switch ($matches[1]) {
+                case '6.2':
+                    $version = '8';
+                    break;
+                case '6.1':
+                    $version = '7';
+                    break;
+                case '6.0':
+                    $version = 'Vista';
+                    break;
+                case '5.3':
+                    $version = '2003';
+                    break;
+                case '5.2':
+                    $version = '2003';
+                    break;
+                case '5.1':
+                    $version = 'XP';
+                    break;
+                case '5.0':
+                    $version = '2000';
+                    break;
+                case '4.0':
+                default:
+                    $version = 'NT';
+                    break;
+            }
+            
+            return $version;
+        }
+        
+        $doMatch = preg_match('/Windows ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             switch ($matches[1]) {
@@ -149,7 +186,7 @@ class Windows extends OsHandler
             return $version;
         }
         
-        return 0;
+        return '';
     }
     
     /**

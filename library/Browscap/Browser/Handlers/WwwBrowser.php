@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class Wotbox extends BrowserHandler
+class WwwBrowser extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,7 +43,7 @@ class Wotbox extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Wotbox')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'WWW_Browser')) {
             return false;
         }
         
@@ -59,7 +59,7 @@ class Wotbox extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Wotbox';
+        return 'WWW Browser';
     }
     
     /**
@@ -67,16 +67,16 @@ class Wotbox extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Wotbox\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/WWW_Browser\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

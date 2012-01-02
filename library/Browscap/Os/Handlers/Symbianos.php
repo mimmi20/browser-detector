@@ -41,12 +41,13 @@ class Symbianos extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('SymbianOS'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60'))) {
             return false;
         }
         
         $isNotReallyAWindows = array(
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -92,16 +93,22 @@ class Symbianos extends OsHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/SymbianOS\/(\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/SymbianOS\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        $doMatch = preg_match('/Symbian\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

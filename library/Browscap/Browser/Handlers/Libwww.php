@@ -43,7 +43,7 @@ class Libwww extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('libwww'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'libwww')) {
             return false;
         }
         
@@ -67,22 +67,22 @@ class Libwww extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/libwww\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/libwww\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/libwww-perl\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/libwww-perl\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

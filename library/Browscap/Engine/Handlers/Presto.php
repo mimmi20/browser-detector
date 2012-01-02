@@ -87,7 +87,7 @@ class Presto extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -99,6 +99,6 @@ class Presto extends EngineHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

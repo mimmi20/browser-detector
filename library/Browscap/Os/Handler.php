@@ -106,11 +106,11 @@ abstract class Handler implements MatcherInterface
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        return 0.0;
+        return '0';
     }
     
     /**
@@ -122,7 +122,7 @@ abstract class Handler implements MatcherInterface
      */
     protected function detectBits($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64', 'WOW64', 'x86_64'))) {
             return 64;
         }
         
@@ -134,6 +134,6 @@ abstract class Handler implements MatcherInterface
             return 32;
         }
         
-        return 0;
+        return '';
     }
 }

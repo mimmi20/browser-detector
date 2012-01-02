@@ -55,7 +55,7 @@ class FakeBrowser extends Rippers
     {
         $class = new \StdClass();
         $class->browser = 'Fake Browser';
-        $class->version = 0.00;
+        $class->version = '0';
         $class->bits    = 0;
         
         return $class;

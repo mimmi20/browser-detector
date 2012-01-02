@@ -44,4 +44,16 @@ class Pantech extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'Pantech') || $this->utils->checkIfStartsWith($userAgent, 'PANTECH') || $this->utils->checkIfStartsWith($userAgent, 'PT-') || $this->utils->checkIfStartsWith($userAgent, 'PG-');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Pantech';
+    }
 }

@@ -45,4 +45,16 @@ class Kyocera extends BrowserHandler
     {
         return $this->utils->checkIfStartsWith($userAgent, 'kyocera') || $this->utils->checkIfStartsWith($userAgent, 'QC-') || $this->utils->checkIfStartsWith($userAgent, 'KWC-');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Kyocera';
+    }
 }

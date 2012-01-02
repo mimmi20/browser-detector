@@ -46,4 +46,16 @@ class Motorola extends BrowserHandler
     {
         return $this->utils->checkIfContains($userAgent, 'Mot-') || $this->utils->checkIfContains($userAgent, 'MOT-') || $this->utils->checkIfContains($userAgent, 'Motorola');
     }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Motorola';
+    }
 }

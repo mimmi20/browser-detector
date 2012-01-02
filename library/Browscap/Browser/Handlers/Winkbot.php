@@ -43,7 +43,7 @@ class Winkbot extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'WinkBot')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'WinkBot')) {
             return false;
         }
         
@@ -67,7 +67,7 @@ class Winkbot extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
@@ -77,6 +77,6 @@ class Winkbot extends BrowserHandler
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

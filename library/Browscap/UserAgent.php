@@ -197,6 +197,7 @@ class UserAgent
         );
         
         if ($forceDetected 
+            || !($this->_cache instanceof \Zend\Cache\Cache)
             || !($browserArray = $this->_cache->load($cacheId))
         ) {
             echo 'detecting Browser (using _detect - Start): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
@@ -204,8 +205,13 @@ class UserAgent
             
             echo 'detecting Browser (using _detect - End)  : ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             
-
-            $this->_cache->save($browserArray, $cacheId);
+            if (!$forceDetected 
+                && $this->_cache instanceof \Zend\Cache\Cache
+            ) {
+                echo 'detecting Browser (writing cache - Start)  : ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                $this->_cache->save($browserArray, $cacheId);
+                echo 'detecting Browser (writing cache - End)  : ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+            }
         } else {
             if (null === $this->_serviceAgents) {
                 $this->_serviceAgents = new Service\Agents();
@@ -262,11 +268,13 @@ class UserAgent
         ) {
             echo "\t\t" . 'detecting rendering Engine (searching Engine failed): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             // detect the Rendering Engine
-            
             $chainEngines = new Engine\Chain();
-            $engine       = $chainEngines->detect($userAgent);
+            
+            $engine           = $chainEngines->detect($userAgent);
             echo "\t\t" . 'detecting rendering Engine (detecting Engine): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $agent->idEngines = $this->_serviceEngines->countByName($engine->engine, $engine->version);
+            
+            unset($chainEngines);
         } else {
             echo "\t\t" . 'detecting rendering Engine (searching Engine secceeded): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $this->_serviceEngines->count($agent->idEngines);
@@ -291,10 +299,13 @@ class UserAgent
             echo "\t\t" . 'detecting Browser (searching Browser failed): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             // detect the browser
             $browserChain = new Browser\Chain();
+            
             echo "\t\t" . 'detecting Browser (creating Chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
-            $browser      = $browserChain->detect($userAgent);
+            $browser           = $browserChain->detect($userAgent);
             echo "\t\t" . 'detecting Browser (detecting Browser): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $agent->idBrowsers = $browser->idBrowsers;
+            
+            unset($browserChain);
         } else {
             echo "\t\t" . 'detecting Browser (searching Browser succeded): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $browser = (object) $browser->toArray();
@@ -326,12 +337,15 @@ class UserAgent
         ) {
             echo "\t\t" . 'detecting OS (searching OS failed): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             // detect the Operating System
-            $osChain     = new Os\Chain();
+            $osChain = new Os\Chain();
+            
             echo "\t\t" . 'detecting OS (creating Chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $os          = $osChain->detect($userAgent);//var_dump($os);exit;
             echo "\t\t" . 'detecting OS (detecting OS): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $agent->idOs = $osService->countByName($os->name, $os->version, $os->bits);
             echo "\t\t" . 'detecting OS (counting OS): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+            
+            unset($osChain);
         } else {
             echo "\t\t" . 'detecting OS (searching OS succseeded): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
             $osService->count($agent->idOs);

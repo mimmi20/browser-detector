@@ -53,6 +53,7 @@ class WindowsMobileOs extends OsHandler
             // using also the Trident rendering engine
             'Linux',
             //Fakes
+            'User agent',
             'User-Agent'
         );
         
@@ -89,14 +90,14 @@ class WindowsMobileOs extends OsHandler
      */
     protected function detectBrowser($userAgent, $class = null)
     {
-        $class->name    = 'Windows Mobile OS';
+        $class->name = 'Windows Mobile OS';
         
         if (!$this->utils->checkIfContains($userAgent, 'Windows CE')) {
             $class->version = '6.0 (CE)';
             
             return;
         }
-        $doMatch = preg_match('/Windows Phone OS (\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows Phone OS ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             $class->version = $matches[1];

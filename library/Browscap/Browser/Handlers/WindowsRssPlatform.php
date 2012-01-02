@@ -43,7 +43,7 @@ class WindowsRssPlatform extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'Windows-RSS-Platform')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Windows-RSS-Platform')) {
             return false;
         }
         
@@ -67,16 +67,16 @@ class WindowsRssPlatform extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Windows-RSS-Platform\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Windows-RSS-Platform\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }

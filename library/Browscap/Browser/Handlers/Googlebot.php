@@ -71,40 +71,40 @@ class Googlebot extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return float
+     * @return string
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Googlebot\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/Googlebot v([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot v([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/Googlebot-Image\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot-Image\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/Googlebot-News\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot-News\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/Google\/([\d\.]+) /', $userAgent, $matches);
+        $doMatch = preg_match('/Google\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        return 0;
+        return '';
     }
 }
