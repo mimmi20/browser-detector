@@ -42,7 +42,7 @@ class Trident extends EngineHandler
     public function canHandle($userAgent)
     {
         if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/') 
-            || !$this->utils->checkIfContainsAnyOf($userAgent, array('MSIE', 'Trident'))
+            && !$this->utils->checkIfContainsAnyOf($userAgent, array('MSIE', 'Trident'))
         ) {
             return false;
         }
@@ -102,5 +102,10 @@ class Trident extends EngineHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 86837;
     }
 }

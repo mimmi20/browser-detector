@@ -71,7 +71,7 @@ class Links extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Links \(([\d\.]+);.*\)/', $userAgent, $matches);
+        $doMatch = preg_match('/Links \(([\d\.]+)\)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

@@ -93,4 +93,9 @@ class FreeBsd extends OsHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 8;
+    }
 }

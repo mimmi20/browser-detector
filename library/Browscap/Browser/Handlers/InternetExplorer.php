@@ -66,6 +66,7 @@ class InternetExplorer extends BrowserHandler
             'PaleMoon',
             'Flock',
             'Avant',
+            'avantbrowser',
             'MyIE',
             //branded versions
             'AOL',
@@ -83,7 +84,8 @@ class InternetExplorer extends BrowserHandler
             'Firefox',
             //Fakes
             'User agent',
-            'User-Agent'
+            'User-Agent',
+            'MSIECrawler'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -98,26 +100,28 @@ class InternetExplorer extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $class = new \StdClass();
-        $this->detectBrowser($userAgent, $class);
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
+        return 'Internet Explorer';
     }
     
     /**
-     * detects the browser name from the given user agent
+     * detects the browser version from the given user agent
      *
      * @param string $userAgent
      *
      * @return string
      */
-    protected function detectBrowser($userAgent, \StdClass $class = null)
+    protected function detectVersion($userAgent)
     {
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         $patterns = array(
             '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => '10.0',
             '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
@@ -131,19 +135,21 @@ class InternetExplorer extends BrowserHandler
             '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.01.*/' => '4.01',
             '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.0.*/'  => '4.0',
             '/Mozilla\/.*\(.*compatible.*;.*MSIE 3\..*/'      => '3.0',
-            '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => '2.0'
+            '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => '2.0',
+            '/Mozilla\/.*\(.*compatible.*;.*MSIE 1\..*/'      => '1.0'
         );
-        
-        $class->browser = 'Internet Explorer';
         
         foreach ($patterns as $pattern => $version) {
             if (preg_match($pattern, $userAgent)) {
-                $class->version = $version;
-                
-                return;
+                return $version;
             }
         }
         
-        $class->version = 0;
+        return '';
+    }
+    
+    public function getWeight()
+    {
+        return 72994;
     }
 }

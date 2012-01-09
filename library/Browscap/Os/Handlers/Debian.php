@@ -91,4 +91,9 @@ class Debian extends Linux
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 14;
+    }
 }

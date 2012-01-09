@@ -42,7 +42,7 @@ class SonyEricsson extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfContains($userAgent, 'SonyEricsson');
+        return $this->utils->checkIfContainsAnyOf($userAgent, array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
     }
     
     /**
@@ -55,5 +55,28 @@ class SonyEricsson extends BrowserHandler
     protected function detectBrowser($userAgent)
     {
         return 'SonyEricsson';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectVersion($userAgent)
+    {
+        $doMatch = preg_match('/SEMC-Browser\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
+    }
+    
+    public function getWeight()
+    {
+        return 3;
     }
 }

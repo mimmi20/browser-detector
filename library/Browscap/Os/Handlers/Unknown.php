@@ -43,7 +43,7 @@ class Unknown extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('WordPress', 'TYPO3', 'bot', 'AppEngine-Google', 'Feedfetcher-Google'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('WordPress', 'TYPO3', 'bot', 'Bot', 'swarm', 'Nutch', 'python', 'cURL', '\\x', 'Feed Parser', 'Stream', 'Dillo', 'Index', '.exe', 'Spider', 'SPIDER', '000;', 'Cloud', 'client', 'Google', 'Netscape', '?>', 'www.', 'WebWasher'))) {
             return true;
         }
         
@@ -67,5 +67,10 @@ class Unknown extends OsHandler
         $class->bits     = 0;
         
         return $class;
+    }
+    
+    public function getWeight()
+    {
+        return 0;
     }
 }

@@ -56,4 +56,9 @@ class Htc extends BrowserHandler
     {
         return 'Htc';
     }
+    
+    public function getWeight()
+    {
+        return 14;
+    }
 }

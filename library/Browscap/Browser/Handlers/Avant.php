@@ -45,7 +45,11 @@ class Avant extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE', 'Avant'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'MSIE')) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('avantbrowser', 'Avant'))) {
             return false;
         }
         

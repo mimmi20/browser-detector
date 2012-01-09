@@ -43,6 +43,10 @@ class DefaultBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('\\x', '.exe', 'Netscape', 'Index', '?>', 'www.', 'WebWasher'))) {
+            return true;
+        }
+        
         return false;
     }
     

@@ -79,4 +79,9 @@ class PearHttpRequest extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 9;
+    }
 }

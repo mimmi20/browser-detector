@@ -96,4 +96,9 @@ class Ipod extends Apple
     {
         return '0';
     }
+    
+    public function getWeight()
+    {
+        return 3;
+    }
 }

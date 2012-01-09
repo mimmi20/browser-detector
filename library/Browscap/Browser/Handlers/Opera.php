@@ -101,4 +101,9 @@ class Opera extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 690;
+    }
 }

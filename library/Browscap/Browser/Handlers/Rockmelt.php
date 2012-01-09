@@ -79,7 +79,7 @@ class Rockmelt extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Rockmelt';
+        return 'RockMelt';
     }
     
     /**
@@ -91,7 +91,7 @@ class Rockmelt extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Rockmelt\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/RockMelt\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

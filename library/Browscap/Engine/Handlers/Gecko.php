@@ -99,4 +99,9 @@ class Gecko extends EngineHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 5244;
+    }
 }

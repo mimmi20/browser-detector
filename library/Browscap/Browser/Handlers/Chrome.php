@@ -41,7 +41,9 @@ class Chrome extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
+            && !$this->utils->checkIfStartsWith($userAgent, 'Chrome/')
+        ) {
             return false;
         }
         
@@ -59,6 +61,9 @@ class Chrome extends BrowserHandler
             'Maemo',
             'PaleMoon',
             'Rockmelt',
+            'Comodo Dragon',
+            'Google Earth',
+            'Arora',
             //Fakes
             'User agent',
             'User-Agent'
@@ -99,5 +104,10 @@ class Chrome extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 778;
     }
 }

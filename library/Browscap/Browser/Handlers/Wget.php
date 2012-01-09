@@ -61,4 +61,9 @@ class Wget extends BrowserHandler
     {
         return 'Wget';
     }
+    
+    public function getWeight()
+    {
+        return 4;
+    }
 }

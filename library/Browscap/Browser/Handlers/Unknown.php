@@ -45,4 +45,9 @@ class Unknown extends BrowserHandler
     {
         return false;
     }
+    
+    public function getWeight()
+    {
+        return 0;
+    }
 }

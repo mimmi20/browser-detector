@@ -102,4 +102,9 @@ class Iceowl extends Thunderbird
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 2;
+    }
 }

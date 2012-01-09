@@ -117,4 +117,9 @@ class Khtml extends EngineHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 2455;
+    }
 }

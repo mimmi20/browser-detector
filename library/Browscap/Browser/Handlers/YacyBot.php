@@ -61,4 +61,9 @@ class YacyBot extends BrowserHandler
     {
         return 'YaCy Bot';
     }
+    
+    public function getWeight()
+    {
+        return 143;
+    }
 }

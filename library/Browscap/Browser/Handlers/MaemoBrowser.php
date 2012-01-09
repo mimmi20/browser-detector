@@ -83,4 +83,9 @@ class MaemoBrowser extends BrowserHandler
     {
         return 'Maemo Browser';
     }
+    
+    public function getWeight()
+    {
+        return 7;
+    }
 }

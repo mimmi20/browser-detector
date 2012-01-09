@@ -87,4 +87,9 @@ class Macosx extends Macintosh
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 295;
+    }
 }

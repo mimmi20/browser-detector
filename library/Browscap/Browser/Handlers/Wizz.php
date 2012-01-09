@@ -61,4 +61,9 @@ class Wizz extends BrowserHandler
     {
         return 'Wizz';
     }
+    
+    public function getWeight()
+    {
+        return 232;
+    }
 }

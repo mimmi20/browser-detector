@@ -98,6 +98,17 @@ class Icab extends BrowserHandler
             return $matches[1];
         }
         
+        $doMatch = preg_match('/iCab ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 2;
     }
 }

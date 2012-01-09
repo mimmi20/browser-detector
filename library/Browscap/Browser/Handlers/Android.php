@@ -64,4 +64,9 @@ class Android extends MobileSafari
     {
         return 'Android Webkit (Mobile Safari)';
     }
+    
+    public function getWeight()
+    {
+        return 287;
+    }
 }

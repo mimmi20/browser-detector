@@ -64,4 +64,9 @@ class Nokia extends BrowserHandler
     {
         return 'Nokia';
     }
+    
+    public function getWeight()
+    {
+        return 27;
+    }
 }

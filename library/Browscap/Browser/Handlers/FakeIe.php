@@ -41,41 +41,11 @@ class FakeIe extends FakeBrowser
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('MSIE', 'Trident'))) {
             return false;
         }
         
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
-            return false;
-        }
-        
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Maxthon',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            'Avant',
-            'MyIE',
-            // other Browsers
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Firefox',
-            //Fakes
-            'User agent',
-            'User-Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
             return false;
         }
         
@@ -97,5 +67,10 @@ class FakeIe extends FakeBrowser
         $class->bits    = 0;
         
         return $class;
+    }
+    
+    public function getWeight()
+    {
+        return 2627;
     }
 }

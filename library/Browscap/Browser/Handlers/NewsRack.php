@@ -86,4 +86,9 @@ class NewsRack extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 5;
+    }
 }

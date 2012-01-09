@@ -56,7 +56,7 @@ abstract class Handler implements MatcherInterface
      */
     public function __construct()
     {
-         $this->utils = new Utils();
+        $this->utils = new Utils();
     }
     
     /**
@@ -134,5 +134,10 @@ abstract class Handler implements MatcherInterface
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 1;
     }
 }

@@ -78,4 +78,9 @@ class AppengineGoogle extends BrowserHandler
     {
         return 'AppEngine-Google';
     }
+    
+    public function getWeight()
+    {
+        return 2;
+    }
 }

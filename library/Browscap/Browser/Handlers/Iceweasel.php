@@ -109,4 +109,9 @@ class Iceweasel extends Firefox
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 5;
+    }
 }

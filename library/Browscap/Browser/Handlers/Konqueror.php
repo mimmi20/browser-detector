@@ -45,7 +45,7 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Konqueror', 'Gecko'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Konqueror', 'KHTML'))) {
             return false;
         }
         
@@ -103,5 +103,10 @@ class Konqueror extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 19;
     }
 }

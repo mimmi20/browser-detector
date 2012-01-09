@@ -44,7 +44,7 @@ class Motorola extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfContains($userAgent, 'Mot-') || $this->utils->checkIfContains($userAgent, 'MOT-') || $this->utils->checkIfContains($userAgent, 'Motorola');
+        return $this->utils->checkIfContainsAnyOf($userAgent, array('Mot-', 'MOT-', 'Motorola', 'MIB'));
     }
     
     /**
@@ -57,5 +57,35 @@ class Motorola extends BrowserHandler
     protected function detectBrowser($userAgent)
     {
         return 'Motorola';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectVersion($userAgent)
+    {
+        $doMatch = preg_match('/MIB\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/MIB([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/MIB\/BER([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

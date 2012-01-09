@@ -41,7 +41,7 @@ class Macintosh extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Macintosh')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Macintosh', 'Mac_PowerPC'))) {
             return false;
         }
         
@@ -90,5 +90,10 @@ class Macintosh extends OsHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 250;
     }
 }

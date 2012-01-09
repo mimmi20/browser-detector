@@ -87,4 +87,9 @@ class Bada extends OsHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 4;
+    }
 }

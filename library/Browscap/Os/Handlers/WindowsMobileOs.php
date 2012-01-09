@@ -69,16 +69,11 @@ class WindowsMobileOs extends OsHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $class = new \StdClass();
-        $this->detectBrowser($userAgent, $class);
-        $class->osFull  = $class->name . ' ' . $class->version;
-        $class->bits    = 0;
-        
-        return $class;
+        return 'Windows Mobile OS';
     }
     
     /**
@@ -88,22 +83,22 @@ class WindowsMobileOs extends OsHandler
      *
      * @return string
      */
-    protected function detectBrowser($userAgent, $class = null)
+    protected function detectVersion($userAgent)
     {
-        $class->name = 'Windows Mobile OS';
-        
         if (!$this->utils->checkIfContains($userAgent, 'Windows CE')) {
-            $class->version = '6.0 (CE)';
-            
-            return;
+            return '6.0 (CE)';
         }
         $doMatch = preg_match('/Windows Phone OS ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
-            $class->version = $matches[1];
-            return;
+            return $matches[1];
         }
         
-        $class->version = '';
+        return '';
+    }
+    
+    public function getWeight()
+    {
+        return 2;
     }
 }

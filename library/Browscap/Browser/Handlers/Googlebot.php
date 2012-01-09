@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -32,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class Googlebot extends BrowserHandler
+class Googlebot extends Google
 {
     /**
      * Final Interceptor: Intercept

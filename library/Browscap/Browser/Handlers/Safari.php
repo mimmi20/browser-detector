@@ -62,6 +62,8 @@ class Safari extends BrowserHandler
             'Maemo',
             'PaleMoon',
             'Rockmelt',
+            'rekonq',
+            'OmniWeb',
             //mobile Version
             'Mobile',
             //Fakes
@@ -116,5 +118,10 @@ class Safari extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 276;
     }
 }

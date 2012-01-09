@@ -102,4 +102,9 @@ class Fennec extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 4;
+    }
 }

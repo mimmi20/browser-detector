@@ -79,4 +79,9 @@ class WindowsLiveMail extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 536;
+    }
 }

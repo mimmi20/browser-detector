@@ -85,4 +85,9 @@ class Android extends Linux
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 648;
+    }
 }

@@ -90,4 +90,9 @@ class CatchAll extends OsHandler
         }
         return $class;
     }
+    
+    public function getWeight()
+    {
+        return -1;
+    }
 }

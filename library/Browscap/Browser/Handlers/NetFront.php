@@ -41,21 +41,13 @@ class NetFront extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'NetFront')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
             return false;
         }
         
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
+            'Kindle',
             //Fakes
             'User agent',
             'User-Agent'
@@ -90,6 +82,30 @@ class NetFront extends BrowserHandler
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/NetFront\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/NF\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/NetFrontLifeBrowser\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/NF3 ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/NF([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

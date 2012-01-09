@@ -91,4 +91,9 @@ class Ubuntu extends Linux
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 72;
+    }
 }

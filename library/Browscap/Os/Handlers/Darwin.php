@@ -87,4 +87,9 @@ class Darwin extends OsHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 128;
+    }
 }

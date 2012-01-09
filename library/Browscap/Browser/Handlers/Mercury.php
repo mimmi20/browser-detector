@@ -79,4 +79,9 @@ class Mercury extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 8;
+    }
 }

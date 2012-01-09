@@ -67,7 +67,7 @@ class Blackberry extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/BlackBerry\d\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BlackBerry\d+\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
@@ -80,6 +80,11 @@ class Blackberry extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 36;
     }
 }
 

@@ -97,4 +97,9 @@ class Nutch extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 12;
+    }
 }

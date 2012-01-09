@@ -66,4 +66,9 @@ class Unknown extends BrowserHandler
         
         return $class;
     }
+    
+    public function getWeight()
+    {
+        return 0;
+    }
 }

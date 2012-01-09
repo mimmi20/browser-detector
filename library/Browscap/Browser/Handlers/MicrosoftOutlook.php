@@ -66,7 +66,6 @@ class MicrosoftOutlook extends BrowserHandler
             'Flock',
             'AOL',
             'TOB',
-            'Avant',
             'MyIE',
             //others
             'AppleWebKit',
@@ -133,5 +132,10 @@ class MicrosoftOutlook extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 7278;
     }
 }

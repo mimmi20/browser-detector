@@ -110,4 +110,9 @@ abstract class Handler implements MatcherInterface
     {
         return 0.0;
     }
+    
+    public function getWeight()
+    {
+        return 1;
+    }
 }

@@ -41,7 +41,7 @@ class Linux extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Linux'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Linux', 'linux'))) {
             return false;
         }
         
@@ -90,5 +90,10 @@ class Linux extends OsHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 606;
     }
 }

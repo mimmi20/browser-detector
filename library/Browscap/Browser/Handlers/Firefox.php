@@ -65,6 +65,11 @@ class Firefox extends BrowserHandler
             'Flock',
             'Fennec',
             'Iceweasel',
+            'IceCat',
+            'Iceweasel',
+            'Iceowl',
+            'Icedove',
+            'Iceape',
             //Nutch
             'Nutch',
             'CazoodleBot',
@@ -111,5 +116,10 @@ class Firefox extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 4374;
     }
 }

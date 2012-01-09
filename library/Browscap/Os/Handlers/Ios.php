@@ -41,7 +41,7 @@ class Ios extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'iPhone', 'iPod'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone', 'iPod'))) {
             return false;
         }
         
@@ -67,7 +67,7 @@ class Ios extends OsHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Ios';
+        return 'iOS';
     }
     
     /**
@@ -85,6 +85,41 @@ class Ios extends OsHandler
             return $matches[1];
         }
         
+        $doMatch = preg_match('/CPU OS ([\d\_]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return str_replace('_', '.', $matches[1]);
+        }
+        
+        $doMatch = preg_match('/CPU iPad OS ([\d\_]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return str_replace('_', '.', $matches[1]);
+        }
+        
+        $doMatch = preg_match('/iPhone OS ([\d\_]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return str_replace('_', '.', $matches[1]);
+        }
+        
+        $doMatch = preg_match('/CPU like Mac OS X/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return '1.0';
+        }
+        
+        $doMatch = preg_match('/iPhone OS ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return str_replace('_', '.', $matches[1]);
+        }
+        
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 404;
     }
 }

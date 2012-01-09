@@ -67,4 +67,9 @@ class Python extends BrowserHandler
     {
         return 'Python';
     }
+    
+    public function getWeight()
+    {
+        return 4;
+    }
 }

@@ -55,8 +55,15 @@ class CatchAll extends BrowserHandler
      */
     public function detect($userAgent)
     {
+        //echo "\t\t\t\t" . 'detecting Browser (Chain - CatchAll - init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         $detector = new \Browscap\Browscap();
+        
+        //echo "\t\t\t\t" . 'detecting Browser (Chain - CatchAll - init Browscap): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         $detected = $detector->getBrowser($userAgent);
+        
+        //echo "\t\t\t\t" . 'detecting Browser (Chain - CatchAll - detect): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         
         $class = new \StdClass();
         $class->browser = $detected->Browser;
@@ -86,5 +93,10 @@ class CatchAll extends BrowserHandler
     {
         $detector = new \Browscap\Browscap();
         return $detector->getAllBrowsers();
+    }
+    
+    public function getWeight()
+    {
+        return -1;
     }
 }

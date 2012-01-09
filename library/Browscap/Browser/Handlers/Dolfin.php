@@ -47,11 +47,7 @@ class Dolfin extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'Safari')) {
-            return false;
-        }
-        
-        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit', 'Dolfin/'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Dolphin/', 'Dolfin/'))) {
             return false;
         }
         
@@ -105,6 +101,17 @@ class Dolfin extends BrowserHandler
             return $matches[1];
         }
         
+        $doMatch = preg_match('/Dolphin\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 4;
     }
 }

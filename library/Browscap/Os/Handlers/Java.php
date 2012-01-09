@@ -41,7 +41,7 @@ class Java extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Java', 'J2ME/MIDP', 'JUC', 'UCWEB', 'NetFront'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Java', 'J2ME/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0'))) {
             return false;
         }
         
@@ -86,5 +86,10 @@ class Java extends OsHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 218;
     }
 }

@@ -85,4 +85,9 @@ class BlackberryOs extends Linux
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 4;
+    }
 }

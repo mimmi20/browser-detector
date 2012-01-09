@@ -31,7 +31,7 @@ use \Browscap\Service\Engines;
  * @package    WURFL
  * @see WURFL_UserAgentHandlerChain
  */
-class Chain
+final class Chain
 {
 
     /**
@@ -39,7 +39,7 @@ class Chain
      */
     private $_chain = null;
     
-    protected $utils = null;
+    private $_utils = null;
     
     private $_log = null;
     
@@ -47,14 +47,13 @@ class Chain
 
     /**
      * Initializes the factory with an instance of all possible WURFL_Handlers_Handler objects from the given $context
-     * @param WURFL_Context $context
      */
     public function __construct()
     {
-        $this->utils = new Utils();
-        
+        $this->_utils   = new Utils();
         $this->_chain   = new \SplPriorityQueue();
         $this->_service = new Engines();
+        $this->_log     = \Zend\Registry::get('log');
         
         // get all Engines
         $directory = __DIR__ . DS . 'Handlers' . DS;
@@ -65,13 +64,39 @@ class Chain
                 $filename = $fileinfo->getBasename('.php');
                 
                 if ('CatchAll' != $filename) {
-                    //echo "\t\t\t" . 'detecting rendering Engine (Chain - add Engine [' . $filename . ', 1]): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
-                    $this->_chain->insert($filename, 1);
+                    $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
+                    //echo "\t\t\t" . 'detecting Engine (Chain - creating class name [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                    try {
+                        $handler = new $className();
+                    } catch (\Exception $e) {
+                        echo "Class '$className' not found \n";
+                        
+                        //$this->_log->warn($e);
+                        
+                        $this->_chain->next();
+                        continue;
+                    }
+                    
+                    //echo "\t\t\t" . 'detecting Engine (Chain - add class [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                    
+                    $this->_chain->insert($handler, $handler->getWeight());
                 }
             }
         }
         
-        $this->_log = \Zend\Registry::get('log');
+        unset($iterator, $directory);
+    }
+
+    /**
+     * 
+     */
+    public function __destruct()
+    {
+        // the utility classes
+        $this->_utils   = null;
+        $this->_chain   = null;
+        $this->_service = null;
+        $this->_log     = null;
     }
     
     /**
@@ -83,67 +108,61 @@ class Chain
      */
     public function detect($userAgent)
     {
-        echo "\t\t\t" . 'detecting rendering Engine (Chain - init): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+        //echo "\t\t\t" . 'detecting rendering Engine (Chain - init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         $engine = new \StdClass();
         $engine->name = 'unknown';
         $engine->version = 0.0;
-        echo "\t\t\t" . 'detecting rendering Engine (Chain - creating result class): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+        //echo "\t\t\t" . 'detecting rendering Engine (Chain - creating result class): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         if ($this->_chain->count()) {
             $this->_chain->top();
-            echo "\t\t\t" . 'detecting rendering Engine (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+            //echo "\t\t\t" . 'detecting rendering Engine (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             while ($this->_chain->valid()) {
-                $class = ltrim($this->_chain->current(), '\\');
-                //$class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
-                //$class = preg_replace('/[^a-zA-Z ]/', '', $class);
-                //$class = str_replace(' ', '', ucwords($class));
-                echo "\t\t\t" . 'detecting rendering Engine (Chain - creating class name [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
-                $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
-                try {
-                    $handler = new $className();
-                } catch (\Exception $e) {
-                    echo "Class '$className' not found \n";
-                    
-                    //$this->_log->warn($e);
-                    
-                    $this->_chain->next();
-                    continue;
-                }
+                $handler = $this->_chain->current();
+                $class   = get_class($handler);
+                //echo "\t\t\t" . 'detecting rendering Engine (Chain - get Handler [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 
                 if ($handler->canHandle($userAgent)) {
-                    echo "\t\t\t" . 'detecting rendering Engine (Chain - can handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                    //echo "\t\t\t" . 'detecting rendering Engine (Chain - can handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     try {
-                        echo "\t\t\t" . 'detecting rendering Engine (Chain - can handle [' . $class . '] - start): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                        //echo "\t\t\t" . 'detecting rendering Engine (Chain - can handle [' . $class . '] - start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         $engine = $handler->detect($userAgent);
-                        echo "\t\t\t" . 'detecting rendering Engine (Chain - can handle [' . $class . '] - end): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                        //echo "\t\t\t" . 'detecting rendering Engine (Chain - can handle [' . $class . '] - end): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         return $engine;
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        $this->_log->warn($e);
-                        echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                        //$this->_log->warn($e);
+                        //echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle [' . $class . '] - Exception): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         $this->_chain->next();
                         continue;
                     }
                 }
-                echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+                //echo "\t\t\t" . 'detecting rendering Engine (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 $this->_chain->next();
             }
         }
-        echo "\t\t\t" . 'detecting rendering Engine (Chain - not found in chain): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";
+        //echo "\t\t\t" . 'detecting rendering Engine (Chain - not found in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         //if not deteceted yet, use ini file as fallback
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $engine = $handler->detect($userAgent);
-            echo "\t\t\t" . 'detecting rendering Engine (Chain - found in fallback [' . $engine->engine . ']): ' . (microtime(true) - START_TIME) . ' Sek.' . "\n";var_dump($userAgent, $engine);
-            $class = ltrim($engine->engine, '\\');
-            $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
-            $class = preg_replace('/[^a-zA-Z ]/', '', $class);
-            $class = str_replace(' ', '', ucwords($class));
-            $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
-            echo "Class '$className' not found \n";
+            //echo "\t\t\t" . 'detecting rendering Engine (Chain - detect [' . $engine->engine . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";var_dump($userAgent, $engine);
+            
             if ($engine->engine) {
-                $this->_chain->insert($engine->engine, 1);
+                //echo "\t\t\t" . 'detecting rendering Engine (Chain - found in fallback [' . $engine->engine . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";var_dump($userAgent, $engine);
+                
+                try {
+                    $className = $this->_utils->getClassNameFromDetected($engine->engine, __NAMESPACE__);
+                    //var_dump($engine->engine, __NAMESPACE__, $className);
+                    echo "Class '$className' not found \n";
+                    $handler = new $className();
+                    $this->_chain->insert($handler, $handler->getWeight());
+                } catch (\Exception $e) {
+                    //$this->_log->warn($e);
+                }
             }
         }
+        
+        unset($handler);
         
         return $engine;
     }

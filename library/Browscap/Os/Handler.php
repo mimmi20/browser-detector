@@ -81,10 +81,10 @@ abstract class Handler implements MatcherInterface
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->name     = $this->detectBrowser($userAgent);
-        $class->version  = $this->detectVersion($userAgent);
-        $class->fullname = $class->name . ($class->name != $class->version ? ' ' . $class->version : '');
-        $class->bits     = $this->detectBits($userAgent);
+        $class->name    = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        $class->osFull  = $class->name . ($class->name != $class->version ? ' ' . $class->version : '');
+        $class->bits    = $this->detectBits($userAgent);
         
         return $class;
     }
@@ -135,5 +135,10 @@ abstract class Handler implements MatcherInterface
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 1;
     }
 }

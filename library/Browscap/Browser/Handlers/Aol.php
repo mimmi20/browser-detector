@@ -84,11 +84,8 @@ class Aol extends InternetExplorer
      *
      * @return string
      */
-    protected function detectBrowser($userAgent, \StdClass $class = null)
+    protected function detectBrowser($userAgent)
     {
-        parent::detectBrowser($userAgent, $class);
-        
-        $class->browser = 'AOL Browser (Internet Explorer)';
-        
+        return 'AOL Browser (Internet Explorer)';
     }
 }

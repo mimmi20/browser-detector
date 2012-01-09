@@ -101,4 +101,9 @@ class Presto extends EngineHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 1093;
+    }
 }

@@ -35,8 +35,8 @@ class Windows extends OsHandler
 {
     private $_windows = array(
         'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
-        'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows', 'Windows 98',
-        'Windows 95'
+        'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows 98', 'Windows 95',
+        'Windows 3.1', 'win9x/NT 4.90', 'Windows'
     );
     
     /**
@@ -47,7 +47,9 @@ class Windows extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, $this->_windows)) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, $this->_windows)
+            && !$this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        ) {
             return false;
         }
         
@@ -74,24 +76,6 @@ class Windows extends OsHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->name    = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->osFull  = $class->name . ' ' . $class->version;
-        $class->bits    = $this->detectBits($userAgent);
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
      * @return string
      */
     protected function detectBrowser($userAgent)
@@ -108,19 +92,6 @@ class Windows extends OsHandler
      */
     protected function detectVersion($userAgent)
     {
-        $version = '';
-        
-        foreach ($this->_windows as $winVersion) {
-            if ($this->utils->checkIfContains($userAgent, $winVersion)) {
-                $version = substr($winVersion, 3);
-                break;
-            }
-        }
-        
-        if ('dows NT' != $version) {
-            return $version;
-        }
-        
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
@@ -144,6 +115,7 @@ class Windows extends OsHandler
                     $version = 'XP';
                     break;
                 case '5.0':
+                case '5.01':
                     $version = '2000';
                     break;
                 case '4.0':
@@ -174,8 +146,19 @@ class Windows extends OsHandler
                 case '5.1':
                     $version = 'XP';
                     break;
+                case '2000':
                 case '5.0':
+                case '5.01':
                     $version = '2000';
+                    break;
+                case '3.1':
+                    $version = '3.1';
+                    break;
+                case '95':
+                    $version = '95';
+                    break;
+                case '98':
+                    $version = '98';
                     break;
                 case '4.0':
                 default:
@@ -183,6 +166,23 @@ class Windows extends OsHandler
                     break;
             }
             
+            return $version;
+        }
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('win9x/NT 4.90', 'Win 9x 4.90', 'Windows ME'))) {
+            return 'ME';
+        }
+        
+        $version = '';
+        
+        foreach ($this->_windows as $winVersion) {
+            if ($this->utils->checkIfContains($userAgent, $winVersion)) {
+                $version = substr($winVersion, 3);
+                break;
+            }
+        }
+        
+        if ('dows NT' != $version) {
             return $version;
         }
         
@@ -207,5 +207,10 @@ class Windows extends OsHandler
         }
         
         return 32;
+    }
+    
+    public function getWeight()
+    {
+        return 92993;
     }
 }

@@ -91,4 +91,9 @@ class RimOs extends OsHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 43;
+    }
 }

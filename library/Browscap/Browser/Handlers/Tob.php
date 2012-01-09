@@ -84,11 +84,8 @@ class Tob extends InternetExplorer
      *
      * @return string
      */
-    protected function detectBrowser($userAgent, \StdClass $class = null)
+    protected function detectBrowser($userAgent)
     {
-        parent::detectBrowser($userAgent, $class);
-        
-        $class->browser = 'T-Online Browser (Internet Explorer)';
-        
+        return 'T-Online Browser (Internet Explorer)';
     }
 }
