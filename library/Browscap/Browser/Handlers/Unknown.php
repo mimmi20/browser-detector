@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class Unknown extends BrowserHandler
+final class Unknown extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,7 +43,7 @@ class Unknown extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return false;
+        return true;
     }
     
     public function getWeight()

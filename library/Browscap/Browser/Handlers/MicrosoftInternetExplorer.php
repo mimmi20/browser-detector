@@ -39,7 +39,7 @@ use Browscap\Browser\Exceptions;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class InternetExplorer extends BrowserHandler
+class MicrosoftInternetExplorer extends BrowserHandler
 {
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers

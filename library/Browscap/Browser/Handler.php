@@ -39,11 +39,6 @@ abstract class Handler implements MatcherInterface
     protected $prefix = '';
     
     /**
-     * @var WURFL_Xml_PersistenceProvider
-     */
-    protected $persistenceProvider = null;
-    
-    /**
      * @var WURFL_Logger_Interface
      */
     protected $logger = null;
@@ -121,15 +116,18 @@ abstract class Handler implements MatcherInterface
      */
     protected function detectBits($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64', 'x86_64'))) {
+        // 64 bits
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64'))) {
             return 64;
         }
         
+        // old deprecated 16 bit windows systems
         if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win3.1', 'Windows 3.1'))) {
             return 16;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'WOW64'))) {
+        // general windows or a 32 bit browser on a 64 bit system (WOW64)
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486'))) {
             return 32;
         }
         
