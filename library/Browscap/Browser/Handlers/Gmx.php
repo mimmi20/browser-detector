@@ -29,7 +29,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Gmx extends InternetExplorer
+class Gmx extends MicrosoftInternetExplorer
 {
     /**
      * Intercept all UAs Containing AOL and are not mobile browsers

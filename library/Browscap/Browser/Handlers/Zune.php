@@ -29,7 +29,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Zune extends InternetExplorer
+class Zune extends MicrosoftInternetExplorer
 {
     /**
      * Intercept all UAs Containing AOL and are not mobile browsers
@@ -88,5 +88,10 @@ class Zune extends InternetExplorer
     protected function detectBrowser($userAgent)
     {
         return 'Zune (Internet Explorer)';
+    }
+    
+    public function getWeight()
+    {
+        return 4;
     }
 }

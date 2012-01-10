@@ -29,7 +29,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Tob extends InternetExplorer
+class Tob extends MicrosoftInternetExplorer
 {
     /**
      * Intercept all UAs Containing AOL and are not mobile browsers

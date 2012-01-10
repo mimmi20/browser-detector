@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -78,5 +76,10 @@ class YahooVerifier extends Yahoo
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 2;
     }
 }

@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -60,5 +58,10 @@ class Yoasis extends Yahoo
     protected function detectBrowser($userAgent)
     {
         return 'Y!OASIS';
+    }
+    
+    public function getWeight()
+    {
+        return 2;
     }
 }

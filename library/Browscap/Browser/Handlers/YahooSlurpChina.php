@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -60,5 +58,10 @@ class YahooSlurpChina extends YahooSlurp
     protected function detectBrowser($userAgent)
     {
         return 'Yahoo! Slurp China';
+    }
+    
+    public function getWeight()
+    {
+        return 3;
     }
 }

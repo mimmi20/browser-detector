@@ -43,7 +43,7 @@ class Boxee extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return false;
+        return $this->utils->checkIfContains($userAgent, 'Boxee');
     }
     
     /**

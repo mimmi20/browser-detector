@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -62,5 +60,10 @@ class YahooMmaudvid extends Yahoo
     protected function detectBrowser($userAgent)
     {
         return 'Yahoo-MMAudVid';
+    }
+    
+    public function getWeight()
+    {
+        return 2;
     }
 }

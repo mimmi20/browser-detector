@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -64,5 +62,10 @@ class YahooSiteExplorer extends Yahoo
     protected function detectBrowser($userAgent)
     {
         return 'Yahoo! Site Explorer';
+    }
+    
+    public function getWeight()
+    {
+        return 2;
     }
 }

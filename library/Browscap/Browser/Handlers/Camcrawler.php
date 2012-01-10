@@ -19,6 +19,8 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * CatchAllUserAgentHanlder
  *
@@ -30,7 +32,7 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-class Camcrawler extends ImageCrawlers
+class Camcrawler extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
