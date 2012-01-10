@@ -13,7 +13,7 @@ namespace Browscap\Service;
  * @package   Models
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id: Agents.php 147 2011-12-19 08:55:20Z  $
+ * @version   SVN: $Id$
  */
 
 /**
