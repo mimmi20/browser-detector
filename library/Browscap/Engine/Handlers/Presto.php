@@ -59,22 +59,6 @@ class Presto extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->engine   = $this->detectEngine($userAgent);
-        $class->version  = $this->detectVersion($userAgent);
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
      * @return string
      */
     protected function detectEngine($userAgent)

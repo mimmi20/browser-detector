@@ -81,7 +81,7 @@ class Browsers extends ModelAbstract
         $select->limit(1);
         //echo $select->assemble() . "\n";
         $browser = $this->fetchAll($select)->current();
-        
+        //var_dump($this->fetchAll($select), $browser);
         if (!$browser) {
             $browser = $this->createRow();
             

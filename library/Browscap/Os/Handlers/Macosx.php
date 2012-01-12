@@ -85,6 +85,12 @@ class Macosx extends Macintosh
             return $matches[1];
         }
         
+        $doMatch = preg_match('/Mac OS X ([\d\_]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return str_replace('_', '.', $matches[1]);
+        }
+        
         return '';
     }
     

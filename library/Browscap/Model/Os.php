@@ -72,18 +72,22 @@ class Os extends ModelAbstract
             
             $os->os      = (string) $osName;
             $os->version = (string) $version;
-            $os->osFull  = $os->os . ($os->os != $os->version ? ' ' . $os->version : '');
+            $os->osFull  = $os->os . ($os->os != $os->version ? ' ' . $os->version : '') . ((int) $bits > 0 ? ' (' . (int) $bits . ')' : '');
             $os->bits    = (int) $bits;
             $os->count   = 0;
             
             $os->save();
         }
         
-        return $os;
+        return (object) $os->toArray();
     }
     
     public function count($idOs)
     {
+        if (null === $idOs) {
+            return;
+        }
+        
         $os = $this->find($idOs)->current();
         
         if ($os) {

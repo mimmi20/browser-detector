@@ -61,22 +61,6 @@ class Trident extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->engine   = $this->detectEngine($userAgent);
-        $class->version  = $this->detectVersion($userAgent);
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
      * @return string
      */
     protected function detectEngine($userAgent)
@@ -99,6 +83,38 @@ class Trident extends EngineHandler
         
         if ($doMatch) {
             return $matches[1];
+        }
+        
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            $version = '';
+            
+            switch ((float) $matches[1]) {
+                case 10.0:
+                    $version = '6.0';
+                    break;
+                case 9.0:
+                    $version = '5.0';
+                    break;
+                case 8.0:
+                case 7.0:
+                case 6.0:
+                    $version = '4.0';
+                    break;
+                case 5.5:
+                case 5.01:
+                case 5.0:
+                case 4.01:
+                case 4.0:
+                case 3.0:
+                case 2.0:
+                case 1.0:
+                default:
+                    // do nothing here
+            }
+            
+            return $version;
         }
         
         return '';

@@ -176,26 +176,17 @@ class UserAgent
      */
     public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
     {
-        //echo "\n";
-        
         // Automatically detect the useragent
         if (empty($userAgent) || !is_string($userAgent)) {
-            //echo 'detecting User Agent (using Support - Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            
             $support   = new Support();
             $userAgent = $support->getUserAgent();
-            
-            //echo 'detecting User Agent (using Support - End)  : ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             
             unset($support);
         }
         
-        $userAgent = trim(str_replace(array('User-Agent:'), '', $userAgent));
-        
+        $userAgent    = trim(str_replace(array('User-Agent:'), '', $userAgent));
         $this->_agent = $userAgent;
         
-        //echo 'detecting User Agent: ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-
         $cacheId = 'agent_' . preg_replace(
             '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
         );
@@ -204,17 +195,12 @@ class UserAgent
             || !($this->_cache instanceof \Zend\Cache\Cache)
             || !($browserArray = $this->_cache->load($cacheId))
         ) {
-            //echo 'detecting Browser (using _detect - Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $browserArray = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
-            
-            //echo 'detecting Browser (using _detect - End)  : ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             
             if (!$forceDetected 
                 && $this->_cache instanceof \Zend\Cache\Cache
             ) {
-                //echo 'detecting Browser (writing cache - Start)  : ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 $this->_cache->save($browserArray, $cacheId);
-                //echo 'detecting Browser (writing cache - End)  : ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             }
         } else {
             if (null === $this->_serviceAgents) {
@@ -226,8 +212,6 @@ class UserAgent
         }
         
         unset($cacheId);
-        
-        //echo 'detecting User Agent (Finish): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         
         return $browserArray;
     }
@@ -250,79 +234,85 @@ class UserAgent
         $agent = $this->_serviceAgents->searchByAgent($userAgent);
         
         if (!is_object($agent)) {
-            ////echo "\t" . 'searching User Agent - creating new object: ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $agent        = $this->_serviceAgents->createRow();
             $agent->agent = $userAgent;
             $agent->save();
         }
         
-        ////echo "\t" . 'searching User Agent: ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         $this->_serviceAgents->count($agent->idAgents);
-        
-        ////echo "\t" . 'counting User Agent: ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting rendering Engine (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t\t" . 'detecting rendering Engine (init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         
         if (null === $this->_serviceEngines) {
             $this->_serviceEngines = new Service\Engines();
         }
-        ////echo "\t\t" . 'detecting rendering Engine (creating Model): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         if ($forceDetected 
             || !$agent->idEngines 
             || null === ($engine = $this->_serviceEngines->find($agent->idEngines)->current())
         ) {
-            ////echo "\t\t" . 'detecting rendering Engine (searching Engine failed): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             // detect the Rendering Engine
             $chainEngines = new Engine\Chain();
             
-            $engine           = $chainEngines->detect($userAgent);
-            ////echo "\t\t" . 'detecting rendering Engine (detecting Engine): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $agent->idEngines = $this->_serviceEngines->countByName($engine->engine, $engine->version);
+            $engine         = $chainEngines->detect($userAgent);
+            //var_dump($engine);//exit;
+            $searchedEngine = $this->_serviceEngines->searchByName($engine->engine, $engine->version);
+            
+            if ($searchedEngine) {
+                $agent->idEngines = $searchedEngine->idEngines;
+            }
             
             unset($chainEngines);
         } else {
-            ////echo "\t\t" . 'detecting rendering Engine (searching Engine secceeded): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $this->_serviceEngines->count($agent->idEngines);
-            ////echo "\t\t" . 'detecting rendering Engine (counting Engine): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $engine = (object) $engine->toArray();
         }
-        ////echo "\t\t" . 'detecting rendering Engine (Finish): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting rendering Engine (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting Browser (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t\t" . 'detecting Browser (init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
+        $this->_serviceEngines->count($agent->idEngines);
         
         if (null === $this->_serviceBrowsers) {
             $this->_serviceBrowsers = new Service\Browsers();
         }
         
-        ////echo "\t\t" . 'detecting Browser (creating Model): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         if ($forceDetected 
             || !$agent->idBrowsers 
             || null === ($browser = $this->_serviceBrowsers->find($agent->idBrowsers)->current())
         ) {
-            ////echo "\t\t" . 'detecting Browser (searching Browser failed): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             // detect the browser
             $chainBrowsers = new Browser\Chain();
             
-            ////echo "\t\t" . 'detecting Browser (creating Chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $browser           = $chainBrowsers->detect($userAgent);
-            ////echo "\t\t" . 'detecting Browser (detecting Browser): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $agent->idBrowsers = $browser->idBrowsers;
             
             unset($chainBrowsers);
         } else {
-            ////echo "\t\t" . 'detecting Browser (searching Browser succeded): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $browser = (object) $browser->toArray();
         }
         
         $this->_serviceBrowsers->count($agent->idBrowsers);
-        ////echo "\t\t" . 'detecting Browser (counting Browser): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t\t" . 'detecting Browser (Finish): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting Browser (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting Browser-Data (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         
+        if (null === $this->_serviceOs) {
+            $this->_serviceOs = new Service\Os();
+        }
+        
+        if ($forceDetected 
+            || !$agent->idOs 
+            || null === ($os = $this->_serviceOs->find($agent->idOs)->current())
+        ) {
+            // detect the Operating System
+            $chainOs = new Os\Chain();
+            
+            $os       = $chainOs->detect($userAgent);//var_dump($os);exit;
+            $osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
+            
+            if ($osResult) {
+                $agent->idOs = $osResult->idOs;
+            }
+            
+            unset($chainOs);
+        } else {
+            $os = (object) $os->toArray();
+        }
+        
+        $this->_serviceOs->count($agent->idOs);
+        /*
         if (null === $this->_serviceBrowserData) {
             $this->_serviceBrowserData = new Service\BrowserData();
         }
@@ -335,49 +325,9 @@ class UserAgent
             $this->_serviceBrowserData->count($agent->idBrowserData);
         }
         
-        ////echo "\t" . 'detecting Browser-Data (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting OS (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
-        if (null === $this->_serviceOs) {
-            $this->_serviceOs = new Service\Os();
-        }
-        
-        ////echo "\t\t" . 'detecting OS (Model-Init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        if ($forceDetected 
-            || !$agent->idOs 
-            || null === ($os = $this->_serviceOs->find($agent->idOs)->current())
-        ) {
-            ////echo "\t\t" . 'detecting OS (searching OS failed): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            // detect the Operating System
-            $chainOs = new Os\Chain();
-            
-            ////echo "\t\t" . 'detecting OS (creating Chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $os          = $chainOs->detect($userAgent);//var_dump($os);exit;
-            ////echo "\t\t" . 'detecting OS (detecting OS): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $agent->idOs = $this->_serviceOs->countByName($os->name, $os->version, $os->bits);
-            ////echo "\t\t" . 'detecting OS (counting OS): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            
-            unset($chainOs);
-        } else {
-            ////echo "\t\t" . 'detecting OS (searching OS succseeded): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $this->_serviceOs->count($agent->idOs);
-            ////echo "\t\t" . 'detecting OS (counting OS): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $os = (object) $os->toArray();
-        }
-        
-        ////echo "\t\t" . 'detecting OS (Finish): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        ////echo "\t" . 'detecting OS (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        /*
-        ////echo "\t" . 'detecting Device (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         // detect the device
         $deviceChain = new Device\Chain();
         $device      = $deviceChain->detect($userAgent);
-        
-        ////echo "\t" . 'detecting Device (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        /**/
-        /*
-        ////echo "\t" . 'detecting Wurfl-Data (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         
         $modelWurflData = new Model\WurflData();
         //if (null === $agent->idWurflData) {
@@ -389,29 +339,20 @@ class UserAgent
         //    $wurfl = $modelWurflData->find($agent->idWurflData)->current();
         //}
         
-        ////echo "\t" . 'detecting Wurfl-Data (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        /**/
-        ////echo "\t" . 'detecting Browscap-Data (Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         if (null === $this->_serviceBrowscapData) {
             $this->_serviceBrowscapData = new Service\BrowscapData();
         }
-        /*
-        ////echo "\t\t" . 'detecting Browscap-Data (Model-Init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         if ($forceDetected 
             || !$agent->idBrowscapData 
             || null === ($object = $this->_serviceBrowscapData->find($agent->idBrowscapData)->current())
         ) {
-            ////echo "\t\t" . 'detecting Browscap-Data (init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            
             if (null === $this->_browscap) {
                 // define the User Agent object and set the default values
                 $this->_browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
             }
             
-            ////echo "\t\t" . 'detecting Browscap-Data (construct): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $detected = $this->_browscap->getBrowser($userAgent);
-            ////echo "\t\t" . 'detecting Browscap-Data (getBrowser): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             
             $object = new \StdClass();
             
@@ -507,19 +448,17 @@ class UserAgent
             $object->AolVersion          = 0;
             $object->wurflKey            = $objectCopy->wurflkey;
             $object->renderEngine        = $objectCopy->renderengine;
-            
-            ////echo "\t\t" . 'detecting Browscap-Data (set object): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         }
-        
-        ////echo "\t" . 'detecting Browscap-Data (End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         /**/
         $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
         
-        //$object->idAgents = $agent->idAgents;
-        
-        ////echo "\t" . 'detecting Browscap (Finish): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
-        //return ($bReturnAsArray ? (array) $object : $object);
+        $object = new \StdClass();
+        $object->idAgents = $agent->idAgents;
+        $object->engine   = $engine;
+        $object->browser  = $browser;
+        $object->os       = $os;
+        //var_dump($object);
+        return ($bReturnAsArray ? (array) $object : $object);
     }
     
     /**

@@ -57,22 +57,6 @@ class Gecko extends EngineHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->engine   = $this->detectEngine($userAgent);
-        $class->version  = $this->detectVersion($userAgent);
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
      * @return string
      */
     protected function detectEngine($userAgent)
@@ -91,10 +75,10 @@ class Gecko extends EngineHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/Gecko\/([\d\.]+)/', $userAgent, $matches);
-        
+        $doMatch = preg_match('/rv\:([\d\.]+).*Gecko\/([\d\.]+)/', $userAgent, $matches);
+        //var_dump($matches);
         if ($doMatch) {
-            return $matches[1];
+            return $matches[1] . ' (' . $matches[2] . ')';
         }
         
         return '';

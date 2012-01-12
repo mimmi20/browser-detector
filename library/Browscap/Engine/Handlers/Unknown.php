@@ -62,7 +62,7 @@ class Unknown extends BrowserHandler
         $class = new \StdClass();
         
         $class->engine  = 'unknown';
-        $class->version = 0.00;
+        $class->version = '';
         
         return $class;
     }

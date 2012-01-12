@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class Libwww extends BrowserHandler
+class Lynx extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,11 +43,7 @@ class Libwww extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'libwww')) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains($userAgent, 'Lynx')) {
+        if (!$this->utils->checkIfContains($userAgent, 'Lynx')) {
             return false;
         }
         
@@ -63,7 +59,7 @@ class Libwww extends BrowserHandler
      */
     protected function detectBrowser($userAgent)
     {
-        return 'libwww';
+        return 'Lynx';
     }
     
     /**
@@ -75,13 +71,7 @@ class Libwww extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/libwww\/([\d\.]+)/', $userAgent, $matches);
-        
-        if ($doMatch) {
-            return $matches[1];
-        }
-        
-        $doMatch = preg_match('/libwww-perl\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Lynx\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
