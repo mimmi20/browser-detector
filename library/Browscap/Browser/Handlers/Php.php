@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Engine\Handlers;
+namespace Browscap\Browser\Handlers;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version    $id$
  */
 
-class Unknown extends BrowserHandler
+class Php extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,7 +43,7 @@ class Unknown extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Presto', 'KHTML', 'WebKit', 'Gecko', 'Opera'))) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'PHP/')) {
             return false;
         }
         
@@ -55,21 +55,33 @@ class Unknown extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $class = new \StdClass();
+        return 'PHP';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectVersion($userAgent)
+    {
+        $doMatch = preg_match('/PHP\/([\d\.]+)/', $userAgent, $matches);
         
-        $class->engine     = 'unknown';
-        $class->version    = '';
-        $class->engineFull = $class->engine;
+        if ($doMatch) {
+            return $matches[1];
+        }
         
-        return $class;
+        return '';
     }
     
     public function getWeight()
     {
-        return 0;
+        return 9;
     }
 }

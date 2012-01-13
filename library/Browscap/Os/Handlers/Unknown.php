@@ -63,7 +63,7 @@ class Unknown extends OsHandler
         
         $class->name     = 'unknown';
         $class->osFull   = 'unknown';
-        $class->version  = 'unknown';
+        $class->version  = '';
         $class->bits     = 0;
         
         return $class;

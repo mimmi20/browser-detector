@@ -56,9 +56,10 @@ class FakeBrowser extends BrowserHandler
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->browser = 'Fake Browser';
-        $class->version = '0';
-        $class->bits    = 0;
+        $class->browser     = 'Fake Browser';
+        $class->version     = '';
+        $class->browserFull = $class->browser;
+        $class->bits        = 0;
         
         return $class;
     }

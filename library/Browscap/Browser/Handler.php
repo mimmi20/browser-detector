@@ -76,9 +76,10 @@ abstract class Handler implements MatcherInterface
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->bits    = $this->detectBits($userAgent);
+        $class->browser     = $this->detectBrowser($userAgent);
+        $class->version     = $this->detectVersion($userAgent);
+        $class->browserFull = $class->browser . ($class->browser != $class->version && '' != $class->version ? ' ' . $class->version : '');
+        $class->bits        = $this->detectBits($userAgent);
         
         return $class;
     }
@@ -104,7 +105,7 @@ abstract class Handler implements MatcherInterface
      */
     protected function detectVersion($userAgent)
     {
-        return '0';
+        return '';
     }
     
     /**

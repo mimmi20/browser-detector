@@ -81,8 +81,9 @@ abstract class Handler implements MatcherInterface
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->engine  = $this->detectEngine($userAgent);
-        $class->version = $this->detectVersion($userAgent);
+        $class->engine     = $this->detectEngine($userAgent);
+        $class->version    = $this->detectVersion($userAgent);
+        $class->engineFull = $class->engine . ($class->engine != $class->version && '' != $class->version ? ' ' . $class->version : '');
         
         return $class;
     }

@@ -60,8 +60,9 @@ class CatchAll extends BrowserHandler
         $detector = new \Browscap\Browscap();
         $detected = $detector->getBrowser($userAgent);
         
-        $class->engine  = $detected->renderEngine;
-        $class->version = $this->detectVersion($userAgent, $class->engine);
+        $class->engine     = $detected->renderEngine;
+        $class->version    = $this->detectVersion($userAgent, $class->engine);
+        $class->engineFull = $class->engine . ($class->engine != $class->version && '' != $class->version ? ' ' . $class->version : '');
         
         return $class;
     }

@@ -79,13 +79,7 @@ class Macosx extends Macintosh
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Mac OS X ([\d\.]+)/', $userAgent, $matches);
-        
-        if ($doMatch) {
-            return $matches[1];
-        }
-        
-        $doMatch = preg_match('/Mac OS X ([\d\_]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Mac OS X ([\d\.\_]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return str_replace('_', '.', $matches[1]);

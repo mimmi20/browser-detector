@@ -106,10 +106,10 @@ class Windows extends OsHandler
                     $version = 'Vista';
                     break;
                 case '5.3':
-                    $version = '2003';
+                    $version = 'Server 2003';
                     break;
                 case '5.2':
-                    $version = '2003';
+                    $version = 'Server 2003';
                     break;
                 case '5.1':
                     $version = 'XP';

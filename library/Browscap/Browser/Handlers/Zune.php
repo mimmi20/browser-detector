@@ -83,11 +83,52 @@ class Zune extends MicrosoftInternetExplorer
      *
      * @param string $userAgent
      *
+     * @return StdClass
+     */
+    public function detect($userAgent)
+    {
+        $class = new \StdClass();
+        $class->browser = $this->detectBrowser($userAgent);
+        $class->version = $this->detectVersion($userAgent);
+        
+        $parentBrowser = parent::detectBrowser($userAgent);
+        $parentVersion = parent::detectVersion($userAgent);
+        $parentFull    = $parentBrowser . ($parentBrowser != $parentVersion && '' != $parentVersion ? ' ' . $parentVersion : '');
+        
+        $class->browserFull = $class->browser . ($class->browser != $class->version && '' != $class->version ? ' ' . $class->version : '') . ' (' . $parentFull . ')';
+        $class->bits        = $this->detectBits($userAgent);
+        
+        return $class;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
      * @return string
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Zune (Internet Explorer)';
+        return 'Zune';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectVersion($userAgent)
+    {
+        $doMatch = preg_match('/Zune ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
     
     public function getWeight()

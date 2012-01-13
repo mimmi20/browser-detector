@@ -55,19 +55,13 @@ class CatchAll extends BrowserHandler
      */
     public function detect($userAgent)
     {
-        //echo "\t\t\t\t" . 'detecting Browser (Chain - CatchAll - init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         $detector = new \Browscap\Browscap();
-        
-        //echo "\t\t\t\t" . 'detecting Browser (Chain - CatchAll - init Browscap): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         $detected = $detector->getBrowser($userAgent);
         
-        //echo "\t\t\t\t" . 'detecting Browser (Chain - CatchAll - detect): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        
         $class = new \StdClass();
-        $class->browser = $detected->Browser;
-        $class->version = $detected->Version;
+        $class->browser     = $detected->Browser;
+        $class->version     = $detected->Version;
+        $class->browserFull = $class->browser . ($class->browser != $class->version && '' != $class->version ? ' ' . $class->version : '');
         
         if ($detected->Win64) {
             $class->bits = 64;

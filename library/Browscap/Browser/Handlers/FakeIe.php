@@ -62,9 +62,10 @@ class FakeIe extends FakeBrowser
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->browser = 'Fake IE';
-        $class->version = '0';
-        $class->bits    = 0;
+        $class->browser     = 'Fake IE';
+        $class->version     = '';
+        $class->browserFull = $class->browser;
+        $class->bits        = 0;
         
         return $class;
     }

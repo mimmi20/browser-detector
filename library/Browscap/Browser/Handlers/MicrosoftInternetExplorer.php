@@ -41,6 +41,23 @@ use Browscap\Browser\Exceptions;
  */
 class MicrosoftInternetExplorer extends BrowserHandler
 {
+    private $_patterns = array(
+        '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => '10.0',
+        '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
+        '/Mozilla\/4\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
+        '/Mozilla\/4\.0 \(compatible; MSIE 8\.0.*/'       => '8.0',
+        '/Mozilla\/4\.0 \(compatible; MSIE 7\.0.*/'       => '7.0',
+        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 6\.0.*/'  => '6.0',
+        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.5.*/'  => '5.5',
+        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.01.*/' => '5.01',
+        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.0.*/'  => '5.0',
+        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.01.*/' => '4.01',
+        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.0.*/'  => '4.0',
+        '/Mozilla\/.*\(.*compatible.*;.*MSIE 3\..*/'      => '3.0',
+        '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => '2.0',
+        '/Mozilla\/.*\(.*compatible.*;.*MSIE 1\..*/'      => '1.0'
+    );
+    
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
      *
@@ -68,9 +85,6 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Avant',
             'avantbrowser',
             'MyIE',
-            //branded versions
-            'AOL',
-            'TOB',
             // other Browsers
             'AppleWebKit',
             'Chrome',
@@ -85,6 +99,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
             //Fakes
             'User agent',
             'User-Agent',
+            'User-agent',
             'MSIECrawler'
         );
         
@@ -92,7 +107,13 @@ class MicrosoftInternetExplorer extends BrowserHandler
             return false;
         }
         
-        return true;
+        foreach (array_keys($this->_patterns) as $pattern) {
+            if (preg_match($pattern, $userAgent)) {
+                return true;
+            }
+        }
+        
+        return false;
     }
     
     /**
@@ -122,24 +143,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
             return $matches[1];
         }
         
-        $patterns = array(
-            '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => '10.0',
-            '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
-            '/Mozilla\/4\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
-            '/Mozilla\/4\.0 \(compatible; MSIE 8\.0.*/'       => '8.0',
-            '/Mozilla\/4\.0 \(compatible; MSIE 7\.0.*/'       => '7.0',
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 6\.0.*/'  => '6.0',
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.5.*/'  => '5.5',
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.01.*/' => '5.01',
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.0.*/'  => '5.0',
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.01.*/' => '4.01',
-            '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.0.*/'  => '4.0',
-            '/Mozilla\/.*\(.*compatible.*;.*MSIE 3\..*/'      => '3.0',
-            '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => '2.0',
-            '/Mozilla\/.*\(.*compatible.*;.*MSIE 1\..*/'      => '1.0'
-        );
-        
-        foreach ($patterns as $pattern => $version) {
+        foreach ($this->_patterns as $pattern => $version) {
             if (preg_match($pattern, $userAgent)) {
                 return $version;
             }

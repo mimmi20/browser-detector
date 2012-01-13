@@ -60,10 +60,10 @@ class CatchAll extends OsHandler
         $detector = new \Browscap\Browscap();
         $detected = $detector->getBrowser($userAgent);
         
-        $class->name     = $detected->Platform;
-        $class->osFull   = $detected->Platform;
-        $class->version  = 'unknown';
-        $class->bits     = 0;
+        $class->name    = $detected->Platform;
+        $class->version = $detected->Version;
+        $class->osFull  = $class->name . ($class->name != $class->version && '' != $class->version ? ' ' . $class->version : '');
+        $class->bits    = 0;
         
         $windows = array(
             'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',

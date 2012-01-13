@@ -60,9 +60,10 @@ class AppengineGoogle extends BrowserHandler
     public function detect($userAgent)
     {
         $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = '0';
-        $class->bits    = 0;
+        $class->browser     = $this->detectBrowser($userAgent);
+        $class->version     = '';
+        $class->browserFull = $class->browser;
+        $class->bits        = 0;
         
         return $class;
     }
