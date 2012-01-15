@@ -108,6 +108,21 @@ class UserAgent
      * @var \Browscap\Service\BrowscapData
      */
     private $_serviceBrowscapData = null;
+    
+    /**
+     * @var \Browscap\Os\Chain
+     */
+    private $_osChain = null;
+    
+    /**
+     * @var \Browscap\Engine\Chain
+     */
+    private $_engineChain = null;
+    
+    /**
+     * @var \Browscap\Browser\Chain
+     */
+    private $_browserChain = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -184,7 +199,11 @@ class UserAgent
             unset($support);
         }
         
-        $userAgent    = trim(str_replace(array('User-Agent:'), '', $userAgent));
+        if (null === $this->_serviceAgents) {
+            $this->_serviceAgents = new Service\Agents();
+        }
+        
+        $userAgent    = trim(str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent));
         $this->_agent = $userAgent;
         
         $cacheId = 'agent_' . preg_replace(
@@ -203,10 +222,6 @@ class UserAgent
                 $this->_cache->save($browserArray, $cacheId);
             }
         } else {
-            if (null === $this->_serviceAgents) {
-                $this->_serviceAgents = new Service\Agents();
-            }
-            
             $agent = $this->_serviceAgents->searchByAgent($userAgent);
             $this->_serviceAgents->count($agent->idAgents);
         }
@@ -227,10 +242,6 @@ class UserAgent
      */
     private function _detect($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
     {
-        if (null === $this->_serviceAgents) {
-            $this->_serviceAgents = new Service\Agents();
-        }
-        
         $agent = $this->_serviceAgents->searchByAgent($userAgent);
         
         if (!is_object($agent)) {
@@ -239,7 +250,9 @@ class UserAgent
             $agent->save();
         }
         
-        $this->_serviceAgents->count($agent->idAgents);
+        if ($forceDetected) {
+            $this->_serviceAgents->count($agent->idAgents);
+        }
         
         if (null === $this->_serviceEngines) {
             $this->_serviceEngines = new Service\Engines();
@@ -250,22 +263,28 @@ class UserAgent
             || null === ($engine = $this->_serviceEngines->find($agent->idEngines)->current())
         ) {
             // detect the Rendering Engine
-            $chainEngines = new Engine\Chain();
-            
-            $engine         = $chainEngines->detect($userAgent);
-            //var_dump($engine);//exit;
-            $searchedEngine = $this->_serviceEngines->searchByName($engine->engine, $engine->version);
-            
-            if ($searchedEngine) {
-                $agent->idEngines = $searchedEngine->idEngines;
+            if (null === $this->_engineChain) {
+                $this->_engineChain = new Engine\Chain();
             }
             
-            unset($chainEngines);
+            $engine = $this->_engineChain->detect($userAgent);
+            
+            if ($forceDetected) {
+                $searchedEngine = $this->_serviceEngines->searchByName($engine->engine, $engine->version);
+                
+                if ($searchedEngine) {
+                    $agent->idEngines = $searchedEngine->idEngines;
+                }
+                
+                unset($searchedEngine);
+            }
         } else {
             $engine = (object) $engine->toArray();
         }
         
-        $this->_serviceEngines->count($agent->idEngines);
+        if ($forceDetected) {
+            $this->_serviceEngines->count($agent->idEngines);
+        }
         
         if (null === $this->_serviceBrowsers) {
             $this->_serviceBrowsers = new Service\Browsers();
@@ -276,17 +295,22 @@ class UserAgent
             || null === ($browser = $this->_serviceBrowsers->find($agent->idBrowsers)->current())
         ) {
             // detect the browser
-            $chainBrowsers = new Browser\Chain();
+            if (null === $this->_browserChain) {
+                $this->_browserChain = new Browser\Chain();
+            }
             
-            $browser           = $chainBrowsers->detect($userAgent);
-            $agent->idBrowsers = $browser->idBrowsers;
+            $browser = $this->_browserChain->detect($userAgent);
             
-            unset($chainBrowsers);
+            if ($forceDetected) {
+                $agent->idBrowsers = $this->_serviceBrowsers->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
+            }
         } else {
             $browser = (object) $browser->toArray();
         }
         
-        $this->_serviceBrowsers->count($agent->idBrowsers);
+        if ($forceDetected) {
+            $this->_serviceBrowsers->count($agent->idBrowsers);
+        }
         
         if (null === $this->_serviceOs) {
             $this->_serviceOs = new Service\Os();
@@ -297,167 +321,42 @@ class UserAgent
             || null === ($os = $this->_serviceOs->find($agent->idOs)->current())
         ) {
             // detect the Operating System
-            $chainOs = new Os\Chain();
-            
-            $os       = $chainOs->detect($userAgent);//var_dump($os);exit;
-            $osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
-            
-            if ($osResult) {
-                $agent->idOs = $osResult->idOs;
+            if (null === $this->_osChain) {
+                $this->_osChain = new Os\Chain();
             }
             
-            unset($chainOs);
+            $os = $this->_osChain->detect($userAgent);
+            
+            if ($forceDetected) {
+                $osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
+                
+                if ($osResult) {
+                    $agent->idOs = $osResult->idOs;
+                }
+                
+                unset($osResult);
+            }
         } else {
             $os = (object) $os->toArray();
         }
         
-        $this->_serviceOs->count($agent->idOs);
-        /*
-        if (null === $this->_serviceBrowserData) {
-            $this->_serviceBrowserData = new Service\BrowserData();
+        if ($forceDetected) {
+            $this->_serviceOs->count($agent->idOs);
+            
+            $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
         }
-        
-        if ($forceDetected 
-            || !$agent->idBrowserData
-        ) {
-            $agent->idBrowserData = $this->_serviceBrowserData->countByName($browser->browser, $browser->version, $browser->bits, (array) $browser);
-        } else {
-            $this->_serviceBrowserData->count($agent->idBrowserData);
-        }
-        
-        // detect the device
-        $deviceChain = new Device\Chain();
-        $device      = $deviceChain->detect($userAgent);
-        
-        $modelWurflData = new Model\WurflData();
-        //if (null === $agent->idWurflData) {
-            $wurfl = $modelWurflData->count(null, $userAgent);exit;
-        //    $agent->idWurflData = $wurfl->idWurflData;
-        //} else {
-        //    $modelWurflData->count($agent->idWurflData, $userAgent);
-        //    
-        //    $wurfl = $modelWurflData->find($agent->idWurflData)->current();
-        //}
-        
-        if (null === $this->_serviceBrowscapData) {
-            $this->_serviceBrowscapData = new Service\BrowscapData();
-        }
-        
-        if ($forceDetected 
-            || !$agent->idBrowscapData 
-            || null === ($object = $this->_serviceBrowscapData->find($agent->idBrowscapData)->current())
-        ) {
-            if (null === $this->_browscap) {
-                // define the User Agent object and set the default values
-                $this->_browscap = new Browscap($this->_config, $this->_logger, $this->_cache);
-            }
-            
-            $detected = $this->_browscap->getBrowser($userAgent);
-            
-            $object = new \StdClass();
-            
-            // take over the detected values to User Agent object
-            $object->Browser = $browser->browser;
-            $version         = $browser->version;
-            
-            $object->Version  = $browser->version;
-            $object->MajorVer = (int) $version;
-            
-            $versions         = explode('.', $version, 2);
-            $object->MinorVer = (isset($versions[1]) ? $versions[1] : '0');
-            
-            if (64 == $browser->bits) {
-                $object->Win64 = 1;
-            } elseif (32 == $browser->bits) {
-                $object->Win32 = 1;
-            } elseif (16 == $browser->bits) {
-                $object->Win16 = 1;
-            }
-            ////echo "\t\t" . 'detecting Browscap-Data (detecting bits): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $object->Platform            = $os->osFull;
-            $object->Alpha               = false;
-            $object->Beta                = false;
-            if (!isset($detected->Frames)) {
-                var_dump($userAgent, $detected);exit;
-            }
-            $object->Frames              = $detected->Frames;
-            $object->IFrames             = $detected->IFrames;
-            $object->Tables              = $detected->Tables;
-            $object->Cookies             = $detected->Cookies;
-            $object->BackgroundSounds    = $detected->BackgroundSounds;
-            $object->JavaScript          = $detected->JavaScript;
-            $object->VBScript            = $detected->VBScript;
-            $object->JavaApplets         = $detected->JavaApplets;
-            $object->ActiveXControls     = $detected->ActiveXControls;
-            $object->isBanned            = $detected->isBanned;
-            $object->isMobileDevice      = $detected->isMobileDevice;
-            $object->isSyndicationReader = $detected->isSyndicationReader;
-            $object->Crawler             = $detected->Crawler;
-            $object->CssVersion          = $detected->CssVersion;
-            $object->AolVersion          = 0;
-            $object->wurflKey            = $detected->wurflKey;
-            $object->renderEngine        = $engine->engine;
-            
-            $dataToStore = (array) $object;
-            unset($dataToStore['AolVersion']);
-            ////echo "\t\t" . 'detecting Browscap-Data (set object): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            
-            $data = $this->_serviceBrowscapData->searchByBrowser($object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);
-            if (!is_object($data)) {
-                var_dump($data, $object->Browser, $object->Platform, $object->Version, $browser->bits, $object->wurflKey);exit;
-            }
-            
-            ////echo "\t\t" . 'detecting Browscap-Data (search browser): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            
-            $this->_serviceBrowscapData->update($dataToStore, 'idBrowscapData = ' . $data->idBrowscapData);
-            $agent->idBrowscapData = $data->idBrowscapData;
-            
-            ////echo "\t\t" . 'detecting Browscap-Data (finish): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        } else {
-            ////echo "\t\t" . 'detecting Browscap-Data (init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $objectCopy = clone $object;
-            
-            ////echo "\t\t" . 'detecting Browscap-Data (clone): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            $object = new \StdClass();
-            
-            // take over the detected values to User Agent object
-            $object->Browser             = $objectCopy->browser;
-            $object->Version             = $objectCopy->version;
-            $object->MajorVer            = $objectCopy->majorver;
-            $object->MinorVer            = $objectCopy->minorver;
-            $object->Win64               = $objectCopy->win64;
-            $object->Win32               = $objectCopy->win32;
-            $object->Win16               = $objectCopy->win16;
-            $object->Platform            = $objectCopy->platform;
-            $object->Alpha               = false;
-            $object->Beta                = false;
-            $object->Frames              = $objectCopy->frames;
-            $object->IFrames             = $objectCopy->iframes;
-            $object->Tables              = $objectCopy->tables;
-            $object->Cookies             = $objectCopy->cookies;
-            $object->BackgroundSounds    = $objectCopy->backgroundsounds;
-            $object->JavaScript          = $objectCopy->javascript;
-            $object->VBScript            = $objectCopy->vbscript;
-            $object->JavaApplets         = $objectCopy->javaapplets;
-            $object->ActiveXControls     = $objectCopy->activexcontrols;
-            $object->isBanned            = $objectCopy->isbanned;
-            $object->isMobileDevice      = $objectCopy->ismobiledevice;
-            $object->isSyndicationReader = $objectCopy->issyndicationreader;
-            $object->Crawler             = $objectCopy->crawler;
-            $object->CssVersion          = $objectCopy->cssversion;
-            $object->AolVersion          = 0;
-            $object->wurflKey            = $objectCopy->wurflkey;
-            $object->renderEngine        = $objectCopy->renderengine;
-        }
-        /**/
-        $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
         
         $object = new \StdClass();
-        $object->idAgents = $agent->idAgents;
+        //$object->idAgents = $agent->idAgents;
         $object->engine   = $engine;
         $object->browser  = $browser;
         $object->os       = $os;
-        //var_dump($object);
+        
+        unset($engine);
+        unset($browser);
+        unset($os);
+        unset($agent);
+        
         return ($bReturnAsArray ? (array) $object : $object);
     }
     

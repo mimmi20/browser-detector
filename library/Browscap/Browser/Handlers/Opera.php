@@ -47,10 +47,7 @@ class Opera extends BrowserHandler
         $isNotReallyAnOpera = array(
             // using also the Gecko rendering engine
             'Opera Mini',
-            'Opera Mobi',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Opera Mobi'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnOpera)) {

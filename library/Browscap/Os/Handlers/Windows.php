@@ -56,12 +56,11 @@ class Windows extends OsHandler
         $isNotReallyAWindows = array(
             // using also the Trident rendering engine
             'Linux',
+            'Macintosh',
+            'Mac OS X',
             'Windows CE',
             'Windows Phone OS',
-            'IEMobile',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'IEMobile'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
@@ -127,7 +126,7 @@ class Windows extends OsHandler
             return $version;
         }
         
-        $doMatch = preg_match('/Windows ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows ([\d\.XP]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             switch ($matches[1]) {
@@ -135,6 +134,7 @@ class Windows extends OsHandler
                     $version = '8';
                     break;
                 case '6.1':
+                case '7':
                     $version = '7';
                     break;
                 case '6.0':
@@ -144,6 +144,7 @@ class Windows extends OsHandler
                     $version = '2003';
                     break;
                 case '5.1':
+                case 'XP':
                     $version = 'XP';
                     break;
                 case '2000':

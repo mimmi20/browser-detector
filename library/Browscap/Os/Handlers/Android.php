@@ -39,17 +39,7 @@ class Android extends Linux
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Android'))) {
-            return false;
-        }
-        
-        $isNotReallyAWindows = array(
-            //Fakes
-            'User agent',
-            'User-Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Android', 'Silk'))) {
             return false;
         }
         
@@ -77,7 +67,13 @@ class Android extends Linux
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Android\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Android\/([\d\.\_\-update]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Android ([\d\.\_\-update]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

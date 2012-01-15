@@ -43,16 +43,6 @@ class Suse extends Linux
             return false;
         }
         
-        $isNotReallyAWindows = array(
-            //Fakes
-            'User agent',
-            'User-Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
-            return false;
-        }
-        
         return true;
     }
     

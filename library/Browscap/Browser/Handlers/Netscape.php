@@ -83,9 +83,7 @@ class Netscape extends BrowserHandler
             'Chromium',
             'Iron',
             'Rockmelt',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'libwww'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

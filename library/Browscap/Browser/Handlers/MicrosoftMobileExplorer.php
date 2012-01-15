@@ -76,10 +76,7 @@ class MicrosoftMobileExplorer extends BrowserHandler
             'IEMobile',
             'BlackBerry',
             'WebTV',
-            'ArgClrInt',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'ArgClrInt'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

@@ -78,10 +78,7 @@ class NetNewsWire extends BrowserHandler
             'IEMobile',
             'BlackBerry',
             'WebTV',
-            'MSIE',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'MSIE'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

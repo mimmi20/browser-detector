@@ -89,4 +89,9 @@ class Libwww extends BrowserHandler
         
         return '';
     }
+    
+    public function getWeight()
+    {
+        return 3;
+    }
 }

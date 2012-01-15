@@ -96,10 +96,6 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'WebTV',
             'ArgClrInt',
             'Firefox',
-            //Fakes
-            'User agent',
-            'User-Agent',
-            'User-agent',
             'MSIECrawler'
         );
         

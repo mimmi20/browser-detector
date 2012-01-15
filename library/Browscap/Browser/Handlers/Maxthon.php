@@ -75,10 +75,7 @@ class Maxthon extends BrowserHandler
             'BlackBerry',
             'WebTV',
             'ArgClrInt',
-            'Firefox',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Firefox'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

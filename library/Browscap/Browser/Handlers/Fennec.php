@@ -60,10 +60,7 @@ class Fennec extends BrowserHandler
             'Navigator',
             'PaleMoon',
             'Flock',
-            'SeaMonkey',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'SeaMonkey'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

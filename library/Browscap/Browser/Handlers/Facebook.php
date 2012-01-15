@@ -41,7 +41,9 @@ class Facebook extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Facebook')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Facebook')
+            && !$this->utils->checkIfContainsAnyOf($userAgent, array('FBAN', 'FBForIPhone', 'FBAV'))
+        ) {
             return false;
         }
         
@@ -53,10 +55,7 @@ class Facebook extends BrowserHandler
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Rockmelt'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
@@ -88,6 +87,12 @@ class Facebook extends BrowserHandler
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/Facebook ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/FBAV\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

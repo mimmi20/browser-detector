@@ -44,16 +44,6 @@ class Typo extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnOpera = array(
-            //Fakes
-            'User agent',
-            'User-Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnOpera)) {
-            return false;
-        }
-        
         return true;
     }
     

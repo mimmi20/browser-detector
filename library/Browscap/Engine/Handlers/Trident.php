@@ -48,7 +48,7 @@ class Trident extends EngineHandler
         }
         
         if (!$this->utils->checkIfContains($userAgent, 'MSIE')
-            && $this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto'))
+            && $this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics', 'libwww'))
         ) {
             return false;
         }

@@ -80,7 +80,7 @@ class CatchAll extends BrowserHandler
         
         $doMatch = preg_match('/' . $engine . '\/([\d\.]+)/', $userAgent, $matches);
         
-        if ($doMatch) {
+        if ($doMatch && '0' != $matches[1]) {
             return $matches[1];
         }
         

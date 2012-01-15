@@ -64,10 +64,7 @@ class Gmx extends MicrosoftInternetExplorer
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'WebTV'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

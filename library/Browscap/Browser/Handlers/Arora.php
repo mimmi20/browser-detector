@@ -63,10 +63,7 @@ class Arora extends BrowserHandler
             'Rockmelt',
             'Comodo Dragon',
             'Google Earth',
-            'Chrome',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Chrome'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

@@ -47,6 +47,10 @@ class Google extends BrowserHandler
             return false;
         }
         
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('GoogleToolbar', 'Google Earth', 'Googlebot'))) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -78,5 +82,10 @@ class Google extends BrowserHandler
         }
         
         return '';
+    }
+    
+    public function getWeight()
+    {
+        return 6;
     }
 }

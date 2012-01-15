@@ -49,10 +49,7 @@ class RimTablet extends BlackberryOs
             // special Linux versions
             'Android',
             'Debian',
-            'Ubuntu',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Ubuntu'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {

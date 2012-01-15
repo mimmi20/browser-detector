@@ -57,10 +57,7 @@ class Flock extends BrowserHandler
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Rockmelt'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

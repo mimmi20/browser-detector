@@ -64,11 +64,12 @@ class Safari extends BrowserHandler
             'Rockmelt',
             'rekonq',
             'OmniWeb',
+            'Silk',
+            'MQQBrowser',
+            'konqueror',
             //mobile Version
             'Mobile',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Android'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

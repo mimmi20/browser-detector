@@ -71,13 +71,13 @@ class Elinks extends BrowserHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/ELinks \(([\d\.]+)\)/', $userAgent, $matches);
+        $doMatch = preg_match('/ELinks \(([\d\.\~pre\-]+)\)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/ELinks\/([\d\.]+)\)/', $userAgent, $matches);
+        $doMatch = preg_match('/ELinks\/([\d\.\~pre\-]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

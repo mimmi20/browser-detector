@@ -45,7 +45,11 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Konqueror', 'KHTML'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'KHTML')) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Konqueror', 'konqueror', 'kded'))) {
             return false;
         }
         
@@ -62,10 +66,7 @@ class Konqueror extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
-            'Firefox',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Firefox'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
@@ -97,6 +98,12 @@ class Konqueror extends BrowserHandler
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/Konqueror\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/konqueror\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

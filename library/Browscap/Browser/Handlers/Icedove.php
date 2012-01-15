@@ -61,10 +61,7 @@ class Icedove extends Thunderbird
             'Flock',
             'Fennec',
             'Firefox',
-            'Iceowl',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Iceowl'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

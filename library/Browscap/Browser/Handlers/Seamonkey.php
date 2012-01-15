@@ -66,10 +66,7 @@ class Seamonkey extends BrowserHandler
             'Navigator',
             'PaleMoon',
             'Flock',
-            'Fennec',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Fennec'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

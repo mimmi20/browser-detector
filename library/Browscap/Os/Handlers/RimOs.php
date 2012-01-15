@@ -49,10 +49,7 @@ class RimOs extends OsHandler
             // special Linux versions
             'Android',
             'Debian',
-            'Ubuntu',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Ubuntu'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {
@@ -83,7 +80,19 @@ class RimOs extends OsHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/BlackBerry\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BlackBerry\d+\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/BlackBerrySimulator\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

@@ -45,7 +45,7 @@ class Gecko extends EngineHandler
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Trident', 'Presto'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Presto'))) {
             return false;
         }
         
@@ -75,10 +75,16 @@ class Gecko extends EngineHandler
     {
         $version = '';
         
-        $doMatch = preg_match('/rv\:([\d\.]+).*Gecko\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/rv\:([\d\.ab]+).*Gecko\/([\d\.]+)/', $userAgent, $matches);
         //var_dump($matches);
         if ($doMatch) {
             return $matches[1] . ' (' . $matches[2] . ')';
+        }
+        
+        $doMatch = preg_match('/Gecko\/([\d\.]+)/', $userAgent, $matches);
+        //var_dump($matches);
+        if ($doMatch) {
+            return '(' . $matches[1] . ')';
         }
         
         return '';

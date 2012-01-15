@@ -41,33 +41,7 @@ class Dolfin extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Safari/')
-        ) {
-            return false;
-        }
-        
         if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Dolphin/', 'Dolfin/'))) {
-            return false;
-        }
-        
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            //Fakes
-            'User agent',
-            'User-Agent'
-        );
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
             return false;
         }
         

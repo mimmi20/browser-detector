@@ -47,10 +47,7 @@ class NetFront extends BrowserHandler
         
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
-            'Kindle',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Kindle'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

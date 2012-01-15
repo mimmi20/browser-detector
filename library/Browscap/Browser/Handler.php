@@ -128,7 +128,7 @@ abstract class Handler implements MatcherInterface
         }
         
         // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
             return 32;
         }
         

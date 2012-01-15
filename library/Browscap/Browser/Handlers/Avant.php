@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    $id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * MSIEAgentHanlder
  *
@@ -31,7 +29,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    $id$
  */
-class Avant extends BrowserHandler
+class Avant extends MicrosoftInternetExplorer
 {
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
@@ -62,7 +60,6 @@ class Avant extends BrowserHandler
             'PaleMoon',
             'Flock',
             'AOL',
-            'TOB',
             'MyIE',
             //others
             'AppleWebKit',
@@ -72,10 +69,7 @@ class Avant extends BrowserHandler
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'WebTV'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
@@ -83,5 +77,22 @@ class Avant extends BrowserHandler
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectBrowser($userAgent)
+    {
+        return 'Avant Browser';
+    }
+    
+    public function getWeight()
+    {
+        return 8;
     }
 }

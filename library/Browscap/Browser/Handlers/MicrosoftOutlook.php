@@ -67,16 +67,14 @@ class MicrosoftOutlook extends BrowserHandler
             'AOL',
             'TOB',
             'MyIE',
+            'Excel',
             //others
             'AppleWebKit',
             'Chrome',
             'Linux',
             'IEMobile',
             'BlackBerry',
-            'WebTV',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'WebTV'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

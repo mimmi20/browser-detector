@@ -57,10 +57,7 @@ class Rockmelt extends BrowserHandler
             'Lunascape',
             'Iron',
             'Maemo',
-            'PaleMoon',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'PaleMoon'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

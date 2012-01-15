@@ -46,9 +46,10 @@ class Java extends OsHandler
         }
         
         $isNotReallyAWindows = array(
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'SymbianOS',
+            'SymbOS',
+            'Symbian',
+            'Series 60'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {

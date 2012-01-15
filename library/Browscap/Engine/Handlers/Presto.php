@@ -47,7 +47,7 @@ class Presto extends EngineHandler
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Trident', 'Gecko'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'Trident', 'Gecko'))) {
             return false;
         }
         

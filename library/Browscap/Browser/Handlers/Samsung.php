@@ -41,7 +41,7 @@ class Samsung extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Jasmine', 'NetFront'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Jasmine', 'NetFront', 'Dolfin'))) {
             return false;
         }
         

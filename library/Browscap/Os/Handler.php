@@ -130,7 +130,7 @@ abstract class Handler implements MatcherInterface
             return 16;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'i586', 'i686', 'i386', 'i486'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
             return 32;
         }
         

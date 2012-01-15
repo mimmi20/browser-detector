@@ -62,10 +62,7 @@ class Rekonq extends BrowserHandler
             'Rockmelt',
             'OmniWeb',
             //mobile Version
-            'Mobile',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Mobile'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

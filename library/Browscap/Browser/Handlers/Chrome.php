@@ -63,10 +63,7 @@ class Chrome extends BrowserHandler
             'Rockmelt',
             'Comodo Dragon',
             'Google Earth',
-            'Arora',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Arora'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

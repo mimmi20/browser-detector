@@ -58,10 +58,7 @@ class Kmeleon extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
-            'Firefox',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'Firefox'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

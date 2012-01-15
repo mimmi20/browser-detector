@@ -75,10 +75,7 @@ class Firefox extends BrowserHandler
             'CazoodleBot',
             'LOOQ',
             //others
-            'MSIE',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'MSIE'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

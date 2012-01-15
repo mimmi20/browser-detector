@@ -41,7 +41,7 @@ class Linux extends OsHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Linux', 'linux'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Linux', 'linux', 'X11'))) {
             return false;
         }
         
@@ -50,9 +50,8 @@ class Linux extends OsHandler
             'Android',
             'Debian',
             'Ubuntu',
-            //Fakes
-            'User agent',
-            'User-Agent'
+            'CrOS',
+            'SunOS'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {
@@ -84,6 +83,12 @@ class Linux extends OsHandler
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/Linux\/([\d\.\-]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Linux ([\d\.\-amdserv]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

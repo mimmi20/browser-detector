@@ -75,6 +75,12 @@ class Ucweb extends BrowserHandler
             return $matches[1];
         }
         
+        $doMatch = preg_match('/Browser([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         return '';
     }
 }
