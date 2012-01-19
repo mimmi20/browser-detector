@@ -17,7 +17,7 @@ namespace Browscap\Os;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 /**
@@ -28,7 +28,7 @@ namespace Browscap\Os;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 interface MatcherInterface
 {
@@ -50,5 +50,12 @@ interface MatcherInterface
      * @return StdClass
      */
     public function detect($userAgent);
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight();
 }
 

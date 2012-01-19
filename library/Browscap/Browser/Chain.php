@@ -16,18 +16,13 @@ namespace Browscap\Browser;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 /**
  * Utility class which holds the detection functions
  */
 use \Browscap\Utils;
-
-/**
- * the browser database model
- */
-use \Browscap\Service\Browsers;
 
 /**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
@@ -37,9 +32,9 @@ use \Browscap\Service\Browsers;
 final class Chain
 {
     /**
-     * @var \
+     * @var array
      */
-    private $_chain = null;
+    private $_chain = array();
     
     /**
      * @var Browscap\Utils
@@ -56,10 +51,9 @@ final class Chain
     public function __construct()
     {
         // the utility classes
-        $this->_utils   = new Utils();
-        $this->_chain   = array();
-        $this->_service = new Browsers();
-        $this->_log     = \Zend\Registry::get('log');
+        $this->_utils = new Utils();
+        $this->_chain = array();
+        $this->_log   = \Zend\Registry::get('log');
         
         // get all Browsers
         $directory = __DIR__ . DS . 'Handlers' . DS;
@@ -71,7 +65,7 @@ final class Chain
                 
                 if ('CatchAll' != $filename) {
                     $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
-                    
+                    //echo "\t\t\t" . 'detecting Browser (Chain - creating class name [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     try {
                         $handler = new $className();
                     } catch (\Exception $e) {
@@ -79,6 +73,7 @@ final class Chain
                         
                         //$this->_log->warn($e);
                         
+                        $this->_chain->next();
                         continue;
                     }
                     
@@ -110,7 +105,6 @@ final class Chain
         // the utility classes
         $this->_utils   = null;
         $this->_chain   = null;
-        $this->_service = null;
         $this->_log     = null;
     }
     
@@ -123,28 +117,52 @@ final class Chain
      */
     public function detect($userAgent)
     {
-        $browser             = new \StdClass();
-        $browser->browser    = 'unknown';
-        $browser->version    = 0.0;
-        $browser->bits       = 0;
-        $browser->idBrowsers = null;
+        $browser = new \StdClass();
+        $browser->browser     = 'unknown';
+        $browser->version     = '';
+        $browser->bits        = 0;
+        $browser->browserFull = 'unknown';
         
         if (count($this->_chain)) {
             foreach ($this->_chain as $detector) {
                 $handler = $detector['class'];
                 
                 if ($handler->canHandle($userAgent)) {
+                    //echo "\t\t\t" . 'detecting Browser (Chain - can handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     try {
+                        //echo "\t\t\t" . 'detecting Browser (Chain - can handle [' . $class . '] - start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         return $handler->detect($userAgent);
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
                         //$this->_log->warn($e);
-                        
+                        //echo "\t\t\t" . 'detecting Browser (Chain - can not handle [' . $class . '] - Exception): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                        $this->_chain->next();
                         continue;
                     }
                 }
             }
         }
+        //echo "\t\t\t" . 'detecting Browser (Chain - not found in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        //if not deteceted yet, use ini file as fallback
+        $handler = new Handlers\CatchAll();
+        if ($handler->canHandle($userAgent)) {
+            $browser = $handler->detect($userAgent);
+            
+            //echo "\t\t\t" . 'detecting Browser (Chain - detect): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+            
+            if ($browser->browser) {
+                try {
+                    $className = $this->_utils->getClassNameFromDetected($browser->browser, __NAMESPACE__);
+                    echo "Class '$className' not found \n";
+                    $handler = new $className();
+                    $this->_chain->insert($handler, $handler->getWeight());
+                } catch (\Exception $e) {
+                    //$this->_log->warn($e);
+                }
+            }
+        }
+        
+        unset($handler);
         
         return $browser;
     }

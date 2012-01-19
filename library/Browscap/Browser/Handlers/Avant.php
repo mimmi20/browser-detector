@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 /**
@@ -27,7 +27,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 class Avant extends MicrosoftInternetExplorer
 {

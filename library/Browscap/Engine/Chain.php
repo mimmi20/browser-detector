@@ -16,7 +16,7 @@ namespace Browscap\Engine;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Utils;
@@ -118,8 +118,10 @@ final class Chain
     public function detect($userAgent)
     {
         $engine = new \StdClass();
-        $engine->name = 'unknown';
-        $engine->version = 0.0;
+        $engine->name       = 'unknown';
+        $engine->version    = '';
+        $engine->engineFull = 'unknown';
+        
         
         if (count($this->_chain)) {
             foreach ($this->_chain as $detector) {

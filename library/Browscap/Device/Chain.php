@@ -16,7 +16,7 @@ namespace Browscap\Device;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Utils;
@@ -44,17 +44,52 @@ class Chain
      */
     public function __construct()
     {
-        $this->utils = new Utils();
-        
+        // the utility classes
+        $this->_utils = new Utils();
         $this->_chain = new \SplPriorityQueue();
+        $this->_log   = \Zend\Registry::get('log');
         
-        //get all Devices
+        // get all Devices
+        $directory = __DIR__ . DS . 'Handlers' . DS;
+        $iterator  = new \DirectoryIterator($directory);
         
-        //get amount of calls for each Device
+        foreach ($iterator as $fileinfo) {
+            if ($fileinfo->isFile() && $fileinfo->isReadable()) {
+                $filename = $fileinfo->getBasename('.php');
+                
+                if ('CatchAll' != $filename) {
+                    $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
+                    //echo "\t\t\t" . 'detecting Device (Chain - creating class name [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                    try {
+                        $handler = new $className();
+                    } catch (\Exception $e) {
+                        echo "Class '$className' not found \n";
+                        
+                        //$this->_log->warn($e);
+                        
+                        $this->_chain->next();
+                        continue;
+                    }
+                    
+                    //echo "\t\t\t" . 'detecting Device (Chain - add class [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                    
+                    $this->_chain->insert($handler, $handler->getWeight());
+                }
+            }
+        }
         
-        //create list ordered by amount of calls
-        
-        $this->_log = \Zend\Registry::get('log');
+        unset($iterator, $directory);
+    }
+
+    /**
+     * 
+     */
+    public function __destruct()
+    {
+        // the utility classes
+        $this->_utils   = null;
+        $this->_chain   = null;
+        $this->_log     = null;
     }
     
     /**
@@ -66,57 +101,59 @@ class Chain
      */
     public function detect($userAgent)
     {
+        //echo "\t\t\t" . 'detecting Device (Chain - init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         $device = new \StdClass();
-        $device->name = 'unknown';
-        $device->version = 0.0;
-        $device->bits    = 0;
+        $device->device     = 'unknown';
+        $device->version    = '';
+        $device->fullDevice = 'unknown';
         
-        //$deviceModel = new Browsers();
-        
+        //echo "\t\t\t" . 'detecting Device (Chain - creating result class): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         if ($this->_chain->count()) {
             $this->_chain->top();
-            
+            //echo "\t\t\t" . 'detecting Device (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             while ($this->_chain->valid()) {
-                $class = ltrim($this->_chain->current(), '\\');
-                $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
-                $class = preg_replace('/[^a-zA-Z ]/', '', $class);
-                $class = str_replace(' ', '', ucwords($class));
-                
-                $className = '\\' . __NAMESPACE__ . '\\Handlers\\' . $class;
-                try {
-                    $handler = new $className();
-                } catch (\Exception $e) {
-                    echo "Class '$className' not found \n";
-                    
-                    $this->_log->warn($e);
-                    
-                    $this->_chain->next();
-                    continue;
-                }
+                $handler = $this->_chain->current();
+                $class   = get_class($handler);
+                //echo "\t\t\t" . 'detecting Device (Chain - get Handler [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 
                 if ($handler->canHandle($userAgent)) {
+                    //echo "\t\t\t" . 'detecting Device (Chain - can handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     try {
-                        $device = $handler->detect($userAgent);
-                        
-                        return $device;
+                        //echo "\t\t\t" . 'detecting Device (Chain - can handle [' . $class . '] - start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                        return $handler->detect($userAgent);
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        $this->_log->warn($e);
-                        
+                        //$this->_log->warn($e);
+                        //echo "\t\t\t" . 'detecting Device (Chain - can not handle [' . $class . '] - Exception): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         $this->_chain->next();
                         continue;
                     }
                 }
-                
+                //echo "\t\t\t" . 'detecting Device (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 $this->_chain->next();
             }
         }
-        
+        //echo "\t\t\t" . 'detecting Device (Chain - not found in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         //if not deteceted yet, use ini file as fallback
         $handler = new Handlers\CatchAll();
         if ($handler->canHandle($userAgent)) {
             $device = $handler->detect($userAgent);
+            
+            //echo "\t\t\t" . 'detecting Device (Chain - detect): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+            
+            if ($device->device) {
+                try {
+                    $className = $this->_utils->getClassNameFromDetected($device->device, __NAMESPACE__);
+                    echo "Class '$className' not found \n";
+                    $handler = new $className();
+                    $this->_chain->insert($handler, $handler->getWeight());
+                } catch (\Exception $e) {
+                    //$this->_log->warn($e);
+                }
+            }
         }
+        
+        unset($handler);
         
         return $device;
     }

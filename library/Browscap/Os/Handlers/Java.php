@@ -16,7 +16,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use Browscap\Os\Handler as OsHandler;
@@ -29,7 +29,7 @@ use Browscap\Os\Handler as OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 class Java extends OsHandler
 {
@@ -89,6 +89,11 @@ class Java extends OsHandler
         return '';
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 218;

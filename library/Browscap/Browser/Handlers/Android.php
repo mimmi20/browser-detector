@@ -17,7 +17,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 /**
@@ -28,7 +28,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 class Android extends MobileSafari
 {
@@ -66,6 +66,11 @@ class Android extends MobileSafari
         return 'Android Webkit (Mobile Safari)';
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 287;

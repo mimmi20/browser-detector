@@ -17,7 +17,7 @@ namespace Browscap;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 /**
  * WURFL user agent hander utilities

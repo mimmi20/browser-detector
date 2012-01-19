@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Os\Handlers;
+namespace Browscap\Browser\Handlers;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -16,30 +16,32 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id: Bootstrap.php 4965 2011-10-11 08:04:26Z t.mueller $
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
- * MSIEAgentHanlder
+ * KonquerorHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id: Bootstrap.php 4965 2011-10-11 08:04:26Z t.mueller $
  */
-class BlackberryOs extends Linux
+class MosBookmarks extends BrowserHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
+     * Intercept all UAs Containing Firefox and are not mobile browsers
      *
      * @param string $userAgent
      * @return boolean
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('BlackBerry'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'MOSBookmarks')) {
             return false;
         }
         
@@ -55,7 +57,7 @@ class BlackberryOs extends Linux
      */
     protected function detectBrowser($userAgent)
     {
-        return 'BlackberryOs';
+        return 'MOSBookmarks';
     }
     
     /**
@@ -67,7 +69,13 @@ class BlackberryOs extends Linux
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/BlackBerry\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MOSBookmarks\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/MOSBookmarks\/v([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
@@ -78,6 +86,6 @@ class BlackberryOs extends Linux
     
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 }

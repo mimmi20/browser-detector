@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 /**
@@ -27,7 +27,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 class YahooMyBrowser extends Yahoo
@@ -60,6 +60,11 @@ class YahooMyBrowser extends Yahoo
         return 'Yahoo! My Browser';
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 2;

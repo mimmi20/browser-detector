@@ -16,7 +16,7 @@ namespace Browscap\Engine\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use Browscap\Engine\Handler as EngineHandler;
@@ -29,7 +29,7 @@ use Browscap\Engine\Handler as EngineHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 class Gecko extends EngineHandler
 {
@@ -90,6 +90,11 @@ class Gecko extends EngineHandler
         return '';
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 5244;

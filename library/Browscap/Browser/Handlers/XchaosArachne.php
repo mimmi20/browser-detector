@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -29,7 +29,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 class XchaosArachne extends BrowserHandler

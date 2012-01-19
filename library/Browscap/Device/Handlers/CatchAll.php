@@ -16,10 +16,10 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
+use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHanlder
@@ -29,10 +29,10 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
-class CatchAll extends BrowserHandler
+class CatchAll extends DeviceHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -57,11 +57,23 @@ class CatchAll extends BrowserHandler
     {
         $class = new \StdClass();
         
-        $detector = new \Browscap\Browscap();
-        $detected = $detector->getBrowser($userAgent);
+        //$detector = new \Browscap\Browscap();
+        //$detected = $detector->getBrowser($userAgent);
         
-        $class->device = 'unknown';
+        $class->device     = 'unknown';
+        $class->version    = '';
+        $class->fullDevice = 'unknown';
         
         return $class;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return -1;
     }
 }

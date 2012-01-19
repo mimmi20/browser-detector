@@ -16,7 +16,7 @@ namespace Browscap\Os;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Utils;
@@ -120,9 +120,10 @@ final class Chain
     {
         $os = new \StdClass();
         $os->name    = 'unknown';
-        $os->version = 'unknown';
+        $os->version = '';
+        $os->osFull  = 'unknown';
         $os->bits    = 0;
-        
+                
         if (count($this->_chain)) {
             foreach ($this->_chain as $detector) {
                 $handler = $detector['class'];
@@ -139,7 +140,7 @@ final class Chain
                 }
             }
         }
-        
+            
         return $os;
     }
 }

@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 /**
@@ -27,7 +27,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 class YahooPipes extends Yahoo
@@ -60,6 +60,11 @@ class YahooPipes extends Yahoo
         return 'Yahoo! Pipes';
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 2;

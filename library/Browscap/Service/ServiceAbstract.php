@@ -82,6 +82,11 @@ abstract class ServiceAbstract
 
         return $this;
     }
+    
+    public function getModel()
+    {
+        return $this->_model;
+    }
 }
 
 /*

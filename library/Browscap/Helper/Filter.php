@@ -17,7 +17,7 @@ namespace Browscap\Helper;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 /**
  * WURFL_Handlers_Filter is the base interface that concrete classes
@@ -28,7 +28,7 @@ namespace Browscap\Helper;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 interface Filter

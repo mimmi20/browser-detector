@@ -16,7 +16,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
 
 use Browscap\Os\Handler as OsHandler;
@@ -29,9 +29,9 @@ use Browscap\Os\Handler as OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    $id$
+ * @version   SVN: $Id$
  */
-class RimTablet extends BlackberryOs
+class RimTablet extends RimOs
 {
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
@@ -89,6 +89,11 @@ class RimTablet extends BlackberryOs
         return '';
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 3;

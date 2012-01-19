@@ -108,7 +108,7 @@ class UserAgent
      * @var \Browscap\Service\BrowscapData
      */
     private $_serviceBrowscapData = null;
-    
+
     /**
      * @var \Browscap\Os\Chain
      */
@@ -141,7 +141,7 @@ class UserAgent
             $config = $config->toArray();
         }
         
-        if (null !== $config && !is_array($config)) {
+        if (!is_array($config)) {
             throw new Exceptions\WrongConfigObjectException(
                 'the config must be an array or an instance of \\Zend\\Config\\Config'
             );
@@ -177,7 +177,7 @@ class UserAgent
             );
         }
         
-        $this->getBrowser($agent, false, true);
+        $this->getBrowser($agent, false, false);
     }
 
     /**
@@ -216,14 +216,14 @@ class UserAgent
         ) {
             $browserArray = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
             
-            if (!$forceDetected 
-                && $this->_cache instanceof \Zend\Cache\Cache
-            ) {
+            if ($this->_cache instanceof \Zend\Cache\Cache) {
                 $this->_cache->save($browserArray, $cacheId);
             }
         } else {
             $agent = $this->_serviceAgents->searchByAgent($userAgent);
             $this->_serviceAgents->count($agent->idAgents);
+            
+            unset($agent);
         }
         
         unset($cacheId);
@@ -249,6 +249,8 @@ class UserAgent
             $agent->agent = $userAgent;
             $agent->save();
         }
+        
+        $this->_serviceAgents->getModel()->getAdapter()->beginTransaction();
         
         if ($forceDetected) {
             $this->_serviceAgents->count($agent->idAgents);
@@ -345,12 +347,39 @@ class UserAgent
             
             $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
         }
+        /**/
+        
+        $device = null;
+        
+        // detect the device
+        if ($forceDetected 
+            //|| !$agent->idDevice
+            //|| null === ($device = $this->_serviceOs->find($agent->idDevice)->current())
+        ) {
+            // detect the device
+            $chainDevice = new Device\Chain();
+            
+            $device       = $chainDevice->detect($userAgent);//var_dump($os);exit;
+            //$osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
+            
+            //if ($osResult) {
+            //    $agent->idDevice = $osResult->idOs;
+            //}
+            
+            unset($chainDevice);
+        } else {
+            //$device = (object) $device->toArray();
+        }
+        
+        $this->_serviceAgents->getModel()->getAdapter()->commit();
         
         $object = new \StdClass();
         //$object->idAgents = $agent->idAgents;
         $object->engine   = $engine;
         $object->browser  = $browser;
         $object->os       = $os;
+        $object->device   = $device;
+        //var_dump($object);
         
         unset($engine);
         unset($browser);
