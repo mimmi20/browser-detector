@@ -155,37 +155,40 @@ class Browsers extends ModelAbstract
         
         $id = (int) $id;
 
-        /**
-         * @var Zend_Db_Table_Select
-         */
-        $select = $this->select();
-        $select->from(
-            array('c' => $this->_name)
-        );
-
-        $select->where('`c`.`idBrowsers` = :id');
-        $select->limit(1);
-
-        $stmt = new \Zend\Db\Statement\Pdo($this->_db, $select);
+        if (empty($this->_statements[__FUNCTION__])) {
+            /**
+             * @var Zend_Db_Table_Select
+             */
+            $select = $this->select();
+            
+            $select->from(
+                array('c' => $this->_name)
+            );
+            
+            $select->where('`c`.`idBrowsers` = :id');
+            
+            $select->limit(1);
+            
+            $stmt = new \Zend\Db\Statement\Pdo($this->_db, $select);
+            
+            $this->_statements[__FUNCTION__] = $stmt;
+        } else {
+            $stmt   = $this->_statements[__FUNCTION__];
+            $select = null;
+        }
+        
         $stmt->bindParam(':id', $id, \PDO::PARAM_INT);
-
-        $rows = $this->execute(
-            $stmt,
-            \PDO::FETCH_ASSOC,
-            $select,
-            array(
-                'id' => array('value' => $id, 'type' => 'PDO::PARAM_INT')
-            )
-        );
-
+        
+        $rows = $this->execute($stmt, \PDO::FETCH_ASSOC);
+        
         if (false === $rows) {
             $rows = array();
         }
-
+        
         $options = array(
             'data' => $rows
         );
-
+        
         try {
             $rowSet = new \Zend\Db\Table\Rowset($options);
             $rowSet->setTable($this);
@@ -194,12 +197,12 @@ class Browsers extends ModelAbstract
 
             return false;
         }
-
+        
         while ($rowSet->valid()) {
             $rowSet->current();
             $rowSet->next();
         }
-
+        
         return $rowSet->rewind();
     }
     

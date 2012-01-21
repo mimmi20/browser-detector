@@ -123,6 +123,11 @@ class UserAgent
      * @var \Browscap\Browser\Chain
      */
     private $_browserChain = null;
+    
+    /**
+     * @var \Browscap\Support
+     */
+    private $_support = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -189,17 +194,18 @@ class UserAgent
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
+    public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false, $useDb = false)
     {
         // Automatically detect the useragent
         if (empty($userAgent) || !is_string($userAgent)) {
-            $support   = new Support();
-            $userAgent = $support->getUserAgent();
+            if (null === $this->_support) {
+                $this->_support = new Support();
+            }
             
-            unset($support);
+            $userAgent = $this->_support->getUserAgent();
         }
         
-        if (null === $this->_serviceAgents) {
+        if (null === $this->_serviceAgents && $useDb) {
             $this->_serviceAgents = new Service\Agents();
         }
         
@@ -214,12 +220,17 @@ class UserAgent
             || !($this->_cache instanceof \Zend\Cache\Cache)
             || !($browserArray = $this->_cache->load($cacheId))
         ) {
-            $browserArray = $this->_detect($userAgent, $bReturnAsArray, $forceDetected);
+            
+            $browserArray = $this->_detect($userAgent, $bReturnAsArray, $forceDetected, $useDb);
             
             if ($this->_cache instanceof \Zend\Cache\Cache) {
                 $this->_cache->save($browserArray, $cacheId);
             }
-        } else {
+            
+        }
+        
+        if ($forceDetected && $useDb) {
+            
             $agent = $this->_serviceAgents->searchByAgent($userAgent);
             $this->_serviceAgents->count($agent->idAgents);
             
@@ -240,30 +251,41 @@ class UserAgent
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    private function _detect($userAgent = null, $bReturnAsArray = false, $forceDetected = false)
+    private function _detect($userAgent = null, $bReturnAsArray = false, $forceDetected = false, $useDb = false)
     {
-        $agent = $this->_serviceAgents->searchByAgent($userAgent);
-        
-        if (!is_object($agent)) {
-            $agent        = $this->_serviceAgents->createRow();
-            $agent->agent = $userAgent;
-            $agent->save();
+        if ($useDb) {
+            $agent = $this->_serviceAgents->searchByAgent($userAgent);
+            
+            if (!is_object($agent)) {
+                $agent        = $this->_serviceAgents->createRow();
+                $agent->agent = $userAgent;
+                $agent->save();
+            }
+            
+            $this->_serviceAgents->getModel()->getAdapter()->beginTransaction();
+            
+            if ($forceDetected) {
+                $this->_serviceAgents->count($agent->idAgents);
+            }
         }
         
-        $this->_serviceAgents->getModel()->getAdapter()->beginTransaction();
-        
-        if ($forceDetected) {
-            $this->_serviceAgents->count($agent->idAgents);
-        }
-        
-        if (null === $this->_serviceEngines) {
+        if (null === $this->_serviceEngines && $useDb) {
             $this->_serviceEngines = new Service\Engines();
         }
         
-        if ($forceDetected 
-            || !$agent->idEngines 
-            || null === ($engine = $this->_serviceEngines->find($agent->idEngines)->current())
-        ) {
+        $engine = null;
+        
+        if ($useDb) {
+            $idEngines = null;
+            
+            if ($idEngines = $agent->idEngines) {
+                $engine = $this->_serviceEngines->find($idEngines)->current();
+            }
+            
+            unset($idEngines);
+        }
+        
+        if ($forceDetected || null === $engine) {
             // detect the Rendering Engine
             if (null === $this->_engineChain) {
                 $this->_engineChain = new Engine\Chain();
@@ -271,7 +293,7 @@ class UserAgent
             
             $engine = $this->_engineChain->detect($userAgent);
             
-            if ($forceDetected) {
+            if ($forceDetected && $useDb) {
                 $searchedEngine = $this->_serviceEngines->searchByName($engine->engine, $engine->version);
                 
                 if ($searchedEngine) {
@@ -282,20 +304,30 @@ class UserAgent
             }
         } else {
             $engine = (object) $engine->toArray();
+            $engine->engineFull = $engine->engine . ($engine->engine != $engine->version && '' != $engine->version ? ' ' . $engine->version : '');
         }
         
-        if ($forceDetected) {
+        if ($forceDetected && $useDb) {
             $this->_serviceEngines->count($agent->idEngines);
         }
         
-        if (null === $this->_serviceBrowsers) {
+        if (null === $this->_serviceBrowsers && $useDb) {
             $this->_serviceBrowsers = new Service\Browsers();
         }
         
-        if ($forceDetected 
-            || !$agent->idBrowsers 
-            || null === ($browser = $this->_serviceBrowsers->find($agent->idBrowsers)->current())
-        ) {
+        $browser = null;
+        
+        if ($useDb) {
+            $idBrowsers = null;
+            
+            if ($idBrowsers = $agent->idBrowsers) {
+                $browser = $browser = $this->_serviceBrowsers->find($idBrowsers)->current();
+            }
+            
+            unset($idBrowsers);
+        }
+        
+        if ($forceDetected || null === $browser) {
             // detect the browser
             if (null === $this->_browserChain) {
                 $this->_browserChain = new Browser\Chain();
@@ -303,25 +335,35 @@ class UserAgent
             
             $browser = $this->_browserChain->detect($userAgent);
             
-            if ($forceDetected) {
+            if ($forceDetected && $useDb) {
                 $agent->idBrowsers = $this->_serviceBrowsers->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
             }
         } else {
             $browser = (object) $browser->toArray();
+            $browser->browserFull = $browser->browser . ($browser->browser != $browser->version && '' != $browser->version ? ' ' . $browser->version : '');
         }
         
-        if ($forceDetected) {
+        if ($forceDetected && $useDb) {
             $this->_serviceBrowsers->count($agent->idBrowsers);
         }
         
-        if (null === $this->_serviceOs) {
+        if (null === $this->_serviceOs && $useDb) {
             $this->_serviceOs = new Service\Os();
         }
         
-        if ($forceDetected 
-            || !$agent->idOs 
-            || null === ($os = $this->_serviceOs->find($agent->idOs)->current())
-        ) {
+        $os = null;
+        
+        if ($useDb) {
+            $idOs = null;
+            
+            if ($idOs = $agent->idOs) {
+                $os = $this->_serviceOs->find($idOs)->current();
+            }
+            
+            unset($idOs);
+        }
+        
+        if ($forceDetected || null === $os) {
             // detect the Operating System
             if (null === $this->_osChain) {
                 $this->_osChain = new Os\Chain();
@@ -329,7 +371,7 @@ class UserAgent
             
             $os = $this->_osChain->detect($userAgent);
             
-            if ($forceDetected) {
+            if ($forceDetected && $useDb) {
                 $osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
                 
                 if ($osResult) {
@@ -340,14 +382,12 @@ class UserAgent
             }
         } else {
             $os = (object) $os->toArray();
+            $os->osFull  = $os->os . ($os->os != $os->version && '' != $os->version ? ' ' . $os->version : '');
         }
         
-        if ($forceDetected) {
+        if ($forceDetected && $useDb) {
             $this->_serviceOs->count($agent->idOs);
-            
-            $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
         }
-        /**/
         
         $device = null;
         
@@ -359,27 +399,32 @@ class UserAgent
             // detect the device
             $chainDevice = new Device\Chain();
             
-            $device       = $chainDevice->detect($userAgent);//var_dump($os);exit;
-            //$osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
+            $device = $chainDevice->detect($userAgent);//var_dump($os);exit;
             
-            //if ($osResult) {
-            //    $agent->idDevice = $osResult->idOs;
-            //}
+            if ($useDb) {
+                //$osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
+                
+                //if ($osResult) {
+                //    $agent->idDevice = $osResult->idOs;
+                //}
+            }
             
             unset($chainDevice);
         } else {
-            //$device = (object) $device->toArray();
+            $device = null; //(object) $device->toArray();
         }
         
-        $this->_serviceAgents->getModel()->getAdapter()->commit();
+        if ($useDb) {
+            $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
+            
+            $this->_serviceAgents->getModel()->getAdapter()->commit();
+        }
         
         $object = new \StdClass();
-        //$object->idAgents = $agent->idAgents;
         $object->engine   = $engine;
         $object->browser  = $browser;
         $object->os       = $os;
         $object->device   = $device;
-        //var_dump($object);
         
         unset($engine);
         unset($browser);

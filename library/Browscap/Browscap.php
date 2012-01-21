@@ -122,28 +122,24 @@ class Browscap
      */
     public function getBrowser($sUserAgent = null, $bReturnAsArray = false)
     {
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - init): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         // Automatically detect the useragent
         if (empty($sUserAgent) || !is_string($sUserAgent)) {
             $support    = new Support();
             $sUserAgent = $support->getUserAgent();
         }
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - get User-Agent): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         $cacheId = 'agent_' . preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent));
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - get Cache ID): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
             || !$array = $this->_cache->load($cacheId)
         ) {
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - not found in Cache): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $globalCache = $this->_getGlobalCache();
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - get Global Cache): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+            
             $browser = array();
             if (isset($globalCache['patterns'])
                 && is_array($globalCache['patterns'])
             ) {
-                //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - get Pattern): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 foreach ($globalCache['patterns'] as $key => $pattern) {
-                    //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - teste Pattern [' . $pattern . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     if (preg_match($pattern, $sUserAgent)) {
                         $browser = array(
                             $sUserAgent, // Original useragent
@@ -186,14 +182,13 @@ class Browscap
     {
         if (null === $this->_globalCache) {
             $cacheGlobalId = 'agentsGlobal';
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - get ID of Global Cache): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+            
             // Load the cache at the first request
             if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
                 || !$this->_globalCache = $this->_cache->load($cacheGlobalId)
             ) {
-                //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - GlobalCache not loaded): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 $this->_globalCache = $this->_getBrowserFromCache();
-                //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - GlobalCache loaded): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                
                 if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                     $this->_cache->save($this->_globalCache, $cacheGlobalId);
                 }
@@ -264,15 +259,14 @@ class Browscap
      */
     private function _updateCache()
     {
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - loading ini File - Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
             $browsers = parse_ini_file($this->_localFile, true, INI_SCANNER_RAW);
         } else {
             $browsers = parse_ini_file($this->_localFile, true);
         }
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - loading ini File - End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         array_shift($browsers);
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - array_shift): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         $this->_properties  = array_keys($browsers['DefaultProperties']);
         array_unshift(
             $this->_properties,
@@ -283,7 +277,7 @@ class Browscap
         );
 
         $this->_userAgents  = array_keys($browsers);
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - $this->_userAgents): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         usort(
             $this->_userAgents,
             function($a, $b) {
@@ -297,18 +291,16 @@ class Browscap
         $aPropertiesKeys = array_flip($this->_properties);
 
         foreach ($this->_userAgents as $sUserAgent) {
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - parse Agent [' . $sUserAgent . '] - Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $this->_parseAgents(
                 $browsers, $sUserAgent, $aPropertiesKeys
             );
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - parse Agent [' . $sUserAgent . '] - End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         }
 
         // Save the keys lowercased if needed
         if ($this->_lowercase) {
             $this->_properties = array_map('strtolower', $this->_properties);
         }
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - $this->_lowercase): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         return array(
             'browsers'   => $this->_browsers,
             'userAgents' => $this->_userAgents,

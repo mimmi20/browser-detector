@@ -53,7 +53,7 @@ abstract class ServiceAbstract
                 'unknows function \'' . $method . '\' called'
             );
         }
-
+        
         return call_user_func_array(array($this->_model, $method), $params);
     }
 

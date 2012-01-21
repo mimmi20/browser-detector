@@ -50,6 +50,12 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      * @var \Zend\Db\Table\Row
      */
     protected $_data = null;
+    
+    /**
+     * dataholder for PDO statements
+     * @var array
+     */
+    protected $_statements = array();
 
     /**
      * Konstruktor
@@ -91,10 +97,10 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
                 $this,
                 $this->_config->resources->cachemanager->model
             );
-
+            
             $this->_cache->setTagged($tagged);
         }
-
+        
         return $this->_cache;
     }
 
@@ -142,8 +148,7 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
      * @return array|boolean
      */
     protected function execute(
-        \Zend\Db\Statement\Pdo $stmt, $fetchMode = \PDO::FETCH_OBJ, $select = '',
-        $values = array())
+        \Zend\Db\Statement\Pdo $stmt, $fetchMode = \PDO::FETCH_OBJ)
     {
         try {
             $stmt->execute();
@@ -153,25 +158,16 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
              */
             return $stmt->fetchAll($fetchMode);
         } catch (\Exception $e) {
-            $this->logExecuteError($e, $stmt, $fetchMode, $select, $values);
+            $this->logExecuteError($e, $stmt);
 
             return false;
         }
     }
 
-    protected function logExecuteError(\Exception $e,
-        \Zend\Db\Statement\Pdo $stmt, $fetchMode = \PDO::FETCH_OBJ, $select = '',
-        $values = array())
+    protected function logExecuteError(\Exception $e, \Zend\Db\Statement\Pdo $stmt)
     {
-        if ($select instanceof \Zend\Db\Select) {
-            $select = $select->assemble();
-        }
-
         $message   = $e->getMessage()
-            . "\n" . 'ErrorInfo: ' . serialize($stmt->errorInfo())
-            . "\n" . 'Query: ' . $select
-            . "\n" . 'Fetch Mode: ' . $fetchMode
-            . "\n" . 'Values: ' . serialize($values);
+            . "\n" . 'ErrorInfo: ' . serialize($stmt->errorInfo());
 
         $exception = new \Exception($message, $e->getCode(), $e);
 

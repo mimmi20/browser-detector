@@ -59,7 +59,7 @@ class Chain
                 
                 if ('CatchAll' != $filename) {
                     $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
-                    //echo "\t\t\t" . 'detecting Device (Chain - creating class name [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                    
                     try {
                         $handler = new $className();
                     } catch (\Exception $e) {
@@ -70,8 +70,6 @@ class Chain
                         $this->_chain->next();
                         continue;
                     }
-                    
-                    //echo "\t\t\t" . 'detecting Device (Chain - add class [' . $className . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     
                     $this->_chain->insert($handler, $handler->getWeight());
                 }
@@ -107,53 +105,26 @@ class Chain
         $device->version    = '';
         $device->fullDevice = 'unknown';
         
-        //echo "\t\t\t" . 'detecting Device (Chain - creating result class): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
         if ($this->_chain->count()) {
             $this->_chain->top();
-            //echo "\t\t\t" . 'detecting Device (Chain - go to top in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+            
             while ($this->_chain->valid()) {
                 $handler = $this->_chain->current();
                 $class   = get_class($handler);
-                //echo "\t\t\t" . 'detecting Device (Chain - get Handler [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                 
                 if ($handler->canHandle($userAgent)) {
-                    //echo "\t\t\t" . 'detecting Device (Chain - can handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                     try {
-                        //echo "\t\t\t" . 'detecting Device (Chain - can handle [' . $class . '] - start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         return $handler->detect($userAgent);
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        //$this->_log->warn($e);
-                        //echo "\t\t\t" . 'detecting Device (Chain - can not handle [' . $class . '] - Exception): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
                         $this->_chain->next();
                         continue;
                     }
                 }
-                //echo "\t\t\t" . 'detecting Device (Chain - can not handle [' . $class . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+                
                 $this->_chain->next();
             }
         }
-        //echo "\t\t\t" . 'detecting Device (Chain - not found in chain): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-        //if not deteceted yet, use ini file as fallback
-        $handler = new Handlers\CatchAll();
-        if ($handler->canHandle($userAgent)) {
-            $device = $handler->detect($userAgent);
-            
-            //echo "\t\t\t" . 'detecting Device (Chain - detect): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            
-            if ($device->device) {
-                try {
-                    $className = $this->_utils->getClassNameFromDetected($device->device, __NAMESPACE__);
-                    echo "Class '$className' not found \n";
-                    $handler = new $className();
-                    $this->_chain->insert($handler, $handler->getWeight());
-                } catch (\Exception $e) {
-                    //$this->_log->warn($e);
-                }
-            }
-        }
-        
-        unset($handler);
         
         return $device;
     }

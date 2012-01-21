@@ -69,15 +69,52 @@ class Agents extends ModelAbstract
         if (!is_string($userAgent)) {
             return false;
         }
+        
+        if (empty($this->_statements[__FUNCTION__])) {
+            /**
+             * @var Zend_Db_Table_Select
+             */
+            $select = $this->select();
+            $select->from(array('a' => $this->_name));
+            
+            $select->where('`a`.`agent` = :agent');
+            
+            $select->limit(1);
+            
+            $stmt = new \Zend\Db\Statement\Pdo($this->_db, $select);
+            
+            $this->_statements[__FUNCTION__] = $stmt;
+        } else {
+            $stmt = $this->_statements[__FUNCTION__];
+        }
+        
+        $stmt->bindParam(':agent', $userAgent, \PDO::PARAM_STR);
+        
+        $rows = $this->execute($stmt, \PDO::FETCH_ASSOC);
+        
+        if (false === $rows) {
+            $rows = array();
+        }
+        
+        $options = array(
+            'data' => $rows
+        );
+        
+        try {
+            $rowSet = new \Zend\Db\Table\Rowset($options);
+            $rowSet->setTable($this);
+        } catch (\Exception $e) {
+            $this->_logger->err($e);
 
-        $select = $this->select();
-        $select->from(array('a' => $this->_name));
-
-        $select->where('`a`.`agent` = ?', $userAgent);
-
-        $select->limit(1);
-
-        $agent = $this->fetchAll($select)->current();
+            return false;
+        }
+        
+        while ($rowSet->valid()) {
+            $rowSet->current();
+            $rowSet->next();
+        }
+        
+        $agent = $rowSet->rewind()->current();
         
         if (!$agent) {
             $agent = $this->createRow();

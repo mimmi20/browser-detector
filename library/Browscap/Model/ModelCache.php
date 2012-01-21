@@ -153,9 +153,9 @@ class ModelCache
         
         $cache = $this->getCache();
         $cache->setTagsArray(array($this->_tagged));
-
+        
         $callback = array($cache, $method);
-
+        
         return call_user_func_array($callback, $params);
     }
 }
