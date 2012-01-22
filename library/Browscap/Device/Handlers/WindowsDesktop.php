@@ -16,7 +16,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: GeneralDesktop.php 164 2012-01-19 22:59:18Z  $
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -29,10 +29,10 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: GeneralDesktop.php 164 2012-01-19 22:59:18Z  $
  */
 
-class GeneralDesktop extends DeviceHandler
+class WindowsDesktop extends DeviceHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -80,8 +80,8 @@ class GeneralDesktop extends DeviceHandler
             'Windows 3.1', 'win9x/NT 4.90', 'Windows'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $windows)
-            || $this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, $windows)
+            && !$this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
         ) {
             return false;
         }
@@ -98,7 +98,7 @@ class GeneralDesktop extends DeviceHandler
      */
     protected function detectDevice($userAgent)
     {
-        return 'general Desktop';
+        return 'Windows Desktop';
     }
     
     /**
@@ -108,6 +108,6 @@ class GeneralDesktop extends DeviceHandler
      */
     public function getWeight()
     {
-        return 1;
+        return 2;
     }
 }

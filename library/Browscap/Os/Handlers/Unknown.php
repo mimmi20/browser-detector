@@ -43,6 +43,8 @@ class Unknown extends OsHandler
      */
     public function canHandle($userAgent)
     {
+        trigger_error('unknown OS detected from user agent\'' . $userAgent . '\'');
+        
         return true;
     }
     

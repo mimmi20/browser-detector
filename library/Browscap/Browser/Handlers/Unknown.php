@@ -43,6 +43,8 @@ final class Unknown extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
+        trigger_error('unknown Browser detected from user agent\'' . $userAgent . '\'');
+        
         return true;
     }
     
