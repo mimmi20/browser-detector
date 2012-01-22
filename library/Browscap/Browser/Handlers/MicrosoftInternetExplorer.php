@@ -85,6 +85,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Avant',
             'avantbrowser',
             'MyIE',
+            'Crazy Browser',
             // other Browsers
             'AppleWebKit',
             'Chrome',

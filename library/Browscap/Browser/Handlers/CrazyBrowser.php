@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Avant.php 164 2012-01-19 22:59:18Z  $
  */
 
 /**
@@ -27,9 +27,9 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Avant.php 164 2012-01-19 22:59:18Z  $
  */
-class Avant extends MicrosoftInternetExplorer
+class CrazyBrowser extends MicrosoftInternetExplorer
 {
     /**
      * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
@@ -47,7 +47,7 @@ class Avant extends MicrosoftInternetExplorer
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('avantbrowser', 'Avant'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Crazy Browser'))) {
             return false;
         }
         
@@ -59,6 +59,7 @@ class Avant extends MicrosoftInternetExplorer
             'PaleMoon',
             'Flock',
             'AOL',
+            'MyIE',
             //others
             'AppleWebKit',
             'Chrome',
@@ -86,7 +87,25 @@ class Avant extends MicrosoftInternetExplorer
      */
     protected function detectBrowser($userAgent)
     {
-        return 'Avant Browser';
+        return 'Crazy Browser';
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectVersion($userAgent)
+    {
+        $doMatch = preg_match('/Crazy Browser ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
     
     /**
