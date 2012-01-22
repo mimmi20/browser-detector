@@ -59,6 +59,7 @@ class Windows extends OsHandler
             'Macintosh',
             'Mac OS X',
             'Windows CE',
+            'Windows Mobile',
             'Windows Phone OS',
             'IEMobile'
         );
@@ -126,7 +127,7 @@ class Windows extends OsHandler
             return $version;
         }
         
-        $doMatch = preg_match('/Windows ([\d\.XP]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             switch ($matches[1]) {

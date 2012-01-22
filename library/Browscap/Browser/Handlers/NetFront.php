@@ -110,4 +110,14 @@ class NetFront extends BrowserHandler
         
         return '';
     }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 30;
+    }
 }

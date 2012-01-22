@@ -34,7 +34,7 @@ use Browscap\Os\Handler as OsHandler;
 class WindowsMobileOs extends OsHandler
 {
     private $_windows = array(
-        'Windows CE', 'Windows Phone OS'
+        'Windows CE', 'Windows Phone OS', 'Windows Mobile'
     );
     
     /**
@@ -82,7 +82,7 @@ class WindowsMobileOs extends OsHandler
      */
     protected function detectVersion($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Windows CE')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Windows CE', 'Windows Mobile'))) {
             return '6.0 (CE)';
         }
         $doMatch = preg_match('/Windows Phone OS ([\d\.]+)/', $userAgent, $matches);

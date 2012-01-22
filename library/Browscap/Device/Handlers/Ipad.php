@@ -85,6 +85,6 @@ class Ipad extends DeviceHandler
      */
     public function getWeight()
     {
-        return 5;
+        return 7;
     }
 }

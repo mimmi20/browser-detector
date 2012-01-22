@@ -47,7 +47,7 @@ class Android extends MobileSafari
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('NokiaBrowser'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('NokiaBrowser', 'BlackBerry', 'Blackberry'))) {
             return false;
         }
         
