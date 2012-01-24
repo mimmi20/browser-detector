@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: WebtvMsntv.php 164 2012-01-19 22:59:18Z  $
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -29,10 +29,10 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: WebtvMsntv.php 164 2012-01-19 22:59:18Z  $
  */
 
-class FakeBrowser extends BrowserHandler
+class Thunderstone extends BrowserHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,11 +43,15 @@ class FakeBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS '))) {
-            return true;
+        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+            return false;
         }
         
-        return false;
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Thunderstone/'))) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
@@ -55,26 +59,28 @@ class FakeBrowser extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectBrowser($userAgent)
     {
-        $class = new \StdClass();
-        $class->browser     = 'Fake Browser';
-        $class->version     = '';
-        $class->browserFull = $class->browser;
-        $class->bits        = 0;
-        
-        return $class;
+        return 'Thunderstone';
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the browser version from the given user agent
      *
-     * @return integer
+     * @param string $userAgent
+     *
+     * @return string
      */
-    public function getWeight()
+    protected function detectVersion($userAgent)
     {
-        return 2627;
+        $doMatch = preg_match('/Thunderstone\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        return '';
     }
 }

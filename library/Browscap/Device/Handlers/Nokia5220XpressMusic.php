@@ -1,6 +1,6 @@
 <?php
 declare(ENCODING = 'utf-8');
-namespace Browscap\Browser\Handlers;
+namespace Browscap\Device\Handlers;
 
 /**
  * Copyright(c) 2011 ScientiaMobile, Inc.
@@ -16,10 +16,10 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Bootstrap.php 4965 2011-10-11 08:04:26Z t.mueller $
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
+use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHanlder
@@ -29,10 +29,10 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Bootstrap.php 4965 2011-10-11 08:04:26Z t.mueller $
  */
 
-class FakeBrowser extends BrowserHandler
+class Nokia5220XpressMusic extends DeviceHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,11 +43,11 @@ class FakeBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS '))) {
-            return true;
+        if (!$this->utils->checkIfContains($userAgent, 'Nokia5220XpressMusic')) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -55,17 +55,23 @@ class FakeBrowser extends BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect($userAgent)
+    protected function detectDevice($userAgent)
     {
-        $class = new \StdClass();
-        $class->browser     = 'Fake Browser';
-        $class->version     = '';
-        $class->browserFull = $class->browser;
-        $class->bits        = 0;
-        
-        return $class;
+        return 'Nokia 5220 XpressMusic';
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return string
+     */
+    protected function detectVersion($userAgent)
+    {
+        return '';
     }
     
     /**
@@ -75,6 +81,6 @@ class FakeBrowser extends BrowserHandler
      */
     public function getWeight()
     {
-        return 2627;
+        return 5;
     }
 }
