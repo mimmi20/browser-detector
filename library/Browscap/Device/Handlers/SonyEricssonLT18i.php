@@ -16,7 +16,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: Bootstrap.php 4965 2011-10-11 08:04:26Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -29,7 +29,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: Bootstrap.php 4965 2011-10-11 08:04:26Z t.mueller $
+ * @version   SVN: $Id$
  */
 
 class SonyEricssonLT18i extends DeviceHandler
@@ -44,6 +44,10 @@ class SonyEricssonLT18i extends DeviceHandler
     public function canHandle($userAgent)
     {
         if (!$this->utils->checkIfContains($userAgent, 'SonyEricssonLT18i')) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains($userAgent, 'SonyEricssonLT18iv')) {
             return false;
         }
         

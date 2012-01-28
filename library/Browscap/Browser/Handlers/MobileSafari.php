@@ -43,11 +43,16 @@ class MobileSafari extends BrowserHandler
     {
         if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
             && !$this->utils->checkIfStartsWith($userAgent, 'Safari/')
+            && !$this->utils->checkIfStartsWith($userAgent, 'MobileSafari/')
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Safari', 'Mobile'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'Mobile')) {
+            return false;
+        }
+        
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Safari', 'iPhone', 'iPad', 'iPod'))) {
             return false;
         }
         
@@ -109,6 +114,12 @@ class MobileSafari extends BrowserHandler
         }
         
         $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/MobileSafari\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

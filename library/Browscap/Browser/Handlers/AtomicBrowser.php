@@ -43,7 +43,9 @@ class AtomicBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'AtomicBrowser')) {
+        if (!$this->utils->checkIfStartsWith($userAgent, 'AtomicBrowser') 
+            && !$this->utils->checkIfStartsWith($userAgent, 'AtomicLite')
+        ) {
             return false;
         }
         
@@ -72,6 +74,12 @@ class AtomicBrowser extends BrowserHandler
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/AtomicBrowser\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/AtomicLite\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

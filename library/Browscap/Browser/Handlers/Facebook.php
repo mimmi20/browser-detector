@@ -42,7 +42,7 @@ class Facebook extends BrowserHandler
     public function canHandle($userAgent)
     {
         if (!$this->utils->checkIfStartsWith($userAgent, 'Facebook')
-            && !$this->utils->checkIfContainsAnyOf($userAgent, array('FBAN', 'FBForIPhone', 'FBAV'))
+            && !$this->utils->checkIfContainsAnyOf($userAgent, array('FBAN', 'FBForIPhone', 'FBAV', 'facebookexternalhit'))
         ) {
             return false;
         }
@@ -93,6 +93,12 @@ class Facebook extends BrowserHandler
         }
         
         $doMatch = preg_match('/FBAV\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/facebookexternalhit\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: WebtvMsntv.php 164 2012-01-19 22:59:18Z  $
+ * @version   SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -29,7 +29,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: WebtvMsntv.php 164 2012-01-19 22:59:18Z  $
+ * @version   SVN: $Id$
  */
 
 class Sosospider extends BrowserHandler

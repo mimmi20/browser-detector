@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: Avant.php 164 2012-01-19 22:59:18Z  $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -27,7 +27,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: Avant.php 164 2012-01-19 22:59:18Z  $
+ * @version   SVN: $Id$
  */
 class CrazyBrowser extends MicrosoftInternetExplorer
 {

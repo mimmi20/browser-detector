@@ -16,7 +16,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: GeneralDesktop.php 164 2012-01-19 22:59:18Z  $
+ * @version   SVN: $Id$
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -29,7 +29,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id: GeneralDesktop.php 164 2012-01-19 22:59:18Z  $
+ * @version   SVN: $Id$
  */
 
 class WindowsDesktop extends DeviceHandler

@@ -42,7 +42,7 @@ class Safari extends BrowserHandler
     public function canHandle($userAgent)
     {
         if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Safari/')
+            && !$this->utils->checkIfStartsWith($userAgent, 'Safari')
         ) {
             return false;
         }
@@ -107,6 +107,12 @@ class Safari extends BrowserHandler
         }
         
         $doMatch = preg_match('/Safari\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Safari([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
