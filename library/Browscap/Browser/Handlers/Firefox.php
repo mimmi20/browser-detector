@@ -47,7 +47,7 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Firefox', 'Gecko'))) {
+        if (!$this->utils->checkIfContains($userAgent, 'Firefox')) {
             return false;
         }
         
@@ -75,7 +75,9 @@ class Firefox extends BrowserHandler
             'CazoodleBot',
             'LOOQ',
             //others
-            'MSIE'
+            'MSIE',
+            // Fakes
+            'Mac; Mac OS '
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {

@@ -17,7 +17,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Htc.php 164 2012-01-19 22:59:18Z  $
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -30,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Htc.php 164 2012-01-19 22:59:18Z  $
  */
 class Htc extends BrowserHandler
 {
@@ -42,7 +42,7 @@ class Htc extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfContains($userAgent, 'HTC');
+        return false;
     }
     
     /**

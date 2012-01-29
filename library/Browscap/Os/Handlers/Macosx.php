@@ -75,7 +75,7 @@ class Macosx extends Macintosh
             return str_replace('_', '.', $matches[1]);
         }
         
-        return '';
+        return '10';
     }
     
     /**

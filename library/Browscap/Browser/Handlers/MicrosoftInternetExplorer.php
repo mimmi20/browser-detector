@@ -97,7 +97,9 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'WebTV',
             'ArgClrInt',
             'Firefox',
-            'MSIECrawler'
+            'MSIECrawler',
+            // Fakes
+            'Mac; Mac OS '
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {

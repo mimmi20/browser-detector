@@ -45,11 +45,18 @@ class FakeIe extends FakeBrowser
             return false;
         }
         
-        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
-            return false;
+        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
+            && $this->utils->checkIfContainsAnyOf($userAgent, array('MSIE 8.0', 'MSIE 7.0', 'MSIE 6.0', 'MSIE 5.', 'MSIE 4.', 'MSIE 3.', 'MSIE 2.', 'MSIE 1.'))
+        ) {
+            return true;
         }
         
-        return true;
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('compatible ::  MSIE'))
+        ) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**

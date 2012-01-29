@@ -209,8 +209,11 @@ class UserAgent
             $this->_serviceAgents = new Service\Agents();
         }
         
-        $userAgent    = trim(str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent));
         $this->_agent = $userAgent;
+        
+        $userAgent = str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent);
+        $userAgent = str_replace(array(' :: '), ';', $userAgent);
+        $userAgent = trim($userAgent);
         
         $cacheId = 'agent_' . preg_replace(
             '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)

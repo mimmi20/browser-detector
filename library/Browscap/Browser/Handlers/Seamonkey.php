@@ -45,7 +45,9 @@ class Seamonkey extends BrowserHandler
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Gecko', 'SeaMonkey'))) {
+        if (!$this->utils->checkIfContainsAll($userAgent, array('Gecko', 'SeaMonkey'))
+            && !$this->utils->checkIfContains($userAgent, 'Seamonkey')
+        ) {
             return false;
         }
         
@@ -98,6 +100,12 @@ class Seamonkey extends BrowserHandler
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/SeaMonkey\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/Seamonkey\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

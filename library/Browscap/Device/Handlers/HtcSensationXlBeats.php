@@ -43,7 +43,7 @@ class HtcSensationXlBeats extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'HTC/SensationXL_Beats')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('HTC/SensationXL_Beats', 'HTC_SensationXL_Beats'))) {
             return false;
         }
         

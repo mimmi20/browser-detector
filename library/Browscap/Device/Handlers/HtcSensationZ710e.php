@@ -43,7 +43,7 @@ class HtcSensationZ710e extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'HTC_Sensation_Z710e')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('HTC_Sensation_Z710e', 'HTC Sensation Z710e'))) {
             return false;
         }
         

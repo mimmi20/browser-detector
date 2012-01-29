@@ -82,13 +82,13 @@ class Linux extends OsHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/Linux\/([\d\.\-]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Linux\/([\d\.\-a-z]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];
         }
         
-        $doMatch = preg_match('/Linux ([\d\.\-amdserv]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Linux ([\d\.\-a-z]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

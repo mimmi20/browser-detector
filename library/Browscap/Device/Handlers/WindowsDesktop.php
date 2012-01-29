@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version   SVN: $Id$
  */
 
-class WindowsDesktop extends DeviceHandler
+class WindowsDesktop extends GeneralDesktop
 {
     /**
      * Final Interceptor: Intercept
@@ -67,7 +65,8 @@ class WindowsDesktop extends DeviceHandler
             'SymbianOS',
             'SymbOS',
             'Symbian',
-            'Series 60'
+            'Series 60',
+            'Fennec'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $mobiles)) {

@@ -45,7 +45,7 @@ class Googlebot extends Google
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Googlebot'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Googlebot', 'GoogleBot'))) {
             return false;
         }
         
@@ -74,6 +74,12 @@ class Googlebot extends Google
     protected function detectVersion($userAgent)
     {
         $doMatch = preg_match('/Googlebot\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
+        $doMatch = preg_match('/GoogleBot\/([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

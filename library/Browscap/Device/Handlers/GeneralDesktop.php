@@ -67,7 +67,15 @@ class GeneralDesktop extends DeviceHandler
             'SymbianOS',
             'SymbOS',
             'Symbian',
-            'Series 60'
+            'Series 60',
+            'Opera Mini',
+            'Opera Mobi',
+            'Fennec',
+            // Bots
+            'AppEngine-Google',
+            'Feedfetcher-Google',
+            'WordPress',
+            'http:'
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $mobiles)) {
@@ -83,6 +91,14 @@ class GeneralDesktop extends DeviceHandler
         if ($this->utils->checkIfContainsAnyOf($userAgent, $windows)
             || $this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
         ) {
+            return false;
+        }
+        
+        $bots = array(
+            'bot', 'spider'
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $bots)) {
             return false;
         }
         

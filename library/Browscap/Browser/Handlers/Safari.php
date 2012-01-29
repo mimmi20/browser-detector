@@ -69,7 +69,9 @@ class Safari extends BrowserHandler
             'konqueror',
             //mobile Version
             'Mobile',
-            'Android'
+            'Android',
+            // Fakes
+            'Mac; Mac OS '
         );
         
         if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {

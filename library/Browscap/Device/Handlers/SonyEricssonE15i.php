@@ -43,7 +43,11 @@ class SonyEricssonE15i extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'SonyEricssonE15i')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('SonyEricssonE15i', 'E15i'))) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains($userAgent, 'SonyEricssonE15iv')) {
             return false;
         }
         
@@ -71,7 +75,7 @@ class SonyEricssonE15i extends DeviceHandler
      */
     protected function detectVersion($userAgent)
     {
-        $doMatch = preg_match('/SonyEricssonU20iv\/([a-zA-Z\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/SonyEricssonE15i\/([a-zA-Z\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {
             return $matches[1];

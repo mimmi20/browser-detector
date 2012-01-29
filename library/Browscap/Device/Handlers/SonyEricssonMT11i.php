@@ -43,7 +43,7 @@ class SonyEricssonMT11i extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'SonyEricssonMT11i')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('SonyEricssonMT11i', 'MT11i'))) {
             return false;
         }
         

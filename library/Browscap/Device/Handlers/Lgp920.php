@@ -47,6 +47,10 @@ class Lgp920 extends DeviceHandler
             return false;
         }
         
+        if ($this->utils->checkIfContains($userAgent, 'HTC Desire')) {
+            return false;
+        }
+        
         return true;
     }
     

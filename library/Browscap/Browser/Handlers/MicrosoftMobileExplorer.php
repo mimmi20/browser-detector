@@ -113,6 +113,12 @@ class MicrosoftMobileExplorer extends BrowserHandler
             return $matches[1];
         }
         
+        $doMatch = preg_match('/IEMobile\/([\d\.]+)\)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         return '';
     }
 }

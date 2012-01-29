@@ -43,7 +43,7 @@ class BlackBerry9700 extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'BlackBerry 9700')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('BlackBerry 9700', 'BlackBerry9700'))) {
             return false;
         }
         

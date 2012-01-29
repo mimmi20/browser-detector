@@ -44,7 +44,22 @@ class Openwave extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        return $this->utils->checkIfContainsAnyOf($userAgent, array('OpenWave', 'UP.Browser/', 'UP/'));
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('OpenWave', 'UP.Browser/', 'UP/'))) {
+            return false;
+        }
+        
+        $isNotReallyOpenWave = array(
+            // Bots
+            'ichiro/mobile',
+            'www.',
+            '/ '
+        );
+        
+        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyOpenWave)) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

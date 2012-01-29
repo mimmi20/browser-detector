@@ -41,7 +41,7 @@ class Gecko extends EngineHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Gecko'))) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Gecko', 'Firefox'))) {
             return false;
         }
         

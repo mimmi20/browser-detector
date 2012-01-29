@@ -82,9 +82,10 @@ class WindowsMobileOs extends OsHandler
      */
     protected function detectVersion($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Windows CE', 'Windows Mobile'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Windows CE', 'Windows Mobile'))) {
             return '6.0 (CE)';
         }
+        
         $doMatch = preg_match('/Windows Phone OS ([\d\.]+)/', $userAgent, $matches);
         
         if ($doMatch) {

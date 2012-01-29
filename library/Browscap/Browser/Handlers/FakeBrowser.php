@@ -43,7 +43,7 @@ class FakeBrowser extends BrowserHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS '))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS ', 'fake'))) {
             return true;
         }
         

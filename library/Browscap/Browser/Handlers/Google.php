@@ -47,7 +47,7 @@ class Google extends BrowserHandler
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('GoogleToolbar', 'Google Earth', 'Googlebot'))) {
+        if ($this->utils->checkIfContainsAnyOf($userAgent, array('GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot'))) {
             return false;
         }
         

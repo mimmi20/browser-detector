@@ -75,6 +75,12 @@ class OS2 extends OsHandler
             return $matches[1];
         }
         
+        $doMatch = preg_match('/Warp ([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return $matches[1];
+        }
+        
         return '';
     }
 }

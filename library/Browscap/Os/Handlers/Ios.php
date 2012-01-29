@@ -105,6 +105,12 @@ class Ios extends OsHandler
             return str_replace('_', '.', $matches[1]);
         }
         
+        $doMatch = preg_match('/iPhone_OS\/([\d\.]+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            return str_replace('_', '.', $matches[1]);
+        }
+        
         return '';
     }
     

@@ -43,7 +43,7 @@ class SonyEricssonX10i extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'SonyEricssonX10i')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('SonyEricssonX10i', 'X10i'))) {
             return false;
         }
         

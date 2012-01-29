@@ -32,7 +32,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version   SVN: $Id$
  */
 
-class Nokia5530c extends DeviceHandler
+class Nokia5330c extends DeviceHandler
 {
     /**
      * Final Interceptor: Intercept
@@ -43,7 +43,7 @@ class Nokia5530c extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Nokia5530c')) {
+        if (!$this->utils->checkIfContains($userAgent, 'Nokia5330c')) {
             return false;
         }
         
@@ -59,7 +59,7 @@ class Nokia5530c extends DeviceHandler
      */
     protected function detectDevice($userAgent)
     {
-        return 'Nokia 5530c';
+        return 'Nokia 5330c';
     }
     
     /**

@@ -43,7 +43,7 @@ class HtcDesireHdA9191 extends DeviceHandler
      */
     public function canHandle($userAgent)
     {
-        if (!$this->utils->checkIfContains($userAgent, 'HTC_DesireHD_A9191')) {
+        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('HTC_DesireHD_A9191'))) {
             return false;
         }
         
