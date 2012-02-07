@@ -33,37 +33,29 @@ namespace Browscap\Browser\Handlers;
 class Android extends MobileSafari
 {
     /**
-     * Intercept all UAs containing 'Android'
+     * @var string the detected browser
+     */
+    protected $_browser = 'Android Webkit (Mobile Safari)';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
      * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Dalvik/')
-            && !$this->utils->checkIfContains($userAgent, 'Android')
-            && !parent::canHandle($userAgent)
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Dalvik/')
+            && !$this->_utils->checkIfContains($this->_useragent, 'Android')
+            && !parent::canHandle($this->_useragent)
         ) {
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Android Webkit (Mobile Safari)';
     }
     
     /**

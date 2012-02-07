@@ -35,57 +35,48 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Motorola extends BrowserHandler
 {
     /**
-     *
-     * Intercept all UAs starting with 'Mot-', or containing 'MOT-' or
-     * 'Motorola'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContainsAnyOf($userAgent, array('Mot-', 'MOT-', 'Motorola', 'MIB'));
-    }
+    protected $_browser = 'Motorola Internet Browser';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Motorola';
+        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mot-', 'MOT-', 'Motorola', 'MIB'));
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/MIB\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MIB\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/MIB([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MIB([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/MIB\/BER([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MIB\/BER([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

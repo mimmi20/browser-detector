@@ -35,15 +35,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Reeder extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Reeder';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Reeder')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Reeder')) {
             return false;
         }
         
@@ -51,32 +54,19 @@ class Reeder extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Reeder';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Reeder\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Reeder\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

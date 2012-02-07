@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class SamsungSghE250 extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'SAMSUNG SGH-E250';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'SAMSUNG-SGH-E250')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SAMSUNG-SGH-E250')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'SAMSUNG SGH E250';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

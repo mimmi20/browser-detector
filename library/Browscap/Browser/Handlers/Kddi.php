@@ -35,25 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Kddi extends BrowserHandler
 {
     /**
-     * Intercept all UAs containing 'KDDI'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContains($userAgent, 'KDDI');
-    }
+    protected $_browser = 'Kddi';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Kddi';
+        return $this->_utils->checkIfContains($this->_useragent, 'KDDI');
     }
 }

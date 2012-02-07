@@ -35,24 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Lg extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return string
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContains($userAgent, 'LG') || $this->utils->checkIfStartsWith($userAgent, 'lg');
-    }
+    protected $_browser = 'Lg';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Lg';
+        return $this->_utils->checkIfContains($this->_useragent, 'LG') || $this->_utils->checkIfStartsWith($this->_useragent, 'lg');
     }
 }

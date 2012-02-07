@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class Ios extends OsHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'iOS';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone', 'iPod'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone', 'iPod'))) {
             return false;
         }
         
@@ -49,69 +53,64 @@ class Ios extends OsHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'iOS';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/IphoneOSX\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/IphoneOSX\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/CPU OS ([\d\_]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/CPU OS ([\d\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return str_replace('_', '.', $matches[1]);
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
         }
         
-        $doMatch = preg_match('/CPU iPad OS ([\d\_]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/CPU iPad OS ([\d\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return str_replace('_', '.', $matches[1]);
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
         }
         
-        $doMatch = preg_match('/iPhone OS ([\d\_]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/iPhone OS ([\d\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return str_replace('_', '.', $matches[1]);
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
         }
         
-        $doMatch = preg_match('/CPU like Mac OS X/', $userAgent, $matches);
+        $doMatch = preg_match('/CPU like Mac OS X/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return '1.0';
+            $this->_version = '1.0';
+            return;
         }
         
-        $doMatch = preg_match('/iPhone OS ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/iPhone OS ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return str_replace('_', '.', $matches[1]);
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
         }
         
-        $doMatch = preg_match('/iPhone_OS\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/iPhone_OS\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return str_replace('_', '.', $matches[1]);
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

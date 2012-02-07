@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class NokiaE6 extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'Nokia E6';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'NokiaE6')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'NokiaE6')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'Nokia E6';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

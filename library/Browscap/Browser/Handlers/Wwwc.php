@@ -35,15 +35,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Wwwc extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'WWWC';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'WWWC')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WWWC')) {
             return false;
         }
         
@@ -51,32 +54,19 @@ class Wwwc extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'WWWC';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/WWWC\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/WWWC\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

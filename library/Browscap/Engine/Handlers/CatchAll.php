@@ -38,10 +38,10 @@ class CatchAll extends BrowserHandler
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle($this->_useragent)
     {
         return true;
     }
@@ -49,19 +49,19 @@ class CatchAll extends BrowserHandler
     /**
      * detects the browser name from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return StdClass
      */
-    public function detect($userAgent)
+    public function detect($this->_useragent)
     {
         $class = new \StdClass();
         
         $detector = new \Browscap\Browscap();
-        $detected = $detector->getBrowser($userAgent);
+        $detected = $detector->getBrowser($this->_useragent);
         
         $class->engine     = $detected->renderEngine;
-        $class->version    = $this->detectVersion($userAgent, $class->engine);
+        $class->version    = $this->detectVersion($this->_useragent, $class->engine);
         $class->engineFull = $class->engine . ($class->engine != $class->version && '' != $class->version ? ' ' . $class->version : '');
         
         return $class;
@@ -70,15 +70,15 @@ class CatchAll extends BrowserHandler
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent, $engine = '')
+    protected function detectVersion($this->_useragent, $engine = '')
     {
         $version = '';
         
-        $doMatch = preg_match('/' . $engine . '\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/' . $engine . '\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch && '0' != $matches[1]) {
             return $matches[1];

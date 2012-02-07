@@ -70,11 +70,6 @@ class UserAgent
     private $_logger = null;
     
     /**
-     * @var \Zend\Config\Config
-     */
-    private $_config = null;
-    
-    /**
      * @var \Browscap\Broscap
      */
     private $_browscap = null;
@@ -125,9 +120,20 @@ class UserAgent
     private $_browserChain = null;
     
     /**
+     * @var \Browscap\Device\Chain
+     */
+    private $_deviceChain = null;
+    
+    /**
      * @var \Browscap\Support
      */
     private $_support = null;
+    
+    private $_engine = null;
+    
+    private $_os = null;
+    
+    private $_device = null;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -140,61 +146,47 @@ class UserAgent
      *
      * @throws Exceptions\AgentNotStringException
      */
-    public function __construct($agent = null, $config = null, $logger = null, $cache = null)
+    public function __construct($agent = null)
     {
-        if ($config instanceof \Zend\Config\Config) {
-            $config = $config->toArray();
-        }
+        //
+    }
+    
+    /**
+     * sets the logger used when errors occur
+     *
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    public function setLogger(\Zend\Log\Logger $logger)
+    {
+        $this->_logger = $logger;
         
-        if (!is_array($config)) {
-            throw new Exceptions\WrongConfigObjectException(
-                'the config must be an array or an instance of \\Zend\\Config\\Config'
-            );
-        }
+        return $this;
+    }
+    
+    /**
+     * sets the cache used to make the detection faster
+     *
+     * @param \Zend\Cache\Frontend\Core $cache
+     *
+     * @return 
+     */
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    {
+        $this->_cache = $cache;
         
-        $this->_config = $config;
-        
-        $this->_cache = null;
-        if ($cache instanceof \Zend\Cache\Frontend\Core) {
-            $this->_cache = $cache;
-        } elseif (!empty($this->_config['cache']) && is_array($config['cache'])) {
-            $cacheConfig = $this->_config['cache'];
-            
-            $this->_cache = \Zend\Cache\Cache::factory(
-                $cacheConfig['frontend'],
-                $cacheConfig['backend'],
-                $cacheConfig['front'],
-                $cacheConfig['back']
-            );
-        }
-        
-        if (null === $this->_cache && null !== $cache) {
-            throw new Exceptions\WrongCacheObjectException(
-                'the cache must be an instance of \\Zend\\Cache\\Frontend\\Core'
-            );
-        }
-        
-        if ($logger instanceof \Zend\Log\Logger) {
-            $this->_logger = $logger;
-        } elseif (null !== $logger) {
-            throw new Exceptions\WrongCacheObjectException(
-                'the logger must be an instance of \\Zend\\Log\\Logger'
-            );
-        }
-        
-        $this->getBrowser($agent, false, false);
+        return $this;
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
      * @param string  $userAgent     the user agent string
-     * @param boolean $bReturnAsArray whether return an array or an object
      *
-     * @return stdClas|array the object containing the browsers details.
-     *                       Array if $bReturnAsArray is set to true.
+     * @return 
      */
-    public function getBrowser($userAgent = null, $bReturnAsArray = false, $forceDetected = false, $useDb = false)
+    public function getBrowser($userAgent = null, $forceDetected = false, $useDb = false)
     {
         // Automatically detect the useragent
         if (empty($userAgent) || !is_string($userAgent)) {
@@ -215,18 +207,21 @@ class UserAgent
         $userAgent = str_replace(array(' :: '), ';', $userAgent);
         $userAgent = trim($userAgent);
         
-        $cacheId = 'agent_' . preg_replace(
-            '/[^a-zA-Z0-9]/', '_', urlencode($userAgent)
+        $cacheId = substr(
+            'agent_' . preg_replace(
+                '/[^a-zA-Z0-9]/', '_', $userAgent
+            ), 
+            0, 
+            179
         );
         
         if ($forceDetected 
-            || !($this->_cache instanceof \Zend\Cache\Cache)
+            || !($this->_cache instanceof \Zend\Cache\Frontend\Core)
             || !($browserArray = $this->_cache->load($cacheId))
         ) {
+            $browserArray = $this->_detect($userAgent, $forceDetected, $useDb);
             
-            $browserArray = $this->_detect($userAgent, $bReturnAsArray, $forceDetected, $useDb);
-            
-            if ($this->_cache instanceof \Zend\Cache\Cache) {
+            if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                 $this->_cache->save($browserArray, $cacheId);
             }
             
@@ -249,12 +244,10 @@ class UserAgent
      * Gets the information about the browser by User Agent
      *
      * @param string  $userAgent     the user agent string
-     * @param boolean $bReturnAsArray whether return an array or an object
      *
-     * @return stdClas|array the object containing the browsers details.
-     *                       Array if $bReturnAsArray is set to true.
+     * @return 
      */
-    private function _detect($userAgent = null, $bReturnAsArray = false, $forceDetected = false, $useDb = false)
+    private function _detect($userAgent = null, $forceDetected = false, $useDb = false)
     {
         if ($useDb) {
             $agent = $this->_serviceAgents->searchByAgent($userAgent);
@@ -272,6 +265,29 @@ class UserAgent
             }
         }
         
+        $this->_engine  = $this->_detectEngine($userAgent, $forceDetected, $useDb);
+        $this->_browser = $this->_detectBrowser($userAgent, $forceDetected, $useDb);
+        $this->_os      = $this->_detectOs($userAgent, $forceDetected, $useDb);
+        $this->_device  = $this->_detectDevice($userAgent, $forceDetected, $useDb);
+        
+        if ($useDb) {
+            $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
+            
+            $this->_serviceAgents->getModel()->getAdapter()->commit();
+        }
+        
+        return $this;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string  $userAgent     the user agent string
+     *
+     * @return 
+     */
+    private function _detectEngine($userAgent = null, $forceDetected = false, $useDb = false)
+    {
         if (null === $this->_serviceEngines && $useDb) {
             $this->_serviceEngines = new Service\Engines();
         }
@@ -291,7 +307,16 @@ class UserAgent
         if ($forceDetected || null === $engine) {
             // detect the Rendering Engine
             if (null === $this->_engineChain) {
-                $this->_engineChain = new Engine\Chain();
+                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
+                    || !($this->_engineChain = $this->_cache->load('EngineChain'))
+                ) {
+                    $this->_engineChain = new Engine\Chain();
+                    $this->_engineChain->setLogger($this->_logger);
+                    
+                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_cache->save($this->_engineChain, 'EngineChain');
+                    }
+                }
             }
             
             $engine = $this->_engineChain->detect($userAgent);
@@ -314,6 +339,18 @@ class UserAgent
             $this->_serviceEngines->count($agent->idEngines);
         }
         
+        return $engine;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string  $userAgent     the user agent string
+     *
+     * @return 
+     */
+    private function _detectBrowser($userAgent = null, $forceDetected = false, $useDb = false)
+    {
         if (null === $this->_serviceBrowsers && $useDb) {
             $this->_serviceBrowsers = new Service\Browsers();
         }
@@ -333,7 +370,16 @@ class UserAgent
         if ($forceDetected || null === $browser) {
             // detect the browser
             if (null === $this->_browserChain) {
-                $this->_browserChain = new Browser\Chain();
+                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
+                    || !($this->_browserChain = $this->_cache->load('BrowserChain'))
+                ) {
+                    $this->_browserChain = new Browser\Chain();
+                    $this->_browserChain->setLogger($this->_logger);
+                    
+                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_cache->save($this->_browserChain, 'BrowserChain');
+                    }
+                }
             }
             
             $browser = $this->_browserChain->detect($userAgent);
@@ -350,6 +396,18 @@ class UserAgent
             $this->_serviceBrowsers->count($agent->idBrowsers);
         }
         
+        return $browser;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string  $userAgent     the user agent string
+     *
+     * @return 
+     */
+    private function _detectOs($userAgent = null, $forceDetected = false, $useDb = false)
+    {   
         if (null === $this->_serviceOs && $useDb) {
             $this->_serviceOs = new Service\Os();
         }
@@ -369,7 +427,16 @@ class UserAgent
         if ($forceDetected || null === $os) {
             // detect the Operating System
             if (null === $this->_osChain) {
-                $this->_osChain = new Os\Chain();
+                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
+                    || !($this->_osChain = $this->_cache->load('PlatformChain'))
+                ) {
+                    $this->_osChain = new Os\Chain();
+                    $this->_osChain->setLogger($this->_logger);
+                    
+                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_cache->save($this->_osChain, 'PlatformChain');
+                    }
+                }
             }
             
             $os = $this->_osChain->detect($userAgent);
@@ -392,17 +459,56 @@ class UserAgent
             $this->_serviceOs->count($agent->idOs);
         }
         
+        return $os;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string  $userAgent     the user agent string
+     *
+     * @return 
+     */
+    private function _detectDevice($userAgent = null, $forceDetected = false, $useDb = false)
+    {
+        /*
+        if (null === $this->_serviceOs && $useDb) {
+            $this->_serviceOs = new Service\Os();
+        }
+        /**/
+        
         $device = null;
         
-        // detect the device
-        if ($forceDetected 
-            //|| !$agent->idDevice
-            //|| null === ($device = $this->_serviceOs->find($agent->idDevice)->current())
-        ) {
-            // detect the device
-            $chainDevice = new Device\Chain();
+        /*
+        if ($useDb) {
+            $idOs = null;
             
-            $device = $chainDevice->detect($userAgent);//var_dump($os);exit;
+            if ($idOs = $agent->idOs) {
+                $os = $this->_serviceOs->find($idOs)->current();
+            }
+            
+            unset($idOs);
+        }
+        /**/
+        
+        // detect the device
+        if ($forceDetected  || null === $device) {
+            // detect the device
+            // detect the Operating System
+            if (null === $this->_deviceChain) {
+                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
+                    || !($this->_deviceChain = $this->_cache->load('DeviceChain'))
+                ) {
+                    $this->_deviceChain = new Device\Chain();
+                    $this->_deviceChain->setLogger($this->_logger);
+                    
+                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_cache->save($this->_deviceChain, 'DeviceChain');
+                    }
+                }
+            }
+            
+            $device = $this->_deviceChain->detect($userAgent);//var_dump($os);exit;
             
             if ($useDb) {
                 //$osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
@@ -411,30 +517,15 @@ class UserAgent
                 //    $agent->idDevice = $osResult->idOs;
                 //}
             }
-            
-            unset($chainDevice);
         } else {
             $device = null; //(object) $device->toArray();
         }
-        
-        if ($useDb) {
-            $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
-            
-            $this->_serviceAgents->getModel()->getAdapter()->commit();
+        /*
+        if ($forceDetected && $useDb) {
+            $this->_serviceOs->count($agent->idOs);
         }
-        
-        $object = new \StdClass();
-        $object->engine   = $engine;
-        $object->browser  = $browser;
-        $object->os       = $os;
-        $object->device   = $device;
-        
-        unset($engine);
-        unset($browser);
-        unset($os);
-        unset($agent);
-        
-        return ($bReturnAsArray ? (array) $object : $object);
+        /**/
+        return $device;
     }
     
     /**
@@ -457,8 +548,574 @@ class UserAgent
         return $this->getAgent();
     }
     
-    public function toArray()
+    final public function getDevice()
     {
-        return $this->getBrowser(null, true, false);
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->getDevice();
+    }
+    
+    final public function getFullDevice()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->getFullDevice();
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->isMobileDevice();
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->isRssSupported();
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->isPdfSupported();
+    }
+    
+    final public function getBrowserName()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->getBrowser();
+    }
+    
+    final public function getVersion()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->getVersion();
+    }
+    
+    final public function getBits()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->getBits();
+    }
+    
+    final public function getFullBrowser()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->getFullBrowser();
+    }
+    
+    /**
+     * returns TRUE if the device is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isSyndicationReader()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->isSyndicationReader();
+    }
+    
+    /**
+     * returns TRUE if the device is a Transcoder
+     *
+     * @return boolean
+     */
+    public function isTranscoder()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->isTranscoder();
+    }
+    
+    /**
+     * returns TRUE if the device is a Transcoder
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsCssGradients();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsCssGradients();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the device is a Transcoder
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsCssRoundedCorners();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsCssRoundedCorners();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the device is a Transcoder
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsCssBorderImages();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsCssBorderImages();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the device is a Transcoder
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsCssSpriting();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsCssSpriting();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the device is a Transcoder
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsCssWidthAsPercentage();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsCssWidthAsPercentage();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsHtmlCanvas()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsHtmlCanvas();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsHtmlCanvas();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewport()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsViewport();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsViewport();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportWidth()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsViewportWidth();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsViewportWidth();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function getHtmlPreferedDtd()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->getHtmlPreferedDtd();
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMinimumScale()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsViewportMinimumScale();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsViewportMinimumScale();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMaximumScale()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsViewportMaximumScale();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsViewportMaximumScale();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportInitialScale()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsViewportInitialScale();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsViewportInitialScale();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isViewportUserscalable()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->isViewportUserscalable();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->isViewportUserscalable();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->supportsImageInlining();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->supportsImageInlining();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isMobileOptimized()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->isMobileOptimized();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->isMobileOptimized();
+        }
+        
+        return $support;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isHandheldFriendly()
+    {
+        if (null === $this->_browser && null === $this->_engine) {
+            return null;
+        }
+        
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->isHandheldFriendly();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->isHandheldFriendly();
+        }
+        
+        return $support;
+    }
+    
+    final public function getEngine()
+    {
+        if (null === $this->_engine) {
+            return null;
+        }
+        
+        return $this->_engine->getEngine();
+    }
+    
+    final public function getFullEngine()
+    {
+        if (null === $this->_engine) {
+            return null;
+        }
+        
+        return $this->_engine->getFullEngine();
+    }
+    
+    final public function getPlatform()
+    {
+        if (null === $this->_os) {
+            return null;
+        }
+        
+        return $this->_os->getName();
+    }
+    
+    final public function getFullPlatform()
+    {
+        if (null === $this->_os) {
+            return null;
+        }
+        
+        return $this->_os->getFullName();
+    }
+    
+    final public function getCapability($cabability)
+    {
+        $value = null;
+        
+        switch ((string) $cabability) {
+            case 'pdf_support':
+                $value = $this->isPdfSupported();
+                break;
+            case 'rss_support':
+                $value = $this->$browser->isRssSupported();
+                break;
+            case 'is_transcoder':
+                $value = $this->$browser->isTranscoder();
+                break;
+            case 'css_gradient':
+                $value = $this->$browser->supportsCssGradients();
+                break;
+            case 'css_border_image':
+                $value = $this->$browser->supportsCssBorderImages();
+                break;
+            case 'css_rounded_corners':
+                $value = $this->$browser->supportsCssRoundedCorners();
+                break;
+            case 'css_spriting':
+                $value = $this->$browser->supportsCssSpriting();
+                break;
+            case 'css_supports_width_as_percentage':
+                $value = $this->$browser->supportsCssWidthAsPercentage();
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $value;
     }
 }

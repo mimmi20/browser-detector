@@ -35,15 +35,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Wget extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'wget';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Wget')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Wget')) {
             return false;
         }
         
@@ -51,15 +54,20 @@ class Wget extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
+     * detects the browser version from the given user agent
      *
      * @return string
      */
-    protected function detectBrowser($userAgent)
+    protected function _detectVersion()
     {
-        return 'wget';
+        $doMatch = preg_match('/Wget\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**

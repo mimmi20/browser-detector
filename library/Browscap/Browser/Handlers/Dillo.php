@@ -34,13 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Dillo extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Dillo';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Dillo/')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Dillo/')) {
             return false;
         }
         
@@ -48,33 +53,20 @@ class Dillo extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Dillo';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Dillo\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Dillo\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

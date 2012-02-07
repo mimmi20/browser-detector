@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class MyTouch4G extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'myTouch4G';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'myTouch4G')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'myTouch4G')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'myTouch4G';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

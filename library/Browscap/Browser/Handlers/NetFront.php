@@ -34,14 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class NetFront extends BrowserHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing Safari and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Access NetFront';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
             return false;
         }
         
@@ -50,7 +54,7 @@ class NetFront extends BrowserHandler
             'Kindle'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
@@ -58,57 +62,48 @@ class NetFront extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Access NetFront';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/NetFront\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NetFront\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/NF\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NF\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/NetFrontLifeBrowser\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NetFrontLifeBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/NF3 ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NF3 ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/NF([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NF([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

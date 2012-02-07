@@ -35,44 +35,35 @@ use Browscap\Browser\Handler as BrowserHandler;
 class NokiaBrowser extends BrowserHandler
 {
     /**
-     * Intercepting All User Agents containing 'Nokia'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContains($userAgent, 'NokiaBrowser');
-    }
+    protected $_browser = 'NokiaBrowser';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'NokiaBrowser';
+        return $this->_utils->checkIfContains($this->_useragent, 'NokiaBrowser');
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/NokiaBrowser\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NokiaBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

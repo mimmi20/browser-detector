@@ -34,82 +34,115 @@ use \Browscap\Utils;
 abstract class Handler implements MatcherInterface
 {
     /**
-     * @var string Prefix for this User Agent Handler
+     * @var string the user agent to handle
      */
-    protected $prefix = '';
+    protected $_useragent = '';
     
     /**
-     * @var WURFL_Xml_PersistenceProvider
+     * @var \Zend\Log\Logger
      */
-    protected $persistenceProvider = null;
+    protected $_logger = null;
     
     /**
-     * @var WURFL_Logger_Interface
+     * @var \Browscap\Utils the helper class
      */
-    protected $logger = null;
+    protected $_utils = null;
     
-    protected $utils = null;
+    /**
+     * @var string the detected engine
+     */
+    protected $_engine = 'unknown';
+    
+    /**
+     * @var string the detected engine version
+     */
+    protected $_version = '';
     
     /**
      * @param WURFL_Context $wurflContext
-     * @param WURFL_Request_UserAgentNormalizer_Interface $userAgentNormalizer
+     * @param WURFL_Request_UserAgentNormalizer_Interface $this->_useragentNormalizer
      */
     public function __construct()
     {
-         $this->utils = new Utils();
+        $this->_utils = new Utils();
     }
     
     /**
-     * Returns true if this handler can handle the given $userAgent
+     * sets the user agent to be handled
      *
-     * @param string $userAgent
+     * @return void
+     */
+    final public function setUserAgent($userAgent)
+    {
+        $this->_useragent = $userAgent;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the logger used when errors occur
+     *
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    final public function setLogger(\Zend\Log\Logger $logger = null)
+    {
+        $this->_logger = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         return false;
     }
     
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
+    final public function getEngine()
     {
-        $class = new \StdClass();
-        $class->engine     = $this->detectEngine($userAgent);
-        $class->version    = $this->detectVersion($userAgent);
-        $class->engineFull = $class->engine . ($class->engine != $class->version && '' != $class->version ? ' ' . $class->version : '');
+        return $this->_engine;
+    }
+    
+    final public function getVersion()
+    {
+        return $this->_version;
+    }
+    
+    final public function getFullEngine()
+    {
+        $engine  = $this->getEngine();
+        $version = $this->getVersion();
         
-        return $class;
+        return $engine . ($engine != $version && '' != $version ? ' ' . $version : '');
     }
     
     /**
      * detects the browser name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return StdClass
      */
-    protected function detectEngine($userAgent)
+    final public function detect()
     {
-        return 'unknown';
+        $this->_detectVersion();
+        
+        return $this;
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        return 0.0;
+        $this->_version = '';
+        
+        return $this;
     }
     
     /**
@@ -120,5 +153,155 @@ abstract class Handler implements MatcherInterface
     public function getWeight()
     {
         return 1;
+    }
+    
+    /**
+     * returns TRUE if the engine suppoorts css gradients
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the engine suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the engine suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the engine suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the engine suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsHtmlCanvas()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewport()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportWidth()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMinimumScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMaximumScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportInitialScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isViewportUserscalable()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isMobileOptimized()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isHandheldFriendly()
+    {
+        return true;
     }
 }

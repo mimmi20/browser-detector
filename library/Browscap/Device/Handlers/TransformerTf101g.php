@@ -35,15 +35,20 @@ use Browscap\Device\Handler as DeviceHandler;
 class TransformerTf101g extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'Transformer TF101G';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Transformer TF101G')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Transformer TF101G')) {
             return false;
         }
         
@@ -51,33 +56,22 @@ class TransformerTf101g extends DeviceHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'Transformer TF101G';
-    }
-    
-    /**
      * detects the device version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Transformer TF101G\/([a-zA-Z\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Transformer TF101G\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

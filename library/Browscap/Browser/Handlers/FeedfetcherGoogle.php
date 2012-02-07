@@ -35,15 +35,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class FeedfetcherGoogle extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Feedfetcher-Google';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Feedfetcher-Google')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Feedfetcher-Google')) {
             return false;
         }
         
@@ -51,39 +54,27 @@ class FeedfetcherGoogle extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Feedfetcher-Google';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Feedfetcher-Google\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Feedfetcher-Google\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Feedfetcher-Google-iGoogleGadgets\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Feedfetcher-Google-iGoogleGadgets\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

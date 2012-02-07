@@ -34,18 +34,22 @@ use Browscap\Engine\Handler as EngineHandler;
 class Khtml extends EngineHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected engine
      */
-    public function canHandle($userAgent)
+    protected $_engine = 'KHTML / WebKit';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Presto'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Presto'))) {
             return false;
         }
         
@@ -53,53 +57,41 @@ class Khtml extends EngineHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectEngine($userAgent)
-    {
-        return 'KHTML / WebKit';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $version = '';
-        
-        $doMatch = preg_match('/KHTML\/([\d\.\+]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/KHTML\/([\d\.\+]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/WebKit\/([\d\.\+]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/WebKit\/([\d\.\+]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/CFNetwork\/([\d\.\+]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/CFNetwork\/([\d\.\+]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

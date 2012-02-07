@@ -34,21 +34,25 @@ use Browscap\Engine\Handler as EngineHandler;
 class Trident extends EngineHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected engine
      */
-    public function canHandle($userAgent)
+    protected $_engine = 'Trident';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/') 
-            && !$this->utils->checkIfContainsAnyOf($userAgent, array('MSIE', 'Trident'))
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/') 
+            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MSIE', 'Trident'))
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'MSIE')
-            && $this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics', 'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)'))
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MSIE')
+            && $this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics', 'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)'))
         ) {
             return false;
         }
@@ -57,35 +61,20 @@ class Trident extends EngineHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectEngine($userAgent)
-    {
-        return 'Trident';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $version = '';
-        
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $version = '';
@@ -114,10 +103,11 @@ class Trident extends EngineHandler
                     // do nothing here
             }
             
-            return $version;
+            $this->_version = $version;
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**
@@ -128,5 +118,89 @@ class Trident extends EngineHandler
     public function getWeight()
     {
         return 86837;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css gradients
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        if ($this->getVersion() <= 5) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        if ($this->getVersion() <= 5) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        if ($this->getVersion() <= 5) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        if ($this->getVersion() <= 5) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        if ($this->getVersion() <= 5) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        if ($this->getVersion() <= 5) {
+            return false;
+        }
+        
+        return true;
     }
 }

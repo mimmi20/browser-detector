@@ -41,6 +41,11 @@ use Browscap\Browser\Exceptions;
  */
 class MicrosoftInternetExplorer extends BrowserHandler
 {
+    /**
+     * @var string the detected browser
+     */
+    protected $_browser = 'Internet Explorer';
+    
     private $_patterns = array(
         '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => '10.0',
         '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
@@ -59,18 +64,17 @@ class MicrosoftInternetExplorer extends BrowserHandler
     );
     
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     * @return boolean
+     * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE'))) {
             return false;
         }
         
@@ -102,12 +106,12 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
             return false;
         }
         
         foreach (array_keys($this->_patterns) as $pattern) {
-            if (preg_match($pattern, $userAgent)) {
+            if (preg_match($pattern, $this->_useragent)) {
                 return true;
             }
         }
@@ -116,39 +120,27 @@ class MicrosoftInternetExplorer extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Internet Explorer';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
         foreach ($this->_patterns as $pattern => $version) {
-            if (preg_match($pattern, $userAgent)) {
-                return $version;
+            if (preg_match($pattern, $this->_useragent)) {
+                $this->_version = $version;
+                return;
             }
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**
@@ -159,5 +151,183 @@ class MicrosoftInternetExplorer extends BrowserHandler
     public function getWeight()
     {
         return 72994;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css gradients
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsHtmlCanvas()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewport()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportWidth()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMinimumScale()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMaximumScale()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportInitialScale()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isViewportUserscalable()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        if ($this->getVersion() <= 10) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isMobileOptimized()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isHandheldFriendly()
+    {
+        return false;
     }
 }

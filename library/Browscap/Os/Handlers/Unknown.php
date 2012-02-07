@@ -35,34 +35,18 @@ use Browscap\Os\Handler as OsHandler;
 class Unknown extends OsHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
-    {
-        return true;
-    }
+    protected $_name = 'unknown';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given $useragent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return bool
      */
-    public function detect($userAgent)
+    public function canHandle()
     {
-        $class = new \StdClass();
-        
-        $class->name     = 'unknown';
-        $class->osFull   = 'unknown';
-        $class->version  = '';
-        $class->bits     = 0;
-        
-        return $class;
+        return true;
     }
     
     /**

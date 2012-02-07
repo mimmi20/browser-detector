@@ -34,13 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class NewsRack extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'NewsRack';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'NewsRack')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'NewsRack')) {
             return false;
         }
         
@@ -48,33 +53,20 @@ class NewsRack extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'NewsRack';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/NewsRack ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NewsRack ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class Linux extends OsHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'Linux';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Linux', 'linux', 'X11'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Linux', 'linux', 'X11'))) {
             return false;
         }
         
@@ -54,7 +58,7 @@ class Linux extends OsHandler
             'SunOS'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
             return false;
         }
         
@@ -62,39 +66,29 @@ class Linux extends OsHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Linux';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Linux\/([\d\.\-a-z]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Linux\/([\d\.\-a-z]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Linux ([\d\.\-a-z]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Linux ([\d\.\-a-z]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

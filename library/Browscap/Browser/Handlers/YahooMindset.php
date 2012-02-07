@@ -33,31 +33,22 @@ namespace Browscap\Browser\Handlers;
 class YahooMindset extends Yahoo
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Yahoo! Mindset';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Yahoo', 'Mindset'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Yahoo', 'Mindset'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Yahoo! Mindset';
     }
     
     /**

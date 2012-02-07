@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class Brew extends OsHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'BREW';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('BREW'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('BREW'))) {
             return false;
         }
         
@@ -49,33 +53,22 @@ class Brew extends OsHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'BREW';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/BREW\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BREW\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

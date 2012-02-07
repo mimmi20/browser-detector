@@ -34,16 +34,29 @@ use \Browscap\Utils;
 abstract class Handler implements MatcherInterface
 {
     /**
-     * @var string Prefix for this User Agent Handler
+     * @var string the user agent to handle
      */
-    protected $prefix = '';
+    protected $_useragent = '';
     
     /**
-     * @var WURFL_Logger_Interface
+     * @var \Zend\Log\Logger
      */
-    protected $logger = null;
+    protected $_logger = null;
     
-    protected $utils = null;
+    /**
+     * @var \Browscap\Utils the helper class
+     */
+    protected $_utils = null;
+    
+    /**
+     * @var string the detected device
+     */
+    protected $_device = 'unknown';
+    
+    /**
+     * @var string the detected device version
+     */
+    protected $_version = '';
     
     /**
      * @param WURFL_Context $wurflContext
@@ -51,7 +64,33 @@ abstract class Handler implements MatcherInterface
      */
     public function __construct()
     {
-        $this->utils = new Utils();
+        $this->_utils = new Utils();
+    }
+    
+    /**
+     * sets the logger used when errors occur
+     *
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    final public function setLogger(\Zend\Log\Logger $logger = null)
+    {
+        $this->_logger = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the user agent to be handled
+     *
+     * @return void
+     */
+    final public function setUserAgent($userAgent)
+    {
+        $this->_useragent = $userAgent;
+        
+        return $this;
     }
     
     /**
@@ -61,7 +100,7 @@ abstract class Handler implements MatcherInterface
      *
      * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         return false;
     }
@@ -73,38 +112,41 @@ abstract class Handler implements MatcherInterface
      *
      * @return StdClass
      */
-    public function detect($userAgent)
+    final public function detect()
     {
-        $class = new \StdClass();
-        $class->device     = $this->detectDevice($userAgent);
-        $class->version    = $this->detectVersion($userAgent);
-        $class->fullDevice = $class->device . ($class->device != $class->version && '' != $class->version ? ' ' . $class->version : '');
+        $this->_detectVersion();
         
-        return $class;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'unknown';
+        return $this;
     }
     
     /**
      * detects the device version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        return '';
+        $this->_version = '';
+        
+        return $this;
+    }
+    
+    final public function getDevice()
+    {
+        return $this->_device;
+    }
+    
+    final public function getVersion()
+    {
+        return $this->_version;
+    }
+    
+    final public function getFullDevice()
+    {
+        $device  = $this->getDevice();
+        $version = $this->getVersion();
+        
+        return $device . ($device != $version && '' != $version ? ' ' . $version : '');
     }
     
     /**
@@ -115,5 +157,35 @@ abstract class Handler implements MatcherInterface
     public function getWeight()
     {
         return 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return false;
     }
 }

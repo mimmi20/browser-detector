@@ -35,29 +35,22 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Samsung extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Samsung';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Jasmine', 'NetFront', 'Dolfin'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Jasmine', 'NetFront', 'Dolfin', 'Dolphin'))) {
             return false;
         }
         
-        return $this->utils->checkIfContains($userAgent, 'Samsung/SGH')
-                || $this->utils->checkIfStartsWithAnyOf($userAgent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Samsung';
+        return $this->_utils->checkIfContains($this->_useragent, 'Samsung/SGH')
+                || $this->_utils->checkIfStartsWithAnyOf($this->_useragent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
 }

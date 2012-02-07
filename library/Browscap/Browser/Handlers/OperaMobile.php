@@ -34,20 +34,24 @@ use Browscap\Browser\Handler as BrowserHandler;
 class OperaMobile extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Opera Mini
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Opera Mobile';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Opera/')
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Opera/')
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Opera Mobi', 'Opera Tablet'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Opera Mobi', 'Opera Tablet'))) {
             return false;
         }
         
@@ -55,45 +59,34 @@ class OperaMobile extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Opera Mobile';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Opera ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Opera ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Opera Mobi\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Opera Mobi\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

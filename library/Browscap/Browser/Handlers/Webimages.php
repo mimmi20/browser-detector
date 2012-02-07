@@ -35,30 +35,22 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Webimages extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'WebImages')) {
-            return false;
-        }
-        
-        return true;
-    }
+    protected $_browser = 'WebImages';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'WebImages';
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WebImages')) {
+            $this->_version = false;
+            return;
+        }
+        
+        $this->_version = true;
     }
 }

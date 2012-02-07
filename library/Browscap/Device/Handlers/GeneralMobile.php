@@ -35,13 +35,18 @@ use Browscap\Device\Handler as DeviceHandler;
 class GeneralMobile extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'general Mobile Device';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         $mobiles = array(
             'Windows CE',
@@ -72,23 +77,11 @@ class GeneralMobile extends DeviceHandler
             'Opera Mobi'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $mobiles)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
             return true;
         }
         
         return false;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'general Mobile Device';
     }
     
     /**

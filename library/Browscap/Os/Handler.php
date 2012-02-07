@@ -34,107 +34,161 @@ use \Browscap\Utils;
 abstract class Handler implements MatcherInterface
 {
     /**
-     * @var string Prefix for this User Agent Handler
+     * @var string the user agent to handle
      */
-    protected $prefix = '';
+    protected $_useragent = '';
     
     /**
-     * @var WURFL_Xml_PersistenceProvider
+     * @var \Zend\Log\Logger
      */
-    protected $persistenceProvider = null;
+    protected $_logger = null;
     
     /**
-     * @var WURFL_Logger_Interface
+     * @var \Browscap\Utils the helper class
      */
-    protected $logger = null;
+    protected $_utils = null;
     
-    protected $utils = null;
+    /**
+     * @var string the detected platform
+     */
+    protected $_name = 'unknown';
+    
+    /**
+     * @var string the detected platform version
+     */
+    protected $_version = '';
+    
+    /**
+     * @var string the bits of the detected platform
+     */
+    protected $_bits = '';
     
     /**
      * @param WURFL_Context $wurflContext
-     * @param WURFL_Request_UserAgentNormalizer_Interface $userAgentNormalizer
+     * @param WURFL_Request_UserAgentNormalizer_Interface $this->_useragentNormalizer
      */
     public function __construct()
     {
-         $this->utils = new Utils();
+        $this->_utils = new Utils();
     }
     
     /**
-     * Returns true if this handler can handle the given $userAgent
+     * sets the logger used when errors occur
      *
-     * @param string $userAgent
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    final public function setLogger(\Zend\Log\Logger $logger = null)
+    {
+        $this->_logger = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the user agent to be handled
+     *
+     * @return void
+     */
+    final public function setUserAgent($userAgent)
+    {
+        $this->_useragent = $userAgent;
+        
+        return $this;
+    }
+    
+    /**
+     * Returns true if this handler can handle the given useragent
      *
      * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         return false;
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
+     * detects the operating system name (platform) from the given user agent
      *
      * @return StdClass
      */
-    public function detect($userAgent)
+    final public function detect()
     {
-        $class = new \StdClass();
-        $class->name    = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        $class->osFull  = $class->name . ($class->name != $class->version && '' != $class->version ? ' ' . $class->version : '');
-        $class->bits    = $this->detectBits($userAgent);
+        $this->_detectVersion();
+        $this->_detectBits();
         
-        return $class;
+        return $this;
     }
     
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
+    final public function getName()
     {
-        return 'unknown';
+        return $this->_name;
+    }
+    
+    final public function getVersion()
+    {
+        return $this->_version;
+    }
+    
+    final public function getBits()
+    {
+        return $this->_bits;
+    }
+    
+    final public function getFullName()
+    {
+        $name    = $this->getName();
+        $version = $this->getVersion();
+        $bits    = $this->getBits();
+        
+        return $name . ($name != $version && '' != $version ? ' ' . $version : '') . ($bits ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        return '';
+        $this->_version = '';
+        
+        return $this;
     }
     
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
-     * @return integer
+     * @return string
      */
-    protected function detectBits($userAgent)
+    protected function _detectBits()
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64'))) {
-            return 64;
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64'))) {
+            $this->_bits = '64';
+            
+            return $this;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win3.1', 'Windows 3.1'))) {
-            return 16;
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Win3.1', 'Windows 3.1'))) {
+            $this->_bits = '16';
+            
+            return $this;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
-            return 32;
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+            $this->_bits = '32';
+            
+            return $this;
         }
         
-        return '';
+        $this->_bits = '';
+        
+        return $this;
     }
     
     /**

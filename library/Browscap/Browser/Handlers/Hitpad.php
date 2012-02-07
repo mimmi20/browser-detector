@@ -34,13 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Hitpad extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Hitpad';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Hitpad')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Hitpad')) {
             return false;
         }
         
@@ -48,33 +53,20 @@ class Hitpad extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Hitpad';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Hitpad ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Hitpad ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

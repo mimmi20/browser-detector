@@ -35,25 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Philips extends BrowserHandler
 {
     /**
-     * Intercept all UAs starting with either 'Philips' or 'PHILIPS'
-     *
-     * @param string $userAgent
-     * @return string
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfStartsWith($userAgent, 'Philips') || $this->utils->checkIfStartsWith($userAgent, 'PHILIPS');
-    }
+    protected $_browser = 'Philips';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Philips';
+        return $this->_utils->checkIfStartsWith($this->_useragent, 'Philips') || $this->_utils->checkIfStartsWith($this->_useragent, 'PHILIPS');
     }
 }

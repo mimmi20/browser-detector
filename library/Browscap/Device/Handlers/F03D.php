@@ -35,15 +35,20 @@ use Browscap\Device\Handler as DeviceHandler;
 class F03D extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'F-03D';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'F-03D')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'F-03D')) {
             return false;
         }
         
@@ -51,33 +56,22 @@ class F03D extends DeviceHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'F-03D';
-    }
-    
-    /**
      * detects the device version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/HUAWEI MediaPad\/([a-zA-Z\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/F-03D\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

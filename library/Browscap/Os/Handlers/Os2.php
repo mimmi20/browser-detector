@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class OS2 extends OsHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'OS/2';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('OS/2'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('OS/2'))) {
             return false;
         }
         
@@ -49,38 +53,28 @@ class OS2 extends OsHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Os2';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/OS\/2 ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/OS\/2 ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Warp ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Warp ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

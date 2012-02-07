@@ -34,20 +34,24 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Firefox extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Firefox and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Firefox';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/4.0')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/4.0')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0')
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'Firefox')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Firefox')) {
             return false;
         }
         
@@ -80,7 +84,7 @@ class Firefox extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
             return false;
         }
         
@@ -88,33 +92,20 @@ class Firefox extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Firefox';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

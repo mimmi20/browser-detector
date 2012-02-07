@@ -34,14 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class WebProcess extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Flock and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'WebProcess';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'WebProcess/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WebProcess/')) {
             return false;
         }
         
@@ -56,7 +60,7 @@ class WebProcess extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
@@ -64,32 +68,19 @@ class WebProcess extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'WebProcess';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/WebProcess\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/WebProcess\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

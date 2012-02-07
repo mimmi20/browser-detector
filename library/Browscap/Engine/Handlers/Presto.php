@@ -34,20 +34,24 @@ use Browscap\Engine\Handler as EngineHandler;
 class Presto extends EngineHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected engine
      */
-    public function canHandle($userAgent)
+    protected $_engine = 'Presto';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Presto'))
-            && !$this->utils->checkIfContainsAnyOf($userAgent, array('Opera'))
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Presto'))
+            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Opera'))
         ) {
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'Trident', 'Gecko'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'Trident', 'Gecko'))) {
             return false;
         }
         
@@ -55,35 +59,22 @@ class Presto extends EngineHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectEngine($userAgent)
-    {
-        return 'Presto';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $version = '';
-        
-        $doMatch = preg_match('/Presto\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Presto\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

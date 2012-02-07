@@ -33,19 +33,22 @@ namespace Browscap\Browser\Handlers;
 class WebkitWebos extends MobileSafari
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'WebKit/webOS (Mobile Safari)';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!parent::canHandle($userAgent)) {
+        if (!parent::canHandle()) {
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'webOS')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'webOS')) {
             return false;
         }
         
@@ -53,32 +56,19 @@ class WebkitWebos extends MobileSafari
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'WebKit/webOS (Mobile Safari)';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/webOS\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/webOS\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

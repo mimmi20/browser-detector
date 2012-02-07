@@ -35,13 +35,18 @@ use Browscap\Device\Handler as DeviceHandler;
 class GeneralDesktop extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'general Desktop';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         $mobiles = array(
             'Windows CE',
@@ -78,7 +83,7 @@ class GeneralDesktop extends DeviceHandler
             'http:'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $mobiles)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
             return false;
         }
         
@@ -88,8 +93,8 @@ class GeneralDesktop extends DeviceHandler
             'Windows 3.1', 'win9x/NT 4.90', 'Windows'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $windows)
-            || $this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $windows)
+            || $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
         ) {
             return false;
         }
@@ -98,23 +103,11 @@ class GeneralDesktop extends DeviceHandler
             'bot', 'spider'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $bots)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $bots)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'general Desktop';
     }
     
     /**
@@ -125,5 +118,15 @@ class GeneralDesktop extends DeviceHandler
     public function getWeight()
     {
         return 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        return false;
     }
 }

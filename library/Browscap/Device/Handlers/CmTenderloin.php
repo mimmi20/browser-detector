@@ -35,15 +35,20 @@ use Browscap\Device\Handler as DeviceHandler;
 class CmTenderloin extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'cm_tenderloin';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'cm_tenderloin')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'cm_tenderloin')) {
             return false;
         }
         
@@ -51,33 +56,22 @@ class CmTenderloin extends DeviceHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'cm_tenderloin';
-    }
-    
-    /**
      * detects the device version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/cm_tenderloin\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

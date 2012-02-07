@@ -34,20 +34,24 @@ use Browscap\Browser\Handler as BrowserHandler;
 class OperaMini extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Opera Mini
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Opera Mini';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Opera/')
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Opera/')
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'Opera Mini')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Opera Mini')) {
             return false;
         }
         
@@ -55,33 +59,20 @@ class OperaMini extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Opera Mini';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Opera Mini\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Opera Mini\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

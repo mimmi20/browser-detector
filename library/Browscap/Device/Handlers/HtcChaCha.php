@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class HtcChaCha extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'HTC ChaCha';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('HTC/ChaCha'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC/ChaCha'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'HTC ChaCha';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

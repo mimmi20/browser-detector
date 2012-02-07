@@ -34,14 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class MqqBrowser extends BrowserHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing Safari and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'MQQBrowser';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('MQQBrowser'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MQQBrowser'))) {
             return false;
         }
         
@@ -49,33 +53,20 @@ class MqqBrowser extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'MQQBrowser';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/MQQBrowser\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MQQBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     public function getWeight()

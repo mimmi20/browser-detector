@@ -32,18 +32,22 @@ namespace Browscap\Browser\Handlers;
 class Iceowl extends Thunderbird
 {
     /**
-     * Intercept all UAs Containing Thunderbird and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent) 
+    protected $_browser = 'Iceowl';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle() 
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Iceowl', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Iceowl', 'Gecko'))) {
             return false;
         }
         
@@ -63,7 +67,7 @@ class Iceowl extends Thunderbird
             'Firefox'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
             return false;
         }
         
@@ -71,33 +75,20 @@ class Iceowl extends Thunderbird
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Iceowl';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Iceowl\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Iceowl\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

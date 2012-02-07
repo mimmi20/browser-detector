@@ -33,19 +33,22 @@ namespace Browscap\Browser\Handlers;
 class Googlebot extends Google
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Googlebot';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Google')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Google')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Googlebot', 'GoogleBot'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Googlebot', 'GoogleBot'))) {
             return false;
         }
         
@@ -53,62 +56,54 @@ class Googlebot extends Google
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Googlebot';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Googlebot\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/GoogleBot\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/GoogleBot\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Googlebot v([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot v([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Googlebot-Image\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot-Image\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Googlebot-News\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Googlebot-News\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Google\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Google\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

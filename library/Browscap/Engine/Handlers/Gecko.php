@@ -34,18 +34,22 @@ use Browscap\Engine\Handler as EngineHandler;
 class Gecko extends EngineHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected engine
      */
-    public function canHandle($userAgent)
+    protected $_engine = 'Gecko';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Gecko', 'Firefox'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Gecko', 'Firefox'))) {
             return false;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('KHTML', 'AppleWebKit', 'WebKit', 'Presto'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'Presto'))) {
             return false;
         }
         
@@ -53,41 +57,27 @@ class Gecko extends EngineHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectEngine($userAgent)
-    {
-        return 'Gecko';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $version = '';
-        
-        $doMatch = preg_match('/rv\:([\d\.ab]+).*Gecko\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/rv\:([\d\.ab]+).*Gecko\/([\d\.]+)/', $this->_useragent, $matches);
         //var_dump($matches);
         if ($doMatch) {
-            return $matches[1] . ' (' . $matches[2] . ')';
+            $this->_version = $matches[1] . ' (' . $matches[2] . ')';
+            return;
         }
         
-        $doMatch = preg_match('/Gecko\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Gecko\/([\d\.]+)/', $this->_useragent, $matches);
         //var_dump($matches);
         if ($doMatch) {
-            return '(' . $matches[1] . ')';
+            $this->_version = '(' . $matches[1] . ')';
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**
@@ -98,5 +88,89 @@ class Gecko extends EngineHandler
     public function getWeight()
     {
         return 5244;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css gradients
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        if ($this->getVersion() <= 3) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        if ($this->getVersion() <= 3) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        if ($this->getVersion() <= 1) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        if ($this->getVersion() <= 1) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        if ($this->getVersion() <= 1) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        if ($this->getVersion() <= 1) {
+            return false;
+        }
+        
+        return true;
     }
 }

@@ -35,26 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Kyocera extends BrowserHandler
 {
     /**
-     * Intercept all UAs starting with either 
-     * 'kyocera', 'QC-' or 'KWC-'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfStartsWith($userAgent, 'kyocera') || $this->utils->checkIfStartsWith($userAgent, 'QC-') || $this->utils->checkIfStartsWith($userAgent, 'KWC-');
-    }
+    protected $_browser = 'Kyocera';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Kyocera';
+        return $this->_utils->checkIfStartsWith($this->_useragent, 'kyocera') || $this->_utils->checkIfStartsWith($this->_useragent, 'QC-') || $this->_utils->checkIfStartsWith($this->_useragent, 'KWC-');
     }
 }

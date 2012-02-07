@@ -35,30 +35,21 @@ use Browscap\Browser\Handler as BrowserHandler;
 class XmlRpcForPhp extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'XML-RPC for PHP';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'XML-RPC for PHP')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'XML-RPC for PHP')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'XML-RPC for PHP';
     }
 }

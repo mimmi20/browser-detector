@@ -42,14 +42,18 @@ use Browscap\Browser\Exceptions;
 class TinyTinyRss extends BrowserHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Tiny Tiny RSS';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Tiny Tiny RSS/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Tiny Tiny RSS/')) {
             return false;
         }
         
@@ -57,32 +61,19 @@ class TinyTinyRss extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Tiny Tiny RSS';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Tiny Tiny RSS\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Tiny Tiny RSS\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

@@ -35,25 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Sharp extends BrowserHandler
 {
     /**
-     * Intercept all UAs starting with 'Sharp' or 'SHARP'
-     *
-     * @param string $userAgent
-     * @return boolean 
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfStartsWith($userAgent, 'Sharp') || $this->utils->checkIfStartsWith($userAgent, 'SHARP');
-    }
+    protected $_browser = 'Sharp';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Sharp';
+        return $this->_utils->checkIfStartsWith($this->_useragent, 'Sharp') || $this->_utils->checkIfStartsWith($this->_useragent, 'SHARP');
     }
 }

@@ -33,19 +33,23 @@ use Browscap\Os\Handler as OsHandler;
  */
 class WindowsMobileOs extends OsHandler
 {
+    /**
+     * @var string the detected platform
+     */
+    protected $_name = 'Windows Mobile OS';
+    
     private $_windows = array(
         'Windows CE', 'Windows Phone OS', 'Windows Mobile'
     );
     
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
+     * Returns true if this handler can handle the given $useragent
      *
-     * @param string $userAgent
-     * @return boolean
+     * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, $this->_windows)) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $this->_windows)) {
             return false;
         }
         
@@ -54,7 +58,7 @@ class WindowsMobileOs extends OsHandler
             'Linux'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
             return false;
         }
         
@@ -64,35 +68,25 @@ class WindowsMobileOs extends OsHandler
     /**
      * detects the browser name from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectBrowser($userAgent)
+    protected function _detectVersion()
     {
-        return 'Windows Mobile OS';
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Windows CE', 'Windows Mobile'))) {
-            return '6.0 (CE)';
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Windows CE', 'Windows Mobile'))) {
+            $this->_version = '6.0 (CE)';
+            return;
         }
         
-        $doMatch = preg_match('/Windows Phone OS ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows Phone OS ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

@@ -33,31 +33,22 @@ namespace Browscap\Browser\Handlers;
 class YahooAdcrawler extends Yahoo
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Yahoo!-AdCrawler';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Yahoo!-AdCrawler'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Yahoo!-AdCrawler'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Yahoo!-AdCrawler';
     }
     
     /**

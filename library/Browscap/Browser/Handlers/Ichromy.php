@@ -33,35 +33,27 @@ namespace Browscap\Browser\Handlers;
 class Ichromy extends MobileSafari
 {
     /**
-     * Intercept all UAs containing 'Android'
+     * @var string the detected browser
+     */
+    protected $_browser = 'iChromy (Mobile Safari)';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
      * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'iChromy')
-            && !parent::canHandle($userAgent)
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'iChromy')
+            && !parent::canHandle($this->_useragent)
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'iChromy')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'iChromy')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'iChromy (Mobile Safari)';
     }
 }

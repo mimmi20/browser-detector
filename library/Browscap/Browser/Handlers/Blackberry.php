@@ -36,56 +36,49 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Blackberry extends BrowserHandler
 {
     /**
-     * Intercept all UAs containing 'BlackBerry'
-     *
-     * @param string $userAgent
-     * @return string
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContains($userAgent, 'BlackBerry') || $this->utils->checkIfContains($userAgent, 'Blackberry');
-    }
+    protected $_browser = 'BlackBerry';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'BlackBerry';
+        return $this->_utils->checkIfContains($this->_useragent, 'BlackBerry') || $this->_utils->checkIfContains($this->_useragent, 'Blackberry');
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/BlackBerry\d+\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BlackBerry\d+\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/BlackBerrySimulator\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BlackBerrySimulator\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

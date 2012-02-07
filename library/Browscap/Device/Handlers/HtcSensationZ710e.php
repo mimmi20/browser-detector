@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class HtcSensationZ710e extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'HTC Sensation Z710e';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('HTC_Sensation_Z710e', 'HTC Sensation Z710e'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC_Sensation_Z710e', 'HTC Sensation Z710e'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'HTC Sensation Z710e';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

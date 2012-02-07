@@ -35,29 +35,22 @@ use Browscap\Device\Handler as DeviceHandler;
 final class Unknown extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'unknown Device';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        trigger_error('unknown Device detected from user agent \'' . $userAgent . '\'', E_USER_WARNING);
+        trigger_error('unknown Device detected from user agent \'' . $this->_useragent . '\'', E_USER_WARNING);
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'unknown Device';
     }
     
     /**
@@ -68,5 +61,15 @@ final class Unknown extends DeviceHandler
     public function getWeight()
     {
         return 0;
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        return false;
     }
 }

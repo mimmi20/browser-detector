@@ -34,34 +34,76 @@ use \Browscap\Utils;
 abstract class Handler implements MatcherInterface
 {
     /**
-     * @var string Prefix for this User Agent Handler
+     * @var string the user agent to handle
      */
-    protected $prefix = '';
+    protected $_useragent = '';
     
     /**
-     * @var WURFL_Logger_Interface
+     * @var \Zend\Log\Logger
      */
-    protected $logger = null;
+    protected $_logger = null;
     
-    protected $utils = null;
+    /**
+     * @var \Browscap\Utils the helper class
+     */
+    protected $_utils = null;
+    
+    /**
+     * @var string the detected browser
+     */
+    protected $_browser = 'unknown';
+    
+    /**
+     * @var string the detected browser version
+     */
+    protected $_version = '';
+    
+    /**
+     * @var string the bits of the detected browser
+     */
+    protected $_bits = '';
     
     /**
      * @param WURFL_Context $wurflContext
-     * @param WURFL_Request_UserAgentNormalizer_Interface $userAgentNormalizer
+     * @param WURFL_Request_UserAgentNormalizer_Interface $this->_useragentNormalizer
      */
     public function __construct()
     {
-        $this->utils = new Utils();
+        $this->_utils = new Utils();
     }
     
     /**
-     * Returns true if this handler can handle the given $userAgent
+     * sets the logger used when errors occur
      *
-     * @param string $userAgent
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    final public function setLogger(\Zend\Log\Logger $logger = null)
+    {
+        $this->_logger = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the user agent to be handled
+     *
+     * @return void
+     */
+    final public function setUserAgent($userAgent)
+    {
+        $this->_useragent = $userAgent;
+        
+        return $this;
+    }
+    
+    /**
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         return false;
     }
@@ -69,70 +111,83 @@ abstract class Handler implements MatcherInterface
     /**
      * detects the browser name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return StdClass
      */
-    public function detect($userAgent)
+    final public function detect()
     {
-        $class = new \StdClass();
-        $class->browser     = $this->detectBrowser($userAgent);
-        $class->version     = $this->detectVersion($userAgent);
-        $class->browserFull = $class->browser . ($class->browser != $class->version && '' != $class->version ? ' ' . $class->version : '');
-        $class->bits        = $this->detectBits($userAgent);
+        $this->_detectVersion();
+        $this->_detectBits();
         
-        return $class;
+        return $this;
     }
     
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
+    final public function getBrowser()
     {
-        return 'unknown';
+        return $this->_browser;
+    }
+    
+    final public function getVersion()
+    {
+        return $this->_version;
+    }
+    
+    final public function getBits()
+    {
+        return $this->_bits;
+    }
+    
+    final public function getFullBrowser()
+    {
+        $browser = $this->getBrowser();
+        $version = $this->getVersion();
+        $bits    = $this->getBits();
+        
+        return $browser . ($browser != $version && '' != $version ? ' ' . $version : '') . ($bits ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return void
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        return '';
+        $this->_version = '';
+        
+        return $this;
     }
     
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return integer
+     * @return void
      */
-    protected function detectBits($userAgent)
+    final protected function _detectBits()
     {
         // 64 bits
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64'))) {
-            return 64;
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64'))) {
+            $this->_bits = '64';
+            
+            return $this;
         }
         
         // old deprecated 16 bit windows systems
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win3.1', 'Windows 3.1'))) {
-            return 16;
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Win3.1', 'Windows 3.1'))) {
+            $this->_bits = '16';
+            
+            return $this;
         }
         
         // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
-            return 32;
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+            $this->_bits = '32';
+            
+            return $this;
         }
         
-        return '';
+        $this->_bits = '';
+        
+        return $this;
     }
     
     /**
@@ -143,5 +198,185 @@ abstract class Handler implements MatcherInterface
     public function getWeight()
     {
         return 1;
+    }
+    
+    /**
+     * returns TRUE if the browser is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isSyndicationReader()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isTranscoder()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css gradients
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsHtmlCanvas()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewport()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportWidth()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function getHtmlPreferedDtd()
+    {
+        return '';
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMinimumScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMaximumScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportInitialScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isViewportUserscalable()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isMobileOptimized()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isHandheldFriendly()
+    {
+        return true;
     }
 }

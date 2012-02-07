@@ -19,7 +19,7 @@ namespace Browscap\Engine\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
+use Browscap\Engine\Handler as EngineHandler;
 
 /**
  * CatchAllUserAgentHanlder
@@ -32,36 +32,21 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version   SVN: $Id$
  */
 
-class Unknown extends BrowserHandler
+class Unknown extends EngineHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected engine
      */
-    public function canHandle($userAgent)
-    {
-        return true;
-    }
+    protected $_engine = 'unknown';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return bool
      */
-    public function detect($userAgent)
+    public function canHandle()
     {
-        $class = new \StdClass();
-        
-        $class->engine     = 'unknown';
-        $class->version    = '';
-        $class->engineFull = $class->engine;
-        
-        return $class;
+        return true;
     }
     
     /**

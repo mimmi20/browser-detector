@@ -32,24 +32,41 @@ namespace Browscap\Engine;
  */
 interface MatcherInterface
 {
+    /**
+     * sets the user agent to be handled
+     *
+     * @return void
+     */
+    public function setUserAgent($userAgent);
     
     /**
-     * Returns true if this handler can handle the given $userAgent
+     * sets the logger used when errors occur
      *
-     * @param string $userAgent
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    public function setLogger(\Zend\Log\Logger $logger = null);
+    
+    /**
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
-    public function canHandle($userAgent);
+    public function canHandle();
+    
+    public function getEngine();
+    
+    public function getVersion();
+    
+    public function getFullEngine();
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
+     * detects the engine name from the given user agent
      *
      * @return StdClass
      */
-    public function detect($userAgent);
+    public function detect();
     
     /**
      * gets the weight of the handler, which is used for sorting

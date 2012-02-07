@@ -35,16 +35,19 @@ use Browscap\Browser\Handler as BrowserHandler;
 class WindowsMediaPlayer extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Windows Media Player';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Windows-Media-Player')
-            && !$this->utils->checkIfStartsWith($userAgent, 'NSPlayer')
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Windows-Media-Player')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'NSPlayer')
         ) {
             return false;
         }
@@ -53,38 +56,26 @@ class WindowsMediaPlayer extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Windows Media Player';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Windows-Media-Player\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows-Media-Player\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/NSPlayer\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/NSPlayer\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

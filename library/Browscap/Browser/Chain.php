@@ -41,9 +41,17 @@ final class Chain
      */
     private $_utils = null;
     
+    /*
+     * @var \Zend\Log\Logger
+     */
     private $_log = null;
-    
-    private $_service = null;
+
+    /**
+     * a \Zend\Cache object
+     *
+     * @var \Zend\Cache
+     */
+    private $_cache = null;
 
     /**
      * Initializes the factory with an instance of all possible Handler objects from the given $context
@@ -53,36 +61,40 @@ final class Chain
         // the utility classes
         $this->_utils = new Utils();
         $this->_chain = array();
-        $this->_log   = \Zend\Registry::get('log');
         
         // get all Browsers
         $directory = __DIR__ . DS . 'Handlers' . DS;
         $iterator  = new \DirectoryIterator($directory);
         
         foreach ($iterator as $fileinfo) {
-            if ($fileinfo->isFile() && $fileinfo->isReadable()) {
-                $filename = $fileinfo->getBasename('.php');
-                
-                if ('CatchAll' != $filename) {
-                    $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
-                    
-                    try {
-                        $handler = new $className();
-                    } catch (\Exception $e) {
-                        echo "Class '$className' not found \n";
-                        
-                        //$this->_log->warn($e);
-                        
-                        continue;
-                    }
-                    
-                    $detector = array();
-                    $detector['class']  = $handler;
-                    $detector['weight'] = $handler->getWeight();
-                    
-                    $this->_chain[] = $detector;
-                }
+            if (!$fileinfo->isFile() || !$fileinfo->isReadable()) {
+                continue;
             }
+            
+            $filename = $fileinfo->getBasename('.php');
+            
+            if ('CatchAll' == $filename) {
+                continue;
+            }
+            
+            $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
+            
+            try {
+                require_once $fileinfo->getPathname();
+                $handler = new $className();
+            } catch (\Exception $e) {
+                echo "Class '$className' not found \n";
+                
+                //$this->_log->warn($e);
+                
+                continue;
+            }
+            
+            $detector = array();
+            $detector['class']  = $handler;
+            $detector['weight'] = $handler->getWeight();
+            
+            $this->_chain[] = $detector;
         }
         
         $sorter = array();
@@ -102,33 +114,57 @@ final class Chain
     public function __destruct()
     {
         // the utility classes
-        $this->_utils   = null;
-        $this->_chain   = null;
-        $this->_log     = null;
+        $this->_utils = null;
+        $this->_chain = null;
+        $this->_log   = null;
+    }
+    
+    /**
+     * sets the logger used when errors occur
+     *
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    public function setLogger(\Zend\Log\Logger $logger = null)
+    {
+        $this->_log = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the cache used to make the detection faster
+     *
+     * @param \Zend\Cache\Frontend\Core $cache
+     *
+     * @return 
+     */
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    {
+        $this->_cache = $cache;
+        
+        return $this;
     }
     
     /**
      * detect the user agent
      *
-     * @param string $userAgent The user agent
+     * @param string $this->_useragent The user agent
      *
      * @return string
      */
     public function detect($userAgent)
     {
-        $browser = new \StdClass();
-        $browser->browser     = 'unknown';
-        $browser->version     = '';
-        $browser->bits        = 0;
-        $browser->browserFull = 'unknown';
-        
         if (count($this->_chain)) {
             foreach ($this->_chain as $detector) {
                 $handler = $detector['class'];
+                $handler->setLogger($this->_log);
+                $handler->setUserAgent($userAgent);
                 
-                if ($handler->canHandle($userAgent)) {
+                if ($handler->canHandle()) {
                     try {
-                        return $handler->detect($userAgent);
+                        return $handler->detect();
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
                         continue;
@@ -137,6 +173,6 @@ final class Chain
             }
         }
         
-        return $browser;
+        return new Handlers\Unknown();
     }
 }

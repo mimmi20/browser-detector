@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -32,34 +30,27 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version   SVN: $Id$
  */
 
-class Robot extends DeviceHandler
+class Robot extends GeneralBot
 {
+    /**
+     * @var string the detected device
+     */
+    protected $_device = 'Bot';
+    
     /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Robot', 'Link Checker', 'Bot'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Robot', 'Link Checker', 'Bot'))) {
             return true;
         }
         
         return false;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'Bot';
     }
     
     /**
@@ -70,5 +61,15 @@ class Robot extends DeviceHandler
     public function getWeight()
     {
         return 2;
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        return false;
     }
 }

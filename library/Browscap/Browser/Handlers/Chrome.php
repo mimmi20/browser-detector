@@ -34,20 +34,24 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Chrome extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Chrome and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Chrome';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')
-            && !$this->utils->checkIfStartsWith($userAgent, 'Chrome/')
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Chrome/')
         ) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('AppleWebKit', 'Chrome'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Chrome'))) {
             return false;
         }
         
@@ -68,7 +72,7 @@ class Chrome extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
@@ -76,33 +80,20 @@ class Chrome extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Chrome';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Chrome\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Chrome\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

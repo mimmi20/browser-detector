@@ -32,14 +32,18 @@ namespace Browscap\Os\Handlers;
 class Suse extends Linux
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'Suse Linux';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('SUSE'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SUSE'))) {
             return false;
         }
         
@@ -47,32 +51,21 @@ class Suse extends Linux
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Suse Linux';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/SUSE\/([\d\.\-]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/SUSE\/([\d\.\-]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

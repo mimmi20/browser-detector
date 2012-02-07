@@ -42,16 +42,20 @@ use Browscap\Browser\Exceptions;
 class MicrosoftOutlook extends BrowserHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Microsoft Outlook';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Outlook')
-            && !$this->utils->checkIfContains($userAgent, 'Microsoft Office')
-            && !$this->utils->checkIfContains($userAgent, 'MSOffice')
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Outlook')
+            && !$this->_utils->checkIfContains($this->_useragent, 'Microsoft Office')
+            && !$this->_utils->checkIfContains($this->_useragent, 'MSOffice')
         ) {
             return false;
         }
@@ -81,7 +85,7 @@ class MicrosoftOutlook extends BrowserHandler
             'Outlook-Express'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
             return false;
         }
         
@@ -89,51 +93,41 @@ class MicrosoftOutlook extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Microsoft Outlook';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Microsoft Office Outlook ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Microsoft Office Outlook ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Microsoft Outlook ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Microsoft Outlook ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Microsoft Office\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Microsoft Office\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**
@@ -143,6 +137,6 @@ class MicrosoftOutlook extends BrowserHandler
      */
     public function getWeight()
     {
-        return 7278;
+        return 4200;
     }
 }

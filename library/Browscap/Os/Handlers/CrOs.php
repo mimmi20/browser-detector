@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class CrOs extends OsHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'CrOS';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'CrOS')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'CrOS')) {
             return false;
         }
         
@@ -49,27 +53,15 @@ class CrOs extends OsHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'CrOS';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/CrOS\/([\d\.\-]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/CrOS\/([\d\.\-]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             return $matches[1];

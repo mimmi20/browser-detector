@@ -74,41 +74,24 @@ class Browscap
      * @param \Zend\Log\Logger                $log
      * @param array|\Zend\Cache\Frontend\Core $cache
      */
-    public function __construct($config = null, $log = null, $cache = null)
+    public function __construct()
     {
-        if ($config instanceof \Zend\Config\Config) {
-            $config = $config->toArray();
-        } elseif (!is_array($config)) {
-            $config = array();
-        }
-        
-        $this->_config = $config;
-        
-        if ($cache instanceof \Zend\Cache\Frontend\Core) {
-            $this->_cache = $cache;
-        } elseif (!empty($config['cache'])) {
-            $cacheConfig = $this->_config['cache'];
-            
-            $this->_cache = \Zend\Cache\Cache::factory(
-                $cacheConfig['frontend'],
-                $cacheConfig['backend'],
-                $cacheConfig['front'],
-                $cacheConfig['back']
-            );
-        }
-        
         // default data file
-        $file = __DIR__ . '/data/browscap.ini';
+        $this->setLocaleFile(__DIR__ . '/data/browscap.ini');
+    }
+    
+    public function setLogger(\Zend\Log\Logger $logger)
+    {
+        $this->_logger = $logger;
         
-        if (isset($config['inifile'])) {
-            $file = realpath((string) $config['inifile']);
-        }
+        return $this;
+    }
+    
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    {
+        $this->_cache = $cache;
         
-        $this->setLocaleFile($file);
-
-        if ($log instanceof \Zend\Log\Logger) {
-            $this->_logger = $log;
-        }
+        return $this;
     }
 
     /**
@@ -128,7 +111,13 @@ class Browscap
             $sUserAgent = $support->getUserAgent();
         }
         
-        $cacheId = 'agent_' . preg_replace('/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent));
+        $cacheId = substr(
+            'agent_' . preg_replace(
+                '/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent)
+            ), 
+            0, 
+            179
+        );
         
         if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
             || !$array = $this->_cache->load($cacheId)

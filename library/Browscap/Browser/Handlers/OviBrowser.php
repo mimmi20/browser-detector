@@ -35,43 +35,34 @@ use Browscap\Browser\Handler as BrowserHandler;
 class OviBrowser extends BrowserHandler
 {
     /**
-     * Intercepting All User Agents containing 'Nokia'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContains($userAgent, 'OviBrowser');
-    }
+    protected $_browser = 'OviBrowser';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'OviBrowser';
+        return $this->_utils->checkIfContains($this->_useragent, 'OviBrowser');
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/OviBrowser\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/OviBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

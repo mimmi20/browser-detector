@@ -35,15 +35,19 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Winamp extends BrowserHandler
 {
     /**
+     * @var string the detected browser
+     */
+    protected $_browser = 'unknown';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'WinampMPEG/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WinampMPEG/')) {
             return false;
         }
         
@@ -51,32 +55,19 @@ class Winamp extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    protected function _detectVersion()
     {
-        return 'WinAmp';
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        $doMatch = preg_match('/WinampMPEG\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/WinampMPEG\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

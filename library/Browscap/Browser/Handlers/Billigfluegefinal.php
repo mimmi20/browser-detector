@@ -35,16 +35,19 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Billigfluegefinal extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'BilligFluegeFinal';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'BilligFluegeFinal')
-            || $this->utils->checkIfStartsWith($userAgent, 'billigFluegeFinal')
+        if ($this->_utils->checkIfStartsWith($this->_useragent, 'BilligFluegeFinal')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'billigFluegeFinal')
         ) {
             return true;
         }
@@ -53,38 +56,26 @@ class Billigfluegefinal extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'BilligFluegeFinal';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/BilligFluegeFinal\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/BilligFluegeFinal\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/billigFluegeFinal\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/billigFluegeFinal\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

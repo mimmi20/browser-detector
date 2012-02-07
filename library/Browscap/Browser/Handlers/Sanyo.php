@@ -35,25 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Sanyo extends BrowserHandler
 {
     /**
-     * Intercept all UAs starting with 'Sanyo' or 'SANYO'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfStartsWith($userAgent, 'Sanyo') || $this->utils->checkIfStartsWith($userAgent, 'SANYO');
-    }
+    protected $_browser = 'Sanyo';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Sanyo';
+        return $this->_utils->checkIfStartsWith($this->_useragent, 'Sanyo') || $this->_utils->checkIfStartsWith($this->_useragent, 'SANYO');
     }
 }

@@ -32,22 +32,26 @@ namespace Browscap\Browser\Handlers;
 class Avant extends MicrosoftInternetExplorer
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Avant Browser';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContains($userAgent, 'MSIE')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MSIE')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('avantbrowser', 'Avant'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('avantbrowser', 'Avant'))) {
             return false;
         }
         
@@ -70,23 +74,11 @@ class Avant extends MicrosoftInternetExplorer
             'WebTV'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Avant Browser';
     }
     
     /**

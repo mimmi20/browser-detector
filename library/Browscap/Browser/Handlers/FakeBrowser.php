@@ -35,37 +35,22 @@ use Browscap\Browser\Handler as BrowserHandler;
 class FakeBrowser extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Fake Browser';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS ', 'fake'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mac; Mac OS ', 'fake'))) {
             return true;
         }
         
         return false;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser     = 'Fake Browser';
-        $class->version     = '';
-        $class->browserFull = $class->browser;
-        $class->bits        = 0;
-        
-        return $class;
     }
     
     /**

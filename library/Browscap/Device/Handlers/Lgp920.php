@@ -35,47 +35,28 @@ use Browscap\Device\Handler as DeviceHandler;
 class Lgp920 extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'LG-P920';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'LG-P920')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'LG-P920')) {
             return false;
         }
         
-        if ($this->utils->checkIfContains($userAgent, 'HTC Desire')) {
+        if ($this->_utils->checkIfContains($this->_useragent, 'HTC Desire')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'LG-P920';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

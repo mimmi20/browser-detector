@@ -35,35 +35,26 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Yahoo extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Yahoo!';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0 (YahooYSMcm')
-            || $this->utils->checkIfStartsWith($userAgent, 'Scooter')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!OASIS')
-            || $this->utils->checkIfStartsWith($userAgent, 'YahooYSMcm')
-            || $this->utils->checkIfStartsWith($userAgent, 'YRL_ODP_CRAWLER')
+        if ($this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0 (YahooYSMcm')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Scooter')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!OASIS')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'YahooYSMcm')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'YRL_ODP_CRAWLER')
         ) {
             return true;
         }
         
         return false;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Yahoo!';
     }
 }

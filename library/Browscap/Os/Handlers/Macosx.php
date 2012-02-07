@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class Macosx extends Macintosh
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'MacOSX';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Macintosh', 'Mac OS X'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Macintosh', 'Mac OS X'))) {
             return false;
         }
         
@@ -49,33 +53,22 @@ class Macosx extends Macintosh
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'MacOSX';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Mac OS X ([\d\.\_]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Mac OS X ([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return str_replace('_', '.', $matches[1]);
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
         }
         
-        return '10';
+        $this->_version = '10';
     }
     
     /**

@@ -35,49 +35,22 @@ use Browscap\Browser\Handler as BrowserHandler;
 class AppengineGoogle extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'AppEngine-Google';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'AppEngine-Google')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'AppEngine-Google')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser     = $this->detectBrowser($userAgent);
-        $class->version     = '';
-        $class->browserFull = $class->browser;
-        $class->bits        = 0;
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'AppEngine-Google';
     }
     
     /**

@@ -35,45 +35,26 @@ use Browscap\Device\Handler as DeviceHandler;
 class Nokia5800XpressMusic extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'Nokia 5800 XpressMusic';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Nokia5800XpressMusic')
-            && !$this->utils->checkIfContains($userAgent, 'Nokia5800 XpressMusic')
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Nokia5800XpressMusic')
+            && !$this->_utils->checkIfContains($this->_useragent, 'Nokia5800 XpressMusic')
         ) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'Nokia 5800 XpressMusic';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

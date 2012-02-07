@@ -34,25 +34,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class SPV extends BrowserHandler
 {
     /**
-     * Intercept all UAs starting containing SPV'
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfContains($userAgent, 'SPV');
-    }
+    protected $_browser = 'SPV';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'SPV';
+        return $this->_utils->checkIfContains($this->_useragent, 'SPV');
     }
 }

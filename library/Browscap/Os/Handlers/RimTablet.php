@@ -34,14 +34,18 @@ use Browscap\Os\Handler as OsHandler;
 class RimTablet extends RimOs
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected platform
      */
-    public function canHandle($userAgent)
+    protected $_name = 'RIM Tablet OS';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll($userAgent, array('RIM Tablet'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('RIM Tablet'))) {
             return false;
         }
         
@@ -52,7 +56,7 @@ class RimTablet extends RimOs
             'Ubuntu'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnLinux)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
             return false;
         }
         
@@ -60,33 +64,22 @@ class RimTablet extends RimOs
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'RIM Tablet OS';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/RIM Tablet OS ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/RIM Tablet OS ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

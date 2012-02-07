@@ -33,17 +33,20 @@ namespace Browscap\Browser\Handlers;
 class YahooMmcrawler extends Yahoo
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Yahoo-MMCrawler';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
         
         
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0 (Yahoo-MMCrawler/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0 (Yahoo-MMCrawler/')) {
             return false;
         }
         
@@ -51,33 +54,20 @@ class YahooMmcrawler extends Yahoo
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Yahoo-MMCrawler';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Yahoo-MMCrawler\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Yahoo-MMCrawler\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

@@ -35,15 +35,20 @@ use Browscap\Device\Handler as DeviceHandler;
 class HtcEvo3D extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'HTC EVO 3D';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'HTC/EVO_3D')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'HTC/EVO_3D')) {
             return false;
         }
         
@@ -51,33 +56,22 @@ class HtcEvo3D extends DeviceHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'HTC EVO 3D';
-    }
-    
-    /**
      * detects the device version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/HTC\/EVO_3D\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/HTC\/EVO_3D\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

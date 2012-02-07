@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class HtcWildfireA3333 extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'HTC Wildfire A3333';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'HTC_Wildfire_A3333')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'HTC_Wildfire_A3333')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'HTC Wildfire A3333';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

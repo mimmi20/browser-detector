@@ -38,10 +38,10 @@ class CatchAll extends OsHandler
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         return true;
     }
@@ -49,16 +49,16 @@ class CatchAll extends OsHandler
     /**
      * detects the browser name from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return StdClass
      */
-    public function detect($userAgent)
+    public function detect($this->_useragent)
     {
         $class = new \StdClass();
         
         $detector = new \Browscap\Browscap();
-        $detected = $detector->getBrowser($userAgent);
+        $detected = $detector->getBrowser($this->_useragent);
         
         $class->name    = $detected->Platform;
         $class->version = $detected->Version;
@@ -82,7 +82,7 @@ class CatchAll extends OsHandler
             
             if ('Win31' == $osName) {
                 $class->bits = 16;
-            } elseif ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'WOW64', 'Win64'))) {
+            } elseif ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('x64', 'WOW64', 'Win64'))) {
                 $class->bits = 64;
             } else {
                 $class->bits = 32;

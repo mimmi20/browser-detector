@@ -32,17 +32,21 @@ namespace Browscap\Browser\Handlers;
 class Gmx extends MicrosoftInternetExplorer
 {
     /**
-     * Intercept all UAs Containing AOL and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent) {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'GMX')) {
+    protected $_browser = 'GMX';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle() {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'GMX')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('MSIE'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE'))) {
             return false;
         }
         
@@ -67,7 +71,7 @@ class Gmx extends MicrosoftInternetExplorer
             'WebTV'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
             return false;
         }
         
@@ -75,55 +79,29 @@ class Gmx extends MicrosoftInternetExplorer
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser = $this->detectBrowser($userAgent);
-        $class->version = $this->detectVersion($userAgent);
-        
-        $parentBrowser = parent::detectBrowser($userAgent);
-        $parentVersion = parent::detectVersion($userAgent);
-        $parentFull    = $parentBrowser . ($parentBrowser != $parentVersion && '' != $parentVersion ? ' ' . $parentVersion : '');
-        
-        $class->browserFull = $class->browser . ($class->browser != $class->version && '' != $class->version ? ' ' . $class->version : '') . ' (' . $parentFull . ')';
-        $class->bits        = $this->detectBits($userAgent);
-        
-        return $class;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'GMX';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/GMX ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/GMX ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 4;
     }
 }

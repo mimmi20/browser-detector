@@ -33,47 +33,32 @@ namespace Browscap\Browser\Handlers;
 class FakeIe extends FakeBrowser
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Fake IE';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('MSIE', 'Trident'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MSIE', 'Trident'))) {
             return false;
         }
         
-        if ($this->utils->checkIfStartsWith($userAgent, 'Mozilla/5.0')
-            && $this->utils->checkIfContainsAnyOf($userAgent, array('MSIE 8.0', 'MSIE 7.0', 'MSIE 6.0', 'MSIE 5.', 'MSIE 4.', 'MSIE 3.', 'MSIE 2.', 'MSIE 1.'))
+        if ($this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0')
+            && $this->_utils->checkIfContainsAnyOf($this->_useragent, array('MSIE 8.0', 'MSIE 7.0', 'MSIE 6.0', 'MSIE 5.', 'MSIE 4.', 'MSIE 3.', 'MSIE 2.', 'MSIE 1.'))
         ) {
             return true;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('compatible ::  MSIE'))
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('compatible ::  MSIE'))
         ) {
             return true;
         }
         
         return false;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect($userAgent)
-    {
-        $class = new \StdClass();
-        $class->browser     = 'Fake IE';
-        $class->version     = '';
-        $class->browserFull = $class->browser;
-        $class->bits        = 0;
-        
-        return $class;
     }
 }

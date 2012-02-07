@@ -33,15 +33,18 @@ namespace Browscap\Browser\Handlers;
 class YahooVerifier extends Yahoo
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Yahoo! Verifier';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('Yahoo! Verifier'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Yahoo! Verifier'))) {
             return false;
         }
         
@@ -49,33 +52,20 @@ class YahooVerifier extends Yahoo
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Yahoo! Verifier';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Yahoo\! Verifier\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Yahoo\! Verifier\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

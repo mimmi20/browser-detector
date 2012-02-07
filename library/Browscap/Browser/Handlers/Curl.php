@@ -35,15 +35,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Curl extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'cURL';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('libcurl', 'PycURL', 'curl'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('libcurl', 'PycURL', 'curl'))) {
             return false;
         }
         
@@ -51,45 +54,34 @@ class Curl extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'cURL';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/curl\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/curl\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/libcurl-agent\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/libcurl-agent\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/PycURL\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/PycURL\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

@@ -34,14 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Silk extends BrowserHandler
 {
     /**
-     * Intercept all UAs Starting with Mozilla and Containing Safari and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'Amazon Silk';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'Silk')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Silk')) {
             return false;
         }
         
@@ -49,32 +53,19 @@ class Silk extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Amazon Silk';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Silk\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Silk\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

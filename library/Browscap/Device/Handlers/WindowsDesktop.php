@@ -33,13 +33,18 @@ namespace Browscap\Device\Handlers;
 class WindowsDesktop extends GeneralDesktop
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'Windows Desktop';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
         $mobiles = array(
             'Windows CE',
@@ -69,7 +74,7 @@ class WindowsDesktop extends GeneralDesktop
             'Fennec'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $mobiles)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
             return false;
         }
         
@@ -79,25 +84,13 @@ class WindowsDesktop extends GeneralDesktop
             'Windows 3.1', 'win9x/NT 4.90', 'Windows'
         );
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, $windows)
-            && !$this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $windows)
+            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
         ) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'Windows Desktop';
     }
     
     /**
@@ -107,6 +100,6 @@ class WindowsDesktop extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 2;
+        return 100;
     }
 }

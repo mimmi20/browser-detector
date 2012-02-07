@@ -34,19 +34,23 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Seamonkey extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Seamonkey and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'SeaMonkey';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Gecko', 'SeaMonkey'))
-            && !$this->utils->checkIfContains($userAgent, 'Seamonkey')
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Gecko', 'SeaMonkey'))
+            && !$this->_utils->checkIfContains($this->_useragent, 'Seamonkey')
         ) {
             return false;
         }
@@ -71,7 +75,7 @@ class Seamonkey extends BrowserHandler
             'Fennec'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
             return false;
         }
         
@@ -79,39 +83,27 @@ class Seamonkey extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'SeaMonkey';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/SeaMonkey\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/SeaMonkey\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        $doMatch = preg_match('/Seamonkey\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Seamonkey\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
     
     /**

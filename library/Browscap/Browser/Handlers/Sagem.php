@@ -35,25 +35,17 @@ use Browscap\Browser\Handler as BrowserHandler;
 class Sagem extends BrowserHandler
 {
     /**
-     * Intercept all UAs starting with 'Sagem' or 'SAGEM'
-     *
-     * @param unknown_type $userAgent
-     * @return unknown
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
-    {
-        return $this->utils->checkIfStartsWith($userAgent, 'Sagem') || $this->utils->checkIfStartsWith($userAgent, 'SAGEM');
-    }
+    protected $_browser = 'Sagem';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Sagem';
+        return $this->_utils->checkIfStartsWith($this->_useragent, 'Sagem') || $this->_utils->checkIfStartsWith($this->_useragent, 'SAGEM');
     }
 }

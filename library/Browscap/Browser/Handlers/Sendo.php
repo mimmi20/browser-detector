@@ -34,20 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
  */
 class Sendo extends BrowserHandler
 {
-    public function canHandle($userAgent)
-    {
-        return(strpos($userAgent, 'Sendo') === 0);
-    }
+    /**
+     * @var string the detected browser
+     */
+    protected $_browser = 'Sendo';
     
     /**
-     * detects the browser name from the given user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return string
+     * @return bool
      */
-    protected function detectBrowser($userAgent)
+    public function canHandle()
     {
-        return 'Sendo';
+        return(strpos($this->_useragent, 'Sendo') === 0);
     }
 }

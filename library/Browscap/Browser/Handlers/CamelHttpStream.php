@@ -34,13 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class CamelHttpStream extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'CamelHttpStream';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'CamelHttpStream/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'CamelHttpStream/')) {
             return false;
         }
         
@@ -48,32 +53,19 @@ class CamelHttpStream extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'CamelHttpStream';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/CamelHttpStream\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/CamelHttpStream\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }

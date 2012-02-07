@@ -33,6 +33,11 @@ use Browscap\Os\Handler as OsHandler;
  */
 class Windows extends OsHandler
 {
+    /**
+     * @var string the detected platform
+     */
+    protected $_name = 'Windows';
+    
     private $_windows = array(
         'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
         'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows 98', 'Windows 95',
@@ -40,15 +45,14 @@ class Windows extends OsHandler
     );
     
     /**
-     * Intercept all UAs Starting with Mozilla and Containing MSIE and are not mobile browsers
+     * Returns true if this handler can handle the given $useragent
      *
-     * @param string $userAgent
-     * @return boolean
+     * @return bool
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, $this->_windows)
-            && !$this->utils->checkIfContainsAnyOf($userAgent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $this->_windows)
+            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
         ) {
             return false;
         }
@@ -64,7 +68,7 @@ class Windows extends OsHandler
             'IEMobile'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
             return false;
         }
         
@@ -72,27 +76,15 @@ class Windows extends OsHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Windows';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             switch ($matches[1]) {
@@ -108,7 +100,7 @@ class Windows extends OsHandler
                 case '5.3':
                 case '5.2':
                     $version = 'Server 2003';
-                    if (64 == $this->detectBits($userAgent)) {
+                    if ('64' == $this->_detectBits()) {
                         $version = 'XP';
                     }
                     break;
@@ -125,10 +117,11 @@ class Windows extends OsHandler
                     break;
             }
             
-            return $version;
+            $this->_version = $version;
+            return;
         }
         
-        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             switch ($matches[1]) {
@@ -148,7 +141,7 @@ class Windows extends OsHandler
                 case '5.3':
                 case '5.2':
                     $version = 'Server 2003';
-                    if (64 == $this->detectBits($userAgent)) {
+                    if ('64' == $this->_detectBits()) {
                         $version = 'XP';
                     }
                     break;
@@ -176,47 +169,30 @@ class Windows extends OsHandler
                     break;
             }
             
-            return $version;
+            $this->_version = $version;
+            return;
         }
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('win9x/NT 4.90', 'Win 9x 4.90', 'Windows ME'))) {
-            return 'ME';
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('win9x/NT 4.90', 'Win 9x 4.90', 'Windows ME'))) {
+            $this->_version = 'ME';
+            return;
         }
         
         $version = '';
         
         foreach ($this->_windows as $winVersion) {
-            if ($this->utils->checkIfContains($userAgent, $winVersion)) {
+            if ($this->_utils->checkIfContains($this->_useragent, $winVersion)) {
                 $version = substr($winVersion, 3);
                 break;
             }
         }
         
         if ('dows NT' != $version) {
-            return $version;
+            $this->_version = $version;
+            return;
         }
         
-        return '';
-    }
-    
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return integer
-     */
-    protected function detectBits($userAgent)
-    {
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('x64', 'Win64', 'WOW64'))) {
-            return 64;
-        }
-        
-        if ($this->utils->checkIfContainsAnyOf($userAgent, array('Win31', 'Win3.1', 'Windows 3.1'))) {
-            return 16;
-        }
-        
-        return 32;
+        $this->_version = '';
     }
     
     /**

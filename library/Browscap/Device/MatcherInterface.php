@@ -32,6 +32,21 @@ namespace Browscap\Device;
  */
 interface MatcherInterface
 {
+    /**
+     * sets the logger used when errors occur
+     *
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    public function setLogger(\Zend\Log\Logger $logger = null);
+    
+    /**
+     * sets the user agent to be handled
+     *
+     * @return void
+     */
+    public function setUserAgent($userAgent);
     
     /**
      * Returns true if this handler can handle the given $userAgent
@@ -40,7 +55,7 @@ interface MatcherInterface
      *
      * @return bool
      */
-    public function canHandle($userAgent);
+    public function canHandle();
     
     /**
      * detects the browser name from the given user agent
@@ -49,7 +64,13 @@ interface MatcherInterface
      *
      * @return StdClass
      */
-    public function detect($userAgent);
+    public function detect();
+    
+    public function getDevice();
+    
+    public function getVersion();
+    
+    public function getFullDevice();
     
     /**
      * gets the weight of the handler, which is used for sorting

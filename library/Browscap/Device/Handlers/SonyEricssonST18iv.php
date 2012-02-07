@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class SonyEricssonST18iv extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'SonyEricsson ST18iv';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'SonyEricssonST18iv')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonST18iv')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'SonyEricsson ST18iv';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

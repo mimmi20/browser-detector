@@ -33,44 +33,35 @@ namespace Browscap\Browser\Handlers;
 class Yahoofeedseeker extends Yahoo
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'unknown';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if ($this->utils->checkIfStartsWith($userAgent, 'Y!J SearchMonkey')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BRE')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BRG/GSC')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BRI')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BRO/YFSJ')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BRP/YFSBJ')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BRQ/DLCK')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-BSC')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-NSC')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-PSC')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-SRD')
-            || $this->utils->checkIfStartsWith($userAgent, 'Y!J-VSC/ViSe')
-            || $this->utils->checkIfStartsWith($userAgent, 'YahooFeedSeeker')
+        if ($this->_utils->checkIfStartsWith($this->_useragent, 'Y!J SearchMonkey')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRE')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRG/GSC')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRI')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRO/YFSJ')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRP/YFSBJ')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRQ/DLCK')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BSC')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-NSC')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-PSC')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-SRD')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-VSC/ViSe')
+            || $this->_utils->checkIfStartsWith($this->_useragent, 'YahooFeedSeeker')
         ) {
             return true;
         }
         
         return false;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'YahooFeedSeeker';
     }
     
     /**

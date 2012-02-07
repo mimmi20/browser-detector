@@ -34,14 +34,18 @@ use Browscap\Browser\Handler as BrowserHandler;
 class RssingBot extends BrowserHandler
 {
     /**
-     * Intercept all UAs Containing Flock and are not mobile browsers
-     *
-     * @param string $userAgent
-     * @return boolean
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'RSSingBot';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'RSSingBot')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'RSSingBot')) {
             return false;
         }
         
@@ -56,22 +60,10 @@ class RssingBot extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'RSSingBot';
     }
 }

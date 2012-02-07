@@ -35,43 +35,24 @@ use Browscap\Device\Handler as DeviceHandler;
 class HtcFlyerP510e extends DeviceHandler
 {
     /**
+     * @var string the detected device
+     */
+    protected $_device = 'HTC Flyer P510e';
+    
+    /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $userAgent
+     * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($userAgent)
+    public function canHandle()
     {
-        if (!$this->utils->checkIfContains($userAgent, 'HTC_Flyer_P510e')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'HTC_Flyer_P510e')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectDevice($userAgent)
-    {
-        return 'HTC Flyer P510e';
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectVersion($userAgent)
-    {
-        return '';
     }
     
     /**

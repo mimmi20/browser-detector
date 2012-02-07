@@ -34,17 +34,22 @@ use Browscap\Browser\Handler as BrowserHandler;
 class MaemoBrowser extends BrowserHandler
 {
     /**
-     *
-     * @param string $userAgent
-     * @return string
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'unknown';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAll($userAgent, array('Gecko', 'Maemo'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Gecko', 'Maemo'))) {
             return false;
         }
         
@@ -62,23 +67,11 @@ class MaemoBrowser extends BrowserHandler
             'Fennec'
         );
         
-        if ($this->utils->checkIfContainsAnyOf($userAgent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'Maemo Browser';
     }
     
     /**

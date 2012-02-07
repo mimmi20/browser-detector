@@ -35,19 +35,22 @@ use Browscap\Browser\Handler as BrowserHandler;
 class StrawberryjamUrlExpander extends BrowserHandler
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @param string $userAgent
-     * @return boolean always true
+     * @var string the detected browser
      */
-    public function canHandle($userAgent)
+    protected $_browser = 'StrawberryjamUrlExpander';
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
     {
-        if (!$this->utils->checkIfStartsWith($userAgent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->utils->checkIfContainsAnyOf($userAgent, array('StrawberryjamUrlExpander/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('StrawberryjamUrlExpander/'))) {
             return false;
         }
         
@@ -55,32 +58,19 @@ class StrawberryjamUrlExpander extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    protected function detectBrowser($userAgent)
-    {
-        return 'StrawberryjamUrlExpander';
-    }
-    
-    /**
      * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return string
      */
-    protected function detectVersion($userAgent)
+    protected function _detectVersion()
     {
-        $doMatch = preg_match('/StrawberryjamUrlExpander\/([\d\.]+)/', $userAgent, $matches);
+        $doMatch = preg_match('/StrawberryjamUrlExpander\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            return $matches[1];
+            $this->_version = $matches[1];
+            return;
         }
         
-        return '';
+        $this->_version = '';
     }
 }
