@@ -277,7 +277,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsHtmlCanvas()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -287,7 +287,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewport()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -297,7 +297,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewportWidth()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -327,7 +327,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewportMaximumScale()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -337,7 +337,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewportInitialScale()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -347,7 +347,7 @@ abstract class Handler implements MatcherInterface
      */
     public function isViewportUserscalable()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -357,7 +357,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsImageInlining()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -367,7 +367,7 @@ abstract class Handler implements MatcherInterface
      */
     public function isMobileOptimized()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -377,6 +377,6 @@ abstract class Handler implements MatcherInterface
      */
     public function isHandheldFriendly()
     {
-        return true;
+        return false;
     }
 }
