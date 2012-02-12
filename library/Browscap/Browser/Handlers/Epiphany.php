@@ -16,35 +16,27 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Safari.php 176 2012-02-07 22:38:31Z  $
  */
 
-/**
- * Handler Base class
- */
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * Browser Exceptions
- */
-use Browscap\Browser\Exceptions;
-
-/**
- * MSIEAgentHanlder
+ * SafariHanlder
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Safari.php 176 2012-02-07 22:38:31Z  $
  */
-class MicrosoftOutlook extends BrowserHandler
+class Epiphany extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Microsoft Outlook';
+    protected $_browser = 'Epiphany';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -53,39 +45,40 @@ class MicrosoftOutlook extends BrowserHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Outlook')
-            && !$this->_utils->checkIfContains($this->_useragent, 'Microsoft Office')
-            && !$this->_utils->checkIfContains($this->_useragent, 'MSOffice')
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Safari')
         ) {
             return false;
         }
         
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Maxthon',
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Epiphany', 'Safari', 'AppleWebKit', 'CFNetwork'))) {
+            return false;
+        }
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chrome',
+            'Chromium',
+            'Flock',
             'Galeon',
             'Lunascape',
-            'Opera',
+            'Iron',
+            'Maemo',
             'PaleMoon',
-            'Flock',
-            'AOL',
-            'TOB',
-            'MyIE',
-            'Excel',
-            'Word',
-            'PowerPoint',
-            //others
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            // Outlook Express
-            'Outlook-Express'
+            'Rockmelt',
+            'rekonq',
+            'OmniWeb',
+            'Silk',
+            'MQQBrowser',
+            'konqueror',
+            //mobile Version
+            'Mobile',
+            'Android',
+            // Fakes
+            'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
@@ -99,28 +92,35 @@ class MicrosoftOutlook extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Microsoft Office Outlook ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Epiphany\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Outlook ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Safari\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Office\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Safari([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -137,7 +137,7 @@ class MicrosoftOutlook extends BrowserHandler
      */
     public function getWeight()
     {
-        return 4200;
+        return 6;
     }
     
     /**

@@ -587,11 +587,28 @@ class UserAgent
      */
     public function isRssSupported()
     {
-        if (null === $this->_device) {
+        if (null === $this->_browser 
+            && null === $this->_engine 
+            && null === $this->_device
+        ) {
             return null;
         }
         
-        return $this->_device->isRssSupported();
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->isRssSupported();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->isRssSupported();
+        }
+        
+        if ($support && null !== $this->_device) {
+            $support = $support && $this->_device->isRssSupported();
+        }
+        
+        return $support;
     }
     
     /**
@@ -601,11 +618,28 @@ class UserAgent
      */
     public function isPdfSupported()
     {
-        if (null === $this->_device) {
+        if (null === $this->_browser 
+            && null === $this->_engine 
+            && null === $this->_device
+        ) {
             return null;
         }
         
-        return $this->_device->isPdfSupported();
+        $support = true;
+        
+        if (null !== $this->_engine) {
+            $support = $support && $this->_engine->isPdfSupported();
+        }
+        
+        if ($support && null !== $this->_browser) {
+            $support = $support && $this->_browser->isPdfSupported();
+        }
+        
+        if ($support && null !== $this->_device) {
+            $support = $support && $this->_device->isPdfSupported();
+        }
+        
+        return $support;
     }
     
     final public function getBrowserName()

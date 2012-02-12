@@ -86,4 +86,84 @@ class Presto extends EngineHandler
     {
         return 1093;
     }
+    
+    /**
+     * returns TRUE if the browser suppoorts css gradients
+     *
+     * @return boolean
+     */
+    public function supportsCssGradients()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssRoundedCorners()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssBorderImages()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssSpriting()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsImageInlining()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
+    }
 }

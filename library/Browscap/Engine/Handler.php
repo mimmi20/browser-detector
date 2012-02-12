@@ -304,4 +304,24 @@ abstract class Handler implements MatcherInterface
     {
         return true;
     }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return false;
+    }
 }

@@ -97,11 +97,7 @@ class Gecko extends EngineHandler
      */
     public function supportsCssGradients()
     {
-        if ($this->getVersion() <= 3) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -111,11 +107,7 @@ class Gecko extends EngineHandler
      */
     public function supportsCssRoundedCorners()
     {
-        if ($this->getVersion() <= 3) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -125,11 +117,7 @@ class Gecko extends EngineHandler
      */
     public function supportsCssBorderImages()
     {
-        if ($this->getVersion() <= 1) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -139,11 +127,7 @@ class Gecko extends EngineHandler
      */
     public function supportsCssSpriting()
     {
-        if ($this->getVersion() <= 1) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -153,11 +137,7 @@ class Gecko extends EngineHandler
      */
     public function supportsCssWidthAsPercentage()
     {
-        if ($this->getVersion() <= 1) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -167,10 +147,86 @@ class Gecko extends EngineHandler
      */
     public function supportsImageInlining()
     {
-        if ($this->getVersion() <= 1) {
-            return false;
-        }
-        
-        return true;
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewport()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportWidth()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMinimumScale()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMaximumScale()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportInitialScale()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isViewportUserscalable()
+    {
+        return false;
     }
 }

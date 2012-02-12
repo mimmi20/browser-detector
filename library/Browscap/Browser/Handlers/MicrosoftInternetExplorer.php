@@ -160,11 +160,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsCssGradients()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -174,11 +170,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsCssRoundedCorners()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -188,11 +180,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsCssBorderImages()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -202,11 +190,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsCssSpriting()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -216,11 +200,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsCssWidthAsPercentage()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -230,11 +210,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsHtmlCanvas()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -304,11 +280,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsImageInlining()
     {
-        if ($this->getVersion() <= 10) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
