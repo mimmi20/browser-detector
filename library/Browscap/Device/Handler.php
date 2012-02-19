@@ -170,6 +170,16 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isBanned()
+    {
+        return false;
+    }
+    
+    /**
      * returns TRUE if the device supports RSS Feeds
      *
      * @return boolean

@@ -302,4 +302,128 @@ class MicrosoftInternetExplorer extends BrowserHandler
     {
         return false;
     }
+    
+    /**
+     * returns TRUE if the browser supports Frames
+     *
+     * @return boolean
+     */
+    public function supportsFrames()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports IFrames
+     *
+     * @return boolean
+     */
+    public function supportsIframes()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Tables
+     *
+     * @return boolean
+     */
+    public function supportsTables()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Cookies
+     *
+     * @return boolean
+     */
+    public function supportsCookies()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports BackgroundSounds
+     *
+     * @return boolean
+     */
+    public function supportsBackgroundSounds()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports JavaScript
+     *
+     * @return boolean
+     */
+    public function supportsJavaScript()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function supportsVbScript()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Java Applets
+     *
+     * @return boolean
+     */
+    public function supportsJavaApplets()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports ActiveX Controls
+     *
+     * @return boolean
+     */
+    public function supportsActivexControls()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isBanned()
+    {
+        if ($this->_version <= 6) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isSyndicationReader()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function isCrawler()
+    {
+        return false;
+    }
 }
