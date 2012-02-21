@@ -51,6 +51,20 @@ class UserAgent
     private $_agent = '';
     
     /**
+     * the user agent sent from the browser
+     *
+     * @var string
+     */
+    private $_cleanedAgent = '';
+    
+    /**
+     * the ID of the user agent sent from the browser
+     *
+     * @var string
+     */
+    private $_idAgent = null;
+    
+    /**
      * the detected browser
      *
      * @var StdClass
@@ -207,6 +221,8 @@ class UserAgent
         $userAgent = str_replace(array(' :: '), ';', $userAgent);
         $userAgent = trim($userAgent);
         
+        $this->_cleanedAgent = $userAgent;
+        
         $cacheId = substr(
             'agent_' . preg_replace(
                 '/[^a-zA-Z0-9]/', '_', $userAgent
@@ -232,6 +248,8 @@ class UserAgent
             $agent = $this->_serviceAgents->searchByAgent($userAgent);
             $this->_serviceAgents->count($agent->idAgents);
             
+            $this->_idAgent = $agent->idAgents;
+            
             unset($agent);
         }
         
@@ -249,6 +267,8 @@ class UserAgent
      */
     private function _detect($userAgent = null, $forceDetected = false, $useDb = false)
     {
+        $agent = null;
+        
         if ($useDb) {
             $agent = $this->_serviceAgents->searchByAgent($userAgent);
             
@@ -265,10 +285,10 @@ class UserAgent
             }
         }
         
-        $this->_engine  = $this->_detectEngine($userAgent, $forceDetected, $useDb);
-        $this->_browser = $this->_detectBrowser($userAgent, $forceDetected, $useDb);
-        $this->_os      = $this->_detectOs($userAgent, $forceDetected, $useDb);
-        $this->_device  = $this->_detectDevice($userAgent, $forceDetected, $useDb);
+        $this->_engine  = $this->_detectEngine($agent, $userAgent, $forceDetected, $useDb);
+        $this->_browser = $this->_detectBrowser($agent, $userAgent, $forceDetected, $useDb);
+        $this->_os      = $this->_detectOs($agent, $userAgent, $forceDetected, $useDb);
+        $this->_device  = $this->_detectDevice($agent, $userAgent, $forceDetected, $useDb);
         
         if ($useDb) {
             $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
@@ -286,15 +306,15 @@ class UserAgent
      *
      * @return 
      */
-    private function _detectEngine($userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectEngine($agent, $userAgent = null, $forceDetected = false, $useDb = false)
     {
-        if (null === $this->_serviceEngines && $useDb) {
+        if (null === $this->_serviceEngines && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceEngines = new Service\Engines();
         }
         
         $engine = null;
         
-        if ($useDb) {
+        if ($useDb && $agent instanceof \Zend\Db\Table\Row) {
             $idEngines = null;
             
             if ($idEngines = $agent->idEngines) {
@@ -321,8 +341,8 @@ class UserAgent
             
             $engine = $this->_engineChain->detect($userAgent);
             
-            if ($forceDetected && $useDb) {
-                $searchedEngine = $this->_serviceEngines->searchByName($engine->engine, $engine->version);
+            if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
+                $searchedEngine = $this->_serviceEngines->searchByName($engine->getEngine(), $engine->getVersion());
                 
                 if ($searchedEngine) {
                     $agent->idEngines = $searchedEngine->idEngines;
@@ -332,10 +352,10 @@ class UserAgent
             }
         } else {
             $engine = (object) $engine->toArray();
-            $engine->engineFull = $engine->engine . ($engine->engine != $engine->version && '' != $engine->version ? ' ' . $engine->version : '');
+            $engine->engineFull = $engine->getFullEngine();
         }
         
-        if ($forceDetected && $useDb) {
+        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceEngines->count($agent->idEngines);
         }
         
@@ -349,9 +369,9 @@ class UserAgent
      *
      * @return 
      */
-    private function _detectBrowser($userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectBrowser($agent, $userAgent = null, $forceDetected = false, $useDb = false)
     {
-        if (null === $this->_serviceBrowsers && $useDb) {
+        if (null === $this->_serviceBrowsers && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceBrowsers = new Service\Browsers();
         }
         
@@ -384,15 +404,15 @@ class UserAgent
             
             $browser = $this->_browserChain->detect($userAgent);
             
-            if ($forceDetected && $useDb) {
-                $agent->idBrowsers = $this->_serviceBrowsers->searchByBrowser($browser->browser, $browser->version, $browser->bits)->idBrowsers;
+            if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
+                $agent->idBrowsers = $this->_serviceBrowsers->searchByBrowser($browser->getBrowser(), $browser->getVersion(), $browser->getBits())->idBrowsers;
             }
         } else {
             $browser = (object) $browser->toArray();
-            $browser->browserFull = $browser->browser . ($browser->browser != $browser->version && '' != $browser->version ? ' ' . $browser->version : '');
+            $browser->browserFull = $browser->getFullBrowser();
         }
         
-        if ($forceDetected && $useDb) {
+        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceBrowsers->count($agent->idBrowsers);
         }
         
@@ -406,9 +426,9 @@ class UserAgent
      *
      * @return 
      */
-    private function _detectOs($userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectOs($agent, $userAgent = null, $forceDetected = false, $useDb = false)
     {   
-        if (null === $this->_serviceOs && $useDb) {
+        if (null === $this->_serviceOs && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceOs = new Service\Os();
         }
         
@@ -441,8 +461,8 @@ class UserAgent
             
             $os = $this->_osChain->detect($userAgent);
             
-            if ($forceDetected && $useDb) {
-                $osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
+            if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
+                $osResult = $this->_serviceOs->searchByName($os->getName(), $os->getVersion(), $os->getBits());
                 
                 if ($osResult) {
                     $agent->idOs = $osResult->idOs;
@@ -452,10 +472,10 @@ class UserAgent
             }
         } else {
             $os = (object) $os->toArray();
-            $os->osFull  = $os->os . ($os->os != $os->version && '' != $os->version ? ' ' . $os->version : '');
+            $os->osFull  = $os->getFullName();
         }
         
-        if ($forceDetected && $useDb) {
+        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceOs->count($agent->idOs);
         }
         
@@ -469,10 +489,10 @@ class UserAgent
      *
      * @return 
      */
-    private function _detectDevice($userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectDevice($agent, $userAgent = null, $forceDetected = false, $useDb = false)
     {
         /*
-        if (null === $this->_serviceOs && $useDb) {
+        if (null === $this->_serviceOs && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceOs = new Service\Os();
         }
         /**/
@@ -508,7 +528,7 @@ class UserAgent
                 }
             }
             
-            $device = $this->_deviceChain->detect($userAgent);//var_dump($os);exit;
+            $device = $this->_deviceChain->detect($userAgent);
             
             if ($useDb) {
                 //$osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
@@ -521,7 +541,7 @@ class UserAgent
             $device = null; //(object) $device->toArray();
         }
         /*
-        if ($forceDetected && $useDb) {
+        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
             $this->_serviceOs->count($agent->idOs);
         }
         /**/
@@ -536,6 +556,26 @@ class UserAgent
     public function getAgent()
     {
         return $this->_agent;
+    }
+    
+    /**
+     * returns the stored user agent
+     *
+     * @return string
+     */
+    public function getcleanedAgent()
+    {
+        return $this->_cleanedAgent;
+    }
+    
+    /**
+     * returns the stored user agent
+     *
+     * @return integer|null
+     */
+    public function getAgentId()
+    {
+        return $this->_idAgent;
     }
     
     /**

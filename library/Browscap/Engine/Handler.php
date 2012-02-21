@@ -156,7 +156,137 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the engine suppoorts css gradients
+     * returns TRUE if the browser supports Frames
+     *
+     * @return boolean
+     */
+    public function supportsFrames()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports IFrames
+     *
+     * @return boolean
+     */
+    public function supportsIframes()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Tables
+     *
+     * @return boolean
+     */
+    public function supportsTables()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Cookies
+     *
+     * @return boolean
+     */
+    public function supportsCookies()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports BackgroundSounds
+     *
+     * @return boolean
+     */
+    public function supportsBackgroundSounds()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports JavaScript
+     *
+     * @return boolean
+     */
+    public function supportsJavaScript()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function supportsVbScript()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Java Applets
+     *
+     * @return boolean
+     */
+    public function supportsJavaApplets()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports ActiveX Controls
+     *
+     * @return boolean
+     */
+    public function supportsActivexControls()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isBanned()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isSyndicationReader()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function isCrawler()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isTranscoder()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css gradients
      *
      * @return boolean
      */
@@ -166,7 +296,7 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the engine suppoorts css rounded corners
+     * returns TRUE if the browser suppoorts css rounded corners
      *
      * @return boolean
      */
@@ -176,7 +306,7 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the engine suppoorts css rounded corners
+     * returns TRUE if the browser suppoorts css rounded corners
      *
      * @return boolean
      */
@@ -186,7 +316,7 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the engine suppoorts css rounded corners
+     * returns TRUE if the browser suppoorts css rounded corners
      *
      * @return boolean
      */
@@ -196,7 +326,7 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the engine suppoorts css rounded corners
+     * returns TRUE if the browser suppoorts css rounded corners
      *
      * @return boolean
      */
@@ -212,7 +342,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsHtmlCanvas()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -222,7 +352,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewport()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -232,7 +362,17 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewportWidth()
     {
-        return true;
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function getHtmlPreferedDtd()
+    {
+        return '';
     }
     
     /**
@@ -252,7 +392,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewportMaximumScale()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -262,7 +402,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsViewportInitialScale()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -272,7 +412,7 @@ abstract class Handler implements MatcherInterface
      */
     public function isViewportUserscalable()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -282,7 +422,7 @@ abstract class Handler implements MatcherInterface
      */
     public function supportsImageInlining()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -292,7 +432,7 @@ abstract class Handler implements MatcherInterface
      */
     public function isMobileOptimized()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -302,7 +442,7 @@ abstract class Handler implements MatcherInterface
      */
     public function isHandheldFriendly()
     {
-        return true;
+        return false;
     }
     
     /**
