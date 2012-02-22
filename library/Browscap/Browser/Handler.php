@@ -491,7 +491,7 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the device supports RSS Feeds
+     * returns TRUE if the browser supports RSS Feeds
      *
      * @return boolean
      */
@@ -501,7 +501,7 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the device supports PDF documents
+     * returns TRUE if the browser supports PDF documents
      *
      * @return boolean
      */

@@ -41,7 +41,7 @@ class CatchAll extends BrowserHandler
      * @param string $this->_useragent
      * @return boolean always true
      */
-    public function canHandle($this->_useragent)
+    public function canHandle()
     {
         return true;
     }
@@ -53,15 +53,17 @@ class CatchAll extends BrowserHandler
      *
      * @return StdClass
      */
-    public function detect($this->_useragent)
+    public function detect()
     {
         $class = new \StdClass();
         
         $detector = new \Browscap\Browscap();
+        $detector->setLogger($this->_logger);
+        
         $detected = $detector->getBrowser($this->_useragent);
         
         $class->engine     = $detected->renderEngine;
-        $class->version    = $this->detectVersion($this->_useragent, $class->engine);
+        $class->version    = $this->detectVersion($class->engine);
         $class->engineFull = $class->engine . ($class->engine != $class->version && '' != $class->version ? ' ' . $class->version : '');
         
         return $class;
@@ -74,7 +76,7 @@ class CatchAll extends BrowserHandler
      *
      * @return string
      */
-    protected function detectVersion($this->_useragent, $engine = '')
+    protected function detectVersion($engine = '')
     {
         $version = '';
         

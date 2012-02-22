@@ -376,7 +376,7 @@ class OperaMini extends BrowserHandler
     }
     
     /**
-     * returns TRUE if the device supports RSS Feeds
+     * returns TRUE if the browser supports RSS Feeds
      *
      * @return boolean
      */
@@ -386,7 +386,7 @@ class OperaMini extends BrowserHandler
     }
     
     /**
-     * returns TRUE if the device supports PDF documents
+     * returns TRUE if the browser supports PDF documents
      *
      * @return boolean
      */

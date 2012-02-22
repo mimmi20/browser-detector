@@ -16,10 +16,8 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Ubuntu.php 176 2012-02-07 22:38:31Z  $
  */
-
-use Browscap\Os\Handler as OsHandler;
 
 /**
  * MSIEAgentHanlder
@@ -29,14 +27,14 @@ use Browscap\Os\Handler as OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: Ubuntu.php 176 2012-02-07 22:38:31Z  $
  */
-class Linux extends OsHandler
+class Mint extends Linux
 {
     /**
      * @var string the detected platform
      */
-    protected $_name = 'Linux';
+    protected $_name = 'Mint';
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -45,21 +43,7 @@ class Linux extends OsHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Linux', 'linux', 'X11'))) {
-            return false;
-        }
-        
-        $isNotReallyAnLinux = array(
-            // special Linux versions
-            'Android',
-            'Debian',
-            'Ubuntu',
-            'CrOS',
-            'SunOS',
-            'Mint'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Mint', 'Linux'))) {
             return false;
         }
         
@@ -75,14 +59,7 @@ class Linux extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Linux\/([\d\.\-a-z]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Linux ([\d\.\-a-z]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mint\/([\d\.\-]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -99,6 +76,6 @@ class Linux extends OsHandler
      */
     public function getWeight()
     {
-        return 606;
+        return 7;
     }
 }

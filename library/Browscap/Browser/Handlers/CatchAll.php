@@ -50,9 +50,11 @@ class CatchAll extends BrowserHandler
      *
      * @return StdClass
      */
-    public function detect($this->_useragent)
+    public function detect()
     {
         $detector = new \Browscap\Browscap();
+        $detector->setLogger($this->_logger);
+        
         $detected = $detector->getBrowser($this->_useragent);
         
         $class = new \StdClass();

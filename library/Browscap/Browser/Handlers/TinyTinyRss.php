@@ -314,7 +314,7 @@ class TinyTinyRss extends BrowserHandler
      */
     public function supportsActivexControls()
     {
-        return true;
+        return false;
     }
     
     /**

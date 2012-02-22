@@ -53,10 +53,7 @@ class MicrosoftOutlook extends BrowserHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Outlook')
-            && !$this->_utils->checkIfContains($this->_useragent, 'Microsoft Office')
-            && !$this->_utils->checkIfContains($this->_useragent, 'MSOffice')
-        ) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Outlook', 'Microsoft Office', 'MSOffice'))) {
             return false;
         }
         

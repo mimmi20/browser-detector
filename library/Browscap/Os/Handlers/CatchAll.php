@@ -53,11 +53,13 @@ class CatchAll extends OsHandler
      *
      * @return StdClass
      */
-    public function detect($this->_useragent)
+    public function detect()
     {
         $class = new \StdClass();
         
         $detector = new \Browscap\Browscap();
+        $detector->setLogger($this->_logger);
+        
         $detected = $detector->getBrowser($this->_useragent);
         
         $class->name    = $detected->Platform;

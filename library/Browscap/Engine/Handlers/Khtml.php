@@ -271,6 +271,6 @@ class Khtml extends EngineHandler
      */
     public function isPdfSupported()
     {
-        return false;
+        return true;
     }
 }
