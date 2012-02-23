@@ -72,6 +72,7 @@ class Safari extends BrowserHandler
             'MQQBrowser',
             'konqueror',
             'Epiphany',
+            'Shiira',
             //mobile Version
             'Mobile',
             'Android',
@@ -181,7 +182,7 @@ class Safari extends BrowserHandler
      */
     public function supportsCssWidthAsPercentage()
     {
-        return false;
+        return true;
     }
     
     /**
@@ -282,5 +283,25 @@ class Safari extends BrowserHandler
     public function isHandheldFriendly()
     {
         return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
     }
 }

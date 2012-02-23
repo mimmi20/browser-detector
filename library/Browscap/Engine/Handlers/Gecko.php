@@ -91,43 +91,53 @@ class Gecko extends EngineHandler
     }
     
     /**
-     * returns TRUE if the browser suppoorts css gradients
+     * returns TRUE if the engine suppoorts css gradients
      *
      * @return boolean
      */
     public function supportsCssGradients()
     {
-        return false;
+        return true;
     }
     
     /**
-     * returns TRUE if the browser suppoorts css rounded corners
+     * returns TRUE if the engine suppoorts css rounded corners
      *
      * @return boolean
      */
     public function supportsCssRoundedCorners()
     {
-        return false;
+        return true;
     }
     
     /**
-     * returns TRUE if the browser suppoorts css rounded corners
+     * returns TRUE if the engine suppoorts css rounded corners
      *
      * @return boolean
      */
     public function supportsCssBorderImages()
     {
-        return false;
+        return true;
     }
     
     /**
-     * returns TRUE if the browser suppoorts css rounded corners
+     * returns TRUE if the engine suppoorts css rounded corners
      *
      * @return boolean
      */
     public function supportsCssSpriting()
     {
-        return false;
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the engine suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsCssWidthAsPercentage()
+    {
+        return true;
     }
     
     /**
@@ -135,9 +145,69 @@ class Gecko extends EngineHandler
      *
      * @return boolean
      */
-    public function supportsCssWidthAsPercentage()
+    public function supportsHtmlCanvas()
     {
-        return false;
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewport()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportWidth()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMinimumScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportMaximumScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function supportsViewportInitialScale()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isViewportUserscalable()
+    {
+        return true;
     }
     
     /**
@@ -147,7 +217,27 @@ class Gecko extends EngineHandler
      */
     public function supportsImageInlining()
     {
-        return false;
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isMobileOptimized()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser suppoorts css rounded corners
+     *
+     * @return boolean
+     */
+    public function isHandheldFriendly()
+    {
+        return true;
     }
     
     /**
@@ -167,66 +257,6 @@ class Gecko extends EngineHandler
      */
     public function isPdfSupported()
     {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewport()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportWidth()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportMinimumScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportMaximumScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportInitialScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function isViewportUserscalable()
-    {
-        return false;
+        return true;
     }
 }
