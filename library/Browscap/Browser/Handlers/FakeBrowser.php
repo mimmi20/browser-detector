@@ -369,5 +369,5 @@ class FakeBrowser extends Unknown
     public function isPdfSupported()
     {
         return false;
-   
+    }
 }

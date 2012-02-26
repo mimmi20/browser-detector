@@ -19,7 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHanlder
@@ -32,7 +31,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version   SVN: $Id$
  */
 
-class CatchAll extends BrowserHandler
+class CatchAll extends Unknown
 {
     /**
      * Final Interceptor: Intercept
@@ -46,33 +45,29 @@ class CatchAll extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
+     * detects the browser version from the given user agent
      *
-     * @return StdClass
+     * @return string
      */
-    public function detect()
+    protected function _detectVersion()
     {
         $detector = new \Browscap\Browscap();
         $detector->setLogger($this->_logger);
         
         $detected = $detector->getBrowser($this->_useragent);
         
-        $class = new \StdClass();
-        $class->browser     = $detected->Browser;
-        $class->version     = $detected->Version;
-        $class->browserFull = $class->browser . ($class->browser != $class->version && '' != $class->version ? ' ' . $class->version : '');
+        $this->_browser = $detected->Browser;
+        $this->_version = $detected->Version;
         
         if ($detected->Win64) {
-            $class->bits = 64;
+            $this->_bits = 64;
         } elseif ($detected->Win32) {
-            $class->bits = 32;
+            $this->_bits = 32;
         } elseif ($detected->Win16) {
-            $class->bits = 16;
+            $this->_bits = 16;
         } else {
-            $class->bits = 0;
+            $this->_bits = 0;
         }
-        
-        return $class;
     }
     
     /**

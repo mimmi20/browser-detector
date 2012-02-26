@@ -115,8 +115,8 @@ abstract class Handler implements MatcherInterface
      */
     final public function detect()
     {
-        $this->_detectVersion();
         $this->_detectBits();
+        $this->_detectVersion();
         
         return $this;
     }

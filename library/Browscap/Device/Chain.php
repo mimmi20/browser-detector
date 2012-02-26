@@ -69,12 +69,7 @@ class Chain
                 continue;
             }
             
-            $filename = $fileinfo->getBasename('.php');
-            
-            if ('CatchAll' == $filename) {
-                continue;
-            }
-            
+            $filename  = $fileinfo->getBasename('.php');
             $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
             
             try {

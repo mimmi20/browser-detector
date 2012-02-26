@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version   SVN: $Id$
  */
 
-final class Unknown extends BrowserHandler
+class Unknown extends BrowserHandler
 {
     /**
      * @var string the detected browser
