@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * KonquerorHandler
  *
@@ -31,7 +29,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version   SVN: $Id$
  */
-class MosBookmarks extends BrowserHandler
+class MosBookmarks extends GeneralBot
 {
     /**
      * @var string the detected browser

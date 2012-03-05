@@ -32,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version   SVN: $Id$
  */
 
-class Google extends BrowserHandler
+class Google extends GeneralBot
 {
     /**
      * @var string the detected browser

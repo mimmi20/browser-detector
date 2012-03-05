@@ -19,7 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHanlder
@@ -32,7 +31,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version   SVN: $Id$
  */
 
-class Coverscout extends BrowserHandler
+class Coverscout extends GeneralBot
 {
     /**
      * @var string the detected browser

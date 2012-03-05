@@ -30,7 +30,7 @@ namespace Browscap\Browser\Handlers;
  * @version   SVN: $Id$
  */
 
-class FakeBrowser extends Unknown
+class FakeBrowser extends GeneralBot
 {
     /**
      * @var string the detected browser

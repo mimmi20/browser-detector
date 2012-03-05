@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version   SVN: $Id: Msnbot.php 173 2012-01-28 13:38:35Z  $
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHanlder
  *
@@ -32,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @version   SVN: $Id: Msnbot.php 173 2012-01-28 13:38:35Z  $
  */
 
-class Bingbot extends BrowserHandler
+class Bingbot extends GeneralBot
 {
     /**
      * @var string the detected browser

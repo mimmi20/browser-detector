@@ -19,7 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version   SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * OperaHanlder
@@ -31,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version   SVN: $Id$
  */
-class CamelHttpStream extends BrowserHandler
+class CamelHttpStream extends GeneralBot
 {
     /**
      * @var string the detected browser

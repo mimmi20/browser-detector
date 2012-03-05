@@ -20,16 +20,6 @@ namespace Browscap\Browser\Handlers;
  */
 
 /**
- * Handler Base class
- */
-use Browscap\Browser\Handler as BrowserHandler;
-
-/**
- * Browser Exceptions
- */
-use Browscap\Browser\Exceptions;
-
-/**
  * MSIEAgentHanlder
  *
  *
@@ -39,7 +29,7 @@ use Browscap\Browser\Exceptions;
  * @license    GNU Affero General Public License
  * @version   SVN: $Id$
  */
-class TinyTinyRss extends BrowserHandler
+class TinyTinyRss extends GeneralBot
 {
     /**
      * @var string the detected browser
