@@ -174,11 +174,3 @@ abstract class ModelAbstract extends \Zend\Db\Table\AbstractTable
         $this->_logger->err($exception);
     }
 }
-
-/*
- * Local variables:
- * tab-width: 4
- * c-basic-offset: 4
- * c-hanging-comment-ender-p: nil
- * End:
- */

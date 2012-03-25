@@ -159,11 +159,3 @@ class ModelCache
         return call_user_func_array($callback, $params);
     }
 }
-
-/*
- * Local variables:
- * tab-width: 4
- * c-basic-offset: 4
- * c-hanging-comment-ender-p: nil
- * End:
- */

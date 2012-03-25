@@ -72,11 +72,3 @@ class Agents extends ServiceAbstract
         return $this->cleanTaggedCache('agent');
     }
 }
-
-/*
- * Local variables:
- * tab-width: 4
- * c-basic-offset: 4
- * c-hanging-comment-ender-p: nil
- * End:
- */
