@@ -13,7 +13,7 @@ namespace Browscap\Model;
  * @package   Db
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
- * @version   SVN: $Id$
+ * @version    SVN: $Id$
  */
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
