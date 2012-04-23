@@ -95,7 +95,7 @@ class BrowscapData extends ModelAbstract
         }
 
         $select->limit(1);
-        $data = $this->fetchAll($select)->current();
+        $data = $this->fetchRow($select);
         
         if (!$data) {
             $data = $this->createRow();

@@ -68,10 +68,10 @@ class WurflData extends ModelAbstract
             $wurflConfigFile = realpath(__DIR__ . DS . '..' . DS . 'data' . DS . 'wurfl' . DS . 'wurfl-config.xml');
             
             // Create WURFL Configuration from an XML config file
-            $wurflConfig = new \Wurfl\Configuration\XmlConfig($wurflConfigFile);
+            $wurflConfig = new \WURFL_Configuration_XmlConfig($wurflConfigFile);
              
             // Create a WURFL Manager Factory from the WURFL Configuration
-            $wurflManagerFactory = new \Wurfl\WURFLManagerFactory($wurflConfig);
+            $wurflManagerFactory = new \WURFL_WURFLManagerFactory($wurflConfig);
              
             // Create a WURFL Manager
             $wurflManager = $wurflManagerFactory->create();
@@ -90,23 +90,33 @@ class WurflData extends ModelAbstract
                 $wurflData->count    = 1;
             }
         }
-        //var_dump('$wurflData', $wurflData);
-        //exit;
+        
         $wurflData->save();
         
         return $wurflData;
     }
     
-    public function findByWurflkey($wurflKey)
+    public function findByWurflkey($wurflKey, $wurflData = null)
     {
         if (empty($wurflKey) || !is_string($wurflKey)) {
-            return 'generic';
+            $wurflKey = 'generic';
         }
         
         $select = $this->select();
         $select->where('wurflKey = ?', $wurflKey);
         
-        return $this->fetchAll($select);
+        $data = $this->fetchRow($select);
+        
+        if (!$data) {
+            $data = $this->createRow();
+            
+            $data->wurflKey = $wurflKey;
+            $data->data     = \Zend\Json\Json::encode($wurflData);
+            
+            $data->save();
+        }
+        
+        return $data;
     }
 
     /**
