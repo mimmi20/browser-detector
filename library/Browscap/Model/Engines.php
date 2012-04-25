@@ -63,7 +63,7 @@ class Engines extends ModelAbstract
 
         $select->limit(1);
 
-        $engineObject = $this->fetchAll($select)->current();
+        $engineObject = $this->fetchAll($select);
         
         if (!$engineObject) {
             $engineObject = $this->createRow();
@@ -73,6 +73,12 @@ class Engines extends ModelAbstract
             $engineObject->count   = 0;
             
             $engineObject->save();
+        } else {
+            $engineObject = $engineObject->current();
+            
+            if (!$engineObject) {
+                return null;
+            }
         }
         
         return (object) $engineObject->toArray();
@@ -84,10 +90,10 @@ class Engines extends ModelAbstract
             return;
         }
         
-        $engine = $this->find($idEngines)->current();
+        $engine = $this->find($idEngines);
         
         if ($engine) {
-            $this->update(array('count' => $engine->count + 1), 'idEngines = ' . (int) $idEngines);
+            $this->update(array('count' => $engine->current()->count + 1), 'idEngines = ' . (int) $idEngines);
         }
     }
     

@@ -57,12 +57,10 @@ class WurflData extends ModelAbstract
     
     public function count($idWurflData, $userAgent = '')
     {
-        $wurflData = null;
-        
         $wurflData = $this->find($idWurflData)->current();
         
         if ($wurflData) {
-            $wurflData->count += 1;
+            $wurflData->getTable()->update(array('count' => new \Zend\Db\Expr('`count` + 1')), 'idWurflData = ' . $idWurflData);//count += 1;
         } else {
             // Provide the absolute or relative path to your wurfl-config.xml
             $wurflConfigFile = realpath(__DIR__ . DS . '..' . DS . 'data' . DS . 'wurfl' . DS . 'wurfl-config.xml');
@@ -89,9 +87,9 @@ class WurflData extends ModelAbstract
                 $wurflData->data     = serialize($device);
                 $wurflData->count    = 1;
             }
+            
+            $wurflData->save();
         }
-        
-        $wurflData->save();
         
         return $wurflData;
     }
@@ -111,7 +109,7 @@ class WurflData extends ModelAbstract
             $data = $this->createRow();
             
             $data->wurflKey = $wurflKey;
-            $data->data     = \Zend\Json\Json::encode($wurflData);
+            $data->data     = serialize($wurflData);
             
             $data->save();
         }

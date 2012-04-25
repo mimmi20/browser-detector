@@ -153,6 +153,10 @@ final class Chain
      */
     public function detect($userAgent)
     {
+        if ('' == $userAgent) {
+            throw new \Exception('no user agent given');
+        }
+        
         if (count($this->_chain)) {
             foreach ($this->_chain as $detector) {
                 $handler = $detector['class'];
@@ -164,7 +168,7 @@ final class Chain
                         return $handler->detect();
                     } catch (\UnexpectedValueException $e) {
                         // do nothing
-                        //$this->_log->warn($e);
+                        $this->_log->warn($e);
                         
                         continue;
                     }

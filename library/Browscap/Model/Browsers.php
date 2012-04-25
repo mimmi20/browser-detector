@@ -98,16 +98,20 @@ class Browsers extends ModelAbstract
     
     public function count($idBrowsers)
     {
-        $browser = $this->find($idBrowsers)->current();
+        $browser = $this->find($idBrowsers);
         
         if ($browser) {
-            $this->update(array('count' => $browser->count + 1), 'idBrowsers = ' . (int) $browser->idBrowsers);
+            $this->update(array('count' => new \Zend\Db\Expr('`count` = `count` + 1')), 'idBrowsers = ' . (int) $browser->current()->idBrowsers);
         }
     }
     
     public function countByName($browserName, $browserVersion = 0.0, $bits = 0)
     {
         $browser = $this->searchByBrowser($browserName, $browserVersion, $bits);
+        
+        if (empty($browser->idBrowsers)) {
+            return null;
+        }
         
         $this->count($browser->idBrowsers);
         

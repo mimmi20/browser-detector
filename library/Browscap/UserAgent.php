@@ -152,15 +152,8 @@ class UserAgent
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
-     *
-     * @param string                          $agent
-     * @param array|\Zend\Config\Config       $config
-     * @param \Zend\Log\Logger                $logger
-     * @param array|\Zend\Cache\Frontend\Core $cache
-     *
-     * @throws Exceptions\AgentNotStringException
      */
-    public function __construct($agent = null)
+    public function __construct()
     {
         //
     }
@@ -196,7 +189,7 @@ class UserAgent
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string  $userAgent     the user agent string
+     * @param string  $userAgent the user agent string
      *
      * @return 
      */
@@ -232,10 +225,11 @@ class UserAgent
         );
         
         if ($forceDetected 
+            || $useDb
             || !($this->_cache instanceof \Zend\Cache\Frontend\Core)
             || !($browserArray = $this->_cache->load($cacheId))
         ) {
-            $browserArray = $this->_detect($userAgent, $forceDetected, $useDb);
+            $browserArray = $this->_detect($this->_cleanedAgent, $forceDetected, $useDb);
             
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                 $this->_cache->save($browserArray, $cacheId);
@@ -308,7 +302,10 @@ class UserAgent
      */
     private function _detectEngine($agent, $userAgent = null, $forceDetected = false, $useDb = false)
     {
-        if (null === $this->_serviceEngines && $useDb && $agent instanceof \Zend\Db\Table\Row) {
+        if (null === $this->_serviceEngines 
+            && $useDb 
+            && $agent instanceof \Zend\Db\Table\Row
+        ) {
             $this->_serviceEngines = new Service\Engines();
         }
         
@@ -334,6 +331,8 @@ class UserAgent
                     $this->_engineChain->setLogger($this->_logger);
                     
                     if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_engineChain->setCache($this->_cache);
+                        
                         $this->_cache->save($this->_engineChain, 'EngineChain');
                     }
                 }
@@ -341,22 +340,25 @@ class UserAgent
             
             $engine = $this->_engineChain->detect($userAgent);
             
-            if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
+            if ($useDb && $agent instanceof \Zend\Db\Table\Row) {
                 $searchedEngine = $this->_serviceEngines->searchByName($engine->getEngine(), $engine->getVersion());
                 
                 if ($searchedEngine) {
                     $agent->idEngines = $searchedEngine->idEngines;
+                    $searchedEngine->data = \Zend\Json\Json::encode($engine);
+                    $searchedEngine->save();
                 }
                 
                 unset($searchedEngine);
             }
         } else {
-            $engine = (object) $engine->toArray();
-            $engine->engineFull = $engine->getFullEngine();
-        }
-        
-        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceEngines->count($agent->idEngines);
+            $engine = (object) $engine->toArray();var_dump($engine);exit;
+            
+            if ($useDb && $agent instanceof \Zend\Db\Table\Row) {
+                $this->_serviceEngines->count($engine->idEngines);
+            }
+            
+            //$engine->engineFull = $engine->getFullEngine();
         }
         
         return $engine;
@@ -397,6 +399,8 @@ class UserAgent
                     $this->_browserChain->setLogger($this->_logger);
                     
                     if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_browserChain->setCache($this->_cache);
+                        
                         $this->_cache->save($this->_browserChain, 'BrowserChain');
                     }
                 }
@@ -454,6 +458,8 @@ class UserAgent
                     $this->_osChain->setLogger($this->_logger);
                     
                     if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_osChain->setCache($this->_cache);
+                        
                         $this->_cache->save($this->_osChain, 'PlatformChain');
                     }
                 }
@@ -523,6 +529,8 @@ class UserAgent
                     $this->_deviceChain->setLogger($this->_logger);
                     
                     if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                        $this->_deviceChain->setCache($this->_cache);
+                        
                         $this->_cache->save($this->_deviceChain, 'DeviceChain');
                     }
                 }
@@ -1101,6 +1109,15 @@ class UserAgent
         return $this->_engine->getEngine();
     }
     
+    final public function getEngineVersion()
+    {
+        if (null === $this->_engine) {
+            return null;
+        }
+        
+        return $this->_engine->getVersion();
+    }
+    
     final public function getFullEngine()
     {
         if (null === $this->_engine) {
@@ -1117,6 +1134,24 @@ class UserAgent
         }
         
         return $this->_os->getName();
+    }
+    
+    final public function getPlatformVersion()
+    {
+        if (null === $this->_os) {
+            return null;
+        }
+        
+        return $this->_os->getVersion();
+    }
+    
+    final public function getPlatformBits()
+    {
+        if (null === $this->_os) {
+            return null;
+        }
+        
+        return $this->_os->getBits();
     }
     
     final public function getFullPlatform()

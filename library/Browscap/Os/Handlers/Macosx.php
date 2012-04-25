@@ -68,6 +68,13 @@ class Macosx extends Macintosh
             return;
         }
         
+        $doMatch = preg_match('/Mac OS X\/([\d\.\_]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
+        }
+        
         $this->_version = '10';
     }
     
