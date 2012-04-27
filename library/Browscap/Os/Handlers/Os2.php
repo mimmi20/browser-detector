@@ -31,7 +31,7 @@ use Browscap\Os\Handler as OsHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class OS2 extends OsHandler
+class Os2 extends OsHandler
 {
     /**
      * @var string the detected platform
