@@ -66,7 +66,7 @@ class Gecko extends EngineHandler
         $doMatch = preg_match('/rv\:([\d\.ab]+).*Gecko\/([\d\.]+)/', $this->_useragent, $matches);
         //var_dump($matches);
         if ($doMatch) {
-            $this->_version = $matches[1] . ' (' . $matches[2] . ')';
+            $this->_version = $matches[1]; // . ' (' . $matches[2] . ')';
             return;
         }
         

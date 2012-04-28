@@ -229,7 +229,7 @@ class Android extends MobileSafari
     }
     
     /**
-     * returns TRUE if the browser suppoorts css rounded corners
+     * returns TRUE if the browser suppoorts css sprites
      *
      * @return boolean
      */
@@ -239,7 +239,7 @@ class Android extends MobileSafari
     }
     
     /**
-     * returns TRUE if the browser suppoorts css rounded corners
+     * returns TRUE if the browser suppoorts css width as percentage
      *
      * @return boolean
      */
