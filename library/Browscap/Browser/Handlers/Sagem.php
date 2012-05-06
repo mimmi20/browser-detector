@@ -46,6 +46,10 @@ class Sagem extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfStartsWith($this->_useragent, 'Sagem') || $this->_utils->checkIfStartsWith($this->_useragent, 'SAGEM');
     }
 }

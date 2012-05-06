@@ -46,6 +46,10 @@ class TelecaObigo extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser'));
     }
     

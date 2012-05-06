@@ -48,6 +48,10 @@ class MFC150DEX extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'MFC150DEX')) {
             return false;
         }

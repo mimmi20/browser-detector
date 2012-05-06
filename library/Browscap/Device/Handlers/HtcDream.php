@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: HtcHd2.php 173 2012-01-28 13:38:35Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version    SVN: $Id: HtcHd2.php 173 2012-01-28 13:38:35Z  $
  */
 
-class HtcDream extends DeviceHandler
+class HtcDream extends GeneralMobile
 {
     /**
      * @var string the detected device
@@ -48,6 +46,10 @@ class HtcDream extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'HTC Dream')) {
             return false;
         }

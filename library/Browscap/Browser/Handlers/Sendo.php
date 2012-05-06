@@ -46,6 +46,10 @@ class Sendo extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return(strpos($this->_useragent, 'Sendo') === 0);
     }
 }

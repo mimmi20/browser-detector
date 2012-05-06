@@ -46,6 +46,10 @@ class Qtek extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfStartsWith($this->_useragent, 'Qtek');
     }
 }

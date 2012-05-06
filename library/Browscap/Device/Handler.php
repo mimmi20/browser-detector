@@ -127,8 +127,6 @@ abstract class Handler implements MatcherInterface
     protected function _detectVersion()
     {
         $this->_version = '';
-        
-        return $this;
     }
     
     final public function getDevice()

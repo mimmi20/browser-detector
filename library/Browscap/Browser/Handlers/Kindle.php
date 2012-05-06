@@ -43,6 +43,10 @@ class Kindle extends NetFront
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!parent::canHandle($this->_useragent)) {
             return false;
         }

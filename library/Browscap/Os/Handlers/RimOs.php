@@ -45,6 +45,10 @@ class RimOs extends OsHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAll($this->_useragent, array('BlackBerry'))) {
             return false;
         }

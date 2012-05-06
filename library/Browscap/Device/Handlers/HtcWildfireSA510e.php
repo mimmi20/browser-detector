@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: HtcWildfireA3333.php 173 2012-01-28 13:38:35Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version    SVN: $Id: HtcWildfireA3333.php 173 2012-01-28 13:38:35Z  $
  */
 
-class HtcWildfireSA510e extends DeviceHandler
+class HtcWildfireSA510e extends GeneralMobile
 {
     /**
      * @var string the detected device
@@ -48,6 +46,10 @@ class HtcWildfireSA510e extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC Wildfire S A510e', 'HTC_WildfireS_A510e'))) {
             return false;
         }

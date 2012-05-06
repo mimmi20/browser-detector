@@ -41,7 +41,12 @@ class Gmx extends MicrosoftInternetExplorer
      *
      * @return bool
      */
-    public function canHandle() {
+    public function canHandle()
+    {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'GMX')) {
             return false;
         }

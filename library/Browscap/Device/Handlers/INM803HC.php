@@ -48,6 +48,10 @@ class INM803HC extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'INM803HC')) {
             return false;
         }

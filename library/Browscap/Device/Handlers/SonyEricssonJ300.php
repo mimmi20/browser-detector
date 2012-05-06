@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: SonyEricssonE10i.php 173 2012-01-28 13:38:35Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version    SVN: $Id: SonyEricssonE10i.php 173 2012-01-28 13:38:35Z  $
  */
 
-class SonyEricssonJ300 extends DeviceHandler
+class SonyEricssonJ300 extends GeneralMobile
 {
     /**
      * @var string the detected device
@@ -48,6 +46,10 @@ class SonyEricssonJ300 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonJ300')) {
             return false;
         }

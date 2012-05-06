@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version    SVN: $Id$
  */
 
-class BlackBerry9700 extends DeviceHandler
+class BlackBerry9700 extends GeneralMobile
 {
     /**
      * @var string the detected device
@@ -48,6 +46,10 @@ class BlackBerry9700 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('BlackBerry 9700', 'BlackBerry9700'))) {
             return false;
         }

@@ -48,6 +48,10 @@ class MiuiUsSensation4G extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'MIUI.us Sensation 4G')) {
             return false;
         }

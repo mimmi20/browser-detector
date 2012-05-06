@@ -45,6 +45,10 @@ class Ruby extends OsHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Ruby'))) {
             return false;
         }

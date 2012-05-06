@@ -44,6 +44,10 @@ class Yahoofeedseeker extends Yahoo
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfStartsWith($this->_useragent, 'Y!J SearchMonkey')
             || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRE')
             || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!J-BRG/GSC')

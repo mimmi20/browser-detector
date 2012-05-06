@@ -48,6 +48,10 @@ class SshR730 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'SCH-R730')) {
             return false;
         }

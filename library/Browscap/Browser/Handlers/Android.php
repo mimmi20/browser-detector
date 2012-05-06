@@ -44,6 +44,10 @@ class Android extends MobileSafari
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Dalvik/')
             && !$this->_utils->checkIfContains($this->_useragent, 'Android')
             && !parent::canHandle($this->_useragent)

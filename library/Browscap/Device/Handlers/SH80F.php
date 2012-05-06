@@ -48,6 +48,10 @@ class SH80F extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'SH80F')) {
             return false;
         }

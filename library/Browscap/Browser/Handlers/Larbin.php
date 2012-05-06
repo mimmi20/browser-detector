@@ -44,6 +44,10 @@ class Larbin extends GeneralBot
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('binlar', 'larbin'))) {
             return false;
         }

@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: HtcDesireHdA9191.php 173 2012-01-28 13:38:35Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version    SVN: $Id: HtcDesireHdA9191.php 173 2012-01-28 13:38:35Z  $
  */
 
-class HtcDesireA8181 extends DeviceHandler
+class HtcDesireA8181 extends GeneralMobile
 {
     /**
      * @var string the detected device
@@ -48,6 +46,10 @@ class HtcDesireA8181 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC_Desire_A8181', 'Desire_A8181'))) {
             return false;
         }

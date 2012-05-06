@@ -48,6 +48,10 @@ class GeneralBot extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         $bots = array(
             'bot',
             'spider',

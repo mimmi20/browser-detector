@@ -44,6 +44,10 @@ class WebkitWebos extends MobileSafari
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!parent::canHandle()) {
             return false;
         }

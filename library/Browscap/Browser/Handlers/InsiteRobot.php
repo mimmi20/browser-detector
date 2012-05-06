@@ -43,6 +43,10 @@ class InsiteRobot extends GeneralBot
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'InsiteRobot')) {
             return false;
         }

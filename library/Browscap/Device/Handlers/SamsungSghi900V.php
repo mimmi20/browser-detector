@@ -19,8 +19,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -32,7 +30,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @version    SVN: $Id$
  */
 
-class SamsungSghi900V extends DeviceHandler
+class SamsungSghi900V extends GeneralMobile
 {
     /**
      * @var string the detected device
@@ -48,6 +46,10 @@ class SamsungSghi900V extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'SAMSUNG-SGH-i900V')) {
             return false;
         }

@@ -48,6 +48,10 @@ class IdeosS7 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'IDEOS S7')) {
             return false;
         }

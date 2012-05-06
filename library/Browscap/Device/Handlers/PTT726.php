@@ -48,6 +48,10 @@ class PTT726 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'PTT726')) {
             return false;
         }

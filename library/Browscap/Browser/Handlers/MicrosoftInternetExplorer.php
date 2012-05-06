@@ -70,6 +70,10 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
@@ -79,6 +83,10 @@ class MicrosoftInternetExplorer extends BrowserHandler
         }
         
         $isNotReallyAnIE = array(
+            'Gecko',
+            'Presto',
+            'Webkit',
+            'KHTML',
             // using also the Trident rendering engine
             'Maxthon',
             'Galeon',

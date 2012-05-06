@@ -48,6 +48,10 @@ class GarminAsusA10 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'Garmin-Asus A10')) {
             return false;
         }

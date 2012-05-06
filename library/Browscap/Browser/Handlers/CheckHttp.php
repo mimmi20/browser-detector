@@ -46,6 +46,10 @@ class CheckHttp extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('check_http/'))) {
             return false;
         }

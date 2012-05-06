@@ -48,6 +48,10 @@ class YPG70 extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'YP-G70')) {
             return false;
         }

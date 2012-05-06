@@ -44,6 +44,10 @@ class YahooMedia extends Yahoo
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('mp3Spider cn-search-devel at yahoo-inc dot com', 'Yahoo-MMAudVid', 'YahooVideoSearch', 'Yahoo-MMCrawler'))) {
             return true;
         }

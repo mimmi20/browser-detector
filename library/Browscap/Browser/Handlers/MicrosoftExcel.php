@@ -53,6 +53,10 @@ class MicrosoftExcel extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'Excel')) {
             return false;
         }

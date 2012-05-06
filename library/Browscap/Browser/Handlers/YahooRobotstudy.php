@@ -44,6 +44,10 @@ class YahooRobotstudy extends Yahoo
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Y!J', 'Yahoo Japan'))) {
             return false;
         }

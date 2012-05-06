@@ -46,6 +46,10 @@ class Philips extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfStartsWith($this->_useragent, 'Philips') || $this->_utils->checkIfStartsWith($this->_useragent, 'PHILIPS');
     }
 }

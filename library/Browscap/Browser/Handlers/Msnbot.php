@@ -35,7 +35,7 @@ class Msnbot extends GeneralBot
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'msnbot';
+    protected $_browser = 'MSNBot';
     
     /**
      * Returns true if this handler can handle the given user agent

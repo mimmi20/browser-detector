@@ -45,6 +45,10 @@ class NintendoWii extends OsHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Nintendo Wii'))) {
             return false;
         }

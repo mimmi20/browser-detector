@@ -185,6 +185,17 @@ class UserAgent
         
         return $this;
     }
+    
+    public function cleanAgent($userAgent)
+    {
+        $userAgent = str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent);
+        $userAgent = str_replace(array(' :: '), ';', $userAgent);
+        $userAgent = str_replace(array('%2C'), '.', $userAgent);
+        $userAgent = preg_replace('/\s+\s/', ' ', $userAgent);
+        $userAgent = trim($userAgent);
+        
+        return $userAgent;
+    }
 
     /**
      * Gets the information about the browser by User Agent
@@ -210,9 +221,7 @@ class UserAgent
         
         $this->_agent = $userAgent;
         
-        $userAgent = str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent);
-        $userAgent = str_replace(array(' :: '), ';', $userAgent);
-        $userAgent = trim($userAgent);
+        $userAgent = $this->cleanAgent($userAgent);
         
         $this->_cleanedAgent = $userAgent;
         

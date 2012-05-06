@@ -43,6 +43,10 @@ class Camino extends Firefox
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/4.0')
             && !$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0')
         ) {

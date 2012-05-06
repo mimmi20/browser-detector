@@ -48,6 +48,10 @@ class ShwM380K extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'SHW-M380K')) {
             return false;
         }

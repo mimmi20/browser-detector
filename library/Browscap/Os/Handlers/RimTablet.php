@@ -45,6 +45,10 @@ class RimTablet extends RimOs
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAll($this->_useragent, array('RIM Tablet'))) {
             return false;
         }

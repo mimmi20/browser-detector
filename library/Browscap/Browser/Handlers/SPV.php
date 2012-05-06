@@ -45,6 +45,10 @@ class SPV extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfContains($this->_useragent, 'SPV');
     }
 }

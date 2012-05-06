@@ -46,6 +46,10 @@ class Kyocera extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfStartsWith($this->_useragent, 'kyocera') || $this->_utils->checkIfStartsWith($this->_useragent, 'QC-') || $this->_utils->checkIfStartsWith($this->_useragent, 'KWC-');
     }
 }

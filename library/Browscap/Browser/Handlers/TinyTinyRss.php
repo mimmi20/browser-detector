@@ -43,6 +43,10 @@ class TinyTinyRss extends GeneralBot
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Tiny Tiny RSS/')) {
             return false;
         }

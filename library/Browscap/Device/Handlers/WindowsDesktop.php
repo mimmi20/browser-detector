@@ -46,6 +46,10 @@ class WindowsDesktop extends GeneralDesktop
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         $mobiles = array(
             'Windows CE',
             'Windows Phone OS',

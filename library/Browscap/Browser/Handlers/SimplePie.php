@@ -45,6 +45,10 @@ class SimplePie extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'SimplePie')) {
             return false;
         }

@@ -48,6 +48,10 @@ class Gm10Xyl extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'GM10_xyl')) {
             return false;
         }

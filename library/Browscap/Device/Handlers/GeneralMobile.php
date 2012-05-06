@@ -48,6 +48,10 @@ class GeneralMobile extends DeviceHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         $mobiles = array(
             'Windows CE',
             'Windows Phone OS',

@@ -46,6 +46,10 @@ class Motorola extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mot-', 'MOT-', 'Motorola', 'MIB'));
     }
     

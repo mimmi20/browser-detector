@@ -45,6 +45,10 @@ class Gecko extends EngineHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Gecko', 'Firefox'))) {
             return false;
         }

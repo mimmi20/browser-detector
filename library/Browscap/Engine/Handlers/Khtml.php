@@ -45,6 +45,10 @@ class Khtml extends EngineHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
             return false;
         }

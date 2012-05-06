@@ -44,7 +44,9 @@ class YahooMmaudvid extends Yahoo
      */
     public function canHandle()
     {
-        
+        if ('' == $this->_useragent) {
+            return false;
+        }
         
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Yahoo-MMAudVid')) {
             return false;

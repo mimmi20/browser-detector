@@ -44,6 +44,10 @@ class FakeBrowser extends GeneralBot
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mac; Mac OS ', 'fake'))) {
             return true;
         }

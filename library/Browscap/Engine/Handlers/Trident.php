@@ -45,15 +45,22 @@ class Trident extends EngineHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/') 
             && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MSIE', 'Trident'))
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MSIE')
-            && $this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics', 'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)'))
-        ) {
+        $noTridentEngines = array(
+            'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
+            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)'
+        );
+        
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $noTridentEngines)) {
             return false;
         }
         
