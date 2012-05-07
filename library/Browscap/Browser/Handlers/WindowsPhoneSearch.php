@@ -16,28 +16,35 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MicrosoftMobileExplorer.php 213 2012-05-06 16:12:27Z  $
  */
 
+/**
+ * Handler Base class
+ */
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * CatchAllUserAgentHandler
+ * Browser Exceptions
+ */
+use Browscap\Browser\Exceptions;
+
+/**
+ * MSIEAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MicrosoftMobileExplorer.php 213 2012-05-06 16:12:27Z  $
  */
-
-class Xerka extends BrowserHandler
+class WindowsPhoneSearch extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Xerka';
+    protected $_browser = 'Windows Phone Search';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -50,27 +57,10 @@ class Xerka extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Xerka WebBot')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Windows Phone Search')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/Xerka WebBot v([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
 }

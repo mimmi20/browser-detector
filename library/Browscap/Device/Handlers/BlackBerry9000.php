@@ -16,10 +16,8 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id: BlackBerry9700.php 173 2012-01-28 13:38:35Z  $
  */
-
-use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -29,15 +27,15 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id: BlackBerry9700.php 173 2012-01-28 13:38:35Z  $
  */
 
-class GeneralMobile extends DeviceHandler
+class BlackBerry9000 extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Mobile Device';
+    protected $_device = 'BlackBerry 9000';
     
     /**
      * Final Interceptor: Intercept
@@ -52,41 +50,11 @@ class GeneralMobile extends DeviceHandler
             return false;
         }
         
-        $mobiles = array(
-            'Windows CE',
-            'Windows Phone OS',
-            'Windows Mobile',
-            'Android',
-            'Bada',
-            'BREW',
-            'Dalvik',
-            'IphoneOSX',
-            'iPhone OS',
-            'like Mac OS X',
-            'iPad',
-            'IPad',
-            'iPhone',
-            'iPod',
-            'MeeGo',
-            'Nintendo Wii',
-            'Nokia',
-            'Series40',
-            'BlackBerry',
-            'Tablet',
-            'SymbianOS',
-            'SymbOS',
-            'Symbian',
-            'Series 60',
-            'Opera Mini',
-            'Opera Mobi',
-            'J2ME/MIDP'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
-            return true;
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('BlackBerry 9000', 'BlackBerry9000'))) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -96,6 +64,6 @@ class GeneralMobile extends DeviceHandler
      */
     public function getWeight()
     {
-        return 1;
+        return 5;
     }
 }

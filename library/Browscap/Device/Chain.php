@@ -166,6 +166,10 @@ class Chain
             }
         }
         
-        return new Handlers\Unknown();
+        $handler = new Handlers\Unknown();
+        $handler->setLogger($this->_log);
+        $handler->setUserAgent($userAgent);
+        
+        return $handler;
     }
 }

@@ -16,10 +16,8 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id: SonyEricssonE10i.php 213 2012-05-06 16:12:27Z  $
  */
-
-use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -29,15 +27,15 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id: SonyEricssonE10i.php 213 2012-05-06 16:12:27Z  $
  */
 
-class GeneralMobile extends DeviceHandler
+class SonyEricssonG700 extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Mobile Device';
+    protected $_device = 'SonyEricsson G700';
     
     /**
      * Final Interceptor: Intercept
@@ -52,41 +50,30 @@ class GeneralMobile extends DeviceHandler
             return false;
         }
         
-        $mobiles = array(
-            'Windows CE',
-            'Windows Phone OS',
-            'Windows Mobile',
-            'Android',
-            'Bada',
-            'BREW',
-            'Dalvik',
-            'IphoneOSX',
-            'iPhone OS',
-            'like Mac OS X',
-            'iPad',
-            'IPad',
-            'iPhone',
-            'iPod',
-            'MeeGo',
-            'Nintendo Wii',
-            'Nokia',
-            'Series40',
-            'BlackBerry',
-            'Tablet',
-            'SymbianOS',
-            'SymbOS',
-            'Symbian',
-            'Series 60',
-            'Opera Mini',
-            'Opera Mobi',
-            'J2ME/MIDP'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
-            return true;
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonG700')) {
+            return false;
         }
         
-        return false;
+        return true;
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/SonyEricssonG700\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -96,6 +83,6 @@ class GeneralMobile extends DeviceHandler
      */
     public function getWeight()
     {
-        return 1;
+        return 5;
     }
 }

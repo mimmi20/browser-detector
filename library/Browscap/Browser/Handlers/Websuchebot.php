@@ -16,10 +16,8 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Webbotru.php 206 2012-04-09 16:43:00Z  $
  */
-
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -29,15 +27,15 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Webbotru.php 206 2012-04-09 16:43:00Z  $
  */
 
-class Xerka extends BrowserHandler
+class Websuchebot extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Xerka';
+    protected $_browser = 'Websuchebot';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -50,7 +48,7 @@ class Xerka extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Xerka WebBot')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Websuchebot')) {
             return false;
         }
         
@@ -64,7 +62,7 @@ class Xerka extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Xerka WebBot v([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Websuchebot\/Shooter\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

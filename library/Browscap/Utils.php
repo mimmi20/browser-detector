@@ -170,16 +170,12 @@ class Utils
     public function isSpamOrCrawler($userAgent)
     {
         $isCrawler = array(
-            'SnapPreviewBot',
-            'ScanAlert',
+            'Bot',
             'spider',
-            'webaroo',
-            'OneRiot',
             'Spam',
             'bot',
-            'SaferSurf',
             '\\x',
-            'Agent'
+            'Windows NT 1.7'
         );
         
         if ($this->checkIfContainsAnyOf($userAgent, $isCrawler)) {

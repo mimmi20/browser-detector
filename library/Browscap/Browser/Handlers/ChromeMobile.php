@@ -16,27 +16,27 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Chrome.php 213 2012-05-06 16:12:27Z  $
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * SafariHandler
+ * ChromeUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Chrome.php 213 2012-05-06 16:12:27Z  $
  */
-class Safari extends BrowserHandler
+class ChromeMobile extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Safari';
+    protected $_browser = 'Chrome Mobile';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -45,38 +45,34 @@ class Safari extends BrowserHandler
      */
     public function canHandle()
     {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Safari')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'CrMo/')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Safari', 'AppleWebKit', 'CFNetwork'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'CrMo'))) {
             return false;
         }
         
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
-            'Chrome',
             'Chromium',
+            'Chrome',
             'Flock',
             'Galeon',
             'Lunascape',
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt',
-            'rekonq',
-            'OmniWeb',
-            'Silk',
-            'MQQBrowser',
-            'konqueror',
-            'Epiphany',
-            'Shiira',
-            //mobile Version
-            'Mobile',
-            'Tablet',
-            'Android',
+            'RockMelt',
+            'Comodo Dragon',
+            'Google Earth',
+            'Arora',
             // Fakes
             'Mac; Mac OS '
         );
@@ -95,60 +91,14 @@ class Safari extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CrMo\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/Safari\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/Safari([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
+            $this->_version = $matches[1];
             return;
         }
         
         $this->_version = '';
-    }
-    
-    private function _mapVersion($detectedVersion)
-    {
-        if ($detectedVersion >= 7500) {
-            return 5.1;
-        }
-        
-        if ($detectedVersion >= 6500) {
-            return 5.0;
-        }
-        
-        if ($detectedVersion >= 750) {
-            return 5.1;
-        }
-        
-        if ($detectedVersion >= 650) {
-            return 5.0;
-        }
-        
-        if ($detectedVersion >= 500) {
-            return 4.0;
-        }
-        
-        return $detectedVersion;
     }
     
     /**
@@ -158,7 +108,7 @@ class Safari extends BrowserHandler
      */
     public function getWeight()
     {
-        return 276;
+        return 778;
     }
     
     /**
@@ -208,7 +158,7 @@ class Safari extends BrowserHandler
      */
     public function supportsCssWidthAsPercentage()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -309,25 +259,5 @@ class Safari extends BrowserHandler
     public function isHandheldFriendly()
     {
         return false;
-    }
-    
-    /**
-     * returns TRUE if the browser supports RSS Feeds
-     *
-     * @return boolean
-     */
-    public function isRssSupported()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser supports PDF documents
-     *
-     * @return boolean
-     */
-    public function isPdfSupported()
-    {
-        return true;
     }
 }

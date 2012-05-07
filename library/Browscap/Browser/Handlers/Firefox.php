@@ -55,7 +55,7 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Firefox')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Firefox', 'Minefield'))) {
             return false;
         }
         
@@ -103,6 +103,13 @@ class Firefox extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Firefox\/([\d\.ab]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Minefield\/([\d\.ab]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

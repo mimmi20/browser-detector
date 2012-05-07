@@ -56,7 +56,7 @@ class MobileSafari extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Mobile')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mobile', 'Tablet'))) {
             return false;
         }
         
@@ -78,7 +78,10 @@ class MobileSafari extends BrowserHandler
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt'
+            'Rockmelt',
+            'Sleipnir',
+            'Grindr',
+            'Flipboard'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
@@ -98,32 +101,57 @@ class MobileSafari extends BrowserHandler
         $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $matches[1];
+            $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
         $doMatch = preg_match('/Safari\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $matches[1];
+            $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
         $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $matches[1];
+            $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
         $doMatch = preg_match('/MobileSafari\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $matches[1];
+            $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
         $this->_version = '';
+    }
+    
+    private function _mapVersion($detectedVersion)
+    {
+        if ($detectedVersion >= 7500) {
+            return 5.1;
+        }
+        
+        if ($detectedVersion >= 6500) {
+            return 5.0;
+        }
+        
+        if ($detectedVersion >= 750) {
+            return 5.1;
+        }
+        
+        if ($detectedVersion >= 650) {
+            return 5.0;
+        }
+        
+        if ($detectedVersion >= 500) {
+            return 4.0;
+        }
+        
+        return $detectedVersion;
     }
     
     /**

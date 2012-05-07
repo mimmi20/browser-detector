@@ -50,7 +50,7 @@ class Flipboard extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Flipboard')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Flipboard')) {
             return false;
         }
         

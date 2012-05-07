@@ -16,35 +16,27 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Rekonq.php 213 2012-05-06 16:12:27Z  $
  */
 
-/**
- * Handler Base class
- */
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * Browser Exceptions
- */
-use Browscap\Browser\Exceptions;
-
-/**
- * MSIEAgentHandler
+ * SafariHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Rekonq.php 213 2012-05-06 16:12:27Z  $
  */
-class MicrosoftMobileExplorer extends BrowserHandler
+class Sleipnir extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Microsoft Mobile Explorer';
+    protected $_browser = 'Sleipnir';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -61,32 +53,25 @@ class MicrosoftMobileExplorer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE', 'IEMobile'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Sleipnir'))) {
             return false;
         }
         
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Maxthon',
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chrome',
+            'Chromium',
+            'Flock',
             'Galeon',
             'Lunascape',
-            'Opera',
+            'Iron',
+            'Maemo',
             'PaleMoon',
-            'Flock',
-            'Avant',
-            'MyIE',
-            //others
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt'
+            'Rockmelt',
+            'OmniWeb'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
@@ -100,14 +85,14 @@ class MicrosoftMobileExplorer extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/IEMobile ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/IEMobile\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Sleipnir\/([\da-z\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -115,5 +100,15 @@ class MicrosoftMobileExplorer extends BrowserHandler
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 6;
     }
 }

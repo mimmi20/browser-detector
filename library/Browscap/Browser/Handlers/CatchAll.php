@@ -41,7 +41,7 @@ class CatchAll extends Unknown
      */
     public function canHandle()
     {
-        return true;
+        return false;
     }
     
     /**

@@ -36,7 +36,7 @@ class Netscape extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Netscape';
+    protected $_browser = 'Mozilla Netscape';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -92,6 +92,7 @@ class Netscape extends BrowserHandler
             'Iron',
             'Rockmelt',
             'libwww',
+            'OviBrowser',
             // Fakes
             'Mac; Mac OS '
         );

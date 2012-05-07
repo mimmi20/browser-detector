@@ -16,7 +16,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id: GeneralDesktop.php 206 2012-04-09 16:43:00Z  $
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -29,15 +29,15 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id: GeneralDesktop.php 206 2012-04-09 16:43:00Z  $
  */
 
-class GeneralMobile extends DeviceHandler
+class PlayStationVita extends DeviceHandler
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Mobile Device';
+    protected $_device = 'PlayStation Vita';
     
     /**
      * Final Interceptor: Intercept
@@ -72,21 +72,37 @@ class GeneralMobile extends DeviceHandler
             'Nokia',
             'Series40',
             'BlackBerry',
-            'Tablet',
+            'RIM Tablet',
             'SymbianOS',
             'SymbOS',
             'Symbian',
-            'Series 60',
-            'Opera Mini',
-            'Opera Mobi',
-            'J2ME/MIDP'
+            'Series 60'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('PlayStation Vita'))) {
             return true;
         }
         
         return false;
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/PlayStation Vita ([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
     }
     
     /**
@@ -96,6 +112,36 @@ class GeneralMobile extends DeviceHandler
      */
     public function getWeight()
     {
-        return 1;
+        return 3;
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
     }
 }

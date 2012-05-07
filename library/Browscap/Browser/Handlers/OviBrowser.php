@@ -50,7 +50,7 @@ class OviBrowser extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'OviBrowser');
+        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('OviBrowser', 'S40OviBrowser'));
     }
     
     /**
