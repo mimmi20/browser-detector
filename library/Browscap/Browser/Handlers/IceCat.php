@@ -47,6 +47,10 @@ class IceCat extends Thunderbird
             return false;
         }
         
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }

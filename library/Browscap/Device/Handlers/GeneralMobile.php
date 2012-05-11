@@ -52,37 +52,7 @@ class GeneralMobile extends DeviceHandler
             return false;
         }
         
-        $mobiles = array(
-            'Windows CE',
-            'Windows Phone OS',
-            'Windows Mobile',
-            'Android',
-            'Bada',
-            'BREW',
-            'Dalvik',
-            'IphoneOSX',
-            'iPhone OS',
-            'like Mac OS X',
-            'iPad',
-            'IPad',
-            'iPhone',
-            'iPod',
-            'MeeGo',
-            'Nintendo Wii',
-            'Nokia',
-            'Series40',
-            'BlackBerry',
-            'Tablet',
-            'SymbianOS',
-            'SymbOS',
-            'Symbian',
-            'Series 60',
-            'Opera Mini',
-            'Opera Mobi',
-            'J2ME/MIDP'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
             return true;
         }
         
@@ -97,5 +67,55 @@ class GeneralMobile extends DeviceHandler
     public function getWeight()
     {
         return 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a mobile
+     *
+     * @return boolean
+     */
+    public function isMobileDevice()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isBanned()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return false;
     }
 }

@@ -19,6 +19,8 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * FirefoxUserAgentHandler
  *
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Facebook extends GeneralBot
+class Facebook extends BrowserHandler
 {
     /**
      * @var string the detected browser
@@ -110,5 +112,25 @@ class Facebook extends GeneralBot
     public function getWeight()
     {
         return 4;
+    }
+    
+    /**
+     * returns TRUE if the browser supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
     }
 }

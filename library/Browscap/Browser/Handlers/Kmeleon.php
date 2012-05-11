@@ -49,6 +49,10 @@ class Kmeleon extends BrowserHandler
             return false;
         }
         
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'K-Meleon')) {
             return false;
         }

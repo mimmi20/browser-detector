@@ -52,6 +52,10 @@ class MacBook extends DeviceHandler
             return false;
         }
         
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('MacBook'))) {
             return true;
         }

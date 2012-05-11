@@ -164,7 +164,17 @@ abstract class Handler implements MatcherInterface
      */
     public function isMobileDevice()
     {
-        return true;
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return false;
     }
     
     /**

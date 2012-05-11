@@ -52,42 +52,7 @@ class GeneralDesktop extends DeviceHandler
             return false;
         }
         
-        $mobiles = array(
-            'Windows CE',
-            'Windows Phone OS',
-            'Windows Mobile',
-            'Android',
-            'Bada',
-            'BREW',
-            'Dalvik',
-            'IphoneOSX',
-            'iPhone OS',
-            'like Mac OS X',
-            'iPad',
-            'IPad',
-            'iPhone',
-            'iPod',
-            'MeeGo',
-            'Nintendo Wii',
-            'Nokia',
-            'Series40',
-            'BlackBerry',
-            'RIM Tablet',
-            'SymbianOS',
-            'SymbOS',
-            'Symbian',
-            'Series 60',
-            'Opera Mini',
-            'Opera Mobi',
-            'Fennec',
-            // Bots
-            'AppEngine-Google',
-            'Feedfetcher-Google',
-            'WordPress',
-            'http:'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $mobiles)) {
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
             return false;
         }
         

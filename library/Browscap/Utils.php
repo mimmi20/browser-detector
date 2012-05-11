@@ -40,66 +40,79 @@ class Utils
      * @var array Collection of mobile browser keywords
      */
     private $_mobileBrowsers = array(
+        'android',
+        'aspen simulator',
+        'bada',
+        'blackberry',
+        'blazer',
+        'bolt',
+        'brew',
         'cldc',
-        'symbian',
-        'midp',
+        'dalvik',
+        'danger hiptop',
+        'embider',
+        'fennec',
+        'foma',
+        'ipad',
+        'iphone',
+        'iphoneosx',
+        'iphone os',
+        'ipod',
+        'iris',
         'j2me',
+        'like mac os x',
+        'maemo',
+        'meego',
+        'midp',
         'mobile',
-        'wireless',
+        'netfront',
+        'nintendo wii',
+        'nitro',
+        'nokia',
+        'obigo',
+        'openwave',
+        'opera mini',
+        'opera mobi',
         'palm',
         'phone',
         'pocket pc',
         'pocketpc',
-        'netfront',
-        'bolt',
-        'iris',
-        'brew',
-        'openwave',
-        'windows ce',
-        'wap2',
-        'android',
-        'opera mini',
-        'opera mobi',
-        'maemo',
-        'fennec',
-        'blazer',
-        '160x160',
-        'webos',
+        'rim tablet',
+        'series40',
+        'series 60',
         'sony',
-        'nitro',
-        '480x640',
-        'aspen simulator',
+        'symbian',
+        'symbianos',
+        'symbos',
         'up.browser',
         'up.link',
-        'embider',
-        'danger hiptop',
-        'obigo',
-        'foma');
-    
-    /** 
-     * Alias of WURFL_Handlers_Matcher_RISMatcher::match()
-     * @param array $collection
-     * @param string $needle
-     * @param int $tolerance
-     * @return string Matched user agent
-     * @see WURFL_Handlers_Matcher_RISMatcher::match()
-     */
-    public function risMatch($collection, $needle, $tolerance) 
-    {
-        return WURFL_Handlers_Matcher_RISMatcher::INSTANCE()->match($collection, $needle, $tolerance);
-    }
+        'wap2',
+        'webos',
+        'windows ce',
+        'windows mobile',
+        'windows phone os',
+        'wireless',
+        '160x160',
+        '480x640'
+    );
     
     /**
-     * Alias of WURFL_Handlers_Matcher_LDMatcher::match()
-     * @param array $collection
-     * @param string $needle
-     * @param int $tolerance
-     * @return string Matched user agent
-     * @see WURFL_Handlers_Matcher_LDMatcher::match()
+     * Returns true if the give $userAgent is from a mobile device
+     * @param string $userAgent
+     * @return bool
      */
-    public function ldMatch($collection, $needle, $tolerance = 7) 
+    public function isMobileBrowser($userAgent)
     {
-        return WURFL_Handlers_Matcher_LDMatcher::INSTANCE()->match($collection, $needle, $tolerance);
+        $mobileBrowser = false;
+        
+        foreach ($this->_mobileBrowsers as $key) {
+            if (stripos($userAgent, $key) !== false) {
+                $mobileBrowser = true;
+                break;
+            }
+        }
+        
+        return $mobileBrowser;
     }
     
     /**
@@ -140,26 +153,6 @@ class Utils
         sort($positions);
         
         return count($positions) > 0 ? $positions[0] : strlen($userAgent);
-    }
-    
-    /**
-     * Returns true if the give $userAgent is from a mobile device
-     * @param string $userAgent
-     * @return bool
-     */
-    public function isMobileBrowser($userAgent) 
-    {
-        $mobileBrowser = false;
-        
-        foreach ($this->$_mobileBrowsers as $key) {
-            if (stripos($userAgent, $key) !== FALSE) {
-                $mobileBrowser = true;
-                break;
-            }
-        }
-        
-        return $mobileBrowser;
-    
     }
     
     /**
