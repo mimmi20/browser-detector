@@ -118,7 +118,7 @@ abstract class Handler implements MatcherInterface
         $engine  = $this->getEngine();
         $version = $this->getVersion();
         
-        return $engine . ($engine != $version && '' != $version ? ' ' . $version : '');
+        return $engine . (($engine != $version && '' != $version) ? ' ' . $version : '');
     }
     
     /**

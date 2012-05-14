@@ -136,13 +136,13 @@ abstract class Handler implements MatcherInterface
         return $this->_bits;
     }
     
-    final public function getFullName()
+    final public function getFullName($withBits = true)
     {
         $name    = $this->getName();
         $version = $this->getVersion();
         $bits    = $this->getBits();
         
-        return $name . ($name != $version && '' != $version ? ' ' . $version : '') . ($bits ? ' (' . $bits . ' Bit)' : '');
+        return $name . ($name != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**

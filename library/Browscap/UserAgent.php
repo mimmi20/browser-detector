@@ -712,13 +712,13 @@ class UserAgent
         return $this->_browser->getBits();
     }
     
-    final public function getFullBrowser()
+    final public function getFullBrowser($withBits = true)
     {
         if (null === $this->_browser) {
             return null;
         }
         
-        return $this->_browser->getFullBrowser();
+        return $this->_browser->getFullBrowser($withBits);
     }
     
     /**
@@ -753,13 +753,13 @@ class UserAgent
         return $this->_engine->getVersion();
     }
     
-    final public function getFullEngine()
+    final public function getFullEngine($withBits = true)
     {
         if (null === $this->_engine) {
             return null;
         }
         
-        return $this->_engine->getFullEngine();
+        return $this->_engine->getFullEngine($withBits);
     }
     
     final public function getPlatform()
@@ -789,13 +789,13 @@ class UserAgent
         return $this->_os->getBits();
     }
     
-    final public function getFullPlatform()
+    final public function getFullPlatform($withBits = true)
     {
         if (null === $this->_os) {
             return null;
         }
         
-        return $this->_os->getFullName();
+        return $this->_os->getFullName($withBits);
     }
     
     /**

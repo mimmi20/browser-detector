@@ -136,13 +136,13 @@ abstract class Handler implements MatcherInterface
         return $this->_bits;
     }
     
-    final public function getFullBrowser()
+    final public function getFullBrowser($withBits = true)
     {
         $browser = $this->getBrowser();
         $version = $this->getVersion();
         $bits    = $this->getBits();
         
-        return $browser . ($browser != $version && '' != $version ? ' ' . $version : '') . ($bits ? ' (' . $bits . ' Bit)' : '');
+        return $browser . ($browser != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**

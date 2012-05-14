@@ -65,6 +65,8 @@ class Browscap
     private $_logger      = null;
     private $_config      = null;
     private $_globalCache = null;
+    private $_localFile   = null;
+    private $_cachePrefix = '';
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -112,7 +114,7 @@ class Browscap
         }
         
         $cacheId = substr(
-            'agent_' . preg_replace(
+            $this->_cachePrefix . 'agent_' . preg_replace(
                 '/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent)
             ), 
             0, 
@@ -170,7 +172,7 @@ class Browscap
     private function _getGlobalCache()
     {
         if (null === $this->_globalCache) {
-            $cacheGlobalId = 'agentsGlobal';
+            $cacheGlobalId = $this->_cachePrefix . 'agentsGlobal';
             
             // Load the cache at the first request
             if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
@@ -239,6 +241,18 @@ class Browscap
     public function setLocaleFile($file)
     {
         $this->_localFile = $file;
+    }
+
+    /**
+     * sets the the cache prfix
+     *
+     * @param string $prefix the new prefix
+     *
+     * @return void
+     */
+    public function setCachePrefix($prefix)
+    {
+        $this->_cachePrefix = $prefix;
     }
 
     /**
