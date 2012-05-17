@@ -98,7 +98,7 @@ class MicrosoftPowerPoint extends BrowserHandler
         $doMatch = preg_match('/PowerPoint\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $matches[1];
+            $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
@@ -108,5 +108,18 @@ class MicrosoftPowerPoint extends BrowserHandler
     public function getWeight()
     {
         return 7;
+    }
+    
+    private function _mapVersion($version)
+    {
+        if (14 == (int) $version) {
+            return '2010';
+        }
+        
+        if (12 == (int) $version) {
+            return '2007';
+        }
+        
+        return '';
     }
 }

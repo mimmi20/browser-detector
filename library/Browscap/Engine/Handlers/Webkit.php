@@ -16,7 +16,7 @@ namespace Browscap\Engine\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Khtml.php 215 2012-05-11 21:36:09Z  $
  */
 
 use Browscap\Engine\Handler as EngineHandler;
@@ -29,14 +29,14 @@ use Browscap\Engine\Handler as EngineHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Khtml.php 215 2012-05-11 21:36:09Z  $
  */
-class Khtml extends EngineHandler
+class Webkit extends EngineHandler
 {
     /**
      * @var string the detected engine
      */
-    protected $_engine = 'KHTML';
+    protected $_engine = 'WebKit';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -49,11 +49,11 @@ class Khtml extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('KHTML', 'Konqueror'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Presto', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Presto', 'Konqueror'))) {
             return false;
         }
         
@@ -67,7 +67,21 @@ class Khtml extends EngineHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/KHTML\/([\d\.\+]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AppleWebKit\/([\d\.\+]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/WebKit\/([\d\.\+]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/CFNetwork\/([\d\.\+]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
