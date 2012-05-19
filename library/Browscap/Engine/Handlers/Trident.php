@@ -128,66 +128,6 @@ class Trident extends EngineHandler
     }
     
     /**
-     * returns TRUE if the browser suppoorts css gradients
-     *
-     * @return boolean
-     */
-    public function supportsCssGradients()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssRoundedCorners()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssBorderImages()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssSpriting()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssWidthAsPercentage()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsImageInlining()
-    {
-        return false;
-    }
-    
-    /**
      * returns TRUE if the device supports RSS Feeds
      *
      * @return boolean
@@ -203,66 +143,6 @@ class Trident extends EngineHandler
      * @return boolean
      */
     public function isPdfSupported()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewport()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportWidth()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportMinimumScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportMaximumScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportInitialScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function isViewportUserscalable()
     {
         return false;
     }

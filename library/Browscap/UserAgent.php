@@ -863,4 +863,144 @@ class UserAgent
         
         return $this->_browser->isCrawler();
     }
+    
+    /**
+     * returns TRUE if the browser supports Frames
+     *
+     * @return boolean
+     */
+    public function supportsFrames()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsFrames();
+    }
+    
+    /**
+     * returns TRUE if the browser supports IFrames
+     *
+     * @return boolean
+     */
+    public function supportsIframes()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsIframes();
+    }
+    
+    /**
+     * returns TRUE if the browser supports Tables
+     *
+     * @return boolean
+     */
+    public function supportsTables()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsTables();
+    }
+    
+    /**
+     * returns TRUE if the browser supports Cookies
+     *
+     * @return boolean
+     */
+    public function supportsCookies()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsCookies();
+    }
+    
+    /**
+     * returns TRUE if the browser supports BackgroundSounds
+     *
+     * @return boolean
+     */
+    public function supportsBackgroundSounds()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsBackgroundSounds();
+    }
+    
+    /**
+     * returns TRUE if the browser supports JavaScript
+     *
+     * @return boolean
+     */
+    public function supportsJavaScript()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsJavaScript();
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function supportsVbScript()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsVbScript();
+    }
+    
+    /**
+     * returns TRUE if the browser supports Java Applets
+     *
+     * @return boolean
+     */
+    public function supportsJavaApplets()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsJavaApplets();
+    }
+    
+    /**
+     * returns TRUE if the browser supports ActiveX Controls
+     *
+     * @return boolean
+     */
+    public function supportsActivexControls()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->supportsActivexControls();
+    }
+    
+    /**
+     * returns TRUE if the device is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isSyndicationReader()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->isSyndicationReader();
+    }
 }

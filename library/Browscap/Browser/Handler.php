@@ -259,4 +259,94 @@ abstract class Handler implements MatcherInterface
     {
         return false;
     }
+    
+    /**
+     * returns TRUE if the browser supports Frames
+     *
+     * @return boolean
+     */
+    public function supportsFrames()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports IFrames
+     *
+     * @return boolean
+     */
+    public function supportsIframes()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Tables
+     *
+     * @return boolean
+     */
+    public function supportsTables()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Cookies
+     *
+     * @return boolean
+     */
+    public function supportsCookies()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports BackgroundSounds
+     *
+     * @return boolean
+     */
+    public function supportsBackgroundSounds()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports JavaScript
+     *
+     * @return boolean
+     */
+    public function supportsJavaScript()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function supportsVbScript()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Java Applets
+     *
+     * @return boolean
+     */
+    public function supportsJavaApplets()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the browser supports ActiveX Controls
+     *
+     * @return boolean
+     */
+    public function supportsActivexControls()
+    {
+        return false;
+    }
 }

@@ -231,7 +231,7 @@ class MobileSafari extends BrowserHandler
      */
     public function supportsJavaApplets()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -285,173 +285,13 @@ class MobileSafari extends BrowserHandler
     }
     
     /**
-     * returns TRUE if the browser suppoorts css gradients
-     *
-     * @return boolean
-     */
-    public function supportsCssGradients()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssRoundedCorners()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssBorderImages()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssSpriting()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsCssWidthAsPercentage()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsHtmlCanvas()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewport()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportWidth()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function getHtmlPreferedDtd()
-    {
-        return '';
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportMinimumScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportMaximumScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsViewportInitialScale()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function isViewportUserscalable()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function supportsImageInlining()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function isMobileOptimized()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser suppoorts css rounded corners
-     *
-     * @return boolean
-     */
-    public function isHandheldFriendly()
-    {
-        return false;
-    }
-    
-    /**
      * returns TRUE if the browser supports RSS Feeds
      *
      * @return boolean
      */
     public function isRssSupported()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -461,6 +301,6 @@ class MobileSafari extends BrowserHandler
      */
     public function isPdfSupported()
     {
-        return true;
+        return false;
     }
 }

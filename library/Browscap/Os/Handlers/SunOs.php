@@ -34,7 +34,7 @@ class SunOs extends Linux
     /**
      * @var string the detected platform
      */
-    protected $_name = 'SunOs';
+    protected $_name = 'SunOS';
     
     /**
      * Returns true if this handler can handle the given $useragent
