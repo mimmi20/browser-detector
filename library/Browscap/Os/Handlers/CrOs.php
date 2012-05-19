@@ -1,5 +1,4 @@
 <?php
-declare(ENCODING = 'utf-8');
 namespace Browscap\Os\Handlers;
 
 /**

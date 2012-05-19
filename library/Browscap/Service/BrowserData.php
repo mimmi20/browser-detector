@@ -1,5 +1,4 @@
 <?php
-declare(ENCODING = 'utf-8');
 namespace Browscap\Service;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
