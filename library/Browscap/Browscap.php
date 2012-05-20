@@ -146,11 +146,8 @@ class Browscap
             }
 
             // Add the keys for each property
-            $array = array();
-            foreach ($browser as $key => $value) {
-                $array[$globalCache['properties'][(int)$key]] = $value;
-            }
-
+            $array = $browser;
+            
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                 $this->_cache->save($array, $cacheId);
             }
@@ -192,24 +189,11 @@ class Browscap
     {
         $globalCache = $this->_getGlobalCache();
         
-        if (empty($globalCache)) {
+        if (empty($globalCache['browsers'])) {
             return null;
         }
         
-        $allBrowsers = array();
-        
-        foreach (array_keys($globalCache['patterns']) as $key) {
-            $browser = $globalCache['browsers'][$key];
-            $array   = array();
-            
-            foreach ($browser as $key => $value) {
-                $array[$globalCache['properties'][(int)$key]] = $value;
-            }
-            
-            $allBrowsers[] = $array;
-        }
-        
-        return $allBrowsers;
+        return $globalCache['browsers'];
     }
 
     /**
@@ -269,7 +253,7 @@ class Browscap
         
         array_shift($browsers);
         
-        $this->_properties  = array_keys($browsers['DefaultProperties']);
+        $this->_properties = array_keys($browsers['DefaultProperties']);
         array_unshift(
             $this->_properties,
             'browser_name',
@@ -278,7 +262,7 @@ class Browscap
             'Parent'
         );
 
-        $this->_userAgents  = array_keys($browsers);
+        $this->_userAgents = array_keys($browsers);
         
         usort(
             $this->_userAgents,
@@ -289,7 +273,6 @@ class Browscap
             }
         );
 
-        //$aUserAgentKeys  = array_flip($this->_userAgents);
         $aPropertiesKeys = array_flip($this->_properties);
 
         foreach ($this->_userAgents as $sUserAgent) {
@@ -323,20 +306,52 @@ class Browscap
 
         $userAgent = $sUserAgent;
         $parents   = array($userAgent);
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - search all Parents - Start): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         while (isset($browsers[$userAgent]['Parent'])) {
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - search Parent [' . $browsers[$userAgent]['Parent'] . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
             $parents[] = $browsers[$userAgent]['Parent'];
             $userAgent = $browsers[$userAgent]['Parent'];
         }
         unset($userAgent);
-        //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - search all Parents - End): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+        
         $parents     = array_reverse($parents);
         $browserData = array();
 
         foreach ($parents as $parent) {
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - merge Parents [' . $parent . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
+            if (!isset($browsers[$parent])) {
+                $this->_logger->warn(
+                    '"' . $parent . '" not found in browsers collection'
+                );
+                
+                continue;
+            }
+            
+            if (!is_array($browsers[$parent])) {
+                $this->_logger->warn(
+                    '"' . $parent . '" found in browsers collection, '
+                    . 'but the entry is empty'
+                );
+                
+                continue;
+            }
+            
             if (isset($browsers[$parent]) && is_array($browsers[$parent])) {
+                /*
+                foreach ($browsers[$parent] as $propName => $propValue) {
+                    if (empty($browserData[$propName])) {
+                        $browserData[$propName] = $browsers[$parent][$propName];
+                        continue;
+                    }
+                    
+                    if ($browserData[$propName] == $browsers[$parent][$propName]) {
+                        $this->_logger->warn(
+                            'property "' . $propName 
+                            . '" has same value in Agent "' . $parent 
+                            . '" as in one of their parents'
+                        );
+                    }
+                }
+                /**/
+                
                 $browserData = array_merge($browserData, $browsers[$parent]);
             }
         }
@@ -352,13 +367,6 @@ class Browscap
                            . '@';
 
         foreach ($browserData as $key => $value) {
-            //echo "\t\t\t\t\t" . 'detecting Browser (Browscap - parse Values [' . $key . ']): ' . (microtime(true) - START_TIME) . ' Sek. ' . number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes' . "\n";
-            if (!isset($aPropertiesKeys[$key])) {
-                continue;
-            }
-            
-            $key = $aPropertiesKeys[$key];
-
             switch ($value) {
                 case 'true':
                     $browser[$key] = true;
@@ -371,7 +379,7 @@ class Browscap
                     break;
             }
         }
-
+        
         $this->_browsers[] = $browser;
     }
 }

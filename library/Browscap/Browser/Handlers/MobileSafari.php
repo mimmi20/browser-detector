@@ -131,23 +131,23 @@ class MobileSafari extends BrowserHandler
     private function _mapVersion($detectedVersion)
     {
         if ($detectedVersion >= 7500) {
-            return 5.1;
+            return '5.1';
         }
         
         if ($detectedVersion >= 6500) {
-            return 5.0;
+            return '5.0';
         }
         
         if ($detectedVersion >= 750) {
-            return 5.1;
+            return '5.1';
         }
         
         if ($detectedVersion >= 650) {
-            return 5.0;
+            return '5.0';
         }
         
         if ($detectedVersion >= 500) {
-            return 4.0;
+            return '4.0';
         }
         
         return $detectedVersion;

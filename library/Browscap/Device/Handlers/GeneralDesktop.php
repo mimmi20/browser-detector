@@ -36,7 +36,7 @@ class GeneralDesktop extends DeviceHandler
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Desktop';
+    protected $_device = 'General Desktop';
     
     /**
      * Final Interceptor: Intercept

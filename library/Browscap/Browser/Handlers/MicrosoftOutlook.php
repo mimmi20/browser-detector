@@ -106,7 +106,21 @@ class MicrosoftOutlook extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/Microsoft Office Outlook (\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $this->_mapVersion($matches[1]);
+            return;
+        }
+        
         $doMatch = preg_match('/Microsoft Outlook (\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $this->_mapVersion($matches[1]);
+            return;
+        }
+        
+        $doMatch = preg_match('/Microsoft Outlook (\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);
@@ -120,7 +134,21 @@ class MicrosoftOutlook extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/MSOffice (\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $this->_mapVersion($matches[1]);
+            return;
+        }
+        
         $doMatch = preg_match('/Microsoft Office\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $this->_mapVersion($matches[1]);
+            return;
+        }
+        
+        $doMatch = preg_match('/Microsoft Office\/(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);

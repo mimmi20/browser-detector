@@ -18,10 +18,8 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
- * OperaHandlder
+ * MSIEAgentHandler
  *
  *
  * @category   WURFL
@@ -30,12 +28,12 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class OperaMini extends BrowserHandler
+class CrazyBrowser extends MicrosoftInternetExplorer
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Opera Mini';
+    protected $_browser = 'Crazy Browser';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,13 +46,39 @@ class OperaMini extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Opera/')
-        ) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Opera Mini')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MSIE')) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Crazy Browser'))) {
+            return false;
+        }
+        
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'PaleMoon',
+            'Flock',
+            'AOL',
+            'MyIE',
+            //others
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV'
+        );
+        
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
             return false;
         }
         
@@ -68,14 +92,7 @@ class OperaMini extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Opera Mini\/(\d+\.\d+)\./', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Opera Mini\/(\d+)\./', $this->_useragent, $matches);
+        $doMatch = preg_match('/Crazy Browser ((\d+\.\d+))/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -92,7 +109,7 @@ class OperaMini extends BrowserHandler
      */
     public function getWeight()
     {
-        return 278;
+        return 8;
     }
     
     /**
@@ -142,7 +159,7 @@ class OperaMini extends BrowserHandler
      */
     public function supportsBackgroundSounds()
     {
-        return false;
+        return true;
     }
     
     /**
@@ -162,7 +179,7 @@ class OperaMini extends BrowserHandler
      */
     public function supportsVbScript()
     {
-        return false;
+        return true;
     }
     
     /**
@@ -172,7 +189,7 @@ class OperaMini extends BrowserHandler
      */
     public function supportsJavaApplets()
     {
-        return false;
+        return true;
     }
     
     /**
@@ -182,7 +199,7 @@ class OperaMini extends BrowserHandler
      */
     public function supportsActivexControls()
     {
-        return false;
+        return true;
     }
     
     /**
@@ -213,35 +230,5 @@ class OperaMini extends BrowserHandler
     public function isCrawler()
     {
         return false;
-    }
-    
-    /**
-     * returns TRUE if the browser is a Syndication Reader
-     *
-     * @return boolean
-     */
-    public function isTranscoder()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports RSS Feeds
-     *
-     * @return boolean
-     */
-    public function isRssSupported()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports PDF documents
-     *
-     * @return boolean
-     */
-    public function isPdfSupported()
-    {
-        return true;
     }
 }

@@ -57,7 +57,7 @@ class Bingbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/bingbot\/([\d\.ab]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/bingbot\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

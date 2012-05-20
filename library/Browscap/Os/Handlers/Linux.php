@@ -58,8 +58,10 @@ class Linux extends OsHandler
             'Debian',
             'Ubuntu',
             'CrOS',
-            'SunOS',
-            'Mint'
+            'Mint',
+            // other OS which are using X11
+            'BSD',
+            'SunOS'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
@@ -78,14 +80,14 @@ class Linux extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Linux\/([\d\.\-a-z]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Linux\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Linux ([\d\.\-a-z]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Linux (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
