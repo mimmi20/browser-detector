@@ -63,28 +63,28 @@ class Nutch extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Nutch\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Nutch\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Nutch\-([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Nutch\-(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/CazoodleBot\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CazoodleBot\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/LOOQ\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/LOOQ\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

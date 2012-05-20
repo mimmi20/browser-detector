@@ -65,14 +65,14 @@ class WindowsMediaPlayer extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Windows-Media-Player\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows-Media-Player\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/NSPlayer\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NSPlayer\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

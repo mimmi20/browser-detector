@@ -61,7 +61,7 @@ class PicCollage extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Pic%20Collage\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Pic%20Collage\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

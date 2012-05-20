@@ -79,21 +79,21 @@ class Facebook extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Facebook ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Facebook (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/FBAV\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/FBAV\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/facebookexternalhit\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/facebookexternalhit\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

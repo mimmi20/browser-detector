@@ -94,14 +94,14 @@ class Konqueror extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Konqueror\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Konqueror\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/konqueror\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/konqueror\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

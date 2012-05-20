@@ -61,14 +61,14 @@ class Larbin extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/binlar\_([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/binlar\_(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/larbin\_([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/larbin\_(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

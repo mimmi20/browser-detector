@@ -64,7 +64,7 @@ class Ios extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/IphoneOSX\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/IphoneOSX\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -99,14 +99,14 @@ class Ios extends OsHandler
             return;
         }
         
-        $doMatch = preg_match('/iPhone OS ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/iPhone OS (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/iPhone_OS\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/iPhone_OS\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);

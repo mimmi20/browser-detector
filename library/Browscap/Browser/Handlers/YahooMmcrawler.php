@@ -61,7 +61,7 @@ class YahooMmcrawler extends Yahoo
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Yahoo-MMCrawler\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Yahoo-MMCrawler\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

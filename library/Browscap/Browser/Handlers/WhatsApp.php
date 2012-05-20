@@ -63,7 +63,7 @@ class WhatsApp extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/WhatsApp\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WhatsApp\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

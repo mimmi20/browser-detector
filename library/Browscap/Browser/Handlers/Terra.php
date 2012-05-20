@@ -67,7 +67,7 @@ class Terra extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Terra\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Terra\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

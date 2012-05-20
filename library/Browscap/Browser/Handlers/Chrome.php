@@ -18,8 +18,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * ChromeUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Chrome extends BrowserHandler
+class Chrome extends Chromium
 {
     /**
      * @var string the detected browser
@@ -89,7 +87,7 @@ class Chrome extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Chrome\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Chrome\/(\d+\.\d)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

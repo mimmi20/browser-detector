@@ -63,7 +63,7 @@ class WindowsLiveSocialObjectExtractorEng extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Windows-Live-Social-Object-Extractor-Engine\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows-Live-Social-Object-Extractor-Engine\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

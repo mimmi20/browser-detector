@@ -67,7 +67,7 @@ class Ruunk extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Ruunk\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Ruunk\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

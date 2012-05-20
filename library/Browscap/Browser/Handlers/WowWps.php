@@ -63,7 +63,7 @@ class WowWps extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/WOW%20WPs\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WOW%20WPs\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

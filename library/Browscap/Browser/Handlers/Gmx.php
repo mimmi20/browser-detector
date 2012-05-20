@@ -89,7 +89,7 @@ class Gmx extends MicrosoftInternetExplorer
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/GMX ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/GMX (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

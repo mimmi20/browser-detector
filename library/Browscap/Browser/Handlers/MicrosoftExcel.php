@@ -94,7 +94,7 @@ class MicrosoftExcel extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Excel\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Excel\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);

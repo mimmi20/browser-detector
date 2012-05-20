@@ -65,7 +65,7 @@ class UoftdbExperiment extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/UoftdbExperiment\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/UoftdbExperiment\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -63,7 +63,7 @@ class XchaosArachne extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/xChaos_Arachne\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/xChaos_Arachne\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

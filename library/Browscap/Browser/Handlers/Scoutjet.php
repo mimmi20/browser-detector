@@ -65,7 +65,7 @@ class Scoutjet extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Scoutjet\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Scoutjet\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

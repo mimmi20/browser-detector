@@ -46,20 +46,20 @@ class MicrosoftInternetExplorer extends BrowserHandler
     protected $_browser = 'Internet Explorer';
     
     private $_patterns = array(
-        '/Mozilla\/5\.0 \(compatible; MSIE 10\.0.*/'      => '10.0',
-        '/Mozilla\/5\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
-        '/Mozilla\/4\.0 \(compatible; MSIE 9\.0.*/'       => '9.0',
-        '/Mozilla\/4\.0 \(compatible; MSIE 8\.0.*/'       => '8.0',
-        '/Mozilla\/4\.0 \(compatible; MSIE 7\.0.*/'       => '7.0',
-        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 6\.0.*/'  => '6.0',
-        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.5.*/'  => '5.5',
-        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.01.*/' => '5.01',
-        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 5\.0.*/'  => '5.0',
-        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.01.*/' => '4.01',
-        '/Mozilla\/4\.0 \(.*compatible.*;.*MSIE 4\.0.*/'  => '4.0',
-        '/Mozilla\/.*\(.*compatible.*;.*MSIE 3\..*/'      => '3.0',
-        '/Mozilla\/.*\(.*compatible.*;.*MSIE 2\..*/'      => '2.0',
-        '/Mozilla\/.*\(.*compatible.*;.*MSIE 1\..*/'      => '1.0'
+        '/Mozilla\/5\.0 \(.*MSIE 10\.0.*/' => '10.0',
+        '/Mozilla\/5\.0 \(.*MSIE 9\.0.*/'  => '9.0',
+        '/Mozilla\/4\.0 \(.*MSIE 9\.0.*/'  => '9.0',
+        '/Mozilla\/4\.0 \(.*MSIE 8\.0.*/'  => '8.0',
+        '/Mozilla\/4\.0 \(.*MSIE 7\.0.*/'  => '7.0',
+        '/Mozilla\/4\.0 \(.*MSIE 6\.0.*/'  => '6.0',
+        '/Mozilla\/4\.0 \(.*MSIE 5\.5.*/'  => '5.5',
+        '/Mozilla\/4\.0 \(.*MSIE 5\.01.*/' => '5.01',
+        '/Mozilla\/4\.0 \(.*MSIE 5\.0.*/'  => '5.0',
+        '/Mozilla\/4\.0 \(.*MSIE 4\.01.*/' => '4.01',
+        '/Mozilla\/4\.0 \(.*MSIE 4\.0.*/'  => '4.0',
+        '/Mozilla\/.*\(.*MSIE 3\..*/'      => '3.0',
+        '/Mozilla\/.*\(.*MSIE 2\..*/'      => '2.0',
+        '/Mozilla\/.*\(.*MSIE 1\..*/'      => '1.0'
     );
     
     /**
@@ -87,7 +87,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Webkit',
             'KHTML',
             // using also the Trident rendering engine
-            'Maxthon',
+            //'Maxthon',
             'Galeon',
             'Lunascape',
             'Opera',
@@ -95,8 +95,8 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Flock',
             //'Avant',
             //'avantbrowser',
-            'MyIE',
-            'Crazy Browser',
+            //'MyIE',
+            //'Crazy Browser',
             // other Browsers
             'AppleWebKit',
             'Chrome',
@@ -133,7 +133,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MSIE (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

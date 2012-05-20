@@ -62,7 +62,7 @@ class Silk extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Silk\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Silk\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

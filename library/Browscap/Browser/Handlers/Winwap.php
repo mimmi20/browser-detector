@@ -63,14 +63,14 @@ class Winwap extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/WinWAP\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WinWAP\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/WinWAP-PRO\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WinWAP-PRO\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

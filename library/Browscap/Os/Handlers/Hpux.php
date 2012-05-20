@@ -64,7 +64,7 @@ class Hpux extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/HP-UX\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/HP-UX\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

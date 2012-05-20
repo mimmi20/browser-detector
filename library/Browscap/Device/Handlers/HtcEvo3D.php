@@ -65,7 +65,7 @@ class HtcEvo3D extends GeneralMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/HTC\/EVO_3D\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/HTC\/EVO_3D\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

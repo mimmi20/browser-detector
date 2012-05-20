@@ -94,7 +94,7 @@ class MicrosoftWord extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Word\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Word\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);

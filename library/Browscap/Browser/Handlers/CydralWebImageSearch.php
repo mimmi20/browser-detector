@@ -61,7 +61,7 @@ class CydralWebImageSearch extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/CydralSpider\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CydralSpider\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

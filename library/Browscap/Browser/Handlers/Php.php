@@ -62,7 +62,7 @@ class Php extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/PHP\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/PHP\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -34,7 +34,7 @@ class Android extends MobileSafari
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Android Webkit (Mobile Safari)';
+    protected $_browser = 'Android Browser';
     
     /**
      * Returns true if this handler can handle the given user agent

@@ -65,42 +65,42 @@ class Googlebot extends Google
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Googlebot\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Googlebot\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/GoogleBot\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/GoogleBot\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Googlebot v([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Googlebot v(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Googlebot-Image\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Googlebot-Image\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Googlebot-News\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Googlebot-News\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Google\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Google\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

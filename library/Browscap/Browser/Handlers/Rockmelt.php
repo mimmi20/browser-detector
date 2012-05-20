@@ -28,7 +28,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Rockmelt extends Chrome
+class Rockmelt extends Chromium
 {
     /**
      * @var string the detected browser
@@ -79,7 +79,7 @@ class Rockmelt extends Chrome
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/RockMelt\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/RockMelt\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

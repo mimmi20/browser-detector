@@ -59,77 +59,77 @@ class TelecaObigo extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/MIC\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MIC\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/ObigoInternetBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/ObigoInternetBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Obigo Browser ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Obigo Browser (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Obigo\-Browser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Obigo\-Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Teleca\-Obigo ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Teleca\-Obigo (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Obigo\-Q05A\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Obigo\-Q05A\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/TelecaBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/TelecaBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Teleca\-Q([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Teleca\-Q(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = ltrim($matches[1], '0');
             return;
         }
         
-        $doMatch = preg_match('/Obigo\-Q([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Obigo\-Q(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = ltrim($matches[1], '0');
             return;
         }
         
-        $doMatch = preg_match('/Obigo\/Q([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Obigo\/Q(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = ltrim($matches[1], '0');
             return;
         }
         
-        $doMatch = preg_match('/Teleca\/Q([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Teleca\/Q(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = ltrim($matches[1], '0');

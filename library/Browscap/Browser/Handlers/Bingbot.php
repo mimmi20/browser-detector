@@ -64,7 +64,7 @@ class Bingbot extends GeneralBot
             return;
         }
         
-        $doMatch = preg_match('/Bing\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Bing\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -18,8 +18,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * ChromeUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class ComodoDragon extends BrowserHandler
+class ComodoDragon extends Chromium
 {
     /**
      * @var string the detected browser
@@ -81,7 +79,7 @@ class ComodoDragon extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Comodo Dragon\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Comodo Dragon\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

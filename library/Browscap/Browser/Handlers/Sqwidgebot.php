@@ -65,7 +65,7 @@ class Sqwidgebot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Sqwidgebot\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Sqwidgebot\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

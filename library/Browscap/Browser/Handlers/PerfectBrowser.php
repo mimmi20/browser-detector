@@ -63,14 +63,14 @@ class PerfectBrowser extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Perfect\%20Browser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Perfect\%20Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Perfect\%20Browser\-iPad\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Perfect\%20Browser\-iPad\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
