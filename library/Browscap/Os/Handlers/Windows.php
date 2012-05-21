@@ -102,11 +102,6 @@ class Windows extends OsHandler
                     break;
                 case '5.3':
                 case '5.2':
-                    $version = 'Server 2003';
-                    if ('64' == $this->_detectBits()) {
-                        $version = 'XP';
-                    }
-                    break;
                 case '5.1':
                     $version = 'XP';
                     break;
@@ -143,11 +138,6 @@ class Windows extends OsHandler
                     break;
                 case '5.3':
                 case '5.2':
-                    $version = 'Server 2003';
-                    if ('64' == $this->_detectBits()) {
-                        $version = 'XP';
-                    }
-                    break;
                 case '5.1':
                 case 'XP':
                     $version = 'XP';

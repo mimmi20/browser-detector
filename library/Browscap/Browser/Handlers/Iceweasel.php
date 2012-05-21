@@ -102,6 +102,13 @@ class Iceweasel extends Firefox
             return;
         }
         
+        $doMatch = preg_match('/Firefox\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $this->_version = '';
     }
     

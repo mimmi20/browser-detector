@@ -99,6 +99,16 @@ class Maxthon extends BrowserHandler
      */
     protected function _detectVersion()
     {
+        if (false !== strpos($this->_useragent, 'MyIE')) {
+            $this->_version = '1.0';
+            return;
+        }
+        
+        if (false !== strpos($this->_useragent, 'MyIE2')) {
+            $this->_version = '2.0';
+            return;
+        }
+        
         $doMatch = preg_match('/Maxthon\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
@@ -106,14 +116,14 @@ class Maxthon extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/MyIE\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Maxthon (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $this->_version = '';
+        $this->_version = '2.0';
     }
     
     /**

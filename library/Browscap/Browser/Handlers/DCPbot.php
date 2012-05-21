@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Browser\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungGtp7501.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
  */
 
 /**
@@ -26,22 +26,20 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungGtp7501.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
  */
 
-class SamsungGtp7300 extends GeneralMobile
+class DCPbot extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'Samsung GT-P7300';
+    protected $_browser = 'DCPbot';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -49,24 +47,10 @@ class SamsungGtp7300 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SAMSUNG-GT-P7300', 'GT-P7300'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('SAMSUNG-GT-P7300B', 'GT-P7300B'))) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'DCPbot/')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 5;
     }
 }

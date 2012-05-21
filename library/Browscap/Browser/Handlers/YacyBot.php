@@ -73,7 +73,7 @@ class YacyBot extends BrowserHandler
      */
     public function supportsFrames()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -93,7 +93,7 @@ class YacyBot extends BrowserHandler
      */
     public function supportsTables()
     {
-        return true;
+        return false;
     }
     
     /**

@@ -72,4 +72,124 @@ class Ipick extends BrowserHandler
         
         $this->_version = '';
     }
+    
+    /**
+     * returns TRUE if the browser supports Frames
+     *
+     * @return boolean
+     */
+    public function supportsFrames()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports IFrames
+     *
+     * @return boolean
+     */
+    public function supportsIframes()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Tables
+     *
+     * @return boolean
+     */
+    public function supportsTables()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Cookies
+     *
+     * @return boolean
+     */
+    public function supportsCookies()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports BackgroundSounds
+     *
+     * @return boolean
+     */
+    public function supportsBackgroundSounds()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports JavaScript
+     *
+     * @return boolean
+     */
+    public function supportsJavaScript()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function supportsVbScript()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports Java Applets
+     *
+     * @return boolean
+     */
+    public function supportsJavaApplets()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports ActiveX Controls
+     *
+     * @return boolean
+     */
+    public function supportsActivexControls()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isBanned()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isSyndicationReader()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function isCrawler()
+    {
+        return false;
+    }
 }

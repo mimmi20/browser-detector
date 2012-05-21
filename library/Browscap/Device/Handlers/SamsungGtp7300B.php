@@ -29,12 +29,12 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: SamsungGtp7501.php 173 2012-01-28 13:38:35Z  $
  */
 
-class SamsungGtp7300 extends GeneralMobile
+class SamsungGtp7300B extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Samsung GT-P7300';
+    protected $_device = 'Samsung GT-P7300B';
     
     /**
      * Final Interceptor: Intercept
@@ -49,11 +49,7 @@ class SamsungGtp7300 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SAMSUNG-GT-P7300', 'GT-P7300'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('SAMSUNG-GT-P7300B', 'GT-P7300B'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SAMSUNG-GT-P7300B', 'GT-P7300B'))) {
             return false;
         }
         
