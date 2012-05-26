@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Engine\Handlers;
+namespace Browscap\Os\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Engine\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Hpux.php 220 2012-05-20 11:12:21Z  $
  */
 
-use Browscap\Engine\Handler as EngineHandler;
+use Browscap\Os\Handler as OsHandler;
 
 /**
  * MSIEAgentHandler
@@ -28,17 +28,17 @@ use Browscap\Engine\Handler as EngineHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Hpux.php 220 2012-05-20 11:12:21Z  $
  */
-class Presto extends EngineHandler
+class Aix extends OsHandler
 {
     /**
-     * @var string the detected engine
+     * @var string the detected platform
      */
-    protected $_engine = 'Presto';
+    protected $_name = 'AIX';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Returns true if this handler can handle the given $useragent
      *
      * @return bool
      */
@@ -48,11 +48,7 @@ class Presto extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Presto', 'Opera'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'Trident', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AIX'))) {
             return false;
         }
         
@@ -68,7 +64,7 @@ class Presto extends EngineHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Presto\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AIX (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -76,35 +72,5 @@ class Presto extends EngineHandler
         }
         
         $this->_version = '';
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1093;
-    }
-    
-    /**
-     * returns TRUE if the device supports RSS Feeds
-     *
-     * @return boolean
-     */
-    public function isRssSupported()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the device supports PDF documents
-     *
-     * @return boolean
-     */
-    public function isPdfSupported()
-    {
-        return true;
     }
 }

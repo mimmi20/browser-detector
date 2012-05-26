@@ -48,11 +48,16 @@ class Chrome extends Chromium
         
         if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
             && !$this->_utils->checkIfStartsWith($this->_useragent, 'Chrome/')
+            && !$this->_utils->checkIfStartsWith($this->_useragent, 'CrMo/')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Chrome'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'AppleWebKit')) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Chrome', 'CrMo'))) {
             return false;
         }
         
@@ -88,6 +93,13 @@ class Chrome extends Chromium
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Chrome\/(\d+\.\d)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/CrMo\/(\d+\.\d)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

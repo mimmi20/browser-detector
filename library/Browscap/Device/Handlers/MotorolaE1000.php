@@ -29,12 +29,12 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
  */
 
-class MotorolaXt910 extends GeneralMobile
+class MotorolaE1000 extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Motorola Xt910';
+    protected $_device = 'Motorola E1000';
     
     /**
      * Final Interceptor: Intercept
@@ -49,7 +49,7 @@ class MotorolaXt910 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MOT-XT910')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MOT-E1000')) {
             return false;
         }
         

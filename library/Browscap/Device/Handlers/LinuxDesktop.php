@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id: WindowsDesktop.php 219 2012-05-19 16:50:35Z  $
  */
 
 /**
@@ -26,15 +26,15 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id: WindowsDesktop.php 219 2012-05-19 16:50:35Z  $
  */
 
-class MotorolaXt910 extends GeneralMobile
+class LinuxDesktop extends GeneralDesktop
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Motorola Xt910';
+    protected $_device = 'Linux Desktop';
     
     /**
      * Final Interceptor: Intercept
@@ -49,7 +49,15 @@ class MotorolaXt910 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MOT-XT910')) {
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+            return false;
+        }
+        
+        $linux = array(
+            'Linux', 'Debian', 'Ubuntu', 'Suse'
+        );
+        
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $linux)) {
             return false;
         }
         
@@ -63,6 +71,6 @@ class MotorolaXt910 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 100;
     }
 }

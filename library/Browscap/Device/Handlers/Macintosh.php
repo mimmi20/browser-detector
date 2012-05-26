@@ -54,7 +54,7 @@ class Macintosh extends GeneralDesktop
         }
         
         $mac = array(
-            'Macintosh', 'Darwin'
+            'Macintosh', 'Darwin', 'Mac_PowerPC'
         );
         
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $mac)) {

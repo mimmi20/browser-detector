@@ -56,7 +56,8 @@ class Trident extends EngineHandler
         
         $noTridentEngines = array(
             'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
-            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)'
+            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Mac_PowerPC',
+            'Opera'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $noTridentEngines)) {

@@ -36,7 +36,7 @@ class WordPress extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Word Press';
+    protected $_browser = 'WordPress';
     
     /**
      * Returns true if this handler can handle the given user agent

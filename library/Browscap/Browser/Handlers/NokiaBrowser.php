@@ -49,7 +49,9 @@ class NokiaBrowser extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'NokiaBrowser');
+        return $this->_utils->checkIfContainsAnyOf(
+            $this->_useragent, array('NokiaBrowser', 'BrowserNG')
+        );
     }
     
     /**
@@ -60,6 +62,13 @@ class NokiaBrowser extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/NokiaBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/BrowserNG\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

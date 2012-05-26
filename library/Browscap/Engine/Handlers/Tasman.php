@@ -15,7 +15,7 @@ namespace Browscap\Engine\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Trident.php 220 2012-05-20 11:12:21Z  $
  */
 
 use Browscap\Engine\Handler as EngineHandler;
@@ -28,14 +28,14 @@ use Browscap\Engine\Handler as EngineHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Trident.php 220 2012-05-20 11:12:21Z  $
  */
-class Presto extends EngineHandler
+class Tasman extends EngineHandler
 {
     /**
      * @var string the detected engine
      */
-    protected $_engine = 'Presto';
+    protected $_engine = 'Tasman';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,34 +48,22 @@ class Presto extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Presto', 'Opera'))) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/') 
+            && !$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE', 'Mac_PowerPC'))
+        ) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'Trident', 'Gecko'))) {
+        $noTridentEngines = array(
+            'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
+            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Trident'
+        );
+        
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $noTridentEngines)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/Presto\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     /**
@@ -85,7 +73,7 @@ class Presto extends EngineHandler
      */
     public function getWeight()
     {
-        return 1093;
+        return 8;
     }
     
     /**
@@ -105,6 +93,6 @@ class Presto extends EngineHandler
      */
     public function isPdfSupported()
     {
-        return true;
+        return false;
     }
 }
