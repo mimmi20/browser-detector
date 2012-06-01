@@ -71,7 +71,6 @@ class Palemoon extends BrowserHandler
             'Opera',
             'Lunascape',
             'Flock',
-            'Avant',
             'MyIE',
             // other Browsers
             'AppleWebKit',

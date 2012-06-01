@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Os\Handlers;
+namespace Browscap\Browser\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,30 +15,29 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
  */
 
-use Browscap\Os\Handler as OsHandler;
-
 /**
- * MSIEAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
  */
-class Dalvik extends OsHandler
+
+class PagePeeker extends GeneralBot
 {
     /**
-     * @var string the detected platform
+     * @var string the detected browser
      */
-    protected $_name = 'Dalvik';
+    protected $_browser = 'PagePeeker';
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
@@ -48,7 +47,11 @@ class Dalvik extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Dalvik'))) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('PagePeeker/'))) {
             return false;
         }
         
@@ -58,13 +61,11 @@ class Dalvik extends OsHandler
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $this->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Dalvik\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/PagePeeker\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -72,15 +73,5 @@ class Dalvik extends OsHandler
         }
         
         $this->_version = '';
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 4;
     }
 }

@@ -36,7 +36,7 @@ class MB860 extends DeviceHandler
     /**
      * @var string the detected device
      */
-    protected $_device = 'MB860';
+    protected $_device = 'Motorola MB860';
     
     /**
      * Final Interceptor: Intercept

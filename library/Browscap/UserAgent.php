@@ -40,7 +40,7 @@ use \Browscap\Model;
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2007-2010 Unister GmbH
  */
-class UserAgent
+class UserAgent extends Core
 {
     /**
      * the user agent sent from the browser
@@ -70,18 +70,6 @@ class UserAgent
      */
     private $_browser = null;
 
-    /**
-     * a \Zend\Cache object
-     *
-     * @var \Zend\Cache
-     */
-    private $_cache = null;
-    
-    /*
-     * @var \Zend\Log\Logger
-     */
-    private $_logger = null;
-    
     /**
      * @var \Browscap\Broscap
      */
@@ -137,64 +125,11 @@ class UserAgent
      */
     private $_deviceChain = null;
     
-    /**
-     * @var \Browscap\Support
-     */
-    private $_support = null;
-    
     private $_engine = null;
     
     private $_os = null;
     
     private $_device = null;
-
-    /**
-     * Constructor class, checks for the existence of (and loads) the cache and
-     * if needed updated the definitions
-     */
-    public function __construct()
-    {
-        //
-    }
-    
-    /**
-     * sets the logger used when errors occur
-     *
-     * @param \Zend\Log\Logger $logger
-     *
-     * @return 
-     */
-    public function setLogger(\Zend\Log\Logger $logger)
-    {
-        $this->_logger = $logger;
-        
-        return $this;
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Frontend\Core $cache
-     *
-     * @return 
-     */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        $this->_cache = $cache;
-        
-        return $this;
-    }
-    
-    public function cleanAgent($userAgent)
-    {
-        $userAgent = str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent);
-        $userAgent = str_replace(array(' :: '), ';', $userAgent);
-        $userAgent = str_replace(array('%2C'), '.', $userAgent);
-        $userAgent = preg_replace('/\s+\s/', ' ', $userAgent);
-        $userAgent = trim($userAgent);
-        
-        return $userAgent;
-    }
 
     /**
      * Gets the information about the browser by User Agent
@@ -203,59 +138,32 @@ class UserAgent
      *
      * @return 
      */
-    public function getBrowser($userAgent = null, $forceDetected = false, $useDb = false)
+    public function getBrowser($userAgent = null, $forceDetect = false)
     {
-        // Automatically detect the useragent
+        // Automatically detect the useragent, if not given
         if (empty($userAgent) || !is_string($userAgent)) {
-            if (null === $this->_support) {
-                $this->_support = new Support();
-            }
-            
             $userAgent = $this->_support->getUserAgent();
         }
         
-        if (null === $this->_serviceAgents && $useDb) {
-            $this->_serviceAgents = new Service\Agents();
-        }
+        $this->_agent        = $userAgent;
+        $this->_cleanedAgent = $this->_support->cleanAgent($userAgent);
         
-        $this->_agent = $userAgent;
-        
-        $userAgent = $this->cleanAgent($userAgent);
-        
-        $this->_cleanedAgent = $userAgent;
-        
-        $cacheId = substr(
-            'agent_' . preg_replace(
-                '/[^a-zA-Z0-9]/', '_', $userAgent
-            ), 
-            0, 
-            179
-        );
-        
-        if ($forceDetected 
-            || $useDb
-            || !($this->_cache instanceof \Zend\Cache\Frontend\Core)
-            || !($browserArray = $this->_cache->load($cacheId))
+        if ($forceDetect 
+            || !($browserArray = $this->_getBrowserFromCache($this->_cleanedAgent))
         ) {
-            $browserArray = $this->_detect($this->_cleanedAgent, $forceDetected, $useDb);
+            $this->_device  = $this->_detectDevice();
+            $this->_os      = $this->_detectOs();
+            $this->_engine  = $this->_detectEngine();
+            $this->_browser = $this->_detectBrowser();
+            
+            $browserArray = $this;
             
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                $cacheId = $this->_getCacheFromAgent($userAgent);
+                
                 $this->_cache->save($browserArray, $cacheId);
             }
-            
         }
-        
-        if ($forceDetected && $useDb) {
-            
-            $agent = $this->_serviceAgents->searchByAgent($userAgent);
-            $this->_serviceAgents->count($agent->idAgents);
-            
-            $this->_idAgent = $agent->idAgents;
-            
-            unset($agent);
-        }
-        
-        unset($cacheId);
         
         return $browserArray;
     }
@@ -267,38 +175,27 @@ class UserAgent
      *
      * @return 
      */
-    private function _detect($userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectEngine()
     {
-        $agent = null;
+        $engineChain = new Engine\Chain();
+        $engineChain->setLogger($this->_logger);
+        $engineChain->setCache($this->_cache);
         
-        if ($useDb) {
-            $agent = $this->_serviceAgents->searchByAgent($userAgent);
-            
-            if (!is_object($agent)) {
-                $agent        = $this->_serviceAgents->createRow();
-                $agent->agent = $userAgent;
-                $agent->save();
-            }
-            
-            $this->_serviceAgents->getModel()->getAdapter()->beginTransaction();
-            
-            if ($forceDetected) {
-                $this->_serviceAgents->count($agent->idAgents);
-            }
-        }
+        return $engineChain->detect($this->_cleanedAgent);
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @return 
+     */
+    private function _detectBrowser()
+    {
+        $browserChain = new Browser\Chain();
+        $browserChain->setLogger($this->_logger);
+        $browserChain->setCache($this->_cache);
         
-        $this->_engine  = $this->_detectEngine($agent, $userAgent, $forceDetected, $useDb);
-        $this->_browser = $this->_detectBrowser($agent, $userAgent, $forceDetected, $useDb);
-        $this->_os      = $this->_detectOs($agent, $userAgent, $forceDetected, $useDb);
-        $this->_device  = $this->_detectDevice($agent, $userAgent, $forceDetected, $useDb);
-        
-        if ($useDb) {
-            $this->_serviceAgents->update($agent->toArray(), 'idAgents = ' . (int) $agent->idAgents);
-            
-            $this->_serviceAgents->getModel()->getAdapter()->commit();
-        }
-        
-        return $this;
+        return $browserChain->detect($this->_cleanedAgent);
     }
 
     /**
@@ -308,68 +205,13 @@ class UserAgent
      *
      * @return 
      */
-    private function _detectEngine($agent, $userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectOs()
     {
-        if (null === $this->_serviceEngines 
-            && $useDb 
-            && $agent instanceof \Zend\Db\Table\Row
-        ) {
-            $this->_serviceEngines = new Service\Engines();
-        }
+        $osChain = new Os\Chain();
+        $osChain->setLogger($this->_logger);
+        $osChain->setCache($this->_cache);
         
-        $engine = null;
-        
-        if ($useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $idEngines = null;
-            
-            if ($idEngines = $agent->idEngines) {
-                $engine = $this->_serviceEngines->find($idEngines)->current();
-            }
-            
-            unset($idEngines);
-        }
-        
-        if ($forceDetected || null === $engine) {
-            // detect the Rendering Engine
-            if (null === $this->_engineChain) {
-                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
-                    || !($this->_engineChain = $this->_cache->load('EngineChain'))
-                ) {
-                    $this->_engineChain = new Engine\Chain();
-                    $this->_engineChain->setLogger($this->_logger);
-                    
-                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                        $this->_engineChain->setCache($this->_cache);
-                        
-                        $this->_cache->save($this->_engineChain, 'EngineChain');
-                    }
-                }
-            }
-            
-            $engine = $this->_engineChain->detect($userAgent);
-            
-            if ($useDb && $agent instanceof \Zend\Db\Table\Row) {
-                $searchedEngine = $this->_serviceEngines->searchByName($engine->getEngine(), $engine->getVersion());
-                
-                if ($searchedEngine) {
-                    $agent->idEngines = $searchedEngine->idEngines;
-                    $searchedEngine->data = \Zend\Json\Json::encode($engine);
-                    $searchedEngine->save();
-                }
-                
-                unset($searchedEngine);
-            }
-        } else {
-            $engine = (object) $engine->toArray();var_dump($engine);exit;
-            
-            if ($useDb && $agent instanceof \Zend\Db\Table\Row) {
-                $this->_serviceEngines->count($engine->idEngines);
-            }
-            
-            //$engine->engineFull = $engine->getFullEngine();
-        }
-        
-        return $engine;
+        return $osChain->detect($this->_cleanedAgent);
     }
 
     /**
@@ -379,189 +221,13 @@ class UserAgent
      *
      * @return 
      */
-    private function _detectBrowser($agent, $userAgent = null, $forceDetected = false, $useDb = false)
+    private function _detectDevice()
     {
-        if (null === $this->_serviceBrowsers && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceBrowsers = new Service\Browsers();
-        }
+        $deviceChain = new Device\Chain();
+        $deviceChain->setLogger($this->_logger);
+        $deviceChain->setCache($this->_cache);
         
-        $browser = null;
-        
-        if ($useDb) {
-            $idBrowsers = null;
-            
-            if ($idBrowsers = $agent->idBrowsers) {
-                $browser = $browser = $this->_serviceBrowsers->find($idBrowsers)->current();
-            }
-            
-            unset($idBrowsers);
-        }
-        
-        if ($forceDetected || null === $browser) {
-            // detect the browser
-            if (null === $this->_browserChain) {
-                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
-                    || !($this->_browserChain = $this->_cache->load('BrowserChain'))
-                ) {
-                    $this->_browserChain = new Browser\Chain();
-                    $this->_browserChain->setLogger($this->_logger);
-                    
-                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                        $this->_browserChain->setCache($this->_cache);
-                        
-                        $this->_cache->save($this->_browserChain, 'BrowserChain');
-                    }
-                }
-            }
-            
-            $browser = $this->_browserChain->detect($userAgent);
-            
-            if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-                $agent->idBrowsers = $this->_serviceBrowsers->searchByBrowser($browser->getBrowser(), $browser->getVersion(), $browser->getBits())->idBrowsers;
-            }
-        } else {
-            $browser = (object) $browser->toArray();
-            $browser->browserFull = $browser->getFullBrowser();
-        }
-        
-        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceBrowsers->count($agent->idBrowsers);
-        }
-        
-        return $browser;
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent     the user agent string
-     *
-     * @return 
-     */
-    private function _detectOs($agent, $userAgent = null, $forceDetected = false, $useDb = false)
-    {   
-        if (null === $this->_serviceOs && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceOs = new Service\Os();
-        }
-        
-        $os = null;
-        
-        if ($useDb) {
-            $idOs = null;
-            
-            if ($idOs = $agent->idOs) {
-                $os = $this->_serviceOs->find($idOs)->current();
-            }
-            
-            unset($idOs);
-        }
-        
-        if ($forceDetected || null === $os) {
-            // detect the Operating System
-            if (null === $this->_osChain) {
-                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
-                    || !($this->_osChain = $this->_cache->load('PlatformChain'))
-                ) {
-                    $this->_osChain = new Os\Chain();
-                    $this->_osChain->setLogger($this->_logger);
-                    
-                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                        $this->_osChain->setCache($this->_cache);
-                        
-                        $this->_cache->save($this->_osChain, 'PlatformChain');
-                    }
-                }
-            }
-            
-            $os = $this->_osChain->detect($userAgent);
-            
-            if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-                $osResult = $this->_serviceOs->searchByName($os->getName(), $os->getVersion(), $os->getBits());
-                
-                if ($osResult) {
-                    $agent->idOs = $osResult->idOs;
-                }
-                
-                unset($osResult);
-            }
-        } else {
-            $os = (object) $os->toArray();
-            $os->osFull  = $os->getFullName();
-        }
-        
-        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceOs->count($agent->idOs);
-        }
-        
-        return $os;
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent     the user agent string
-     *
-     * @return 
-     */
-    private function _detectDevice($agent, $userAgent = null, $forceDetected = false, $useDb = false)
-    {
-        /*
-        if (null === $this->_serviceOs && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceOs = new Service\Os();
-        }
-        /**/
-        
-        $device = null;
-        
-        /*
-        if ($useDb) {
-            $idOs = null;
-            
-            if ($idOs = $agent->idOs) {
-                $os = $this->_serviceOs->find($idOs)->current();
-            }
-            
-            unset($idOs);
-        }
-        /**/
-        
-        // detect the device
-        if ($forceDetected  || null === $device) {
-            // detect the device
-            // detect the Operating System
-            if (null === $this->_deviceChain) {
-                if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)
-                    || !($this->_deviceChain = $this->_cache->load('DeviceChain'))
-                ) {
-                    $this->_deviceChain = new Device\Chain();
-                    $this->_deviceChain->setLogger($this->_logger);
-                    
-                    if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                        $this->_deviceChain->setCache($this->_cache);
-                        
-                        $this->_cache->save($this->_deviceChain, 'DeviceChain');
-                    }
-                }
-            }
-            
-            $device = $this->_deviceChain->detect($userAgent);
-            
-            if ($useDb) {
-                //$osResult = $this->_serviceOs->searchByName($os->name, $os->version, $os->bits);
-                
-                //if ($osResult) {
-                //    $agent->idDevice = $osResult->idOs;
-                //}
-            }
-        } else {
-            $device = null; //(object) $device->toArray();
-        }
-        /*
-        if ($forceDetected && $useDb && $agent instanceof \Zend\Db\Table\Row) {
-            $this->_serviceOs->count($agent->idOs);
-        }
-        /**/
-        return $device;
+        return $deviceChain->detect($this->_cleanedAgent);
     }
     
     /**

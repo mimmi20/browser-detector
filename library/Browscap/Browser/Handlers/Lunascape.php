@@ -71,7 +71,6 @@ class Lunascape extends BrowserHandler
             'Opera',
             'PaleMoon',
             'Flock',
-            'Avant',
             'MyIE',
             // other Browsers
             'Chrome',

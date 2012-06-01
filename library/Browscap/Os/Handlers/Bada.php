@@ -35,7 +35,7 @@ class Bada extends OsHandler
     /**
      * @var string the detected platform
      */
-    protected $_name = 'Bada';
+    protected $_name = 'Bada OS';
     
     /**
      * Returns true if this handler can handle the given $useragent

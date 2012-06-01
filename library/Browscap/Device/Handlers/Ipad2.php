@@ -49,11 +49,11 @@ class Ipad2 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'iPad2')) {
-            return false;
+        if ($this->_utils->checkIfContains($this->_useragent, 'iPad2;')) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

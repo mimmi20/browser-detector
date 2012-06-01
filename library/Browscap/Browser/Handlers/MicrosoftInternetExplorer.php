@@ -46,17 +46,17 @@ class MicrosoftInternetExplorer extends BrowserHandler
     protected $_browser = 'Internet Explorer';
     
     private $_patterns = array(
-        '/Mozilla\/5\.0 \(.*MSIE 10\.0.*/' => '10.0',
-        '/Mozilla\/5\.0 \(.*MSIE 9\.0.*/'  => '9.0',
-        '/Mozilla\/4\.0 \(.*MSIE 9\.0.*/'  => '9.0',
-        '/Mozilla\/4\.0 \(.*MSIE 8\.0.*/'  => '8.0',
-        '/Mozilla\/4\.0 \(.*MSIE 7\.0.*/'  => '7.0',
-        '/Mozilla\/4\.0 \(.*MSIE 6\.0.*/'  => '6.0',
-        '/Mozilla\/4\.0 \(.*MSIE 5\.5.*/'  => '5.5',
-        '/Mozilla\/4\.0 \(.*MSIE 5\.01.*/' => '5.01',
-        '/Mozilla\/4\.0 \(.*MSIE 5\.0.*/'  => '5.0',
-        '/Mozilla\/4\.0 \(.*MSIE 4\.01.*/' => '4.01',
-        '/Mozilla\/4\.0 \(.*MSIE 4\.0.*/'  => '4.0',
+        '/Mozilla\/.\.0 \(.*MSIE 10\.0.*/' => '10.0',
+        '/Mozilla\/.\.0 \(.*MSIE 9\.0.*/'  => '9.0',
+        '/Mozilla\/.\.0 \(.*MSIE 9\.0.*/'  => '9.0',
+        '/Mozilla\/.\.0 \(.*MSIE 8\.0.*/'  => '8.0',
+        '/Mozilla\/.\.0 \(.*MSIE 7\.0.*/'  => '7.0',
+        '/Mozilla\/.\.0 \(.*MSIE 6\.0.*/'  => '6.0',
+        '/Mozilla\/.\.0 \(.*MSIE 5\.5.*/'  => '5.5',
+        '/Mozilla\/.\.0 \(.*MSIE 5\.01.*/' => '5.01',
+        '/Mozilla\/.\.0 \(.*MSIE 5\.0.*/'  => '5.0',
+        '/Mozilla\/.\.0 \(.*MSIE 4\.01.*/' => '4.01',
+        '/Mozilla\/.\.0 \(.*MSIE 4\.0.*/'  => '4.0',
         '/Mozilla\/.*\(.*MSIE 3\..*/'      => '3.0',
         '/Mozilla\/.*\(.*MSIE 2\..*/'      => '2.0',
         '/Mozilla\/.*\(.*MSIE 1\..*/'      => '1.0'
@@ -93,8 +93,6 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Opera',
             'PaleMoon',
             'Flock',
-            'Avant',
-            'avantbrowser',
             'MyIE',
             'Crazy Browser',
             // other Browsers

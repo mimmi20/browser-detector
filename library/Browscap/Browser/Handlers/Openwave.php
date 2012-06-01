@@ -49,7 +49,7 @@ class Openwave extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('OpenWave', 'UP.Browser/', 'UP/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('OpenWave', 'UP.Browser/', 'UP/', 'Browser/OpenWave'))) {
             return false;
         }
         
@@ -96,5 +96,15 @@ class Openwave extends BrowserHandler
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 4;
     }
 }

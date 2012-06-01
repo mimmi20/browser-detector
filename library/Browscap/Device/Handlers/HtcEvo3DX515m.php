@@ -49,7 +49,7 @@ class HtcEvo3DX515m extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'HTC EVO 3D X515m')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC EVO 3D X515m', 'HTC_EVO3D_X515m'))) {
             return false;
         }
         

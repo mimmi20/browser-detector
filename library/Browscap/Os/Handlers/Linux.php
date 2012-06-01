@@ -59,9 +59,14 @@ class Linux extends OsHandler
             'Ubuntu',
             'CrOS',
             'Mint',
+            'SUSE',
+            'Fedora',
+            'redhat',
+            'Slackware',
             // other OS which are using X11
             'BSD',
-            'SunOS'
+            'SunOS',
+            'HP-UX'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {

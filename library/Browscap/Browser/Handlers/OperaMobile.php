@@ -89,6 +89,13 @@ class OperaMobile extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/Opera\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $this->_version = '';
     }
     

@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id: Camcrawler.php 220 2012-05-20 11:12:21Z  $
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id: Camcrawler.php 220 2012-05-20 11:12:21Z  $
  */
 
 class Tweetbot extends GeneralBot
@@ -47,10 +47,27 @@ class Tweetbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Tweetbot/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Tweetbot')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/Tweetbot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
 }

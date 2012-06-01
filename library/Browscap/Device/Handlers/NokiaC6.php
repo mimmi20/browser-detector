@@ -29,7 +29,7 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
-class NokiaC6 extends GeneralMobile
+class NokiaC6 extends Nokia
 {
     /**
      * @var string the detected device
@@ -53,6 +53,10 @@ class NokiaC6 extends GeneralMobile
             return false;
         }
         
+        if ($this->_utils->checkIfContains($this->_useragent, 'NokiaC6-01')) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -63,6 +67,6 @@ class NokiaC6 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
 }

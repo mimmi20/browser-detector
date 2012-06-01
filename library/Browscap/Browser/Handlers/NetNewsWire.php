@@ -74,7 +74,6 @@ class NetNewsWire extends BrowserHandler
             'Flock',
             'AOL',
             'TOB',
-            'Avant',
             'MyIE',
             //others
             'AppleWebKit',

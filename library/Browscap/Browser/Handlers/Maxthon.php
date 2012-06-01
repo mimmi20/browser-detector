@@ -71,7 +71,6 @@ class Maxthon extends BrowserHandler
             'Opera',
             'PaleMoon',
             'Flock',
-            'Avant',
             // other Browsers
             'AppleWebKit',
             'Chrome',

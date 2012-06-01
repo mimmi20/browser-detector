@@ -54,7 +54,8 @@ class GeneralBot extends Unknown
             'AppEngine-Google',
             'Feedfetcher-Google',
             'WordPress',
-            'http:'
+            'http:',
+            '<'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $bots)) {

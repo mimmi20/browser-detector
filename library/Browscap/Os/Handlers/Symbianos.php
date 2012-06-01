@@ -35,7 +35,7 @@ class Symbianos extends OsHandler
     /**
      * @var string the detected platform
      */
-    protected $_name = 'SymbianOS';
+    protected $_name = 'Symbian OS';
     
     /**
      * Returns true if this handler can handle the given $useragent

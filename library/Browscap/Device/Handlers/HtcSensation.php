@@ -49,7 +49,7 @@ class HtcSensation extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC/Sensation'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC/Sensation', 'HTC/Sensation/'))) {
             return false;
         }
         

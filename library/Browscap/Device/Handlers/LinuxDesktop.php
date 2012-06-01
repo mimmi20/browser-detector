@@ -54,7 +54,7 @@ class LinuxDesktop extends GeneralDesktop
         }
         
         $linux = array(
-            'Linux', 'Debian', 'Ubuntu', 'Suse'
+            'Linux', 'Debian', 'Ubuntu', 'SUSE', 'Fedora', 'Mint', 'redhat', 'Slackware', 'Zenwalk GNU'
         );
         
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $linux)) {

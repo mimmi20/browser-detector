@@ -91,7 +91,7 @@ class Sleipnir extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/Sleipnir\/([\da-z\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Sleipnir\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

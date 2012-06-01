@@ -15,25 +15,25 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Iron.php 220 2012-05-20 11:12:21Z  $
  */
 
 /**
- * MSIEAgentHandler
+ * ChromeUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Iron.php 220 2012-05-20 11:12:21Z  $
  */
-class Avant extends MicrosoftInternetExplorer
+class Puffin extends Chromium
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Avant Browser';
+    protected $_browser = 'Puffin';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -50,38 +50,44 @@ class Avant extends MicrosoftInternetExplorer
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MSIE')) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Puffin'))) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('avantbrowser', 'Avant'))) {
-            return false;
-        }
-        
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chromium',
+            'Flock',
             'Galeon',
             'Lunascape',
-            'Opera',
+            'Maemo',
             'PaleMoon',
-            'Flock',
-            'AOL',
-            //others
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV'
+            'Rockmelt',
+            'Iron'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/Puffin\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**

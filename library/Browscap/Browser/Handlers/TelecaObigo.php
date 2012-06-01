@@ -101,6 +101,13 @@ class TelecaObigo extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/TelecaBrowser\/(Q\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $doMatch = preg_match('/TelecaBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {

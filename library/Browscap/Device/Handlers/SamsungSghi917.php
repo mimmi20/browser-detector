@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers;
+namespace Browscap\Device\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -11,37 +11,37 @@ namespace Browscap\Browser\Handlers;
  *
  * Refer to the COPYING.txt file distributed with this package.
  *
- *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungSghi900V.php 173 2012-01-28 13:38:35Z  $
  */
-
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * NokiaUserAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungSghi900V.php 173 2012-01-28 13:38:35Z  $
  */
-class OviBrowser extends BrowserHandler
+
+class SamsungSghi917 extends GeneralMobile
 {
     /**
-     * @var string the detected browser
+     * @var string the detected device
      */
-    protected $_browser = 'OviBrowser';
+    protected $_device = 'SAMSUNG SGH-i917';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
@@ -49,23 +49,20 @@ class OviBrowser extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('OviBrowser', 'S40OviBrowser'));
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SAMSUNG;SGH-i917')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
-     * detects the browser version from the given user agent
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return string
+     * @return integer
      */
-    protected function _detectVersion()
+    public function getWeight()
     {
-        $doMatch = preg_match('/OviBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
+        return 5;
     }
 }

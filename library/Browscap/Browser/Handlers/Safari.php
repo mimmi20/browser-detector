@@ -72,6 +72,8 @@ class Safari extends BrowserHandler
             'konqueror',
             'Epiphany',
             'Shiira',
+            'Midori',
+            'BrowserNG',
             //mobile Version
             'Mobile',
             'Tablet',

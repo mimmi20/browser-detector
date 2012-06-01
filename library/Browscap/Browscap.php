@@ -35,7 +35,7 @@ namespace Browscap;
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2007-2010 Unister GmbH
  */
-class Browscap
+class Browscap extends Core
 {
     /**
      * Flag to enable only lowercase indexes in the result.
@@ -46,13 +46,6 @@ class Browscap
     private $_lowercase = false;
 
     /**
-     * Flag to be set to true after loading the cache
-     *
-     * @var bool
-     */
-    private $_cache = null;
-
-    /**
      * Where to store the value of the included PHP cache file
      *
      * @var array
@@ -61,11 +54,9 @@ class Browscap
     private $_browsers    = array();
     private $_patterns    = array();
     private $_properties  = array();
-    private $_logger      = null;
     private $_config      = null;
     private $_globalCache = null;
     private $_localFile   = null;
-    private $_cachePrefix = '';
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
@@ -79,50 +70,29 @@ class Browscap
     {
         // default data file
         $this->setLocaleFile(__DIR__ . '/data/browscap.ini');
-    }
-    
-    public function setLogger(\Zend\Log\Logger $logger)
-    {
-        $this->_logger = $logger;
         
-        return $this;
-    }
-    
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        $this->_cache = $cache;
-        
-        return $this;
+        parent::__construct();
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $sUserAgent   the user agent string
+     * @param string $userAgent   the user agent string
      * @param bool   $bReturnAsArray whether return an array or an object
      *
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */
-    public function getBrowser($sUserAgent = null, $bReturnAsArray = false)
+    public function getBrowser($userAgent = null, $forceDetect = false)
     {
         // Automatically detect the useragent
-        if (empty($sUserAgent) || !is_string($sUserAgent)) {
-            $support    = new Support();
-            $sUserAgent = $support->getUserAgent();
+        if (empty($userAgent) || !is_string($userAgent)) {
+            $userAgent = $this->_support->getUserAgent();
         }
         
-        $cacheId = substr(
-            $this->_cachePrefix . 'agent_' . preg_replace(
-                '/[^a-zA-Z0-9_]/', '', urlencode($sUserAgent)
-            ), 
-            0, 
-            179
-        );
+        $userAgent = $this->_support->cleanAgent($userAgent);
         
-        if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-            || !$array = $this->_cache->load($cacheId)
-        ) {
+        if (!$array = $this->_getBrowserFromCache($userAgent)) {
             $globalCache = $this->_getGlobalCache();
             
             $browser = array();
@@ -130,9 +100,9 @@ class Browscap
                 && is_array($globalCache['patterns'])
             ) {
                 foreach ($globalCache['patterns'] as $key => $pattern) {
-                    if (preg_match($pattern, $sUserAgent)) {
+                    if (preg_match($pattern, $userAgent)) {
                         $browser = array(
-                            $sUserAgent, // Original useragent
+                            $userAgent, // Original useragent
                             trim(strtolower($pattern), '@'),
                             $globalCache['userAgents'][$key]
                         );
@@ -149,17 +119,19 @@ class Browscap
             $array = $browser;
             
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                $cacheId = $this->_getCacheFromAgent($userAgent);
+                
                 $this->_cache->save($array, $cacheId);
             }
         }
 
-        return $bReturnAsArray ? $array : (object) $array;
+        return (object) $array;
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $sUserAgent   the user agent string
+     * @param string $userAgent   the user agent string
      * @param bool   $bReturnAsArray whether return an array or an object
      *
      * @return stdClas|array the object containing the browsers details.
@@ -174,7 +146,7 @@ class Browscap
             if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
                 || !$this->_globalCache = $this->_cache->load($cacheGlobalId)
             ) {
-                $this->_globalCache = $this->_getBrowserFromCache();
+                $this->_globalCache = $this->_getBrowserFromGlobalCache();
                 
                 if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                     $this->_cache->save($this->_globalCache, $cacheGlobalId);
@@ -201,7 +173,7 @@ class Browscap
      *
      * @return array
      */
-    private function _getBrowserFromCache()
+    private function _getBrowserFromGlobalCache()
     {
         try {
             return $this->_updateCache();
@@ -224,18 +196,6 @@ class Browscap
     public function setLocaleFile($file)
     {
         $this->_localFile = $file;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param string $prefix the new prefix
-     *
-     * @return void
-     */
-    public function setCachePrefix($prefix)
-    {
-        $this->_cachePrefix = $prefix;
     }
 
     /**
@@ -275,9 +235,9 @@ class Browscap
 
         $aPropertiesKeys = array_flip($this->_properties);
 
-        foreach ($this->_userAgents as $sUserAgent) {
+        foreach ($this->_userAgents as $userAgent) {
             $this->_parseAgents(
-                $browsers, $sUserAgent, $aPropertiesKeys
+                $browsers, $userAgent, $aPropertiesKeys
             );
         }
 

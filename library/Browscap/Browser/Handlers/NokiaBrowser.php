@@ -36,7 +36,7 @@ class NokiaBrowser extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'NokiaBrowser';
+    protected $_browser = 'Nokia BrowserNG';
     
     /**
      * Returns true if this handler can handle the given user agent

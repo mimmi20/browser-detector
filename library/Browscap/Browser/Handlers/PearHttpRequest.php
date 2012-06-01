@@ -68,6 +68,13 @@ class PearHttpRequest extends GeneralBot
             return;
         }
         
+        $doMatch = preg_match('/HTTP_Request2\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $this->_version = '';
     }
     

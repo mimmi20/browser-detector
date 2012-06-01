@@ -34,7 +34,7 @@ class Bingbot extends GeneralBot
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'bingbot';
+    protected $_browser = 'BingBot';
     
     /**
      * Returns true if this handler can handle the given user agent

@@ -51,6 +51,10 @@ class Curl extends GeneralBot
             return false;
         }
         
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('<'))) {
+            return false;
+        }
+        
         return true;
     }
     

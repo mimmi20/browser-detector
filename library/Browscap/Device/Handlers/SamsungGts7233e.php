@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers;
+namespace Browscap\Device\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,32 +15,33 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGts5830.php 219 2012-05-19 16:50:35Z  $
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
- * VodafoneUserAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGts5830.php 219 2012-05-19 16:50:35Z  $
  */
-class Vodafone extends BrowserHandler
+
+class SamsungGts7233e extends GeneralMobile
 {
     /**
-     * @var string the detected browser
+     * @var string the detected device
      */
-    protected $_browser = 'Vodafone';
+    protected $_device = 'Samsung GT-S7233E';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
@@ -48,6 +49,20 @@ class Vodafone extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Vodafone');
+        if (!$this->_utils->checkIfContains($this->_useragent, 'GT-S7233E')) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 5;
     }
 }

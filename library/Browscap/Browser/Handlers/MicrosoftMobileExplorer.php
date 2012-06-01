@@ -56,11 +56,7 @@ class MicrosoftMobileExplorer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE', 'IEMobile'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Mozilla/', 'MSIE', 'IEMobile'))) {
             return false;
         }
         
@@ -72,7 +68,6 @@ class MicrosoftMobileExplorer extends BrowserHandler
             'Opera',
             'PaleMoon',
             'Flock',
-            'Avant',
             'MyIE',
             //others
             'AppleWebKit',

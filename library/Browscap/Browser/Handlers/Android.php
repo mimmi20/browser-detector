@@ -47,14 +47,13 @@ class Android extends MobileSafari
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Dalvik/')
-            && !$this->_utils->checkIfContains($this->_useragent, 'Android')
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Android')
             && !parent::canHandle($this->_useragent)
         ) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec', 'iPad', 'iPhone'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec', 'iPad', 'iPhone', 'Dalvik'))) {
             return false;
         }
         

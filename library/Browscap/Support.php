@@ -75,6 +75,18 @@ class Support
         return $userAgent;
     }
     
+    public function cleanAgent($userAgent)
+    {
+        $userAgent = str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent);
+        $userAgent = str_replace(array(' :: '), ';', $userAgent);
+        $userAgent = str_replace(array('%2C'), '.', $userAgent);
+        $userAgent = str_replace(array('rv = '), 'rv:', $userAgent);
+        $userAgent = preg_replace('/\s+\s/', ' ', $userAgent);
+        $userAgent = trim($userAgent);
+        
+        return $userAgent;
+    }
+    
     public function getAcceptHeader()
     {
         $accept = '*/*';

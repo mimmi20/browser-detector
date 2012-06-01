@@ -29,7 +29,7 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: NokiaX6.php 173 2012-01-28 13:38:35Z  $
  */
 
-class NokiaX2 extends GeneralMobile
+class NokiaX2 extends Nokia
 {
     /**
      * @var string the detected device
@@ -63,6 +63,6 @@ class NokiaX2 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
 }

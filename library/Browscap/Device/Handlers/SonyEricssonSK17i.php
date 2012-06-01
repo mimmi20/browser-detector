@@ -49,11 +49,11 @@ class SonyEricssonSK17i extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonSK17i')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SonyEricssonSK17i', 'SK17i'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'SonyEricssonSK17iv')) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('SonyEricssonSK17iv', 'SK17iv'))) {
             return false;
         }
         

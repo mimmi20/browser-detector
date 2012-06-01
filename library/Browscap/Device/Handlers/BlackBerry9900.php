@@ -34,7 +34,7 @@ class BlackBerry9900 extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'BlackBerry 9900';
+    protected $_device = 'BlackBerry Bold Touch 9900';
     
     /**
      * Final Interceptor: Intercept

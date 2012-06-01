@@ -68,7 +68,8 @@ class Windows extends OsHandler
             'Windows CE',
             'Windows Mobile',
             'Windows Phone OS',
-            'IEMobile'
+            'IEMobile',
+            'Mobi'
         );
         
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
@@ -87,6 +88,11 @@ class Windows extends OsHandler
      */
     protected function _detectVersion()
     {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('win9x/NT 4.90', 'Win 9x 4.90', 'Windows ME'))) {
+            $this->_version = 'ME';
+            return;
+        }
+        
         $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
@@ -166,11 +172,6 @@ class Windows extends OsHandler
             return;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('win9x/NT 4.90', 'Win 9x 4.90', 'Windows ME'))) {
-            $this->_version = 'ME';
-            return;
-        }
-        
         $version = '';
         
         foreach ($this->_windows as $winVersion) {
@@ -180,7 +181,7 @@ class Windows extends OsHandler
             }
         }
         
-        if ('dows NT' != $version) {
+        if ('dows NT' != $version && 'dows' != $version) {
             $this->_version = $version;
             return;
         }
