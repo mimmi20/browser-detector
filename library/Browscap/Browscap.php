@@ -295,23 +295,6 @@ class Browscap extends Core
             }
             
             if (isset($browsers[$parent]) && is_array($browsers[$parent])) {
-                /*
-                foreach ($browsers[$parent] as $propName => $propValue) {
-                    if (empty($browserData[$propName])) {
-                        $browserData[$propName] = $browsers[$parent][$propName];
-                        continue;
-                    }
-                    
-                    if ($browserData[$propName] == $browsers[$parent][$propName]) {
-                        $this->_logger->warn(
-                            'property "' . $propName 
-                            . '" has same value in Agent "' . $parent 
-                            . '" as in one of their parents'
-                        );
-                    }
-                }
-                /**/
-                
                 $browserData = array_merge($browserData, $browsers[$parent]);
             }
         }
