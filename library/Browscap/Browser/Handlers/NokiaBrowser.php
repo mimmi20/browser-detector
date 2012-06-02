@@ -107,7 +107,7 @@ class NokiaBrowser extends BrowserHandler
     public function getEngine()
     {
         $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_log);
+        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

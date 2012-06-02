@@ -84,7 +84,7 @@ class Nokia2760 extends Nokia
     public function getOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_log);
+        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

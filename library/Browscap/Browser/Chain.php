@@ -19,158 +19,40 @@ namespace Browscap\Browser;
  */
 
 /**
- * Utility class which holds the detection functions
+ * chain base class
  */
-use \Browscap\Utils;
+use \Browscap\Chain\AbstractChain;
 
 /**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
  * @package    WURFL
  * @see WURFL_UserAgentHandlerChain
  */
-final class Chain
+final class Chain extends AbstractChain
 {
-    /**
-     * @var array
-     */
-    private $_chain = array();
-    
-    /**
-     * @var Browscap\Utils
-     */
-    private $_utils = null;
-    
-    /*
-     * @var \Zend\Log\Logger
-     */
-    private $_log = null;
-
-    /**
-     * a \Zend\Cache object
-     *
-     * @var \Zend\Cache
-     */
-    private $_cache = null;
-
-    /**
-     * Initializes the factory with an instance of all possible Handler objects from the given $context
-     */
-    public function __construct()
-    {
-        // the utility classes
-        $this->_utils = new Utils();
-        $this->_chain = array();
-        
-        // get all Browsers
-        $directory = __DIR__ . DS . 'Handlers' . DS;
-        $iterator  = new \DirectoryIterator($directory);
-        
-        foreach ($iterator as $fileinfo) {
-            if (!$fileinfo->isFile() || !$fileinfo->isReadable()) {
-                continue;
-            }
-            
-            $filename  = $fileinfo->getBasename('.php');
-            $className = $this->_utils->getClassNameFromFile($filename, __NAMESPACE__, true);
-            
-            try {
-                require_once $fileinfo->getPathname();
-                $handler = new $className();
-            } catch (\Exception $e) {
-                echo "Class '$className' not found \n";
-                
-                //$this->_log->warn($e);
-                
-                continue;
-            }
-            
-            $detector = array();
-            $detector['class']  = $handler;
-            $detector['weight'] = $handler->getWeight();
-            
-            $this->_chain[] = $detector;
-        }
-        
-        $sorter = array();
-        
-        foreach ($this->_chain as $key => $detector) {
-            $sorter[$key] = $detector['weight'];
-        }
-        
-        array_multisort($sorter, SORT_DESC, $this->_chain);
-        
-        unset($iterator, $directory);
-    }
-
-    /**
-     * 
-     */
-    public function __destruct()
-    {
-        // the utility classes
-        $this->_utils = null;
-        $this->_chain = null;
-        $this->_log   = null;
-    }
-    
-    /**
-     * sets the logger used when errors occur
-     *
-     * @param \Zend\Log\Logger $logger
-     *
-     * @return 
-     */
-    public function setLogger(\Zend\Log\Logger $logger = null)
-    {
-        $this->_log = $logger;
-        
-        return $this;
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Frontend\Core $cache
-     *
-     * @return 
-     */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        $this->_cache = $cache;
-        
-        return $this;
-    }
-    
     /**
      * detect the user agent
      *
-     * @param string $this->_useragent The user agent
+     * @param string $userAgent The user agent
      *
      * @return string
      */
     public function detect($userAgent)
     {
-        if (count($this->_chain)) {
-            foreach ($this->_chain as $detector) {
-                $handler = $detector['class'];
-                $handler->setLogger($this->_log);
-                $handler->setUserAgent($userAgent);
-                
-                if ($handler->canHandle()) {
-                    try {
-                        return $handler->detect();
-                    } catch (\UnexpectedValueException $e) {
-                        // do nothing
-                        continue;
-                    }
-                }
+        $directory = __DIR__ . DS . 'Handlers' . DS;
+        $namespace = __NAMESPACE__;
+        
+        if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
+            || !($chain = $this->_cache->load('BrowserChain'))
+        ) {
+            // no cache or the chain is not cached yet
+            $chain = $this->_createChain($directory, $namespace);
+            
+            if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                $this->_cache->save($chain, 'BrowserChain');
             }
         }
         
-        $handler = new Handlers\Unknown();
-        $handler->setLogger($this->_log);
-        $handler->setUserAgent($userAgent);
-        
-        return $handler;
+        return $this->_detect($chain, $userAgent, $namespace);
     }
 }

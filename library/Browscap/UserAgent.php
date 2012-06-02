@@ -144,7 +144,10 @@ class UserAgent extends Core
     {
         $engineChain = new Engine\Chain();
         $engineChain->setLogger($this->_logger);
-        $engineChain->setCache($this->_cache);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $engineChain->setCache($this->_cache);
+        }
         
         return $engineChain->detect($this->_cleanedAgent);
     }
@@ -158,7 +161,10 @@ class UserAgent extends Core
     {
         $browserChain = new Browser\Chain();
         $browserChain->setLogger($this->_logger);
-        $browserChain->setCache($this->_cache);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
         
         return $browserChain->detect($this->_cleanedAgent);
     }
@@ -174,7 +180,10 @@ class UserAgent extends Core
     {
         $osChain = new Os\Chain();
         $osChain->setLogger($this->_logger);
-        $osChain->setCache($this->_cache);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $osChain->setCache($this->_cache);
+        }
         
         return $osChain->detect($this->_cleanedAgent);
     }
@@ -190,7 +199,10 @@ class UserAgent extends Core
     {
         $deviceChain = new Device\Chain();
         $deviceChain->setLogger($this->_logger);
-        $deviceChain->setCache($this->_cache);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $deviceChain->setCache($this->_cache);
+        }
         
         return $deviceChain->detect($this->_cleanedAgent);
     }

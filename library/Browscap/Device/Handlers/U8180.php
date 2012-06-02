@@ -86,7 +86,7 @@ class U8180 extends DeviceHandler
     public function getOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_log);
+        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

@@ -251,7 +251,7 @@ class CrazyBrowser extends MicrosoftInternetExplorer
     public function getEngine()
     {
         $handler = new \Browscap\Engine\Handlers\Trident();
-        $handler->setLogger($this->_log);
+        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

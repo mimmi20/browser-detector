@@ -98,7 +98,7 @@ class Elinks extends BrowserHandler
     public function getEngine()
     {
         $handler = new \Browscap\Engine\Handlers\Unknown();
-        $handler->setLogger($this->_log);
+        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
