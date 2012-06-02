@@ -348,4 +348,25 @@ abstract class Handler implements MatcherInterface
     {
         return false;
     }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return false;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        return null;
+    }
 }

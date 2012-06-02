@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id: GeneralDesktop.php 206 2012-04-09 16:43:00Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,8 +28,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: GeneralDesktop.php 206 2012-04-09 16:43:00Z  $
  */
-
-class MacBook extends DeviceHandler
+class MacBook extends Macintosh
 {
     /**
      * @var string the detected device

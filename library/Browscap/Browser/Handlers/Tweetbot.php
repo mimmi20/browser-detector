@@ -28,7 +28,6 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: Camcrawler.php 220 2012-05-20 11:12:21Z  $
  */
-
 class Tweetbot extends GeneralBot
 {
     /**

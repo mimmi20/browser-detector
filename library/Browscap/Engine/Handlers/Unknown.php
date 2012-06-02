@@ -30,7 +30,6 @@ use Browscap\Engine\Handler as EngineHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-
 class Unknown extends EngineHandler
 {
     /**

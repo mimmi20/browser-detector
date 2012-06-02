@@ -28,7 +28,6 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: GeneralDesktop.php 206 2012-04-09 16:43:00Z  $
  */
-
 class MacBookPro extends MacBook
 {
     /**

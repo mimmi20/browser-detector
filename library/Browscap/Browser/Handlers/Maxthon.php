@@ -24,11 +24,6 @@ namespace Browscap\Browser\Handlers;
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * Browser Exceptions
- */
-use Browscap\Browser\Exceptions;
-
-/**
  * MSIEAgentHandler
  *
  *

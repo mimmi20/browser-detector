@@ -28,7 +28,6 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: Webbotru.php 206 2012-04-09 16:43:00Z  $
  */
-
 class Websuchebot extends GeneralBot
 {
     /**

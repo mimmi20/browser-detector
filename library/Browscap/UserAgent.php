@@ -28,11 +28,6 @@ namespace Browscap;
  */
 
 /**
- * the agent database model
- */
-use \Browscap\Model;
-
-/**
  * Browscap.ini parsing class with caching and update capabilities
  *
  * @category  CreditCalc
@@ -57,78 +52,31 @@ class UserAgent extends Core
     private $_cleanedAgent = '';
     
     /**
-     * the ID of the user agent sent from the browser
-     *
-     * @var string
-     */
-    private $_idAgent = null;
-    
-    /**
      * the detected browser
      *
      * @var StdClass
      */
     private $_browser = null;
-
-    /**
-     * @var \Browscap\Broscap
-     */
-    private $_browscap = null;
     
     /**
-     * @var \Browscap\Service\Agents
+     * the detected browser engine
+     *
+     * @var StdClass
      */
-    private $_serviceAgents = null;
-    
-    /**
-     * @var \Browscap\Service\Engines
-     */
-    private $_serviceEngines = null;
-    
-    /**
-     * @var \Browscap\Service\Browsers
-     */
-    private $_serviceBrowsers = null;
-    
-    /**
-     * @var \Browscap\Service\BrowserData
-     */
-    private $_serviceBrowserData = null;
-    
-    /**
-     * @var \Browscap\Service\Os
-     */
-    private $_serviceOs = null;
-    
-    /**
-     * @var \Browscap\Service\BrowscapData
-     */
-    private $_serviceBrowscapData = null;
-
-    /**
-     * @var \Browscap\Os\Chain
-     */
-    private $_osChain = null;
-    
-    /**
-     * @var \Browscap\Engine\Chain
-     */
-    private $_engineChain = null;
-    
-    /**
-     * @var \Browscap\Browser\Chain
-     */
-    private $_browserChain = null;
-    
-    /**
-     * @var \Browscap\Device\Chain
-     */
-    private $_deviceChain = null;
-    
     private $_engine = null;
     
+    /**
+     * the detected platform
+     *
+     * @var StdClass
+     */
     private $_os = null;
     
+    /**
+     * the detected device
+     *
+     * @var StdClass
+     */
     private $_device = null;
 
     /**
@@ -152,14 +100,31 @@ class UserAgent extends Core
             || !($browserArray = $this->_getBrowserFromCache($this->_cleanedAgent))
         ) {
             $this->_device  = $this->_detectDevice();
-            $this->_os      = $this->_detectOs();
-            $this->_engine  = $this->_detectEngine();
-            $this->_browser = $this->_detectBrowser();
+            
+            if ($this->_device->hasOs()) {
+                $this->_os = $this->_device->getOs();
+            } else {
+                $this->_os = $this->_detectOs();
+            }
+            
+            if ($this->_device->hasBrowser()) {
+                $this->_browser = $this->_device->getBrowser();
+            } else {
+                $this->_browser = $this->_detectBrowser();
+            }
+            
+            if ($this->_browser->hasEngine()) {
+                $this->_engine = $this->_browser->getEngine();
+            } else {
+                $this->_engine = $this->_detectEngine();
+            }
             
             $browserArray = $this;
             
-            if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                $cacheId = $this->_getCacheFromAgent($userAgent);
+            if (!$forceDetect 
+                && $this->_cache instanceof \Zend\Cache\Frontend\Core
+            ) {
+                $cacheId = $this->_getCacheFromAgent($this->_cleanedAgent);
                 
                 $this->_cache->save($browserArray, $cacheId);
             }
@@ -248,16 +213,6 @@ class UserAgent extends Core
     public function getcleanedAgent()
     {
         return $this->_cleanedAgent;
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return integer|null
-     */
-    public function getAgentId()
-    {
-        return $this->_idAgent;
     }
     
     /**

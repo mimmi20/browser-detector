@@ -19,16 +19,6 @@ namespace Browscap\Browser\Handlers;
  */
 
 /**
- * Handler Base class
- */
-use Browscap\Browser\Handler as BrowserHandler;
-
-/**
- * Browser Exceptions
- */
-use Browscap\Browser\Exceptions;
-
-/**
  * MSIEAgentHandler
  *
  *
@@ -38,7 +28,7 @@ use Browscap\Browser\Exceptions;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Python extends BrowserHandler
+class Python extends GeneralBot
 {
     /**
      * @var string the detected browser

@@ -205,4 +205,46 @@ abstract class Handler implements MatcherInterface
     {
         return false;
     }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return false;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getOs()
+    {
+        return null;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return false;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        return null;
+    }
 }

@@ -28,7 +28,6 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-
 class Nokia5800XpressMusic extends Nokia
 {
     /**
@@ -66,5 +65,30 @@ class Nokia5800XpressMusic extends Nokia
     public function getWeight()
     {
         return 6;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getOs()
+    {
+        $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_log);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

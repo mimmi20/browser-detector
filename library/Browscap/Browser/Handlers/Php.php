@@ -29,7 +29,6 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-
 class Php extends GeneralBot
 {
     /**

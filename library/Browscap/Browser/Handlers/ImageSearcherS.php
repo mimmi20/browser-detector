@@ -18,8 +18,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id: Ipick.php 164 2012-01-19 22:59:18Z  $
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,8 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: Ipick.php 164 2012-01-19 22:59:18Z  $
  */
-
-class ImageSearcherS extends BrowserHandler
+class ImageSearcherS extends GeneralBot
 {
     /**
      * @var string the detected browser

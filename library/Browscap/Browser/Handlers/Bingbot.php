@@ -28,7 +28,6 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: Msnbot.php 173 2012-01-28 13:38:35Z  $
  */
-
 class Bingbot extends GeneralBot
 {
     /**

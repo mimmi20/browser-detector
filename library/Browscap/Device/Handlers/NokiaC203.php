@@ -28,7 +28,6 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: NokiaC2.php 219 2012-05-19 16:50:35Z  $
  */
-
 class NokiaC203 extends NokiaC2
 {
     /**

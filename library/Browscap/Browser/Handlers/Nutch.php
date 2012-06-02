@@ -18,8 +18,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,8 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-
-class Nutch extends BrowserHandler
+class Nutch extends GeneralBot
 {
     /**
      * @var string the detected browser

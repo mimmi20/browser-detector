@@ -30,7 +30,6 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-
 class Webimages extends BrowserHandler
 {
     /**
@@ -55,5 +54,30 @@ class Webimages extends BrowserHandler
         }
         
         $this->_version = true;
+    }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Webkit();
+        $handler->setLogger($this->_log);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

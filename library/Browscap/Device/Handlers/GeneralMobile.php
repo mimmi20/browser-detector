@@ -30,7 +30,6 @@ use Browscap\Device\Handler as DeviceHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
  */
-
 class GeneralMobile extends DeviceHandler
 {
     /**
@@ -116,5 +115,26 @@ class GeneralMobile extends DeviceHandler
     public function isPdfSupported()
     {
         return false;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return false;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getOs()
+    {
+        return null;
     }
 }
