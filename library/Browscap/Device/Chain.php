@@ -42,16 +42,7 @@ final class Chain extends AbstractChain
         $directory = __DIR__ . DS . 'Handlers' . DS;
         $namespace = __NAMESPACE__;
         
-        if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-            || !($chain = $this->_cache->load('DeviceChain'))
-        ) {
-            // no cache or the chain is not cached yet
-            $chain = $this->_createChain($directory, $namespace);
-            
-            if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                $this->_cache->save($chain, 'DeviceChain');
-            }
-        }
+        $chain = $this->_createChain($directory, $namespace);
         
         return $this->_detect($chain, $userAgent, $namespace);
     }

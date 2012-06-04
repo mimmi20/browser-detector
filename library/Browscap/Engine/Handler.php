@@ -56,6 +56,13 @@ abstract class Handler implements MatcherInterface
      * @var string the detected engine version
      */
     protected $_version = '';
+
+    /**
+     * a \Zend\Cache object
+     *
+     * @var \Zend\Cache
+     */
+    protected $_cache = null;
     
     /**
      * @param WURFL_Context $wurflContext
@@ -88,6 +95,20 @@ abstract class Handler implements MatcherInterface
     final public function setLogger(\Zend\Log\Logger $logger = null)
     {
         $this->_logger = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the cache used to make the detection faster
+     *
+     * @param \Zend\Cache\Frontend\Core $cache
+     *
+     * @return 
+     */
+    final public function setCache(\Zend\Cache\Frontend\Core $cache)
+    {
+        $this->_cache = $cache;
         
         return $this;
     }

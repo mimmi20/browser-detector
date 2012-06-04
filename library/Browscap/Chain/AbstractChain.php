@@ -153,7 +153,7 @@ abstract class AbstractChain
      *
      * @return 
      */
-    public function setLogger(\Zend\Log\Logger $logger = null)
+    final public function setLogger(\Zend\Log\Logger $logger = null)
     {
         $this->_logger = $logger;
         
@@ -167,7 +167,7 @@ abstract class AbstractChain
      *
      * @return 
      */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    final public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
         $this->_cache = $cache;
         
@@ -183,8 +183,10 @@ abstract class AbstractChain
      *
      * @return string
      */
-    protected function _detect(\SplPriorityQueue $chain, $userAgent, $namespace)
+    protected function _detect(\SplPriorityQueue $chainInput, $userAgent, $namespace)
     {
+        $chain = clone $chainInput;
+        
         if ($chain->count()) {
             $chain->top();
             
@@ -192,6 +194,10 @@ abstract class AbstractChain
                 $handler = $chain->current();
                 $handler->setLogger($this->_logger);
                 $handler->setUserAgent($userAgent);
+                
+                if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+                    $handler->setCache($this->_cache);
+                }
                 
                 if ($handler->canHandle()) {
                     try {
@@ -211,6 +217,10 @@ abstract class AbstractChain
         $handler = new $className();
         $handler->setLogger($this->_logger);
         $handler->setUserAgent($userAgent);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $handler->setCache($this->_cache);
+        }
         
         return $handler;
     }

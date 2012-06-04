@@ -91,10 +91,19 @@ class Macintosh extends GeneralDesktop
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Macintosh();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            'Macintosh',
+            'Macosx',
+            'Darwin'
+        );
         
-        return $handler->detect();
+        $osChain = new \Browscap\Os\Chain(false, $os);
+        $osChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $osChain->setCache($this->_cache);
+        }
+        
+        return $osChain->detect($this->_useragent);
     }
 }

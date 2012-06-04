@@ -137,7 +137,7 @@ class NetFront extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Netfront();
+        $handler = new \Browscap\Engine\Handlers\Unknown();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
