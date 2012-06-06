@@ -74,6 +74,8 @@ class Safari extends BrowserHandler
             'Shiira',
             'Midori',
             'BrowserNG',
+            'AdobeAIR',
+            'Dreamweaver',
             //mobile Version
             'Mobile',
             'Tablet',

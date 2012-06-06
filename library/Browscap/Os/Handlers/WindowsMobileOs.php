@@ -38,7 +38,8 @@ class WindowsMobileOs extends OsHandler
     protected $_name = 'Windows Mobile OS';
     
     private $_windows = array(
-        'Windows CE', 'Windows Phone OS', 'Windows Mobile'
+        'Windows CE', 'Windows Phone OS', 'Windows Mobile', 
+        'Microsoft Windows; PPC'
     );
     
     /**

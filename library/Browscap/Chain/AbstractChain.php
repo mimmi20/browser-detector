@@ -18,7 +18,7 @@ namespace Browscap\Chain;
  * @version    SVN: $Id: Chain.php 219 2012-05-19 16:50:35Z  $
  */
 
-use \Browscap\Utils;
+use \Browscap\Helper\Utils;
 
 /**
  * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
@@ -33,7 +33,7 @@ abstract class AbstractChain
     protected $_chain = null;
     
     /**
-     * @var Browscap\Utils
+     * @var Browscap\Helper\Utils
      */
     protected $_utils = null;
     

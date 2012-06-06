@@ -52,6 +52,10 @@ class MacBook extends Macintosh
             return false;
         }
         
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('MacBook'))) {
             return true;
         }

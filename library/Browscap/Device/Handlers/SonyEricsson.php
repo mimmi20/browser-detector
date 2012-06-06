@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyEricssonE10i.php 229 2012-06-02 19:32:13Z  $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyEricssonE10i.php 229 2012-06-02 19:32:13Z  $
  */
-class MotoA953 extends GeneralMobile
+class SonyEricsson extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MotoA953';
+    protected $_device = 'general SonyEricsson';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class MotoA953 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MotoA953')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricsson')) {
             return false;
         }
         

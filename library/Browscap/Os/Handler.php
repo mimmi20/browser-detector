@@ -18,7 +18,7 @@ namespace Browscap\Os;
  * @version    SVN: $Id$
  */
 
-use \Browscap\Utils;
+use \Browscap\Helper\Utils;
 
 /**
  * WURFL_Handlers_Handler is the base class that combines the classification of
@@ -43,7 +43,7 @@ abstract class Handler implements MatcherInterface
     protected $_logger = null;
     
     /**
-     * @var \Browscap\Utils the helper class
+     * @var \Browscap\Helper\Utils the helper class
      */
     protected $_utils = null;
     

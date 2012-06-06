@@ -52,14 +52,18 @@ class WindowsDesktop extends GeneralDesktop
             return false;
         }
         
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+            return false;
+        }
+        
         $windows = array(
             'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
             'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows 98', 'Windows 95',
             'Windows 3.1', 'win9x/NT 4.90', 'Windows'
         );
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $windows)
-            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if (!$this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, $windows)
+            && !$this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
         ) {
             return false;
         }
@@ -122,11 +126,15 @@ class WindowsDesktop extends GeneralDesktop
     {
         $browsers = array(
             'Argclrint',
+            'AdobeAIR',
             'Chrome',
             'CrazyBrowser',
+            'Dreamweaver',
             'Firefox',
+            'GoogleEarth',
             'Iron',
             'Lunascape',
+            'Maxthon',
             'MicrosoftExcel',
             'MicrosoftInternetExplorer',
             'MicrosoftOutlook',
@@ -134,6 +142,9 @@ class WindowsDesktop extends GeneralDesktop
             'MicrosoftWord',
             'Netscape',
             'Opera',
+            'RockMelt',
+            'Safari',
+            'SeaMonkey',
             'Thunderbird',
             'WindowsLiveMail',
             'YacyBot'

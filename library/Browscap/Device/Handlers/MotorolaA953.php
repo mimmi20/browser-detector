@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: BlackBerry8100.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: BlackBerry8100.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class PlayBook extends RimTablet
+class MotorolaA953 extends Motorola
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'PlayBook';
+    protected $_device = 'Motorola MotoA953';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class PlayBook extends RimTablet
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'PlayBook')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MotoA953')) {
             return false;
         }
         
@@ -62,31 +62,6 @@ class PlayBook extends RimTablet
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\RimOs();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 6;
     }
 }

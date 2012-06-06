@@ -54,6 +54,10 @@ class PlayStationVita extends DeviceHandler
             return false;
         }
         
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('PlayStation Vita'))) {
             return true;
         }

@@ -206,4 +206,29 @@ class Unknown extends BrowserHandler
     {
         return false;
     }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Unknown();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
 }

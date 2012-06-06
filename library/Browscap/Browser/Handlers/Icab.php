@@ -52,6 +52,10 @@ class Icab extends BrowserHandler
             return false;
         }
         
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains($this->_useragent, 'iCab')) {
             return false;
         }

@@ -50,17 +50,7 @@ class GeneralBot extends DeviceHandler
             return false;
         }
         
-        $bots = array(
-            'bot',
-            'spider',
-            'crawler',
-            'AppEngine-Google',
-            'Feedfetcher-Google',
-            'WordPress',
-            'http:'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $bots)) {
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
             return true;
         }
         
@@ -110,5 +100,91 @@ class GeneralBot extends DeviceHandler
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $browsers = array(
+            'AcoonBot',
+            'Bingbot',
+            'Camcrawler',
+            'CamelHttpStream',
+            'CheckHttp',
+            'CydralWebImageSearch',
+            'DCPbot',
+            'ExaleadCloudView',
+            'FakeBrowser',
+            'FakeFirefox',
+            'FakeIe',
+            'FakeMozilla',
+            'FeedfetcherGoogle',
+            'GeneralBot',
+            'GenericJavaCrawler',
+            'Getleft',
+            'Godzilla',
+            'Googlebot',
+            'GSLFbot',
+            'ImageSearcherS',
+            'InsiteRobot',
+            'JustCrawler',
+            'Larbin',
+            'Mjbot',
+            'Msnbot',
+            'NetNewsWire',
+            'Netvibes',
+            'NewsRack',
+            'Nutch',
+            'Parchbot',
+            'Picsearchbot',
+            'PodtechNetwork',
+            'RgAnalytics',
+            'RssingBot',
+            'Safersurf',
+            'Scorpionbot',
+            'Scoutjet',
+            'Scrubby',
+            'Setooz',
+            'SeznamScreenshotGenerator',
+            'Snapbot',
+            'Sosospider',
+            'Sqwidgebot',
+            'StrategicBoardBot',
+            'StrawberryjamUrlExpander',
+            'TasapImageRobot',
+            'Tweetbot',
+            'TwengabotDiscover',
+            'Twitturls',
+            'Unisterbot',
+            'UnisterTesting',
+            'UniversalFeedParser',
+            'Voilabot',
+            'Webbotru',
+            'YacyBot'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

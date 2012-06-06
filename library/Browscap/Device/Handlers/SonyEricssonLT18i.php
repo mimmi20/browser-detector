@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SonyEricssonLT18i extends GeneralMobile
+class SonyEricssonLT18i extends SonyEricsson
 {
     /**
      * @var string the detected device
@@ -66,7 +66,7 @@ class SonyEricssonLT18i extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**
@@ -77,20 +77,5 @@ class SonyEricssonLT18i extends GeneralMobile
     public function hasOs()
     {
         return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
     }
 }

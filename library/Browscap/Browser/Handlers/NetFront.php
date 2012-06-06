@@ -52,12 +52,12 @@ class NetFront extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnSafari = array(
+        $isNotReallyAnNetfront = array(
             // using also the KHTML rendering engine
             'Kindle'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnNetfront)) {
             return false;
         }
         
@@ -137,7 +137,7 @@ class NetFront extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Unknown();
+        $handler = new \Browscap\Engine\Handlers\NetFront();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

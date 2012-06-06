@@ -118,4 +118,38 @@ class Lunascape extends BrowserHandler
     {
         return 20;
     }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $engines = array(
+            'Webkit',
+            'Gecko',
+            'Trident'
+        );
+        
+        $engineChain = new \Browscap\Engine\Chain(false, $engines);
+        $engineChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $engineChain->setCache($this->_cache);
+        }
+        
+        return $engineChain->detect($this->_useragent);
+    }
 }

@@ -33,7 +33,7 @@ class Mint extends Linux
     /**
      * @var string the detected platform
      */
-    protected $_name = 'Mint';
+    protected $_name = 'Linux Mint';
     
     /**
      * Returns true if this handler can handle the given $useragent

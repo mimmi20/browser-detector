@@ -52,11 +52,15 @@ class LinuxDesktop extends GeneralDesktop
             return false;
         }
         
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+            return false;
+        }
+        
         $linux = array(
             'Linux', 'Debian', 'Ubuntu', 'SUSE', 'Fedora', 'Mint', 'redhat', 'Slackware', 'Zenwalk GNU'
         );
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $linux)) {
+        if (!$this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, $linux)) {
             return false;
         }
         
@@ -95,6 +99,7 @@ class LinuxDesktop extends GeneralDesktop
             'Linux',
             'Debian',
             'Fedora',
+            'Mint',
             'Redhat',
             'Slackware',
             'Suse',
@@ -132,11 +137,16 @@ class LinuxDesktop extends GeneralDesktop
     {
         $browsers = array(
             'Chrome',
+            'Chromium',
             'Firefox',
+            'GoogleEarth',
+            'Iceweasel',
             'Iron',
             'Lunascape',
             'Netscape',
             'Opera',
+            'Safari',
+            'SeaMonkey',
             'Thunderbird',
             'YacyBot'
         );

@@ -83,7 +83,7 @@ class Nokia5230 extends Nokia
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Symbianos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

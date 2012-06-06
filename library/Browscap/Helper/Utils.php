@@ -25,221 +25,115 @@ namespace Browscap\Helper;
 class Utils
 {
     /**
-     * The worst allowed match tolerance
-     * @var unknown_type
-     */
-    const WORST_MATCH = 7;
-    
-    /**
-     * @var string Locale / Language matching RegEx
-     */
-    const LANGUAGE_PATTERN = '/;[a-z]{2}(-[a-zA-Z]{0,2})?(?!=[;)])/';
-    
-    /**
      * @var array Collection of mobile browser keywords
      */
-    private static $_mobileBrowsers = array(
+    private $_mobileBrowsers = array(
+        'android',
+        'aspen simulator',
+        'bada',
+        'blackberry',
+        'blazer',
+        'bolt',
+        'brew',
         'cldc',
-        'symbian',
-        'midp',
+        'dalvik',
+        'danger hiptop',
+        'embider',
+        'fennec',
+        'foma',
+        'ipad',
+        'iphone',
+        'iphoneosx',
+        'iphone os',
+        'ipod',
+        'iris',
         'j2me',
+        'like mac os x',
+        'maemo',
+        'meego',
+        'midp',
         'mobile',
-        'wireless',
+        'netfront',
+        'nintendo wii',
+        'nitro',
+        'nokia',
+        'obigo',
+        'openwave',
+        'opera mini',
+        'opera mobi',
         'palm',
         'phone',
         'pocket pc',
         'pocketpc',
-        'netfront',
-        'bolt',
-        'iris',
-        'brew',
-        'openwave',
-        'windows ce',
-        'wap2',
-        'android',
-        'opera mini',
-        'opera mobi',
-        'maemo',
-        'fennec',
-        'blazer',
-        '160x160',
-        'webos',
+        'rim tablet',
+        'series40',
+        'series 60',
         'sony',
-        'nitro',
-        '480x640',
-        'aspen simulator',
+        'symbian',
+        'symbianos',
+        'symbos',
         'up.browser',
         'up.link',
-        'embider',
-        'danger hiptop',
-        'obigo',
-        'foma');
+        'wap2',
+        'webos',
+        'windows ce',
+        'windows mobile',
+        'windows phone os',
+        'wireless',
+        '160x160',
+        '480x640'
+    );
     
     /**
-     * Char index of the first instance of $string found in $target, starting at $startingIndex;
-     * if no match is found, the length of the string is returned
-     *
-     * @param string  $string haystack
-     * @param string  $target needle
-     * @param integer $startingIndex Char index for start of search
-     *
-     * @return integer Char index of match or length of string
+     * Returns true if the give $userAgent is from a mobile device
+     * @param string $userAgent
+     * @return bool
      */
-    public function indexOfOrLength($string, $target, $startingIndex = 0) 
+    public function isMobileBrowser($userAgent)
     {
-        $pos = strpos($string, $target, $startingIndex);
+        $mobileBrowser = false;
         
-        return $pos !== false ? $pos : strlen($string);
-    }
-    
-    /**
-     * Lowest char index of the first instance of any of the $needles found in $userAgent, starting at $startIndex;
-     * if no match is found, the length of the string is returned
-     *
-     * @param string  $userAgent haystack
-     * @param array   $needles Array of(string)needles to search for in $userAgent
-     * @param integer $startIndex Char index for start of search
-     *
-     * @return integer Char index of left-most match or length of string
-     */
-    public function indexOfAnyOrLength($userAgent, array $needles = array(), $startIndex = 0) 
-    {
-        $positions = array();
-        
-        foreach ($needles as $target) {
-            $pos = $this->indexOfOrLength($string, $target, $startingIndex);
-            
-            if ($pos !== false) {
-                $positions[] = $pos;
+        foreach ($this->_mobileBrowsers as $key) {
+            if (stripos($userAgent, $key) !== false) {
+                $mobileBrowser = true;
+                break;
             }
         }
         
-        sort($positions);
-        
-        return count($positions) > 0 ? $positions[0] : strlen($userAgent);
+        return $mobileBrowser;
     }
     
     /**
-     * 
-     * Returns the position of third occurrence of a ;(semi-column) if it exists 
-     * or the string length if no match is found 
-     * @param string $haystack
-     * @return int Char index of third semicolon or length
+     * Returns true if the give $userAgent is from a spam bot or crawler
+     * @param string $userAgent
+     * @return bool
      */
-    public function thirdSemiColumn($haystack) 
+    public function isSpamOrCrawler($userAgent)
     {
-        $thirdSemiColumnIndex = $this->ordinalIndexOf($haystack, ';', 3);
+        $bots = array(
+            'AppEngine-Google',
+            'bot',
+            'spider',
+            'crawler',
+            'feedparser',
+            'Feedfetcher-Google',
+            'http:',
+            'WebWasher',
+            'WordPress'
+        );
         
-        if ($thirdSemiColumnIndex < 0) {
-            return strlen($haystack);
+        if ($this->checkIfContainsAnyOfCaseInsensitive($userAgent, $bots)) {
+            return true;
         }
         
-        return $thirdSemiColumnIndex;
-    }
-    
-    /**
-     * The nth($ordinal) occurance of $needle in $haystack or -1 if no match is found
-     * @param string $haystack
-     * @param string $needle
-     * @param int $ordinal
-     * @throws InvalidArgumentException
-     * @return int Char index of occurance
-     */
-    public function ordinalIndexOf($haystack, $needle, $ordinal) 
-    {
-        if (is_null($haystack) || empty($haystack)) {
-            throw new \InvalidArgumentException('haystack must not be null or empty');
-        }
-        
-        if (!is_integer($ordinal)) {
-            throw new \InvalidArgumentException('ordinal must be a positive ineger');
-        }
-        
-        $found = 0;
-        $index = -1;
-        
-        do {
-            $index = strpos($haystack, $needle, $index + 1);
-            $index = is_int($index) ? $index : - 1;
-            
-            if ($index < 0) {
-                return $index;
-            }
-            
-            $found ++;
-        } while($found < $ordinal);
-        
-        return $index;
-    
-    }
-    
-    /**
-     * First occurance of a / character
-     * @param string $string Haystack
-     * @return int Char index
-     */
-    public function firstSlash($string)
-    {
-        $firstSlash = strpos($string, '/');
-        return $firstSlash != 0 ? $firstSlash : strlen($string);
-    }
-    
-    /**
-     * Second occurance of a / character
-     * @param string $string Haystack
-     * @return int Char index
-     */
-    public function secondSlash($string)
-    {
-        $firstSlash = strpos($string, '/');
-        
-        if ($firstSlash === false) {
-            return strlen($string);
-        }
-        return strpos($string, '/', $firstSlash);
-    }
-    
-    /**
-     * First occurance of a space character
-     * @param string $string Haystack
-     * @return int Char index
-     */
-    public function firstSpace($string)
-    {
-        $firstSpace = strpos($string, ' ');
-        
-        return ($firstSpace === false) ? strlen($string) : $firstSpace;
-    }
-    
-    /**
-     * First occurance of a ; character or length
-     * @param string $string Haystack
-     * @return int Char index
-     */
-    public function firstSemiColonOrLength($string)
-    {
-        return $this->firstMatchOrLength($string, ';');
-    }
-    
-    /**
-     * First occurance of $toMatch string or length
-     * @param string $string Haystack
-     * @param string $toMatch Needle
-     * @return int Char index
-     */
-    public function firstMatchOrLength($string, $toMatch)
-    {
-        $firstMatch = strpos($string, $toMatch);
-        return ($firstMatch === null) ? strlen($string) : $firstMatch;
+        return false;
     }
     
     /**
      * Returns true if $haystack contains $needle
-     *
      * @param string $haystack Haystack
      * @param string $needle Needle
-     *
-     * @return boolean
+     * @return bool
      */
     public function checkIfContains($haystack, $needle)
     {
@@ -248,13 +142,11 @@ class Utils
     
     /**
      * Returns true if $haystack contains any of the(string)needles in $needles
-     *
      * @param string $haystack Haystack
-     * @param array  $needles  Array of(string)needles
-     *
-     * @return boolean
+     * @param array $needles Array of(string)needles
+     * @return bool
      */
-    public function checkIfContainsAnyOf($haystack, array $needles)
+    public function checkIfContainsAnyOf($haystack, $needles)
     {
         foreach ($needles as $needle) {
             if ($this->checkIfContains($haystack, $needle)) {
@@ -267,16 +159,59 @@ class Utils
     
     /**
      * Returns true if $haystack contains all of the(string)needles in $needles
-     *
      * @param string $haystack Haystack
-     * @param array  $needles  Array of(string)needles
-     *
+     * @param array $needles Array of(string)needles
      * @return bool
      */
-    public function checkIfContainsAll($haystack, array $needles = array())
+    public function checkIfContainsAll($haystack, $needles=array())
     {
         foreach ($needles as $needle) {
             if (!$this->checkIfContains($haystack, $needle)) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    /**
+     * Returns true if $haystack contains $needle without regard for case
+     * @param string $haystack Haystack
+     * @param string $needle Needle
+     * @return bool
+     */
+    public function checkIfContainsCaseInsensitive($haystack, $needle) 
+    {
+        return stripos($haystack, $needle) !== FALSE;
+    }
+    
+    /**
+     * Returns true if $haystack contains any of the(string)needles in $needles
+     * @param string $haystack Haystack
+     * @param array $needles Array of(string)needles
+     * @return bool
+     */
+    public function checkIfContainsAnyOfCaseInsensitive($haystack, $needles)
+    {
+        foreach ($needles as $needle) {
+            if ($this->checkIfContainsCaseInsensitive($haystack, $needle)) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    /**
+     * Returns true if $haystack contains all of the(string)needles in $needles
+     * @param string $haystack Haystack
+     * @param array $needles Array of(string)needles
+     * @return bool
+     */
+    public function checkIfContainsAllCaseInsensitive($haystack, $needles=array())
+    {
+        foreach ($needles as $needle) {
+            if (!$this->checkIfContainsCaseInsensitive($haystack, $needle)) {
                 return false;
             }
         }
@@ -286,25 +221,10 @@ class Utils
     }
     
     /**
-     * Returns true if $haystack contains $needle without regard for case
-     *
-     * @param string $haystack Haystack
-     * @param string $needle Needle
-     *
-     * @return bool
-     */
-    public function checkIfContainsCaseInsensitive($haystack, $needle) 
-    {
-        return stripos($haystack, $needle) !== false;
-    }
-    
-    /**
      * Returns true if $haystack starts with $needle
-     *
      * @param string $haystack Haystack
      * @param string $needle Needle
-     *
-     * @return boolean
+     * @return bool
      */
     public function checkIfStartsWith($haystack, $needle) 
     {
@@ -313,17 +233,15 @@ class Utils
     
     /**
      * Returns true if $haystack starts with any of the $needles
-     *
      * @param string $haystack Haystack
-     * @param array  $needles  Array of(string)needles
-     *
-     * @return boolean
+     * @param array $needles Array of(string)needles
+     * @return bool
      */
-    public function checkIfStartsWithAnyOf($haystack, array $needles) 
+    public function checkIfStartsWithAnyOf($haystack, $needles) 
     {
         if (is_array($needles)) {
             foreach ($needles as $needle) {
-                if (strpos($haystack, $needle) === 0) {
+                if ($this->checkIfStartsWith($haystack, $needle)) {
                     return true;
                 }
             }
@@ -332,15 +250,25 @@ class Utils
         return false;
     }
     
-    /**
-     * Removes the locale portion from the userAgent
-     *
-     * @param string $userAgent
-     *
-     * @return string
-     */
-    public function removeLocale($userAgent) 
+    public function getClassNameFromFile($filename, $namespace = __NAMESPACE__, $createFullName = true)
     {
-        return preg_replace(self::LANGUAGE_PATTERN, '', $userAgent, 1);
+        $filename = ltrim($filename, '\\');
+        
+        if (!$createFullName) {
+            return $filename;
+        }
+        
+        return '\\' . $namespace . '\\Handlers\\' . $filename;
+    }
+    
+    public function getClassNameFromDetected($detected, $namespace = __NAMESPACE__)
+    {
+        $class = $this->getClassNameFromFile($detected, $namespace, false);
+        
+        $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
+        $class = preg_replace('/[^a-zA-Z ]/', '', $class);
+        $class = str_replace(' ', '', ucwords($class));
+        
+        return '\\' . $namespace . '\\Handlers\\' . $class;
     }
 }
