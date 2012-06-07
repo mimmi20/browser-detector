@@ -136,6 +136,7 @@ class Macintosh extends GeneralDesktop
             'Lunascape',
             'Netscape',
             'Opera',
+            'Safari',
             'Thunderbird'
         );
         

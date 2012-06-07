@@ -68,5 +68,4 @@ class SonyEricssonX1i extends SonyEricsson
     {
         return 6;
     }
-    }
 }

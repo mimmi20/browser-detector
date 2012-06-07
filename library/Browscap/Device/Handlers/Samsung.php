@@ -84,8 +84,7 @@ class Samsung extends GeneralMobile
     public function getOs()
     {
         $os = array(
-            'Android',
-            'NetFront'
+            'Android'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);

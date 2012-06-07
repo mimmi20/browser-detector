@@ -28,7 +28,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: WebProcess.php 229 2012-06-02 19:32:13Z  $
  */
-class WebProcess extends GeneralBot
+class WebWasher extends GeneralBot
 {
     /**
      * @var string the detected browser
@@ -48,7 +48,7 @@ class WebProcess extends GeneralBot
         
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('WebWasher', 'Webwasher'))) {
             return false;
-        
+        }
         
         return true;
     }

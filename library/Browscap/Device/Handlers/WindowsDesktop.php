@@ -142,9 +142,9 @@ class WindowsDesktop extends GeneralDesktop
             'MicrosoftWord',
             'Netscape',
             'Opera',
-            'RockMelt',
+            'Rockmelt',
             'Safari',
-            'SeaMonkey',
+            'Seamonkey',
             'Thunderbird',
             'WindowsLiveMail',
             'YacyBot'
