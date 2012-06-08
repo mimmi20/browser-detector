@@ -48,7 +48,7 @@ class PerfectBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Perfect%20Browser')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Perfect Browser')) {
             return false;
         }
         
@@ -62,14 +62,14 @@ class PerfectBrowser extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Perfect\%20Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Perfect Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Perfect\%20Browser\-iPad\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Perfect Browser\-iPad\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

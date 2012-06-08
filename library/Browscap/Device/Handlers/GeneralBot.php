@@ -54,6 +54,10 @@ class GeneralBot extends DeviceHandler
             return true;
         }
         
+        if ($this->_utils->isFakeBrowser($this->_useragent)) {
+            return true;
+        }
+        
         return false;
     }
     
@@ -126,13 +130,12 @@ class GeneralBot extends DeviceHandler
             'Camcrawler',
             'CamelHttpStream',
             'CheckHttp',
+            'Clipish',
             'CydralWebImageSearch',
             'DCPbot',
+            'EventGuruBot',
             'ExaleadCloudView',
             'FakeBrowser',
-            'FakeFirefox',
-            'FakeIe',
-            'FakeMozilla',
             'FeedfetcherGoogle',
             'GeneralBot',
             'GenericJavaCrawler',
@@ -153,6 +156,7 @@ class GeneralBot extends DeviceHandler
             'Parchbot',
             'Picsearchbot',
             'PodtechNetwork',
+            'Python',
             'RgAnalytics',
             'RssingBot',
             'Safersurf',
@@ -175,7 +179,10 @@ class GeneralBot extends DeviceHandler
             'UniversalFeedParser',
             'Voilabot',
             'Webbotru',
-            'YacyBot'
+            'WebWasher',
+            'WordPress',
+            'YacyBot',
+            'Yahoo'
         );
         
         $browserChain = new \Browscap\Browser\Chain(false, $browsers);

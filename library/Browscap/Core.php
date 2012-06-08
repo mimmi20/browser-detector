@@ -27,6 +27,8 @@ namespace Browscap;
  * @version    SVN: $Id: Browscap.php 221 2012-05-20 18:47:51Z  $
  */
 
+use Browscap\Helper\Support;
+
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
@@ -55,7 +57,7 @@ abstract class Core
     protected $_cachePrefix = '';
     
     /**
-     * @var \Browscap\Support
+     * @var \Browscap\Helper\Support
      */
     protected $_support = null;
     

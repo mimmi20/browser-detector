@@ -51,7 +51,11 @@ class MicrosoftMobileExplorer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Mozilla/', 'MSIE', 'IEMobile'))) {
+        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Mozilla/', 'MSIE'))) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('IEMobile', 'Windows CE'))) {
             return false;
         }
         

@@ -48,6 +48,20 @@ class Unknown extends OsHandler
     }
     
     /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectBits()
+    {
+        $this->_bits = '';
+        
+        return $this;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

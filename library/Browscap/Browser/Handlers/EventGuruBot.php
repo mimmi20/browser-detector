@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Mjbot.php 220 2012-05-20 11:12:21Z  $
  */
-class YMessenger extends Yahoo
+class EventGuruBot extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Y! Messenger';
+    protected $_browser = 'EventGuruBot';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -46,7 +46,7 @@ class YMessenger extends Yahoo
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Y!%20Messenger/')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'EventGuruBot/')) {
             return false;
         }
         
@@ -54,12 +54,19 @@ class YMessenger extends Yahoo
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the browser version from the given user agent
      *
-     * @return integer
+     * @return string
      */
-    public function getWeight()
+    protected function _detectVersion()
     {
-        return 2;
+        $doMatch = preg_match('/EventGuruBot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
 }

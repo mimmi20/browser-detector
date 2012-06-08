@@ -15,8 +15,10 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HotWallpapers.php 229 2012-06-02 19:32:13Z  $
  */
+
+use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,14 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HotWallpapers.php 229 2012-06-02 19:32:13Z  $
  */
-class FakeMozilla extends FakeBrowser
+class ImageMobile extends CfNetwork
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'FakeMozilla';
+    protected $_browser = 'ImageMobile';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -46,11 +48,7 @@ class FakeMozilla extends FakeBrowser
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('FakeMozilla/'))) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'ImageMobile')) {
             return false;
         }
         
@@ -64,7 +62,7 @@ class FakeMozilla extends FakeBrowser
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/FakeMozilla\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/ImageMobile\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -72,5 +70,40 @@ class FakeMozilla extends FakeBrowser
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 5;
+    }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Webkit();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

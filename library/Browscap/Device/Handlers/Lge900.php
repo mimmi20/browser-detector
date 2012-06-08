@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers;
+namespace Browscap\Device\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Lgp500.php 173 2012-01-28 13:38:35Z  $
  */
 
 /**
@@ -26,19 +26,21 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Lgp500.php 173 2012-01-28 13:38:35Z  $
  */
-class FakeIe extends FakeBrowser
+class Lge900 extends Lg
 {
     /**
-     * @var string the detected browser
+     * @var string the detected device
      */
-    protected $_browser = 'Fake IE';
+    protected $_device = 'LG-E900';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
@@ -46,10 +48,20 @@ class FakeIe extends FakeBrowser
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Internet Explorer/'))) {
-            return true;
+        if (!$this->_utils->checkIfContains($this->_useragent, 'LG-E900')) {
+            return false;
         }
         
-        return false;
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 6;
     }
 }

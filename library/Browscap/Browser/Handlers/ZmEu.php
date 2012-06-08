@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Ipick.php 164 2012-01-19 22:59:18Z  $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Ipick.php 164 2012-01-19 22:59:18Z  $
  */
-class YahooSlurpChina extends YahooSlurp
+class ZmEu extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Yahoo! Slurp China';
+    protected $_browser = 'ZmEu';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -46,20 +46,10 @@ class YahooSlurpChina extends YahooSlurp
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Yahoo! Slurp China'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'ZmEu')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 }

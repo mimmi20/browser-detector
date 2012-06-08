@@ -51,6 +51,7 @@ class Yahoo extends GeneralBot
             || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!OASIS')
             || $this->_utils->checkIfStartsWith($this->_useragent, 'YahooYSMcm')
             || $this->_utils->checkIfStartsWith($this->_useragent, 'YRL_ODP_CRAWLER')
+            || $this->_utils->checkIfContains($this->_useragent, 'www.yahoo.com')
         ) {
             return true;
         }

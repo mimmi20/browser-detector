@@ -56,6 +56,10 @@ class Macintosh extends GeneralDesktop
             return false;
         }
         
+        if ($this->_utils->isFakeBrowser($this->_useragent)) {
+            return false;
+        }
+        
         $mac = array(
             'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac'
         );
@@ -130,13 +134,25 @@ class Macintosh extends GeneralDesktop
     public function getBrowser()
     {
         $browsers = array(
+            'AtomicBrowser',
+            'Camino',
+            'CfNetwork',
             'Chrome',
+            'DarwinBrowser',
+            'DiigoBrowser',
+            'Facebook',
             'Firefox',
+            'Flipboard',
+            'Google',
             'Iron',
             'Lunascape',
+            'Midori',
             'Netscape',
+            'Omniweb',
             'Opera',
+            'Rockmelt',
             'Safari',
+            'Seamonkey',
             'Thunderbird'
         );
         

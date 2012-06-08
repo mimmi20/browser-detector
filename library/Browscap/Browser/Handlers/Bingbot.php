@@ -42,7 +42,7 @@ class Bingbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('bingbot/', 'Bing/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('bingbot/', 'Bing/', 'Bing for iPad/'))) {
             return false;
         }
         
@@ -64,6 +64,13 @@ class Bingbot extends GeneralBot
         }
         
         $doMatch = preg_match('/Bing\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Bing for iPad\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

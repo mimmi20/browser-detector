@@ -48,7 +48,7 @@ class HotWallpapers extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Hot%20Wallpapers')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Hot Wallpapers')) {
             return false;
         }
         
@@ -62,7 +62,7 @@ class HotWallpapers extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Hot%20Wallpapers\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Hot Wallpapers\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

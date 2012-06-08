@@ -15,8 +15,10 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Ipick.php 164 2012-01-19 22:59:18Z  $
+ * @version    SVN: $Id: Getleft.php 229 2012-06-02 19:32:13Z  $
  */
+
+use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,14 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Ipick.php 164 2012-01-19 22:59:18Z  $
+ * @version    SVN: $Id: Getleft.php 229 2012-06-02 19:32:13Z  $
  */
-class PicCollage extends GeneralBot
+class GetPhotos extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Pic Collage';
+    protected $_browser = 'GetPhotos';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -46,7 +48,7 @@ class PicCollage extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Pic%20Collage')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('GetPhotos/'))) {
             return false;
         }
         
@@ -60,7 +62,14 @@ class PicCollage extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Pic%20Collage\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/GetPhotos (\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/GetPhotos\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -48,7 +48,7 @@ class WowWps extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WOW%20WPs')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WOW WPs')) {
             return false;
         }
         
@@ -62,7 +62,7 @@ class WowWps extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/WOW%20WPs\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WOW WPs\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

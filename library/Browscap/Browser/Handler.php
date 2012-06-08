@@ -182,7 +182,7 @@ abstract class Handler implements MatcherInterface
      *
      * @return void
      */
-    final protected function _detectBits()
+    protected function _detectBits()
     {
         // 64 bits
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64'))) {

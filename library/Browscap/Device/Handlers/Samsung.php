@@ -84,7 +84,9 @@ class Samsung extends GeneralMobile
     public function getOs()
     {
         $os = array(
-            'Android'
+            'Android',
+            'Bada',
+            'WindowsMobileOs'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);
@@ -117,9 +119,13 @@ class Samsung extends GeneralMobile
     {
         $browsers = array(
             'Android',
+            'Dolfin',
+            'Jasmine',
+            'MicrosoftMobileExplorer',
             'NetFront',
             'OperaMini',
-            'OperaMobile'
+            'OperaMobile',
+            'WindowsPhoneSearch'
         );
         
         $browserChain = new \Browscap\Browser\Chain(false, $browsers);

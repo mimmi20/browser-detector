@@ -64,8 +64,8 @@ class GeneralDesktop extends DeviceHandler
             'Windows 3.1', 'win9x/NT 4.90', 'Windows'
         );
         
-        if ($this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, $windows)
-            || $this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $windows, true)
+            || $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'), true)
         ) {
             return false;
         }

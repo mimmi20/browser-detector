@@ -84,6 +84,32 @@ class Utils
         '480x640'
     );
     
+    private $_bots = array(
+        'acoon', 
+        'appengine-google',
+        'bot',
+        'crawl',
+        'curl',
+        'extract',
+        'feedparser',
+        'feedfetcher-google',
+        'grabber',
+        //'http:',
+        'java/',
+        'jig browser',
+        'retriever',
+        'secmon',
+        'smartlinksaddon',
+        'spider',
+        'stats',
+        'svn',
+        'webu',
+        'webwasher',
+        'wordpress',
+        'www.yahoo.com',
+        'zmeu'
+    );
+    
     /**
      * Returns true if the give $userAgent is from a mobile device
      * @param string $userAgent
@@ -91,16 +117,11 @@ class Utils
      */
     public function isMobileBrowser($userAgent)
     {
-        $mobileBrowser = false;
-        
-        foreach ($this->_mobileBrowsers as $key) {
-            if (stripos($userAgent, $key) !== false) {
-                $mobileBrowser = true;
-                break;
-            }
+        if ($this->checkIfContainsAnyOf($userAgent, $this->_mobileBrowsers, true)) {
+            return true;
         }
         
-        return $mobileBrowser;
+        return false;
     }
     
     /**
@@ -110,20 +131,48 @@ class Utils
      */
     public function isSpamOrCrawler($userAgent)
     {
-        $bots = array(
-            'AppEngine-Google',
-            'bot',
-            'spider',
-            'crawler',
-            'feedparser',
-            'Feedfetcher-Google',
-            'http:',
-            'WebWasher',
-            'WordPress'
-        );
-        
-        if ($this->checkIfContainsAnyOfCaseInsensitive($userAgent, $bots)) {
+        if ($this->checkIfContainsAnyOf($userAgent, $this->_bots, true)) {
             return true;
+        }
+        
+        return false;
+    }
+    
+    /**
+     * Returns true if the give $userAgent is from a spam bot or crawler
+     * @param string $userAgent
+     * @return bool
+     */
+    public function isFakeBrowser($userAgent)
+    {
+        if ($this->checkIfContainsAnyOf($userAgent, array('internet explorer/'), true)) {
+            return true;
+        }
+        
+        if ($this->checkIfStartsWithAnyOf($userAgent, array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey'), true)) {
+            return true;
+        }
+        
+        if (!$this->checkIfStartsWith($userAgent, 'Mozilla/') 
+            && $this->checkIfContains($userAgent, 'MSIE')
+        ) {
+            return true;
+        }
+        
+        if ($this->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS ', 'fake', 'Linux; Unix OS', '000000000'))) {
+            return true;
+        }
+        
+        $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $userAgent, $matches);
+        
+        if ($doMatch) {
+            if ($matches[2]) {
+                return true;
+            }
+            
+            if (4 > $matches[1] || $matches[1] > 6) {
+                return true;
+            }
         }
         
         return false;
@@ -135,8 +184,12 @@ class Utils
      * @param string $needle Needle
      * @return bool
      */
-    public function checkIfContains($haystack, $needle)
+    public function checkIfContains($haystack, $needle, $ci = false)
     {
+        if ($ci) {
+            return stripos($haystack, $needle) !== false;
+        }
+        
         return strpos($haystack, $needle) !== false;
     }
     
@@ -146,10 +199,10 @@ class Utils
      * @param array $needles Array of(string)needles
      * @return bool
      */
-    public function checkIfContainsAnyOf($haystack, $needles)
+    public function checkIfContainsAnyOf($haystack, $needles, $ci = false)
     {
         foreach ($needles as $needle) {
-            if ($this->checkIfContains($haystack, $needle)) {
+            if ($this->checkIfContains($haystack, $needle, $ci)) {
                 return true;
             }
         }
@@ -163,61 +216,15 @@ class Utils
      * @param array $needles Array of(string)needles
      * @return bool
      */
-    public function checkIfContainsAll($haystack, $needles=array())
+    public function checkIfContainsAll($haystack, array $needles = array(), $ci = false)
     {
         foreach ($needles as $needle) {
-            if (!$this->checkIfContains($haystack, $needle)) {
+            if (!$this->checkIfContains($haystack, $needle, $ci)) {
                 return false;
             }
         }
         
         return true;
-    }
-    
-    /**
-     * Returns true if $haystack contains $needle without regard for case
-     * @param string $haystack Haystack
-     * @param string $needle Needle
-     * @return bool
-     */
-    public function checkIfContainsCaseInsensitive($haystack, $needle) 
-    {
-        return stripos($haystack, $needle) !== FALSE;
-    }
-    
-    /**
-     * Returns true if $haystack contains any of the(string)needles in $needles
-     * @param string $haystack Haystack
-     * @param array $needles Array of(string)needles
-     * @return bool
-     */
-    public function checkIfContainsAnyOfCaseInsensitive($haystack, $needles)
-    {
-        foreach ($needles as $needle) {
-            if ($this->checkIfContainsCaseInsensitive($haystack, $needle)) {
-                return true;
-            }
-        }
-        
-        return false;
-    }
-    
-    /**
-     * Returns true if $haystack contains all of the(string)needles in $needles
-     * @param string $haystack Haystack
-     * @param array $needles Array of(string)needles
-     * @return bool
-     */
-    public function checkIfContainsAllCaseInsensitive($haystack, $needles=array())
-    {
-        foreach ($needles as $needle) {
-            if (!$this->checkIfContainsCaseInsensitive($haystack, $needle)) {
-                return false;
-            }
-        }
-        
-        return true;
-
     }
     
     /**
@@ -226,8 +233,12 @@ class Utils
      * @param string $needle Needle
      * @return bool
      */
-    public function checkIfStartsWith($haystack, $needle) 
+    public function checkIfStartsWith($haystack, $needle, $ci = false) 
     {
+        if ($ci) {
+            return stripos($haystack, $needle) === 0;
+        }
+        
         return strpos($haystack, $needle) === 0;
     }
     
@@ -237,11 +248,11 @@ class Utils
      * @param array $needles Array of(string)needles
      * @return bool
      */
-    public function checkIfStartsWithAnyOf($haystack, $needles) 
+    public function checkIfStartsWithAnyOf($haystack, array $needles = array(), $ci = false) 
     {
         if (is_array($needles)) {
             foreach ($needles as $needle) {
-                if ($this->checkIfStartsWith($haystack, $needle)) {
+                if ($this->checkIfStartsWith($haystack, $needle, $ci)) {
                     return true;
                 }
             }

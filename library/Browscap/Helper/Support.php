@@ -1,5 +1,5 @@
 <?php
-namespace Browscap;
+namespace Browscap\Helper;
 
 /**
  * Tera_WURFL - PHP MySQL driven WURFL
@@ -77,14 +77,19 @@ class Support
     
     public function cleanAgent($userAgent)
     {
-        $userAgent = str_replace(array('User-Agent:', 'User-agent:'), '', $userAgent);
-        $userAgent = str_replace(array(' :: '), ';', $userAgent);
-        $userAgent = str_replace(array('%2C'), '.', $userAgent);
-        $userAgent = str_replace(array('rv = '), 'rv:', $userAgent);
-        $userAgent = preg_replace('/\s+\s/', ' ', $userAgent);
-        $userAgent = trim($userAgent);
+        $userAgent = str_replace(
+            array('User-Agent:', 'User-agent:'), 
+            '', 
+            $userAgent
+        );
         
-        return $userAgent;
+        $userAgent = str_replace(
+            array(' :: ', '%2C', '%20', 'rv = '), 
+            array(';', '.', ' ', 'rv:'), 
+            $userAgent
+        );
+        
+        return trim(preg_replace('/\s+\s/', ' ', $userAgent));
     }
     
     public function getAcceptHeader()

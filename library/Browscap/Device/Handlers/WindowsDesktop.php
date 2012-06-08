@@ -56,14 +56,18 @@ class WindowsDesktop extends GeneralDesktop
             return false;
         }
         
+        if ($this->_utils->isFakeBrowser($this->_useragent)) {
+            return false;
+        }
+        
         $windows = array(
             'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
             'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows 98', 'Windows 95',
             'Windows 3.1', 'win9x/NT 4.90', 'Windows'
         );
         
-        if (!$this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, $windows)
-            && !$this->_utils->checkIfContainsAnyOfCaseInsensitive($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $windows, true)
+            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'), true)
         ) {
             return false;
         }
@@ -128,6 +132,7 @@ class WindowsDesktop extends GeneralDesktop
             'Argclrint',
             'AdobeAIR',
             'Chrome',
+            'ComodoDragon',
             'CrazyBrowser',
             'Dreamweaver',
             'Firefox',

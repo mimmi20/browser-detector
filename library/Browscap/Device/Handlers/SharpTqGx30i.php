@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Lgp500.php 173 2012-01-28 13:38:35Z  $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Lgp500.php 173 2012-01-28 13:38:35Z  $
  */
-class Robot extends GeneralBot
+class SharpTqGx30i extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Bot';
+    protected $_device = 'SHARP-TQ-GX30i';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +48,11 @@ class Robot extends GeneralBot
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Robot', 'Link Checker', 'Bot'))) {
-            return true;
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SHARP-TQ-GX30i')) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -62,17 +62,7 @@ class Robot extends GeneralBot
      */
     public function getWeight()
     {
-        return 2;
-    }
-    
-    /**
-     * returns TRUE if the device is a mobile
-     *
-     * @return boolean
-     */
-    public function isMobileDevice()
-    {
-        return false;
+        return 6;
     }
     
     /**
@@ -94,6 +84,31 @@ class Robot extends GeneralBot
     public function getOs()
     {
         $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\Openwave();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

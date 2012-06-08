@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MotoA953.php 229 2012-06-02 19:32:13Z  $
+ * @version    SVN: $Id: Lgp500.php 173 2012-01-28 13:38:35Z  $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MotoA953.php 229 2012-06-02 19:32:13Z  $
+ * @version    SVN: $Id: Lgp500.php 173 2012-01-28 13:38:35Z  $
  */
-class Motorola extends GeneralMobile
+class KddiSn3f extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Motorola';
+    protected $_device = 'KDDI-SN3F';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class Motorola extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Moto', 'MOT'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'KDDI-SN3F')) {
             return false;
         }
         
@@ -62,7 +62,7 @@ class Motorola extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**
@@ -83,19 +83,10 @@ class Motorola extends GeneralMobile
      */
     public function getOs()
     {
-        $os = array(
-            'Android',
-            'Symbianos'
-        );
+        $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $osChain = new \Browscap\Os\Chain(false, $os);
-        $osChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_useragent);
         return $handler->detect();
     }
     
@@ -117,18 +108,10 @@ class Motorola extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android',
-            'Motorola'
-        );
+        $handler = new \Browscap\Browser\Handlers\Openwave();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
+        return $handler->detect();
     }
 }

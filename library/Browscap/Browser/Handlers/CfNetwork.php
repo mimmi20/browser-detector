@@ -15,25 +15,27 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: AdobeAIR.php 229 2012-06-02 19:32:13Z  $
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
- * CatchAllUserAgentHandler
+ * OperaHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: AdobeAIR.php 229 2012-06-02 19:32:13Z  $
  */
-class YjAgent extends Yahoo
+class CfNetwork extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Y!J-AGENT';
+    protected $_browser = 'general CFNetwork Application';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -46,7 +48,7 @@ class YjAgent extends Yahoo
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Y!J-AGENT')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'CFNetwork/')) {
             return false;
         }
         
@@ -61,5 +63,30 @@ class YjAgent extends Yahoo
     public function getWeight()
     {
         return 2;
+    }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Webkit();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

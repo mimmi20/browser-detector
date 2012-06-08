@@ -46,7 +46,7 @@ class FakeBrowser extends GeneralBot
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mac; Mac OS ', 'fake', 'Linux; Unix OS', '000000000'))) {
+        if ($this->_utils->isFakeBrowser($this->_useragent)) {
             return true;
         }
         
