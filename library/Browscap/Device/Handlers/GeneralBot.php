@@ -161,7 +161,7 @@ class GeneralBot extends DeviceHandler
             'Nutch',
             'PagePeeker',
             'Parchbot',
-            'PearHeepRequest',
+            'PearHttpRequest',
             'Php',
             'Picsearchbot',
             'PodtechNetwork',
