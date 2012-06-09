@@ -1,4 +1,4 @@
-    <?php
+<?php
 namespace Browscap\Browser\Handlers;
 
 /**
