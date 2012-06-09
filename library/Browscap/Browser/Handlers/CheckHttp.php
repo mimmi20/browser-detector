@@ -18,8 +18,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class CheckHttp extends BrowserHandler
+class CheckHttp extends GeneralBot
 {
     /**
      * @var string the detected browser
@@ -77,5 +75,15 @@ class CheckHttp extends BrowserHandler
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 }

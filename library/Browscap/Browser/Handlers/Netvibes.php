@@ -1,4 +1,4 @@
-<?php
+    <?php
 namespace Browscap\Browser\Handlers;
 
 /**
@@ -21,9 +21,8 @@ namespace Browscap\Browser\Handlers;
 /**
  * Handler Base class
  */
-use Browscap\Browser\Handler as BrowserHandler;
 
-/**
+ /**
  * MSIEAgentHandler
  *
  *
@@ -33,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Netvibes extends BrowserHandler
+class Netvibes extends GeneralBot
 {
     /**
      * @var string the detected browser
@@ -56,6 +55,16 @@ class Netvibes extends BrowserHandler
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**

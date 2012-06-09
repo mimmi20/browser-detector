@@ -150,6 +150,7 @@ class LinuxDesktop extends GeneralDesktop
             'Lunascape',
             'Netscape',
             'Opera',
+            'Qt',
             'Safari',
             'SeaMonkey',
             'Thunderbird',

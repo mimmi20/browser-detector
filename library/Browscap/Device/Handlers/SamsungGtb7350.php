@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers;
+namespace Browscap\Device\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGtp7501.php 173 2012-01-28 13:38:35Z  $
  */
 
 /**
@@ -26,19 +26,21 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGtp7501.php 173 2012-01-28 13:38:35Z  $
  */
-class WindowsLiveSocialObjectExtractorEng extends GeneralBot
+class SamsungGtb7350 extends Samsung
 {
     /**
-     * @var string the detected browser
+     * @var string the detected device
      */
-    protected $_browser = 'Windows-Live-Social-Object-Extractor-Engine';
+    protected $_device = 'Samsung GT-B7350';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
@@ -46,7 +48,7 @@ class WindowsLiveSocialObjectExtractorEng extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Windows-Live-Social-Object-Extractor-Engine')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'GT-B7350')) {
             return false;
         }
         
@@ -54,19 +56,12 @@ class WindowsLiveSocialObjectExtractorEng extends GeneralBot
     }
     
     /**
-     * detects the browser version from the given user agent
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return string
+     * @return integer
      */
-    protected function _detectVersion()
+    public function getWeight()
     {
-        $doMatch = preg_match('/Windows-Live-Social-Object-Extractor-Engine\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
+        return 6;
     }
 }

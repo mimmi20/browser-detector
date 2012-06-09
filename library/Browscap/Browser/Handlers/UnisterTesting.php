@@ -28,7 +28,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class UnisterTesting extends GeneralBot
+class UnisterTesting extends UnisterBot
 {
     /**
      * @var string the detected browser
@@ -68,5 +68,15 @@ class UnisterTesting extends GeneralBot
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 300;
     }
 }

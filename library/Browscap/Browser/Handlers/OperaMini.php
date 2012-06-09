@@ -48,12 +48,6 @@ class OperaMini extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Opera/')
-        ) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains($this->_useragent, 'Opera Mini')) {
             return false;
         }
@@ -78,7 +72,7 @@ class OperaMini extends BrowserHandler
         $doMatch = preg_match('/Opera Mini\/(\d+)\./', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $matches[1];
+            $this->_version = $matches[1] . '.0';
             return;
         }
         

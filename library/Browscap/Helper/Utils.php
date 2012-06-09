@@ -153,7 +153,8 @@ class Utils
             return true;
         }
         
-        if (!$this->checkIfStartsWith($userAgent, 'Mozilla/') 
+        if (!$this->checkIfStartsWith($userAgent, 'Mozilla/') // regular IE
+            && !$this->checkIfStartsWith($userAgent, 'Outlook-Express/') // Windows Live Mail
             && $this->checkIfContains($userAgent, 'MSIE')
         ) {
             return true;

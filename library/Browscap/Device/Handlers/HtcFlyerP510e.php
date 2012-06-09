@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcFlyerP510e extends Htc
+class HtcFlyerP510e extends HtcFlyer
 {
     /**
      * @var string the detected device
@@ -62,6 +62,6 @@ class HtcFlyerP510e extends Htc
      */
     public function getWeight()
     {
-        return 6;
+        return 7;
     }
 }

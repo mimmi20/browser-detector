@@ -62,7 +62,7 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Firefox', 'Minefield'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Firefox', 'Minefield', 'Nightly'))) {
             return false;
         }
         

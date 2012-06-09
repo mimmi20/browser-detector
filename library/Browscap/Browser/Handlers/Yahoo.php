@@ -60,6 +60,16 @@ class Yahoo extends GeneralBot
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+    
+    /**
      * returns TRUE if the browser supports Frames
      *
      * @return boolean

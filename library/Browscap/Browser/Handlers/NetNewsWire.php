@@ -21,9 +21,8 @@ namespace Browscap\Browser\Handlers;
 /**
  * Handler Base class
  */
-use Browscap\Browser\Handler as BrowserHandler;
 
-/**
+ /**
  * MSIEAgentHandler
  *
  *
@@ -33,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NetNewsWire extends BrowserHandler
+class NetNewsWire extends GeneralBot
 {
     /**
      * @var string the detected browser
@@ -104,6 +103,16 @@ class NetNewsWire extends BrowserHandler
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**

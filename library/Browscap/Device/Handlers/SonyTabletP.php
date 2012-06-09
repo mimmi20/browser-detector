@@ -83,4 +83,14 @@ class SonyTabletP extends SonyEricsson
     {
         return 6;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

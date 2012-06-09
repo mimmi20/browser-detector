@@ -83,7 +83,32 @@ class NokiaE63 extends Nokia
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Symbianos();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\NokiaBrowser();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

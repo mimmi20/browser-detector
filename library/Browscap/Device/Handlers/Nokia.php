@@ -119,8 +119,10 @@ class Nokia extends GeneralMobile
     public function getBrowser()
     {
         $browsers = array(
+            'MicrosoftMobileExplorer',
             'NokiaBrowser',
-            'MicrosoftMobileExplorer'
+            'OperaMini',
+            'OperaMobile'
         );
         
         $browserChain = new \Browscap\Browser\Chain(false, $browsers);

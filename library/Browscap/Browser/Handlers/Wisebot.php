@@ -69,4 +69,14 @@ class Wisebot extends GeneralBot
         
         $this->_version = '';
     }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
 }

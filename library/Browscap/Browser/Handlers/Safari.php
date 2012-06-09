@@ -67,6 +67,7 @@ class Safari extends BrowserHandler
             'Rockmelt',
             'rekonq',
             'OmniWeb',
+            'Qt',
             'Silk',
             'MQQBrowser',
             'konqueror',

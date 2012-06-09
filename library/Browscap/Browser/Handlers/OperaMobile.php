@@ -48,12 +48,6 @@ class OperaMobile extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Opera/')
-        ) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Opera Mobi', 'Opera Tablet'))) {
             return false;
         }

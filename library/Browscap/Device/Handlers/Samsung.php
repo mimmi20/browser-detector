@@ -86,6 +86,7 @@ class Samsung extends GeneralMobile
         $os = array(
             'Android',
             'Bada',
+            'Brew',
             'WindowsMobileOs'
         );
         
@@ -125,6 +126,7 @@ class Samsung extends GeneralMobile
             'NetFront',
             'OperaMini',
             'OperaMobile',
+            'Polaris',
             'WindowsPhoneSearch'
         );
         

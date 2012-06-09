@@ -48,7 +48,7 @@ class HtcSensationXe extends HtcSensation
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'HTC Sensation XE')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('HTC Sensation XE', 'HTC_SensationXE'))) {
             return false;
         }
         
