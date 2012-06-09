@@ -104,7 +104,6 @@ class Utils
         'stats',
         'svn',
         'webu',
-        'webwasher',
         'wordpress',
         'www.yahoo.com',
         'zmeu'

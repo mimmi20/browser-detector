@@ -76,7 +76,6 @@ class MicrosoftOutlook extends BrowserHandler
             'IEMobile',
             'BlackBerry',
             'WebTV',
-            'WebWasher',
             // Outlook Express
             'Outlook-Express'
         );

@@ -204,7 +204,6 @@ class GeneralBot extends DeviceHandler
             'WebmasterworldServerHeaderChecker',
             'Webscan',
             'Websuchebot',
-            'WebWasher',
             'Wepbot',
             'Winkbot',
             'Wisebot',
