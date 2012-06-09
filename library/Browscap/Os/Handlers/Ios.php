@@ -71,21 +71,21 @@ class Ios extends OsHandler
             return;
         }
         
-        $doMatch = preg_match('/CPU OS ([\d\_]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CPU OS (\d+\_\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/CPU iPad OS ([\d\_]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CPU iPad OS (\d+\_\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/iPhone OS ([\d\_]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/iPhone OS (\d+\_\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);

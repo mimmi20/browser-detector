@@ -64,7 +64,7 @@ class CrOs extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/CrOS\/([\d\.\-]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CrOS\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             return $matches[1];

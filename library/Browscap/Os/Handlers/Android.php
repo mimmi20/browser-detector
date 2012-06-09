@@ -62,14 +62,14 @@ class Android extends Linux
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Android\/([\d\.\_\-update]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Android\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Android ([\d\.\_\-update]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Android (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

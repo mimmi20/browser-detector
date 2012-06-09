@@ -75,7 +75,7 @@ class Ruby extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Ruby\/([\d\.p]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Ruby\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

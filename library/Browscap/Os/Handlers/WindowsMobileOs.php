@@ -79,7 +79,7 @@ class WindowsMobileOs extends OsHandler
     protected function _detectVersion()
     {
         if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Windows CE', 'Windows Mobile'))) {
-            $this->_version = '6.0 (CE)';
+            $this->_version = '6.0';
             return;
         }
         
