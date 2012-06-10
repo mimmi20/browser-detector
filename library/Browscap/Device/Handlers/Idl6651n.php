@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: IS05.php 241 2012-06-10 14:58:42Z  $
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -28,14 +28,14 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: IS05.php 241 2012-06-10 14:58:42Z  $
  */
-class IS05 extends DeviceHandler
+class Idl6651n extends DeviceHandler
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'IS05';
+    protected $_device = 'IDL-6651N';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class IS05 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'IS05')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'IDL-6651N')) {
             return false;
         }
         
@@ -68,24 +68,24 @@ class IS05 extends DeviceHandler
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * returns TRUE if the device has a specific Browser
      *
      * @return boolean
      */
-    public function hasOs()
+    public function hasBrowser()
     {
         return true;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function getBrowser()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Browser\Handlers\HbbTv();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

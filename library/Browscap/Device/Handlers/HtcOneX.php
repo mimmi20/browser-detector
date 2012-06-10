@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HtcOneS.php 241 2012-06-10 14:58:42Z  $
  */
-
-use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HtcOneS.php 241 2012-06-10 14:58:42Z  $
  */
-class IS05 extends DeviceHandler
+class HtcOneX extends HtcOne
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'IS05';
+    protected $_device = 'HTC One X';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +48,7 @@ class IS05 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'IS05')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'HTC One X')) {
             return false;
         }
         
@@ -64,31 +62,6 @@ class IS05 extends DeviceHandler
      */
     public function getWeight()
     {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 7;
     }
 }

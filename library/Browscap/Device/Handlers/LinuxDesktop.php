@@ -103,6 +103,7 @@ class LinuxDesktop extends GeneralDesktop
             'Linux',
             'Debian',
             'Fedora',
+            'JoliOs',
             'Mint',
             'Redhat',
             'Slackware',

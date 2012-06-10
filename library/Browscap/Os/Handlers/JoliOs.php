@@ -18,8 +18,6 @@ namespace Browscap\Os\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Os\Handler as OsHandler;
-
 /**
  * MSIEAgentHandler
  *
@@ -30,12 +28,12 @@ use Browscap\Os\Handler as OsHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Linux extends OsHandler
+class JoliOs extends Linux
 {
     /**
      * @var string the detected platform
      */
-    protected $_name = 'Linux';
+    protected $_name = 'Joli OS';
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -48,29 +46,7 @@ class Linux extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Linux', 'linux', 'X11'))) {
-            return false;
-        }
-        
-        $isNotReallyAnLinux = array(
-            // special Linux versions
-            'Android',
-            'Debian',
-            'Ubuntu',
-            'CrOS',
-            'Joli OS',
-            'Mint',
-            'SUSE',
-            'Fedora',
-            'redhat',
-            'Slackware',
-            // other OS which are using X11
-            'BSD',
-            'SunOS',
-            'HP-UX'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Joli OS'))) {
             return false;
         }
         
@@ -86,14 +62,7 @@ class Linux extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Linux\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Linux (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Joli OS\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -101,15 +70,5 @@ class Linux extends OsHandler
         }
         
         $this->_version = '';
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 606;
     }
 }

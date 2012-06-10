@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Browser\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -11,6 +11,7 @@ namespace Browscap\Device\Handlers;
  *
  * Refer to the COPYING.txt file distributed with this package.
  *
+ *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
@@ -18,10 +19,10 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
+use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * CatchAllUserAgentHandler
+ * BenQUserAgentHandler
  *
  *
  * @category   WURFL
@@ -30,19 +31,17 @@ use Browscap\Device\Handler as DeviceHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class IS05 extends DeviceHandler
+class HbbTv extends BrowserHandler
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'IS05';
+    protected $_browser = 'HbbTV';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -50,42 +49,49 @@ class IS05 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'IS05')) {
-            return false;
+        if ($this->_utils->checkIfContains($this->_useragent, 'HbbTV')) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the browser version from the given user agent
      *
-     * @return integer
+     * @return string
      */
-    public function getWeight()
+    protected function _detectVersion()
     {
-        return 5;
+        $doMatch = preg_match('/HbbTV\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * returns TRUE if the browser has a specific rendering engine
      *
      * @return boolean
      */
-    public function hasOs()
+    public function hasEngine()
     {
         return true;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function getEngine()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Engine\Handlers\Webkit();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
