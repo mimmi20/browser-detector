@@ -47,8 +47,6 @@ final class Unknown extends DeviceHandler
      */
     public function canHandle()
     {
-        trigger_error('unknown Device detected from user agent \'' . $this->_useragent . '\'', E_USER_WARNING);
-        
         return true;
     }
     

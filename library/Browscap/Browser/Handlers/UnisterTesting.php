@@ -28,7 +28,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class UnisterTesting extends UnisterBot
+class UnisterTesting extends Unisterbot
 {
     /**
      * @var string the detected browser
