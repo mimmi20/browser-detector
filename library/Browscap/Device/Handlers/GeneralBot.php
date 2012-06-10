@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -28,7 +28,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id$
  */
 class GeneralBot extends DeviceHandler
 {
@@ -146,6 +146,7 @@ class GeneralBot extends DeviceHandler
             'Google',
             'Googlebot',
             'GSLFbot',
+            'Heritrix',
             'ImageSearcherS',
             'InsiteRobot',
             'JustCrawler',
@@ -178,6 +179,7 @@ class GeneralBot extends DeviceHandler
             'Scrubby',
             'Setooz',
             'SeznamScreenshotGenerator',
+            'SimplePie',
             'Snapbot',
             'Sosospider',
             'Sqwidgebot',

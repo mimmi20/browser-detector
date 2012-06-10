@@ -12,7 +12,7 @@ namespace Browscap\Model;
  * @package   Models
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2007-2010 Unister GmbH
- * @version    SVN: $Id: deviceData.php 206 2012-04-09 16:43:00Z  $
+ * @version    SVN: $Id$
  */
 
 /**

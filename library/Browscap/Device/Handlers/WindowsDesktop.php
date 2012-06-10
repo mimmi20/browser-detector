@@ -149,6 +149,7 @@ class WindowsDesktop extends GeneralDesktop
             'Netscape',
             'Opera',
             'Palemoon',
+            'Qt',
             'Rockmelt',
             'Safari',
             'Seamonkey',

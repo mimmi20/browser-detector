@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Nokia701.php 206 2012-04-09 16:43:00Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Nokia701.php 206 2012-04-09 16:43:00Z  $
+ * @version    SVN: $Id$
  */
 class NokiaSeries60 extends Nokia
 {

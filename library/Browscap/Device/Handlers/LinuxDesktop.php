@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: WindowsDesktop.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: WindowsDesktop.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 class LinuxDesktop extends GeneralDesktop
 {
@@ -140,6 +140,7 @@ class LinuxDesktop extends GeneralDesktop
     public function getBrowser()
     {
         $browsers = array(
+            'Arora',
             'Chrome',
             'Chromium',
             'Firefox',

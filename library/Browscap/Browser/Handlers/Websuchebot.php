@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Webbotru.php 206 2012-04-09 16:43:00Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Webbotru.php 206 2012-04-09 16:43:00Z  $
+ * @version    SVN: $Id$
  */
 class Websuchebot extends GeneralBot
 {

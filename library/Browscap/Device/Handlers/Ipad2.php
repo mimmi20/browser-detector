@@ -66,6 +66,16 @@ class Ipad2 extends GeneralMobile
     }
     
     /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
+    
+    /**
      * returns TRUE if the device has a specific Operating System
      *
      * @return boolean

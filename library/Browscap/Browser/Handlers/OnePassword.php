@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: PerfectBrowser.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: PerfectBrowser.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 class OnePassword extends BrowserHandler
 {

@@ -41,6 +41,7 @@ class Utils
         'embider',
         'fennec',
         'foma',
+        'htc/sensation',
         'ipad',
         'iphone',
         'iphoneosx',
@@ -85,27 +86,47 @@ class Utils
     );
     
     private $_bots = array(
-        'acoon', 
+        '<',
+        '>',
+        '\x',
+        'acoon',
+        'anyevent',
         'appengine-google',
         'bot',
+        'catalog',
         'crawl',
         'curl',
+        'detection',
+        'download',
         'extract',
         'feedparser',
+        'feed parser',
         'feedfetcher-google',
+        'findlinks',
         'grabber',
+        'heritrix',
         //'http:',
         'java/',
         'jig browser',
+        'nutch',
+        'opera/9.751',
+        'parser',
+        'presto/951',
         'retriever',
+        'search',
         'secmon',
+        'siteinfo',
+        'skymonk',
         'smartlinksaddon',
+        'snap',
         'spider',
         'stats',
         'svn',
         'webu',
+        'windows 3.1 7.8',
         'wordpress',
         'www.yahoo.com',
+        'xxx',
         'zmeu'
     );
     
@@ -144,11 +165,11 @@ class Utils
      */
     public function isFakeBrowser($userAgent)
     {
-        if ($this->checkIfContainsAnyOf($userAgent, array('internet explorer/'), true)) {
+        if ($this->checkIfContainsAnyOf($userAgent, array('internet explorer', 'blah'), true)) {
             return true;
         }
         
-        if ($this->checkIfStartsWithAnyOf($userAgent, array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey'), true)) {
+        if ($this->checkIfStartsWithAnyOf($userAgent, array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
         
@@ -159,7 +180,13 @@ class Utils
             return true;
         }
         
-        if ($this->checkIfContainsAnyOf($userAgent, array('Mac; Mac OS ', 'fake', 'Linux; Unix OS', '000000000'))) {
+        if ($this->checkIfContains($userAgent, 'Gecko') 
+            && $this->checkIfContainsAnyOf($userAgent, array('opera', 'chrome', 'safari', 'internet explorer'), true)
+        ) {
+            return true;
+        }
+        
+        if ($this->checkIfContainsAnyOf($userAgent, array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome'), true)) {
             return true;
         }
         

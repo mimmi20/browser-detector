@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: NokiaC2.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: NokiaC2.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 class NokiaC202 extends NokiaC2
 {

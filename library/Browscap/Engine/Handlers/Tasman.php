@@ -15,7 +15,7 @@ namespace Browscap\Engine\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Trident.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Engine\Handler as EngineHandler;
@@ -28,7 +28,7 @@ use Browscap\Engine\Handler as EngineHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Trident.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 class Tasman extends EngineHandler
 {

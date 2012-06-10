@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class Xoom extends GeneralMobile
+class MotorolaMb526 extends Motorola
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Xoom';
+    protected $_device = 'MB526';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class Xoom extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Xoom')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MotoMB526', 'MB526'))) {
             return false;
         }
         
@@ -64,7 +64,7 @@ class Xoom extends GeneralMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Xoom\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -78,6 +78,13 @@ class FreeBsd extends OsHandler
             return;
         }
         
+        $doMatch = preg_match('/FreeBSD (\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $this->_version = '';
     }
     

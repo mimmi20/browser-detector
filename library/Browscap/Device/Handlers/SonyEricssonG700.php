@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE10i.php 213 2012-05-06 16:12:27Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE10i.php 213 2012-05-06 16:12:27Z  $
+ * @version    SVN: $Id$
  */
 class SonyEricssonG700 extends SonyEricsson
 {

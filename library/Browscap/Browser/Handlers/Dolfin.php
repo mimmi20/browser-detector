@@ -48,7 +48,7 @@ class Dolfin extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Dolphin/', 'Dolfin/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Dolphin/', 'Dolfin/', 'Dolphin HD'))) {
             return false;
         }
         
@@ -70,6 +70,13 @@ class Dolfin extends BrowserHandler
         }
         
         $doMatch = preg_match('/Dolphin\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Dolphin HD (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

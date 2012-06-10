@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-
-use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class MB525 extends DeviceHandler
+class MotorolaXoomMz601 extends MotorolaXoom
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MB525';
+    protected $_device = 'Motorola XOOM MZ601';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +48,7 @@ class MB525 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MB525')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MZ601')) {
             return false;
         }
         
@@ -66,7 +64,7 @@ class MB525 extends DeviceHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MZ601\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -83,7 +81,7 @@ class MB525 extends DeviceHandler
      */
     public function getWeight()
     {
-        return 5;
+        return 7;
     }
     
     /**

@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: FeedfetcherGoogle.php 227 2012-06-02 15:00:34Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: FeedfetcherGoogle.php 227 2012-06-02 15:00:34Z  $
+ * @version    SVN: $Id$
  */
 class UniversalFeedParser extends GeneralBot
 {

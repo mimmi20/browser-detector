@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Rekonq.php 213 2012-05-06 16:12:27Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Rekonq.php 213 2012-05-06 16:12:27Z  $
+ * @version    SVN: $Id$
  */
 class Sleipnir extends BrowserHandler
 {

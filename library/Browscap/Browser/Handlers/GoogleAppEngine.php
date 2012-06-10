@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Googlebot.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Googlebot.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 class GoogleAppEngine extends Google
 {
@@ -46,7 +46,7 @@ class GoogleAppEngine extends Google
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'AppEngine-Google')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('AppEngine-Google', 'code.google.com/appengine'))) {
             return false;
         }
         

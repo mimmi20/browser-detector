@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Browser\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,21 +26,19 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class A100 extends GeneralMobile
+class Heritrix extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'A100';
+    protected $_browser = 'Heritrix';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -48,7 +46,7 @@ class A100 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'A100')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('heritrix'), true)) {
             return false;
         }
         
@@ -56,15 +54,20 @@ class A100 extends GeneralMobile
     }
     
     /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
+     * detects the browser version from the given user agent
      *
      * @return string
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/A100\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/heritrix\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Heritrix\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -81,31 +84,6 @@ class A100 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 3;
     }
 }

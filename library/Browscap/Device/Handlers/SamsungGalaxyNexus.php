@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class A35DM extends GeneralMobile
+class SamsungGalaxyNexus extends Samsung
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'A35DM';
+    protected $_device = 'Samsung Galaxy Nexus';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class A35DM extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'A35DM')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Nexus')) {
             return false;
         }
         
@@ -64,7 +64,7 @@ class A35DM extends GeneralMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/A35DM\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/eee_701\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -81,7 +81,7 @@ class A35DM extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**

@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class MZ604 extends GeneralMobile
+class HtcMyTouch4G extends Htc
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MZ604';
+    protected $_device = 'T-Mobile MyTouch 4G';
     
     /**
      * Final Interceptor: Intercept
@@ -48,30 +48,11 @@ class MZ604 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MZ604')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'myTouch4G')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/HUAWEI MediaPad\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     /**
@@ -81,7 +62,7 @@ class MZ604 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**

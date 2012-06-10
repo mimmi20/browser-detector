@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -28,7 +28,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 168 2012-01-22 16:26:29Z  $
+ * @version    SVN: $Id$
  */
 class GeneralMobile extends DeviceHandler
 {
@@ -88,6 +88,10 @@ class GeneralMobile extends DeviceHandler
      */
     public function isTablet()
     {
+        if ($this->_utils->checkIfContains($this->_useragent, 'tablet', true)) {
+            return true;
+        }
+        
         return false;
     }
     

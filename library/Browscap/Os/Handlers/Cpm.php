@@ -15,7 +15,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Brew.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Os\Handler as OsHandler;
@@ -28,7 +28,7 @@ use Browscap\Os\Handler as OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Brew.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 class Cpm extends OsHandler
 {

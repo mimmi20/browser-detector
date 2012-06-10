@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-
-use Browscap\Device\Handler as DeviceHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class MB860 extends DeviceHandler
+class SamsungGalaxyNexusS extends SamsungGalaxyNexus
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Motorola MB860';
+    protected $_device = 'Samsung Galaxy Nexus S';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +48,7 @@ class MB860 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MB860')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Nexus S')) {
             return false;
         }
         
@@ -83,7 +81,7 @@ class MB860 extends DeviceHandler
      */
     public function getWeight()
     {
-        return 5;
+        return 7;
     }
     
     /**

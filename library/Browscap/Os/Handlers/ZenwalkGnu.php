@@ -15,7 +15,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Suse.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Suse.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 class ZenwalkGnu extends Linux
 {

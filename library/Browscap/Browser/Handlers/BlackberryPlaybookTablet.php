@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Blackberry.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -27,7 +27,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Blackberry.php 220 2012-05-20 11:12:21Z  $
+ * @version    SVN: $Id$
  */
 class BlackberryPlaybookTablet extends Blackberry
 {

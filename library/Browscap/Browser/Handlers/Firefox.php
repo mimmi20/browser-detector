@@ -62,7 +62,7 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Firefox', 'Minefield', 'Nightly'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Firefox', 'Minefield', 'Nightly', 'Shiretoko'))) {
             return false;
         }
         
@@ -117,6 +117,13 @@ class Firefox extends BrowserHandler
         }
         
         $doMatch = preg_match('/Minefield\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Shiretoko\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

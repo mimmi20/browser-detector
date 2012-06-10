@@ -52,7 +52,7 @@ class Omniweb extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Omniweb/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Omniweb/', 'OmniWeb/'))) {
             return false;
         }
         
@@ -74,6 +74,13 @@ class Omniweb extends BrowserHandler
         }
         
         $doMatch = preg_match('/Omniweb\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/OmniWeb\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

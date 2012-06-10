@@ -15,7 +15,7 @@ namespace Browscap\Chain;
  * @package    WURFL
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Chain.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 
 use \Browscap\Helper\Utils;

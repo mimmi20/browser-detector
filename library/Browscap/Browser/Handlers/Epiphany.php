@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Safari.php 176 2012-02-07 22:38:31Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Safari.php 176 2012-02-07 22:38:31Z  $
+ * @version    SVN: $Id$
  */
 class Epiphany extends BrowserHandler
 {

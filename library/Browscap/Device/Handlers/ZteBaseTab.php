@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class NexusS extends GeneralMobile
+class ZteBaseTab extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nexus S';
+    protected $_device = 'ZTE BASE Tab';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class NexusS extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Nexus S')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'BASE Tab')) {
             return false;
         }
         
@@ -64,7 +64,7 @@ class NexusS extends GeneralMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/BASE Tab\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -82,6 +82,16 @@ class NexusS extends GeneralMobile
     public function getWeight()
     {
         return 5;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
     
     /**

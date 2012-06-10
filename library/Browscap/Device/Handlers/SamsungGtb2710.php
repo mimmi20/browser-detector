@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class A200 extends GeneralMobile
+class SamsungGtb2710 extends Samsung
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'A200';
+    protected $_device = 'Samsung GT-B2710';
     
     /**
      * Final Interceptor: Intercept
@@ -48,30 +48,11 @@ class A200 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'A200')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'GT-B2710')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/A200\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     /**
@@ -81,31 +62,6 @@ class A200 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 6;
     }
 }

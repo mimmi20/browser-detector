@@ -52,7 +52,7 @@ class Qt extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Qt/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Qt'))) {
             return false;
         }
         
@@ -67,6 +67,13 @@ class Qt extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Qt\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Qt (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -94,7 +101,7 @@ class Qt extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Unknown();
+        $handler = new \Browscap\Engine\Handlers\Webkit();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

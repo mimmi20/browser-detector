@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcSensationXe.php 231 2012-06-06 19:31:01Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcSensationXe.php 231 2012-06-06 19:31:01Z  $
+ * @version    SVN: $Id$
  */
 class HtcSensationXeBeats extends HtcSensationXe
 {

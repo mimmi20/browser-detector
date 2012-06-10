@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Nokia700.php 213 2012-05-06 16:12:27Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Nokia700.php 213 2012-05-06 16:12:27Z  $
+ * @version    SVN: $Id$
  */
 class Nokia extends GeneralMobile
 {
@@ -121,8 +121,10 @@ class Nokia extends GeneralMobile
         $browsers = array(
             'MicrosoftMobileExplorer',
             'NokiaBrowser',
+            'NokiaProxyBrowser',
             'OperaMini',
-            'OperaMobile'
+            'OperaMobile',
+            'Ucweb'
         );
         
         $browserChain = new \Browscap\Browser\Chain(false, $browsers);

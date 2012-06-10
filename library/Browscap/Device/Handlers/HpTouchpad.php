@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class A500 extends GeneralMobile
+class HpTouchpad extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'A500';
+    protected $_device = 'HP Touchpad';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class A500 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'A500')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'TouchPad')) {
             return false;
         }
         
@@ -64,7 +64,7 @@ class A500 extends GeneralMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/A500\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/TouchPad\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -85,6 +85,16 @@ class A500 extends GeneralMobile
     }
     
     /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
+    
+    /**
      * returns TRUE if the device has a specific Operating System
      *
      * @return boolean
@@ -102,7 +112,32 @@ class A500 extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\WebOs();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\WebkitWebos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

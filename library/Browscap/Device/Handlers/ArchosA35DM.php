@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class BaseTab extends GeneralMobile
+class ArchosA35DM extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'BASE Tab';
+    protected $_device = 'Archos A35DM';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class BaseTab extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'BASE Tab')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'A35DM')) {
             return false;
         }
         
@@ -64,7 +64,7 @@ class BaseTab extends GeneralMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/BASE Tab\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/A35DM\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

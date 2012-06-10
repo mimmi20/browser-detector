@@ -56,6 +56,7 @@ class Safari extends BrowserHandler
         
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
+            'Arora',
             'Chrome',
             'Chromium',
             'Flock',

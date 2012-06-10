@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Getleft.php 229 2012-06-02 19:32:13Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Getleft.php 229 2012-06-02 19:32:13Z  $
+ * @version    SVN: $Id$
  */
 class GetPhotos extends BrowserHandler
 {

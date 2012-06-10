@@ -33,7 +33,7 @@ class Dalvik extends Android
     /**
      * @var string the detected platform
      */
-    protected $_name = 'Dalvik';
+    protected $_browser = 'Dalvik';
     
     /**
      * Returns true if this handler can handle the given $useragent

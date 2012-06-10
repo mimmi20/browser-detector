@@ -52,28 +52,11 @@ class Google extends GeneralBot
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot', 'AppEngine-Google', 'code.google.com/appengine'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/Google\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     public function getWeight()

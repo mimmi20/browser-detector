@@ -48,7 +48,7 @@ class BlackBerry9300 extends BlackBerry
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'BlackBerry 9300')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('BlackBerry 9300', 'BlackBerry9300'))) {
             return false;
         }
         

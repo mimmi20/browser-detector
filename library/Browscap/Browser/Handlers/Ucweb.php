@@ -48,7 +48,7 @@ class Ucweb extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'UCWEB')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('UCWEB', 'UC Browser'))) {
             return false;
         }
         
@@ -63,6 +63,13 @@ class Ucweb extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/UCWEB(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/UC Browser(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Lgp920.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Lgp920.php 219 2012-05-19 16:50:35Z  $
+ * @version    SVN: $Id$
  */
 class Lg extends GeneralMobile
 {
@@ -85,6 +85,7 @@ class Lg extends GeneralMobile
     {
         $os = array(
             'Android',
+            'Dalvik',
             'Symbianos',
             'WindowsMobileOs'
         );

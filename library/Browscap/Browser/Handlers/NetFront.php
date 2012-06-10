@@ -35,7 +35,7 @@ class NetFront extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Access NetFront';
+    protected $_browser = 'Access Netfront';
     
     /**
      * Returns true if this handler can handle the given user agent

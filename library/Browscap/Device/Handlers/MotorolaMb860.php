@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonE15i.php 173 2012-01-28 13:38:35Z  $
+ * @version    SVN: $Id$
  */
-class NexusOne extends GeneralMobile
+class MotorolaMb860 extends Motorola
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nexus One';
+    protected $_device = 'Motorola MB860';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class NexusOne extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Nexus One')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'MB860')) {
             return false;
         }
         

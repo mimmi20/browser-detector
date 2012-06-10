@@ -15,7 +15,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Os2.php 164 2012-01-19 22:59:18Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Os\Handler as OsHandler;
@@ -28,7 +28,7 @@ use Browscap\Os\Handler as OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Os2.php 164 2012-01-19 22:59:18Z  $
+ * @version    SVN: $Id$
  */
 class AmigaOS extends OsHandler
 {

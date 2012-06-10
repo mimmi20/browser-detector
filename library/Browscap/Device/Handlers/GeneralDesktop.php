@@ -46,35 +46,7 @@ class GeneralDesktop extends DeviceHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isFakeBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        $windows = array(
-            'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
-            'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows 98', 'Windows 95',
-            'Windows 3.1', 'win9x/NT 4.90', 'Windows'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $windows, true)
-            || $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'), true)
-        ) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
