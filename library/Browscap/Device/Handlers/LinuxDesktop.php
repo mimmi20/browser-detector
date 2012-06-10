@@ -149,6 +149,7 @@ class LinuxDesktop extends GeneralDesktop
             'IceCat',
             'Iceweasel',
             'Iron',
+            'Konqueror',
             'Lunascape',
             'Netscape',
             'Opera',
