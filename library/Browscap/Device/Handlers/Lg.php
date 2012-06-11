@@ -85,7 +85,6 @@ class Lg extends GeneralMobile
     {
         $os = array(
             'Android',
-            'Dalvik',
             'Symbianos',
             'WindowsMobileOs'
         );
@@ -121,6 +120,7 @@ class Lg extends GeneralMobile
     {
         $browsers = array(
             'Android',
+            'Dalvik',
             'TelecaObigo',
             'WindowsPhoneSearch'
         );

@@ -85,7 +85,6 @@ class Motorola extends GeneralMobile
     {
         $os = array(
             'Android',
-            'Dalvik',
             'Symbianos'
         );
         

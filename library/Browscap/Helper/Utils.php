@@ -90,7 +90,7 @@ class Utils
     private $_bots = array(
         '<',
         '>',
-        '\x',
+        '\\x',
         'acoon',
         'anyevent',
         'appengine-google',
@@ -187,6 +187,7 @@ class Utils
         }
         
         if ($this->checkIfContains($userAgent, 'Gecko') 
+            && !$this->checkIfContains($userAgent, 'like Gecko') 
             && $this->checkIfContainsAnyOf($userAgent, array('opera', 'chrome', 'safari', 'internet explorer'), true)
         ) {
             return true;
