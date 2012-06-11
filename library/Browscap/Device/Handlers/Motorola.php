@@ -120,6 +120,7 @@ class Motorola extends GeneralMobile
     {
         $browsers = array(
             'Android',
+            'Dalvik',
             'Motorola'
         );
         

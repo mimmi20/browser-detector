@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class IpodTouch extends GeneralMobile
+class SamsungGts5620 extends Samsung
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'iPod Touch';
+    protected $_device = 'Samsung GT-S5620';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class IpodTouch extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('iPod Touch', 'iPod touch'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'GT-S5620')) {
             return false;
         }
         
@@ -62,31 +62,6 @@ class IpodTouch extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Ios();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 6;
     }
 }

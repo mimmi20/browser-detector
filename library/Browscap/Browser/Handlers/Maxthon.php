@@ -61,6 +61,7 @@ class Maxthon extends BrowserHandler
         
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
+            'Crazy Browser',
             'Galeon',
             'Lunascape',
             'Opera',

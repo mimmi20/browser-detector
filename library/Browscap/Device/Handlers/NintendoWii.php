@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MOVE.php 241 2012-06-10 14:58:42Z  $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MOVE.php 241 2012-06-10 14:58:42Z  $
  */
-class Samsung extends GeneralMobile
+class NintendoWii extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Samsung';
+    protected $_device = 'Nintendo Wii';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +48,30 @@ class Samsung extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Samsung', 'GT-'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Nintendo Wii')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/MOVE\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -83,22 +102,11 @@ class Samsung extends GeneralMobile
      */
     public function getOs()
     {
-        $os = array(
-            'Android',
-            'Bada',
-            'Brew',
-            'Java',
-            'WindowsMobileOs'
-        );
+        $handler = new \Browscap\Os\Handlers\NintendoWii();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $osChain = new \Browscap\Os\Chain(false, $os);
-        $osChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_useragent);
+        return $handler->detect();
     }
     
     /**
@@ -119,27 +127,10 @@ class Samsung extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android',
-            'Dalvik',
-            'Dolfin',
-            'Jasmine',
-            'MicrosoftMobileExplorer',
-            'NetFront',
-            'Openwave',
-            'OperaMini',
-            'OperaMobile',
-            'Polaris',
-            'WindowsPhoneSearch'
-        );
+        $handler = new \Browscap\Browser\Handlers\Opera();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
+        return $handler->detect();
     }
 }

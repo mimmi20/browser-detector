@@ -155,6 +155,7 @@ class WindowsDesktop extends GeneralDesktop
             'Seamonkey',
             'Thunderbird',
             'WindowsLiveMail',
+            'WindowsMediaPlayer',
             'YacyBot'
         );
         

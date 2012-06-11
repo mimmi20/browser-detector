@@ -77,6 +77,10 @@ class Support
     
     public function cleanAgent($userAgent)
     {
+        if (0 < stripos($userAgent, 'user-agent:')) {
+            $userAgent = substr($userAgent, 0, stripos($userAgent, 'user-agent:'));
+        }
+        
         $userAgent = str_replace(
             array('User-Agent:', 'User-agent:'), 
             '', 

@@ -30,12 +30,12 @@ use Browscap\Device\Handler as DeviceHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SghT959 extends DeviceHandler
+class Flytouch extends DeviceHandler
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SGH T959';
+    protected $_device = 'Flytouch';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class SghT959 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'SGH-T959')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Flytouch')) {
             return false;
         }
         
@@ -66,7 +66,7 @@ class SghT959 extends DeviceHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/SGH-T959\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Flytouch\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

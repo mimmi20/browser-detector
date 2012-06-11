@@ -120,6 +120,7 @@ class Nokia extends GeneralMobile
     {
         $browsers = array(
             'MicrosoftMobileExplorer',
+            'Nokia',
             'NokiaBrowser',
             'NokiaProxyBrowser',
             'OperaMini',

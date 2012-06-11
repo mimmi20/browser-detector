@@ -66,7 +66,6 @@ class CrazyBrowser extends MicrosoftInternetExplorer
             'PaleMoon',
             'Flock',
             'AOL',
-            'MyIE',
             //others
             'AppleWebKit',
             'Chrome',

@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Samsung extends GeneralMobile
+class SamsungSghT959 extends Samsung
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Samsung';
+    protected $_device = 'Samsung SGH T959';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +48,30 @@ class Samsung extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Samsung', 'GT-'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SGH-T959')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/SGH-T959\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -83,63 +102,10 @@ class Samsung extends GeneralMobile
      */
     public function getOs()
     {
-        $os = array(
-            'Android',
-            'Bada',
-            'Brew',
-            'Java',
-            'WindowsMobileOs'
-        );
+        $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $osChain = new \Browscap\Os\Chain(false, $os);
-        $osChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_useragent);
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $browsers = array(
-            'Android',
-            'Dalvik',
-            'Dolfin',
-            'Jasmine',
-            'MicrosoftMobileExplorer',
-            'NetFront',
-            'Openwave',
-            'OperaMini',
-            'OperaMobile',
-            'Polaris',
-            'WindowsPhoneSearch'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
+        return $handler->detect();
     }
 }

@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,12 +28,12 @@ use Browscap\Device\Handler as DeviceHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class GalaxyNexus extends DeviceHandler
+class SonyEricssonCK15i extends SonyEricsson
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Galaxy Nexus';
+    protected $_device = 'SonyEricsson CK15i';
     
     /**
      * Final Interceptor: Intercept
@@ -50,30 +48,11 @@ class GalaxyNexus extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Galaxy Nexus')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonCK15i')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     /**
@@ -83,31 +62,6 @@ class GalaxyNexus extends DeviceHandler
      */
     public function getWeight()
     {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 6;
     }
 }

@@ -48,7 +48,7 @@ class SamsungGalaxyNexus extends Samsung
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Nexus')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Galaxy Nexus', 'Nexus'))) {
             return false;
         }
         
@@ -64,14 +64,19 @@ class SamsungGalaxyNexus extends Samsung
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/eee_701\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $this->_version = '';
+        $doMatch = preg_match('/Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }$this->_version = '';
     }
     
     /**

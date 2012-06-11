@@ -52,10 +52,6 @@ class Ipod extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('iPod Touch', 'iPod touch'))) {
-            return false;
-        }
-        
         return true;
     }
     

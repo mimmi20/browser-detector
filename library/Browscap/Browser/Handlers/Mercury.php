@@ -35,7 +35,7 @@ class Mercury extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Mercury3';
+    protected $_browser = 'Mercury';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,7 +48,7 @@ class Mercury extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mercury3')) {
+        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mercury')) {
             return false;
         }
         
@@ -63,6 +63,13 @@ class Mercury extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Mercury3\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Mercury (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

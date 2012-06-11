@@ -118,6 +118,7 @@ class SonyEricsson extends GeneralMobile
     {
         $browsers = array(
             'Android',
+            'Dalvik',
             'Dolfin',
             'Jasmine',
             'NetFront',

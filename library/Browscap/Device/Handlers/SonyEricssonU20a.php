@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Ipad extends GeneralMobile
+class SonyEricssonU20a extends SonyEricsson
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'iPad';
+    protected $_device = 'SonyEricsson U20a';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +48,30 @@ class Ipad extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('iPad', 'ipad'))) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonU20a')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/SonyEricssonU20a\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -62,41 +81,6 @@ class Ipad extends GeneralMobile
      */
     public function getWeight()
     {
-        return 7;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Ios();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 6;
     }
 }
