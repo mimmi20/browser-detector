@@ -18,8 +18,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Omniweb extends BrowserHandler
+class Omniweb extends Safari
 {
     /**
      * @var string the detected browser
@@ -69,7 +67,7 @@ class Omniweb extends BrowserHandler
         $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
+            $this->_version = $matches[1];
             return;
         }
         

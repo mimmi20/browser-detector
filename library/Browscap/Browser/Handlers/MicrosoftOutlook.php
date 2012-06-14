@@ -21,7 +21,6 @@ namespace Browscap\Browser\Handlers;
 /**
  * Handler Base class
  */
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * MSIEAgentHandler
@@ -33,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftOutlook extends BrowserHandler
+class MicrosoftOutlook extends MicrosoftOffice
 {
     /**
      * @var string the detected browser
@@ -122,202 +121,6 @@ class MicrosoftOutlook extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/MSOffice (\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/MSOffice (\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/Microsoft Office\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/Microsoft Office\/(\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
-            return;
-        }
-        
         $this->_version = '';
-    }
-    
-    private function _mapVersion($version)
-    {
-        if (14 == (int) $version) {
-            return '2010';
-        }
-        
-        if (12 == (int) $version) {
-            return '2007';
-        }
-        
-        return '';
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 4200;
-    }
-    
-    /**
-     * returns TRUE if the browser supports Frames
-     *
-     * @return boolean
-     */
-    public function supportsFrames()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports IFrames
-     *
-     * @return boolean
-     */
-    public function supportsIframes()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports Tables
-     *
-     * @return boolean
-     */
-    public function supportsTables()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports Cookies
-     *
-     * @return boolean
-     */
-    public function supportsCookies()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports BackgroundSounds
-     *
-     * @return boolean
-     */
-    public function supportsBackgroundSounds()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports JavaScript
-     *
-     * @return boolean
-     */
-    public function supportsJavaScript()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports VBScript
-     *
-     * @return boolean
-     */
-    public function supportsVbScript()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the browser supports Java Applets
-     *
-     * @return boolean
-     */
-    public function supportsJavaApplets()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser supports ActiveX Controls
-     *
-     * @return boolean
-     */
-    public function supportsActivexControls()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser should be banned
-     *
-     * @return boolean
-     */
-    public function isBanned()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser is a Syndication Reader
-     *
-     * @return boolean
-     */
-    public function isSyndicationReader()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser supports VBScript
-     *
-     * @return boolean
-     */
-    public function isCrawler()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Trident();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
     }
 }

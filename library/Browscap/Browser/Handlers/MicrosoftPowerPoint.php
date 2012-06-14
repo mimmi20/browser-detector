@@ -21,7 +21,6 @@ namespace Browscap\Browser\Handlers;
 /**
  * Handler Base class
  */
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * MSIEAgentHandler
@@ -33,7 +32,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftPowerPoint extends BrowserHandler
+class MicrosoftPowerPoint extends MicrosoftOffice
 {
     /**
      * @var string the detected browser
@@ -97,48 +96,5 @@ class MicrosoftPowerPoint extends BrowserHandler
         }
         
         $this->_version = '';
-    }
-    
-    public function getWeight()
-    {
-        return 7;
-    }
-    
-    private function _mapVersion($version)
-    {
-        if (14 == (int) $version) {
-            return '2010';
-        }
-        
-        if (12 == (int) $version) {
-            return '2007';
-        }
-        
-        return '';
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Trident();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
     }
 }
