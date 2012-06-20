@@ -19,8 +19,6 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
  * NokiaUserAgentHandler
  *
@@ -31,12 +29,17 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaBrowser extends BrowserHandler
+class NokiaBrowser extends Nokia
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Nokia BrowserNG';
+    protected $_browser = 'NokiaBrowser';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Nokia';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -49,9 +52,11 @@ class NokiaBrowser extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf(
-            $this->_useragent, array('NokiaBrowser', 'BrowserNG')
-        );
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaBrowser'))) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**
@@ -62,13 +67,6 @@ class NokiaBrowser extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/NokiaBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/BrowserNG\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

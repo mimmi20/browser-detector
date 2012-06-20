@@ -34,6 +34,11 @@ class SonyEricsson extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general SonyEricsson';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'SonyEricsson';
     
     /**
      * Final Interceptor: Intercept
@@ -122,6 +127,7 @@ class SonyEricsson extends GeneralMobile
             'Dolfin',
             'Jasmine',
             'NetFront',
+            'Openwave',
             'OperaMini',
             'OperaMobile',
             'WindowsPhoneSearch',

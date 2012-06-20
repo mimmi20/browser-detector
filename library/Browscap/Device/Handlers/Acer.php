@@ -34,6 +34,11 @@ class Acer extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general Acer';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Acer';
     
     /**
      * Final Interceptor: Intercept

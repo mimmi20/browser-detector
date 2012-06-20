@@ -34,6 +34,11 @@ class Lg extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general LG';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'LG';
     
     /**
      * Final Interceptor: Intercept

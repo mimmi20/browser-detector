@@ -37,6 +37,11 @@ class Nokia extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Nokia';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Nokia';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -53,7 +58,7 @@ class Nokia extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('OviBrowser', 'NokiaBrowser', 'UCWEB'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('OviBrowser', 'NokiaBrowser', 'UCWEB', 'BrowserNG', 'S40OviBrowser'))) {
             return false;
         }
         

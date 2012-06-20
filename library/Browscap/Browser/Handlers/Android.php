@@ -35,6 +35,11 @@ class Android extends MobileSafari
      * @var string the detected browser
      */
     protected $_browser = 'Android Browser';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Google';
     
     /**
      * Returns true if this handler can handle the given user agent

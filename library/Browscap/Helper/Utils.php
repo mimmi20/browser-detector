@@ -96,6 +96,7 @@ class Utils
         'appengine-google',
         'bot',
         'catalog',
+        'clecko',
         'crawl',
         'curl',
         'detection',
@@ -105,19 +106,19 @@ class Utils
         'feed parser',
         'feedfetcher-google',
         'findlinks',
+        'gecko/6',
         'generator',
         'grabber',
         'heritrix',
-        //'http:',
         'httrack',
         'java/',
         'jig browser',
+        'linkchecker',
         'nutch',
         'opera/9.751',
         'parser',
         'presto/951',
         'retriever',
-        'search',
         'secmon',
         'siteinfo',
         'skymonk',
@@ -130,6 +131,7 @@ class Utils
         'unister-test',
         'webu',
         'windows 3.1 7.8',
+        'windows xp 7.8',
         'wordpress',
         'www.yahoo.com',
         'xxx',
@@ -158,6 +160,12 @@ class Utils
     public function isSpamOrCrawler($userAgent)
     {
         if ($this->checkIfContainsAnyOf($userAgent, $this->_bots, true)) {
+            return true;
+        }
+        
+        if ($this->checkIfContains($userAgent, 'search', true)
+            && !$this->checkIfContains($userAgent, 'searchtoolbar', true)
+        ) {
             return true;
         }
         

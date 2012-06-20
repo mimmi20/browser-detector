@@ -34,6 +34,11 @@ class ZteBaseTab extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'ZTE BASE Tab';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'ZTE';
     
     /**
      * Final Interceptor: Intercept

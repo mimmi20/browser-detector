@@ -36,6 +36,11 @@ class WindowsLiveMail extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Windows Live Mail';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given user agent

@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class RimTablet extends GeneralMobile
+class RimTablet extends BlackBerry
 {
     /**
      * @var string the detected device

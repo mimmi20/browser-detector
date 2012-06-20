@@ -35,7 +35,12 @@ class Playstation extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'unknown';
+    protected $_browser = 'Playstation';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept

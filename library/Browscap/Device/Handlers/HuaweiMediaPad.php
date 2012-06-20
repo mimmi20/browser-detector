@@ -28,12 +28,17 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HuaweiMediaPad extends GeneralMobile
+class HuaweiMediaPad extends Huawei
 {
     /**
      * @var string the detected device
      */
     protected $_device = 'Huawei MediaPad';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Huawei';
     
     /**
      * Final Interceptor: Intercept
@@ -81,7 +86,7 @@ class HuaweiMediaPad extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**

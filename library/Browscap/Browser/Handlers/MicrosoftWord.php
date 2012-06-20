@@ -38,6 +38,11 @@ class MicrosoftWord extends MicrosoftOffice
      * @var string the detected browser
      */
     protected $_browser = 'Microsoft Word';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -95,6 +100,6 @@ class MicrosoftWord extends MicrosoftOffice
             return;
         }
         
-        $this->_version = '';
+        parent::_detectVersion();
     }
 }

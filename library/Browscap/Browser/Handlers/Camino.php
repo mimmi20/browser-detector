@@ -34,6 +34,11 @@ class Camino extends Firefox
      * @var string the detected browser
      */
     protected $_browser = 'Camino';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Mozilla';
     
     /**
      * Returns true if this handler can handle the given user agent

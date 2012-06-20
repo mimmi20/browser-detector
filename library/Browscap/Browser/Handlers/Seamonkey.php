@@ -34,6 +34,11 @@ class Seamonkey extends Firefox
      * @var string the detected browser
      */
     protected $_browser = 'SeaMonkey';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Mozilla';
     
     /**
      * Returns true if this handler can handle the given user agent

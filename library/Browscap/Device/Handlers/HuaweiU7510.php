@@ -28,12 +28,17 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HuaweiU7510 extends GeneralMobile
+class HuaweiU7510 extends Huawei
 {
     /**
      * @var string the detected device
      */
     protected $_device = 'Huawei U7510';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Huawei';
     
     /**
      * Final Interceptor: Intercept
@@ -81,7 +86,7 @@ class HuaweiU7510 extends GeneralMobile
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**

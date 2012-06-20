@@ -52,6 +52,10 @@ class SonyEricssonE10i extends SonyEricsson
             return false;
         }
         
+        if ($this->_utils->checkIfContains($this->_useragent, 'SonyEricssonE10iv')) {
+            return false;
+        }
+        
         return true;
     }
     

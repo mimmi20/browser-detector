@@ -36,6 +36,11 @@ class Safari extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Safari';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Apple';
     
     /**
      * Returns true if this handler can handle the given user agent

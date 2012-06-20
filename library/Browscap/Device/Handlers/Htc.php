@@ -34,6 +34,11 @@ class Htc extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general HTC';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'HTC';
     
     /**
      * Final Interceptor: Intercept
@@ -83,10 +88,20 @@ class Htc extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            'Android',
+            'Symbianos',
+            'WindowsMobileOs'
+        );
         
+        $osChain = new \Browscap\Os\Chain(false, $os);
+        $osChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $osChain->setCache($this->_cache);
+        }
+        
+        return $osChain->detect($this->_useragent);
         return $handler->detect();
     }
     
@@ -110,7 +125,8 @@ class Htc extends GeneralMobile
     {
         $browsers = array(
             'Android',
-            'Dalvik'
+            'Dalvik',
+            'MicrosoftMobileExplorer'
         );
         
         $browserChain = new \Browscap\Browser\Chain(false, $browsers);

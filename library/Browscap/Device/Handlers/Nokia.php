@@ -34,6 +34,11 @@ class Nokia extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general Nokia Device';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Nokia';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +53,7 @@ class Nokia extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Nokia')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Nokia', 'S60; SymbOS;'))) {
             return false;
         }
         

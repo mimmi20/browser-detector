@@ -33,7 +33,7 @@ class SamsungSghT959 extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'Samsung SGH T959';
+    protected $_device = 'Samsung SGH-T959';
     
     /**
      * Final Interceptor: Intercept

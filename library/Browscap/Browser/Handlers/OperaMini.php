@@ -36,6 +36,11 @@ class OperaMini extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Opera Mini';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Opera';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -70,6 +75,20 @@ class OperaMini extends BrowserHandler
         }
         
         $doMatch = preg_match('/Opera Mini\/(\d+)\./', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1] . '.0';
+            return;
+        }
+        
+        $doMatch = preg_match('/Opera Mini\/att\/(\d+\.\d+)\./', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Opera Mini\/att\/(\d+)\./', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1] . '.0';

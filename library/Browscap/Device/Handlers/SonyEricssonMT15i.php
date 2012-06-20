@@ -48,7 +48,7 @@ class SonyEricssonMT15i extends SonyEricsson
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'SonyEricssonMT15i')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SonyEricssonMT15i', 'MT15i'))) {
             return false;
         }
         

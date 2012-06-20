@@ -74,6 +74,7 @@ class Netscape extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
+            'Icedove',
             //Nutch
             'Nutch',
             'CazoodleBot',

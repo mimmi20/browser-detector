@@ -34,6 +34,11 @@ class Macintosh extends GeneralDesktop
      * @var string the detected device
      */
     protected $_device = 'Macintosh';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Apple';
     
     /**
      * Final Interceptor: Intercept
@@ -143,15 +148,19 @@ class Macintosh extends GeneralDesktop
             'Facebook',
             'Firefox',
             'Flipboard',
+            'Flock',
             'Google',
             'Iron',
             'Lunascape',
+            'Mercury',
+            'MicrosoftExcel',
             'Midori',
             'Netscape',
             'Omniweb',
             'Opera',
             'Rockmelt',
             'Safari',
+            'Silk',
             'Seamonkey',
             'Thunderbird'
         );

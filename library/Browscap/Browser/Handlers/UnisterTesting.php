@@ -34,6 +34,11 @@ class UnisterTesting extends Unisterbot
      * @var string the detected browser
      */
     protected $_browser = 'UnisterTesting';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Unister';
     
     /**
      * Returns true if this handler can handle the given user agent

@@ -33,7 +33,7 @@ class DROID2 extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'DROID2';
+    protected $_device = 'Droid2';
     
     /**
      * Final Interceptor: Intercept

@@ -36,6 +36,11 @@ class Realplayer extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Realplayer';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Real Networks';
     
     /**
      * Returns true if this handler can handle the given user agent

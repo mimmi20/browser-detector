@@ -34,6 +34,11 @@ class Yahoo extends GeneralBot
      * @var string the detected browser
      */
     protected $_browser = 'Yahoo!';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Yahoo';
     
     /**
      * Returns true if this handler can handle the given user agent

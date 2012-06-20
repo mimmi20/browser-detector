@@ -36,6 +36,11 @@ class Opera extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Opera';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Opera';
     
     /**
      * Returns true if this handler can handle the given user agent

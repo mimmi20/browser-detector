@@ -237,6 +237,11 @@ class UserAgent extends Core
         return $this->getAgent();
     }
     
+    /**
+     * returns the name of the actual device without version
+     *
+     * @return string
+     */
     final public function getDevice()
     {
         if (null === $this->_device) {
@@ -246,6 +251,25 @@ class UserAgent extends Core
         return $this->_device->getDevice();
     }
     
+    /**
+     * returns the veraion of the actual device
+     *
+     * @return string
+     */
+    final public function getDeviceVersion()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->getVersion();
+    }
+    
+    /**
+     * returns the name of the actual device with version
+     *
+     * @return string
+     */
     final public function getFullDevice()
     {
         if (null === $this->_device) {
@@ -253,6 +277,20 @@ class UserAgent extends Core
         }
         
         return $this->_device->getFullDevice();
+    }
+    
+    /**
+     * returns the manufacturer of the actual device
+     *
+     * @return string
+     */
+    final public function getDeviceManufacturer()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->getManufacturer();
     }
     
     /**
@@ -351,6 +389,20 @@ class UserAgent extends Core
         }
         
         return $this->_browser->getFullBrowser($withBits);
+    }
+    
+    /**
+     * returns the manufacturer of the actual browser
+     *
+     * @return string
+     */
+    final public function getBrowserManufacturer()
+    {
+        if (null === $this->_browser) {
+            return null;
+        }
+        
+        return $this->_browser->getManufacturer();
     }
     
     /**

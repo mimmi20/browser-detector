@@ -35,6 +35,11 @@ class BlackberryPlaybookTablet extends Blackberry
      * @var string the detected browser
      */
     protected $_browser = 'Blackberry Playbook Tablet';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'RIM';
     
     /**
      * Returns true if this handler can handle the given user agent

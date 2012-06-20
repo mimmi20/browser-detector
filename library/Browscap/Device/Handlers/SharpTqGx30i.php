@@ -34,6 +34,11 @@ class SharpTqGx30i extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'SHARP-TQ-GX30i';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Sharp';
     
     /**
      * Final Interceptor: Intercept

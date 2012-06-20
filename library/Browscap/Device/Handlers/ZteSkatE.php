@@ -34,6 +34,11 @@ class ZteSkatE extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'ZTE SKATE';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'ZTE';
     
     /**
      * Final Interceptor: Intercept

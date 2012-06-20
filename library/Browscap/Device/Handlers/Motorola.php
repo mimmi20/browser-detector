@@ -34,6 +34,11 @@ class Motorola extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general Motorola';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Motorola';
     
     /**
      * Final Interceptor: Intercept
@@ -120,6 +125,7 @@ class Motorola extends GeneralMobile
         $browsers = array(
             'Android',
             'Dalvik',
+            'Firefox',
             'Motorola'
         );
         

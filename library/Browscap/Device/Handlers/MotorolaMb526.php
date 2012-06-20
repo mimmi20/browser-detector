@@ -33,7 +33,7 @@ class MotorolaMb526 extends Motorola
     /**
      * @var string the detected device
      */
-    protected $_device = 'MB526';
+    protected $_device = 'Motorola MB526';
     
     /**
      * Final Interceptor: Intercept
@@ -53,25 +53,6 @@ class MotorolaMb526 extends Motorola
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/Galaxy Nexus\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     /**

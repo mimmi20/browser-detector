@@ -38,6 +38,11 @@ class MicrosoftExcel extends MicrosoftOffice
      * @var string the detected browser
      */
     protected $_browser = 'Microsoft Excel';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -95,6 +100,6 @@ class MicrosoftExcel extends MicrosoftOffice
             return;
         }
         
-        $this->_version = '';
+        parent::_detectVersion();
     }
 }

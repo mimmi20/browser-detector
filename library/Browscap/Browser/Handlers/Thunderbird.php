@@ -36,6 +36,11 @@ class Thunderbird extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Thunderbird';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Mozilla';
     
     /**
      * Returns true if this handler can handle the given user agent

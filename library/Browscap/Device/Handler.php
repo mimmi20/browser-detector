@@ -58,6 +58,11 @@ abstract class Handler implements MatcherInterface
     protected $_version = '';
 
     /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'unknown';
+    
+    /**
      * a \Zend\Cache object
      *
      * @var \Zend\Cache
@@ -149,22 +154,47 @@ abstract class Handler implements MatcherInterface
         $this->_version = '';
     }
     
+    /**
+     * returns the name of the actual device without version
+     *
+     * @return string
+     */
     final public function getDevice()
     {
         return $this->_device;
     }
     
+    /**
+     * returns the veraion of the actual device
+     *
+     * @return string
+     */
     final public function getVersion()
     {
         return $this->_version;
     }
     
+    /**
+     * returns the name of the actual device with version
+     *
+     * @return string
+     */
     final public function getFullDevice()
     {
         $device  = $this->getDevice();
         $version = $this->getVersion();
         
         return $device . ($device != $version && '' != $version ? ' ' . $version : '');
+    }
+    
+    /**
+     * returns the manufacturer of the actual device
+     *
+     * @return string
+     */
+    final public function getManufacturer()
+    {
+        return $this->_manufacturer;
     }
     
     /**

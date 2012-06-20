@@ -36,6 +36,11 @@ class Wwwautode extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'www.auto.de';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Unister';
     
     /**
      * Returns true if this handler can handle the given user agent

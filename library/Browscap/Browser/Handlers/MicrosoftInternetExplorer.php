@@ -39,6 +39,11 @@ class MicrosoftInternetExplorer extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Internet Explorer';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'microsoft';
     
     private $_patterns = array(
         '/Mozilla\/.\.0 \(.*MSIE 10\.0.*/' => '10.0',

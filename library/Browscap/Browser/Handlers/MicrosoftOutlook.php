@@ -37,7 +37,12 @@ class MicrosoftOutlook extends MicrosoftOffice
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Microsoft Outlook';
+    protected $_browser = 'Outlook';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -121,6 +126,6 @@ class MicrosoftOutlook extends MicrosoftOffice
             return;
         }
         
-        $this->_version = '';
+        parent::_detectVersion();
     }
 }

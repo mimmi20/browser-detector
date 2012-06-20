@@ -19,11 +19,6 @@ namespace Browscap\Browser\Handlers;
  */
 
 /**
- * Handler Base class
- */
-use Browscap\Browser\Handler as BrowserHandler;
-
-/**
  * MSIEAgentHandler
  *
  *
@@ -33,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Palemoon extends BrowserHandler
+class Palemoon extends Firefox
 {
     /**
      * @var string the detected browser
@@ -61,6 +56,7 @@ class Palemoon extends BrowserHandler
         
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
+            'CometBird',
             'Maxthon',
             'Galeon',
             'Opera',

@@ -34,6 +34,11 @@ class GoogleAppEngine extends Google
      * @var string the detected browser
      */
     protected $_browser = 'Google App-Engine';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Google';
     
     /**
      * Returns true if this handler can handle the given user agent

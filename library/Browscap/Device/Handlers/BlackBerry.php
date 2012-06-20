@@ -34,6 +34,11 @@ class BlackBerry extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general BlackBerry';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'RIM';
     
     /**
      * Final Interceptor: Intercept

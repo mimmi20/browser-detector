@@ -34,6 +34,11 @@ class Archos101G9 extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'ARCHOS 101G9';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept
@@ -82,6 +87,16 @@ class Archos101G9 extends GeneralMobile
     public function getWeight()
     {
         return 5;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
     
     /**

@@ -71,6 +71,7 @@ class Firefox extends BrowserHandler
             'Maemo',
             'Maxthon',
             'Camino',
+            'CometBird',
             'Galeon',
             'Lunascape',
             'Opera',
@@ -127,6 +128,13 @@ class Firefox extends BrowserHandler
         
         if ($doMatch) {
             $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Firefox\/(\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1] . '.0';
             return;
         }
         

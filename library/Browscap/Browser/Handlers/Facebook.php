@@ -36,6 +36,11 @@ class Facebook extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Facebook App';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Facebook';
     
     /**
      * Returns true if this handler can handle the given user agent

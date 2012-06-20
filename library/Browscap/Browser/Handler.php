@@ -56,6 +56,11 @@ abstract class Handler implements MatcherInterface
      * @var string the detected browser version
      */
     protected $_version = '';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'unknown';
     
     /**
      * @var string the bits of the detected browser
@@ -163,6 +168,16 @@ abstract class Handler implements MatcherInterface
         $bits    = $this->getBits();
         
         return $browser . ($browser != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+    }
+    
+    /**
+     * returns the manufacturer of the actual device
+     *
+     * @return string
+     */
+    final public function getManufacturer()
+    {
+        return $this->_manufacturer;
     }
     
     /**

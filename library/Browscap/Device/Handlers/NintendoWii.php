@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: MOVE.php 241 2012-06-10 14:58:42Z  $
  */
-class NintendoWii extends GeneralMobile
+class NintendoWii extends Nintendo
 {
     /**
      * @var string the detected device
@@ -56,32 +56,13 @@ class NintendoWii extends GeneralMobile
     }
     
     /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/MOVE\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
-    }
-    
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**

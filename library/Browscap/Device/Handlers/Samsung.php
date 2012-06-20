@@ -34,6 +34,11 @@ class Samsung extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'general Samsung';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Samsung';
     
     /**
      * Final Interceptor: Intercept

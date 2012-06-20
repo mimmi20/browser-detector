@@ -34,6 +34,11 @@ class OperaTablet extends OperaMobile
      * @var string the detected browser
      */
     protected $_browser = 'Opera Tablet';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Opera';
     
     /**
      * Returns true if this handler can handle the given user agent

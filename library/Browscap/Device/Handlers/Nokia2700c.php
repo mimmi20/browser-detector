@@ -33,7 +33,7 @@ class Nokia2700c extends Nokia
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nokia 2700c';
+    protected $_device = 'Nokia 2700 Classic';
     
     /**
      * Final Interceptor: Intercept

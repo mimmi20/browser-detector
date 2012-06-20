@@ -34,6 +34,11 @@ class Iphone extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'iPhone';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Apple';
     
     /**
      * Final Interceptor: Intercept

@@ -34,6 +34,11 @@ class Ipod extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'iPod';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Apple';
     
     /**
      * Final Interceptor: Intercept
