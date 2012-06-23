@@ -33,7 +33,7 @@ class HtcSensationXeBeats extends HtcSensationXe
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Sensation XE Beats';
+    protected $_device = 'Sensation XE Beats';
     
     /**
      * Final Interceptor: Intercept

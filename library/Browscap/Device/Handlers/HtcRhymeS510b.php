@@ -33,7 +33,7 @@ class HtcRhymeS510b extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Rhyme S510b';
+    protected $_device = 'Rhyme S510b';
     
     /**
      * Final Interceptor: Intercept

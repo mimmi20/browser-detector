@@ -33,7 +33,7 @@ class HtcIncrediblesS710e extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC IncredibleS S710e';
+    protected $_device = 'IncredibleS S710e';
     
     /**
      * Final Interceptor: Intercept

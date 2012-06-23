@@ -33,7 +33,7 @@ class MotorolaMilestone extends Motorola
     /**
      * @var string the detected device
      */
-    protected $_device = 'Motorola Milestone';
+    protected $_device = 'Milestone';
     
     /**
      * Final Interceptor: Intercept

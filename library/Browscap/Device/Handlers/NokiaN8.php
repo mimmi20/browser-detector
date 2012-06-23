@@ -33,7 +33,7 @@ class NokiaN8 extends Nokia
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nokia N8';
+    protected $_device = 'N8';
     
     /**
      * Final Interceptor: Intercept
@@ -52,7 +52,7 @@ class NokiaN8 extends Nokia
             return false;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'NokiaN86')) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaN81', 'NokiaN86'))) {
             return false;
         }
         

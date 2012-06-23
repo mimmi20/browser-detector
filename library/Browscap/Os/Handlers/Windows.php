@@ -38,10 +38,9 @@ class Windows extends OsHandler
     protected $_name = 'Windows';
     
     private $_windows = array(
-        'Win8', 'Win7', 'WinVista', 'WinXP', 'Win2000', 'Win98', 'Win95',
-        'WinNT', 'Win31', 'WinME', 'Windows NT', 'Windows 98', 'Windows 95',
-        'Windows 3.1', 'win9x/NT 4.90', 'Windows'
-    );
+            'Windows NT', 'Windows 98', 'Windows 95', 'Windows 3.1', 
+            'win9x/NT 4.90'
+        );
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -54,25 +53,7 @@ class Windows extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $this->_windows)
-            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Microsoft', 'Outlook', 'MSOffice', 'ms-office'))
-        ) {
-            return false;
-        }
-        
-        $isNotReallyAWindows = array(
-            // other OS and Mobile Windows
-            'Linux',
-            'Macintosh',
-            'Mac OS X',
-            'Windows CE',
-            'Windows Mobile',
-            'Windows Phone OS',
-            'IEMobile',
-            'Mobi'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
+        if (!$this->_utils->isWindows($this->_useragent)) {
             return false;
         }
         
@@ -88,7 +69,7 @@ class Windows extends OsHandler
      */
     protected function _detectVersion()
     {
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('win9x/NT 4.90', 'Win 9x 4.90', 'Windows ME'))) {
+        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('win9x/NT 4.90', 'Win 9x 4.90'/*, 'Windows ME'*/))) {
             $this->_version = 'ME';
             return;
         }
@@ -116,8 +97,10 @@ class Windows extends OsHandler
                     $version = '2000';
                     break;
                 case '4.0':
-                default:
                     $version = 'NT';
+                    break;
+                default:
+                    $version = '';
                     break;
             }
             
@@ -163,15 +146,17 @@ class Windows extends OsHandler
                     $version = '98';
                     break;
                 case '4.0':
-                default:
                     $version = 'NT';
+                    break;
+                default:
+                    $version = '';
                     break;
             }
             
             $this->_version = $version;
             return;
         }
-        
+        /*
         $version = '';
         
         foreach ($this->_windows as $winVersion) {
@@ -185,7 +170,7 @@ class Windows extends OsHandler
             $this->_version = $version;
             return;
         }
-        
+        /**/
         $this->_version = '';
     }
     

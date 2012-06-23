@@ -33,7 +33,7 @@ class HpTouchpad extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'HP Touchpad';
+    protected $_device = 'Touchpad';
 
     /**
      * @var string the detected manufacturer

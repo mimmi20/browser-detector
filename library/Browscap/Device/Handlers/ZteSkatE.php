@@ -33,7 +33,7 @@ class ZteSkatE extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'ZTE SKATE';
+    protected $_device = 'SKATE';
 
     /**
      * @var string the detected manufacturer

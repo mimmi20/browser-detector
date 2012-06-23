@@ -33,7 +33,7 @@ class HtcDesireSS510e extends HtcDesire
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC DesireS S510e';
+    protected $_device = 'DesireS S510e';
     
     /**
      * Final Interceptor: Intercept

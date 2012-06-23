@@ -33,7 +33,7 @@ class SamsungSphIp830w extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'SAMSUNG SPH-ip830w';
+    protected $_device = 'SPH-ip830w';
     
     /**
      * Final Interceptor: Intercept

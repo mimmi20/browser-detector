@@ -33,7 +33,7 @@ class Lgv900 extends Lg
     /**
      * @var string the detected device
      */
-    protected $_device = 'LG-V900';
+    protected $_device = 'V900';
     
     /**
      * Final Interceptor: Intercept

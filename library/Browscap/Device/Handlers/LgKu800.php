@@ -33,7 +33,7 @@ class LgKu800 extends Lg
     /**
      * @var string the detected device
      */
-    protected $_device = 'LG-KU800';
+    protected $_device = 'KU800';
     
     /**
      * Final Interceptor: Intercept

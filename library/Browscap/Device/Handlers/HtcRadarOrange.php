@@ -33,7 +33,7 @@ class HtcRadarOrange extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Radar Orange';
+    protected $_device = 'Radar Orange';
     
     /**
      * Final Interceptor: Intercept

@@ -33,7 +33,7 @@ class MotorolaMb525 extends Motorola
     /**
      * @var string the detected device
      */
-    protected $_device = 'Motorola MB525';
+    protected $_device = 'MB525';
     
     /**
      * Final Interceptor: Intercept
@@ -62,7 +62,7 @@ class MotorolaMb525 extends Motorola
      */
     public function getWeight()
     {
-        return 5;
+        return 6;
     }
     
     /**

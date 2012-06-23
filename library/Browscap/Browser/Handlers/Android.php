@@ -34,7 +34,7 @@ class Android extends MobileSafari
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Android Browser';
+    protected $_browser = 'Android Webkit';
 
     /**
      * @var string the detected manufacturer
@@ -54,6 +54,7 @@ class Android extends MobileSafari
         
         if (!$this->_utils->checkIfContains($this->_useragent, 'Android')
             && !parent::canHandle($this->_useragent)
+            && !$this->_utils->isMobileAsSafari($this->_useragent)
         ) {
             return false;
         }
@@ -63,6 +64,16 @@ class Android extends MobileSafari
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $this->_version = '';
     }
     
     /**

@@ -33,7 +33,7 @@ class Lgp990 extends Lg
     /**
      * @var string the detected device
      */
-    protected $_device = 'LG-P990';
+    protected $_device = 'P990';
     
     /**
      * Final Interceptor: Intercept

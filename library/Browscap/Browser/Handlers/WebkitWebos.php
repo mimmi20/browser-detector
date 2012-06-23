@@ -50,7 +50,7 @@ class WebkitWebos extends MobileSafari
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'webOS')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('webOS', 'webOSBrowser'))) {
             return false;
         }
         
@@ -65,6 +65,13 @@ class WebkitWebos extends MobileSafari
     protected function _detectVersion()
     {
         $doMatch = preg_match('/webOS\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/webOSBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -33,7 +33,7 @@ class HtcExplorer extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Explorer';
+    protected $_device = 'Explorer';
     
     /**
      * Final Interceptor: Intercept

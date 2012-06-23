@@ -33,7 +33,7 @@ class HuaweiMediaPad extends Huawei
     /**
      * @var string the detected device
      */
-    protected $_device = 'Huawei MediaPad';
+    protected $_device = 'MediaPad';
 
     /**
      * @var string the detected manufacturer

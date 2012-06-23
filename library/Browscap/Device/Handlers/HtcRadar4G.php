@@ -33,7 +33,7 @@ class HtcRadar4G extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Radar 4G';
+    protected $_device = 'Radar 4G';
     
     /**
      * Final Interceptor: Intercept

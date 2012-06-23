@@ -33,7 +33,7 @@ class HtcFlyerP510e extends HtcFlyer
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Flyer P510e';
+    protected $_device = 'Flyer P510e';
     
     /**
      * Final Interceptor: Intercept

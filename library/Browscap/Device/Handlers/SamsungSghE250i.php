@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungSghE250.php 241 2012-06-10 14:58:42Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungSghE250.php 241 2012-06-10 14:58:42Z  $
+ * @version    SVN: $Id$
  */
 class SamsungSghE250i extends SamsungSghE250
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SAMSUNG SGH-E250i';
+    protected $_device = 'SGH-E250i';
     
     /**
      * Final Interceptor: Intercept

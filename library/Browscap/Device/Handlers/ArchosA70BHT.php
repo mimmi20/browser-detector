@@ -33,7 +33,7 @@ class ArchosA70BHT extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'Archos A70 BHT';
+    protected $_device = 'A70 BHT';
 
     /**
      * @var string the detected manufacturer

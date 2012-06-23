@@ -33,7 +33,7 @@ class AlcatelOneTouch990 extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'ALCATEL one_touch_990';
+    protected $_device = 'one_touch_990';
 
     /**
      * @var string the detected manufacturer

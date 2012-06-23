@@ -33,7 +33,7 @@ class HuaweiU8655 extends Huawei
     /**
      * @var string the detected device
      */
-    protected $_device = 'Huawei U8655';
+    protected $_device = 'U8655';
 
     /**
      * @var string the detected manufacturer

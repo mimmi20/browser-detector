@@ -52,7 +52,7 @@ class Spector extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Spector/'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Spector/', 'Spector%20Pro'))) {
             return false;
         }
         
@@ -67,6 +67,13 @@ class Spector extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Spector\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Spector%20Pro(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

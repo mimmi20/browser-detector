@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: IS05.php 241 2012-06-10 14:58:42Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -28,7 +28,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: IS05.php 241 2012-06-10 14:58:42Z  $
+ * @version    SVN: $Id$
  */
 class Idl6651n extends DeviceHandler
 {

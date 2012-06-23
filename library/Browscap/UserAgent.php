@@ -270,13 +270,24 @@ class UserAgent extends Core
      *
      * @return string
      */
-    final public function getFullDevice()
+    final public function getFullDevice($withManufacturer = false)
     {
         if (null === $this->_device) {
             return null;
         }
         
-        return $this->_device->getFullDevice();
+        $device       = $this->_device->getFullDevice();
+        $manufacturer = $this->getDeviceManufacturer();
+        
+        if ($withManufacturer 
+            && $manufacturer 
+            && 'unknown' != $manufacturer
+            && false === strpos($device, 'general')
+        ) {
+            $device = $manufacturer . ' ' . $device;
+        }
+        
+        return $device;
     }
     
     /**

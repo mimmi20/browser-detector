@@ -33,7 +33,7 @@ class HtcMagic extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Magic';
+    protected $_device = 'Magic';
     
     /**
      * Final Interceptor: Intercept

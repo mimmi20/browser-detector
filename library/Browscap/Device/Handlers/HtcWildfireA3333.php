@@ -33,7 +33,7 @@ class HtcWildfireA3333 extends HtcWildfire
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Wildfire A3333';
+    protected $_device = 'Wildfire A3333';
     
     /**
      * Final Interceptor: Intercept

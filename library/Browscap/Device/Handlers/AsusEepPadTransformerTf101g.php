@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handler as DeviceHandler;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,12 +28,17 @@ use Browscap\Device\Handler as DeviceHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class EeePadTransformerTf101 extends DeviceHandler
+class AsusEepPadTransformerTf101g extends AsusEepPadTransformerTf101
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Eee Pad Transformer TF101';
+    protected $_device = 'Eee Pad Transformer TF101G';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Asus';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +53,30 @@ class EeePadTransformerTf101 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Transformer TF101')) {
+        if (!$this->_utils->checkIfContains($this->_useragent, 'Transformer TF101G')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device version from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/Transformer TF101G\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -64,7 +86,7 @@ class EeePadTransformerTf101 extends DeviceHandler
      */
     public function getWeight()
     {
-        return 6;
+        return 7;
     }
     
     /**
@@ -90,15 +112,5 @@ class EeePadTransformerTf101 extends DeviceHandler
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

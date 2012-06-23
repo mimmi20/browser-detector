@@ -33,7 +33,7 @@ class AcerIconiaA200 extends AcerIconia
     /**
      * @var string the detected device
      */
-    protected $_device = 'Acer Iconia A200';
+    protected $_device = 'Iconia A200';
     
     /**
      * Final Interceptor: Intercept

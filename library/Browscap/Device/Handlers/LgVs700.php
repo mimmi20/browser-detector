@@ -33,7 +33,7 @@ class LgVs700 extends Lg
     /**
      * @var string the detected device
      */
-    protected $_device = 'LG-VS700';
+    protected $_device = 'VS700';
     
     /**
      * Final Interceptor: Intercept

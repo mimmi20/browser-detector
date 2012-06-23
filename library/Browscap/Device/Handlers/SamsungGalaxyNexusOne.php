@@ -33,7 +33,7 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
     /**
      * @var string the detected device
      */
-    protected $_device = 'Samsung Galaxy Nexus One';
+    protected $_device = 'Galaxy Nexus One';
     
     /**
      * Final Interceptor: Intercept

@@ -33,7 +33,7 @@ class SamsungSghu600b extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'SAMSUNG SGH-U600B';
+    protected $_device = 'SGH-U600B';
     
     /**
      * Final Interceptor: Intercept

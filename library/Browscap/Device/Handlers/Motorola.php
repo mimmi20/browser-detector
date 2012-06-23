@@ -90,7 +90,8 @@ class Motorola extends GeneralMobile
     {
         $os = array(
             'Android',
-            'Symbianos'
+            'Symbianos',
+            'WindowsMobileOs'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);
@@ -126,6 +127,7 @@ class Motorola extends GeneralMobile
             'Android',
             'Dalvik',
             'Firefox',
+            'MicrosoftMobileExplorer',
             'Motorola'
         );
         

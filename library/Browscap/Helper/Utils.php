@@ -68,6 +68,7 @@ class Utils
         'phone',
         'pocket pc',
         'pocketpc',
+        'ppc',
         'rim tablet',
         'series40',
         'series 60',
@@ -106,6 +107,7 @@ class Utils
         'feed parser',
         'feedfetcher-google',
         'findlinks',
+        'gecko/17',
         'gecko/6',
         'generator',
         'grabber',
@@ -130,8 +132,6 @@ class Utils
         'test-acceptance',
         'unister-test',
         'webu',
-        'windows 3.1 7.8',
-        'windows xp 7.8',
         'wordpress',
         'www.yahoo.com',
         'xxx',
@@ -205,6 +205,10 @@ class Utils
             return true;
         }
         
+        if ($this->isFakeWindows($userAgent)) {
+            return true;
+        }
+        
         $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $userAgent, $matches);
         
         if ($doMatch) {
@@ -212,12 +216,156 @@ class Utils
                 return true;
             }
             
-            if (4 > $matches[1] || $matches[1] > 6) {
+            if (4 > $matches[1] || $matches[1] >= 6) {
                 return true;
             }
         }
         
         return false;
+    }
+    
+    public function isSafari($userAgent)
+    {
+        if (!$this->checkIfStartsWith($userAgent, 'Mozilla/')
+            && !$this->checkIfStartsWith($userAgent, 'Safari')
+        ) {
+            return false;
+        }
+        
+        if (!$this->checkIfContainsAnyOf($userAgent, array('Safari', 'AppleWebKit', 'CFNetwork'))) {
+            return false;
+        }
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Arora',
+            'Chrome',
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'PaleMoon',
+            'Rockmelt',
+            'rekonq',
+            'OmniWeb',
+            'Qt',
+            'Silk',
+            'MQQBrowser',
+            'konqueror',
+            'Epiphany',
+            'Shiira',
+            'Midori',
+            'BrowserNG',
+            'AdobeAIR',
+            'Dreamweaver',
+            //mobile Version
+            'Mobile',
+            'Tablet',
+            'Android',
+            // Fakes
+            'Mac; Mac OS '
+        );
+        
+        if ($this->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    public function isMobileAsSafari($userAgent)
+    {
+        if (!$this->isSafari($useragent)) {
+            return false;
+        }
+        
+        if (!$this->isMobileBrowser($useragent)) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    public function isWindows($userAgent)
+    {
+        $windows = array(
+            'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
+            'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
+            'windows 3.1', 'win9x/nt 4.90', 'windows'
+        );
+        
+        $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
+        
+        if (!$this->checkIfContainsAnyOf($userAgent, $windows, true)
+            && !$this->checkIfContainsAnyOf($userAgent, array('trident', 'microsoft', 'outlook', 'msoffice', 'ms-office'), true)
+        ) {
+            return false;
+        }
+        
+        $isNotReallyAWindows = array(
+            // other OS and Mobile Windows
+            'Linux',
+            'Macintosh',
+            'Mac OS X',
+            'Mobi'
+        );
+        
+        if ($this->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)
+            || $this->isFakeWindows($userAgent)
+            || $this->isMobileWindows($userAgent)
+        ) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    public function isFakeWindows($userAgent)
+    {
+        $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) (\d+\.\d+)/', $userAgent, $matches);
+        if ($doMatch) {
+            return true;
+        }
+        
+        $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
+        
+        $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $userAgent, $matches);
+        if ($doMatch) {
+            if (in_array($matches[1], $ntVersions)) {
+                return false;
+            }
+            
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public function isMobileWindows($userAgent)
+    {
+        $mobileWindows = array(
+            'Windows CE', 'Windows Phone OS', 'Windows Mobile', 
+            'Microsoft Windows; PPC', 'IEMobile'
+        );
+        
+        if (!$this->checkIfContainsAnyOf($userAgent, $mobileWindows)) {
+            return false;
+        }
+        
+        $isNotReallyAWindows = array(
+            // other OS
+            'Linux'
+            'Macintosh',
+            'Mac OS X',
+        );
+        
+        if ($this->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

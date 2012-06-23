@@ -33,7 +33,7 @@ class SamsungSghi997 extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'SAMSUNG SGH-i997';
+    protected $_device = 'SGH-i997';
     
     /**
      * Final Interceptor: Intercept

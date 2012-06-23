@@ -126,6 +126,7 @@ class Lg extends GeneralMobile
         $browsers = array(
             'Android',
             'Dalvik',
+            'MicrosoftMobileExplorer',
             'TelecaObigo',
             'WindowsPhoneSearch'
         );

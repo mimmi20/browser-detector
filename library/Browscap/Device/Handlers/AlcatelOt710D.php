@@ -33,7 +33,7 @@ class AlcatelOt710D extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'Alcatel OT-710D';
+    protected $_device = 'OT-710D';
 
     /**
      * @var string the detected manufacturer

@@ -33,7 +33,7 @@ class Nintendo3ds extends Nintendo
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nintendo 3DS';
+    protected $_device = '3DS';
     
     /**
      * Final Interceptor: Intercept

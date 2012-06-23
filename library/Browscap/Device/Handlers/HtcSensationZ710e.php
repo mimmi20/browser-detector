@@ -33,7 +33,7 @@ class HtcSensationZ710e extends HtcSensation
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Sensation Z710e';
+    protected $_device = 'Sensation Z710e';
     
     /**
      * Final Interceptor: Intercept

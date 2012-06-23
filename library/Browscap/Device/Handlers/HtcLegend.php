@@ -33,7 +33,7 @@ class HtcLegend extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Legend';
+    protected $_device = 'Legend';
     
     /**
      * Final Interceptor: Intercept

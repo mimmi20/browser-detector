@@ -125,6 +125,7 @@ class Htc extends GeneralMobile
     {
         $browsers = array(
             'Android',
+            'Chrome',
             'Dalvik',
             'MicrosoftMobileExplorer'
         );

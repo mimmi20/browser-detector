@@ -33,7 +33,7 @@ class HtcEvo3D extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC EVO 3D';
+    protected $_device = 'EVO 3D';
     
     /**
      * Final Interceptor: Intercept

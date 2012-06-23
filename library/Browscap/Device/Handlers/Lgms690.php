@@ -33,7 +33,7 @@ class Lgms690 extends Lg
     /**
      * @var string the detected device
      */
-    protected $_device = 'LG-MS690';
+    protected $_device = 'MS690';
     
     /**
      * Final Interceptor: Intercept

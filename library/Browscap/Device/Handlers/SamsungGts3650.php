@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungS8300 extends Samsung
+class SamsungGts3650 extends Samsung
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SAMSUNG S8300';
+    protected $_device = 'GT-S3650';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class SamsungS8300 extends Samsung
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'SAMSUNG-S8300')) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SAMSUNG-GT-S3650', 'GT-S3650'))) {
             return false;
         }
         

@@ -33,7 +33,7 @@ class RimTablet extends BlackBerry
     /**
      * @var string the detected device
      */
-    protected $_device = 'RIM Tablet';
+    protected $_device = 'Tablet';
     
     /**
      * Final Interceptor: Intercept

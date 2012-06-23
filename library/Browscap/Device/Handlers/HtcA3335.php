@@ -33,7 +33,7 @@ class HtcA3335 extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC A3335';
+    protected $_device = 'A3335';
     
     /**
      * Final Interceptor: Intercept

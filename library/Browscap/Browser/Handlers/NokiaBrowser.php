@@ -104,10 +104,17 @@ class NokiaBrowser extends Nokia
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            'Webkit'
+        );
         
-        return $handler->detect();
+        $engineChain = new \Browscap\Engine\Chain(false, $engines);
+        $engineChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $engineChain->setCache($this->_cache);
+        }
+        
+        return $engineChain->detect($this->_useragent);
     }
 }

@@ -33,7 +33,7 @@ class HtcBravo extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Bravo';
+    protected $_device = 'Bravo';
     
     /**
      * Final Interceptor: Intercept

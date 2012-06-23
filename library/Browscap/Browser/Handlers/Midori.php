@@ -73,6 +73,13 @@ class Midori extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/Midori-(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $this->_version = '';
     }
     

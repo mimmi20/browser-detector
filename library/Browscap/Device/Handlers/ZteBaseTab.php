@@ -33,7 +33,7 @@ class ZteBaseTab extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'ZTE BASE Tab';
+    protected $_device = 'BASE Tab';
 
     /**
      * @var string the detected manufacturer
@@ -70,6 +70,13 @@ class ZteBaseTab extends GeneralMobile
     protected function _detectVersion()
     {
         $doMatch = preg_match('/BASE Tab\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/BASE Tab ([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

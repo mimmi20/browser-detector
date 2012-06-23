@@ -33,7 +33,7 @@ class HtcRadarC110e extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Radar C110e';
+    protected $_device = 'Radar C110e';
     
     /**
      * Final Interceptor: Intercept

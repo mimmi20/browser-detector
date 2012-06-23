@@ -33,7 +33,12 @@ class KddiSn3f extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'KDDI-SN3F';
+    protected $_device = 'SN3F';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'KDDI';
     
     /**
      * Final Interceptor: Intercept

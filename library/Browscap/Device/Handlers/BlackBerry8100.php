@@ -33,7 +33,7 @@ class BlackBerry8100 extends BlackBerry
     /**
      * @var string the detected device
      */
-    protected $_device = 'BlackBerry 8100';
+    protected $_device = '8100';
     
     /**
      * Final Interceptor: Intercept

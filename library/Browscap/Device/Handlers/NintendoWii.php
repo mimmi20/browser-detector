@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MOVE.php 241 2012-06-10 14:58:42Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MOVE.php 241 2012-06-10 14:58:42Z  $
+ * @version    SVN: $Id$
  */
 class NintendoWii extends Nintendo
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nintendo Wii';
+    protected $_device = 'Wii';
     
     /**
      * Final Interceptor: Intercept

@@ -33,7 +33,7 @@ class SamsungR631 extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'SAMSUNG R631';
+    protected $_device = 'R631';
     
     /**
      * Final Interceptor: Intercept

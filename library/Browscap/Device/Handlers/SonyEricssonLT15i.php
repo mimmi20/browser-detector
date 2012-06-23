@@ -33,7 +33,7 @@ class SonyEricssonLT15i extends SonyEricsson
     /**
      * @var string the detected device
      */
-    protected $_device = 'SonyEricsson LT15i';
+    protected $_device = 'LT15i';
     
     /**
      * Final Interceptor: Intercept

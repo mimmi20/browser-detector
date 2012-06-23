@@ -33,7 +33,7 @@ class HtcDream extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC Dream';
+    protected $_device = 'Dream';
     
     /**
      * Final Interceptor: Intercept

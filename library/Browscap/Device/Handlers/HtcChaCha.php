@@ -33,7 +33,7 @@ class HtcChaCha extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC ChaCha';
+    protected $_device = 'ChaCha';
     
     /**
      * Final Interceptor: Intercept

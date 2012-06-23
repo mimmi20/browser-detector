@@ -48,7 +48,7 @@ class Irix extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('IRIX'))) {
+        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('IRIX', 'IRIX64'))) {
             return false;
         }
         

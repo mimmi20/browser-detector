@@ -33,7 +33,7 @@ class DellStreak extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'Dell Streak';
+    protected $_device = 'Streak';
 
     /**
      * @var string the detected manufacturer

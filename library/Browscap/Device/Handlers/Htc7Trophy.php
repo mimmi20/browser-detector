@@ -33,7 +33,7 @@ class Htc7Trophy extends Htc
     /**
      * @var string the detected device
      */
-    protected $_device = 'HTC 7 Trophy';
+    protected $_device = '7 Trophy';
     
     /**
      * Final Interceptor: Intercept

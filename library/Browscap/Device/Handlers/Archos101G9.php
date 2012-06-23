@@ -33,7 +33,7 @@ class Archos101G9 extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'ARCHOS 101G9';
+    protected $_device = '101G9';
 
     /**
      * @var string the detected manufacturer

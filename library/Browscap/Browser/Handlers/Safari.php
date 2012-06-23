@@ -49,53 +49,7 @@ class Safari extends BrowserHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Safari')
-        ) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Safari', 'AppleWebKit', 'CFNetwork'))) {
-            return false;
-        }
-        
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'rekonq',
-            'OmniWeb',
-            'Qt',
-            'Silk',
-            'MQQBrowser',
-            'konqueror',
-            'Epiphany',
-            'Shiira',
-            'Midori',
-            'BrowserNG',
-            'AdobeAIR',
-            'Dreamweaver',
-            //mobile Version
-            'Mobile',
-            'Tablet',
-            'Android',
-            // Fakes
-            'Mac; Mac OS '
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
-            return false;
-        }
-        
-        return true;
+        return $this->_utils->isSafari($this->_useragent);
     }
     
     /**
@@ -158,7 +112,7 @@ class Safari extends BrowserHandler
             return '4.0';
         }
         
-        return $detectedVersion;
+        return '';
     }
     
     /**

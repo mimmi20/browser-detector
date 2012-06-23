@@ -33,7 +33,7 @@ class SamsungGti8150 extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'Samsung GT-I8150';
+    protected $_device = 'GT-I8150';
     
     /**
      * Final Interceptor: Intercept

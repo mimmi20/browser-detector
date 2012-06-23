@@ -37,11 +37,6 @@ class WindowsMobileOs extends OsHandler
      */
     protected $_name = 'Windows Mobile OS';
     
-    private $_windows = array(
-        'Windows CE', 'Windows Phone OS', 'Windows Mobile', 
-        'Microsoft Windows; PPC'
-    );
-    
     /**
      * Returns true if this handler can handle the given $useragent
      *
@@ -53,16 +48,7 @@ class WindowsMobileOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, $this->_windows)) {
-            return false;
-        }
-        
-        $isNotReallyAWindows = array(
-            // other OS
-            'Linux'
-        );
-        
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
+        if (!$this->_utils->isMobileWindows($this->_useragent)) {
             return false;
         }
         

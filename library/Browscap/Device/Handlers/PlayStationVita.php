@@ -36,6 +36,11 @@ class PlayStationVita extends DeviceHandler
      * @var string the detected device
      */
     protected $_device = 'PlayStation Vita';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept

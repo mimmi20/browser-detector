@@ -35,7 +35,12 @@ class PantechP2020 extends DeviceHandler
     /**
      * @var string the detected device
      */
-    protected $_device = 'Pantech P2020';
+    protected $_device = 'P2020';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Pantech';
     
     /**
      * Final Interceptor: Intercept

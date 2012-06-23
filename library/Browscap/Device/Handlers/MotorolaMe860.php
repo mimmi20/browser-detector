@@ -33,7 +33,7 @@ class MotorolaMe860 extends Motorola
     /**
      * @var string the detected device
      */
-    protected $_device = 'Motorola ME860';
+    protected $_device = 'ME860';
     
     /**
      * Final Interceptor: Intercept

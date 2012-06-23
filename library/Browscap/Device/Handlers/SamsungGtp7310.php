@@ -33,7 +33,7 @@ class SamsungGtp7310 extends Samsung
     /**
      * @var string the detected device
      */
-    protected $_device = 'Samsung GT-P7310';
+    protected $_device = 'GT-P7310';
     
     /**
      * Final Interceptor: Intercept

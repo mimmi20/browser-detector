@@ -33,7 +33,7 @@ class Nokia5220XpressMusic extends Nokia
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nokia 5220 XpressMusic';
+    protected $_device = '5220 XpressMusic';
     
     /**
      * Final Interceptor: Intercept
