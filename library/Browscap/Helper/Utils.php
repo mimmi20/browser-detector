@@ -277,11 +277,11 @@ class Utils
     
     public function isMobileAsSafari($userAgent)
     {
-        if (!$this->isSafari($useragent)) {
+        if (!$this->isSafari($userAgent)) {
             return false;
         }
         
-        if (!$this->isMobileBrowser($useragent)) {
+        if (!$this->isMobileBrowser($userAgent)) {
             return false;
         }
         
@@ -356,7 +356,7 @@ class Utils
         
         $isNotReallyAWindows = array(
             // other OS
-            'Linux'
+            'Linux',
             'Macintosh',
             'Mac OS X',
         );

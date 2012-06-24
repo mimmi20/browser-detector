@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungGtP1000M extends SamsungGtp1000
+class SamsungGtp1000M extends SamsungGtp1000
 {
     /**
      * @var string the detected device

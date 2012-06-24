@@ -131,7 +131,7 @@ class MdaCompact extends DeviceHandler
     {
         $browser = new \Browscap\Browser\Handlers\MicrosoftMobileExplorer();
         $browser->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $browser->setUseragent($this->_useragent);
         
         return $browser->detect($this->_useragent);
     }
