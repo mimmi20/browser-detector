@@ -48,7 +48,7 @@ class Macosx extends Macintosh
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Macintosh', 'Mac OS X'))) {
+        if (!$this->_utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
             return false;
         }
         

@@ -49,7 +49,7 @@ class Lg extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'LG') || $this->_utils->checkIfStartsWith($this->_useragent, 'lg');
+        return $this->_utils->checkIfContains('LG') || $this->_utils->checkIfStartsWith('lg');
     }
     
     /**

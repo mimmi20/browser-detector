@@ -48,7 +48,7 @@ class SPV extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'SPV');
+        return $this->_utils->checkIfContains('SPV');
     }
     
     /**

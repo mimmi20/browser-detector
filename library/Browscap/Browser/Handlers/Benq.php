@@ -49,7 +49,7 @@ class Benq extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'BenQ') || $this->_utils->checkIfStartsWith($this->_useragent, 'BENQ');
+        return $this->_utils->checkIfStartsWith('BenQ') || $this->_utils->checkIfStartsWith('BENQ');
     }
     
     /**

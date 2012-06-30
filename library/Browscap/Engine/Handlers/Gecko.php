@@ -48,11 +48,11 @@ class Gecko extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Gecko', 'Firefox'))) {
+        if (!$this->_utils->checkIfContains(array('Gecko', 'Firefox'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'Presto'))) {
+        if ($this->_utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'Presto'))) {
             return false;
         }
         

@@ -48,7 +48,7 @@ class WebOX extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'WebOX/')) {
+        if (!$this->_utils->checkIfContains('WebOX/')) {
             return false;
         }
         

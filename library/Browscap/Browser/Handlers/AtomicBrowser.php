@@ -46,8 +46,8 @@ class AtomicBrowser extends CfNetwork
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'AtomicBrowser') 
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'AtomicLite')
+        if (!$this->_utils->checkIfStartsWith('AtomicBrowser') 
+            && !$this->_utils->checkIfStartsWith('AtomicLite')
         ) {
             return false;
         }

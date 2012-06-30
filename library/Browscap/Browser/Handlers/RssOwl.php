@@ -46,7 +46,7 @@ class RssOwl extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'RSSOwl')) {
+        if (!$this->_utils->checkIfStartsWith('RSSOwl')) {
             return false;
         }
         
@@ -61,11 +61,28 @@ class RssOwl extends GeneralBot
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/RSSOwl\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**

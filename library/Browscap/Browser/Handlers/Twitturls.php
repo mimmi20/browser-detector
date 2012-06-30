@@ -46,11 +46,11 @@ class Twitturls extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Twitturls/'))) {
+        if (!$this->_utils->checkIfContains(array('Twitturls/'))) {
             return false;
         }
         

@@ -46,11 +46,11 @@ class Voilabot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Voilabot/'))) {
+        if (!$this->_utils->checkIfContains(array('Voilabot/'))) {
             return false;
         }
         

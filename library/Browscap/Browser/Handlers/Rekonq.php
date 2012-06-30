@@ -48,11 +48,11 @@ class Rekonq extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Rekonq'))) {
+        if (!$this->_utils->checkIfContains(array('Rekonq'))) {
             return false;
         }
         
@@ -72,7 +72,7 @@ class Rekonq extends BrowserHandler
             'Mobile'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

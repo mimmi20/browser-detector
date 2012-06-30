@@ -48,7 +48,7 @@ class Xyleme extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'cosmos')) {
+        if (!$this->_utils->checkIfStartsWith('cosmos')) {
             return false;
         }
         

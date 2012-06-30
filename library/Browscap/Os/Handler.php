@@ -88,6 +88,7 @@ abstract class Handler implements MatcherInterface
     final public function setLogger(\Zend\Log\Logger $logger = null)
     {
         $this->_logger = $logger;
+        $this->_utils->setLogger($logger);
         
         return $this;
     }
@@ -114,6 +115,7 @@ abstract class Handler implements MatcherInterface
     final public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
+        $this->_utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -188,19 +190,19 @@ abstract class Handler implements MatcherInterface
      */
     protected function _detectBits()
     {
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64'))) {
+        if ($this->_utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64'))) {
             $this->_bits = '64';
             
             return $this;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Win3.1', 'Windows 3.1'))) {
+        if ($this->_utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
             $this->_bits = '16';
             
             return $this;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+        if ($this->_utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
             $this->_bits = '32';
             
             return $this;

@@ -48,7 +48,7 @@ class Bada extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Bada'))) {
+        if (!$this->_utils->checkIfContains('Bada')) {
             return false;
         }
         

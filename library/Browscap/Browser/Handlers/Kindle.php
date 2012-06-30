@@ -50,7 +50,7 @@ class Kindle extends NetFront
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Kindle')) {
+        if (!$this->_utils->checkIfContains('Kindle')) {
             return false;
         }
         

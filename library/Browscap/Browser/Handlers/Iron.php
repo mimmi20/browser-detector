@@ -46,11 +46,11 @@ class Iron extends Chromium
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Iron'))) {
+        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Iron'))) {
             return false;
         }
         
@@ -65,7 +65,7 @@ class Iron extends Chromium
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

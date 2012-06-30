@@ -82,7 +82,14 @@ class Support
         }
         
         $userAgent = str_replace(
-            array('User-Agent:', 'User-agent:'), 
+            array(
+                'User-Agent:', 
+                'User-agent:', 
+                ' (KHTML, like Gecko)', 
+                ' Alexa Toolbar', 
+                'Embedded Web Browser from: http://bsalsa.com/;',
+                ',gzip(gfe) (via translate.google.com)'
+            ), 
             '', 
             $userAgent
         );
@@ -93,7 +100,48 @@ class Support
             $userAgent
         );
         
-        return trim(preg_replace('/\s+\s/', ' ', $userAgent));
+        if (substr_count($userAgent, 'Mozilla/') > 1) {
+            $pos = strpos($userAgent, 'Mozilla/') + 1;
+            $pos = strpos($userAgent, 'Mozilla/', $pos);
+            
+            $userAgent = substr($userAgent, 0, $pos);
+        }
+        
+        $replaceRules = array(
+            '/\.(NET CLR |NET4\.)([a-zA-Z0-9\-\.]+)/',
+            '/(mozilla|media center pc|tablet pc|tob|aol|aolbuild|freenet|arcor|esobisubscriber|zango|zune|seekmotoolbar|versatel\.de isdn|ms\-rtc lm|shopperreports|hotbar|ant\.com toolbar) ([\d\.]+)/i',
+            '/(OfficeLiveConnector|OfficeLivePatch|InfoPath)\.([\d\.]+)/',
+            '/SIMBAR\=\{([0-9A-Z\-]+)\}/',
+            '/(slcc|btrs|bri\/|yie|np|boie|t\-online ie|sv)(\d+)/i',
+            '/ask([0-9a-zA-Z\/\-\.]+)/i',
+            '/gtb([\d\.]+)/i',
+            '/(anonymized by Abelssoft|Anonymisiert durch AlMiSoft Browser\-Maulkorb|Anonymisiert durch AlMiSoft Browser\-Anonymisierer) (\d+)/',
+            '/Gacela\=\d-\{([0-9A-Z\-]+)\}\-\d+/',
+            '/tb\-(webde|gmx)\/([\d\.]+)/',
+            '/(webde|1und1|mozilla|gmx|feed)\/([\d\.]+)/i',
+            '/easybits ([0-9a-z\ \.]+)/i',
+            '/MSNIE(\d+)A/',
+            '/(funwebproducts|fdm|enusmscom|tmstmpext|compatible|t\-brand\-rc|cooee|t\-brand\-final|mddc)/i',
+            '/ma(nm|md|pb|au|em|ar|ln)/i',
+            '/(microsoft\.com|msn) optimized ie(\d+)/i',
+            '/mra ([\d\.]+) \(build \d+\)/i',
+            '/#(.*)#/'
+        );
+        
+        foreach ($replaceRules as $rule) {
+            if (preg_match($rule, $userAgent)) {
+                $userAgent = preg_replace($rule, '', $userAgent);
+            }
+        }
+        
+        $userAgent = preg_replace(array('/\;\s+\;\s+/', '/\;\s+\;/', '/\;\s+\)/', '/\;+/'), ';', $userAgent);
+        $userAgent = preg_replace(array('/\;\)/', '/\;\s+\)/'), ')', $userAgent);
+        $userAgent = preg_replace(array('/\(\;\s+/', '/\(\;/'), '(', $userAgent);
+        $userAgent = preg_replace(array('/\(\)\s*\;/', '/\;\s*\(\)/', '/\(\s*\)/'), '', $userAgent);
+        
+        $userAgent = preg_replace('/\s+\s/', ' ', $userAgent);
+        
+        return trim($userAgent);
     }
     
     public function getAcceptHeader()

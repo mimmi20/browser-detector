@@ -48,7 +48,7 @@ class WowWps extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WOW WPs')) {
+        if (!$this->_utils->checkIfStartsWith('WOW WPs')) {
             return false;
         }
         

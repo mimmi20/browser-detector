@@ -48,7 +48,7 @@ class Akregator extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Akregator')) {
+        if (!$this->_utils->checkIfStartsWith('Akregator')) {
             return false;
         }
         

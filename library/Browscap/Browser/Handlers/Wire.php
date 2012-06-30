@@ -48,7 +48,7 @@ class Wire extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WIRE')) {
+        if (!$this->_utils->checkIfStartsWith('WIRE')) {
             return false;
         }
         

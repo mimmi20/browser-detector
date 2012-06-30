@@ -48,7 +48,7 @@ class XmlRpcForPhp extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'XML-RPC for PHP')) {
+        if (!$this->_utils->checkIfStartsWith('XML-RPC for PHP')) {
             return false;
         }
         

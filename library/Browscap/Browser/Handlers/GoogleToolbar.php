@@ -51,7 +51,7 @@ class GoogleToolbar extends Google
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('GoogleToolbar'))) {
+        if (!$this->_utils->checkIfContains(array('GoogleToolbar'))) {
             return false;
         }
         
@@ -73,5 +73,15 @@ class GoogleToolbar extends Google
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
 }

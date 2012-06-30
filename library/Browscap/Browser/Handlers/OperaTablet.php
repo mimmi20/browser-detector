@@ -51,7 +51,7 @@ class OperaTablet extends OperaMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Opera Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('Opera Tablet'))) {
             return false;
         }
         

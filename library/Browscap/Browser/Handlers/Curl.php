@@ -46,11 +46,11 @@ class Curl extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('libcurl', 'PycURL', 'curl'))) {
+        if (!$this->_utils->checkIfContains(array('libcurl', 'PycURL', 'curl'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('<'))) {
+        if ($this->_utils->checkIfContains(array('<'))) {
             return false;
         }
         

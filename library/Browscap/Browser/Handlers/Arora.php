@@ -48,13 +48,13 @@ class Arora extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Arora/')
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')
+            && !$this->_utils->checkIfStartsWith('Arora/')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Arora'))) {
+        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Arora'))) {
             return false;
         }
         
@@ -73,7 +73,7 @@ class Arora extends BrowserHandler
             'Chrome'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

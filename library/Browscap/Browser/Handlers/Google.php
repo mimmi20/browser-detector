@@ -53,17 +53,22 @@ class Google extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Google'))) {
+        if (!$this->_utils->checkIfContains(array('Google'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot', 'AppEngine-Google', 'code.google.com/appengine'))) {
+        if ($this->_utils->checkIfContains(array('GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot', 'AppEngine-Google', 'code.google.com/appengine'))) {
             return false;
         }
         
         return true;
     }
     
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 6;

@@ -49,7 +49,7 @@ class TelecaObigo extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser'));
+        return $this->_utils->checkIfContains(array('Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser'));
     }
     
     /**
@@ -140,6 +140,13 @@ class TelecaObigo extends BrowserHandler
         
         if ($doMatch) {
             $this->_version = ltrim($matches[1], '0');
+            return;
+        }
+        
+        $doMatch = preg_match('/ObigoInternetBrowser\/(Q\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
             return;
         }
         

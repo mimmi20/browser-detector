@@ -49,7 +49,7 @@ class Sanyo extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Sanyo') || $this->_utils->checkIfStartsWith($this->_useragent, 'SANYO');
+        return $this->_utils->checkIfStartsWith('Sanyo') || $this->_utils->checkIfStartsWith('SANYO');
     }
     
     /**

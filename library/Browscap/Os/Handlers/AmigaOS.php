@@ -48,7 +48,7 @@ class AmigaOS extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AmigaOS'))) {
+        if (!$this->_utils->checkIfContains('AmigaOS')) {
             return false;
         }
         

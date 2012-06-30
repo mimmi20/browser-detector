@@ -46,7 +46,7 @@ class GSLFbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('GSLFbot/'))) {
+        if (!$this->_utils->checkIfContains(array('GSLFbot/'))) {
             return false;
         }
         

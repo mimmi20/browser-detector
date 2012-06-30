@@ -48,7 +48,7 @@ class CfNetwork extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'CFNetwork/')) {
+        if (!$this->_utils->checkIfContains('CFNetwork/')) {
             return false;
         }
         

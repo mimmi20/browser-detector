@@ -48,7 +48,7 @@ class NetFront extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
+        if (!$this->_utils->checkIfContains(array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
             return false;
         }
         
@@ -57,7 +57,7 @@ class NetFront extends EngineHandler
             'Kindle'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnNetfront)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnNetfront)) {
             return false;
         }
         

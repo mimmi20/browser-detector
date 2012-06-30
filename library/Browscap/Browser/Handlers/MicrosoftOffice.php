@@ -56,7 +56,7 @@ class MicrosoftOffice extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Microsoft Office', 'MSOffice'))) {
+        if (!$this->_utils->checkIfContains(array('Microsoft Office', 'MSOffice'))) {
             return false;
         }
         
@@ -86,7 +86,7 @@ class MicrosoftOffice extends BrowserHandler
             'Outlook-Express'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         
@@ -133,6 +133,10 @@ class MicrosoftOffice extends BrowserHandler
     
     protected function _mapVersion($version)
     {
+        if (15 == (int) $version) {
+            return '2012';
+        }
+        
         if (14 == (int) $version) {
             return '2010';
         }

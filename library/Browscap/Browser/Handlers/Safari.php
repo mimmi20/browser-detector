@@ -112,6 +112,10 @@ class Safari extends BrowserHandler
             return '4.0';
         }
         
+        if (in_array($detectedVersion, array('4.0', '5.0', '5.1', '5.2'))) {
+            return $detectedVersion;
+        }
+        
         return '';
     }
     

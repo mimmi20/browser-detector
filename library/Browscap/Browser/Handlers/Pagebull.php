@@ -48,11 +48,11 @@ class Pagebull extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Pagebull/'))) {
+        if (!$this->_utils->checkIfContains(array('Pagebull/'))) {
             return false;
         }
         

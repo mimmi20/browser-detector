@@ -48,7 +48,7 @@ class RimOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('BlackBerry'))) {
+        if (!$this->_utils->checkIfContains('BlackBerry')) {
             return false;
         }
         
@@ -56,10 +56,12 @@ class RimOs extends OsHandler
             // special Linux versions
             'Android',
             'Debian',
-            'Ubuntu'
+            'Ubuntu',
+            //Tablet Version
+            'RIM Tablet'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnLinux)) {
             return false;
         }
         

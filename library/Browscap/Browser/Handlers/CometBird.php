@@ -46,11 +46,11 @@ class CometBird extends Firefox
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('CometBird'))) {
+        if (!$this->_utils->checkIfContainsAll(array('CometBird'))) {
             return false;
         }
         
@@ -75,7 +75,7 @@ class CometBird extends Firefox
             'ArgClrInt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

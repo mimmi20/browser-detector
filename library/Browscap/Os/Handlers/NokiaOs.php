@@ -48,7 +48,7 @@ class NokiaOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Nokia', 'Series40'))) {
+        if (!$this->_utils->checkIfContains(array('Nokia', 'Series40'))) {
             return false;
         }
         

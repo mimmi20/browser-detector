@@ -55,7 +55,7 @@ class MicrosoftWord extends MicrosoftOffice
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Word')) {
+        if (!$this->_utils->checkIfContains('Word')) {
             return false;
         }
         
@@ -79,7 +79,7 @@ class MicrosoftWord extends MicrosoftOffice
             'WebTV'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

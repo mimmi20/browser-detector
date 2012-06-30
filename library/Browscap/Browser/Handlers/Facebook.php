@@ -53,8 +53,8 @@ class Facebook extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Facebook')
-            && !$this->_utils->checkIfContainsAnyOf($this->_useragent, array('FBAN', 'FBForIPhone', 'FBAV', 'facebookexternalhit'))
+        if (!$this->_utils->checkIfStartsWith('Facebook')
+            && !$this->_utils->checkIfContains(array('FBAN', 'FBForIPhone', 'FBAV', 'facebookexternalhit'))
         ) {
             return false;
         }
@@ -70,7 +70,7 @@ class Facebook extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

@@ -49,7 +49,7 @@ class Mitsubishi extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Mitsu');
+        return $this->_utils->checkIfStartsWith('Mitsu');
     }
     
     /**

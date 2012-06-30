@@ -51,11 +51,11 @@ class Googlebot extends Google
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Google')) {
+        if (!$this->_utils->checkIfStartsWith('Google')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Googlebot', 'GoogleBot'))) {
+        if (!$this->_utils->checkIfContains(array('Googlebot', 'GoogleBot'))) {
             return false;
         }
         
@@ -112,6 +112,16 @@ class Googlebot extends Google
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**

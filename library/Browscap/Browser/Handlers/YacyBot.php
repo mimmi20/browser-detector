@@ -46,7 +46,7 @@ class YacyBot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'yacybot')) {
+        if (!$this->_utils->checkIfStartsWith('yacybot')) {
             return false;
         }
         

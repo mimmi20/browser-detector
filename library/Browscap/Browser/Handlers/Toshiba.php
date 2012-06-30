@@ -49,7 +49,7 @@ class Toshiba extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Toshiba');
+        return $this->_utils->checkIfStartsWith('Toshiba');
     }
     
     /**

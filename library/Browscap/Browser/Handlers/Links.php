@@ -48,7 +48,7 @@ class Links extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Links')) {
+        if (!$this->_utils->checkIfStartsWith('Links')) {
             return false;
         }
         

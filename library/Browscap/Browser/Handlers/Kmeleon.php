@@ -56,7 +56,7 @@ class Kmeleon extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'K-Meleon')) {
+        if (!$this->_utils->checkIfContains('K-Meleon')) {
             return false;
         }
         
@@ -76,7 +76,7 @@ class Kmeleon extends BrowserHandler
             'Firefox'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfStartsWith($isNotReallyAnFirefox)) {
             return false;
         }
         

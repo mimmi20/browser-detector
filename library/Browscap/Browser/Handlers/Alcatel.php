@@ -49,7 +49,7 @@ class Alcatel extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Alcatel') || $this->_utils->checkIfStartsWith($this->_useragent, 'ALCATEL');
+        return $this->_utils->checkIfContains('Alcatel', true);
     }
     
     /**

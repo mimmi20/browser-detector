@@ -52,7 +52,7 @@ class NokiaBrowser extends Nokia
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaBrowser'))) {
+        if ($this->_utils->checkIfContains(array('NokiaBrowser'))) {
             return true;
         }
         

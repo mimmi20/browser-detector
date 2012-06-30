@@ -48,11 +48,11 @@ class DarwinBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'browser')) {
+        if (!$this->_utils->checkIfStartsWith('browser')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('CFNetwork', 'Darwin'))) {
+        if (!$this->_utils->checkIfContains(array('CFNetwork', 'Darwin'))) {
             return false;
         }
         

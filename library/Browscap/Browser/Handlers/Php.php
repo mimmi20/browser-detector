@@ -47,7 +47,7 @@ class Php extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'PHP/')) {
+        if (!$this->_utils->checkIfStartsWith('PHP/')) {
             return false;
         }
         

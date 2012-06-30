@@ -48,8 +48,8 @@ class Billigfluegefinal extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith($this->_useragent, 'BilligFluegeFinal')
-            || $this->_utils->checkIfStartsWith($this->_useragent, 'billigFluegeFinal')
+        if ($this->_utils->checkIfStartsWith('BilligFluegeFinal')
+            || $this->_utils->checkIfStartsWith('billigFluegeFinal')
         ) {
             return true;
         }

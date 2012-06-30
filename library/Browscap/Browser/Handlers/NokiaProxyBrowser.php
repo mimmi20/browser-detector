@@ -54,7 +54,7 @@ class NokiaProxyBrowser extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('OviBrowser', 'S40OviBrowser'));
+        return $this->_utils->checkIfContains(array('OviBrowser', 'S40OviBrowser'));
     }
     
     /**

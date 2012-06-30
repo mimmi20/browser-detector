@@ -49,7 +49,7 @@ class Openwave extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('OpenWave', 'UP.Browser/', 'UP/', 'Browser/OpenWave'))) {
+        if (!$this->_utils->checkIfContains(array('OpenWave', 'UP.Browser/', 'UP/', 'Browser/OpenWave'))) {
             return false;
         }
         
@@ -60,7 +60,7 @@ class Openwave extends BrowserHandler
             '/ '
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyOpenWave)) {
+        if ($this->_utils->checkIfContains($isNotReallyOpenWave)) {
             return false;
         }
         

@@ -46,7 +46,7 @@ class XchaosArachne extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'xChaos_Arachne')) {
+        if (!$this->_utils->checkIfStartsWith('xChaos_Arachne')) {
             return false;
         }
         

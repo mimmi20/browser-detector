@@ -53,8 +53,8 @@ class WindowsMediaPlayer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Windows-Media-Player')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'NSPlayer')
+        if (!$this->_utils->checkIfStartsWith('Windows-Media-Player')
+            && !$this->_utils->checkIfStartsWith('NSPlayer')
         ) {
             return false;
         }

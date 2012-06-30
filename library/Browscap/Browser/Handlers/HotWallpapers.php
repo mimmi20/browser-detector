@@ -48,7 +48,7 @@ class HotWallpapers extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Hot Wallpapers')) {
+        if (!$this->_utils->checkIfStartsWith('Hot Wallpapers')) {
             return false;
         }
         

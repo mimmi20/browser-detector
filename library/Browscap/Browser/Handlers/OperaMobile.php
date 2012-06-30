@@ -53,7 +53,7 @@ class OperaMobile extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Opera Mobi', 'Opera Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('Opera Mobi', 'Opera Tablet'))) {
             return false;
         }
         

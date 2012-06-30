@@ -54,11 +54,11 @@ class Icedove extends Thunderbird
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Icedove', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Icedove', 'Gecko'))) {
             return false;
         }
         
@@ -79,7 +79,7 @@ class Icedove extends Thunderbird
             'Iceowl'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

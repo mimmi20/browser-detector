@@ -48,7 +48,7 @@ class Xerka extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Xerka WebBot')) {
+        if (!$this->_utils->checkIfStartsWith('Xerka WebBot')) {
             return false;
         }
         

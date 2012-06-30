@@ -36,6 +36,11 @@ class Firefox extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Firefox';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Mozilla';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -56,13 +61,13 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/4.0')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0')
+        if (!$this->_utils->checkIfStartsWith('Mozilla/4.0')
+            && !$this->_utils->checkIfStartsWith('Mozilla/5.0')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho'))) {
+        if (!$this->_utils->checkIfContains(array('Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho'))) {
             return false;
         }
         
@@ -96,7 +101,7 @@ class Firefox extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

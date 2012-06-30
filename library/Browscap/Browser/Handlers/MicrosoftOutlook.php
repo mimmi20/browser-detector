@@ -55,7 +55,7 @@ class MicrosoftOutlook extends MicrosoftOffice
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Outlook', 'Microsoft Office', 'MSOffice'))) {
+        if (!$this->_utils->checkIfContains(array('Outlook', 'Microsoft Office', 'MSOffice'))) {
             return false;
         }
         
@@ -84,7 +84,7 @@ class MicrosoftOutlook extends MicrosoftOffice
             'Outlook-Express'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

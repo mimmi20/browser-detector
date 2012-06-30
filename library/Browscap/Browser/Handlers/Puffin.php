@@ -46,11 +46,11 @@ class Puffin extends Chromium
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Puffin'))) {
+        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Puffin'))) {
             return false;
         }
         
@@ -66,7 +66,7 @@ class Puffin extends Chromium
             'Iron'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

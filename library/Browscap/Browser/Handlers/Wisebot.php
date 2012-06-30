@@ -46,7 +46,7 @@ class Wisebot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'WISEbot')) {
+        if (!$this->_utils->checkIfContains('WISEbot')) {
             return false;
         }
         

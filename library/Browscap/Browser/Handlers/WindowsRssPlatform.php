@@ -53,7 +53,7 @@ class WindowsRssPlatform extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Windows-RSS-Platform')) {
+        if (!$this->_utils->checkIfStartsWith('Windows-RSS-Platform')) {
             return false;
         }
         

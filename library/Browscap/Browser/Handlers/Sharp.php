@@ -49,7 +49,7 @@ class Sharp extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Sharp') || $this->_utils->checkIfStartsWith($this->_useragent, 'SHARP');
+        return $this->_utils->checkIfStartsWith('Sharp') || $this->_utils->checkIfStartsWith('SHARP');
     }
     
     /**

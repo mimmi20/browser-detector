@@ -48,7 +48,7 @@ class OnePassword extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, '1Password')) {
+        if (!$this->_utils->checkIfContains('1Password')) {
             return false;
         }
         

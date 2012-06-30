@@ -48,7 +48,7 @@ class Elinks extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'ELinks')) {
+        if (!$this->_utils->checkIfStartsWith('ELinks')) {
             return false;
         }
         

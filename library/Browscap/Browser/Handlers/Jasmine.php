@@ -48,7 +48,7 @@ class Jasmine extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Jasmine')) {
+        if (!$this->_utils->checkIfContains('Jasmine')) {
             return false;
         }
         
@@ -65,7 +65,7 @@ class Jasmine extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfStartsWith($isNotReallyAnSafari)) {
             return false;
         }
         

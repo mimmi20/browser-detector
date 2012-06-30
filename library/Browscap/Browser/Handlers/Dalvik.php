@@ -51,7 +51,7 @@ class Dalvik extends Android
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Dalvik'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Dalvik'))) {
             return false;
         }
         

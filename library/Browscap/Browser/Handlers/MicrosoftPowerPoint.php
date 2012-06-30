@@ -55,7 +55,7 @@ class MicrosoftPowerPoint extends MicrosoftOffice
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'PowerPoint')) {
+        if (!$this->_utils->checkIfContains('PowerPoint')) {
             return false;
         }
         
@@ -79,7 +79,7 @@ class MicrosoftPowerPoint extends MicrosoftOffice
             'WebTV'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

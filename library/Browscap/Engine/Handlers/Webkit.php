@@ -48,11 +48,11 @@ class Webkit extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Safari'))) {
+        if (!$this->_utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Safari'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Trident', 'Presto', 'Konqueror'))) {
+        if ($this->_utils->checkIfContains(array('Trident', 'Presto', 'Konqueror'))) {
             return false;
         }
         

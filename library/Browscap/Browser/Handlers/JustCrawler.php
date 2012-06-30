@@ -46,7 +46,7 @@ class JustCrawler extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'JUST-CRAWLER')) {
+        if (!$this->_utils->checkIfStartsWith('JUST-CRAWLER')) {
             return false;
         }
         

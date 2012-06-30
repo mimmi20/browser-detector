@@ -46,7 +46,7 @@ class Websuchebot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Websuchebot')) {
+        if (!$this->_utils->checkIfContains('Websuchebot')) {
             return false;
         }
         

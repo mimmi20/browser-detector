@@ -46,7 +46,7 @@ class Redhat extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('redhat'))) {
+        if (!$this->_utils->checkIfContains('redhat', true)) {
             return false;
         }
         

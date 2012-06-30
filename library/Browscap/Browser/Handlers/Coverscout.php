@@ -47,7 +47,7 @@ class Coverscout extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'CoverScout')) {
+        if (!$this->_utils->checkIfStartsWith('CoverScout')) {
             return false;
         }
         

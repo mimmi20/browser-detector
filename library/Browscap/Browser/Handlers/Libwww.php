@@ -46,11 +46,11 @@ class Libwww extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'libwww')) {
+        if (!$this->_utils->checkIfContains('libwww')) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'Lynx')) {
+        if ($this->_utils->checkIfContains('Lynx')) {
             return false;
         }
         

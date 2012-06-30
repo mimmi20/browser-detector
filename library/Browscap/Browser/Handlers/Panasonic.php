@@ -49,7 +49,7 @@ class Panasonic extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Panasonic');
+        return $this->_utils->checkIfStartsWith('Panasonic');
     }
     
     /**

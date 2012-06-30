@@ -49,7 +49,7 @@ class Portalmmm extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'portalmmm');
+        return $this->_utils->checkIfStartsWith('portalmmm');
     }
     
     /**

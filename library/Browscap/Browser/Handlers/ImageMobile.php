@@ -48,7 +48,7 @@ class ImageMobile extends CfNetwork
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'ImageMobile')) {
+        if (!$this->_utils->checkIfStartsWith('ImageMobile')) {
             return false;
         }
         

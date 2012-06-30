@@ -54,11 +54,11 @@ class Nokia extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Nokia')) {
+        if (!$this->_utils->checkIfContains('Nokia')) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('OviBrowser', 'NokiaBrowser', 'UCWEB', 'BrowserNG', 'S40OviBrowser'))) {
+        if ($this->_utils->checkIfContains(array('OviBrowser', 'NokiaBrowser', 'UCWEB', 'BrowserNG', 'S40OviBrowser'))) {
             return false;
         }
         

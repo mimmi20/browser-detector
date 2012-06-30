@@ -48,7 +48,7 @@ class OpenBsd extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('OpenBSD'))) {
+        if (!$this->_utils->checkIfContains('OpenBSD')) {
             return false;
         }
         

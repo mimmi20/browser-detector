@@ -54,11 +54,11 @@ class Blackberry extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'MQQBrowser')) {
+        if ($this->_utils->checkIfContains('MQQBrowser')) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('BlackBerry', 'Blackberry'))) {
+        if ($this->_utils->checkIfContains(array('BlackBerry', 'Blackberry'))) {
             return true;
         }
         

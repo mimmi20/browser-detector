@@ -46,7 +46,7 @@ class Fedora extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Fedora'))) {
+        if (!$this->_utils->checkIfContains('fedora', true)) {
             return false;
         }
         

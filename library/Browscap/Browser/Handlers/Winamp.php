@@ -49,7 +49,7 @@ class Winamp extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WinampMPEG/')) {
+        if (!$this->_utils->checkIfStartsWith('WinampMPEG/')) {
             return false;
         }
         

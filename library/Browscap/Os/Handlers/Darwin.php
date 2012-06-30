@@ -48,7 +48,7 @@ class Darwin extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Darwin'))) {
+        if (!$this->_utils->checkIfContains('darwin', true)) {
             return false;
         }
         

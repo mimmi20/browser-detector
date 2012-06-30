@@ -46,7 +46,7 @@ class NewsRack extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'NewsRack')) {
+        if (!$this->_utils->checkIfStartsWith('NewsRack')) {
             return false;
         }
         

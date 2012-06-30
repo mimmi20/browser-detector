@@ -52,7 +52,7 @@ class BlackberryPlaybookTablet extends Blackberry
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('PlayBook'))) {
+        if ($this->_utils->checkIfContains(array('PlayBook'))) {
             return true;
         }
         

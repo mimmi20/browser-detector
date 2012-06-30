@@ -48,7 +48,7 @@ class PerfectBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Perfect Browser')) {
+        if (!$this->_utils->checkIfStartsWith('Perfect Browser')) {
             return false;
         }
         

@@ -48,7 +48,7 @@ class MqqBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MQQBrowser'))) {
+        if (!$this->_utils->checkIfContains(array('MQQBrowser'))) {
             return false;
         }
         

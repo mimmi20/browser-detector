@@ -53,22 +53,22 @@ class MobileSafari extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Safari/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'MobileSafari/')
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')
+            && !$this->_utils->checkIfStartsWith('Safari/')
+            && !$this->_utils->checkIfStartsWith('MobileSafari/')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mobile', 'Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('Mobile', 'Tablet'))) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Safari', 'iPhone', 'iPad', 'iPod'))) {
+        if (!$this->_utils->checkIfContains(array('Safari', 'iPhone', 'iPad', 'iPod'))) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('AppleWebKit', 'CFNetwork'))) {
+        if (!$this->_utils->checkIfContains(array('AppleWebKit', 'CFNetwork'))) {
             return false;
         }
         
@@ -88,7 +88,7 @@ class MobileSafari extends BrowserHandler
             'Flipboard'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

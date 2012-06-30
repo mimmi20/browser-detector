@@ -48,7 +48,7 @@ class Wwwmail extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'www4mail')) {
+        if (!$this->_utils->checkIfContains('www4mail')) {
             return false;
         }
         

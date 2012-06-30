@@ -48,7 +48,7 @@ class Cygwin extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'cygwin')) {
+        if (!$this->_utils->checkIfContains('cygwin', true)) {
             return false;
         }
         

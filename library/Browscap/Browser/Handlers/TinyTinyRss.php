@@ -46,7 +46,7 @@ class TinyTinyRss extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Tiny Tiny RSS/')) {
+        if (!$this->_utils->checkIfStartsWith('Tiny Tiny RSS/')) {
             return false;
         }
         

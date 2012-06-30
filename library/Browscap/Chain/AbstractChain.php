@@ -54,12 +54,23 @@ abstract class AbstractChain
     
     /** @var array */
     protected $_handlersToUse = null;
+    
+    /** @var mixed */
+    protected $_defaultHandler = null;
+    
+    /** @var string */
+    protected $_directory = '';
+    
+    /** @var string */
+    protected $_namespace = '';
+    
+    
 
     /**
      * @param boolean      $useHandlersFromDir
      * @param string|array $handlersToUse
      */
-    public function __construct($useHandlersFromDir = true, $handlersToUse = null)
+    public function __construct($useHandlersFromDir = true, $handlersToUse = null, $directory = null, $namespace = null)
     {
         // the utility classes
         $this->_utils = new Utils();
@@ -78,6 +89,17 @@ abstract class AbstractChain
         }
         
         $this->_handlersToUse = $handlersToUse;
+        
+        $this->_setDefaultDirectory();
+        $this->_setDefaultNamspace();
+        
+        if (null !== $directory) {
+            $this->setDirectory($directory);
+        }
+        
+        if (null !== $namespace) {
+            $this->setNamespace($namespace);
+        }
     }
 
     /**
@@ -90,13 +112,13 @@ abstract class AbstractChain
         $this->_logger = null;
     }
     
-    protected function _createChain($directory, $namespace)
+    protected function _createChain()
     {
         $chain = new \SplPriorityQueue();
         
         if ($this->_useHandlersFromDir) {
             // get all Handlers from the directory
-            $iterator = new \DirectoryIterator($directory);
+            $iterator = new \DirectoryIterator($this->_directory);
             
             foreach ($iterator as $fileinfo) {
                 if (!$fileinfo->isFile() || !$fileinfo->isReadable()) {
@@ -112,7 +134,7 @@ abstract class AbstractChain
                 }
                 
                 $className = $this->_utils->getClassNameFromFile(
-                    $filename, $namespace, true
+                    $filename, $this->_namespace, true
                 );
                 
                 try {
@@ -128,7 +150,7 @@ abstract class AbstractChain
         } else {
             foreach ($this->_handlersToUse as $filename) {
                 $className = $this->_utils->getClassNameFromFile(
-                    $filename, $namespace, true
+                    $filename, $this->_namespace, true
                 );
                 
                 try {
@@ -175,15 +197,81 @@ abstract class AbstractChain
     }
     
     /**
+     * sets the cache used to make the detection faster
+     *
+     * @param mixed $handler
+     *
+     * @return 
+     */
+    final public function setDefaultHandler($handler)
+    {
+        $this->_defaultHandler = $handler;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the actual directory where the chain is searching
+     *
+     * @param string $directory
+     *
+     * @return 
+     */
+    final public function setDirectory($directory)
+    {
+        $this->_directory = $directory;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the actual directory where the chain is searching
+     *
+     * @param string $directory
+     *
+     * @return 
+     */
+    final public function setNamespace($namespace)
+    {
+        $this->_namespace = $namespace;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the default directory where the chain is searching 
+     *
+     * @return 
+     */
+    protected function _setDefaultDirectory()
+    {
+        $this->_directory = '';
+        
+        return $this;
+    }
+    
+    /**
+     * sets the cache used to make the detection faster
+     *
+     * @return 
+     */
+    protected function _setDefaultNamspace()
+    {
+        $this->_namespace = '';
+        
+        return $this;
+    }
+    
+    /**
      * detect the user agent
      *
      * @param \SplPriorityQueue $chain
      * @param string            $userAgent The user agent
-     * @param string            $namespace
+     * @param string            $this->_namespace
      *
      * @return string
      */
-    protected function _detect(\SplPriorityQueue $chainInput, $userAgent, $namespace)
+    protected function _detect(\SplPriorityQueue $chainInput, $userAgent)
     {
         $chain = clone $chainInput;
         
@@ -211,10 +299,16 @@ abstract class AbstractChain
             }
         }
         
-        $className = $this->_utils->getClassNameFromFile(
-            'Unknown', $namespace, true
-        );
-        $handler = new $className();
+        if (null !== $this->_defaultHandler 
+            && is_object($this->_defaultHandler)
+        ) {
+            $handler = $this->_defaultHandler;
+        } else {
+            $className = $this->_utils->getClassNameFromFile(
+                'Unknown', $this->_namespace, true
+            );
+            $handler = new $className();
+        }
         $handler->setLogger($this->_logger);
         $handler->setUserAgent($userAgent);
         

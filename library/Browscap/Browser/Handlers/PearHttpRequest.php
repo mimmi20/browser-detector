@@ -46,7 +46,7 @@ class PearHttpRequest extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'HTTP_Request')) {
+        if (!$this->_utils->checkIfStartsWith('HTTP_Request')) {
             return false;
         }
         

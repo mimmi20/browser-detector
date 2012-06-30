@@ -51,18 +51,18 @@ class Chrome extends Chromium
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Chrome/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'CrMo/')
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')
+            && !$this->_utils->checkIfStartsWith('Chrome/')
+            && !$this->_utils->checkIfStartsWith('CrMo/')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'AppleWebKit')) {
+        if (!$this->_utils->checkIfContains('AppleWebKit')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Chrome', 'CrMo'))) {
+        if (!$this->_utils->checkIfContains(array('Chrome', 'CrMo'))) {
             return false;
         }
         
@@ -85,7 +85,7 @@ class Chrome extends Chromium
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

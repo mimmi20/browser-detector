@@ -48,7 +48,7 @@ class FreeBsd extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('FreeBSD', 'freebsd'))) {
+        if (!$this->_utils->checkIfContains('freebsd', true)) {
             return false;
         }
         

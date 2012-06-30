@@ -54,13 +54,13 @@ class Iceweasel extends Firefox
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/4.0')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0')
+        if (!$this->_utils->checkIfStartsWith('Mozilla/4.0')
+            && !$this->_utils->checkIfStartsWith('Mozilla/5.0')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Iceweasel', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Iceweasel', 'Gecko'))) {
             return false;
         }
         
@@ -85,7 +85,7 @@ class Iceweasel extends Firefox
             'MSIE'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

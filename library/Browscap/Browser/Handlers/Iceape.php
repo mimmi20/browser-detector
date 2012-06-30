@@ -54,11 +54,11 @@ class Iceape extends Thunderbird
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Iceape', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Iceape', 'Gecko'))) {
             return false;
         }
         
@@ -77,7 +77,7 @@ class Iceape extends Thunderbird
             'Fennec'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

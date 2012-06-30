@@ -57,7 +57,7 @@ class GeneralBot extends Unknown
             '<'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $bots)) {
+        if ($this->_utils->checkIfContains($bots)) {
             return true;
         }
         

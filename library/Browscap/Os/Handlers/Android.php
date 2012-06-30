@@ -46,7 +46,9 @@ class Android extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Android', 'Silk'))) {
+        if (!$this->_utils->checkIfContains(array('Android', 'Silk'))
+            && !$this->_utils->isMobileAsSafari()
+        ) {
             return false;
         }
         
@@ -70,6 +72,20 @@ class Android extends Linux
         }
         
         $doMatch = preg_match('/Android\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Android WildPuzzleROM v8 froyo (\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Android AndroidHouse Team (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

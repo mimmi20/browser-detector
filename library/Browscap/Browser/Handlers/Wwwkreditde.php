@@ -53,7 +53,7 @@ class Wwwkreditde extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'www.kredit.de')) {
+        if (!$this->_utils->checkIfContains('www.kredit.de')) {
             return false;
         }
         

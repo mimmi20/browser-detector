@@ -49,7 +49,7 @@ class Sagem extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Sagem') || $this->_utils->checkIfStartsWith($this->_useragent, 'SAGEM');
+        return $this->_utils->checkIfStartsWith('Sagem') || $this->_utils->checkIfStartsWith('SAGEM');
     }
     
     /**

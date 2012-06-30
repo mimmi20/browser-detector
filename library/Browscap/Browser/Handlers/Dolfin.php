@@ -48,7 +48,7 @@ class Dolfin extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Dolphin/', 'Dolfin/', 'Dolphin HD'))) {
+        if (!$this->_utils->checkIfContains(array('Dolphin/', 'Dolfin/', 'Dolphin HD'))) {
             return false;
         }
         

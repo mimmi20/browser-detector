@@ -48,7 +48,7 @@ class Winwap extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WinWAP')) {
+        if (!$this->_utils->checkIfStartsWith('WinWAP')) {
             return false;
         }
         

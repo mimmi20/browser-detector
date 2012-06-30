@@ -48,7 +48,7 @@ class Aix extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AIX'))) {
+        if (!$this->_utils->checkIfContains('AIX')) {
             return false;
         }
         

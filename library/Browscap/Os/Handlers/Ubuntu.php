@@ -46,7 +46,7 @@ class Ubuntu extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Ubuntu', 'ubuntu'))) {
+        if (!$this->_utils->checkIfContains('ubuntu', true)) {
             return false;
         }
         

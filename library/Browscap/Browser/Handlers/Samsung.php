@@ -49,12 +49,12 @@ class Samsung extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('Jasmine', 'NetFront', 'Dolfin', 'Dolphin'))) {
+        if ($this->_utils->checkIfContains(array('Jasmine', 'NetFront', 'Dolfin', 'Dolphin'))) {
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'Samsung/SGH')
-                || $this->_utils->checkIfStartsWithAnyOf($this->_useragent, array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
+        return $this->_utils->checkIfContains('Samsung/SGH')
+                || $this->_utils->checkIfStartsWith(array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
     
     /**

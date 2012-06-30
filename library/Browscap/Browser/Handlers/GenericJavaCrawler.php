@@ -46,7 +46,7 @@ class GenericJavaCrawler extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Java')) {
+        if (!$this->_utils->checkIfContains('Java')) {
             return false;
         }
         

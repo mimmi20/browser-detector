@@ -48,7 +48,7 @@ class MeeGo extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('MeeGo'))) {
+        if (!$this->_utils->checkIfContains('MeeGo')) {
             return false;
         }
         

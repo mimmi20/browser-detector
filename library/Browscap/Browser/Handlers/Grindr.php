@@ -48,7 +48,7 @@ class Grindr extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Grindr')) {
+        if (!$this->_utils->checkIfContains('Grindr')) {
             return false;
         }
         

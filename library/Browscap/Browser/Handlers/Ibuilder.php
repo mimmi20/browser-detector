@@ -48,7 +48,7 @@ class Ibuilder extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('iBuilder'))) {
+        if (!$this->_utils->checkIfContains(array('iBuilder'))) {
             return false;
         }
         

@@ -51,7 +51,7 @@ class UnisterTesting extends Unisterbot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('UnisterTesting/', 'unister-test'))) {
+        if (!$this->_utils->checkIfContains(array('UnisterTesting/', 'unister-test'))) {
             return false;
         }
         

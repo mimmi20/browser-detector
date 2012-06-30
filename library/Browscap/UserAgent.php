@@ -149,7 +149,7 @@ class UserAgent extends Core
             $engineChain->setCache($this->_cache);
         }
         
-        return $engineChain->detect($this->_cleanedAgent);
+        return $engineChain->detect($this->_agent);
     }
 
     /**
@@ -166,7 +166,7 @@ class UserAgent extends Core
             $browserChain->setCache($this->_cache);
         }
         
-        return $browserChain->detect($this->_cleanedAgent);
+        return $browserChain->detect($this->_agent);
     }
 
     /**
@@ -185,7 +185,7 @@ class UserAgent extends Core
             $osChain->setCache($this->_cache);
         }
         
-        return $osChain->detect($this->_cleanedAgent);
+        return $osChain->detect($this->_agent);
     }
 
     /**
@@ -204,7 +204,7 @@ class UserAgent extends Core
             $deviceChain->setCache($this->_cache);
         }
         
-        return $deviceChain->detect($this->_cleanedAgent);
+        return $deviceChain->detect($this->_agent);
     }
     
     /**

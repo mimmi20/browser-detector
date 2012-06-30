@@ -47,7 +47,7 @@ class Bingbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('bingbot/', 'Bing/', 'Bing for iPad/'))) {
+        if (!$this->_utils->checkIfContains(array('bingbot/', 'Bing/', 'Bing for iPad/'))) {
             return false;
         }
         

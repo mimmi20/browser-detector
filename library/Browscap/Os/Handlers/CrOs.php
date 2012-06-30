@@ -48,7 +48,7 @@ class CrOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'CrOS')) {
+        if (!$this->_utils->checkIfContains('CrOS')) {
             return false;
         }
         

@@ -48,7 +48,7 @@ class Wwwster extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'wwwster')) {
+        if (!$this->_utils->checkIfStartsWith('wwwster')) {
             return false;
         }
         

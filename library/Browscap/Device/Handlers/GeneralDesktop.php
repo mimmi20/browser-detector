@@ -46,7 +46,26 @@ class GeneralDesktop extends DeviceHandler
      */
     public function canHandle()
     {
-        return false;
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Desktop' . DS, __NAMESPACE__ . '\\Desktop');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**

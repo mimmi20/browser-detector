@@ -46,7 +46,7 @@ class Mint extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Mint', 'Linux'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Mint', 'Linux'))) {
             return false;
         }
         

@@ -148,7 +148,7 @@ abstract class Core
     {
         return substr(
             $this->_cachePrefix . 'agent_' . preg_replace(
-                '/[^a-zA-Z0-9]/', '_', $userAgent
+                '/[^a-zA-Z0-9_]/', '_', $userAgent
             ), 
             0, 
             179

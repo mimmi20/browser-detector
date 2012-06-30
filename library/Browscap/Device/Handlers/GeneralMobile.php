@@ -50,15 +50,26 @@ class GeneralMobile extends DeviceHandler
             return false;
         }
         
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if ($this->_utils->isMobileBrowser($this->_useragent)) {
             return true;
         }
         
         return false;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Mobile' . DS, __NAMESPACE__ . '\\Mobile');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**
@@ -68,7 +79,7 @@ class GeneralMobile extends DeviceHandler
      */
     public function getWeight()
     {
-        return 1;
+        return 2;
     }
     
     /**
@@ -88,7 +99,7 @@ class GeneralMobile extends DeviceHandler
      */
     public function isTablet()
     {
-        if ($this->_utils->checkIfContains($this->_useragent, 'tablet', true)) {
+        if ($this->_utils->checkIfContains('tablet', true)) {
             return true;
         }
         

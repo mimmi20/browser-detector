@@ -48,11 +48,11 @@ class Flock extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Flock'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Flock'))) {
             return false;
         }
         
@@ -67,7 +67,7 @@ class Flock extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -119,10 +119,18 @@ class Flock extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            'Webkit',
+            'Gecko'
+        );
         
-        return $handler->detect();
+        $engineChain = new \Browscap\Engine\Chain(false, $engines);
+        $engineChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $engineChain->setCache($this->_cache);
+        }
+        
+        return $engineChain->detect($this->_useragent);
     }
 }

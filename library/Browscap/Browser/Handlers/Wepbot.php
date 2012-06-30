@@ -46,7 +46,7 @@ class Wepbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Wepbot/')) {
+        if (!$this->_utils->checkIfStartsWith('Wepbot/')) {
             return false;
         }
         

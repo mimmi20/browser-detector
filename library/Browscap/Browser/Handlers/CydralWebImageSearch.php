@@ -46,7 +46,7 @@ class CydralWebImageSearch extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'CydralSpider')) {
+        if (!$this->_utils->checkIfStartsWith('CydralSpider')) {
             return false;
         }
         

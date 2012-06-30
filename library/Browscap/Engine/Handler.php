@@ -81,6 +81,7 @@ abstract class Handler implements MatcherInterface
     final public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
+        $this->_utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -95,6 +96,7 @@ abstract class Handler implements MatcherInterface
     final public function setLogger(\Zend\Log\Logger $logger = null)
     {
         $this->_logger = $logger;
+        $this->_utils->setLogger($logger);
         
         return $this;
     }

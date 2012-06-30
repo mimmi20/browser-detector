@@ -48,7 +48,7 @@ class Cpm extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('CP/M'))) {
+        if (!$this->_utils->checkIfContains('CP/M')) {
             return false;
         }
         

@@ -59,12 +59,12 @@ class Seamonkey extends Firefox
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Gecko', 'SeaMonkey'))
-            && !$this->_utils->checkIfContains($this->_useragent, 'Seamonkey')
+        if (!$this->_utils->checkIfContainsAll(array('Gecko', 'SeaMonkey'))
+            && !$this->_utils->checkIfContains('Seamonkey')
         ) {
             return false;
         }
@@ -89,7 +89,7 @@ class Seamonkey extends Firefox
             'Fennec'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

@@ -48,8 +48,8 @@ class Tasman extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/') 
-            && !$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE', 'Mac_PowerPC'))
+        if (!$this->_utils->checkIfStartsWith('Mozilla/') 
+            && !$this->_utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
         ) {
             return false;
         }
@@ -59,7 +59,7 @@ class Tasman extends EngineHandler
             'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Trident'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $noTridentEngines)) {
+        if ($this->_utils->checkIfContains($noTridentEngines)) {
             return false;
         }
         

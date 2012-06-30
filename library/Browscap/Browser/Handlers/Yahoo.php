@@ -51,12 +51,12 @@ class Yahoo extends GeneralBot
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/5.0 (YahooYSMcm')
-            || $this->_utils->checkIfStartsWith($this->_useragent, 'Scooter')
-            || $this->_utils->checkIfStartsWith($this->_useragent, 'Y!OASIS')
-            || $this->_utils->checkIfStartsWith($this->_useragent, 'YahooYSMcm')
-            || $this->_utils->checkIfStartsWith($this->_useragent, 'YRL_ODP_CRAWLER')
-            || $this->_utils->checkIfContains($this->_useragent, 'www.yahoo.com')
+        if ($this->_utils->checkIfStartsWith('Mozilla/5.0 (YahooYSMcm')
+            || $this->_utils->checkIfStartsWith('Scooter')
+            || $this->_utils->checkIfStartsWith('Y!OASIS')
+            || $this->_utils->checkIfStartsWith('YahooYSMcm')
+            || $this->_utils->checkIfStartsWith('YRL_ODP_CRAWLER')
+            || $this->_utils->checkIfContains('www.yahoo.com')
         ) {
             return true;
         }

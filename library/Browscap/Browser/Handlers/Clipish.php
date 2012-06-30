@@ -46,7 +46,7 @@ class Clipish extends CfNetwork
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Clipish')) {
+        if (!$this->_utils->checkIfStartsWith('Clipish')) {
             return false;
         }
         

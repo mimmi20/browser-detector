@@ -48,7 +48,7 @@ class Worldlingo extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WebIndexer')) {
+        if (!$this->_utils->checkIfStartsWith('WebIndexer')) {
             return false;
         }
         

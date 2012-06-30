@@ -51,11 +51,19 @@ class Argclrint extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('ArgClrInt'))) {
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContainsAll(array('ArgClrInt'))) {
             return false;
         }
         
@@ -82,7 +90,7 @@ class Argclrint extends BrowserHandler
             'MSIE'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

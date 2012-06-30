@@ -46,7 +46,7 @@ class UniversalFeedParser extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'UniversalFeedParser')) {
+        if (!$this->_utils->checkIfStartsWith('UniversalFeedParser')) {
             return false;
         }
         

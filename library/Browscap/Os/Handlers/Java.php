@@ -48,7 +48,7 @@ class Java extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Java', 'J2ME/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0'))) {
+        if (!$this->_utils->checkIfContains(array('Java', 'J2ME/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform'))) {
             return false;
         }
         
@@ -59,7 +59,7 @@ class Java extends OsHandler
             'Series 60'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
+        if ($this->_utils->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
         

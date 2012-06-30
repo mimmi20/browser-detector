@@ -48,7 +48,7 @@ class Mechanize extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Mechanize')) {
+        if (!$this->_utils->checkIfContains('Mechanize')) {
             return false;
         }
         

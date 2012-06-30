@@ -49,7 +49,7 @@ class Kyocera extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'kyocera') || $this->_utils->checkIfStartsWith($this->_useragent, 'QC-') || $this->_utils->checkIfStartsWith($this->_useragent, 'KWC-');
+        return $this->_utils->checkIfStartsWith('kyocera') || $this->_utils->checkIfStartsWith('QC-') || $this->_utils->checkIfStartsWith('KWC-');
     }
     
     /**

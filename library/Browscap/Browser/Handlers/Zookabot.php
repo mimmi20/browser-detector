@@ -46,7 +46,7 @@ class Zookabot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Zookabot')) {
+        if (!$this->_utils->checkIfStartsWith('Zookabot')) {
             return false;
         }
         

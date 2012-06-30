@@ -48,11 +48,11 @@ class Midori extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith($this->_useragent, 'Midori')) {
+        if ($this->_utils->checkIfStartsWith('Midori')) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'Midori')) {
+        if ($this->_utils->checkIfContains('Midori')) {
             return true;
         }
         

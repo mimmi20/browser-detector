@@ -30,7 +30,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class GoogleEarth extends BrowserHandler
+class GoogleEarth extends Google
 {
     /**
      * @var string the detected browser
@@ -53,11 +53,11 @@ class GoogleEarth extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('AppleWebKit', 'Chrome', 'Google Earth'))) {
+        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Chrome', 'Google Earth'))) {
             return false;
         }
         
@@ -72,7 +72,7 @@ class GoogleEarth extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -103,7 +103,7 @@ class GoogleEarth extends BrowserHandler
      */
     public function getWeight()
     {
-        return 6;
+        return parent::getWeight() + 1;
     }
     
     /**

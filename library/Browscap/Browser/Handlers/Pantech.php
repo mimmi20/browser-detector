@@ -49,7 +49,7 @@ class Pantech extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Pantech') || $this->_utils->checkIfStartsWith($this->_useragent, 'PANTECH') || $this->_utils->checkIfStartsWith($this->_useragent, 'PT-') || $this->_utils->checkIfStartsWith($this->_useragent, 'PG-');
+        return $this->_utils->checkIfStartsWith('Pantech') || $this->_utils->checkIfStartsWith('PANTECH') || $this->_utils->checkIfStartsWith('PT-') || $this->_utils->checkIfStartsWith('PG-');
     }
     
     /**

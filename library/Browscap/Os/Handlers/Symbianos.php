@@ -48,7 +48,7 @@ class Symbianos extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60'))) {
+        if (!$this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3'))) {
             return false;
         }
         

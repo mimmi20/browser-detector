@@ -46,7 +46,7 @@ class Nutch extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Nutch', 'CazoodleBot', 'LOOQ'))) {
+        if (!$this->_utils->checkIfContains(array('Nutch', 'CazoodleBot', 'LOOQ'))) {
             return false;
         }
         

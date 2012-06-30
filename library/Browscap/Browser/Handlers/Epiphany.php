@@ -48,13 +48,13 @@ class Epiphany extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')
-            && !$this->_utils->checkIfStartsWith($this->_useragent, 'Safari')
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')
+            && !$this->_utils->checkIfStartsWith('Safari')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Epiphany', 'Safari', 'AppleWebKit', 'CFNetwork'))) {
+        if (!$this->_utils->checkIfContains('Epiphany')) {
             return false;
         }
         
@@ -81,7 +81,7 @@ class Epiphany extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -95,14 +95,14 @@ class Epiphany extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Epiphany\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Epiphany\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

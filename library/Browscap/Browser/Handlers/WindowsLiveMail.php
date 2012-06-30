@@ -53,7 +53,7 @@ class WindowsLiveMail extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Outlook-Express/')) {
+        if (!$this->_utils->checkIfStartsWith('Outlook-Express/')) {
             return false;
         }
         

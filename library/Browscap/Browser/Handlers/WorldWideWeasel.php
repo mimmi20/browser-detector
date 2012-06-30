@@ -46,7 +46,7 @@ class WorldWideWeasel extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WWWeasel Robot v')) {
+        if (!$this->_utils->checkIfStartsWith('WWWeasel Robot v')) {
             return false;
         }
         

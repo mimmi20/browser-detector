@@ -46,7 +46,7 @@ class Mercury extends CfNetwork
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mercury')) {
+        if (!$this->_utils->checkIfStartsWith('Mercury')) {
             return false;
         }
         

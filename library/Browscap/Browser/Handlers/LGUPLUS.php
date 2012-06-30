@@ -48,7 +48,7 @@ class LGUPLUS extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('LGUPLUS', 'lgtelecom'));
+        return $this->_utils->checkIfContains(array('LGUPLUS', 'lgtelecom'));
     }
     
     /**

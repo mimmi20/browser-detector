@@ -53,7 +53,7 @@ class Wwwversicherungende extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'www.versicherungen.de')) {
+        if (!$this->_utils->checkIfContains('www.versicherungen.de')) {
             return false;
         }
         

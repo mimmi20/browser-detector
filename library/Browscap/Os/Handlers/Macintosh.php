@@ -48,11 +48,11 @@ class Macintosh extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Macintosh', 'Mac_PowerPC'))) {
+        if (!$this->_utils->checkIfContains(array('Macintosh', 'Mac_PowerPC'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'Mac OS X')) {
+        if ($this->_utils->checkIfContains('Mac OS X')) {
             return false;
         }
         

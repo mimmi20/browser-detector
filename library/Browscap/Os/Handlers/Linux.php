@@ -48,7 +48,7 @@ class Linux extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Linux', 'linux', 'X11'))) {
+        if (!$this->_utils->checkIfContains(array('Linux', 'linux', 'X11'))) {
             return false;
         }
         
@@ -64,13 +64,16 @@ class Linux extends OsHandler
             'Fedora',
             'redhat',
             'Slackware',
+            'NETTV',
+            'HbbTV',
+            'hpwOS',
             // other OS which are using X11
             'BSD',
             'SunOS',
             'HP-UX'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnLinux)) {
             return false;
         }
         

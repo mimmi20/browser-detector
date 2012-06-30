@@ -49,11 +49,11 @@ class SonyEricsson extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('OpenWave'))) {
+        if ($this->_utils->checkIfContains(array('OpenWave'))) {
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return $this->_utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
     }
     
     /**

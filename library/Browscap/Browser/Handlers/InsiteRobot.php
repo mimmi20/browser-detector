@@ -46,7 +46,7 @@ class InsiteRobot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'InsiteRobot')) {
+        if (!$this->_utils->checkIfContains('InsiteRobot')) {
             return false;
         }
         

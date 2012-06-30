@@ -49,7 +49,7 @@ class Philips extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Philips') || $this->_utils->checkIfStartsWith($this->_useragent, 'PHILIPS');
+        return $this->_utils->checkIfStartsWith('Philips') || $this->_utils->checkIfStartsWith('PHILIPS');
     }
     
     /**

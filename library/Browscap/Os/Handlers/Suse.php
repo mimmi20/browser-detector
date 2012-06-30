@@ -46,7 +46,7 @@ class Suse extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('SUSE'))) {
+        if (!$this->_utils->checkIfContains('suse', true)) {
             return false;
         }
         

@@ -48,7 +48,7 @@ class Boxee extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'Boxee');
+        return $this->_utils->checkIfContains('Boxee');
     }
     
     /**

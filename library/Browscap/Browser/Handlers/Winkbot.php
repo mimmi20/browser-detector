@@ -46,7 +46,7 @@ class Winkbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WinkBot')) {
+        if (!$this->_utils->checkIfStartsWith('WinkBot')) {
             return false;
         }
         

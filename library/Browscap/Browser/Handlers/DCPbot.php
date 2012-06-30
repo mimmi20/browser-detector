@@ -46,7 +46,7 @@ class DCPbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'DCPbot/')) {
+        if (!$this->_utils->checkIfStartsWith('DCPbot/')) {
             return false;
         }
         

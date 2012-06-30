@@ -46,7 +46,7 @@ class SunOs extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('SunOS'))) {
+        if (!$this->_utils->checkIfContains('sunos', true)) {
             return false;
         }
         

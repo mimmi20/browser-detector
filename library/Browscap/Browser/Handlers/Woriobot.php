@@ -46,7 +46,7 @@ class Woriobot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'woriobot')) {
+        if (!$this->_utils->checkIfStartsWith('woriobot')) {
             return false;
         }
         

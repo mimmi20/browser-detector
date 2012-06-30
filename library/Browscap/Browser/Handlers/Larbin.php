@@ -46,7 +46,7 @@ class Larbin extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('binlar', 'larbin'))) {
+        if (!$this->_utils->checkIfContains(array('binlar', 'larbin'))) {
             return false;
         }
         

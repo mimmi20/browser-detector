@@ -56,7 +56,7 @@ class WindowsPhoneSearch extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Windows Phone Search')) {
+        if (!$this->_utils->checkIfStartsWith('Windows Phone Search')) {
             return false;
         }
         

@@ -49,7 +49,7 @@ class Siemens extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'SIE-');
+        return $this->_utils->checkIfStartsWith('SIE-');
     }
     
     /**

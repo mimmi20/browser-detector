@@ -48,7 +48,7 @@ class Maven extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Maven/')) {
+        if (!$this->_utils->checkIfContains('Maven/')) {
             return false;
         }
         

@@ -46,7 +46,7 @@ class JoliOs extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Joli OS'))) {
+        if (!$this->_utils->checkIfContains('Joli OS')) {
             return false;
         }
         

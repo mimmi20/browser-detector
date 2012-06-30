@@ -46,7 +46,7 @@ class ZenwalkGnu extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Zenwalk GNU'))) {
+        if (!$this->_utils->checkIfContains('Zenwalk GNU')) {
             return false;
         }
         

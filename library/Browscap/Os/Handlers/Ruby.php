@@ -48,7 +48,7 @@ class Ruby extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Ruby'))) {
+        if (!$this->_utils->checkIfContains('ruby', true)) {
             return false;
         }
         
@@ -59,7 +59,7 @@ class Ruby extends OsHandler
             'Series 60'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAWindows)) {
+        if ($this->_utils->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
         

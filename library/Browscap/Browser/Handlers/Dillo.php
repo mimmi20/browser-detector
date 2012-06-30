@@ -48,7 +48,7 @@ class Dillo extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Dillo/')) {
+        if (!$this->_utils->checkIfContains('Dillo/')) {
             return false;
         }
         

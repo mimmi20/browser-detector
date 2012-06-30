@@ -50,11 +50,11 @@ class NetNewsWire extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('NetNewsWire'))) {
+        if (!$this->_utils->checkIfContainsAll(array('NetNewsWire'))) {
             return false;
         }
         
@@ -81,7 +81,7 @@ class NetNewsWire extends GeneralBot
             'MSIE'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

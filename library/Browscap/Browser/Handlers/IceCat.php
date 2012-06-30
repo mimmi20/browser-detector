@@ -54,11 +54,11 @@ class IceCat extends Thunderbird
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('IceCat', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll(array('IceCat', 'Gecko'))) {
             return false;
         }
         
@@ -77,7 +77,7 @@ class IceCat extends Thunderbird
             'Fennec'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

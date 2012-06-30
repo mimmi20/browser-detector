@@ -53,7 +53,7 @@ class Windows extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->isWindows($this->_useragent)) {
+        if (!$this->_utils->isWindows()) {
             return false;
         }
         
@@ -69,7 +69,7 @@ class Windows extends OsHandler
      */
     protected function _detectVersion()
     {
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('win9x/NT 4.90', 'Win 9x 4.90'/*, 'Windows ME'*/))) {
+        if ($this->_utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90'/*, 'Windows ME'*/))) {
             $this->_version = 'ME';
             return;
         }
@@ -96,6 +96,7 @@ class Windows extends OsHandler
                 case '5.01':
                     $version = '2000';
                     break;
+                case '4.1':
                 case '4.0':
                     $version = 'NT';
                     break;
@@ -131,6 +132,9 @@ class Windows extends OsHandler
                 case 'XP':
                     $version = 'XP';
                     break;
+                case 'ME':
+                    $version = 'ME';
+                    break;
                 case '2000':
                 case '5.0':
                 case '5.01':
@@ -145,6 +149,7 @@ class Windows extends OsHandler
                 case '98':
                     $version = '98';
                     break;
+                case '4.1':
                 case '4.0':
                     $version = 'NT';
                     break;
@@ -160,7 +165,7 @@ class Windows extends OsHandler
         $version = '';
         
         foreach ($this->_windows as $winVersion) {
-            if ($this->_utils->checkIfContains($this->_useragent, $winVersion)) {
+            if ($this->_utils->checkIfContains($winVersion)) {
                 $version = substr($winVersion, 3);
                 break;
             }

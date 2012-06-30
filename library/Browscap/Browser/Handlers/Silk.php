@@ -53,7 +53,7 @@ class Silk extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Silk')) {
+        if (!$this->_utils->checkIfContains('Silk')) {
             return false;
         }
         

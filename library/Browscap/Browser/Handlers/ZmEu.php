@@ -46,7 +46,7 @@ class ZmEu extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'ZmEu')) {
+        if (!$this->_utils->checkIfContains('ZmEu')) {
             return false;
         }
         

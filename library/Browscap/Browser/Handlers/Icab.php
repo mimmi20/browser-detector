@@ -56,7 +56,7 @@ class Icab extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'iCab')) {
+        if (!$this->_utils->checkIfContains('iCab')) {
             return false;
         }
         
@@ -76,7 +76,7 @@ class Icab extends BrowserHandler
             'Firefox'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

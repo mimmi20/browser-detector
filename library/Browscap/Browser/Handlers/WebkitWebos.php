@@ -50,7 +50,7 @@ class WebkitWebos extends MobileSafari
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('webOS', 'webOSBrowser'))) {
+        if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser'))) {
             return false;
         }
         

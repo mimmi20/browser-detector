@@ -49,7 +49,7 @@ class Kddi extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains($this->_useragent, 'KDDI');
+        return $this->_utils->checkIfContains('KDDI');
     }
     
     /**

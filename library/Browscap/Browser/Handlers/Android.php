@@ -52,14 +52,14 @@ class Android extends MobileSafari
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Android')
+        if (!$this->_utils->checkIfContains('Android')
             && !parent::canHandle($this->_useragent)
             && !$this->_utils->isMobileAsSafari($this->_useragent)
         ) {
             return false;
         }
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec', 'iPad', 'iPhone', 'Dalvik'))) {
+        if ($this->_utils->checkIfContains(array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec', 'iPad', 'iPhone', 'Dalvik', 'Chrome', 'RIM Tablet'))) {
             return false;
         }
         

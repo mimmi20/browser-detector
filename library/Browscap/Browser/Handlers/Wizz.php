@@ -48,7 +48,7 @@ class Wizz extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Wizz RSS News Reader')) {
+        if (!$this->_utils->checkIfContains('Wizz RSS News Reader')) {
             return false;
         }
         

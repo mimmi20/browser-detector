@@ -61,11 +61,11 @@ class Thunderbird extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Thunderbird', 'Gecko'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Thunderbird', 'Gecko'))) {
             return false;
         }
         
@@ -85,7 +85,7 @@ class Thunderbird extends BrowserHandler
             'Firefox'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

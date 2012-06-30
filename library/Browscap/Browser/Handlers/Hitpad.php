@@ -48,7 +48,7 @@ class Hitpad extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Hitpad')) {
+        if (!$this->_utils->checkIfStartsWith('Hitpad')) {
             return false;
         }
         

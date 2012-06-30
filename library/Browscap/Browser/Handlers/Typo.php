@@ -48,7 +48,7 @@ class Typo extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Typo3', 'TYPO3'))) {
+        if (!$this->_utils->checkIfContains(array('Typo3', 'TYPO3'))) {
             return false;
         }
         

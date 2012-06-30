@@ -46,7 +46,7 @@ class WordPress extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'WordPress')) {
+        if (!$this->_utils->checkIfContains('WordPress')) {
             return false;
         }
         

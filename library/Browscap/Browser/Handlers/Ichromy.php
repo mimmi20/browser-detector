@@ -47,13 +47,13 @@ class Ichromy extends MobileSafari
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'iChromy')
+        if (!$this->_utils->checkIfStartsWith('iChromy')
             && !parent::canHandle($this->_useragent)
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'iChromy')) {
+        if (!$this->_utils->checkIfContains('iChromy')) {
             return false;
         }
         

@@ -48,7 +48,7 @@ class WwwBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WWW_Browser')) {
+        if (!$this->_utils->checkIfStartsWith('WWW_Browser')) {
             return false;
         }
         

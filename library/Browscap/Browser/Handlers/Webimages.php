@@ -48,7 +48,7 @@ class Webimages extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'WebImages')) {
+        if (!$this->_utils->checkIfStartsWith('WebImages')) {
             $this->_version = false;
             return;
         }

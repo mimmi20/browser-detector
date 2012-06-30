@@ -48,7 +48,7 @@ class Brew extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('BREW'))) {
+        if (!$this->_utils->checkIfContains('BREW')) {
             return false;
         }
         

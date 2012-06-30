@@ -46,7 +46,7 @@ class EventGuruBot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'EventGuruBot/')) {
+        if (!$this->_utils->checkIfStartsWith('EventGuruBot/')) {
             return false;
         }
         

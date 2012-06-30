@@ -50,7 +50,7 @@ class Netvibes extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Netvibes')) {
+        if (!$this->_utils->checkIfContains('Netvibes')) {
             return false;
         }
         

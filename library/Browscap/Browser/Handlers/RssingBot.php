@@ -46,7 +46,7 @@ class RssingBot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'RSSingBot')) {
+        if (!$this->_utils->checkIfStartsWith('RSSingBot')) {
             return false;
         }
         
@@ -61,7 +61,7 @@ class RssingBot extends GeneralBot
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

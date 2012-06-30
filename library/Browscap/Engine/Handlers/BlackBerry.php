@@ -48,7 +48,7 @@ class BlackBerry extends EngineHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'BlackBerry')) {
+        if (!$this->_utils->checkIfContains('BlackBerry')) {
             return false;
         }
         
@@ -57,7 +57,7 @@ class BlackBerry extends EngineHandler
             'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Trident'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $noBlackBerryEngines)) {
+        if ($this->_utils->checkIfContains($noBlackBerryEngines)) {
             return false;
         }
         

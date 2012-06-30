@@ -46,7 +46,7 @@ class Debian extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('Debian'))) {
+        if (!$this->_utils->checkIfContains('debian', true)) {
             return false;
         }
         

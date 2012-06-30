@@ -53,7 +53,7 @@ class OperaMini extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Opera Mini')) {
+        if (!$this->_utils->checkIfContains('Opera Mini')) {
             return false;
         }
         
@@ -68,6 +68,13 @@ class OperaMini extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Opera Mini\/(\d+\.\d+)\./', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Opera Mini\/(\d+\.\d+)\//', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -46,11 +46,11 @@ class TasapImageRobot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('TasapImageRobot/'))) {
+        if (!$this->_utils->checkIfContains(array('TasapImageRobot/'))) {
             return false;
         }
         

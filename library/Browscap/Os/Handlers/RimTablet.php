@@ -48,7 +48,7 @@ class RimTablet extends RimOs
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('RIM Tablet'))) {
+        if (!$this->_utils->checkIfContainsAll(array('RIM Tablet'))) {
             return false;
         }
         
@@ -59,7 +59,7 @@ class RimTablet extends RimOs
             'Ubuntu'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnLinux)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnLinux)) {
             return false;
         }
         

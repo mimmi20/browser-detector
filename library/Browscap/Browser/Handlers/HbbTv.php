@@ -49,7 +49,7 @@ class HbbTv extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContains($this->_useragent, 'HbbTV')) {
+        if ($this->_utils->checkIfContains('HbbTV')) {
             return true;
         }
         

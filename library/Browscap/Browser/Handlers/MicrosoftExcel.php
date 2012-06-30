@@ -55,7 +55,7 @@ class MicrosoftExcel extends MicrosoftOffice
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Excel')) {
+        if (!$this->_utils->checkIfContains('Excel')) {
             return false;
         }
         
@@ -79,7 +79,7 @@ class MicrosoftExcel extends MicrosoftOffice
             'WebTV'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

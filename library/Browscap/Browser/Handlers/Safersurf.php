@@ -46,11 +46,11 @@ class Safersurf extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Safersurf/'))) {
+        if (!$this->_utils->checkIfContains(array('Safersurf/'))) {
             return false;
         }
         

@@ -22,8 +22,44 @@ namespace Browscap\Helper;
  * WURFL user agent hander utilities
  * @package    WURFL
  */
-class Utils
+final class Utils
 {
+    /**
+     * @var string the user agent to handle
+     */
+    private $_useragent = '';
+    
+    /**
+     * @var \Zend\Log\Logger
+     */
+    private $_logger = null;
+    
+    /**
+     * sets the logger used when errors occur
+     *
+     * @param \Zend\Log\Logger $logger
+     *
+     * @return 
+     */
+    final public function setLogger(\Zend\Log\Logger $logger = null)
+    {
+        $this->_logger = $logger;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the user agent to be handled
+     *
+     * @return void
+     */
+    final public function setUserAgent($userAgent)
+    {
+        $this->_useragent = $userAgent;
+        
+        return $this;
+    }
+    
     /**
      * @var array Collection of mobile browser keywords
      */
@@ -42,6 +78,7 @@ class Utils
         'fennec',
         'firefox or ie',
         'foma',
+        'gingerbread',
         'htc',
         'ipad',
         'iphone',
@@ -68,14 +105,15 @@ class Utils
         'phone',
         'pocket pc',
         'pocketpc',
-        'ppc',
         'rim tablet',
         'series40',
         'series 60',
+        'silk',
         'sony',
         'symbian',
         'symbianos',
         'symbos',
+        'touchpad',
         'up.browser',
         'up.link',
         'wap2',
@@ -83,9 +121,7 @@ class Utils
         'windows ce',
         'windows mobile',
         'windows phone os',
-        'wireless',
-        '160x160',
-        '480x640'
+        'wireless'
     );
     
     private $_bots = array(
@@ -143,9 +179,9 @@ class Utils
      * @param string $userAgent
      * @return bool
      */
-    public function isMobileBrowser($userAgent)
+    public function isMobileBrowser()
     {
-        if ($this->checkIfContainsAnyOf($userAgent, $this->_mobileBrowsers, true)) {
+        if ($this->checkIfContains($this->_mobileBrowsers, true)) {
             return true;
         }
         
@@ -157,14 +193,14 @@ class Utils
      * @param string $userAgent
      * @return bool
      */
-    public function isSpamOrCrawler($userAgent)
+    public function isSpamOrCrawler()
     {
-        if ($this->checkIfContainsAnyOf($userAgent, $this->_bots, true)) {
+        if ($this->checkIfContains($this->_bots, true)) {
             return true;
         }
         
-        if ($this->checkIfContains($userAgent, 'search', true)
-            && !$this->checkIfContains($userAgent, 'searchtoolbar', true)
+        if ($this->checkIfContains('search', true)
+            && !$this->checkIfContains('searchtoolbar', true)
         ) {
             return true;
         }
@@ -177,39 +213,39 @@ class Utils
      * @param string $userAgent
      * @return bool
      */
-    public function isFakeBrowser($userAgent)
+    public function isFakeBrowser()
     {
-        if ($this->checkIfContainsAnyOf($userAgent, array('internet explorer', 'blah'), true)) {
+        if ($this->checkIfContains(array('internet explorer', 'blah'), true)) {
             return true;
         }
         
-        if ($this->checkIfStartsWithAnyOf($userAgent, array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
+        if ($this->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
         
-        if (!$this->checkIfStartsWith($userAgent, 'Mozilla/') // regular IE
-            && !$this->checkIfStartsWith($userAgent, 'Outlook-Express/') // Windows Live Mail
-            && $this->checkIfContains($userAgent, 'MSIE')
+        if (!$this->checkIfStartsWith('Mozilla/') // regular IE
+            && !$this->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
+            && $this->checkIfContains('MSIE')
         ) {
             return true;
         }
         
-        if ($this->checkIfContains($userAgent, 'Gecko') 
-            && !$this->checkIfContains($userAgent, 'like Gecko') 
-            && $this->checkIfContainsAnyOf($userAgent, array('opera', 'chrome', 'safari', 'internet explorer'), true)
+        if ($this->checkIfContains('Gecko') 
+            && !$this->checkIfContains('like Gecko') 
+            && $this->checkIfContains(array('opera', 'chrome', 'safari', 'internet explorer'), true)
         ) {
             return true;
         }
         
-        if ($this->checkIfContainsAnyOf($userAgent, array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome'), true)) {
+        if ($this->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome'), true)) {
             return true;
         }
         
-        if ($this->isFakeWindows($userAgent)) {
+        if ($this->isFakeWindows()) {
             return true;
         }
         
-        $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             if ($matches[2]) {
@@ -224,15 +260,15 @@ class Utils
         return false;
     }
     
-    public function isSafari($userAgent)
+    public function isSafari()
     {
-        if (!$this->checkIfStartsWith($userAgent, 'Mozilla/')
-            && !$this->checkIfStartsWith($userAgent, 'Safari')
+        if (!$this->checkIfStartsWith('Mozilla/')
+            && !$this->checkIfStartsWith('Safari')
         ) {
             return false;
         }
         
-        if (!$this->checkIfContainsAnyOf($userAgent, array('Safari', 'AppleWebKit', 'CFNetwork'))) {
+        if (!$this->checkIfContains(array('Safari', 'AppleWebKit', 'CFNetwork'))) {
             return false;
         }
         
@@ -268,38 +304,39 @@ class Utils
             'Mac; Mac OS '
         );
         
-        if ($this->checkIfContainsAnyOf($userAgent, $isNotReallyAnSafari)) {
+        if ($this->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
         return true;
     }
     
-    public function isMobileAsSafari($userAgent)
+    public function isMobileAsSafari()
     {
-        if (!$this->isSafari($userAgent)) {
+        if (!$this->isSafari()) {
             return false;
         }
         
-        if (!$this->isMobileBrowser($userAgent)) {
+        if (!$this->isMobileBrowser()) {
             return false;
         }
         
         return true;
     }
     
-    public function isWindows($userAgent)
+    public function isWindows()
     {
         $windows = array(
             'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
             'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
-            'windows 3.1', 'win9x/nt 4.90', 'windows'
+            'windows 3.1', 'win9x/nt 4.90', 'windows xp', 'windows me', 
+            'windows'
         );
         
         $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
         
-        if (!$this->checkIfContainsAnyOf($userAgent, $windows, true)
-            && !$this->checkIfContainsAnyOf($userAgent, array('trident', 'microsoft', 'outlook', 'msoffice', 'ms-office'), true)
+        if (!$this->checkIfContains($windows, true)
+            && !$this->checkIfContains(array('trident', 'microsoft', 'outlook', 'msoffice', 'ms-office'), true)
         ) {
             return false;
         }
@@ -312,9 +349,9 @@ class Utils
             'Mobi'
         );
         
-        if ($this->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)
-            || $this->isFakeWindows($userAgent)
-            || $this->isMobileWindows($userAgent)
+        if ($this->checkIfContains($isNotReallyAWindows)
+            || $this->isFakeWindows()
+            || $this->isMobileWindows()
         ) {
             return false;
         }
@@ -322,16 +359,16 @@ class Utils
         return true;
     }
     
-    public function isFakeWindows($userAgent)
+    public function isFakeWindows()
     {
-        $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) (\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) (\d+\.\d+)/', $this->_useragent, $matches);
         if ($doMatch) {
             return true;
         }
         
         $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
         
-        $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $userAgent, $matches);
+        $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $this->_useragent, $matches);
         if ($doMatch) {
             if (in_array($matches[1], $ntVersions)) {
                 return false;
@@ -343,14 +380,14 @@ class Utils
         return false;
     }
     
-    public function isMobileWindows($userAgent)
+    public function isMobileWindows()
     {
         $mobileWindows = array(
             'Windows CE', 'Windows Phone OS', 'Windows Mobile', 
             'Microsoft Windows; PPC', 'IEMobile'
         );
         
-        if (!$this->checkIfContainsAnyOf($userAgent, $mobileWindows)) {
+        if (!$this->checkIfContains($mobileWindows)) {
             return false;
         }
         
@@ -361,7 +398,7 @@ class Utils
             'Mac OS X',
         );
         
-        if ($this->checkIfContainsAnyOf($userAgent, $isNotReallyAWindows)) {
+        if ($this->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
         
@@ -374,30 +411,27 @@ class Utils
      * @param string $needle Needle
      * @return bool
      */
-    public function checkIfContains($haystack, $needle, $ci = false)
+    public function checkIfContains($needle, $ci = false)
     {
-        if ($ci) {
-            return stripos($haystack, $needle) !== false;
-        }
-        
-        return strpos($haystack, $needle) !== false;
-    }
-    
-    /**
-     * Returns true if $haystack contains any of the(string)needles in $needles
-     * @param string $haystack Haystack
-     * @param array $needles Array of(string)needles
-     * @return bool
-     */
-    public function checkIfContainsAnyOf($haystack, $needles, $ci = false)
-    {
-        foreach ($needles as $needle) {
-            if ($this->checkIfContains($haystack, $needle, $ci)) {
-                return true;
+        if (is_array($needle)) {
+            foreach ($needle as $singleneedle) {
+                if ($this->checkIfContains($singleneedle, $ci)) {
+                    return true;
+                }
             }
+            
+            return false;
         }
         
-        return false;
+        if (!is_string($needle)) {
+            return false;
+        }
+        
+        if ($ci) {
+            return stripos($this->_useragent, $needle) !== false;
+        }
+        
+        return strpos($this->_useragent, $needle) !== false;
     }
     
     /**
@@ -406,10 +440,10 @@ class Utils
      * @param array $needles Array of(string)needles
      * @return bool
      */
-    public function checkIfContainsAll($haystack, array $needles = array(), $ci = false)
+    public function checkIfContainsAll(array $needles = array(), $ci = false)
     {
         foreach ($needles as $needle) {
-            if (!$this->checkIfContains($haystack, $needle, $ci)) {
+            if (!$this->checkIfContains($needle, $ci)) {
                 return false;
             }
         }
@@ -423,32 +457,27 @@ class Utils
      * @param string $needle Needle
      * @return bool
      */
-    public function checkIfStartsWith($haystack, $needle, $ci = false) 
+    public function checkIfStartsWith($needle, $ci = false) 
     {
-        if ($ci) {
-            return stripos($haystack, $needle) === 0;
-        }
-        
-        return strpos($haystack, $needle) === 0;
-    }
-    
-    /**
-     * Returns true if $haystack starts with any of the $needles
-     * @param string $haystack Haystack
-     * @param array $needles Array of(string)needles
-     * @return bool
-     */
-    public function checkIfStartsWithAnyOf($haystack, array $needles = array(), $ci = false) 
-    {
-        if (is_array($needles)) {
-            foreach ($needles as $needle) {
-                if ($this->checkIfStartsWith($haystack, $needle, $ci)) {
+        if (is_array($needle)) {
+            foreach ($needle as $singleneedle) {
+                if ($this->checkIfStartsWith($singleneedle, $ci)) {
                     return true;
                 }
             }
+            
+            return false;
         }
         
-        return false;
+        if (!is_string($needle)) {
+            return false;
+        }
+        
+        if ($ci) {
+            return stripos($this->_useragent, $needle) === 0;
+        }
+        
+        return strpos($this->_useragent, $needle) === 0;
     }
     
     public function getClassNameFromFile($filename, $namespace = __NAMESPACE__, $createFullName = true)
@@ -459,7 +488,7 @@ class Utils
             return $filename;
         }
         
-        return '\\' . $namespace . '\\Handlers\\' . $filename;
+        return '\\' . $namespace . '\\' . $filename;
     }
     
     public function getClassNameFromDetected($detected, $namespace = __NAMESPACE__)

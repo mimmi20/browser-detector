@@ -42,7 +42,7 @@ class Msnbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('msnbot/'))) {
+        if (!$this->_utils->checkIfContains(array('msnbot/'))) {
             return false;
         }
         

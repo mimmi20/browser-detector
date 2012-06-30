@@ -49,7 +49,7 @@ class Motorola extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContainsAnyOf($this->_useragent, array('Mot-', 'MOT-', 'Motorola', 'MIB'));
+        return $this->_utils->checkIfContains(array('Mot-', 'MOT-', 'Motorola', 'MIB'));
     }
     
     /**

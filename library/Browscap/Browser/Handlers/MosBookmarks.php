@@ -46,7 +46,7 @@ class MosBookmarks extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MOSBookmarks')) {
+        if (!$this->_utils->checkIfContains('MOSBookmarks')) {
             return false;
         }
         

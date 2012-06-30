@@ -42,7 +42,7 @@ class Python extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Python', 'python'))) {
+        if (!$this->_utils->checkIfContains(array('Python', 'python'))) {
             return false;
         }
         

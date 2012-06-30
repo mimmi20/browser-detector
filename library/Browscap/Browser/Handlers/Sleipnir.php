@@ -48,11 +48,11 @@ class Sleipnir extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Sleipnir'))) {
+        if (!$this->_utils->checkIfContains(array('Sleipnir'))) {
             return false;
         }
         
@@ -70,7 +70,7 @@ class Sleipnir extends BrowserHandler
             'OmniWeb'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

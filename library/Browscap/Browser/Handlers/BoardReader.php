@@ -48,7 +48,7 @@ class BoardReader extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'BoardReader/')) {
+        if (!$this->_utils->checkIfStartsWith('BoardReader/')) {
             return false;
         }
         
@@ -63,7 +63,7 @@ class BoardReader extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

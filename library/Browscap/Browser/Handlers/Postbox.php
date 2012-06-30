@@ -35,7 +35,7 @@ class Postbox extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Postbox';
+    protected $_browser = 'Postbox App';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,7 +48,7 @@ class Postbox extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Postbox/')) {
+        if (!$this->_utils->checkIfContains('Postbox/')) {
             return false;
         }
         
@@ -100,10 +100,18 @@ class Postbox extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            'Webkit',
+            'Gecko'
+        );
         
-        return $handler->detect();
+        $engineChain = new \Browscap\Engine\Chain(false, $engines);
+        $engineChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $engineChain->setCache($this->_cache);
+        }
+        
+        return $engineChain->detect($this->_useragent);
     }
 }

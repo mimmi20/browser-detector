@@ -49,7 +49,7 @@ class Nec extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'NEC-') || $this->_utils->checkIfStartsWith($this->_useragent, 'KGT');
+        return $this->_utils->checkIfStartsWith('NEC-') || $this->_utils->checkIfStartsWith('KGT');
     }
     
     /**

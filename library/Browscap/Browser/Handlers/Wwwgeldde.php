@@ -53,7 +53,7 @@ class Wwwgeldde extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'www.geld.de')) {
+        if (!$this->_utils->checkIfContains('www.geld.de')) {
             return false;
         }
         

@@ -48,7 +48,7 @@ class Ucweb extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('UCWEB', 'UC Browser'))) {
+        if (!$this->_utils->checkIfContains(array('UCWEB', 'UC Browser'))) {
             return false;
         }
         

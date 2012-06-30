@@ -33,7 +33,7 @@ class Flipboard extends CfNetwork
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Flipboard';
+    protected $_browser = 'Flipboard App';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -46,7 +46,7 @@ class Flipboard extends CfNetwork
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Flipboard')) {
+        if (!$this->_utils->checkIfContains('Flipboard')) {
             return false;
         }
         

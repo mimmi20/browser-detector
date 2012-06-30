@@ -48,7 +48,7 @@ class WebOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('WebOS', 'hpwOS'))) {
+        if (!$this->_utils->checkIfContains(array('WebOS', 'hpwOS'))) {
             return false;
         }
         
@@ -65,6 +65,13 @@ class WebOs extends OsHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/WebOS\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/webOS\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

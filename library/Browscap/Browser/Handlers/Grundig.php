@@ -49,7 +49,7 @@ class Grundig extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfStartsWith($this->_useragent, 'Grundig') || $this->_utils->checkIfStartsWith($this->_useragent, 'GRUNDIG');
+        return $this->_utils->checkIfStartsWith('Grundig') || $this->_utils->checkIfStartsWith('GRUNDIG');
     }
     
     /**

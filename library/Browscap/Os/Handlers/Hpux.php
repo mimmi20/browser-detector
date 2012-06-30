@@ -48,7 +48,7 @@ class Hpux extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('HP-UX'))) {
+        if (!$this->_utils->checkIfContainsAll(array('HP-UX'))) {
             return false;
         }
         

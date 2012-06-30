@@ -46,7 +46,7 @@ class Yadowscrawler extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'YadowsCrawler')) {
+        if (!$this->_utils->checkIfStartsWith('YadowsCrawler')) {
             return false;
         }
         

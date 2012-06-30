@@ -53,7 +53,7 @@ class Opera extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Opera')) {
+        if (!$this->_utils->checkIfContains('Opera')) {
             return false;
         }
         
@@ -63,10 +63,11 @@ class Opera extends BrowserHandler
             'Opera Mobi',
             'Opera Tablet',
             // Fakes
-            'Mac; Mac OS '
+            'Mac; Mac OS ',
+            'AppEngine-Google'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnOpera)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnOpera)) {
             return false;
         }
         

@@ -46,7 +46,7 @@ class CheckHttp extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('check_http/'))) {
+        if (!$this->_utils->checkIfContains(array('check_http/'))) {
             return false;
         }
         

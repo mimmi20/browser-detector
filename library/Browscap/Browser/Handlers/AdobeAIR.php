@@ -53,7 +53,15 @@ class AdobeAIR extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'AdobeAIR/')) {
+        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+            return false;
+        }
+        
+        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContains('AdobeAIR/')) {
             return false;
         }
         

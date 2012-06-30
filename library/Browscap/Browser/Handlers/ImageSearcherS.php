@@ -46,7 +46,7 @@ class ImageSearcherS extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'ImageSearcherS')) {
+        if (!$this->_utils->checkIfStartsWith('ImageSearcherS')) {
             return false;
         }
         

@@ -68,7 +68,7 @@ class GeneralBot extends DeviceHandler
      */
     public function getWeight()
     {
-        return 1;
+        return 3;
     }
     
     /**

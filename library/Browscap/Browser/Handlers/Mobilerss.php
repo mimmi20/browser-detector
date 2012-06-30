@@ -48,7 +48,7 @@ class Mobilerss extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'MobileRSS')) {
+        if (!$this->_utils->checkIfStartsWith('MobileRSS')) {
             return false;
         }
         

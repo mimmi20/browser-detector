@@ -48,7 +48,7 @@ class Weblide extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Weblide/')) {
+        if (!$this->_utils->checkIfStartsWith('Weblide/')) {
             return false;
         }
         

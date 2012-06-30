@@ -46,7 +46,7 @@ class Heritrix extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('heritrix'), true)) {
+        if (!$this->_utils->checkIfContains(array('heritrix'), true)) {
             return false;
         }
         

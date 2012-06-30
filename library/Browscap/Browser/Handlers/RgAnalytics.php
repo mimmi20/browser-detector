@@ -46,7 +46,7 @@ class RgAnalytics extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'RGAnalytics')) {
+        if (!$this->_utils->checkIfContains('RGAnalytics')) {
             return false;
         }
         

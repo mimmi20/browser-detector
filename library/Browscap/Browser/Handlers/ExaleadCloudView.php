@@ -46,7 +46,7 @@ class ExaleadCloudView extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'ExaleadCloudView/')) {
+        if (!$this->_utils->checkIfContains('ExaleadCloudView/')) {
             return false;
         }
         

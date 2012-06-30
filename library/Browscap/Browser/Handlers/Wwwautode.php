@@ -53,7 +53,7 @@ class Wwwautode extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'www.auto.de')) {
+        if (!$this->_utils->checkIfContains('www.auto.de')) {
             return false;
         }
         

@@ -46,11 +46,11 @@ class Gmx extends MicrosoftInternetExplorer
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'GMX')) {
+        if (!$this->_utils->checkIfStartsWith('GMX')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll($this->_useragent, array('MSIE'))) {
+        if (!$this->_utils->checkIfContainsAll(array('MSIE'))) {
             return false;
         }
         
@@ -75,7 +75,7 @@ class Gmx extends MicrosoftInternetExplorer
             'WebTV'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

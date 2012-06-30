@@ -35,7 +35,12 @@ class Netscape extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Mozilla Netscape';
+    protected $_browser = 'Netscape';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Mozilla';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -56,7 +61,7 @@ class Netscape extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
@@ -104,7 +109,7 @@ class Netscape extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

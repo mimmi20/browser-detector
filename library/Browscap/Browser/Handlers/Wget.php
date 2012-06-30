@@ -48,7 +48,7 @@ class Wget extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Wget')) {
+        if (!$this->_utils->checkIfStartsWith('Wget')) {
             return false;
         }
         

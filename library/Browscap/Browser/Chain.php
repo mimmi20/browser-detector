@@ -39,11 +39,32 @@ final class Chain extends AbstractChain
      */
     public function detect($userAgent)
     {
-        $directory = __DIR__ . DS . 'Handlers' . DS;
-        $namespace = __NAMESPACE__;
+        $chain = $this->_createChain();
         
-        $chain = $this->_createChain($directory, $namespace);
+        return $this->_detect($chain, $userAgent);
+    }
+    
+    /**
+     * sets the default directory where the chain is searching 
+     *
+     * @return 
+     */
+    protected function _setDefaultDirectory()
+    {
+        $this->_directory = __DIR__ . DS . 'Handlers' . DS;
         
-        return $this->_detect($chain, $userAgent, $namespace);
+        return $this;
+    }
+    
+    /**
+     * sets the cache used to make the detection faster
+     *
+     * @return 
+     */
+    protected function _setDefaultNamspace()
+    {
+        $this->_namespace = __NAMESPACE__ . '\\Handlers';
+        
+        return $this;
     }
 }

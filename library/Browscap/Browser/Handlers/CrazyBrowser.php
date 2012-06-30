@@ -46,15 +46,15 @@ class CrazyBrowser extends MicrosoftInternetExplorer
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'MSIE')) {
+        if (!$this->_utils->checkIfContains('MSIE')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Crazy Browser'))) {
+        if (!$this->_utils->checkIfContains(array('Crazy Browser'))) {
             return false;
         }
         
@@ -77,7 +77,7 @@ class CrazyBrowser extends MicrosoftInternetExplorer
             'WebTV'
         );
         
-        if ($this->_utils->checkIfContainsAnyOf($this->_useragent, $isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         

@@ -46,11 +46,11 @@ class XenusLinkSleuth extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith($this->_useragent, 'Xenu')) {
+        if (!$this->_utils->checkIfStartsWith('Xenu')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains($this->_useragent, 'Link Sleuth')) {
+        if (!$this->_utils->checkIfContains('Link Sleuth')) {
             return false;
         }
         

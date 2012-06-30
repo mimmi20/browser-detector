@@ -46,7 +46,7 @@ class Slackware extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAnyOf($this->_useragent, array('Slackware'))) {
+        if (!$this->_utils->checkIfContains('slackware', true)) {
             return false;
         }
         
