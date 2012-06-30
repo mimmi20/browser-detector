@@ -55,11 +55,30 @@ class SonyEricsson extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SonyEricsson')) {
-            return false;
+        $sonyPhones = array(
+            'SonyEricsson',
+            'Sony',
+            'S312',
+            'SK17i',
+            'SK17iv',
+            'ST18i',
+            'ST25i',
+            'ST25iv',
+            'W508a',
+            'W760i',
+            'WT13i',
+            'X1i',
+            'X10i',
+            'XST2',
+            'E15av',
+            'E15i'
+        );
+        
+        if ($this->_utils->checkIfContains($sonyPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

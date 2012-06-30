@@ -55,11 +55,30 @@ class Motorola extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Moto', 'MOT'))) {
-            return false;
+        $motorolaPhones = array(
+            'Motorola',
+            'Moto', 
+            'MOT',
+            'MB300',
+            'DROID',
+            'XT702',
+            'MZ601',
+            'MZ604',
+            'Xoom',
+            'Milestone',
+            'ME525',
+            'MB860',
+            'MB632',
+            'MB526',
+            'MB525',
+            'MB511'
+        );
+        
+        if ($this->_utils->checkIfContains($motorolaPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

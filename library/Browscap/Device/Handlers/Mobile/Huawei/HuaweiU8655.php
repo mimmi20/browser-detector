@@ -61,25 +61,6 @@ class HuaweiU8655 extends Huawei
     }
     
     /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/HuaweiU8655\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
-    }
-    
-    /**
      * returns TRUE if the device is a tablet
      *
      * @return boolean

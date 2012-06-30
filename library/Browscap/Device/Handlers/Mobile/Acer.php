@@ -55,11 +55,21 @@ class Acer extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Acer')) {
-            return false;
+        $acerPhones = array(
+            'Acer',
+            'Iconia',
+            'A100',
+            'A200',
+            'A500',
+            'A501',
+            'E320'
+        );
+        
+        if ($this->_utils->checkIfContains($acerPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

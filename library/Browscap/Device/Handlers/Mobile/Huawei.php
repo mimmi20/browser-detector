@@ -55,7 +55,16 @@ class Huawei extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Huawei')) {
+        $huaweiPhones = array(
+            'Huawei',
+            'HUAWEI',
+            'IDEOS S7',
+            'U8850',
+            'U8180',
+            'U8650'
+        );
+        
+        if (!$this->_utils->checkIfContains($huaweiPhones)) {
             return false;
         }
         

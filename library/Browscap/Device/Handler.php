@@ -145,16 +145,6 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * detects the device version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $this->_version = '';
-    }
-    
-    /**
      * returns the name of the actual device without version
      *
      * @return string

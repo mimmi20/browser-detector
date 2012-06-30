@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\GeneralMobile;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,17 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungGalaxyNexusS extends SamsungGalaxyNexus
+class Alcatel extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Galaxy Nexus S';
+    protected $_device = 'general Alcatel';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Alcatel';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +55,37 @@ class SamsungGalaxyNexusS extends SamsungGalaxyNexus
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Nexus S')) {
-            return false;
+        $alcatelPhones = array(
+            'ALCATEL'
+        );
+        
+        if ($this->_utils->checkIfContains($alcatelPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**

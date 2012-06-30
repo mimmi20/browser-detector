@@ -70,25 +70,6 @@ class Fx2Pad10 extends GeneralMobile
     }
     
     /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/FX2-PAD10\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
-    }
-    
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

@@ -55,11 +55,25 @@ class Samsung extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Samsung', 'GT-'))) {
-            return false;
+        $samsungPhones = array(
+            'Samsung',
+            'SAMSUNG',
+            'GT-',
+            'sam-',
+            'SCH-',
+            'SEC-',
+            'SGH-',
+            'SPH-',
+            'Galaxy',
+            'Nexus',
+            'I7110'
+        );
+        
+        if ($this->_utils->checkIfContains($samsungPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

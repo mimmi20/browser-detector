@@ -55,11 +55,13 @@ class BlackBerry extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('BlackBerry')) {
-            return false;
+        $rimPhones = array('BlackBerry', 'PlayBook', 'RIM Tablet');
+        
+        if ($this->_utils->checkIfContains($rimPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

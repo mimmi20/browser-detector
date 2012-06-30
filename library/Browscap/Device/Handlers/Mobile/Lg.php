@@ -55,7 +55,12 @@ class Lg extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('LG-')) {
+        $lgPhones = array(
+            'LG-',
+            'LG/'
+        );
+        
+        if (!$this->_utils->checkIfContains($lgPhones)) {
             return false;
         }
         

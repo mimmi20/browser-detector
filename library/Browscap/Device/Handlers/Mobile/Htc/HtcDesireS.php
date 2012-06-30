@@ -48,7 +48,7 @@ class HtcDesireS extends HtcDesire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_DesireS', 'Desire S'. 'HTC/DesireS', 'HTC Desire S'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S'))) {
             return false;
         }
         
@@ -57,24 +57,5 @@ class HtcDesireS extends HtcDesire
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/HTC\/DesireS\/([a-zA-Z\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
 }

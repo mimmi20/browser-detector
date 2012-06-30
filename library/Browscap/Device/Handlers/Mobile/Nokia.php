@@ -55,11 +55,18 @@ class Nokia extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Nokia', 'S60; SymbOS;'))) {
-            return false;
+        $nokiaPhones = array(
+            'nokia',
+            's60; symbos;',
+            'series 40',
+            'series 60'
+        );
+        
+        if ($this->_utils->checkIfContains($nokiaPhones, true)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

@@ -55,11 +55,19 @@ class Htc extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC'))) {
-            return false;
+        $htcPhones = array(
+            'HTC',
+            '7 Trophy',
+            'Desire_A8181',
+            'Desire S',
+            'myTouch4G'
+        );
+        
+        if ($this->_utils->checkIfContains($htcPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**

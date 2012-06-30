@@ -69,21 +69,6 @@ class iMac extends Macintosh
     }
     
     /**
-     * detects the device version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/iMac(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-    }
-    
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
