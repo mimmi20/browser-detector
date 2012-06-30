@@ -63,6 +63,18 @@ class LoeweSl121 extends DeviceHandler
     }
     
     /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        return $this;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
