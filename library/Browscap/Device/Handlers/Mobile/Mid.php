@@ -59,6 +59,10 @@ class Mid extends GeneralMobile
             return false;
         }
         
+        if ($this->_utils->checkIfContains('MIDP')) {
+            return false;
+        }
+        
         return true;
     }
     
