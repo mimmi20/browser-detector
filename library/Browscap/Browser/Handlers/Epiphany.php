@@ -95,14 +95,14 @@ class Epiphany extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Epiphany\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Epiphany\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -161,10 +161,18 @@ class Epiphany extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Gecko();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            'Webkit',
+            'Gecko'
+        );
         
-        return $handler->detect();
+        $engineChain = new \Browscap\Engine\Chain(false, $engines);
+        $engineChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $engineChain->setCache($this->_cache);
+        }
+        
+        return $engineChain->detect($this->_useragent);
     }
 }

@@ -76,7 +76,10 @@ class Asus extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Asus' . DS, __NAMESPACE__ . '\\Asus');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**

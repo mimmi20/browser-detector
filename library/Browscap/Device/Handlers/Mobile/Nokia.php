@@ -88,11 +88,10 @@ class Nokia extends GeneralMobile
      */
     public function detect()
     {
-        //$chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Desktop' . DS, __NAMESPACE__ . '\\Desktop');
-        //$chain->setDefaultHandler($this);
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Nokia' . DS, __NAMESPACE__ . '\\Nokia');
+        $chain->setDefaultHandler($this);
         
-        //return $chain->detect($this->_useragent);
-        return $this;
+        return $chain->detect($this->_useragent);
     }
     
     /**

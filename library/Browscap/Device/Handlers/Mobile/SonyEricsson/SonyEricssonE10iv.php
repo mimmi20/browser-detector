@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,7 +30,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SonyEricssonE10iv extends SonyEricsson
+class SonyEricssonE10iv extends SonyEricssonE10i
 {
     /**
      * @var string the detected device
@@ -53,5 +55,30 @@ class SonyEricssonE10iv extends SonyEricsson
         }
         
         return true;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getOs()
+    {
+        $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

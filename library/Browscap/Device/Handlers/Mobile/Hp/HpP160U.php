@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Hp;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Hp as HpBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,17 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class KddiSn3f extends GeneralMobile
+class HpP160U extends HpBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SN3F';
+    protected $_device = 'P160U';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'KDDI';
+    protected $_manufacturer = 'HP';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +55,7 @@ class KddiSn3f extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('KDDI-SN3F')) {
+        if (!$this->_utils->checkIfContains('P160U')) {
             return false;
         }
         
@@ -75,13 +75,13 @@ class KddiSn3f extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns TRUE if the device is a tablet
      *
-     * @return integer
+     * @return boolean
      */
-    public function getWeight()
+    public function isTablet()
     {
-        return parent::getWeight() + 1;
+        return false;
     }
     
     /**
@@ -102,7 +102,7 @@ class KddiSn3f extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler = new \Browscap\Os\Handlers\WebOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -127,7 +127,7 @@ class KddiSn3f extends GeneralMobile
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Openwave();
+        $handler = new \Browscap\Browser\Handlers\WebkitWebos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

@@ -15,12 +15,12 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: ZteSkatE.php 252 2012-06-30 18:36:21Z  $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
 
-/**
+/*
  * CatchAllUserAgentHandler
  *
  *
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: ZteSkatE.php 252 2012-06-30 18:36:21Z  $
  */
-class Nintendo3ds extends Nintendo
+class Zte extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = '3DS';
+    protected $_device = 'general ZTE Device';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'ZTE';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +55,13 @@ class Nintendo3ds extends Nintendo
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Nintendo 3DS')) {
-            return false;
+        $ztePhones = array('ZTE', 'BASE Tab');
+        
+        if ($this->_utils->checkIfContains($ztePhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -66,7 +73,20 @@ class Nintendo3ds extends Nintendo
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Zte' . DS, __NAMESPACE__ . '\\Zte');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -87,32 +107,7 @@ class Nintendo3ds extends Nintendo
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\NintendoWii();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $handler = new \Browscap\Browser\Handlers\Opera();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

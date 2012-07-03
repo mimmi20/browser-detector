@@ -73,11 +73,10 @@ class BlackBerry extends GeneralMobile
      */
     public function detect()
     {
-        //$chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Desktop' . DS, __NAMESPACE__ . '\\Desktop');
-        //$chain->setDefaultHandler($this);
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'BlackBerry' . DS, __NAMESPACE__ . '\\BlackBerry');
+        $chain->setDefaultHandler($this);
         
-        //return $chain->detect($this->_useragent);
-        return $this;
+        return $chain->detect($this->_useragent);
     }
     
     /**

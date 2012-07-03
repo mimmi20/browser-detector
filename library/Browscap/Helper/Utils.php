@@ -149,7 +149,6 @@ final class Utils
         'grabber',
         'heritrix',
         'httrack',
-        'java/',
         'jig browser',
         'linkchecker',
         'nutch',

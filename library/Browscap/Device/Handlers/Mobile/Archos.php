@@ -77,7 +77,10 @@ class Archos extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Archos' . DS, __NAMESPACE__ . '\\Archos');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**

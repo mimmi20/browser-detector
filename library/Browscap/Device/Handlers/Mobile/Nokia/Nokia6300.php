@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\Nokia;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,7 +30,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Nokia6300 extends Nokia
+class Nokia6300 extends NokiaBase
 {
     /**
      * @var string the detected device
@@ -53,6 +55,18 @@ class Nokia6300 extends Nokia
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        return $this;
     }
     
     /**

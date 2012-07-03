@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HpP160U.php 251 2012-06-30 14:11:40Z  $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,19 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HpP160U.php 251 2012-06-30 14:11:40Z  $
  */
-class AmazonKindle extends GeneralMobile
+class Hp extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Kindle';
+    protected $_device = 'general HP Device';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Amazon';
+    protected $_manufacturer = 'HP';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +55,9 @@ class AmazonKindle extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Kindle', 'Silk'))) {
+        $hpPhones = array('P160U', 'Dell');
+        
+        if (!$this->_utils->checkIfContains($hpPhones)) {
             return false;
         }
         
@@ -71,7 +73,10 @@ class AmazonKindle extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Hp' . DS, __NAMESPACE__ . '\\Hp');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**
@@ -91,7 +96,7 @@ class AmazonKindle extends GeneralMobile
      */
     public function isTablet()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -112,7 +117,7 @@ class AmazonKindle extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\WebOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -137,7 +142,7 @@ class AmazonKindle extends GeneralMobile
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Silk();
+        $handler = new \Browscap\Browser\Handlers\WebkitWebos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

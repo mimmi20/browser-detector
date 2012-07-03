@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\Asus;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Asus as AsusBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,7 +30,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class AsusEepPadTransformerTf101 extends GeneralMobile
+class AsusEepPadTransformerTf101 extends AsusBase
 {
     /**
      * @var string the detected device
@@ -61,13 +63,15 @@ class AsusEepPadTransformerTf101 extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the device name from the given user agent
      *
-     * @return integer
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function getWeight()
+    public function detect()
     {
-        return parent::getWeight() + 1;
+        return $this;
     }
     
     /**

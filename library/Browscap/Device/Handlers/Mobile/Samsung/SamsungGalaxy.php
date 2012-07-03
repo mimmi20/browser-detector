@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,7 +30,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungGalaxy extends Samsung
+class SamsungGalaxy extends SamsungBase
 {
     /**
      * @var string the detected device
@@ -56,13 +58,15 @@ class SamsungGalaxy extends Samsung
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the device name from the given user agent
      *
-     * @return integer
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function getWeight()
+    public function detect()
     {
-        return parent::getWeight() + 1;
+        return $this;
     }
     
     /**

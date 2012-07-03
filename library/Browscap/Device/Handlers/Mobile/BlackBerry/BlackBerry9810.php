@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\BlackBerry;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\BlackBerry as BlackBerryBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,7 +30,7 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class BlackBerry9810 extends BlackBerry
+class BlackBerry9810 extends BlackBerryBase
 {
     /**
      * @var string the detected device
@@ -53,5 +55,17 @@ class BlackBerry9810 extends BlackBerry
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        return $this;
     }
 }

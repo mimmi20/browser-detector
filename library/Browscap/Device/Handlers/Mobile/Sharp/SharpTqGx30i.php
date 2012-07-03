@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Sharp;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Sharp as SharpBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NintendoWii extends Nintendo
+class SharpTqGx30i extends SharpBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Wii';
+    protected $_device = 'TQ-GX30i';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class NintendoWii extends Nintendo
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Nintendo Wii')) {
+        if (!$this->_utils->checkIfContains('SHARP-TQ-GX30i')) {
             return false;
         }
         
@@ -87,7 +87,7 @@ class NintendoWii extends Nintendo
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\NintendoWii();
+        $handler = new \Browscap\Os\Handlers\Unknown();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -112,7 +112,7 @@ class NintendoWii extends Nintendo
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Opera();
+        $handler = new \Browscap\Browser\Handlers\Openwave();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

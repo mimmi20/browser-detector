@@ -81,7 +81,10 @@ class Acer extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Acer' . DS, __NAMESPACE__ . '\\Acer');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**

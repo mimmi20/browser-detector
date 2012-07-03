@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Hp;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,9 +18,9 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Hp as HpBase;
 
-/*
+/**
  * CatchAllUserAgentHandler
  *
  *
@@ -30,17 +30,17 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class ZteSkatE extends GeneralMobile
+class HpTouchpad extends HpBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SKATE';
+    protected $_device = 'Touchpad';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'ZTE';
+    protected $_manufacturer = 'HP';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +55,7 @@ class ZteSkatE extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('ZTE-SKATE')) {
+        if (!$this->_utils->checkIfContains('TouchPad')) {
             return false;
         }
         
@@ -75,13 +75,13 @@ class ZteSkatE extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns TRUE if the device is a tablet
      *
-     * @return integer
+     * @return boolean
      */
-    public function getWeight()
+    public function isTablet()
     {
-        return parent::getWeight() + 1;
+        return true;
     }
     
     /**
@@ -102,7 +102,32 @@ class ZteSkatE extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\WebOs();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\WebkitWebos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

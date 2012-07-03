@@ -35,7 +35,7 @@ class Nintendo extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'Nintendo';
+    protected $_device = 'general Nintendo Device';
 
     /**
      * @var string the detected manufacturer
@@ -55,11 +55,13 @@ class Nintendo extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Nintendo')) {
-            return false;
+        $nintendoDevices = array('Nintendo');
+        
+        if ($this->_utils->checkIfContains($nintendoDevices)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -71,7 +73,10 @@ class Nintendo extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Nintendo' . DS, __NAMESPACE__ . '\\Nintendo');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**

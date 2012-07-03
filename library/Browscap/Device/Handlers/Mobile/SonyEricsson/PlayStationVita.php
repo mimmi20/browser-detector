@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,17 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SharpTqGx30i extends GeneralMobile
+class PlayStationVita extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'TQ-GX30i';
+    protected $_device = 'PlayStation Vita';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Sharp';
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept
@@ -55,11 +55,11 @@ class SharpTqGx30i extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SHARP-TQ-GX30i')) {
-            return false;
+        if ($this->_utils->checkIfContains(array('PlayStation Vita'))) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -75,13 +75,23 @@ class SharpTqGx30i extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns TRUE if the device supports RSS Feeds
      *
-     * @return integer
+     * @return boolean
      */
-    public function getWeight()
+    public function isRssSupported()
     {
-        return parent::getWeight() + 1;
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
     }
     
     /**
@@ -102,32 +112,7 @@ class SharpTqGx30i extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $handler = new \Browscap\Browser\Handlers\Openwave();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

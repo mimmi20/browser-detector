@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\BlackBerry;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.

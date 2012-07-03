@@ -64,7 +64,14 @@ class WindowsMobileOs extends OsHandler
      */
     protected function _detectVersion()
     {
-        if ($this->_utils->checkIfContains(array('Windows CE', 'Windows Mobile'))) {
+        if ($this->_utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
+            $doMatch = preg_match('/MSIEMobile (\d+\.\d+)/', $this->_useragent, $matches);
+            
+            if ($doMatch) {
+                $this->_version = $matches[1];
+                return;
+            }
+            
             $this->_version = '6.0';
             return;
         }

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Amazon;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Amazon as AmazonBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class PlayStationVita extends GeneralMobile
+class AmazonKindle extends AmazonBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'PlayStation Vita';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Sony';
+    protected $_device = 'Kindle';
     
     /**
      * Final Interceptor: Intercept
@@ -55,19 +50,11 @@ class PlayStationVita extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+        if (!$this->_utils->checkIfContains(array('Kindle', 'Silk'))) {
             return false;
         }
         
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('PlayStation Vita'))) {
-            return true;
-        }
-        
-        return false;
+        return true;
     }
     
     /**
@@ -83,31 +70,11 @@ class PlayStationVita extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-    
-    /**
-     * returns TRUE if the device supports RSS Feeds
+     * returns TRUE if the device is a tablet
      *
      * @return boolean
      */
-    public function isRssSupported()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the device supports PDF documents
-     *
-     * @return boolean
-     */
-    public function isPdfSupported()
+    public function isTablet()
     {
         return true;
     }
@@ -131,6 +98,31 @@ class PlayStationVita extends GeneralMobile
     public function getOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\Silk();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

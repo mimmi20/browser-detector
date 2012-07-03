@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile\Alcatel;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,17 +30,12 @@ namespace Browscap\Device\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class AlcatelOneTouch990 extends GeneralMobile
+class AlcatelOneTouch990 extends AlcatelBase
 {
     /**
      * @var string the detected device
      */
     protected $_device = 'one_touch_990';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Alcatel';
     
     /**
      * Final Interceptor: Intercept
@@ -61,13 +58,15 @@ class AlcatelOneTouch990 extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the device name from the given user agent
      *
-     * @return integer
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function getWeight()
+    public function detect()
     {
-        return parent::getWeight() + 1;
+        return $this;
     }
     
     /**

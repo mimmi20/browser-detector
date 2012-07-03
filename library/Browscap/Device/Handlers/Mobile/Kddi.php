@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: KddiSn3f.php 251 2012-06-30 14:11:40Z  $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: KddiSn3f.php 251 2012-06-30 14:11:40Z  $
  */
-class E310 extends GeneralMobile
+class Kddi extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'E310';
+    protected $_device = 'general KDDI Device';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'KDDI';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +55,13 @@ class E310 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('E310')) {
-            return false;
+        $kddiPhones = array('KDDI');
+        
+        if ($this->_utils->checkIfContains($kddiPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -66,7 +73,10 @@ class E310 extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Kddi' . DS, __NAMESPACE__ . '\\Kddi');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**
@@ -97,7 +107,32 @@ class E310 extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\Openwave();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

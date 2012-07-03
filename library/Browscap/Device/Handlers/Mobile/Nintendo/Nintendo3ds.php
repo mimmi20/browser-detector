@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Nintendo;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Nintendo as NintendoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class ZteBaseTab extends GeneralMobile
+class Nintendo3ds extends NintendoBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'BASE Tab';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'ZTE';
+    protected $_device = '3DS';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +50,7 @@ class ZteBaseTab extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('BASE Tab')) {
+        if (!$this->_utils->checkIfContains('Nintendo 3DS')) {
             return false;
         }
         
@@ -72,26 +67,6 @@ class ZteBaseTab extends GeneralMobile
     public function detect()
     {
         return $this;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
     
     /**
@@ -112,7 +87,32 @@ class ZteBaseTab extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\NintendoWii();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\Opera();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

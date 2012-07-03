@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: AmazonKindle.php 251 2012-06-30 14:11:40Z  $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,19 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: AmazonKindle.php 251 2012-06-30 14:11:40Z  $
  */
-class CreativeZiiLabsZiio10 extends GeneralMobile
+class Amazon extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'ZiiLABS ZiiO 10';
+    protected $_device = 'general Amazon Device';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Creative';
+    protected $_manufacturer = 'Amazon';
     
     /**
      * Final Interceptor: Intercept
@@ -55,11 +55,13 @@ class CreativeZiiLabsZiio10 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('ZiiLABS ZiiO10')) {
-            return false;
+        $amazonPhones = array('Amazon', 'Kindle', 'Silk');
+        
+        if ($this->_utils->checkIfContains($amazonPhones)) {
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -71,7 +73,10 @@ class CreativeZiiLabsZiio10 extends GeneralMobile
      */
     public function detect()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Amazon' . DS, __NAMESPACE__ . '\\Amazon');
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**
@@ -82,6 +87,16 @@ class CreativeZiiLabsZiio10 extends GeneralMobile
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
     
     /**
@@ -103,6 +118,31 @@ class CreativeZiiLabsZiio10 extends GeneralMobile
     public function getOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\Silk();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
