@@ -58,7 +58,8 @@ class Archos extends GeneralMobile
         $archosPhones = array(
             'ARCHOS',
             'A35DM',
-            'A70BHT'
+            'A70BHT',
+            'A70S'
         );
         
         if ($this->_utils->checkIfContains($archosPhones)) {
@@ -116,5 +117,52 @@ class Archos extends GeneralMobile
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $browsers = array(
+            'Android',
+            'Chrome',
+            'Dalvik',
+            'Dolfin',
+            'Firefox',
+            'Jasmine',
+            'MicrosoftMobileExplorer',
+            'NetFront',
+            'NetFrontLifeBrowser',
+            'Openwave',
+            'OperaMini',
+            'OperaMobile',
+            'Polaris',
+            'TelecaObigo',
+            'Ucweb',
+            'WindowsPhoneSearch'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

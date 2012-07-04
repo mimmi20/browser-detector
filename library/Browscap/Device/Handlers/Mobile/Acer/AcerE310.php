@@ -70,27 +70,34 @@ class AcerE310 extends AcerBase
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * returns TRUE if the device has a specific Browser
      *
      * @return boolean
      */
-    public function hasOs()
+    public function hasBrowser()
     {
         return true;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function getBrowser()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $browsers = array(
+            'Android'
+        );
         
-        return $handler->detect();
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

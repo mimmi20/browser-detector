@@ -57,6 +57,7 @@ class Linux extends OsHandler
             'Android',
             'Debian',
             'Ubuntu',
+            'CentOS',
             'CrOS',
             'Joli OS',
             'Mint',

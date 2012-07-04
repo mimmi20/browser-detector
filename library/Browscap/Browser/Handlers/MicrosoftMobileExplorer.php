@@ -60,7 +60,7 @@ class MicrosoftMobileExplorer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE'))) {
+        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE'))) {
             return false;
         }
         
@@ -106,6 +106,13 @@ class MicrosoftMobileExplorer extends BrowserHandler
         }
         
         $doMatch = preg_match('/IEMobile\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/MSIE (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

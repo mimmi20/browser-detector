@@ -53,6 +53,10 @@ class Windows extends OsHandler
             return false;
         }
         
+        if ($this->_utils->isMobileWindows()) {
+            return false;
+        }
+        
         if (!$this->_utils->isWindows()) {
             return false;
         }

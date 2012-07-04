@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AmazonKindle.php 251 2012-06-30 14:11:40Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AmazonKindle.php 251 2012-06-30 14:11:40Z  $
+ * @version    SVN: $Id$
  */
 class Amazon extends GeneralMobile
 {

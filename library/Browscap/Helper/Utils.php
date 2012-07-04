@@ -279,6 +279,7 @@ final class Utils
             'Flock',
             'Galeon',
             'Lunascape',
+            'iCab',
             'Iron',
             'Maemo',
             'PaleMoon',

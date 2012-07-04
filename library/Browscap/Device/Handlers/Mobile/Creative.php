@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: CreativeZiiLabsZiio10.php 251 2012-06-30 14:11:40Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: CreativeZiiLabsZiio10.php 251 2012-06-30 14:11:40Z  $
+ * @version    SVN: $Id$
  */
 class Creative extends GeneralMobile
 {
@@ -112,5 +112,52 @@ class Creative extends GeneralMobile
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Browser
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $browsers = array(
+            'Android',
+            'Chrome',
+            'Dalvik',
+            'Dolfin',
+            'Firefox',
+            'Jasmine',
+            'MicrosoftMobileExplorer',
+            'NetFront',
+            'NetFrontLifeBrowser',
+            'Openwave',
+            'OperaMini',
+            'OperaMobile',
+            'Polaris',
+            'TelecaObigo',
+            'Ucweb',
+            'WindowsPhoneSearch'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }
