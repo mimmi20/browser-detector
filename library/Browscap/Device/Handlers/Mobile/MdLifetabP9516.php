@@ -132,48 +132,8 @@ class MdLifetabP9516 extends GeneralMobile
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
         $browsers = array(
-            'Android',
-            'Chrome',
-            'Dalvik',
-            'Dolfin',
-            'Firefox',
-            'Jasmine',
-            'MicrosoftMobileExplorer',
-            'NetFront',
-            'NetFrontLifeBrowser',
-            'Openwave',
-            'OperaMini',
-            'OperaMobile',
-            'Polaris',
-            'TelecaObigo',
-            'Ucweb',
-            'WindowsPhoneSearch'
+            'Android'
         );
         
         $browserChain = new \Browscap\Browser\Chain(false, $browsers);
