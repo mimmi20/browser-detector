@@ -50,11 +50,21 @@ class ZteSkatE extends ZteBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('ZTE-SKATE')) {
+        if (!$this->_utils->checkIfContains(array('ZTE-SKATE', 'ZTE Skate'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -112,12 +122,7 @@ class ZteSkatE extends ZteBase
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

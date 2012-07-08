@@ -64,10 +64,12 @@ class Linux extends OsHandler
             'SUSE',
             'Fedora',
             'redhat',
+            'red hat',
             'Slackware',
             'NETTV',
             'HbbTV',
             'hpwOS',
+            'SMART-TV',
             // other OS which are using X11
             'BSD',
             'SunOS',

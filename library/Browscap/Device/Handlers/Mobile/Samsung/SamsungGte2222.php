@@ -58,6 +58,16 @@ class SamsungGte2222 extends SamsungBase
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
+    }
+    
+    /**
      * detects the device name from the given user agent
      *
      * @param string $userAgent
@@ -87,7 +97,7 @@ class SamsungGte2222 extends SamsungBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -112,12 +122,7 @@ class SamsungGte2222 extends SamsungBase
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForJava();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

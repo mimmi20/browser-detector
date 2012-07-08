@@ -59,4 +59,14 @@ class AsusEepPadTransformerTf101g extends AsusEepPadTransformerTf101
         
         return true;
     }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
+    }
 }

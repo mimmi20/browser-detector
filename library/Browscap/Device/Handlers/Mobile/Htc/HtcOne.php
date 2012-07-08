@@ -50,11 +50,21 @@ class HtcOne extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC One')) {
+        if (!$this->_utils->checkIfContains(array('HTC One', 'HTC_One'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -112,12 +122,7 @@ class HtcOne extends HtcBase
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

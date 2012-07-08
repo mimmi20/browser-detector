@@ -50,11 +50,21 @@ class HuaweiU8800 extends HuaweiBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('huaweiu8850', 'u8850'), true)) {
+        if (!$this->_utils->checkIfContains(array('huaweiu8800', 'u8800'), true)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -122,12 +132,7 @@ class HuaweiU8800 extends HuaweiBase
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

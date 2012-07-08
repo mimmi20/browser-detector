@@ -79,6 +79,8 @@ final class Utils
         'firefox or ie',
         'foma',
         'gingerbread',
+        'hp-tablet',
+        'hpwOS',
         'htc',
         'ipad',
         'iphone',
@@ -94,7 +96,7 @@ final class Utils
         'midp',
         'mobile',
         'netfront',
-        'nintendo wii',
+        'nintendo',
         'nitro',
         'nokia',
         'obigo',
@@ -127,7 +129,7 @@ final class Utils
     private $_bots = array(
         '<',
         '>',
-        '\\x',
+        //'\\x',
         'acoon',
         'anyevent',
         'appengine-google',
@@ -137,15 +139,17 @@ final class Utils
         'crawl',
         'curl',
         'detection',
-        'download',
+        //'download',
         'extract',
         'feedparser',
         'feed parser',
         'feedfetcher-google',
         'findlinks',
+        'firefox/99',
         'gecko/17',
         'gecko/6',
         'generator',
+        'gomezagent',
         'grabber',
         'heritrix',
         'httrack',
@@ -184,6 +188,12 @@ final class Utils
             return true;
         }
         
+        if ($this->checkIfContains('tablet', true)
+            && !$this->checkIfContains('tablet pc', true)
+        ) {
+            return true;
+        }
+        
         return false;
     }
     
@@ -214,7 +224,9 @@ final class Utils
      */
     public function isFakeBrowser()
     {
-        if ($this->checkIfContains(array('internet explorer', 'blah'), true)) {
+        if ($this->checkIfContains(array('internet explorer', 'blah'), true)
+            && !$this->checkIfContains(array('internet explorer anonymized by'), true)
+        ) {
             return true;
         }
         
@@ -296,6 +308,7 @@ final class Utils
             'BrowserNG',
             'AdobeAIR',
             'Dreamweaver',
+            'Google Earth',
             //mobile Version
             'Mobile',
             'Tablet',
@@ -375,6 +388,15 @@ final class Utils
             }
             
             return true;
+        }
+        
+        if ($this->checkIfStartsWith('Mozilla/') 
+            && $this->checkIfContains('MSIE')
+        ) {
+            $doMatch = preg_match('/Mozilla\/(4|5)\.0 \(.*MSIE (4|5|6|7|8|9|10)\.\d.*/', $this->_useragent, $matches);
+            if (!$doMatch) {
+                return true;
+            }
         }
         
         return false;
@@ -500,5 +522,156 @@ final class Utils
         $class = str_replace(' ', '', ucwords($class));
         
         return '\\' . $namespace . '\\Handlers\\' . $class;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForAndroid()
+    {
+        $browsers = array(
+            'Android',
+            'Dalvik',
+            'Chrome',
+            'Dolfin'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Android());
+        
+        return $browserChain;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForIos()
+    {
+        $browsers = array(
+            'MobileSafari',
+            'OperaMini',
+            'Sleipnir',
+            'DarwinBrowser',
+            'Facebook',
+            'Isource'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\MobileSafari());
+        
+        return $browserChain;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForSymbian()
+    {
+        $browsers = array(
+            'Nokia',
+            'NokiaBrowser',
+            'NokiaBrowserNg',
+            'OperaMini',
+            'Ucweb',
+            'NokiaProxyBrowser'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Nokia());
+        
+        return $browserChain;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForBlackberry()
+    {
+        $browsers = array(
+            'Blackberry',
+            'BlackberryPlaybookTablet',
+            'OperaMini',
+            'Ucweb'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        return $browserChain;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForJava()
+    {
+        $browsers = array(
+            'NetFront',
+            'OperaMini',
+            'Ucweb',
+            'Dolfin'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        return $browserChain;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForMobileWindows()
+    {
+        $browsers = array(
+            'MicrosoftMobileExplorer'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        return $browserChain;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowserChainForBada()
+    {
+        $browsers = array(
+            'Dolfin'
+        );
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserChain->setLogger($this->_logger);
+        
+        return $browserChain;
     }
 }

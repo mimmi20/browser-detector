@@ -132,12 +132,7 @@ class MdLifetabP9516 extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

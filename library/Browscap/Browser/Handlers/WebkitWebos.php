@@ -50,7 +50,7 @@ class WebkitWebos extends MobileSafari
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser'))) {
+        if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser', 'wOSBrowser'))) {
             return false;
         }
         

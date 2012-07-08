@@ -74,11 +74,15 @@ class Motorola extends GeneralMobile
             'MB511'
         );
         
-        if ($this->_utils->checkIfContains($motorolaPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains($motorolaPhones)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains('HTC')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

@@ -63,6 +63,16 @@ class HpTouchpad extends HpBase
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
+    }
+    
+    /**
      * detects the device name from the given user agent
      *
      * @param string $userAgent

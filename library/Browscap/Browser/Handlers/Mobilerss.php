@@ -48,7 +48,7 @@ class Mobilerss extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('MobileRSS')) {
+        if (!$this->_utils->checkIfStartsWith(array('MobileRSS', 'MobileRSSFree'))) {
             return false;
         }
         
@@ -84,6 +84,16 @@ class Mobilerss extends BrowserHandler
         }
         
         $this->_version = '';
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 2;
     }
     
     /**

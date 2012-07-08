@@ -56,6 +56,16 @@ class HtcIncrediblesS710e extends HtcIncredibleS
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
+    }
+    
+    /**
      * returns TRUE if the device has a specific Operating System
      *
      * @return boolean
@@ -98,12 +108,7 @@ class HtcIncrediblesS710e extends HtcIncredibleS
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

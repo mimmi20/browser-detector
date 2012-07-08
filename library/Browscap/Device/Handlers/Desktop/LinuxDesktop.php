@@ -71,6 +71,10 @@ class LinuxDesktop extends GeneralDesktop
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Loewe; SL121')) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -125,7 +129,8 @@ class LinuxDesktop extends GeneralDesktop
             'Suse',
             'Ubuntu',
             'ZenwalkGnu',
-            'CentOs'
+            'CentOs',
+            'LinuxTv'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);

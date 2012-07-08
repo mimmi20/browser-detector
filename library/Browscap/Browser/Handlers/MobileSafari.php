@@ -74,6 +74,7 @@ class MobileSafari extends BrowserHandler
         
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
+            'Android',
             'Chrome',
             'Chromium',
             'Flock',
@@ -156,6 +157,16 @@ class MobileSafari extends BrowserHandler
         }
         
         return $detectedVersion;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 290;
     }
     
     /**

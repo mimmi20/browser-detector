@@ -28,12 +28,12 @@ namespace Browscap\Os\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NetTv extends Linux
+class LinuxTv extends Linux
 {
     /**
      * @var string the detected platform
      */
-    protected $_name = 'NETTV';
+    protected $_name = 'Linux for TV';
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -46,7 +46,7 @@ class NetTv extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('NETTV', 'HbbTV'))) {
+        if (!$this->_utils->checkIfContains(array('NETTV', 'HbbTV', 'SMART-TV'))) {
             return false;
         }
         

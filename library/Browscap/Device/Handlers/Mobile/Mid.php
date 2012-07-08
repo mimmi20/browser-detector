@@ -59,7 +59,7 @@ class Mid extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->checkIfContains('MIDP')) {
+        if ($this->_utils->checkIfContains(array('MIDP', 'MID70'))) {
             return false;
         }
         
@@ -158,5 +158,15 @@ class Mid extends GeneralMobile
         }
         
         return $browserChain->detect($this->_useragent);
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
 }

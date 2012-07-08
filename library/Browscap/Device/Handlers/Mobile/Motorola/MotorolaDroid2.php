@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MotorolaDroid2 extends MotorolaBase
+class MotorolaDroid2 extends MotorolaDroid
 {
     /**
      * @var string the detected device
@@ -55,6 +53,16 @@ class MotorolaDroid2 extends MotorolaBase
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -112,12 +120,7 @@ class MotorolaDroid2 extends MotorolaBase
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

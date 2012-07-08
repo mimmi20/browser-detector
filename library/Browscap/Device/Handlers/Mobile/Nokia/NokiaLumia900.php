@@ -56,6 +56,16 @@ class NokiaLumia900 extends NokiaLumia
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
+    }
+    
+    /**
      * returns TRUE if the device has a specific Operating System
      *
      * @return boolean
@@ -73,7 +83,7 @@ class NokiaLumia900 extends NokiaLumia
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -98,12 +108,7 @@ class NokiaLumia900 extends NokiaLumia
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

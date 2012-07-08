@@ -55,7 +55,7 @@ class Hp extends GeneralMobile
             return false;
         }
         
-        $hpPhones = array('P160U', 'Dell');
+        $hpPhones = array('P160U', 'Hp', 'TouchPad', 'hpwOS', 'hp-tablet');
         
         if (!$this->_utils->checkIfContains($hpPhones)) {
             return false;

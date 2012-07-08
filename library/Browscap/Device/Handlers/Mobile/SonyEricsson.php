@@ -58,12 +58,16 @@ class SonyEricsson extends GeneralMobile
         $sonyPhones = array(
             'SonyEricsson',
             'Sony',
+            'LT15i',
+            'LT18i',
+            'LT26i',
+            'MK16i',
+            'MT11i',
+            'MT15i',
             'S312',
             'SK17i',
-            'SK17iv',
             'ST18i',
             'ST25i',
-            'ST25iv',
             'W508a',
             'W760i',
             'WT13i',
@@ -71,7 +75,8 @@ class SonyEricsson extends GeneralMobile
             'X10i',
             'XST2',
             'E15av',
-            'E15i'
+            'E15i',
+            'PlayStation Vita'
         );
         
         if ($this->_utils->checkIfContains($sonyPhones)) {

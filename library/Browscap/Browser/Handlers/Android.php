@@ -19,6 +19,8 @@ namespace Browscap\Browser\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
  * AndroidUserAgentHandler
  * 
@@ -29,7 +31,7 @@ namespace Browscap\Browser\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Android extends MobileSafari
+class Android extends BrowserHandler
 {
     /**
      * @var string the detected browser
@@ -53,7 +55,6 @@ class Android extends MobileSafari
         }
         
         if (!$this->_utils->checkIfContains('Android')
-            && !parent::canHandle($this->_useragent)
             && !$this->_utils->isMobileAsSafari($this->_useragent)
         ) {
             return false;

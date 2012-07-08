@@ -33,7 +33,17 @@ use Browscap\Device\Handlers\Mobile\Zte as ZteBase;
 class ZteBaseTab extends ZteBase
 {
     /**
-     * @var string the detected device
+     * @var string the detected 
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
+    }
      */
     protected $_device = 'BASE Tab';
     
@@ -55,6 +65,16 @@ class ZteBaseTab extends ZteBase
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -122,12 +142,7 @@ class ZteBaseTab extends ZteBase
      */
     public function getBrowser()
     {
-        $browsers = array(
-            'Android'
-        );
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

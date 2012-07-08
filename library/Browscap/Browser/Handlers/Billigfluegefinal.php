@@ -35,7 +35,7 @@ class Billigfluegefinal extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'BilligFluegeFinal';
+    protected $_browser = 'BilligFluegeFinal App';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,9 +48,7 @@ class Billigfluegefinal extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith('BilligFluegeFinal')
-            || $this->_utils->checkIfStartsWith('billigFluegeFinal')
-        ) {
+        if ($this->_utils->checkIfStartsWith('billigfluegefinal', true)) {
             return true;
         }
         

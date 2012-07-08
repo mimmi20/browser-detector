@@ -87,6 +87,16 @@ class Ucweb extends BrowserHandler
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 4;
+    }
+    
+    /**
      * returns TRUE if the browser has a specific rendering engine
      *
      * @return boolean

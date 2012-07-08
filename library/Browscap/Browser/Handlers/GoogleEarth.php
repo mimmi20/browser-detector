@@ -57,7 +57,7 @@ class GoogleEarth extends Google
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Chrome', 'Google Earth'))) {
+        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Google Earth'))) {
             return false;
         }
         

@@ -102,7 +102,7 @@ class LoeweSl121 extends DeviceHandler
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\NetTv();
+        $handler = new \Browscap\Os\Handlers\LinuxTv();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
