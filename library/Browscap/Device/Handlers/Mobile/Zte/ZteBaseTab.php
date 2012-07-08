@@ -34,17 +34,8 @@ class ZteBaseTab extends ZteBase
 {
     /**
      * @var string the detected 
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
      */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
-    }
-     */
+
     protected $_device = 'BASE Tab';
     
     /**

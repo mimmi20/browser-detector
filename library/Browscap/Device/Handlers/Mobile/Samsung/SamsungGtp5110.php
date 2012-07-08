@@ -30,7 +30,7 @@ use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungGtP5110 extends SamsungBase
+class SamsungGtp5110 extends SamsungBase
 {
     /**
      * @var string the detected device
