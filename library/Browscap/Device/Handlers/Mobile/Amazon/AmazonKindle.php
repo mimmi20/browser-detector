@@ -132,7 +132,7 @@ class AmazonKindle extends AmazonBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Silk();
+        $handler = new \Browscap\Browser\Handlers\Mobile\Silk();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

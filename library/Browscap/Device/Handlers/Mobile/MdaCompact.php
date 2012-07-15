@@ -127,7 +127,7 @@ class MdaCompact extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browser = new \Browscap\Browser\Handlers\MicrosoftMobileExplorer();
+        $browser = new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer();
         $browser->setLogger($this->_logger);
         $browser->setUseragent($this->_useragent);
         

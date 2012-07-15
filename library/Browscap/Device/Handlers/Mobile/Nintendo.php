@@ -132,7 +132,7 @@ class Nintendo extends GeneralMobile
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Opera();
+        $handler = new \Browscap\Browser\Handlers\Mobile\Opera();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

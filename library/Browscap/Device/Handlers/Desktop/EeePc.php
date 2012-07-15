@@ -78,4 +78,81 @@ class EeePc extends GeneralDesktop
     {
         return 5;
     }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getOs()
+    {
+        $os = array(
+            'Linux',
+            'Debian',
+            'Fedora',
+            'JoliOs',
+            'Mint',
+            'Redhat',
+            'Slackware',
+            'Suse',
+            'Ubuntu',
+            'ZenwalkGnu',
+            'CentOs',
+            'LinuxTv'
+        );
+        
+        $osChain = new \Browscap\Os\Chain(false, $os);
+        $osChain->setLogger($this->_logger);
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $osChain->setCache($this->_cache);
+        }
+        
+        return $osChain->detect($this->_useragent);
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Desktop' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Desktop';
+        
+        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $chain->setCache($this->_cache);
+        }
+        
+        return $chain->detect($this->_useragent);
+    }
 }

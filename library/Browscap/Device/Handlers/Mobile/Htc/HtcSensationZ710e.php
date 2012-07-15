@@ -48,7 +48,7 @@ class HtcSensationZ710e extends HtcSensation
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_Sensation_Z710e', 'HTC Sensation Z710e'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_Sensation_Z710e', 'HTC Sensation Z710e', 'Sensation_Z710e'))) {
             return false;
         }
         

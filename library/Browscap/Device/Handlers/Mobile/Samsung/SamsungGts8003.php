@@ -35,7 +35,7 @@ class SamsungGts8003 extends SamsungBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'GT-S8003';
+    protected $_device = 'S8003';
     
     /**
      * Final Interceptor: Intercept
@@ -97,7 +97,7 @@ class SamsungGts8003 extends SamsungBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -122,7 +122,7 @@ class SamsungGts8003 extends SamsungBase
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
+        $browserChain = $this->_utils->getBrowserChainForJava();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

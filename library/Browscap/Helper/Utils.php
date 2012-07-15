@@ -94,7 +94,6 @@ final class Utils
         'maemo',
         'meego',
         'midp',
-        'mobile',
         'netfront',
         'nintendo',
         'nitro',
@@ -111,7 +110,6 @@ final class Utils
         'series40',
         'series 60',
         'silk',
-        'sony',
         'symbian',
         'symbianos',
         'symbos',
@@ -155,6 +153,7 @@ final class Utils
         'httrack',
         'jig browser',
         'linkchecker',
+        'naver',
         'nutch',
         'opera/9.751',
         'parser',
@@ -190,6 +189,18 @@ final class Utils
         
         if ($this->checkIfContains('tablet', true)
             && !$this->checkIfContains('tablet pc', true)
+        ) {
+            return true;
+        }
+        
+        if ($this->checkIfContains('mobile', true)
+            && !$this->checkIfContains('automobile', true)
+        ) {
+            return true;
+        }
+        
+        if ($this->checkIfContains('sony', true)
+            && !$this->checkIfContains('sonydtv', true)
         ) {
             return true;
         }
@@ -266,6 +277,12 @@ final class Utils
             if (4 > $matches[1] || $matches[1] >= 6) {
                 return true;
             }
+        }
+        
+        $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch && $matches[1] > 2) {
+            return true;
         }
         
         return false;
@@ -539,10 +556,16 @@ final class Utils
             'Dolfin'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
         
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Android());
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Android());
         
         return $browserChain;
     }
@@ -564,10 +587,16 @@ final class Utils
             'Isource'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
         
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\MobileSafari());
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MobileSafari());
         
         return $browserChain;
     }
@@ -589,10 +618,16 @@ final class Utils
             'NokiaProxyBrowser'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
         
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Nokia());
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Nokia());
         
         return $browserChain;
     }
@@ -609,11 +644,20 @@ final class Utils
             'Blackberry',
             'BlackberryPlaybookTablet',
             'OperaMini',
-            'Ucweb'
+            'Ucweb',
+            'MqqBrowser'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
+        
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Blackberry());
         
         return $browserChain;
     }
@@ -630,10 +674,19 @@ final class Utils
             'NetFront',
             'OperaMini',
             'Ucweb',
-            'Dolfin'
+            'Dolfin',
+            'Motorola',
+            'TelecaObigo',
+            'Openwave'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
         
         return $browserChain;
@@ -651,8 +704,16 @@ final class Utils
             'MicrosoftMobileExplorer'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
+        
+        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer());
         
         return $browserChain;
     }
@@ -669,7 +730,13 @@ final class Utils
             'Dolfin'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $browserChain->setLogger($this->_logger);
         
         return $browserChain;

@@ -58,6 +58,16 @@ class SamsungGtp7500M extends SamsungGtp7500
     }
     
     /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

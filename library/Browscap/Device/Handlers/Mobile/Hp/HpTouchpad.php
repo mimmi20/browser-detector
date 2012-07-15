@@ -137,7 +137,7 @@ class HpTouchpad extends HpBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\WebkitWebos();
+        $handler = new \Browscap\Browser\Handlers\Mobile\WebkitWebos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

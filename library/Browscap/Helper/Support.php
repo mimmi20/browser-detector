@@ -108,7 +108,7 @@ class Support
         
         $replaceRules = array(
             '/\.(NET CLR |NET4\.)([a-zA-Z0-9\-\.]+)/',
-            '/(media center pc|tablet pc|tob|aol|aolbuild|freenet|arcor|esobisubscriber|zango|zune|seekmotoolbar|versatel\.de isdn|ms\-rtc lm|shopperreports|hotbar|ant\.com toolbar|megaupload|zangotoolbar|dealio toolbar|spamblockerutility) ([\d\.]+)/i',
+            '/(media center pc|tablet pc|tob|aol|aolbuild|freenet|arcor|esobisubscriber|zango|zune|seekmotoolbar|versatel\.de isdn|ms\-rtc lm|shopperreports|hotbar|ant\.com toolbar|megaupload|zangotoolbar|dealio toolbar|spamblockerutility|searchtoolbar) ([\d\.]+)/i',
             '/(OfficeLiveConnector|OfficeLivePatch|InfoPath)\.([\d\.]+)/',
             '/SIMBAR\=\{([0-9A-Z\-]+)\}/',
             '/(slcc|btrs|bri\/|np|boie|t\-online ie|sv|iemb)(\d+)/i',
@@ -117,11 +117,11 @@ class Support
             '/(anonymized by Abelssoft|Anonymisiert durch AlMiSoft Browser\-Maulkorb|Anonymisiert durch AlMiSoft Browser\-Anonymisierer) (\d+)/',
             '/Gacela\=\d-\{([0-9A-Z\-]+)\}\-\d+/',
             '/tb\-(webde|gmx)\/([\d\.]+)/',
-            '/(webde|1und1|gmx|feed|imageshacktoolbar|lightning)\/([\d\.abpre]+)/i',
+            '/(webde|1und1|gmx|feed|imageshacktoolbar|lightning|firephp)\/([\d\.abpre]+)/i',
             '/easybits ([0-9a-z\ \.]+)/i',
             '/MSNIE(\d+)A/',
             '/(microsoft\.com|msn) optimized ie(\d+)/i',
-            '/(alexa toolbar|alexatoolbar)([0-9a-z\-]+)/i',
+            '/(alexa toolbar|alexatoolbar)([0-9a-z\-\\\\]+)/i',
             '/(funwebproducts|fdm|enusmscom|tmstmpext|compatible|t\-brand\-rc|cooee|t\-brand\-final|mddc|msn optimized|alexa toolbar|alexatoolbar)/i',
             '/ma(nm|md|pb|au|em|ar|ln)/i',
             '/mra ([\d\.]+) \(build \d+\)/i',

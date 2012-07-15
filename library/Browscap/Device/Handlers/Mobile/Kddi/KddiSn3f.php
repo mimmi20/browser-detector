@@ -102,7 +102,7 @@ class KddiSn3f extends KddiBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -127,7 +127,7 @@ class KddiSn3f extends KddiBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Openwave();
+        $handler = new \Browscap\Browser\Handlers\Mobile\Openwave();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

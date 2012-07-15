@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
-
 /**
  * CatchAllUserAgentHandler
  *

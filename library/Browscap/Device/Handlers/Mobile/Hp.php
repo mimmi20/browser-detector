@@ -55,7 +55,9 @@ class Hp extends GeneralMobile
             return false;
         }
         
-        $hpPhones = array('P160U', 'Hp', 'TouchPad', 'hpwOS', 'hp-tablet');
+        $hpPhones = array(
+            'P160U', 'Hp', 'TouchPad', 'hpwOS', 'hp-tablet', 'Pre/', 'Pixi/'
+        );
         
         if (!$this->_utils->checkIfContains($hpPhones)) {
             return false;
@@ -142,7 +144,7 @@ class Hp extends GeneralMobile
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\WebkitWebos();
+        $handler = new \Browscap\Browser\Handlers\Mobile\WebkitWebos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

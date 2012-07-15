@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcRadar4G extends HtcBase
+class HtcRadar4G extends HtcRadar
 {
     /**
      * @var string the detected device
@@ -65,69 +63,5 @@ class HtcRadar4G extends HtcBase
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect()
-    {
-        return $this;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $browserChain = $this->_utils->getBrowserChainForMobileWindows();
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
     }
 }

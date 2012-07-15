@@ -122,7 +122,7 @@ class SharpTqGx30i extends SharpBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Openwave();
+        $handler = new \Browscap\Browser\Handlers\Mobile\Openwave();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

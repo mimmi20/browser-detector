@@ -54,29 +54,29 @@ class Linux extends OsHandler
         
         $isNotReallyAnLinux = array(
             // special Linux versions
-            'Android',
-            'Debian',
-            'Ubuntu',
-            'CentOS',
-            'CrOS',
-            'Joli OS',
-            'Mint',
-            'SUSE',
-            'Fedora',
+            'android',
+            'debian',
+            'ubuntu',
+            'centos',
+            'cros',
+            'joli os',
+            'mint',
+            'suse',
+            'fedora',
             'redhat',
             'red hat',
-            'Slackware',
-            'NETTV',
-            'HbbTV',
-            'hpwOS',
-            'SMART-TV',
+            'slackware',
+            'nettv',
+            'hbbtv',
+            'hpwos',
+            'smart-tv',
             // other OS which are using X11
-            'BSD',
-            'SunOS',
-            'HP-UX'
+            'bsd',
+            'sunos',
+            'hp-ux'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnLinux)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnLinux, true)) {
             return false;
         }
         

@@ -97,7 +97,7 @@ class LgKu800 extends LgBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -122,7 +122,7 @@ class LgKu800 extends LgBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\TelecaObigo();
+        $handler = new \Browscap\Browser\Handlers\Mobile\TelecaObigo();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

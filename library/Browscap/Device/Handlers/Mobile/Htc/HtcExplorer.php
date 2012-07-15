@@ -50,7 +50,7 @@ class HtcExplorer extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC/Explorer')) {
+        if (!$this->_utils->checkIfContains(array('HTC/Explorer', 'HTC_Explorer'))) {
             return false;
         }
         

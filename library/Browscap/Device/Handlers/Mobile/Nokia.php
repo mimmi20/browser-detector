@@ -149,6 +149,7 @@ class Nokia extends GeneralMobile
      */
     public function getBrowser()
     {
+        /*
         $browsers = array(
             'MicrosoftMobileExplorer',
             'Nokia',
@@ -159,13 +160,23 @@ class Nokia extends GeneralMobile
             'Ucweb'
         );
         
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers);
-        $browserChain->setLogger($this->_logger);
+        $chain = new \Browscap\Browser\Chain(false, $browsers);
+        $chain->setLogger($this->_logger);
+        /**/
+        
+        $browserPath = realpath(
+            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
+            . DS . 'Handlers' . DS . 'Mobile' . DS
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
+            $chain->setCache($this->_cache);
         }
         
-        return $browserChain->detect($this->_useragent);
+        return $chain->detect($this->_useragent);
     }
 }

@@ -127,7 +127,7 @@ class SprintPpc6700 extends GeneralMobile
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\MicrosoftMobileExplorer();
+        $handler = new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

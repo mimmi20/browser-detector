@@ -48,7 +48,7 @@ class MotorolaXoom2 extends MotorolaXoom
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('XOOM 2')) {
+        if (!$this->_utils->checkIfContains(array('XOOM 2', 'MZ616'))) {
             return false;
         }
         

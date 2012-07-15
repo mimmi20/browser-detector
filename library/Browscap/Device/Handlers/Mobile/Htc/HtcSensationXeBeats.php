@@ -48,7 +48,7 @@ class HtcSensationXeBeats extends HtcSensationXe
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Sensation XE Beats', 'HTC_SensationXE_Beats'))) {
+        if (!$this->_utils->checkIfContains(array('HTC Sensation XE Beats', 'HTC_SensationXE_Beats', 'HTC Sensation XE with Beats'))) {
             return false;
         }
         

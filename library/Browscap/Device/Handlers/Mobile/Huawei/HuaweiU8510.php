@@ -55,7 +55,7 @@ class HuaweiU8510 extends HuaweiBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HuaweiU8510')) {
+        if (!$this->_utils->checkIfContains(array('HuaweiU8510', 'U8510'))) {
             return false;
         }
         

@@ -97,7 +97,7 @@ class SamsungGts8500 extends SamsungBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Bada();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -122,7 +122,7 @@ class SamsungGts8500 extends SamsungBase
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
+        $browserChain = $this->_utils->getBrowserChainForBada();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);
