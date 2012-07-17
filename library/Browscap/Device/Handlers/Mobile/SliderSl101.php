@@ -123,8 +123,10 @@ class SliderSl101 extends GeneralMobile
     public function getBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
-            . DS . 'Handlers' . DS . 'Mobile' . DS
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

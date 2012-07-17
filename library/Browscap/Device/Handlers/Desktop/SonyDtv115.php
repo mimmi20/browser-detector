@@ -127,7 +127,7 @@ class SonyDtv115 extends GeneralDesktop
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\InettvBrowser();
+        $handler = new \Browscap\Browser\Handlers\General\InettvBrowser();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

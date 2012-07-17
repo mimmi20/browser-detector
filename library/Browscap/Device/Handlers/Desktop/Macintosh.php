@@ -154,8 +154,10 @@ class Macintosh extends GeneralDesktop
     public function getBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
-            . DS . 'Handlers' . DS . 'Desktop' . DS
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Desktop' 
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Desktop';
         

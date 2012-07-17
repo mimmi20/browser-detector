@@ -71,7 +71,12 @@ class Logikpd extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Logikpd' . DS, __NAMESPACE__ . '\\Logikpd');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Logikpd' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Logikpd'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);

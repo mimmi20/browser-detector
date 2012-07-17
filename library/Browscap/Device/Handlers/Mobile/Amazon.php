@@ -73,7 +73,12 @@ class Amazon extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Amazon' . DS, __NAMESPACE__ . '\\Amazon');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Amazon' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Amazon'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);

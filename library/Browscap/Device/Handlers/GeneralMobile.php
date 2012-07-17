@@ -66,7 +66,12 @@ class GeneralMobile extends DeviceHandler
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Mobile' . DS, __NAMESPACE__ . '\\Mobile');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Mobile'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);

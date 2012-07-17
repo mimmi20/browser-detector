@@ -127,7 +127,7 @@ class LoeweSl121 extends DeviceHandler
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\HbbTv();
+        $handler = new \Browscap\Browser\Handlers\Desktop\HbbTv();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

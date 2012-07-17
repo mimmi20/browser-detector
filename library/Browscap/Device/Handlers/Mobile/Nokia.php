@@ -89,7 +89,12 @@ class Nokia extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Nokia' . DS, __NAMESPACE__ . '\\Nokia');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Nokia' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Nokia'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);
@@ -149,24 +154,11 @@ class Nokia extends GeneralMobile
      */
     public function getBrowser()
     {
-        /*
-        $browsers = array(
-            'MicrosoftMobileExplorer',
-            'Nokia',
-            'NokiaBrowser',
-            'NokiaProxyBrowser',
-            'OperaMini',
-            'OperaMobile',
-            'Ucweb'
-        );
-        
-        $chain = new \Browscap\Browser\Chain(false, $browsers);
-        $chain->setLogger($this->_logger);
-        /**/
-        
         $browserPath = realpath(
-            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
-            . DS . 'Handlers' . DS . 'Mobile' . DS
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

@@ -110,6 +110,12 @@ abstract class AbstractChain
         // the utility classes
         $this->_utils  = null;
         $this->_logger = null;
+        $this->_useHandlersFromDir = true;
+        $this->_handlersToUse = null;
+        $this->_defaultHandler = null;
+        $this->_directory = '';
+        $this->_namespace = '';
+        $this->_cache = null;
     }
     
     protected function _createChain()

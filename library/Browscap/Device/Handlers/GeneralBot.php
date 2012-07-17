@@ -125,8 +125,9 @@ class GeneralBot extends DeviceHandler
     public function getBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
-            . DS . 'Handlers' . DS . 'Bot' . DS
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR 
+            . 'Handlers' . DIRECTORY_SEPARATOR . 'Bot' . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Bot';
         

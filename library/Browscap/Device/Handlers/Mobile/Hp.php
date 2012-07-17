@@ -75,7 +75,12 @@ class Hp extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Hp' . DS, __NAMESPACE__ . '\\Hp');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Hp' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Hp'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);

@@ -154,4 +154,13 @@ abstract class Core
             179
         );
     }
+	
+	protected function _log($message, $level)
+	{
+		if (!($this->_logger instanceof \Zend\Log\Logger)) {
+			return false;
+		}
+		
+		$this->_logger->log($message, $level);
+	}
 }

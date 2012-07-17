@@ -51,7 +51,7 @@ final class Chain extends AbstractChain
      */
     protected function _setDefaultDirectory()
     {
-        $this->_directory = __DIR__ . DS . 'Handlers' . DS;
+        $this->_directory = __DIR__ . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR;
         
         return $this;
     }

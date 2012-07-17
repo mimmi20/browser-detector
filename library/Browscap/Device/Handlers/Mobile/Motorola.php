@@ -106,7 +106,12 @@ class Motorola extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Motorola' . DS, __NAMESPACE__ . '\\Motorola');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Motorola'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);
@@ -168,8 +173,10 @@ class Motorola extends GeneralMobile
     public function getBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
-            . DS . 'Handlers' . DS . 'Mobile' . DS
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

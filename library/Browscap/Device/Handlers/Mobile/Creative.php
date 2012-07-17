@@ -73,7 +73,12 @@ class Creative extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Creative' . DS, __NAMESPACE__ . '\\Creative');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Creative' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Creative'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);
@@ -133,8 +138,10 @@ class Creative extends GeneralMobile
     public function getBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . '..' . DS . '..' . DS . '..' . DS . '..' . DS . 'Browser' 
-            . DS . 'Handlers' . DS . 'Mobile' . DS
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

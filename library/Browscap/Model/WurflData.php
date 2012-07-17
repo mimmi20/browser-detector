@@ -62,7 +62,7 @@ class WurflData extends ModelAbstract
             $wurflData->getTable()->update(array('count' => new \Zend\Db\Expr('`count` + 1')), 'idWurflData = ' . $idWurflData);//count += 1;
         } else {
             // Provide the absolute or relative path to your wurfl-config.xml
-            $wurflConfigFile = realpath(__DIR__ . DS . '..' . DS . 'data' . DS . 'wurfl' . DS . 'wurfl-config.xml');
+            $wurflConfigFile = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'wurfl' . DIRECTORY_SEPARATOR . 'wurfl-config.xml');
             
             // Create WURFL Configuration from an XML config file
             $wurflConfig = new \WURFL_Configuration_XmlConfig($wurflConfigFile);

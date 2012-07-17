@@ -178,9 +178,7 @@ class Browscap extends Core
         try {
             return $this->_updateCache();
         } catch (Exception $e) {
-            if ($this->_logger instanceof \Zend\Log\Log) {
-                $this->_logger->err($e);
-            }
+			$this->_log($e, \Zend\Log\Logger::ERR);
 
             return array();
         }
@@ -278,17 +276,19 @@ class Browscap extends Core
 
         foreach ($parents as $parent) {
             if (!isset($browsers[$parent])) {
-                $this->_logger->warn(
-                    '"' . $parent . '" not found in browsers collection'
+                $this->_log(
+                    '"' . $parent . '" not found in browsers collection',
+					\Zend\Log\Logger::WARN
                 );
                 
                 continue;
             }
             
             if (!is_array($browsers[$parent])) {
-                $this->_logger->warn(
+                $this->_log(
                     '"' . $parent . '" found in browsers collection, '
-                    . 'but the entry is empty'
+                    . 'but the entry is empty',
+					\Zend\Log\Logger::WARN
                 );
                 
                 continue;

@@ -73,7 +73,12 @@ class Nintendo extends GeneralMobile
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(true, null, __DIR__ . DS . 'Nintendo' . DS, __NAMESPACE__ . '\\Nintendo');
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Nintendo' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Nintendo'
+        );
         $chain->setDefaultHandler($this);
         
         return $chain->detect($this->_useragent);
