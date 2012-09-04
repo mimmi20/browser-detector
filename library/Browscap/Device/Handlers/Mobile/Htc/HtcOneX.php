@@ -48,7 +48,7 @@ class HtcOneX extends HtcOne
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC One X')) {
+        if (!$this->_utils->checkIfContains(array('HTC One X', 'HTC_One_X'))) {
             return false;
         }
         

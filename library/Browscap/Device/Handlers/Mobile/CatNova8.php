@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers;
+namespace Browscap\Device\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: CatNova8.php 264 2012-07-17 06:46:00Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
+use Browscap\Device\Handlers\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,19 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: CatNova8.php 264 2012-07-17 06:46:00Z  $
  */
-class GeneralMobile extends DeviceHandler
+class CatNova8 extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Mobile Device';
+    protected $_device = 'Cat Nova 8';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Weltbild';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +55,11 @@ class GeneralMobile extends DeviceHandler
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return true;
+        if (!$this->_utils->checkIfContains(array('CatNova8'))) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -66,15 +71,7 @@ class GeneralMobile extends DeviceHandler
      */
     public function detect()
     {
-        $chain = new \Browscap\Device\Chain(
-            true, 
-            null, 
-            __DIR__ . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR, 
-            __NAMESPACE__ . '\\Mobile'
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect($this->_useragent);
+        return $this;
     }
     
     /**
@@ -84,17 +81,7 @@ class GeneralMobile extends DeviceHandler
      */
     public function getWeight()
     {
-        return 2;
-    }
-    
-    /**
-     * returns TRUE if the device is a mobile
-     *
-     * @return boolean
-     */
-    public function isMobileDevice()
-    {
-        return true;
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -104,41 +91,32 @@ class GeneralMobile extends DeviceHandler
      */
     public function isTablet()
     {
-        if ($this->_utils->checkIfContains('tablet', true)) {
-            return true;
-        }
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getOs()
+    {
+        $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser should be banned
-     *
-     * @return boolean
-     */
-    public function isBanned()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the device supports RSS Feeds
-     *
-     * @return boolean
-     */
-    public function isRssSupported()
-    {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the device supports PDF documents
-     *
-     * @return boolean
-     */
-    public function isPdfSupported()
-    {
-        return false;
+        return $handler->detect();
     }
     
     /**
@@ -161,8 +139,9 @@ class GeneralMobile extends DeviceHandler
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Handlers' 
-			. DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

@@ -53,11 +53,9 @@ class Googlebot extends Google
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('Google')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Googlebot', 'GoogleBot'))) {
+        if (!$this->_utils->checkIfStartsWith('google', true) 
+			&& !$this->_utils->checkIfContains('googlebot', true)
+		) {
             return false;
         }
         
@@ -100,6 +98,13 @@ class Googlebot extends Google
         }
         
         $doMatch = preg_match('/Googlebot-News\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Googlebot-Mobile\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

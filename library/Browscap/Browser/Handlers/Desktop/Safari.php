@@ -62,61 +62,32 @@ class Safari extends BrowserHandler
         $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
+            $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
         $doMatch = preg_match('/Safari\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
+            $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
         $doMatch = preg_match('/Safari(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
+            $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
         $doMatch = preg_match('/AppleWebKit\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
-            $this->_version = $this->_mapVersion($matches[1]);
+            $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
         $this->_version = '';
-    }
-    
-    private function _mapVersion($detectedVersion)
-    {
-        if ($detectedVersion >= 7500) {
-            return '5.1';
-        }
-        
-        if ($detectedVersion >= 6500) {
-            return '5.0';
-        }
-        
-        if ($detectedVersion >= 750) {
-            return '5.1';
-        }
-        
-        if ($detectedVersion >= 650) {
-            return '5.0';
-        }
-        
-        if ($detectedVersion >= 500) {
-            return '4.0';
-        }
-        
-        if (in_array($detectedVersion, array('4.0', '5.0', '5.1', '5.2'))) {
-            return $detectedVersion;
-        }
-        
-        return '';
     }
     
     /**

@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: GomezAgent.php 263 2012-07-15 18:44:42Z  $
  */
 
 /**
@@ -26,19 +26,14 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: GomezAgent.php 263 2012-07-15 18:44:42Z  $
  */
-class Bingbot extends GeneralBot
+class GomezAgent extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'BingBot';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Microsoft';
+    protected $_browser = 'GomezAgent';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -47,7 +42,15 @@ class Bingbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('bingbot/', 'Bing/', 'Bing for iPad/', 'BingPreview/'))) {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContains(array('GomezAgent'))) {
             return false;
         }
         
@@ -61,28 +64,7 @@ class Bingbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/bingbot\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Bing\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Bing for iPad\/(\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/BingPreview\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/GomezAgent (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -100,5 +82,30 @@ class Bingbot extends GeneralBot
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Gecko();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

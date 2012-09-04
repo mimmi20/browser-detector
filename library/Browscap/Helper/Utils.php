@@ -116,12 +116,14 @@ final class Utils
         'touchpad',
         'up.browser',
         'up.link',
+		'xblwp7',
         'wap2',
         'webos',
         'windows ce',
         'windows mobile',
         'windows phone os',
-        'wireless'
+        'wireless',
+		'zunewp7'
     );
     
     private $_bots = array(
@@ -131,6 +133,7 @@ final class Utils
         'acoon',
         'anyevent',
         'appengine-google',
+		'bing',
         'bot',
         'catalog',
         'clecko',
@@ -586,7 +589,8 @@ final class Utils
             'Sleipnir',
             'DarwinBrowser',
             'Facebook',
-            'Isource'
+            'Isource',
+			'Chrome'
         );
         
         $browserPath = realpath(
@@ -758,5 +762,39 @@ final class Utils
         $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
         
         return $browserChain;
+    }
+    
+    /**
+     * maps different Safari Versions to a normalized format
+     *
+     * @return string
+     */
+    public function mapSafariVersions($detectedVersion)
+    {
+        if ($detectedVersion >= 7500) {
+            return '5.1';
+        }
+        
+        if ($detectedVersion >= 6500) {
+            return '5.0';
+        }
+        
+        if ($detectedVersion >= 750) {
+            return '5.1';
+        }
+        
+        if ($detectedVersion >= 650) {
+            return '5.0';
+        }
+        
+        if ($detectedVersion >= 500) {
+            return '4.0';
+        }
+        
+        if (in_array($detectedVersion, array('4.0', '5.0', '5.1', '5.2', '6.0'))) {
+            return $detectedVersion;
+        }
+        
+        return '';
     }
 }

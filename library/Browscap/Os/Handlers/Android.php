@@ -64,32 +64,54 @@ class Android extends Linux
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Android (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Android ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Android\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Android\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Android WildPuzzleROM v8 froyo (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Android WildPuzzleROM v8 froyo ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Android AndroidHouse Team (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Android AndroidHouse Team ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
+        }
+        
+        $doMatch = preg_match('/Build\/([a-zA-Z]*)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            switch(strtolower($matches[1])) {
+				case 'gingerbread':
+					$this->_version = '2.3';
+					return;
+					break;
+				case 'grj90':
+					$this->_version = '2.3.5';
+					return;
+					break;
+				case 'hri66':
+					$this->_version = '3.0.1';
+					return;
+					break;
+				default:
+					// nothing to do here
+					break;
+            }
         }
         
         $this->_version = '';

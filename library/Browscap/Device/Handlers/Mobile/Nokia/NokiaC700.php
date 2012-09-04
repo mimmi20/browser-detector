@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Nintendo;
+namespace Browscap\Device\Handlers\Mobile\Nokia;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\Nintendo;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: NokiaC601.php 261 2012-07-08 07:30:46Z  $
  */
-
-use Browscap\Device\Handlers\Mobile\Nintendo as NintendoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handlers\Mobile\Nintendo as NintendoBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: NokiaC601.php 261 2012-07-08 07:30:46Z  $
  */
-class NintendoWii extends NintendoBase
+class NokiaC700 extends NokiaC7
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Wii';
+    protected $_device = 'C7-00';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +48,7 @@ class NintendoWii extends NintendoBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Nintendo Wii')) {
+        if (!$this->_utils->checkIfContains('NokiaC7-00')) {
             return false;
         }
         
@@ -65,18 +63,6 @@ class NintendoWii extends NintendoBase
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect()
-    {
-        return $this;
     }
     
     /**
@@ -97,7 +83,7 @@ class NintendoWii extends NintendoBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
+        $handler = new \Browscap\Os\Handlers\Symbianos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -122,10 +108,12 @@ class NintendoWii extends NintendoBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Mobile\Opera();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $browserChain = $this->_utils->getBrowserChainForSymbian();
         
-        return $handler->detect();
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

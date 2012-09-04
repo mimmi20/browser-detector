@@ -126,40 +126,4 @@ class Acer extends GeneralMobile
         
         return $handler->detect();
     }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
-    }
 }

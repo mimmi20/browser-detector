@@ -35,7 +35,7 @@ class HpTouchpad extends HpBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Touchpad';
+    protected $_device = 'TouchPad';
 
     /**
      * @var string the detected manufacturer

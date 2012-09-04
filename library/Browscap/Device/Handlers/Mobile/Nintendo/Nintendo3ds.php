@@ -97,7 +97,7 @@ class Nintendo3ds extends NintendoBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\NintendoWii();
+        $handler = new \Browscap\Os\Handlers\Unknown();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

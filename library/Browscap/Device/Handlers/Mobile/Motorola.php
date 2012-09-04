@@ -61,7 +61,7 @@ class Motorola extends GeneralMobile
             'mot',
             'mb200',
             'mb300',
-            'droid',
+            //'droid',
             'xt702',
             'mz601',
             'mz604',
