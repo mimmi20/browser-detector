@@ -60,14 +60,14 @@ class Heritrix extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/heritrix\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/heritrix\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Heritrix\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Heritrix\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

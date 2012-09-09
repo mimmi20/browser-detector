@@ -48,7 +48,9 @@ class WindowsMobileOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->isMobileWindows()) {
+        if (!$this->_utils->isMobileWindows() 
+			|| $this->_utils->checkIfContains('Windows Phone OS')
+		) {
             return false;
         }
         
@@ -65,7 +67,7 @@ class WindowsMobileOs extends OsHandler
     protected function _detectVersion()
     {
         if ($this->_utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
-            $doMatch = preg_match('/MSIEMobile (\d+\.\d+)/', $this->_useragent, $matches);
+            $doMatch = preg_match('/MSIEMobile ([\d\.]+)/', $this->_useragent, $matches);
             
             if ($doMatch) {
                 $this->_version = $matches[1];
@@ -73,13 +75,6 @@ class WindowsMobileOs extends OsHandler
             }
             
             $this->_version = '6.0';
-            return;
-        }
-        
-        $doMatch = preg_match('/Windows Phone OS (\d+\.\d+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
             return;
         }
         

@@ -104,7 +104,7 @@ class Camino extends Firefox
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Camino\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Camino\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

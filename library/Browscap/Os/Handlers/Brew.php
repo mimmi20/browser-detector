@@ -64,7 +64,7 @@ class Brew extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/BREW\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/BREW\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

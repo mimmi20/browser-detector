@@ -92,7 +92,7 @@ class Iceowl extends Thunderbird
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Iceowl\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Iceowl\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

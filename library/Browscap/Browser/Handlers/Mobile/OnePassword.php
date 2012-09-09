@@ -62,7 +62,7 @@ class OnePassword extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/1Password\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/1Password\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

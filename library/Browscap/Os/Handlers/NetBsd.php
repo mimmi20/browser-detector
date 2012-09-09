@@ -64,7 +64,7 @@ class NetBsd extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/NetBSD\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NetBSD\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -91,7 +91,7 @@ class Iceape extends Thunderbird
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Iceape\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Iceape\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

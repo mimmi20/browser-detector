@@ -69,11 +69,15 @@ class Samsung extends GeneralMobile
             'I7110'
         );
         
-        if ($this->_utils->checkIfContains($samsungPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains($samsungPhones)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains('Asus')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

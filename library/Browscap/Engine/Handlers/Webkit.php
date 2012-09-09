@@ -66,21 +66,21 @@ class Webkit extends EngineHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/AppleWebKit\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/WebKit\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WebKit\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/CFNetwork\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CFNetwork\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -62,14 +62,14 @@ class GoogleFeedfetcher extends Google
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Feedfetcher-Google\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Feedfetcher-Google\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Feedfetcher-Google-iGoogleGadgets\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Feedfetcher-Google-iGoogleGadgets\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

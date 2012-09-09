@@ -60,15 +60,7 @@ class MobileSafari extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Mobile', 'Tablet'))) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Safari', 'iPhone', 'iPad', 'iPod'))) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('AppleWebKit', 'CFNetwork'))) {
+        if (!$this->_utils->checkIfContains(array('Mobile', 'Tablet', 'Safari', 'iPhone', 'iPad', 'iPod', 'AppleWebKit', 'CFNetwork'))) {
             return false;
         }
         
@@ -104,28 +96,28 @@ class MobileSafari extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/Safari\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Safari\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/AppleWebKit\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_utils->mapSafariVersions($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/MobileSafari\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MobileSafari\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_utils->mapSafariVersions($matches[1]);

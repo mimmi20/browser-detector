@@ -119,6 +119,7 @@ final class Utils
 		'xblwp7',
         'wap2',
         'webos',
+		'wetab-browser',
         'windows ce',
         'windows mobile',
         'windows phone os',
@@ -394,14 +395,14 @@ final class Utils
     
     public function isFakeWindows()
     {
-        $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->_useragent, $matches);
         if ($doMatch) {
             return true;
         }
         
         $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
         
-        $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
         if ($doMatch) {
             if (in_array($matches[1], $ntVersions)) {
                 return false;
@@ -791,7 +792,7 @@ final class Utils
             return '4.0';
         }
         
-        if (in_array($detectedVersion, array('4.0', '5.0', '5.1', '5.2', '6.0'))) {
+        if (in_array($detectedVersion, array('3.2', '4.0', '5.0', '5.1', '5.2', '6.0'))) {
             return $detectedVersion;
         }
         

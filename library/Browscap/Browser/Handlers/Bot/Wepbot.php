@@ -60,7 +60,7 @@ class Wepbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Wepbot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Wepbot\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -48,7 +48,7 @@ class HtcDesireC extends HtcDesire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_DesireC', 'Desire C', 'HTC/DesireC', 'HTC Desire C'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireC', 'Desire C', 'HTC/DesireC', 'HTC Desire C', 'HTC_Desire_C'))) {
             return false;
         }
         

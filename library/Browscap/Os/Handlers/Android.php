@@ -92,28 +92,6 @@ class Android extends Linux
             return;
         }
         
-        $doMatch = preg_match('/Build\/([a-zA-Z]*)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            switch(strtolower($matches[1])) {
-				case 'gingerbread':
-					$this->_version = '2.3';
-					return;
-					break;
-				case 'grj90':
-					$this->_version = '2.3.5';
-					return;
-					break;
-				case 'hri66':
-					$this->_version = '3.0.1';
-					return;
-					break;
-				default:
-					// nothing to do here
-					break;
-            }
-        }
-        
         $this->_version = '';
     }
     

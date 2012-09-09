@@ -78,7 +78,7 @@ class Windows extends OsHandler
             return;
         }
         
-        $doMatch = preg_match('/Windows NT (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             switch ($matches[1]) {

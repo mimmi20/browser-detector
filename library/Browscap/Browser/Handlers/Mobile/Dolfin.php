@@ -62,21 +62,21 @@ class Dolfin extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Dolfin\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Dolfin\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Dolphin\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Dolphin\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Dolphin HD (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Dolphin HD ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

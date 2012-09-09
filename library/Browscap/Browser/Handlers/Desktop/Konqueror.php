@@ -60,11 +60,7 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('KHTML')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Konqueror', 'konqueror', 'kded'))) {
+        if (!$this->_utils->checkIfContains(array('KHTML', 'Konqueror', 'konqueror', 'kded'))) {
             return false;
         }
         
@@ -98,14 +94,14 @@ class Konqueror extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Konqueror\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Konqueror\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/konqueror\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/konqueror\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

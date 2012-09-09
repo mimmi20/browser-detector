@@ -66,7 +66,7 @@ class Khtml extends EngineHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/KHTML\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/KHTML\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

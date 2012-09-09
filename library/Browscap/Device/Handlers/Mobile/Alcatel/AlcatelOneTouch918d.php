@@ -48,7 +48,7 @@ class AlcatelOneTouch918d extends AlcatelOneTouch918
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('ALCATEL ONE TOUCH 918D')) {
+        if (!$this->_utils->checkIfContains(array('ALCATEL ONE TOUCH 918D', 'ALCATEL_one_touch_918D'))) {
             return false;
         }
         

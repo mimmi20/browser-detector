@@ -67,21 +67,21 @@ class InettvBrowser extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/InettvBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/InettvBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/InettvBrowser (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/InettvBrowser ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

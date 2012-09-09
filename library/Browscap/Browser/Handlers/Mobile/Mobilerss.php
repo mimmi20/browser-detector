@@ -62,21 +62,21 @@ class Mobilerss extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/MobileRSS\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MobileRSS\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/MobileRSSFree\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MobileRSSFree\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/MobileRSSFree-iPad\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MobileRSSFree-iPad\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -64,14 +64,14 @@ class Os2 extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/OS\/2 (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/OS\/2 ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Warp (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Warp ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

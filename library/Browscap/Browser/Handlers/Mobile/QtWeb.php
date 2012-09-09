@@ -66,7 +66,7 @@ class QtWeb extends Qt
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/QtWeb Internet Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/QtWeb Internet Browser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

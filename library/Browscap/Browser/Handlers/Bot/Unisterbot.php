@@ -69,7 +69,7 @@ class Unisterbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Unisterbot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Unisterbot\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -50,7 +50,7 @@ class HtcHd2 extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC HD2')) {
+        if (!$this->_utils->checkIfContains(array('HTC HD2', 'HTC_HD2'))) {
             return false;
         }
         
