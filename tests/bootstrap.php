@@ -44,7 +44,7 @@ date_default_timezone_set('Europe/Berlin');
  */
 define('DS', DIRECTORY_SEPARATOR);
 define('ENCODING', 'utf-8');
-define('ROOT_PATH', realpath(dirname(__FILE__) . DS . '..' . DS));
+define('ROOT_PATH', realpath(__DIR__ . DS . '..' . DS));
 
 define('APPLICATION_PATH', ROOT_PATH . DS . 'application');
 define('DATA_PATH', ROOT_PATH . DS . 'data');

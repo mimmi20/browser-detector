@@ -1,10 +1,10 @@
 <?php
-//require_once dirname(__FILE__) . '/../../../../ControllerTestCase.php';
+//require_once __DIR__ . '/../../../../ControllerTestCase.php';
 
 /** @see PHPUnit_Framework_TestCase */
 require_once 'PHPUnit/Framework/TestCase.php';
 
-require_once dirname(__FILE__) . '/../../../../library/Browscap/Browscap.php';
+require_once __DIR__ . '/../../../../library/Browscap/Browscap.php';
 require_once LIB_PATH . '/Zend/Db/Db.php';
 
 /**

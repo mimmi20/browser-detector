@@ -180,7 +180,7 @@ class ControllerTestCase extends \Zend\Test\PHPUnit\ControllerTestCase
      */
     protected function getDataSet()
     {
-        return $this->createXMLDataSet(dirname(__FILE__).'/_files/dataSet.xml');
+        return $this->createXMLDataSet(__DIR__.'/_files/dataSet.xml');
     }
 
     protected function createTables()
