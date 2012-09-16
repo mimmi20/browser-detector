@@ -48,7 +48,7 @@ class HtcGratiaA6380 extends HtcGratia
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Gratia A6380'))) {
+        if (!$this->_utils->checkIfContains(array('HTC Gratia A6380', 'HTC_Gratia_A6380'))) {
             return false;
         }
         

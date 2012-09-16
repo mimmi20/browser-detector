@@ -11,7 +11,6 @@ namespace Browscap\Browser\Handlers\Desktop;
  *
  * Refer to the COPYING.txt file distributed with this package.
  *
- *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
@@ -22,7 +21,7 @@ namespace Browscap\Browser\Handlers\Desktop;
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * BenQUserAgentHandler
+ * SafariHandler
  *
  *
  * @category   WURFL
@@ -31,12 +30,12 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SmartTv extends BrowserHandler
+class Powermarks extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'SmartTV';
+    protected $_browser = 'Powermarks';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -49,11 +48,11 @@ class SmartTv extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('SmartTV', 'SMART-TV'))) {
-            return true;
+        if (!$this->_utils->checkIfContains(array('Powermarks'))) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -63,21 +62,7 @@ class SmartTv extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/SmartTV\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/SMART-TV\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/WebBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Powermarks\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -85,6 +70,11 @@ class SmartTv extends BrowserHandler
         }
         
         $this->_version = '';
+    }
+    
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -105,7 +95,7 @@ class SmartTv extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
+        $handler = new \Browscap\Engine\Handlers\Unknown();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

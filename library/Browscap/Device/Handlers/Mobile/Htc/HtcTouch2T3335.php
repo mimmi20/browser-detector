@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcDesireHd extends HtcDesire
+class HtcTouch2T3335 extends HtcTouch2
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Desire HD';
+    protected $_device = 'Touch2 T3335';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class HtcDesireHd extends HtcDesire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_Touch2_T3335'))) {
             return false;
         }
         
@@ -63,6 +63,18 @@ class HtcDesireHd extends HtcDesire
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        return $this;
     }
     
     /**
@@ -83,7 +95,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -108,7 +120,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
+        $browserChain = $this->_utils->getBrowserChainForJava();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

@@ -35,7 +35,7 @@ class MotorolaA953 extends MotorolaBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'MotoA953';
+    protected $_device = 'A953';
     
     /**
      * Final Interceptor: Intercept

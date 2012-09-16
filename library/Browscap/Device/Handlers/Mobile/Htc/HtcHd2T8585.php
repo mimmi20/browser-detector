@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Htc;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,17 +28,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Iphone extends GeneralMobile
+class HtcHd2T8585 extends HtcHd2
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'iPhone';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Apple';
+    protected $_device = 'T8585';
     
     /**
      * Final Interceptor: Intercept
@@ -55,15 +48,21 @@ class Iphone extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('iPhone')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('iPod', 'iPod Touch', 'iPad', 'ipad'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_HD2_T8585'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -76,36 +75,6 @@ class Iphone extends GeneralMobile
     public function detect()
     {
         return $this;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device supports RSS Feeds
-     *
-     * @return boolean
-     */
-    public function isRssSupported()
-    {
-        return true;
-    }
-    
-    /**
-     * returns TRUE if the device supports PDF documents
-     *
-     * @return boolean
-     */
-    public function isPdfSupported()
-    {
-        return true;
     }
     
     /**
@@ -126,7 +95,7 @@ class Iphone extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Ios();
+        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -151,7 +120,7 @@ class Iphone extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForIos();
+        $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

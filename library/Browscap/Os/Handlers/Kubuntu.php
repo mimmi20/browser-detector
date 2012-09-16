@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Os\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -11,7 +11,6 @@ namespace Browscap\Browser\Handlers\Mobile;
  *
  * Refer to the COPYING.txt file distributed with this package.
  *
- *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
@@ -20,7 +19,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  */
 
 /**
- * NokiaUserAgentHandler
+ * MSIEAgentHandler
  *
  *
  * @category   WURFL
@@ -29,20 +28,15 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaBrowser extends Nokia
+class Kubuntu extends Ubuntu
 {
     /**
-     * @var string the detected browser
+     * @var string the detected platform
      */
-    protected $_browser = 'NokiaBrowser';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Nokia';
+    protected $_name = 'Kubuntu';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Returns true if this handler can handle the given $useragent
      *
      * @return bool
      */
@@ -52,21 +46,37 @@ class NokiaBrowser extends Nokia
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaBrowser'))) {
-            return true;
+        if (!$this->_utils->checkIfContains('kubuntu', true)) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
      * detects the browser version from the given user agent
      *
+     * @param string $this->_useragent
+     *
      * @return string
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/NokiaBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Kubuntu\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/kubuntu([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Kubuntu ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -83,38 +93,6 @@ class NokiaBrowser extends Nokia
      */
     public function getWeight()
     {
-        return 3;
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $engines = array(
-            'Webkit'
-        );
-        
-        $engineChain = new \Browscap\Engine\Chain(false, $engines);
-        $engineChain->setLogger($this->_logger);
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $engineChain->setCache($this->_cache);
-        }
-        
-        return $engineChain->detect($this->_useragent);
+        return parent::getWeight() + 1;
     }
 }

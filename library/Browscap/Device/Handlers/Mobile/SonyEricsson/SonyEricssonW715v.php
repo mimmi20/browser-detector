@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcDesireHd extends HtcDesire
+class SonyEricssonW715v extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Desire HD';
+    protected $_device = 'W715v';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcDesireHd extends HtcDesire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD'))) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonW715v', 'W715v'))) {
             return false;
         }
         
@@ -63,6 +65,18 @@ class HtcDesireHd extends HtcDesire
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        return $this;
     }
     
     /**
@@ -83,7 +97,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -108,7 +122,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
+        $browserChain = $this->_utils->getBrowserChainForJava();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

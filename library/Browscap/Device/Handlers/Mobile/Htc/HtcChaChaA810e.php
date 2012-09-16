@@ -48,7 +48,7 @@ class HtcChaChaA810e extends HtcChaCha
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/ChaCha/A810e', 'HTC ChaCha A810e'))) {
+        if (!$this->_utils->checkIfContains(array('HTC/ChaCha/A810e', 'HTC ChaCha A810e', 'HTC_ChaCha_A810e'))) {
             return false;
         }
         

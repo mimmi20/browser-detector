@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungSghi917.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungSghi917.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 class SamsungOmnia7 extends SamsungBase
 {

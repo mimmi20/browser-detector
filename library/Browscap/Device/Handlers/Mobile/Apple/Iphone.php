@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Dell;
+namespace Browscap\Device\Handlers\Mobile\Apple;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Dell;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Dell as DellBase;
+use Browscap\Device\Handlers\Mobile\Apple as AppleBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,13 +30,13 @@ use Browscap\Device\Handlers\Mobile\Dell as DellBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class DellStreak extends DellBase
+class Iphone extends AppleBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Streak';
-    
+    protected $_device = 'iPhone';
+
     /**
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
@@ -50,21 +50,15 @@ class DellStreak extends DellBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Dell Streak')) {
+        if (!$this->_utils->checkIfContains('iPhone')) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('ipod', 'ipod touch', 'ipad', 'ipad'), true)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -80,54 +74,32 @@ class DellStreak extends DellBase
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 5;
+    }
+    
+    /**
+     * returns TRUE if the device supports RSS Feeds
      *
      * @return boolean
      */
-    public function hasOs()
+    public function isRssSupported()
     {
         return true;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
+     * returns TRUE if the device supports PDF documents
      *
      * @return boolean
      */
-    public function hasBrowser()
+    public function isPdfSupported()
     {
         return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
     }
 }

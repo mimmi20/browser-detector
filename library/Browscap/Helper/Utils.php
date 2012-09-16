@@ -557,7 +557,8 @@ final class Utils
             'Android',
             'Dalvik',
             'Chrome',
-            'Dolfin'
+            'Dolfin',
+            'Silk'
         );
         
         $browserPath = realpath(
@@ -620,7 +621,6 @@ final class Utils
     {
         $browsers = array(
             'Nokia',
-            'NokiaBrowser',
             'NokiaBrowserNg',
             'OperaMini',
             'Ucweb',
@@ -688,6 +688,7 @@ final class Utils
             'OperaMini',
             'Ucweb',
             'Dolfin',
+			'Jasmine',
             'Motorola',
             'TelecaObigo',
             'Openwave'

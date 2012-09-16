@@ -57,11 +57,15 @@ class Amazon extends GeneralMobile
         
         $amazonPhones = array('Amazon', 'Kindle', 'Silk');
         
-        if ($this->_utils->checkIfContains($amazonPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains($amazonPhones)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains('PlayStation')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

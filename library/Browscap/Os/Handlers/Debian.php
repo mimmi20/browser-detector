@@ -76,6 +76,11 @@ class Debian extends Linux
             return;
         }
         
+        if ($this->_utils->checkIfContainsAll(array('debian', 'squeeze'), true)) {
+            $this->_version = '6.0';
+            return;
+        }
+        
         $this->_version = '';
     }
     

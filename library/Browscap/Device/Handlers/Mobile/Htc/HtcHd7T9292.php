@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Htc7Mozart.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Htc7Mozart.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 class HtcHd7T9292 extends HtcBase
 {

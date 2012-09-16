@@ -52,7 +52,7 @@ class NokiaBrowserNg extends Nokia
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('BrowserNG'))) {
+        if ($this->_utils->checkIfContains(array('BrowserNG', 'NokiaBrowser'))) {
             return true;
         }
         
@@ -67,6 +67,13 @@ class NokiaBrowserNg extends Nokia
     protected function _detectVersion()
     {
         $doMatch = preg_match('/BrowserNG\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/NokiaBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

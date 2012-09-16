@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Desktop;
+namespace Browscap\Device\Handlers\Mobile\Apple;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Desktop;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralDesktop;
+use Browscap\Device\Handlers\Mobile\Apple as AppleBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralDesktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class DlinkDsm380 extends GeneralDesktop
+class Ipod extends AppleBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'DSM 380';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'DLink';
+    protected $_device = 'iPod';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +50,7 @@ class DlinkDsm380 extends GeneralDesktop
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('dlink.dsm380')) {
+        if (!$this->_utils->checkIfContains('iPod')) {
             return false;
         }
         
@@ -81,56 +76,6 @@ class DlinkDsm380 extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 5;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getOs()
-    {
-        $handler = new \Browscap\Os\Handlers\LinuxTv();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $handler = new \Browscap\Browser\Handlers\General\Boxee();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return parent::getWeight() + 5;
     }
 }

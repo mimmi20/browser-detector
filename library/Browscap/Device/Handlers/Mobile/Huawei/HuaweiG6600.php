@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Huawei;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Huawei as HuaweiBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Ipod extends GeneralMobile
+class HuaweiG6600 extends HuaweiBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'iPod';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Apple';
+    protected $_device = 'G6600';
     
     /**
      * Final Interceptor: Intercept
@@ -55,11 +50,21 @@ class Ipod extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('iPod')) {
+        if (!$this->_utils->checkIfContainsAll(array('huawei', 'g6600'), true)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -75,13 +80,13 @@ class Ipod extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns TRUE if the device is a tablet
      *
-     * @return integer
+     * @return boolean
      */
-    public function getWeight()
+    public function isTablet()
     {
-        return 5;
+        return false;
     }
     
     /**
@@ -102,7 +107,7 @@ class Ipod extends GeneralMobile
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Ios();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -127,7 +132,7 @@ class Ipod extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForIos();
+        $browserChain = $this->_utils->getBrowserChainForJava();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

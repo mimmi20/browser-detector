@@ -15,7 +15,7 @@ namespace Browscap\Os\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: WindowsMobileOs.php 255 2012-07-03 20:51:49Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Os\Handler as OsHandler;
@@ -28,7 +28,7 @@ use Browscap\Os\Handler as OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: WindowsMobileOs.php 255 2012-07-03 20:51:49Z  $
+ * @version    SVN: $Id$
  */
 class WindowsPhoneOs extends OsHandler
 {

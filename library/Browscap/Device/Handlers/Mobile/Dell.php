@@ -55,9 +55,9 @@ class Dell extends GeneralMobile
             return false;
         }
         
-        $dellphones = array('Dell');
+        $dellphones = array('dell');
         
-        if ($this->_utils->checkIfContains($dellphones)) {
+        if ($this->_utils->checkIfContains($dellphones, true)) {
             return true;
         }
         

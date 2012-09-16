@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\GeneralMobile;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,17 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcDesireHd extends HtcDesire
+class Apple extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Desire HD';
+    protected $_device = 'general Apple Device';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Apple';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +55,31 @@ class HtcDesireHd extends HtcDesire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD'))) {
+        if (!$this->_utils->checkIfContains(array('ipad', 'iphone', 'ipod'), true)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detect()
+    {
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Apple' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Apple'
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect($this->_useragent);
     }
     
     /**
@@ -62,7 +89,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return parent::getWeight() + 5;
     }
     
     /**
@@ -83,7 +110,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\Ios();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -108,7 +135,7 @@ class HtcDesireHd extends HtcDesire
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
+        $browserChain = $this->_utils->getBrowserChainForIos();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

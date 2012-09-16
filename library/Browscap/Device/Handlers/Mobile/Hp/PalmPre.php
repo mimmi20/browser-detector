@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Hp;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HpP160U.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Hp as HpBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Hp as HpBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HpP160U.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 class PalmPre extends HpBase
 {
