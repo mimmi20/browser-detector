@@ -55,7 +55,7 @@ class Apple extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ipad', 'iphone', 'ipod'), true)) {
+        if (!$this->_utils->checkIfContains(array('ipad', 'iphone', 'ipod', 'like mac os x'), true)) {
             return false;
         }
         

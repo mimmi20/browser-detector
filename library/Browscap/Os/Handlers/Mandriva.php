@@ -28,12 +28,12 @@ namespace Browscap\Os\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Android extends Linux
+class Mandriva extends Linux
 {
     /**
      * @var string the detected platform
      */
-    protected $_name = 'Android';
+    protected $_name = 'Mandriva Linux';
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -46,9 +46,7 @@ class Android extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Android', 'Silk'))
-            && !$this->_utils->isMobileAsSafari()
-        ) {
+        if (!$this->_utils->checkIfContains('Mandriva', true)) {
             return false;
         }
         
@@ -64,32 +62,14 @@ class Android extends Linux
      */
     protected function _detectVersion()
     {
-        if ($this->_utils->checkIfContains('Android 2.1-update1')) {
-            return '2.1.1';
-        }
-        
-        $doMatch = preg_match('/Android ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mandriva\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Android\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Android WildPuzzleROM v8 froyo ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Android AndroidHouse Team ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mandriva Linux\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -97,15 +77,5 @@ class Android extends Linux
         }
         
         $this->_version = '';
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 648;
     }
 }

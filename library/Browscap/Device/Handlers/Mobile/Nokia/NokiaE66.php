@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,12 +28,12 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaE7 extends NokiaBase
+class NokiaE66 extends NokiaE6
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'E7';
+    protected $_device = 'E66';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +48,7 @@ class NokiaE7 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NokiaE7')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains('NokiaE71', 'NokiaE72')) {
+        if (!$this->_utils->checkIfContains('NokiaE66')) {
             return false;
         }
         

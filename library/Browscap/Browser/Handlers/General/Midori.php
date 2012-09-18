@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Os\Handlers;
+namespace Browscap\Browser\Handlers\General;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,8 +18,10 @@ namespace Browscap\Os\Handlers;
  * @version    SVN: $Id$
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
- * MSIEAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
@@ -28,15 +30,15 @@ namespace Browscap\Os\Handlers;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Android extends Linux
+class Midori extends BrowserHandler
 {
     /**
-     * @var string the detected platform
+     * @var string the detected browser
      */
-    protected $_name = 'Android';
+    protected $_browser = 'Midori';
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
@@ -46,50 +48,32 @@ class Android extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Android', 'Silk'))
-            && !$this->_utils->isMobileAsSafari()
-        ) {
-            return false;
+        if ($this->_utils->checkIfStartsWith('Midori')) {
+            return true;
         }
         
-        return true;
+        if ($this->_utils->checkIfContains('Midori')) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $this->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
     {
-        if ($this->_utils->checkIfContains('Android 2.1-update1')) {
-            return '2.1.1';
-        }
-        
-        $doMatch = preg_match('/Android ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Midori\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Android\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Android WildPuzzleROM v8 froyo ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Android AndroidHouse Team ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Midori-([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -106,6 +90,31 @@ class Android extends Linux
      */
     public function getWeight()
     {
-        return 648;
+        return 8;
+    }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Webkit();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

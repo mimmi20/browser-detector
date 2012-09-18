@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Nokia;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,17 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaE7 extends NokiaBase
+class PlayStationPortable extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'E7';
+    protected $_device = 'PlayStation Portable';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept
@@ -50,15 +55,11 @@ class NokiaE7 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NokiaE7')) {
-            return false;
+        if ($this->_utils->checkIfContains(array('PlayStation Portable', 'PSP'))) {
+            return true;
         }
         
-        if ($this->_utils->checkIfContains('NokiaE71', 'NokiaE72')) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -84,6 +85,26 @@ class NokiaE7 extends NokiaBase
     }
     
     /**
+     * returns TRUE if the device supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return true;
+    }
+    
+    /**
+     * returns TRUE if the device supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
+    }
+    
+    /**
      * returns TRUE if the device has a specific Operating System
      *
      * @return boolean
@@ -101,7 +122,7 @@ class NokiaE7 extends NokiaBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Symbianos();
+        $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -126,12 +147,10 @@ class NokiaE7 extends NokiaBase
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForSymbian();
+        $handler = new \Browscap\Browser\Handlers\Mobile\NetFront();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
+        return $handler->detect();
     }
 }

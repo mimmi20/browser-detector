@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Nokia;
+namespace Browscap\Device\Handlers\Mobile\Nintendo;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
+use Browscap\Device\Handlers\Mobile\Nintendo as NintendoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaE7 extends NokiaBase
+class NintendoDsi extends NintendoBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'E7';
+    protected $_device = 'DSi';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +50,7 @@ class NokiaE7 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NokiaE7')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains('NokiaE71', 'NokiaE72')) {
+        if (!$this->_utils->checkIfContains('Nintendo DSi')) {
             return false;
         }
         
@@ -101,7 +97,7 @@ class NokiaE7 extends NokiaBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Symbianos();
+        $handler = new \Browscap\Os\Handlers\Unknown();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -126,12 +122,10 @@ class NokiaE7 extends NokiaBase
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForSymbian();
+        $handler = new \Browscap\Browser\Handlers\Mobile\Opera();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
+        return $handler->detect();
     }
 }

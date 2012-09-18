@@ -73,7 +73,8 @@ class Icab extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
-            'Firefox'
+            'Firefox',
+            'Lynx'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {

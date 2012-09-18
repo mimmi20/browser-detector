@@ -50,6 +50,10 @@ class Ubuntu extends Linux
             return false;
         }
         
+        if ($this->_utils->checkIfContains('kubuntu', true)) {
+            return false;
+        }
+        
         return true;
     }
     

@@ -60,6 +60,7 @@ class Linux extends OsHandler
             'centos',
             'cros',
             'joli os',
+            'mandriva',
             'mint',
             'suse',
             'fedora',

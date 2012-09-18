@@ -78,7 +78,8 @@ class SonyEricsson extends GeneralMobile
             'X1i',
             'X10i',
             'XST2',
-            'PlayStation Vita'
+            'PlayStation',
+            'PSP'
         );
         
         if ($this->_utils->checkIfContains($sonyPhones)) {

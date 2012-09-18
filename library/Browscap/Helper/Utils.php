@@ -170,7 +170,7 @@ final class Utils
         'snap',
         'spider',
         'stats',
-        'svn',
+        //'svn',
         'test-acceptance',
         'unister-test',
         'webu',
@@ -426,7 +426,7 @@ final class Utils
     public function isMobileWindows()
     {
         $mobileWindows = array(
-            'Windows CE', 'Windows Phone OS', 'Windows Mobile', 
+            'Windows CE', 'Windows Phone', 'Windows Mobile', 
             'Microsoft Windows; PPC', 'IEMobile'
         );
         
@@ -793,7 +793,11 @@ final class Utils
             return '4.0';
         }
         
-        if (in_array($detectedVersion, array('3.2', '4.0', '5.0', '5.1', '5.2', '6.0'))) {
+        $regularVersions = array(
+            '3.0', '3.1', '3.2', '4.0', '5.0', '5.1', '5.2', '6.0'
+        );
+        
+        if (in_array($detectedVersion, $regularVersions)) {
             return $detectedVersion;
         }
         

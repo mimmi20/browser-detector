@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Nokia5800XpressMusic extends NokiaBase
+class Nokia5800XpressMusic extends Nokia5800
 {
     /**
      * @var string the detected device
@@ -52,6 +50,7 @@ class Nokia5800XpressMusic extends NokiaBase
         
         if (!$this->_utils->checkIfContains('Nokia5800XpressMusic')
             && !$this->_utils->checkIfContains('Nokia5800 XpressMusic')
+            && !$this->_utils->checkIfContains('Nokia5800d')
         ) {
             return false;
         }

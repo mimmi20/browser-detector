@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Bot;
+namespace Browscap\Browser\Handlers\General;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.

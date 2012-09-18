@@ -18,7 +18,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handlers\General\Midori as DefaultMidori;
+use Browscap\Browser\Handlers\General\Spector as DefaultSpector;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,7 +30,7 @@ use Browscap\Browser\Handlers\General\Midori as DefaultMidori;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Midori extends DefaultMidori
+class Spector extends DefaultSpector
 {
     // nothing to do
 }

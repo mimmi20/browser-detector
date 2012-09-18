@@ -50,7 +50,7 @@ class BlackBerry8700 extends BlackBerryBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('BlackBerry8700')) {
+        if (!$this->_utils->checkIfContains('BlackBerry8700', 'BlackBerry8700')) {
             return false;
         }
         
