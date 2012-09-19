@@ -50,7 +50,7 @@ class BlackBerry9105 extends BlackBerryBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('BlackBerry 9105'))) {
+        if (!$this->_utils->checkIfContains(array('BlackBerry 9105', 'BlackBerry9105'))) {
             return false;
         }
         

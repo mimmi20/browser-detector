@@ -114,6 +114,7 @@ final class Utils
         'symbianos',
         'symbos',
         'touchpad',
+        'transformer tf',
         'up.browser',
         'up.link',
 		'xblwp7',

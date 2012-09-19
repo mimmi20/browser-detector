@@ -33,7 +33,7 @@ class MotorolaDroidRazr extends MotorolaDroid
     /**
      * @var string the detected device
      */
-    protected $_device = 'DROID RAZR';
+    protected $_device = 'Razr';
     
     /**
      * Final Interceptor: Intercept

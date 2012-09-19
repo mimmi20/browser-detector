@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaC3 extends NokiaBase
+class NokiaE62 extends NokiaBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'C3';
+    protected $_device = 'E62';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +50,7 @@ class NokiaC3 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NokiaC3')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('NokiaC3-00', 'NokiaC3-01'))) {
+        if (!$this->_utils->checkIfContains('NokiaE62')) {
             return false;
         }
         
