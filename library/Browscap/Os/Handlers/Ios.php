@@ -48,7 +48,12 @@ class Ios extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone', 'iPod'))) {
+        $ios = array(
+            'IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone',
+            'iPod', 'CPU OS', 'CPU iOS'
+        );
+        
+        if (!$this->_utils->checkIfContains($ios)) {
             return false;
         }
         
@@ -64,28 +69,35 @@ class Ios extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/IphoneOSX\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/CPU OS (\d+\_\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/IphoneOSX\/([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/CPU iPad OS (\d+\_\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CPU OS ([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/iPhone OS (\d+\_\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CPU iOS ([\d\.\_]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
+        }
+        
+        $doMatch = preg_match('/CPU iPad OS ([\d\.\_]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = str_replace('_', '.', $matches[1]);
+            return;
+        }
+        
+        $doMatch = preg_match('/iPhone OS ([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
@@ -99,14 +111,14 @@ class Ios extends OsHandler
             return;
         }
         
-        $doMatch = preg_match('/iPhone OS ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/iPhone OS ([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/iPhone_OS\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/iPhone_OS\/([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);

@@ -64,8 +64,9 @@ class Android extends Linux
      */
     protected function _detectVersion()
     {
-        if ($this->_utils->checkIfContains('Android 2.1-update1')) {
-            return '2.1.1';
+        if ($this->_utils->checkIfContains('android 2.1-update1', true)) {
+            $this->_version = '2.1.1';
+            return;
         }
         
         $doMatch = preg_match('/Android ([\d\.]+)/', $this->_useragent, $matches);

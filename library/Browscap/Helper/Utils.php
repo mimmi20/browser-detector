@@ -798,7 +798,7 @@ final class Utils
             '3.0', '3.1', '3.2', '4.0', '5.0', '5.1', '5.2', '6.0'
         );
         
-        if (in_array($detectedVersion, $regularVersions)) {
+        if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {
             return $detectedVersion;
         }
         

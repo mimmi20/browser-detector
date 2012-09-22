@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Os\Handlers;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,10 +18,8 @@ namespace Browscap\Os\Handlers;
  * @version    SVN: $Id$
  */
 
-use Browscap\Os\Handler as OsHandler;
-
 /**
- * MSIEAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
@@ -30,25 +28,26 @@ use Browscap\Os\Handler as OsHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Macosx extends Macintosh
+class Baidu extends GeneralBot
 {
     /**
-     * @var string the detected platform
+     * @var string the detected browser
      */
-    protected $_name = 'MacOSX';
+    protected $_browser = 'Baidu';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Baidu';
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
+        if (!$this->_utils->checkIfContains(array('baiduspider/', 'baidu'), true)) {
             return false;
         }
         
@@ -58,41 +57,18 @@ class Macosx extends Macintosh
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $this->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Mac OS X ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/baiduspider\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Mac OS X ([\d\.\_]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = str_replace('_', '.', $matches[1]);
-            return;
-        }
-        
-        $doMatch = preg_match('/Mac OS X\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Mac OS X\/([\d\.\_]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = str_replace('_', '.', $matches[1]);
-            return;
-        }
-        
-        $this->_version = '10';
+        $this->_version = '';
     }
     
     /**
@@ -102,6 +78,6 @@ class Macosx extends Macintosh
      */
     public function getWeight()
     {
-        return 295;
+        return 3;
     }
 }
