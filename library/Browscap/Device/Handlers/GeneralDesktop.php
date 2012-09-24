@@ -129,6 +129,16 @@ class GeneralDesktop extends DeviceHandler
     }
     
     /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isDesktop()
+    {
+        return true;
+    }
+    
+    /**
      * returns TRUE if the device supports RSS Feeds
      *
      * @return boolean

@@ -222,6 +222,16 @@ abstract class Handler implements MatcherInterface
      *
      * @return boolean
      */
+    public function isDesktop()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
     public function isBanned()
     {
         return false;

@@ -82,6 +82,16 @@ class GeneralBot extends DeviceHandler
     }
     
     /**
+     * returns TRUE if the browser should be banned
+     *
+     * @return boolean
+     */
+    public function isDesktop()
+    {
+        return false;
+    }
+    
+    /**
      * returns TRUE if the device has a specific Operating System
      *
      * @return boolean

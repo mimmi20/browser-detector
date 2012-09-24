@@ -546,6 +546,20 @@ class UserAgent extends Core
     }
     
     /**
+     * returns TRUE if the device is a desktop device
+     *
+     * @return boolean
+     */
+    public function isDesktop()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->isDesktop();
+    }
+    
+    /**
      * returns TRUE if the browser supports VBScript
      *
      * @return boolean
