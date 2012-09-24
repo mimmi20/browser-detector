@@ -91,14 +91,14 @@ class RimOs extends OsHandler
             return;
         }
         
-		if (!$this->_utils->checkIfContains('Opera')) {
-			$doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
-			
-			if ($doMatch) {
-				$this->_version = $matches[1];
-				return;
-			}
-		}
+        if (!$this->_utils->checkIfContains('Opera')) {
+            $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
+            
+            if ($doMatch) {
+                $this->_version = $matches[1];
+                return;
+            }
+        }
         
         $this->_version = '';
     }

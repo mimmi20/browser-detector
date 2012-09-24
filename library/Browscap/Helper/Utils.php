@@ -117,15 +117,15 @@ final class Utils
         'transformer tf',
         'up.browser',
         'up.link',
-		'xblwp7',
+        'xblwp7',
         'wap2',
         'webos',
-		'wetab-browser',
+        'wetab-browser',
         'windows ce',
         'windows mobile',
         'windows phone os',
         'wireless',
-		'zunewp7'
+        'zunewp7'
     );
     
     private $_bots = array(
@@ -135,7 +135,7 @@ final class Utils
         'acoon',
         'anyevent',
         'appengine-google',
-		'bing',
+        'bing',
         'bot',
         'catalog',
         'clecko',
@@ -564,9 +564,9 @@ final class Utils
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
@@ -593,14 +593,14 @@ final class Utils
             'DarwinBrowser',
             'Facebook',
             'Isource',
-			'Chrome'
+            'Chrome'
         );
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
@@ -630,9 +630,9 @@ final class Utils
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..'
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
@@ -662,9 +662,9 @@ final class Utils
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
@@ -689,7 +689,7 @@ final class Utils
             'OperaMini',
             'Ucweb',
             'Dolfin',
-			'Jasmine',
+            'Jasmine',
             'Motorola',
             'TelecaObigo',
             'Openwave'
@@ -697,9 +697,9 @@ final class Utils
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
@@ -725,9 +725,9 @@ final class Utils
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
@@ -753,9 +753,9 @@ final class Utils
         
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-			. DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-			. DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

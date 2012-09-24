@@ -54,8 +54,8 @@ class Googlebot extends Google
         }
         
         if (!$this->_utils->checkIfStartsWith('google', true) 
-			&& !$this->_utils->checkIfContains('googlebot', true)
-		) {
+            && !$this->_utils->checkIfContains('googlebot', true)
+        ) {
             return false;
         }
         

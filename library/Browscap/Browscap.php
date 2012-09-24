@@ -178,7 +178,7 @@ class Browscap extends Core
         try {
             return $this->_updateCache();
         } catch (Exception $e) {
-			$this->_log($e, \Zend\Log\Logger::ERR);
+            $this->_log($e, \Zend\Log\Logger::ERR);
 
             return array();
         }
@@ -278,7 +278,7 @@ class Browscap extends Core
             if (!isset($browsers[$parent])) {
                 $this->_log(
                     '"' . $parent . '" not found in browsers collection',
-					\Zend\Log\Logger::WARN
+                    \Zend\Log\Logger::WARN
                 );
                 
                 continue;
@@ -288,7 +288,7 @@ class Browscap extends Core
                 $this->_log(
                     '"' . $parent . '" found in browsers collection, '
                     . 'but the entry is empty',
-					\Zend\Log\Logger::WARN
+                    \Zend\Log\Logger::WARN
                 );
                 
                 continue;

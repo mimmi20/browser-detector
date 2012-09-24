@@ -49,8 +49,8 @@ class WindowsMobileOs extends OsHandler
         }
         
         if (!$this->_utils->isMobileWindows() 
-			|| $this->_utils->checkIfContains('Windows Phone OS')
-		) {
+            || $this->_utils->checkIfContains('Windows Phone OS')
+        ) {
             return false;
         }
         

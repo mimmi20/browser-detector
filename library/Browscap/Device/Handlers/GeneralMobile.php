@@ -162,7 +162,7 @@ class GeneralMobile extends DeviceHandler
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
             . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Handlers' 
-			. DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
+            . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         

@@ -62,7 +62,7 @@ class Htc extends GeneralMobile
             'Desire S',
             'myTouch4G',
             'Sensation_Z710e',
-			'HD2'
+            'HD2'
         );
         
         if ($this->_utils->checkIfContains($htcPhones)) {
