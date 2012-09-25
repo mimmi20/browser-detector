@@ -97,7 +97,7 @@ class SonyEricssonU5i extends SonyBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Symbian();
+        $handler = new \Browscap\Os\Handlers\Symbianos();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

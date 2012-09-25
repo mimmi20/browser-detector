@@ -96,7 +96,7 @@ class Browscap extends Core
         }
         
         $this->_cleanedAgent = $this->_support->cleanAgent($this->_agent);
-        
+            
         if (!$array = $this->_getBrowserFromCache($this->_agent)) {
             $this->_getGlobalCache();
             

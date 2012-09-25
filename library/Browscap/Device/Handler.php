@@ -188,6 +188,27 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
+     * returns the name of the actual device with version
+     *
+     * @return string
+     */
+    final public function getFullDevice($withManufacturer = false)
+    {
+        $device       = $this->getFullDevice();
+        $manufacturer = $this->getDeviceManufacturer();
+        
+        if ($withManufacturer 
+            && $manufacturer 
+            && 'unknown' != $manufacturer
+            && false === strpos($device, 'general')
+        ) {
+            $device = $manufacturer . ' ' . $device;
+        }
+        
+        return $device;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
