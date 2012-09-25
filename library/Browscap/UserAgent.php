@@ -38,20 +38,6 @@ namespace Browscap;
 class UserAgent extends Core
 {
     /**
-     * the user agent sent from the browser
-     *
-     * @var string
-     */
-    private $_agent = '';
-    
-    /**
-     * the user agent sent from the browser
-     *
-     * @var string
-     */
-    private $_cleanedAgent = '';
-    
-    /**
      * the detected browser
      *
      * @var StdClass
@@ -86,15 +72,20 @@ class UserAgent extends Core
      *
      * @return 
      */
-    public function getBrowser($userAgent = null, $forceDetect = false)
+    public function getBrowser($forceDetect = false, $userAgent = null)
     {
         // Automatically detect the useragent, if not given
-        if (empty($userAgent) || !is_string($userAgent)) {
+        if ('' === $this->_agent 
+            && (empty($userAgent) || !is_string($userAgent))
+        ) {
             $userAgent = $this->_support->getUserAgent();
         }
         
-        $this->_agent        = $userAgent;
-        $this->_cleanedAgent = $this->_support->cleanAgent($userAgent);
+        if (null !== $userAgent) {
+            $this->_agent = $userAgent;
+        }
+        
+        $this->_cleanedAgent = $this->_support->cleanAgent($this->_agent);
         
         if ($forceDetect 
             || !($browserArray = $this->_getBrowserFromCache($this->_cleanedAgent))
@@ -212,26 +203,6 @@ class UserAgent extends Core
      *
      * @return string
      */
-    public function getAgent()
-    {
-        return $this->_agent;
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function getcleanedAgent()
-    {
-        return $this->_cleanedAgent;
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
     public function __toString()
     {
         return $this->getAgent();
@@ -276,18 +247,7 @@ class UserAgent extends Core
             return null;
         }
         
-        $device       = $this->_device->getFullDevice();
-        $manufacturer = $this->getDeviceManufacturer();
-        
-        if ($withManufacturer 
-            && $manufacturer 
-            && 'unknown' != $manufacturer
-            && false === strpos($device, 'general')
-        ) {
-            $device = $manufacturer . ' ' . $device;
-        }
-        
-        return $device;
+        return $this->_device->getFullDevice($withManufacturer);
     }
     
     /**

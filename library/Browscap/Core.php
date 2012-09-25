@@ -62,6 +62,20 @@ abstract class Core
     protected $_support = null;
     
     /**
+     * the user agent sent from the browser
+     *
+     * @var string
+     */
+    protected $_agent = '';
+    
+    /**
+     * the user agent sent from the browser - cleaned
+     *
+     * @var string
+     */
+    protected $_cleanedAgent = '';
+    
+    /**
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
      */
@@ -162,5 +176,37 @@ abstract class Core
         }
         
         $this->_logger->log($message, $level);
+    }
+    
+    /**
+     * returns the stored user agent
+     *
+     * @return UserAgent
+     */
+    public function setAgent($userAgent)
+    {
+        $this->_agent = $userAgent;
+        
+        return $this;
+    }
+    
+    /**
+     * returns the stored user agent
+     *
+     * @return string
+     */
+    public function getAgent()
+    {
+        return $this->_agent;
+    }
+    
+    /**
+     * returns the stored and cleaned user agent
+     *
+     * @return string
+     */
+    public function getcleanedAgent()
+    {
+        return $this->_cleanedAgent;
     }
 }

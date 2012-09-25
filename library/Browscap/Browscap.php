@@ -85,30 +85,34 @@ class Browscap extends Core
      */
     public function getBrowser($userAgent = null, $forceDetect = false)
     {
-        // Automatically detect the useragent
-        if (empty($userAgent) || !is_string($userAgent)) {
+        if ('' === $this->_agent 
+            && (empty($userAgent) || !is_string($userAgent))
+        ) {
             $userAgent = $this->_support->getUserAgent();
         }
         
-        $userAgent = $this->_support->cleanAgent($userAgent);
+        if (null !== $userAgent) {
+            $this->_agent = $userAgent;
+        }
         
-        if (!$array = $this->_getBrowserFromCache($userAgent)) {
-            $globalCache = $this->_getGlobalCache();
+        $this->_cleanedAgent = $this->_support->cleanAgent($this->_agent);
+        
+        if (!$array = $this->_getBrowserFromCache($this->_agent)) {
+            $this->_getGlobalCache();
             
             $browser = array();
-            if (isset($globalCache['patterns'])
-                && is_array($globalCache['patterns'])
+            if (isset($this->_globalCache['patterns'])
+                && is_array($this->_globalCache['patterns'])
             ) {
                 foreach ($globalCache['patterns'] as $key => $pattern) {
-                    if (preg_match($pattern, $userAgent)) {
+                    if (preg_match($pattern, $this->_agent)) {
                         $browser = array(
-                            $userAgent, // Original useragent
-                            trim(strtolower($pattern), '@'),
-                            $globalCache['userAgents'][$key]
+                            'userAgent'   => $userAgent, // Original useragent
+                            'usedRegex'   => trim(strtolower($pattern), '@'),
+                            'usedPattern' => $this->_globalCache['userAgents'][$key]
                         );
 
-                        $browser = $browser
-                                 + $globalCache['browsers'][$key];
+                        $browser += $this->_globalCache['browsers'][$key];
 
                         break;
                     }
@@ -119,7 +123,7 @@ class Browscap extends Core
             $array = $browser;
             
             if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                $cacheId = $this->_getCacheFromAgent($userAgent);
+                $cacheId = $this->_getCacheFromAgent($this->_agent);
                 
                 $this->_cache->save($array, $cacheId);
             }
@@ -134,8 +138,7 @@ class Browscap extends Core
      * @param string $userAgent   the user agent string
      * @param bool   $bReturnAsArray whether return an array or an object
      *
-     * @return stdClas|array the object containing the browsers details.
-     *                       Array if $bReturnAsArray is set to true.
+     * @return void
      */
     private function _getGlobalCache()
     {
@@ -153,19 +156,17 @@ class Browscap extends Core
                 }
             }
         }
-        
-        return $this->_globalCache;
     }
     
     public function getAllBrowsers()
     {
-        $globalCache = $this->_getGlobalCache();
+        $this->_getGlobalCache();
         
-        if (empty($globalCache['browsers'])) {
+        if (empty($this->_globalCache['browsers'])) {
             return null;
         }
         
-        return $globalCache['browsers'];
+        return $this->_globalCache['browsers'];
     }
 
     /**
