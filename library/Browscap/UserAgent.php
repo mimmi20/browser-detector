@@ -247,7 +247,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->getFullDevice($withManufacturer);
+        return $this->_device->getFullDeviceName($withManufacturer);
     }
     
     /**

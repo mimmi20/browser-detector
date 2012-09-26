@@ -79,7 +79,7 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
         $this->object->setLocaleFile(LIB_PATH . DS . 'Browscap' . DS . 'data' . DS . 'browscap.ini');
         $this->object->setCachePrefix('modified_ini_');
         
-        $this->object->setAgent($agent);
+        //$this->object->setAgent($agent);
         $result = $this->object->getBrowser($agent, true);
 
         $this->assertInstanceOf('StdClass', $result);
@@ -132,13 +132,13 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
         $this->object->setLocaleFile(LIB_PATH . DS . 'Browscap' . DS . 'data' . DS . 'php_browscap_5003.ini');
         $this->object->setCachePrefix('original_ini_');
         
-        $this->object->setAgent($agent);
+        //$this->object->setAgent($agent);
         $result = $this->object->getBrowser($agent, true);
 
         $this->assertInstanceOf('StdClass', $result);
 
         //echo "\n";var_dump("'$browser' : '$result->Browser'", "'$version' : '$result->Version'", "'$platform' : '$result->Platform'");echo "\n";
-        $this->assertSame($agent, $result->userAgent);
+        //$this->assertSame($agent, $result->userAgent);
         $this->assertSame($browser, $result->Browser);
         $this->assertSame($version, $result->Version);
         $this->assertSame($platform, $result->Platform);

@@ -192,10 +192,10 @@ abstract class Handler implements MatcherInterface
      *
      * @return string
      */
-    final public function getFullDevice($withManufacturer = false)
+    final public function getFullDeviceName($withManufacturer = false)
     {
         $device       = $this->getFullDevice();
-        $manufacturer = $this->getDeviceManufacturer();
+        $manufacturer = $this->getManufacturer();
         
         if ($withManufacturer 
             && $manufacturer 

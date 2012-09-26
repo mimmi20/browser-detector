@@ -107,7 +107,7 @@ class Browscap extends Core
                 foreach ($globalCache['patterns'] as $key => $pattern) {
                     if (preg_match($pattern, $this->_agent)) {
                         $browser = array(
-                            'userAgent'   => $userAgent, // Original useragent
+                            'userAgent'   => $this->_agent, // Original useragent
                             'usedRegex'   => trim(strtolower($pattern), '@'),
                             'usedPattern' => $this->_globalCache['userAgents'][$key]
                         );
