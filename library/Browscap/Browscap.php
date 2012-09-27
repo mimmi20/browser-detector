@@ -101,10 +101,11 @@ class Browscap extends Core
             $this->_getGlobalCache();
             
             $browser = array();
+            
             if (isset($this->_globalCache['patterns'])
                 && is_array($this->_globalCache['patterns'])
             ) {
-                foreach ($globalCache['patterns'] as $key => $pattern) {
+                foreach ($this->_globalCache['patterns'] as $key => $pattern) {
                     if (preg_match($pattern, $this->_agent)) {
                         $browser = array(
                             'userAgent'   => $this->_agent, // Original useragent

@@ -64,7 +64,7 @@ class LinuxDesktop extends GeneralDesktop
         
         $linux = array(
             'Linux', 'Debian', 'Ubuntu', 'SUSE', 'Fedora', 'Mint', 'redhat', 
-            'Slackware', 'Zenwalk GNU', 'CentOS', 'Kubuntu', 'CrOS'
+            'Slackware', 'Zenwalk GNU', 'CentOS', 'Kubuntu', 'CrOs'
         );
         
         if (!$this->_utils->checkIfContains($linux, true)) {
@@ -132,7 +132,7 @@ class LinuxDesktop extends GeneralDesktop
             'ZenwalkGnu',
             'CentOs',
             'LinuxTv',
-            'CrOS'
+            'CrOs'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);
