@@ -89,6 +89,7 @@ final class Utils
         'ipod',
         'iris',
         'j2me',
+        'lenovo',
         'like mac os x',
         'look-alike',
         'maemo',
@@ -175,6 +176,7 @@ final class Utils
         'test-acceptance',
         'unister-test',
         'webu',
+        'wget',
         'wordpress',
         'www.yahoo.com',
         'xxx',
@@ -428,7 +430,7 @@ final class Utils
     {
         $mobileWindows = array(
             'Windows CE', 'Windows Phone', 'Windows Mobile', 
-            'Microsoft Windows; PPC', 'IEMobile'
+            'Microsoft Windows; PPC', 'IEMobile', 'XBLWP7', 'ZuneWP7'
         );
         
         if (!$this->checkIfContains($mobileWindows)) {
@@ -795,7 +797,7 @@ final class Utils
         }
         
         $regularVersions = array(
-            '3.0', '3.1', '3.2', '4.0', '5.0', '5.1', '5.2', '6.0'
+            '3.0', '3.1', '3.2', '4.0', '4.1', '5.0', '5.1', '5.2', '6.0'
         );
         
         if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {
