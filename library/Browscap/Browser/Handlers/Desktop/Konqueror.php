@@ -64,7 +64,7 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnFirefox = array(
+        $isNotReallyAnKonqueror = array(
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
@@ -77,10 +77,13 @@ class Konqueror extends BrowserHandler
             'SeaMonkey',
             'Flock',
             'Fennec',
-            'Firefox'
+            'Firefox',
+            'Chrome',
+            'Chromium',
+            'RockMelt'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnKonqueror)) {
             return false;
         }
         

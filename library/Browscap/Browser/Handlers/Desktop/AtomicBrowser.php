@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Desktop;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.

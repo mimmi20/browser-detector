@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Lenovo;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Lg900g.php 261 2012-07-08 07:30:46Z  $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,14 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Lg900g.php 261 2012-07-08 07:30:46Z  $
  */
-class SliderSl101 extends GeneralMobile
+class LenovoK1 extends LenovoBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Slider SL101';
+    protected $_device = 'K1';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +50,21 @@ class SliderSl101 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Slider SL101')) {
+        if (!$this->_utils->checkIfContains(' K1 ')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -67,16 +77,6 @@ class SliderSl101 extends GeneralMobile
     public function detect()
     {
         return $this;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -122,21 +122,12 @@ class SliderSl101 extends GeneralMobile
      */
     public function getBrowser()
     {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
+            $browserChain->setCache($this->_cache);
         }
         
-        return $chain->detect($this->_useragent);
+        return $browserChain->detect($this->_useragent);
     }
 }

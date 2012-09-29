@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,12 +28,12 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaE6 extends NokiaBase
+class NokiaX700 extends NokiaX7
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'E6';
+    protected $_device = 'X7-00';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +48,7 @@ class NokiaE6 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NokiaE6')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('NokiaE62', 'NokiaE63', 'NokiaE66', 'NokiaE6-'))) {
+        if (!$this->_utils->checkIfContains('NokiaX7-00')) {
             return false;
         }
         
@@ -69,18 +63,6 @@ class NokiaE6 extends NokiaBase
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect()
-    {
-        return $this;
     }
     
     /**

@@ -54,6 +54,10 @@ class DellStreak extends DellBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Dell Streak 7')) {
+            return false;
+        }
+        
         return true;
     }
     

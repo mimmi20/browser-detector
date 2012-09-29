@@ -62,7 +62,9 @@ class Acer extends GeneralMobile
             'A200',
             'A500',
             'A501',
-            'E320'
+            'A510',
+            'E320',
+            'G100W'
         );
         
         if ($this->_utils->checkIfContains($acerPhones)) {

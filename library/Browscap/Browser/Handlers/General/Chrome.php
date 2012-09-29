@@ -63,7 +63,7 @@ class Chrome extends Chromium
             return false;
         }
         
-        $isNotReallyAnSafari = array(
+        $isNotReallyAnChrome = array(
             // using also the KHTML rendering engine
             'Chromium',
             'Flock',
@@ -82,7 +82,7 @@ class Chrome extends Chromium
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnChrome)) {
             return false;
         }
         
@@ -104,6 +104,13 @@ class Chrome extends Chromium
         }
         
         $doMatch = preg_match('/CrMo\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/CriOS\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

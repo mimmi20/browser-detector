@@ -50,7 +50,7 @@ class HtcSensation extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/Sensation', 'HTC/Sensation/', 'HTC Sensation'))) {
+        if (!$this->_utils->checkIfContains(array('HTC/Sensation', 'HTC/Sensation/', 'HTC Sensation', 'HTC_Sensation'))) {
             return false;
         }
         

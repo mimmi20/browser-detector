@@ -61,7 +61,7 @@ class Chromium extends BrowserHandler
             return false;
         }
         
-        $isNotReallyAnSafari = array(
+        $isNotReallyAnChromium = array(
             // using also the KHTML rendering engine
             'Flock',
             'Galeon',
@@ -72,7 +72,7 @@ class Chromium extends BrowserHandler
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnChromium)) {
             return false;
         }
         

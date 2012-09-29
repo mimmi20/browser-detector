@@ -52,7 +52,7 @@ class LotusNotes extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('LotusNotes/'))) {
+        if (!$this->_utils->checkIfContains(array('LotusNotes/', 'Lotus-Notes/'))) {
             return false;
         }
         
@@ -67,6 +67,13 @@ class LotusNotes extends BrowserHandler
     protected function _detectVersion()
     {
         $doMatch = preg_match('/LotusNotes\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Lotus\-Notes\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

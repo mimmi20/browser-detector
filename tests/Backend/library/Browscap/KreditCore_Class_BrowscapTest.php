@@ -113,7 +113,7 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
             
             array('Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5', 'Mobile Safari', '5.0', 'iOS'),
             array('Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)', 'Baidu', '2.0', 'unknown'),
-            array('Mozilla/5.0 (iPhone; U; CPU iOS 4_3_3 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5', 'Safari', '5.0', 'iOS'),
+            array('Mozilla/5.0 (iPhone; U; CPU iOS 4_3_3 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5', 'Safari', '5.0', 'MacOSX'),
             array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)', 'Internet Explorer', '9.0', 'Win7'),
             
             array('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.15) Gecko/20101028 Iceweasel/3.5.15 unister-test-acceptance', 'Unister-Testing', '', 'Unister'),

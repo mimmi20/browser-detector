@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\General;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,10 +18,10 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
+use \Browscap\Browser\Handlers\General\CfNetwork;
 
 /**
- * FirefoxUserAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
@@ -30,17 +30,12 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Fennec extends BrowserHandler
+class AtomicBrowser extends CfNetwork
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Fennec';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Mozilla';
+    protected $_browser = 'Atomic Browser';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -53,32 +48,9 @@ class Fennec extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContainsAll(array('Gecko', 'Fennec'))
-            && !($this->_utils->checkIfContainsAll(array('Firefox', 'Gecko'))
-            && $this->_utils->checkIfContains(array('Tablet', 'Mobile')))
+        if (!$this->_utils->checkIfStartsWith('AtomicBrowser') 
+            && !$this->_utils->checkIfStartsWith('AtomicLite')
         ) {
-            return false;
-        }
-        
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'PaleMoon',
-            'Flock',
-            'SeaMonkey'
-        );
-        
-        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         
@@ -92,14 +64,14 @@ class Fennec extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Fennec\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AtomicBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Firefox\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AtomicLite\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -137,7 +109,7 @@ class Fennec extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Gecko();
+        $handler = new \Browscap\Engine\Handlers\Webkit();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

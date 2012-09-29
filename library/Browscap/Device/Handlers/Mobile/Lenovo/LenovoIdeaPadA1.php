@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Nokia;
+namespace Browscap\Device\Handlers\Mobile\Lenovo;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
+use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class NokiaE6 extends NokiaBase
+class LenovoIdeaPadA1 extends LenovoBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'E6';
+    protected $_device = 'IdeaPad A1';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +50,7 @@ class NokiaE6 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NokiaE6')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('NokiaE62', 'NokiaE63', 'NokiaE66', 'NokiaE6-'))) {
+        if (!$this->_utils->checkIfContains('A1_07')) {
             return false;
         }
         
@@ -101,7 +97,7 @@ class NokiaE6 extends NokiaBase
      */
     public function getOs()
     {
-        $handler = new \Browscap\Os\Handlers\Symbianos();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -126,7 +122,7 @@ class NokiaE6 extends NokiaBase
      */
     public function getBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForSymbian();
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

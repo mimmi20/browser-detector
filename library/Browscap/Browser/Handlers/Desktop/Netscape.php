@@ -130,6 +130,13 @@ class Netscape extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/Netscape6\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $doMatch = preg_match('/rv\:([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {

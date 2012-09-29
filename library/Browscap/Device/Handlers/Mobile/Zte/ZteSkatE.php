@@ -35,7 +35,7 @@ class ZteSkatE extends ZteBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'SKATE';
+    protected $_device = 'Skate';
     
     /**
      * Final Interceptor: Intercept
