@@ -126,7 +126,7 @@ class NokiaN9 extends NokiaBase
      */
     public function getBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Mobile\NokiaBrowser();
+        $handler = new \Browscap\Browser\Handlers\Mobile\NokiaBrowserNg();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
