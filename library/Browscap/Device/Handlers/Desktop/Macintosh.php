@@ -55,18 +55,6 @@ class Macintosh extends GeneralDesktop
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isFakeBrowser($this->_useragent)) {
-            return false;
-        }
-        
         $mac = array(
             'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac', 
             'PPC Mac', 'Mac OS X'
@@ -86,7 +74,7 @@ class Macintosh extends GeneralDesktop
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -117,7 +105,7 @@ class Macintosh extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $os = array(
             'Macintosh',
@@ -125,13 +113,11 @@ class Macintosh extends GeneralDesktop
             'Darwin'
         );
         
-        $osChain = new \Browscap\Os\Chain(false, $os);
-        $osChain->setLogger($this->_logger);
+        $chain = new \Browscap\Os\Chain(false, $os);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

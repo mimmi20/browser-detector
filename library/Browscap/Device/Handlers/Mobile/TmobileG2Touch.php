@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MdaCompact.php 263 2012-07-15 18:44:42Z  $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MdaCompact.php 263 2012-07-15 18:44:42Z  $
  */
-class GarminAsusA10 extends GeneralMobile
+class TmobileG2Touch extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Garmin-Asus A10';
+    protected $_device = 'G2 Touch';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'T-Mobile';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +55,7 @@ class GarminAsusA10 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Garmin-Asus A10')) {
+        if (!$this->_utils->checkIfContains('T-Mobile_G2_Touch')) {
             return false;
         }
         
@@ -64,7 +69,7 @@ class GarminAsusA10 extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +100,7 @@ class GarminAsusA10 extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -120,23 +125,14 @@ class GarminAsusA10 extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
+            $browserChain->setCache($this->_cache);
         }
         
-        return $chain->detect($this->_useragent);
+        return $browserChain->detect($this->_useragent);
     }
 }

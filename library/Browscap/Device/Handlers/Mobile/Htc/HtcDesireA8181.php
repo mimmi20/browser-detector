@@ -33,7 +33,7 @@ class HtcDesireA8181 extends HtcDesire
     /**
      * @var string the detected device
      */
-    protected $_device = 'Desire A8181';
+    protected $_device = 'A8181';
     
     /**
      * Final Interceptor: Intercept
@@ -81,7 +81,7 @@ class HtcDesireA8181 extends HtcDesire
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -106,7 +106,7 @@ class HtcDesireA8181 extends HtcDesire
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

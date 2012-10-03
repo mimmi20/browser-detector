@@ -35,7 +35,7 @@ class AsusEepPadTransformerTf201 extends AsusBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Eee Pad Transformer TF201';
+    protected $_device = 'Eee Pad TF201';
 
     /**
      * @var string the detected manufacturer
@@ -79,7 +79,7 @@ class AsusEepPadTransformerTf201 extends AsusBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -100,7 +100,7 @@ class AsusEepPadTransformerTf201 extends AsusBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -125,7 +125,7 @@ class AsusEepPadTransformerTf201 extends AsusBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

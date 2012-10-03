@@ -79,7 +79,7 @@ class HuaweiU8600 extends HuaweiBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -91,7 +91,7 @@ class HuaweiU8600 extends HuaweiBase
      */
     public function isTablet()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -110,7 +110,7 @@ class HuaweiU8600 extends HuaweiBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -135,7 +135,7 @@ class HuaweiU8600 extends HuaweiBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

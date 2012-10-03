@@ -31,20 +31,6 @@ use \Browscap\Chain\AbstractChain;
 final class Chain extends AbstractChain
 {
     /**
-     * detect the user agent
-     *
-     * @param string $userAgent The user agent
-     *
-     * @return string
-     */
-    public function detect($userAgent)
-    {
-        $chain = $this->_createChain();
-        
-        return $this->_detect($chain, $userAgent);
-    }
-    
-    /**
      * sets the default directory where the chain is searching 
      *
      * @return 

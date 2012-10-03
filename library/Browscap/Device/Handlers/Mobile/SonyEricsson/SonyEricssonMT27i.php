@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Desktop;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyEricssonMT27i.php 261 2012-07-08 07:30:46Z  $
  */
 
-use Browscap\Device\Handler as DeviceHandler;
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,19 +28,14 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyEricssonMT27i.php 261 2012-07-08 07:30:46Z  $
  */
-class LoeweSl121 extends DeviceHandler
+class SonyEricssonMT27i extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SL121';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Loewe';
+    protected $_device = 'MT27i';
     
     /**
      * Final Interceptor: Intercept
@@ -55,23 +50,11 @@ class LoeweSl121 extends DeviceHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Loewe; SL121')) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonMT27i', 'MT27i'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect()
-    {
-        return $this;
     }
     
     /**
@@ -81,7 +64,19 @@ class LoeweSl121 extends DeviceHandler
      */
     public function getWeight()
     {
-        return 5;
+        return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -100,9 +95,9 @@ class LoeweSl121 extends DeviceHandler
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\LinuxTv();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -125,12 +120,14 @@ class LoeweSl121 extends DeviceHandler
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Desktop\HbbTv();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
-        return $handler->detect();
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

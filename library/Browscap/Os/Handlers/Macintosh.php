@@ -38,6 +38,11 @@ class Macintosh extends OsHandler
     protected $_name = 'Macintosh';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Apple';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

@@ -63,7 +63,7 @@ interface MatcherInterface
      *
      * @return StdClass
      */
-    public function detect();
+    public function detectDevice();
     
     public function getDevice();
     

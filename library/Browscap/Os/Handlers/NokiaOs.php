@@ -38,6 +38,11 @@ class NokiaOs extends OsHandler
     protected $_name = 'Nokia OS';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Nokia';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

@@ -396,6 +396,23 @@ final class Utils
         return true;
     }
     
+    public function isTvDevice()
+    {
+        $tvDevices = array(
+            'Loewe; SL121',
+            'dlink.dsm380',
+            'IDL-6651N',
+            'SonyDTV115',
+            'SMART-TV'
+        );
+        
+        if ($this->checkIfContains($tvDevices)) {
+            return true;
+        }
+        
+        return false;
+    }
+    
     public function isFakeWindows()
     {
         $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->_useragent, $matches);
@@ -546,227 +563,6 @@ final class Utils
         $class = str_replace(' ', '', ucwords($class));
         
         return '\\' . $namespace . '\\Handlers\\' . $class;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForAndroid()
-    {
-        $browsers = array(
-            'Android',
-            'Dalvik',
-            'Chrome',
-            'Dolfin',
-            'Silk'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Android());
-        
-        return $browserChain;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForIos()
-    {
-        $browsers = array(
-            'MobileSafari',
-            'OperaMini',
-            'Sleipnir',
-            'DarwinBrowser',
-            'Facebook',
-            'Isource',
-            'Chrome'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MobileSafari());
-        
-        return $browserChain;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForSymbian()
-    {
-        $browsers = array(
-            'Nokia',
-            'NokiaBrowserNg',
-            'OperaMini',
-            'Ucweb',
-            'NokiaProxyBrowser'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..'
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Nokia());
-        
-        return $browserChain;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForBlackberry()
-    {
-        $browsers = array(
-            'Blackberry',
-            'BlackberryPlaybookTablet',
-            'OperaMini',
-            'Ucweb',
-            'MqqBrowser'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Blackberry());
-        
-        return $browserChain;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForJava()
-    {
-        $browsers = array(
-            'NetFront',
-            'OperaMini',
-            'Ucweb',
-            'Dolfin',
-            'Jasmine',
-            'Motorola',
-            'TelecaObigo',
-            'Openwave'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
-        
-        return $browserChain;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForMobileWindows()
-    {
-        $browsers = array(
-            'MicrosoftMobileExplorer'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer());
-        
-        return $browserChain;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowserChainForBada()
-    {
-        $browsers = array(
-            'Dolfin'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $browserChain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $browserChain->setLogger($this->_logger);
-        
-        $browserChain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
-        
-        return $browserChain;
     }
     
     /**

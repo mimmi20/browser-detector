@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Desktop;
+namespace Browscap\Browser\Handlers\Tv;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -31,12 +31,12 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HbbTv extends BrowserHandler
+class SmartTv extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'HbbTV';
+    protected $_browser = 'SmartTV';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -49,7 +49,7 @@ class HbbTv extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContains('HbbTV')) {
+        if ($this->_utils->checkIfContains(array('SmartTV', 'SMART-TV'))) {
             return true;
         }
         
@@ -63,7 +63,21 @@ class HbbTv extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/HbbTV\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/SmartTV\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/SMART-TV\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/WebBrowser\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

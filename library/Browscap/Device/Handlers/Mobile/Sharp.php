@@ -71,7 +71,7 @@ class Sharp extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -102,7 +102,7 @@ class Sharp extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Unknown();
         $handler->setLogger($this->_logger);
@@ -127,7 +127,7 @@ class Sharp extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\Openwave();
         $handler->setLogger($this->_logger);

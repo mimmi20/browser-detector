@@ -79,7 +79,7 @@ class PlayStationPortable extends SonyBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -120,7 +120,7 @@ class PlayStationPortable extends SonyBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
@@ -145,7 +145,7 @@ class PlayStationPortable extends SonyBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\NetFront();
         $handler->setLogger($this->_logger);

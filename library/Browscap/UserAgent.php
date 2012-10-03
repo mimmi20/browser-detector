@@ -90,12 +90,12 @@ class UserAgent extends Core
         if ($forceDetect 
             || !($browserArray = $this->_getBrowserFromCache($this->_cleanedAgent))
         ) {
-            $this->_device  = $this->_detectDevice();
-            
+            $this->_detectDevice();
+            //var_dump('###################################', $this->_agent);
             if ($this->_device->hasOs()) {
-                $this->_os = $this->_device->getOs();
+                $this->_os = $this->_device->getOs();//var_dump('hat os', get_class($this->_device), get_class($this->_os));
             } else {
-                $this->_os = $this->_detectOs();
+                $this->_os = $this->_detectOs();//var_dump('hat kein os', get_class($this->_device), get_class($this->_os));
             }
             
             if ($this->_device->hasBrowser()) {
@@ -125,9 +125,7 @@ class UserAgent extends Core
     }
 
     /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent     the user agent string
+     * Gets the information about the rendering engine by User Agent
      *
      * @return 
      */
@@ -135,12 +133,9 @@ class UserAgent extends Core
     {
         $engineChain = new Engine\Chain();
         $engineChain->setLogger($this->_logger);
+        $engineChain->setUserAgent($this->_agent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $engineChain->setCache($this->_cache);
-        }
-        
-        return $engineChain->detect($this->_agent);
+        return $engineChain->detect();
     }
 
     /**
@@ -152,18 +147,13 @@ class UserAgent extends Core
     {
         $browserChain = new Browser\Chain();
         $browserChain->setLogger($this->_logger);
+        $browserChain->setUserAgent($this->_agent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_agent);
+        return $browserChain->detect();
     }
 
     /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent     the user agent string
+     * Gets the information about the os by User Agent
      *
      * @return 
      */
@@ -171,31 +161,25 @@ class UserAgent extends Core
     {
         $osChain = new Os\Chain();
         $osChain->setLogger($this->_logger);
+        $osChain->setUserAgent($this->_agent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_agent);
+        return $osChain->detect();
     }
 
     /**
-     * Gets the information about the browser by User Agent
+     * Gets the information about the device by User Agent
      *
-     * @param string  $userAgent     the user agent string
-     *
-     * @return 
+     * @return UserAgent
      */
     private function _detectDevice()
     {
         $deviceChain = new Device\Chain();
         $deviceChain->setLogger($this->_logger);
+        $deviceChain->setUserAgent($this->_agent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $deviceChain->setCache($this->_cache);
-        }
+        $this->_device = $deviceChain->detect();
         
-        return $deviceChain->detect($this->_agent);
+        return $this;
     }
     
     /**
@@ -377,6 +361,20 @@ class UserAgent extends Core
     }
     
     /**
+     * returns the manufacturer of the actual browser
+     *
+     * @return string
+     */
+    final public function getOsManufacturer()
+    {
+        if (null === $this->_os) {
+            return null;
+        }
+        
+        return $this->_os->getManufacturer();
+    }
+    
+    /**
      * returns TRUE if the device is a Transcoder
      *
      * @return boolean
@@ -517,6 +515,20 @@ class UserAgent extends Core
         }
         
         return $this->_device->isDesktop();
+    }
+    
+    /**
+     * returns TRUE if the device is a TV device
+     *
+     * @return boolean
+     */
+    public function isTvDevice()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->isTvDevice();
     }
     
     /**

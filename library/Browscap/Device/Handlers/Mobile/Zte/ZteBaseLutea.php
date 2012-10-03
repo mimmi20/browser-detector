@@ -51,7 +51,11 @@ class ZteBaseLutea extends ZteBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('BASE lutea')) {
+        if (!$this->_utils->checkIfContains('base lutea', true)) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('base lutea 2', true)) {
             return false;
         }
         
@@ -75,7 +79,7 @@ class ZteBaseLutea extends ZteBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -106,7 +110,7 @@ class ZteBaseLutea extends ZteBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -131,7 +135,7 @@ class ZteBaseLutea extends ZteBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

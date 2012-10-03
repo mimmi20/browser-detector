@@ -64,7 +64,7 @@ class Ebrd1101 extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }

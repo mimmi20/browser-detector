@@ -78,7 +78,7 @@ class NokiaN9 extends NokiaBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -99,7 +99,7 @@ class NokiaN9 extends NokiaBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\MeeGo();
         $handler->setLogger($this->_logger);
@@ -124,7 +124,7 @@ class NokiaN9 extends NokiaBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\NokiaBrowserNg();
         $handler->setLogger($this->_logger);

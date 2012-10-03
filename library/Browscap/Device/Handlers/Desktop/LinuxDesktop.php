@@ -50,18 +50,6 @@ class LinuxDesktop extends GeneralDesktop
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isFakeBrowser($this->_useragent)) {
-            return false;
-        }
-        
         $linux = array(
             'Linux', 'Debian', 'Ubuntu', 'SUSE', 'Fedora', 'Mint', 'redhat', 
             'Slackware', 'Zenwalk GNU', 'CentOS', 'Kubuntu', 'CrOs'
@@ -85,7 +73,7 @@ class LinuxDesktop extends GeneralDesktop
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -116,7 +104,7 @@ class LinuxDesktop extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $os = array(
             'Linux',
@@ -135,13 +123,11 @@ class LinuxDesktop extends GeneralDesktop
             'CrOs'
         );
         
-        $osChain = new \Browscap\Os\Chain(false, $os);
-        $osChain->setLogger($this->_logger);
+        $chain = new \Browscap\Os\Chain(false, $os);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

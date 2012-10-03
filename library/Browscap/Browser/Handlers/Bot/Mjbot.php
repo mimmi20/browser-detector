@@ -50,7 +50,7 @@ class Mjbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Mjbot/'))) {
+        if (!$this->_utils->checkIfContains(array('Mjbot/', 'MJ12bot/'))) {
             return false;
         }
         

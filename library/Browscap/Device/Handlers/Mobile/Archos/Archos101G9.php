@@ -35,7 +35,7 @@ class Archos101G9 extends ArchosBase
     /**
      * @var string the detected device
      */
-    protected $_device = '101G9';
+    protected $_device = '101 G9';
 
     /**
      * @var string the detected manufacturer
@@ -79,7 +79,7 @@ class Archos101G9 extends ArchosBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -110,7 +110,7 @@ class Archos101G9 extends ArchosBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -135,7 +135,7 @@ class Archos101G9 extends ArchosBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

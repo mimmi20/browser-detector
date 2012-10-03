@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Desktop;
+namespace Browscap\Device\Handlers\Tv;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Desktop;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralDesktop;
+use Browscap\Device\Handlers\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralDesktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SonyDtv115 extends GeneralDesktop
+class Idl6651n extends GeneralTv
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'DTV115';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'SonyEricsson';
+    protected $_device = 'IDL-6651N';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +50,7 @@ class SonyDtv115 extends GeneralDesktop
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SonyDTV115')) {
+        if (!$this->_utils->checkIfContains('IDL-6651N')) {
             return false;
         }
         
@@ -69,7 +64,7 @@ class SonyDtv115 extends GeneralDesktop
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -100,7 +95,7 @@ class SonyDtv115 extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\LinuxTv();
         $handler->setLogger($this->_logger);
@@ -125,9 +120,9 @@ class SonyDtv115 extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\General\InettvBrowser();
+        $handler = new \Browscap\Browser\Handlers\Tv\HbbTv();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

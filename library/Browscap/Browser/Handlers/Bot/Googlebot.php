@@ -273,7 +273,7 @@ class Googlebot extends Google
      */
     public function isCrawler()
     {
-        return false;
+        return true;
     }
     
     /**

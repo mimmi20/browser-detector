@@ -38,6 +38,11 @@ class Os2 extends OsHandler
     protected $_name = 'OS/2';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'IBM';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

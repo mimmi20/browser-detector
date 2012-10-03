@@ -38,6 +38,11 @@ class WebOs extends OsHandler
     protected $_name = 'WebOS';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'HP';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

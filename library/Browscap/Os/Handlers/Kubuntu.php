@@ -36,6 +36,11 @@ class Kubuntu extends Ubuntu
     protected $_name = 'Kubuntu';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Canonical';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

@@ -36,6 +36,11 @@ class MID7022 extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'MID7022';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Coby';
     
     /**
      * Final Interceptor: Intercept
@@ -64,7 +69,7 @@ class MID7022 extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +100,7 @@ class MID7022 extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -120,7 +125,7 @@ class MID7022 extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
@@ -132,11 +137,8 @@ class MID7022 extends GeneralMobile
         
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

@@ -64,7 +64,7 @@ class GeneralMobile extends DeviceHandler
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -73,8 +73,9 @@ class GeneralMobile extends DeviceHandler
             __NAMESPACE__ . '\\Mobile'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -167,7 +168,7 @@ class GeneralMobile extends DeviceHandler
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
@@ -178,11 +179,8 @@ class GeneralMobile extends DeviceHandler
         
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

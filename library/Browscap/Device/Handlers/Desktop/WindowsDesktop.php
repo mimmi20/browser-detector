@@ -50,18 +50,6 @@ class WindowsDesktop extends GeneralDesktop
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isFakeBrowser($this->_useragent)) {
-            return false;
-        }
-        
         if (!$this->_utils->isWindows($this->_useragent)) {
             return false;
         }
@@ -76,7 +64,7 @@ class WindowsDesktop extends GeneralDesktop
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -107,7 +95,7 @@ class WindowsDesktop extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Windows();
         $handler->setLogger($this->_logger);

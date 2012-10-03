@@ -90,7 +90,7 @@ class Huawei extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -99,8 +99,9 @@ class Huawei extends GeneralMobile
             __NAMESPACE__ . '\\Huawei'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -119,7 +120,7 @@ class Huawei extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $os = array(
             'Android',
@@ -127,7 +128,8 @@ class Huawei extends GeneralMobile
             'Brew',
             'Java',
             'Symbianos',
-            'WindowsMobileOs'
+            'WindowsMobileOs',
+            'WindowsPhoneOs'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);
@@ -156,7 +158,7 @@ class Huawei extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
@@ -168,11 +170,8 @@ class Huawei extends GeneralMobile
         
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

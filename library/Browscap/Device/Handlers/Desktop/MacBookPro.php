@@ -48,14 +48,6 @@ class MacBookPro extends MacBook
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if ($this->_utils->checkIfContains(array('MacBookPro'))) {
             return true;
         }

@@ -47,7 +47,7 @@ class Baidu extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('baiduspider/', 'baidu'), true)) {
+        if (!$this->_utils->checkIfContains(array('baiduspider', 'baidu'), true)) {
             return false;
         }
         
@@ -61,7 +61,7 @@ class Baidu extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/baiduspider\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/baiduspider\/([\d\.]+)/i', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

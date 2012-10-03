@@ -33,7 +33,7 @@ class HtcExplorerA310e extends HtcExplorer
     /**
      * @var string the detected device
      */
-    protected $_device = 'Explorer A310e';
+    protected $_device = 'A310e';
     
     /**
      * Final Interceptor: Intercept
@@ -72,7 +72,7 @@ class HtcExplorerA310e extends HtcExplorer
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -93,7 +93,7 @@ class HtcExplorerA310e extends HtcExplorer
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -118,7 +118,7 @@ class HtcExplorerA310e extends HtcExplorer
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

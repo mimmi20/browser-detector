@@ -33,7 +33,7 @@ class HtcChaChaA810e extends HtcChaCha
     /**
      * @var string the detected device
      */
-    protected $_device = 'ChaCha A810e';
+    protected $_device = 'A810e';
     
     /**
      * Final Interceptor: Intercept
@@ -72,7 +72,7 @@ class HtcChaChaA810e extends HtcChaCha
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -93,7 +93,7 @@ class HtcChaChaA810e extends HtcChaCha
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -118,7 +118,7 @@ class HtcChaChaA810e extends HtcChaCha
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

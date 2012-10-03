@@ -83,7 +83,7 @@ class SonyEricssonE10iv extends SonyEricssonE10i
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -108,7 +108,7 @@ class SonyEricssonE10iv extends SonyEricssonE10i
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

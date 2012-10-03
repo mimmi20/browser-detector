@@ -35,7 +35,7 @@ class Htc7Mozart extends HtcBase
     /**
      * @var string the detected device
      */
-    protected $_device = '7 Mozart';
+    protected $_device = 'Mozart';
     
     /**
      * Final Interceptor: Intercept
@@ -74,7 +74,7 @@ class Htc7Mozart extends HtcBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,9 +95,9 @@ class Htc7Mozart extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
+        $handler = new \Browscap\Os\Handlers\WindowsPhoneOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -120,7 +120,7 @@ class Htc7Mozart extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         

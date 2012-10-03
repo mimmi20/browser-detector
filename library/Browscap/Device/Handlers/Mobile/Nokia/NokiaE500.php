@@ -81,7 +81,7 @@ class NokiaE500 extends NokiaE5
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Symbianos();
         $handler->setLogger($this->_logger);
@@ -106,7 +106,7 @@ class NokiaE500 extends NokiaE5
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForSymbian();
         

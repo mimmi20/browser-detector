@@ -105,6 +105,7 @@ class Netscape extends BrowserHandler
             'Rockmelt',
             'libwww',
             'OviBrowser',
+            'K-Meleon',
             // Fakes
             'Mac; Mac OS '
         );

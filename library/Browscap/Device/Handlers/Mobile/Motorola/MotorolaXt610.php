@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Motorola;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MotorolaXT610.php 261 2012-07-08 07:30:46Z  $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,19 +28,14 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MotorolaXT610.php 261 2012-07-08 07:30:46Z  $
  */
-class MdaCompact extends GeneralMobile
+class MotorolaXt610 extends MotorolaBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MDA Compact';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'T-Mobile';
+    protected $_device = 'XT610';
     
     /**
      * Final Interceptor: Intercept
@@ -55,23 +50,11 @@ class MdaCompact extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MDA compact')) {
+        if (!$this->_utils->checkIfContains(array('MOT-XT610', 'XT610'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect()
-    {
-        return $this;
     }
     
     /**
@@ -82,6 +65,18 @@ class MdaCompact extends GeneralMobile
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -100,9 +95,9 @@ class MdaCompact extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -125,12 +120,14 @@ class MdaCompact extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $browser = new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer();
-        $browser->setLogger($this->_logger);
-        $browser->setUseragent($this->_useragent);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
-        return $browser->detect($this->_useragent);
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

@@ -74,7 +74,7 @@ class NintendoWii extends NintendoBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +95,7 @@ class NintendoWii extends NintendoBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Unknown();
         $handler->setLogger($this->_logger);
@@ -120,7 +120,7 @@ class NintendoWii extends NintendoBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\Opera();
         $handler->setLogger($this->_logger);

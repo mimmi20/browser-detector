@@ -38,6 +38,11 @@ class CrOs extends OsHandler
     protected $_name = 'CrOS';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Google';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

@@ -50,7 +50,7 @@ class SamsungGti9000 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('GT-I9000')) {
+        if (!$this->_utils->checkIfContains(array('GT-I9000', 'GT-i9000'))) {
             return false;
         }
         
@@ -74,7 +74,7 @@ class SamsungGti9000 extends SamsungBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +95,7 @@ class SamsungGti9000 extends SamsungBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -120,7 +120,7 @@ class SamsungGti9000 extends SamsungBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

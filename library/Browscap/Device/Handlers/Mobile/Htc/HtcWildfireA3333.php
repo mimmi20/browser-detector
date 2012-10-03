@@ -33,7 +33,7 @@ class HtcWildfireA3333 extends HtcWildfire
     /**
      * @var string the detected device
      */
-    protected $_device = 'Wildfire A3333';
+    protected $_device = 'A3333';
     
     /**
      * Final Interceptor: Intercept
@@ -81,7 +81,7 @@ class HtcWildfireA3333 extends HtcWildfire
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -106,7 +106,7 @@ class HtcWildfireA3333 extends HtcWildfire
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

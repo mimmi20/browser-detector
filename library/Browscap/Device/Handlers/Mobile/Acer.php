@@ -63,6 +63,7 @@ class Acer extends GeneralMobile
             'A500',
             'A501',
             'A510',
+            'A700',
             'E320',
             'G100W'
         );
@@ -81,7 +82,7 @@ class Acer extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -90,8 +91,9 @@ class Acer extends GeneralMobile
             __NAMESPACE__ . '\\Acer'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -120,7 +122,7 @@ class Acer extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);

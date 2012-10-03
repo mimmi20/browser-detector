@@ -50,7 +50,7 @@ class NokiaN900 extends NokiaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('NokiaN900', 'Nokia N900'))) {
+        if (!$this->_utils->checkIfContains(array('NokiaN900', 'Nokia N900', 'RX-51 N900'))) {
             return false;
         }
         
@@ -74,7 +74,7 @@ class NokiaN900 extends NokiaBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +95,7 @@ class NokiaN900 extends NokiaBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -120,7 +120,7 @@ class NokiaN900 extends NokiaBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

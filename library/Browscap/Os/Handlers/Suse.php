@@ -36,6 +36,11 @@ class Suse extends Linux
     protected $_name = 'Suse Linux';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Suse';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

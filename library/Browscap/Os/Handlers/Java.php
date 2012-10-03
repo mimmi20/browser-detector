@@ -38,6 +38,11 @@ class Java extends OsHandler
     protected $_name = 'Java';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Oracle';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -93,5 +98,40 @@ class Java extends OsHandler
     public function getWeight()
     {
         return 218;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $browsers = array(
+            'NetFront',
+            'OperaMini',
+            'Ucweb',
+            'Dolfin',
+            'Jasmine',
+            'Motorola',
+            'TelecaObigo',
+            'Openwave'
+        );
+        
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
+        
+        return $chain->detect();
     }
 }

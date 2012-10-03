@@ -57,7 +57,8 @@ class Asus extends GeneralMobile
         
         $asusPhones = array(
             'Asus',
-            'Transformer'
+            'Transformer',
+            'Slider SL101'
         );
         
         if ($this->_utils->checkIfContains($asusPhones)) {
@@ -74,7 +75,7 @@ class Asus extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -83,8 +84,9 @@ class Asus extends GeneralMobile
             __NAMESPACE__ . '\\Asus'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -113,7 +115,7 @@ class Asus extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -138,7 +140,7 @@ class Asus extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
@@ -150,11 +152,8 @@ class Asus extends GeneralMobile
         
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

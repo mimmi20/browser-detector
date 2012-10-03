@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Desktop;
+namespace Browscap\Device\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
  */
 
-use Browscap\Device\Handlers\GeneralDesktop;
+use Browscap\Device\Handlers\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\GeneralDesktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
  */
-class Idl6651n extends GeneralDesktop
+class EpadP7901a extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'IDL-6651N';
+    protected $_device = 'P7901A';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Epad';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +55,7 @@ class Idl6651n extends GeneralDesktop
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('IDL-6651N')) {
+        if (!$this->_utils->checkIfContains('p7901a', true)) {
             return false;
         }
         
@@ -64,7 +69,7 @@ class Idl6651n extends GeneralDesktop
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -76,7 +81,7 @@ class Idl6651n extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 5;
+        return parent::getWeight() + 1;
     }
     
     /**
@@ -95,9 +100,9 @@ class Idl6651n extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\LinuxTv();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -120,12 +125,20 @@ class Idl6651n extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Desktop\HbbTv();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
-        return $handler->detect();
+        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
+        
+        return $chain->detect();
     }
 }

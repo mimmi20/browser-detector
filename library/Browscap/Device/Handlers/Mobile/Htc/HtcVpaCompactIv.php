@@ -79,7 +79,7 @@ class HtcVpaCompactIv extends HtcBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -100,7 +100,7 @@ class HtcVpaCompactIv extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
         $handler->setLogger($this->_logger);
@@ -125,7 +125,7 @@ class HtcVpaCompactIv extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         

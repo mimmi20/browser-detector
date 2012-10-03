@@ -64,6 +64,9 @@ abstract class AbstractChain
     /** @var string */
     protected $_namespace = '';
     
+    /** @var string */
+    protected $_userAgent = '';
+    
     
 
     /**
@@ -245,6 +248,20 @@ abstract class AbstractChain
     }
     
     /**
+     * sets the UserAgent
+     *
+     * @param string $agent
+     *
+     * @return 
+     */
+    final public function setUserAgent($agent)
+    {
+        $this->_userAgent = $agent;
+        
+        return $this;
+    }
+    
+    /**
      * sets the default directory where the chain is searching 
      *
      * @return 
@@ -271,13 +288,23 @@ abstract class AbstractChain
     /**
      * detect the user agent
      *
+     * @return string
+     */
+    final public function detect()
+    {
+        $chain = $this->_createChain();
+        
+        return $this->_detect($chain);
+    }
+    
+    /**
+     * detect the user agent
+     *
      * @param \SplPriorityQueue $chain
-     * @param string            $userAgent The user agent
-     * @param string            $this->_namespace
      *
      * @return string
      */
-    protected function _detect(\SplPriorityQueue $chainInput, $userAgent)
+    protected function _detect(\SplPriorityQueue $chainInput)
     {
         $chain = clone $chainInput;
         
@@ -287,7 +314,7 @@ abstract class AbstractChain
             while ($chain->valid()) {
                 $handler = $chain->current();
                 $handler->setLogger($this->_logger);
-                $handler->setUserAgent($userAgent);
+                $handler->setUserAgent($this->_userAgent);
                 
                 if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                     $handler->setCache($this->_cache);
@@ -316,7 +343,7 @@ abstract class AbstractChain
             $handler = new $className();
         }
         $handler->setLogger($this->_logger);
-        $handler->setUserAgent($userAgent);
+        $handler->setUserAgent($this->_userAgent);
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $handler->setCache($this->_cache);

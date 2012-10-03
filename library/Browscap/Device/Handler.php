@@ -63,6 +63,16 @@ abstract class Handler implements MatcherInterface
     protected $_manufacturer = 'unknown';
     
     /**
+     * @var \Browscap\Os\Handler
+     */
+    protected $_os = null;
+    
+    /**
+     * @var \Browscap\Browser\Handler
+     */
+    protected $_browser = null;
+    
+    /**
      * a \Zend\Cache object
      *
      * @var \Zend\Cache
@@ -139,9 +149,51 @@ abstract class Handler implements MatcherInterface
      *
      * @return StdClass
      */
-    public function detect()
+    final public function detect()
+    {
+        $this->_os = $this->detectOs();
+        
+        if (null !== $this->_os) {
+            $this->_browser = $this->_os->getBrowser();
+        }
+        
+        if (null === $this->_browser) {
+            $this->_browser = $this->detectBrowser();
+        }
+        
+        return $this->detectDevice();
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return StdClass|null
+     */
+    public function detectOs()
+    {
+        return null;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return StdClass|null
+     */
+    public function detectBrowser()
+    {
+        return null;
     }
     
     /**
@@ -239,11 +291,21 @@ abstract class Handler implements MatcherInterface
     }
     
     /**
-     * returns TRUE if the browser should be banned
+     * returns TRUE if the device is a normal Desktop
      *
      * @return boolean
      */
     public function isDesktop()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the device is a TV device
+     *
+     * @return boolean
+     */
+    public function isTvDevice()
     {
         return false;
     }
@@ -294,9 +356,9 @@ abstract class Handler implements MatcherInterface
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    final public function getOs()
     {
-        return null;
+        return $this->_os;
     }
     
     /**
@@ -315,8 +377,8 @@ abstract class Handler implements MatcherInterface
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    final public function getBrowser()
     {
-        return null;
+        return $this->_browser;
     }
 }

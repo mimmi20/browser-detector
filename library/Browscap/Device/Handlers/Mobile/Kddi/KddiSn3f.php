@@ -79,7 +79,7 @@ class KddiSn3f extends KddiBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -100,7 +100,7 @@ class KddiSn3f extends KddiBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
@@ -125,7 +125,7 @@ class KddiSn3f extends KddiBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\Openwave();
         $handler->setLogger($this->_logger);

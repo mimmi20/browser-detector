@@ -61,6 +61,11 @@ abstract class Handler implements MatcherInterface
      * @var string the bits of the detected platform
      */
     protected $_bits = '';
+    
+    /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'unknown';
 
     /**
      * a \Zend\Cache object
@@ -190,7 +195,7 @@ abstract class Handler implements MatcherInterface
      */
     protected function _detectBits()
     {
-        if ($this->_utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64'))) {
+        if ($this->_utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
             $this->_bits = '64';
             
             return $this;
@@ -221,5 +226,26 @@ abstract class Handler implements MatcherInterface
     public function getWeight()
     {
         return 1;
+    }
+    
+    /**
+     * returns the manufacturer of the actual device
+     *
+     * @return string
+     */
+    final public function getManufacturer()
+    {
+        return $this->_manufacturer;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Browser\Handler
+     */
+    public function getBrowser()
+    {
+        return null;
     }
 }

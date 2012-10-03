@@ -36,6 +36,11 @@ class LinuxTv extends Linux
     protected $_name = 'Linux for TV';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'unknown';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

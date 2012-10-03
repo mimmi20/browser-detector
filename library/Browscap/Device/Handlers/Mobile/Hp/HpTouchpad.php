@@ -79,7 +79,7 @@ class HpTouchpad extends HpBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -110,7 +110,7 @@ class HpTouchpad extends HpBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\WebOs();
         $handler->setLogger($this->_logger);
@@ -135,7 +135,7 @@ class HpTouchpad extends HpBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\WebkitWebos();
         $handler->setLogger($this->_logger);

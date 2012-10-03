@@ -202,7 +202,7 @@ abstract class Handler implements MatcherInterface
     protected function _detectBits()
     {
         // 64 bits
-        if ($this->_utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64'))) {
+        if ($this->_utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
             $this->_bits = '64';
             
             return $this;

@@ -49,7 +49,7 @@ class Safari extends BrowserHandler
      */
     public function canHandle()
     {
-        return $this->_utils->isSafari($this->_useragent);
+        return $this->_utils->isSafari();
     }
     
     /**

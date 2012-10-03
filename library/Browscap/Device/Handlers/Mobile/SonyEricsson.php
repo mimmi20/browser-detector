@@ -56,33 +56,33 @@ class SonyEricsson extends GeneralMobile
         }
         
         $sonyPhones = array(
-            'SonyEricsson',
-            'Sony',
-            'E15i',
-            'E15av',
-            'LT15i',
-            'LT18i',
-            'LT22i',
-            'LT26i',
-            'MK16i',
-            'MT11i',
-            'MT15i',
-            'S312',
-            'SK17i',
-            'ST18i',
-            'ST25i',
-            'U20i',
-            'W508a',
-            'W760i',
-            'WT13i',
-            'X1i',
-            'X10i',
-            'XST2',
-            'PlayStation',
-            'PSP'
+            'sonyericsson',
+            'sony',
+            'e15i',
+            'e15av',
+            'lt15i',
+            'lt18i',
+            'lt22i',
+            'lt26i',
+            'mk16i',
+            'mt11i',
+            'mt15i',
+            's312',
+            'sk17i',
+            'st18i',
+            'st25i',
+            'u20i',
+            'w508a',
+            'w760i',
+            'wt13i',
+            'x1i',
+            'x10i',
+            'xst2',
+            'playstation',
+            'psp'
         );
         
-        if ($this->_utils->checkIfContains($sonyPhones)) {
+        if ($this->_utils->checkIfContains($sonyPhones, true)) {
             return true;
         }
         
@@ -96,7 +96,7 @@ class SonyEricsson extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -105,8 +105,9 @@ class SonyEricsson extends GeneralMobile
             __NAMESPACE__ . '\\SonyEricsson'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -135,7 +136,7 @@ class SonyEricsson extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $os = array(
             'Android',
@@ -143,7 +144,8 @@ class SonyEricsson extends GeneralMobile
             'Brew',
             'Java',
             'Symbianos',
-            'WindowsMobileOs'
+            'WindowsMobileOs',
+            'WindowsPhoneOs'
         );
         
         $osChain = new \Browscap\Os\Chain(false, $os);
@@ -172,7 +174,7 @@ class SonyEricsson extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
@@ -184,11 +186,8 @@ class SonyEricsson extends GeneralMobile
         
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
 }

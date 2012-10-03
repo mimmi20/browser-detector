@@ -33,7 +33,7 @@ class AcerIconiaA501 extends AcerIconia
     /**
      * @var string the detected device
      */
-    protected $_device = 'Iconia A501';
+    protected $_device = 'A501';
     
     /**
      * Final Interceptor: Intercept
@@ -81,7 +81,7 @@ class AcerIconiaA501 extends AcerIconia
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -106,7 +106,7 @@ class AcerIconiaA501 extends AcerIconia
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

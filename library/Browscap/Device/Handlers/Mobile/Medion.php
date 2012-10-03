@@ -59,7 +59,7 @@ class Medion extends GeneralMobile
             return true;
         }
         
-        if ($this->_utils->checkIfContains('MD_')) {
+        if ($this->_utils->checkIfContains(array('MD_', 'LIFETAB'))) {
             return true;
         }
         
@@ -73,7 +73,7 @@ class Medion extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -82,8 +82,9 @@ class Medion extends GeneralMobile
             __NAMESPACE__ . '\\Medion'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -122,7 +123,7 @@ class Medion extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -147,7 +148,7 @@ class Medion extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

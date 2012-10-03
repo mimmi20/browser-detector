@@ -38,6 +38,11 @@ class Brew extends OsHandler
     protected $_name = 'BREW';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'unknown';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -82,5 +87,33 @@ class Brew extends OsHandler
     public function getWeight()
     {
         return 2;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getBrowser()
+    {
+        $browsers = array(
+            'Dolfin'
+        );
+        
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . 'Browser' 
+            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
+            . DIRECTORY_SEPARATOR
+        );
+        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        
+        $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
+        
+        return $chain->detect();
     }
 }

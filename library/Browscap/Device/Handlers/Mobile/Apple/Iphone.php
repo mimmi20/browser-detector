@@ -68,7 +68,7 @@ class Iphone extends AppleBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }

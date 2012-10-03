@@ -69,7 +69,7 @@ class SprintPpc6700 extends GeneralMobile
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -100,9 +100,9 @@ class SprintPpc6700 extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
+        $handler = new \Browscap\Os\Handlers\WindowsPhoneOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -125,7 +125,7 @@ class SprintPpc6700 extends GeneralMobile
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer();
         $handler->setLogger($this->_logger);

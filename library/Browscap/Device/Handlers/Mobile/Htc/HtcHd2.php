@@ -74,7 +74,7 @@ class HtcHd2 extends HtcBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,9 +95,9 @@ class HtcHd2 extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\WindowsPhoneOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -120,9 +120,9 @@ class HtcHd2 extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
+        $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
             $browserChain->setCache($this->_cache);

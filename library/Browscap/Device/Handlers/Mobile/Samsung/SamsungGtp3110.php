@@ -74,7 +74,7 @@ class SamsungGtp3110 extends SamsungBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +95,7 @@ class SamsungGtp3110 extends SamsungBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -120,7 +120,7 @@ class SamsungGtp3110 extends SamsungBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         
@@ -129,5 +129,15 @@ class SamsungGtp3110 extends SamsungBase
         }
         
         return $browserChain->detect($this->_useragent);
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
 }

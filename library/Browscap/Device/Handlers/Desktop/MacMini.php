@@ -48,14 +48,6 @@ class MacMini extends Macintosh
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if ($this->_utils->checkIfContains(array('Macmini'))) {
             return true;
         }

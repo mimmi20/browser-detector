@@ -36,6 +36,11 @@ class Redhat extends Linux
     protected $_name = 'Redhat Linux';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Redhat';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool

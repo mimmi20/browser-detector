@@ -60,7 +60,9 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('KHTML', 'Konqueror', 'konqueror', 'kded'))) {
+        if (!$this->_utils->checkIfContains(array('KHTML', 'Konqueror', 'konqueror', 'kded'))
+            || $this->_utils->checkIfContains('KHTML, like Gecko')
+        ) {
             return false;
         }
         
@@ -80,7 +82,8 @@ class Konqueror extends BrowserHandler
             'Firefox',
             'Chrome',
             'Chromium',
-            'RockMelt'
+            'RockMelt',
+            'Qt'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnKonqueror)) {

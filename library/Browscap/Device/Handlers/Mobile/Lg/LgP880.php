@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Desktop;
+namespace Browscap\Device\Handlers\Mobile\Lg;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: LgP880.php 261 2012-07-08 07:30:46Z  $
  */
 
-use Browscap\Device\Handlers\GeneralDesktop;
+use Browscap\Device\Handlers\Mobile\Lg as LgBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,19 +28,14 @@ use Browscap\Device\Handlers\GeneralDesktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: LgP880.php 261 2012-07-08 07:30:46Z  $
  */
-class DlinkDsm380 extends GeneralDesktop
+class LgP880 extends LgBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'DSM 380';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'DLink';
+    protected $_device = 'P880';
     
     /**
      * Final Interceptor: Intercept
@@ -55,23 +50,11 @@ class DlinkDsm380 extends GeneralDesktop
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('dlink.dsm380')) {
+        if (!$this->_utils->checkIfContains('LG-P880')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detect()
-    {
-        return $this;
     }
     
     /**
@@ -81,7 +64,19 @@ class DlinkDsm380 extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 5;
+        return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -100,9 +95,9 @@ class DlinkDsm380 extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\LinuxTv();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -125,12 +120,14 @@ class DlinkDsm380 extends GeneralDesktop
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\General\Boxee();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $browserChain = $this->_utils->getBrowserChainForAndroid();
         
-        return $handler->detect();
+        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
+            $browserChain->setCache($this->_cache);
+        }
+        
+        return $browserChain->detect($this->_useragent);
     }
 }

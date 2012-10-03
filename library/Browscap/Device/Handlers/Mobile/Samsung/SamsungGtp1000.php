@@ -72,13 +72,23 @@ class SamsungGtp1000 extends SamsungBase
     }
     
     /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
+    
+    /**
      * detects the device name from the given user agent
      *
      * @param string $userAgent
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -99,7 +109,7 @@ class SamsungGtp1000 extends SamsungBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -124,7 +134,7 @@ class SamsungGtp1000 extends SamsungBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

@@ -36,6 +36,11 @@ class Debian extends Linux
     protected $_name = 'Debian';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'unknown';
+    
+    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -63,13 +68,6 @@ class Debian extends Linux
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Debian\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Debian\-([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -50,7 +50,49 @@ class GeneralDesktop extends DeviceHandler
             return false;
         }
         
-        return true;
+        if ($this->_utils->isMobileBrowser()) {
+            return false;
+        }
+        
+        if ($this->_utils->isSpamOrCrawler()) {
+            return false;
+        }
+        
+        if ($this->_utils->isFakeBrowser()) {
+            return false;
+        }
+        
+        if ($this->_utils->isTvDevice()) {
+            return false;
+        }
+        
+        if ($this->_utils->isWindows($this->_useragent)) {
+            return true;
+        }
+        
+        $linux = array(
+            'Linux', 'Debian', 'Ubuntu', 'SUSE', 'Fedora', 'Mint', 'redhat', 
+            'Slackware', 'Zenwalk GNU', 'CentOS', 'Kubuntu', 'CrOs'
+        );
+        
+        if ($this->_utils->checkIfContains($linux, true)) {
+            return true;
+        }
+        
+        if ($this->_utils->checkIfContains(array('iMac', 'eeepc', 'MacBookPro', 'MacBookAir', 'MacBook', 'Macmini'))) {
+            return true;
+        }
+        
+        $mac = array(
+            'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac', 
+            'PPC Mac', 'Mac OS X'
+        );
+        
+        if ($this->_utils->checkIfContains($mac)) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**
@@ -60,7 +102,7 @@ class GeneralDesktop extends DeviceHandler
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         $chain = new \Browscap\Device\Chain(
             true, 
@@ -69,8 +111,9 @@ class GeneralDesktop extends DeviceHandler
             __NAMESPACE__ . '\\Desktop'
         );
         $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
         
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**
@@ -99,7 +142,7 @@ class GeneralDesktop extends DeviceHandler
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
@@ -110,12 +153,9 @@ class GeneralDesktop extends DeviceHandler
         
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setUserAgent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $chain->setCache($this->_cache);
-        }
-        
-        return $chain->detect($this->_useragent);
+        return $chain->detect();
     }
     
     /**

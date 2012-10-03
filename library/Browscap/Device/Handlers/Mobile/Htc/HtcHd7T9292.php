@@ -35,7 +35,7 @@ class HtcHd7T9292 extends HtcBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'HD7 T9292';
+    protected $_device = 'T9292';
     
     /**
      * Final Interceptor: Intercept
@@ -74,7 +74,7 @@ class HtcHd7T9292 extends HtcBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,9 +95,9 @@ class HtcHd7T9292 extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
+        $handler = new \Browscap\Os\Handlers\WindowsPhoneOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -120,7 +120,7 @@ class HtcHd7T9292 extends HtcBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         

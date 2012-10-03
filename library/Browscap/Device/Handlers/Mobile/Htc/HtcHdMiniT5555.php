@@ -72,7 +72,7 @@ class HtcHdMiniT5555 extends HtcHdMini
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -93,7 +93,7 @@ class HtcHdMiniT5555 extends HtcHdMini
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Java();
         $handler->setLogger($this->_logger);
@@ -118,7 +118,7 @@ class HtcHdMiniT5555 extends HtcHdMini
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForJava();
         

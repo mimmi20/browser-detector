@@ -74,7 +74,7 @@ class LgLn510 extends LgBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -95,7 +95,7 @@ class LgLn510 extends LgBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Brew();
         $handler->setLogger($this->_logger);
@@ -120,7 +120,7 @@ class LgLn510 extends LgBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         

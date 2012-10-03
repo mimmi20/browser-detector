@@ -78,7 +78,7 @@ class SonyEricssonX1i extends SonyBase
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -99,9 +99,9 @@ class SonyEricssonX1i extends SonyBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
+        $handler = new \Browscap\Os\Handlers\WindowsPhoneOs();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -124,7 +124,7 @@ class SonyEricssonX1i extends SonyBase
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForMobileWindows();
         

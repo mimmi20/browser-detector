@@ -72,7 +72,7 @@ class SonyEricssonWT19iv extends SonyEricssonWT19i
      *
      * @return StdClass
      */
-    public function detect()
+    public function detectDevice()
     {
         return $this;
     }
@@ -93,7 +93,7 @@ class SonyEricssonWT19iv extends SonyEricssonWT19i
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getOs()
+    public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
@@ -118,7 +118,7 @@ class SonyEricssonWT19iv extends SonyEricssonWT19i
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browserChain = $this->_utils->getBrowserChainForAndroid();
         
