@@ -55,13 +55,17 @@ class Motorola extends GeneralMobile
             return false;
         }
         
+        if ($this->_utils->checkIfContains('HTC')) {
+            return false;
+        }
+        
         $motorolaPhones = array(
             'motorola',
             'moto', 
             'mot',
             'mb200',
             'mb300',
-            //'droid',
+            ' droid ',
             'xt702',
             'mz601',
             'mz604',
@@ -74,14 +78,11 @@ class Motorola extends GeneralMobile
             'mb526',
             'mb525',
             'mb511',
-            'xt610'
+            'xt610',
+            'xt320'
         );
         
         if (!$this->_utils->checkIfContains($motorolaPhones, true)) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains('HTC')) {
             return false;
         }
         
@@ -154,39 +155,6 @@ class Motorola extends GeneralMobile
             $osChain->setCache($this->_cache);
         }
         
-        return $osChain->detect($this->_useragent);
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
-        $chain->setUserAgent($this->_useragent);
-        
-        return $chain->detect();
+        return $osChain->detect();
     }
 }

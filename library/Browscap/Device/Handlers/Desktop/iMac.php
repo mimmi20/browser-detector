@@ -67,7 +67,7 @@ class iMac extends Macintosh
      */
     public function getWeight()
     {
-        return 2;
+        return parent::getWeight() + 1;
     }
     
     /**

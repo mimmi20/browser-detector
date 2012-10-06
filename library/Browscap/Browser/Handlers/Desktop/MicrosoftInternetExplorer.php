@@ -110,7 +110,9 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)
+            && !$this->_utils->checkIfContains('Bitte Mozilla Firefox verwenden')
+        ) {
             return false;
         }
         

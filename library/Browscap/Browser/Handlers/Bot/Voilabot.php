@@ -50,7 +50,7 @@ class Voilabot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Voilabot/'))) {
+        if (!$this->_utils->checkIfContains(array('Voilabot'))) {
             return false;
         }
         
@@ -65,6 +65,20 @@ class Voilabot extends GeneralBot
     protected function _detectVersion()
     {
         $doMatch = preg_match('/Voilabot\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Voilabot ([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/VoilaBot BETA ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

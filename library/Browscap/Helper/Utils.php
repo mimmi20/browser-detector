@@ -89,6 +89,7 @@ final class Utils
         'ipod',
         'iris',
         'j2me',
+        'kindle',
         'lenovo',
         'like mac os x',
         'look-alike',
@@ -105,6 +106,7 @@ final class Utils
         'opera mobi',
         'palm',
         'phone',
+        'playstation',
         'pocket pc',
         'pocketpc',
         'rim tablet',
@@ -126,6 +128,7 @@ final class Utils
         'windows mobile',
         'windows phone os',
         'wireless',
+        'xda_diamond_2',
         'zunewp7'
     );
     
@@ -136,6 +139,7 @@ final class Utils
         'acoon',
         'anyevent',
         'appengine-google',
+        'ask.com',
         'bing',
         'bot',
         'catalog',
@@ -232,6 +236,12 @@ final class Utils
             return true;
         }
         
+        if ($this->checkIfContains('http', true)
+            && $this->checkIfContains('request', true)
+        ) {
+            return true;
+        }
+        
         return false;
     }
     
@@ -254,6 +264,7 @@ final class Utils
         
         if (!$this->checkIfStartsWith('Mozilla/') // regular IE
             && !$this->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
+            && !$this->checkIfContains('Windows CE') // Windows CE
             && $this->checkIfContains('MSIE')
         ) {
             return true;
@@ -333,6 +344,7 @@ final class Utils
             'AdobeAIR',
             'Dreamweaver',
             'Google Earth',
+            'PhantomJS',
             //mobile Version
             'Mobile',
             'Tablet',

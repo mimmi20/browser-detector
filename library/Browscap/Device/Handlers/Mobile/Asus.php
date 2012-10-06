@@ -58,7 +58,8 @@ class Asus extends GeneralMobile
         $asusPhones = array(
             'Asus',
             'Transformer',
-            'Slider SL101'
+            'Slider SL101',
+            'eee_701'
         );
         
         if ($this->_utils->checkIfContains($asusPhones)) {
@@ -122,38 +123,5 @@ class Asus extends GeneralMobile
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
-        $chain->setUserAgent($this->_useragent);
-        
-        return $chain->detect();
     }
 }

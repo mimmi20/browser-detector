@@ -50,7 +50,7 @@ class SamsungSghi917 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('SAMSUNG;SGH-i917', 'SAMSUNG; SGH-i917'))) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG;SGH-i917', 'SAMSUNG; SGH-i917', 'SAMSUNG; OMNIA7'))) {
             return false;
         }
         
@@ -77,63 +77,5 @@ class SamsungSghi917 extends SamsungBase
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            'Android',
-            'WindowsPhoneOs',
-        );
-        
-        $chain = new \Browscap\Os\Chain(false, $os);
-        $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
-        $chain->setUseragent($this->_useragent);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
     }
 }

@@ -62,7 +62,7 @@ class MacMini extends Macintosh
      */
     public function getWeight()
     {
-        return 2;
+        return parent::getWeight() + 1;
     }
     
     /**

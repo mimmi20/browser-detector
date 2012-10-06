@@ -76,6 +76,7 @@ class Linux extends OsHandler
             'hbbtv',
             'hpwos',
             'smart-tv',
+            'ventana',
             // other OS which are using X11
             'bsd',
             'sunos',

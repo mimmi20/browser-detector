@@ -83,7 +83,12 @@ class Konqueror extends BrowserHandler
             'Chrome',
             'Chromium',
             'RockMelt',
-            'Qt'
+            'Qt',
+            'Google Earth',
+            'Epiphany',
+            'Dreamweaver',
+            'Midori',
+            'OmniWeb'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnKonqueror)) {

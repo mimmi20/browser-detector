@@ -51,7 +51,7 @@ class Mandriva extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Mandriva', true)) {
+        if (!$this->_utils->checkIfContains('mandriva', true)) {
             return false;
         }
         

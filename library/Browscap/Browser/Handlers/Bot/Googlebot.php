@@ -55,6 +55,7 @@ class Googlebot extends Google
         
         if (!$this->_utils->checkIfStartsWith('google', true) 
             && !$this->_utils->checkIfContains('googlebot', true)
+            && !$this->_utils->checkIfContains('www.google.com/bot.html', true)
         ) {
             return false;
         }
@@ -112,6 +113,13 @@ class Googlebot extends Google
         }
         
         $doMatch = preg_match('/Google\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Mediapartners\-Google\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

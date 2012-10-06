@@ -67,7 +67,7 @@ class Firefox extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho'))) {
+        if (!$this->_utils->checkIfContains(array('Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho', 'Namoroka'))) {
             return false;
         }
         
@@ -90,6 +90,7 @@ class Firefox extends BrowserHandler
             'Iceowl',
             'Icedove',
             'Iceape',
+            'Firebird',
             //Nutch
             'Nutch',
             'CazoodleBot',
@@ -136,6 +137,13 @@ class Firefox extends BrowserHandler
         }
         
         $doMatch = preg_match('/BonEcho\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/Namoroka\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

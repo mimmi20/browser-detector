@@ -18,7 +18,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\CfNetwork;
+use \Browscap\Browser\Handlers\General\Mercury as MercuryBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,87 +30,7 @@ use \Browscap\Browser\Handlers\General\CfNetwork;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Mercury extends CfNetwork
+class Mercury extends MercuryBase
 {
-    /**
-     * @var string the detected browser
-     */
-    protected $_browser = 'Mercury';
-    
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfStartsWith('Mercury')) {
-            return false;
-        }
-        
-        return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/Mercury3\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Mercury ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 8;
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Unknown();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
+    // nothing to do
 }

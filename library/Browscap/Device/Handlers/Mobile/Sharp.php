@@ -55,7 +55,11 @@ class Sharp extends GeneralMobile
             return false;
         }
         
-        $sharpPhones = array('SHARP');
+        $sharpPhones = array(
+            'SHARP',
+            'IS05',
+            'SH80F'
+        );
         
         if ($this->_utils->checkIfContains($sharpPhones)) {
             return true;
@@ -104,32 +108,7 @@ class Sharp extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $handler = new \Browscap\Browser\Handlers\Mobile\Openwave();
+        $handler = new \Browscap\Os\Handlers\Android();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

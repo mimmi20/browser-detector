@@ -54,7 +54,7 @@ class NokiaN9 extends NokiaBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaN91', 'NokiaN96'))) {
+        if ($this->_utils->checkIfContains(array('NokiaN91', 'NokiaN96', 'NokiaN97', 'NokiaN900'))) {
             return false;
         }
         
@@ -81,55 +81,5 @@ class NokiaN9 extends NokiaBase
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $handler = new \Browscap\Os\Handlers\MeeGo();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $handler = new \Browscap\Browser\Handlers\Mobile\NokiaBrowserNg();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
     }
 }

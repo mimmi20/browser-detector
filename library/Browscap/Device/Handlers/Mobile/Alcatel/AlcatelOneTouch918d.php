@@ -33,7 +33,7 @@ class AlcatelOneTouch918d extends AlcatelOneTouch918
     /**
      * @var string the detected device
      */
-    protected $_device = 'ONE TOUCH 918D';
+    protected $_device = 'One Touch 918D';
     
     /**
      * Final Interceptor: Intercept
@@ -75,57 +75,5 @@ class AlcatelOneTouch918d extends AlcatelOneTouch918
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browserChain = $this->_utils->getBrowserChainForAndroid();
-        
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $browserChain->setCache($this->_cache);
-        }
-        
-        return $browserChain->detect($this->_useragent);
     }
 }
