@@ -115,6 +115,7 @@ class BlackBerry extends GeneralMobile
     {
         $os = array(
             'RimOs',
+            'RimTablet',
             'WindowsMobileOs'
         );
         

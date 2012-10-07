@@ -18,7 +18,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\Desktop\Qt;
+use Browscap\Browser\Handlers\General\Qt as QtBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use \Browscap\Browser\Handlers\Desktop\Qt;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class QtWeb extends Qt
+class QtWeb extends QtBase
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Qt';
+    protected $_browser = 'QtWeb Internet Browser';
     
     /**
      * Returns true if this handler can handle the given user agent
