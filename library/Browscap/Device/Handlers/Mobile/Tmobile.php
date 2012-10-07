@@ -126,14 +126,11 @@ class Tmobile extends GeneralMobile
             'WindowsPhoneOs'
         );
         
-        $osChain = new \Browscap\Os\Chain(false, $os);
-        $osChain->setLogger($this->_logger);
+        $chain = new \Browscap\Os\Chain(false, $os);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $osChain->setCache($this->_cache);
-        }
-        
-        return $osChain->detect($this->_useragent);
-        return $handler->detect();
+        return $chain->detect();
     }
 }

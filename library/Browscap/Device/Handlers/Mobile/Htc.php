@@ -135,6 +135,8 @@ class Htc extends GeneralMobile
         
         $chain = new \Browscap\Os\Chain(false, $os);
         $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
         
         return $chain->detect();
     }

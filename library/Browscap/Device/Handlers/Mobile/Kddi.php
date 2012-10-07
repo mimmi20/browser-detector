@@ -113,10 +113,19 @@ class Kddi extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Unknown();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            'Android',
+            'Java',
+            'Symbianos',
+            'WindowsMobileOs',
+            'WindowsPhoneOs'
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Os\Chain(false, $os);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
+        
+        return $chain->detect();
     }
 }

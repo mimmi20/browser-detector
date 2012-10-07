@@ -78,48 +78,4 @@ class HtcSmartF3188 extends HtcBase
     {
         return $this;
     }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            'Android',
-            'Bada',
-            'WindowsPhoneOs',
-            'WindowsMobileOs',
-            'Java'
-        );
-        
-        $chain = new \Browscap\Os\Chain(false, $os);
-        $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
-        $chain->setUseragent($this->_useragent);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Browser
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
 }

@@ -113,10 +113,16 @@ class BlackBerry extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\RimOs();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            'RimOs',
+            'WindowsMobileOs'
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Os\Chain(false, $os);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
+        
+        return $chain->detect();
     }
 }

@@ -120,7 +120,9 @@ class LinuxDesktop extends GeneralDesktop
             'ZenwalkGnu',
             'CentOs',
             'LinuxTv',
-            'CrOs'
+            'CrOs',
+            'Ventana',
+            'Mandriva'
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);
