@@ -108,7 +108,7 @@ class GeneralTv extends DeviceHandler
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Tv' . DIRECTORY_SEPARATOR . 'Handlers'
+            . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Handlers'
             . DIRECTORY_SEPARATOR . 'Tv' . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'Browscap\\Browser\\Handlers\\Tv';
