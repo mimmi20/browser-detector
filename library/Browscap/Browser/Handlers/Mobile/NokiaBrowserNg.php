@@ -117,11 +117,8 @@ class NokiaBrowserNg extends Nokia
         
         $engineChain = new \Browscap\Engine\Chain(false, $engines);
         $engineChain->setLogger($this->_logger);
+        $engineChain->setUseragent($this->_useragent);
         
-        if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-            $engineChain->setCache($this->_cache);
-        }
-        
-        return $engineChain->detect($this->_useragent);
+        return $engineChain->detect();
     }
 }
