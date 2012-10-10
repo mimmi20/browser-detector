@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Desktop;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,27 +15,27 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Eudora.php 267 2012-09-09 10:54:23Z tmu $
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * SafariHandler
+ * FirefoxUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Eudora.php 267 2012-09-09 10:54:23Z tmu $
  */
-class Dolfin extends BrowserHandler
+class Eudora extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Dolfin';
+    protected $_browser = 'Eudora';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,7 +48,26 @@ class Dolfin extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Dolphin/', 'Dolfin/', 'Dolphin HD'))) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContainsAll(array('Eudora'))) {
+            return false;
+        }
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chromium',
+            'Flock',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'PaleMoon',
+            'Rockmelt'
+        );
+        
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -62,21 +81,7 @@ class Dolfin extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Dolfin\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Dolphin\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Dolphin HD ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Eudora\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -114,7 +119,7 @@ class Dolfin extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
+        $handler = new \Browscap\Engine\Handlers\Gecko();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

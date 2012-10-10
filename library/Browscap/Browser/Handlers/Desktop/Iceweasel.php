@@ -34,6 +34,11 @@ class Iceweasel extends Firefox
      * @var string the detected browser
      */
     protected $_browser = 'Iceweasel';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Debian';
     
     /**
      * Returns true if this handler can handle the given user agent

@@ -55,10 +55,6 @@ class Chrome extends Chromium
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('AppleWebKit')) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
             return false;
         }

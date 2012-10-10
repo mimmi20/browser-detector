@@ -59,12 +59,15 @@ class Htc extends GeneralMobile
             'HTC',
             '7 Trophy',
             'Desire_A8181',
+            'Desire HD',
             'Desire S',
-            'myTouch4G',
-            'Sensation_Z710e',
             'HD2',
-            'Xda_Diamond_2',
-            'Sensation_4G'
+            'MDA_Vario_V',
+            'myTouch4G',
+            'Sensation_4G',
+            'SensationXL_Beats_X315e',
+            'Sensation_Z710e',
+            'Xda_Diamond_2'
         );
         
         if ($this->_utils->checkIfContains($htcPhones)) {
@@ -130,7 +133,8 @@ class Htc extends GeneralMobile
             'Java',
             'Symbianos',
             'WindowsMobileOs',
-            'WindowsPhoneOs'
+            'WindowsPhoneOs',
+            'Linux'
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);

@@ -53,7 +53,8 @@ class WindowsMobileOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->isMobileWindows() 
+        if ((!$this->_utils->isMobileWindows() 
+            && !($this->_utils->isWindows() && $this->_utils->isMobileBrowser()))
             || $this->_utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))
         ) {
             return false;
@@ -106,7 +107,8 @@ class WindowsMobileOs extends OsHandler
     {
         $browsers = array(
             'MicrosoftMobileExplorer',
-            'Opera'
+            'OperaMobile',
+            'OperaMini'
         );
         
         $browserPath = realpath(

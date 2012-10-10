@@ -54,7 +54,7 @@ class NokiaC2 extends NokiaBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaC2-02', 'NokiaC2-03'))) {
+        if ($this->_utils->checkIfContains('NokiaC2-')) {
             return false;
         }
         

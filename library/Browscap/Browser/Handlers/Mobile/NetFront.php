@@ -35,7 +35,7 @@ class NetFront extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Netfront';
+    protected $_browser = 'NetFront';
 
     /**
      * @var string the detected manufacturer

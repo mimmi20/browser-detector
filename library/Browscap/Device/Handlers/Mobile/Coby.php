@@ -58,6 +58,7 @@ class Coby extends GeneralMobile
         $Cobyphones = array(
             'Coby',
             'MID8024',
+            'MID1125',
             'MID1126',
             'MID7015',
             'MID7022',
@@ -99,7 +100,7 @@ class Coby extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return parent::getWeight() + 2;
     }
     
     /**

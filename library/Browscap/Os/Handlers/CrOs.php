@@ -35,7 +35,7 @@ class CrOs extends OsHandler
     /**
      * @var string the detected platform
      */
-    protected $_name = 'CrOS';
+    protected $_name = 'Chrome OS';
     
     /**
      * @var string the manufacturer/creator of this OS

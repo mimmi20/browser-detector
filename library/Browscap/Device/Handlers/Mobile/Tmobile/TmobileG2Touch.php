@@ -50,7 +50,7 @@ class TmobileG2Touch extends TmobileBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('T-Mobile_G2_Touch')) {
+        if (!$this->_utils->checkIfContains(array('T-Mobile_G2_Touch', 'T-Mobile G2'))) {
             return false;
         }
         

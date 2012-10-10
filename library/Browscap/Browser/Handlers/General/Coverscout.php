@@ -18,6 +18,7 @@ namespace Browscap\Browser\Handlers\General;
  * @version    SVN: $Id$
  */
 
+use \Browscap\Browser\Handlers\General\CfNetwork;
 
 /**
  * CatchAllUserAgentHandler
@@ -29,7 +30,7 @@ namespace Browscap\Browser\Handlers\General;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Coverscout extends GeneralBot
+class Coverscout extends CfNetwork
 {
     /**
      * @var string the detected browser

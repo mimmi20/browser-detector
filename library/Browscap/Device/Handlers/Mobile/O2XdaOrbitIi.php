@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Slidepad.php 286 2012-10-06 23:47:15Z tmu $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Slidepad.php 286 2012-10-06 23:47:15Z tmu $
  */
-class OdysSpace extends GeneralMobile
+class O2XdaOrbitIi extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Odys Space';
+    protected $_device = 'Xda Orbit II';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'O2';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +55,7 @@ class OdysSpace extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('ODYS Space')) {
+        if (!$this->_utils->checkIfContains('Xda_orbit_2')) {
             return false;
         }
         
@@ -77,30 +82,5 @@ class OdysSpace extends GeneralMobile
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
     }
 }

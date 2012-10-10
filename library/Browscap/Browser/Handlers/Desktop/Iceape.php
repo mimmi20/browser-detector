@@ -34,6 +34,11 @@ class Iceape extends Thunderbird
      * @var string the detected browser
      */
     protected $_browser = 'Iceape';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Debian';
     
     /**
      * Returns true if this handler can handle the given user agent

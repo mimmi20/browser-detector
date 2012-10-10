@@ -51,14 +51,6 @@ class Seamonkey extends Firefox
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }

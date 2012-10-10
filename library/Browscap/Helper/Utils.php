@@ -135,7 +135,7 @@ final class Utils
     private $_bots = array(
         '<',
         '>',
-        //'\\x',
+        '\\x01',
         'acoon',
         'anyevent',
         'appengine-google',
@@ -370,6 +370,10 @@ final class Utils
             return false;
         }
         
+        if ($this->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit'))) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -411,11 +415,15 @@ final class Utils
     public function isTvDevice()
     {
         $tvDevices = array(
+            'HbbTV',
+            'CE-HTML',
             'Loewe; SL121',
             'dlink.dsm380',
             'IDL-6651N',
             'SonyDTV115',
-            'SMART-TV'
+            'SMART-TV',
+            'Viera',
+            'NETRANGEMMH'
         );
         
         if ($this->checkIfContains($tvDevices)) {
@@ -446,7 +454,7 @@ final class Utils
         if ($this->checkIfStartsWith('Mozilla/') 
             && $this->checkIfContains('MSIE')
         ) {
-            $doMatch = preg_match('/Mozilla\/(4|5)\.0 \(.*MSIE (4|5|6|7|8|9|10)\.\d.*/', $this->_useragent, $matches);
+            $doMatch = preg_match('/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10)\.\d.*/', $this->_useragent, $matches);
             if (!$doMatch) {
                 return true;
             }

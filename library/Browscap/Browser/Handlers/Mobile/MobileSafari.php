@@ -80,7 +80,8 @@ class MobileSafari extends BrowserHandler
             'Grindr',
             'Flipboard',
             'CriOS',
-            'Qt'
+            'Qt',
+            'wOSBrowser'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {

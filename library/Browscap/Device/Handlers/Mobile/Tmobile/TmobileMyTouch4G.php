@@ -35,7 +35,7 @@ class TmobileMyTouch4G extends TmobileBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'T-Mobile MyTouch 4G';
+    protected $_device = 'MyTouch4G';
     
     /**
      * Final Interceptor: Intercept

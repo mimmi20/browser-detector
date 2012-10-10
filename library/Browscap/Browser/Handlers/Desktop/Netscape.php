@@ -80,6 +80,8 @@ class Netscape extends BrowserHandler
             'Flock',
             'Fennec',
             'Icedove',
+            'IceCat',
+            'Eudora',
             //Nutch
             'Nutch',
             'CazoodleBot',

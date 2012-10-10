@@ -51,13 +51,13 @@ class Android extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Android', 'Silk'))
-            && !$this->_utils->isMobileAsSafari()
+        if ($this->_utils->checkIfContains(array('Android', 'Silk'))
+            || $this->_utils->isMobileAsSafari()
         ) {
-            return false;
+            return true;
         }
         
-        return true;
+        return false;
     }
     
     /**
@@ -127,8 +127,9 @@ class Android extends Linux
             'Android',
             'Dalvik',
             'Chrome',
-            'Dolfin',
-            'Silk'
+            'DolfinJasmine',
+            'Silk',
+            'NetFrontLifeBrowser'
         );
         
         $browserPath = realpath(

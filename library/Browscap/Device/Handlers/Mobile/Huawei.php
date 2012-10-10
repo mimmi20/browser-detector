@@ -59,6 +59,7 @@ class Huawei extends GeneralMobile
             'Huawei',
             'HUAWEI',
             'IDEOS S7',
+            'Ideos S7',
             'U8850',
             'U8180',
             'U8650',

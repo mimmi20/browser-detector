@@ -56,7 +56,7 @@ class Olivetti extends GeneralMobile
         }
         
         if (!$this->_utils->checkIfContains('OP') 
-            || $this->_utils->checkIfContains('OPN-B')
+            || $this->_utils->checkIfContains(array('OPN-B', 'OPENMASTER'))
         ) {
             return false;
         }

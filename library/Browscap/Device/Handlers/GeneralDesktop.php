@@ -92,6 +92,14 @@ class GeneralDesktop extends DeviceHandler
             return true;
         }
         
+        $otherDesktops = array(
+            'freebsd', 'openbsd', 'os/2', 'warp'
+        );
+        
+        if ($this->_utils->checkIfContains($otherDesktops, true)) {
+            return true;
+        }
+        
         return false;
     }
     

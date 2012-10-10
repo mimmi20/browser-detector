@@ -34,6 +34,11 @@ class IceCat extends Thunderbird
      * @var string the detected browser
      */
     protected $_browser = 'IceCat';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'GNU';
     
     /**
      * Returns true if this handler can handle the given user agent

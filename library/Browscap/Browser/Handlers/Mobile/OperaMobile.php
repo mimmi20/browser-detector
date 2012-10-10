@@ -53,7 +53,9 @@ class OperaMobile extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Opera Mobi', 'Opera Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('Opera Mobi', 'Opera Tablet'))
+            && !($this->_utils->isMobileBrowser() && $this->_utils->checkIfContains('Opera'))
+        ) {
             return false;
         }
         
@@ -81,7 +83,7 @@ class OperaMobile extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/Opera Mobi\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Opera Mobi\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -35,7 +35,7 @@ class MotorolaXt610 extends MotorolaBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'XT610';
+    protected $_device = 'MotoXT610';
     
     /**
      * Final Interceptor: Intercept

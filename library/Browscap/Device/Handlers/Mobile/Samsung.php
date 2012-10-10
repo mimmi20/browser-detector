@@ -63,11 +63,12 @@ class Samsung extends GeneralMobile
             'SCH-',
             'SEC-',
             'SGH-',
+            'SHW-',
             'SPH-',
             'Galaxy',
             'Nexus',
             'I7110',
-            'YP-G70'
+            'YP-G'
         );
         
         if (!$this->_utils->checkIfContains($samsungPhones)) {

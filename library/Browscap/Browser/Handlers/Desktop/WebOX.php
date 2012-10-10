@@ -100,7 +100,7 @@ class WebOX extends BrowserHandler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Unknown();
+        $handler = new \Browscap\Engine\Handlers\Gecko();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

@@ -98,7 +98,7 @@ class Brew extends OsHandler
     public function getBrowser()
     {
         $browsers = array(
-            'Dolfin'
+            'DolfinJasmine'
         );
         
         $browserPath = realpath(

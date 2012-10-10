@@ -53,6 +53,12 @@ class WindowsPhoneOs extends OsHandler
             return false;
         }
         
+        if (!$this->_utils->isMobileWindows() 
+            && !($this->_utils->isWindows() && $this->_utils->isMobileBrowser())
+        ) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7'))) {
             return false;
         }
@@ -73,6 +79,11 @@ class WindowsPhoneOs extends OsHandler
         
         if ($doMatch) {
             $this->_version = $matches[1];
+            return;
+        }
+        
+        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            $this->_version = '7.5';
             return;
         }
         

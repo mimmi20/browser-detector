@@ -54,7 +54,7 @@ class SamsungGti9100 extends SamsungBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains('GT-I9100P')) {
+        if ($this->_utils->checkIfContains(array('GT-I9100P', 'GT-I9100T', 'GT-I9100G'))) {
             return false;
         }
         

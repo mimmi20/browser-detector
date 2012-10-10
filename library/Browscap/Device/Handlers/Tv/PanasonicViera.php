@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Tv;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyViera.php 285 2012-10-03 21:38:10Z tmu $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyViera.php 285 2012-10-03 21:38:10Z tmu $
  */
-class ShwM380K extends GeneralMobile
+class PanasonicViera extends GeneralTv
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SHW M380K';
+    protected $_device = 'Viera';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Panasonic';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +55,7 @@ class ShwM380K extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SHW-M380K')) {
+        if (!$this->_utils->checkIfContains('Viera')) {
             return false;
         }
         
@@ -76,7 +81,7 @@ class ShwM380K extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 5;
     }
     
     /**
@@ -97,15 +102,21 @@ class ShwM380K extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            'LinuxTv',
+            'FreeBsd'
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Os\Chain(false, $os);
+        $chain->setLogger($this->_logger);
+        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setUseragent($this->_useragent);
+        
+        return $chain->detect();
     }
     
     /**
-     * returns TRUE if the device has a specific Browser
+     * returns TRUE if the device has a specific Operating System
      *
      * @return boolean
      */
@@ -115,25 +126,17 @@ class ShwM380K extends GeneralMobile
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
     public function detectBrowser()
     {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        $handler = new \Browscap\Browser\Handlers\Tv\SmartViera();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
-        $chain->setUserAgent($this->_useragent);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

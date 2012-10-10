@@ -67,13 +67,6 @@ class CentOs extends Linux
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/CentOS\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
         $this->_version = '';
     }
 }

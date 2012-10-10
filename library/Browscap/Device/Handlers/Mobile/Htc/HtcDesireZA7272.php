@@ -33,7 +33,7 @@ class HtcDesireZA7272 extends HtcDesire
     /**
      * @var string the detected device
      */
-    protected $_device = 'DesireZ A7272';
+    protected $_device = 'Desire Z A7272';
     
     /**
      * Final Interceptor: Intercept

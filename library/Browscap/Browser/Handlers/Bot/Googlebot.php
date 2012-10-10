@@ -35,7 +35,7 @@ class Googlebot extends Google
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Googlebot';
+    protected $_browser = 'Google Bot';
 
     /**
      * @var string the detected manufacturer

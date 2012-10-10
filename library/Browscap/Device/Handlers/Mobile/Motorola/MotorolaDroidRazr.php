@@ -52,6 +52,10 @@ class MotorolaDroidRazr extends MotorolaDroid
             return false;
         }
         
+        if ($this->_utils->checkIfContains('DROID RAZR 4G')) {
+            return false;
+        }
+        
         return true;
     }
     

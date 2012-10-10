@@ -58,8 +58,7 @@ class Fennec extends BrowserHandler
         }
         
         if (!$this->_utils->checkIfContainsAll(array('Gecko', 'Fennec'))
-            && !($this->_utils->checkIfContainsAll(array('Firefox', 'Gecko'))
-            && $this->_utils->checkIfContains(array('Tablet', 'Mobile')))
+            && $this->_utils->checkIfContains(array('Tablet', 'Mobile'))
         ) {
             return false;
         }

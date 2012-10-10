@@ -57,14 +57,15 @@ class Java extends OsHandler
             return false;
         }
         
-        $isNotReallyAWindows = array(
+        $isNotReallyAJava = array(
             'SymbianOS',
             'SymbOS',
             'Symbian',
-            'Series 60'
+            'Series 60',
+            'MeeGo'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAWindows)) {
+        if ($this->_utils->checkIfContains($isNotReallyAJava)) {
             return false;
         }
         
@@ -112,11 +113,11 @@ class Java extends OsHandler
             'NetFront',
             'OperaMini',
             'Ucweb',
-            'Dolfin',
-            'Jasmine',
+            'DolfinJasmine',
             'Motorola',
             'TelecaObigo',
-            'Openwave'
+            'Openwave',
+            'Nokia'
         );
         
         $browserPath = realpath(

@@ -52,6 +52,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
         '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'  => '7.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'  => '6.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'  => '5.5',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/' => '5.23',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/' => '5.01',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'  => '5.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/' => '4.01',

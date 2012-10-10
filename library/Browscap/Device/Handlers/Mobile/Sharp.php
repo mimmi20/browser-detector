@@ -77,7 +77,16 @@ class Sharp extends GeneralMobile
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Device\Chain(
+            true, 
+            null, 
+            __DIR__ . DIRECTORY_SEPARATOR . 'Sharp' . DIRECTORY_SEPARATOR, 
+            __NAMESPACE__ . '\\Sharp'
+        );
+        $chain->setDefaultHandler($this);
+        $chain->setUserAgent($this->_useragent);
+        
+        return $chain->detect();
     }
     
     /**

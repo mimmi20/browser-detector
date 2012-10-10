@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,27 +15,25 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Pixray-Seeker.php 263 2012-07-15 18:44:42Z  $
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
- * SafariHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Pixray-Seeker.php 263 2012-07-15 18:44:42Z  $
  */
-class Jasmine extends BrowserHandler
+class PixraySeeker extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Jasmine';
+    protected $_browser = 'Pixray-Seeker';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -48,24 +46,7 @@ class Jasmine extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Jasmine')) {
-            return false;
-        }
-        
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt'
-        );
-        
-        if ($this->_utils->checkIfStartsWith($isNotReallyAnSafari)) {
+        if (!$this->_utils->checkIfContains('Pixray-Seeker')) {
             return false;
         }
         
@@ -79,7 +60,7 @@ class Jasmine extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Jasmine\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Pixray\-Seeker\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -96,31 +77,6 @@ class Jasmine extends BrowserHandler
      */
     public function getWeight()
     {
-        return 4;
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 3;
     }
 }

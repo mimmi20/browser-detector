@@ -50,7 +50,7 @@ class SamsungSghi897 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('SAMSUNG-SGH-I897'))) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG-SGH-I897', 'SGH-I897'))) {
             return false;
         }
         

@@ -54,6 +54,10 @@ class LenovoK1 extends LenovoBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Ideapad K1')) {
+            return false;
+        }
+        
         return true;
     }
     

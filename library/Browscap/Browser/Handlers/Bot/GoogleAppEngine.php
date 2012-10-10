@@ -67,7 +67,7 @@ class GoogleAppEngine extends Google
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/appid: ([a-zA-Z0-9~ ]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/appid: ([a-zA-Z\d~ \-]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = '(appid:' . $matches[1] . ')';

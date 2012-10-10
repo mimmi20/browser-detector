@@ -86,6 +86,6 @@ class AcerG100W extends AcerBase
      */
     public function isTablet()
     {
-        return false;
+        return true;
     }
 }

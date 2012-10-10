@@ -54,7 +54,7 @@ class NokiaN9 extends NokiaBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaN91', 'NokiaN96', 'NokiaN97', 'NokiaN900'))) {
+        if ($this->_utils->checkIfContains(array('NokiaN91', 'NokiaN95', 'NokiaN96', 'NokiaN97', 'NokiaN900'))) {
             return false;
         }
         

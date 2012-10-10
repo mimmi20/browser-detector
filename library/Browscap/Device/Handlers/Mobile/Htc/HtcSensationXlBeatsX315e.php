@@ -48,7 +48,14 @@ class HtcSensationXlBeatsX315e extends HtcSensationXlBeats
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_SensationXL_Beats_X315e', 'HTC Sensation XL with Beats Audio X315e', 'HTC_X515E'))) {
+        $phones = array(
+            'HTC_SensationXL_Beats_X315e', 
+            'HTC Sensation XL with Beats Audio X315e', 
+            'HTC_X515E',
+            'SensationXL_Beats_X315e'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
             return false;
         }
         

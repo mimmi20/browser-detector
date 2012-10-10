@@ -36,6 +36,11 @@ class Sleipnir extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Sleipnir';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Fenrir';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -122,17 +127,23 @@ class Sleipnir extends BrowserHandler
     }
     
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            'Webkit',
+            'Gecko',
+            'Trident'
+        );
         
-        return $handler->detect();
+        $engineChain = new \Browscap\Engine\Chain(false, $engines);
+        $engineChain->setLogger($this->_logger);
+        $engineChain->setUseragent($this->_useragent);
+        
+        return $engineChain->detect();
     }
 }

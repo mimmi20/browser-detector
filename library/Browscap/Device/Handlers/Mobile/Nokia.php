@@ -121,11 +121,13 @@ class Nokia extends GeneralMobile
     public function detectOs()
     {
         $os = array(
+            'Symbianos',
             'Android',
             'Java',
-            'Symbianos',
             'WindowsMobileOs',
-            'WindowsPhoneOs'
+            'WindowsPhoneOs',
+            'Linux',
+            'MeeGo'
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);
