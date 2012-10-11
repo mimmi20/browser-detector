@@ -160,6 +160,7 @@ final class Utils
         'gomezagent',
         'grabber',
         'heritrix',
+        'http_client',
         'httrack',
         'jig browser',
         'linkchecker',
@@ -184,6 +185,7 @@ final class Utils
         'wordpress',
         'www.yahoo.com',
         'xxx',
+        'zend_http_client',
         'zmeu'
     );
     

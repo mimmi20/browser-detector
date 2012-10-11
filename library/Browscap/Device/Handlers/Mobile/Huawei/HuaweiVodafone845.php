@@ -30,7 +30,7 @@ use Browscap\Device\Handlers\Mobile\Huawei as HuaweiBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: HuaweiVodafone858.php 286 2012-10-06 23:47:15Z tmu $
  */
-class HuaweiVodafone858 extends HuaweiBase
+class HuaweiVodafone845 extends HuaweiBase
 {
     /**
      * @var string the detected device
