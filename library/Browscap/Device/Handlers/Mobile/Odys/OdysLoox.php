@@ -1,5 +1,5 @@
 <?php
-nameLoox Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.

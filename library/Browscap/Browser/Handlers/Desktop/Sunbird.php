@@ -76,7 +76,8 @@ class Sunbird extends Firefox
             'Navigator',
             'PaleMoon',
             'Flock',
-            'Fennec'
+            'Fennec',
+            'Qt'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {

@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: DCPbot.php 263 2012-07-15 18:44:42Z  $
  */
 
 /**
@@ -26,19 +26,14 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: DCPbot.php 263 2012-07-15 18:44:42Z  $
  */
-class UnisterTesting extends Unisterbot
+class BlitzBot extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'UnisterTesting';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Unister';
+    protected $_browser = 'BlitzBot';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -51,7 +46,7 @@ class UnisterTesting extends Unisterbot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('unistertesting', 'unister-test'), true)) {
+        if (!$this->_utils->checkIfContains('BlitzBOT')) {
             return false;
         }
         
@@ -65,13 +60,6 @@ class UnisterTesting extends Unisterbot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/UnisterTesting\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
         $this->_version = '';
     }
     
@@ -82,6 +70,6 @@ class UnisterTesting extends Unisterbot
      */
     public function getWeight()
     {
-        return 300;
+        return 3;
     }
 }

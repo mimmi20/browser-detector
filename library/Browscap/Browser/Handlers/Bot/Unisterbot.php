@@ -55,7 +55,7 @@ class Unisterbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Unisterbot/'))) {
+        if (!$this->_utils->checkIfContains(array('unisterbot'), true)) {
             return false;
         }
         
@@ -86,6 +86,6 @@ class Unisterbot extends GeneralBot
      */
     public function getWeight()
     {
-        return 30;
+        return 300;
     }
 }
