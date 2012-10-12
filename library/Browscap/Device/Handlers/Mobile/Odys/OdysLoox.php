@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Odys;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
