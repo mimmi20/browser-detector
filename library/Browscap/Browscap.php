@@ -161,13 +161,118 @@ class Browscap extends Core
     
     public function getAllBrowsers()
     {
-        $this->_getGlobalCache();
-        
-        if (empty($this->_globalCache['browsers'])) {
-            return null;
+        return $this->_expandRules();
+    }
+    
+    private function _parseIni()
+    {
+        if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
+            $browsers = parse_ini_file($this->_localFile, true, INI_SCANNER_RAW);
+        } else {
+            $browsers = parse_ini_file($this->_localFile, true);
         }
         
-        return $this->_globalCache['browsers'];
+        array_shift($browsers);
+        
+        $this->_properties = array_keys($browsers['DefaultProperties']);
+        array_unshift(
+            $this->_properties,
+            'Parent'
+        );
+
+        $this->_userAgents = array_keys($browsers);
+        
+        return $browsers;
+    }
+
+    /**
+     * Parses the user agents
+     *
+     * @return bool whether the file was correctly written to the disk
+     */
+    private function _parseAllAgents($browsers)
+    {   
+        $aPropertiesKeys = array_flip($this->_properties);
+        $key             = 0;
+        
+        foreach ($this->_userAgents as $userAgent) {
+            $this->_parseAgents(
+                $browsers, $userAgent, $aPropertiesKeys, $key
+            );
+            $key++;
+        }
+    }
+    
+    private function _expandRules()
+    {
+        $browsers = $this->_parseIni();
+        $this->_parseAllAgents($browsers);
+        
+        $output = array();
+        
+        foreach ($this->_browsers as $key => $properties) {
+            $output[$this->_userAgents[$key]] = $properties;
+        }
+        
+        return $output;
+    }
+    
+    public function expandIni()
+    {
+        $browsers = $this->_parseIni();
+        $this->_parseAllAgents($browsers);
+        
+        $output = '';
+        
+        foreach ($this->_browsers as $key => $properties) {
+            $output .= '[' . $this->_userAgents[$key] . ']' . "\n";
+            
+            $properties['Browser_Version'] = $properties['Version'];
+            $properties['Browser_Name'] = $properties['Browser'];
+            $properties['Browser_Full'] = trim($properties['Browser_Name'] . ' ' . $properties['Browser_Version']);
+            $properties['Browser_isSyndicationReader'] = $properties['isSyndicationReader'];
+            $properties['Browser_isBot'] = $properties['Crawler'];
+            $properties['Browser_isAlpha'] = $properties['Alpha'];
+            $properties['Browser_isBeta'] = $properties['Beta'];
+            if ($properties['Browser_Bits'] == 0) {
+                if ($properties['Win64']) {
+                    $properties['Browser_Bits'] = 64;
+                } elseif ($properties['Win32']) {
+                    $properties['Browser_Bits'] = 32;
+                } elseif ($properties['Win16']) {
+                    $properties['Browser_Bits'] = 16;
+                }
+            }
+            $properties['Platform_Name'] = $properties['Platform'];
+            $properties['Platform_Full'] = trim($properties['Platform_Name'] . ' ' . $properties['Platform_Version']);
+            $properties['RenderingEngine_Full'] = trim($properties['RenderingEngine_Name'] . ' ' . $properties['RenderingEngine_Version']);
+            $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
+            $properties['Device_isTablet'] = $properties['isTablet'];
+            
+            foreach ($this->_properties as $property) {
+                if (!isset($properties[$property])) {
+                    continue;
+                }
+                
+                $value = $properties[$property];
+                
+                if (true === $value) {
+                    $value = 'true';
+                } elseif (false === $value) {
+                    $value = 'false';
+                } elseif ('0' === $value || 'Parent' === $property || 'Browser' === $property || 'Version' === $property || 'MajorVer' === $property || 'MinorVer' === $property) {
+                    // nothing to do here
+                } else {
+                    $value = '"' . $value . '"';
+                }
+                
+                $output .= $property . '=' . $value . "\n";
+            }
+            
+            $output .= "\n";
+        }
+        
+        file_put_contents($this->_localFile . '.full.ini', $output);
     }
 
     /**
@@ -205,24 +310,14 @@ class Browscap extends Core
      */
     private function _updateCache()
     {
-        if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
-            $browsers = parse_ini_file($this->_localFile, true, INI_SCANNER_RAW);
-        } else {
-            $browsers = parse_ini_file($this->_localFile, true);
-        }
+        $browsers = $this->_parseIni();
         
-        array_shift($browsers);
-        
-        $this->_properties = array_keys($browsers['DefaultProperties']);
         array_unshift(
             $this->_properties,
             'browser_name',
             'browser_name_regex',
-            'browser_name_pattern',
-            'Parent'
+            'browser_name_pattern'
         );
-
-        $this->_userAgents = array_keys($browsers);
         
         usort(
             $this->_userAgents,
@@ -233,13 +328,8 @@ class Browscap extends Core
             }
         );
 
-        $aPropertiesKeys = array_flip($this->_properties);
-
-        foreach ($this->_userAgents as $userAgent) {
-            $this->_parseAgents(
-                $browsers, $userAgent, $aPropertiesKeys
-            );
-        }
+        
+        $this->_parseAllAgents($browsers);
 
         // Save the keys lowercased if needed
         if ($this->_lowercase) {
@@ -260,7 +350,7 @@ class Browscap extends Core
      * @return bool whether the file was correctly written to the disk
      */
     private function _parseAgents(
-        $browsers, $sUserAgent, $aPropertiesKeys)
+        $browsers, $sUserAgent, $aPropertiesKeys, $outerKey)
     {
         $browser = array();
 
@@ -305,11 +395,11 @@ class Browscap extends Core
         $replace = array('.*', '.');
         $pattern = preg_quote($sUserAgent, '@');
 
-        $this->_patterns[] = '@'
-                           . '^'
-                           . str_replace($search, $replace, $pattern)
-                           . '$'
-                           . '@';
+        $this->_patterns[$outerKey] = '@'
+            . '^'
+            . str_replace($search, $replace, $pattern)
+            . '$'
+            . '@';
 
         foreach ($browserData as $key => $value) {
             switch ($value) {
@@ -325,6 +415,6 @@ class Browscap extends Core
             }
         }
         
-        $this->_browsers[] = $browser;
+        $this->_browsers[$outerKey] = $browser;
     }
 }
