@@ -227,6 +227,11 @@ class Browscap extends Core
         foreach ($this->_browsers as $key => $properties) {
             $output .= '[' . $this->_userAgents[$key] . ']' . "\n";
             
+            if (!isset($properties['Version'])) {
+                echo 'Fehler in key: "' . $this->_userAgents[$key] . '"' . "\n";
+                continue;
+            }
+            
             $properties['Browser_Version'] = $properties['Version'];
             $properties['Browser_Name'] = $properties['Browser'];
             $properties['Browser_Full'] = trim($properties['Browser_Name'] . ' ' . $properties['Browser_Version']);
