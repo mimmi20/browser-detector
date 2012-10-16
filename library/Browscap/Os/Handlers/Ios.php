@@ -152,7 +152,7 @@ class Ios extends OsHandler
     public function getBrowser()
     {
         $browsers = array(
-            'MobileSafari',
+            'Safari',
             'OperaMini',
             'Sleipnir',
             'DarwinBrowser',
@@ -171,7 +171,7 @@ class Ios extends OsHandler
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MobileSafari());
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Safari());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

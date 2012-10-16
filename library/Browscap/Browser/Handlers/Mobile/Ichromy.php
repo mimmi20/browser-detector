@@ -29,12 +29,12 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Ichromy extends MobileSafari
+class Ichromy extends Safari
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'iChromy (Mobile Safari)';
+    protected $_browser = 'iChromy';
     
     /**
      * Returns true if this handler can handle the given user agent

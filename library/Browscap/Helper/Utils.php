@@ -348,7 +348,7 @@ final class Utils
             'Google Earth',
             'PhantomJS',
             //mobile Version
-            'Mobile',
+            //'Mobile',
             'Tablet',
             'Android',
             // Fakes
@@ -594,6 +594,10 @@ final class Utils
      */
     public function mapSafariVersions($detectedVersion)
     {
+        if ($detectedVersion >= 8500) {
+            return '6.0';
+        }
+        
         if ($detectedVersion >= 7500) {
             return '5.1';
         }
