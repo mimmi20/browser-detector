@@ -56,7 +56,7 @@ class QualidatorBot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Qualidator\.com Bot ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Qualidator\.com Bot (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

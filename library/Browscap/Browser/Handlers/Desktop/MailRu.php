@@ -70,7 +70,7 @@ class MailRu extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Mail\.RU\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mail\.RU\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

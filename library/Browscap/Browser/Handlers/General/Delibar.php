@@ -62,7 +62,7 @@ class Delibar extends CfNetwork
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Delibar\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Delibar\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

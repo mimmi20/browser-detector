@@ -95,35 +95,35 @@ class Epiphany extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Epiphany\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Epiphany\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Safari\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Safari\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Safari([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Safari(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AppleWebKit\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

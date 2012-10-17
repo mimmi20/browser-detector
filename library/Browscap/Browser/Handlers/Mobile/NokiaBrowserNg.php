@@ -66,14 +66,14 @@ class NokiaBrowserNg extends Nokia
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/BrowserNG\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/BrowserNG\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/NokiaBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NokiaBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

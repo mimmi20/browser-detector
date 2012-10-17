@@ -74,7 +74,7 @@ class OperaMini extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/Opera Mini\/([\d\.]+)\./', $this->_useragent, $matches);
+        $doMatch = preg_match('/Opera Mini\/(\d+\.\d+)\./', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -88,7 +88,7 @@ class OperaMini extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/Opera Mini\/att\/([\d\.]+)\./', $this->_useragent, $matches);
+        $doMatch = preg_match('/Opera Mini\/att\/(\d+\.\d+)\./', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

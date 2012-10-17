@@ -79,7 +79,7 @@ class Rockmelt extends Chromium
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/RockMelt\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/RockMelt\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

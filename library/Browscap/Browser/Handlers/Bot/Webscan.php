@@ -64,7 +64,7 @@ class Webscan extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Webscan\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Webscan\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

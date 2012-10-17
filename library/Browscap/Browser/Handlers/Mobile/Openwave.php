@@ -74,21 +74,21 @@ class Openwave extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/UP\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/UP\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/UP.Browser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/UP.Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/OpenWave\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/OpenWave\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

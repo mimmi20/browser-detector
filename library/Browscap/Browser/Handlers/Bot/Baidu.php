@@ -61,7 +61,7 @@ class Baidu extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/baiduspider\/([\d\.]+)/i', $this->_useragent, $matches);
+        $doMatch = preg_match('/baiduspider\/(\d+\.\d+)/i', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

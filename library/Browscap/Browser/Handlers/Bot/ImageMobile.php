@@ -62,7 +62,7 @@ class ImageMobile extends CfNetwork
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/ImageMobile\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/ImageMobile\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

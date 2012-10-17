@@ -79,7 +79,7 @@ class ComodoDragon extends Chromium
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Comodo Dragon\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Comodo Dragon\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

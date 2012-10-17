@@ -100,7 +100,7 @@ class MicrosoftOffice extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MSOffice (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);
@@ -114,7 +114,7 @@ class MicrosoftOffice extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Office\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Microsoft Office\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);

@@ -222,15 +222,16 @@ class Browscap extends Core
         $browsers = $this->_parseIni();
         $this->_parseAllAgents($browsers);
         
-        $output = '';
-        
+        // full expand
         foreach ($this->_browsers as $key => $properties) {
-            $output .= '[' . $this->_userAgents[$key] . ']' . "\n";
-            
-            if (!isset($properties['Version'])) {
-                echo 'Fehler in key: "' . $this->_userAgents[$key] . '"' . "\n";
+            if (!isset($properties['Version']) || !isset($properties['Browser'])) {
+                echo 'attribute "' . $key . '" not found for rule "' . $this->_userAgents[$key] . '"' . "\n";
                 continue;
             }
+            
+            $version = explode('.', $properties['Version'], 2);
+            $properties['MajorVer'] = $version[0];
+            $properties['MinorVer'] = (isset($version[1]) ? $version[1] : '');
             
             $properties['Browser_Version'] = $properties['Version'];
             $properties['Browser_Name'] = $properties['Browser'];
@@ -254,12 +255,54 @@ class Browscap extends Core
             $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
             $properties['Device_isTablet'] = $properties['isTablet'];
             
-            foreach ($this->_properties as $property) {
-                if (!isset($properties[$property])) {
+            $this->_browsers[$key] = $properties;
+        }
+        
+        $output = '';
+        
+        // shrink
+        foreach ($this->_browsers as $key => $properties) {
+            if (!isset($properties['Version'])) {
+                continue;
+            }
+            
+            if (!isset($properties['Parent'])) {
+                continue;
+            }
+            
+            $agentsToFind = array_flip($this->_userAgents);
+            if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
+                //var_dump($key, $properties['Parent'], $agentsToFind[$properties['Parent']], $this->_browsers[$agentsToFind[$properties['Parent']]]);exit;
+                
+                continue;
+            }
+            
+            $parent = $this->_browsers[$agentsToFind[$properties['Parent']]];
+            
+            $propertiesToOutput = $properties;
+            
+            foreach ($propertiesToOutput as $property => $value) {
+                if (!isset($parent[$property])) {
                     continue;
                 }
                 
-                $value = $properties[$property];
+                if ($parent[$property] != $value) {
+                    continue;
+                }
+                
+                unset($propertiesToOutput[$property]);
+            }
+            
+            // create output
+            
+            $output .= '[' . $this->_userAgents[$key] . ']' . "\n";
+            
+            foreach ($this->_properties as $property) {
+                if (!isset($propertiesToOutput[$property])) {
+                    continue;
+                }
+                
+                $value = $propertiesToOutput[$property];
                 
                 if (true === $value) {
                     $value = 'true';

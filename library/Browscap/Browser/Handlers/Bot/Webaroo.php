@@ -64,7 +64,7 @@ class Webaroo extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Webaroo\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Webaroo\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

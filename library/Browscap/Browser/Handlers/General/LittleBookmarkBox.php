@@ -60,7 +60,7 @@ class LittleBookmarkBox extends CfNetwork
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Little%20Bookmark%20Box\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Little%20Bookmark%20Box\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

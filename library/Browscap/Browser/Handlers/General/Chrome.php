@@ -92,21 +92,21 @@ class Chrome extends Chromium
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Chrome\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Chrome\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/CrMo\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CrMo\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/CriOS\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CriOS\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

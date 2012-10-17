@@ -66,14 +66,14 @@ class WebkitWebos extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/webOS\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/webOS\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/webOSBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/webOSBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

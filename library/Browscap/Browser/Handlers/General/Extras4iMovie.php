@@ -62,7 +62,7 @@ class Extras4iMovie extends CfNetwork
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Extras4iMovie\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Extras4iMovie\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

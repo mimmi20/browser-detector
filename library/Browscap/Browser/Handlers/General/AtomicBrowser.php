@@ -64,14 +64,14 @@ class AtomicBrowser extends CfNetwork
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/AtomicBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AtomicBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/AtomicLite\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AtomicLite\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

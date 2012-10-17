@@ -62,7 +62,7 @@ class Lynx extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Lynx\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Lynx\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

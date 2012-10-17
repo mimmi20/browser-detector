@@ -76,35 +76,35 @@ class NetFront extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/NetFront\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NetFront\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/NF\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NF\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/NetFrontLifeBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NetFrontLifeBrowser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/NF3 ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NF3 (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/NF([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/NF(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

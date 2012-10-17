@@ -60,21 +60,21 @@ class WordPress extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/WordPress\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WordPress\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/WordPress-B-\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WordPress-B-\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/WordPress-Do-P-\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WordPress-Do-P-\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -65,28 +65,28 @@ class OperaTablet extends OperaMobile
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Opera ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Opera (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Opera Mobi\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Opera Mobi\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Opera\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Opera\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

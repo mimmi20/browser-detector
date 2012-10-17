@@ -60,7 +60,7 @@ class WwwBrowser extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/WWW_Browser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/WWW_Browser\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

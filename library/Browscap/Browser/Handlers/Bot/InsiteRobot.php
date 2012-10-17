@@ -60,7 +60,7 @@ class InsiteRobot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/InsiteRobot\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/InsiteRobot\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

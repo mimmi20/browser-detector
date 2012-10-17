@@ -60,7 +60,7 @@ class ZendHttpClient extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Zend_Http_Client\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Zend_Http_Client\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

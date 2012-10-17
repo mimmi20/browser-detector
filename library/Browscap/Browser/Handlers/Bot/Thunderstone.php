@@ -66,7 +66,7 @@ class Thunderstone extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Thunderstone\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Thunderstone\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

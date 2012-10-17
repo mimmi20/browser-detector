@@ -56,7 +56,7 @@ class Python extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/python-requests\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/python-requests\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

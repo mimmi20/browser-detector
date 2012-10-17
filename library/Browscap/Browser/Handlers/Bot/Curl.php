@@ -64,21 +64,21 @@ class Curl extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/curl\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/curl\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/libcurl-agent\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/libcurl-agent\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/PycURL\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/PycURL\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

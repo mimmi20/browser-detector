@@ -60,14 +60,14 @@ class CheckHttp extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/check_http\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/check_http\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/check_http\/v([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/check_http\/v(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

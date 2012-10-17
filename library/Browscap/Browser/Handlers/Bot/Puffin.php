@@ -82,7 +82,7 @@ class Puffin extends Chromium
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Puffin\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Puffin\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

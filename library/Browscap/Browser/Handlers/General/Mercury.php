@@ -60,21 +60,21 @@ class Mercury extends CfNetwork
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Mercury3\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mercury3\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Mercury ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mercury (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Mercury3Free\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mercury3Free\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
