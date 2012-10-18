@@ -225,7 +225,7 @@ class Browscap extends Core
         // full expand
         foreach ($this->_browsers as $key => $properties) {
             if (!isset($properties['Version']) || !isset($properties['Browser'])) {
-                echo 'attribute "' . $key . '" not found for rule "' . $this->_userAgents[$key] . '"' . "\n";
+                echo 'attribute not found for key "' . $key . '" and rule "' . $this->_userAgents[$key] . '"' . "\n";
                 continue;
             }
             
@@ -240,6 +240,10 @@ class Browscap extends Core
             $properties['Browser_isBot'] = $properties['Crawler'];
             $properties['Browser_isAlpha'] = $properties['Alpha'];
             $properties['Browser_isBeta'] = $properties['Beta'];
+            
+            $utils = new \Browscap\Helper\Utils();
+            $utils->setUserAgent($this->_userAgents[$key]);
+            
             if ($properties['Browser_Bits'] == 0) {
                 if ($properties['Win64']) {
                     $properties['Browser_Bits'] = 64;
@@ -248,7 +252,29 @@ class Browscap extends Core
                 } elseif ($properties['Win16']) {
                     $properties['Browser_Bits'] = 16;
                 }
+                
+                if ($utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
+                    // 64 bits
+                    $properties['Browser_Bits'] = 64;
+                } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+                    // old deprecated 16 bit windows systems
+                    $properties['Browser_Bits'] = 16;
+                } elseif ($utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+                    // general windows or a 32 bit browser on a 64 bit system (WOW64)
+                    $properties['Browser_Bits'] = 32;
+                }
             }
+            
+            if ($properties['Platform_Bits'] == 0) {
+                if ($utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
+                    $properties['Platform_Bits'] = 64;
+                } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+                    $properties['Platform_Bits'] = 16;
+                } elseif ($utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+                    $properties['Platform_Bits'] = 32;
+                }
+            }
+            
             $properties['Platform_Name'] = $properties['Platform'];
             $properties['Platform_Full'] = trim($properties['Platform_Name'] . ' ' . $properties['Platform_Version']);
             $properties['RenderingEngine_Full'] = trim($properties['RenderingEngine_Name'] . ' ' . $properties['RenderingEngine_Version']);
@@ -308,7 +334,7 @@ class Browscap extends Core
                     $value = 'true';
                 } elseif (false === $value) {
                     $value = 'false';
-                } elseif ('0' === $value || 'Parent' === $property || 'Browser' === $property || 'Version' === $property || 'MajorVer' === $property || 'MinorVer' === $property) {
+                } elseif ('0' === $value || 'Parent' === $property || 'Version' === $property || 'MajorVer' === $property || 'MinorVer' === $property) {
                     // nothing to do here
                 } else {
                     $value = '"' . $value . '"';
