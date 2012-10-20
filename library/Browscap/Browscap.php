@@ -235,7 +235,13 @@ class Browscap extends Core
             
             $properties['Browser_Version'] = $properties['Version'];
             $properties['Browser_Name'] = $properties['Browser'];
-            $properties['Browser_Full'] = trim($properties['Browser_Name'] . ' ' . $properties['Browser_Version']);
+            
+            if ('0.0' != $properties['Browser_Version']) {
+                $properties['Browser_Full'] = trim($properties['Browser_Name'] . ' ' . $properties['Browser_Version']);
+            } else {
+                $properties['Browser_Full'] = $properties['Browser_Name'];
+            }
+            
             $properties['Browser_isSyndicationReader'] = $properties['isSyndicationReader'];
             $properties['Browser_isBot'] = $properties['Crawler'];
             $properties['Browser_isAlpha'] = $properties['Alpha'];
@@ -276,8 +282,18 @@ class Browscap extends Core
             }
             
             $properties['Platform_Name'] = $properties['Platform'];
-            $properties['Platform_Full'] = trim($properties['Platform_Name'] . ' ' . $properties['Platform_Version']);
-            $properties['RenderingEngine_Full'] = trim($properties['RenderingEngine_Name'] . ' ' . $properties['RenderingEngine_Version']);
+            
+            if ('0.0' != $properties['Platform_Version']) {
+                $properties['Platform_Full'] = trim($properties['Platform_Name'] . ' ' . $properties['Platform_Version']);
+            } else {
+                $properties['Platform_Full'] = $properties['Platform_Name'];
+            }
+            
+            if ('0.0' != $properties['RenderingEngine_Version']) {
+                $properties['RenderingEngine_Full'] = trim($properties['RenderingEngine_Name'] . ' ' . $properties['RenderingEngine_Version']);
+            } else {
+                $properties['RenderingEngine_Full'] = $properties['RenderingEngine_Name'];
+            }
             $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
             $properties['Device_isTablet'] = $properties['isTablet'];
             
