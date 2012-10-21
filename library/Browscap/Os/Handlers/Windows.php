@@ -40,7 +40,7 @@ class Windows extends OsHandler
     /**
      * @var string the manufacturer/creator of this OS
      */
-    protected $_manufacturer = 'Microsoft';
+    protected $_manufacturer = 'microsoft';
     
     private $_windows = array(
             'Windows NT', 'Windows 98', 'Windows 95', 'Windows 3.1', 

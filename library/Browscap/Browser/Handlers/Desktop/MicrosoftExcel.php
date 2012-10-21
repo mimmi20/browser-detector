@@ -32,12 +32,12 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftExcel extends MicrosoftOffice
+class microsoftExcel extends microsoftOffice
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Microsoft Excel';
+    protected $_browser = 'microsoft Excel';
 
     /**
      * @var string the detected manufacturer

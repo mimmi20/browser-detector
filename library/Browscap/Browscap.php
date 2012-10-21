@@ -250,7 +250,7 @@ class Browscap extends Core
             $utils = new \Browscap\Helper\Utils();
             $utils->setUserAgent($this->_userAgents[$key]);
             
-            if ($properties['Browser_Bits'] == 0) {
+            //if ($properties['Browser_Bits'] == 0) {
                 if ($properties['Win64']) {
                     $properties['Browser_Bits'] = 64;
                 } elseif ($properties['Win32']) {
@@ -269,15 +269,29 @@ class Browscap extends Core
                     // general windows or a 32 bit browser on a 64 bit system (WOW64)
                     $properties['Browser_Bits'] = 32;
                 }
-            }
+            //}
             
-            if ($properties['Platform_Bits'] == 0) {
+            //if ($properties['Platform_Bits'] == 0) {
                 if ($utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
                     $properties['Platform_Bits'] = 64;
                 } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
                     $properties['Platform_Bits'] = 16;
                 } elseif ($utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
                     $properties['Platform_Bits'] = 32;
+                }
+            //}
+            
+            $properties['Win64'] = false;
+            $properties['Win32'] = false;
+            $properties['Win16'] = false;
+                
+            if ('Windows' == $properties['Platform']) {
+                if (64 == $properties['Platform_Bits']) {
+                    $properties['Win64'] = true;
+                } elseif (32 == $properties['Platform_Bits']) {
+                    $properties['Win32'] = true;
+                } elseif (16 == $properties['Platform_Bits']) {
+                    $properties['Win16'] = true;
                 }
             }
             

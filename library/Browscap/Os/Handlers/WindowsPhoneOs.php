@@ -40,7 +40,7 @@ class WindowsPhoneOs extends OsHandler
     /**
      * @var string the manufacturer/creator of this OS
      */
-    protected $_manufacturer = 'Microsoft';
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -109,7 +109,7 @@ class WindowsPhoneOs extends OsHandler
     public function getBrowser()
     {
         $browsers = array(
-            'MicrosoftMobileExplorer',
+            'microsoftMobileExplorer',
             'Opera'
         );
         
@@ -123,7 +123,7 @@ class WindowsPhoneOs extends OsHandler
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer());
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\microsoftMobileExplorer());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

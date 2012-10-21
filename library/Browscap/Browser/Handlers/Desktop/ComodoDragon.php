@@ -34,6 +34,11 @@ class ComodoDragon extends Chromium
      * @var string the detected browser
      */
     protected $_browser = 'Comodo Dragon';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Comodo Internet Security';
     
     /**
      * Returns true if this handler can handle the given user agent

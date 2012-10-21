@@ -28,7 +28,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class CrazyBrowser extends MicrosoftInternetExplorer
+class CrazyBrowser extends microsoftInternetExplorer
 {
     /**
      * @var string the detected browser

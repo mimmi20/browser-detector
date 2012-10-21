@@ -32,7 +32,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftPowerPoint extends MicrosoftOffice
+class microsoftPowerPoint extends microsoftOffice
 {
     /**
      * @var string the detected browser

@@ -33,7 +33,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftOffice extends BrowserHandler
+class microsoftOffice extends BrowserHandler
 {
     /**
      * @var string the detected browser
@@ -56,7 +56,7 @@ class MicrosoftOffice extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Microsoft Office', 'MSOffice'))) {
+        if (!$this->_utils->checkIfContains(array('microsoft Office', 'MSOffice'))) {
             return false;
         }
         
@@ -114,14 +114,14 @@ class MicrosoftOffice extends BrowserHandler
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Office\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/microsoft Office\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Office\/(\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/microsoft Office\/(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);

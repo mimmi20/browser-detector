@@ -32,7 +32,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftOutlook extends MicrosoftOffice
+class microsoftOutlook extends microsoftOffice
 {
     /**
      * @var string the detected browser
@@ -55,7 +55,7 @@ class MicrosoftOutlook extends MicrosoftOffice
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Outlook', 'Microsoft Office', 'MSOffice'))) {
+        if (!$this->_utils->checkIfContains(array('Outlook', 'microsoft Office', 'MSOffice'))) {
             return false;
         }
         
@@ -98,28 +98,28 @@ class MicrosoftOutlook extends MicrosoftOffice
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Microsoft Office Outlook (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/microsoft Office Outlook (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Office Outlook (\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/microsoft Office Outlook (\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Outlook (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/microsoft Outlook (\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);
             return;
         }
         
-        $doMatch = preg_match('/Microsoft Outlook (\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/microsoft Outlook (\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $this->_mapVersion($matches[1]);

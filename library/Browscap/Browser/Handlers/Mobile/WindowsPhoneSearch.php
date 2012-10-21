@@ -43,7 +43,7 @@ class WindowsPhoneSearch extends BrowserHandler
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Microsoft';
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given user agent

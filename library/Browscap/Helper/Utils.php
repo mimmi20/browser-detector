@@ -469,7 +469,7 @@ final class Utils
     {
         $mobileWindows = array(
             'Windows CE', 'Windows Phone', 'Windows Mobile', 
-            'Microsoft Windows; PPC', 'IEMobile', 'XBLWP7', 'ZuneWP7'
+            'microsoft Windows; PPC', 'IEMobile', 'XBLWP7', 'ZuneWP7'
         );
         
         if (!$this->checkIfContains($mobileWindows)) {

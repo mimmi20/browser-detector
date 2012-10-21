@@ -33,7 +33,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftInternetExplorer extends BrowserHandler
+class microsoftInternetExplorer extends BrowserHandler
 {
     /**
      * @var string the detected browser
