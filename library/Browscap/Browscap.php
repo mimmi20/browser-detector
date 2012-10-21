@@ -286,11 +286,11 @@ class Browscap extends Core
             $properties['Win16'] = false;
                 
             if ('Windows' == $properties['Platform']) {
-                if (64 == $properties['Platform_Bits']) {
+                if (64 == $properties['Browser_Bits']) {
                     $properties['Win64'] = true;
-                } elseif (32 == $properties['Platform_Bits']) {
+                } elseif (32 == $properties['Browser_Bits']) {
                     $properties['Win32'] = true;
-                } elseif (16 == $properties['Platform_Bits']) {
+                } elseif (16 == $properties['Browser_Bits']) {
                     $properties['Win16'] = true;
                 }
             }
