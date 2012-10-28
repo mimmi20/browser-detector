@@ -400,7 +400,8 @@ class Browscap extends Core
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Nokia';
             } elseif (($properties['Platform_Name'] == 'Linux' 
-                || $properties['Platform_Name'] == 'Debian')
+                || $properties['Platform_Name'] == 'Debian'
+                || $properties['Platform_Name'] == 'CentOS')
                 && $properties['Device_isMobileDevice'] == false
             ) {
                 $properties['Device_Name'] = 'Linux Desktop';
