@@ -317,7 +317,10 @@ class Browscap extends Core
             $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
             $properties['Device_isTablet'] = $properties['isTablet'];
             
-            if ($properties['Browser_isBot']) {
+            if ('DefaultProperties' == $this->_userAgents[$key]) {
+                $properties['Platform_Bits'] = 0;
+                $properties['Browser_Bits'] = 0;
+            } elseif ($properties['Browser_isBot']) {
                 $properties['Device_Name'] = 'General Bot';
                 $properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = false;
@@ -330,6 +333,11 @@ class Browscap extends Core
                 $properties['RenderingEngine_Full'] = 'unknown';
                 $properties['RenderingEngine_Version'] = '0.0';
                 $properties['RenderingEngine_Description'] = 'unknown';
+                $properties['Platform_Bits'] = 0;
+                $properties['Browser_Bits'] = 0;
+                $properties['Win16'] = false;
+                $properties['Win32'] = false;
+                $properties['Win64'] = false;
             } elseif ($properties['Device_Maker'] == 'RIM') {
                 $properties['Device_Maker'] = 'RIM';
                 $properties['isMobileDevice'] = true;
@@ -587,11 +595,13 @@ class Browscap extends Core
                 continue;
             }
             
-            if (!isset($properties['Parent']) && 'DefaultProperties' !== $key) {
+            if (!isset($properties['Parent']) 
+                && 'DefaultProperties' !== $this->_userAgents[$key]
+            ) {
                 continue;
             }
             
-            if ('DefaultProperties' !== $key) {
+            if ('DefaultProperties' !== $this->_userAgents[$key]) {
                 $agentsToFind = array_flip($this->_userAgents);
                 if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
                     //var_dump($key, $properties['Parent'], $agentsToFind[$properties['Parent']], $this->_browsers[$agentsToFind[$properties['Parent']]]);exit;
@@ -622,8 +632,13 @@ class Browscap extends Core
             
             $title = $this->_userAgents[$key];
             
-            if (false === strpos($title, '*') && false === strpos($title, '?')) {
-                $output .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $title . "\n\n";
+            if (false === strpos($title, '*') 
+                && false === strpos($title, '?')
+                && ('DefaultProperties' == $title
+                || 'DefaultProperties' == $properties['Parent']
+                )
+            ) {
+                $output .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; ' . $title . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n\n";
             }
             
             $output .= '[' . $title . ']' . "\n";
