@@ -311,6 +311,231 @@ class Browscap extends Core
             $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
             $properties['Device_isTablet'] = $properties['isTablet'];
             
+            if ($properties['Browser_isBot']) {
+                $properties['Device_Name'] = 'General Bot';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['RenderingEngine_Name'] = 'unknown';
+                $properties['RenderingEngine_Full'] = 'unknown';
+                $properties['RenderingEngine_Version'] = '0.0';
+                $properties['RenderingEngine_Description'] = 'unknown';
+            } elseif ($properties['Device_Maker'] == 'RIM') {
+                $properties['Device_Maker'] = 'RIM';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform'] = 'RIM OS';
+                $properties['Platform_Name'] = 'RIM OS';
+                $properties['Platform_Maker'] = 'RIM';
+            } elseif ($properties['Platform_Name'] == 'Windows' 
+                || $properties['Platform_Name'] == 'Win32'
+            ) {
+                $properties['Device_Name'] = 'Windows Desktop';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform'] = 'Windows';
+                $properties['Platform_Name'] = 'Windows';
+                $properties['Platform_Maker'] = 'Microsoft';
+            } elseif ($properties['Platform_Name'] == 'CygWin') {
+                $properties['Device_Name'] = 'Windows Desktop';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Microsoft';
+            } elseif ($properties['Platform_Name'] == 'WinMobile' 
+                || $properties['Platform_Name'] == 'Windows Mobile OS'
+            ) {
+                $properties['Device_Name'] = 'General Mobile';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform'] = 'Windows Mobile OS';
+                $properties['Platform_Name'] = 'Windows Mobile OS';
+                $properties['Platform_Maker'] = 'Microsoft';
+            } elseif ($properties['Platform_Name'] == 'Windows Phone OS') {
+                $properties['Device_Name'] = 'General Mobile';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Microsoft';
+            } elseif ($properties['Platform_Name'] == 'Symbian OS') {
+                $properties['Device_Name'] = 'General Mobile';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Nokia';
+            } elseif (($properties['Platform_Name'] == 'Linux' 
+                || $properties['Platform_Name'] == 'Debian')
+                && $properties['Device_isMobileDevice'] == false
+            ) {
+                $properties['Device_Name'] = 'Linux Desktop';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+            } elseif ($properties['Platform_Name'] == 'Linux' 
+                && $properties['Device_isMobileDevice'] == true
+            ) {
+                $properties['Device_Name'] = 'General Mobile';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform'] = 'Linux Smartphone OS';
+                $properties['Platform_Name'] = 'Linux Smartphone OS';
+            } elseif ($properties['Platform_Name'] == 'Macintosh' 
+                || $properties['Platform_Name'] == 'MacOSX' 
+                || $properties['Platform_Name'] == 'Darwin'
+                || $properties['Platform_Name'] == 'Mac68K'
+            ) {
+                $properties['Device_Name'] = 'Macintosh';
+                $properties['Device_Maker'] = 'Apple';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Apple';
+            } elseif ($properties['Platform_Name'] == 'iOS') {
+                //$properties['Device_Name'] = 'Macintosh';
+                $properties['Device_Maker'] = 'Apple';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Apple';
+            } elseif ($properties['Platform_Name'] == 'BeOS') {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Access';
+            } elseif ($properties['Platform_Name'] == 'AIX') {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'IBM';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'IBM';
+            } elseif ($properties['Platform_Name'] == 'Digital Unix' 
+                || $properties['Platform_Name'] == 'Tru64 UNIX'
+            ) {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'HP';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform'] = 'Tru64 UNIX';
+                $properties['Platform_Name'] = 'Tru64 UNIX';
+                $properties['Platform_Maker'] = 'HP';
+                $properties['Platform_Bits'] = '64';
+            } elseif ($properties['Platform_Name'] == 'HPUX' 
+                || $properties['Platform_Name'] == 'OpenVMS'
+            ) {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'HP';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'HP';
+            } elseif ($properties['Platform_Name'] == 'IRIX') {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'SGI';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'SGI';
+            } elseif ($properties['Platform_Name'] == 'Solaris' 
+                || $properties['Platform_Name'] == 'SunOS'
+            ) {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'Oracle';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Oracle';
+            } elseif ($properties['Platform_Name'] == 'OS/2') {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['Device_Maker'] = 'IBM';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'IBM';
+            } elseif ($properties['Platform_Name'] == 'FreeBSD' 
+                || $properties['Platform_Name'] == 'NetBSD' 
+                || $properties['Platform_Name'] == 'OpenBSD' 
+                || $properties['Platform_Name'] == 'RISC OS' 
+                || $properties['Platform_Name'] == 'Unix'
+            ) {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+            }
+            
             $this->_browsers[$key] = $properties;
         }
         
