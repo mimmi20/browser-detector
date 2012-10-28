@@ -265,7 +265,10 @@ class Browscap extends Core
                 } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
                     // old deprecated 16 bit windows systems
                     $properties['Browser_Bits'] = 16;
-                } elseif ($utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+                } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
+                    // old deprecated 16 bit windows systems
+                    $properties['Browser_Bits'] = 8; //CP/M; 8-bit
+                } else {
                     // general windows or a 32 bit browser on a 64 bit system (WOW64)
                     $properties['Browser_Bits'] = 32;
                 }
@@ -276,7 +279,10 @@ class Browscap extends Core
                     $properties['Platform_Bits'] = 64;
                 } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
                     $properties['Platform_Bits'] = 16;
-                } elseif ($utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+                } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
+                    // old deprecated 16 bit windows systems
+                    $properties['Platform_Bits'] = 8; //CP/M; 8-bit
+                } else {
                     $properties['Platform_Bits'] = 32;
                 }
             //}
