@@ -469,6 +469,16 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'IBM';
+            } elseif ($properties['Platform_Name'] == 'SymbianOS') {
+                $properties['Device_Name'] = 'General Mobile';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Nokia';
             } elseif ($properties['Platform_Name'] == 'Digital Unix' 
                 || $properties['Platform_Name'] == 'Tru64 UNIX'
             ) {
