@@ -564,6 +564,16 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
+            } elseif ($properties['Platform_Name'] == 'WebTV') {
+                $properties['Device_Name'] = 'General TV Device';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = true;
+                $properties['Platform_Maker'] = 'unknown';
             }
             
             $this->_browsers[$key] = $properties;
