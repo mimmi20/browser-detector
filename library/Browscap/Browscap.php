@@ -439,8 +439,11 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Apple';
-            } elseif ($properties['Platform_Name'] == 'iOS') {
-                //$properties['Device_Name'] = 'Macintosh';
+            } elseif ($properties['Platform_Name'] == 'iOS'
+                || $properties['Device_Name'] == 'iPhone'
+                || $properties['Device_Name'] == 'iPod'
+                || $properties['Device_Name'] == 'iPad'
+            ) {
                 $properties['Device_Maker'] = 'Apple';
                 $properties['isMobileDevice'] = true;
                 $properties['isTablet'] = false;
