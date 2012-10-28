@@ -587,18 +587,22 @@ class Browscap extends Core
                 continue;
             }
             
-            if (!isset($properties['Parent'])) {
+            if (!isset($properties['Parent']) && 'DefaultProperties' !== $key) {
                 continue;
             }
             
-            $agentsToFind = array_flip($this->_userAgents);
-            if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
-                //var_dump($key, $properties['Parent'], $agentsToFind[$properties['Parent']], $this->_browsers[$agentsToFind[$properties['Parent']]]);exit;
+            if ('DefaultProperties' !== $key) {
+                $agentsToFind = array_flip($this->_userAgents);
+                if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
+                    //var_dump($key, $properties['Parent'], $agentsToFind[$properties['Parent']], $this->_browsers[$agentsToFind[$properties['Parent']]]);exit;
+                    
+                    continue;
+                }
                 
-                continue;
+                $parent = $this->_browsers[$agentsToFind[$properties['Parent']]];
+            } else {
+                $parent = array();
             }
-            
-            $parent = $this->_browsers[$agentsToFind[$properties['Parent']]];
             
             $propertiesToOutput = $properties;
             
@@ -616,7 +620,13 @@ class Browscap extends Core
             
             // create output
             
-            $output .= '[' . $this->_userAgents[$key] . ']' . "\n";
+            $title = $this->_userAgents[$key];
+            
+            if (false === strpos($title, '*') && false === strpos($title, '?')) {
+                $output .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $title . "\n\n";
+            }
+            
+            $output .= '[' . $title . ']' . "\n";
             
             foreach ($this->_properties as $property) {
                 if (!isset($propertiesToOutput[$property])) {
