@@ -320,24 +320,13 @@ class Browscap extends Core
             if ('DefaultProperties' == $this->_userAgents[$key]) {
                 $properties['Platform_Bits'] = 0;
                 $properties['Browser_Bits'] = 0;
-            } elseif ($properties['Browser_isBot']) {
-                $properties['Device_Name'] = 'General Bot';
-                $properties['Device_Maker'] = 'unknown';
-                $properties['isMobileDevice'] = false;
                 $properties['isTablet'] = false;
-                $properties['Device_isMobileDevice'] = false;
-                $properties['Device_isTablet'] = false;
-                $properties['Device_isDesktop'] = false;
-                $properties['Device_isTv'] = false;
+            } elseif ($properties['Browser_isBot']) {
                 $properties['RenderingEngine_Name'] = 'unknown';
                 $properties['RenderingEngine_Full'] = 'unknown';
                 $properties['RenderingEngine_Version'] = '0.0';
                 $properties['RenderingEngine_Description'] = 'unknown';
-                $properties['Platform_Bits'] = 0;
-                $properties['Browser_Bits'] = 0;
-                $properties['Win16'] = false;
-                $properties['Win32'] = false;
-                $properties['Win64'] = false;
+                $properties['isTablet'] = false;
             } elseif ($properties['Device_Maker'] == 'RIM') {
                 $properties['Device_Maker'] = 'RIM';
                 $properties['isMobileDevice'] = true;
@@ -346,9 +335,6 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
-                //$properties['Platform'] = 'RIM OS';
-                //$properties['Platform_Name'] = 'RIM OS';
-                //$properties['Platform_Maker'] = 'RIM';
             } elseif ($properties['Platform_Name'] == 'Windows' 
                 || $properties['Platform_Name'] == 'Win32'
             ) {
@@ -376,8 +362,6 @@ class Browscap extends Core
             } elseif ($properties['Platform_Name'] == 'WinMobile' 
                 || $properties['Platform_Name'] == 'Windows Mobile OS'
             ) {
-                //$properties['Device_Name'] = 'General Mobile';
-                //$properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = true;
                 $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = true;
@@ -388,8 +372,6 @@ class Browscap extends Core
                 $properties['Platform_Name'] = 'Windows Mobile OS';
                 $properties['Platform_Maker'] = 'Microsoft';
             } elseif ($properties['Platform_Name'] == 'Windows Phone OS') {
-                //$properties['Device_Name'] = 'General Mobile';
-                //$properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = true;
                 $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = true;
@@ -400,8 +382,6 @@ class Browscap extends Core
             } elseif ($properties['Platform_Name'] == 'Symbian OS' 
                 || $properties['Platform_Name'] == 'SymbianOS'
             ) {
-                //$properties['Device_Name'] = 'General Mobile';
-                //$properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = true;
                 $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = true;
@@ -425,12 +405,8 @@ class Browscap extends Core
             } elseif ($properties['Platform_Name'] == 'Linux' 
                 && $properties['Device_isMobileDevice'] == true
             ) {
-                $properties['Device_Name'] = 'General Mobile';
-                $properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = true;
-                $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = true;
-                $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
                 $properties['Platform'] = 'Linux Smartphone OS';
@@ -449,16 +425,25 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Apple';
-            } elseif ($properties['Platform_Name'] == 'iOS'
+            } elseif (($properties['Platform_Name'] == 'iOS'
                 || $properties['Device_Name'] == 'iPhone'
-                || $properties['Device_Name'] == 'iPod'
-                || $properties['Device_Name'] == 'iPad'
+                || $properties['Device_Name'] == 'iPod')
+                && $properties['Device_Name'] != 'iPad'
             ) {
                 $properties['Device_Maker'] = 'Apple';
                 $properties['isMobileDevice'] = true;
                 $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = true;
                 $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Apple';
+            } elseif ($properties['Device_Name'] == 'iPad') {
+                $properties['Device_Maker'] = 'Apple';
+                $properties['isMobileDevice'] = true;
+                $properties['isTablet'] = true;
+                $properties['Device_isMobileDevice'] = true;
+                $properties['Device_isTablet'] = true;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Apple';
@@ -544,12 +529,8 @@ class Browscap extends Core
             } elseif ($properties['Platform_Name'] == 'Android' 
                 || $properties['Platform_Name'] == 'Dalvik'
             ) {
-                //$properties['Device_Name'] = 'General Mobile';
-                //$properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = true;
-                $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = true;
-                $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Google';

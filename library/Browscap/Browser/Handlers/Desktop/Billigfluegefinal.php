@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Desktop;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Billigfluegefinal.php 305 2012-10-17 21:34:24Z tmu $
  */
 
 use Browscap\Browser\Handlers\General\Billigfluegefinal as BilligfluegefinalBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\Billigfluegefinal as BilligfluegefinalBase
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Billigfluegefinal.php 305 2012-10-17 21:34:24Z tmu $
  */
 class Billigfluegefinal extends BilligfluegefinalBase
 {

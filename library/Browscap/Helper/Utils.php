@@ -396,6 +396,12 @@ final class Utils
             return false;
         }
         
+        if ($this->checkIfContains('trident', true)
+            && !$this->checkIfContains($windows, true)
+        ) {
+            return false;
+        }
+        
         $isNotReallyAWindows = array(
             // other OS and Mobile Windows
             'Linux',
