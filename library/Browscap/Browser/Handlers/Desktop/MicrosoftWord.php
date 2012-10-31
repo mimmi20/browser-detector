@@ -32,12 +32,12 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class microsoftWord extends microsoftOffice
+class MicrosoftWord extends MicrosoftOffice
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'microsoft Word';
+    protected $_browser = 'Microsoft Word';
 
     /**
      * @var string the detected manufacturer

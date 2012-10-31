@@ -33,7 +33,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class microsoftOffice extends BrowserHandler
+class MicrosoftOffice extends BrowserHandler
 {
     /**
      * @var string the detected browser

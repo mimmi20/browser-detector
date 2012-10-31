@@ -109,7 +109,7 @@ class WindowsPhoneOs extends OsHandler
     public function getBrowser()
     {
         $browsers = array(
-            'microsoftMobileExplorer',
+            'MicrosoftMobileExplorer',
             'Opera'
         );
         
@@ -123,7 +123,7 @@ class WindowsPhoneOs extends OsHandler
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
         $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\microsoftMobileExplorer());
+        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

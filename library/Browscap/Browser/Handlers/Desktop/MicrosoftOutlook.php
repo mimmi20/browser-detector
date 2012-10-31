@@ -32,7 +32,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class microsoftOutlook extends microsoftOffice
+class MicrosoftOutlook extends MicrosoftOffice
 {
     /**
      * @var string the detected browser
