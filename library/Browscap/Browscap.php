@@ -572,12 +572,14 @@ class Browscap extends Core
             $this->_browsers[$key] = $properties;
         }
         
+        /*
         //sort
         $sort1 = array();
         $sort2 = array();
         
         foreach ($this->_browsers as $key => $properties) {
-            $x = 0;
+            $x     = 0;
+            $title = $this->_userAgents[$key];
             
             switch ($properties['Category']) {
                 case 'Bot/Crawler':
@@ -600,11 +602,12 @@ class Browscap extends Core
                     // nothing to do here
                     break;
             }
-            $sort1[$key] = $x;
-            $sort2[$key] = $key;
+            $sort1[$title] = $x;
+            $sort2[$title] = $key;
         }
         
         //array_multisort($sort1, SORT_ASC, $sort2, SORT_ASC, $this->_browsers);
+        /**/
         
         $output = '';
         
