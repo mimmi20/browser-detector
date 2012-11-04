@@ -325,7 +325,9 @@ class Browscap extends Core
             $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
             $properties['Device_isTablet'] = $properties['isTablet'];
             
-            if ('DefaultProperties' == $this->_userAgents[$key]) {
+            if ('DefaultProperties' == $this->_userAgents[$key] 
+                || '*' == $this->_userAgents[$key]
+            ) {
                 $properties['Platform_Bits'] = 0;
                 $properties['Browser_Bits'] = 0;
                 $properties['isTablet'] = false;
@@ -570,6 +572,40 @@ class Browscap extends Core
             $this->_browsers[$key] = $properties;
         }
         
+        //sort
+        $sort1 = array();
+        $sort2 = array();
+        
+        foreach ($this->_browsers as $key => $properties) {
+            $x = 0;
+            
+            switch ($properties['Category']) {
+                case 'Bot/Crawler':
+                    $x = 1;
+                    break;
+                case 'Application':
+                    $x = 2;
+                    break;
+                case 'Browser':
+                    $x = 3;
+                    break;
+                case 'Unister':
+                    $x = 9;
+                    break;
+                case 'all':
+                    $x = 10;
+                    break;
+                case 'unknown':
+                default:
+                    // nothing to do here
+                    break;
+            }
+            $sort1[$key] = $x;
+            $sort2[$key] = $key;
+        }
+        
+        //array_multisort($sort1, SORT_ASC, $sort2, SORT_ASC, $this->_browsers);
+        
         $output = '';
         
         // shrink
@@ -579,12 +615,15 @@ class Browscap extends Core
             }
             
             if (!isset($properties['Parent']) 
-                && 'DefaultProperties' !== $this->_userAgents[$key]
+                && 'DefaultProperties' !== $this->_userAgents[$key] 
+                && '*' !== $this->_userAgents[$key]
             ) {
                 continue;
             }
             
-            if ('DefaultProperties' !== $this->_userAgents[$key]) {
+            if ('DefaultProperties' !== $this->_userAgents[$key] 
+                && '*' !== $this->_userAgents[$key]
+            ) {
                 $agentsToFind = array_flip($this->_userAgents);
                 if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
                     //var_dump($key, $properties['Parent'], $agentsToFind[$properties['Parent']], $this->_browsers[$agentsToFind[$properties['Parent']]]);exit;
