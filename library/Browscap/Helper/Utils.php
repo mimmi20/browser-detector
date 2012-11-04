@@ -145,7 +145,7 @@ final class Utils
         'catalog',
         'clecko',
         'crawl',
-        'curl',
+        //'curl',
         'detection',
         //'download',
         'extract',
@@ -240,6 +240,12 @@ final class Utils
         
         if ($this->checkIfContains('http', true)
             && $this->checkIfContains('request', true)
+        ) {
+            return true;
+        }
+        
+        if ($this->checkIfContains('curl', true)
+            && !$this->checkIfContains('boxee', true)
         ) {
             return true;
         }
@@ -431,7 +437,8 @@ final class Utils
             'SonyDTV115',
             'SMART-TV',
             'Viera',
-            'NETRANGEMMH'
+            'NETRANGEMMH',
+            'boxee'
         );
         
         if ($this->checkIfContains($tvDevices)) {

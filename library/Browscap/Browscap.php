@@ -224,8 +224,16 @@ class Browscap extends Core
         
         // full expand
         foreach ($this->_browsers as $key => $properties) {
+            foreach ($properties as $k => $property) {
+                if (is_string($property)) {
+                    $properties[$k] = trim($property);
+                }
+            }
+            
             if (!isset($properties['Version']) || !isset($properties['Browser'])) {
                 echo 'attribute not found for key "' . $key . '" and rule "' . $this->_userAgents[$key] . '"' . "\n";
+                var_dump($properties);
+                echo "\n\n";
                 continue;
             }
             
