@@ -48,10 +48,6 @@ class WebkitWebos extends BrowserHandler
             return false;
         }
         
-        if (!parent::canHandle()) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser', 'wOSBrowser'))) {
             return false;
         }

@@ -528,7 +528,6 @@ class Browscap extends Core
                 $properties['Platform_Maker'] = 'Oracle';
             } elseif ($properties['Platform_Name'] == 'OS/2') {
                 $properties['Device_Name'] = 'General Desktop';
-                $properties['Device_Maker'] = 'IBM';
                 $properties['isMobileDevice'] = false;
                 $properties['isTablet'] = false;
                 $properties['Device_isMobileDevice'] = false;
@@ -567,6 +566,15 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = true;
                 $properties['Platform_Maker'] = 'unknown';
+            } elseif ($properties['Platform_Name'] == 'ChromeOS') {
+                $properties['Device_Name'] = 'General Desktop';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Google';
             }
             
             $this->_browsers[$key] = $properties;

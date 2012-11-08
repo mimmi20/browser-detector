@@ -163,6 +163,7 @@ final class Utils
         'http_client',
         'httrack',
         'jig browser',
+        'libwww',
         'linkchecker',
         'naver',
         'nutch',
@@ -180,6 +181,13 @@ final class Utils
         //'svn',
         'test-acceptance',
         'unister-test',
+        'www.auto.de', 
+        'auto.de', 
+        'www.kredit.de', 
+        'www.geld.de', 
+        'www.versicherungen.de', 
+        'insurance.preisvergleich.de', 
+        'finanzen.shopping.de',
         'webu',
         'wget',
         'wordpress',
@@ -247,6 +255,10 @@ final class Utils
         if ($this->checkIfContains('curl', true)
             && !$this->checkIfContains('boxee', true)
         ) {
+            return true;
+        }
+        
+        if ($this->checkIfStartsWith('Java/')) {
             return true;
         }
         
