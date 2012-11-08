@@ -59,7 +59,7 @@ class Sunbird extends Firefox
             return false;
         }
         
-        $isNotReallyAnFirefox = array(
+        $isNotReallyAnSunbird = array(
             'SnapPreviewBot',
             'ScanAlert',
             'spider',
@@ -77,10 +77,11 @@ class Sunbird extends Firefox
             'PaleMoon',
             'Flock',
             'Fennec',
-            'Qt'
+            'Qt',
+            'SeaMonkey'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSunbird)) {
             return false;
         }
         

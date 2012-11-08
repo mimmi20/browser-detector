@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Awesomebot.php 332 2012-11-04 17:48:59Z tmu $
  */
 
 /**
@@ -26,21 +26,19 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Awesomebot.php 332 2012-11-04 17:48:59Z tmu $
  */
-class HtcSensationXeBeatsZ715e extends HtcSensationXeBeats
+class AhrefsBot extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'SensationXE Beats Z715e';
+    protected $_browser = 'AhrefsBot';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -48,11 +46,28 @@ class HtcSensationXeBeatsZ715e extends HtcSensationXeBeats
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Sensation XE Beats Z715e', 'HTC_SensationXE_Beats_Z715e', 'HTC Sensation XE with Beats Audio Z715e', 'SensationXE_Beats_Z715e'))) {
+        if (!$this->_utils->checkIfContains('AhrefsBot')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/AhrefsBot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -62,6 +77,6 @@ class HtcSensationXeBeatsZ715e extends HtcSensationXeBeats
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

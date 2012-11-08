@@ -39,6 +39,11 @@ class Lunascape extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'Lunascape';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Lunascape Corporation';
     
     /**
      * Returns true if this handler can handle the given user agent

@@ -34,6 +34,11 @@ class Iron extends Chromium
      * @var string the detected browser
      */
     protected $_browser = 'Iron';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'SRWare';
     
     /**
      * Returns true if this handler can handle the given user agent

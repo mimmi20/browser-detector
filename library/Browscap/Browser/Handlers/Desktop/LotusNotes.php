@@ -36,6 +36,11 @@ class LotusNotes extends BrowserHandler
      * @var string the detected browser
      */
     protected $_browser = 'LotusNotes';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'IBM';
     
     /**
      * Returns true if this handler can handle the given user agent

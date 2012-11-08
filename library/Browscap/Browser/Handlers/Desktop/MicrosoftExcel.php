@@ -37,7 +37,7 @@ class MicrosoftExcel extends MicrosoftOffice
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Microsoft Excel';
+    protected $_browser = 'Excel';
 
     /**
      * @var string the detected manufacturer

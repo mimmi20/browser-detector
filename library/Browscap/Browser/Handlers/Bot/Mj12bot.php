@@ -33,7 +33,7 @@ class Mj12bot extends GeneralBot
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Mj12bot';
+    protected $_browser = 'MJ12bot';
     
     /**
      * Returns true if this handler can handle the given user agent
