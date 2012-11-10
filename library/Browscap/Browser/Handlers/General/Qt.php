@@ -38,6 +38,11 @@ class Qt extends BrowserHandler
     protected $_browser = 'Qt';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Digia';
+    
+    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool

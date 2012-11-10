@@ -36,6 +36,11 @@ class GomezAgent extends GeneralBot
     protected $_browser = 'GomezAgent';
     
     /**
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'Compuware APM';
+    
+    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool

@@ -580,14 +580,21 @@ class Browscap extends Core
             $this->_browsers[$key] = $properties;
         }
         
-        /*
+        $allBrowsers = array();
+        
+        foreach ($this->_browsers as $key => $properties) {
+            $allBrowsers[$this->_userAgents[$key]] = array($key, $properties);
+        }
+        
         //sort
         $sort1 = array();
         $sort2 = array();
         
-        foreach ($this->_browsers as $key => $properties) {
-            $x     = 0;
-            $title = $this->_userAgents[$key];
+        foreach ($allBrowsers as $title => $data) {
+            $x = 0;
+            
+            $key        = $data[0];
+            $properties = $data[1];
             
             switch ($properties['Category']) {
                 case 'Bot/Crawler':
@@ -596,8 +603,11 @@ class Browscap extends Core
                 case 'Application':
                     $x = 2;
                     break;
-                case 'Browser':
+                case 'Email Clients':
                     $x = 3;
+                    break;
+                case 'Browser':
+                    $x = 8;
                     break;
                 case 'Unister':
                     $x = 9;
@@ -614,26 +624,29 @@ class Browscap extends Core
             $sort2[$title] = $key;
         }
         
-        //array_multisort($sort1, SORT_ASC, $sort2, SORT_ASC, $this->_browsers);
+        array_multisort($sort1, SORT_ASC, $sort2, SORT_ASC, $allBrowsers);
         /**/
         
         $output = '';
         
         // shrink
-        foreach ($this->_browsers as $key => $properties) {
+        foreach ($allBrowsers as $title => $data) {
+            $key        = $data[0];
+            $properties = $data[1];
+            
             if (!isset($properties['Version'])) {
                 continue;
             }
             
             if (!isset($properties['Parent']) 
-                && 'DefaultProperties' !== $this->_userAgents[$key] 
-                && '*' !== $this->_userAgents[$key]
+                && 'DefaultProperties' !== $title 
+                && '*' !== $title
             ) {
                 continue;
             }
             
-            if ('DefaultProperties' !== $this->_userAgents[$key] 
-                && '*' !== $this->_userAgents[$key]
+            if ('DefaultProperties' !== $title
+                && '*' !== $title
             ) {
                 $agentsToFind = array_flip($this->_userAgents);
                 if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
@@ -662,8 +675,6 @@ class Browscap extends Core
             }
             
             // create output
-            
-            $title = $this->_userAgents[$key];
             
             if (false === strpos($title, '*') 
                 && false === strpos($title, '?')

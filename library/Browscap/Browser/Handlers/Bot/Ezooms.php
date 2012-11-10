@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Ezooms.php 305 2012-10-17 21:34:24Z tmu $
  */
 
 /**
@@ -26,19 +26,19 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Ezooms.php 305 2012-10-17 21:34:24Z tmu $
  */
-class Rogerbot extends GeneralBot
+class Ezooms extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'rogerbot';
+    protected $_browser = 'Ezooms';
     
     /**
      * @var string the manufacturer/creator of this OS
      */
-    protected $_manufacturer = 'seomoz';
+    protected $_manufacturer = 'dotnetdotcom.org';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -51,7 +51,7 @@ class Rogerbot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('rogerbot/')) {
+        if (!$this->_utils->checkIfStartsWith('Ezooms/')) {
             return false;
         }
         
@@ -65,7 +65,7 @@ class Rogerbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/rogerbot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Ezooms\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

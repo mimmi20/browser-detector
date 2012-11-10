@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Bingbot.php 311 2012-10-21 12:40:25Z tmu $
  */
 
 /**
@@ -26,19 +26,19 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Bingbot.php 311 2012-10-21 12:40:25Z tmu $
  */
-class Rogerbot extends GeneralBot
+class BingPreview extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'rogerbot';
-    
+    protected $_browser = 'BingPreview';
+
     /**
-     * @var string the manufacturer/creator of this OS
+     * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'seomoz';
+    protected $_manufacturer = 'microsoft';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -47,11 +47,7 @@ class Rogerbot extends GeneralBot
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfStartsWith('rogerbot/')) {
+        if (!$this->_utils->checkIfContains(array('BingPreview/'))) {
             return false;
         }
         
@@ -65,7 +61,7 @@ class Rogerbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/rogerbot\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/BingPreview\/(\d+\.\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
