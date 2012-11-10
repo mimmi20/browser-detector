@@ -165,6 +165,7 @@ final class Utils
         'jig browser',
         'libwww',
         'linkchecker',
+        'mediapartners-google',
         'naver',
         'nutch',
         'opera/9.751',
