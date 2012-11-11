@@ -161,6 +161,7 @@ final class Utils
         'grabber',
         'heritrix',
         'http_client',
+        'httpclient',
         'httrack',
         'jig browser',
         'libwww',

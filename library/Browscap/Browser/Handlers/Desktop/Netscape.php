@@ -126,28 +126,28 @@ class Netscape extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Netscape\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Netscape\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Netscape6\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Netscape6\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/rv\:(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/rv\:([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Mozilla\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mozilla\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

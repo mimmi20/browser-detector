@@ -77,7 +77,7 @@ class Choosy extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Choosy\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Choosy\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

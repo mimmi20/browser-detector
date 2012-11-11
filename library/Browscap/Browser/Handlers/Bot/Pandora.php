@@ -66,7 +66,7 @@ class Pandora extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Pandora\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Pandora\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

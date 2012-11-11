@@ -66,7 +66,7 @@ class Skyfire extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Skyfire\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Skyfire\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

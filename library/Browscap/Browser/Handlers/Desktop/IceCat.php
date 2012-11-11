@@ -96,7 +96,7 @@ class IceCat extends Thunderbird
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/IceCat\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/IceCat\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

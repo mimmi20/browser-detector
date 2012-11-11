@@ -60,7 +60,7 @@ class Proximic extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/proximic\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/proximic\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

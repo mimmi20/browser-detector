@@ -64,14 +64,14 @@ class Libwww extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/libwww\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/libwww\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/libwww-perl\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/libwww-perl\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

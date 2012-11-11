@@ -60,7 +60,7 @@ class Wwwmail extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/www4mail\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/www4mail\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

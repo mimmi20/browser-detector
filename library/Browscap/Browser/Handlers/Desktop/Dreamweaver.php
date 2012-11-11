@@ -70,7 +70,7 @@ class Dreamweaver extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Dreamweaver\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Dreamweaver\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

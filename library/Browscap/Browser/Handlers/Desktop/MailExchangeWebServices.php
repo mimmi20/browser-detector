@@ -62,14 +62,14 @@ class MailExchangeWebServices extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/ExchangeWebServices\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/ExchangeWebServices\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Mail\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Mail\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

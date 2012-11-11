@@ -107,35 +107,35 @@ class Firefox extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Firefox\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Firefox\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Minefield\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Minefield\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Shiretoko\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Shiretoko\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/BonEcho\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/BonEcho\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Namoroka\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Namoroka\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -64,21 +64,21 @@ class Omniweb extends Safari
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Version\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/Omniweb\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Omniweb\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/OmniWeb\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/OmniWeb\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

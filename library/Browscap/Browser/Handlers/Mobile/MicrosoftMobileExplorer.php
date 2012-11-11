@@ -98,21 +98,21 @@ class MicrosoftMobileExplorer extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/IEMobile (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/IEMobile ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/IEMobile\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/IEMobile\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/MSIE (\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

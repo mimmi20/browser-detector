@@ -63,14 +63,14 @@ class SmartViera extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Viera\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Viera\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        $doMatch = preg_match('/SMART-TV\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/SMART-TV\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

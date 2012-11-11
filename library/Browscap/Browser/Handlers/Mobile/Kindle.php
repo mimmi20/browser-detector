@@ -64,7 +64,7 @@ class Kindle extends NetFront
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Kindle\/(\d+\.\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Kindle\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

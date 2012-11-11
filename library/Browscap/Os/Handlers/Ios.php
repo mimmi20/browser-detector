@@ -109,24 +109,17 @@ class Ios extends OsHandler
             return;
         }
         
-        $doMatch = preg_match('/CPU like Mac OS X/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = '1.0';
-            return;
-        }
-        
-        $doMatch = preg_match('/iPhone OS ([\d\.\_]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = str_replace('_', '.', $matches[1]);
-            return;
-        }
-        
         $doMatch = preg_match('/iPhone_OS\/([\d\.\_]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = str_replace('_', '.', $matches[1]);
+            return;
+        }
+        
+        $doMatch = preg_match('/CPU like Mac OS X/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = '1.0';
             return;
         }
         
