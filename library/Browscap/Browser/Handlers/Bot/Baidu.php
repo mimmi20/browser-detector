@@ -33,7 +33,7 @@ class Baidu extends GeneralBot
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Baidu';
+    protected $_browser = 'Baiduspider';
 
     /**
      * @var string the detected manufacturer

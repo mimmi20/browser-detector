@@ -33,7 +33,7 @@ class Unisterbot extends GeneralBot
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Unisterbot';
+    protected $_browser = 'UnisterBot';
 
     /**
      * @var string the detected manufacturer

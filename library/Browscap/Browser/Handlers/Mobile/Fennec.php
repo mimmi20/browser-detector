@@ -74,7 +74,11 @@ class Fennec extends BrowserHandler
             'Navigator',
             'PaleMoon',
             'Flock',
-            'SeaMonkey'
+            'SeaMonkey',
+            // other Browsers
+            'XBLWP7',
+            'ZuneWP7',
+            'MSIE'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {

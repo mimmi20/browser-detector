@@ -54,7 +54,7 @@ class SamsungGalaxyNexus extends SamsungGalaxy
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Nexus S', 'NexusHD2'))) {
+        if ($this->_utils->checkIfContains(array('Nexus S', 'NexusHD2', 'Nexus 7'))) {
             return false;
         }
         

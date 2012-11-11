@@ -78,7 +78,10 @@ class Sunbird extends Firefox
             'Flock',
             'Fennec',
             'Qt',
-            'SeaMonkey'
+            'SeaMonkey',
+            // other Browsers
+            'Chrome',
+            'Chromium',
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnSunbird)) {

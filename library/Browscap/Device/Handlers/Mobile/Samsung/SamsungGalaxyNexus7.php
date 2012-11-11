@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Bot;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGalaxyNexusS.php 286 2012-10-06 23:47:15Z tmu $
  */
 
 /**
@@ -26,44 +26,38 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGalaxyNexusS.php 286 2012-10-06 23:47:15Z tmu $
  */
-class Msnbot extends GeneralBot
+class SamsungGalaxyNexus7 extends SamsungGalaxyNexus
 {
     /**
-     * @var string the detected browser
+     * @var string the detected device
      */
-    protected $_browser = 'Msnbot';
+    protected $_device = 'Nexus 7';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Google';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('msnbot/'))) {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContains('Nexus 7')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/msnbot\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
     }
     
     /**
@@ -73,6 +67,6 @@ class Msnbot extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return parent::getWeight() + 1;
     }
 }

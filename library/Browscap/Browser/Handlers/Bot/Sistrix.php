@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Nagios.php 344 2012-11-11 13:42:35Z tmu $
  */
 
 /**
@@ -26,14 +26,14 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Nagios.php 344 2012-11-11 13:42:35Z tmu $
  */
-class Msnbot extends GeneralBot
+class Sistrix extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Msnbot';
+    protected $_browser = 'SISTRIX';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -42,7 +42,11 @@ class Msnbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('msnbot/'))) {
+        if ('' == $this->_useragent) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContains('sistrix', true)) {
             return false;
         }
         
@@ -56,13 +60,6 @@ class Msnbot extends GeneralBot
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/msnbot\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
         $this->_version = '';
     }
     
