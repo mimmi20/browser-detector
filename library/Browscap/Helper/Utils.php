@@ -154,8 +154,6 @@ final class Utils
         'feedfetcher-google',
         'findlinks',
         'firefox/99',
-        'gecko/17',
-        'gecko/6',
         'generator',
         'gomezagent',
         'grabber',
