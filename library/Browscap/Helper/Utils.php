@@ -274,13 +274,17 @@ final class Utils
      */
     public function isFakeBrowser()
     {
-        if ($this->checkIfContains(array('internet explorer', 'blah'), true)
-            && !$this->checkIfContains(array('internet explorer anonymized by'), true)
-        ) {
+        if ($this->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
         
-        if ($this->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
+        if ($this->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome'), true)) {
+            return true;
+        }
+        
+        if ($this->checkIfContains(array('internet explorer', 'blah'), true)
+            && !$this->checkIfContains(array('internet explorer anonymized by'), true)
+        ) {
             return true;
         }
         
@@ -293,13 +297,9 @@ final class Utils
         }
         
         if ($this->checkIfContains('Gecko') 
-            && !$this->checkIfContains('like Gecko') 
+            && !$this->checkIfContains(array('like Gecko', 'ubuntu')) 
             && $this->checkIfContains(array('opera', 'chrome', 'safari', 'internet explorer'), true)
         ) {
-            return true;
-        }
-        
-        if ($this->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome'), true)) {
             return true;
         }
         
