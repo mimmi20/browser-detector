@@ -71,6 +71,7 @@ class Sunbird extends Firefox
             'Maxthon',
             'Camino',
             'Galeon',
+            'Iceweasel',
             'Lunascape',
             'Opera',
             'Navigator',

@@ -35,7 +35,7 @@ class AsusEepPadTransformerTf101 extends AsusBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Eee Pad Transformer TF101';
+    protected $_device = 'TF101';
 
     /**
      * @var string the detected manufacturer

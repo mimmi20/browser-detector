@@ -65,7 +65,8 @@ class Htc extends GeneralMobile
             'MDA_Vario_V',
             'myTouch4G',
             'Sensation_4G',
-            'SensationXL_Beats_X315e',
+            'SensationXE',
+            'SensationXL',
             'Sensation_Z710e',
             'Xda_Diamond_2'
         );

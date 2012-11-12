@@ -185,6 +185,17 @@ class Windows extends OsHandler
             return;
         }
         /**/
+        
+        if ($this->_utils->checkIfContains(array('Win98'))) {
+            $this->_version = '98';
+            return;
+        }
+        
+        if ($this->_utils->checkIfContains(array('Win95'))) {
+            $this->_version = '95';
+            return;
+        }
+        
         $this->_version = '';
     }
     

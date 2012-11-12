@@ -67,6 +67,7 @@ class Chrome extends Chromium
             'Lunascape',
             'Iron',
             'Maemo',
+            'Maxthon',
             'PaleMoon',
             'RockMelt',
             'Comodo Dragon',

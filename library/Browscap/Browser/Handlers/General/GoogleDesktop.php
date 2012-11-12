@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Zte;
+namespace Browscap\Browser\Handlers\General;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Zte;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Google.php 263 2012-07-15 18:44:42Z  $
  */
+
+use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,27 +28,24 @@ namespace Browscap\Device\Handlers\Mobile\Zte;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Google.php 263 2012-07-15 18:44:42Z  $
  */
-class ZteBaseLutea2 extends ZteBaseLutea
+class GoogleDesktop extends BrowserHandler
 {
     /**
-     * @var string the detected 
+     * @var string the detected browser
      */
-
-    protected $_device = 'Lutea 2';
+    protected $_browser = 'Google Desktop';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'BASE';
+    protected $_manufacturer = 'Google';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -54,11 +53,28 @@ class ZteBaseLutea2 extends ZteBaseLutea
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('base lutea 2', true)) {
+        if (!$this->_utils->checkIfContains(array('Google Desktop'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/Google Desktop\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -68,28 +84,6 @@ class ZteBaseLutea2 extends ZteBaseLutea
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
+        return 6;
     }
 }

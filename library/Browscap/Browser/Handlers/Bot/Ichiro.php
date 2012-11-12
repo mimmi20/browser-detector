@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Nagios.php 344 2012-11-11 13:42:35Z tmu $
  */
-
-use Browscap\Browser\Handler as BrowserHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,19 +26,14 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Nagios.php 344 2012-11-11 13:42:35Z tmu $
  */
-class WebkitWebos extends BrowserHandler
+class Ichiro extends GeneralBot
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'WebKit/webOS';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'HP';
+    protected $_browser = 'Ichiro Crawler';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -53,7 +46,7 @@ class WebkitWebos extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser', 'wOSBrowser'))) {
+        if (!$this->_utils->checkIfStartsWith('ichiro')) {
             return false;
         }
         
@@ -67,14 +60,7 @@ class WebkitWebos extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/webOS\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/webOSBrowser\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/ichiro\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -85,27 +71,12 @@ class WebkitWebos extends BrowserHandler
     }
     
     /**
-     * returns TRUE if the browser has a specific rendering engine
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return boolean
+     * @return integer
      */
-    public function hasEngine()
+    public function getWeight()
     {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 3;
     }
 }

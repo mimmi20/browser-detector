@@ -80,6 +80,13 @@ class Safari extends BrowserHandler
             return;
         }
         
+        $doMatch = preg_match('/MobileSafari\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $this->_utils->mapSafariVersions($matches[1]);
+            return;
+        }
+        
         $this->_version = '';
     }
     

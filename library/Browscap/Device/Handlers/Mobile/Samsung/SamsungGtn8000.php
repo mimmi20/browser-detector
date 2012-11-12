@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Zte;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Zte;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGtn8000.php 286 2012-10-06 23:47:15Z tmu $
  */
+
+use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,20 +28,14 @@ namespace Browscap\Device\Handlers\Mobile\Zte;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGtn8000.php 286 2012-10-06 23:47:15Z tmu $
  */
-class ZteBaseLutea2 extends ZteBaseLutea
+class SamsungGtn8000 extends SamsungBase
 {
     /**
-     * @var string the detected 
+     * @var string the detected device
      */
-
-    protected $_device = 'Lutea 2';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'BASE';
+    protected $_device = 'GT-N8000';
     
     /**
      * Final Interceptor: Intercept
@@ -54,7 +50,7 @@ class ZteBaseLutea2 extends ZteBaseLutea
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('base lutea 2', true)) {
+        if (!$this->_utils->checkIfContains('GT-N8000')) {
             return false;
         }
         
@@ -72,6 +68,16 @@ class ZteBaseLutea2 extends ZteBaseLutea
     }
     
     /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
+    
+    /**
      * detects the device name from the given user agent
      *
      * @param string $userAgent
@@ -81,15 +87,5 @@ class ZteBaseLutea2 extends ZteBaseLutea
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

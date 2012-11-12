@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Zte;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Zte;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGti8160.php 286 2012-10-06 23:47:15Z tmu $
  */
 
 /**
@@ -26,20 +26,14 @@ namespace Browscap\Device\Handlers\Mobile\Zte;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGti8160.php 286 2012-10-06 23:47:15Z tmu $
  */
-class ZteBaseLutea2 extends ZteBaseLutea
+class SamsungGti8160p extends SamsungGti8160
 {
     /**
-     * @var string the detected 
+     * @var string the detected device
      */
-
-    protected $_device = 'Lutea 2';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'BASE';
+    protected $_device = 'GT-I8160P';
     
     /**
      * Final Interceptor: Intercept
@@ -54,7 +48,7 @@ class ZteBaseLutea2 extends ZteBaseLutea
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('base lutea 2', true)) {
+        if (!$this->_utils->checkIfContains('GT-I8160P')) {
             return false;
         }
         
@@ -81,15 +75,5 @@ class ZteBaseLutea2 extends ZteBaseLutea
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Medion;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,34 +15,30 @@ namespace Browscap\Device\Handlers\Mobile\Medion;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: ExaleadCloudView.php 344 2012-11-11 13:42:35Z tmu $
  */
 
-use Browscap\Device\Handlers\Mobile\Medion as MedionBase;
-
 /**
- * CatchAllUserAgentHandler
+ * OperaHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: ExaleadCloudView.php 344 2012-11-11 13:42:35Z tmu $
  */
-class MdLifetabP9514 extends MedionBase
+class FaceBookBot extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'Lifetab P9514';
+    protected $_browser = 'FaceBook Bot';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -50,7 +46,7 @@ class MdLifetabP9514 extends MedionBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('LIFETAB_P9514')) {
+        if (!$this->_utils->checkIfContains('facebookexternalhit')) {
             return false;
         }
         
@@ -58,15 +54,13 @@ class MdLifetabP9514 extends MedionBase
     }
     
     /**
-     * detects the device name from the given user agent
+     * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return string
      */
-    public function detectDevice()
+    protected function _detectVersion()
     {
-        return $this;
+        $this->_version = '';
     }
     
     /**
@@ -76,16 +70,6 @@ class MdLifetabP9514 extends MedionBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
+        return 3;
     }
 }

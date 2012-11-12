@@ -54,6 +54,10 @@ class SamsungGti8160 extends SamsungBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('GT-I8160P')) {
+            return false;
+        }
+        
         return true;
     }
     
