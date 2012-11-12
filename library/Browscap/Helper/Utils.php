@@ -265,6 +265,10 @@ final class Utils
             return true;
         }
         
+        if ('Mozilla/4.0 (compatible;)' === $this->_useragent) {
+            return true;
+        }
+        
         return false;
     }
     
@@ -298,7 +302,7 @@ final class Utils
         }
         
         if ($this->checkIfContains('Gecko') 
-            && !$this->checkIfContains(array('like Gecko', 'ubuntu')) 
+            && !$this->checkIfContains(array('like gecko', 'ubuntu'), true) 
             && $this->checkIfContains(array('opera', 'chrome', 'safari', 'internet explorer'), true)
         ) {
             return true;
@@ -333,6 +337,7 @@ final class Utils
     {
         if (!$this->checkIfStartsWith('Mozilla/')
             && !$this->checkIfStartsWith('Safari')
+            && !$this->checkIfStartsWith('MobileSafari')
         ) {
             return false;
         }
