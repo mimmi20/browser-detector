@@ -151,6 +151,7 @@ final class Utils
         //'download',
         'extract',
         'ezooms',
+        'facebookexternalhit',
         'feedparser',
         'feed parser',
         'feedfetcher-google',
@@ -398,7 +399,7 @@ final class Utils
             return false;
         }
         
-        if ($this->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit'))) {
+        if ($this->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit', 'CFNetwork'))) {
             return false;
         }
         
