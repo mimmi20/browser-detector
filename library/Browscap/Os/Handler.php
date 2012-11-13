@@ -207,7 +207,7 @@ abstract class Handler implements MatcherInterface
             return $this;
         }
         
-        if ($this->_utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+        if ($this->_utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android'))) {
             $this->_bits = '32';
             
             return $this;

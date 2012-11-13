@@ -69,7 +69,6 @@ class Maxthon extends BrowserHandler
             'Flock',
             // other Browsers
             'AppleWebKit',
-            'Chrome',
             'Linux',
             'MSOffice',
             'Outlook',

@@ -63,6 +63,16 @@ abstract class Handler implements MatcherInterface
     protected $_manufacturer = 'unknown';
     
     /**
+     * @var string the detected CPU used in the device
+     */
+    protected $_cpu = '';
+    
+    /**
+     * @var string the Bit-Width for the detected CPU
+     */
+    protected $_bits = '';
+    
+    /**
      * @var \Browscap\Os\Handler
      */
     protected $_os = null;
@@ -151,7 +161,9 @@ abstract class Handler implements MatcherInterface
      */
     final public function detect()
     {
-        $this->_os = $this->detectOs();
+        $this->_cpu  = $this->_detectCpu();
+        $this->_bits = $this->_detectBits();
+        $this->_os   = $this->detectOs();
         
         if (null !== $this->_os) {
             $this->_browser = $this->_os->getBrowser();
@@ -258,6 +270,26 @@ abstract class Handler implements MatcherInterface
         }
         
         return $device;
+    }
+    
+    /**
+     * detect the cpu which is build into the device
+     *
+     * @return Handler
+     */
+    protected function _detectCpu()
+    {
+        return $this;
+    }
+    
+    /**
+     * detect the bits of the cpu which is build into the device
+     *
+     * @return Handler
+     */
+    protected function _detectBits()
+    {
+        return $this;
     }
     
     /**

@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Avant Browser.php 344 2012-11-11 13:42:35Z tmu $
  */
 
 /**
@@ -31,36 +31,14 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Avant Browser.php 344 2012-11-11 13:42:35Z tmu $
  */
-class MicrosoftInternetExplorer extends BrowserHandler
+class AvantBrowser extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Internet Explorer';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'microsoft';
-    
-    private $_patterns = array(
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 10\.0.*/' => '10.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 9\.0.*/'  => '9.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'  => '8.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'  => '7.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'  => '6.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'  => '5.5',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/' => '5.23',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/' => '5.01',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'  => '5.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/' => '4.01',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.0.*/'  => '4.0',
-        '/Mozilla\/.*\(.*MSIE 3\..*/'          => '3.0',
-        '/Mozilla\/.*\(.*MSIE 2\..*/'          => '2.0',
-        '/Mozilla\/.*\(.*MSIE 1\..*/'          => '1.0'
-    );
+    protected $_browser = 'Avant Browser';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,25 +55,19 @@ class MicrosoftInternetExplorer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MSIE')) {
+        if (!$this->_utils->checkIfContains(array('Avant Browser'))) {
             return false;
         }
         
         $isNotReallyAnIE = array(
-            'Gecko',
-            'Presto',
-            'Webkit',
-            'KHTML',
             // using also the Trident rendering engine
-            'Avant Browser',
             'Crazy Browser',
-            'Flock',
             'Galeon',
             'Lunascape',
             'Maxthon',
-            'MyIE',
             'Opera',
             'PaleMoon',
+            'Flock',
             // other Browsers
             'AppleWebKit',
             'Chrome',
@@ -106,25 +78,14 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'BlackBerry',
             'WebTV',
             'ArgClrInt',
-            'Firefox',
-            'MSIECrawler',
-            // Fakes
-            'Mac; Mac OS '
+            'Firefox'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)
-            && !$this->_utils->checkIfContains('Bitte Mozilla Firefox verwenden')
-        ) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         
-        foreach (array_keys($this->_patterns) as $pattern) {
-            if (preg_match($pattern, $this->_useragent)) {
-                return true;
-            }
-        }
-        
-        return false;
+        return true;
     }
     
     /**
@@ -134,20 +95,6 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        foreach ($this->_patterns as $pattern => $version) {
-            if (preg_match($pattern, $this->_useragent)) {
-                $this->_version = $version;
-                return;
-            }
-        }
-        
         $this->_version = '';
     }
     
@@ -158,7 +105,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function getWeight()
     {
-        return 72994;
+        return 41;
     }
     
     /**
@@ -283,30 +230,5 @@ class MicrosoftInternetExplorer extends BrowserHandler
     public function isCrawler()
     {
         return false;
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Trident();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
     }
 }

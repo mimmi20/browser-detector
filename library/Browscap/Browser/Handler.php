@@ -142,8 +142,8 @@ abstract class Handler implements MatcherInterface
      */
     final public function detect()
     {
-        $this->_detectBits();
         $this->_detectVersion();
+        $this->_detectBits();
         
         return $this;
     }
@@ -216,7 +216,7 @@ abstract class Handler implements MatcherInterface
         }
         
         // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($this->_utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86'))) {
+        if ($this->_utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android'))) {
             $this->_bits = '32';
             
             return $this;
