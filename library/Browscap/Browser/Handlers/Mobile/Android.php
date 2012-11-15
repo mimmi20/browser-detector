@@ -60,7 +60,22 @@ class Android extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaBrowser', 'BlackBerry', 'Blackberry', 'Opera', 'Firefox', 'Fennec', 'iPad', 'iPhone', 'Dalvik', 'Chrome', 'RIM Tablet'))) {
+        $noAndroid = array(
+            'NokiaBrowser', 
+            'BlackBerry', 
+            'Blackberry', 
+            'Opera', 
+            'Firefox', 
+            'Fennec', 
+            'iPad', 
+            'iPhone', 
+            'Dalvik', 
+            'Chrome', 
+            'RIM Tablet', 
+            'WeTab-Browser'
+        );
+        
+        if ($this->_utils->checkIfContains($noAndroid)) {
             return false;
         }
         

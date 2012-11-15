@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Browser\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: GooglePlus.php 263 2012-07-15 18:44:42Z  $
  */
+
+use \Browscap\Browser\Handlers\General\Google;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,21 +28,24 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: GooglePlus.php 263 2012-07-15 18:44:42Z  $
  */
-class HtcIncrediblesS710e extends HtcIncredibleS
+class GoogleWirelessTranscoder extends Google
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'S710E';
+    protected $_browser = 'Google Wireless Transcoder';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Google';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -48,11 +53,21 @@ class HtcIncrediblesS710e extends HtcIncredibleS
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_IncredibleS_S710e', 'IncredibleS_S710e')) {
+        if (!$this->_utils->checkIfContains(array('Google Wireless Transcoder'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $this->_version = '';
     }
     
     /**

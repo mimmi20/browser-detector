@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Alcatel;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: AlcatelOt980.php 286 2012-10-06 23:47:15Z tmu $
  */
+
+use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,14 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: AlcatelOt980.php 286 2012-10-06 23:47:15Z tmu $
  */
-class HtcWildfireA510e extends HtcWildfire
+class V860 extends AlcatelBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'A510e';
+    protected $_device = 'V860';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcWildfireA510e extends HtcWildfire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_WildfireS_A510e')) {
+        if (!$this->_utils->checkIfContains(array('V860', 'Vodafone Smart II'))) {
             return false;
         }
         
@@ -63,5 +65,17 @@ class HtcWildfireA510e extends HtcWildfire
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

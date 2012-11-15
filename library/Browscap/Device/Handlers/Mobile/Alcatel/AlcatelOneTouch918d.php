@@ -33,7 +33,7 @@ class AlcatelOneTouch918d extends AlcatelOneTouch918
     /**
      * @var string the detected device
      */
-    protected $_device = 'One Touch 918D';
+    protected $_device = 'OT-918D';
     
     /**
      * Final Interceptor: Intercept

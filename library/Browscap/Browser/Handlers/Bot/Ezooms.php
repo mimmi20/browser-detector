@@ -51,7 +51,7 @@ class Ezooms extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('Ezooms/')) {
+        if (!$this->_utils->checkIfContains('Ezooms/')) {
             return false;
         }
         

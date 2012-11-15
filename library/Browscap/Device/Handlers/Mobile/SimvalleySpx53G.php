@@ -55,7 +55,7 @@ class SimvalleySpx53G extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SPX-5 3G')) {
+        if (!$this->_utils->checkIfContains(array('SPX-5 3G', 'SPX-5_3G'))) {
             return false;
         }
         

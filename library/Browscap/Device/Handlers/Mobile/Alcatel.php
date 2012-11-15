@@ -57,7 +57,8 @@ class Alcatel extends GeneralMobile
         
         $alcatelPhones = array(
             'ALCATEL',
-            'Alcatel'
+            'Alcatel',
+            'Vodafone Smart II'
         );
         
         if ($this->_utils->checkIfContains($alcatelPhones)) {

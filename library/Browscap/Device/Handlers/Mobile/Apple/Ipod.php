@@ -35,7 +35,7 @@ class Ipod extends AppleBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'iPod';
+    protected $_device = 'iPod Touch';
     
     /**
      * Final Interceptor: Intercept

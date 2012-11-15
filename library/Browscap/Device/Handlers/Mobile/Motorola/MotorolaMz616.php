@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
+namespace Browscap\Device\Handlers\Mobile\Motorola;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonST21i.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
-
-use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonST21i.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
-class SonyEricssonST21i extends SonyBase
+class MotorolaMz616 extends MotorolaXoom
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'ST21i';
+    protected $_device = 'MotoMZ616';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +48,11 @@ class SonyEricssonST21i extends SonyBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('SonyEricssonST21i', 'SonyST21i', 'ST21i'))) {
+        if (!$this->_utils->checkIfContains(array('XOOM 2', 'MZ616'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('SonyEricssonST21iv', 'SonyST21iv', 'ST21iv'))) {
+        if ($this->_utils->checkIfContains(array('XOOM 2 ME'))) {
             return false;
         }
         

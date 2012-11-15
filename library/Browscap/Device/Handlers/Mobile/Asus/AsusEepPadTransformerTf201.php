@@ -83,4 +83,14 @@ class AsusEepPadTransformerTf201 extends AsusBase
     {
         return $this;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

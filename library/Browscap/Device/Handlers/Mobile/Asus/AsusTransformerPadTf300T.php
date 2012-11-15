@@ -35,7 +35,7 @@ class AsusTransformerPadTf300T extends AsusBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Transformer Pad TF300T';
+    protected $_device = 'TF300T';
 
     /**
      * @var string the detected manufacturer

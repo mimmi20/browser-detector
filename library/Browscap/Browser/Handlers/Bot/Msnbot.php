@@ -42,7 +42,7 @@ class Msnbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('msnbot/'))) {
+        if (!$this->_utils->checkIfContains(array('msnbot/', 'adidxbot/'))) {
             return false;
         }
         
@@ -57,6 +57,13 @@ class Msnbot extends GeneralBot
     protected function _detectVersion()
     {
         $doMatch = preg_match('/msnbot\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $doMatch = preg_match('/adidxbot\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];

@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: CatTablet.php 286 2012-10-06 23:47:15Z tmu $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,19 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: CatTablet.php 286 2012-10-06 23:47:15Z tmu $
  */
-class Htc extends GeneralMobile
+class WeTab extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general HTC';
+    protected $_device = 'WeTab';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'HTC';
+    protected $_manufacturer = 'Neofonie';
     
     /**
      * Final Interceptor: Intercept
@@ -55,29 +55,11 @@ class Htc extends GeneralMobile
             return false;
         }
         
-        $htcPhones = array(
-            'HTC',
-            '7 Trophy',
-            'Desire_A8181',
-            'Desire HD',
-            'Desire S',
-            'EVO3D_X515m',
-            'HD2',
-            'IncredibleS_S710e',
-            'MDA_Vario_V',
-            'myTouch4G',
-            'Sensation_4G',
-            'SensationXE',
-            'SensationXL',
-            'Sensation_Z710e',
-            'Xda_Diamond_2'
-        );
-        
-        if ($this->_utils->checkIfContains($htcPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains(array('WeTab', 'WeTab-Browser'))) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -89,16 +71,7 @@ class Htc extends GeneralMobile
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Device\Chain(
-            true, 
-            null, 
-            __DIR__ . DIRECTORY_SEPARATOR . 'Htc' . DIRECTORY_SEPARATOR, 
-            __NAMESPACE__ . '\\Htc'
-        );
-        $chain->setDefaultHandler($this);
-        $chain->setUserAgent($this->_useragent);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -109,6 +82,16 @@ class Htc extends GeneralMobile
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
     
     /**
@@ -129,22 +112,10 @@ class Htc extends GeneralMobile
      */
     public function detectOs()
     {
-        $os = array(
-            'Android',
-            'Bada',
-            'Brew',
-            'Java',
-            'Symbianos',
-            'WindowsMobileOs',
-            'WindowsPhoneOs',
-            'Linux'
-        );
+        $handler = new \Browscap\Os\Handlers\MeeGo();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Os\Chain(false, $os);
-        $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
-        $chain->setUseragent($this->_useragent);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

@@ -78,4 +78,14 @@ class SamsungGtp3100 extends SamsungBase
     {
         return $this;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

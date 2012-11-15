@@ -48,7 +48,7 @@ class HtcEvo3DX515m extends HtcEvo3D
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC EVO 3D X515m', 'HTC_EVO3D_X515m'))) {
+        if (!$this->_utils->checkIfContains(array('HTC EVO 3D X515m', 'HTC_EVO3D_X515m', 'EVO3D_X515m'))) {
             return false;
         }
         

@@ -35,7 +35,7 @@ class Htc7ProT7576 extends HtcBase
     /**
      * @var string the detected device
      */
-    protected $_device = '7 Pro T7576';
+    protected $_device = 'T7576';
     
     /**
      * Final Interceptor: Intercept

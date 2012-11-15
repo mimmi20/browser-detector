@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcWildfireS extends HtcWildfire
+class HtcA510 extends HtcWildfire
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Wildfire S';
+    protected $_device = 'A510';
     
     /**
      * Final Interceptor: Intercept

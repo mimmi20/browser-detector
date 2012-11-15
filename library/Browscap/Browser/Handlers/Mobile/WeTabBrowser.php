@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Desktop;
+namespace Browscap\Browser\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,30 +15,27 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Sunbird.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id: Ucweb.php 344 2012-11-11 13:42:35Z tmu $
  */
 
+use Browscap\Browser\Handler as BrowserHandler;
+
 /**
- * FirefoxUserAgentHandler
+ * SafariHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Sunbird.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id: Ucweb.php 344 2012-11-11 13:42:35Z tmu $
  */
-class Sunbird extends Firefox
+class WeTabBrowser extends BrowserHandler
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Sunbird';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Mozilla';
+    protected $_browser = 'WeTab-Browser';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -51,43 +48,7 @@ class Sunbird extends Firefox
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Gecko', 'Sunbird'))) {
-            return false;
-        }
-        
-        $isNotReallyAnSunbird = array(
-            'SnapPreviewBot',
-            'ScanAlert',
-            'spider',
-            'Nutch',
-            'webaroo',
-            'OneRiot',
-            // using also the Gecko rendering engine
-            'Camino',
-            'Fennec',
-            'Flock',
-            'Galeon',
-            'Iceweasel',
-            'K-Meleon',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'Navigator',
-            'Opera',
-            'PaleMoon',
-            'Qt',
-            'SeaMonkey',
-            // other Browsers
-            'Chrome',
-            'Chromium',
-            'rekonq'
-        );
-        
-        if ($this->_utils->checkIfContains($isNotReallyAnSunbird)) {
+        if (!$this->_utils->checkIfContains(array('WeTab-Browser'))) {
             return false;
         }
         
@@ -101,20 +62,6 @@ class Sunbird extends Firefox
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Sunbird\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Sunbird\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
         $this->_version = '';
     }
     
@@ -125,7 +72,7 @@ class Sunbird extends Firefox
      */
     public function getWeight()
     {
-        return 38;
+        return 4;
     }
     
     /**
@@ -146,7 +93,7 @@ class Sunbird extends Firefox
      */
     public function getEngine()
     {
-        $handler = new \Browscap\Engine\Handlers\Gecko();
+        $handler = new \Browscap\Engine\Handlers\Webkit();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         

@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcIncrediblesS710e extends HtcIncredibleS
+class HtcA510e extends HtcWildfire
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'S710E';
+    protected $_device = 'A510e';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class HtcIncrediblesS710e extends HtcIncredibleS
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_IncredibleS_S710e', 'IncredibleS_S710e')) {
+        if (!$this->_utils->checkIfContains('HTC_WildfireS_A510e')) {
             return false;
         }
         

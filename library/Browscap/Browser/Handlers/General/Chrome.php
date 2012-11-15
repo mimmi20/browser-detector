@@ -73,6 +73,7 @@ class Chrome extends Chromium
             'Comodo Dragon',
             'Google Earth',
             'Arora',
+            'Avant',
             // Bots trying to be a Chrome
             'PagePeeker',
             // Fakes

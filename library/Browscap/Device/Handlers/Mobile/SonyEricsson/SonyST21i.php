@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyEricssonST21i.php 285 2012-10-03 21:38:10Z tmu $
  */
+
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,19 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SonyEricssonST21i.php 285 2012-10-03 21:38:10Z tmu $
  */
-class HtcIncrediblesS710e extends HtcIncredibleS
+class SonyST21i extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'S710E';
+    protected $_device = 'ST21i';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +55,11 @@ class HtcIncrediblesS710e extends HtcIncredibleS
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_IncredibleS_S710e', 'IncredibleS_S710e')) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonST21i', 'SonyST21i', 'ST21i'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('SonyEricssonST21iv', 'SonyST21iv', 'ST21iv'))) {
             return false;
         }
         
@@ -63,5 +74,17 @@ class HtcIncrediblesS710e extends HtcIncredibleS
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }
