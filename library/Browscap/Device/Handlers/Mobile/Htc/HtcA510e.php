@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcA510e extends HtcWildfire
+class HtcA510e extends HtcA510
 {
     /**
      * @var string the detected device
@@ -48,7 +48,7 @@ class HtcA510e extends HtcWildfire
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_WildfireS_A510e')) {
+        if (!$this->_utils->checkIfContains(array('HTC Wildfire S A510e', 'HTC_WildfireS_A510e'))) {
             return false;
         }
         

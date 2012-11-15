@@ -30,7 +30,7 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Htc7ProT7576 extends HtcBase
+class HtcT7576 extends HtcBase
 {
     /**
      * @var string the detected device
