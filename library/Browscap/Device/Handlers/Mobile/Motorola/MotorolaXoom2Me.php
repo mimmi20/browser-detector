@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: MotorolaXoom2.php 285 2012-10-03 21:38:10Z tmu $
  */
-class MotorolaXoom2Me extends MotorolaXoom2
+class MotorolaXoom2Me extends MotorolaMz616
 {
     /**
      * @var string the detected device

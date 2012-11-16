@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Baidu.php 347 2012-11-11 21:50:18Z tmu $
  */
-
-use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,33 +26,42 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Baidu.php 347 2012-11-11 21:50:18Z tmu $
  */
-class Htc7Mozart extends HtcBase
+class ArchiveOrgBot extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'Mozart';
+    protected $_browser = 'archive.org Bot';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'www.archive.org';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('HTC;7 Mozart', '7 Mozart'))) {
+        if (!$this->_utils->checkIfContains(array('www.archive.org', 'archive.org_bot'), true)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $this->_version = '';
     }
     
     /**
@@ -64,18 +71,6 @@ class Htc7Mozart extends HtcBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
+        return 3;
     }
 }

@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcSensationXe extends HtcZ710
+class HtcZ710e extends HtcZ710
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Sensation XE';
+    protected $_device = 'Z710e';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +48,7 @@ class HtcSensationXe extends HtcZ710
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Sensation XE', 'HTC_SensationXE'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('HTC Sensation XE Beats', 'HTC_SensationXE_Beats'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_Sensation_Z710e', 'HTC Sensation Z710e', 'Sensation_Z710e'))) {
             return false;
         }
         

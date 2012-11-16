@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: HtcSensationLs.php 285 2012-10-03 21:38:10Z tmu $
  */
-class HtcSensation4g extends HtcSensation
+class HtcSensation4g extends HtcZ710
 {
     /**
      * @var string the detected device

@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcSensation extends HtcBase
+class HtcT8698 extends HtcBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Sensation';
+    protected $_device = 'T8698';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class HtcSensation extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/Sensation', 'HTC/Sensation/', 'HTC Sensation', 'HTC_Sensation'))) {
+        if (!$this->_utils->checkIfContains(array('HTC;7 Mozart', '7 Mozart'))) {
             return false;
         }
         

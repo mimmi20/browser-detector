@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcSensationZ710e extends HtcSensation
+class HtcZ710 extends HtcBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Z710e';
+    protected $_device = 'Z710';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcSensationZ710e extends HtcSensation
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_Sensation_Z710e', 'HTC Sensation Z710e', 'Sensation_Z710e'))) {
+        if (!$this->_utils->checkIfContains(array('HTC/Sensation', 'HTC/Sensation/', 'HTC Sensation', 'HTC_Sensation'))) {
             return false;
         }
         
@@ -63,5 +65,17 @@ class HtcSensationZ710e extends HtcSensation
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }
