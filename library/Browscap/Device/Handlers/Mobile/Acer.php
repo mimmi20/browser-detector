@@ -66,6 +66,7 @@ class Acer extends GeneralMobile
             'A101',
             'A200',
             'A210',
+            'A211',
             'A500',
             'A501',
             'A510',

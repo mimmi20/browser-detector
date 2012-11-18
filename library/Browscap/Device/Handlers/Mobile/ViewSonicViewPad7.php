@@ -55,7 +55,7 @@ class ViewSonicViewPad7 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('VViewPad7')) {
+        if (!$this->_utils->checkIfContains('ViewPad7')) {
             return false;
         }
         

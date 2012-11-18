@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Motorola;
+namespace Browscap\Device\Handlers\Mobile\Odys;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: OdysLoox.php 286 2012-10-06 23:47:15Z tmu $
  */
+
+use Browscap\Device\Handlers\Mobile\Odys as OdysBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,14 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: OdysLoox.php 286 2012-10-06 23:47:15Z tmu $
  */
-class MotorolaXoomMz615 extends MotorolaXoom2
+class OdysQ extends OdysBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MZ615';
+    protected $_device = 'Q';
     
     /**
      * Final Interceptor: Intercept
@@ -48,21 +50,11 @@ class MotorolaXoomMz615 extends MotorolaXoom2
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MZ615')) {
+        if (!$this->_utils->checkIfContains('ODYS-Q')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -75,5 +67,15 @@ class MotorolaXoomMz615 extends MotorolaXoom2
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
 }

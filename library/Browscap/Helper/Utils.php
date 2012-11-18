@@ -313,6 +313,10 @@ final class Utils
             return true;
         }
         
+        if ($this->checkIfContains('HTTrack')) {
+            return false;
+        }
+        
         $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
@@ -453,13 +457,15 @@ final class Utils
             'HbbTV',
             'CE-HTML',
             'Loewe; SL121',
+            'Loewe; SL150',
             'dlink.dsm380',
             'IDL-6651N',
             'SonyDTV115',
             'SMART-TV',
             'Viera',
             'NETRANGEMMH',
-            'boxee'
+            'boxee',
+            'GoogleTV'
         );
         
         if ($this->checkIfContains($tvDevices)) {

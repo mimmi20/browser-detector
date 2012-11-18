@@ -34,6 +34,11 @@ class MotorolaDroidX2 extends MotorolaDroid2
      * @var string the detected device
      */
     protected $_device = 'Droid X2';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Motorola';
     
     /**
      * Final Interceptor: Intercept

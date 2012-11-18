@@ -71,8 +71,8 @@ class GeneralDesktop extends DeviceHandler
         }
         
         $linux = array(
-            'Linux', 'Debian', 'Ubuntu', 'SUSE', 'Fedora', 'Mint', 'redhat', 
-            'Slackware', 'Zenwalk GNU', 'CentOS', 'Kubuntu', 'CrOs'
+            'linux', 'debian', 'ubuntu', 'suse', 'fedora', 'mint', 'redhat', 
+            'slackware', 'zenwalk gnu', 'centos', 'kubuntu', 'cros'
         );
         
         if ($this->_utils->checkIfContains($linux, true)) {
@@ -93,7 +93,7 @@ class GeneralDesktop extends DeviceHandler
         }
         
         $otherDesktops = array(
-            'freebsd', 'openbsd', 'os/2', 'warp'
+            'freebsd', 'openbsd', 'os/2', 'warp', 'sunos'
         );
         
         if ($this->_utils->checkIfContains($otherDesktops, true)) {

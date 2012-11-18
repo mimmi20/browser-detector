@@ -79,4 +79,28 @@ final class Unknown extends DeviceHandler
     {
         return false;
     }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browser = new \Browscap\Browser\Handlers\Unknown();
+        $browser->setUserAgent($this->_useragent);
+        
+        return $browser->detect();
+    }
 }

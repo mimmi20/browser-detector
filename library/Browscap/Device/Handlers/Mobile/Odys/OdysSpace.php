@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Odys;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Odys as OdysBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class OdysSpace extends GeneralMobile
+class OdysSpace extends OdysBase
 {
     /**
      * @var string the detected device
      */
     protected $_device = 'Space';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Odys';
     
     /**
      * Final Interceptor: Intercept
@@ -82,15 +77,5 @@ class OdysSpace extends GeneralMobile
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

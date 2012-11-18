@@ -69,20 +69,6 @@ class Symbianos extends OsHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/SymbianOS\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Symbian\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
         $this->_version = '';
     }
     

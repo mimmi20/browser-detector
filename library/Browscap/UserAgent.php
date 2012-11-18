@@ -91,17 +91,17 @@ class UserAgent extends Core
             || !($browserArray = $this->_getBrowserFromCache($this->_cleanedAgent))
         ) {
             $this->_detectDevice();
-            //var_dump('###################################', $this->_agent);
-            if ($this->_device->hasOs()) {
-                $this->_os = $this->_device->getOs();//var_dump('hat os', get_class($this->_device), get_class($this->_os));
-            } else {
-                $this->_os = $this->_detectOs();//var_dump('hat kein os', get_class($this->_device), get_class($this->_os));
-            }
             
-            if ($this->_device->hasBrowser()) {
-                $this->_browser = $this->_device->getBrowser();
+            if ($this->_device->hasOs()) {
+                $this->_os = $this->_device->getOs();
             } else {
-                $this->_browser = $this->_detectBrowser();
+                $this->_os = $this->_detectOs();
+            }
+            //var_dump('###################################', $this->_agent);
+            if ($this->_device->hasBrowser()) {
+                $this->_browser = $this->_device->getBrowser();//var_dump('device hat browser', get_class($this->_device), get_class($this->_os), get_class($this->_browser));
+            } else {
+                $this->_browser = $this->_detectBrowser();//var_dump('device hat keinen browser', get_class($this->_device), get_class($this->_os), get_class($this->_browser));
             }
             
             if ($this->_browser->hasEngine()) {

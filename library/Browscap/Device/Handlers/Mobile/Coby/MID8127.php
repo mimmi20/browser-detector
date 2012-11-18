@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Alcatel;
+namespace Browscap\Device\Handlers\Mobile\Coby;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Alcatel;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: MID8127.php 285 2012-10-03 21:38:10Z tmu $
  */
 
-use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
+use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,14 @@ use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: MID8127.php 285 2012-10-03 21:38:10Z tmu $
  */
-class AlcatelOneTouch991 extends AlcatelBase
+class MID8127 extends CobyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'OT-991';
+    protected $_device = 'MID8127';
     
     /**
      * Final Interceptor: Intercept
@@ -50,21 +50,11 @@ class AlcatelOneTouch991 extends AlcatelBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991'))) {
+        if (!$this->_utils->checkIfContains('MID8127')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -77,5 +67,15 @@ class AlcatelOneTouch991 extends AlcatelBase
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
 }

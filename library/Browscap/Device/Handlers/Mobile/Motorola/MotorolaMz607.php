@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Alcatel;
+namespace Browscap\Device\Handlers\Mobile\Motorola;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\Alcatel;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: MotorolaXoom2.php 285 2012-10-03 21:38:10Z tmu $
  */
-
-use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: MotorolaXoom2.php 285 2012-10-03 21:38:10Z tmu $
  */
-class AlcatelOneTouch991 extends AlcatelBase
+class MotorolaMz607 extends MotorolaMz616
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'OT-991';
+    protected $_device = 'MZ607 - Xoom 2 Media Edition';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +48,11 @@ class AlcatelOneTouch991 extends AlcatelBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991'))) {
+        if (!$this->_utils->checkIfContains(array('XOOM 2 ME', 'MZ607'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('MZ608'))) {
             return false;
         }
         

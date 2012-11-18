@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Alcatel;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Alcatel;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: SonyEricssonU1i.php 286 2012-10-06 23:47:15Z tmu $
  */
 
-use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,14 @@ use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: SonyEricssonU1i.php 286 2012-10-06 23:47:15Z tmu $
  */
-class AlcatelOneTouch991 extends AlcatelBase
+class SonyEricssonU1i extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'OT-991';
+    protected $_device = 'U1i';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,11 @@ class AlcatelOneTouch991 extends AlcatelBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991'))) {
+        if (!$this->_utils->checkIfContains('SonyEricssonU1i')) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('SonyEricssonU1iv')) {
             return false;
         }
         

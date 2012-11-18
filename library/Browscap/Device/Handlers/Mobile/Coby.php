@@ -62,6 +62,7 @@ class Coby extends GeneralMobile
             'MID1126',
             'MID7015',
             'MID7022',
+            'MID8127',
             'MID8128'
         );
         

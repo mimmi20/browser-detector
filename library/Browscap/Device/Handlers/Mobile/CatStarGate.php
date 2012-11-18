@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: CatTablet.php 286 2012-10-06 23:47:15Z tmu $
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,19 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: CatTablet.php 286 2012-10-06 23:47:15Z tmu $
  */
-class Toshiba extends GeneralMobile
+class CatStarGate extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'general Toshiba';
+    protected $_device = 'StarGate';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Toshiba';
+    protected $_manufacturer = 'Cat';
     
     /**
      * Final Interceptor: Intercept
@@ -55,21 +55,23 @@ class Toshiba extends GeneralMobile
             return false;
         }
         
-        $ToshibaPhones = array(
-            'Toshiba-',
-            'Toshiba/',
-            'Toshiba',
-            'AT100',
-            'AT200',
-            'AT300',
-            'TSB_CLOUD_COMPANION;FOLIO_AND_A'
-        );
-        
-        if (!$this->_utils->checkIfContains($ToshibaPhones)) {
+        if (!$this->_utils->checkIfContains(array('Cat StarGate'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -83,24 +85,13 @@ class Toshiba extends GeneralMobile
     }
     
     /**
-     * detects the device name from the given user agent
+     * returns TRUE if the device is a tablet
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return boolean
      */
-    public function detectDevice()
+    public function isTablet()
     {
-        $chain = new \Browscap\Device\Chain(
-            true, 
-            null, 
-            __DIR__ . DIRECTORY_SEPARATOR . 'Toshiba' . DIRECTORY_SEPARATOR, 
-            __NAMESPACE__ . '\\Toshiba'
-        );
-        $chain->setDefaultHandler($this);
-        $chain->setUserAgent($this->_useragent);
-        
-        return $chain->detect();
+        return false;
     }
     
     /**
@@ -121,21 +112,10 @@ class Toshiba extends GeneralMobile
      */
     public function detectOs()
     {
-        $os = array(
-            'Android',
-            'Bada',
-            'Brew',
-            'Java',
-            'Symbianos',
-            'WindowsMobileOs',
-            'WindowsPhoneOs'
-        );
+        $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Os\Chain(false, $os);
-        $chain->setLogger($this->_logger);
-        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
-        $chain->setUseragent($this->_useragent);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

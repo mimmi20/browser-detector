@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Motorola;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGtN7105.php 286 2012-10-06 23:47:15Z tmu $
  */
+
+use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,14 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: SamsungGtN7105.php 286 2012-10-06 23:47:15Z tmu $
  */
-class MotorolaXoomMz601 extends MotorolaXoom
+class SamsungGtn7105 extends SamsungBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MZ601';
+    protected $_device = 'GT-N7105';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class MotorolaXoomMz601 extends MotorolaXoom
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MZ601')) {
+        if (!$this->_utils->checkIfContains('GT-N7105')) {
             return false;
         }
         
@@ -63,5 +65,17 @@ class MotorolaXoomMz601 extends MotorolaXoom
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

@@ -36,11 +36,6 @@ class HuaweiVodafone845 extends HuaweiBase
      * @var string the detected device
      */
     protected $_device = 'Vodafone 858';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Huawei';
     
     /**
      * Final Interceptor: Intercept

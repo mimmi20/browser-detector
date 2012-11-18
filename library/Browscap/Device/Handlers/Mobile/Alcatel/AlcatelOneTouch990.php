@@ -35,7 +35,7 @@ class AlcatelOneTouch990 extends AlcatelBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'One Touch 990';
+    protected $_device = 'OT-990';
     
     /**
      * Final Interceptor: Intercept

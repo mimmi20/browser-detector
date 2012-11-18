@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Odys;
  * @version    SVN: $Id: OdysLoox.php 286 2012-10-06 23:47:15Z tmu $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\Odys as OdysBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,17 +30,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: OdysLoox.php 286 2012-10-06 23:47:15Z tmu $
  */
-class OdysLoox extends GeneralMobile
+class OdysLoox extends OdysBase
 {
     /**
      * @var string the detected device
      */
     protected $_device = 'Loox';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Odys';
     
     /**
      * Final Interceptor: Intercept
@@ -82,5 +77,15 @@ class OdysLoox extends GeneralMobile
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
 }

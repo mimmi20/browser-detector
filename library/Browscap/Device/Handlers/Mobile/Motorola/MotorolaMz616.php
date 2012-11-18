@@ -33,7 +33,7 @@ class MotorolaMz616 extends MotorolaXoom
     /**
      * @var string the detected device
      */
-    protected $_device = 'MotoMZ616';
+    protected $_device = 'MZ616 - Xoom 2 3G';
     
     /**
      * Final Interceptor: Intercept

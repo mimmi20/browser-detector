@@ -68,6 +68,7 @@ class Sunbird extends Firefox
             'OneRiot',
             // using also the Gecko rendering engine
             'Camino',
+            'CometBird',
             'Fennec',
             'Flock',
             'Galeon',
@@ -76,6 +77,7 @@ class Sunbird extends Firefox
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'Midori',
             'Navigator',
             'Opera',
             'PaleMoon',

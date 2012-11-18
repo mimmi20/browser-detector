@@ -116,7 +116,8 @@ class BlackBerry extends GeneralMobile
         $os = array(
             'RimOs',
             'RimTablet',
-            'WindowsMobileOs'
+            'WindowsMobileOs',
+            'Android'
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);

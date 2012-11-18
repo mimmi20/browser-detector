@@ -15,68 +15,62 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: ComodoDragon.php 344 2012-11-11 13:42:35Z tmu $
  */
 
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
- * FirefoxUserAgentHandler
+ * ChromeUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: ComodoDragon.php 344 2012-11-11 13:42:35Z tmu $
  */
-class Kmeleon extends BrowserHandler
+class ComodoIceDragon extends Firefox
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'K-Meleon';
+    protected $_browser = 'Comodo IceDragon';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Comodo Internet Security';
     
     /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
-    public function canHandle() 
+    public function canHandle()
     {
         if ('' == $this->_useragent) {
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+        if (!$this->_utils->checkIfContainsAll(array('Gecko', 'Firefox', 'IceDragon'))) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('K-Meleon')) {
-            return false;
-        }
-        
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'Camino',
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Flock',
             'Galeon',
             'Lunascape',
-            'Opera',
-            'Navigator',
+            'Iron',
+            'Maemo',
             'PaleMoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            'Firefox'
+            'Rockmelt'
         );
         
-        if ($this->_utils->checkIfStartsWith($isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -90,7 +84,7 @@ class Kmeleon extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/K\-Meleon\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/IceDragon\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
@@ -107,7 +101,7 @@ class Kmeleon extends BrowserHandler
      */
     public function getWeight()
     {
-        return 3;
+        return 6;
     }
     
     /**

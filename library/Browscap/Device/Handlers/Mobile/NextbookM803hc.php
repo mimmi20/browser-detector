@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Alcatel;
+namespace Browscap\Device\Handlers\Mobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Alcatel;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
  */
 
-use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
+use Browscap\Device\Handlers\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,19 @@ use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
  */
-class AlcatelOneTouch991 extends AlcatelBase
+class NextbookM803hc extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'OT-991';
+    protected $_device = 'M803HC';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Nextbook';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +55,23 @@ class AlcatelOneTouch991 extends AlcatelBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991'))) {
+        if (!$this->_utils->checkIfContains('DATAM803HC')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -68,14 +85,37 @@ class AlcatelOneTouch991 extends AlcatelBase
     }
     
     /**
-     * detects the device name from the given user agent
+     * returns TRUE if the device has a specific Operating System
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return boolean
      */
-    public function detectDevice()
+    public function hasOs()
     {
-        return $this;
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Os\Handlers\Android();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
 }

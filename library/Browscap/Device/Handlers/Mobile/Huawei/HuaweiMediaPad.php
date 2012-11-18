@@ -36,11 +36,6 @@ class HuaweiMediaPad extends HuaweiBase
      * @var string the detected device
      */
     protected $_device = 'MediaPad';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Huawei';
     
     /**
      * Final Interceptor: Intercept

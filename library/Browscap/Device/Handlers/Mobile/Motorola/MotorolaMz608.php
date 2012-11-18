@@ -28,12 +28,12 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id: MotorolaXoom2.php 285 2012-10-03 21:38:10Z tmu $
  */
-class MotorolaXoom2Me extends MotorolaMz616
+class MotorolaMz608 extends MotorolaMz616
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Xoom2 ME';
+    protected $_device = 'MZ608 - XOOM 2 Media Edition 3G';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class MotorolaXoom2Me extends MotorolaMz616
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('XOOM 2 ME'))) {
+        if (!$this->_utils->checkIfContainsAll(array('XOOM 2 ME', 'MZ608'))) {
             return false;
         }
         

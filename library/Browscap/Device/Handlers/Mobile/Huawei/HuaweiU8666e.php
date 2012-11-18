@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Motorola;
+namespace Browscap\Device\Handlers\Mobile\Huawei;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HuaweiU8666E.php 261 2012-07-08 07:30:46Z  $
  */
+
+use Browscap\Device\Handlers\Mobile\Huawei as HuaweiBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,19 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: HuaweiU8666E.php 261 2012-07-08 07:30:46Z  $
  */
-class MotorolaXoomMz604 extends MotorolaXoom
+class HuaweiU8666e extends HuaweiBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MZ604';
+    protected $_device = 'U8666E';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Huawei';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +55,7 @@ class MotorolaXoomMz604 extends MotorolaXoom
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MZ604')) {
+        if (!$this->_utils->checkIfContains(array('HuaweiU8666E', 'U8666E'))) {
             return false;
         }
         
@@ -63,5 +70,27 @@ class MotorolaXoomMz604 extends MotorolaXoom
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return false;
     }
 }

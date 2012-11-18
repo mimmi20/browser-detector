@@ -59,7 +59,7 @@ class Mid extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('MIDP', 'MID70', 'Build/MID', 'MID1125', 'MID1126'))) {
+        if ($this->_utils->checkIfContains(array('MIDP', 'MID70', 'Build/MID', 'MID1125', 'MID1126', 'MID8127'))) {
             return false;
         }
         

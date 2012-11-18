@@ -108,4 +108,14 @@ class MultipadPmp5080b extends GeneralMobile
         
         return $handler->detect();
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

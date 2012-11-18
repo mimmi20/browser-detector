@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Alcatel;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Alcatel;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: SamsungGtn8013.php 286 2012-10-06 23:47:15Z tmu $
  */
 
-use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
+use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,14 @@ use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOneTouch991.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: SamsungGtn8013.php 286 2012-10-06 23:47:15Z tmu $
  */
-class AlcatelOneTouch991 extends AlcatelBase
+class SamsungGtn8013 extends SamsungBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'OT-991';
+    protected $_device = 'GT-N8013';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class AlcatelOneTouch991 extends AlcatelBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991'))) {
+        if (!$this->_utils->checkIfContains('GT-N8013')) {
             return false;
         }
         
@@ -65,6 +65,16 @@ class AlcatelOneTouch991 extends AlcatelBase
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
     
     /**

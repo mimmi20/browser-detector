@@ -36,11 +36,6 @@ class HuaweiU8600 extends HuaweiBase
      * @var string the detected device
      */
     protected $_device = 'U8600';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Huawei';
     
     /**
      * Final Interceptor: Intercept
