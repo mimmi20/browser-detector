@@ -35,7 +35,7 @@ class MaemoBrowser extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'unknown';
+    protected $_browser = 'Maemo Browser';
     
     /**
      * Returns true if this handler can handle the given user agent

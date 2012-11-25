@@ -55,7 +55,7 @@ class Sunbird extends Firefox
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Gecko', 'Sunbird'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Gecko', 'Sunbird'))) {
             return false;
         }
         
@@ -69,18 +69,24 @@ class Sunbird extends Firefox
             // using also the Gecko rendering engine
             'Camino',
             'CometBird',
+            'Epiphany',
             'Fennec',
             'Flock',
             'Galeon',
+            'Google Earth',
             'Iceweasel',
             'K-Meleon',
+            'Konqueror',
             'Lunascape',
             'Maemo',
             'Maxthon',
             'Midori',
+            'Mozad',
             'Navigator',
+            'Netscape',
             'Opera',
             'PaleMoon',
+            'PhantomJS',
             'Qt',
             'SeaMonkey',
             // other Browsers
@@ -127,7 +133,7 @@ class Sunbird extends Firefox
      */
     public function getWeight()
     {
-        return 38;
+        return 4;
     }
     
     /**

@@ -103,4 +103,18 @@ class PlayStationPortable extends SonyBase
     {
         return true;
     }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Browser\Handler
+     */
+    public function detectBrowser()
+    {
+        $browser = new \Browscap\Browser\Handlers\Mobile\NetFront();
+        $browser->setUserAgent($this->_useragent);
+        
+        return $browser->detect();
+    }
 }

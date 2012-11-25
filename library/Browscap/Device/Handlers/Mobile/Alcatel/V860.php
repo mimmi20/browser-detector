@@ -35,7 +35,7 @@ class V860 extends AlcatelBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'V860';
+    protected $_device = 'v860';
     
     /**
      * Final Interceptor: Intercept

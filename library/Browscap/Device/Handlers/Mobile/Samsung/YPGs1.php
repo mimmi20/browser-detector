@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Asus;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Asus;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: YPG1.php 286 2012-10-06 23:47:15Z tmu $
  */
 
-use Browscap\Device\Handlers\Mobile\Asus as AsusBase;
+use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +28,14 @@ use Browscap\Device\Handlers\Mobile\Asus as AsusBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: YPG1.php 286 2012-10-06 23:47:15Z tmu $
  */
-class SliderSl101 extends AsusBase
+class YPGs1 extends SamsungBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'SL101';
+    protected $_device = 'YP-GS1';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class SliderSl101 extends AsusBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Slider SL101')) {
+        if (!$this->_utils->checkIfContains('YP-GS1')) {
             return false;
         }
         

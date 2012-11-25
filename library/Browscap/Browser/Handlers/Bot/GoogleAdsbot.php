@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\Desktop;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,53 +15,32 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Googlebot.php 344 2012-11-11 13:42:35Z tmu $
  */
 
-/**
- * Handler Base class
- */
-use Browscap\Browser\Handler as BrowserHandler;
+use \Browscap\Browser\Handlers\General\Google;
 
 /**
- * MSIEAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Googlebot.php 344 2012-11-11 13:42:35Z tmu $
  */
-class MicrosoftInternetExplorer extends BrowserHandler
+class GoogleAdsbot extends Google
 {
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'Internet Explorer';
+    protected $_browser = 'Google AdsBot';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'microsoft';
-    
-    private $_patterns = array(
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 10\.0.*/' => '10.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 9\.0.*/'  => '9.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'  => '8.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'  => '7.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'  => '6.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'  => '5.5',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/' => '5.23',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.22.*/' => '5.22',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/' => '5.01',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'  => '5.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/' => '4.01',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.0.*/'  => '4.0',
-        '/Mozilla\/.*\(.*MSIE 3\..*/'          => '3.0',
-        '/Mozilla\/.*\(.*MSIE 2\..*/'          => '2.0',
-        '/Mozilla\/.*\(.*MSIE 1\..*/'          => '1.0'
-    );
+    protected $_manufacturer = 'Google';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -74,58 +53,11 @@ class MicrosoftInternetExplorer extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
+        if (!$this->_utils->checkIfStartsWith('AdsBot-Google', true)) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MSIE')) {
-            return false;
-        }
-        
-        $isNotReallyAnIE = array(
-            'Gecko',
-            'Presto',
-            'Webkit',
-            'KHTML',
-            // using also the Trident rendering engine
-            'Avant Browser',
-            'Crazy Browser',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Maxthon',
-            'MyIE',
-            'Opera',
-            'PaleMoon',
-            // other Browsers
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Firefox',
-            'MSIECrawler',
-            // Fakes
-            'Mac; Mac OS '
-        );
-        
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)
-            && !$this->_utils->checkIfContains('Bitte Mozilla Firefox verwenden')
-        ) {
-            return false;
-        }
-        
-        foreach (array_keys($this->_patterns) as $pattern) {
-            if (preg_match($pattern, $this->_useragent)) {
-                return true;
-            }
-        }
-        
-        return false;
+        return true;
     }
     
     /**
@@ -135,18 +67,18 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/AdsBot-Google\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->_version = $matches[1];
             return;
         }
         
-        foreach ($this->_patterns as $pattern => $version) {
-            if (preg_match($pattern, $this->_useragent)) {
-                $this->_version = $version;
-                return;
-            }
+        $doMatch = preg_match('/AdsBot-Google-Mobile\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
         }
         
         $this->_version = '';
@@ -159,7 +91,32 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function getWeight()
     {
-        return 72994;
+        return parent::getWeight() + 1;
+    }
+    
+    /**
+     * returns TRUE if the browser has a specific rendering engine
+     *
+     * @return boolean
+     */
+    public function hasEngine()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function getEngine()
+    {
+        $handler = new \Browscap\Engine\Handlers\Unknown();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
     
     /**
@@ -209,7 +166,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsBackgroundSounds()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -229,7 +186,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsVbScript()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -249,7 +206,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function supportsActivexControls()
     {
-        return true;
+        return false;
     }
     
     /**
@@ -259,10 +216,6 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function isBanned()
     {
-        if ($this->_version <= 6) {
-            return true;
-        }
-        
         return false;
     }
     
@@ -283,31 +236,36 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function isCrawler()
     {
-        return false;
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
         return true;
     }
     
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns TRUE if the browser is a Syndication Reader
      *
-     * @return null|\Browscap\Os\Handler
+     * @return boolean
      */
-    public function getEngine()
+    public function isTranscoder()
     {
-        $handler = new \Browscap\Engine\Handlers\Trident();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports RSS Feeds
+     *
+     * @return boolean
+     */
+    public function isRssSupported()
+    {
+        return false;
+    }
+    
+    /**
+     * returns TRUE if the browser supports PDF documents
+     *
+     * @return boolean
+     */
+    public function isPdfSupported()
+    {
+        return true;
     }
 }

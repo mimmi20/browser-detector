@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Samsung;
+namespace Browscap\Os\Handlers;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,34 +15,35 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Gentoo.php 293 2012-10-10 19:48:29Z tmu $
  */
 
-use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
-
 /**
- * CatchAllUserAgentHandler
+ * MSIEAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: Gentoo.php 293 2012-10-10 19:48:29Z tmu $
  */
-class SamsungGti9300 extends SamsungBase
+class Gentoo extends Linux
 {
     /**
-     * @var string the detected device
+     * @var string the detected platform
      */
-    protected $_device = 'GT-I9300';
+    protected $_name = 'Gentoo Linux';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * @var string the manufacturer/creator of this OS
+     */
+    protected $_manufacturer = 'unknown';
+    
+    /**
+     * Returns true if this handler can handle the given $useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -50,7 +51,7 @@ class SamsungGti9300 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('GT-I9300', 'GT-i9300'))) {
+        if (!$this->_utils->checkIfContains('Gentoo', true)) {
             return false;
         }
         
@@ -58,24 +59,14 @@ class SamsungGti9300 extends SamsungBase
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * detects the browser version from the given user agent
      *
-     * @return integer
+     * @param string $this->_useragent
+     *
+     * @return string
      */
-    public function getWeight()
+    protected function _detectVersion()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
+        $this->_version = '';
     }
 }

@@ -62,11 +62,15 @@ class Asus extends GeneralMobile
             'eee_701'
         );
         
-        if ($this->_utils->checkIfContains($asusPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains($asusPhones)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains(array('IdeaTab'))) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

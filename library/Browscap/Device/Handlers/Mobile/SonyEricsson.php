@@ -65,6 +65,7 @@ class SonyEricsson extends GeneralMobile
             'lt18i',
             'lt22i',
             'lt26i',
+            'lt30p',
             'mk16i',
             'mt11i',
             'mt15i',

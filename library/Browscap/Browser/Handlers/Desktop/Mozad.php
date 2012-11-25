@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Desktop;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,39 +15,32 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id: Mozad.php 344 2012-11-11 13:42:35Z tmu $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Browser\Handler as BrowserHandler;
 
 /**
- * CatchAllUserAgentHandler
+ * FirefoxUserAgentHandler
  *
  *
  * @category   WURFL
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id: Mozad.php 344 2012-11-11 13:42:35Z tmu $
  */
-class Arnova7CG2 extends GeneralMobile
+class Mozad extends BrowserHandler
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = '7C G2';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Arnova';
+    protected $_browser = 'Mozad';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -55,7 +48,7 @@ class Arnova7CG2 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('AN7CG2')) {
+        if (!$this->_utils->checkIfContains('Mozad')) {
             return false;
         }
         
@@ -63,15 +56,20 @@ class Arnova7CG2 extends GeneralMobile
     }
     
     /**
-     * detects the device name from the given user agent
+     * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return string
      */
-    public function detectDevice()
+    protected function _detectVersion()
     {
-        return $this;
+        $doMatch = preg_match('/Mozad\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -81,41 +79,31 @@ class Arnova7CG2 extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 2;
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * returns TRUE if the browser has a specific rendering engine
      *
      * @return boolean
      */
-    public function hasOs()
+    public function hasEngine()
     {
         return true;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function detectOs()
+    public function getEngine()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Engine\Handlers\Gecko();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

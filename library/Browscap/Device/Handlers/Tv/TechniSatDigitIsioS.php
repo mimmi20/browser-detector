@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Tv;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id: SonyDtv115.php 285 2012-10-03 21:38:10Z tmu $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,19 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id: SonyDtv115.php 285 2012-10-03 21:38:10Z tmu $
  */
-class Arnova7CG2 extends GeneralMobile
+class TechniSatDigitIsioS extends GeneralTv
 {
     /**
      * @var string the detected device
      */
-    protected $_device = '7C G2';
+    protected $_device = 'DIGIT ISIO S';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Arnova';
+    protected $_manufacturer = 'TechniSat';
     
     /**
      * Final Interceptor: Intercept
@@ -55,7 +55,7 @@ class Arnova7CG2 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('AN7CG2')) {
+        if (!$this->_utils->checkIfContains('SonyDTV115')) {
             return false;
         }
         
@@ -81,7 +81,7 @@ class Arnova7CG2 extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 5;
     }
     
     /**
@@ -102,7 +102,7 @@ class Arnova7CG2 extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Os\Handlers\LinuxTv();
         $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
@@ -110,12 +110,27 @@ class Arnova7CG2 extends GeneralMobile
     }
     
     /**
-     * returns TRUE if the device is a tablet
+     * returns TRUE if the device has a specific Browser
      *
      * @return boolean
      */
-    public function isTablet()
+    public function hasBrowser()
     {
         return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $handler = new \Browscap\Browser\Handlers\Tv\InettvBrowser();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

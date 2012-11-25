@@ -69,6 +69,7 @@ class Linux extends OsHandler
             'mint',
             'suse',
             'fedora',
+            'gentoo',
             'redhat',
             'red hat',
             'slackware',

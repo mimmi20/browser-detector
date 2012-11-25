@@ -35,7 +35,7 @@ class Ucweb extends BrowserHandler
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'UCWEB';
+    protected $_browser = 'UCWeb';
     
     /**
      * Returns true if this handler can handle the given user agent

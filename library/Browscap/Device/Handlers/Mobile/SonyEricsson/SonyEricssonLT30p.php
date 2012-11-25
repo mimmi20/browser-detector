@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,10 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id: SonyEricssonLT30p.php 286 2012-10-06 23:47:15Z tmu $
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,19 +28,19 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id: SonyEricssonLT30p.php 286 2012-10-06 23:47:15Z tmu $
  */
-class Arnova7CG2 extends GeneralMobile
+class SonyEricssonLT30p extends SonyBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = '7C G2';
+    protected $_device = 'LT30p';
 
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'Arnova';
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept
@@ -55,23 +55,11 @@ class Arnova7CG2 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('AN7CG2')) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonLT30p', 'LT30p'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**
@@ -85,37 +73,14 @@ class Arnova7CG2 extends GeneralMobile
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * detects the device name from the given user agent
      *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * @param string $userAgent
      *
-     * @return null|\Browscap\Os\Handler
+     * @return StdClass
      */
-    public function detectOs()
+    public function detectDevice()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
+        return $this;
     }
 }

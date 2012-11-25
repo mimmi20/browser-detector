@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Coby;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\Coby;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID1125.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: Awesomebot.php 332 2012-11-04 17:48:59Z tmu $
  */
-
-use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,21 +26,19 @@ use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID1125.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id: Awesomebot.php 332 2012-11-04 17:48:59Z tmu $
  */
-class MID1125 extends CobyBase
+class AlcoholSearch extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'MID1125';
+    protected $_browser = 'Alcohol Search';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -50,7 +46,7 @@ class MID1125 extends CobyBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MID1125')) {
+        if (!$this->_utils->checkIfContains('Alcohol Search')) {
             return false;
         }
         
@@ -58,15 +54,13 @@ class MID1125 extends CobyBase
     }
     
     /**
-     * detects the device name from the given user agent
+     * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return string
      */
-    public function detectDevice()
+    protected function _detectVersion()
     {
-        return $this;
+        $this->_version = '';
     }
     
     /**
@@ -76,16 +70,6 @@ class MID1125 extends CobyBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
+        return 3;
     }
 }

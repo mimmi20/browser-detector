@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Coby;
+namespace Browscap\Device\Handlers\Mobile\Htc;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\Coby;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID1125.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
-
-use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,14 +26,14 @@ use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID1125.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
-class MID1125 extends CobyBase
+class HtcX310e extends HtcTitan
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'MID1125';
+    protected $_device = 'X310e';
     
     /**
      * Final Interceptor: Intercept
@@ -50,23 +48,11 @@ class MID1125 extends CobyBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MID1125')) {
+        if (!$this->_utils->checkIfContains(array('HTC; TITAN X310e'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**
@@ -77,15 +63,5 @@ class MID1125 extends CobyBase
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

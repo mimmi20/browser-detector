@@ -61,6 +61,10 @@ class Qt extends BrowserHandler
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('Arora'))) {
+            return false;
+        }
+        
         return true;
     }
     
