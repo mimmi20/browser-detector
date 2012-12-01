@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungGtS5839i.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungGtS5839i.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class SamsungGts5839i extends SamsungGts5830
 {

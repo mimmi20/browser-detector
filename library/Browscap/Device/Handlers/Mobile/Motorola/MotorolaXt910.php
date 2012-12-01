@@ -50,7 +50,7 @@ class MotorolaXt910 extends MotorolaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MOT-XT910')) {
+        if (!$this->_utils->checkIfContains(array('MOT-XT910', 'XT910'))) {
             return false;
         }
         

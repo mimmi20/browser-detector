@@ -50,7 +50,7 @@ class HuaweiMediaPad extends HuaweiBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HUAWEI MediaPad')) {
+        if (!$this->_utils->checkIfContains(array('HUAWEI MediaPad', 'MediaPad'))) {
             return false;
         }
         

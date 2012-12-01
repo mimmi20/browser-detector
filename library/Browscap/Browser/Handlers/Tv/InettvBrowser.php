@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Tv;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: InettvBrowser.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handlers\General\InettvBrowser as InettvBrowserBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\InettvBrowser as InettvBrowserBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: InettvBrowser.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 class InettvBrowser extends InettvBrowserBase
 {

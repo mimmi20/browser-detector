@@ -48,7 +48,7 @@ class HtcA510e extends HtcA510
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Wildfire S A510e', 'HTC_WildfireS_A510e'))) {
+        if (!$this->_utils->checkIfContains(array('HTC Wildfire S A510e', 'HTC_WildfireS_A510e', 'Wildfire S A510e'))) {
             return false;
         }
         

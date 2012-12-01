@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcSalsaC510e.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcSalsaC510e.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 class HtcSalsaC510e extends HtcSalsa
 {

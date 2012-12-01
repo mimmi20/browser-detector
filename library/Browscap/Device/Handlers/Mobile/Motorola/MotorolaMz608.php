@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MotorolaXoom2.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MotorolaXoom2.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class MotorolaMz608 extends MotorolaMz616
 {

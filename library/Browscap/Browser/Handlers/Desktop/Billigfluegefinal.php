@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Billigfluegefinal.php 305 2012-10-17 21:34:24Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handlers\General\Billigfluegefinal as BilligfluegefinalBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\Billigfluegefinal as BilligfluegefinalBase
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Billigfluegefinal.php 305 2012-10-17 21:34:24Z tmu $
+ * @version    SVN: $Id$
  */
 class Billigfluegefinal extends BilligfluegefinalBase
 {

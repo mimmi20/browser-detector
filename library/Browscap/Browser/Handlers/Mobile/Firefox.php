@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Firefox.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handlers\General\Firefox as FirefoxBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\Firefox as FirefoxBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Firefox.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class Firefox extends FirefoxBase
 {

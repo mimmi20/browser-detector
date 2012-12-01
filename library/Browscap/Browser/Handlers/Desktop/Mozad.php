@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Mozad.php 344 2012-11-11 13:42:35Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Mozad.php 344 2012-11-11 13:42:35Z tmu $
+ * @version    SVN: $Id$
  */
 class Mozad extends BrowserHandler
 {

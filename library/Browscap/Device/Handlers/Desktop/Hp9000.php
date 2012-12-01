@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: EeePc.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\GeneralDesktop;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\GeneralDesktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: EeePc.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class Hp9000 extends GeneralDesktop
 {

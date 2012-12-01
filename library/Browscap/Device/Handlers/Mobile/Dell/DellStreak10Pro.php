@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Dell;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: DellStreak7.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Device\Handlers\Mobile\Dell;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: DellStreak7.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class DellStreak10Pro extends DellStreak
 {

@@ -59,6 +59,10 @@ class AsusTransformerPadTf300T extends AsusBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('ASUS Transformer Pad TF300TG'))) {
+            return false;
+        }
+        
         return true;
     }
     

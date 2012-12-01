@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonMT27i.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonMT27i.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 class SonyEricssonMT27i extends SonyBase
 {

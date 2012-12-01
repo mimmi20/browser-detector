@@ -55,7 +55,7 @@ class HpTouchpad extends HpBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('TouchPad')) {
+        if (!$this->_utils->checkIfContains(array('TouchPad', 'Touchpad'))) {
             return false;
         }
         

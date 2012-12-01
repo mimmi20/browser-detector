@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Odys;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: OdysLoox.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Odys as OdysBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Odys as OdysBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: OdysLoox.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class OdysLoox extends OdysBase
 {

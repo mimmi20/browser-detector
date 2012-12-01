@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcWildfireSLs extends HtcWildfire
+class HtcWildfireSLs extends HtcA510
 {
     /**
      * @var string the detected device

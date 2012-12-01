@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Little%20Bookmark%20Box.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 
 use \Browscap\Browser\Handlers\General\LittleBookmarkBox as AppBase;
@@ -28,7 +28,7 @@ use \Browscap\Browser\Handlers\General\LittleBookmarkBox as AppBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Little%20Bookmark%20Box.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 class LittleBookmarkBox extends AppBase
 {

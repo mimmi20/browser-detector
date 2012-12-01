@@ -60,6 +60,11 @@ class WindowsMobileOs extends OsHandler
             return false;
         }
         
+        $doMatch = preg_match('/Windows Phone ([\d\.]+)/', $this->_useragent, $matches);
+        if ($doMatch && $matches[1] >= 7) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -81,6 +86,12 @@ class WindowsMobileOs extends OsHandler
             }
             
             $this->_version = '6.0';
+            return;
+        }
+        
+        $doMatch = preg_match('/Windows Phone ([\d\.]+)/', $this->_useragent, $matches);
+        if ($doMatch) {
+            $this->_version = $matches[1];
             return;
         }
         

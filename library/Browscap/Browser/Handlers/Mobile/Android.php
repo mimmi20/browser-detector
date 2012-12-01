@@ -61,17 +61,18 @@ class Android extends BrowserHandler
         }
         
         $noAndroid = array(
-            'NokiaBrowser', 
             'BlackBerry', 
             'Blackberry', 
-            'Opera', 
-            'Firefox', 
+            'Chrome', 
+            'Dalvik', 
             'Fennec', 
+            'Firefox', 
             'iPad', 
             'iPhone', 
-            'Dalvik', 
-            'Chrome', 
-            'RIM Tablet', 
+            'NokiaBrowser', 
+            'Opera', 
+            'RIM Tablet',
+            'Silk',
             'WeTab-Browser'
         );
         

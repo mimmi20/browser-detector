@@ -55,7 +55,7 @@ class Zte extends GeneralMobile
             return false;
         }
         
-        $ztePhones = array('zte', 'base tab', 'base lutea');
+        $ztePhones = array('zte', 'base tab', 'base lutea', 'racerii');
         
         if ($this->_utils->checkIfContains($ztePhones, true)) {
             return true;

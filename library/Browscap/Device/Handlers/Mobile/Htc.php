@@ -55,6 +55,10 @@ class Htc extends GeneralMobile
             return false;
         }
         
+        if ($this->_utils->checkIfContains('WOHTC')) {
+            return false;
+        }
+        
         $htcPhones = array(
             'HTC',
             '7 Trophy',
@@ -64,13 +68,16 @@ class Htc extends GeneralMobile
             'EVO3D_X515m',
             'HD2',
             'IncredibleS_S710e',
+            'MDA Vario',
             'MDA_Vario_V',
             'myTouch4G',
             'Sensation_4G',
             'SensationXE',
             'SensationXL',
             'Sensation_Z710e',
-            'Xda_Diamond_2'
+            'Xda_Diamond_2',
+            'Wildfire S',
+            'Wildfire S A510e'
         );
         
         if ($this->_utils->checkIfContains($htcPhones)) {

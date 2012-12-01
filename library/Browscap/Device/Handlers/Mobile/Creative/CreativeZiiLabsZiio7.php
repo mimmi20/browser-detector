@@ -35,7 +35,7 @@ class CreativeZiiLabsZiio7 extends CreativeBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'ZiiLABS ZiiO 7';
+    protected $_device = 'ZiiO7';
     
     /**
      * Final Interceptor: Intercept

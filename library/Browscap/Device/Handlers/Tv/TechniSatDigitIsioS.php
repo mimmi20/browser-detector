@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Tv;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyDtv115.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\GeneralTv;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\GeneralTv;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyDtv115.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class TechniSatDigitIsioS extends GeneralTv
 {
@@ -55,7 +55,7 @@ class TechniSatDigitIsioS extends GeneralTv
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SonyDTV115')) {
+        if (!$this->_utils->checkIfContains('TechniSat DIGIT ISIO S')) {
             return false;
         }
         

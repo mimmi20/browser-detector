@@ -54,6 +54,10 @@ class SamsungGts5230 extends SamsungBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('SAMSUNG-GT-S5230W', 'GT-S5230W'))) {
+            return false;
+        }
+        
         return true;
     }
     

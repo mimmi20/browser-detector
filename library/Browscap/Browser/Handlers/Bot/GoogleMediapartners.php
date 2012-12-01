@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Bot;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GoogleAppEngine.php 293 2012-10-10 19:48:29Z tmu $
+ * @version    SVN: $Id$
  */
 
 use \Browscap\Browser\Handlers\General\Google;
@@ -28,7 +28,7 @@ use \Browscap\Browser\Handlers\General\Google;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GoogleAppEngine.php 293 2012-10-10 19:48:29Z tmu $
+ * @version    SVN: $Id$
  */
 class GoogleMediapartners extends Google
 {

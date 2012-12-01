@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Lenovo;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class LenovoIdeaPadA1 extends LenovoBase
+class LenovoIdeaPadA1 extends IdeaTab
 {
     /**
      * @var string the detected device

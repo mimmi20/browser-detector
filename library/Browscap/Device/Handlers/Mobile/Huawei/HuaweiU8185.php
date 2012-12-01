@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Huawei;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HuaweiU8185.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Huawei as HuaweiBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Huawei as HuaweiBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HuaweiU8185.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class HuaweiU8185 extends HuaweiBase
 {

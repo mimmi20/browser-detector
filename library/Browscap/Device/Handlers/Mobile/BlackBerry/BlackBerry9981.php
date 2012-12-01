@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\BlackBerry;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: BlackBerry9981.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\BlackBerry as BlackBerryBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\BlackBerry as BlackBerryBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: BlackBerry9981.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class BlackBerry9981 extends BlackBerryBase
 {

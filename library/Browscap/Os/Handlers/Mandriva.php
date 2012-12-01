@@ -67,20 +67,6 @@ class Mandriva extends Linux
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/Mandriva\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/Mandriva Linux\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
         $this->_version = '';
     }
 }

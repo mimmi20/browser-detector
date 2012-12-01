@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Alcatel;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOt980.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AlcatelOt980.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class V860 extends AlcatelBase
 {

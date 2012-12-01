@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcDesireZ.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,9 +26,9 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcDesireZ.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
-class HtcDesireV extends HtcDesire
+class HtcDesireV extends HtcA8181
 {
     /**
      * @var string the detected device

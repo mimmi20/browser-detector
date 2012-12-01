@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID7022.php 264 2012-07-17 06:46:00Z  $
+ * @version    SVN: $Id$
  */
 class EpadP7901a extends GeneralMobile
 {

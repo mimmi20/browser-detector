@@ -201,6 +201,13 @@ abstract class Handler implements MatcherInterface
      */
     protected function _detectBits()
     {
+        // 32 bits on 64 bit system
+        if ($this->_utils->checkIfContains(array('i686 on x86_64'))) {
+            $this->_bits = '32';
+            
+            return $this;
+        }
+        
         // 64 bits
         if ($this->_utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
             $this->_bits = '64';

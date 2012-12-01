@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Asus;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AsusTransformerPadTF700T.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Asus as AsusBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Asus as AsusBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: AsusTransformerPadTF700T.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class AsusTransformerPadTf700T extends AsusBase
 {

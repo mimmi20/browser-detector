@@ -51,7 +51,7 @@ class Android extends Linux
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'Bada'))) {
+        if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'Bada', 'MeeGo'))) {
             return false;
         }
         

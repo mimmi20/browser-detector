@@ -87,6 +87,13 @@ class Webkit extends EngineHandler
             return;
         }
         
+        $doMatch = preg_match('/Browser\/AppleWebKit([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
         $this->_version = '';
     }
     

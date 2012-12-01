@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Qt.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handlers\General\Qt as QtBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\Qt as QtBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Qt.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 class Qt extends QtBase
 {

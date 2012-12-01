@@ -16,7 +16,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Phantom.php 292 2012-10-08 21:37:16Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -29,7 +29,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Phantom.php 292 2012-10-08 21:37:16Z tmu $
+ * @version    SVN: $Id$
  */
 class Phantom extends BrowserHandler
 {

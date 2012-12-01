@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\General;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Billigfluegefinal.php 305 2012-10-17 21:34:24Z tmu $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Browser\Handlers\General;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Billigfluegefinal.php 305 2012-10-17 21:34:24Z tmu $
+ * @version    SVN: $Id$
  */
 class Billigfluegefinal extends CfNetwork
 {

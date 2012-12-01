@@ -460,6 +460,7 @@ final class Utils
             'Loewe; SL150',
             'dlink.dsm380',
             'IDL-6651N',
+            'KDL40EX720',
             'SonyDTV115',
             'SMART-TV',
             'Viera',

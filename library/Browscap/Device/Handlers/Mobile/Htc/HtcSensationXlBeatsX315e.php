@@ -52,7 +52,8 @@ class HtcSensationXlBeatsX315e extends HtcSensationXlBeats
             'HTC_SensationXL_Beats_X315e', 
             'HTC Sensation XL with Beats Audio X315e', 
             'HTC_X515E',
-            'SensationXL_Beats_X315e'
+            'SensationXL_Beats_X315e',
+            'HTC_DesireHD_Beats_X315e'
         );
         
         if (!$this->_utils->checkIfContains($phones)) {

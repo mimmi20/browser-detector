@@ -15,10 +15,8 @@ namespace Browscap\Device\Handlers\Mobile\Lenovo;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: LenovoIdeaPadK1.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
-
-use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -28,9 +26,9 @@ use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: LenovoIdeaPadK1.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
-class LenovoIdeaPadK1 extends LenovoBase
+class LenovoIdeaPadK1 extends IdeaTab
 {
     /**
      * @var string the detected device

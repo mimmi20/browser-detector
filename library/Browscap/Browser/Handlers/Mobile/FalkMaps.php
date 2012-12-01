@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: FalkMaps.php 282 2012-09-29 18:26:58Z tmu $
+ * @version    SVN: $Id$
  */
 
 use \Browscap\Browser\Handlers\General\FalkMaps as DefaultFalkMaps;
@@ -28,7 +28,7 @@ use \Browscap\Browser\Handlers\General\FalkMaps as DefaultFalkMaps;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: FalkMaps.php 282 2012-09-29 18:26:58Z tmu $
+ * @version    SVN: $Id$
  */
 class FalkMaps extends DefaultFalkMaps
 {

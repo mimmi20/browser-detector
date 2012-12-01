@@ -53,7 +53,7 @@ class Java extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Java', 'J2ME/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform'))) {
+        if (!$this->_utils->checkIfContains(array('Java', 'J2ME/MIDP', 'Profile/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform', 'WAP/OBIGO', 'Obigo/WAP'))) {
             return false;
         }
         
@@ -110,14 +110,17 @@ class Java extends OsHandler
     public function getBrowser()
     {
         $browsers = array(
-            'NetFront',
-            'OperaMini',
-            'Ucweb',
             'DolfinJasmine',
             'Motorola',
-            'TelecaObigo',
+            'NetFront',
+            'Nokia',
+            'NokiaBrowserNg',
+            'NokiaProxyBrowser',
             'Openwave',
-            'Nokia'
+            'OperaMini',
+            'Phantom',
+            'TelecaObigo',
+            'Ucweb'
         );
         
         $browserPath = realpath(

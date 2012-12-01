@@ -54,6 +54,10 @@ class NokiaX2 extends NokiaBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('NokiaX2-')) {
+            return false;
+        }
+        
         return true;
     }
     

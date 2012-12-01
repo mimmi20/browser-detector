@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Google.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handlers\General\GoogleDesktop as GoogleDesktopBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\GoogleDesktop as GoogleDesktopBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Google.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 class GoogleDesktop extends GoogleDesktopBase
 {

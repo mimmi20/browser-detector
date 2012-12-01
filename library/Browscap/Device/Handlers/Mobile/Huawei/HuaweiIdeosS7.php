@@ -54,6 +54,10 @@ class HuaweiIdeosS7 extends HuaweiBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('IDEOS S7 Slim', 'Ideos S7 Slim'))) {
+            return false;
+        }
+        
         return true;
     }
     

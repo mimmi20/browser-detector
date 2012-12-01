@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Tmobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MdaCompact.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Tmobile as TmobileBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Tmobile as TmobileBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MdaCompact.php 263 2012-07-15 18:44:42Z  $
+ * @version    SVN: $Id$
  */
 class TmobileG2Touch extends TmobileBase
 {

@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungGtn8010.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SamsungGtn8010.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class SamsungGtn8010 extends SamsungBase
 {

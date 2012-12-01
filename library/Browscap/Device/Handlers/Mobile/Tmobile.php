@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Tmobile.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\GeneralMobile;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Tmobile.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class Tmobile extends GeneralMobile
 {

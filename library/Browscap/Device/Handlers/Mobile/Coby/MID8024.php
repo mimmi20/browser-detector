@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Coby;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID8024.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Coby as CobyBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MID8024.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class MID8024 extends CobyBase
 {

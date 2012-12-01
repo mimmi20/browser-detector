@@ -35,7 +35,7 @@ class SamsungGts8000 extends SamsungBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'S8000';
+    protected $_device = 'GT-S8000';
     
     /**
      * Final Interceptor: Intercept

@@ -48,24 +48,18 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('KHTML', 'Konqueror', 'konqueror', 'kded'))
-            || $this->_utils->checkIfContains('KHTML, like Gecko')
-        ) {
+        if (!$this->_utils->checkIfContains(array('KHTML', 'Konqueror', 'konqueror', 'kded'))) {
             return false;
         }
-        
+        /*
+        if ($this->_utils->checkIfContains('KHTML, like Gecko')) {
+            return false;
+        }
+        /**/
         $isNotReallyAnKonqueror = array(
             // using also the Gecko rendering engine
             'Maemo',

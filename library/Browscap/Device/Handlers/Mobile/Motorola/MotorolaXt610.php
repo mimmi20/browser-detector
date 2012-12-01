@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Motorola;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MotorolaXT610.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: MotorolaXT610.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 class MotorolaXt610 extends MotorolaBase
 {

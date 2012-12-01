@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcDesireC extends HtcDesire
+class HtcDesireC extends HtcA8181
 {
     /**
      * @var string the detected device

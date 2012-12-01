@@ -78,4 +78,14 @@ class MID7015 extends CobyBase
     {
         return parent::getWeight() + 1;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

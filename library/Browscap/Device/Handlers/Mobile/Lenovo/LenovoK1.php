@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Lenovo;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Lg900g.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Lg900g.php 261 2012-07-08 07:30:46Z  $
+ * @version    SVN: $Id$
  */
 class LenovoK1 extends LenovoBase
 {

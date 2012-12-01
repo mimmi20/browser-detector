@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Toshiba;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: ToshibaAT200.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Toshiba as ToshibaBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Toshiba as ToshibaBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: ToshibaAT200.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class ToshibaFolio100 extends ToshibaBase
 {
@@ -50,7 +50,7 @@ class ToshibaFolio100 extends ToshibaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('TSB_CLOUD_COMPANION;FOLIO_AND_A')) {
+        if (!$this->_utils->checkIfContains(array('TSB_CLOUD_COMPANION;FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'))) {
             return false;
         }
         

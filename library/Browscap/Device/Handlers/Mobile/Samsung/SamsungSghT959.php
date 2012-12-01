@@ -54,6 +54,10 @@ class SamsungSghT959 extends SamsungBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('SGH-T959V')) {
+            return false;
+        }
+        
         return true;
     }
     

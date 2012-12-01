@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcHdMini.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcHdMini.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class HtcXdaDiamond2 extends HtcBase
 {

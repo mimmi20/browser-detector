@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Desktop;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Extras4iMovie.php 282 2012-09-29 18:26:58Z tmu $
+ * @version    SVN: $Id$
  */
 
 use \Browscap\Browser\Handlers\General\Extras4iMovie as DefaultExtras4iMovie;
@@ -28,7 +28,7 @@ use \Browscap\Browser\Handlers\General\Extras4iMovie as DefaultExtras4iMovie;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Extras4iMovie.php 282 2012-09-29 18:26:58Z tmu $
+ * @version    SVN: $Id$
  */
 class Extras4iMovie extends DefaultExtras4iMovie
 {

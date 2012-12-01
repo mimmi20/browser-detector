@@ -78,8 +78,9 @@ class Motorola extends GeneralMobile
             'mb526',
             'mb525',
             'mb511',
+            'xt320',
             'xt610',
-            'xt320'
+            'xt910'
         );
         
         if (!$this->_utils->checkIfContains($motorolaPhones, true)) {

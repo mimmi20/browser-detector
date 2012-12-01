@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 277 2012-09-24 21:08:17Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handler as DeviceHandler;
@@ -28,7 +28,7 @@ use Browscap\Device\Handler as DeviceHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: GeneralDesktop.php 277 2012-09-24 21:08:17Z tmu $
+ * @version    SVN: $Id$
  */
 class GeneralTv extends DeviceHandler
 {

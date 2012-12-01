@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Lg;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Lgt500.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Lg as LgBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Lg as LgBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Lgt500.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class Lgt500 extends LgBase
 {

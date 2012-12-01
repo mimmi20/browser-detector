@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\General;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Firefox.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handler as BrowserHandler;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Firefox.php 286 2012-10-06 23:47:15Z tmu $
+ * @version    SVN: $Id$
  */
 class Firefox extends BrowserHandler
 {
@@ -69,6 +69,7 @@ class Firefox extends BrowserHandler
             'Maxthon',
             'Camino',
             'CometBird',
+            'Epiphany',
             'Galeon',
             'Lunascape',
             'Opera',

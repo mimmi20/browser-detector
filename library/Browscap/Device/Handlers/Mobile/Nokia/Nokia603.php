@@ -35,7 +35,7 @@ class Nokia603 extends NokiaBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Asha 603';
+    protected $_device = '603';
     
     /**
      * Final Interceptor: Intercept

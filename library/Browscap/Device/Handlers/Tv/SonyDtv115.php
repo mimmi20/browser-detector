@@ -40,7 +40,7 @@ class SonyDtv115 extends GeneralTv
     /**
      * @var string the detected manufacturer
      */
-    protected $_manufacturer = 'SonyEricsson';
+    protected $_manufacturer = 'Sony';
     
     /**
      * Final Interceptor: Intercept
@@ -56,6 +56,10 @@ class SonyDtv115 extends GeneralTv
         }
         
         if (!$this->_utils->checkIfContains('SonyDTV115')) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('KDL40EX720')) {
             return false;
         }
         

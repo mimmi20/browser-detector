@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\General;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Mercury.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 
 /**
@@ -26,7 +26,7 @@ namespace Browscap\Browser\Handlers\General;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Mercury.php 267 2012-09-09 10:54:23Z tmu $
+ * @version    SVN: $Id$
  */
 class Mercury extends CfNetwork
 {

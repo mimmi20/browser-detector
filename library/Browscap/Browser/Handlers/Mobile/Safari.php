@@ -15,7 +15,7 @@ namespace Browscap\Browser\Handlers\Mobile;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Safari.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Browser\Handlers\General\Safari as SafariBase;
@@ -28,7 +28,7 @@ use Browscap\Browser\Handlers\General\Safari as SafariBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: Safari.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class Safari extends SafariBase
 {

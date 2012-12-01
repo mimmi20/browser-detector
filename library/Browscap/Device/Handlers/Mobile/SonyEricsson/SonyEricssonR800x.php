@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\SonyEricsson;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonR800x.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: SonyEricssonR800x.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class SonyEricssonR800x extends SonyBase
 {

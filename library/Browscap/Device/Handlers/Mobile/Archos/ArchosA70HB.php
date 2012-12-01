@@ -15,7 +15,7 @@ namespace Browscap\Device\Handlers\Mobile\Archos;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: ArchosA70HB.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Archos as ArchosBase;
@@ -28,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Archos as ArchosBase;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: ArchosA70HB.php 285 2012-10-03 21:38:10Z tmu $
+ * @version    SVN: $Id$
  */
 class ArchosA70HB extends ArchosBase
 {

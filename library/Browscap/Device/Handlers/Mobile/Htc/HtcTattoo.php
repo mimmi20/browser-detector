@@ -50,7 +50,7 @@ class HtcTattoo extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Tattoo'))) {
+        if (!$this->_utils->checkIfContains(array('HTC Tattoo', 'HTC_TATTOO_A3288'))) {
             return false;
         }
         
