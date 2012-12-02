@@ -91,8 +91,7 @@ class Symbianos extends OsHandler
     public function getBrowser()
     {
         $browsers = array(
-            'Nokia',
-            'NokiaBrowserNg',
+            'NokiaBrowser',
             'OperaMini',
             'Ucweb',
             'NokiaProxyBrowser'
