@@ -1,5 +1,5 @@
 <?php
-nameXpress Browscap\Device\Handlers\Mobile\Odys;
+namespace Browscap\Device\Handlers\Mobile\Odys;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.

@@ -145,7 +145,7 @@ abstract class AbstractChain
                 $className = $this->_utils->getClassNameFromFile(
                     $filename, $this->_namespace, true
                 );
-                
+                var_dump($className, (number_format(memory_get_usage(true), 0, ',', '.') . ' Bytes'));
                 try {
                     $handler = new $className();
                 } catch (\Exception $e) {
