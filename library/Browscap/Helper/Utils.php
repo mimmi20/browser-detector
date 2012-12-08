@@ -145,6 +145,7 @@ final class Utils
         'catalog',
         'check_http',
         'clecko',
+        'compatible; googletoolbar',
         'crawl',
         //'curl',
         'detection',
@@ -184,7 +185,9 @@ final class Utils
         'stats',
         //'svn',
         'test-acceptance',
+        'ua:',
         'unister-test',
+        'user-agent: ',
         'www.auto.de', 
         'auto.de', 
         'www.kredit.de', 
@@ -209,6 +212,9 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
+            if ($this->checkIfContains('Xbox')) {
+                return false;
+            }
             return true;
         }
         
@@ -335,6 +341,10 @@ final class Utils
             return true;
         }
         
+        if ($this->checkIfStartsWith(array('ua:'))) {
+            return false;
+        }
+        
         return false;
     }
     
@@ -353,31 +363,33 @@ final class Utils
         
         $isNotReallyAnSafari = array(
             // using also the KHTML rendering engine
+            '1Password',
+            'AdobeAIR',
             'Arora',
+            'BrowserNG',
             'Chrome',
             'Chromium',
+            'Dreamweaver',
+            'Epiphany',
             'Flock',
             'Galeon',
-            'Lunascape',
+            'Google Earth',
             'iCab',
             'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'rekonq',
-            'OmniWeb',
-            'Qt',
-            'Silk',
-            'MQQBrowser',
             'konqueror',
-            'Epiphany',
-            'Shiira',
+            'Lunascape',
+            'Maemo',
             'Midori',
-            'BrowserNG',
-            'AdobeAIR',
-            'Dreamweaver',
-            'Google Earth',
+            'MQQBrowser',
+            'NokiaBrowser',
+            'OmniWeb',
+            'PaleMoon',
             'PhantomJS',
+            'Qt',
+            'rekonq',
+            'Rockmelt',
+            'Silk',
+            'Shiira',
             //mobile Version
             //'Mobile',
             'Tablet',
@@ -454,19 +466,20 @@ final class Utils
     public function isTvDevice()
     {
         $tvDevices = array(
-            'HbbTV',
+            'boxee',
             'CE-HTML',
-            'Loewe; SL121',
-            'Loewe; SL150',
             'dlink.dsm380',
+            'GoogleTV',
+            'HbbTV',
             'IDL-6651N',
             'KDL40EX720',
-            'SonyDTV115',
-            'SMART-TV',
-            'Viera',
             'NETRANGEMMH',
-            'boxee',
-            'GoogleTV'
+            'Loewe; SL121',
+            'Loewe; SL150',
+            'SMART-TV',
+            'SonyDTV115',
+            'Viera',
+            'Xbox'
         );
         
         if ($this->checkIfContains($tvDevices)) {
@@ -491,6 +504,11 @@ final class Utils
                 return false;
             }
             
+            return true;
+        }
+        
+        $doMatch = preg_match('/windows nt ([\d\.]+)/i', $this->_useragent, $matches);
+        if ($doMatch) {
             return true;
         }
         

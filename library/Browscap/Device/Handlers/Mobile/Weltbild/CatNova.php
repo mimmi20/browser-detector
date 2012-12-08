@@ -50,7 +50,7 @@ class CatNova extends WeltbildBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('CatNova'))) {
+        if (!$this->_utils->checkIfContains(array('CatNova', 'CAT NOVA'))) {
             return false;
         }
         

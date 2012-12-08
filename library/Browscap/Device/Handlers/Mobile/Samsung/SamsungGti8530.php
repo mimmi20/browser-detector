@@ -50,7 +50,7 @@ class SamsungGti8530 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('SAMSUNG; GT-I8530', 'GT-I8530', 'SAMSUNG-GT-I8530')) {
+        if (!$this->_utils->checkIfContains('SAMSUNG; GT-I8530', 'GT-I8530', 'SAMSUNG-GT-I8530', 'SAMSUNG GT-I8530')) {
             return false;
         }
         

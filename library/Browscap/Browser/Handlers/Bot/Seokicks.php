@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -28,19 +28,17 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcIncrediblesS710e extends HtcIncredibleS
+class Seokicks extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'S710E';
+    protected $_browser = 'SEOkicks Robot';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -48,11 +46,21 @@ class HtcIncrediblesS710e extends HtcIncredibleS
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_IncredibleS_S710e', 'IncredibleS_S710e')) {
+        if (!$this->_utils->checkIfContains('SEOkicks-Robot')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $this->_version = '';
     }
     
     /**
@@ -62,6 +70,6 @@ class HtcIncrediblesS710e extends HtcIncredibleS
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

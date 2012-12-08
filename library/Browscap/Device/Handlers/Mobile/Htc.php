@@ -68,6 +68,7 @@ class Htc extends GeneralMobile
             'EVO3D_X515m',
             'HD2',
             'IncredibleS_S710e',
+            'MDA_Compact_V',
             'MDA Vario',
             'MDA_Vario_V',
             'myTouch4G',

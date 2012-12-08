@@ -69,7 +69,6 @@ class AvantBrowser extends BrowserHandler
             'PaleMoon',
             'Flock',
             // other Browsers
-            'AppleWebKit',
             'Linux',
             'MSOffice',
             'Outlook',

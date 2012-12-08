@@ -35,7 +35,7 @@ class WebOs extends OsHandler
     /**
      * @var string the detected platform
      */
-    protected $_name = 'WebOS';
+    protected $_name = 'webOS';
     
     /**
      * @var string the manufacturer/creator of this OS

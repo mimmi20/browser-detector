@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Tv;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
+use Browscap\Device\Handlers\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,17 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Ebrd1101 extends GeneralMobile
+class TechniSatMultyVisionIsio extends GeneralTv
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'EBRD 1101';
+    protected $_device = 'MultyVision ISIO';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'TechniSat';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +55,7 @@ class Ebrd1101 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('EBRD1101')) {
+        if (!$this->_utils->checkIfContains('TechniSat MultyVision ISIO')) {
             return false;
         }
         
@@ -76,6 +81,31 @@ class Ebrd1101 extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 5;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Os\Handlers\LinuxTv();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

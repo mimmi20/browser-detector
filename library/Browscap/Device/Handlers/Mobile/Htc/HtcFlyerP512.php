@@ -64,4 +64,14 @@ class HtcFlyerP512 extends HtcFlyer
     {
         return parent::getWeight() + 1;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

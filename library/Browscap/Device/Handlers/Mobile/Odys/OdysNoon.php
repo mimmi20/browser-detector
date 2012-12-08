@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Odys;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use Browscap\Device\Handlers\Mobile\Odys as OdysBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcExplorer extends HtcBase
+class OdysNoon extends OdysBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Explorer';
+    protected $_device = 'Noon';
     
     /**
      * Final Interceptor: Intercept
@@ -50,21 +50,11 @@ class HtcExplorer extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/Explorer', 'HTC_Explorer'))) {
+        if (!$this->_utils->checkIfContains('ODYS-NOON')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -77,5 +67,15 @@ class HtcExplorer extends HtcBase
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 1;
     }
 }

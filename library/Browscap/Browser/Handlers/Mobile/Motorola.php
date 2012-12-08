@@ -49,7 +49,15 @@ class Motorola extends BrowserHandler
             return false;
         }
         
-        return $this->_utils->checkIfContains(array('Mot-', 'MOT-', 'Motorola', 'MIB'));
+        if (!$this->_utils->checkIfContains(array('Mot-', 'MOT-', 'Motorola', 'MIB'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('Opera/', 'Opera Mobi/', 'Opera'))) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

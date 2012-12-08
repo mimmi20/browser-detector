@@ -127,7 +127,8 @@ class Nokia extends GeneralMobile
             'WindowsMobileOs',
             'WindowsPhoneOs',
             'Linux',
-            'MeeGo'
+            'MeeGo',
+            'Safari'
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);

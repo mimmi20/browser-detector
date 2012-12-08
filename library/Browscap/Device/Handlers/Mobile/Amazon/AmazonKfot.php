@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Amazon;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use Browscap\Device\Handlers\Mobile\Amazon as AmazonBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Htc7Trophy extends HtcBase
+class AmazonKfot extends AmazonBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = '7 Trophy';
+    protected $_device = 'KFOT';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class Htc7Trophy extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC;7 Trophy', '7 Trophy'))) {
+        if (!$this->_utils->checkIfContains(array('KFOT'))) {
             return false;
         }
         
@@ -77,5 +77,15 @@ class Htc7Trophy extends HtcBase
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
 }

@@ -64,7 +64,8 @@ class Toshiba extends GeneralMobile
             'AT300',
             'folio100',
             'TSB_CLOUD_COMPANION;FOLIO_AND_A',
-            'TOSHIBA_AC_AND_AZ'
+            'TOSHIBA_AC_AND_AZ',
+            'TOSHIBA_FOLIO_AND_A'
         );
         
         if (!$this->_utils->checkIfContains($ToshibaPhones)) {

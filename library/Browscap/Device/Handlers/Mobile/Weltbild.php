@@ -55,7 +55,7 @@ class Weltbild extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('CatNova', 'CatNova8', 'Cat StarGate', 'Cat Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('CatNova', 'CAT NOVA', 'CatNova8', 'Cat StarGate', 'Cat Tablet'))) {
             return false;
         }
         

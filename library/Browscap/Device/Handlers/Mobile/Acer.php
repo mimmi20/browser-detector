@@ -55,7 +55,7 @@ class Acer extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('HTC', 'IdeaTab', 'Wildfire S A510e'))) {
+        if ($this->_utils->checkIfContains(array('HTC', 'IdeaTab', 'Wildfire S A510e', 'A101IT'))) {
             return false;
         }
         
@@ -75,7 +75,8 @@ class Acer extends GeneralMobile
             'A701',
             'E310',
             'E320',
-            'G100W'
+            'G100W',
+            'Stream-S110'
         );
         
         if ($this->_utils->checkIfContains($acerPhones)) {

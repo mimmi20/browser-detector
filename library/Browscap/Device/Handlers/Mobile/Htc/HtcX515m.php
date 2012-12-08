@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcEvo3DX515m extends HtcEvo3D
+class HtcX515m extends HtcBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'X515m';
+    protected $_device = 'X515m - EVO 3D';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcEvo3DX515m extends HtcEvo3D
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC EVO 3D X515m', 'HTC_EVO3D_X515m', 'EVO3D_X515m'))) {
+        if (!$this->_utils->checkIfContains(array('HTC/EVO_3D', 'HTC EVO 3D', 'HTC_EVO3D', 'HTC EVO 3D X515m', 'HTC_EVO3D_X515m', 'EVO3D_X515m'))) {
             return false;
         }
         
@@ -63,5 +65,17 @@ class HtcEvo3DX515m extends HtcEvo3D
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

@@ -112,6 +112,10 @@ class Firefox extends BrowserHandler
         
         if ($doMatch) {
             $this->_version = $matches[1];
+            
+            if (substr('.' == $this->_version, -1)) {
+                $this->_version .= '0';
+            }
             return;
         }
         

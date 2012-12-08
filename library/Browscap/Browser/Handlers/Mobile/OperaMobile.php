@@ -87,7 +87,9 @@ class OperaMobile extends BrowserHandler
         
         if ($doMatch) {
             $this->_version = $matches[1];
-            return;
+            if ($this->_version < 100) {
+                return;
+            }
         }
         
         $doMatch = preg_match('/Opera\/([\d\.]+)/', $this->_useragent, $matches);

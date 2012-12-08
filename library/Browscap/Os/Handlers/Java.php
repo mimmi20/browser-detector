@@ -62,7 +62,10 @@ class Java extends OsHandler
             'SymbOS',
             'Symbian',
             'Series 60',
-            'MeeGo'
+            'MeeGo',
+            'Windows CE',
+            'Windows NT',
+            'IEMobile'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAJava)) {

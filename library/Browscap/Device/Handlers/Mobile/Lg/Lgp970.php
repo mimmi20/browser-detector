@@ -50,7 +50,7 @@ class Lgp970 extends LgBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('LG-P970')) {
+        if (!$this->_utils->checkIfContains(array('LG-P970', 'Optimus-Black'))) {
             return false;
         }
         

@@ -35,7 +35,7 @@ class MdLifetabS9512 extends MedionBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'MD LIFETAB S9512';
+    protected $_device = 'LIFETAB S9512';
     
     /**
      * Final Interceptor: Intercept

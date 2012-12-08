@@ -50,7 +50,7 @@ class ToshibaFolio100 extends ToshibaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('TSB_CLOUD_COMPANION;FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'))) {
+        if (!$this->_utils->checkIfContains(array('TSB_CLOUD_COMPANION;FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100', 'TOSHIBA_FOLIO_AND_A'))) {
             return false;
         }
         

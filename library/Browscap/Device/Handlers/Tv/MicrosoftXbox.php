@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Tv;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use Browscap\Device\Handlers\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,17 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcEvo3D extends HtcBase
+class MicrosoftXbox extends GeneralTv
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'EVO 3D';
+    protected $_device = 'Xbox 360';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Microsoft';
     
     /**
      * Final Interceptor: Intercept
@@ -50,21 +55,11 @@ class HtcEvo3D extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/EVO_3D', 'HTC EVO 3D', 'HTC_EVO3D'))) {
+        if (!$this->_utils->checkIfContains('Xbox')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -77,5 +72,40 @@ class HtcEvo3D extends HtcBase
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 5;
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Os\Handlers\LinuxTv();
+        $handler->setLogger($this->_logger);
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

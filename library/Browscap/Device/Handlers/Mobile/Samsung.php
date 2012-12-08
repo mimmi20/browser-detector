@@ -68,14 +68,15 @@ class Samsung extends GeneralMobile
             'Galaxy',
             'Nexus',
             'I7110',
-            'YP-G'
+            'YP-G',
+            'Continuum-'
         );
         
         if (!$this->_utils->checkIfContains($samsungPhones)) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains('Asus')) {
+        if ($this->_utils->checkIfContains(array('Asus', 'U30GT'))) {
             return false;
         }
         

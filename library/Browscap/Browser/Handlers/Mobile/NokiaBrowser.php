@@ -54,7 +54,7 @@ class NokiaBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Nokia')) {
+        if (!$this->_utils->checkIfContains(array('NokiaBrowser', 'Nokia'))) {
             return false;
         }
         

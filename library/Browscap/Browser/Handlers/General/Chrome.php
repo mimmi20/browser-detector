@@ -74,6 +74,7 @@ class Chrome extends Chromium
             'Google Earth',
             'Arora',
             'Avant',
+            'YaBrowser',
             // Bots trying to be a Chrome
             'PagePeeker',
             // Fakes

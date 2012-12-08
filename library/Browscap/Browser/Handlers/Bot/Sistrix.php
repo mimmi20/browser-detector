@@ -33,7 +33,7 @@ class Sistrix extends GeneralBot
     /**
      * @var string the detected browser
      */
-    protected $_browser = 'SISTRIX';
+    protected $_browser = 'Sistrix Bot';
     
     /**
      * Returns true if this handler can handle the given user agent

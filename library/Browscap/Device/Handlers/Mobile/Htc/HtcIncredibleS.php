@@ -35,7 +35,7 @@ class HtcIncredibleS extends HtcBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Incredible S';
+    protected $_device = 'S710E - Incredible S';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class HtcIncredibleS extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Incredible S'))) {
+        if (!$this->_utils->checkIfContains(array('HTC Incredible S', 'HTC_IncredibleS_S710e', 'IncredibleS_S710e'))) {
             return false;
         }
         

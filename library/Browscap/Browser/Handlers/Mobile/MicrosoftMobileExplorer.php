@@ -21,7 +21,7 @@ namespace Browscap\Browser\Handlers\Mobile;
 /**
  * Handler Base class
  */
-use Browscap\Browser\Handler as BrowserHandler;
+use Browscap\Browser\Handlers\General\MicrosoftMobileExplorer as IeMobileBase;
 
 /**
  * MSIEAgentHandler
@@ -33,117 +33,7 @@ use Browscap\Browser\Handler as BrowserHandler;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class MicrosoftMobileExplorer extends BrowserHandler
+class MicrosoftMobileExplorer extends IeMobileBase
 {
-    /**
-     * @var string the detected browser
-     */
-    protected $_browser = 'IEMobile';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'microsoft';
-    
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContainsAll(array('Mozilla/', 'MSIE'))) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE'))) {
-            return false;
-        }
-        
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Maxthon',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            'MyIE',
-            //others
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt'
-        );
-        
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
-            return false;
-        }
-        
-        return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/IEMobile ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/IEMobile\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->_version = $matches[1];
-            return;
-        }
-        
-        $this->_version = '';
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getEngine()
-    {
-        $handler = new \Browscap\Engine\Handlers\Trident();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
+    // nothing to do here
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Pandigital;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -15,8 +15,10 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: PandigitalP2020.php 287 2012-10-07 11:48:36Z tmu $
  */
+
+use Browscap\Device\Handlers\Mobile\Pandigital as PandigitalBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -26,14 +28,14 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @version    SVN: $Id: PandigitalP2020.php 287 2012-10-07 11:48:36Z tmu $
  */
-class HtcHdMiniT5555 extends HtcHdMini
+class PandigitalSupernova extends PandigitalBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'HD Mini T5555';
+    protected $_device = 'SuperNova';
     
     /**
      * Final Interceptor: Intercept
@@ -48,21 +50,11 @@ class HtcHdMiniT5555 extends HtcHdMini
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_HD_mini_T5555'))) {
+        if (!$this->_utils->checkIfContains('pandigitalsprnova1')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 1;
     }
     
     /**
@@ -75,5 +67,15 @@ class HtcHdMiniT5555 extends HtcHdMini
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 5;
     }
 }

@@ -114,29 +114,4 @@ class PanasonicViera extends GeneralTv
         
         return $chain->detect();
     }
-    
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasBrowser()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $handler = new \Browscap\Browser\Handlers\Tv\SmartViera();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
 }

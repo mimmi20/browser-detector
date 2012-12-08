@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcExplorerA310e extends HtcExplorer
+class SamsungShwM930bst extends SamsungBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'A310e';
+    protected $_device = 'SHW-M930BST';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcExplorerA310e extends HtcExplorer
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/Explorer/A310e', 'HTC_Explorer_A310e'))) {
+        if (!$this->_utils->checkIfContains('SHW-M930BST')) {
             return false;
         }
         
@@ -75,5 +77,15 @@ class HtcExplorerA310e extends HtcExplorer
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
     }
 }

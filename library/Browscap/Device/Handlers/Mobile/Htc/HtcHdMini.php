@@ -35,7 +35,7 @@ class HtcHdMini extends HtcBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'HD Mini';
+    protected $_device = 'T5555 - HD Mini';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class HtcHdMini extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC HD mini', 'HTC_HD_mini', 'HD mini'))) {
+        if (!$this->_utils->checkIfContains(array('HTC HD mini', 'HTC_HD_mini', 'HD mini', 'HTC_HD_mini_T5555'))) {
             return false;
         }
         

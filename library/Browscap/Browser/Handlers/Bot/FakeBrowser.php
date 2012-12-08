@@ -46,7 +46,7 @@ class FakeBrowser extends GeneralBot
             return false;
         }
         
-        if ($this->_utils->isFakeBrowser($this->_useragent)) {
+        if ($this->_utils->isFakeBrowser()) {
             return true;
         }
         

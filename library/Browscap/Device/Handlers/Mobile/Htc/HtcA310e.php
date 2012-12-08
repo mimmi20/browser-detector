@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcHd2T8585 extends HtcHd2
+class HtcA310e extends HtcBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'T8585';
+    protected $_device = 'A310e - Explorer';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcHd2T8585 extends HtcHd2
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_HD2_T8585'))) {
+        if (!$this->_utils->checkIfContains(array('HTC/Explorer', 'HTC_Explorer', 'HTC/Explorer/A310e', 'HTC_Explorer_A310e'))) {
             return false;
         }
         

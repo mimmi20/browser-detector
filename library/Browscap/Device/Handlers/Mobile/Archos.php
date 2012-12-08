@@ -59,6 +59,7 @@ class Archos extends GeneralMobile
             'ARCHOS',
             'A35DM',
             'A70BHT',
+            'A70CHT',
             'A70S',
             'A70H2',
             'A80KSC',

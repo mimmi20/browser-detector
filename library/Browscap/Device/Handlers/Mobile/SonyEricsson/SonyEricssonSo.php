@@ -54,6 +54,10 @@ class SonyEricssonSo extends SonyBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('SonyEricssonSO-')) {
+            return false;
+        }
+        
         return true;
     }
     

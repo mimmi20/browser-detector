@@ -83,4 +83,14 @@ class PrestigioPmp5080cPro extends GeneralMobile
     {
         return parent::getWeight() + 5;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

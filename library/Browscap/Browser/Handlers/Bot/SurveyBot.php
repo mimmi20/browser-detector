@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Browser\Handlers\Bot;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,19 +28,17 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Ebrd1201 extends GeneralMobile
+class SurveyBot extends GeneralBot
 {
     /**
-     * @var string the detected device
+     * @var string the detected browser
      */
-    protected $_device = 'EBRD 1201';
+    protected $_browser = 'SurveyBot';
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
@@ -50,7 +46,7 @@ class Ebrd1201 extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('EBRD1201')) {
+        if (!$this->_utils->checkIfContains('SurveyBot')) {
             return false;
         }
         
@@ -58,15 +54,20 @@ class Ebrd1201 extends GeneralMobile
     }
     
     /**
-     * detects the device name from the given user agent
+     * detects the browser version from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return string
      */
-    public function detectDevice()
+    protected function _detectVersion()
     {
-        return $this;
+        $doMatch = preg_match('/SurveyBot\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->_version = $matches[1];
+            return;
+        }
+        
+        $this->_version = '';
     }
     
     /**
@@ -76,6 +77,6 @@ class Ebrd1201 extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

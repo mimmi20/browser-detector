@@ -52,7 +52,7 @@ class TelecaObigo extends BrowserHandler
         return $this->_utils->checkIfContains(
             array(
                 'Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser', 
-                'obigo-browser'
+                'obigo-browser', 'WAP/OBIGO'
             )
         );
     }

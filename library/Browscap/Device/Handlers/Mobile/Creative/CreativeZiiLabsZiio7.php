@@ -78,4 +78,14 @@ class CreativeZiiLabsZiio7 extends CreativeBase
     {
         return $this;
     }
+    
+    /**
+     * returns TRUE if the device is a tablet
+     *
+     * @return boolean
+     */
+    public function isTablet()
+    {
+        return true;
+    }
 }

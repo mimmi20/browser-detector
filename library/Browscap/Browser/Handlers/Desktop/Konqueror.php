@@ -52,37 +52,35 @@ class Konqueror extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('KHTML', 'Konqueror', 'konqueror', 'kded'))) {
+        if (!$this->_utils->checkIfContains(array('Konqueror', 'konqueror', 'kded'))) {
             return false;
         }
-        /*
-        if ($this->_utils->checkIfContains('KHTML, like Gecko')) {
-            return false;
-        }
-        /**/
+        
         $isNotReallyAnKonqueror = array(
             // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
             'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'PaleMoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            'Firefox',
             'Chrome',
             'Chromium',
-            'RockMelt',
-            'Qt',
-            'Google Earth',
-            'Epiphany',
             'Dreamweaver',
+            'Epiphany',
+            'Fennec',
+            'Firefox',
+            'Flock',
+            'Galeon',
+            'Google Earth',
+            'Lunascape',
+            'Maemo',
+            'Maxthon',
             'Midori',
-            'OmniWeb'
+            'Navigator',
+            'OmniWeb',
+            'Opera',
+            'PaleMoon',
+            'PhantomJS',
+            'Qt',
+            'rekonq',
+            'RockMelt',
+            'SeaMonkey'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnKonqueror)) {

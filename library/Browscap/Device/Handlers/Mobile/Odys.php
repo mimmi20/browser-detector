@@ -56,7 +56,9 @@ class Odys extends GeneralMobile
         }
         
         $odysPhones = array(
-            'odys'
+            'odys',
+            'loox plus',
+            ' genesis '
         );
         
         if ($this->_utils->checkIfContains($odysPhones, true)) {
