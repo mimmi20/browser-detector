@@ -66,4 +66,16 @@ class Lgf100s extends LgBase
     {
         return parent::getWeight() + 1;
     }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
+    }
 }

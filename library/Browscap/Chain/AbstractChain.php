@@ -146,6 +146,9 @@ abstract class AbstractChain
                     $filename, $this->_namespace, true
                 );
                 
+                $ex = new \Exception('Class:' . $className . ' Memory: ' . number_format(memory_get_usage(true), 0, ',', '.') . 'Bytes');
+                echo "\n\n" . $ex->getMessage() . "\n" . $ex->getTraceAsString() . "\n\n";
+                
                 try {
                     $handler = new $className();
                 } catch (\Exception $e) {
@@ -322,6 +325,9 @@ abstract class AbstractChain
                 
                 if ($handler->canHandle()) {
                     try {
+                        $ex = new \Exception('Class:' . get_class($handler) . ' Memory: ' . number_format(memory_get_usage(true), 0, ',', '.') . 'Bytes');
+                        echo "\n\n" . $ex->getMessage() . "\n" . $ex->getTraceAsString() . "\n\n";
+                        
                         return $handler->detect();
                     } catch (\UnexpectedValueException $e) {
                         $this->_logger->err($e);
