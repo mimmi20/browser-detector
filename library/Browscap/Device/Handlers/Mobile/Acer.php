@@ -73,6 +73,7 @@ class Acer extends GeneralMobile
             'A511',
             'A700',
             'A701',
+            'E140',
             'E310',
             'E320',
             'G100W',

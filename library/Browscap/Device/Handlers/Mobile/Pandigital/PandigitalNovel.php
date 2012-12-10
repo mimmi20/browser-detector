@@ -50,7 +50,7 @@ class PandigitalNovel extends PandigitalBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('pandigitalopc1')) {
+        if (!$this->_utils->checkIfContains(array('pandigitalopc1', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'))) {
             return false;
         }
         

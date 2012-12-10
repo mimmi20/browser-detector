@@ -62,6 +62,7 @@ class Htc extends GeneralMobile
         $htcPhones = array(
             'HTC',
             '7 Trophy',
+            ' a6288 ',
             'Desire_A8181',
             'Desire HD',
             'Desire S',
@@ -77,8 +78,10 @@ class Htc extends GeneralMobile
             'SensationXL',
             'Sensation_Z710e',
             'Xda_Diamond_2',
+            'Vision-T-Mobile-G2',
             'Wildfire S',
-            'Wildfire S A510e'
+            'Wildfire S A510e',
+            'VPA_Touch'
         );
         
         if ($this->_utils->checkIfContains($htcPhones)) {

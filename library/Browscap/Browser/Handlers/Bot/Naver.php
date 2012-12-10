@@ -51,7 +51,7 @@ class Naver extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('NAVER')) {
+        if (!$this->_utils->checkIfContains(array('NAVER'))) {
             return false;
         }
         

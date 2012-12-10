@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Zte;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,9 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-/**
+use Browscap\Device\Handlers\Mobile\Zte as ZteBase;
+
+/*
  * CatchAllUserAgentHandler
  *
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcSalsaC510e extends HtcSalsa
+class ZteX920 extends ZteBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Salsa C510e';
+    protected $_device = 'X920';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +50,7 @@ class HtcSalsaC510e extends HtcSalsa
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Salsa C510e'))) {
+        if (!$this->_utils->checkIfContains(array(' X920 '))) {
             return false;
         }
         
@@ -63,5 +65,17 @@ class HtcSalsaC510e extends HtcSalsa
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

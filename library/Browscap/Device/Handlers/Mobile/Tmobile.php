@@ -59,14 +59,20 @@ class Tmobile extends GeneralMobile
             'T-Mobile',
             'myTouch4G',
             'MDA compact',
-            'T-Mobile_G2_Touch'
+            'T-Mobile_G2_Touch',
+            'Pulse',
+            'Ameo'
         );
         
-        if ($this->_utils->checkIfContains($TmobilePhones, true)) {
-            return true;
+        if (!$this->_utils->checkIfContains($TmobilePhones, true)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains('Vision-T-Mobile-G2')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

@@ -50,7 +50,7 @@ class MotorolaMe525 extends MotorolaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Moto_ME525', 'ME525'))) {
+        if (!$this->_utils->checkIfContains(array('Moto_ME525', 'ME525', 'me525'))) {
             return false;
         }
         

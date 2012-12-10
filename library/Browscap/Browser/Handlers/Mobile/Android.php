@@ -61,6 +61,7 @@ class Android extends BrowserHandler
         }
         
         $noAndroid = array(
+            'AndroidDownloadManager',
             'BlackBerry', 
             'Blackberry', 
             'Chrome', 
@@ -68,7 +69,8 @@ class Android extends BrowserHandler
             'Fennec', 
             'Firefox', 
             'iPad', 
-            'iPhone', 
+            'iPhone',
+            'NetFrontLifeBrowser',
             'NokiaBrowser', 
             'Opera', 
             'RIM Tablet',

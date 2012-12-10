@@ -212,7 +212,7 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
-            if ($this->checkIfContains('Xbox')) {
+            if ($this->checkIfContains(array('Xbox', 'BADAB'))) {
                 return false;
             }
             return true;
@@ -467,22 +467,22 @@ final class Utils
     {
         $tvDevices = array(
             'boxee',
-            'CE-HTML',
+            'ce-html',
             'dlink.dsm380',
-            'GoogleTV',
-            'HbbTV',
-            'IDL-6651N',
-            'KDL40EX720',
-            'NETRANGEMMH',
-            'Loewe; SL121',
-            'Loewe; SL150',
-            'SMART-TV',
-            'SonyDTV115',
-            'Viera',
-            'Xbox'
+            'googletv',
+            'hbbtv',
+            'idl-6651n',
+            'kdl40ex720',
+            'netrangemmh',
+            'loewe; sl121',
+            'loewe; sl150',
+            'smart-tv',
+            'sonydtv115',
+            'viera',
+            'xbox'
         );
         
-        if ($this->checkIfContains($tvDevices)) {
+        if ($this->checkIfContains($tvDevices, true)) {
             return true;
         }
         
@@ -521,6 +521,10 @@ final class Utils
             }
         }
         
+        if ($this->checkIfContains('X11; MSIE')) {
+            return true;
+        }
+        
         return false;
     }
     
@@ -528,7 +532,8 @@ final class Utils
     {
         $mobileWindows = array(
             'Windows CE', 'Windows Phone', 'Windows Mobile', 
-            'microsoft Windows; PPC', 'IEMobile', 'XBLWP7', 'ZuneWP7'
+            'microsoft Windows; PPC', 'IEMobile', 'XBLWP7', 'ZuneWP7',
+            'WindowsMobile'
         );
         
         if (!$this->checkIfContains($mobileWindows)) {

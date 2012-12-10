@@ -30,12 +30,17 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Ameo extends GeneralMobile
+class Sanyo extends GeneralMobile
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Ameo';
+    protected $_device = 'general Sanyo Device';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Sanyo';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +55,7 @@ class Ameo extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Ameo')) {
+        if (!$this->_utils->checkIfContains(array('Sanyo', 'PM-8200'))) {
             return false;
         }
         

@@ -36,11 +36,6 @@ class Archos97Carbon extends ArchosBase
      * @var string the detected device
      */
     protected $_device = '97 CARBON';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept

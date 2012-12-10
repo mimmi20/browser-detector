@@ -55,7 +55,7 @@ class Pandigital extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('pandigital')) {
+        if (!$this->_utils->checkIfContains(array('pandigital', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'))) {
             return false;
         }
         

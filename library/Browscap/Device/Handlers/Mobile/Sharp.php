@@ -58,7 +58,9 @@ class Sharp extends GeneralMobile
         $sharpPhones = array(
             'SHARP',
             'IS05',
-            'SH80F'
+            'SH80F',
+            'SH7228U',
+            'SH8128U'
         );
         
         if ($this->_utils->checkIfContains($sharpPhones)) {

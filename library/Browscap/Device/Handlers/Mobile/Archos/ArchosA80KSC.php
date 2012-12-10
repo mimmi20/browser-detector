@@ -36,11 +36,6 @@ class ArchosA80KSC extends ArchosBase
      * @var string the detected device
      */
     protected $_device = 'A80KSC';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept

@@ -35,7 +35,12 @@ class P10t extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'p10t';
+    protected $_device = 'P10T';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'KCSpad';
     
     /**
      * Final Interceptor: Intercept

@@ -65,7 +65,9 @@ class Java extends OsHandler
             'MeeGo',
             'Windows CE',
             'Windows NT',
-            'IEMobile'
+            'MSIEMobile',
+            'IEMobile',
+            'Microsoft Windows'
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAJava)) {

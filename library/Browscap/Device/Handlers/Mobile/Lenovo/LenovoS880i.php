@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile;
+namespace Browscap\Device\Handlers\Mobile\Lenovo;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\GeneralMobile;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,12 +28,12 @@ use Browscap\Device\Handlers\GeneralMobile;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class Rk2818sdk extends GeneralMobile
+class LenovoS880i extends IdeaTab
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'rk2818sdk';
+    protected $_device = 'S880i';
     
     /**
      * Final Interceptor: Intercept
@@ -50,23 +48,11 @@ class Rk2818sdk extends GeneralMobile
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('rk2818sdk')) {
+        if (!$this->_utils->checkIfContains('Lenovo S880i')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**
@@ -80,27 +66,24 @@ class Rk2818sdk extends GeneralMobile
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
+     * returns TRUE if the device is a tablet
      *
      * @return boolean
      */
-    public function hasOs()
+    public function isTablet()
     {
         return true;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * detects the device name from the given user agent
      *
-     * @return null|\Browscap\Os\Handler
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function detectOs()
+    public function detectDevice()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return $this;
     }
 }

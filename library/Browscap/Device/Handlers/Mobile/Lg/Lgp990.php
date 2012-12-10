@@ -50,7 +50,7 @@ class Lgp990 extends LgBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('LG-P990')) {
+        if (!$this->_utils->checkIfContains(array('LG-P990', ' p990 '))) {
             return false;
         }
         

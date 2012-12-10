@@ -36,6 +36,11 @@ class INM803HC extends GeneralMobile
      * @var string the detected device
      */
     protected $_device = 'INM803HC';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'Lalsoft';
     
     /**
      * Final Interceptor: Intercept

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Tmobile;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,6 +18,8 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
+use Browscap\Device\Handlers\Mobile\Tmobile as TmobileBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -28,12 +30,12 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcDesireZA7272 extends HtcDesireZ
+class TmobileAmeo extends TmobileBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Desire Z A7272';
+    protected $_device = 'Ameo';
     
     /**
      * Final Interceptor: Intercept
@@ -48,11 +50,23 @@ class HtcDesireZA7272 extends HtcDesireZ
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC_DesireZ_A7272')) {
+        if (!$this->_utils->checkIfContains('Ameo')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**

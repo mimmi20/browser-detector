@@ -50,7 +50,7 @@ class MotorolaMb200 extends MotorolaBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MB200')) {
+        if (!$this->_utils->checkIfContains(' mb200 ', true)) {
             return false;
         }
         

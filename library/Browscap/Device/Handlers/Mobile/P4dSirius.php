@@ -35,7 +35,12 @@ class P4dSirius extends GeneralMobile
     /**
      * @var string the detected device
      */
-    protected $_device = 'P4D SIRIUS';
+    protected $_device = 'P4D Sirius';
+
+    /**
+     * @var string the detected manufacturer
+     */
+    protected $_manufacturer = 'NVSBL';
     
     /**
      * Final Interceptor: Intercept

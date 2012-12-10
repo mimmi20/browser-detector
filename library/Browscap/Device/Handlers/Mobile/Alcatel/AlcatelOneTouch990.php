@@ -50,7 +50,7 @@ class AlcatelOneTouch990 extends AlcatelBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('ALCATEL_one_touch_990', 'ALCATEL one touch 990'))) {
+        if (!$this->_utils->checkIfContains(array('alcatel_one_touch_990', 'alcatel one touch 990'), true)) {
             return false;
         }
         

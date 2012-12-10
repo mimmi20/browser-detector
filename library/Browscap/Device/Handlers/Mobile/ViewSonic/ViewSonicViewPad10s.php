@@ -50,7 +50,7 @@ class ViewSonicViewPad10s extends ViewSonicBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('ViewPad 10S')) {
+        if (!$this->_utils->checkIfContains(array('ViewPad 10S'))) {
             return false;
         }
         

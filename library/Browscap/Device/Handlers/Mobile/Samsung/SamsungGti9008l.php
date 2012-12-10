@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Htc;
+namespace Browscap\Device\Handlers\Mobile\Samsung;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,12 +28,12 @@ use Browscap\Device\Handlers\Mobile\Htc as HtcBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcVision extends HtcBase
+class SamsungGti9008l extends SamsungGti9008
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'Vision';
+    protected $_device = 'GT-I9008L';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +48,7 @@ class HtcVision extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC Vision', 'HTC/Vision', 'HTC_Vision'))) {
+        if (!$this->_utils->checkIfContains('GT-I9008L')) {
             return false;
         }
         

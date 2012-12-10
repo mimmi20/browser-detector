@@ -54,7 +54,7 @@ class SamsungSghF480 extends SamsungBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains('SAMSUNG-SGH-F480i')) {
+        if ($this->_utils->checkIfContains('samsung-sgh-f480i', true)) {
             return false;
         }
         

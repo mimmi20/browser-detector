@@ -36,11 +36,6 @@ class Archos101B extends ArchosBase
      * @var string the detected device
      */
     protected $_device = '101B';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept

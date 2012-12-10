@@ -33,7 +33,7 @@ class HtcDesireZ extends HtcA8181
     /**
      * @var string the detected device
      */
-    protected $_device = 'Desire Z';
+    protected $_device = 'A7272 - Desire Z - Vision';
     
     /**
      * Final Interceptor: Intercept
@@ -48,7 +48,7 @@ class HtcDesireZ extends HtcA8181
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC_DesireZ', 'HTC Desire Z', 'HTC_Desire_Z'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireZ', 'HTC Desire Z', 'HTC_Desire_Z', 'HTC Vision', 'HTC/Vision', 'HTC_Vision', 'HTC_DesireZ_A7272', 'Vision-T-Mobile-G2'))) {
             return false;
         }
         

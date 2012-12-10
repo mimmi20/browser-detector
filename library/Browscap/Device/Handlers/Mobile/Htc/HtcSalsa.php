@@ -35,7 +35,7 @@ class HtcSalsa extends HtcBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Salsa';
+    protected $_device = 'C510e - Salsa';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class HtcSalsa extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC/Salsa', 'HTC/Salsa/', 'HTC Salsa', 'HTC_Salsa'))) {
+        if (!$this->_utils->checkIfContains(array('HTC/Salsa', 'HTC/Salsa/', 'HTC Salsa', 'HTC_Salsa', 'HTC Salsa C510e'))) {
             return false;
         }
         

@@ -50,7 +50,7 @@ class ZteRacerIi extends ZteBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('RACERII'))) {
+        if (!$this->_utils->checkIfContains(array('racerii'), true)) {
             return false;
         }
         

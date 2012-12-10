@@ -35,7 +35,7 @@ class IdeaTab extends LenovoBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'IdeaTab';
+    protected $_device = 'A2109A - IdeaTab';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class IdeaTab extends LenovoBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('IdeaTab'))) {
+        if (!$this->_utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
             return false;
         }
         

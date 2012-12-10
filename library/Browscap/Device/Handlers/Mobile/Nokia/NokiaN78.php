@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Device\Handlers\Mobile\Samsung;
+namespace Browscap\Device\Handlers\Mobile\Nokia;
 
 /**
  * Copyright (c) 2012 ScientiaMobile, Inc.
@@ -18,7 +18,7 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
+use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -30,12 +30,12 @@ use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungGti9010 extends SamsungBase
+class NokiaN78 extends NokiaBase
 {
     /**
      * @var string the detected device
      */
-    protected $_device = 'GT-I9010';
+    protected $_device = 'N78';
     
     /**
      * Final Interceptor: Intercept
@@ -50,11 +50,7 @@ class SamsungGti9010 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('GT-I9010')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains('GT-I9010P')) {
+        if (!$this->_utils->checkIfContains('Nokia N78')) {
             return false;
         }
         

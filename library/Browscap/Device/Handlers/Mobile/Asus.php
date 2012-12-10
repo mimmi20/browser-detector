@@ -130,7 +130,8 @@ class Asus extends GeneralMobile
             'Symbianos',
             'WindowsMobileOs',
             'WindowsPhoneOs',
-            'Linux'
+            'Linux',
+            'Ventana'
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);

@@ -50,7 +50,7 @@ class SonyEricssonU20i extends SonyBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('SonyEricssonU20i', 'U20i'))) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonU20i', 'U20i', ' u20i '))) {
             return false;
         }
         

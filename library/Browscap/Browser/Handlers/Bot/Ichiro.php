@@ -46,7 +46,7 @@ class Ichiro extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfStartsWith('ichiro')) {
+        if (!$this->_utils->checkIfContains('ichiro')) {
             return false;
         }
         

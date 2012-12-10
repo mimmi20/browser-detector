@@ -68,6 +68,7 @@ class Samsung extends GeneralMobile
             'Galaxy',
             'Nexus',
             'I7110',
+            'I9100',
             'YP-G',
             'Continuum-'
         );

@@ -36,11 +36,6 @@ class Archos80G9 extends ArchosBase
      * @var string the detected device
      */
     protected $_device = '80 G9';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept

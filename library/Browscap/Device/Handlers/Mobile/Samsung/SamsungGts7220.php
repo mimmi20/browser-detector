@@ -50,7 +50,7 @@ class SamsungGts7220 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('GT-S7220')) {
+        if (!$this->_utils->checkIfContains(array('GT-S7220', 'SAMSUNG-S7220'))) {
             return false;
         }
         

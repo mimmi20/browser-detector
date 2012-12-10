@@ -64,7 +64,8 @@ class Archos extends GeneralMobile
             'A70H2',
             'A80KSC',
             'A101IT',
-            'A70HB'
+            'A70HB',
+            'A7EB'
         );
         
         if ($this->_utils->checkIfContains($archosPhones)) {

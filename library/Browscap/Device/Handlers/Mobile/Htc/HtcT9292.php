@@ -50,7 +50,7 @@ class HtcT9292 extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC; HD7 T9292', 'HTC; HD7'))) {
+        if (!$this->_utils->checkIfContains(array('HTC; HD7 T9292', 'HTC; HD7', 'HTC; Mondrian'))) {
             return false;
         }
         

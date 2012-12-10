@@ -55,7 +55,7 @@ class AvantBrowser extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Avant Browser', 'AvantBrowser'))) {
+        if (!$this->_utils->checkIfContains(array('Avant Browser', 'AvantBrowser', 'Avant TriCore'))) {
             return false;
         }
         

@@ -36,11 +36,6 @@ class Archos70it2 extends ArchosBase
      * @var string the detected device
      */
     protected $_device = '70it2';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept

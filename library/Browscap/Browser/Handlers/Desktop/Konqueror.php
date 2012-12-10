@@ -68,6 +68,7 @@ class Konqueror extends BrowserHandler
             'Flock',
             'Galeon',
             'Google Earth',
+            'iCab',
             'Lunascape',
             'Maemo',
             'Maxthon',

@@ -50,7 +50,7 @@ class HtcHero extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('HTC Hero')) {
+        if (!$this->_utils->checkIfContains(array('HTC Hero', ' a6288 '))) {
             return false;
         }
         

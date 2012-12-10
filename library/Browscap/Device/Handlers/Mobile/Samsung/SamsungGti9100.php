@@ -35,7 +35,7 @@ class SamsungGti9100 extends SamsungBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'GT-I9100';
+    protected $_device = 'Galaxy S2 - GT-I9100';
     
     /**
      * Final Interceptor: Intercept
@@ -50,7 +50,7 @@ class SamsungGti9100 extends SamsungBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('GT-I9100')) {
+        if (!$this->_utils->checkIfContains(array('GT-I9100', 'I9100'))) {
             return false;
         }
         

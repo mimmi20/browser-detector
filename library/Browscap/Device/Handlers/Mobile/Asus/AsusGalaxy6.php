@@ -35,7 +35,7 @@ class AsusGalaxy6 extends AsusBase
     /**
      * @var string the detected device
      */
-    protected $_device = 'Galaxy 6';
+    protected $_device = 'Galaxy6';
     
     /**
      * Final Interceptor: Intercept

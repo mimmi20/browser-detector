@@ -36,11 +36,6 @@ class ArchosA35DM extends ArchosBase
      * @var string the detected device
      */
     protected $_device = 'A35DM';
-
-    /**
-     * @var string the detected manufacturer
-     */
-    protected $_manufacturer = 'Archos';
     
     /**
      * Final Interceptor: Intercept
