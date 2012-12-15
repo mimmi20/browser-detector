@@ -65,15 +65,16 @@ class Fennec extends BrowserHandler
         
         $isNotReallyAnFirefox = array(
             // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
             'Camino',
+            'Flock',
             'Galeon',
             'Lunascape',
-            'Opera',
+            'Maemo',
+            'Maxthon',
             'Navigator',
+            'Netfront',
+            'Opera',
             'PaleMoon',
-            'Flock',
             'SeaMonkey',
             // other Browsers
             'XBLWP7',

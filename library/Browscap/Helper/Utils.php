@@ -79,6 +79,7 @@ final class Utils
         'firefox or ie',
         'foma',
         'gingerbread',
+        'hd_mini_t',
         'hp-tablet',
         'hpwOS',
         'htc',
@@ -110,6 +111,7 @@ final class Utils
         'pocket pc',
         'pocketpc',
         'rim tablet',
+        'samsung',
         'series40',
         'series 60',
         'silk',
@@ -179,6 +181,7 @@ final class Utils
         'secmon',
         'siteinfo',
         'skymonk',
+        'slurp',
         'smartlinksaddon',
         'snap',
         'spider',
@@ -200,6 +203,7 @@ final class Utils
         'wordpress',
         'www.yahoo.com',
         'xxx',
+        'yandex',
         'zend_http_client',
         'zmeu'
     );
@@ -212,9 +216,10 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
-            if ($this->checkIfContains(array('Xbox', 'BADAB'))) {
+            if ($this->checkIfContains(array('xbox', 'badab', 'badap'), true)) {
                 return false;
             }
+            
             return true;
         }
         
@@ -342,7 +347,7 @@ final class Utils
         }
         
         if ($this->checkIfStartsWith(array('ua:'))) {
-            return false;
+            return true;
         }
         
         return false;
@@ -496,11 +501,16 @@ final class Utils
             return true;
         }
         
-        $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
+        $ntVersions = array(
+            '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', 
+            '6.2'
+        );
         
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
         if ($doMatch) {
-            if (in_array($matches[1], $ntVersions)) {
+            if (!$this->checkIfContains('linux', true) 
+                && in_array($matches[1], $ntVersions)
+            ) {
                 return false;
             }
             
@@ -525,18 +535,27 @@ final class Utils
             return true;
         }
         
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
+        if ($doMatch) {
+            $versions = explode('.', $matches[1]);
+            
+            if ($versions[0] >= 6 && $versions[1] > 0) {
+                return true;
+            }
+        }
+        
         return false;
     }
     
     public function isMobileWindows()
     {
         $mobileWindows = array(
-            'Windows CE', 'Windows Phone', 'Windows Mobile', 
-            'microsoft Windows; PPC', 'IEMobile', 'XBLWP7', 'ZuneWP7',
-            'WindowsMobile'
+            'windows ce', 'windows phone', 'windows mobile', 
+            'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
+            'windowsmobile'
         );
         
-        if (!$this->checkIfContains($mobileWindows)) {
+        if (!$this->checkIfContains($mobileWindows, true)) {
             return false;
         }
         

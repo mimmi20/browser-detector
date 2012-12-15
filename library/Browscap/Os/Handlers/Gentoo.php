@@ -51,7 +51,7 @@ class Gentoo extends Linux
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Gentoo', true)) {
+        if (!$this->_utils->checkIfContains('gentoo', true)) {
             return false;
         }
         

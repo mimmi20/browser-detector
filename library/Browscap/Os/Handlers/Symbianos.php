@@ -53,7 +53,7 @@ class Symbianos extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3'))) {
+        if (!$this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'S60V5'))) {
             return false;
         }
         

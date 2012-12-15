@@ -53,9 +53,12 @@ class WindowsMobileOs extends OsHandler
             return false;
         }
         
-        if ((!$this->_utils->isMobileWindows() 
-            && !($this->_utils->isWindows() && $this->_utils->isMobileBrowser()))
-            || $this->_utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))
+        if ($this->_utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))) {
+            return false;
+        }
+        
+        if (!$this->_utils->isMobileWindows() 
+            && !($this->_utils->isWindows() && $this->_utils->isMobileBrowser())
         ) {
             return false;
         }

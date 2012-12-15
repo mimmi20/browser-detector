@@ -50,7 +50,7 @@ class HtcSpark extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC;7 Trophy', '7 Trophy'))) {
+        if (!$this->_utils->checkIfContains(array('HTC;7 Trophy', '7 Trophy', 'HTC; mwp6985'))) {
             return false;
         }
         

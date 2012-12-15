@@ -59,6 +59,10 @@ class Apple extends GeneralMobile
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('Android'))) {
+            return false;
+        }
+        
         return true;
     }
     

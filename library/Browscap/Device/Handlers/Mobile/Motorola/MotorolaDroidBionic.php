@@ -48,7 +48,7 @@ class MotorolaDroidBionic extends MotorolaDroid
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(' Droid-Bionic ')) {
+        if (!$this->_utils->checkIfContains(array(' Droid-Bionic ', ' DROID BIONIC '))) {
             return false;
         }
         

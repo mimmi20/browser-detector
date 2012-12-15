@@ -59,6 +59,10 @@ class Sprint extends GeneralMobile
             return false;
         }
         
+        if ($this->_utils->checkIfContains('APA9292KT', 'APA7373KT', 'APX515CKT')) {
+            return false;
+        }
+        
         return true;
     }
     

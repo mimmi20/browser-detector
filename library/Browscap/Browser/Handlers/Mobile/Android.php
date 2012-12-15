@@ -63,7 +63,8 @@ class Android extends BrowserHandler
         $noAndroid = array(
             'AndroidDownloadManager',
             'BlackBerry', 
-            'Blackberry', 
+            'Blackberry',
+            'Browser/Phantom',
             'Chrome', 
             'Dalvik', 
             'Fennec', 
@@ -75,7 +76,8 @@ class Android extends BrowserHandler
             'Opera', 
             'RIM Tablet',
             'Silk',
-            'WeTab-Browser'
+            'WeTab-Browser',
+            'YahooMobileMessenger'
         );
         
         if ($this->_utils->checkIfContains($noAndroid)) {

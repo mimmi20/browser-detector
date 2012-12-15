@@ -53,7 +53,7 @@ class WebkitWebos extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser', 'wOSBrowser'))) {
+        if (!$this->_utils->checkIfContains(array('webOS', 'webOSBrowser', 'wOSBrowser', 'wOSSystem'))) {
             return false;
         }
         

@@ -49,6 +49,10 @@ class HbbTv extends BrowserHandler
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Opera')) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfContains('HbbTV')) {
             return true;
         }

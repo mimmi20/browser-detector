@@ -18,8 +18,6 @@ namespace Browscap\Device\Handlers\Mobile\Samsung;
  * @version    SVN: $Id$
  */
 
-use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -30,7 +28,7 @@ use Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class SamsungGts5560i extends SamsungBase
+class SamsungGts5560i extends SamsungGts5560
 {
     /**
      * @var string the detected device

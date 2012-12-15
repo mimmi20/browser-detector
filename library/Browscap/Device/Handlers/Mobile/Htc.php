@@ -81,7 +81,10 @@ class Htc extends GeneralMobile
             'Vision-T-Mobile-G2',
             'Wildfire S',
             'Wildfire S A510e',
-            'VPA_Touch'
+            'VPA_Touch',
+            'APA9292KT',
+            'APA7373KT',
+            'APX515CKT'
         );
         
         if ($this->_utils->checkIfContains($htcPhones)) {

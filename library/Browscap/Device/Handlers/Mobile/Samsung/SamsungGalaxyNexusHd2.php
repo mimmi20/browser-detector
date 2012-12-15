@@ -53,7 +53,7 @@ class SamsungGalaxyNexusHd2 extends SamsungGalaxyNexus
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('NexusHD2')) {
+        if (!$this->_utils->checkIfContains(array('NexusHD2', 'Nexus EvoHd2'))) {
             return false;
         }
         

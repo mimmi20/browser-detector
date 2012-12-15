@@ -50,7 +50,7 @@ class LgKc910 extends LgBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('LG/KC910')) {
+        if (!$this->_utils->checkIfContains(array('LG/KC910', 'LG-KC910'))) {
             return false;
         }
         
