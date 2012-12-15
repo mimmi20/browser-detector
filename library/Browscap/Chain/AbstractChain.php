@@ -146,8 +146,8 @@ abstract class AbstractChain
                     $filename, $this->_namespace, true
                 );
                 
-                $ex = new \Exception('Class:' . $className . ' Memory: ' . number_format(memory_get_usage(true), 0, ',', '.') . 'Bytes');
-                echo "\n\n" . $ex->getMessage() . "\n" . $ex->getTraceAsString() . "\n\n";
+                //$ex = new \Exception('Class:' . $className . ' Memory: ' . number_format(memory_get_usage(true), 0, ',', '.') . 'Bytes');
+                //echo "\n\n" . $ex->getMessage() . "\n" . $ex->getTraceAsString() . "\n\n";
                 
                 try {
                     $handler = new $className();
@@ -325,8 +325,8 @@ abstract class AbstractChain
                 
                 if ($handler->canHandle()) {
                     try {
-                        $ex = new \Exception('Class:' . get_class($handler) . ' Memory: ' . number_format(memory_get_usage(true), 0, ',', '.') . 'Bytes');
-                        echo "\n\n" . $ex->getMessage() . "\n" . $ex->getTraceAsString() . "\n\n";
+                        //$ex = new \Exception('Agent:' . $this->_userAgent . "\n" . 'Class:' . get_class($handler) . ' Memory: ' . number_format(memory_get_usage(true), 0, ',', '.') . 'Bytes');
+                        //echo "\n\n" . $ex->getMessage() . "\n" . $ex->getTraceAsString() . "\n\n";
                         
                         return $handler->detect();
                     } catch (\UnexpectedValueException $e) {
