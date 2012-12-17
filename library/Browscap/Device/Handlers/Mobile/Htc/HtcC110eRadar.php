@@ -50,7 +50,7 @@ class HtcC110eRadar extends HtcBase
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('HTC; Radar', 'HTC; Radar C110e'))) {
+        if (!$this->_utils->checkIfContains(array('HTC; Radar', 'HTC; Radar C110e', 'HTC; Radar; Orange'))) {
             return false;
         }
         

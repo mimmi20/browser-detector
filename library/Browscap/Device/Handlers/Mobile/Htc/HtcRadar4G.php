@@ -28,7 +28,7 @@ namespace Browscap\Device\Handlers\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcRadar4G extends HtcRadar
+class HtcRadar4G extends HtcC110eRadar
 {
     /**
      * @var string the detected device
