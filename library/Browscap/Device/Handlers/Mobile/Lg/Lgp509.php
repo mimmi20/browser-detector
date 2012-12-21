@@ -53,7 +53,7 @@ use Browscap\Device\Handlers\Mobile\Lg as LgBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class LgP509 extends LgBase
+class Lgp509 extends LgBase
 {
     /**
      * @var string the detected device
