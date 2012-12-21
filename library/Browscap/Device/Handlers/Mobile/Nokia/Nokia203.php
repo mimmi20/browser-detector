@@ -11,11 +11,11 @@ namespace Browscap\Device\Handlers\Mobile\Nokia;
  *
  * Refer to the COPYING.txt file distributed with this package.
  *
- * @category   WURFL
- * @package    WURFL_Handlers
- * @copyright  ScientiaMobile, Inc.
- * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @category  Browscap
+ * @package   Browscap
+ * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @version   SVN: $Id$
  */
 
 use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
@@ -24,11 +24,11 @@ use Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
  * CatchAllUserAgentHandler
  *
  *
- * @category   WURFL
- * @package    WURFL_Handlers
- * @copyright  ScientiaMobile, Inc.
- * @license    GNU Affero General Public License
- * @version    SVN: $Id$
+ * @category  Browscap
+ * @package   Browscap
+ * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @version   SVN: $Id$
  */
 class Nokia203 extends NokiaBase
 {

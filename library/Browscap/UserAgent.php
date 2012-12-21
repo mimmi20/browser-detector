@@ -4,36 +4,53 @@ namespace Browscap;
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
- * PHP version 5
+ * PHP version 5.3
  *
- * LICENSE: This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
+ * LICENSE:
  *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * Lesser General Public License for more details.
+ * Copyright (c) 2013, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
+ * All rights reserved.
  *
- * @category  CreditCalc
+ * Redistribution and use in source and binary forms, with or without 
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * * Redistributions of source code must retain the above copyright notice, 
+ *   this list of conditions and the following disclaimer.
+ * * Redistributions in binary form must reproduce the above copyright notice, 
+ *   this list of conditions and the following disclaimer in the documentation 
+ *   and/or other materials provided with the distribution.
+ * * Neither the name of the authors nor the names of its contributors may be 
+ *   used to endorse or promote products derived from this software without 
+ *   specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @category  Browscap
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version    SVN: $Id$
+ * @version   SVN: $Id$
  */
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
- * @category  CreditCalc
+ * @category  Browscap
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2007-2010 Unister GmbH
+ * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 class UserAgent extends Core
 {
@@ -97,15 +114,15 @@ class UserAgent extends Core
             } else {
                 $this->_os = $this->_detectOs();
             }
-            //var_dump('###################################', $this->_agent);
+            
             if ($this->_device->hasBrowser()) {
-                $this->_browser = $this->_device->getBrowser();//var_dump('device hat browser', get_class($this->_device), get_class($this->_os), get_class($this->_browser));
+                $this->_browser = $this->_device->getBrowser();
             } else {
-                $this->_browser = $this->_detectBrowser();//var_dump('device hat keinen browser', get_class($this->_device), get_class($this->_os), get_class($this->_browser));
+                $this->_browser = $this->_detectBrowser();
             }
             
             if ($this->_browser->hasEngine()) {
-                $this->_engine = $this->_browser->getEngine();
+                $this->_engine = $this->_browser->getName();
             } else {
                 $this->_engine = $this->_detectEngine();
             }
@@ -131,11 +148,11 @@ class UserAgent extends Core
      */
     private function _detectEngine()
     {
-        $engineChain = new Engine\Chain();
-        $engineChain->setLogger($this->_logger);
-        $engineChain->setUserAgent($this->_agent);
+        $chain = new Engine\Chain();
+        $chain->setLogger($this->_logger);
+        $chain->setUserAgent($this->_agent);
         
-        return $engineChain->detect();
+        return $chain->detect();
     }
 
     /**
@@ -145,11 +162,11 @@ class UserAgent extends Core
      */
     private function _detectBrowser()
     {
-        $browserChain = new Browser\Chain();
-        $browserChain->setLogger($this->_logger);
-        $browserChain->setUserAgent($this->_agent);
+        $chain = new Browser\Chain();
+        $chain->setLogger($this->_logger);
+        $chain->setUserAgent($this->_agent);
         
-        return $browserChain->detect();
+        return $chain->detect();
     }
 
     /**
@@ -159,11 +176,11 @@ class UserAgent extends Core
      */
     private function _detectOs()
     {
-        $osChain = new Os\Chain();
-        $osChain->setLogger($this->_logger);
-        $osChain->setUserAgent($this->_agent);
+        $chain = new Os\Chain();
+        $chain->setLogger($this->_logger);
+        $chain->setUserAgent($this->_agent);
         
-        return $osChain->detect();
+        return $chain->detect();
     }
 
     /**
@@ -173,11 +190,11 @@ class UserAgent extends Core
      */
     private function _detectDevice()
     {
-        $deviceChain = new Device\Chain();
-        $deviceChain->setLogger($this->_logger);
-        $deviceChain->setUserAgent($this->_agent);
+        $chain = new Device\Chain();
+        $chain->setLogger($this->_logger);
+        $chain->setUserAgent($this->_agent);
         
-        $this->_device = $deviceChain->detect();
+        $this->_device = $chain->detect();
         
         return $this;
     }
@@ -388,13 +405,13 @@ class UserAgent extends Core
         return $this->_browser->isTranscoder();
     }
     
-    final public function getEngine()
+    final public function getName()
     {
         if (null === $this->_engine) {
             return null;
         }
         
-        return $this->_engine->getEngine();
+        return $this->_engine->getName();
     }
     
     final public function getEngineVersion()
@@ -406,13 +423,13 @@ class UserAgent extends Core
         return $this->_engine->getVersion();
     }
     
-    final public function getFullEngine($withBits = true)
+    final public function getFullEngine()
     {
         if (null === $this->_engine) {
             return null;
         }
         
-        return $this->_engine->getFullEngine($withBits);
+        return $this->_engine->getFullName();
     }
     
     final public function getPlatform()
