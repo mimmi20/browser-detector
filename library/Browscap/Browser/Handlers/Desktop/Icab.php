@@ -160,7 +160,6 @@ class Icab extends BrowserHandler
     public function getName()
     {
         $handler = new \Browscap\Engine\Handlers\Webkit();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

@@ -141,7 +141,6 @@ class WebOs extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setLogger($this->_logger);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
         $chain->setUseragent($this->_useragent);
         

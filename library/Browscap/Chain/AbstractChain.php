@@ -59,11 +59,6 @@ abstract class AbstractChain
      * @var Browscap\Helper\Utils
      */
     protected $_utils = null;
-    
-    /*
-     * @var \Zend\Log\Logger
-     */
-    protected $_logger = null;
 
     /**
      * a \Zend\Cache object
@@ -135,7 +130,6 @@ abstract class AbstractChain
     {
         // the utility classes
         $this->_utils  = null;
-        $this->_logger = null;
         $this->_useHandlersFromDir = true;
         $this->_handlersToUse = null;
         $this->_defaultHandler = null;
@@ -172,8 +166,6 @@ abstract class AbstractChain
                 try {
                     $handler = new $className();
                 } catch (\Exception $e) {
-                    $this->_logger->err($e);
-                    
                     continue;
                 }
                 
@@ -184,41 +176,14 @@ abstract class AbstractChain
                 $className = $this->_utils->getClassNameFromFile(
                     $filename, $this->_namespace, true
                 );
-                $ex = new \Exception($className);
-                $this->_logger->err($ex);
-                try {
-                    $handler = new $className();
-                } catch (\Exception $e) {
-                    $this->_logger->err($e);
-                    
-                    continue;
-                }
+                
+                $handler = new $className();
                 
                 $chain->insert($handler, $handler->getWeight());
             }
         }
         
         return $chain;
-    }
-    
-    /**
-     * sets the logger used when errors occur
-     *
-     * @param \Zend\Log\Logger $logger
-     *
-     * @return 
-     */
-    final public function setLogger(\Zend\Log\Logger $logger = null)
-    {
-        if (!($logger instanceof \Zend\Log\Logger)) {
-            throw new \InvalidArgumentException(
-                'the logger must be an instance of \\Zend\\Log\\Logger'
-            );
-        }
-        
-        $this->_logger = $logger;
-        
-        return $this;
     }
     
     /**
@@ -349,19 +314,14 @@ abstract class AbstractChain
             
             while ($chain->valid()) {
                 $handler = $chain->current();
-                $handler->setLogger($this->_logger);
-                $handler->setUserAgent($this->_userAgent);
+                        $handler->setUserAgent($this->_userAgent);
                 
                 if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
                     $handler->setCache($this->_cache);
                 }
                 
                 if ($handler->canHandle()) {
-                    try {
-                        return $handler->detect();
-                    } catch (\UnexpectedValueException $e) {
-                        $this->_logger->err($e);
-                    }
+                    return $handler->detect();
                 }
                 
                 $chain->next();
@@ -378,7 +338,6 @@ abstract class AbstractChain
             );
             $handler = new $className();
         }
-        $handler->setLogger($this->_logger);
         $handler->setUserAgent($this->_userAgent);
         
         if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {

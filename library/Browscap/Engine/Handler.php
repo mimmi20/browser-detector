@@ -61,11 +61,6 @@ abstract class Handler implements MatcherInterface
     protected $_useragent = '';
     
     /**
-     * @var \Zend\Log\Logger
-     */
-    protected $_logger = null;
-    
-    /**
      * @var \Browscap\Helper\Utils the helper class
      */
     protected $_utils = null;
@@ -105,27 +100,6 @@ abstract class Handler implements MatcherInterface
     {
         $this->_useragent = $userAgent;
         $this->_utils->setUserAgent($userAgent);
-        
-        return $this;
-    }
-    
-    /**
-     * sets the logger used when errors occur
-     *
-     * @param \Zend\Log\Logger $logger
-     *
-     * @return 
-     */
-    final public function setLogger(\Zend\Log\Logger $logger = null)
-    {
-        if (!($logger instanceof \Zend\Log\Logger)) {
-            throw new \InvalidArgumentException(
-                'the logger must be an instance of \\Zend\\Log\\Logger'
-            );
-        }
-        
-        $this->_logger = $logger;
-        $this->_utils->setLogger($logger);
         
         return $this;
     }

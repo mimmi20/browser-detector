@@ -130,7 +130,6 @@ class Hp9000 extends GeneralDesktop
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);
-        $chain->setLogger($this->_logger);
         $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
         $chain->setUseragent($this->_useragent);
         
@@ -166,7 +165,6 @@ class Hp9000 extends GeneralDesktop
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }

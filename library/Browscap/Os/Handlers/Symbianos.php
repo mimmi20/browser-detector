@@ -129,7 +129,6 @@ class Symbianos extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setLogger($this->_logger);
         
         if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3'))) {
             $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\NokiaBrowser());

@@ -65,11 +65,6 @@ abstract class ModelAbstract extends ZendDbTableAbstractTable
      * @var Zend_Config
      */
     protected $_config = null;
-
-    /**
-     * @var \Zend\Log\Logger
-     */
-    protected $_logger = null;
     
     /**
      * holds the data about the actual record
@@ -105,7 +100,6 @@ abstract class ModelAbstract extends ZendDbTableAbstractTable
         
         $front         = \Zend\Controller\Front::getInstance();
         $this->_config = \Zend\Registry::get('_config');
-        $this->_logger = \Zend\Registry::get('log');
         
         $this->_db->exec("SET NAMES 'utf8';");
     }
@@ -185,19 +179,7 @@ abstract class ModelAbstract extends ZendDbTableAbstractTable
              */
             return $stmt->fetchAll($fetchMode);
         } catch (\Exception $e) {
-            $this->logExecuteError($e, $stmt);
-
             return false;
         }
-    }
-
-    protected function logExecuteError(\Exception $e, \Zend\Db\Statement\Pdo $stmt)
-    {
-        $message   = $e->getMessage()
-            . "\n" . 'ErrorInfo: ' . serialize($stmt->errorInfo());
-
-        $exception = new \Exception($message, $e->getCode(), $e);
-
-        $this->_logger->err($exception);
     }
 }

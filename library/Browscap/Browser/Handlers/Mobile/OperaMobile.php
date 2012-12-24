@@ -174,7 +174,6 @@ class OperaMobile extends BrowserHandler
     public function getName()
     {
         $handler = new \Browscap\Engine\Handlers\Presto();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

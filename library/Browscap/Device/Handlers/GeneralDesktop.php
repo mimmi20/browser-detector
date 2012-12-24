@@ -143,7 +143,6 @@ class GeneralDesktop extends DeviceHandler
         );
         $chain->setDefaultHandler($this);
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }
@@ -186,7 +185,6 @@ class GeneralDesktop extends DeviceHandler
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }

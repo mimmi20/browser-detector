@@ -72,9 +72,8 @@ class CatchAll extends Unknown
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Browscap();
-        $detector->setLogger($this->_logger);
-        
+        $detector = new \Browscap\Input\Browscap();
+                
         $detected = $detector->getBrowser($this->_useragent);
         
         $this->_browser = $detected->Browser;

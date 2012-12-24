@@ -122,7 +122,6 @@ class Lenovo extends GeneralMobile
         );
         $chain->setDefaultHandler($this);
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }
@@ -156,7 +155,6 @@ class Lenovo extends GeneralMobile
         );
         
         $chain = new \Browscap\Os\Chain(false, $os);
-        $chain->setLogger($this->_logger);
         $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
         $chain->setUseragent($this->_useragent);
         

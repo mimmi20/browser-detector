@@ -126,7 +126,6 @@ class Sanyo extends GeneralMobile
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

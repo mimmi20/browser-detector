@@ -137,7 +137,6 @@ class PlayStationPortable extends SonyBase
     {
         $handler = new \Browscap\Browser\Handlers\Mobile\NetFront();
         $handler->setUserAgent($this->_useragent);
-        $handler->setLogger($this->_logger);
         
         return $handler->detect();
     }

@@ -89,56 +89,29 @@ class UserAgent extends Core
      *
      * @return 
      */
-    public function getBrowser($forceDetect = false, $userAgent = null)
+    public function getBrowser()
     {
-        // Automatically detect the useragent, if not given
-        if ('' === $this->_agent 
-            && (empty($userAgent) || !is_string($userAgent))
-        ) {
-            $userAgent = $this->_support->getUserAgent();
+        $this->_detectDevice();
+        
+        if ($this->_device->hasOs()) {
+            $this->_os = $this->_device->getOs();
+        } else {
+            $this->_os = $this->_detectOs();
         }
         
-        if (null !== $userAgent) {
-            $this->_agent = $userAgent;
+        if ($this->_device->hasBrowser()) {
+            $this->_browser = $this->_device->getBrowser();
+        } else {
+            $this->_browser = $this->_detectBrowser();
         }
         
-        $this->_cleanedAgent = $this->_support->cleanAgent($this->_agent);
-        
-        if ($forceDetect 
-            || !($browserArray = $this->_getBrowserFromCache($this->_cleanedAgent))
-        ) {
-            $this->_detectDevice();
-            
-            if ($this->_device->hasOs()) {
-                $this->_os = $this->_device->getOs();
-            } else {
-                $this->_os = $this->_detectOs();
-            }
-            
-            if ($this->_device->hasBrowser()) {
-                $this->_browser = $this->_device->getBrowser();
-            } else {
-                $this->_browser = $this->_detectBrowser();
-            }
-            
-            if ($this->_browser->hasEngine()) {
-                $this->_engine = $this->_browser->getName();
-            } else {
-                $this->_engine = $this->_detectEngine();
-            }
-            
-            $browserArray = $this;
-            
-            if (!$forceDetect 
-                && $this->_cache instanceof \Zend\Cache\Frontend\Core
-            ) {
-                $cacheId = $this->_getCacheFromAgent($this->_cleanedAgent);
-                
-                $this->_cache->save($browserArray, $cacheId);
-            }
+        if ($this->_browser->hasEngine()) {
+            $this->_engine = $this->_browser->getName();
+        } else {
+            $this->_engine = $this->_detectEngine();
         }
         
-        return $browserArray;
+        return $this;
     }
 
     /**
@@ -149,7 +122,6 @@ class UserAgent extends Core
     private function _detectEngine()
     {
         $chain = new Engine\Chain();
-        $chain->setLogger($this->_logger);
         $chain->setUserAgent($this->_agent);
         
         return $chain->detect();
@@ -163,7 +135,6 @@ class UserAgent extends Core
     private function _detectBrowser()
     {
         $chain = new Browser\Chain();
-        $chain->setLogger($this->_logger);
         $chain->setUserAgent($this->_agent);
         
         return $chain->detect();
@@ -177,7 +148,6 @@ class UserAgent extends Core
     private function _detectOs()
     {
         $chain = new Os\Chain();
-        $chain->setLogger($this->_logger);
         $chain->setUserAgent($this->_agent);
         
         return $chain->detect();
@@ -191,7 +161,6 @@ class UserAgent extends Core
     private function _detectDevice()
     {
         $chain = new Device\Chain();
-        $chain->setLogger($this->_logger);
         $chain->setUserAgent($this->_agent);
         
         $this->_device = $chain->detect();

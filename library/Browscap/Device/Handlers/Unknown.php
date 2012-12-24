@@ -123,7 +123,6 @@ final class Unknown extends DeviceHandler
     {
         $browser = new \Browscap\Browser\Handlers\Unknown();
         $browser->setUserAgent($this->_useragent);
-        $browser->setLogger($this->_logger);
         
         return $browser->detect();
     }

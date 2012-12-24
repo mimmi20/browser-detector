@@ -62,11 +62,6 @@ abstract class Core
      * @var \Zend\Cache
      */
     protected $_cache = null;
-
-    /*
-     * @var \Zend\Log\Logger
-     */
-    protected $_logger = null;
     
     /*
      * @var string
@@ -74,46 +69,11 @@ abstract class Core
     protected $_cachePrefix = '';
     
     /**
-     * @var \Browscap\Helper\Support
-     */
-    protected $_support = null;
-    
-    /**
      * the user agent sent from the browser
      *
      * @var string
      */
     protected $_agent = '';
-    
-    /**
-     * the user agent sent from the browser - cleaned
-     *
-     * @var string
-     */
-    protected $_cleanedAgent = '';
-    
-    /**
-     * Constructor class, checks for the existence of (and loads) the cache and
-     * if needed updated the definitions
-     */
-    public function __construct()
-    {
-        $this->_support = new Support();
-    }
-    
-    /**
-     * sets the logger used when errors occur
-     *
-     * @param \Zend\Log\Logger $logger
-     *
-     * @return 
-     */
-    public function setLogger(\Zend\Log\Logger $logger)
-    {
-        $this->_logger = $logger;
-        
-        return $this;
-    }
     
     /**
      * sets the cache used to make the detection faster
@@ -139,6 +99,8 @@ abstract class Core
     public function setCachePrefix($prefix)
     {
         $this->_cachePrefix = $prefix;
+        
+        return $this;
     }
 
     /**
@@ -149,51 +111,6 @@ abstract class Core
      * @return 
      */
     abstract public function getBrowser($userAgent = null, $forceDetect = false);
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent the user agent string
-     *
-     * @return 
-     */
-    protected function _getBrowserFromCache($userAgent = null)
-    {
-        if (!($this->_cache instanceof \Zend\Cache\Frontend\Core)) {
-            return null;
-        }
-        
-        $cacheId = $this->_getCacheFromAgent($userAgent);
-        
-        return $this->_cache->load($cacheId);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string  $userAgent the user agent string
-     *
-     * @return 
-     */
-    protected function _getCacheFromAgent($userAgent = null)
-    {
-        return substr(
-            $this->_cachePrefix . 'agent_' . preg_replace(
-                '/[^a-zA-Z0-9_]/', '_', $userAgent
-            ), 
-            0, 
-            179
-        );
-    }
-    
-    protected function _log($message, $level)
-    {
-        if (!($this->_logger instanceof \Zend\Log\Logger)) {
-            return false;
-        }
-        
-        $this->_logger->log($message, $level);
-    }
     
     /**
      * returns the stored user agent
@@ -215,15 +132,5 @@ abstract class Core
     public function getAgent()
     {
         return $this->_agent;
-    }
-    
-    /**
-     * returns the stored and cleaned user agent
-     *
-     * @return string
-     */
-    public function getcleanedAgent()
-    {
-        return $this->_cleanedAgent;
     }
 }

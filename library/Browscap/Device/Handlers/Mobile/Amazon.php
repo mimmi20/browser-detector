@@ -108,7 +108,6 @@ class Amazon extends GeneralMobile
         );
         $chain->setDefaultHandler($this);
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }
@@ -152,7 +151,6 @@ class Amazon extends GeneralMobile
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

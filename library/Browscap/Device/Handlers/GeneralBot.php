@@ -133,9 +133,7 @@ class GeneralBot extends DeviceHandler
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Unknown();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
-        $handler->setLogger($this->_logger);
         
         return $handler->detect();
     }
@@ -168,7 +166,6 @@ class GeneralBot extends DeviceHandler
         $chain = new \Browscap\Browser\Chain(true, null, $browserPath, $browserNs);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }

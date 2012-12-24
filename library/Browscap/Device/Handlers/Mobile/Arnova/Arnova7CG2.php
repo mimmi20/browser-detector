@@ -121,7 +121,6 @@ class Arnova7CG2 extends ArnovaBase
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Android();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

@@ -148,7 +148,6 @@ class RimTablet extends RimOs
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setLogger($this->_logger);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Blackberry());
         $chain->setUseragent($this->_useragent);
         

@@ -186,7 +186,6 @@ class Ios extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Browser\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setLogger($this->_logger);
         $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Safari());
         $chain->setUseragent($this->_useragent);
         

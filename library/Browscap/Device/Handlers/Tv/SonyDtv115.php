@@ -130,7 +130,6 @@ class SonyDtv115 extends GeneralTv
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\LinuxTv();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

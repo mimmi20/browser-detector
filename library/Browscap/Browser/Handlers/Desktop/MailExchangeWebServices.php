@@ -251,7 +251,6 @@ class MailExchangeWebServices extends BrowserHandler
     public function getName()
     {
         $handler = new \Browscap\Engine\Handlers\Gecko();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

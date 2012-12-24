@@ -106,7 +106,6 @@ class Apple extends GeneralMobile
         );
         $chain->setDefaultHandler($this);
         $chain->setUserAgent($this->_useragent);
-        $chain->setLogger($this->_logger);
         
         return $chain->detect();
     }
@@ -140,7 +139,6 @@ class Apple extends GeneralMobile
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Ios();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

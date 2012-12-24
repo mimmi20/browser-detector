@@ -116,7 +116,6 @@ class Phantom extends BrowserHandler
         );
         
         $chain = new \Browscap\Engine\Chain(false, $engines);
-        $chain->setLogger($this->_logger);
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

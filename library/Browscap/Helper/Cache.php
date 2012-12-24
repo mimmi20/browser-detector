@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Browser\Handlers\General;
+namespace Browscap\Helper;
 
 /**
  * PHP version 5.3
@@ -33,68 +33,49 @@ namespace Browscap\Browser\Handlers\General;
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
- *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * 
+ * @package TeraWurfl
+ * @author Steve Kamerman <stevekamerman AT gmail.com>
+ * @version Stable 2.1.3 $Date: 2010/09/18 15:43:21
+ * @license http://www.mozilla.org/MPL/ MPL Vesion 1.1
  */
-
-use Browscap\Browser\Handler as BrowserHandler;
-
 /**
- * CatchAllUserAgentHandler
+ * Provides static supporting functions for Tera-WURFL
+ * @package TeraWurfl
  *
- *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
-class Boxee extends BrowserHandler
+class Cache
 {
     /**
-     * @var string the detected browser
-     */
-    protected $_browser = 'Boxee';
-    
-    /**
-     * Returns true if this handler can handle the given user agent
+     * Gets the information about the browser by User Agent
      *
-     * @return bool
+     * @param string  $userAgent the user agent string
+     *
+     * @return 
      */
-    public function canHandle()
+    public function getBrowserFromCache(\Zend\Cache\Frontend\Core $cache, 
+        $userAgent = null)
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
+        $cacheId = $this->getCacheIdFromAgent($userAgent);
         
-        return $this->_utils->checkIfContains('Boxee');
+        return $cache->load($cacheId);
     }
-    
+
     /**
-     * returns TRUE if the browser has a specific rendering engine
+     * Gets the information about the browser by User Agent
      *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * @param string $userAgent the user agent string
      *
-     * @return null|\Browscap\Os\Handler
+     * @return 
      */
-    public function getName()
+    public function getCacheIdFromAgent($userAgent = null)
     {
-        $handler = new \Browscap\Engine\Handlers\Unknown();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return substr(
+            $this->_cachePrefix . 'agent_' . preg_replace(
+                '/[^a-zA-Z0-9_]/', '_', $userAgent
+            ), 
+            0, 
+            179
+        );
     }
 }

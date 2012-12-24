@@ -121,7 +121,6 @@ class WindowsDesktop extends GeneralDesktop
     public function detectOs()
     {
         $handler = new \Browscap\Os\Handlers\Windows();
-        $handler->setLogger($this->_logger);
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

@@ -52,25 +52,6 @@ final class Utils
     private $_useragent = '';
     
     /**
-     * @var \Zend\Log\Logger
-     */
-    private $_logger = null;
-    
-    /**
-     * sets the logger used when errors occur
-     *
-     * @param \Zend\Log\Logger $logger
-     *
-     * @return 
-     */
-    final public function setLogger(\Zend\Log\Logger $logger = null)
-    {
-        $this->_logger = $logger;
-        
-        return $this;
-    }
-    
-    /**
      * sets the user agent to be handled
      *
      * @return void

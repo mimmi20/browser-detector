@@ -220,14 +220,8 @@ class Browsers extends ModelAbstract
             'data' => $rows
         );
         
-        try {
-            $rowSet = new \Zend\Db\Table\Rowset($options);
-            $rowSet->setTable($this);
-        } catch (\Exception $e) {
-            $this->_logger->err($e);
-
-            return false;
-        }
+        $rowSet = new \Zend\Db\Table\Rowset($options);
+        $rowSet->setTable($this);
         
         while ($rowSet->valid()) {
             $rowSet->current();
