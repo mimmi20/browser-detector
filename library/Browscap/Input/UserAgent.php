@@ -1,5 +1,5 @@
 <?php
-namespace Browscap;
+namespace Browscap\Input;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities

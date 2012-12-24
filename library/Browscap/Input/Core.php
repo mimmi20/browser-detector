@@ -1,5 +1,5 @@
 <?php
-namespace Browscap;
+namespace Browscap\Input;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -43,7 +43,7 @@ namespace Browscap;
  * @version   SVN: $Id$
  */
 
-use Browscap\Helper\Support;
+use \Browscap\Helper\Support;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap;
+namespace Browscap\Input;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -86,7 +86,7 @@ class Browscap extends Core
     public function __construct()
     {
         // default data file
-        $this->setLocaleFile(__DIR__ . '/data/browscap.ini');
+        $this->setLocaleFile(__DIR__ . '/../data/browscap.ini');
         
         parent::__construct();
     }
