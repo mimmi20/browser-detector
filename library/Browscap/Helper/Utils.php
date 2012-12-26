@@ -651,28 +651,6 @@ final class Utils
         return strpos($this->_useragent, $needle) === 0;
     }
     
-    public function getClassNameFromFile($filename, $namespace = __NAMESPACE__, $createFullName = true)
-    {
-        $filename = ltrim($filename, '\\');
-        
-        if (!$createFullName) {
-            return $filename;
-        }
-        
-        return '\\' . $namespace . '\\' . $filename;
-    }
-    
-    public function getClassNameFromDetected($detected, $namespace = __NAMESPACE__)
-    {
-        $class = $this->getClassNameFromFile($detected, $namespace, false);
-        
-        $class = strtolower(str_replace(array('-', '_', ' ', '/', '\\'), ' ', $class));
-        $class = preg_replace('/[^a-zA-Z ]/', '', $class);
-        $class = str_replace(' ', '', ucwords($class));
-        
-        return '\\' . $namespace . '\\Handlers\\' . $class;
-    }
-    
     /**
      * maps different Safari Versions to a normalized format
      *

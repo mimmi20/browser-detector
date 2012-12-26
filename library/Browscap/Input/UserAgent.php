@@ -90,24 +90,9 @@ class UserAgent extends Core
     public function getBrowser()
     {
         $this->_detectDevice();
-        
-        if ($this->_device->hasOs()) {
-            $this->_os = $this->_device->detectOs();
-        } else {
-            $this->_os = $this->_detectOs();
-        }
-        
-        if ($this->_device->hasBrowser()) {
-            $this->_browser = $this->_device->getBrowser();
-        } else {
-            $this->_browser = $this->_detectBrowser();
-        }
-        
-        if ($this->_browser->hasEngine()) {
-            $this->_engine = $this->_browser->getName();
-        } else {
-            $this->_engine = $this->_detectEngine();
-        }
+        $this->_detectOs();
+        $this->_detectBrowser();
+        $this->_detectEngine();
         
         return $this;
     }
@@ -119,8 +104,11 @@ class UserAgent extends Core
      */
     private function _detectEngine()
     {
-        $chain = new \Browscap\Engine\Chain();
+        $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\\Browscap\\Detector\\Engine');
+        $chain->setDirectory($directory);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
         
         return $chain->detect();
     }
@@ -132,8 +120,11 @@ class UserAgent extends Core
      */
     private function _detectBrowser()
     {
-        $chain = new \Browscap\Browser\Chain();
+        $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\\Browscap\\Detector\\Browser');
+        $chain->setDirectory($directory);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
     }
@@ -145,8 +136,11 @@ class UserAgent extends Core
      */
     private function _detectOs()
     {
-        $chain = new \Browscap\Os\Chain();
+        $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\\Browscap\\Detector\\Os');
+        $chain->setDirectory($directory);
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
         
         return $chain->detect();
     }
@@ -158,8 +152,11 @@ class UserAgent extends Core
      */
     private function _detectDevice()
     {
-        $chain = new \Browscap\Device\Chain();
+        $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\\Browscap\\Detector\\Device');
+        $chain->setDirectory($directory);
+        $chain->setDefaultHandler(new \Browscap\Detector\Device\Unknown());
         
         $this->_device = $chain->detect();
         
