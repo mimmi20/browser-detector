@@ -1,9 +1,7 @@
 <?php
-namespace Browscap\Input;
+namespace Browscap\Engine;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
- *
  * PHP version 5.3
  *
  * LICENSE:
@@ -38,97 +36,50 @@ namespace Browscap\Input;
  *
  * @category  Browscap
  * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Helper\Support;
-
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * WURFL_Handlers_Matcher is the base interface that concrete classes 
+ * must implement to retrieve a device with the given request    
  *
  * @category  Browscap
  * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @version   SVN: $Id$
  */
-abstract class Core
+interface MatcherInterface
 {
     /**
-     * a \Zend\Cache object
+     * sets the user agent to be handled
      *
-     * @var \Zend\Cache
-     */
-    protected $_cache = null;
-    
-    /*
-     * @var string
-     */
-    protected $_cachePrefix = '';
-    
-    /**
-     * the user agent sent from the browser
-     *
-     * @var string
-     */
-    protected $_agent = '';
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Frontend\Core $cache
-     *
-     * @return 
-     */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        $this->_cache = $cache;
-        
-        return $this;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param string $prefix the new prefix
+     * @param string $userAgent
      *
      * @return void
      */
-    public function setCachePrefix($prefix)
-    {
-        $this->_cachePrefix = $prefix;
-        
-        return $this;
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @return 
-     */
-    abstract public function getBrowser();
+    public function setUserAgent($userAgent);
     
     /**
-     * returns the stored user agent
+     * Returns true if this handler can handle the given user agent
      *
-     * @return UserAgent
+     * @return bool
      */
-    public function setAgent($userAgent)
-    {
-        $this->_agent = $userAgent;
-        
-        return $this;
-    }
+    public function canHandle();
     
     /**
-     * returns the stored user agent
+     * detects the engine name from the given user agent
      *
-     * @return string
+     * @return StdClass
      */
-    public function getAgent()
-    {
-        return $this->_agent;
-    }
+    public function detect();
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight();
 }

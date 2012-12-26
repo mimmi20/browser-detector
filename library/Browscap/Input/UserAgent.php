@@ -85,8 +85,6 @@ class UserAgent extends Core
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string  $userAgent the user agent string
-     *
      * @return 
      */
     public function getBrowser()
@@ -94,7 +92,7 @@ class UserAgent extends Core
         $this->_detectDevice();
         
         if ($this->_device->hasOs()) {
-            $this->_os = $this->_device->getOs();
+            $this->_os = $this->_device->detectOs();
         } else {
             $this->_os = $this->_detectOs();
         }
@@ -121,7 +119,7 @@ class UserAgent extends Core
      */
     private function _detectEngine()
     {
-        $chain = new Engine\Chain();
+        $chain = new \Browscap\Engine\Chain();
         $chain->setUserAgent($this->_agent);
         
         return $chain->detect();
@@ -134,7 +132,7 @@ class UserAgent extends Core
      */
     private function _detectBrowser()
     {
-        $chain = new Browser\Chain();
+        $chain = new \Browscap\Browser\Chain();
         $chain->setUserAgent($this->_agent);
         
         return $chain->detect();
@@ -147,7 +145,7 @@ class UserAgent extends Core
      */
     private function _detectOs()
     {
-        $chain = new Os\Chain();
+        $chain = new \Browscap\Os\Chain();
         $chain->setUserAgent($this->_agent);
         
         return $chain->detect();
@@ -160,7 +158,7 @@ class UserAgent extends Core
      */
     private function _detectDevice()
     {
-        $chain = new Device\Chain();
+        $chain = new \Browscap\Device\Chain();
         $chain->setUserAgent($this->_agent);
         
         $this->_device = $chain->detect();
@@ -189,7 +187,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->getDevice();
+        return $this->_device->getCapability('model_name');
     }
     
     /**
@@ -203,7 +201,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->getVersion();
+        return null; // $this->_device->getCapability('mobile_browser');
     }
     
     /**
@@ -217,7 +215,21 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->getFullDeviceName($withManufacturer);
+        $device  = $this->_device->getCapability('model_name');
+        $version = null; // $this->getVersion();
+        
+        $device .= ($device != $version && '' != $version ? ' ' . $version : '');
+        $manufacturer = $this->_device->getCapability('manufacturer_name');
+        
+        if ($withManufacturer 
+            && $manufacturer 
+            && 'unknown' != $manufacturer
+            && false === strpos($device, 'general')
+        ) {
+            $device = $manufacturer . ' ' . $device;
+        }
+        
+        return $device;
     }
     
     /**
@@ -231,7 +243,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->getManufacturer();
+        return $this->_device->getCapability('manufacturer_name');
     }
     
     /**
@@ -251,15 +263,15 @@ class UserAgent extends Core
         $support = true;
         
         if (null !== $this->_engine) {
-            $support = $support && $this->_engine->isRssSupported();
+            $support = $support && $this->_engine->getCapability('rss_support');
         }
         
         if ($support && null !== $this->_browser) {
-            $support = $support && $this->_browser->isRssSupported();
+            $support = $support && $this->_browser->getCapability('rss_support');
         }
         
         if ($support && null !== $this->_device) {
-            $support = $support && $this->_device->isRssSupported();
+            $support = $support && $this->_device->getCapability('rss_support');
         }
         
         return $support;
@@ -282,15 +294,15 @@ class UserAgent extends Core
         $support = true;
         
         if (null !== $this->_engine) {
-            $support = $support && $this->_engine->isPdfSupported();
+            $support = $support && $this->_engine->getCapability('pdf_support');
         }
         
         if ($support && null !== $this->_browser) {
-            $support = $support && $this->_browser->isPdfSupported();
+            $support = $support && $this->_browser->getCapability('pdf_support');
         }
         
         if ($support && null !== $this->_device) {
-            $support = $support && $this->_device->isPdfSupported();
+            $support = $support && $this->_device->getCapability('pdf_support');
         }
         
         return $support;
@@ -302,7 +314,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->getBrowser();
+        return $this->_browser->getCapability('mobile_browser');
     }
     
     final public function getVersion()
@@ -311,7 +323,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->getVersion();
+        return $this->_browser->getCapability('mobile_browser_version');
     }
     
     final public function getBits()
@@ -320,7 +332,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->getBits();
+        return $this->_browser->getCapability('mobile_browser_bits');
     }
     
     final public function getFullBrowser($withBits = true)
@@ -329,7 +341,11 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->getFullBrowser($withBits);
+        $browser = $this->_browser->getCapability('mobile_browser');
+        $version = $this->_browser->getCapability('mobile_browser_version');
+        $bits    = $this->_browser->getCapability('mobile_browser_bits');
+        
+        return $browser . ($browser != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**
@@ -343,7 +359,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->getManufacturer();
+        return $this->_browser->getCapability('mobile_browser_manufacturer');
     }
     
     /**
@@ -357,7 +373,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_os->getManufacturer();
+        return $this->_os->getCapability('device_os_manufacturer');
     }
     
     /**
@@ -371,7 +387,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->isTranscoder();
+        return $this->_browser->getCapability('is_transcoder');
     }
     
     final public function getName()
@@ -380,7 +396,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_engine->getName();
+        return $this->_engine->getCapability('renderingengine_name');
     }
     
     final public function getEngineVersion()
@@ -389,7 +405,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_engine->getVersion();
+        return $this->_engine->getCapability('renderingengine_version');
     }
     
     final public function getFullEngine()
@@ -398,7 +414,10 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_engine->getFullName();
+        $engine  = $this->_engine->getCapability('renderingengine_name');
+        $version = $this->_engine->getCapability('renderingengine_version');
+        
+        return $engine . (($engine != $version && '' != $version) ? ' ' . $version : '');
     }
     
     final public function getPlatform()
@@ -407,7 +426,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_os->getName();
+        return $this->_os->getCapability('device_os');
     }
     
     final public function getPlatformVersion()
@@ -416,7 +435,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_os->getVersion();
+        return $this->_os->getCapability('device_os_version');
     }
     
     final public function getPlatformBits()
@@ -425,7 +444,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_os->getBits();
+        return $this->_os->getCapability('device_os_bits');
     }
     
     final public function getFullPlatform($withBits = true)
@@ -434,7 +453,11 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_os->getFullName($withBits);
+        $name    = $this->_os->getCapability('device_os');
+        $version = $this->_os->getCapability('device_os_version');
+        $bits    = $this->_os->getCapability('device_os_bits');
+        
+        return $name . ($name != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**
@@ -451,11 +474,11 @@ class UserAgent extends Core
         $notBanned = true;
         
         if (null !== $this->_browser) {
-            $notBanned = $notBanned && !$this->_browser->isBanned();
+            $notBanned = $notBanned && !$this->_browser->getCapability('is_banned');
         }
         
         if ($notBanned && null !== $this->_device) {
-            $notBanned = $notBanned && !$this->_device->isBanned();
+            $notBanned = $notBanned && !$this->_device->getCapability('is_banned');
         }
         
         return (!$notBanned);
@@ -472,7 +495,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->isMobileDevice();
+        return $this->_device->getCapability('is_wireless_device');
     }
     
     /**
@@ -486,7 +509,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->isTablet();
+        return $this->_device->getCapability('is_tablet');
     }
     
     /**
@@ -500,7 +523,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->isDesktop();
+        return $this->_device->getCapability('ux_full_desktop');
     }
     
     /**
@@ -514,7 +537,7 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_device->isTvDevice();
+        return $this->_device->getCapability('is_smarttv');
     }
     
     /**
@@ -528,7 +551,21 @@ class UserAgent extends Core
             return null;
         }
         
-        return $this->_browser->isCrawler();
+        return $this->_browser->getCapability('is_bot');
+    }
+    
+    /**
+     * returns TRUE if the browser supports VBScript
+     *
+     * @return boolean
+     */
+    public function isConsole()
+    {
+        if (null === $this->_device) {
+            return null;
+        }
+        
+        return $this->_device->getCapability('is_console');
     }
     
     /**

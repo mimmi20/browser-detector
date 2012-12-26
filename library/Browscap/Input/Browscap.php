@@ -94,9 +94,6 @@ class Browscap extends Core
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $userAgent   the user agent string
-     * @param bool   $bReturnAsArray whether return an array or an object
-     *
      * @return stdClas|array the object containing the browsers details.
      *                       Array if $bReturnAsArray is set to true.
      */

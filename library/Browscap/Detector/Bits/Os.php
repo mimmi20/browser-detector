@@ -1,9 +1,7 @@
 <?php
-namespace Browscap\Input;
+namespace Browscap\Detector\Bits;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
- *
  * PHP version 5.3
  *
  * LICENSE:
@@ -38,97 +36,90 @@ namespace Browscap\Input;
  *
  * @category  Browscap
  * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id$
+ * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @version   SVN: $Id: Handler.php 381 2012-12-24 14:58:59Z tmu $
  */
 
-use \Browscap\Helper\Support;
-
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * WURFL_Handlers_Handler is the base class that combines the classification of
+ * the user agents and the matching process.
  *
  * @category  Browscap
  * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @version   SVN: $Id: Handler.php 381 2012-12-24 14:58:59Z tmu $
  */
-abstract class Core
+class Os
 {
     /**
-     * a \Zend\Cache object
-     *
-     * @var \Zend\Cache
+     * @var string the user agent to handle
      */
-    protected $_cache = null;
-    
-    /*
-     * @var string
-     */
-    protected $_cachePrefix = '';
+    private $_useragent = null;
     
     /**
-     * the user agent sent from the browser
-     *
-     * @var string
+     * @var string the bits of the detected browser
      */
-    protected $_agent = '';
+    private $_bits = null;
     
     /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Frontend\Core $cache
-     *
-     * @return 
-     */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        $this->_cache = $cache;
-        
-        return $this;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param string $prefix the new prefix
+     * sets the user agent to be handled
      *
      * @return void
      */
-    public function setCachePrefix($prefix)
+    final public function setUserAgent($userAgent)
     {
-        $this->_cachePrefix = $prefix;
-        
-        return $this;
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @return 
-     */
-    abstract public function getBrowser();
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return UserAgent
-     */
-    public function setAgent($userAgent)
-    {
-        $this->_agent = $userAgent;
+        $this->_useragent = $userAgent;
         
         return $this;
     }
     
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function getAgent()
+    final public function getBits()
     {
-        return $this->_agent;
+        if (null === $this->_useragent) {
+            throw new \UnexpectedValueException(
+                'You have to set the useragent before calling this function'
+            );
+        }
+        
+        if (null === $this->_bits) {
+            $this->_detectBits();
+        }
+        
+        return $this->_bits;
+    }
+    
+    /**
+     * detects the bit count by this browser from the given user agent
+     *
+     * @return void
+     */
+    private function _detectBits()
+    {
+        $utils = new \Browscap\Helper\Utils();
+        $utils->setUserAgent($this->_useragent);
+        
+        if ($utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64', 'i686 on x86_64'))) {
+            $this->_bits = '64';
+            
+            return $this;
+        }
+        
+        if ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+            $this->_bits = '16';
+            
+            return $this;
+        }
+        
+        if ($utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android'))) {
+            $this->_bits = '32';
+            
+            return $this;
+        }
+        
+        $this->_bits = '';
+        
+        return $this;
     }
 }

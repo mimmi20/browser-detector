@@ -54,9 +54,9 @@ class Cache
      * @return 
      */
     public function getBrowserFromCache(\Zend\Cache\Frontend\Core $cache, 
-        $userAgent = null)
+        $userAgent = null, $cachePrefix = null)
     {
-        $cacheId = $this->getCacheIdFromAgent($userAgent);
+        $cacheId = $this->getCacheIdFromAgent($userAgent, $cachePrefix);
         
         return $cache->load($cacheId);
     }
@@ -68,10 +68,10 @@ class Cache
      *
      * @return 
      */
-    public function getCacheIdFromAgent($userAgent = null)
+    public function getCacheIdFromAgent($userAgent = null, $cachePrefix = null)
     {
         return substr(
-            $this->_cachePrefix . 'agent_' . preg_replace(
+            $cachePrefix . 'agent_' . preg_replace(
                 '/[^a-zA-Z0-9_]/', '_', $userAgent
             ), 
             0, 

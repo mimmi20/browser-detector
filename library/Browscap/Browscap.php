@@ -150,7 +150,7 @@ class Browscap
             self::INTERFACE_BROWSCAP_INI
         );
         
-        if (!is_int($prefix) || !in_array($prefix, $allowedInterfaces)) {
+        if (!is_int($interface) || !in_array($interface, $allowedInterfaces)) {
             throw new \UnexpectedValueException(
                 'the cache prefix has to be a integer'
             );
@@ -202,7 +202,7 @@ class Browscap
         
         if (!$forceDetect) {
             $result = $cacheHelper->getBrowserFromCache(
-                $this->_cache, $cleanedAgent
+                $this->_cache, $cleanedAgent, $this->_cachePrefix
             );
         }
         
@@ -217,7 +217,9 @@ class Browscap
             if (!$forceDetect 
                 && $this->_cache instanceof \Zend\Cache\Frontend\Core
             ) {
-                $cacheId = $cacheHelper->getCacheIdFromAgent($cleanedAgent);
+                $cacheId = $cacheHelper->getCacheIdFromAgent(
+                    $cleanedAgent, $this->_cachePrefix
+                );
                 
                 $this->_cache->save($result, $cacheId);
             }
