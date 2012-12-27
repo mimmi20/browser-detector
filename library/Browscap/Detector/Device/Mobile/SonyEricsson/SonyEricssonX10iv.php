@@ -67,10 +67,6 @@ class SonyEricssonX10iv extends SonyEricssonX10i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SonyEricssonX10iv')) {
             return false;
         }

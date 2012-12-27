@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class HtcHd2 extends HtcBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC HD2', 'HTC_HD2', 'HD2', 'HTC_HD2_T8585'))) {
             return false;
         }

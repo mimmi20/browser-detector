@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Flipboard as FlipboardBase;
+use \Browscap\Detector\Browser\General\Flipboard as FlipboardBase;
 
 /**
  * CatchAllUserAgentHandler

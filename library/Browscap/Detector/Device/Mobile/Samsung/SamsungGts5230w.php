@@ -67,10 +67,6 @@ class SamsungGts5230w extends SamsungGts5230
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SAMSUNG-GT-S5230W', 'GT-S5230W'))) {
             return false;
         }

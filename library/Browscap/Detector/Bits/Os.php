@@ -51,7 +51,7 @@ namespace Browscap\Detector\Bits;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id: Handler.php 381 2012-12-24 14:58:59Z tmu $
  */
-class Os
+final class Os
 {
     /**
      * @var string the user agent to handle
@@ -68,14 +68,14 @@ class Os
      *
      * @return void
      */
-    final public function setUserAgent($userAgent)
+    public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
         
         return $this;
     }
     
-    final public function getBits()
+    public function getBits()
     {
         if (null === $this->_useragent) {
             throw new \UnexpectedValueException(

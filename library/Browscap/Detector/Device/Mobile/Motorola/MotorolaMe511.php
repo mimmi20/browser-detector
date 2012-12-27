@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Motorola;
  * @version   SVN: $Id: MotorolaMe511.php 367 2012-12-10 23:31:50Z tmu $
  */
 
-use \Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
+use \Browscap\Detector\Device\Mobile\Motorola as MotorolaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class MotorolaMe511 extends MotorolaBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('moto_me511', 'me511'), true)) {
             return false;
         }

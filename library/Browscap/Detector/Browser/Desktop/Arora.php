@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Arora as AroraBase;
+use \Browscap\Detector\Browser\General\Arora as AroraBase;
 
 /**
  * ChromeUserAgentHandler

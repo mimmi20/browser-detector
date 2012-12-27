@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralMobile;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class T60 extends GeneralMobile
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('T60')) {
             return false;
         }

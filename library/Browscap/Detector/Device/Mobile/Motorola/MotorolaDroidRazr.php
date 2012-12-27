@@ -67,10 +67,6 @@ class MotorolaDroidRazr extends MotorolaDroid
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('DROID RAZR')) {
             return false;
         }

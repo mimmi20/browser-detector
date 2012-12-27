@@ -67,10 +67,6 @@ class NokiaN800 extends NokiaN8
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('NokiaN8-00'))) {
             return false;
         }

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\LittleBookmarkBox as AppBase;
+use \Browscap\Detector\Browser\General\LittleBookmarkBox as AppBase;
 
 /**
  * CatchAllUserAgentHandler

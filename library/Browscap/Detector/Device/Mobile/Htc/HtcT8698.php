@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class HtcT8698 extends HtcBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC;7 Mozart', '7 Mozart'))) {
             return false;
         }

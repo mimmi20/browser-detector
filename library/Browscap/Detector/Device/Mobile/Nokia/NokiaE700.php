@@ -67,10 +67,6 @@ class NokiaE700 extends NokiaE7
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('NokiaE7-00')) {
             return false;
         }

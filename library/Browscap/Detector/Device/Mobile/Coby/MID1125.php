@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Coby;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Coby as CobyBase;
+use \Browscap\Detector\Device\Mobile\Coby as CobyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class MID1125 extends CobyBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('MID1125')) {
             return false;
         }

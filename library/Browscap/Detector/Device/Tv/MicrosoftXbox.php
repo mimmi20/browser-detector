@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Tv;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralTv;
+use \Browscap\Detector\Device\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class MicrosoftXbox extends GeneralTv
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Xbox')) {
             return false;
         }
@@ -125,7 +121,7 @@ class MicrosoftXbox extends GeneralTv
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\LinuxTv();
+        $handler = new \Browscap\Detector\Os\LinuxTv();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

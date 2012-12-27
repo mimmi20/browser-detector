@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\BlackBerry;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\BlackBerry as BlackBerryBase;
+use \Browscap\Detector\Device\Mobile\BlackBerry as BlackBerryBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class BlackBerry8230 extends BlackBerryBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('BlackBerry8230')) {
             return false;
         }

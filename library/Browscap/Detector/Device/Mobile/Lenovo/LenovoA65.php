@@ -67,10 +67,6 @@ class LenovoA65 extends IdeaTab
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Lenovo A65')) {
             return false;
         }

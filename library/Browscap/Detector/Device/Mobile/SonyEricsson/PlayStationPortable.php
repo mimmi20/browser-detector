@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
+use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class PlayStationPortable extends SonyBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if ($this->_utils->checkIfContains(array('PlayStation Portable', 'PSP'))) {
             return true;
         }
@@ -135,7 +131,7 @@ class PlayStationPortable extends SonyBase
      */
     public function detectBrowser()
     {
-        $handler = new \Browscap\Browser\Handlers\Mobile\NetFront();
+        $handler = new \Browscap\Detector\Browser\Mobile\NetFront();
         $handler->setUserAgent($this->_useragent);
         
         return $handler->detect();

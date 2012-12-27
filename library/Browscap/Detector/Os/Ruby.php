@@ -613,10 +613,6 @@ class Ruby extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ruby', true)) {
             return false;
         }

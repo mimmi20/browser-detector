@@ -613,10 +613,6 @@ class Java extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Java', 'J2ME/MIDP', 'Profile/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform', 'WAP/OBIGO', 'Obigo/WAP'))) {
             return false;
         }
@@ -702,7 +698,7 @@ class Java extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

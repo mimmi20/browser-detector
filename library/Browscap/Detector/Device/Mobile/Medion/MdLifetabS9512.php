@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Medion;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Medion as MedionBase;
+use \Browscap\Detector\Device\Mobile\Medion as MedionBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class MdLifetabS9512 extends MedionBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('LIFETAB_S9512')) {
             return false;
         }

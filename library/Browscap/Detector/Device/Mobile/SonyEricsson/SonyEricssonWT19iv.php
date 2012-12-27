@@ -67,10 +67,6 @@ class SonyEricssonWT19iv extends SonyEricssonWT19i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SonyEricssonWT19iv', 'WT19iv'))) {
             return false;
         }

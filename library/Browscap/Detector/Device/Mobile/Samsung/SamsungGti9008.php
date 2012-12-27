@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id: SamsungGti9008.php 286 2012-10-06 23:47:15Z tmu $
  */
 
-use \Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SamsungGti9008 extends SamsungBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('GT-I9008')) {
             return false;
         }

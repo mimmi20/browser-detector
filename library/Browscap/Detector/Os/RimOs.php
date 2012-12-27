@@ -613,10 +613,6 @@ class RimOs extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('BlackBerry')) {
             return false;
         }
@@ -707,7 +703,7 @@ class RimOs extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Blackberry());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\Blackberry());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SamsungGts5750eOrange extends SamsungBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SAMSUNG-GT-S5750E-Orange')) {
             return false;
         }

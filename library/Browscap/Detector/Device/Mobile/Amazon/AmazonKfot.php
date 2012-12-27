@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Amazon;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Amazon as AmazonBase;
+use \Browscap\Detector\Device\Mobile\Amazon as AmazonBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class AmazonKfot extends AmazonBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('KFOT'))) {
             return false;
         }

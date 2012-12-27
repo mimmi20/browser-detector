@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Toshiba;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Toshiba as ToshibaBase;
+use \Browscap\Detector\Device\Mobile\Toshiba as ToshibaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class ToshibaFolio100 extends ToshibaBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('TSB_CLOUD_COMPANION;FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100', 'TOSHIBA_FOLIO_AND_A'))) {
             return false;
         }

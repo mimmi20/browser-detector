@@ -18,7 +18,7 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Nokia as NokiaBase;
+use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -46,10 +46,6 @@ class Nokia203 extends NokiaBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Nokia203')) {
             return false;
         }

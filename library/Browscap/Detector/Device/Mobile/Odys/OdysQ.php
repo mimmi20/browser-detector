@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Odys;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Odys as OdysBase;
+use \Browscap\Detector\Device\Mobile\Odys as OdysBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class OdysQ extends OdysBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ODYS-Q')) {
             return false;
         }

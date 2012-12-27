@@ -67,10 +67,6 @@ class HtcSensation4g extends HtcZ710
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Sensation_4G'))) {
             return false;
         }

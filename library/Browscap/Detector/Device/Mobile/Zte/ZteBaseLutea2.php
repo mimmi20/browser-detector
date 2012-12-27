@@ -73,10 +73,6 @@ class ZteBaseLutea2 extends ZteBaseLutea
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('base lutea 2', true)) {
             return false;
         }

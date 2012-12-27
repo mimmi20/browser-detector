@@ -610,10 +610,6 @@ class Debian extends Linux
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('debian', true)) {
             return false;
         }

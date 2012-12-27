@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Midori as DefaultMidori;
+use \Browscap\Detector\Browser\General\Midori as DefaultMidori;
 
 /**
  * CatchAllUserAgentHandler

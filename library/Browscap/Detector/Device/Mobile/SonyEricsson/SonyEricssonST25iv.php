@@ -67,10 +67,6 @@ class SonyEricssonST25iv extends SonyEricssonST25i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SonyEricssonST25iv', 'ST25iv'))) {
             return false;
         }

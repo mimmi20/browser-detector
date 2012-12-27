@@ -67,10 +67,6 @@ class MotorolaDroidX extends MotorolaDroid
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('DROIDX')) {
             return false;
         }

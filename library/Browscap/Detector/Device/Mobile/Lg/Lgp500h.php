@@ -67,10 +67,6 @@ class Lgp500h extends Lgp500
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('LG-P500h')) {
             return false;
         }

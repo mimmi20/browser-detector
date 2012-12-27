@@ -18,7 +18,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @version    SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -46,10 +46,6 @@ class HtcC110eRadar extends HtcBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC; Radar', 'HTC; Radar C110e', 'HTC; Radar; Orange'))) {
             return false;
         }

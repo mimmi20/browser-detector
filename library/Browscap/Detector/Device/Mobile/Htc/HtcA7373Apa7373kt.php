@@ -67,10 +67,6 @@ class HtcA7373Apa7373kt extends HtcA8181
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('APA7373KT'))) {
             return false;
         }

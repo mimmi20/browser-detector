@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Lenovo;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Lenovo as LenovoBase;
+use \Browscap\Detector\Device\Mobile\Lenovo as LenovoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class LenovoK1 extends LenovoBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(' K1 ')) {
             return false;
         }

@@ -67,10 +67,6 @@ class NokiaLumia610 extends NokiaLumia
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('nokia; lumia 610', true)) {
             return false;
         }

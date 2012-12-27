@@ -67,10 +67,6 @@ class HtcA9292Apa9292kt extends HtcA8181
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('APA9292KT'))) {
             return false;
         }

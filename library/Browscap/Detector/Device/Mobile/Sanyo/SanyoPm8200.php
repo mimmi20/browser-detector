@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Sanyo;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Sanyo as SanyoBase;
+use \Browscap\Detector\Device\Mobile\Sanyo as SanyoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SanyoPm8200 extends SanyoBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('PM-8200')) {
             return false;
         }

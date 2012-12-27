@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Toshiba;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Toshiba as ToshibaBase;
+use \Browscap\Detector\Device\Mobile\Toshiba as ToshibaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class ToshibaAt200 extends ToshibaBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('AT200')) {
             return false;
         }

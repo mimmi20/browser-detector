@@ -716,7 +716,10 @@ abstract class DeviceHandler implements MatcherInterface
      */
     protected function _detectCpu()
     {
-        return null;
+        $detector = new \Browscap\Detector\Cpu();
+        $detector->setUserAgent($this->_useragent);
+        
+        return $detector->getCpu();
     }
     
     /**
@@ -726,7 +729,10 @@ abstract class DeviceHandler implements MatcherInterface
      */
     protected function _detectBits()
     {
-        return null;
+        $detector = new \Browscap\Detector\Bits\Device();
+        $detector->setUserAgent($this->_useragent);
+        
+        return $detector->getBits();
     }
     
     /**
@@ -795,5 +801,53 @@ abstract class DeviceHandler implements MatcherInterface
                 'no capability named [' . $capabilityName . '] is present.'
             );    
         }
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasBrowser()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browser = new \Browscap\Detector\Browser\Unknown();
+        $browser->setUserAgent($this->_useragent);
+        
+        return $browser->detect();
+    }
+    
+    /**
+     * returns TRUE if the device has a specific Operating System
+     *
+     * @return boolean
+     */
+    public function hasOs()
+    {
+        return true;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

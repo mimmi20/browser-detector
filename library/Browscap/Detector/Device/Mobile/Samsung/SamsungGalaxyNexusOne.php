@@ -72,10 +72,6 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Nexus One', 'NexusOne', 'Nexus-One'))) {
             return false;
         }

@@ -54,6 +54,6 @@ final class Classname
             return $filename;
         }
         
-        return '\\' . $namespace . '\\' . $filename;
+        return '\\' . ltrim($namespace, '\\') . '\\' . $filename;
     }
 }

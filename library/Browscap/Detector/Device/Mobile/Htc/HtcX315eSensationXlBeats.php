@@ -67,10 +67,6 @@ class HtcX315eSensationXlBeats extends HtcZ710
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         $phones = array(
             'HTC/SensationXL_Beats',
             'HTC_SensationXL_Beats',

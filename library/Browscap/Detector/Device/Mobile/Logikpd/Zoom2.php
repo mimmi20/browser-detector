@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Logikpd;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Logikpd as LogikBase;
+use \Browscap\Detector\Device\Mobile\Logikpd as LogikBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class Zoom2 extends LogikBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Zoom2', 'NookColor'))) {
             return false;
         }

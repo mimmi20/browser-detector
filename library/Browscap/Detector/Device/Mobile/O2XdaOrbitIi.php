@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralMobile;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class O2XdaOrbitIi extends GeneralMobile
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Xda_orbit_2')) {
             return false;
         }

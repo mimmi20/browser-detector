@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Sleipnir as DefaultSleipnir;
+use \Browscap\Detector\Browser\General\Sleipnir as DefaultSleipnir;
 
 /**
  * SafariHandler

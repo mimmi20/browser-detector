@@ -67,10 +67,6 @@ class HtcT7373 extends HtcT3335
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC_Touch_Pro2_T7373'))) {
             return false;
         }

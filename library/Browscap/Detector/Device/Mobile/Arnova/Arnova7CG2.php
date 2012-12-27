@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Arnova;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Arnova as ArnovaBase;
+use \Browscap\Detector\Device\Mobile\Arnova as ArnovaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class Arnova7CG2 extends ArnovaBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('AN7CG2')) {
             return false;
         }
@@ -120,7 +116,7 @@ class Arnova7CG2 extends ArnovaBase
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

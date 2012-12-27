@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Apple;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Apple as AppleBase;
+use \Browscap\Detector\Device\Mobile\Apple as AppleBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class Ipad extends AppleBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ipad', true)) {
             return false;
         }

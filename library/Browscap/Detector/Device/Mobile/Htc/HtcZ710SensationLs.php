@@ -67,10 +67,6 @@ class HtcZ710SensationLs extends HtcZ710
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC_Sensation-orange-LS'))) {
             return false;
         }

@@ -67,10 +67,6 @@ class MotorolaDroidBionic4G extends MotorolaDroidBionic
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('DROID BIONIC 4G')) {
             return false;
         }

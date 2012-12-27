@@ -67,10 +67,6 @@ class AlcatelOt991d extends AlcatelOt991
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('ALCATEL ONE TOUCH 991D', 'ALCATEL_one_touch_991D'))) {
             return false;
         }

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralMobile;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class Amoi extends GeneralMobile
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Amoi', 'AMOI'))) {
             return false;
         }
@@ -125,7 +121,7 @@ class Amoi extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\WindowsMobileOs();
+        $handler = new \Browscap\Detector\Os\WindowsMobileOs();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

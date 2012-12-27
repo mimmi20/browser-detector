@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\DarwinBrowser as DarwinBrowserBase;
+use \Browscap\Detector\Browser\General\DarwinBrowser as DarwinBrowserBase;
 
 /**
  * CatchAllUserAgentHandler

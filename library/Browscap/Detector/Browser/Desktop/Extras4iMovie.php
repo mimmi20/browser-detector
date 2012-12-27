@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Extras4iMovie as DefaultExtras4iMovie;
+use \Browscap\Detector\Browser\General\Extras4iMovie as DefaultExtras4iMovie;
 
 /**
  * CatchAllUserAgentHandler

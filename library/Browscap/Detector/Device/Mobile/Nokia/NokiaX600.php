@@ -67,10 +67,6 @@ class NokiaX600 extends NokiaX6
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('NokiaX6-00')) {
             return false;
         }

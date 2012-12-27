@@ -613,10 +613,6 @@ class Irix extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('IRIX64', 'IRIX'))) {
             return false;
         }

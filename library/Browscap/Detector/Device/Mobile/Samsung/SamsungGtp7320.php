@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Samsung as SamsungBase;
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SamsungGtp7320 extends SamsungBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SAMSUNG-GT-P7320', 'GT-P7320'))) {
             return false;
         }

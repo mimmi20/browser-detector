@@ -67,10 +67,6 @@ class SamsungGalaxyNexusS4G extends SamsungGalaxyNexusS
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Nexus S 4G')) {
             return false;
         }

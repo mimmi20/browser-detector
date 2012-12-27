@@ -613,10 +613,6 @@ class Os2 extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContainsAll(array('os/2', 'warp'), true)) {
             return false;
         }

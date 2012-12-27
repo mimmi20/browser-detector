@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\AtomicBrowser as DefaultAtomicBrowser;
+use \Browscap\Detector\Browser\General\AtomicBrowser as DefaultAtomicBrowser;
 
 /**
  * CatchAllUserAgentHandler

@@ -67,10 +67,6 @@ class HtcA510e extends HtcA510
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC Wildfire S A510e', 'HTC_WildfireS_A510e', 'Wildfire S A510e'))) {
             return false;
         }

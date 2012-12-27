@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Kddi;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Kddi as KddiBase;
+use \Browscap\Detector\Device\Mobile\Kddi as KddiBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class KddiSn3f extends KddiBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('KDDI-SN3F')) {
             return false;
         }

@@ -67,10 +67,6 @@ class MotorolaMz615 extends MotorolaMz616
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('MZ615')) {
             return false;
         }

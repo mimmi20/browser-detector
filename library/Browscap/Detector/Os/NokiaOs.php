@@ -613,10 +613,6 @@ class NokiaOs extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Nokia', 'Series40'))) {
             return false;
         }

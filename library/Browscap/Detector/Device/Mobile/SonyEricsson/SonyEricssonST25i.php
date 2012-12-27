@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\SonyEricsson as SonyBase;
+use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SonyEricssonST25i extends SonyBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SonyEricssonST25i', 'ST25i'))) {
             return false;
         }

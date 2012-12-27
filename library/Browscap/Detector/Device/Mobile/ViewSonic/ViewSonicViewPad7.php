@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\ViewSonic;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\ViewSonic as ViewSonicBase;
+use \Browscap\Detector\Device\Mobile\ViewSonic as ViewSonicBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class ViewSonicViewPad7 extends ViewSonicBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('ViewPad7', 'ViewPad-7'))) {
             return false;
         }

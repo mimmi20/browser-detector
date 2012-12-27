@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Nintendo;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Nintendo as NintendoBase;
+use \Browscap\Detector\Device\Mobile\Nintendo as NintendoBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class NintendoDsi extends NintendoBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Nintendo DSi')) {
             return false;
         }

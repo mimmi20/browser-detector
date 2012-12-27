@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Sharp;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Sharp as SharpBase;
+use \Browscap\Detector\Device\Mobile\Sharp as SharpBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SH80F extends SharpBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SH80F')) {
             return false;
         }

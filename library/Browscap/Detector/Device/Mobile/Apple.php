@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralMobile;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class Apple extends GeneralMobile
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('ipad', 'iphone', 'ipod', 'like mac os x'), true)) {
             return false;
         }
@@ -138,7 +134,7 @@ class Apple extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Ios();
+        $handler = new \Browscap\Detector\Os\Ios();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

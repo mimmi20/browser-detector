@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralMobile;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class Olivetti extends GeneralMobile
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('OP') 
             || $this->_utils->checkIfContains(array('OPN-B', 'OPENMASTER', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'))
         ) {
@@ -136,7 +132,7 @@ class Olivetti extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Os\Handlers\Android();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

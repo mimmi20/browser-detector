@@ -67,10 +67,6 @@ class MotorolaMz616 extends MotorolaXoom
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('XOOM 2', 'MZ616'))) {
             return false;
         }

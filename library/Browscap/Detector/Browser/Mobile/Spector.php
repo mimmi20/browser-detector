@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Spector as DefaultSpector;
+use \Browscap\Detector\Browser\General\Spector as DefaultSpector;
 
 /**
  * CatchAllUserAgentHandler

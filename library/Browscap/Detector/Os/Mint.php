@@ -610,10 +610,6 @@ class Mint extends Linux
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContainsAll(array('Mint', 'Linux'))) {
             return false;
         }

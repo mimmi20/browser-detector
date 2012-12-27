@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\GoogleDesktop as GoogleDesktopBase;
+use \Browscap\Detector\Browser\General\GoogleDesktop as GoogleDesktopBase;
 
 /**
  * CatchAllUserAgentHandler

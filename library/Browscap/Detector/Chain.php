@@ -142,8 +142,36 @@ final class Chain
     {
         $chain = new \SplPriorityQueue();
         
-        foreach ($this->_handlersToUse as $handler) {
-            $chain->insert($handler, $handler->getWeight());
+        if (!empty($this->_handlersToUse)) {
+            foreach ($this->_handlersToUse as $handler) {
+                $chain->insert($handler, $handler->getWeight());
+            }
+        }
+        
+        if (!empty($this->_directory)) {
+            // get all Handlers from the directory
+            $iterator = new \DirectoryIterator($this->_directory);
+            $utils    = new \Browscap\Helper\Classname();
+            
+            foreach ($iterator as $fileinfo) {
+                if (!$fileinfo->isFile() || !$fileinfo->isReadable()) {
+                    continue;
+                }
+                
+                $filename = $fileinfo->getBasename('.php');
+                
+                $className = $utils->getClassNameFromFile(
+                    $filename, $this->_namespace, true
+                );
+                //var_dump($className);
+                try {
+                    $handler = new $className();
+                } catch (\Exception $e) {
+                    continue;
+                }
+                
+                $chain->insert($handler, $handler->getWeight());
+            }
         }
         
         if ($chain->count()) {

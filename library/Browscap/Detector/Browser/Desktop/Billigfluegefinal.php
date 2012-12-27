@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Billigfluegefinal as BilligfluegefinalBase;
+use \Browscap\Detector\Browser\General\Billigfluegefinal as BilligfluegefinalBase;
 
 /**
  * CatchAllUserAgentHandler

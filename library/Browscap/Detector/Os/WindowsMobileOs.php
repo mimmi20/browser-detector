@@ -623,10 +623,6 @@ class WindowsMobileOs extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if ($this->_utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))) {
             return false;
         }
@@ -708,7 +704,7 @@ class WindowsMobileOs extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\MicrosoftMobileExplorer());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

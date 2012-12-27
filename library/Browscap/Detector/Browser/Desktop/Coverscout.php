@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Coverscout as DefaultCoverscout;
+use \Browscap\Detector\Browser\General\Coverscout as DefaultCoverscout;
 
 /**
  * CatchAllUserAgentHandler

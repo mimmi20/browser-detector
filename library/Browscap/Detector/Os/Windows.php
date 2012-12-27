@@ -628,10 +628,6 @@ class Windows extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if ($this->_utils->isMobileWindows()) {
             return false;
         }

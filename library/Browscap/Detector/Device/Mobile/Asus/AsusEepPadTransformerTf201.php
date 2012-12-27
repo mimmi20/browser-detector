@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Asus as AsusBase;
+use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class AsusEepPadTransformerTf201 extends AsusBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Transformer TF201', 'Transformer Prime TF201'))) {
             return false;
         }

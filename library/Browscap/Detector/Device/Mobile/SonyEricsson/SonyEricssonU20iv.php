@@ -67,10 +67,6 @@ class SonyEricssonU20iv extends SonyEricssonU20i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SonyEricssonU20iv')) {
             return false;
         }

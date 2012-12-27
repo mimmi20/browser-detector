@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Weltbild;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Weltbild as WeltbildBase;
+use \Browscap\Detector\Device\Mobile\Weltbild as WeltbildBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class CatNova extends WeltbildBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('CatNova', 'CAT NOVA'))) {
             return false;
         }

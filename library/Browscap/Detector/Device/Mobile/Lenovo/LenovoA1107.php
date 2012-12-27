@@ -67,10 +67,6 @@ class LenovoA1107 extends IdeaTab
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('IdeaTab_A1107')) {
             return false;
         }

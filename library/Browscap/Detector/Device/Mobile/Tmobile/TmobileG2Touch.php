@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Tmobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Tmobile as TmobileBase;
+use \Browscap\Detector\Device\Mobile\Tmobile as TmobileBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class TmobileG2Touch extends TmobileBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('T-Mobile_G2_Touch', 'T-Mobile G2'))) {
             return false;
         }

@@ -67,10 +67,6 @@ class SamsungSghi997r extends SamsungSghi997
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SAMSUNG;SGH-i997R', 'SGH-I997R'))) {
             return false;
         }

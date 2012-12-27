@@ -67,10 +67,6 @@ class Lgp505r extends Lgp505
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('LG-P505R')) {
             return false;
         }

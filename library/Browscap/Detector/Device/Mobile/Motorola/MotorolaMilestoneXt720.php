@@ -67,10 +67,6 @@ class MotorolaMilestoneXt720 extends MotorolaMilestoneX
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Milestone XT720')) {
             return false;
         }

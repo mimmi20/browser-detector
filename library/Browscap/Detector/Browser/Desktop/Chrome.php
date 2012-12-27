@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Chrome as DefaultChrome;
+use \Browscap\Detector\Browser\General\Chrome as DefaultChrome;
 
 /**
  * SafariHandler

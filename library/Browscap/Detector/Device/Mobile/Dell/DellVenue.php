@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Dell;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Dell as DellBase;
+use \Browscap\Detector\Device\Mobile\Dell as DellBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class DellVenue extends DellBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Dell Venue')) {
             return false;
         }

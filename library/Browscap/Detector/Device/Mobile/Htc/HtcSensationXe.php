@@ -67,10 +67,6 @@ class HtcSensationXe extends HtcZ710
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC Sensation XE', 'HTC_SensationXE'))) {
             return false;
         }

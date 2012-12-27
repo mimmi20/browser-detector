@@ -67,10 +67,6 @@ class SamsungGti9010P extends SamsungGti9010
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('GT-I9010P')) {
             return false;
         }

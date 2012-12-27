@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\FalkMaps as DefaultFalkMaps;
+use \Browscap\Detector\Browser\General\FalkMaps as DefaultFalkMaps;
 
 /**
  * CatchAllUserAgentHandler

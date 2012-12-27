@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Delibar as DefaultDelibar;
+use \Browscap\Detector\Browser\General\Delibar as DefaultDelibar;
 
 /**
  * CatchAllUserAgentHandler

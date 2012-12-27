@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Asus as AsusBase;
+use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class AsusGalaxy6 extends AsusBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Asus;Galaxy6'))) {
             return false;
         }

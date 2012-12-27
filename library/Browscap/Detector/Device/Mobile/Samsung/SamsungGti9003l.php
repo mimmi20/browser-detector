@@ -67,10 +67,6 @@ class SamsungGti9003l extends SamsungGti9003
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('GT-I9003L')) {
             return false;
         }

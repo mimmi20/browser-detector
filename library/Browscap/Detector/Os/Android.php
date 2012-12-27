@@ -610,10 +610,6 @@ class Android extends Linux
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'Bada', 'MeeGo', 'BlackBerry; U; '))) {
             return false;
         }
@@ -708,7 +704,7 @@ class Android extends Linux
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Android());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\Android());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

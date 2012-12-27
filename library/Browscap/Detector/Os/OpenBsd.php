@@ -613,10 +613,6 @@ class OpenBsd extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('OpenBSD')) {
             return false;
         }

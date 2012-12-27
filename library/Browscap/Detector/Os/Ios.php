@@ -613,10 +613,6 @@ class Ios extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         $ios = array(
             'IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone',
             'iPod', 'CPU OS', 'CPU iOS'
@@ -727,7 +723,7 @@ class Ios extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\Safari());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\Safari());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

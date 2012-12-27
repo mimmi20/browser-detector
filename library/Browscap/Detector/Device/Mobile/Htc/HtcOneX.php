@@ -67,10 +67,6 @@ class HtcOneX extends HtcOne
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC One X', 'HTC_One_X', 'HTC/One_X'))) {
             return false;
         }

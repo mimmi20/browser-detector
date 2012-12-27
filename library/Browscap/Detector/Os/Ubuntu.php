@@ -610,10 +610,6 @@ class Ubuntu extends Linux
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ubuntu', true)) {
             return false;
         }

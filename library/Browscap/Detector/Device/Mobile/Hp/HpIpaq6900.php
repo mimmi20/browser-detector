@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Hp;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Hp as HpBase;
+use \Browscap\Detector\Device\Mobile\Hp as HpBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class HpIpaq6900 extends HpBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('HPiPAQhw6900')) {
             return false;
         }

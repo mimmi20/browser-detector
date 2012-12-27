@@ -67,10 +67,6 @@ class HtcA3333 extends HtcWildfire
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('HTC_Wildfire_A3333')) {
             return false;
         }

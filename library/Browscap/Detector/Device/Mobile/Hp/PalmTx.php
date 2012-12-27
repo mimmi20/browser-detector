@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Hp;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Hp as HpBase;
+use \Browscap\Detector\Device\Mobile\Hp as HpBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class PalmTx extends HpBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Palm-D050')) {
             return false;
         }

@@ -67,10 +67,6 @@ class HtcWildfireSLs extends HtcA510
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC_WildfireS-orange-LS'))) {
             return false;
         }

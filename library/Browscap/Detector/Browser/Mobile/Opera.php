@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Opera as DefaultOpera;
+use \Browscap\Detector\Browser\General\Opera as DefaultOpera;
 
 /**
  * SafariHandler

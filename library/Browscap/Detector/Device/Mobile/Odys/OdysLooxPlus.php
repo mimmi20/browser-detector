@@ -67,10 +67,6 @@ class OdysLooxPlus extends OdysLoox
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('LOOX Plus')) {
             return false;
         }

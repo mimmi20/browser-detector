@@ -613,10 +613,6 @@ class WebOs extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('WebOS', 'hpwOS'))) {
             return false;
         }
@@ -682,7 +678,7 @@ class WebOs extends OsHandler
         $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
         
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

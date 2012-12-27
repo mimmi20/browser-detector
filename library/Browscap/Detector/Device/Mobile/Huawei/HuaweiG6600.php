@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Huawei;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Huawei as HuaweiBase;
+use \Browscap\Detector\Device\Mobile\Huawei as HuaweiBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class HuaweiG6600 extends HuaweiBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContainsAll(array('huawei', 'g6600'), true)) {
             return false;
         }

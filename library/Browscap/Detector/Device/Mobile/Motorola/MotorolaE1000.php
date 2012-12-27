@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Motorola;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Motorola as MotorolaBase;
+use \Browscap\Detector\Device\Mobile\Motorola as MotorolaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class MotorolaE1000 extends MotorolaBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('MOT-E1000')) {
             return false;
         }

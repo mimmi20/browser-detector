@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralMobile;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class ViewSonic extends GeneralMobile
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('ViewSonic', 'ViewPad'))) {
             return false;
         }
@@ -145,7 +141,7 @@ class ViewSonic extends GeneralMobile
         );
         
         $chain = new \Browscap\Detector\Chain(false, $os);
-        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

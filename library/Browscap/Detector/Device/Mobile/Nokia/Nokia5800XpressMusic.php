@@ -67,10 +67,6 @@ class Nokia5800XpressMusic extends Nokia5800
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Nokia5800XpressMusic')
             && !$this->_utils->checkIfContains('Nokia5800 XpressMusic')
             && !$this->_utils->checkIfContains('Nokia5800d')

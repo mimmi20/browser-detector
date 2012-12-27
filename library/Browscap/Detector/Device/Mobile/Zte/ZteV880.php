@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Zte;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Zte as ZteBase;
+use \Browscap\Detector\Device\Mobile\Zte as ZteBase;
 
 /*
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class ZteV880 extends ZteBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('ZTE V880', ' V880 ', 'ZTE-U V880'))) {
             return false;
         }

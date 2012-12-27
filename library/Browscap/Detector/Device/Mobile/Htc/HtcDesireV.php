@@ -67,10 +67,6 @@ class HtcDesireV extends HtcA8181
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC_DesireV', 'HTC Desire V', 'HTC_Desire_V'))) {
             return false;
         }

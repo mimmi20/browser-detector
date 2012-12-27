@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Pandigital;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Pandigital as PandigitalBase;
+use \Browscap\Detector\Device\Mobile\Pandigital as PandigitalBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class Pandigital9hr extends PandigitalBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('pandigital9hr'))) {
             return false;
         }

@@ -67,10 +67,6 @@ class SonyEricssonSo02c extends SonyEricssonSo
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SonyEricssonSO-02C')) {
             return false;
         }

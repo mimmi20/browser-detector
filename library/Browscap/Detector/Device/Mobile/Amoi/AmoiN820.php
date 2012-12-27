@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Amoi;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Amoi as AmoiBase;
+use \Browscap\Detector\Device\Mobile\Amoi as AmoiBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class AmoiN820 extends AmoiBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('AMOI N820')) {
             return false;
         }

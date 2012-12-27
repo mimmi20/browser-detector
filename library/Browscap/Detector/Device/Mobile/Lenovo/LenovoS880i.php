@@ -67,10 +67,6 @@ class LenovoS880i extends IdeaTab
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Lenovo S880i')) {
             return false;
         }

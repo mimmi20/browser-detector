@@ -67,10 +67,6 @@ class AcerIconiaA211 extends AcerIconia
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Iconia A211', 'A211'))) {
             return false;
         }

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Archos;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Archos as ArchosBase;
+use \Browscap\Detector\Device\Mobile\Archos as ArchosBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class Archos80G9 extends ArchosBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ARCHOS 80G9')) {
             return false;
         }

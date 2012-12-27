@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Lg;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Lg as LgBase;
+use \Browscap\Detector\Device\Mobile\Lg as LgBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class LgGd880 extends LgBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('LG-GD880', 'LG/GD880'))) {
             return false;
         }

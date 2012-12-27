@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Pandigital;
  * @version   SVN: $Id: PandigitalP2020.php 287 2012-10-07 11:48:36Z tmu $
  */
 
-use \Browscap\Device\Handlers\Mobile\Pandigital as PandigitalBase;
+use \Browscap\Detector\Device\Mobile\Pandigital as PandigitalBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class PandigitalNovel extends PandigitalBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('pandigitalopc1', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'))) {
             return false;
         }

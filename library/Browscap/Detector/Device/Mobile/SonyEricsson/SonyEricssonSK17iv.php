@@ -67,10 +67,6 @@ class SonyEricssonSK17iv extends SonyEricssonSK17i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SonyEricssonSK17iv', 'SK17iv'))) {
             return false;
         }

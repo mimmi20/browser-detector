@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Tmobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Tmobile as TmobileBase;
+use \Browscap\Detector\Device\Mobile\Tmobile as TmobileBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class TmobileMyTouch3G extends TmobileBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('T-Mobile myTouch 3G Slide')) {
             return false;
         }

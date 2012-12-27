@@ -610,10 +610,6 @@ class ZenwalkGnu extends Linux
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Zenwalk GNU')) {
             return false;
         }

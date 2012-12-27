@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Creative;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Creative as CreativeBase;
+use \Browscap\Detector\Device\Mobile\Creative as CreativeBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class CreativeZiiLabsZiio7 extends CreativeBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ZiiLABS ZiiO7')) {
             return false;
         }

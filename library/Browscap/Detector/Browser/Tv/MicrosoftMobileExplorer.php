@@ -44,7 +44,7 @@ namespace Browscap\Detector\Browser\Tv;
 /**
  * Handler Base class
  */
-use \Browscap\Browser\Handlers\General\MicrosoftMobileExplorer as IeMobileBase;
+use \Browscap\Detector\Browser\General\MicrosoftMobileExplorer as IeMobileBase;
 
 /**
  * MSIEAgentHandler

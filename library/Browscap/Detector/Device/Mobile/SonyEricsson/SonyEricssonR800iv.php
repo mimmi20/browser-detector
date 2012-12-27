@@ -67,10 +67,6 @@ class SonyEricssonR800iv extends SonyEricssonR800i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SonyEricssonR800iv')) {
             return false;
         }

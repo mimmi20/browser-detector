@@ -67,10 +67,6 @@ class AmazonKindleFire extends AmazonKindle
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Kindle Fire'))) {
             return false;
         }

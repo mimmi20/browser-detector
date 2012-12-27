@@ -67,10 +67,6 @@ class DellStreak7 extends DellStreak
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Dell Streak 7')) {
             return false;
         }

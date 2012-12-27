@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Acer;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Acer as AcerBase;
+use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class AcerG100W extends AcerBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('G100W')) {
             return false;
         }

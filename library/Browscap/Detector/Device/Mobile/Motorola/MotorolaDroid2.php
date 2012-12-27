@@ -72,10 +72,6 @@ class MotorolaDroid2 extends MotorolaDroid
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('DROID2')) {
             return false;
         }

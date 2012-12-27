@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Tv;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\InettvBrowser as InettvBrowserBase;
+use \Browscap\Detector\Browser\General\InettvBrowser as InettvBrowserBase;
 
 /**
  * InettvBrowserHandler

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Sprint;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Sprint as SprintBase;
+use \Browscap\Detector\Device\Mobile\Sprint as SprintBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class SprintApa9292kt extends SprintBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Sprint APA9292KT')) {
             return false;
         }

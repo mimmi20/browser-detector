@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Tv;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\GeneralTv;
+use \Browscap\Detector\Device\GeneralTv;
 
 /**
  * CatchAllUserAgentHandler
@@ -74,10 +74,6 @@ class PanasonicViera extends GeneralTv
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Viera')) {
             return false;
         }
@@ -131,7 +127,7 @@ class PanasonicViera extends GeneralTv
         );
         
         $chain = new \Browscap\Detector\Chain(false, $os);
-        $chain->setDefaultHandler(new \Browscap\Os\Handlers\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Alcatel;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Alcatel as AlcatelBase;
+use \Browscap\Detector\Device\Mobile\Alcatel as AlcatelBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class AlcatelOt995 extends AlcatelBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('ALCATEL_one_touch_995')) {
             return false;
         }

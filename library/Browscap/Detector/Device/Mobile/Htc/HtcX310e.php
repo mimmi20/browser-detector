@@ -67,10 +67,6 @@ class HtcX310e extends HtcTitan
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC; TITAN X310e'))) {
             return false;
         }

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Safari as SafariBase;
+use \Browscap\Detector\Browser\General\Safari as SafariBase;
 
 /**
  * SafariHandler

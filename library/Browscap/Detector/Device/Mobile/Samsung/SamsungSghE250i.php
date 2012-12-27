@@ -67,10 +67,6 @@ class SamsungSghE250i extends SamsungSghE250
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SAMSUNG-SGH-E250i')) {
             return false;
         }

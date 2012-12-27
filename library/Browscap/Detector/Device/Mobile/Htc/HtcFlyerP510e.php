@@ -67,10 +67,6 @@ class HtcFlyerP510e extends HtcFlyer
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC_Flyer_P510e', 'HTC Flyer P510e'))) {
             return false;
         }

@@ -613,10 +613,6 @@ class Aix extends OsHandler implements MatcherInterface
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('AIX')) {
             return false;
         }

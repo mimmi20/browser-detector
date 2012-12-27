@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Mercury as MercuryBase;
+use \Browscap\Detector\Browser\General\Mercury as MercuryBase;
 
 /**
  * CatchAllUserAgentHandler

@@ -67,10 +67,6 @@ class SamsungGts5560i extends SamsungGts5560
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('GT-S5560i')) {
             return false;
         }

@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Olivetti;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Olivetti as OlivettiBase;
+use \Browscap\Detector\Device\Mobile\Olivetti as OlivettiBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class OP110 extends OlivettiBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('OP110')) {
             return false;
         }

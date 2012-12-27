@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Device\Handlers\Mobile\Htc as HtcBase;
+use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,10 +69,6 @@ class HtcX515m extends HtcBase
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('HTC/EVO_3D', 'HTC EVO 3D', 'HTC_EVO3D', 'HTC EVO 3D X515m', 'HTC_EVO3D_X515m', 'EVO3D_X515m', 'HTC_EVO_3D_GSM_X515m'))) {
             return false;
         }

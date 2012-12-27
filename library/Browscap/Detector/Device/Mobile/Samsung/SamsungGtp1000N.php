@@ -67,10 +67,6 @@ class SamsungGtp1000N extends SamsungGtp1000
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('GT-P1000N')) {
             return false;
         }

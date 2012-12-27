@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Boxee as DefaultBoxee;
+use \Browscap\Detector\Browser\General\Boxee as DefaultBoxee;
 
 /**
  * CatchAllUserAgentHandler

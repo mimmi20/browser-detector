@@ -613,10 +613,6 @@ class Symbianos extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'S60V5'))) {
             return false;
         }
@@ -660,9 +656,9 @@ class Symbianos extends OsHandler
         $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
         
         if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3'))) {
-            $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Mobile\NokiaBrowser());
+            $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\NokiaBrowser());
         } else {
-            $chain->setDefaultHandler(new \Browscap\Browser\Handlers\Unknown());
+            $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         }
         
         $chain->setUseragent($this->_useragent);

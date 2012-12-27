@@ -67,10 +67,6 @@ class SamsungGtp7300B extends SamsungGtp7300
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('SAMSUNG-GT-P7300B', 'GT-P7300B'))) {
             return false;
         }

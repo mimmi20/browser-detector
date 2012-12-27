@@ -67,10 +67,6 @@ class HuaweiIdeosS7Slim extends HuaweiIdeosS7
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('IDEOS S7 Slim', 'Ideos S7 Slim'))) {
             return false;
         }

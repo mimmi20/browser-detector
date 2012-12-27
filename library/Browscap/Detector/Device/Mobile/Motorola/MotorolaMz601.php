@@ -67,10 +67,6 @@ class MotorolaMz601 extends MotorolaXoom
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('MZ601')) {
             return false;
         }

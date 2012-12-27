@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Browser\Handlers\General\Firefox as FirefoxBase;
+use \Browscap\Detector\Browser\General\Firefox as FirefoxBase;
 
 /**
  * FirefoxUserAgentHandler

@@ -67,10 +67,6 @@ class SonyEricssonLT18iv extends SonyEricssonLT18i
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('SonyEricssonLT18iv')) {
             return false;
         }

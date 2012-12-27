@@ -613,10 +613,6 @@ class MeeGo extends OsHandler
      */
     public function canHandle()
     {
-        if ('' == $this->_useragent) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('MeeGo')) {
             return false;
         }
