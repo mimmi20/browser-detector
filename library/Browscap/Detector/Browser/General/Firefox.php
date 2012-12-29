@@ -678,8 +678,8 @@ class Firefox extends BrowserHandler
         if ($doMatch) {
             $this->setCapability('mobile_browser_version', $matches[1]);
             
-            if (substr('.' == $this->_version, -1)) {
-                $this->_version .= '0';
+            if (substr('.' == $matches[1], -1)) {
+                $this->setCapability('mobile_browser_version',  $matches[1] . '0');
             }
             return;
         }

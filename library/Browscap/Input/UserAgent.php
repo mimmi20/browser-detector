@@ -371,7 +371,9 @@ class UserAgent extends Core
         $version = $this->_browser->getCapability('mobile_browser_version');
         $bits    = $this->_browser->getCapability('mobile_browser_bits');
         
-        return $browser . ($browser != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+        return $browser 
+            . ($browser != $version && '' != $version ? ' ' . $version : '') 
+            . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**

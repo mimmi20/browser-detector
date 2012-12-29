@@ -636,7 +636,7 @@ class GeneralDesktop extends DeviceHandler
             return false;
         }
         
-        if ($this->_utils->isWindows($this->_useragent)) {
+        if ($this->_utils->isWindows()) {
             return true;
         }
         

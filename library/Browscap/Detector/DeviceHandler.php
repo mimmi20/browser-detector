@@ -845,9 +845,14 @@ abstract class DeviceHandler implements MatcherInterface
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Unknown();
-        $handler->setUseragent($this->_useragent);
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setNamespace('\\Browscap\\Detector\\Os');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
+        );
         
-        return $handler->detect();
+        return $chain->detect();
     }
 }

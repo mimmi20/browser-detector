@@ -649,16 +649,6 @@ class Hp9000 extends GeneralDesktop
     }
     
     /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasOs()
-    {
-        return true;
-    }
-    
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -670,7 +660,7 @@ class Hp9000 extends GeneralDesktop
             new \Browscap\Detector\Os\Hpux()
         );
         
-        $chain = new \Browscap\Detector\Chain(false, $os);
+        $chain = new \Browscap\Detector\Chain();
         $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);

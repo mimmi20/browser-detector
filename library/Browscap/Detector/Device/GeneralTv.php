@@ -667,7 +667,6 @@ class GeneralTv extends DeviceHandler
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Detector' 
             . DIRECTORY_SEPARATOR . 'Browser'
             . DIRECTORY_SEPARATOR . 'Tv'
             . DIRECTORY_SEPARATOR

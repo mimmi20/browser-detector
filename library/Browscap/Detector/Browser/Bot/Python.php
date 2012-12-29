@@ -54,52 +54,6 @@ namespace Browscap\Detector\Browser\Bot;
 class Python extends GeneralBot
 {
     /**
-     * @var string the detected browser
-     */
-    protected $_browser = 'Python';
-    
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->_utils->checkIfContains(array('Python', 'python'))) {
-            return false;
-        }
-        
-        return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $doMatch = preg_match('/python-requests\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->setCapability('mobile_browser_version', $matches[1]);
-            return;
-        }
-        
-        $this->setCapability('mobile_browser_version', '');
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 4;
-    }
-}
-    /**
      * the detected browser properties
      *
      * @var StdClass
@@ -653,3 +607,45 @@ class Python extends GeneralBot
         // 'jqm_grade' => null,
         // 'is_sencha_touch_ok' => null,
     );
+    
+    /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->_utils->checkIfContains(array('Python', 'python'))) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $doMatch = preg_match('/python-requests\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->setCapability('mobile_browser_version', $matches[1]);
+            return;
+        }
+        
+        $this->setCapability('mobile_browser_version', '');
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 4;
+    }
+}

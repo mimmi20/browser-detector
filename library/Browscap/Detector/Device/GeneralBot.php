@@ -620,11 +620,11 @@ class GeneralBot extends DeviceHandler
      */
     public function canHandle()
     {
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
+        if ($this->_utils->isSpamOrCrawler()) {
             return true;
         }
         
-        if ($this->_utils->isFakeBrowser($this->_useragent)) {
+        if ($this->_utils->isFakeBrowser()) {
             return true;
         }
         
@@ -651,7 +651,6 @@ class GeneralBot extends DeviceHandler
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Detector' 
             . DIRECTORY_SEPARATOR . 'Browser'
             . DIRECTORY_SEPARATOR . 'Bot'
             . DIRECTORY_SEPARATOR

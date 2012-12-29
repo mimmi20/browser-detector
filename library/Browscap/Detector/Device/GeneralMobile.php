@@ -620,7 +620,7 @@ class GeneralMobile extends DeviceHandler
      */
     public function canHandle()
     {
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
+        if ($this->_utils->isMobileBrowser()) {
             return true;
         }
         
@@ -667,7 +667,6 @@ class GeneralMobile extends DeviceHandler
     {
         $browserPath = realpath(
             __DIR__ . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Detector' 
             . DIRECTORY_SEPARATOR . 'Browser'
             . DIRECTORY_SEPARATOR . 'Mobile'
             . DIRECTORY_SEPARATOR
