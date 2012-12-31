@@ -122,6 +122,16 @@ class Safari extends BrowserHandler
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->setCapability(
+                'mobile_browser_version', 
+                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+            );
+            return;
+        }
+        
         $doMatch = preg_match(
             '/Safari\/([\d\.]+)/', $this->_useragent, $matches
         );
