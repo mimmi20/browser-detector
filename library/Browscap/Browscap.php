@@ -194,16 +194,11 @@ class Browscap
             );
         }
         
-        $support      = new \Browscap\Helper\Support();
-        $cleanedAgent = $support->cleanAgent($this->_agent);
-        $cacheHelper  = new \Browscap\Helper\Cache();
-        
-        $result = null;
+        $cacheId = hash('sha512', $this->_agent);
+        $result  = null;
         
         if (!$forceDetect) {
-            $result = $cacheHelper->getBrowserFromCache(
-                $this->_cache, $cleanedAgent, $this->_cachePrefix
-            );
+            $result = $this->_cache->load($cacheId);
         }
         
         if ($forceDetect || !$result) {
@@ -217,10 +212,6 @@ class Browscap
             if (!$forceDetect 
                 && $this->_cache instanceof \Zend\Cache\Frontend\Core
             ) {
-                $cacheId = $cacheHelper->getCacheIdFromAgent(
-                    $cleanedAgent, $this->_cachePrefix
-                );
-                
                 $this->_cache->save($result, $cacheId);
             }
         }

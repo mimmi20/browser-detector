@@ -134,7 +134,7 @@ class PhantomJs extends BrowserHandler
             return;
         }
         
-        $this->setCapability('mobile_browser_version', '');
+        $this->setCapability('mobile_browser_version', $detector->setVersion(''));
     }
     
     /**

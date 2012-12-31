@@ -103,20 +103,20 @@ abstract class DeviceHandler implements MatcherInterface
         'device_cpu'                => null, // not in wurfl
         
         // browser
-        'mobile_browser'         => null,
-        'mobile_browser_version' => null,
-        'mobile_browser_bits'    => null, // not in wurfl
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
         
         // os
-        'device_os'              => null,
-        'device_os_version'      => null,
-        'device_os_bits'         => null, // not in wurfl
-        'device_os_manufacturer' => null, // not in wurfl
+        // 'device_os'              => null,
+        // 'device_os_version'      => null,
+        // 'device_os_bits'         => null, // not in wurfl
+        // 'device_os_manufacturer' => null, // not in wurfl
         
         // engine
-        'renderingengine_name'         => null, // not in wurfl
-        'renderingengine_version'      => null, // not in wurfl
-        'renderingengine_manufacturer' => null, // not in wurfl
+        // 'renderingengine_name'         => null, // not in wurfl
+        // 'renderingengine_version'      => null, // not in wurfl
+        // 'renderingengine_manufacturer' => null, // not in wurfl
     );
     
     /**
@@ -135,7 +135,7 @@ abstract class DeviceHandler implements MatcherInterface
      *
      * @return 
      */
-    final public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
         if (!($cache instanceof \Zend\Cache\Frontend\Core)) {
             throw new \InvalidArgumentException(
@@ -153,7 +153,7 @@ abstract class DeviceHandler implements MatcherInterface
      *
      * @return void
      */
-    final public function setUserAgent($userAgent)
+    public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
         $this->_utils->setUserAgent($userAgent);
@@ -180,12 +180,14 @@ abstract class DeviceHandler implements MatcherInterface
      *
      * @return StdClass
      */
-    final public function detect()
+    public function detect()
     {
         $this->setCapability('device_cpu', $this->_detectCpu());
         $this->setCapability('device_bits', $this->_detectBits());
         
-        return $this->detectDevice();
+        $device = $this->detectDevice();
+        
+        return $device;
     }
     
     /**
@@ -227,6 +229,16 @@ abstract class DeviceHandler implements MatcherInterface
     }
     
     /**
+     * detect the bits of the cpu which is build into the device
+     *
+     * @return Handler
+     */
+    protected function _detectProperties()
+    {
+        return $this;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -244,7 +256,7 @@ abstract class DeviceHandler implements MatcherInterface
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function getCapability($capabilityName) 
+    public function getCapability($capabilityName) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -259,7 +271,7 @@ abstract class DeviceHandler implements MatcherInterface
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function setCapability($capabilityName, $capabilityValue = null) 
+    public function setCapability($capabilityName, $capabilityValue = null) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -349,7 +361,7 @@ abstract class DeviceHandler implements MatcherInterface
      * 
      * @return array All Capability values
      */
-    final public function getCapabilities() 
+    public function getCapabilities() 
     {
         return $this->_properties;
     }

@@ -79,12 +79,12 @@ class MicrosoftInternetExplorer extends BrowserHandler
         // device
         // 'model_name'                => null,
         // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
+        'brand_name'                => 'Microsoft',
         // 'model_extra_info'          => null,
         // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        // 'device_claims_web_support' => null,
+        'has_qwerty_keyboard'       => true,
+        // 'pointing_method'           => 'mouse',
+        'device_claims_web_support' => true,
         // 'device_claims_web_support' => null,
         
         // browser
@@ -193,6 +193,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMicroVersion(true);
         
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
         

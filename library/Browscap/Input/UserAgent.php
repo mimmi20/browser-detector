@@ -94,7 +94,7 @@ class UserAgent extends Core
      *
      * @return \Browscap\Detector\Result
      */
-    final public function getBrowser()
+    public function getBrowser()
     {
         $this->_device = $this->_detectDevice();
         

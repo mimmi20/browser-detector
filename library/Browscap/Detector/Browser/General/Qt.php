@@ -76,7 +76,7 @@ class Qt extends BrowserHandler
         // device
         // 'model_name'                => null,
         // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
+        'brand_name'                => null,
         // 'model_extra_info'          => null,
         // 'marketing_name'            => null,
         // 'has_qwerty_keyboard'       => null,
@@ -85,10 +85,10 @@ class Qt extends BrowserHandler
         // 'device_claims_web_support' => null,
         
         // browser
-        'mobile_browser'              => 'Qt',
+        'mobile_browser'              => 'QtWeb Internet Browser',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Digia', // not in wurfl
+        'mobile_browser_manufacturer' => 'LogicWare & LSoft Technologies', // not in wurfl
         
         // os
         // 'device_os'              => null,

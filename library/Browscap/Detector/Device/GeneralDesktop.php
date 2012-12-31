@@ -80,29 +80,26 @@ class GeneralDesktop extends DeviceHandler
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => null,
-        'pointing_method'           => null,
+        'pointing_method'           => 'mouse',
         'device_claims_web_support' => null,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // browser
-        'mobile_browser'         => null,
-        'mobile_browser_version' => null,
-        'mobile_browser_bits'    => null, // not in wurfl
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
         
         // os
-        'device_os'              => null,
-        'device_os_version'      => null,
-        'device_os_bits'         => null, // not in wurfl
-        'device_os_manufacturer' => null, // not in wurfl
+        // 'device_os'              => null,
+        // 'device_os_version'      => null,
+        // 'device_os_bits'         => null, // not in wurfl
+        // 'device_os_manufacturer' => null, // not in wurfl
         
         // engine
-        'renderingengine_name'         => null, // not in wurfl
-        'renderingengine_version'      => null, // not in wurfl
-        'renderingengine_manufacturer' => null, // not in wurfl
-        
-        // others
-        'is_banned' => null, // not in wurfl
+        // 'renderingengine_name'         => null, // not in wurfl
+        // 'renderingengine_version'      => null, // not in wurfl
+        // 'renderingengine_manufacturer' => null, // not in wurfl
     );
     
     /**

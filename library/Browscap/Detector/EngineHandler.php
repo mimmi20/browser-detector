@@ -119,6 +119,11 @@ abstract class EngineHandler implements MatcherInterface
     public function __construct()
     {
         $this->_utils = new Utils();
+        
+        $detector = new Version();
+        $detector->setVersion('');
+        
+        $this->setCapability('renderingengine_version', $detector);
     }
     
     /**
@@ -126,7 +131,7 @@ abstract class EngineHandler implements MatcherInterface
      *
      * @return void
      */
-    final public function setUserAgent($userAgent)
+    public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
         $this->_utils->setUserAgent($userAgent);
@@ -141,7 +146,7 @@ abstract class EngineHandler implements MatcherInterface
      *
      * @return 
      */
-    final public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
         if (!($cache instanceof \Zend\Cache\Frontend\Core)) {
             throw new \InvalidArgumentException(
@@ -169,9 +174,10 @@ abstract class EngineHandler implements MatcherInterface
      *
      * @return StdClass
      */
-    final public function detect()
+    public function detect()
     {
         $this->_detectVersion();
+        $this->_detectProperties();
         
         return $this;
     }
@@ -192,6 +198,16 @@ abstract class EngineHandler implements MatcherInterface
     }
     
     /**
+     * detect the bits of the cpu which is build into the device
+     *
+     * @return Handler
+     */
+    protected function _detectProperties()
+    {
+        return $this;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -209,7 +225,7 @@ abstract class EngineHandler implements MatcherInterface
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function getCapability($capabilityName) 
+    public function getCapability($capabilityName) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -224,7 +240,7 @@ abstract class EngineHandler implements MatcherInterface
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function setCapability($capabilityName, $capabilityValue = null) 
+    public function setCapability($capabilityName, $capabilityValue = null) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -261,7 +277,7 @@ abstract class EngineHandler implements MatcherInterface
      * 
      * @return array All Capability values
      */
-    final public function getCapabilities() 
+    public function getCapabilities() 
     {
         return $this->_properties;
     }

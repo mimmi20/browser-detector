@@ -43,6 +43,7 @@ namespace Browscap\Detector\Os;
 
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -191,5 +192,27 @@ class Ios extends OsHandler
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();
+    }
+    
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     * 
+     * @param string $capabilityName must be a valid capability name
+     * @return string Capability value
+     * @throws InvalidArgumentException
+     */
+    public function getCapability($capabilityName) 
+    {
+        $this->_checkCapability($capabilityName);
+        
+        switch ($capabilityName) {
+            case 'model_extra_info':
+                return $this->_properties['device_os_version']->getVersion(Version::MAJORMINOR);
+                break;
+            default:
+                return $this->_properties[$capabilityName];
+                break;
+        }
     }
 }

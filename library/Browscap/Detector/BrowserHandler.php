@@ -126,6 +126,11 @@ abstract class BrowserHandler implements MatcherInterface
     public function __construct()
     {
         $this->_utils = new Utils();
+        
+        $detector = new Version();
+        $detector->setVersion('');
+        
+        $this->setCapability('mobile_browser_version', $detector);
     }
     
     /**
@@ -135,7 +140,7 @@ abstract class BrowserHandler implements MatcherInterface
      *
      * @return 
      */
-    final public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
         if (!($cache instanceof \Zend\Cache\Frontend\Core)) {
             throw new \InvalidArgumentException(
@@ -153,7 +158,7 @@ abstract class BrowserHandler implements MatcherInterface
      *
      * @return void
      */
-    final public function setUserAgent($userAgent)
+    public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
         $this->_utils->setUserAgent($userAgent);
@@ -176,10 +181,11 @@ abstract class BrowserHandler implements MatcherInterface
      *
      * @return StdClass
      */
-    final public function detect()
+    public function detect()
     {
         $this->_detectVersion();
         $this->_detectBits();
+        $this->_detectProperties();
         
         return $this;
     }
@@ -202,12 +208,22 @@ abstract class BrowserHandler implements MatcherInterface
      *
      * @return void
      */
-    final protected function _detectBits()
+    protected function _detectBits()
     {
         $detector = new \Browscap\Detector\Bits\Browser();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('mobile_browser_bits', $detector->getBits());
+    }
+    
+    /**
+     * detect the bits of the cpu which is build into the device
+     *
+     * @return Handler
+     */
+    protected function _detectProperties()
+    {
+        return $this;
     }
     
     /**
@@ -228,7 +244,7 @@ abstract class BrowserHandler implements MatcherInterface
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function getCapability($capabilityName) 
+    public function getCapability($capabilityName) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -243,7 +259,7 @@ abstract class BrowserHandler implements MatcherInterface
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function setCapability($capabilityName, $capabilityValue = null) 
+    public function setCapability($capabilityName, $capabilityValue = null) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -304,7 +320,7 @@ abstract class BrowserHandler implements MatcherInterface
      * 
      * @return array All Capability values
      */
-    final public function getCapabilities() 
+    public function getCapabilities() 
     {
         return $this->_properties;
     }

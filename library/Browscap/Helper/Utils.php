@@ -56,7 +56,7 @@ final class Utils
      *
      * @return void
      */
-    final public function setUserAgent($userAgent)
+    public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
         

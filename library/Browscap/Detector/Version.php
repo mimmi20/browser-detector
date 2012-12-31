@@ -69,6 +69,11 @@ final class Version
     const FULLVERSION = 3;
     
     /**
+     * @var integer
+     */
+    const MINORONLY   = 4;
+    
+    /**
      * @var string the user agent to handle
      */
     private $_useragent = null;
@@ -99,6 +104,17 @@ final class Version
     private $_default = '';
     
     /**
+     * @var boolean a Flag to tell that the minor and the micro versions should
+     *              be ignored
+     */
+    private $_ignoreMinor = false;
+    
+    /**
+     * @var boolean a Flag to tell that the micro version should be ignored
+     */
+    private $_ignoreMicro = false;
+    
+    /**
      * sets the user agent to be handled
      *
      * @return Version
@@ -120,13 +136,13 @@ final class Version
      */
     public function getVersion($mode = self::MAJORMINOR)
     {
-        if (null === $this->_useragent) {
-            throw new \UnexpectedValueException(
-                'You have to set the useragent before calling this function'
-            );
-        }
-        
         if (null === $this->_version) {
+            if (null === $this->_useragent) {
+                throw new \UnexpectedValueException(
+                    'You have to set the useragent before calling this function'
+                );
+            }
+            
             $this->detectVersion();
         }
         
@@ -134,23 +150,47 @@ final class Version
             case self::MAJORONLY:
                 return ($this->_major ? $this->_major : '');
                 break;
-            case self::MAJORMINOR:
-                $version = $this->_major . '.' . $this->_minor;
-                
-                if ('0.0' == $version) {
+            case self::MINORONLY:
+                if ($this->_ignoreMinor) {
                     return '';
+                } else {
+                    return ($this->_minor ? $this->_minor : '');
                 }
-                
-                return $version;
+                break;
+            case self::MAJORMINOR:
+                if ($this->_ignoreMinor) {
+                    return ($this->_major ? $this->_major : '');
+                } else {
+                    $version = $this->_major . '.' . $this->_minor;
+                    
+                    if ('0.0' == $version) {
+                        return '';
+                    }
+                    
+                    return $version;
+                }
                 break;
             default:
-                $version = $this->_major . '.' . $this->_minor . '.' . $this->_micro;
-                
-                if ('0.0.0' == $version) {
-                    return '';
+                if ($this->_ignoreMinor) {
+                    return ($this->_major ? $this->_major : '');
+                } elseif ($this->_ignoreMicro) {
+                    $version = $this->_major . '.' . $this->_minor;
+                    
+                    if ('0.0' == $version) {
+                        return '';
+                    }
+                    
+                    return $version;
+                } else {
+                    $version = $this->_major . '.' . $this->_minor . '.' 
+                        . $this->_micro;
+                    
+                    if ('0.0.0' == $version) {
+                        return '';
+                    }
+                    
+                    return $version;
                 }
-                
-                return $version;
                 break;
         }
     }
@@ -163,7 +203,7 @@ final class Version
      * @return Version
      * @throws \UnexpectedValueException
      */
-    final public function detectVersion($searches = null)
+    public function detectVersion($searches = null)
     {
         if (!is_array($searches) && !is_string($searches)) {
             throw new \UnexpectedValueException(
@@ -221,7 +261,7 @@ final class Version
      * @return Version
      * @throws \UnexpectedValueException
      */
-    final public function setVersion($version)
+    public function setVersion($version)
     {
         $version  = ltrim(str_replace('_', '.', $version), '0');
         $splitted = explode('.', $version, 3);
@@ -243,7 +283,7 @@ final class Version
      * @return Version
      * @throws \UnexpectedValueException
      */
-    final public function setDefaulVersion($version)
+    public function setDefaulVersion($version)
     {
         if (!is_string($version)) {
             throw new \UnexpectedValueException(
@@ -252,6 +292,30 @@ final class Version
         }
         
         $this->_default = $version;
+    }
+    
+    /**
+     * sets the flag to ignore the minor and the micro versions
+     *
+     * @param boolean $ignore
+     *
+     * @return Version
+     */
+    public function ignoreMinorVersion($ignore)
+    {
+        $this->_ignoreMinor = ($ignore ? true : false);
+    }
+    
+    /**
+     * sets the flag to ignore the micro version
+     *
+     * @param boolean $ignore
+     *
+     * @return Version
+     */
+    public function ignoreMicroVersion($ignore)
+    {
+        $this->_ignoreMicro = ($ignore ? true : false);
     }
     
     public function __toString()

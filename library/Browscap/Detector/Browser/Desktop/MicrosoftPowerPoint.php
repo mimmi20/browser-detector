@@ -77,7 +77,7 @@ class MicrosoftPowerPoint extends MicrosoftOffice
         // device
         // 'model_name'                => null,
         // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
+        'brand_name'                => 'Microsoft',
         // 'model_extra_info'          => null,
         // 'marketing_name'            => null,
         // 'has_qwerty_keyboard'       => null,
@@ -150,6 +150,7 @@ class MicrosoftPowerPoint extends MicrosoftOffice
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMinorVersion(true);
         
         $doMatch = preg_match(
             '/PowerPoint\/([\d\.]+)/', $this->_useragent, $matches

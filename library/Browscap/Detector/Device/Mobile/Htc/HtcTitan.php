@@ -73,35 +73,32 @@ class HtcTitan extends HtcBase
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Titan',
+        'model_name'                => 'X310e',
         'manufacturer_name'         => 'HTC',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => null,
-        'pointing_method'           => null,
-        'device_claims_web_support' => null,
+        'marketing_name'            => 'Titan',
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
+        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // browser
-        'mobile_browser'         => null,
-        'mobile_browser_version' => null,
-        'mobile_browser_bits'    => null, // not in wurfl
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
         
         // os
-        'device_os'              => null,
-        'device_os_version'      => null,
-        'device_os_bits'         => null, // not in wurfl
-        'device_os_manufacturer' => null, // not in wurfl
+        // 'device_os'              => null,
+        // 'device_os_version'      => null,
+        // 'device_os_bits'         => null, // not in wurfl
+        // 'device_os_manufacturer' => null, // not in wurfl
         
         // engine
-        'renderingengine_name'         => null, // not in wurfl
-        'renderingengine_version'      => null, // not in wurfl
-        'renderingengine_manufacturer' => null, // not in wurfl
-        
-        // others
-        'is_banned' => null, // not in wurfl
+        // 'renderingengine_name'         => null, // not in wurfl
+        // 'renderingengine_version'      => null, // not in wurfl
+        // 'renderingengine_manufacturer' => null, // not in wurfl
     );
     
     /**
@@ -113,7 +110,7 @@ class HtcTitan extends HtcBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC; TITAN'))) {
+        if (!$this->_utils->checkIfContains(array('HTC; TITAN', 'HTC; TITAN X310e'))) {
             return false;
         }
         

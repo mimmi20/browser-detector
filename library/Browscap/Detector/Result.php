@@ -52,7 +52,7 @@ namespace Browscap\Detector;
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class Result
+final class Result
 {
     /**
      * the detected browser properties
@@ -652,6 +652,16 @@ class Result
         'nfc_support' => null,
     );
     
+    public function __construct()
+    {
+        $detector = new Version();
+        $detector->setVersion('');
+        
+        $this->setCapability('mobile_browser_version', clone $detector);
+        $this->setCapability('renderingengine_version', clone $detector);
+        $this->setCapability('device_os_version', clone $detector);
+    }
+    
     /**
      * Returns the value of a given capability name for the current device
      * 
@@ -660,7 +670,7 @@ class Result
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    final public function getCapability($capabilityName) 
+    public function getCapability($capabilityName) 
     {
         $this->_checkCapability($capabilityName);
         
@@ -676,9 +686,24 @@ class Result
      * @return Result
      * @throws InvalidArgumentException
      */
-    final public function setCapability($capabilityName, $capabilityValue = null) 
+    public function setCapability($capabilityName, $capabilityValue = null) 
     {
         $this->_checkCapability($capabilityName);
+        
+        $versionfields = array(
+            'mobile_browser_version', 'renderingengine_version', 
+            'device_os_version'
+        );
+        
+        if (in_array($capabilityName, $versionfields) 
+            && !($capabilityValue instanceof Version)
+        ) {
+            throw new \InvalidArgumentException(
+                'capability "' . $capabilityName . '" requires an instance of '
+                . '\\Browscap\\Detector\\Version as value for object "' 
+                . $this->_properties['mobile_browser'] . '"'
+            );
+        }
         
         $this->_properties[$capabilityName] = $capabilityValue;
         
@@ -690,7 +715,7 @@ class Result
      * 
      * @return array All Capability values
      */
-    final public function getCapabilities() 
+    public function getCapabilities() 
     {
         return $this->_properties;
     }
@@ -702,7 +727,7 @@ class Result
      *
      * @return Result
      */
-    final public function setCapabilities(array $capabilities) 
+    public function setCapabilities(array $capabilities) 
     {
         foreach ($capabilities as $capabilityName => $capabilityValue) {
             if (is_numeric($capabilityName)) {
@@ -710,12 +735,11 @@ class Result
             }
             
             try {
-                $this->setCapability($capabilityName, $capabilityValue);
+            $this->setCapability($capabilityName, $capabilityValue);
             } catch (\Exception $e) {
-                /*
-                 * do nothing here
-                 * -> just ignore this
-                 */
+                echo var_export($capabilities, true);
+                
+                exit;
             }
         }
         
@@ -776,10 +800,10 @@ class Result
         );
     }
     
-    final public function getFullBrowser($withBits = true)
+    public function getFullBrowser($withBits = true, $mode = Version::FULLVERSION)
     {
         $browser = $this->getCapability('mobile_browser');
-        $version = $this->getCapability('mobile_browser_version');
+        $version = $this->getCapability('mobile_browser_version')->getVersion($mode);
         $bits    = $this->getCapability('mobile_browser_bits');
         
         return $browser 
@@ -787,10 +811,10 @@ class Result
             . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
-    final public function getFullPlatform($withBits = true)
+    public function getFullPlatform($withBits = true, $mode = Version::FULLVERSION)
     {
         $name    = $this->getCapability('device_os');
-        $version = $this->getCapability('device_os_version');
+        $version = $this->getCapability('device_os_version')->getVersion($mode);
         $bits    = $this->getCapability('device_os_bits');
         
         return $name . ($name != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
@@ -801,7 +825,7 @@ class Result
      *
      * @return string
      */
-    final public function getFullDevice($withManufacturer = false)
+    public function getFullDevice($withManufacturer = false)
     {
         $device  = $this->getCapability('model_name');
         $version = null; // $this->getVersion();
@@ -820,10 +844,10 @@ class Result
         return $device;
     }
     
-    final public function getFullEngine()
+    public function getFullEngine($mode = Version::FULLVERSION)
     {
         $engine  = $this->getCapability('renderingengine_name');
-        $version = $this->getCapability('renderingengine_version');
+        $version = $this->getCapability('renderingengine_version')->getVersion($mode);
         
         return $engine . (($engine != $version && '' != $version) ? ' ' . $version : '');
     }
@@ -833,7 +857,7 @@ class Result
      *
      * @return string
      */
-    final public function getDevice()
+    public function getDevice()
     {
         return $this->getCapability('model_name');
     }
@@ -843,7 +867,7 @@ class Result
      *
      * @return string
      */
-    final public function getDeviceVersion()
+    public function getDeviceVersion()
     {
         return null; // $this->getCapability('mobile_browser');
     }
@@ -853,7 +877,7 @@ class Result
      *
      * @return string
      */
-    final public function getDeviceManufacturer()
+    public function getDeviceManufacturer()
     {
         return $this->getCapability('manufacturer_name');
     }
@@ -878,17 +902,17 @@ class Result
         return $this->getCapability('pdf_support');
     }
     
-    final public function getBrowserName()
+    public function getBrowserName()
     {
         return $this->getCapability('mobile_browser');
     }
     
-    final public function getVersion()
+    public function getVersion()
     {
         return $this->getCapability('mobile_browser_version');
     }
     
-    final public function getBits()
+    public function getBits()
     {
         return $this->getCapability('mobile_browser_bits');
     }
@@ -898,7 +922,7 @@ class Result
      *
      * @return string
      */
-    final public function getBrowserManufacturer()
+    public function getBrowserManufacturer()
     {
         return $this->getCapability('mobile_browser_manufacturer');
     }
@@ -908,7 +932,7 @@ class Result
      *
      * @return string
      */
-    final public function getOsManufacturer()
+    public function getOsManufacturer()
     {
         return $this->getCapability('device_os_manufacturer');
     }
@@ -923,27 +947,27 @@ class Result
         return $this->getCapability('is_transcoder');
     }
     
-    final public function getName()
+    public function getName()
     {
         return $this->getCapability('renderingengine_name');
     }
     
-    final public function getEngineVersion()
+    public function getEngineVersion()
     {
         return $this->getCapability('renderingengine_version');
     }
     
-    final public function getPlatform()
+    public function getPlatform()
     {
         return $this->getCapability('device_os');
     }
     
-    final public function getPlatformVersion()
+    public function getPlatformVersion()
     {
         return $this->getCapability('device_os_version');
     }
     
-    final public function getPlatformBits()
+    public function getPlatformBits()
     {
         return $this->getCapability('device_os_bits');
     }
@@ -1116,5 +1140,12 @@ class Result
     public function isSyndicationReader()
     {
         return $this->isSyndicationReader();
+    }
+    
+    public function getComparationName()
+    {
+        $this->getFullBrowser(false, Version::MAJORMINOR) . ' on ' 
+            . $this->getFullPlatform(false, Version::MAJORMINOR) . ', ' 
+            . $this->getFullDevice(false);
     }
 }
