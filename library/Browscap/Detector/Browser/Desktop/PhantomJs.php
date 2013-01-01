@@ -127,14 +127,14 @@ class PhantomJs extends BrowserHandler
      */
     protected function _detectVersion()
     {
-        $doMatch = preg_match('/PhantomJS\/([\d\.]+)/', $this->_useragent, $matches);
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
         
-        if ($doMatch) {
-            $this->setCapability('mobile_browser_version', $matches[1]);
-            return;
-        }
+        $searches = array('PhantomJS');
         
-        $this->setCapability('mobile_browser_version', $detector->setVersion(''));
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
     }
     
     /**
