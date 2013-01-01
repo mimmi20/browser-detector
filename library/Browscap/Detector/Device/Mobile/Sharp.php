@@ -75,7 +75,7 @@ class Sharp extends GeneralMobile
         // device
         'model_name'                => 'general Sharp Device',
         'manufacturer_name'         => 'Sharp',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Sharp',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

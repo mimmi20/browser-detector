@@ -75,7 +75,7 @@ class Apple extends GeneralMobile
         // device
         'model_name'                => 'general Apple Device',
         'manufacturer_name'         => 'Apple',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Apple',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

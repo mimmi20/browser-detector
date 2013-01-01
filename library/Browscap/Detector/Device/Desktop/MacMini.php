@@ -73,7 +73,7 @@ class MacMini extends Macintosh
         // device
         'model_name'                => 'Mac Mini',
         'manufacturer_name'         => 'Apple',
-        'brand_name'                => 'unknown',
+        'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

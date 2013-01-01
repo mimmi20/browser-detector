@@ -75,7 +75,7 @@ class MID1125 extends CobyBase
         // device
         'model_name'                => 'MID1125',
         'manufacturer_name'         => 'Coby',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Coby',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

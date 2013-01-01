@@ -75,7 +75,7 @@ class NokiaN8 extends NokiaBase
         // device
         'model_name'                => 'N8',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

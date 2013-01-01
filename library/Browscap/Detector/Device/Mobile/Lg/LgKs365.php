@@ -75,7 +75,7 @@ class LgKs365 extends LgBase
         // device
         'model_name'                => 'KS365',
         'manufacturer_name'         => 'LG',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

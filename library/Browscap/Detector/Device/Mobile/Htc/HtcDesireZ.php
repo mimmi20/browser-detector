@@ -71,11 +71,11 @@ class HtcDesireZ extends HtcA8181
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A7272 - Desire Z - Vision',
+        'model_name'                => 'Desire Z',
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Desire',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

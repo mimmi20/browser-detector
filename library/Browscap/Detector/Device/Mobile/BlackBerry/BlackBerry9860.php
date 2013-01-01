@@ -77,9 +77,9 @@ class BlackBerry9860 extends BlackBerryBase
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'clickwheel',
+        'marketing_name'            => 'Monza',
+        'has_qwerty_keyboard'       => false,
+        'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl

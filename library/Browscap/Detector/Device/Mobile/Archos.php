@@ -75,7 +75,7 @@ class Archos extends GeneralMobile
         // device
         'model_name'                => 'general Archos Device',
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Archos',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

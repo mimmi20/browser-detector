@@ -75,7 +75,7 @@ class ArchosA70H2 extends ArchosBase
         // device
         'model_name'                => 'A70 H2',
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Archos',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

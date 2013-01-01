@@ -75,7 +75,7 @@ class Toshiba extends GeneralMobile
         // device
         'model_name'                => 'general Toshiba Device',
         'manufacturer_name'         => 'Toshiba',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Toshiba',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

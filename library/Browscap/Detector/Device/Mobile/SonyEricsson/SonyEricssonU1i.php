@@ -77,8 +77,8 @@ class SonyEricssonU1i extends SonyBase
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'Satio', // wurflkey: sonyericsson_u1i_ver1
+        'has_qwerty_keyboard'       => false,   // wurflkey: sonyericsson_u1i_ver1
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

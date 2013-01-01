@@ -63,7 +63,7 @@ class HtcFlyerP512 extends HtcFlyer
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -71,7 +71,7 @@ class HtcFlyerP512 extends HtcFlyer
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Flyer P512',
+        'model_name'                => 'Flyer',
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,

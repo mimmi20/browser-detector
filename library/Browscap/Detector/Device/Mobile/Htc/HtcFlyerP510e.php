@@ -63,7 +63,7 @@ class HtcFlyerP510e extends HtcFlyer
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,

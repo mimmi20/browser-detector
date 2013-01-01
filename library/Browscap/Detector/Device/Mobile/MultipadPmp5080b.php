@@ -75,7 +75,7 @@ class MultipadPmp5080b extends GeneralMobile
         // device
         'model_name'                => 'PMP5080B',
         'manufacturer_name'         => 'Multipad',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Multipad', // wurflkey: multipad_pmp5080b_ver1_suban40
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

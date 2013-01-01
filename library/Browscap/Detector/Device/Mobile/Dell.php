@@ -75,7 +75,7 @@ class Dell extends GeneralMobile
         // device
         'model_name'                => 'general Dell Device',
         'manufacturer_name'         => 'Dell',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Dell',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

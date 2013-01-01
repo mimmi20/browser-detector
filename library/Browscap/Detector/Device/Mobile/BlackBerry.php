@@ -75,7 +75,7 @@ class BlackBerry extends GeneralMobile
         // device
         'model_name'                => 'general BlackBerry Device',
         'manufacturer_name'         => 'RIM',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'RIM',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

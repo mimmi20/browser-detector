@@ -75,7 +75,7 @@ class Zte extends GeneralMobile
         // device
         'model_name'                => 'general ZTE Device',
         'manufacturer_name'         => 'ZTE',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'ZTE',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -112,7 +112,7 @@ class Zte extends GeneralMobile
     {
         $ztePhones = array(
             'zte', 'base tab', 'base lutea', 'racerii', ' x920 ', ' n600 ', 
-            ' w713 ', ' v880 ', ' v9 '
+            ' w713 ', ' v880 ', ' v9 ', 'smarttab7'
         );
         
         if ($this->_utils->checkIfContains($ztePhones, true)) {

@@ -75,7 +75,7 @@ class Medion extends GeneralMobile
         // device
         'model_name'                => 'general Medion Device',
         'manufacturer_name'         => 'Medion',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Medion',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

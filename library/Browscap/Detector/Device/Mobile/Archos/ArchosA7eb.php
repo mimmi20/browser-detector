@@ -75,7 +75,7 @@ class ArchosA7eb extends ArchosBase
         // device
         'model_name'                => 'A7EB',
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Archos',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

@@ -77,8 +77,8 @@ class SamsungSghi917 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'Omnia 7',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

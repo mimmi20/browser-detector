@@ -75,7 +75,7 @@ class OdysGenesis extends OdysBase
         // device
         'model_name'                => 'Genesis',
         'manufacturer_name'         => 'Odys',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Odys',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

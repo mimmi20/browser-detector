@@ -75,9 +75,9 @@ class NextbookM803hc extends GeneralMobile
         // device
         'model_name'                => 'M803HC',
         'manufacturer_name'         => 'Nextbook',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nextbook',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Premium8',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

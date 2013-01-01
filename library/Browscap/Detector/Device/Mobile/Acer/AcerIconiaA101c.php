@@ -73,7 +73,7 @@ class AcerIconiaA101c extends AcerIconiaA101
         // device
         'model_name'                => 'A101C',
         'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Acer',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

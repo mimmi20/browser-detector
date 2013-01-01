@@ -79,7 +79,7 @@ class MicrosoftOffice extends BrowserHandler
         // device
         // 'model_name'                => null,
         // 'manufacturer_name'         => null,
-        'brand_name'                => 'Microsoft',
+        // 'brand_name'                => 'Microsoft',
         // 'model_extra_info'          => null,
         // 'marketing_name'            => null,
         // 'has_qwerty_keyboard'       => null,

@@ -75,7 +75,7 @@ class AcerS120LiquidMetal extends AcerBase
         // device
         'model_name'                => 'S120 - Liquid Metal',
         'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Acer',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

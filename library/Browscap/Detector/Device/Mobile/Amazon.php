@@ -75,7 +75,7 @@ class Amazon extends GeneralMobile
         // device
         'model_name'                => 'general Amazon Device',
         'manufacturer_name'         => 'Amazon',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -110,7 +110,7 @@ class Amazon extends GeneralMobile
      */
     public function canHandle()
     {
-        $amazonPhones = array('Amazon', 'Kindle', 'Silk');
+        $amazonPhones = array('Amazon', 'Kindle', 'Silk', 'KFTT', 'KFOT');
         
         if (!$this->_utils->checkIfContains($amazonPhones)) {
             return false;

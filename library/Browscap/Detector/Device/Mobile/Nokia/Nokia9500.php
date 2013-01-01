@@ -75,7 +75,7 @@ class Nokia9500 extends NokiaBase
         // device
         'model_name'                => '9500',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

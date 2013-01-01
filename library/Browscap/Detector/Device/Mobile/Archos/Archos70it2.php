@@ -75,7 +75,7 @@ class Archos70it2 extends ArchosBase
         // device
         'model_name'                => '70it2',
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Archos',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

@@ -71,11 +71,11 @@ class MotorolaMz604 extends MotorolaXoom
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MZ604 - Xoom',
+        'model_name'                => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xoom',  // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

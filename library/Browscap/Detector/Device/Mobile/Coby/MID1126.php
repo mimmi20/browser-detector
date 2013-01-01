@@ -75,9 +75,9 @@ class MID1126 extends CobyBase
         // device
         'model_name'                => 'MID1126',
         'manufacturer_name'         => 'Coby',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Coby',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Kyros MID1126',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

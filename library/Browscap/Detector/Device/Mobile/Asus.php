@@ -75,7 +75,7 @@ class Asus extends GeneralMobile
         // device
         'model_name'                => 'general Asus Device',
         'manufacturer_name'         => 'Asus',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Asus',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

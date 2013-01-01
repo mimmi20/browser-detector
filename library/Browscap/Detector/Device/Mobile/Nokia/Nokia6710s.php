@@ -75,7 +75,7 @@ class Nokia6710s extends NokiaBase
         // device
         'model_name'                => '6710 slide',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

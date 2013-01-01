@@ -75,7 +75,7 @@ class Macintosh extends GeneralDesktop
         // device
         'model_name'                => 'Macintosh',
         'manufacturer_name'         => 'Apple',
-        'brand_name'                => 'unknown',
+        'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

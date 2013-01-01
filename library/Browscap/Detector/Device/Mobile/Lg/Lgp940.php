@@ -75,9 +75,9 @@ class Lgp940 extends LgBase
         // device
         'model_name'                => 'P940',
         'manufacturer_name'         => 'LG',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Prada 3.0',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

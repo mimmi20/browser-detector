@@ -73,7 +73,7 @@ class HuaweiIdeosS7Slim extends HuaweiIdeosS7
         // device
         'model_name'                => 'S7_Slim',
         'manufacturer_name'         => 'Huawei',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

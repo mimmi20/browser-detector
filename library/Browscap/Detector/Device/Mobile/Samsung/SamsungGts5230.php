@@ -77,10 +77,10 @@ class SamsungGts5230 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Star', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
+        'device_claims_web_support' => false,  // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

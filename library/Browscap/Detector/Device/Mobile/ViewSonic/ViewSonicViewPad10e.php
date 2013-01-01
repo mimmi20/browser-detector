@@ -75,7 +75,7 @@ class ViewSonicViewPad10e extends ViewSonicBase
         // device
         'model_name'                => 'ViewPad 10e',
         'manufacturer_name'         => 'ViewSonic',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'ViewSonic',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

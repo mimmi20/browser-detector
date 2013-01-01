@@ -75,7 +75,7 @@ class Alcatel extends GeneralMobile
         // device
         'model_name'                => 'general Alcatel Device',
         'manufacturer_name'         => 'Alcatel',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Alcatel',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

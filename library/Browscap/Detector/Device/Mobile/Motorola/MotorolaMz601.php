@@ -71,11 +71,11 @@ class MotorolaMz601 extends MotorolaXoom
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MZ601 - Xoom 3G',
+        'model_name'                => 'MZ601', // wurflkey: mot_mz601_ver1_suban41
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xoom',  // wurflkey: mot_mz601_ver1_suban41
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

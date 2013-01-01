@@ -78,9 +78,9 @@ class Iphone extends AppleBase
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => null,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => null,
+        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

@@ -75,8 +75,8 @@ class SamsungGti9100p extends SamsungGti9100
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
+        'has_qwerty_keyboard'       => true,              // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

@@ -75,7 +75,7 @@ class Nokia7510 extends NokiaBase
         // device
         'model_name'                => '7510',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

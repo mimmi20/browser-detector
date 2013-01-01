@@ -75,7 +75,7 @@ class Htc extends GeneralMobile
         // device
         'model_name'                => 'general HTC Device',
         'manufacturer_name'         => 'HTC',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

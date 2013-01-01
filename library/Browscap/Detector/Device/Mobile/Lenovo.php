@@ -75,7 +75,7 @@ class Lenovo extends GeneralMobile
         // device
         'model_name'                => 'general Lenovo Device',
         'manufacturer_name'         => 'Lenovo',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Lenovo',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

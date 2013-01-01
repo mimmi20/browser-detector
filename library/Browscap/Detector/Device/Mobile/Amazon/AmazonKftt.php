@@ -75,12 +75,12 @@ class AmazonKftt extends AmazonBase
         // device
         'model_name'                => 'KFTT',
         'manufacturer_name'         => 'Amazon',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
+        'device_claims_web_support' => false,              // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

@@ -75,7 +75,7 @@ class SonyEricsson extends GeneralMobile
         // device
         'model_name'                => 'general SonyEricsson Device',
         'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

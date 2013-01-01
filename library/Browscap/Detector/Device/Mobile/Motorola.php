@@ -75,7 +75,7 @@ class Motorola extends GeneralMobile
         // device
         'model_name'                => 'general Motorola Device',
         'manufacturer_name'         => 'Motorola',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

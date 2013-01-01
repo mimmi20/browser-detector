@@ -76,11 +76,11 @@ class BlackBerry9500 extends BlackBerryBase
         'model_name'                => 'BlackBerry 9500',
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'model_extra_info'          => 'Thunder', // wurflkey: blackberry9500_ver1_subos5
+        'marketing_name'            => 'Storm',   // wurflkey: blackberry9500_ver1_subos5
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'clickwheel',
-        'device_claims_web_support' => true,
+        'pointing_method'           => 'touchscreen', // wurflkey: blackberry9500_ver1_subos5
+        'device_claims_web_support' => false,     // wurflkey: blackberry9500_ver1_subos5
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

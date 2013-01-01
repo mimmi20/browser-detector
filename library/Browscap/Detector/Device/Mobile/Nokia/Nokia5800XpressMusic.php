@@ -71,12 +71,12 @@ class Nokia5800XpressMusic extends Nokia5800
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => '5800 XpressMusic',
+        'model_name'                => '5800i',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'XpressMusic',
+        'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

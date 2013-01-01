@@ -73,7 +73,7 @@ class NokiaE500 extends NokiaE5
         // device
         'model_name'                => 'E5-00',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

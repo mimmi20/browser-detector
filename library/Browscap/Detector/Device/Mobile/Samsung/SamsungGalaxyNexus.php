@@ -78,7 +78,7 @@ class SamsungGalaxyNexus extends SamsungGalaxy
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true, // wurflkey: samsung_galaxy_nexus_ver1
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

@@ -75,7 +75,7 @@ class GarminAsusA10 extends AsusBase
         // device
         'model_name'                => 'A10',
         'manufacturer_name'         => 'Garmin-Asus',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Asus',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

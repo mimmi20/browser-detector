@@ -63,7 +63,7 @@ class AcerIconiaA211 extends AcerIconia
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,7 +73,7 @@ class AcerIconiaA211 extends AcerIconia
         // device
         'model_name'                => 'A211',
         'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Acer',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

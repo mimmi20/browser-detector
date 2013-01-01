@@ -75,12 +75,12 @@ class Idl6651n extends GeneralTv
         // device
         'model_name'                => 'IDL-6651N',
         'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'unknown',
+        'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => null,
-        'pointing_method'           => null,
-        'device_claims_web_support' => null,
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'mouse',
+        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

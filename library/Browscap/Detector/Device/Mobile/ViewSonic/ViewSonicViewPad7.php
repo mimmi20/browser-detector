@@ -75,7 +75,7 @@ class ViewSonicViewPad7 extends ViewSonicBase
         // device
         'model_name'                => 'ViewPad7',
         'manufacturer_name'         => 'ViewSonic',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'ViewSonic',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

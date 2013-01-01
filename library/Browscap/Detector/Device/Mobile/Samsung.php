@@ -75,7 +75,7 @@ class Samsung extends GeneralMobile
         // device
         'model_name'                => 'general Samsung Device',
         'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

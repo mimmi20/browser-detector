@@ -73,11 +73,11 @@ class Ebrd1201 extends SonyBase
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'EBRD 1201',
+        'model_name'                => 'PRST1',
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Sony Reader Wi-Fi',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

@@ -75,7 +75,7 @@ class LgHb620t extends LgBase
         // device
         'model_name'                => 'HB620T',
         'manufacturer_name'         => 'LG',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

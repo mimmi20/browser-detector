@@ -75,7 +75,7 @@ class Arnova extends GeneralMobile
         // device
         'model_name'                => 'general Arnova Device',
         'manufacturer_name'         => 'Arnova',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Arnova',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

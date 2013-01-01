@@ -75,7 +75,7 @@ class AcerG100W extends AcerBase
         // device
         'model_name'                => 'G100W',
         'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Acer',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

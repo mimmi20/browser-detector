@@ -75,7 +75,7 @@ class AmazonKfot extends AmazonBase
         // device
         'model_name'                => 'KFOT',
         'manufacturer_name'         => 'Amazon',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

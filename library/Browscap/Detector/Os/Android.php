@@ -104,7 +104,7 @@ class Android extends Linux
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'Bada', 'MeeGo', 'BlackBerry; U; '))) {
+        if ($this->_utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'Bada', 'MeeGo', 'BlackBerry; U; ', 'webOS'))) {
             return false;
         }
         

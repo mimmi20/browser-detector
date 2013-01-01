@@ -77,7 +77,7 @@ class SonyEricssonLT22i extends SonyBase
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xperia P LT22i', // wurflkey: sonyericsson_lt22i_ver1_subua40_subuachr
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

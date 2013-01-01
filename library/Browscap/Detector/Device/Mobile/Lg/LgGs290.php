@@ -75,7 +75,7 @@ class LgGs290 extends LgBase
         // device
         'model_name'                => 'GS290',
         'manufacturer_name'         => 'LG',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

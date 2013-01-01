@@ -63,7 +63,7 @@ class MotorolaMz616 extends MotorolaXoom
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, //wurflkey:motorola_xoom2_ver1_suban40
         'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -71,11 +71,11 @@ class MotorolaMz616 extends MotorolaXoom
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MZ616 - Xoom 2 3G',
+        'model_name'                => 'MZ616',
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xoom 2 3G',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

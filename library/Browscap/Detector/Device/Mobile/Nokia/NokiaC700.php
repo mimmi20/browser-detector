@@ -73,9 +73,9 @@ class NokiaC700 extends NokiaC7
         // device
         'model_name'                => 'C7-00',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Astound',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

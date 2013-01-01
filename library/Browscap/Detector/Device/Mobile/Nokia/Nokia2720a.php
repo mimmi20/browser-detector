@@ -75,7 +75,7 @@ class Nokia2720a extends NokiaBase
         // device
         'model_name'                => '2720a',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

@@ -74,7 +74,7 @@ class MotorolaDroidX2 extends MotorolaDroid2
         'model_name'                => 'Droid X2',
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
-        'model_extra_info'          => null,
+        'model_extra_info'          => 'Verizon',
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',

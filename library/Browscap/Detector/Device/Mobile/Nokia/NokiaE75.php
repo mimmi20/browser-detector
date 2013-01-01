@@ -75,7 +75,7 @@ class NokiaE75 extends NokiaBase
         // device
         'model_name'                => 'E75',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

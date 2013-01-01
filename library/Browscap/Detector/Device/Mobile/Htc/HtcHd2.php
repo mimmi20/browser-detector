@@ -73,7 +73,7 @@ class HtcHd2 extends HtcBase
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'T8585 - HD2',
+        'model_name'                => 'HD2',
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,

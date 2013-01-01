@@ -76,7 +76,7 @@ class Safari extends BrowserHandler
         // device
         // 'model_name'                => null,
         // 'manufacturer_name'         => null,
-        'brand_name'                => null,
+        // 'brand_name'                => null,
         // 'model_extra_info'          => null,
         // 'marketing_name'            => null,
         // 'has_qwerty_keyboard'       => null,

@@ -75,9 +75,9 @@ class Lge610 extends LgBase
         // device
         'model_name'                => 'E610',
         'manufacturer_name'         => 'LG',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Optimus L5', // wurflkey: lg_e612_ver1_subua610_subuachrome
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

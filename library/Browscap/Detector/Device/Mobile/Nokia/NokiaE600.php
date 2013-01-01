@@ -73,9 +73,9 @@ class NokiaE600 extends NokiaE6
         // device
         'model_name'                => 'E6-00',
         'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'E6', // wurflkey: nokia_e6_00_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

@@ -75,7 +75,7 @@ class PalmPixi extends HpBase
         // device
         'model_name'                => 'Pixi',
         'manufacturer_name'         => 'Palm',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Palm',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

@@ -75,7 +75,7 @@ class HuaweiU8600 extends HuaweiBase
         // device
         'model_name'                => 'U8600',
         'manufacturer_name'         => 'Huawei',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

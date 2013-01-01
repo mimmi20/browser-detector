@@ -77,10 +77,10 @@ class BlackBerry8900 extends BlackBerryBase
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Curve',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'clickwheel',
-        'device_claims_web_support' => true,
+        'device_claims_web_support' => false,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

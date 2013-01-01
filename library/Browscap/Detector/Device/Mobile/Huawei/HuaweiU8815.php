@@ -65,7 +65,7 @@ class HuaweiU8815 extends HuaweiBase
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false, // wurflkey: huawei_u8815_ver1
         'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -75,9 +75,9 @@ class HuaweiU8815 extends HuaweiBase
         // device
         'model_name'                => 'U8815',
         'manufacturer_name'         => 'Huawei',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Ascent G 300',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

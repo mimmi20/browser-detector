@@ -73,7 +73,7 @@ class MacBookPro extends MacBook
         // device
         'model_name'                => 'MacBook Pro',
         'manufacturer_name'         => 'Apple',
-        'brand_name'                => 'unknown',
+        'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

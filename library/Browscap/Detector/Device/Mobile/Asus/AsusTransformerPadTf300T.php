@@ -75,7 +75,7 @@ class AsusTransformerPadTf300T extends AsusBase
         // device
         'model_name'                => 'TF300T',
         'manufacturer_name'         => 'Asus',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Asus',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

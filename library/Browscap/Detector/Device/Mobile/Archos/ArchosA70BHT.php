@@ -75,7 +75,7 @@ class ArchosA70BHT extends ArchosBase
         // device
         'model_name'                => 'A70BHT',
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Archos',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

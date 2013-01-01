@@ -1143,10 +1143,15 @@ final class Result
         return $this->isSyndicationReader();
     }
     
+    /**
+     * builds a atring for comparation with wurfl
+     *
+     * @return string
+     */
     public function getComparationName()
     {
-        $this->getFullBrowser(false, Version::MAJORMINOR) . ' on ' 
-            . $this->getFullPlatform(false, Version::MAJORMINOR) . ', ' 
-            . $this->getFullDevice(false);
+        return $this->getFullBrowser(true, Version::MAJORMINOR) . ' on ' 
+            . $this->getFullPlatform(true, Version::MAJORMINOR) . ', ' 
+            . $this->getFullDevice(true);
     }
 }

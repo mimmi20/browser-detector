@@ -75,7 +75,7 @@ class Sanyo extends GeneralMobile
         // device
         'model_name'                => 'general Sanyo Device',
         'manufacturer_name'         => 'Sanyo',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Sanyo',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

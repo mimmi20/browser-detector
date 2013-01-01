@@ -113,7 +113,7 @@ class WindowsPhoneOs extends OsHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7'))) {
+        if (!$this->_utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone'))) {
             return false;
         }
         

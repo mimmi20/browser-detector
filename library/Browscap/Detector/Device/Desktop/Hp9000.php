@@ -75,7 +75,7 @@ class Hp9000 extends GeneralDesktop
         // device
         'model_name'                => '9000',
         'manufacturer_name'         => 'HP',
-        'brand_name'                => 'unknown',
+        'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

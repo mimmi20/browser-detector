@@ -75,7 +75,7 @@ class Acer extends GeneralMobile
         // device
         'model_name'                => 'general Acer Device',
         'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Acer',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -132,7 +132,8 @@ class Acer extends GeneralMobile
             'E310',
             'E320',
             'G100W',
-            'Stream-S110'
+            'Stream-S110',
+            'Liquid'
         );
         
         if ($this->_utils->checkIfContains($acerPhones)) {
