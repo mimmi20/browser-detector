@@ -61,26 +61,26 @@ class Nokia5310 extends NokiaBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_5310_xpressmusic_ver1_sub0363', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '5310',
+        'model_name'                => '5310 XpressMusic', // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
+        'model_extra_info'          => null,               // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
+        'marketing_name'            => 'XpressMusic',      // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
+        'has_qwerty_keyboard'       => false,              // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
+        'pointing_method'           => '',                 // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
+        'device_claims_web_support' => false,              // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

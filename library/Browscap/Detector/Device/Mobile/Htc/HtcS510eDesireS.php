@@ -59,19 +59,19 @@ class HtcS510eDesireS extends HtcA8181
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_desire_s_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'S510e - Desire S',
+        'model_name'                => 'Desire S', // wurflkey: htc_desire_s_ver1
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,

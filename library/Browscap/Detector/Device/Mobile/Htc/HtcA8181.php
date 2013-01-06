@@ -61,23 +61,24 @@ class HtcA8181 extends HtcBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_desire_ver1_sub22_01', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A8181 - Desire',
+        'model_name'                => 'Desire',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Desire',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -111,6 +112,10 @@ class HtcA8181 extends HtcBase
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array('HTC_Desire_A8181', 'Desire_A8181', 'HTC Desire', 'HTC_Desire'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('DesireS'))) {
             return false;
         }
         

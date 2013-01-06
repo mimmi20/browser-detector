@@ -59,19 +59,20 @@ class HtcA9192Inspire4g extends HtcA8181
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_inspire4g_ver1_suban40a9192', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A9192 - Inspire 4G',
+        'model_name'                => 'Inspire 4G', // wurflkey: htc_inspire4g_ver1_suban40a9192
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,

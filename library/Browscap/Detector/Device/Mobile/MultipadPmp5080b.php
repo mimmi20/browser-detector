@@ -61,19 +61,20 @@ class MultipadPmp5080b extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'multipad_pmp5080b_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'PMP5080B',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Multipad',
         'brand_name'                => 'Multipad', // wurflkey: multipad_pmp5080b_ver1_suban40
         'model_extra_info'          => null,

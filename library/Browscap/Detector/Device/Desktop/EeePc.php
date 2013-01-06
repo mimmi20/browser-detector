@@ -74,6 +74,7 @@ class EeePc extends GeneralDesktop
         
         // device
         'model_name'                => 'eee pc',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'Asus',
         'model_extra_info'          => null,

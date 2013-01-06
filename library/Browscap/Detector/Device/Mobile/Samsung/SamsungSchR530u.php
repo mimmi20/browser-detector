@@ -61,24 +61,24 @@ class SamsungSchR530u extends SamsungBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i9300_ver1_subuauscellular', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'SCH-R530U',
+        'model_name'                => 'GT-I9300',        // wurflkey: samsung_gt_i9300_ver1_subuauscellular
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'model_extra_info'          => 'for US Cellular', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'marketing_name'            => 'Galaxy S3',       // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'has_qwerty_keyboard'       => true,              // wurflkey: samsung_gt_i9300_ver1_subuauscellular
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

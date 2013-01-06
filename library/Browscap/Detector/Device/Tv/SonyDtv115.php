@@ -74,6 +74,7 @@ class SonyDtv115 extends GeneralTv
         
         // device
         'model_name'                => 'DTV115',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
         'brand_name'                => null,
         'model_extra_info'          => null,

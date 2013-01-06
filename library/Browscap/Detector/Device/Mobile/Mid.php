@@ -66,14 +66,15 @@ class Mid extends GeneralMobile
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'MID',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Ginovo',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,

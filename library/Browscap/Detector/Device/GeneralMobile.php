@@ -75,6 +75,7 @@ class GeneralMobile extends DeviceHandler
         
         // device
         'model_name'                => 'general Mobile Device',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'Generic',
         'model_extra_info'          => null,

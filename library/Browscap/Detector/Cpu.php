@@ -115,7 +115,7 @@ final class Cpu
         }
         
         // PPC 64 Bits
-        if ($utils->checkIfContains(array('ppc64'))) {
+        if ($utils->checkIfContains(array('ppc64'), true)) {
             $this->_cpu = 'PPC X64';
             
             return $this;
@@ -124,6 +124,13 @@ final class Cpu
         // Intel X86
         if ($utils->checkIfContains(array('i586', 'i686', 'i386', 'i486', 'i86'))) {
             $this->_cpu = 'Intel X86';
+            
+            return $this;
+        }
+        
+        // PPC 64 Bits
+        if ($utils->checkIfContains(array('ppc'), true)) {
+            $this->_cpu = 'PPC';
             
             return $this;
         }

@@ -66,14 +66,15 @@ class SamsungGti8530 extends SamsungBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'GT-I8530',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
@@ -110,7 +111,7 @@ class SamsungGti8530 extends SamsungBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SAMSUNG; GT-I8530', 'GT-I8530', 'SAMSUNG-GT-I8530', 'SAMSUNG GT-I8530')) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG; GT-I8530', 'GT-I8530', 'SAMSUNG-GT-I8530', 'SAMSUNG GT-I8530'))) {
             return false;
         }
         

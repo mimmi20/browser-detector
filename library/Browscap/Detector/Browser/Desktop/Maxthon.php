@@ -156,13 +156,13 @@ class Maxthon extends BrowserHandler
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        if (false !== strpos($this->_useragent, 'MyIE')) {
-            $this->setCapability('mobile_browser_version', $detector->setVersion('1.0'));
+        if (false !== strpos($this->_useragent, 'MyIE2')) {
+            $this->setCapability('mobile_browser_version', $detector->setVersion('2.0'));
             return;
         }
         
-        if (false !== strpos($this->_useragent, 'MyIE2')) {
-            $this->setCapability('mobile_browser_version', $detector->setVersion('2.0'));
+        if (false !== strpos($this->_useragent, 'MyIE')) {
+            $this->setCapability('mobile_browser_version', $detector->setVersion('1.0'));
             return;
         }
         

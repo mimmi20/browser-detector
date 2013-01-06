@@ -61,21 +61,22 @@ class ArnovaArchm901 extends ArnovaBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'arnova_archm901_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'ARCHM901',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Arnova',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Arnova',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -100,10 +101,6 @@ class ArnovaArchm901 extends ArnovaBase
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
     );
-    /**
-     * @var string the detected device
-     */
-    protected $_device = 'ARCHM901';
     
     /**
      * Final Interceptor: Intercept

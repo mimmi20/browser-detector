@@ -109,7 +109,7 @@ class Samsung extends BrowserHandler
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains(array('Jasmine', 'NetFront', 'Dolfin', 'Dolphin'))) {
+        if ($this->_utils->checkIfContains(array('Jasmine', 'NetFront', 'Dolfin', 'Dolphin', 'IEMobile', 'MSIEMobile', 'MSIE'))) {
             return false;
         }
         

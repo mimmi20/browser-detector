@@ -72,6 +72,7 @@ class MacBook extends Macintosh
         
         // device
         'model_name'                => 'MacBook',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => null,
         'model_extra_info'          => null,

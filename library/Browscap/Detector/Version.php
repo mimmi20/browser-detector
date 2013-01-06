@@ -230,6 +230,10 @@ final class Version
                 continue;
             }
             
+            if (false !== strpos($search, '%')) {
+                $search = urldecode($search);
+            }
+            
             foreach ($modifiers as $modifier) {
                 $compareString = '/' . $search . $modifier[0] . '([\d\.\_ab]+)'
                     . $modifier[1] . '/';
@@ -325,5 +329,25 @@ final class Version
         } catch (\Exception $e) {
             return '';
         }
+    }
+    
+    /**
+     * detects if the version is makred as Alpha
+     *
+     * @return boolean
+     */
+    public function isAlpha()
+    {
+        return (false !== strpos($this->_version, 'a'));
+    }
+    
+    /**
+     * detects if the version is makred as Beta
+     *
+     * @return boolean
+     */
+    public function isBeta()
+    {
+        return (false !== strpos($this->_version, 'b'));
     }
 }

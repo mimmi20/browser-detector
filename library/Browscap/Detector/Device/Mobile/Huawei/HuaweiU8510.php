@@ -61,23 +61,24 @@ class HuaweiU8510 extends HuaweiBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_s41hw_ver1_subu8510', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
-        'is_bot'             => false,
+        'is_tablet'          => false, // wurflkey: huawei_s41hw_ver1_subu8510
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'U8510',
+        'model_name'                => 'S41HW',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Huawei',
         'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Pocket WiFi S II for emobile', // wurflkey: huawei_s41hw_ver1_subu8510
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

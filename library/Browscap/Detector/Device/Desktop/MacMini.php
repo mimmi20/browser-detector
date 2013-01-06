@@ -72,6 +72,7 @@ class MacMini extends Macintosh
         
         // device
         'model_name'                => 'Mac Mini',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => null,
         'model_extra_info'          => null,

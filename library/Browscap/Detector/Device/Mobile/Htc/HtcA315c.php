@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: HtcA315c.php 388 2012-12-31 22:03:46Z tmu $
  */
 
 /**
@@ -49,9 +49,9 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: HtcA315c.php 388 2012-12-31 22:03:46Z tmu $
  */
-class SamsungGalaxyNexus7 extends SamsungGalaxyNexus
+class HtcA315c extends HtcWildfire
 {
     /**
      * the detected browser properties
@@ -59,24 +59,25 @@ class SamsungGalaxyNexus7 extends SamsungGalaxyNexus
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_wildfire_s_ver1_subua', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Nexus 7',
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
+        'model_name'                => 'A315c',
+        'model_version'             => null, // not in wurfl
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'Wildfire S', // wurflkey: htc_wildfire_s_ver1_subua
+        'has_qwerty_keyboard'       => false,        // wurflkey: htc_wildfire_s_ver1_subua
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -108,7 +109,7 @@ class SamsungGalaxyNexus7 extends SamsungGalaxyNexus
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Nexus 7')) {
+        if (!$this->_utils->checkIfContains(array(' a315c '))) {
             return false;
         }
         
@@ -123,15 +124,5 @@ class SamsungGalaxyNexus7 extends SamsungGalaxyNexus
     public function getWeight()
     {
         return parent::getWeight() + 1;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
     }
 }

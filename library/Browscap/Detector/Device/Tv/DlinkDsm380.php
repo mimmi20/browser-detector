@@ -74,6 +74,7 @@ class DlinkDsm380 extends GeneralTv
         
         // device
         'model_name'                => 'DSM 380',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'DLink',
         'brand_name'                => null,
         'model_extra_info'          => null,

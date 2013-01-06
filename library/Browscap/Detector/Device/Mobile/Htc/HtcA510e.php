@@ -59,24 +59,25 @@ class HtcA510e extends HtcA510
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_wildfire_s_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'A510e',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'Wildfire S', // wurflkey: htc_wildfire_s_ver1
+        'has_qwerty_keyboard'       => false,        // wurflkey: htc_wildfire_s_ver1
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -98,10 +99,6 @@ class HtcA510e extends HtcA510
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
     );
-    /**
-     * @var string the detected device
-     */
-    protected $_device = 'A510e';
     
     /**
      * Final Interceptor: Intercept

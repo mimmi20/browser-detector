@@ -116,7 +116,7 @@ class Lunascape extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('Lunascape')) {
+        if (!$this->_utils->checkIfContains(array('Lunascape', 'iLunascape'))) {
             return false;
         }
         
@@ -156,7 +156,7 @@ class Lunascape extends BrowserHandler
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Lunascape');
+        $searches = array('Lunascape', 'iLunascape');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

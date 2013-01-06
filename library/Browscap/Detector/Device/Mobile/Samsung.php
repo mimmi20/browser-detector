@@ -66,14 +66,15 @@ class Samsung extends GeneralMobile
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'general Samsung Device',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
@@ -133,7 +134,7 @@ class Samsung extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Asus', 'U30GT'))) {
+        if ($this->_utils->checkIfContains(array('Asus', 'U30GT', 'Nexus 7'))) {
             return false;
         }
         

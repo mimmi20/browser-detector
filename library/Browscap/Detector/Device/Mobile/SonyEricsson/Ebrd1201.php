@@ -66,14 +66,15 @@ class Ebrd1201 extends SonyBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'PRST1',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
         'brand_name'                => 'Sony',
         'model_extra_info'          => null,

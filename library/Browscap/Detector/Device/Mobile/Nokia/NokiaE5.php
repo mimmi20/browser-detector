@@ -66,14 +66,15 @@ class NokiaE5 extends NokiaBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'E5',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
@@ -114,7 +115,7 @@ class NokiaE5 extends NokiaBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaE50', 'NokiaE52', 'NokiaE55', 'NokiaE56'))) {
+        if ($this->_utils->checkIfContains(array('NokiaE50', 'NokiaE51', 'NokiaE52', 'NokiaE55', 'NokiaE56'))) {
             return false;
         }
         

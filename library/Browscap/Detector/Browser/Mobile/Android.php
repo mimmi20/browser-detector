@@ -131,7 +131,9 @@ class Android extends BrowserHandler
             'NokiaBrowser', 
             'Opera', 
             'RIM Tablet',
+            'Series60',
             'Silk',
+            'UCBrowser',
             'WeTab-Browser',
             'YahooMobileMessenger'
         );

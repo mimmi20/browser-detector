@@ -74,6 +74,7 @@ class TechniSatMultyVisionIsio extends GeneralTv
         
         // device
         'model_name'                => 'MultyVision ISIO',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'TechniSat',
         'brand_name'                => null,
         'model_extra_info'          => null,

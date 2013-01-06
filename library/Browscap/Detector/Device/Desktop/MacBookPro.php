@@ -72,6 +72,7 @@ class MacBookPro extends MacBook
         
         // device
         'model_name'                => 'MacBook Pro',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => null,
         'model_extra_info'          => null,

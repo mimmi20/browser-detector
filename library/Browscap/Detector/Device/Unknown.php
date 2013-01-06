@@ -76,6 +76,7 @@ final class Unknown extends DeviceHandler
         
         // device
         'model_name'                => 'unknown Device',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => null,
         'model_extra_info'          => null,

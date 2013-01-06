@@ -59,19 +59,20 @@ class MotorolaMz615 extends MotorolaMz616
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'motorola_xoom2_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true, //wurflkey:motorola_xoom2_ver1_suban40
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'MZ615',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,

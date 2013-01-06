@@ -92,6 +92,7 @@ abstract class DeviceHandler implements MatcherInterface
         
         // device
         'model_name'                => 'unknown',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
@@ -187,6 +188,8 @@ abstract class DeviceHandler implements MatcherInterface
         
         $device = $this->detectDevice();
         
+        $this->detectDeviceVersion();
+        
         return $device;
     }
     
@@ -199,6 +202,25 @@ abstract class DeviceHandler implements MatcherInterface
      */
     public function detectDevice()
     {
+        return $this;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDeviceVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMinorVersion(true);
+        
+        $this->setCapability(
+            'model_version', $detector->setVersion('')
+        );
         return $this;
     }
     

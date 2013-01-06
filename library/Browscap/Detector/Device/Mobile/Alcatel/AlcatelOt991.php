@@ -66,18 +66,19 @@ class AlcatelOt991 extends AlcatelBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'OT-991',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Alcatel',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Alcatel',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'One Touch 991',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -100,10 +101,6 @@ class AlcatelOt991 extends AlcatelBase
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
     );
-    /**
-     * @var string the detected device
-     */
-    protected $_device = 'OT-991';
     
     /**
      * Final Interceptor: Intercept

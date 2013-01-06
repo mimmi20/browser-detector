@@ -104,7 +104,7 @@ class Mint extends Linux
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAll(array('Mint', 'Linux'))) {
+        if (!$this->_utils->checkIfContainsAll(array('mint', 'linux'), true)) {
             return false;
         }
         
@@ -123,7 +123,7 @@ class Mint extends Linux
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Mint');
+        $searches = array('Mint', 'mint');
         
         $this->setCapability(
             'device_os_version', 

@@ -74,6 +74,7 @@ class Hp9000 extends GeneralDesktop
         
         // device
         'model_name'                => '9000',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HP',
         'brand_name'                => null,
         'model_extra_info'          => null,

@@ -61,24 +61,25 @@ class BlackBerry9105 extends BlackBerryBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9105_ver1_subos6', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'BlackBerry 9105',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
+        'has_qwerty_keyboard'       => false,      // wurflkey: blackberry9105_ver1_subos6
         'pointing_method'           => 'clickwheel',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

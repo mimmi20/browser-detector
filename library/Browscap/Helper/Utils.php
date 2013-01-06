@@ -171,6 +171,7 @@ final class Utils
         'httpclient',
         'httrack',
         'jig browser',
+        'juc (linux; u; ',
         'libwww',
         'linkchecker',
         'mediapartners-google',
@@ -201,6 +202,7 @@ final class Utils
         'www.versicherungen.de', 
         'insurance.preisvergleich.de', 
         'finanzen.shopping.de',
+        'webcapture',
         'webu',
         'wget',
         'wordpress',
@@ -219,7 +221,7 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
-            if ($this->checkIfContains(array('xbox', 'badab', 'badap'), true)) {
+            if ($this->checkIfContains(array('xbox', 'badab', 'badap', 'simbar'), true)) {
                 return false;
             }
             
@@ -318,7 +320,7 @@ final class Utils
         
         if ($this->checkIfContains('Gecko') 
             && !$this->checkIfContains(array('like gecko', 'ubuntu'), true) 
-            && $this->checkIfContains(array('opera', 'chrome', 'safari', 'internet explorer'), true)
+            && $this->checkIfContains(array('chrome', 'safari', 'internet explorer'), true)
         ) {
             return true;
         }
@@ -374,6 +376,7 @@ final class Utils
             '1Password',
             'AdobeAIR',
             'Arora',
+            'BlackBerry',
             'BrowserNG',
             'Chrome',
             'Chromium',

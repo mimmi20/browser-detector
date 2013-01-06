@@ -106,7 +106,7 @@ class Wget extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Wget')) {
+        if (!$this->_utils->checkIfContains('wget', true)) {
             return false;
         }
         
@@ -123,7 +123,7 @@ class Wget extends GeneralBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Wget');
+        $searches = array('Wget', 'wget');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

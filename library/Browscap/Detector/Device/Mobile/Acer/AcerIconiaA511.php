@@ -59,19 +59,20 @@ class AcerIconiaA511 extends AcerIconia
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a511_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
-        'is_bot'             => false,
+        'is_tablet'          => true, // wurflkey: acer_iconia_tab_a511_ver1
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'A511',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',
         'model_extra_info'          => null,

@@ -61,19 +61,20 @@ class Ipad extends AppleBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'apple_ipad_ver1_sub432', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'iPad',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,

@@ -74,6 +74,7 @@ class Idl6651n extends GeneralTv
         
         // device
         'model_name'                => 'IDL-6651N',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => null,
         'model_extra_info'          => null,

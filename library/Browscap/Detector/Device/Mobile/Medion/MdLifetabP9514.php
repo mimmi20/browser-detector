@@ -61,21 +61,22 @@ class MdLifetabP9514 extends MedionBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lifetab_p9514_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'Lifetab P9514',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Medion',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Medion',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

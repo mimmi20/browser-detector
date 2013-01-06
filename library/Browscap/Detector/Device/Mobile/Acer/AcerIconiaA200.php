@@ -59,23 +59,24 @@ class AcerIconiaA200 extends AcerIconia
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a200_ver1_suban4', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
-        'is_bot'             => false,
+        'is_tablet'          => true,  // wurflkey: acer_iconia_tab_a200_ver1_suban4
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'A200',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Picasso_E', // wurflkey: acer_iconia_tab_a200_ver1_suban4
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

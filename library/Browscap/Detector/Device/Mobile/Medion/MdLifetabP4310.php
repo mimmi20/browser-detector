@@ -66,16 +66,17 @@ class MdLifetabP4310 extends MedionBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'LIFETAB P4310',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Medion',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Medion',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

@@ -132,6 +132,7 @@ class Linux extends OsHandler
             'hpwos',
             'smart-tv',
             'ventana',
+            'maemo',
             // other OS which are using X11
             'bsd',
             'sunos',

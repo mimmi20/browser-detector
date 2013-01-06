@@ -61,23 +61,24 @@ class HuaweiU8651 extends HuaweiBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'tmobile_u8651t_ver1_subuaprism', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
-        'is_bot'             => false,
+        'is_tablet'          => false, // wurflkey: tmobile_u8651t_ver1_subuaprism
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'U8651',
+        'model_name'                => 'U8651T',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Huawei',
-        'brand_name'                => 'Huawei',
+        'brand_name'                => 'T-Mobile', // wurflkey: tmobile_u8651t_ver1_subuaprism
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Prism',    // wurflkey: tmobile_u8651t_ver1_subuaprism
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

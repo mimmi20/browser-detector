@@ -137,6 +137,14 @@ class Android extends Linux
             return;
         }
         
+        if ($this->_utils->checkIfContains('android eclair', true)) {
+            $this->setCapability(
+                'device_os_version', 
+                $detector->setVersion('2.1')
+            );
+            return;
+        }
+        
         $searches = array(
             'Android', 'Android WildPuzzleROM v8 froyo', 
             'Android AndroidHouse Team'

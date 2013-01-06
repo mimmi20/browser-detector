@@ -74,6 +74,7 @@ class LinuxDesktop extends GeneralDesktop
         
         // device
         'model_name'                => 'Linux Desktop',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => null,
         'model_extra_info'          => null,

@@ -74,6 +74,7 @@ class SonyKdl40ex720 extends GeneralTv
         
         // device
         'model_name'                => 'KDL40EX720',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
         'brand_name'                => null,
         'model_extra_info'          => null,

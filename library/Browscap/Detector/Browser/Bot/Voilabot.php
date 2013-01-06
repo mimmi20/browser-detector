@@ -110,7 +110,7 @@ class Voilabot extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Voilabot'))) {
+        if (!$this->_utils->checkIfContains(array('Voilabot', 'VoilaBot'))) {
             return false;
         }
         

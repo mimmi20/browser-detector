@@ -59,26 +59,27 @@ class NokiaC202 extends NokiaC2
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_c2_02_ver1_subovibrsr', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'C2-02',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'has_qwerty_keyboard'       => false, // wurflkey: nokia_c2_02_ver1_subovibrsr
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
+        'device_claims_web_support' => false, // wurflkey: nokia_c2_02_ver1_subovibrsr
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

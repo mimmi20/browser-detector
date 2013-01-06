@@ -66,14 +66,15 @@ class AmazonKindle extends AmazonBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'Kindle',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Amazon',
         'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
@@ -140,6 +141,27 @@ class AmazonKindle extends AmazonBase
      */
     public function detectDevice()
     {
+        return $this;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMinorVersion(true);
+        
+        $searches = array('Kindle');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
         return $this;
     }
 }

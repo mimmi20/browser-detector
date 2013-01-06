@@ -66,14 +66,15 @@ class Lgt385 extends LgBase
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'T385',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',
         'model_extra_info'          => null,

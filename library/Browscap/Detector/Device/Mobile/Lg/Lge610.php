@@ -61,19 +61,20 @@ class Lge610 extends LgBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_e612_ver1_subua610_subuachrome', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'E610',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',
         'model_extra_info'          => null,

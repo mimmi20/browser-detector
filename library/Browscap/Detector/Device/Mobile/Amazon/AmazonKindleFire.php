@@ -59,26 +59,27 @@ class AmazonKindleFire extends AmazonKindle
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => true,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Kindle Fire',
+        'model_name'                => 'D01400',      // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Amazon',
         'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Kindle Fire', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
+        'device_claims_web_support' => false,         // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         

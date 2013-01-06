@@ -74,6 +74,7 @@ class LoeweSl150 extends GeneralTv
         
         // device
         'model_name'                => 'SL150',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Loewe',
         'brand_name'                => 'Loewe',
         'model_extra_info'          => null,

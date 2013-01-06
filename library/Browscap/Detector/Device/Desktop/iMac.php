@@ -72,6 +72,7 @@ class iMac extends Macintosh
         
         // device
         'model_name'                => 'iMac',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => null,
         'model_extra_info'          => null,
@@ -123,5 +124,25 @@ class iMac extends Macintosh
     public function getWeight()
     {
         return parent::getWeight() + 1;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('iMac');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
+        return $this;
     }
 }

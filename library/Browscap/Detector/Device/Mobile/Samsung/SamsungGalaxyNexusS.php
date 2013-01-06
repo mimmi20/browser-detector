@@ -64,19 +64,20 @@ class SamsungGalaxyNexusS extends SamsungGalaxyNexus
         // kind of device
         'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'Nexus S',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
+        'brand_name'                => 'Google',  // wurflkey: samsung_nexus_s_ver1_suban41
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true,      // wurflkey: samsung_nexus_s_ver1_suban41
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

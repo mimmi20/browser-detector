@@ -59,22 +59,23 @@ class ZteBaseLutea2 extends ZteBaseLutea
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'zte_skate_ver1_subuabase', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
-        'is_bot'             => false,
+        'is_tablet'          => false, // wurflkey: zte_skate_ver1_subuabase
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'BASE Lutea 2',
-        'manufacturer_name'         => 'ZTE',
-        'brand_name'                => 'unknown',
-        'model_extra_info'          => null,
+        'model_name'                => 'Lutea 2',
+        'model_version'             => null, // not in wurfl
+        'manufacturer_name'         => 'ZTE',       // wurflkey: zte_skate_ver1_subuabase
+        'brand_name'                => 'BASE',      // wurflkey: zte_skate_ver1_subuabase
+        'model_extra_info'          => 'for BASE ', // wurflkey: zte_skate_ver1_subuabase
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',

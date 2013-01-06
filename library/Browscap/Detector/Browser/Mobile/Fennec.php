@@ -131,6 +131,7 @@ class Fennec extends BrowserHandler
             'Netfront',
             'Opera',
             'PaleMoon',
+            'S40OviBrowser',
             'SeaMonkey',
             // other Browsers
             'XBLWP7',

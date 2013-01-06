@@ -75,6 +75,7 @@ class GeneralBot extends DeviceHandler
         
         // device
         'model_name'                => 'general Bot',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => null,
         'brand_name'                => null,
         'model_extra_info'          => null,

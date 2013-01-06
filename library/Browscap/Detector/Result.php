@@ -75,6 +75,7 @@ final class Result
         
         // device
         'model_name'                => null,
+        'model_version'             => null, // not in wurfl
         'brand_name'                => null,
         'marketing_name'            => null,
         'manufacturer_name'         => null,
@@ -829,9 +830,9 @@ final class Result
     public function getFullDevice($withManufacturer = false)
     {
         $device  = $this->getCapability('model_name');
-        $version = null; // $this->getVersion();
-        
+        $version = $this->getCapability('model_version');
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
+        
         $manufacturer = $this->getCapability('manufacturer_name');
         
         if ($withManufacturer 
@@ -842,7 +843,7 @@ final class Result
             $device = $manufacturer . ' ' . $device;
         }
         
-        return $device;
+        return trim($device);
     }
     
     public function getFullEngine($mode = Version::FULLVERSION)
@@ -850,7 +851,10 @@ final class Result
         $engine  = $this->getCapability('renderingengine_name');
         $version = $this->getCapability('renderingengine_version')->getVersion($mode);
         
-        return $engine . (($engine != $version && '' != $version) ? ' ' . $version : '');
+        return trim(
+            $engine 
+                . (($engine != $version && '' != $version) ? ' ' . $version : '')
+        );
     }
     
     /**

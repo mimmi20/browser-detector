@@ -74,6 +74,7 @@ class PanasonicViera extends GeneralTv
         
         // device
         'model_name'                => 'Viera',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Panasonic',
         'brand_name'                => null,
         'model_extra_info'          => null,

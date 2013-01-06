@@ -72,6 +72,7 @@ class MacBookAir extends MacBook
         
         // device
         'model_name'                => 'MacBook Air',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => null,
         'model_extra_info'          => null,

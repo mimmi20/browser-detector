@@ -61,23 +61,24 @@ class SamsungGtp1000 extends SamsungBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_galaxy_tab_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
-        'is_bot'             => false,
+        'is_tablet'          => true,  // wurflkey: samsung_galaxy_tab_ver1
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        // 'is_transcoder'      => false,
         
         // device
         'model_name'                => 'GT-P1000',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy Tab',
+        'marketing_name'            => 'Galaxy Tab',  // wurflkey: samsung_galaxy_tab_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

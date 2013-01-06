@@ -75,6 +75,7 @@ class GeneralTv extends DeviceHandler
         
         // device
         'model_name'                => 'general TV Device',
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
