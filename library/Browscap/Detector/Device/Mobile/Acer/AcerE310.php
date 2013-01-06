@@ -74,6 +74,7 @@ class AcerE310 extends AcerBase
         
         // device
         'model_name'                => 'Acer E310',   // wurflkey: acer_e310_ver1_suban221
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',
         'model_extra_info'          => null,
@@ -99,6 +100,30 @@ class AcerE310 extends AcerBase
         // 'renderingengine_name'         => null, // not in wurfl
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
+        
+        // product info
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number' => null,
+        'release_date' => null,
+        'nokia_feature_pack' => null,
+        'nokia_series' => null,
+        'nokia_edition' => null,
+        'uaprof' => null,
+        'ununiqueness_handler' => null,
+        'uaprof2' => null,
+        'uaprof3' => null,
+        'unique' => null,
+        
+        // display
+        'physical_screen_height' => null,
+        'columns' => null,
+        'physical_screen_width' => null,
+        'rows' => null,
+        'max_image_width' => null,
+        'resolution_height' => null,
+        'resolution_width' => null,
+        'max_image_height' => null,
+        'dual_orientation' => null,
     );
     
     /**

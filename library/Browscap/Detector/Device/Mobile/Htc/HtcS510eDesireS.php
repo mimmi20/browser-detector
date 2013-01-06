@@ -72,6 +72,7 @@ class HtcS510eDesireS extends HtcA8181
         
         // device
         'model_name'                => 'Desire S', // wurflkey: htc_desire_s_ver1
+        'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
@@ -97,6 +98,30 @@ class HtcS510eDesireS extends HtcA8181
         // 'renderingengine_name'         => null, // not in wurfl
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
+        
+        // product info
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number' => null,
+        'release_date' => null,
+        'nokia_feature_pack' => null,
+        'nokia_series' => null,
+        'nokia_edition' => null,
+        'uaprof' => null,
+        'ununiqueness_handler' => null,
+        'uaprof2' => null,
+        'uaprof3' => null,
+        'unique' => null,
+        
+        // display
+        'physical_screen_height' => null,
+        'columns' => null,
+        'physical_screen_width' => null,
+        'rows' => null,
+        'max_image_width' => null,
+        'resolution_height' => null,
+        'resolution_width' => null,
+        'max_image_height' => null,
+        'dual_orientation' => null,
     );
     
     /**
