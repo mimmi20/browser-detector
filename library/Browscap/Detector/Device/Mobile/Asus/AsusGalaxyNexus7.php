@@ -153,12 +153,14 @@ class AsusGalaxyNexus7 extends AsusBase
     }
     
     /**
-     * returns TRUE if the device is a tablet
+     * detects the device name from the given user agent
      *
-     * @return boolean
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function isTablet()
+    public function detectDevice()
     {
-        return true;
+        return $this;
     }
 }

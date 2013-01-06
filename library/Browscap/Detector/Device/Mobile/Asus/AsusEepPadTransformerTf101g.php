@@ -149,4 +149,16 @@ class AsusEepPadTransformerTf101g extends AsusEepPadTransformerTf101
     {
         return parent::getWeight() + 1;
     }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
+    }
 }
