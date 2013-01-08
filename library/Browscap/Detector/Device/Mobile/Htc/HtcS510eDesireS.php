@@ -59,7 +59,7 @@ class HtcS510eDesireS extends HtcA8181
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_desire_s_ver1', // not in wurfl
+        'wurflKey' => 'htc_s510e_ver1_subdesires', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -76,7 +76,7 @@ class HtcS510eDesireS extends HtcA8181
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Desire S',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -133,10 +133,6 @@ class HtcS510eDesireS extends HtcA8181
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array('HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S', 'HTC_DesireS_S510e'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains('HTC_DesireS_S510e')) {
             return false;
         }
         
