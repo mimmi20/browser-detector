@@ -85,7 +85,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
         'has_qwerty_keyboard'       => true,
         // 'pointing_method'           => 'mouse',
         'device_claims_web_support' => true,
-        // 'device_claims_web_support' => null,
+        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Internet Explorer',
@@ -103,6 +103,10 @@ class MicrosoftInternetExplorer extends BrowserHandler
         // 'renderingengine_name'         => null, // not in wurfl
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
+        
+        // product info
+        'can_skip_aligned_link_row' => true,
+        'can_assign_phone_number'   => false,
     );
     
     private $_patterns = array(

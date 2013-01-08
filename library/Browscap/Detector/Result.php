@@ -100,15 +100,15 @@ final class Result
         'unique' => null,
         
         // display
+        'physical_screen_width'  => null,
         'physical_screen_height' => null,
-        'columns' => null,
-        'physical_screen_width' => null,
-        'rows' => null,
-        'max_image_width' => null,
-        'resolution_height' => null,
-        'resolution_width' => null,
-        'max_image_height' => null,
-        'dual_orientation' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
         
         // browser
         'mobile_browser'              => null,
@@ -1157,5 +1157,95 @@ final class Result
         return $this->getFullBrowser(true, Version::MAJORMINOR) . ' on ' 
             . $this->getFullPlatform(true, Version::MAJORMINOR) . ', ' 
             . $this->getFullDevice(true);
+    }
+    
+    /**
+     * Returns the value of a given capability name for the current device
+     * 
+     * @param array $capabilities An array of name/value pairs
+     *
+     * @return Result
+     */
+    public function setDetectionResult(
+        \Browscap\Detector\DeviceHandler $device,
+        \Browscap\Detector\OsHandler $os,
+        \Browscap\Detector\BrowserHandler $browser,
+        \Browscap\Detector\EngineHandler $engine) 
+    {
+        $properties = array_keys($this->getCapabilities());
+        
+        foreach ($properties as $property) {
+            $value = null;
+            
+            try {
+                switch ($property) {
+                    case 'is_wireless_device':
+                    case 'is_tablet':
+                    case 'is_smarttv':
+                    case 'is_console':
+                    case 'ux_full_desktop':
+                    case 'model_name':
+                    case 'manufacturer_name':
+                    case 'brand_name':
+                    case 'model_extra_info':
+                    case 'marketing_name':
+                    case 'has_qwerty_keyboard':
+                    case 'pointing_method':
+                    case 'device_bits':
+                    case 'device_cpu':
+                    case 'nokia_feature_pack':
+                    case 'nokia_series':
+                    case 'nokia_edition':
+                    case 'ununiqueness_handler':
+                    case 'uaprof':
+                    case 'uaprof2':
+                    case 'uaprof3':
+                    case 'can_assign_phone_number':
+                    case 'physical_screen_width':
+                    case 'physical_screen_height':
+                    case 'columns':
+                    case 'rows':
+                    case 'max_image_width':
+                    case 'max_image_height':
+                    case 'resolution_width':
+                    case 'resolution_height':
+                    case 'dual_orientation':
+                    case 'unique':
+                        $value = $device->getCapability($property);
+                        break;
+                    case 'is_bot':
+                    case 'is_transcoder':
+                    case 'mobile_browser':
+                    case 'mobile_browser_version':
+                    case 'mobile_browser_bits':
+                    case 'mobile_browser_manufacturer':
+                    case 'can_skip_aligned_link_row':
+                    case 'device_claims_web_support':
+                        $value = $browser->getCapability($property);
+                        break;
+                    case 'device_os':
+                    case 'device_os_version':
+                    case 'device_os_bits':
+                    case 'device_os_manufacturer':
+                        $value = $os->getCapability($property);
+                        break;
+                    case 'renderingengine_name':
+                    case 'renderingengine_version':
+                    case 'renderingengine_manufacturer':
+                        $value = $engine->getCapability($property);
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+            } catch (\Exception $e) {
+                // the property is not defined yet
+                continue;
+            }
+            
+            $this->setCapability($property, $value);
+        }
+        
+        return $this;
     }
 }

@@ -103,27 +103,26 @@ class BlackBerry9500 extends BlackBerryBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number' => null,
-        'release_date' => null,
-        'nokia_feature_pack' => null,
-        'nokia_series' => null,
-        'nokia_edition' => null,
-        'uaprof' => null,
-        'ununiqueness_handler' => null,
-        'uaprof2' => null,
-        'uaprof3' => null,
-        'unique' => null,
+        'can_assign_phone_number'   => true, // wurflkey: blackberry9500_ver1_subos470141
+        'nokia_feature_pack'        => 0,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
         
         // display
-        'physical_screen_height' => null,
-        'columns' => null,
-        'physical_screen_width' => null,
-        'rows' => null,
-        'max_image_width' => null,
-        'resolution_height' => null,
-        'resolution_width' => null,
-        'max_image_height' => null,
-        'dual_orientation' => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 66,
+        'columns'                => 36,
+        'rows'                   => 32,
+        'max_image_width'        => 340,
+        'max_image_height'       => 440,
+        'resolution_width'       => 360,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**

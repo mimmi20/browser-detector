@@ -61,7 +61,7 @@ class BlackBerry8520 extends BlackBerryBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry8520_ver1_sub500822', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -78,7 +78,7 @@ class BlackBerry8520 extends BlackBerryBase
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Curve', // blackberry8520_ver1_sub500822
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'clickwheel',
         'device_claims_web_support' => true,
@@ -103,27 +103,26 @@ class BlackBerry8520 extends BlackBerryBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number' => null,
-        'release_date' => null,
-        'nokia_feature_pack' => null,
-        'nokia_series' => null,
-        'nokia_edition' => null,
-        'uaprof' => null,
-        'ununiqueness_handler' => null,
-        'uaprof2' => null,
-        'uaprof3' => null,
-        'unique' => null,
+        'can_assign_phone_number'   => true, // blackberry8520_ver1_sub500822
+        'nokia_feature_pack'        => 0,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
         
         // display
-        'physical_screen_height' => null,
-        'columns' => null,
-        'physical_screen_width' => null,
-        'rows' => null,
-        'max_image_width' => null,
-        'resolution_height' => null,
-        'resolution_width' => null,
-        'max_image_height' => null,
-        'dual_orientation' => null,
+        'physical_screen_width'  => 27, // blackberry8520_ver1_sub500822
+        'physical_screen_height' => 27,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 160,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
     );
     
     /**

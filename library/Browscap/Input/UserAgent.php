@@ -117,10 +117,9 @@ class UserAgent extends Core
         }
         
         $this->_result = new \Browscap\Detector\Result();
-        $this->_result->setCapabilities($this->_device->getCapabilities());
-        $this->_result->setCapabilities($this->_os->getCapabilities());
-        $this->_result->setCapabilities($this->_browser->getCapabilities());
-        $this->_result->setCapabilities($this->_engine->getCapabilities());
+        $this->_result->setDetectionResult(
+            $this->_device, $this->_os, $this->_browser, $this->_engine
+        );
         
         return $this->_result;
     }

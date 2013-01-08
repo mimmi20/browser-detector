@@ -81,8 +81,7 @@ class Lg extends BrowserHandler
         // 'marketing_name'            => null,
         // 'has_qwerty_keyboard'       => null,
         // 'pointing_method'           => null,
-        // 'device_claims_web_support' => null,
-        // 'device_claims_web_support' => null,
+        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Lg',
@@ -100,6 +99,10 @@ class Lg extends BrowserHandler
         // 'renderingengine_name'         => null, // not in wurfl
         // 'renderingengine_version'      => null, // not in wurfl
         // 'renderingengine_manufacturer' => null, // not in wurfl
+        
+        // product info
+        'can_skip_aligned_link_row' => true,
+        'can_assign_phone_number'   => false,
     );
     
     /**

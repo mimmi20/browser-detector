@@ -103,27 +103,26 @@ class BlackBerry9000 extends BlackBerryBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number' => null,
-        'release_date' => null,
-        'nokia_feature_pack' => null,
-        'nokia_series' => null,
-        'nokia_edition' => null,
-        'uaprof' => null,
-        'ununiqueness_handler' => null,
-        'uaprof2' => null,
-        'uaprof3' => null,
-        'unique' => null,
+        'can_assign_phone_number'   => true,
+        'nokia_feature_pack'        => 0,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
         
         // display
-        'physical_screen_height' => null,
-        'columns' => null,
-        'physical_screen_width' => null,
-        'rows' => null,
-        'max_image_width' => null,
-        'resolution_height' => null,
-        'resolution_width' => null,
-        'max_image_height' => null,
-        'dual_orientation' => null,
+        'physical_screen_width'  => 27,    // wurflkey: blackberry9000_ver1_sub460162
+        'physical_screen_height' => 27,    // wurflkey: blackberry9000_ver1_sub460162
+        'columns'                => 48,    // wurflkey: blackberry9000_ver1_sub460162
+        'rows'                   => 21,    // wurflkey: blackberry9000_ver1_sub460162
+        'max_image_width'        => 460,   // wurflkey: blackberry9000_ver1_sub460162
+        'max_image_height'       => 280,   // wurflkey: blackberry9000_ver1_sub460162
+        'resolution_width'       => 480,   // wurflkey: blackberry9000_ver1_sub460162
+        'resolution_height'      => 320,   // wurflkey: blackberry9000_ver1_sub460162
+        'dual_orientation'       => false, // wurflkey: blackberry9000_ver1_sub460162
     );
     
     /**
