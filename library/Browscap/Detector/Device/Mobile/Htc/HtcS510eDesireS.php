@@ -51,7 +51,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcS510eDesireS extends HtcA8181
+class HtcS510eDesireS extends HtcA8181Desire
 {
     /**
      * the detected browser properties
