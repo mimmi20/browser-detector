@@ -59,7 +59,7 @@ class HtcOneS extends HtcOne
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_one_s_ver1_subuanouscore', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -106,21 +106,21 @@ class HtcOneS extends HtcOne
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PJ401/',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 54,
+        'physical_screen_height' => 96,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
     );
     
     /**

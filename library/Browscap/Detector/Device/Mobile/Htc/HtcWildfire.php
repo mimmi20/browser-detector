@@ -61,7 +61,7 @@ class HtcWildfire extends HtcBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_wildfire_ver1_subua22', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -108,21 +108,21 @@ class HtcWildfire extends HtcBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Wildfire',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 48,
+        'physical_screen_height' => 64,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**

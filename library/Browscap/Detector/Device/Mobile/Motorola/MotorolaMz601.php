@@ -106,21 +106,21 @@ class MotorolaMz601 extends MotorolaXoom
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motomz601',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 137,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 1200,
+        'max_image_height'       => 760,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -103,26 +103,26 @@ class SamsungGts7500 extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S7500.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 52,
+        'physical_screen_height' => 78,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**

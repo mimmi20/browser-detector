@@ -61,7 +61,7 @@ class HuaweiVodafone858 extends HuaweiBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_v858_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -108,21 +108,21 @@ class HuaweiVodafone858 extends HuaweiBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://wap1.huawei.com/uaprof/HuaweiV858WCDMA-Vod',
+        'uaprof2'                   => 'http://wap1.huawei.com/uaprof/HuaweiV858GPRS-Vod',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 10,
+        'rows'                   => 12,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**

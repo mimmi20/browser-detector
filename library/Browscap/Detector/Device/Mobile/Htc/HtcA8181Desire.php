@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcA8181 extends HtcBase
+class HtcA8181Desire extends HtcBase
 {
     /**
      * the detected browser properties
@@ -108,21 +108,21 @@ class HtcA8181 extends HtcBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Bravo/',
+        'uaprof2'                   => 'http://www.htcmms.com.tw/Android/Telstra/Desire/',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 80,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 760,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

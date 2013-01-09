@@ -61,7 +61,7 @@ class SamsungGts8500 extends SamsungBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_s8500_ver1_subua', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -78,10 +78,10 @@ class SamsungGts8500 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Wave',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
+        'device_claims_web_support' => false,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
@@ -108,21 +108,21 @@ class SamsungGts8500 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S8500_3G.rdf',
+        'uaprof2'                   => 'http://wap.samsungmobile.com/uaprof/GT-S8500.rdf',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 20,
+        'rows'                   => 16,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

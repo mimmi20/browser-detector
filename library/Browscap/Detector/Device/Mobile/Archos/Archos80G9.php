@@ -61,7 +61,7 @@ class Archos80G9 extends ArchosBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'archos_80g9_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -114,15 +114,15 @@ class Archos80G9 extends ArchosBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 204,
+        'physical_screen_height' => 271,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -61,7 +61,7 @@ class HuaweiMediaPad extends HuaweiBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_mediapad_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,12 +73,12 @@ class HuaweiMediaPad extends HuaweiBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MediaPad',
+        'model_name'                => 'S7-301w',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Huawei',
         'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Mediapad',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -108,21 +108,21 @@ class HuaweiMediaPad extends HuaweiBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 151,
+        'physical_screen_height' => 95,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

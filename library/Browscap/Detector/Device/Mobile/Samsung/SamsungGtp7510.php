@@ -61,11 +61,11 @@ class SamsungGtp7510 extends SamsungBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_p7510_ver1_suban40rom', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, // samsung_gt_p7510_ver1_suban40rom
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -79,7 +79,7 @@ class SamsungGtp7510 extends SamsungBase
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => 'Galaxy Tab 10.1',
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true, // samsung_gt_p7510_ver1_suban40rom
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -108,21 +108,21 @@ class SamsungGtp7510 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P7510.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 137,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

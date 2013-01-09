@@ -59,7 +59,7 @@ class NokiaC700 extends NokiaC7
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_c7_00_ver1_subuaseries53', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -106,21 +106,21 @@ class NokiaC700 extends NokiaC7
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100-VF3G.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NC7-00r310.xml',
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 44,
+        'physical_screen_height' => 78,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 360,
+        'max_image_height'       => 620,
+        'resolution_width'       => 360,
+        'resolution_height'      => 620,
+        'dual_orientation'       => true,
     );
     
     /**
