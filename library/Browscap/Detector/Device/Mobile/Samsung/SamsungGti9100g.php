@@ -101,12 +101,12 @@ class SamsungGti9100g extends SamsungGti9100
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: samsung_gt_i9100_ver1_subuag
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I9100G.xml',
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I9100G.xml', // wurflkey: samsung_gt_i9100_ver1_subuag
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

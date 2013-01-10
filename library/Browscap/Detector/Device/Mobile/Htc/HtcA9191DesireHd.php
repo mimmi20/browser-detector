@@ -106,7 +106,7 @@ class HtcA9191DesireHd extends HtcA8181Desire
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/DesireHD/',
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/DesireHD/ua-profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

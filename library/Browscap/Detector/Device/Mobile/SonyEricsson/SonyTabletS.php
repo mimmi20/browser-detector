@@ -61,7 +61,7 @@ class SonyTabletS extends SonyBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sony_tablet_s_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -76,7 +76,7 @@ class SonyTabletS extends SonyBase
         'model_name'                => 'Tablet S',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -114,15 +114,15 @@ class SonyTabletS extends SonyBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 474,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

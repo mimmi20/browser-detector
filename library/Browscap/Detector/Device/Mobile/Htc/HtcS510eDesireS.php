@@ -101,12 +101,12 @@ class HtcS510eDesireS extends HtcA8181Desire
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: htc_s510e_ver1_subdesires
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PG88/',
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PG88/ua-profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -118,7 +118,7 @@ class HtcS510eDesireS extends HtcA8181Desire
         'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 800,
+        'resolution_width'       => 320, // wurflkey: htc_s510e_ver1_subdesires
         'resolution_height'      => 480,
         'dual_orientation'       => true,
     );

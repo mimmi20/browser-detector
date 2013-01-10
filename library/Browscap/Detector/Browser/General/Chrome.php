@@ -78,7 +78,7 @@ class Chrome extends Chromium
         // 'marketing_name'            => 'chrome',
         // 'has_qwerty_keyboard'       => null,
         // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
+        'device_claims_web_support' => true,
         
         // browser
         'mobile_browser'              => 'Chrome',

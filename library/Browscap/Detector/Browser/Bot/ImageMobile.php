@@ -100,7 +100,7 @@ class ImageMobile extends CfNetwork
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => true,
+        'can_skip_aligned_link_row' => false,
         'can_assign_phone_number'   => false,
     );
     

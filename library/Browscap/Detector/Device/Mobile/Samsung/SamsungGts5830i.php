@@ -101,7 +101,7 @@ class SamsungGts5830i extends SamsungGts5830
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: samsung_gt_s5830_ver1_subuai
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,

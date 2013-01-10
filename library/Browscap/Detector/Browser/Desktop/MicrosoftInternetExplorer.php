@@ -85,7 +85,6 @@ class MicrosoftInternetExplorer extends BrowserHandler
         'has_qwerty_keyboard'       => true,
         // 'pointing_method'           => 'mouse',
         'device_claims_web_support' => true,
-        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Internet Explorer',

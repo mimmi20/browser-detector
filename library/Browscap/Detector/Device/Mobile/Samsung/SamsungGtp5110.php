@@ -120,8 +120,8 @@ class SamsungGtp5110 extends SamsungBase
         'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 800,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
     );
     

@@ -101,12 +101,12 @@ class HtcOneS extends HtcOne
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: htc_one_s_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PJ401/',
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml', // wurflkey: htc_one_s_ver1
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

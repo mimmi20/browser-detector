@@ -59,7 +59,7 @@ class NokiaLumia800 extends NokiaLumia
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_lumia_800_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -101,26 +101,26 @@ class NokiaLumia800 extends NokiaLumia
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: nokia_lumia_800_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/Nokia800r100.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 81,
+        'columns'                => 16,
+        'rows'                   => 12,
+        'max_image_width'        => 230,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

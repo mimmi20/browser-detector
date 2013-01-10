@@ -103,13 +103,13 @@ class HtcA8181Desire extends HtcBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Bravo/',
-        'uaprof2'                   => 'http://www.htcmms.com.tw/Android/Telstra/Desire/',
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml',
+        'uaprof2'                   => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
