@@ -71,7 +71,7 @@ class NokiaProxyBrowser extends BrowserHandler
         // 'is_smarttv'         => null,
         // 'is_console'         => null,
         // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
+        'is_transcoder'      => true,
         
         // device
         // 'model_name'                => null,
