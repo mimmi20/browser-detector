@@ -146,7 +146,7 @@ class SamsungGti9003l extends SamsungGti9003
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -146,6 +146,6 @@ class SamsungGalaxyNexusHd2 extends SamsungGalaxyNexus
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

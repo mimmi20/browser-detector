@@ -146,6 +146,6 @@ class NokiaC205 extends NokiaC2
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

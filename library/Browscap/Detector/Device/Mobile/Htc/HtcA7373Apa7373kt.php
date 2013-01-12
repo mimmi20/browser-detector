@@ -146,6 +146,6 @@ class HtcA7373Apa7373kt extends HtcA8181Desire
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

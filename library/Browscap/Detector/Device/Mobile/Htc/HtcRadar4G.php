@@ -148,6 +148,6 @@ class HtcRadar4G extends HtcC110eRadar
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

@@ -148,7 +148,7 @@ class LgHb620t extends LgBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

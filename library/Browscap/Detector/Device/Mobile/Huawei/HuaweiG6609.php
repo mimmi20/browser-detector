@@ -148,7 +148,7 @@ class HuaweiG6609 extends HuaweiBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

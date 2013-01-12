@@ -148,7 +148,7 @@ class AmoiN820 extends AmoiBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

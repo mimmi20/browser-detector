@@ -146,6 +146,6 @@ class AcerIconiaA101c extends AcerIconiaA101
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

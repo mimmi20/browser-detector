@@ -148,7 +148,7 @@ class Lgg540 extends LgBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

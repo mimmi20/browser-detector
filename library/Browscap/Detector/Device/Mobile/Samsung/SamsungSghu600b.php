@@ -148,7 +148,7 @@ class SamsungSghu600b extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

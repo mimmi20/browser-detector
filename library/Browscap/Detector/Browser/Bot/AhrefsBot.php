@@ -84,7 +84,7 @@ class AhrefsBot extends GeneralBot
         'mobile_browser'              => 'AhrefsBot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'Ahrefs Inc', // not in wurfl
         
         // os
         // 'device_os'              => null,

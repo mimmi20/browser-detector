@@ -148,7 +148,7 @@ class SonyEricssonLT30p extends SonyBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -65,7 +65,7 @@ class AsusGalaxyNexus7 extends AsusBase
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -114,15 +114,15 @@ class AsusGalaxyNexus7 extends AsusBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 95,
+        'physical_screen_height' => 151,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 800,
+        'max_image_height'       => 1200,
+        'resolution_width'       => 800,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -148,7 +148,7 @@ class AsusGalaxyNexus7 extends AsusBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

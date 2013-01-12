@@ -146,6 +146,6 @@ class MotorolaMilestoneXt720 extends MotorolaMilestoneX
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

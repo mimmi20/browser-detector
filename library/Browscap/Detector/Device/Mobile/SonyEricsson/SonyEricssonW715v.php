@@ -148,7 +148,7 @@ class SonyEricssonW715v extends SonyBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

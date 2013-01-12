@@ -148,7 +148,7 @@ class HuaweiU8666e extends HuaweiBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

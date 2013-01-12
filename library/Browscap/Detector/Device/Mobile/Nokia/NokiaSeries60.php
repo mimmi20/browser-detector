@@ -148,7 +148,7 @@ class NokiaSeries60 extends NokiaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

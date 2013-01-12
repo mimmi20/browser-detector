@@ -146,6 +146,6 @@ class NokiaE500 extends NokiaE5
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

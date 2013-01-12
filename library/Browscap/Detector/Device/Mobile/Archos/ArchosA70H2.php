@@ -148,7 +148,7 @@ class ArchosA70H2 extends ArchosBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

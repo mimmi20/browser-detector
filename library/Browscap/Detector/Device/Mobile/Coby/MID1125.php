@@ -160,6 +160,6 @@ class MID1125 extends CobyBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

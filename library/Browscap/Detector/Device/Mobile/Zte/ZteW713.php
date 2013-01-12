@@ -148,7 +148,7 @@ class ZteW713 extends ZteBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

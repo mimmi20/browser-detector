@@ -101,12 +101,12 @@ class HtcX315eSensationXlBeats extends HtcZ710
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PI39/',
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PI39/ua-profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -155,6 +155,6 @@ class HtcX315eSensationXlBeats extends HtcZ710
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

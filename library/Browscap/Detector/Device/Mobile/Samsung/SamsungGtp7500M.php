@@ -158,6 +158,6 @@ class SamsungGtp7500M extends SamsungGtp7500
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

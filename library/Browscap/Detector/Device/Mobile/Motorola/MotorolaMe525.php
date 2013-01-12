@@ -148,7 +148,7 @@ class MotorolaMe525 extends MotorolaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

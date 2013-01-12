@@ -146,7 +146,7 @@ class AmazonKindleFire extends AmazonKindle
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -146,6 +146,6 @@ class HtcOneXplus extends HtcOneX
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

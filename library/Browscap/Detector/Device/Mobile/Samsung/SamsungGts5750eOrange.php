@@ -148,7 +148,7 @@ class SamsungGts5750eOrange extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

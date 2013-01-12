@@ -148,7 +148,7 @@ class HtcA6366 extends HtcBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

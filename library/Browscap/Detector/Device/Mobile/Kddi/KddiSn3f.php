@@ -148,7 +148,7 @@ class KddiSn3f extends KddiBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

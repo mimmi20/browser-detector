@@ -146,7 +146,7 @@ class HtcT7373 extends HtcT3335
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

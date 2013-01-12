@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Asus;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -38,10 +38,8 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: HtcA9191DesireHd.php 399 2013-01-10 18:46:30Z tmu $
  */
-
-use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -51,9 +49,9 @@ use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: HtcA9191DesireHd.php 399 2013-01-10 18:46:30Z tmu $
  */
-class AsusEepPadTransformerTf101 extends AsusBase
+class HtcDesireHd extends HtcA8181Desire
 {
     /**
      * the detected browser properties
@@ -61,11 +59,11 @@ class AsusEepPadTransformerTf101 extends AsusBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_desirehd_ver1_suban23', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,10 +71,10 @@ class AsusEepPadTransformerTf101 extends AsusBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'TF101',
+        'model_name'                => 'Desire HD',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Asus',
-        'brand_name'                => 'Asus',
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -103,26 +101,26 @@ class AsusEepPadTransformerTf101 extends AsusBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/DesireHD/ua-profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,7 +132,7 @@ class AsusEepPadTransformerTf101 extends AsusBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Transformer TF101')) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD', 'Desire HD'))) {
             return false;
         }
         
@@ -148,18 +146,6 @@ class AsusEepPadTransformerTf101 extends AsusBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
+        return 3;
     }
 }

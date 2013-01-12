@@ -146,7 +146,7 @@ class DellStreak10Pro extends DellStreak
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

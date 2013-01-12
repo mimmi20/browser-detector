@@ -146,6 +146,6 @@ class NokiaE700 extends NokiaE7
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

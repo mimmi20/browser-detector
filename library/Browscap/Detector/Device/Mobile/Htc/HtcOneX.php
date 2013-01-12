@@ -112,8 +112,8 @@ class HtcOneX extends HtcOne
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 105,
-        'physical_screen_height' => 59,
+        'physical_screen_width'  => 59,
+        'physical_screen_height' => 105,
         'columns'                => 60,
         'rows'                   => 40,
         'max_image_width'        => 320,
@@ -150,6 +150,6 @@ class HtcOneX extends HtcOne
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

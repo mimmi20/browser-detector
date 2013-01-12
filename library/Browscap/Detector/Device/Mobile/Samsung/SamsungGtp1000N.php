@@ -146,6 +146,6 @@ class SamsungGtp1000N extends SamsungGtp1000
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

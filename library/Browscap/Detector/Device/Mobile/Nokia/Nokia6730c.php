@@ -148,7 +148,7 @@ class Nokia6730c extends NokiaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

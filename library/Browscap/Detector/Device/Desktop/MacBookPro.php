@@ -146,6 +146,6 @@ class MacBookPro extends MacBook
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

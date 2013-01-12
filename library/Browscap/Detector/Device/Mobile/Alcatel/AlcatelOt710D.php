@@ -148,7 +148,7 @@ class AlcatelOt710D extends AlcatelBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

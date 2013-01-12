@@ -125,6 +125,6 @@ class GoogleAppEngine extends Google
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

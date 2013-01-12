@@ -152,7 +152,7 @@ class SamsungGti9010 extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -148,7 +148,7 @@ class SamsungGti8000v extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

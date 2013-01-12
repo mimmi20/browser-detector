@@ -146,6 +146,6 @@ class SamsungGti9100p extends SamsungGti9100
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

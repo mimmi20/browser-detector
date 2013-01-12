@@ -170,6 +170,6 @@ class Zoom2 extends LogikBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

@@ -146,6 +146,6 @@ class NokiaC101 extends NokiaC1
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

@@ -135,7 +135,7 @@ class Olivetti extends GeneralMobile
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains('OP') 
-            || $this->_utils->checkIfContains(array('OPN-B', 'OPENMASTER', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'))
+            || $this->_utils->checkIfContains(array('OPN-B', 'OPENMASTER', 'SL20_20101210_B_PD_INX7E_ENG_6410POP', 'Build/JOP'))
         ) {
             return false;
         }
@@ -170,7 +170,7 @@ class Olivetti extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

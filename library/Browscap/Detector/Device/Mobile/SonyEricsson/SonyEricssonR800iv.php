@@ -146,6 +146,6 @@ class SonyEricssonR800iv extends SonyEricssonR800i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

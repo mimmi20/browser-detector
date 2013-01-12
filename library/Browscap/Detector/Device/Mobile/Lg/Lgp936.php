@@ -148,7 +148,7 @@ class Lgp936 extends LgBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

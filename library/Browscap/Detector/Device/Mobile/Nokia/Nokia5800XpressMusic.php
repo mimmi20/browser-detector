@@ -149,7 +149,7 @@ class Nokia5800XpressMusic extends Nokia5800
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -146,6 +146,6 @@ class MotorolaDroidX2 extends MotorolaDroid2
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

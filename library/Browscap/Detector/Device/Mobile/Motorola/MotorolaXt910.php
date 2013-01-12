@@ -83,7 +83,7 @@ class MotorolaXt910 extends MotorolaBase
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Motorola', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -103,12 +103,12 @@ class MotorolaXt910 extends MotorolaBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motoxt910/',
+        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motoxt910/Profile/motoxt910.rdf',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -148,7 +148,7 @@ class MotorolaXt910 extends MotorolaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -148,7 +148,7 @@ class Nokia6500s extends NokiaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -146,7 +146,7 @@ class SamsungGts5230w extends SamsungGts5230
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

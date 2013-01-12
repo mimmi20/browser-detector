@@ -146,6 +146,6 @@ class HtcSensation4g extends HtcZ710
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

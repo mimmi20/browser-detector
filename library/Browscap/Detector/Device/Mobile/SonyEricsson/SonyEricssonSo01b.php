@@ -146,6 +146,6 @@ class SonyEricssonSo01b extends SonyEricssonSo
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

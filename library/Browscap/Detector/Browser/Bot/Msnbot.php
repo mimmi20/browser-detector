@@ -126,7 +126,7 @@ class Msnbot extends GeneralBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('msnbot', 'adidxbot');
+        $searches = array('adidxbot', 'msnbot');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

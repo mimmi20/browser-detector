@@ -160,6 +160,6 @@ class SH7228U extends SharpBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

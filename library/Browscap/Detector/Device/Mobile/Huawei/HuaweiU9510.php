@@ -148,7 +148,7 @@ class HuaweiU9510 extends HuaweiBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -146,7 +146,7 @@ class HtcFlyerP510e extends HtcFlyer
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

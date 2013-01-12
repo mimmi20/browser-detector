@@ -148,7 +148,7 @@ class Nintendo3ds extends NintendoBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

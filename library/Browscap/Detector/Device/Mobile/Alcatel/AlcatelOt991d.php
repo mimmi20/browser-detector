@@ -146,7 +146,7 @@ class AlcatelOt991d extends AlcatelOt991
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -146,7 +146,7 @@ class HuaweiIdeosS7Slim extends HuaweiIdeosS7
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

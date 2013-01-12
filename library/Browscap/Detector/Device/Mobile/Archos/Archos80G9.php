@@ -148,7 +148,7 @@ class Archos80G9 extends ArchosBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

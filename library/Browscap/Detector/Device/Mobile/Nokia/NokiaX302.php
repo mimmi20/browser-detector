@@ -146,6 +146,6 @@ class NokiaX302 extends NokiaX3
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

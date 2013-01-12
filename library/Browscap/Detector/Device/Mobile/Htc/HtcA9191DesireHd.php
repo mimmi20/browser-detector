@@ -59,7 +59,7 @@ class HtcA9191DesireHd extends HtcA8181Desire
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_desirehd_ver1_suban23', // not in wurfl
+        'wurflKey' => 'htc_desirehd_ver1_suban23a9191', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -71,12 +71,12 @@ class HtcA9191DesireHd extends HtcA8181Desire
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Desire HD',
+        'model_name'                => 'A9191',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Desire HD',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -132,7 +132,7 @@ class HtcA9191DesireHd extends HtcA8181Desire
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD', 'Desire HD', 'HTC_DesireHD_A9191', 'HTC Desire HD A9191'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireHD_A9191', 'HTC Desire HD A9191'))) {
             return false;
         }
         
@@ -146,6 +146,6 @@ class HtcA9191DesireHd extends HtcA8181Desire
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

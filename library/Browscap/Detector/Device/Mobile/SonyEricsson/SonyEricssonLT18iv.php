@@ -146,6 +146,6 @@ class SonyEricssonLT18iv extends SonyEricssonLT18i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

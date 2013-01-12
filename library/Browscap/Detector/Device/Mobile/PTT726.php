@@ -160,7 +160,7 @@ class PTT726 extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

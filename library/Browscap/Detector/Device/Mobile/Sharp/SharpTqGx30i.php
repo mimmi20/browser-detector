@@ -148,7 +148,7 @@ class SharpTqGx30i extends SharpBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

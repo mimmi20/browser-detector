@@ -148,7 +148,7 @@ class ZteX920 extends ZteBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

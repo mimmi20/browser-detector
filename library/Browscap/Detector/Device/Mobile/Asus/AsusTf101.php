@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\SonyEricsson;
+namespace Browscap\Detector\Device\Mobile\Asus;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
+use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SonyEricssonLT18i extends SonyBase
+class AsusTf101 extends AsusBase
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class SonyEricssonLT18i extends SonyBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_lt18i_ver1_subuai', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,17 +73,17 @@ class SonyEricssonLT18i extends SonyBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'LT18i',
+        'model_name'                => 'TF101',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
+        'manufacturer_name'         => 'Asus',
+        'brand_name'                => 'Asus',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Xperia Arc',
+        'marketing_name'            => 'Eee Pad Transformer TF101',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Tegra2', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -103,25 +103,25 @@ class SonyEricssonLT18i extends SonyBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true, // wurflkey: sonyericsson_lt18i_ver1_subuai
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/LT18iR402.xml',
-        'uaprof2'                   => 'http://wap.sonyericsson.com/UAprof/LT18iR411.xml',
+        'uaprof'                    => 'http://uaprofile.asus.com/uaprof/ASUS-TF101.xml',
+        'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 44,
-        'rows'                   => 32,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 854,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 1280,
+        'max_image_height'       => 650,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
     );
     
@@ -134,11 +134,7 @@ class SonyEricssonLT18i extends SonyBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SonyEricssonLT18i', 'LT18i'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('SonyEricssonLT18iv', 'LT18iv'))) {
+        if (!$this->_utils->checkIfContains('Transformer TF101')) {
             return false;
         }
         

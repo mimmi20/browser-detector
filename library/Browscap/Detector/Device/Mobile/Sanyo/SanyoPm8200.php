@@ -148,7 +148,7 @@ class SanyoPm8200 extends SanyoBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

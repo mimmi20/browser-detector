@@ -146,7 +146,7 @@ class SamsungGts5570i extends SamsungGts5570
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

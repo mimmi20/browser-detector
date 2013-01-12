@@ -146,6 +146,6 @@ class HtcA510e extends HtcA510
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

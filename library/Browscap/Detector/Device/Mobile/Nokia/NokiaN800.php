@@ -146,6 +146,6 @@ class NokiaN800 extends NokiaN8
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

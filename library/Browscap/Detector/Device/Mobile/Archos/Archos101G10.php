@@ -148,7 +148,7 @@ class Archos101G10 extends ArchosBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

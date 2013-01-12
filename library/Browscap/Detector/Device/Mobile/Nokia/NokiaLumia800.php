@@ -116,7 +116,7 @@ class NokiaLumia800 extends NokiaLumia
         'physical_screen_height' => 81,
         'columns'                => 16,
         'rows'                   => 12,
-        'max_image_width'        => 230,
+        'max_image_width'        => 320, // wurflkey: nokia_lumia_800_ver1
         'max_image_height'       => 480,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
@@ -146,6 +146,6 @@ class NokiaLumia800 extends NokiaLumia
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

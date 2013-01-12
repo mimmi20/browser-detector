@@ -160,6 +160,6 @@ class MdLifetabS9512 extends MedionBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

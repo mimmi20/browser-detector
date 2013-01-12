@@ -148,7 +148,7 @@ class HtcA6380Gratia extends HtcBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -152,7 +152,7 @@ class HtcA8181Desire extends HtcBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -139,6 +139,7 @@ class Android extends BrowserHandler
             'Silk',
             'UCBrowser',
             'WeTab-Browser',
+            'wOSBrowser',
             'YahooMobileMessenger'
         );
         

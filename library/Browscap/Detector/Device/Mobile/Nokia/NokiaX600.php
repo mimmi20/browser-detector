@@ -146,6 +146,6 @@ class NokiaX600 extends NokiaX6
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

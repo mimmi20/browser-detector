@@ -146,6 +146,6 @@ class HtcA9192Inspire4g extends HtcA8181Desire
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

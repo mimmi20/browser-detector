@@ -148,7 +148,7 @@ class BlackBerry9320 extends BlackBerryBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

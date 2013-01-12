@@ -148,7 +148,7 @@ class NokiaE62 extends NokiaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

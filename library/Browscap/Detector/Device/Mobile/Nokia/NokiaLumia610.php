@@ -146,6 +146,6 @@ class NokiaLumia610 extends NokiaLumia
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

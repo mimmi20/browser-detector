@@ -160,6 +160,6 @@ class ViewSonicViewPad10s extends ViewSonicBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

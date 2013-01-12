@@ -160,6 +160,6 @@ class TmobileMdaCompact3 extends TmobileMdaCompact
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

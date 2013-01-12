@@ -63,7 +63,7 @@ class MotorolaMz601 extends MotorolaXoom
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -81,7 +81,7 @@ class MotorolaMz601 extends MotorolaXoom
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Motorola', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -106,7 +106,7 @@ class MotorolaMz601 extends MotorolaXoom
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motomz601',
+        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz601.rdf',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -146,6 +146,6 @@ class MotorolaMz601 extends MotorolaXoom
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

@@ -160,6 +160,6 @@ class ShwM380K extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

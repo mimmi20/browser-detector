@@ -160,6 +160,6 @@ class IS05 extends SharpBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

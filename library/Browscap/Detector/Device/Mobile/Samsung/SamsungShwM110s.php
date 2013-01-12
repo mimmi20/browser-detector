@@ -148,7 +148,7 @@ class SamsungShwM110s extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

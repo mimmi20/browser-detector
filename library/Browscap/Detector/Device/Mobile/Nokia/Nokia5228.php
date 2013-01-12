@@ -148,7 +148,7 @@ class Nokia5228 extends NokiaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

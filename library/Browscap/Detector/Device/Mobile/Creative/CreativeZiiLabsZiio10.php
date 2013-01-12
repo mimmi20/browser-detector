@@ -148,7 +148,7 @@ class CreativeZiiLabsZiio10 extends CreativeBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

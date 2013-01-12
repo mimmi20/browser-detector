@@ -146,6 +146,6 @@ class SamsungGtp7300B extends SamsungGtp7300
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

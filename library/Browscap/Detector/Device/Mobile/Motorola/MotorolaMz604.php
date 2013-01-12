@@ -146,6 +146,6 @@ class MotorolaMz604 extends MotorolaXoom
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

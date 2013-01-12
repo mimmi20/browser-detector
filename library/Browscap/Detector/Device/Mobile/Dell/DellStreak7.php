@@ -146,7 +146,7 @@ class DellStreak7 extends DellStreak
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -51,7 +51,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AsusEepPadTransformerTf101g extends AsusEepPadTransformerTf101
+class AsusEepPadTransformerTf101g extends AsusTf101
 {
     /**
      * the detected browser properties
@@ -146,7 +146,7 @@ class AsusEepPadTransformerTf101g extends AsusEepPadTransformerTf101
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

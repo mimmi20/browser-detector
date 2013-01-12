@@ -148,7 +148,7 @@ class AsusEepPadTransformerTf201 extends AsusBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -148,7 +148,7 @@ class HtcS710e extends HtcBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

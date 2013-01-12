@@ -160,6 +160,6 @@ class SprintPpc6700 extends SprintBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

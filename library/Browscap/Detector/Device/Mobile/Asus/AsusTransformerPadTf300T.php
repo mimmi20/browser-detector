@@ -152,7 +152,7 @@ class AsusTransformerPadTf300T extends AsusBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

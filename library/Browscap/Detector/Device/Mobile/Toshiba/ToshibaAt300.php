@@ -148,7 +148,7 @@ class ToshibaAt300 extends ToshibaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

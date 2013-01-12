@@ -146,6 +146,6 @@ class SamsungSghE250i extends SamsungSghE250
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

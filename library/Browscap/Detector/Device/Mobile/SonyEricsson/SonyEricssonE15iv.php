@@ -148,6 +148,6 @@ class SonyEricssonE15iv extends SonyEricssonE15i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

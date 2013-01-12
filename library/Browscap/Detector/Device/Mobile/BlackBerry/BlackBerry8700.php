@@ -148,7 +148,7 @@ class BlackBerry8700 extends BlackBerryBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

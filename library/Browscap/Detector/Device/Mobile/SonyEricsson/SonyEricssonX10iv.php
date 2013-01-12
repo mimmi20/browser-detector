@@ -146,6 +146,6 @@ class SonyEricssonX10iv extends SonyEricssonX10i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

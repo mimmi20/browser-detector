@@ -146,6 +146,6 @@ class SamsungGts5839i extends SamsungGts5830
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

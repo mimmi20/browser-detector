@@ -160,6 +160,6 @@ class ArnovaArchm901 extends ArnovaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

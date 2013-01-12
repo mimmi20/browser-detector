@@ -146,7 +146,7 @@ class MotorolaDroidBionic4G extends MotorolaDroidBionic
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

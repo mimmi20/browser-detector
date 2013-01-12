@@ -126,7 +126,7 @@ class Baidu extends GeneralBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('baiduspider');
+        $searches = array('baiduspider', 'Baiduspider');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

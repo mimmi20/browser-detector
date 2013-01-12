@@ -146,6 +146,6 @@ class SonyEricssonU20iv extends SonyEricssonU20i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

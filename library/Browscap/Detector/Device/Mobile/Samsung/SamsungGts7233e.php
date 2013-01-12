@@ -148,7 +148,7 @@ class SamsungGts7233e extends SamsungBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

@@ -152,7 +152,7 @@ class SonyEricssonE15a extends SonyBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

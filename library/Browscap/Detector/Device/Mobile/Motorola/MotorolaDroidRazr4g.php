@@ -146,7 +146,7 @@ class MotorolaDroidRazr4g extends MotorolaDroidRazr
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

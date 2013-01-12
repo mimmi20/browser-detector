@@ -148,7 +148,7 @@ class AlcatelOt918 extends AlcatelBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

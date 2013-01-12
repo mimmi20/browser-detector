@@ -146,6 +146,6 @@ class SonyEricssonLT15iv extends SonyEricssonLT15i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

@@ -148,7 +148,7 @@ class SamsungSghT959v extends SamsungSghT959
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

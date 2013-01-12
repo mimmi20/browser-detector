@@ -148,7 +148,7 @@ class HtcHd2 extends HtcBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

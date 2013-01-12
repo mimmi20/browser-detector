@@ -146,7 +146,7 @@ class SonyEricssonWT19iv extends SonyEricssonWT19i
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

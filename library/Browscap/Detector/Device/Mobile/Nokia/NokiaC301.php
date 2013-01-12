@@ -146,6 +146,6 @@ class NokiaC301 extends NokiaC3
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }

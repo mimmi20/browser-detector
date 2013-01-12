@@ -148,7 +148,7 @@ class NokiaN96 extends NokiaBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
     
     /**

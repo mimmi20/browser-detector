@@ -146,6 +146,6 @@ class SamsungGalaxyNexusS4G extends SamsungGalaxyNexusS
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 3;
     }
 }
