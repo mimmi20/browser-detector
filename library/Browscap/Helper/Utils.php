@@ -81,6 +81,7 @@ final class Utils
         'fennec',
         'firefox or ie',
         'foma',
+        'folio100',
         'gingerbread',
         'hd_mini_t',
         'hp-tablet',
@@ -121,6 +122,7 @@ final class Utils
         'symbian',
         'symbianos',
         'symbos',
+        'toshiba_ac_and_az',
         'touchpad',
         'transformer tf',
         'up.browser',
@@ -401,6 +403,7 @@ final class Utils
             'Rockmelt',
             'Silk',
             'Shiira',
+            'WeTab',
             //mobile Version
             //'Mobile',
             'Tablet',
@@ -426,7 +429,7 @@ final class Utils
             return false;
         }
         
-        if ($this->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit', 'CFNetwork'))) {
+        if ($this->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit', 'CFNetwork', 'BlackBerry; U; BlackBerry'))) {
             return false;
         }
         
@@ -435,6 +438,21 @@ final class Utils
     
     public function isWindows()
     {
+        $isNotReallyAWindows = array(
+            // other OS and Mobile Windows
+            'Linux',
+            'Macintosh',
+            'Mac OS X',
+            'Mobi'
+        );
+        
+        if ($this->checkIfContains($isNotReallyAWindows)
+            || $this->isFakeWindows()
+            || $this->isMobileWindows()
+        ) {
+            return false;
+        }
+        
         $windows = array(
             'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
             'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
@@ -452,21 +470,6 @@ final class Utils
         
         if ($this->checkIfContains('trident', true)
             && !$this->checkIfContains($windows, true)
-        ) {
-            return false;
-        }
-        
-        $isNotReallyAWindows = array(
-            // other OS and Mobile Windows
-            'Linux',
-            'Macintosh',
-            'Mac OS X',
-            'Mobi'
-        );
-        
-        if ($this->checkIfContains($isNotReallyAWindows)
-            || $this->isFakeWindows()
-            || $this->isMobileWindows()
         ) {
             return false;
         }
