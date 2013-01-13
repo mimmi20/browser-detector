@@ -84,7 +84,7 @@ class BingPreview extends GeneralBot
         'mobile_browser'              => 'BingPreview',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'microsoft', // not in wurfl
+        'mobile_browser_manufacturer' => 'Microsoft', // not in wurfl
         
         // os
         // 'device_os'              => null,

@@ -38,7 +38,7 @@ namespace Browscap\Detector;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Handler.php 381 2012-12-24 14:58:59Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -49,7 +49,7 @@ namespace Browscap\Detector;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Handler.php 381 2012-12-24 14:58:59Z tmu $
+ * @version   SVN: $Id$
  */
 final class Cpu
 {

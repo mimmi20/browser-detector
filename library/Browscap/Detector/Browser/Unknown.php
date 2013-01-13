@@ -57,9 +57,53 @@ use \Browscap\Detector\MatcherInterface;
 class Unknown extends BrowserHandler
 {
     /**
-     * @var string the detected browser
+     * the detected browser properties
+     *
+     * @var StdClass
      */
-    protected $_browser = 'unknown';
+    protected $_properties = array(
+        'wurflKey' => null, // not in wurfl
+        
+        // kind of device
+        // 'is_wireless_device' => null,
+        // 'is_tablet'          => null,
+        'is_bot'             => false,
+        // 'is_smarttv'         => null,
+        // 'is_console'         => null,
+        // 'ux_full_desktop'    => null,
+        'is_transcoder'      => false,
+        
+        // device
+        // 'model_name'                => null,
+        // 'manufacturer_name'         => null,
+        // 'brand_name'                => null,
+        // 'model_extra_info'          => null,
+        // 'marketing_name'            => null,
+        // 'has_qwerty_keyboard'       => null,
+        // 'pointing_method'           => null,
+        'device_claims_web_support' => false,
+        
+        // browser
+        'mobile_browser'              => 'unknown',
+        'mobile_browser_version'      => null,
+        'mobile_browser_bits'         => null, // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        
+        // os
+        // 'device_os'              => null,
+        // 'device_os_version'      => null,
+        // 'device_os_bits'         => null, // not in wurfl
+        // 'device_os_manufacturer' => null, // not in wurfl
+        
+        // engine
+        // 'renderingengine_name'         => null, // not in wurfl
+        // 'renderingengine_version'      => null, // not in wurfl
+        // 'renderingengine_manufacturer' => null, // not in wurfl
+        
+        // product info
+        'can_skip_aligned_link_row' => false,
+        'can_assign_phone_number'   => false,
+    );
     
     /**
      * Returns true if this handler can handle the given user agent

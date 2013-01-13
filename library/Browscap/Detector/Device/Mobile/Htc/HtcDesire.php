@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class EpadP7901a extends GeneralMobile
+class HtcDesire extends HtcBase
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class EpadP7901a extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_desire_ver1_sub22_01', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,12 +73,12 @@ class EpadP7901a extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'P7901A',
+        'model_name'                => 'Desire',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'EPAD',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Desire',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,26 +103,26 @@ class EpadP7901a extends GeneralMobile
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml',
+        'uaprof2'                   => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 80,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 760,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,23 +134,15 @@ class EpadP7901a extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('p7901a', true)) {
+        if (!$this->_utils->checkIfContains(array('HTC Desire', 'HTC_Desire'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('DesireS', 'HTC_Desire_A8181', 'Desire_A8181'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**
@@ -164,16 +156,14 @@ class EpadP7901a extends GeneralMobile
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * detects the device name from the given user agent
      *
-     * @return null|\Browscap\Os\Handler
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function detectOs()
+    public function detectDevice()
     {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return $this;
     }
 }

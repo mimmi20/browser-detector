@@ -38,7 +38,7 @@ namespace Browscap\Detector\Browser\Bot;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Camcrawler.php 387 2012-12-31 10:02:01Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -49,7 +49,7 @@ namespace Browscap\Detector\Browser\Bot;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Camcrawler.php 387 2012-12-31 10:02:01Z tmu $
+ * @version   SVN: $Id$
  */
 class CoobyBot extends GeneralBot
 {

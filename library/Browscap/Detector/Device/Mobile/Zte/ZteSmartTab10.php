@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Zte;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: ZteSmartTab10.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\Mobile\Zte as ZteBase;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\Zte as ZteBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: ZteSmartTab10.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 class ZteSmartTab10 extends ZteBase
 {

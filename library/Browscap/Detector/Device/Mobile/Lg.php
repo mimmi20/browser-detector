@@ -76,7 +76,7 @@ class Lg extends GeneralMobile
         'model_name'                => 'general LG Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'LG',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

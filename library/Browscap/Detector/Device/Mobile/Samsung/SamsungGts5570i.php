@@ -59,7 +59,7 @@ class SamsungGts5570i extends SamsungGts5570
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_s5570i_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -76,7 +76,7 @@ class SamsungGts5570i extends SamsungGts5570
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Galaxy Pop Plus',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -101,26 +101,26 @@ class SamsungGts5570i extends SamsungGts5570
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: samsung_gt_s5570i_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5570I.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 48,
+        'physical_screen_height' => 64,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**

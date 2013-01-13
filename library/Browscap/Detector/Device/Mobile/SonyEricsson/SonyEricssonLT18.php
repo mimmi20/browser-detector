@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: SonyEricssonLT18.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: SonyEricssonLT18.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 class SonyEricssonLT18 extends SonyBase
 {

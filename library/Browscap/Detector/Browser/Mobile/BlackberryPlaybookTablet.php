@@ -78,7 +78,7 @@ class BlackberryPlaybookTablet extends Blackberry
         // 'marketing_name'            => null,
         // 'has_qwerty_keyboard'       => null,
         // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
+        'device_claims_web_support' => true,
         
         // browser
         'mobile_browser'              => 'Blackberry Playbook Tablet',

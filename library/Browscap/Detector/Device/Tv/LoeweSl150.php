@@ -66,11 +66,11 @@ class LoeweSl150 extends GeneralTv
         // kind of device
         'is_wireless_device' => false,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        //'is_bot'             => false,
         'is_smarttv'         => true,
         'is_console'         => false,
         'ux_full_desktop'    => false,
-        'is_transcoder'      => false,
+        //'is_transcoder'      => false,
         
         // device
         'model_name'                => 'SL150',

@@ -65,7 +65,7 @@ class LePan extends GeneralMobile
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,10 +73,10 @@ class LePan extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'LePan',
+        'model_name'                => 'general LePan Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'LePan',
+        'brand_name'                => 'LePan',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -150,7 +150,15 @@ class LePan extends GeneralMobile
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\LePan');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'LePan' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**

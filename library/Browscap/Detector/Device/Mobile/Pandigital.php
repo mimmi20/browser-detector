@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: PandigitalP2020.php 287 2012-10-07 11:48:36Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\GeneralMobile;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: PandigitalP2020.php 287 2012-10-07 11:48:36Z tmu $
+ * @version   SVN: $Id$
  */
 class Pandigital extends GeneralMobile
 {

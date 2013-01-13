@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class LePanIi extends LePan
+class MobistelCynusT1 extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -65,7 +65,7 @@ class LePanIi extends LePan
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,9 +73,9 @@ class LePanIi extends LePan
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'LePan II',
+        'model_name'                => 'Cynus T1',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'unknown',
+        'manufacturer_name'         => 'Mobistel',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
         'marketing_name'            => null,
@@ -134,7 +134,7 @@ class LePanIi extends LePan
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('LePanII')) {
+        if (!$this->_utils->checkIfContains('Cynus T1')) {
             return false;
         }
         
@@ -151,6 +151,16 @@ class LePanIi extends LePan
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**

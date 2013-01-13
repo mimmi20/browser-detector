@@ -92,7 +92,7 @@ class Windows extends OsHandler
         'device_os'              => 'Windows',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'microsoft', // not in wurfl
+        'device_os_manufacturer' => 'Microsoft', // not in wurfl
         
         // engine
         // 'renderingengine_name'         => null, // not in wurfl
@@ -108,7 +108,7 @@ class Windows extends OsHandler
     /**
      * @var string the manufacturer/creator of this OS
      */
-    protected $_manufacturer = 'microsoft';
+    protected $_manufacturer = 'Microsoft';
     
     private $_windows = array(
             'Windows NT', 'Windows 98', 'Windows 95', 'Windows 3.1', 

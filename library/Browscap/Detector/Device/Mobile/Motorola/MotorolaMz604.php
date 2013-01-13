@@ -63,7 +63,7 @@ class MotorolaMz604 extends MotorolaXoom
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, // wurflkey: mot_mz601_ver1_suban40mz604
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -112,15 +112,15 @@ class MotorolaMz604 extends MotorolaXoom
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 218, // wurflkey: mot_mz601_ver1_suban40mz604
+        'physical_screen_height' => 137,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 1200,
+        'max_image_height'       => 760,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

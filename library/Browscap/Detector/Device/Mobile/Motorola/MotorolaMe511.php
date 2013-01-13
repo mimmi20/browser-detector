@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Motorola;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: MotorolaMe511.php 367 2012-12-10 23:31:50Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\Mobile\Motorola as MotorolaBase;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\Motorola as MotorolaBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: MotorolaMe511.php 367 2012-12-10 23:31:50Z tmu $
+ * @version   SVN: $Id$
  */
 class MotorolaMe511 extends MotorolaBase
 {

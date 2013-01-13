@@ -101,7 +101,7 @@ class HtcDesireC extends HtcA8181Desire
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => true, // wurflkey: htc_desire_c_ver1_subuadesire
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,

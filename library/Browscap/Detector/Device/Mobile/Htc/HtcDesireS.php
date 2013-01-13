@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -41,12 +41,9 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\MatcherInterface;
-
 /**
- * KyoceraUserAgentHandler
- * 
+ * CatchAllUserAgentHandler
+ *
  *
  * @category  Browscap
  * @package   Browscap
@@ -54,7 +51,7 @@ use \Browscap\Detector\MatcherInterface;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Kyocera extends BrowserHandler
+class HtcDesireS extends HtcA8181Desire
 {
     /**
      * the detected browser properties
@@ -62,32 +59,34 @@ class Kyocera extends BrowserHandler
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_desire_s_ver1', // not in wurfl
         
         // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => false,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
+        'is_wireless_device' => true,
+        'is_tablet'          => false,
+        // 'is_bot'             => false,
+        'is_smarttv'         => false,
+        'is_console'         => false,
+        'ux_full_desktop'    => false,
+        // 'is_transcoder'      => false,
         
         // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
+        'model_name'                => 'S510e', // wurflkey: htc_desire_s_ver1
+        'model_version'             => null, // not in wurfl
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
+        'model_extra_info'          => null,
+        'marketing_name'            => 'Desire S',
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
+        'device_claims_web_support' => true,
+        'device_bits'               => null, // not in wurfl
+        'device_cpu'                => null, // not in wurfl
         
         // browser
-        'mobile_browser'              => 'Kyocera',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Kyocera', // not in wurfl
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -101,17 +100,56 @@ class Kyocera extends BrowserHandler
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => true,
-        'can_assign_phone_number'   => false,
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number'   => true, // wurflkey: htc_desire_s_ver1
+        'nokia_feature_pack'        => 0,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PG88/ua-profile.xml',
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
+        
+        // display
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480, // wurflkey: htc_desire_s_ver1
+        'resolution_height'      => 800, // wurflkey: htc_desire_s_ver1
+        'dual_orientation'       => true,
     );
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('kyocera') || $this->_utils->checkIfStartsWith('QC-') || $this->_utils->checkIfStartsWith('KWC-');
+        if (!$this->_utils->checkIfContains(array('HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('HTC_DesireS_S510e'))) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 }

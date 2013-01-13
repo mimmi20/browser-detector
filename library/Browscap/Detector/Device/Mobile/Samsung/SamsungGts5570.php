@@ -138,6 +138,10 @@ class SamsungGts5570 extends SamsungBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('GT-S5570I')) {
+            return false;
+        }
+        
         return true;
     }
     

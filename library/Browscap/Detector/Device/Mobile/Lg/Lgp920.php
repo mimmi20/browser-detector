@@ -61,7 +61,7 @@ class Lgp920 extends LgBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_p920_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -78,7 +78,7 @@ class Lgp920 extends LgBase
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Optimus 3D',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,26 +103,26 @@ class Lgp920 extends LgBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: lg_p920_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://gsm.lge.com/html/gsm/P920-M3-D2.xml',
+        'uaprof2'                   => 'http://gsm.lge.com/html/gsm/P920-M6-D2.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 34, // wurflkey: lg_p920_ver1
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

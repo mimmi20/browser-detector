@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: NokiaE51.php 391 2013-01-01 22:54:51Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: NokiaE51.php 391 2013-01-01 22:54:51Z tmu $
+ * @version   SVN: $Id$
  */
 class NokiaE51 extends NokiaBase
 {

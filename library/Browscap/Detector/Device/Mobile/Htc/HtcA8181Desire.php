@@ -108,14 +108,14 @@ class HtcA8181Desire extends HtcBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml',
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire_A8181.xml',
         'uaprof2'                   => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
         'physical_screen_width'  => 49,
-        'physical_screen_height' => 80,
+        'physical_screen_height' => 81,
         'columns'                => 25,
         'rows'                   => 21,
         'max_image_width'        => 320,
@@ -134,7 +134,7 @@ class HtcA8181Desire extends HtcBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC_Desire_A8181', 'Desire_A8181', 'HTC Desire', 'HTC_Desire'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_Desire_A8181', 'Desire_A8181'))) {
             return false;
         }
         

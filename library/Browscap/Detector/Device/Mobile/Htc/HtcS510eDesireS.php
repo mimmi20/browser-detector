@@ -59,7 +59,7 @@ class HtcS510eDesireS extends HtcA8181Desire
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_desire_s_ver1', // not in wurfl
+        'wurflKey' => 'htc_s510e_ver1_subdesires', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -71,7 +71,7 @@ class HtcS510eDesireS extends HtcA8181Desire
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'S510e', // wurflkey: htc_desire_s_ver1
+        'model_name'                => 'S510e', // wurflkey: htc_s510e_ver1_subdesires
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
@@ -101,7 +101,7 @@ class HtcS510eDesireS extends HtcA8181Desire
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true, // wurflkey: htc_desire_s_ver1
+        'can_assign_phone_number'   => true, // wurflkey: htc_s510e_ver1_subdesires
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -118,8 +118,8 @@ class HtcS510eDesireS extends HtcA8181Desire
         'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 480, // wurflkey: htc_desire_s_ver1
-        'resolution_height'      => 800, // wurflkey: htc_desire_s_ver1
+        'resolution_width'       => 320, // wurflkey: htc_s510e_ver1_subdesires
+        'resolution_height'      => 480, // wurflkey: htc_s510e_ver1_subdesires
         'dual_orientation'       => true,
     );
     
@@ -132,7 +132,7 @@ class HtcS510eDesireS extends HtcA8181Desire
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S', 'HTC_DesireS_S510e'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireS_S510e'))) {
             return false;
         }
         

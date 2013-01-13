@@ -114,15 +114,15 @@ class AmazonKftt extends AmazonBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 95,
+        'physical_screen_height' => 151,
+        'columns'                => 80,
+        'rows'                   => 100,
+        'max_image_width'        => 580,
+        'max_image_height'       => 1000,
+        'resolution_width'       => 800,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
     );
     
     /**

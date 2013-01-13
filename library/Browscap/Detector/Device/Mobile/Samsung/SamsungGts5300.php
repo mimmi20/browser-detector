@@ -116,7 +116,7 @@ class SamsungGts5300 extends SamsungBase
         // display
         'physical_screen_width'  => 43,
         'physical_screen_height' => 57,
-        'columns'                => 21,
+        'columns'                => 25,
         'rows'                   => 21,
         'max_image_width'        => 228,
         'max_image_height'       => 280,

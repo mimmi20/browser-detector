@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Epad;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\Device\Mobile\Epad as EpadBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CynusT1 extends GeneralMobile
+class EpadP7901a extends EpadBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class CynusT1 extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'epad_p7901a_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,10 +73,10 @@ class CynusT1 extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'T1',
+        'model_name'                => 'P7901A',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Cynus',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Epad',
+        'brand_name'                => 'Epad',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -114,15 +114,15 @@ class CynusT1 extends GeneralMobile
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 131,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 800,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,7 +134,7 @@ class CynusT1 extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Cynus T1')) {
+        if (!$this->_utils->checkIfContains('p7901a', true)) {
             return false;
         }
         

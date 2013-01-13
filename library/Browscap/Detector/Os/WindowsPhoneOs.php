@@ -92,7 +92,7 @@ class WindowsPhoneOs extends OsHandler
         'device_os'              => 'Windows Phone OS',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'microsoft', // not in wurfl
+        'device_os_manufacturer' => 'Microsoft', // not in wurfl
         
         // engine
         // 'renderingengine_name'         => null, // not in wurfl

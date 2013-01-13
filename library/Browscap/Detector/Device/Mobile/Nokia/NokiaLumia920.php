@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: NokiaLumia920.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -49,7 +49,7 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: NokiaLumia920.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 class NokiaLumia920 extends NokiaLumia
 {
@@ -101,7 +101,7 @@ class NokiaLumia920 extends NokiaLumia
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,

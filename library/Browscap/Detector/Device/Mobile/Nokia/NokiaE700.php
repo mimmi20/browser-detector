@@ -59,7 +59,7 @@ class NokiaE700 extends NokiaE7
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_e7_00_ver1_subua53', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -101,26 +101,26 @@ class NokiaE700 extends NokiaE7
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'can_assign_phone_number'   => true, // wurflkey: nokia_e7_00_ver1_subua53
+        'nokia_feature_pack'        => 2,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE7-00r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NE7-00r300.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NE7-00r310.xml',
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50, // wurflkey: nokia_e7_00_ver1_subua53
+        'physical_screen_height' => 89,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => true,
     );
     
     /**

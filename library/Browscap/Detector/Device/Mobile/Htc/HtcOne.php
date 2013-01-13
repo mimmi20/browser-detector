@@ -134,7 +134,11 @@ class HtcOne extends HtcBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC One', 'HTC_One'))) {
+        if (!$this->_utils->checkIfContains(array('HTC One', 'HTC_One', 'HTC/One'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('HTC One ', 'HTC_One_', 'HTC/One_'))) {
             return false;
         }
         

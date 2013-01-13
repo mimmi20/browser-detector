@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: YPGB70.php 286 2012-10-06 23:47:15Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: YPGB70.php 286 2012-10-06 23:47:15Z tmu $
+ * @version   SVN: $Id$
  */
 class YPGB70 extends SamsungBase
 {

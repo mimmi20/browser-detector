@@ -59,11 +59,11 @@ class AcerIconiaA210 extends AcerIconia
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a210_ver1_suban41', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, // wurflkey: acer_iconia_tab_a210_ver1_suban41
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -101,26 +101,26 @@ class AcerIconiaA210 extends AcerIconia
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'https://support.acer.com/UAprofile/Acer_A210_JRO03H_Profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 28,
+        'rows'                   => 30,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

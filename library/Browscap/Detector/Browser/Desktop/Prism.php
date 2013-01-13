@@ -38,7 +38,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Prism.php 387 2012-12-31 10:02:01Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\BrowserHandler;
@@ -52,7 +52,7 @@ use \Browscap\Detector\MatcherInterface;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Prism.php 387 2012-12-31 10:02:01Z tmu $
+ * @version   SVN: $Id$
  */
 class Prism extends BrowserHandler
 {

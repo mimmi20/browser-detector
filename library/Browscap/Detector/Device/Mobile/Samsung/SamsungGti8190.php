@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Asus;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AsusTransformerPadTf300T extends AsusBase
+class SamsungGti8190 extends SamsungBase
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class AsusTransformerPadTf300T extends AsusBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i8190_ver1_suban41', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,12 +73,12 @@ class AsusTransformerPadTf300T extends AsusBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'TF300T',
+        'model_name'                => 'GT-I8190',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Asus',
-        'brand_name'                => 'Asus',
+        'manufacturer_name'         => 'Samsung',
+        'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Galaxy S III Mini',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,26 +103,26 @@ class AsusTransformerPadTf300T extends AsusBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: samsung_gt_i8190_ver1_suban41
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I8190.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 53, // wurflkey: samsung_gt_i8190_ver1_suban41
+        'physical_screen_height' => 88,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,11 +134,11 @@ class AsusTransformerPadTf300T extends AsusBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('ASUS Transformer Pad TF300T'))) {
+        if (!$this->_utils->checkIfContains('GT-I8190')) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('ASUS Transformer Pad TF300TG', 'ASUS Transformer Pad TF300TL'))) {
+        if ($this->_utils->checkIfContains('GT-I8190P')) {
             return false;
         }
         

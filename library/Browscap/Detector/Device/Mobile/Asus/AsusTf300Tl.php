@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: AsusTf300Tg.php 358 2012-12-01 21:31:15Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: AsusTf300Tg.php 358 2012-12-01 21:31:15Z tmu $
+ * @version   SVN: $Id$
  */
 class AsusTf300Tl extends AsusBase
 {

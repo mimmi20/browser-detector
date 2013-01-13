@@ -103,7 +103,7 @@ class NokiaLumia extends NokiaBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -135,6 +135,10 @@ class NokiaLumia extends NokiaBase
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains('nokia; lumia', true)) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('nokia; lumia 610', 'nokia; lumia 710', 'nokia; lumia 800', 'nokia; lumia 820', 'nokia; lumia 900', 'nokia; lumia 920'), true)) {
             return false;
         }
         

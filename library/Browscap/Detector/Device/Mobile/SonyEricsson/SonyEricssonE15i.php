@@ -61,7 +61,7 @@ class SonyEricssonE15i extends SonyBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_e15i_ver1_sub21_01', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -103,7 +103,7 @@ class SonyEricssonE15i extends SonyBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: sonyericsson_e15i_ver1_sub21_01
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class SonyEricssonE15i extends SonyBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 43, // wurflkey: sonyericsson_e15i_ver1_sub21_01
+        'physical_screen_height' => 64,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**

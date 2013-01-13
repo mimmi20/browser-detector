@@ -116,6 +116,10 @@ class Fennec extends BrowserHandler
             return false;
         }
         
+        if (!$this->_utils->checkIfContains(array('Fennec'))) {
+            return false;
+        }
+        
         if (!$this->_utils->checkIfContainsAll(array('Gecko', 'Fennec'))
             && $this->_utils->checkIfContains(array('Tablet', 'Mobile'))
         ) {
@@ -136,6 +140,7 @@ class Fennec extends BrowserHandler
             'PaleMoon',
             'S40OviBrowser',
             'SeaMonkey',
+            'Silk',
             // other Browsers
             'XBLWP7',
             'ZuneWP7',

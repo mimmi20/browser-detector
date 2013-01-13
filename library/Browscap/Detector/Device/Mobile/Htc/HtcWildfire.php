@@ -138,6 +138,10 @@ class HtcWildfire extends HtcBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('HTC Wildfire S', 'HTC/WildfireS', 'HTC_WildfireS', 'Wildfire S'))) {
+            return false;
+        }
+        
         return true;
     }
     

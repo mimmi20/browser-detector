@@ -138,6 +138,10 @@ class RimTablet extends BlackBerryBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('PlayBook')) {
+            return false;
+        }
+        
         return true;
     }
     

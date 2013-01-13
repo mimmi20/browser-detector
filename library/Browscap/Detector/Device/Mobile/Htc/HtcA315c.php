@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: HtcA315c.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -49,7 +49,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: HtcA315c.php 388 2012-12-31 22:03:46Z tmu $
+ * @version   SVN: $Id$
  */
 class HtcA315c extends HtcWildfire
 {

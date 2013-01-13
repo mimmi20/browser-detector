@@ -167,6 +167,7 @@ final class Utils
         'firefox/99',
         'generator',
         'gomezagent',
+        'google',
         'grabber',
         'heritrix',
         'http_client',
@@ -223,7 +224,7 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
-            if ($this->checkIfContains(array('xbox', 'badab', 'badap', 'simbar'), true)) {
+            if ($this->checkIfContains(array('xbox', 'badab', 'badap', 'simbar', 'google wireless transcoder'), true)) {
                 return false;
             }
             
@@ -259,6 +260,10 @@ final class Utils
     public function isSpamOrCrawler()
     {
         if ($this->checkIfContains($this->_bots, true)) {
+            if ($this->checkIfContains(array('google earth', 'google desktop'), true)) {
+                return false;
+            }
+            
             return true;
         }
         
@@ -404,6 +409,7 @@ final class Utils
             'Silk',
             'Shiira',
             'WeTab',
+            'wOSBrowser',
             //mobile Version
             //'Mobile',
             'Tablet',
@@ -463,7 +469,7 @@ final class Utils
         $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
         
         if (!$this->checkIfContains($windows, true)
-            && !$this->checkIfContains(array('trident', 'microsoft', 'outlook', 'msoffice', 'ms-office'), true)
+            && !$this->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
         ) {
             return false;
         }

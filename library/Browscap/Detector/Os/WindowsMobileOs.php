@@ -92,7 +92,7 @@ class WindowsMobileOs extends OsHandler
         'device_os'              => 'Windows Mobile OS',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'microsoft', // not in wurfl
+        'device_os_manufacturer' => 'Microsoft', // not in wurfl
         
         // engine
         // 'renderingengine_name'         => null, // not in wurfl
@@ -108,7 +108,7 @@ class WindowsMobileOs extends OsHandler
     /**
      * @var string the manufacturer/creator of this OS
      */
-    protected $_manufacturer = 'microsoft';
+    protected $_manufacturer = 'Microsoft';
     
     /**
      * Returns true if this handler can handle the given $useragent

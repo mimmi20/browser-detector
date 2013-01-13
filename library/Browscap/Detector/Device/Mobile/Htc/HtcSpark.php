@@ -61,7 +61,7 @@ class HtcSpark extends HtcBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_spark_ver1_subtrophy75', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -78,7 +78,7 @@ class HtcSpark extends HtcBase
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => '7 Trophy', // wurflkey: htc_spark_ver1_subtrophy75
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,26 +103,26 @@ class HtcSpark extends HtcBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: htc_spark_ver1_subtrophy75
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/voda/Spark-1.0.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50, // wurflkey: htc_spark_ver1_subtrophy75
+        'physical_screen_height' => 83,
+        'columns'                => 16,
+        'rows'                   => 36,
+        'max_image_width'        => 480,
+        'max_image_height'       => 800,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

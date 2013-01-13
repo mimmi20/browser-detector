@@ -115,6 +115,7 @@ class Yahoo extends GeneralBot
             || $this->_utils->checkIfStartsWith('YahooYSMcm')
             || $this->_utils->checkIfStartsWith('YRL_ODP_CRAWLER')
             || $this->_utils->checkIfContains('www.yahoo.com')
+            || $this->_utils->checkIfContains('Yahoo! Slurp')
         ) {
             return true;
         }

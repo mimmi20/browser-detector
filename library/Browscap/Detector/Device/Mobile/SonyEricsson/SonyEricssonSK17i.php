@@ -120,8 +120,8 @@ class SonyEricssonSK17i extends SonyBase
         'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 320,
+        'resolution_width'       => 320, // wurflkey: sonyericsson_sk17i_ver1
+        'resolution_height'      => 480, // wurflkey: sonyericsson_sk17i_ver1
         'dual_orientation'       => true,
     );
     

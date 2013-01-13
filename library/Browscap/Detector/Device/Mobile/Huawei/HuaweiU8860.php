@@ -103,26 +103,26 @@ class HuaweiU8860 extends HuaweiBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap1.huawei.com/uaprof/HuaweiU8860WCDMA-NORMAL.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50, // wurflkey: huawei_u8860_ver1_suban40noh
+        'physical_screen_height' => 89,
+        'columns'                => 10,
+        'rows'                   => 12,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
     );
     
     /**

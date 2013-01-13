@@ -161,6 +161,7 @@ class Motorola extends GeneralMobile
             'xt316',
             'xt320',
             'xt610',
+            'xt890',
             'xt910',
             'me600',
             'me511'

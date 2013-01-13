@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Device\Mobile\Motorola;
 
 /**
  * PHP version 5.3
@@ -41,11 +41,10 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\Device\Mobile\Motorola as MotorolaBase;
 
 /**
- * LGUserAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category  Browscap
@@ -54,7 +53,7 @@ use \Browscap\Detector\MatcherInterface;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Lg extends BrowserHandler
+class MotorolaXt890 extends MotorolaBase
 {
     /**
      * the detected browser properties
@@ -62,32 +61,34 @@ class Lg extends BrowserHandler
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'mot_xt890_ver1', // not in wurfl
         
         // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => false,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
+        'is_wireless_device' => true,
+        'is_tablet'          => false,
+        // 'is_bot'             => false,
+        'is_smarttv'         => false,
+        'is_console'         => false,
+        'ux_full_desktop'    => false,
+        // 'is_transcoder'      => false,
         
         // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
+        'model_name'                => 'XT890',
+        'model_version'             => null, // not in wurfl
+        'manufacturer_name'         => 'Motorola',
+        'brand_name'                => 'Motorola',
+        'model_extra_info'          => null,
+        'marketing_name'            => null,
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
+        'device_claims_web_support' => true,
+        'device_bits'               => null, // not in wurfl
+        'device_cpu'                => 'Motorola', // not in wurfl
         
         // browser
-        'mobile_browser'              => 'Lg',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Lg', // not in wurfl
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -101,17 +102,64 @@ class Lg extends BrowserHandler
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => true,
-        'can_assign_phone_number'   => false,
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number'   => true,
+        'nokia_feature_pack'        => 0,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
+        
+        // display
+        'physical_screen_width'  => 54,
+        'physical_screen_height' => 96,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
     );
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfContains('LG') || $this->_utils->checkIfStartsWith('lg');
+        if (!$this->_utils->checkIfContains(array('MOT-XT890', 'XT890'))) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

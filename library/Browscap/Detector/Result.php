@@ -40,7 +40,7 @@ namespace Browscap\Detector;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: UserAgent.php 381 2012-12-24 14:58:59Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -62,6 +62,7 @@ final class Result
     private $_properties = array(
         'wurflKey' => null, // not in wurfl
         'useragent' => null, // not in wurfl
+        'DeviceClass' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => null,
@@ -675,7 +676,22 @@ final class Result
     {
         $this->_checkCapability($capabilityName);
         
-        return $this->_properties[$capabilityName];
+        $capabilityValue = null;
+        
+        switch ($capabilityName) {
+            case 'wurflKey':
+                if ($this->isMobileDevice()) {
+                    $capabilityValue = $this->_properties[$capabilityName];
+                } else {
+                    $capabilityValue = null;
+                }
+                break;
+            default:
+                $capabilityValue = $this->_properties[$capabilityName];
+                break;
+        }
+        
+        return $capabilityValue;
     }
     
     /**
@@ -1179,6 +1195,9 @@ final class Result
             
             try {
                 switch ($property) {
+                    case 'DeviceClass':
+                        $value = get_class($device);
+                        break;
                     case 'is_wireless_device':
                     case 'is_tablet':
                     case 'is_smarttv':
@@ -1211,6 +1230,9 @@ final class Result
                     case 'resolution_height':
                     case 'dual_orientation':
                     case 'unique':
+                        $value = $device->getCapability($property);
+                        break;
+                    case 'wurflKey':
                         $value = $device->getCapability($property);
                         break;
                     case 'is_bot':

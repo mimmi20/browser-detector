@@ -97,7 +97,7 @@ class Trident extends EngineHandler
         // engine
         'renderingengine_name'         => 'Trident', // not in wurfl
         'renderingengine_version'      => '', // not in wurfl
-        'renderingengine_manufacturer' => 'microsoft',
+        'renderingengine_manufacturer' => 'Microsoft',
     );
     
     /**

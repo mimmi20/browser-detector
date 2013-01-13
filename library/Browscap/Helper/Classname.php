@@ -38,7 +38,7 @@ namespace Browscap\Helper;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Utils.php 381 2012-12-24 14:58:59Z tmu $
+ * @version   SVN: $Id$
  */
 /**
  * WURFL user agent hander utilities

@@ -102,9 +102,9 @@ class NokiaN800 extends NokiaN8
         // product info
         'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_feature_pack'        => 2,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
         'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',

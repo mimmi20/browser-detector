@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: HtcA9191DesireHd.php 399 2013-01-10 18:46:30Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -49,7 +49,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: HtcA9191DesireHd.php 399 2013-01-10 18:46:30Z tmu $
+ * @version   SVN: $Id$
  */
 class HtcDesireHd extends HtcA8181Desire
 {

@@ -59,7 +59,7 @@ class LenovoIdeaPadA1 extends IdeaTab
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lenovo_ideapad_a1_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -76,7 +76,7 @@ class LenovoIdeaPadA1 extends IdeaTab
         'manufacturer_name'         => 'Lenovo',
         'brand_name'                => 'Lenovo',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'IdeaPad A1 Tablet',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -112,15 +112,15 @@ class LenovoIdeaPadA1 extends IdeaTab
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 90, // wurflkey: lenovo_ideapad_a1_ver1
+        'physical_screen_height' => 154,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 600,
+        'resolution_height'      => 1024,
+        'dual_orientation'       => true,
     );
     
     /**

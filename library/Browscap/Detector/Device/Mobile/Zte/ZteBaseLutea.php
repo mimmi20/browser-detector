@@ -61,7 +61,7 @@ class ZteBaseLutea extends ZteBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'zte_blade_ver1_suban22de', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,7 +73,7 @@ class ZteBaseLutea extends ZteBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'BASE Lutea',
+        'model_name'                => 'Blade',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'ZTE',
         'brand_name'                => 'ZTE',
@@ -103,26 +103,26 @@ class ZteBaseLutea extends ZteBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.zte.com.cn/mobile/uaprof/ZTE-BLADE.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 46,
+        'physical_screen_height' => 77,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 500,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -40,7 +40,7 @@ namespace Browscap;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: UserAgent.php 375 2012-12-21 16:58:41Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
