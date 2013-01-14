@@ -228,7 +228,7 @@ class MicrosoftInternetExplorer extends BrowserHandler
      */
     public function getWeight()
     {
-        return 72994;
+        return 175451664;
     }
     
     /**

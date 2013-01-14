@@ -173,7 +173,7 @@ class Hp extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 49771;
     }
     
     /**

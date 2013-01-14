@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MobistelCynusT1 extends GeneralMobile
+class Kobo extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class MobistelCynusT1 extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'kobo_touch_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,12 +73,12 @@ class MobistelCynusT1 extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Cynus T1',
+        'model_name'                => 'general Kobo Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Mobistel',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Kobo',
+        'brand_name'                => 'Kobo',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Touch eReader', // wurflkey: kobo_touch_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -134,7 +134,7 @@ class MobistelCynusT1 extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Cynus T1')) {
+        if (!$this->_utils->checkIfContains('Kobo Touch')) {
             return false;
         }
         
@@ -150,7 +150,15 @@ class MobistelCynusT1 extends GeneralMobile
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Kobo');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Kobo' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**

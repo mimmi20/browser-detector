@@ -179,7 +179,7 @@ class Coby extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 2;
+        return 25091;
     }
     
     /**

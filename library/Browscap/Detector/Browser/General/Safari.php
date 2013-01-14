@@ -181,7 +181,7 @@ class Safari extends BrowserHandler
      */
     public function getWeight()
     {
-        return 276;
+        return 43797417;
     }
     
     /**

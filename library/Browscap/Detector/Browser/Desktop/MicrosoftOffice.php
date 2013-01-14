@@ -238,7 +238,7 @@ class MicrosoftOffice extends BrowserHandler
      */
     public function getWeight()
     {
-        return 4200;
+        return 1264100;
     }
     
     /**

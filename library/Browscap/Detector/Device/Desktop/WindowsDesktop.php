@@ -160,7 +160,7 @@ class WindowsDesktop extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 100;
+        return 394622049;
     }
     
     /**

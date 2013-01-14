@@ -123,6 +123,6 @@ class BlitzBot extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 724998;
     }
 }

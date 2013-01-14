@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class KoboTouch extends GeneralMobile
+class Prestigio extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class KoboTouch extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'kobo_touch_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,12 +73,12 @@ class KoboTouch extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Touch',
+        'model_name'                => 'general Prestigio Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Kobo',
-        'brand_name'                => 'Kobo',
+        'manufacturer_name'         => 'Prestigio',
+        'brand_name'                => 'Prestigio',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Touch eReader', // wurflkey: kobo_touch_ver1
+        'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -134,7 +134,7 @@ class KoboTouch extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Kobo Touch')) {
+        if (!$this->_utils->checkIfContains(array('PrestigioPMP5080CPRO', 'PMP5080CPRO'))) {
             return false;
         }
         
@@ -150,7 +150,15 @@ class KoboTouch extends GeneralMobile
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Prestigio');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Prestigio' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**
@@ -160,7 +168,7 @@ class KoboTouch extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 2847;
     }
     
     /**

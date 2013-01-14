@@ -152,7 +152,7 @@ class SamsungGts5570 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 57934;
     }
     
     /**

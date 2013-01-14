@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Kobo;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\Device\Mobile\Kobo as KoboBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class PrestigioPmp5080cPro extends GeneralMobile
+class KoboTouch extends KoboBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class PrestigioPmp5080cPro extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'kobo_touch_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,12 +73,12 @@ class PrestigioPmp5080cPro extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'PMP5080CPRO',
+        'model_name'                => 'Touch',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Prestigio',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Kobo',
+        'brand_name'                => 'Kobo',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Touch eReader', // wurflkey: kobo_touch_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -134,7 +134,7 @@ class PrestigioPmp5080cPro extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('PrestigioPMP5080CPRO', 'PMP5080CPRO'))) {
+        if (!$this->_utils->checkIfContains('Kobo Touch')) {
             return false;
         }
         
@@ -160,7 +160,7 @@ class PrestigioPmp5080cPro extends GeneralMobile
      */
     public function getWeight()
     {
-        return parent::getWeight() + 5;
+        return 3;
     }
     
     /**

@@ -185,6 +185,6 @@ class Maxthon extends BrowserHandler
      */
     public function getWeight()
     {
-        return 41;
+        return 190680;
     }
 }

@@ -148,7 +148,7 @@ class SamsungGts5830 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 466796;
     }
     
     /**

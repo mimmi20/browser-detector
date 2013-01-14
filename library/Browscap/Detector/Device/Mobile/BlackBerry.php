@@ -170,7 +170,7 @@ class BlackBerry extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 142189;
     }
     
     /**

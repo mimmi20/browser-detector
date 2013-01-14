@@ -140,6 +140,6 @@ class Httrack extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 108628;
     }
 }

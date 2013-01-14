@@ -140,6 +140,6 @@ class Rogerbot extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 208367;
     }
 }

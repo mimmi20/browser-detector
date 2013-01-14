@@ -145,6 +145,6 @@ class JakartaCommonsHttpClient extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 484372;
     }
 }

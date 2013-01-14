@@ -148,7 +148,7 @@ class SamsungGtp5110 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 287743;
     }
     
     /**

@@ -194,7 +194,7 @@ class Acer extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 321280;
     }
     
     /**

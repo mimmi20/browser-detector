@@ -152,7 +152,7 @@ class SamsungGti8160 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 110493;
     }
     
     /**

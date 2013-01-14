@@ -148,7 +148,7 @@ class SamsungGts5690 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 80602;
     }
     
     /**

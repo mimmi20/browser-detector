@@ -140,6 +140,6 @@ class ZendHttpClient extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 24673244;
     }
 }

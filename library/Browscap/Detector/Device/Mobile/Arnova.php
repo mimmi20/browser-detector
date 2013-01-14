@@ -168,7 +168,7 @@ class Arnova extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 2203;
     }
     
     /**

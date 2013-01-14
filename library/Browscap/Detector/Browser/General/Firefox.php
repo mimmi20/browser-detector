@@ -186,7 +186,7 @@ class Firefox extends BrowserHandler
      */
     public function getWeight()
     {
-        return 4374;
+        return 163495370;
     }
     
     /**

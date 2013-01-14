@@ -61,11 +61,11 @@ class AcerG100W extends AcerBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'acer_g100w_ver1_suban32', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, // wurflkey: acer_g100w_ver1_suban32
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -78,7 +78,7 @@ class AcerG100W extends AcerBase
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'G100W',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -108,21 +108,21 @@ class AcerG100W extends AcerBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 28,
+        'rows'                   => 30,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
     );
     
     /**

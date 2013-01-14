@@ -170,7 +170,7 @@ class Chrome extends Chromium
      */
     public function getWeight()
     {
-        return 778;
+        return 53384052;
     }
     
     /**

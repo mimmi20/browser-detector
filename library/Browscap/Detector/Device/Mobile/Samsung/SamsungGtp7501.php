@@ -148,7 +148,7 @@ class SamsungGtp7501 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 221550;
     }
     
     /**

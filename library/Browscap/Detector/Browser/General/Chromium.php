@@ -162,7 +162,7 @@ class Chromium extends BrowserHandler
      */
     public function getWeight()
     {
-        return 6;
+        return 149475;
     }
     
     /**

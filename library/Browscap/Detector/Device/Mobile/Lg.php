@@ -158,7 +158,7 @@ class Lg extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 523840;
     }
     
     /**

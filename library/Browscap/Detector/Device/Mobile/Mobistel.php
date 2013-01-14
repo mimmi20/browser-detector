@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class WeTab extends GeneralMobile
+class Mobistel extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -73,9 +73,9 @@ class WeTab extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'WeTab',
+        'model_name'                => 'general Mobistel Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Neofonie',
+        'manufacturer_name'         => 'Mobistel',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
         'marketing_name'            => null,
@@ -134,7 +134,7 @@ class WeTab extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('WeTab', 'WeTab-Browser'))) {
+        if (!$this->_utils->checkIfContains('Cynus T1')) {
             return false;
         }
         
@@ -150,7 +150,15 @@ class WeTab extends GeneralMobile
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Mobistel');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Mobistel' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**
@@ -160,7 +168,7 @@ class WeTab extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 10721;
     }
     
     /**
@@ -171,7 +179,7 @@ class WeTab extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\MeeGo();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

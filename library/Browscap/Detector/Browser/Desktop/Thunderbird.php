@@ -175,7 +175,7 @@ class Thunderbird extends BrowserHandler
      */
     public function getWeight()
     {
-        return 74;
+        return 236840;
     }
     
     /**

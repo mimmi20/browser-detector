@@ -174,7 +174,7 @@ class Alcatel extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 52085;
     }
     
     /**

@@ -157,6 +157,6 @@ class AvantBrowser extends BrowserHandler
      */
     public function getWeight()
     {
-        return 41;
+        return 189430;
     }
 }

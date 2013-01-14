@@ -170,7 +170,7 @@ class Nintendo extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 3436;
     }
     
     /**

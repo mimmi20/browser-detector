@@ -59,7 +59,7 @@ class AsusEepPadTransformerTf101g extends AsusTf101
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'asus_eee_pad_tf101_ver1_suban40_subuag', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -71,12 +71,12 @@ class AsusEepPadTransformerTf101g extends AsusTf101
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'TF101G',
+        'model_name'                => 'Eee Pad Transformer TF101G',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Asus',
         'brand_name'                => 'Asus',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Eee Pad Transformer TF101',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -106,21 +106,21 @@ class AsusEepPadTransformerTf101g extends AsusTf101
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://uaprofile.asus.com/uaprof/ASUS-TF101.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 1280,
+        'max_image_height'       => 650,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -148,17 +148,7 @@ class SamsungGtn8000 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
-    }
-    
-    /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
+        return 76932;
     }
     
     /**

@@ -152,7 +152,7 @@ class SonyEricssonLT18i extends SonyBase
      */
     public function getWeight()
     {
-        return 3;
+        return 426549;
     }
     
     /**

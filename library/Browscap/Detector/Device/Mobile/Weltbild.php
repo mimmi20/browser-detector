@@ -168,7 +168,7 @@ class Weltbild extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 47163;
     }
     
     /**

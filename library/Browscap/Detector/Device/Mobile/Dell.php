@@ -170,7 +170,7 @@ class Dell extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 11256;
     }
     
     /**

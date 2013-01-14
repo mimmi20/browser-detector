@@ -152,7 +152,7 @@ class SamsungGtp1000 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 108908;
     }
     
     /**

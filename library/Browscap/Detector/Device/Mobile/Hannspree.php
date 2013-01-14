@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HannspreeHannspad extends GeneralMobile
+class Hannspree extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -73,10 +73,10 @@ class HannspreeHannspad extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'HANNSpad - SN10T1',
+        'model_name'                => 'general Hannspree Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HANNspree',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'HANNspree',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -150,7 +150,15 @@ class HannspreeHannspad extends GeneralMobile
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Hannspree');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Hannspree' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**
@@ -160,7 +168,7 @@ class HannspreeHannspad extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 346;
     }
     
     /**

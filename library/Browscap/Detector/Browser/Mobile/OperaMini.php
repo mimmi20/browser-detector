@@ -196,7 +196,7 @@ class OperaMini extends BrowserHandler
      */
     public function getWeight()
     {
-        return 278;
+        return 112532;
     }
     
     /**

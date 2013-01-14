@@ -144,6 +144,6 @@ class GomezAgent extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 7244089;
     }
 }

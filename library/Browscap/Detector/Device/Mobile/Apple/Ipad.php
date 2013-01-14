@@ -160,6 +160,6 @@ class Ipad extends AppleBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 7;
+        return 16905153;
     }
 }

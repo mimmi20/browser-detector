@@ -165,7 +165,7 @@ class Macintosh extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 2;
+        return 16198773;
     }
     
     /**

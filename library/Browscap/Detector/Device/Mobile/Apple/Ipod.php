@@ -160,6 +160,6 @@ class Ipod extends AppleBase
      */
     public function getWeight()
     {
-        return parent::getWeight() + 5;
+        return 381078;
     }
 }

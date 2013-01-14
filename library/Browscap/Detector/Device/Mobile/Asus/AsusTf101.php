@@ -138,6 +138,10 @@ class AsusTf101 extends AsusBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Transformer TF101G')) {
+            return false;
+        }
+        
         return true;
     }
     

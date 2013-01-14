@@ -169,7 +169,7 @@ class LinuxDesktop extends GeneralDesktop
      */
     public function getWeight()
     {
-        return 100;
+        return 4916399;
     }
     
     /**

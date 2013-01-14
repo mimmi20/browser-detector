@@ -151,7 +151,7 @@ class Qt extends BrowserHandler
      */
     public function getWeight()
     {
-        return 4;
+        return 1098152;
     }
     
     /**

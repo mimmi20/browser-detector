@@ -61,11 +61,11 @@ class SamsungGtp6201 extends SamsungBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_p6200_ver1_subua6201', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, // wurflkey: samsung_gt_p6200_ver1_subua6201
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -78,8 +78,8 @@ class SamsungGtp6201 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'GALAXY Tab 7.0 Plus',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -108,21 +108,21 @@ class SamsungGtp6201 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P6200.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 90,
+        'physical_screen_height' => 154,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 600,
+        'resolution_height'      => 1024,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -140,6 +140,6 @@ class UnisterTesting extends Unisterbot
      */
     public function getWeight()
     {
-        return 300;
+        return 53286905;
     }
 }

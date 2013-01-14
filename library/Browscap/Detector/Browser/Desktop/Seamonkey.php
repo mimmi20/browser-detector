@@ -170,7 +170,7 @@ class Seamonkey extends Firefox
      */
     public function getWeight()
     {
-        return 38;
+        return 271629;
     }
     
     /**

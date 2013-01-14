@@ -199,7 +199,7 @@ class SonyEricsson extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 1633866;
     }
     
     /**

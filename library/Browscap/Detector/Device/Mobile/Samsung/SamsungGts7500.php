@@ -148,7 +148,7 @@ class SamsungGts7500 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 64856;
     }
     
     /**

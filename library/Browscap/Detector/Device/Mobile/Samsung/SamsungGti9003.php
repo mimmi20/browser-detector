@@ -148,7 +148,7 @@ class SamsungGti9003 extends SamsungBase
      */
     public function getWeight()
     {
-        return 3;
+        return 92955;
     }
     
     /**

@@ -125,6 +125,6 @@ class GoogleMediapartners extends Google
      */
     public function getWeight()
     {
-        return 3;
+        return 155084;
     }
 }

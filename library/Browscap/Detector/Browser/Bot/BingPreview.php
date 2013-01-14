@@ -140,6 +140,6 @@ class BingPreview extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 161062;
     }
 }

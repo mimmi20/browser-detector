@@ -159,6 +159,6 @@ class Iron extends Chromium
      */
     public function getWeight()
     {
-        return 108;
+        return 360951;
     }
 }

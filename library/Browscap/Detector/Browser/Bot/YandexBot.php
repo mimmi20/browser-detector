@@ -140,6 +140,6 @@ class YandexBot extends GeneralBot
      */
     public function getWeight()
     {
-        return 3;
+        return 117819;
     }
 }

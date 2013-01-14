@@ -173,7 +173,7 @@ class Zte extends GeneralMobile
      */
     public function getWeight()
     {
-        return 3;
+        return 70634;
     }
     
     /**

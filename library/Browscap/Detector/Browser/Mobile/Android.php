@@ -225,7 +225,7 @@ class Android extends BrowserHandler
      */
     public function getWeight()
     {
-        return 287;
+        return 17304690;
     }
     
     /**

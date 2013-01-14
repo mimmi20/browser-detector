@@ -149,7 +149,7 @@ class Blackberry extends BrowserHandler
      */
     public function getWeight()
     {
-        return 36;
+        return 99383;
     }
     
     /**
