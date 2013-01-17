@@ -118,6 +118,10 @@ class OperaMobile extends BrowserHandler
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('Opera Mini'))) {
+            return false;
+        }
+        
         return true;
     }
     

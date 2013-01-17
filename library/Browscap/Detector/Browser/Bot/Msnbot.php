@@ -109,7 +109,7 @@ class Msnbot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('msnbot/', 'adidxbot/'))) {
+        if (!$this->_utils->checkIfContains(array('msnbot', 'adidxbot', 'msnbot-media'))) {
             return false;
         }
         
@@ -126,7 +126,7 @@ class Msnbot extends GeneralBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('adidxbot', 'msnbot');
+        $searches = array('adidxbot', 'msnbot', 'msnbot\-media');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

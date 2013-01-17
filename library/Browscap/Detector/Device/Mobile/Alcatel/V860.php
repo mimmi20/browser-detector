@@ -77,8 +77,8 @@ class V860 extends AlcatelBase
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Alcatel',
         'brand_name'                => 'Alcatel',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'model_extra_info'          => 'Vodafone',
+        'marketing_name'            => 'Smart II 3G',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,7 +103,7 @@ class V860 extends AlcatelBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class V860 extends AlcatelBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 36,
+        'rows'                   => 10,
+        'max_image_width'        => 320,
+        'max_image_height'       => 280,
+        'resolution_width'       => 480,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**

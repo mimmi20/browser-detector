@@ -387,6 +387,7 @@ final class Utils
             'BrowserNG',
             'Chrome',
             'Chromium',
+            'Dolfin',
             'Dreamweaver',
             'Epiphany',
             'Flock',

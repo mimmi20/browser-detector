@@ -78,7 +78,7 @@ class SamsungGti9010 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Galaxy S Armani',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,7 +103,7 @@ class SamsungGti9010 extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class SamsungGti9010 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 53,
+        'physical_screen_height' => 88,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 452,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -138,7 +138,7 @@ class SamsungGti9010 extends SamsungBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains('GT-I9010L')) {
+        if ($this->_utils->checkIfContains(array('GT-I9010L', 'GT-I9010P'))) {
             return false;
         }
         

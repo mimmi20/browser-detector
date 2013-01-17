@@ -78,9 +78,9 @@ class BlackBerry9810 extends BlackBerryBase
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Torch 4G',
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'clickwheel',
+        'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -103,7 +103,7 @@ class BlackBerry9810 extends BlackBerryBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class BlackBerry9810 extends BlackBerryBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 70,
+        'columns'                => 22,
+        'rows'                   => 22,
+        'max_image_width'        => 480,
+        'max_image_height'       => 500,
+        'resolution_width'       => 480,
+        'resolution_height'      => 640,
+        'dual_orientation'       => true,
     );
     
     /**

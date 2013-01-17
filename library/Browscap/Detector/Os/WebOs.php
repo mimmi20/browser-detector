@@ -107,7 +107,7 @@ class WebOs extends OsHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('WebOS', 'hpwOS'))) {
+        if (!$this->_utils->checkIfContains(array('WebOS', 'hpwOS', 'webOS'))) {
             return false;
         }
         

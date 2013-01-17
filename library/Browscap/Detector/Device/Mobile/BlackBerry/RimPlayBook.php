@@ -101,7 +101,7 @@ class RimPlayBook extends RimTablet
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,15 +112,15 @@ class RimPlayBook extends RimTablet
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 154,
+        'physical_screen_height' => 90,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 1024,
+        'max_image_height'       => 600,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -78,7 +78,7 @@ class SamsungGts8530 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Wave 2',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -114,15 +114,15 @@ class SamsungGts8530 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 20,
+        'rows'                   => 16,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => false,
     );
     
     /**

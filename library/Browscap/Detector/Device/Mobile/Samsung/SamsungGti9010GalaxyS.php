@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\SonyEricsson;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -41,6 +41,8 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +53,7 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SonyEricssonU20iv extends SonyEricssonU20i
+class SamsungGti9010GalaxyS extends SamsungBase
 {
     /**
      * the detected browser properties
@@ -71,13 +73,13 @@ class SonyEricssonU20iv extends SonyEricssonU20i
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'U20iv',
+        'model_name'                => 'GT-I9010',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
+        'manufacturer_name'         => 'Samsung',
+        'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Xperia X10 Mini pro',
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'Galaxy S',
+        'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -101,7 +103,7 @@ class SonyEricssonU20iv extends SonyEricssonU20i
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,15 +114,15 @@ class SonyEricssonU20iv extends SonyEricssonU20i
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 40,
-        'physical_screen_height' => 60,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 238,
-        'max_image_height'       => 318,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
-        'dual_orientation'       => true,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
     );
     
     /**
@@ -132,7 +134,11 @@ class SonyEricssonU20iv extends SonyEricssonU20i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SonyEricssonU20iv')) {
+        if (!$this->_utils->checkIfContains(array('Galaxy S', 'Galaxy-S'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('GT-I9010L', 'GT-I9010P'))) {
             return false;
         }
         
@@ -147,5 +153,17 @@ class SonyEricssonU20iv extends SonyEricssonU20i
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

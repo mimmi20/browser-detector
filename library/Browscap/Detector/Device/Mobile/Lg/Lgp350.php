@@ -78,7 +78,7 @@ class Lgp350 extends LgBase
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Optimus Me',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,7 +103,7 @@ class Lgp350 extends LgBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class Lgp350 extends LgBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 43,
+        'physical_screen_height' => 57,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**

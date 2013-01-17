@@ -71,7 +71,7 @@ class HtcDesireS extends HtcA8181Desire
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'S510e', // wurflkey: htc_desire_s_ver1
+        'model_name'                => 'Desire S', // wurflkey: htc_desire_s_ver1
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',

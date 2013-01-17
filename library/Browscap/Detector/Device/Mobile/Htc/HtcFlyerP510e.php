@@ -71,12 +71,12 @@ class HtcFlyerP510e extends HtcFlyer
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Flyer P510e',
+        'model_name'                => 'Flyer',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Flyer',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -101,7 +101,7 @@ class HtcFlyerP510e extends HtcFlyer
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,15 +112,15 @@ class HtcFlyerP510e extends HtcFlyer
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 90,
+        'physical_screen_height' => 154,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 580,
+        'max_image_height'       => 1000,
+        'resolution_width'       => 600,
+        'resolution_height'      => 1024,
+        'dual_orientation'       => true,
     );
     
     /**

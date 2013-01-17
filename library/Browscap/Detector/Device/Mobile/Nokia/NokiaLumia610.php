@@ -112,15 +112,15 @@ class NokiaLumia610 extends NokiaLumia
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 41,
+        'physical_screen_height' => 89,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

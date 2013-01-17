@@ -109,7 +109,7 @@ class YandexBot extends GeneralBot
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains('YandexBot', 'YandexImages')) {
+        if ($this->_utils->checkIfContains(array('YandexBot', 'YandexImages'))) {
             return true;
         }
         
@@ -126,7 +126,7 @@ class YandexBot extends GeneralBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('YandexBot');
+        $searches = array('YandexBot', 'YandexImages');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

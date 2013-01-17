@@ -79,7 +79,7 @@ class SamsungGti9103 extends SamsungBase
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => 'Galaxy SII',
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

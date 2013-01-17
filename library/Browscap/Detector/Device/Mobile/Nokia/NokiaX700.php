@@ -76,8 +76,8 @@ class NokiaX700 extends NokiaX7
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'X7',
+        'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -101,10 +101,10 @@ class NokiaX700 extends NokiaX7
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'can_assign_phone_number'   => true,
+        'nokia_feature_pack'        => 3,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
         'uaprof'                    => null,
         'uaprof2'                   => null,
@@ -112,15 +112,15 @@ class NokiaX700 extends NokiaX7
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 89,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 168,
+        'max_image_height'       => 144,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => false,
     );
     
     /**

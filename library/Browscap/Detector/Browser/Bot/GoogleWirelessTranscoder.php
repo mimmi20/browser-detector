@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\SonyEricsson;
+namespace Browscap\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -41,6 +41,8 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Browser\General\Google;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +53,7 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SonyEricssonU20iv extends SonyEricssonU20i
+class GoogleWirelessTranscoder extends Google
 {
     /**
      * the detected browser properties
@@ -62,31 +64,29 @@ class SonyEricssonU20iv extends SonyEricssonU20i
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
+        // 'is_wireless_device' => null,
+        // 'is_tablet'          => null,
+        'is_bot'             => true,
+        // 'is_smarttv'         => null,
+        // 'is_console'         => null,
+        // 'ux_full_desktop'    => null,
+        'is_transcoder'      => true,
         
         // device
-        'model_name'                => 'U20iv',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Xperia X10 Mini pro',
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        // 'model_name'                => null,
+        // 'manufacturer_name'         => null,
+        // 'brand_name'                => null,
+        // 'model_extra_info'          => null,
+        // 'marketing_name'            => null,
+        // 'has_qwerty_keyboard'       => null,
+        // 'pointing_method'           => null,
+        'device_claims_web_support' => false,
         
         // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
+        'mobile_browser'              => 'Google Wireless Transcoder',
+        'mobile_browser_version'      => null,
+        'mobile_browser_bits'         => null, // not in wurfl
+        'mobile_browser_manufacturer' => 'Google', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -100,43 +100,39 @@ class SonyEricssonU20iv extends SonyEricssonU20i
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 40,
-        'physical_screen_height' => 60,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 238,
-        'max_image_height'       => 318,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
-        'dual_orientation'       => true,
+        'can_skip_aligned_link_row' => false,
+        'can_assign_phone_number'   => false,
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SonyEricssonU20iv')) {
+        if (!$this->_utils->checkIfContains('Google Wireless Transcoder')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('Google Wireless Transcoder');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
     }
     
     /**

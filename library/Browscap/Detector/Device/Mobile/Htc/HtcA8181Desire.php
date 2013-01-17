@@ -138,10 +138,6 @@ class HtcA8181Desire extends HtcBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('DesireS'))) {
-            return false;
-        }
-        
         return true;
     }
     

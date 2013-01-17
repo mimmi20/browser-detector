@@ -138,6 +138,10 @@ class NokiaC5 extends NokiaBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains('NokiaC5-')) {
+            return false;
+        }
+        
         return true;
     }
     
