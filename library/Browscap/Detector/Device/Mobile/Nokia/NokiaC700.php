@@ -101,10 +101,10 @@ class NokiaC700 extends NokiaC7
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'can_assign_phone_number'   => true,
+        'nokia_feature_pack'        => 2,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100.xml',
         'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100-VF3G.xml',
@@ -119,7 +119,7 @@ class NokiaC700 extends NokiaC7
         'max_image_width'        => 360,
         'max_image_height'       => 620,
         'resolution_width'       => 360,
-        'resolution_height'      => 620,
+        'resolution_height'      => 640,
         'dual_orientation'       => true,
     );
     

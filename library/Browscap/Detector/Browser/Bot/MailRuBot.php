@@ -127,6 +127,23 @@ class MailRuBot extends GeneralBot
     }
     
     /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('Mail.RU_Bot');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+    }
+    
+    /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *

@@ -114,7 +114,7 @@ class AcerIconiaA700 extends AcerIconia
         // display
         'physical_screen_width'  => 34,
         'physical_screen_height' => 50,
-        'columns'                => 28,
+        'columns'                => 60,
         'rows'                   => 30,
         'max_image_width'        => 320,
         'max_image_height'       => 400,

@@ -135,6 +135,13 @@ final class Cpu
             return $this;
         }
         
+        // ARM
+        if ($utils->checkIfContains(array('arm'), true)) {
+            $this->_cpu = 'ARM';
+            
+            return $this;
+        }
+        
         $this->_cpu = '';
         
         return $this;

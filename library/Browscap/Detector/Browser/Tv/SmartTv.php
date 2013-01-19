@@ -112,11 +112,15 @@ class SmartTv extends BrowserHandler
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains(array('SmartTV', 'SMART-TV'))) {
-            return true;
+        if (!$this->_utils->checkIfContains(array('SmartTV', 'SMART-TV'))) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains(array('WebBrowser'))) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

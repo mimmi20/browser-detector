@@ -113,7 +113,7 @@ class TuringMachine extends GeneralBot
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('TuringMachine/'))) {
+        if (!$this->_utils->checkIfContains(array('TuringMachine'))) {
             return false;
         }
         

@@ -169,7 +169,7 @@ class GeneralMobile extends DeviceHandler
      */
     public function getWeight()
     {
-        return 2;
+        return 3;
     }
     
     /**

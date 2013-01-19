@@ -182,6 +182,7 @@ final class Utils
         'naver',
         'nutch',
         'opera/9.751',
+        'ossproxy',
         'parser',
         'presto/951',
         'retriever',
@@ -246,6 +247,10 @@ final class Utils
         if ($this->checkIfContains('sony', true)
             && !$this->checkIfContains('sonydtv', true)
         ) {
+            return true;
+        }
+        
+        if ($this->checkIfContains('Windows NT 6.2; ARM;')) {
             return true;
         }
         
@@ -409,6 +414,7 @@ final class Utils
             'Rockmelt',
             'Silk',
             'Shiira',
+            'WebBrowser',
             'WeTab',
             'wOSBrowser',
             //mobile Version

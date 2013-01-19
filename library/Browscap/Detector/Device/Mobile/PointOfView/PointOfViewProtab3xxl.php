@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lg;
+namespace Browscap\Detector\Device\Mobile\PointOfView;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Lg;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Lg as LgBase;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Lg as LgBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Lgg540 extends LgBase
+class PointOfViewProtab3xxl extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class Lgg540 extends LgBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'lg_gt540_ver1_subua_suban23', // not in wurfl
+        'wurflKey' => 'pointofview_protab_2xl_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,13 +73,13 @@ class Lgg540 extends LgBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'G540',
+        'model_name'                => 'Protab 3 XXL',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'LG',
-        'brand_name'                => 'LG',
+        'manufacturer_name'         => 'Point of View',
+        'brand_name'                => 'Point of View',
         'model_extra_info'          => null,
-        'marketing_name'            => 'GT540 Optimus', // wurflkey: lg_gt540_ver1_subua_suban23
-        'has_qwerty_keyboard'       => false,           // wurflkey: lg_gt540_ver1_subua_suban23
+        'marketing_name'            => 'Protab 3 XXL',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -134,11 +134,23 @@ class Lgg540 extends LgBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('GT-540', 'GT540'))) {
+        if (!$this->_utils->checkIfContains('TAB-PROTAB30')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -152,14 +164,16 @@ class Lgg540 extends LgBase
     }
     
     /**
-     * detects the device name from the given user agent
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return null|\Browscap\Os\Handler
      */
-    public function detectDevice()
+    public function detectOs()
     {
-        return $this;
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

@@ -159,4 +159,26 @@ class AvantBrowser extends BrowserHandler
     {
         return 189430;
     }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $engines = array(
+            new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Gecko(),
+            new \Browscap\Detector\Engine\Trident()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        
+        return $chain->detect();
+    }
 }

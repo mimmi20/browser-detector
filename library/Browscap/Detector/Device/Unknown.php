@@ -116,14 +116,14 @@ final class Unknown extends DeviceHandler
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 11,
-        'rows'                   => 6,
-        'max_image_width'        => 90,
-        'max_image_height'       => 35,
-        'resolution_width'       => 90,
-        'resolution_height'      => 40,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
         'dual_orientation'       => false,
     );
     

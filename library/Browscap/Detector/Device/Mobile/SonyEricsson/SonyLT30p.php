@@ -76,7 +76,7 @@ class SonyLT30p extends SonyBase
         'model_name'                => 'LT30p',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
         'marketing_name'            => 'Mint',
         'has_qwerty_keyboard'       => true,

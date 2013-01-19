@@ -76,7 +76,7 @@ class DellVenuePro extends DellBase
         'model_name'                => 'Venue Pro',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Dell',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Dell',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

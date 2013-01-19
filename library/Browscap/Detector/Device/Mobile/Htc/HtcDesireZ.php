@@ -132,7 +132,7 @@ class HtcDesireZ extends HtcA8181Desire
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC_DesireZ', 'HTC Desire Z', 'HTC_Desire_Z', 'HTC Vision', 'HTC/Vision', 'HTC_Vision', 'HTC_DesireZ_A7272', 'Vision-T-Mobile-G2'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireZ', 'HTC Desire Z', 'HTC_Desire_Z', 'HTC_DesireZ_A7272'))) {
             return false;
         }
         

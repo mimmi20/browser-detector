@@ -161,6 +161,11 @@ class Windows extends OsHandler
             return;
         }
         
+        if ($this->_utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
+            $this->setCapability('device_os_version', $detector->setVersion('RT 8'));
+            return;
+        }
+        
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {

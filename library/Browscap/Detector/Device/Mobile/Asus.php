@@ -139,7 +139,8 @@ class Asus extends GeneralMobile
             'Transformer',
             'Slider SL101',
             'eee_701',
-            'Nexus 7'
+            'Nexus 7',
+            'PadFone'
         );
         
         if (!$this->_utils->checkIfContains($asusPhones)) {

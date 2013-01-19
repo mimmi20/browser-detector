@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Simvalley;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\Device\Mobile\Simvalley as SimvalleyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class PointOfViewProtab2xl extends GeneralMobile
+class SimvalleySpx5 extends SimvalleyBase
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class PointOfViewProtab2xl extends GeneralMobile
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => 'pointofview_protab_2xl_ver1', // not in wurfl
+        'wurflKey' => 'simvalley_spx5_3g_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,10 +73,10 @@ class PointOfViewProtab2xl extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Protab 2 XL',
+        'model_name'                => 'SPX-5',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Point of View',
-        'brand_name'                => 'Point of View',
+        'manufacturer_name'         => 'Simvalley',
+        'brand_name'                => 'Simvalley',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -103,7 +103,7 @@ class PointOfViewProtab2xl extends GeneralMobile
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class PointOfViewProtab2xl extends GeneralMobile
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 68,
+        'physical_screen_height' => 114,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,7 +134,11 @@ class PointOfViewProtab2xl extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('TAB-PROTAB2XL')) {
+        if (!$this->_utils->checkIfContains(array('SPX-5'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('SPX-5 3G', 'SPX-5_3G'))) {
             return false;
         }
         

@@ -112,14 +112,14 @@ class HtcX315eSensationXlBeats extends HtcZ710
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 62,
-        'physical_screen_height' => 103,
-        'columns'                => 60,
-        'rows'                   => 40,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_width'       => 340,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
     );
     

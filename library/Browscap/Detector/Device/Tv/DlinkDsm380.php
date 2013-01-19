@@ -114,14 +114,14 @@ class DlinkDsm380 extends GeneralTv
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 400,
-        'physical_screen_height' => 400,
-        'columns'                => 120,
-        'rows'                   => 200,
-        'max_image_width'        => 650,
-        'max_image_height'       => 600,
-        'resolution_width'       => 685,
-        'resolution_height'      => 600,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
         'dual_orientation'       => false,
     );
     

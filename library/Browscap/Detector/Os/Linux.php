@@ -133,6 +133,7 @@ class Linux extends OsHandler
             'smart-tv',
             'ventana',
             'maemo',
+            'moblin',
             // other OS which are using X11
             'bsd',
             'sunos',

@@ -134,7 +134,7 @@ class Simvalley extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SPX-5 3G', 'SPX-5_3G'))) {
+        if (!$this->_utils->checkIfContains(array('SPX-5'))) {
             return false;
         }
         

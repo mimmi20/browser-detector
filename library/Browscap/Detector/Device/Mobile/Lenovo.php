@@ -141,7 +141,8 @@ class Lenovo extends GeneralMobile
             'A1_07',
             ' K1 ',
             'ThinkPad',
-            'IdeaTab'
+            'IdeaTab',
+            'SmartTab II'
         );
         
         if (!$this->_utils->checkIfContains($LenovoPhones)) {

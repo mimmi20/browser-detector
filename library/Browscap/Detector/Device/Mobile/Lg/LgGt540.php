@@ -61,7 +61,7 @@ class LgGt540 extends LgBase
      * @var StdClass
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_gt540_ver1_subua_suban23', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,13 +73,13 @@ class LgGt540 extends LgBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT540',
+        'model_name'                => 'G540',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'GT540 Optimus', // wurflkey: lg_gt540_ver1_subua_suban23
+        'has_qwerty_keyboard'       => true,           // wurflkey: lg_gt540_ver1_subua_suban23
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -103,7 +103,7 @@ class LgGt540 extends LgBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class LgGt540 extends LgBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 300,
+        'max_image_height'       => 450,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,7 +134,7 @@ class LgGt540 extends LgBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('LG-GT540', 'LG/GT540'))) {
+        if (!$this->_utils->checkIfContains(array('GT-540', 'GT540'))) {
             return false;
         }
         

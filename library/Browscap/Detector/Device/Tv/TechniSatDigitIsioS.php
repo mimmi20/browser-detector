@@ -76,7 +76,7 @@ class TechniSatDigitIsioS extends GeneralTv
         'model_name'                => 'DIGIT ISIO S',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'TechniSat',
-        'brand_name'                => null,
+        'brand_name'                => 'TechniSat',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -114,14 +114,14 @@ class TechniSatDigitIsioS extends GeneralTv
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 400,
-        'physical_screen_height' => 400,
-        'columns'                => 120,
-        'rows'                   => 200,
-        'max_image_width'        => 650,
-        'max_image_height'       => 600,
-        'resolution_width'       => 685,
-        'resolution_height'      => 600,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
         'dual_orientation'       => false,
     );
     
@@ -134,7 +134,7 @@ class TechniSatDigitIsioS extends GeneralTv
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('TechniSat DIGIT ISIO S')) {
+        if (!$this->_utils->checkIfContains('TechniSat Digit ISIO S')) {
             return false;
         }
         

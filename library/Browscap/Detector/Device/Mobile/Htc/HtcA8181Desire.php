@@ -73,7 +73,7 @@ class HtcA8181Desire extends HtcBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Desire',
+        'model_name'                => 'A8181',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',

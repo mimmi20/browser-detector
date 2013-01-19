@@ -319,6 +319,33 @@ abstract class BrowserHandler implements MatcherInterface
     }
     
     /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $engines = array(
+            new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Gecko(),
+            new \Browscap\Detector\Engine\Trident(),
+            new \Browscap\Detector\Engine\Presto(),
+            new \Browscap\Detector\Engine\Tasman(),
+            new \Browscap\Detector\Engine\BlackBerry(),
+            new \Browscap\Detector\Engine\Khtml(),
+            new \Browscap\Detector\Engine\NetFront()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
      * Returns the values of all capabilities for the current device
      * 
      * @return array All Capability values

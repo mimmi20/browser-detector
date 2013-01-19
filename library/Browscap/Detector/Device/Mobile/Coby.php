@@ -142,7 +142,8 @@ class Coby extends GeneralMobile
             'MID7015',
             'MID7022',
             'MID8127',
-            'MID8128'
+            'MID8128',
+            'NBPC724'
         );
         
         if ($this->_utils->checkIfContains($Cobyphones, true)) {
