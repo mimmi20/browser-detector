@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Lenovo as LenovoBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class ThinkPadTablet extends LenovoBase
+class VodafoneSmartTabIi10 extends LenovoBase
 {
     /**
      * the detected browser properties
@@ -73,12 +73,12 @@ class ThinkPadTablet extends LenovoBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '1838',
+        'model_name'                => 'SmartTab II 10',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Lenovo',
-        'brand_name'                => 'Lenovo',
+        'brand_name'                => 'Vodafone',
         'model_extra_info'          => null,
-        'marketing_name'            => 'ThinkPad Tablet',
+        'marketing_name'            => 'SmartTab II 10',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -114,14 +114,14 @@ class ThinkPadTablet extends LenovoBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 218,
-        'physical_screen_height' => 136,
-        'columns'                => 80,
-        'rows'                   => 25,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
     );
     
