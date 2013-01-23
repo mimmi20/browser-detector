@@ -117,6 +117,11 @@ class WindowsPhoneOs extends OsHandler
             return false;
         }
         
+        $doMatch = preg_match('/Windows Phone ([\d\.]+)/', $this->_useragent, $matches);
+        if ($doMatch && $matches[1] < 7) {
+            return false;
+        }
+        
         return true;
     }
     

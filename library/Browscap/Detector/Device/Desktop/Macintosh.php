@@ -143,6 +143,10 @@ class Macintosh extends GeneralDesktop
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('MacBook', 'Macmini', 'iMac', 'MacPro'))) {
+            return false;
+        }
+        
         return true;
     }
     

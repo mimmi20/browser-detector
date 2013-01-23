@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Desktop;
+namespace Browscap\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,6 +41,9 @@ namespace Browscap\Detector\Device\Desktop;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\MatcherInterface;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +54,7 @@ namespace Browscap\Detector\Device\Desktop;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MacBook extends Macintosh
+class CloudSurfer extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -62,31 +65,29 @@ class MacBook extends Macintosh
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_wireless_device' => false,
-        'is_tablet'          => false,
+        // 'is_wireless_device' => null,
+        // 'is_tablet'          => null,
         'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => true,
+        // 'is_smarttv'         => null,
+        // 'is_console'         => null,
+        // 'ux_full_desktop'    => null,
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MacBook',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple',
-        'brand_name'                => null,
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'mouse',
-        'device_claims_web_support' => true,
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        // 'model_name'                => null,
+        // 'manufacturer_name'         => null,
+        // 'brand_name'                => null,
+        // 'model_extra_info'          => null,
+        // 'marketing_name'            => null,
+        // 'has_qwerty_keyboard'       => null,
+        // 'pointing_method'           => null,
+        'device_claims_web_support' => false,
         
         // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
+        'mobile_browser'              => 'CloudSurfer',
+        'mobile_browser_version'      => null,
+        'mobile_browser_bits'         => null, // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -100,47 +101,39 @@ class MacBook extends Macintosh
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
+        'can_skip_aligned_link_row' => true,
         'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => false,
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('MacBook'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('MacBookPro', 'MacBookAir'))) {
+        if (!$this->_utils->checkIfStartsWith('CloudSurfer')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('CloudSurfer');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
     }
     
     /**
@@ -151,5 +144,19 @@ class MacBook extends Macintosh
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

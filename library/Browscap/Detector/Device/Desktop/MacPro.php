@@ -51,7 +51,7 @@ namespace Browscap\Detector\Device\Desktop;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MacBook extends Macintosh
+class MacPro extends Macintosh
 {
     /**
      * the detected browser properties
@@ -71,7 +71,7 @@ class MacBook extends Macintosh
         'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MacBook',
+        'model_name'                => 'MacPro',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple',
         'brand_name'                => null,
@@ -132,11 +132,7 @@ class MacBook extends Macintosh
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('MacBook'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('MacBookPro', 'MacBookAir'))) {
+        if (!$this->_utils->checkIfContains(array('MacPro'))) {
             return false;
         }
         

@@ -225,7 +225,7 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
-            if ($this->checkIfContains(array('xbox', 'badab', 'badap', 'simbar', 'google wireless transcoder'), true)) {
+            if ($this->checkIfContains(array('xbox', 'badab', 'badap', 'simbar', 'google wireless transcoder', 'google-tr'), true)) {
                 return false;
             }
             
@@ -273,7 +273,7 @@ final class Utils
         }
         
         if ($this->checkIfContains('search', true)
-            && !$this->checkIfContains('searchtoolbar', true)
+            && !$this->checkIfContains(array('searchtoolbar', 'searchalot ie'), true)
         ) {
             return true;
         }
