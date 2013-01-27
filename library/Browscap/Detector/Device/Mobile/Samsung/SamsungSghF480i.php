@@ -58,7 +58,7 @@ class SamsungSghF480i extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_sgh_f480i_ver1', // not in wurfl

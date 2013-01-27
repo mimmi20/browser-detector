@@ -56,7 +56,7 @@ class NokiaX302 extends NokiaX3
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_x3_02_ver1', // not in wurfl

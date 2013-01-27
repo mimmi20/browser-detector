@@ -58,7 +58,7 @@ class HuaweiU8510 extends HuaweiBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'huawei_s41hw_ver1_subu8510', // not in wurfl

@@ -76,7 +76,7 @@ abstract class BrowserHandler implements MatcherInterface
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -123,8 +123,9 @@ abstract class BrowserHandler implements MatcherInterface
     );
     
     /**
-     * @param WURFL_Context $wurflContext
-     * @param WURFL_Request_UserAgentNormalizer_Interface $this->_useragentNormalizer
+     * Class Constructor
+     *
+     * @return BrowserHandler
      */
     public function __construct()
     {
@@ -141,7 +142,7 @@ abstract class BrowserHandler implements MatcherInterface
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return 
+     * @return BrowserHandler
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -159,7 +160,7 @@ abstract class BrowserHandler implements MatcherInterface
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @return BrowserHandler
      */
     public function setUserAgent($userAgent)
     {
@@ -182,13 +183,15 @@ abstract class BrowserHandler implements MatcherInterface
     /**
      * detects the browser name from the given user agent
      *
-     * @return StdClass
+     * @return BrowserHandler
      */
     public function detect()
     {
-        $this->_detectVersion();
-        $this->_detectBits();
-        $this->_detectProperties();
+        $this
+            ->_detectVersion()
+            ->_detectBits()
+            ->_detectProperties()
+        ;
         
         return $this;
     }
@@ -196,7 +199,7 @@ abstract class BrowserHandler implements MatcherInterface
     /**
      * detects the browser version from the given user agent
      *
-     * @return void
+     * @return BrowserHandler
      */
     protected function _detectVersion()
     {
@@ -204,12 +207,14 @@ abstract class BrowserHandler implements MatcherInterface
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('mobile_browser_version', $detector->setVersion(''));
+        
+        return $this;
     }
     
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @return void
+     * @return BrowserHandler
      */
     protected function _detectBits()
     {
@@ -217,12 +222,14 @@ abstract class BrowserHandler implements MatcherInterface
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('mobile_browser_bits', $detector->getBits());
+        
+        return $this;
     }
     
     /**
      * detect the bits of the cpu which is build into the device
      *
-     * @return Handler
+     * @return BrowserHandler
      */
     protected function _detectProperties()
     {
@@ -259,7 +266,8 @@ abstract class BrowserHandler implements MatcherInterface
      * for the current device
      * 
      * @param string $capabilityName must be a valid capability name
-     * @return string Capability value
+     *
+     * @return BrowserHandler
      * @throws InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null) 
@@ -276,7 +284,8 @@ abstract class BrowserHandler implements MatcherInterface
      * for the current device
      * 
      * @param string $capabilityName must be a valid capability name
-     * @return string Capability value
+     *
+     * @return void
      * @throws InvalidArgumentException
      */
     protected function _checkCapability($capabilityName) 

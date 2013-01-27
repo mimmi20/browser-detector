@@ -60,7 +60,7 @@ class Ios extends OsHandler
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -110,10 +110,14 @@ class Ios extends OsHandler
     {
         $ios = array(
             'IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone',
-            'iPod', 'CPU OS', 'CPU iOS'
+            'iPod', 'CPU OS', 'CPU iOS', 'IUC(U;iOS'
         );
         
         if (!$this->_utils->checkIfContains($ios)) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('Darwin')) {
             return false;
         }
         

@@ -58,7 +58,7 @@ class HtcT9292 extends HtcBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_t9292_ver1_subos75', // not in wurfl

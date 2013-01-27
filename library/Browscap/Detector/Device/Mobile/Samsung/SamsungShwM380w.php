@@ -58,7 +58,7 @@ class SamsungShwM380w extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_shw_m380s_ver1_suban32', // not in wurfl

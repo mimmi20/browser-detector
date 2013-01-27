@@ -58,7 +58,7 @@ class Archos101G9 extends ArchosBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'archos_101g9_ver1_suban40', // not in wurfl

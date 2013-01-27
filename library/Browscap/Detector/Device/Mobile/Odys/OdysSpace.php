@@ -58,7 +58,7 @@ class OdysSpace extends OdysBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'odys_space_ver1', // not in wurfl

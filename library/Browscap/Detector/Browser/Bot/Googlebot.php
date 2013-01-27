@@ -58,7 +58,7 @@ class Googlebot extends Google
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -115,6 +115,10 @@ class Googlebot extends Google
             && !$this->_utils->checkIfContains('googlebot', true)
             && !$this->_utils->checkIfContains('www.google.com/bot.html', true)
         ) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfStartsWith('googlebot', true)) {
             return false;
         }
         

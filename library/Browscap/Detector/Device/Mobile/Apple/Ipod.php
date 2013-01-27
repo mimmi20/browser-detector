@@ -58,7 +58,7 @@ class Ipod extends AppleBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'apple_ipod_touch_ver5', // not in wurfl

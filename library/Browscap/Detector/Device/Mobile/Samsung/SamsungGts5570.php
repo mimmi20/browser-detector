@@ -58,7 +58,7 @@ class SamsungGts5570 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_s5570_ver1_sub221', // not in wurfl

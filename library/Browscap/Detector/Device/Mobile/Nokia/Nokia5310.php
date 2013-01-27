@@ -58,7 +58,7 @@ class Nokia5310 extends NokiaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_5310_xpressmusic_ver1_sub0363', // not in wurfl

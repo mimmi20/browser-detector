@@ -56,7 +56,7 @@ class NokiaC202 extends NokiaC2
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_c2_02_ver1_subovibrsr', // not in wurfl

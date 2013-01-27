@@ -58,7 +58,7 @@ class HtcA6380Gratia extends HtcBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

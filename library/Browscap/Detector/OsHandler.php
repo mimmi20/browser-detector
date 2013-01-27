@@ -76,7 +76,7 @@ abstract class OsHandler implements MatcherInterface
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -118,8 +118,7 @@ abstract class OsHandler implements MatcherInterface
     );
     
     /**
-     * @param WURFL_Context $wurflContext
-     * @param WURFL_Request_UserAgentNormalizer_Interface $this->_useragentNormalizer
+     * Class Constructor
      */
     public function __construct()
     {

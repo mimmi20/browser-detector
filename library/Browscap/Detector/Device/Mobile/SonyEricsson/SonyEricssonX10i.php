@@ -58,7 +58,7 @@ class SonyEricssonX10i extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_x10i_ver1_suban23', // not in wurfl

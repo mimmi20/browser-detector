@@ -58,7 +58,7 @@ class BlackBerry9900 extends BlackBerryBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'blackberry9900_ver1_subua71', // not in wurfl

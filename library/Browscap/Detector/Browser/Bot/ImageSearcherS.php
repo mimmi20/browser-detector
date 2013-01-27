@@ -56,7 +56,7 @@ class ImageSearcherS extends GeneralBot
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -109,7 +109,7 @@ class ImageSearcherS extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('ImageSearcherS')) {
+        if (!$this->_utils->checkIfStartsWith(array('ImageSearcherS', 'ImageSearcherProS'))) {
             return false;
         }
         

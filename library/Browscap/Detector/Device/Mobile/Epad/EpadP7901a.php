@@ -58,7 +58,7 @@ class EpadP7901a extends EpadBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'epad_p7901a_ver1', // not in wurfl

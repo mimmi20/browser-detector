@@ -58,7 +58,7 @@ class SonyEricssonST15i extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_st15i_ver1_suban40', // not in wurfl

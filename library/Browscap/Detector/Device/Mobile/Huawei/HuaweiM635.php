@@ -58,7 +58,7 @@ class HuaweiM635 extends HuaweiBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'huawei_m635_ver1', // not in wurfl

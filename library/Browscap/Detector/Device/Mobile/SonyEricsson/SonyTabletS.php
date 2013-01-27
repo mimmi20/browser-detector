@@ -58,7 +58,7 @@ class SonyTabletS extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sony_tablet_s_ver1_suban40', // not in wurfl

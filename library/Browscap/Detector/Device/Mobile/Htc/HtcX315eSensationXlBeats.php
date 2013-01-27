@@ -56,7 +56,7 @@ class HtcX315eSensationXlBeats extends HtcZ710
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_x315e_ver1', // not in wurfl

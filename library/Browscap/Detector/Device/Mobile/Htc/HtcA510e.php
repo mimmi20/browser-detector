@@ -56,7 +56,7 @@ class HtcA510e extends HtcA510
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_wildfire_s_ver1', // not in wurfl

@@ -76,7 +76,7 @@ abstract class DeviceHandler implements MatcherInterface
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -144,8 +144,9 @@ abstract class DeviceHandler implements MatcherInterface
     );
     
     /**
-     * @param WURFL_Context $wurflContext
-     * @param WURFL_Request_UserAgentNormalizer_Interface $userAgentNormalizer
+     * Class Constructor
+     *
+     * @return DeviceHandler
      */
     public function __construct()
     {
@@ -157,7 +158,7 @@ abstract class DeviceHandler implements MatcherInterface
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return 
+     * @return DeviceHandler 
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -175,7 +176,7 @@ abstract class DeviceHandler implements MatcherInterface
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @return DeviceHandler
      */
     public function setUserAgent($userAgent)
     {
@@ -202,18 +203,18 @@ abstract class DeviceHandler implements MatcherInterface
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return DeviceHandler
      */
     public function detect()
     {
-        $this->setCapability('device_cpu', $this->_detectCpu());
-        $this->setCapability('device_bits', $this->_detectBits());
-        
         $device = $this->detectDevice();
         
-        $this->detectDeviceVersion();
-        
-        return $device;
+        return $device
+            ->_detectCpu()
+            ->_detectBits()
+            ->_detectDeviceVersion()
+            ->_parseProperties()
+        ;
     }
     
     /**
@@ -221,7 +222,7 @@ abstract class DeviceHandler implements MatcherInterface
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return DeviceHandler
      */
     public function detectDevice()
     {
@@ -231,11 +232,9 @@ abstract class DeviceHandler implements MatcherInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return DeviceHandler
      */
-    public function detectDeviceVersion()
+    protected function _detectDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
@@ -250,33 +249,48 @@ abstract class DeviceHandler implements MatcherInterface
     /**
      * detect the cpu which is build into the device
      *
-     * @return Handler
+     * @return DeviceHandler
      */
     protected function _detectCpu()
     {
         $detector = new \Browscap\Detector\Cpu();
         $detector->setUserAgent($this->_useragent);
         
-        return $detector->getCpu();
+        $this->setCapability('device_cpu', $detector->getCpu());
+        
+        return $this;
     }
     
     /**
      * detect the bits of the cpu which is build into the device
      *
-     * @return Handler
+     * @return DeviceHandler
      */
     protected function _detectBits()
     {
         $detector = new \Browscap\Detector\Bits\Device();
         $detector->setUserAgent($this->_useragent);
         
-        return $detector->getBits();
+        $this->setCapability('device_bits', $detector->getBits());
+        
+        return $this;
+    }
+    
+    /**
+     * detects properties who are depending on the device version or the user 
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _parseProperties()
+    {
+        return $this;
     }
     
     /**
      * detect the bits of the cpu which is build into the device
      *
-     * @return Handler
+     * @return DeviceHandler
      */
     protected function _detectProperties()
     {
@@ -313,7 +327,7 @@ abstract class DeviceHandler implements MatcherInterface
      * for the current device
      * 
      * @param string $capabilityName must be a valid capability name
-     * @return string Capability value
+     * @return DeviceHandler
      * @throws InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null) 
@@ -330,7 +344,7 @@ abstract class DeviceHandler implements MatcherInterface
      * for the current device
      * 
      * @param string $capabilityName must be a valid capability name
-     * @return string Capability value
+     * @return void
      * @throws InvalidArgumentException
      */
     protected function _checkCapability($capabilityName) 

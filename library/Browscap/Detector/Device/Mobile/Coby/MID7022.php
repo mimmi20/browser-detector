@@ -58,7 +58,7 @@ class MID7022 extends CobyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'coby_mid7022_ver1', // not in wurfl

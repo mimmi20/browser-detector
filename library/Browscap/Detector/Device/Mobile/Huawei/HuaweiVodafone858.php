@@ -58,7 +58,7 @@ class HuaweiVodafone858 extends HuaweiBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'huawei_v858_ver1', // not in wurfl

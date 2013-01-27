@@ -58,7 +58,7 @@ class SamsungGtn7000 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_n7000_ver1', // not in wurfl

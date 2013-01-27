@@ -58,7 +58,7 @@ class NintendoDsi extends NintendoBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nintendo_dsi_ver1', // not in wurfl

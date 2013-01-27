@@ -56,7 +56,7 @@ class LenovoIdeaPadA1 extends IdeaTab
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lenovo_ideapad_a1_ver1', // not in wurfl

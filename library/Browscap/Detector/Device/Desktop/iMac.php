@@ -56,7 +56,7 @@ class iMac extends Macintosh
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -127,7 +127,6 @@ class iMac extends Macintosh
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $this->_useragent
      * @return boolean always true
      */
     public function canHandle()
@@ -152,11 +151,9 @@ class iMac extends Macintosh
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return DeviceHandler
      */
-    public function detectDeviceVersion()
+    protected function _detectDeviceVersion()
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);

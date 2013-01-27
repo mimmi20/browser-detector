@@ -58,7 +58,7 @@ class MotorolaWx308 extends MotorolaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'mot_wx308_ver1', // not in wurfl

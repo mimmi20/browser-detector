@@ -58,7 +58,7 @@ class HtcSpark extends HtcBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_spark_ver1_subtrophy75', // not in wurfl

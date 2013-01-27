@@ -58,7 +58,7 @@ class HtcT8282 extends HtcBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_touch_hd_t8282_ver1', // not in wurfl

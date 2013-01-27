@@ -58,7 +58,7 @@ class SamsungGts7500 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_s7500_ver1_subuanosam', // not in wurfl

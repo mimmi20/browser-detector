@@ -58,7 +58,7 @@ class HuaweiU8350 extends HuaweiBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'huawei_u8350_ver1', // not in wurfl

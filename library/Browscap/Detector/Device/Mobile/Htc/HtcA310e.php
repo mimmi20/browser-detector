@@ -58,7 +58,7 @@ class HtcA310e extends HtcBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_a310e_ver1_subuauscore', // not in wurfl

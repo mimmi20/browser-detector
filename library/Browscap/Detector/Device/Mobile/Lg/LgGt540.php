@@ -58,7 +58,7 @@ class LgGt540 extends LgBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lg_gt540_ver1_subua_suban23', // not in wurfl

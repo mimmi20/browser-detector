@@ -56,7 +56,7 @@ class AcerIconiaA511 extends AcerIconia
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'acer_iconia_tab_a511_ver1', // not in wurfl

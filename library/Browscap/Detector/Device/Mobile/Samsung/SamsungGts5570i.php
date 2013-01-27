@@ -56,7 +56,7 @@ class SamsungGts5570i extends SamsungGts5570
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_s5570i_ver1', // not in wurfl

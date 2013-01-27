@@ -58,7 +58,7 @@ class SonyEricssonC902 extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_c902_ver1_subr3da', // not in wurfl

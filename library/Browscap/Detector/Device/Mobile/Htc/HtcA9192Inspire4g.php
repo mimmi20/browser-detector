@@ -56,7 +56,7 @@ class HtcA9192Inspire4g extends HtcA8181Desire
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_inspire4g_ver1_suban40a9192', // not in wurfl

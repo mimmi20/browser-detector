@@ -56,7 +56,7 @@ class NokiaC301 extends NokiaC3
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_c3_01_ver1', // not in wurfl

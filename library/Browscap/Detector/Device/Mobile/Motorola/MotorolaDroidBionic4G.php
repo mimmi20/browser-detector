@@ -56,7 +56,7 @@ class MotorolaDroidBionic4G extends MotorolaDroidBionic
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

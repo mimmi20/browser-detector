@@ -58,7 +58,7 @@ class SamsungSghT959 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_sgh_t959_ver1_sub53017', // not in wurfl

@@ -58,7 +58,7 @@ class BlackBerry8700 extends BlackBerryBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'blackberry8700_ver1', // not in wurfl
@@ -103,7 +103,7 @@ class BlackBerry8700 extends BlackBerryBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class BlackBerry8700 extends BlackBerryBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 315,
+        'max_image_height'       => 220,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
     );
     
     /**

@@ -58,7 +58,7 @@ class TmobileG2Touch extends TmobileBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'tmobile_g2_ver1_suban21', // not in wurfl

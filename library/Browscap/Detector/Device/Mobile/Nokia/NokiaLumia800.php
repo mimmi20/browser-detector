@@ -56,7 +56,7 @@ class NokiaLumia800 extends NokiaLumia
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_lumia_800_ver1', // not in wurfl

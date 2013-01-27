@@ -58,7 +58,7 @@ class SamsungGti8190 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i8190_ver1_suban41', // not in wurfl

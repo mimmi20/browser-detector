@@ -58,7 +58,7 @@ class AsusTf300T extends AsusBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'asus_transformer_pad_tf300t_ver1_suban41', // not in wurfl

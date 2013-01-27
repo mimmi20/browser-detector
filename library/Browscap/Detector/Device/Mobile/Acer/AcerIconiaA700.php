@@ -56,7 +56,7 @@ class AcerIconiaA700 extends AcerIconia
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'acer_iconia_tab_a700_ver1_subuachrome', // not in wurfl

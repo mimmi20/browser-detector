@@ -58,7 +58,7 @@ class SamsungSghi997 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_sgh_i997_ver1', // not in wurfl

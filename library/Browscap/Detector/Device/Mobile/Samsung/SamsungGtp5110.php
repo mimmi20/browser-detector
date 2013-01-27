@@ -58,7 +58,7 @@ class SamsungGtp5110 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_p5100_ver1_subua5110', // not in wurfl

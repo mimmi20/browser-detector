@@ -58,7 +58,7 @@ class Nokia6303Classic extends NokiaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_6303c_ver1', // not in wurfl

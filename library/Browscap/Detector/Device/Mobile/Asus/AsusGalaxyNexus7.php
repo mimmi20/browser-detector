@@ -58,7 +58,7 @@ class AsusGalaxyNexus7 extends AsusBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'google_nexus7_ver1', // not in wurfl

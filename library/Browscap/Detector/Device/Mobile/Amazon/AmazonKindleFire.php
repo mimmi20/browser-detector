@@ -56,7 +56,7 @@ class AmazonKindleFire extends AmazonKindle
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl

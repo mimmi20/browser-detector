@@ -58,7 +58,7 @@ class SamsungGti9305 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i9305_ver1_suban41xxa', // not in wurfl

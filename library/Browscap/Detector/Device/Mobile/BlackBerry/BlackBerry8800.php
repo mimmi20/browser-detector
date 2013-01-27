@@ -58,7 +58,7 @@ class BlackBerry8800 extends BlackBerryBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'blackberry8800_ver1_sub45055', // not in wurfl

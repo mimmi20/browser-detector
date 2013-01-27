@@ -56,7 +56,7 @@ class Android extends Linux
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -121,7 +121,7 @@ class Android extends Linux
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Android', 'Silk'))
+        if ($this->_utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;'))
             || $this->_utils->isMobileAsSafari()
         ) {
             return true;

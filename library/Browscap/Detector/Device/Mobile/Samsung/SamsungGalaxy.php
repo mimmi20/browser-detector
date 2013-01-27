@@ -58,7 +58,7 @@ class SamsungGalaxy extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i7500_ver1_suban16', // not in wurfl

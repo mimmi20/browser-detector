@@ -58,7 +58,7 @@ class SamsungSchR530u extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i9300_ver1_subuauscellular', // not in wurfl

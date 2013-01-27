@@ -56,7 +56,7 @@ class SamsungSghi997r extends SamsungSghi997
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

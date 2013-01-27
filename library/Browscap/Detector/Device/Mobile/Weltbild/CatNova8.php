@@ -58,7 +58,7 @@ class CatNova8 extends WeltbildBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'weltbild_catnova8_ver1', // not in wurfl

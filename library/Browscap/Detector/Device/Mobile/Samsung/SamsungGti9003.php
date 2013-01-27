@@ -58,7 +58,7 @@ class SamsungGti9003 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i9003_ver1', // not in wurfl

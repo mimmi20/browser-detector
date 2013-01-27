@@ -58,7 +58,7 @@ class SamsungGtp6810 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_p6810_ver1', // not in wurfl

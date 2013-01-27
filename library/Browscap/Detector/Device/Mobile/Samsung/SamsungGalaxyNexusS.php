@@ -56,7 +56,7 @@ class SamsungGalaxyNexusS extends SamsungGalaxyNexus
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_nexus_s_ver1_suban41', // not in wurfl

@@ -56,7 +56,7 @@ class NokiaN800 extends NokiaN8
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_n8_00_ver1', // not in wurfl

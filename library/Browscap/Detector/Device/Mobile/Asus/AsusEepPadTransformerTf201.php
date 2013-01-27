@@ -58,7 +58,7 @@ class AsusEepPadTransformerTf201 extends AsusBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'asus_eee_pad_tf201_ver1', // not in wurfl

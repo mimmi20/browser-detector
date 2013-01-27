@@ -58,7 +58,7 @@ class AcerG100W extends AcerBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'acer_g100w_ver1_suban32', // not in wurfl

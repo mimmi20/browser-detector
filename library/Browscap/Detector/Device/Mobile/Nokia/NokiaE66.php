@@ -56,7 +56,7 @@ class NokiaE66 extends NokiaE6
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

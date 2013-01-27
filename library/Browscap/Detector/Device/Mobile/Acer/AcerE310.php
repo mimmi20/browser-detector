@@ -58,7 +58,7 @@ class AcerE310 extends AcerBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'acer_e310_ver1_suban221', // not in wurfl

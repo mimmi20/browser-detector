@@ -56,7 +56,7 @@ class AsusEepPadTransformerTf101g extends AsusTf101
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'asus_eee_pad_tf101_ver1_suban40_subuag', // not in wurfl

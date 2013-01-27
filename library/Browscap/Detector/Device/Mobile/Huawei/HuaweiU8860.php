@@ -58,7 +58,7 @@ class HuaweiU8860 extends HuaweiBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'huawei_u8860_ver1_suban40noh', // not in wurfl

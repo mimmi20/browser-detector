@@ -58,7 +58,7 @@ class CatStarGate extends WeltbildBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

@@ -58,7 +58,7 @@ class SamsungGts6102 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_s6102_ver1', // not in wurfl

@@ -58,7 +58,7 @@ class MdLifetabP9514 extends MedionBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lifetab_p9514_ver1_suban40', // not in wurfl

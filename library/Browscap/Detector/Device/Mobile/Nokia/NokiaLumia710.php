@@ -56,7 +56,7 @@ class NokiaLumia710 extends NokiaLumia
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_lumia_710_ver1', // not in wurfl

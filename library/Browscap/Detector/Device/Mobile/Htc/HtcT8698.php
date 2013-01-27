@@ -58,7 +58,7 @@ class HtcT8698 extends HtcBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_mozart_ver1_subos75b', // not in wurfl

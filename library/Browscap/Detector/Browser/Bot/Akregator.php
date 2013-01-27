@@ -42,7 +42,6 @@ namespace Browscap\Detector\Browser\Bot;
  */
 
 use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\MatcherInterface;
 
 /**
  * CatchAllUserAgentHandler
@@ -59,7 +58,7 @@ class Akregator extends BrowserHandler
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

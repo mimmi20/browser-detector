@@ -42,7 +42,6 @@ namespace Browscap\Detector\Browser\Mobile;
  */
 
 use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\MatcherInterface;
 
 /**
  * SendoUserAgentHandler
@@ -59,7 +58,7 @@ class Sendo extends BrowserHandler
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

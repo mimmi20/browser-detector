@@ -58,7 +58,7 @@ class Macosx extends Macintosh
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -126,7 +126,7 @@ class Macosx extends Macintosh
         $detector->setUserAgent($this->_useragent);
         $detector->setDefaulVersion('10');
         
-        $searches = array('Mac OS X');
+        $searches = array('Mac OS X', 'Mac OS X v');
         
         $this->setCapability(
             'device_os_version', 

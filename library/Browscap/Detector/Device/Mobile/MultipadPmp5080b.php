@@ -58,7 +58,7 @@ class MultipadPmp5080b extends GeneralMobile
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'multipad_pmp5080b_ver1_suban40', // not in wurfl

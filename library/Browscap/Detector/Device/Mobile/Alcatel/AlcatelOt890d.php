@@ -58,7 +58,7 @@ class AlcatelOt890d extends AlcatelOt890
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

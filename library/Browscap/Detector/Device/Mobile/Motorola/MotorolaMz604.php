@@ -56,7 +56,7 @@ class MotorolaMz604 extends MotorolaXoom
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl

@@ -58,7 +58,7 @@ class AmazonKindle extends AmazonBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -129,7 +129,6 @@ class AmazonKindle extends AmazonBase
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @param string $this->_useragent
      * @return boolean always true
      */
     public function canHandle()
@@ -158,9 +157,7 @@ class AmazonKindle extends AmazonBase
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return DeviceHandler
      */
     public function detectDevice()
     {
@@ -170,11 +167,9 @@ class AmazonKindle extends AmazonBase
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return DeviceHandler
      */
-    public function detectDeviceVersion()
+    protected function _detectDeviceVersion()
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);

@@ -58,7 +58,7 @@ class LgKm900 extends LgBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lg_km900_ver1_subv10b', // not in wurfl

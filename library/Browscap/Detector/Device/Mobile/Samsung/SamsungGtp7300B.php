@@ -56,7 +56,7 @@ class SamsungGtp7300B extends SamsungGtp7300
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

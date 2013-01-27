@@ -56,7 +56,7 @@ class AlcatelOt918d extends AlcatelOt918
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'alcatel_ot918_ver1', // not in wurfl

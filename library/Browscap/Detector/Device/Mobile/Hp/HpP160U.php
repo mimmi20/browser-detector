@@ -58,7 +58,7 @@ class HpP160U extends HpBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'hp_veer_ver1_subwebos211', // not in wurfl

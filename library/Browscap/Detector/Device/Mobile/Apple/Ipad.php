@@ -58,7 +58,7 @@ class Ipad extends AppleBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'apple_ipad_ver1_sub432', // not in wurfl

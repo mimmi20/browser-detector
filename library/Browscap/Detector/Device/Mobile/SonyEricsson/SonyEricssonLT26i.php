@@ -58,7 +58,7 @@ class SonyEricssonLT26i extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_lt26i_ver1_suban40', // not in wurfl

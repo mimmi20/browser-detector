@@ -56,7 +56,7 @@ class HtcS510eDesireS extends HtcA8181Desire
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_s510e_ver1_subdesires', // not in wurfl

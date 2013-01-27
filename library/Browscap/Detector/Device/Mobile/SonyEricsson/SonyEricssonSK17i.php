@@ -58,7 +58,7 @@ class SonyEricssonSK17i extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_sk17i_ver1_suban40i', // not in wurfl

@@ -58,7 +58,7 @@ class NokiaSeries60 extends NokiaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl
@@ -103,10 +103,10 @@ class NokiaSeries60 extends NokiaBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 1,
         'ununiqueness_handler'      => null,
         'uaprof'                    => null,
         'uaprof2'                   => null,
@@ -114,15 +114,15 @@ class NokiaSeries60 extends NokiaBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 21,
+        'rows'                   => 8,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
     );
     
     /**

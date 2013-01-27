@@ -58,7 +58,7 @@ class PointOfViewProtab3xxl extends GeneralMobile
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'pointofview_protab_2xl_ver1', // not in wurfl

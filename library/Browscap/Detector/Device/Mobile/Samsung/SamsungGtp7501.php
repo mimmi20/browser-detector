@@ -58,7 +58,7 @@ class SamsungGtp7501 extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_galaxy_tab_p4_ver1_subuap7501', // not in wurfl

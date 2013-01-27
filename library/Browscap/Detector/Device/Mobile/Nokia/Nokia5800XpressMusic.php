@@ -56,7 +56,7 @@ class Nokia5800XpressMusic extends Nokia5800
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

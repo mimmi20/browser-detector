@@ -58,7 +58,7 @@ class MotorolaMb526 extends MotorolaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'mot_mb526_ver1', // not in wurfl

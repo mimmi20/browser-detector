@@ -58,7 +58,7 @@ class HpTouchpad extends HpBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'hp_touchpad_ver1', // not in wurfl

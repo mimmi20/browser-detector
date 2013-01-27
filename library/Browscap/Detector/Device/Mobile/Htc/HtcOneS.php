@@ -56,7 +56,7 @@ class HtcOneS extends HtcOne
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_one_s_ver1_subuanouscore', // not in wurfl

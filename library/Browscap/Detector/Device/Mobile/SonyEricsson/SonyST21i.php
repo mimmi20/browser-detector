@@ -58,7 +58,7 @@ class SonyST21i extends SonyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sony_st21iv_ver1_subuai', // not in wurfl

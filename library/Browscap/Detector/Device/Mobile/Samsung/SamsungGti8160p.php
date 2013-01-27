@@ -56,7 +56,7 @@ class SamsungGti8160p extends SamsungGti8160
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i8160_ver1_subuap', // not in wurfl

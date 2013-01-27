@@ -58,7 +58,7 @@ class MicrosoftXbox extends GeneralTv
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'microsoft_xbox360_ver1', // not in wurfl

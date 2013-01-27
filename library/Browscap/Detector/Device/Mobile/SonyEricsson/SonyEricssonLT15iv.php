@@ -56,7 +56,7 @@ class SonyEricssonLT15iv extends SonyEricssonLT15i
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_lt15i_ver1_subua232', // not in wurfl

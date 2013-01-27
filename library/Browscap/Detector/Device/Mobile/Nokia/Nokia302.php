@@ -58,7 +58,7 @@ class Nokia302 extends NokiaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_302_ver1', // not in wurfl

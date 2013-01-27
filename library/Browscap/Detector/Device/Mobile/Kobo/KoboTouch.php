@@ -58,7 +58,7 @@ class KoboTouch extends KoboBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'kobo_touch_ver1', // not in wurfl

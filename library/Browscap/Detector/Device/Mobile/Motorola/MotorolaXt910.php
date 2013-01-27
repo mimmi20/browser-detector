@@ -58,7 +58,7 @@ class MotorolaXt910 extends MotorolaBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'mot_xt910_ver1_subuamot', // not in wurfl

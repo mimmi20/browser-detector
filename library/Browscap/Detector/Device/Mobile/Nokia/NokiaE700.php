@@ -56,7 +56,7 @@ class NokiaE700 extends NokiaE7
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_e7_00_ver1_subua53', // not in wurfl

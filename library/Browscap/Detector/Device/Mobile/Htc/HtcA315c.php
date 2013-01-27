@@ -56,7 +56,7 @@ class HtcA315c extends HtcWildfire
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_wildfire_s_ver1_subua', // not in wurfl

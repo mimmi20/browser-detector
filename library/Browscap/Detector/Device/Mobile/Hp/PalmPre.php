@@ -58,7 +58,7 @@ class PalmPre extends HpBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'palm_pre_ver1_subwebos141', // not in wurfl

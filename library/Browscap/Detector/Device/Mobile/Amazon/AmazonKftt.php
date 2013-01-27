@@ -58,7 +58,7 @@ class AmazonKftt extends AmazonBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'amazon_kindle_fire_hd7_ver1_subuanosilk', // not in wurfl

@@ -56,7 +56,7 @@ class NokiaC505 extends NokiaC5
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => null, // not in wurfl

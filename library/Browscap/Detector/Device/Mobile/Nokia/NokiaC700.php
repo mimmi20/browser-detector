@@ -56,7 +56,7 @@ class NokiaC700 extends NokiaC7
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'nokia_c7_00_ver1_subuaseries53', // not in wurfl

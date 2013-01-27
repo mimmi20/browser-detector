@@ -58,7 +58,7 @@ class SamsungGts7230e extends SamsungBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_s7230e_ver1_suborange', // not in wurfl

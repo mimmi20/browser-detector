@@ -58,7 +58,7 @@ class Lge400 extends LgBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lg_e400_ver1', // not in wurfl

@@ -58,7 +58,7 @@ class BlackBerry9105 extends BlackBerryBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'blackberry9105_ver1_subos6', // not in wurfl

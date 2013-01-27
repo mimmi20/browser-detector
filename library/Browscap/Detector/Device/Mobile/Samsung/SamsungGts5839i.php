@@ -56,7 +56,7 @@ class SamsungGts5839i extends SamsungGts5830
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_s5839i_ver1', // not in wurfl

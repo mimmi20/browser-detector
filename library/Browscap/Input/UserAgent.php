@@ -85,7 +85,7 @@ class UserAgent extends Core
     /**
      * the detection result
      *
-     * @var \\Browscap\\Detector\\Result
+     * @var \Browscap\Detector\Result
      */
     private $_result = null;
 
@@ -131,8 +131,7 @@ class UserAgent extends Core
      */
     private function _detectEngine()
     {
-        $handlersToUse = array(
-        );
+        $handlersToUse = array();
         
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_agent);

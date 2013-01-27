@@ -58,7 +58,7 @@ class ArchosA70CHT extends ArchosBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'archos_a70cht_ver1', // not in wurfl

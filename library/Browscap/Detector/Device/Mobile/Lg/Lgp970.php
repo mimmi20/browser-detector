@@ -58,7 +58,7 @@ class Lgp970 extends LgBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lg_p970_ver1', // not in wurfl

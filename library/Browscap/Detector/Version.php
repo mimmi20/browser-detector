@@ -219,7 +219,8 @@ final class Version
             array('\/', ''),
             array('(', ')'),
             array(' ', ''),
-            array('', '')
+            array('', ''),
+            array(' (', ';')
         );
         
         $version = $this->_default;

@@ -56,7 +56,7 @@ class SonyEricssonSo02c extends SonyEricssonSo
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'sonyericsson_xperia_acro_ver1_sub02', // not in wurfl

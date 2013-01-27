@@ -56,7 +56,7 @@ class SamsungGti9100p extends SamsungGti9100
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'samsung_gt_i9100p_ver1_suban40nosam', // not in wurfl

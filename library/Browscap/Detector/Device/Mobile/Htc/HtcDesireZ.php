@@ -56,7 +56,7 @@ class HtcDesireZ extends HtcA8181Desire
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'htc_desire_z_ver1_suban23', // not in wurfl

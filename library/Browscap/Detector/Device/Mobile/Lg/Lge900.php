@@ -58,7 +58,7 @@ class Lge900 extends LgBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'lg_e900_ver1_subos7_5', // not in wurfl

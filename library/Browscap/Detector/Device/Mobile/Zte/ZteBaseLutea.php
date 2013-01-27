@@ -58,7 +58,7 @@ class ZteBaseLutea extends ZteBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'zte_blade_ver1_suban22de', // not in wurfl

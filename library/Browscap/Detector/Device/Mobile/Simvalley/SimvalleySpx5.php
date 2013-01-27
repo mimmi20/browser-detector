@@ -58,7 +58,7 @@ class SimvalleySpx5 extends SimvalleyBase
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var array
      */
     protected $_properties = array(
         'wurflKey' => 'simvalley_spx5_3g_ver1', // not in wurfl
