@@ -131,6 +131,8 @@ class Flipboard extends CfNetwork
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

@@ -103,10 +103,6 @@ class SmartViera extends BrowserHandler
         'can_skip_aligned_link_row' => true,
         'can_assign_phone_number'   => false,
     );
-    /**
-     * @var string the detected browser
-     */
-    protected $_browser = 'SmartViera';
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -137,6 +133,8 @@ class SmartViera extends BrowserHandler
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

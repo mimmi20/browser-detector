@@ -136,7 +136,8 @@ class OperaMini extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -147,7 +148,8 @@ class OperaMini extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -158,7 +160,8 @@ class OperaMini extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -169,7 +172,8 @@ class OperaMini extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -180,12 +184,15 @@ class OperaMini extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion('')
         );
+        
+        return $this;
     }
     
     /**

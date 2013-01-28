@@ -203,7 +203,8 @@ class MicrosoftInternetExplorer extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         foreach ($this->_patterns as $pattern => $version) {
@@ -211,13 +212,16 @@ class MicrosoftInternetExplorer extends BrowserHandler
                 $this->setCapability(
                     'mobile_browser_version', $detector->setVersion($version)
                 );
-                return;
+                
+                return $this;
             }
         }
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion('')
         );
+        
+        return $this;
     }
     
     /**

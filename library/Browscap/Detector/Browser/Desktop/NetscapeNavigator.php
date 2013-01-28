@@ -192,6 +192,8 @@ class NetscapeNavigator extends Netscape
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

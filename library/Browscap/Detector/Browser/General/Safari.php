@@ -131,7 +131,7 @@ class Safari extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -143,7 +143,7 @@ class Safari extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $doMatch = preg_match('/Safari([\d\.]+)/', $this->_useragent, $matches);
@@ -153,7 +153,7 @@ class Safari extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -165,12 +165,14 @@ class Safari extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion('')
         );
+        
+        return $this;
     }
     
     /**

@@ -169,7 +169,7 @@ class MicrosoftOutlook extends MicrosoftOffice
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -181,7 +181,7 @@ class MicrosoftOutlook extends MicrosoftOffice
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -193,7 +193,7 @@ class MicrosoftOutlook extends MicrosoftOffice
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -205,10 +205,12 @@ class MicrosoftOutlook extends MicrosoftOffice
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            return $this;
         }
         
         parent::_detectVersion();
+        
+        return $this;
     }
     
     /**

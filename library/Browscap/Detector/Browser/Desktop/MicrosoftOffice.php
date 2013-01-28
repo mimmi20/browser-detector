@@ -171,7 +171,8 @@ class MicrosoftOffice extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match('/MSOffice (\d+)/', $this->_useragent, $matches);
@@ -181,7 +182,8 @@ class MicrosoftOffice extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -193,7 +195,8 @@ class MicrosoftOffice extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -205,12 +208,15 @@ class MicrosoftOffice extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_mapVersion($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion('')
         );
+        
+        return $this;
     }
     
     protected function _mapVersion($version)

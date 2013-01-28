@@ -88,6 +88,8 @@ class CatchAll extends Unknown
         } else {
             $this->_bits = 0;
         }
+        
+        return $this;
     }
     
     /**

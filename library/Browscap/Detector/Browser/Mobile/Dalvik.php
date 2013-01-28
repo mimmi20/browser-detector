@@ -133,6 +133,8 @@ class Dalvik extends Android
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

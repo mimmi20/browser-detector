@@ -160,12 +160,12 @@ class Maxthon extends BrowserHandler
         
         if (false !== strpos($this->_useragent, 'MyIE2')) {
             $this->setCapability('mobile_browser_version', $detector->setVersion('2.0'));
-            return;
+            return $this;
         }
         
         if (false !== strpos($this->_useragent, 'MyIE')) {
             $this->setCapability('mobile_browser_version', $detector->setVersion('1.0'));
-            return;
+            return $this;
         }
         
         $detector->setDefaulVersion('2.0');
@@ -175,6 +175,8 @@ class Maxthon extends BrowserHandler
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

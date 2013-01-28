@@ -173,7 +173,8 @@ class Android extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -185,7 +186,8 @@ class Android extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -197,7 +199,8 @@ class Android extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -209,12 +212,15 @@ class Android extends BrowserHandler
                 'mobile_browser_version', 
                 $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
             );
-            return;
+            
+            return $this;
         }
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion('')
         );
+        
+        return $this;
     }
     
     /**

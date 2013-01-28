@@ -162,5 +162,7 @@ class Iceape extends Thunderbird
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
 }

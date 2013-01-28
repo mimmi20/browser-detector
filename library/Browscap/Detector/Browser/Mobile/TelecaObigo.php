@@ -137,7 +137,8 @@ class TelecaObigo extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -148,7 +149,8 @@ class TelecaObigo extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $searches = array(
@@ -160,6 +162,8 @@ class TelecaObigo extends BrowserHandler
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

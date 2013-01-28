@@ -133,6 +133,8 @@ class GoogleWirelessTranscoder extends Google
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**

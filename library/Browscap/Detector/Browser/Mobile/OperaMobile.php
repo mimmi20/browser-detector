@@ -142,7 +142,8 @@ class OperaMobile extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match('/Opera ([\d\.]+)/', $this->_useragent, $matches);
@@ -151,7 +152,8 @@ class OperaMobile extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $doMatch = preg_match(
@@ -164,7 +166,7 @@ class OperaMobile extends BrowserHandler
             );
             
             if ($this->_version < 100) {
-                return;
+                return $this;
             }
         }
         
@@ -174,12 +176,15 @@ class OperaMobile extends BrowserHandler
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            return;
+            
+            return $this;
         }
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion('')
         );
+        
+        return $this;
     }
     
     /**

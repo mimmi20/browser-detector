@@ -217,10 +217,10 @@ final class Version
         
         $modifiers = array(
             array('\/', ''),
-            array('(', ')'),
+            array('\(', '\)'),
             array(' ', ''),
             array('', ''),
-            array(' (', ';')
+            array(' \(', '\;')
         );
         
         $version = $this->_default;

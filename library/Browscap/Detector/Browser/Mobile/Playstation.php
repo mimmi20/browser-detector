@@ -124,16 +124,6 @@ class Playstation extends BrowserHandler
     }
     
     /**
-     * detects the browser name from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectBrowser()
-    {
-        return 'Playstation';
-    }
-    
-    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool
@@ -148,6 +138,8 @@ class Playstation extends BrowserHandler
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**
