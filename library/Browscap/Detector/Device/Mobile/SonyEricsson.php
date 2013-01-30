@@ -159,7 +159,7 @@ class SonyEricsson extends GeneralMobile
             'w760i',
             'wt13i',
             'x1i',
-            'x10i',
+            'x10',
             'xst2',
             'playstation',
             'psp'

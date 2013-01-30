@@ -134,7 +134,7 @@ class TechniSatDigitIsioS extends GeneralTv
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('TechniSat Digit ISIO S')) {
+        if (!$this->_utils->checkIfContains('technisat digit isio s', true)) {
             return false;
         }
         

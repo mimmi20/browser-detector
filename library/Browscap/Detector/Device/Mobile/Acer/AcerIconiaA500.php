@@ -114,12 +114,12 @@ class AcerIconiaA500 extends AcerIconia
         // display
         'physical_screen_width'  => 217,
         'physical_screen_height' => 136,
-        'columns'                => 28,
-        'rows'                   => 30,
+        'columns'                => 80,
+        'rows'                   => 25,
         'max_image_width'        => 980,
         'max_image_height'       => 472,
         'resolution_width'       => 1280,
-        'resolution_height'      => 768,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
     );
     

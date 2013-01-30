@@ -107,12 +107,6 @@ class Trident extends EngineHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/') 
-            && !$this->_utils->checkIfContains(array('MSIE', 'Trident'))
-        ) {
-            return false;
-        }
-        
         $noTridentEngines = array(
             'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
             'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Mac_PowerPC',
@@ -123,7 +117,13 @@ class Trident extends EngineHandler
             return false;
         }
         
-        return true;
+        if ($this->_utils->checkIfStartsWith('Mozilla/') 
+            && $this->_utils->checkIfContains(array('MSIE', 'Trident'))
+        ) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**

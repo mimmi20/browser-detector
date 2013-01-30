@@ -118,6 +118,10 @@ class JakartaCommonsHttpClient extends GeneralBot
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Wepbot')) {
+            return false;
+        }
+        
         return true;
     }
     

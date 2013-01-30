@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -51,7 +51,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
+class HtcSensationXlBeats extends HtcZ710
 {
     /**
      * the detected browser properties
@@ -59,7 +59,7 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_x315e_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -71,12 +71,12 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Nexus One',
+        'model_name'                => 'X315e',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Google',
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Sensation XL with Beats Audio',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -106,20 +106,20 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PI39/ua-profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 100,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
         'columns'                => 15,
         'rows'                   => 12,
         'max_image_width'        => 320,
-        'max_image_height'       => 720,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'max_image_height'       => 400,
+        'resolution_width'       => 340,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
     );
     
@@ -132,7 +132,23 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Nexus One', 'NexusOne', 'Nexus-One'))) {
+        $phones = array(
+            'HTC/SensationXL_Beats',
+            'HTC_SensationXL_Beats'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
+            return false;
+        }
+        
+        $phones = array(
+            'HTC_SensationXL_Beats_X315e', 
+            'HTC Sensation XL with Beats Audio X315e', 
+            'SensationXL_Beats_X315e',
+            'HTC_DesireHD_Beats_X315e'
+        );
+        
+        if ($this->_utils->checkIfContains($phones)) {
             return false;
         }
         

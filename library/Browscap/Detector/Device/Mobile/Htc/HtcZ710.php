@@ -134,7 +134,14 @@ class HtcZ710 extends HtcBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC/Sensation', 'HTC/Sensation/', 'HTC Sensation', 'HTC_Sensation'))) {
+        $phones = array(
+            'HTC/Sensation',
+            'HTC/Sensation/',
+            'HTC Sensation',
+            'HTC_Sensation'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
             return false;
         }
         
@@ -144,7 +151,8 @@ class HtcZ710 extends HtcBase
             'HTC_SensationXL_Beats_X315e', 
             'HTC Sensation XL with Beats Audio X315e', 
             'SensationXL_Beats_X315e',
-            'HTC_DesireHD_Beats_X315e'
+            'HTC_DesireHD_Beats_X315e',
+            'HTC Sensation XE with Beats Audio Z715e'
         );
         
         if ($this->_utils->checkIfContains($phones)) {

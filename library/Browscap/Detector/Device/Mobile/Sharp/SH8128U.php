@@ -76,7 +76,7 @@ class SH8128U extends SharpBase
         'model_name'                => 'SH8128U',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sharp',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Sharp',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

@@ -120,8 +120,8 @@ class Ipod extends AppleBase
         'rows'                   => 20,
         'max_image_width'        => 320,
         'max_image_height'       => 360,
-        'resolution_width'       => 640, // wurflkey: apple_ipod_touch_ver6
-        'resolution_height'      => 960, // wurflkey: apple_ipod_touch_ver6
+        'resolution_width'       => 320, // wurflkey: apple_ipod_touch_ver5
+        'resolution_height'      => 480, // wurflkey: apple_ipod_touch_ver5
         'dual_orientation'       => true,
     );
     

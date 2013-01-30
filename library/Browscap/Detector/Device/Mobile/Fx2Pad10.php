@@ -75,8 +75,8 @@ class Fx2Pad10 extends GeneralMobile
         // device
         'model_name'                => 'FX2-PAD10',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Faktor Zwei',
+        'brand_name'                => 'Faktor Zwei',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

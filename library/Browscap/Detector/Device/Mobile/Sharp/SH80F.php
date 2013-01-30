@@ -76,7 +76,7 @@ class SH80F extends SharpBase
         'model_name'                => 'SH80F',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sharp',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Sharp',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -103,7 +103,7 @@ class SH80F extends SharpBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,

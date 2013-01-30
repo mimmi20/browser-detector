@@ -134,7 +134,7 @@ class NBPC724 extends CobyBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('MID8128')) {
+        if (!$this->_utils->checkIfContains('NBPC724')) {
             return false;
         }
         

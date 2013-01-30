@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,6 +41,8 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Device\GeneralMobile;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +53,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
+class Pearl extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -63,7 +65,7 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -71,12 +73,12 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Nexus One',
+        'model_name'                => 'general Pearl Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Google',
+        'manufacturer_name'         => 'Pearl',
+        'brand_name'                => 'Pearl',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => null, // wurflkey: Pearl_touch_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -101,7 +103,7 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,15 +114,15 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 100,
-        'columns'                => 15,
-        'rows'                   => 12,
-        'max_image_width'        => 320,
-        'max_image_height'       => 720,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
     );
     
     /**
@@ -132,11 +134,31 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Nexus One', 'NexusOne', 'Nexus-One'))) {
+        if (!$this->_utils->checkIfContains(' X7G ')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Pearl');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Pearl' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**
@@ -147,5 +169,19 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

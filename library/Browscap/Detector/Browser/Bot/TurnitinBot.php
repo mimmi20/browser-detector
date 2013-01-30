@@ -109,10 +109,6 @@ class TurnitinBot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('TurnitinBot'))) {
             return false;
         }

@@ -222,7 +222,7 @@ class MicrosoftOffice extends BrowserHandler
     protected function _mapVersion($version)
     {
         if (15 == (int) $version) {
-            return '2012';
+            return '2013';
         }
         
         if (14 == (int) $version) {

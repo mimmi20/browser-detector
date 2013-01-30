@@ -73,7 +73,7 @@ class LgGt540 extends LgBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'G540',
+        'model_name'                => 'GT540',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',

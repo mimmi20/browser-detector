@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Desktop;
+namespace Browscap\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3

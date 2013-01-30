@@ -155,6 +155,7 @@ class Chrome extends Chromium
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMinorVersion(true);
         
         $searches = array('Chrome', 'CrMo', 'CriOS');
         

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -41,6 +41,8 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +53,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
+class SonyEricssonX10 extends SonyBase
 {
     /**
      * the detected browser properties
@@ -59,7 +61,7 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -71,17 +73,17 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Nexus One',
+        'model_name'                => 'X10',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Google',
+        'manufacturer_name'         => 'SonyEricsson',
+        'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -101,25 +103,25 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => true, // wurflkey: sonyericsson_x10i_ver1_suban23
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 100,
-        'columns'                => 15,
-        'rows'                   => 12,
+        'physical_screen_width'  => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
+        'physical_screen_height' => 60,
+        'columns'                => 44,
+        'rows'                   => 32,
         'max_image_width'        => 320,
-        'max_image_height'       => 720,
+        'max_image_height'       => 480,
         'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_height'      => 854,
         'dual_orientation'       => true,
     );
     
@@ -132,7 +134,11 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Nexus One', 'NexusOne', 'Nexus-One'))) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonX10', 'X10'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('SonyEricssonX10i', 'SonyEricssonX10a', 'X10i', 'X10a'))) {
             return false;
         }
         
@@ -147,5 +153,17 @@ class SamsungGalaxyNexusOne extends SamsungGalaxyNexus
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 }

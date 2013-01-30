@@ -76,7 +76,7 @@ class MobistelCynusT1 extends MobistelBase
         'model_name'                => 'Cynus T1',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Mobistel',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Mobistel',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

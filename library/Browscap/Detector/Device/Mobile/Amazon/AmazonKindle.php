@@ -137,7 +137,7 @@ class AmazonKindle extends AmazonBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Kindle Fire', 'KFTT'))) {
+        if ($this->_utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT'))) {
             return false;
         }
         

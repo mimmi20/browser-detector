@@ -134,7 +134,7 @@ class VodafoneSmartTabIi10 extends LenovoBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('ThinkPad Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('Vodafone SmartTab II 10'))) {
             return false;
         }
         

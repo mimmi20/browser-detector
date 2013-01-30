@@ -77,7 +77,7 @@ class SamsungGts5380 extends SamsungBase
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
-        'model_extra_info'          => null,
+        'model_extra_info'          => 'Brazilian market',
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
@@ -103,7 +103,7 @@ class SamsungGts5380 extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class SamsungGts5380 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 20,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 280,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
     );
     
     /**

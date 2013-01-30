@@ -41,10 +41,13 @@ namespace Browscap\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
+/**
+ * Handler Base class
+ */
 use \Browscap\Detector\BrowserHandler;
 
 /**
- * ChromeUserAgentHandler
+ * MSIEAgentHandler
  *
  *
  * @category  Browscap
@@ -53,7 +56,7 @@ use \Browscap\Detector\BrowserHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Chromium extends BrowserHandler
+class MicrosoftInternetExplorer extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -75,18 +78,18 @@ class Chromium extends BrowserHandler
         // device
         // 'model_name'                => null,
         // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
+        // 'brand_name'                => 'Microsoft',
         // 'model_extra_info'          => null,
         // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
+        'has_qwerty_keyboard'       => true,
+        // 'pointing_method'           => 'mouse',
         'device_claims_web_support' => true,
         
         // browser
-        'mobile_browser'              => 'Chromium',
+        'mobile_browser'              => 'Internet Explorer',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Google', // not in wurfl
+        'mobile_browser_manufacturer' => 'Microsoft', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -104,6 +107,24 @@ class Chromium extends BrowserHandler
         'can_assign_phone_number'   => false,
     );
     
+    private $_patterns = array(
+        '/Mozilla\/5\.0 \(.*MSIE 10\.0.*/' => '10.0',
+        '/Mozilla\/5\.0 \(.*MSIE 9\.0.*/'  => '9.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'  => '8.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'  => '7.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'  => '6.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'  => '5.5',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/' => '5.23',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.22.*/' => '5.22',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/' => '5.01',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'  => '5.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/' => '4.01',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.0.*/'  => '4.0',
+        '/Mozilla\/.*\(.*MSIE 3\..*/'          => '3.0',
+        '/Mozilla\/.*\(.*MSIE 2\..*/'          => '2.0',
+        '/Mozilla\/.*\(.*MSIE 1\..*/'          => '1.0'
+    );
+    
     /**
      * Returns true if this handler can handle the given user agent
      *
@@ -115,26 +136,54 @@ class Chromium extends BrowserHandler
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Chrome', 'Chromium'))) {
+        if (!$this->_utils->checkIfContains('MSIE')) {
             return false;
         }
         
-        $isNotReallyAnChromium = array(
-            // using also the KHTML rendering engine
+        $isNotReallyAnIE = array(
+            'Gecko',
+            'Presto',
+            'Webkit',
+            'KHTML',
+            // using also the Trident rendering engine
+            'Avant Browser',
+            'Crazy Browser',
             'Flock',
             'Galeon',
             'Lunascape',
-            'Iron',
-            'Maemo',
+            'Maxthon',
+            'MyIE',
+            'Opera',
             'PaleMoon',
-            'Rockmelt'
+            // other Browsers
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV',
+            'ArgClrInt',
+            'Firefox',
+            'MSIECrawler',
+            // Fakes
+            'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnChromium)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnIE)
+            && !$this->_utils->checkIfContains('Bitte Mozilla Firefox verwenden')
+        ) {
             return false;
         }
         
-        return true;
+        foreach (array_keys($this->_patterns) as $pattern) {
+            if (preg_match($pattern, $this->_useragent)) {
+                return true;
+            }
+        }
+        
+        return false;
     }
     
     /**
@@ -146,12 +195,30 @@ class Chromium extends BrowserHandler
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMinorVersion(true);
+        $detector->ignoreMicroVersion(true);
         
-        $searches = array('Chromium');
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            $this->setCapability(
+                'mobile_browser_version', $detector->setVersion($matches[1])
+            );
+            
+            return $this;
+        }
+        
+        foreach ($this->_patterns as $pattern => $version) {
+            if (preg_match($pattern, $this->_useragent)) {
+                $this->setCapability(
+                    'mobile_browser_version', $detector->setVersion($version)
+                );
+                
+                return $this;
+            }
+        }
         
         $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
+            'mobile_browser_version', $detector->setVersion('')
         );
         
         return $this;
@@ -164,7 +231,7 @@ class Chromium extends BrowserHandler
      */
     public function getWeight()
     {
-        return 149475;
+        return 175451664;
     }
     
     /**
@@ -175,7 +242,7 @@ class Chromium extends BrowserHandler
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler = new \Browscap\Detector\Engine\Trident();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

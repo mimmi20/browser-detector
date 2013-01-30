@@ -132,7 +132,17 @@ class HtcZ715eSensationXeBeats extends HtcSensationXe
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC Sensation XE Beats', 'HTC_SensationXE_Beats', 'HTC Sensation XE with Beats', 'HTC Sensation XE Beats Z715e', 'HTC_SensationXE_Beats_Z715e', 'HTC Sensation XE with Beats Audio Z715e', 'SensationXE_Beats_Z715e'))) {
+        $phones = array(
+            'HTC Sensation XE Beats',
+            'HTC_SensationXE_Beats',
+            'HTC Sensation XE with Beats',
+            'HTC Sensation XE Beats Z715e',
+            'HTC_SensationXE_Beats_Z715e',
+            'HTC Sensation XE with Beats Audio Z715e',
+            'SensationXE_Beats_Z715e'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
             return false;
         }
         
