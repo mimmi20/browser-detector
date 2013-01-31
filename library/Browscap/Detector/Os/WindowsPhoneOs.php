@@ -137,7 +137,7 @@ class WindowsPhoneOs extends OsHandler
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Windows Phone OS');
+        $searches = array('Windows Phone OS', 'Windows Phone');
         
         $this->setCapability(
             'device_os_version', 

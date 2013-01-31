@@ -41,6 +41,8 @@ namespace Browscap\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Browser\General\CfNetwork as CfNetworkBase;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +53,7 @@ namespace Browscap\Detector\Browser\General;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Billigfluegefinal extends CfNetwork
+class Billigfluegefinal extends CfNetworkBase
 {
     /**
      * the detected browser properties

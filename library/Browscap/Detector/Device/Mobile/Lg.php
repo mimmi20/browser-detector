@@ -141,7 +141,8 @@ class Lg extends GeneralMobile
             'Optimus-',
             ' p990 ',
             ' GT540 ',
-            ' GT-540 '
+            ' GT-540 ',
+            'Nexus 4'
         );
         
         if (!$this->_utils->checkIfContains($lgPhones)) {

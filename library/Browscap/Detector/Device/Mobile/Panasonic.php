@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Acer;
+namespace Browscap\Detector\Device\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Acer;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
+use \Browscap\Detector\Device\GeneralMobile;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AcerE310 extends AcerBase
+class Panasonic extends GeneralMobile
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class AcerE310 extends AcerBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_e310_ver1_suban221', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,13 +73,13 @@ class AcerE310 extends AcerBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Acer E310',   // wurflkey: acer_e310_ver1_suban221
+        'model_name'                => 'general Panasonic Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'Acer',
+        'manufacturer_name'         => 'Panasonic',
+        'brand_name'                => 'Panasonic',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
-        'has_qwerty_keyboard'       => false,         // wurflkey: acer_e310_ver1_suban221
+        'marketing_name'            => null,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -103,7 +103,7 @@ class AcerE310 extends AcerBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class AcerE310 extends AcerBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 60,
-        'rows'                   => 24,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
-        'dual_orientation'       => true,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
     );
     
     /**
@@ -134,21 +134,11 @@ class AcerE310 extends AcerBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('E310')) {
+        if (!$this->_utils->checkIfContains(array('Panasonic', ' dL1 '))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
     
     /**
@@ -160,6 +150,49 @@ class AcerE310 extends AcerBase
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Panasonic');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Panasonic' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new \Browscap\Detector\Os\Symbianos(),
+            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Java(),
+            new \Browscap\Detector\Os\WindowsMobileOs(),
+            new \Browscap\Detector\Os\WindowsPhoneOs(),
+            new \Browscap\Detector\Os\Linux()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return parent::getWeight() + 5;
     }
 }

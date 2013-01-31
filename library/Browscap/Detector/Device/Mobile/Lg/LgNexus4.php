@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Acer;
+namespace Browscap\Detector\Device\Mobile\Lg;
 
 /**
  * PHP version 5.3
@@ -25,13 +25,13 @@ namespace Browscap\Detector\Device\Mobile\Acer;
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+ * ARE DISCLAIMED. IN NO Nexus 4NT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
  * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
  * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
  * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * INTERRUPTION) HOWNexus 4R CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, Nexus 4N IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  Browscap
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Acer;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
+use \Browscap\Detector\Device\Mobile\Lg as LgBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AcerE310 extends AcerBase
+class LgNexus4 extends LgBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class AcerE310 extends AcerBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_e310_ver1_suban221', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,13 +73,13 @@ class AcerE310 extends AcerBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Acer E310',   // wurflkey: acer_e310_ver1_suban221
+        'model_name'                => 'Nexus 4',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'Acer',
+        'manufacturer_name'         => 'LG',
+        'brand_name'                => 'Google',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
-        'has_qwerty_keyboard'       => false,         // wurflkey: acer_e310_ver1_suban221
+        'marketing_name'            => 'Nexus 4',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -114,27 +114,27 @@ class AcerE310 extends AcerBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
+        'physical_screen_width'  => 62,
+        'physical_screen_height' => 103,
         'columns'                => 60,
-        'rows'                   => 24,
+        'rows'                   => 40,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
+        'resolution_width'       => 768,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
     );
     
     /**
      * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Nexus 4rything that has not been trapped by a previous handler
      *
      * @param string $this->_useragent
      * @return boolean always true
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('E310')) {
+        if (!$this->_utils->checkIfContains(array('Nexus 4'))) {
             return false;
         }
         

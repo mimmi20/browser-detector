@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Acer;
+namespace Browscap\Detector\Device\Mobile\Motorola;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Acer;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
+use \Browscap\Detector\Device\Mobile\Motorola as MotorolaBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AcerE310 extends AcerBase
+class MotorolaXt925 extends MotorolaBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class AcerE310 extends AcerBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_e310_ver1_suban221', // not in wurfl
+        'wurflKey' => 'mot_xt925_ver1_subuamot', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,17 +73,17 @@ class AcerE310 extends AcerBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Acer E310',   // wurflkey: acer_e310_ver1_suban221
+        'model_name'                => 'XT925',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'Acer',
+        'manufacturer_name'         => 'Motorola',
+        'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
-        'has_qwerty_keyboard'       => false,         // wurflkey: acer_e310_ver1_suban221
+        'marketing_name'            => null,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Motorola', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -108,7 +108,7 @@ class AcerE310 extends AcerBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motoxt925/Profile/motoxt925.rdf',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -116,12 +116,12 @@ class AcerE310 extends AcerBase
         // display
         'physical_screen_width'  => 34,
         'physical_screen_height' => 50,
-        'columns'                => 60,
-        'rows'                   => 24,
+        'columns'                => 25,
+        'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
         'dual_orientation'       => true,
     );
     
@@ -134,7 +134,7 @@ class AcerE310 extends AcerBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('E310')) {
+        if (!$this->_utils->checkIfContains(array('MOT-XT925', 'XT925'))) {
             return false;
         }
         

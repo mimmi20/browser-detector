@@ -157,7 +157,7 @@ class Samsung extends GeneralMobile
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Asus', 'U30GT', 'Nexus 7'))) {
+        if ($this->_utils->checkIfContains(array('Asus', 'U30GT', 'Nexus 7', 'Nexus 4'))) {
             return false;
         }
         

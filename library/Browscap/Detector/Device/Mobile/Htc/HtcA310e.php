@@ -134,7 +134,16 @@ class HtcA310e extends HtcBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC/Explorer', 'HTC_Explorer', 'HTC/Explorer/A310e', 'HTC_Explorer_A310e', 'HTC_A310e'))) {
+        $phones = array(
+            'HTC/Explorer',
+            'HTC_Explorer',
+            'HTC/Explorer/A310e',
+            'HTC_Explorer_A310e',
+            'HTC_A310e',
+            'HTC Explorer A310e'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
             return false;
         }
         

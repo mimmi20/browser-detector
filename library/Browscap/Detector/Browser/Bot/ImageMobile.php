@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Browser\General\CfNetwork;
+use \Browscap\Detector\Browser\General\CfNetwork as CfNetworkBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Browser\General\CfNetwork;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class ImageMobile extends CfNetwork
+class ImageMobile extends CfNetworkBase
 {
     /**
      * the detected browser properties

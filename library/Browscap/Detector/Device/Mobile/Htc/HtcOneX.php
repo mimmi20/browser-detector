@@ -132,11 +132,11 @@ class HtcOneX extends HtcOne
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC One X', 'HTC_One_X', 'HTC/One_X'))) {
+        if (!$this->_utils->checkIfContains(array('HTC One X', 'HTC_One_X', 'HTC/One_X', 'HTC_OneX'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('HTC One XL', 'HTC_One_XL', 'HTC/One_XL'))) {
+        if ($this->_utils->checkIfContains(array('HTC One XL', 'HTC_One_XL', 'HTC/One_XL', 'HTC One X+', 'HTC_One_X+', 'HTC/One_X+', 'HTC_OneXplus'))) {
             return false;
         }
         

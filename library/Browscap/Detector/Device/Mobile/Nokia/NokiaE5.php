@@ -138,7 +138,7 @@ class NokiaE5 extends NokiaBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaE50', 'NokiaE51', 'NokiaE52', 'NokiaE55', 'NokiaE56'))) {
+        if ($this->_utils->checkIfContains(array('NokiaE50', 'NokiaE51', 'NokiaE52', 'NokiaE55', 'NokiaE56', 'NokiaE5-'))) {
             return false;
         }
         

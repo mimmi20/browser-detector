@@ -41,8 +41,6 @@ namespace Browscap\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Browser\General\CfNetwork;
-
 /**
  * CatchAllUserAgentHandler
  *

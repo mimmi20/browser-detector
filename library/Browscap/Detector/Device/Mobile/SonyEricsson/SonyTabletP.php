@@ -73,12 +73,12 @@ class SonyTabletP extends SonyBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Tablet P',
+        'model_name'                => 'SGPT211',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Tablet P',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -114,15 +114,15 @@ class SonyTabletP extends SonyBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 127,
+        'physical_screen_height' => 60,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**

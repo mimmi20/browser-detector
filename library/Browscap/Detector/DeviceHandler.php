@@ -43,6 +43,9 @@ namespace Browscap\Detector;
 
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * WURFL_Handlers_Handler is the base class that combines the classification of
@@ -288,12 +291,17 @@ abstract class DeviceHandler implements MatcherInterface
     }
     
     /**
-     * detect the bits of the cpu which is build into the device
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
      *
      * @return DeviceHandler
      */
-    protected function _detectProperties()
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
+        $browser->detectDependProperties($engine, $os);
+        $os->detectDependProperties($browser, $engine);
+        
         return $this;
     }
     

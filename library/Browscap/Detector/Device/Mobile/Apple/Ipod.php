@@ -42,6 +42,10 @@ namespace Browscap\Detector\Device\Mobile\Apple;
  */
 
 use \Browscap\Detector\Device\Mobile\Apple as AppleBase;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 
 /**
  * CatchAllUserAgentHandler
@@ -161,5 +165,26 @@ class Ipod extends AppleBase
     public function getWeight()
     {
         return 381078;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORONLY);
+        
+        if (6 <= $osVersion) {
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
+        }
+        
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        return $this;
     }
 }

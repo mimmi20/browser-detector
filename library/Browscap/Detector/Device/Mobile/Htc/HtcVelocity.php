@@ -138,6 +138,10 @@ class HtcVelocity extends HtcBase
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('Velocity 4G'))) {
+            return false;
+        }
+        
         return true;
     }
     

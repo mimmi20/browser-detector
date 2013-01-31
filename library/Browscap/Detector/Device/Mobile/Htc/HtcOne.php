@@ -138,7 +138,7 @@ class HtcOne extends HtcBase
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('HTC One ', 'HTC_One_', 'HTC/One_'))) {
+        if ($this->_utils->checkIfContains(array('HTC One ', 'HTC_One_', 'HTC/One_', 'HTC_OneX'))) {
             return false;
         }
         
