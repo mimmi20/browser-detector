@@ -195,4 +195,49 @@ class GeneralMobile extends DeviceHandler
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the device version or the user 
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _parseProperties()
+    {
+        if ($this->checkIfContains(array('Android; Tablet'))) {
+            $this->setCapability('is_tablet', true);
+            
+            $this->setCapability('physical_screen_width', 112);
+            $this->setCapability('physical_screen_height', 187);
+            $this->setCapability('columns', 40);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 320);
+            $this->setCapability('max_image_height', 400);
+            $this->setCapability('resolution_width', 480);
+            $this->setCapability('resolution_height', 800);
+            $this->setCapability('dual_orientation', true);
+            $this->setCapability('can_assign_phone_number', false);
+            
+            $this->setCapability('wurflKey', null);
+        }
+        
+        if ($this->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            $this->setCapability('is_tablet', false);
+            
+            $this->setCapability('physical_screen_width', 50);
+            $this->setCapability('physical_screen_height', 84);
+            $this->setCapability('columns', 12);
+            $this->setCapability('rows', 20);
+            $this->setCapability('max_image_width', 320);
+            $this->setCapability('max_image_height', 480);
+            $this->setCapability('resolution_width', 480);
+            $this->setCapability('resolution_height', 800);
+            $this->setCapability('dual_orientation', true);
+            $this->setCapability('can_assign_phone_number', true);
+            
+            $this->setCapability('wurflKey', 'generic_ms_phone_os7_5_desktopmode');
+        }
+        
+        return $this;
+    }
 }

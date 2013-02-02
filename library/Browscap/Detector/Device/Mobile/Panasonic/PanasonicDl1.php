@@ -150,15 +150,7 @@ class PanasonicDl1 extends GeneralMobile
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Panasonic');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Panasonic' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**

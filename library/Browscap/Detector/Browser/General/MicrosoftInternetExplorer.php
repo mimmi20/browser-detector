@@ -167,6 +167,9 @@ class MicrosoftInternetExplorer extends BrowserHandler
             'ArgClrInt',
             'Firefox',
             'MSIECrawler',
+            // mobile IE
+            'XBLWP7',
+            'ZuneWP7',
             // Fakes
             'Mac; Mac OS '
         );

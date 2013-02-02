@@ -148,4 +148,26 @@ class AcerIconiaA500 extends AcerIconia
     {
         return 3;
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORONLY);
+        
+        if (3 == $osVersion) {
+            // $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 768);
+            $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml');
+        }
+        
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        return $this;
+    }
 }
