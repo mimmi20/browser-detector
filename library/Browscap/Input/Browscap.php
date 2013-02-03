@@ -87,8 +87,6 @@ class Browscap extends Core
     {
         // default data file
         $this->setLocaleFile(__DIR__ . '/../data/browscap.ini');
-        
-        parent::__construct();
     }
 
     /**
