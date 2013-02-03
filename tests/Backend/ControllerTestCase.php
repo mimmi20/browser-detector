@@ -77,7 +77,7 @@ class ControllerTestCase extends \Zend\Test\PHPUnit\ControllerTestCase
         );
 
         $this->bootstrap = $this->_application->bootstrap();
-
+        ini_set('memory_limit', '3072M');
         $layout = \Zend\Layout\Layout::getMvcInstance();
         $this->_viewRenderer = $layout->getView();
 

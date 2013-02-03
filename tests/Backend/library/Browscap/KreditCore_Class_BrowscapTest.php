@@ -58,6 +58,7 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
         \Zend\Registry::set('_useAbsolteUrl', false);
 
         $this->object = new \Browscap\Input\Browscap();
+        ini_set('memory_limit', '3072M');
     }
 
     /**
