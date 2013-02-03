@@ -81,7 +81,7 @@ class SamsungGts5230w extends SamsungGts5230
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => false,  // wurflkey: samsung_gt_s5230w_ver1
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM9', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -106,7 +106,7 @@ class SamsungGts5230w extends SamsungGts5230
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5230W.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -118,8 +118,8 @@ class SamsungGts5230w extends SamsungGts5230
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
         'dual_orientation'       => null,
     );
     

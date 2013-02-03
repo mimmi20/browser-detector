@@ -81,7 +81,7 @@ class SamsungGtp1000N extends SamsungGtp1000
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -106,7 +106,7 @@ class SamsungGtp1000N extends SamsungGtp1000
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P1000N.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -114,12 +114,12 @@ class SamsungGtp1000N extends SamsungGtp1000
         // display
         'physical_screen_width'  => null,
         'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
+        'columns'                => 25,
+        'rows'                   => 21,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => null,
     );
     

@@ -83,7 +83,7 @@ class SamsungGts8500 extends SamsungBase
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => false,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Cortex-A8', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,

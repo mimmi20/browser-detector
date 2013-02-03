@@ -83,7 +83,7 @@ class SamsungGtn7105 extends SamsungBase
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -108,7 +108,7 @@ class SamsungGtn7105 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-N7105.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -120,8 +120,8 @@ class SamsungGtn7105 extends SamsungBase
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => null,
     );
     

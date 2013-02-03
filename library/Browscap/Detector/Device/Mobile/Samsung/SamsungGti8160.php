@@ -83,7 +83,7 @@ class SamsungGti8160 extends SamsungBase
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,

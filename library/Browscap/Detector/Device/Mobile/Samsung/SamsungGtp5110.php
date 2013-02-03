@@ -83,7 +83,7 @@ class SamsungGtp5110 extends SamsungBase
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -108,7 +108,7 @@ class SamsungGtp5110 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P5100.xml',
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P5110.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

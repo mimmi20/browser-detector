@@ -116,12 +116,12 @@ class SamsungGtp3113 extends SamsungBase
         // display
         'physical_screen_width'  => null,
         'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
+        'columns'                => 25,
+        'rows'                   => 21,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => null,
     );
     

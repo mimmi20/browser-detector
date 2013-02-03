@@ -108,7 +108,7 @@ class SamsungGts8600 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S8600.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

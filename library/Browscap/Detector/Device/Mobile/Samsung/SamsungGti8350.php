@@ -108,7 +108,7 @@ class SamsungGti8350 extends SamsungBase
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I8350.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -120,8 +120,8 @@ class SamsungGti8350 extends SamsungBase
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
         'dual_orientation'       => null,
     );
     
