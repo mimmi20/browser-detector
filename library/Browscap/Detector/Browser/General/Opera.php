@@ -141,6 +141,7 @@ class Opera extends BrowserHandler
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMicroVersion(true);
         
         $searches = array('Version', 'Opera');
         

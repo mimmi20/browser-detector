@@ -204,7 +204,7 @@ class GeneralMobile extends DeviceHandler
      */
     protected function _parseProperties()
     {
-        if ($this->checkIfContains(array('Android; Tablet'))) {
+        if ($this->_utils->checkIfContains(array('Android; Tablet'))) {
             $this->setCapability('is_tablet', true);
             
             $this->setCapability('physical_screen_width', 112);
@@ -221,7 +221,7 @@ class GeneralMobile extends DeviceHandler
             $this->setCapability('wurflKey', null);
         }
         
-        if ($this->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->setCapability('is_tablet', false);
             
             $this->setCapability('physical_screen_width', 50);

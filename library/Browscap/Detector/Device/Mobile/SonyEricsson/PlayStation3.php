@@ -76,7 +76,7 @@ class PlayStation3 extends SonyBase
         'model_name'                => 'PlayStation 3',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

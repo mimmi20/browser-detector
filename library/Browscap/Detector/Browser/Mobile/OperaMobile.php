@@ -133,6 +133,7 @@ class OperaMobile extends BrowserHandler
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMicroVersion(true);
         
         $doMatch = preg_match(
             '/Version\/([\d\.]+)/', $this->_useragent, $matches
