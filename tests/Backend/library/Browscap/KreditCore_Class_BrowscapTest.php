@@ -4,7 +4,7 @@
 /** @see PHPUnit_Framework_TestCase */
 require_once 'PHPUnit/Framework/TestCase.php';
 
-require_once __DIR__ . '/../../../../library/Browscap/Browscap.php';
+require_once __DIR__ . '/../../../../library/Browscap/Input/Browscap.php';
 require_once LIB_PATH . '/Zend/Db/Db.php';
 
 /**
@@ -57,7 +57,7 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
         \Zend\Registry::set('_urlDirInfo', $home);
         \Zend\Registry::set('_useAbsolteUrl', false);
 
-        $this->object = new \Browscap\Browscap();
+        $this->object = new \Browscap\Input\Browscap();
     }
 
     /**

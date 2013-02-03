@@ -4,7 +4,7 @@
 /** @see PHPUnit_Framework_TestCase */
 require_once 'PHPUnit/Framework/TestCase.php';
 
-require_once __DIR__ . '/../../../../library/Browscap/UserAgent.php';
+require_once __DIR__ . '/../../../../library/Browscap/Input/UserAgent.php';
 require_once LIB_PATH . '/Zend/Db/Db.php';
 
 /**
@@ -57,7 +57,7 @@ class KreditCore_Class_UserAgentTest extends PHPUnit_Framework_TestCase
         \Zend\Registry::set('_urlDirInfo', $home);
         \Zend\Registry::set('_useAbsolteUrl', false);
 
-        $this->object = new \Browscap\UserAgent();
+        $this->object = new \Browscap\Input\UserAgent();
     }
 
     /**
@@ -132,10 +132,10 @@ class KreditCore_Class_UserAgentTest extends PHPUnit_Framework_TestCase
         $frames, $iframes, $tables, $cookies, $bgsound, $javascript, $vbscript,
         $java, $activex, $synreader, $pdf, $rss)
     {
-        $this->assertInstanceOf('Browscap\\UserAgent', $result);
+        $this->assertInstanceOf('Browscap\\Detector\\Result', $result);
 
         //echo "\n";var_dump("'$browser' : '" . $result->getBrowserName() . "'", "'$browserVersion' : '" . $result->getVersion() . "'", "'$platform' : '" . $result->getPlatform() . "'", "'$platformVersion' : '" . $result->getPlatformVersion() . "'");echo "\n";
-        $this->assertSame($agent, $result->getAgent());
+        //$this->assertSame($agent, $result->getAgent());
         $this->assertSame($device, $result->getFullDevice(true));
         $this->assertSame($mobile, $result->isMobileDevice(), "mobile mismatch");
         $this->assertSame($tablet, $result->isTablet(), 'tablet mismatch');
@@ -143,9 +143,9 @@ class KreditCore_Class_UserAgentTest extends PHPUnit_Framework_TestCase
         $this->assertSame($desktop, $result->isDesktop(), 'desktop mismatch');
         $this->assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
         $this->assertSame($browser, $result->getBrowserName());
-        $this->assertSame($browserVersion, $result->getVersion());
+        $this->assertSame($browserVersion, $result->getVersion()->getVersion(\Browscap\Detector\Version::FULLVERSION));
         $this->assertSame($platform, $result->getPlatform());
-        $this->assertSame($platformVersion, $result->getPlatformVersion());
+        $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\Browscap\Detector\Version::FULLVERSION));
         $this->assertSame($frames, $result->supportsFrames(), 'frames mismatch');
         $this->assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
         $this->assertSame($tables, $result->supportsTables(), 'tables mismatch');
