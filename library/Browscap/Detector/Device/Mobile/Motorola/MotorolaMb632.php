@@ -194,7 +194,7 @@ class MotorolaMb632 extends MotorolaBase
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Mobile\Android(),
+            new \Browscap\Detector\Os\Android(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

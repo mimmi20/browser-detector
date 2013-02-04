@@ -91,6 +91,13 @@ class Browscap
     private $_result = null;
     
     /**
+     * the file used in INI mode
+     *
+     * @var string
+     */
+    private $_localFile = null;
+    
+    /**
      * sets the cache used to make the detection faster
      *
      * @param \Zend\Cache\Frontend\Core $cache
@@ -174,6 +181,18 @@ class Browscap
     }
 
     /**
+     * sets the name of the local file
+     *
+     * @param string $file the file name
+     *
+     * @return void
+     */
+    public function setLocaleFile($file)
+    {
+        $this->_localFile = $file;
+    }
+
+    /**
      * Gets the information about the browser by User Agent
      *
      * @param string  $userAgent the user agent string
@@ -202,6 +221,12 @@ class Browscap
         }
         
         if ($forceDetect || !$result) {
+            if (null !== $this->_localFile 
+                && $this->_interface instanceof \Browscap\Input\Browscap
+            ) {
+                $this->_interface->setLocaleFile($file);
+            }
+            
             $this->_interface->setCache($this->_cache)
                 ->setCachePrefix($this->_cachePrefix)
                 ->setAgent($this->_agent)

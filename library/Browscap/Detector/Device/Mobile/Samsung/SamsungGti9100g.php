@@ -180,7 +180,7 @@ class SamsungGti9100g extends SamsungGti9100
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Mobile\Android(),
+            new \Browscap\Detector\Os\Android(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

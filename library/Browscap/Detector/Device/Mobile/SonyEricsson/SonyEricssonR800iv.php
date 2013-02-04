@@ -180,7 +180,7 @@ class SonyEricssonR800iv extends SonyEricssonR800i
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Mobile\Android(),
+            new \Browscap\Detector\Os\Android(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         
