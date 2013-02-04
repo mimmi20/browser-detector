@@ -107,12 +107,6 @@ class Tasman extends EngineHandler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/') 
-            && !$this->_utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
-        ) {
-            return false;
-        }
-        
         $noTridentEngines = array(
             'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
             'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Trident'
@@ -122,7 +116,13 @@ class Tasman extends EngineHandler
             return false;
         }
         
-        return true;
+        if ($this->_utils->checkIfStartsWith('Mozilla/') 
+            && $this->_utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
+        ) {
+            return true;
+        }
+        
+        return false;
     }
     
     /**

@@ -219,6 +219,8 @@ class GeneralMobile extends DeviceHandler
             $this->setCapability('can_assign_phone_number', false);
             
             $this->setCapability('wurflKey', null);
+            
+            return $this;
         }
         
         if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
@@ -236,6 +238,27 @@ class GeneralMobile extends DeviceHandler
             $this->setCapability('can_assign_phone_number', true);
             
             $this->setCapability('wurflKey', 'generic_ms_phone_os7_5_desktopmode');
+            
+            return $this;
+        }
+        
+        if ($this->_utils->checkIfContains(array('Opera Mobi'))) {
+            $this->setCapability('is_tablet', false);
+            
+            $this->setCapability('physical_screen_width', 34);
+            $this->setCapability('physical_screen_height', 50);
+            $this->setCapability('columns', 60);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 320);
+            $this->setCapability('max_image_height', 400);
+            $this->setCapability('resolution_width', 320);
+            $this->setCapability('resolution_height', 480);
+            $this->setCapability('dual_orientation', true);
+            $this->setCapability('can_assign_phone_number', true);
+            
+            $this->setCapability('wurflKey', null);
+            
+            return $this;
         }
         
         return $this;

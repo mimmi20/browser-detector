@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
+use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGti9010GalaxyS extends SamsungBase
+class SonyST21i2 extends SonyBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class SamsungGti9010GalaxyS extends SamsungBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sony_st21iv_ver1_subuai2', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,17 +73,17 @@ class SamsungGti9010GalaxyS extends SamsungBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT-I9010',
+        'model_name'                => 'ST21i2',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
+        'manufacturer_name'         => 'Sony',
+        'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy S',
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'Xperia Tipo Dual',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => 'ARM11', // not in wurfl
+        'device_cpu'                => null, // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -103,12 +103,12 @@ class SamsungGti9010GalaxyS extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-i9010.xml',
+        'uaprof'                    => 'http://uaprof.sonymobile.com/ST21i2R402.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -116,12 +116,12 @@ class SamsungGti9010GalaxyS extends SamsungBase
         // display
         'physical_screen_width'  => null,
         'physical_screen_height' => null,
-        'columns'                => 25,
-        'rows'                   => 21,
+        'columns'                => null,
+        'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
         'dual_orientation'       => null,
     );
     
@@ -134,11 +134,7 @@ class SamsungGti9010GalaxyS extends SamsungBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Galaxy S', 'Galaxy-S'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('GT-I9010L', 'GT-I9010P'))) {
+        if (!$this->_utils->checkIfContains(array('SonyST21i2', 'ST21i2'))) {
             return false;
         }
         

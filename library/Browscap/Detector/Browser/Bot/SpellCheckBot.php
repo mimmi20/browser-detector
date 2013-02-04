@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Htc;
+namespace Browscap\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -51,7 +51,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcOneXplus extends HtcOneX
+class SpellCheckBot extends GeneralBot
 {
     /**
      * the detected browser properties
@@ -62,31 +62,29 @@ class HtcOneXplus extends HtcOneX
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
+        // 'is_wireless_device' => null,
+        // 'is_tablet'          => null,
+        'is_bot'             => true,
+        // 'is_smarttv'         => null,
+        // 'is_console'         => null,
+        // 'ux_full_desktop'    => null,
+        'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'One X+',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'HTC',
-        'brand_name'                => 'HTC',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => 'nVidia Tegra 3 1,7 GHz, Quad-Core', // not in wurfl
+        // 'model_name'                => null,
+        // 'manufacturer_name'         => null,
+        // 'brand_name'                => null,
+        // 'model_extra_info'          => null,
+        // 'marketing_name'            => null,
+        // 'has_qwerty_keyboard'       => null,
+        // 'pointing_method'           => null,
+        'device_claims_web_support' => false,
         
         // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
+        'mobile_browser'              => 'SpellCheck Bot',
+        'mobile_browser_version'      => null,
+        'mobile_browser_bits'         => null, // not in wurfl
+        'mobile_browser_manufacturer' => 'showword.info', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -100,43 +98,41 @@ class HtcOneXplus extends HtcOneX
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
+        'can_skip_aligned_link_row' => false,
         'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 720,
-        'resolution_height'      => 1280,
-        'dual_orientation'       => null,
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC One X+', 'HTC_One_X+', 'HTC/One_X+', 'HTC_OneXplus'))) {
+        if (!$this->_utils->checkIfContains('SpellCheck Bot')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('SpellCheck Bot');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
     }
     
     /**
@@ -146,27 +142,6 @@ class HtcOneXplus extends HtcOneX
      */
     public function getWeight()
     {
-        return 3;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new \Browscap\Detector\Os\Mobile\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return 724998;
     }
 }

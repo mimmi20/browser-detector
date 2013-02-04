@@ -146,7 +146,7 @@ class Chromium extends BrowserHandler
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMinorVersion(true);
+        $detector->ignoreMicroVersion(true);
         
         $searches = array('Chromium');
         
