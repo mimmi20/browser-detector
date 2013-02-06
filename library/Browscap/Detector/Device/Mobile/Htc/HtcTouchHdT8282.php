@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lenovo;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Lenovo;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Lenovo as LenovoBase;
+use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Lenovo as LenovoBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class IdeaTab extends LenovoBase
+class HtcTouchHdT8282 extends HtcBase
 {
     /**
      * the detected browser properties
@@ -61,11 +61,11 @@ class IdeaTab extends LenovoBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_touch_hd_t8282_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,13 +73,13 @@ class IdeaTab extends LenovoBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A2109A - IdeaTab',
+        'model_name'                => 'Touch HD T8282', // wurflkey: htc_touch_hd_t8282_ver1
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Lenovo',
-        'brand_name'                => 'Lenovo',
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'BlackStone',     // wurflkey: htc_touch_hd_t8282_ver1
+        'has_qwerty_keyboard'       => false,            // wurflkey: htc_touch_hd_t8282_ver1
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -103,7 +103,7 @@ class IdeaTab extends LenovoBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class IdeaTab extends LenovoBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 83,
+        'columns'                => 16,
+        'rows'                   => 36,
+        'max_image_width'        => 440,
+        'max_image_height'       => 700,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => false,
     );
     
     /**
@@ -134,11 +134,21 @@ class IdeaTab extends LenovoBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_Touch_HD_T8282'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -151,15 +161,5 @@ class IdeaTab extends LenovoBase
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 }

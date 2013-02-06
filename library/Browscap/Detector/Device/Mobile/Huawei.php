@@ -143,7 +143,8 @@ class Huawei extends GeneralMobile
             'U8180',
             'U8650',
             'U8510',
-            'Vodafone 858'
+            'Vodafone 858',
+            'Vodafone 845'
         );
         
         if (!$this->_utils->checkIfContains($huaweiPhones)) {

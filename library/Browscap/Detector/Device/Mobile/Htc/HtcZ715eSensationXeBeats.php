@@ -139,6 +139,7 @@ class HtcZ715eSensationXeBeats extends HtcSensationXe
             'HTC Sensation XE Beats Z715e',
             'HTC_SensationXE_Beats_Z715e',
             'HTC Sensation XE with Beats Audio Z715e',
+            'HTC Sensation XE with Beats Audio',
             'SensationXE_Beats_Z715e'
         );
         

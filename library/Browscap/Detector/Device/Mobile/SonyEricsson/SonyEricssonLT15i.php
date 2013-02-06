@@ -181,6 +181,12 @@ class SonyEricssonLT15i extends SonyBase
             );
         }
         
+        if ($this->_utils->checkIfContains(array('Build/4.0.2'))) {
+            $this->setCapability(
+                'uaprof', 'http://wap.sonyericsson.com/UAprof/LT15iR402.xml'
+            );
+        }
+        
         return $this;
     }
     

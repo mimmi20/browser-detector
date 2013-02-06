@@ -61,7 +61,7 @@ class HuaweiVodafone845 extends HuaweiBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_v845_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,7 +73,7 @@ class HuaweiVodafone845 extends HuaweiBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Vodafone 858',
+        'model_name'                => 'Vodafone 845',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Huawei',
         'brand_name'                => 'Huawei',
@@ -103,7 +103,7 @@ class HuaweiVodafone845 extends HuaweiBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class HuaweiVodafone845 extends HuaweiBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 10,
+        'rows'                   => 12,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,7 +134,7 @@ class HuaweiVodafone845 extends HuaweiBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HuaweiVodafone 858', 'Vodafone 858'))) {
+        if (!$this->_utils->checkIfContains(array('Vodafone 845'))) {
             return false;
         }
         

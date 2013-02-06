@@ -103,7 +103,7 @@ class SamsungGts5230 extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class SamsungGts5230 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 67,
+        'columns'                => 20,
+        'rows'                   => 16,
+        'max_image_width'        => 228,
+        'max_image_height'       => 360,
         'resolution_width'       => 240,
         'resolution_height'      => 400,
-        'dual_orientation'       => null,
+        'dual_orientation'       => false,
     );
     
     /**

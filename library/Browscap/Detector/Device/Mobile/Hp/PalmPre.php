@@ -162,4 +162,34 @@ class PalmPre extends HpBase
     {
         return $this;
     }
+    
+    /**
+     * detects properties who are depending on the device version or the user 
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _parseProperties()
+    {
+        return $this;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMinorVersion(true);
+        
+        $searches = array('Pre');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
+        return $this;
+    }
 }

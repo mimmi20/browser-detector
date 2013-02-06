@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Htc;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcT8282 extends HtcBase
+class SamsungGts6500d extends SamsungBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class HtcT8282 extends HtcBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_t8282_ver1', // not in wurfl
+        'wurflKey' => 'samsung_gt_s6500_ver1_subuad', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,17 +73,17 @@ class HtcT8282 extends HtcBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '8282', // wurflkey: htc_t8282_ver1
+        'model_name'                => 'GT-S6500D',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'HTC',
-        'brand_name'                => 'HTC',
+        'manufacturer_name'         => 'Samsung',
+        'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Touch HD T8282', // wurflkey: htc_t8282_ver1
-        'has_qwerty_keyboard'       => false,            // wurflkey: htc_t8282_ver1
-        'pointing_method'           => 'stylus',         // wurflkey: htc_t8282_ver1
+        'marketing_name'            => null,
+        'has_qwerty_keyboard'       => false,
+        'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // browser
         // 'mobile_browser'         => null,
@@ -103,26 +103,26 @@ class HtcT8282 extends HtcBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S6500D.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 83,
-        'columns'                => 16,
-        'rows'                   => 36,
-        'max_image_width'        => 440,
-        'max_image_height'       => 700,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => false,
+        'physical_screen_width'  => 47,
+        'physical_screen_height' => 70,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,11 +134,7 @@ class HtcT8282 extends HtcBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('T8282'))) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains(array('HTC_Touch_HD_T8282'))) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG-GT-S6500D', 'GT-S6500D'))) {
             return false;
         }
         

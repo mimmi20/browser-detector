@@ -103,7 +103,7 @@ class AcerLiquidS100 extends AcerBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class AcerLiquidS100 extends AcerBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 28,
+        'rows'                   => 24,
+        'max_image_width'        => 480,
+        'max_image_height'       => 800,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -135,6 +135,10 @@ class AcerLiquidS100 extends AcerBase
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains('Liquid')) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('Liquid MT', 'Acer Liquid Metal', 'Liquid Metal')) {
             return false;
         }
         

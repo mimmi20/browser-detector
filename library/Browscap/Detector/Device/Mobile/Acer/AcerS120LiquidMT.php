@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Acer;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\Device\Mobile\Acer as AcerBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MidSerials extends GeneralMobile
+class AcerS120LiquidMetal extends AcerBase
 {
     /**
      * the detected browser properties
@@ -73,12 +73,12 @@ class MidSerials extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'MID_Serials',
+        'model_name'                => 'S120',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Acer',
+        'brand_name'                => 'Acer',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Liquid MT',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -103,7 +103,7 @@ class MidSerials extends GeneralMobile
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class MidSerials extends GeneralMobile
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 28,
+        'rows'                   => 24,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -134,11 +134,21 @@ class MidSerials extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('MID_Serials')) {
+        if (!$this->_utils->checkIfContains(array('Liquid MT'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -154,26 +164,12 @@ class MidSerials extends GeneralMobile
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns TRUE if the device is a tablet
      *
-     * @return integer
+     * @return boolean
      */
-    public function getWeight()
+    public function isTablet()
     {
-        return 3;;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return false;
     }
 }

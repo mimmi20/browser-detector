@@ -65,7 +65,7 @@ class SamsungGtp6810 extends SamsungBase
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true, // samsung_gt_p6810_ver1
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -114,15 +114,15 @@ class SamsungGtp6810 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 166, // samsung_gt_p6810_ver1
+        'physical_screen_height' => 104,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

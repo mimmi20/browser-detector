@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Asus;
+namespace Browscap\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
+use \Browscap\Detector\BrowserHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AsusA50 extends AsusBase
+class Terra extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -61,34 +61,32 @@ class AsusA50 extends AsusBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'garminasus_a50_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_wireless_device' => true,
-        'is_tablet'          => true,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
+        // 'is_wireless_device' => null,
+        // 'is_tablet'          => null,
+        'is_bot'             => false,
+        // 'is_smarttv'         => null,
+        // 'is_console'         => null,
+        // 'ux_full_desktop'    => null,
+        'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A50',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Garmin-Asus',
-        'brand_name'                => 'Garmin-Asus', // wurflkey: garminasus_a50_ver1
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,         // wurflkey: garminasus_a50_ver1
-        'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        // 'model_name'                => null,
+        // 'manufacturer_name'         => null,
+        // 'brand_name'                => null,
+        // 'model_extra_info'          => null,
+        // 'marketing_name'            => null,
+        // 'has_qwerty_keyboard'       => null,
+        // 'pointing_method'           => null,
+        'device_claims_web_support' => false,
         
         // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
+        'mobile_browser'              => 'Terra',
+        'mobile_browser_version'      => null,
+        'mobile_browser_bits'         => null, // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -102,43 +100,41 @@ class AsusA50 extends AsusBase
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
+        'can_skip_aligned_link_row' => true,
         'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Garmin-Asus A50'))) {
+        if (!$this->_utils->checkIfStartsWith(array('Terra', 'TerraFree'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('Terra', 'TerraFree', 'TerraFree\-iPad');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
     }
     
     /**
@@ -148,18 +144,20 @@ class AsusA50 extends AsusBase
      */
     public function getWeight()
     {
-        return 3;
+        return 2;
     }
     
     /**
-     * detects the device name from the given user agent
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return null|\Browscap\Os\Handler
      */
-    public function detectDevice()
+    public function detectEngine()
     {
-        return $this;
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Medion;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\Device\Mobile\Medion as MedionBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CmTenderloin extends GeneralMobile
+class MdLifeE3501 extends MedionBase
 {
     /**
      * the detected browser properties
@@ -65,7 +65,7 @@ class CmTenderloin extends GeneralMobile
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -73,10 +73,10 @@ class CmTenderloin extends GeneralMobile
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'cm_tenderloin',
+        'model_name'                => 'Life E3501',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Medion',
+        'brand_name'                => 'Medion',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -103,7 +103,7 @@ class CmTenderloin extends GeneralMobile
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -120,8 +120,8 @@ class CmTenderloin extends GeneralMobile
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => null,
     );
     
@@ -134,7 +134,7 @@ class CmTenderloin extends GeneralMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('cm_tenderloin')) {
+        if (!$this->_utils->checkIfContains('Smartphone LIFE E3501')) {
             return false;
         }
         
@@ -164,6 +164,28 @@ class CmTenderloin extends GeneralMobile
     }
     
     /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -171,9 +193,16 @@ class CmTenderloin extends GeneralMobile
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            new \Browscap\Detector\Os\Android(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
     }
 }

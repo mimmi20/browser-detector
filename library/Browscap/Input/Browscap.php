@@ -155,6 +155,13 @@ class Browscap extends Core
     
     private function _parseIni()
     {
+        if (empty($this->_localFile)) {
+            throw new Exception(
+                'please set the ini file before trying to parse it', 
+                Exception::LOCAL_FILE_MISSING
+            );
+        }
+        
         if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
             $browsers = parse_ini_file($this->_localFile, true, INI_SCANNER_RAW);
         } else {
@@ -725,6 +732,12 @@ class Browscap extends Core
      */
     public function setLocaleFile($file)
     {
+        if (empty($file)) {
+            throw new Exception(
+                'the file can not be empty', Exception::LOCAL_FILE_MISSING
+            );
+        }
+        
         $this->_localFile = $file;
     }
 

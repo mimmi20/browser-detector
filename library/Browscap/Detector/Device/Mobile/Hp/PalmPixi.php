@@ -103,7 +103,7 @@ class PalmPixi extends HpBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class PalmPixi extends HpBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 18,
+        'rows'                   => 10,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 400,
+        'dual_orientation'       => false,
     );
     
     /**
@@ -160,6 +160,43 @@ class PalmPixi extends HpBase
      */
     public function detectDevice()
     {
+        return $this;
+    }
+    
+    /**
+     * detects properties who are depending on the device version or the user 
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _parseProperties()
+    {
+        if ('1.1' == $this->getCapability('model_version')) {
+            $this->setCapability(
+                'model_name',
+                'Pixi Plus'
+            );
+        }
+        
+        return $this;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->ignoreMinorVersion(true);
+        
+        $searches = array('Pixi');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
         return $this;
     }
 }

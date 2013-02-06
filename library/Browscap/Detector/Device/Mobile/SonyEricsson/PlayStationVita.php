@@ -114,15 +114,15 @@ class PlayStationVita extends SonyBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 111,
+        'physical_screen_height' => 63,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 940,
+        'max_image_height'       => 520,
+        'resolution_width'       => 960,
+        'resolution_height'      => 544,
+        'dual_orientation'       => true,
     );
     
     /**

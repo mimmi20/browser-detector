@@ -78,9 +78,9 @@ class BlackBerry9320 extends BlackBerryBase
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'BlackBerry Curve 9320',
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'clickwheel',
+        'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -103,7 +103,7 @@ class BlackBerry9320 extends BlackBerryBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class BlackBerry9320 extends BlackBerryBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 83,
+        'physical_screen_height' => 62,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 280,
+        'resolution_width'       => 320,
+        'resolution_height'      => 280,
+        'dual_orientation'       => true,
     );
     
     /**

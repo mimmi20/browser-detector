@@ -65,7 +65,7 @@ class SamsungGtp6200 extends SamsungBase
         
         // kind of device
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -78,8 +78,8 @@ class SamsungGtp6200 extends SamsungBase
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'GALAXY Tab 7.0 Plus',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -114,15 +114,15 @@ class SamsungGtp6200 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 90,
+        'physical_screen_height' => 154,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
     );
     
     /**

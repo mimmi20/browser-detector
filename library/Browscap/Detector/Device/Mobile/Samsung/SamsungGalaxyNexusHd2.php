@@ -59,7 +59,7 @@ class SamsungGalaxyNexusHd2 extends SamsungGalaxyNexus
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_hd2_android_ver1_subuanexus', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -71,11 +71,11 @@ class SamsungGalaxyNexusHd2 extends SamsungGalaxyNexus
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Nexus HD2',
+        'model_name'                => 'HD2',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
-        'model_extra_info'          => null,
+        'model_extra_info'          => 'Nexus HD2 ROM',
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
@@ -101,7 +101,7 @@ class SamsungGalaxyNexusHd2 extends SamsungGalaxyNexus
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,15 +112,15 @@ class SamsungGalaxyNexusHd2 extends SamsungGalaxyNexus
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 94,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

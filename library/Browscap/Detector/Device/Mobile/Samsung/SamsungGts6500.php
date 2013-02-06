@@ -114,15 +114,15 @@ class SamsungGts6500 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 47,
+        'physical_screen_height' => 70,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
         'resolution_width'       => 320,
         'resolution_height'      => 480,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
     );
     
     /**
@@ -135,6 +135,10 @@ class SamsungGts6500 extends SamsungBase
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array('SAMSUNG-GT-S6500', 'GT-S6500'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('SAMSUNG-GT-S6500D', 'GT-S6500D'))) {
             return false;
         }
         

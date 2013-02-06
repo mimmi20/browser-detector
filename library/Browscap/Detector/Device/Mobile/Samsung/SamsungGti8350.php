@@ -79,7 +79,7 @@ class SamsungGti8350 extends SamsungBase
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -103,7 +103,7 @@ class SamsungGti8350 extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class SamsungGti8350 extends SamsungBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 82,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 480,
+        'max_image_height'       => 800,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
     );
     
     /**

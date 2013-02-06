@@ -61,7 +61,7 @@ class ArchosA70S extends ArchosBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'archos_a70s_ver1_sub02', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,7 +73,7 @@ class ArchosA70S extends ArchosBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A70 S',
+        'model_name'                => 'A70S', // archos_a70s_ver1_sub02
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Archos',
         'brand_name'                => 'Archos',
@@ -103,7 +103,7 @@ class ArchosA70S extends ArchosBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // archos_a70s_ver1_sub02
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,15 +114,15 @@ class ArchosA70S extends ArchosBase
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 40, // archos_a70s_ver1_sub02
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
     );
     
     /**

@@ -146,12 +146,15 @@ class HtcZ710 extends HtcBase
         }
         
         $phones = array(
+            // X315e
             'HTC/SensationXL_Beats',
             'HTC_SensationXL_Beats',
             'HTC_SensationXL_Beats_X315e', 
-            'HTC Sensation XL with Beats Audio X315e', 
+            'HTC Sensation XL with Beats Audio X315e',
             'SensationXL_Beats_X315e',
             'HTC_DesireHD_Beats_X315e',
+            // Z715e
+            'HTC Sensation XE with Beats Audio',
             'HTC Sensation XE with Beats Audio Z715e'
         );
         

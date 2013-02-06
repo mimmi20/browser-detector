@@ -223,6 +223,25 @@ class GeneralMobile extends DeviceHandler
             return $this;
         }
         
+        if ($this->_utils->checkIfContains(array('Opera Tablet'))) {
+            $this->setCapability('is_tablet', true);
+            
+            $this->setCapability('physical_screen_width', 100);
+            $this->setCapability('physical_screen_height', 200);
+            $this->setCapability('columns', 60);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 480);
+            $this->setCapability('max_image_height', 640);
+            $this->setCapability('resolution_width', 480);
+            $this->setCapability('resolution_height', 640);
+            $this->setCapability('dual_orientation', true);
+            $this->setCapability('can_assign_phone_number', true);
+            
+            $this->setCapability('wurflKey', null);
+            
+            return $this;
+        }
+        
         if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->setCapability('is_tablet', false);
             

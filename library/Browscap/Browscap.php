@@ -224,7 +224,11 @@ class Browscap
             if (null !== $this->_localFile 
                 && $this->_interface instanceof \Browscap\Input\Browscap
             ) {
-                $this->_interface->setLocaleFile($file);
+                /*
+                 * set the local file
+                 * only needed for the ini-mode
+                 */
+                $this->_interface->setLocaleFile($this->_localFile);
             }
             
             $this->_interface->setCache($this->_cache)
@@ -233,6 +237,13 @@ class Browscap
             ;
             
             $result = $this->_interface->getBrowser();
+            
+            if (!($result instanceof Detector\Result)) {
+                throw new Input\Exception(
+                    'the getBrowser Function has to return an instance of \\Browscap\\Detector\\Result', 
+                    Detector\Result::NO_RESULT_CLASS_RETURNED
+                );
+            }
             
             if (!$forceDetect 
                 && $this->_cache instanceof \Zend\Cache\Frontend\Core

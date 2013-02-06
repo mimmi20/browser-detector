@@ -134,30 +134,30 @@ class Acer extends GeneralMobile
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains(array('HTC', 'IdeaTab', 'Wildfire S A510e', 'A101IT'))) {
+        if ($this->_utils->checkIfContains(array('HTC', 'IdeaTab', 'Wildfire S A510e', 'A101IT', 'SmartTabII7'))) {
             return false;
         }
         
         $acerPhones = array(
             'Acer',
             'Iconia',
-            'A100',
-            'A101',
-            'A200',
-            'A210',
-            'A211',
-            'A500',
-            'A501',
-            'A510',
-            'A511',
-            'A700',
-            'A701',
-            'E140',
-            'E310',
-            'E320',
-            'G100W',
+            ' A100 ',
+            ' A101 ',
+            ' A200 ',
+            ' A210 ',
+            ' A211 ',
+            ' A500 ',
+            ' A501 ',
+            ' A510 ',
+            ' A511 ',
+            ' A700 ',
+            ' A701 ',
+            ' E140 ',
+            ' E310 ',
+            ' E320 ',
+            ' G100W ',
             'Stream-S110',
-            'Liquid'
+            ' Liquid '
         );
         
         if ($this->_utils->checkIfContains($acerPhones)) {

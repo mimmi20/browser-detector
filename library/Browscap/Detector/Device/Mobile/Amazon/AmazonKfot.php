@@ -162,4 +162,20 @@ class AmazonKfot extends AmazonBase
     {
         return $this;
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $browser->setCapability('is_transcoder', true);
+        
+        return $this;
+    }
 }
