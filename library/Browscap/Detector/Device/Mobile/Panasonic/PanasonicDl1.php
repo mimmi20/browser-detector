@@ -154,6 +154,38 @@ class PanasonicDl1 extends GeneralMobile
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -162,12 +194,8 @@ class PanasonicDl1 extends GeneralMobile
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Symbianos(),
             new \Browscap\Detector\Os\Android(),
-            new \Browscap\Detector\Os\Java(),
-            new \Browscap\Detector\Os\WindowsMobileOs(),
-            new \Browscap\Detector\Os\WindowsPhoneOs(),
-            new \Browscap\Detector\Os\Linux()
+            //new \Browscap\Detector\Os\FreeBsd()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -176,15 +204,5 @@ class PanasonicDl1 extends GeneralMobile
         $chain->setHandlers($os);
         
         return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return parent::getWeight() + 5;
     }
 }

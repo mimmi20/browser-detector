@@ -109,7 +109,7 @@ class TurnitinBot extends GeneralBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('TurnitinBot'))) {
+        if (!$this->_utils->checkIfContains(array('TurnitinBot', 'turnitin'))) {
             return false;
         }
         

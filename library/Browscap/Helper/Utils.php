@@ -227,7 +227,13 @@ final class Utils
     public function isMobileBrowser()
     {
         if ($this->checkIfContains($this->_mobileBrowsers, true)) {
-            if ($this->checkIfContains(array('xbox', 'badab', 'badap', 'simbar', 'google wireless transcoder', 'google-tr'), true)) {
+            $noBots = array(
+                'xbox', 'badab', 'badap', 'simbar',
+                'google wireless transcoder', 'google-tr', 'googlet', 
+                'google page speed'
+            );
+            
+            if ($this->checkIfContains($noBots, true)) {
                 return false;
             }
             

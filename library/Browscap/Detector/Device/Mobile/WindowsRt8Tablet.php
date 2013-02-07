@@ -61,7 +61,7 @@ class WindowsRt8Tablet extends GeneralMobile
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'windows_8_rt_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -79,7 +79,7 @@ class WindowsRt8Tablet extends GeneralMobile
         'brand_name'                => 'Microsoft',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'has_qwerty_keyboard'       => false, // windows_8_rt_ver1
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl

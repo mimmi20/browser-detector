@@ -142,6 +142,16 @@ class WeTab extends NeofonieBase
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+    
+    /**
      * detects the device name from the given user agent
      *
      * @param string $userAgent
@@ -154,13 +164,25 @@ class WeTab extends NeofonieBase
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
      *
-     * @return integer
+     * @return null|\Browscap\Os\Handler
      */
-    public function getWeight()
+    public function detectBrowser()
     {
-        return 3;
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
     }
     
     /**
@@ -171,9 +193,16 @@ class WeTab extends NeofonieBase
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\MeeGo();
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            new \Browscap\Detector\Os\MeeGo(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
     }
 }

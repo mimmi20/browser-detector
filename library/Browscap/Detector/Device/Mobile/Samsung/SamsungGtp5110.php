@@ -152,16 +152,6 @@ class SamsungGtp5110 extends SamsungBase
     }
     
     /**
-     * returns TRUE if the device is a tablet
-     *
-     * @return boolean
-     */
-    public function isTablet()
-    {
-        return true;
-    }
-    
-    /**
      * detects the device name from the given user agent
      *
      * @param string $userAgent
