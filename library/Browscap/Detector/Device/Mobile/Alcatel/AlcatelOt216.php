@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Alcatel as AlcatelBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AlcatelOt216 extends AlcatelBase
+class AlcatelOt216
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

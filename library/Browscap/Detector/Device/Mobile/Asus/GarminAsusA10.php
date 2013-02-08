@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class GarminAsusA10 extends AsusBase
+class GarminAsusA10
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

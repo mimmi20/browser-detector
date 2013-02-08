@@ -43,6 +43,7 @@ namespace Browscap\Detector\Device;
 
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
 
 /**
  * CatchAllUserAgentHandler
@@ -55,7 +56,9 @@ use \Browscap\Detector\MatcherInterface;
  * @version   SVN: $Id$
  */
 
-final class Unknown extends DeviceHandler
+final class Unknown
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

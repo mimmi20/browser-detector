@@ -51,7 +51,9 @@ namespace Browscap\Detector\Device\Mobile\BlackBerry;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class RimPlayBook extends RimTablet
+class RimPlayBook
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -147,6 +149,18 @@ class RimPlayBook extends RimTablet
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**

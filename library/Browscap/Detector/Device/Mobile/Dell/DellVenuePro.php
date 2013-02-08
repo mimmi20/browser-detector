@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Dell as DellBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class DellVenuePro extends DellBase
+class DellVenuePro
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

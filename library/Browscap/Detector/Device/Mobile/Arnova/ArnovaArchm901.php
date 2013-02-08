@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Arnova as ArnovaBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class ArnovaArchm901 extends ArnovaBase
+class ArnovaArchm901
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

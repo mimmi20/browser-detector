@@ -41,7 +41,9 @@ namespace Browscap\Detector\Device\Desktop;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralDesktop;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +55,9 @@ use \Browscap\Detector\Device\GeneralDesktop;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class WindowsDesktop extends GeneralDesktop
+class WindowsDesktop
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

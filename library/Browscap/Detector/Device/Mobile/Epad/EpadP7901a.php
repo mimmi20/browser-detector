@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Epad as EpadBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class EpadP7901a extends EpadBase
+class EpadP7901a
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

@@ -51,7 +51,9 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcFlyerP512 extends HtcFlyer
+class HtcFlyerP512
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -150,13 +152,15 @@ class HtcFlyerP512 extends HtcFlyer
     }
     
     /**
-     * returns TRUE if the device is a tablet
+     * detects the device name from the given user agent
      *
-     * @return boolean
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function isTablet()
+    public function detectDevice()
     {
-        return true;
+        return $this;
     }
     
     /**

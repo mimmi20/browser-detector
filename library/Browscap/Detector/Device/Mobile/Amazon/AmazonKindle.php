@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Amazon as AmazonBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AmazonKindle extends AmazonBase
+class AmazonKindle
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Creative as CreativeBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CreativeZiiLabsZiio10 extends CreativeBase
+class CreativeZiiLabsZiio10
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

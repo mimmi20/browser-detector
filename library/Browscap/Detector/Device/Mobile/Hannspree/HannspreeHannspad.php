@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Hannspree as HannspreeBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HannspreeHannspad extends HannspreeBase
+class HannspreeHannspad
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

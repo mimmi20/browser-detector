@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Amoi as AmoiBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AmoiN820 extends AmoiBase
+class AmoiN820
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Coby as CobyBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MID1126 extends CobyBase
+class MID1126
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

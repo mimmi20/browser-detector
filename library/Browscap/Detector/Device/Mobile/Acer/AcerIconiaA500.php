@@ -56,7 +56,9 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AcerIconiaA500 extends AcerIconia
+class AcerIconiaA500
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -152,6 +154,18 @@ class AcerIconiaA500 extends AcerIconia
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**

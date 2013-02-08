@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Asus as AsusBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AsusTf300Tg extends AsusBase
+class AsusTf300Tg
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

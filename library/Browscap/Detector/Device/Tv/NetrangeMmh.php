@@ -41,7 +41,9 @@ namespace Browscap\Detector\Device\Tv;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralTv;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +55,9 @@ use \Browscap\Detector\Device\GeneralTv;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class NetrangeMmh extends GeneralTv
+class NetrangeMmh
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

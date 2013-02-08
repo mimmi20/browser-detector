@@ -51,7 +51,9 @@ namespace Browscap\Detector\Device\Mobile\Alcatel;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AlcatelOt997d extends AlcatelOt991
+class AlcatelOt997d
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Htc as HtcBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcZ710 extends HtcBase
+class HtcZ710
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

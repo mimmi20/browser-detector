@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace Browscap\Detector\MatcherInterface;
 
 /**
  * PHP version 5.3
@@ -38,8 +38,12 @@ namespace Browscap\Detector;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: MatcherInterface.php 383 2012-12-26 22:01:45Z tmu $
  */
+
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * WURFL_Handlers_Matcher is the base interface that concrete classes 
@@ -49,64 +53,42 @@ namespace Browscap\Detector;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: MatcherInterface.php 383 2012-12-26 22:01:45Z tmu $
  */
-interface MatcherInterface
+interface DeviceInterface
 {
     /**
-     * sets the user agent to be handled
+     * detects the device name from the given user agent
      *
      * @param string $userAgent
      *
-     * @return void
-     */
-    public function setUserAgent($userAgent);
-    
-    /**
-     * Returns true if this handler can handle the given useragent
-     *
-     * @return bool
-     */
-    public function canHandle();
-    
-    /**
-     * detects the operating system name (platform) from the given user agent
-     *
-     * @return StdClass
-     */
-    public function detect();
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight();
-    
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     * 
-     * @param string $capabilityName must be a valid capability name
-     * @return string Capability value
-     * @throws InvalidArgumentException
-     */
-    public function getCapability($capabilityName);
-    
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     * 
-     * @param string $capabilityName must be a valid capability name
      * @return DeviceHandler
-     * @throws InvalidArgumentException
      */
-    public function setCapability($capabilityName, $capabilityValue = null);
+    public function detectDevice();
     
     /**
-     * Returns the values of all capabilities for the current device
-     * 
-     * @return array All Capability values
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
      */
-    public function getCapabilities()
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    );
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser();
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs();
 }

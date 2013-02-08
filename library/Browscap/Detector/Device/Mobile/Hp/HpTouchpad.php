@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Hp as HpBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HpTouchpad extends HpBase
+class HpTouchpad
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

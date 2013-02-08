@@ -43,6 +43,7 @@ namespace Browscap\Detector;
 
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
@@ -57,7 +58,7 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-abstract class DeviceHandler implements MatcherInterface
+abstract class DeviceHandler implements MatcherInterface, DeviceInterface
 {
     /**
      * @var string the user agent to handle
@@ -154,26 +155,6 @@ abstract class DeviceHandler implements MatcherInterface
     public function __construct()
     {
         $this->_utils = new Utils();
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Frontend\Core $cache
-     *
-     * @return DeviceHandler 
-     */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        if (!($cache instanceof \Zend\Cache\Frontend\Core)) {
-            throw new \InvalidArgumentException(
-                'the cache must be an instance of \\Zend\\Cache\\Frontend\\Core'
-            );
-        }
-        
-        $this->_cache = $cache;
-        
-        return $this;
     }
     
     /**

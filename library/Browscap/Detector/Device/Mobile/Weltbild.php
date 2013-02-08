@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Weltbild extends GeneralMobile
+class Weltbild
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -172,6 +174,28 @@ class Weltbild extends GeneralMobile
     }
     
     /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -181,12 +205,7 @@ class Weltbild extends GeneralMobile
     {
         $os = array(
             new \Browscap\Detector\Os\Android(),
-            new \Browscap\Detector\Os\Bada(),
-            new \Browscap\Detector\Os\Brew(),
-            new \Browscap\Detector\Os\Java(),
-            new \Browscap\Detector\Os\Symbianos(),
-            new \Browscap\Detector\Os\WindowsMobileOs(),
-            new \Browscap\Detector\Os\WindowsPhoneOs()
+            //new \Browscap\Detector\Os\FreeBsd()
         );
         
         $chain = new \Browscap\Detector\Chain();

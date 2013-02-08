@@ -51,7 +51,9 @@ namespace Browscap\Detector\Device\Mobile\Dell;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class DellStreak7 extends DellStreak
+class DellStreak7
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

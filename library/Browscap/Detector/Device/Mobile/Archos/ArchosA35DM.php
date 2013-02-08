@@ -53,7 +53,9 @@ use \Browscap\Detector\Device\Mobile\Archos as ArchosBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class ArchosA35DM extends ArchosBase
+class ArchosA35DM
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

@@ -51,7 +51,9 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtcDesireX extends HtcA8181Desire
+class HtcDesireX
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -147,6 +149,18 @@ class HtcDesireX extends HtcA8181Desire
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**

@@ -41,6 +41,10 @@ namespace Browscap\Detector\Device\Desktop;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +55,9 @@ namespace Browscap\Detector\Device\Desktop;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MacPro extends Macintosh
+class MacPro
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
