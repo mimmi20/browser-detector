@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\Sharp;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Sharp as SharpBase;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,9 @@ use \Browscap\Detector\Device\Mobile\Sharp as SharpBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SharpTqGx30i extends SharpBase
+final class SharpTqGx30i
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -156,7 +164,7 @@ class SharpTqGx30i extends SharpBase
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

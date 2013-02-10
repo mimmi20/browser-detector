@@ -2,7 +2,7 @@
 namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browscap.ini parsing final class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -43,6 +43,14 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -53,7 +61,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @license    GNU Affero General Public License
  * @version    SVN: $Id$
  */
-class HtcRadar4G
+final class HtcRadar4G
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -158,7 +166,7 @@ class HtcRadar4G
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\Mobistel;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Mobistel as MobistelBase;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,9 @@ use \Browscap\Detector\Device\Mobile\Mobistel as MobistelBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MobistelCynusT1 extends MobistelBase
+final class MobistelCynusT1
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -146,7 +154,7 @@ class MobistelCynusT1 extends MobistelBase
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

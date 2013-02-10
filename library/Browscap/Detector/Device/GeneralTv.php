@@ -42,8 +42,12 @@ namespace Browscap\Detector\Device;
  */
 
 use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler

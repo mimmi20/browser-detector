@@ -41,6 +41,14 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +59,7 @@ namespace Browscap\Detector\Device\Mobile\Asus;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AsusEepPadTransformerTf101g
+final class AsusEepPadTransformerTf101g
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -156,7 +164,7 @@ class AsusEepPadTransformerTf101g
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

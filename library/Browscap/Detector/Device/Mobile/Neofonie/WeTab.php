@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\Neofonie;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Neofonie as NeofonieBase;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,9 @@ use \Browscap\Detector\Device\Mobile\Neofonie as NeofonieBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class WeTab extends NeofonieBase
+final class WeTab
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -156,7 +164,7 @@ class WeTab extends NeofonieBase
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\PointOfView;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\GeneralMobile;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,9 @@ use \Browscap\Detector\Device\GeneralMobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class PointOfViewProtab3xxl extends GeneralMobile
+final class PointOfViewProtab3xxl
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -146,7 +154,7 @@ class PointOfViewProtab3xxl extends GeneralMobile
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

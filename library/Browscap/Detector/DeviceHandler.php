@@ -58,7 +58,8 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-abstract class DeviceHandler implements MatcherInterface, DeviceInterface
+abstract class DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * @var string the user agent to handle

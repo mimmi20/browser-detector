@@ -41,6 +41,14 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +59,9 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class NokiaLumia710 extends NokiaLumia
+final class NokiaLumia710
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -154,7 +164,7 @@ class NokiaLumia710 extends NokiaLumia
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

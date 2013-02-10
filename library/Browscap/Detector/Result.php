@@ -2,7 +2,7 @@
 namespace Browscap\Detector;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browscap.ini parsing final class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -44,7 +44,7 @@ namespace Browscap\Detector;
  */
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browscap.ini parsing final class with caching and update capabilities
  *
  * @category  Browscap
  * @package   Browscap
@@ -52,17 +52,17 @@ namespace Browscap\Detector;
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class Result
+final final class Result
 {
     /**
      * the detected browser properties
      *
-     * @var StdClass
+     * @var Stdfinal class
      */
     private $_properties = array(
         'wurflKey' => null, // not in wurfl
         'useragent' => null, // not in wurfl
-        'DeviceClass' => null, // not in wurfl
+        'Devicefinal class' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => null,
@@ -1195,8 +1195,8 @@ final class Result
             
             try {
                 switch ($property) {
-                    case 'DeviceClass':
-                        $value = get_class($device);
+                    case 'Devicefinal class':
+                        $value = get_final class($device);
                         break;
                     case 'is_wireless_device':
                     case 'is_tablet':

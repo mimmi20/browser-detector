@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,9 @@ use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Nokia6303iClassic extends NokiaBase
+final class Nokia6303ifinal classic
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +81,7 @@ class Nokia6303iClassic extends NokiaBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '6303i classic',
+        'model_name'                => '6303i final classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
@@ -134,7 +142,7 @@ class Nokia6303iClassic extends NokiaBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Nokia6303iclassic')) {
+        if (!$this->_utils->checkIfContains('Nokia6303ifinal classic')) {
             return false;
         }
         
@@ -156,7 +164,7 @@ class Nokia6303iClassic extends NokiaBase
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {
@@ -211,7 +219,7 @@ class Nokia6303iClassic extends NokiaBase
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

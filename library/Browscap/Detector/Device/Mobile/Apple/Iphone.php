@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\Apple;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Apple as AppleBase;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,7 @@ use \Browscap\Detector\Device\Mobile\Apple as AppleBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Iphone
+final class Iphone
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -152,7 +158,7 @@ class Iphone
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

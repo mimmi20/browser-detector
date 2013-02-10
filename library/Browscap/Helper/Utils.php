@@ -44,7 +44,7 @@ namespace Browscap\Helper;
  * WURFL user agent hander utilities
  * @package   Browscap
  */
-final class Utils
+final final class Utils
 {
     /**
      * @var string the user agent to handle

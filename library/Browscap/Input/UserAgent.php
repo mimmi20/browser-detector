@@ -2,7 +2,7 @@
 namespace Browscap\Input;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browscap.ini parsing final class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -44,7 +44,7 @@ namespace Browscap\Input;
  */
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browscap.ini parsing final class with caching and update capabilities
  *
  * @category  Browscap
  * @package   Browscap
@@ -52,33 +52,33 @@ namespace Browscap\Input;
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class UserAgent extends Core
+final class UserAgent extends Core
 {
     /**
      * the detected browser
      *
-     * @var StdClass
+     * @var Stdfinal class
      */
     private $_browser = null;
     
     /**
      * the detected browser engine
      *
-     * @var StdClass
+     * @var Stdfinal class
      */
     private $_engine = null;
     
     /**
      * the detected platform
      *
-     * @var StdClass
+     * @var Stdfinal class
      */
     private $_os = null;
     
     /**
      * the detected device
      *
-     * @var StdClass
+     * @var Stdfinal class
      */
     private $_device = null;
     

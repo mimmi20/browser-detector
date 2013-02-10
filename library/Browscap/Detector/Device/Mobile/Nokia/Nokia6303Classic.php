@@ -41,7 +41,13 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +59,9 @@ use \Browscap\Detector\Device\Mobile\Nokia as NokiaBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Nokia6303Classic extends NokiaBase
+final class Nokia6303final classic
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -73,12 +81,12 @@ class Nokia6303Classic extends NokiaBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '6303 classic',
+        'model_name'                => '6303 final classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Classic', // wurflkey: nokia_6303c_ver1
+        'marketing_name'            => 'final classic', // wurflkey: nokia_6303c_ver1
         'has_qwerty_keyboard'       => false,     // wurflkey: nokia_6303c_ver1
         'pointing_method'           => '',        // wurflkey: nokia_6303c_ver1
         'device_claims_web_support' => false,     // wurflkey: nokia_6303c_ver1
@@ -134,7 +142,7 @@ class Nokia6303Classic extends NokiaBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Nokia6303classic')) {
+        if (!$this->_utils->checkIfContains('Nokia6303final classic')) {
             return false;
         }
         
@@ -156,7 +164,7 @@ class Nokia6303Classic extends NokiaBase
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {

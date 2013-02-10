@@ -42,8 +42,12 @@ namespace Browscap\Detector\Device\Desktop;
  */
 
 use \Browscap\Detector\DeviceHandler;
+use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -55,7 +59,7 @@ use \Browscap\Detector\MatcherInterface\DeviceInterface;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class WindowsDesktop
+final class WindowsDesktop
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -150,7 +154,7 @@ class WindowsDesktop
      *
      * @param string $userAgent
      *
-     * @return StdClass
+     * @return Stdfinal class
      */
     public function detectDevice()
     {
