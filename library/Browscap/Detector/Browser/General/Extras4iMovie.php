@@ -41,7 +41,11 @@ namespace Browscap\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Browser\General\CfNetwork;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +57,9 @@ use \Browscap\Detector\Browser\General\CfNetwork;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Extras4iMovie extends CfNetwork
+class Extras4iMovie
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

@@ -175,4 +175,26 @@ final class iMac
         );
         return $this;
     }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new \Browscap\Detector\Os\Macintosh(),
+            new \Browscap\Detector\Os\Macosx(),
+            new \Browscap\Detector\Os\Darwin()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
+    }
 }

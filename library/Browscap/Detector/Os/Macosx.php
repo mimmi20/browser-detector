@@ -41,7 +41,12 @@ namespace Browscap\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use Browscap\Os\Handler as OsHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\OsInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
 
 /**
  * MSIEAgentHandler
@@ -53,7 +58,9 @@ use Browscap\Os\Handler as OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Macosx extends Macintosh
+class Macosx
+    extends OsHandler
+    implements MatcherInterface, OsInterface
 {
     /**
      * the detected browser properties

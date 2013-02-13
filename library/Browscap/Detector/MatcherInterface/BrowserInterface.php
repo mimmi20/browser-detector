@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\MatcherInterface;
 
 /**
  * PHP version 5.3
@@ -42,14 +42,12 @@ namespace Browscap\Detector\Browser\Mobile;
  */
 
 use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
- * SendoUserAgentHandler
- * 
+ * WURFL_Handlers_Matcher is the base interface that concrete classes 
+ * must implement to retrieve a device with the given request    
  *
  * @category  Browscap
  * @package   Browscap
@@ -57,66 +55,23 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Sendo
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+interface BrowserInterface
 {
     /**
-     * the detected browser properties
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
      *
-     * @var array
+     * @return null|\Browscap\Os\Handler
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => false,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
-        
-        // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
-        
-        // browser
-        'mobile_browser'              => 'Sendo',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Sendo', // not in wurfl
-        
-        // os
-        // 'device_os'              => null,
-        // 'device_os_version'      => null,
-        // 'device_os_bits'         => null, // not in wurfl
-        // 'device_os_manufacturer' => null, // not in wurfl
-        
-        // engine
-        // 'renderingengine_name'         => null, // not in wurfl
-        // 'renderingengine_version'      => null, // not in wurfl
-        // 'renderingengine_manufacturer' => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'can_assign_phone_number'   => false,
-    );
+    public function detectEngine();
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
      *
-     * @return bool
+     * @return DeviceHandler
      */
-    public function canHandle()
-    {
-        return(strpos($this->_useragent, 'Sendo') === 0);
-    }
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os
+    );
 }

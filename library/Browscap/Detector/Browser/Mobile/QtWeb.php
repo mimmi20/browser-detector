@@ -41,7 +41,11 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Browser\General\Qt as QtBase;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +57,9 @@ use \Browscap\Detector\Browser\General\Qt as QtBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class QtWeb extends QtBase
+class QtWeb
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

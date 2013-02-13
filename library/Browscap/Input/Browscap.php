@@ -43,6 +43,8 @@ namespace Browscap\Input;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Version;
+
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
@@ -119,7 +121,63 @@ class Browscap extends Core
             }
         }
 
-        return (object) $browser;
+        $result = new \Browscap\Detector\Result();
+        $result->setCapability('mobile_browser', $browser['Browser']);
+        $result->setCapability('mobile_browser_bits', (empty($browser['Browser_Bits']) ? null : $browser['Browser_Bits']));
+        $result->setCapability('mobile_browser_manufacturer', (empty($browser['Browser_Maker']) ? null : $browser['Browser_Maker']));
+        
+        $detector = new Version();
+        $result->setCapability(
+            'mobile_browser_version', 
+            $detector->setVersion($browser['Version'])
+        );
+        
+        $result->setCapability('device_os', $browser['Platform']);
+        $result->setCapability(
+            'device_os_version',
+            $detector->setVersion($browser['Platform_Version'])
+        );
+        $result->setCapability('device_os_bits', (empty($browser['Platform_Bits']) ? null : $browser['Platform_Bits']));
+        $result->setCapability('device_os_manufacturer', (empty($browser['Platform_Maker']) ? null : $browser['Platform_Maker']));
+        
+        $result->setCapability('model_name', $browser['Device_Name']);
+        $result->setCapability('marketing_name', $browser['Device_Name']);
+        $result->setCapability('brand_name', $browser['Device_Maker']);
+        $result->setCapability('manufacturer_name', $browser['Device_Maker']);
+        
+        $result->setCapability(
+            'renderingengine_name', $browser['RenderingEngine_Name']
+        );
+        $result->setCapability(
+            'renderingengine_version',
+            $detector->setVersion($browser['RenderingEngine_Version'])
+        );
+        
+        if (!empty($browser['Device_isDesktop'])) {
+            $result->setCapability('ux_full_desktop', $browser['Device_isDesktop']);
+        }
+        
+        if (!empty($browser['Device_isTv'])) {
+            $result->setCapability('is_smarttv', $browser['Device_isTv']);
+        }
+        
+        if (!empty($browser['Device_isMobileDevice'])) {
+            $result->setCapability('is_wireless_device', $browser['Device_isMobileDevice']);
+        } elseif (!empty($browser['isMobileDevice'])) {
+            $result->setCapability('is_wireless_device', $browser['isMobileDevice']);
+        }
+        
+        if (!empty($browser['Device_isTablet'])) {
+            $result->setCapability('is_tablet', $browser['Device_isTablet']);
+        }
+        
+        if (!empty($browser['Browser_isBot'])) {
+            $result->setCapability('is_bot', $browser['Browser_isBot']);
+        } elseif (!empty($browser['Crawler'])) {
+            $result->setCapability('is_bot', $browser['Crawler']);
+        }
+        
+        return $result;
     }
 
     /**

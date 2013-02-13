@@ -241,7 +241,7 @@ class Browscap
             if (!($result instanceof Detector\Result)) {
                 throw new Input\Exception(
                     'the getBrowser Function has to return an instance of \\Browscap\\Detector\\Result', 
-                    Detector\Result::NO_RESULT_CLASS_RETURNED
+                    Input\Exception::NO_RESULT_CLASS_RETURNED
                 );
             }
             

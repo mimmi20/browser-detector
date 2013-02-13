@@ -108,5 +108,5 @@ interface MatcherInterface
      * 
      * @return array All Capability values
      */
-    public function getCapabilities()
+    public function getCapabilities();
 }

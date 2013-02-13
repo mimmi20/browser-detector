@@ -42,6 +42,11 @@ namespace Browscap\Input;
  * @copyright 2006-2008 Jonathan Stoppani
  * @version   SVN: $Id$
  */
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\MatcherInterface\OsInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -98,21 +103,21 @@ final class UserAgent extends Core
     {
         $this->_device = $this->_detectDevice();
         
-        if ($this->_device->hasOs()) {
-            $this->_os = $this->_device->detectOs();
-        } else {
+        // detect the os which runs on the device
+        $this->_os = $this->_device->detectOs();
+        if (!($this->_os instanceof OsInterface)) {
             $this->_os = $this->_detectOs();
         }
         
-        if ($this->_device->hasBrowser()) {
-            $this->_browser = $this->_device->detectBrowser();
-        } else {
+        // detect the browser which is used
+        $this->_browser = $this->_device->detectBrowser();
+        if (!($this->_browser instanceof BrowserInterface)) {
             $this->_browser = $this->_detectBrowser();
         }
         
-        if ($this->_browser->hasEngine()) {
-            $this->_engine = $this->_browser->detectEngine();
-        } else {
+        // detect the engine which is used in the browser
+        $this->_engine = $this->_browser->detectEngine();
+        if (!($this->_engine instanceof EngineHandler)) {
             $this->_engine = $this->_detectEngine();
         }
         

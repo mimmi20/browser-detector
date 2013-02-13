@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser;
+namespace Browscap\Detector\MatcherInterface;
 
 /**
  * PHP version 5.3
@@ -38,78 +38,32 @@ namespace Browscap\Detector\Browser;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: MatcherInterface.php 383 2012-12-26 22:01:45Z tmu $
  */
 
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
- * CatchAllUserAgentHandler
- *
+ * WURFL_Handlers_Matcher is the base interface that concrete classes 
+ * must implement to retrieve a device with the given request    
  *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: MatcherInterface.php 383 2012-12-26 22:01:45Z tmu $
  */
-class CatchAll extends Unknown
+interface OsInterface
 {
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
      *
-     * @return boolean always true
+     * @return DeviceHandler
      */
-    public function canHandle()
-    {
-        return false;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Input\Browscap();
-                
-        $detected = $detector->getBrowser($this->_useragent);
-        
-        $this->_browser = $detected->Browser;
-        $this->_version = $detected->Version;
-        
-        if ($detected->Win64) {
-            $this->_bits = 64;
-        } elseif ($detected->Win32) {
-            $this->_bits = 32;
-        } elseif ($detected->Win16) {
-            $this->_bits = 16;
-        } else {
-            $this->_bits = 0;
-        }
-        
-        return $this;
-    }
-    
-    /**
-     * detects the browser name from the given user agent
-     *
-     * @return StdClass
-     */
-    public function detectAll()
-    {
-        $detector = new \Browscap\Browscap();
-        return $detector->getAllBrowsers();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return -1;
-    }
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine
+    );
 }

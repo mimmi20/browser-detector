@@ -42,7 +42,11 @@ namespace Browscap\Detector\Os;
  */
 
 use \Browscap\Detector\OsHandler;
+use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\OsInterface;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\EngineHandler;
 
 /**
  * MSIEAgentHandler
@@ -54,7 +58,9 @@ use \Browscap\Detector\MatcherInterface;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Symbianos extends OsHandler
+class Symbianos
+    extends OsHandler
+    implements MatcherInterface, OsInterface
 {
     /**
      * the detected browser properties

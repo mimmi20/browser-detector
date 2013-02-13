@@ -52,7 +52,7 @@ namespace Browscap\Detector;
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final final class Result
+final class Result
 {
     /**
      * the detected browser properties
@@ -1196,7 +1196,7 @@ final final class Result
             try {
                 switch ($property) {
                     case 'Devicefinal class':
-                        $value = get_final class($device);
+                        $value = get_class($device);
                         break;
                     case 'is_wireless_device':
                     case 'is_tablet':

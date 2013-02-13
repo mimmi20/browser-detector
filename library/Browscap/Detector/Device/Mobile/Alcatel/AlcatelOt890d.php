@@ -59,7 +59,9 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class AlcatelOt890d extends AlcatelOt890
+final class AlcatelOt890d
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties

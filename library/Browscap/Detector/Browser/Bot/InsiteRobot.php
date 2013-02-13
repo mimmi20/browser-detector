@@ -41,6 +41,12 @@ namespace Browscap\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
+
 /**
  * KonquerorHandler
  *
@@ -51,7 +57,9 @@ namespace Browscap\Detector\Browser\Bot;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class InsiteRobot extends GeneralBot
+class InsiteRobot
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

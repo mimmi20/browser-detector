@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SshR730
+final class SamsungSshR730
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,8 +83,8 @@ final class SshR730
         // device
         'model_name'                => 'SCH-R730',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Samsung',
+        'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -147,18 +147,6 @@ final class SshR730
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return Stdfinal class
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**

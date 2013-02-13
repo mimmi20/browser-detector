@@ -42,6 +42,10 @@ namespace Browscap\Detector\Browser\Mobile;
  */
 
 use \Browscap\Detector\BrowserHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
 
 /**
  * SonyEricssonUserAgentHandler
@@ -53,7 +57,9 @@ use \Browscap\Detector\BrowserHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SonyEricsson extends BrowserHandler
+class SonyEricsson
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

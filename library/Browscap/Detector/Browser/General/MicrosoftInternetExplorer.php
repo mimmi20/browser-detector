@@ -41,6 +41,12 @@ namespace Browscap\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
+
 /**
  * Handler Base class
  */
@@ -56,7 +62,9 @@ use \Browscap\Detector\BrowserHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MicrosoftInternetExplorer extends BrowserHandler
+class MicrosoftInternetExplorer
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

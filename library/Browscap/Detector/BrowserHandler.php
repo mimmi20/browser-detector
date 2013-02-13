@@ -140,26 +140,6 @@ abstract class BrowserHandler implements MatcherInterface
     }
     
     /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Frontend\Core $cache
-     *
-     * @return BrowserHandler
-     */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
-    {
-        if (!($cache instanceof \Zend\Cache\Frontend\Core)) {
-            throw new \InvalidArgumentException(
-                'the cache must be an instance of \\Zend\\Cache\\Frontend\\Core'
-            );
-        }
-        
-        $this->_cache = $cache;
-        
-        return $this;
-    }
-    
-    /**
      * sets the user agent to be handled
      *
      * @return BrowserHandler
@@ -303,16 +283,6 @@ abstract class BrowserHandler implements MatcherInterface
                 'no capability named [' . $capabilityName . '] is present.'
             );    
         }
-    }
-    
-    /**
-     * returns TRUE if the browser has a specific rendering engine
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
     }
     
     /**
