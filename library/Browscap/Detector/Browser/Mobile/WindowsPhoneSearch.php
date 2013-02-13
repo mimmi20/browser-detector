@@ -48,11 +48,6 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 
 /**
- * Handler Base class
- */
-use \Browscap\Detector\BrowserHandler;
-
-/**
  * MSIEAgentHandler
  *
  *
