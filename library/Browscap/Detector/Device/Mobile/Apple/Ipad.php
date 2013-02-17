@@ -182,6 +182,7 @@ final class Ipad
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Safari(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\DarwinBrowser()
             //new \Browscap\Detector\Os\FreeBsd()
         );
         
@@ -203,6 +204,7 @@ final class Ipad
     {
         $os = array(
             new \Browscap\Detector\Os\Ios(),
+            new \Browscap\Detector\Os\Darwin(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

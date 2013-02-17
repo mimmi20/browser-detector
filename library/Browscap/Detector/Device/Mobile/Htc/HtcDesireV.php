@@ -59,7 +59,7 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class HtcDesireV extends 
+final class HtcDesireV
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -182,7 +182,7 @@ final class HtcDesireV extends
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();

@@ -180,4 +180,28 @@ final class MacBookPro
         
         return $chain->detect();
     }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . 'Browser'
+            . DIRECTORY_SEPARATOR . 'Desktop'
+            . DIRECTORY_SEPARATOR
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace('\\Browscap\\Detector\\Browser\\Desktop');
+        $chain->setDirectory($browserPath);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
 }

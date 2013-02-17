@@ -61,7 +61,7 @@ use \Browscap\Detector\OsHandler;
  */
 final class HtcDesire
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterfacese
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -186,7 +186,7 @@ final class HtcDesire
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();

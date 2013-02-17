@@ -184,8 +184,7 @@ final class RimTablet
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\BlackberryPlaybookTablet(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         
@@ -206,7 +205,7 @@ final class RimTablet
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\RimTablet(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

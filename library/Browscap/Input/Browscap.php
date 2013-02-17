@@ -121,40 +121,85 @@ class Browscap extends Core
             }
         }
 
-        $result = new \Browscap\Detector\Result();
-        $result->setCapability('mobile_browser', $browser['Browser']);
-        $result->setCapability('mobile_browser_bits', (empty($browser['Browser_Bits']) ? null : $browser['Browser_Bits']));
-        $result->setCapability('mobile_browser_manufacturer', (empty($browser['Browser_Maker']) ? null : $browser['Browser_Maker']));
-        
+        $result   = new \Browscap\Detector\Result();
         $detector = new Version();
-        $result->setCapability(
-            'mobile_browser_version', 
-            $detector->setVersion($browser['Version'])
+        
+        
+        $browserName    = $this->_detectProperty($browser, 'Browser');
+        if (!empty($browser['Browser_Version'])) {
+            $browserVersion = $this->_detectProperty(
+                $browser, 'Browser_Version', true, $browserName
+            );
+        } else {
+            $browserVersion = $this->_detectProperty(
+                $browser, 'Version', true, $browserName
+            );
+        }
+        $browserBits = $this->_detectProperty(
+            $browser, 'Browser_Bits', true, $browserName
+        );
+        $browserMaker = $this->_detectProperty(
+            $browser, 'Browser_Maker', true, $browserName
         );
         
-        $result->setCapability('device_os', $browser['Platform']);
+        $result->setCapability('mobile_browser', $browserName);
         $result->setCapability(
-            'device_os_version',
-            $detector->setVersion($browser['Platform_Version'])
+            'mobile_browser_version', $detector->setVersion($browserVersion)
         );
-        $result->setCapability('device_os_bits', (empty($browser['Platform_Bits']) ? null : $browser['Platform_Bits']));
-        $result->setCapability('device_os_manufacturer', (empty($browser['Platform_Maker']) ? null : $browser['Platform_Maker']));
+        $result->setCapability('mobile_browser_bits', $browserBits);
         
-        $result->setCapability('model_name', $browser['Device_Name']);
-        $result->setCapability('marketing_name', $browser['Device_Name']);
-        $result->setCapability('brand_name', $browser['Device_Maker']);
-        $result->setCapability('manufacturer_name', $browser['Device_Maker']);
+        $result->setCapability('mobile_browser_manufacturer', $browserMaker);
+        
+        $platform        = $this->_detectProperty($browser, 'Platform');
+        $platformVersion = $this->_detectProperty(
+            $browser, 'Platform_Version', true, $platform
+        );
+        $platformbits = $this->_detectProperty(
+            $browser, 'Platform_Bits', true, $platform
+        );
+        $platformMaker = $this->_detectProperty(
+            $browser, 'Platform_Maker', true, $platform
+        );
+        
+        $result->setCapability('device_os', $platform);
+        $result->setCapability(
+            'device_os_version', $detector->setVersion($platformVersion)
+        );
+        $result->setCapability('device_os_bits', $platformbits);
+        $result->setCapability('device_os_manufacturer', $platformMaker);
+        
+        $deviceName  = $this->_detectProperty($browser, 'Device_Name');
+        $deviceMaker = $this->_detectProperty(
+            $browser, 'Device_Maker', true, $deviceName
+        );
+        
+        $result->setCapability('model_name', $deviceName);
+        $result->setCapability('marketing_name', $deviceName);
+        $result->setCapability('brand_name', $deviceMaker);
+        $result->setCapability('manufacturer_name', $deviceMaker);
+        
+        $engineName = $this->_detectProperty($browser, 'RenderingEngine_Name');
+        
+        $engineVersion = $this->_detectProperty(
+            $browser, 'RenderingEngine_Version', true, $engineName
+        );
+        $engineMaker = $this->_detectProperty(
+            $browser, 'RenderingEngine_Maker', true, $engineName
+        );
         
         $result->setCapability(
-            'renderingengine_name', $browser['RenderingEngine_Name']
+            'renderingengine_name', $engineName
         );
+        
         $result->setCapability(
-            'renderingengine_version',
-            $detector->setVersion($browser['RenderingEngine_Version'])
+            'renderingengine_version', $detector->setVersion($engineVersion)
         );
+        
+        $result->setCapability('renderingengine_manufacturer', $engineMaker);
         
         if (!empty($browser['Device_isDesktop'])) {
-            $result->setCapability('ux_full_desktop', $browser['Device_isDesktop']);
+            $result->setCapability('ux_full_desktop', 
+            $browser['Device_isDesktop']);
         }
         
         if (!empty($browser['Device_isTv'])) {
@@ -162,9 +207,13 @@ class Browscap extends Core
         }
         
         if (!empty($browser['Device_isMobileDevice'])) {
-            $result->setCapability('is_wireless_device', $browser['Device_isMobileDevice']);
+            $result->setCapability(
+                'is_wireless_device', $browser['Device_isMobileDevice']
+            );
         } elseif (!empty($browser['isMobileDevice'])) {
-            $result->setCapability('is_wireless_device', $browser['isMobileDevice']);
+            $result->setCapability(
+                'is_wireless_device', $browser['isMobileDevice']
+            );
         }
         
         if (!empty($browser['Device_isTablet'])) {
@@ -901,5 +950,25 @@ class Browscap extends Core
         }
         
         $this->_browsers[$outerKey] = $browser;
+    }
+    
+    private function _detectProperty(
+        array $allProperties, $propertyName, $depended = false, 
+        $dependingValue = null)
+    {
+        $propertyValue = (empty($allProperties[$propertyName]) ? null : trim($allProperties[$propertyName]));
+        
+        if (empty($propertyValue)
+            || '' == $propertyValue
+            || 'unknown' == strtolower($propertyValue)
+        ) {
+            $propertyValue = null;
+        }
+        
+        if ($depended && null !== $propertyValue && empty($dependingValue)) {
+            $propertyValue = null;
+        }
+        
+        return $propertyValue;
     }
 }

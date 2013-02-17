@@ -186,7 +186,7 @@ final class HuaweiU8666
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();

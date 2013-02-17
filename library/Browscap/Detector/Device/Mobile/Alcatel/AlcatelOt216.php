@@ -180,9 +180,8 @@ final class AlcatelOt216
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \Browscap\Detector\Browser\Mobile\Openwave(),
+            new \Browscap\Detector\Browser\Mobile\TelecaObigo()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -202,7 +201,7 @@ final class AlcatelOt216
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Java(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

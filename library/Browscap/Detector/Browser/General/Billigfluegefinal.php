@@ -117,11 +117,21 @@ class Billigfluegefinal
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfStartsWith('billigfluegefinal', true)) {
+        if ($this->_utils->checkIfContains('billigfluegefinal', true)) {
             return true;
         }
         
         return false;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
