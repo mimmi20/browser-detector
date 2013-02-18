@@ -56,22 +56,52 @@ final class Version
     /**
      * @var integer
      */
-    const MAJORONLY   = 1;
+    const MAJORONLY = 1;
     
     /**
      * @var integer
      */
-    const MAJORMINOR  = 2;
+    const MINORONLY = 2;
     
     /**
      * @var integer
      */
-    const FULLVERSION = 3;
+    const MICROONLY = 4;
     
     /**
      * @var integer
      */
-    const MINORONLY   = 4;
+    const MAJORMINOR = self::MAJORONLY | self::MINORONLY;
+    
+    /**
+     * @var integer
+     */
+    const FULLVERSION = self::MAJORONLY | self::MINORONLY | self::MICROONLY;
+    
+    /**
+     * @var integer
+     */
+    const IGNORE_NONE = 0;
+    
+    /**
+     * @var integer
+     */
+    const IGNORE_MINOR = 1;
+    
+    /**
+     * @var integer
+     */
+    const IGNORE_MICRO = 2;
+    
+    /**
+     * @var integer
+     */
+    const IGNORE_MINOR_IF_EMPTY = 4;
+    
+    /**
+     * @var integer
+     */
+    const IGNORE_MICRO_IF_EMPTY = 8;
     
     /**
      * @var string the user agent to handle
@@ -104,6 +134,11 @@ final class Version
     private $_default = '';
     
     /**
+     * @var integer
+     */
+    private $_mode = self::IGNORE_NONE;
+    
+    /**
      * @var boolean a Flag to tell that the minor and the micro versions should
      *              be ignored
      */
@@ -117,6 +152,8 @@ final class Version
     /**
      * sets the user agent to be handled
      *
+     * @param string $userAgent
+     *
      * @return Version
      */
     public function setUserAgent($userAgent)
@@ -127,14 +164,26 @@ final class Version
     }
     
     /**
-     * returns the detected version
+     * sets the user agent to be handled
      *
-     * @param string $mode
+     * @param integer $mode
+     *
+     * @return Version
+     */
+    public function setMode($mode)
+    {
+        $this->_mode = $mode;
+        
+        return $this;
+    }
+    
+    /**
+     * returns the detected version
      *
      * @return string
      * @throws \UnexpectedValueException
      */
-    public function getVersion($mode = self::MAJORMINOR)
+    public function getVersion()
     {
         if (null === $this->_version) {
             if (null === $this->_useragent) {
@@ -146,53 +195,34 @@ final class Version
             $this->detectVersion();
         }
         
-        switch ($mode) {
-            case self::MAJORONLY:
-                return ($this->_major ? $this->_major : '');
-                break;
-            case self::MINORONLY:
-                if ($this->_ignoreMinor) {
-                    return '';
-                } else {
-                    return ($this->_minor ? $this->_minor : '');
-                }
-                break;
-            case self::MAJORMINOR:
-                if ($this->_ignoreMinor) {
-                    return ($this->_major ? $this->_major : '');
-                } else {
-                    $version = $this->_major . '.' . $this->_minor;
-                    
-                    if ('0.0' == $version) {
-                        return '';
-                    }
-                    
-                    return $version;
-                }
-                break;
-            default:
-                if ($this->_ignoreMinor) {
-                    return ($this->_major ? $this->_major : '');
-                } elseif ($this->_ignoreMicro) {
-                    $version = $this->_major . '.' . $this->_minor;
-                    
-                    if ('0.0' == $version) {
-                        return '';
-                    }
-                    
-                    return $version;
-                } else {
-                    $version = $this->_major . '.' . $this->_minor . '.' 
-                        . $this->_micro;
-                    
-                    if ('0.0.0' == $version) {
-                        return '';
-                    }
-                    
-                    return $version;
-                }
-                break;
+        $versions = array();
+        if (self::MAJORONLY & $this->_mode) {
+            $versions[0] = $this->_major;
         }
+        
+        if (self::MINORONLY & $this->_mode) {
+            if ($this->_ignoreMinor) {
+                $versions[1] = 0;
+            } else {
+                $versions[1] = $this->_minor;
+            }
+        }
+        
+        if (self::MICROONLY & $this->_mode) {
+            if ($this->_ignoreMicro) {
+                $versions[2] = 0;
+            } else {
+                $versions[2] = $this->_micro;
+            }
+        }
+        
+        if (self::IGNORE_MICRO_IF_EMPTY & $this->_mode) {
+            unset($versions[2]);
+        } elseif (self::IGNORE_MINOR_IF_EMPTY & $this->_mode) {
+            unset($versions[1]);
+        }
+        
+        return implode('.', $versions);
     }
     
     /**

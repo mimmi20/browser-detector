@@ -241,7 +241,7 @@ final class PalmPixi
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMinorVersion(true);
+        $detector->setMode(Version::FULLVERSION | Version::IGNORE_MICRO_IF_EMPTY);
         
         $searches = array('Pixi');
         

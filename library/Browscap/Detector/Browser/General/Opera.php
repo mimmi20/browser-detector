@@ -46,6 +46,7 @@ use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Version;
 
 /**
  * OperaHandler
@@ -145,9 +146,9 @@ class Opera
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMicroVersion(true);
+        $detector->setMode(Version::FULLVERSION | Version::IGNORE_MICRO);
         
         $searches = array('Version', 'Opera');
         
