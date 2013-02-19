@@ -71,37 +71,27 @@ final class Version
     /**
      * @var integer
      */
-    const MAJORMINOR = self::MAJORONLY | self::MINORONLY;
-    
-    /**
-     * @var integer
-     */
-    const FULLVERSION = self::MAJORONLY | self::MINORONLY | self::MICROONLY;
-    
-    /**
-     * @var integer
-     */
     const IGNORE_NONE = 0;
     
     /**
      * @var integer
      */
-    const IGNORE_MINOR = 1;
+    const IGNORE_MINOR = 8;
     
     /**
      * @var integer
      */
-    const IGNORE_MICRO = 2;
+    const IGNORE_MICRO = 16;
     
     /**
      * @var integer
      */
-    const IGNORE_MINOR_IF_EMPTY = 4;
+    const IGNORE_MINOR_IF_EMPTY = 32;
     
     /**
      * @var integer
      */
-    const IGNORE_MICRO_IF_EMPTY = 8;
+    const IGNORE_MICRO_IF_EMPTY = 64;
     
     /**
      * @var string the user agent to handle
@@ -356,7 +346,9 @@ final class Version
     public function __toString()
     {
         try {
-            return $this->getVersion(self::FULLVERSION);
+            return $this->getVersion(
+                Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY
+            );
         } catch (\Exception $e) {
             return '';
         }

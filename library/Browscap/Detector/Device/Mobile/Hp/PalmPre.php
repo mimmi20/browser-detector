@@ -234,7 +234,10 @@ final class PalmPre
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->setMode(Version::FULLVERSION | Version::IGNORE_MICRO_IF_EMPTY);
+        $detector->setMode(
+            Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
         
         $searches = array('Pre');
         

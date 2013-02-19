@@ -222,7 +222,9 @@ final class BlackBerry9900
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORONLY | Version::MINORONLY
+        );
         
         if ('7.0' == $osVersion) {
             $this->setCapability(
