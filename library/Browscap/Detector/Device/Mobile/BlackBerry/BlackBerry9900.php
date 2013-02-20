@@ -223,7 +223,7 @@ final class BlackBerry9900
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORONLY | Version::MINORONLY
+            Version::MAJORMINOR
         );
         
         if ('7.0' == $osVersion) {

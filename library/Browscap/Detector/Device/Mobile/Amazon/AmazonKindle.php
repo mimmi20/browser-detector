@@ -225,7 +225,7 @@ final class AmazonKindle
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(
-            Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY
+            Version::COMPLETE
             | Version::IGNORE_MICRO
         );
         

@@ -66,7 +66,17 @@ final class Version
     /**
      * @var integer
      */
+    const MAJORMINOR = 3;
+    
+    /**
+     * @var integer
+     */
     const MICROONLY = 4;
+    
+    /**
+     * @var integer
+     */
+    const COMPLETE = 7;
     
     /**
      * @var integer
@@ -347,7 +357,7 @@ final class Version
     {
         try {
             return $this->getVersion(
-                Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY
+                Version::COMPLETE
             );
         } catch (\Exception $e) {
             return '';

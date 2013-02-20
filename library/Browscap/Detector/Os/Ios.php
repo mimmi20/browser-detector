@@ -219,7 +219,7 @@ class Ios
         switch ($capabilityName) {
             case 'model_extra_info':
                 return $this->_properties['device_os_version']->getVersion(
-                    Version::MAJORONLY | Version::MINORONLY
+                    Version::MAJORMINOR
                 );
                 break;
             default:

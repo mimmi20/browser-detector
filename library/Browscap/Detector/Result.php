@@ -818,7 +818,7 @@ final class Result
         );
     }
     
-    public function getFullBrowser($withBits = true, $mode = Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY)
+    public function getFullBrowser($withBits = true, $mode = Version::COMPLETE)
     {
         $browser = $this->getCapability('mobile_browser');
         $version = $this->getCapability('mobile_browser_version')->getVersion($mode);
@@ -829,7 +829,7 @@ final class Result
             . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
-    public function getFullPlatform($withBits = true, $mode = Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY)
+    public function getFullPlatform($withBits = true, $mode = Version::COMPLETE)
     {
         $name    = $this->getCapability('device_os');
         $version = $this->getCapability('device_os_version')->getVersion($mode);
@@ -862,7 +862,7 @@ final class Result
         return trim($device);
     }
     
-    public function getFullEngine($mode = Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY)
+    public function getFullEngine($mode = Version::COMPLETE)
     {
         $engine  = $this->getCapability('renderingengine_name');
         $version = $this->getCapability('renderingengine_version')->getVersion($mode);
@@ -1170,8 +1170,8 @@ final class Result
      */
     public function getComparationName()
     {
-        return $this->getFullBrowser(true, Version::MAJORONLY | Version::MINORONLY) . ' on ' 
-            . $this->getFullPlatform(true, Version::MAJORONLY | Version::MINORONLY) . ', ' 
+        return $this->getFullBrowser(true, Version::MAJORMINOR) . ' on ' 
+            . $this->getFullPlatform(true, Version::MAJORMINOR) . ', ' 
             . $this->getFullDevice(true);
     }
     

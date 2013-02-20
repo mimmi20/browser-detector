@@ -224,7 +224,7 @@ abstract class DeviceHandler
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(
-            Version::MAJORONLY | Version::MINORONLY | Version::MICROONLY
+            Version::COMPLETE
             | Version::IGNORE_MICRO_IF_EMPTY
         );
         
