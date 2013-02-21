@@ -123,6 +123,7 @@ class Browscap extends Core
 
         $result   = new \Browscap\Detector\Result();
         $detector = new Version();
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR_IF_EMPTY);
         
         $browserName    = $this->_detectProperty($browser, 'Browser');
         if (!empty($browser['Browser_Version'])) {
