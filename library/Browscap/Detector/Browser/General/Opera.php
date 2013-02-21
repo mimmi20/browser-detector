@@ -148,10 +148,7 @@ class Opera
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MICRO
-        );
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
         
         $searches = array('Version', 'Opera');
         

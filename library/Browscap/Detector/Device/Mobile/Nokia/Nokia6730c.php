@@ -81,7 +81,7 @@ final class Nokia6730c
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '6730 final classic',
+        'model_name'                => '6730 classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',

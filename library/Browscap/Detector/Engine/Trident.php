@@ -135,7 +135,7 @@ class Trident extends EngineHandler
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMinorVersion(true);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
         
         $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
         

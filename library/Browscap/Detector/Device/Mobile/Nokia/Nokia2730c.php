@@ -81,7 +81,7 @@ final class Nokia2730c
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '2730 final classic',
+        'model_name'                => '2730 classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',

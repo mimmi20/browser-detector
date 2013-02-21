@@ -821,8 +821,11 @@ final class Result
     public function getFullBrowser($withBits = true, $mode = Version::COMPLETE)
     {
         $browser = $this->getCapability('mobile_browser');
-        $version = $this->getCapability('mobile_browser_version')->getVersion($mode);
-        $bits    = $this->getCapability('mobile_browser_bits');
+        $version = $this->getCapability('mobile_browser_version')->getVersion(
+            $mode
+        );
+        
+        $bits = $this->getCapability('mobile_browser_bits');
         
         return $browser 
             . ($browser != $version && '' != $version ? ' ' . $version : '') 
@@ -835,7 +838,9 @@ final class Result
         $version = $this->getCapability('device_os_version')->getVersion($mode);
         $bits    = $this->getCapability('device_os_bits');
         
-        return $name . ($name != $version && '' != $version ? ' ' . $version : '') . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+        return $name
+            . ($name != $version && '' != $version ? ' ' . $version : '')
+            . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
     /**
@@ -865,7 +870,9 @@ final class Result
     public function getFullEngine($mode = Version::COMPLETE)
     {
         $engine  = $this->getCapability('renderingengine_name');
-        $version = $this->getCapability('renderingengine_version')->getVersion($mode);
+        $version = $this->getCapability('renderingengine_version')->getVersion(
+            $mode
+        );
         
         return trim(
             $engine 

@@ -158,7 +158,7 @@ class MicrosoftOutlook extends MicrosoftOffice
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMinorVersion(true);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
         
         $doMatch = preg_match(
             '/microsoft Office Outlook ([\d\.]+)/', $this->_useragent, $matches

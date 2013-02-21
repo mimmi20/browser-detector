@@ -81,7 +81,7 @@ final class Nokia2330c
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '2330 final classic',
+        'model_name'                => '2330 classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',

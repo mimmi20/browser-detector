@@ -164,10 +164,7 @@ class Android
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MICRO_IF_EMPTY
-        );
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
         
         $searches = array('Version', 'Safari');
         

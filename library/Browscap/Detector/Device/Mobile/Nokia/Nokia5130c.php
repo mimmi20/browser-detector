@@ -81,7 +81,7 @@ final class Nokia5130c
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '5130 final classic',
+        'model_name'                => '5130 classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',

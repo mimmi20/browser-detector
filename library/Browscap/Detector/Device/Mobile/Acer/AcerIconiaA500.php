@@ -223,7 +223,9 @@ final class AcerIconiaA500
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORONLY);
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORONLY
+        );
         
         if (3 == $osVersion) {
             // $this->setCapability('resolution_width', 640);

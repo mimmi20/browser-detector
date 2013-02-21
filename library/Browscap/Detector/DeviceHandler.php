@@ -223,10 +223,7 @@ abstract class DeviceHandler
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MICRO_IF_EMPTY
-        );
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
         
         $this->setCapability(
             'model_version', $detector->setVersion('')

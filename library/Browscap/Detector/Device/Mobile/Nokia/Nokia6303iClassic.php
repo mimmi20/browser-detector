@@ -81,7 +81,7 @@ final class Nokia6303iclassic
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '6303i final classic',
+        'model_name'                => '6303i classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
@@ -142,7 +142,7 @@ final class Nokia6303iclassic
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Nokia6303ifinal classic')) {
+        if (!$this->_utils->checkIfContains('Nokia6303iclassic')) {
             return false;
         }
         

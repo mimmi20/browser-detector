@@ -136,18 +136,7 @@ final class Version
     /**
      * @var integer
      */
-    private $_mode = self::IGNORE_NONE;
-    
-    /**
-     * @var boolean a Flag to tell that the minor and the micro versions should
-     *              be ignored
-     */
-    private $_ignoreMinor = false;
-    
-    /**
-     * @var boolean a Flag to tell that the micro version should be ignored
-     */
-    private $_ignoreMicro = false;
+    private $_mode = self::COMPLETE;
     
     /**
      * sets the user agent to be handled
@@ -180,10 +169,12 @@ final class Version
     /**
      * returns the detected version
      *
+     * @param integer $mode
+     *
      * @return string
      * @throws \UnexpectedValueException
      */
-    public function getVersion()
+    public function getVersion($mode = null)
     {
         if (null === $this->_version) {
             if (null === $this->_useragent) {
@@ -195,31 +186,39 @@ final class Version
             $this->detectVersion();
         }
         
+        if (null === $mode) {
+            $mode = $this->_mode;
+        }
+        
         $versions = array();
-        if (self::MAJORONLY & $this->_mode) {
+        if (self::MAJORONLY & $mode) {
             $versions[0] = $this->_major;
         }
         
-        if (self::MINORONLY & $this->_mode) {
-            if ($this->_ignoreMinor) {
-                $versions[1] = 0;
-            } else {
-                $versions[1] = $this->_minor;
-            }
+        if (self::MINORONLY & $mode) {
+            $versions[1] = $this->_minor;
         }
         
-        if (self::MICROONLY & $this->_mode) {
-            if ($this->_ignoreMicro) {
-                $versions[2] = 0;
-            } else {
-                $versions[2] = $this->_micro;
-            }
+        if (self::MICROONLY & $mode) {
+            $versions[2] = $this->_micro;
         }
         
-        if (self::IGNORE_MICRO_IF_EMPTY & $this->_mode) {
+        if (self::IGNORE_MICRO & $mode) {
             unset($versions[2]);
-        } elseif (self::IGNORE_MINOR_IF_EMPTY & $this->_mode) {
+        } elseif (self::IGNORE_MICRO_IF_EMPTY & $mode
+            && empty($versions[2])
+        ) {
+            unset($versions[2]);
+        }
+        
+        if (self::IGNORE_MINOR & $mode) {
             unset($versions[1]);
+            unset($versions[2]);
+        } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode
+            && empty($versions[1])
+        ) {
+            unset($versions[1]);
+            unset($versions[2]);
         }
         
         return implode('.', $versions);
@@ -327,30 +326,6 @@ final class Version
         }
         
         $this->_default = $version;
-    }
-    
-    /**
-     * sets the flag to ignore the minor and the micro versions
-     *
-     * @param boolean $ignore
-     *
-     * @return Version
-     */
-    public function ignoreMinorVersion($ignore)
-    {
-        $this->_ignoreMinor = ($ignore ? true : false);
-    }
-    
-    /**
-     * sets the flag to ignore the micro version
-     *
-     * @param boolean $ignore
-     *
-     * @return Version
-     */
-    public function ignoreMicroVersion($ignore)
-    {
-        $this->_ignoreMicro = ($ignore ? true : false);
     }
     
     public function __toString()

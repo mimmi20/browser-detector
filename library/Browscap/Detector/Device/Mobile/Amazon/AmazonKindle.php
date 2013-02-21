@@ -224,10 +224,7 @@ final class AmazonKindle
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MICRO
-        );
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
         
         $searches = array('Kindle');
         

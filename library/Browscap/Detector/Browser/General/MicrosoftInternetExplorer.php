@@ -46,6 +46,7 @@ use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -201,7 +202,7 @@ class MicrosoftInternetExplorer
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMicroVersion(true);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
         
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
         

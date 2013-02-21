@@ -150,7 +150,7 @@ class Windows
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMinorVersion(true);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
         
         if ($this->_utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90'))) {
             $this->setCapability('device_os_version', $detector->setVersion('ME'));

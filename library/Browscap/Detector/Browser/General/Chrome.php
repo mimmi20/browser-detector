@@ -163,7 +163,7 @@ class Chrome
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->ignoreMicroVersion(true);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
         
         $searches = array('Chrome', 'CrMo', 'CriOS');
         

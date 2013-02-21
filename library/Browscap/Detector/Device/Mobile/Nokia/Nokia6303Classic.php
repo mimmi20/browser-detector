@@ -59,7 +59,7 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Nokia6303final classic
+final class Nokia6303classic
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -81,12 +81,12 @@ final class Nokia6303final classic
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => '6303 final classic',
+        'model_name'                => '6303 classic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => 'final classic', // wurflkey: nokia_6303c_ver1
+        'marketing_name'            => 'classic', // wurflkey: nokia_6303c_ver1
         'has_qwerty_keyboard'       => false,     // wurflkey: nokia_6303c_ver1
         'pointing_method'           => '',        // wurflkey: nokia_6303c_ver1
         'device_claims_web_support' => false,     // wurflkey: nokia_6303c_ver1
@@ -142,7 +142,7 @@ final class Nokia6303final classic
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Nokia6303final classic')) {
+        if (!$this->_utils->checkIfContains('Nokia6303classic')) {
             return false;
         }
         
