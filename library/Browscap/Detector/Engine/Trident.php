@@ -43,6 +43,7 @@ namespace Browscap\Detector\Engine;
 
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\Version;
 
 /**
  * MSIEAgentHandler

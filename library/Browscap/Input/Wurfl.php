@@ -58,7 +58,7 @@ use \Browscap\Detector\Result;
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class UserAgent extends Core
+final class Wurfl extends Core
 {
     /**
      * the detected browser
@@ -94,6 +94,104 @@ final class UserAgent extends Core
      * @var \Browscap\Detector\Result
      */
     private $_result = null;
+    
+    /**
+     * the wurfl detector class
+     *
+     * @var
+     */
+    private $_wurflManager = null;
+    
+    /**
+     * the cache class
+     *
+     * @var
+     */
+    private $_cache = null;
+    
+    /** @var string */
+    private $_cachePrefix = null;
+    
+    /**
+     * the config object
+     *
+     * @var \Wurfl\Configuration\Config
+     *
+     * @throws \UnexpectedValueException
+     */
+    private $_config = null;
+    
+    /**
+     * sets ab wurfl detection manager
+     *
+     * @var \Wurfl\ManagerFactory|\Wurfl\Manager
+     *
+     * @return \Browscap\Input\Wurfl
+     */
+    public function setWurflManager($wurfl)
+    {
+        if ($wurfl instanceof \Wurfl\ManagerFactory) {
+            $wurfl = $wurfl->create();
+        }
+        
+        if (!($wurfl instanceof \Wurfl\Manager)) {
+            throw new \UnexpectedValueException(
+                'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory or an instance of \\Wurfl\\ManagerFactory'
+            );
+        }
+        
+        $this->_wurflManager = $wurfl;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the cache used to make the detection faster
+     *
+     * @param \Zend\Cache\Frontend\Core $cache
+     *
+     * @return \\Browscap\\Browscap
+     */
+    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    {
+        $this->_cache = $cache;
+        
+        return $this;
+    }
+
+    /**
+     * sets the the cache prfix
+     *
+     * @param string $prefix the new prefix
+     *
+     * @return \\Browscap\\Browscap
+     */
+    public function setCachePrefix($prefix)
+    {
+        if (!is_string($prefix)) {
+            throw new \UnexpectedValueException(
+                'the cache prefix has to be a string'
+            );
+        }
+        
+        $this->_cachePrefix = $prefix;
+        
+        return $this;
+    }
+
+    /**
+     * sets the the cache prfix
+     *
+     * @param \Wurfl\Configuration\Config $config the new config
+     *
+     * @return \\Browscap\\Browscap
+     */
+    public function setConfig(\Wurfl\Configuration\Config $config)
+    {
+        $this->_config = $config;
+        
+        return $this;
+    }
 
     /**
      * Gets the information about the browser by User Agent
@@ -102,34 +200,38 @@ final class UserAgent extends Core
      */
     public function getBrowser()
     {
-        $this->_device = $this->_detectDevice();
-        
-        // detect the os which runs on the device
-        $this->_os = $this->_device->detectOs();
-        if (!($this->_os instanceof OsInterface)) {
-            $this->_os = $this->_detectOs();
+        if (!($this->_wurflManager instanceof \Wurfl\Manager)) {
+            throw new \UnexpectedValueException(
+                'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory or an instance of \\Wurfl\\ManagerFactory'
+            );
         }
         
-        // detect the browser which is used
-        $this->_browser = $this->_device->detectBrowser();
-        if (!($this->_browser instanceof BrowserInterface)) {
-            $this->_browser = $this->_detectBrowser();
-        }
-        
-        // detect the engine which is used in the browser
-        $this->_engine = $this->_browser->detectEngine();
-        if (!($this->_engine instanceof EngineHandler)) {
-            $this->_engine = $this->_detectEngine();
-        }
-        
-        $this->_device->detectDependProperties(
-            $this->_browser, $this->_engine, $this->_os
-        );
+        $device        = $this->_wurflManager->getDeviceForUserAgent($this->_agent);
+        $allProperties = $device->getAllCapabilities();
         
         $this->_result = new Result();
-        $this->_result->setDetectionResult(
-            $this->_device, $this->_os, $this->_browser, $this->_engine
-        );
+        
+        foreach ($allProperties as $capabilityName => $capabilityValue) {
+            switch ($capabilityValue) {
+                case 'true':
+                case true:
+                    $capabilityValue = true;
+                    break;
+                case 'false':
+                case false:
+                    $capabilityValue = false;
+                    break;
+                case null:
+                case 'unknown':
+                    $capabilityValue = null;
+            }
+            
+            switch ($capabilityName) {
+                case 
+            }
+            
+            $this->_result->setCapability($capabilityName, $capabilityValue)
+        }
         
         return $this->_result;
     }
