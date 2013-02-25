@@ -272,7 +272,7 @@ class Browscap
             );
         }
         
-        $cacheId = hash('sha512', $this->_agent);
+        $cacheId = hash('sha512', $this->_cachePrefix . $this->_agent);
         $result  = null;
         
         if (!$forceDetect) {

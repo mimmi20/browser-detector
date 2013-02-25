@@ -818,7 +818,8 @@ final class Result
         );
     }
     
-    public function getFullBrowser($withBits = true, $mode = Version::COMPLETE)
+    public function getFullBrowser(
+        $withBits = true, $mode = Version::COMPLETE_IGNORE_EMPTY)
     {
         $browser = $this->getCapability('mobile_browser');
         $version = $this->getCapability('mobile_browser_version')->getVersion(
@@ -832,9 +833,15 @@ final class Result
             . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
     }
     
-    public function getFullPlatform($withBits = true, $mode = Version::COMPLETE)
+    public function getFullPlatform(
+        $withBits = true, $mode = Version::COMPLETE_IGNORE_EMPTY)
     {
-        $name    = $this->getCapability('device_os');
+        $name = $this->getCapability('device_os');
+        
+        if ('unknown' == $name) {
+            return $name;
+        }
+        
         $version = $this->getCapability('device_os_version')->getVersion($mode);
         $bits    = $this->getCapability('device_os_bits');
         
@@ -867,9 +874,14 @@ final class Result
         return trim($device);
     }
     
-    public function getFullEngine($mode = Version::COMPLETE)
+    public function getFullEngine($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
         $engine  = $this->getCapability('renderingengine_name');
+        
+        if ('unknown' == $engine) {
+            return $engine;
+        }
+        
         $version = $this->getCapability('renderingengine_version')->getVersion(
             $mode
         );

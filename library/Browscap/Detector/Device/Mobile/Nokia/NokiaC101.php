@@ -203,5 +203,4 @@ final class NokiaC101
         
         return $chain->detect();
     }
-    }
 }

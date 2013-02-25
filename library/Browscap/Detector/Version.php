@@ -104,6 +104,11 @@ final class Version
     const IGNORE_MICRO_IF_EMPTY = 64;
     
     /**
+     * @var integer
+     */
+    const COMPLETE_IGNORE_EMPTY = 103;
+    
+    /**
      * @var string the user agent to handle
      */
     private $_useragent = null;
@@ -203,10 +208,15 @@ final class Version
             $versions[2] = $this->_micro;
         }
         
+        $microIsEmpty = false;
+        if (empty($versions[2]) || 0 == $versions[2] || '' == $versions[2]) {
+            $microIsEmpty = true;
+        }
+        
         if (self::IGNORE_MICRO & $mode) {
             unset($versions[2]);
         } elseif (self::IGNORE_MICRO_IF_EMPTY & $mode
-            && empty($versions[2])
+            && $microIsEmpty
         ) {
             unset($versions[2]);
         }
@@ -214,11 +224,20 @@ final class Version
         if (self::IGNORE_MINOR & $mode) {
             unset($versions[1]);
             unset($versions[2]);
-        } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode
-            && empty($versions[1])
-        ) {
-            unset($versions[1]);
-            unset($versions[2]);
+        } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode) {
+            $minorIsEmpty = false;
+            
+            if (empty($versions[1])
+                || 0 == $versions[1]
+                || '' == $versions[1]
+            ) {
+                $minorIsEmpty = true;
+            }
+            
+            if ($minorIsEmpty && $microIsEmpty) {
+                unset($versions[1]);
+                unset($versions[2]);
+            }
         }
         
         return implode('.', $versions);
