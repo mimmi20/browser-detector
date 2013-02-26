@@ -106,7 +106,12 @@ final class Version
     /**
      * @var integer
      */
-    const COMPLETE_IGNORE_EMPTY = 103;
+    const IGNORE_MACRO_IF_EMPTY = 128;
+    
+    /**
+     * @var integer
+     */
+    const COMPLETE_IGNORE_EMPTY = 231;
     
     /**
      * @var string the user agent to handle
@@ -221,26 +226,52 @@ final class Version
             unset($versions[2]);
         }
         
+        $minorIsEmpty = false;
+        
         if (self::IGNORE_MINOR & $mode) {
             unset($versions[1]);
             unset($versions[2]);
+            $minorIsEmpty = true;
         } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode) {
-            $minorIsEmpty = false;
-            
-            if (empty($versions[1])
+            if ((empty($versions[1])
                 || 0 == $versions[1]
-                || '' == $versions[1]
+                || '' == $versions[1])
+                && $microIsEmpty
             ) {
                 $minorIsEmpty = true;
             }
             
-            if ($minorIsEmpty && $microIsEmpty) {
+            if ($minorIsEmpty) {
                 unset($versions[1]);
                 unset($versions[2]);
             }
         }
         
-        return implode('.', $versions);
+        $macroIsEmpty = false;
+        
+        if (self::IGNORE_MACRO_IF_EMPTY & $mode) {
+            if ((empty($versions[0])
+                || 0 == $versions[0]
+                || '' == $versions[0])
+                && $minorIsEmpty
+            ) {
+                $macroIsEmpty = true;
+            }
+            
+            if ($macroIsEmpty) {
+                unset($versions[0]);
+                unset($versions[1]);
+                unset($versions[2]);
+            }
+        }
+        
+        $version = implode('.', $versions);
+        
+        if ('0' === $version || '0.0' === $version || '0.0.0' === $version) {
+            $version = '';
+        }
+        
+        return $version;
     }
     
     /**

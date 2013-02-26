@@ -186,4 +186,18 @@ final class GeneralBot
         
         return $chain->detect();
     }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Unknown();
+        $handler->setUserAgent($this->_useragent);
+        
+        return $handler->detect();
+    }
 }

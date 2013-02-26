@@ -59,7 +59,7 @@ use \Browscap\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class AcerS120LiquidMetal
+final class AcerS120LiquidMT
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {

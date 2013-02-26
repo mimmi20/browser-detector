@@ -818,36 +818,53 @@ final class Result
         );
     }
     
-    public function getFullBrowser(
-        $withBits = true, $mode = Version::COMPLETE_IGNORE_EMPTY)
+    public function getFullBrowser($withBits = true, $mode = null)
     {
+        if (null === $mode) {
+            $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
+        }
+        
         $browser = $this->getCapability('mobile_browser');
+        
+        if ('unknown' == strtolower($browser)) {
+            return 'unknown';
+        }
+        
         $version = $this->getCapability('mobile_browser_version')->getVersion(
             $mode
         );
         
+        if ($browser != $version && '' != $version) {
+            $browser .= ' ' . $version;
+        }
+        
         $bits = $this->getCapability('mobile_browser_bits');
         
-        return $browser 
-            . ($browser != $version && '' != $version ? ' ' . $version : '') 
-            . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+        $browser .= (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+        
+        return trim($browser);
     }
     
-    public function getFullPlatform(
-        $withBits = true, $mode = Version::COMPLETE_IGNORE_EMPTY)
+    public function getFullPlatform($withBits = true, $mode = null)
     {
+        if (null === $mode) {
+            $mode = COMPLETE_IGNORE_EMPTY;
+        }
+        
         $name = $this->getCapability('device_os');
         
-        if ('unknown' == $name) {
-            return $name;
+        if ('unknown' == strtolower($name)) {
+            return 'unknown';
         }
         
         $version = $this->getCapability('device_os_version')->getVersion($mode);
         $bits    = $this->getCapability('device_os_bits');
         
-        return $name
+        $os = $name
             . ($name != $version && '' != $version ? ' ' . $version : '')
             . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+        
+        return trim($os);
     }
     
     /**
@@ -858,6 +875,11 @@ final class Result
     public function getFullDevice($withManufacturer = false)
     {
         $device  = $this->getCapability('model_name');
+        
+        if ('unknown' == strtolower($device)) {
+            return 'unknown';
+        }
+        
         $version = $this->getCapability('model_version');
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
@@ -878,8 +900,8 @@ final class Result
     {
         $engine  = $this->getCapability('renderingengine_name');
         
-        if ('unknown' == $engine) {
-            return $engine;
+        if ('unknown' == strtolower($engine)) {
+            return 'unknown';
         }
         
         $version = $this->getCapability('renderingengine_version')->getVersion(

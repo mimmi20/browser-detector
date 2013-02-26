@@ -247,6 +247,24 @@ class Browscap extends Core
             $browser, 'Device_Maker', true, $deviceName
         );
         
+        switch ($deviceName) {
+            case 'PC':
+                $deviceName = 'Windows Desktop';
+                break;
+            default:
+                // nothing to do
+                break;
+        }
+        
+        switch (strtolower($deviceMaker)) {
+            case 'various':
+                $deviceMaker = 'unknown';
+                break;
+            default:
+                // nothing to do
+                break;
+        }
+        
         $result->setCapability('model_name', $deviceName);
         $result->setCapability('marketing_name', $deviceName);
         $result->setCapability('brand_name', $deviceMaker);
@@ -1037,12 +1055,11 @@ class Browscap extends Core
         
         if (empty($propertyValue)
             || '' == $propertyValue
-            || 'unknown' == strtolower($propertyValue)
         ) {
             $propertyValue = null;
         }
         
-        if ($depended && null !== $propertyValue && empty($dependingValue)) {
+        if ($depended && null !== $propertyValue && !$dependingValue) {
             $propertyValue = null;
         }
         
