@@ -194,6 +194,8 @@ final class Version
             }
             
             $this->detectVersion();
+        } elseif (null === $this->_major) {
+            $this->setVersion($this->_version);
         }
         
         if (null === $mode) {
@@ -214,7 +216,10 @@ final class Version
         }
         
         $microIsEmpty = false;
-        if (empty($versions[2]) || 0 == $versions[2] || '' == $versions[2]) {
+        if (empty($versions[2]) 
+            || '0' === $versions[2] 
+            || '' === $versions[2]
+        ) {
             $microIsEmpty = true;
         }
         
@@ -234,8 +239,8 @@ final class Version
             $minorIsEmpty = true;
         } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode) {
             if ((empty($versions[1])
-                || 0 == $versions[1]
-                || '' == $versions[1])
+                || '0' === $versions[1]
+                || '' === $versions[1])
                 && $microIsEmpty
             ) {
                 $minorIsEmpty = true;
@@ -251,8 +256,8 @@ final class Version
         
         if (self::IGNORE_MACRO_IF_EMPTY & $mode) {
             if ((empty($versions[0])
-                || 0 == $versions[0]
-                || '' == $versions[0])
+                || '0' === $versions[0]
+                || '' === $versions[0])
                 && $minorIsEmpty
             ) {
                 $macroIsEmpty = true;

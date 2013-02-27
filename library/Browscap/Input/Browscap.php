@@ -247,6 +247,14 @@ class Browscap extends Core
             $browser, 'Device_Maker', true, $deviceName
         );
         
+        $deviceMarketingName = $this->_detectProperty(
+            $browser, 'Device_Marketing_Name', true, $deviceName
+        );
+        
+        $deviceBrandName = $this->_detectProperty(
+            $browser, 'Device_Brand_Name', true, $deviceName
+        );
+        
         switch ($deviceName) {
             case 'PC':
                 $deviceName = 'Windows Desktop';
@@ -266,8 +274,8 @@ class Browscap extends Core
         }
         
         $result->setCapability('model_name', $deviceName);
-        $result->setCapability('marketing_name', $deviceName);
-        $result->setCapability('brand_name', $deviceMaker);
+        $result->setCapability('marketing_name', $deviceMarketingName);
+        $result->setCapability('brand_name', $deviceBrandName);
         $result->setCapability('manufacturer_name', $deviceMaker);
         
         $engineName = $this->_detectProperty($browser, 'RenderingEngine_Name');
