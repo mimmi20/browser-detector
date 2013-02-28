@@ -151,8 +151,9 @@ class Browscap extends Core
             case 'Android':
                 $browserName = 'Android Webkit';
                 break;
+            case 'unknown':
             case 'Default Browser':
-                $browserName = 'unknown';
+                $browserName = null;
                 break;
             default:
                 //nothing to do here
@@ -168,7 +169,7 @@ class Browscap extends Core
         
         $detectorBrowser = clone $detector;
         
-        $result->setCapability('mobile_browser', $browserName);
+        $result->setCapability('mobile_browser', $browserName);        
         $result->setCapability(
             'mobile_browser_version',
             $detectorBrowser->setVersion($browserVersion)
@@ -226,6 +227,10 @@ class Browscap extends Core
                 break;
         }
         
+        if ('unknown' === $platformVersion || '' === $platformVersion) {
+            $platformVersion = null;
+        }
+        
         $platformbits = $this->_detectProperty(
             $browser, 'Platform_Bits', true, $platform
         );
@@ -243,6 +248,19 @@ class Browscap extends Core
         $result->setCapability('device_os_manufacturer', $platformMaker);
         
         $deviceName  = $this->_detectProperty($browser, 'Device_Name');
+        
+        switch ($deviceName) {
+            case 'PC':
+                $deviceName = 'Windows Desktop';
+                break;
+            case 'unknown':
+                $deviceName = null;
+                break;
+            default:
+                // nothing to do
+                break;
+        }
+        
         $deviceMaker = $this->_detectProperty(
             $browser, 'Device_Maker', true, $deviceName
         );
@@ -255,18 +273,10 @@ class Browscap extends Core
             $browser, 'Device_Brand_Name', true, $deviceName
         );
         
-        switch ($deviceName) {
-            case 'PC':
-                $deviceName = 'Windows Desktop';
-                break;
-            default:
-                // nothing to do
-                break;
-        }
-        
         switch (strtolower($deviceMaker)) {
+            case 'unknown':
             case 'various':
-                $deviceMaker = 'unknown';
+                $deviceMaker = null;
                 break;
             default:
                 // nothing to do
@@ -285,6 +295,11 @@ class Browscap extends Core
         $engineVersion = $this->_detectProperty(
             $browser, 'RenderingEngine_Version', true, $engineName
         );
+        
+        if ('unknown' === $engineVersion || '' === $engineVersion) {
+            $engineVersion = null;
+        }
+        
         $engineMaker = $this->_detectProperty(
             $browser, 'RenderingEngine_Maker', true, $engineName
         );
