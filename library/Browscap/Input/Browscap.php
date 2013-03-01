@@ -222,6 +222,10 @@ class Browscap extends Core
             case 'BlackBerry OS':
                 $platform = 'RIM OS';
                 break;
+            case 'unknown':
+                $platform        = null;
+                $platformVersion = null;
+                break;
             default:
                 // nothing to do
                 break;
@@ -251,8 +255,7 @@ class Browscap extends Core
         
         switch ($deviceName) {
             case 'PC':
-                $deviceName = 'Windows Desktop';
-                break;
+            case 'Android':
             case 'unknown':
                 $deviceName = null;
                 break;
@@ -289,6 +292,10 @@ class Browscap extends Core
         $result->setCapability('manufacturer_name', $deviceMaker);
         
         $engineName = $this->_detectProperty($browser, 'RenderingEngine_Name');
+        
+        if ('unknown' === $engineName || '' === $engineName) {
+            $engineName = null;
+        }
         
         $detectorEngine = clone $detector;
         
@@ -336,6 +343,8 @@ class Browscap extends Core
         
         if (!empty($browser['Device_isTablet'])) {
             $result->setCapability('is_tablet', $browser['Device_isTablet']);
+        } elseif (!empty($browser['isTablet'])) {
+            $result->setCapability('is_tablet', $browser['isTablet']);
         }
         
         if (!empty($browser['Browser_isBot'])) {
