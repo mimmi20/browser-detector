@@ -807,6 +807,14 @@ class Browscap extends Core
                 $properties['Platform_Maker'] = 'Google';
             }
             
+            if ($properties['Device_Marketing_Name'] == 'unknown') {
+                $properties['Device_Marketing_Name'] = $properties['Device_Name'];
+            }
+            
+            if ($properties['Device_Brand_Name'] == 'unknown') {
+                $properties['Device_Brand_Name'] = $properties['Device_Maker'];
+            }
+            
             $this->_browsers[$key] = $properties;
         }
         

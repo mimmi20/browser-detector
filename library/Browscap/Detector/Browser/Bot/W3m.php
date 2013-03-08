@@ -48,7 +48,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 
 /**
- * OperaHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category  Browscap
@@ -57,7 +57,7 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class FaceBookBot
+class W3m
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -89,10 +89,10 @@ class FaceBookBot
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'FaceBook Bot',
+        'mobile_browser'              => 'w3m',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Facebook', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -117,11 +117,30 @@ class FaceBookBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('facebookexternalhit')) {
+        if (!$this->_utils->checkIfContains('w3m', true)) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('w3m');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
     }
     
     /**
@@ -131,6 +150,6 @@ class FaceBookBot
      */
     public function getWeight()
     {
-        return 3;
+        return 4;
     }
 }

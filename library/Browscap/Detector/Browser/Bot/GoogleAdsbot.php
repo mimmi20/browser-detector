@@ -89,7 +89,7 @@ class GoogleAdsbot
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Google AdsBot',
+        'mobile_browser'              => 'AdsBot-Google',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl

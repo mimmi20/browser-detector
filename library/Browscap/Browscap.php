@@ -92,25 +92,11 @@ class Browscap
     private $_result = null;
     
     /**
-     * the file used in INI mode
-     *
-     * @var string
-     */
-    private $_localFile = null;
-    
-    /**
      * the config object
      *
-     * @var \Wurfl\Configuration\Config
+     * @var mixed
      */
     private $_config = null;
-    
-    /**
-     * the wurfl detector class
-     *
-     * @var
-     */
-    private $_wurflManager = null;
     
     /**
      * sets the cache used to make the detection faster
@@ -173,7 +159,7 @@ class Browscap
     }
 
     /**
-     * sets the the cache prfix
+     * sets the the detection interface
      *
      * @param integer $interface the new Interface to use
      *
@@ -216,39 +202,13 @@ class Browscap
     }
 
     /**
-     * sets the name of the local file
+     * returns the actual interface
      *
-     * @param string $file the file name
-     *
-     * @return void
+     * @return \\Browscap\\Input\\Core
      */
-    public function setLocaleFile($file)
+    public function getInterface()
     {
-        $this->_localFile = $file;
-    }
-    
-    /**
-     * sets ab wurfl detection manager
-     *
-     * @var \Wurfl\ManagerFactory|\Wurfl\Manager
-     *
-     * @return \Browscap\Input\Browscap
-     */
-    public function setWurflManager($wurfl)
-    {
-        if ($wurfl instanceof \Wurfl\ManagerFactory) {
-            $wurfl = $wurfl->create();
-        }
-        
-        if (!($wurfl instanceof \Wurfl\Manager)) {
-            throw new \UnexpectedValueException(
-                'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory or an instance of \\Wurfl\\ManagerFactory'
-            );
-        }
-        
-        $this->_wurflManager = $wurfl;
-        
-        return $this;
+        return $this->_interface;
     }
 
     /**
@@ -280,26 +240,6 @@ class Browscap
         }
         
         if ($forceDetect || !$result) {
-            if (null !== $this->_localFile 
-                && $this->_interface instanceof \Browscap\Input\Browscap
-            ) {
-                /*
-                 * set the local file
-                 * only needed for the ini-mode
-                 */
-                $this->_interface->setLocaleFile($this->_localFile);
-            }
-            
-            if (null !== $this->_wurflManager 
-                && $this->_interface instanceof \Browscap\Input\Wurfl
-            ) {
-                /*
-                 * set the local file
-                 * only needed for the ini-mode
-                 */
-                $this->_interface->setWurflManager($this->_wurflManager);
-            }
-            
             $this->_interface->setCache($this->_cache)
                 ->setCachePrefix($this->_cachePrefix)
                 ->setAgent($this->_agent)
