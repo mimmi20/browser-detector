@@ -203,7 +203,7 @@ final class Utils
         'user-agent: ',
         'www.auto.de', 
         'auto.de',
-        'w3m',
+        //'w3m',
         'www.kredit.de', 
         'www.geld.de', 
         'www.versicherungen.de', 

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -72,7 +72,7 @@ class W3m
         // kind of device
         // 'is_wireless_device' => null,
         // 'is_tablet'          => null,
-        'is_bot'             => true,
+        'is_bot'             => false,
         // 'is_smarttv'         => null,
         // 'is_console'         => null,
         // 'ux_full_desktop'    => null,

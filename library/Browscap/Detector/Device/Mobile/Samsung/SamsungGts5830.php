@@ -146,6 +146,10 @@ final class SamsungGts5830
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('GT-S5830i', 'GT-S5830L'))) {
+            return false;
+        }
+        
         return true;
     }
     
