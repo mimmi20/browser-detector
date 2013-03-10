@@ -407,7 +407,8 @@ class Browscap extends Core
         $this->_properties = array_keys($browsers['DefaultProperties']);
         array_unshift(
             $this->_properties,
-            'Parent'
+            'Parent',
+            'Parents'
         );
 
         $this->_userAgents = array_keys($browsers);
@@ -467,12 +468,12 @@ class Browscap extends Core
                 continue;
             }
             
-            $version = explode('.', $properties['Version'], 2);
+            $version = explode('.', $properties['Browser_Version'], 2);
             $properties['MajorVer'] = $version[0];
             $properties['MinorVer'] = (isset($version[1]) ? $version[1] : '');
             
-            $properties['Browser_Version'] = $properties['Version'];
-            $properties['Browser_Name'] = $properties['Browser'];
+            $properties['Version'] = $properties['Browser_Version'];
+            $properties['Browser'] = $properties['Browser_Name'];
             
             if ('0.0' != $properties['Browser_Version']) {
                 $properties['Browser_Full'] = trim($properties['Browser_Name'] . ' ' . $properties['Browser_Version']);
@@ -481,55 +482,43 @@ class Browscap extends Core
             }
             
             $properties['Browser_isSyndicationReader'] = $properties['isSyndicationReader'];
-            $properties['Browser_isBot'] = $properties['Crawler'];
-            $properties['Browser_isAlpha'] = $properties['Alpha'];
-            $properties['Browser_isBeta'] = $properties['Beta'];
+            $properties['Crawler'] = $properties['Browser_isBot'];
+            $properties['Alpha']   = $properties['Browser_isAlpha'];
+            $properties['Beta']    = $properties['Browser_isBeta'];
             
             $utils = new \Browscap\Helper\Utils();
             $utils->setUserAgent($this->_userAgents[$key]);
             
-            //if ($properties['Browser_Bits'] == 0) {
-                if ($properties['Win64']) {
-                    $properties['Browser_Bits'] = 64;
-                } elseif ($properties['Win32']) {
-                    $properties['Browser_Bits'] = 32;
-                } elseif ($properties['Win16']) {
-                    $properties['Browser_Bits'] = 16;
-                }
-                
-                if ($utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
-                    // 64 bits
-                    $properties['Browser_Bits'] = 64;
-                } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
-                    // old deprecated 16 bit windows systems
-                    $properties['Browser_Bits'] = 16;
-                } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
-                    // old deprecated 16 bit windows systems
-                    $properties['Browser_Bits'] = 8; //CP/M; 8-bit
-                } else {
-                    // general windows or a 32 bit browser on a 64 bit system (WOW64)
-                    $properties['Browser_Bits'] = 32;
-                }
-            //}
+            if ($utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
+                // 64 bits
+                $properties['Browser_Bits'] = 64;
+            } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+                // old deprecated 16 bit windows systems
+                $properties['Browser_Bits'] = 16;
+            } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
+                // old deprecated 16 bit windows systems
+                $properties['Browser_Bits'] = 8; //CP/M; 8-bit
+            } else {
+                // general windows or a 32 bit browser on a 64 bit system (WOW64)
+                $properties['Browser_Bits'] = 32;
+            }
             
-            //if ($properties['Platform_Bits'] == 0) {
-                if ($utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
-                    $properties['Platform_Bits'] = 64;
-                } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
-                    $properties['Platform_Bits'] = 16;
-                } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
-                    // old deprecated 16 bit windows systems
-                    $properties['Platform_Bits'] = 8; //CP/M; 8-bit
-                } else {
-                    $properties['Platform_Bits'] = 32;
-                }
-            //}
+            if ($utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
+                $properties['Platform_Bits'] = 64;
+            } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+                $properties['Platform_Bits'] = 16;
+            } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
+                // old deprecated 16 bit windows systems
+                $properties['Platform_Bits'] = 8; //CP/M; 8-bit
+            } else {
+                $properties['Platform_Bits'] = 32;
+            }
             
             $properties['Win64'] = false;
             $properties['Win32'] = false;
             $properties['Win16'] = false;
                 
-            if ('Windows' == $properties['Platform']) {
+            if ('Windows' == $properties['Platform_Name']) {
                 if (64 == $properties['Browser_Bits']) {
                     $properties['Win64'] = true;
                 } elseif (32 == $properties['Browser_Bits']) {
@@ -539,7 +528,7 @@ class Browscap extends Core
                 }
             }
             
-            $properties['Platform_Name'] = $properties['Platform'];
+            $properties['Platform'] = $properties['Platform_Name'];
             
             if ('0.0' != $properties['Platform_Version']) {
                 $properties['Platform_Full'] = trim($properties['Platform_Name'] . ' ' . $properties['Platform_Version']);
@@ -552,8 +541,8 @@ class Browscap extends Core
             } else {
                 $properties['RenderingEngine_Full'] = $properties['RenderingEngine_Name'];
             }
-            $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
-            $properties['Device_isTablet'] = $properties['isTablet'];
+            $properties['isMobileDevice'] = $properties['Device_isMobileDevice'];
+            $properties['isTablet']       = $properties['Device_isTablet'];
             
             if ('DefaultProperties' == $this->_userAgents[$key] 
                 || '*' == $this->_userAgents[$key]
@@ -628,11 +617,13 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
+                $properties['Platform_Name'] = 'Symbian OS';
                 $properties['Platform_Maker'] = 'Nokia';
             } elseif (($properties['Platform_Name'] == 'Linux' 
                 || $properties['Platform_Name'] == 'Debian'
                 || $properties['Platform_Name'] == 'CentOS')
                 && $properties['Device_isMobileDevice'] == false
+                && $properties['Device_isTv'] == false
             ) {
                 $properties['Device_Name'] = 'Linux Desktop';
                 $properties['Device_Maker'] = 'unknown';
@@ -642,6 +633,19 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
+            } elseif (($properties['Platform_Name'] == 'Linux' 
+                || $properties['Platform_Name'] == 'Debian'
+                || $properties['Platform_Name'] == 'CentOS')
+                && $properties['Device_isTv'] == true
+            ) {
+                $properties['Device_Name'] = 'general TV Device';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = true;
             } elseif ($properties['Platform_Name'] == 'Linux' 
                 && $properties['Device_isMobileDevice'] == true
             ) {
@@ -805,6 +809,15 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Google';
+            } elseif ($properties['Platform_Name'] == 'Ubuntu') {
+                $properties['Device_Name'] = 'Linux Desktop';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Canonical';
             }
             
             if ($properties['Device_Marketing_Name'] == 'unknown') {
@@ -819,14 +832,37 @@ class Browscap extends Core
         }
         
         $allBrowsers = array();
+        $parents     = array();
+        $groups      = array();
         
         foreach ($this->_browsers as $key => $properties) {
             $allBrowsers[$this->_userAgents[$key]] = array($key, $properties);
         }
         
+        foreach ($allBrowsers as $title => $data) {
+            $x = 0;
+            
+            $key        = $data[0];
+            $properties = $data[1];
+            
+            $groups[$properties['Parents']][] = $title;
+            
+            $parents[$title] = explode(',', $properties['Parents']);
+        }
+        
         //sort
-        $sort1 = array();
-        $sort2 = array();
+        $sort1  = array();
+        $sort2  = array();
+        $sort3  = array();
+        $sort4  = array();
+        $sort5  = array();
+        $sort6  = array();
+        $sort7  = array();
+        $sort8  = array();
+        $sort9  = array();
+        $sort10 = array();
+        $sort11 = array();
+        $sort12 = array();
         
         foreach ($allBrowsers as $title => $data) {
             $x = 0;
@@ -858,12 +894,89 @@ class Browscap extends Core
                     // nothing to do here
                     break;
             }
+            
             $sort1[$title] = $x;
-            $sort2[$title] = $key;
+            $sort2[$title] = strtolower($properties['Browser_Name']);
+            $sort3[$title] = strtolower($properties['Browser_Version']);
+            $sort5[$title] = $properties['Browser_Bits'];
+            $sort4[$title] = strtolower($properties['Platform_Name']);
+            
+            $version = 0;
+            
+            switch ($properties['Platform_Version']) {
+                case '3.1':
+                    $version = 3.1;
+                    break;
+                case '95':
+                    $version = 3.2;
+                    break;
+                case 'NT':
+                    $version = 4;
+                    break;
+                case '98':
+                    $version = 4.1;
+                    break;
+                case 'ME':
+                    $version = 4.2;
+                    break;
+                case '2000':
+                    $version = 4.3;
+                    break;
+                case 'XP':
+                    $version = 4.4;
+                    break;
+                case '2003':
+                    $version = 4.5;
+                    break;
+                case 'Vista':
+                    $version = 6;
+                    break;
+                case '7':
+                    $version = 7;
+                    break;
+                case '8':
+                    $version = 8;
+                    break;
+                default:
+                    $version = $properties['Platform_Version'];
+                    break;
+            }
+            
+            $sort6[$title] = $version;
+            $sort9[$title]  = $properties['Platform_Bits'];
+            
+            $parents = $properties['Parents'] . ',' . $title;
+            
+            if (!empty($groups[$parents])) {
+                $group    = $parents;
+                $subgroup = 0;
+            } else {
+                $group    = $properties['Parents'];
+                $subgroup = 1;
+            }
+            
+            $sort7[$title]  = strtolower($group);
+            $sort8[$title]  = $subgroup;
+            $sort10[$title] = $key;
+            $sort11[$title] = strtolower($properties['Device_Brand_Name']);
+            $sort12[$title] = strtolower($properties['Device_Name']);
         }
         
-        array_multisort($sort1, SORT_ASC, $sort2, SORT_ASC, $allBrowsers);
-        /**/
+        array_multisort(
+            $sort1, SORT_ASC, 
+            $sort7, SORT_ASC, 
+            $sort8, SORT_ASC, 
+            $sort2, SORT_ASC,  // Browser Name
+            $sort3, SORT_ASC,  // Browser Version
+            $sort5, SORT_DESC, // Browser Bits
+            $sort4, SORT_ASC,  // Platform Name
+            $sort6, SORT_ASC,  // Platform Version
+            $sort9, SORT_DESC, // Platform Bits
+            $sort11, SORT_ASC, // Device Hersteller
+            $sort12, SORT_ASC, // Device Name
+            $sort10, SORT_ASC, 
+            $allBrowsers
+        );
         
         $output = '';
         
@@ -914,19 +1027,28 @@ class Browscap extends Core
             
             // create output
             
-            if (false === strpos($title, '*') 
-                && false === strpos($title, '?')
-                && ('DefaultProperties' == $title
+            if ('DefaultProperties' == $title
+                || empty($properties['Parent'])
                 || 'DefaultProperties' == $properties['Parent']
-                )
             ) {
                 $output .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; ' . $title . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n\n";
+            }
+            
+            $parents = $properties['Parents'] . ',' . $title;
+            
+            if ('DefaultProperties' != $title
+                && !empty($properties['Parent'])
+                && 'DefaultProperties' != $properties['Parent']
+                && !empty($groups[$parents])
+                && count($groups[$parents])
+            ) {
+                $output .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $title . "\n\n";
             }
             
             $output .= '[' . $title . ']' . "\n";
             
             foreach ($this->_properties as $property) {
-                if (!isset($propertiesToOutput[$property])) {
+                if (!isset($propertiesToOutput[$property]) || 'Parents' === $property) {
                     continue;
                 }
                 
@@ -1059,6 +1181,9 @@ class Browscap extends Core
                 $browserData = array_merge($browserData, $browsers[$parent]);
             }
         }
+        
+        array_pop($parents);
+        $browserData['Parents'] = implode(',', $parents);
 
         $search  = array('\*', '\?');
         $replace = array('.*', '.');

@@ -89,7 +89,7 @@ class Msnbot
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Msnbot',
+        'mobile_browser'              => 'msnbot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Microsoft', // not in wurfl
