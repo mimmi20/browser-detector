@@ -89,13 +89,6 @@ final class Wurfl extends Core
     private $_device = null;
     
     /**
-     * the detection result
-     *
-     * @var \Browscap\Detector\Result
-     */
-    private $_result = null;
-    
-    /**
      * the wurfl detector class
      *
      * @var
@@ -206,10 +199,249 @@ final class Wurfl extends Core
             );
         }
         
-        $device        = $this->_wurflManager->getDeviceForUserAgent($this->_agent);
-        $allProperties = $device->getAllCapabilities();
+        try {
+            $agent         = str_replace('Toolbar', '', $this->_agent);
+            $device        = $this->_wurflManager->getDeviceForUserAgent($agent);
+            $allProperties = $device->getAllCapabilities();
+            
+            $apiKey = $device->id;
+            $apiMob = ('true' === $device->getCapability('is_wireless_device'));
+            
+            if ($apiMob) {
+                $apiOs  = ('iPhone OS' == $device->getCapability('device_os') ? 'iOS' : $device->getCapability('device_os'));
+                $apiBro = $device->getCapability('mobile_browser');
+                $apiVer = $device->getCapability('mobile_browser_version');
+                $apiDev = $device->getCapability('model_name');
+                $apiTab = ('true' === $device->getCapability('is_tablet'));
+                $apiMan = $device->getCapability('manufacturer_name');
+            } else {
+                $apiOs  = null;
+                $apiBro = $device->getCapability('brand_name');
+                $apiVer = $device->getCapability('model_name');
+                $apiDev = null;
+                $apiTab = false;
+                $apiMan = null;
+            }
+            
+            $apiBot     = ('true' === $device->getCapability('is_bot'));
+            $apiTv      = ('true' === $device->getCapability('is_smarttv'));
+            $apiDesktop = ('true' === $device->getCapability('ux_full_desktop'));
+            
+            $apiOs = trim($apiOs);
+            if (!$apiOs) {
+                $apiOs = null;
+            } else {
+                $apiOs = trim($apiOs);
+            }
+            
+            switch (strtolower($apiDev)) {
+                case 'android 1.6':
+                case 'android 2.0':
+                case 'android 2.1':
+                case 'android 2.2':
+                case 'android 2.3':
+                case 'android 3.0':
+                case 'android 4.0':
+                case 'android 4.1':
+                case 'android 4.2':
+                case 'disguised as macintosh':
+                case 'mini 5':
+                case 'windows mobile 6.5':
+                case 'windows mobile 7.5':
+                case 'fennec tablet':
+                case 'tablet on android':
+                case 'fennec':
+                    $apiDev = 'general Mobile Device';
+                    break;
+                case 'opera for series 60':
+                    $apiDev = 'general Nokia Device';
+                    break;
+                case 'gt s8500':
+                    $apiDev = 'GT-S8500';
+                    break;
+                case 'motomz616':
+                    $apiDev = 'MZ616';
+                    break;
+                case 'gp-p6810':
+                    $apiDev = 'GT-P6810';
+                    break;
+                case 'lg/c550/v1.0':
+                    $apiDev = 'C550';
+                    break;
+                case 'gt-i8350':
+                    $apiDev = 'GT-I8350';
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+            
+            if ('Generic' == $apiMan || 'Opera' == $apiMan) {
+                $apiMan = null;
+                $apiDev = null;
+            }
+            
+            $apiDev = trim($apiDev);
+            if (!$apiDev) {
+                $apiDev = null;
+            }
+            
+            switch (strtolower($apiBro)) {
+                case 'microsoft':
+                    switch (strtolower($apiVer)) {
+                        case 'internet explorer 10':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '10.0';
+                            break;
+                        case 'internet explorer 9':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '9.0';
+                            break;
+                        case 'internet explorer 8':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '8.0';
+                            break;
+                        case 'internet explorer 7':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '7.0';
+                            break;
+                        case 'internet explorer 6':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '6.0';
+                            break;
+                        case 'internet explorer 5.5':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '5.5';
+                            break;
+                        case 'internet explorer 5':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '5.0';
+                            break;
+                        case 'internet explorer 4.0':
+                        case 'internet explorer 4':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '4.0';
+                            break;
+                        case 'mobile explorer':
+                            $apiBro = 'IEMobile';
+                            $apiVer = '';
+                            break;
+                        case 'mobile explorer 4.0':
+                            $apiBro = 'IEMobile';
+                            $apiVer = '4.0';
+                            break;
+                        case 'mobile explorer 6':
+                            $apiBro = 'IEMobile';
+                            $apiVer = '6.0';
+                            break;
+                        case 'mobile explorer 7.6':
+                            $apiBro = 'IEMobile';
+                            $apiVer = '7.6';
+                            break;
+                        case 'mobile explorer 7.11':
+                            $apiBro = 'IEMobile';
+                            $apiVer = '7.11';
+                            break;
+                        case 'mobile explorer 6.12':
+                            $apiBro = 'IEMobile';
+                            $apiVer = '6.12';
+                            break;
+                        default:
+                            // nothing to do
+                            break;
+                    }
+                    break;
+                case 'microsoft mobile explorer':
+                    $apiBro = 'IEMobile';
+                    break;
+                case 'msie':
+                    $apiBro = 'Internet Explorer';
+                    break;
+                case 'opera mobi':
+                    $apiBro = 'Opera Mobile';
+                    break;
+                case 'chrome mobile':
+                case 'chrome':
+                    $apiBro = 'Chrome';
+                    $apiVer = '';
+                    break;
+                case 'firefox':
+                    $apiBro = 'Firefox';
+                    if ('3.0' == $apiVer) {
+                        $apiVer = null;
+                    }
+                    break;
+                case 'safari':
+                    $apiBro = 'Safari';
+                    break;
+                case 'opera':
+                    $apiBro = 'Opera';
+                    break;
+                case 'konqueror':
+                    $apiBro = 'Konqueror';
+                    break;
+                case 'access netfront':
+                    $apiBro = 'NetFront';
+                    break;
+                case 'nokia':
+                case 'nokia browserng':
+                    $apiBro = 'Nokia Browser';
+                    break;
+                case 'google bot':
+                case 'facebook bot':
+                    $apiDesktop = false;
+                    $apiBot     = true;
+                    break;
+                case 'chrome':
+                    if ($apiVer == '2.0') {
+                        $apiVer = '';
+                    }
+                    break;
+                case 'generic web browser':
+                case 'robot bot or crawler':
+                    $apiBro     = null;
+                    $apiOs      = null;
+                    $apiMob     = null;
+                    $apiTab     = null;
+                    $apiDev     = null;
+                    $apiMan     = null;
+                    $apiBot     = null;
+                    $apiTv      = null;
+                    $apiDesktop = null;
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+            
+            $apiBro .= ' ' . $apiVer;
+            $apiBro = trim($apiBro);
+            if (!$apiBro) {
+                $apiBro     = null;
+                $apiOs      = null;
+                $apiMob     = null;
+                $apiTab     = null;
+                $apiDev     = null;
+                $apiMan     = null;
+                $apiBot     = null;
+                $apiTv      = null;
+                $apiDesktop = null;
+            }
+        } catch(Exception $e) {
+            $apiKey = 'error';
+            $apiMob = false;
+            $apiOs  = 'error';
+            $apiBro = $e->getMessage();
+            $apiVer = '';
+            $apiDev = 'error';
+            $apiTab = false;
+            $apiMan = null;
+            $apiBot = true;
+            $apiTv  = false;
+            $apiDesktop = false;
+        }
         
-        $this->_result = new Result();
+        $result = new Result();
         
         foreach ($allProperties as $capabilityName => $capabilityValue) {
             switch ($capabilityValue) {
@@ -224,16 +456,39 @@ final class Wurfl extends Core
                 case null:
                 case 'unknown':
                     $capabilityValue = null;
+                    break;
+                default:
+                    // nothing to do here
+                    break;
             }
             
-            switch ($capabilityName) {
-                case 
-            }
-            
-            $this->_result->setCapability($capabilityName, $capabilityValue)
+            $result->setCapability($capabilityName, $capabilityValue)
         }
         
-        return $this->_result;
+        $result->setCapability('mobile_browser', $apiBro);        
+        $result->setCapability(
+            'mobile_browser_version',
+            $detectorBrowser->setVersion($apiVer)
+        );
+        
+        $result->setCapability('device_os', $apiOs);
+        
+        $result->setCapability('model_name', $apiDev);
+        $result->setCapability('manufacturer_name', $apiMan);
+        
+        $result->setCapability('is_bot', $apiBot);
+        
+        if ($apiBot) {
+            $apiDesktop = false;
+            $apiTv      = false;
+        }
+        
+        $result->setCapability('is_smarttv', $apiTv);
+        $result->setCapability('ux_full_desktop', $apiDesktop);
+        
+        $result->setCapability('wurflKey', $apiKey);
+        
+        return $result;
     }
 
     /**

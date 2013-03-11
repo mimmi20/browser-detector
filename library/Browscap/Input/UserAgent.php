@@ -50,7 +50,7 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * Browser detection class
  *
  * @category  Browscap
  * @package   Browscap

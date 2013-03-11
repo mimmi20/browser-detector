@@ -240,6 +240,7 @@ final class Version
         } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode) {
             if ((empty($versions[1])
                 || '0' === $versions[1]
+                || '00' === $versions[1]
                 || '' === $versions[1])
                 && $microIsEmpty
             ) {

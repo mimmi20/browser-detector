@@ -185,7 +185,8 @@ final class GeneralDesktop
         }
         
         $otherDesktops = array(
-            'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd'
+            'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
+            'google desktop'
         );
         
         if ($this->_utils->checkIfContains($otherDesktops, true)) {

@@ -752,7 +752,7 @@ final class Result
             }
             
             try {
-            $this->setCapability($capabilityName, $capabilityValue);
+                $this->setCapability($capabilityName, $capabilityValue);
             } catch (\Exception $e) {
                 echo var_export($capabilities, true) . "\n\n";
                 echo $e->getMessage() . "\n\n" . $e->getTraceAsString();

@@ -178,7 +178,12 @@ class Browscap extends Core
         
         $result->setCapability('mobile_browser_manufacturer', $browserMaker);
         
-        $platform        = $this->_detectProperty($browser, 'Platform');
+        if (!empty($browser['Platform_Name'])) {
+            $platform = $this->_detectProperty($browser, 'Platform_Name');
+        } else {
+            $platform = $this->_detectProperty($browser, 'Platform');
+        }
+        
         $platformVersion = $this->_detectProperty(
             $browser, 'Platform_Version', true, $platform
         );
@@ -297,6 +302,7 @@ class Browscap extends Core
             $engineName = null;
         }
         
+        /*
         $detectorEngine = clone $detector;
         
         $engineVersion = $this->_detectProperty(
@@ -306,6 +312,7 @@ class Browscap extends Core
         if ('unknown' === $engineVersion || '' === $engineVersion) {
             $engineVersion = null;
         }
+        /**/
         
         $engineMaker = $this->_detectProperty(
             $browser, 'RenderingEngine_Maker', true, $engineName
@@ -315,10 +322,12 @@ class Browscap extends Core
             'renderingengine_name', $engineName
         );
         
+        /*
         $result->setCapability(
             'renderingengine_version',
             $detectorEngine->setVersion($engineVersion)
         );
+        /**/
         
         $result->setCapability('renderingengine_manufacturer', $engineMaker);
         
@@ -556,6 +565,11 @@ class Browscap extends Core
                 $properties['RenderingEngine_Version'] = '0.0';
                 $properties['RenderingEngine_Description'] = 'unknown';
                 $properties['isTablet'] = false;
+                $properties['Win64'] = false;
+                $properties['Win32'] = false;
+                $properties['Win16'] = false;
+                $properties['Platform_Bits'] = 0;
+                $properties['Browser_Bits'] = 0;
             } elseif ($properties['Device_Maker'] == 'RIM') {
                 $properties['Device_Maker'] = 'RIM';
                 $properties['isMobileDevice'] = true;
@@ -818,6 +832,7 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Canonical';
+                $properties['Platform_Bits'] = 0;
             }
             
             if ($properties['Device_Marketing_Name'] == 'unknown') {
