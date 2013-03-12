@@ -187,7 +187,7 @@ class Browscap
                 $this->_interface = new \Browscap\Input\UserAgent();
                 break;
             case self::INTERFACE_WURFL:
-                $this->_interface = new \Browscap\Input\Browscap();
+                $this->_interface = new \Browscap\Input\Wurfl();
                 $this->_interface->setCache($this->_cache);
                 $this->_interface->setCachePrefix($this->_cachePrefix);
                 break;

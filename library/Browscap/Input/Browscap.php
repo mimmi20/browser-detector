@@ -484,7 +484,9 @@ class Browscap extends Core
             $properties['Version'] = $properties['Browser_Version'];
             $properties['Browser'] = $properties['Browser_Name'];
             
-            if ('0.0' != $properties['Browser_Version']) {
+            if (!empty($properties['Browser_Version']) 
+                && '0.0' != $properties['Browser_Version']
+            ) {
                 $properties['Browser_Full'] = trim($properties['Browser_Name'] . ' ' . $properties['Browser_Version']);
             } else {
                 $properties['Browser_Full'] = $properties['Browser_Name'];
@@ -550,8 +552,16 @@ class Browscap extends Core
             } else {
                 $properties['RenderingEngine_Full'] = $properties['RenderingEngine_Name'];
             }
-            $properties['isMobileDevice'] = $properties['Device_isMobileDevice'];
-            $properties['isTablet']       = $properties['Device_isTablet'];
+            
+            if (!empty($properties['Device_isMobileDevice'])) {
+                $properties['isMobileDevice'] = $properties['Device_isMobileDevice'];
+            }
+            
+            if (!empty($properties['Device_isTablet'])) {
+                $properties['isTablet'] = $properties['Device_isTablet'];
+            }
+            
+            $platform = $properties['Browser_Bits'];
             
             if ('DefaultProperties' == $this->_userAgents[$key] 
                 || '*' == $this->_userAgents[$key]

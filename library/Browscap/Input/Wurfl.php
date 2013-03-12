@@ -96,16 +96,6 @@ final class Wurfl extends Core
     private $_wurflManager = null;
     
     /**
-     * the cache class
-     *
-     * @var
-     */
-    private $_cache = null;
-    
-    /** @var string */
-    private $_cachePrefix = null;
-    
-    /**
      * the config object
      *
      * @var \Wurfl\Configuration\Config
@@ -462,7 +452,7 @@ final class Wurfl extends Core
                     break;
             }
             
-            $result->setCapability($capabilityName, $capabilityValue)
+            $result->setCapability($capabilityName, $capabilityValue);
         }
         
         $result->setCapability('mobile_browser', $apiBro);        
