@@ -81,7 +81,7 @@ final class PlayStation3
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'PlayStation 3',
+        'model_name'                => 'Playstation 3',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
         'brand_name'                => 'Sony',
@@ -202,7 +202,7 @@ final class PlayStation3
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Java(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

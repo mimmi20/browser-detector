@@ -366,6 +366,15 @@ final class Utils
             }
         }
         
+        $doMatch = preg_match('/^Mozilla/5.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko/.* Firefox\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch 
+            && (float)$matches[2] >= 4 
+            && ((float)$matches[1] != (float)$matches[2])
+        ) {
+            return true;
+        }
+        
         $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch && $matches[1] > 2) {

@@ -81,12 +81,12 @@ final class HtcS510b
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'S510B - Rhyme',
+        'model_name'                => 'S510B',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Rhyme',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

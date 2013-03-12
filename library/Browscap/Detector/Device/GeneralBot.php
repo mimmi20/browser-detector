@@ -195,9 +195,18 @@ final class GeneralBot
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Unknown();
-        $handler->setUserAgent($this->_useragent);
+        $osPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . 'Os'
+            . DIRECTORY_SEPARATOR
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace('\\Browscap\\Detector\\Os');
+        $chain->setDirectory($osPath);
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        
+        return $chain->detect();
     }
 }

@@ -179,7 +179,7 @@ final class MicrosoftXbox
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\LinuxTv();
+        $handler = new \Browscap\Detector\Os\Windows();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
@@ -194,13 +194,7 @@ final class MicrosoftXbox
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Tv\Boxee(),
-            new \Browscap\Detector\Browser\Tv\Safari(),
-            new \Browscap\Detector\Browser\Tv\Opera(),
-            new \Browscap\Detector\Browser\Tv\SmartTvWebBrowser(),
-            new \Browscap\Detector\Browser\Tv\SmartTv(),
-            new \Browscap\Detector\Browser\Tv\HbbTv(),
-            new \Browscap\Detector\Browser\Tv\InettvBrowser()
+            new \Browscap\Detector\Browser\Tv\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();

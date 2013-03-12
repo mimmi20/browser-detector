@@ -118,7 +118,7 @@ class Nagios
     public function canHandle()
     {
         if (!$this->_utils->checkIfStartsWith('check_http/')
-            || !$this->_utils->checkIfContains('nagios-plugins')
+            && !$this->_utils->checkIfContains('nagios-plugins')
         ) {
             return false;
         }

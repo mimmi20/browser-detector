@@ -89,7 +89,7 @@ class SeznamBot
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Seznam Bot',
+        'mobile_browser'              => 'SeznamBot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'unknown', // not in wurfl

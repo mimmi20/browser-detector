@@ -983,10 +983,10 @@ class Browscap extends Core
             $sort8, SORT_ASC, 
             $sort2, SORT_ASC,  // Browser Name
             $sort3, SORT_ASC,  // Browser Version
-            $sort5, SORT_DESC, // Browser Bits
             $sort4, SORT_ASC,  // Platform Name
             $sort6, SORT_ASC,  // Platform Version
             $sort9, SORT_DESC, // Platform Bits
+            $sort5, SORT_DESC, // Browser Bits
             $sort11, SORT_ASC, // Device Hersteller
             $sort12, SORT_ASC, // Device Name
             $sort10, SORT_ASC, 
