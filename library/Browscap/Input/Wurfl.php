@@ -266,9 +266,21 @@ final class Wurfl extends Core
                     break;
             }
             
+            $marketingName = $device->getCapability('marketing_name');
+            
+            switch ($marketingName) {
+                case 'Galaxy SII':
+                    $marketingName = 'Galaxy S II';
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+            
             if ('Generic' == $apiMan || 'Opera' == $apiMan) {
                 $apiMan = null;
                 $apiDev = null;
+                $marketingName = null;
             }
             
             $apiDev = trim($apiDev);
@@ -404,7 +416,6 @@ final class Wurfl extends Core
                     break;
             }
             
-            $apiBro .= ' ' . $apiVer;
             $apiBro = trim($apiBro);
             if (!$apiBro) {
                 $apiBro     = null;
@@ -465,6 +476,7 @@ final class Wurfl extends Core
         
         $result->setCapability('model_name', $apiDev);
         $result->setCapability('manufacturer_name', $apiMan);
+        $result->setCapability('marketing_name', $marketingName);
         
         $result->setCapability('is_bot', $apiBot);
         
