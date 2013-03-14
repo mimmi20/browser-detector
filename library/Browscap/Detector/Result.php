@@ -654,6 +654,9 @@ final class Result
         'nfc_support' => null,
     );
     
+    /**
+     * the class constructor
+     */
     public function __construct()
     {
         $detector = new Version();
@@ -896,6 +899,13 @@ final class Result
         return trim($device);
     }
     
+    /**
+     * return the Name of the rendering engine with the version
+     *
+     * @param integer $mode The format the version should be formated
+     *
+     * @return string
+     */
     public function getFullEngine($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
         $engine  = $this->getCapability('renderingengine_name');

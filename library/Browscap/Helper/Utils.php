@@ -366,7 +366,7 @@ final class Utils
             }
         }
         
-        $doMatch = preg_match('/^Mozilla/5.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko/.* Firefox\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/^Mozilla\/5\.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko\/.* Firefox\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch 
             && (float)$matches[2] >= 4 

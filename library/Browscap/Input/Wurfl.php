@@ -48,6 +48,7 @@ use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
+use \Browscap\Detector\Version;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -444,6 +445,11 @@ final class Wurfl extends Core
         
         $result = new Result();
         
+        $versionfields = array(
+            'mobile_browser_version', 'renderingengine_version', 
+            'device_os_version'
+        );
+        
         foreach ($allProperties as $capabilityName => $capabilityValue) {
             switch ($capabilityValue) {
                 case 'true':
@@ -463,13 +469,20 @@ final class Wurfl extends Core
                     break;
             }
             
+            if (in_array($capabilityName, $versionfields)) {
+                $version = new Version();
+                $capabilityValue = $version->setVersion($capabilityValue);
+            }
+            
             $result->setCapability($capabilityName, $capabilityValue);
         }
+        
+        $version = new Version();
         
         $result->setCapability('mobile_browser', $apiBro);        
         $result->setCapability(
             'mobile_browser_version',
-            $detectorBrowser->setVersion($apiVer)
+            $version->setVersion($apiVer)
         );
         
         $result->setCapability('device_os', $apiOs);
