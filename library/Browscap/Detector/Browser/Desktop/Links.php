@@ -134,7 +134,7 @@ class Links
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Links');
+        $searches = array('Links', 'Links (');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

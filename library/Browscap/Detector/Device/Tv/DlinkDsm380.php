@@ -83,7 +83,7 @@ final class DlinkDsm380
         // device
         'model_name'                => 'DSM 380',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'DLink',
+        'manufacturer_name'         => 'D-Link',
         'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,

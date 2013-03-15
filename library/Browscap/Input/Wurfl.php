@@ -451,27 +451,22 @@ final class Wurfl extends Core
         );
         
         foreach ($allProperties as $capabilityName => $capabilityValue) {
-            switch ($capabilityValue) {
-                case 'true':
-                case true:
-                    $capabilityValue = true;
-                    break;
-                case 'false':
-                case false:
-                    $capabilityValue = false;
-                    break;
-                case null:
-                case 'unknown':
-                    $capabilityValue = null;
-                    break;
-                default:
-                    // nothing to do here
-                    break;
-            }
-            
             if (in_array($capabilityName, $versionfields)) {
                 $version = new Version();
                 $capabilityValue = $version->setVersion($capabilityValue);
+            } elseif ('unknown' === $capabilityValue
+                || 'null' === $capabilityValue
+                || null === $capabilityValue
+            ) {
+                $capabilityValue = null;
+            } elseif ('false' === $capabilityValue
+                || false === $capabilityValue
+            ) {
+                $capabilityValue = false;
+            } elseif ('true' === $capabilityValue
+                || true === $capabilityValue
+            ) {
+                $capabilityValue = true;
             }
             
             $result->setCapability($capabilityName, $capabilityValue);
@@ -491,15 +486,23 @@ final class Wurfl extends Core
         $result->setCapability('manufacturer_name', $apiMan);
         $result->setCapability('marketing_name', $marketingName);
         
-        $result->setCapability('is_bot', $apiBot);
-        
         if ($apiBot) {
-            $apiDesktop = false;
-            $apiTv      = false;
+            $apiDesktop = null;
+            $apiTv      = null;
+            $apiMob     = null;
         }
         
+        if (!$apiBro) {
+            $apiDesktop = null;
+            $apiTv      = null;
+            $apiMob     = null;
+            $apiBot     = null;
+        }
+        
+        $result->setCapability('is_bot', $apiBot);
         $result->setCapability('is_smarttv', $apiTv);
         $result->setCapability('ux_full_desktop', $apiDesktop);
+        $result->setCapability('is_wireless_device', $apiMob)
         
         $result->setCapability('wurflKey', $apiKey);
         

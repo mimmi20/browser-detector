@@ -83,12 +83,12 @@ final class HtcVpaCompactIv
         // device
         'model_name'                => 'VPA Compact IV',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Vodafone',
-        'brand_name'                => 'HTC',
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'Vodafone',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Herald/Wing/Atlas',
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
+        'pointing_method'           => 'stylus',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -111,7 +111,7 @@ final class HtcVpaCompactIv
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -128,8 +128,8 @@ final class HtcVpaCompactIv
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
         'dual_orientation'       => null,
     );
     
@@ -180,9 +180,8 @@ final class HtcVpaCompactIv
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -202,7 +201,7 @@ final class HtcVpaCompactIv
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WindowsMobileOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

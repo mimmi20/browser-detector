@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -48,7 +48,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 
 /**
- * SonyEricssonUserAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category  Browscap
@@ -57,7 +57,7 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class TelecaObigo
+class Hitpad
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -89,10 +89,10 @@ class TelecaObigo
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Teleca-Obigo',
+        'mobile_browser'              => 'Hitpad',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Obigo', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -117,12 +117,11 @@ class TelecaObigo
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfContains(
-            array(
-                'Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser', 
-                'obigo-browser', 'WAP/OBIGO'
-            )
-        );
+        if (!$this->_utils->checkIfStartsWith('Hitpad')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
@@ -135,35 +134,7 @@ class TelecaObigo
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $doMatch = preg_match(
-            '/ObigoInternetBrowser\/Q(\d+)/', $this->_useragent, $matches
-        );
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
-        
-        $doMatch = preg_match(
-            '/obigo\-browser\/Q(\d+)/', $this->_useragent, $matches
-        );
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
-        
-        $searches = array(
-            'MIC', 'ObigoInternetBrowser', 'Obigo Browser', 'Obigo\-Browser',
-            'Teleca\-Obigo', 'Obigo\-Q05A', 'TelecaBrowser', 'Teleca\-Q',
-            'Obigo\-Q', 'Obigo\/Q', 'Teleca\/Q'
-        );
+        $searches = array('Hitpad');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -180,5 +151,19 @@ class TelecaObigo
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

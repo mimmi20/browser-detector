@@ -274,15 +274,21 @@ final class Utils
     public function isSpamOrCrawler()
     {
         if ($this->checkIfContains($this->_bots, true)) {
-            if ($this->checkIfContains(array('google earth', 'google desktop'), true)) {
+            $googleNoBot = array(
+                'google earth', 'google desktop', 'googletoolbar'
+            );
+            
+            if ($this->checkIfContains($googleNoBot, true)) {
                 return false;
             }
             
             return true;
         }
         
+        $searchNoBot = array('searchtoolbar', 'searchalot ie', 'isearch');
+        
         if ($this->checkIfContains('search', true)
-            && !$this->checkIfContains(array('searchtoolbar', 'searchalot ie'), true)
+            && !$this->checkIfContains($searchNoBot, true)
         ) {
             return true;
         }

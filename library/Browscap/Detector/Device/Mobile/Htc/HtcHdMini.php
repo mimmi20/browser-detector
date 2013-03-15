@@ -81,7 +81,7 @@ final class HtcHdMini
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'T5555 - HD Mini',
+        'model_name'                => 'mini T5555',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
@@ -180,6 +180,7 @@ final class HtcHdMini
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()
@@ -202,7 +203,7 @@ final class HtcHdMini
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WindowsMobileOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

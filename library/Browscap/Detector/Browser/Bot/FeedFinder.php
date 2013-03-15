@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -48,7 +48,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 
 /**
- * SonyEricssonUserAgentHandler
+ * CatchAllUserAgentHandler
  *
  *
  * @category  Browscap
@@ -57,7 +57,7 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class TelecaObigo
+class FeedFinder
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -72,7 +72,7 @@ class TelecaObigo
         // kind of device
         // 'is_wireless_device' => null,
         // 'is_tablet'          => null,
-        'is_bot'             => false,
+        'is_bot'             => true,
         // 'is_smarttv'         => null,
         // 'is_console'         => null,
         // 'ux_full_desktop'    => null,
@@ -89,10 +89,10 @@ class TelecaObigo
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Teleca-Obigo',
+        'mobile_browser'              => 'FeedFinder',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Obigo', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -106,7 +106,7 @@ class TelecaObigo
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => true,
+        'can_skip_aligned_link_row' => false,
         'can_assign_phone_number'   => false,
     );
     
@@ -117,12 +117,11 @@ class TelecaObigo
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfContains(
-            array(
-                'Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser', 
-                'obigo-browser', 'WAP/OBIGO'
-            )
-        );
+        if (!$this->_utils->checkIfContains('FeedFinder')) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
@@ -135,35 +134,7 @@ class TelecaObigo
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $doMatch = preg_match(
-            '/ObigoInternetBrowser\/Q(\d+)/', $this->_useragent, $matches
-        );
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
-        
-        $doMatch = preg_match(
-            '/obigo\-browser\/Q(\d+)/', $this->_useragent, $matches
-        );
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
-        
-        $searches = array(
-            'MIC', 'ObigoInternetBrowser', 'Obigo Browser', 'Obigo\-Browser',
-            'Teleca\-Obigo', 'Obigo\-Q05A', 'TelecaBrowser', 'Teleca\-Q',
-            'Obigo\-Q', 'Obigo\/Q', 'Teleca\/Q'
-        );
+        $searches = array('FeedFinder');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

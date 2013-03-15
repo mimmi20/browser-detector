@@ -92,7 +92,7 @@ class Boxee
         'mobile_browser'              => 'Boxee',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'Boxee, Inc.', // not in wurfl
         
         // os
         // 'device_os'              => null,

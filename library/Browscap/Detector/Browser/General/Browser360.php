@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class GoogleToolbar
+class Browser360
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -72,7 +72,7 @@ class GoogleToolbar
         // kind of device
         // 'is_wireless_device' => null,
         // 'is_tablet'          => null,
-        'is_bot'             => true,
+        'is_bot'             => false,
         // 'is_smarttv'         => null,
         // 'is_console'         => null,
         // 'ux_full_desktop'    => null,
@@ -89,10 +89,10 @@ class GoogleToolbar
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'GoogleToolbar',
+        'mobile_browser'              => '360 Browser',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Google', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -106,7 +106,7 @@ class GoogleToolbar
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => false,
+        'can_skip_aligned_link_row' => true,
         'can_assign_phone_number'   => false,
     );
     
@@ -117,7 +117,7 @@ class GoogleToolbar
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('GoogleToolbar'))) {
+        if (!$this->_utils->checkIfStartsWith('360%20Browser')) {
             return false;
         }
         
@@ -134,7 +134,7 @@ class GoogleToolbar
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('GoogleToolbar');
+        $searches = array('360%20Browser');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -150,6 +150,20 @@ class GoogleToolbar
      */
     public function getWeight()
     {
-        return 3;
+        return 4;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

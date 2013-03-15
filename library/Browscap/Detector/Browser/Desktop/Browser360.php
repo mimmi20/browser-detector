@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Browser\General\Hitpad as DefaultHitpad;
+use \Browscap\Detector\Browser\General\Browser360 as DefaultBrowser360;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Browser\General\Hitpad as DefaultHitpad;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Hitpad extends DefaultHitpad
+class Browser360 extends DefaultBrowser360
 {
     // nothing to do
 }

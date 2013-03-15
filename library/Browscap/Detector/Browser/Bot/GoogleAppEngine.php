@@ -89,7 +89,7 @@ class GoogleAppEngine
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Google App-Engine',
+        'mobile_browser'              => 'AppEngine-Google',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl

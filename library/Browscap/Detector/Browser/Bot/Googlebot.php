@@ -117,18 +117,13 @@ class Googlebot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('google', true) 
-            && !$this->_utils->checkIfContains('googlebot', true)
-            && !$this->_utils->checkIfContains('www.google.com/bot.html', true)
+        if ($this->_utils->checkIfContains('googlebot', true)
+            || $this->_utils->checkIfContains('www.google.com/bot.html', true)
         ) {
-            return false;
+            return true;
         }
         
-        if ($this->_utils->checkIfStartsWith('googlebot', true)) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
