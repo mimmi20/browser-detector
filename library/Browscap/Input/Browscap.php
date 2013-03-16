@@ -1090,8 +1090,6 @@ class Browscap extends Core
             ) {
                 $agentsToFind = array_flip($this->_userAgents);
                 if (!isset($this->_browsers[$agentsToFind[$properties['Parent']]])) {
-                    //var_dump($key, $properties['Parent'], $agentsToFind[$properties['Parent']], $this->_browsers[$agentsToFind[$properties['Parent']]]);exit;
-                    
                     continue;
                 }
                 

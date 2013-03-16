@@ -169,7 +169,7 @@ class Android
         
         $searches = array(
             'Android', 'Android WildPuzzleROM v8 froyo', 
-            'Android AndroidHouse Team', 'JUC(Linux;U;'
+            'Android AndroidHouse Team', 'JUC\(Linux;U;'
         );
         
         $this->setCapability(

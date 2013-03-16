@@ -144,7 +144,7 @@ class Ios
         
         $searches = array(
             'IphoneOSX', 'CPU OS', 'CPU iOS', 'CPU iPad OS', 'iPhone OS',
-            'iPhone_OS'
+            'iPhone_OS', 'IUC\(U\;iOS'
         );
         
         $this->setCapability(

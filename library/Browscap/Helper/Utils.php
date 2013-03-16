@@ -231,7 +231,7 @@ final class Utils
             $noBots = array(
                 'xbox', 'badab', 'badap', 'simbar',
                 'google wireless transcoder', 'google-tr', 'googlet', 
-                'google page speed'
+                'google page speed', 'google web preview'
             );
             
             if ($this->checkIfContains($noBots, true)) {

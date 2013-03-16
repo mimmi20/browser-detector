@@ -118,9 +118,9 @@ class Windows
     protected $_manufacturer = 'Microsoft';
     
     private $_windows = array(
-            'Windows NT', 'Windows 98', 'Windows 95', 'Windows 3.1', 
-            'win9x/NT 4.90'
-        );
+        'Windows NT', 'Windows 98', 'Windows 95', 'Windows 3.1', 
+        'win9x/NT 4.90'
+    );
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -170,6 +170,11 @@ class Windows
         
         if ($this->_utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
             $this->setCapability('device_os_version', $detector->setVersion('RT 8'));
+            return;
+        }
+        
+        if ($this->_utils->checkIfContains(array('Windows-NT'))) {
+            $this->setCapability('device_os_version', $detector->setVersion('NT'));
             return;
         }
         

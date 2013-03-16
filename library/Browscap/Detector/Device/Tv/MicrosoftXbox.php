@@ -194,6 +194,7 @@ final class MicrosoftXbox
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Tv\MicrosoftInternetExplorer(),
             new \Browscap\Detector\Browser\Tv\MicrosoftMobileExplorer()
         );
         

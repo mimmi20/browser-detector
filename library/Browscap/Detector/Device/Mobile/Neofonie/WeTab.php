@@ -83,7 +83,7 @@ final class WeTab
         // device
         'model_name'                => 'WeTab',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Neofonie',
+        'manufacturer_name'         => 'WeTab GmbH',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
         'marketing_name'            => null,
@@ -180,6 +180,7 @@ final class WeTab
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\WeTabBrowser(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()
@@ -201,16 +202,9 @@ final class WeTab
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\MeeGo(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\MeeGo();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

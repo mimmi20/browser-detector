@@ -89,7 +89,7 @@ class LotusNotes
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'LotusNotes',
+        'mobile_browser'              => 'Lotus Notes',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'IBM', // not in wurfl

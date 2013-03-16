@@ -217,6 +217,7 @@ final class Wurfl extends Core
             $apiBot     = ('true' === $device->getCapability('is_bot'));
             $apiTv      = ('true' === $device->getCapability('is_smarttv'));
             $apiDesktop = ('true' === $device->getCapability('ux_full_desktop'));
+            $apiTranscoder = ('true' === $device->getCapability('is_transcoder'));
             
             $apiOs = trim($apiOs);
             if (!$apiOs) {
@@ -390,6 +391,39 @@ final class Wurfl extends Core
                 case 'nokia browserng':
                     $apiBro = 'Nokia Browser';
                     break;
+                case 'google':
+                    switch (strtolower($apiVer)) {
+                        case 'bot':
+                            $apiBro     = 'Google Bot';
+                            $apiVer     = '';
+                            $apiDesktop = false;
+                            $apiBot     = true;
+                            break;
+                        case 'wireless transcoder':
+                            $apiBro        = 'Google Wireless Transcoder';
+                            $apiVer        = '';
+                            $apiDesktop    = false;
+                            $apiBot        = true;
+                            $apiTranscoder = true;
+                            break;
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                case 'facebook':
+                    switch (strtolower($apiVer)) {
+                        case 'bot':
+                            $apiBro     = 'FaceBook Bot';
+                            $apiVer     = '';
+                            $apiDesktop = false;
+                            $apiBot     = true;
+                            break;
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
                 case 'google bot':
                 case 'facebook bot':
                     $apiDesktop = false;
@@ -429,7 +463,7 @@ final class Wurfl extends Core
                 $apiTv      = null;
                 $apiDesktop = null;
             }
-        } catch(Exception $e) {
+        } catch(\Exception $e) {
             $apiKey = 'error';
             $apiMob = false;
             $apiOs  = 'error';
@@ -502,7 +536,8 @@ final class Wurfl extends Core
         $result->setCapability('is_bot', $apiBot);
         $result->setCapability('is_smarttv', $apiTv);
         $result->setCapability('ux_full_desktop', $apiDesktop);
-        $result->setCapability('is_wireless_device', $apiMob)
+        $result->setCapability('is_wireless_device', $apiMob);
+        $result->setCapability('is_transcoder', $apiTranscoder);
         
         $result->setCapability('wurflKey', $apiKey);
         
