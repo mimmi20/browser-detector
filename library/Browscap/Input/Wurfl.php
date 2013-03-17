@@ -263,6 +263,13 @@ final class Wurfl extends Core
                 case 'gt-i8350':
                     $apiDev = 'GT-I8350';
                     break;
+                case 'gt-i5500':
+                    $apiDev = 'GT-I5500';
+                    break;
+                case 'acer e310':
+                    $apiDev = 'E310';
+                    $apiMan = 'Acer';
+                    break;
                 default:
                     // nothing to do here
                     break;
@@ -453,15 +460,19 @@ final class Wurfl extends Core
             
             $apiBro = trim($apiBro);
             if (!$apiBro) {
-                $apiBro     = null;
-                $apiOs      = null;
-                $apiMob     = null;
-                $apiTab     = null;
-                $apiDev     = null;
-                $apiMan     = null;
-                $apiBot     = null;
-                $apiTv      = null;
-                $apiDesktop = null;
+                $apiBro = null;
+                $apiOs  = null;
+                $apiMob = null;
+                $apiTab = null;
+                $apiDev = null;
+                $apiMan = null;
+                $apiBot = null;
+                $apiTv  = null;
+                
+                $apiDesktop    = null;
+                $allProperties = array();
+                $marketingName = null;
+                $apiTranscoder = null;
             }
         } catch(\Exception $e) {
             $apiKey = 'error';
@@ -474,7 +485,11 @@ final class Wurfl extends Core
             $apiMan = null;
             $apiBot = true;
             $apiTv  = false;
-            $apiDesktop = false;
+            
+            $apiDesktop    = false;
+            $allProperties = array();
+            $marketingName = null;
+            $apiTranscoder = null;
         }
         
         $result = new Result();

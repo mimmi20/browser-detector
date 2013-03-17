@@ -84,7 +84,7 @@ final class GeneralMobile
         'model_name'                => 'general Mobile Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'unknown',
-        'brand_name'                => 'Generic',
+        'brand_name'                => 'unknown',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => null,

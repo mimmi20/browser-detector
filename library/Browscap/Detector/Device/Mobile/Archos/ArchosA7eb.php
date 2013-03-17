@@ -81,12 +81,12 @@ final class ArchosA7eb
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A7EB',
+        'model_name'                => '70c',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Archos',
         'brand_name'                => 'Archos',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => '70c eReader',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
@@ -128,9 +128,9 @@ final class ArchosA7eb
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
     );
     
     /**

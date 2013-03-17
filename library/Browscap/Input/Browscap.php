@@ -517,7 +517,7 @@ class Browscap extends Core
             }
             
             if (array_key_exists('Browser_isBeta', $properties)) {
-                $properties['Beta']    = $properties['Browser_isBeta'];
+                $properties['Beta'] = $properties['Browser_isBeta'];
             }
             
             $utils = new \Browscap\Helper\Utils();
@@ -624,9 +624,7 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
-            } elseif ($platform == 'Windows' 
-                || $platform == 'Win32'
-            ) {
+            } elseif ($platform == 'Windows' || $platform == 'Win32') {
                 $properties['Device_Name'] = 'Windows Desktop';
                 $properties['Device_Maker'] = 'unknown';
                 $properties['isMobileDevice'] = false;
@@ -966,7 +964,7 @@ class Browscap extends Core
             
             $sort1[$title] = $x;
             $sort2[$title] = strtolower($properties['Browser_Name']);
-            $sort3[$title] = strtolower($properties['Browser_Version']);
+            $sort3[$title] = (float) $properties['Browser_Version'];
             
             if (!empty($properties['Browser_Bits'])) {
                 $bits = $properties['Browser_Bits'];
@@ -1014,7 +1012,7 @@ class Browscap extends Core
                     $version = 8;
                     break;
                 default:
-                    $version = $properties['Platform_Version'];
+                    $version = (float) $properties['Platform_Version'];
                     break;
             }
             

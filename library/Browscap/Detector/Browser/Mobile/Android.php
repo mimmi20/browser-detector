@@ -137,6 +137,7 @@ class Android
             'Firefox', 
             'iPad', 
             'iPhone',
+            'Kindle',
             'NetFrontLifeBrowser',
             'NokiaBrowser', 
             'Opera', 

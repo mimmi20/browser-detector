@@ -81,7 +81,7 @@ final class SamsungGti5500
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT-i5500',
+        'model_name'                => 'GT-I5500',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',

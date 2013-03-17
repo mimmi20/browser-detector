@@ -84,7 +84,7 @@ final class SonyST21i2
         'model_name'                => 'ST21i2',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
         'marketing_name'            => 'Xperia Tipo Dual',
         'has_qwerty_keyboard'       => true,

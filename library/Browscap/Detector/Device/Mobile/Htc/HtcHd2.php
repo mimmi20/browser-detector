@@ -184,6 +184,7 @@ final class HtcHd2
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()
@@ -206,7 +207,7 @@ final class HtcHd2
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WindowsMobileOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

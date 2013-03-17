@@ -160,6 +160,7 @@ final class SonyEricsson
             'mt15i',
             's312',
             'sk17i',
+            'sgpt12',
             'st18i',
             'st25i',
             'u20i',

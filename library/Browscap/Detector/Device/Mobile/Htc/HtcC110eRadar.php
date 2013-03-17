@@ -81,7 +81,7 @@ final class HtcC110eRadar
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Radar 4G',
+        'model_name'                => 'Radar C110e',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
@@ -142,7 +142,7 @@ final class HtcC110eRadar
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC; Radar', 'HTC; Radar C110e', 'HTC; Radar; Orange'))) {
+        if (!$this->_utils->checkIfContains(array('HTC; Radar C110e', 'HTC; Radar; Orange'))) {
             return false;
         }
         
@@ -180,9 +180,8 @@ final class HtcC110eRadar
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -202,7 +201,7 @@ final class HtcC110eRadar
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WindowsPhoneOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

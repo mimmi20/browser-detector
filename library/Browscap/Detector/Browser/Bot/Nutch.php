@@ -117,7 +117,11 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Nutch', 'CazoodleBot', 'LOOQ'))) {
+        if (!$this->_utils->checkIfContains(array('Nutch'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools'))) {
             return false;
         }
         
@@ -134,7 +138,7 @@ class Nutch
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Nutch', 'Nutch\-', 'CazoodleBot', 'LOOQ');
+        $searches = array('Nutch', 'Nutch\-');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

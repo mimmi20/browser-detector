@@ -81,7 +81,7 @@ final class AcerE310
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Acer E310',   // wurflkey: acer_e310_ver1_suban221
+        'model_name'                => 'E310',   // wurflkey: acer_e310_ver1_suban221
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',

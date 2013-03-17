@@ -57,7 +57,7 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Browser360
+class WebClip
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -89,7 +89,7 @@ class Browser360
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => '360 Browser',
+        'mobile_browser'              => 'WebClip',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'unknown', // not in wurfl
@@ -117,7 +117,7 @@ class Browser360
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('360%20Browser')) {
+        if (!$this->_utils->checkIfContains('WebClip')) {
             return false;
         }
         
@@ -134,7 +134,7 @@ class Browser360
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('360%20Browser');
+        $searches = array('WebClip');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

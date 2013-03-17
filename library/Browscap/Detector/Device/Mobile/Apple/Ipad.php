@@ -182,7 +182,10 @@ final class Ipad
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Safari(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\DarwinBrowser()
+            new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
+            new \Browscap\Detector\Browser\Mobile\OperaTablet(),
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini()
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

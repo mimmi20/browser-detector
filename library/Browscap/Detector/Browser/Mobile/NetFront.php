@@ -117,7 +117,7 @@ class NetFront
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
+        if (!$this->_utils->checkIfContains(array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'NX'))) {
             return false;
         }
         
@@ -143,7 +143,7 @@ class NetFront
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3', 'NX');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

@@ -439,6 +439,7 @@ final class Utils
             'Silk',
             'Shiira',
             'WebBrowser',
+            'WebClip',
             'WeTab',
             'wOSBrowser',
             //mobile Version

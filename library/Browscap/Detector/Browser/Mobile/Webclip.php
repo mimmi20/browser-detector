@@ -41,11 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Browser\General\WebClip as DefaultWebClip;
 
 /**
  * CatchAllUserAgentHandler
@@ -57,107 +53,7 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Webclip
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+class WebClip extends DefaultWebClip
 {
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => false,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
-        
-        // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
-        
-        // browser
-        'mobile_browser'              => 'Webclip',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
-        
-        // os
-        // 'device_os'              => null,
-        // 'device_os_version'      => null,
-        // 'device_os_bits'         => null, // not in wurfl
-        // 'device_os_manufacturer' => null, // not in wurfl
-        
-        // engine
-        // 'renderingengine_name'         => null, // not in wurfl
-        // 'renderingengine_version'      => null, // not in wurfl
-        // 'renderingengine_manufacturer' => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'can_assign_phone_number'   => false,
-    );
-    
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Webclip/'))) {
-            return false;
-        }
-        
-        return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('Webclip');
-        
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-        
-        return $this;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectEngine()
-    {
-        $handler = new \Browscap\Detector\Engine\Webkit();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
+    // nothing to do
 }

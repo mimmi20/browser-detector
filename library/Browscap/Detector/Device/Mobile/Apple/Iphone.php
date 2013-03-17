@@ -186,6 +186,8 @@ final class Iphone
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Safari(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini()
             //new \Browscap\Detector\Os\FreeBsd()
         );
         
