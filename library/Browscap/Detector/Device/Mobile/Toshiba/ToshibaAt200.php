@@ -86,7 +86,7 @@ final class ToshibaAt200
         'manufacturer_name'         => 'Toshiba',
         'brand_name'                => 'Toshiba',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Excite AT200',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

@@ -81,7 +81,7 @@ final class HtcA810eChaCha
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A810e - ChaCha',
+        'model_name'                => 'A810e',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',

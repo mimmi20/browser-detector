@@ -121,26 +121,6 @@ class Moblin
     }
     
     /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('Moblin');
-        
-        $this->setCapability(
-            'device_os_version', 
-            $detector->detectVersion($searches)
-        );
-    }
-    
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
