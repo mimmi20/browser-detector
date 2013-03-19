@@ -254,4 +254,36 @@ class MicrosoftInternetExplorer
         
         return $handler->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os)
+    {
+        $engineVersion = (int) $engine->getCapability('renderingengine_version')->getVersion(
+            Version::MAJORONLY
+        );
+        
+        $browserVersion = $this->getCapability('mobile_browser_version');
+        
+        switch ($engineVersion) {
+            case 5:
+                $browserVersion->setVersion('9.0');
+                break;
+            case 6:
+                $browserVersion->setVersion('10.0');
+                break;
+            default:
+                //nothing to do
+                break;
+        }
+        
+        parent::detectDependProperties($engine, $os);
+        
+        return $this;
+    }
 }

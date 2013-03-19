@@ -81,7 +81,7 @@ final class MdLifetabP4310
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'LIFETAB P4310',
+        'model_name'                => 'LifeTab P4310',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Medion',
         'brand_name'                => 'Medion',

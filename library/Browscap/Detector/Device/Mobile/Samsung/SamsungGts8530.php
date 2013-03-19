@@ -180,9 +180,7 @@ final class SamsungGts8530
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -202,7 +200,7 @@ final class SamsungGts8530
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Bada(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

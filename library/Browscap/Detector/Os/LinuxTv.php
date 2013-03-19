@@ -98,7 +98,7 @@ class LinuxTv
         'device_os'              => 'Linux for TV',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'unknown', // not in wurfl
+        'device_os_manufacturer' => 'Linux Foundation', // not in wurfl
         
         // engine
         // 'renderingengine_name'         => null, // not in wurfl

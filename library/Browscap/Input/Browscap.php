@@ -616,6 +616,7 @@ class Browscap extends Core
                 $properties['Win16'] = false;
                 $properties['Platform_Bits'] = 0;
                 $properties['Browser_Bits'] = 0;
+                $properties['Platform_Maker'] = 'unknown';
             } elseif ($properties['Device_Maker'] == 'RIM') {
                 $properties['Device_Maker'] = 'RIM';
                 $properties['isMobileDevice'] = true;
@@ -624,6 +625,7 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = false;
                 $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'RIM';
             } elseif ($platform == 'Windows' || $platform == 'Win32') {
                 $properties['Device_Name'] = 'Windows Desktop';
                 $properties['Device_Maker'] = 'unknown';
@@ -677,9 +679,7 @@ class Browscap extends Core
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Name'] = 'Symbian OS';
                 $properties['Platform_Maker'] = 'Nokia';
-            } elseif (($platform == 'Linux' 
-                || $platform == 'Debian'
-                || $platform == 'CentOS')
+            } elseif ($platform == 'Linux'
                 && $mobileDevice == false
                 && !empty($properties['Device_isTv']) 
                 && $properties['Device_isTv'] === false
@@ -692,9 +692,35 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
-            } elseif (($platform == 'Linux' 
-                || $platform == 'Debian'
-                || $platform == 'CentOS')
+                $properties['Platform_Maker'] = 'Linux Foundation';
+            } elseif (($platform == 'Debian' || $platform == 'CentOS')
+                && $mobileDevice == false
+                && !empty($properties['Device_isTv']) 
+                && $properties['Device_isTv'] === false
+            ) {
+                $properties['Device_Name'] = 'Linux Desktop';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = true;
+                $properties['Device_isTv'] = false;
+            } elseif (($platform == 'Linux' || $platform == 'Linux for TV')
+                && !empty($properties['Device_isTv']) 
+                && $properties['Device_isTv'] === true
+            ) {
+                $properties['Device_Name'] = 'general TV Device';
+                $properties['Device_Maker'] = 'unknown';
+                $properties['isMobileDevice'] = false;
+                $properties['isTablet'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isTablet'] = false;
+                $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = true;
+                $properties['Platform_Name'] = 'Linux for TV';
+                $properties['Platform_Maker'] = 'Linux Foundation';
+            } elseif (($platform == 'Debian' || $platform == 'CentOS')
                 && !empty($properties['Device_isTv']) 
                 && $properties['Device_isTv'] === true
             ) {
@@ -829,12 +855,22 @@ class Browscap extends Core
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'IBM';
-            } elseif ($platform == 'Android' 
-                || $platform == 'Dalvik'
+            } elseif (($platform == 'Android' 
+                || $platform == 'Dalvik')
+                && $properties['Device_Name'] !== 'NBPC724'
             ) {
                 $properties['isMobileDevice'] = true;
                 $properties['Device_isMobileDevice'] = true;
                 $properties['Device_isDesktop'] = false;
+                $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'Google';
+            } elseif (($platform == 'Android' 
+                || $platform == 'Dalvik')
+                && $properties['Device_Name'] === 'NBPC724'
+            ) {
+                $properties['isMobileDevice'] = false;
+                $properties['Device_isMobileDevice'] = false;
+                $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
                 $properties['Platform_Maker'] = 'Google';
             } elseif ($platform == 'FreeBSD' 
@@ -850,6 +886,7 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
+                $properties['Platform_Maker'] = 'unknown';
             } elseif ($platform == 'WebTV') {
                 $properties['Device_Name'] = 'General TV Device';
                 $properties['Device_Maker'] = 'unknown';
@@ -881,14 +918,16 @@ class Browscap extends Core
                 $properties['Platform_Bits'] = 0;
             }
             
-            if (empty($properties['Device_Marketing_Name']) 
-                || $properties['Device_Marketing_Name'] == 'unknown'
+            if (empty($properties['Device_Marketing_Name'])
+                || false !== strpos($properties['Device_Marketing_Name'], 'unknown')
+                || false !== strpos($properties['Device_Marketing_Name'], 'general')
             ) {
                 $properties['Device_Marketing_Name'] = $properties['Device_Name'];
             }
             
-            if (empty($properties['Device_Brand_Name']) 
-                || $properties['Device_Brand_Name'] == 'unknown'
+            if (empty($properties['Device_Brand_Name'])
+                || false !== strpos($properties['Device_Brand_Name'], 'unknown')
+                || false !== strpos($properties['Device_Brand_Name'], 'general')
             ) {
                 $properties['Device_Brand_Name'] = $properties['Device_Maker'];
             }
@@ -963,6 +1002,7 @@ class Browscap extends Core
             }
             
             $sort1[$title] = $x;
+            
             $sort2[$title] = strtolower($properties['Browser_Name']);
             $sort3[$title] = (float) $properties['Browser_Version'];
             
@@ -1036,17 +1076,29 @@ class Browscap extends Core
                 $subgroup = 1;
             }
             
-            if (!empty($properties['Device_Brand_Name'])) {
-                $brandName = strtolower($properties['Device_Brand_Name']);
+            if (!empty($properties['Device_Maker'])
+                && false !== strpos($properties['Device_Maker'], 'unknown')
+                && false !== strpos($properties['Device_Maker'], 'general')
+            ) {
+                $brandName = strtolower($properties['Device_Maker']);
             } else {
                 $brandName = '';
+            }
+            
+            if (!empty($properties['Device_Name'])
+                && false !== strpos($properties['Device_Name'], 'unknown')
+                && false !== strpos($properties['Device_Name'], 'general')
+            ) {
+                $marketingName = strtolower($properties['Device_Name']);
+            } else {
+                $marketingName = '';
             }
             
             $sort7[$title]  = strtolower($group);
             $sort8[$title]  = $subgroup;
             $sort10[$title] = $key;
             $sort11[$title] = $brandName;
-            $sort12[$title] = strtolower($properties['Device_Name']);
+            $sort12[$title] = $marketingName;
         }
         
         array_multisort(

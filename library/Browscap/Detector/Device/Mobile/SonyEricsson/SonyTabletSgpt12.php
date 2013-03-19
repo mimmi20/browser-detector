@@ -142,7 +142,7 @@ final class SonyTabletSgpt12
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Sony Tablet S')) {
+        if (!$this->_utils->checkIfContains('SGPT12')) {
             return false;
         }
         

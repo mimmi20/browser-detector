@@ -81,7 +81,7 @@ final class MdLifetabS9714
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'LIFETAB S9714',
+        'model_name'                => 'LifeTab S9714',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Medion',
         'brand_name'                => 'Medion',

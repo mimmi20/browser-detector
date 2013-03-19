@@ -205,6 +205,8 @@ final class Wurfl extends Core
                 $apiDev = $device->getCapability('model_name');
                 $apiTab = ('true' === $device->getCapability('is_tablet'));
                 $apiMan = $device->getCapability('manufacturer_name');
+                
+                $brandName = $device->getCapability('brand_name');
             } else {
                 $apiOs  = null;
                 $apiBro = $device->getCapability('brand_name');
@@ -212,6 +214,8 @@ final class Wurfl extends Core
                 $apiDev = null;
                 $apiTab = false;
                 $apiMan = null;
+                
+                $brandName = null;
             }
             
             $apiBot     = ('true' === $device->getCapability('is_bot'));
@@ -280,6 +284,15 @@ final class Wurfl extends Core
             switch ($marketingName) {
                 case 'Galaxy SII':
                     $marketingName = 'Galaxy S II';
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+            
+            switch ($brandName) {
+                case 'Generic':
+                    $brandName = 'unknown';
                     break;
                 default:
                     // nothing to do here
@@ -490,6 +503,8 @@ final class Wurfl extends Core
             $allProperties = array();
             $marketingName = null;
             $apiTranscoder = null;
+            
+            $brandName = null;
         }
         
         $result = new Result();
@@ -534,6 +549,7 @@ final class Wurfl extends Core
         $result->setCapability('model_name', $apiDev);
         $result->setCapability('manufacturer_name', $apiMan);
         $result->setCapability('marketing_name', $marketingName);
+        $result->setCapability('brand_name', $brandName);
         
         if ($apiBot) {
             $apiDesktop = null;

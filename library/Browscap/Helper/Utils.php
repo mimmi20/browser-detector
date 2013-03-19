@@ -275,7 +275,8 @@ final class Utils
     {
         if ($this->checkIfContains($this->_bots, true)) {
             $googleNoBot = array(
-                'google earth', 'google desktop', 'googletoolbar'
+                'google earth', 'google desktop', 'googletoolbar', 'googlet5',
+                'simbar'
             );
             
             if ($this->checkIfContains($googleNoBot, true)) {
