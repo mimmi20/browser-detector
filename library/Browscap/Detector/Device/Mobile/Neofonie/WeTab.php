@@ -84,7 +84,7 @@ final class WeTab
         'model_name'                => 'WeTab',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'WeTab GmbH',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'WeTab GmbH',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
