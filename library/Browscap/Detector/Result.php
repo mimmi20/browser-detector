@@ -851,7 +851,7 @@ final class Result
     public function getFullPlatform($withBits = true, $mode = null)
     {
         if (null === $mode) {
-            $mode = COMPLETE_IGNORE_EMPTY;
+            $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
         $name = $this->getCapability('device_os');

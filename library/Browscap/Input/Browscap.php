@@ -692,6 +692,7 @@ class Browscap extends Core
                 $properties['Device_isTablet'] = false;
                 $properties['Device_isDesktop'] = true;
                 $properties['Device_isTv'] = false;
+                $properties['Platform_MName'] = 'Linux';
                 $properties['Platform_Maker'] = 'Linux Foundation';
             } elseif (($platform == 'Debian' || $platform == 'CentOS')
                 && $mobileDevice == false
