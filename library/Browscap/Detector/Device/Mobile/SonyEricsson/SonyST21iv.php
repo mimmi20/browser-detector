@@ -86,7 +86,7 @@ final class SonyST21iv
         'manufacturer_name'         => 'Sony',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xperia Tipo',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,

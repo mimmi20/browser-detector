@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: SamsungGti8190n.php 428 2013-02-17 17:15:57Z tmu $
  */
 
 use \Browscap\Detector\DeviceHandler;
@@ -57,9 +57,9 @@ use \Browscap\Detector\OsHandler;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
+ * @version   SVN: $Id: SamsungGti8190n.php 428 2013-02-17 17:15:57Z tmu $
  */
-final class SamsungGti8190
+final class SamsungGti8190nn
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -69,7 +69,7 @@ final class SamsungGti8190
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_i8190_ver1_suban41', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -81,7 +81,7 @@ final class SamsungGti8190
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT-I8190',
+        'model_name'                => 'GT-I8190N',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
@@ -142,11 +142,7 @@ final class SamsungGti8190
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('GT-I8190')) {
-            return false;
-        }
-        
-        if ($this->_utils->checkIfContains('GT-I8190N')) {
+        if (!$this->_utils->checkIfContains('GT-I8190N')) {
             return false;
         }
         

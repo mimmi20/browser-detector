@@ -142,7 +142,7 @@ final class SonyEricssonR800iv
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SonyEricssonR800iv')) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonR800iv', 'R800iv'))) {
             return false;
         }
         
