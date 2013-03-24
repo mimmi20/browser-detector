@@ -68,6 +68,7 @@ final class Utils
      */
     private $_mobileBrowsers = array(
         'android',
+        'arm; touch',
         'aspen simulator',
         'bada',
         'blackberry',
@@ -276,7 +277,7 @@ final class Utils
         if ($this->checkIfContains($this->_bots, true)) {
             $googleNoBot = array(
                 'google earth', 'google desktop', 'googletoolbar', 'googlet5',
-                'simbar'
+                'simbar', 'google web preview', 'googletv', 'google_impact'
             );
             
             if ($this->checkIfContains($googleNoBot, true)) {
@@ -328,7 +329,7 @@ final class Utils
             return true;
         }
         
-        if ($this->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome'), true)) {
+        if ($this->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome', 'ua:', 'user-agent:'), true)) {
             return true;
         }
         
@@ -385,10 +386,6 @@ final class Utils
         $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch && $matches[1] > 2) {
-            return true;
-        }
-        
-        if ($this->checkIfStartsWith(array('ua:'))) {
             return true;
         }
         

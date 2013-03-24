@@ -237,10 +237,14 @@ final class Wurfl extends Core
                 case 'android 2.2':
                 case 'android 2.3':
                 case 'android 3.0':
+                case 'android 3.1':
+                case 'android 3.2':
                 case 'android 4.0':
                 case 'android 4.1':
                 case 'android 4.2':
                 case 'disguised as macintosh':
+                case 'mini 1':
+                case 'mini 4':
                 case 'mini 5':
                 case 'windows mobile 6.5':
                 case 'windows mobile 7.5':
@@ -270,9 +274,15 @@ final class Wurfl extends Core
                 case 'gt-i5500':
                     $apiDev = 'GT-I5500';
                     break;
+                case 'gt i7500':
+                    $apiDev = 'GT-I7500';
+                    break;
                 case 'acer e310':
                     $apiDev = 'E310';
                     $apiMan = 'Acer';
+                    break;
+                case 'sensationxe beats z715e':
+                    $apiDev = 'Sensation XE Beats Z715e';
                     break;
                 default:
                     // nothing to do here
@@ -284,6 +294,9 @@ final class Wurfl extends Core
             switch ($marketingName) {
                 case 'Galaxy SII':
                     $marketingName = 'Galaxy S II';
+                    break;
+                case 'LG Optimus Chat':
+                    $marketingName = 'Optimus Chat';
                     break;
                 default:
                     // nothing to do here
