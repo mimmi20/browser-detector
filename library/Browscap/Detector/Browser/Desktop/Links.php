@@ -93,6 +93,7 @@ class Links
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_modus'        => null, // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -659,7 +660,7 @@ class Links
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Links', 'Links (');
+        $searches = array('Links', 'Links \(');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

@@ -496,8 +496,6 @@ final class Utils
             'windows'
         );
         
-        $ntVersions = array('4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', '6.2');
-        
         if (!$this->checkIfContains($windows, true)
             && !$this->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
         ) {
@@ -548,7 +546,7 @@ final class Utils
         
         $ntVersions = array(
             '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1', 
-            '6.2'
+            '6.2', '6.3'
         );
         
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
@@ -570,7 +568,7 @@ final class Utils
         if ($this->checkIfStartsWith('Mozilla/') 
             && $this->checkIfContains('MSIE')
         ) {
-            $doMatch = preg_match('/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10)\.\d.*/', $this->_useragent, $matches);
+            $doMatch = preg_match('/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/', $this->_useragent, $matches);
             if (!$doMatch) {
                 return true;
             }

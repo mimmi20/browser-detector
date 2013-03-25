@@ -116,6 +116,7 @@ final class Result
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => null, // not in wurfl
+        'mobile_browser_modus'        => null, // not in wurfl
         
         // os
         'device_os'              => null,
@@ -841,9 +842,21 @@ final class Result
             $browser .= ' ' . $version;
         }
         
+        $additional = array();
+        
+        $modus = $this->getCapability('mobile_browser_modus');
+        
+        if ($modus) {
+            $additional[] = $modus;
+        }
+        
         $bits = $this->getCapability('mobile_browser_bits');
         
-        $browser .= (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
+        if ($bits && $withBits) {
+            $additional[] = $bits . ' Bit';
+        }
+        
+        $browser .= (!empty($additional) ? ' (' . implode(', ', $additional) . ')' : '');
         
         return trim($browser);
     }
@@ -1292,6 +1305,7 @@ final class Result
                     case 'mobile_browser_version':
                     case 'mobile_browser_bits':
                     case 'mobile_browser_manufacturer':
+                    case 'mobile_browser_modus':
                     case 'can_skip_aligned_link_row':
                     case 'device_claims_web_support':
                         $value = $browser->getCapability($property);

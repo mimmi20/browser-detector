@@ -95,6 +95,7 @@ class MicrosoftInternetExplorer
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Microsoft', // not in wurfl
+        'mobile_browser_modus'        => null, // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -638,6 +639,7 @@ class MicrosoftInternetExplorer
     );
     
     private $_patterns = array(
+        '/Mozilla\/5\.0 \(.*MSIE 11\.0.*/' => '11.0',
         '/Mozilla\/5\.0 \(.*MSIE 10\.0.*/' => '10.0',
         '/Mozilla\/5\.0 \(.*MSIE 9\.0.*/'  => '9.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'  => '8.0',
@@ -794,19 +796,35 @@ class MicrosoftInternetExplorer
             Version::MAJORONLY
         );
         
-        $browserVersion = $this->getCapability('mobile_browser_version');
+        $browserVersion  = $this->getCapability('mobile_browser_version');
+        $detectedVersion = $browserVersion->getVersion(Version::MAJORONLY);
         
         switch ($engineVersion) {
             case 4:
                 if ($this->_utils->checkIfContains('Trident/4.0')) {
                     $browserVersion->setVersion('8.0');
+                    
+                    $this->setCapability(
+                        'mobile_browser_modus', 
+                        'IE ' . $detectedVersion . ' Compatibility Mode'
+                    );
                 }
                 break;
             case 5:
                 $browserVersion->setVersion('9.0');
+                
+                $this->setCapability(
+                    'mobile_browser_modus', 
+                    'IE ' . $detectedVersion . ' Compatibility Mode'
+                );
                 break;
             case 6:
                 $browserVersion->setVersion('10.0');
+                
+                $this->setCapability(
+                    'mobile_browser_modus', 
+                    'IE ' . $detectedVersion . ' Compatibility Mode'
+                );
                 break;
             default:
                 //nothing to do

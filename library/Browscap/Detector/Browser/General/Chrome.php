@@ -94,6 +94,7 @@ class Chrome
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl
+        'mobile_browser_modus'        => null, // not in wurfl
         
         // os
         // 'device_os'              => null,
