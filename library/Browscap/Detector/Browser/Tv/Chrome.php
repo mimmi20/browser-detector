@@ -38,7 +38,7 @@ namespace Browscap\Detector\Browser\Tv;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Chrome.php 385 2012-12-27 20:21:27Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Browser\General\Chrome as DefaultChrome;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Browser\General\Chrome as DefaultChrome;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: Chrome.php 385 2012-12-27 20:21:27Z tmu $
+ * @version   SVN: $Id$
  */
 class Chrome extends DefaultChrome
 {

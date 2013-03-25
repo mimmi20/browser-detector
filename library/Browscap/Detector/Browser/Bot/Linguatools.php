@@ -38,7 +38,7 @@ namespace Browscap\Detector\Browser\Bot;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: linguatools.php 426 2013-02-13 07:50:26Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\BrowserHandler;
@@ -55,7 +55,7 @@ use \Browscap\Detector\EngineHandler;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: linguatools.php 426 2013-02-13 07:50:26Z tmu $
+ * @version   SVN: $Id$
  */
 class Linguatools
     extends BrowserHandler

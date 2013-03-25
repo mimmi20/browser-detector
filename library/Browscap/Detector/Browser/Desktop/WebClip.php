@@ -38,7 +38,7 @@ namespace Browscap\Detector\Browser\Desktop;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: WebClip.php 456 2013-03-15 21:07:30Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\Browser\General\WebClip as DefaultWebClip;
@@ -51,7 +51,7 @@ use \Browscap\Detector\Browser\General\WebClip as DefaultWebClip;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: WebClip.php 456 2013-03-15 21:07:30Z tmu $
+ * @version   SVN: $Id$
  */
 class WebClip extends DefaultWebClip
 {

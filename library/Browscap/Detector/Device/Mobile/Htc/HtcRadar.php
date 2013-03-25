@@ -40,7 +40,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: HtcRadar4G.php 428 2013-02-17 17:15:57Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\DeviceHandler;
@@ -59,7 +59,7 @@ use \Browscap\Detector\OsHandler;
  * @package    WURFL_Handlers
  * @copyright  ScientiaMobile, Inc.
  * @license    GNU Affero General Public License
- * @version    SVN: $Id: HtcRadar4G.php 428 2013-02-17 17:15:57Z tmu $
+ * @version    SVN: $Id$
  */
 final class HtcRadar
     extends DeviceHandler

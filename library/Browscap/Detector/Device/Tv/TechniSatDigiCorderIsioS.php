@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Device\Tv;
 
 /**
  * PHP version 5.3
@@ -41,11 +41,13 @@ namespace Browscap\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
 
 /**
  * CatchAllUserAgentHandler
@@ -57,9 +59,9 @@ use \Browscap\Detector\EngineHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CareerBot
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+final class TechniSatDigiCorderIsioS
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -70,30 +72,31 @@ class CareerBot
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => true,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
+        'is_wireless_device' => false,
+        'is_tablet'          => false,
+        //'is_bot'             => false,
+        'is_smarttv'         => true,
+        'is_console'         => false,
+        'ux_full_desktop'    => false,
+        //'is_transcoder'      => false,
         
         // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
+        'model_name'                => 'DigiCorder ISIO S',
+        'model_version'             => null, // not in wurfl
+        'manufacturer_name'         => 'TechniSat',
+        'brand_name'                => 'TechniSat',
+        'model_extra_info'          => null,
+        'marketing_name'            => 'DigiCorder ISIO S',
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'mouse',
+        'device_claims_web_support' => true,
+        'device_bits'               => null, // not in wurfl
+        'device_cpu'                => null, // not in wurfl
         
         // browser
-        'mobile_browser'              => 'CareerBot',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'www.career-x.de', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -107,8 +110,27 @@ class CareerBot
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => false,
+        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => false,
+        'nokia_feature_pack'        => 0,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
+        
+        // display
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => false,
         
         // markup
         'html_web_3_2' => null,
@@ -637,13 +659,15 @@ class CareerBot
     );
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return bool
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('CareerBot')) {
+        if (!$this->_utils->checkIfContains('technisat digicorder isio s', true)) {
             return false;
         }
         
@@ -651,21 +675,14 @@ class CareerBot
     }
     
     /**
-     * detects the browser version from the given user agent
+     * detects the device name from the given user agent
      *
-     * @return string
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    protected function _detectVersion()
+    public function detectDevice()
     {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('CareerBot');
-        
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-        
         return $this;
     }
     
@@ -676,6 +693,46 @@ class CareerBot
      */
     public function getWeight()
     {
-        return 3;
+        return 5;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\LinuxTv();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new \Browscap\Detector\Browser\Tv\Boxee(),
+            new \Browscap\Detector\Browser\Tv\Safari(),
+            new \Browscap\Detector\Browser\Tv\Opera(),
+            new \Browscap\Detector\Browser\Tv\SmartTvWebBrowser(),
+            new \Browscap\Detector\Browser\Tv\SmartTv(),
+            new \Browscap\Detector\Browser\Tv\HbbTv(),
+            new \Browscap\Detector\Browser\Tv\InettvBrowser()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
     }
 }

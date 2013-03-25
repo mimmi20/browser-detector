@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Htc;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: HtcTitan.php 451 2013-03-11 22:49:25Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\DeviceHandler;
@@ -57,7 +57,7 @@ use \Browscap\Detector\OsHandler;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: HtcTitan.php 451 2013-03-11 22:49:25Z tmu $
+ * @version   SVN: $Id$
  */
 final class Htc8s
     extends DeviceHandler

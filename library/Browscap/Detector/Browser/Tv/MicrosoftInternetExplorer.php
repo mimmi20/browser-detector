@@ -38,7 +38,7 @@ namespace Browscap\Detector\Browser\Tv;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: MicrosoftInternetExplorer.php 412 2013-01-30 22:22:03Z tmu $
+ * @version   SVN: $Id$
  */
 
 /**
@@ -54,7 +54,7 @@ use \Browscap\Detector\Browser\General\MicrosoftInternetExplorer as IeBase;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: MicrosoftInternetExplorer.php 412 2013-01-30 22:22:03Z tmu $
+ * @version   SVN: $Id$
  */
 class MicrosoftInternetExplorer extends IeBase
 {

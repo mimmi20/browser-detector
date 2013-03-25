@@ -38,7 +38,7 @@ namespace Browscap\Detector\MatcherInterface;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: MatcherInterface.php 383 2012-12-26 22:01:45Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\BrowserHandler;
@@ -53,7 +53,7 @@ use \Browscap\Detector\OsHandler;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: MatcherInterface.php 383 2012-12-26 22:01:45Z tmu $
+ * @version   SVN: $Id$
  */
 interface OsInterface
 {

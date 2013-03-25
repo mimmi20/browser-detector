@@ -38,7 +38,7 @@ namespace Browscap\Detector\Device\Mobile\Acer;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: AcerIconiaB1-A71.php 428 2013-02-17 17:15:57Z tmu $
+ * @version   SVN: $Id$
  */
 
 use \Browscap\Detector\DeviceHandler;
@@ -57,7 +57,7 @@ use \Browscap\Detector\OsHandler;
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id: AcerIconiaB1-A71.php 428 2013-02-17 17:15:57Z tmu $
+ * @version   SVN: $Id$
  */
 final class AcerIconiaB1a71
     extends DeviceHandler

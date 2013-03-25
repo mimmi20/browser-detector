@@ -130,7 +130,7 @@ final class Nokia6700s
         'max_image_height'       => 280,
         'resolution_width'       => 240,
         'resolution_height'      => 320,
-        'dual_orientation'       => true,
+        'dual_orientation'       => false,
         
         // markup
         'html_web_3_2' => null,
