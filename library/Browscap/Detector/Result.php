@@ -666,6 +666,7 @@ final class Result
         $this->setCapability('mobile_browser_version', clone $detector);
         $this->setCapability('renderingengine_version', clone $detector);
         $this->setCapability('device_os_version', clone $detector);
+        $this->setCapability('model_version', clone $detector);
     }
     
     /**
@@ -713,7 +714,7 @@ final class Result
         
         $versionfields = array(
             'mobile_browser_version', 'renderingengine_version', 
-            'device_os_version'
+            'device_os_version', 'model_version'
         );
         
         if (in_array($capabilityName, $versionfields) 
@@ -722,7 +723,7 @@ final class Result
             throw new \InvalidArgumentException(
                 'capability "' . $capabilityName . '" requires an instance of '
                 . '\\Browscap\\Detector\\Version as value for object "' 
-                . $this->_properties['mobile_browser'] . '"'
+                . $this->_properties[$capabilityName] . '"'
             );
         }
         
@@ -896,7 +897,7 @@ final class Result
             return 'unknown';
         }
         
-        $version = $this->getCapability('model_version');
+        $version = $this->getCapability('model_version')->getVersion(Version::MAJORMINOR);
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
         $manufacturer = $this->getCapability('manufacturer_name');
@@ -1259,7 +1260,7 @@ final class Result
             
             try {
                 switch ($property) {
-                    case 'Devicefinal class':
+                    case 'deviceClass':
                         $value = get_class($device);
                         break;
                     case 'is_wireless_device':
@@ -1268,6 +1269,7 @@ final class Result
                     case 'is_console':
                     case 'ux_full_desktop':
                     case 'model_name':
+                    case 'model_version':
                     case 'manufacturer_name':
                     case 'brand_name':
                     case 'model_extra_info':
@@ -1308,6 +1310,10 @@ final class Result
                     case 'mobile_browser_modus':
                     case 'can_skip_aligned_link_row':
                     case 'device_claims_web_support':
+                    case 'utf8_support':
+                    case 'multipart_support':
+                    case 'preferred_markup':
+                    case 'xhtml_support_level':
                         $value = $browser->getCapability($property);
                         break;
                     case 'device_os':

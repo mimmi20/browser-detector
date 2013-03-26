@@ -89,25 +89,8 @@ final class Nokia6300
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
-        
-        // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
-        
-        // os
-        // 'device_os'              => null,
-        // 'device_os_version'      => null,
-        // 'device_os_bits'         => null, // not in wurfl
-        // 'device_os_manufacturer' => null, // not in wurfl
-        
-        // engine
-        // 'renderingengine_name'         => null, // not in wurfl
-        // 'renderingengine_version'      => null, // not in wurfl
-        // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
         'can_skip_aligned_link_row' => null,
@@ -132,138 +115,16 @@ final class Nokia6300
         'resolution_height'      => null,
         'dual_orientation'       => null,
         
-        // markup
-        'html_web_3_2' => null,
-        'html_wi_oma_xhtmlmp_1_0' => null,
-        'wml_1_1' => null,
-        'xhtml_support_level' => null,
-        'preferred_markup' => null,
-        'html_web_4_0' => null,
-        'html_wi_imode_htmlx_1' => null,
-        'html_wi_imode_html_1' => null,
-        'html_wi_imode_html_2' => null,
-        'html_wi_w3_xhtmlbasic' => null,
-        'html_wi_imode_compact_generic' => null,
-        'html_wi_imode_html_3' => null,
-        'html_wi_imode_html_4' => null,
-        'wml_1_2' => null,
-        'html_wi_imode_html_5' => null,
-        'wml_1_3' => null,
-        'voicexml' => null,
-        'html_wi_imode_htmlx_1_1' => null,
-        'multipart_support' => null,
-        
-        // chtml
-        'chtml_table_support' => null,
-        'imode_region' => null,
-        'chtml_can_display_images_and_text_on_same_line' => null,
-        'chtml_displays_image_in_center' => null,
-        'chtml_make_phone_call_string' => null,
-        'chtml_display_accesskey' => null,
-        'emoji' => null,
-        
-        // xhtml
-        'xhtml_select_as_radiobutton' => null,
-        'xhtml_avoid_accesskeys' => null,
-        'xhtml_select_as_dropdown' => null,
-        'xhtml_supports_iframe' => null,
-        'xhtml_supports_forms_in_table' => null,
-        'xhtmlmp_preferred_mime_type' => null,
-        'xhtml_select_as_popup' => null,
-        'xhtml_honors_bgcolor' => null,
-        'xhtml_file_upload' => null,
-        'xhtml_preferred_charset' => null,
-        'xhtml_supports_css_cell_table_coloring' => null,
-        'xhtml_autoexpand_select' => null,
-        'accept_third_party_cookie' => null,
-        'xhtml_make_phone_call_string' => null,
-        'xhtml_allows_disabled_form_elements' => null,
-        'xhtml_supports_invisible_text' => null,
-        'cookie_support' => null,
-        'xhtml_send_mms_string' => null,
-        'xhtml_table_support' => null,
-        'xhtml_display_accesskey' => null,
-        'xhtml_can_embed_video' => null,
-        'xhtml_supports_monospace_font' => null,
-        'xhtml_supports_inline_input' => null,
-        'xhtml_document_title_support' => null,
-        'xhtml_support_wml2_namespace' => null,
-        'xhtml_readable_background_color1' => null,
-        'xhtml_format_as_attribute' => null,
-        'xhtml_supports_table_for_layout' => null,
-        'xhtml_readable_background_color2' => null,
-        'xhtml_send_sms_string' => null,
-        'xhtml_format_as_css_property' => null,
-        'opwv_xhtml_extensions_support' => null,
-        'xhtml_marquee_as_css_property' => null,
-        'xhtml_nowrap_mode' => null,
-        
-        // image format
-        'jpg' => null,
-        'gif' => null,
-        'bmp' => null,
-        'wbmp' => null,
-        'gif_animated' => null,
-        'colors' => null,
-        'png' => null,
-        'greyscale' => null,
-        'transparent_png_index' => null,
-        'epoc_bmp' => null,
-        'svgt_1_1_plus' => null,
-        'svgt_1_1' => null,
-        'transparent_png_alpha' => null,
-        'tiff' => null,
-        
         // security
-        'https_support' => null,
         'phone_id_provided' => null,
         
         // storage
         'max_deck_size' => null,
         'max_length_of_username' => null,
-        'max_url_length_bookmark' => null,
         'max_no_of_bookmarks' => null,
-        'max_url_length_cached_page' => null,
         'max_length_of_password' => null,
         'max_no_of_connection_settings' => null,
-        'max_url_length_in_requests' => null,
         'max_object_size' => null,
-        'max_url_length_homepage' => null,
-        
-        // ajax
-        'ajax_support_getelementbyid' => null,
-        'ajax_xhr_type' => null,
-        'ajax_support_event_listener' => null,
-        'ajax_support_javascript' => null,
-        'ajax_manipulate_dom' => null,
-        'ajax_support_inner_html' => null,
-        'ajax_manipulate_css' => null,
-        'ajax_support_events' => null,
-        'ajax_preferred_geoloc_api' => null,
-        
-        // wml
-        'wml_make_phone_call_string' => null,
-        'card_title_support' => null,
-        'table_support' => null,
-        'elective_forms_recommended' => null,
-        'menu_with_list_of_links_recommended' => null,
-        'break_list_of_links_with_br_element_recommended' => null,
-        'icons_on_menu_items_support' => null,
-        'opwv_wml_extensions_support' => null,
-        'built_in_back_button_support' => null,
-        'proportional_font' => null,
-        'insert_br_element_after_widget_recommended' => null,
-        'wizards_recommended' => null,
-        'wml_can_display_images_and_text_on_same_line' => null,
-        'softkey_support' => null,
-        'deck_prefetch_support' => null,
-        'menu_with_select_element_recommended' => null,
-        'numbered_menus' => null,
-        'image_as_link_support' => null,
-        'wrap_mode_support' => null,
-        'access_key_support' => null,
-        'wml_displays_image_in_center' => null,
-        'times_square_mode_support' => null,
         
         // sms
         'sms_enabled' => null,
@@ -303,9 +164,6 @@ final class Nokia6300
         'max_data_rate' => null,
         'vpn' => null,
         
-        // pdf
-        'pdf_support' => null,
-        
         // flash_lite
         'full_flash_support' => null,
         'flash_lite_version' => null,
@@ -314,40 +172,6 @@ final class Nokia6300
         'fl_screensaver' => null,
         'fl_standalone' => null,
         'fl_sub_lcd' => null,
-        
-        // third_party
-        'jqm_grade' => null,
-        'is_sencha_touch_ok' => null,
-        
-        // html
-        'image_inlining' => null,
-        'canvas_support' => null,
-        'viewport_width' => null,
-        'html_preferred_dtd' => null,
-        'viewport_supported' => null,
-        'viewport_minimum_scale' => null,
-        'viewport_initial_scale' => null,
-        'mobileoptimized' => null,
-        'viewport_maximum_scale' => null,
-        'viewport_userscalable' => null,
-        'handheldfriendly' => null,
-        
-        // css
-        'css_spriting' => null,
-        'css_gradient' => null,
-        'css_border_image' => null,
-        'css_rounded_corners' => null,
-        'css_supports_width_as_percentage' => null,
-        
-        // cache
-        'time_to_live_support' => null,
-        'total_cache_disable_support' => null,
-        
-        // bugs
-        'emptyok' => null,
-        'empty_option_value_support' => null,
-        'basic_authentication_support' => null,
-        'post_method_support' => null,
         
         // wta
         'nokia_voice_call' => null,
@@ -628,9 +452,6 @@ final class Nokia6300
         
         // transcoding
         'transcoder_ua_header' => null,
-        
-        // rss
-        'rss_support' => null,
         
         // playback
         'playback_oma_size_limit' => null,

@@ -682,6 +682,11 @@ abstract class DeviceHandler
     public function __construct()
     {
         $this->_utils = new Utils();
+        
+        $detector = new Version();
+        $detector->setVersion('');
+        
+        $this->setCapability('model_version', $detector);
     }
     
     /**
