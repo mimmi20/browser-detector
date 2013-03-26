@@ -1312,8 +1312,102 @@ final class Result
                     case 'device_claims_web_support':
                     case 'utf8_support':
                     case 'multipart_support':
-                    case 'preferred_markup':
-                    case 'xhtml_support_level':
+                    case 'html_web_3_2':
+                    case 'html_web_4_0':
+                    case 'html_wi_oma_xhtmlmp_1_0':
+                    case 'wml_1_1':
+                    case 'wml_1_2':
+                    case 'wml_1_3':
+                    case 'html_wi_imode_html_1':
+                    case 'html_wi_imode_html_2':
+                    case 'html_wi_imode_html_3':
+                    case 'html_wi_imode_html_4':
+                    case 'html_wi_imode_html_5':
+                    case 'html_wi_imode_htmlx_1':
+                    case 'html_wi_imode_htmlx_1_1':
+                    case 'html_wi_w3_xhtmlbasic':
+                    case 'html_wi_imode_compact_generic':
+                    case 'voicexml':
+                    case 'chtml_table_support':
+                    case 'imode_region':
+                    case 'chtml_can_display_images_and_text_on_same_line':
+                    case 'chtml_displays_image_in_center':
+                    case 'chtml_make_phone_call_string':
+                    case 'chtml_display_accesskey':
+                    case 'emoji':
+                    case 'xhtml_select_as_radiobutton':
+                    case 'xhtml_avoid_accesskeys':
+                    case 'xhtml_select_as_dropdown':
+                    case 'xhtml_supports_iframe':
+                    case 'xhtml_supports_forms_in_table':
+                    case 'xhtmlmp_preferred_mime_type':
+                    case 'xhtml_select_as_popup':
+                    case 'xhtml_honors_bgcolor':
+                    case 'xhtml_file_upload':
+                    case 'xhtml_preferred_charset':
+                    case 'xhtml_supports_css_cell_table_coloring':
+                    case 'xhtml_autoexpand_select':
+                    case 'accept_third_party_cookie':
+                    case 'xhtml_make_phone_call_string':
+                    case 'xhtml_allows_disabled_form_elements':
+                    case 'xhtml_supports_invisible_text':
+                    case 'cookie_support':
+                    case 'xhtml_send_mms_string':
+                    case 'xhtml_table_support':
+                    case 'xhtml_display_accesskey':
+                    case 'xhtml_can_embed_video':
+                    case 'xhtml_supports_monospace_font':
+                    case 'xhtml_supports_inline_input':
+                    case 'xhtml_document_title_support':
+                    case 'xhtml_support_wml2_namespace':
+                    case 'xhtml_readable_background_color1':
+                    case 'xhtml_format_as_attribute':
+                    case 'xhtml_supports_table_for_layout':
+                    case 'xhtml_readable_background_color2':
+                    case 'xhtml_send_sms_string':
+                    case 'xhtml_format_as_css_property':
+                    case 'opwv_xhtml_extensions_support':
+                    case 'xhtml_marquee_as_css_property':
+                    case 'xhtml_nowrap_mode':
+                    case 'https_support':
+                    case 'max_url_length_bookmark':
+                    case 'max_url_length_cached_page':
+                    case 'max_url_length_in_requests':
+                    case 'max_url_length_homepage':
+                    case 'ajax_support_getelementbyid':
+                    case 'ajax_xhr_type':
+                    case 'ajax_support_event_listener':
+                    case 'ajax_support_javascript':
+                    case 'ajax_manipulate_dom':
+                    case 'ajax_support_inner_html':
+                    case 'ajax_manipulate_css':
+                    case 'ajax_support_events':
+                    case 'ajax_preferred_geoloc_api':
+                    case 'pdf_support':
+                    case 'jqm_grade':
+                    case 'is_sencha_touch_ok':
+                    case 'image_inlining':
+                    case 'canvas_support':
+                    case 'viewport_width':
+                    case 'html_preferred_dtd':
+                    case 'viewport_supported':
+                    case 'viewport_minimum_scale':
+                    case 'viewport_initial_scale':
+                    case 'mobileoptimized':
+                    case 'viewport_maximum_scale':
+                    case 'viewport_userscalable':
+                    case 'handheldfriendly':
+                    case 'css_spriting':
+                    case 'css_gradient':
+                    case 'css_border_image':
+                    case 'css_rounded_corners':
+                    case 'css_supports_width_as_percentage':
+                    case 'emptyok':
+                    case 'empty_option_value_support':
+                    case 'basic_authentication_support':
+                    case 'post_method_support':
+                    case 'rss_support':
+                    // case 'multipart_support':
                         $value = $browser->getCapability($property);
                         break;
                     case 'device_os':
@@ -1325,6 +1419,8 @@ final class Result
                     case 'renderingengine_name':
                     case 'renderingengine_version':
                     case 'renderingengine_manufacturer':
+                    case 'preferred_markup':
+                    case 'xhtml_support_level':
                         $value = $engine->getCapability($property);
                         break;
                     default:
