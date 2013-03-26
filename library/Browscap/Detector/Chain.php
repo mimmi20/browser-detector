@@ -163,7 +163,7 @@ final class Chain
                 $className = $utils->getClassNameFromFile(
                     $filename, $this->_namespace, true
                 );
-                //var_dump($className);
+                //var_dump('1: ' . $className);
                 try {
                     $handler = new $className();
                 } catch (\Exception $e) {
@@ -180,7 +180,7 @@ final class Chain
             while ($chain->valid()) {
                 $handler = $chain->current();
                 $handler->setUserAgent($this->_userAgent);
-                
+                //var_dump('2: ' . get_class($handler));
                 if ($handler->canHandle()) {
                     return $handler->detect();
                 }
@@ -200,7 +200,7 @@ final class Chain
             );
             $handler = new $className();
         }
-        
+        //var_dump('3: ' . get_class($handler));
         $handler->setUserAgent($this->_userAgent);
         
         return $handler;
