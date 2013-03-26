@@ -43,6 +43,7 @@ namespace Browscap\Detector\Device\Desktop;
 
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\Windows as WindowsHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -488,7 +489,10 @@ final class WindowsDesktop
      */
     public function canHandle()
     {
-        if (!$this->_utils->isWindows($this->_useragent)) {
+        $windowsHelper = new WindowsHelper();
+        $windowsHelper->setUserAgent($this->_useragent);
+        
+        if (!$windowsHelper->isWindows()) {
             return false;
         }
         

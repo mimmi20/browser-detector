@@ -43,6 +43,8 @@ namespace Browscap\Detector\Os;
 
 use \Browscap\Detector\OsHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\MobileDevice;
+use \Browscap\Helper\Windows as WindowsHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -98,8 +100,14 @@ class WindowsMobileOs
             return false;
         }
         
-        if (!$this->_utils->isMobileWindows() 
-            && !($this->_utils->isWindows() && $this->_utils->isMobileBrowser())
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        
+        $windowsHelper = new WindowsHelper();
+        $windowsHelper->setUserAgent($this->_useragent);
+        
+        if (!$windowsHelper->isMobileWindows() 
+            && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobileBrowser())
         ) {
             return false;
         }

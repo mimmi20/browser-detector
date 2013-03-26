@@ -43,6 +43,7 @@ namespace Browscap\Detector\Os;
 
 use \Browscap\Detector\OsHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\Windows as WindowsHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -100,11 +101,14 @@ class Windows
      */
     public function canHandle()
     {
-        if ($this->_utils->isMobileWindows()) {
+        $windowsHelper = new WindowsHelper();
+        $windowsHelper->setUserAgent($this->_useragent);
+        
+        if ($windowsHelper->isMobileWindows()) {
             return false;
         }
         
-        if (!$this->_utils->isWindows()) {
+        if (!$windowsHelper->isWindows()) {
             return false;
         }
         

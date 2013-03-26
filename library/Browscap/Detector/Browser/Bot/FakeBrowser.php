@@ -43,6 +43,7 @@ namespace Browscap\Detector\Browser\Bot;
 
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\SpamCrawlerFake;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
@@ -260,7 +261,10 @@ class FakeBrowser
      */
     public function canHandle()
     {
-        if ($this->_utils->isFakeBrowser()) {
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($this->_useragent);
+        
+        if ($spamHelper->isFakeBrowser()) {
             return true;
         }
         

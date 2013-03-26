@@ -43,6 +43,7 @@ namespace Browscap\Detector\Os;
 
 use \Browscap\Detector\OsHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\Safari as SafariHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -102,8 +103,11 @@ class Android
             return false;
         }
         
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->_useragent);
+        
         if ($this->_utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;'))
-            || $this->_utils->isMobileAsSafari()
+            || $safariHelper->isMobileAsSafari()
         ) {
             return true;
         }

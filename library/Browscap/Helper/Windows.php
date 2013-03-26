@@ -44,12 +44,27 @@ namespace Browscap\Helper;
  * WURFL user agent hander utilities
  * @package   Browscap
  */
-final class Utils
+final class Windows
 {
     /**
      * @var string the user agent to handle
      */
     private $_useragent = '';
+    
+    /**
+     * @var \Browscap\Helper\Utils the helper class
+     */
+    private $_utils = null;
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        $this->_utils = new Utils();
+    }
     
     /**
      * sets the user agent to be handled
@@ -59,82 +74,76 @@ final class Utils
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
+        $this->_utils->setUserAgent($userAgent);
         
         return $this;
     }
     
-    /**
-     * Returns true if $haystack contains $needle
-     * @param string $haystack Haystack
-     * @param string $needle Needle
-     * @return bool
-     */
-    public function checkIfContains($needle, $ci = false)
+    public function isWindows()
     {
-        if (is_array($needle)) {
-            foreach ($needle as $singleneedle) {
-                if ($this->checkIfContains($singleneedle, $ci)) {
-                    return true;
-                }
-            }
-            
+        $isNotReallyAWindows = array(
+            // other OS and Mobile Windows
+            'Linux',
+            'Macintosh',
+            'Mac OS X',
+            'Mobi'
+        );
+        
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($this->_useragent);
+        
+        if ($this->_utils->checkIfContains($isNotReallyAWindows)
+            || $spamHelper->isFakeWindows()
+            || $this->isMobileWindows()
+        ) {
             return false;
         }
         
-        if (!is_string($needle)) {
+        $windows = array(
+            'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
+            'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
+            'windows 3.1', 'win9x/nt 4.90', 'windows xp', 'windows me', 
+            'windows'
+        );
+        
+        if (!$this->_utils->checkIfContains($windows, true)
+            && !$this->_utils->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
+        ) {
             return false;
         }
         
-        if ($ci) {
-            return stripos($this->_useragent, $needle) !== false;
-        }
-        
-        return strpos($this->_useragent, $needle) !== false;
-    }
-    
-    /**
-     * Returns true if $haystack contains all of the(string)needles in $needles
-     * @param string $haystack Haystack
-     * @param array $needles Array of(string)needles
-     * @return bool
-     */
-    public function checkIfContainsAll(array $needles = array(), $ci = false)
-    {
-        foreach ($needles as $needle) {
-            if (!$this->checkIfContains($needle, $ci)) {
-                return false;
-            }
+        if ($this->_utils->checkIfContains('trident', true)
+            && !$this->_utils->checkIfContains($windows, true)
+        ) {
+            return false;
         }
         
         return true;
     }
     
-    /**
-     * Returns true if $haystack starts with $needle
-     * @param string $haystack Haystack
-     * @param string $needle Needle
-     * @return bool
-     */
-    public function checkIfStartsWith($needle, $ci = false) 
+    public function isMobileWindows()
     {
-        if (is_array($needle)) {
-            foreach ($needle as $singleneedle) {
-                if ($this->checkIfStartsWith($singleneedle, $ci)) {
-                    return true;
-                }
-            }
-            
+        $mobileWindows = array(
+            'windows ce', 'windows phone', 'windows mobile', 
+            'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
+            'windowsmobile'
+        );
+        
+        if (!$this->_utils->checkIfContains($mobileWindows, true)) {
             return false;
         }
         
-        if (!is_string($needle)) {
+        $isNotReallyAWindows = array(
+            // other OS
+            'Linux',
+            'Macintosh',
+            'Mac OS X',
+        );
+        
+        if ($this->_utils->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
         
-        if ($ci) {
-            return stripos($this->_useragent, $needle) === 0;
-        }
-        
-        return strpos($this->_useragent, $needle) === 0;
+        return true;
     }
 }

@@ -260,14 +260,6 @@ class Prism
      */
     public function canHandle()
     {
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfStartsWith('Mozilla/4.0')
             && !$this->_utils->checkIfStartsWith('Mozilla/5.0')
         ) {

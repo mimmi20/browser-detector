@@ -43,6 +43,7 @@ namespace Browscap\Detector\Device;
 
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\MobileDevice;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -488,7 +489,10 @@ final class GeneralMobile
      */
     public function canHandle()
     {
-        if ($this->_utils->isMobileBrowser()) {
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        
+        if ($mobileDeviceHelper->isMobileBrowser()) {
             return true;
         }
         

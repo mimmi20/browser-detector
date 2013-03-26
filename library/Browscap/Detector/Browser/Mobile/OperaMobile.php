@@ -43,6 +43,7 @@ namespace Browscap\Detector\Browser\Mobile;
 
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\MobileDevice;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
@@ -261,8 +262,11 @@ class OperaMobile
      */
     public function canHandle()
     {
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        
         if (!$this->_utils->checkIfContains(array('Opera Mobi', 'Opera Tablet'))
-            && !($this->_utils->isMobileBrowser() && $this->_utils->checkIfContains('Opera'))
+            && !($mobileDeviceHelper->isMobileBrowser() && $this->_utils->checkIfContains('Opera'))
         ) {
             return false;
         }

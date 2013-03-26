@@ -43,6 +43,7 @@ namespace Browscap\Detector\Device;
 
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\Tv as TvHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -488,7 +489,10 @@ final class GeneralTv
      */
     public function canHandle()
     {
-        if (!$this->_utils->isTvDevice()) {
+        $tvHelper = new TvHelper();
+        $tvHelper->setUserAgent($this->_useragent);
+        
+        if (!$tvHelper->isTvDevice()) {
             return false;
         }
         

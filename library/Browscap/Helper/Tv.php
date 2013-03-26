@@ -44,12 +44,27 @@ namespace Browscap\Helper;
  * WURFL user agent hander utilities
  * @package   Browscap
  */
-final class Utils
+final class Tv
 {
     /**
      * @var string the user agent to handle
      */
     private $_useragent = '';
+    
+    /**
+     * @var \Browscap\Helper\Utils the helper class
+     */
+    private $_utils = null;
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        $this->_utils = new Utils();
+    }
     
     /**
      * sets the user agent to be handled
@@ -59,82 +74,34 @@ final class Utils
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
+        $this->_utils->setUserAgent($userAgent);
         
         return $this;
     }
     
-    /**
-     * Returns true if $haystack contains $needle
-     * @param string $haystack Haystack
-     * @param string $needle Needle
-     * @return bool
-     */
-    public function checkIfContains($needle, $ci = false)
+    public function isTvDevice()
     {
-        if (is_array($needle)) {
-            foreach ($needle as $singleneedle) {
-                if ($this->checkIfContains($singleneedle, $ci)) {
-                    return true;
-                }
-            }
-            
-            return false;
+        $tvDevices = array(
+            'boxee',
+            'ce-html',
+            'dlink.dsm380',
+            'googletv',
+            'hbbtv',
+            'idl-6651n',
+            'kdl40ex720',
+            'netrangemmh',
+            'loewe; sl121',
+            'loewe; sl150',
+            'smart-tv',
+            'sonydtv115',
+            'viera',
+            'xbox'
+        );
+        
+        if ($this->_utils->checkIfContains($tvDevices, true)) {
+            return true;
         }
         
-        if (!is_string($needle)) {
-            return false;
-        }
-        
-        if ($ci) {
-            return stripos($this->_useragent, $needle) !== false;
-        }
-        
-        return strpos($this->_useragent, $needle) !== false;
-    }
-    
-    /**
-     * Returns true if $haystack contains all of the(string)needles in $needles
-     * @param string $haystack Haystack
-     * @param array $needles Array of(string)needles
-     * @return bool
-     */
-    public function checkIfContainsAll(array $needles = array(), $ci = false)
-    {
-        foreach ($needles as $needle) {
-            if (!$this->checkIfContains($needle, $ci)) {
-                return false;
-            }
-        }
-        
-        return true;
-    }
-    
-    /**
-     * Returns true if $haystack starts with $needle
-     * @param string $haystack Haystack
-     * @param string $needle Needle
-     * @return bool
-     */
-    public function checkIfStartsWith($needle, $ci = false) 
-    {
-        if (is_array($needle)) {
-            foreach ($needle as $singleneedle) {
-                if ($this->checkIfStartsWith($singleneedle, $ci)) {
-                    return true;
-                }
-            }
-            
-            return false;
-        }
-        
-        if (!is_string($needle)) {
-            return false;
-        }
-        
-        if ($ci) {
-            return stripos($this->_useragent, $needle) === 0;
-        }
-        
-        return strpos($this->_useragent, $needle) === 0;
+        return false;
     }
 }

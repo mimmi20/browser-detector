@@ -260,14 +260,6 @@ class MailRu
      */
     public function canHandle() 
     {
-        if ($this->_utils->isMobileBrowser($this->_useragent)) {
-            return false;
-        }
-        
-        if ($this->_utils->isSpamOrCrawler($this->_useragent)) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('Mail.RU'))) {
             return false;
         }

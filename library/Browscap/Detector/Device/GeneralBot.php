@@ -43,6 +43,7 @@ namespace Browscap\Detector\Device;
 
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\SpamCrawlerFake;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -488,11 +489,14 @@ final class GeneralBot
      */
     public function canHandle()
     {
-        if ($this->_utils->isSpamOrCrawler()) {
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($this->_useragent);
+        
+        if ($spamHelper->isSpamOrCrawler()) {
             return true;
         }
         
-        if ($this->_utils->isFakeBrowser()) {
+        if ($spamHelper->isFakeBrowser()) {
             return true;
         }
         

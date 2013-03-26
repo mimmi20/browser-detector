@@ -44,6 +44,7 @@ namespace Browscap\Detector\Browser\Mobile;
 
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\Safari as SafariHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
@@ -262,8 +263,11 @@ class Android
      */
     public function canHandle()
     {
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->_useragent);
+        
         if (!$this->_utils->checkIfContains('Android')
-            && !$this->_utils->isMobileAsSafari($this->_useragent)
+            && !$safariHelper->isMobileAsSafari()
         ) {
             return false;
         }
@@ -311,6 +315,9 @@ class Android
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
         
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->_useragent);
+        
         $searches = array('Version', 'Safari');
         
         $this->setCapability(
@@ -323,7 +330,7 @@ class Android
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             
             return $this;
@@ -336,7 +343,7 @@ class Android
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             
             return $this;
@@ -349,7 +356,7 @@ class Android
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             
             return $this;
@@ -362,7 +369,7 @@ class Android
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             
             return $this;

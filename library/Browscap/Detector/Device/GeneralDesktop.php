@@ -43,6 +43,10 @@ namespace Browscap\Detector\Device;
 
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\MobileDevice;
+use \Browscap\Helper\SpamCrawlerFake;
+use \Browscap\Helper\Windows as WindowsHelper;
+use \Browscap\Helper\Tv as TvHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
@@ -488,23 +492,35 @@ final class GeneralDesktop
      */
     public function canHandle()
     {
-        if ($this->_utils->isMobileBrowser()) {
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        
+        if ($mobileDeviceHelper->isMobileBrowser()) {
             return false;
         }
         
-        if ($this->_utils->isSpamOrCrawler()) {
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($this->_useragent);
+        
+        if ($spamHelper->isSpamOrCrawler()) {
             return false;
         }
         
-        if ($this->_utils->isFakeBrowser()) {
+        if ($spamHelper->isFakeBrowser()) {
             return false;
         }
         
-        if ($this->_utils->isTvDevice()) {
+        $tvHelper = new TvHelper();
+        $tvHelper->setUserAgent($this->_useragent);
+        
+        if ($tvHelper->isTvDevice()) {
             return false;
         }
         
-        if ($this->_utils->isWindows()) {
+        $windowsHelper = new WindowsHelper();
+        $windowsHelper->setUserAgent($this->_useragent);
+        
+        if ($windowsHelper->isWindows()) {
             return true;
         }
         

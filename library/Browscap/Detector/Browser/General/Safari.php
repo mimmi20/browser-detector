@@ -43,6 +43,7 @@ namespace Browscap\Detector\Browser\General;
 
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\Safari as SafariHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
@@ -260,7 +261,10 @@ class Safari
      */
     public function canHandle()
     {
-        return $this->_utils->isSafari();
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->_useragent);
+        
+        return $safariHelper->isSafari();
     }
     
     /**
@@ -273,12 +277,15 @@ class Safari
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->_useragent);
+        
         $doMatch = preg_match('/Version\/([\d\.]+)/', $this->_useragent, $matches);
         
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             return $this;
         }
@@ -290,7 +297,7 @@ class Safari
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             return $this;
         }
@@ -300,7 +307,7 @@ class Safari
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             return $this;
         }
@@ -312,7 +319,7 @@ class Safari
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', 
-                $detector->setVersion($this->_utils->mapSafariVersions($matches[1]))
+                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
             return $this;
         }
