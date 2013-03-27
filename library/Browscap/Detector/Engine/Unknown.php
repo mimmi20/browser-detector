@@ -154,18 +154,11 @@ class Unknown extends EngineHandler
         
         // security
         'https_support' => null,
-        'phone_id_provided' => null,
         
         // storage
-        'max_deck_size' => null,
-        'max_length_of_username' => null,
         'max_url_length_bookmark' => null,
-        'max_no_of_bookmarks' => null,
         'max_url_length_cached_page' => null,
-        'max_length_of_password' => null,
-        'max_no_of_connection_settings' => null,
         'max_url_length_in_requests' => null,
-        'max_object_size' => null,
         'max_url_length_homepage' => null,
         
         // ajax

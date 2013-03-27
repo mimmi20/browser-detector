@@ -1310,6 +1310,58 @@ final class Result
                     case 'mobile_browser_modus':
                     case 'can_skip_aligned_link_row':
                     case 'device_claims_web_support':
+                    case 'pdf_support':
+                    case 'emptyok':
+                    case 'empty_option_value_support':
+                    case 'basic_authentication_support':
+                    case 'post_method_support':
+                    case 'rss_support':
+                    // case 'multipart_support':
+                        $value = $browser->getCapability($property);
+                        break;
+                    case 'device_os':
+                    case 'device_os_version':
+                    case 'device_os_bits':
+                    case 'device_os_manufacturer':
+                        $value = $os->getCapability($property);
+                        break;
+                    case 'renderingengine_name':
+                    case 'renderingengine_version':
+                    case 'renderingengine_manufacturer':
+                    case 'preferred_markup':
+                    case 'xhtml_support_level':
+                    case 'css_spriting':
+                    case 'css_gradient':
+                    case 'css_border_image':
+                    case 'css_rounded_corners':
+                    case 'css_supports_width_as_percentage':
+                    case 'jqm_grade':
+                    case 'is_sencha_touch_ok':
+                    case 'image_inlining':
+                    case 'canvas_support':
+                    case 'viewport_width':
+                    case 'html_preferred_dtd':
+                    case 'viewport_supported':
+                    case 'viewport_minimum_scale':
+                    case 'viewport_initial_scale':
+                    case 'mobileoptimized':
+                    case 'viewport_maximum_scale':
+                    case 'viewport_userscalable':
+                    case 'handheldfriendly':
+                    case 'https_support':
+                    case 'max_url_length_bookmark':
+                    case 'max_url_length_cached_page':
+                    case 'max_url_length_in_requests':
+                    case 'max_url_length_homepage':
+                    case 'ajax_support_getelementbyid':
+                    case 'ajax_xhr_type':
+                    case 'ajax_support_event_listener':
+                    case 'ajax_support_javascript':
+                    case 'ajax_manipulate_dom':
+                    case 'ajax_support_inner_html':
+                    case 'ajax_manipulate_css':
+                    case 'ajax_support_events':
+                    case 'ajax_preferred_geoloc_api':
                     case 'utf8_support':
                     case 'multipart_support':
                     case 'html_web_3_2':
@@ -1369,58 +1421,6 @@ final class Result
                     case 'opwv_xhtml_extensions_support':
                     case 'xhtml_marquee_as_css_property':
                     case 'xhtml_nowrap_mode':
-                    case 'https_support':
-                    case 'max_url_length_bookmark':
-                    case 'max_url_length_cached_page':
-                    case 'max_url_length_in_requests':
-                    case 'max_url_length_homepage':
-                    case 'ajax_support_getelementbyid':
-                    case 'ajax_xhr_type':
-                    case 'ajax_support_event_listener':
-                    case 'ajax_support_javascript':
-                    case 'ajax_manipulate_dom':
-                    case 'ajax_support_inner_html':
-                    case 'ajax_manipulate_css':
-                    case 'ajax_support_events':
-                    case 'ajax_preferred_geoloc_api':
-                    case 'pdf_support':
-                    case 'jqm_grade':
-                    case 'is_sencha_touch_ok':
-                    case 'image_inlining':
-                    case 'canvas_support':
-                    case 'viewport_width':
-                    case 'html_preferred_dtd':
-                    case 'viewport_supported':
-                    case 'viewport_minimum_scale':
-                    case 'viewport_initial_scale':
-                    case 'mobileoptimized':
-                    case 'viewport_maximum_scale':
-                    case 'viewport_userscalable':
-                    case 'handheldfriendly':
-                    case 'css_spriting':
-                    case 'css_gradient':
-                    case 'css_border_image':
-                    case 'css_rounded_corners':
-                    case 'css_supports_width_as_percentage':
-                    case 'emptyok':
-                    case 'empty_option_value_support':
-                    case 'basic_authentication_support':
-                    case 'post_method_support':
-                    case 'rss_support':
-                    // case 'multipart_support':
-                        $value = $browser->getCapability($property);
-                        break;
-                    case 'device_os':
-                    case 'device_os_version':
-                    case 'device_os_bits':
-                    case 'device_os_manufacturer':
-                        $value = $os->getCapability($property);
-                        break;
-                    case 'renderingengine_name':
-                    case 'renderingengine_version':
-                    case 'renderingengine_manufacturer':
-                    case 'preferred_markup':
-                    case 'xhtml_support_level':
                         $value = $engine->getCapability($property);
                         break;
                     default:
