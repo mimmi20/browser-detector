@@ -262,6 +262,42 @@ final class Result
         'wml_displays_image_in_center' => null,
         'times_square_mode_support' => null,
         
+        // pdf
+        'pdf_support' => null,
+        
+        // third_party
+        'jqm_grade' => null,
+        'is_sencha_touch_ok' => null,
+        
+        // html
+        'image_inlining' => null,
+        'canvas_support' => null,
+        'viewport_width' => null,
+        'html_preferred_dtd' => null,
+        'viewport_supported' => null,
+        'viewport_minimum_scale' => null,
+        'viewport_initial_scale' => null,
+        'mobileoptimized' => null,
+        'viewport_maximum_scale' => null,
+        'viewport_userscalable' => null,
+        'handheldfriendly' => null,
+        
+        // css
+        'css_spriting' => null,
+        'css_gradient' => null,
+        'css_border_image' => null,
+        'css_rounded_corners' => null,
+        'css_supports_width_as_percentage' => null,
+        
+        // bugs
+        'emptyok' => null,
+        'empty_option_value_support' => null,
+        'basic_authentication_support' => null,
+        'post_method_support' => null,
+        
+        // rss
+        'rss_support' => null,
+        
         // sms
         'sms_enabled' => null,
         'ems' => null,
@@ -300,9 +336,6 @@ final class Result
         'max_data_rate' => null,
         'vpn' => null,
         
-        // pdf
-        'pdf_support' => null,
-        
         // flash_lite
         'full_flash_support' => null,
         'flash_lite_version' => null,
@@ -312,39 +345,9 @@ final class Result
         'fl_standalone' => null,
         'fl_sub_lcd' => null,
         
-        // third_party
-        'jqm_grade' => null,
-        'is_sencha_touch_ok' => null,
-        
-        // html
-        'image_inlining' => null,
-        'canvas_support' => null,
-        'viewport_width' => null,
-        'html_preferred_dtd' => null,
-        'viewport_supported' => null,
-        'viewport_minimum_scale' => null,
-        'viewport_initial_scale' => null,
-        'mobileoptimized' => null,
-        'viewport_maximum_scale' => null,
-        'viewport_userscalable' => null,
-        'handheldfriendly' => null,
-        
-        // css
-        'css_spriting' => null,
-        'css_gradient' => null,
-        'css_border_image' => null,
-        'css_rounded_corners' => null,
-        'css_supports_width_as_percentage' => null,
-        
         // cache
         'time_to_live_support' => null,
         'total_cache_disable_support' => null,
-        
-        // bugs
-        'emptyok' => null,
-        'empty_option_value_support' => null,
-        'basic_authentication_support' => null,
-        'post_method_support' => null,
         
         // wta
         'nokia_voice_call' => null,
@@ -625,9 +628,6 @@ final class Result
         
         // transcoding
         'transcoder_ua_header' => null,
-        
-        // rss
-        'rss_support' => null,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -1421,6 +1421,42 @@ final class Result
                     case 'opwv_xhtml_extensions_support':
                     case 'xhtml_marquee_as_css_property':
                     case 'xhtml_nowrap_mode':
+                    case 'jpg':
+                    case 'gif':
+                    case 'bmp':
+                    case 'wbmp':
+                    case 'gif_animated':
+                    case 'colors':
+                    case 'png':
+                    case 'greyscale':
+                    case 'transparent_png_index':
+                    case 'epoc_bmp':
+                    case 'svgt_1_1_plus':
+                    case 'svgt_1_1':
+                    case 'transparent_png_alpha':
+                    case 'tiff':
+                    case 'wml_make_phone_call_string':
+                    case 'card_title_support':
+                    case 'table_support':
+                    case 'elective_forms_recommended':
+                    case 'menu_with_list_of_links_recommended':
+                    case 'break_list_of_links_with_br_element_recommended':
+                    case 'icons_on_menu_items_support':
+                    case 'opwv_wml_extensions_support':
+                    case 'built_in_back_button_support':
+                    case 'proportional_font':
+                    case 'insert_br_element_after_widget_recommended':
+                    case 'wizards_recommended':
+                    case 'wml_can_display_images_and_text_on_same_line':
+                    case 'softkey_support':
+                    case 'deck_prefetch_support':
+                    case 'menu_with_select_element_recommended':
+                    case 'numbered_menus':
+                    case 'image_as_link_support':
+                    case 'wrap_mode_support':
+                    case 'access_key_support':
+                    case 'wml_displays_image_in_center':
+                    case 'times_square_mode_support':
                         $value = $engine->getCapability($property);
                         break;
                     default:

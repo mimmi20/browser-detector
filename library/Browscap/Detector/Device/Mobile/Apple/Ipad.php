@@ -518,6 +518,48 @@ final class Ipad
     }
     
     /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        $this->setCapability('model_extra_info', $osVersion);
+        
+        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+        $engine->setCapability('html_wi_imode_compact_generic', true);
+        $engine->setCapability('chtml_table_support', false);
+        $engine->setCapability('xhtml_select_as_radiobutton', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', false);
+        $engine->setCapability('xhtml_select_as_dropdown', false);
+        $engine->setCapability('xhtml_supports_forms_in_table', false);
+        $engine->setCapability('xhtml_select_as_popup', false);
+        $engine->setCapability('xhtml_file_upload', 'not_supported');
+        $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('xhtml_table_support', true);
+        $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
+        $engine->setCapability('xhtml_supports_table_for_layout', true);
+        $engine->setCapability('xhtml_marquee_as_css_property', true);
+        $engine->setCapability('max_url_length_in_requests', 512);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+        $engine->setCapability('canvas_support', 'full');
+        $engine->setCapability('viewport_width', 'device_width_token');
+        $engine->setCapability('viewport_supported', true);
+        $engine->setCapability('viewport_userscalable', 'no');
+        
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        return $this;
+    }
+    
+    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *

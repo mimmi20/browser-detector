@@ -62,8 +62,6 @@ class NetFront extends EngineHandler
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
         // engine
         'renderingengine_name'         => 'NetFront', // not in wurfl
         'renderingengine_version'      => '', // not in wurfl

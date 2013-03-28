@@ -62,8 +62,6 @@ class Unknown extends EngineHandler
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
         // engine
         'renderingengine_name'         => 'unknown', // not in wurfl
         'renderingengine_version'      => '', // not in wurfl
@@ -198,7 +196,7 @@ class Unknown extends EngineHandler
         
         // third_party
         'jqm_grade' => null,
-        'is_sencha_touch_ok' => null,
+        'is_sencha_touch_ok' => false,
         
         // html
         'image_inlining' => null,

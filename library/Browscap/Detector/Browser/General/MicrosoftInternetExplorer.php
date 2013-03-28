@@ -110,7 +110,7 @@ class MicrosoftInternetExplorer
         'post_method_support' => true,
         
         // rss
-        'rss_support' => true,
+        'rss_support' => false,
     );
     
     private $_patterns = array(
@@ -276,7 +276,9 @@ class MicrosoftInternetExplorer
         
         switch ($engineVersion) {
             case 4:
-                if ($this->_utils->checkIfContains('Trident/4.0')) {
+                if ($this->_utils->checkIfContains('Trident/4.0')
+                    && 8 != $detectedVersion
+                ) {
                     $browserVersion->setVersion('8.0');
                     
                     $this->setCapability(
