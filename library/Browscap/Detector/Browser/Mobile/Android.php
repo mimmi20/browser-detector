@@ -48,6 +48,8 @@ use \Browscap\Helper\Safari as SafariHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
@@ -89,20 +91,20 @@ class Android
         'device_claims_web_support' => false,
         
         // pdf
-        'pdf_support' => null,
+        'pdf_support' => true,
         
         // cache
         'time_to_live_support' => null,
         'total_cache_disable_support' => null,
         
         // bugs
-        'emptyok' => null,
-        'empty_option_value_support' => null,
-        'basic_authentication_support' => null,
-        'post_method_support' => null,
+        'emptyok' => false,
+        'empty_option_value_support' => true,
+        'basic_authentication_support' => true,
+        'post_method_support' => true,
         
         // rss
-        'rss_support' => null,
+        'rss_support' => false,
     );
     
     /**
@@ -253,5 +255,31 @@ class Android
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtml_supports_forms_in_table', true);
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_supports_invisible_text', true);
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('colors', 65536);
+        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+        $engine->setCapability('xhtml_supports_invisible_text', false);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        
+        return $this;
     }
 }

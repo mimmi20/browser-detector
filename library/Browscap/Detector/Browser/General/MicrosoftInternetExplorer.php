@@ -46,6 +46,7 @@ use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
@@ -265,7 +266,7 @@ class MicrosoftInternetExplorer
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os)
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
     {
         $engineVersion = (int) $engine->getCapability('renderingengine_version')->getVersion(
             Version::MAJORONLY
@@ -285,6 +286,10 @@ class MicrosoftInternetExplorer
                         'mobile_browser_modus', 
                         'IE ' . $detectedVersion . ' Compatibility Mode'
                     );
+                }
+                
+                if (8 == $detectedVersion) {
+                    $engine->setCapability('image_inlining', true);
                 }
                 break;
             case 5:
@@ -311,8 +316,12 @@ class MicrosoftInternetExplorer
                 //nothing to do
                 break;
         }
+
+        if (7 == $detectedVersion) {
+            $engine->setCapability('css_spriting', true);
+        }
         
-        parent::detectDependProperties($engine, $os);
+        parent::detectDependProperties($engine, $os, $device);
         
         return $this;
     }

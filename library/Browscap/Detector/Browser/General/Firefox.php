@@ -46,6 +46,8 @@ use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
@@ -211,5 +213,44 @@ class Firefox
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        if ($device->getCapability('is_wireless_device')
+            && 'Android' == $os->getCapability('device_os')
+        ) {
+            $device->setCapability('has_qwerty_keyboard', true);
+            $device->setCapability('pointing_method', 'touchscreen');
+            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+            $engine->setCapability('chtml_table_support', false);
+            $engine->setCapability('xhtml_select_as_radiobutton', false);
+            $engine->setCapability('xhtml_select_as_dropdown', false);
+            $engine->setCapability('xhtml_select_as_popup', false);
+            $engine->setCapability('xhtml_file_upload', 'not_supported');
+            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+            $engine->setCapability('xhtml_table_support', true);
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+            $engine->setCapability('xhtml_supports_table_for_layout', true);
+            $engine->setCapability('canvas_support', 'full');
+            $engine->setCapability('viewport_supported', true);
+            $engine->setCapability('viewport_width', 'device_width_token');
+            $engine->setCapability('viewport_userscalable', 'no');
+            $engine->setCapability('css_gradient', 'mozilla');
+            $engine->setCapability('css_border_image', 'mozilla');
+            $engine->setCapability('css_rounded_corners', 'mozilla');
+        }
+        
+        return $this;
     }
 }

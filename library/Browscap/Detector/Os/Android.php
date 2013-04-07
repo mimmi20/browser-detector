@@ -48,6 +48,8 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -194,5 +196,40 @@ class Android
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device)
+    {
+        parent::detectDependProperties($browser, $engine, $device);
+        
+        if (!$device->getCapability('is_tablet')) {
+            $engine->setCapability('xhtml_send_mms_string', 'mms:');
+            $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        }
+        
+        $engine->setCapability('bmp', false);
+        $engine->setCapability('wbmp', true);
+        $engine->setCapability('gif_animated', false);
+        $engine->setCapability('transparent_png_index', true);
+        $engine->setCapability('transparent_png_alpha', true);
+        $engine->setCapability('wml_make_phone_call_string', 'wtai://wp/mc;');
+        $engine->setCapability('max_url_length_in_requests', 256);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'gears');
+        $engine->setCapability('xhtml_preferred_charset', 'iso-8859-1');
+        $engine->setCapability('card_title_support', true);
+        $engine->setCapability('table_support', true);
+        $engine->setCapability('elective_forms_recommended', true);
+        $engine->setCapability('menu_with_list_of_links_recommended', true);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        $engine->setCapability('is_sencha_touch_ok', false);
+        
+        return $this;
     }
 }

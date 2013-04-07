@@ -42,6 +42,9 @@ namespace Browscap\Detector\Engine;
  */
 
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\MatcherInterface;
 
 /**
@@ -129,19 +132,19 @@ class Webkit extends EngineHandler
         'xhtml_supports_table_for_layout' => false,
         'xhtml_readable_background_color2' => '#FFFFFF',
         'xhtml_send_sms_string' => 'none',
-        'xhtml_format_as_css_property' => false,
+        'xhtml_format_as_css_property' => false,//ver 534.46,non-mobi=false
         'opwv_xhtml_extensions_support' => false,
         'xhtml_marquee_as_css_property' => false,
         'xhtml_nowrap_mode' => false,
         
         // image format
-        'jpg' => false,
-        'gif' => false,
-        'bmp' => false,
+        'jpg' => true,
+        'gif' => true,
+        'bmp' => true,
         'wbmp' => false,
-        'gif_animated' => false,
-        'colors' => false,
-        'png' => false,
+        'gif_animated' => true,
+        'colors' => 65536,
+        'png' => true,
         'greyscale' => false,
         'transparent_png_index' => false,
         'epoc_bmp' => false,
@@ -171,7 +174,7 @@ class Webkit extends EngineHandler
         'ajax_preferred_geoloc_api' => 'none',
         
         // wml
-        'wml_make_phone_call_string' => false,
+        'wml_make_phone_call_string' => 'none', // ver >= 534.46, Chrome+Safari => none
         'card_title_support' => false,
         'table_support' => false,
         'elective_forms_recommended' => false,
@@ -264,5 +267,45 @@ class Webkit extends EngineHandler
     public function getWeight()
     {
         return 2455;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
+    {
+        if ($device->getCapability('is_wireless_device')) {
+            $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+            $this->setCapability('html_wi_imode_compact_generic', true);
+            $this->setCapability('chtml_table_support', false);
+            $this->setCapability('xhtml_select_as_radiobutton', false);
+            $this->setCapability('xhtml_avoid_accesskeys', false);
+            $this->setCapability('xhtml_select_as_dropdown', false);
+            $this->setCapability('xhtml_supports_forms_in_table', false);
+            $this->setCapability('xhtml_select_as_popup', false);
+            $this->setCapability('xhtml_file_upload', 'not_supported');
+            $this->setCapability('xhtml_supports_css_cell_table_coloring', true);
+            $this->setCapability('xhtml_table_support', true);
+            $this->setCapability('xhtml_readable_background_color1', '#D9EFFF');
+            $this->setCapability('xhtml_supports_table_for_layout', true);
+            $this->setCapability('max_url_length_in_requests', 512);
+            $this->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+            $this->setCapability('canvas_support', 'full');
+            $this->setCapability('viewport_supported', true);
+            $this->setCapability('viewport_width', 'device_width_token');
+            $this->setCapability('viewport_userscalable', 'no');
+        } else {
+            $this->setCapability('wml_make_phone_call_string', 'none');
+            $this->setCapability('css_border_image', 'none');
+            $this->setCapability('css_rounded_corners', 'none');
+        }
+        
+        parent::detectDependProperties($os, $device, $browser);
+        
+        return $this;
     }
 }

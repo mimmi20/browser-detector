@@ -43,7 +43,7 @@ namespace Browscap\Detector\MatcherInterface;
 
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\DeviceHandler;
 
 /**
  * WURFL_Handlers_Matcher is the base interface that concrete classes 
@@ -64,6 +64,6 @@ interface OsInterface
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine
+        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
     );
 }

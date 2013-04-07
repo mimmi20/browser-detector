@@ -114,15 +114,15 @@ final class GoogleTv
         'dual_orientation'       => false,
         
         // security
-        'phone_id_provided' => null,
+        'phone_id_provided' => false,
         
         // storage
-        'max_deck_size' => null,
-        'max_length_of_username' => null,
-        'max_no_of_bookmarks' => null,
-        'max_length_of_password' => null,
-        'max_no_of_connection_settings' => null,
-        'max_object_size' => null,
+        'max_deck_size' => 2000000,
+        'max_length_of_username' => 0,
+        'max_no_of_bookmarks' => 0,
+        'max_length_of_password' => 0,
+        'max_no_of_connection_settings' => 0,
+        'max_object_size' => 0,
         
         // sms
         'sms_enabled' => null,

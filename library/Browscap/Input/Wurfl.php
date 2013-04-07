@@ -522,31 +522,42 @@ final class Wurfl extends Core
         
         $result = new Result();
         
-        $versionfields = array(
-            'mobile_browser_version', 'renderingengine_version', 
-            'device_os_version'
-        );
-        
-        foreach ($allProperties as $capabilityName => $capabilityValue) {
-            if (in_array($capabilityName, $versionfields)) {
-                $version = new Version();
-                $capabilityValue = $version->setVersion($capabilityValue);
-            } elseif ('unknown' === $capabilityValue
-                || 'null' === $capabilityValue
-                || null === $capabilityValue
-            ) {
-                $capabilityValue = null;
-            } elseif ('false' === $capabilityValue
-                || false === $capabilityValue
-            ) {
-                $capabilityValue = false;
-            } elseif ('true' === $capabilityValue
-                || true === $capabilityValue
-            ) {
-                $capabilityValue = true;
-            }
+        if ($apiDev || $apiBro) {
+            $versionFields = array(
+                'mobile_browser_version', 'renderingengine_version', 
+                'device_os_version'
+            );
+            $integerFields = array(
+                'max_deck_size', 'max_length_of_username', 'max_no_of_bookmarks',
+                'max_length_of_password', 'max_no_of_connection_settings',
+                'max_object_size', 'max_url_length_bookmark',
+                'max_url_length_cached_page', 'max_url_length_in_requests',
+                'max_url_length_homepage', 'colors'
+            );
             
-            $result->setCapability($capabilityName, $capabilityValue);
+            foreach ($allProperties as $capabilityName => $capabilityValue) {
+                if (in_array($capabilityName, $versionFields)) {
+                    $version = new Version();
+                    $capabilityValue = $version->setVersion($capabilityValue);
+                } elseif (in_array($capabilityName, $integerFields)) {
+                    $capabilityValue = (int) $capabilityValue;
+                } elseif ('unknown' === $capabilityValue
+                    || 'null' === $capabilityValue
+                    || null === $capabilityValue
+                ) {
+                    $capabilityValue = null;
+                } elseif ('false' === $capabilityValue
+                    || false === $capabilityValue
+                ) {
+                    $capabilityValue = false;
+                } elseif ('true' === $capabilityValue
+                    || true === $capabilityValue
+                ) {
+                    $capabilityValue = true;
+                }
+                
+                $result->setCapability($capabilityName, $capabilityValue);
+            }
         }
         
         $version = new Version();
@@ -582,6 +593,13 @@ final class Wurfl extends Core
         $result->setCapability('ux_full_desktop', $apiDesktop);
         $result->setCapability('is_wireless_device', $apiMob);
         $result->setCapability('is_transcoder', $apiTranscoder);
+        
+        if ($apiDev || $apiBro) {
+            $result->setCapability(
+                'xhtml_support_level',
+                (int) $device->getCapability('xhtml_support_level')
+            );
+        }
         
         $result->setCapability('wurflKey', $apiKey);
         

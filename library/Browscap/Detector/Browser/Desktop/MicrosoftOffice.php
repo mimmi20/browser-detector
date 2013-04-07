@@ -46,6 +46,8 @@ use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
@@ -96,20 +98,20 @@ class MicrosoftOffice
         'device_claims_web_support' => false,
         
         // pdf
-        'pdf_support' => null,
+        'pdf_support' => true,
         
         // cache
         'time_to_live_support' => null,
         'total_cache_disable_support' => null,
         
         // bugs
-        'emptyok' => null,
-        'empty_option_value_support' => null,
-        'basic_authentication_support' => null,
-        'post_method_support' => null,
+        'emptyok' => false,
+        'empty_option_value_support' => true,
+        'basic_authentication_support' => true,
+        'post_method_support' => true,
         
         // rss
-        'rss_support' => null,
+        'rss_support' => false,
     );
     
     /**
@@ -263,5 +265,23 @@ class MicrosoftOffice
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        if ($this->_utils->checkIfContains('MSIE 7.0')) {
+            $engine->setCapability('css_spriting', true);
+        }
+        
+        parent::detectDependProperties($engine, $os, $device);
+        
+        return $this;
     }
 }

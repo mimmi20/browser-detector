@@ -213,7 +213,7 @@ final class Result
         
         // security
         'https_support' => null,
-        'phone_id_provided' => null,
+        'phone_id_provided' => false,
         
         // storage
         'max_deck_size' => null,
@@ -1296,6 +1296,15 @@ final class Result
                     case 'resolution_height':
                     case 'dual_orientation':
                     case 'unique':
+                    case 'phone_id_provided':
+                    case 'max_deck_size':
+                    case 'max_length_of_username':
+                    case 'max_no_of_bookmarks':
+                    case 'max_length_of_password':
+                    case 'max_no_of_connection_settings':
+                    case 'max_object_size':
+                    //case 'unique':
+                    //case 'unique':
                         $value = $device->getCapability($property);
                         break;
                     case 'wurflKey':

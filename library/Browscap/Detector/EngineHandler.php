@@ -43,6 +43,10 @@ namespace Browscap\Detector;
 
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\EngineInterface;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\BrowserHandler;
 
 /**
  * WURFL_Handlers_Handler is the base class that combines the classification of
@@ -54,7 +58,8 @@ use \Browscap\Detector\MatcherInterface;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-abstract class EngineHandler implements MatcherInterface
+abstract class EngineHandler
+    implements MatcherInterface, EngineInterface
 {
     /**
      * @var string the user agent to handle
@@ -195,7 +200,7 @@ abstract class EngineHandler implements MatcherInterface
         
         // security
         'https_support' => null,
-        'phone_id_provided' => null,
+        'phone_id_provided' => false,
         
         // storage
         'max_deck_size' => null,
@@ -804,5 +809,17 @@ abstract class EngineHandler implements MatcherInterface
     public function getCapabilities() 
     {
         return $this->_properties;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
+    {
+        return $this;
     }
 }

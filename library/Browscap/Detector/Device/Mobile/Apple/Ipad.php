@@ -48,6 +48,7 @@ use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 
 /**
  * CatchAllUserAgentHandler
@@ -116,15 +117,15 @@ final class Ipad
         'dual_orientation'       => true,
         
         // security
-        'phone_id_provided' => null,
+        'phone_id_provided' => false,
         
         // storage
-        'max_deck_size' => null,
-        'max_length_of_username' => null,
-        'max_no_of_bookmarks' => null,
-        'max_length_of_password' => null,
-        'max_no_of_connection_settings' => null,
-        'max_object_size' => null,
+        'max_deck_size' => 100000,
+        'max_length_of_username' => 0,
+        'max_no_of_bookmarks' => 0,
+        'max_length_of_password' => 0,
+        'max_no_of_connection_settings' => 0,
+        'max_object_size' => 0,
         
         // sms
         'sms_enabled' => null,
@@ -532,27 +533,7 @@ final class Ipad
         
         $this->setCapability('model_extra_info', $osVersion);
         
-        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-        $engine->setCapability('html_wi_imode_compact_generic', true);
-        $engine->setCapability('chtml_table_support', false);
-        $engine->setCapability('xhtml_select_as_radiobutton', false);
-        $engine->setCapability('xhtml_avoid_accesskeys', false);
-        $engine->setCapability('xhtml_select_as_dropdown', false);
-        $engine->setCapability('xhtml_supports_forms_in_table', false);
-        $engine->setCapability('xhtml_select_as_popup', false);
-        $engine->setCapability('xhtml_file_upload', 'not_supported');
-        $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
         $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        $engine->setCapability('xhtml_table_support', true);
-        $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
-        $engine->setCapability('xhtml_supports_table_for_layout', true);
-        $engine->setCapability('xhtml_marquee_as_css_property', true);
-        $engine->setCapability('max_url_length_in_requests', 512);
-        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-        $engine->setCapability('canvas_support', 'full');
-        $engine->setCapability('viewport_width', 'device_width_token');
-        $engine->setCapability('viewport_supported', true);
-        $engine->setCapability('viewport_userscalable', 'no');
         
         parent::detectDependProperties($browser, $engine, $os);
         

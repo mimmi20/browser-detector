@@ -41,7 +41,7 @@ namespace Browscap\Detector\MatcherInterface;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\DeviceHandler;
 
@@ -55,16 +55,8 @@ use \Browscap\Detector\DeviceHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-interface BrowserInterface
+interface EngineInterface
 {
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectEngine();
-    
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
@@ -72,6 +64,6 @@ interface BrowserInterface
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        OsHandler $os, DeviceHandler $device, BrowserHandler $browser
     );
 }

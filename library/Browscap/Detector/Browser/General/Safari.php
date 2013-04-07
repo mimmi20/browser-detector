@@ -47,6 +47,9 @@ use \Browscap\Helper\Safari as SafariHelper;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 
 /**
  * SafariHandler
@@ -202,5 +205,38 @@ class Safari
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        if ($device->getCapability('is_wireless_device')) {
+            $engine->setCapability('xhtml_format_as_css_property', true);
+            
+            if (!$device->getCapability('is_tablet')) {
+                $engine->setCapability('xhtml_send_sms_string', 'sms:');
+                $engine->setCapability('css_gradient', 'webkit');
+            }
+        } else {
+            $this->setCapability('rss_support', false);
+        }
+        
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $osVersion = (float)$os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (!$device->getCapability('is_tablet') && $osVersion >= 6.0) {
+            $engine->setCapability('xhtml_file_upload', 'supported');//iPhone with iOS 6.0 and Safari 6.0
+        }
+        
+        return $this;
     }
 }
