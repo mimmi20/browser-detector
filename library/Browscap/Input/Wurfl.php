@@ -500,6 +500,12 @@ final class Wurfl extends Core
                 $marketingName = null;
                 $apiTranscoder = null;
             }
+            
+            $xhtmlLevel = null;
+            
+            if ($apiDev || $apiBro) {
+                $xhtmlLevel = $device->getCapability('xhtml_support_level');
+            }
         } catch(\Exception $e) {
             $apiKey = 'error';
             $apiMob = false;
@@ -517,7 +523,10 @@ final class Wurfl extends Core
             $marketingName = null;
             $apiTranscoder = null;
             
-            $brandName = null;
+            $brandName  = null;
+            $xhtmlLevel = null;
+            
+            //throw $e;
         }
         
         $result = new Result();
@@ -595,10 +604,7 @@ final class Wurfl extends Core
         $result->setCapability('is_transcoder', $apiTranscoder);
         
         if ($apiDev || $apiBro) {
-            $result->setCapability(
-                'xhtml_support_level',
-                (int) $device->getCapability('xhtml_support_level')
-            );
+            $result->setCapability('xhtml_support_level', (int) $xhtmlLevel);
         }
         
         $result->setCapability('wurflKey', $apiKey);
