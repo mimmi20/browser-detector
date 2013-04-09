@@ -168,9 +168,6 @@ class WebkitWebos
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('colors', 65536);
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-        $engine->setCapability('xhtml_supports_invisible_text', false);
-        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
-        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
@@ -180,20 +177,6 @@ class WebkitWebos
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
             $engine->setCapability('bmp', true);
         }
-        
-        return $this;
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
-    {
-        parent::detectDependProperties($engine, $os, $device);
         
         $engine->setCapability('preferred_markup', 'html_web_5_0');
         $engine->setCapability('wml_1_1', true);
