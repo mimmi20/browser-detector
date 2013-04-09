@@ -119,7 +119,7 @@ final class HpTouchpad
         'phone_id_provided' => false,
         
         // storage
-        'max_deck_size' => 2000000,
+        'max_deck_size' => 10000,
         'max_length_of_username' => 0,
         'max_no_of_bookmarks' => 0,
         'max_length_of_password' => 0,
@@ -557,5 +557,21 @@ final class HpTouchpad
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('colors', 262144);
+        
+        return $this;
     }
 }

@@ -574,6 +574,7 @@ final class SonyEricssonLT18i
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
+        
         $engine->setCapability('bmp', true);
         
         return $this;

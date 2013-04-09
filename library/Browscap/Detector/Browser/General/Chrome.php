@@ -213,6 +213,22 @@ class Chrome
     {
         parent::detectDependProperties($engine, $os, $device);
         
+        $osname = $os->getCapability('device_os');
+        
+        if ('iOS' === $osname) {
+            $engine->setCapability('xhtml_format_as_css_property', true);
+            $this->setCapability('rss_support', true);
+        }
+        
+        if ('Android' === $osname) {
+            $engine->setCapability('html_wi_imode_compact_generic', false);
+            $engine->setCapability('xhtml_avoid_accesskeys', true);
+            $engine->setCapability('xhtml_supports_forms_in_table', true);
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        }
+        
         return $this;
     }
 }

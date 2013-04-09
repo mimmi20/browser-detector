@@ -280,6 +280,15 @@ class Android
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
         
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ($osVersion <= 2.3) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+            $engine->setCapability('bmp', true);
+        }
+        
         return $this;
     }
 }

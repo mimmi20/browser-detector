@@ -62,7 +62,7 @@ final class Result
     private $_properties = array(
         'wurflKey' => null, // not in wurfl
         'useragent' => null, // not in wurfl
-        'Devicefinal class' => null, // not in wurfl
+        'deviceClass' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => null,
@@ -681,22 +681,7 @@ final class Result
     {
         $this->_checkCapability($capabilityName);
         
-        $capabilityValue = null;
-        
-        switch ($capabilityName) {
-            case 'wurflKey':
-                if ($this->isMobileDevice()) {
-                    $capabilityValue = $this->_properties[$capabilityName];
-                } else {
-                    $capabilityValue = null;
-                }
-                break;
-            default:
-                $capabilityValue = $this->_properties[$capabilityName];
-                break;
-        }
-        
-        return $capabilityValue;
+        return $this->_properties[$capabilityName];
     }
     
     /**
@@ -1303,11 +1288,9 @@ final class Result
                     case 'max_length_of_password':
                     case 'max_no_of_connection_settings':
                     case 'max_object_size':
-                    //case 'unique':
-                    //case 'unique':
-                        $value = $device->getCapability($property);
-                        break;
                     case 'wurflKey':
+                    //case 'unique':
+                    //case 'unique':
                         $value = $device->getCapability($property);
                         break;
                     case 'is_bot':

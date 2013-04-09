@@ -544,6 +544,12 @@ final class Ipod
         
         parent::detectDependProperties($browser, $engine, $os);
         
+        $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('xhtml_send_sms_string', 'none');
+        $browser->setCapability('pdf_support', false);
+        $engine->setCapability('css_gradient', 'none');
+        
         return $this;
     }
     

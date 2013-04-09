@@ -571,7 +571,14 @@ final class SamsungGtp5100
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (2.3 == $osVersion) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        }
+        
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         

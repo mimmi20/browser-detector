@@ -148,4 +148,81 @@ class WebkitWebos
         
         return $handler->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtml_supports_forms_in_table', true);
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_supports_invisible_text', true);
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('colors', 65536);
+        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+        $engine->setCapability('xhtml_supports_invisible_text', false);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ($osVersion <= 2.3) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+            $engine->setCapability('bmp', true);
+        }
+        
+        return $this;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('preferred_markup', 'html_web_5_0');
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_honors_bgcolor', false);
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_supports_css_cell_table_coloring', false);
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('xhtml_supports_table_for_layout', false);
+        $engine->setCapability('wbmp', true);
+        $engine->setCapability('max_url_length_in_requests', 256);
+        $engine->setCapability('ajax_support_getelementbyid', false);
+        $engine->setCapability('ajax_xhr_type', 'none');
+        $engine->setCapability('ajax_support_event_listener', false);
+        $engine->setCapability('ajax_support_javascript', false);
+        $engine->setCapability('ajax_manipulate_dom', false);
+        $engine->setCapability('ajax_support_inner_html', false);
+        $engine->setCapability('ajax_manipulate_css', false);
+        $engine->setCapability('ajax_support_events', false);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'none');
+        $engine->setCapability('table_support', true);
+        $engine->setCapability('elective_forms_recommended', true);
+        $engine->setCapability('menu_with_list_of_links_recommended', true);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        $engine->setCapability('pdf_support', false);
+        $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('html_preferred_dtd', 'xhtml_mp1');
+        $engine->setCapability('css_gradient', 'webkit');
+        
+        return $this;
+    }
 }

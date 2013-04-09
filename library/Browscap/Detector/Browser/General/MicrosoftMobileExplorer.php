@@ -99,7 +99,7 @@ class MicrosoftMobileExplorer
         'post_method_support' => true,
         
         // rss
-        'rss_support' => false,
+        'rss_support' => true,
     );
     
     /**
@@ -185,5 +185,47 @@ class MicrosoftMobileExplorer
     public function getWeight()
     {
         return 299565;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('html_web_3_2', false);
+        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+        $engine->setCapability('chtml_table_support', false);
+        $engine->setCapability('xhtml_select_as_radiobutton', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', false);
+        $engine->setCapability('xhtml_select_as_dropdown', false);
+        $engine->setCapability('xhtml_supports_forms_in_table', false);
+        $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
+        $engine->setCapability('xhtml_select_as_popup', false);
+        $engine->setCapability('xhtml_honors_bgcolor', false);
+        $engine->setCapability('xhtml_file_upload', 'not_supported');
+        $engine->setCapability('xhtml_table_support', true);
+        $engine->setCapability('wbmp', true);
+        $engine->setCapability('tiff', true);
+        $engine->setCapability('max_url_length_in_requests', 512);
+        $engine->setCapability('wml_make_phone_call_string', 'wtai://wp/mc;');
+        $engine->setCapability('card_title_support', true);
+        $engine->setCapability('table_support', true);
+        $engine->setCapability('elective_forms_recommended', true);
+        $engine->setCapability('menu_with_list_of_links_recommended', true);
+        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('image_inlining', true);
+        $engine->setCapability('viewport_width', 'device_width_token');
+        $engine->setCapability('viewport_supported', true);
+        $engine->setCapability('viewport_userscalable', 'no');
+        $engine->setCapability('css_spriting', true);
+        
+        return $this;
     }
 }

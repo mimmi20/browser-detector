@@ -631,10 +631,12 @@ abstract class DeviceHandler
      */
     protected function _detectCpu()
     {
-        $detector = new \Browscap\Detector\Cpu();
-        $detector->setUserAgent($this->_useragent);
-        
-        $this->setCapability('device_cpu', $detector->getCpu());
+        if (null === $this->getCapability('device_cpu')) {
+            $detector = new \Browscap\Detector\Cpu();
+            $detector->setUserAgent($this->_useragent);
+            
+            $this->setCapability('device_cpu', $detector->getCpu());
+        }
         
         return $this;
     }

@@ -119,7 +119,7 @@ final class NokiaLumia800
         'phone_id_provided' => false,
         
         // storage
-        'max_deck_size' => 2000000,
+        'max_deck_size' => 1000000,
         'max_length_of_username' => 0,
         'max_no_of_bookmarks' => 0,
         'max_length_of_password' => 0,
