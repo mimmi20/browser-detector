@@ -52,6 +52,7 @@ use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 
 /**
  * CatchAllUserAgentHandler

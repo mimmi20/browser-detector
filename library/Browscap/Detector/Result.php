@@ -885,14 +885,18 @@ final class Result
         $version = $this->getCapability('model_version')->getVersion(Version::MAJORMINOR);
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
-        $manufacturer = $this->getCapability('manufacturer_name');
-        
-        if ($withManufacturer 
-            && $manufacturer 
-            && 'unknown' != $manufacturer
-            && false === strpos($device, 'general')
-        ) {
-            $device = $manufacturer . ' ' . $device;
+        if ($withManufacturer) {
+            $manufacturer = $this->getCapability('manufacturer_name');
+            
+            if (!$manufacturer) {
+                $manufacturer = $this->getCapability('brand_name');
+            }
+            
+            if ('unknown' != $manufacturer
+                && false === strpos($device, 'general')
+            ) {
+                $device = $manufacturer . ' ' . $device;
+            }
         }
         
         return trim($device);
