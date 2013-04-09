@@ -204,7 +204,7 @@ class WebkitWebos
         $engine->setCapability('elective_forms_recommended', true);
         $engine->setCapability('menu_with_list_of_links_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
-        $engine->setCapability('pdf_support', false);
+        $this->setCapability('pdf_support', false);
         $engine->setCapability('is_sencha_touch_ok', false);
         $engine->setCapability('html_preferred_dtd', 'xhtml_mp1');
         $engine->setCapability('css_gradient', 'webkit');
