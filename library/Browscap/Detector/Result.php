@@ -793,6 +793,9 @@ final class Result
                 case 'userAgent':
                     return $this->getCapability('useragent');
                     break;
+                case 'deviceClass':
+                    return $this->getCapability('deviceClass');
+                    break;
                 case 'fallBack':
                 case 'actualDeviceRoot':
                     return null;
