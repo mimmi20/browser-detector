@@ -573,6 +573,7 @@ final class SonyEricssonLT18iv
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

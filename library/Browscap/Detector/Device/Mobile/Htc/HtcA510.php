@@ -581,6 +581,7 @@ final class HtcA510
         $engine->setCapability('bmp', true);
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('colors', 262144);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

@@ -560,4 +560,21 @@ final class HtcOneV
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('bmp', true);
+        
+        return $this;
+    }
 }

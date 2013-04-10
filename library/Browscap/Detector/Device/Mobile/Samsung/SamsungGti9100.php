@@ -578,6 +578,7 @@ final class SamsungGti9100
         
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('colors', 16777216);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

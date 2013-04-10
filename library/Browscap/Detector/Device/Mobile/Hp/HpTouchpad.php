@@ -572,6 +572,10 @@ final class HpTouchpad
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('colors', 262144);
+        $engine->setCapability('xhtml_avoid_accesskeys', false);
+        $engine->setCapability('xhtml_supports_forms_in_table', false);
+        $engine->setCapability('xhtml_allows_disabled_form_elements', false);
+        $engine->setCapability('xhtml_supports_invisible_text', false);
         
         return $this;
     }

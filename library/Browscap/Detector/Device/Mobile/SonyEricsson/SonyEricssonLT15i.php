@@ -601,6 +601,7 @@ final class SonyEricssonLT15i
         
         $engine->setCapability('bmp', true);
         $engine->setCapability('colors', 16777216);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

@@ -574,6 +574,7 @@ final class HuaweiU8655
         
         $engine->setCapability('bmp', true);
         $engine->setCapability('softkey_support', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

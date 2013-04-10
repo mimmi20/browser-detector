@@ -579,6 +579,7 @@ final class HtcDesireS
         // Android 2.3
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

@@ -572,6 +572,8 @@ final class SamsungGti9001
     {
         parent::detectDependProperties($browser, $engine, $os);
         
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
         return $this;
     }
 }

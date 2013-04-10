@@ -572,6 +572,8 @@ final class SamsungGtn7000
     {
         parent::detectDependProperties($browser, $engine, $os);
         
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
         return $this;
     }
 }

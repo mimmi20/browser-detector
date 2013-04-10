@@ -574,6 +574,7 @@ final class CatNova8
         
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }
