@@ -88,12 +88,7 @@ class YandexBot
         // pdf
         'pdf_support' => true,
         
-        // cache
-        'time_to_live_support' => null,
-        'total_cache_disable_support' => null,
-        
         // bugs
-        'emptyok' => false,
         'empty_option_value_support' => true,
         'basic_authentication_support' => true,
         'post_method_support' => true,

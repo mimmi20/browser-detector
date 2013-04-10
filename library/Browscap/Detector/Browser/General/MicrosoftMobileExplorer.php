@@ -91,12 +91,7 @@ class MicrosoftMobileExplorer
         // pdf
         'pdf_support' => true,
         
-        // cache
-        'time_to_live_support' => null,
-        'total_cache_disable_support' => null,
-        
         // bugs
-        'emptyok' => false,
         'empty_option_value_support' => true,
         'basic_authentication_support' => true,
         'post_method_support' => true,
@@ -214,7 +209,6 @@ class MicrosoftMobileExplorer
         $engine->setCapability('xhtml_file_upload', 'not_supported');
         $engine->setCapability('xhtml_table_support', true);
         $engine->setCapability('wbmp', true);
-        $engine->setCapability('tiff', true);
         $engine->setCapability('max_url_length_in_requests', 512);
         $engine->setCapability('wml_make_phone_call_string', 'wtai://wp/mc;');
         $engine->setCapability('card_title_support', true);
@@ -223,11 +217,19 @@ class MicrosoftMobileExplorer
         $engine->setCapability('menu_with_list_of_links_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
         $engine->setCapability('is_sencha_touch_ok', false);
-        $engine->setCapability('image_inlining', true);
         $engine->setCapability('viewport_width', 'device_width_token');
         $engine->setCapability('viewport_supported', true);
         $engine->setCapability('viewport_userscalable', 'no');
         $engine->setCapability('css_spriting', true);
+        
+        $version = $this->getCapability('mobile_browser_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ($version >= 8) {
+            $engine->setCapability('tiff', true);
+            $engine->setCapability('image_inlining', true);
+        }
         
         return $this;
     }

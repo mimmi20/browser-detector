@@ -889,10 +889,10 @@ final class Result
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
         if ($withManufacturer) {
-            $manufacturer = $this->getCapability('manufacturer_name');
+            $manufacturer = $this->getCapability('brand_name');
             
             if (!$manufacturer) {
-                $manufacturer = $this->getCapability('brand_name');
+                $manufacturer = $this->getCapability('manufacturer_name');
             }
             
             if ('unknown' != $manufacturer
