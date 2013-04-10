@@ -129,7 +129,7 @@ final class GeneralMobile
         'max_object_size' => 0,
         
         // sms
-        'sms_enabled' => null,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -154,7 +154,7 @@ final class GeneralMobile
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => null,
+        'nfc_support' => false,
     );
     
     /**
