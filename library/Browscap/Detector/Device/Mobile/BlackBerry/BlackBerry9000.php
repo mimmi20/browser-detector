@@ -117,7 +117,7 @@ final class BlackBerry9000
         'dual_orientation'       => false, // wurflkey: blackberry9000_ver1_sub460162
         
         // sms
-        'sms_enabled' => null,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class BlackBerry9000
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => null,
+        'nfc_support' => true,
     );
     
     /**

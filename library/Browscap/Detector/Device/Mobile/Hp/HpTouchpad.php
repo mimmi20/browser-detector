@@ -128,7 +128,7 @@ final class HpTouchpad
         'max_object_size' => 0,
         
         // sms
-        'sms_enabled' => null,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -153,7 +153,7 @@ final class HpTouchpad
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => null,
+        'nfc_support' => true,
     );
     
     /**

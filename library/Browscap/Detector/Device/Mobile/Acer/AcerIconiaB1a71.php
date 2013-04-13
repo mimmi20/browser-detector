@@ -117,7 +117,7 @@ final class AcerIconiaB1a71
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => null,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class AcerIconiaB1a71
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => null,
+        'nfc_support' => true,
     );
     
     /**

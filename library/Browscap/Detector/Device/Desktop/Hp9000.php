@@ -117,7 +117,7 @@ final class Hp9000
         'dual_orientation'       => null,
         
         // sms
-        'sms_enabled' => null,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class Hp9000
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => null,
+        'nfc_support' => false,
     );
     
     /**

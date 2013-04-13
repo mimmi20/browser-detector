@@ -117,7 +117,7 @@ final class NokiaC503
         'dual_orientation'       => false,
         
         // sms
-        'sms_enabled' => null,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class NokiaC503
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => null,
+        'nfc_support' => true,
     );
     
     /**
