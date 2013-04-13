@@ -146,11 +146,9 @@ final class SonyEricssonLT26i
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -244,6 +242,7 @@ final class SonyEricssonLT26i
         // wurflkey: sonyericsson_lt26i_ver1
         $engine->setCapability('bmp', true);
         $engine->setCapability('gif_animated', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

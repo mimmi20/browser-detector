@@ -70,7 +70,7 @@ final class SonyEricssonLT22i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_lt22i_ver1_subua40_subuachr', // not in wurfl
+        'wurflKey' => 'sonyericsson_lt22i_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class SonyEricssonLT22i
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -244,6 +242,20 @@ final class SonyEricssonLT22i
         // wurflkey: sonyericsson_lt22i_ver1_suban40
         $engine->setCapability('bmp', true);
         // $engine->setCapability('gif_animated', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (2.3 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'sonyericsson_lt15i_ver1_suban233');
+            }
+            
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'sonyericsson_lt22i_ver1_suban40');
+            }
+        }
         
         return $this;
     }

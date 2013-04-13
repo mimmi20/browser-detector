@@ -70,7 +70,7 @@ final class SamsungGti9100
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i9100_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class SamsungGti9100
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -244,6 +242,38 @@ final class SamsungGti9100
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('colors', 16777216);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (2.3 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1');
+            }
+            
+            if ($this->_utils->checkIfContains('SAMSUNG GT-I9100/I9100')) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_subua');
+            }
+            
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
+            }
+            
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban41rom');
+            }
+        }
+        
+        if ('Chrome' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+            }
+        }
         
         return $this;
     }

@@ -89,7 +89,7 @@ final class HtcSmartF3188
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => '',    // wurflkey: htc_smart_f3188_ver1 // wurflkey: htc_smart_f3188_ver1
+        'pointing_method'           => '',   // wurflkey: htc_smart_f3188_ver1
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
@@ -146,11 +146,9 @@ final class HtcSmartF3188
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {

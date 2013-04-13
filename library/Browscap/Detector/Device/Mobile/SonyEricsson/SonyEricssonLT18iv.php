@@ -70,7 +70,7 @@ final class SonyEricssonLT18iv
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_lt18i_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class SonyEricssonLT18iv
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -239,6 +237,14 @@ final class SonyEricssonLT18iv
         
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (4.0 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'sonyericsson_lt18i_ver1_subua40iv');
+        }
         
         return $this;
     }

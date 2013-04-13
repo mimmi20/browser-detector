@@ -71,7 +71,7 @@ final class GeneralMobile
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'generic_mobile', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -158,11 +158,9 @@ final class GeneralMobile
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -335,6 +333,20 @@ final class GeneralMobile
         $engine->setCapability('bmp', false);
         $engine->setCapability('wbmp', false);
         $engine->setCapability('tiff', false);
+        
+        if ('Firefox' == $browser->getCapability('mobile_browser')
+            && 'Android' == $os->getCapability('device_os')
+        ) {
+            $os->getCapability('device_os_version')->setVersion('2.0');
+            
+            if ($this->getCapability('is_tablet')) {
+                $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec_tablet');
+            } else {
+                $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec');
+                
+                $engine->setCapability('wbmp', true);
+            }
+        }
         
         return $this;
     }

@@ -146,11 +146,9 @@ final class MotorolaXt910
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -241,6 +239,30 @@ final class MotorolaXt910
         $engine->setCapability('bmp', true);
         $engine->setCapability('colors', 16777216);
         // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+            
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'mot_xt910_ver1_suban40');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'mot_mz601_ver1_suban41');
+            }
+        }
+        
+        if ('Chrome' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_subuachrome');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+            }
+        }
         
         return $this;
     }

@@ -70,7 +70,7 @@ final class HtcDesire
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_desire_ver1_sub22_01', // not in wurfl
+        'wurflKey' => 'htc_desire_ver1_sub22', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class HtcDesire
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -158,7 +156,7 @@ final class HtcDesire
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('DesireS', 'HTC_Desire_A8181', 'Desire_A8181', 'HTC_Desire_C'))) {
+        if ($this->_utils->checkIfContains(array('DesireS', 'HTC_Desire_A8181', 'Desire_A8181', 'HTC_Desire_C', 'HTC_DesireHD_A9191'))) {
             return false;
         }
         
@@ -242,6 +240,20 @@ final class HtcDesire
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('bmp', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (2.2 == (float) $osVersion) {
+            if ($os->getCapability('device_os_version')->getVersion(Version::MICROONLY)) {
+                $this->setCapability('wurflKey', 'htc_desire_ver1_sub22_01');
+            }
+            
+            if ($this->_utils->checkIfContains('HTC Desire 2.')) {
+                $this->setCapability('wurflKey', 'htc_desire_ver1_sub22_subbravo');
+            }
+        }
         
         return $this;
     }

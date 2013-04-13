@@ -70,7 +70,7 @@ final class AsusTf300T
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'asus_transformer_pad_tf300t_ver1_suban41', // not in wurfl
+        'wurflKey' => 'asus_transformer_pad_tf300t_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -117,7 +117,7 @@ final class AsusTf300T
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,15 +142,13 @@ final class AsusTf300T
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -228,5 +226,30 @@ final class AsusTf300T
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (4.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'asus_transformer_pad_tf300t_ver1_suban41');
+            }
+        }
     }
 }

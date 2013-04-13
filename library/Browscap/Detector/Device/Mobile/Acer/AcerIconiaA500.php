@@ -70,7 +70,7 @@ final class AcerIconiaA500
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_iconia_tab_a500_ver1_suban40', // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a500_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class AcerIconiaA500
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -240,8 +238,38 @@ final class AcerIconiaA500
         
         parent::detectDependProperties($browser, $engine, $os);
         
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 16777216);
+        if (4 == $osVersion) {
+            $engine->setCapability('bmp', true);
+            $engine->setCapability('colors', 16777216);
+        }
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (3.2 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban32');
+            }
+            
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban40');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban41');
+            }
+        }
+        
+        if ('Chrome' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'acer_iconia_tab_a700_ver1_subuachrome');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+            }
+        }
         
         return $this;
     }

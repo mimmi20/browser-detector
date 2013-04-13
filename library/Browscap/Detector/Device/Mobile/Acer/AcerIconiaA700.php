@@ -70,7 +70,7 @@ final class AcerIconiaA700
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_iconia_tab_a700_ver1_subuachrome', // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a700_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class AcerIconiaA700
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -260,6 +258,26 @@ final class AcerIconiaA700
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
         $engine->setCapability('colors', 4294967296);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (4.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a700_ver1_suban41');
+            }
+        }
+        
+        if ('Chrome' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a700_ver1_subuachrome');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+            }
+        }
         
         return $this;
     }

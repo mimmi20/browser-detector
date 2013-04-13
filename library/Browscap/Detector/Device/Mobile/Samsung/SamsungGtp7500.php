@@ -70,7 +70,7 @@ final class SamsungGtp7500
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_galaxy_tab_p4_ver1_suban31', // not in wurfl
+        'wurflKey' => 'samsung_galaxy_tab_p4_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class SamsungGtp7500
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -224,5 +222,47 @@ final class SamsungGtp7500
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // $engine->setCapability('gif_animated', true);
+        // $engine->setCapability('colors', 16777216);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (3.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban31');
+            }
+            
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban40rom');
+            }
+        }
+        
+        if ('Chrome' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+            }
+        }
+        
+        return $this;
     }
 }

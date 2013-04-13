@@ -70,7 +70,7 @@ final class SamsungGti9300
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i9300_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class SamsungGti9300
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -236,6 +234,30 @@ final class SamsungGti9300
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+            
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (4.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41');
+            }
+            
+            if ($this->_utils->checkIfContains('SAMSUNG GT-I9300/I9300')) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_subuasamsung');
+            }
+        }
+        
+        if ('Chrome' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_subuachrome');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+            }
+        }
         
         return $this;
     }

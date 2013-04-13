@@ -565,11 +565,9 @@ abstract class DeviceHandler
     }
     
     /**
-     * Returns true if this handler can handle the given $userAgent
+     * checks if this device is able to handle the useragent
      *
-     * @param string $userAgent
-     *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {

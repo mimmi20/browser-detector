@@ -1267,6 +1267,9 @@ final class Result
                     case 'osClass':
                         $value = get_class($os);
                         break;
+                    case 'wurflKey':
+                        $value = $device->id;
+                        break;
                     case 'is_wireless_device':
                     case 'is_tablet':
                     case 'is_smarttv':
@@ -1307,7 +1310,6 @@ final class Result
                     case 'max_length_of_password':
                     case 'max_no_of_connection_settings':
                     case 'max_object_size':
-                    case 'wurflKey':
                     case 'sms_enabled':
                     case 'nfc_support':
                     //case 'unique':

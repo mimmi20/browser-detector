@@ -70,7 +70,7 @@ final class SamsungGti9000
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i9000_ver1_suban233bis', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class SamsungGti9000
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -239,6 +237,26 @@ final class SamsungGti9000
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('colors', 16777216);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (2.1 == (float) $osVersion) {
+            $engineVersion = $engine->getCapability('renderingengine_version')->getVersion();
+            
+            if ('530.17' == $engineVersion) {
+                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
+            }
+        }
+        
+        if (2.2 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
+        }
+        
+        if (2.3 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
+        }
         
         return $this;
     }

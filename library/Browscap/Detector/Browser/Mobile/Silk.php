@@ -143,4 +143,48 @@ class Silk
         
         return $handler->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', false);
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('wml_1_2', true);
+        $engine->setCapability('wml_1_3', true);
+        $engine->setCapability('xhtml_support_level', 1);
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtml_supports_forms_in_table', true);
+        $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
+        $engine->setCapability('xhtml_preferred_charset', 'utf8');
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('xhtml_format_as_css_property', true);
+        $engine->setCapability('xhtml_marquee_as_css_property', true);
+        $engine->setCapability('jpg', false);
+        $engine->setCapability('colors', 256);
+        $engine->setCapability('png', false);
+        $engine->setCapability('transparent_png_index', false);
+        $engine->setCapability('transparent_png_alpha', false);
+        $engine->setCapability('max_url_length_in_requests', 128);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'none');
+        $engine->setCapability('is_sencha_touch_ok', true);
+        $engine->setCapability('max_url_length_in_requests', 128);
+        $engine->setCapability('max_url_length_in_requests', 128);
+        
+        if ($this->_utils->checkIfContains('(Linux; U;')) {
+            $this->setCapability('mobile_browser_modus', 'Desktop Mode');
+        }
+        
+        return $this;
+    }
 }

@@ -146,11 +146,9 @@ final class Ipod
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -181,41 +179,6 @@ final class Ipod
     public function getWeight()
     {
         return 381078;
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORONLY
-        );
-        
-        if (6 <= $osVersion) {
-            $this->setCapability('resolution_width', 640);
-            $this->setCapability('resolution_height', 960);
-        }
-        
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        $this->setCapability('model_extra_info', $osVersion);
-        
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        $engine->setCapability('accept_third_party_cookie', false);
-        $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        $engine->setCapability('xhtml_send_sms_string', 'none');
-        $browser->setCapability('pdf_support', false);
-        $engine->setCapability('css_gradient', 'none');
-        
-        return $this;
     }
     
     /**
@@ -261,5 +224,50 @@ final class Ipod
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORONLY
+        );
+        
+        if (6 <= $osVersion) {
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
+        }
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        $this->setCapability('model_extra_info', $osVersion);
+        
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('xhtml_send_sms_string', 'none');
+        $browser->setCapability('pdf_support', false);
+        $engine->setCapability('css_gradient', 'none');
+        
+        if (6.0 <= (float) $osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');
+        }
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion();
+        
+        if ('4.2.1' == $osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+        }
+        
+        return $this;
     }
 }

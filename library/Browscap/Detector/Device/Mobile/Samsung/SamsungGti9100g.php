@@ -146,11 +146,9 @@ final class SamsungGti9100g
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -240,6 +238,18 @@ final class SamsungGti9100g
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('colors', 16777216);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (2.3 == (float) $osVersion) {
+            // $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1');
+        }
+        
+        if (4.0 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40g');
+        }
         
         return $this;
     }

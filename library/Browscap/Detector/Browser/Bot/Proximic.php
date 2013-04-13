@@ -75,7 +75,7 @@ class Proximic
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'proximic',
+        'mobile_browser'              => 'Proximic Spider',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'www.proximic.com', // not in wurfl

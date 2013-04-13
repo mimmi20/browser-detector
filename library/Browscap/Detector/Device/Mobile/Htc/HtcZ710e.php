@@ -70,7 +70,7 @@ final class HtcZ710e
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_sensation_ver1_subz710e', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class HtcZ710e
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -239,6 +237,14 @@ final class HtcZ710e
         
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (4.1 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'htc_sensation_ver1_subz710e_suban40');
+        }
         
         return $this;
     }

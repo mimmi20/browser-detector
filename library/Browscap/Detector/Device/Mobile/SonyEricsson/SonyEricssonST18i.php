@@ -146,11 +146,9 @@ final class SonyEricssonST18i
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -243,6 +241,16 @@ final class SonyEricssonST18i
         
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_suban40i');
+            }
+        }
         
         return $this;
     }

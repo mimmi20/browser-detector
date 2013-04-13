@@ -146,11 +146,9 @@ final class HtcA9191DesireHd
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -238,6 +236,14 @@ final class HtcA9191DesireHd
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (2.3 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'htc_desirehd_ver1_suban23');
+        }
         
         return $this;
     }

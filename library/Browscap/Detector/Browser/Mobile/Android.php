@@ -267,12 +267,10 @@ class Android
         $engine->setCapability('xhtml_avoid_accesskeys', true);
         $engine->setCapability('xhtml_supports_forms_in_table', true);
         $engine->setCapability('xhtml_file_upload', 'supported');
-        $engine->setCapability('xhtml_supports_invisible_text', true);
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('colors', 65536);
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
         $engine->setCapability('xhtml_supports_invisible_text', false);
-        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
@@ -282,6 +280,10 @@ class Android
         if ($osVersion <= 2.3) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
             $engine->setCapability('bmp', true);
+        }
+        
+        if ($this->_utils->checkIfContains('(Linux; U;')) {
+            $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
         return $this;

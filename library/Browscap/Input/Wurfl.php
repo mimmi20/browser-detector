@@ -277,6 +277,9 @@ final class Wurfl extends Core
                 case 'gt i7500':
                     $apiDev = 'GT-I7500';
                     break;
+                case 'SGH-i917':
+                    $apiDev = 'SGH-I957';
+                    break;
                 case 'acer e310':
                     $apiDev = 'E310';
                     $apiMan = 'Acer';

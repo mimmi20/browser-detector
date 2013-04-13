@@ -70,7 +70,7 @@ final class Ipad
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'apple_ipad_ver1_sub432', // not in wurfl
+        'wurflKey' => 'apple_ipad_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class Ipad
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -181,28 +179,6 @@ final class Ipad
     public function getWeight()
     {
         return 16905153;
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        $this->setCapability('model_extra_info', $osVersion);
-        
-        $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        return $this;
     }
     
     /**
@@ -251,5 +227,73 @@ final class Ipad
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        $this->setCapability('model_extra_info', $osVersion);
+        
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        if (3.2 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_subua32');
+        }
+        
+        if (5.0 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub5');
+        }
+        
+        if (5.1 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub51');
+        }
+        
+        if (6.0 <= (float) $osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub6');
+        }
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion();
+        
+        switch ($osVersion) {
+            case '3.1.3':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
+                break;
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub421');
+                break;
+            case '4.3.0':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
+                break;
+            case '4.3.1':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
+                break;
+            case '4.3.2':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub432');
+                break;
+            case '4.3.3':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
+                break;
+            case '4.3.4':
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub435');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this;
     }
 }

@@ -146,11 +146,9 @@ final class MotorolaMb525
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -240,6 +238,16 @@ final class MotorolaMb525
         // wurflkey: mot_mb525_ver1_sub_android221
         $engine->setCapability('colors', 16777216);
         $engine->setCapability('xhtml_file_upload', 'not_supported');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (2.1 == (float) $osVersion
+            && $this->_utils->checkIfContains('_U3_2.5')
+        ) {
+            $this->setCapability('wurflKey', 'mot_mb525_ver1_subu32590');
+        }
         
         return $this;
     }

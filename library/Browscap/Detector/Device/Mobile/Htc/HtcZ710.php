@@ -70,7 +70,7 @@ final class HtcZ710
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_sensation_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -146,11 +146,9 @@ final class HtcZ710
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -260,6 +258,18 @@ final class HtcZ710
         
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (4.0 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'htc_sensation_ver1_suban40rom');
+            
+            if ($this->_utils->checkIfContains('HTC_Sensation Build/IML74K')) {
+                $this->setCapability('wurflKey', 'htc_sensation_ver1_subua40uscore');
+            }
+        }
         
         return $this;
     }

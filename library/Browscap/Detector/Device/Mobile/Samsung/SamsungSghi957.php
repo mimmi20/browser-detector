@@ -70,7 +70,7 @@ final class SamsungSghi957
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_omnia7_ver1_subos75', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -87,15 +87,15 @@ final class SamsungSghi957
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'Omnia 7',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,9 +112,9 @@ final class SamsungSghi957
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,
@@ -146,11 +146,9 @@ final class SamsungSghi957
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -192,9 +190,8 @@ final class SamsungSghi957
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -214,7 +211,7 @@ final class SamsungSghi957
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WindowsPhoneOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

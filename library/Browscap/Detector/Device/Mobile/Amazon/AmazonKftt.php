@@ -70,7 +70,7 @@ final class AmazonKftt
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'amazon_kindle_fire_hd7_ver1_subuanosilk', // not in wurfl
+        'wurflKey' => 'amazon_kindle_fire_hd7_ver1_subuadesktop', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -117,7 +117,7 @@ final class AmazonKftt
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,15 +142,13 @@ final class AmazonKftt
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
