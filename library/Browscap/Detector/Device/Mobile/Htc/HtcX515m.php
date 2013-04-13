@@ -70,7 +70,7 @@ final class HtcX515m
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_evo_3d_ver1_suban40', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -224,5 +224,24 @@ final class HtcX515m
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: htc_evo_3d_ver1_suban40
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('bmp', true);
+        //$engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

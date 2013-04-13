@@ -225,4 +225,22 @@ final class MotorolaMz601
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: mot_mz601_ver1_suban40
+        $engine->setCapability('colors', 16777216);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
+    }
 }

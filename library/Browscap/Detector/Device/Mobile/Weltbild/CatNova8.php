@@ -117,7 +117,7 @@ final class CatNova8
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: weltbild_catnova8_ver1
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class CatNova8
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: weltbild_catnova8_ver1
     );
     
     /**

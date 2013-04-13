@@ -70,7 +70,7 @@ final class SonyEricssonLT26i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_lt26i_ver1_suban40', // not in wurfl
+        'wurflKey' => 'sonyericsson_lt26i_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -241,14 +241,7 @@ final class SonyEricssonLT26i
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        if (2.3 == $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-        
+        // wurflkey: sonyericsson_lt26i_ver1
         $engine->setCapability('bmp', true);
         $engine->setCapability('gif_animated', true);
         

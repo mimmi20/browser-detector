@@ -1258,6 +1258,15 @@ final class Result
                     case 'deviceClass':
                         $value = get_class($device);
                         break;
+                    case 'browserClass':
+                        $value = get_class($browser);
+                        break;
+                    case 'engineClass':
+                        $value = get_class($engine);
+                        break;
+                    case 'osClass':
+                        $value = get_class($os);
+                        break;
                     case 'is_wireless_device':
                     case 'is_tablet':
                     case 'is_smarttv':

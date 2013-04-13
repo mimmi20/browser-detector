@@ -75,7 +75,7 @@ class InternetArchive
         'device_claims_web_support' => false,
         
         // browser
-        'mobile_browser'              => 'Internet Archive',
+        'mobile_browser'              => 'Internet Archive Bot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'www.archive.org', // not in wurfl

@@ -87,7 +87,7 @@ final class HtcDesireHd
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Desire HD',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -155,6 +155,10 @@ final class HtcDesireHd
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD', 'Desire HD'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('HTC_DesireHD_A9191', 'HTC Desire HD A9191'))) {
             return false;
         }
         

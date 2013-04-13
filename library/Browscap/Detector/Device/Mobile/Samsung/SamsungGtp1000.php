@@ -117,7 +117,7 @@ final class SamsungGtp1000
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: samsung_galaxy_tab_ver1
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class SamsungGtp1000
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: samsung_galaxy_tab_ver1
     );
     
     /**

@@ -117,7 +117,7 @@ final class SamsungGtn8010
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: samsung_gt_n8000_ver1_subua8010
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class SamsungGtn8010
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: samsung_gt_n8000_ver1_subua8010
     );
     
     /**

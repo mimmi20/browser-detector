@@ -117,7 +117,7 @@ final class AsusGalaxyNexus7
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: google_nexus7_ver1
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class AsusGalaxyNexus7
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: google_nexus7_ver1
     );
     
     /**
@@ -224,5 +224,25 @@ final class AsusGalaxyNexus7
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: google_nexus7_ver1
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        // $engine->setCapability('colors', 16777216);
+        // $engine->setCapability('xhtml_file_upload', 'not_supported');
+        
+        return $this;
     }
 }

@@ -243,4 +243,26 @@ final class AcerIconiaA700
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: acer_iconia_tab_a700_ver1_suban41
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('colors', 4294967296);
+        $engine->setCapability('sms_enabled', true);
+        $engine->setCapability('nfc_support', true);
+        
+        return $this;
+    }
 }

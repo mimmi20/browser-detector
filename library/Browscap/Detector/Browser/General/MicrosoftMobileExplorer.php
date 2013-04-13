@@ -222,7 +222,7 @@ class MicrosoftMobileExplorer
         $engine->setCapability('viewport_userscalable', 'no');
         $engine->setCapability('css_spriting', true);
         
-        $version = $this->getCapability('mobile_browser_version')->getVersion(
+        $version = (float) $this->getCapability('mobile_browser_version')->getVersion(
             Version::MAJORMINOR
         );
         

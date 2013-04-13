@@ -117,7 +117,7 @@ final class AcerIconiaA511
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: acer_iconia_tab_a511_ver1
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class AcerIconiaA511
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: acer_iconia_tab_a511_ver1
     );
     
     /**
@@ -241,6 +241,7 @@ final class AcerIconiaA511
     {
         parent::detectDependProperties($browser, $engine, $os);
         
+        // wurflkey: acer_iconia_tab_a511_ver1
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);

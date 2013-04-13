@@ -225,4 +225,23 @@ final class AlcatelOt991d
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: alcatel_ot991_ver1_subuad
+        $engine->setCapability('colors', 262144);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('bmp', true);
+        
+        return $this;
+    }
 }

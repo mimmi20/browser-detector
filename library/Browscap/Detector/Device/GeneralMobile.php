@@ -289,6 +289,10 @@ final class GeneralMobile
             $this->setCapability('resolution_height', 800);
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
+            $this->setCapability('has_qwerty_keyboard', true);
+            $this->setCapability('pointing_method', 'touchscreen');
+            $this->setCapability('sms_enabled', true);
+            $this->setCapability('nfc_support', true);
             
             $this->setCapability('wurflKey', 'generic_ms_phone_os7_5_desktopmode');
             
@@ -313,6 +317,24 @@ final class GeneralMobile
             
             return $this;
         }
+        
+        return $this;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', false);
+        $engine->setCapability('wbmp', false);
+        $engine->setCapability('tiff', false);
         
         return $this;
     }

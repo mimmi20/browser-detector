@@ -87,7 +87,7 @@ final class HtcWildfire
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Wildfire',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -158,7 +158,7 @@ final class HtcWildfire
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('HTC Wildfire S', 'HTC/WildfireS', 'HTC_WildfireS', 'Wildfire S'))) {
+        if ($this->_utils->checkIfContains(array('HTC Wildfire S', 'HTC/WildfireS', 'HTC_WildfireS', 'Wildfire S', 'HTC_Wildfire_A3333'))) {
             return false;
         }
         
@@ -228,5 +228,22 @@ final class HtcWildfire
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', true);
+        //$engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

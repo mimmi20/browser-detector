@@ -225,4 +225,22 @@ final class MotorolaMb525
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: mot_mb525_ver1_sub_android221
+        $engine->setCapability('colors', 16777216);
+        $engine->setCapability('xhtml_file_upload', 'not_supported');
+        
+        return $this;
+    }
 }

@@ -225,4 +225,23 @@ final class HuaweiU9200
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: huawei_u9200_ver1
+        $engine->setCapability('bmp', true);
+        // $engine->setCapability('colors', 16777216);
+        // $engine->setCapability('xhtml_file_upload', 'not_supported');
+        
+        return $this;
+    }
 }
