@@ -1296,7 +1296,8 @@ final class Result
                     case 'max_no_of_connection_settings':
                     case 'max_object_size':
                     case 'wurflKey':
-                    //case 'unique':
+                    case 'sms_enabled':
+                    case 'nfc_support':
                     //case 'unique':
                         $value = $device->getCapability($property);
                         break;
