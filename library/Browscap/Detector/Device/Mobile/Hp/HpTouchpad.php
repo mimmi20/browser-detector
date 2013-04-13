@@ -116,19 +116,8 @@ final class HpTouchpad
         'resolution_height'      => 1024,
         'dual_orientation'       => true,
         
-        // security
-        'phone_id_provided' => false,
-        
-        // storage
-        'max_deck_size' => 10000,
-        'max_length_of_username' => 0,
-        'max_no_of_bookmarks' => 0,
-        'max_length_of_password' => 0,
-        'max_no_of_connection_settings' => 0,
-        'max_object_size' => 0,
-        
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -153,7 +142,7 @@ final class HpTouchpad
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**

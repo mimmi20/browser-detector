@@ -244,6 +244,11 @@ class Firefox
             $engine->setCapability('css_gradient', 'mozilla');
             $engine->setCapability('css_border_image', 'mozilla');
             $engine->setCapability('css_rounded_corners', 'mozilla');
+            
+            if (!$device->getCapability('is_tablet')) {
+                $device->setCapability('sms_enabled', true);
+                $device->setCapability('nfc_support', true);
+            }
         }
         
         return $this;
