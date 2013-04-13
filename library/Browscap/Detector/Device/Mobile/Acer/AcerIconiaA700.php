@@ -117,7 +117,7 @@ final class AcerIconiaA700
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +142,7 @@ final class AcerIconiaA700
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
     );
     
     /**
@@ -260,8 +260,6 @@ final class AcerIconiaA700
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
         $engine->setCapability('colors', 4294967296);
-        $engine->setCapability('sms_enabled', true);
-        $engine->setCapability('nfc_support', true);
         
         return $this;
     }
