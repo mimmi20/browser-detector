@@ -1271,6 +1271,7 @@ final class Result
                     case 'wurflKey':
                         $value = $device->id;
                         break;
+                    case 'device_type':
                     case 'is_wireless_device':
                     case 'is_tablet':
                     case 'is_smarttv':
