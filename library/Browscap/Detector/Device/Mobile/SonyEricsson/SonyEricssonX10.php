@@ -94,7 +94,6 @@ final class SonyEricssonX10
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: sonyericsson_x10i_ver1_suban23
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

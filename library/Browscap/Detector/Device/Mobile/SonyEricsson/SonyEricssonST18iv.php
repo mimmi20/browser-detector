@@ -94,7 +94,6 @@ final class SonyEricssonST18iv
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: sonyericsson_st18i_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -211,16 +210,36 @@ final class SonyEricssonST18iv
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
         );
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
+        if ('Android' == $browser->getCapability('mobile_browser')) {
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_suban40i');
+            }
+        }
         
-        return $chain->detect();
+        return $this;
     }
 }

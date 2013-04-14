@@ -166,4 +166,43 @@ class Blackberry
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('multipart_support', true);
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('wml_1_2', true);
+        $engine->setCapability('wml_1_3', true);
+        $engine->setCapability('html_wi_imode_html_1', true);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_supports_css_cell_table_coloring', false);
+        $engine->setCapability('xhtml_make_phone_call_string', 'wtai://wp/mc;');
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('xhtml_supports_table_for_layout', false);
+        $engine->setCapability('bmp', false);
+        $engine->setCapability('wbmp', true);
+        $engine->setCapability('colors', 256);
+        $engine->setCapability('max_url_length_in_requests', 256);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'gears');
+        $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('viewport_minimum_scale', '1.0');
+        $engine->setCapability('viewport_initial_scale', '1.0');
+        $engine->setCapability('viewport_maximum_scale', '1.0');
+        $engine->setCapability('handheldfriendly', true);
+        $engine->setCapability('css_border_image', 'none');
+        $engine->setCapability('css_rounded_corners', 'none');
+        $engine->setCapability('wml_1_1', true);
+        
+        return $this;
+    }
 }

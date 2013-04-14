@@ -94,7 +94,6 @@ final class BlackBerry9500
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: blackberry9500_ver1_subos470141
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

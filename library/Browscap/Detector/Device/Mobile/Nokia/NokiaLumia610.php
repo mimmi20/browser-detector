@@ -70,7 +70,7 @@ final class NokiaLumia610
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_lumia_610_ver1', // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -94,7 +94,6 @@ final class NokiaLumia610
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -210,17 +209,10 @@ final class NokiaLumia610
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\WindowsPhoneOs(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\WindowsPhoneOs();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
     
     /**
@@ -234,7 +226,10 @@ final class NokiaLumia610
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        // wurflkey: 
+        // wurflkey: nokia_lumia_610_ver1
+        $engine->setCapability('bmp', false);
+        $engine->setCapability('wbmp', false);
+        $engine->setCapability('tiff', false);
         // $engine->setCapability('colors', 16777216);
         // $engine->setCapability('xhtml_file_upload', 'not_supported');
         

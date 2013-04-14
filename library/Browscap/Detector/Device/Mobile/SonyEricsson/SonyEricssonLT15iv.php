@@ -94,7 +94,6 @@ final class SonyEricssonLT15iv
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: sonyericsson_lt15i_ver1_subua232
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

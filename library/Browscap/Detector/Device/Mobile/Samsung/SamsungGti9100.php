@@ -94,7 +94,6 @@ final class SamsungGti9100
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: samsung_gt_i9100_ver1_suban40rom
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

@@ -94,7 +94,6 @@ final class SamsungGtn7000
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: samsung_gt_n7000_ver1_suban40
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -211,17 +210,10 @@ final class SamsungGtn7000
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
     
     /**

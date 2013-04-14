@@ -94,7 +94,6 @@ final class LenovoA2109aIdeaTab
         'device_cpu'                => 'MTK 6575 1.0GHz Cortex A9', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

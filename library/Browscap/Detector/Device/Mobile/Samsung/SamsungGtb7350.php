@@ -94,7 +94,6 @@ final class SamsungGtb7350
         'device_cpu'                => 'MSM7227', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

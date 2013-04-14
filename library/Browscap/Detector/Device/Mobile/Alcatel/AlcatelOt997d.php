@@ -94,7 +94,6 @@ final class AlcatelOt997d
         'device_cpu'                => '2x1.0GHz Cortex-A9 (MediaTek MT6577)', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

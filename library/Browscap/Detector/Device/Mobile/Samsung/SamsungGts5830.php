@@ -94,7 +94,6 @@ final class SamsungGts5830
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkry: samsung_gt_s5830_ver1_suban23
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

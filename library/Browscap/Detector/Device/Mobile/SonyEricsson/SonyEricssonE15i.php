@@ -87,14 +87,13 @@ final class SonyEricssonE15i
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xperia X8',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: sonyericsson_e15i_ver1_sub21_01
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -211,16 +210,28 @@ final class SonyEricssonE15i
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
+        return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
         
-        return $chain->detect();
+        // $engine->setCapability('bmp', true);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_file_upload', 'not_supported');
+        $engine->setCapability('jqm_grade', 'C');
+        
+        return $this;
     }
 }

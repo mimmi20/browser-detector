@@ -94,7 +94,6 @@ final class HtcA8181Desire
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -211,16 +210,34 @@ final class HtcA8181Desire
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', true);
+        // $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
         );
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
+        if (2.2 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'htc_desire_a8181_ver1_suban22');
+        }
         
-        return $chain->detect();
+        return $this;
     }
 }

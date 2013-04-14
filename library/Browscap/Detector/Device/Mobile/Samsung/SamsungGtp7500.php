@@ -94,7 +94,6 @@ final class SamsungGtp7500
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -211,17 +210,10 @@ final class SamsungGtp7500
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
     
     /**
@@ -246,6 +238,10 @@ final class SamsungGtp7500
         if ('Android' == $browser->getCapability('mobile_browser')) {
             if (3.1 == (float) $osVersion) {
                 $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban31');
+            }
+            
+            if (3.2 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban32');
             }
             
             if (4.0 == (float) $osVersion) {

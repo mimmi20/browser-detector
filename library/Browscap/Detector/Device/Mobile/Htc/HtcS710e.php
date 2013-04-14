@@ -94,7 +94,6 @@ final class HtcS710e
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: htc_incredibles_s710e_ver1_suban40
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

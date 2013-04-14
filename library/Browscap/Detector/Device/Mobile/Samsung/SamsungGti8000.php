@@ -94,7 +94,6 @@ final class SamsungGti8000
         'device_cpu'                => 'ARM11763 S3C6410', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

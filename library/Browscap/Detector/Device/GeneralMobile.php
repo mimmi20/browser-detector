@@ -95,7 +95,6 @@ final class GeneralMobile
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -250,7 +249,7 @@ final class GeneralMobile
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', false);
             
-            $this->setCapability('wurflKey', null);
+            // $this->setCapability('wurflKey', null);
             
             return $this;
         }
@@ -269,7 +268,7 @@ final class GeneralMobile
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
             
-            $this->setCapability('wurflKey', null);
+            // $this->setCapability('wurflKey', null);
             
             return $this;
         }
@@ -310,8 +309,10 @@ final class GeneralMobile
             $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
+            $this->setCapability('has_qwerty_keyboard', true);
+            $this->setCapability('pointing_method', 'touchscreen');
             
-            $this->setCapability('wurflKey', null);
+            $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
             
             return $this;
         }
@@ -345,6 +346,36 @@ final class GeneralMobile
                 $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec');
                 
                 $engine->setCapability('wbmp', true);
+            }
+        }
+        
+        if ('Opera Mobile' == $browser->getCapability('mobile_browser')
+            && 'Android' == $os->getCapability('device_os')
+        ) {
+            $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            
+            if (4.0 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('wml_1_1', true);
+                $engine->setCapability('chtml_table_support', false);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                $engine->setCapability('xhtml_table_support', true);
+                $engine->setCapability('xhtml_supports_table_for_layout', true);
+                $engine->setCapability('wbmp', true);
+                $engine->setCapability('canvas_support', 'full');
+                $engine->setCapability('viewport_width', 'device_width_token');
+                $engine->setCapability('viewport_supported', true);
+                $engine->setCapability('viewport_userscalable', 'no');
+                $engine->setCapability('css_border_image', 'opera');
+                $engine->setCapability('css_rounded_corners', 'opera');
+                
+                $this->setCapability('sms_enabled', true);
+                $this->setCapability('nfc_support', true);
             }
         }
         

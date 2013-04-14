@@ -94,7 +94,6 @@ final class Lgp990
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -245,7 +244,7 @@ final class Lgp990
         );
         
         if (2.2 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'lg_p990_ver1_sub_android222b');
+            $this->setCapability('wurflKey', 'lg_p990_ver1_suban22');
         }
         
         if (2.3 == (float) $osVersion) {

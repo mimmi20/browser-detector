@@ -94,7 +94,6 @@ final class SonyEricssonR800i
         'device_cpu'                => 'Cortex-A8', // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: sonyericsson_r800i_ver1_suban233
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

@@ -94,7 +94,6 @@ final class HtcA310e
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: htc_a310e_ver1_subuauscore
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

@@ -94,7 +94,6 @@ final class NokiaE71
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 1,
         'nokia_series'              => 60,

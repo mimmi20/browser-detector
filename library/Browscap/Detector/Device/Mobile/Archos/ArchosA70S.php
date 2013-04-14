@@ -94,7 +94,6 @@ final class ArchosA70S
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // archos_a70s_ver1_sub02
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,

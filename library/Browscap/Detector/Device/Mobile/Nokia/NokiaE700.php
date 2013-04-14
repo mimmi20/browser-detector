@@ -94,7 +94,6 @@ final class NokiaE700
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true, // wurflkey: nokia_e7_00_ver1_subua53
         'nokia_feature_pack'        => 2,
         'nokia_series'              => 60,
