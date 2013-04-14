@@ -72,7 +72,6 @@ class Mail
         // kind of device
         'is_bot'             => true,
         'is_transcoder'      => false,
-        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Mail',

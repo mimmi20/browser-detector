@@ -72,7 +72,6 @@ class GoogleWirelessTranscoder
         // kind of device
         'is_bot'             => true,
         'is_transcoder'      => true,
-        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Google Wireless Transcoder',

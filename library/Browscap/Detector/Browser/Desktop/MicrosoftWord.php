@@ -71,16 +71,6 @@ class MicrosoftWord extends MicrosoftOffice
         'is_bot'             => false,
         'is_transcoder'      => false,
         
-        // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => 'Microsoft',
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => true,
-        
         // browser
         'mobile_browser'              => 'Word',
         'mobile_browser_version'      => null,
@@ -90,7 +80,7 @@ class MicrosoftWord extends MicrosoftOffice
         
         // product info
         'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
+        'device_claims_web_support' => true,
         
         // pdf
         'pdf_support' => true,

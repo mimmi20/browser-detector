@@ -75,7 +75,6 @@ class Toshiba
         // kind of device
         'is_bot'             => false,
         'is_transcoder'      => false,
-        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Toshiba',

@@ -74,7 +74,6 @@ class Android
         // kind of device
         'is_bot'             => false,
         'is_transcoder'      => false,
-        'device_claims_web_support' => true,
         
         // browser
         'mobile_browser'              => 'Android Webkit',
@@ -85,7 +84,7 @@ class Android
         
         // product info
         'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
+        'device_claims_web_support' => true,
         
         // pdf
         'pdf_support' => true,
@@ -279,7 +278,9 @@ class Android
             $engine->setCapability('bmp', true);
         }
         
-        if ($this->_utils->checkIfContains('(Linux; U;')) {
+        if ($this->_utils->checkIfContains('(Linux; U;')
+            && !$this->_utils->checkIfContains('Android')
+        ) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         

@@ -72,7 +72,6 @@ class Rockmelt
         // kind of device
         'is_bot'             => false,
         'is_transcoder'      => false,
-        'device_claims_web_support' => true,
         
         // browser
         'mobile_browser'              => 'RockMelt',
@@ -83,7 +82,7 @@ class Rockmelt
         
         // product info
         'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
+        'device_claims_web_support' => true,
         
         // pdf
         'pdf_support' => true,

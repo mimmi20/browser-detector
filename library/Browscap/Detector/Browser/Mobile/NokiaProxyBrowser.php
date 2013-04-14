@@ -72,7 +72,6 @@ class NokiaProxyBrowser
         // kind of device
         'is_bot'             => false,
         'is_transcoder'      => true,
-        'device_claims_web_support' => false,
         
         // browser
         'mobile_browser'              => 'Nokia Proxy Browser',
