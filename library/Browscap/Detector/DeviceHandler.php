@@ -746,6 +746,40 @@ abstract class DeviceHandler
     }
     
     /**
+     * Magic Method
+     *
+     * @param string $name
+     * @return string
+     */
+    public function __get($name)
+    {
+        if (isset($name)) {
+            switch ($name) {
+                case 'id':
+                    return $this->getCapability('wurflKey');
+                    break;
+                case 'userAgent':
+                    return $this->getCapability('useragent');
+                    break;
+                case 'deviceClass':
+                    return $this->getCapability('deviceClass');
+                    break;
+                case 'fallBack':
+                case 'actualDeviceRoot':
+                    return null;
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+        }
+        
+        throw new \InvalidArgumentException(
+            'the property "' . $name . '" is not defined'
+        );
+    }
+    
+    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
