@@ -245,7 +245,7 @@ final class Iphone
         if ('Safari' == $browser->getCapability('mobile_browser')
             && !$browser->getCapability('mobile_browser_version')->getVersion()
         ) {
-            $browser->getCapability('mobile_browser_version')->setVersion($osVersion)
+            $browser->getCapability('mobile_browser_version')->setVersion($osVersion);
         }
         
         parent::detectDependProperties($browser, $engine, $os);
