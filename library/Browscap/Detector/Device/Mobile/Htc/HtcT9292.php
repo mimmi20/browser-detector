@@ -73,6 +73,7 @@ final class HtcT9292
         'wurflKey' => 'htc_t9292_ver1_subos75', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

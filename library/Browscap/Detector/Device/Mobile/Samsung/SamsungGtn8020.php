@@ -73,6 +73,7 @@ final class SamsungGtn8020
         'wurflKey' => 'samsung_gt_n8000_ver1_subua8020', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: samsung_gt_n8000_ver1_subua8020
         // 'is_bot'             => false,

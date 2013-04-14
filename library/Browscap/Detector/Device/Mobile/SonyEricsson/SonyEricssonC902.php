@@ -73,6 +73,7 @@ final class SonyEricssonC902
         'wurflKey' => 'sonyericsson_c902_ver1_subr3da', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

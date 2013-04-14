@@ -73,6 +73,7 @@ final class HuaweiU8651
         'wurflKey' => 'tmobile_u8651t_ver1_subuaprism', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false, // wurflkey: tmobile_u8651t_ver1_subuaprism
         // 'is_bot'             => false,

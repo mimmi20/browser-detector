@@ -73,6 +73,7 @@ final class BlackBerry8110
         'wurflKey' => 'blackberry8110_ver1_sub45055', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

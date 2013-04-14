@@ -73,6 +73,7 @@ final class HtcT8282
         'wurflKey' => 'htc_t8282_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

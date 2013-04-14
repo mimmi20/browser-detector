@@ -73,6 +73,7 @@ final class SonyEricssonU20i
         'wurflKey' => 'sonyericsson_u20i_ver1_suban21', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

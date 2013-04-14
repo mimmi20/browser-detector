@@ -88,6 +88,7 @@ abstract class DeviceHandler
         'wurflKey' => null, // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => false,
         'is_tablet'          => false,
         // 'is_bot'             => false,

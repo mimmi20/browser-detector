@@ -73,6 +73,7 @@ final class SamsungGtp3110
         'wurflKey' => 'samsung_gt_p3100_ver1_subua3110', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: samsung_gt_p3100_ver1_subua3110
         // 'is_bot'             => false,

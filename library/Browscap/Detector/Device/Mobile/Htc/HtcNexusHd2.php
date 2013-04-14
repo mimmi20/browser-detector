@@ -73,6 +73,7 @@ final class HtcNexusHd2
         'wurflKey' => 'htc_hd2_android_ver1_subuanexus', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

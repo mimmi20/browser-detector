@@ -73,6 +73,7 @@ final class HuaweiU8860
         'wurflKey' => 'huawei_u8860_ver1_suban40noh', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false, // wurflkey: huawei_u8860_ver1_suban40noh
         // 'is_bot'             => false,

@@ -73,6 +73,7 @@ final class SamsungGts6102
         'wurflKey' => 'samsung_gt_s6102_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

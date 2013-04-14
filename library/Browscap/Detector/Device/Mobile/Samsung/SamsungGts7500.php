@@ -73,6 +73,7 @@ final class SamsungGts7500
         'wurflKey' => 'samsung_gt_s7500_ver1_subuanosam', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

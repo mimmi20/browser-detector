@@ -73,6 +73,7 @@ final class SamsungGtp1000
         'wurflKey' => 'samsung_galaxy_tab_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,  // wurflkey: samsung_galaxy_tab_ver1
         // 'is_bot'             => false,

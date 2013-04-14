@@ -73,6 +73,7 @@ final class ZteBaseLutea2
         'wurflKey' => 'zte_skate_ver1_subuabase', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false, // wurflkey: zte_skate_ver1_subuabase
         // 'is_bot'             => false,

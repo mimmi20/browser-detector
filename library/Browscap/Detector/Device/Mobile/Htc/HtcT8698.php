@@ -73,6 +73,7 @@ final class HtcT8698
         'wurflKey' => 'htc_mozart_ver1_subos75b', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

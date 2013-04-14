@@ -73,6 +73,7 @@ final class SamsungGti9300
         'wurflKey' => 'samsung_gt_i9300_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

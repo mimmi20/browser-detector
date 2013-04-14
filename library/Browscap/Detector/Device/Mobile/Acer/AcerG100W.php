@@ -73,6 +73,7 @@ final class AcerG100W
         'wurflKey' => 'acer_g100w_ver1_suban32', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: acer_g100w_ver1_suban32
         // 'is_bot'             => false,

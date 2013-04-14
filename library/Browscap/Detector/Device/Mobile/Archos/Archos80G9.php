@@ -73,6 +73,7 @@ final class Archos80G9
         'wurflKey' => 'archos_80g9_ver1_suban40', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,

@@ -73,6 +73,7 @@ final class AcerIconiaA210
         'wurflKey' => 'acer_iconia_tab_a210_ver1_suban41', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: acer_iconia_tab_a210_ver1_suban41
         // 'is_bot'             => false,

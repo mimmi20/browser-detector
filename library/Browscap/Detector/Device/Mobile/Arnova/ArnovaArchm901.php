@@ -73,6 +73,7 @@ final class ArnovaArchm901
         'wurflKey' => 'arnova_archm901_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,

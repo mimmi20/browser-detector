@@ -60,14 +60,15 @@ final class Result
      * @var Stdfinal class
      */
     private $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        'useragent' => null, // not in wurfl
-        'deviceClass' => null, // not in wurfl
+        'wurflKey' => null,     // not in wurfl
+        'useragent' => null,    // not in wurfl
+        'deviceClass' => null,  // not in wurfl
         'browserClass' => null, // not in wurfl
-        'engineClass' => null, // not in wurfl
-        'osClass' => null, // not in wurfl
+        'engineClass' => null,  // not in wurfl
+        'osClass' => null,      // not in wurfl
         
         // kind of device
+        'device_type'        => null, // not in wurfl
         'is_wireless_device' => null,
         'is_tablet'          => null,
         'is_bot'             => null,
