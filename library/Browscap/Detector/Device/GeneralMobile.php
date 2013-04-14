@@ -252,7 +252,11 @@ final class GeneralMobile
             
             $this->setCapability('device_type', 'Tablet');
             
-            // $this->setCapability('wurflKey', null);
+            return $this;
+        }
+        
+        if ($this->_utils->checkIfContains(array('Android; Mobile'))) {
+            $this->setCapability('device_type', 'Mobile Phone');
             
             return $this;
         }
@@ -272,8 +276,6 @@ final class GeneralMobile
             $this->setCapability('can_assign_phone_number', true);
             
             $this->setCapability('device_type', 'Tablet');
-            
-            // $this->setCapability('wurflKey', null);
             
             return $this;
         }

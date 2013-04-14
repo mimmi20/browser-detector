@@ -252,7 +252,7 @@ final class Iphone
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('accept_third_party_cookie', false);
-        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_file_upload', 'not_supported');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('css_gradient', 'webkit');
         $engine->setCapability('accept_third_party_cookie', false);
@@ -280,6 +280,14 @@ final class Iphone
         
         if (6.0 <= (float) $osVersion) {
             $this->setCapability('wurflKey', 'apple_iphone_ver6');
+        }
+        
+        $browserVersion = $browser->getCapability('mobile_browser_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (6.0 <= (float) $browserVersion) {
+            $engine->setCapability('xhtml_file_upload', 'supported');
         }
         
         $osVersion = $os->getCapability('device_os_version')->getVersion();
