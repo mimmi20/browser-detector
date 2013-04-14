@@ -73,7 +73,7 @@ final class HtcSpark
         'wurflKey' => 'htc_spark_ver1_subtrophy75', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

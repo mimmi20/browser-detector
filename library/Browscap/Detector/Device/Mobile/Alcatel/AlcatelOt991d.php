@@ -73,7 +73,7 @@ final class AlcatelOt991d
         'wurflKey' => 'alcatel_ot991_ver1_subuad', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

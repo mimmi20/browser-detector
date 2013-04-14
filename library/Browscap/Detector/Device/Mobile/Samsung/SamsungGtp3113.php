@@ -73,7 +73,7 @@ final class SamsungGtp3113
         'wurflKey' => 'samsung_gt_p3100_ver1_subua3113', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: samsung_gt_p3100_ver1_subua3113
         // 'is_bot'             => false,

@@ -73,7 +73,7 @@ final class AcerIconiaA500
         'wurflKey' => 'acer_iconia_tab_a500_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: acer_iconia_tab_a500_ver1_suban40
         // 'is_bot'             => false,

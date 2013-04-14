@@ -73,7 +73,7 @@ final class SonyEricssonSK17i
         'wurflKey' => 'sonyericsson_sk17i_ver1_suban40i', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

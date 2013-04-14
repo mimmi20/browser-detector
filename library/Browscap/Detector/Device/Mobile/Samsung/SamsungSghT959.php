@@ -73,7 +73,7 @@ final class SamsungSghT959
         'wurflKey' => 'samsung_sgh_t959_ver1_sub53017', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

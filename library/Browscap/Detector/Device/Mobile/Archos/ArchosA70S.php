@@ -73,7 +73,7 @@ final class ArchosA70S
         'wurflKey' => 'archos_a70s_ver1_sub02', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,

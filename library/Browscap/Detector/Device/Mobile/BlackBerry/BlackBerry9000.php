@@ -73,7 +73,7 @@ final class BlackBerry9000
         'wurflKey' => 'blackberry9000_ver1_sub460162_123', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

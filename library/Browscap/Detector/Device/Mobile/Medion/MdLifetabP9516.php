@@ -73,7 +73,7 @@ final class MdLifetabP9516
         'wurflKey' => 'medion_lifetab_p9516_ver1_suban40', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,

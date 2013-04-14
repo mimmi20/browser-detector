@@ -73,7 +73,7 @@ final class MotorolaMz604
         'wurflKey' => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: mot_mz601_ver1_suban40mz604
         // 'is_bot'             => false,

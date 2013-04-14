@@ -73,7 +73,7 @@ final class CatNova8
         'wurflKey' => 'weltbild_catnova8_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,

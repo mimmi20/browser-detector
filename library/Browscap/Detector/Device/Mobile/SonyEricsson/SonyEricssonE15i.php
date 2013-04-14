@@ -73,7 +73,7 @@ final class SonyEricssonE15i
         'wurflKey' => 'sonyericsson_e15i_ver1_sub21_01', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,

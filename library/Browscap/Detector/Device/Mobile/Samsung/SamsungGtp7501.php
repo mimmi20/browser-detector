@@ -73,7 +73,7 @@ final class SamsungGtp7501
         'wurflKey' => 'samsung_galaxy_tab_p4_ver1_subuap7501', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,

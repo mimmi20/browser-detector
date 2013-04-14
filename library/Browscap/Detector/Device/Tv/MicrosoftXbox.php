@@ -73,7 +73,7 @@ final class MicrosoftXbox
         'wurflKey' => 'microsoft_xbox360_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'TV Device', // not in wurfl
         'is_wireless_device' => false,
         'is_tablet'          => false,
         'is_smarttv'         => true,

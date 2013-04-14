@@ -73,7 +73,7 @@ final class SamsungGtp6210
         'wurflKey' => 'samsung_gt_p6210_ver1_suban40', // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: samsung_gt_p6210_ver1_suban40
         // 'is_bot'             => false,
