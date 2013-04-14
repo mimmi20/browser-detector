@@ -52,9 +52,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * OperaHandlder
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

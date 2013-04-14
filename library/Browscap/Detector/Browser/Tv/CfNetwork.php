@@ -44,9 +44,6 @@ namespace Browscap\Detector\Browser\Tv;
 use \Browscap\Detector\Browser\General\CfNetwork as CfNetworkBase;
 
 /**
- * OperaHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

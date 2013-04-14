@@ -44,9 +44,6 @@ namespace Browscap\Detector\Browser\Desktop;
 use \Browscap\Detector\Browser\General\Qt as QtBase;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

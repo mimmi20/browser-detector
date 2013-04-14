@@ -47,9 +47,6 @@ namespace Browscap\Detector\Browser\Desktop;
 use \Browscap\Detector\Browser\General\MicrosoftInternetExplorer as IeBase;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

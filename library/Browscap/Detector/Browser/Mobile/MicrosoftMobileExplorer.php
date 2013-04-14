@@ -47,9 +47,6 @@ namespace Browscap\Detector\Browser\Mobile;
 use \Browscap\Detector\Browser\General\MicrosoftMobileExplorer as IeMobileBase;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

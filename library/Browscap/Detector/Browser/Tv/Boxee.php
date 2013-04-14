@@ -44,9 +44,6 @@ namespace Browscap\Detector\Browser\Tv;
 use \Browscap\Detector\Browser\General\Boxee as BoxeeBase;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

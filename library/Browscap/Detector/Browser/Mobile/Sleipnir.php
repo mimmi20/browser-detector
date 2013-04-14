@@ -44,9 +44,6 @@ namespace Browscap\Detector\Browser\Mobile;
 use \Browscap\Detector\Browser\General\Sleipnir as DefaultSleipnir;
 
 /**
- * SafariHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

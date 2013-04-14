@@ -44,9 +44,6 @@ namespace Browscap\Detector\Browser\Tv;
 use \Browscap\Detector\Browser\General\InettvBrowser as InettvBrowserBase;
 
 /**
- * InettvBrowserHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
