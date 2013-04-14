@@ -70,7 +70,7 @@ final class SonyEricssonST18i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_st18i_ver1_subuaise', // not in wurfl
+        'wurflKey' => 'sonyericsson_st18i_ver1_suban40i', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -114,7 +114,7 @@ final class SonyEricssonST18i
         'max_image_height'       => 400,
         'resolution_width'       => 480,
         'resolution_height'      => 854,
-        'dual_orientation'       => 480,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,

@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Sistrix
+class IntegromedbCrawler
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -74,10 +74,10 @@ class Sistrix
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Sistrix Bot',
+        'mobile_browser'              => 'integromedb Crawler',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'sistrix.net', // not in wurfl
+        'mobile_browser_manufacturer' => 'www.integromedb.org', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -103,7 +103,7 @@ class Sistrix
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('sistrix', true)) {
+        if (!$this->_utils->checkIfContains(array('integromedb.org'))) {
             return false;
         }
         
@@ -117,6 +117,39 @@ class Sistrix
      */
     public function getWeight()
     {
-        return 3;
+        return 52218;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('integromedb.org');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

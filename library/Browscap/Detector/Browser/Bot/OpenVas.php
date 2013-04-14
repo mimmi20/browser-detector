@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Sistrix
+class OpenVas
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -74,10 +74,10 @@ class Sistrix
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Sistrix Bot',
+        'mobile_browser'              => 'OpenVAS',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'sistrix.net', // not in wurfl
+        'mobile_browser_manufacturer' => 'openvas.org', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -103,7 +103,7 @@ class Sistrix
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('sistrix', true)) {
+        if (!$this->_utils->checkIfContains(array('OpenVAS'))) {
             return false;
         }
         
@@ -117,6 +117,39 @@ class Sistrix
      */
     public function getWeight()
     {
-        return 3;
+        return 19123;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('OpenVAS');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

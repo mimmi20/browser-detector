@@ -250,6 +250,8 @@ final class GeneralMobile
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', false);
             
+            $this->setCapability('device_type', 'Tablet');
+            
             // $this->setCapability('wurflKey', null);
             
             return $this;
@@ -268,6 +270,8 @@ final class GeneralMobile
             $this->setCapability('resolution_height', 640);
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
+            
+            $this->setCapability('device_type', 'Tablet');
             
             // $this->setCapability('wurflKey', null);
             
@@ -292,6 +296,8 @@ final class GeneralMobile
             $this->setCapability('sms_enabled', true);
             $this->setCapability('nfc_support', true);
             
+            $this->setCapability('device_type', 'Mobile Phone');
+            
             $this->setCapability('wurflKey', 'generic_ms_phone_os7_5_desktopmode');
             
             return $this;
@@ -312,6 +318,8 @@ final class GeneralMobile
             $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('pointing_method', 'touchscreen');
+            
+            $this->setCapability('device_type', 'Mobile Phone');
             
             $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
             
@@ -378,6 +386,10 @@ final class GeneralMobile
                 $this->setCapability('sms_enabled', true);
                 $this->setCapability('nfc_support', true);
             }
+        }
+        
+        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
         return $this;

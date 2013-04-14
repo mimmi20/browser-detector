@@ -100,7 +100,7 @@ final class HtcZ710
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/PG58/ua-profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -265,6 +265,7 @@ final class HtcZ710
         
         if (4.0 == (float) $osVersion) {
             $this->setCapability('wurflKey', 'htc_sensation_ver1_suban40rom');
+            $this->setCapability('uaprof', 'http://www.htcmms.com.tw/Android/TMO/Pyramid/ua-profile.xml');
             
             if ($this->_utils->checkIfContains('HTC_Sensation Build/IML74K')) {
                 $this->setCapability('wurflKey', 'htc_sensation_ver1_subua40uscore');

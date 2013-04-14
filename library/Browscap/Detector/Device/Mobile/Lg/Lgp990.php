@@ -252,6 +252,12 @@ final class Lgp990
             $this->setCapability('wurflKey', 'lg_p990_ver1_suban23');
         }
         
+        $osVersion = $os->getCapability('device_os_version')->getVersion();
+        
+        if ('2.2.2' == $osVersion) {
+            $this->setCapability('wurflKey', 'lg_p990_ver1_sub_android222b');
+        }
+        
         return $this;
     }
 }

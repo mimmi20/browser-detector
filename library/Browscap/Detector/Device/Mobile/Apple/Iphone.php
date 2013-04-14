@@ -252,6 +252,11 @@ final class Iphone
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('css_gradient', 'webkit');
+        $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('accept_third_party_cookie', false);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

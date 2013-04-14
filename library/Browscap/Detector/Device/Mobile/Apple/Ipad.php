@@ -270,6 +270,9 @@ final class Ipad
             case '3.1.3':
                 // $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
                 break;
+            case '3.2.2':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub321');
+                break;
             case '4.2.1':
                 $this->setCapability('wurflKey', 'apple_ipad_ver1_sub421');
                 break;

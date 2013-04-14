@@ -156,7 +156,11 @@ final class HtcDesire
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('DesireS', 'HTC_Desire_A8181', 'Desire_A8181', 'HTC_Desire_C', 'HTC_DesireHD_A9191'))) {
+        $specialHtcDesire = array(
+            'DesireS', 'A7272', 'A8181', 'A9191', 'Desire_C'
+        );
+        
+        if ($this->_utils->checkIfContains($specialHtcDesire)) {
             return false;
         }
         

@@ -232,7 +232,8 @@ final class SamsungGts5570
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        $engine->setCapability('xhtml_can_embed_video', 'none');
+        // wurflkey: samsung_gt_s5570_ver1_sub221
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

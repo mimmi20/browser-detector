@@ -219,6 +219,10 @@ final class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
+        if ($this->_utils->checkIfContains(array('HTTrack', 'OpenVAS'))) {
+            return false;
+        }
+        
         if ($this->_utils->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
@@ -250,10 +254,6 @@ final class SpamCrawlerFake
         
         if ($this->isFakeWindows()) {
             return true;
-        }
-        
-        if ($this->_utils->checkIfContains('HTTrack')) {
-            return false;
         }
         
         $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $this->_useragent, $matches);

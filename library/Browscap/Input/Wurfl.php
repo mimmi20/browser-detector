@@ -601,28 +601,6 @@ final class Wurfl extends Core
             $apiPhone   = false;
         }
         
-        if (!$apiBro) {
-            $apiDesktop = null;
-            $apiTv      = null;
-            $apiMob     = null;
-            $apiBot     = null;
-            $apiPhone   = null;
-        }
-        
-        $result->setCapability('is_bot', $apiBot);
-        $result->setCapability('is_smarttv', $apiTv);
-        $result->setCapability('ux_full_desktop', $apiDesktop);
-        $result->setCapability('is_wireless_device', $apiMob);
-        $result->setCapability('is_tablet', $apiTab);
-        $result->setCapability('is_transcoder', $apiTranscoder);
-        $result->setCapability('can_assign_phone_number', $apiPhone);
-        
-        if ($apiDev || $apiBro) {
-            $result->setCapability('xhtml_support_level', (int) $xhtmlLevel);
-        }
-        
-        $result->setCapability('wurflKey', $apiKey);
-        
         $type = null;
         
         if ($apiBot) {
@@ -645,6 +623,28 @@ final class Wurfl extends Core
             }
         }
         
+        if (!$apiBro) {
+            $apiDesktop = null;
+            $apiTv      = null;
+            $apiMob     = null;
+            $apiBot     = null;
+            $apiPhone   = null;
+            $type       = null;
+        }
+        
+        $result->setCapability('is_bot', $apiBot);
+        $result->setCapability('is_smarttv', $apiTv);
+        $result->setCapability('ux_full_desktop', $apiDesktop);
+        $result->setCapability('is_wireless_device', $apiMob);
+        $result->setCapability('is_tablet', $apiTab);
+        $result->setCapability('is_transcoder', $apiTranscoder);
+        $result->setCapability('can_assign_phone_number', $apiPhone);
+        
+        if ($apiDev || $apiBro) {
+            $result->setCapability('xhtml_support_level', (int) $xhtmlLevel);
+        }
+        
+        $result->setCapability('wurflKey', $apiKey);
         $result->setCapability('device_type', $type);
         
         return $result;
