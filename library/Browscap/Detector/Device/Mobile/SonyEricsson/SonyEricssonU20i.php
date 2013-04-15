@@ -213,7 +213,10 @@ final class SonyEricssonU20i
     {
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\Safari()
+            new \Browscap\Detector\Browser\Mobile\Safari(),
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -234,7 +237,7 @@ final class SonyEricssonU20i
     {
         $os = array(
             new \Browscap\Detector\Os\Symbianos(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \Browscap\Detector\Os\Android(),
         );
         
         $chain = new \Browscap\Detector\Chain();

@@ -88,11 +88,11 @@ final class SamsungSghi917
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Omnia 7',
+        'marketing_name'            => 'Focus',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'QSD8250', // not in wurfl
         
         // product info
         'can_assign_phone_number'   => true, // wurflkey: samsung_omnia7_ver1_subos75
@@ -152,7 +152,7 @@ final class SamsungSghi917
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SAMSUNG;SGH-i917', 'SAMSUNG; SGH-i917', 'SAMSUNG; OMNIA7'))) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG;SGH-i917', 'SAMSUNG; SGH-i917'))) {
             return false;
         }
         
@@ -210,16 +210,9 @@ final class SamsungSghi917
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\WindowsPhoneOs(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

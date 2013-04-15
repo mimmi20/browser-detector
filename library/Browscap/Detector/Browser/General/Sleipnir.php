@@ -77,7 +77,7 @@ class Sleipnir
         'mobile_browser'              => 'Sleipnir',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Fenrir', // not in wurfl
+        'mobile_browser_manufacturer' => 'Fenrir Inc.', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info

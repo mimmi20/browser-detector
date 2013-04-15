@@ -136,7 +136,6 @@ class MicrosoftInternetExplorer
             'Webkit',
             'KHTML',
             // using also the Trident rendering engine
-            'Avant Browser',
             'Crazy Browser',
             'Flock',
             'Galeon',
@@ -304,6 +303,15 @@ class MicrosoftInternetExplorer
         }
         
         parent::detectDependProperties($engine, $os, $device);
+        
+        $engineVersion = (float)$engine->getCapability('renderingengine_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ($engineVersion >= 5.0) {
+            $engine->setCapability('image_inlining', true);
+            $engine->setCapability('css_spriting', true);
+        }
         
         return $this;
     }

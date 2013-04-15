@@ -168,6 +168,7 @@ class Flock
     {
         $engines = array(
             new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Blink(),
             new \Browscap\Detector\Engine\Gecko()
         );
         

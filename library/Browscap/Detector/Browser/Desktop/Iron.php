@@ -157,4 +157,25 @@ class Iron
     {
         return 360951;
     }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $engines = array(
+            new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Blink()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        
+        return $chain->detect();
+    }
 }

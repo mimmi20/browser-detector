@@ -74,7 +74,7 @@ class ComodoDragon
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Comodo Dragon',
+        'mobile_browser'              => 'Dragon',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Comodo Internet Security', // not in wurfl
@@ -166,9 +166,16 @@ class ComodoDragon
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Blink()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        
+        return $chain->detect();
     }
 }

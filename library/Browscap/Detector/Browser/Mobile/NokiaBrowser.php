@@ -200,6 +200,7 @@ class NokiaBrowser
         $engine->setCapability('ajax_preferred_geoloc_api', 'none');
         $engine->setCapability('jqm_grade', 'B');
         $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('image_inlining', false); // version 8.3
         $engine->setCapability('canvas_support', 'none');
         $engine->setCapability('css_border_image', 'none');
         $engine->setCapability('css_rounded_corners', 'none');

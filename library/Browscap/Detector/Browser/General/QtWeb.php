@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Desktop;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class AvantBrowser
+class QtWeb
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -74,10 +74,10 @@ class AvantBrowser
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Avant Browser',
+        'mobile_browser'              => 'QtWeb Internet Browser',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'LogicWare & LSoft Technologies', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -107,35 +107,34 @@ class AvantBrowser
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Avant Browser', 'AvantBrowser', 'Avant TriCore'))) {
+        if (!$this->_utils->checkIfContains(array('QtWeb Internet Browser'))) {
             return false;
         }
         
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Crazy Browser',
-            'Galeon',
-            'Lunascape',
-            'Maxthon',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            // other Browsers
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Firefox'
-        );
-        
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
+        if ($this->_utils->checkIfContains(array('Arora'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('QtWeb Internet Browser');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
     }
     
     /**
@@ -145,28 +144,20 @@ class AvantBrowser
      */
     public function getWeight()
     {
-        return 189430;
+        return 1098152;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
     public function detectEngine()
     {
-        $engines = array(
-            new \Browscap\Detector\Engine\Webkit(),
-            new \Browscap\Detector\Engine\Gecko(),
-            new \Browscap\Detector\Engine\Trident()
-        );
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

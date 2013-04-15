@@ -125,7 +125,6 @@ class Chrome
             'Comodo Dragon',
             'Google Earth',
             'Arora',
-            'Avant',
             'YaBrowser',
             // Bots trying to be a Chrome
             'PagePeeker',
@@ -178,10 +177,17 @@ class Chrome
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Blink()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        
+        return $chain->detect();
     }
     
     /**

@@ -74,7 +74,7 @@ class ComodoIceDragon
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Comodo IceDragon',
+        'mobile_browser'              => 'IceDragon',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Comodo Internet Security', // not in wurfl

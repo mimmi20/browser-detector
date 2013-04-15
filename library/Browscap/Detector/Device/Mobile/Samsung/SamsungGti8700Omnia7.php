@@ -60,7 +60,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungGtp3113
+final class SamsungGti8700Omnia7
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,12 +70,12 @@ final class SamsungGtp3113
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_p3100_ver1_subua3113', // not in wurfl
+        'wurflKey' => 'samsung_omnia7_ver1_subos75', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => true, // wurflkey: samsung_gt_p3100_ver1_subua3113
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -83,37 +83,37 @@ final class SamsungGtp3113
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT-P3113',
+        'model_name'                => 'GT-I8700',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy Tab 2 7.0', // wurflkey: samsung_gt_p3100_ver1_subua3113
-        'has_qwerty_keyboard'       => true,               // wurflkey: samsung_gt_p3100_ver1_subua3113
+        'marketing_name'            => 'Omnia 7',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => 'ARM11', // not in wurfl
+        'device_cpu'                => 'QSD8250', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: samsung_omnia7_ver1_subos75
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P3113.xml',
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-i8700.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 154,
-        'physical_screen_height' => 90,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 600,
+        'physical_screen_width'  => 49, // wurflkey: samsung_omnia7_ver1_subos75
+        'physical_screen_height' => 82,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 480,
+        'max_image_height'       => 800,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         
         // sms
@@ -152,7 +152,7 @@ final class SamsungGtp3113
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('GT-P3113')) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG; OMNIA7'))) {
             return false;
         }
         
@@ -190,9 +190,8 @@ final class SamsungGtp3113
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -215,30 +214,5 @@ final class SamsungGtp3113
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        if (2.3 >= $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-        
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        
-        return $this;
     }
 }

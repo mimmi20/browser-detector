@@ -87,8 +87,8 @@ final class SamsungSghi957
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Omnia 7',
+        'model_extra_info'          => 'for AT&T',
+        'marketing_name'            => 'Galaxy Tab 8.9',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -152,7 +152,7 @@ final class SamsungSghi957
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SAMSUNG-SGH-I957', 'SAMSUNG;SGH-i957', 'SAMSUNG; SGH-i957', 'SAMSUNG; OMNIA7'))) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG-SGH-I957', 'SAMSUNG;SGH-i957', 'SAMSUNG; SGH-i957'))) {
             return false;
         }
         
@@ -210,16 +210,9 @@ final class SamsungSghi957
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\WindowsPhoneOs(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

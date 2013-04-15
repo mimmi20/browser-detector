@@ -74,10 +74,10 @@ class Qt
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'QtWeb Internet Browser',
+        'mobile_browser'              => 'Qt',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'LogicWare & LSoft Technologies', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -111,7 +111,7 @@ class Qt
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Arora'))) {
+        if ($this->_utils->checkIfContains(array('Arora', 'QtWeb Internet Browser'))) {
             return false;
         }
         
