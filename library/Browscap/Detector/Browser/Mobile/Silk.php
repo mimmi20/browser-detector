@@ -184,7 +184,7 @@ class Silk
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
-        $browserVersion = $browser->getCapability('mobile_browser_version')->getVersion(
+        $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(
             Version::MAJORMINOR
         );
         
@@ -192,7 +192,7 @@ class Silk
             $engine->setCapability('xhtml_preferred_charset', 'utf8');
             $engine->setCapability('max_url_length_in_requests', 128);
             $engine->setCapability('ajax_preferred_geoloc_api', 'none');
-            $browser->setCapability('pdf_support', false);
+            $this->setCapability('pdf_support', false);
             $engine->setCapability('is_sencha_touch_ok', true);
             // $engine->setCapability('ajax_preferred_geoloc_api', 'none');
             // $engine->setCapability('ajax_preferred_geoloc_api', 'none');
