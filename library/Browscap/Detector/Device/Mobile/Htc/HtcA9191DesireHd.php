@@ -83,7 +83,7 @@ final class HtcA9191DesireHd
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'A9191',
+        'model_name'                => 'Desire HD',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
@@ -152,7 +152,7 @@ final class HtcA9191DesireHd
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('HTC_DesireHD_A9191', 'HTC Desire HD A9191'))) {
+        if (!$this->_utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD', 'Desire HD'))) {
             return false;
         }
         
