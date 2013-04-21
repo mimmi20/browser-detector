@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -83,19 +80,19 @@ final class MotorolaDroidBionic4G
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'DROID BIONIC 4G',
+        'model_name'                => 'Droid Bionic 4G',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Droid Bionic Targa',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,9 +109,9 @@ final class MotorolaDroidBionic4G
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,

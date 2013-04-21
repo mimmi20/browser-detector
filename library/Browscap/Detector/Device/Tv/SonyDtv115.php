@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -154,7 +151,7 @@ final class SonyDtv115
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('KDL40EX720', 'KDL37EX720'))) {
+        if ($this->_utils->checkIfContains(array('KDL40EX720', 'KDL37EX720', 'KDL32HX755'))) {
             return false;
         }
         

@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -90,12 +87,12 @@ final class HtcMdaVarioIii
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
+        'pointing_method'           => 'stylus',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,9 +109,9 @@ final class HtcMdaVarioIii
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
@@ -190,9 +187,7 @@ final class HtcMdaVarioIii
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -212,7 +207,7 @@ final class HtcMdaVarioIii
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WindowsMobileOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

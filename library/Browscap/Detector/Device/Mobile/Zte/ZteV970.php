@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /*
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

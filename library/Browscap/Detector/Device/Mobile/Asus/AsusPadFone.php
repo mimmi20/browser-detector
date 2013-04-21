@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -83,7 +80,7 @@ final class AsusPadFone
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'ASUS-PadFone',
+        'model_name'                => 'PadFone',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Asus',
         'brand_name'                => 'Asus',

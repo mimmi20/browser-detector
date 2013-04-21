@@ -77,7 +77,7 @@ class Sosospider
         'mobile_browser'              => 'Sosospider',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'soso.com', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info

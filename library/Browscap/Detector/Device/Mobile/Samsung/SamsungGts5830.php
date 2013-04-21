@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -247,8 +244,20 @@ final class SamsungGts5830
             Version::MAJORMINOR
         );
         
-        if (2.2 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban22');
+        switch ((float) $osVersion) {
+            case 2.2:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban22');
+                break;
+            case 2.3:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban23');
+                break;
+            case 4.0:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban40');
+                break;
+            case 4.1:
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

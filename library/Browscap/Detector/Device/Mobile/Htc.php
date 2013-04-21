@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -182,7 +179,10 @@ final class Htc
             'APA9292KT',
             'APA7373KT',
             'APX515CKT',
-            ' a315c '
+            ' a315c ',
+            'Nexus One',
+            'NexusOne',
+            'Nexus-One'
         );
         
         if ($this->_utils->checkIfContains($htcPhones)) {

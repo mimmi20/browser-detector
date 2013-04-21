@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -156,7 +153,7 @@ final class HtcOne
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('HTC One ', 'HTC_One_', 'HTC/One_', 'HTC_OneX'))) {
+        if ($this->_utils->checkIfContains(array('HTC One ', 'HTC_One_', 'HTC/One_', 'HTC_OneX', 'HTC_OneS'))) {
             return false;
         }
         

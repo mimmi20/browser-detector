@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -152,7 +149,7 @@ final class Mobistel
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Cynus T1')) {
+        if (!$this->_utils->checkIfContains('Cynus')) {
             return false;
         }
         

@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -155,6 +152,8 @@ final class SonyEricsson
         $sonyPhones = array(
             'sonyericsson',
             'sony',
+            'c6602',
+            'c6603',
             'e10i',
             'e15i',
             'e15av',

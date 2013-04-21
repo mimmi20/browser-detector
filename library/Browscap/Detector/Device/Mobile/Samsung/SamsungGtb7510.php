@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -95,7 +92,7 @@ final class SamsungGtb7510
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -114,7 +111,7 @@ final class SamsungGtb7510
         'max_image_height'       => null,
         'resolution_width'       => 240,
         'resolution_height'      => 320,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,

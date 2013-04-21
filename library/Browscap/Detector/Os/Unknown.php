@@ -49,9 +49,6 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

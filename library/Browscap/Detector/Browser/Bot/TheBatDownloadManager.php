@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Msnbot
+class TheBatDownloadManager
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -74,10 +74,10 @@ class Msnbot
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'msnbot',
+        'mobile_browser'              => 'The Bat Download Manager',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Microsoft', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -103,7 +103,7 @@ class Msnbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('msnbot', 'adidxbot', 'msnbot-media'))) {
+        if (!$this->_utils->checkIfContains(array('thebat'))) {
             return false;
         }
         
@@ -120,7 +120,7 @@ class Msnbot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('adidxbot', 'msnbot', 'msnbot\-media');
+        $searches = array('thebat');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

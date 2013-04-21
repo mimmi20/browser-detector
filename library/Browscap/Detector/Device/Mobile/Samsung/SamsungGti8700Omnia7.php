@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -210,7 +207,7 @@ final class SamsungGti8700Omnia7
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
+        $handler = new \Browscap\Detector\Os\WindowsPhoneOs();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

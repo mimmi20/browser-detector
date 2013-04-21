@@ -404,6 +404,11 @@ final class Wurfl extends Core
                     break;
                 case 'opera mobi':
                     $apiBro = 'Opera Mobile';
+                    $apiVer = '';
+                    break;
+                case 'opera tablet':
+                    $apiBro = 'Opera Tablet';
+                    $apiVer = '';
                     break;
                 case 'chrome mobile':
                 case 'chrome':
@@ -421,6 +426,7 @@ final class Wurfl extends Core
                     break;
                 case 'opera':
                     $apiBro = 'Opera';
+                    $apiVer = '';
                     break;
                 case 'konqueror':
                     $apiBro = 'Konqueror';
@@ -469,11 +475,6 @@ final class Wurfl extends Core
                 case 'facebook bot':
                     $apiDesktop = false;
                     $apiBot     = true;
-                    break;
-                case 'chrome':
-                    if ($apiVer == '2.0') {
-                        $apiVer = '';
-                    }
                     break;
                 case 'generic web browser':
                 case 'robot bot or crawler':
@@ -645,6 +646,24 @@ final class Wurfl extends Core
         
         if ($apiDev || $apiBro) {
             $result->setCapability('xhtml_support_level', (int) $xhtmlLevel);
+        }
+        
+        if (($type == 'Mobile Phone' || $type == 'Tablet')
+            && 'true' === $device->getCapability('dual_orientation')
+        ) {
+            $width  = (int) $device->getCapability('resolution_width');
+            $height = (int) $device->getCapability('resolution_height');
+            
+            if ($type == 'Mobile Phone') {
+                $result->setCapability('resolution_width', min($height, $width));
+                $result->setCapability('resolution_height', max($height, $width));
+            } elseif ($type == 'Tablet') {
+                $result->setCapability('resolution_width', max($height, $width));
+                $result->setCapability('resolution_height', min($height, $width));
+            } else {
+                $result->setCapability('resolution_width', $width);
+                $result->setCapability('resolution_height', $height);
+            }
         }
         
         $result->setCapability('wurflKey', $apiKey);

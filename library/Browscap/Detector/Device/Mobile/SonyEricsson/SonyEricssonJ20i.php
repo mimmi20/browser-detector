@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -190,7 +187,14 @@ final class SonyEricssonJ20i
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\NetFront()
+            new \Browscap\Detector\Browser\Mobile\Openwave(),
+            new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
+            new \Browscap\Detector\Browser\Mobile\NetFront(),
+            new \Browscap\Detector\Browser\Mobile\Phantom(),
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -209,16 +213,9 @@ final class SonyEricssonJ20i
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Java(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Java();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

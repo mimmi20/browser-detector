@@ -55,9 +55,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -197,25 +194,22 @@ final class GeneralDesktop
             return true;
         }
         
-        if ($this->_utils->checkIfContains(array('iMac', 'eeepc', 'MacBookPro', 'MacBookAir', 'MacBook', 'Macmini'))) {
-            return true;
-        }
-        
         $mac = array(
-            'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac', 
-            'PPC Mac', 'Mac OS X'
+            'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac',
+            'PPC Mac', 'Mac OS X', 'iMac', 'MacBookPro', 'MacBookAir',
+            'MacBook', 'Macmini'
         );
         
         if ($this->_utils->checkIfContains($mac)) {
             return true;
         }
         
-        $otherDesktops = array(
+        $others = array(
             'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
-            'google desktop'
+            'google desktop', 'eeepc', 'dillo', 'konqueror'
         );
         
-        if ($this->_utils->checkIfContains($otherDesktops, true)) {
+        if ($this->_utils->checkIfContains($others, true)) {
             return true;
         }
         

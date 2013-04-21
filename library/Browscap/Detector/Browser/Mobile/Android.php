@@ -278,8 +278,9 @@ class Android
             $engine->setCapability('bmp', true);
         }
         
-        if ($this->_utils->checkIfContains('(Linux; U;')
-            && !$this->_utils->checkIfContains('Android')
+        if (($this->_utils->checkIfContains('(Linux; U;')
+            && !$this->_utils->checkIfContains('Android'))
+            || $this->_utils->checkIfContains('Max OS X')
         ) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }

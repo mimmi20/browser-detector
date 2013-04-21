@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -88,14 +85,14 @@ final class Nokia6303iclassic
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
+        'marketing_name'            => 'Classic',
+        'has_qwerty_keyboard'       => false,
+        'pointing_method'           => null,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -112,9 +109,9 @@ final class Nokia6303iclassic
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
@@ -190,7 +187,9 @@ final class Nokia6303iclassic
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser()
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -209,16 +208,9 @@ final class Nokia6303iclassic
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Symbianos(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Symbianos();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

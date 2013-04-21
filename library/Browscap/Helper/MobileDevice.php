@@ -71,6 +71,7 @@ final class MobileDevice
         'cldc',
         'dalvik',
         'danger hiptop',
+        'eeepc',
         'embider',
         'fennec',
         'firefox or ie',

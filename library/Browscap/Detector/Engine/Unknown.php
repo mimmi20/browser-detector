@@ -45,9 +45,6 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\MatcherInterface;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>

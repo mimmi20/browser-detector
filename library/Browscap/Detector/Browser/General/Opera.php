@@ -171,7 +171,7 @@ class Opera
         $chain = new \Browscap\Detector\Chain();
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Presto());
         
         return $chain->detect();
     }

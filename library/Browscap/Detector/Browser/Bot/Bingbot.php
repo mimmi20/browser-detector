@@ -103,7 +103,7 @@ class Bingbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('bingbot/', 'Bing/', 'Bing for iPad/'))) {
+        if (!$this->_utils->checkIfContains(array('bingbot/', 'Bing/', 'Bing for iPad/', 'msnbot', 'adidxbot', 'msnbot-media'))) {
             return false;
         }
         
@@ -124,7 +124,7 @@ class Bingbot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('bingbot', 'Bing', 'Bing for iPad');
+        $searches = array('bingbot', 'Bing', 'Bing for iPad', 'adidxbot', 'msnbot', 'msnbot\-media');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

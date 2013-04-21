@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -157,6 +154,7 @@ final class Asus
             'Transformer',
             'Slider SL101',
             'eee_701',
+            'eeepc',
             'Nexus 7',
             'PadFone'
         );

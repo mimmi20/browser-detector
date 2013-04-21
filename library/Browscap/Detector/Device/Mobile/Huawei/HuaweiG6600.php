@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -190,7 +187,14 @@ final class HuaweiG6600
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Openwave(),
             new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
+            new \Browscap\Detector\Browser\Mobile\NetFront(),
+            new \Browscap\Detector\Browser\Mobile\Phantom(),
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
         );
         
         $chain = new \Browscap\Detector\Chain();

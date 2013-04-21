@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -51,16 +51,13 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungGalaxyNexusOne
+final class SonyEricssonR800a
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,7 +67,7 @@ final class SamsungGalaxyNexusOne
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_R800a_ver1_suban233', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -83,37 +80,37 @@ final class SamsungGalaxyNexusOne
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Nexus One',
+        'model_name'                => 'R800a',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Google',
+        'manufacturer_name'         => 'SonyEricsson',
+        'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xperia PLAY',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Cortex-A8', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => true, // wurflkey: sonyericsson_R800a_ver1_suban233
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/R800aR401.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 100,
-        'columns'                => 15,
-        'rows'                   => 12,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 44,
+        'rows'                   => 32,
         'max_image_width'        => 320,
-        'max_image_height'       => 720,
+        'max_image_height'       => 400,
         'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_height'      => 854,
         'dual_orientation'       => true,
         
         // sms
@@ -152,7 +149,11 @@ final class SamsungGalaxyNexusOne
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Nexus One', 'NexusOne', 'Nexus-One'))) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonR800a', 'R800a'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('SonyEricssonR800av', 'R800av'))) {
             return false;
         }
         
@@ -222,5 +223,22 @@ final class SamsungGalaxyNexusOne
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

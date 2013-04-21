@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -175,7 +172,7 @@ final class Samsung
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Asus', 'U30GT', 'Nexus 7', 'Nexus 4', 'NexusHD2'))) {
+        if ($this->_utils->checkIfContains(array('Asus', 'U30GT', 'Nexus 7', 'Nexus 4', 'NexusHD2', 'Nexus One', 'NexusOne', 'Nexus-One'))) {
             return false;
         }
         

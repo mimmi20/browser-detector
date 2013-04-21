@@ -157,9 +157,17 @@ class OperaTablet
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Presto();
-        $handler->setUseragent($this->_useragent);
+        $engines = array(
+            new \Browscap\Detector\Engine\Presto(),
+            new \Browscap\Detector\Engine\Webkit(),
+            new \Browscap\Detector\Engine\Blink()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Presto());
+        
+        return $chain->detect();
     }
 }

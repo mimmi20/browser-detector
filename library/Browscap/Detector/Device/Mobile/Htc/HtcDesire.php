@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -157,7 +154,7 @@ final class HtcDesire
         }
         
         $specialHtcDesire = array(
-            'DesireS', 'A7272', 'A8181', 'A9191', 'Desire_C'
+            'DesireS', 'A7272', 'A8181', 'A9191', 'Desire_C', 'Desire Z'
         );
         
         if ($this->_utils->checkIfContains($specialHtcDesire)) {

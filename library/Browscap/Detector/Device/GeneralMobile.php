@@ -52,9 +52,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -90,8 +87,8 @@ final class GeneralMobile
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => null,
-        'pointing_method'           => null,
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
@@ -270,8 +267,8 @@ final class GeneralMobile
             $this->setCapability('rows', 40);
             $this->setCapability('max_image_width', 480);
             $this->setCapability('max_image_height', 640);
-            $this->setCapability('resolution_width', 480);
-            $this->setCapability('resolution_height', 640);
+            $this->setCapability('resolution_width', 480); // 1280 bei Ver 11, Android 3.2
+            $this->setCapability('resolution_height', 640); // 768 bei Ver 11, Android 3.2
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
             

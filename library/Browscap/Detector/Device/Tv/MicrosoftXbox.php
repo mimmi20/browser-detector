@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -187,10 +184,18 @@ final class MicrosoftXbox
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Windows();
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            new \Browscap\Detector\Os\WindowsPhoneOs(),
+            new \Browscap\Detector\Os\Windows()
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
     }
     
     /**

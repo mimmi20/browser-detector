@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -192,6 +189,7 @@ final class AmazonKftt
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Silk(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

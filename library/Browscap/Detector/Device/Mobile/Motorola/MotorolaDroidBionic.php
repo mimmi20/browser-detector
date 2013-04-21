@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -83,7 +80,7 @@ final class MotorolaDroidBionic
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'DROID BIONIC',
+        'model_name'                => 'Droid Bionic',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
@@ -153,6 +150,10 @@ final class MotorolaDroidBionic
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array(' Droid-Bionic ', ' DROID BIONIC '))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('DROID BIONIC 4G')) {
             return false;
         }
         

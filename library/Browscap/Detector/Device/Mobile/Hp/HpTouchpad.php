@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -191,6 +188,9 @@ final class HpTouchpad
     {
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\WebkitWebos(),
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         
@@ -212,6 +212,7 @@ final class HpTouchpad
     {
         $os = array(
             new \Browscap\Detector\Os\WebOs(),
+            new \Browscap\Detector\Os\Android(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

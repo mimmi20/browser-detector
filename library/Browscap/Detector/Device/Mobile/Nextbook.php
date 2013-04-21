@@ -51,16 +51,13 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class NextbookM803hc
+final class Nextbook
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,7 +80,7 @@ final class NextbookM803hc
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'M803HC',
+        'model_name'                => 'general Nextbook Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nextbook',
         'brand_name'                => 'Nextbook',
@@ -117,7 +114,7 @@ final class NextbookM803hc
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -142,7 +139,7 @@ final class NextbookM803hc
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**
@@ -152,7 +149,7 @@ final class NextbookM803hc
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('DATAM803HC')) {
+        if (!$this->_utils->checkIfContains(array('Nextbook', 'DATAM803HC'))) {
             return false;
         }
         
@@ -178,7 +175,15 @@ final class NextbookM803hc
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Nextbook');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Nextbook' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**

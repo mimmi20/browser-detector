@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -190,9 +187,7 @@ final class HpP160U
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\WebkitWebos()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -212,7 +207,7 @@ final class HpP160U
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\WebOs(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         
@@ -222,5 +217,24 @@ final class HpP160U
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
+        
+        $searches = array('P160U');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
+        return $this;
     }
 }
