@@ -171,6 +171,7 @@ final class HtcZ710
             // Z715e
             'HTC Sensation XE with Beats Audio',
             'HTC Sensation XE with Beats Audio Z715e',
+            'HTC_SensationXE_Beats_Z715e',
             // Z710e
             'HTC Sensation Z710e',
             'HTC_Sensation_Z710e',

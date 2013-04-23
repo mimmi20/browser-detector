@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SonyEricsson
+final class SamsungGti9105p
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,7 +67,7 @@ final class SonyEricsson
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i9105p_ver1_suban40nosam', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -80,38 +80,38 @@ final class SonyEricsson
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'general SonyEricsson Device',
+        'model_name'                => 'GT-I9105P',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
+        'manufacturer_name'         => 'Samsung',
+        'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9105p_ver1_suban40nosam
+        'has_qwerty_keyboard'       => true,              // wurflkey: samsung_gt_i9105p_ver1_suban40nosam
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I9105P.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 56,
+        'physical_screen_height' => 94,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 800,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,
@@ -149,51 +149,21 @@ final class SonyEricsson
      */
     public function canHandle()
     {
-        $sonyPhones = array(
-            'sonyericsson',
-            'sony',
-            'c6602',
-            'c6603',
-            'e10i',
-            'e15i',
-            'e15av',
-            'ebrd1',
-            'lt15i',
-            'lt18',
-            'lt18i',
-            'lt22i',
-            'lt26i',
-            'lt28h',
-            'lt30p',
-            'mk16i',
-            'mt11i',
-            'mt15i',
-            'mt27i',
-            'nexushd2',
-            'r800i',
-            's312',
-            'sk17i',
-            'sgpt12',
-            'st18i',
-            'st21i',
-            'st25i',
-            'st26i',
-            'u20i',
-            'w508a',
-            'w760i',
-            'wt13i',
-            'x1i',
-            'x10',
-            'xst2',
-            'playstation',
-            'psp'
-        );
-        
-        if ($this->_utils->checkIfContains($sonyPhones, true)) {
-            return true;
+        if (!$this->_utils->checkIfContains('GT-I9105P')) {
+            return false;
         }
         
-        return false;
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -205,52 +175,7 @@ final class SonyEricsson
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\SonyEricsson');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1633866;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            new \Browscap\Detector\Os\Bada(),
-            new \Browscap\Detector\Os\Brew(),
-            new \Browscap\Detector\Os\Java(),
-            new \Browscap\Detector\Os\Symbianos(),
-            new \Browscap\Detector\Os\WindowsMobileOs(),
-            new \Browscap\Detector\Os\WindowsPhoneOs(),
-            new \Browscap\Detector\Os\Linux()
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -271,6 +196,27 @@ final class SonyEricsson
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new \Browscap\Detector\Os\Android(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
         
         return $chain->detect();
     }

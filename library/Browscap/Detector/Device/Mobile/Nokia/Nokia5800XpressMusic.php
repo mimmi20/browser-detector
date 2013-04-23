@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Nokia;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class IntensoTab803
+final class Nokia5800XpressMusic
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,12 +67,12 @@ final class IntensoTab803
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_5800d_ver1_sub500005', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,41 +80,41 @@ final class IntensoTab803
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Tab 803',
+        'model_name'                => '5800 XpressMusic',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Intenso',
-        'brand_name'                => 'Intenso',
+        'manufacturer_name'         => 'Nokia',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Tab 803',
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'XpressMusic',
+        'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/Nokia5800d-1r100-3G.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/N5800XpressMusicr100-2G.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 800,
-        'resolution_height'      => 600,
+        'physical_screen_width'  => 53,
+        'physical_screen_height' => 62,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class IntensoTab803
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**
@@ -149,11 +149,21 @@ final class IntensoTab803
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('INM803HC')) {
+        if (!$this->_utils->checkIfContains('Nokia5800d')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -169,16 +179,6 @@ final class IntensoTab803
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-    
-    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
@@ -187,9 +187,10 @@ final class IntensoTab803
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\Ucweb()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -208,16 +209,9 @@ final class IntensoTab803
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Symbianos();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

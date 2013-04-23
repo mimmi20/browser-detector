@@ -103,7 +103,7 @@ class Naver
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('NAVER'))) {
+        if (!$this->_utils->checkIfContains(array('NAVER', 'Yeti', 'help.naver.com'))) {
             return false;
         }
         
@@ -120,7 +120,7 @@ class Naver
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Naver');
+        $searches = array('Naver', 'Yeti');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

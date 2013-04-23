@@ -67,7 +67,7 @@ final class SonyEricssonU5i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_u5i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -86,10 +86,10 @@ final class SonyEricssonU5i
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
         'marketing_name'            => 'Vivaz',
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'has_qwerty_keyboard'       => false, // wurflkey: sonyericsson_u5i_ver1
+        'pointing_method'           => null,  // wurflkey: sonyericsson_u5i_ver1
+        'device_bits'               => null,  // not in wurfl
+        'device_cpu'                => null,  // not in wurfl
         
         // product info
         'can_assign_phone_number'   => true,
@@ -97,7 +97,7 @@ final class SonyEricssonU5i
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.sonyericsson.com/downloads/U5iR000.xml', // wurflkey: sonyericsson_u5i_ver1
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -195,7 +195,7 @@ final class SonyEricssonU5i
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\NokiaBrowser());
         
         return $chain->detect();
     }
@@ -212,5 +212,23 @@ final class SonyEricssonU5i
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        if ('Symbian OS' == $os->getCapability('device_os')) {
+            $browser->setCapability('pdf_support', false);
+        }
+        
+        return $this;
     }
 }

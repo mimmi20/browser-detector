@@ -152,7 +152,8 @@ final class Odys
         $odysPhones = array(
             'odys',
             'loox plus',
-            ' genesis '
+            ' genesis ',
+            ' noon '
         );
         
         if ($this->_utils->checkIfContains($odysPhones, true)) {

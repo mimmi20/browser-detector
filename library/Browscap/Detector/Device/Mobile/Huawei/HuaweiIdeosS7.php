@@ -67,7 +67,7 @@ final class HuaweiIdeosS7
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_ideos_s7_ver1_subenus', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -97,7 +97,7 @@ final class HuaweiIdeosS7
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.huawei.com/uaprof/Huawei-S7.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -114,7 +114,7 @@ final class HuaweiIdeosS7
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class HuaweiIdeosS7
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

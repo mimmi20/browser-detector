@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MsieCrawler
+class GrapeshotCrawler
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -74,10 +74,10 @@ class MsieCrawler
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'MSIECrawler',
+        'mobile_browser'              => 'Grapeshot Crawler',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'www.grapeshot.co.uk', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -103,7 +103,7 @@ class MsieCrawler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('MSIECrawler', 'Crawler; MSIE'))) {
+        if (!$this->_utils->checkIfContains(array('GrapeshotCrawler'))) {
             return false;
         }
         
@@ -120,7 +120,7 @@ class MsieCrawler
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('MSIECrawler');
+        $searches = array('GrapeshotCrawler');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3

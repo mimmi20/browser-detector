@@ -67,7 +67,7 @@ final class SonyEricssonX10iv
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_x10iv_ver1_suban21', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -85,7 +85,7 @@ final class SonyEricssonX10iv
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xperia X10',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -97,7 +97,7 @@ final class SonyEricssonX10iv
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/X10iR202.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

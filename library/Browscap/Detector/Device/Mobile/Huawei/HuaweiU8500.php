@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Huawei;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class MultipadPmp5080b
+final class HuaweiU8500
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,12 +67,12 @@ final class MultipadPmp5080b
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'multipad_pmp5080b_ver1_suban40', // not in wurfl
+        'wurflKey' => 'huawei_u8500_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false, // wurflkey: huawei_u8500_ver1
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,41 +80,41 @@ final class MultipadPmp5080b
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'PMP5080B',
+        'model_name'                => 'U8500',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Multipad',
-        'brand_name'                => 'Multipad', // wurflkey: multipad_pmp5080b_ver1_suban40
+        'manufacturer_name'         => 'Huawei',
+        'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'U8500', // wurflkey: huawei_u8500_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap1.huawei.com/uaprof/HuaweiU8300v100WCDMANormal.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 122,
-        'physical_screen_height' => 163,
-        'columns'                => 60,
-        'rows'                   => 40,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 600,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class MultipadPmp5080b
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**
@@ -149,7 +149,7 @@ final class MultipadPmp5080b
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('PMP5080B')) {
+        if (!$this->_utils->checkIfContains(array('HuaweiU8500', 'U8500'))) {
             return false;
         }
         
@@ -219,5 +219,21 @@ final class MultipadPmp5080b
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

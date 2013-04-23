@@ -67,7 +67,7 @@ final class Lgt385
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_t385_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,8 +97,8 @@ final class Lgt385
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://gsm.lge.com/html/gsm/LG-T385.xml',
+        'uaprof2'                   => 'http://gsm.lge.com/html/gsm/LG-T385b-M3-D1.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         

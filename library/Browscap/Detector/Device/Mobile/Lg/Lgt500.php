@@ -67,7 +67,7 @@ final class Lgt500
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_t500_ver1_subua', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class Lgt500
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://gsm.lge.com/html/gsm/LG-T500-M3-D1.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

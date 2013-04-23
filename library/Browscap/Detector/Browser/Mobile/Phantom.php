@@ -88,7 +88,7 @@ class Phantom
         'device_claims_web_support' => false,
         
         // pdf
-        'pdf_support' => true,
+        'pdf_support' => false,
         
         // bugs
         'empty_option_value_support' => true,
@@ -150,15 +150,23 @@ class Phantom
      */
     public function detectEngine()
     {
-        $engines = array(
-            new \Browscap\Detector\Engine\Webkit()
-        );
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        $engine->setCapability('https_support', true);
         
-        return $chain->detect();
+        return $this;
     }
 }

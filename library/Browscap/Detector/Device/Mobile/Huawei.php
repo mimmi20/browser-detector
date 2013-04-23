@@ -157,7 +157,9 @@ final class Huawei
             'U8850',
             'U8180',
             'U8650',
+            'U8500',
             'U8510',
+            'u8800',
             'Vodafone 858',
             'Vodafone 845'
         );

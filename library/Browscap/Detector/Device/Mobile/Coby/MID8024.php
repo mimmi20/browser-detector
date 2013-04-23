@@ -67,7 +67,7 @@ final class MID8024
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'coby_mid8024_ver1_suban23', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -114,7 +114,7 @@ final class MID8024
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class MID8024
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

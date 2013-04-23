@@ -153,6 +153,10 @@ final class Nokia5800
             return false;
         }
         
+        if ($this->_utils->checkIfContains('Nokia5800d')) {
+            return false;
+        }
+        
         return true;
     }
     

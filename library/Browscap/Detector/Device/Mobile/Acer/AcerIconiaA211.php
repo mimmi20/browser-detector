@@ -114,7 +114,7 @@ final class AcerIconiaA211
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class AcerIconiaA211
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**
@@ -231,6 +231,15 @@ final class AcerIconiaA211
             // $this->setCapability('resolution_width', 640);
             $this->setCapability('resolution_height', 768);
             $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml');
+        }
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if (4.1 == (float) $osVersion) {
+            $this->setCapability('uaprof', 'https://support.acer.com/UAprofile/Acer_A211_JRO03H_Profile.xml');
+            $this->setCapability('wurflKey', 'acer_iconia_tab_a211_ver1_suban41');
         }
         
         parent::detectDependProperties($browser, $engine, $os);

@@ -154,6 +154,7 @@ final class Lg
             'LG/',
             'LG',
             'Optimus-',
+            'Optimus 2X',
             ' p990 ',
             ' GT540 ',
             ' GT-540 ',

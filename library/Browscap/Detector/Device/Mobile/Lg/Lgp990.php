@@ -149,7 +149,7 @@ final class Lgp990
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('LG-P990', ' p990 '))) {
+        if (!$this->_utils->checkIfContains(array('LG-P990', ' p990 ', 'Optimus 2X'))) {
             return false;
         }
         

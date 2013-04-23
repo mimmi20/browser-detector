@@ -149,7 +149,7 @@ final class OdysNoon
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('ODYS-NOON')) {
+        if (!$this->_utils->checkIfContains(array('ODYS-NOON', ' noon '))) {
             return false;
         }
         

@@ -149,7 +149,7 @@ final class NokiaSeries60
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Series 60', 'S60')) {
+        if (!$this->_utils->checkIfContains('Series 60', 'S60; SymbOS', 'S60')) {
             return false;
         }
         
@@ -163,7 +163,7 @@ final class NokiaSeries60
      */
     public function getWeight()
     {
-        return 3;
+        return 4;
     }
     
     /**

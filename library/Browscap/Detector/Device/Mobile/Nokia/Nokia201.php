@@ -67,7 +67,7 @@ final class Nokia201
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_201_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class Nokia201
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/Nokia201r100.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

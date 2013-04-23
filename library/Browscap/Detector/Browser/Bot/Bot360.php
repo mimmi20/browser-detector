@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class MsieCrawler
+class Bot360
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -74,10 +74,10 @@ class MsieCrawler
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'MSIECrawler',
+        'mobile_browser'              => '360Spider',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => null, // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -103,11 +103,21 @@ class MsieCrawler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('MSIECrawler', 'Crawler; MSIE'))) {
+        if (!$this->_utils->checkIfContains(array('360Spider'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -120,7 +130,7 @@ class MsieCrawler
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('MSIECrawler');
+        $searches = array('360Spider');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -130,12 +140,16 @@ class MsieCrawler
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return integer
+     * @return null|\Browscap\Os\Handler
      */
-    public function getWeight()
+    public function detectEngine()
     {
-        return 3;
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

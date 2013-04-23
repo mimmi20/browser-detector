@@ -97,7 +97,7 @@ final class SonyEricssonU1i
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/U1iR000.xml', // wurflkey: sonyericsson_u1i_ver1
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -199,7 +199,7 @@ final class SonyEricssonU1i
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\NokiaBrowser());
         
         return $chain->detect();
     }
@@ -216,5 +216,23 @@ final class SonyEricssonU1i
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        if ('Symbian OS' == $os->getCapability('device_os')) {
+            $browser->setCapability('pdf_support', false);
+        }
+        
+        return $this;
     }
 }

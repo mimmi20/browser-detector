@@ -67,12 +67,12 @@ final class ArchosA70HB
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'archos_a70hb_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -85,7 +85,7 @@ final class ArchosA70HB
         'manufacturer_name'         => 'Archos',
         'brand_name'                => 'Archos',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'A70HB',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -114,7 +114,7 @@ final class ArchosA70HB
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class ArchosA70HB
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

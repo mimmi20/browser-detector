@@ -67,7 +67,7 @@ final class BlackBerry9790
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9790_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -85,7 +85,7 @@ final class BlackBerry9790
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'BlackBerry Bold 9790',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'clickwheel',
         'device_bits'               => null, // not in wurfl
@@ -97,7 +97,7 @@ final class BlackBerry9790
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9790_umts/7.0',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

@@ -67,7 +67,7 @@ final class BlackBerry9300
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9300_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,9 +97,9 @@ final class BlackBerry9300
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_umts/5.0',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_80211g/5',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_edge/5.0',
         'unique'                    => false,
         
         // display
@@ -111,7 +111,7 @@ final class BlackBerry9300
         'max_image_height'       => 200,
         'resolution_width'       => 320,
         'resolution_height'      => 240,
-        'dual_orientation'       => null,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
