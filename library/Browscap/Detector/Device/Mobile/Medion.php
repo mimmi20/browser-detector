@@ -165,7 +165,7 @@ final class Medion
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -171,7 +171,7 @@ final class SamsungGti8350OmniaW
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

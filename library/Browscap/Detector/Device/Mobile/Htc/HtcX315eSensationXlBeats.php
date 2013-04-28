@@ -179,7 +179,7 @@ final class HtcX315eSensationXlBeats
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

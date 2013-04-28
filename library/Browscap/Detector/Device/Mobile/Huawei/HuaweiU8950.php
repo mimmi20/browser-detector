@@ -153,6 +153,10 @@ final class HuaweiU8950
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('HuaweiU8950N', 'U8950N'))) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -171,7 +175,7 @@ final class HuaweiU8950
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

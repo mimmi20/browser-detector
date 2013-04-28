@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Zopo;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class WindowsRt8Tablet
+final class ZopoZp980
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,12 +67,12 @@ final class WindowsRt8Tablet
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'windows_8_rt_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => true,
+        'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,19 +80,19 @@ final class WindowsRt8Tablet
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Windows RT Tablet',
+        'model_name'                => 'ZP980',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Microsoft',
-        'brand_name'                => 'Microsoft',
+        'manufacturer_name'         => 'Zopo',
+        'brand_name'                => 'Zopo',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false, // windows_8_rt_ver1
+        'marketing_name'            => 'ZP980 SCORPIO',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'ARM Quad-Core Cortex A7 1,2 GHz', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,18 +103,18 @@ final class WindowsRt8Tablet
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 80,
-        'rows'                   => 20,
-        'max_image_width'        => 1280,
-        'max_image_height'       => 800,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
         'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class WindowsRt8Tablet
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**
@@ -149,23 +149,11 @@ final class WindowsRt8Tablet
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Windows NT 6.2; ARM;')) {
+        if (!$this->_utils->checkIfContains(array(' ZP980 '))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return Stdfinal class
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**
@@ -179,17 +167,15 @@ final class WindowsRt8Tablet
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * detects the device name from the given user agent
      *
-     * @return null|\Browscap\Os\Handler
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    public function detectOs()
+    public function detectDevice()
     {
-        $handler = new \Browscap\Detector\Os\Windows();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return $this;
     }
     
     /**
@@ -201,14 +187,36 @@ final class WindowsRt8Tablet
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
-            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new \Browscap\Detector\Os\Android(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
         
         return $chain->detect();
     }

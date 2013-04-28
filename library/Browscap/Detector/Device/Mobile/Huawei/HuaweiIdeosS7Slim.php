@@ -171,7 +171,7 @@ final class HuaweiIdeosS7Slim
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

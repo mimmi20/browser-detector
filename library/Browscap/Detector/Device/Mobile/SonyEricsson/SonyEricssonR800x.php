@@ -171,7 +171,7 @@ final class SonyEricssonR800x
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

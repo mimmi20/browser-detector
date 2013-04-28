@@ -171,7 +171,7 @@ final class AlcatelOt903d
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

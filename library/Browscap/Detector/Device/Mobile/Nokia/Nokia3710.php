@@ -171,7 +171,7 @@ final class Nokia3710
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

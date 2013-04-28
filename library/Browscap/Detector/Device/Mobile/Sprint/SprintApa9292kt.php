@@ -161,7 +161,7 @@ final class SprintApa9292kt
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

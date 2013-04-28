@@ -171,7 +171,7 @@ final class SonyEricssonLT18iv
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

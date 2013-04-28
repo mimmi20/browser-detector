@@ -171,7 +171,7 @@ final class SonyEricssonWT19iv
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

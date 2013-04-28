@@ -67,7 +67,7 @@ final class BlackBerry9220
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9220_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class BlackBerry9220
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9220_edge/7.1',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -109,9 +109,9 @@ final class BlackBerry9220
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
@@ -149,7 +149,7 @@ final class BlackBerry9220
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('BlackBerry9220')) {
+        if (!$this->_utils->checkIfContains(array('BlackBerry9220', 'BlackBerry 9220'))) {
             return false;
         }
         
@@ -171,7 +171,7 @@ final class BlackBerry9220
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

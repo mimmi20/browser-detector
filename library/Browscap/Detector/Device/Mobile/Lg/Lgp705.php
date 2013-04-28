@@ -171,7 +171,7 @@ final class Lgp705
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -189,7 +189,8 @@ final class Lgp705
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\Ucweb()
         );
         
         $chain = new \Browscap\Detector\Chain();

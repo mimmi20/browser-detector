@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class WonderMediaWm8650
+final class Microsoft
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,12 +67,12 @@ final class WonderMediaWm8650
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'windows_8_rt_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,13 +80,13 @@ final class WonderMediaWm8650
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Prizm WM8650',
+        'model_name'                => 'general Microsoft Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'WonderMedia',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Microsoft',
+        'brand_name'                => 'Microsoft',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'has_qwerty_keyboard'       => false, // windows_8_rt_ver1
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -103,18 +103,18 @@ final class WonderMediaWm8650
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 80,
+        'rows'                   => 20,
+        'max_image_width'        => 1280,
+        'max_image_height'       => 800,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +139,7 @@ final class WonderMediaWm8650
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -149,11 +149,31 @@ final class WonderMediaWm8650
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(' WM8650 ')) {
+        if (!$this->_utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Microsoft');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Microsoft' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**
@@ -167,15 +187,17 @@ final class WonderMediaWm8650
     }
     
     /**
-     * detects the device name from the given user agent
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
      *
-     * @param string $userAgent
-     *
-     * @return Stdfinal class
+     * @return null|\Browscap\Os\Handler
      */
-    public function detectDevice()
+    public function detectOs()
     {
-        return $this;
+        $handler = new \Browscap\Detector\Os\Windows();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
     
     /**
@@ -187,36 +209,14 @@ final class WonderMediaWm8650
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
         
         return $chain->detect();
     }

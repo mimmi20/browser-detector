@@ -86,13 +86,13 @@ final class HtcTouchDiamond2
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
+        'has_qwerty_keyboard'       => false,
+        'pointing_method'           => 'stylus',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -109,9 +109,9 @@ final class HtcTouchDiamond2
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
@@ -171,7 +171,7 @@ final class HtcTouchDiamond2
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -187,6 +187,7 @@ final class HtcTouchDiamond2
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()
@@ -209,6 +210,7 @@ final class HtcTouchDiamond2
     public function detectOs()
     {
         $os = array(
+            new \Browscap\Detector\Os\WindowsMobileOs(),
             new \Browscap\Detector\Os\Android(),
             //new \Browscap\Detector\Os\FreeBsd()
         );

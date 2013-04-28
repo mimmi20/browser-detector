@@ -67,7 +67,7 @@ final class SamsungGts5220
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_s5222_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -92,12 +92,12 @@ final class SamsungGts5220
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5222UAProf.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -109,9 +109,9 @@ final class SamsungGts5220
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
@@ -171,7 +171,7 @@ final class SamsungGts5220
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -195,6 +195,7 @@ final class SamsungGts5220
             new \Browscap\Detector\Browser\Mobile\Dalvik(),
             new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
             new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\NetFront(),
         );
         
         $chain = new \Browscap\Detector\Chain();

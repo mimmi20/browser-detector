@@ -161,7 +161,7 @@ final class ViewSonicViewPad7
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

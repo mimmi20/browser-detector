@@ -85,7 +85,7 @@ final class ZteSkatE
         'manufacturer_name'         => 'ZTE',
         'brand_name'                => 'ZTE',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Skate',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -97,7 +97,7 @@ final class ZteSkatE
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.zte.com.cn/mobile/uaprof/Skate_Aqua.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -149,7 +149,7 @@ final class ZteSkatE
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('ZTE-SKATE', 'ZTE Skate'))) {
+        if (!$this->_utils->checkIfContains(array('zte-skate', 'zte skate'), true)) {
             return false;
         }
         
@@ -171,7 +171,7 @@ final class ZteSkatE
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

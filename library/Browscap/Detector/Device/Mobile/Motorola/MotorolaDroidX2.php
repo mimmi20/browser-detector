@@ -67,7 +67,7 @@ final class MotorolaDroidX2
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'mot_droidx2_ver1_suban23', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -171,7 +171,7 @@ final class MotorolaDroidX2
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

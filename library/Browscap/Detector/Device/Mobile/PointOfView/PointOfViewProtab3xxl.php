@@ -161,7 +161,7 @@ final class PointOfViewProtab3xxl
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

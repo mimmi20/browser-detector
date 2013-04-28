@@ -206,7 +206,7 @@ final class GeneralDesktop
         
         $others = array(
             'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
-            'google desktop', 'eeepc', 'dillo', 'konqueror'
+            'google desktop', 'eeepc', 'dillo', 'konqueror', 'eudora'
         );
         
         if ($this->_utils->checkIfContains($others, true)) {

@@ -149,7 +149,7 @@ final class Mobistel
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Cynus')) {
+        if (!$this->_utils->checkIfContains('cynus', true)) {
             return false;
         }
         
@@ -161,7 +161,7 @@ final class Mobistel
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

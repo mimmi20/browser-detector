@@ -171,7 +171,7 @@ final class AcerG100W
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

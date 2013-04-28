@@ -153,7 +153,7 @@ final class MotorolaDroidBionic
             return false;
         }
         
-        if ($this->_utils->checkIfContains('DROID BIONIC 4G')) {
+        if ($this->_utils->checkIfContains(array('DROID BIONIC 4G', 'DROID BIONIC 4G'))) {
             return false;
         }
         
@@ -175,7 +175,7 @@ final class MotorolaDroidBionic
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

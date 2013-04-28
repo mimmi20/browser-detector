@@ -151,7 +151,7 @@ final class Zte
     {
         $ztePhones = array(
             'zte', 'base tab', 'base lutea', 'racerii', ' x920 ', ' n600 ', 
-            ' w713 ', ' v880 ', ' v9 ', 'smarttab7', 'smarttab10'
+            ' w713 ', ' v880 ', ' v9 ', 'smarttab7', 'smarttab10', 'blade'
         );
         
         if ($this->_utils->checkIfContains($ztePhones, true)) {
@@ -166,7 +166,7 @@ final class Zte
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

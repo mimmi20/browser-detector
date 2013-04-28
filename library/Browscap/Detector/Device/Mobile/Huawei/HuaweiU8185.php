@@ -97,7 +97,7 @@ final class HuaweiU8185
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap1.huawei.com/uaprof/HuaweiU8185GPRS-NORMAL.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -171,7 +171,7 @@ final class HuaweiU8185
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

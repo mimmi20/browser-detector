@@ -67,7 +67,7 @@ final class BlackBerry9981
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9981_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -85,19 +85,19 @@ final class BlackBerry9981
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Porsche Design P’9981',
         'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'clickwheel',
+        'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9981_umts/7.0',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -109,9 +109,9 @@ final class BlackBerry9981
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 640,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
         
         // sms
         'sms_enabled' => true,
@@ -171,7 +171,7 @@ final class BlackBerry9981
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

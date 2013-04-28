@@ -120,31 +120,4 @@ class Brew
     {
         return 2;
     }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function getBrowser()
-    {
-        $browsers = array(
-            'DolfinJasmine'
-        );
-        
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        $chain->setUseragent($this->_useragent);
-        
-        return $chain->detect();
-    }
 }

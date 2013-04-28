@@ -103,10 +103,6 @@ class Eudora
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContainsAll(array('Eudora'))) {
             return false;
         }

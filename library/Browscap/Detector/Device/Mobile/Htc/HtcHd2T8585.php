@@ -97,7 +97,7 @@ final class HtcHd2T8585
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -187,6 +187,8 @@ final class HtcHd2T8585
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer(),
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\Opera(),
             new \Browscap\Detector\Browser\Mobile\Android(),
@@ -222,5 +224,29 @@ final class HtcHd2T8585
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        $osName = $os->getCapability('device_os');
+        
+        if ('Android' == $osName) {
+            // htc_hd2_android_ver1_subua40htc
+            $this->setCapability('has_qwerty_keyboard', true);
+            $this->setCapability('physical_screen_width', 57);
+            $this->setCapability('physical_screen_height', 94);
+            $this->setCapability('dual_orientation', true);
+        }
+        
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        return $this;
     }
 }

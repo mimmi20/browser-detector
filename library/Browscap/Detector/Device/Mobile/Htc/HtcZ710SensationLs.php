@@ -171,7 +171,7 @@ final class HtcZ710SensationLs
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

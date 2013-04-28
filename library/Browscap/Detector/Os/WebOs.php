@@ -141,4 +141,28 @@ class WebOs
         
         return $chain->detect();
     }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\WebkitWebos(),
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\Ucweb(),
+            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
 }

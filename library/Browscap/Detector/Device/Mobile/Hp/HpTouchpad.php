@@ -80,12 +80,12 @@ final class HpTouchpad
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'TouchPad',
+        'model_name'                => 'Touchpad',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HP',
         'brand_name'                => 'HP',
         'model_extra_info'          => null,
-        'marketing_name'            => 'TouchPad',
+        'marketing_name'            => 'Touchpad',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -107,10 +107,10 @@ final class HpTouchpad
         'physical_screen_height' => 200,
         'columns'                => 100,
         'rows'                   => 50,
-        'max_image_width'        => 768,
-        'max_image_height'       => 1000,
-        'resolution_width'       => 768,
-        'resolution_height'      => 1024,
+        'max_image_width'        => 1000,
+        'max_image_height'       => 768,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
         
         // sms
@@ -171,7 +171,7 @@ final class HpTouchpad
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -240,6 +240,13 @@ final class HpTouchpad
         $engine->setCapability('xhtml_supports_forms_in_table', false);
         $engine->setCapability('xhtml_allows_disabled_form_elements', false);
         $engine->setCapability('xhtml_supports_invisible_text', false);
+        
+        if ('Android Webkit' == $browser->getCapability('mobile_browser')
+            && 'Android' == $os->getCapability('device_os')
+        ) {
+            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
+            $this->setCapability('model_extra_info', 'Android port');
+        }
         
         return $this;
     }

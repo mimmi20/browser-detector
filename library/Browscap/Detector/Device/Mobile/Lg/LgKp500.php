@@ -171,7 +171,7 @@ final class LgKp500
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -187,9 +187,14 @@ final class LgKp500
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\Openwave(),
+            new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
+            new \Browscap\Detector\Browser\Mobile\NetFront(),
+            new \Browscap\Detector\Browser\Mobile\Phantom(),
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -209,7 +214,7 @@ final class LgKp500
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Java(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

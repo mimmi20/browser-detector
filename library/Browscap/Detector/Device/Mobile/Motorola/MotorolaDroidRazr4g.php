@@ -67,7 +67,7 @@ final class MotorolaDroidRazr4g
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'motorola_droid_razr_ver1_subuano4gics', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -80,24 +80,24 @@ final class MotorolaDroidRazr4g
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'XT912B - Droid Razr 4G',
+        'model_name'                => 'XT912B',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Droid Razr 4G',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://uaprof.vtext.com/mot/xt912/xt912.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -109,9 +109,9 @@ final class MotorolaDroidRazr4g
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,
@@ -171,7 +171,7 @@ final class MotorolaDroidRazr4g
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

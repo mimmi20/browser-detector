@@ -154,14 +154,17 @@ final class Huawei
             'HUAWEI',
             'IDEOS S7',
             'Ideos S7',
-            'U8850',
+            'U8100',
+            'U8110',
             'U8180',
-            'U8650',
             'U8500',
             'U8510',
+            'U8650',
             'u8800',
+            'U8850',
             'Vodafone 858',
-            'Vodafone 845'
+            'Vodafone 845',
+            'TSP21'
         );
         
         if (!$this->_utils->checkIfContains($huaweiPhones)) {
@@ -186,7 +189,7 @@ final class Huawei
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

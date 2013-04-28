@@ -170,7 +170,7 @@ final class MobileDevice
             $noBots = array(
                 'xbox', 'badab', 'badap', 'simbar',
                 'google wireless transcoder', 'google-tr', 'googlet', 
-                'google page speed', 'google web preview'
+                'google page speed', 'google web preview', 'eeepc'
             );
             
             if ($this->_utils->checkIfContains($noBots, true)) {

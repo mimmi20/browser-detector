@@ -66,4 +66,12 @@ interface OsInterface
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
     );
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser();
 }

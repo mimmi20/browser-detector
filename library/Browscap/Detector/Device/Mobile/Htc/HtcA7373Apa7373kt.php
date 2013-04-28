@@ -171,7 +171,7 @@ final class HtcA7373Apa7373kt
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -149,7 +149,15 @@ final class Prestigio
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('PrestigioPMP5080CPRO', 'PMP5080CPRO'))) {
+        $phones = array(
+            'PrestigioPMP5080CPRO',
+            'PMP5080CPRO',
+            'PMP3370B',
+            'PMP5197DULTRA',
+            'PMP5580C'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
             return false;
         }
         
@@ -161,7 +169,7 @@ final class Prestigio
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

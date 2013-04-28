@@ -97,9 +97,9 @@ final class NokiaE52
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE52-1r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NE52-2r100.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NE52-1r100-vf2g.xml',
         'unique'                    => true,
         
         // display
@@ -171,7 +171,7 @@ final class NokiaE52
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

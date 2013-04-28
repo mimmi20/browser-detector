@@ -175,7 +175,7 @@ final class SonyLT30p
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

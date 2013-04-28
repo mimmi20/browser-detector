@@ -171,7 +171,7 @@ final class Lgp505r
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

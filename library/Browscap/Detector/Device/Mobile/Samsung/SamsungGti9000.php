@@ -149,7 +149,7 @@ final class SamsungGti9000
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('GT-I9000', 'GT-i9000'))) {
+        if (!$this->_utils->checkIfContains(array('GT-I9000', 'GT-i9000', 'SGH-T959V'))) {
             return false;
         }
         
@@ -171,7 +171,7 @@ final class SamsungGti9000
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

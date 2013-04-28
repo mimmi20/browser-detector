@@ -161,7 +161,7 @@ final class MdLifeE3501
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

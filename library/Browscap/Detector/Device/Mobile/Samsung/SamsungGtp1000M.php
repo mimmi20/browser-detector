@@ -171,7 +171,7 @@ final class SamsungGtp1000M
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

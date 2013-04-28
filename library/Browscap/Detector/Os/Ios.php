@@ -114,8 +114,8 @@ class Ios
         $detector->setUserAgent($this->_useragent);
         
         $searches = array(
-            'IphoneOSX', 'CPU OS', 'CPU iOS', 'CPU iPad OS', 'iPhone OS',
-            'iPhone_OS', 'IUC\(U\;iOS'
+            'IphoneOSX', 'CPU OS\_', 'CPU OS', 'CPU iOS', 'CPU iPad OS',
+            'iPhone OS', 'iPhone_OS', 'IUC\(U\;iOS'
         );
         
         $this->setCapability(
@@ -148,29 +148,24 @@ class Ios
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browsers = array(
-            'Safari',
-            'OperaMini',
-            'Sleipnir',
-            'DarwinBrowser',
-            'Facebook',
-            'Isource',
-            'Chrome'
+            new \Browscap\Detector\Browser\Mobile\Safari(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\OnePassword(),
+            new \Browscap\Detector\Browser\Mobile\Sleipnir(),
+            new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Facebook(),
+            new \Browscap\Detector\Browser\Mobile\Isource()
         );
         
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\Safari());
-        $chain->setUseragent($this->_useragent);
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

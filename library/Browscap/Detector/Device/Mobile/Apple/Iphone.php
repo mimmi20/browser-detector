@@ -165,7 +165,7 @@ final class Iphone
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -194,7 +194,8 @@ final class Iphone
             new \Browscap\Detector\Browser\Mobile\Safari(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\OnePassword()
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

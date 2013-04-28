@@ -67,7 +67,7 @@ final class TmobileMyTouch4G
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'tmobile_mytouch4g_ver1_suban23', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -92,7 +92,7 @@ final class TmobileMyTouch4G
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -109,9 +109,9 @@ final class TmobileMyTouch4G
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,
@@ -171,7 +171,7 @@ final class TmobileMyTouch4G
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

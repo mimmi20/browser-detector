@@ -163,7 +163,7 @@ final class BlackBerry
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -220,6 +220,7 @@ final class BlackBerry
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Blackberry(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()

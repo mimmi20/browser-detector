@@ -171,7 +171,7 @@ final class SamsungGts5830i
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

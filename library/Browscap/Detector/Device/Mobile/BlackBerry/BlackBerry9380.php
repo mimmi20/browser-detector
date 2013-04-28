@@ -171,7 +171,7 @@ final class BlackBerry9380
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

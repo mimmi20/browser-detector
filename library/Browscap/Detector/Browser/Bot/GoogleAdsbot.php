@@ -103,7 +103,7 @@ class GoogleAdsbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('AdsBot-Google', true)) {
+        if (!$this->_utils->checkIfStartsWith('adsbot-google', true)) {
             return false;
         }
         

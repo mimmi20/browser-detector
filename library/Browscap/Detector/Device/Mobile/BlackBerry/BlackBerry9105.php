@@ -97,9 +97,9 @@ final class BlackBerry9105
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_gprs/5.0',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_umts/5.0',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_edge/5.0',
         'unique'                    => true,
         
         // display
@@ -171,7 +171,7 @@ final class BlackBerry9105
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

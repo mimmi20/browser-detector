@@ -97,8 +97,8 @@ final class Nokia700
         'nokia_series'              => 60,
         'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/N700r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/N700r200.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -171,7 +171,7 @@ final class Nokia700
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

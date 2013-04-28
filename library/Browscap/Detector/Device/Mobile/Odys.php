@@ -153,7 +153,9 @@ final class Odys
             'odys',
             'loox plus',
             ' genesis ',
-            ' noon '
+            ' noon ',
+            ' loox ',
+            'xpress pro'
         );
         
         if ($this->_utils->checkIfContains($odysPhones, true)) {
@@ -178,7 +180,7 @@ final class Odys
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

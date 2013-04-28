@@ -269,4 +269,15 @@ abstract class OsHandler
     {
         return $this;
     }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        return null;
+    }
 }

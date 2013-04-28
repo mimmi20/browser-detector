@@ -171,7 +171,7 @@ final class ShwM380K
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -171,7 +171,7 @@ final class SamsungShwM930bst
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

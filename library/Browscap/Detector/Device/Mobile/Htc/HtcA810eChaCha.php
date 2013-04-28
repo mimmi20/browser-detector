@@ -171,7 +171,7 @@ final class HtcA810eChaCha
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

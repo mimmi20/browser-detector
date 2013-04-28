@@ -167,19 +167,20 @@ final class Motorola
             'mz616',
             'xoom',
             'milestone',
-            'me525',
-            'mb860',
-            'mb632',
-            'mb526',
-            'mb525',
             'mb511',
+            'mb525',
+            'mb526',
+            'mb632',
+            'mb860',
+            'me511',
+            'me525',
+            'me600',
             'xt316',
             'xt320',
             'xt610',
+            'xt615',
             'xt890',
             'xt910',
-            'me600',
-            'me511',
             'xt925'
         );
         
@@ -205,7 +206,7 @@ final class Motorola
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -171,7 +171,7 @@ final class SamsungGti6410
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

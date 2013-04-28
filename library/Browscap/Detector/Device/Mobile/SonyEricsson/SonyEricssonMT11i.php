@@ -171,7 +171,7 @@ final class SonyEricssonMT11i
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

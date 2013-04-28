@@ -149,7 +149,16 @@ final class Weltbild
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('CatNova', 'CAT NOVA', 'CatNova8', 'Cat StarGate', 'Cat Tablet'))) {
+        $weltbildPhones = array(
+            'CatNova',
+            'CAT NOVA',
+            'CatNova8',
+            'Cat StarGate',
+            'Cat Tablet',
+            'Tablet-PC-4'
+        );
+        
+        if (!$this->_utils->checkIfContains($weltbildPhones)) {
             return false;
         }
         
@@ -161,7 +170,7 @@ final class Weltbild
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

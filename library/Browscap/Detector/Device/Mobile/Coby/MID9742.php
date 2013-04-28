@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\Coby;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungSghT959v
+final class MID9742
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,9 +70,9 @@ final class SamsungSghT959v
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,13 +80,13 @@ final class SamsungSghT959v
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'SGH-T959V',
+        'model_name'                => 'MID9742',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
+        'manufacturer_name'         => 'Coby',
+        'brand_name'                => 'Coby',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'marketing_name'            => 'Kyros MID9742',
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -109,9 +109,9 @@ final class SamsungSghT959v
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,
@@ -149,11 +149,23 @@ final class SamsungSghT959v
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SGH-T959V')) {
+        if (!$this->_utils->checkIfContains('MID9742')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -164,18 +176,6 @@ final class SamsungSghT959v
     public function getWeight()
     {
         return 3;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return Stdfinal class
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
     
     /**

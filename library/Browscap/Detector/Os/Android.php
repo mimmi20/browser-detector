@@ -108,7 +108,7 @@ class Android
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;'))
+        if ($this->_utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
             || $safariHelper->isMobileAsSafari()
         ) {
             return true;
@@ -172,28 +172,21 @@ class Android
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browsers = array(
-            'Android',
-            'Dalvik',
-            'Chrome',
-            'DolfinJasmine',
-            'Silk',
-            'NetFrontLifeBrowser'
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\Silk(),
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\NetFrontLifeBrowser()
         );
         
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\Android());
-        $chain->setUseragent($this->_useragent);
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

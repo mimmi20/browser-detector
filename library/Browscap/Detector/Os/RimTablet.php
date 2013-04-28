@@ -138,27 +138,21 @@ class RimTablet
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browsers = array(
-            'Blackberry',
-            'BlackberryPlaybookTablet',
-            'OperaMini',
-            'Ucweb',
-            'MqqBrowser'
+            new \Browscap\Detector\Browser\Mobile\Blackberry(),
+            new \Browscap\Detector\Browser\Mobile\BlackberryPlaybookTablet(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\Ucweb(),
+            new \Browscap\Detector\Browser\Mobile\MqqBrowser(),
+            //new \Browscap\Detector\Os\FreeBsd()
         );
         
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\Blackberry());
-        $chain->setUseragent($this->_useragent);
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

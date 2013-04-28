@@ -175,7 +175,7 @@ final class HtcT8282
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

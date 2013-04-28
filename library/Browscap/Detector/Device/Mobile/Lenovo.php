@@ -157,7 +157,8 @@ final class Lenovo
             ' K1 ',
             'ThinkPad',
             'IdeaTab',
-            'SmartTab II'
+            'SmartTab II',
+            'SmartTabII7'
         );
         
         if (!$this->_utils->checkIfContains($LenovoPhones)) {
@@ -182,7 +183,7 @@ final class Lenovo
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

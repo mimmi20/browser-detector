@@ -67,7 +67,7 @@ final class MotorolaMb860
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'mot_mb860_ver1_suban23', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -85,7 +85,7 @@ final class MotorolaMb860
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Atrix',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -171,7 +171,7 @@ final class MotorolaMb860
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

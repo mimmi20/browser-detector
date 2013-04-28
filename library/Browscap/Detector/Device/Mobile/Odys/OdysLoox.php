@@ -149,7 +149,7 @@ final class OdysLoox
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Odys-Loox')) {
+        if (!$this->_utils->checkIfContains(array('Odys-Loox', ' LOOX '))) {
             return false;
         }
         
@@ -161,7 +161,7 @@ final class OdysLoox
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

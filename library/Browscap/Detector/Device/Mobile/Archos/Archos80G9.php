@@ -171,7 +171,7 @@ final class Archos80G9
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -149,7 +149,7 @@ final class SonyEricssonST15i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SonyEricssonST15i')) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonST15i', 'ST15i'))) {
             return false;
         }
         
@@ -171,7 +171,7 @@ final class SonyEricssonST15i
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

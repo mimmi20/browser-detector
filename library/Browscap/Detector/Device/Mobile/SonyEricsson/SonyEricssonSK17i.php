@@ -175,7 +175,7 @@ final class SonyEricssonSK17i
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -174,10 +174,19 @@ final class SonyEricsson
             's312',
             'sk17i',
             'sgpt12',
+            'st15i',
+            'st16i',
+            'st17i',
             'st18i',
+            'st19i',
+            'st20i',
             'st21i',
+            'st22i',
+            'st23i',
+            'st24i',
             'st25i',
             'st26i',
+            'st27i',
             'u20i',
             'w508a',
             'w760i',
@@ -186,7 +195,8 @@ final class SonyEricsson
             'x10',
             'xst2',
             'playstation',
-            'psp'
+            'psp',
+            'xperia arc'
         );
         
         if ($this->_utils->checkIfContains($sonyPhones, true)) {
@@ -201,7 +211,7 @@ final class SonyEricsson
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

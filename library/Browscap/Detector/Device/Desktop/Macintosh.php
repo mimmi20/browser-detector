@@ -151,7 +151,7 @@ final class Macintosh
     {
         $mac = array(
             'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac', 
-            'PPC Mac', 'Mac OS X'
+            'PPC Mac', 'Mac OS X', '(MacOS)'
         );
         
         if (!$this->_utils->checkIfContains($mac)) {
@@ -170,7 +170,7 @@ final class Macintosh
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

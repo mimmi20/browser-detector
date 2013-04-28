@@ -97,8 +97,8 @@ final class HtcHd2
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml',
+        'uaprof2'                   => 'http://www.htcmms.com.tw/tmo/HTC_HD2-1.0.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -175,7 +175,7 @@ final class HtcHd2
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
@@ -191,7 +191,10 @@ final class HtcHd2
     public function detectBrowser()
     {
         $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer(),
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\Opera(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()

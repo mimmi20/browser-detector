@@ -166,10 +166,10 @@ final class Htc
             'MDA_Compact_V',
             'MDA Vario',
             'MDA_Vario_V',
-            'myTouch4G',
             'Sensation_4G',
             'SensationXE',
             'SensationXL',
+            'Sensation XL',
             'Sensation_Z710e',
             'Xda_Diamond_2',
             'Vision-T-Mobile-G2',
@@ -185,11 +185,11 @@ final class Htc
             'Nexus-One'
         );
         
-        if ($this->_utils->checkIfContains($htcPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains($htcPhones)) {
+            return false;
         }
         
-        return false;
+        return true;
     }
     
     /**
@@ -197,7 +197,7 @@ final class Htc
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -146,32 +146,26 @@ class Java
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browsers = array(
-            'DolfinJasmine',
-            'Motorola',
-            'NetFront',
-            'NokiaBrowser',
-            'NokiaProxyBrowser',
-            'Openwave',
-            'OperaMini',
-            'Phantom',
-            'TelecaObigo',
-            'Ucweb'
+            new \Browscap\Detector\Browser\Mobile\Openwave(),
+            new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
+            new \Browscap\Detector\Browser\Mobile\NetFront(),
+            new \Browscap\Detector\Browser\Mobile\Phantom(),
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\Ucweb(),
+            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Motorola(),
         );
         
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        $chain->setUseragent($this->_useragent);
         
         return $chain->detect();
     }

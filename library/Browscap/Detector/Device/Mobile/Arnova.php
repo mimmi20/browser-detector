@@ -149,7 +149,16 @@ final class Arnova
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('AN7CG2', 'ARCHM901'))) {
+        $arnovaPhones = array(
+            'AN7CG2',
+            'AN7DG3',
+            'AN7FG3',
+            'AN10DG3',
+            'ARCHM901',
+            'AN7BG2DT'
+        );
+        
+        if (!$this->_utils->checkIfContains($arnovaPhones)) {
             return false;
         }
         
@@ -161,7 +170,7 @@ final class Arnova
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

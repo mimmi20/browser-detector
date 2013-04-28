@@ -151,7 +151,8 @@ final class HtcSensationXlBeats
     {
         $phones = array(
             'HTC/SensationXL_Beats',
-            'HTC_SensationXL_Beats'
+            'HTC_SensationXL_Beats',
+            'Sensation XL with Beats Audio'
         );
         
         if (!$this->_utils->checkIfContains($phones)) {
@@ -187,7 +188,7 @@ final class HtcSensationXlBeats
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

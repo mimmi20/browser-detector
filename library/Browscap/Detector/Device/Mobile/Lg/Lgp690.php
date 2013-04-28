@@ -85,7 +85,7 @@ final class Lgp690
         'manufacturer_name'         => 'LG',
         'brand_name'                => 'LG',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Optimus Spirit',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -97,7 +97,7 @@ final class Lgp690
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://gsm.lge.com/html/gsm/P690f-M6-D1.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -171,7 +171,7 @@ final class Lgp690
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

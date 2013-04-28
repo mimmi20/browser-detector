@@ -169,25 +169,19 @@ class WindowsMobileOs
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browsers = array(
-            'MicrosoftMobileExplorer',
-            'OperaMobile',
-            'OperaMini'
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer(),
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\Opera()
         );
         
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer());
-        $chain->setUseragent($this->_useragent);
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

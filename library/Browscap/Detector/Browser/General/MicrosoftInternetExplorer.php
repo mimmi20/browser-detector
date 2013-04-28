@@ -97,15 +97,16 @@ class MicrosoftInternetExplorer
     );
     
     private $_patterns = array(
-        '/Mozilla\/5\.0 \(.*MSIE 11\.0.*/' => '11.0',
-        '/Mozilla\/5\.0 \(.*MSIE 10\.0.*/' => '10.0',
-        '/Mozilla\/5\.0 \(.*MSIE 9\.0.*/'  => '9.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 11\.0.*/' => '11.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 10\.0.*/' => '10.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 9\.0.*/'  => '9.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'  => '8.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'  => '7.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'  => '6.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'  => '5.5',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/' => '5.23',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.22.*/' => '5.22',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.16.*/' => '5.16',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/' => '5.01',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'  => '5.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/' => '4.01',
@@ -259,7 +260,7 @@ class MicrosoftInternetExplorer
         switch ($engineVersion) {
             case 4:
                 if ($this->_utils->checkIfContains('Trident/4.0')
-                    && 8 != $detectedVersion
+                    && 8 > $detectedVersion
                 ) {
                     $browserVersion->setVersion('8.0');
                     
@@ -274,7 +275,7 @@ class MicrosoftInternetExplorer
                 }
                 break;
             case 5:
-                if (9 != $detectedVersion) {
+                if (9 > $detectedVersion) {
                     $browserVersion->setVersion('9.0');
                     
                     $this->setCapability(
@@ -284,8 +285,18 @@ class MicrosoftInternetExplorer
                 }
                 break;
             case 6:
-                if (10 != $detectedVersion) {
+                if (10 > $detectedVersion) {
                     $browserVersion->setVersion('10.0');
+                    
+                    $this->setCapability(
+                        'mobile_browser_modus', 
+                        'IE ' . $detectedVersion . ' Compatibility Mode'
+                    );
+                }
+                break;
+            case 7:
+                if (11 > $detectedVersion) {
+                    $browserVersion->setVersion('11.0');
                     
                     $this->setCapability(
                         'mobile_browser_modus', 

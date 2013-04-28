@@ -175,7 +175,7 @@ final class NokiaLumia
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

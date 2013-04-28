@@ -171,7 +171,7 @@ final class Nokia5800XpressMusic
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

@@ -171,7 +171,7 @@ final class ArchosA70BHT
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

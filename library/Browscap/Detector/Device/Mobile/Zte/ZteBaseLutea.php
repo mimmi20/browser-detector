@@ -149,7 +149,7 @@ final class ZteBaseLutea
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('base lutea', true)) {
+        if (!$this->_utils->checkIfContains(array('base lutea', 'blade'), true)) {
             return false;
         }
         
@@ -175,7 +175,7 @@ final class ZteBaseLutea
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

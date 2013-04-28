@@ -67,7 +67,7 @@ final class NokiaE72
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_e72_ver1_sub021024', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,9 +97,9 @@ final class NokiaE72
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE72-1r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NE72-2r100.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NE72-1r100-vf2g.xml',
         'unique'                    => true,
         
         // display
@@ -171,7 +171,7 @@ final class NokiaE72
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

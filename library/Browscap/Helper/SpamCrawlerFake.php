@@ -92,6 +92,7 @@ final class SpamCrawlerFake
             '\\x01',
             '.exe',
             'acoon',
+            'adsbot-google',
             'anyevent',
             'appengine-google',
             'ask.com',
@@ -117,16 +118,18 @@ final class SpamCrawlerFake
             'generator',
             'gomezagent',
             'googlebot',
+            'google-fontanalysis',
+            'google wireless transcoder',
             'grabber',
             'heritrix',
             'http_client',
             'httpclient',
             'httrack',
             'jig browser',
-            'juc (linux; u; ',
             'libwww',
             'linkchecker',
             'link sleuth',
+            'mailwalker',
             'mediapartners-google',
             'metauri',
             'nagios',
@@ -137,6 +140,7 @@ final class SpamCrawlerFake
             'parser',
             'presto/951',
             'retriever',
+            'safersurf',
             'secmon',
             'siteinfo',
             'skymonk',
@@ -144,13 +148,17 @@ final class SpamCrawlerFake
             'smartlinksaddon',
             'snap',
             'spider',
+            'spray-can',
+            'squidwall',
             'stats',
-            //'svn',
+            'synapticwalker',
             'test-acceptance',
             'thebat',
+            'tlsprober',
             'ua:',
             'unister-test',
             'user-agent: ',
+            'web walker',
             'www.auto.de', 
             'auto.de',
             //'w3m',
@@ -185,7 +193,9 @@ final class SpamCrawlerFake
             return true;
         }
         
-        $searchNoBot = array('searchtoolbar', 'searchalot ie', 'isearch');
+        $searchNoBot = array(
+            'searchtoolbar', 'searchalot ie', 'isearch', 'searchbar'
+        );
         
         if ($this->_utils->checkIfContains('search', true)
             && !$this->_utils->checkIfContains($searchNoBot, true)
@@ -209,7 +219,13 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ('Mozilla/4.0 (compatible;)' === $this->_useragent) {
+        if ('Mozilla/4.0 (compatible;)' === $this->_useragent
+            || 'Mozilla/5.0 (compatible)' === $this->_useragent
+        ) {
+            return true;
+        }
+        
+        if ($this->_utils->checkIfStartsWith('PHP/')) {
             return true;
         }
         
@@ -332,7 +348,7 @@ final class SpamCrawlerFake
         }
         
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
-        if ($doMatch) {
+        if ($doMatch && isset($matches)) {
             $versions = explode('.', $matches[1]);
             
             if ($versions[0] >= 6 && $versions[1] > 0) {

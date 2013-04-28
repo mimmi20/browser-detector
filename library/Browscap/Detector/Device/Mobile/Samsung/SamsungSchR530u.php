@@ -171,7 +171,7 @@ final class SamsungSchR530u
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {

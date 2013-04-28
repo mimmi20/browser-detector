@@ -103,7 +103,7 @@ class DCPbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('DCPbot/')) {
+        if (!$this->_utils->checkIfContains('DCPbot/')) {
             return false;
         }
         

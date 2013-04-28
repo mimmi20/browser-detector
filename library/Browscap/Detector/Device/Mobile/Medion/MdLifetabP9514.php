@@ -161,7 +161,7 @@ final class MdLifetabP9514
      *
      * @param string $userAgent
      *
-     * @return Stdfinal class
+     * @return StdClass
      */
     public function detectDevice()
     {
