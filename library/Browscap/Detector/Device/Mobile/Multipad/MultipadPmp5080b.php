@@ -109,8 +109,8 @@ final class MultipadPmp5080b
         'rows'                   => 40,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 600,
-        'resolution_height'      => 800,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         
         // sms

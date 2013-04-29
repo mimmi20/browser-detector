@@ -109,8 +109,8 @@ final class AsusGalaxyNexus7
         'rows'                   => 40,
         'max_image_width'        => 800,
         'max_image_height'       => 1200,
-        'resolution_width'       => 800,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         
         // sms

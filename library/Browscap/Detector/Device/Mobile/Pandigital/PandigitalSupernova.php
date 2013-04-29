@@ -109,8 +109,8 @@ final class PandigitalSupernova
         'rows'                   => 40,
         'max_image_width'        => 600,
         'max_image_height'       => 600,
-        'resolution_width'       => 600,
-        'resolution_height'      => 800,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         
         // sms

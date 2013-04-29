@@ -155,7 +155,7 @@ final class Nokia
             'series 40',
             'series 60',
             's60v5',
-            'n90 dual core2'
+            'n90 dual core2',
             'n900'
         );
         

@@ -109,8 +109,8 @@ final class Ipad
         'rows'                   => 100,
         'max_image_width'        => 768,
         'max_image_height'       => 1024,
-        'resolution_width'       => 768,
-        'resolution_height'      => 1024,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
         
         // sms

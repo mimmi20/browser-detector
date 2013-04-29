@@ -109,8 +109,8 @@ final class MdLifetabP9516
         'rows'                   => 100,
         'max_image_width'        => 980,
         'max_image_height'       => 472,
-        'resolution_width'       => 800,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         
         // sms

@@ -109,8 +109,8 @@ final class MotorolaXoom
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 800,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         
         // sms

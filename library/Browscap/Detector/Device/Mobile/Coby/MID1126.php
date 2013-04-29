@@ -109,8 +109,8 @@ final class MID1126
         'rows'                   => 40,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 768,
-        'resolution_height'      => 1024,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
         
         // sms

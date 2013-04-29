@@ -109,8 +109,8 @@ final class SamsungGtp7501
         'rows'                   => 21,
         'max_image_width'        => 980,
         'max_image_height'       => 472,
-        'resolution_width'       => 800,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         
         // sms

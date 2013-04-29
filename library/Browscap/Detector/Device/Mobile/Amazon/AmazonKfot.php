@@ -109,8 +109,8 @@ final class AmazonKfot
         'rows'                   => 100,
         'max_image_width'        => 580,
         'max_image_height'       => 1000,
-        'resolution_width'       => 600,
-        'resolution_height'      => 1024,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         
         // sms
