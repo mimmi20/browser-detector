@@ -112,7 +112,7 @@ final class NokiaC700
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

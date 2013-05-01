@@ -112,7 +112,7 @@ final class BlackBerry9220
         'resolution_width'       => 320,
         'resolution_height'      => 240,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

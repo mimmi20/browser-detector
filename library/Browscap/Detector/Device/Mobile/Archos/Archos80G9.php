@@ -112,7 +112,7 @@ final class Archos80G9
         'resolution_width'       => 1024,
         'resolution_height'      => 768,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => false,

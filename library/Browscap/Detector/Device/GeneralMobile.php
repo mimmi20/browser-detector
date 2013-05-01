@@ -113,7 +113,7 @@ final class GeneralMobile
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // security
         'phone_id_provided' => false,

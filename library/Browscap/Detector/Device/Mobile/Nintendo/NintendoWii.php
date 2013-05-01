@@ -112,7 +112,7 @@ final class NintendoWii
         'resolution_width'       => 685,
         'resolution_height'      => 600,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

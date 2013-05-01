@@ -112,7 +112,7 @@ final class Lgv900
         'resolution_width'       => 1280,
         'resolution_height'      => 768,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => false,

@@ -112,7 +112,7 @@ final class SamsungGts7230e
         'resolution_width'       => 240,
         'resolution_height'      => 400,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

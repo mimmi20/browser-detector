@@ -112,7 +112,7 @@ final class SamsungGtn8013
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => false,

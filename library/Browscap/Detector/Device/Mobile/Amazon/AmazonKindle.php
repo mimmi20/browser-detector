@@ -112,7 +112,7 @@ final class AmazonKindle
         'resolution_width'       => 600,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

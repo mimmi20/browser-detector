@@ -112,7 +112,7 @@ final class SamsungGtp3110
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true, // wurflkey: samsung_gt_p3100_ver1_subua3110

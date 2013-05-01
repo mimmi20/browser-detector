@@ -112,7 +112,7 @@ final class Lgt500
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

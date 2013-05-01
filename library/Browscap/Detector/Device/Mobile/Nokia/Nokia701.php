@@ -112,7 +112,7 @@ final class Nokia701
         'resolution_width'       => 640,
         'resolution_height'      => 360,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

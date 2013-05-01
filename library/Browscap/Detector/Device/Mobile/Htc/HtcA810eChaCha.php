@@ -112,7 +112,7 @@ final class HtcA810eChaCha
         'resolution_width'       => 480,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

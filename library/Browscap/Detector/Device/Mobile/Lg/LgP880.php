@@ -112,7 +112,7 @@ final class LgP880
         'resolution_width'       => 720,
         'resolution_height'      => 1280,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

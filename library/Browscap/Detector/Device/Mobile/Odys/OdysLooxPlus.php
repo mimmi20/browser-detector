@@ -112,7 +112,7 @@ final class OdysLooxPlus
         'resolution_width'       => 800,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => false,

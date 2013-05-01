@@ -112,7 +112,7 @@ final class AmazonKftt
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop

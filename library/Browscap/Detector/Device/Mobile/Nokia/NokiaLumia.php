@@ -112,7 +112,7 @@ final class NokiaLumia
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => null,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

@@ -112,7 +112,7 @@ final class SamsungGtp5100
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true, // wurflkey: samsung_gt_p5100_ver1

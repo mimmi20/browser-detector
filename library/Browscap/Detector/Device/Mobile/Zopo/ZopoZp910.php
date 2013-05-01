@@ -112,7 +112,7 @@ final class ZopoZp910
         'resolution_width'       => 540,
         'resolution_height'      => 960,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

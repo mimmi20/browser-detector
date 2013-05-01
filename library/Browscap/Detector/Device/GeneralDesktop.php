@@ -116,7 +116,7 @@ final class GeneralDesktop
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => false,

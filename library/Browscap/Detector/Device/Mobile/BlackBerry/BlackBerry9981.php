@@ -112,7 +112,7 @@ final class BlackBerry9981
         'resolution_width'       => 640,
         'resolution_height'      => 480,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

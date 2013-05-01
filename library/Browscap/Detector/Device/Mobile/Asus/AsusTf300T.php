@@ -112,7 +112,7 @@ final class AsusTf300T
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41

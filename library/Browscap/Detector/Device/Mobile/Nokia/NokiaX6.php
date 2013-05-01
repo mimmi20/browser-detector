@@ -112,7 +112,7 @@ final class NokiaX6
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

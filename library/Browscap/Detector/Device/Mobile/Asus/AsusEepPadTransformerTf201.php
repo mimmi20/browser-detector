@@ -112,7 +112,7 @@ final class AsusEepPadTransformerTf201
         'resolution_width'       => 800,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

@@ -112,7 +112,7 @@ final class PlayStationVita
         'resolution_width'       => 960,
         'resolution_height'      => 544,
         'dual_orientation'       => true,
-        'colors'                 => null,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
