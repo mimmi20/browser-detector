@@ -112,6 +112,7 @@ final class AlcatelOt991d
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,
@@ -233,7 +234,6 @@ final class AlcatelOt991d
         parent::detectDependProperties($browser, $engine, $os);
         
         // wurflkey: alcatel_ot991_ver1_subuad
-        $engine->setCapability('colors', 262144);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         $engine->setCapability('bmp', true);
         

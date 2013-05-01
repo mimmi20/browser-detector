@@ -140,7 +140,6 @@ class NetFront extends EngineHandler
         'bmp' => null,
         'wbmp' => null,
         'gif_animated' => null,
-        'colors' => null,
         'png' => null,
         'greyscale' => null,
         'transparent_png_index' => null,

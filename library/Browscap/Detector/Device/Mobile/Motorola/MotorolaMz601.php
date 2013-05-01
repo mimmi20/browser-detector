@@ -112,6 +112,7 @@ final class MotorolaMz601
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => false,
@@ -231,10 +232,6 @@ final class MotorolaMz601
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
-        
-        // wurflkey: mot_mz601_ver1_suban40
-        $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

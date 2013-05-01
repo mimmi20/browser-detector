@@ -112,6 +112,7 @@ final class AcerIconiaA501
         'resolution_width'       => 1280,
         'resolution_height'      => 800, //wurflkey: acer_iconia_tab_a501_ver1_suban40
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => false,
@@ -243,7 +244,6 @@ final class AcerIconiaA501
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 16777216);
         
         return $this;
     }

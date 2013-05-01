@@ -112,6 +112,7 @@ final class MdLifetabP9514
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,
@@ -231,12 +232,6 @@ final class MdLifetabP9514
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
-        
-        // wurflkey: lifetab_p9514_ver1_suban40_subuachrome
-        // $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        // $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         return $this;
     }

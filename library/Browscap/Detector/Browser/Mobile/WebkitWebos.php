@@ -160,7 +160,6 @@ class WebkitWebos
         $engine->setCapability('xhtml_file_upload', 'supported');
         $engine->setCapability('xhtml_supports_invisible_text', true);
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        $engine->setCapability('colors', 65536);
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(

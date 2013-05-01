@@ -132,6 +132,7 @@ abstract class DeviceHandler
         'resolution_width'       => 90,
         'resolution_height'      => 40,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // security
         'phone_id_provided' => false,

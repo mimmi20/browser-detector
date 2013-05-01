@@ -112,6 +112,7 @@ final class HtcFlyer
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

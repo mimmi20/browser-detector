@@ -112,6 +112,7 @@ final class SonyEricssonE10i
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

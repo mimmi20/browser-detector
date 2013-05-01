@@ -112,9 +112,10 @@ final class EpadP7901a
         'resolution_width'       => 800,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +140,7 @@ final class EpadP7901a
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

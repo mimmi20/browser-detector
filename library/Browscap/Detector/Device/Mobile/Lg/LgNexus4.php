@@ -112,6 +112,7 @@ final class LgNexus4
         'resolution_width'       => 768,
         'resolution_height'      => 1280,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

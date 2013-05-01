@@ -112,6 +112,7 @@ final class SamsungGtp7500
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,
@@ -224,10 +225,6 @@ final class SamsungGtp7500
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
-        
-        // $engine->setCapability('gif_animated', true);
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

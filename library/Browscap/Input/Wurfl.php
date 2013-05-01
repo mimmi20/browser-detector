@@ -391,6 +391,11 @@ final class Wurfl extends Core
                             $apiBro = 'IEMobile';
                             $apiVer = '6.12';
                             break;
+                        case 'xbox 360':
+                            $apiBro = 'Internet Explorer';
+                            $apiVer = '9.0';
+                            $apiDev = 'Xbox 360';
+                            break;
                         default:
                             // nothing to do
                             break;
@@ -487,6 +492,13 @@ final class Wurfl extends Core
                     $apiBot     = null;
                     $apiTv      = null;
                     $apiDesktop = null;
+                    break;
+                case 'generic smarttv':
+                    $apiDesktop = false;
+                    $apiBot     = false;
+                    $apiTv      = true;
+                    $apiDev     = 'general TV Device';
+                    $apiBro     = 'unknown';
                     break;
                 default:
                     // nothing to do here

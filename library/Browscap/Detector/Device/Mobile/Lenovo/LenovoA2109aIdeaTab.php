@@ -112,6 +112,7 @@ final class LenovoA2109aIdeaTab
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

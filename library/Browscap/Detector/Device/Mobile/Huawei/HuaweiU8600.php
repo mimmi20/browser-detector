@@ -67,7 +67,7 @@ final class HuaweiU8600
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_u8600_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -83,9 +83,9 @@ final class HuaweiU8600
         'model_name'                => 'U8600',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Huawei',
-        'brand_name'                => 'T-Mobile',
+        'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Move Balance',
+        'marketing_name'            => 'T-Mobile^Move Balance',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -97,7 +97,7 @@ final class HuaweiU8600
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap1.huawei.com/uaprof/HuaweiU8600WCDMA-T-Mobile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -112,6 +112,7 @@ final class HuaweiU8600
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

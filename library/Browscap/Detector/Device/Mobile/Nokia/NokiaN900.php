@@ -112,6 +112,7 @@ final class NokiaN900
         'resolution_width'       => 800,
         'resolution_height'      => 480,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

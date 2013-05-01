@@ -112,6 +112,7 @@ final class SamsungGtp1000
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true, // wurflkey: samsung_galaxy_tab_ver1
@@ -246,7 +247,6 @@ final class SamsungGtp1000
         
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('colors', 16777216);
         
         return $this;
     }

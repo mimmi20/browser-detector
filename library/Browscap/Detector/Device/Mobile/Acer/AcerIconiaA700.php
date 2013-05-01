@@ -112,6 +112,7 @@ final class AcerIconiaA700
         'resolution_width'       => 1920,
         'resolution_height'      => 1200,
         'dual_orientation'       => true,
+        'colors'                 => 4294967296,
         
         // sms
         'sms_enabled' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
@@ -247,7 +248,6 @@ final class AcerIconiaA700
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 4294967296);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

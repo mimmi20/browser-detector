@@ -112,6 +112,7 @@ final class SonyEricssonMK16a
         'resolution_width'       => 480,
         'resolution_height'      => 854,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

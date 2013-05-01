@@ -112,6 +112,7 @@ final class HuaweiU8860
         'resolution_width'       => 480,
         'resolution_height'      => 854,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
@@ -227,8 +228,6 @@ final class HuaweiU8860
         
         // wurflkey: huawei_u8860_ver1_suban40noh
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         return $this;
     }

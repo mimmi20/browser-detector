@@ -143,7 +143,6 @@ class Blink extends EngineHandler
         'bmp' => true,
         'wbmp' => false,
         'gif_animated' => true,
-        'colors' => 65536,
         'png' => true,
         'greyscale' => false,
         'transparent_png_index' => false,

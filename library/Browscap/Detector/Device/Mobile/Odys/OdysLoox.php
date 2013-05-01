@@ -112,6 +112,7 @@ final class OdysLoox
         'resolution_width'       => 800,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,
@@ -150,6 +151,10 @@ final class OdysLoox
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array('Odys-Loox', ' LOOX '))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains('LOOX Plus')) {
             return false;
         }
         

@@ -112,6 +112,7 @@ final class SonyEricssonLT15iv
         'resolution_width'       => 480,
         'resolution_height'      => 854,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,
@@ -233,7 +234,6 @@ final class SonyEricssonLT15iv
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 16777216);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;

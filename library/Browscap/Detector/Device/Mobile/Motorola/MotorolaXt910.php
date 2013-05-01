@@ -112,6 +112,7 @@ final class MotorolaXt910
         'resolution_width'       => 540,
         'resolution_height'      => 960,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,
@@ -234,8 +235,6 @@ final class MotorolaXt910
         
         // wurflkey: mot_xt910_ver1_suban40
         $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

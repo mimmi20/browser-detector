@@ -112,6 +112,7 @@ final class NokiaC503
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

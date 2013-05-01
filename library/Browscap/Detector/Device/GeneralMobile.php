@@ -113,6 +113,7 @@ final class GeneralMobile
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // security
         'phone_id_provided' => false,
@@ -218,8 +219,8 @@ final class GeneralMobile
             $this->setCapability('rows', 40);
             $this->setCapability('max_image_width', 320);
             $this->setCapability('max_image_height', 400);
-            $this->setCapability('resolution_width', 480);
-            $this->setCapability('resolution_height', 800);
+            $this->setCapability('resolution_width', 800);
+            $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', false);
             
@@ -243,8 +244,8 @@ final class GeneralMobile
             $this->setCapability('rows', 40);
             $this->setCapability('max_image_width', 480);
             $this->setCapability('max_image_height', 640);
-            $this->setCapability('resolution_width', 480); // 1280 bei Ver 11, Android 3.2
-            $this->setCapability('resolution_height', 640); // 768 bei Ver 11, Android 3.2
+            $this->setCapability('resolution_width', 640); // 1280 bei Ver 11, Android 3.2
+            $this->setCapability('resolution_height', 480); // 768 bei Ver 11, Android 3.2
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
             
@@ -429,7 +430,8 @@ final class GeneralMobile
             }
         }
         
-        if ('Android Webkit' == $browser->getCapability('mobile_browser')
+        if (('Android Webkit' == $browser->getCapability('mobile_browser')
+            || 'Fennec' == $browser->getCapability('mobile_browser'))
             && 'Android' == $os->getCapability('device_os')
         ) {
             $this->setCapability('has_qwerty_keyboard', true);

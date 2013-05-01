@@ -103,7 +103,7 @@ class FaceBookBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('facebookexternalhit')) {
+        if (!$this->_utils->checkIfContains(array('facebookexternalhit', 'facebookplatform'))) {
             return false;
         }
         
@@ -120,7 +120,7 @@ class FaceBookBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('facebookexternalhit');
+        $searches = array('facebookexternalhit', 'facebookplatform');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

@@ -112,6 +112,7 @@ final class YPGi1
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

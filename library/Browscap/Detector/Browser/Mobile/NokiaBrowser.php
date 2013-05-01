@@ -189,7 +189,6 @@ class NokiaBrowser
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('xhtml_format_as_css_property', true);
         $engine->setCapability('wbmp', true);
-        $engine->setCapability('colors', 16777216);
         $engine->setCapability('epoc_bmp', true);
         $engine->setCapability('transparent_png_alpha', true);
         $engine->setCapability('tiff', true);

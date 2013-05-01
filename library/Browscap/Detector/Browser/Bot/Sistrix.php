@@ -74,7 +74,7 @@ class Sistrix
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Sistrix Bot',
+        'mobile_browser'              => 'Sistrix Crawler',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'sistrix.net', // not in wurfl

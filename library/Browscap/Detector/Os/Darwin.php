@@ -120,4 +120,27 @@ class Darwin
     {
         return 128;
     }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Safari(),
+            new \Browscap\Detector\Browser\Mobile\OnePassword(),
+            new \Browscap\Detector\Browser\Mobile\Sleipnir(),
+            new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
 }

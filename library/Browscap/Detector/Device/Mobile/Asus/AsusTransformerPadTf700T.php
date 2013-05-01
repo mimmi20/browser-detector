@@ -112,6 +112,7 @@ final class AsusTransformerPadTf700T
         'resolution_width'       => 1920,
         'resolution_height'      => 1200,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,

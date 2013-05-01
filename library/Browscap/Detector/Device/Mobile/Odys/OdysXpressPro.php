@@ -112,6 +112,7 @@ final class OdysXpressPro
         'resolution_width'       => 1024,
         'resolution_height'      => 768,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,

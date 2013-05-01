@@ -112,6 +112,7 @@ final class Lgp990
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,
@@ -234,7 +235,6 @@ final class Lgp990
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 16777216);
         $engine->setCapability('softkey_support', true);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(

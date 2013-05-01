@@ -112,6 +112,7 @@ final class PalmPre
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

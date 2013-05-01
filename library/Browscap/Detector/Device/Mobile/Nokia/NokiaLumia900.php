@@ -112,6 +112,7 @@ final class NokiaLumia900
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
@@ -223,10 +224,6 @@ final class NokiaLumia900
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
-        
-        // wurflkey: 
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         return $this;
     }

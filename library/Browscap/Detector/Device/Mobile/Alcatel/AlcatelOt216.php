@@ -112,6 +112,7 @@ final class AlcatelOt216
         'resolution_width'       => 128,
         'resolution_height'      => 128,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

@@ -67,7 +67,7 @@ final class SamsungGtp1010
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_galaxy_tab_ver1_subp1010', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -97,7 +97,7 @@ final class SamsungGtp1010
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P1000.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -109,12 +109,13 @@ final class SamsungGtp1010
         'rows'                   => 21,
         'max_image_width'        => 400,
         'max_image_height'       => 400,
-        'resolution_width'       => 600,
-        'resolution_height'      => 1024,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +140,7 @@ final class SamsungGtp1010
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

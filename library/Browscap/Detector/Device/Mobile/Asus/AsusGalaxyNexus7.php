@@ -112,6 +112,7 @@ final class AsusGalaxyNexus7
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true, // wurflkey: google_nexus7_ver1
@@ -235,8 +236,6 @@ final class AsusGalaxyNexus7
         // wurflkey: google_nexus7_ver1
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         return $this;
     }

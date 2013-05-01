@@ -112,6 +112,7 @@ final class AcerIconiaA500
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => false,
@@ -237,7 +238,6 @@ final class AcerIconiaA500
         
         if (4 == $osVersion) {
             $engine->setCapability('bmp', true);
-            $engine->setCapability('colors', 16777216);
         }
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(

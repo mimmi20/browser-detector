@@ -112,6 +112,7 @@ final class Lgp936
         'resolution_width'       => 720,
         'resolution_height'      => 1280,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

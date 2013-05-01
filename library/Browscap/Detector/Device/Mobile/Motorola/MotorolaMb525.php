@@ -112,6 +112,7 @@ final class MotorolaMb525
         'resolution_width'       => 480,
         'resolution_height'      => 854,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,
@@ -233,7 +234,6 @@ final class MotorolaMb525
         parent::detectDependProperties($browser, $engine, $os);
         
         // wurflkey: mot_mb525_ver1_sub_android221
-        $engine->setCapability('colors', 16777216);
         $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(

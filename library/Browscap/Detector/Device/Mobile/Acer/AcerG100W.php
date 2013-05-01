@@ -112,6 +112,7 @@ final class AcerG100W
         'resolution_width'       => 1280,
         'resolution_height'      => 768,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,

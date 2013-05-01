@@ -112,6 +112,7 @@ final class PalmPixi
         'resolution_width'       => 320,
         'resolution_height'      => 400,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

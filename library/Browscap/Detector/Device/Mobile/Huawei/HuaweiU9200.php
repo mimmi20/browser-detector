@@ -112,6 +112,7 @@ final class HuaweiU9200
         'resolution_width'       => 540,
         'resolution_height'      => 960,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
@@ -227,8 +228,6 @@ final class HuaweiU9200
         
         // wurflkey: huawei_u9200_ver1
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         return $this;
     }

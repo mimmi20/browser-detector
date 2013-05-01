@@ -112,6 +112,7 @@ final class HtcZ715eSensationXeBeats
         'resolution_width'       => 540,
         'resolution_height'      => 960,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

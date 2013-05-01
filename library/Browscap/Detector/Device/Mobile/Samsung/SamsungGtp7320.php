@@ -112,6 +112,7 @@ final class SamsungGtp7320
         'resolution_width'       => 800,
         'resolution_height'      => 1280,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

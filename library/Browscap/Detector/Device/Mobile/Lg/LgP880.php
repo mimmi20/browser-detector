@@ -112,6 +112,7 @@ final class LgP880
         'resolution_width'       => 720,
         'resolution_height'      => 1280,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
@@ -233,10 +234,7 @@ final class LgP880
         parent::detectDependProperties($browser, $engine, $os);
         
         // wurflkey: lg_p880_ver1
-        // $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('softkey_support', true);
         
         return $this;
     }

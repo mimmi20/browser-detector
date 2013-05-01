@@ -110,6 +110,7 @@ final class SpamCrawlerFake
             'extract',
             'ezooms',
             'facebookexternalhit',
+            'facebookplatform',
             'feedparser',
             'feed parser',
             'feedfetcher-google',

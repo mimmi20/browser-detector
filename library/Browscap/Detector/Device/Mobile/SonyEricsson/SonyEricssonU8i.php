@@ -112,6 +112,7 @@ final class SonyEricssonU8i
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

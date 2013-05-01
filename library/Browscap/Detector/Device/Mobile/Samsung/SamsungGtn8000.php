@@ -112,6 +112,7 @@ final class SamsungGtn8000
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true, // wurflkey: samsung_gt_n8000_ver1_suban41

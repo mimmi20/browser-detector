@@ -112,6 +112,7 @@ final class AcerIconiaA510
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => 4294967296,
         
         // sms
         'sms_enabled' => true, // wurflkey: acer_iconia_tab_a510_ver1
@@ -233,7 +234,6 @@ final class AcerIconiaA510
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
-        $engine->setCapability('colors', 4294967296);
         
         return $this;
     }

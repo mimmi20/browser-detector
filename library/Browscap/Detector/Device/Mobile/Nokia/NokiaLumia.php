@@ -112,6 +112,7 @@ final class NokiaLumia
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => null,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
@@ -227,10 +228,6 @@ final class NokiaLumia
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
-        
-        // wurflkey: 
-        // $engine->setCapability('colors', 16777216);
-        // $engine->setCapability('xhtml_file_upload', 'not_supported');
         
         return $this;
     }

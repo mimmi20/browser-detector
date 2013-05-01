@@ -1304,6 +1304,7 @@ final class Result
                     case 'resolution_width':
                     case 'resolution_height':
                     case 'dual_orientation':
+                    case 'colors':
                     case 'unique':
                     case 'phone_id_provided':
                     case 'max_deck_size':
@@ -1442,7 +1443,6 @@ final class Result
                     case 'bmp':
                     case 'wbmp':
                     case 'gif_animated':
-                    case 'colors':
                     case 'png':
                     case 'greyscale':
                     case 'transparent_png_index':

@@ -180,7 +180,13 @@ class Android
             new \Browscap\Detector\Browser\Mobile\Dalvik(),
             new \Browscap\Detector\Browser\Mobile\Silk(),
             new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
-            new \Browscap\Detector\Browser\Mobile\NetFrontLifeBrowser()
+            new \Browscap\Detector\Browser\Mobile\NetFrontLifeBrowser(),
+            new \Browscap\Detector\Browser\Bot\Googlebot(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\OperaTablet(),
+            new \Browscap\Detector\Browser\Mobile\Firefox(),
+            new \Browscap\Detector\Browser\Mobile\Fennec(),
         );
         
         $chain = new \Browscap\Detector\Chain();

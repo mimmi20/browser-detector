@@ -110,6 +110,7 @@ final class SonyDtv115
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,

@@ -112,6 +112,7 @@ final class Arnova7DG3
         'resolution_width'       => 800,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,

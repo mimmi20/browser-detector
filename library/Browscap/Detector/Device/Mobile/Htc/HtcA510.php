@@ -112,6 +112,7 @@ final class HtcA510
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,
@@ -240,7 +241,6 @@ final class HtcA510
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
         $engine->setCapability('gif_animated', true);
-        $engine->setCapability('colors', 262144);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;

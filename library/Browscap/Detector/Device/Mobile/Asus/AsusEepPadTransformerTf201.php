@@ -112,6 +112,7 @@ final class AsusEepPadTransformerTf201
         'resolution_width'       => 800,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
@@ -236,6 +237,10 @@ final class AsusEepPadTransformerTf201
         if ('Android' == $browser->getCapability('mobile_browser')) {
             if (4.0 == (float) $osVersion) {
                 $this->setCapability('wurflKey', 'asus_eee_pad_tf101_ver1_suban40');
+            }
+            
+            if (4.1 == (float) $osVersion) {
+                $this->setCapability('wurflKey', 'asus_eee_pad_tf201_ver1_suban41');
             }
         }
     }

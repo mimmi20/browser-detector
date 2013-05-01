@@ -112,6 +112,7 @@ final class HtcHd2
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

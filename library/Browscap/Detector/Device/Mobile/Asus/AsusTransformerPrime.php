@@ -112,6 +112,7 @@ final class AsusTransformerPrime
         'resolution_width'       => 800,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,
@@ -150,6 +151,10 @@ final class AsusTransformerPrime
     public function canHandle()
     {
         if (!$this->_utils->checkIfContains(array('Transformer Prime'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('Transformer TF201', 'Transformer Prime TF201', 'ASUS Transformer Pad TF700T'))) {
             return false;
         }
         

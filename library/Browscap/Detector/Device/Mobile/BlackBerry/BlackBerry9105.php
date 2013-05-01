@@ -112,6 +112,7 @@ final class BlackBerry9105
         'resolution_width'       => 360,
         'resolution_height'      => 400,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

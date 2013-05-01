@@ -67,7 +67,7 @@ final class V860
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'alcatel_v860_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,8 +97,8 @@ final class V860
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://www-ccpp.tcl-ta.com/files/Vodafone_Smart_II_3G.xml',
+        'uaprof2'                   => 'http://www-ccpp.tcl-ta.com/files/Vodafone_Smart_II.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -109,9 +109,10 @@ final class V860
         'rows'                   => 10,
         'max_image_width'        => 320,
         'max_image_height'       => 280,
-        'resolution_width'       => 480,
-        'resolution_height'      => 320,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

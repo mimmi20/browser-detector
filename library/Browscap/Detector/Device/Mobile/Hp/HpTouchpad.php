@@ -80,7 +80,7 @@ final class HpTouchpad
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Touchpad',
+        'model_name'                => 'TouchPad',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HP',
         'brand_name'                => 'HP',
@@ -112,6 +112,7 @@ final class HpTouchpad
         'resolution_width'       => 1024,
         'resolution_height'      => 768,
         'dual_orientation'       => true,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true, // wurflkey: hp_touchpad_ver1
@@ -235,7 +236,6 @@ final class HpTouchpad
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        $engine->setCapability('colors', 262144);
         $engine->setCapability('xhtml_avoid_accesskeys', false);
         $engine->setCapability('xhtml_supports_forms_in_table', false);
         $engine->setCapability('xhtml_allows_disabled_form_elements', false);

@@ -112,6 +112,7 @@ final class SamsungGti9000
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,
@@ -233,7 +234,6 @@ final class SamsungGti9000
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        $engine->setCapability('colors', 16777216);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR

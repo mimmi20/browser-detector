@@ -112,6 +112,7 @@ final class CatNova8
         'resolution_width'       => 800,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true, // wurflkey: weltbild_catnova8_ver1

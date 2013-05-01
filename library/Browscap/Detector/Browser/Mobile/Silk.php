@@ -170,7 +170,6 @@ class Silk
         $engine->setCapability('xhtml_format_as_css_property', true);
         $engine->setCapability('xhtml_marquee_as_css_property', true);
         $engine->setCapability('jpg', false);
-        $engine->setCapability('colors', 256);
         $engine->setCapability('png', false);
         $engine->setCapability('transparent_png_index', false);
         $engine->setCapability('transparent_png_alpha', false);

@@ -112,6 +112,7 @@ final class ZopoZp980
         'resolution_width'       => 1080,
         'resolution_height'      => 1920,
         'dual_orientation'       => true,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

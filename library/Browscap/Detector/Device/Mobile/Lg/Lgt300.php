@@ -112,6 +112,7 @@ final class Lgt300
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,

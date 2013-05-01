@@ -193,7 +193,6 @@ class Blackberry
         $engine->setCapability('xhtml_supports_table_for_layout', false);
         $engine->setCapability('bmp', false);
         $engine->setCapability('wbmp', true);
-        $engine->setCapability('colors', 256);
         $engine->setCapability('max_url_length_in_requests', 256);
         $engine->setCapability('ajax_preferred_geoloc_api', 'gears');
         $engine->setCapability('is_sencha_touch_ok', false);
@@ -204,6 +203,12 @@ class Blackberry
         $engine->setCapability('css_border_image', 'none');
         $engine->setCapability('css_rounded_corners', 'none');
         $engine->setCapability('wml_1_1', true);
+        
+        $browserVersion = $this->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+        
+        if ($browserVersion >= 6.0) {
+            $this->setCapability('pdf_support', true);
+        }
         
         return $this;
     }

@@ -41,14 +41,7 @@ namespace Browscap\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
+use \Browscap\Detector\Browser\General\OpenVas as DefaultOpenVas;
 
 /**
  * @category  Browscap
@@ -57,99 +50,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class OpenVas
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+class OpenVas extends DefaultOpenVas
 {
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        'is_bot'             => true,
-        'is_transcoder'      => false,
-        
-        // browser
-        'mobile_browser'              => 'OpenVAS',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'openvas.org', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => false,
-        'device_claims_web_support' => false,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
-    
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->_utils->checkIfContains(array('OpenVAS'))) {
-            return false;
-        }
-        
-        return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 19123;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('OpenVAS');
-        
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-        
-        return $this;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectEngine()
-    {
-        $handler = new \Browscap\Detector\Engine\Unknown();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
+    // nothing to do
 }

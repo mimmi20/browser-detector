@@ -110,6 +110,7 @@ final class DlinkDsm380
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => false,

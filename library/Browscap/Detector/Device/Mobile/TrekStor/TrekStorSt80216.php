@@ -112,6 +112,7 @@ final class TrekStorSt80216
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => false,
+        'colors'                 => null,
         
         // sms
         'sms_enabled' => true,
