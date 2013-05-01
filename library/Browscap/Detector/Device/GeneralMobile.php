@@ -423,9 +423,9 @@ final class GeneralMobile
         if ('Opera Mini' == $browser->getCapability('mobile_browser')
             && 'Android' == $os->getCapability('device_os')
         ) {
-            $browserVersion = $browser->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
             
-            if (5.0 == (float) $browserVersion) {
+            if (5.0 == (float) $osVersion) {
                 $this->setCapability('wurflKey', 'generic_opera_mini_android_version5');
             }
         }

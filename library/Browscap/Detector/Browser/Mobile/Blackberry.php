@@ -204,9 +204,9 @@ class Blackberry
         $engine->setCapability('css_rounded_corners', 'none');
         $engine->setCapability('wml_1_1', true);
         
-        $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORMINOR);
+        $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
         
-        if ($browserVersion >= 6.0) {
+        if ($osVersion >= 6.0) {
             $this->setCapability('pdf_support', true);
         }
         

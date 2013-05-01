@@ -112,6 +112,7 @@ final class Ipod
         'resolution_width'       => 320, // wurflkey: apple_ipod_touch_ver5
         'resolution_height'      => 480, // wurflkey: apple_ipod_touch_ver5
         'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => false,
