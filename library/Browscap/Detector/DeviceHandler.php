@@ -48,6 +48,7 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Result;
 
 /**
  * WURFL_Handlers_Handler is the base class that combines the classification of
@@ -71,6 +72,13 @@ abstract class DeviceHandler
      * @var \Browscap\Helper\Utils the helper class
      */
     protected $_utils = null;
+    
+    /**
+     * should the device render the content like another?
+     *
+     * @var \Browscap\Detector\Result
+     */
+    protected $_renderAs = null;
     
     /**
      * a \Zend\Cache object
@@ -822,5 +830,29 @@ abstract class DeviceHandler
     public function getCapabilities() 
     {
         return $this->_properties;
+    }
+    
+    /**
+     * sets a second device for rendering properties
+     *
+     * @var \Browscap\Detector\Result $result
+     *
+     * @return DeviceHandler
+     */
+    public function setRenderAs(Result $result)
+    {
+        $this->_renderAs = $result;
+        
+        return $this;
+    }
+    
+    /**
+     * sets a second device for rendering properties
+     *
+     * @return \Browscap\Detector\Result
+     */
+    public function getRenderAs()
+    {
+        return $this->_renderAs;
     }
 }

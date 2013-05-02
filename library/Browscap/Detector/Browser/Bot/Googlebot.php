@@ -143,4 +143,30 @@ class Googlebot
     {
         return 724458;
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        if ($this->_utils->checkIfContains('compatible; Googlebot')) {
+            $agent = str_replace(
+                array('googlebot', 'www.google.com/bot.html'),
+                '', $this->_useragent
+            );
+            
+            $detector = new \Browscap\Input\UserAgent();
+            $detector->setAgent($agent);
+            
+            $device->setRenderAs($detector->getBrowser());
+        }
+        
+        return $this;
+    }
 }

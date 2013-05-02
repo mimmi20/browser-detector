@@ -113,7 +113,7 @@ final class Idl6651n
         'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -138,7 +138,7 @@ final class Idl6651n
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

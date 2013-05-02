@@ -84,7 +84,7 @@ final class NokiaLumia800
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
-        'model_extra_info'          => null,
+        'model_extra_info'          => 'Vodafone',
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',

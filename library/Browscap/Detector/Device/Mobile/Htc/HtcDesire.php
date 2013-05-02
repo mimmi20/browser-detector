@@ -103,12 +103,12 @@ final class HtcDesire
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 49,
-        'physical_screen_height' => 80,
-        'columns'                => 25,
-        'rows'                   => 21,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
         'max_image_width'        => 320,
-        'max_image_height'       => 760,
+        'max_image_height'       => 400,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
@@ -255,6 +255,13 @@ final class HtcDesire
             if ($this->_utils->checkIfContains('HTC Desire 2.')) {
                 $this->setCapability('wurflKey', 'htc_desire_ver1_sub22_subbravo');
             }
+        }
+        
+        if (2.3 == (float) $osVersion) {
+            $this->setCapability('wurflKey', 'htc_desirehd_ver1_suban233');
+            $this->setCapability('uaprof', 'http://www.htcmms.com.tw/Android/Common/DesireHD/ua-profile.xml');
+            
+            $engine->setCapability('bmp', false);
         }
         
         return $this;

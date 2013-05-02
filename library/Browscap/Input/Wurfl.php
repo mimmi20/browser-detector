@@ -426,8 +426,13 @@ final class Wurfl extends Core
                         $apiVer = null;
                     }
                     break;
+                case 'fennec':
+                    $apiBro = 'Firefox';
+                    $apiVer = null;
+                    break;
                 case 'safari':
                     $apiBro = 'Safari';
+                    $apiVer = '';
                     break;
                 case 'opera':
                     $apiBro = 'Opera';
@@ -499,6 +504,11 @@ final class Wurfl extends Core
                     $apiTv      = true;
                     $apiDev     = 'general TV Device';
                     $apiBro     = 'unknown';
+                    break;
+                case 'android':
+                    if ('4.01' == $apiVer) {
+                        $apiVer = '4.0.1';
+                    }
                     break;
                 default:
                     // nothing to do here

@@ -112,6 +112,7 @@ final class HtcS510eDesireS
         'resolution_width'       => 320, // wurflkey: htc_s510e_ver1_subdesires
         'resolution_height'      => 480, // wurflkey: htc_s510e_ver1_subdesires
         'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

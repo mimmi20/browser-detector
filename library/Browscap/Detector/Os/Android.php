@@ -186,7 +186,6 @@ class Android
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\OperaTablet(),
             new \Browscap\Detector\Browser\Mobile\Firefox(),
-            new \Browscap\Detector\Browser\Mobile\Fennec(),
         );
         
         $chain = new \Browscap\Detector\Chain();

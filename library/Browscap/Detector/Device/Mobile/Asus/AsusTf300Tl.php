@@ -115,7 +115,7 @@ final class AsusTf300Tl
         'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class AsusTf300Tl
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

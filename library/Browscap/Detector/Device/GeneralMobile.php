@@ -127,7 +127,7 @@ final class GeneralMobile
         'max_object_size' => 0,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -152,7 +152,7 @@ final class GeneralMobile
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**
@@ -222,7 +222,9 @@ final class GeneralMobile
             $this->setCapability('resolution_width', 800);
             $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', true);
-            $this->setCapability('can_assign_phone_number', false);
+            $this->setCapability('can_assign_phone_number', true);
+            $this->setCapability('sms_enabled', true);
+            $this->setCapability('nfc_support', true);
             
             $this->setCapability('device_type', 'Tablet');
             
@@ -430,8 +432,7 @@ final class GeneralMobile
             }
         }
         
-        if (('Android Webkit' == $browser->getCapability('mobile_browser')
-            || 'Fennec' == $browser->getCapability('mobile_browser'))
+        if ('Android Webkit' == $browser->getCapability('mobile_browser')
             && 'Android' == $os->getCapability('device_os')
         ) {
             $this->setCapability('has_qwerty_keyboard', true);

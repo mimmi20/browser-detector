@@ -115,7 +115,7 @@ final class ArchosA70H2
         'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => false,
+        'sms_enabled' => true,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class ArchosA70H2
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => false,
+        'nfc_support' => true,
     );
     
     /**

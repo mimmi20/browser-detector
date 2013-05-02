@@ -112,6 +112,7 @@ final class SonyEricssonSK17i
         'resolution_width'       => 320, // wurflkey: sonyericsson_sk17i_ver1
         'resolution_height'      => 480, // wurflkey: sonyericsson_sk17i_ver1
         'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

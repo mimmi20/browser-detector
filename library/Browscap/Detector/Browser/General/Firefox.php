@@ -109,7 +109,12 @@ class Firefox
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho', 'Namoroka'))) {
+        $firefoxCodes = array(
+            'Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho',
+            'Namoroka', 'Fennec'
+        );
+        
+        if (!$this->_utils->checkIfContains($firefoxCodes)) {
             return false;
         }
         
@@ -126,7 +131,6 @@ class Firefox
             'PaleMoon',
             'SeaMonkey',
             'Flock',
-            'Fennec',
             'IceCat',
             'Iceweasel',
             'Iceowl',
@@ -163,7 +167,7 @@ class Firefox
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
         
         $searches = array(
-            'Firefox', 'Minefield', 'Shiretoko', 'BonEcho', 'Namoroka'
+            'Firefox', 'Minefield', 'Shiretoko', 'BonEcho', 'Namoroka', 'Fennec'
         );
         
         $this->setCapability(

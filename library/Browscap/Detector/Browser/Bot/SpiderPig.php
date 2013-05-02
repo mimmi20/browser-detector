@@ -119,4 +119,27 @@ class SpiderPig
     {
         return 3;
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        if ($this->_utils->checkIfContains('Spider-Pig')) {
+            $agent = str_replace(array('Spider-Pig'), '', $this->_useragent);
+            
+            $detector = new \Browscap\Input\UserAgent();
+            $detector->setAgent($agent);
+            
+            $device->setRenderAs($detector->getBrowser());
+        }
+        
+        return $this;
+    }
 }

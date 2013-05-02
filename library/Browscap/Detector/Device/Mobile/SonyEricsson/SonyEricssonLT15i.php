@@ -196,13 +196,13 @@ final class SonyEricssonLT15i
                 'uaprof', 'http://wap.sonyericsson.com/UAprof/LT15iR411.xml'
             );
         }
-        
+        /*
         if ($this->_utils->checkIfContains(array('Build/4.0.2'))) {
             $this->setCapability(
                 'uaprof', 'http://wap.sonyericsson.com/UAprof/LT15iR402.xml'
             );
         }
-        
+        */
         return $this;
     }
     

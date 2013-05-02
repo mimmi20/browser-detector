@@ -112,6 +112,7 @@ final class HtcDesireS
         'resolution_width'       => 480, // wurflkey: htc_desire_s_ver1
         'resolution_height'      => 800, // wurflkey: htc_desire_s_ver1
         'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
