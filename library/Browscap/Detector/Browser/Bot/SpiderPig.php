@@ -131,8 +131,8 @@ class SpiderPig
     {
         parent::detectDependProperties($engine, $os, $device);
         
-        if ($this->_utils->checkIfContains('Spider-Pig')) {
-            $agent = str_replace(array('Spider-Pig'), '', $this->_useragent);
+        if ($this->_utils->checkIfContains('spider-pig', true)) {
+            $agent = str_ireplace(array('spider-pig'), '', $this->_useragent);
             
             $detector = new \Browscap\Input\UserAgent();
             $detector->setAgent($agent);

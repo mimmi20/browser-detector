@@ -156,7 +156,7 @@ class Googlebot
         parent::detectDependProperties($engine, $os, $device);
         
         if ($this->_utils->checkIfContains('compatible; Googlebot')) {
-            $agent = str_replace(
+            $agent = str_ireplace(
                 array('googlebot', 'www.google.com/bot.html'),
                 '', $this->_useragent
             );
