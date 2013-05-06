@@ -221,4 +221,23 @@ final class ZteBaseTab
         
         return $chain->detect();
     }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
+        
+        $searches = array('BASE Tab');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
+        return $this;
+    }
 }

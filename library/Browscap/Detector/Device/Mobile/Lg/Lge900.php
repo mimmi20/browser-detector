@@ -112,7 +112,7 @@ final class Lge900
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 4294967296,
         
         // sms
         'sms_enabled' => true,

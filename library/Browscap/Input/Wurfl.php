@@ -395,6 +395,7 @@ final class Wurfl extends Core
                             $apiBro = 'Internet Explorer';
                             $apiVer = '9.0';
                             $apiDev = 'Xbox 360';
+                            $apiMan = 'Microsoft';
                             break;
                         default:
                             // nothing to do

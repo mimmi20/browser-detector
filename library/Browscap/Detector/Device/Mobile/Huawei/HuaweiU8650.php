@@ -67,7 +67,7 @@ final class HuaweiU8650
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_u8650_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -220,5 +220,23 @@ final class HuaweiU8650
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: huawei_u8650_ver1
+        $engine->setCapability('bmp', true);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

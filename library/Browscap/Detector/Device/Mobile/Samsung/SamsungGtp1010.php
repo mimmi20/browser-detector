@@ -112,7 +112,7 @@ final class SamsungGtp1010
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216, // wurflkey: samsung_galaxy_tab_ver1_subp1010
         
         // sms
         'sms_enabled' => true,

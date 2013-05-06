@@ -112,7 +112,7 @@ final class MotorolaMz604
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => false,

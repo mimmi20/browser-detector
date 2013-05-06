@@ -57,86 +57,6 @@ final class MobileDevice
     private $_utils = null;
     
     /**
-     * @var array Collection of mobile browser keywords
-     */
-    private $_mobileBrowsers = array(
-        'android',
-        'arm; touch',
-        'aspen simulator',
-        'bada',
-        'blackberry',
-        'blazer',
-        'bolt',
-        'brew',
-        'cldc',
-        'dalvik',
-        'danger hiptop',
-        'eeepc',
-        'embider',
-        'fennec',
-        'firefox or ie',
-        'foma',
-        'folio100',
-        'gingerbread',
-        'hd_mini_t',
-        'hp-tablet',
-        'hpwOS',
-        'htc',
-        'ipad',
-        'iphone',
-        'iphoneosx',
-        'iphone os',
-        'ipod',
-        'iris',
-        'iuc(u;ios',
-        'j2me',
-        'juc(linux;u;',
-        'kindle',
-        'lenovo',
-        'like mac os x',
-        'look-alike',
-        'maemo',
-        'meego',
-        'midp',
-        'netfront',
-        'nintendo',
-        'nitro',
-        'nokia',
-        'obigo',
-        'openwave',
-        'opera mini',
-        'opera mobi',
-        'palm',
-        'phone',
-        'playstation',
-        'pocket pc',
-        'pocketpc',
-        'rim tablet',
-        'samsung',
-        'series40',
-        'series 60',
-        'silk',
-        'symbian',
-        'symbianos',
-        'symbos',
-        'toshiba_ac_and_az',
-        'touchpad',
-        'transformer tf',
-        'up.browser',
-        'up.link',
-        'xblwp7',
-        'wap2',
-        'webos',
-        'wetab-browser',
-        'windows ce',
-        'windows mobile',
-        'windows phone os',
-        'wireless',
-        'xda_diamond_2',
-        'zunewp7'
-    );
-    
-    /**
      * Class Constructor
      *
      * @return DeviceHandler
@@ -166,14 +86,94 @@ final class MobileDevice
      */
     public function isMobileBrowser()
     {
-        if ($this->_utils->checkIfContains($this->_mobileBrowsers, true)) {
-            $noBots = array(
+        /**
+         * @var array Collection of mobile browser keywords
+         */
+        $mobileBrowsers = array(
+            'android',
+            'arm; touch',
+            'aspen simulator',
+            'bada',
+            'blackberry',
+            'blazer',
+            'bolt',
+            'brew',
+            'cldc',
+            'dalvik',
+            'danger hiptop',
+            'eeepc',
+            'embider',
+            'fennec',
+            'firefox or ie',
+            'foma',
+            'folio100',
+            'gingerbread',
+            'hd_mini_t',
+            'hp-tablet',
+            'hpwOS',
+            'htc',
+            'ipad',
+            'iphone',
+            'iphoneosx',
+            'iphone os',
+            'ipod',
+            'iris',
+            'iuc(u;ios',
+            'j2me',
+            'juc(linux;u;',
+            'kindle',
+            'lenovo',
+            'like mac os x',
+            'look-alike',
+            'maemo',
+            'meego',
+            'midp',
+            'netfront',
+            'nintendo',
+            'nitro',
+            'nokia',
+            'obigo',
+            'openwave',
+            'opera mini',
+            'opera mobi',
+            'palm',
+            'phone',
+            'playstation',
+            'pocket pc',
+            'pocketpc',
+            'rim tablet',
+            'samsung',
+            'series40',
+            'series 60',
+            'silk',
+            'symbian',
+            'symbianos',
+            'symbos',
+            'toshiba_ac_and_az',
+            'touchpad',
+            'transformer tf',
+            'up.browser',
+            'up.link',
+            'xblwp7',
+            'wap2',
+            'webos',
+            'wetab-browser',
+            'windows ce',
+            'windows mobile',
+            'windows phone os',
+            'wireless',
+            'xda_diamond_2',
+            'zunewp7'
+        );
+        if ($this->_utils->checkIfContains($mobileBrowsers, true)) {
+            $noMobiles = array(
                 'xbox', 'badab', 'badap', 'simbar',
                 'google wireless transcoder', 'google-tr', 'googlet', 
-                'google page speed', 'google web preview', 'eeepc'
+                'google page speed', 'google web preview', 'eeepc',
+                'i9988_custom', 'i9999_custom'
             );
             
-            if ($this->_utils->checkIfContains($noBots, true)) {
+            if ($this->_utils->checkIfContains($noMobiles, true)) {
                 return false;
             }
             

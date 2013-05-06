@@ -225,6 +225,10 @@ final class NokiaLumia710
     {
         parent::detectDependProperties($browser, $engine, $os);
         
+        if ($this->_utils->checkIfContains('vodafone', true)) {
+            $this->setCapability('model_extra_info', 'Vodafone branding');
+        }
+        
         return $this;
     }
 }

@@ -67,7 +67,7 @@ final class SonyEricssonMT15i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_mt15i_ver1_suban233', // not in wurfl
+        'wurflKey' => 'sonyericsson_mt15i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

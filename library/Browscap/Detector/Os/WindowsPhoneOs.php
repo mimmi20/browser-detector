@@ -166,4 +166,22 @@ class WindowsPhoneOs
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device)
+    {
+        parent::detectDependProperties($browser, $engine, $device);
+        
+        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
+        }
+        
+        return $this;
+    }
 }

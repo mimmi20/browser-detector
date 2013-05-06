@@ -115,7 +115,7 @@ final class AcerIconiaA211
         'colors'                 => 4294967296,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class AcerIconiaA211
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**

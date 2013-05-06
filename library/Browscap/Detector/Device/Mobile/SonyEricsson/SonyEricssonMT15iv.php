@@ -67,7 +67,7 @@ final class SonyEricssonMT15iv
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_mt15i_ver1_suban233', // not in wurfl
+        'wurflKey' => 'sonyericsson_mt15i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -244,6 +244,8 @@ final class SonyEricssonMT15iv
     {
         parent::detectDependProperties($browser, $engine, $os);
         
+        // wurflkey: sonyericsson_mt15i_ver1_suban233
+        $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;

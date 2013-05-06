@@ -218,4 +218,23 @@ final class PlayStation3
         
         return $handler->detect();
     }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _detectDeviceVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
+        
+        $searches = array('PLAYSTATION 3');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
+        return $this;
+    }
 }

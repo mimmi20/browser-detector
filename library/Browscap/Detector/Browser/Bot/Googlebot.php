@@ -157,7 +157,10 @@ class Googlebot
         
         if ($this->_utils->checkIfContains('compatible; Googlebot')) {
             $agent = str_ireplace(
-                array('googlebot', 'www.google.com/bot.html'),
+                array(
+                    'googlebot-image', 'googlebot-news', 'googlebot-mobile',
+                    'googlebot', 'www.google.com/bot.html'
+                ),
                 '', $this->_useragent
             );
             

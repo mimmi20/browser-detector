@@ -115,7 +115,7 @@ final class AsusEepPadTransformerTf101g
         'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,

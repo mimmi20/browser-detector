@@ -112,7 +112,7 @@ final class NokiaN800
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
         
         // sms
         'sms_enabled' => true,
@@ -213,5 +213,24 @@ final class NokiaN800
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        if (!$this->_utils->checkIfContains(array('Series60/5.3'))) {
+            $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
+            $this->setCapability('colors', 16777216);
+        }
+        
+        return $this;
     }
 }

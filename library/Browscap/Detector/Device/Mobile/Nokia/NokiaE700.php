@@ -112,7 +112,7 @@ final class NokiaE700
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216, // wurflkey: nokia_e7_00_ver1_subua53
         
         // sms
         'sms_enabled' => true,

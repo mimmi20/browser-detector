@@ -112,7 +112,7 @@ final class BlackBerry9900
         'resolution_width'       => 640,
         'resolution_height'      => 480,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 256, // wurflkey: blackberry9900_ver1_subua71
         
         // sms
         'sms_enabled' => true,

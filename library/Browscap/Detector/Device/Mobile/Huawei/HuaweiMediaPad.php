@@ -112,10 +112,10 @@ final class HuaweiMediaPad
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 4294967296,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class HuaweiMediaPad
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -220,5 +220,23 @@ final class HuaweiMediaPad
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: huawei_mediapad_ver1_suban40
+        $engine->setCapability('bmp', true);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

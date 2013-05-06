@@ -115,7 +115,7 @@ final class AcerIconiaA500
         'colors'                 => 16777216,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class AcerIconiaA500
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -244,9 +244,10 @@ final class AcerIconiaA500
             Version::MAJORMINOR
         );
         
-        if ('Android' == $browser->getCapability('mobile_browser')) {
+        if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
             if (3.2 == (float) $osVersion) {
                 $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban32');
+                $this->setCapability('colors', 65536);
             }
             
             if (4.0 == (float) $osVersion) {

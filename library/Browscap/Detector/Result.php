@@ -55,6 +55,13 @@ namespace Browscap\Detector;
 final class Result
 {
     /**
+     * should the device render the content like another?
+     *
+     * @var \Browscap\Detector\Result
+     */
+    private $_renderAs = null;
+    
+    /**
      * the detected browser properties
      *
      * @var Stdfinal class
@@ -114,6 +121,7 @@ final class Result
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => null,
+        'colors'                 => null,
         
         // browser
         'mobile_browser'              => null,
@@ -205,7 +213,6 @@ final class Result
         'bmp' => null,
         'wbmp' => null,
         'gif_animated' => null,
-        'colors' => null,
         'png' => null,
         'greyscale' => null,
         'transparent_png_index' => null,
@@ -821,13 +828,25 @@ final class Result
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
         
-        $browser = $this->getCapability('mobile_browser');
+        if (null !== $this->getRenderAs()) {
+            $object = clone $this->getRenderAs();
+            
+            $browser = $object->getCapability('mobile_browser');
+            
+            if ('unknown' == strtolower($browser)) {
+                $object = clone $this;
+            }
+        } else {
+            $object = clone $this;
+        }
+        
+        $browser = $object->getCapability('mobile_browser');
         
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('mobile_browser_version')->getVersion(
+        $version = $object->getCapability('mobile_browser_version')->getVersion(
             $mode
         );
         
@@ -837,19 +856,25 @@ final class Result
         
         $additional = array();
         
-        $modus = $this->getCapability('mobile_browser_modus');
+        $modus = $object->getCapability('mobile_browser_modus');
         
         if ($modus) {
             $additional[] = $modus;
         }
         
-        $bits = $this->getCapability('mobile_browser_bits');
+        $bits = $object->getCapability('mobile_browser_bits');
         
         if ($bits && $withBits) {
             $additional[] = $bits . ' Bit';
         }
         
         $browser .= (!empty($additional) ? ' (' . implode(', ', $additional) . ')' : '');
+        
+        if (null !== $this->getRenderAs()) {
+            $browser .= ' ['
+                . $this->getRenderAs()->getFullBrowser($withBits, $mode)
+                . ']';
+        }
         
         return trim($browser);
     }
@@ -860,14 +885,26 @@ final class Result
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
-        $name = $this->getCapability('device_os');
+        if (null !== $this->getRenderAs()) {
+            $object = clone $this->getRenderAs();
+            
+            $name = $this->getCapability('device_os');
+            
+            if ('unknown' == strtolower($name)) {
+                $object = clone $this;
+            }
+        } else {
+            $object = clone $this;
+        }
+        
+        $name = $object->getCapability('device_os');
         
         if ('unknown' == strtolower($name)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('device_os_version')->getVersion($mode);
-        $bits    = $this->getCapability('device_os_bits');
+        $version = $object->getCapability('device_os_version')->getVersion($mode);
+        $bits    = $object->getCapability('device_os_bits');
         
         $os = $name
             . ($name != $version && '' != $version ? ' ' . $version : '')
@@ -883,13 +920,25 @@ final class Result
      */
     public function getFullDevice($withManufacturer = false)
     {
-        $device  = $this->getCapability('model_name');
+        if (null !== $this->getRenderAs()) {
+            $object = clone $this->getRenderAs();
+            
+            $device  = $this->getCapability('model_name');
+            
+            if ('unknown' == strtolower($device)) {
+                $object = clone $this;
+            }
+        } else {
+            $object = clone $this;
+        }
+        
+        $device = $object->getCapability('model_name');
         
         if ('unknown' == strtolower($device)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('model_version')->getVersion(Version::MAJORMINOR);
+        $version = $object->getCapability('model_version')->getVersion(Version::MAJORMINOR);
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
         if ($withManufacturer) {
@@ -918,13 +967,24 @@ final class Result
      */
     public function getFullEngine($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
-        $engine  = $this->getCapability('renderingengine_name');
+        if (null !== $this->getRenderAs()) {
+            $object = clone $this->getRenderAs();
+            
+            $engine  = $this->getCapability('renderingengine_name');
+            
+            if ('unknown' == strtolower($engine)) {
+                $object = clone $this;
+            }
+        } else {
+            $object = clone $this;
+        }
+        $engine  = $object->getCapability('renderingengine_name');
         
         if ('unknown' == strtolower($engine)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('renderingengine_version')->getVersion(
+        $version = $object->getCapability('renderingengine_version')->getVersion(
             $mode
         );
         
@@ -1487,6 +1547,32 @@ final class Result
             $this->setCapability($property, $value);
         }
         
+        $this->setRenderAs($device->getRenderAs());
+        
         return $this;
+    }
+    
+    /**
+     * sets a second device for rendering properties
+     *
+     * @var \Browscap\Detector\Result $result
+     *
+     * @return DeviceHandler
+     */
+    public function setRenderAs(Result $result)
+    {
+        $this->_renderAs = $result;
+        
+        return $this;
+    }
+    
+    /**
+     * sets a second device for rendering properties
+     *
+     * @return \Browscap\Detector\Result
+     */
+    public function getRenderAs()
+    {
+        return $this->_renderAs;
     }
 }

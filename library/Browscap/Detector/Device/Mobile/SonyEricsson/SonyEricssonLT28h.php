@@ -67,7 +67,7 @@ final class SonyEricssonLT28h
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_lt28i_ver1_subuah', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -224,5 +224,23 @@ final class SonyEricssonLT28h
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: sonyericsson_lt28i_ver1_subuah
+        $engine->setCapability('bmp', true);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

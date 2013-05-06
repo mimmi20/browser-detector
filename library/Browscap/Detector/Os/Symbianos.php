@@ -92,6 +92,35 @@ class Symbianos
     }
     
     /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $this->_useragent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        if ($this->_utils->checkIfContains(array('Symbian/3'))) {
+            $this->setCapability(
+                'device_os_version', 
+                $detector->setVersion('S3')
+            );
+            
+            return;
+        }
+        
+        $searches = array('Symbian');
+        
+        $this->setCapability(
+            'device_os_version', 
+            $detector->detectVersion($searches)
+        );
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

@@ -112,7 +112,7 @@ final class V860
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,
@@ -220,5 +220,23 @@ final class V860
         $chain->setHandlers($os);
         
         return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: alcatel_v860_ver1
+        $engine->setCapability('bmp', true);
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

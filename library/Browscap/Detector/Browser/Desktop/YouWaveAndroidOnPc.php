@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class WiJobRoboter
+class YouWaveAndroidOnPc
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -70,18 +70,18 @@ class WiJobRoboter
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_bot'             => true,
+        'is_bot'             => false,
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'WI Job Roboter',
+        'mobile_browser'              => 'YouWave Android on PC',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'www.webintegration.at', // not in wurfl
+        'mobile_browser_manufacturer' => 'youwave.com', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => false,
+        'can_skip_aligned_link_row' => true,
         'device_claims_web_support' => false,
         
         // pdf
@@ -103,7 +103,7 @@ class WiJobRoboter
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('WI Job Roboter')) {
+        if (!$this->_utils->checkIfContains(array('i9988_custom', 'i9999_custom'))) {
             return false;
         }
         
@@ -117,13 +117,18 @@ class WiJobRoboter
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
+        $version = '';
         
-        $searches = array('WI Job Roboter Spider Version');
+        if ($this->_utils->checkIfContains(array('i9988_custom'))) {
+            $version = 'Basic';
+        } elseif ($this->_utils->checkIfContains(array('i9999_custom'))) {
+            $version = 'Home';
+        }
+        
+        
         
         $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
+            'mobile_browser_version', $detector->setVersion($version)
         );
         
         return $this;
@@ -136,6 +141,20 @@ class WiJobRoboter
      */
     public function getWeight()
     {
-        return 3;
+        return 5;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

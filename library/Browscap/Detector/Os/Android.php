@@ -226,7 +226,10 @@ class Android
         $engine->setCapability('elective_forms_recommended', true);
         $engine->setCapability('menu_with_list_of_links_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
-        $engine->setCapability('is_sencha_touch_ok', false);
+        
+        if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
+            $engine->setCapability('is_sencha_touch_ok', false);
+        }
         
         return $this;
     }

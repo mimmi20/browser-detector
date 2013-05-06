@@ -277,6 +277,14 @@ class Android
             $engine->setCapability('bmp', true);
         }
         
+        $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ($browserVersion <= 2.1) {
+            $engine->setCapability('jqm_grade', 'C');
+        }
+        
         if (($this->_utils->checkIfContains('(Linux; U;')
             && !$this->_utils->checkIfContains('Android'))
             || $this->_utils->checkIfContains('Max OS X')

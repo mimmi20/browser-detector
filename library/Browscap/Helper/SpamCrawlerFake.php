@@ -136,6 +136,7 @@ final class SpamCrawlerFake
             'nagios',
             'naver',
             'nutch',
+            'openvas',
             'opera/9.751',
             'ossproxy',
             'parser',
