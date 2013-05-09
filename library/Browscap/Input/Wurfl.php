@@ -292,6 +292,9 @@ final class Wurfl extends Core
                 case 'sensationxe beats z715e':
                     $apiDev = 'Sensation XE Beats Z715e';
                     break;
+                case 'asus-padfone':
+                    $apiDev = 'PadFone';
+                    break;
                 default:
                     // nothing to do here
                     break;

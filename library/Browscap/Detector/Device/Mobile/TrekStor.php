@@ -150,7 +150,7 @@ final class TrekStor
     public function canHandle()
     {
         $trekStorPhones = array(
-            'TrekStor', 'ST70104'
+            'TrekStor', 'ST70104', 'ST10216-1'
         );
         
         if ($this->_utils->checkIfContains($trekStorPhones)) {
@@ -220,16 +220,9 @@ final class TrekStor
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

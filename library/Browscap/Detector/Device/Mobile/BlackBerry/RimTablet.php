@@ -67,7 +67,7 @@ final class RimTablet
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'rim_playbook_ver1_subos2', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl

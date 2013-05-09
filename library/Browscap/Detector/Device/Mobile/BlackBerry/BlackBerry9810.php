@@ -67,7 +67,7 @@ final class BlackBerry9810
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9810_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -112,7 +112,7 @@ final class BlackBerry9810
         'resolution_width'       => 480,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216, // wurflkey: blackberry9810_ver1
         
         // sms
         'sms_enabled' => true,

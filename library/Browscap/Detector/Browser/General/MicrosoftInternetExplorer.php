@@ -160,6 +160,7 @@ class MicrosoftInternetExplorer
             // mobile IE
             'XBLWP7',
             'ZuneWP7',
+            'WPDesktop',
             // Fakes
             'Mac; Mac OS '
         );

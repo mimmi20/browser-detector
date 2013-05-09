@@ -239,6 +239,7 @@ final class BlackBerry9900
                 'uaprof',
                 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900/7.0.0.rdf'
             );
+            $this->setCapability('wurflKey', 'blackberry9900_ver1_sub_os7');
         }
         
         parent::detectDependProperties($browser, $engine, $os);

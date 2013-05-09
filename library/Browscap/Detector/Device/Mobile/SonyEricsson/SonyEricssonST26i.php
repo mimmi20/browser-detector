@@ -67,7 +67,7 @@ final class SonyEricssonST26i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_st26i_ver1', // not in wurfl
+        'wurflKey' => 'sony_st26i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -82,10 +82,10 @@ final class SonyEricssonST26i
         // device
         'model_name'                => 'ST26i',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
+        'manufacturer_name'         => 'Sony',
+        'brand_name'                => 'Sony',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Xperia U',
+        'marketing_name'            => 'Xperia J',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -112,7 +112,7 @@ final class SonyEricssonST26i
         'resolution_width'       => 480,
         'resolution_height'      => 854,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,
@@ -150,11 +150,11 @@ final class SonyEricssonST26i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SonyEricssonST26i', 'ST26i'))) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonST26i', 'SonyST26i', 'ST26i'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('SonyEricssonST26iv', 'ST26iv'))) {
+        if ($this->_utils->checkIfContains(array('SonyEricssonST26iv', 'SonyST26iv', 'ST26iv'))) {
             return false;
         }
         
@@ -213,17 +213,10 @@ final class SonyEricssonST26i
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
     
     /**

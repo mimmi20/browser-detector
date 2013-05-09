@@ -154,7 +154,7 @@ final class SamsungGalaxyNexus
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Nexus S', 'NexusHD2', 'Nexus 7', 'Nexus One'))) {
+        if ($this->_utils->checkIfContains(array('Nexus S', 'NexusHD2', 'Nexus 7', 'Nexus One', 'Nexus 10'))) {
             return false;
         }
         
@@ -201,16 +201,9 @@ final class SamsungGalaxyNexus
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

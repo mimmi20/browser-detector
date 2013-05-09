@@ -112,7 +112,7 @@ final class SamsungGti5800
         'resolution_width'       => 240,
         'resolution_height'      => 400,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216, // wurflkey: samsung_gt_i5800_ver1
         
         // sms
         'sms_enabled' => true,
@@ -209,16 +209,9 @@ final class SamsungGti5800
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

@@ -179,6 +179,7 @@ class WebkitWebos
         $engine->setCapability('xhtml_supports_css_cell_table_coloring', false);
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('xhtml_supports_table_for_layout', false);
+        $engine->setCapability('bmp', false); // wurflkey: palm_pre_ver1_subwebos141
         $engine->setCapability('wbmp', true);
         $engine->setCapability('max_url_length_in_requests', 256);
         $engine->setCapability('ajax_support_getelementbyid', false);

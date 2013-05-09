@@ -107,7 +107,7 @@ class MicrosoftMobileExplorer
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE'))) {
+        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop'))) {
             return false;
         }
         
@@ -225,6 +225,10 @@ class MicrosoftMobileExplorer
         if ($version >= 8) {
             $engine->setCapability('tiff', true);
             $engine->setCapability('image_inlining', true);
+        }
+        
+        if ($this->_utils->checkIfContains('WPDesktop')) {
+            $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
         return $this;

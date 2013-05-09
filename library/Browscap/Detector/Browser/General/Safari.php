@@ -228,6 +228,14 @@ class Safari
             $engine->setCapability('xhtml_file_upload', 'supported');//iPhone with iOS 6.0 and Safari 6.0
         }
         
+        $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ((float) $browserVersion < 4.0) {
+            $engine->setCapability('jqm_grade', 'B');
+        }
+        
         return $this;
     }
 }

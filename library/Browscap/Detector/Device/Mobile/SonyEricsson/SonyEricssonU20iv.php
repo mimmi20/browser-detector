@@ -67,7 +67,7 @@ final class SonyEricssonU20iv
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sonyericsson_u20i_ver1_subu211', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

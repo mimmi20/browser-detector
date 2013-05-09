@@ -103,7 +103,7 @@ class MailRuBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Mail.RU_Bot')) {
+        if (!$this->_utils->checkIfContains(array('Mail.RU_Bot', 'Mail.RU'))) {
             return false;
         }
         
@@ -130,7 +130,7 @@ class MailRuBot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Mail.RU_Bot');
+        $searches = array('Mail.RU_Bot', 'Mail.RU');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

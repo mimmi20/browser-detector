@@ -112,7 +112,7 @@ final class PalmPre
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 256, // wurflkey: palm_pre_ver1_subwebos141
         
         // sms
         'sms_enabled' => true,

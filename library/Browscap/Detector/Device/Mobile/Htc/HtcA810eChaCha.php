@@ -67,7 +67,7 @@ final class HtcA810eChaCha
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_chacha_ver1_subuauscore', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -109,8 +109,8 @@ final class HtcA810eChaCha
         'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 280,
-        'resolution_width'       => 480,
-        'resolution_height'      => 320,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         
@@ -209,16 +209,26 @@ final class HtcA810eChaCha
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
+        return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
         
-        return $chain->detect();
+        // wurflkey: htc_chacha_ver1_subuauscore
+        $engine->setCapability('bmp', true);
+        
+        return $this;
     }
 }
