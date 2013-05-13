@@ -87,13 +87,6 @@ final class UserAgent extends Core
      * @var Stdfinal class
      */
     private $_device = null;
-    
-    /**
-     * the detection result
-     *
-     * @var \Browscap\Detector\Result
-     */
-    private $_result = null;
 
     /**
      * Gets the information about the browser by User Agent
@@ -131,12 +124,13 @@ final class UserAgent extends Core
             $this->_browser, $this->_engine, $this->_os
         );
         
-        $this->_result = new Result();
-        $this->_result->setDetectionResult(
+        $result = new Result();
+        $result->setCapability('useragent', $this->_agent);
+        $result->setDetectionResult(
             $this->_device, $this->_os, $this->_browser, $this->_engine
         );
         
-        return $this->_result;
+        return $result;
     }
 
     /**

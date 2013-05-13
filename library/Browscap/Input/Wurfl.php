@@ -568,6 +568,7 @@ final class Wurfl extends Core
         }
         
         $result = new Result();
+        $result->setCapability('useragent', $this->_agent);
         
         if ($apiDev || $apiBro) {
             $versionFields = array(
