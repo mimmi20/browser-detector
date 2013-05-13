@@ -1547,7 +1547,11 @@ final class Result
             $this->setCapability($property, $value);
         }
         
-        $this->setRenderAs($device->getRenderAs());
+        $renderedAs = $device->getRenderAs();
+        
+        if ($renderedAs instanceof Result) {
+            $this->setRenderAs($renderedAs);
+        }
         
         return $this;
     }
