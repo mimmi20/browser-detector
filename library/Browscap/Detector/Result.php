@@ -828,25 +828,42 @@ final class Result
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
         
-        if (null !== $this->getRenderAs()) {
-            $object = clone $this->getRenderAs();
-            
-            $browser = $object->getCapability('mobile_browser');
-            
-            if ('unknown' == strtolower($browser)) {
-                $object = clone $this;
-            }
+        $renderedAs = $this->getRenderAs();
+        
+        if ($renderedAs instanceof Result
+            && 'unknown' != strtolower($renderedAs->getCapability('mobile_browser'))
+        ) {
+            $object = clone $renderedAs;
         } else {
             $object = clone $this;
         }
         
-        $browser = $object->getCapability('mobile_browser');
+        $browser = $object->getFullBrowserName($withBits, $mode);
         
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
         }
         
-        $version = $object->getCapability('mobile_browser_version')->getVersion(
+        if ($renderedAs instanceof Result) {
+            $browser .= ' [' . $this->getFullBrowserName($withBits, $mode) . ']';
+        }
+        
+        return trim($browser);
+    }
+    
+    public function getFullBrowserName($withBits = true, $mode = null)
+    {
+        if (null === $mode) {
+            $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
+        }
+        
+        $browser = $this->getCapability('mobile_browser');
+        
+        if ('unknown' == strtolower($browser)) {
+            return 'unknown';
+        }
+        
+        $version = $this->getCapability('mobile_browser_version')->getVersion(
             $mode
         );
         
@@ -856,25 +873,19 @@ final class Result
         
         $additional = array();
         
-        $modus = $object->getCapability('mobile_browser_modus');
+        $modus = $this->getCapability('mobile_browser_modus');
         
         if ($modus) {
             $additional[] = $modus;
         }
         
-        $bits = $object->getCapability('mobile_browser_bits');
+        $bits = $this->getCapability('mobile_browser_bits');
         
         if ($bits && $withBits) {
             $additional[] = $bits . ' Bit';
         }
         
         $browser .= (!empty($additional) ? ' (' . implode(', ', $additional) . ')' : '');
-        
-        if (null !== $this->getRenderAs()) {
-            $browser .= ' ['
-                . $this->getRenderAs()->getFullBrowser($withBits, $mode)
-                . ']';
-        }
         
         return trim($browser);
     }
@@ -885,14 +896,12 @@ final class Result
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
-        if (null !== $this->getRenderAs()) {
-            $object = clone $this->getRenderAs();
-            
-            $name = $this->getCapability('device_os');
-            
-            if ('unknown' == strtolower($name)) {
-                $object = clone $this;
-            }
+        $renderedAs = $this->getRenderAs();
+        
+        if ($renderedAs instanceof Result
+            && 'unknown' != strtolower($renderedAs->getCapability('device_os'))
+        ) {
+            $object = clone $renderedAs;
         } else {
             $object = clone $this;
         }
@@ -920,14 +929,12 @@ final class Result
      */
     public function getFullDevice($withManufacturer = false)
     {
-        if (null !== $this->getRenderAs()) {
-            $object = clone $this->getRenderAs();
-            
-            $device  = $this->getCapability('model_name');
-            
-            if ('unknown' == strtolower($device)) {
-                $object = clone $this;
-            }
+        $renderedAs = $this->getRenderAs();
+        
+        if ($renderedAs instanceof Result
+            && 'unknown' != strtolower($renderedAs->getCapability('model_name'))
+        ) {
+            $object = clone $renderedAs;
         } else {
             $object = clone $this;
         }
@@ -967,17 +974,16 @@ final class Result
      */
     public function getFullEngine($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
-        if (null !== $this->getRenderAs()) {
-            $object = clone $this->getRenderAs();
-            
-            $engine  = $this->getCapability('renderingengine_name');
-            
-            if ('unknown' == strtolower($engine)) {
-                $object = clone $this;
-            }
+        $renderedAs = $this->getRenderAs();
+        
+        if ($renderedAs instanceof Result
+            && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
+        ) {
+            $object = clone $renderedAs;
         } else {
             $object = clone $this;
         }
+        
         $engine  = $object->getCapability('renderingengine_name');
         
         if ('unknown' == strtolower($engine)) {
