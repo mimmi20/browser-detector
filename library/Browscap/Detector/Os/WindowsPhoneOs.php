@@ -49,6 +49,8 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\Version;
 
 /**
  * MSIEAgentHandler
