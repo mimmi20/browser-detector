@@ -125,10 +125,10 @@ final class UserAgent extends Core
         );
         
         $result = new Result();
-        $result->setCapability('useragent', $this->_agent);
         $result->setDetectionResult(
             $this->_device, $this->_os, $this->_browser, $this->_engine
         );
+        $result->setCapability('useragent', $this->_agent);
         
         return $result;
     }
