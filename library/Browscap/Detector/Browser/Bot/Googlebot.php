@@ -163,7 +163,7 @@ class Googlebot
                 ),
                 '', $this->_useragent
             );
-            
+            var_dump($agent);
             $detector = new \Browscap\Input\UserAgent();
             $detector->setAgent($agent);
             
