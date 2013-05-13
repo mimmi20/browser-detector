@@ -838,14 +838,18 @@ final class Result
             $object = clone $this;
         }
         
-        $browser = $object->getFullBrowserName($withBits, $mode);
+        $browser = $object->getFullBrowserName($withBits, $mode)
+            . ' {' . $object->userAgent . '}'
+        ;
         
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
         }
         
         if ($renderedAs instanceof Result) {
-            $browser .= ' [' . $this->getFullBrowserName($withBits, $mode) . ']';
+            $browser .= ' [' . $this->getFullBrowserName($withBits, $mode) . ']'
+                . ' {' . $this->userAgent . '}'
+            ;
         }
         
         return trim($browser);
@@ -906,14 +910,33 @@ final class Result
             $object = clone $this;
         }
         
-        $name = $object->getCapability('device_os');
+        $os = $object->getFullPlatformName($withBits, $mode)
+            . ' {' . $object->userAgent . '}'
+        ;
+        
+        if ($renderedAs instanceof Result) {
+            $os .= ' [' . $this->getFullPlatformName($withBits, $mode) . ']'
+                . ' {' . $this->userAgent . '}'
+            ;
+        }
+        
+        return trim($os);
+    }
+    
+    public function getFullPlatformName($withBits = true, $mode = null)
+    {
+        if (null === $mode) {
+            $mode = Version::COMPLETE_IGNORE_EMPTY;
+        }
+        
+        $name = $this->getCapability('device_os');
         
         if ('unknown' == strtolower($name)) {
             return 'unknown';
         }
         
-        $version = $object->getCapability('device_os_version')->getVersion($mode);
-        $bits    = $object->getCapability('device_os_bits');
+        $version = $this->getCapability('device_os_version')->getVersion($mode);
+        $bits    = $this->getCapability('device_os_bits');
         
         $os = $name
             . ($name != $version && '' != $version ? ' ' . $version : '')
@@ -939,13 +962,33 @@ final class Result
             $object = clone $this;
         }
         
-        $device = $object->getCapability('model_name');
+        $device = $object->getFullDeviceName($withManufacturer)
+            . ' {' . $object->userAgent . '}'
+        ;
+        
+        if ($renderedAs instanceof Result) {
+            $device .= ' [' . $this->getFullDeviceName($withManufacturer) . ']'
+                . ' {' . $this->userAgent . '}'
+            ;
+        }
+        
+        return trim($device);
+    }
+    
+    /**
+     * returns the name of the actual device with version
+     *
+     * @return string
+     */
+    public function getFullDeviceName($withManufacturer = false)
+    {
+        $device = $this->getCapability('model_name');
         
         if ('unknown' == strtolower($device)) {
             return 'unknown';
         }
         
-        $version = $object->getCapability('model_version')->getVersion(Version::MAJORMINOR);
+        $version = $this->getCapability('model_version')->getVersion(Version::MAJORMINOR);
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
         if ($withManufacturer) {
@@ -984,13 +1027,35 @@ final class Result
             $object = clone $this;
         }
         
-        $engine  = $object->getCapability('renderingengine_name');
+        $engine = $object->getFullEngineName($mode)
+            . ' {' . $object->userAgent . '}'
+        ;
+        
+        if ($renderedAs instanceof Result) {
+            $engine .= ' [' . $this->getFullEngineName($mode) . ']'
+                . ' {' . $this->userAgent . '}'
+            ;
+        }
+        
+        return trim($engine);
+    }
+    
+    /**
+     * return the Name of the rendering engine with the version
+     *
+     * @param integer $mode The format the version should be formated
+     *
+     * @return string
+     */
+    public function getFullEngineName($mode = Version::COMPLETE_IGNORE_EMPTY)
+    {
+        $engine  = $this->getCapability('renderingengine_name');
         
         if ('unknown' == strtolower($engine)) {
             return 'unknown';
         }
         
-        $version = $object->getCapability('renderingengine_version')->getVersion(
+        $version = $this->getCapability('renderingengine_version')->getVersion(
             $mode
         );
         
