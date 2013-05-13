@@ -103,7 +103,7 @@ class Isource
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfStartsWith('iSource+')) {
+        if ($this->_utils->checkIfContains('iSource+')) {
             return true;
         }
         

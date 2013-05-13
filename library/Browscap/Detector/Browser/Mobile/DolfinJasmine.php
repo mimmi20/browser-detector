@@ -120,7 +120,7 @@ class DolfinJasmine
             'Rockmelt'
         );
         
-        if ($this->_utils->checkIfStartsWith($isNotReallyAnSafari)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         

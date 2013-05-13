@@ -103,7 +103,7 @@ class Akregator
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Akregator')) {
+        if (!$this->_utils->checkIfContains('Akregator')) {
             return false;
         }
         

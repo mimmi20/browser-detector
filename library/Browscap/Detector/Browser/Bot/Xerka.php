@@ -103,7 +103,7 @@ class Xerka
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Xerka WebBot')) {
+        if (!$this->_utils->checkIfContains('Xerka WebBot')) {
             return false;
         }
         

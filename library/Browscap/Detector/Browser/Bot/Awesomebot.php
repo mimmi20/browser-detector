@@ -103,7 +103,7 @@ class Awesomebot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('awesomebot')) {
+        if (!$this->_utils->checkIfContains('awesomebot')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class RssOwl
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('RSSOwl')) {
+        if (!$this->_utils->checkIfContains('RSSOwl')) {
             return false;
         }
         

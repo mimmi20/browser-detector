@@ -106,6 +106,6 @@ class Pantech
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Pantech') || $this->_utils->checkIfStartsWith('PANTECH') || $this->_utils->checkIfStartsWith('PT-') || $this->_utils->checkIfStartsWith('PG-');
+        return $this->_utils->checkIfContains('Pantech') || $this->_utils->checkIfContains('PANTECH') || $this->_utils->checkIfContains('PT-') || $this->_utils->checkIfContains('PG-');
     }
 }

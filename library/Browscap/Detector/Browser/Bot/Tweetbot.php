@@ -103,7 +103,7 @@ class Tweetbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Tweetbot')) {
+        if (!$this->_utils->checkIfContains('Tweetbot')) {
             return false;
         }
         

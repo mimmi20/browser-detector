@@ -103,7 +103,7 @@ class CamelHttpStream
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('CamelHttpStream/')) {
+        if (!$this->_utils->checkIfContains('CamelHttpStream/')) {
             return false;
         }
         

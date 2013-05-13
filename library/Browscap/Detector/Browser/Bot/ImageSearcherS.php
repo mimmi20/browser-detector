@@ -103,7 +103,7 @@ class ImageSearcherS
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith(array('ImageSearcherS', 'ImageSearcherProS'))) {
+        if (!$this->_utils->checkIfContains(array('ImageSearcherS', 'ImageSearcherProS'))) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class Facebook
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Facebook')
+        if (!$this->_utils->checkIfContains('Facebook')
             && !$this->_utils->checkIfContains(array('FBAN', 'FBForIPhone', 'FBAV', 'facebookexternalhit'))
         ) {
             return false;

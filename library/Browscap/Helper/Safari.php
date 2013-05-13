@@ -81,9 +81,9 @@ final class Safari
     
     public function isSafari()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')
-            && !$this->_utils->checkIfStartsWith('Safari')
-            && !$this->_utils->checkIfStartsWith('MobileSafari')
+        if (!$this->_utils->checkIfContains('Mozilla/')
+            && !$this->_utils->checkIfContains('Safari')
+            && !$this->_utils->checkIfContains('MobileSafari')
         ) {
             return false;
         }

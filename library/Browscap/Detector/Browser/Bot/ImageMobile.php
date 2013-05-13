@@ -103,7 +103,7 @@ class ImageMobile
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('ImageMobile')) {
+        if (!$this->_utils->checkIfContains('ImageMobile')) {
             return false;
         }
         

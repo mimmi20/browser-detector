@@ -106,7 +106,7 @@ class MaemoBrowser
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
+        if (!$this->_utils->checkIfContains('Mozilla/')) {
             return false;
         }
         
@@ -128,7 +128,7 @@ class MaemoBrowser
             'Fennec'
         );
         
-        if ($this->_utils->checkIfStartsWith($isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

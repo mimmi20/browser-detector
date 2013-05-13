@@ -103,7 +103,7 @@ class Midori
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfStartsWith('Midori')) {
+        if ($this->_utils->checkIfContains('Midori')) {
             return true;
         }
         

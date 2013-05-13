@@ -103,7 +103,7 @@ class Getleft
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
+        if (!$this->_utils->checkIfContains('Mozilla/')) {
             return false;
         }
         

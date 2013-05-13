@@ -103,7 +103,7 @@ class Links
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Links')) {
+        if (!$this->_utils->checkIfContains('Links')) {
             return false;
         }
         

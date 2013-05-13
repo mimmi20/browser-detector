@@ -103,8 +103,8 @@ class AtomicBrowser
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('AtomicBrowser') 
-            && !$this->_utils->checkIfStartsWith('AtomicLite')
+        if (!$this->_utils->checkIfContains('AtomicBrowser') 
+            && !$this->_utils->checkIfContains('AtomicLite')
         ) {
             return false;
         }

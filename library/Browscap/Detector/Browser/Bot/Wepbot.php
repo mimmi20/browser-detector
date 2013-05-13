@@ -106,7 +106,7 @@ class Wepbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Wepbot/')) {
+        if (!$this->_utils->checkIfContains('Wepbot/')) {
             return false;
         }
         

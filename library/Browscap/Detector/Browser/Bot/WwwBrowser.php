@@ -103,7 +103,7 @@ class WwwBrowser
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WWW_Browser')) {
+        if (!$this->_utils->checkIfContains('WWW_Browser')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class BoardReader
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('BoardReader/')) {
+        if (!$this->_utils->checkIfContains('BoardReader/')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class Wotbox
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Wotbox')) {
+        if (!$this->_utils->checkIfContains('Wotbox')) {
             return false;
         }
         

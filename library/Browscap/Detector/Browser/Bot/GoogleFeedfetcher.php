@@ -103,7 +103,7 @@ class GoogleFeedfetcher
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Feedfetcher-Google')) {
+        if (!$this->_utils->checkIfContains('Feedfetcher-Google')) {
             return false;
         }
         

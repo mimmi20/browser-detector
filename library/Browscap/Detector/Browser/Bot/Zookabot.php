@@ -103,7 +103,7 @@ class Zookabot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Zookabot')) {
+        if (!$this->_utils->checkIfContains('Zookabot')) {
             return false;
         }
         

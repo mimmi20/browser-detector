@@ -103,7 +103,7 @@ class Hitpad
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Hitpad')) {
+        if (!$this->_utils->checkIfContains('Hitpad')) {
             return false;
         }
         

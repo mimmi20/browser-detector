@@ -194,7 +194,7 @@ final class GeneralBot
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\Browscap\\Detector\\Browser\\Bot');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Bot\GeneralBot());
         
         return $chain->detect();
     }

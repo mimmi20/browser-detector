@@ -103,7 +103,7 @@ class CydralWebImageSearch
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('CydralSpider')) {
+        if (!$this->_utils->checkIfContains('CydralSpider')) {
             return false;
         }
         

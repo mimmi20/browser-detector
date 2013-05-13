@@ -103,7 +103,7 @@ class Clipish
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Clipish')) {
+        if (!$this->_utils->checkIfContains('Clipish')) {
             return false;
         }
         

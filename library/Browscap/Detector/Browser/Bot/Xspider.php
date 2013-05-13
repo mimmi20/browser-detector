@@ -103,7 +103,7 @@ class Xspider
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('XSpider')) {
+        if (!$this->_utils->checkIfContains('XSpider')) {
             return false;
         }
         

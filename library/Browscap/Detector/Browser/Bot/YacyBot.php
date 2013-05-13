@@ -103,7 +103,7 @@ class YacyBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('yacybot')) {
+        if (!$this->_utils->checkIfContains('yacybot')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class PerfectBrowser
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Perfect Browser')) {
+        if (!$this->_utils->checkIfContains('Perfect Browser')) {
             return false;
         }
         

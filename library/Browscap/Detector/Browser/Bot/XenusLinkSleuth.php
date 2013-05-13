@@ -103,7 +103,7 @@ class XenusLinkSleuth
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Xenu')) {
+        if (!$this->_utils->checkIfContains('Xenu')) {
             return false;
         }
         

@@ -94,7 +94,7 @@ class Ipick extends CfNetworkBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('iPick')) {
+        if (!$this->_utils->checkIfContains('iPick')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class Webimages
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WebImages')) {
+        if (!$this->_utils->checkIfContains('WebImages')) {
             $this->_version = false;
             return;
         }

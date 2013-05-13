@@ -285,7 +285,7 @@ class Android
             $engine->setCapability('jqm_grade', 'C');
         }
         
-        if (($this->_utils->checkIfContains('(Linux; U;')
+        if (($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;'))
             && !$this->_utils->checkIfContains('Android'))
             || $this->_utils->checkIfContains('Max OS X')
         ) {

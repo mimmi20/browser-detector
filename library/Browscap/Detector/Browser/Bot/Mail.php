@@ -103,7 +103,7 @@ class Mail
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mail/')) {
+        if (!$this->_utils->checkIfContains('Mail/')) {
             return false;
         }
         

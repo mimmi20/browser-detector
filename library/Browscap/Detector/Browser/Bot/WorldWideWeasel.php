@@ -103,7 +103,7 @@ class WorldWideWeasel
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WWWeasel Robot v')) {
+        if (!$this->_utils->checkIfContains('WWWeasel Robot v')) {
             return false;
         }
         

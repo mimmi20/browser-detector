@@ -103,7 +103,7 @@ class Choosy
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Choosy/')) {
+        if (!$this->_utils->checkIfContains('Choosy/')) {
             return false;
         }
         

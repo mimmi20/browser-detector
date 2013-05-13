@@ -106,6 +106,6 @@ class DoCoMo
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('DoCoMo');
+        return $this->_utils->checkIfContains('DoCoMo');
     }
 }

@@ -103,7 +103,7 @@ class Winwap
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WinWAP')) {
+        if (!$this->_utils->checkIfContains('WinWAP')) {
             return false;
         }
         

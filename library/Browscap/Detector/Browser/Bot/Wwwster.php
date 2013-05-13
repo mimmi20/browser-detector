@@ -103,7 +103,7 @@ class Wwwster
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('wwwster')) {
+        if (!$this->_utils->checkIfContains('wwwster')) {
             return false;
         }
         

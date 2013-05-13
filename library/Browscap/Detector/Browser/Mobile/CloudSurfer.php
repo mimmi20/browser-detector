@@ -103,7 +103,7 @@ class CloudSurfer
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('CloudSurfer')) {
+        if (!$this->_utils->checkIfContains('CloudSurfer')) {
             return false;
         }
         

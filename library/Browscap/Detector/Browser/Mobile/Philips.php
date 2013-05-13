@@ -106,6 +106,6 @@ class Philips
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Philips') || $this->_utils->checkIfStartsWith('PHILIPS');
+        return $this->_utils->checkIfContains('Philips') || $this->_utils->checkIfContains('PHILIPS');
     }
 }

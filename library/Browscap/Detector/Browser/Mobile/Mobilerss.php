@@ -103,7 +103,7 @@ class Mobilerss
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith(array('MobileRSS', 'MobileRSSFree'))) {
+        if (!$this->_utils->checkIfContains(array('MobileRSS', 'MobileRSSFree'))) {
             return false;
         }
         

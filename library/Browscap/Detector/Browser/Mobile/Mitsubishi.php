@@ -106,6 +106,6 @@ class Mitsubishi
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Mitsu');
+        return $this->_utils->checkIfContains('Mitsu');
     }
 }

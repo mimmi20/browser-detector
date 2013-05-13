@@ -111,6 +111,6 @@ class Samsung
         }
         
         return $this->_utils->checkIfContains('Samsung/SGH')
-                || $this->_utils->checkIfStartsWith(array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
+                || $this->_utils->checkIfContains(array('SEC-','Samsung','SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
 }

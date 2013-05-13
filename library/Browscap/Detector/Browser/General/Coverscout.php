@@ -103,7 +103,7 @@ class Coverscout
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('CoverScout')) {
+        if (!$this->_utils->checkIfContains('CoverScout')) {
             return false;
         }
         

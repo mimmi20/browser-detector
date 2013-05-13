@@ -234,7 +234,7 @@ class Tasman extends EngineHandler
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith('Mozilla/') 
+        if ($this->_utils->checkIfContains('Mozilla/') 
             && $this->_utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
         ) {
             return true;

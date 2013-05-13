@@ -103,7 +103,7 @@ class Wwwc
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WWWC')) {
+        if (!$this->_utils->checkIfContains('WWWC')) {
             return false;
         }
         

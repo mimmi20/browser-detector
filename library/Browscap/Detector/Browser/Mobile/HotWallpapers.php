@@ -103,7 +103,7 @@ class HotWallpapers
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Hot Wallpapers')) {
+        if (!$this->_utils->checkIfContains('Hot Wallpapers')) {
             return false;
         }
         

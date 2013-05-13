@@ -106,6 +106,6 @@ class Qtek
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Qtek');
+        return $this->_utils->checkIfContains('Qtek');
     }
 }

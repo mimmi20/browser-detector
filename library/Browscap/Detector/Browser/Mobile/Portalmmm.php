@@ -106,6 +106,6 @@ class Portalmmm
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('portalmmm');
+        return $this->_utils->checkIfContains('portalmmm');
     }
 }

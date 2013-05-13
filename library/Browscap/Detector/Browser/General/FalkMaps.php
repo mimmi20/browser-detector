@@ -103,7 +103,7 @@ class FalkMaps
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('FalkMaps')) {
+        if (!$this->_utils->checkIfContains('FalkMaps')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class Wire
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WIRE')) {
+        if (!$this->_utils->checkIfContains('WIRE')) {
             return false;
         }
         

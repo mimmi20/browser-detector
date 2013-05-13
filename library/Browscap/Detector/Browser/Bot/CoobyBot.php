@@ -103,7 +103,7 @@ class CoobyBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith(array('CoobyBot', 'Cooby Bot'))) {
+        if (!$this->_utils->checkIfContains(array('CoobyBot', 'Cooby Bot'))) {
             return false;
         }
         

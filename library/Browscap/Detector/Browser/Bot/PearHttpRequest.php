@@ -103,7 +103,7 @@ class PearHttpRequest
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('HTTP_Request')) {
+        if (!$this->_utils->checkIfContains('HTTP_Request')) {
             return false;
         }
         

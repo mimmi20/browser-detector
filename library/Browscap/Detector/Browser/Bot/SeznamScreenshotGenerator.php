@@ -103,11 +103,7 @@ class SeznamScreenshotGenerator
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('SeznamScreenshotGenerator/'))) {
+        if (!$this->_utils->checkIfContains(array('SeznamScreenshotGenerator/', 'Seznam screenshot-generator'))) {
             return false;
         }
         
@@ -124,7 +120,7 @@ class SeznamScreenshotGenerator
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('SeznamScreenshotGenerator');
+        $searches = array('SeznamScreenshotGenerator', 'Seznam screenshot-generator');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

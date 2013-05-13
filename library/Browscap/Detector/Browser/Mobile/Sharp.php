@@ -106,6 +106,6 @@ class Sharp
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Sharp') || $this->_utils->checkIfStartsWith('SHARP');
+        return $this->_utils->checkIfContains('Sharp') || $this->_utils->checkIfContains('SHARP');
     }
 }

@@ -103,7 +103,7 @@ class AcoonBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('AcoonBot/')) {
+        if (!$this->_utils->checkIfContains('AcoonBot/')) {
             return false;
         }
         

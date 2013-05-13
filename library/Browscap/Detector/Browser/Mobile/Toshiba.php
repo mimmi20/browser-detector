@@ -106,6 +106,6 @@ class Toshiba
      */
     public function canHandle() 
     {
-        return $this->_utils->checkIfStartsWith('Toshiba');
+        return $this->_utils->checkIfContains('Toshiba');
     }
 }

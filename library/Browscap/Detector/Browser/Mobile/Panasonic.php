@@ -106,6 +106,6 @@ class Panasonic
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Panasonic');
+        return $this->_utils->checkIfContains('Panasonic');
     }
 }

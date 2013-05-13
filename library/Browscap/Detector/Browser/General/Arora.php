@@ -103,8 +103,8 @@ class Arora
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')
-            && !$this->_utils->checkIfStartsWith('Arora/')
+        if (!$this->_utils->checkIfContains('Mozilla/')
+            && !$this->_utils->checkIfContains('Arora/')
         ) {
             return false;
         }

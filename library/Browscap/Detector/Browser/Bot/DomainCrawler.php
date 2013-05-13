@@ -103,7 +103,7 @@ class DomainCrawler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('DomainCrawler')) {
+        if (!$this->_utils->checkIfContains('DomainCrawler')) {
             return false;
         }
         

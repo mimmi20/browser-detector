@@ -103,7 +103,7 @@ class Worldlingo
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WebIndexer')) {
+        if (!$this->_utils->checkIfContains('WebIndexer')) {
             return false;
         }
         

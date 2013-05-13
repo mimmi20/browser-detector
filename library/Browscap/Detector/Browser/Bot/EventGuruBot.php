@@ -103,7 +103,7 @@ class EventGuruBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('EventGuruBot/')) {
+        if (!$this->_utils->checkIfContains('EventGuruBot/')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class Mercury
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mercury')) {
+        if (!$this->_utils->checkIfContains('Mercury')) {
             return false;
         }
         

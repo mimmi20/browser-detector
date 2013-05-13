@@ -106,6 +106,6 @@ class Nec
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('NEC-') || $this->_utils->checkIfStartsWith('KGT');
+        return $this->_utils->checkIfContains('NEC-') || $this->_utils->checkIfContains('KGT');
     }
 }

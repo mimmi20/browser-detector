@@ -103,7 +103,7 @@ class Ichromy
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('iChromy')
+        if (!$this->_utils->checkIfContains('iChromy')
             && !parent::canHandle($this->_useragent)
         ) {
             return false;

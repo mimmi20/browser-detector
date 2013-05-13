@@ -103,7 +103,7 @@ class WhatsApp
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WhatsApp')) {
+        if (!$this->_utils->checkIfContains('WhatsApp')) {
             return false;
         }
         

@@ -103,7 +103,7 @@ class XaldonWebspider
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Xaldon WebSpider')) {
+        if (!$this->_utils->checkIfContains('Xaldon WebSpider')) {
             return false;
         }
         

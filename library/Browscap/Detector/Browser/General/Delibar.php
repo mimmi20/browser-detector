@@ -103,7 +103,7 @@ class Delibar
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Delibar')) {
+        if (!$this->_utils->checkIfContains('Delibar')) {
             return false;
         }
         

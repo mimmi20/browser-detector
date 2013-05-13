@@ -103,8 +103,8 @@ class Epiphany
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/')
-            && !$this->_utils->checkIfStartsWith('Safari')
+        if (!$this->_utils->checkIfContains('Mozilla/')
+            && !$this->_utils->checkIfContains('Safari')
         ) {
             return false;
         }

@@ -236,7 +236,7 @@ class Trident extends EngineHandler
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith('Mozilla/') 
+        if ($this->_utils->checkIfContains('Mozilla/') 
             && $this->_utils->checkIfContains(array('MSIE', 'Trident'))
         ) {
             return true;

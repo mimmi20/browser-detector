@@ -103,7 +103,7 @@ class XchaosArachne
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('xChaos_Arachne')) {
+        if (!$this->_utils->checkIfContains('xChaos_Arachne')) {
             return false;
         }
         

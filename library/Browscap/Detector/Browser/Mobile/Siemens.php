@@ -106,6 +106,6 @@ class Siemens
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('SIE-');
+        return $this->_utils->checkIfContains('SIE-');
     }
 }

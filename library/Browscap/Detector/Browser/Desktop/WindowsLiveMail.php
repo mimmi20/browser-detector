@@ -103,7 +103,7 @@ class WindowsLiveMail
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Outlook-Express/')) {
+        if (!$this->_utils->checkIfContains('Outlook-Express/')) {
             return false;
         }
         

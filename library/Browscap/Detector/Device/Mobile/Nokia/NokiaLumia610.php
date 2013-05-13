@@ -230,6 +230,10 @@ final class NokiaLumia610
         $engine->setCapability('wbmp', false);
         $engine->setCapability('tiff', false);
         
+        if ($this->_utils->checkIfContains('vodafone', true)) {
+            $this->setCapability('model_extra_info', 'for Vodafone');
+        }
+        
         return $this;
     }
 }

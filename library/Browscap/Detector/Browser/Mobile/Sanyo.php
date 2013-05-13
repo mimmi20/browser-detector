@@ -106,6 +106,6 @@ class Sanyo
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Sanyo') || $this->_utils->checkIfStartsWith('SANYO');
+        return $this->_utils->checkIfContains('Sanyo') || $this->_utils->checkIfContains('SANYO');
     }
 }

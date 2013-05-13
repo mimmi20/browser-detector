@@ -103,7 +103,7 @@ class WindowsRssPlatform
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Windows-RSS-Platform')) {
+        if (!$this->_utils->checkIfContains('Windows-RSS-Platform')) {
             return false;
         }
         

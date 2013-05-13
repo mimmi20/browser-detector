@@ -103,7 +103,7 @@ class UniversalFeedParser
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('UniversalFeedParser')) {
+        if (!$this->_utils->checkIfContains('UniversalFeedParser')) {
             return false;
         }
         

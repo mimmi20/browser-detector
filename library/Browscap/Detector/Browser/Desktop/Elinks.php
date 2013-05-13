@@ -103,7 +103,7 @@ class Elinks
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('ELinks')) {
+        if (!$this->_utils->checkIfContains('ELinks')) {
             return false;
         }
         

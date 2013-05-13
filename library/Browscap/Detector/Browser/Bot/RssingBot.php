@@ -103,7 +103,7 @@ class RssingBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('RSSingBot')) {
+        if (!$this->_utils->checkIfContains('RSSingBot')) {
             return false;
         }
         

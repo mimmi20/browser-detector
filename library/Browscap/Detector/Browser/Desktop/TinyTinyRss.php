@@ -103,7 +103,7 @@ class TinyTinyRss
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Tiny Tiny RSS/')) {
+        if (!$this->_utils->checkIfContains('Tiny Tiny RSS/')) {
             return false;
         }
         

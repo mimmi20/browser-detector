@@ -103,7 +103,7 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith(array('Mozilla/', 'Chrome/', 'CrMo/'))) {
+        if (!$this->_utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/'))) {
             return false;
         }
         
@@ -215,6 +215,13 @@ class Chrome
             $engine->setCapability('xhtml_file_upload', 'supported');
             $engine->setCapability('xhtml_allows_disabled_form_elements', true);
             $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+            
+            if (($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;'))
+                && !$this->_utils->checkIfContains('Android'))
+                || $this->_utils->checkIfContains('Max OS X')
+            ) {
+                $this->setCapability('mobile_browser_modus', 'Desktop Mode');
+            }
         }
         
         return $this;

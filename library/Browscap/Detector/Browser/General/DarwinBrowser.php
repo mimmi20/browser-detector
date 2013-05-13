@@ -103,7 +103,7 @@ class DarwinBrowser
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('browser')) {
+        if (!$this->_utils->checkIfContains('browser')) {
             return false;
         }
         

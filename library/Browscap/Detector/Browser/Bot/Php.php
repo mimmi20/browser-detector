@@ -103,7 +103,7 @@ class Php
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('PHP/')) {
+        if (!$this->_utils->checkIfContains('PHP/')) {
             return false;
         }
         

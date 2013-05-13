@@ -103,7 +103,7 @@ class Terra
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith(array('Terra', 'TerraFree'))) {
+        if (!$this->_utils->checkIfContains(array('Terra', 'TerraFree'))) {
             return false;
         }
         

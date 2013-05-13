@@ -103,7 +103,7 @@ class WindowsPhoneSearch
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Windows Phone Search')) {
+        if (!$this->_utils->checkIfContains('Windows Phone Search')) {
             return false;
         }
         

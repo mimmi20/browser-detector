@@ -103,7 +103,7 @@ class Weblide
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Weblide/')) {
+        if (!$this->_utils->checkIfContains('Weblide/')) {
             return false;
         }
         

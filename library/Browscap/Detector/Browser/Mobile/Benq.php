@@ -106,6 +106,6 @@ class Benq
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('BenQ') || $this->_utils->checkIfStartsWith('BENQ');
+        return $this->_utils->checkIfContains('BenQ') || $this->_utils->checkIfContains('BENQ');
     }
 }

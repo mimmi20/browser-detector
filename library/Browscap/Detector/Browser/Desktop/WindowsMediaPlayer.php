@@ -103,8 +103,8 @@ class WindowsMediaPlayer
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Windows-Media-Player')
-            && !$this->_utils->checkIfStartsWith('NSPlayer')
+        if (!$this->_utils->checkIfContains('Windows-Media-Player')
+            && !$this->_utils->checkIfContains('NSPlayer')
         ) {
             return false;
         }

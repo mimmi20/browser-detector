@@ -103,7 +103,7 @@ class JustCrawler
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('JUST-CRAWLER')) {
+        if (!$this->_utils->checkIfContains('JUST-CRAWLER')) {
             return false;
         }
         

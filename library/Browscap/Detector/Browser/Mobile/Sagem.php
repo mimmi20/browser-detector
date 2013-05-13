@@ -106,6 +106,6 @@ class Sagem
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Sagem') || $this->_utils->checkIfStartsWith('SAGEM');
+        return $this->_utils->checkIfContains('Sagem') || $this->_utils->checkIfContains('SAGEM');
     }
 }

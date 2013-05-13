@@ -103,8 +103,8 @@ class Camino
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Mozilla/4.0')
-            && !$this->_utils->checkIfStartsWith('Mozilla/5.0')
+        if (!$this->_utils->checkIfContains('Mozilla/4.0')
+            && !$this->_utils->checkIfContains('Mozilla/5.0')
         ) {
             return false;
         }

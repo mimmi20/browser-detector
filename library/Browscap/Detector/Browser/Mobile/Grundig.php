@@ -106,6 +106,6 @@ class Grundig
      */
     public function canHandle()
     {
-        return $this->_utils->checkIfStartsWith('Grundig') || $this->_utils->checkIfStartsWith('GRUNDIG');
+        return $this->_utils->checkIfContains('Grundig') || $this->_utils->checkIfContains('GRUNDIG');
     }
 }

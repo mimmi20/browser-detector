@@ -103,7 +103,7 @@ class Extras4iMovie
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('Extras4iMovie')) {
+        if (!$this->_utils->checkIfContains('Extras4iMovie')) {
             return false;
         }
         

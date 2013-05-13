@@ -103,7 +103,7 @@ class Winkbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WinkBot')) {
+        if (!$this->_utils->checkIfContains('WinkBot')) {
             return false;
         }
         

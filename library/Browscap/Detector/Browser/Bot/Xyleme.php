@@ -103,7 +103,7 @@ class Xyleme
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('cosmos')) {
+        if (!$this->_utils->checkIfContains('cosmos')) {
             return false;
         }
         

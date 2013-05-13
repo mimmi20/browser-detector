@@ -250,6 +250,7 @@ final class Wurfl extends Core
                 case 'mini 5':
                 case 'windows mobile 6.5':
                 case 'windows mobile 7.5':
+                case 'windows phone 8':
                 case 'fennec tablet':
                 case 'tablet on android':
                 case 'fennec':

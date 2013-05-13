@@ -104,7 +104,7 @@ class Winamp
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('WinampMPEG/')) {
+        if (!$this->_utils->checkIfContains('WinampMPEG/')) {
             return false;
         }
         

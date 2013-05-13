@@ -123,7 +123,7 @@ class Kmeleon
             'Firefox'
         );
         
-        if ($this->_utils->checkIfStartsWith($isNotReallyAnFirefox)) {
+        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         

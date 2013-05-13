@@ -103,7 +103,7 @@ class XmlRpcForPhp
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('XML-RPC for PHP')) {
+        if (!$this->_utils->checkIfContains('XML-RPC for PHP')) {
             return false;
         }
         

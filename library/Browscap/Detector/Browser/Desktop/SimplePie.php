@@ -103,7 +103,7 @@ class SimplePie
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('SimplePie')) {
+        if (!$this->_utils->checkIfContains('SimplePie')) {
             return false;
         }
         

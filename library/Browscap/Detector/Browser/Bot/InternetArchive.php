@@ -103,7 +103,7 @@ class InternetArchive
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfStartsWith('ia_archiver')) {
+        if (!$this->_utils->checkIfContains('ia_archiver')) {
             return false;
         }
         
