@@ -108,4 +108,33 @@ final class Utils
         
         return true;
     }
+    
+    /**
+     * Returns true if $haystack starts with $needle
+     * @param string $haystack Haystack
+     * @param string $needle Needle
+     * @return bool
+     */
+    public function checkIfStartsWith($needle, $ci = false) 
+    {
+        if (is_array($needle)) {
+            foreach ($needle as $singleneedle) {
+                if ($this->checkIfStartsWith($singleneedle, $ci)) {
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+        
+        if (!is_string($needle)) {
+            return false;
+        }
+        
+        if ($ci) {
+            return stripos($this->_useragent, $needle) === 0;
+        }
+        
+        return strpos($this->_useragent, $needle) === 0;
+    }
 }

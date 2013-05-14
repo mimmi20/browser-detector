@@ -220,7 +220,7 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->_utils->checkIfContains('Java/')) {
+        if ($this->_utils->checkIfStartsWith('Java/')) {
             return true;
         }
         
@@ -230,7 +230,7 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->_utils->checkIfContains('PHP/')) {
+        if ($this->_utils->checkIfStartsWith('PHP/')) {
             return true;
         }
         
@@ -248,7 +248,7 @@ final class SpamCrawlerFake
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
+        if ($this->_utils->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
         
@@ -262,8 +262,8 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if (!$this->_utils->checkIfContains('Mozilla/') // regular IE
-            && !$this->_utils->checkIfContains('Outlook-Express/') // Windows Live Mail
+        if (!$this->_utils->checkIfStartsWith('Mozilla/') // regular IE
+            && !$this->_utils->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
             && !$this->_utils->checkIfContains('Windows CE') // Windows CE
             && $this->_utils->checkIfContains('MSIE')
         ) {
@@ -339,7 +339,7 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->_utils->checkIfContains('Mozilla/') 
+        if ($this->_utils->checkIfStartsWith('Mozilla/') 
             && $this->_utils->checkIfContains('MSIE')
         ) {
             $doMatch = preg_match('/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/', $this->_useragent, $matches);
