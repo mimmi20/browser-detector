@@ -839,7 +839,7 @@ final class Result
         }
         
         $browser = $object->getFullBrowserName($withBits, $mode)
-            . ' {' . $object->userAgent . '}'
+            // . ' {' . $object->userAgent . '}'
         ;
         
         if ('unknown' == strtolower($browser)) {
@@ -848,7 +848,7 @@ final class Result
         
         if ($renderedAs instanceof Result) {
             $browser .= ' [' . $this->getFullBrowserName($withBits, $mode) . ']'
-                . ' {' . $this->userAgent . '}'
+                // . ' {' . $this->userAgent . '}'
             ;
         }
         
@@ -911,12 +911,12 @@ final class Result
         }
         
         $os = $object->getFullPlatformName($withBits, $mode)
-            . ' {' . $object->userAgent . '}'
+            // . ' {' . $object->userAgent . '}'
         ;
         
         if ($renderedAs instanceof Result) {
             $os .= ' [' . $this->getFullPlatformName($withBits, $mode) . ']'
-                . ' {' . $this->userAgent . '}'
+                // . ' {' . $this->userAgent . '}'
             ;
         }
         
@@ -963,12 +963,12 @@ final class Result
         }
         
         $device = $object->getFullDeviceName($withManufacturer)
-            . ' {' . $object->userAgent . '}'
+            // . ' {' . $object->userAgent . '}'
         ;
         
         if ($renderedAs instanceof Result) {
             $device .= ' [' . $this->getFullDeviceName($withManufacturer) . ']'
-                . ' {' . $this->userAgent . '}'
+                // . ' {' . $this->userAgent . '}'
             ;
         }
         
@@ -1028,12 +1028,12 @@ final class Result
         }
         
         $engine = $object->getFullEngineName($mode)
-            . ' {' . $object->userAgent . '}'
+            // . ' {' . $object->userAgent . '}'
         ;
         
         if ($renderedAs instanceof Result) {
             $engine .= ' [' . $this->getFullEngineName($mode) . ']'
-                . ' {' . $this->userAgent . '}'
+                // . ' {' . $this->userAgent . '}'
             ;
         }
         
