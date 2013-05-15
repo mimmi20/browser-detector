@@ -125,7 +125,8 @@ class YouWaveAndroidOnPc
             $version = 'Home';
         }
         
-        
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
         
         $this->setCapability(
             'mobile_browser_version', $detector->setVersion($version)
