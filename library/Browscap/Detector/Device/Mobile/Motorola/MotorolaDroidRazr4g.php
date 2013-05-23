@@ -103,12 +103,12 @@ final class MotorolaDroidRazr4g
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 54,
+        'physical_screen_height' => 96,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
         'resolution_width'       => 540,
         'resolution_height'      => 960,
         'dual_orientation'       => true,

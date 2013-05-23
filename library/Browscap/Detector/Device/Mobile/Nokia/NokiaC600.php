@@ -67,7 +67,7 @@ final class NokiaC600
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_c6_00_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,8 +97,8 @@ final class NokiaC600
         'nokia_series'              => 60,
         'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NokiaC6-00r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NokiaC6-00r100-VF3G.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -112,7 +112,7 @@ final class NokiaC600
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

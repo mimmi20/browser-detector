@@ -150,7 +150,7 @@ final class TrekStor
     public function canHandle()
     {
         $trekStorPhones = array(
-            'TrekStor', 'ST70104', 'ST10216-1'
+            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216'
         );
         
         if ($this->_utils->checkIfContains($trekStorPhones)) {

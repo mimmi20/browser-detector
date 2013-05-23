@@ -67,7 +67,7 @@ final class Nokia5800XpressMusic
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'nokia_5800d_ver1_sub500005', // not in wurfl
+        'wurflKey' => 'nokia_5800d_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -112,7 +112,7 @@ final class Nokia5800XpressMusic
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

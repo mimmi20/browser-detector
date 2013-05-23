@@ -227,6 +227,19 @@ class MicrosoftMobileExplorer
             $engine->setCapability('image_inlining', true);
         }
         
+        $engine->setCapability('is_sencha_touch_ok', false);
+        
+        if ($version >= 10) {
+            $engine->setCapability('jqm_grade', 'A');
+            $engine->setCapability('is_sencha_touch_ok', true);
+        } elseif ($version >= 8) {
+            $engine->setCapability('jqm_grade', 'A');
+        } elseif ($version >= 7) {
+            $engine->setCapability('jqm_grade', 'B');
+        } else {
+            $engine->setCapability('jqm_grade', 'C');
+        }
+        
         if ($this->_utils->checkIfContains('WPDesktop')) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }

@@ -97,8 +97,8 @@ final class HuaweiVodafone845
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://wap1.huawei.com/uaprof/Vodafone845v100GPRS.xml',
+        'uaprof2'                   => 'http://wap1.huawei.com/uaprof/Vodafone845v100WCDMA.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -112,7 +112,7 @@ final class HuaweiVodafone845
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

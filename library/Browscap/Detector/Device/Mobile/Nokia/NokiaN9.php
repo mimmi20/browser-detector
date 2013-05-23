@@ -154,7 +154,7 @@ final class NokiaN9
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('NokiaN91', 'NokiaN95', 'NokiaN96', 'NokiaN97', 'NokiaN900'))) {
+        if ($this->_utils->checkIfContains(array('NokiaN90', 'NokiaN91', 'NokiaN95', 'NokiaN96', 'NokiaN97', 'NokiaN900'))) {
             return false;
         }
         

@@ -97,8 +97,8 @@ final class NokiaC601
         'nokia_series'              => 60,
         'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NC6-01.3r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NC6-01.3r300.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -112,7 +112,7 @@ final class NokiaC601
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

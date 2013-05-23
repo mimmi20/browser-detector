@@ -93,13 +93,13 @@ final class NokiaC500
         
         // product info
         'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_feature_pack'        => 2,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 3,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100-VF3G.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100-VF2G.xml',
         'unique'                    => true,
         
         // display
@@ -112,7 +112,7 @@ final class NokiaC500
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

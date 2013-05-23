@@ -80,12 +80,12 @@ final class HannspreeHannspad
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'HANNSpad - SN10T1',
+        'model_name'                => 'HANNSpad SN10T1',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'HANNspree',
-        'brand_name'                => 'unknown',
+        'manufacturer_name'         => 'Hannspree',
+        'brand_name'                => 'Hannspree',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'HANNSpad SN10T1',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -109,9 +109,10 @@ final class HannspreeHannspad
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

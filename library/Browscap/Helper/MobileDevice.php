@@ -101,7 +101,6 @@ final class MobileDevice
             'cldc',
             'dalvik',
             'danger hiptop',
-            'eeepc',
             'embider',
             'fennec',
             'firefox or ie',
@@ -121,6 +120,7 @@ final class MobileDevice
             'iuc(u;ios',
             'j2me',
             'juc(linux;u;',
+            'juc (linux; u;',
             'kindle',
             'lenovo',
             'like mac os x',
@@ -167,10 +167,9 @@ final class MobileDevice
         );
         if ($this->_utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = array(
-                'xbox', 'badab', 'badap', 'simbar',
-                'google wireless transcoder', 'google-tr', 'googlet', 
-                'google page speed', 'google web preview', 'eeepc',
-                'i9988_custom', 'i9999_custom'
+                'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
+                'google wireless transcoder', 'eeepc', 'i9988_custom',
+                'i9999_custom'
             );
             
             if ($this->_utils->checkIfContains($noMobiles, true)) {

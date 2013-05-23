@@ -208,6 +208,10 @@ final class Wurfl extends Core
                 $apiPhone = ('true' === $device->getCapability('can_assign_phone_number'));
                 
                 $brandName = $device->getCapability('brand_name');
+                
+                if ('Opera' == $brandName) {
+                    $brandName = null;
+                }
             } else {
                 $apiOs    = null;
                 $apiBro   = $device->getCapability('brand_name');
@@ -265,6 +269,9 @@ final class Wurfl extends Core
                 case 'motomz616':
                     $apiDev = 'MZ616';
                     break;
+                case 'motxt912b':
+                    $apiDev = 'XT912B';
+                    break;
                 case 'gp-p6810':
                     $apiDev = 'GT-P6810';
                     break;
@@ -295,6 +302,13 @@ final class Wurfl extends Core
                     break;
                 case 'asus-padfone':
                     $apiDev = 'PadFone';
+                    break;
+                case 'creative ziio7':
+                    $apiDev = 'ZiiO7';
+                    $apiMan = 'Creative';
+                    break;
+                case 'touchpad':
+                    $apiDev = 'Touchpad';
                     break;
                 default:
                     // nothing to do here

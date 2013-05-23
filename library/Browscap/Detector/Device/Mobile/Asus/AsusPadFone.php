@@ -154,6 +154,10 @@ final class AsusPadFone
             return false;
         }
         
+        if ($this->_utils->checkIfContains('PadFone 2')) {
+            return false;
+        }
+        
         return true;
     }
     

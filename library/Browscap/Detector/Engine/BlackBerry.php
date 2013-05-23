@@ -135,12 +135,12 @@ class BlackBerry extends EngineHandler
         'xhtml_nowrap_mode' => false,
         
         // image format
-        'jpg' => null,
-        'gif' => null,
+        'jpg' => true,
+        'gif' => true,
         'bmp' => null,
         'wbmp' => null,
         'gif_animated' => null,
-        'png' => null,
+        'png' => true,
         'greyscale' => null,
         'transparent_png_index' => null,
         'epoc_bmp' => null,

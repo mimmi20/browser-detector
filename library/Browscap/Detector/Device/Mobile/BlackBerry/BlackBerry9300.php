@@ -97,10 +97,10 @@ final class BlackBerry9300
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_umts/5.0',
-        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_80211g/5',
-        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_edge/5.0',
-        'unique'                    => false,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_umts/5.0.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_80211g/5.0.0.rdf',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9300_edge/5.0.0.rdf',
+        'unique'                    => true,
         
         // display
         'physical_screen_width'  => 50,

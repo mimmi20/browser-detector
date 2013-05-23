@@ -186,16 +186,10 @@ final class PlayStationPortable
      */
     public function detectBrowser()
     {
-        $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\NetFront(),
-        );
+        $handler = new \Browscap\Detector\Browser\Mobile\NetFront();
+        $handler->setUserAgent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
+        return $handler->detect();
     }
     
     /**

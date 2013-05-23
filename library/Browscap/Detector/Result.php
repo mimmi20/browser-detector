@@ -994,7 +994,7 @@ final class Result
         if ($withManufacturer) {
             $manufacturer = $this->getCapability('brand_name');
             
-            if (!$manufacturer) {
+            if (!$manufacturer || 'unknown' == $manufacturer) {
                 $manufacturer = $this->getCapability('manufacturer_name');
             }
             

@@ -67,7 +67,7 @@ final class HtcMdaVarioIi
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'tmobile_mda_varioii_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,18 +97,18 @@ final class HtcMdaVarioIi
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www.htcmms.com.tw/tmo/mdavario-2.1.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 43,
+        'physical_screen_height' => 57,
+        'columns'                => 16,
+        'rows'                   => 36,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => false,

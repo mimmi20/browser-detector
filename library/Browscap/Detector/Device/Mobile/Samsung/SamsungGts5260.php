@@ -67,7 +67,7 @@ final class SamsungGts5260
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_s5260_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -85,14 +85,14 @@ final class SamsungGts5260
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Star II',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => 'ARM9', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,15 +103,16 @@ final class SamsungGts5260
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 20,
+        'rows'                   => 16,
+        'max_image_width'        => 228,
+        'max_image_height'       => 360,
         'resolution_width'       => 240,
         'resolution_height'      => 400,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

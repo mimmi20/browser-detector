@@ -92,7 +92,7 @@ final class SamsungGti8320
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,16 +103,16 @@ final class SamsungGti8320
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 90,
+        'columns'                => 32,
+        'rows'                   => 40,
+        'max_image_width'        => 380,
+        'max_image_height'       => 700,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,
@@ -211,6 +211,7 @@ final class SamsungGti8320
     {
         $os = array(
             new \Browscap\Detector\Os\Symbianos(),
+            new \Browscap\Detector\Os\Linux(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

@@ -152,8 +152,8 @@ final class Huawei
         $huaweiPhones = array(
             'Huawei',
             'HUAWEI',
-            'IDEOS S7',
-            'Ideos S7',
+            'IDEOS ',
+            'Ideos ',
             'U8100',
             'U8110',
             'U8180',

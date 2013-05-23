@@ -103,19 +103,19 @@ final class MotorolaXoom
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 800,
+        'max_image_height'       => 1000,
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class MotorolaXoom
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**

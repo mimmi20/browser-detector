@@ -103,12 +103,12 @@ final class ArchosA80KSC
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
         'resolution_width'       => 800,
         'resolution_height'      => 600,
         'dual_orientation'       => true,

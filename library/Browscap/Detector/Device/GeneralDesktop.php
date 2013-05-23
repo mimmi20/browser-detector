@@ -186,26 +186,15 @@ final class GeneralDesktop
             return true;
         }
         
-        $linux = array(
-            'linux', 'debian', 'ubuntu', 'suse', 'fedora', 'mint', 'redhat', 
-            'slackware', 'zenwalk gnu', 'centos', 'kubuntu', 'cros'
-        );
-        
-        if ($this->_utils->checkIfContains($linux, true)) {
-            return true;
-        }
-        
-        $mac = array(
-            'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac',
-            'PPC Mac', 'Mac OS X', 'iMac', 'MacBookPro', 'MacBookAir',
-            'MacBook', 'Macmini'
-        );
-        
-        if ($this->_utils->checkIfContains($mac)) {
-            return true;
-        }
-        
         $others = array(
+            // Linux
+            'linux', 'debian', 'ubuntu', 'suse', 'fedora', 'mint', 'redhat', 
+            'slackware', 'zenwalk gnu', 'centos', 'kubuntu', 'cros',
+            // Mac
+            'macintosh', 'darwin', 'mac_powerpc', 'macbook', 'for mac',
+            'ppc mac', 'mac os x', 'imac', 'macbookpro', 'macbookair',
+            'macbook', 'macmini',
+            // others
             'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
             'google desktop', 'eeepc', 'dillo', 'konqueror', 'eudora'
         );

@@ -130,7 +130,8 @@ class Bada
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine()
+            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini()
         );
         
         $chain = new \Browscap\Detector\Chain();

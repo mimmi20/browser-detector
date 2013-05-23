@@ -92,7 +92,7 @@ final class RimPlayBook
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false, // wurflkey: rim_playbook_android_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,

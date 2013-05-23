@@ -97,7 +97,7 @@ final class SamsungGtn7105
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-N7105.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

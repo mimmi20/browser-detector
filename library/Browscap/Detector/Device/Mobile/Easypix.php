@@ -149,7 +149,7 @@ final class Easypix
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Easypix', 'Junior 4.0'))) {
+        if (!$this->_utils->checkIfContains(array('Easypix', 'Junior 4.0', 'EasyPad'))) {
             return false;
         }
         

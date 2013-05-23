@@ -80,19 +80,19 @@ final class HpTouchpad
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'TouchPad',
+        'model_name'                => 'Touchpad',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HP',
         'brand_name'                => 'HP',
         'model_extra_info'          => null,
-        'marketing_name'            => 'TouchPad',
+        'marketing_name'            => 'Touchpad',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,

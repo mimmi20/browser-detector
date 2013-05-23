@@ -67,7 +67,7 @@ final class Nokia5800
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_5800i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class Nokia5800
         'nokia_series'              => 60,
         'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/Nokia5800i-1r100-3G.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -112,7 +112,7 @@ final class Nokia5800
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,
@@ -154,7 +154,7 @@ final class Nokia5800
             return false;
         }
         
-        if ($this->_utils->checkIfContains('Nokia5800d')) {
+        if ($this->_utils->checkIfContains(array('Nokia5800d'))) {
             return false;
         }
         

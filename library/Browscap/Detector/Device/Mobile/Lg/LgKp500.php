@@ -67,7 +67,7 @@ final class LgKp500
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_kp500_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -86,32 +86,33 @@ final class LgKp500
         'brand_name'                => 'LG',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
+        'has_qwerty_keyboard'       => false,
+        'pointing_method'           => 'stylus',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://gsm.lge.com/html/gsm/LG-KP500.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 39,
+        'physical_screen_height' => 65,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 240,
+        'max_image_height'       => 400,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
@@ -213,16 +214,9 @@ final class LgKp500
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Java(),
-            //new \Browscap\Detector\Os\FreeBsd()
-        );
+        $handler = new \Browscap\Detector\Os\Java();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

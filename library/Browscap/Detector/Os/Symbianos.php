@@ -112,7 +112,7 @@ class Symbianos
             return;
         }
         
-        $searches = array('Symbian');
+        $searches = array('Symbian', 'SymbianOS');
         
         $this->setCapability(
             'device_os_version', 
@@ -142,13 +142,14 @@ class Symbianos
             new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
             new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
             new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\Ucweb()
         );
         
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Mobile\NokiaBrowser());
         
         return $chain->detect();
     }

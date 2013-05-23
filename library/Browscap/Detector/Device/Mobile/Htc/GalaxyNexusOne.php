@@ -85,7 +85,7 @@ final class GalaxyNexusOne
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'Google',
         'model_extra_info'          => 'Google Phone',
-        'marketing_name'            => 'Nexus One',
+        'marketing_name'            => 'HTC Nexus One',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

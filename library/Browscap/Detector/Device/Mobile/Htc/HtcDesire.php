@@ -155,7 +155,8 @@ final class HtcDesire
         }
         
         $specialHtcDesire = array(
-            'DesireS', 'A7272', 'A8181', 'A9191', 'Desire_C', 'Desire Z'
+            'DesireS', 'A7272', 'A8181', 'A9191', 'Desire_C', 'Desire C',
+            'Desire Z'
         );
         
         if ($this->_utils->checkIfContains($specialHtcDesire)) {

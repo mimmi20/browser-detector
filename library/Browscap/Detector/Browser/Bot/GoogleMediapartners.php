@@ -111,6 +111,25 @@ class GoogleMediapartners
     }
     
     /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('Mediapartners\-Google');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
+    }
+    
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -118,5 +137,31 @@ class GoogleMediapartners
     public function getWeight()
     {
         return 155084;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        if ($this->_utils->checkIfContains('Mediapartners-Google')) {
+            $agent = str_ireplace(
+                array('mediapartners-google', 'www.google.com/bot.html'),
+                '', $this->_useragent
+            );
+            
+            $detector = new \Browscap\Input\UserAgent();
+            $detector->setAgent($agent);
+            
+            $device->setRenderAs($detector->getBrowser());
+        }
+        
+        return $this;
     }
 }

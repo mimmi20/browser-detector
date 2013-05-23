@@ -85,7 +85,7 @@ final class SonyEricssonLT15iv
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Xperia arc SO-01C for DoCoMo',
+        'marketing_name'            => 'Xperia Arc SO-01C for DoCoMo',
         'has_qwerty_keyboard'       => false, // wurflkey: sonyericsson_lt15i_ver1_subua232
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

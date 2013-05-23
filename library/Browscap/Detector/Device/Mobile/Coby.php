@@ -158,6 +158,7 @@ final class Coby
             'MID7022',
             'MID8127',
             'MID8128',
+            'MID9742',
             'NBPC724'
         );
         

@@ -97,8 +97,8 @@ final class BlackBerry9700
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9700_umts/5.0.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9700_edge/5.0.0.rdf',
         'uaprof3'                   => null,
         'unique'                    => true,
         

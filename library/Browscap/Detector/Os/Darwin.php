@@ -134,6 +134,7 @@ class Darwin
             new \Browscap\Detector\Browser\Mobile\OnePassword(),
             new \Browscap\Detector\Browser\Mobile\Sleipnir(),
             new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
+            new \Browscap\Detector\Browser\Mobile\Terra(),
         );
         
         $chain = new \Browscap\Detector\Chain();

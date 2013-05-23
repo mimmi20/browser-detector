@@ -106,6 +106,7 @@ class MicrosoftInternetExplorer
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'  => '5.5',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/' => '5.23',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.22.*/' => '5.22',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.17.*/' => '5.17',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.16.*/' => '5.16',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/' => '5.01',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'  => '5.0',
@@ -323,6 +324,19 @@ class MicrosoftInternetExplorer
         if ($engineVersion >= 5.0) {
             $engine->setCapability('image_inlining', true);
             $engine->setCapability('css_spriting', true);
+        }
+        
+        $engine->setCapability('is_sencha_touch_ok', false);
+        
+        if ($version >= 10) {
+            $engine->setCapability('jqm_grade', 'A');
+            $engine->setCapability('is_sencha_touch_ok', true);
+        } elseif ($version >= 8) {
+            $engine->setCapability('jqm_grade', 'A');
+        } elseif ($version >= 7) {
+            $engine->setCapability('jqm_grade', 'B');
+        } else {
+            $engine->setCapability('jqm_grade', 'C');
         }
         
         return $this;

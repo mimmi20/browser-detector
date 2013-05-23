@@ -86,20 +86,20 @@ final class NokiaX600
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00r100-3G.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00r100-2G.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00.1r100-3G.xml',
         'unique'                    => true,
         
         // display
@@ -109,9 +109,10 @@ final class NokiaX600
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => false,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

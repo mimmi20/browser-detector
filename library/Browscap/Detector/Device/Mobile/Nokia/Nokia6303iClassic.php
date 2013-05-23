@@ -94,8 +94,8 @@ final class Nokia6303iclassic
         // product info
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 40,
+        'nokia_edition'             => 6,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/N6303iclassicr100.xml',
         'uaprof2'                   => null,
@@ -103,16 +103,16 @@ final class Nokia6303iclassic
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 45,
+        'columns'                => 15,
+        'rows'                   => 16,
         'max_image_width'        => null,
         'max_image_height'       => null,
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

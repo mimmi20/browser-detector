@@ -67,7 +67,7 @@ final class BlackBerry9500
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'blackberry9500_ver1_subos5', // not in wurfl
+        'wurflKey' => 'blackberry9500_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,9 +97,9 @@ final class BlackBerry9500
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_edge/5.0.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_gprs/5.0.0.rdf',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_umts/5.0.0.rdf',
         'unique'                    => true,
         
         // display

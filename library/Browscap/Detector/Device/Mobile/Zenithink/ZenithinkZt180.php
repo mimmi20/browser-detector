@@ -70,9 +70,9 @@ final class ZenithinkZt180
         'wurflKey' => 'zenithink_zt180_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -103,15 +103,15 @@ final class ZenithinkZt180
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
         'resolution_width'       => 240,
         'resolution_height'      => 320,
-        'dual_orientation'       => false,
+        'dual_orientation'       => true,
         'colors'                 => 65536,
         
         // sms

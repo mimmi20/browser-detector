@@ -153,7 +153,7 @@ final class HtcOne
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('HTC One ', 'HTC_One_', 'HTC/One_', 'HTC_OneX', 'HTC_OneS'))) {
+        if ($this->_utils->checkIfContains(array('HTC_One_', 'HTC/One_', 'HTC_OneX', 'HTC_OneS'))) {
             return false;
         }
         

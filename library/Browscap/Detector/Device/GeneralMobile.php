@@ -327,6 +327,30 @@ final class GeneralMobile
             return $this;
         }
         
+        if ($this->_utils->checkIfContains(array('Windows Phone 6.5'))) {
+            $this->setCapability('is_tablet', false);
+            
+            $this->setCapability('physical_screen_width', 34);
+            $this->setCapability('physical_screen_height', 50);
+            $this->setCapability('columns', 60);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 320);
+            $this->setCapability('max_image_height', 400);
+            $this->setCapability('resolution_width', 320);
+            $this->setCapability('resolution_height', 480);
+            $this->setCapability('dual_orientation', false);
+            $this->setCapability('can_assign_phone_number', true);
+            $this->setCapability('has_qwerty_keyboard', false);
+            $this->setCapability('pointing_method', 'stylus');
+            $this->setCapability('colors', 4096);
+            
+            $this->setCapability('device_type', 'Mobile Phone');
+            
+            $this->setCapability('wurflKey', 'generic_opera_mini_android');
+            
+            return $this;
+        }
+        
         return $this;
     }
     
@@ -443,6 +467,42 @@ final class GeneralMobile
         
         if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
+        }
+        
+        if (('Internet Explorer' == $browser->getCapability('mobile_browser')
+            || 'IEMobile' == $browser->getCapability('mobile_browser'))
+            && 'Windows Mobile OS' == $os->getCapability('device_os')
+        ) {
+            $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            
+            if (6.5 == (float) $osVersion) {
+                // $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('wml_1_1', true);
+                $engine->setCapability('chtml_table_support', false);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                $engine->setCapability('xhtml_table_support', true);
+                $engine->setCapability('xhtml_supports_table_for_layout', true);
+                $engine->setCapability('wbmp', true);
+                $engine->setCapability('canvas_support', 'full');
+                $engine->setCapability('viewport_width', 'device_width_token');
+                $engine->setCapability('viewport_supported', true);
+                $engine->setCapability('viewport_userscalable', 'no');
+                $engine->setCapability('css_border_image', 'opera');
+                $engine->setCapability('css_rounded_corners', 'opera');
+                
+                $browser->setCapability('rss_support', true);
+                
+                $this->setCapability('sms_enabled', true);
+                $this->setCapability('nfc_support', true);
+                
+                // $this->setCapability('resolution_width', 1280);
+                // $this->setCapability('resolution_height', 768);
+            }
         }
         
         return $this;

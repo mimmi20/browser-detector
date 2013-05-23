@@ -93,8 +93,8 @@ final class NokiaE72
         
         // product info
         'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
+        'nokia_feature_pack'        => 2,
+        'nokia_series'              => 60,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE72-1r100.xml',
@@ -112,7 +112,7 @@ final class NokiaE72
         'resolution_width'       => 320,
         'resolution_height'      => 240,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

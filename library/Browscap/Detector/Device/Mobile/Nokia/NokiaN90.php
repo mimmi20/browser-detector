@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Asus;
+namespace Browscap\Detector\Device\Mobile\Nokia;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class EeePc
+final class NokiaN90
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,29 +70,29 @@ final class EeePc
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Desktop', // not in wurfl
-        'is_wireless_device' => false,
+        'device_type'        => 'Mobile Phone', // not in wurfl
+        'is_wireless_device' => true,
         'is_tablet'          => false,
-        'is_bot'             => false,
+        // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
-        'ux_full_desktop'    => true,
-        'is_transcoder'      => false,
+        'ux_full_desktop'    => false,
+        // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'eee pc',
+        'model_name'                => 'N90',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Asus',
-        'brand_name'                => 'Asus',
+        'manufacturer_name'         => 'Nokia',
+        'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'mouse',
+        'marketing_name'            => 'N90 DUAL CORE2',
+        'has_qwerty_keyboard'       => false,
+        'pointing_method'           => 'joystick',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,15 +103,16 @@ final class EeePc
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 43,
+        'physical_screen_height' => 57,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 234,
+        'max_image_height'       => 273,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
@@ -149,11 +150,21 @@ final class EeePc
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('eeepc')) {
+        if (!$this->_utils->checkIfContains('NokiaN90')) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -169,13 +180,25 @@ final class EeePc
     }
     
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
      *
-     * @return integer
+     * @return null|\Browscap\Os\Handler
      */
-    public function getWeight()
+    public function detectBrowser()
     {
-        return 5;
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
     }
     
     /**
@@ -186,54 +209,9 @@ final class EeePc
      */
     public function detectOs()
     {
-        $os = array(
-            new \Browscap\Detector\Os\Linux(),
-            new \Browscap\Detector\Os\Debian(),
-            new \Browscap\Detector\Os\Fedora(),
-            new \Browscap\Detector\Os\JoliOs(),
-            new \Browscap\Detector\Os\Kubuntu(),
-            new \Browscap\Detector\Os\Mint(),
-            new \Browscap\Detector\Os\Redhat(),
-            new \Browscap\Detector\Os\Slackware(),
-            new \Browscap\Detector\Os\Suse(),
-            new \Browscap\Detector\Os\Ubuntu(),
-            new \Browscap\Detector\Os\ZenwalkGnu(),
-            new \Browscap\Detector\Os\CentOs(),
-            new \Browscap\Detector\Os\LinuxTv(),
-            new \Browscap\Detector\Os\CrOs(),
-            new \Browscap\Detector\Os\Ventana(),
-            new \Browscap\Detector\Os\Mandriva()
-        );
+        $handler = new \Browscap\Detector\Os\Symbianos();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser'
-            . DIRECTORY_SEPARATOR . 'Desktop'
-            . DIRECTORY_SEPARATOR
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\Browscap\\Detector\\Browser\\Desktop');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

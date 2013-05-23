@@ -139,6 +139,7 @@ final class SpamCrawlerFake
             'naver',
             'nutch',
             'openvas',
+            'openweb',
             'opera/9.751',
             'ossproxy',
             'parser',
@@ -179,6 +180,7 @@ final class SpamCrawlerFake
             'wordpress',
             'www.yahoo.com',
             'xxx',
+            'yahoo pipes',
             'yandex',
             'zend_http_client',
             'zmeu'
@@ -244,7 +246,7 @@ final class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
-        if ($this->_utils->checkIfContains(array('HTTrack', 'OpenVAS'))) {
+        if ($this->_utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb'))) {
             return false;
         }
         
@@ -265,6 +267,7 @@ final class SpamCrawlerFake
         if (!$this->_utils->checkIfStartsWith('Mozilla/') // regular IE
             && !$this->_utils->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
             && !$this->_utils->checkIfContains('Windows CE') // Windows CE
+            && !$this->_utils->checkIfContains('Opera') // Opera
             && $this->_utils->checkIfContains('MSIE')
         ) {
             return true;

@@ -67,7 +67,7 @@ final class SamsungGtp6210
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_p6210_ver1_suban40', // not in wurfl
+        'wurflKey' => 'samsung_gt_p6210_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -103,15 +103,15 @@ final class SamsungGtp6210
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 154,
+        'physical_screen_height' => 90,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => false,

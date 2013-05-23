@@ -103,8 +103,8 @@ final class HtcHd2T8585
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 94,
-        'physical_screen_height' => 57,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
         'columns'                => 16,
         'rows'                   => 36,
         'max_image_width'        => 460,

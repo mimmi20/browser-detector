@@ -103,16 +103,16 @@ final class HpP160U
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 50,
+        'columns'                => 20,
+        'rows'                   => 10,
+        'max_image_width'        => 300,
+        'max_image_height'       => 360,
         'resolution_width'       => 320,
         'resolution_height'      => 400,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

@@ -135,12 +135,12 @@ class NetFront extends EngineHandler
         'xhtml_nowrap_mode' => null,
         
         // image format
-        'jpg' => null,
-        'gif' => null,
+        'jpg' => true,
+        'gif' => true,
         'bmp' => null,
         'wbmp' => null,
         'gif_animated' => null,
-        'png' => null,
+        'png' => true,
         'greyscale' => null,
         'transparent_png_index' => null,
         'epoc_bmp' => null,
@@ -150,7 +150,7 @@ class NetFront extends EngineHandler
         'tiff' => null,
         
         // security
-        'https_support' => null,
+        'https_support' => true,
         
         // storage
         'max_url_length_bookmark' => null,

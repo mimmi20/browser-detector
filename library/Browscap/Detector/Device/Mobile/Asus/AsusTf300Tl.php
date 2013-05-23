@@ -67,7 +67,7 @@ final class AsusTf300Tl
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'asus_transformer_pad_tf300t_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -85,7 +85,7 @@ final class AsusTf300Tl
         'manufacturer_name'         => 'Asus',
         'brand_name'                => 'Asus',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Transformer Pad TF300TL',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

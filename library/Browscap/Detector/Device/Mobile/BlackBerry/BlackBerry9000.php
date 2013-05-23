@@ -67,7 +67,7 @@ final class BlackBerry9000
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'blackberry9000_ver1_sub460162_123', // not in wurfl
+        'wurflKey' => 'blackberry9000_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,9 +97,9 @@ final class BlackBerry9000
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_edge/5.0.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_umts/5.0.0.rdf',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_edge/5.0.0.rdf',
         'unique'                    => true,
         
         // display
@@ -112,6 +112,7 @@ final class BlackBerry9000
         'resolution_width'       => 480,   // wurflkey: blackberry9000_ver1_sub460162
         'resolution_height'      => 320,   // wurflkey: blackberry9000_ver1_sub460162
         'dual_orientation'       => false, // wurflkey: blackberry9000_ver1_sub460162
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

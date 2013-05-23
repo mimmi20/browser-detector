@@ -70,7 +70,7 @@ final class SamsungShwM180s
         'wurflKey' => 'samsung_galaxy_tab_ver1_sub_shwm180s_suban23b', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
         // 'is_bot'             => false,
@@ -97,22 +97,22 @@ final class SamsungShwM180s
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-P1000.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 90,
+        'physical_screen_height' => 154,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 400,
+        'max_image_height'       => 400,
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

@@ -67,7 +67,7 @@ final class BlackBerry8520
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'blackberry8520_ver1_sub500822', // not in wurfl
+        'wurflKey' => 'blackberry8520_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,9 +97,9 @@ final class BlackBerry8520
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_edge/5.0.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/5.0.0.rdf',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/4.6.1.rdf',
         'unique'                    => true,
         
         // display

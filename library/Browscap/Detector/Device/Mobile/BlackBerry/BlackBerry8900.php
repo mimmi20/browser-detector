@@ -67,7 +67,7 @@ final class BlackBerry8900
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry8900_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,9 +97,9 @@ final class BlackBerry8900
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_gprs/5.0.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_edge/5.0.0.rdf',
+        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_edge/4.6.1.rdf',
         'unique'                    => true,
         
         // display

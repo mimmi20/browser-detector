@@ -67,7 +67,7 @@ final class NokiaE52
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'nokia_e52_ver1_sub033002', // not in wurfl
+        'wurflKey' => 'nokia_e52_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -93,9 +93,9 @@ final class NokiaE52
         
         // product info
         'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_feature_pack'        => 2,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 3,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE52-1r100.xml',
         'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NE52-2r100.xml',
@@ -103,16 +103,16 @@ final class NokiaE52
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 37,
+        'physical_screen_height' => 49,
+        'columns'                => 21,
+        'rows'                   => 18,
+        'max_image_width'        => 234,
+        'max_image_height'       => 280,
         'resolution_width'       => 240,
         'resolution_height'      => 320,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

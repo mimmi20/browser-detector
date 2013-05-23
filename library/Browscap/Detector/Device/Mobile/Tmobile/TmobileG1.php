@@ -103,16 +103,16 @@ final class TmobileG1
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 45,
+        'physical_screen_height' => 68,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 315,
+        'max_image_height'       => 440,
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 256,
         
         // sms
         'sms_enabled' => true,

@@ -150,7 +150,7 @@ final class SonyEricssonLT18i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SonyEricssonLT18i', 'LT18i'))) {
+        if (!$this->_utils->checkIfContains(array('SonyEricssonLT18i', 'LT18i', 'Xperia Arc'))) {
             return false;
         }
         

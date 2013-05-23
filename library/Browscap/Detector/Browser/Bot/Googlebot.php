@@ -103,13 +103,17 @@ class Googlebot
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains('googlebot', true)
-            || $this->_utils->checkIfContains('www.google.com/bot.html', true)
+        if (!$this->_utils->checkIfContains('googlebot', true)
+            && !$this->_utils->checkIfContains('www.google.com/bot.html', true)
         ) {
-            return true;
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains(array('Mediapartners-Google'))) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**
@@ -124,7 +128,7 @@ class Googlebot
         
         $searches = array(
             'Googlebot', 'Googlebot v', 'Googlebot\-Image', 'Googlebot\-News',
-            'Googlebot\-Mobile', 'Google', 'Mediapartners\-Google'
+            'Googlebot\-Mobile', 'Google'
         );
         
         $this->setCapability(
@@ -163,7 +167,7 @@ class Googlebot
                 ),
                 '', $this->_useragent
             );
-            var_dump($agent);
+            
             $detector = new \Browscap\Input\UserAgent();
             $detector->setAgent($agent);
             
