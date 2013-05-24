@@ -67,7 +67,7 @@ final class NokiaE72
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'nokia_e72_ver1_sub021024', // not in wurfl
+        'wurflKey' => 'nokia_e72_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -95,7 +95,7 @@ final class NokiaE72
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 2,
         'nokia_series'              => 60,
-        'nokia_edition'             => 0,
+        'nokia_edition'             => 3,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE72-1r100.xml',
         'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NE72-2r100.xml',

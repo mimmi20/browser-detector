@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\SonyEricsson;
+namespace Browscap\Detector\Device\Mobile\Odys;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SonyEricssonJ20i
+final class OdysEvo
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,12 +67,12 @@ final class SonyEricssonJ20i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_j20i_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,19 +80,19 @@ final class SonyEricssonJ20i
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'J20i',
+        'model_name'                => 'Evo',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
+        'manufacturer_name'         => 'Odys',
+        'brand_name'                => 'Odys',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
-        'pointing_method'           => null,
+        'marketing_name'            => 'Evo',
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,16 +103,16 @@ final class SonyEricssonJ20i
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 11,
-        'rows'                   => 6,
-        'max_image_width'        => 228,
-        'max_image_height'       => 280,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
-        'dual_orientation'       => false,
-        'colors'                 => 16777216,
+        'physical_screen_width'  => 143,
+        'physical_screen_height' => 107,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
@@ -150,21 +150,11 @@ final class SonyEricssonJ20i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SonyEricssonJ20i')) {
+        if (!$this->_utils->checkIfContains(array('ODYS-EVO', ' Evo '))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
     
     /**
@@ -180,6 +170,16 @@ final class SonyEricssonJ20i
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+    
+    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
@@ -188,14 +188,9 @@ final class SonyEricssonJ20i
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Openwave(),
-            new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
-            new \Browscap\Detector\Browser\Mobile\NetFront(),
-            new \Browscap\Detector\Browser\Mobile\Phantom(),
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -214,7 +209,7 @@ final class SonyEricssonJ20i
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Java();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

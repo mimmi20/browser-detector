@@ -150,19 +150,19 @@ final class Archos
     public function canHandle()
     {
         $archosPhones = array(
-            'ARCHOS',
-            'A35DM',
-            'A70BHT',
-            'A70CHT',
-            'A70S',
-            'A70H2',
-            'A80KSC',
-            'A101IT',
-            'A70HB',
-            'A7EB'
+            'archos',
+            'a35dm',
+            'a70bht',
+            'a70cht',
+            'a70s',
+            'a70h2',
+            'a80ksc',
+            'a101it',
+            'a70hb',
+            'a7eb'
         );
         
-        if ($this->_utils->checkIfContains($archosPhones)) {
+        if ($this->_utils->checkIfContains($archosPhones, true)) {
             return true;
         }
         

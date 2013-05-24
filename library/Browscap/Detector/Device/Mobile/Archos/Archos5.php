@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\SonyEricsson;
+namespace Browscap\Detector\Device\Mobile\Archos;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SonyEricssonJ20i
+final class Archos5
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,10 +67,10 @@ final class SonyEricssonJ20i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_j20i_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Mobile Device', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,
@@ -80,19 +80,19 @@ final class SonyEricssonJ20i
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'J20i',
+        'model_name'                => '5',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'SonyEricsson',
-        'brand_name'                => 'SonyEricsson',
+        'manufacturer_name'         => 'Archos',
+        'brand_name'                => 'Archos',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
-        'pointing_method'           => null,
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,16 +103,15 @@ final class SonyEricssonJ20i
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 11,
-        'rows'                   => 6,
-        'max_image_width'        => 228,
-        'max_image_height'       => 280,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
-        'dual_orientation'       => false,
-        'colors'                 => 16777216,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 390,
+        'max_image_height'       => 780,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
         
         // sms
         'sms_enabled' => true,
@@ -150,7 +149,7 @@ final class SonyEricssonJ20i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('SonyEricssonJ20i')) {
+        if (!$this->_utils->checkIfContains('Archos5')) {
             return false;
         }
         
@@ -188,14 +187,9 @@ final class SonyEricssonJ20i
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Openwave(),
-            new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
-            new \Browscap\Detector\Browser\Mobile\NetFront(),
-            new \Browscap\Detector\Browser\Mobile\Phantom(),
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -214,7 +208,7 @@ final class SonyEricssonJ20i
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Java();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

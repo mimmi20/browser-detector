@@ -98,8 +98,8 @@ final class SamsungGts5230
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5230.xml',
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof2'                   => 'http://wap.samsungmobile.com/uaprof/GT-S5230.rdf',
+        'uaprof3'                   => 'http://wap.samsungmobile.com/uaprof/GT-S5230MR.rdf',
         'unique'                    => true,
         
         // display
@@ -112,7 +112,7 @@ final class SamsungGts5230
         'resolution_width'       => 240,
         'resolution_height'      => 400,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,
