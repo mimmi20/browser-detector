@@ -328,12 +328,14 @@ class MicrosoftInternetExplorer
         
         $engine->setCapability('is_sencha_touch_ok', false);
         
-        if ($version >= 10) {
+        $browserVersion = (int) $browserVersion->getVersion(Version::MAJORONLY);
+        
+        if ($browserVersion >= 10) {
             $engine->setCapability('jqm_grade', 'A');
             $engine->setCapability('is_sencha_touch_ok', true);
-        } elseif ($version >= 8) {
+        } elseif ($browserVersion >= 8) {
             $engine->setCapability('jqm_grade', 'A');
-        } elseif ($version >= 7) {
+        } elseif ($browserVersion >= 7) {
             $engine->setCapability('jqm_grade', 'B');
         } else {
             $engine->setCapability('jqm_grade', 'C');
