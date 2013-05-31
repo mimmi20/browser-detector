@@ -115,10 +115,7 @@ class Opera
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',
-            'NETTV'
-        }
-        
-        
+            'NETTV',
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnOpera)) {
