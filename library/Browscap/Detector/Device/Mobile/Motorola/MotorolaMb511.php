@@ -67,7 +67,7 @@ final class MotorolaMb511
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'motorola_mb511_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class MotorolaMb511
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/MotoMB511/profile/MotoMB511.rdf',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -109,8 +109,8 @@ final class MotorolaMb511
         'rows'                   => 12,
         'max_image_width'        => 240,
         'max_image_height'       => 320,
-        'resolution_width'       => 320,
-        'resolution_height'      => 240,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         

@@ -67,7 +67,7 @@ final class NokiaN97
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_n97_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -80,12 +80,12 @@ final class NokiaN97
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'N97 mini',
+        'model_name'                => 'N97', // wurflkey: nokia_n97_ver1_sub_220110
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
         'model_extra_info'          => null,
-        'marketing_name'            => 'N97 mini',
+        'marketing_name'            => 'N97',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -94,12 +94,12 @@ final class NokiaN97
         // product info
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NN97r100-2G.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NN97-3r100-3G.xml',
+        'uaprof3'                   => 'http://nds1.nds.nokia.com/uaprof/NN97-1r100-3G.xml',
         'unique'                    => true,
         
         // display
@@ -112,7 +112,7 @@ final class NokiaN97
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

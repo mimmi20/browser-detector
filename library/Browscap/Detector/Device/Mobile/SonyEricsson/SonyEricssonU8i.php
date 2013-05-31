@@ -94,8 +94,8 @@ final class SonyEricssonU8i
         // product info
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://www.sonyericsson.com/downloads/U8iR000.xml',
         'uaprof2'                   => null,
@@ -112,7 +112,7 @@ final class SonyEricssonU8i
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

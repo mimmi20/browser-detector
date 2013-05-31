@@ -67,7 +67,7 @@ final class SamsungGts5830
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_s5830_ver1_suban23', // not in wurfl
+        'wurflKey' => 'samsung_gt_s5830_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

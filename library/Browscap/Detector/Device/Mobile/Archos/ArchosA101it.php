@@ -67,7 +67,7 @@ final class ArchosA101it
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'archos_a101it_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -92,7 +92,7 @@ final class ArchosA101it
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,12 +103,12 @@ final class ArchosA101it
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,

@@ -67,7 +67,7 @@ final class BlackBerry9360
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'blackberry9360_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,22 +97,22 @@ final class BlackBerry9360
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9360_edge/7.1.0.rdf',
+        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9360_umts/7.1.0.rdf',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 50,
+        'columns'                => 48,
+        'rows'                   => 24,
+        'max_image_width'        => 480,
+        'max_image_height'       => 300,
         'resolution_width'       => 480,
         'resolution_height'      => 360,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

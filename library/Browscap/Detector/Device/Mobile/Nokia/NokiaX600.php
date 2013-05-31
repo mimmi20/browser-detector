@@ -67,7 +67,7 @@ final class NokiaX600
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_x6_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -103,12 +103,12 @@ final class NokiaX600
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 71,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 360,
+        'max_image_height'       => 500,
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,

@@ -132,6 +132,15 @@ class WindowsMobileOs
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
+        if ($this->_utils->checkIfContains('Windows NT 5.1')) {
+            $this->setCapability(
+                'device_os_version', 
+                $detector->setVersion('6.0')
+            );
+            
+            return;
+        }
+        
         if ($this->_utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
             $detector->setDefaulVersion('6.0');
             

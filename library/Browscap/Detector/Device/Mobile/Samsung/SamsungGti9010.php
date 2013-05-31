@@ -98,7 +98,7 @@ final class SamsungGti9010
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-i9010.xml',
-        'uaprof2'                   => null,
+        'uaprof2'                   => 'http://wap.samsungmobile.com/uaprof/GT-I9000.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         

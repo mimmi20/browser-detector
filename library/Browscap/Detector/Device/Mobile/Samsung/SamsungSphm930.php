@@ -67,7 +67,7 @@ final class SamsungSphm930
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_sph_m930_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -103,12 +103,12 @@ final class SamsungSphm930
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 89,
+        'physical_screen_height' => 134,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,

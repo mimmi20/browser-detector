@@ -106,7 +106,7 @@ class Symbianos
         if ($this->_utils->checkIfContains(array('Symbian/3'))) {
             $this->setCapability(
                 'device_os_version', 
-                $detector->setVersion('S3')
+                $detector->setVersion('Anna (S3)')
             );
             
             return;

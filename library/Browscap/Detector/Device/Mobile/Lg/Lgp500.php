@@ -67,7 +67,7 @@ final class Lgp500
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'lg_p500_ver1_subua', // not in wurfl
+        'wurflKey' => 'lg_p500_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

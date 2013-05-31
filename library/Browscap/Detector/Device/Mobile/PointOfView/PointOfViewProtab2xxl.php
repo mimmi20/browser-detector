@@ -150,7 +150,7 @@ final class PointOfViewProtab2xxl
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('TAB-PROTAB2xxl')) {
+        if (!$this->_utils->checkIfContains('tab-protab2xxl', true)) {
             return false;
         }
         

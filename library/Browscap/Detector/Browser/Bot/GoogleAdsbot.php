@@ -74,7 +74,7 @@ class GoogleAdsbot
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'AdsBot-Google',
+        'mobile_browser'              => 'AdsBot Google',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl
@@ -107,6 +107,10 @@ class GoogleAdsbot
             return false;
         }
         
+        if ($this->_utils->checkIfContains('adsbot-google-mobile', true)) {
+            return false;
+        }
+        
         return true;
     }
     
@@ -120,7 +124,7 @@ class GoogleAdsbot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('AdsBot\-Google', 'AdsBot\-Google\-Mobile');
+        $searches = array('AdsBot\-Google');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

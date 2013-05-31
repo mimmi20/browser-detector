@@ -158,7 +158,8 @@ final class Lenovo
             'ThinkPad',
             'IdeaTab',
             'SmartTab II',
-            'SmartTabII7'
+            'SmartTabII7',
+            'SmartTabII10'
         );
         
         if (!$this->_utils->checkIfContains($LenovoPhones)) {

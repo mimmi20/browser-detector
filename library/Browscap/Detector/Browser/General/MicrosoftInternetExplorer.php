@@ -162,6 +162,7 @@ class MicrosoftInternetExplorer
             'XBLWP7',
             'ZuneWP7',
             'WPDesktop',
+            'HTC_HD2',
             // Fakes
             'Mac; Mac OS '
         );

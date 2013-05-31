@@ -241,11 +241,13 @@ final class HpTouchpad
         $engine->setCapability('xhtml_allows_disabled_form_elements', false);
         $engine->setCapability('xhtml_supports_invisible_text', false);
         
-        if ('Android Webkit' == $browser->getCapability('mobile_browser')
+        if (('Android Webkit' == $browser->getCapability('mobile_browser')
+            || 'Chrome' == $browser->getCapability('mobile_browser'))
             && 'Android' == $os->getCapability('device_os')
         ) {
-            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
+            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
             $this->setCapability('model_extra_info', 'Android port');
+            $this->setCapability('colors', 65536);
         }
         
         return $this;

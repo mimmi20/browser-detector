@@ -67,7 +67,7 @@ final class Lgv900
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_v900_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -115,7 +115,7 @@ final class Lgv900
         'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class Lgv900
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**

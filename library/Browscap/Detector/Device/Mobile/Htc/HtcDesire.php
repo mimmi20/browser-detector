@@ -67,7 +67,7 @@ final class HtcDesire
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_desire_ver1_sub22', // not in wurfl
+        'wurflKey' => 'htc_desire_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -241,20 +241,7 @@ final class HtcDesire
             Version::MAJORMINOR
         );
         
-        if (2.2 == (float) $osVersion) {
-            if ($os->getCapability('device_os_version')->getVersion(Version::MICROONLY)) {
-                $this->setCapability('wurflKey', 'htc_desire_ver1_sub22_01');
-            }
-            
-            if ($this->_utils->checkIfContains('HTC Desire 2.')) {
-                $this->setCapability('wurflKey', 'htc_desire_ver1_sub22_subbravo');
-            }
-        }
-        
         if (2.3 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'htc_desirehd_ver1_suban233');
-            $this->setCapability('uaprof', 'http://www.htcmms.com.tw/Android/Common/DesireHD/ua-profile.xml');
-            
             $engine->setCapability('bmp', false);
         }
         

@@ -94,8 +94,8 @@ final class SonyEricssonU1i
         // product info
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/U1iR000.xml', // wurflkey: sonyericsson_u1i_ver1
         'uaprof2'                   => null,
@@ -112,7 +112,7 @@ final class SonyEricssonU1i
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

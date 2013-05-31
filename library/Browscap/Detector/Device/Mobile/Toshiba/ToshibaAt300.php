@@ -154,6 +154,10 @@ final class ToshibaAt300
             return false;
         }
         
+        if ($this->_utils->checkIfContains('AT300SE')) {
+            return false;
+        }
+        
         return true;
     }
     

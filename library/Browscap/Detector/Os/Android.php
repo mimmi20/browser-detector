@@ -186,6 +186,7 @@ class Android
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\OperaTablet(),
             new \Browscap\Detector\Browser\Mobile\Firefox(),
+            new \Browscap\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -229,6 +230,12 @@ class Android
         
         if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
             $engine->setCapability('is_sencha_touch_ok', false);
+        }
+        
+        if ($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Max OS X'))
+            && !$this->_utils->checkIfContains('Android')
+        ) {
+            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
         return $this;

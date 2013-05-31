@@ -67,7 +67,7 @@ final class AmazonKfot
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'amazon_kindle_fire_7_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -112,7 +112,7 @@ final class AmazonKfot
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 256,
         
         // sms
         'sms_enabled' => true,

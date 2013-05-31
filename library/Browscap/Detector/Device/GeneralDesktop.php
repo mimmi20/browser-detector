@@ -196,7 +196,8 @@ final class GeneralDesktop
             'macbook', 'macmini',
             // others
             'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
-            'google desktop', 'eeepc', 'dillo', 'konqueror', 'eudora'
+            'google desktop', 'eeepc', 'dillo', 'konqueror', 'eudora',
+            'masking-agent'
         );
         
         if ($this->_utils->checkIfContains($others, true)) {

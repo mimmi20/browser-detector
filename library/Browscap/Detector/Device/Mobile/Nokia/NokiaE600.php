@@ -93,26 +93,26 @@ final class NokiaE600
         
         // product info
         'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_feature_pack'        => 3,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://nds.nokia.com/uaprof/NE6-00r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NE6-00r100-VF3G.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 38,
+        'columns'                => 30,
+        'rows'                   => 10,
+        'max_image_width'        => 640,
+        'max_image_height'       => 360,
         'resolution_width'       => 640,
         'resolution_height'      => 480,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

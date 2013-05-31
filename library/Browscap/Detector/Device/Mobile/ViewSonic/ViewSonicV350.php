@@ -67,7 +67,7 @@ final class ViewSonicV350
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'viewsonic_v350_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -103,15 +103,15 @@ final class ViewSonicV350
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 74,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
         'resolution_width'       => 320,
         'resolution_height'      => 480,
-        'dual_orientation'       => false,
+        'dual_orientation'       => true,
         'colors'                 => 65536,
         
         // sms

@@ -109,7 +109,7 @@ class Googlebot
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('Mediapartners-Google'))) {
+        if ($this->_utils->checkIfContains(array('Mediapartners-Google', 'Googlebot-Mobile', 'AdsBot-Google'))) {
             return false;
         }
         
@@ -128,7 +128,7 @@ class Googlebot
         
         $searches = array(
             'Googlebot', 'Googlebot v', 'Googlebot\-Image', 'Googlebot\-News',
-            'Googlebot\-Mobile', 'Google'
+            'Google'
         );
         
         $this->setCapability(

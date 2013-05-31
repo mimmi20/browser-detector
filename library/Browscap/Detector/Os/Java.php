@@ -161,6 +161,7 @@ class Java
             new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
             new \Browscap\Detector\Browser\Mobile\Motorola(),
             new \Browscap\Detector\Browser\Bot\GenericJavaCrawler(),
+            new \Browscap\Detector\Browser\Mobile\PlaystationBrowser(),
         );
         
         $chain = new \Browscap\Detector\Chain();

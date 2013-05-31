@@ -160,6 +160,7 @@ final class Motorola
             'mb200',
             'mb300',
             ' droid ',
+            ' droidx ',
             'droid-bionic',
             'xt702',
             'mz601',

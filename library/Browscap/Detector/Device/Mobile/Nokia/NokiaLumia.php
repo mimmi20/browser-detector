@@ -154,7 +154,13 @@ final class NokiaLumia
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('nokia; lumia 610', 'nokia; lumia 710', 'nokia; lumia 800', 'nokia; lumia 820', 'nokia; lumia 900', 'nokia; lumia 920'), true)) {
+        $specialLumias = array(
+            'nokia; lumia 610', 'nokia; lumia 620', 'nokia; lumia 710',
+            'nokia; lumia 800', 'nokia; lumia 820', 'nokia; lumia 900',
+            'nokia; lumia 920'
+        );
+        
+        if ($this->_utils->checkIfContains($specialLumias, true)) {
             return false;
         }
         

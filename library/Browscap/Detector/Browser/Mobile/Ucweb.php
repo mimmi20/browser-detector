@@ -71,7 +71,7 @@ class Ucweb
         
         // kind of device
         'is_bot'             => false,
-        'is_transcoder'      => false,
+        'is_transcoder'      => true,
         
         // browser
         'mobile_browser'              => 'UC Browser',
@@ -137,5 +137,19 @@ class Ucweb
     public function getWeight()
     {
         return 4;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

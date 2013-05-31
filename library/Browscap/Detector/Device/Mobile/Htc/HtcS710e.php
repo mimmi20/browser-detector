@@ -67,7 +67,7 @@ final class HtcS710e
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_incredibles_s710e_ver1_submacspoof', // not in wurfl
+        'wurflKey' => 'htc_incredibles_s710e_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

@@ -136,7 +136,9 @@ class Android
             'UCBrowser',
             'WeTab-Browser',
             'wOSBrowser',
-            'YahooMobileMessenger'
+            'YahooMobileMessenger',
+            'i9988_custom',
+            'i9999_custom'
         );
         
         if ($this->_utils->checkIfContains($noAndroid)) {
@@ -283,12 +285,6 @@ class Android
         
         if ($browserVersion <= 2.1) {
             $engine->setCapability('jqm_grade', 'C');
-        }
-        
-        if ($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Max OS X'))
-            && !$this->_utils->checkIfContains('Android')
-        ) {
-            $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
         return $this;

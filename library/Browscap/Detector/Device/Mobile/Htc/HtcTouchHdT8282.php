@@ -112,7 +112,7 @@ final class HtcTouchHdT8282
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 4096,
         
         // sms
         'sms_enabled' => true,
@@ -209,9 +209,17 @@ final class HtcTouchHdT8282
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            new \Browscap\Detector\Os\WindowsMobileOs(),
+            new \Browscap\Detector\Os\Android(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
     }
 }

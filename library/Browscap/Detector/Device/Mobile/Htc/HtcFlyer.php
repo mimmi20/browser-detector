@@ -67,12 +67,12 @@ final class HtcFlyer
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_flyer_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,

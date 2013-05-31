@@ -103,7 +103,12 @@ class FaceBookBot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('facebookexternalhit', 'facebookplatform'))) {
+        $facebook = array(
+            'facebookexternalhit', 'facebookplatform', 'fbmapping',
+            'fbtimemanagement'
+        );
+        
+        if (!$this->_utils->checkIfContains($facebook, true)) {
             return false;
         }
         

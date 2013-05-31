@@ -67,7 +67,7 @@ final class SamsungGti8530
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_i8530_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -86,13 +86,13 @@ final class SamsungGti8530
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => 'ARM11', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,15 +103,16 @@ final class SamsungGti8530
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
+        'physical_screen_width'  => 53,
+        'physical_screen_height' => 88,
         'columns'                => 25,
         'rows'                   => 21,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
-        'dual_orientation'       => null,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

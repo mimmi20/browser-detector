@@ -114,7 +114,11 @@ class Opera
             'Opera Tablet',
             // Fakes
             'Mac; Mac OS ',
-            'AppEngine-Google'
+            'AppEngine-Google',
+            'NETTV'
+        }
+        
+        
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnOpera)) {

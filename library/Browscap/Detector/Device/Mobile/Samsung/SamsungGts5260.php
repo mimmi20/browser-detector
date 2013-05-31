@@ -209,6 +209,7 @@ final class SamsungGts5260
     {
         $os = array(
             new \Browscap\Detector\Os\Bada(),
+            new \Browscap\Detector\Os\Java(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

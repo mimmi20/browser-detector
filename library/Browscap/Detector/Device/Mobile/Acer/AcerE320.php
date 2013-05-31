@@ -67,7 +67,7 @@ final class AcerE320
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'acer_e320_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -112,7 +112,7 @@ final class AcerE320
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 262000,
         
         // sms
         'sms_enabled' => true,

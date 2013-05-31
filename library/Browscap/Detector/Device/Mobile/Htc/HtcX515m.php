@@ -67,7 +67,7 @@ final class HtcX515m
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_evo_3d_ver1_suban40', // not in wurfl
+        'wurflKey' => 'htc_evo_3d_ver1_suban40m', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

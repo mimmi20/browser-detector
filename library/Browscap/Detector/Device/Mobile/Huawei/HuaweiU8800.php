@@ -67,10 +67,10 @@ final class HuaweiU8800
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'huawei_ideos_x5_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => true,
         // 'is_bot'             => false,
@@ -85,14 +85,14 @@ final class HuaweiU8800
         'manufacturer_name'         => 'Huawei',
         'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Ideos X5',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,15 +103,16 @@ final class HuaweiU8800
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 800,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

@@ -182,7 +182,9 @@ final class Htc
             ' a315c ',
             'Nexus One',
             'NexusOne',
-            'Nexus-One'
+            'Nexus-One',
+            'pcdadr6350',
+            'ADR6350'
         );
         
         if (!$this->_utils->checkIfContains($htcPhones)) {

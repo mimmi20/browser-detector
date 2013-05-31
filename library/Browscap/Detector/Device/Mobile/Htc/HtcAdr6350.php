@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Nokia;
+namespace Browscap\Detector\Device\Mobile\Htc;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class NokiaSeries60
+final class HtcAdr6350
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,7 +67,7 @@ final class NokiaSeries60
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'htc_ADR6350_ver1_subuauscore', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -80,22 +80,22 @@ final class NokiaSeries60
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Series 60',
+        'model_name'                => 'ADR6350',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'Nokia',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'manufacturer_name'         => 'HTC',
+        'brand_name'                => 'HTC',
+        'model_extra_info'          => 'ADR6350', 
+        'marketing_name'            => 'Explorer', 
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => true, 
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 60,
-        'nokia_edition'             => 1,
+        'nokia_series'              => 0,
+        'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
         'uaprof'                    => null,
         'uaprof2'                   => null,
@@ -103,15 +103,15 @@ final class NokiaSeries60
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 21,
-        'rows'                   => 8,
-        'max_image_width'        => 240,
-        'max_image_height'       => 320,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
-        'dual_orientation'       => false,
+        'physical_screen_width'  => null, 
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
         'colors'                 => 65536,
         
         // sms
@@ -150,7 +150,12 @@ final class NokiaSeries60
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Series 60', 'S60; SymbOS', 'S60')) {
+        $phones = array(
+            'pcdadr6350',
+            'ADR6350'
+        );
+        
+        if (!$this->_utils->checkIfContains($phones)) {
             return false;
         }
         
@@ -164,7 +169,7 @@ final class NokiaSeries60
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
     
     /**
@@ -188,9 +193,9 @@ final class NokiaSeries60
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -209,7 +214,7 @@ final class NokiaSeries60
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Symbianos();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

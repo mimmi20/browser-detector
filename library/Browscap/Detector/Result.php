@@ -828,28 +828,14 @@ final class Result
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
         
+        $browser    = $this->getFullBrowserName($withBits, $mode);
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('mobile_browser'))
         ) {
-            $object = clone $renderedAs;
-        } else {
-            $object = clone $this;
-        }
-        
-        $browser = $object->getFullBrowserName($withBits, $mode)
-            // . ' {' . $object->userAgent . '}'
-        ;
-        
-        if ('unknown' == strtolower($browser)) {
-            return 'unknown';
-        }
-        
-        if ($renderedAs instanceof Result) {
-            $browser .= ' [' . $this->getFullBrowserName($withBits, $mode) . ']'
-                // . ' {' . $this->userAgent . '}'
-            ;
+            $browser .= ' [' . $renderedAs->getFullBrowserName($withBits, $mode)
+                . ']';
         }
         
         return trim($browser);
@@ -900,24 +886,14 @@ final class Result
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
+        $os         = $this->getFullPlatformName($withBits, $mode)
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('device_os'))
         ) {
-            $object = clone $renderedAs;
-        } else {
-            $object = clone $this;
-        }
-        
-        $os = $object->getFullPlatformName($withBits, $mode)
-            // . ' {' . $object->userAgent . '}'
-        ;
-        
-        if ($renderedAs instanceof Result) {
-            $os .= ' [' . $this->getFullPlatformName($withBits, $mode) . ']'
-                // . ' {' . $this->userAgent . '}'
-            ;
+            $os .= ' [' . $renderedAs->getFullPlatformName($withBits, $mode)
+                . ']';
         }
         
         return trim($os);
@@ -952,24 +928,14 @@ final class Result
      */
     public function getFullDevice($withManufacturer = false)
     {
+        $device     = $this->getFullDeviceName($withManufacturer);
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('model_name'))
         ) {
-            $object = clone $renderedAs;
-        } else {
-            $object = clone $this;
-        }
-        
-        $device = $object->getFullDeviceName($withManufacturer)
-            // . ' {' . $object->userAgent . '}'
-        ;
-        
-        if ($renderedAs instanceof Result) {
-            $device .= ' [' . $this->getFullDeviceName($withManufacturer) . ']'
-                // . ' {' . $this->userAgent . '}'
-            ;
+            $device .= ' [' . $renderedAs->getFullDeviceName($withManufacturer)
+                . ']';
         }
         
         return trim($device);
@@ -1017,24 +983,13 @@ final class Result
      */
     public function getFullEngine($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
+        $engine     = $this->getFullEngineName($mode);
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
         ) {
-            $object = clone $renderedAs;
-        } else {
-            $object = clone $this;
-        }
-        
-        $engine = $object->getFullEngineName($mode)
-            // . ' {' . $object->userAgent . '}'
-        ;
-        
-        if ($renderedAs instanceof Result) {
-            $engine .= ' [' . $this->getFullEngineName($mode) . ']'
-                // . ' {' . $this->userAgent . '}'
-            ;
+            $engine .= ' [' . $renderedAs->getFullEngineName($mode) . ']';
         }
         
         return trim($engine);
@@ -1362,9 +1317,9 @@ final class Result
      */
     public function getComparationName()
     {
-        return $this->getFullBrowser(true, Version::MAJORMINOR) . ' on ' 
-            . $this->getFullPlatform(true, Version::MAJORMINOR) . ', ' 
-            . $this->getFullDevice(true);
+        return $this->getCapability('mobile_browser') . ' on ' 
+            . $this->getCapability('device_os') . ', ' 
+            . $this->getCapability('model_name');
     }
     
     /**

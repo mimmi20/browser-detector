@@ -67,15 +67,15 @@ final class PlayStationPortable
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sony_psp_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Mobile Device', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
-        'is_console'         => true,
+        'is_console'         => false,
         'ux_full_desktop'    => false,
         // 'is_transcoder'      => false,
         
@@ -85,8 +85,8 @@ final class PlayStationPortable
         'manufacturer_name'         => 'Sony',
         'brand_name'                => 'Sony',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
+        'marketing_name'            => 'PSP',
+        'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -103,18 +103,19 @@ final class PlayStationPortable
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 480,
+        'max_image_height'       => 272,
+        'resolution_width'       => 480,
+        'resolution_height'      => 272,
+        'dual_orientation'       => false,
+        'colors'                 => 256,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +140,7 @@ final class PlayStationPortable
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -200,7 +201,7 @@ final class PlayStationPortable
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
+        $handler = new \Browscap\Detector\Os\Java();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

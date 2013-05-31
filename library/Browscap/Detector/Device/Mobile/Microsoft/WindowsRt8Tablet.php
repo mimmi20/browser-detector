@@ -150,7 +150,11 @@ final class WindowsRt8Tablet
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Windows NT 6.2; ARM;')) {
+        if (!$this->_utils->checkIfContainsAll(array('Windows NT 6.2', 'ARM;'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('WPDesktop'))) {
             return false;
         }
         

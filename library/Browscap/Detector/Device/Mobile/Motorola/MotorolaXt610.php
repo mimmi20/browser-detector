@@ -67,7 +67,7 @@ final class MotorolaXt610
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'mot_xt610_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -112,7 +112,7 @@ final class MotorolaXt610
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

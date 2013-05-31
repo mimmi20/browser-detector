@@ -112,6 +112,7 @@ final class Archos5
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,

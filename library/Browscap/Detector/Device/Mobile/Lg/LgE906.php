@@ -67,7 +67,7 @@ final class LgE906
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'lg_e906_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,22 +97,22 @@ final class LgE906
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://gsm.lge.com/html/gsm/LG-E906.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 84,
+        'columns'                => 16,
+        'rows'                   => 12,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 4294967296,
         
         // sms
         'sms_enabled' => true,

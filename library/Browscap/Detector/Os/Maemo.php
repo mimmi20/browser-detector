@@ -71,7 +71,7 @@ class Maemo
         'wurflKey' => null, // not in wurfl
         
         // os
-        'device_os'              => 'Maemo',
+        'device_os'              => 'Linux Smartphone OS (Maemo)',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
         'device_os_manufacturer' => 'unknown', // not in wurfl
@@ -84,7 +84,7 @@ class Maemo
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Maemo')) {
+        if (!$this->_utils->checkIfContains(array('maemo', 'linux armv', 'like android'))) {
             return false;
         }
         

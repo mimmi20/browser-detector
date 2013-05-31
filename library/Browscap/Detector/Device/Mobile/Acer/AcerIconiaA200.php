@@ -67,7 +67,7 @@ final class AcerIconiaA200
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_iconia_tab_a200_ver1_suban4', // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a200_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl

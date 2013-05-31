@@ -103,7 +103,7 @@ class Rogerbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('rogerbot/')) {
+        if (!$this->_utils->checkIfContains('rogerbot', true)) {
             return false;
         }
         

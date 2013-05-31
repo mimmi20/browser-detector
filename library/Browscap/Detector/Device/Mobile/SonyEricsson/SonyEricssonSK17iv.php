@@ -97,8 +97,8 @@ final class SonyEricssonSK17iv
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/SK17iR402.xml',
+        'uaprof2'                   => 'http://wap.sonyericsson.com/UAprof/SK17iR411.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         

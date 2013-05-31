@@ -67,7 +67,7 @@ final class PalmPre
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'palm_pre_ver1_subwebos141', // not in wurfl
+        'wurflKey' => 'palm_pre_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -239,6 +239,9 @@ final class PalmPre
             $this->setCapability('model_name', 'Pre3');
             $this->setCapability('manufacturer_name', 'HP');
             $this->setCapability('brand_name', 'HP');
+            $this->setCapability('wurflKey', 'hp_pre3_ver1');
+            $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
+            $this->setCapability('colors', 262144);
         }
         
         return $this;

@@ -67,7 +67,7 @@ final class AsusTransformerPadTf700T
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'asus_tf700t_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl

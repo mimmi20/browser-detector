@@ -67,7 +67,7 @@ final class HtcA8181Desire
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_desire_ver1_sub22_01', // not in wurfl
+        'wurflKey' => 'htc_desire_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

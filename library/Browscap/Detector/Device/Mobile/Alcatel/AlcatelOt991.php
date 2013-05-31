@@ -67,7 +67,7 @@ final class AlcatelOt991
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'alcatel_ot991_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class AlcatelOt991
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_991.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -112,7 +112,7 @@ final class AlcatelOt991
         'resolution_width'       => 320,
         'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,

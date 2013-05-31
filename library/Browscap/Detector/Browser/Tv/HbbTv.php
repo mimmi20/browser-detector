@@ -106,7 +106,7 @@ class HbbTv
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains('Opera')) {
+        if ($this->_utils->checkIfContains(array('opera', 'nettv'), true)) {
             return false;
         }
         

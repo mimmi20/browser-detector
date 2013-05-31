@@ -107,7 +107,7 @@ class MicrosoftMobileExplorer
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop'))) {
+        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
             return false;
         }
         
@@ -147,6 +147,20 @@ class MicrosoftMobileExplorer
     {
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
+        
+        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            $this->setCapability(
+                'mobile_browser_version', $detector->setVersion('7.0')
+            );
+            return;
+        }
+        
+        if ($this->_utils->checkIfContains('WPDesktop')) {
+            $this->setCapability(
+                'mobile_browser_version', $detector->setVersion('10.0')
+            );
+            return;
+        }
         
         $searches = array('IEMobile', 'MSIE');
         

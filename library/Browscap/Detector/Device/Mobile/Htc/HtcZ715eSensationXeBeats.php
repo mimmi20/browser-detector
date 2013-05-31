@@ -67,7 +67,7 @@ final class HtcZ715eSensationXeBeats
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_sensationxe_z715e_ver1_subuanohtc', // not in wurfl
+        'wurflKey' => 'htc_sensationxe_z715e_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

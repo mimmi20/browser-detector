@@ -67,7 +67,7 @@ final class AcerIconiaA100
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'acer_iconia_tab_a100_ver1_suban40', // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a100_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -97,13 +97,13 @@ final class AcerIconiaA100
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://support.acer.com/UAprofile/Acer_A100_Profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 95,
+        'physical_screen_width'  => 95, // wurflkey: acer_iconia_tab_a100_ver1_suban40
         'physical_screen_height' => 150,
         'columns'                => 80,
         'rows'                   => 25,
@@ -112,7 +112,7 @@ final class AcerIconiaA100
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 16777216, // wurflkey: acer_iconia_tab_a100_ver1_suban40
         
         // sms
         'sms_enabled' => false,

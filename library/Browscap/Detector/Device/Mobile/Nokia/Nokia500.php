@@ -112,7 +112,7 @@ final class Nokia500
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

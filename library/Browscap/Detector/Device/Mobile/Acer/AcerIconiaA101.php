@@ -67,7 +67,7 @@ final class AcerIconiaA101
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'acer_iconia_tab_a101_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -97,7 +97,7 @@ final class AcerIconiaA101
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://support.acer.com/UAprofile/Acer_A101_Profile.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -105,17 +105,17 @@ final class AcerIconiaA101
         // display
         'physical_screen_width'  => 95,
         'physical_screen_height' => 150,
-        'columns'                => 80,
-        'rows'                   => 25,
+        'columns'                => 25,
+        'rows'                   => 21,
         'max_image_width'        => 980,
         'max_image_height'       => 472,
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 4294967296,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -140,7 +140,7 @@ final class AcerIconiaA101
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**

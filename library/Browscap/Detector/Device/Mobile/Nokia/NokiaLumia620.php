@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class NokiaSeries40
+final class NokiaLumia620
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -67,7 +67,7 @@ final class NokiaSeries40
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_lumia_620_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -80,7 +80,7 @@ final class NokiaSeries40
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Series 40',
+        'model_name'                => 'Lumia 620',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Nokia',
         'brand_name'                => 'Nokia',
@@ -92,7 +92,7 @@ final class NokiaSeries40
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,15 +103,16 @@ final class NokiaSeries40
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 41,
+        'physical_screen_height' => 89,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
@@ -149,7 +150,7 @@ final class NokiaSeries40
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Series 40')) {
+        if (!$this->_utils->checkIfContains('nokia; lumia 620', true)) {
             return false;
         }
         
@@ -187,9 +188,8 @@ final class NokiaSeries40
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
+            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
+            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -208,9 +208,32 @@ final class NokiaSeries40
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Symbianos();
+        $handler = new \Browscap\Detector\Os\WindowsPhoneOs();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: nokia_lumia_620_ver1
+        $engine->setCapability('bmp', false);
+        $engine->setCapability('wbmp', false);
+        $engine->setCapability('tiff', false);
+        
+        if ($this->_utils->checkIfContains('vodafone', true)) {
+            $this->setCapability('model_extra_info', 'for Vodafone');
+        }
+        
+        return $this;
     }
 }

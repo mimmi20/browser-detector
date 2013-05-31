@@ -67,7 +67,7 @@ final class SamsungGti9305
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_i9305_ver1_suban41xxa', // not in wurfl
+        'wurflKey' => 'samsung_gt_i9305_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

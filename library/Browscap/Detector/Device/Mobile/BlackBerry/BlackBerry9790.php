@@ -112,7 +112,7 @@ final class BlackBerry9790
         'resolution_width'       => 480,
         'resolution_height'      => 360,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

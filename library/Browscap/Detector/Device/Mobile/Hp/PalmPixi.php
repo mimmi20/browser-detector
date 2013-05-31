@@ -233,10 +233,8 @@ final class PalmPixi
         );
         
         if ('1.1' == $modelVersion) {
-            $this->setCapability(
-                'model_name',
-                'Pixi Plus'
-            );
+            $this->setCapability('model_name', 'Pixi Plus');
+            $this->setCapability('wurflKey', 'palm_pixi_plus_ver1');
         }
         
         return $this;

@@ -138,4 +138,25 @@ class Ichiro
     {
         return 3;
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $agent = str_ireplace('ichiro', '', $this->_useragent);
+        
+        $detector = new \Browscap\Input\UserAgent();
+        $detector->setAgent($agent);
+        
+        $device->setRenderAs($detector->getBrowser());
+        
+        return $this;
+    }
 }

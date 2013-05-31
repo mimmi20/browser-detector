@@ -67,7 +67,7 @@ final class SamsungGts8530
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'samsung_gt_s8530_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,8 +97,8 @@ final class SamsungGts8530
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S8530_3G.rdf',
+        'uaprof2'                   => 'http://wap.samsungmobile.com/uaprof/GT-S8530_2G.rdf',
         'uaprof3'                   => null,
         'unique'                    => true,
         

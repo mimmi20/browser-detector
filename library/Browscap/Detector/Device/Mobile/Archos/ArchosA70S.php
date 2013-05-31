@@ -67,7 +67,7 @@ final class ArchosA70S
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'archos_a70s_ver1_sub02', // not in wurfl
+        'wurflKey' => 'archos_a70s_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl

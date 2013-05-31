@@ -197,12 +197,6 @@ class Silk
             // $engine->setCapability('ajax_preferred_geoloc_api', 'none');
         }
         
-        if ($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Max OS X'))
-            && !$this->_utils->checkIfContains('Android')
-        ) {
-            $this->setCapability('mobile_browser_modus', 'Desktop Mode');
-        }
-        
         return $this;
     }
 }

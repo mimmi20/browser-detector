@@ -67,7 +67,7 @@ final class Nokia700
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'nokia_700_ver1_subos53', // not in wurfl
+        'wurflKey' => 'nokia_700_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

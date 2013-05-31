@@ -67,7 +67,7 @@ final class NokiaE71
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_e71_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,8 +97,8 @@ final class NokiaE71
         'nokia_series'              => 60,
         'nokia_edition'             => 3,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NE71-1r100.xml',
+        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/ne71-1r100-vf3g.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
@@ -112,7 +112,7 @@ final class NokiaE71
         'resolution_width'       => 320,
         'resolution_height'      => 240,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

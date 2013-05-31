@@ -94,8 +94,8 @@ final class Nokia201
         // product info
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 40,
+        'nokia_edition'             => -1,
         'ununiqueness_handler'      => null,
         'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/Nokia201r100.xml',
         'uaprof2'                   => null,
@@ -103,16 +103,16 @@ final class Nokia201
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 37,
+        'columns'                => 15,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 200,
         'resolution_width'       => 320,
         'resolution_height'      => 240,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,

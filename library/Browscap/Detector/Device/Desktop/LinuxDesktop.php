@@ -213,7 +213,8 @@ final class LinuxDesktop
             new \Browscap\Detector\Os\CrOs(),
             new \Browscap\Detector\Os\Ventana(),
             new \Browscap\Detector\Os\Mandriva(),
-            new \Browscap\Detector\Os\Moblin()
+            new \Browscap\Detector\Os\Moblin(),
+            new \Browscap\Detector\Os\Android()
         );
         
         $chain = new \Browscap\Detector\Chain();

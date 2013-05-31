@@ -150,7 +150,7 @@ final class SamsungGti8750
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SAMSUNG; OMNIA7'))) {
+        if (!$this->_utils->checkIfContains(array('SAMSUNG; OMNIA7', 'GT-I8750'))) {
             return false;
         }
         

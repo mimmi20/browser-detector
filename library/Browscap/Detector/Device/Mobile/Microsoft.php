@@ -150,7 +150,11 @@ final class Microsoft
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
+        if (!$this->_utils->checkIfContainsAll(array('Windows NT 6.2', 'ARM;'))) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('WPDesktop'))) {
             return false;
         }
         

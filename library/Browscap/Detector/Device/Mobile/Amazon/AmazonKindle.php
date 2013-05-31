@@ -70,9 +70,9 @@ final class AmazonKindle
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -85,7 +85,7 @@ final class AmazonKindle
         'manufacturer_name'         => 'Amazon',
         'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Kindle',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

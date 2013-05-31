@@ -90,7 +90,6 @@ class Linux
         
         $isNotReallyAnLinux = array(
             // special Linux versions
-            'android',
             'debian',
             'ubuntu',
             'centos',
@@ -109,7 +108,6 @@ class Linux
             'hpwos',
             'smart-tv',
             'ventana',
-            'maemo',
             'moblin',
             // other OS which are using X11
             'bsd',
@@ -118,6 +116,10 @@ class Linux
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnLinux, true)) {
+            return false;
+        }
+        
+        if ($this->_utils->checkIfContains(array('maemo', 'linux armv', 'like android'))) {
             return false;
         }
         

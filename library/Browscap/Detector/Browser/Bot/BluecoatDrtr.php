@@ -74,7 +74,7 @@ class BluecoatDrtr
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Bluecoat Dynamic Reattime Rating',
+        'mobile_browser'              => 'Bluecoat Dynamic Realtime Rating',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'bluecoat.com', // not in wurfl

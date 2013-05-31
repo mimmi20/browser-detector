@@ -85,7 +85,7 @@ final class SamsungGtn8020
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy Note 10.1', // wurflkey: samsung_gt_n8000_ver1_subua8020
+        'marketing_name'            => 'Galaxy Note 10.1 LTE', // wurflkey: samsung_gt_n8000_ver1_subua8020
         'has_qwerty_keyboard'       => true,               // wurflkey: samsung_gt_n8000_ver1_subua8020
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

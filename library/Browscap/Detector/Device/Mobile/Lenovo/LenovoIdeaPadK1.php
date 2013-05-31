@@ -67,7 +67,7 @@ final class LenovoIdeaPadK1
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'lenovo_k1_ver1_suban32', // not in wurfl
+        'wurflKey' => 'lenovo_k1_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl

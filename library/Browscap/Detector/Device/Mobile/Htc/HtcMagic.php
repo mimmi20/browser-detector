@@ -67,7 +67,7 @@ final class HtcMagic
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_magic_ver1_subua', // not in wurfl
+        'wurflKey' => 'htc_magic_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

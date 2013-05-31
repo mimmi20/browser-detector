@@ -67,7 +67,7 @@ final class AsusEepPadTransformerTf101g
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'asus_eee_pad_tf101_ver1_suban40_subuag', // not in wurfl
+        'wurflKey' => 'asus_eee_pad_tf101_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -140,7 +140,7 @@ final class AsusEepPadTransformerTf101g
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**

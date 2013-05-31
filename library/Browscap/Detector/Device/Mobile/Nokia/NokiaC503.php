@@ -67,7 +67,7 @@ final class NokiaC503
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'nokia_c5_03_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -94,10 +94,10 @@ final class NokiaC503
         // product info
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
+        'nokia_series'              => 60,
+        'nokia_edition'             => 5,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NokiaC5-03r100-3G.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -112,7 +112,7 @@ final class NokiaC503
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         
         // sms
         'sms_enabled' => true,

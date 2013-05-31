@@ -195,6 +195,7 @@ final class PlayStation3
             new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
             new \Browscap\Detector\Browser\Mobile\Dalvik(),
             new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\PlaystationBrowser(),
         );
         
         $chain = new \Browscap\Detector\Chain();
