@@ -886,7 +886,7 @@ final class Result
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
-        $os         = $this->getFullPlatformName($withBits, $mode)
+        $os         = $this->getFullPlatformName($withBits, $mode);
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
