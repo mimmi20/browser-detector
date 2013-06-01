@@ -103,10 +103,6 @@ class Kindle
      */
     public function canHandle()
     {
-        if (!parent::canHandle($this->_useragent)) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains('Kindle')) {
             return false;
         }

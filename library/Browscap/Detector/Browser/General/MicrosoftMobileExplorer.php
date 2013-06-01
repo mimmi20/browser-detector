@@ -152,14 +152,14 @@ class MicrosoftMobileExplorer
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion('7.0')
             );
-            return;
+            return $this;
         }
         
         if ($this->_utils->checkIfContains('WPDesktop')) {
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion('10.0')
             );
-            return;
+            return $this;
         }
         
         $searches = array('IEMobile', 'MSIE');

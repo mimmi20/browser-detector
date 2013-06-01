@@ -74,7 +74,7 @@ class GooglebotMobileBot
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Googlebot Mobile Bot',
+        'mobile_browser'              => 'Googlebot Mobile',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl
