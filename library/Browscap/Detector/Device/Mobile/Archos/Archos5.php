@@ -67,7 +67,7 @@ final class Archos5
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'archos_5_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Device', // not in wurfl

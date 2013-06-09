@@ -95,10 +95,12 @@ final class SpamCrawlerFake
             'adsbot-google',
             'anyevent',
             'appengine-google',
+            'apple-pubsub',
             'ask.com',
             'bing',
             'bluecoat drtr',
             'bot',
+            'camelhttpstream',
             'catalog',
             'check_http',
             'clecko',
@@ -131,6 +133,7 @@ final class SpamCrawlerFake
             'larbin',
             'libwww',
             'linkchecker',
+            'link-checker',
             'linkdex',
             'link sleuth',
             'mail.ru',
@@ -148,8 +151,8 @@ final class SpamCrawlerFake
             'ping',
             'presto/951',
             'ramblermail',
+            'rebelmouse',
             'retriever',
-            'safersurf',
             'secmon',
             'semager',
             'siteexplorer',
@@ -159,6 +162,7 @@ final class SpamCrawlerFake
             'smartlinksaddon',
             'snap',
             'sniper',
+            'space bison',
             'spider',
             'spray-can',
             'squidwall',
@@ -183,6 +187,7 @@ final class SpamCrawlerFake
             'finanzen.shopping.de',
             'validator',
             'webcapture',
+            'webfilter',
             'webu',
             'wget',
             'wordpress',
@@ -364,7 +369,7 @@ final class SpamCrawlerFake
         }
         
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
-        if ($doMatch && isset($matches)) {
+        if ($doMatch && isset($matches[1])) {
             $versions = explode('.', $matches[1]);
             
             if ($versions[0] >= 6 && $versions[1] > 0) {

@@ -124,16 +124,24 @@ class WindowsPhoneOs
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
+        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            $this->setCapability('device_os_version', $detector->setVersion('7.5'));
+            
+            return;
+        }
+        
+        if ($this->_utils->checkIfContains(array('WPDesktop'))) {
+            $this->setCapability('device_os_version', $detector->setVersion('8.0'));
+            
+            return;
+        }
+        
         $searches = array('Windows Phone OS', 'Windows Phone');
         
         $this->setCapability(
             'device_os_version', 
             $detector->detectVersion($searches)
         );
-        
-        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            $this->setCapability('device_os_version', $detector->setVersion('7.5'));
-        }
     }
     
     /**

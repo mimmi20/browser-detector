@@ -80,7 +80,7 @@ final class SamsungSghi900V
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'SGH-i900V',
+        'model_name'                => 'SGH-I900V',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',

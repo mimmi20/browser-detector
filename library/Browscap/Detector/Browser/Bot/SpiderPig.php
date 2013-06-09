@@ -121,6 +121,20 @@ class SpiderPig
     }
     
     /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *

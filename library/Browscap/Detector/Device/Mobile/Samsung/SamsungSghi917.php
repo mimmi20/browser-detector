@@ -80,7 +80,7 @@ final class SamsungSghi917
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'SGH-i917',
+        'model_name'                => 'SGH-I917',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',

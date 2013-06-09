@@ -150,7 +150,7 @@ final class HtcS510b
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('HTC_Rhyme_S510b')) {
+        if (!$this->_utils->checkIfContains(array('HTC_Rhyme_S510b', 'HTC Rhyme S510b'))) {
             return false;
         }
         

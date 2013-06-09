@@ -109,8 +109,8 @@ final class ZenithinkZt180
         'rows'                   => 12,
         'max_image_width'        => 240,
         'max_image_height'       => 320,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         

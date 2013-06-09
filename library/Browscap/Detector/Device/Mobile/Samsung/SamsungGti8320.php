@@ -190,7 +190,8 @@ final class SamsungGti8320
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\Dalvik(),
+            new \Browscap\Detector\Browser\Mobile\Opera()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -211,7 +212,7 @@ final class SamsungGti8320
     {
         $os = array(
             new \Browscap\Detector\Os\Symbianos(),
-            new \Browscap\Detector\Os\Linux(),
+            new \Browscap\Detector\Os\Maemo(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

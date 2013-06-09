@@ -80,7 +80,7 @@ final class SamsungSghi900
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'SGH i900', // wurflkey: samsung_sgh_i900_ver1_subopera95
+        'model_name'                => 'SGH-I900', // wurflkey: samsung_sgh_i900_ver1_subopera95
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
@@ -103,12 +103,12 @@ final class SamsungSghi900
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 42,
+        'physical_screen_height' => 70,
+        'columns'                => 16,
+        'rows'                   => 20,
+        'max_image_width'        => 228,
+        'max_image_height'       => 340,
         'resolution_width'       => 240,
         'resolution_height'      => 400,
         'dual_orientation'       => true,

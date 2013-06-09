@@ -224,14 +224,26 @@ final class AcerIconiaA501
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORONLY
+        $osVersion = (float) $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
         );
         
-        if (3 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            $this->setCapability('resolution_height', 768);
-            $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml');
+        switch ($osVersion) {
+            case 3.2:
+                $this->setCapability('colors', 65536);
+                $this->setCapability('resolution_height', 768);
+                $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A501_Profile.xml');
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a501_ver1_suban32');
+                break;
+            case 4.0:
+                $this->setCapability('colors', 16777216);
+                $this->setCapability('resolution_height', 800);
+                $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A501_Profile.xml');
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a501_ver1_suban40');
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         parent::detectDependProperties($browser, $engine, $os);

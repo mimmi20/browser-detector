@@ -150,7 +150,7 @@ final class VodafoneSmartTabIi10
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Vodafone SmartTab II 10'))) {
+        if (!$this->_utils->checkIfContains(array('Vodafone SmartTab II 10', 'SmartTabII10'))) {
             return false;
         }
         

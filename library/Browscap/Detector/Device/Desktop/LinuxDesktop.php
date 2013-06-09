@@ -159,7 +159,7 @@ final class LinuxDesktop
             return false;
         }
         
-        if ($this->_utils->checkIfContains('Loewe; SL121')) {
+        if ($this->_utils->checkIfContains(array('Loewe; SL121', 'eeepc'))) {
             return false;
         }
         

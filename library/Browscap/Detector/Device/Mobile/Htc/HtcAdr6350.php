@@ -67,7 +67,7 @@ final class HtcAdr6350
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_ADR6350_ver1_subuauscore', // not in wurfl
+        'wurflKey' => 'htc_ADR6350_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl

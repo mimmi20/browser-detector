@@ -169,7 +169,7 @@ final class MobileDevice
             $noMobiles = array(
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
-                'i9999_custom'
+                'i9999_custom', 'wuid='
             );
             
             if ($this->_utils->checkIfContains($noMobiles, true)) {

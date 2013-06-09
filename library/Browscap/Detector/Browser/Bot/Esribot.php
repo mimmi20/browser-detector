@@ -77,7 +77,7 @@ class Esribot
         'mobile_browser'              => 'Esribot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'www.esrihu.hu', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -137,5 +137,19 @@ class Esribot
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

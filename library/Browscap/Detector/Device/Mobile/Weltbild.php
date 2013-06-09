@@ -155,7 +155,8 @@ final class Weltbild
             'CatNova8',
             'Cat StarGate',
             'Cat Tablet',
-            'Tablet-PC-4'
+            'Tablet-PC-4',
+            'TOLINO_BROWSER'
         );
         
         if (!$this->_utils->checkIfContains($weltbildPhones)) {

@@ -258,6 +258,24 @@ final class Wurfl extends Core
                     $apiOs = trim($apiOs);
                 }
                 
+                switch (strtolower($apiOs)) {
+                    case 'symbian os':
+                        switch (strtolower($apiVer)) {
+                            case 's3':
+                            case 'belle':
+                            case 'anna':
+                                $apiVer = 'S3';
+                                break;
+                            default:
+                                // nothing to do here
+                                break;
+                        }
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                
                 $marketingName = $device->getCapability('marketing_name');
                 
                 switch (strtolower($apiDev)) {
@@ -325,6 +343,15 @@ final class Wurfl extends Core
                     case 'sgh-i957':
                         $apiDev = 'SGH-I957';
                         break;
+                    case 'sgh-i900v':
+                        $apiDev = 'SGH-I900V';
+                        break;
+                    case 'sgh-i917':
+                        $apiDev = 'SGH-I917';
+                        break;
+                    case 'sgh i900':
+                        $apiDev = 'SGH-I900';
+                        break;
                     case 'sph-930':
                         $apiDev = 'SPH-M930';
                         break;
@@ -369,11 +396,12 @@ final class Wurfl extends Core
                     case 'nokia asha 201':
                         $apiDev = 'Asha 201';
                         break;
-                    // Mdeion
-                    case 'P9514':
-                        $apiDev    = 'Lifetab P9514';
-                        $apiMan    = 'Medion';
-                        $brandName = 'Medion';
+                    // Medion
+                    case 'p9514':
+                        $apiDev        = 'Lifetab P9514';
+                        $marketingName = 'Lifetab P9514';
+                        $apiMan        = 'Medion';
+                        $brandName     = 'Medion';
                         break;
                     default:
                         // nothing to do here
@@ -411,8 +439,8 @@ final class Wurfl extends Core
                 }
                 
                 if ('Generic' == $apiMan || 'Opera' == $apiMan) {
-                    $apiMan = null;
-                    $apiDev = null;
+                    $apiMan        = null;
+                    $apiDev        = null;
                     $marketingName = null;
                 }
                 
@@ -578,7 +606,6 @@ final class Wurfl extends Core
                         $apiBot     = true;
                         break;
                     case 'generic web browser':
-                    case 'robot bot or crawler':
                         $apiBro     = null;
                         $apiOs      = null;
                         $apiMob     = null;
@@ -588,6 +615,14 @@ final class Wurfl extends Core
                         $apiBot     = null;
                         $apiTv      = null;
                         $apiDesktop = null;
+                        break;
+                    case 'robot bot or crawler':
+                    case 'robot':
+                        $apiDesktop = false;
+                        $apiBot     = true;
+                        $apiTv      = false;
+                        $apiDev     = 'general Bot';
+                        $apiBro     = 'unknown';
                         break;
                     case 'generic smarttv':
                         $apiDesktop = false;

@@ -152,7 +152,8 @@ final class Alcatel
         $alcatelPhones = array(
             'ALCATEL',
             'Alcatel',
-            'Vodafone Smart II'
+            'Vodafone Smart II',
+            'BASE_Lutea_3'
         );
         
         if ($this->_utils->checkIfContains($alcatelPhones)) {

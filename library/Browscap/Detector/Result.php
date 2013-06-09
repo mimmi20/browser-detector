@@ -966,6 +966,7 @@ final class Result
             
             if ('unknown' != $manufacturer
                 && false === strpos($device, 'general')
+                && false === strpos($device, $manufacturer)
             ) {
                 $device = $manufacturer . ' ' . $device;
             }

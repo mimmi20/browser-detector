@@ -84,7 +84,7 @@ class Maemo
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('maemo', 'linux armv', 'like android'))) {
+        if (!$this->_utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
             return false;
         }
         

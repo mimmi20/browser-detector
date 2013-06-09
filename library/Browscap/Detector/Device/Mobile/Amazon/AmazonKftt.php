@@ -210,10 +210,18 @@ final class AmazonKftt
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Maemo(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
     }
     
     /**
@@ -232,6 +240,9 @@ final class AmazonKftt
         if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
             $this->setCapability('wurflKey', 'amazon_kindle_fire_hd7_ver1_subuanosilk');
         }
+        
+        $engine->setCapability('png', false);
+        $engine->setCapability('jpg', false);
         
         return $this;
     }

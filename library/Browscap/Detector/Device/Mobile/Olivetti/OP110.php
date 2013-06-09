@@ -83,7 +83,7 @@ final class OP110
         'model_name'                => 'OP110',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Olivetti',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Olivetti',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

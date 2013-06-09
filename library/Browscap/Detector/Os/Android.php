@@ -232,7 +232,7 @@ class Android
             $engine->setCapability('is_sencha_touch_ok', false);
         }
         
-        if ($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Max OS X'))
+        if ($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Mac OS X'))
             && !$this->_utils->checkIfContains('Android')
         ) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');

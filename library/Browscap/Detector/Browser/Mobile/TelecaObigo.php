@@ -170,4 +170,18 @@ class TelecaObigo
     {
         return 3;
     }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Teleca();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
 }

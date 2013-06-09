@@ -103,10 +103,6 @@ class MicrosoftMobileExplorer
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContainsAll(array('Mozilla/', 'MSIE'))) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
             return false;
         }
@@ -150,7 +146,7 @@ class MicrosoftMobileExplorer
         
         if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->setCapability(
-                'mobile_browser_version', $detector->setVersion('7.0')
+                'mobile_browser_version', $detector->setVersion('9.0')
             );
             return $this;
         }

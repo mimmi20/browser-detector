@@ -210,7 +210,8 @@ final class SonyDtv115
             new \Browscap\Detector\Browser\Tv\SmartTvWebBrowser(),
             new \Browscap\Detector\Browser\Tv\SmartTv(),
             new \Browscap\Detector\Browser\Tv\HbbTv(),
-            new \Browscap\Detector\Browser\Tv\InettvBrowser()
+            new \Browscap\Detector\Browser\Tv\InettvBrowser(),
+            new \Browscap\Detector\Browser\Tv\NetTv(),
         );
         
         $chain = new \Browscap\Detector\Chain();

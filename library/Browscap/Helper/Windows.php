@@ -103,7 +103,7 @@ final class Windows
             'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
             'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
             'windows 3.1', 'win9x/nt 4.90', 'windows xp', 'windows me', 
-            'windows'
+            'windows', 'win32'
         );
         
         if (!$this->_utils->checkIfContains($windows, true)
@@ -126,7 +126,7 @@ final class Windows
         $mobileWindows = array(
             'windows ce', 'windows phone', 'windows mobile', 
             'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
-            'windowsmobile'
+            'windowsmobile', 'wpdesktop'
         );
         
         if (!$this->_utils->checkIfContains($mobileWindows, true)) {

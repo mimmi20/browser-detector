@@ -74,7 +74,7 @@ class GoogleFeedfetcher
         'is_transcoder'      => false,
         
         // browser
-        'mobile_browser'              => 'Feedfetcher-Google',
+        'mobile_browser'              => 'Google Feedfetcher',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl
@@ -139,5 +139,19 @@ class GoogleFeedfetcher
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

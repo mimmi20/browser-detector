@@ -197,7 +197,8 @@ final class GeneralDesktop
             // others
             'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
             'google desktop', 'eeepc', 'dillo', 'konqueror', 'eudora',
-            'masking-agent'
+            'masking-agent', 'safersurf', 'applewebkit', 'chrome', 'safari',
+            'firefox', 'gecko'
         );
         
         if ($this->_utils->checkIfContains($others, true)) {

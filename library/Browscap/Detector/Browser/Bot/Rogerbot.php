@@ -120,7 +120,7 @@ class Rogerbot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('rogerbot');
+        $searches = array('rogerbot', 'rogerBot');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -137,5 +137,19 @@ class Rogerbot
     public function getWeight()
     {
         return 208367;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

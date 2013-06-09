@@ -78,7 +78,7 @@ final class PhilipsTv
         'ux_full_desktop'    => false,
         
         // device
-        'model_name'                => 'Philips TV',
+        'model_name'                => 'general Philips TV',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Philips',
         'brand_name'                => null,
@@ -207,7 +207,8 @@ final class PhilipsTv
             new \Browscap\Detector\Browser\Tv\SmartTvWebBrowser(),
             new \Browscap\Detector\Browser\Tv\SmartTv(),
             new \Browscap\Detector\Browser\Tv\HbbTv(),
-            new \Browscap\Detector\Browser\Tv\InettvBrowser()
+            new \Browscap\Detector\Browser\Tv\InettvBrowser(),
+            new \Browscap\Detector\Browser\Tv\NetTv(),
         );
         
         $chain = new \Browscap\Detector\Chain();

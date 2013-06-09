@@ -103,16 +103,16 @@ final class Nokia808PureView
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 89,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 168,
+        'max_image_height'       => 144,
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 16777216, // wurflkey: nokia_808_ver1
         
         // sms
         'sms_enabled' => true,

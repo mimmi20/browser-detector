@@ -155,7 +155,8 @@ final class Odys
             ' genesis ',
             ' noon ',
             ' loox ',
-            'xpress pro'
+            'xpress pro',
+            'xelio'
         );
         
         if ($this->_utils->checkIfContains($odysPhones, true)) {

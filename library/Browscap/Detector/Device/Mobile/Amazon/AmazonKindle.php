@@ -214,7 +214,7 @@ final class AmazonKindle
     {
         $os = array(
             new \Browscap\Detector\Os\Android(),
-            new \Browscap\Detector\Os\Linux(),
+            new \Browscap\Detector\Os\Maemo(),
             //new \Browscap\Detector\Os\FreeBsd()
         );
         

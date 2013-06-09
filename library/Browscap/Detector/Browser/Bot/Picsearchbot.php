@@ -77,7 +77,7 @@ class Picsearchbot
         'mobile_browser'              => 'Picsearchbot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'www.picsearch.com', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -103,11 +103,7 @@ class Picsearchbot
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('Picsearchbot/'))) {
+        if (!$this->_utils->checkIfContains(array('Picsearchbot', 'psbot', 'www.picsearch.com'))) {
             return false;
         }
         
@@ -124,7 +120,7 @@ class Picsearchbot
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Picsearchbot');
+        $searches = array('Picsearchbot', 'psbot');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -141,5 +137,19 @@ class Picsearchbot
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

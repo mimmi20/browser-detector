@@ -109,8 +109,8 @@ final class ArchosA101it
         'rows'                   => 12,
         'max_image_width'        => 240,
         'max_image_height'       => 320,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 600,
+        'resolution_width'       => 320, // wurflkey: archos_a101it_ver1_subua22
+        'resolution_height'      => 240,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         

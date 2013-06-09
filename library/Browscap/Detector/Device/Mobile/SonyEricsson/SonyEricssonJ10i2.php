@@ -87,31 +87,32 @@ final class SonyEricssonJ10i2
         'model_extra_info'          => null,
         'marketing_name'            => 'Elm', // wurflkey: sonyericsson_j10i2_ver1
         'has_qwerty_keyboard'       => false, // wurflkey: sonyericsson_j10i2_ver1
-        'pointing_method'           => '',    // wurflkey: sonyericsson_j10i2_ver1 // wurflkey: sonyericsson_j10i2_ver1
+        'pointing_method'           => '',    // wurflkey: sonyericsson_j10i2_ver1
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/J10i2R101.xml',
+        'uaprof2'                   => 'http://wap.sonyericsson.com/UAprof/J10i1R101.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
+        'colors'                 => 262144,
         
         // sms
         'sms_enabled' => true,

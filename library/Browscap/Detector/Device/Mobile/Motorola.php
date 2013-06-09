@@ -156,7 +156,7 @@ final class Motorola
         $motorolaPhones = array(
             'motorola',
             'moto', 
-            'mot',
+            //'mot',
             'mb200',
             'mb300',
             ' droid ',

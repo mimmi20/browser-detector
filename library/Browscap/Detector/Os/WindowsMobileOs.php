@@ -184,6 +184,7 @@ class WindowsMobileOs
             new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
             new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer(),
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini(),
             new \Browscap\Detector\Browser\Mobile\Opera()
         );
         
