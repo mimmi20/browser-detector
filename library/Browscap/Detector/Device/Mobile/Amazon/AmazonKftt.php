@@ -89,7 +89,7 @@ final class AmazonKftt
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',              // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'TI OMAP4460', // not in wurfl
         
         // product info
         'can_assign_phone_number'   => false,

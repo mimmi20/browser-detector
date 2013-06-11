@@ -305,6 +305,7 @@ final class Wurfl extends Core
                     case 'opera mini for s60':
                     case 'windows mobile (opera)':
                         $apiDev = 'general Mobile Device';
+                        $apiKey = null;
                         break;
                     // Motorola
                     case 'motomz616':

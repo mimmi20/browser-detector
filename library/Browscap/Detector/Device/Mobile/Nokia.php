@@ -156,15 +156,18 @@ final class Nokia
             'series 40',
             'series 60',
             's60v5',
-            'n90 dual core2',
             'n900'
         );
         
-        if ($this->_utils->checkIfContains($nokiaPhones, true)) {
-            return true;
+        if (!$this->_utils->checkIfContains($nokiaPhones, true)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains(array('N90 DUAL CORE2'))) {
+            return false;
+        }
+        
+        return true;
     }
     
     /**

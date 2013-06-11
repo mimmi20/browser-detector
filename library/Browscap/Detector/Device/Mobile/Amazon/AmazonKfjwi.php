@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Amazon;
 
 /**
  * PHP version 5.3
@@ -50,14 +50,14 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
-/*
+/**
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class TrekStor
+final class AmazonKfjwi
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,9 +70,9 @@ final class TrekStor
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,16 +80,16 @@ final class TrekStor
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'general TrekStor Device',
+        'model_name'                => 'Kfjwi',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'TrekStor',
-        'brand_name'                => 'TrekStor',
+        'manufacturer_name'         => 'Amazon',
+        'brand_name'                => 'Amazon',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Kindle Fire HD 8.9',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'TI OMAP4470', // not in wurfl
         
         // product info
         'can_assign_phone_number'   => false,
@@ -109,9 +109,10 @@ final class TrekStor
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 1920,
+        'resolution_height'      => 1200,
+        'dual_orientation'       => true,
+        'colors'                 => 256,
         
         // sms
         'sms_enabled' => true,
@@ -149,15 +150,21 @@ final class TrekStor
      */
     public function canHandle()
     {
-        $trekStorPhones = array(
-            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color'
-        );
-        
-        if ($this->_utils->checkIfContains($trekStorPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains(array('KFJWI'))) {
+            return false;
         }
         
-        return false;
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -169,25 +176,7 @@ final class TrekStor
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\TrekStor');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'TrekStor' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 70634;
+        return $this;
     }
     
     /**
@@ -200,8 +189,8 @@ final class TrekStor
     {
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\Silk(),
+            //new \Browscap\Detector\Os\FreeBsd()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -220,9 +209,33 @@ final class TrekStor
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
+        $os = array(
+            new \Browscap\Detector\Os\Android(),
+            new \Browscap\Detector\Os\Maemo(),
+            //new \Browscap\Detector\Os\FreeBsd()
+        );
         
-        return $handler->detect();
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
+        
+        return $chain->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $browser->setCapability('is_transcoder', true);
+        
+        return $this;
     }
 }

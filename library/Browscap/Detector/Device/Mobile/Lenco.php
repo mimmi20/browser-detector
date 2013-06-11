@@ -150,7 +150,7 @@ final class Lenco
     public function canHandle()
     {
         $LencoPhones = array(
-            'Lenco', 'LENCM900HZ'
+            'Lenco', 'LENCM900HZ', 'CoolTab-70'
         );
         
         if ($this->_utils->checkIfContains($LencoPhones, true)) {

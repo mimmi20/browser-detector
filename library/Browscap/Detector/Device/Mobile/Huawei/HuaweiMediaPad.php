@@ -154,6 +154,10 @@ final class HuaweiMediaPad
             return false;
         }
         
+        if ($this->_utils->checkIfContains(array('MediaPad 7 Lite'))) {
+            return false;
+        }
+        
         return true;
     }
     

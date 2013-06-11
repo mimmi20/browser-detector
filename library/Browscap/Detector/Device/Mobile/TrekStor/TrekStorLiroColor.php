@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\TrekStor;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class TrekStor
+final class TrekStorLiroColor
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,9 +70,9 @@ final class TrekStor
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,7 +80,7 @@ final class TrekStor
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'general TrekStor Device',
+        'model_name'                => 'Liro Color',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'TrekStor',
         'brand_name'                => 'TrekStor',
@@ -109,9 +109,10 @@ final class TrekStor
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 800,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         
         // sms
         'sms_enabled' => true,
@@ -149,9 +150,7 @@ final class TrekStor
      */
     public function canHandle()
     {
-        $trekStorPhones = array(
-            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color'
-        );
+        $trekStorPhones = array('TrekStor_Liro_Color');
         
         if ($this->_utils->checkIfContains($trekStorPhones)) {
             return true;
@@ -169,15 +168,7 @@ final class TrekStor
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\TrekStor');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'TrekStor' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**

@@ -89,7 +89,7 @@ final class SamsungGti8730
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Dual Core Krait 1,2 GHz', // not in wurfl
         
         // product info
         'can_assign_phone_number'   => true, 
@@ -109,8 +109,8 @@ final class SamsungGti8730
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 720,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         
@@ -150,7 +150,7 @@ final class SamsungGti8730
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SAMSUNG; OMNIA7', 'GT-I8730'))) {
+        if (!$this->_utils->checkIfContains(array('GT-I8730'))) {
             return false;
         }
         
@@ -188,8 +188,9 @@ final class SamsungGti8730
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
-            new \Browscap\Detector\Browser\Mobile\MicrosoftMobileExplorer()
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -208,7 +209,7 @@ final class SamsungGti8730
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\WindowsPhoneOs();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

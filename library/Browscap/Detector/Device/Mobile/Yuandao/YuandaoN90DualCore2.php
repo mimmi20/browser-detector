@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Yuandao;
 
 /**
  * PHP version 5.3
@@ -50,14 +50,14 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
-/*
+/**
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class TrekStor
+final class YuandaoN90DualCore2
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,9 +70,9 @@ final class TrekStor
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
+        'device_type'        => 'Tablet', // not in wurfl
         'is_wireless_device' => true,
-        'is_tablet'          => false,
+        'is_tablet'          => true,
         // 'is_bot'             => false,
         'is_smarttv'         => false,
         'is_console'         => false,
@@ -80,19 +80,19 @@ final class TrekStor
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'general TrekStor Device',
+        'model_name'                => 'N90 DUAL CORE2',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'TrekStor',
-        'brand_name'                => 'TrekStor',
+        'manufacturer_name'         => 'Yuandao',
+        'brand_name'                => 'Yuandao',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        'device_cpu'                => 'Rockchip 3066 Dual Core Cortex A9 1.4GHz', // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -109,12 +109,13 @@ final class TrekStor
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         
         // sms
-        'sms_enabled' => true,
+        'sms_enabled' => false,
         
         // playback
         'playback_oma_size_limit' => null,
@@ -139,7 +140,7 @@ final class TrekStor
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -149,15 +150,25 @@ final class TrekStor
      */
     public function canHandle()
     {
-        $trekStorPhones = array(
-            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color'
-        );
-        
-        if ($this->_utils->checkIfContains($trekStorPhones)) {
-            return true;
+        if (!$this->_utils->checkIfContains(array('base lutea', 'blade'), true)) {
+            return false;
         }
         
-        return false;
+        if ($this->_utils->checkIfContains('base lutea 2', true)) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -169,25 +180,7 @@ final class TrekStor
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\TrekStor');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'TrekStor' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 70634;
+        return $this;
     }
     
     /**
@@ -224,5 +217,22 @@ final class TrekStor
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_file_upload', 'not_supported'); // Android 2.2
+        
+        return $this;
     }
 }

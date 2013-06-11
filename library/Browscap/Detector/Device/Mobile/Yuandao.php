@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class TrekStor
+final class Yuandao
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,10 +80,10 @@ final class TrekStor
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'general TrekStor Device',
+        'model_name'                => 'general YUANDAO Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'TrekStor',
-        'brand_name'                => 'TrekStor',
+        'manufacturer_name'         => 'YUANDAO',
+        'brand_name'                => 'YUANDAO',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
@@ -149,11 +149,11 @@ final class TrekStor
      */
     public function canHandle()
     {
-        $trekStorPhones = array(
-            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color'
+        $YuandaoPhones = array(
+            'yuandao', 'n90 dual core2'
         );
         
-        if ($this->_utils->checkIfContains($trekStorPhones)) {
+        if ($this->_utils->checkIfContains($YuandaoPhones, true)) {
             return true;
         }
         
@@ -171,9 +171,9 @@ final class TrekStor
     {
         $chain = new \Browscap\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\TrekStor');
+        $chain->setNamespace(__NAMESPACE__ . '\\Yuandao');
         $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'TrekStor' . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . 'Yuandao' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
         
