@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\Lg;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,7 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
+use \Browscap\Detector\Device\Mobile\Lg as LgBase;
 
 /**
  * CatchAllUserAgentHandler
@@ -53,7 +53,7 @@ use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGts5620 extends SamsungBase
+class LgGw300 extends LgBase
 {
     /**
      * the detected browser properties
@@ -61,7 +61,7 @@ class SamsungGts5620 extends SamsungBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_s5620_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
         'is_wireless_device' => true,
@@ -73,13 +73,13 @@ class SamsungGts5620 extends SamsungBase
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT-S5620',
+        'model_name'                => 'GW300',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
+        'manufacturer_name'         => 'LG',
+        'brand_name'                => 'LG',
         'model_extra_info'          => null,
         'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
@@ -103,27 +103,26 @@ class SamsungGts5620 extends SamsungBase
         
         // product info
         'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
+        'can_assign_phone_number'   => false,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5620_2G.rdf',
-        'uaprof2'                   => 'http://wap.samsungmobile.com/uaprof/GT-S5620_3G.rdf',
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => 40,
-        'physical_screen_height' => 60,
-        'columns'                => 20,
-        'rows'                   => 16,
-        'max_image_width'        => 228,
-        'max_image_height'       => 360,
-        'resolution_width'       => 240,
-        'resolution_height'      => 400,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
     );
     
     /**
@@ -135,7 +134,7 @@ class SamsungGts5620 extends SamsungBase
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('GT-S5620')) {
+        if (!$this->_utils->checkIfContains(array('LG-GW300', 'LG/GW300'))) {
             return false;
         }
         

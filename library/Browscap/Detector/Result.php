@@ -683,16 +683,29 @@ final class Result
     /**
      * Returns the value of a given capability name for the current device
      * 
-     * @param string $capabilityName must be a valid capability name
+     * @param string  $capabilityName must be a valid capability name
+     * @param boolean $includeRenderAs If TRUE and the renderAs resulr is 
+     *                ndefined, the property from the renderAs result will be
+     *                included also
      *
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    public function getCapability($capabilityName) 
+    public function getCapability($capabilityName, $includeRenderAs = false) 
     {
         $this->_checkCapability($capabilityName);
         
-        return $this->_properties[$capabilityName];
+        $renderedAs    = $this->getRenderAs();
+        $propertyValue = $this->_properties[$capabilityName];
+        
+        if ($includeRenderAs
+            && $renderedAs instanceof Result
+            && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
+        ) {
+            $propertyValue .= ' [' . $renderedAs->getCapability($capabilityName, false) . ']';
+        }
+        
+        return $propertyValue;
     }
     
     /**
@@ -799,13 +812,13 @@ final class Result
         if (isset($name)) {
             switch ($name) {
                 case 'id':
-                    return $this->getCapability('wurflKey');
+                    return $this->getCapability('wurflKey', false);
                     break;
                 case 'userAgent':
-                    return $this->getCapability('useragent');
+                    return $this->getCapability('useragent', false);
                     break;
                 case 'deviceClass':
-                    return $this->getCapability('deviceClass');
+                    return $this->getCapability('deviceClass', false);
                     break;
                 case 'fallBack':
                 case 'actualDeviceRoot':
@@ -832,7 +845,7 @@ final class Result
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
-            && 'unknown' != strtolower($renderedAs->getCapability('mobile_browser'))
+            && 'unknown' != strtolower($renderedAs->getCapability('mobile_browser', false))
         ) {
             $browser .= ' [' . $renderedAs->getFullBrowserName($withBits, $mode)
                 . ']';
@@ -847,13 +860,13 @@ final class Result
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
         
-        $browser = $this->getCapability('mobile_browser');
+        $browser = $this->getCapability('mobile_browser', false);
         
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('mobile_browser_version')->getVersion(
+        $version = $this->getCapability('mobile_browser_version', false)->getVersion(
             $mode
         );
         
@@ -863,13 +876,13 @@ final class Result
         
         $additional = array();
         
-        $modus = $this->getCapability('mobile_browser_modus');
+        $modus = $this->getCapability('mobile_browser_modus', false);
         
         if ($modus) {
             $additional[] = $modus;
         }
         
-        $bits = $this->getCapability('mobile_browser_bits');
+        $bits = $this->getCapability('mobile_browser_bits', false);
         
         if ($bits && $withBits) {
             $additional[] = $bits . ' Bit';
@@ -890,7 +903,7 @@ final class Result
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
-            && 'unknown' != strtolower($renderedAs->getCapability('device_os'))
+            && 'unknown' != strtolower($renderedAs->getCapability('device_os', false))
         ) {
             $os .= ' [' . $renderedAs->getFullPlatformName($withBits, $mode)
                 . ']';
@@ -905,14 +918,14 @@ final class Result
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
-        $name = $this->getCapability('device_os');
+        $name = $this->getCapability('device_os', false);
         
         if ('unknown' == strtolower($name)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('device_os_version')->getVersion($mode);
-        $bits    = $this->getCapability('device_os_bits');
+        $version = $this->getCapability('device_os_version', false)->getVersion($mode);
+        $bits    = $this->getCapability('device_os_bits', false);
         
         $os = $name
             . ($name != $version && '' != $version ? ' ' . $version : '')
@@ -932,7 +945,7 @@ final class Result
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
-            && 'unknown' != strtolower($renderedAs->getCapability('model_name'))
+            && 'unknown' != strtolower($renderedAs->getCapability('model_name', false))
         ) {
             $device .= ' [' . $renderedAs->getFullDeviceName($withManufacturer)
                 . ']';
@@ -948,20 +961,20 @@ final class Result
      */
     public function getFullDeviceName($withManufacturer = false)
     {
-        $device = $this->getCapability('model_name');
+        $device = $this->getCapability('model_name', false);
         
         if ('unknown' == strtolower($device)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('model_version')->getVersion(Version::MAJORMINOR);
+        $version = $this->getCapability('model_version', false)->getVersion(Version::MAJORMINOR);
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
         
         if ($withManufacturer) {
-            $manufacturer = $this->getCapability('brand_name');
+            $manufacturer = $this->getCapability('brand_name', false);
             
             if (!$manufacturer || 'unknown' == $manufacturer) {
-                $manufacturer = $this->getCapability('manufacturer_name');
+                $manufacturer = $this->getCapability('manufacturer_name', false);
             }
             
             if ('unknown' != $manufacturer
@@ -988,7 +1001,7 @@ final class Result
         $renderedAs = $this->getRenderAs();
         
         if ($renderedAs instanceof Result
-            && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
+            && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name', false))
         ) {
             $engine .= ' [' . $renderedAs->getFullEngineName($mode) . ']';
         }
@@ -1005,13 +1018,13 @@ final class Result
      */
     public function getFullEngineName($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
-        $engine  = $this->getCapability('renderingengine_name');
+        $engine  = $this->getCapability('renderingengine_name', false);
         
         if ('unknown' == strtolower($engine)) {
             return 'unknown';
         }
         
-        $version = $this->getCapability('renderingengine_version')->getVersion(
+        $version = $this->getCapability('renderingengine_version', false)->getVersion(
             $mode
         );
         
@@ -1028,7 +1041,7 @@ final class Result
      */
     public function getDevice()
     {
-        return $this->getCapability('model_name');
+        return $this->getCapability('model_name', false);
     }
     
     /**
@@ -1038,7 +1051,7 @@ final class Result
      */
     public function getDeviceVersion()
     {
-        return null; // $this->getCapability('mobile_browser');
+        return null; // $this->getCapability('mobile_browser', false);
     }
     
     /**
@@ -1048,7 +1061,7 @@ final class Result
      */
     public function getDeviceManufacturer()
     {
-        return $this->getCapability('manufacturer_name');
+        return $this->getCapability('manufacturer_name', false);
     }
     
     /**
@@ -1148,7 +1161,7 @@ final class Result
      */
     public function isBanned()
     {
-        return $this->getCapability('is_banned');
+        return $this->getCapability('is_banned', true);
     }
     
     /**
@@ -1158,7 +1171,7 @@ final class Result
      */
     public function isMobileDevice()
     {
-        return $this->getCapability('is_wireless_device');
+        return $this->getCapability('is_wireless_device', true);
     }
     
     /**
@@ -1168,7 +1181,7 @@ final class Result
      */
     public function isTablet()
     {
-        return $this->getCapability('is_tablet');
+        return $this->getCapability('is_tablet', true);
     }
     
     /**
@@ -1178,7 +1191,7 @@ final class Result
      */
     public function isDesktop()
     {
-        return $this->getCapability('ux_full_desktop');
+        return $this->getCapability('ux_full_desktop', true);
     }
     
     /**
@@ -1188,7 +1201,7 @@ final class Result
      */
     public function isTvDevice()
     {
-        return $this->getCapability('is_smarttv');
+        return $this->getCapability('is_smarttv', true);
     }
     
     /**
@@ -1198,7 +1211,7 @@ final class Result
      */
     public function isCrawler()
     {
-        return $this->getCapability('is_bot');
+        return $this->getCapability('is_bot', true);
     }
     
     /**
@@ -1208,7 +1221,7 @@ final class Result
      */
     public function isConsole()
     {
-        return $this->getCapability('is_console');
+        return $this->getCapability('is_console', true);
     }
     
     /**

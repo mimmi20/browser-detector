@@ -67,7 +67,7 @@ final class SonyEricssonST18i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_st18i_ver1_suban40i', // not in wurfl
+        'wurflKey' => 'sonyericsson_st18i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -240,6 +240,12 @@ final class SonyEricssonST18i
         if ('Android' == $browser->getCapability('mobile_browser')) {
             if (4.0 == (float) $osVersion) {
                 $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_suban40i');
+            }
+            
+            if (2.3 == (float) $osVersion && $this->_utils->checkIfContains('SonyEricssonST18i')) {
+                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_subuaise');
+            } elseif (2.3 == (float) $osVersion && $this->_utils->checkIfContains('ST18i')) {
+                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_subuai');
             }
         }
         

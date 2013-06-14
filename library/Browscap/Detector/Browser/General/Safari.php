@@ -236,6 +236,15 @@ class Safari
             $engine->setCapability('jqm_grade', 'B');
         }
         
+        $osname    = $os->getCapability('device_os');
+        $osVersion = (float)$os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ('iOS' === $osname && 6.0 <= $osVersion) {
+            $engine->setCapability('jqm_grade', 'A');
+        }
+        
         return $this;
     }
 }

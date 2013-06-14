@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -41,8 +41,6 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
-
 /**
  * CatchAllUserAgentHandler
  *
@@ -53,7 +51,7 @@ use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGts5620 extends SamsungBase
+class TinEye extends GeneralBot
 {
     /**
      * the detected browser properties
@@ -61,34 +59,32 @@ class SamsungGts5620 extends SamsungBase
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_s5620_ver1', // not in wurfl
+        'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
+        // 'is_wireless_device' => null,
+        // 'is_tablet'          => null,
+        'is_bot'             => true,
+        // 'is_smarttv'         => null,
+        // 'is_console'         => null,
+        // 'ux_full_desktop'    => null,
+        'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT-S5620',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => false,
-        'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
+        // 'model_name'                => null,
+        // 'manufacturer_name'         => null,
+        // 'brand_name'                => null,
+        // 'model_extra_info'          => null,
+        // 'marketing_name'            => null,
+        // 'has_qwerty_keyboard'       => null,
+        // 'pointing_method'           => null,
+        'device_claims_web_support' => false,
         
         // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
+        'mobile_browser'              => 'TinEye',
+        'mobile_browser_version'      => null,
+        'mobile_browser_bits'         => null, // not in wurfl
+        'mobile_browser_manufacturer' => 'tineye.com', // not in wurfl
         
         // os
         // 'device_os'              => null,
@@ -102,44 +98,39 @@ class SamsungGts5620 extends SamsungBase
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5620_2G.rdf',
-        'uaprof2'                   => 'http://wap.samsungmobile.com/uaprof/GT-S5620_3G.rdf',
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 40,
-        'physical_screen_height' => 60,
-        'columns'                => 20,
-        'rows'                   => 16,
-        'max_image_width'        => 228,
-        'max_image_height'       => 360,
-        'resolution_width'       => 240,
-        'resolution_height'      => 400,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'can_skip_aligned_link_row' => false,
+        'can_assign_phone_number'   => false,
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * Returns true if this handler can handle the given user agent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('GT-S5620')) {
+        if (!$this->_utils->checkIfContains(array('TinEye', 'tineye.com'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('TinEye');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
     }
     
     /**
@@ -150,17 +141,5 @@ class SamsungGts5620 extends SamsungBase
     public function getWeight()
     {
         return 3;
-    }
-    
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
     }
 }

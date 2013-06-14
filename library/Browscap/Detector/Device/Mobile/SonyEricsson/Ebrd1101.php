@@ -41,25 +41,19 @@ namespace Browscap\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
+use \Browscap\Detector\Device\Mobile\SonyEricsson as SonyBase;
 
 /**
+ * CatchAllUserAgentHandler
+ *
+ *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Ebrd1101
-    extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+class Ebrd1101 extends SonyBase
 {
     /**
      * the detected browser properties
@@ -67,10 +61,9 @@ final class Ebrd1101
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sony_prst1_ver1', // not in wurfl
         
         // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,
@@ -83,16 +76,34 @@ final class Ebrd1101
         'model_name'                => 'PRST1',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'SonyEricsson',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'brand_name'                => 'Sony',
+        'model_extra_info'          => 'EBRD1101',
+        'marketing_name'            => 'Sony Reader Wi-Fi',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
+        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
         
+        // browser
+        // 'mobile_browser'         => null,
+        // 'mobile_browser_version' => null,
+        // 'mobile_browser_bits'    => null, // not in wurfl
+        
+        // os
+        // 'device_os'              => null,
+        // 'device_os_version'      => null,
+        // 'device_os_bits'         => null, // not in wurfl
+        // 'device_os_manufacturer' => null, // not in wurfl
+        
+        // engine
+        // 'renderingengine_name'         => null, // not in wurfl
+        // 'renderingengine_version'      => null, // not in wurfl
+        // 'renderingengine_manufacturer' => null, // not in wurfl
+        
         // product info
-        'can_assign_phone_number'   => false,
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -103,49 +114,24 @@ final class Ebrd1101
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        
-        // sms
-        'sms_enabled' => true,
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => true,
+        'physical_screen_width'  => 92,
+        'physical_screen_height' => 12,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 600,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
     );
     
     /**
-     * checks if this device is able to handle the useragent
+     * Final Interceptor: Intercept
+     * Everything that has not been trapped by a previous handler
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @param string $this->_useragent
+     * @return boolean always true
      */
     public function canHandle()
     {
@@ -154,16 +140,6 @@ final class Ebrd1101
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
     
     /**
@@ -179,38 +155,12 @@ final class Ebrd1101
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return null|\Browscap\Os\Handler
+     * @return integer
      */
-    public function detectBrowser()
+    public function getWeight()
     {
-        $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
+        return 3;
     }
 }

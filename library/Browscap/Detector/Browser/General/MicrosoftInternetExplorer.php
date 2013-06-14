@@ -311,35 +311,53 @@ class MicrosoftInternetExplorer
                 //nothing to do
                 break;
         }
-
-        if (7 == $detectedVersion) {
-            $engine->setCapability('css_spriting', true);
-        }
         
         parent::detectDependProperties($engine, $os, $device);
         
-        $engineVersion = (float)$engine->getCapability('renderingengine_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        if ($engineVersion >= 5.0) {
-            $engine->setCapability('image_inlining', true);
-            $engine->setCapability('css_spriting', true);
-        }
-        
         $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('image_inlining', false);
+        $engine->setCapability('css_spriting', false);
+        $engine->setCapability('jqm_grade', 'C');
         
         $browserVersion = (int) $browserVersion->getVersion(Version::MAJORONLY);
         
-        if ($browserVersion >= 10) {
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-        } elseif ($browserVersion >= 8) {
-            $engine->setCapability('jqm_grade', 'A');
-        } elseif ($browserVersion >= 7) {
-            $engine->setCapability('jqm_grade', 'B');
-        } else {
-            $engine->setCapability('jqm_grade', 'C');
+        switch ($browserVersion) {
+            case 11:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 10:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 9:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 8:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 7:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 6:
+                // nothing to do here
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

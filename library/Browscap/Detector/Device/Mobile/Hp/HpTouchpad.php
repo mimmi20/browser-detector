@@ -92,7 +92,7 @@ final class HpTouchpad
         'device_cpu'                => null, // not in wurfl
         
         // product info
-        'can_assign_phone_number'   => false,
+        'can_assign_phone_number'   => true, // wurflkey: hp_touchpad_ver1
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
@@ -240,6 +240,7 @@ final class HpTouchpad
         $engine->setCapability('xhtml_supports_forms_in_table', false);
         $engine->setCapability('xhtml_allows_disabled_form_elements', false);
         $engine->setCapability('xhtml_supports_invisible_text', false);
+        $engine->setCapability('bmp', false); // wurflkey: hp_touchpad_ver1
         
         if (('Android Webkit' == $browser->getCapability('mobile_browser')
             || 'Chrome' == $browser->getCapability('mobile_browser'))
