@@ -41,6 +41,15 @@ namespace Browscap\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Helper\Utils;
+use \Browscap\Detector\MatcherInterface;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
+
 /**
  * CatchAllUserAgentHandler
  *
@@ -51,7 +60,9 @@ namespace Browscap\Detector\Browser\Bot;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class TinEye extends GeneralBot
+class TinEye
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties
@@ -141,5 +152,19 @@ class TinEye extends GeneralBot
     public function getWeight()
     {
         return 3;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectEngine()
+    {
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }
