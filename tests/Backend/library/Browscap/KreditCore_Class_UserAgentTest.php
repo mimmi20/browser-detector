@@ -144,9 +144,9 @@ class KreditCore_Class_UserAgentTest extends PHPUnit_Framework_TestCase
         $this->assertSame($desktop, $result->isDesktop(), 'desktop mismatch');
         $this->assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
         $this->assertSame($browser, $result->getBrowserName());
-        $this->assertSame($browserVersion, $result->getVersion()->getVersion(\Browscap\Detector\Version::FULLVERSION));
+        $this->assertSame($browserVersion, $result->getVersion()->getVersion(\Browscap\Detector\Version::COMPLETE));
         $this->assertSame($platform, $result->getPlatform());
-        $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\Browscap\Detector\Version::FULLVERSION));
+        $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\Browscap\Detector\Version::COMPLETE));
         $this->assertSame($frames, $result->supportsFrames(), 'frames mismatch');
         $this->assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
         $this->assertSame($tables, $result->supportsTables(), 'tables mismatch');
