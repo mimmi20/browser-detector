@@ -102,7 +102,6 @@ class SamsungGts5620 extends SamsungBase
         // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => null,
         'can_assign_phone_number'   => true,
         'nokia_feature_pack'        => 0,
         'nokia_series'              => 0,
@@ -124,6 +123,34 @@ class SamsungGts5620 extends SamsungBase
         'resolution_height'      => 400,
         'dual_orientation'       => true,
         'colors'                 => 65536,
+        
+        // sms
+        'sms_enabled' => true,
+        
+        // playback
+        'playback_oma_size_limit' => null,
+        'playback_acodec_aac' => null,
+        'playback_vcodec_h263_3' => null,
+        'playback_vcodec_mpeg4_asp' => null,
+        'playback_mp4' => null,
+        'playback_3gpp' => null,
+        'playback_df_size_limit' => null,
+        'playback_acodec_amr' => null,
+        'playback_mov' => null,
+        'playback_wmv' => null,
+        'playback_acodec_qcelp' => null,
+        'progressive_download' => null,
+        'playback_directdownload_size_limit' => null,
+        'playback_real_media' => null,
+        'playback_3g2' => null,
+        'playback_vcodec_mpeg4_sp' => null,
+        'playback_vcodec_h263_0' => null,
+        'playback_inline_size_limit' => null,
+        'hinted_progressive_download' => null,
+        'playback_vcodec_h264_bp' => null,
+        
+        // chips
+        'nfc_support' => true,
     );
     
     /**
