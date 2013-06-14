@@ -1,0 +1,25 @@
+PHPUnit 3.7.21 by Sebastian Bergmann.
+
+Configuration read from /var/www/browscap/trunk/tests/phpunit.xml
+
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF  63 / 368 ( 17%)
+FFFFFFFFFFFFFFFFFF
+Fatal error: Undefined class constant 'FULLVERSION' in /var/www/browscap/trunk/tests/Backend/library/Browscap/KreditCore_Class_UserAgentTest.php on line 147
+
+Call Stack:
+    0.0004     219760   1. {main}() /usr/bin/phpunit:0
+    0.0182     522984   2. PHPUnit_TextUI_Command::main() /usr/bin/phpunit:46
+    0.0182     523216   3. PHPUnit_TextUI_Command->run() /usr/share/php/PHPUnit/TextUI/Command.php:129
+    0.2065    5597424   4. PHPUnit_TextUI_TestRunner->doRun() /usr/share/php/PHPUnit/TextUI/Command.php:176
+    0.2166    5888712   5. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/TextUI/TestRunner.php:349
+  330.6369   11103632   6. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:705
+  330.6370   11104160   7. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:705
+  333.1170   19449136   8. PHPUnit_Framework_TestSuite->runTest() /usr/share/php/PHPUnit/Framework/TestSuite.php:745
+  333.1170   19449136   9. PHPUnit_Framework_TestCase->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:775
+  333.1172   19449136  10. PHPUnit_Framework_TestResult->run() /usr/share/php/PHPUnit/Framework/TestCase.php:776
+  333.1172   19450048  11. PHPUnit_Framework_TestCase->runBare() /usr/share/php/PHPUnit/Framework/TestResult.php:648
+  333.1183   19477400  12. PHPUnit_Framework_TestCase->runTest() /usr/share/php/PHPUnit/Framework/TestCase.php:831
+  333.1183   19480488  13. ReflectionMethod->invokeArgs() /usr/share/php/PHPUnit/Framework/TestCase.php:976
+  333.1183   19480688  14. KreditCore_Class_UserAgentTest->testGetBrowser() /usr/share/php/PHPUnit/Framework/TestCase.php:976
+  333.1769   19594536  15. KreditCore_Class_UserAgentTest->_x() /var/www/browscap/trunk/tests/Backend/library/Browscap/KreditCore_Class_UserAgentTest.php:90
+
