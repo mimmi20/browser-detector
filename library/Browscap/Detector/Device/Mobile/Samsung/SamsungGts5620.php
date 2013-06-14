@@ -41,28 +41,16 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
+use \Browscap\Detector\Device\Mobile\Samsung as SamsungBase;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungGts5620
-    extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+class SamsungGts5620 extends SamsungBase
 {
     /**
      * the detected browser properties
@@ -73,6 +61,7 @@ final class SamsungGts5620
         'wurflKey' => 'samsung_gt_s5620_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,
@@ -90,25 +79,8 @@ final class SamsungGts5620
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
-        
-        // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
-        
-        // os
-        // 'device_os'              => null,
-        // 'device_os_version'      => null,
-        // 'device_os_bits'         => null, // not in wurfl
-        // 'device_os_manufacturer' => null, // not in wurfl
-        
-        // engine
-        // 'renderingengine_name'         => null, // not in wurfl
-        // 'renderingengine_version'      => null, // not in wurfl
-        // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
         'can_assign_phone_number'   => true,
@@ -163,11 +135,9 @@ final class SamsungGts5620
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -234,27 +204,5 @@ final class SamsungGts5620
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        if (2.3 >= $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-        
-        return $this;
     }
 }

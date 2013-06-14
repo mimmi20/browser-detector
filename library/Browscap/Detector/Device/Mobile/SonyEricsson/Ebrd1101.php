@@ -51,9 +51,6 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 
 /**
- * CatchAllUserAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -73,6 +70,7 @@ final class Ebrd1101
         'wurflKey' => 'sony_prst1_ver1', // not in wurfl
         
         // kind of device
+        'device_type'        => 'Mobile Phone', // not in wurfl
         'is_wireless_device' => true,
         'is_tablet'          => false,
         // 'is_bot'             => false,
@@ -90,25 +88,8 @@ final class Ebrd1101
         'marketing_name'            => 'Sony Reader Wi-Fi',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
-        
-        // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
-        
-        // os
-        // 'device_os'              => null,
-        // 'device_os_version'      => null,
-        // 'device_os_bits'         => null, // not in wurfl
-        // 'device_os_manufacturer' => null, // not in wurfl
-        
-        // engine
-        // 'renderingengine_name'         => null, // not in wurfl
-        // 'renderingengine_version'      => null, // not in wurfl
-        // 'renderingengine_manufacturer' => null, // not in wurfl
         
         // product info
         'can_assign_phone_number'   => true,
@@ -163,11 +144,9 @@ final class Ebrd1101
     );
     
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this->_useragent
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -176,6 +155,16 @@ final class Ebrd1101
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -188,16 +177,6 @@ final class Ebrd1101
     public function detectDevice()
     {
         return $this;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
     
     /**
