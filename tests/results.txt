@@ -2,24 +2,108 @@ PHPUnit 3.7.21 by Sebastian Bergmann.
 
 Configuration read from /var/www/browscap/trunk/tests/phpunit.xml
 
-FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF  63 / 368 ( 17%)
-FFFFFFFFFFFFFFFFFF
-Fatal error: Undefined class constant 'FULLVERSION' in /var/www/browscap/trunk/tests/Backend/library/Browscap/KreditCore_Class_UserAgentTest.php on line 147
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF  63 / 614 ( 10%)
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+Fatal error: Maximum function nesting level of '100' reached, aborting! in /var/www/browscap/trunk/library/Browscap/Detector/Result.php on line 1234
 
 Call Stack:
     0.0004     219760   1. {main}() /usr/bin/phpunit:0
-    0.0182     522984   2. PHPUnit_TextUI_Command::main() /usr/bin/phpunit:46
-    0.0182     523216   3. PHPUnit_TextUI_Command->run() /usr/share/php/PHPUnit/TextUI/Command.php:129
-    0.2065    5597424   4. PHPUnit_TextUI_TestRunner->doRun() /usr/share/php/PHPUnit/TextUI/Command.php:176
-    0.2166    5888712   5. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/TextUI/TestRunner.php:349
-  330.6369   11103632   6. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:705
-  330.6370   11104160   7. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:705
-  333.1170   19449136   8. PHPUnit_Framework_TestSuite->runTest() /usr/share/php/PHPUnit/Framework/TestSuite.php:745
-  333.1170   19449136   9. PHPUnit_Framework_TestCase->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:775
-  333.1172   19449136  10. PHPUnit_Framework_TestResult->run() /usr/share/php/PHPUnit/Framework/TestCase.php:776
-  333.1172   19450048  11. PHPUnit_Framework_TestCase->runBare() /usr/share/php/PHPUnit/Framework/TestResult.php:648
-  333.1183   19477400  12. PHPUnit_Framework_TestCase->runTest() /usr/share/php/PHPUnit/Framework/TestCase.php:831
-  333.1183   19480488  13. ReflectionMethod->invokeArgs() /usr/share/php/PHPUnit/Framework/TestCase.php:976
-  333.1183   19480688  14. KreditCore_Class_UserAgentTest->testGetBrowser() /usr/share/php/PHPUnit/Framework/TestCase.php:976
-  333.1769   19594536  15. KreditCore_Class_UserAgentTest->_x() /var/www/browscap/trunk/tests/Backend/library/Browscap/KreditCore_Class_UserAgentTest.php:90
+    0.0301     522984   2. PHPUnit_TextUI_Command::main() /usr/bin/phpunit:46
+    0.0302     523216   3. PHPUnit_TextUI_Command->run() /usr/share/php/PHPUnit/TextUI/Command.php:129
+    0.2787    6791216   4. PHPUnit_TextUI_TestRunner->doRun() /usr/share/php/PHPUnit/TextUI/Command.php:176
+    0.2888    7082456   5. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/TextUI/TestRunner.php:349
+  330.6134   12374520   6. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:705
+  330.6135   12375048   7. PHPUnit_Framework_TestSuite->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:705
+  334.2662   23826832   8. PHPUnit_Framework_TestSuite->runTest() /usr/share/php/PHPUnit/Framework/TestSuite.php:745
+  334.2662   23826832   9. PHPUnit_Framework_TestCase->run() /usr/share/php/PHPUnit/Framework/TestSuite.php:775
+  334.2663   23826832  10. PHPUnit_Framework_TestResult->run() /usr/share/php/PHPUnit/Framework/TestCase.php:776
+  334.2664   23827744  11. PHPUnit_Framework_TestCase->runBare() /usr/share/php/PHPUnit/Framework/TestResult.php:648
+  334.2675   23855096  12. PHPUnit_Framework_TestCase->runTest() /usr/share/php/PHPUnit/Framework/TestCase.php:831
+  334.2676   23858184  13. ReflectionMethod->invokeArgs() /usr/share/php/PHPUnit/Framework/TestCase.php:976
+  334.2676   23858384  14. KreditCore_Class_UserAgentTest->testGetBrowser() /usr/share/php/PHPUnit/Framework/TestCase.php:976
+  334.3259   23972008  15. KreditCore_Class_UserAgentTest->_x() /var/www/browscap/trunk/tests/Backend/library/Browscap/KreditCore_Class_UserAgentTest.php:90
+  334.3409   24153456  16. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/tests/Backend/library/Browscap/KreditCore_Class_UserAgentTest.php:150
+  334.3409   24153496  17. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  18. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  19. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  20. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  21. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  22. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  23. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  24. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  25. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  26. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  27. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  28. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  29. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  30. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  31. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  32. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  33. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  34. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  35. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  36. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  37. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  38. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  39. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  40. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  41. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  42. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  43. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  44. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  45. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  46. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  47. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  48. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  49. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  50. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  51. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3409   24153496  52. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  53. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  54. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  55. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  56. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  57. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  58. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  59. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  60. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  61. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  62. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  63. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  64. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  65. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  66. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  67. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  68. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  69. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  70. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  71. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  72. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  73. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  74. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  75. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  76. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  77. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  78. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  79. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  80. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  81. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  82. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  83. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  84. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  85. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  86. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3410   24153496  87. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  88. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  89. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  90. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  91. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  92. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  93. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  94. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  95. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  96. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  97. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  98. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
+  334.3411   24153496  99. Browscap\Detector\Result->supportsFrames() /var/www/browscap/trunk/library/Browscap/Detector/Result.php:1234
 
