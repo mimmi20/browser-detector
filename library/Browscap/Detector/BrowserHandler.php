@@ -180,7 +180,7 @@ abstract class BrowserHandler
     {
         $this->_detectVersion();
         $this->_detectBits();
-        $this->_detectProperties;
+        $this->_detectProperties();
         
         return $this;
     }
