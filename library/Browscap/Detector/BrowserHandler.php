@@ -178,11 +178,9 @@ abstract class BrowserHandler
      */
     public function detect()
     {
-        $this
-            ->_detectVersion()
-            ->_detectBits()
-            ->_detectProperties()
-        ;
+        $this->_detectVersion();
+        $this->_detectBits();
+        $this->_detectProperties;
         
         return $this;
     }
