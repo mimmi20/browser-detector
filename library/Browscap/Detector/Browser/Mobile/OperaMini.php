@@ -70,8 +70,9 @@ class OperaMini
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_bot'             => false,
-        'is_transcoder'      => true,
+        'is_bot'                => false,
+        'is_transcoder'         => true,
+        'is_syndication_reader' => false,
         
         // browser
         'mobile_browser'              => 'Opera Mini',

@@ -73,13 +73,9 @@ class TinEye
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => true,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
+        'is_bot'                => true,
+        'is_transcoder'         => false,
+        'is_syndication_reader' => false,
         
         // device
         // 'model_name'                => null,

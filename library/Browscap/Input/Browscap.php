@@ -361,6 +361,26 @@ class Browscap extends Core
             $result->setCapability('is_bot', $browser['Crawler']);
         }
         
+        if (!empty($browser['Browser_isSyndicationReader'])) {
+            $result->setCapability(
+                'is_syndication_reader', $browser['Browser_isSyndicationReader']
+            );
+        } elseif (!empty($browser['isSyndicationReader'])) {
+            $result->setCapability(
+                'is_syndication_reader', $browser['isSyndicationReader']
+            );
+        }
+        
+        $result->setCapability('xhtml_supports_frame', $browser['Frames']);
+        $result->setCapability('xhtml_supports_iframe', $browser['IFrames']);
+        $result->setCapability('xhtml_table_support', $browser['Tables']);
+        $result->setCapability('cookie_support', $browser['Cookies']);
+        $result->setCapability('supports_background_sounds', $browser['BackgroundSounds']);
+        $result->setCapability('supports_vb_script', $browser['VBScript']);
+        $result->setCapability('ajax_support_javascript', $browser['JavaScript']);
+        $result->setCapability('supports_java_applets', $browser['JavaApplets']);
+        $result->setCapability('supports_activex_controls', $browser['ActiveXControls']);
+        
         return $result;
     }
 

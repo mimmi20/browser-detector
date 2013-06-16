@@ -70,8 +70,9 @@ class SsearchCrawler
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_bot'             => true,
-        'is_transcoder'      => false,
+        'is_bot'                => true,
+        'is_transcoder'         => false,
+        'is_syndication_reader' => false,
         
         // browser
         'mobile_browser'              => 'sSearch Crawler',

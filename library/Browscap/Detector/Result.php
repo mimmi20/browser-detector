@@ -75,15 +75,16 @@ final class Result
         'osClass' => null,      // not in wurfl
         
         // kind of device
-        'device_type'        => null, // not in wurfl
-        'is_wireless_device' => null,
-        'is_tablet'          => null,
-        'is_bot'             => null,
-        'is_smarttv'         => null,
-        'is_console'         => null,
-        'ux_full_desktop'    => null,
-        'is_transcoder'      => null,
-        'is_banned'          => null, // not in wurfl
+        'device_type'           => null, // not in wurfl
+        'is_wireless_device'    => null,
+        'is_tablet'             => null,
+        'is_bot'                => null,
+        'is_smarttv'            => null,
+        'is_console'            => null,
+        'is_syndication_reader' => null,
+        'ux_full_desktop'       => null,
+        'is_transcoder'         => null,
+        'is_banned'             => null, // not in wurfl
         
         // device
         'model_name'                => null,
@@ -161,6 +162,10 @@ final class Result
         'voicexml' => null,
         'html_wi_imode_htmlx_1_1' => null,
         'multipart_support' => null,
+        'supports_background_sounds' => null, // not in wurfl
+        'supports_vb_script' => null, // not in wurfl
+        'supports_java_applets' => null, // not in wurfl
+        'supports_activex_controls' => null, // not in wurfl
         
         // chtml
         'chtml_table_support' => null,
@@ -176,6 +181,7 @@ final class Result
         'xhtml_avoid_accesskeys' => null,
         'xhtml_select_as_dropdown' => null,
         'xhtml_supports_iframe' => null,
+        'xhtml_supports_frame' => null, // not in wurfl
         'xhtml_supports_forms_in_table' => null,
         'xhtmlmp_preferred_mime_type' => null,
         'xhtml_select_as_popup' => null,
@@ -1205,7 +1211,7 @@ final class Result
     }
     
     /**
-     * returns TRUE if the browser supports VBScript
+     * returns TRUE if the browser is a crawler
      *
      * @return boolean
      */
@@ -1215,7 +1221,7 @@ final class Result
     }
     
     /**
-     * returns TRUE if the browser supports VBScript
+     * returns TRUE if the device ia a game console
      *
      * @return boolean
      */
@@ -1231,7 +1237,7 @@ final class Result
      */
     public function supportsFrames()
     {
-        return $this->supportsFrames();
+        return $this->getCapability('xhtml_supports_frame', true);
     }
     
     /**
@@ -1241,7 +1247,7 @@ final class Result
      */
     public function supportsIframes()
     {
-        return $this->supportsIframes();
+        return $this->getCapability('xhtml_supports_iframe', true);
     }
     
     /**
@@ -1251,7 +1257,7 @@ final class Result
      */
     public function supportsTables()
     {
-        return $this->supportsTables();
+        return $this->getCapability('xhtml_table_support', true);
     }
     
     /**
@@ -1261,7 +1267,7 @@ final class Result
      */
     public function supportsCookies()
     {
-        return $this->supportsCookies();
+        return $this->getCapability('cookie_support', true);
     }
     
     /**
@@ -1271,7 +1277,7 @@ final class Result
      */
     public function supportsBackgroundSounds()
     {
-        return $this->supportsBackgroundSounds();
+        return $this->getCapability('supports_background_sounds', true);
     }
     
     /**
@@ -1281,7 +1287,7 @@ final class Result
      */
     public function supportsJavaScript()
     {
-        return $this->supportsJavaScript();
+        return $this->getCapability('ajax_support_javascript', true);
     }
     
     /**
@@ -1291,7 +1297,7 @@ final class Result
      */
     public function supportsVbScript()
     {
-        return $this->supportsVbScript();
+        return $this->getCapability('supports_vb_script', true);
     }
     
     /**
@@ -1301,7 +1307,7 @@ final class Result
      */
     public function supportsJavaApplets()
     {
-        return $this->supportsJavaApplets();
+        return $this->getCapability('supports_java_applets', true);
     }
     
     /**
@@ -1311,7 +1317,7 @@ final class Result
      */
     public function supportsActivexControls()
     {
-        return $this->supportsActivexControls();
+        return $this->getCapability('supports_activex_controls', true);
     }
     
     /**
@@ -1321,7 +1327,7 @@ final class Result
      */
     public function isSyndicationReader()
     {
-        return $this->isSyndicationReader();
+        return $this->getCapability('is_syndication_reader', true);
     }
     
     /**
@@ -1331,9 +1337,9 @@ final class Result
      */
     public function getComparationName()
     {
-        return $this->getCapability('mobile_browser') . ' on ' 
-            . $this->getCapability('device_os') . ', ' 
-            . $this->getCapability('model_name');
+        return $this->getCapability('mobile_browser', false) . ' on ' 
+            . $this->getCapability('device_os', false) . ', ' 
+            . $this->getCapability('model_name', false);
     }
     
     /**
@@ -1376,6 +1382,7 @@ final class Result
                     case 'is_tablet':
                     case 'is_smarttv':
                     case 'is_console':
+                    case 'is_syndication_reader':
                     case 'ux_full_desktop':
                     case 'model_name':
                     case 'model_version':
@@ -1433,7 +1440,6 @@ final class Result
                     case 'basic_authentication_support':
                     case 'post_method_support':
                     case 'rss_support':
-                    // case 'multipart_support':
                         $value = $browser->getCapability($property);
                         break;
                     case 'device_os':
@@ -1481,6 +1487,10 @@ final class Result
                     case 'ajax_preferred_geoloc_api':
                     case 'utf8_support':
                     case 'multipart_support':
+                    case 'supports_background_sounds':
+                    case 'supports_vb_script':
+                    case 'supports_java_applets':
+                    case 'supports_activex_controls':
                     case 'html_web_3_2':
                     case 'html_web_4_0':
                     case 'html_wi_oma_xhtmlmp_1_0':
@@ -1507,6 +1517,7 @@ final class Result
                     case 'xhtml_select_as_radiobutton':
                     case 'xhtml_avoid_accesskeys':
                     case 'xhtml_select_as_dropdown':
+                    case 'xhtml_supports_frame': // not in wurfl
                     case 'xhtml_supports_iframe':
                     case 'xhtml_supports_forms_in_table':
                     case 'xhtmlmp_preferred_mime_type':

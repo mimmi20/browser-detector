@@ -68,8 +68,9 @@ class MicrosoftOutlook extends MicrosoftOffice
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_bot'             => false,
-        'is_transcoder'      => false,
+        'is_bot'                => false,
+        'is_transcoder'         => false,
+        'is_syndication_reader' => false,
         
         // browser
         'mobile_browser'              => 'Outlook',

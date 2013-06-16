@@ -73,6 +73,10 @@ class Webkit extends EngineHandler
         // markup
         'utf8_support' => false,
         'multipart_support' => false,
+        'supports_background_sounds' => null, // not in wurfl
+        'supports_vb_script' => null, // not in wurfl
+        'supports_java_applets' => null, // not in wurfl
+        'supports_activex_controls' => null, // not in wurfl
         'preferred_markup' => 'html_web_4_0',
         'html_web_3_2' => true,
         'html_web_4_0' => true,
