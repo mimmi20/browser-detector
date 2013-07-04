@@ -245,4 +245,66 @@ final class SonyEricssonU20i
         
         return $chain->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.1:
+                        $this->setCapability('wurflKey', 'sonyericsson_u20i_ver1_suban21');
+                        $engine->setCapability('xhtml_file_upload', 'not_supported');
+                        $engine->setCapability('jqm_grade', 'C');
+                        break;
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this;
+    }
 }

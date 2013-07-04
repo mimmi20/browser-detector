@@ -67,7 +67,7 @@ final class HuaweiU8860
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'huawei_u8860_ver1_suban40noh', // not in wurfl
+        'wurflKey' => 'huawei_u8860_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -228,6 +228,52 @@ final class HuaweiU8860
         
         // wurflkey: huawei_u8860_ver1_suban40noh
         $engine->setCapability('bmp', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.3:
+                        $engine->setCapability('xhtml_can_embed_video', 'none');
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'huawei_u8860_ver1_suban40noh');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         
         return $this;
     }

@@ -85,7 +85,7 @@ final class AcerIconiaA210
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'A210',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

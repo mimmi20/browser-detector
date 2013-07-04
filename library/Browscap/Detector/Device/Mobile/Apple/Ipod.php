@@ -85,7 +85,7 @@ final class Ipod
         'manufacturer_name'         => 'Apple',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'iPod Touch',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -256,6 +256,7 @@ final class Ipod
         $engine->setCapability('xhtml_send_sms_string', 'none');
         $browser->setCapability('pdf_support', false);
         $engine->setCapability('css_gradient', 'none');
+        $browser->setCapability('supports_java_applets', true);
         
         if (6.0 <= (float) $osVersion) {
             $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');
@@ -263,8 +264,19 @@ final class Ipod
         
         $osVersion = $os->getCapability('device_os_version')->getVersion();
         
+        switch ($osVersion) {
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+                break;
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         if ('4.2.1' == $osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+            
         }
         
         return $this;

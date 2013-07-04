@@ -85,7 +85,7 @@ final class Iphone
         'manufacturer_name'         => 'Apple',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'iPhone',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -140,7 +140,7 @@ final class Iphone
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
 
     /**

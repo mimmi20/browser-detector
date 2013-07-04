@@ -67,7 +67,7 @@ final class SamsungGti9000
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_i9000_ver1_suban233bis', // not in wurfl
+        'wurflKey' => 'samsung_gt_i9000_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -140,7 +140,7 @@ final class SamsungGti9000
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -227,25 +227,62 @@ final class SamsungGti9000
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('supports_java_applets', false);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
         );
         
-        if (2.1 == (float) $osVersion) {
-            $engineVersion = $engine->getCapability('renderingengine_version')->getVersion();
-            
-            if ('530.17' == $engineVersion) {
-                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
-            }
-        }
-        
-        if (2.2 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
-        }
-        
-        if (2.3 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.1:
+                        $engineVersion = $engine->getCapability('renderingengine_version')->getVersion(Version::MAJORMINOR);
+                        
+                        if ('530.17' == $engineVersion) {
+                            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
+                        }
+                        break;
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
+                        break;
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
+                        break;
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

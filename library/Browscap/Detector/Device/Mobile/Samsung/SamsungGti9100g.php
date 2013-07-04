@@ -67,7 +67,7 @@ final class SamsungGti9100g
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_gt_i9100_ver1_subuag', // not in wurfl
+        'wurflKey' => 'samsung_gt_i9100_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -140,7 +140,7 @@ final class SamsungGti9100g
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -228,17 +228,52 @@ final class SamsungGti9100g
         
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('supports_java_applets', false);
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
         );
         
-        if (2.3 == (float) $osVersion) {
-            // $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1');
-        }
-        
-        if (4.0 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40g');
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40g');
+                        break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban41romg');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

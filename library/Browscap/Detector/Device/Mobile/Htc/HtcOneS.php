@@ -67,7 +67,7 @@ final class HtcOneS
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'htc_one_s_ver1_subuanouscore', // not in wurfl
+        'wurflKey' => 'htc_one_s_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -85,7 +85,7 @@ final class HtcOneS
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'One S',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -232,6 +232,52 @@ final class HtcOneS
         
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         
         return $this;
     }

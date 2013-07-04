@@ -214,4 +214,21 @@ final class EpadP7901a
         
         return $handler->detect();
     }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        
+        return $this;
+    }
 }

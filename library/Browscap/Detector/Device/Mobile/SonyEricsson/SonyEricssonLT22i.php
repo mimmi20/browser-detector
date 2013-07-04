@@ -238,14 +238,44 @@ final class SonyEricssonLT22i
             Version::MAJORMINOR
         );
         
-        if ('Android' == $browser->getCapability('mobile_browser')) {
-            if (2.3 == (float) $osVersion) {
-                // $this->setCapability('wurflKey', 'sonyericsson_lt15i_ver1_suban233');
-            }
-            
-            if (4.0 == (float) $osVersion) {
-                $this->setCapability('wurflKey', 'sonyericsson_lt22i_ver1_suban40');
-            }
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'sonyericsson_lt22i_ver1_suban40');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

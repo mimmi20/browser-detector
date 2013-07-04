@@ -230,28 +230,50 @@ final class SamsungGtp7500
             Version::MAJORMINOR
         );
         
-        if ('Android' == $browser->getCapability('mobile_browser')) {
-            if (3.1 == (float) $osVersion) {
-                $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban31');
-            }
-            
-            if (3.2 == (float) $osVersion) {
-                $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban32');
-            }
-            
-            if (4.0 == (float) $osVersion) {
-                $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban40rom');
-            }
-        }
-        
-        if ('Chrome' == $browser->getCapability('mobile_browser')) {
-            if (4.0 == (float) $osVersion) {
-                // $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
-            }
-            
-            if (4.1 == (float) $osVersion) {
-                // $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
-            }
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 3.1:
+                        $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban31');
+                        break;
+                    case 3.2:
+                        $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban32');
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban40rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

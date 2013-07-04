@@ -226,6 +226,8 @@ final class SamsungGtp7501
     {
         parent::detectDependProperties($browser, $engine, $os);
         
+        $engine->setCapability('supports_java_applets', false);
+        
         return $this;
     }
 }

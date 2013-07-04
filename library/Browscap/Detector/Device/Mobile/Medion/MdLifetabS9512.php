@@ -85,7 +85,7 @@ final class MdLifetabS9512
         'manufacturer_name'         => 'Medion',
         'brand_name'                => 'Medion',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'LifeTab S9512',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

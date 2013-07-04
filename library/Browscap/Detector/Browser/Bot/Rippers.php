@@ -72,14 +72,16 @@ class Rippers
         // kind of device
         'is_bot'                => true,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,         // not in wurfl
+        'browser_type'          => 'Bot/Crawler', // not in wurfl
+        'is_banned'             => false,         // not in wurfl
         
         // browser
         'mobile_browser'              => 'Ripper',
         'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => null, // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
+        'mobile_browser_bits'         => null,      // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_modus'        => null,      // not in wurfl
         
         // product info
         'can_skip_aligned_link_row' => false,

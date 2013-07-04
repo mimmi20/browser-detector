@@ -224,31 +224,62 @@ final class AcerIconiaA501
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
-        $osVersion = (float) $os->getCapability('device_os_version')->getVersion(
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', true);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
         );
         
-        switch ($osVersion) {
-            case 3.2:
-                $this->setCapability('colors', 65536);
-                $this->setCapability('resolution_height', 768);
-                $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A501_Profile.xml');
-                $this->setCapability('wurflKey', 'acer_iconia_tab_a501_ver1_suban32');
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 3.2:
+                        $this->setCapability('colors', 65536);
+                        $this->setCapability('resolution_height', 768);
+                        $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A501_Profile.xml');
+                        $this->setCapability('wurflKey', 'acer_iconia_tab_a501_ver1_suban32');
+                        $engine->setCapability('bmp', false);
+                        break;
+                    case 4.0:
+                        $this->setCapability('colors', 16777216);
+                        $this->setCapability('resolution_height', 800);
+                        $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A501_Profile.xml');
+                        $this->setCapability('wurflKey', 'acer_iconia_tab_a501_ver1_suban40');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 4.0:
-                $this->setCapability('colors', 16777216);
-                $this->setCapability('resolution_height', 800);
-                $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A501_Profile.xml');
-                $this->setCapability('wurflKey', 'acer_iconia_tab_a501_ver1_suban40');
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
             default:
                 // nothing to do here
                 break;
         }
-        
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        $engine->setCapability('bmp', true);
         
         return $this;
     }

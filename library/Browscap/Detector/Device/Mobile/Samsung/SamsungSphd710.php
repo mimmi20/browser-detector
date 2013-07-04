@@ -67,7 +67,7 @@ final class SamsungSphd710
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'samsung_sph_d710_ver1_suban40rom', // not in wurfl
+        'wurflKey' => 'samsung_sph_d710_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -86,7 +86,7 @@ final class SamsungSphd710
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
         'marketing_name'            => 'Galaxy SII Epic 4G Touch',
-        'has_qwerty_keyboard'       => false,
+        'has_qwerty_keyboard'       => true, // wurflkey: samsung_sph_d710_ver1_suban40rom
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
@@ -103,12 +103,12 @@ final class SamsungSphd710
         'unique'                    => true,
         
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
@@ -213,5 +213,66 @@ final class SamsungSphd710
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('bmp', false);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_sph_d710_ver1_suban40rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this;
     }
 }

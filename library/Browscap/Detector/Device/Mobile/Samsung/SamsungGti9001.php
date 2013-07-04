@@ -85,7 +85,7 @@ final class SamsungGti9001
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'GT-I9001',
         'has_qwerty_keyboard'       => true, // wurflkey: samsung_gt_i9001_ver1
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -140,7 +140,7 @@ final class SamsungGti9001
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -227,6 +227,7 @@ final class SamsungGti9001
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('supports_java_applets', false);
         
         return $this;
     }

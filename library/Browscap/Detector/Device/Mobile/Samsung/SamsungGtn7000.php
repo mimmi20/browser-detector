@@ -140,7 +140,7 @@ final class SamsungGtn7000
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -227,6 +227,53 @@ final class SamsungGtn7000
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('supports_java_applets', false);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         
         return $this;
     }

@@ -237,16 +237,50 @@ final class SonyEricssonST18i
             Version::MAJORMINOR
         );
         
-        if ('Android' == $browser->getCapability('mobile_browser')) {
-            if (4.0 == (float) $osVersion) {
-                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_suban40i');
-            }
-            
-            if (2.3 == (float) $osVersion && $this->_utils->checkIfContains('SonyEricssonST18i')) {
-                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_subuaise');
-            } elseif (2.3 == (float) $osVersion && $this->_utils->checkIfContains('ST18i')) {
-                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_subuai');
-            }
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.3:
+                        if ($this->_utils->checkIfContains('SonyEricssonST18i')) {
+                            $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_subuaise');
+                        } elseif ($this->_utils->checkIfContains('ST18i')) {
+                            $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_subuai');
+                        }
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_suban40i');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

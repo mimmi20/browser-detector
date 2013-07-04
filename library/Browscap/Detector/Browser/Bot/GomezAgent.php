@@ -72,7 +72,9 @@ class GomezAgent
         // kind of device
         'is_bot'                => true,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,         // not in wurfl
+        'browser_type'          => 'Bot/Crawler', // not in wurfl
+        'is_banned'             => false,         // not in wurfl
         
         // browser
         'mobile_browser'              => 'GomezAgent',
@@ -104,10 +106,6 @@ class GomezAgent
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
         if (!$this->_utils->checkIfContains(array('GomezAgent'))) {
             return false;
         }
@@ -156,5 +154,26 @@ class GomezAgent
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $agent = str_ireplace(array('GomezAgent'), '', $this->_useragent);
+        
+        $detector = new \Browscap\Input\UserAgent();
+        $detector->setAgent($agent);
+        
+        $device->setRenderAs($detector->getBrowser());
+        
+        return $this;
     }
 }

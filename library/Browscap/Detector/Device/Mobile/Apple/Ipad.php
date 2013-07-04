@@ -85,7 +85,7 @@ final class Ipad
         'manufacturer_name'         => 'Apple',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'iPad',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -140,7 +140,7 @@ final class Ipad
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false, // wurflkey: apple_ipad_ver1_sub51
     );
     
     /**
@@ -244,6 +244,7 @@ final class Ipad
         $this->setCapability('model_extra_info', $osVersion);
         
         $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('supports_java_applets', true);
         
         parent::detectDependProperties($browser, $engine, $os);
         

@@ -87,13 +87,10 @@ abstract class BrowserHandler
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        // 'is_wireless_device' => null,
-        // 'is_tablet'          => null,
-        'is_bot'             => false,
-        // 'is_smarttv'         => null,
-        // 'is_console'         => null,
-        // 'ux_full_desktop'    => null,
-        'is_transcoder'      => false,
+        'browser_type'  => 'unknown', // not in wurfl
+        'is_bot'        => false,
+        'is_transcoder' => false, // not in wurfl
+        'is_banned'     => false, // not in wurfl
         
         // device
         // 'model_name'                => null,

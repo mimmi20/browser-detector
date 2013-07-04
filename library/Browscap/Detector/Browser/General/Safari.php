@@ -73,7 +73,9 @@ class Safari
         // kind of device
         'is_bot'                => false,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,     // not in wurfl
+        'browser_type'          => 'Browser', // not in wurfl
+        'is_banned'             => false,     // not in wurfl
         
         // browser
         'mobile_browser'              => 'Safari',
@@ -242,7 +244,12 @@ class Safari
             Version::MAJORMINOR
         );
         
-        if ('iOS' === $osname && 6.0 <= $osVersion) {
+        if ('iOS' === $osname && 5.1 <= $osVersion) {
+            $engine->setCapability('jqm_grade', 'A');
+            $engine->setCapability('supports_java_applets', true);
+        }
+        
+        if ('MacOSX' === $osname && 10.0 <= $osVersion) {
             $engine->setCapability('jqm_grade', 'A');
         }
         

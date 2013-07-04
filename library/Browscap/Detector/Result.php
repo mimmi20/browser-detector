@@ -76,6 +76,7 @@ final class Result
         
         // kind of device
         'device_type'           => null, // not in wurfl
+        'browser_type'          => null, // not in wurfl
         'is_wireless_device'    => null,
         'is_tablet'             => null,
         'is_bot'                => null,
@@ -708,10 +709,35 @@ final class Result
             && $renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
         ) {
-            $propertyValue .= ' [' . $renderedAs->getCapability($capabilityName, false) . ']';
+            $propertyValue  = $this->_propertyToString($this->_properties[$capabilityName]);
+            $propertyValue .= ' [' . $this->_propertyToString($renderedAs->getCapability($capabilityName, false)) . ']';
         }
         
         return $propertyValue;
+    }
+    
+    /**
+     * converts the property value into a string
+     *
+     * @param mixed $property
+     *
+     * @return string
+     */
+    private function _propertyToString($property)
+    {
+        if (null === $property) {
+            $strProperty = '(NULL)';
+        } elseif ('' === $property) {
+            $strProperty = '(empty)';
+        } elseif (false === $property) {
+            $strProperty = '(false)';
+        } elseif (true === $property) {
+            $strProperty = '(true)';
+        } else {
+            $strProperty = (string) $property;
+        }
+        
+        return $strProperty;
     }
     
     /**
@@ -1077,7 +1103,7 @@ final class Result
      */
     public function isRssSupported()
     {
-        return $this->getCapability('rss_support');
+        return $this->getCapability('rss_support', false);
     }
     
     /**
@@ -1087,22 +1113,22 @@ final class Result
      */
     public function isPdfSupported()
     {
-        return $this->getCapability('pdf_support');
+        return $this->getCapability('pdf_support', false);
     }
     
     public function getBrowserName()
     {
-        return $this->getCapability('mobile_browser');
+        return $this->getCapability('mobile_browser', false);
     }
     
     public function getVersion()
     {
-        return $this->getCapability('mobile_browser_version');
+        return $this->getCapability('mobile_browser_version', false);
     }
     
     public function getBits()
     {
-        return $this->getCapability('mobile_browser_bits');
+        return $this->getCapability('mobile_browser_bits', false);
     }
     
     /**
@@ -1112,7 +1138,7 @@ final class Result
      */
     public function getBrowserManufacturer()
     {
-        return $this->getCapability('mobile_browser_manufacturer');
+        return $this->getCapability('mobile_browser_manufacturer', false);
     }
     
     /**
@@ -1122,7 +1148,7 @@ final class Result
      */
     public function getOsManufacturer()
     {
-        return $this->getCapability('device_os_manufacturer');
+        return $this->getCapability('device_os_manufacturer', false);
     }
     
     /**
@@ -1132,42 +1158,32 @@ final class Result
      */
     public function isTranscoder()
     {
-        return $this->getCapability('is_transcoder');
+        return $this->getCapability('is_transcoder', false);
     }
     
     public function getName()
     {
-        return $this->getCapability('renderingengine_name');
+        return $this->getCapability('renderingengine_name', false);
     }
     
     public function getEngineVersion()
     {
-        return $this->getCapability('renderingengine_version');
+        return $this->getCapability('renderingengine_version', false);
     }
     
     public function getPlatform()
     {
-        return $this->getCapability('device_os');
+        return $this->getCapability('device_os', false);
     }
     
     public function getPlatformVersion()
     {
-        return $this->getCapability('device_os_version');
+        return $this->getCapability('device_os_version', false);
     }
     
     public function getPlatformBits()
     {
-        return $this->getCapability('device_os_bits');
-    }
-    
-    /**
-     * returns TRUE if the browser should be banned
-     *
-     * @return boolean
-     */
-    public function isBanned()
-    {
-        return $this->getCapability('is_banned', true);
+        return $this->getCapability('device_os_bits', false);
     }
     
     /**
@@ -1177,7 +1193,7 @@ final class Result
      */
     public function isMobileDevice()
     {
-        return $this->getCapability('is_wireless_device', true);
+        return $this->getCapability('is_wireless_device', false);
     }
     
     /**
@@ -1187,7 +1203,7 @@ final class Result
      */
     public function isTablet()
     {
-        return $this->getCapability('is_tablet', true);
+        return $this->getCapability('is_tablet', false);
     }
     
     /**
@@ -1197,7 +1213,7 @@ final class Result
      */
     public function isDesktop()
     {
-        return $this->getCapability('ux_full_desktop', true);
+        return $this->getCapability('ux_full_desktop', false);
     }
     
     /**
@@ -1207,7 +1223,7 @@ final class Result
      */
     public function isTvDevice()
     {
-        return $this->getCapability('is_smarttv', true);
+        return $this->getCapability('is_smarttv', false);
     }
     
     /**
@@ -1217,7 +1233,7 @@ final class Result
      */
     public function isCrawler()
     {
-        return $this->getCapability('is_bot', true);
+        return $this->getCapability('is_bot', false);
     }
     
     /**
@@ -1227,7 +1243,7 @@ final class Result
      */
     public function isConsole()
     {
-        return $this->getCapability('is_console', true);
+        return $this->getCapability('is_console', false);
     }
     
     /**
@@ -1237,7 +1253,7 @@ final class Result
      */
     public function supportsFrames()
     {
-        return $this->getCapability('xhtml_supports_frame', true);
+        return $this->getCapability('xhtml_supports_frame', false);
     }
     
     /**
@@ -1247,7 +1263,7 @@ final class Result
      */
     public function supportsIframes()
     {
-        return $this->getCapability('xhtml_supports_iframe', true);
+        return $this->getCapability('xhtml_supports_iframe', false);
     }
     
     /**
@@ -1257,7 +1273,7 @@ final class Result
      */
     public function supportsTables()
     {
-        return $this->getCapability('xhtml_table_support', true);
+        return $this->getCapability('xhtml_table_support', false);
     }
     
     /**
@@ -1267,7 +1283,7 @@ final class Result
      */
     public function supportsCookies()
     {
-        return $this->getCapability('cookie_support', true);
+        return $this->getCapability('cookie_support', false);
     }
     
     /**
@@ -1277,7 +1293,7 @@ final class Result
      */
     public function supportsBackgroundSounds()
     {
-        return $this->getCapability('supports_background_sounds', true);
+        return $this->getCapability('supports_background_sounds', false);
     }
     
     /**
@@ -1287,7 +1303,7 @@ final class Result
      */
     public function supportsJavaScript()
     {
-        return $this->getCapability('ajax_support_javascript', true);
+        return $this->getCapability('ajax_support_javascript', false);
     }
     
     /**
@@ -1297,7 +1313,7 @@ final class Result
      */
     public function supportsVbScript()
     {
-        return $this->getCapability('supports_vb_script', true);
+        return $this->getCapability('supports_vb_script', false);
     }
     
     /**
@@ -1307,7 +1323,7 @@ final class Result
      */
     public function supportsJavaApplets()
     {
-        return $this->getCapability('supports_java_applets', true);
+        return $this->getCapability('supports_java_applets', false);
     }
     
     /**
@@ -1317,7 +1333,7 @@ final class Result
      */
     public function supportsActivexControls()
     {
-        return $this->getCapability('supports_activex_controls', true);
+        return $this->getCapability('supports_activex_controls', false);
     }
     
     /**
@@ -1327,7 +1343,17 @@ final class Result
      */
     public function isSyndicationReader()
     {
-        return $this->getCapability('is_syndication_reader', true);
+        return $this->getCapability('is_syndication_reader', false);
+    }
+    
+    /**
+     * returns TRUE if the device is a Syndication Reader
+     *
+     * @return boolean
+     */
+    public function isBanned()
+    {
+        return $this->getCapability('is_banned', false);
     }
     
     /**
@@ -1382,7 +1408,6 @@ final class Result
                     case 'is_tablet':
                     case 'is_smarttv':
                     case 'is_console':
-                    case 'is_syndication_reader':
                     case 'ux_full_desktop':
                     case 'model_name':
                     case 'model_version':
@@ -1427,6 +1452,9 @@ final class Result
                         break;
                     case 'is_bot':
                     case 'is_transcoder':
+                    case 'is_syndication_reader':
+                    case 'is_banned':
+                    case 'browser_type':
                     case 'mobile_browser':
                     case 'mobile_browser_version':
                     case 'mobile_browser_bits':

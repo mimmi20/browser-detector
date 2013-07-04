@@ -80,7 +80,7 @@ final class HtcA9191DesireHd
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Desire HD',
+        'model_name'                => 'A9191', // wurflkey: htc_desirehd_ver1_suban23a9191
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',

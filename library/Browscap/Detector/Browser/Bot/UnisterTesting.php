@@ -72,7 +72,9 @@ class UnisterTesting
         // kind of device
         'is_bot'                => true,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,     // not in wurfl
+        'browser_type'          => 'Unister', // not in wurfl
+        'is_banned'             => false,     // not in wurfl
         
         // browser
         'mobile_browser'              => 'UnisterTesting',
@@ -152,5 +154,29 @@ class UnisterTesting
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
+    {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $agent = str_ireplace(
+            array('unistertesting', 'unister-test'),
+            '', $this->_useragent
+        );
+        
+        $detector = new \Browscap\Input\UserAgent();
+        $detector->setAgent($agent);
+        
+        $device->setRenderAs($detector->getBrowser());
+        
+        return $this;
     }
 }

@@ -97,7 +97,7 @@ final class SonyEricssonWT19i
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
+        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/WT19iR402.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,
@@ -228,7 +228,7 @@ final class SonyEricssonWT19i
         
         // wurflkey: sonyericsson_wt19i_ver1
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

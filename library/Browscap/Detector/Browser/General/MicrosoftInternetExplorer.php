@@ -72,7 +72,9 @@ class MicrosoftInternetExplorer
         // kind of device
         'is_bot'                => false,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,     // not in wurfl
+        'browser_type'          => 'Browser', // not in wurfl
+        'is_banned'             => false,     // not in wurfl
         
         // browser
         'mobile_browser'              => 'Internet Explorer',
@@ -276,6 +278,10 @@ class MicrosoftInternetExplorer
                 
                 if (8 == $detectedVersion) {
                     $engine->setCapability('image_inlining', true);
+                    $engine->setCapability('css_spriting', false);
+                } else {
+                    $engine->setCapability('image_inlining', false);
+                    $engine->setCapability('css_spriting', true);
                 }
                 break;
             case 5:
@@ -338,7 +344,7 @@ class MicrosoftInternetExplorer
             case 9:
                 $engine->setCapability('jqm_grade', 'A');
                 $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('image_inlining', false);
                 $engine->setCapability('css_spriting', true);
                 break;
             case 8:
@@ -354,7 +360,8 @@ class MicrosoftInternetExplorer
                 $engine->setCapability('css_spriting', true);
                 break;
             case 6:
-                // nothing to do here
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
                 break;
             default:
                 // nothing to do here

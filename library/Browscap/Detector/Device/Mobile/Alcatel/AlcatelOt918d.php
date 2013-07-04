@@ -228,7 +228,7 @@ final class AlcatelOt918d
         
         // wurflkey: alcatel_ot918_ver1
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

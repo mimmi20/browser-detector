@@ -67,7 +67,7 @@ final class MotorolaMb525
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'mot_mb525_ver1_sub_android221', // not in wurfl
+        'wurflKey' => 'mot_mb525_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -233,10 +233,50 @@ final class MotorolaMb525
             Version::MAJORMINOR
         );
         
-        if (2.1 == (float) $osVersion
-            && $this->_utils->checkIfContains('_U3_2.5')
-        ) {
-            $this->setCapability('wurflKey', 'mot_mb525_ver1_subu32590');
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.1:
+                        $this->setCapability('wurflKey', 'mot_mb525_ver1_sub_android221');
+                        
+                        if ($this->_utils->checkIfContains('_U3_2.5')) {
+                            $this->setCapability('wurflKey', 'mot_mb525_ver1_subu32590');
+                        }
+                        break;
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'mot_mb525_ver1_sub_funnyua');
+                        break;
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

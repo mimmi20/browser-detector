@@ -402,8 +402,8 @@ final class Wurfl extends Core
                         break;
                     // Medion
                     case 'p9514':
-                        $apiDev        = 'Lifetab P9514';
-                        $marketingName = 'Lifetab P9514';
+                        $apiDev        = 'LifeTab P9514';
+                        $marketingName = 'LifeTab P9514';
                         $apiMan        = 'Medion';
                         $brandName     = 'Medion';
                         break;
@@ -835,85 +835,6 @@ final class Wurfl extends Core
         $result->setCapability('device_type', $type);
         
         return $result;
-    }
-
-    /**
-     * Gets the information about the rendering engine by User Agent
-     *
-     * @return 
-     */
-    private function _detectEngine()
-    {
-        $handlersToUse = array();
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Engine');
-        $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
-        
-        return $chain->detect();
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @return 
-     */
-    private function _detectBrowser()
-    {
-        $handlersToUse = array(
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Browser');
-        $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-
-    /**
-     * Gets the information about the os by User Agent
-     *
-     * @return 
-     */
-    private function _detectOs()
-    {
-        $handlersToUse = array(
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Os');
-        $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        
-        return $chain->detect();
-    }
-
-    /**
-     * Gets the information about the device by User Agent
-     *
-     * @return UserAgent
-     */
-    private function _detectDevice()
-    {
-        $handlersToUse = array(
-            new \Browscap\Detector\Device\GeneralBot(),
-            new \Browscap\Detector\Device\GeneralMobile(),
-            new \Browscap\Detector\Device\GeneralTv(),
-            new \Browscap\Detector\Device\GeneralDesktop()
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Device');
-        $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Device\Unknown());
-        
-        return $chain->detect();
     }
     
     /**

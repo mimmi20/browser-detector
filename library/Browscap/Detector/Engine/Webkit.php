@@ -73,10 +73,10 @@ class Webkit extends EngineHandler
         // markup
         'utf8_support' => false,
         'multipart_support' => false,
-        'supports_background_sounds' => null, // not in wurfl
-        'supports_vb_script' => null, // not in wurfl
-        'supports_java_applets' => null, // not in wurfl
-        'supports_activex_controls' => null, // not in wurfl
+        'supports_background_sounds' => false, // not in wurfl
+        'supports_vb_script' => false, // not in wurfl
+        'supports_java_applets' => true, // not in wurfl
+        'supports_activex_controls' => false, // not in wurfl
         'preferred_markup' => 'html_web_4_0',
         'html_web_3_2' => true,
         'html_web_4_0' => true,
@@ -124,7 +124,7 @@ class Webkit extends EngineHandler
         'xhtml_supports_invisible_text' => false,
         'cookie_support' => true,
         'xhtml_send_mms_string' => 'none',
-        'xhtml_table_support' => false,
+        'xhtml_table_support' => true,
         'xhtml_display_accesskey' => false,
         'xhtml_can_embed_video' => 'none',
         'xhtml_supports_monospace_font' => false,
@@ -301,6 +301,7 @@ class Webkit extends EngineHandler
             $this->setCapability('viewport_supported', true);
             $this->setCapability('viewport_width', 'device_width_token');
             $this->setCapability('viewport_userscalable', 'no');
+            $this->setCapability('supports_java_applets', false);
         } else {
             $this->setCapability('wml_make_phone_call_string', 'none');
             $this->setCapability('css_border_image', 'none');

@@ -140,7 +140,7 @@ final class SamsungGts5830i
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true,
+        'nfc_support' => false,
     );
     
     /**
@@ -227,6 +227,7 @@ final class SamsungGts5830i
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('supports_java_applets', false);
         
         return $this;
     }

@@ -85,7 +85,7 @@ final class MdLifetabP4310
         'manufacturer_name'         => 'Medion',
         'brand_name'                => 'Medion',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'LifeTab P4310',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

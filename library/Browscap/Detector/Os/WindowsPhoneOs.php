@@ -192,6 +192,14 @@ class WindowsPhoneOs
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
+        $browserVersion = (float)$browser->getCapability('mobile_browser_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        if ($browserVersion < 10.0) {
+            $engine->setCapability('is_sencha_touch_ok', false);
+        }
+        
         return $this;
     }
 }

@@ -228,7 +228,9 @@ final class HtcA510e
         
         // wurflkey: htc_wildfire_s_ver1
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('gif_animated', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
         
         return $this;
     }

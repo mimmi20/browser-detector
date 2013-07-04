@@ -72,7 +72,9 @@ class SemagerBot
         // kind of device
         'is_bot'                => true,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,         // not in wurfl
+        'browser_type'          => 'Bot/Crawler', // not in wurfl
+        'is_banned'             => false,         // not in wurfl
         
         // browser
         'mobile_browser'              => 'Semager Bot',

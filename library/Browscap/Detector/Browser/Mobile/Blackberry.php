@@ -75,7 +75,9 @@ class Blackberry
         // kind of device
         'is_bot'                => false,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,     // not in wurfl
+        'browser_type'          => 'Browser', // not in wurfl
+        'is_banned'             => false,     // not in wurfl
         
         // browser
         'mobile_browser'              => 'BlackBerry',
@@ -207,7 +209,7 @@ class Blackberry
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
         
-        if ($osVersion >= 6.0) {
+        if ($osVersion == 6.0) {
             $this->setCapability('pdf_support', true);
         }
         

@@ -140,7 +140,7 @@ final class SamsungGtp5110
         'playback_vcodec_h264_bp' => null,
         
         // chips
-        'nfc_support' => true, // wurflkey: samsung_gt_p5100_ver1_subua5110
+        'nfc_support' => false, // wurflkey: samsung_gt_p5100_ver1_subua5110
     );
     
     /**
@@ -228,6 +228,51 @@ final class SamsungGtp5110
         
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('supports_java_applets', false);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_p5100_ver1_subua5110_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         
         return $this;
     }

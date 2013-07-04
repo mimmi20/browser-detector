@@ -67,7 +67,7 @@ final class SonyEricssonMT11i
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'sonyericsson_mt11i_ver1_subuai', // not in wurfl
+        'wurflKey' => 'sonyericsson_mt11i_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -228,6 +228,50 @@ final class SonyEricssonMT11i
         
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'sonyericsson_mt11i_ver1_suban40i');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         
         return $this;
     }

@@ -240,7 +240,8 @@ final class HpTouchpad
         $engine->setCapability('xhtml_supports_forms_in_table', false);
         $engine->setCapability('xhtml_allows_disabled_form_elements', false);
         $engine->setCapability('xhtml_supports_invisible_text', false);
-        $engine->setCapability('bmp', false); // wurflkey: hp_touchpad_ver1
+        $engine->setCapability('bmp', true); // wurflkey: hp_touchpad_ver1
+        $engine->setCapability('ajax_support_javascript', true);
         
         if (('Android Webkit' == $browser->getCapability('mobile_browser')
             || 'Chrome' == $browser->getCapability('mobile_browser'))

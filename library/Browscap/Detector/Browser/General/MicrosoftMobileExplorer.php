@@ -72,7 +72,9 @@ class MicrosoftMobileExplorer
         // kind of device
         'is_bot'                => false,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,     // not in wurfl
+        'browser_type'          => 'Browser', // not in wurfl
+        'is_banned'             => false,     // not in wurfl
         
         // browser
         'mobile_browser'              => 'IEMobile',
@@ -215,6 +217,7 @@ class MicrosoftMobileExplorer
         $engine->setCapability('xhtml_honors_bgcolor', false);
         $engine->setCapability('xhtml_file_upload', 'not_supported');
         $engine->setCapability('xhtml_table_support', true);
+        $engine->setCapability('bmp', true);
         $engine->setCapability('wbmp', true);
         $engine->setCapability('max_url_length_in_requests', 512);
         $engine->setCapability('wml_make_phone_call_string', 'wtai://wp/mc;');
@@ -228,6 +231,8 @@ class MicrosoftMobileExplorer
         $engine->setCapability('viewport_supported', true);
         $engine->setCapability('viewport_userscalable', 'no');
         $engine->setCapability('css_spriting', true);
+        $engine->setCapability('supports_background_sounds', false);
+        $engine->setCapability('supports_java_applets', false);
         
         $version = (float) $this->getCapability('mobile_browser_version')->getVersion(
             Version::MAJORMINOR

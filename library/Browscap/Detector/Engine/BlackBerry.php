@@ -68,12 +68,12 @@ class BlackBerry extends EngineHandler
         'renderingengine_manufacturer' => 'RIM',
         
         // markup
-        'utf8_support' => null,
+        'utf8_support' => false,
         'multipart_support' => true,
-        'supports_background_sounds' => null, // not in wurfl
-        'supports_vb_script' => null, // not in wurfl
-        'supports_java_applets' => null, // not in wurfl
-        'supports_activex_controls' => null, // not in wurfl
+        'supports_background_sounds' => false, // not in wurfl
+        'supports_vb_script' => false, // not in wurfl
+        'supports_java_applets' => true, // not in wurfl
+        'supports_activex_controls' => false, // not in wurfl
         'preferred_markup' => 'html_wi_oma_xhtmlmp_1_0',
         'html_web_3_2' => true,
         'html_web_4_0' => true,

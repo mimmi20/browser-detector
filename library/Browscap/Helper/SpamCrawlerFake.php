@@ -91,6 +91,7 @@ final class SpamCrawlerFake
             '>',
             '\\x01',
             '.exe',
+            'abonti',
             'acoon',
             'adsbot-google',
             'anyevent',

@@ -67,7 +67,7 @@ final class MdLifetabP9514
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => 'lifetab_p9514_ver1_suban40', // not in wurfl
+        'wurflKey' => 'lifetab_p9514_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Tablet', // not in wurfl
@@ -80,12 +80,12 @@ final class MdLifetabP9514
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'Lifetab P9514',
+        'model_name'                => 'LifeTab P9514',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Medion',
         'brand_name'                => 'Medion',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Lifetab P9514',
+        'marketing_name'            => 'LifeTab P9514',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -225,6 +225,55 @@ final class MdLifetabP9514
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
     {
         parent::detectDependProperties($browser, $engine, $os);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.1:
+                        $engineVersion = $engine->getCapability('renderingengine_version')->getVersion(Version::MAJORMINOR);
+                        
+                        if ('530.17' == $engineVersion) {
+                            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
+                        }
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'lifetab_p9514_ver1_suban40');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
         
         return $this;
     }

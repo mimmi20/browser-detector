@@ -230,6 +230,7 @@ final class NokiaN800
             $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
             $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');
             $this->setCapability('colors', 16777216);
+            $this->setCapability('image_inlining', true);
         }
         
         return $this;

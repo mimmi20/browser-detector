@@ -234,18 +234,53 @@ final class Lgp990
             Version::MAJORMINOR
         );
         
-        if (2.2 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'lg_p990_ver1_suban22');
-        }
-        
-        if (2.3 == (float) $osVersion) {
-            $this->setCapability('wurflKey', 'lg_p990_ver1_suban23');
-        }
-        
-        $osVersion = $os->getCapability('device_os_version')->getVersion();
-        
-        if ('2.2.2' == $osVersion) {
-            $this->setCapability('wurflKey', 'lg_p990_ver1_sub_android222b');
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'lg_p990_ver1_suban22');
+                        
+                        $osVersion = $os->getCapability('device_os_version')->getVersion();
+                        
+                        if ('2.2.2' == $osVersion) {
+                            //Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; LG-P990 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2
+                            $this->setCapability('wurflKey', 'lg_p990_ver1_sub_android222b');
+                        }
+                        break;
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'lg_p990_ver1_suban23');
+                        break;
+                    case 2.1:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         
         return $this;

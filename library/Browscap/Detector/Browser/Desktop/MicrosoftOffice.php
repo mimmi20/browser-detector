@@ -72,7 +72,9 @@ class MicrosoftOffice
         // kind of device
         'is_bot'                => false,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,
+        'is_syndication_reader' => false,     // not in wurfl
+        'browser_type'          => 'Browser', // not in wurfl
+        'is_banned'             => false,     // not in wurfl
         
         // browser
         'mobile_browser'              => 'Office',
@@ -259,11 +261,15 @@ class MicrosoftOffice
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device)
     {
-        if ($this->_utils->checkIfContains('MSIE 7.0')) {
-            $engine->setCapability('css_spriting', true);
-        }
-        
         parent::detectDependProperties($engine, $os, $device);
+        
+        $engine->setCapability('supports_background_sounds', false);
+        $engine->setCapability('supports_vb_script', false);
+        $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('supports_activex_controls', false);
+        $engine->setCapability('xhtml_supports_iframe', 'none');
+        $engine->setCapability('cookie_support', false);
+        $engine->setCapability('ajax_support_javascript', false);
         
         return $this;
     }

@@ -57,6 +57,8 @@ class Browscap
     const INTERFACE_INTERNAL     = 1;
     const INTERFACE_BROWSCAP_INI = 2;
     const INTERFACE_WURFL        = 3;
+    const INTERFACE_WURFL_CLOUD  = 4;
+    const INTERFACE_UAPARSER     = 5;
     
     /**
      * a \\Zend\\Cache object
@@ -170,12 +172,14 @@ class Browscap
         $allowedInterfaces = array(
             self::INTERFACE_INTERNAL,
             self::INTERFACE_BROWSCAP_INI,
-            self::INTERFACE_WURFL
+            self::INTERFACE_WURFL,
+            self::INTERFACE_WURFL_CLOUD,
+            self::INTERFACE_UAPARSER
         );
         
         if (!is_int($interface) || !in_array($interface, $allowedInterfaces)) {
             throw new \UnexpectedValueException(
-                'the cache prefix has to be a integer'
+                'the interface is unknown'
             );
         }
         
@@ -188,6 +192,12 @@ class Browscap
                 break;
             case self::INTERFACE_WURFL:
                 $this->_interface = new \Browscap\Input\Wurfl();
+                break;
+            case self::INTERFACE_WURFL_CLOUD:
+                $this->_interface = new \Browscap\Input\WurflCloud();
+                break;
+            case self::INTERFACE_UAPARSER:
+                $this->_interface = new \Browscap\Input\Uaparser();
                 break;
             default:
                 throw new \UnexpectedValueException(
