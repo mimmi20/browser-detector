@@ -51,7 +51,7 @@ namespace Browscap\Detector;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Version
+final class Version implements \Serializable
 {
     /**
      * @var integer
@@ -147,6 +147,40 @@ final class Version
      * @var integer
      */
     private $_mode = self::COMPLETE;
+    
+    /**
+     * serializes the object
+     *
+     * @return string
+     */
+    public function serialize()
+    {
+        return serialize(
+            array(
+                'version'   => $this->_version, 
+                'mode'      => $this->_mode, 
+                'useragent' => $this->_useragent, 
+                'default'   => $this->_default
+            )
+        );
+    }
+    
+    /**
+     * unserializes the object
+     *
+     * @param string $data The serialized data
+     */
+    public function unserialize($data)
+    {
+        $unseriliazedData = unserialize($data);
+        
+        $this->_version   = $unseriliazedData['version'];
+        $this->_mode      = $unseriliazedData['mode'];
+        $this->_useragent = $unseriliazedData['useragent'];
+        $this->_default   = $unseriliazedData['default'];
+        
+        $this->setVersion($this->_version);
+    }
     
     /**
      * sets the user agent to be handled

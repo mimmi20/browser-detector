@@ -243,10 +243,10 @@ final class Ipad
         
         $this->setCapability('model_extra_info', $osVersion);
         
+        parent::detectDependProperties($browser, $engine, $os);
+        
         $engine->setCapability('xhtml_make_phone_call_string', 'none');
         $engine->setCapability('supports_java_applets', true);
-        
-        parent::detectDependProperties($browser, $engine, $os);
         
         if (3.2 == (float) $osVersion) {
             $this->setCapability('wurflKey', 'apple_ipad_ver1_subua32');

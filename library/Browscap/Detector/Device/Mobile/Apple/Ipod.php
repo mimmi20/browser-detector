@@ -256,7 +256,7 @@ final class Ipod
         $engine->setCapability('xhtml_send_sms_string', 'none');
         $browser->setCapability('pdf_support', false);
         $engine->setCapability('css_gradient', 'none');
-        $browser->setCapability('supports_java_applets', true);
+        $engine->setCapability('supports_java_applets', true);
         
         if (6.0 <= (float) $osVersion) {
             $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');

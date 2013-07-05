@@ -694,10 +694,20 @@ class Browscap extends Core
                 $mobileDevice = $properties['Device_isMobileDevice'];
             }
             
-            $properties['isMobileDevice'] = $mobileDevice;
+            $properties['isMobileDevice']        = $mobileDevice;
+            $properties['Device_isMobileDevice'] = $mobileDevice;
+            
+            $isTablet = $properties['isTablet'];
             
             if (!empty($properties['Device_isTablet'])) {
-                $properties['isTablet'] = $properties['Device_isTablet'];
+                $isTablet = $properties['Device_isTablet'];
+            }
+            
+            $properties['Device_isTablet'] = $isTablet;
+            $properties['isTablet']        = $isTablet;
+            
+            if ($isTablet) {
+                $properties['Device_Type'] = 'Tablet';
             }
             
             if ('DefaultProperties' == $this->_userAgents[$key] 

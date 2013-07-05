@@ -52,7 +52,7 @@ namespace Browscap\Detector;
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class Result
+final class Result implements \Serializable
 {
     /**
      * should the device render the content like another?
@@ -685,6 +685,51 @@ final class Result
         $this->setCapability('renderingengine_version', clone $detector);
         $this->setCapability('device_os_version', clone $detector);
         $this->setCapability('model_version', clone $detector);
+    }
+    
+    /**
+     * serializes the object
+     *
+     * @return string
+     */
+    public function serialize()
+    {
+        $propertiesToSerialize = array();
+        
+        foreach ($this->_properties as $property => $value) {
+            if (null === $value) {
+                continue;
+            }
+            
+            $propertiesToSerialize[$property] = $value;
+        }
+        
+        return serialize(
+            array(
+                'properties' => $propertiesToSerialize,
+                'renderAs'   => $this->_renderAs
+            )
+        );
+    }
+    
+    /**
+     * unserializes the object
+     *
+     * @param string $data The serialized data
+     */
+    public function unserialize($data)
+    {
+        $unseriliazedData = unserialize($data);
+        
+        foreach ($unseriliazedData['properties'] as $property => $value) {
+            if (null === $value) {
+                continue;
+            }
+            
+            $this->_properties[$property] = $value;
+        }
+        
+        $this->_renderAs   = $unseriliazedData['renderAs'];
     }
     
     /**
