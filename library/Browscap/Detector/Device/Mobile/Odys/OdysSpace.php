@@ -227,6 +227,8 @@ final class OdysSpace
         parent::detectDependProperties($browser, $engine, $os);
         
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
         
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
@@ -283,23 +285,6 @@ final class OdysSpace
                 // nothing to do here
                 break;
         }
-        
-        return $this;
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
         
         return $this;
     }
