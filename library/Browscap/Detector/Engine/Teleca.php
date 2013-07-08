@@ -217,6 +217,7 @@ class Teleca extends EngineHandler
         // css
         'css_spriting' => null,
         'css_gradient' => null,
+        'css_gradient_linear' => null,
         'css_border_image' => null,
         'css_rounded_corners' => null,
         'css_supports_width_as_percentage' => null,

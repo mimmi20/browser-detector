@@ -217,6 +217,7 @@ class Gecko extends EngineHandler
         // css
         'css_spriting' => true,
         'css_gradient' => 'none',
+        'css_gradient_linear' => 'none',
         'css_border_image' => 'none',
         'css_rounded_corners' => 'none',
         'css_supports_width_as_percentage' => true,

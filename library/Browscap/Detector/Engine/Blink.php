@@ -220,6 +220,7 @@ class Blink extends EngineHandler
         // css
         'css_spriting' => true,
         'css_gradient' => 'none',
+        'css_gradient_linear' => 'none',
         'css_border_image' => 'webkit',
         'css_rounded_corners' => 'webkit',
         'css_supports_width_as_percentage' => true,

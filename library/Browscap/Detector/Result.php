@@ -303,6 +303,7 @@ final class Result implements \Serializable
         // css
         'css_spriting' => null,
         'css_gradient' => null,
+        'css_gradient_linear' => null,
         'css_border_image' => null,
         'css_rounded_corners' => null,
         'css_supports_width_as_percentage' => null,
@@ -1528,6 +1529,7 @@ final class Result implements \Serializable
                     case 'xhtml_support_level':
                     case 'css_spriting':
                     case 'css_gradient':
+                    case 'css_gradient_linear':
                     case 'css_border_image':
                     case 'css_rounded_corners':
                     case 'css_supports_width_as_percentage':
