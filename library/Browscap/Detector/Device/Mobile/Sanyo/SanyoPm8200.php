@@ -83,9 +83,9 @@ final class SanyoPm8200
         'model_name'                => 'PM-8200',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sanyo',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Sanyo',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'PM-8200',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

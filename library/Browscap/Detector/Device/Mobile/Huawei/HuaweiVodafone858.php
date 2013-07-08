@@ -85,7 +85,7 @@ final class HuaweiVodafone858
         'manufacturer_name'         => 'Huawei',
         'brand_name'                => 'Huawei',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Vodafone 858',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

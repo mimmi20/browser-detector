@@ -85,7 +85,7 @@ final class LenovoS880i
         'manufacturer_name'         => 'Lenovo',
         'brand_name'                => 'Lenovo',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'S880i',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

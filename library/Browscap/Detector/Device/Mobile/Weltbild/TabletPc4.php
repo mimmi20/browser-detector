@@ -85,7 +85,7 @@ final class TabletPc4
         'manufacturer_name'         => 'Cat',
         'brand_name'                => 'Weltbild',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Tablet PC 4',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

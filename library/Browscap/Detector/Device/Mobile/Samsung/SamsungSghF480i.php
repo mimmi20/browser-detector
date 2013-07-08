@@ -80,12 +80,12 @@ final class SamsungSghF480i
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'SGH F480i', // wurflkey: samsung_sgh_f480i_ver1
+        'model_name'                => 'SGH-F480I', // wurflkey: samsung_sgh_f480i_ver1
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'SGH-F480I',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

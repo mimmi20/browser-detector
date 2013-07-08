@@ -85,7 +85,7 @@ final class BlackBerry8700
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'BlackBerry 8700',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'clickwheel', // wurflkey: blackberry8700_ver1
         'device_bits'               => null, // not in wurfl

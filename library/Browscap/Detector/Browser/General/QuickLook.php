@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Desktop;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class YouWaveAndroidOnPc
+class QuickLook
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -77,10 +77,10 @@ class YouWaveAndroidOnPc
         'is_banned'             => false,     // not in wurfl
         
         // browser
-        'mobile_browser'              => 'YouWave Android on PC',
+        'mobile_browser'              => 'QuickLook',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'youwave.com', // not in wurfl
+        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
@@ -106,7 +106,7 @@ class YouWaveAndroidOnPc
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('i9988_custom', 'i9999_custom'))) {
+        if (!$this->_utils->checkIfContains(array('QuickLook'))) {
             return false;
         }
         
@@ -120,19 +120,13 @@ class YouWaveAndroidOnPc
      */
     protected function _detectVersion()
     {
-        $version = '';
-        
-        if ($this->_utils->checkIfContains(array('i9988_custom'))) {
-            $version = 'Basic';
-        } elseif ($this->_utils->checkIfContains(array('i9999_custom'))) {
-            $version = 'Home';
-        }
-        
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
+        $searches = array('QuickLook');
+        
         $this->setCapability(
-            'mobile_browser_version', $detector->setVersion($version)
+            'mobile_browser_version', $detector->detectVersion($searches)
         );
         
         return $this;
@@ -145,7 +139,7 @@ class YouWaveAndroidOnPc
      */
     public function getWeight()
     {
-        return 5;
+        return 2;
     }
     
     /**
@@ -160,28 +154,5 @@ class YouWaveAndroidOnPc
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
-    {
-        parent::detectDependProperties($engine, $os, $device);
-        
-        $agent = str_ireplace(
-            array('i9988_custom', 'i9999_custom'), '', $this->_useragent
-        );
-        
-        $detector = new \Browscap\Input\UserAgent();
-        $detector->setAgent($agent);
-        
-        $device->setRenderAs($detector->getBrowser());
-        
-        return $this;
     }
 }

@@ -106,7 +106,7 @@ class Php
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('PHP/')) {
+        if (!$this->_utils->checkIfStartsWith(array('PHP/', 'PHP-SOAP/'))) {
             return false;
         }
         
@@ -123,7 +123,7 @@ class Php
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('PHP');
+        $searches = array('PHP', 'PHP\-SOAP');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

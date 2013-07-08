@@ -85,7 +85,7 @@ final class ArnovaArchm901
         'manufacturer_name'         => 'Arnova',
         'brand_name'                => 'Arnova',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'ARCHM901',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -85,7 +85,7 @@ final class SamsungGts5380
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => 'Brazilian market',
-        'marketing_name'            => null,
+        'marketing_name'            => 'GT-S5380',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

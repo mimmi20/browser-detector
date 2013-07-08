@@ -85,7 +85,7 @@ final class SonyEricssonJ20i
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'J20i',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => null,
         'device_bits'               => null, // not in wurfl

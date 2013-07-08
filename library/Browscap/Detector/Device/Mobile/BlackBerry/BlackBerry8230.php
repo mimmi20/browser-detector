@@ -85,7 +85,7 @@ final class BlackBerry8230
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'BlackBerry 8230',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'clickwheel',
         'device_bits'               => null, // not in wurfl

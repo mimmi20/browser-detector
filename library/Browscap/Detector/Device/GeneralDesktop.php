@@ -89,7 +89,7 @@ final class GeneralDesktop
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general Desktop',
         'has_qwerty_keyboard'       => null,
         'pointing_method'           => 'mouse',
         'device_bits'               => null, // not in wurfl

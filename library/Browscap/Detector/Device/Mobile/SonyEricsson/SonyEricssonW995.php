@@ -85,7 +85,7 @@ final class SonyEricssonW995
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => 'Walkman phone', // wurflkey: sonyericsson_w995_ver1
-        'marketing_name'            => null,
+        'marketing_name'            => 'W995',
         'has_qwerty_keyboard'       => false,           // wurflkey: sonyericsson_w995_ver1
         'pointing_method'           => '',              // wurflkey: sonyericsson_w995_ver1
         'device_bits'               => null, // not in wurfl

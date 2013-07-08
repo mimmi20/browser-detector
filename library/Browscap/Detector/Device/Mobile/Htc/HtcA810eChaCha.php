@@ -98,7 +98,7 @@ final class HtcA810eChaCha
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
         'uaprof'                    => null,
-        'uaprof2'                   => null,
+        'uaprof2'                   => 'http://www.htcmms.com.tw/Android/Common/PH06/ua-profile.xml',
         'uaprof3'                   => null,
         'unique'                    => true,
         

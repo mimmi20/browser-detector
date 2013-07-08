@@ -85,7 +85,7 @@ final class SamsungGts5363
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'GT-S5363',
         'has_qwerty_keyboard'       => true, // wurflkey: samsung_gt_s5363_ver1
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

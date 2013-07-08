@@ -86,7 +86,7 @@ final class Unknown
         'manufacturer_name'         => 'unknown',
         'brand_name'                => null,
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'unknown Device',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => null,
         'device_bits'               => null, // not in wurfl

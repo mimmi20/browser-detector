@@ -80,12 +80,12 @@ final class AcerS120LiquidMetal
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'S120 - Liquid Metal',
+        'model_name'                => 'S120',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Acer',
         'brand_name'                => 'Acer',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Liquid Metal',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

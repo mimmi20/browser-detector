@@ -85,7 +85,7 @@ final class ZteBaseLutea2
         'manufacturer_name'         => 'ZTE',       // wurflkey: zte_skate_ver1_subuabase
         'brand_name'                => 'BASE',      // wurflkey: zte_skate_ver1_subuabase
         'model_extra_info'          => 'for BASE ', // wurflkey: zte_skate_ver1_subuabase
-        'marketing_name'            => null,
+        'marketing_name'            => 'Lutea 2',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

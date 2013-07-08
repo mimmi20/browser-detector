@@ -93,6 +93,7 @@ final class SpamCrawlerFake
             '.exe',
             'abonti',
             'acoon',
+            'adbeat.com',
             'adsbot-google',
             'anyevent',
             'appengine-google',
@@ -246,7 +247,7 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->_utils->checkIfStartsWith('PHP/')) {
+        if ($this->_utils->checkIfStartsWith(array('PHP/', 'PHP-SOAP/'))) {
             return true;
         }
         
@@ -340,7 +341,7 @@ final class SpamCrawlerFake
             '6.2', '6.3'
         );
         
-        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+);/', $this->_useragent, $matches);
         if ($doMatch) {
             if (!$this->_utils->checkIfContains('linux', true) 
                 && in_array($matches[1], $ntVersions)

@@ -83,9 +83,9 @@ final class Tmobile
         'model_name'                => 'general T-Mobile Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'T-Mobile',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'T-Mobile',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general T-Mobile Device',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

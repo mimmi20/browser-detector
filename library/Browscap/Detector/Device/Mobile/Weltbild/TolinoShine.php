@@ -85,7 +85,7 @@ final class TolinoShine
         'manufacturer_name'         => 'Longshine',
         'brand_name'                => 'Weltbild',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Tolino Shine',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
@@ -150,7 +150,7 @@ final class TolinoShine
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Cat Tablet'))) {
+        if (!$this->_utils->checkIfContains(array('Tolino'))) {
             return false;
         }
         

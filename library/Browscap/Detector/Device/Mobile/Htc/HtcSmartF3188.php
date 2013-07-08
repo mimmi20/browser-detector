@@ -85,7 +85,7 @@ final class HtcSmartF3188
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Smart F3188',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => '',   // wurflkey: htc_smart_f3188_ver1
         'device_bits'               => null, // not in wurfl

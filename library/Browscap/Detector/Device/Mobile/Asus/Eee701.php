@@ -85,7 +85,7 @@ final class Eee701
         'manufacturer_name'         => 'Asus',
         'brand_name'                => 'Asus',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'EEE 701',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -83,9 +83,9 @@ final class Neofonie
         'model_name'                => 'general Neofonie Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Neofonie',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Neofonie',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general Neofonie Device',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -83,9 +83,9 @@ final class SprintPpc6700
         'model_name'                => '6700',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Sprint',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Sprint',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => '6700',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

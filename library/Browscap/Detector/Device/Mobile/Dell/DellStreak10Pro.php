@@ -85,7 +85,7 @@ final class DellStreak10Pro
         'manufacturer_name'         => 'Dell',
         'brand_name'                => 'Dell',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Streak 10 Pro',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

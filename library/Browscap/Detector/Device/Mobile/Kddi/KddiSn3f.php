@@ -83,9 +83,9 @@ final class KddiSn3f
         'model_name'                => 'SN3F',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'KDDI',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'KDDI',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'SN3F',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

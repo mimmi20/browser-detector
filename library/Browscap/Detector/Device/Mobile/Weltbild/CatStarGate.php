@@ -85,7 +85,7 @@ final class CatStarGate
         'manufacturer_name'         => 'Cat',
         'brand_name'                => 'Weltbild',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'StarGate',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -124,6 +124,7 @@ class Netscape
             'SeaMonkey',
             'Flock',
             'Fennec',
+            'Iceape',
             'Icedove',
             'IceCat',
             'Eudora',

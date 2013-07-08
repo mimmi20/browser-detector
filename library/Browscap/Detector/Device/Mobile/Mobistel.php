@@ -83,9 +83,9 @@ final class Mobistel
         'model_name'                => 'general Mobistel Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Mobistel',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Mobistel',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general Mobistel Device',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

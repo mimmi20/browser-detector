@@ -85,7 +85,7 @@ final class GarminAsusA50
         'manufacturer_name'         => 'Garmin-Asus',
         'brand_name'                => 'Garmin-Asus', // wurflkey: garminasus_a50_ver1
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'A50',
         'has_qwerty_keyboard'       => false,         // wurflkey: garminasus_a50_ver1
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

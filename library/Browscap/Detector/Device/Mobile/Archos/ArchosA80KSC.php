@@ -83,9 +83,9 @@ final class ArchosA80KSC
         'model_name'                => 'A80KSC',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'Archos',
+        'brand_name'                => 'Arnova',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Arnova',
+        'marketing_name'            => 'A80KSC',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

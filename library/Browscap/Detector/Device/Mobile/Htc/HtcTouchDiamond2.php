@@ -85,7 +85,7 @@ final class HtcTouchDiamond2
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Touch Diamond 2',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'stylus',
         'device_bits'               => null, // not in wurfl

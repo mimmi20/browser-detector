@@ -83,9 +83,9 @@ final class Archos80XSK
         'model_name'                => '80XSK',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Archos',
-        'brand_name'                => 'Archos',
+        'brand_name'                => 'Arnova',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Arnova',
+        'marketing_name'            => '80XSK',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

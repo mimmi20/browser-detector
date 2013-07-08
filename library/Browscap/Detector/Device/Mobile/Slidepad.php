@@ -83,9 +83,9 @@ final class Slidepad
         'model_name'                => 'Slidepad',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Memup',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Memup',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Slidepad',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -85,7 +85,7 @@ final class SamsungGalaxyNexusS
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Google',  // wurflkey: samsung_nexus_s_ver1_suban41
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Nexus S',
         'has_qwerty_keyboard'       => true,      // wurflkey: samsung_nexus_s_ver1_suban41
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

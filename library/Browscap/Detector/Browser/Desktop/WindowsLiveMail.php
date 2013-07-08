@@ -73,7 +73,7 @@ class WindowsLiveMail
         'is_bot'                => false,
         'is_transcoder'         => false,
         'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
+        'browser_type'          => 'Email Clients', // not in wurfl
         'is_banned'             => false,     // not in wurfl
         
         // browser

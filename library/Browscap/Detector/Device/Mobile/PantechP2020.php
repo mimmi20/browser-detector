@@ -83,9 +83,9 @@ final class PantechP2020
         'model_name'                => 'P2020',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Pantech',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Pantech',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'P2020',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Desktop;
+namespace Browscap\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class YouWaveAndroidOnPc
+class SpiderLing
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -70,21 +70,21 @@ class YouWaveAndroidOnPc
         'wurflKey' => null, // not in wurfl
         
         // kind of device
-        'is_bot'                => false,
+        'is_bot'                => true,
         'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
+        'is_syndication_reader' => false,         // not in wurfl
+        'browser_type'          => 'Bot/Crawler', // not in wurfl
+        'is_banned'             => false,         // not in wurfl
         
         // browser
-        'mobile_browser'              => 'YouWave Android on PC',
+        'mobile_browser'              => 'SpiderLing',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'youwave.com', // not in wurfl
+        'mobile_browser_manufacturer' => 'nlp.fi.muni.cz', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info
-        'can_skip_aligned_link_row' => true,
+        'can_skip_aligned_link_row' => false,
         'device_claims_web_support' => false,
         
         // pdf
@@ -106,7 +106,7 @@ class YouWaveAndroidOnPc
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('i9988_custom', 'i9999_custom'))) {
+        if (!$this->_utils->checkIfContains(array('SpiderLing'))) {
             return false;
         }
         
@@ -120,19 +120,13 @@ class YouWaveAndroidOnPc
      */
     protected function _detectVersion()
     {
-        $version = '';
-        
-        if ($this->_utils->checkIfContains(array('i9988_custom'))) {
-            $version = 'Basic';
-        } elseif ($this->_utils->checkIfContains(array('i9999_custom'))) {
-            $version = 'Home';
-        }
-        
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
+        $searches = array('SpiderLing');
+        
         $this->setCapability(
-            'mobile_browser_version', $detector->setVersion($version)
+            'mobile_browser_version', $detector->detectVersion($searches)
         );
         
         return $this;
@@ -145,43 +139,20 @@ class YouWaveAndroidOnPc
      */
     public function getWeight()
     {
-        return 5;
+        return 12;
     }
     
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler = new \Browscap\Detector\Engine\Unknown();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
-    {
-        parent::detectDependProperties($engine, $os, $device);
-        
-        $agent = str_ireplace(
-            array('i9988_custom', 'i9999_custom'), '', $this->_useragent
-        );
-        
-        $detector = new \Browscap\Input\UserAgent();
-        $detector->setAgent($agent);
-        
-        $device->setRenderAs($detector->getBrowser());
-        
-        return $this;
     }
 }

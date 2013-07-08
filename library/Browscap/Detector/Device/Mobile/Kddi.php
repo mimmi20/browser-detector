@@ -83,9 +83,9 @@ final class Kddi
         'model_name'                => 'general KDDI Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'KDDI',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'KDDI',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general KDDI Device',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -80,12 +80,12 @@ final class HtcX515e
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'X515e - Rider',
+        'model_name'                => 'X515e',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Rider',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

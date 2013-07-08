@@ -86,7 +86,7 @@ final class GeneralBot
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general Bot',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => null,
         'device_bits'               => null, // not in wurfl

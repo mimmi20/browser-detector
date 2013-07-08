@@ -85,7 +85,7 @@ final class AlcatelOt890d
         'manufacturer_name'         => 'Alcatel',
         'brand_name'                => 'Alcatel',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'OT-890D',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

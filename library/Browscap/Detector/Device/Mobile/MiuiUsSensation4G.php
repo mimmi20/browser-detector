@@ -85,7 +85,7 @@ final class MiuiUsSensation4G
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'MIUI.us Sensation 4G',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

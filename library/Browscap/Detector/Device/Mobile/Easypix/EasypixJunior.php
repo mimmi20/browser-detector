@@ -85,7 +85,7 @@ final class EasypixJunior
         'manufacturer_name'         => 'Easypix',
         'brand_name'                => 'Easypix',
         'model_extra_info'          => null,
-        'marketing_name'            => null, // wurflkey: Easypix_touch_ver1
+        'marketing_name'            => 'Junior 4.0', // wurflkey: Easypix_touch_ver1
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -85,7 +85,7 @@ final class WindowsRt8Tablet
         'manufacturer_name'         => 'Microsoft',
         'brand_name'                => 'Microsoft',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Windows RT Tablet',
         'has_qwerty_keyboard'       => false, // windows_8_rt_ver1
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

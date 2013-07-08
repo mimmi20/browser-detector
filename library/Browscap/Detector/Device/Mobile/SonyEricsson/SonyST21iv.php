@@ -67,7 +67,7 @@ final class SonyST21iv
      * @var array
      */
     protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+        'wurflKey' => 'sony_st21iv_ver1', // not in wurfl
         
         // kind of device
         'device_type'        => 'Mobile Phone', // not in wurfl
@@ -97,7 +97,7 @@ final class SonyST21iv
         'nokia_series'              => 0,
         'nokia_edition'             => 0,
         'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://uaprof.sonymobile.com/ST21iR402.xml',
+        'uaprof'                    => 'http://wap.sonymobile.com/UAprof/ST21iR402.xml',
         'uaprof2'                   => null,
         'uaprof3'                   => null,
         'unique'                    => true,

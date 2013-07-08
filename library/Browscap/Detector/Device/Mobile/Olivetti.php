@@ -83,9 +83,9 @@ final class Olivetti
         'model_name'                => 'general Olivetti Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Olivetti',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Olivetti',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general Olivetti Device',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

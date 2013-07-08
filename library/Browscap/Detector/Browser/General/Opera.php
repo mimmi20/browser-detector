@@ -106,7 +106,7 @@ class Opera
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Opera')) {
+        if (!$this->_utils->checkIfContains(array('Opera', 'OPR'))) {
             return false;
         }
         
@@ -140,7 +140,7 @@ class Opera
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
         
-        $searches = array('Version', 'Opera');
+        $searches = array('Version', 'Opera', 'OPR');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

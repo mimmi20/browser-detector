@@ -86,7 +86,7 @@ final class GeneralTv
         'manufacturer_name'         => 'unknown',
         'brand_name'                => 'unknown',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general TV Device',
         'has_qwerty_keyboard'       => null,
         'pointing_method'           => null,
         'device_bits'               => null, // not in wurfl

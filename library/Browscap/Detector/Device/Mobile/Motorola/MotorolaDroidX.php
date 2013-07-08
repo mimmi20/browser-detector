@@ -85,7 +85,7 @@ final class MotorolaDroidX
         'manufacturer_name'         => 'Motorola',
         'brand_name'                => 'Motorola',
         'model_extra_info'          => 'Verizon',
-        'marketing_name'            => null,
+        'marketing_name'            => 'DroidX',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

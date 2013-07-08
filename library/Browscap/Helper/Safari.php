@@ -119,6 +119,7 @@ final class Safari
             'PaleMoon',
             'PhantomJS',
             'Qt',
+            'QuickLook',
             'rekonq',
             'Rockmelt',
             'Silk',

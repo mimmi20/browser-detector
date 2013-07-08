@@ -85,7 +85,7 @@ final class BlackBerry8350i
         'manufacturer_name'         => 'RIM',
         'brand_name'                => 'RIM',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'BlackBerry 8350i',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'clickwheel',
         'device_bits'               => null, // not in wurfl

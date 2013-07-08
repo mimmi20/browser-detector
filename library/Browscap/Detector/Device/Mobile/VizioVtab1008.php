@@ -83,9 +83,9 @@ final class VizioVtab1008
         'model_name'                => 'VTAB1008',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Vizio',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Vizio',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'VTAB1008',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

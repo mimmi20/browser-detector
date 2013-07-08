@@ -85,7 +85,7 @@ final class MobistelCynusT2
         'manufacturer_name'         => 'Mobistel',
         'brand_name'                => 'Mobistel',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Cynus T2',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

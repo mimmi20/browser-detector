@@ -85,7 +85,7 @@ final class BaseLutea3
         'manufacturer_name'         => 'Alcatel',       
         'brand_name'                => 'Base',      
         'model_extra_info'          => 'for Base', 
-        'marketing_name'            => null,
+        'marketing_name'            => 'Lutea 3',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

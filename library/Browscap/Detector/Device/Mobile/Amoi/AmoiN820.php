@@ -83,9 +83,9 @@ final class AmoiN820
         'model_name'                => 'N820',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Amoi',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Amoi',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'N820',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

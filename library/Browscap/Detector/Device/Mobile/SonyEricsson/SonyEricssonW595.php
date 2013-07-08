@@ -85,7 +85,7 @@ final class SonyEricssonW595
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'W595',
         'has_qwerty_keyboard'       => false, // wurflkey: sonyericsson_w595_ver1
         'pointing_method'           => 'touchscreen', // wurflkey: sonyericsson_w595_ver1
         'device_bits'               => null, // not in wurfl

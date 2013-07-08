@@ -85,7 +85,7 @@ final class SamsungGtc3310
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'GT-C3310',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => '',    // wurflkey: samsung_gt_c3310_ver1 // wurflkey: samsung_gt_c3310_ver1
         'device_bits'               => null, // not in wurfl

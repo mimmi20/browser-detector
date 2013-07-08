@@ -85,7 +85,7 @@ final class SonyEricssonC902
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'C902',
         'has_qwerty_keyboard'       => false,      // wurflkey: sonyericsson_c902_ver1_subr3da
         'pointing_method'           => 'joystick', // wurflkey: sonyericsson_c902_ver1_subr3da      // wurflkey: sonyericsson_c902_ver1_subr3da
         'device_bits'               => null, // not in wurfl

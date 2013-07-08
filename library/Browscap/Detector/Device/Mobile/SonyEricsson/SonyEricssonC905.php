@@ -85,7 +85,7 @@ final class SonyEricssonC905
         'manufacturer_name'         => 'SonyEricsson',
         'brand_name'                => 'SonyEricsson',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'C905',
         'has_qwerty_keyboard'       => false, // wurflkey: sonyericsson_c905_ver1
         'pointing_method'           => '',    // wurflkey: sonyericsson_c905_ver1
         'device_bits'               => null, // not in wurfl

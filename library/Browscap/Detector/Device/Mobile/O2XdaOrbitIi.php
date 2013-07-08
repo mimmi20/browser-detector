@@ -83,9 +83,9 @@ final class O2XdaOrbitIi
         'model_name'                => 'Xda Orbit II',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'O2',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'O2',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Xda Orbit II',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

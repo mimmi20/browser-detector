@@ -80,12 +80,12 @@ final class SamsungGti8000
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'GT i8000', // wurflkey: samsung_gt_i8000_ver1_subopera95_v1
+        'model_name'                => 'GT-I8000', // wurflkey: samsung_gt_i8000_ver1_subopera95_v1
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Omnia ii', // wurflkey: samsung_gt_i8000_ver1_subopera95_v1
+        'marketing_name'            => 'Omnia II', // wurflkey: samsung_gt_i8000_ver1_subopera95_v1
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

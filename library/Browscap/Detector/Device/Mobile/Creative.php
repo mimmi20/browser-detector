@@ -83,9 +83,9 @@ final class Creative
         'model_name'                => 'general Creative Device',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Creative',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Creative',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'general Creative Device',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

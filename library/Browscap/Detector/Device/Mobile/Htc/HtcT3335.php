@@ -80,12 +80,12 @@ final class HtcT3335
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'T3335 - Touch2',
+        'model_name'                => 'T3335',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Touch2',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

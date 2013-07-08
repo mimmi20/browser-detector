@@ -192,6 +192,14 @@ class Browscap extends Core
         
         $result->setCapability('browser_type', $browserType);
         
+        if (!empty($browser['Browser_Modus'])) {
+            $browserModus = $browser['Browser_Modus'];
+        } else {
+            $browserModus = '';
+        }
+        
+        $result->setCapability('mobile_browser_modus', $browserModus);
+        
         if (!empty($browser['Platform_Name'])) {
             $platform = $this->_detectProperty($browser, 'Platform_Name');
         } else {

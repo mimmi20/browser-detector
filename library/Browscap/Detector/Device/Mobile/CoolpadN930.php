@@ -83,9 +83,9 @@ final class CoolpadN930
         'model_name'                => 'N930',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Coolpad',
-        'brand_name'                => 'unknown',
+        'brand_name'                => 'Coolpad',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'N930',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

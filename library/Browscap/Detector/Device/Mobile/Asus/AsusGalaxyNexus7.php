@@ -85,7 +85,7 @@ final class AsusGalaxyNexus7
         'manufacturer_name'         => 'Asus',   //wurflkey: google_nexus7_ver1
         'brand_name'                => 'Google', //wurflkey: google_nexus7_ver1
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Nexus 7',
         'has_qwerty_keyboard'       => true,     //wurflkey: google_nexus7_ver1
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

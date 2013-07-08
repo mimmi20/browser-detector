@@ -85,7 +85,7 @@ final class SamsungGts7220
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'GT-S7220',
         'has_qwerty_keyboard'       => false,
         'pointing_method'           => '',    // wurflkey: samsung_s7220_ver1 // wurflkey: samsung_s7220_ver1
         'device_bits'               => null, // not in wurfl

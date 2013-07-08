@@ -80,12 +80,12 @@ final class HtcT7373
         // 'is_transcoder'      => false,
         
         // device
-        'model_name'                => 'T7373 - Touch Pro2',
+        'model_name'                => 'T7373',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HTC',
         'brand_name'                => 'HTC',
         'model_extra_info'          => null,
-        'marketing_name'            => null,
+        'marketing_name'            => 'Touch Pro2',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

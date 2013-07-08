@@ -123,7 +123,7 @@ class Python
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('python\-requests');
+        $searches = array('Python', 'Python\-urllib', 'python\-requests');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -139,7 +139,7 @@ class Python
      */
     public function getWeight()
     {
-        return 4;
+        return 9;
     }
     
     /**
