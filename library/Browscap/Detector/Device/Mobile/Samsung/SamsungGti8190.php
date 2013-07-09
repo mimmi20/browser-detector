@@ -85,7 +85,7 @@ final class SamsungGti8190
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy S III Mini',
+        'marketing_name'            => 'Galaxy SIII Mini',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

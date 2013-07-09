@@ -85,7 +85,7 @@ final class SamsungSghT989
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => 'for T-Mobile',
-        'marketing_name'            => 'Galaxy S II',
+        'marketing_name'            => 'Galaxy SII',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -85,7 +85,7 @@ final class SamsungGti9100
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy S II',
+        'marketing_name'            => 'Galaxy SII',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

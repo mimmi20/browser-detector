@@ -123,7 +123,7 @@ class Gecko extends EngineHandler
         'xhtml_send_mms_string' => 'none',
         'xhtml_table_support' => true,
         'xhtml_display_accesskey' => false,
-        'xhtml_can_embed_video' => 'none',
+        'xhtml_can_embed_video' => 'play_and_stop',
         'xhtml_supports_monospace_font' => false,
         'xhtml_supports_inline_input' => false,
         'xhtml_document_title_support' => true,
@@ -149,7 +149,7 @@ class Gecko extends EngineHandler
         'transparent_png_index' => false,
         'epoc_bmp' => false,
         'svgt_1_1_plus' => false,
-        'svgt_1_1' => false,
+        'svgt_1_1' => true,
         'transparent_png_alpha' => false,
         'tiff' => false,
         
@@ -266,5 +266,23 @@ class Gecko extends EngineHandler
     public function getWeight()
     {
         return 5244;
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
+    {
+        parent::detectDependProperties($os, $device, $browser);
+        
+        if ($device->getCapability('is_wireless_device')) {
+            $this->setCapability('xhtml_make_phone_call_string', 'tel:');
+        } else {
+            $this->setCapability('xhtml_make_phone_call_string', 'none');
+        }
     }
 }

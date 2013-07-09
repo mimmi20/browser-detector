@@ -85,8 +85,8 @@ final class SamsungGti9100t
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy S II', // wurflkey: samsung_gt_i9100_ver1_suban40t
-        'has_qwerty_keyboard'       => true,          // wurflkey: samsung_gt_i9100_ver1_suban40t
+        'marketing_name'            => 'Galaxy SII', // wurflkey: samsung_gt_i9100_ver1_suban40t
+        'has_qwerty_keyboard'       => true,         // wurflkey: samsung_gt_i9100_ver1_suban40t
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => 'ARM11', // not in wurfl

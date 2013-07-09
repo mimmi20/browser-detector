@@ -85,7 +85,7 @@ final class SamsungGti9100p
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
+        'marketing_name'            => 'Galaxy SII NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
         'has_qwerty_keyboard'       => true,              // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

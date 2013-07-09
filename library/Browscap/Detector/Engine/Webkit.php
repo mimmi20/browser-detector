@@ -126,7 +126,7 @@ class Webkit extends EngineHandler
         'xhtml_send_mms_string' => 'none',
         'xhtml_table_support' => true,
         'xhtml_display_accesskey' => false,
-        'xhtml_can_embed_video' => 'none',
+        'xhtml_can_embed_video' => 'play_and_stop',
         'xhtml_supports_monospace_font' => false,
         'xhtml_supports_inline_input' => false,
         'xhtml_document_title_support' => true,
@@ -152,7 +152,7 @@ class Webkit extends EngineHandler
         'transparent_png_index' => false,
         'epoc_bmp' => false,
         'svgt_1_1_plus' => false,
-        'svgt_1_1' => false,
+        'svgt_1_1' => true,
         'transparent_png_alpha' => false,
         'tiff' => false,
         
@@ -219,8 +219,8 @@ class Webkit extends EngineHandler
         
         // css
         'css_spriting' => true,
-        'css_gradient' => 'none',
-        'css_gradient_linear' => 'none',
+        'css_gradient' => 'webkit',
+        'css_gradient_linear' => 'webkit',
         'css_border_image' => 'webkit',
         'css_rounded_corners' => 'webkit',
         'css_supports_width_as_percentage' => true,
@@ -281,7 +281,9 @@ class Webkit extends EngineHandler
      */
     public function detectDependProperties(
         OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
-    {
+    {   
+        parent::detectDependProperties($os, $device, $browser);
+        
         if ($device->getCapability('is_wireless_device')) {
             $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);
             $this->setCapability('html_wi_imode_compact_generic', true);
@@ -303,13 +305,11 @@ class Webkit extends EngineHandler
             $this->setCapability('viewport_width', 'device_width_token');
             $this->setCapability('viewport_userscalable', 'no');
             $this->setCapability('supports_java_applets', false);
+            $engine->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {
             $this->setCapability('wml_make_phone_call_string', 'none');
-            $this->setCapability('css_border_image', 'none');
-            $this->setCapability('css_rounded_corners', 'none');
+            $this->setCapability('xhtml_make_phone_call_string', 'none');
         }
-        
-        parent::detectDependProperties($os, $device, $browser);
         
         return $this;
     }

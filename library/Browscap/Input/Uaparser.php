@@ -92,7 +92,7 @@ final class Uaparser extends Core
     /**
      * the UAParser class
      *
-     * @var UAParser
+     * @var \UAParser
      */
     private $_uaParser = null;
     

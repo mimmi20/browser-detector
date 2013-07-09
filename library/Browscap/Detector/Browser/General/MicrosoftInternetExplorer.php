@@ -275,14 +275,6 @@ class MicrosoftInternetExplorer
                         'IE ' . $detectedVersion . ' Compatibility Mode'
                     );
                 }
-                
-                if (8 == $detectedVersion) {
-                    $engine->setCapability('image_inlining', true);
-                    $engine->setCapability('css_spriting', false);
-                } else {
-                    $engine->setCapability('image_inlining', false);
-                    $engine->setCapability('css_spriting', true);
-                }
                 break;
             case 5:
                 if (9 > $detectedVersion) {
@@ -334,18 +326,21 @@ class MicrosoftInternetExplorer
                 $engine->setCapability('is_sencha_touch_ok', true);
                 $engine->setCapability('image_inlining', true);
                 $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
                 break;
             case 10:
                 $engine->setCapability('jqm_grade', 'A');
                 $engine->setCapability('is_sencha_touch_ok', true);
                 $engine->setCapability('image_inlining', true);
                 $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
                 break;
             case 9:
                 $engine->setCapability('jqm_grade', 'A');
                 $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('image_inlining', true); //wurflkey: msie_9
                 $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
                 break;
             case 8:
                 $engine->setCapability('jqm_grade', 'A');

@@ -85,7 +85,7 @@ final class SamsungSchI5354G
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => 'Verizon',
-        'marketing_name'            => 'Galaxy S3 4G CDMA',
+        'marketing_name'            => 'Galaxy SIII 4G CDMA',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

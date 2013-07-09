@@ -220,7 +220,7 @@ class Android
         $engine->setCapability('transparent_png_alpha', true);
         $engine->setCapability('wml_make_phone_call_string', 'wtai://wp/mc;');
         $engine->setCapability('max_url_length_in_requests', 256);
-        $engine->setCapability('ajax_preferred_geoloc_api', 'gears');
+        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
         $engine->setCapability('xhtml_preferred_charset', 'iso-8859-1');
         $engine->setCapability('card_title_support', true);
         $engine->setCapability('table_support', true);
