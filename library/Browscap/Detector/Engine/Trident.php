@@ -42,6 +42,9 @@ namespace Browscap\Detector\Engine;
  */
 
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\Version;
 

@@ -305,7 +305,7 @@ class Webkit extends EngineHandler
             $this->setCapability('viewport_width', 'device_width_token');
             $this->setCapability('viewport_userscalable', 'no');
             $this->setCapability('supports_java_applets', false);
-            $engine->setCapability('xhtml_make_phone_call_string', 'tel:');
+            $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {
             $this->setCapability('wml_make_phone_call_string', 'none');
             $this->setCapability('xhtml_make_phone_call_string', 'none');
