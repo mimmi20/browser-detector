@@ -59,6 +59,7 @@ class Browscap
     const INTERFACE_WURFL        = 3;
     const INTERFACE_WURFL_CLOUD  = 4;
     const INTERFACE_UAPARSER     = 5;
+    const INTERFACE_UASPARSER    = 6;
     
     /**
      * a \\Zend\\Cache object
@@ -174,7 +175,8 @@ class Browscap
             self::INTERFACE_BROWSCAP_INI,
             self::INTERFACE_WURFL,
             self::INTERFACE_WURFL_CLOUD,
-            self::INTERFACE_UAPARSER
+            self::INTERFACE_UAPARSER,
+            self::INTERFACE_UASPARSER
         );
         
         if (!is_int($interface) || !in_array($interface, $allowedInterfaces)) {
@@ -198,6 +200,9 @@ class Browscap
                 break;
             case self::INTERFACE_UAPARSER:
                 $this->_interface = new \Browscap\Input\Uaparser();
+                break;
+            case self::INTERFACE_UASPARSER:
+                $this->_interface = new \Browscap\Input\Uasparser();
                 break;
             default:
                 throw new \UnexpectedValueException(

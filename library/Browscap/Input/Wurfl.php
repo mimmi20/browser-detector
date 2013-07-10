@@ -454,6 +454,10 @@ final class Wurfl extends Core
                         $browserMaker = 'Microsoft';
                         
                         switch (strtolower($apiVer)) {
+                            case 'internet explorer':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '';
+                                break;
                             case 'internet explorer 10':
                                 $apiBro = 'Internet Explorer';
                                 $apiVer = '10.0';
@@ -517,6 +521,10 @@ final class Wurfl extends Core
                                 $apiDev = 'Xbox 360';
                                 $apiMan = 'Microsoft';
                                 break;
+                            case 'outlook express':
+                                $apiBro = 'Windows Live Mail';
+                                $apiVer = '';
+                                break;
                             default:
                                 // nothing to do
                                 break;
@@ -548,46 +556,14 @@ final class Wurfl extends Core
                         $apiVer = '';
                         $browserMaker = 'Google';
                         break;
-                    case 'mozilla firefox':
-                    case 'firefox':
-                        $apiBro = 'Firefox';
-                        $browserMaker = 'Mozilla';
-                        if ('3.0' == $apiVer) {
-                            $apiVer = null;
-                        }
-                        break;
-                    case 'fennec':
-                        $apiBro = 'Firefox';
-                        $browserMaker = 'Mozilla';
-                        $apiVer = null;
-                        break;
-                    case 'apple safari':
-                    case 'safari':
-                        $apiBro = 'Safari';
-                        $browserMaker = 'Apple';
-                        $apiVer = '';
-                        break;
-                    case 'opera software opera':
-                    case 'opera':
-                        $apiBro = 'Opera';
-                        $browserMaker = 'Opera Software ASA';
-                        $apiVer = '';
-                        break;
-                    case 'konqueror':
-                        $apiBro = 'Konqueror';
-                        break;
-                    case 'access netfront':
-                        $apiBro = 'NetFront';
-                        $browserMaker = 'Access';
-                        break;
-                    case 'nokia':
-                    case 'nokia browserng':
-                        $apiBro = 'Nokia Browser';
-                        break;
                     case 'google':
-                        $browserMaker = 'Microsoft';
+                        $browserMaker = 'Google';
                         
                         switch (strtolower($apiVer)) {
+                            case 'chrome':
+                                $apiBro = 'Chrome';
+                                $apiVer = '';
+                                break;
                             case 'bot':
                                 $apiBro     = 'Google Bot';
                                 $apiVer     = '';
@@ -601,10 +577,92 @@ final class Wurfl extends Core
                                 $apiBot        = true;
                                 $apiTranscoder = true;
                                 break;
+                            case 'adsense bot':
+                                $apiBro        = 'AdSense Bot';
+                                $apiVer        = '';
+                                $apiDesktop    = false;
+                                $apiBot        = true;
+                                $apiTranscoder = true;
+                                break;
                             default:
-                                // nothing to do here
+                                // nothing to do
                                 break;
                         }
+                        break;
+                    case 'mozilla firefox':
+                    case 'firefox':
+                        $apiBro = 'Firefox';
+                        $browserMaker = 'Mozilla';
+                        if ('3.0' == $apiVer) {
+                            $apiVer = null;
+                        }
+                        break;
+                    case 'mozilla':
+                        $browserMaker = 'Mozilla';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'firefox':
+                                $apiBro = 'Firefox';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'fennec':
+                        $apiBro = 'Firefox';
+                        $browserMaker = 'Mozilla';
+                        $apiVer = null;
+                        break;
+                    case 'apple safari':
+                    case 'safari':
+                        $apiBro = 'Safari';
+                        $browserMaker = 'Apple';
+                        $apiVer = '';
+                        break;
+                    case 'apple':
+                        $browserMaker = 'Apple';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'safari':
+                                $apiBro = 'Safari';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'opera software opera':
+                    case 'opera':
+                        $apiBro = 'Opera';
+                        $browserMaker = 'Opera Software ASA';
+                        $apiVer = '';
+                        break;
+                    case 'opera software':
+                        $browserMaker = 'Opera Software ASA';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'opera':
+                                $apiBro = 'Opera';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'konqueror':
+                        $apiBro = 'Konqueror';
+                        break;
+                    case 'access netfront':
+                        $apiBro = 'NetFront';
+                        $browserMaker = 'Access';
+                        break;
+                    case 'nokia':
+                    case 'nokia browserng':
+                        $apiBro = 'Nokia Browser';
                         break;
                     case 'facebook':
                         switch (strtolower($apiVer)) {
@@ -625,6 +683,19 @@ final class Wurfl extends Core
                         $apiDesktop   = false;
                         $apiBot       = true;
                         $apiTv        = false;
+                        break;
+                    case 'bing':
+                        $browserMaker = 'Microsoft';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'bot':
+                                $apiBro = 'BingBot';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
                         break;
                     case 'google bot':
                     case 'facebook bot':
@@ -658,6 +729,24 @@ final class Wurfl extends Core
                         $apiDev     = 'general TV Device';
                         $apiBro     = 'unknown';
                         break;
+                    case 'unknown':
+                        $browserMaker = 'unknown';
+                        $apiBro       = 'unknown';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'bot or crawler':
+                                $apiDesktop = false;
+                                $apiBot     = true;
+                                $apiTv      = false;
+                                $apiDev     = 'general Bot';
+                                $apiBro     = 'unknown';
+                                $apiVer     = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
                     case 'wii':
                         $apiDesktop = false;
                         $apiBot     = false;
@@ -666,14 +755,60 @@ final class Wurfl extends Core
                         $apiBro     = 'Wii Browser';
                         $apiMan     = 'Nintendo';
                         break;
+                    case 'android webkit':
                     case 'android':
+                        $apiBro     = 'Android Webkit';
                         if ('4.01' == $apiVer) {
                             $apiVer = '4.0.1';
                         }
                         $browserMaker = 'Google';
                         break;
+                    case 'unknown':
+                        $browserMaker = 'unknown';
+                        $apiBro       = 'unknown';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'bot or crawler':
+                                $apiDesktop = false;
+                                $apiBot     = true;
+                                $apiTv      = false;
+                                $apiDev     = 'general Bot';
+                                $apiBro     = 'unknown';
+                                $apiVer     = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
                     case 'UCWeb':
                         $apiBro = 'UC Browser';
+                        break;
+                    case 'seomoz':
+                        $browserMaker = 'SEOmoz';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'rogerbot':
+                                $apiBro = 'Rogerbot';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'java':
+                        $browserMaker = 'unknown';
+                        
+                        switch (strtolower($apiVer)) {
+                            case 'updater':
+                                $apiBro = 'Generic Java Crawler';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
                         break;
                     default:
                         // nothing to do here

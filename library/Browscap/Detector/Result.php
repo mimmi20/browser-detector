@@ -1055,7 +1055,8 @@ final class Result implements \Serializable
                 $manufacturer = $this->getCapability('manufacturer_name', false);
             }
             
-            if ('unknown' != $manufacturer
+            if ('unknown' !== $manufacturer
+                && '' !== $manufacturer
                 && false === strpos($device, 'general')
                 && false === strpos($device, $manufacturer)
             ) {

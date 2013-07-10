@@ -171,15 +171,15 @@ final class Uasparser extends Core
             $version->setVersion($parserResult['ua_version'])
         );
         
-        $version = new Version();
+        // $version = new Version();
         
         $result->setCapability('device_os', $parserResult['os_name']);
-        $result->setCapability(
-            'device_os_version',
-            $version->setVersion($parserResult->os->toVersionString)
-        );
+        // $result->setCapability(
+            // 'device_os_version',
+            // $version->setVersion($parserResult->os->toVersionString)
+        // );
         
-        $result->setCapability('model_name', $parserResult->device->family);
+        // $result->setCapability('model_name', $parserResult->device->family);
         
         return $result;
     }

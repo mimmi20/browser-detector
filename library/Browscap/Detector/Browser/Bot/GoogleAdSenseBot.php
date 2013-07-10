@@ -57,7 +57,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class GoogleMediapartners
+class GoogleAdSenseBot
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -77,7 +77,7 @@ class GoogleMediapartners
         'is_banned'             => false,         // not in wurfl
         
         // browser
-        'mobile_browser'              => 'Mediapartners-Google',
+        'mobile_browser'              => 'AdSense Bot',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => 'Google', // not in wurfl
