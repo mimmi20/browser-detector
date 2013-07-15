@@ -79,17 +79,35 @@ class KreditCore_Class_BrowscapTest extends PHPUnit_Framework_TestCase
     {
         $this->object->setLocaleFile(LIB_PATH . DS . 'Browscap' . DS . 'data' . DS . 'browscap.ini');
         $this->object->setCachePrefix('modified_ini_');
+        $this->object->setAgent($agent);
         
         //$this->object->setAgent($agent);
-        $result = $this->object->getBrowser($agent, true);
+        $result = $this->object->getBrowser();
 
-        $this->assertInstanceOf('StdClass', $result);
+        $this->assertInstanceOf('Browscap\\Detector\\Result', $result);
 
-        //echo "\n";var_dump("'$browser' : '$result->Browser'", "'$version' : '$result->Version'", "'$platform' : '$result->Platform'");echo "\n";
-        //$this->assertSame($agent, $result->Browser);
-        $this->assertSame($browser, $result->Browser);
-        $this->assertSame($version, $result->Version);
-        $this->assertSame($platform, $result->Platform);
+        $this->assertSame($device, $result->getFullDevice(true));
+        $this->assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');
+        $this->assertSame($tablet, $result->isTablet(), 'tablet mismatch');
+        $this->assertSame($bot, $result->isCrawler(), 'crawler mismatch');
+        $this->assertSame($desktop, $result->isDesktop(), 'desktop device mismatch');
+        $this->assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
+        $this->assertSame($browser, $result->getBrowserName(), 'browser name mismatch');
+        $this->assertSame($browserVersion, $result->getVersion()->getVersion(\Browscap\Detector\Version::COMPLETE), 'browser version mismatch');
+        $this->assertSame($platform, $result->getPlatform(), 'platform name mismatch');
+        $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\Browscap\Detector\Version::COMPLETE), 'platform version mismach');
+        $this->assertSame($frames, $result->supportsFrames(), 'frames mismatch');
+        $this->assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
+        $this->assertSame($tables, $result->supportsTables(), 'tables mismatch');
+        $this->assertSame($cookies, $result->supportsCookies(), 'cookies mismatch');
+        $this->assertSame($bgsound, $result->supportsBackgroundSounds(), 'bgsound mismatch');
+        $this->assertSame($javascript, $result->supportsJavaScript(), 'js mismatch');
+        $this->assertSame($vbscript, $result->supportsVbScript(), 'vbs mismatch');
+        $this->assertSame($java, $result->supportsJavaApplets(), 'java mismatch');
+        $this->assertSame($activex, $result->supportsActivexControls(), 'activex mismatch');
+        $this->assertSame($synreader, $result->isSyndicationReader(), 'syndreader mismatch');
+        $this->assertSame($pdf, $result->isPdfSupported(), 'pdf mismatch');
+        $this->assertSame($rss, $result->isRssSupported(), 'rss mismatch');
     }
 
     public function providerGetBrowserFromMod()

@@ -135,18 +135,16 @@ class KreditCore_Class_UserAgentTest extends PHPUnit_Framework_TestCase
     {
         $this->assertInstanceOf('Browscap\\Detector\\Result', $result);
 
-        //echo "\n";var_dump("'$browser' : '" . $result->getBrowserName() . "'", "'$browserVersion' : '" . $result->getVersion() . "'", "'$platform' : '" . $result->getPlatform() . "'", "'$platformVersion' : '" . $result->getPlatformVersion() . "'");echo "\n";
-        //$this->assertSame($agent, $result->getAgent());
         $this->assertSame($device, $result->getFullDevice(true));
-        $this->assertSame($mobile, $result->isMobileDevice(), "mobile mismatch");
+        $this->assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');
         $this->assertSame($tablet, $result->isTablet(), 'tablet mismatch');
         $this->assertSame($bot, $result->isCrawler(), 'crawler mismatch');
-        $this->assertSame($desktop, $result->isDesktop(), 'desktop mismatch');
+        $this->assertSame($desktop, $result->isDesktop(), 'desktop device mismatch');
         $this->assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
-        $this->assertSame($browser, $result->getBrowserName());
-        $this->assertSame($browserVersion, $result->getVersion()->getVersion(\Browscap\Detector\Version::COMPLETE));
-        $this->assertSame($platform, $result->getPlatform());
-        $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\Browscap\Detector\Version::COMPLETE));
+        $this->assertSame($browser, $result->getBrowserName(), 'browser name mismatch');
+        $this->assertSame($browserVersion, $result->getVersion()->getVersion(\Browscap\Detector\Version::COMPLETE), 'browser version mismatch');
+        $this->assertSame($platform, $result->getPlatform(), 'platform name mismatch');
+        $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\Browscap\Detector\Version::COMPLETE), 'platform version mismach');
         $this->assertSame($frames, $result->supportsFrames(), 'frames mismatch');
         $this->assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
         $this->assertSame($tables, $result->supportsTables(), 'tables mismatch');
