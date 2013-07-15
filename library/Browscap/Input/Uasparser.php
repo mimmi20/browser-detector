@@ -165,21 +165,46 @@ final class Uasparser extends Core
         
         $version = new Version();
         
-        $result->setCapability('mobile_browser', $parserResult['ua_name']);
+        $browserName    = $parserResult['ua_family'];
+        $browserVersion = $parserResult['ua_version'];
+        
+        switch ($browserName) {
+            case 'unknown':
+                $browserName    = null;
+                $browserVersion = null;
+                break;
+            case 'IE':
+                $browserName = 'Internet Explorer';
+                break;
+            case 'IceWeasel':
+                $browserName = 'Iceweasel';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        switch ($browserVersion) {
+            case 'unknown':
+                $browserVersion = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('mobile_browser', $browserName);
         $result->setCapability(
-            'mobile_browser_version',
-            $version->setVersion($parserResult['ua_version'])
+            'mobile_browser_version', $version->setVersion($browserVersion)
         );
         
-        // $version = new Version();
-        
-        $result->setCapability('device_os', $parserResult['os_name']);
-        // $result->setCapability(
-            // 'device_os_version',
-            // $version->setVersion($parserResult->os->toVersionString)
-        // );
-        
-        // $result->setCapability('model_name', $parserResult->device->family);
+        $result->setCapability(
+            'mobile_browser_manufacturer', $parserResult['ua_company']
+        );
+        $result->setCapability('device_os', $parserResult['os_family']);
+        $result->setCapability(
+            'device_os_manufacturer', $parserResult['os_company']
+        );
         
         return $result;
     }

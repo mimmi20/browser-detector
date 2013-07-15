@@ -129,6 +129,7 @@ class Chrome
             'Google Earth',
             'Arora',
             'YaBrowser',
+            'OPR',
             // Bots trying to be a Chrome
             'PagePeeker',
             // Fakes
@@ -136,6 +137,14 @@ class Chrome
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnChrome)) {
+            return false;
+        }
+        
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->detectVersion(array('Chrome'));
+        
+        if (0 != $detector->getVersion(Version::MINORONLY)) {
             return false;
         }
         

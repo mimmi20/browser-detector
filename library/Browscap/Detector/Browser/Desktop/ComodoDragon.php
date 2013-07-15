@@ -110,7 +110,7 @@ class ComodoDragon
             return false;
         }
         
-        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Chrome', 'Comodo Dragon'))) {
+        if (!$this->_utils->checkIfContainsAll(array('AppleWebKit', 'Chrome'))) {
             return false;
         }
         
@@ -126,6 +126,18 @@ class ComodoDragon
         );
         
         if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
+            return false;
+        }
+        
+        if (!$this->_utils->checkIfContains(array('Comodo Dragon'))) {
+            $detector = new \Browscap\Detector\Version();
+            $detector->setUserAgent($this->_useragent);
+            $detector->detectVersion(array('Chrome'));
+            
+            if (0 != $detector->getVersion(Version::MINORONLY)) {
+                return true;
+            }
+            
             return false;
         }
         
