@@ -938,7 +938,7 @@ final class Result implements \Serializable
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
         
-        $browser = '"b:' . $this->getCapability('mobile_browser', false) . '"';
+        $browser = $this->getCapability('mobile_browser', false);
         
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
@@ -949,7 +949,7 @@ final class Result implements \Serializable
         );
         
         if ($browser != $version && '' != $version) {
-            $browser .= ' "v:' . $version . '"';
+            $browser .= ' ' . $version;
         }
         
         $additional = array();
