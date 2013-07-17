@@ -179,6 +179,27 @@ final class Uasparser extends Core
             case 'IceWeasel':
                 $browserName = 'Iceweasel';
                 break;
+            case 'Mobile Safari':
+                $browserName = 'Safari';
+                break;
+            case 'Chrome Mobile':
+                $browserName = 'Chrome';
+                break;
+            case 'Googlebot':
+                $browserName = 'Google Bot';
+                break;
+            case 'bingbot':
+                $browserName = 'BingBot';
+                break;
+            case 'Jakarta Commons-HttpClient':
+                $browserName = 'Jakarta Commons HttpClient';
+                break;
+            case 'AdsBot-Google':
+                $browserName = 'AdsBot Google';
+                break;
+            case 'SEOkicks-Robot':
+                $browserName = 'SEOkicks Robot';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -201,10 +222,47 @@ final class Uasparser extends Core
         $result->setCapability(
             'mobile_browser_manufacturer', $parserResult['ua_company']
         );
-        $result->setCapability('device_os', $parserResult['os_family']);
+        
+        $osName    = $parserResult->os->family;
+        $osVersion = $parserResult->os->toVersionString;
+        
+        switch ($osName) {
+            case 'Other':
+                $osName    = null;
+                $osVersion = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('device_os', $osName);
         $result->setCapability(
-            'device_os_manufacturer', $parserResult['os_company']
+            'device_os_version',
+            $version->setVersion($osVersion)
         );
+        
+        $osName    = $parserResult['os_family'];
+        $osVersion = null;
+        $osMaker   = $parserResult['os_company'];
+        
+        switch ($osName) {
+            case 'unknown':
+            case 'Other':
+                $osName  = null;
+                $osMaker = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('device_os', $osName);
+        $result->setCapability(
+            'device_os_version',
+            $version->setVersion($osVersion)
+        );
+        $result->setCapability('device_os_manufacturer', $osMaker);
         
         return $result;
     }

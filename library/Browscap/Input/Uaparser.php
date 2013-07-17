@@ -164,21 +164,97 @@ final class Uaparser extends Core
         
         $version = new Version();
         
-        $result->setCapability('mobile_browser', $parserResult->ua->family);
+        $browserName    = $parserResult->ua->family;
+        $browserVersion = $parserResult->ua->toVersionString;
+        
+        switch ($browserName) {
+            case 'unknown':
+            case 'Other':
+                $browserName    = null;
+                $browserVersion = null;
+                break;
+            case 'IE':
+                $browserName = 'Internet Explorer';
+                break;
+            case 'IceWeasel':
+                $browserName = 'Iceweasel';
+                break;
+            case 'GomezA':
+                $browserName = 'GomezAgent';
+                break;
+            case 'Mobile Safari':
+                $browserName = 'Safari';
+                break;
+            case 'Chrome Mobile':
+                $browserName = 'Chrome';
+                break;
+            case 'Googlebot':
+                $browserName = 'Google Bot';
+                break;
+            case 'bingbot':
+                $browserName = 'BingBot';
+                break;
+            case 'Jakarta Commons-HttpClient':
+                $browserName = 'Jakarta Commons HttpClient';
+                break;
+            case 'AdsBot-Google':
+                $browserName = 'AdsBot Google';
+                break;
+            case 'SEOkicks-Robot':
+                $browserName = 'SEOkicks Robot';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        switch ($browserVersion) {
+            case 'unknown':
+                $browserVersion = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('mobile_browser', $browserName);
         $result->setCapability(
-            'mobile_browser_version',
-            $version->setVersion($parserResult->ua->toVersionString)
+            'mobile_browser_version', $version->setVersion($browserVersion)
         );
         
         $version = new Version();
         
-        $result->setCapability('device_os', $parserResult->os->family);
+        $osName    = $parserResult->os->family;
+        $osVersion = $parserResult->os->toVersionString;
+        
+        switch ($osName) {
+            case 'Other':
+                $osName    = null;
+                $osVersion = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('device_os', $osName);
         $result->setCapability(
             'device_os_version',
-            $version->setVersion($parserResult->os->toVersionString)
+            $version->setVersion($osVersion)
         );
         
-        $result->setCapability('model_name', $parserResult->device->family);
+        $device = $parserResult->device->family;
+        
+        switch ($device) {
+            case 'Other':
+                $device = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('model_name', $device);
         
         return $result;
     }
