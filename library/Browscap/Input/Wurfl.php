@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Helper\InputMapper;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -278,6 +279,11 @@ final class Wurfl extends Core
                 
                 $marketingName = $device->getCapability('marketing_name');
                 
+                $mapper = new InputMapper();
+                
+                $apiDev = $mapper->mapDeviceName($apiDev);
+                $apiMan = $mapper->mapDeviceMaker($apiMan, $apiDev);
+                
                 switch (strtolower($apiDev)) {
                     case 'android 1.6':
                     case 'android 2.0':
@@ -304,139 +310,17 @@ final class Wurfl extends Core
                     case 'opera for series 60':
                     case 'opera mini for s60':
                     case 'windows mobile (opera)':
-                        $apiDev = 'general Mobile Device';
                         $apiKey = null;
                         break;
-                    // Motorola
-                    case 'motomz616':
-                        $apiDev = 'MZ616';
-                        break;
-                    case 'motoxt610':
-                        $apiDev = 'XT610';
-                        break;
-                    case 'motxt912b':
-                        $apiDev = 'XT912B';
-                        break;
-                    // LG
-                    case 'lg/c550/v1.0':
-                        $apiDev = 'C550';
-                        $apiMan = 'LG';
-                        break;
-                    // Samsung
-                    case 'gt s8500':
-                        $apiDev = 'GT-S8500';
-                        break;
-                    case 'gp-p6810':
-                        $apiDev = 'GT-P6810';
-                        break;
-                    case 'gt-i8350':
-                        $apiDev = 'GT-I8350';
-                        break;
-                    case 'gt-i5500':
-                        $apiDev = 'GT-I5500';
-                        break;
-                    case 'gt i7500':
-                        $apiDev = 'GT-I7500';
-                        break;
-                    case 'gt s5620':
-                        $apiDev = 'GT-S5620';
-                        break;
-                    case 'sgh-i917':
-                        $apiDev = 'SGH-I917';
-                        break;
-                    case 'sgh-i957':
-                        $apiDev = 'SGH-I957';
-                        break;
-                    case 'sgh-i900v':
-                        $apiDev = 'SGH-I900V';
-                        break;
-                    case 'sgh-i917':
-                        $apiDev = 'SGH-I917';
-                        break;
-                    case 'sgh i900':
-                        $apiDev = 'SGH-I900';
-                        break;
-                    case 'sph-930':
-                        $apiDev = 'SPH-M930';
-                        break;
-                    // Acer
-                    case 'acer e310':
-                        $apiDev        = 'E310';
-                        // $marketingName = 'E310';
-                        $apiMan        = 'Acer';
-                        break;
-                    case 'acer e320':
-                        $apiDev        = 'E320';
-                        $marketingName = 'Liquid Express';
-                        $apiMan        = 'Acer';
-                        break;
-                    // HTC
-                    case 'sensationxe beats z715e':
-                        $apiDev = 'Sensation XE Beats Z715e';
-                        break;
-                    // Asus
-                    case 'asus-padfone':
-                        $apiDev = 'PadFone';
-                        break;
-                    // Creative
-                    case 'creative ziio7':
-                        $apiDev = 'ZiiO7';
-                        $apiMan = 'Creative';
-                        break;
-                    // HP
-                    case 'touchpad':
-                        $apiDev        = 'Touchpad';
-                        $marketingName = 'Touchpad';
-                        break;
-                    // Huawei
-                    case 'u8800':
-                        $apiDev = 'U8800';
-                        break;
-                    // Amazon
-                    case 'd01400':
-                        $apiDev = 'Kindle';
-                        break;
-                    // Nokia
-                    case 'nokia asha 201':
-                        $apiDev = 'Asha 201';
-                        break;
-                    // Medion
-                    case 'p9514':
-                        $apiDev        = 'LifeTab P9514';
-                        $marketingName = 'LifeTab P9514';
-                        $apiMan        = 'Medion';
-                        $brandName     = 'Medion';
-                        break;
                     default:
                         // nothing to do here
                         break;
                 }
+                
+                $marketingName = $mapper->mapDeviceMarketingName($marketingName, $apiDev);
+                $brandName     = $mapper->mapDeviceBrandName($brandName, $apiDev);
                 
                 $browserMaker = '';
-                
-                switch ($marketingName) {
-                    case 'LG Optimus Chat':
-                        $marketingName = 'Optimus Chat';
-                        break;
-                    case 'T Mobile Move Balance':
-                        $marketingName = 'T-Mobile Move Balance';
-                        break;
-                    case 'Xperia arc SO-01C for DoCoMo':
-                        $marketingName = 'Xperia Arc SO-01C for DoCoMo';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                
-                switch ($brandName) {
-                    case 'Generic':
-                        $brandName = 'unknown';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
                 
                 if ('Generic' == $apiMan || 'Opera' == $apiMan) {
                     $apiMan        = null;

@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Helper\InputMapper;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -161,106 +162,35 @@ final class Uasparser extends Core
         // var_dump($parserResult);exit;
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
-        $result->setCapability('browser_type', $parserResult['typ']);
         
         $version = new Version();
+        $version->setMode(
+            Version::COMPLETE
+            | Version::IGNORE_MINOR_IF_EMPTY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
         
-        $browserName    = $parserResult['ua_family'];
-        $browserVersion = $parserResult['ua_version'];
+        $mapper = new InputMapper();
         
-        switch ($browserName) {
-            case 'unknown':
-                $browserName    = null;
-                $browserVersion = null;
-                break;
-            case 'IE':
-                $browserName = 'Internet Explorer';
-                break;
-            case 'IceWeasel':
-                $browserName = 'Iceweasel';
-                break;
-            case 'Mobile Safari':
-                $browserName = 'Safari';
-                break;
-            case 'Chrome Mobile':
-                $browserName = 'Chrome';
-                break;
-            case 'Googlebot':
-                $browserName = 'Google Bot';
-                break;
-            case 'bingbot':
-                $browserName = 'BingBot';
-                break;
-            case 'Jakarta Commons-HttpClient':
-                $browserName = 'Jakarta Commons HttpClient';
-                break;
-            case 'AdsBot-Google':
-                $browserName = 'AdsBot Google';
-                break;
-            case 'SEOkicks-Robot':
-                $browserName = 'SEOkicks Robot';
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $browserName    = $mapper->mapBrowserName($parserResult['ua_family']);
+        $browserType    = $mapper->mapBrowserType($parserResult['typ'], $browserName);
+        $browserVersion = $mapper->mapBrowserVersion($parserResult['ua_version'], $browserName);
+        $browserMaker   = $mapper->mapBrowserMaker($parserResult['ua_company'], $browserName);
         
-        switch ($browserVersion) {
-            case 'unknown':
-                $browserVersion = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-        
+        $result->setCapability('browser_type', $browserType);
         $result->setCapability('mobile_browser', $browserName);
+        $result->setCapability('mobile_browser_manufacturer', $browserMaker);
         $result->setCapability(
             'mobile_browser_version', $version->setVersion($browserVersion)
         );
         
-        $result->setCapability(
-            'mobile_browser_manufacturer', $parserResult['ua_company']
-        );
-        
-        $osName    = $parserResult->os->family;
-        $osVersion = $parserResult->os->toVersionString;
-        
-        switch ($osName) {
-            case 'Other':
-                $osName    = null;
-                $osVersion = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-        
-        $result->setCapability('device_os', $osName);
-        $result->setCapability(
-            'device_os_version',
-            $version->setVersion($osVersion)
-        );
-        
-        $osName    = $parserResult['os_family'];
+        $osName    = $mapper->mapOsName($parserResult['os_family']);
         $osVersion = null;
-        $osMaker   = $parserResult['os_company'];
-        
-        switch ($osName) {
-            case 'unknown':
-            case 'Other':
-                $osName  = null;
-                $osMaker = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $osMaker   = $mapper->mapOsMaker($parserResult['os_company'], $osName);
         
         $result->setCapability('device_os', $osName);
         $result->setCapability(
-            'device_os_version',
-            $version->setVersion($osVersion)
+            'device_os_version', $version->setVersion($osVersion)
         );
         $result->setCapability('device_os_manufacturer', $osMaker);
         

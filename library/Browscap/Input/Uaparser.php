@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Helper\InputMapper;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -163,59 +164,18 @@ final class Uaparser extends Core
         $result->setCapability('useragent', $this->_agent);
         
         $version = new Version();
+        $version->setMode(
+            Version::COMPLETE
+            | Version::IGNORE_MINOR_IF_EMPTY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
         
-        $browserName    = $parserResult->ua->family;
-        $browserVersion = $parserResult->ua->toVersionString;
+        $mapper = new InputMapper();
         
-        switch ($browserName) {
-            case 'unknown':
-            case 'Other':
-                $browserName    = null;
-                $browserVersion = null;
-                break;
-            case 'IE':
-                $browserName = 'Internet Explorer';
-                break;
-            case 'IceWeasel':
-                $browserName = 'Iceweasel';
-                break;
-            case 'GomezA':
-                $browserName = 'GomezAgent';
-                break;
-            case 'Mobile Safari':
-                $browserName = 'Safari';
-                break;
-            case 'Chrome Mobile':
-                $browserName = 'Chrome';
-                break;
-            case 'Googlebot':
-                $browserName = 'Google Bot';
-                break;
-            case 'bingbot':
-                $browserName = 'BingBot';
-                break;
-            case 'Jakarta Commons-HttpClient':
-                $browserName = 'Jakarta Commons HttpClient';
-                break;
-            case 'AdsBot-Google':
-                $browserName = 'AdsBot Google';
-                break;
-            case 'SEOkicks-Robot':
-                $browserName = 'SEOkicks Robot';
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-        
-        switch ($browserVersion) {
-            case 'unknown':
-                $browserVersion = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $browserName    = $mapper->mapBrowserName($parserResult->ua->family);
+        // $browserType    = $mapper->mapBrowserType($parserResult['typ'], $browserName);
+        $browserVersion = $mapper->mapBrowserVersion($parserResult->ua->toVersionString, $browserName);
+        // $browserMaker   = $mapper->mapBrowserMaker($parserResult['ua_company'], $browserName);
         
         $result->setCapability('mobile_browser', $browserName);
         $result->setCapability(
@@ -223,19 +183,15 @@ final class Uaparser extends Core
         );
         
         $version = new Version();
+        $version->setMode(
+            Version::COMPLETE
+            | Version::IGNORE_MINOR_IF_EMPTY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
         
-        $osName    = $parserResult->os->family;
-        $osVersion = $parserResult->os->toVersionString;
-        
-        switch ($osName) {
-            case 'Other':
-                $osName    = null;
-                $osVersion = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $osName    = $mapper->mapOsName($parserResult->os->family);
+        $osVersion = $mapper->mapOsVersion($parserResult->os->toVersionString, $osName);
+        // $osMaker   = $mapper->mapOsMaker($parserResult['os_company'], $osName);
         
         $result->setCapability('device_os', $osName);
         $result->setCapability(
@@ -243,18 +199,11 @@ final class Uaparser extends Core
             $version->setVersion($osVersion)
         );
         
-        $device = $parserResult->device->family;
+        $deviceName  = $mapper->mapDeviceName($parserResult->device->family);
+        $deviceMaker = $mapper->mapDeviceMaker(null, $deviceName);
         
-        switch ($device) {
-            case 'Other':
-                $device = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-        
-        $result->setCapability('model_name', $device);
+        $result->setCapability('model_name', $deviceName);
+        $result->setCapability('manufacturer_name', $deviceMaker);
         
         return $result;
     }

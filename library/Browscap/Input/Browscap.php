@@ -45,6 +45,7 @@ namespace Browscap\Input;
 
 use \Browscap\Detector\Version;
 use \Browscap\Detector\Result;
+use \Browscap\Helper\InputMapper;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -133,6 +134,8 @@ class Browscap extends Core
             | Version::IGNORE_MICRO_IF_EMPTY
         );
         
+        $mapper = new InputMapper();
+        
         if (empty($browser['Browser_Name'])) {
             $browserName = $this->_detectProperty($browser, 'Browser');
         } else {
@@ -148,24 +151,7 @@ class Browscap extends Core
             );
         }
         
-        switch ($browserName) {
-            case 'IE':
-                $browserName = 'Internet Explorer';
-                break;
-            case 'Googlebot':
-                $browserName = 'Google Bot';
-                break;
-            case 'Android':
-                $browserName = 'Android Webkit';
-                break;
-            case 'unknown':
-            case 'Default Browser':
-                $browserName = null;
-                break;
-            default:
-                //nothing to do here
-                break;
-        }
+        $browserName = $mapper->mapBrowserName($browserName);
         
         $browserBits = $this->_detectProperty(
             $browser, 'Browser_Bits', true, $browserName
@@ -210,57 +196,8 @@ class Browscap extends Core
             $browser, 'Platform_Version', true, $platform
         );
         
-        $platform        = trim($platform);
-        $platformVersion = trim($platformVersion);
-        
-        switch ($platform) {
-            case 'WinXP':
-                $platform        = 'Windows';
-                $platformVersion = 'XP';
-                break;
-            case 'Win7':
-                $platform        = 'Windows';
-                $platformVersion = '7';
-                break;
-            case 'Win8':
-                $platform        = 'Windows';
-                $platformVersion = '8';
-                break;
-            case 'WinVista':
-                $platform        = 'Windows';
-                $platformVersion = 'Vista';
-                break;
-            case 'Win2000':
-                $platform        = 'Windows';
-                $platformVersion = '2000';
-                break;
-            case 'Win2003':
-                $platform        = 'Windows';
-                $platformVersion = '2003';
-                break;
-            case 'Win98':
-                $platform        = 'Windows';
-                $platformVersion = '98';
-                break;
-            case 'WinPhone7':
-                $platform        = 'Windows Phone OS';
-                $platformVersion = '7';
-                break;
-            case 'BlackBerry OS':
-                $platform = 'RIM OS';
-                break;
-            case 'unknown':
-                $platform        = null;
-                $platformVersion = null;
-                break;
-            default:
-                // nothing to do
-                break;
-        }
-        
-        if ('unknown' === $platformVersion || '' === $platformVersion) {
-            $platformVersion = null;
-        }
+        $platform        = $mapper->mapOsName(trim($platform));
+        $platformVersion = $mapper->mapOsVersion(trim($platformVersion), $platform);
         
         $platformbits = $this->_detectProperty(
             $browser, 'Platform_Bits', true, $platform
@@ -283,16 +220,7 @@ class Browscap extends Core
         
         $result->setCapability('device_type', $deviceType);
         
-        switch ($deviceName) {
-            case 'PC':
-            case 'Android':
-            case 'unknown':
-                $deviceName = null;
-                break;
-            default:
-                // nothing to do
-                break;
-        }
+        $deviceName = $mapper->mapDeviceName($deviceName);
         
         $deviceMaker = $this->_detectProperty(
             $browser, 'Device_Maker', true, $deviceName
@@ -306,15 +234,7 @@ class Browscap extends Core
             $browser, 'Device_Brand_Name', true, $deviceName
         );
         
-        switch (strtolower($deviceMaker)) {
-            case 'unknown':
-            case 'various':
-                $deviceMaker = null;
-                break;
-            default:
-                // nothing to do
-                break;
-        }
+        $deviceMaker = $mapper->mapDeviceMaker($deviceMaker, $deviceName);
         
         $result->setCapability('model_name', $deviceName);
         $result->setCapability('marketing_name', $deviceMarketingName);
