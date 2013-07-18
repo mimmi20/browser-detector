@@ -80,6 +80,7 @@ final class InputMapper
         
         switch (strtolower($browserInput)) {
             case 'unknown':
+            case 'other':
             case 'default browser':
                 $browserName = null;
                 break;
@@ -133,6 +134,7 @@ final class InputMapper
     {
         switch (strtolower($browserVersion)) {
             case 'unknown':
+            case 'other':
                 $browserVersion = null;
                 break;
             default:
@@ -142,6 +144,7 @@ final class InputMapper
         
         switch (strtolower($browserName)) {
             case 'unknown':
+            case 'other':
                 $browserVersion = null;
                 break;
             default:
@@ -164,6 +167,7 @@ final class InputMapper
     {
         switch (strtolower($browserType)) {
             case 'unknown':
+            case 'other':
                 $browserType = null;
                 break;
             default:
@@ -173,6 +177,7 @@ final class InputMapper
         
         switch (strtolower($browserName)) {
             case 'unknown':
+            case 'other':
             case '':
                 $browserType = null;
                 break;
@@ -199,6 +204,7 @@ final class InputMapper
     {
         switch (strtolower($browserMaker)) {
             case 'unknown':
+            case 'other':
                 $browserMaker = null;
                 break;
             default:
@@ -208,6 +214,7 @@ final class InputMapper
         
         switch (strtolower($browserName)) {
             case 'unknown':
+            case 'other':
             case '':
                 $browserMaker = null;
                 break;
