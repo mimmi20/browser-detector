@@ -413,10 +413,10 @@ final class WurflCloud extends Core
                 }
                 
                 switch ($marketingName) {
-                    case 'Galaxy SII':
+                    case 'Galaxy S II':
                         $marketingName = 'Galaxy S II';
                         break;
-                    case 'Galaxy SII LTE':
+                    case 'Galaxy S II LTE':
                         $marketingName = 'Galaxy S II LTE';
                         break;
                     case 'LG Optimus Chat':

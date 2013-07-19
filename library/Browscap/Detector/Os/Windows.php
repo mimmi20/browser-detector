@@ -76,7 +76,7 @@ class Windows
         'device_os'              => 'Windows',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Microsoft', // not in wurfl
+        'device_os_manufacturer' => 'Microsoft Corporation', // not in wurfl
     );
     
     /**

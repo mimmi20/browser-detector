@@ -85,7 +85,7 @@ final class SamsungSphd710
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy SII Epic 4G Touch',
+        'marketing_name'            => 'Galaxy S II Epic 4G Touch',
         'has_qwerty_keyboard'       => true, // wurflkey: samsung_sph_d710_ver1_suban40rom
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

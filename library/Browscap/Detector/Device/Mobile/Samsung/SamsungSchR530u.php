@@ -85,7 +85,7 @@ final class SamsungSchR530u
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => 'for US Cellular', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'marketing_name'            => 'Galaxy SIII',     // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'marketing_name'            => 'Galaxy S III',     // wurflkey: samsung_gt_i9300_ver1_subuauscellular
         'has_qwerty_keyboard'       => true,              // wurflkey: samsung_gt_i9300_ver1_subuauscellular
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

@@ -114,6 +114,9 @@ final class InputMapper
             case 'seokicks-robot':
                 $browserName = 'SEOkicks Robot';
                 break;
+            case 'gomeza':
+                $browserName = 'GomezAgent';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -169,6 +172,12 @@ final class InputMapper
             case 'unknown':
             case 'other':
                 $browserType = null;
+                break;
+            case 'mobile browser':
+                $browserType = 'Browser';
+                break;
+            case 'robot':
+                $browserType = 'Bot/Crawler';
                 break;
             default:
                 // nothing to do here
@@ -255,6 +264,10 @@ final class InputMapper
             case 'blackberry os':
                 $osName = 'RIM OS';
                 break;
+            case 'macosx':
+            case 'os x':
+                $osName = 'Mac OS X';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -277,6 +290,10 @@ final class InputMapper
             case 'unknown':
             case 'other':
                 $osMaker = null;
+                break;
+            case 'Google Inc.':
+            case 'Google, Inc.':
+                $osMaker = 'Google Inc';
                 break;
             default:
                 // nothing to do here
@@ -396,6 +413,9 @@ final class InputMapper
             case 'windows mobile (opera)':
                 $deviceName = 'general Mobile Device';
                 break;
+            case 'spider':
+                $deviceName = 'general Bot';
+                break;
             // Motorola
             case 'motomz616':
                 $deviceName = 'MZ616';
@@ -419,6 +439,12 @@ final class InputMapper
                 break;
             case 'gt-i8350':
                 $deviceName = 'GT-I8350';
+                break;
+            case 'gt-i9100':
+                $deviceName = 'GT-I9100';
+                break;
+            case 'gt-i9300':
+                $deviceName = 'GT-I9300';
                 break;
             case 'gt-i5500':
                 $deviceName = 'GT-I5500';
@@ -559,7 +585,8 @@ final class InputMapper
             case 'gt s8500':
             case 'gp-p6810':
             case 'gt-i8350':
-            case 'gt-i5500':
+            case 'gt-i9100':
+            case 'gt-i9300':
             case 'gt i7500':
             case 'gt s5620':
             case 'sgh-i917':
@@ -606,6 +633,11 @@ final class InputMapper
             // Medion
             case 'p9514':
                 $deviceMaker = 'Medion';
+                break;
+            // Apple
+            case 'ipad':
+            case 'iphone':
+                $deviceMaker = 'Apple Inc';
                 break;
             default:
                 // nothing to do here
@@ -687,6 +719,13 @@ final class InputMapper
             case 'p9514':
                 $marketingName = 'LifeTab P9514';
                 break;
+            // Apple
+            case 'ipad':
+                $marketingName = 'iPad';
+                break;
+            case 'iphone':
+                $marketingName = 'iPhone';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -750,6 +789,11 @@ final class InputMapper
             // Medion
             case 'p9514':
                 $brandName = 'Medion';
+                break;
+            // Apple
+            case 'ipad':
+            case 'iphone':
+                $brandName = 'Apple';
                 break;
             default:
                 // nothing to do here

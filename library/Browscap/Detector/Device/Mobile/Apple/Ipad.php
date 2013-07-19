@@ -82,7 +82,7 @@ final class Ipad
         // device
         'model_name'                => 'iPad',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple',
+        'manufacturer_name'         => 'Apple Inc',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
         'marketing_name'            => 'iPad',

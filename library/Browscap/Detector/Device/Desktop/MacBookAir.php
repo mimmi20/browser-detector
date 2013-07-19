@@ -82,7 +82,7 @@ final class MacBookAir
         // device
         'model_name'                => 'MacBook Air',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple',
+        'manufacturer_name'         => 'Apple Inc',
         'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,

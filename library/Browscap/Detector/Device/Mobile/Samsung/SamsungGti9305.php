@@ -85,7 +85,7 @@ final class SamsungGti9305
         'manufacturer_name'         => 'Samsung',
         'brand_name'                => 'Samsung',
         'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy SIII LTE International', // wurflkey: samsung_gt_i9305_ver1_suban41xxa
+        'marketing_name'            => 'Galaxy S III LTE International', // wurflkey: samsung_gt_i9305_ver1_suban41xxa
         'has_qwerty_keyboard'       => true,                          // wurflkey: samsung_gt_i9305_ver1_suban41xxa
         'pointing_method'           => 'touchscreen',
         'device_bits'               => null, // not in wurfl

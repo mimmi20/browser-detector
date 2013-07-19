@@ -78,7 +78,7 @@ class MicrosoftWord extends MicrosoftOffice
         'mobile_browser'              => 'Word',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Microsoft', // not in wurfl
+        'mobile_browser_manufacturer' => 'Microsoft Corporation', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info

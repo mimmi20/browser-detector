@@ -82,7 +82,7 @@ final class Ipod
         // device
         'model_name'                => 'iPod Touch',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple',
+        'manufacturer_name'         => 'Apple Inc',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
         'marketing_name'            => 'iPod Touch',

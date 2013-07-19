@@ -83,7 +83,7 @@ class Firebird
         'mobile_browser'              => 'Firebird',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Mozilla', // not in wurfl
+        'mobile_browser_manufacturer' => 'Mozilla Foundation', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info

@@ -787,7 +787,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'Macintosh':
-                    case 'MacOSX':
+                    case 'Mac OS X':
                     case 'Mac68K':
                     case 'Darwin':
                         $properties['Device_Name'] = 'Macintosh';

@@ -75,7 +75,7 @@ class Ios
         'device_os'              => 'iOS',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Apple', // not in wurfl
+        'device_os_manufacturer' => 'Apple Inc', // not in wurfl
     );
     
     /**

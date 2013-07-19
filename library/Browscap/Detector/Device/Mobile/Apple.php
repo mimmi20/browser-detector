@@ -82,7 +82,7 @@ final class Apple
         // device
         'model_name'                => 'general Apple Device',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple',
+        'manufacturer_name'         => 'Apple Inc',
         'brand_name'                => 'Apple',
         'model_extra_info'          => null,
         'marketing_name'            => null,

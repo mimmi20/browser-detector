@@ -71,10 +71,10 @@ class Macosx
         'wurflKey' => null, // not in wurfl
         
         // os
-        'device_os'              => 'MacOSX',
+        'device_os'              => 'Mac OS X',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Apple', // not in wurfl
+        'device_os_manufacturer' => 'Apple Inc', // not in wurfl
     );
     
     /**

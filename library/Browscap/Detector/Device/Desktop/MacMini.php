@@ -82,7 +82,7 @@ final class MacMini
         // device
         'model_name'                => 'Mac Mini',
         'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple',
+        'manufacturer_name'         => 'Apple Inc',
         'brand_name'                => null,
         'model_extra_info'          => null,
         'marketing_name'            => null,
