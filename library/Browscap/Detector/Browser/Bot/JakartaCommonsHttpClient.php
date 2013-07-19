@@ -73,14 +73,14 @@ class JakartaCommonsHttpClient
         'is_bot'                => true,
         'is_transcoder'         => false,
         'is_syndication_reader' => false,         // not in wurfl
-        'browser_type'          => 'Bot/Crawler', // not in wurfl
+        'browser_type'          => 'Library',     // not in wurfl
         'is_banned'             => false,         // not in wurfl
         
         // browser
         'mobile_browser'              => 'Jakarta Commons HttpClient',
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
+        'mobile_browser_manufacturer' => 'Apache Software Foundation', // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // product info

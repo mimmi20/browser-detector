@@ -190,9 +190,6 @@ final class InputMapper
             case '':
                 $browserType = null;
                 break;
-            case 'zend_http_client':
-                $browserType = 'Bot/Crawler';
-                break;
             default:
                 // nothing to do here
                 break;
@@ -452,6 +449,9 @@ final class InputMapper
             case 'gt i7500':
                 $deviceName = 'GT-I7500';
                 break;
+            case 'gt-p5110':
+                $deviceName = 'GT-P5110';
+                break;
             case 'gt s5620':
                 $deviceName = 'GT-S5620';
                 break;
@@ -588,6 +588,7 @@ final class InputMapper
             case 'gt-i9100':
             case 'gt-i9300':
             case 'gt i7500':
+            case 'gt-p5110':
             case 'gt s5620':
             case 'sgh-i917':
             case 'sgh-i957':

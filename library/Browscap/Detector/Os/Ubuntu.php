@@ -74,7 +74,7 @@ class Ubuntu
         'device_os'              => 'Ubuntu',
         'device_os_version'      => '',
         'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Canonical', // not in wurfl
+        'device_os_manufacturer' => 'Canonical Ltd', // not in wurfl
     );
     
     /**
