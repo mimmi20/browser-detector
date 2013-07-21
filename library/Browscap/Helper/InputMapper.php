@@ -807,4 +807,28 @@ final class InputMapper
         
         return $brandName;
     }
+    
+    /**
+     * maps the value for the frame/iframe support
+     *
+     * @param string|boolean $support
+     *
+     * @return string
+     */
+    public function mapFrameSupport($support)
+    {
+        switch ($support) {
+            case true:
+                $support = 'full';
+                break;
+            case false:
+                $support = 'none';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $support;
+    }
 }

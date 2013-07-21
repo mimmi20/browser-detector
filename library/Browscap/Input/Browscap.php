@@ -322,43 +322,77 @@ class Browscap extends Core
             );
         }
         
-        $supportFrames = $browser['Frames'];
-        
-        switch ($supportFrames) {
-            case true:
-                $supportFrames = 'full';
-                break;
-            case false:
-                $supportFrames = 'none';
-                break;
-            default:
-                // nothing to do here
-                break;
+        if (!empty($browser['Frames'])) {
+            $framesSupport = $browser['Frames'];
+        } else {
+            $framesSupport = null;
         }
         
-        $result->setCapability('xhtml_supports_frame', $supportFrames);
+        $result->setCapability('xhtml_supports_frame', $mapper->mapFrameSupport($framesSupport));
         
-        $supportFrames = $browser['IFrames'];
-        
-        switch ($supportFrames) {
-            case true:
-                $supportFrames = 'full';
-                break;
-            case false:
-                $supportFrames = 'none';
-                break;
-            default:
-                // nothing to do here
-                break;
+        if (!empty($browser['IFrames'])) {
+            $framesSupport = $browser['IFrames'];
+        } else {
+            $framesSupport = null;
         }
-        $result->setCapability('xhtml_supports_iframe', $supportFrames);
-        $result->setCapability('xhtml_table_support', $browser['Tables']);
-        $result->setCapability('cookie_support', $browser['Cookies']);
-        $result->setCapability('supports_background_sounds', $browser['BackgroundSounds']);
-        $result->setCapability('supports_vb_script', $browser['VBScript']);
-        $result->setCapability('ajax_support_javascript', $browser['JavaScript']);
-        $result->setCapability('supports_java_applets', $browser['JavaApplets']);
-        $result->setCapability('supports_activex_controls', $browser['ActiveXControls']);
+        
+        $result->setCapability('xhtml_supports_iframe', $mapper->mapFrameSupport($framesSupport));
+        
+        if (!empty($browser['Tables'])) {
+            $tablesSupport = $browser['Tables'];
+        } else {
+            $tablesSupport = null;
+        }
+        
+        $result->setCapability('xhtml_table_support', $tablesSupport);
+        
+        if (!empty($browser['Cookies'])) {
+            $cookieSupport = $browser['Cookies'];
+        } else {
+            $cookieSupport = null;
+        }
+        
+        $result->setCapability('cookie_support', $cookieSupport);
+        
+        if (!empty($browser['BackgroundSounds'])) {
+            $bgsoundSupport = $browser['BackgroundSounds'];
+        } else {
+            $bgsoundSupport = null;
+        }
+        
+        $result->setCapability('supports_background_sounds', $bgsoundSupport);
+        
+        if (!empty($browser['VBScript'])) {
+            $vbSupport = $browser['VBScript'];
+        } else {
+            $vbSupport = null;
+        }
+        
+        $result->setCapability('supports_vb_script', $vbSupport);
+        
+        if (!empty($browser['JavaScript'])) {
+            $jsSupport = $browser['JavaScript'];
+        } else {
+            $jsSupport = null;
+        }
+        
+        $result->setCapability('ajax_support_javascript', $jsSupport);
+        
+        if (!empty($browser['JavaApplets'])) {
+            $appletsSupport = $browser['JavaApplets'];
+        } else {
+            $appletsSupport = null;
+        }
+        
+        $result->setCapability('supports_java_applets', $appletsSupport);
+        
+        if (!empty($browser['ActiveXControls'])) {
+            $activexSupport = $browser['ActiveXControls'];
+        } else {
+            $activexSupport = null;
+        }
+        
+        $result->setCapability('supports_activex_controls', $activexSupport);
         
         return $result;
     }
