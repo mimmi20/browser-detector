@@ -1440,10 +1440,12 @@ class Browscap extends Core
 
         foreach ($parents as $parent) {
             if (!isset($browsers[$parent])) {
+                var_dump('Parent not found for key "' . $sUserAgent . '"');
                 continue;
             }
             
             if (!is_array($browsers[$parent])) {
+                var_dump('empty Parent found for key "' . $sUserAgent . '"');
                 continue;
             }
             
