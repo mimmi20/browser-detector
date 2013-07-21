@@ -172,8 +172,10 @@ class Browscap extends Core
         
         if (!empty($browser['Browser_Type'])) {
             $browserType = $browser['Browser_Type'];
-        } else {
+        } elseif (!empty($browser['Category'])) {
             $browserType = $browser['Category'];
+        } else {
+            $browserType = null;
         }
         
         $result->setCapability('browser_type', $browserType);
