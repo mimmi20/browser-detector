@@ -84,10 +84,10 @@ final class InputMapper
         
         switch (strtolower($browserInput)) {
             // case 'unknown':
-            // case 'other':
+            case 'other':
             // case 'default browser':
-                // $browserName = null;
-                // break;
+                $browserName = null;
+                break;
             case 'ie':
                 $browserName = 'Internet Explorer';
                 break;
