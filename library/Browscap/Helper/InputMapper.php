@@ -64,12 +64,16 @@ final class InputMapper
     /**
      * mapps the browser
      *
-     * @param string
+     * @param string $browserInput
      *
      * @return string
      */
     public function mapBrowserName($browserInput)
     {
+        if (null === $browserInput) {
+            return null;
+        }
+        
         if (!is_string($browserInput)) {
             throw new \UnexpectedValueException(
                 'a string is required as input in this function'
