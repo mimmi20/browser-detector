@@ -236,12 +236,10 @@ class Browscap extends Core
             $browser, 'Device_Brand_Name', true, $deviceName
         );
         
-        $deviceMaker = $mapper->mapDeviceMaker($deviceMaker, $deviceName);
-        
         $result->setCapability('model_name', $deviceName);
-        $result->setCapability('marketing_name', $deviceMarketingName);
-        $result->setCapability('brand_name', $deviceBrandName);
-        $result->setCapability('manufacturer_name', $deviceMaker);
+        $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName($deviceMarketingName, $deviceName));
+        $result->setCapability('brand_name', $mapper->mapDeviceBrandName($deviceBrandName, $deviceName));
+        $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker($deviceMaker, $deviceName));
         
         $engineName = $this->_detectProperty($browser, 'RenderingEngine_Name');
         
