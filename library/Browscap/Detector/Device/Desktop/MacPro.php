@@ -83,7 +83,7 @@ final class MacPro
         'model_name'                => 'MacPro',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'Apple Inc',
-        'brand_name'                => null,
+        'brand_name'                => 'Apple',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,

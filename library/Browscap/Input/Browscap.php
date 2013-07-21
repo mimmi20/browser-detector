@@ -322,8 +322,36 @@ class Browscap extends Core
             );
         }
         
-        $result->setCapability('xhtml_supports_frame', $browser['Frames']);
-        $result->setCapability('xhtml_supports_iframe', $browser['IFrames']);
+        $supportFrames = $browser['Frames'];
+        
+        switch ($supportFrames) {
+            case true:
+                $supportFrames = 'full';
+                break;
+            case false:
+                $supportFrames = 'none';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $result->setCapability('xhtml_supports_frame', $supportFrames);
+        
+        $supportFrames = $browser['IFrames'];
+        
+        switch ($supportFrames) {
+            case true:
+                $supportFrames = 'full';
+                break;
+            case false:
+                $supportFrames = 'none';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        $result->setCapability('xhtml_supports_iframe', $supportFrames);
         $result->setCapability('xhtml_table_support', $browser['Tables']);
         $result->setCapability('cookie_support', $browser['Cookies']);
         $result->setCapability('supports_background_sounds', $browser['BackgroundSounds']);

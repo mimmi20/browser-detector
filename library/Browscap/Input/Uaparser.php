@@ -191,7 +191,6 @@ final class Uaparser extends Core
         
         $osName    = $mapper->mapOsName($parserResult->os->family);
         $osVersion = $mapper->mapOsVersion($parserResult->os->toVersionString, $osName);
-        // $osMaker   = $mapper->mapOsMaker($parserResult['os_company'], $osName);
         
         $result->setCapability('device_os', $osName);
         $result->setCapability(
@@ -200,10 +199,11 @@ final class Uaparser extends Core
         );
         
         $deviceName  = $mapper->mapDeviceName($parserResult->device->family);
-        $deviceMaker = $mapper->mapDeviceMaker(null, $deviceName);
         
         $result->setCapability('model_name', $deviceName);
-        $result->setCapability('manufacturer_name', $deviceMaker);
+        $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker(null, $deviceName));
+        $result->setCapability('brand_name', $mapper->mapDeviceBrandName(null, $deviceName));
+        $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName(null, $deviceName));
         
         return $result;
     }

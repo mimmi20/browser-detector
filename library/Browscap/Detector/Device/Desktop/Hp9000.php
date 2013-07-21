@@ -83,7 +83,7 @@ final class Hp9000
         'model_name'                => '9000',
         'model_version'             => null, // not in wurfl
         'manufacturer_name'         => 'HP',
-        'brand_name'                => null,
+        'brand_name'                => 'HP',
         'model_extra_info'          => null,
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => true,
