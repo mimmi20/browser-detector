@@ -182,7 +182,7 @@ final class GeneralMobile
     protected function _parseProperties()
     {
         if ($this->utils->checkIfContains(array('Android; Tablet'))) {
-            $this->setCapability('is_tablet', true);
+            $this->setCapability('device_type', new DeviceType\Tablet());
             
             $this->setCapability('physical_screen_width', 112);
             $this->setCapability('physical_screen_height', 187);
@@ -197,19 +197,17 @@ final class GeneralMobile
             $this->setCapability('sms_enabled', true);
             $this->setCapability('nfc_support', true);
             
-            $this->setCapability('device_type', 'Tablet');
-            
             return $this;
         }
         
         if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux'))) {
-            $this->setCapability('device_type', 'Mobile Phone');
+            $this->setCapability('device_type', new DeviceType\MobilePhone());
             
             return $this;
         }
         
         if ($this->utils->checkIfContains(array('Opera Tablet'))) {
-            $this->setCapability('is_tablet', true);
+            $this->setCapability('device_type', new DeviceType\Tablet());
             
             $this->setCapability('physical_screen_width', 100);
             $this->setCapability('physical_screen_height', 200);
@@ -222,13 +220,11 @@ final class GeneralMobile
             $this->setCapability('dual_orientation', true);
             $this->setCapability('can_assign_phone_number', true);
             
-            $this->setCapability('device_type', 'Tablet');
-            
             return $this;
         }
         
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            $this->setCapability('is_tablet', false);
+            $this->setCapability('device_type', new DeviceType\MobilePhone());
             
             $this->setCapability('physical_screen_width', 50);
             $this->setCapability('physical_screen_height', 84);
@@ -245,15 +241,13 @@ final class GeneralMobile
             $this->setCapability('sms_enabled', true);
             $this->setCapability('nfc_support', true);
             
-            $this->setCapability('device_type', 'Mobile Phone');
-            
             $this->setCapability('wurflKey', 'generic_ms_phone_os7_5_desktopmode');
             
             return $this;
         }
         
         if ($this->utils->checkIfContains(array('Opera Mobi'))) {
-            $this->setCapability('is_tablet', false);
+            $this->setCapability('device_type', new DeviceType\MobilePhone());
             
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -267,8 +261,6 @@ final class GeneralMobile
             $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('pointing_method', 'touchscreen');
-            
-            $this->setCapability('device_type', 'Mobile Phone');
             
             $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
             
@@ -276,7 +268,7 @@ final class GeneralMobile
         }
         
         if ($this->utils->checkIfContains(array('Opera Mini'))) {
-            $this->setCapability('is_tablet', false);
+            $this->setCapability('device_type', new DeviceType\MobilePhone());
             
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -291,15 +283,13 @@ final class GeneralMobile
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('pointing_method', 'touchscreen');
             
-            $this->setCapability('device_type', 'Mobile Phone');
-            
             $this->setCapability('wurflKey', 'generic_opera_mini_android');
             
             return $this;
         }
         
         if ($this->utils->checkIfContains(array('Windows Phone 6.5'))) {
-            $this->setCapability('is_tablet', false);
+            $this->setCapability('device_type', new DeviceType\MobilePhone());
             
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -314,8 +304,6 @@ final class GeneralMobile
             $this->setCapability('has_qwerty_keyboard', false);
             $this->setCapability('pointing_method', 'stylus');
             $this->setCapability('colors', 4096);
-            
-            $this->setCapability('device_type', 'Mobile Phone');
             
             $this->setCapability('wurflKey', 'generic_opera_mini_android');
             
@@ -347,7 +335,7 @@ final class GeneralMobile
                 if ('Android' == $os->getCapability('device_os')) {
                     $os->getCapability('device_os_version')->setVersion('2.0');
                     
-                    if ($this->getCapability('is_tablet')) {
+                    if ($this->getCapability('device_type')->isTablet()) {
                         $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec_tablet');
                     } else {
                         $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec');
@@ -485,7 +473,7 @@ final class GeneralMobile
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         
-        if ($this->getCapability('is_tablet')) {
+        if ($this->getCapability('device_type')->isTablet()) {
             $this->setCapability('sms_enabled', false);
             $this->setCapability('nfc_support', false);
             $this->setCapability('can_assign_phone_number', false);

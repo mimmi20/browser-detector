@@ -68,7 +68,18 @@ final class SamsungSshR730
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        
+        $this->properties = array(
             'wurflKey' => null, // not in wurfl
             
             // kind of device

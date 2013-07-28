@@ -47,6 +47,8 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
  * WURFL_Handlers_Handler is the base class that combines the classification of
@@ -85,8 +87,6 @@ abstract class BrowserHandler
      */
     protected $properties = array();
     
-    protected $manufacturer = null;
-    
     /**
      * Class Constructor
      *
@@ -96,14 +96,9 @@ abstract class BrowserHandler
     {
         $this->utils = new Utils();
         
-        $this->manufacturer = new Company\Unknown();
-        
         $this->properties = array(
             // kind of browser
-            'browser_type'  => 'unknown', // not in wurfl
-            'is_bot'        => false,
-            'is_transcoder' => false, // not in wurfl
-            'is_banned'     => false, // not in wurfl
+            'browser_type' => new BrowserType\Unknown(), // not in wurfl
             
             'device_claims_web_support' => false,
             

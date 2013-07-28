@@ -217,8 +217,6 @@ final class AmazonKftt
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        $browser->setCapability('is_transcoder', true);
-        
         if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
             $this->setCapability('wurflKey', 'amazon_kindle_fire_hd7_ver1_subuanosilk');
         }
