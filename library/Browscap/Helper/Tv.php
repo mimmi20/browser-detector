@@ -54,7 +54,7 @@ final class Tv
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    private $_utils = null;
+    private $utils = null;
     
     /**
      * Class Constructor
@@ -63,7 +63,7 @@ final class Tv
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
     }
     
     /**
@@ -74,7 +74,7 @@ final class Tv
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -98,7 +98,7 @@ final class Tv
             'xbox'
         );
         
-        if ($this->_utils->checkIfContains($tvDevices, true)) {
+        if ($this->utils->checkIfContains($tvDevices, true)) {
             return true;
         }
         

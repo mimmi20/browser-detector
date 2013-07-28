@@ -57,9 +57,9 @@ use \Zend\Db\Table\AbstractTable as ZendDbTableAbstractTable;
 abstract class ModelAbstract extends ZendDbTableAbstractTable
 {
     /**
-     * @var SF_Model_Cache_Abstract
+     * @var SF_Modelcache_Abstract
      */
-    protected $_cache;
+    protected $cache;
 
     /**
      * @var Zend_Config
@@ -113,27 +113,27 @@ abstract class ModelAbstract extends ZendDbTableAbstractTable
      */
     public function getCached($tagged = null)
     {
-        if (null === $this->_cache) {
-            $this->_cache = new ModelCache(
+        if (null === $this->cache) {
+            $this->cache = new ModelCache(
                 $this,
                 $this->_config->resources->cachemanager->model
             );
             
-            $this->_cache->setTagged($tagged);
+            $this->cache->setTagged($tagged);
         }
         
-        return $this->_cache;
+        return $this->cache;
     }
 
     /**
      * Get the cache instance, configure a new instance
      * if one not present.
      *
-     * @return Zend_Cache
+     * @return Zendcache
      */
     public function getCache()
     {
-        return $this->_cache->getCache();
+        return $this->cache->getCache();
     }
 
     /**
@@ -151,12 +151,12 @@ abstract class ModelAbstract extends ZendDbTableAbstractTable
      *
      * @param  string       $mode
      * @param  array|string $tags
-     * @throws Zend_Cache_Exception
+     * @throws Zendcache_Exception
      * @return boolean True if ok
      */
     public function clean($mode = 'all', $tags = array())
     {
-        return $this->_cache->getCache()->clean($mode, $tags);
+        return $this->cache->getCache()->clean($mode, $tags);
     }
     
     abstract public function getResource();

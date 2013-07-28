@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Company;
 
 /**
  * PHP version 5.3
@@ -41,74 +41,26 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-
 /**
- * SendoUserAgentHandler
- * 
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Sendo
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+final class Openvas extends AbstractCompany implements CompanyInterface
 {
     /**
-     * the detected browser properties
+     * the name of the company
      *
-     * @var array
+     * @var string
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'Sendo',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Sendo', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
+    protected $name = 'openvas.org';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * the brand name of the company
      *
-     * @return bool
+     * @var string
      */
-    public function canHandle()
-    {
-        return(strpos($this->_useragent, 'Sendo') === 0);
-    }
+    protected $brandname = 'OpenVAS';
 }

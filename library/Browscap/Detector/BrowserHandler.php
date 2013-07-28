@@ -69,66 +69,23 @@ abstract class BrowserHandler
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    protected $_utils = null;
+    protected $utils = null;
 
     /**
      * a \Zend\Cache object
      *
      * @var \Zend\Cache
      */
-    protected $_cache = null;
+    protected $cache = null;
     
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        'browser_type'  => 'unknown', // not in wurfl
-        'is_bot'        => false,
-        'is_transcoder' => false, // not in wurfl
-        'is_banned'     => false, // not in wurfl
-        
-        // device
-        // 'model_name'                => null,
-        // 'manufacturer_name'         => null,
-        // 'brand_name'                => null,
-        // 'model_extra_info'          => null,
-        // 'marketing_name'            => null,
-        // 'has_qwerty_keyboard'       => null,
-        // 'pointing_method'           => null,
-        'device_claims_web_support' => false,
-        
-        // browser
-        'mobile_browser'              => 'unknown',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => false,
-        'can_assign_phone_number'   => false,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // cache
-        'time_to_live_support' => null,
-        'total_cache_disable_support' => null,
-        
-        // bugs
-        'emptyok' => false,
-        'empty_option_value_support' => null,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
+    protected $properties = array();
+    
+    protected $manufacturer = null;
     
     /**
      * Class Constructor
@@ -137,7 +94,46 @@ abstract class BrowserHandler
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
+        
+        $this->manufacturer = new Company\Unknown();
+        
+        $this->properties = array(
+            // kind of browser
+            'browser_type'  => 'unknown', // not in wurfl
+            'is_bot'        => false,
+            'is_transcoder' => false, // not in wurfl
+            'is_banned'     => false, // not in wurfl
+            
+            'device_claims_web_support' => false,
+            
+            // browser
+            'mobile_browser'              => 'unknown',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => false,
+            'can_assign_phone_number'   => false,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // cache
+            'time_to_live_support' => null,
+            'total_cache_disable_support' => null,
+            
+            // bugs
+            'emptyok' => false,
+            'empty_option_value_support' => null,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
+        );
         
         $detector = new Version();
         $detector->setVersion('');
@@ -153,7 +149,7 @@ abstract class BrowserHandler
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -242,9 +238,22 @@ abstract class BrowserHandler
      */
     public function getCapability($capabilityName) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
-        return $this->_properties[$capabilityName];
+        switch ($capabilityName) {
+            case 'mobile_browser_version':
+                if (!($this->properties['mobile_browser_version'] instanceof Version)) {
+                    $detector = new Version();
+                    $detector->setVersion('');
+                    
+                    $this->setCapability('mobile_browser_version', $detector);
+                }
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this->properties[$capabilityName];
     }
     
     /**
@@ -258,9 +267,9 @@ abstract class BrowserHandler
      */
     public function setCapability($capabilityName, $capabilityValue = null) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
-        $this->_properties[$capabilityName] = $capabilityValue;
+        $this->properties[$capabilityName] = $capabilityValue;
         
         return $this;
     }
@@ -274,7 +283,7 @@ abstract class BrowserHandler
      * @return void
      * @throws InvalidArgumentException
      */
-    protected function _checkCapability($capabilityName) 
+    protected function checkCapability($capabilityName) 
     {
         if (empty($capabilityName)) {
             throw new \InvalidArgumentException(
@@ -282,7 +291,7 @@ abstract class BrowserHandler
             );
         }
         
-        if (!array_key_exists($capabilityName, $this->_properties)) {
+        if (!array_key_exists($capabilityName, $this->properties)) {
             throw new \InvalidArgumentException(
                 'no capability named [' . $capabilityName . '] is present.'
             );    
@@ -323,7 +332,7 @@ abstract class BrowserHandler
      */
     public function getCapabilities() 
     {
-        return $this->_properties;
+        return $this->properties;
     }
     
     /**

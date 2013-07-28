@@ -49,6 +49,8 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
  * @category  Browscap
@@ -66,38 +68,44 @@ class Silk
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return BrowserHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => true,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'Silk',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Amazon', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
+        $this->properties = array(
+            // kind of device
+            'browser_type' => new BrowserType\Transcoder(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'Silk',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Amazon(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => false,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -106,7 +114,7 @@ class Silk
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Silk')) {
+        if (!$this->utils->checkIfContains('Silk')) {
             return false;
         }
         
@@ -182,7 +190,7 @@ class Silk
         $engine->setCapability('max_url_length_in_requests', 128);
         $engine->setCapability('max_url_length_in_requests', 128);
         
-        if ($this->_utils->checkIfContains('(Linux; U;')) {
+        if ($this->utils->checkIfContains('(Linux; U;')) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         

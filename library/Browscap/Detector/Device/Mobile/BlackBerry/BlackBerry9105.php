@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,82 +68,62 @@ final class BlackBerry9105
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'blackberry9105_ver1_subos6', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'BlackBerry 9105',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'RIM',
-        'brand_name'                => 'RIM',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
-        'has_qwerty_keyboard'       => false,      // wurflkey: blackberry9105_ver1_subos6
-        'pointing_method'           => 'clickwheel',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_gprs/5.0.0.rdf',
-        'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_umts/5.0.0.rdf',
-        'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_edge/5.0.0.rdf',
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 36,
-        'rows'                   => 26,
-        'max_image_width'        => 340,
-        'max_image_height'       => 360,
-        'resolution_width'       => 360,
-        'resolution_height'      => 400,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
-        
-        // sms
-        'sms_enabled' => true,
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => true,
-    );
+        $this->properties = array(
+            'wurflKey' => 'blackberry9105_ver1_subos6', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'BlackBerry 9105',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Rim(),
+            'brand_name' => new Company\Rim(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
+            'has_qwerty_keyboard'       => false,      // wurflkey: blackberry9105_ver1_subos6
+            'pointing_method'           => 'clickwheel',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => true,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_gprs/5.0.0.rdf',
+            'uaprof2'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_umts/5.0.0.rdf',
+            'uaprof3'                   => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_edge/5.0.0.rdf',
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 27,
+            'physical_screen_height' => 27,
+            'columns'                => 36,
+            'rows'                   => 26,
+            'max_image_width'        => 340,
+            'max_image_height'       => 360,
+            'resolution_width'       => 360,
+            'resolution_height'      => 400,
+            'dual_orientation'       => false,
+            'colors'                 => 65536,
+            
+            // sms
+            'sms_enabled' => true,
+            
+            // chips
+            'nfc_support' => true,
+        );
+    }
     
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +132,7 @@ final class BlackBerry9105
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('BlackBerry 9105', 'BlackBerry9105'))) {
+        if (!$this->utils->checkIfContains(array('BlackBerry 9105', 'BlackBerry9105'))) {
             return false;
         }
         

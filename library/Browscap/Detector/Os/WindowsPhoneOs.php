@@ -51,6 +51,7 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -71,15 +72,25 @@ class WindowsPhoneOs
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Windows Phone OS',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Microsoft Corporation', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Windows Phone OS',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Microsoft(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -100,7 +111,7 @@ class WindowsPhoneOs
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone'))) {
+        if (!$this->utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone'))) {
             return false;
         }
         
@@ -124,13 +135,13 @@ class WindowsPhoneOs
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->setCapability('device_os_version', $detector->setVersion('7.5'));
             
             return;
         }
         
-        if ($this->_utils->checkIfContains(array('WPDesktop'))) {
+        if ($this->utils->checkIfContains(array('WPDesktop'))) {
             $this->setCapability('device_os_version', $detector->setVersion('8.0'));
             
             return;
@@ -188,7 +199,7 @@ class WindowsPhoneOs
     {
         parent::detectDependProperties($browser, $engine, $device);
         
-        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         

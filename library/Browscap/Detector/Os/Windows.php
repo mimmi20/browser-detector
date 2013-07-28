@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -69,15 +70,25 @@ class Windows
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Windows',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Microsoft Corporation', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Windows',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Microsoft(), // not in wurfl
+        );
+    }
     
     /**
      * @var string the detected platform
@@ -128,27 +139,27 @@ class Windows
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
         
-        if ($this->_utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90'))) {
+        if ($this->utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90'))) {
             $this->setCapability('device_os_version', $detector->setVersion('ME'));
             return;
         }
         
-        if ($this->_utils->checkIfContains(array('Win98'))) {
+        if ($this->utils->checkIfContains(array('Win98'))) {
             $this->setCapability('device_os_version', $detector->setVersion('98'));
             return;
         }
         
-        if ($this->_utils->checkIfContains(array('Win95'))) {
+        if ($this->utils->checkIfContains(array('Win95'))) {
             $this->setCapability('device_os_version', $detector->setVersion('95'));
             return;
         }
         
-        if ($this->_utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
+        if ($this->utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
             $this->setCapability('device_os_version', $detector->setVersion('RT 8'));
             return;
         }
         
-        if ($this->_utils->checkIfContains(array('Windows-NT'))) {
+        if ($this->utils->checkIfContains(array('Windows-NT'))) {
             $this->setCapability('device_os_version', $detector->setVersion('NT'));
             return;
         }

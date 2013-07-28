@@ -66,12 +66,12 @@ class Browscap
      *
      * @var \\Zend\\Cache
      */
-    private $_cache = null;
+    private $cache = null;
     
     /**
      * @var string
      */
-    private $_cachePrefix = '';
+    private $cachePrefix = '';
     
     /**
      * the user agent sent from the browser
@@ -110,7 +110,7 @@ class Browscap
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
-        $this->_cache = $cache;
+        $this->cache = $cache;
         
         return $this;
     }
@@ -130,7 +130,7 @@ class Browscap
             );
         }
         
-        $this->_cachePrefix = $prefix;
+        $this->cachePrefix = $prefix;
         
         return $this;
     }
@@ -245,16 +245,16 @@ class Browscap
             );
         }
         
-        $cacheId = hash('sha512', $this->_cachePrefix . $this->_agent);
+        $cacheId = hash('sha512', $this->cachePrefix . $this->_agent);
         $result  = null;
         
         if (!$forceDetect) {
-            $result = $this->_cache->load($cacheId);
+            $result = $this->cache->load($cacheId);
         }
         
         if ($forceDetect || !$result) {
-            $this->_interface->setCache($this->_cache)
-                ->setCachePrefix($this->_cachePrefix)
+            $this->_interface->setCache($this->cache)
+                ->setCachePrefix($this->cachePrefix)
                 ->setAgent($this->_agent)
             ;
             
@@ -268,9 +268,9 @@ class Browscap
             }
             
             if (!$forceDetect 
-                && $this->_cache instanceof \Zend\Cache\Frontend\Core
+                && $this->cache instanceof \Zend\Cache\Frontend\Core
             ) {
-                $this->_cache->save($result, $cacheId);
+                $this->cache->save($result, $cacheId);
             }
         }
         

@@ -51,7 +51,7 @@ use \Zend\Cache\Cache;
  * \AppCore\Model\Cache
  *
  * Cache proxy for models, proxies calls to the model to
- * the Zend_Cache class cache.
+ * the Zendcache class cache.
  *
  * @category  Browscap
  * @package   Browscap
@@ -67,9 +67,9 @@ class ModelCache
     private $_classMethods = array();
 
     /**
-     * @var Zend_Cache
+     * @var Zendcache
      */
-    private $_cache = null;
+    private $cache = null;
     
     /**
      * @var \Zend\Config
@@ -114,7 +114,7 @@ class ModelCache
      */
     public function setCache(Cache $cache)
     {
-        $this->_cache = $cache;
+        $this->cache = $cache;
     }
 
     /**
@@ -125,11 +125,11 @@ class ModelCache
      */
     public function getCache()
     {
-        if (null === $this->_cache) {
+        if (null === $this->cache) {
             $frontendOptions = $this->_options->frontend->options->toArray();
             $frontendOptions['cached_entity']  = $this->_model;
             
-            $this->_cache = Cache::factory(
+            $this->cache = Cache::factory(
                 $this->_options->frontend->name, 
                 $this->_options->backend->name, 
                 $frontendOptions, 
@@ -141,7 +141,7 @@ class ModelCache
             /**/
         }
         
-        return $this->_cache;
+        return $this->cache;
     }
 
     /**
@@ -159,7 +159,7 @@ class ModelCache
     }
 
     /**
-     * Proxy calls from here to Zend_Cache, Zend_Cache
+     * Proxy calls from here to Zendcache, Zendcache
      * will be using the Class frontend which caches the model
      * classes methods.
      *

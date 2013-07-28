@@ -54,7 +54,7 @@ final class Safari
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    private $_utils = null;
+    private $utils = null;
     
     /**
      * Class Constructor
@@ -63,7 +63,7 @@ final class Safari
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
     }
     
     /**
@@ -74,21 +74,21 @@ final class Safari
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
     
     public function isSafari()
     {
-        if (!$this->_utils->checkIfContains('Mozilla/')
-            && !$this->_utils->checkIfContains('Safari')
-            && !$this->_utils->checkIfContains('MobileSafari')
+        if (!$this->utils->checkIfContains('Mozilla/')
+            && !$this->utils->checkIfContains('Safari')
+            && !$this->utils->checkIfContains('MobileSafari')
         ) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains(array('Safari', 'AppleWebKit', 'CFNetwork'))) {
+        if (!$this->utils->checkIfContains(array('Safari', 'AppleWebKit', 'CFNetwork'))) {
             return false;
         }
         
@@ -136,7 +136,7 @@ final class Safari
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnSafari)) {
+        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -156,7 +156,7 @@ final class Safari
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit', 'CFNetwork', 'BlackBerry; U; BlackBerry'))) {
+        if ($this->utils->checkIfContains(array('PLAYSTATION', 'Browser/AppleWebKit', 'CFNetwork', 'BlackBerry; U; BlackBerry'))) {
             return false;
         }
         

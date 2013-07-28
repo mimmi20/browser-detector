@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,82 +68,62 @@ final class NokiaN800
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'nokia_n8_00_ver1', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'N8-00',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Nokia',
-        'brand_name'                => 'Nokia',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'N8',  // wurflkey: nokia_n8_00_ver1
-        'has_qwerty_keyboard'       => false, // wurflkey: nokia_n8_00_ver1
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 2,
-        'nokia_series'              => 60,
-        'nokia_edition'             => 5,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
-        'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 44,
-        'physical_screen_height' => 78,
-        'columns'                => 17,
-        'rows'                   => 13,
-        'max_image_width'        => 360,
-        'max_image_height'       => 600,
-        'resolution_width'       => 360,
-        'resolution_height'      => 640,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
-        
-        // sms
-        'sms_enabled' => true,
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => true,
-    );
+        $this->properties = array(
+            'wurflKey' => 'nokia_n8_00_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'N8-00',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Nokia(),
+            'brand_name' => new Company\Nokia(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'N8',  // wurflkey: nokia_n8_00_ver1
+            'has_qwerty_keyboard'       => false, // wurflkey: nokia_n8_00_ver1
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => true,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
+            'uaprof2'                   => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 44,
+            'physical_screen_height' => 78,
+            'columns'                => 17,
+            'rows'                   => 13,
+            'max_image_width'        => 360,
+            'max_image_height'       => 600,
+            'resolution_width'       => 360,
+            'resolution_height'      => 640,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
+            
+            // sms
+            'sms_enabled' => true,
+            
+            // chips
+            'nfc_support' => true,
+        );
+    }
     
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +132,7 @@ final class NokiaN800
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('NokiaN8-00'))) {
+        if (!$this->utils->checkIfContains(array('NokiaN8-00'))) {
             return false;
         }
         
@@ -226,7 +208,7 @@ final class NokiaN800
     {
         parent::detectDependProperties($browser, $engine, $os);
         
-        if ($this->_utils->checkIfContains(array('Series60/5.3'))) {
+        if ($this->utils->checkIfContains(array('Series60/5.3'))) {
             $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
             $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');
             $this->setCapability('colors', 16777216);

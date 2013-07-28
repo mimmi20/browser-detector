@@ -40,7 +40,7 @@ namespace Browscap\Input;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: Wurfl.php 543 2013-06-14 19:18:32Z tmu $
+ * @version   SVN: $Id$
  */
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -159,7 +160,7 @@ final class WurflCloud extends Core
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
-        $this->_cache = $cache;
+        $this->cache = $cache;
         
         return $this;
     }
@@ -179,7 +180,7 @@ final class WurflCloud extends Core
             );
         }
         
-        $this->_cachePrefix = $prefix;
+        $this->cachePrefix = $prefix;
         
         return $this;
     }
@@ -217,7 +218,7 @@ final class WurflCloud extends Core
             $allProperties = $device->getAllCapabilities();
             
             $apiKey = $device->id;
-            $apiMob = ('true' === $device->getCapability('is_wireless_device'));
+            $apiMob = ('true' === $device->getCapability('device_type')->isMobile());
             
             if ($apiMob) {
                 $apiOs    = ('iPhone OS' == $device->getCapability('device_os') ? 'iOS' : $device->getCapability('device_os'));
@@ -717,8 +718,7 @@ final class WurflCloud extends Core
                 'max_length_of_password', 'max_no_of_connection_settings',
                 'max_object_size', 'max_url_length_bookmark',
                 'max_url_length_cached_page', 'max_url_length_in_requests',
-                'max_url_length_homepage', 'colors', 'nokia_feature_pack',
-                'nokia_series', 'nokia_edition', 'physical_screen_width',
+                'max_url_length_homepage', 'colors', 'physical_screen_width',
                 'physical_screen_height', 'columns', 'rows', 'max_image_width',
                 'max_image_height', 'resolution_width', 'resolution_height'
             );

@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,82 +68,62 @@ final class SonyEricssonST26i
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'sony_st26i_ver1', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'ST26i',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Sony',
-        'brand_name'                => 'Sony',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Xperia J',
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => 'Cortex-A8', // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/ST26iR601.xml',
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 44,
-        'physical_screen_height' => 78,
-        'columns'                => 44,
-        'rows'                   => 32,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 854,
-        'dual_orientation'       => true,
-        'colors'                 => 262144,
-        
-        // sms
-        'sms_enabled' => true,
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => true,
-    );
+        $this->properties = array(
+            'wurflKey' => 'sony_st26i_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'ST26i',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Sony(),
+            'brand_name' => new Company\Sony(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Xperia J',
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => 'Cortex-A8', // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => true,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/ST26iR601.xml',
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 44,
+            'physical_screen_height' => 78,
+            'columns'                => 44,
+            'rows'                   => 32,
+            'max_image_width'        => 320,
+            'max_image_height'       => 400,
+            'resolution_width'       => 480,
+            'resolution_height'      => 854,
+            'dual_orientation'       => true,
+            'colors'                 => 262144,
+            
+            // sms
+            'sms_enabled' => true,
+            
+            // chips
+            'nfc_support' => true,
+        );
+    }
     
     /**
      * checks if this device is able to handle the useragent
@@ -150,11 +132,11 @@ final class SonyEricssonST26i
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('SonyEricssonST26i', 'SonyST26i', 'ST26i'))) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonST26i', 'SonyST26i', 'ST26i'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('SonyEricssonST26iv', 'SonyST26iv', 'ST26iv'))) {
+        if ($this->utils->checkIfContains(array('SonyEricssonST26iv', 'SonyST26iv', 'ST26iv'))) {
             return false;
         }
         

@@ -54,7 +54,7 @@ final class SpamCrawlerFake
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    private $_utils = null;
+    private $utils = null;
     
     /**
      * Class Constructor
@@ -63,7 +63,7 @@ final class SpamCrawlerFake
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
     }
     
     /**
@@ -74,7 +74,7 @@ final class SpamCrawlerFake
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -201,14 +201,14 @@ final class SpamCrawlerFake
             'zmeu'
         );
         
-        if ($this->_utils->checkIfContains($bots, true)) {
+        if ($this->utils->checkIfContains($bots, true)) {
             $noBot = array(
                 'google earth', 'google desktop', 'googletoolbar', 'googlet5',
                 'simbar', 'google web preview', 'googletv', 'google_impact',
                 'google page speed', 'google-tr', '=google', 'enusbingip'
             );
             
-            if ($this->_utils->checkIfContains($noBot, true)) {
+            if ($this->utils->checkIfContains($noBot, true)) {
                 return false;
             }
             
@@ -219,25 +219,25 @@ final class SpamCrawlerFake
             'searchtoolbar', 'searchalot ie', 'isearch', 'searchbar'
         );
         
-        if ($this->_utils->checkIfContains('search', true)
-            && !$this->_utils->checkIfContains($searchNoBot, true)
+        if ($this->utils->checkIfContains('search', true)
+            && !$this->utils->checkIfContains($searchNoBot, true)
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains('http', true)
-            && $this->_utils->checkIfContains('request', true)
+        if ($this->utils->checkIfContains('http', true)
+            && $this->utils->checkIfContains('request', true)
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains('curl', true)
-            && !$this->_utils->checkIfContains('boxee', true)
+        if ($this->utils->checkIfContains('curl', true)
+            && !$this->utils->checkIfContains('boxee', true)
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfStartsWith('Java/')) {
+        if ($this->utils->checkIfStartsWith('Java/')) {
             return true;
         }
         
@@ -247,7 +247,7 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->_utils->checkIfStartsWith(array('PHP/', 'PHP-SOAP/'))) {
+        if ($this->utils->checkIfStartsWith(array('PHP/', 'PHP-SOAP/'))) {
             return true;
         }
         
@@ -261,36 +261,36 @@ final class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
-        if ($this->_utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb'))) {
+        if ($this->utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb'))) {
             return false;
         }
         
-        if ($this->_utils->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
+        if ($this->utils->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome', 'ua:', 'user-agent:'), true)) {
+        if ($this->utils->checkIfContains(array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome', 'ua:', 'user-agent:'), true)) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains(array('internet explorer', 'blah'), true)
-            && !$this->_utils->checkIfContains(array('internet explorer anonymized by'), true)
+        if ($this->utils->checkIfContains(array('internet explorer', 'blah'), true)
+            && !$this->utils->checkIfContains(array('internet explorer anonymized by'), true)
         ) {
             return true;
         }
         
-        if (!$this->_utils->checkIfStartsWith('Mozilla/') // regular IE
-            && !$this->_utils->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
-            && !$this->_utils->checkIfContains('Windows CE') // Windows CE
-            && !$this->_utils->checkIfContains('Opera') // Opera
-            && $this->_utils->checkIfContains('MSIE')
+        if (!$this->utils->checkIfStartsWith('Mozilla/') // regular IE
+            && !$this->utils->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
+            && !$this->utils->checkIfContains('Windows CE') // Windows CE
+            && !$this->utils->checkIfContains('Opera') // Opera
+            && $this->utils->checkIfContains('MSIE')
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains('Gecko') 
-            && !$this->_utils->checkIfContains(array('like gecko', 'ubuntu'), true) 
-            && $this->_utils->checkIfContains(array('chrome', 'safari', 'internet explorer'), true)
+        if ($this->utils->checkIfContains('Gecko') 
+            && !$this->utils->checkIfContains(array('like gecko', 'ubuntu'), true) 
+            && $this->utils->checkIfContains(array('chrome', 'safari', 'internet explorer'), true)
         ) {
             return true;
         }
@@ -343,7 +343,7 @@ final class SpamCrawlerFake
         
         $doMatch = preg_match('/Windows NT ([\d\.]+);/', $this->_useragent, $matches);
         if ($doMatch) {
-            if (!$this->_utils->checkIfContains('linux', true) 
+            if (!$this->utils->checkIfContains('linux', true) 
                 && in_array($matches[1], $ntVersions)
             ) {
                 return false;
@@ -357,8 +357,8 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->_utils->checkIfStartsWith('Mozilla/') 
-            && $this->_utils->checkIfContains('MSIE')
+        if ($this->utils->checkIfStartsWith('Mozilla/') 
+            && $this->utils->checkIfContains('MSIE')
         ) {
             $doMatch = preg_match('/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/', $this->_useragent, $matches);
             if (!$doMatch) {
@@ -366,7 +366,7 @@ final class SpamCrawlerFake
             }
         }
         
-        if ($this->_utils->checkIfContains('X11; MSIE')) {
+        if ($this->utils->checkIfContains('X11; MSIE')) {
             return true;
         }
         

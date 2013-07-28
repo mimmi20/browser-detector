@@ -40,7 +40,7 @@ namespace Browscap\Input;
  * @package   Browscap
  * @author    Jonathan Stoppani <st.jonathan@gmail.com>
  * @copyright 2006-2008 Jonathan Stoppani
- * @version   SVN: $Id: Uaparser.php 543 2013-06-14 19:18:32Z tmu $
+ * @version   SVN: $Id$
  */
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\DeviceInterface;
@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 use \Browscap\Helper\InputMapper;
 
 /**
@@ -120,7 +121,7 @@ final class Uasparser extends Core
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
-        $this->_cache = $cache;
+        $this->cache = $cache;
         
         return $this;
     }
@@ -140,7 +141,7 @@ final class Uasparser extends Core
             );
         }
         
-        $this->_cachePrefix = $prefix;
+        $this->cachePrefix = $prefix;
         
         return $this;
     }

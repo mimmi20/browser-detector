@@ -47,6 +47,7 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -67,15 +68,25 @@ class NintendoWii
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Nintendo Wii OS',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Nintendo', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Nintendo Wii OS',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Nintendo(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -84,7 +95,7 @@ class NintendoWii
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Nintendo Wii'))) {
+        if (!$this->utils->checkIfContains(array('Nintendo Wii'))) {
             return false;
         }
         

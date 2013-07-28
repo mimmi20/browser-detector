@@ -62,7 +62,7 @@ abstract class ServiceAbstract
     /**
      * @var \AppCore\Model\Cache_Abstract
      */
-    protected $_cache = null;
+    protected $cache = null;
 
     /**
      * is called, if a function is not defined

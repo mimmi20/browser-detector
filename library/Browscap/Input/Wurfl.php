@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 use \Browscap\Helper\InputMapper;
 
 /**
@@ -160,7 +161,7 @@ final class Wurfl extends Core
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
-        $this->_cache = $cache;
+        $this->cache = $cache;
         
         return $this;
     }
@@ -180,7 +181,7 @@ final class Wurfl extends Core
             );
         }
         
-        $this->_cachePrefix = $prefix;
+        $this->cachePrefix = $prefix;
         
         return $this;
     }
@@ -246,10 +247,11 @@ final class Wurfl extends Core
                 $brandName = null;
             }
             
-            $apiBot     = ('true' === $device->getCapability('is_bot'));
-            $apiTv      = ('true' === $device->getCapability('is_smarttv'));
-            $apiDesktop = ('true' === $device->getCapability('ux_full_desktop'));
+            $apiBot        = ('true' === $device->getCapability('is_bot'));
+            $apiTv         = ('true' === $device->getCapability('is_smarttv'));
+            $apiDesktop    = ('true' === $device->getCapability('ux_full_desktop'));
             $apiTranscoder = ('true' === $device->getCapability('is_transcoder'));
+            $browserMaker  = '';
             
             if ($this->_mapWurflData) {
                 $apiOs = trim($apiOs);
@@ -319,8 +321,6 @@ final class Wurfl extends Core
                 
                 $marketingName = $mapper->mapDeviceMarketingName($marketingName, $apiDev);
                 $brandName     = $mapper->mapDeviceBrandName($brandName, $apiDev);
-                
-                $browserMaker = '';
                 
                 if ('Generic' == $apiMan || 'Opera' == $apiMan) {
                     $apiMan        = null;
@@ -741,8 +741,9 @@ final class Wurfl extends Core
             $marketingName = null;
             $apiTranscoder = null;
             
-            $brandName  = null;
-            $xhtmlLevel = null;
+            $brandName    = null;
+            $xhtmlLevel   = null;
+            $browserMaker = '';
             
             //throw $e;
         }
@@ -760,10 +761,13 @@ final class Wurfl extends Core
                 'max_length_of_password', 'max_no_of_connection_settings',
                 'max_object_size', 'max_url_length_bookmark',
                 'max_url_length_cached_page', 'max_url_length_in_requests',
-                'max_url_length_homepage', 'colors', 'nokia_feature_pack',
-                'nokia_series', 'nokia_edition', 'physical_screen_width',
+                'max_url_length_homepage', 'colors', 'physical_screen_width',
                 'physical_screen_height', 'columns', 'rows', 'max_image_width',
                 'max_image_height', 'resolution_width', 'resolution_height'
+            );
+            
+            $allProperties = array_intersect_key(
+                $allProperties, $result->getCapabilities()
             );
             
             foreach ($allProperties as $capabilityName => $capabilityValue) {

@@ -47,6 +47,7 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -67,15 +68,25 @@ class Linux
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Linux',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Linux Foundation', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Linux',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\LinuxFoundation(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -84,7 +95,7 @@ class Linux
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Linux', 'linux', 'X11'))) {
+        if (!$this->utils->checkIfContains(array('Linux', 'linux', 'X11'))) {
             return false;
         }
         
@@ -115,11 +126,11 @@ class Linux
             'hp-ux'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnLinux, true)) {
+        if ($this->utils->checkIfContains($isNotReallyAnLinux, true)) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
+        if ($this->utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
             return false;
         }
         

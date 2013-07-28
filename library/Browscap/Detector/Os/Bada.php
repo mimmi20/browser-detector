@@ -47,6 +47,7 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -67,15 +68,25 @@ class Bada
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Bada OS',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Samsung', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Bada OS',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Samsung(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -84,7 +95,7 @@ class Bada
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Bada')) {
+        if (!$this->utils->checkIfContains('Bada')) {
             return false;
         }
         

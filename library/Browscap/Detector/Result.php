@@ -59,14 +59,14 @@ final class Result implements \Serializable
      *
      * @var \Browscap\Detector\Result
      */
-    private $_renderAs = null;
+    private $renderAs = null;
     
     /**
      * the detected browser properties
      *
      * @var Stdfinal class
      */
-    private $_properties = array(
+    private $properties = array(
         'wurflKey' => null,     // not in wurfl
         'useragent' => null,    // not in wurfl
         'deviceClass' => null,  // not in wurfl
@@ -103,9 +103,6 @@ final class Result implements \Serializable
         'device_claims_web_support' => null,
         'can_assign_phone_number' => null,
         'release_date' => null,
-        'nokia_feature_pack' => null,
-        'nokia_series' => null,
-        'nokia_edition' => null,
         'uaprof' => null,
         'ununiqueness_handler' => null,
         'uaprof2' => null,
@@ -697,7 +694,7 @@ final class Result implements \Serializable
     {
         $propertiesToSerialize = array();
         
-        foreach ($this->_properties as $property => $value) {
+        foreach ($this->properties as $property => $value) {
             if (null === $value) {
                 continue;
             }
@@ -708,7 +705,7 @@ final class Result implements \Serializable
         return serialize(
             array(
                 'properties' => $propertiesToSerialize,
-                'renderAs'   => $this->_renderAs
+                'renderAs'   => $this->renderAs
             )
         );
     }
@@ -727,10 +724,10 @@ final class Result implements \Serializable
                 continue;
             }
             
-            $this->_properties[$property] = $value;
+            $this->properties[$property] = $value;
         }
         
-        $this->_renderAs   = $unseriliazedData['renderAs'];
+        $this->renderAs   = $unseriliazedData['renderAs'];
     }
     
     /**
@@ -746,16 +743,16 @@ final class Result implements \Serializable
      */
     public function getCapability($capabilityName, $includeRenderAs = false) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
         $renderedAs    = $this->getRenderAs();
-        $propertyValue = $this->_properties[$capabilityName];
+        $propertyValue = $this->properties[$capabilityName];
         
         if ($includeRenderAs
             && $renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
         ) {
-            $propertyValue  = $this->_propertyToString($this->_properties[$capabilityName]);
+            $propertyValue  = $this->_propertyToString($this->properties[$capabilityName]);
             $propertyValue .= ' [' . $this->_propertyToString($renderedAs->getCapability($capabilityName, false)) . ']';
         }
         
@@ -797,7 +794,7 @@ final class Result implements \Serializable
      */
     public function setCapability($capabilityName, $capabilityValue = null) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
         $versionfields = array(
             'mobile_browser_version', 'renderingengine_version', 
@@ -809,12 +806,11 @@ final class Result implements \Serializable
         ) {
             throw new \InvalidArgumentException(
                 'capability "' . $capabilityName . '" requires an instance of '
-                . '\\Browscap\\Detector\\Version as value for object "' 
-                . $this->_properties[$capabilityName] . '"'
+                . '\\Browscap\\Detector\\Version as value'
             );
         }
         
-        $this->_properties[$capabilityName] = $capabilityValue;
+        $this->properties[$capabilityName] = $capabilityValue;
         
         return $this;
     }
@@ -826,7 +822,7 @@ final class Result implements \Serializable
      */
     public function getCapabilities() 
     {
-        return $this->_properties;
+        return $this->properties;
     }
     
     /**
@@ -864,7 +860,7 @@ final class Result implements \Serializable
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    private function _checkCapability($capabilityName) 
+    private function checkCapability($capabilityName) 
     {
         if (empty($capabilityName)) {
             throw new \InvalidArgumentException(
@@ -872,9 +868,9 @@ final class Result implements \Serializable
             );
         }
         
-        if (!array_key_exists($capabilityName, $this->_properties)) {
+        if (!array_key_exists($capabilityName, $this->properties)) {
             throw new \InvalidArgumentException(
-                'no capability named [' . $capabilityName . '] is present.'
+                'no capability named [' . $capabilityName . '] is present. [' . json_encode($this->properties) . ']'
             );    
         }
     }
@@ -1450,30 +1446,99 @@ final class Result implements \Serializable
                     case 'wurflKey':
                         $value = $device->id;
                         break;
+                    case 'manufacturer_name':
+                        $value = $device->getCapability($property);
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getName();
+                        break;
+                    case 'brand_name':
+                        $value = $device->getCapability($property);
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getBrandName();
+                        break;
                     case 'device_type':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->getName();
+                        break;
                     case 'is_wireless_device':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->isMobile();
+                        break;
                     case 'is_tablet':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->isTablet();
+                        break;
                     case 'is_smarttv':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->isTv();
+                        break;
                     case 'is_console':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->isConsole();
+                        break;
                     case 'ux_full_desktop':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->isDesktop();
+                        break;
+                    case 'can_assign_phone_number':
+                        $value = $device->getCapability('device_type');
+                        
+                        if (!($value instanceof Type\Device\TypeInterface)) {
+                            $value = new Type\Device\Unknown();
+                        }
+                        
+                        $value = $value->isPhone();
+                        break;
                     case 'model_name':
                     case 'model_version':
-                    case 'manufacturer_name':
-                    case 'brand_name':
                     case 'model_extra_info':
                     case 'marketing_name':
                     case 'has_qwerty_keyboard':
                     case 'pointing_method':
                     case 'device_bits':
                     case 'device_cpu':
-                    case 'nokia_feature_pack':
-                    case 'nokia_series':
-                    case 'nokia_edition':
                     case 'ununiqueness_handler':
                     case 'uaprof':
                     case 'uaprof2':
                     case 'uaprof3':
-                    case 'can_assign_phone_number':
                     case 'physical_screen_width':
                     case 'physical_screen_height':
                     case 'columns':
@@ -1494,18 +1559,65 @@ final class Result implements \Serializable
                     case 'max_object_size':
                     case 'sms_enabled':
                     case 'nfc_support':
-                    //case 'unique':
                         $value = $device->getCapability($property);
                         break;
+                    case 'mobile_browser_manufacturer':
+                        $value = $browser->getCapability($property);
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getName();
+                        break;
                     case 'is_bot':
+                        $value = $browser->getCapability('browser_type');
+                        
+                        if (!($value instanceof Type\Browser\TypeInterface)) {
+                            $value = new Type\Browser\Unknown();
+                        }
+                        
+                        $value = $value->isBot();
+                        break;
                     case 'is_transcoder':
+                        $value = $browser->getCapability('browser_type');
+                        
+                        if (!($value instanceof Type\Browser\TypeInterface)) {
+                            $value = new Type\Browser\Unknown();
+                        }
+                        
+                        $value = $value->isTranscoder();
+                        break;
                     case 'is_syndication_reader':
+                        $value = $browser->getCapability('browser_type');
+                        
+                        if (!($value instanceof Type\Browser\TypeInterface)) {
+                            $value = new Type\Browser\Unknown();
+                        }
+                        
+                        $value = $value->isSyndicationReader();
+                        break;
                     case 'is_banned':
+                        $value = $browser->getCapability('browser_type');
+                        
+                        if (!($value instanceof Type\Browser\TypeInterface)) {
+                            $value = new Type\Browser\Unknown();
+                        }
+                        
+                        $value = $value->isBanned();
+                        break;
                     case 'browser_type':
+                        $value = $browser->getCapability('browser_type');
+                        
+                        if (!($value instanceof Type\Browser\TypeInterface)) {
+                            $value = new Type\Browser\Unknown();
+                        }
+                        
+                        $value = $value->getName();
+                        break;
                     case 'mobile_browser':
                     case 'mobile_browser_version':
                     case 'mobile_browser_bits':
-                    case 'mobile_browser_manufacturer':
                     case 'mobile_browser_modus':
                     case 'can_skip_aligned_link_row':
                     case 'device_claims_web_support':
@@ -1520,12 +1632,28 @@ final class Result implements \Serializable
                     case 'device_os':
                     case 'device_os_version':
                     case 'device_os_bits':
+                        $value = $os->getCapability($property);
+                        break;
                     case 'device_os_manufacturer':
                         $value = $os->getCapability($property);
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getName();
+                        break;
+                    case 'renderingengine_manufacturer':
+                        $value = $engine->getCapability($property);
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getName();
                         break;
                     case 'renderingengine_name':
                     case 'renderingengine_version':
-                    case 'renderingengine_manufacturer':
                     case 'preferred_markup':
                     case 'xhtml_support_level':
                     case 'css_spriting':
@@ -1692,7 +1820,7 @@ final class Result implements \Serializable
      */
     public function setRenderAs(Result $result)
     {
-        $this->_renderAs = $result;
+        $this->renderAs = $result;
         
         return $this;
     }
@@ -1704,6 +1832,6 @@ final class Result implements \Serializable
      */
     public function getRenderAs()
     {
-        return $this->_renderAs;
+        return $this->renderAs;
     }
 }

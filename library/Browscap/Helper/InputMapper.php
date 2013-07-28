@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -203,6 +204,42 @@ final class InputMapper
     }
     
     /**
+     * maps the maker of the browser, os, engine or device
+     *
+     * @param string $maker
+     *
+     * @return string
+     */
+    private function mapMaker($maker)
+    {
+        switch (strtolower($maker)) {
+            case 'unknown':
+            case 'other':
+            case 'software in the public interest, inc.':
+            case 'bot':
+                $maker = null;
+                break;
+            case 'microsoft corporation.':
+                $maker = 'Microsoft Corporation';
+                break;
+            case 'apple inc.':
+            case 'apple computer, inc.':
+                $maker = 'Apple Inc';
+                break;
+            case 'google':
+            case 'google inc.':
+            case 'google, inc.':
+                $osMaker = 'Google Inc';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $maker;
+    }
+    
+    /**
      * maps the browser maker
      *
      * @param string $browserMaker
@@ -212,15 +249,7 @@ final class InputMapper
      */
     public function mapBrowserMaker($browserMaker, $browserName = null)
     {
-        switch (strtolower($browserMaker)) {
-            case 'unknown':
-            case 'other':
-                $browserMaker = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $browserMaker = $this->mapMaker($browserMaker);
         
         switch (strtolower($browserName)) {
             case 'unknown':
@@ -287,19 +316,7 @@ final class InputMapper
      */
     public function mapOsMaker($osMaker, $osName = null)
     {
-        switch (strtolower($osMaker)) {
-            case 'unknown':
-            case 'other':
-                $osMaker = null;
-                break;
-            case 'Google Inc.':
-            case 'Google, Inc.':
-                $osMaker = 'Google Inc';
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $osMaker = $this->mapMaker($osMaker);
         
         switch (strtolower($osName)) {
             case 'unknown':
@@ -445,6 +462,7 @@ final class InputMapper
                 $deviceName = 'GT-I9100';
                 break;
             case 'gt-i9300':
+            case 'samsung gt-i9300/i9300xxdlih':
                 $deviceName = 'GT-I9300';
                 break;
             case 'gt-i5500':
@@ -534,15 +552,7 @@ final class InputMapper
      */
     public function mapDeviceMaker($deviceMaker, $deviceName = null)
     {
-        switch (strtolower($deviceMaker)) {
-            case 'unknown':
-            case 'other':
-                $deviceMaker = null;
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $deviceMaker = $this->mapMaker($deviceMaker);
         
         switch (strtolower($deviceName)) {
             case 'unknown':
@@ -589,8 +599,10 @@ final class InputMapper
             case 'gt s8500':
             case 'gp-p6810':
             case 'gt-i8350':
+            case 'gt-i9001':
             case 'gt-i9100':
             case 'gt-i9300':
+            case 'samsung gt-i9300/i9300xxdlih':
             case 'gt i7500':
             case 'gt-p5110':
             case 'gt s5620':
@@ -675,6 +687,9 @@ final class InputMapper
                 break;
             case 'xperia arc so-01c for docomo':
                 $marketingName = 'Xperia Arc SO-01C for DoCoMo';
+                break;
+            case 'galaxy siii':
+                $marketingName = 'Galaxy S III';
                 break;
             default:
                 // nothing to do here

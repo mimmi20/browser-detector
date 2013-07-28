@@ -49,6 +49,8 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
  * @category  Browscap
@@ -61,45 +63,7 @@ class MicrosoftInternetExplorer
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'Internet Explorer',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Microsoft Corporation', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => true,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
-    
-    private $_patterns = array(
+    private $patterns = array(
         '/Mozilla\/(4|5)\.0 \(.*MSIE 11\.0.*/' => '11.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 10\.0.*/' => '10.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 9\.0.*/'  => '9.0',
@@ -121,17 +85,61 @@ class MicrosoftInternetExplorer
     );
     
     /**
+     * the detected browser properties
+     *
+     * @var array
+     */
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return BrowserHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        
+        $this->properties = array(
+            // kind of device
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'Internet Explorer',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Microsoft(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => true,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
+        );
+    }
+    
+    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Mozilla/')) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
             return false;
         }
         
-        if (!$this->_utils->checkIfContains('MSIE')) {
+        if (!$this->utils->checkIfContains('MSIE')) {
             return false;
         }
         
@@ -170,13 +178,13 @@ class MicrosoftInternetExplorer
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)
-            && !$this->_utils->checkIfContains('Bitte Mozilla Firefox verwenden')
+        if ($this->utils->checkIfContains($isNotReallyAnIE)
+            && !$this->utils->checkIfContains('Bitte Mozilla Firefox verwenden')
         ) {
             return false;
         }
         
-        foreach (array_keys($this->_patterns) as $pattern) {
+        foreach (array_keys($this->patterns) as $pattern) {
             if (preg_match($pattern, $this->_useragent)) {
                 return true;
             }
@@ -206,7 +214,7 @@ class MicrosoftInternetExplorer
             return $this;
         }
         
-        foreach ($this->_patterns as $pattern => $version) {
+        foreach ($this->patterns as $pattern => $version) {
             if (preg_match($pattern, $this->_useragent)) {
                 $this->setCapability(
                     'mobile_browser_version', $detector->setVersion($version)
@@ -265,7 +273,7 @@ class MicrosoftInternetExplorer
         
         switch ($engineVersion) {
             case 4:
-                if ($this->_utils->checkIfContains('Trident/4.0')
+                if ($this->utils->checkIfContains('Trident/4.0')
                     && 8 > $detectedVersion
                 ) {
                     $browserVersion->setVersion('8.0');

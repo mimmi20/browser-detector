@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * CatchAllUserAgentHandler
@@ -69,70 +71,77 @@ final class LgGw300
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'GW300',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'LG',
-        'brand_name'                => 'LG',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
-        
-        // browser
-        // 'mobile_browser'         => null,
-        // 'mobile_browser_version' => null,
-        // 'mobile_browser_bits'    => null, // not in wurfl
-        
-        // os
-        // 'device_os'              => null,
-        // 'device_os_version'      => null,
-        // 'device_os_bits'         => null, // not in wurfl
-        // 'device_os_manufacturer' => null, // not in wurfl
-        
-        // engine
-        // 'renderingengine_name'         => null, // not in wurfl
-        // 'renderingengine_version'      => null, // not in wurfl
-        // 'renderingengine_manufacturer' => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-    );
+        $this->properties = array(
+            'wurflKey' => null, // not in wurfl
+            
+            // kind of device
+            'is_wireless_device' => true,
+            'is_tablet'          => false,
+            'is_smarttv'         => false,
+            'is_console'         => false,
+            'ux_full_desktop'    => false,
+            
+            // device
+            'model_name'                => 'GW300',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Lg(),
+            'brand_name' => new Company\Lg(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'GW300',
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => 'touchscreen',
+            'device_claims_web_support' => true,
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // browser
+            // 'mobile_browser'         => null,
+            // 'mobile_browser_version' => null,
+            // 'mobile_browser_bits'    => null, // not in wurfl
+            
+            // os
+            // 'device_os'              => null,
+            // 'device_os_version'      => null,
+            // 'device_os_bits'         => null, // not in wurfl
+            // 'device_os_manufacturer' => null, // not in wurfl
+            
+            // engine
+            // 'renderingengine_name'         => null, // not in wurfl
+            // 'renderingengine_version'      => null, // not in wurfl
+            // 'renderingengine_manufacturer' => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => null,
+            'can_assign_phone_number'   => false,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => null,
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => null,
+            'resolution_height'      => null,
+            'dual_orientation'       => null,
+        );
+    }
     
     /**
      * Final Interceptor: Intercept
@@ -143,7 +152,7 @@ final class LgGw300
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('LG-GW300', 'LG/GW300'))) {
+        if (!$this->utils->checkIfContains(array('LG-GW300', 'LG/GW300'))) {
             return false;
         }
         

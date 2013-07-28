@@ -49,6 +49,8 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
  * @category  Browscap
@@ -66,38 +68,44 @@ class MicrosoftMobileExplorer
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return BrowserHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'IEMobile',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Microsoft Corporation', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => true,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => true,
-    );
+        $this->properties = array(
+            // kind of device
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'IEMobile',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Microsoft(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => true,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => true,
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -106,7 +114,7 @@ class MicrosoftMobileExplorer
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
+        if (!$this->utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
             return false;
         }
         
@@ -130,7 +138,7 @@ class MicrosoftMobileExplorer
             'ArgClrInt'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnIE)) {
+        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         
@@ -147,14 +155,14 @@ class MicrosoftMobileExplorer
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion('9.0')
             );
             return $this;
         }
         
-        if ($this->_utils->checkIfContains('WPDesktop')) {
+        if ($this->utils->checkIfContains('WPDesktop')) {
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion('10.0')
             );
@@ -256,7 +264,7 @@ class MicrosoftMobileExplorer
             $engine->setCapability('jqm_grade', 'C');
         }
         
-        if ($this->_utils->checkIfContains('WPDesktop')) {
+        if ($this->utils->checkIfContains('WPDesktop')) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
         

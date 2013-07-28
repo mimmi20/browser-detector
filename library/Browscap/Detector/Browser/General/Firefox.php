@@ -49,6 +49,8 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
  * @category  Browscap
@@ -66,38 +68,44 @@ class Firefox
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return BrowserHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'Firefox',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Mozilla Foundation', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => true,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
+        $this->properties = array(
+            // kind of device
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'Firefox',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\MozillaFoundation(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => true,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given user agent
@@ -106,8 +114,8 @@ class Firefox
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('Mozilla/4.0')
-            && !$this->_utils->checkIfContains('Mozilla/5.0')
+        if (!$this->utils->checkIfContains('Mozilla/4.0')
+            && !$this->utils->checkIfContains('Mozilla/5.0')
         ) {
             return false;
         }
@@ -117,7 +125,7 @@ class Firefox
             'Namoroka', 'Fennec'
         );
         
-        if (!$this->_utils->checkIfContains($firefoxCodes)) {
+        if (!$this->utils->checkIfContains($firefoxCodes)) {
             return false;
         }
         
@@ -151,7 +159,7 @@ class Firefox
             'Mac; Mac OS '
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAnFirefox)) {
+        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
         
@@ -215,7 +223,7 @@ class Firefox
     {
         parent::detectDependProperties($engine, $os, $device);
         
-        if ($device->getCapability('is_wireless_device')
+        if ($device->getCapability('device_type')->isMobile()
             && 'Android' == $os->getCapability('device_os')
         ) {
             $device->setCapability('has_qwerty_keyboard', true);
@@ -239,7 +247,7 @@ class Firefox
             $engine->setCapability('css_border_image', 'mozilla');
             $engine->setCapability('css_rounded_corners', 'mozilla');
             
-            if (!$device->getCapability('is_tablet')) {
+            if (!$device->getCapability('device_type')->isTablet()) {
                 $device->setCapability('sms_enabled', true);
                 $device->setCapability('nfc_support', true);
             }

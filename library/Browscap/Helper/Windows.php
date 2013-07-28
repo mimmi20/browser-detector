@@ -54,7 +54,7 @@ final class Windows
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    private $_utils = null;
+    private $utils = null;
     
     /**
      * Class Constructor
@@ -63,7 +63,7 @@ final class Windows
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
     }
     
     /**
@@ -74,7 +74,7 @@ final class Windows
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -92,7 +92,7 @@ final class Windows
         $spamHelper = new SpamCrawlerFake();
         $spamHelper->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains($isNotReallyAWindows)
+        if ($this->utils->checkIfContains($isNotReallyAWindows)
             || $spamHelper->isFakeWindows()
             || $this->isMobileWindows()
         ) {
@@ -106,14 +106,14 @@ final class Windows
             'windows', 'win32'
         );
         
-        if (!$this->_utils->checkIfContains($windows, true)
-            && !$this->_utils->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
+        if (!$this->utils->checkIfContains($windows, true)
+            && !$this->utils->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
         ) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains('trident', true)
-            && !$this->_utils->checkIfContains($windows, true)
+        if ($this->utils->checkIfContains('trident', true)
+            && !$this->utils->checkIfContains($windows, true)
         ) {
             return false;
         }
@@ -129,7 +129,7 @@ final class Windows
             'windowsmobile', 'wpdesktop'
         );
         
-        if (!$this->_utils->checkIfContains($mobileWindows, true)) {
+        if (!$this->utils->checkIfContains($mobileWindows, true)) {
             return false;
         }
         
@@ -140,7 +140,7 @@ final class Windows
             'Mac OS X',
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAWindows)) {
+        if ($this->utils->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
         

@@ -44,6 +44,7 @@ namespace Browscap\Input;
  */
 
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 use \Browscap\Detector\Result;
 use \Browscap\Helper\InputMapper;
 
@@ -74,7 +75,7 @@ class Browscap extends Core
     private $_userAgents    = array();
     private $_browsers      = array();
     private $_patterns      = array();
-    private $_properties    = array();
+    private $properties    = array();
     private $_config        = null;
     private $_globalCache   = null;
     private $_localFile     = null;
@@ -406,16 +407,16 @@ class Browscap extends Core
     private function _getGlobalCache()
     {
         if (null === $this->_globalCache) {
-            $cacheGlobalId = $this->_cachePrefix . 'agentsGlobal';
+            $cacheGlobalId = $this->cachePrefix . 'agentsGlobal';
             
             // Load the cache at the first request
-            if (!($this->_cache instanceof \Zend\Cache\Frontend\Core) 
-                || !$this->_globalCache = $this->_cache->load($cacheGlobalId)
+            if (!($this->cache instanceof \Zend\Cache\Frontend\Core) 
+                || !$this->_globalCache = $this->cache->load($cacheGlobalId)
             ) {
                 $this->_globalCache = $this->_getBrowserFromGlobalCache();
                 
-                if ($this->_cache instanceof \Zend\Cache\Frontend\Core) {
-                    $this->_cache->save($this->_globalCache, $cacheGlobalId);
+                if ($this->cache instanceof \Zend\Cache\Frontend\Core) {
+                    $this->cache->save($this->_globalCache, $cacheGlobalId);
                 }
             }
         }
@@ -460,9 +461,9 @@ class Browscap extends Core
         
         array_shift($browsers);
         
-        $this->_properties = array_keys($browsers['DefaultProperties']);
+        $this->properties = array_keys($browsers['DefaultProperties']);
         array_unshift(
-            $this->_properties,
+            $this->properties,
             'Parent',
             'Parents'
         );
@@ -479,7 +480,7 @@ class Browscap extends Core
      */
     private function _parseAllAgents($browsers)
     {   
-        $aPropertiesKeys = array_flip($this->_properties);
+        $aPropertiesKeys = array_flip($this->properties);
         $key             = 0;
         
         foreach ($this->_userAgents as $userAgent) {
@@ -1362,7 +1363,7 @@ class Browscap extends Core
             $outputPhp .= '[' . $title . ']' . "\n";
             $outputAsp .= '[' . $title . ']' . "\n";
             
-            foreach ($this->_properties as $property) {
+            foreach ($this->properties as $property) {
                 if (!isset($propertiesToOutput[$property]) || 'Parents' === $property) {
                     continue;
                 }
@@ -1445,7 +1446,7 @@ class Browscap extends Core
         $browsers = $this->_parseIni();
         
         array_unshift(
-            $this->_properties,
+            $this->properties,
             'browser_name',
             'browser_name_regex',
             'browser_name_pattern'
@@ -1465,14 +1466,14 @@ class Browscap extends Core
 
         // Save the keys lowercased if needed
         if ($this->_lowercase) {
-            $this->_properties = array_map('strtolower', $this->_properties);
+            $this->properties = array_map('strtolower', $this->properties);
         }
         
         return array(
             'browsers'   => $this->_browsers,
             'userAgents' => $this->_userAgents,
             'patterns'   => $this->_patterns,
-            'properties' => $this->_properties
+            'properties' => $this->properties
         );
     }
 

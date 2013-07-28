@@ -68,36 +68,38 @@ abstract class OsHandler
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    protected $_utils = null;
+    protected $utils = null;
     
     /**
      * a \Zend\Cache object
      *
      * @var \Zend\Cache
      */
-    protected $_cache = null;
+    protected $cache = null;
     
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // os
-        'device_os'              => 'unknown',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'unknown', // not in wurfl
-    );
+    protected $properties = array();
     
     /**
      * Class Constructor
+     *
+     * @return OsHandler
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
+        
+        $this->properties = array(
+            // os
+            'device_os'              => 'unknown',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
+        );
         
         $detector = new Version();
         $detector->setVersion('');
@@ -113,7 +115,7 @@ abstract class OsHandler
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -202,9 +204,22 @@ abstract class OsHandler
      */
     public function getCapability($capabilityName) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
-        return $this->_properties[$capabilityName];
+        switch ($capabilityName) {
+            case 'device_os_version':
+                if (!($this->properties['device_os_version'] instanceof Version)) {
+                    $detector = new Version();
+                    $detector->setVersion('');
+                    
+                    $this->setCapability('device_os_version', $detector);
+                }
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this->properties[$capabilityName];
     }
     
     /**
@@ -217,9 +232,9 @@ abstract class OsHandler
      */
     public function setCapability($capabilityName, $capabilityValue = null) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
-        $this->_properties[$capabilityName] = $capabilityValue;
+        $this->properties[$capabilityName] = $capabilityValue;
         
         return $this;
     }
@@ -233,7 +248,7 @@ abstract class OsHandler
      * @throws InvalidArgumentException The $capabilityName is is not defined in the loaded WURFL.
      * @see WURFL_Xml_ModelDevice::getCapability()
      */
-    protected function _checkCapability($capabilityName) 
+    protected function checkCapability($capabilityName) 
     {
         if (empty($capabilityName)) {
             throw new \InvalidArgumentException(
@@ -241,7 +256,7 @@ abstract class OsHandler
             );
         }
         
-        if (!array_key_exists($capabilityName, $this->_properties)) {
+        if (!array_key_exists($capabilityName, $this->properties)) {
             throw new \InvalidArgumentException(
                 'no capability named [' . $capabilityName . '] is present.'
             );    
@@ -255,7 +270,7 @@ abstract class OsHandler
      */
     public function getCapabilities() 
     {
-        return $this->_properties;
+        return $this->properties;
     }
     
     /**

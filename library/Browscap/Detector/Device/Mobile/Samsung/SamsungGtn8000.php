@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,82 +68,62 @@ final class SamsungGtn8000
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'samsung_gt_n8000_ver1', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => true,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'GT-N8000',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Samsung',
-        'brand_name'                => 'Samsung',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Galaxy Note 10.1', // wurflkey: samsung_gt_n8000_ver1
-        'has_qwerty_keyboard'       => true,               // wurflkey: samsung_gt_n8000_ver1
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => 'ARM11', // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-N8000.xml',
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 218,
-        'physical_screen_height' => 136,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        
-        // sms
-        'sms_enabled' => true, // wurflkey: samsung_gt_n8000_ver1_suban41
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => true, // wurflkey: samsung_gt_n8000_ver1_suban41
-    );
+        $this->properties = array(
+            'wurflKey' => 'samsung_gt_n8000_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            
+            // device
+            'model_name'                => 'GT-N8000',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Galaxy Note 10.1', // wurflkey: samsung_gt_n8000_ver1
+            'has_qwerty_keyboard'       => true,               // wurflkey: samsung_gt_n8000_ver1
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => 'ARM11', // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => false,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-N8000.xml',
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 218,
+            'physical_screen_height' => 136,
+            'columns'                => 25,
+            'rows'                   => 21,
+            'max_image_width'        => 320,
+            'max_image_height'       => 400,
+            'resolution_width'       => 1280,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
+            
+            // sms
+            'sms_enabled' => true, // wurflkey: samsung_gt_n8000_ver1_suban41
+            
+            // chips
+            'nfc_support' => true, // wurflkey: samsung_gt_n8000_ver1_suban41
+        );
+    }
     
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +132,7 @@ final class SamsungGtn8000
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('GT-N8000')) {
+        if (!$this->utils->checkIfContains('GT-N8000')) {
             return false;
         }
         

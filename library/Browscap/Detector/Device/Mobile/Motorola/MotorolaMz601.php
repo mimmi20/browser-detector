@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,82 +68,62 @@ final class MotorolaMz601
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'mot_mz601_ver1', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => true,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'MZ601', // wurflkey: mot_mz601_ver1_suban41
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Motorola',
-        'brand_name'                => 'Motorola',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Xoom',  // wurflkey: mot_mz601_ver1_suban41
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => 'Motorola', // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => false,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz601.rdf',
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 218,
-        'physical_screen_height' => 137,
-        'columns'                => 80,
-        'rows'                   => 25,
-        'max_image_width'        => 1200,
-        'max_image_height'       => 760,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
-        
-        // sms
-        'sms_enabled' => false,
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => false,
-    );
+        $this->properties = array(
+            'wurflKey' => 'mot_mz601_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            
+            // device
+            'model_name'                => 'MZ601', // wurflkey: mot_mz601_ver1_suban41
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Motorola(),
+            'brand_name' => new Company\Motorola(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Xoom',  // wurflkey: mot_mz601_ver1_suban41
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => 'Motorola', // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => false,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => 'http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz601.rdf',
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 218,
+            'physical_screen_height' => 137,
+            'columns'                => 80,
+            'rows'                   => 25,
+            'max_image_width'        => 1200,
+            'max_image_height'       => 760,
+            'resolution_width'       => 1280,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216,
+            
+            // sms
+            'sms_enabled' => false,
+            
+            // chips
+            'nfc_support' => false,
+        );
+    }
     
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +132,7 @@ final class MotorolaMz601
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('MZ601')) {
+        if (!$this->utils->checkIfContains('MZ601')) {
             return false;
         }
         

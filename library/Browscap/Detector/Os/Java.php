@@ -47,6 +47,7 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -67,15 +68,25 @@ class Java
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Java',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Oracle', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Java',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Oracle(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -84,7 +95,7 @@ class Java
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Java', 'J2ME/MIDP', 'Profile/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform', 'WAP/OBIGO', 'Obigo/WAP'))) {
+        if (!$this->utils->checkIfContains(array('Java', 'J2ME/MIDP', 'Profile/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform', 'WAP/OBIGO', 'Obigo/WAP'))) {
             return false;
         }
         
@@ -103,7 +114,7 @@ class Java
             'Microsoft Windows'
         );
         
-        if ($this->_utils->checkIfContains($isNotReallyAJava)) {
+        if ($this->utils->checkIfContains($isNotReallyAJava)) {
             return false;
         }
         

@@ -49,6 +49,7 @@ use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -69,15 +70,25 @@ class WindowsMobileOs
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Windows Mobile OS',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Microsoft Corporation', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Windows Mobile OS',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Microsoft(), // not in wurfl
+        );
+    }
     
     /**
      * @var string the detected platform
@@ -96,7 +107,7 @@ class WindowsMobileOs
      */
     public function canHandle()
     {
-        if ($this->_utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))) {
+        if ($this->utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))) {
             return false;
         }
         
@@ -132,7 +143,7 @@ class WindowsMobileOs
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains('Windows NT 5.1')) {
+        if ($this->utils->checkIfContains('Windows NT 5.1')) {
             $this->setCapability(
                 'device_os_version', 
                 $detector->setVersion('6.0')
@@ -141,7 +152,7 @@ class WindowsMobileOs
             return;
         }
         
-        if ($this->_utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
+        if ($this->utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
             $detector->setDefaulVersion('6.0');
             
             $searches = array('MSIEMobile');

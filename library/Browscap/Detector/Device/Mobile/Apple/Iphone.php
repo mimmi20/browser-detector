@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,83 +68,63 @@ final class Iphone
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'apple_iphone_ver1', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Mobile Phone', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => false,
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'iPhone',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Apple Inc',
-        'brand_name'                => 'Apple',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'iPhone',
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => true, // wurflkey: apple_iphone_ver6
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 74,
-        'columns'                => 20,
-        'rows'                   => 20,
-        'max_image_width'        => 320,
-        'max_image_height'       => 480,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        
-        // sms
-        'sms_enabled' => true,
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => false,
-    );
-
+        $this->properties = array(
+            'wurflKey' => 'apple_iphone_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'iPhone',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Apple(),
+            'brand_name' => new Company\Apple(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'iPhone',
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => true, // wurflkey: apple_iphone_ver6
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => null,
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 50,
+            'physical_screen_height' => 74,
+            'columns'                => 20,
+            'rows'                   => 20,
+            'max_image_width'        => 320,
+            'max_image_height'       => 480,
+            'resolution_width'       => 320,
+            'resolution_height'      => 480,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
+            
+            // sms
+            'sms_enabled' => true,
+            
+            // chips
+            'nfc_support' => false,
+        );
+    }
+    
     /**
      * checks if this device is able to handle the useragent
      *
@@ -150,11 +132,11 @@ final class Iphone
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains('iPhone')) {
+        if (!$this->utils->checkIfContains('iPhone')) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains(array('ipod', 'ipod touch', 'ipad', 'ipad'), true)) {
+        if ($this->utils->checkIfContains(array('ipod', 'ipod touch', 'ipad', 'ipad'), true)) {
             return false;
         }
         
@@ -264,7 +246,7 @@ final class Iphone
         if (4.1 == (float) $osVersion) {
             $this->setCapability('wurflKey', 'apple_iphone_ver4_1');
             
-            if ($this->_utils->checkIfContains('Mobile/8B117')) {
+            if ($this->utils->checkIfContains('Mobile/8B117')) {
                 $this->setCapability('wurflKey', 'apple_iphone_ver4_1_sub8b117');
             }
         }

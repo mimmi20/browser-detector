@@ -54,7 +54,7 @@ final class MobileDevice
     /**
      * @var \Browscap\Helper\Utils the helper class
      */
-    private $_utils = null;
+    private $utils = null;
     
     /**
      * Class Constructor
@@ -63,7 +63,7 @@ final class MobileDevice
      */
     public function __construct()
     {
-        $this->_utils = new Utils();
+        $this->utils = new Utils();
     }
     
     /**
@@ -74,7 +74,7 @@ final class MobileDevice
     public function setUserAgent($userAgent)
     {
         $this->_useragent = $userAgent;
-        $this->_utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($userAgent);
         
         return $this;
     }
@@ -165,39 +165,39 @@ final class MobileDevice
             'xda_diamond_2',
             'zunewp7'
         );
-        if ($this->_utils->checkIfContains($mobileBrowsers, true)) {
+        if ($this->utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = array(
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
                 'i9999_custom', 'wuid='
             );
             
-            if ($this->_utils->checkIfContains($noMobiles, true)) {
+            if ($this->utils->checkIfContains($noMobiles, true)) {
                 return false;
             }
             
             return true;
         }
         
-        if ($this->_utils->checkIfContains('tablet', true)
-            && !$this->_utils->checkIfContains('tablet pc', true)
+        if ($this->utils->checkIfContains('tablet', true)
+            && !$this->utils->checkIfContains('tablet pc', true)
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains('mobile', true)
-            && !$this->_utils->checkIfContains('automobile', true)
+        if ($this->utils->checkIfContains('mobile', true)
+            && !$this->utils->checkIfContains('automobile', true)
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains('sony', true)
-            && !$this->_utils->checkIfContains('sonydtv', true)
+        if ($this->utils->checkIfContains('sony', true)
+            && !$this->utils->checkIfContains('sonydtv', true)
         ) {
             return true;
         }
         
-        if ($this->_utils->checkIfContains('Windows NT 6.2; ARM;')) {
+        if ($this->utils->checkIfContains('Windows NT 6.2; ARM;')) {
             return true;
         }
         

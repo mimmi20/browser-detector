@@ -61,12 +61,12 @@ abstract class Core
      *
      * @var \Zend\Cache
      */
-    protected $_cache = null;
+    protected $cache = null;
     
     /*
      * @var string
      */
-    protected $_cachePrefix = '';
+    protected $cachePrefix = '';
     
     /**
      * the user agent sent from the browser
@@ -84,7 +84,7 @@ abstract class Core
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
-        $this->_cache = $cache;
+        $this->cache = $cache;
         
         return $this;
     }
@@ -98,7 +98,7 @@ abstract class Core
      */
     public function setCachePrefix($prefix)
     {
-        $this->_cachePrefix = $prefix;
+        $this->cachePrefix = $prefix;
         
         return $this;
     }

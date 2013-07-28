@@ -48,6 +48,7 @@ use \Browscap\Detector\MatcherInterface\OsInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -68,15 +69,25 @@ class Ios
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'iOS',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Apple Inc', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'iOS',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Apple(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -90,11 +101,11 @@ class Ios
             'iPod', 'CPU OS', 'CPU iOS', 'IUC(U;iOS'
         );
         
-        if (!$this->_utils->checkIfContains($ios)) {
+        if (!$this->utils->checkIfContains($ios)) {
             return false;
         }
         
-        if ($this->_utils->checkIfContains('Darwin')) {
+        if ($this->utils->checkIfContains('Darwin')) {
             return false;
         }
         
@@ -180,16 +191,16 @@ class Ios
      */
     public function getCapability($capabilityName) 
     {
-        $this->_checkCapability($capabilityName);
+        $this->checkCapability($capabilityName);
         
         switch ($capabilityName) {
             case 'model_extra_info':
-                return $this->_properties['device_os_version']->getVersion(
+                return $this->properties['device_os_version']->getVersion(
                     Version::MAJORMINOR
                 );
                 break;
             default:
-                return $this->_properties[$capabilityName];
+                return $this->properties[$capabilityName];
                 break;
         }
     }

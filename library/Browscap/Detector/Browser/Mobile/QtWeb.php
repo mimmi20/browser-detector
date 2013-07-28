@@ -41,14 +41,7 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
+use \Browscap\Detector\Browser\General\QtWeb as QtWebBase;
 
 /**
  * @category  Browscap
@@ -57,106 +50,7 @@ use \Browscap\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class QtWeb
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+class QtWeb extends QtWebBase
 {
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'QtWeb Internet Browser',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'unknown', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
-    
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->_utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->_utils->checkIfContains(array('QtWeb Internet Browser'))) {
-            return false;
-        }
-        
-        return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('QtWeb Internet Browser');
-        
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-        
-        return $this;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 5;
-    }
-    
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectEngine()
-    {
-        $handler = new \Browscap\Detector\Engine\Webkit();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
+    // nothing to do here
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Type\Device;
 
 /**
  * PHP version 5.3
@@ -41,74 +41,61 @@ namespace Browscap\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-
 /**
- * SagemUserAgentHandler
- * 
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Sagem
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+final class MobileConsole extends AbstractType implements TypeInterface
 {
     /**
-     * the detected browser properties
+     * the name of the company
      *
-     * @var array
+     * @var string
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
-        
-        // kind of device
-        'is_bot'                => false,
-        'is_transcoder'         => false,
-        'is_syndication_reader' => false,     // not in wurfl
-        'browser_type'          => 'Browser', // not in wurfl
-        'is_banned'             => false,     // not in wurfl
-        
-        // browser
-        'mobile_browser'              => 'Sagem',
-        'mobile_browser_version'      => null,
-        'mobile_browser_bits'         => null, // not in wurfl
-        'mobile_browser_manufacturer' => 'Sagem', // not in wurfl
-        'mobile_browser_modus'        => null, // not in wurfl
-        
-        // product info
-        'can_skip_aligned_link_row' => true,
-        'device_claims_web_support' => false,
-        
-        // pdf
-        'pdf_support' => true,
-        
-        // bugs
-        'empty_option_value_support' => true,
-        'basic_authentication_support' => true,
-        'post_method_support' => true,
-        
-        // rss
-        'rss_support' => false,
-    );
+    protected $name = 'Mobile Device';
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * the Device is a mobile device
      *
-     * @return bool
+     * @var string
      */
-    public function canHandle()
-    {
-        return $this->_utils->checkIfContains('Sagem') || $this->_utils->checkIfContains('SAGEM');
-    }
+    protected $mobile = true;
+    
+    /**
+     * the Device is a desktop device
+     *
+     * @var string
+     */
+    protected $desktop = false;
+    
+    /**
+     * the Device is a console
+     *
+     * @var string
+     */
+    protected $console = true;
+    
+    /**
+     * the Device is a tv device
+     *
+     * @var string
+     */
+    protected $tv = false;
+    
+    /**
+     * the Device is a mobile phone
+     *
+     * @var string
+     */
+    protected $phone = false;
+    
+    /**
+     * the Device is a tablet device
+     *
+     * @var string
+     */
+    protected $tablet = false;
 }

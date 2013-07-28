@@ -49,6 +49,8 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * @category  Browscap
@@ -66,82 +68,62 @@ final class AcerIconiaA700
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => 'acer_iconia_tab_a700_ver1', // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return DeviceHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // kind of device
-        'device_type'        => 'Tablet', // not in wurfl
-        'is_wireless_device' => true,
-        'is_tablet'          => true, // wurflkey: acer_iconia_tab_a700_ver1_subuachrome
-        // 'is_bot'             => false,
-        'is_smarttv'         => false,
-        'is_console'         => false,
-        'ux_full_desktop'    => false,
-        // 'is_transcoder'      => false,
-        
-        // device
-        'model_name'                => 'A700',
-        'model_version'             => null, // not in wurfl
-        'manufacturer_name'         => 'Acer',
-        'brand_name'                => 'Acer',
-        'model_extra_info'          => null,
-        'marketing_name'            => 'Iconia Tab A700',
-        'has_qwerty_keyboard'       => true,
-        'pointing_method'           => 'touchscreen',
-        'device_bits'               => null, // not in wurfl
-        'device_cpu'                => null, // not in wurfl
-        
-        // product info
-        'can_assign_phone_number'   => true,
-        'nokia_feature_pack'        => 0,
-        'nokia_series'              => 0,
-        'nokia_edition'             => 0,
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => 'http://support.acer.com/UAprofile/Acer_A700_JRO03H_Profile.xml',
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-        
-        // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 28,
-        'rows'                   => 30,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
-        'dual_orientation'       => true,
-        'colors'                 => 4294967296,
-        
-        // sms
-        'sms_enabled' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
-        
-        // playback
-        'playback_oma_size_limit' => null,
-        'playback_acodec_aac' => null,
-        'playback_vcodec_h263_3' => null,
-        'playback_vcodec_mpeg4_asp' => null,
-        'playback_mp4' => null,
-        'playback_3gpp' => null,
-        'playback_df_size_limit' => null,
-        'playback_acodec_amr' => null,
-        'playback_mov' => null,
-        'playback_wmv' => null,
-        'playback_acodec_qcelp' => null,
-        'progressive_download' => null,
-        'playback_directdownload_size_limit' => null,
-        'playback_real_media' => null,
-        'playback_3g2' => null,
-        'playback_vcodec_mpeg4_sp' => null,
-        'playback_vcodec_h263_0' => null,
-        'playback_inline_size_limit' => null,
-        'hinted_progressive_download' => null,
-        'playback_vcodec_h264_bp' => null,
-        
-        // chips
-        'nfc_support' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
-    );
+        $this->properties = array(
+            'wurflKey' => 'acer_iconia_tab_a700_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            
+            // device
+            'model_name'                => 'A700',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Acer(),
+            'brand_name' => new Company\Acer(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Iconia Tab A700',
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => true,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => 'http://support.acer.com/UAprofile/Acer_A700_JRO03H_Profile.xml',
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => 34,
+            'physical_screen_height' => 50,
+            'columns'                => 28,
+            'rows'                   => 30,
+            'max_image_width'        => 320,
+            'max_image_height'       => 400,
+            'resolution_width'       => 1920,
+            'resolution_height'      => 1200,
+            'dual_orientation'       => true,
+            'colors'                 => 4294967296,
+            
+            // sms
+            'sms_enabled' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
+            
+            // chips
+            'nfc_support' => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
+        );
+    }
     
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +132,7 @@ final class AcerIconiaA700
      */
     public function canHandle()
     {
-        if (!$this->_utils->checkIfContains(array('Iconia A700', 'A700'))) {
+        if (!$this->utils->checkIfContains(array('Iconia A700', 'A700'))) {
             return false;
         }
         
@@ -175,7 +157,7 @@ final class AcerIconiaA700
      */
     protected function _parseProperties()
     {
-        if ($this->_utils->checkIfContains(array('Build/IMM7'))) {
+        if ($this->utils->checkIfContains(array('Build/IMM7'))) {
             $this->setCapability(
                 'uaprof',
                 'http://support.acer.com/UAprofile/Acer_A700_IML74K_Profile.xml'

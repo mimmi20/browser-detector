@@ -50,6 +50,7 @@ use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\Version;
+use \Browscap\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -70,15 +71,25 @@ class Android
      *
      * @var array
      */
-    protected $_properties = array(
-        'wurflKey' => null, // not in wurfl
+    protected $properties = array();
+    
+    /**
+     * Class Constructor
+     *
+     * @return OsHandler
+     */
+    public function __construct()
+    {
+        parent::__construct();
         
-        // os
-        'device_os'              => 'Android',
-        'device_os_version'      => '',
-        'device_os_bits'         => '', // not in wurfl
-        'device_os_manufacturer' => 'Google', // not in wurfl
-    );
+        $this->properties = array(
+            // os
+            'device_os'              => 'Android',
+            'device_os_version'      => '',
+            'device_os_bits'         => '', // not in wurfl
+            'device_os_manufacturer' => new Company\Google(), // not in wurfl
+        );
+    }
     
     /**
      * Returns true if this handler can handle the given $useragent
@@ -101,14 +112,14 @@ class Android
             'like Android'
         );
         
-        if ($this->_utils->checkIfContains($noAndroid)) {
+        if ($this->utils->checkIfContains($noAndroid)) {
             return false;
         }
         
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
+        if ($this->utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
             || $safariHelper->isMobileAsSafari()
         ) {
             return true;
@@ -129,7 +140,7 @@ class Android
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        if ($this->_utils->checkIfContains('android 2.1-update1', true)) {
+        if ($this->utils->checkIfContains('android 2.1-update1', true)) {
             $this->setCapability(
                 'device_os_version', 
                 $detector->setVersion('2.1.1')
@@ -137,7 +148,7 @@ class Android
             return;
         }
         
-        if ($this->_utils->checkIfContains('android eclair', true)) {
+        if ($this->utils->checkIfContains('android eclair', true)) {
             $this->setCapability(
                 'device_os_version', 
                 $detector->setVersion('2.1')
@@ -208,7 +219,7 @@ class Android
     {
         parent::detectDependProperties($browser, $engine, $device);
         
-        if (!$device->getCapability('is_tablet')) {
+        if (!$device->getCapability('device_type')->isTablet()) {
             $engine->setCapability('xhtml_send_mms_string', 'mms:');
             $engine->setCapability('xhtml_send_sms_string', 'sms:');
         }
@@ -232,8 +243,8 @@ class Android
             $engine->setCapability('is_sencha_touch_ok', false);
         }
         
-        if ($this->_utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Mac OS X'))
-            && !$this->_utils->checkIfContains('Android')
+        if ($this->utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Mac OS X'))
+            && !$this->utils->checkIfContains('Android')
         ) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
