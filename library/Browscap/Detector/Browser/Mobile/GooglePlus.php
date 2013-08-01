@@ -103,7 +103,7 @@ class GooglePlus
             'post_method_support' => true,
             
             // rss
-            'rss_support' => false,
+            'rss_support' => true,
         );
     }
     

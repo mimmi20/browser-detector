@@ -114,7 +114,8 @@ final class SamsungSchI400
             'max_image_height'       => null,
             'resolution_width'       => null,
             'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,

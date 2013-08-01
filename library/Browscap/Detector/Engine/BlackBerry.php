@@ -157,14 +157,14 @@ class BlackBerry extends EngineHandler
             'gif' => true,
             'bmp' => null,
             'wbmp' => null,
-            'gif_animated' => null,
+            'gif_animated' => true,
             'png' => true,
-            'greyscale' => null,
-            'transparent_png_index' => null,
+            'greyscale' => false,
+            'transparent_png_index' => false,
             'epoc_bmp' => null,
             'svgt_1_1_plus' => null,
             'svgt_1_1' => null,
-            'transparent_png_alpha' => null,
+            'transparent_png_alpha' => false,
             'tiff' => null,
             
             // security

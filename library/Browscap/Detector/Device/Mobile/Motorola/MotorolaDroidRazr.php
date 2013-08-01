@@ -135,7 +135,7 @@ final class MotorolaDroidRazr
             return false;
         }
         
-        if ($this->utils->checkIfContains('DROID RAZR 4G')) {
+        if ($this->utils->checkIfContains('DROID RAZR 4G', 'DROID RAZR HD')) {
             return false;
         }
         

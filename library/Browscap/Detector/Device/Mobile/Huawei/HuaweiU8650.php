@@ -91,7 +91,7 @@ final class HuaweiU8650
             'manufacturer_name' => new Company\Huawei(),
             'brand_name' => new Company\Huawei(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'U8650',
+            'marketing_name'            => 'Sonic',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lg;
+namespace Browscap\Detector\Device\Mobile\Medion;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Lgp705
+final class MdLifetabP4012
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,22 +83,22 @@ final class Lgp705
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'P705',
+            'model_name'                => 'LifeTab P4012',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Lg(),
-            'brand_name' => new Company\Lg(),
+            'manufacturer_name' => new Company\Medion(),
+            'brand_name' => new Company\Medion(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L7',
+            'marketing_name'            => 'LifeTab P4012',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => true,
+            'can_assign_phone_number'   => false,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -106,22 +106,22 @@ final class Lgp705
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 57,
-            'physical_screen_height' => 94,
-            'columns'                => 15,
-            'rows'                   => 25,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 480,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 1280,
             'resolution_height'      => 800,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
             // sms
-            'sms_enabled' => true,
+            'sms_enabled' => false,
             
             // chips
-            'nfc_support' => true,
+            'nfc_support' => false,
         );
     }
     
@@ -132,21 +132,11 @@ final class Lgp705
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P705')) {
+        if (!$this->utils->checkIfContains('MEDION LIFE P4012')) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
     
     /**
@@ -162,6 +152,16 @@ final class Lgp705
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+    
+    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
@@ -172,8 +172,7 @@ final class Lgp705
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();

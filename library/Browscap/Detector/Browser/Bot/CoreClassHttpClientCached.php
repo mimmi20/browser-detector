@@ -84,7 +84,7 @@ class CoreClassHttpClientCached
             'browser_type' => new BrowserType\Unister(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'Core_Class_HttpClientcached',
+            'mobile_browser'              => 'Core_Class_HttpClient_Cached',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Unister(), // not in wurfl
@@ -114,7 +114,7 @@ class CoreClassHttpClientCached
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Core_Class_HttpClientcached')) {
+        if (!$this->utils->checkIfContains('Core_Class_HttpClient_Cached')) {
             return false;
         }
         
@@ -131,7 +131,7 @@ class CoreClassHttpClientCached
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Core_Class_HttpClientcached');
+        $searches = array('Core_Class_HttpClient_Cached');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

@@ -187,6 +187,7 @@ final class SpamCrawlerFake
             'www.versicherungen.de', 
             'insurance.preisvergleich.de', 
             'finanzen.shopping.de',
+            'geld_class_service_kfzcomeback',
             'validator',
             'webcapture',
             'webfilter',
@@ -261,7 +262,7 @@ final class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
-        if ($this->utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb'))) {
+        if ($this->utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb', 'Maxthon'))) {
             return false;
         }
         
@@ -341,7 +342,7 @@ final class SpamCrawlerFake
             '6.2', '6.3'
         );
         
-        $doMatch = preg_match('/Windows NT ([\d\.]+);/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches);
         if ($doMatch) {
             if (!$this->utils->checkIfContains('linux', true) 
                 && in_array($matches[1], $ntVersions)

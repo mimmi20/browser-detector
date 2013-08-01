@@ -158,7 +158,7 @@ class Android
         
         $searches = array(
             'Android', 'Android WildPuzzleROM v8 froyo', 
-            'Android AndroidHouse Team', 'JUC\(Linux;U;'
+            'Android AndroidHouse Team', 'JUC\(Linux;U;', 'Android OS'
         );
         
         $this->setCapability(
@@ -193,11 +193,13 @@ class Android
             new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
             new \Browscap\Detector\Browser\Mobile\NetFrontLifeBrowser(),
             new \Browscap\Detector\Browser\Bot\Googlebot(),
+            new \Browscap\Detector\Browser\Mobile\Opera(),
             new \Browscap\Detector\Browser\Mobile\OperaMini(),
             new \Browscap\Detector\Browser\Mobile\OperaMobile(),
             new \Browscap\Detector\Browser\Mobile\OperaTablet(),
             new \Browscap\Detector\Browser\Mobile\Firefox(),
             new \Browscap\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
+            new \Browscap\Detector\Browser\Mobile\AndroidDownloadManager()
         );
         
         $chain = new \Browscap\Detector\Chain();

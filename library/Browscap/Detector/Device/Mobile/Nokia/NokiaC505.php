@@ -92,7 +92,7 @@ final class NokiaC505
             'brand_name' => new Company\Nokia(),
             'model_extra_info'          => null,
             'marketing_name'            => null,
-            'has_qwerty_keyboard'       => true,
+            'has_qwerty_keyboard'       => false,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
@@ -112,9 +112,10 @@ final class NokiaC505
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 360,
+            'resolution_height'      => 640,
+            'dual_orientation'       => false,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,

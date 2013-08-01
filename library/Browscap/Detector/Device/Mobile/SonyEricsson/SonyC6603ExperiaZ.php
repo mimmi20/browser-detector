@@ -88,10 +88,10 @@ final class SonyC6603ExperiaZ
             // device
             'model_name'                => 'C6603',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Sony(),
-            'brand_name' => new Company\Sony(),
+            'manufacturer_name' => new Company\SonyEricsson(),
+            'brand_name' => new Company\SonyEricsson(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Experia Z',
+            'marketing_name'            => 'Xperia Z',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

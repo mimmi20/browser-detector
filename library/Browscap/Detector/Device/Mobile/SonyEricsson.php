@@ -136,6 +136,7 @@ final class SonyEricsson
             'sony',
             'c6602',
             'c6603',
+            'c6503',
             'e10i',
             'e15i',
             'e15av',

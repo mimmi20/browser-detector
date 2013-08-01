@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lg;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Lgp705
+final class SamsungD710bst
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,19 +80,19 @@ final class Lgp705
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => null, // not in wurfl
+            'wurflKey' => 'samsung_sph_D710BST_ver1', // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'P705',
+            'model_name'                => 'SPH-D710BST',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Lg(),
-            'brand_name' => new Company\Lg(),
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L7',
-            'has_qwerty_keyboard'       => true,
+            'marketing_name'            => 'Galaxy S II Epic 4G Touch',
+            'has_qwerty_keyboard'       => true, // wurflkey: samsung_sph_D710BST_ver1_suban40rom
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
@@ -100,16 +100,16 @@ final class Lgp705
             // product info
             'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
-            'uaprof2'                   => null,
-            'uaprof3'                   => null,
+            'uaprof'                    => 'http://device.sprintpcs.com/Samsung/SPH-D710BST/EG30.rdf',
+            'uaprof2'                   => 'http://device.sprintpcs.com/Samsung/SPH-D710BSTBST/FG20.rdf',
+            'uaprof3'                   => 'http://device.sprintpcs.com/Samsung/SPH-D710BSTBST/FG31.rdf',
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 57,
-            'physical_screen_height' => 94,
-            'columns'                => 15,
-            'rows'                   => 25,
+            'physical_screen_width'  => 34,
+            'physical_screen_height' => 50,
+            'columns'                => 25,
+            'rows'                   => 21,
             'max_image_width'        => 320,
             'max_image_height'       => 400,
             'resolution_width'       => 480,
@@ -132,7 +132,7 @@ final class Lgp705
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P705')) {
+        if (!$this->utils->checkIfContains('SPH-D710BST')) {
             return false;
         }
         
@@ -172,8 +172,7 @@ final class Lgp705
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -196,5 +195,66 @@ final class Lgp705
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('bmp', false);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_sph_D710BST_ver1_suban40rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this;
     }
 }

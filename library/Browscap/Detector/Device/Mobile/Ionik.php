@@ -131,7 +131,7 @@ final class Ionik
      */
     public function canHandle()
     {
-        $ionikPhones = array('ionik', 'tp10.1-1500dc-metal');
+        $ionikPhones = array('ionik', 'tp10.1-1500dc');
         
         if ($this->utils->checkIfContains($ionikPhones, true)) {
             return true;

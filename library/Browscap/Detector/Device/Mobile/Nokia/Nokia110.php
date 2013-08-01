@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lg;
+namespace Browscap\Detector\Device\Mobile\Nokia;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Lgp705
+final class Nokia110
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,14 +86,14 @@ final class Lgp705
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'P705',
+            'model_name'                => '110',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Lg(),
-            'brand_name' => new Company\Lg(),
+            'manufacturer_name' => new Company\Nokia(),
+            'brand_name' => new Company\Nokia(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L7',
+            'marketing_name'            => null,
             'has_qwerty_keyboard'       => true,
-            'pointing_method'           => 'touchscreen',
+            'pointing_method'           => null,
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
@@ -106,15 +106,15 @@ final class Lgp705
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 57,
-            'physical_screen_height' => 94,
-            'columns'                => 15,
-            'rows'                   => 25,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 480,
-            'resolution_height'      => 800,
-            'dual_orientation'       => true,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 128,
+            'resolution_height'      => 160,
+            'dual_orientation'       => false,
             'colors'                 => 65536,
             
             // sms
@@ -132,7 +132,7 @@ final class Lgp705
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P705')) {
+        if (!$this->utils->checkIfContains('Nokia110')) {
             return false;
         }
         
@@ -170,10 +170,9 @@ final class Lgp705
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
+            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
+            new \Browscap\Detector\Browser\Mobile\OperaMini()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -192,7 +191,7 @@ final class Lgp705
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
+        $handler = new \Browscap\Detector\Os\Symbianos();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

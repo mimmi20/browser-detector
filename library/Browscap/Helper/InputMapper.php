@@ -429,6 +429,7 @@ final class InputMapper
             case 'opera for series 60':
             case 'opera mini for s60':
             case 'windows mobile (opera)':
+            case 'mobi for android':
                 $deviceName = 'general Mobile Device';
                 break;
             case 'spider':
@@ -688,7 +689,11 @@ final class InputMapper
             case 'xperia arc so-01c for docomo':
                 $marketingName = 'Xperia Arc SO-01C for DoCoMo';
                 break;
+            case 'galaxy sii':
+                $marketingName = 'Galaxy S II';
+                break;
             case 'galaxy siii':
+            case 'galaxy s3':
                 $marketingName = 'Galaxy S III';
                 break;
             default:

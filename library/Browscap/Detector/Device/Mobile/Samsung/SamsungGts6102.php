@@ -136,6 +136,10 @@ final class SamsungGts6102
             return false;
         }
         
+        if ($this->utils->checkIfContains('GT-S6102B')) {
+            return false;
+        }
+        
         return true;
     }
     

@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lg;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Lgp705
+final class SamsungGti9500
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,40 +80,40 @@ final class Lgp705
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => null, // not in wurfl
+            'wurflKey' => 'samsung_gt_i9500_ver1', // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'P705',
+            'model_name'                => 'GT-I9500',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Lg(),
-            'brand_name' => new Company\Lg(),
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L7',
-            'has_qwerty_keyboard'       => true,
+            'marketing_name'            => 'Galaxy S4', 
+            'has_qwerty_keyboard'       => true,                          
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'ARM11', // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => true,
+            'can_assign_phone_number'   => true, 
             'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
+            'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I9500.xml',
             'uaprof2'                   => null,
             'uaprof3'                   => null,
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 57,
-            'physical_screen_height' => 94,
-            'columns'                => 15,
-            'rows'                   => 25,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 480,
-            'resolution_height'      => 800,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 1080,
+            'resolution_height'      => 1920,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
@@ -132,7 +132,7 @@ final class Lgp705
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P705')) {
+        if (!$this->utils->checkIfContains('GT-I9500')) {
             return false;
         }
         
@@ -146,7 +146,7 @@ final class Lgp705
      */
     public function getWeight()
     {
-        return 3;
+        return 91981;
     }
     
     /**
@@ -172,8 +172,7 @@ final class Lgp705
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();

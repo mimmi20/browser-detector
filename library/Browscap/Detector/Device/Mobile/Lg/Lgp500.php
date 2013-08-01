@@ -91,7 +91,7 @@ final class Lgp500
             'manufacturer_name' => new Company\Lg(),
             'brand_name' => new Company\Lg(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'P500',
+            'marketing_name'            => 'Optimus One',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -133,6 +133,10 @@ final class Lgp500
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('LG-P500')) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains('LG-P500h')) {
             return false;
         }
         

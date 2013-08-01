@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Lgp705
+final class Lgp925
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,36 +80,36 @@ final class Lgp705
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => null, // not in wurfl
+            'wurflKey' => 'lg_p925_ver1', // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'P705',
+            'model_name'                => 'P925',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Lg(),
             'brand_name' => new Company\Lg(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L7',
+            'marketing_name'            => 'Thrill',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => true,
+            'can_assign_phone_number'   => true, // wurflkey: lg_p925_ver1
             'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
-            'uaprof2'                   => null,
+            'uaprof'                    => 'http://gsm.lge.com/html/gsm/P925-M3-D2.xml',
+            'uaprof2'                   => 'http://gsm.lge.com/html/gsm/P925-M6-D2.xml',
             'uaprof3'                   => null,
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 57,
-            'physical_screen_height' => 94,
-            'columns'                => 15,
-            'rows'                   => 25,
+            'physical_screen_width'  => 34, // wurflkey: lg_p925_ver1
+            'physical_screen_height' => 50,
+            'columns'                => 25,
+            'rows'                   => 15,
             'max_image_width'        => 320,
             'max_image_height'       => 400,
             'resolution_width'       => 480,
@@ -132,7 +132,7 @@ final class Lgp705
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P705')) {
+        if (!$this->utils->checkIfContains('LG-P925')) {
             return false;
         }
         
@@ -172,8 +172,7 @@ final class Lgp705
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -196,5 +195,21 @@ final class Lgp705
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('bmp', true);
+        
+        return $this;
     }
 }

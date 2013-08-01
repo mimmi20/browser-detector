@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Lg;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Lgp705
+final class SamsungGts5300B
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,40 +80,40 @@ final class Lgp705
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => null, // not in wurfl
+            'wurflKey' => 'samsung_gt_s5300_ver1', // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'P705',
+            'model_name'                => 'GT-S5300B',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Lg(),
-            'brand_name' => new Company\Lg(),
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L7',
-            'has_qwerty_keyboard'       => true,
+            'marketing_name'            => 'Galaxy Pocket', // wurflkey: samsung_gt_s5300_ver1
+            'has_qwerty_keyboard'       => true,            // wurflkey: samsung_gt_s5300_ver1
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'ARM11', // not in wurfl
             
             // product info
             'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
+            'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5300B.xml',
             'uaprof2'                   => null,
             'uaprof3'                   => null,
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 57,
-            'physical_screen_height' => 94,
-            'columns'                => 15,
-            'rows'                   => 25,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 480,
-            'resolution_height'      => 800,
+            'physical_screen_width'  => 43,
+            'physical_screen_height' => 57,
+            'columns'                => 25,
+            'rows'                   => 21,
+            'max_image_width'        => 228,
+            'max_image_height'       => 280,
+            'resolution_width'       => 240,
+            'resolution_height'      => 320,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
@@ -132,7 +132,7 @@ final class Lgp705
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P705')) {
+        if (!$this->utils->checkIfContains(array('SAMSUNG-GT-S5300B', 'GT-S5300B'))) {
             return false;
         }
         
@@ -172,8 +172,7 @@ final class Lgp705
         $browsers = array(
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -196,5 +195,21 @@ final class Lgp705
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

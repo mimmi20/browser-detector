@@ -136,6 +136,10 @@ final class SamsungSphd710
             return false;
         }
         
+        if ($this->utils->checkIfContains('SPH-D710BST')) {
+            return false;
+        }
+        
         return true;
     }
     

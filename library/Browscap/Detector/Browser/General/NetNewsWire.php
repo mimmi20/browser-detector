@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -41,28 +41,27 @@ namespace Browscap\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
-/**
- * MSIEAgentHandler
- *
- *
+ /**
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Ios
-    extends OsHandler
-    implements MatcherInterface, OsInterface
+class NetNewsWire
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties
@@ -74,38 +73,79 @@ class Ios
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return BrowserHandler
      */
     public function __construct()
     {
         parent::__construct();
         
         $this->properties = array(
-            // os
-            'device_os'              => 'iOS',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Apple(), // not in wurfl
+            // kind of device
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'NetNewsWire',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\BlackPixel(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => false,
+            'device_claims_web_support' => false,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
         );
     }
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
     public function canHandle()
     {
-        $ios = array(
-            'IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone',
-            'iPod', 'CPU OS', 'CPU iOS', 'IUC(U;iOS'
-        );
-        
-        if (!$this->utils->checkIfContains($ios)) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
             return false;
         }
         
-        if ($this->utils->checkIfContains('Darwin')) {
+        if (!$this->utils->checkIfContainsAll(array('NetNewsWire'))) {
+            return false;
+        }
+        
+        $isNotReallyAnIE = array(
+            // using also the Trident rendering engine
+            'Maxthon',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'PaleMoon',
+            'Flock',
+            'AOL',
+            'TOB',
+            'MyIE',
+            //others
+            'AppleWebKit',
+            'Chrome',
+            'Linux',
+            'MSOffice',
+            'Outlook',
+            'IEMobile',
+            'BlackBerry',
+            'WebTV',
+            'MSIE'
+        );
+        
+        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
         
@@ -115,8 +155,6 @@ class Ios
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $this->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
@@ -124,23 +162,13 @@ class Ios
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array(
-            'IphoneOSX', 'CPU OS\_', 'CPU OS', 'CPU iOS', 'CPU iPad OS',
-            'iPhone OS', 'iPhone_OS', 'IUC\(U\;iOS'
-        );
+        $searches = array('NetNewsWire');
         
         $this->setCapability(
-            'device_os_version', 
-            $detector->detectVersion($searches)
+            'mobile_browser_version', $detector->detectVersion($searches)
         );
         
-        $doMatch = preg_match('/CPU like Mac OS X/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'device_os_version', $detector->setVersion('1.0')
-            );
-        }
+        return $this;
     }
     
     /**
@@ -150,60 +178,20 @@ class Ios
      */
     public function getWeight()
     {
-        return 404;
+        return 3;
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function detectBrowser()
+    public function detectEngine()
     {
-        $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Safari(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
-            new \Browscap\Detector\Browser\Mobile\OnePassword(),
-            new \Browscap\Detector\Browser\Mobile\Sleipnir(),
-            new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
-            new \Browscap\Detector\Browser\Mobile\Facebook(),
-            new \Browscap\Detector\Browser\Mobile\Isource(),
-            new \Browscap\Detector\Browser\Mobile\GooglePlus(),
-            new \Browscap\Detector\Browser\Mobile\NetNewsWire()
-        );
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     * 
-     * @param string $capabilityName must be a valid capability name
-     * @return string Capability value
-     * @throws InvalidArgumentException
-     */
-    public function getCapability($capabilityName) 
-    {
-        $this->checkCapability($capabilityName);
-        
-        switch ($capabilityName) {
-            case 'model_extra_info':
-                return $this->properties['device_os_version']->getVersion(
-                    Version::MAJORMINOR
-                );
-                break;
-            default:
-                return $this->properties[$capabilityName];
-                break;
-        }
+        return $handler->detect();
     }
 }

@@ -124,6 +124,7 @@ final class MobileDevice
             'kindle',
             'lenovo',
             'like mac os x',
+            'linux armv',
             'look-alike',
             'maemo',
             'meego',

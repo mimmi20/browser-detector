@@ -121,7 +121,7 @@ class Blackberry
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('BlackBerry', 'Blackberry'))) {
+        if ($this->utils->checkIfContains(array('BlackBerry', 'Blackberry', 'BB10'))) {
             return true;
         }
         

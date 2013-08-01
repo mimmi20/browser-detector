@@ -112,9 +112,10 @@ final class BlackBerry9380
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 360,
+            'resolution_height'      => 480,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,

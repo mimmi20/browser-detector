@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Device\Mobile\Olivetti;
 
 /**
  * PHP version 5.3
@@ -41,27 +41,27 @@ namespace Browscap\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
+use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
 use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Browser as BrowserType;
+use \Browscap\Detector\Type\Device as DeviceType;
 
- /**
+/**
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class NetNewsWire
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+final class OP070
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -73,79 +73,66 @@ class NetNewsWire
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return DeviceHandler
      */
     public function __construct()
     {
         parent::__construct();
         
         $this->properties = array(
-            // kind of device
-            'browser_type' => new BrowserType\Bot(), // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
-            // browser
-            'mobile_browser'              => 'NetNewsWire',
-            'mobile_browser_version'      => null,
-            'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
-            'mobile_browser_modus'        => null, // not in wurfl
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'Olipad 70',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Olivetti(),
+            'brand_name' => new Company\Olivetti(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Olipad Smart',
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => 'touchscreen',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_skip_aligned_link_row' => false,
-            'device_claims_web_support' => false,
+            'can_assign_phone_number'   => false,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => null,
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
             
-            // pdf
-            'pdf_support' => true,
+            // display
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 800,
+            'resolution_height'      => 480,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
-            // bugs
-            'empty_option_value_support' => true,
-            'basic_authentication_support' => true,
-            'post_method_support' => true,
+            // sms
+            'sms_enabled' => true,
             
-            // rss
-            'rss_support' => false,
+            // chips
+            'nfc_support' => true,
         );
     }
     
     /**
-     * Returns true if this handler can handle the given user agent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->utils->checkIfContainsAll(array('NetNewsWire'))) {
-            return false;
-        }
-        
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Maxthon',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            'AOL',
-            'TOB',
-            'MyIE',
-            //others
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'MSIE'
-        );
-        
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
+        if (!$this->utils->checkIfContains('OP070')) {
             return false;
         }
         
@@ -153,21 +140,14 @@ class NetNewsWire
     }
     
     /**
-     * detects the browser version from the given user agent
+     * detects the device name from the given user agent
      *
-     * @return string
+     * @param string $userAgent
+     *
+     * @return StdClass
      */
-    protected function _detectVersion()
+    public function detectDevice()
     {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('NetNewsWire');
-        
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-        
         return $this;
     }
     
@@ -182,14 +162,36 @@ class NetNewsWire
     }
     
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function detectEngine()
+    public function detectBrowser()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
+        $browsers = array(
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
+        );
+        
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

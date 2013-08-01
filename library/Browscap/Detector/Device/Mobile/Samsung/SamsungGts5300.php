@@ -136,6 +136,10 @@ final class SamsungGts5300
             return false;
         }
         
+        if ($this->utils->checkIfContains(array('SAMSUNG-GT-S5300B', 'GT-S5300B'))) {
+            return false;
+        }
+        
         return true;
     }
     

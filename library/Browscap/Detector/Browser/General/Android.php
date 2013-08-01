@@ -129,6 +129,7 @@ class Android
             'AndroidDownloadManager',
             'BlackBerry', 
             'Blackberry',
+            'BB10',
             'Browser/Phantom',
             'CalDAV',
             'Chrome', 

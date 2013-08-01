@@ -86,12 +86,12 @@ final class IonikTp10
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'TP10.1-1500DC-metal',
+            'model_name'                => 'TP10.1-1500DC',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Ionik(),
             'brand_name' => new Company\Ionik(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'TP10.1-1500DC-metal',
+            'marketing_name'            => 'TP10.1-1500DC',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -132,7 +132,7 @@ final class IonikTp10
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('tp10.1-1500dc-metal', true)) {
+        if (!$this->utils->checkIfContains('tp10.1-1500dc', true)) {
             return false;
         }
         

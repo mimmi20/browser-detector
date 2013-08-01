@@ -91,7 +91,7 @@ final class Lgp500h
             'manufacturer_name' => new Company\Lg(),
             'brand_name' => new Company\Lg(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'P500h',
+            'marketing_name'            => 'Optimus One',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

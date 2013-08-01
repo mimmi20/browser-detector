@@ -91,7 +91,7 @@ final class MotorolaMe525
             'manufacturer_name' => new Company\Motorola(),
             'brand_name' => new Company\Motorola(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'ME525',
+            'marketing_name'            => 'Defy',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,9 +112,10 @@ final class MotorolaMe525
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 320,
+            'resolution_height'      => 480,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,

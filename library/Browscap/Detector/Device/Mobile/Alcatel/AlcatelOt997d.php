@@ -91,7 +91,7 @@ final class AlcatelOt997d
             'manufacturer_name' => new Company\Alcatel(),
             'brand_name' => new Company\Alcatel(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'OT-997D',
+            'marketing_name'            => 'One Touch 997D',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -115,7 +115,7 @@ final class AlcatelOt997d
             'resolution_width'       => 480,
             'resolution_height'      => 800,
             'dual_orientation'       => true,
-            'colors'                 => 65536,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,

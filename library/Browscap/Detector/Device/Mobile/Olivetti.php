@@ -137,6 +137,10 @@ final class Olivetti
             return false;
         }
         
+        if ($this->utils->checkIfContains('OPR/')) {
+            return false;
+        }
+        
         return true;
     }
     

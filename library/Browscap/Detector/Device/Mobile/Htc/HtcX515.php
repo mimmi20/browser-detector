@@ -91,7 +91,7 @@ final class HtcX515
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'X515',
+            'marketing_name'            => 'EVO 3D',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,9 +112,10 @@ final class HtcX515
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 540,
+            'resolution_height'      => 960,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,

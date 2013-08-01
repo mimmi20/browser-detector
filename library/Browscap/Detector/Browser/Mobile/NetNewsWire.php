@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Type\Browser;
+namespace Browscap\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,47 +41,16 @@ namespace Browscap\Detector\Type\Browser;
  * @version   SVN: $Id$
  */
 
-/**
+use \Browscap\Detector\Browser\General\NetNewsWire as NetNewsWireBase;
+
+ /**
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Transcoder extends AbstractType implements TypeInterface
+class NetNewsWire extends NetNewsWireBase
 {
-    /**
-     * the name of the browser
-     *
-     * @var string
-     */
-    protected $name = 'Browser';
-    
-    /**
-     * the Browser is a Bot
-     *
-     * @var boolean
-     */
-    protected $bot = false;
-    
-    /**
-     * the Browser is a Syndication Reader
-     *
-     * @var boolean
-     */
-    protected $reader = false;
-    
-    /**
-     * the Browser uses a transcoding webservice
-     *
-     * @var boolean
-     */
-    protected $transcoder = true;
-    
-    /**
-     * the Browser should be banned
-     *
-     * @var boolean
-     */
-    protected $banned = false;
+    // nothing to do
 }

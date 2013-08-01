@@ -121,7 +121,8 @@ class UnisterPortale
             'www.geld.de', 
             'www.versicherungen.de', 
             'insurance.preisvergleich.de', 
-            'finanzen.shopping.de'
+            'finanzen.shopping.de',
+            'geld_class_service_kfzcomeback'
         );
         
         if (!$this->utils->checkIfContains($portale, true)) {

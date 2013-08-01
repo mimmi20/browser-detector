@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Type\Browser;
+namespace Browscap\Detector\Company;
 
 /**
  * PHP version 5.3
@@ -48,40 +48,19 @@ namespace Browscap\Detector\Type\Browser;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Transcoder extends AbstractType implements TypeInterface
+final class Maxthon extends AbstractCompany implements CompanyInterface
 {
     /**
-     * the name of the browser
+     * the name of the company
      *
      * @var string
      */
-    protected $name = 'Browser';
+    protected $name = 'Maxthon International Limited';
     
     /**
-     * the Browser is a Bot
+     * the brand name of the company
      *
-     * @var boolean
+     * @var string
      */
-    protected $bot = false;
-    
-    /**
-     * the Browser is a Syndication Reader
-     *
-     * @var boolean
-     */
-    protected $reader = false;
-    
-    /**
-     * the Browser uses a transcoding webservice
-     *
-     * @var boolean
-     */
-    protected $transcoder = true;
-    
-    /**
-     * the Browser should be banned
-     *
-     * @var boolean
-     */
-    protected $banned = false;
+    protected $brandname = 'Maxthon';
 }

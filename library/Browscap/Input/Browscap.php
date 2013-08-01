@@ -862,7 +862,7 @@ class Browscap extends Core
                     case 'Mac68K':
                     case 'Darwin':
                         $properties['Device_Name'] = 'Macintosh';
-                        $properties['Device_Maker'] = 'Apple';
+                        $properties['Device_Maker'] = 'Apple Inc';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -873,7 +873,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'iOS':
-                        $properties['Device_Maker'] = 'Apple';
+                        $properties['Device_Maker'] = 'Apple Inc';
                         $properties['isMobileDevice'] = true;
                         $properties['Device_isMobileDevice'] = true;
                         $properties['Device_isDesktop'] = false;
@@ -998,14 +998,18 @@ class Browscap extends Core
                             $properties['Device_isMobileDevice'] = true;
                             $properties['Device_isDesktop'] = false;
                             $properties['Device_isTv'] = false;
-                            $properties['Platform_Maker'] = 'Google';
-                            $properties['Device_Type'] = 'Mobile Phone';
+                            $properties['Platform_Maker'] = 'Google Inc';
+                            if ($isTablet) {
+                                $properties['Device_Type'] = 'Tablet';
+                            } else {
+                                $properties['Device_Type'] = 'Mobile Phone';
+                            }
                         } elseif (!empty($properties['Device_Name']) && $properties['Device_Name'] === 'NBPC724') {
                             $properties['isMobileDevice'] = false;
                             $properties['Device_isMobileDevice'] = false;
                             $properties['Device_isDesktop'] = true;
                             $properties['Device_isTv'] = false;
-                            $properties['Platform_Maker'] = 'Google';
+                            $properties['Platform_Maker'] = 'Google Inc';
                             $properties['Device_Type'] = 'Desktop';
                         }
                         break;
@@ -1044,7 +1048,7 @@ class Browscap extends Core
                         $properties['Device_isTablet'] = false;
                         $properties['Device_isDesktop'] = true;
                         $properties['Device_isTv'] = false;
-                        $properties['Platform_Maker'] = 'Google';
+                        $properties['Platform_Maker'] = 'Google Inc';
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'Ubuntu':
