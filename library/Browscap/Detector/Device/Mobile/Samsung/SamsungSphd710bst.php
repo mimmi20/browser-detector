@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungD710bst
+final class SamsungSphd710bst
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {

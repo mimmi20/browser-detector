@@ -91,7 +91,7 @@ final class SonyTabletSgpt12
             'manufacturer_name' => new Company\Sony(),
             'brand_name' => new Company\Sony(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Xperia SGPT12',
+            'marketing_name'            => 'Xperia Tablet S',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

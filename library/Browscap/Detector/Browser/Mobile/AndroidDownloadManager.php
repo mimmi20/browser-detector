@@ -85,7 +85,7 @@ class AndroidDownloadManager
             'browser_type' => new BrowserType\Browser(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'AndroidDownloadManager',
+            'mobile_browser'              => 'Android Download Manager',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
@@ -130,6 +130,25 @@ class AndroidDownloadManager
     public function getWeight()
     {
         return 4;
+    }
+    
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \Browscap\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('AndroidDownloadManager');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
     }
     
     /**

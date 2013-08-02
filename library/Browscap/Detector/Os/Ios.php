@@ -169,7 +169,7 @@ class Ios
             new \Browscap\Detector\Browser\Mobile\OnePassword(),
             new \Browscap\Detector\Browser\Mobile\Sleipnir(),
             new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
-            new \Browscap\Detector\Browser\Mobile\Facebook(),
+            new \Browscap\Detector\Browser\Mobile\FacebookApp(),
             new \Browscap\Detector\Browser\Mobile\Isource(),
             new \Browscap\Detector\Browser\Mobile\GooglePlus(),
             new \Browscap\Detector\Browser\Mobile\NetNewsWire()

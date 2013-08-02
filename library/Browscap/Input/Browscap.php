@@ -728,7 +728,7 @@ class Browscap extends Core
                 // $properties['Platform_Bits'] = 0;
                 // $properties['Browser_Bits'] = 0;
                 // $properties['Platform_Maker'] = 'Bot';
-                $properties['Device_Type'] = 'Bot';
+                // $properties['Device_Type'] = 'Bot';
             } elseif (!empty($properties['Device_Maker']) && $properties['Device_Maker'] == 'RIM') {
                 $properties['Device_Maker'] = 'RIM';
                 $properties['isMobileDevice'] = true;
@@ -863,6 +863,7 @@ class Browscap extends Core
                     case 'Darwin':
                         $properties['Device_Name'] = 'Macintosh';
                         $properties['Device_Maker'] = 'Apple Inc';
+                        $properties['Device_Brand_Name'] = 'Apple';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -874,6 +875,7 @@ class Browscap extends Core
                         break;
                     case 'iOS':
                         $properties['Device_Maker'] = 'Apple Inc';
+                        $properties['Device_Brand_Name'] = 'Apple';
                         $properties['isMobileDevice'] = true;
                         $properties['Device_isMobileDevice'] = true;
                         $properties['Device_isDesktop'] = false;
@@ -903,7 +905,7 @@ class Browscap extends Core
                         }
                         break;
                     case 'BeOS':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -915,7 +917,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'AIX':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'IBM';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -928,7 +930,7 @@ class Browscap extends Core
                         break;
                     case 'Digital Unix':
                     case 'Tru64 UNIX':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'HP';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -944,7 +946,7 @@ class Browscap extends Core
                         break;
                     case 'HPUX':
                     case 'OpenVMS':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'HP';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -956,7 +958,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'IRIX':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'SGI';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -969,7 +971,7 @@ class Browscap extends Core
                         break;
                     case 'Solaris':
                     case 'SunOS':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'Oracle';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -981,7 +983,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'OS/2':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1018,7 +1020,7 @@ class Browscap extends Core
                     case 'OpenBSD':
                     case 'RISC OS':
                     case 'Unix':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1041,7 +1043,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'TV Device';
                         break;
                     case 'ChromeOS':
-                        $properties['Device_Name'] = 'General Desktop';
+                        $properties['Device_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;

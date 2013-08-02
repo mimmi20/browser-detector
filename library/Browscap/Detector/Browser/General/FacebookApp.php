@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Facebook
+class FacebookApp
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -115,7 +115,7 @@ class Facebook
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('Facebook')
-            && !$this->utils->checkIfContains(array('FBAN', 'FBForIPhone', 'FBAV', 'facebookexternalhit'))
+            && !$this->utils->checkIfContains(array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit', 'fbmapping', 'fbtimemanagement'), true)
         ) {
             return false;
         }
