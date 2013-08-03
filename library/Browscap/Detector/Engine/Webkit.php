@@ -295,7 +295,7 @@ class Webkit extends EngineHandler
         OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
     {   
         parent::detectDependProperties($os, $device, $browser);
-        
+        /*
         if ($device->getCapability('device_type')->isMobile()) {
             $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);
             $this->setCapability('html_wi_imode_compact_generic', true);
@@ -322,7 +322,7 @@ class Webkit extends EngineHandler
             $this->setCapability('wml_make_phone_call_string', 'none');
             $this->setCapability('xhtml_make_phone_call_string', 'none');
         }
-        
+        /**/
         return $this;
     }
 }
