@@ -127,6 +127,7 @@ final class Result implements \Serializable
         'mobile_browser_version'      => null,
         'mobile_browser_bits'         => null, // not in wurfl
         'mobile_browser_manufacturer' => null, // not in wurfl
+        'mobile_browser_brand_name'   => null, // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         
         // os
@@ -134,11 +135,13 @@ final class Result implements \Serializable
         'device_os_version'      => null,
         'device_os_bits'         => null, // not in wurfl
         'device_os_manufacturer' => null, // not in wurfl
+        'device_os_brand_name'   => null, // not in wurfl
         
         // engine
         'renderingengine_name'         => null, // not in wurfl
         'renderingengine_version'      => null, // not in wurfl
         'renderingengine_manufacturer' => null, // not in wurfl
+        'renderingengine_brand_name'   => null, // not in wurfl
         
         // markup
         'html_web_3_2' => null,
@@ -692,19 +695,9 @@ final class Result implements \Serializable
      */
     public function serialize()
     {
-        $propertiesToSerialize = array();
-        
-        foreach ($this->properties as $property => $value) {
-            if (null === $value) {
-                continue;
-            }
-            
-            $propertiesToSerialize[$property] = $value;
-        }
-        
         return serialize(
             array(
-                'properties' => $propertiesToSerialize,
+                'properties' => $this->properties,
                 'renderAs'   => $this->renderAs
             )
         );
@@ -720,10 +713,6 @@ final class Result implements \Serializable
         $unseriliazedData = unserialize($data);
         
         foreach ($unseriliazedData['properties'] as $property => $value) {
-            if (null === $value) {
-                continue;
-            }
-            
             $this->properties[$property] = $value;
         }
         
@@ -1037,7 +1026,7 @@ final class Result implements \Serializable
     {
         $device = $this->getCapability('model_name', false);
         
-        if ('unknown' == strtolower($device)) {
+        if ('' == $device || 'unknown' == strtolower($device)) {
             return 'unknown';
         }
         
@@ -1159,41 +1148,6 @@ final class Result implements \Serializable
         return $this->getCapability('pdf_support', false);
     }
     
-    public function getBrowserName()
-    {
-        return $this->getCapability('mobile_browser', false);
-    }
-    
-    public function getVersion()
-    {
-        return $this->getCapability('mobile_browser_version', false);
-    }
-    
-    public function getBits()
-    {
-        return $this->getCapability('mobile_browser_bits', false);
-    }
-    
-    /**
-     * returns the manufacturer of the actual browser
-     *
-     * @return string
-     */
-    public function getBrowserManufacturer()
-    {
-        return $this->getCapability('mobile_browser_manufacturer', false);
-    }
-    
-    /**
-     * returns the manufacturer of the actual browser
-     *
-     * @return string
-     */
-    public function getOsManufacturer()
-    {
-        return $this->getCapability('device_os_manufacturer', false);
-    }
-    
     /**
      * returns TRUE if the device is a Transcoder
      *
@@ -1202,31 +1156,6 @@ final class Result implements \Serializable
     public function isTranscoder()
     {
         return $this->getCapability('is_transcoder', false);
-    }
-    
-    public function getName()
-    {
-        return $this->getCapability('renderingengine_name', false);
-    }
-    
-    public function getEngineVersion()
-    {
-        return $this->getCapability('renderingengine_version', false);
-    }
-    
-    public function getPlatform()
-    {
-        return $this->getCapability('device_os', false);
-    }
-    
-    public function getPlatformVersion()
-    {
-        return $this->getCapability('device_os_version', false);
-    }
-    
-    public function getPlatformBits()
-    {
-        return $this->getCapability('device_os_bits', false);
     }
     
     /**
@@ -1444,10 +1373,10 @@ final class Result implements \Serializable
                         $value = get_class($os);
                         break;
                     case 'wurflKey':
-                        $value = $device->id;
+                        $value = $device->getCapability('wurflKey');
                         break;
                     case 'manufacturer_name':
-                        $value = $device->getCapability($property);
+                        $value = $device->getCapability('manufacturer_name');
                         
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
@@ -1456,7 +1385,7 @@ final class Result implements \Serializable
                         $value = $value->getName();
                         break;
                     case 'brand_name':
-                        $value = $device->getCapability($property);
+                        $value = $device->getCapability('brand_name');
                         
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
@@ -1562,13 +1491,22 @@ final class Result implements \Serializable
                         $value = $device->getCapability($property);
                         break;
                     case 'mobile_browser_manufacturer':
-                        $value = $browser->getCapability($property);
+                        $value = $browser->getCapability('mobile_browser_manufacturer');
                         
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
                         
                         $value = $value->getName();
+                        break;
+                    case 'mobile_browser_brand_name':
+                        $value = $browser->getCapability('mobile_browser_manufacturer');
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getBrandName();
                         break;
                     case 'is_bot':
                         $value = $browser->getCapability('browser_type');
@@ -1635,7 +1573,7 @@ final class Result implements \Serializable
                         $value = $os->getCapability($property);
                         break;
                     case 'device_os_manufacturer':
-                        $value = $os->getCapability($property);
+                        $value = $os->getCapability('device_os_manufacturer');
                         
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
@@ -1643,14 +1581,32 @@ final class Result implements \Serializable
                         
                         $value = $value->getName();
                         break;
+                    case 'device_os_brand_name':
+                        $value = $os->getCapability('device_os_manufacturer');
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getBrandName();
+                        break;
                     case 'renderingengine_manufacturer':
-                        $value = $engine->getCapability($property);
+                        $value = $engine->getCapability('renderingengine_manufacturer');
                         
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
                         
                         $value = $value->getName();
+                        break;
+                    case 'renderingengine_brand_name':
+                        $value = $engine->getCapability('renderingengine_manufacturer');
+                        
+                        if (!($value instanceof Company\CompanyInterface)) {
+                            $value = new Company\Unknown();
+                        }
+                        
+                        $value = $value->getBrandName();
                         break;
                     case 'renderingengine_name':
                     case 'renderingengine_version':
@@ -1826,7 +1782,7 @@ final class Result implements \Serializable
     }
     
     /**
-     * sets a second device for rendering properties
+     * returns a second device for rendering properties
      *
      * @return \Browscap\Detector\Result
      */

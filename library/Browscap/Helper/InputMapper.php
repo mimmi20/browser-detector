@@ -212,7 +212,7 @@ final class InputMapper
      */
     private function mapMaker($maker)
     {
-        switch (strtolower($maker)) {
+        switch (strtolower(trim($maker))) {
             case 'unknown':
             case 'other':
             case 'software in the public interest, inc.':
@@ -229,7 +229,7 @@ final class InputMapper
             case 'google':
             case 'google inc.':
             case 'google, inc.':
-                $osMaker = 'Google Inc';
+                $maker = 'Google Inc';
                 break;
             default:
                 // nothing to do here
