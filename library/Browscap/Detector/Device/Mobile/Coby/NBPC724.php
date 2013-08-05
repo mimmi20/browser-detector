@@ -83,12 +83,7 @@ final class NBPC724
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type'        => null, // not in wurfl
-            'is_wireless_device' => false,
-            'is_tablet'          => false,
-            'is_smarttv'         => false,
-            'is_console'         => false,
-            'ux_full_desktop'    => true,
+            'device_type' => new DeviceType\Desktop(), // not in wurfl
             
             // device
             'model_name'                => 'NBPC724',

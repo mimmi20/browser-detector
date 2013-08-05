@@ -50,6 +50,7 @@ use \Browscap\Detector\OsHandler;
 use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
 use \Browscap\Detector\Result;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
  * WURFL_Handlers_Handler is the base class that combines the classification of
@@ -108,12 +109,7 @@ abstract class DeviceHandler
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type'        => null, // not in wurfl
-            'is_wireless_device' => false,
-            'is_tablet'          => false,
-            'is_smarttv'         => false,
-            'is_console'         => false,
-            'ux_full_desktop'    => false,
+            'device_type' => new DeviceType\Unknown(), // not in wurfl
             
             // device
             'model_name'                => 'unknown',

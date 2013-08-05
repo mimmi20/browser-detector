@@ -84,7 +84,7 @@ final class InputMapper
         $browserName = $browserInput;
         
         switch (strtolower($browserInput)) {
-            // case 'unknown':
+            case 'unknown':
             case 'other':
             // case 'default browser':
                 $browserName = null;
@@ -136,7 +136,7 @@ final class InputMapper
      * @param string $browserVersion
      * @param string $browserName
      *
-     * @return string
+     * @return \Browscap\Detector\Version
      */
     public function mapBrowserVersion($browserVersion, $browserName = null)
     {
@@ -151,6 +151,7 @@ final class InputMapper
         }
         
         switch (strtolower($browserName)) {
+            case '':
             case 'unknown':
             case 'other':
                 $browserVersion = null;
@@ -160,7 +161,14 @@ final class InputMapper
                 break;
         }
         
-        return $browserVersion;
+        $version = new Version();
+        $version->setMode(
+            Version::COMPLETE
+            | Version::IGNORE_MINOR_IF_EMPTY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
+        
+        return $version->setVersion($browserVersion);
     }
     
     /**
@@ -174,15 +182,16 @@ final class InputMapper
     public function mapBrowserType($browserType, $browserName = null)
     {
         switch (strtolower($browserType)) {
-            case 'unknown':
-            case 'other':
-                $browserType = null;
-                break;
             case 'mobile browser':
                 $browserType = 'Browser';
                 break;
             case 'robot':
-                $browserType = 'Bot/Crawler';
+                $browserType = 'Bot';
+                break;
+            case '':
+            case 'unknown':
+            case 'other':
+                $browserType = 'Unknown';
                 break;
             default:
                 // nothing to do here
@@ -193,14 +202,16 @@ final class InputMapper
             case 'unknown':
             case 'other':
             case '':
-                $browserType = null;
+                $browserType = 'Unknown';
                 break;
             default:
                 // nothing to do here
                 break;
         }
         
-        return $browserType;
+        $typeClass = '\\Browscap\\Detector\\Type\\Browser\\' . $browserType;
+        
+        return new $typeClass();
     }
     
     /**
@@ -213,6 +224,7 @@ final class InputMapper
     private function mapMaker($maker)
     {
         switch (strtolower(trim($maker))) {
+            case '':
             case 'unknown':
             case 'other':
             case 'software in the public interest, inc.':
@@ -275,6 +287,7 @@ final class InputMapper
     public function mapOsName($osName)
     {
         switch (strtolower($osName)) {
+            case '':
             case 'unknown':
             case 'other':
                 $osName = null;
@@ -319,6 +332,7 @@ final class InputMapper
         $osMaker = $this->mapMaker($osMaker);
         
         switch (strtolower($osName)) {
+            case '':
             case 'unknown':
             case 'other':
                 $osMaker = null;
@@ -337,11 +351,12 @@ final class InputMapper
      * @param string $osVersion
      * @param string $osName
      *
-     * @return string
+     * @return \Browscap\Detector\Version
      */
     public function mapOsVersion($osVersion, $osName = null)
     {
         switch (strtolower($osVersion)) {
+            case '':
             case 'unknown':
             case 'other':
                 $osVersion = null;
@@ -352,6 +367,7 @@ final class InputMapper
         }
         
         switch (strtolower($osName)) {
+            case '':
             case 'unknown':
             case 'other':
                 $osversion = null;
@@ -385,7 +401,14 @@ final class InputMapper
                 break;
         }
         
-        return $osVersion;
+        $version = new Version();
+        $version->setMode(
+            Version::COMPLETE
+            | Version::IGNORE_MINOR_IF_EMPTY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
+        
+        return $version->setVersion($osVersion);
     }
     
     /**
@@ -398,6 +421,7 @@ final class InputMapper
     public function mapDeviceName($deviceName)
     {
         switch (strtolower($deviceName)) {
+            case '':
             case 'pc':
             case 'android':
             case 'unknown':
@@ -556,6 +580,7 @@ final class InputMapper
         $deviceMaker = $this->mapMaker($deviceMaker);
         
         switch (strtolower($deviceName)) {
+            case '':
             case 'unknown':
             case 'other':
             case 'various':
@@ -676,6 +701,7 @@ final class InputMapper
     public function mapDeviceMarketingName($marketingName, $deviceName = null)
     {
         switch (strtolower($marketingName)) {
+            case '':
             case 'unknown':
             case 'other':
                 $marketingName = null;
@@ -702,6 +728,7 @@ final class InputMapper
         }
         
         switch (strtolower($deviceName)) {
+            case '':
             case 'unknown':
             case 'other':
             case 'various':
@@ -770,6 +797,7 @@ final class InputMapper
     public function mapDeviceBrandName($brandName, $deviceName = null)
     {
         switch (strtolower($brandName)) {
+            case '':
             case 'unknown':
             case 'other':
             case 'generic':
@@ -781,6 +809,7 @@ final class InputMapper
         }
         
         switch (strtolower($deviceName)) {
+            case '':
             case 'unknown':
             case 'other':
             case 'various':

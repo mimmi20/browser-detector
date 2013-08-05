@@ -83,12 +83,7 @@ final class Nintendo3ds
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type'        => null, // not in wurfl
-            'is_wireless_device' => false,
-            'is_tablet'          => false,
-            'is_smarttv'         => true,
-            'is_console'         => true,
-            'ux_full_desktop'    => false,
+            'device_type' => new DeviceType\TvConsole(), // not in wurfl
             
             // device
             'model_name'                => '3DS',

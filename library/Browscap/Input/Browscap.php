@@ -128,13 +128,6 @@ class Browscap extends Core
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         
-        $detector = new Version();
-        $detector->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MINOR_IF_EMPTY
-            | Version::IGNORE_MICRO_IF_EMPTY
-        );
-        
         $mapper = new InputMapper();
         
         if (empty($browser['Browser_Name'])) {
@@ -152,7 +145,10 @@ class Browscap extends Core
             );
         }
         
-        $browserName = $mapper->mapBrowserName($browserName);
+        $browserName    = $mapper->mapBrowserName($browserName);
+        $browserVersion = $mapper->mapBrowserVersion(
+            $browserVersion, $browserName
+        );
         
         $browserBits = $this->_detectProperty(
             $browser, 'Browser_Bits', true, $browserName
@@ -161,13 +157,8 @@ class Browscap extends Core
             $browser, 'Browser_Maker', true, $browserName
         );
         
-        $detectorBrowser = clone $detector;
-        
         $result->setCapability('mobile_browser', $browserName);        
-        $result->setCapability(
-            'mobile_browser_version',
-            $detectorBrowser->setVersion($browserVersion)
-        );
+        $result->setCapability('mobile_browser_version', $browserVersion);
         $result->setCapability('mobile_browser_bits', $browserBits);
         $result->setCapability('mobile_browser_manufacturer', $browserMaker);
         
@@ -209,12 +200,8 @@ class Browscap extends Core
             $browser, 'Platform_Maker', true, $platform
         );
         
-        $detectorOs = clone $detector;
-        
         $result->setCapability('device_os', $platform);
-        $result->setCapability(
-            'device_os_version', $detectorOs->setVersion($platformVersion)
-        );
+        $result->setCapability('device_os_version', $platformVersion);
         $result->setCapability('device_os_bits', $platformbits);
         $result->setCapability('device_os_manufacturer', $platformMaker);
         
@@ -247,18 +234,6 @@ class Browscap extends Core
         if ('unknown' === $engineName || '' === $engineName) {
             $engineName = null;
         }
-        
-        /*
-        $detectorEngine = clone $detector;
-        
-        $engineVersion = $this->_detectProperty(
-            $browser, 'RenderingEngine_Version', true, $engineName
-        );
-        
-        if ('unknown' === $engineVersion || '' === $engineVersion) {
-            $engineVersion = null;
-        }
-        /**/
         
         $engineMaker = $this->_detectProperty(
             $browser, 'RenderingEngine_Maker', true, $engineName

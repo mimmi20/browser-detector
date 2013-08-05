@@ -164,47 +164,26 @@ final class Uaparser extends Core
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         
-        $version = new Version();
-        $version->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MINOR_IF_EMPTY
-            | Version::IGNORE_MICRO_IF_EMPTY
-        );
-        
         $mapper = new InputMapper();
         
         $browserName    = $mapper->mapBrowserName($parserResult->ua->family);
-        // $browserType    = $mapper->mapBrowserType($parserResult['typ'], $browserName);
         $browserVersion = $mapper->mapBrowserVersion($parserResult->ua->toVersionString, $browserName);
-        // $browserMaker   = $mapper->mapBrowserMaker($parserResult['ua_company'], $browserName);
         
         $result->setCapability('mobile_browser', $browserName);
-        $result->setCapability(
-            'mobile_browser_version', $version->setVersion($browserVersion)
-        );
-        
-        $version = new Version();
-        $version->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MINOR_IF_EMPTY
-            | Version::IGNORE_MICRO_IF_EMPTY
-        );
+        $result->setCapability('mobile_browser_version', $browserVersion);
         
         $osName    = $mapper->mapOsName($parserResult->os->family);
         $osVersion = $mapper->mapOsVersion($parserResult->os->toVersionString, $osName);
         
         $result->setCapability('device_os', $osName);
-        $result->setCapability(
-            'device_os_version',
-            $version->setVersion($osVersion)
-        );
+        $result->setCapability('device_os_version', $osVersion);
         
-        $deviceName  = $mapper->mapDeviceName($parserResult->device->family);
+        // $deviceName  = $mapper->mapDeviceName($parserResult->device->family);
         
-        $result->setCapability('model_name', $deviceName);
-        $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker(null, $deviceName));
-        $result->setCapability('brand_name', $mapper->mapDeviceBrandName(null, $deviceName));
-        $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName(null, $deviceName));
+        // $result->setCapability('model_name', $deviceName);
+        // $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker(null, $deviceName));
+        // $result->setCapability('brand_name', $mapper->mapDeviceBrandName(null, $deviceName));
+        // $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName(null, $deviceName));
         
         return $result;
     }

@@ -86,11 +86,7 @@ final class LgGw300
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'is_wireless_device' => true,
-            'is_tablet'          => false,
-            'is_smarttv'         => false,
-            'is_console'         => false,
-            'ux_full_desktop'    => false,
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
             'model_name'                => 'GW300',

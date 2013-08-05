@@ -51,6 +51,7 @@ use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
 use \Browscap\Helper\InputMapper;
+use \Browscap\Detector\Type;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -164,13 +165,6 @@ final class Uasparser extends Core
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         
-        $version = new Version();
-        $version->setMode(
-            Version::COMPLETE
-            | Version::IGNORE_MINOR_IF_EMPTY
-            | Version::IGNORE_MICRO_IF_EMPTY
-        );
-        
         $mapper = new InputMapper();
         
         $browserName    = $mapper->mapBrowserName($parserResult['ua_family']);
@@ -181,15 +175,21 @@ final class Uasparser extends Core
         $result->setCapability('browser_type', $browserType);
         $result->setCapability('mobile_browser', $browserName);
         $result->setCapability('mobile_browser_manufacturer', $browserMaker);
-        $result->setCapability(
-            'mobile_browser_version', $version->setVersion($browserVersion)
-        );
+        $result->setCapability('mobile_browser_version', $browserVersion);
         
         $osName    = $mapper->mapOsName($parserResult['os_family']);
         $osVersion = null;
         $osMaker   = $mapper->mapOsMaker($parserResult['os_company'], $osName);
         
         $result->setCapability('device_os', $osName);
+        
+        $version = new Version();
+        $version->setMode(
+            Version::COMPLETE
+            | Version::IGNORE_MINOR_IF_EMPTY
+            | Version::IGNORE_MICRO_IF_EMPTY
+        );
+        
         $result->setCapability(
             'device_os_version', $version->setVersion($osVersion)
         );
