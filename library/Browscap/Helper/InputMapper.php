@@ -50,6 +50,7 @@ use \Browscap\Detector\EngineHandler;
 use \Browscap\Detector\Result;
 use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
  * Browscap.ini parsing final class with caching and update capabilities
@@ -183,35 +184,37 @@ final class InputMapper
     {
         switch (strtolower($browserType)) {
             case 'mobile browser':
-                $browserType = 'Browser';
+                $browserType = new BrowserType\Browser();
                 break;
             case 'robot':
-                $browserType = 'Bot';
+                $browserType = new BrowserType\Bot();
                 break;
             case '':
             case 'unknown':
             case 'other':
-                $browserType = 'Unknown';
+                $browserType = new BrowserType\Unknown();
+                break;
+            case 'email client':
+                $browserType = new BrowserType\EmailClient();
                 break;
             default:
-                // nothing to do here
+                switch (strtolower($browserName)) {
+                    case 'unknown':
+                    case 'other':
+                    case '':
+                        $browserType = new BrowserType\Unknown();
+                        break;
+                    default:
+                        $typeClass = '\\Browscap\\Detector\\Type\\Browser\\'
+                            . $browserType;
+                        
+                        $browserType = new $typeClass();
+                        break;
+                }
                 break;
         }
         
-        switch (strtolower($browserName)) {
-            case 'unknown':
-            case 'other':
-            case '':
-                $browserType = 'Unknown';
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-        
-        $typeClass = '\\Browscap\\Detector\\Type\\Browser\\' . $browserType;
-        
-        return new $typeClass();
+        return $browserType;
     }
     
     /**
@@ -242,6 +245,9 @@ final class InputMapper
             case 'google inc.':
             case 'google, inc.':
                 $maker = 'Google Inc';
+                break;
+            case 'lunascape & co., ltd.':
+                $maker = 'Lunascape Corporation';
                 break;
             default:
                 // nothing to do here
@@ -675,6 +681,7 @@ final class InputMapper
                 break;
             // Medion
             case 'p9514':
+            case 'lifetab p9514':
                 $deviceMaker = 'Medion';
                 break;
             // Apple
@@ -769,6 +776,7 @@ final class InputMapper
                 break;
             // Medion
             case 'p9514':
+            case 'lifetab p9514':
                 $marketingName = 'LifeTab P9514';
                 break;
             // Apple
@@ -842,6 +850,7 @@ final class InputMapper
                 break;
             // Medion
             case 'p9514':
+            case 'lifetab p9514':
                 $brandName = 'Medion';
                 break;
             // Apple

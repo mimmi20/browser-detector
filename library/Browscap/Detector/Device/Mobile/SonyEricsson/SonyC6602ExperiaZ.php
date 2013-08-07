@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Asus
+final class SonyC6602ExperiaZ
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,22 +83,22 @@ final class Asus
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Asus Device',
+            'model_name'                => 'C6602',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Asus(),
-            'brand_name' => new Company\Asus(),
+            'manufacturer_name' => new Company\SonyEricsson(),
+            'brand_name' => new Company\SonyEricsson(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Asus Device',
+            'marketing_name'            => 'Xperia Z',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'QUALCOMM APQ8064', // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -112,9 +112,10 @@ final class Asus
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 1080,
+            'resolution_height'      => 1920,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
@@ -131,26 +132,25 @@ final class Asus
      */
     public function canHandle()
     {
-        $asusPhones = array(
-            'Asus',
-            'Transformer',
-            'Slider SL101',
-            'eee_701',
-            'eeepc',
-            'Nexus 7',
-            'PadFone',
-            'ME301T'
-        );
-        
-        if (!$this->utils->checkIfContains($asusPhones)) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonC6602', 'SonyC6602', 'C6602'))) {
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('IdeaTab'))) {
+        if ($this->utils->checkIfContains(array('SonyEricssonC6602v', 'SonyC6602v', 'C6602v'))) {
             return false;
         }
         
         return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -162,25 +162,7 @@ final class Asus
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Asus');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Asus' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 182775;
+        return $this;
     }
     
     /**

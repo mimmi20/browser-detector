@@ -120,6 +120,7 @@ class OperaMobile
         
         if (!$this->utils->checkIfContains(array('Opera Mobi', 'Opera Tablet'))
             && !($mobileDeviceHelper->isMobileBrowser() && $this->utils->checkIfContains('Opera'))
+            && !$this->utils->checkIfContainsAll(array('OPR', 'Mobile Safari'))
         ) {
             return false;
         }

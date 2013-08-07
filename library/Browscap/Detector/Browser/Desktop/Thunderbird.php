@@ -81,7 +81,7 @@ class Thunderbird
         
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\EmailClients(), // not in wurfl
+            'browser_type' => new BrowserType\EmailClient(), // not in wurfl
             
             // browser
             'mobile_browser'              => 'Thunderbird',

@@ -127,7 +127,8 @@ class Opera
             'Mac; Mac OS ',
             'AppEngine-Google',
             'NETTV',
-            'InettvBrowser'
+            'InettvBrowser',
+            'Mobile Safari'
         );
         
         if ($this->utils->checkIfContains($isNotReallyAnOpera)) {

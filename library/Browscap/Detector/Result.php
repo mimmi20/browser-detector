@@ -919,14 +919,18 @@ final class Result implements \Serializable
     
     public function getFullBrowserName($withBits = true, $mode = null)
     {
-        if (null === $mode) {
-            $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
-        }
-        
         $browser = $this->getCapability('mobile_browser', false);
+        
+        if (!$browser) {
+            return null;
+        }
         
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
+        }
+        
+        if (null === $mode) {
+            $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
         
         $version = $this->getCapability('mobile_browser_version', false)->getVersion(
@@ -977,14 +981,18 @@ final class Result implements \Serializable
     
     public function getFullPlatformName($withBits = true, $mode = null)
     {
-        if (null === $mode) {
-            $mode = Version::COMPLETE_IGNORE_EMPTY;
-        }
-        
         $name = $this->getCapability('device_os', false);
+        
+        if (!$name) {
+            return null;
+        }
         
         if ('unknown' == strtolower($name)) {
             return 'unknown';
+        }
+        
+        if (null === $mode) {
+            $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
         $version = $this->getCapability('device_os_version', false)->getVersion($mode);
@@ -1026,7 +1034,11 @@ final class Result implements \Serializable
     {
         $device = $this->getCapability('model_name', false);
         
-        if ('' == $device || 'unknown' == strtolower($device)) {
+        if (!$device) {
+            return null;
+        }
+        
+        if ('unknown' == strtolower($device)) {
             return 'unknown';
         }
         
@@ -1084,8 +1096,16 @@ final class Result implements \Serializable
     {
         $engine  = $this->getCapability('renderingengine_name', false);
         
+        if (!$engine) {
+            return null;
+        }
+        
         if ('unknown' == strtolower($engine)) {
             return 'unknown';
+        }
+        
+        if (null === $mode) {
+            $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
         
         $version = $this->getCapability('renderingengine_version', false)->getVersion(

@@ -48,14 +48,14 @@ namespace Browscap\Detector\Type\Browser;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class EmailClients extends AbstractType implements TypeInterface
+final class EmailClient extends AbstractType implements TypeInterface
 {
     /**
      * the name of the browser
      *
      * @var string
      */
-    protected $name = 'Email Clients';
+    protected $name = 'Email Client';
     
     /**
      * the Browser is a Bot

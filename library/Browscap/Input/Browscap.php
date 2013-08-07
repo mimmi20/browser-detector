@@ -160,7 +160,10 @@ class Browscap extends Core
         $result->setCapability('mobile_browser', $browserName);        
         $result->setCapability('mobile_browser_version', $browserVersion);
         $result->setCapability('mobile_browser_bits', $browserBits);
-        $result->setCapability('mobile_browser_manufacturer', $browserMaker);
+        $result->setCapability(
+            'mobile_browser_manufacturer',
+            $mapper->mapBrowserMaker($browserMaker, $browserName)
+        );
         
         if (!empty($browser['Browser_Type'])) {
             $browserType = $browser['Browser_Type'];
