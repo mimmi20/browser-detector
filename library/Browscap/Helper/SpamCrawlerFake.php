@@ -307,7 +307,7 @@ final class SpamCrawlerFake
                 return true;
             }
             
-            if (4 > $matches[1] || $matches[1] >= 6) {
+            if (4 > $matches[1] || $matches[1] >= 7) {
                 return true;
             }
         }

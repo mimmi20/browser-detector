@@ -86,12 +86,12 @@ final class SamsungGalaxyNexus10
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'Galaxy Nexus 10',
+            'model_name'                => 'Nexus 10',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Google(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Galaxy Nexus 10',
+            'marketing_name'            => 'Nexus 10',
             'has_qwerty_keyboard'       => true, // wurflkey: samsung_galaxy_nexus_ver1
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

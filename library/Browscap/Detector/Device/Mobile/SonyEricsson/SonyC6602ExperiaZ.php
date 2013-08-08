@@ -115,7 +115,7 @@ final class SonyC6602ExperiaZ
             'resolution_width'       => 1080,
             'resolution_height'      => 1920,
             'dual_orientation'       => true,
-            'colors'                 => 16777216,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,

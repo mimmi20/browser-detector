@@ -43,6 +43,7 @@ namespace Browscap\Detector\Browser\General;
 
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
+use \Browscap\Helper\MobileDevice;
 use \Browscap\Detector\MatcherInterface;
 use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
@@ -127,11 +128,17 @@ class Opera
             'Mac; Mac OS ',
             'AppEngine-Google',
             'NETTV',
-            'InettvBrowser',
-            'Mobile Safari'
+            'InettvBrowser'
         );
         
         if ($this->utils->checkIfContains($isNotReallyAnOpera)) {
+            return false;
+        }
+        
+        $helper = new MobileDevice();
+        $helper->setUserAgent($this->_useragent);
+        
+        if ($helper->isMobileBrowser()) {
             return false;
         }
         

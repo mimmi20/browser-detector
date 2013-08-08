@@ -48,19 +48,19 @@ namespace Browscap\Detector\Company;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Rim extends AbstractCompany implements CompanyInterface
+final class CrazyBrowser extends AbstractCompany implements CompanyInterface
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Research In Motion Limited';
+    protected $name = 'CrazyBrowser.com';
     
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'RIM';
+    protected $brandname = 'CrazyBrowser';
 }

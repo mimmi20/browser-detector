@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SonyEricsson
+final class SonyC6503XperiaZ
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,19 +86,19 @@ final class SonyEricsson
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general SonyEricsson Device',
+            'model_name'                => 'C6503',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\SonyEricsson(),
             'brand_name' => new Company\SonyEricsson(),
             'model_extra_info'          => null,
-            'marketing_name'            => null,
+            'marketing_name'            => 'Xperia Z',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'QUALCOMM APQ8064', // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -112,9 +112,10 @@ final class SonyEricsson
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 1080,
+            'resolution_height'      => 1920,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
@@ -131,63 +132,25 @@ final class SonyEricsson
      */
     public function canHandle()
     {
-        $sonyPhones = array(
-            'sonyericsson',
-            'sony',
-            'c6602',
-            'c6603',
-            'c6503',
-            'e10i',
-            'e15i',
-            'e15av',
-            'ebrd1',
-            'lt15i',
-            'lt18',
-            'lt18i',
-            'lt22i',
-            'lt26i',
-            'lt28h',
-            'lt30p',
-            'mk16i',
-            'mt11i',
-            'mt15i',
-            'mt27i',
-            'nexushd2',
-            'r800i',
-            's312',
-            'sk17i',
-            'sgp321',
-            'sgpt12',
-            'st15i',
-            'st16i',
-            'st17i',
-            'st18i',
-            'st19i',
-            'st20i',
-            'st21i',
-            'st22i',
-            'st23i',
-            'st24i',
-            'st25i',
-            'st26i',
-            'st27i',
-            'u20i',
-            'w508a',
-            'w760i',
-            'wt13i',
-            'x1i',
-            'x10',
-            'xst2',
-            'playstation',
-            'psp',
-            'xperia arc'
-        );
-        
-        if ($this->utils->checkIfContains($sonyPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains(array('SonyEricssonC6503', 'SonyC6503', 'C6503'))) {
+            return false;
         }
         
-        return false;
+        if ($this->utils->checkIfContains(array('SonyEricssonC6503v', 'SonyC6503v', 'C6503v'))) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -199,52 +162,7 @@ final class SonyEricsson
      */
     public function detectDevice()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\SonyEricsson');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1633866;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\Browscap\Os\Handler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new \Browscap\Detector\Os\Android(),
-            new \Browscap\Detector\Os\Bada(),
-            new \Browscap\Detector\Os\Brew(),
-            new \Browscap\Detector\Os\Java(),
-            new \Browscap\Detector\Os\Symbianos(),
-            new \Browscap\Detector\Os\WindowsMobileOs(),
-            new \Browscap\Detector\Os\WindowsPhoneOs(),
-            new \Browscap\Detector\Os\Linux()
-        );
-        
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -267,5 +185,19 @@ final class SonyEricsson
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

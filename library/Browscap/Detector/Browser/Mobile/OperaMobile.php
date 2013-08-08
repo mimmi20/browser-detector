@@ -118,9 +118,8 @@ class OperaMobile
         $mobileDeviceHelper = new MobileDevice();
         $mobileDeviceHelper->setUserAgent($this->_useragent);
         
-        if (!$this->utils->checkIfContains(array('Opera Mobi', 'Opera Tablet'))
-            && !($mobileDeviceHelper->isMobileBrowser() && $this->utils->checkIfContains('Opera'))
-            && !$this->utils->checkIfContainsAll(array('OPR', 'Mobile Safari'))
+        if (!$this->utils->checkIfContains(array('Opera Mobi', 'Opera Tablet', 'OPR'))
+            && !($mobileDeviceHelper->isMobileBrowser() && $this->utils->checkIfContains(array('Opera', 'OPR')))
         ) {
             return false;
         }
