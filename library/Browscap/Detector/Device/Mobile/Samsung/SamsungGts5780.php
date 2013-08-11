@@ -170,7 +170,7 @@ final class SamsungGts5780
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\Dolfin(),
             new \Browscap\Detector\Browser\Mobile\Android(),
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik()

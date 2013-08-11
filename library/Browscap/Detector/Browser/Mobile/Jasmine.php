@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace Browscap\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,27 +41,27 @@ namespace Browscap\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\BrowserHandler;
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
+use \Browscap\Detector\MatcherInterface\BrowserInterface;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\DeviceHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Browser as BrowserType;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Bada
-    extends OsHandler
-    implements MatcherInterface, OsInterface
+class Jasmine
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties
@@ -73,29 +73,65 @@ class Bada
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return BrowserHandler
      */
     public function __construct()
     {
         parent::__construct();
         
         $this->properties = array(
-            // os
-            'device_os'              => 'Bada',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Samsung(), // not in wurfl
+            // kind of device
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'Jasmine Webkit',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => true,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
         );
     }
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Bada')) {
+        if (!$this->utils->checkIfContains(array('Jasmine'))) {
+            return false;
+        }
+        
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            'Chrome',
+            'Chromium',
+            'Flock',
+            'Galeon',
+            'Lunascape',
+            'Iron',
+            'Maemo',
+            'PaleMoon',
+            'Rockmelt'
+        );
+        
+        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
@@ -105,8 +141,6 @@ class Bada
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $this->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
@@ -114,12 +148,13 @@ class Bada
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Bada');
+        $searches = array('Jasmine');
         
         $this->setCapability(
-            'device_os_version', 
-            $detector->detectVersion($searches)
+            'mobile_browser_version', $detector->detectVersion($searches)
         );
+        
+        return $this;
     }
     
     /**
@@ -133,23 +168,16 @@ class Bada
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
-    public function detectBrowser()
+    public function detectEngine()
     {
-        $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Dolfin(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
-        );
+        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

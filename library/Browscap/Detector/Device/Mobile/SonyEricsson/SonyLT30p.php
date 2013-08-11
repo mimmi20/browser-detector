@@ -91,7 +91,7 @@ final class SonyLT30p
             'manufacturer_name' => new Company\Sony(),
             'brand_name' => new Company\Sony(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Mint',
+            'marketing_name'            => 'Xperia T',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

@@ -190,7 +190,7 @@ class Android
             new \Browscap\Detector\Browser\Mobile\Chrome(),
             new \Browscap\Detector\Browser\Mobile\Dalvik(),
             new \Browscap\Detector\Browser\Mobile\Silk(),
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\Dolfin(),
             new \Browscap\Detector\Browser\Mobile\NetFrontLifeBrowser(),
             new \Browscap\Detector\Browser\Bot\Googlebot(),
             new \Browscap\Detector\Browser\Mobile\Opera(),
@@ -199,7 +199,8 @@ class Android
             new \Browscap\Detector\Browser\Mobile\OperaTablet(),
             new \Browscap\Detector\Browser\Mobile\Firefox(),
             new \Browscap\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
-            new \Browscap\Detector\Browser\Mobile\AndroidDownloadManager()
+            new \Browscap\Detector\Browser\Mobile\AndroidDownloadManager(),
+            new \Browscap\Detector\Browser\Mobile\Ucweb()
         );
         
         $chain = new \Browscap\Detector\Chain();

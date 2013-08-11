@@ -142,54 +142,10 @@ class OperaMobile
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
         
-        $doMatch = preg_match(
-            '/Version\/([\d\.]+)/', $this->_useragent, $matches
-        );
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
-        
-        $doMatch = preg_match('/Opera ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
-        
-        $doMatch = preg_match(
-            '/Opera Mobi\/([\d\.]+)/', $this->_useragent, $matches
-        );
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            if ($this->_version < 100) {
-                return $this;
-            }
-        }
-        
-        $doMatch = preg_match('/Opera\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-            
-            return $this;
-        }
+        $searches = array('Version', 'OPR', 'Opera ', 'Opera Mobi', 'Opera');
         
         $this->setCapability(
-            'mobile_browser_version', $detector->setVersion('')
+            'mobile_browser_version', $detector->detectVersion($searches)
         );
         
         return $this;

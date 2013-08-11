@@ -86,12 +86,12 @@ final class AlcatelOt890d
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'OT-890D',
+            'model_name'                => 'one touch 890D',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Alcatel(),
             'brand_name' => new Company\Alcatel(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'OT-890D',
+            'marketing_name'            => 'one touch 890D',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

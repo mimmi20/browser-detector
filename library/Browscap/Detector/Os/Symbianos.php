@@ -84,7 +84,7 @@ class Symbianos
             'device_os'              => 'Symbian OS',
             'device_os_version'      => '',
             'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Nokia(), // not in wurfl
+            'device_os_manufacturer' => new Company\SymbianFoundation(), // not in wurfl
         );
     }
     

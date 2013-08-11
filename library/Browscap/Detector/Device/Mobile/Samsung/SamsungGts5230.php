@@ -180,7 +180,7 @@ final class SamsungGts5230
             new \Browscap\Detector\Browser\Mobile\Phantom(),
             new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
             new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine(),
+            new \Browscap\Detector\Browser\Mobile\Dolfin(),
             new \Browscap\Detector\Browser\Mobile\OperaMini(),
         );
         

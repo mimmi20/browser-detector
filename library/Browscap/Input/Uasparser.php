@@ -161,7 +161,7 @@ final class Uasparser extends Core
         }
         
         $parserResult = $this->_uaParser->Parse($this->_agent);
-        // var_dump($parserResult);exit;
+        
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         

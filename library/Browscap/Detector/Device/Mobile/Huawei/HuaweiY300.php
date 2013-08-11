@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace Browscap\Detector\Device\Mobile\Huawei;
 
 /**
  * PHP version 5.3
@@ -41,27 +41,27 @@ namespace Browscap\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Bada
-    extends OsHandler
-    implements MatcherInterface, OsInterface
+final class HuaweiY300
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -73,53 +73,69 @@ class Bada
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return DeviceHandler
      */
     public function __construct()
     {
         parent::__construct();
         
         $this->properties = array(
-            // os
-            'device_os'              => 'Bada',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Samsung(), // not in wurfl
+            'wurflKey' => 'huawei_Y300_ver1', // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'Y300',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Huawei(),
+            'brand_name' => new Company\Huawei(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Y300',
+            'has_qwerty_keyboard'       => true,
+            'pointing_method'           => '',    // wurflkey: huawei_Y300_ver1 // wurflkey: huawei_Y300_ver1
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => false,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => null,
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => null,
+            'resolution_height'      => null,
+            'dual_orientation'       => null,
+            
+            // sms
+            'sms_enabled' => true,
+            
+            // chips
+            'nfc_support' => true,
         );
     }
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Bada')) {
+        if (!$this->utils->checkIfContains(array('HuaweiY300', 'HUAWEI-Y300', 'HUAWEI Y300'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('Bada');
-        
-        $this->setCapability(
-            'device_os_version', 
-            $detector->detectVersion($searches)
-        );
     }
     
     /**
@@ -129,7 +145,19 @@ class Bada
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -141,8 +169,9 @@ class Bada
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Dolfin(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -151,5 +180,19 @@ class Bada
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

@@ -170,7 +170,7 @@ final class SamsungGts7230e
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\DolfinJasmine()
+            new \Browscap\Detector\Browser\Mobile\Dolfin()
         );
         
         $chain = new \Browscap\Detector\Chain();

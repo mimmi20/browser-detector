@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class DolfinJasmine
+class Dolfin
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -84,7 +84,7 @@ class DolfinJasmine
             'browser_type' => new BrowserType\Browser(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'Dolfin/Jasmine Webkit',
+            'mobile_browser'              => 'Dolfin',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\MopoTab(), // not in wurfl
@@ -114,7 +114,7 @@ class DolfinJasmine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Dolphin/', 'Dolfin/', 'Dolphin HD', 'Jasmine'))) {
+        if (!$this->utils->checkIfContains(array('Dolphin/', 'Dolfin/', 'Dolphin HD'))) {
             return false;
         }
         
@@ -148,7 +148,7 @@ class DolfinJasmine
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Dolfin', 'Dolphin', 'Dolphin HD', 'Jasmine');
+        $searches = array('Dolfin', 'Dolphin', 'Dolphin HD');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

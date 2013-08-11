@@ -114,9 +114,7 @@ class Firefox
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/4.0')
-            && !$this->utils->checkIfContains('Mozilla/5.0')
-        ) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
             return false;
         }
         

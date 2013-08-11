@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace Browscap\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungGts5220
+final class SonyEricssonMT15a
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,19 +80,19 @@ final class SamsungGts5220
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'samsung_gt_s5222_ver1', // not in wurfl
+            'wurflKey' => 'sonyericsson_MT15a_ver1', // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'GT-S5220',
+            'model_name'                => 'MT15a',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Samsung(),
-            'brand_name' => new Company\Samsung(),
+            'manufacturer_name' => new Company\SonyEricsson(),
+            'brand_name' => new Company\SonyEricsson(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Star III Duos',
-            'has_qwerty_keyboard'       => false,
+            'marketing_name'            => 'Xperia Neo',
+            'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
@@ -100,21 +100,21 @@ final class SamsungGts5220
             // product info
             'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
-            'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-S5220UAProf.xml',
-            'uaprof2'                   => null,
+            'uaprof'                    => 'http://wap.sonyericsson.com/UAprof/MT15aR401.xml',
+            'uaprof2'                   => 'http://wap.sonyericsson.com/UAprof/MT15aR411.xml',
             'uaprof3'                   => null,
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 27,
-            'physical_screen_height' => 27,
-            'columns'                => 17,
-            'rows'                   => 6,
-            'max_image_width'        => 228,
-            'max_image_height'       => 280,
-            'resolution_width'       => 240,
-            'resolution_height'      => 320,
-            'dual_orientation'       => false,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 854,
+            'dual_orientation'       => true,
             'colors'                 => 65536,
             
             // sms
@@ -132,7 +132,7 @@ final class SamsungGts5220
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SAMSUNG-GT-S5220', 'GT-S5220'))) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonMT15a', 'MT15a'))) {
             return false;
         }
         
@@ -162,6 +162,24 @@ final class SamsungGts5220
     }
     
     /**
+     * detects properties who are depending on the device version or the user 
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _parseProperties()
+    {
+        if ($this->utils->checkIfContains(array('Build/4.0.2.'))) {
+            $this->setCapability(
+                'uaprof',
+                'http://wap.sonyericsson.com/UAprof/MT15aR402.xml'
+            );
+        }
+        
+        return $this;
+    }
+    
+    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
@@ -170,15 +188,9 @@ final class SamsungGts5220
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Openwave(),
-            new \Browscap\Detector\Browser\Mobile\TelecaObigo(),
-            new \Browscap\Detector\Browser\Mobile\NetFront(),
-            new \Browscap\Detector\Browser\Mobile\Phantom(),
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Dolfin(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
-            new \Browscap\Detector\Browser\Mobile\NetFront(),
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -197,9 +209,27 @@ final class SamsungGts5220
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Java();
+        $handler = new \Browscap\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: sonyericsson_MT15a_ver1_suban233
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

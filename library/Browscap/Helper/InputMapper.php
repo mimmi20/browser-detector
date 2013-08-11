@@ -123,6 +123,9 @@ final class InputMapper
             case 'gomeza':
                 $browserName = 'GomezAgent';
                 break;
+            case 'dolfin/jasmine webkit':
+                $browserName = 'Dolfin';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -197,6 +200,9 @@ final class InputMapper
             case 'email client':
                 $browserType = new BrowserType\EmailClient();
                 break;
+            case 'feed reader':
+                $browserType = new BrowserType\FeedReader();
+                break;
             default:
                 switch (strtolower($browserName)) {
                     case 'unknown':
@@ -248,6 +254,12 @@ final class InputMapper
                 break;
             case 'lunascape & co., ltd.':
                 $maker = 'Lunascape Corporation';
+                break;
+            case 'opera software asa.':
+                $maker = 'Opera Software ASA';
+                break;
+            case 'sun microsystems, inc.':
+                $maker = 'Oracle';
                 break;
             default:
                 // nothing to do here
@@ -316,6 +328,12 @@ final class InputMapper
             case 'macosx':
             case 'os x':
                 $osName = 'Mac OS X';
+                break;
+            case 'jvm':
+                $osName = 'Java';
+                break;
+            case 'bada os':
+                $osName = 'Bada';
                 break;
             default:
                 // nothing to do here

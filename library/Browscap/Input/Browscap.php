@@ -1071,6 +1071,7 @@ class Browscap extends Core
         $allBrowsers = array();
         $parents     = array();
         $groups      = array();
+        $newGroups   = array();
         
         foreach ($this->_browsers as $key => $properties) {
             $allBrowsers[$this->_userAgents[$key]] = array($key, $properties);
@@ -1079,12 +1080,100 @@ class Browscap extends Core
         foreach ($allBrowsers as $title => $data) {
             $x = 0;
             
-            $key        = $data[0];
             $properties = $data[1];
             
             $groups[$properties['Parents']][] = $title;
             
             $parents[$title] = explode(',', $properties['Parents']);
+        }
+        
+        foreach ($allBrowsers as $title => $data) {
+            $x = 0;
+            
+            $key        = $data[0];
+            $properties = $data[1];
+            
+            if (count($groups[$properties['Parents']]) > 1
+                && !empty($properties['Platform_Full'])
+            ) {
+                $platform = $properties['Platform_Full'];
+                
+                if ('unknown' != $platform
+                    && false === strpos($properties['Parents'], ' on ')
+                ) {
+                    $newGroups[$properties['Parents']][$platform][] = $title;
+                }
+            }
+        }
+        
+        // var_dump($this->_browsers);exit;
+        
+        foreach ($allBrowsers as $title => $data) {
+            $x = 0;
+            
+            $key        = $data[0];
+            $properties = $data[1];
+            
+            if (count($groups[$properties['Parents']]) <= 1
+                || empty($properties['Platform_Full'])
+                || false !== strpos($properties['Parents'], ' on ')
+                || 'unknown' == $properties['Platform_Name']
+            ) {
+                continue;
+            }
+            
+            $platform  = $properties['Platform_Name'];
+            $parentKey = $properties['Parent'];
+            
+            if (!isset($allBrowsers[$parentKey])) {
+                continue;
+            }
+            
+            $newParentKey = $parentKey . ' on ' . $platform;
+            
+            if (!isset($allBrowsers[$newParentKey])) {
+                $this->_userAgents[] = $newParentKey;
+                
+                $key = count($this->_userAgents) - 1;
+                
+                $newProperty = $allBrowsers[$parentKey];
+                $newProperty[0]                  = $key;
+                $newProperty[1]['Parents']      .= ',' . $parentKey;
+                $newProperty[1]['Parent']        = $parentKey;
+                $newProperty[1]['Platform_Name'] = $platform;
+                $newProperty[1]['Platform']      = $platform;
+                
+                $allBrowsers[$newParentKey] = $newProperty;
+                $this->_browsers[$key]      = $newProperty;
+            }
+            
+            $allBrowsers[$title][1]['Parent'] = $newParentKey;
+            
+            if ($properties['Platform_Full'] == $properties['Platform_Name']) {
+                continue;
+            }
+            
+            $platform = $properties['Platform_Full'];
+            
+            $newParentKey = $parentKey . ' on ' . $platform;
+            
+            if (!isset($allBrowsers[$newParentKey])) {
+                $this->_userAgents[] = $newParentKey;
+                
+                $key = count($this->_userAgents) - 1;
+                
+                $newProperty = $allBrowsers[$parentKey];
+                $newProperty[0]                  = $key;
+                $newProperty[1]['Parents']      .= ',' . $parentKey;
+                $newProperty[1]['Parent']        = $parentKey;
+                $newProperty[1]['Platform_Name'] = $platform;
+                $newProperty[1]['Platform']      = $platform;
+                
+                $allBrowsers[$newParentKey] = $newProperty;
+                $this->_browsers[$key]      = $newProperty;
+            }
+            
+            $allBrowsers[$title][1]['Parent'] = $newParentKey;
         }
         
         //sort
@@ -1280,6 +1369,8 @@ class Browscap extends Core
         $outputPhp = '';
         $outputAsp = '';
         
+        $fp = fopen($this->_localFile . '.full.php.ini', 'w');
+        
         // shrink
         foreach ($allBrowsers as $title => $data) {
             $key        = $data[0];
@@ -1329,8 +1420,7 @@ class Browscap extends Core
                 || empty($properties['Parent'])
                 || 'DefaultProperties' == $properties['Parent']
             ) {
-                $outputPhp .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; ' . $title . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n\n";
-                $outputAsp .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; ' . $title . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n\n";
+                fwrite($fp, ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; ' . $title . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n\n");
             }
             
             $parents = $properties['Parents'] . ',' . $title;
@@ -1341,12 +1431,10 @@ class Browscap extends Core
                 && !empty($groups[$parents])
                 && count($groups[$parents])
             ) {
-                $outputPhp .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $title . "\n\n";
-                $outputAsp .= ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $title . "\n\n";
+                fwrite($fp, ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $title . "\n\n");
             }
             
-            $outputPhp .= '[' . $title . ']' . "\n";
-            $outputAsp .= '[' . $title . ']' . "\n";
+            fwrite($fp, '[' . $title . ']' . "\n");
             
             foreach ($this->properties as $property) {
                 if (!isset($propertiesToOutput[$property]) || 'Parents' === $property) {
@@ -1371,22 +1459,17 @@ class Browscap extends Core
                     || 'Browser_Version' === $property
                 ) {
                     $valuePhp = $value;
-                    $valueAsp = $value;
                 } else {
                     $valuePhp = '"' . $value . '"';
-                    $valueAsp = $value;
                 }
                 
-                $outputPhp .= $property . '=' . $valuePhp . "\n";
-                $outputAsp .= $property . '=' . $valueAsp . "\n";
+                fwrite($fp, $property . '=' . $valuePhp . "\n");
             }
             
-            $outputPhp .= "\n";
-            $outputAsp .= "\n";
+            fwrite($fp, "\n");
         }
         
-        file_put_contents($this->_localFile . '.full.php.ini', $outputPhp);
-        file_put_contents($this->_localFile . '.full.asp.ini', $outputAsp);
+        fclose($fp);
     }
 
     /**
