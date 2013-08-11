@@ -55,12 +55,12 @@ final class Unknown extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'unknown';
+    protected $name = null;
     
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'unknown';
+    protected $brandname = null;
 }
