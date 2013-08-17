@@ -78,7 +78,7 @@ class Browscap
      *
      * @var string
      */
-    private $_agent = null;
+    private $agent = null;
     
     /**
      * the interface for the detection
@@ -156,7 +156,7 @@ class Browscap
      */
     public function setAgent($userAgent)
     {
-        $this->_agent = $userAgent;
+        $this->agent = $userAgent;
         
         return $this;
     }
@@ -221,6 +221,16 @@ class Browscap
      */
     public function getInterface()
     {
+        if (null === $this->_interface) {
+            throw new \UnexpectedValueException(
+                'You have to define the Interface before calling this function'
+            );
+        }
+        
+        $this->_interface->setCache($this->cache)
+            ->setCachePrefix($this->cachePrefix)
+            ->setAgent($this->agent)
+        ;
         return $this->_interface;
     }
 
@@ -239,13 +249,13 @@ class Browscap
             );
         }
         
-        if (null === $this->_agent) {
+        if (null === $this->agent) {
             throw new \UnexpectedValueException(
                 'You have to set the useragent before calling this function'
             );
         }
         
-        $cacheId = hash('sha512', $this->cachePrefix . $this->_agent);
+        $cacheId = hash('sha512', $this->cachePrefix . $this->agent);
         $result  = null;
         
         if (!$forceDetect) {
@@ -253,12 +263,7 @@ class Browscap
         }
         
         if ($forceDetect || !$result) {
-            $this->_interface->setCache($this->cache)
-                ->setCachePrefix($this->cachePrefix)
-                ->setAgent($this->_agent)
-            ;
-            
-            $result = $this->_interface->getBrowser();
+            $result = $this->getInterface()->getBrowser();
             
             if (!($result instanceof Detector\Result)) {
                 throw new Input\Exception(

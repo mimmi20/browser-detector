@@ -56,12 +56,25 @@ final class Device
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = null;
+    private $useragent = null;
     
     /**
      * @var string the bits of the detected browser
      */
     private $_bits = null;
+    
+    /**
+     * @var \Browscap\Helper\Utils
+     */
+    private $utils = null;
+    
+    /**
+     * class constructor
+     */
+    public function __construct()
+    {
+        $this->utils = new \Browscap\Helper\Utils();
+    }
     
     /**
      * sets the user agent to be handled
@@ -70,22 +83,21 @@ final class Device
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
+        $this->utils->setUserAgent($this->useragent);
         
         return $this;
     }
     
     public function getBits()
     {
-        if (null === $this->_useragent) {
+        if (null === $this->useragent) {
             throw new \UnexpectedValueException(
                 'You have to set the useragent before calling this function'
             );
         }
         
-        if (null === $this->_bits) {
-            $this->_detectBits();
-        }
+        $this->_detectBits();
         
         return $this->_bits;
     }
@@ -97,33 +109,37 @@ final class Device
      */
     private function _detectBits()
     {
-        $utils = new \Browscap\Helper\Utils();
-        $utils->setUserAgent($this->_useragent);
-        
         // 32 bits on 64 bit system
-        if ($utils->checkIfContains(array('i686 on x86_64'))) {
+        if ($this->utils->checkIfContains(array('i686 on x86_64'))) {
             $this->_bits = '32';
             
             return $this;
         }
         
         // 64 bits
-        if ($utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
+        if ($this->utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
             $this->_bits = '64';
             
             return $this;
         }
         
         // old deprecated 16 bit windows systems
-        if ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+        if ($this->utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
             $this->_bits = '16';
             
             return $this;
         }
         
         // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC'))) {
+        if ($this->utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC'))) {
             $this->_bits = '32';
+            
+            return $this;
+        }
+        
+        // old deprecated 8 bit systems
+        if ($this->utils->checkIfContains(array('CP/M', '8-bit'))) {
+            $this->bits = '8';
             
             return $this;
         }
