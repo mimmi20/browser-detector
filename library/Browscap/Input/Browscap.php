@@ -47,6 +47,7 @@ use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
 use \Browscap\Detector\Result;
 use \Browscap\Helper\InputMapper;
+use \Browscap\Detector\Bits as BitsDetector;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -481,6 +482,9 @@ class Browscap extends Core
         $browsers = $this->parseIni();
         $this->parseAllAgents($browsers);
         
+        $browserBitHelper = new BitsDetector\Browser();
+        $osBitHelper      = new BitsDetector\Os();
+        
         // full expand
         foreach ($this->browsers as $key => $properties) {
             foreach ($properties as $k => $property) {
@@ -584,33 +588,11 @@ class Browscap extends Core
                 $properties['Beta'] = $properties['Browser_isBeta'];
             }
             
-            $utils = new \Browscap\Helper\Utils();
-            $utils->setUserAgent($this->userAgents[$key]);
+            $browserBitHelper->setUserAgent($this->userAgents[$key]);
+            $osBitHelper->setUserAgent($this->userAgents[$key]);
             
-            if ($utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
-                // 64 bits
-                $properties['Browser_Bits'] = 64;
-            } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1', 'Win16'))) {
-                // old deprecated 16 bit windows systems
-                $properties['Browser_Bits'] = 16;
-            } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
-                // old deprecated 16 bit windows systems
-                $properties['Browser_Bits'] = 8; //CP/M; 8-bit
-            } else {
-                // general windows or a 32 bit browser on a 64 bit system (WOW64)
-                $properties['Browser_Bits'] = 32;
-            }
-            
-            if ($utils->checkIfContains(array('x64', 'Win64', 'WOW64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
-                $properties['Platform_Bits'] = 64;
-            } elseif ($utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
-                $properties['Platform_Bits'] = 16;
-            } elseif ($utils->checkIfContains(array('CP/M', '8-bit'))) {
-                // old deprecated 16 bit windows systems
-                $properties['Platform_Bits'] = 8; //CP/M; 8-bit
-            } else {
-                $properties['Platform_Bits'] = 32;
-            }
+            $properties['Browser_Bits']  = (int) $browserBitHelper->getBits();
+            $properties['Platform_Bits'] = (int) $osBitHelper->getBits();
             
             $properties['Win64'] = false;
             $properties['Win32'] = false;
@@ -1062,9 +1044,7 @@ class Browscap extends Core
         }
         
         $allBrowsers = array();
-        $parents     = array();
         $groups      = array();
-        $newGroups   = array();
         
         foreach ($this->browsers as $key => $properties) {
             $allBrowsers[$this->userAgents[$key]] = array($key, $properties);
@@ -1076,96 +1056,6 @@ class Browscap extends Core
             $properties = $data[1];
             
             $groups[$properties['Parents']][] = $title;
-            
-            $parents[$title] = explode(',', $properties['Parents']);
-        }
-        
-        foreach ($allBrowsers as $title => $data) {
-            $x = 0;
-            
-            $key        = $data[0];
-            $properties = $data[1];
-            
-            if (count($groups[$properties['Parents']]) > 1
-                && !empty($properties['Platform_Full'])
-            ) {
-                $platform = $properties['Platform_Full'];
-                
-                if ('unknown' != $platform
-                    && false === strpos($properties['Parents'], ' on ')
-                ) {
-                    $newGroups[$properties['Parents']][$platform][] = $title;
-                }
-            }
-        }
-        
-        foreach ($allBrowsers as $title => $data) {
-            $x = 0;
-            
-            $key        = $data[0];
-            $properties = $data[1];
-            
-            if (count($groups[$properties['Parents']]) <= 1
-                || empty($properties['Platform_Full'])
-                || false !== strpos($properties['Parents'], ' on ')
-                || 'unknown' == $properties['Platform_Name']
-            ) {
-                continue;
-            }
-            
-            $platform  = $properties['Platform_Name'];
-            $parentKey = $properties['Parent'];
-            
-            if (!isset($allBrowsers[$parentKey])) {
-                continue;
-            }
-            
-            $newParentKey = $parentKey . ' on ' . $platform;
-            
-            if (!isset($allBrowsers[$newParentKey])) {
-                $this->userAgents[] = $newParentKey;
-                
-                $key = count($this->userAgents) - 1;
-                
-                $newProperty = $allBrowsers[$parentKey];
-                $newProperty[0]                  = $key;
-                $newProperty[1]['Parents']      .= ',' . $parentKey;
-                $newProperty[1]['Parent']        = $parentKey;
-                $newProperty[1]['Platform_Name'] = $platform;
-                $newProperty[1]['Platform']      = $platform;
-                
-                $allBrowsers[$newParentKey] = $newProperty;
-                $this->browsers[$key]      = $newProperty;
-            }
-            
-            $allBrowsers[$title][1]['Parent'] = $newParentKey;
-            
-            if ($properties['Platform_Full'] == $properties['Platform_Name']) {
-                continue;
-            }
-            
-            $fullPlatform = $properties['Platform_Full'];
-            
-            $newParentKey = $parentKey . ' on ' . $fullPlatform;
-            
-            if (!isset($allBrowsers[$newParentKey])) {
-                $this->userAgents[] = $newParentKey;
-                
-                $key = count($this->userAgents) - 1;
-                
-                $newProperty = $allBrowsers[$parentKey];
-                $newProperty[0]                  = $key;
-                $newProperty[1]['Parents']      .= ',' . $parentKey;
-                $newProperty[1]['Parent']        = $parentKey;
-                $newProperty[1]['Platform_Full'] = $fullPlatform;
-                $newProperty[1]['Platform_Name'] = $platform;
-                $newProperty[1]['Platform']      = $platform;
-                
-                $allBrowsers[$newParentKey] = $newProperty;
-                $this->browsers[$key]      = $newProperty;
-            }
-            
-            $allBrowsers[$title][1]['Parent'] = $newParentKey;
         }
         
         //sort
@@ -1428,7 +1318,7 @@ class Browscap extends Core
             fwrite($fp, '[' . $title . ']' . "\n");
             
             foreach ($this->properties as $property) {
-                if (!isset($propertiesToOutput[$property])/* || 'Parents' === $property*/) {
+                if (!isset($propertiesToOutput[$property]) || 'Parents' === $property) {
                     continue;
                 }
                 
