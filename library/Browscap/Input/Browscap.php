@@ -431,7 +431,7 @@ class Browscap extends Core
             $browsers = parse_ini_file($this->localFile, true);
         }
         
-        array_shift($browsers);
+        unset($browsers['GJK_Browscap_Version']);
         
         $this->properties = array_keys($browsers['DefaultProperties']);
         array_unshift(
@@ -1448,12 +1448,12 @@ class Browscap extends Core
 
         foreach ($parents as $parent) {
             if (!isset($browsers[$parent])) {
-                var_dump('Parent not found for key "' . $sUserAgent . '"');
+                var_dump('Parent not found for key "' . $parent . '"');
                 continue;
             }
             
             if (!is_array($browsers[$parent])) {
-                var_dump('empty Parent found for key "' . $sUserAgent . '"');
+                var_dump('empty Parent found for key "' . $parent . '"');
                 continue;
             }
             
