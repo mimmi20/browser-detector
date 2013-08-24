@@ -71,6 +71,11 @@ final class Version implements \Serializable
     /**
      * @var integer
      */
+    const MINORMICRO = 6;
+    
+    /**
+     * @var integer
+     */
     const MICROONLY = 4;
     
     /**

@@ -511,9 +511,11 @@ class Browscap extends Core
                 $completeVersion = $properties['Browser_Version'];
             }
             
-            $version = explode('.', $completeVersion, 2);
-            $properties['MajorVer'] = $version[0];
-            $properties['MinorVer'] = (isset($version[1]) ? $version[1] : '');
+            $version->setVersion($completeVersion);
+            $version->setUserAgent($this->userAgents[$key]);
+            
+            $properties['MajorVer'] = $version->getVersion(Version::MAJORONLY);
+            $properties['MinorVer'] = $version->getVersion(Version::MINORMICRO);
             
             $browserName = $properties['Browser'];
             
@@ -1635,7 +1637,7 @@ Released=$Date$
         while (isset($browsers[$userAgent]['Parent'])) {
             if ($userAgent === $browsers[$userAgent]['Parent']) {
                 var_dump('Parent is identical to key for key "' . $userAgent . '"');
-                continue;
+                break;
             }
             
             $parents[] = $browsers[$userAgent]['Parent'];
