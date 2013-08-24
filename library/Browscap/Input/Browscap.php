@@ -451,7 +451,7 @@ class Browscap extends Core
      * @return bool whether the file was correctly written to the disk
      */
     private function parseAllAgents($browsers)
-    {   
+    {
         $aPropertiesKeys = array_flip($this->properties);
         $key             = 0;
         
@@ -484,6 +484,7 @@ class Browscap extends Core
         
         $browserBitHelper = new BitsDetector\Browser();
         $osBitHelper      = new BitsDetector\Os();
+        $version          = new Version();
         
         // full expand
         foreach ($this->browsers as $key => $properties) {
@@ -899,6 +900,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'HPUX':
+                    case 'HP-UX':
                     case 'OpenVMS':
                         $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'HP';
@@ -912,6 +914,7 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         break;
                     case 'IRIX':
+                    case 'IRIX64':
                         $properties['Device_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'SGI';
                         $properties['isMobileDevice'] = false;
@@ -1057,6 +1060,140 @@ class Browscap extends Core
             
             $groups[$properties['Parents']][] = $title;
         }
+        /*
+        if (true) {
+            foreach ($allBrowsers as $title => $data) {
+                $properties = $data[1];
+                
+                if ((!empty($properties['Parents'])
+                    && false !== strpos(' on ', $properties['Parents']))
+                    ||  false !== strpos(' on ', $title)
+                ) {
+                    continue;
+                }
+                
+                if ('unknown' == $properties['Platform_Name']
+                    || '' == $properties['Platform_Name']
+                ) {
+                    continue;
+                }
+                
+                $newParent    = $properties['Parent'] . ' on ' . $properties['Platform_Name'];
+                $newGroupName = $properties['Parents'] . ',' . $newParent;
+                
+                $newGroups[$newGroupName][] = $title;
+                
+                if ('unknown' == $properties['Platform_Full']
+                    || '' == $properties['Platform_Full']
+                    || $properties['Platform_Name'] == $properties['Platform_Full']
+                ) {
+                    continue;
+                }
+                
+                $secondNewParent    = $properties['Parent'] . ' on ' . $properties['Platform_Full'];
+                $secondNewGroupName = $properties['Parents']
+                    . ',' . $newParent
+                    . ',' . $secondNewParent;
+                
+                $newGroups[$secondNewGroupName][]  = $title;
+                $newGroups2[$secondNewGroupName][] = $title;
+            }
+            
+            foreach ($this->userAgents as $input => $title) {
+                $x = 0;
+                
+                $properties = $allBrowsers[$title][1];
+                
+                if (($properties['Parents']
+                    && false !== strpos(' on ', $properties['Parents']))
+                    ||  false !== strpos(' on ', $title)
+                ) {
+                    continue;
+                }
+                
+                if ('unknown' == $properties['Platform_Name']
+                    || '' == $properties['Platform_Name']
+                ) {
+                    continue;
+                }
+                
+                $newParent    = $properties['Parent'] . ' on ' . $properties['Platform_Name'];
+                $newGroupName = $properties['Parents'] . ',' . $newParent;
+                
+                if (!isset($newGroups[$newGroupName])
+                    // || count($newGroups[$newGroupName]) <= 1
+                ) {
+                    continue;
+                }
+                
+                if (!isset($allBrowsers[$newParent])) {
+                    $key             = count($allAgents);
+                    $this->userAgents[$key] = $newParent;
+                    
+                    $newProperty = $allBrowsers[$allBrowsers[$title][1]['Parent']][1];
+                    $newProperty['Browser_Version']      = $properties['Browser_Version'];
+                    $newProperty['Version']              = $properties['Browser_Version'];
+                    $newProperty['Platform_Name']        = $properties['Platform_Name'];
+                    $newProperty['Platform']             = $properties['Platform'];
+                    $newProperty['Platform_Maker']       = $properties['Platform_Maker'];
+                    $newProperty['Platform_Description'] = $properties['Platform_Description'];
+                    $newProperty['Parents']              = $properties['Parents'];
+                    $newProperty['Parent']               = $allBrowsers[$title][1]['Parent'];
+                    
+                    $allBrowsers[$newParent][0] = $key;
+                    $allBrowsers[$newParent][1] = $newProperty;
+                    
+                    $this->browsers[$key] = $newProperty;
+                }
+                
+                $allBrowsers[$title][1]['Parent']  = $newParent;
+                $allBrowsers[$title][1]['Parents'] = $newGroupName;
+                
+                $secondNewParent    = $properties['Parent'] . ' on ' . $properties['Platform_Full'];
+                $secondNewGroupName = $properties['Parents']
+                    . ',' . $newParent
+                    . ',' . $secondNewParent;
+                echo $secondNewParent;
+                if ($newParent == $secondNewParent) { echo ' skipped (1) ...' . "\n";
+                    continue;
+                }
+                
+                if (!isset($newGroups2[$secondNewGroupName]) 
+                    || count($newGroups2[$secondNewGroupName]) <= 1
+                ) {echo ' skipped (2) ...' . "\n";
+                    continue;
+                }
+                
+                if (!isset($allBrowsers[$secondNewGroupName])) {
+                    $secondKey             = count($allAgents);
+                    $this->userAgents[$secondKey] = $secondNewParent;
+                    
+                    $newProperty = $allBrowsers[$allBrowsers[$title][1]['Parent']][1];
+                    $newProperty['Browser_Version']      = $properties['Browser_Version'];
+                    $newProperty['Version']              = $properties['Browser_Version'];
+                    $newProperty['Platform_Name']        = $properties['Platform_Name'];
+                    $newProperty['Platform']             = $properties['Platform'];
+                    $newProperty['Platform_Maker']       = $properties['Platform_Maker'];
+                    $newProperty['Platform_Description'] = $properties['Platform_Description'];
+                    $newProperty['Parents']              = $properties['Parents'];
+                    $newProperty['Platform_Version']     = $properties['Platform_Version'];
+                    $newProperty['Platform_Full']        = $properties['Platform_Full'];
+                    $newProperty['Parents']              = $newGroupName;
+                    $newProperty['Parent']               = $newParent;
+                    
+                    $allBrowsers[$secondNewParent][0] = $secondKey;
+                    $allBrowsers[$secondNewParent][1] = $newProperty;
+                    
+                    $this->browsers[$secondKey] = $newProperty;echo ' added ...' . "\n";
+                } else {
+                    echo ' existed ...' . "\n";
+                }
+                
+                $allBrowsers[$title][1]['Parent']  = $secondNewParent;
+                $allBrowsers[$title][1]['Parents'] = $secondNewGroupName;
+            }
+        }
+        /**/
         
         //sort
         if ($doSort) {
@@ -1072,6 +1209,10 @@ class Browscap extends Core
             $sort10 = array();
             $sort11 = array();
             $sort12 = array();
+            $sort13 = array();
+            $sort14 = array();
+            $sort15 = array();
+            $sort16 = array();
             
             foreach ($allBrowsers as $title => $data) {
                 $x = 0;
@@ -1126,10 +1267,18 @@ class Browscap extends Core
                 }
                 
                 if (!empty($properties['Browser_Version'])) {
-                    $sort3[$title] = (float) $properties['Browser_Version'];
+                    $v = (float) $properties['Browser_Version'];
+                } elseif (!empty($properties['Version'])) {
+                    $v = (float) $properties['Version'];
                 } else {
-                    $sort3[$title] = (float) $properties['Version'];
+                    $v = 0.0;
                 }
+                
+                $version->setVersion($v);
+                $version->setUserAgent($this->userAgents[$key]);
+                $sort3[$title]  = $version->getVersion(Version::MAJORONLY);
+                $sort13[$title] = $version->getVersion(Version::MINORONLY);
+                $sort14[$title] = $version->getVersion(Version::MICROONLY);
                 
                 if (!empty($properties['Browser_Bits'])) {
                     $bits = $properties['Browser_Bits'];
@@ -1145,48 +1294,52 @@ class Browscap extends Core
                     $sort4[$title] = strtolower($properties['Platform']);
                 }
                 
-                $version = 0;
+                $v = 0;
                 
                 switch ($properties['Platform_Version']) {
                     case '3.1':
-                        $version = 3.1;
+                        $v = 3.1;
                         break;
                     case '95':
-                        $version = 3.2;
+                        $v = 3.2;
                         break;
                     case 'NT':
-                        $version = 4;
+                        $v = 4;
                         break;
                     case '98':
-                        $version = 4.1;
+                        $v = 4.1;
                         break;
                     case 'ME':
-                        $version = 4.2;
+                        $v = 4.2;
                         break;
                     case '2000':
-                        $version = 4.3;
+                        $v = 4.3;
                         break;
                     case 'XP':
-                        $version = 4.4;
+                        $v = 4.4;
                         break;
                     case '2003':
-                        $version = 4.5;
+                        $v = 4.5;
                         break;
                     case 'Vista':
-                        $version = 6;
+                        $v = 6;
                         break;
                     case '7':
-                        $version = 7;
+                        $v = 7;
                         break;
                     case '8':
-                        $version = 8;
+                        $v = 8;
                         break;
                     default:
-                        $version = (float) $properties['Platform_Version'];
+                        $v = (float) $properties['Platform_Version'];
                         break;
                 }
                 
-                $sort6[$title] = $version;
+                $version->setVersion($v);
+                $version->setUserAgent($this->userAgents[$key]);
+                $sort6[$title]  = $version->getVersion(Version::MAJORONLY);
+                $sort15[$title] = $version->getVersion(Version::MINORONLY);
+                $sort16[$title] = $version->getVersion(Version::MICROONLY);
                 
                 if (!empty($properties['Platform_Bits'])) {
                     $bits = $properties['Platform_Bits'];
@@ -1233,16 +1386,20 @@ class Browscap extends Core
             
             array_multisort(
                 $sort1, SORT_ASC, 
-                $sort7, SORT_ASC,     // Parents
-                $sort8, SORT_ASC,     // Parent first
-                $sort2, SORT_ASC,     // Browser Name
-                $sort3, SORT_NUMERIC, // Browser Version
-                $sort4, SORT_ASC,     // Platform Name
-                $sort6, SORT_NUMERIC, // Platform Version
-                $sort9, SORT_NUMERIC, // Platform Bits
-                $sort5, SORT_NUMERIC, // Browser Bits
-                $sort11, SORT_ASC,    // Device Hersteller
-                $sort12, SORT_ASC,    // Device Name
+                $sort7, SORT_ASC,      // Parents
+                $sort8, SORT_ASC,      // Parent first
+                $sort2, SORT_ASC,      // Browser Name
+                $sort3, SORT_NUMERIC,  // Browser Version::Major
+                $sort13, SORT_NUMERIC, // Browser Version::Minor
+                $sort14, SORT_NUMERIC, // Browser Version::Micro
+                $sort4, SORT_ASC,      // Platform Name
+                $sort6, SORT_NUMERIC,  // Platform Version::Major
+                $sort15, SORT_NUMERIC, // Platform Version::Minor
+                $sort16, SORT_NUMERIC, // Platform Version::Micro
+                $sort9, SORT_NUMERIC,  // Platform Bits
+                $sort5, SORT_NUMERIC,  // Browser Bits
+                $sort11, SORT_ASC,     // Device Hersteller
+                $sort12, SORT_ASC,     // Device Name
                 $sort10, SORT_ASC, 
                 $allBrowsers
             );
@@ -1252,6 +1409,36 @@ class Browscap extends Core
         $outputAsp = '';
         
         $fp = fopen($this->localFile . '.full.php.ini', 'w');
+        fwrite(
+            $fp, 
+';;; Provided courtesy of https://browsers.garykeith.com
+;;; Created on Tuesday, March 12, 2013 at 3:03 AM UTC
+
+;;; Keep up with the latest goings-on with the project:
+;;; Follow us on Twitter <https://twitter.com/browscap>, or...
+;;; Like us on Facebook <https://facebook.com/browscap>, or...
+;;; Collaborate on GitHub <https://github.com/GaryKeith/browscap>, or...
+;;; Discuss on Google Groups <https://groups.google.com/d/forum/browscap>.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browscap Version
+
+[GJK_Browscap_Version]
+Version=5020
+Released=$Date$
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; known Platforms
+;
+;unknown - not detected
+;Dalvik  - VM on Andoid
+;Darwin  - Free BSD based Hybridkernel OS for the MAC
+;Bada    - a OS developt by Samsung
+;Mac OS X
+;MacPPC
+;WAP
+;Solaris
+;Polaris - a free clone of Solaris
+;' . "\n"
+        );
         
         // shrink
         foreach ($allBrowsers as $title => $data) {
@@ -1307,6 +1494,14 @@ class Browscap extends Core
             $parents = $properties['Parents'] . ',' . $title;
             
             if ('DefaultProperties' != $title
+                && !empty($properties['Parent'])
+                && 'DefaultProperties' != $properties['Parent']
+                && !empty($groups[$parents])
+                && count($groups[$parents])
+                && false !== strpos(' on ', $title)
+            ) {
+                fwrite($fp, '; ' . $title . "\n\n");
+            } elseif ('DefaultProperties' != $title
                 && !empty($properties['Parent'])
                 && 'DefaultProperties' != $properties['Parent']
                 && !empty($groups[$parents])
@@ -1438,6 +1633,11 @@ class Browscap extends Core
         $parents   = array($userAgent);
         
         while (isset($browsers[$userAgent]['Parent'])) {
+            if ($userAgent === $browsers[$userAgent]['Parent']) {
+                var_dump('Parent is identical to key for key "' . $userAgent . '"');
+                continue;
+            }
+            
             $parents[] = $browsers[$userAgent]['Parent'];
             $userAgent = $browsers[$userAgent]['Parent'];
         }

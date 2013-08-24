@@ -109,15 +109,8 @@ final class Device
      */
     private function _detectBits()
     {
-        // 32 bits on 64 bit system
-        if ($this->utils->checkIfContains(array('i686 on x86_64'))) {
-            $this->_bits = '32';
-            
-            return $this;
-        }
-        
         // 64 bits
-        if ($this->utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64'))) {
+        if ($this->utils->checkIfContains(array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64', 'i686 on x86_64'))) {
             $this->_bits = '64';
             
             return $this;
@@ -131,7 +124,7 @@ final class Device
         }
         
         // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($this->utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC'))) {
+        if ($this->utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC', 'x86'))) {
             $this->_bits = '32';
             
             return $this;

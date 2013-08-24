@@ -121,7 +121,7 @@ final class Os
             return $this;
         }
         
-        if ($this->utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC'))) {
+        if ($this->utils->checkIfContains(array('Win', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC', 'x86'))) {
             $this->bits = '32';
             
             return $this;

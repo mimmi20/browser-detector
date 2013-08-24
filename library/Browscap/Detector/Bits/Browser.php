@@ -131,7 +131,7 @@ final class Browser
         }
         
         // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($this->utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC'))) {
+        if ($this->utils->checkIfContains(array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC', 'x86'))) {
             $this->bits = '32';
             
             return $this;
