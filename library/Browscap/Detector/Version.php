@@ -119,6 +119,11 @@ final class Version implements \Serializable
     const COMPLETE_IGNORE_EMPTY = 231;
     
     /**
+     * @var integer
+     */
+    const GET_ZERO_IF_EMPTY = 256;
+    
+    /**
      * @var string the user agent to handle
      */
     private $_useragent = null;
@@ -314,6 +319,10 @@ final class Version implements \Serializable
         
         if ('0' === $version || '0.0' === $version || '0.0.0' === $version) {
             $version = '';
+        }
+        
+        if (self::GET_ZERO_IF_EMPTY & $mode && '' === $version) {
+            $version = '0';
         }
         
         return $version;

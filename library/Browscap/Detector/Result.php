@@ -129,6 +129,7 @@ final class Result implements \Serializable
         'mobile_browser_manufacturer' => null, // not in wurfl
         'mobile_browser_brand_name'   => null, // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
+        'mobile_browser_icon'         => null, // not in wurfl
         
         // os
         'device_os'              => null,
@@ -136,12 +137,14 @@ final class Result implements \Serializable
         'device_os_bits'         => null, // not in wurfl
         'device_os_manufacturer' => null, // not in wurfl
         'device_os_brand_name'   => null, // not in wurfl
+        'device_os_icon'         => null, // not in wurfl
         
         // engine
         'renderingengine_name'         => null, // not in wurfl
         'renderingengine_version'      => null, // not in wurfl
         'renderingengine_manufacturer' => null, // not in wurfl
         'renderingengine_brand_name'   => null, // not in wurfl
+        'renderingengine_icon'         => null, // not in wurfl
         
         // markup
         'html_web_3_2' => null,
