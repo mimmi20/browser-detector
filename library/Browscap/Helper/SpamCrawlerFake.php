@@ -114,8 +114,6 @@ final class SpamCrawlerFake
             'ezooms',
             'facebookexternalhit',
             'facebookplatform',
-            'fbmapping',
-            'fbtimemanagement',
             'feedparser',
             'feed parser',
             'feedfetcher-google',

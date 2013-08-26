@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace Browscap\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -41,27 +41,27 @@ namespace Browscap\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\DeviceHandler;
 use \Browscap\Helper\Utils;
 use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
+use \Browscap\Detector\MatcherInterface\DeviceInterface;
 use \Browscap\Detector\BrowserHandler;
 use \Browscap\Detector\EngineHandler;
+use \Browscap\Detector\OsHandler;
+use \Browscap\Detector\Version;
 use \Browscap\Detector\Company;
+use \Browscap\Detector\Type\Device as DeviceType;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Brew
-    extends OsHandler
-    implements MatcherInterface, OsInterface
+final class SamsungSchU660
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -73,53 +73,70 @@ class Brew
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return DeviceHandler
      */
     public function __construct()
     {
         parent::__construct();
         
         $this->properties = array(
-            // os
-            'device_os'              => 'BREW',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
+            'wurflKey' => null, // not in wurfl
+            
+            // kind of device
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            
+            // device
+            'model_name'                => 'SCH-U660',
+            'model_version'             => null, // not in wurfl
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
+            'model_extra_info'          => null,
+            'marketing_name'            => 'Convoy 2',
+            'has_qwerty_keyboard'       => false,
+            'pointing_method'           => '',
+            'device_bits'               => null, // not in wurfl
+            'device_cpu'                => null, // not in wurfl
+            
+            // product info
+            'can_assign_phone_number'   => false,
+            'ununiqueness_handler'      => null,
+            'uaprof'                    => null,
+            'uaprof2'                   => null,
+            'uaprof3'                   => null,
+            'unique'                    => true,
+            
+            // display
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 240,
+            'resolution_height'      => 320,
+            'dual_orientation'       => false,
+            'colors'                 => 256,
+            
+            // sms
+            'sms_enabled' => true,
+            
+            // chips
+            'nfc_support' => true,
         );
     }
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BREW')) {
+        if (!$this->utils->checkIfContains(array('SAMSUNG-SCH-U660', 'SCH-U660'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \Browscap\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('BREW');
-        
-        $this->setCapability(
-            'device_os_version', 
-            $detector->detectVersion($searches)
-        );
     }
     
     /**
@@ -129,7 +146,19 @@ class Brew
      */
     public function getWeight()
     {
-        return 2;
+        return 3;
+    }
+    
+    /**
+     * detects the device name from the given user agent
+     *
+     * @param string $userAgent
+     *
+     * @return StdClass
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
     
     /**
@@ -141,7 +170,9 @@ class Brew
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
+            new \Browscap\Detector\Browser\Mobile\Android(),
+            new \Browscap\Detector\Browser\Mobile\Chrome(),
+            new \Browscap\Detector\Browser\Mobile\Dalvik()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -150,5 +181,19 @@ class Brew
         $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
         
         return $chain->detect();
+    }
+    
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Brew();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
     }
 }

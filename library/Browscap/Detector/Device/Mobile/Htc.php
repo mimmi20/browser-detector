@@ -148,6 +148,7 @@ final class Htc
             'MDA_Compact_V',
             'MDA Vario',
             'MDA_Vario_V',
+            'One S',
             'Sensation_4G',
             'SensationXE',
             'SensationXL',

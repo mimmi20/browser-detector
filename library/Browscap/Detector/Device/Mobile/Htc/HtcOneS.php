@@ -86,7 +86,7 @@ final class HtcOneS
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'One S',
+            'model_name'                => 'PJ401',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),
@@ -132,11 +132,11 @@ final class HtcOneS
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC One S', 'HTC_One_S', 'HTC_OneS'))) {
+        if (!$this->utils->checkIfContains(array('HTC One S', 'HTC_One_S', 'HTC_OneS', 'One S'))) {
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('HTC One SV', 'HTC_One_SV', 'HTC_OneSV'))) {
+        if ($this->utils->checkIfContains(array('HTC One SV', 'HTC_One_SV', 'HTC_OneSV', 'One SV'))) {
             return false;
         }
         

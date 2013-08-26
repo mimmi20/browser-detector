@@ -850,6 +850,7 @@ final class InputMapper
             case 'android 4.0':
             case 'android 4.1':
             case 'android 4.2':
+            case 'android 4.3':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':

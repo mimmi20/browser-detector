@@ -196,8 +196,8 @@ class Browscap extends Core
             $browser, 'Platform_Version', true, $platform
         );
         
+        $platformVersion = $mapper->mapOsVersion(trim($platformVersion), trim($platform));
         $platform        = $mapper->mapOsName(trim($platform));
-        $platformVersion = $mapper->mapOsVersion(trim($platformVersion), $platform);
         
         $platformbits = $this->detectProperty(
             $browser, 'Platform_Bits', true, $platform
