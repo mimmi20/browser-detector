@@ -118,10 +118,6 @@ class Midori
             return true;
         }
         
-        if ($this->utils->checkIfContains('Midori')) {
-            return true;
-        }
-        
         return false;
     }
     

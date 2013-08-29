@@ -86,12 +86,12 @@ final class HuaweiMediaPad7Lite
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'Mediapad 7 Lite',
+            'model_name'                => 'MediaPad 7 Lite',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Huawei(),
             'brand_name' => new Company\Huawei(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Mediapad 7 Lite',
+            'marketing_name'            => 'MediaPad 7 Lite',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

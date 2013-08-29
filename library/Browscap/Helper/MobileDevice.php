@@ -94,6 +94,7 @@ final class MobileDevice
             'arm; touch',
             'aspen simulator',
             'bada',
+            'bb10',
             'blackberry',
             'blazer',
             'bolt',

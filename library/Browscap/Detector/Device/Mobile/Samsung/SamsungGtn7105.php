@@ -91,8 +91,8 @@ final class SamsungGtn7105
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'GT-N7105',
-            'has_qwerty_keyboard'       => false,
+            'marketing_name'            => 'Galaxy Note II',
+            'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => 'ARM11', // not in wurfl

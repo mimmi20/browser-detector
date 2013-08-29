@@ -87,7 +87,7 @@ class Omniweb
             'mobile_browser'              => 'Omniweb',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer' => new Company\OmniDevelopment(), // not in wurfl
             'mobile_browser_modus'        => null, // not in wurfl
             
             // product info
@@ -114,11 +114,7 @@ class Omniweb
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
-        if (!$this->utils->checkIfContains(array('Omniweb/', 'OmniWeb/'))) {
+        if (!$this->utils->checkIfContains(array('Omniweb/', 'OmniWeb'))) {
             return false;
         }
         

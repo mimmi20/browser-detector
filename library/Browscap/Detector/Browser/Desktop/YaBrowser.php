@@ -84,7 +84,7 @@ class YaBrowser
             'browser_type' => new BrowserType\Browser(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'YaBrowser',
+            'mobile_browser'              => 'Yandex Browser',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Yandex(), // not in wurfl

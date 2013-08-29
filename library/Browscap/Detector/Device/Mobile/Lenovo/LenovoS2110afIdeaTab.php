@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile;
+namespace Browscap\Detector\Device\Mobile\Lenovo;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class CubeU30gt
+final class LenovoS2110afIdeaTab
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,16 +86,16 @@ final class CubeU30gt
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'U30GT',
+            'model_name'                => 'S2110AF',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Cube(),
-            'brand_name' => new Company\Cube(),
+            'manufacturer_name' => new Company\Lenovo(),
+            'brand_name' => new Company\Lenovo(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'U30GT',
+            'marketing_name'            => 'IdeaTab S2110AF',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'MTK 6575 1.0GHz Cortex A9', // not in wurfl
             
             // product info
             'can_assign_phone_number'   => false,
@@ -106,12 +106,12 @@ final class CubeU30gt
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => null,
-            'physical_screen_height' => null,
-            'columns'                => null,
-            'rows'                   => null,
-            'max_image_width'        => null,
-            'max_image_height'       => null,
+            'physical_screen_width'  => 218,
+            'physical_screen_height' => 136,
+            'columns'                => 100,
+            'rows'                   => 100,
+            'max_image_width'        => 980,
+            'max_image_height'       => 472,
             'resolution_width'       => 1280,
             'resolution_height'      => 800,
             'dual_orientation'       => true,
@@ -132,21 +132,11 @@ final class CubeU30gt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('U30GT')) {
+        if (!$this->utils->checkIfContains(array('IdeaTabS2110AF'))) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
     
     /**
@@ -159,6 +149,16 @@ final class CubeU30gt
     public function detectDevice()
     {
         return $this;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**

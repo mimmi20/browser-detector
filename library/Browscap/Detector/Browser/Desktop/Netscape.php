@@ -118,7 +118,7 @@ class Netscape
             return false;
         }
         
-        $isNotReallyAnFirefox = array(
+        $isNotReallyAnNetscape = array(
             // using also the Gecko rendering engine
             'Firefox',
             'Maemo',
@@ -140,6 +140,7 @@ class Netscape
             'Nutch',
             'CazoodleBot',
             'LOOQ',
+            'Postbox',
             // using the Trident rendering engine
             'MSIE',
             'AOL',
@@ -162,11 +163,13 @@ class Netscape
             'libwww',
             'OviBrowser',
             'K-Meleon',
+            // other rendering engines
+            'Trident',
             // Fakes
             'Mac; Mac OS '
         );
         
-        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
+        if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
             return false;
         }
         

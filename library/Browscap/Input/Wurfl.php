@@ -283,42 +283,8 @@ final class Wurfl extends Core
                 
                 $mapper = new InputMapper();
                 
-                $apiDev = $mapper->mapDeviceName($apiDev);
-                $apiMan = $mapper->mapDeviceMaker($apiMan, $apiDev);
-                
-                switch (strtolower($apiDev)) {
-                    case 'android 1.6':
-                    case 'android 2.0':
-                    case 'android 2.1':
-                    case 'android 2.2':
-                    case 'android 2.3':
-                    case 'android 3.0':
-                    case 'android 3.1':
-                    case 'android 3.2':
-                    case 'android 4.0':
-                    case 'android 4.1':
-                    case 'android 4.2':
-                    case 'disguised as macintosh':
-                    case 'mini 1':
-                    case 'mini 4':
-                    case 'mini 5':
-                    case 'windows mobile 6.5':
-                    case 'windows mobile 7':
-                    case 'windows mobile 7.5':
-                    case 'windows phone 8':
-                    case 'fennec tablet':
-                    case 'tablet on android':
-                    case 'fennec':
-                    case 'opera for series 60':
-                    case 'opera mini for s60':
-                    case 'windows mobile (opera)':
-                        $apiKey = null;
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                
+                $apiDev        = $mapper->mapDeviceName($apiDev);
+                $apiMan        = $mapper->mapDeviceMaker($apiMan, $apiDev);
                 $marketingName = $mapper->mapDeviceMarketingName($marketingName, $apiDev);
                 $brandName     = $mapper->mapDeviceBrandName($brandName, $apiDev);
                 

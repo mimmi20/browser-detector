@@ -99,7 +99,11 @@ class Macintosh
             return false;
         }
         
-        if ($this->utils->checkIfContains('Mac OS X')) {
+        if ($this->utils->checkIfContains('Mac OS X', 'iPhone OS')) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains('darwin', true)) {
             return false;
         }
         

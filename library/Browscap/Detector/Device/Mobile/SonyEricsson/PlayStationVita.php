@@ -192,7 +192,7 @@ final class PlayStationVita
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
+        $handler = new \Browscap\Detector\Os\Java();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

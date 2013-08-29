@@ -86,7 +86,7 @@ final class SamsungGti9100t
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'GT-I9100',    // wurflkey: samsung_gt_i9100_ver1_suban40t
+            'model_name'                => 'GT-I9100T',    // wurflkey: samsung_gt_i9100_ver1_suban40t
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),

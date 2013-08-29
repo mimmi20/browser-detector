@@ -84,7 +84,7 @@ class GoogleAppEngine
             'browser_type' => new BrowserType\Bot(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'AppEngine-Google',
+            'mobile_browser'              => 'Google App Engine',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Google(), // not in wurfl

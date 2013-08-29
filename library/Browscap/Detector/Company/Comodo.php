@@ -55,7 +55,7 @@ final class Comodo extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'Comodo Internet Security';
+    protected $name = 'Comodo Group Inc';
     
     /**
      * the brand name of the company

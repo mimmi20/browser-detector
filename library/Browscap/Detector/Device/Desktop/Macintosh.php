@@ -141,7 +141,7 @@ final class Macintosh
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('MacBook', 'Macmini', 'iMac', 'MacPro'))) {
+        if ($this->utils->checkIfContains(array('MacBook', 'Macmini', 'iMac', 'MacPro', 'PowerMac', 'Power%20Macintosh'))) {
             return false;
         }
         

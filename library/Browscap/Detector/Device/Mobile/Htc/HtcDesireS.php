@@ -136,7 +136,7 @@ final class HtcDesireS
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('HTC_DesireS_S510e'))) {
+        if (!$this->utils->checkIfContains(array('HTC_DesireS_S510e', 'HTC_DesireSV', 'Desire SV', 'HTC/DesireSV', 'HTC Desire SV'))) {
             return false;
         }
         

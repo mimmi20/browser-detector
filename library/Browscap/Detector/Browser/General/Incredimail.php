@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Puffin
+class Incredimail
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -81,18 +81,18 @@ class Puffin
         
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Bot(), // not in wurfl
+            'browser_type' => new BrowserType\EmailClient(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'Puffin',
+            'mobile_browser'              => 'Incredimail',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'        => null, // not in wurfl
             
             // product info
-            'can_skip_aligned_link_row' => false,
-            'device_claims_web_support' => false,
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => true,
             
             // pdf
             'pdf_support' => true,
@@ -114,31 +114,11 @@ class Puffin
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
+        if ($this->utils->checkIfContains('Incredimail')) {
+            return true;
         }
         
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Puffin'))) {
-            return false;
-        }
-        
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'Iron'
-        );
-        
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
-            return false;
-        }
-        
-        return true;
+        return false;
     }
     
     /**
@@ -151,7 +131,7 @@ class Puffin
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Puffin');
+        $searches = array('Incredimail', 'Incredimail\-');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

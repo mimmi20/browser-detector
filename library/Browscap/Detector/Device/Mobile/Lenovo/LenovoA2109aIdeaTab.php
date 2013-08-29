@@ -136,7 +136,7 @@ final class LenovoA2109aIdeaTab
             return false;
         }
         
-        if ($this->utils->checkIfContains('IdeaTab_A1107')) {
+        if ($this->utils->checkIfContains('IdeaTab_A1107', 'IdeaTabS2110AF')) {
             return false;
         }
         

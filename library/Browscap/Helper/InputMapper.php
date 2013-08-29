@@ -100,6 +100,7 @@ final class InputMapper
                 $browserName = 'Safari';
                 break;
             case 'chrome mobile':
+            case 'chrome mobile ios':
                 $browserName = 'Chrome';
                 break;
             case 'android':
@@ -125,6 +126,18 @@ final class InputMapper
                 break;
             case 'dolfin/jasmine webkit':
                 $browserName = 'Dolfin';
+                break;
+            case 'yandex.browser':
+                $browserName = 'Yandex Browser';
+                break;
+            case 'ie mobile':
+                $browserName = 'IEMobile';
+                break;
+            case 'ovi browser':
+                $browserName = 'Nokia Proxy Browser';
+                break;
+            case 'firefox mobile':
+                $browserName = 'Firefox';
                 break;
             default:
                 // nothing to do here
@@ -261,6 +274,21 @@ final class InputMapper
             case 'sun microsystems, inc.':
                 $maker = 'Oracle';
                 break;
+            case 'postbox, inc.':
+                $maker = 'Postbox Inc';
+                break;
+            case 'comodo group, inc.':
+                $maker = 'Comodo Group Inc';
+                break;
+            case 'canonical ltd.':
+                $maker = 'Canonical Ltd';
+                break;
+            case 'gentoo foundation, inc.':
+                $maker = 'Gentoo Foundation Inc';
+                break;
+            case 'Omni Development, Inc.':
+                $maker = 'Omni Development Inc';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -320,6 +348,7 @@ final class InputMapper
                 $osName = 'Windows';
                 break;
             case 'winphone7':
+            case 'windows phone 7':
                 $osName = 'Windows Phone OS';
                 break;
             case 'blackberry os':
@@ -418,6 +447,7 @@ final class InputMapper
                 $osversion = '98';
                 break;
             case 'winphone7':
+            case 'windows phone 7':
                 $osversion = '7';
                 break;
             default:
@@ -470,6 +500,7 @@ final class InputMapper
             case 'windows mobile 6.5':
             case 'windows mobile 7':
             case 'windows mobile 7.5':
+            case 'windows phone 7':
             case 'windows phone 8':
             case 'fennec tablet':
             case 'tablet on android':
@@ -619,6 +650,7 @@ final class InputMapper
             case 'android 4.0':
             case 'android 4.1':
             case 'android 4.2':
+            case 'android 4.3':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':
@@ -626,6 +658,7 @@ final class InputMapper
             case 'windows mobile 6.5':
             case 'windows mobile 7':
             case 'windows mobile 7.5':
+            case 'windows phone 7':
             case 'windows phone 8':
             case 'fennec tablet':
             case 'tablet on android':
@@ -747,6 +780,9 @@ final class InputMapper
             case 'galaxy s3':
                 $marketingName = 'Galaxy S III';
                 break;
+            case 'galaxy s3 lte international':
+                $marketingName = 'Galaxy S III LTE International';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -775,6 +811,7 @@ final class InputMapper
             case 'windows mobile 6.5':
             case 'windows mobile 7':
             case 'windows mobile 7.5':
+            case 'windows phone 7':
             case 'windows phone 8':
             case 'fennec tablet':
             case 'tablet on android':
@@ -858,6 +895,7 @@ final class InputMapper
             case 'windows mobile 6.5':
             case 'windows mobile 7':
             case 'windows mobile 7.5':
+            case 'windows phone 7':
             case 'windows phone 8':
             case 'fennec tablet':
             case 'tablet on android':

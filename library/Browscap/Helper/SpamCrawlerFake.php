@@ -110,6 +110,7 @@ final class SpamCrawlerFake
             'crawl',
             'detection',
             'downloader',
+            'elefent',
             'extract',
             'ezooms',
             'facebookexternalhit',
@@ -320,6 +321,12 @@ final class SpamCrawlerFake
         }
         
         $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch && $matches[1] > 2) {
+            return true;
+        }
+        
+        $doMatch = preg_match('/SeaMonkey\/(\d+)\.(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch && $matches[1] > 2) {
             return true;

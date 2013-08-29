@@ -139,7 +139,9 @@ final class Asus
             'eeepc',
             'Nexus 7',
             'PadFone',
-            'ME301T'
+            'ME301T',
+            'ME302C',
+            'ME371MG'
         );
         
         if (!$this->utils->checkIfContains($asusPhones)) {

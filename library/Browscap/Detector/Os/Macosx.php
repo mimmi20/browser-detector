@@ -99,7 +99,11 @@ class Macosx
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('like Mac OS X', 'iPhone OS', 'Darwin'))) {
+        if ($this->utils->checkIfContains(array('like Mac OS X', 'iPhone OS'))) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains('darwin', true)) {
             return false;
         }
         

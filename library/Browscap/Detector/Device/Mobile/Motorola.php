@@ -131,7 +131,7 @@ final class Motorola
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('HTC')) {
+        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
             return false;
         }
         

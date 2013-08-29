@@ -134,6 +134,7 @@ final class SonyEricsson
         $sonyPhones = array(
             'sonyericsson',
             'sony',
+            'c2105',
             'c6602',
             'c6603',
             'c6503',
@@ -145,6 +146,7 @@ final class SonyEricsson
             'lt18',
             'lt18i',
             'lt22i',
+            'lt25i',
             'lt26i',
             'lt28h',
             'lt30p',

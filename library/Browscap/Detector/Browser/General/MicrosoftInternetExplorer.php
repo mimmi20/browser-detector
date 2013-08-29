@@ -64,7 +64,7 @@ class MicrosoftInternetExplorer
     implements MatcherInterface, BrowserInterface
 {
     private $patterns = array(
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 11\.0.*/' => '11.0',
+        '/Mozilla\/5\.0 \(.*Trident\/7\.0.*rv\:11\.0\) like Gecko/' => '11.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 10\.0.*/' => '10.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 9\.0.*/'  => '9.0',
         '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'  => '8.0',
@@ -139,7 +139,7 @@ class MicrosoftInternetExplorer
             return false;
         }
         
-        if (!$this->utils->checkIfContains('MSIE')) {
+        if (!$this->utils->checkIfContains(array('MSIE', 'Trident'))) {
             return false;
         }
         

@@ -131,7 +131,7 @@ final class BlackBerry
      */
     public function canHandle()
     {
-        $rimPhones = array('BlackBerry', 'PlayBook', 'RIM Tablet');
+        $rimPhones = array('BlackBerry', 'PlayBook', 'RIM Tablet', 'BB10');
         
         if ($this->utils->checkIfContains($rimPhones)) {
             return true;

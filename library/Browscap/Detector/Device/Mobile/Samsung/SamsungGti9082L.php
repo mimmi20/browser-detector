@@ -91,8 +91,8 @@ final class SamsungGti9082L
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'GT-I9082L',
-            'has_qwerty_keyboard'       => false,
+            'marketing_name'            => 'Galaxy Grand Duos',
+            'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
@@ -112,9 +112,10 @@ final class SamsungGti9082L
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
