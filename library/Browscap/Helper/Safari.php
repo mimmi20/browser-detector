@@ -174,32 +174,29 @@ final class Safari
      */
     public function mapSafariVersions($detectedVersion)
     {
-        if ($detectedVersion >= 8500) {
-            return '6.0';
-        }
-        
-        if ($detectedVersion >= 7500) {
-            return '5.1';
-        }
-        
-        if ($detectedVersion >= 6500) {
-            return '5.0';
-        }
-        
-        if ($detectedVersion >= 750) {
-            return '5.1';
-        }
-        
-        if ($detectedVersion >= 650) {
-            return '5.0';
-        }
-        
-        if ($detectedVersion >= 500) {
-            return '4.0';
+        if ($detectedVersion >= 9500) {
+            $detectedVersion = '7.0';
+        } elseif ($detectedVersion >= 8500) {
+            $detectedVersion = '6.0';
+        } elseif ($detectedVersion >= 7500) {
+            $detectedVersion = '5.1';
+        } elseif ($detectedVersion >= 6500) {
+            $detectedVersion = '5.0';
+        } elseif ($detectedVersion >= 950) {
+            $detectedVersion = '7.0';
+        } elseif ($detectedVersion >= 850) {
+            $detectedVersion = '6.0';
+        } elseif ($detectedVersion >= 750) {
+            $detectedVersion = '5.1';
+        } elseif ($detectedVersion >= 650) {
+            $detectedVersion = '5.0';
+        } elseif ($detectedVersion >= 500) {
+            $detectedVersion = '4.0';
         }
         
         $regularVersions = array(
-            '3.0', '3.1', '3.2', '4.0', '4.1', '5.0', '5.1', '5.2', '6.0'
+            '3.0', '3.1', '3.2', '4.0', '4.1', '5.0', '5.1', '5.2', '6.0',
+            '6.1', '7.0', '7.1'
         );
         
         if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {

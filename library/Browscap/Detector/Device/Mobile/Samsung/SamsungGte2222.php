@@ -115,6 +115,7 @@ final class SamsungGte2222
             'resolution_width'       => 220,
             'resolution_height'      => 176,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

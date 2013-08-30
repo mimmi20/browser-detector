@@ -120,6 +120,7 @@ final class Result implements \Serializable
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => null,
+            'colors'                 => null,
         'colors'                 => null,
         
         // browser

@@ -91,9 +91,9 @@ final class HuaweiY300
             'manufacturer_name' => new Company\Huawei(),
             'brand_name' => new Company\Huawei(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Y300',
+            'marketing_name'            => 'Ascend Y 300',
             'has_qwerty_keyboard'       => true,
-            'pointing_method'           => '',    // wurflkey: huawei_Y300_ver1 // wurflkey: huawei_Y300_ver1
+            'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
@@ -112,9 +112,10 @@ final class HuaweiY300
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,

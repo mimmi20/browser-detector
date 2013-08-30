@@ -115,6 +115,7 @@ final class Panasonic
             'resolution_width'       => null,
             'resolution_height'      => null,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

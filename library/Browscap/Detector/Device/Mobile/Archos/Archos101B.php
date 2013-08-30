@@ -115,6 +115,7 @@ final class Archos101B
             'resolution_width'       => null,
             'resolution_height'      => null,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,
@@ -131,7 +132,7 @@ final class Archos101B
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHOS 101B', '101B')) {
+        if (!$this->utils->checkIfContains(array('ARCHOS 101B', '101B'))) {
             return false;
         }
         

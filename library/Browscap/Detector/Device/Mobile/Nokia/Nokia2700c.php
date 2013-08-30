@@ -115,6 +115,7 @@ final class Nokia2700c
             'resolution_width'       => null,
             'resolution_height'      => null,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

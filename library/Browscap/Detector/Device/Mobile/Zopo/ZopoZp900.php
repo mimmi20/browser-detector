@@ -91,7 +91,7 @@ final class ZopoZp900
             'manufacturer_name' => new Company\Zopo(),
             'brand_name' => new Company\Zopo(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'ZP900 LEADER',
+            'marketing_name'            => 'Leader',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

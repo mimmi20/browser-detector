@@ -84,7 +84,7 @@ class FreeBsd
             'device_os'              => 'FreeBSD',
             'device_os_version'      => '',
             'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
+            'device_os_manufacturer' => new Company\FreeBsdFoundation(), // not in wurfl
         );
     }
     

@@ -115,6 +115,7 @@ final class SonyEricsson
             'resolution_width'       => null,
             'resolution_height'      => null,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,
@@ -160,6 +161,7 @@ final class SonyEricsson
             'sk17i',
             'sgp321',
             'sgpt12',
+            'sgpt13',
             'st15i',
             'st16i',
             'st17i',

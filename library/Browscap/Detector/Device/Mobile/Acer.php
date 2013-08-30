@@ -115,6 +115,7 @@ final class Acer
             'resolution_width'       => null,
             'resolution_height'      => null,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,
@@ -155,7 +156,8 @@ final class Acer
             ' E320 ',
             ' G100W ',
             'Stream-S110',
-            ' Liquid '
+            ' Liquid ',
+            ' S500 ',
         );
         
         if ($this->utils->checkIfContains($acerPhones)) {

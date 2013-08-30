@@ -115,6 +115,7 @@ final class Yuandao
             'resolution_width'       => null,
             'resolution_height'      => null,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,
@@ -132,7 +133,7 @@ final class Yuandao
     public function canHandle()
     {
         $YuandaoPhones = array(
-            'yuandao', 'n90 dual core2'
+            'yuandao', 'n90 dual core2', 'n90fhdrk'
         );
         
         if ($this->utils->checkIfContains($YuandaoPhones, true)) {

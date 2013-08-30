@@ -115,6 +115,7 @@ final class SamsungGti9010P
             'resolution_width'       => 480,
             'resolution_height'      => 800,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

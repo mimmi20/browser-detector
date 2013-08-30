@@ -99,7 +99,7 @@ class Linux
             return false;
         }
         
-        $isNotReallyAnLinux = array(
+        $isNotReallyTheDefaultLinux = array(
             // special Linux versions
             'debian',
             'ubuntu',
@@ -126,7 +126,7 @@ class Linux
             'hp-ux'
         );
         
-        if ($this->utils->checkIfContains($isNotReallyAnLinux, true)) {
+        if ($this->utils->checkIfContains($isNotReallyTheDefaultLinux, true)) {
             return false;
         }
         

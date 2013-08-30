@@ -115,6 +115,7 @@ final class SamsungGts5560i
             'resolution_width'       => 240,
             'resolution_height'      => 400,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

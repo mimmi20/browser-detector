@@ -840,7 +840,6 @@ class Browscap extends Core
                     case 'MacOSX':
                     case 'Mac OS X':
                     case 'Mac68K':
-                    case 'Darwin':
                         $properties['Device_Name'] = 'Macintosh';
                         $properties['Device_Maker'] = 'Apple Inc';
                         $properties['Device_Brand_Name'] = 'Apple';
@@ -854,6 +853,50 @@ class Browscap extends Core
                         $properties['Device_Type'] = 'Desktop';
                         $properties['Platform_Description'] = '';
                         $properties['Platform_Icon']        = '';
+                        break;
+                    case 'Darwin':
+                        $properties['Device_Maker'] = 'Apple Inc';
+                        $properties['Device_Brand_Name'] = 'Apple';
+                        $properties['isMobileDevice'] = false;
+                        $properties['isTablet'] = false;
+                        $properties['Device_isMobileDevice'] = false;
+                        $properties['Device_isTablet'] = false;
+                        $properties['Device_isDesktop'] = false;
+                        $properties['Device_isTv'] = false;
+                        $properties['Platform_Maker'] = 'Apple Inc';
+                        $properties['Platform_Description'] = '';
+                        $properties['Platform_Icon']        = '';
+                        
+                        if (!empty($properties['Device_Name'])) {
+                            switch ($properties['Device_Name']) {
+                                case 'iPad':
+                                    $properties['isMobileDevice'] = true;
+                                    $properties['Device_isMobileDevice'] = true;
+                                    $properties['isTablet'] = true;
+                                    $properties['Device_isTablet'] = true;
+                                    $properties['Device_Type'] = 'Tablet';
+                                    break;
+                                case 'iPod':
+                                    $properties['isMobileDevice'] = true;
+                                    $properties['Device_isMobileDevice'] = true;
+                                    $properties['isTablet'] = false;
+                                    $properties['Device_isTablet'] = false;
+                                    $properties['Device_Type'] = 'Mobile Device';
+                                    break;
+                                case 'iPhone':
+                                    $properties['isMobileDevice'] = true;
+                                    $properties['Device_isMobileDevice'] = true;
+                                    $properties['isTablet'] = false;
+                                    $properties['Device_isTablet'] = false;
+                                    $properties['Device_Type'] = 'Mobile Phone';
+                                    break;
+                                default:
+                                    $properties['Device_Name'] = 'Macintosh';
+                                    $properties['Device_isDesktop'] = true;
+                                    $properties['Device_Type'] = 'Desktop';
+                                    break;
+                            }
+                        }
                         break;
                     case 'iOS':
                         $properties['Device_Maker'] = 'Apple Inc';
@@ -1020,6 +1063,18 @@ class Browscap extends Core
                         }
                         break;
                     case 'FreeBSD':
+                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['isMobileDevice'] = false;
+                        $properties['isTablet'] = false;
+                        $properties['Device_isMobileDevice'] = false;
+                        $properties['Device_isTablet'] = false;
+                        $properties['Device_isDesktop'] = true;
+                        $properties['Device_isTv'] = false;
+                        $properties['Platform_Maker'] = 'FreeBSD Foundation';
+                        $properties['Device_Type'] = 'Desktop';
+                        $properties['Platform_Description'] = '';
+                        $properties['Platform_Icon']        = '';
+                        break;
                     case 'NetBSD':
                     case 'OpenBSD':
                     case 'RISC OS':
@@ -1287,7 +1342,7 @@ class Browscap extends Core
                         case 'Application':
                             $x = 2;
                             break;
-                        case 'Email Clients':
+                        case 'Email Client':
                             $x = 3;
                             break;
                         case 'Library':
@@ -1437,10 +1492,10 @@ class Browscap extends Core
                 }
                 
                 $sort7[$title]  = strtolower($group);
-                $sort8[$title]  = $subgroup;
-                $sort10[$title] = $key;
+                $sort8[$title]  = strtolower($subgroup);
                 $sort11[$title] = $brandName;
                 $sort12[$title] = $marketingName;
+                $sort10[$title] = $key;
             }
             
             array_multisort(

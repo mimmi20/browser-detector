@@ -115,6 +115,7 @@ final class SamsungGtp7300B
             'resolution_width'       => 800,
             'resolution_height'      => 1280,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

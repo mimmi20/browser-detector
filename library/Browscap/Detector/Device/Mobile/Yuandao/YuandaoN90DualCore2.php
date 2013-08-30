@@ -132,11 +132,7 @@ final class YuandaoN90DualCore2
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('base lutea', 'blade'), true)) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains('base lutea 2', true)) {
+        if (!$this->utils->checkIfContains(array('n90 dual core2'), true)) {
             return false;
         }
         

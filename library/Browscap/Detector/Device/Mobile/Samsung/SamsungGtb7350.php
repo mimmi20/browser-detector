@@ -115,6 +115,7 @@ final class SamsungGtb7350
             'resolution_width'       => 320,
             'resolution_height'      => 320,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

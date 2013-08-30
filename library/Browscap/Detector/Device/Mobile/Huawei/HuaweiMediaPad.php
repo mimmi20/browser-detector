@@ -91,7 +91,7 @@ final class HuaweiMediaPad
             'manufacturer_name' => new Company\Huawei(),
             'brand_name' => new Company\Huawei(),
             'model_extra_info'          => 'aka T-Mobile Springboard',
-            'marketing_name'            => 'Mediapad',
+            'marketing_name'            => 'MediaPad',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -136,7 +136,7 @@ final class HuaweiMediaPad
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('MediaPad 7 Lite'))) {
+        if ($this->utils->checkIfContains(array('MediaPad 7 Lite', 'MediaPad 10 LINK'))) {
             return false;
         }
         

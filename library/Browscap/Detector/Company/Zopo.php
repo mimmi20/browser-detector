@@ -62,5 +62,5 @@ final class Zopo extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $brandname = 'Zopo';
+    protected $brandname = 'ZOPO';
 }

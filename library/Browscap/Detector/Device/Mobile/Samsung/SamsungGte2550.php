@@ -115,6 +115,7 @@ final class SamsungGte2550
             'resolution_width'       => 128,
             'resolution_height'      => 160,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

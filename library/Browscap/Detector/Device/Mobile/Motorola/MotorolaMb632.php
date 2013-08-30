@@ -115,6 +115,7 @@ final class MotorolaMb632
             'resolution_width'       => 480,
             'resolution_height'      => 640,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

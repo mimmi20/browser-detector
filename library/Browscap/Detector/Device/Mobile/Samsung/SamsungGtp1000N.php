@@ -115,6 +115,7 @@ final class SamsungGtp1000N
             'resolution_width'       => 1024,
             'resolution_height'      => 600,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,

@@ -115,6 +115,7 @@ final class SamsungGts3650
             'resolution_width'       => 240,
             'resolution_height'      => 320,
             'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,
