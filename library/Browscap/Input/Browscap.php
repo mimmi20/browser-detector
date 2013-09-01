@@ -119,7 +119,7 @@ class Browscap extends Core
                 }
             }
         }
-
+trigger_error(print_r($browser, true));
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         

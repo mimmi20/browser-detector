@@ -48,14 +48,14 @@ namespace Browscap\Detector\Type\Browser;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Validator extends AbstractType implements TypeInterface
+final class MultimediaPlayer extends AbstractType implements TypeInterface
 {
     /**
      * the name of the browser
      *
      * @var string
      */
-    protected $name = 'Validator';
+    protected $name = 'Multimedia Player';
     
     /**
      * the Browser is a Bot
