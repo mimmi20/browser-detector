@@ -216,6 +216,9 @@ final class InputMapper
             case 'feed reader':
                 $browserType = new BrowserType\FeedReader();
                 break;
+            case 'multimedia player':
+                $browserType = new BrowserType\MultimediaPlayer();
+                break;
             default:
                 switch (strtolower($browserName)) {
                     case 'unknown':
