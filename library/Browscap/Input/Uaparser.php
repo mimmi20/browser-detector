@@ -170,20 +170,13 @@ final class Uaparser extends Core
         $browserVersion = $mapper->mapBrowserVersion($parserResult->ua->toVersionString, $browserName);
         
         $result->setCapability('mobile_browser', $browserName);
-        $result->setCapability('mobile_browser_version', $browserVersion);
+        // $result->setCapability('mobile_browser_version', $browserVersion);
         
         $osName    = $mapper->mapOsName($parserResult->os->family);
         $osVersion = $mapper->mapOsVersion($parserResult->os->toVersionString, $osName);
         
         $result->setCapability('device_os', $osName);
         $result->setCapability('device_os_version', $osVersion);
-        
-        // $deviceName  = $mapper->mapDeviceName($parserResult->device->family);
-        
-        // $result->setCapability('model_name', $deviceName);
-        // $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker(null, $deviceName));
-        // $result->setCapability('brand_name', $mapper->mapDeviceBrandName(null, $deviceName));
-        // $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName(null, $deviceName));
         
         return $result;
     }

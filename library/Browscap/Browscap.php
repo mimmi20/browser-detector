@@ -257,6 +257,7 @@ class Browscap
         
         $cacheId = hash('sha512', $this->cachePrefix . $this->agent);
         $result  = null;
+
         
         if (!$forceDetect) {
             $result = $this->cache->load($cacheId);

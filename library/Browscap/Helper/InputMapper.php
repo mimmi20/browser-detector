@@ -426,32 +426,35 @@ final class InputMapper
             case '':
             case 'unknown':
             case 'other':
-                $osversion = null;
+                $osVersion = null;
                 break;
             case 'winxp':
-                $osversion = 'XP';
+                $osVersion = 'XP';
                 break;
             case 'win7':
-                $osversion = '7';
+                $osVersion = '7';
                 break;
             case 'win8':
-                $osversion = '8';
+                $osVersion = '8';
                 break;
             case 'winvista':
-                $osversion = 'Vista';
+                $osVersion = 'Vista';
                 break;
             case 'win2000':
-                $osversion = '2000';
+                $osVersion = '2000';
                 break;
             case 'win2003':
-                $osversion = '2003';
+                $osVersion = '2003';
                 break;
             case 'win98':
-                $osversion = '98';
+                $osVersion = '98';
+                break;
+            case 'win95':
+                $osVersion = '95';
                 break;
             case 'winphone7':
             case 'windows phone 7':
-                $osversion = '7';
+                $osVersion = '7';
                 break;
             default:
                 // nothing to do here

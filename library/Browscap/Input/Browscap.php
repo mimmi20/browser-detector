@@ -88,7 +88,7 @@ class Browscap extends Core
     public function __construct()
     {
         // default data file
-        $this->setLocaleFile(__DIR__ . '/../data/browscap.ini');
+        $this->setLocaleFile(__DIR__ . '/../data/modified_full_php_browscap.ini');
     }
 
     /**
@@ -119,7 +119,7 @@ class Browscap extends Core
                 }
             }
         }
-trigger_error(print_r($browser, true));
+        
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         
@@ -391,20 +391,16 @@ trigger_error(print_r($browser, true));
      */
     private function getGlobalCache()
     {
-        static $globalCache = null;
+        $cacheGlobalId = $this->cachePrefix . 'agentsGlobal';
         
-        if (null === $globalCache) {
-            $cacheGlobalId = $this->cachePrefix . 'agentsGlobal';
+        // Load the cache at the first request
+        if (!($this->cache instanceof \Zend\Cache\Frontend\Core) 
+            || !$globalCache = $this->cache->load($cacheGlobalId)
+        ) {
+            $globalCache = $this->getBrowserFromGlobalCache();
             
-            // Load the cache at the first request
-            if (!($this->cache instanceof \Zend\Cache\Frontend\Core) 
-                || !$globalCache = $this->cache->load($cacheGlobalId)
-            ) {
-                $globalCache = $this->getBrowserFromGlobalCache();
-                
-                if ($this->cache instanceof \Zend\Cache\Frontend\Core) {
-                    $this->cache->save($globalCache, $cacheGlobalId);
-                }
+            if ($this->cache instanceof \Zend\Cache\Frontend\Core) {
+                $this->cache->save($globalCache, $cacheGlobalId);
             }
         }
         
@@ -1675,19 +1671,19 @@ Released=$Date$
     /**
      * sets the name of the local file
      *
-     * @param string $file the file name
+     * @param string $filename the file name
      *
      * @return void
      */
-    public function setLocaleFile($file)
+    public function setLocaleFile($filename)
     {
-        if (empty($file)) {
+        if (empty($filename)) {
             throw new Exception(
-                'the file can not be empty', Exception::LOCAL_FILE_MISSING
+                'the filename can not be empty', Exception::LOCAL_FILE_MISSING
             );
         }
         
-        $this->localFile = $file;
+        $this->localFile = $filename;
     }
 
     /**

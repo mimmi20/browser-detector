@@ -115,7 +115,7 @@ class FacebookApp
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('Facebook')
-            && !$this->utils->checkIfContains(array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit', 'fbmapping', 'fbtimemanagement'), true)
+            && !$this->utils->checkIfContains(array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit'), true)
         ) {
             return false;
         }
