@@ -86,7 +86,7 @@ final class HtcDesireX
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Desire X',
+            'model_name'                => 'T328E',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),

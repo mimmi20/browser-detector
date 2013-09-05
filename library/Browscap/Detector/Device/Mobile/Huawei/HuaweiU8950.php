@@ -136,7 +136,7 @@ final class HuaweiU8950
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('HuaweiU8950N', 'U8950N'))) {
+        if ($this->utils->checkIfContains(array('HuaweiU8950N', 'U8950N', 'HuaweiU8950D', 'U8950D'))) {
             return false;
         }
         

@@ -119,7 +119,7 @@ class Playstation
             return false;
         }
         
-        if (!$this->utils->checkIfContains(array('Playstation/'))) {
+        if (!$this->utils->checkIfContains(array('Playstation/', 'PlayStation Vita'))) {
             return false;
         }
         

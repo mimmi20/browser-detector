@@ -124,20 +124,21 @@ class Chrome
         
         $isNotReallyAnChrome = array(
             // using also the KHTML rendering engine
+            'Arora',
             'Chromium',
+            'Comodo Dragon',
             'Flock',
             'Galeon',
-            'Lunascape',
+            'Google Earth',
             'Iron',
+            'Lunascape',
             'Maemo',
             'Maxthon',
+            'Midori',
+            'OPR',
             'PaleMoon',
             'RockMelt',
-            'Comodo Dragon',
-            'Google Earth',
-            'Arora',
             'YaBrowser',
-            'OPR',
             // Bots trying to be a Chrome
             'PagePeeker',
             // Fakes

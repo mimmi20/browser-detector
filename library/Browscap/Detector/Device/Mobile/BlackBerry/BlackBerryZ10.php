@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Asus;
+namespace Browscap\Detector\Device\Mobile\BlackBerry;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class AsusEepPadTransformerTf201
+final class BlackBerryZ10
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,18 +80,18 @@ final class AsusEepPadTransformerTf201
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'asus_eee_pad_tf201_ver1', // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Eee Pad TF201',
+            'model_name'                => 'Z10',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Asus(),
-            'brand_name' => new Company\Asus(),
+            'manufacturer_name' => new Company\Rim(),
+            'brand_name' => new Company\Rim(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Transformer Prime',
+            'marketing_name'            => 'Z10',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -106,16 +106,16 @@ final class AsusEepPadTransformerTf201
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 257,
-            'physical_screen_height' => 411,
-            'columns'                => 60,
-            'rows'                   => 40,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 1280,
-            'resolution_height'      => 800,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 768,
+            'resolution_height'      => 1280,
             'dual_orientation'       => true,
-            'colors'                 => 65536,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
@@ -132,7 +132,7 @@ final class AsusEepPadTransformerTf201
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Transformer TF201', 'Transformer Prime TF201'))) {
+        if (!$this->utils->checkIfContains('BB10')) {
             return false;
         }
         
@@ -170,9 +170,8 @@ final class AsusEepPadTransformerTf201
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \Browscap\Detector\Browser\Mobile\Blackberry(),
+            //new \Browscap\Detector\Os\FreeBsd()
         );
         
         $chain = new \Browscap\Detector\Chain();
@@ -191,73 +190,16 @@ final class AsusEepPadTransformerTf201
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
-        $handler->setUseragent($this->_useragent);
-        
-        return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
+        $os = array(
+            new \Browscap\Detector\Os\RimOs(),
+            //new \Browscap\Detector\Os\FreeBsd()
         );
         
-        switch ($browser->getCapability('mobile_browser')) {
-            case 'Android Webkit':
-                switch ((float) $osVersion) {
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'asus_eee_pad_tf101_ver1_suban40');
-                        break;
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'asus_eee_pad_tf201_ver1_suban41');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-                
-                switch ((float) $osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $chain = new \Browscap\Detector\Chain();
+        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setUseragent($this->_useragent);
+        $chain->setHandlers($os);
         
-        return $this;
+        return $chain->detect();
     }
 }

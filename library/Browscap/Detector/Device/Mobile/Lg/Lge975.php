@@ -192,7 +192,7 @@ final class Lge975
     {
         $os = array(
             new \Browscap\Detector\Os\WindowsPhoneOs(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \Browscap\Detector\Os\Android(),
         );
         
         $chain = new \Browscap\Detector\Chain();

@@ -284,45 +284,4 @@ class Webkit extends EngineHandler
     {
         return 2455;
     }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
-    {   
-        parent::detectDependProperties($os, $device, $browser);
-        /*
-        if ($device->getCapability('device_type')->isMobile()) {
-            $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-            $this->setCapability('html_wi_imode_compact_generic', true);
-            $this->setCapability('chtml_table_support', false);
-            $this->setCapability('xhtml_select_as_radiobutton', false);
-            $this->setCapability('xhtml_avoid_accesskeys', false);
-            $this->setCapability('xhtml_select_as_dropdown', false);
-            $this->setCapability('xhtml_supports_forms_in_table', false);
-            $this->setCapability('xhtml_select_as_popup', false);
-            $this->setCapability('xhtml_file_upload', 'not_supported');
-            $this->setCapability('xhtml_supports_css_cell_table_coloring', true);
-            $this->setCapability('xhtml_table_support', true);
-            $this->setCapability('xhtml_readable_background_color1', '#D9EFFF');
-            $this->setCapability('xhtml_supports_table_for_layout', true);
-            $this->setCapability('max_url_length_in_requests', 512);
-            $this->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-            $this->setCapability('canvas_support', 'full');
-            $this->setCapability('viewport_supported', true);
-            $this->setCapability('viewport_width', 'device_width_token');
-            $this->setCapability('viewport_userscalable', 'no');
-            $this->setCapability('supports_java_applets', false);
-            $this->setCapability('xhtml_make_phone_call_string', 'tel:');
-        } else {
-            $this->setCapability('wml_make_phone_call_string', 'none');
-            $this->setCapability('xhtml_make_phone_call_string', 'none');
-        }
-        /**/
-        return $this;
-    }
 }

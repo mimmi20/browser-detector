@@ -173,8 +173,8 @@ final class Uasparser extends Core
         $browserMaker   = $mapper->mapBrowserMaker($parserResult['ua_company'], $browserName);
         
         $result->setCapability('browser_type', $browserType->getName());
-        $result->setCapability('is_bot', $browserType->isBot());
-        $result->setCapability('is_transcoder', $browserType->isTranscoder());
+        // $result->setCapability('is_bot', $browserType->isBot());
+        // $result->setCapability('is_transcoder', $browserType->isTranscoder());
         $result->setCapability('is_syndication_reader', $browserType->isSyndicationReader());
         $result->setCapability('is_banned', $browserType->isBanned());
         $result->setCapability('mobile_browser', $browserName);

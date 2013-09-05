@@ -117,6 +117,10 @@ class PlaystationBrowser
      */
     public function canHandle()
     {
-        return $this->utils->checkIfContains('playstation 3', true);
+        if ($this->utils->checkIfContains(array('playstation 3'), true)) {
+            return true;
+        }
+        
+        return false;
     }
 }

@@ -118,7 +118,7 @@ class Curl
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('<'))) {
+        if ($this->utils->checkIfContains(array('<', 'Curl/PHP'))) {
             return false;
         }
         

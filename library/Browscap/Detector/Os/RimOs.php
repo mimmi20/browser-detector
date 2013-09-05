@@ -95,7 +95,7 @@ class RimOs
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BlackBerry')) {
+        if (!$this->utils->checkIfContains(array('BlackBerry', 'BB10'))) {
             return false;
         }
         

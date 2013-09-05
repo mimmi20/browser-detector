@@ -248,13 +248,27 @@ class Trident extends EngineHandler
     public function canHandle()
     {
         $noTridentEngines = array(
-            'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
+            'KHTML', 'AppleWebKit', 'WebKit', 'Presto', 'RGAnalytics',
             'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Mac_PowerPC',
             'Opera'
         );
         
         if ($this->utils->checkIfContains($noTridentEngines)) {
             return false;
+        }
+        
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
+        
+        if ($doMatch) {
+            if ($matches[1] < 7 && $this->utils->checkIfContains('Gecko')) {
+                return false;
+            }
+            
+            if ($matches[1] == 7 && !$this->utils->checkIfContains('Gecko')) {
+                return false;
+            }
+            
+            return true;
         }
         
         if ($this->utils->checkIfContains('Mozilla/') 
@@ -292,6 +306,9 @@ class Trident extends EngineHandler
             $version = '';
             
             switch ((float) $matches[1]) {
+                case 11.0:
+                    $version = '7.0';
+                    break;
                 case 10.0:
                     $version = '6.0';
                     break;

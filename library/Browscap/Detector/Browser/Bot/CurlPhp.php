@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class PearHttpRequest
+class CurlPhp
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -84,10 +84,10 @@ class PearHttpRequest
             'browser_type' => new BrowserType\Library(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'PEAR HTTP_Request',
+            'mobile_browser'              => 'cURL PHP',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\PhpGroup(), // not in wurfl
+            'mobile_browser_manufacturer' => new Company\TeamHaxx(), // not in wurfl
             'mobile_browser_modus'        => null, // not in wurfl
             
             // product info
@@ -114,11 +114,11 @@ class PearHttpRequest
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTTP_Request')) {
+        if (!$this->utils->checkIfContains(array('Curl/PHP'))) {
             return false;
         }
         
-        if ($this->utils->checkIfContains('HTTP_Request2')) {
+        if ($this->utils->checkIfContains(array('<'))) {
             return false;
         }
         
@@ -135,7 +135,7 @@ class PearHttpRequest
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('HTTP_Request');
+        $searches = array('Curl\/PHP');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -151,7 +151,7 @@ class PearHttpRequest
      */
     public function getWeight()
     {
-        return 9;
+        return 6;
     }
     
     /**

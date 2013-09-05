@@ -203,6 +203,20 @@ final class PlayStation3
     }
     
     /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\Browscap\Os\Handler
+     */
+    public function detectOs()
+    {
+        $handler = new \Browscap\Detector\Os\Java();
+        $handler->setUseragent($this->_useragent);
+        
+        return $handler->detect();
+    }
+    
+    /**
      * detects the device name from the given user agent
      *
      * @return DeviceHandler

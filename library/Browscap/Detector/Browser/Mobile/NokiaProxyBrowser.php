@@ -144,7 +144,7 @@ class NokiaProxyBrowser
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler = new \Browscap\Detector\Engine\Gecko();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

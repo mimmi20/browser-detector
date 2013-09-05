@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Bot;
+namespace Browscap\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class PearHttpRequest
+class Omniweb
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -81,17 +81,17 @@ class PearHttpRequest
         
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Library(), // not in wurfl
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'PEAR HTTP_Request',
+            'mobile_browser'              => 'Omniweb',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\PhpGroup(), // not in wurfl
+            'mobile_browser_manufacturer' => new Company\OmniDevelopment(), // not in wurfl
             'mobile_browser_modus'        => null, // not in wurfl
             
             // product info
-            'can_skip_aligned_link_row' => false,
+            'can_skip_aligned_link_row' => true,
             'device_claims_web_support' => false,
             
             // pdf
@@ -114,11 +114,7 @@ class PearHttpRequest
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTTP_Request')) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains('HTTP_Request2')) {
+        if (!$this->utils->checkIfContains(array('Omniweb/', 'OmniWeb'))) {
             return false;
         }
         
@@ -135,7 +131,7 @@ class PearHttpRequest
         $detector = new \Browscap\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('HTTP_Request');
+        $searches = array('Version', 'Omniweb', 'OmniWeb');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -151,18 +147,18 @@ class PearHttpRequest
      */
     public function getWeight()
     {
-        return 9;
+        return 5;
     }
     
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\Browscap\Os\Handler
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Unknown();
+        $handler = new \Browscap\Detector\Engine\Webkit();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

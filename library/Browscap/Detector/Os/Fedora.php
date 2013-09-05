@@ -84,7 +84,7 @@ class Fedora
             'device_os'              => 'Fedora Linux',
             'device_os_version'      => '',
             'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
+            'device_os_manufacturer' => new Company\Redhat(), // not in wurfl
         );
     }
     

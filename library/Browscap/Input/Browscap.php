@@ -215,7 +215,7 @@ class Browscap extends Core
         $result->setCapability('device_os_manufacturer', $platformMaker);
         $result->setCapability('device_os_icon', $platformIcon);
         
-        $deviceName = $this->detectProperty($browser, 'Device_Name');
+        $deviceName = $this->detectProperty($browser, 'Device_Code_Name');
         $deviceType = $this->detectProperty($browser, 'Device_Type');
         
         $result->setCapability('device_type', $deviceType);
@@ -227,7 +227,7 @@ class Browscap extends Core
         );
         
         $deviceMarketingName = $this->detectProperty(
-            $browser, 'Device_Marketing_Name', true, $deviceName
+            $browser, 'Device_Name', true, $deviceName
         );
         
         $deviceBrandName = $this->detectProperty(
@@ -690,21 +690,21 @@ class Browscap extends Core
             } else {
                 switch ($platform) {
                     case 'RIM OS':
-                        $properties['Device_Maker'] = 'RIM';
+                        $properties['Device_Maker'] = 'Research In Motion Limited';
                         $properties['isMobileDevice'] = true;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = true;
                         $properties['Device_isTablet'] = false;
                         $properties['Device_isDesktop'] = false;
                         $properties['Device_isTv'] = false;
-                        $properties['Platform_Maker'] = 'RIM';
+                        $properties['Platform_Maker'] = 'Research In Motion Limited';
                         $properties['Device_Type'] = 'Mobile Phone';
                         $properties['Platform_Description'] = '';
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'Windows':
                     case 'Win32':
-                        $properties['Device_Name'] = 'Windows Desktop';
+                        $properties['Device_Code_Name'] = 'Windows Desktop';
                         $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -720,7 +720,7 @@ class Browscap extends Core
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'CygWin':
-                        $properties['Device_Name'] = 'Windows Desktop';
+                        $properties['Device_Code_Name'] = 'Windows Desktop';
                         $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -787,7 +787,7 @@ class Browscap extends Core
                             && !empty($properties['Device_isTv']) 
                             && $properties['Device_isTv'] === false
                         ) {
-                            $properties['Device_Name'] = 'Linux Desktop';
+                            $properties['Device_Code_Name'] = 'Linux Desktop';
                             $properties['Device_Maker'] = 'unknown';
                             $properties['isMobileDevice'] = false;
                             $properties['isTablet'] = false;
@@ -799,7 +799,7 @@ class Browscap extends Core
                         } elseif (!empty($properties['Device_isTv']) 
                             && $properties['Device_isTv'] === true
                         ) {
-                            $properties['Device_Name'] = 'general TV Device';
+                            $properties['Device_Code_Name'] = 'general TV Device';
                             $properties['Device_Maker'] = 'unknown';
                             $properties['isMobileDevice'] = false;
                             $properties['isTablet'] = false;
@@ -820,7 +820,7 @@ class Browscap extends Core
                         }
                         break;
                     case 'CentOS':
-                        $properties['Device_Name'] = 'Linux Desktop';
+                        $properties['Device_Code_Name'] = 'Linux Desktop';
                         $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -836,7 +836,7 @@ class Browscap extends Core
                     case 'MacOSX':
                     case 'Mac OS X':
                     case 'Mac68K':
-                        $properties['Device_Name'] = 'Macintosh';
+                        $properties['Device_Code_Name'] = 'Macintosh';
                         $properties['Device_Maker'] = 'Apple Inc';
                         $properties['Device_Brand_Name'] = 'Apple';
                         $properties['isMobileDevice'] = false;
@@ -863,8 +863,8 @@ class Browscap extends Core
                         $properties['Platform_Description'] = '';
                         $properties['Platform_Icon']        = '';
                         
-                        if (!empty($properties['Device_Name'])) {
-                            switch ($properties['Device_Name']) {
+                        if (!empty($properties['Device_Code_Name'])) {
+                            switch ($properties['Device_Code_Name']) {
                                 case 'iPad':
                                     $properties['isMobileDevice'] = true;
                                     $properties['Device_isMobileDevice'] = true;
@@ -887,7 +887,7 @@ class Browscap extends Core
                                     $properties['Device_Type'] = 'Mobile Phone';
                                     break;
                                 default:
-                                    $properties['Device_Name'] = 'Macintosh';
+                                    $properties['Device_Code_Name'] = 'Macintosh';
                                     $properties['Device_isDesktop'] = true;
                                     $properties['Device_Type'] = 'Desktop';
                                     break;
@@ -905,8 +905,8 @@ class Browscap extends Core
                         $properties['Platform_Description'] = '';
                         $properties['Platform_Icon']        = '';
                         
-                        if (!empty($properties['Device_Name'])) {
-                            switch ($properties['Device_Name']) {
+                        if (!empty($properties['Device_Code_Name'])) {
+                            switch ($properties['Device_Code_Name']) {
                                 case 'iPad':
                                     $properties['isTablet'] = true;
                                     $properties['Device_isTablet'] = true;
@@ -929,7 +929,7 @@ class Browscap extends Core
                         }
                         break;
                     case 'BeOS':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -943,7 +943,7 @@ class Browscap extends Core
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'AIX':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'IBM';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -958,7 +958,7 @@ class Browscap extends Core
                         break;
                     case 'Digital Unix':
                     case 'Tru64 UNIX':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'HP';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -977,7 +977,7 @@ class Browscap extends Core
                     case 'HPUX':
                     case 'HP-UX':
                     case 'OpenVMS':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'HP';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -992,7 +992,7 @@ class Browscap extends Core
                         break;
                     case 'IRIX':
                     case 'IRIX64':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['Device_Maker'] = 'SGI';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -1007,8 +1007,9 @@ class Browscap extends Core
                         break;
                     case 'Solaris':
                     case 'SunOS':
-                        $properties['Device_Name'] = 'general Desktop';
-                        $properties['Device_Maker'] = 'Oracle';
+                        $properties['Device_Code_Name'] = 'general Desktop';
+                        // $properties['Device_Maker'] = 'Oracle';
+                        $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1021,7 +1022,7 @@ class Browscap extends Core
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'OS/2':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1038,7 +1039,7 @@ class Browscap extends Core
                         $properties['Platform_Description'] = '';
                         $properties['Platform_Icon']        = '';
                         
-                        if (!empty($properties['Device_Name']) && $properties['Device_Name'] !== 'NBPC724') {
+                        if (!empty($properties['Device_Code_Name']) && $properties['Device_Code_Name'] !== 'NBPC724') {
                             $properties['isMobileDevice'] = true;
                             $properties['Device_isMobileDevice'] = true;
                             $properties['Device_isDesktop'] = false;
@@ -1049,7 +1050,7 @@ class Browscap extends Core
                             } else {
                                 $properties['Device_Type'] = 'Mobile Phone';
                             }
-                        } elseif (!empty($properties['Device_Name']) && $properties['Device_Name'] === 'NBPC724') {
+                        } elseif (!empty($properties['Device_Code_Name']) && $properties['Device_Code_Name'] === 'NBPC724') {
                             $properties['isMobileDevice'] = false;
                             $properties['Device_isMobileDevice'] = false;
                             $properties['Device_isDesktop'] = true;
@@ -1059,7 +1060,7 @@ class Browscap extends Core
                         }
                         break;
                     case 'FreeBSD':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1075,7 +1076,7 @@ class Browscap extends Core
                     case 'OpenBSD':
                     case 'RISC OS':
                     case 'Unix':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1088,7 +1089,7 @@ class Browscap extends Core
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'WebTV':
-                        $properties['Device_Name'] = 'General TV Device';
+                        $properties['Device_Code_Name'] = 'General TV Device';
                         $properties['Device_Maker'] = 'unknown';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
@@ -1102,7 +1103,7 @@ class Browscap extends Core
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'ChromeOS':
-                        $properties['Device_Name'] = 'general Desktop';
+                        $properties['Device_Code_Name'] = 'general Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
@@ -1115,14 +1116,14 @@ class Browscap extends Core
                         $properties['Platform_Icon']        = '';
                         break;
                     case 'Ubuntu':
-                        $properties['Device_Name'] = 'Linux Desktop';
+                        $properties['Device_Code_Name'] = 'Linux Desktop';
                         $properties['isMobileDevice'] = false;
                         $properties['isTablet'] = false;
                         $properties['Device_isMobileDevice'] = false;
                         $properties['Device_isTablet'] = false;
                         $properties['Device_isDesktop'] = true;
                         $properties['Device_isTv'] = false;
-                        $properties['Platform_Maker'] = 'Canonical';
+                        $properties['Platform_Maker'] = 'Canonical Ltd';
                         $properties['Platform_Bits'] = 0;
                         $properties['Device_Type'] = 'Desktop';
                         $properties['Platform_Description'] = '';
@@ -1135,13 +1136,11 @@ class Browscap extends Core
                 }
             }
             
-            if (empty($properties['Device_Name'])) {
-                $properties['Device_Marketing_Name'] = '';
-            } elseif (empty($properties['Device_Marketing_Name'])
-                || false !== strpos($properties['Device_Marketing_Name'], 'unknown')
-                || false !== strpos($properties['Device_Marketing_Name'], 'general')
+            if (empty($properties['Device_Name'])
+                || false !== strpos($properties['Device_Name'], 'unknown')
+                || false !== strpos($properties['Device_Name'], 'general')
             ) {
-                $properties['Device_Marketing_Name'] = $properties['Device_Name'];
+                $properties['Device_Name'] = $properties['Device_Code_Name'];
             }
             
             if (empty($properties['Device_Maker'])) {
@@ -1478,11 +1477,11 @@ class Browscap extends Core
                     $brandName = '';
                 }
                 
-                if (!empty($properties['Device_Name'])
-                    && false !== strpos($properties['Device_Name'], 'unknown')
-                    && false !== strpos($properties['Device_Name'], 'general')
+                if (!empty($properties['Device_Code_Name'])
+                    && false !== strpos($properties['Device_Code_Name'], 'unknown')
+                    && false !== strpos($properties['Device_Code_Name'], 'general')
                 ) {
-                    $marketingName = strtolower($properties['Device_Name']);
+                    $marketingName = strtolower($properties['Device_Code_Name']);
                 } else {
                     $marketingName = '';
                 }

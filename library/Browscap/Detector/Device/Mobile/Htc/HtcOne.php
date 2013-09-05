@@ -86,7 +86,7 @@ final class HtcOne
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'One',
+            'model_name'                => 'M7',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),

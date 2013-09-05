@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Company;
+namespace Browscap\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3
@@ -41,6 +41,8 @@ namespace Browscap\Detector\Company;
  * @version   SVN: $Id$
  */
 
+use \Browscap\Detector\Browser\General\FlyFlow as DefaultFlyFlow;
+
 /**
  * @category  Browscap
  * @package   Browscap
@@ -48,19 +50,7 @@ namespace Browscap\Detector\Company;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Redhat extends AbstractCompany implements CompanyInterface
+class FlyFlow extends DefaultFlyFlow
 {
-    /**
-     * the name of the company
-     *
-     * @var string
-     */
-    protected $name = 'Red Hat Inc';
-    
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    protected $brandname = 'Redhat';
+    // nothing to do
 }

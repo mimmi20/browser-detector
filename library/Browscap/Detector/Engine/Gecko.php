@@ -249,7 +249,7 @@ class Gecko extends EngineHandler
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'Presto'))) {
+        if ($this->utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'Presto', 'Trident'))) {
             return false;
         }
         

@@ -91,7 +91,7 @@ final class SamsungGti8150
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'GT-I8150',
+            'marketing_name'            => 'Galaxy W',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl

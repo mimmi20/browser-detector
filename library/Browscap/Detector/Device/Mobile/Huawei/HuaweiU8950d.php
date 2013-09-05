@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Asus;
+namespace Browscap\Detector\Device\Mobile\Huawei;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \Browscap\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class AsusEepPadTransformerTf201
+final class HuaweiU8950d
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,25 +80,25 @@ final class AsusEepPadTransformerTf201
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'asus_eee_pad_tf201_ver1', // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Eee Pad TF201',
+            'model_name'                => 'U8950D',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Asus(),
-            'brand_name' => new Company\Asus(),
+            'manufacturer_name' => new Company\Huawei(),
+            'brand_name' => new Company\Huawei(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Transformer Prime',
+            'marketing_name'            => 'Ascend G600',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -106,14 +106,14 @@ final class AsusEepPadTransformerTf201
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 257,
-            'physical_screen_height' => 411,
+            'physical_screen_width'  => 49,
+            'physical_screen_height' => 81,
             'columns'                => 60,
             'rows'                   => 40,
             'max_image_width'        => 320,
             'max_image_height'       => 400,
-            'resolution_width'       => 1280,
-            'resolution_height'      => 800,
+            'resolution_width'       => 540,
+            'resolution_height'      => 960,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
@@ -132,7 +132,7 @@ final class AsusEepPadTransformerTf201
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Transformer TF201', 'Transformer Prime TF201'))) {
+        if (!$this->utils->checkIfContains(array('HuaweiU8950D', 'U8950D'))) {
             return false;
         }
         
@@ -195,69 +195,5 @@ final class AsusEepPadTransformerTf201
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
-            Version::MAJORMINOR
-        );
-        
-        switch ($browser->getCapability('mobile_browser')) {
-            case 'Android Webkit':
-                switch ((float) $osVersion) {
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'asus_eee_pad_tf101_ver1_suban40');
-                        break;
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'asus_eee_pad_tf201_ver1_suban41');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-                
-                switch ((float) $osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-        
-        return $this;
     }
 }

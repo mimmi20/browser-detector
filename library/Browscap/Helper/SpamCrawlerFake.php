@@ -205,7 +205,8 @@ final class SpamCrawlerFake
             $noBot = array(
                 'google earth', 'google desktop', 'googletoolbar', 'googlet5',
                 'simbar', 'google web preview', 'googletv', 'google_impact',
-                'google page speed', 'google-tr', '=google', 'enusbingip'
+                'google page speed', 'google-tr', '=google', 'enusbingip',
+                'fbmapping'
             );
             
             if ($this->utils->checkIfContains($noBot, true)) {
@@ -225,9 +226,7 @@ final class SpamCrawlerFake
             return true;
         }
         
-        if ($this->utils->checkIfContains('http', true)
-            && $this->utils->checkIfContains('request', true)
-        ) {
+        if ($this->utils->checkIfContainsAll(array('http', 'request'), true)) {
             return true;
         }
         
@@ -347,9 +346,11 @@ final class SpamCrawlerFake
             '6.2', '6.3'
         );
         
-        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
+            || preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches);
         if ($doMatch) {
-            if (!$this->utils->checkIfContains('linux', true) 
+            if ((!$this->utils->checkIfContains('linux', true)
+                || $this->utils->checkIfContains('edition linux mint', true))
                 && in_array($matches[1], $ntVersions)
             ) {
                 return false;

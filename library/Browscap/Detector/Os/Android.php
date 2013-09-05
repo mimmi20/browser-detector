@@ -109,7 +109,8 @@ class Android
             'BlackBerry; U; ',
             'webOS',
             'hpwOS',
-            'like Android'
+            'like Android',
+            'BB10'
         );
         
         if ($this->utils->checkIfContains($noAndroid)) {
@@ -157,8 +158,9 @@ class Android
         }
         
         $searches = array(
-            'Android', 'Android WildPuzzleROM v8 froyo', 
-            'Android AndroidHouse Team', 'JUC\(Linux;U;', 'Android OS'
+            'Android android', 'Android AndroidHouse Team',
+            'Android WildPuzzleROM v8 froyo', 'Android', 'JUC\(Linux;U;',
+            'Android OS'
         );
         
         $this->setCapability(
@@ -200,7 +202,7 @@ class Android
             new \Browscap\Detector\Browser\Mobile\Firefox(),
             new \Browscap\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
             new \Browscap\Detector\Browser\Mobile\AndroidDownloadManager(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb()
+            new \Browscap\Detector\Browser\Mobile\Ucweb(),
         );
         
         $chain = new \Browscap\Detector\Chain();

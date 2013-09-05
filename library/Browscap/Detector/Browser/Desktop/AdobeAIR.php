@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Company;
+namespace Browscap\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -34,12 +34,15 @@ namespace Browscap\Detector\Company;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
+ *
  * @category  Browscap
  * @package   Browscap
  * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
+
+use \Browscap\Detector\Browser\General\AdobeAIR as AdobeAirBase;
 
 /**
  * @category  Browscap
@@ -48,19 +51,7 @@ namespace Browscap\Detector\Company;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Redhat extends AbstractCompany implements CompanyInterface
+class AdobeAIR extends AdobeAirBase
 {
-    /**
-     * the name of the company
-     *
-     * @var string
-     */
-    protected $name = 'Red Hat Inc';
-    
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    protected $brandname = 'Redhat';
+    // nothing to do here
 }

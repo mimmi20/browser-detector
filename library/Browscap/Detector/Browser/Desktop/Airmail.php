@@ -81,13 +81,13 @@ class Airmail
         
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            'browser_type' => new BrowserType\EmailClient(), // not in wurfl
             
             // browser
             'mobile_browser'              => 'Airmail',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Bloop(), // not in wurfl
             'mobile_browser_modus'        => null, // not in wurfl
             
             // product info

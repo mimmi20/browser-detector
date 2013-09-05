@@ -146,6 +146,8 @@ class Darwin
             new \Browscap\Detector\Browser\Mobile\Sleipnir(),
             new \Browscap\Detector\Browser\Mobile\DarwinBrowser(),
             new \Browscap\Detector\Browser\Mobile\Terra(),
+            new \Browscap\Detector\Browser\Mobile\Puffin(),
+            new \Browscap\Detector\Browser\Mobile\Omniweb(),
         );
         
         $chain = new \Browscap\Detector\Chain();

@@ -132,7 +132,7 @@ final class LgF100L
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-LGF100L')) {
+        if (!$this->utils->checkIfContains('LG-F100L')) {
             return false;
         }
         

@@ -289,8 +289,14 @@ final class InputMapper
             case 'gentoo foundation, inc.':
                 $maker = 'Gentoo Foundation Inc';
                 break;
-            case 'Omni Development, Inc.':
+            case 'omni development, inc.':
                 $maker = 'Omni Development Inc';
+                break;
+            case 'slackware linux, inc.':
+                $maker = 'Slackware Linux Inc';
+                break;
+            case 'red hat, inc.':
+                $maker = 'Red Hat Inc';
                 break;
             default:
                 // nothing to do here
@@ -499,6 +505,7 @@ final class InputMapper
             case 'android 4.0':
             case 'android 4.1':
             case 'android 4.2':
+            case 'android 4.3':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':
@@ -515,6 +522,7 @@ final class InputMapper
             case 'opera mini for s60':
             case 'windows mobile (opera)':
             case 'mobi for android':
+            case 'nokia unrecognized ovi browser':
                 $deviceName = 'general Mobile Device';
                 break;
             case 'spider':
@@ -734,6 +742,7 @@ final class InputMapper
                 break;
             // Nokia
             case 'nokia asha 201':
+            case 'nokia unrecognized ovi browser':
                 $deviceMaker = 'Nokia';
                 break;
             // Medion
@@ -810,6 +819,7 @@ final class InputMapper
             case 'android 4.0':
             case 'android 4.1':
             case 'android 4.2':
+            case 'android 4.3':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':
@@ -909,6 +919,7 @@ final class InputMapper
             case 'opera for series 60':
             case 'opera mini for s60':
             case 'windows mobile (opera)':
+            case 'nokia unrecognized ovi browser':
                 $brandName = null;
                 break;
             // Medion

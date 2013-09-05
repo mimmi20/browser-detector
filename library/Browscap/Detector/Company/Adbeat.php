@@ -48,19 +48,19 @@ namespace Browscap\Detector\Company;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Redhat extends AbstractCompany implements CompanyInterface
+final class Adbeat extends AbstractCompany implements CompanyInterface
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Red Hat Inc';
+    protected $name = 'adbeat.com';
     
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Redhat';
+    protected $brandname = 'Adbeat';
 }
