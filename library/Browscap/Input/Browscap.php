@@ -98,8 +98,10 @@ class Browscap extends Core
      */
     public function getBrowser()
     {
+        $startTime = microtime(true);
+        echo "\t" . '1.1 --- ' . get_class($this) . '::start --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $globalCache = $this->getGlobalCache();
-        
+        echo "\t" . '1.2 --- ' . get_class($this) . '::cacheLoaded --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $browser = array();
         
         if (isset($globalCache['patterns'])
@@ -119,7 +121,7 @@ class Browscap extends Core
                 }
             }
         }
-        
+        echo "\t" . '1.3 --- ' . get_class($this) . '::matching --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         
@@ -382,7 +384,7 @@ class Browscap extends Core
         }
         
         $result->setCapability('supports_activex_controls', $activexSupport);
-        
+        echo "\t" . '1.4 --- ' . get_class($this) . '::finish --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         return $result;
     }
 
@@ -391,19 +393,22 @@ class Browscap extends Core
      */
     private function getGlobalCache()
     {
+        $startTime = microtime(true);
+        echo "\t\t" . '2.1 --- ' . get_class($this) . '::start --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $cacheGlobalId = $this->cachePrefix . 'agentsGlobal';
-        
+        echo "\t\t" . '2.2 --- ' . get_class($this) . '::makeCacheId --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         // Load the cache at the first request
         if (!($this->cache instanceof \Zend\Cache\Frontend\Core) 
             || !$globalCache = $this->cache->load($cacheGlobalId)
         ) {
             $globalCache = $this->getBrowserFromGlobalCache();
-            
+            echo "\t\t" . '2.3 --- ' . get_class($this) . '::cacheLoadedfromFile --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
             if ($this->cache instanceof \Zend\Cache\Frontend\Core) {
                 $this->cache->save($globalCache, $cacheGlobalId);
             }
+            echo "\t\t" . '2.4 --- ' . get_class($this) . '::cacheSaved --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         }
-        
+        echo "\t\t" . '2.5 --- ' . get_class($this) . '::finish --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         return $globalCache;
     }
     

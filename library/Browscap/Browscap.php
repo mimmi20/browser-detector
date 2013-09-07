@@ -243,6 +243,8 @@ class Browscap
      */
     public function getBrowser($forceDetect = false)
     {
+        $startTime = microtime(true);
+        echo '0.1 --- ' . get_class($this->getInterface()) . '::start --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         if (null === $this->_interface) {
             throw new \UnexpectedValueException(
                 'You have to define the Interface before calling this function'
@@ -254,32 +256,32 @@ class Browscap
                 'You have to set the useragent before calling this function'
             );
         }
-        
+        echo '0.2 --- ' . get_class($this->getInterface()) . '::createHash --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $cacheId = hash('sha512', $this->cachePrefix . $this->agent);
         $result  = null;
-
+        echo '0.3 --- ' . get_class($this->getInterface()) . '::loadingCache --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         
         if (!$forceDetect) {
             $result = $this->cache->load($cacheId);
         }
-        
+        echo '0.4 --- ' . get_class($this->getInterface()) . '::detecting --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         if ($forceDetect || !$result) {
             $result = $this->getInterface()->getBrowser();
-            
+            echo '0.5 --- ' . get_class($this->getInterface()) . '::readyDetecting --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
             if (!($result instanceof Detector\Result)) {
                 throw new Input\Exception(
                     'the getBrowser Function has to return an instance of \\Browscap\\Detector\\Result', 
                     Input\Exception::NO_RESULT_CLASS_RETURNED
                 );
             }
-            
+            echo '0.6 --- ' . get_class($this->getInterface()) . '::savingCache --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
             if (!$forceDetect 
                 && $this->cache instanceof \Zend\Cache\Frontend\Core
             ) {
                 $this->cache->save($result, $cacheId);
             }
         }
-        
+        echo '0.7 --- ' . get_class($this->getInterface()) . '::finish --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         return $result;
     }
 }
