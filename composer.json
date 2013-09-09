@@ -1,0 +1,23 @@
+{
+    "name": "mimmi20/BrowserDetector",
+    "description": "Library for PHP 5.3 to detect Browsers and Devices",
+    "type": "library",
+    "license": "LGPL2",
+    "keywords": [
+        "Browser", "user agent"
+    ],
+    "homepage": "",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "suggest": {
+        "monolog/monolog": "dev-master",
+        "zendframework/zend-log": "2.*",
+        "zendframework/zend-cache": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "BrowserDetector\\": "library/"
+        }
+    }
+}
