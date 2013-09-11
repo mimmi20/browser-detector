@@ -1,8 +1,8 @@
 <?php
-namespace Browscap\Helper;
+namespace BrowserDetector\Helper;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -36,32 +36,32 @@ namespace Browscap\Helper;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\Result;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Browser as BrowserType;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\Result;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class InputMapper
+class InputMapper
 {
     /**
      * mapps the browser
@@ -153,7 +153,7 @@ final class InputMapper
      * @param string $browserVersion
      * @param string $browserName
      *
-     * @return \Browscap\Detector\Version
+     * @return \BrowserDetector\Detector\Version
      */
     public function mapBrowserVersion($browserVersion, $browserName = null)
     {
@@ -227,7 +227,7 @@ final class InputMapper
                         $browserType = new BrowserType\Unknown();
                         break;
                     default:
-                        $typeClass = '\\Browscap\\Detector\\Type\\Browser\\'
+                        $typeClass = '\\BrowserDetector\\Detector\\Type\\Browser\\'
                             . $browserType;
                         
                         $browserType = new $typeClass();
@@ -413,7 +413,7 @@ final class InputMapper
      * @param string $osVersion
      * @param string $osName
      *
-     * @return \Browscap\Detector\Version
+     * @return \BrowserDetector\Detector\Version
      */
     public function mapOsVersion($osVersion, $osName = null)
     {

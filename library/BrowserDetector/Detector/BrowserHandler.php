@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
  * PHP version 5.3
@@ -34,29 +34,28 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Browser as BrowserType;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
- * WURFL_Handlers_Handler is the base class that combines the classification of
- * the user agents and the matching process.
+ * base class for all browsers to detect
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -69,7 +68,7 @@ abstract class BrowserHandler
     protected $_useragent = '';
     
     /**
-     * @var \Browscap\Helper\Utils the helper class
+     * @var \BrowserDetector\Helper\Utils the helper class
      */
     protected $utils = null;
 
@@ -180,7 +179,7 @@ abstract class BrowserHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('mobile_browser_version', $detector->setVersion(''));
@@ -195,7 +194,7 @@ abstract class BrowserHandler
      */
     protected function _detectBits()
     {
-        $detector = new \Browscap\Detector\Bits\Browser();
+        $detector = new \BrowserDetector\Detector\Bits\Browser();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('mobile_browser_bits', $detector->getBits());
@@ -229,7 +228,7 @@ abstract class BrowserHandler
      * 
      * @param string $capabilityName must be a valid capability name
      * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName) 
     {
@@ -258,7 +257,7 @@ abstract class BrowserHandler
      * @param string $capabilityName must be a valid capability name
      *
      * @return BrowserHandler
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null) 
     {
@@ -276,7 +275,7 @@ abstract class BrowserHandler
      * @param string $capabilityName must be a valid capability name
      *
      * @return void
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     protected function checkCapability($capabilityName) 
     {
@@ -297,25 +296,25 @@ abstract class BrowserHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectEngine()
     {
         $engines = array(
-            new \Browscap\Detector\Engine\Webkit(),
-            new \Browscap\Detector\Engine\Gecko(),
-            new \Browscap\Detector\Engine\Trident(),
-            new \Browscap\Detector\Engine\Presto(),
-            new \Browscap\Detector\Engine\Tasman(),
-            new \Browscap\Detector\Engine\BlackBerry(),
-            new \Browscap\Detector\Engine\Khtml(),
-            new \Browscap\Detector\Engine\NetFront()
+            new \BrowserDetector\Detector\Engine\Webkit(),
+            new \BrowserDetector\Detector\Engine\Gecko(),
+            new \BrowserDetector\Detector\Engine\Trident(),
+            new \BrowserDetector\Detector\Engine\Presto(),
+            new \BrowserDetector\Detector\Engine\Tasman(),
+            new \BrowserDetector\Detector\Engine\BlackBerry(),
+            new \BrowserDetector\Detector\Engine\Khtml(),
+            new \BrowserDetector\Detector\Engine\NetFront()
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\Unknown());
         
         return $chain->detect();
     }

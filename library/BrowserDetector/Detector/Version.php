@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
  * PHP version 5.3
@@ -34,24 +34,23 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
 /**
- * WURFL_Handlers_Handler is the base class that combines the classification of
- * the user agents and the matching process.
+ * a general version detector
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Version implements \Serializable
+class Version implements \Serializable
 {
     /**
      * @var integer

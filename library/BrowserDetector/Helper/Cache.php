@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Helper;
+namespace BrowserDetector\Helper;
 
 /**
  * PHP version 5.3
@@ -34,15 +34,12 @@ namespace Browscap\Helper;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  * 
- * @package TeraWurfl
- * @author Steve Kamerman <stevekamerman AT gmail.com>
- * @version Stable 2.1.3 $Date: 2010/09/18 15:43:21
- * @license http://www.mozilla.org/MPL/ MPL Vesion 1.1
+ * @package   BrowserDetector
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 /**
- * Provides static supporting functions for Tera-WURFL
- * @package TeraWurfl
- *
+ * a general helper to work with \Zend\Cache
+ * @package   BrowserDetector
  */
 class Cache
 {

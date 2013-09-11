@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Input;
+namespace BrowserDetector\Input;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -36,26 +36,26 @@ namespace Browscap\Input;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Result;
-use \Browscap\Helper\InputMapper;
-use \Browscap\Detector\Bits as BitsDetector;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Result;
+use \BrowserDetector\Helper\InputMapper;
+use \BrowserDetector\Detector\Bits as BitsDetector;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 class Browscap extends Core
@@ -82,26 +82,14 @@ class Browscap extends Core
     private $injectedRules = array();
 
     /**
-     * Constructor class, checks for the existence of (and loads) the cache and
-     * if needed updated the definitions
-     */
-    public function __construct()
-    {
-        // default data file
-        $this->setLocaleFile(__DIR__ . '/../data/modified_full_php_browscap.ini');
-    }
-
-    /**
      * Gets the information about the browser by User Agent
      *
-     * @return \Browscap\Detector\Result the object containing the browsers details.
+     * @return \BrowserDetector\Detector\Result the object containing the browsers details.
      */
     public function getBrowser()
     {
-        $startTime = microtime(true);
-        echo "\t" . '1.1 --- ' . get_class($this) . '::start --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $globalCache = $this->getGlobalCache();
-        echo "\t" . '1.2 --- ' . get_class($this) . '::cacheLoaded --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         $browser = array();
         
         if (isset($globalCache['patterns'])
@@ -121,7 +109,7 @@ class Browscap extends Core
                 }
             }
         }
-        echo "\t" . '1.3 --- ' . get_class($this) . '::matching --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
         
@@ -384,7 +372,7 @@ class Browscap extends Core
         }
         
         $result->setCapability('supports_activex_controls', $activexSupport);
-        echo "\t" . '1.4 --- ' . get_class($this) . '::finish --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         return $result;
     }
 
@@ -393,22 +381,19 @@ class Browscap extends Core
      */
     private function getGlobalCache()
     {
-        $startTime = microtime(true);
-        echo "\t\t" . '2.1 --- ' . get_class($this) . '::start --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         $cacheGlobalId = $this->cachePrefix . 'agentsGlobal';
-        echo "\t\t" . '2.2 --- ' . get_class($this) . '::makeCacheId --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         // Load the cache at the first request
         if (!($this->cache instanceof \Zend\Cache\Frontend\Core) 
             || !$globalCache = $this->cache->load($cacheGlobalId)
         ) {
             $globalCache = $this->getBrowserFromGlobalCache();
-            echo "\t\t" . '2.3 --- ' . get_class($this) . '::cacheLoadedfromFile --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+            
             if ($this->cache instanceof \Zend\Cache\Frontend\Core) {
                 $this->cache->save($globalCache, $cacheGlobalId);
             }
-            echo "\t\t" . '2.4 --- ' . get_class($this) . '::cacheSaved --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         }
-        echo "\t\t" . '2.5 --- ' . get_class($this) . '::finish --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         return $globalCache;
     }
     
@@ -449,7 +434,7 @@ class Browscap extends Core
             $browsers = parse_ini_file($this->localFile, true);
         }
         
-        unset($browsers['GJK_Browscap_Version']);
+        unset($browsers['GJK_BrowserDetector_Version']);
         
         $this->properties = array_keys($browsers['DefaultProperties']);
         array_unshift(
@@ -517,9 +502,6 @@ class Browscap extends Core
             }
             
             if (!isset($properties['Version']) || !isset($properties['Browser'])) {
-                echo 'attribute not found for key "' . $key . '" and rule "' . $this->userAgents[$key] . '"' . "\n";
-                var_dump($properties);
-                echo "\n\n";
                 continue;
             }
             
@@ -1529,14 +1511,14 @@ class Browscap extends Core
 ;;; Created on Tuesday, March 12, 2013 at 3:03 AM UTC
 
 ;;; Keep up with the latest goings-on with the project:
-;;; Follow us on Twitter <https://twitter.com/browscap>, or...
-;;; Like us on Facebook <https://facebook.com/browscap>, or...
-;;; Collaborate on GitHub <https://github.com/GaryKeith/browscap>, or...
-;;; Discuss on Google Groups <https://groups.google.com/d/forum/browscap>.
+;;; Follow us on Twitter <https://twitter.com/BrowserDetector>, or...
+;;; Like us on Facebook <https://facebook.com/BrowserDetector>, or...
+;;; Collaborate on GitHub <https://github.com/GaryKeith/BrowserDetector>, or...
+;;; Discuss on Google Groups <https://groups.google.com/d/forum/BrowserDetector>.
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browscap Version
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; BrowserDetector Version
 
-[GJK_Browscap_Version]
+[GJK_BrowserDetector_Version]
 Version=5020
 Released=$Date$
 

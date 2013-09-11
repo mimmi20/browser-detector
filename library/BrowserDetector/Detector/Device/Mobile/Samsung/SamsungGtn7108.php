@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -34,32 +34,32 @@ namespace Browscap\Detector\Device\Mobile\Samsung;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Device as DeviceType;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class SamsungGtn7108
+class SamsungGtn7108
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -165,20 +165,20 @@ final class SamsungGtn7108
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik()
+            new \BrowserDetector\Detector\Browser\Mobile\Android(),
+            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
+            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }
@@ -187,11 +187,11 @@ final class SamsungGtn7108
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\Android();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

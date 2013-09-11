@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 /**
  * PHP version 5.3
@@ -34,32 +34,32 @@ namespace Browscap\Detector\Device\Mobile\Nokia;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Device as DeviceType;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Nokia2730c
+class Nokia2730c
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -165,20 +165,20 @@ final class Nokia2730c
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini()
+            new \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser(),
+            new \BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMini()
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }
@@ -187,11 +187,11 @@ final class Nokia2730c
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectOs()
     {
-        $handler = new \Browscap\Detector\Os\Symbianos();
+        $handler = new \BrowserDetector\Detector\Os\Symbianos();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

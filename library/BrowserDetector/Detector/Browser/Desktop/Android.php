@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Desktop;
+namespace BrowserDetector\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -35,19 +35,19 @@ namespace Browscap\Detector\Browser\Desktop;
  * POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\Browser\General\Android as AndroidBase;
+use \BrowserDetector\Detector\Browser\General\Android as AndroidBase;
 
 /**
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */

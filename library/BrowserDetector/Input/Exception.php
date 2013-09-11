@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Input;
+namespace BrowserDetector\Input;
 
 /**
  * Copyright (c) 2013, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
@@ -31,15 +31,15 @@ namespace Browscap\Input;
  * POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
 /**
- * Base class for WURFL Exceptions
- * @package	WURFL
+ * Base class for Exceptions of the Detector Inputs
+ * @package   BrowserDetector
  */
 class Exception extends \Exception
 {

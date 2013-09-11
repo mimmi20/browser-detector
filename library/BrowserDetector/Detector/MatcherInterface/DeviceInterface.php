@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\MatcherInterface;
+namespace BrowserDetector\Detector\MatcherInterface;
 
 /**
  * PHP version 5.3
@@ -34,24 +34,23 @@ namespace Browscap\Detector\MatcherInterface;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\OsHandler;
 
 /**
- * WURFL_Handlers_Matcher is the base interface that concrete classes 
- * must implement to retrieve a device with the given request    
+ * interface for all devices to detect
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -80,7 +79,7 @@ interface DeviceInterface
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser();
     
@@ -88,7 +87,7 @@ interface DeviceInterface
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectOs();
 }

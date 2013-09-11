@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
  * PHP version 5.3
@@ -34,19 +34,18 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
 /**
- * Manages the creation and instatiation of all User Agent Handlers and Normalizers and provides a factory for creating User Agent Handler Chains
- * @package   Browscap
- * @see WURFL_UserAgentHandlerChain
+ * a general chain used for detecting devices, browsers, platforms and engines
+ * @package   BrowserDetector
  */
-final class Chain
+class Chain
 {
     /** @var array */
     private $_handlersToUse = array();
@@ -151,7 +150,7 @@ final class Chain
         if (!empty($this->_directory)) {
             // get all Handlers from the directory
             $iterator = new \DirectoryIterator($this->_directory);
-            $utils    = new \Browscap\Helper\Classname();
+            $utils    = new \BrowserDetector\Helper\Classname();
             
             foreach ($iterator as $fileinfo) {
                 if (!$fileinfo->isFile() || !$fileinfo->isReadable()) {
@@ -194,7 +193,7 @@ final class Chain
         ) {
             $handler = $this->_defaultHandler;
         } else {
-            $utils     = new \Browscap\Helper\Classname();
+            $utils     = new \BrowserDetector\Helper\Classname();
             $className = $utils->getClassNameFromFile(
                 'Unknown', $this->_namespace, true
             );

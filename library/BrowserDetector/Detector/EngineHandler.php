@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
  * PHP version 5.3
@@ -34,27 +34,26 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\EngineInterface;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\BrowserHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\EngineInterface;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\BrowserHandler;
 
 /**
- * WURFL_Handlers_Handler is the base class that combines the classification of
- * the user agents and the matching process.
+ * base class for all rendering engines to detect
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -668,7 +667,7 @@ abstract class EngineHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability(

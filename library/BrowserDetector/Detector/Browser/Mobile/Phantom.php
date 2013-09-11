@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Mobile;
+namespace BrowserDetector\Detector\Browser\Mobile;
 
 /**
  * PHP version 5.3
@@ -34,31 +34,31 @@ namespace Browscap\Detector\Browser\Mobile;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Browser as BrowserType;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
  * PhantomUserAgentHandler
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -141,7 +141,7 @@ class Phantom
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $searches = array('Phantom', 'Phantom\/V');
@@ -157,11 +157,11 @@ class Phantom
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectEngine()
     {
-        $handler = new \Browscap\Detector\Engine\Webkit();
+        $handler = new \BrowserDetector\Detector\Engine\Webkit();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

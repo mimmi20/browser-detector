@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace BrowserDetector\Detector\Os;
 
 /**
  * PHP version 5.3
@@ -34,28 +34,28 @@ namespace Browscap\Detector\Os;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\Company;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\Company;
 
 /**
  * MSIEAgentHandler
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -124,7 +124,7 @@ class RimOs
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $searches = array('BlackBerry[0-9a-z]+', 'BlackBerrySimulator');
@@ -153,23 +153,23 @@ class RimOs
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Blackberry(),
-            new \Browscap\Detector\Browser\Mobile\BlackberryPlaybookTablet(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb(),
-            new \Browscap\Detector\Browser\Mobile\MqqBrowser(),
-            //new \Browscap\Detector\Os\FreeBsd()
+            new \BrowserDetector\Detector\Browser\Mobile\Blackberry(),
+            new \BrowserDetector\Detector\Browser\Mobile\BlackberryPlaybookTablet(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
+            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
+            new \BrowserDetector\Detector\Browser\Mobile\MqqBrowser(),
+            //new \BrowserDetector\Detector\Os\FreeBsd()
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

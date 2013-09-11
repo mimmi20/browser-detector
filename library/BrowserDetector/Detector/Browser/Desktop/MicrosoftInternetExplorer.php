@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Browser\Desktop;
+namespace BrowserDetector\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
@@ -34,9 +34,9 @@ namespace Browscap\Detector\Browser\Desktop;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -44,12 +44,12 @@ namespace Browscap\Detector\Browser\Desktop;
 /**
  * Handler Base class
  */
-use \Browscap\Detector\Browser\General\MicrosoftInternetExplorer as IeBase;
+use \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer as IeBase;
 
 /**
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */

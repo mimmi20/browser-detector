@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Bits;
+namespace BrowserDetector\Detector\Bits;
 
 /**
  * PHP version 5.3
@@ -34,24 +34,23 @@ namespace Browscap\Detector\Bits;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
 /**
- * WURFL_Handlers_Handler is the base class that combines the classification of
- * the user agents and the matching process.
+ * Class to detect the Bit count for an Platform/Operating System
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Os
+class Os
 {
     /**
      * @var string the user agent to handle
@@ -64,7 +63,7 @@ final class Os
     private $bits = null;
     
     /**
-     * @var \Browscap\Helper\Utils
+     * @var \BrowserDetector\Helper\Utils
      */
     private $utils = null;
     
@@ -73,7 +72,7 @@ final class Os
      */
     public function __construct()
     {
-        $this->utils = new \Browscap\Helper\Utils();
+        $this->utils = new \BrowserDetector\Helper\Utils();
     }
     
     /**

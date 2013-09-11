@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Helper;
+namespace BrowserDetector\Helper;
 
 /**
  * PHP version 5.3
@@ -34,17 +34,17 @@ namespace Browscap\Helper;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 /**
- * WURFL user agent hander utilities
- * @package   Browscap
+ * a helper for detecting safari and some of his derefered browsers
+ * @package   BrowserDetector
  */
-final class Safari
+class Safari
 {
     /**
      * @var string the user agent to handle
@@ -52,7 +52,7 @@ final class Safari
     private $_useragent = '';
     
     /**
-     * @var \Browscap\Helper\Utils the helper class
+     * @var \BrowserDetector\Helper\Utils the helper class
      */
     private $utils = null;
     

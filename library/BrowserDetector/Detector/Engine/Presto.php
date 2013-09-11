@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Engine;
+namespace BrowserDetector\Detector\Engine;
 
 /**
  * PHP version 5.3
@@ -34,26 +34,26 @@ namespace Browscap\Detector\Engine;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\MatcherInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\MatcherInterface;
 
 /**
  * MSIEAgentHandler
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -265,7 +265,7 @@ class Presto extends EngineHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $searches = array('Presto');

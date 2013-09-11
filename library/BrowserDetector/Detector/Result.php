@@ -1,8 +1,8 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -36,35 +36,35 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class Result implements \Serializable
+class Result implements \Serializable
 {
     /**
      * should the device render the content like another?
      *
-     * @var \Browscap\Detector\Result
+     * @var \BrowserDetector\Detector\Result
      */
     private $renderAs = null;
     
     /**
      * the detected browser properties
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $properties = array(
         'wurflKey' => null,     // not in wurfl
@@ -798,7 +798,7 @@ final class Result implements \Serializable
         ) {
             throw new \InvalidArgumentException(
                 'capability "' . $capabilityName . '" requires an instance of '
-                . '\\Browscap\\Detector\\Version as value'
+                . '\\BrowserDetector\\Detector\\Version as value'
             );
         }
         
@@ -834,10 +834,7 @@ final class Result implements \Serializable
             try {
                 $this->setCapability($capabilityName, $capabilityValue);
             } catch (\Exception $e) {
-                echo var_export($capabilities, true) . "\n\n";
-                echo $e->getMessage() . "\n\n" . $e->getTraceAsString();
-                
-                exit;
+                continue;
             }
         }
         
@@ -1371,10 +1368,10 @@ final class Result implements \Serializable
      * @return Result
      */
     public function setDetectionResult(
-        \Browscap\Detector\DeviceHandler $device,
-        \Browscap\Detector\OsHandler $os,
-        \Browscap\Detector\BrowserHandler $browser,
-        \Browscap\Detector\EngineHandler $engine) 
+        \BrowserDetector\Detector\DeviceHandler $device,
+        \BrowserDetector\Detector\OsHandler $os,
+        \BrowserDetector\Detector\BrowserHandler $browser,
+        \BrowserDetector\Detector\EngineHandler $engine) 
     {
         $properties = array_keys($this->getCapabilities());
         
@@ -1793,7 +1790,7 @@ final class Result implements \Serializable
     /**
      * sets a second device for rendering properties
      *
-     * @var \Browscap\Detector\Result $result
+     * @var \BrowserDetector\Detector\Result $result
      *
      * @return DeviceHandler
      */
@@ -1807,7 +1804,7 @@ final class Result implements \Serializable
     /**
      * returns a second device for rendering properties
      *
-     * @return \Browscap\Detector\Result
+     * @return \BrowserDetector\Detector\Result
      */
     public function getRenderAs()
     {

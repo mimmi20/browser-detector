@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Type\Device;
+namespace BrowserDetector\Detector\Type\Device;
 
 /**
  * PHP version 5.3
@@ -34,21 +34,21 @@ namespace Browscap\Detector\Type\Device;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
 /**
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class Tablet extends AbstractType implements TypeInterface
+class Tablet extends AbstractType implements TypeInterface
 {
     /**
      * the name of the company

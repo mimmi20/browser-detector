@@ -1,8 +1,8 @@
 <?php
-namespace Browscap;
+namespace BrowserDetector;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browser Detection class
  *
  * PHP version 5.3
  *
@@ -36,35 +36,35 @@ namespace Browscap;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * Browser Detection class
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class Browscap
+class BrowserDetector
 {
     const INTERFACE_INTERNAL     = 1;
     const INTERFACE_BROWSCAP_INI = 2;
-    const INTERFACE_WURFL        = 3;
+    const INTERFACE_WURFL_FILE   = 3;
     const INTERFACE_WURFL_CLOUD  = 4;
     const INTERFACE_UAPARSER     = 5;
     const INTERFACE_UASPARSER    = 6;
     
     /**
-     * a \\Zend\\Cache object
+     * a \Zend\Cache object
      *
-     * @var \\Zend\\Cache
+     * @var \Zend\Cache
      */
     private $cache = null;
     
@@ -83,30 +83,23 @@ class Browscap
     /**
      * the interface for the detection
      *
-     * @var \\Browscap\\Input\\Core
+     * @var \BrowserDetector\Input\Core
      */
-    private $_interface = null;
+    private $interface = null;
     
     /**
      * the detection result
      *
-     * @var \\Browscap\\Detector\\Result
+     * @var \BrowserDetector\Detector\Result
      */
-    private $_result = null;
-    
-    /**
-     * the config object
-     *
-     * @var mixed
-     */
-    private $_config = null;
+    private $result = null;
     
     /**
      * sets the cache used to make the detection faster
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\Browscap\\Browscap
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -116,11 +109,11 @@ class Browscap
     }
 
     /**
-     * sets the the cache prfix
+     * sets the the cache prefix
      *
      * @param string $prefix the new prefix
      *
-     * @return \\Browscap\\Browscap
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setCachePrefix($prefix)
     {
@@ -134,25 +127,13 @@ class Browscap
         
         return $this;
     }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param \Wurfl\Configuration\Config $config the new config
-     *
-     * @return \\Browscap\\Browscap
-     */
-    public function setConfig(\Wurfl\Configuration\Config $config)
-    {
-        $this->_config = $config;
-        
-        return $this;
-    }
     
     /**
-     * returns the stored user agent
+     * sets the user agent who should be detected
      *
-     * @return UserAgent
+     * @param string 
+     *
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setAgent($userAgent)
     {
@@ -160,20 +141,30 @@ class Browscap
         
         return $this;
     }
+    
+    /**
+     * returns the stored user agent
+     *
+     * @return string
+     */
+    public function getAgent()
+    {
+        return $this->agent;
+    }
 
     /**
      * sets the the detection interface
      *
      * @param integer $interface the new Interface to use
      *
-     * @return \\Browscap\\Browscap
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setInterface($interface)
     {
         $allowedInterfaces = array(
             self::INTERFACE_INTERNAL,
             self::INTERFACE_BROWSCAP_INI,
-            self::INTERFACE_WURFL,
+            self::INTERFACE_WURFL_FILE,
             self::INTERFACE_WURFL_CLOUD,
             self::INTERFACE_UAPARSER,
             self::INTERFACE_UASPARSER
@@ -187,22 +178,22 @@ class Browscap
         
         switch ($interface) {
             case self::INTERFACE_BROWSCAP_INI:
-                $this->_interface = new \Browscap\Input\Browscap();
+                $this->interface = new \BrowserDetector\Input\Browscap();
                 break;
             case self::INTERFACE_INTERNAL:
-                $this->_interface = new \Browscap\Input\UserAgent();
+                $this->interface = new \BrowserDetector\Input\UserAgent();
                 break;
-            case self::INTERFACE_WURFL:
-                $this->_interface = new \Browscap\Input\Wurfl();
+            case self::INTERFACE_WURFL_FILE:
+                $this->interface = new \BrowserDetector\Input\Wurfl();
                 break;
             case self::INTERFACE_WURFL_CLOUD:
-                $this->_interface = new \Browscap\Input\WurflCloud();
+                $this->interface = new \BrowserDetector\Input\WurflCloud();
                 break;
             case self::INTERFACE_UAPARSER:
-                $this->_interface = new \Browscap\Input\Uaparser();
+                $this->interface = new \BrowserDetector\Input\Uaparser();
                 break;
             case self::INTERFACE_UASPARSER:
-                $this->_interface = new \Browscap\Input\Uasparser();
+                $this->interface = new \BrowserDetector\Input\Uasparser();
                 break;
             default:
                 throw new \UnexpectedValueException(
@@ -215,37 +206,35 @@ class Browscap
     }
 
     /**
-     * returns the actual interface
+     * returns the actual interface, the actual cache and the user agent are
+     * pushed to the interface
      *
-     * @return \\Browscap\\Input\\Core
+     * @return \BrowserDetector\Input\Core
      */
     public function getInterface()
     {
-        if (null === $this->_interface) {
-            throw new \UnexpectedValueException(
-                'You have to define the Interface before calling this function'
-            );
+        if (null === $this->interface) {
+            // set the internal interface as default
+            $this->setInterface(self::INTERFACE_INTERNAL);
         }
         
-        $this->_interface->setCache($this->cache)
+        $this->interface->setCache($this->cache)
             ->setCachePrefix($this->cachePrefix)
             ->setAgent($this->agent)
         ;
-        return $this->_interface;
+        return $this->interface;
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string  $userAgent the user agent string
+     * @param boolean $forceDetect if TRUE a possible cache hit is ignored
      *
-     * @return 
+     * @return \BrowserDetector\Detector\Result
      */
     public function getBrowser($forceDetect = false)
     {
-        $startTime = microtime(true);
-        echo '0.1 --- ' . get_class($this->getInterface()) . '::start --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
-        if (null === $this->_interface) {
+        if (null === $this->interface) {
             throw new \UnexpectedValueException(
                 'You have to define the Interface before calling this function'
             );
@@ -256,32 +245,29 @@ class Browscap
                 'You have to set the useragent before calling this function'
             );
         }
-        echo '0.2 --- ' . get_class($this->getInterface()) . '::createHash --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         $cacheId = hash('sha512', $this->cachePrefix . $this->agent);
         $result  = null;
-        echo '0.3 --- ' . get_class($this->getInterface()) . '::loadingCache --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
         
         if (!$forceDetect) {
             $result = $this->cache->load($cacheId);
         }
-        echo '0.4 --- ' . get_class($this->getInterface()) . '::detecting --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
-        if ($forceDetect || !$result) {
+        
+        if ($forceDetect || !($result instanceof Detector\Result)) {
             $result = $this->getInterface()->getBrowser();
-            echo '0.5 --- ' . get_class($this->getInterface()) . '::readyDetecting --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+            
             if (!($result instanceof Detector\Result)) {
                 throw new Input\Exception(
-                    'the getBrowser Function has to return an instance of \\Browscap\\Detector\\Result', 
+                    'the getBrowser Function has to return an instance of \\BrowserDetector\\Detector\\Result', 
                     Input\Exception::NO_RESULT_CLASS_RETURNED
                 );
             }
-            echo '0.6 --- ' . get_class($this->getInterface()) . '::savingCache --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
-            if (!$forceDetect 
-                && $this->cache instanceof \Zend\Cache\Frontend\Core
-            ) {
+            
+            if (!$forceDetect) {
                 $this->cache->save($result, $cacheId);
             }
         }
-        echo '0.7 --- ' . get_class($this->getInterface()) . '::finish --- ' . number_format((microtime(true) - $startTime), 10, ',', '.') . " Sek\n";
+        
         return $result;
     }
 }

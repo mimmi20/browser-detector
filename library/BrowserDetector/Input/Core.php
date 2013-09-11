@@ -1,8 +1,8 @@
 <?php
-namespace Browscap\Input;
+namespace BrowserDetector\Input;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -36,22 +36,22 @@ namespace Browscap\Input;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
 
-use \Browscap\Helper\Support;
+use \BrowserDetector\Helper\Support;
 
 /**
- * Browscap.ini parsing class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 abstract class Core

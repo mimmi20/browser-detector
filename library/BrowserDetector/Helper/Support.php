@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Helper;
+namespace BrowserDetector\Helper;
 
 /**
  * PHP version 5.3
@@ -34,14 +34,14 @@ namespace Browscap\Helper;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  * 
- * @package TeraWurfl
- * @author Steve Kamerman <stevekamerman AT gmail.com>
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @version Stable 2.1.3 $Date: 2010/09/18 15:43:21
- * @license http://www.mozilla.org/MPL/ MPL Vesion 1.1
+ * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 /**
- * Provides static supporting functions for Tera-WURFL
- * @package TeraWurfl
+ * Provides static supporting functions
+ * @package   BrowserDetector
  *
  */
 class Support
@@ -49,7 +49,9 @@ class Support
     private $_source = array();
     
     /**
-     * The HTTP Headers that Tera-WURFL will look through to find the best User Agent, if one is not specified
+     * The HTTP Headers that this application will look through to find the best
+     * User Agent, if one is not specified
+     *
      * @var Array
      */
     private $_userAgentHeaders = array(

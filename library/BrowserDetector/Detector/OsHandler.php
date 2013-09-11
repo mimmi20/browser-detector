@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
  * PHP version 5.3
@@ -34,26 +34,25 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
 
 /**
- * WURFL_Handlers_Handler is the base class that combines the classification of
- * the user agents and the matching process.
+ * base class for all rendering platforms/operating systems to detect
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -66,7 +65,7 @@ abstract class OsHandler
     protected $_useragent = '';
     
     /**
-     * @var \Browscap\Helper\Utils the helper class
+     * @var \BrowserDetector\Helper\Utils the helper class
      */
     protected $utils = null;
     
@@ -153,7 +152,7 @@ abstract class OsHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('device_os_version', $detector->setVersion(''));
@@ -168,7 +167,7 @@ abstract class OsHandler
      */
     protected function _detectBits()
     {
-        $detector = new \Browscap\Detector\Bits\Os();
+        $detector = new \BrowserDetector\Detector\Bits\Os();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('device_os_bits', $detector->getBits());
@@ -245,8 +244,7 @@ abstract class OsHandler
      * 
      * @param string $capabilityName must be a valid capability name
      * @return string Capability value
-     * @throws InvalidArgumentException The $capabilityName is is not defined in the loaded WURFL.
-     * @see WURFL_Xml_ModelDevice::getCapability()
+     * @throws \InvalidArgumentException
      */
     protected function checkCapability($capabilityName) 
     {
@@ -289,7 +287,7 @@ abstract class OsHandler
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {

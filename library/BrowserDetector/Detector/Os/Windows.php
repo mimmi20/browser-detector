@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace BrowserDetector\Detector\Os;
 
 /**
  * PHP version 5.3
@@ -34,30 +34,30 @@ namespace Browscap\Detector\Os;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Helper\Windows as WindowsHelper;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Helper\Windows as WindowsHelper;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
 
 /**
  * MSIEAgentHandler
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -135,7 +135,7 @@ class Windows
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
         

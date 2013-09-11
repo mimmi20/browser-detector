@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Device\Desktop;
+namespace BrowserDetector\Detector\Device\Desktop;
 
 /**
  * PHP version 5.3
@@ -34,32 +34,32 @@ namespace Browscap\Detector\Device\Desktop;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Type\Device as DeviceType;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-final class EeePc
+class EeePc
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -164,31 +164,31 @@ final class EeePc
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectOs()
     {
         $os = array(
-            new \Browscap\Detector\Os\Linux(),
-            new \Browscap\Detector\Os\Debian(),
-            new \Browscap\Detector\Os\Fedora(),
-            new \Browscap\Detector\Os\JoliOs(),
-            new \Browscap\Detector\Os\Kubuntu(),
-            new \Browscap\Detector\Os\Mint(),
-            new \Browscap\Detector\Os\Redhat(),
-            new \Browscap\Detector\Os\Slackware(),
-            new \Browscap\Detector\Os\Suse(),
-            new \Browscap\Detector\Os\Ubuntu(),
-            new \Browscap\Detector\Os\ZenwalkGnu(),
-            new \Browscap\Detector\Os\CentOs(),
-            new \Browscap\Detector\Os\LinuxTv(),
-            new \Browscap\Detector\Os\CrOs(),
-            new \Browscap\Detector\Os\Ventana(),
-            new \Browscap\Detector\Os\Mandriva()
+            new \BrowserDetector\Detector\Os\Linux(),
+            new \BrowserDetector\Detector\Os\Debian(),
+            new \BrowserDetector\Detector\Os\Fedora(),
+            new \BrowserDetector\Detector\Os\JoliOs(),
+            new \BrowserDetector\Detector\Os\Kubuntu(),
+            new \BrowserDetector\Detector\Os\Mint(),
+            new \BrowserDetector\Detector\Os\Redhat(),
+            new \BrowserDetector\Detector\Os\Slackware(),
+            new \BrowserDetector\Detector\Os\Suse(),
+            new \BrowserDetector\Detector\Os\Ubuntu(),
+            new \BrowserDetector\Detector\Os\ZenwalkGnu(),
+            new \BrowserDetector\Detector\Os\CentOs(),
+            new \BrowserDetector\Detector\Os\LinuxTv(),
+            new \BrowserDetector\Detector\Os\CrOs(),
+            new \BrowserDetector\Detector\Os\Ventana(),
+            new \BrowserDetector\Detector\Os\Mandriva()
         );
         
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain = new \BrowserDetector\Detector\Chain();
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
         
@@ -199,7 +199,7 @@ final class EeePc
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
@@ -210,11 +210,11 @@ final class EeePc
             . DIRECTORY_SEPARATOR
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\Browscap\\Detector\\Browser\\Desktop');
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

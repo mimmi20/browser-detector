@@ -1,12 +1,10 @@
 {
-    "name": "mimmi20/BrowserDetector",
+    "name": "mimmi20/browser-detector",
     "description": "Library for PHP 5.3 to detect Browsers and Devices",
     "type": "library",
-    "license": "LGPL2",
-    "keywords": [
-        "Browser", "user agent"
-    ],
-    "homepage": "",
+    "license": "BSD-3-Clause",
+    "keywords": ["Browser","user agent","http","parser","user-agent"],
+    "homepage": "https://github.com/mimmi20/BrowserDetector",
     "require": {
         "php": ">=5.3.3"
     },

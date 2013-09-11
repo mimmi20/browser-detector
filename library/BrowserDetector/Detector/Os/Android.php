@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace BrowserDetector\Detector\Os;
 
 /**
  * PHP version 5.3
@@ -34,31 +34,31 @@ namespace Browscap\Detector\Os;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Helper\Safari as SafariHelper;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\DeviceHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Helper\Safari as SafariHelper;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
 
 /**
  * MSIEAgentHandler
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -138,7 +138,7 @@ class Android
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         if ($this->utils->checkIfContains('android 2.1-update1', true)) {
@@ -183,32 +183,32 @@ class Android
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\Android(),
-            new \Browscap\Detector\Browser\Mobile\Chrome(),
-            new \Browscap\Detector\Browser\Mobile\Dalvik(),
-            new \Browscap\Detector\Browser\Mobile\Silk(),
-            new \Browscap\Detector\Browser\Mobile\Dolfin(),
-            new \Browscap\Detector\Browser\Mobile\NetFrontLifeBrowser(),
-            new \Browscap\Detector\Browser\Bot\Googlebot(),
-            new \Browscap\Detector\Browser\Mobile\Opera(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
-            new \Browscap\Detector\Browser\Mobile\OperaMobile(),
-            new \Browscap\Detector\Browser\Mobile\OperaTablet(),
-            new \Browscap\Detector\Browser\Mobile\Firefox(),
-            new \Browscap\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
-            new \Browscap\Detector\Browser\Mobile\AndroidDownloadManager(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb(),
+            new \BrowserDetector\Detector\Browser\Mobile\Android(),
+            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
+            new \BrowserDetector\Detector\Browser\Mobile\Dalvik(),
+            new \BrowserDetector\Detector\Browser\Mobile\Silk(),
+            new \BrowserDetector\Detector\Browser\Mobile\Dolfin(),
+            new \BrowserDetector\Detector\Browser\Mobile\NetFrontLifeBrowser(),
+            new \BrowserDetector\Detector\Browser\Bot\Googlebot(),
+            new \BrowserDetector\Detector\Browser\Mobile\Opera(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMobile(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaTablet(),
+            new \BrowserDetector\Detector\Browser\Mobile\Firefox(),
+            new \BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
+            new \BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager(),
+            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

@@ -1,8 +1,8 @@
 <?php
-namespace Browscap\Input;
+namespace BrowserDetector\Input;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -36,57 +36,57 @@ namespace Browscap\Input;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\Result;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\Result;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class WurflCloud extends Core
+class WurflCloud extends Core
 {
     /**
      * the detected browser
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_browser = null;
     
     /**
      * the detected browser engine
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_engine = null;
     
     /**
      * the detected platform
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_os = null;
     
     /**
      * the detected device
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_device = null;
     
@@ -118,7 +118,7 @@ final class WurflCloud extends Core
      *
      * @var \Wurfl\ManagerFactory|\Wurfl\Manager $wurfl
      *
-     * @return \Browscap\Input\Wurfl
+     * @return \BrowserDetector\Input\Wurfl
      */
     public function setWurflManager($wurfl)
     {
@@ -142,7 +142,7 @@ final class WurflCloud extends Core
      *
      * @var boolean $map
      *
-     * @return \Browscap\Input\Wurfl
+     * @return \BrowserDetector\Input\Wurfl
      */
     public function setMapWurflData($map)
     {
@@ -156,7 +156,7 @@ final class WurflCloud extends Core
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\Browscap\\Browscap
+     * @return \\BrowserDetector\\BrowserDetector
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -170,7 +170,7 @@ final class WurflCloud extends Core
      *
      * @param string $prefix the new prefix
      *
-     * @return \\Browscap\\Browscap
+     * @return \\BrowserDetector\\BrowserDetector
      */
     public function setCachePrefix($prefix)
     {
@@ -190,7 +190,7 @@ final class WurflCloud extends Core
      *
      * @param \Wurfl\Configuration\Config $config the new config
      *
-     * @return \\Browscap\\Browscap
+     * @return \\BrowserDetector\\BrowserDetector
      */
     public function setConfig(\Wurfl\Configuration\Config $config)
     {
@@ -202,7 +202,7 @@ final class WurflCloud extends Core
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return \Browscap\Detector\Result
+     * @return \BrowserDetector\Detector\Result
      */
     public function getBrowser()
     {
@@ -846,11 +846,11 @@ final class WurflCloud extends Core
     {
         $handlersToUse = array();
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Engine');
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Engine');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Engine\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\Unknown());
         
         return $chain->detect();
     }
@@ -865,11 +865,11 @@ final class WurflCloud extends Core
         $handlersToUse = array(
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Browser');
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }
@@ -884,11 +884,11 @@ final class WurflCloud extends Core
         $handlersToUse = array(
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Os');
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
         
         return $chain->detect();
     }
@@ -901,17 +901,17 @@ final class WurflCloud extends Core
     private function _detectDevice()
     {
         $handlersToUse = array(
-            new \Browscap\Detector\Device\GeneralBot(),
-            new \Browscap\Detector\Device\GeneralMobile(),
-            new \Browscap\Detector\Device\GeneralTv(),
-            new \Browscap\Detector\Device\GeneralDesktop()
+            new \BrowserDetector\Detector\Device\GeneralBot(),
+            new \BrowserDetector\Detector\Device\GeneralMobile(),
+            new \BrowserDetector\Detector\Device\GeneralTv(),
+            new \BrowserDetector\Detector\Device\GeneralDesktop()
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\Browscap\\Detector\\Device');
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Device');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \Browscap\Detector\Device\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Device\Unknown());
         
         return $chain->detect();
     }

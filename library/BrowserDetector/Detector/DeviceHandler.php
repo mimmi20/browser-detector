@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector;
+namespace BrowserDetector\Detector;
 
 /**
  * PHP version 5.3
@@ -34,31 +34,30 @@ namespace Browscap\Detector;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\OsHandler;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Detector\Result;
-use \Browscap\Detector\Type\Device as DeviceType;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Result;
+use \BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
- * WURFL_Handlers_Handler is the base class that combines the classification of
- * the user agents and the matching process.
+ * base class for all Devices to detect
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -71,14 +70,14 @@ abstract class DeviceHandler
     protected $_useragent = '';
     
     /**
-     * @var \Browscap\Helper\Utils the helper class
+     * @var \BrowserDetector\Helper\Utils the helper class
      */
     protected $utils = null;
     
     /**
      * should the device render the content like another?
      *
-     * @var \Browscap\Detector\Result
+     * @var \BrowserDetector\Detector\Result
      */
     protected $renderAs = null;
     
@@ -234,7 +233,7 @@ abstract class DeviceHandler
     protected function _detectCpu()
     {
         if (null === $this->getCapability('device_cpu')) {
-            $detector = new \Browscap\Detector\Cpu();
+            $detector = new \BrowserDetector\Detector\Cpu();
             $detector->setUserAgent($this->_useragent);
             
             $this->setCapability('device_cpu', $detector->getCpu());
@@ -250,7 +249,7 @@ abstract class DeviceHandler
      */
     protected function _detectBits()
     {
-        $detector = new \Browscap\Detector\Bits\Device();
+        $detector = new \BrowserDetector\Detector\Bits\Device();
         $detector->setUserAgent($this->_useragent);
         
         $this->setCapability('device_bits', $detector->getBits());
@@ -400,11 +399,11 @@ abstract class DeviceHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
-        $browser = new \Browscap\Detector\Browser\Unknown();
+        $browser = new \BrowserDetector\Detector\Browser\Unknown();
         $browser->setUserAgent($this->_useragent);
         
         return $browser->detect();
@@ -414,14 +413,14 @@ abstract class DeviceHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectOs()
     {
-        $chain = new \Browscap\Detector\Chain();
-        $chain->setDefaultHandler(new \Browscap\Detector\Os\Unknown());
+        $chain = new \BrowserDetector\Detector\Chain();
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
-        $chain->setNamespace('\\Browscap\\Detector\\Os');
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
         );
@@ -442,7 +441,7 @@ abstract class DeviceHandler
     /**
      * sets a second device for rendering properties
      *
-     * @var \Browscap\Detector\Result $result
+     * @var \BrowserDetector\Detector\Result $result
      *
      * @return DeviceHandler
      */
@@ -456,7 +455,7 @@ abstract class DeviceHandler
     /**
      * sets a second device for rendering properties
      *
-     * @return \Browscap\Detector\Result
+     * @return \BrowserDetector\Detector\Result
      */
     public function getRenderAs()
     {

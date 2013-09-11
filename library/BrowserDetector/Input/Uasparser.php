@@ -1,8 +1,8 @@
 <?php
-namespace Browscap\Input;
+namespace BrowserDetector\Input;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
  * PHP version 5.3
  *
@@ -36,59 +36,59 @@ namespace Browscap\Input;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright 2006-2008 Jonathan Stoppani
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\DeviceInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\MatcherInterface\BrowserInterface;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\Result;
-use \Browscap\Detector\Version;
-use \Browscap\Detector\Company;
-use \Browscap\Helper\InputMapper;
-use \Browscap\Detector\Type;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\Result;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Helper\InputMapper;
+use \BrowserDetector\Detector\Type;
 
 /**
- * Browscap.ini parsing final class with caching and update capabilities
+ * BrowserDetector.ini parsing class with caching and update capabilities
  *
- * @category  Browscap
- * @package   Browscap
- * @author    Jonathan Stoppani <st.jonathan@gmail.com>
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-final class Uasparser extends Core
+class Uasparser extends Core
 {
     /**
      * the detected browser
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_browser = null;
     
     /**
      * the detected browser engine
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_engine = null;
     
     /**
      * the detected platform
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_os = null;
     
     /**
      * the detected device
      *
-     * @var Stdfinal class
+     * @var Stdclass
      */
     private $_device = null;
     
@@ -104,7 +104,7 @@ final class Uasparser extends Core
      *
      * @var \UASparser $parser
      *
-     * @return \Browscap\Input\Uaparser
+     * @return \BrowserDetector\Input\Uaparser
      */
     public function setParser(\UASparser $parser)
     {
@@ -118,7 +118,7 @@ final class Uasparser extends Core
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\Browscap\\Browscap
+     * @return \\BrowserDetector\\BrowserDetector
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -132,7 +132,7 @@ final class Uasparser extends Core
      *
      * @param string $prefix the new prefix
      *
-     * @return \\Browscap\\Browscap
+     * @return \\BrowserDetector\\BrowserDetector
      */
     public function setCachePrefix($prefix)
     {
@@ -150,7 +150,7 @@ final class Uasparser extends Core
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return \Browscap\Detector\Result
+     * @return \BrowserDetector\Detector\Result
      */
     public function getBrowser()
     {

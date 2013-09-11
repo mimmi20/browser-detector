@@ -1,5 +1,5 @@
 <?php
-namespace Browscap\Detector\Os;
+namespace BrowserDetector\Detector\Os;
 
 /**
  * PHP version 5.3
@@ -34,28 +34,28 @@ namespace Browscap\Detector\Os;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
 
-use \Browscap\Detector\OsHandler;
-use \Browscap\Helper\Utils;
-use \Browscap\Detector\MatcherInterface;
-use \Browscap\Detector\MatcherInterface\OsInterface;
-use \Browscap\Detector\BrowserHandler;
-use \Browscap\Detector\EngineHandler;
-use \Browscap\Detector\Company;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\OsInterface;
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\Company;
 
 /**
  * MSIEAgentHandler
  *
  *
- * @category  Browscap
- * @package   Browscap
- * @copyright Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
@@ -111,7 +111,7 @@ class WebOs
      */
     protected function _detectVersion()
     {
-        $detector = new \Browscap\Detector\Version();
+        $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
         $searches = array('WebOS', 'webOS', 'hpwOS');
@@ -126,7 +126,7 @@ class WebOs
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function getBrowser()
     {
@@ -144,10 +144,10 @@ class WebOs
             . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
             . DIRECTORY_SEPARATOR
         );
-        $browserNs   = 'Browscap\\Browser\\Handlers\\Mobile';
+        $browserNs   = 'BrowserDetector\\Browser\\Handlers\\Mobile';
         
-        $chain = new \Browscap\Detector\Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain = new \BrowserDetector\Detector\Chain(false, $browsers, $browserPath, $browserNs);
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         $chain->setUseragent($this->_useragent);
         
         return $chain->detect();
@@ -157,22 +157,22 @@ class WebOs
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\Browscap\Os\Handler
+     * @return null|\BrowserDetector\Os\Handler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \Browscap\Detector\Browser\Mobile\WebkitWebos(),
-            new \Browscap\Detector\Browser\Mobile\NokiaBrowser(),
-            new \Browscap\Detector\Browser\Mobile\OperaMini(),
-            new \Browscap\Detector\Browser\Mobile\Ucweb(),
-            new \Browscap\Detector\Browser\Mobile\NokiaProxyBrowser()
+            new \BrowserDetector\Detector\Browser\Mobile\WebkitWebos(),
+            new \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
+            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
+            new \BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser()
         );
         
-        $chain = new \Browscap\Detector\Chain();
+        $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \Browscap\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }
