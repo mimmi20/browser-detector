@@ -9,7 +9,8 @@
         "php": ">=5.3.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "ext-xdebug": "*"
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",

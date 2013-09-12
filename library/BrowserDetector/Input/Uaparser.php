@@ -117,7 +117,7 @@ class Uaparser extends Core
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Uaparser
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -131,7 +131,7 @@ class Uaparser extends Core
      *
      * @param string $prefix the new prefix
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Uaparser
      */
     public function setCachePrefix($prefix)
     {

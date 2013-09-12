@@ -118,7 +118,7 @@ class WurflCloud extends Core
      *
      * @var \Wurfl\ManagerFactory|\Wurfl\Manager $wurfl
      *
-     * @return \BrowserDetector\Input\Wurfl
+     * @return \BrowserDetector\Input\WurflCloud
      */
     public function setWurflManager($wurfl)
     {
@@ -142,7 +142,7 @@ class WurflCloud extends Core
      *
      * @var boolean $map
      *
-     * @return \BrowserDetector\Input\Wurfl
+     * @return \BrowserDetector\Input\WurflCloud
      */
     public function setMapWurflData($map)
     {
@@ -156,7 +156,7 @@ class WurflCloud extends Core
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\WurflCloud
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -170,7 +170,7 @@ class WurflCloud extends Core
      *
      * @param string $prefix the new prefix
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\WurflCloud
      */
     public function setCachePrefix($prefix)
     {
@@ -190,7 +190,7 @@ class WurflCloud extends Core
      *
      * @param \Wurfl\Configuration\Config $config the new config
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\WurflCloud
      */
     public function setConfig(\Wurfl\Configuration\Config $config)
     {

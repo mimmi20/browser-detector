@@ -157,7 +157,7 @@ class Wurfl extends Core
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Wurfl
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -171,7 +171,7 @@ class Wurfl extends Core
      *
      * @param string $prefix the new prefix
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Wurfl
      */
     public function setCachePrefix($prefix)
     {
@@ -191,7 +191,7 @@ class Wurfl extends Core
      *
      * @param \Wurfl\Configuration\Config $config the new config
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Wurfl
      */
     public function setConfig(\Wurfl\Configuration\Config $config)
     {

@@ -100,13 +100,13 @@ class Uasparser extends Core
     private $_uaParser = null;
     
     /**
-     * sets the UAParser detector
+     * sets the UAS Parser detector
      *
-     * @var \UASparser $parser
+     * @var \UAS\Parser $parser
      *
-     * @return \BrowserDetector\Input\Uaparser
+     * @return \BrowserDetector\Input\Uasparser
      */
-    public function setParser(\UASparser $parser)
+    public function setParser(\UAS\Parser $parser)
     {
         $this->_uaParser = $parser;
         
@@ -118,7 +118,7 @@ class Uasparser extends Core
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Uasparser
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -132,7 +132,7 @@ class Uasparser extends Core
      *
      * @param string $prefix the new prefix
      *
-     * @return \\BrowserDetector\\BrowserDetector
+     * @return \BrowserDetector\Input\Uasparser
      */
     public function setCachePrefix($prefix)
     {
