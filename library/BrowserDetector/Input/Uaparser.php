@@ -99,13 +99,13 @@ class Uaparser extends Core
     private $_uaParser = null;
     
     /**
-     * sets the UAParser detector
+     * sets the UA Parser detector
      *
-     * @var \UAParser $parser
+     * @var \UA $parser
      *
      * @return \BrowserDetector\Input\Uaparser
      */
-    public function setParser(\UAParser $parser)
+    public function setParser(\UA $parser)
     {
         $this->_uaParser = $parser;
         
