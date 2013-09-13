@@ -65,28 +65,28 @@ class UserAgent extends Core
      *
      * @var Stdclass
      */
-    private $_browser = null;
+    private $browser = null;
     
     /**
      * the detected browser engine
      *
      * @var Stdclass
      */
-    private $_engine = null;
+    private $engine = null;
     
     /**
      * the detected platform
      *
      * @var Stdclass
      */
-    private $_os = null;
+    private $os = null;
     
     /**
      * the detected device
      *
      * @var Stdclass
      */
-    private $_device = null;
+    private $device = null;
 
     /**
      * Gets the information about the browser by User Agent
@@ -95,38 +95,38 @@ class UserAgent extends Core
      */
     public function getBrowser()
     {
-        $this->_device = $this->_detectDevice();
+        $this->device = $this->_detectDevice();
         
         // detect the os which runs on the device
-        $this->_os = $this->_device->detectOs();
-        if (!($this->_os instanceof OsInterface)) {
-            $this->_os = $this->_detectOs();
+        $this->os = $this->device->detectOs();
+        if (!($this->os instanceof OsInterface)) {
+            $this->os = $this->_detectOs();
         }
         
         // detect the browser which is used
-        $this->_browser = $this->_os->detectBrowser();
+        $this->browser = $this->os->detectBrowser();
         
-        if (!($this->_browser instanceof BrowserInterface)) {
-            $this->_browser = $this->_device->detectBrowser();
+        if (!($this->browser instanceof BrowserInterface)) {
+            $this->browser = $this->device->detectBrowser();
         }
         
-        if (!($this->_browser instanceof BrowserInterface)) {
-            $this->_browser = $this->_detectBrowser();
+        if (!($this->browser instanceof BrowserInterface)) {
+            $this->browser = $this->_detectBrowser();
         }
         
         // detect the engine which is used in the browser
-        $this->_engine = $this->_browser->detectEngine();
-        if (!($this->_engine instanceof EngineHandler)) {
-            $this->_engine = $this->_detectEngine();
+        $this->engine = $this->browser->detectEngine();
+        if (!($this->engine instanceof EngineHandler)) {
+            $this->engine = $this->_detectEngine();
         }
         
-        $this->_device->detectDependProperties(
-            $this->_browser, $this->_engine, $this->_os
+        $this->device->detectDependProperties(
+            $this->browser, $this->engine, $this->os
         );
         
         $result = new Result();
         $result->setDetectionResult(
-            $this->_device, $this->_os, $this->_browser, $this->_engine
+            $this->device, $this->os, $this->browser, $this->engine
         );
         $result->setCapability('useragent', $this->_agent);
         

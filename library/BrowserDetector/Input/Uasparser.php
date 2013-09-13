@@ -65,39 +65,11 @@ use \BrowserDetector\Detector\Type;
 class Uasparser extends Core
 {
     /**
-     * the detected browser
-     *
-     * @var Stdclass
-     */
-    private $_browser = null;
-    
-    /**
-     * the detected browser engine
-     *
-     * @var Stdclass
-     */
-    private $_engine = null;
-    
-    /**
-     * the detected platform
-     *
-     * @var Stdclass
-     */
-    private $_os = null;
-    
-    /**
-     * the detected device
-     *
-     * @var Stdclass
-     */
-    private $_device = null;
-    
-    /**
      * the UAParser class
      *
      * @var \UASparser
      */
-    private $_uaParser = null;
+    private $uaParser = null;
     
     /**
      * sets the UAS Parser detector
@@ -108,7 +80,7 @@ class Uasparser extends Core
      */
     public function setParser(\UAS\Parser $parser)
     {
-        $this->_uaParser = $parser;
+        $this->uaParser = $parser;
         
         return $this;
     }
@@ -154,13 +126,13 @@ class Uasparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->_uaParser instanceof \UAS\Parser)) {
+        if (!($this->uaParser instanceof \UAS\Parser)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\UAS\\Parser'
             );
         }
         
-        $parserResult = $this->_uaParser->Parse($this->_agent);
+        $parserResult = $this->uaParser->Parse($this->_agent);
         
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);

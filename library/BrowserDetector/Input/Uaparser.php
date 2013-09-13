@@ -64,39 +64,11 @@ use \BrowserDetector\Helper\InputMapper;
 class Uaparser extends Core
 {
     /**
-     * the detected browser
-     *
-     * @var Stdclass
-     */
-    private $_browser = null;
-    
-    /**
-     * the detected browser engine
-     *
-     * @var Stdclass
-     */
-    private $_engine = null;
-    
-    /**
-     * the detected platform
-     *
-     * @var Stdclass
-     */
-    private $_os = null;
-    
-    /**
-     * the detected device
-     *
-     * @var Stdclass
-     */
-    private $_device = null;
-    
-    /**
      * the UAParser class
      *
      * @var \UAParser
      */
-    private $_uaParser = null;
+    private $uaParser = null;
     
     /**
      * sets the UA Parser detector
@@ -107,7 +79,7 @@ class Uaparser extends Core
      */
     public function setParser(\UA $parser)
     {
-        $this->_uaParser = $parser;
+        $this->uaParser = $parser;
         
         return $this;
     }
@@ -153,13 +125,13 @@ class Uaparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->_uaParser instanceof \UA)) {
+        if (!($this->uaParser instanceof \UA)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\UA'
             );
         }
         
-        $parserResult = $this->_uaParser->parse($this->_agent);
+        $parserResult = $this->uaParser->parse($this->_agent);
         
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
