@@ -272,7 +272,7 @@ class SpamCrawlerFake
             return true;
         }
         
-        if ($this->utils->checkIfContains(array('internet explorer', 'blah'), true)
+        if ($this->utils->checkIfContains(array('internet explorer'), true)
             && !$this->utils->checkIfContains(array('internet explorer anonymized by'), true)
         ) {
             return true;
@@ -337,7 +337,7 @@ class SpamCrawlerFake
     public function isFakeWindows()
     {
         $doMatch = preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->_useragent, $matches);
-        if ($doMatch) {
+        if ($doMatch && !$this->utils->checkIfContains('anonym', true)) {
             return true;
         }
         
@@ -346,8 +346,10 @@ class SpamCrawlerFake
             '6.2', '6.3'
         );
         
-        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
-            || preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches);
+        $doMatch = (preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
+            || preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches))
+            && !$this->utils->checkIfContains('anonym', true);
+        
         if ($doMatch) {
             if ((!$this->utils->checkIfContains('linux', true)
                 || $this->utils->checkIfContains('edition linux mint', true))

@@ -62,9 +62,9 @@ class BrowserDetector
     const INTERFACE_UASPARSER    = 6;
     
     /**
-     * a \Zend\Cache object
+     * a \Zend\Cache\Storage\Adapter\AbstractAdapter object
      *
-     * @var \Zend\Cache
+     * @var \Zend\Cache\Storage\Adapter\AbstractAdapter
      */
     private $cache = null;
     
@@ -97,11 +97,11 @@ class BrowserDetector
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Zend\Cache\Frontend\Core $cache
+     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
      *
      * @return \BrowserDetector\BrowserDetector
      */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
     {
         $this->cache = $cache;
         
@@ -218,10 +218,13 @@ class BrowserDetector
             $this->setInterface(self::INTERFACE_INTERNAL);
         }
         
-        $this->interface->setCache($this->cache)
-            ->setCachePrefix($this->cachePrefix)
-            ->setAgent($this->agent)
-        ;
+        if (null !== $this->cache) {
+            $this->interface->setCache($this->cache)
+                ->setCachePrefix($this->cachePrefix);
+        }
+        
+        $this->interface->setAgent($this->agent);
+        
         return $this->interface;
     }
 
@@ -248,12 +251,14 @@ class BrowserDetector
         
         $cacheId = hash('sha512', $this->cachePrefix . $this->agent);
         $result  = null;
+        $success = false;
         
         if (!$forceDetect) {
-            $result = $this->cache->load($cacheId);
+            $result = $this->cache->getItem($cacheId, $success);
+            $result = unserialize($result);
         }
         
-        if ($forceDetect || !($result instanceof Detector\Result)) {
+        if ($forceDetect || !$success || !($result instanceof Detector\Result)) {
             $result = $this->getInterface()->getBrowser();
             
             if (!($result instanceof Detector\Result)) {
@@ -264,7 +269,7 @@ class BrowserDetector
             }
             
             if (!$forceDetect) {
-                $this->cache->save($result, $cacheId);
+                $this->cache->setItem($cacheId, serialize($result));
             }
         }
         

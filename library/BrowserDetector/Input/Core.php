@@ -43,8 +43,6 @@ namespace BrowserDetector\Input;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Helper\Support;
-
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
  *
@@ -57,9 +55,9 @@ use \BrowserDetector\Helper\Support;
 abstract class Core
 {
     /**
-     * a \Zend\Cache object
+     * a \Zend\Cache\Storage\Adapter\AbstractAdapter object
      *
-     * @var \Zend\Cache
+     * @var \Zend\Cache\Storage\Adapter\AbstractAdapter
      */
     protected $cache = null;
     
@@ -78,11 +76,11 @@ abstract class Core
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Zend\Cache\Frontend\Core $cache
+     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
      *
      * @return 
      */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
     {
         $this->cache = $cache;
         

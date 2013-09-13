@@ -382,15 +382,17 @@ class Browscap extends Core
     private function getGlobalCache()
     {
         $cacheGlobalId = $this->cachePrefix . 'agentsGlobal';
+        $success       = false;
         
         // Load the cache at the first request
-        if (!($this->cache instanceof \Zend\Cache\Frontend\Core) 
-            || !$globalCache = $this->cache->load($cacheGlobalId)
+        if (!($this->cache instanceof \Zend\Cache\Storage\Adapter\AbstractAdapter) 
+            || !$globalCache = $this->cache->getItem($cacheGlobalId, $success)
+            || !$success
         ) {
             $globalCache = $this->getBrowserFromGlobalCache();
             
-            if ($this->cache instanceof \Zend\Cache\Frontend\Core) {
-                $this->cache->save($globalCache, $cacheGlobalId);
+            if ($this->cache instanceof \Zend\Cache\Storage\Adapter\AbstractAdapter) {
+                $this->cache->setItem($cacheGlobalId, $globalCache);
             }
         }
         

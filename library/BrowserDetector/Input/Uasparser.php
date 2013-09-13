@@ -116,11 +116,11 @@ class Uasparser extends Core
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Zend\Cache\Frontend\Core $cache
+     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
      *
      * @return \BrowserDetector\Input\Uasparser
      */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
     {
         $this->cache = $cache;
         
@@ -154,9 +154,9 @@ class Uasparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->_uaParser instanceof \UASparser)) {
+        if (!($this->_uaParser instanceof \UAS\Parser)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\UASparser'
+                'the parser object has to be an instance of \\UAS\\Parser'
             );
         }
         

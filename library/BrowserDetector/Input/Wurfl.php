@@ -155,11 +155,11 @@ class Wurfl extends Core
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Zend\Cache\Frontend\Core $cache
+     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
      *
      * @return \BrowserDetector\Input\Wurfl
      */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
     {
         $this->cache = $cache;
         
