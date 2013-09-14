@@ -144,9 +144,6 @@ abstract class DeviceHandler
             'dual_orientation'       => false,
             'colors'                 => 65536,
             
-            // security
-            'phone_id_provided' => false,
-            
             // chips
             'nfc_support' => null,
         );

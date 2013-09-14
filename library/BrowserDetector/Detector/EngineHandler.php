@@ -181,6 +181,7 @@ abstract class EngineHandler
             
             // security
             'https_support' => null,
+            'phone_id_provided' => false,
             
             // storage
             'max_deck_size' => null,
