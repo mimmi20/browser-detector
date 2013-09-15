@@ -707,6 +707,24 @@ class Result implements \Serializable
     }
     
     /**
+     * magic function needed to reconstruct the class from a var_export
+     *
+     * @param array $array
+     *
+     * @return Result
+     */
+    static function __set_state(array $array)
+    {
+        $obj = new self;
+        
+        foreach ($array as $k => $v) {
+            $obj->$k = $v;
+        }
+        
+        return $obj;
+    }
+    
+    /**
      * unserializes the object
      *
      * @param string $data The serialized data

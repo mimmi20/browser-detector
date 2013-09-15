@@ -5,8 +5,15 @@
     "license": "BSD-3-Clause",
     "keywords": ["Browser","user agent","http","parser","user-agent"],
     "homepage": "https://github.com/mimmi20/BrowserDetector",
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "https://github.com/mimmi20/phpbrowscap.git"
+        }
+    ],
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "garetjax/phpbrowscap": "dev-master",
     },
     "require-dev": {
         "phpunit/phpunit": "*",
@@ -14,7 +21,6 @@
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
-        "garetjax/phpbrowscap": "for using a browscap.ini file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
         "dubcanada/uaparser": "for using the ua parser as alternative parser"
     },

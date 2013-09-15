@@ -62,9 +62,9 @@ class BrowserDetector
     const INTERFACE_UASPARSER    = 6;
     
     /**
-     * a \Zend\Cache\Storage\Adapter\AbstractAdapter object
+     * a \phpbrowscap\Cache\CacheInterface object
      *
-     * @var \Zend\Cache\Storage\Adapter\AbstractAdapter
+     * @var \phpbrowscap\Cache\CacheInterface
      */
     private $cache = null;
     
@@ -97,11 +97,11 @@ class BrowserDetector
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
+     * @param \phpbrowscap\Cache\CacheInterface $cache
      *
      * @return \BrowserDetector\BrowserDetector
      */
-    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
+    public function setCache(\phpbrowscap\Cache\CacheInterface $cache)
     {
         $this->cache = $cache;
         
@@ -255,7 +255,6 @@ class BrowserDetector
         
         if (!$forceDetect) {
             $result = $this->cache->getItem($cacheId, $success);
-            $result = unserialize($result);
         }
         
         if ($forceDetect || !$success || !($result instanceof Detector\Result)) {
@@ -269,7 +268,7 @@ class BrowserDetector
             }
             
             if (!$forceDetect) {
-                $this->cache->setItem($cacheId, serialize($result));
+                $this->cache->setItem($cacheId, $result);
             }
         }
         

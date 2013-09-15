@@ -66,9 +66,9 @@ class Uaparser extends Core
     /**
      * the UAParser class
      *
-     * @var \UAParser
+     * @var \UA
      */
-    private $uaParser = null;
+    private $parser = null;
     
     /**
      * sets the UA Parser detector
@@ -79,41 +79,7 @@ class Uaparser extends Core
      */
     public function setParser(\UA $parser)
     {
-        $this->uaParser = $parser;
-        
-        return $this;
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
-     *
-     * @return \BrowserDetector\Input\Uaparser
-     */
-    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
-    {
-        $this->cache = $cache;
-        
-        return $this;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param string $prefix the new prefix
-     *
-     * @return \BrowserDetector\Input\Uaparser
-     */
-    public function setCachePrefix($prefix)
-    {
-        if (!is_string($prefix)) {
-            throw new \UnexpectedValueException(
-                'the cache prefix has to be a string'
-            );
-        }
-        
-        $this->cachePrefix = $prefix;
+        $this->parser = $parser;
         
         return $this;
     }
@@ -125,13 +91,13 @@ class Uaparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->uaParser instanceof \UA)) {
+        if (!($this->parser instanceof \UA)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\UA'
             );
         }
         
-        $parserResult = $this->uaParser->parse($this->_agent);
+        $parserResult = $this->parser->parse($this->_agent);
         
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
@@ -142,7 +108,7 @@ class Uaparser extends Core
         $browserVersion = $mapper->mapBrowserVersion($parserResult->ua->toVersionString, $browserName);
         
         $result->setCapability('mobile_browser', $browserName);
-        // $result->setCapability('mobile_browser_version', $browserVersion);
+        $result->setCapability('mobile_browser_version', $browserVersion);
         
         $osName    = $mapper->mapOsName($parserResult->os->family);
         $osVersion = $mapper->mapOsVersion($parserResult->os->toVersionString, $osName);
@@ -151,15 +117,5 @@ class Uaparser extends Core
         $result->setCapability('device_os_version', $osVersion);
         
         return $result;
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getAgent();
     }
 }

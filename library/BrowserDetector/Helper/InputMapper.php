@@ -219,6 +219,9 @@ class InputMapper
             case 'multimedia player':
                 $browserType = new BrowserType\MultimediaPlayer();
                 break;
+            case 'offline browser':
+                $browserType = new BrowserType\OfflineBrowser();
+                break;
             default:
                 switch (strtolower($browserName)) {
                     case 'unknown':

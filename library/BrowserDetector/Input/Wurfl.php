@@ -64,55 +64,18 @@ use \BrowserDetector\Helper\InputMapper;
 class Wurfl extends Core
 {
     /**
-     * the detected browser
-     *
-     * @var Stdclass
-     */
-    private $_browser = null;
-    
-    /**
-     * the detected browser engine
-     *
-     * @var Stdclass
-     */
-    private $_engine = null;
-    
-    /**
-     * the detected platform
-     *
-     * @var Stdclass
-     */
-    private $_os = null;
-    
-    /**
-     * the detected device
-     *
-     * @var Stdclass
-     */
-    private $_device = null;
-    
-    /**
      * the wurfl detector class
      *
      * @var
      */
-    private $_wurflManager = null;
+    private $wurflManager = null;
     
     /**
      * a flag to tell, if the wurfl data should be mapped
      *
      * @var boolean
      */
-    private $_mapWurflData = true;
-    
-    /**
-     * the config object
-     *
-     * @var \Wurfl\Configuration\Config
-     *
-     * @throws \UnexpectedValueException
-     */
-    private $_config = null;
+    private $mapWurflData = true;
     
     /**
      * sets the wurfl detection manager
@@ -133,7 +96,7 @@ class Wurfl extends Core
             );
         }
         
-        $this->_wurflManager = $wurfl;
+        $this->wurflManager = $wurfl;
         
         return $this;
     }
@@ -147,55 +110,7 @@ class Wurfl extends Core
      */
     public function setMapWurflData($map)
     {
-        $this->_mapWurflData = ($map ? true : false);
-        
-        return $this;
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
-     *
-     * @return \BrowserDetector\Input\Wurfl
-     */
-    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
-    {
-        $this->cache = $cache;
-        
-        return $this;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param string $prefix the new prefix
-     *
-     * @return \BrowserDetector\Input\Wurfl
-     */
-    public function setCachePrefix($prefix)
-    {
-        if (!is_string($prefix)) {
-            throw new \UnexpectedValueException(
-                'the cache prefix has to be a string'
-            );
-        }
-        
-        $this->cachePrefix = $prefix;
-        
-        return $this;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param \Wurfl\Configuration\Config $config the new config
-     *
-     * @return \BrowserDetector\Input\Wurfl
-     */
-    public function setConfig(\Wurfl\Configuration\Config $config)
-    {
-        $this->_config = $config;
+        $this->mapWurflData = ($map ? true : false);
         
         return $this;
     }
@@ -207,7 +122,7 @@ class Wurfl extends Core
      */
     public function getBrowser()
     {
-        if (!($this->_wurflManager instanceof \Wurfl\Manager)) {
+        if (!($this->wurflManager instanceof \Wurfl\Manager)) {
             throw new \UnexpectedValueException(
                 'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory or an instance of \\Wurfl\\ManagerFactory'
             );
@@ -215,7 +130,7 @@ class Wurfl extends Core
         
         try {
             $agent         = str_replace('Toolbar', '', $this->_agent);
-            $device        = $this->_wurflManager->getDeviceForUserAgent($agent);
+            $device        = $this->wurflManager->getDeviceForUserAgent($agent);
             $allProperties = $device->getAllCapabilities();
             
             $apiKey = $device->id;
@@ -232,7 +147,7 @@ class Wurfl extends Core
                 
                 $brandName = $device->getCapability('brand_name');
                 
-                if ('Opera' == $brandName && $this->_mapWurflData) {
+                if ('Opera' == $brandName && $this->mapWurflData) {
                     $brandName = null;
                 }
             } else {
@@ -253,7 +168,7 @@ class Wurfl extends Core
             $apiTranscoder = ('true' === $device->getCapability('is_transcoder'));
             $browserMaker  = '';
             
-            if ($this->_mapWurflData) {
+            if ($this->mapWurflData) {
                 $apiOs = trim($apiOs);
                 if (!$apiOs) {
                     $apiOs = null;

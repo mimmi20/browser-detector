@@ -69,7 +69,7 @@ class Uasparser extends Core
      *
      * @var \UASparser
      */
-    private $uaParser = null;
+    private $parser = null;
     
     /**
      * sets the UAS Parser detector
@@ -80,41 +80,7 @@ class Uasparser extends Core
      */
     public function setParser(\UAS\Parser $parser)
     {
-        $this->uaParser = $parser;
-        
-        return $this;
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
-     *
-     * @return \BrowserDetector\Input\Uasparser
-     */
-    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
-    {
-        $this->cache = $cache;
-        
-        return $this;
-    }
-
-    /**
-     * sets the the cache prfix
-     *
-     * @param string $prefix the new prefix
-     *
-     * @return \BrowserDetector\Input\Uasparser
-     */
-    public function setCachePrefix($prefix)
-    {
-        if (!is_string($prefix)) {
-            throw new \UnexpectedValueException(
-                'the cache prefix has to be a string'
-            );
-        }
-        
-        $this->cachePrefix = $prefix;
+        $this->parser = $parser;
         
         return $this;
     }
@@ -126,13 +92,13 @@ class Uasparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->uaParser instanceof \UAS\Parser)) {
+        if (!($this->parser instanceof \UAS\Parser)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\UAS\\Parser'
             );
         }
         
-        $parserResult = $this->uaParser->Parse($this->_agent);
+        $parserResult = $this->parser->Parse($this->_agent);
         
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
@@ -145,8 +111,8 @@ class Uasparser extends Core
         $browserMaker   = $mapper->mapBrowserMaker($parserResult['ua_company'], $browserName);
         
         $result->setCapability('browser_type', $browserType->getName());
-        // $result->setCapability('is_bot', $browserType->isBot());
-        // $result->setCapability('is_transcoder', $browserType->isTranscoder());
+        $result->setCapability('is_bot', $browserType->isBot());
+        $result->setCapability('is_transcoder', $browserType->isTranscoder());
         $result->setCapability('is_syndication_reader', $browserType->isSyndicationReader());
         $result->setCapability('is_banned', $browserType->isBanned());
         $result->setCapability('mobile_browser', $browserName);
@@ -172,15 +138,5 @@ class Uasparser extends Core
         $result->setCapability('device_os_manufacturer', $osMaker);
         
         return $result;
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getAgent();
     }
 }

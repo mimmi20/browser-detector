@@ -192,6 +192,24 @@ class Version implements \Serializable
     }
     
     /**
+     * magic function needed to reconstruct the class from a var_export
+     *
+     * @param array $array
+     *
+     * @return Version
+     */
+    static function __set_state(array $array)
+    {
+        $obj = new self;
+        
+        foreach ($array as $k => $v) {
+            $obj->$k = $v;
+        }
+        
+        return $obj;
+    }
+    
+    /**
      * sets the user agent to be handled
      *
      * @param string $userAgent

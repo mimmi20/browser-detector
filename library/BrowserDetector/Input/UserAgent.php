@@ -95,12 +95,12 @@ class UserAgent extends Core
      */
     public function getBrowser()
     {
-        $this->device = $this->_detectDevice();
+        $this->device = $this->detectDevice();
         
         // detect the os which runs on the device
         $this->os = $this->device->detectOs();
         if (!($this->os instanceof OsInterface)) {
-            $this->os = $this->_detectOs();
+            $this->os = $this->detectOs();
         }
         
         // detect the browser which is used
@@ -111,13 +111,13 @@ class UserAgent extends Core
         }
         
         if (!($this->browser instanceof BrowserInterface)) {
-            $this->browser = $this->_detectBrowser();
+            $this->browser = $this->detectBrowser();
         }
         
         // detect the engine which is used in the browser
         $this->engine = $this->browser->detectEngine();
         if (!($this->engine instanceof EngineHandler)) {
-            $this->engine = $this->_detectEngine();
+            $this->engine = $this->detectEngine();
         }
         
         $this->device->detectDependProperties(
@@ -138,7 +138,7 @@ class UserAgent extends Core
      *
      * @return 
      */
-    private function _detectEngine()
+    private function detectEngine()
     {
         $handlersToUse = array();
         
@@ -156,7 +156,7 @@ class UserAgent extends Core
      *
      * @return 
      */
-    private function _detectBrowser()
+    private function detectBrowser()
     {
         $handlersToUse = array(
         );
@@ -175,7 +175,7 @@ class UserAgent extends Core
      *
      * @return 
      */
-    private function _detectOs()
+    private function detectOs()
     {
         $handlersToUse = array(
         );
@@ -194,7 +194,7 @@ class UserAgent extends Core
      *
      * @return UserAgent
      */
-    private function _detectDevice()
+    private function detectDevice()
     {
         $handlersToUse = array(
             new \BrowserDetector\Detector\Device\GeneralBot(),
@@ -210,15 +210,5 @@ class UserAgent extends Core
         $chain->setDefaultHandler(new \BrowserDetector\Detector\Device\Unknown());
         
         return $chain->detect();
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getAgent();
     }
 }

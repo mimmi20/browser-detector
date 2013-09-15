@@ -65,7 +65,14 @@ class Browscap extends Core
      *
      * @var \phpbrowscap\Browscap
      */
-    private $uaParser = null;
+    private $parser = null;
+    
+    /**
+     * the location of the local ini file
+     *
+     * @var string
+     */
+    private $localFile = null;
     
     /**
      * sets the UA Parser detector
@@ -76,43 +83,27 @@ class Browscap extends Core
      */
     public function setParser(\phpbrowscap\Browscap $parser)
     {
-        $this->uaParser = $parser;
-        
-        return $this;
-    }
-    
-    /**
-     * sets the cache used to make the detection faster
-     *
-     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
-     *
-     * @return \BrowserDetector\Input\Uaparser
-     */
-    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
-    {
-        $this->cache = $cache;
+        $this->parser = $parser;
         
         return $this;
     }
 
     /**
-     * sets the the cache prfix
+     * sets the name of the local file
      *
-     * @param string $prefix the new prefix
+     * @param string $filename the file name
      *
-     * @return \BrowserDetector\Input\Uaparser
+     * @return void
      */
-    public function setCachePrefix($prefix)
+    public function setLocaleFile($filename)
     {
-        if (!is_string($prefix)) {
-            throw new \UnexpectedValueException(
-                'the cache prefix has to be a string'
+        if (empty($filename)) {
+            throw new Exception(
+                'the filename can not be empty', Exception::LOCAL_FILE_MISSING
             );
         }
         
-        $this->cachePrefix = $prefix;
-        
-        return $this;
+        $this->localFile = $filename;
     }
 
     /**
@@ -122,13 +113,18 @@ class Browscap extends Core
      */
     public function getBrowser()
     {
-        if (!($this->uaParser instanceof \phpbrowscap\Browscap)) {
+        if (!($this->parser instanceof \phpbrowscap\Browscap)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\phpbrowscap\\Browscap'
             );
         }
         
-        $parserResult = $this->uaParser->getBrowser($this->_agent, true);
+        $this->parser->setCache($this->cache)
+            ->setLocaleFile($this->localFile)
+            ->setCachePrefix($this->cachePrefix)
+        ;
+        
+        $parserResult = $this->parser->getBrowser($this->_agent, true);
         
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
@@ -423,15 +419,5 @@ class Browscap extends Core
         }
         
         return $propertyValue;
-    }
-    
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getAgent();
     }
 }

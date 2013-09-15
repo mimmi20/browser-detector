@@ -55,9 +55,9 @@ namespace BrowserDetector\Input;
 abstract class Core
 {
     /**
-     * a \Zend\Cache\Storage\Adapter\AbstractAdapter object
+     * a \phpbrowscap\Cache\CacheInterface object
      *
-     * @var \Zend\Cache\Storage\Adapter\AbstractAdapter
+     * @var \phpbrowscap\Cache\CacheInterface
      */
     protected $cache = null;
     
@@ -76,11 +76,11 @@ abstract class Core
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Zend\Cache\Storage\Adapter\AbstractAdapter $cache
+     * @param \phpbrowscap\Cache\CacheInterface $cache
      *
-     * @return 
+     * @return \BrowserDetector\Input\Core
      */
-    public function setCache(\Zend\Cache\Storage\Adapter\AbstractAdapter $cache)
+    public function setCache(\phpbrowscap\Cache\CacheInterface $cache)
     {
         $this->cache = $cache;
         
@@ -88,14 +88,20 @@ abstract class Core
     }
 
     /**
-     * sets the the cache prfix
+     * sets the the cache prefix
      *
      * @param string $prefix the new prefix
      *
-     * @return void
+     * @return \BrowserDetector\Input\Core
      */
     public function setCachePrefix($prefix)
     {
+        if (!is_string($prefix)) {
+            throw new \UnexpectedValueException(
+                'the cache prefix has to be a string'
+            );
+        }
+        
         $this->cachePrefix = $prefix;
         
         return $this;
@@ -128,5 +134,15 @@ abstract class Core
     public function getAgent()
     {
         return $this->_agent;
+    }
+    
+    /**
+     * returns the stored user agent
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getAgent();
     }
 }
