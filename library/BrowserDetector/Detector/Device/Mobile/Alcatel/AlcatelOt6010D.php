@@ -132,7 +132,7 @@ class AlcatelOt6010D
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Alcatel-OT-6010D')) {
+        if (!$this->utils->checkIfContains(array('Alcatel-OT-6010D', 'ALCATEL ONE TOUCH 6010D'))) {
             return false;
         }
         
