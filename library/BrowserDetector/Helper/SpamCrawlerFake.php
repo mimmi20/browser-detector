@@ -294,6 +294,10 @@ class SpamCrawlerFake
             return true;
         }
         
+        if ($this->isAnonymized()) {
+            return false;
+        }
+        
         if ($this->isFakeWindows()) {
             return true;
         }
@@ -328,6 +332,15 @@ class SpamCrawlerFake
         $doMatch = preg_match('/SeaMonkey\/(\d+)\.(\d+)/', $this->_useragent, $matches);
         
         if ($doMatch && $matches[1] > 2) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public function isAnonymized()
+    {
+        if ($this->utils->checkIfContains(array('anonymisiert durch', 'anonymized by'), true)) {
             return true;
         }
         
