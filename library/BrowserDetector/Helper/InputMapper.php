@@ -101,6 +101,7 @@ class InputMapper
                 break;
             case 'chrome mobile':
             case 'chrome mobile ios':
+            case 'chrome frame':
                 $browserName = 'Chrome';
                 break;
             case 'android':
@@ -138,6 +139,10 @@ class InputMapper
                 break;
             case 'firefox mobile':
                 $browserName = 'Firefox';
+                break;
+            case 'dolfin/jasmine webkit':
+            case 'dolphin':
+                $browserName = 'Dolfin';
                 break;
             default:
                 // nothing to do here
@@ -371,6 +376,7 @@ class InputMapper
                 $osName = 'Mac OS X';
                 break;
             case 'jvm':
+            case 'java':
                 $osName = 'Java';
                 break;
             case 'bada os':
