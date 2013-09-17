@@ -144,7 +144,6 @@ class MicrosoftInternetExplorer
         }
         
         $isNotReallyAnIE = array(
-            'Gecko',
             'Presto',
             'Webkit',
             'KHTML',
@@ -180,6 +179,12 @@ class MicrosoftInternetExplorer
         
         if ($this->utils->checkIfContains($isNotReallyAnIE)
             && !$this->utils->checkIfContains('Bitte Mozilla Firefox verwenden')
+        ) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains('Gecko')
+            && !$this->utils->checkIfContainsAll(array('like Gecko', 'rv:11.0'))
         ) {
             return false;
         }
