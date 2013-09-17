@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Motorola
+class SamsungGtn5110
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,22 +83,22 @@ class Motorola
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'general Motorola Device',
+            'model_name'                => 'GT-N5110',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Motorola(),
-            'brand_name' => new Company\Motorola(),
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Motorola Device',
-            'has_qwerty_keyboard'       => true,
+            'marketing_name'            => 'Galaxy Note 8.0', 
+            'has_qwerty_keyboard'       => true,             
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'ARM11', // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -112,10 +112,10 @@ class Motorola
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 1280,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
@@ -132,44 +132,7 @@ class Motorola
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
-            return false;
-        }
-        
-        $motorolaPhones = array(
-            'motorola',
-            'moto', 
-            //'mot',
-            'mb200',
-            'mb300',
-            ' droid ',
-            ' droidx ',
-            'droid-bionic',
-            'xt702',
-            'mz601',
-            'mz604',
-            'mz616',
-            'xoom',
-            'milestone',
-            'mb511',
-            'mb525',
-            'mb526',
-            'mb632',
-            'mb860',
-            'me511',
-            'me525',
-            'me600',
-            'xt316',
-            'xt320',
-            'xt610',
-            'xt615',
-            'xt890',
-            'xt907',
-            'xt910',
-            'xt925'
-        );
-        
-        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
+        if (!$this->utils->checkIfContains('GT-N5110')) {
             return false;
         }
         
@@ -183,7 +146,7 @@ class Motorola
      */
     public function getWeight()
     {
-        return 333193;
+        return 65159;
     }
     
     /**
@@ -195,15 +158,7 @@ class Motorola
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Motorola');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**

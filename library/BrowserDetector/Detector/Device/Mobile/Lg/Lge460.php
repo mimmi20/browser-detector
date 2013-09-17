@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Motorola
+class Lge460
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,19 +86,19 @@ class Motorola
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Motorola Device',
+            'model_name'                => 'E460',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Motorola(),
-            'brand_name' => new Company\Motorola(),
+            'manufacturer_name' => new Company\Lg(),
+            'brand_name' => new Company\Lg(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Motorola Device',
+            'marketing_name'            => 'Optimus L3',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -112,10 +112,10 @@ class Motorola
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 240,
+            'resolution_height'      => 320,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
@@ -132,44 +132,7 @@ class Motorola
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
-            return false;
-        }
-        
-        $motorolaPhones = array(
-            'motorola',
-            'moto', 
-            //'mot',
-            'mb200',
-            'mb300',
-            ' droid ',
-            ' droidx ',
-            'droid-bionic',
-            'xt702',
-            'mz601',
-            'mz604',
-            'mz616',
-            'xoom',
-            'milestone',
-            'mb511',
-            'mb525',
-            'mb526',
-            'mb632',
-            'mb860',
-            'me511',
-            'me525',
-            'me600',
-            'xt316',
-            'xt320',
-            'xt610',
-            'xt615',
-            'xt890',
-            'xt907',
-            'xt910',
-            'xt925'
-        );
-        
-        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
+        if (!$this->utils->checkIfContains('LG-E460')) {
             return false;
         }
         
@@ -183,7 +146,7 @@ class Motorola
      */
     public function getWeight()
     {
-        return 333193;
+        return 3;
     }
     
     /**
@@ -195,15 +158,7 @@ class Motorola
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Motorola');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -240,5 +195,23 @@ class Motorola
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('softkey_support', true);
+        
+        return $this;
     }
 }

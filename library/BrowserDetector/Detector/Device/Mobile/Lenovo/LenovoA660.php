@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Motorola
+class LenovoA660
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class Motorola
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Motorola Device',
+            'model_name'                => 'A660',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Motorola(),
-            'brand_name' => new Company\Motorola(),
+            'manufacturer_name' => new Company\Lenovo(),
+            'brand_name' => new Company\Lenovo(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Motorola Device',
+            'marketing_name'            => 'Lephone A660', // wurflkey: lenovo_A660_ver1
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -132,44 +132,7 @@ class Motorola
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
-            return false;
-        }
-        
-        $motorolaPhones = array(
-            'motorola',
-            'moto', 
-            //'mot',
-            'mb200',
-            'mb300',
-            ' droid ',
-            ' droidx ',
-            'droid-bionic',
-            'xt702',
-            'mz601',
-            'mz604',
-            'mz616',
-            'xoom',
-            'milestone',
-            'mb511',
-            'mb525',
-            'mb526',
-            'mb632',
-            'mb860',
-            'me511',
-            'me525',
-            'me600',
-            'xt316',
-            'xt320',
-            'xt610',
-            'xt615',
-            'xt890',
-            'xt907',
-            'xt910',
-            'xt925'
-        );
-        
-        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
+        if (!$this->utils->checkIfContains('Lenovo A660')) {
             return false;
         }
         
@@ -183,7 +146,7 @@ class Motorola
      */
     public function getWeight()
     {
-        return 333193;
+        return 3;
     }
     
     /**
@@ -195,15 +158,7 @@ class Motorola
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Motorola');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**

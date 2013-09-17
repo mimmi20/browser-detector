@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Motorola
+class SamsungGti9192
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,21 +86,21 @@ class Motorola
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Motorola Device',
+            'model_name'                => 'GT-I9192',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Motorola(),
-            'brand_name' => new Company\Motorola(),
+            'manufacturer_name' => new Company\Samsung(),
+            'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Motorola Device',
+            'marketing_name'            => 'GT-I9192',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'ARM11', // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true, // wurflkey: samsung_gt_I9192_ver1_suban40rom
             'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
+            'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I9192.xml',
             'uaprof2'                   => null,
             'uaprof3'                   => null,
             'unique'                    => true,
@@ -112,16 +112,16 @@ class Motorola
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
             
             // chips
-            'nfc_support' => true,
+            'nfc_support' => false,
         );
     }
     
@@ -132,44 +132,11 @@ class Motorola
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
+        if (!$this->utils->checkIfContains(array('GT-I9192', 'I9192'))) {
             return false;
         }
         
-        $motorolaPhones = array(
-            'motorola',
-            'moto', 
-            //'mot',
-            'mb200',
-            'mb300',
-            ' droid ',
-            ' droidx ',
-            'droid-bionic',
-            'xt702',
-            'mz601',
-            'mz604',
-            'mz616',
-            'xoom',
-            'milestone',
-            'mb511',
-            'mb525',
-            'mb526',
-            'mb632',
-            'mb860',
-            'me511',
-            'me525',
-            'me600',
-            'xt316',
-            'xt320',
-            'xt610',
-            'xt615',
-            'xt890',
-            'xt907',
-            'xt910',
-            'xt925'
-        );
-        
-        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
+        if ($this->utils->checkIfContains(array('GT-I9192P', 'GT-I9192T', 'GT-I9192G'))) {
             return false;
         }
         
@@ -183,7 +150,7 @@ class Motorola
      */
     public function getWeight()
     {
-        return 333193;
+        return 3173469;
     }
     
     /**
@@ -195,15 +162,7 @@ class Motorola
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Motorola');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -240,5 +199,77 @@ class Motorola
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('gif_animated', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('supports_java_applets', false);
+        
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+        
+        switch ($browser->getCapability('mobile_browser')) {
+            case 'Android Webkit':
+                switch ((float) $osVersion) {
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1');
+                        
+                        if ($this->utils->checkIfContains('SAMSUNG GT-I9192/I9192')) {
+                            $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_subua');
+                        }
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40');
+                        break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban41rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                
+                switch ((float) $osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40chrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        return $this;
     }
 }
