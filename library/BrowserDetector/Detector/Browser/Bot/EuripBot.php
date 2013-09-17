@@ -84,7 +84,7 @@ class EuripBot
             'browser_type' => new BrowserType\Bot(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'EuripBot',
+            'mobile_browser'              => 'Europe Internet Portal',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Eurip(), // not in wurfl
