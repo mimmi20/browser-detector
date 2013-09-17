@@ -147,6 +147,7 @@ class Firefox
             'Iceape',
             'Firebird',
             'IceDragon',
+            'TenFourFox',
             //Nutch
             'Nutch',
             'CazoodleBot',
