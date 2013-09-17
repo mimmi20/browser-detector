@@ -124,6 +124,7 @@ class Safari
             'PhantomJS',
             'Qt',
             'QuickLook',
+            'QupZilla',
             'rekonq',
             'Rockmelt',
             'Silk',
