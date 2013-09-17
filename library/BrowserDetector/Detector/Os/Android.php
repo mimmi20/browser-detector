@@ -203,6 +203,7 @@ class Android
             new \BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
             new \BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager(),
             new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
+            new \BrowserDetector\Detector\Browser\Mobile\YaBrowser(),
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
