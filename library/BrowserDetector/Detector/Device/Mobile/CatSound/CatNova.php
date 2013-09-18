@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\Weltbild;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CatStarGate
+class CatNova
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class CatStarGate
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'StarGate',
+            'model_name'                => 'Nova',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Cat(),
-            'brand_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\CatSound(),
+            'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'StarGate',
+            'marketing_name'            => 'Nova',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -106,14 +106,14 @@ class CatStarGate
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => null,
-            'physical_screen_height' => null,
-            'columns'                => null,
-            'rows'                   => null,
-            'max_image_width'        => null,
-            'max_image_height'       => null,
+            'physical_screen_width'  => 123,
+            'physical_screen_height' => 164,
+            'columns'                => 60,
+            'rows'                   => 40,
+            'max_image_width'        => 320,
+            'max_image_height'       => 400,
             'resolution_width'       => 800,
-            'resolution_height'      => 480,
+            'resolution_height'      => 600,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
@@ -132,7 +132,11 @@ class CatStarGate
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Cat StarGate'))) {
+        if (!$this->utils->checkIfContains(array('CatNova', 'CAT NOVA'))) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains(array('CatNova8'))) {
             return false;
         }
         

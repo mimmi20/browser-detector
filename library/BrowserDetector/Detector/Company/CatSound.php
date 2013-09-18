@@ -48,14 +48,14 @@ namespace BrowserDetector\Detector\Company;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Cat extends AbstractCompany implements CompanyInterface
+class CatSound extends AbstractCompany implements CompanyInterface
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Cat';
+    protected $name = 'Cat Sound';
     
     /**
      * the brand name of the company

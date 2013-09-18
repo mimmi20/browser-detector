@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\Weltbild;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CatTablet
+class TabletPc4
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,16 +86,16 @@ class CatTablet
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'Tablet',
+            'model_name'                => 'Tablet PC 4',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Cat(),
-            'brand_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\CatSound(),
+            'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Tablet',
+            'marketing_name'            => 'Tablet PC 4',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
+            'device_cpu'                => 'Cortex A9 1,6 GHz DualCore', // not in wurfl
             
             // product info
             'can_assign_phone_number'   => false,
@@ -132,7 +132,7 @@ class CatTablet
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Cat Tablet'))) {
+        if (!$this->utils->checkIfContains(array('Tablet-PC-4'))) {
             return false;
         }
         

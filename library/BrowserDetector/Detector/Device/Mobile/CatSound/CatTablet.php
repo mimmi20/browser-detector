@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\Weltbild;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CatNova8
+class CatTablet
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,18 +80,18 @@ class CatNova8
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'weltbild_catnova8_ver1', // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'Cat Nova 8',
+            'model_name'                => 'Tablet',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Weltbild(),
-            'brand_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\CatSound(),
+            'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Tablet PC',
+            'marketing_name'            => 'Tablet',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -106,22 +106,22 @@ class CatNova8
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 123,
-            'physical_screen_height' => 164,
-            'columns'                => 60,
-            'rows'                   => 40,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 800,
-            'resolution_height'      => 600,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 1024,
+            'resolution_height'      => 768,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
             // sms
-            'sms_enabled' => true, // wurflkey: weltbild_catnova8_ver1
+            'sms_enabled' => true,
             
             // chips
-            'nfc_support' => true, // wurflkey: weltbild_catnova8_ver1
+            'nfc_support' => true,
         );
     }
     
@@ -132,7 +132,7 @@ class CatNova8
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('CatNova8'))) {
+        if (!$this->utils->checkIfContains(array('Cat Tablet'))) {
             return false;
         }
         
@@ -195,23 +195,5 @@ class CatNova8
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
-        parent::detectDependProperties($browser, $engine, $os);
-        
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        
-        return $this;
     }
 }

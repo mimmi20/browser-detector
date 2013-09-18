@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\Weltbild;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class TolinoShine
+class CatStarGate
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,15 +83,15 @@ class TolinoShine
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobileDevice(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'Tolino Shine',
+            'model_name'                => 'StarGate',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Longshine(),
-            'brand_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\CatSound(),
+            'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Tolino Shine',
+            'marketing_name'            => 'StarGate',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,16 +112,16 @@ class TolinoShine
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 758,
-            'resolution_height'      => 1024,
+            'resolution_width'       => 800,
+            'resolution_height'      => 480,
             'dual_orientation'       => true,
-            'colors'                 => 256,
+            'colors'                 => 65536,
             
             // sms
-            'sms_enabled' => false,
+            'sms_enabled' => true,
             
             // chips
-            'nfc_support' => false,
+            'nfc_support' => true,
         );
     }
     
@@ -132,7 +132,7 @@ class TolinoShine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Tolino'))) {
+        if (!$this->utils->checkIfContains(array('Cat StarGate'))) {
             return false;
         }
         

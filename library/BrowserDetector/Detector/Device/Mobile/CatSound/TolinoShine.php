@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\Weltbild;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CatNova
+class TolinoShine
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,15 +83,15 @@ class CatNova
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\MobileDevice(), // not in wurfl
             
             // device
-            'model_name'                => 'Cat Nova',
+            'model_name'                => 'Tolino Shine',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\Longshine(),
             'brand_name' => new Company\Weltbild(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Cat Nova',
+            'marketing_name'            => 'Tolino Shine',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -106,22 +106,22 @@ class CatNova
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 123,
-            'physical_screen_height' => 164,
-            'columns'                => 60,
-            'rows'                   => 40,
-            'max_image_width'        => 320,
-            'max_image_height'       => 400,
-            'resolution_width'       => 800,
-            'resolution_height'      => 600,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 758,
+            'resolution_height'      => 1024,
             'dual_orientation'       => true,
-            'colors'                 => 65536,
+            'colors'                 => 256,
             
             // sms
-            'sms_enabled' => true,
+            'sms_enabled' => false,
             
             // chips
-            'nfc_support' => true,
+            'nfc_support' => false,
         );
     }
     
@@ -132,11 +132,7 @@ class CatNova
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('CatNova', 'CAT NOVA'))) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains(array('CatNova8'))) {
+        if (!$this->utils->checkIfContains(array('Tolino'))) {
             return false;
         }
         

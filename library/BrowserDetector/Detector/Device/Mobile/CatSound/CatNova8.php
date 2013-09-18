@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Weltbild
+class CatNova8
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,18 +80,18 @@ class Weltbild
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => null, // not in wurfl
+            'wurflKey' => 'CatSound_catnova8_ver1', // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'general Weltbild Device',
+            'model_name'                => 'Nova 8',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Weltbild(),
-            'brand_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\CatSound(),
+            'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Weltbild Device',
+            'marketing_name'            => 'Tablet PC',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -106,22 +106,22 @@ class Weltbild
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => null,
-            'physical_screen_height' => null,
-            'columns'                => null,
-            'rows'                   => null,
-            'max_image_width'        => null,
-            'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'physical_screen_width'  => 123,
+            'physical_screen_height' => 164,
+            'columns'                => 60,
+            'rows'                   => 40,
+            'max_image_width'        => 320,
+            'max_image_height'       => 400,
+            'resolution_width'       => 800,
+            'resolution_height'      => 600,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
-            'sms_enabled' => true,
+            'sms_enabled' => true, // wurflkey: CatSound_catnova8_ver1
             
             // chips
-            'nfc_support' => true,
+            'nfc_support' => true, // wurflkey: CatSound_catnova8_ver1
         );
     }
     
@@ -132,17 +132,7 @@ class Weltbild
      */
     public function canHandle()
     {
-        $weltbildPhones = array(
-            'CatNova',
-            'CAT NOVA',
-            'CatNova8',
-            'Cat StarGate',
-            'Cat Tablet',
-            'Tablet-PC-4',
-            'TOLINO_BROWSER'
-        );
-        
-        if (!$this->utils->checkIfContains($weltbildPhones)) {
+        if (!$this->utils->checkIfContains(array('CatNova8'))) {
             return false;
         }
         
@@ -158,15 +148,7 @@ class Weltbild
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Weltbild');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Weltbild' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -176,7 +158,7 @@ class Weltbild
      */
     public function getWeight()
     {
-        return 47163;
+        return 3;
     }
     
     /**
@@ -213,5 +195,23 @@ class Weltbild
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }

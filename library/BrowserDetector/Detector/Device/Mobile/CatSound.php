@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\Weltbild;
+namespace BrowserDetector\Detector\Device\Mobile;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class TabletPc4
+class CatSound
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,19 +83,19 @@ class TabletPc4
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Tablet PC 4',
+            'model_name'                => 'general CatSound Device',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Cat(),
-            'brand_name' => new Company\Weltbild(),
+            'manufacturer_name' => new Company\CatSound(),
+            'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Tablet PC 4',
+            'marketing_name'            => 'general CatSound Device',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => 'Cortex A9 1,6 GHz DualCore', // not in wurfl
+            'device_cpu'                => null, // not in wurfl
             
             // product info
             'can_assign_phone_number'   => false,
@@ -112,10 +112,10 @@ class TabletPc4
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 1024,
-            'resolution_height'      => 768,
-            'dual_orientation'       => true,
-            'colors'                 => 65536,
+            'resolution_width'       => null,
+            'resolution_height'      => null,
+            'dual_orientation'       => null,
+            'colors'                 => null,
             
             // sms
             'sms_enabled' => true,
@@ -132,7 +132,17 @@ class TabletPc4
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Tablet-PC-4'))) {
+        $catSoundPhones = array(
+            'CatNova',
+            'CAT NOVA',
+            'CatNova8',
+            'Cat StarGate',
+            'Cat Tablet',
+            'Tablet-PC-4',
+            'TOLINO_BROWSER'
+        );
+        
+        if (!$this->utils->checkIfContains($catSoundPhones)) {
             return false;
         }
         
@@ -148,7 +158,15 @@ class TabletPc4
      */
     public function detectDevice()
     {
-        return $this;
+        $chain = new \BrowserDetector\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\CatSound');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'CatSound' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+        
+        return $chain->detect();
     }
     
     /**
@@ -158,7 +176,7 @@ class TabletPc4
      */
     public function getWeight()
     {
-        return 3;
+        return 47163;
     }
     
     /**
