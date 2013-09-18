@@ -91,7 +91,7 @@ class AlcatelOt6033X
             'manufacturer_name' => new Company\Alcatel(),
             'brand_name' => new Company\Alcatel(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'One Touch Star 6033X',
+            'marketing_name'            => 'One Touch Idol Ultra',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,8 +112,8 @@ class AlcatelOt6033X
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 480,
-            'resolution_height'      => 800,
+            'resolution_width'       => 720,
+            'resolution_height'      => 1280,
             'dual_orientation'       => true,
             'colors'                 => 16777216,
             
