@@ -120,6 +120,7 @@ class Safari
             'MQQBrowser',
             'NokiaBrowser',
             'OmniWeb',
+            'Origin',
             'PaleMoon',
             'PhantomJS',
             'Qt',
