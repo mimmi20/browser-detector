@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Nutch
+class CommonCrawl
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -84,7 +84,7 @@ class Nutch
             'browser_type' => new BrowserType\Bot(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'Nutch',
+            'mobile_browser'              => 'commoncrawl',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
@@ -114,11 +114,7 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl'))) {
+        if (!$this->utils->checkIfContains('commoncrawl')) {
             return false;
         }
         
@@ -135,7 +131,7 @@ class Nutch
         $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Nutch', 'Nutch\-');
+        $searches = array('commoncrawl');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -151,7 +147,7 @@ class Nutch
      */
     public function getWeight()
     {
-        return 12;
+        return 724998;
     }
     
     /**
