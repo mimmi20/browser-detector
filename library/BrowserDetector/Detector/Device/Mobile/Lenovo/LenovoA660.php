@@ -91,7 +91,7 @@ class LenovoA660
             'manufacturer_name' => new Company\Lenovo(),
             'brand_name' => new Company\Lenovo(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Lephone A660', // wurflkey: lenovo_A660_ver1
+            'marketing_name'            => 'A660',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class LenovoA660
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 256000,
             
             // sms
             'sms_enabled' => true,
