@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGti9505
+class SamsungGti9505x
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -80,13 +80,13 @@ class SamsungGti9505
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'samsung_gt_i9505_ver1', // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'GT-I9505',
+            'model_name'                => 'GT-I9505X',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
@@ -100,7 +100,7 @@ class SamsungGti9505
             // product info
             'can_assign_phone_number'   => true, 
             'ununiqueness_handler'      => null,
-            'uaprof'                    => 'http://wap.samsungmobile.com/uaprof/GT-I9505.xml',
+            'uaprof'                    => null,
             'uaprof2'                   => null,
             'uaprof3'                   => null,
             'unique'                    => true,
@@ -132,11 +132,7 @@ class SamsungGti9505
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I9505')) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains('GT-I9505X')) {
+        if (!$this->utils->checkIfContains('GT-I9505X')) {
             return false;
         }
         
