@@ -134,6 +134,8 @@ class Android
             'CalDAV',
             'Chrome',
             'Dalvik',
+            'Dolfin',
+            'Dolphin',
             'Fennec',
             'Firefox',
             'FlyFlow',
