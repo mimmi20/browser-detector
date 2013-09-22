@@ -93,7 +93,7 @@ class Windows
         $spamHelper->setUserAgent($this->_useragent);
         
         if ($this->utils->checkIfContains($isNotReallyAWindows)
-            || $spamHelper->isFakeWindows()
+            || (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows())
             || $this->isMobileWindows()
         ) {
             return false;
