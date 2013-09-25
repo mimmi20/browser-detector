@@ -61,6 +61,13 @@ abstract class Core
      */
     protected $cache = null;
     
+    /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger = null;
+    
     /*
      * @var string
      */
@@ -84,6 +91,40 @@ abstract class Core
     {
         $this->cache = $cache;
         
+        return $this;
+    }
+    
+    /**
+     * sets the logger
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \BrowserDetector\BrowserDetector
+     */
+    public function setLogger(\Psr\Log\LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+        
+        return $this;
+    }
+
+    /**
+     * Adds a log record at an arbitrary level.
+     *
+     * This method allows for compatibility with common interfaces.
+     *
+     * @param  mixed   $level   The log level
+     * @param  string  $message The log message
+     * @param  array   $context The log context
+     *
+     * @return \BrowserDetector\BrowserDetector
+     */
+    protected function log($level, $message, array $context = array())
+    {
+        if (null !== $this->logger) {
+            $this->logger->log($level, $message, $context);
+        }
+
         return $this;
     }
 

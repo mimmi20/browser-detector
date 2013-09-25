@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "garetjax/phpbrowscap": "dev-master"
+        "garetjax/phpbrowscap": "dev-master",
+        "psr/log": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
