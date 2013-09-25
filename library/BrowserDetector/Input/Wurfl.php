@@ -80,19 +80,15 @@ class Wurfl extends Core
     /**
      * sets the wurfl detection manager
      *
-     * @var \Wurfl\ManagerFactory|\Wurfl\Manager $wurfl
+     * @var \Wurfl\Manager $wurfl
      *
      * @return \BrowserDetector\Input\Wurfl
      */
     public function setWurflManager($wurfl)
     {
-        if ($wurfl instanceof \Wurfl\ManagerFactory) {
-            $wurfl = $wurfl->create();
-        }
-        
         if (!($wurfl instanceof \Wurfl\Manager)) {
             throw new \UnexpectedValueException(
-                'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory or an instance of \\Wurfl\\ManagerFactory'
+                'the $wurfl object has to be an instance of \\Wurfl\\Manager'
             );
         }
         
