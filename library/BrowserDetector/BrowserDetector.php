@@ -69,6 +69,13 @@ class BrowserDetector
     private $cache = null;
     
     /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger = null;
+    
+    /**
      * @var string
      */
     private $cachePrefix = '';
@@ -104,6 +111,20 @@ class BrowserDetector
     public function setCache(\phpbrowscap\Cache\CacheInterface $cache)
     {
         $this->cache = $cache;
+        
+        return $this;
+    }
+    
+    /**
+     * sets the logger
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \BrowserDetector\BrowserDetector
+     */
+    public function setLogger(\Psr\Log\LoggerInterface $logger)
+    {
+        $this->logger = $logger;
         
         return $this;
     }
@@ -223,6 +244,10 @@ class BrowserDetector
                 ->setCachePrefix($this->cachePrefix);
         }
         
+        if (null !== $this->logger) {
+            $this->interface->setLogger($this->logger);
+        }
+        
         $this->interface->setAgent($this->agent);
         
         return $this->interface;
@@ -249,7 +274,7 @@ class BrowserDetector
             );
         }
         
-        $cacheId = hash('sha512', $this->cachePrefix . $this->agent);
+        $cacheId = $this->cachePrefix . $this->agent;
         $result  = null;
         $success = false;
         
