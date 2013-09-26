@@ -114,7 +114,7 @@ class Ucweb
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('UCWEB', 'UC Browser'))) {
+        if (!$this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
             return false;
         }
         
