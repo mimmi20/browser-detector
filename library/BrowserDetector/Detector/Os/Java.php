@@ -174,6 +174,7 @@ class Java
             new \BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler(),
             new \BrowserDetector\Detector\Browser\Mobile\PlaystationBrowser(),
             new \BrowserDetector\Detector\Browser\Mobile\Silk(),
+            new \BrowserDetector\Detector\Browser\Mobile\Jasmine()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
