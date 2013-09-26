@@ -149,6 +149,7 @@ class Darwin
             new \BrowserDetector\Detector\Browser\Mobile\Puffin(),
             new \BrowserDetector\Detector\Browser\Mobile\Omniweb(),
             new \BrowserDetector\Detector\Browser\Mobile\AtomicBrowser(),
+            new \BrowserDetector\Detector\Browser\Mobile\Mercury()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
