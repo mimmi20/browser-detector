@@ -114,27 +114,7 @@ class Puffin
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
         if (!$this->utils->checkIfContains(array('Puffin', 'Puffin%20Free'))) {
-            return false;
-        }
-        
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'Iron'
-        );
-        
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
         }
         
