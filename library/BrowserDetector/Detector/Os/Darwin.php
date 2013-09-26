@@ -150,7 +150,8 @@ class Darwin
             new \BrowserDetector\Detector\Browser\Mobile\Omniweb(),
             new \BrowserDetector\Detector\Browser\Mobile\AtomicBrowser(),
             new \BrowserDetector\Detector\Browser\Mobile\Mercury(),
-            new \BrowserDetector\Detector\Browser\Bot\Bingbot()
+            new \BrowserDetector\Detector\Browser\Bot\Bingbot(),
+            new \BrowserDetector\Detector\Browser\Bot\Maven()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
