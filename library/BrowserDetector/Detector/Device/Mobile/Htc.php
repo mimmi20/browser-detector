@@ -168,7 +168,8 @@ class Htc
             'NexusOne',
             'Nexus-One',
             'pcdadr6350',
-            'ADR6350'
+            'ADR6350',
+            'PJ83100'
         );
         
         if (!$this->utils->checkIfContains($htcPhones)) {
