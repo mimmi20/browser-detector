@@ -274,7 +274,7 @@ class BrowserDetector
             );
         }
         
-        $cacheId = $this->cachePrefix . $this->agent;
+        $cacheId = $this->cachePrefix . $this->agent;//hash('sha512', $this->cachePrefix . $this->agent);
         $result  = null;
         $success = false;
         

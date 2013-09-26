@@ -121,9 +121,12 @@ class Browscap extends Core
         }
         
         $this->parser->setCache($this->cache)
-            ->setLocaleFile($this->localFile)
             ->setCachePrefix($this->cachePrefix)
         ;
+        
+        if (null !== $this->localFile) {
+            $this->parser->setLocaleFile($this->localFile);
+        }
         
         if (null !== $this->logger) {
             $this->setLogger($this->logger);
