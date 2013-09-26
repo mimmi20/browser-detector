@@ -114,7 +114,7 @@ class Bingbot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('bingbot/', 'Bing/', 'Bing for iPad/', 'msnbot', 'adidxbot', 'msnbot-media'))) {
+        if (!$this->utils->checkIfContains(array('bingbot/', 'Bing/', 'Bing for iPad/', 'msnbot', 'adidxbot', 'msnbot-media', 'MSN/'))) {
             return false;
         }
         
