@@ -135,4 +135,42 @@ class Ubuntu
     {
         return 72;
     }
+    
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            
+            new \BrowserDetector\Detector\Browser\Mobile\Android(),
+            new \BrowserDetector\Detector\Browser\Desktop\Chrome(),
+            new \BrowserDetector\Detector\Browser\Mobile\Dalvik(),
+            new \BrowserDetector\Detector\Browser\Mobile\Silk(),
+            new \BrowserDetector\Detector\Browser\Mobile\Dolfin(),
+            new \BrowserDetector\Detector\Browser\Mobile\NetFrontLifeBrowser(),
+            new \BrowserDetector\Detector\Browser\Bot\Googlebot(),
+            new \BrowserDetector\Detector\Browser\Desktop\Opera(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaMobile(),
+            new \BrowserDetector\Detector\Browser\Mobile\OperaTablet(),
+            new \BrowserDetector\Detector\Browser\Desktop\Firefox(),
+            new \BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc(),
+            new \BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager(),
+            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
+            new \BrowserDetector\Detector\Browser\Mobile\YaBrowser(),
+            new \BrowserDetector\Detector\Browser\Mobile\MqqBrowser(),
+            new \BrowserDetector\Detector\Browser\Desktop\Chromium()
+        );
+        
+        $chain = new \BrowserDetector\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
 }
