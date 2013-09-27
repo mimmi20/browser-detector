@@ -112,10 +112,10 @@ class NokiaC202
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 240,
+            'resolution_height'      => 320,
+            'dual_orientation'       => false,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
