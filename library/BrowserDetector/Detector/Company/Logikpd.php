@@ -55,12 +55,12 @@ class Logikpd extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'LogikPD';
+    protected $name = 'LogicPD';
     
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'LogikPD';
+    protected $brandname = 'LogicPD';
 }
