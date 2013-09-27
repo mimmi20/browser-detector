@@ -148,7 +148,7 @@ class Dolfin
         $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Dolphin HD', 'Dolphin\/INT', 'Dolfin', 'Dolphin');
+        $searches = array('Dolphin HD', 'Dolphin\/INT\-', 'Dolphin\/INT', 'Dolfin', 'Dolphin');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
