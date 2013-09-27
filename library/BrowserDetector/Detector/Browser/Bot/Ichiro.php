@@ -161,7 +161,7 @@ class Ichiro
     {
         parent::detectDependProperties($engine, $os, $device);
         
-        $agent = str_ireplace('ichiro', '', $this->_useragent);
+        $agent = str_ireplace(array('ichiro/mobile', 'ichiro', 'search.goo'), '', $this->_useragent);
         
         $detector = new \BrowserDetector\Input\UserAgent();
         $detector->setAgent($agent);
