@@ -206,7 +206,7 @@ class SpamCrawlerFake
                 'google earth', 'google desktop', 'googletoolbar', 'googlet5',
                 'simbar', 'google web preview', 'googletv', 'google_impact',
                 'google page speed', 'google-tr', '=google', 'enusbingip',
-                'fbmapping'
+                'fbmapping', 'yandex.translate', 'yandex browser'
             );
             
             if ($this->utils->checkIfContains($noBot, true)) {
