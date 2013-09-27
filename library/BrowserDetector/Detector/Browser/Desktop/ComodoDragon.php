@@ -162,7 +162,7 @@ class ComodoDragon
         $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('Comodo Dragon');
+        $searches = array('Comodo Dragon', 'Chrome');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
