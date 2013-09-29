@@ -86,7 +86,7 @@ class HtcDesireC
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Desire C',
+            'model_name'                => '1000C',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),
