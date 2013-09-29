@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Browser\Bot;
+namespace BrowserDetector\Detector\Browser\Desktop;
 
 /**
  * PHP version 5.3
