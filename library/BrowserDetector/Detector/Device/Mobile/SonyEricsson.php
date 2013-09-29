@@ -179,6 +179,7 @@ class SonyEricsson
             'w508a',
             'w760i',
             'wt13i',
+            'wt19i',
             'x1i',
             'x10',
             'xst2',
