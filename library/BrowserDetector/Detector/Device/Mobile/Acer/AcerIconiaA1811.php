@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Acer
+class AcerIconiaA1811
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,15 +83,15 @@ class Acer
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'general Acer Device',
+            'model_name'                => 'A1-811',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Acer(),
             'brand_name' => new Company\Acer(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Acer Device',
+            'marketing_name'            => 'Iconia A1-811',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class Acer
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 1024,
+            'resolution_height'      => 768,
+            'dual_orientation'       => true,
+            'colors'                 => 4294967296,
             
             // sms
             'sms_enabled' => true,
@@ -132,40 +132,21 @@ class Acer
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'IdeaTab', 'Wildfire S A510e', 'A101IT', 'SmartTabII7'))) {
+        if (!$this->utils->checkIfContains(array('Iconia B1-710', 'B1-710'))) {
             return false;
         }
         
-        $acerPhones = array(
-            'Acer',
-            'Iconia',
-            ' A100 ',
-            ' A101 ',
-            ' A200 ',
-            ' A210 ',
-            ' A211 ',
-            ' A500 ',
-            ' A501 ',
-            ' A510 ',
-            ' A511 ',
-            ' A700 ',
-            ' A701 ',
-            ' A1-',
-            ' B1-',
-            ' E140 ',
-            ' E310 ',
-            ' E320 ',
-            ' G100W ',
-            'Stream-S110',
-            ' Liquid ',
-            ' S500 ',
-        );
-        
-        if ($this->utils->checkIfContains($acerPhones)) {
-            return true;
-        }
-        
-        return false;
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -177,25 +158,7 @@ class Acer
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Acer');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Acer' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 321280;
+        return $this;
     }
     
     /**
