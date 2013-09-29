@@ -151,6 +151,7 @@ class SpamCrawlerFake
             'parser',
             'ping',
             'presto/951',
+            'privacy auditors',
             'ramblermail',
             'rebelmouse',
             'retriever',
