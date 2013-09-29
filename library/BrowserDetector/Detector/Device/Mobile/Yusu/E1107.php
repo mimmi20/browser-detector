@@ -160,7 +160,7 @@ class E1107
      */
     public function detectDevice()
     {
-        return $this();
+        return $this;
     }
     
     /**
