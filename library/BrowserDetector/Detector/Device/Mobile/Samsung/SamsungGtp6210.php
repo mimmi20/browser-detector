@@ -115,6 +115,7 @@ class SamsungGtp6210
             'resolution_width'       => 1280,
             'resolution_height'      => 800,
             'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => false,
