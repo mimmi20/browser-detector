@@ -86,12 +86,12 @@ class Nokia311
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Asha 311',
+            'model_name'                => '311',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Nokia(),
             'brand_name' => new Company\Nokia(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Nokia Asha 311', // wurflkey: nokia_311_ver1
+            'marketing_name'            => 'Asha 311', // wurflkey: nokia_311_ver1
             'has_qwerty_keyboard'       => false,            // wurflkey: nokia_311_ver1
             'pointing_method'           => 'touchscreen',            // wurflkey: nokia_311_ver1
             'device_bits'               => null, // not in wurfl
