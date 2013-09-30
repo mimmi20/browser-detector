@@ -114,7 +114,7 @@ class SiteKiosk
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SiteKiosk/'))) {
+        if (!$this->utils->checkIfContains(array('SiteKiosk'))) {
             return false;
         }
         
