@@ -523,6 +523,7 @@ class InputMapper
             case 'windows mobile 7':
             case 'windows mobile 7.5':
             case 'windows phone 7':
+            case 'windows phone 7.5':
             case 'windows phone 8':
             case 'fennec tablet':
             case 'tablet on android':
