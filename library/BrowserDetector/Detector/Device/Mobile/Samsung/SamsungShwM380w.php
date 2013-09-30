@@ -83,16 +83,16 @@ class SamsungShwM380w
             'wurflKey' => 'samsung_shw_m380s_ver1_suban32', // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
             'model_name'                => 'SHW-M380W',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
-            'model_extra_info'          => 'SKT',             // wurflkey: samsung_shw_m380s_ver1_suban32
-            'marketing_name'            => 'Galaxy Tab 10.1', // wurflkey: samsung_shw_m380s_ver1_suban32
-            'has_qwerty_keyboard'       => true,              // wurflkey: samsung_shw_m380s_ver1_suban32
+            'model_extra_info'          => 'SKT',            
+            'marketing_name'            => 'Galaxy Tab 10.1',
+            'has_qwerty_keyboard'       => true,             
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
@@ -112,10 +112,10 @@ class SamsungShwM380w
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 1280,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
