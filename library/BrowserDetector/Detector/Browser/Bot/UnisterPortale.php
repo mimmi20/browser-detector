@@ -117,7 +117,7 @@ class UnisterPortale
         $portale = array(
             'www.auto.de', 
             'auto.de', 
-            'www.kredit.de', 
+            'kredit.de', 
             'www.geld.de', 
             'www.versicherungen.de', 
             'insurance.preisvergleich.de', 
