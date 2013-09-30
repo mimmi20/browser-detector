@@ -83,7 +83,7 @@ class LencoCoolTab70
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\FonePad(), // not in wurfl
             
             // device
             'model_name'                => 'CoolTab-70',
@@ -115,7 +115,7 @@ class LencoCoolTab70
             'resolution_width'       => 800,
             'resolution_height'      => 480,
             'dual_orientation'       => true,
-            'colors'                 => null,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
