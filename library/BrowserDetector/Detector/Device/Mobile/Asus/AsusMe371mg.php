@@ -80,10 +80,10 @@ class AsusMe371mg
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'asus_eee_pad_tf101_ver1', // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\FonePad(), // not in wurfl
             
             // device
             'model_name'                => 'ME371MG',
