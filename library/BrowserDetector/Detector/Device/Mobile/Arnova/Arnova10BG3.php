@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Arnova;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Arnova
+class Arnova10BG3
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class Arnova
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'general Arnova Device',
+            'model_name'                => 'AN10BG3',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Arnova(),
             'brand_name' => new Company\Arnova(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Arnova Device',
+            'marketing_name'            => '10b G3',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class Arnova
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 1024,
+            'resolution_height'      => 600,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
@@ -132,17 +132,7 @@ class Arnova
      */
     public function canHandle()
     {
-        $arnovaPhones = array(
-            'AN7CG2',
-            'AN7DG3',
-            'AN7FG3',
-            'AN10BG3',
-            'AN10DG3',
-            'ARCHM901',
-            'AN7BG2DT'
-        );
-        
-        if (!$this->utils->checkIfContains($arnovaPhones)) {
+        if (!$this->utils->checkIfContains('AN10BG3')) {
             return false;
         }
         
@@ -158,15 +148,7 @@ class Arnova
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Arnova');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Arnova' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -176,7 +158,7 @@ class Arnova
      */
     public function getWeight()
     {
-        return 2203;
+        return 3;
     }
     
     /**
