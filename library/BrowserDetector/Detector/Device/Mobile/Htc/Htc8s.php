@@ -86,12 +86,12 @@ class Htc8s
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'Windows Phone 8S',
+            'model_name'                => '8S',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Windows Phone 8S',
+            'marketing_name'            => '8S',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
