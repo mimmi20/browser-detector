@@ -174,6 +174,30 @@ class GeneralMobile
     }
     
     /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\BrowserDetector\Os\Handler
+     */
+    public function detectBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' 
+            . DIRECTORY_SEPARATOR . 'Browser'
+            . DIRECTORY_SEPARATOR . 'Mobile'
+            . DIRECTORY_SEPARATOR
+        );
+        
+        $chain = new \BrowserDetector\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Mobile');
+        $chain->setDirectory($browserPath);
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        
+        return $chain->detect();
+    }
+    
+    /**
      * detects properties who are depending on the device version or the user 
      * agent
      *
