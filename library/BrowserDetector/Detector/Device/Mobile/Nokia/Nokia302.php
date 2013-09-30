@@ -91,9 +91,9 @@ class Nokia302
             'manufacturer_name' => new Company\Nokia(),
             'brand_name' => new Company\Nokia(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Asha 302', // wurflkey: nokia_302_ver1
+            'marketing_name'            => 'Asha 302',
             'has_qwerty_keyboard'       => true,
-            'pointing_method'           => '',         // wurflkey: nokia_302_ver1      // wurflkey: nokia_302_ver1
+            'pointing_method'           => 'joystick',             
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
@@ -112,10 +112,10 @@ class Nokia302
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 240,
-            'resolution_height'      => 320,
+            'resolution_width'       => 320,
+            'resolution_height'      => 240,
             'dual_orientation'       => false,
-            'colors'                 => 65536,
+            'colors'                 => 262144,
             
             // sms
             'sms_enabled' => true,
