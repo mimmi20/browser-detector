@@ -708,7 +708,9 @@ class Wurfl extends Core
                 $type = 'general Device';
             }
         } else {
-            if ($apiTab) {
+            if ($apiTab && $apiPhone) {
+                $type = 'FonePad';
+            } elseif ($apiTab) {
                 $type = 'Tablet';
             } elseif ($apiPhone) {
                 $type = 'Mobile Phone';
