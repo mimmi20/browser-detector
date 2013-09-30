@@ -614,6 +614,10 @@ class InputMapper
             case 'asus-padfone':
                 $deviceName = 'PadFone';
                 break;
+            case 'memopad smart 10':
+            case 'memo pad smart 10':
+                $deviceName = 'MeMO Pad Smart 10';
+                break;
             // Creative
             case 'creative ziio7':
                 $deviceName = 'ZiiO7';
