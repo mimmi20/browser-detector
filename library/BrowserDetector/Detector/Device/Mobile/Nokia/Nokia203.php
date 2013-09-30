@@ -92,7 +92,7 @@ class Nokia203
             'brand_name' => new Company\Nokia(),
             'model_extra_info'          => null,
             'marketing_name'            => 'Asha 203',
-            'has_qwerty_keyboard'       => true,
+            'has_qwerty_keyboard'       => false,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
