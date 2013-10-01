@@ -115,7 +115,7 @@ class HuaweiU9508
             'resolution_width'       => 1280,
             'resolution_height'      => 720,
             'dual_orientation'       => true,
-            'colors'                 => null,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
