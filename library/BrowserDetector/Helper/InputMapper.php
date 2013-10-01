@@ -610,6 +610,9 @@ class InputMapper
             case 'sensationxe beats z715e':
                 $deviceName = 'Sensation XE Beats Z715e';
                 break;
+            case 's510b':
+                $deviceName = 'S510B';
+                break;
             // Asus
             case 'asus-padfone':
                 $deviceName = 'PadFone';
@@ -735,6 +738,7 @@ class InputMapper
                 break;
             // HTC
             case 'sensationxe beats z715e':
+            case 's510b':
                 $deviceMaker = 'HTC';
                 break;
             // Asus
