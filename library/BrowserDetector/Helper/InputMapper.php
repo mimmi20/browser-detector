@@ -642,6 +642,9 @@ class InputMapper
             case 'p9514':
                 $deviceName = 'LifeTab P9514';
                 break;
+            case 'lifetab s9512':
+                $deviceName = 'LifeTab S9512';
+                break;
             default:
                 // nothing to do here
                 break;
@@ -762,6 +765,7 @@ class InputMapper
             // Medion
             case 'p9514':
             case 'lifetab p9514':
+            case 'lifetab s9512':
                 $deviceMaker = 'Medion';
                 break;
             // Apple
@@ -864,6 +868,9 @@ class InputMapper
             case 'lifetab p9514':
                 $marketingName = 'LifeTab P9514';
                 break;
+            case 'lifetab s9512':
+                $marketingName = 'LifeTab S9512';
+                break;
             // Apple
             case 'ipad':
                 $marketingName = 'iPad';
@@ -939,6 +946,7 @@ class InputMapper
             // Medion
             case 'p9514':
             case 'lifetab p9514':
+            case 'lifetab s9512':
                 $brandName = 'Medion';
                 break;
             // Apple
