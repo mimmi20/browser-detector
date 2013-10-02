@@ -126,6 +126,11 @@ class Android
             return true;
         }
         
+        $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $this->_useragent, $matches);
+        if ($doMatch && $matches[1] >= 4) {
+            return true;
+        }
+        
         return false;
     }
     

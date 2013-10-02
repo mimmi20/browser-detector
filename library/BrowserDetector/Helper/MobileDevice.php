@@ -131,6 +131,7 @@ class MobileDevice
             'meego',
             'midp',
             'mobile version',
+            'mqqbrowser',
             'netfront',
             'nintendo',
             'nitro',
@@ -201,6 +202,11 @@ class MobileDevice
         }
         
         if ($this->utils->checkIfContains('Windows NT 6.2; ARM;')) {
+            return true;
+        }
+        
+        $doMatch = preg_match('/\d+\*\d+/', $this->_useragent);
+        if ($doMatch) {
             return true;
         }
         
