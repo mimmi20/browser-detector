@@ -376,6 +376,12 @@ class Version implements \Serializable
         $version = $this->_default;
         $found   = false;
         
+        $useragent = $this->_useragent;
+        
+        if (false !== strpos($useragent, '%')) {
+            $useragent = urldecode($useragent);
+        }
+        
         foreach ($searches as $search) {
             if (!is_string($search)) {
                 continue;
@@ -390,7 +396,7 @@ class Version implements \Serializable
                     . $modifier[1] . '/';
                 
                 $doMatch = preg_match(
-                    $compareString, $this->_useragent, $matches
+                    $compareString, $useragent, $matches
                 );
             
                 if ($doMatch) {
