@@ -86,7 +86,7 @@ class HtcOneXplus
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'One X+',
+            'model_name'                => 'PM63100',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),
