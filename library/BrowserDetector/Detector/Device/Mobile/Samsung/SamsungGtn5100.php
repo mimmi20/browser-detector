@@ -83,7 +83,7 @@ class SamsungGtn5100
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\FonePad(), // not in wurfl
             
             // device
             'model_name'                => 'GT-N5100',
