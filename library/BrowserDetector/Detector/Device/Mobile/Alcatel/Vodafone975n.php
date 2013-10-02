@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Alcatel
+class Vodafone975n
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,19 +86,19 @@ class Alcatel
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Alcatel Device',
+            'model_name'                => '975N',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Alcatel(),
-            'brand_name' => new Company\Alcatel(),
-            'model_extra_info'          => null,
-            'marketing_name'            => 'general Alcatel Device',
+            'brand_name' => new Company\Vodafone(),
+            'model_extra_info'          => 'Vodafone',
+            'marketing_name'            => 'Smart III',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -112,10 +112,10 @@ class Alcatel
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
@@ -132,19 +132,21 @@ class Alcatel
      */
     public function canHandle()
     {
-        $alcatelPhones = array(
-            'ALCATEL',
-            'Alcatel',
-            'BASE_Lutea_3',
-            'Vodafone 975N',
-            'Vodafone Smart II'
-        );
-        
-        if ($this->utils->checkIfContains($alcatelPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains(array('Vodafone 975N'))) {
+            return false;
         }
         
-        return false;
+        return true;
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
     
     /**
@@ -156,47 +158,7 @@ class Alcatel
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Alcatel');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Alcatel' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 52085;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -211,5 +173,23 @@ class Alcatel
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();
+    }
+    
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
+    {
+        parent::detectDependProperties($browser, $engine, $os);
+        
+        // wurflkey: alcatel_v860_ver1
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        
+        return $this;
     }
 }
