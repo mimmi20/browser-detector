@@ -581,8 +581,8 @@ class InputMapper
             case 'gt s5620':
                 $deviceName = 'GT-S5620';
                 break;
-            case 'sgh-i917':
-                $deviceName = 'SGH-I917';
+            case 'sch-i699':
+                $deviceName = 'SCH-I699';
                 break;
             case 'sgh-i957':
                 $deviceName = 'SGH-I957';
@@ -723,10 +723,10 @@ class InputMapper
             case 'gt i7500':
             case 'gt-p5110':
             case 'gt s5620':
+            case 'sch-i699':
             case 'sgh-i917':
             case 'sgh-i957':
             case 'sgh-i900v':
-            case 'sgh-i917':
             case 'sgh i900':
             case 'sph-930':
                 $deviceMaker = 'Samsung';
