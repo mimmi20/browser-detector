@@ -130,6 +130,7 @@ class MobileDevice
             'maemo',
             'meego',
             'midp',
+            'mobile version',
             'netfront',
             'nintendo',
             'nitro',

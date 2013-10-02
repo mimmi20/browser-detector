@@ -126,7 +126,7 @@ class Windows
         $mobileWindows = array(
             'windows ce', 'windows phone', 'windows mobile', 
             'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
-            'windowsmobile', 'wpdesktop'
+            'windowsmobile', 'wpdesktop', 'mobile version'
         );
         
         if (!$this->utils->checkIfContains($mobileWindows, true)) {

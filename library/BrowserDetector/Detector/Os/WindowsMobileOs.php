@@ -128,6 +128,11 @@ class WindowsMobileOs
             return false;
         }
         
+        $doMatch = preg_match('/mobile version([\d]+)/', $this->_useragent, $matches);
+        if ($doMatch && $matches[1] >= 70) {
+            return false;
+        }
+        
         return true;
     }
     
