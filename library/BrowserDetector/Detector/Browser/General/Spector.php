@@ -114,10 +114,6 @@ class Spector
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-        
         if (!$this->utils->checkIfContains(array('Spector/', 'Spector%20Pro'))) {
             return false;
         }
