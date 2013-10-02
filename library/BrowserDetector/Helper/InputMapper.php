@@ -813,6 +813,9 @@ class InputMapper
             case 'galaxy sii':
                 $marketingName = 'Galaxy S II';
                 break;
+            case 'galaxy sii plus':
+                $marketingName = 'Galaxy S II Plus';
+                break;
             case 'galaxy siii':
             case 'galaxy s3':
                 $marketingName = 'Galaxy S III';
