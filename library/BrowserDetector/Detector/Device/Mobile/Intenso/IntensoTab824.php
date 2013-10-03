@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Intenso;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Intenso
+class IntensoTab824
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class Intenso
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'general Intenso Device',
+            'model_name'                => 'Tab 824',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Intenso(),
             'brand_name' => new Company\Intenso(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'general Intenso Device',
+            'marketing_name'            => 'Tab 824',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,8 +112,8 @@ class Intenso
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 800,
-            'resolution_height'      => 600,
+            'resolution_width'       => 1024,
+            'resolution_height'      => 768,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
@@ -132,7 +132,7 @@ class Intenso
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('INM803HC', 'INM8002KP'))) {
+        if (!$this->utils->checkIfContains('INM8002KP')) {
             return false;
         }
         
@@ -148,15 +148,7 @@ class Intenso
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Intenso');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Intenso' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -167,28 +159,6 @@ class Intenso
     public function getWeight()
     {
         return 3;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
     }
     
     /**
