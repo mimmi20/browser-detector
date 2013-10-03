@@ -132,7 +132,7 @@ class SamsungGti9300
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GT-I9300', 'GT-i9300', 'I9300'))) {
+        if (!$this->utils->checkIfContains(array('GT-I9300', 'GT-i9300', 'I9300', 'GT-l9300'))) {
             return false;
         }
         
