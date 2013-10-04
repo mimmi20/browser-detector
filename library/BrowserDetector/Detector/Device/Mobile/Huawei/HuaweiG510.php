@@ -132,7 +132,7 @@ class HuaweiG510
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HuaweiG510', 'HUAWEI G510'))) {
+        if (!$this->utils->checkIfContains(array('HuaweiG510', 'HUAWEI G510', 'HUAWEI_T8951'))) {
             return false;
         }
         
