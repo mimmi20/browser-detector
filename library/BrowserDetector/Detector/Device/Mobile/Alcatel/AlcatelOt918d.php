@@ -132,7 +132,12 @@ class AlcatelOt918d
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ALCATEL ONE TOUCH 918D', 'ALCATEL_one_touch_918D'))) {
+        $phones = array(
+            'ALCATEL ONE TOUCH 918D', 'ALCATEL_one_touch_918D',
+            'ALCATEL_OT_918D'
+        );
+        
+        if (!$this->utils->checkIfContains($phones)) {
             return false;
         }
         
