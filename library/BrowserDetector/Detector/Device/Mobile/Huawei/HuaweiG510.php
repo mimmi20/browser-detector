@@ -83,7 +83,7 @@ class HuaweiG510
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\Tablet(), // not in wurfl
+            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
             'model_name'                => 'G510',
@@ -91,7 +91,7 @@ class HuaweiG510
             'manufacturer_name' => new Company\Huawei(),
             'brand_name' => new Company\Huawei(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'G510',
+            'marketing_name'            => 'Ascend G510',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class HuaweiG510
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 480,
+            'resolution_height'      => 854,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
@@ -132,7 +132,7 @@ class HuaweiG510
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HuaweiG510')) {
+        if (!$this->utils->checkIfContains(array('HuaweiG510', 'HUAWEI G510'))) {
             return false;
         }
         
