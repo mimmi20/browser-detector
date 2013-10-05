@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class CatTablet
+class CatTabletPhoenix
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class CatTablet
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'Tablet',
+            'model_name'                => 'Phönix',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\CatSound(),
             'brand_name' => new Company\CatSound(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Tablet',
+            'marketing_name'            => 'Phönix',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -132,11 +132,7 @@ class CatTablet
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Cat Tablet'))) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains(array('Cat Tablet PHOENIX'))) {
+        if (!$this->utils->checkIfContains(array('Cat Tablet PHOENIX'))) {
             return false;
         }
         
@@ -163,28 +159,6 @@ class CatTablet
     public function getWeight()
     {
         return 3;
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
     }
     
     /**
