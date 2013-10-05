@@ -132,7 +132,7 @@ class LenovoS2110afIdeaTab
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTabS2110AF'))) {
+        if (!$this->utils->checkIfContains(array('IdeaTabS2110AF', 'IdeaTabS2110AH'))) {
             return false;
         }
         
