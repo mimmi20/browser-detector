@@ -23,7 +23,8 @@
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
-        "dubcanada/uaparser": "for using the ua parser as alternative parser"
+        "dubcanada/uaparser": "for using the ua parser as alternative parser",
+        "zendframework/zend-cache": "if you want to use zend cache"
     },
     "autoload": {
         "psr-0": {
