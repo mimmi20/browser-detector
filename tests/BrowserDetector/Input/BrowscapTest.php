@@ -39,7 +39,7 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetBrowserFromMod($agent, $browser, $version, $platform)
     {
-        $this->object->setLocaleFile(LIB_PATH . DS . 'BrowserDetector' . DS . 'data' . DS . 'browscap.ini');
+        $this->object->setLocaleFile('tests/data/modified_full_php_browscap.ini');
         $this->object->setCachePrefix('modified_ini_');
         $this->object->setAgent($agent);
         
@@ -110,7 +110,7 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetBrowserFromOrig($agent, $browser, $version, $platform)
     {
-        $this->object->setLocaleFile(LIB_PATH . DS . 'BrowserDetector' . DS . 'data' . DS . 'php_browscap_5003.ini');
+        $this->object->setLocaleFile('tests/data/full_php_browscap.ini');
         $this->object->setCachePrefix('original_ini_');
         
         //$this->object->setAgent($agent);
