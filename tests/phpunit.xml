@@ -1,36 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="./bootstrap.php"
-         verbose="true">
-         <!--
-         backupGlobals="false"
-         backupStaticAttributes="false"
-         cacheTokens="false"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         forceCoversAnnotation="false"
-         mapTestClassNameToCoveredClassName="false"
+         verbose="true"
          stopOnError="false"
          stopOnFailure="false"
          stopOnIncomplete="false"
          stopOnSkipped="false"
-         strict="true"
-         processIsolation="false"
-         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
-         colors="false" -->
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         colors="false"
+         forceCoversAnnotation="false"
+         strict="false"
+         processIsolation="false">
     <testsuites>
-        <testsuite name="TM Core Api">
-            <directory>./Backend/</directory>
+        <testsuite name="Browser Detector Tests">
+            <directory>./BrowserDetector/</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist>
-            <directory suffix=".php">../library</directory>
-            <exclude>
-                <directory>../library/Zend</directory>
-                <directory>../library/Doctrine</directory>
-                <directory>../library/Unister</directory>
-                <directory suffix=".phtml">../library</directory>
-            </exclude>
+            <directory suffix=".php">../library/BrowserDetector</directory>
         </whitelist>
     </filter>
 </phpunit>
