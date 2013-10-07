@@ -264,6 +264,10 @@ class SpamCrawlerFake
             return false;
         }
         
+        if ($this->isAnonymized()) {
+            return false;
+        }
+        
         if ($this->utils->checkIfStartsWith(array('ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey', 'chrome'), true)) {
             return true;
         }
@@ -292,10 +296,6 @@ class SpamCrawlerFake
             && $this->utils->checkIfContains(array('chrome', 'safari', 'internet explorer'), true)
         ) {
             return true;
-        }
-        
-        if ($this->isAnonymized()) {
-            return false;
         }
         
         if ($this->isFakeWindows()) {
