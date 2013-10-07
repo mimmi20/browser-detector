@@ -92,7 +92,7 @@ class SamsungSghi747m
             'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
             'marketing_name'            => 'Galaxy S III',
-            'has_qwerty_keyboard'       => false,
+            'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
