@@ -88,8 +88,8 @@ class BlackBerryZ10
             // device
             'model_name'                => 'Z10',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Rim(),
-            'brand_name' => new Company\Rim(),
+            'manufacturer_name' => new Company\BlackBerry(),
+            'brand_name' => new Company\BlackBerry(),
             'model_extra_info'          => null,
             'marketing_name'            => 'Z10',
             'has_qwerty_keyboard'       => true,
@@ -114,7 +114,7 @@ class BlackBerryZ10
             'max_image_height'       => null,
             'resolution_width'       => 768,
             'resolution_height'      => 1280,
-            'dual_orientation'       => true,
+            'dual_orientation'       => false,
             'colors'                 => 16777216,
             
             // sms
