@@ -41,6 +41,17 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
+
+use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Browser as BrowserType;
 use \BrowserDetector\Detector\Browser\General\CfNetwork as CfNetworkBase;
 
 /**
