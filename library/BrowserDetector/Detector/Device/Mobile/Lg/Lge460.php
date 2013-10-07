@@ -91,7 +91,7 @@ class Lge460
             'manufacturer_name' => new Company\Lg(),
             'brand_name' => new Company\Lg(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'Optimus L3',
+            'marketing_name'            => 'Optimus L5 II',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,8 +112,8 @@ class Lge460
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 240,
-            'resolution_height'      => 320,
+            'resolution_width'       => 480,
+            'resolution_height'      => 800,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
