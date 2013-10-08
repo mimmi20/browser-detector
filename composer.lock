@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9da50d3c42370a594e18bbb99e47e547",
+    "hash": "d4ba6ed37b17fb7530a0bff5579664cd",
     "packages": [
         {
             "name": "garetjax/phpbrowscap",
@@ -11,7 +11,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/phpbrowscap.git",
-                "reference": "d5d56070d37aa223594aeb9fb7455d7376d55c0e"
+                "reference": "2b9e59412e9cb5341074f9efcf21d9269c3c6293"
             },
             "require": {
                 "php": ">=5.3.0",
@@ -48,7 +48,7 @@
                 "get_browser",
                 "user agent"
             ],
-            "time": "2013-10-06 18:05:18"
+            "time": "2013-10-08 05:06:17"
         },
         {
             "name": "psr/log",
@@ -90,6 +90,45 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "dubcanada/uaparser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mimmi20/kairos-uaparser.git",
+                "reference": "7417e012135e94cf7a3be336effe672b2e07c7d7"
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/UA.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Verbeek",
+                    "role": "composer"
+                },
+                {
+                    "name": "Tobie",
+                    "role": "original developer"
+                }
+            ],
+            "description": "User Agent parser in php from https://github.com/tobie/ua-parser modified to use JSON",
+            "homepage": "http://github.com/dubcanada",
+            "keywords": [
+                "php",
+                "ua",
+                "user-agent"
+            ],
+            "time": "2013-04-09 14:11:09"
+        },
         {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.13",
@@ -503,6 +542,52 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2013-09-22 18:04:39"
+        },
+        {
+            "name": "synchro/uasparser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mimmi20/UASparser.git",
+                "reference": "e952a93d6b1aea7d8847f4710f611b8c70d6ffc1"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "ext-xdebug": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "UAS": "UAS/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jaroslav Mallat",
+                    "homepage": "http://user-agent-string.info/",
+                    "role": "developer"
+                },
+                {
+                    "name": "Marcus Bointon",
+                    "email": "marcus@synchromedia.co.uk",
+                    "homepage": "https://github.com/Synchro",
+                    "role": "developer"
+                }
+            ],
+            "description": "UASparser is a PHP parser and classifier for user agent strings presented by HTTP clients using databases from http://user-agent-string.info/.",
+            "homepage": "https://github.com/Synchro/UASparser",
+            "keywords": [
+                "http",
+                "parser",
+                "user-agent"
+            ],
+            "time": "2013-10-06 18:50:14"
         }
     ],
     "aliases": [
@@ -510,7 +595,9 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "garetjax/phpbrowscap": 20
+        "garetjax/phpbrowscap": 20,
+        "synchro/uasparser": 20,
+        "dubcanada/uaparser": 20
     },
     "platform": {
         "php": ">=5.3.3"
