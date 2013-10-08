@@ -120,9 +120,11 @@ class Browscap extends Core
             );
         }
         
-        $this->parser->setCache($this->cache)
-            ->setCachePrefix($this->cachePrefix)
-        ;
+        if (null !== $this->cache) {
+            $this->parser->setCache($this->cache)
+                ->setCachePrefix($this->cachePrefix)
+            ;
+        }
         
         if (null !== $this->localFile) {
             $this->parser->setLocaleFile($this->localFile);

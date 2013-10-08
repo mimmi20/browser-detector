@@ -97,7 +97,7 @@ class Uaparser extends Core
             );
         }
         
-        $parserResult = $this->parser->parse($this->_agent);
+        $parserResult = $this->initParser()->parse($this->_agent);
         
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
@@ -117,5 +117,36 @@ class Uaparser extends Core
         $result->setCapability('device_os_version', $osVersion);
         
         return $result;
+    }
+    
+    /**
+     * sets the main parameters to the parser
+     *
+     * @throws \UnexpectedValueException
+     * @return \UA
+     */
+    private function initParser()
+    {
+        if (!($this->parser instanceof \UA)) {
+            throw new \UnexpectedValueException(
+                'the parser object has to be an instance of \\UA'
+            );
+        }
+        
+        if (null !== $this->cache) {
+            $this->parser->setCache($this->cache)
+                ->setCachePrefix($this->cachePrefix)
+            ;
+        }
+        
+        if (null !== $this->localFile) {
+            $this->parser->setLocaleFile($this->localFile);
+        }
+        
+        if (null !== $this->logger) {
+            $this->setLogger($this->logger);
+        }
+        
+        return $this->parser;
     }
 }

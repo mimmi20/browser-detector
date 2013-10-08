@@ -9,6 +9,14 @@
         {
             "type": "git",
             "url":  "https://github.com/mimmi20/phpbrowscap.git"
+        },
+        {
+            "type": "git",
+            "url":  "https://github.com/mimmi20/UASparser.git"
+        },
+        {
+            "type": "git",
+            "url":  "https://github.com/mimmi20/kairos-uaparser.git"
         }
     ],
     "require": {
@@ -18,7 +26,9 @@
     },
     "require-dev": {
         "phpunit/phpunit": "*",
-        "ext-xdebug": "*"
+        "ext-xdebug": "*",
+        "synchro/uasparser": "dev-master",
+        "dubcanada/uaparser": "dev-master",
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
