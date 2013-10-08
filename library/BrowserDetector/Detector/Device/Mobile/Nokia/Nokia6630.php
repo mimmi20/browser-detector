@@ -92,7 +92,7 @@ class Nokia6630
             'brand_name' => new Company\Nokia(),
             'model_extra_info'          => null,
             'marketing_name'            => null,
-            'has_qwerty_keyboard'       => true,
+            'has_qwerty_keyboard'       => false,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
@@ -112,10 +112,10 @@ class Nokia6630
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 176,
+            'resolution_height'      => 208,
+            'dual_orientation'       => false,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
