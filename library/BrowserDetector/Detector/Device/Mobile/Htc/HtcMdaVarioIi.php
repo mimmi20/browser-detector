@@ -162,26 +162,6 @@ class HtcMdaVarioIi
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -189,16 +169,9 @@ class HtcMdaVarioIi
      */
     public function detectOs()
     {
-        $os = array(
-            new \BrowserDetector\Detector\Os\WindowsMobileOs(),
-            //new \BrowserDetector\Detector\Os\FreeBsd()
-        );
+        $handler = new \BrowserDetector\Detector\Os\WindowsMobileOs();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

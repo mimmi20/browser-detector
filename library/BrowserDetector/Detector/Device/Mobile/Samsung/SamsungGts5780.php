@@ -162,29 +162,6 @@ class SamsungGts5780
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Dolfin(),
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -194,8 +171,7 @@ class SamsungGts5780
     {
         $os = array(
             new \BrowserDetector\Detector\Os\Bada(),
-            new \BrowserDetector\Detector\Os\Android(),
-            //new \BrowserDetector\Detector\Os\FreeBsd()
+            new \BrowserDetector\Detector\Os\Android()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();

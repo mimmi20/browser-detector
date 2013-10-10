@@ -162,28 +162,6 @@ class AmazonKindleFire
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Silk(),
-            //new \BrowserDetector\Detector\Os\FreeBsd()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -193,8 +171,7 @@ class AmazonKindleFire
     {
         $os = array(
             new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Maemo(),
-            //new \BrowserDetector\Detector\Os\FreeBsd()
+            new \BrowserDetector\Detector\Os\Maemo()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();

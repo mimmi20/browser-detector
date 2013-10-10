@@ -424,7 +424,7 @@ class Version implements \Serializable
      */
     public function setVersion($version)
     {
-        $version  = trim($version);
+        $version  = trim(trim($version), '.');
         $version  = ltrim(str_replace('_', '.', $version), '0');
         $splitted = explode('.', $version, 3);
         

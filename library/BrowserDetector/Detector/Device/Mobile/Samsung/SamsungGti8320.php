@@ -162,29 +162,6 @@ class SamsungGti8320
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik(),
-            new \BrowserDetector\Detector\Browser\Mobile\Opera()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -194,8 +171,7 @@ class SamsungGti8320
     {
         $os = array(
             new \BrowserDetector\Detector\Os\Symbianos(),
-            new \BrowserDetector\Detector\Os\Maemo(),
-            //new \BrowserDetector\Detector\Os\FreeBsd()
+            new \BrowserDetector\Detector\Os\Maemo()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();

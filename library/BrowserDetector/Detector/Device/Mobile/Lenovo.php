@@ -192,40 +192,16 @@ class Lenovo
     {
         $os = array(
             new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Bada(),
-            new \BrowserDetector\Detector\Os\Brew(),
             new \BrowserDetector\Detector\Os\Java(),
             new \BrowserDetector\Detector\Os\Symbianos(),
             new \BrowserDetector\Detector\Os\WindowsMobileOs(),
-            new \BrowserDetector\Detector\Os\WindowsPhoneOs
+            new \BrowserDetector\Detector\Os\WindowsPhoneOs()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
         $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

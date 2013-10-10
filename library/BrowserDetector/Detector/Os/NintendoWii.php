@@ -108,23 +108,18 @@ class NintendoWii
      *
      * @return null|\BrowserDetector\Os\Handler
      */
-    public function getBrowser()
+    public function detectBrowser()
     {
         $browsers = array(
-            'Opera'
+            new \BrowserDetector\Detector\Browser\Mobile\Android(),
+            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
+            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
         );
         
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' 
-            . DIRECTORY_SEPARATOR . 'Browser' 
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' 
-            . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'BrowserDetector\\Browser\\Handlers\\Mobile';
-        
-        $chain = new \BrowserDetector\Detector\Chain(false, $browsers, $browserPath, $browserNs);
+        $chain = new \BrowserDetector\Detector\Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        $chain->setUseragent($this->_useragent);
         
         return $chain->detect();
     }

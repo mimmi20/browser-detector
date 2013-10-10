@@ -203,26 +203,4 @@ class Nec
         
         return $chain->detect();
     }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\NecBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMobile(),
-            new \BrowserDetector\Detector\Browser\Mobile\Opera(),
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
 }

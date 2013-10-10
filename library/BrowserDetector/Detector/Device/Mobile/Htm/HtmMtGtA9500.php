@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HtmA310e
+class HtmMtGtA9500
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {

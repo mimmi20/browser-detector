@@ -162,33 +162,6 @@ class SamsungGts5230w
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Openwave(),
-            new \BrowserDetector\Detector\Browser\Mobile\TelecaObigo(),
-            new \BrowserDetector\Detector\Browser\Mobile\NetFront(),
-            new \BrowserDetector\Detector\Browser\Mobile\Phantom(),
-            new \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dolfin(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
-    }
-    
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

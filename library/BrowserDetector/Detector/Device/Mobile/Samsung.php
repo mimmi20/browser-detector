@@ -160,7 +160,7 @@ class Samsung
         
         $otherMobiles = array(
             'Asus', 'U30GT', 'Nexus 7', 'Nexus 4', 'NexusHD2', 'Nexus One',
-            'NexusOne', 'Nexus-One', 'GT-H'
+            'NexusOne', 'Nexus-One', 'GT-H', 'MT-GT-'
         );
         
         if ($this->utils->checkIfContains($otherMobiles)) {
@@ -223,28 +223,6 @@ class Samsung
         $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
-        
-        return $chain->detect();
-    }
-    
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Os\Handler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik()
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
         
         return $chain->detect();
     }

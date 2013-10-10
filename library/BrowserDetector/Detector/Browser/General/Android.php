@@ -177,11 +177,6 @@ class Android
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->_useragent);
         
-        $searches = array('Version', 'Safari', 'JUC \(Linux\; U\;');
-        
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
         $doMatch = preg_match(
             '/Version\/([\d\.]+)/', $this->_useragent, $matches
         );
@@ -234,8 +229,22 @@ class Android
             return $this;
         }
         
+        $doMatch = preg_match(
+            '/Android\/([\d\.]+)/', $this->_useragent, $matches
+        );
+        
+        if ($doMatch) {
+            $this->setCapability(
+                'mobile_browser_version', $detector->setVersion($matches[1])
+            );
+            
+            return $this;
+        }
+        
+        $searches = array('Version', 'Safari', 'JUC \(Linux\; U\;');
+        
         $this->setCapability(
-            'mobile_browser_version', $detector->setVersion('')
+            'mobile_browser_version', $detector->detectVersion($searches)
         );
         
         return $this;

@@ -106,7 +106,10 @@ class UserAgent extends Core
         // detect the browser which is used
         $this->browser = $this->os->detectBrowser();
         
-        if (!($this->browser instanceof BrowserInterface)) {
+        if (!($this->browser instanceof BrowserInterface)
+            || ($this->os instanceof \BrowserDetector\Detector\Os\Unknown
+            && is_callable(array($this->device, 'detectBrowser')))
+        ) {
             $this->browser = $this->device->detectBrowser();
         }
         
