@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile\HiPhone;
+namespace BrowserDetector\Detector\Device\Mobile\Oppo;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class HiPhoneV919
+class OppoX909
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class HiPhoneV919
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'V919',
+            'model_name'                => 'X909',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\HiPhone(),
-            'brand_name' => new Company\HiPhone(),
+            'manufacturer_name' => new Company\Oppo(),
+            'brand_name' => new Company\Oppo(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'V919',
+            'marketing_name'            => 'Find 5 X909',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class HiPhoneV919
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 480,
-            'resolution_height'      => 640,
+            'resolution_width'       => 1080,
+            'resolution_height'      => 1920,
             'dual_orientation'       => true,
-            'colors'                 => 65536,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
@@ -132,7 +132,7 @@ class HiPhoneV919
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('V919')) {
+        if (!$this->utils->checkIfContains('X909')) {
             return false;
         }
         
