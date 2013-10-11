@@ -132,7 +132,7 @@ class HtcOneMini
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_One_mini'))) {
+        if (!$this->utils->checkIfContains(array('HTC_One_mini', 'HTC One mini'))) {
             return false;
         }
         
