@@ -83,7 +83,7 @@ class SamsungGtp7320
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
             'model_name'                => 'GT-P7320',
@@ -91,8 +91,8 @@ class SamsungGtp7320
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'GT-P7320',
-            'has_qwerty_keyboard'       => false,
+            'marketing_name'            => 'Galaxy Tab 8.9 LTE',
+            'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => 'ARM11', // not in wurfl
