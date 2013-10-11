@@ -155,6 +155,7 @@ class SpamCrawlerFake
             'ramblermail',
             'rebelmouse',
             'retriever',
+            'scraper',
             'secmon',
             'semager',
             'siteexplorer',
