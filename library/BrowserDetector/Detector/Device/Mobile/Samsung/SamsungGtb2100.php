@@ -169,7 +169,7 @@ class SamsungGtb2100
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\Java();
         $handler->setUseragent($this->_useragent);
         
         return $handler->detect();

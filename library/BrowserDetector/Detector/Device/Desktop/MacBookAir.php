@@ -150,6 +150,24 @@ class MacBookAir
     }
     
     /**
+     * detects the device name from the given user agent
+     *
+     * @return DeviceHandler
+     */
+    protected function _detectDeviceVersion()
+    {
+        $detector = new \BrowserDetector\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('MacBookAir');
+        
+        $this->setCapability(
+            'model_version', $detector->detectVersion($searches)
+        );
+        return $this;
+    }
+    
+    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

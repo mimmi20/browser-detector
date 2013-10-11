@@ -12,28 +12,28 @@ namespace BrowserDetector\Detector;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -60,7 +60,7 @@ class Result implements \Serializable
      * @var \BrowserDetector\Detector\Result
      */
     private $renderAs = null;
-    
+
     /**
      * the detected browser properties
      *
@@ -73,7 +73,7 @@ class Result implements \Serializable
         'browserClass' => null, // not in wurfl
         'engineClass' => null,  // not in wurfl
         'osClass' => null,      // not in wurfl
-        
+
         // kind of device
         'device_type'           => null, // not in wurfl
         'browser_type'          => null, // not in wurfl
@@ -86,7 +86,7 @@ class Result implements \Serializable
         'ux_full_desktop'       => null,
         'is_transcoder'         => null,
         'is_banned'             => null, // not in wurfl
-        
+
         // device
         'model_name'                => null,
         'model_version'             => null, // not in wurfl
@@ -95,7 +95,7 @@ class Result implements \Serializable
         'manufacturer_name'         => null,
         'device_bits'               => null, // not in wurfl
         'device_cpu'                => null, // not in wurfl
-        
+
         // product info
         'has_qwerty_keyboard' => null,
         'pointing_method' => null,
@@ -109,7 +109,7 @@ class Result implements \Serializable
         'uaprof3' => null,
         'model_extra_info' => null,
         'unique' => null,
-        
+
         // display
         'physical_screen_width'  => null,
         'physical_screen_height' => null,
@@ -121,7 +121,7 @@ class Result implements \Serializable
         'resolution_height'      => null,
         'dual_orientation'       => null,
         'colors'                 => null,
-        
+
         // browser
         'mobile_browser'              => null,
         'mobile_browser_version'      => null,
@@ -130,7 +130,7 @@ class Result implements \Serializable
         'mobile_browser_brand_name'   => null, // not in wurfl
         'mobile_browser_modus'        => null, // not in wurfl
         'mobile_browser_icon'         => null, // not in wurfl
-        
+
         // os
         'device_os'              => null,
         'device_os_version'      => null,
@@ -138,14 +138,14 @@ class Result implements \Serializable
         'device_os_manufacturer' => null, // not in wurfl
         'device_os_brand_name'   => null, // not in wurfl
         'device_os_icon'         => null, // not in wurfl
-        
+
         // engine
         'renderingengine_name'         => null, // not in wurfl
         'renderingengine_version'      => null, // not in wurfl
         'renderingengine_manufacturer' => null, // not in wurfl
         'renderingengine_brand_name'   => null, // not in wurfl
         'renderingengine_icon'         => null, // not in wurfl
-        
+
         // markup
         'html_web_3_2' => null,
         'html_wi_oma_xhtmlmp_1_0' => null,
@@ -170,7 +170,7 @@ class Result implements \Serializable
         'supports_vb_script' => null, // not in wurfl
         'supports_java_applets' => null, // not in wurfl
         'supports_activex_controls' => null, // not in wurfl
-        
+
         // chtml
         'chtml_table_support' => null,
         'imode_region' => null,
@@ -179,7 +179,7 @@ class Result implements \Serializable
         'chtml_make_phone_call_string' => null,
         'chtml_display_accesskey' => null,
         'emoji' => null,
-        
+
         // xhtml
         'xhtml_select_as_radiobutton' => null,
         'xhtml_avoid_accesskeys' => null,
@@ -216,7 +216,7 @@ class Result implements \Serializable
         'opwv_xhtml_extensions_support' => null,
         'xhtml_marquee_as_css_property' => null,
         'xhtml_nowrap_mode' => null,
-        
+
         // image format
         'jpg' => null,
         'gif' => null,
@@ -231,11 +231,11 @@ class Result implements \Serializable
         'svgt_1_1' => null,
         'transparent_png_alpha' => null,
         'tiff' => null,
-        
+
         // security
         'https_support' => null,
         'phone_id_provided' => false,
-        
+
         // storage
         'max_deck_size' => null,
         'max_length_of_username' => null,
@@ -247,7 +247,7 @@ class Result implements \Serializable
         'max_url_length_in_requests' => null,
         'max_object_size' => null,
         'max_url_length_homepage' => null,
-        
+
         // ajax
         'ajax_support_getelementbyid' => null,
         'ajax_xhr_type' => null,
@@ -258,7 +258,7 @@ class Result implements \Serializable
         'ajax_manipulate_css' => null,
         'ajax_support_events' => null,
         'ajax_preferred_geoloc_api' => null,
-        
+
         // wml
         'wml_make_phone_call_string' => null,
         'card_title_support' => null,
@@ -282,14 +282,14 @@ class Result implements \Serializable
         'access_key_support' => null,
         'wml_displays_image_in_center' => null,
         'times_square_mode_support' => null,
-        
+
         // pdf
         'pdf_support' => null,
-        
+
         // third_party
         'jqm_grade' => null,
         'is_sencha_touch_ok' => null,
-        
+
         // html
         'image_inlining' => null,
         'canvas_support' => null,
@@ -302,7 +302,7 @@ class Result implements \Serializable
         'viewport_maximum_scale' => null,
         'viewport_userscalable' => null,
         'handheldfriendly' => null,
-        
+
         // css
         'css_spriting' => null,
         'css_gradient' => null,
@@ -310,16 +310,16 @@ class Result implements \Serializable
         'css_border_image' => null,
         'css_rounded_corners' => null,
         'css_supports_width_as_percentage' => null,
-        
+
         // bugs
         'emptyok' => null,
         'empty_option_value_support' => null,
         'basic_authentication_support' => null,
         'post_method_support' => null,
-        
+
         // rss
         'rss_support' => null,
-        
+
         // sms
         'sms_enabled' => null,
         'ems' => null,
@@ -350,14 +350,14 @@ class Result implements \Serializable
         'sckl_ringtone' => null,
         'picturemessage' => null,
         'sckl_vcalendar' => null,
-        
+
         // bearer
         'has_cellular_radio' => null,
         'sdio' => null,
         'wifi' => null,
         'max_data_rate' => null,
         'vpn' => null,
-        
+
         // flash_lite
         'full_flash_support' => null,
         'flash_lite_version' => null,
@@ -366,18 +366,18 @@ class Result implements \Serializable
         'fl_screensaver' => null,
         'fl_standalone' => null,
         'fl_sub_lcd' => null,
-        
+
         // cache
         'time_to_live_support' => null,
         'total_cache_disable_support' => null,
-        
+
         // wta
         'nokia_voice_call' => null,
         'wta_pdc' => null,
         'wta_voice_call' => null,
         'wta_misc' => null,
         'wta_phonebook' => null,
-        
+
         // object download
         'video' => null,
         'picture_bmp' => null,
@@ -458,12 +458,12 @@ class Result implements \Serializable
         'downloadfun_support' => null,
         'screensaver_colors' => null,
         'screensaver_gif' => null,
-        
+
         // drm
         'oma_v_1_0_combined_delivery' => null,
         'oma_v_1_0_separate_delivery' => null,
         'oma_v_1_0_forwardlock' => null,
-        
+
         // streaming
         'streaming_vcodec_mpeg4_asp' => null,
         'streaming_video_size_limit' => null,
@@ -483,7 +483,7 @@ class Result implements \Serializable
         'streaming_video' => null,
         'streaming_preferred_http_protocol' => null,
         'streaming_mp4' => null,
-        
+
         // wap push
         'expiration_date' => null,
         'utf8_support' => null,
@@ -499,7 +499,7 @@ class Result implements \Serializable
         'connectionoriented_unconfirmed_cache_operation' => null,
         'connectionoriented_unconfirmed_service_load' => null,
         'connectionoriented_unconfirmed_service_indication' => null,
-        
+
         // j2me
         'doja_1_5' => null,
         'j2me_datefield_broken' => null,
@@ -578,7 +578,7 @@ class Result implements \Serializable
         'j2me_https' => null,
         'j2me_mpeg4' => null,
         'j2me_storage_size' => null,
-        
+
         // mms
         'mms_3gpp' => null,
         'mms_wbxml' => null,
@@ -624,7 +624,7 @@ class Result implements \Serializable
         'mms_jpeg_baseline' => null,
         'mms_midi_polyphonic_voices' => null,
         'mms_gif_animated' => null,
-        
+
         // sound format
         'rmf' => null,
         'qcelp' => null,
@@ -647,10 +647,10 @@ class Result implements \Serializable
         'midi_monophonic' => null,
         'au' => null,
         'midi_polyphonic' => null,
-        
+
         // transcoding
         'transcoder_ua_header' => null,
-        
+
         // playback
         'playback_oma_size_limit' => null,
         'playback_acodec_aac' => null,
@@ -672,11 +672,11 @@ class Result implements \Serializable
         'playback_inline_size_limit' => null,
         'hinted_progressive_download' => null,
         'playback_vcodec_h264_bp' => null,
-        
+
         // chips
         'nfc_support' => null,
     );
-    
+
     /**
      * the class constructor
      */
@@ -684,13 +684,13 @@ class Result implements \Serializable
     {
         $detector = new Version();
         $detector->setVersion('');
-        
+
         $this->setCapability('mobile_browser_version', clone $detector);
         $this->setCapability('renderingengine_version', clone $detector);
         $this->setCapability('device_os_version', clone $detector);
         $this->setCapability('model_version', clone $detector);
     }
-    
+
     /**
      * serializes the object
      *
@@ -705,7 +705,7 @@ class Result implements \Serializable
             )
         );
     }
-    
+
     /**
      * magic function needed to reconstruct the class from a var_export
      *
@@ -716,14 +716,14 @@ class Result implements \Serializable
     static function __set_state(array $array)
     {
         $obj = new self;
-        
+
         foreach ($array as $k => $v) {
             $obj->$k = $v;
         }
-        
+
         return $obj;
     }
-    
+
     /**
      * unserializes the object
      *
@@ -732,32 +732,32 @@ class Result implements \Serializable
     public function unserialize($data)
     {
         $unseriliazedData = unserialize($data);
-        
+
         foreach ($unseriliazedData['properties'] as $property => $value) {
             $this->properties[$property] = $value;
         }
-        
+
         $this->renderAs = $unseriliazedData['renderAs'];
     }
-    
+
     /**
      * Returns the value of a given capability name for the current device
-     * 
+     *
      * @param string  $capabilityName must be a valid capability name
-     * @param boolean $includeRenderAs If TRUE and the renderAs resulr is 
+     * @param boolean $includeRenderAs If TRUE and the renderAs resulr is
      *                ndefined, the property from the renderAs result will be
      *                included also
      *
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    public function getCapability($capabilityName, $includeRenderAs = false) 
+    public function getCapability($capabilityName, $includeRenderAs = false)
     {
         $this->checkCapability($capabilityName);
-        
+
         $renderedAs    = $this->getRenderAs();
         $propertyValue = $this->properties[$capabilityName];
-        
+
         if ($includeRenderAs
             && $renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
@@ -765,10 +765,10 @@ class Result implements \Serializable
             $propertyValue  = $this->_propertyToString($this->properties[$capabilityName]);
             $propertyValue .= ' [' . $this->_propertyToString($renderedAs->getCapability($capabilityName, false)) . ']';
         }
-        
+
         return $propertyValue;
     }
-    
+
     /**
      * converts the property value into a string
      *
@@ -789,29 +789,29 @@ class Result implements \Serializable
         } else {
             $strProperty = (string) $property;
         }
-        
+
         return $strProperty;
     }
-    
+
     /**
      * Returns the value of a given capability name for the current device
-     * 
+     *
      * @param string $capabilityName  must be a valid capability name
      * @param string $capabilityValue
      *
      * @return Result
      * @throws InvalidArgumentException
      */
-    public function setCapability($capabilityName, $capabilityValue = null) 
+    public function setCapability($capabilityName, $capabilityValue = null)
     {
         $this->checkCapability($capabilityName);
-        
+
         $versionfields = array(
-            'mobile_browser_version', 'renderingengine_version', 
+            'mobile_browser_version', 'renderingengine_version',
             'device_os_version', 'model_version'
         );
-        
-        if (in_array($capabilityName, $versionfields) 
+
+        if (in_array($capabilityName, $versionfields)
             && !($capabilityValue instanceof Version)
         ) {
             throw new \InvalidArgumentException(
@@ -819,69 +819,69 @@ class Result implements \Serializable
                 . '\\BrowserDetector\\Detector\\Version as value'
             );
         }
-        
+
         $this->properties[$capabilityName] = $capabilityValue;
-        
+
         return $this;
     }
-    
+
     /**
      * Returns the values of all capabilities for the current device
-     * 
+     *
      * @return array All Capability values
      */
-    public function getCapabilities() 
+    public function getCapabilities()
     {
         return $this->properties;
     }
-    
+
     /**
      * Returns the value of a given capability name for the current device
-     * 
+     *
      * @param array $capabilities An array of name/value pairs
      *
      * @return Result
      */
-    public function setCapabilities(array $capabilities) 
+    public function setCapabilities(array $capabilities)
     {
         foreach ($capabilities as $capabilityName => $capabilityValue) {
             if (is_numeric($capabilityName)) {
                 continue;
             }
-            
+
             try {
                 $this->setCapability($capabilityName, $capabilityValue);
             } catch (\Exception $e) {
                 continue;
             }
         }
-        
+
         return $this;
     }
-    
+
     /**
      * Returns the value of a given capability name
      * for the current device
-     * 
+     *
      * @param string $capabilityName must be a valid capability name
      * @return string Capability value
      * @throws InvalidArgumentException
      */
-    private function checkCapability($capabilityName) 
+    private function checkCapability($capabilityName)
     {
         if (empty($capabilityName)) {
             throw new \InvalidArgumentException(
                 'capability name must not be empty'
             );
         }
-        
+
         if (!array_key_exists($capabilityName, $this->properties)) {
             throw new \InvalidArgumentException(
                 'no capability named [' . $capabilityName . '] is present. [' . json_encode($this->properties) . ']'
-            );    
+            );
         }
     }
-    
+
     /**
      * Magic Method
      *
@@ -910,119 +910,119 @@ class Result implements \Serializable
                     break;
             }
         }
-        
+
         throw new \InvalidArgumentException(
             'the property "' . $name . '" is not defined'
         );
     }
-    
+
     public function getFullBrowser($withBits = true, $mode = null)
     {
         if (null === $mode) {
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
-        
+
         $browser    = $this->getFullBrowserName($withBits, $mode);
         $renderedAs = $this->getRenderAs();
-        
+
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('mobile_browser', false))
         ) {
             $browser .= ' [' . $renderedAs->getFullBrowserName($withBits, $mode)
                 . ']';
         }
-        
+
         return trim($browser);
     }
-    
+
     public function getFullBrowserName($withBits = true, $mode = null)
     {
         $browser = $this->getCapability('mobile_browser', false);
-        
+
         if (!$browser) {
             return null;
         }
-        
+
         if ('unknown' == strtolower($browser)) {
             return 'unknown';
         }
-        
+
         if (null === $mode) {
             $mode = Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY;
         }
-        
+
         $version = $this->getCapability('mobile_browser_version', false)->getVersion(
             $mode
         );
-        
+
         if ($browser != $version && '' != $version) {
             $browser .= ' ' . $version;
         }
-        
+
         $additional = array();
-        
+
         $modus = $this->getCapability('mobile_browser_modus', false);
-        
+
         if ($modus) {
             $additional[] = $modus;
         }
-        
+
         $bits = $this->getCapability('mobile_browser_bits', false);
-        
+
         if ($bits && $withBits) {
             $additional[] = $bits . ' Bit';
         }
-        
+
         $browser .= (!empty($additional) ? ' (' . implode(', ', $additional) . ')' : '');
-        
+
         return trim($browser);
     }
-    
+
     public function getFullPlatform($withBits = true, $mode = null)
     {
         if (null === $mode) {
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
-        
+
         $os         = $this->getFullPlatformName($withBits, $mode);
         $renderedAs = $this->getRenderAs();
-        
+
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('device_os', false))
         ) {
             $os .= ' [' . $renderedAs->getFullPlatformName($withBits, $mode)
                 . ']';
         }
-        
+
         return trim($os);
     }
-    
+
     public function getFullPlatformName($withBits = true, $mode = null)
     {
         $name = $this->getCapability('device_os', false);
-        
+
         if (!$name) {
             return null;
         }
-        
+
         if ('unknown' == strtolower($name)) {
             return 'unknown';
         }
-        
+
         if (null === $mode) {
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
-        
+
         $version = $this->getCapability('device_os_version', false)->getVersion($mode);
         $bits    = $this->getCapability('device_os_bits', false);
-        
+
         $os = $name
             . ($name != $version && '' != $version ? ' ' . $version : '')
             . (($bits && $withBits) ? ' (' . $bits . ' Bit)' : '');
-        
+
         return trim($os);
     }
-    
+
     /**
      * returns the name of the actual device with version
      *
@@ -1032,17 +1032,17 @@ class Result implements \Serializable
     {
         $device     = $this->getFullDeviceName($withManufacturer);
         $renderedAs = $this->getRenderAs();
-        
+
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('model_name', false))
         ) {
             $device .= ' [' . $renderedAs->getFullDeviceName($withManufacturer)
                 . ']';
         }
-        
+
         return trim($device);
     }
-    
+
     /**
      * returns the name of the actual device with version
      *
@@ -1051,25 +1051,25 @@ class Result implements \Serializable
     public function getFullDeviceName($withManufacturer = false)
     {
         $device = $this->getCapability('model_name', false);
-        
+
         if (!$device) {
             return null;
         }
-        
+
         if ('unknown' == strtolower($device)) {
             return 'unknown';
         }
-        
+
         $version = $this->getCapability('model_version', false)->getVersion(Version::MAJORMINOR);
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
-        
+
         if ($withManufacturer) {
             $manufacturer = $this->getCapability('brand_name', false);
-            
+
             if (!$manufacturer || 'unknown' == $manufacturer) {
                 $manufacturer = $this->getCapability('manufacturer_name', false);
             }
-            
+
             if ('unknown' !== $manufacturer
                 && '' !== $manufacturer
                 && false === strpos($device, 'general')
@@ -1078,10 +1078,10 @@ class Result implements \Serializable
                 $device = $manufacturer . ' ' . $device;
             }
         }
-        
+
         return trim($device);
     }
-    
+
     /**
      * return the Name of the rendering engine with the version
      *
@@ -1093,16 +1093,16 @@ class Result implements \Serializable
     {
         $engine     = $this->getFullEngineName($mode);
         $renderedAs = $this->getRenderAs();
-        
+
         if ($renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name', false))
         ) {
             $engine .= ' [' . $renderedAs->getFullEngineName($mode) . ']';
         }
-        
+
         return trim($engine);
     }
-    
+
     /**
      * return the Name of the rendering engine with the version
      *
@@ -1113,29 +1113,29 @@ class Result implements \Serializable
     public function getFullEngineName($mode = Version::COMPLETE_IGNORE_EMPTY)
     {
         $engine  = $this->getCapability('renderingengine_name', false);
-        
+
         if (!$engine) {
             return null;
         }
-        
+
         if ('unknown' == strtolower($engine)) {
             return 'unknown';
         }
-        
+
         if (null === $mode) {
             $mode = Version::COMPLETE_IGNORE_EMPTY;
         }
-        
+
         $version = $this->getCapability('renderingengine_version', false)->getVersion(
             $mode
         );
-        
+
         return trim(
-            $engine 
+            $engine
                 . (($engine != $version && '' != $version) ? ' ' . $version : '')
         );
     }
-    
+
     /**
      * returns the name of the actual device without version
      *
@@ -1145,7 +1145,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('model_name', false);
     }
-    
+
     /**
      * returns the veraion of the actual device
      *
@@ -1155,7 +1155,7 @@ class Result implements \Serializable
     {
         return null; // $this->getCapability('mobile_browser', false);
     }
-    
+
     /**
      * returns the manufacturer of the actual device
      *
@@ -1165,7 +1165,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('manufacturer_name', false);
     }
-    
+
     /**
      * returns TRUE if the device supports RSS Feeds
      *
@@ -1175,7 +1175,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('rss_support', false);
     }
-    
+
     /**
      * returns TRUE if the device supports PDF documents
      *
@@ -1185,7 +1185,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('pdf_support', false);
     }
-    
+
     /**
      * returns TRUE if the device is a Transcoder
      *
@@ -1195,7 +1195,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_transcoder', false);
     }
-    
+
     /**
      * returns TRUE if the device is a mobile
      *
@@ -1205,7 +1205,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_wireless_device', false);
     }
-    
+
     /**
      * returns TRUE if the device is a tablet
      *
@@ -1215,7 +1215,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_tablet', false);
     }
-    
+
     /**
      * returns TRUE if the device is a desktop device
      *
@@ -1225,7 +1225,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('ux_full_desktop', false);
     }
-    
+
     /**
      * returns TRUE if the device is a TV device
      *
@@ -1235,7 +1235,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_smarttv', false);
     }
-    
+
     /**
      * returns TRUE if the browser is a crawler
      *
@@ -1245,7 +1245,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_bot', false);
     }
-    
+
     /**
      * returns TRUE if the device ia a game console
      *
@@ -1255,7 +1255,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_console', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports Frames
      *
@@ -1265,7 +1265,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('xhtml_supports_frame', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports IFrames
      *
@@ -1275,7 +1275,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('xhtml_supports_iframe', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports Tables
      *
@@ -1285,7 +1285,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('xhtml_table_support', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports Cookies
      *
@@ -1295,7 +1295,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('cookie_support', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports BackgroundSounds
      *
@@ -1305,7 +1305,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('supports_background_sounds', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports JavaScript
      *
@@ -1315,7 +1315,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('ajax_support_javascript', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports VBScript
      *
@@ -1325,7 +1325,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('supports_vb_script', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports Java Applets
      *
@@ -1335,7 +1335,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('supports_java_applets', false);
     }
-    
+
     /**
      * returns TRUE if the browser supports ActiveX Controls
      *
@@ -1345,7 +1345,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('supports_activex_controls', false);
     }
-    
+
     /**
      * returns TRUE if the device is a Syndication Reader
      *
@@ -1355,7 +1355,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_syndication_reader', false);
     }
-    
+
     /**
      * returns TRUE if the device is a Syndication Reader
      *
@@ -1365,7 +1365,7 @@ class Result implements \Serializable
     {
         return $this->getCapability('is_banned', false);
     }
-    
+
     /**
      * builds a atring for comparation with wurfl
      *
@@ -1373,14 +1373,14 @@ class Result implements \Serializable
      */
     public function getComparationName()
     {
-        return $this->getCapability('mobile_browser', false) . ' on ' 
-            . $this->getCapability('device_os', false) . ', ' 
+        return $this->getCapability('mobile_browser', false) . ' on '
+            . $this->getCapability('device_os', false) . ', '
             . $this->getCapability('model_name', false);
     }
-    
+
     /**
      * Returns the value of a given capability name for the current device
-     * 
+     *
      * @param array $capabilities An array of name/value pairs
      *
      * @return Result
@@ -1389,13 +1389,13 @@ class Result implements \Serializable
         \BrowserDetector\Detector\DeviceHandler $device,
         \BrowserDetector\Detector\OsHandler $os,
         \BrowserDetector\Detector\BrowserHandler $browser,
-        \BrowserDetector\Detector\EngineHandler $engine) 
+        \BrowserDetector\Detector\EngineHandler $engine)
     {
         $properties = array_keys($this->getCapabilities());
-        
+
         foreach ($properties as $property) {
             $value = null;
-            
+
             try {
                 switch ($property) {
                     case 'deviceClass':
@@ -1415,83 +1415,83 @@ class Result implements \Serializable
                         break;
                     case 'manufacturer_name':
                         $value = $device->getCapability('manufacturer_name');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getName();
                         break;
                     case 'brand_name':
                         $value = $device->getCapability('brand_name');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getBrandName();
                         break;
                     case 'device_type':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->getName();
                         break;
                     case 'is_wireless_device':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->isMobile();
                         break;
                     case 'is_tablet':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->isTablet();
                         break;
                     case 'is_smarttv':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->isTv();
                         break;
                     case 'is_console':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->isConsole();
                         break;
                     case 'ux_full_desktop':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->isDesktop();
                         break;
                     case 'can_assign_phone_number':
                         $value = $device->getCapability('device_type');
-                        
+
                         if (!($value instanceof Type\Device\TypeInterface)) {
                             $value = new Type\Device\Unknown();
                         }
-                        
+
                         $value = $value->isPhone();
                         break;
                     case 'model_name':
@@ -1530,65 +1530,65 @@ class Result implements \Serializable
                         break;
                     case 'mobile_browser_manufacturer':
                         $value = $browser->getCapability('mobile_browser_manufacturer');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getName();
                         break;
                     case 'mobile_browser_brand_name':
                         $value = $browser->getCapability('mobile_browser_manufacturer');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getBrandName();
                         break;
                     case 'is_bot':
                         $value = $browser->getCapability('browser_type');
-                        
+
                         if (!($value instanceof Type\Browser\TypeInterface)) {
                             $value = new Type\Browser\Unknown();
                         }
-                        
+
                         $value = $value->isBot();
                         break;
                     case 'is_transcoder':
                         $value = $browser->getCapability('browser_type');
-                        
+
                         if (!($value instanceof Type\Browser\TypeInterface)) {
                             $value = new Type\Browser\Unknown();
                         }
-                        
+
                         $value = $value->isTranscoder();
                         break;
                     case 'is_syndication_reader':
                         $value = $browser->getCapability('browser_type');
-                        
+
                         if (!($value instanceof Type\Browser\TypeInterface)) {
                             $value = new Type\Browser\Unknown();
                         }
-                        
+
                         $value = $value->isSyndicationReader();
                         break;
                     case 'is_banned':
                         $value = $browser->getCapability('browser_type');
-                        
+
                         if (!($value instanceof Type\Browser\TypeInterface)) {
                             $value = new Type\Browser\Unknown();
                         }
-                        
+
                         $value = $value->isBanned();
                         break;
                     case 'browser_type':
                         $value = $browser->getCapability('browser_type');
-                        
+
                         if (!($value instanceof Type\Browser\TypeInterface)) {
                             $value = new Type\Browser\Unknown();
                         }
-                        
+
                         $value = $value->getName();
                         break;
                     case 'mobile_browser':
@@ -1612,38 +1612,38 @@ class Result implements \Serializable
                         break;
                     case 'device_os_manufacturer':
                         $value = $os->getCapability('device_os_manufacturer');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getName();
                         break;
                     case 'device_os_brand_name':
                         $value = $os->getCapability('device_os_manufacturer');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getBrandName();
                         break;
                     case 'renderingengine_manufacturer':
                         $value = $engine->getCapability('renderingengine_manufacturer');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getName();
                         break;
                     case 'renderingengine_brand_name':
                         $value = $engine->getCapability('renderingengine_manufacturer');
-                        
+
                         if (!($value instanceof Company\CompanyInterface)) {
                             $value = new Company\Unknown();
                         }
-                        
+
                         $value = $value->getBrandName();
                         break;
                     case 'renderingengine_name':
@@ -1792,19 +1792,19 @@ class Result implements \Serializable
                 // the property is not defined yet
                 continue;
             }
-            
+
             $this->setCapability($property, $value);
         }
-        
+
         $renderedAs = $device->getRenderAs();
-        
+
         if ($renderedAs instanceof Result) {
             $this->setRenderAs($renderedAs);
         }
-        
+
         return $this;
     }
-    
+
     /**
      * sets a second device for rendering properties
      *
@@ -1815,10 +1815,10 @@ class Result implements \Serializable
     public function setRenderAs(Result $result)
     {
         $this->renderAs = $result;
-        
+
         return $this;
     }
-    
+
     /**
      * returns a second device for rendering properties
      *
