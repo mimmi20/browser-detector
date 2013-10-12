@@ -83,7 +83,7 @@ class SonyTabletSgp311
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
             'model_name'                => 'SGP311',
@@ -112,10 +112,10 @@ class SonyTabletSgp311
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 1200,
-            'resolution_height'      => 1920,
+            'resolution_width'       => 1920,
+            'resolution_height'      => 1200,
             'dual_orientation'       => true,
-            'colors'                 => 65536,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => false,

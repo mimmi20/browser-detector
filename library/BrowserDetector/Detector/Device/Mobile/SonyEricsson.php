@@ -161,6 +161,7 @@ class SonyEricsson
             'r800i',
             's312',
             'sk17i',
+            'sgp311',
             'sgp321',
             'sgpt12',
             'sgpt13',
