@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Samsung
+class Hdc
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,12 +86,12 @@ class Samsung
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Samsung Device',
+            'model_name'                => 'general HDC Device',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Samsung(),
-            'brand_name' => new Company\Samsung(),
+            'manufacturer_name' => new Company\Hdc(),
+            'brand_name' => new Company\Hdc(),
             'model_extra_info'          => null,
-            'marketing_name'            => null,
+            'marketing_name'            => 'general HDC Device',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -132,52 +132,16 @@ class Samsung
      */
     public function canHandle()
     {
-        $samsungPhones = array(
-            'samsung',
-            'samsung',
-            'gt-',
-            'sam-',
-            'sc-',
-            'sch-',
-            'sec-',
-            'sgh-',
-            'shv-',
-            'shw-',
-            'sm-',
-            'sph-',
-            'galaxy',
-            'nexus',
-            'i7110',
-            'i9100',
-            'i9300',
-            'yp-g',
-            'continuum-'
+        $hdcPhones = array(
+            'HDC',
+            'Galaxy S3 EX'
         );
         
-        if (!$this->utils->checkIfContains($samsungPhones, true)) {
-            return false;
-        }
-        
-        $otherMobiles = array(
-            'Asus', 'U30GT', 'Nexus 7', 'Nexus 4', 'NexusHD2', 'Nexus One',
-            'NexusOne', 'Nexus-One', 'GT-H', 'MT-GT-', 'Galaxy S3 EX'
-        );
-        
-        if ($this->utils->checkIfContains($otherMobiles)) {
+        if (!$this->utils->checkIfContains($htcPhones)) {
             return false;
         }
         
         return true;
-    }
-    
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 11375169;
     }
     
     /**
@@ -191,13 +155,23 @@ class Samsung
     {
         $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Samsung');
+        $chain->setNamespace(__NAMESPACE__ . '\\Hdc');
         $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Samsung' . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . 'Hdc' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
         
         return $chain->detect();
+    }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 2216455;
     }
     
     /**
@@ -208,22 +182,9 @@ class Samsung
      */
     public function detectOs()
     {
-        $os = array(
-            new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Bada(),
-            new \BrowserDetector\Detector\Os\Brew(),
-            new \BrowserDetector\Detector\Os\Java(),
-            new \BrowserDetector\Detector\Os\Symbianos(),
-            new \BrowserDetector\Detector\Os\WindowsMobileOs(),
-            new \BrowserDetector\Detector\Os\WindowsPhoneOs(),
-            new \BrowserDetector\Detector\Os\Linux()
-        );
+        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Hdc;
 
 /**
  * PHP version 5.3
@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Samsung
+class HdcI9300GalaxyS3Ex
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,19 +86,19 @@ class Samsung
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'general Samsung Device',
+            'model_name'                => 'i9300',
             'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Samsung(),
-            'brand_name' => new Company\Samsung(),
+            'manufacturer_name' => new Company\Hdc(),
+            'brand_name' => new Company\Hdc(),
             'model_extra_info'          => null,
-            'marketing_name'            => null,
+            'marketing_name'            => 'i9300 Galaxy S3 EX',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
             // product info
-            'can_assign_phone_number'   => false,
+            'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
             'uaprof'                    => null,
             'uaprof2'                   => null,
@@ -112,10 +112,10 @@ class Samsung
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 720,
+            'resolution_height'      => 1280,
+            'dual_orientation'       => true,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
@@ -132,38 +132,7 @@ class Samsung
      */
     public function canHandle()
     {
-        $samsungPhones = array(
-            'samsung',
-            'samsung',
-            'gt-',
-            'sam-',
-            'sc-',
-            'sch-',
-            'sec-',
-            'sgh-',
-            'shv-',
-            'shw-',
-            'sm-',
-            'sph-',
-            'galaxy',
-            'nexus',
-            'i7110',
-            'i9100',
-            'i9300',
-            'yp-g',
-            'continuum-'
-        );
-        
-        if (!$this->utils->checkIfContains($samsungPhones, true)) {
-            return false;
-        }
-        
-        $otherMobiles = array(
-            'Asus', 'U30GT', 'Nexus 7', 'Nexus 4', 'NexusHD2', 'Nexus One',
-            'NexusOne', 'Nexus-One', 'GT-H', 'MT-GT-', 'Galaxy S3 EX'
-        );
-        
-        if ($this->utils->checkIfContains($otherMobiles)) {
+        if (!$this->utils->checkIfContains(array('Galaxy S3 EX'))) {
             return false;
         }
         
@@ -177,7 +146,7 @@ class Samsung
      */
     public function getWeight()
     {
-        return 11375169;
+        return 3;
     }
     
     /**
@@ -189,15 +158,7 @@ class Samsung
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Samsung');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Samsung' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-        
-        return $chain->detect();
+        return $this;
     }
     
     /**
@@ -208,22 +169,9 @@ class Samsung
      */
     public function detectOs()
     {
-        $os = array(
-            new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Bada(),
-            new \BrowserDetector\Detector\Os\Brew(),
-            new \BrowserDetector\Detector\Os\Java(),
-            new \BrowserDetector\Detector\Os\Symbianos(),
-            new \BrowserDetector\Detector\Os\WindowsMobileOs(),
-            new \BrowserDetector\Detector\Os\WindowsPhoneOs(),
-            new \BrowserDetector\Detector\Os\Linux()
-        );
+        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }
