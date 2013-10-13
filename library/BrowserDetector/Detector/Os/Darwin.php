@@ -154,7 +154,8 @@ class Darwin
             new \BrowserDetector\Detector\Browser\Bot\Maven(),
             new \BrowserDetector\Detector\Browser\Mobile\PerfectBrowser(),
             new \BrowserDetector\Detector\Browser\Mobile\Spector(),
-            new \BrowserDetector\Detector\Browser\Mobile\SmartSync()
+            new \BrowserDetector\Detector\Browser\Mobile\SmartSync(),
+            new \BrowserDetector\Detector\Browser\Mobile\Incredimail()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
