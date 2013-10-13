@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Os;
+namespace BrowserDetector\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -41,27 +41,27 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\BrowserHandler;
 use \BrowserDetector\Helper\Utils;
 use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\OsInterface;
-use \BrowserDetector\Detector\BrowserHandler;
+use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use \BrowserDetector\Detector\EngineHandler;
+use \BrowserDetector\Detector\DeviceHandler;
+use \BrowserDetector\Detector\OsHandler;
+use \BrowserDetector\Detector\Version;
 use \BrowserDetector\Detector\Company;
+use \BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Darwin
-    extends OsHandler
-    implements MatcherInterface, OsInterface
+class Coast
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties
@@ -73,53 +73,52 @@ class Darwin
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return BrowserHandler
      */
     public function __construct()
     {
         parent::__construct();
         
         $this->properties = array(
-            // os
-            'device_os'              => 'Darwin',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Apple(), // not in wurfl
+            // kind of device
+            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            
+            // browser
+            'mobile_browser'              => 'Surfers Paradise Gold Coast App',
+            'mobile_browser_version'      => null,
+            'mobile_browser_bits'         => null, // not in wurfl
+            'mobile_browser_manufacturer' => new Company\Unknown(), // not in wurfl
+            'mobile_browser_modus'        => null, // not in wurfl
+            
+            // product info
+            'can_skip_aligned_link_row' => true,
+            'device_claims_web_support' => false,
+            
+            // pdf
+            'pdf_support' => true,
+            
+            // bugs
+            'empty_option_value_support' => true,
+            'basic_authentication_support' => true,
+            'post_method_support' => true,
+            
+            // rss
+            'rss_support' => false,
         );
     }
     
     /**
-     * Returns true if this handler can handle the given $useragent
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('darwin', true)) {
-            return false;
+        if ($this->utils->checkIfContains('Coast')) {
+            return true;
         }
         
-        return true;
-    }
-    
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
-     */
-    protected function _detectVersion()
-    {
-        $detector = new \BrowserDetector\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
-        $searches = array('Darwin');
-        
-        $this->setCapability(
-            'device_os_version', 
-            $detector->detectVersion($searches)
-        );
+        return false;
     }
     
     /**
@@ -129,42 +128,39 @@ class Darwin
      */
     public function getWeight()
     {
-        return 128;
+        return 3;
     }
     
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    protected function _detectVersion()
+    {
+        $detector = new \BrowserDetector\Detector\Version();
+        $detector->setUserAgent($this->_useragent);
+        
+        $searches = array('Coast');
+        
+        $this->setCapability(
+            'mobile_browser_version', $detector->detectVersion($searches)
+        );
+        
+        return $this;
+    }
+    
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\BrowserDetector\Os\Handler
      */
-    public function detectBrowser()
+    public function detectEngine()
     {
-        $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Safari(),
-            new \BrowserDetector\Detector\Browser\Mobile\OnePassword(),
-            new \BrowserDetector\Detector\Browser\Mobile\Sleipnir(),
-            new \BrowserDetector\Detector\Browser\Mobile\DarwinBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Terra(),
-            new \BrowserDetector\Detector\Browser\Mobile\Puffin(),
-            new \BrowserDetector\Detector\Browser\Mobile\Omniweb(),
-            new \BrowserDetector\Detector\Browser\Mobile\AtomicBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Mercury(),
-            new \BrowserDetector\Detector\Browser\Bot\Bingbot(),
-            new \BrowserDetector\Detector\Browser\Bot\Maven(),
-            new \BrowserDetector\Detector\Browser\Mobile\PerfectBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Spector(),
-            new \BrowserDetector\Detector\Browser\Mobile\SmartSync(),
-            new \BrowserDetector\Detector\Browser\Mobile\Incredimail(),
-            new \BrowserDetector\Detector\Browser\Mobile\AppleMail(),
-            new \BrowserDetector\Detector\Browser\Mobile\Coast()
-        );
+        $handler = new \BrowserDetector\Detector\Engine\Webkit();
+        $handler->setUseragent($this->_useragent);
         
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
-        return $chain->detect();
+        return $handler->detect();
     }
 }
