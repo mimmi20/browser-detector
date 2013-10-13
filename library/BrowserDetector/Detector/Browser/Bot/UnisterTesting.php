@@ -114,7 +114,7 @@ class UnisterTesting
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('unistertesting', 'unister-test'), true)) {
+        if (!$this->utils->checkIfContains(array('unistertesting', 'unister-test', 'unister-https-test'), true)) {
             return false;
         }
         
