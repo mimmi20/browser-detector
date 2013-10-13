@@ -128,6 +128,7 @@ class SpamCrawlerFake
             'google wireless transcoder',
             'grabber',
             'heritrix',
+            'hitleap',
             'http_client',
             'httpclient',
             'httrack',
