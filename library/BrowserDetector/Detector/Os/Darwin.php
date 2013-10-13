@@ -157,7 +157,8 @@ class Darwin
             new \BrowserDetector\Detector\Browser\Mobile\SmartSync(),
             new \BrowserDetector\Detector\Browser\Mobile\Incredimail(),
             new \BrowserDetector\Detector\Browser\Mobile\AppleMail(),
-            new \BrowserDetector\Detector\Browser\Mobile\Coast()
+            new \BrowserDetector\Detector\Browser\Mobile\Coast(),
+            new \BrowserDetector\Detector\Browser\Mobile\QuickLook()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
