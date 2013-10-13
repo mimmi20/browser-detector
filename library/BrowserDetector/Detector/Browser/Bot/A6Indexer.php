@@ -114,7 +114,7 @@ class A6Indexer
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A6\-Indexer')) {
+        if (!$this->utils->checkIfContains('A6-Indexer')) {
             return false;
         }
         
@@ -131,7 +131,7 @@ class A6Indexer
         $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         
-        $searches = array('A6-Indexer');
+        $searches = array('A6\-Indexer');
         
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

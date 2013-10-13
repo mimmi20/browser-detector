@@ -137,7 +137,7 @@ class Hdc
             'Galaxy S3 EX'
         );
         
-        if (!$this->utils->checkIfContains($htcPhones)) {
+        if (!$this->utils->checkIfContains($hdcPhones)) {
             return false;
         }
         
