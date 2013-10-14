@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class LenovoA2109aIdeaTab
+class LenovoA2107ahIdeaTab
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,16 +86,16 @@ class LenovoA2109aIdeaTab
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'A2109A',
+            'model_name'                => 'A2107A-H',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Lenovo(),
             'brand_name' => new Company\Lenovo(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'IdeaTab A2109A',
+            'marketing_name'            => 'IdeaTab A2107A-H',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
-            'device_cpu'                => 'MTK 6575 1.0GHz Cortex A9', // not in wurfl
+            'device_cpu'                => null, // not in wurfl
             
             // product info
             'can_assign_phone_number'   => false,
@@ -106,14 +106,14 @@ class LenovoA2109aIdeaTab
             'unique'                    => true,
             
             // display
-            'physical_screen_width'  => 218,
-            'physical_screen_height' => 136,
-            'columns'                => 100,
-            'rows'                   => 100,
-            'max_image_width'        => 980,
-            'max_image_height'       => 472,
-            'resolution_width'       => 1280,
-            'resolution_height'      => 800,
+            'physical_screen_width'  => null,
+            'physical_screen_height' => null,
+            'columns'                => null,
+            'rows'                   => null,
+            'max_image_width'        => null,
+            'max_image_height'       => null,
+            'resolution_width'       => 1024,
+            'resolution_height'      => 600,
             'dual_orientation'       => true,
             'colors'                 => 65536,
             
@@ -132,11 +132,7 @@ class LenovoA2109aIdeaTab
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains('IdeaTab_A1107', 'IdeaTabS2110AF', 'IdeaTab A2107A-H')) {
+        if (!$this->utils->checkIfContains(array('IdeaTab A2107A-H'))) {
             return false;
         }
         
