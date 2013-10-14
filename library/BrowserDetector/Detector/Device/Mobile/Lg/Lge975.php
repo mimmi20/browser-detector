@@ -91,7 +91,7 @@ class Lge975
             'manufacturer_name' => new Company\Lg(),
             'brand_name' => new Company\Lg(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'E975',
+            'marketing_name'            => 'Optimus G',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class Lge975
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => 480,
-            'resolution_height'      => 800,
+            'resolution_width'       => 768,
+            'resolution_height'      => 1280,
             'dual_orientation'       => true,
-            'colors'                 => 4294967296,
+            'colors'                 => 16777216,
             
             // sms
             'sms_enabled' => true,
