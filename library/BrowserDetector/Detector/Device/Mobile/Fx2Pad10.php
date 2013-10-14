@@ -86,7 +86,7 @@ class Fx2Pad10
             'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'FX2 PAD10',
+            'model_name'                => '812223',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\FaktorZwei(),
             'brand_name' => new Company\FaktorZwei(),
