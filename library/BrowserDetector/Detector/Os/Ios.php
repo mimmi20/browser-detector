@@ -174,7 +174,8 @@ class Ios
             new \BrowserDetector\Detector\Browser\Mobile\GooglePlus(),
             new \BrowserDetector\Detector\Browser\Mobile\NetNewsWire(),
             new \BrowserDetector\Detector\Browser\Mobile\Incredimail(),
-            new \BrowserDetector\Detector\Browser\Mobile\Lunascape()
+            new \BrowserDetector\Detector\Browser\Mobile\Lunascape(),
+            new \BrowserDetector\Detector\Browser\Mobile\MqqBrowser()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
