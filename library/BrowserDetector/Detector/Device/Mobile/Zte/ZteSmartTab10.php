@@ -83,15 +83,15 @@ class ZteSmartTab10
             'wurflKey' => null, // not in wurfl
             
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type' => new DeviceType\Tablet(), // not in wurfl
             
             // device
-            'model_name'                => 'SmartTab10',
+            'model_name'                => 'Smart Tab 10',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Zte(),
             'brand_name' => new Company\Vodafone(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'SmartTab10',
+            'marketing_name'            => 'Smart Tab 10',
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_bits'               => null, // not in wurfl
@@ -112,10 +112,10 @@ class ZteSmartTab10
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 1280,
+            'resolution_height'      => 800,
+            'dual_orientation'       => true,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => false,
