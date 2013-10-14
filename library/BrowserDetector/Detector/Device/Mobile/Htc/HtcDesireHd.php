@@ -80,13 +80,13 @@ class HtcA9191DesireHd
         parent::__construct();
         
         $this->properties = array(
-            'wurflKey' => 'htc_desirehd_ver1_suban23a9191', // not in wurfl
+            'wurflKey' => null, // not in wurfl
             
             // kind of device
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'A9191', // wurflkey: htc_desirehd_ver1_suban23a9191
+            'model_name'                => 'Desire HD',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Htc(),
             'brand_name' => new Company\Htc(),
@@ -100,7 +100,7 @@ class HtcA9191DesireHd
             // product info
             'can_assign_phone_number'   => true,
             'ununiqueness_handler'      => null,
-            'uaprof'                    => 'http://www.htcmms.com.tw/Android/Common/DesireHD/ua-profile.xml',
+            'uaprof'                    => null,
             'uaprof2'                   => null,
             'uaprof3'                   => null,
             'unique'                    => true,
@@ -132,7 +132,11 @@ class HtcA9191DesireHd
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('A9191'))) {
+        if (!$this->utils->checkIfContains(array('HTC_DesireHD', 'HTC Desire HD', 'HTC/DesireHD', 'Desire HD'))) {
+            return false;
+        }
+        
+        if ($this->utils->checkIfContains(array('A9191'))) {
             return false;
         }
         
