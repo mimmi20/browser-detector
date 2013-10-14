@@ -613,6 +613,9 @@ class InputMapper
             case 's510b':
                 $deviceName = 'S510B';
                 break;
+            case 'htc desire sv':
+                $deviceName = 'Desire SV';
+                break;
             // Asus
             case 'asus-padfone':
                 $deviceName = 'PadFone';
@@ -739,6 +742,7 @@ class InputMapper
             // HTC
             case 'sensationxe beats z715e':
             case 's510b':
+            case 'htc desire sv':
                 $deviceMaker = 'HTC';
                 break;
             // Asus
@@ -878,6 +882,10 @@ class InputMapper
             case 'lifetab s9512':
                 $marketingName = 'LifeTab S9512';
                 break;
+            // HTC
+            case 'htc desire sv':
+                $deviceName = 'Desire SV';
+                break;
             // Apple
             case 'ipad':
                 $marketingName = 'iPad';
@@ -904,6 +912,9 @@ class InputMapper
     public function mapDeviceBrandName($brandName, $deviceName = null)
     {
         switch (strtolower($brandName)) {
+            case 'htc corporation':
+                $brandName = 'HTC';
+                break;
             case '':
             case 'unknown':
             case 'other':
@@ -955,6 +966,10 @@ class InputMapper
             case 'lifetab p9514':
             case 'lifetab s9512':
                 $brandName = 'Medion';
+                break;
+            // HTC
+            case 'htc desire sv':
+                $deviceName = 'HTC';
                 break;
             // Apple
             case 'ipad':
