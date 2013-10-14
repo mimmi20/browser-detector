@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use \BrowserDetector\Detector\BrowserHandler;
 use \BrowserDetector\Helper\Utils;
+use \BrowserDetector\Helper\SpamCrawlerFake;
 use \BrowserDetector\Detector\MatcherInterface;
 use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use \BrowserDetector\Detector\EngineHandler;
@@ -114,7 +115,12 @@ class Firefox
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($this->_useragent);
+        
+        if (!$this->utils->checkIfContains('Mozilla/')
+            && !$spamHelper->isAnonymized()
+        ) {
             return false;
         }
         
