@@ -132,7 +132,7 @@ class AcerIconiaA1811
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Iconia B1-710', 'B1-710'))) {
+        if (!$this->utils->checkIfContains(array('Iconia A1-811', 'A1-811'))) {
             return false;
         }
         
