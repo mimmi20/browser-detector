@@ -141,6 +141,7 @@ class Android
             'FlyFlow',
             'iPad', 
             'iPhone',
+            'Maxthon',
             'MQQBrowser',
             'NetFrontLifeBrowser',
             'NokiaBrowser',

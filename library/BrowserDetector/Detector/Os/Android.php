@@ -210,7 +210,8 @@ class Android
             new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
             new \BrowserDetector\Detector\Browser\Mobile\YaBrowser(),
             new \BrowserDetector\Detector\Browser\Mobile\MqqBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\FlyFlow()
+            new \BrowserDetector\Detector\Browser\Mobile\FlyFlow(),
+            new \BrowserDetector\Detector\Browser\Mobile\Maxthon()
         );
         
         $chain = new \BrowserDetector\Detector\Chain();
