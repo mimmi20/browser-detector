@@ -132,7 +132,7 @@ class HtcDesireS
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S'))) {
+        if (!$this->utils->checkIfContains(array('HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S', 'HTC_Desire_S'))) {
             return false;
         }
         
