@@ -79,7 +79,7 @@ class Webkit extends EngineHandler
             // engine
             'renderingengine_name'         => 'WebKit', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Apple',
+            'renderingengine_manufacturer' => new Company\Apple(),
             
             // markup
             'utf8_support' => false,

@@ -79,7 +79,7 @@ class Khtml extends EngineHandler
             // engine
             'renderingengine_name'         => 'KHTML', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'unknown',
+            'renderingengine_manufacturer' => new Company\Unknown(),
             
             // markup
             'utf8_support' => false,

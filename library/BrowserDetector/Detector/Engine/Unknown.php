@@ -76,7 +76,7 @@ class Unknown extends EngineHandler
             // engine
             'renderingengine_name'         => 'unknown', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'unknown',
+            'renderingengine_manufacturer' => new Company\Unknown(),
             
             // markup
             'utf8_support' => null,

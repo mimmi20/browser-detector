@@ -79,7 +79,7 @@ class NetFront extends EngineHandler
             // engine
             'renderingengine_name'         => 'NetFront', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Access',
+            'renderingengine_manufacturer' => new Company\Access(),
             
             // markup
             'utf8_support' => null,

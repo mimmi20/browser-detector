@@ -79,7 +79,7 @@ class Tasman extends EngineHandler
             // engine
             'renderingengine_name'         => 'Tasman', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Apple',
+            'renderingengine_manufacturer' => new Company\Apple(),
             
             // markup
             'utf8_support' => null,

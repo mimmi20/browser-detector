@@ -79,7 +79,7 @@ class BlackBerry extends EngineHandler
             // engine
             'renderingengine_name'         => 'BlackBerry', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'RIM',
+            'renderingengine_manufacturer' => new Company\Rim(),
             
             // markup
             'utf8_support' => false,

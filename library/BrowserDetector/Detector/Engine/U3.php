@@ -46,8 +46,6 @@ use \BrowserDetector\Detector\BrowserHandler;
 use \BrowserDetector\Detector\OsHandler;
 use \BrowserDetector\Detector\DeviceHandler;
 use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -59,7 +57,7 @@ use \BrowserDetector\Detector\Company;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Trident extends EngineHandler
+class U3 extends EngineHandler
 {
     /**
      * the detected browser properties
@@ -79,17 +77,17 @@ class Trident extends EngineHandler
         
         $this->properties = array(
             // engine
-            'renderingengine_name'         => 'Trident', // not in wurfl
+            'renderingengine_name'         => 'U3', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => new Company\Microsoft(),
+            'renderingengine_manufacturer' => new Company\UcMobile(),
             
             // markup
             'utf8_support' => false,
             'multipart_support' => false,
-            'supports_background_sounds' => true, // not in wurfl
-            'supports_vb_script' => true, // not in wurfl
+            'supports_background_sounds' => false, // not in wurfl
+            'supports_vb_script' => false, // not in wurfl
             'supports_java_applets' => true, // not in wurfl
-            'supports_activex_controls' => true, // not in wurfl
+            'supports_activex_controls' => false, // not in wurfl
             'preferred_markup' => 'html_web_4_0',
             'html_web_3_2' => true,
             'html_web_4_0' => true,
@@ -149,7 +147,7 @@ class Trident extends EngineHandler
             'xhtml_supports_table_for_layout' => false,
             'xhtml_readable_background_color2' => '#FFFFFF',
             'xhtml_send_sms_string' => 'none',
-            'xhtml_format_as_css_property' => false,
+            'xhtml_format_as_css_property' => false,//ver 534.46,non-mobi=false
             'opwv_xhtml_extensions_support' => false,
             'xhtml_marquee_as_css_property' => false,
             'xhtml_nowrap_mode' => false,
@@ -165,7 +163,7 @@ class Trident extends EngineHandler
             'transparent_png_index' => false,
             'epoc_bmp' => false,
             'svgt_1_1_plus' => false,
-            'svgt_1_1' => false,
+            'svgt_1_1' => true,
             'transparent_png_alpha' => false,
             'tiff' => false,
             
@@ -190,7 +188,7 @@ class Trident extends EngineHandler
             'ajax_preferred_geoloc_api' => 'none',
             
             // wml
-            'wml_make_phone_call_string' => 'none',
+            'wml_make_phone_call_string' => 'none', // ver >= 534.46, Chrome+Safari => none
             'card_title_support' => false,
             'table_support' => false,
             'elective_forms_recommended' => false,
@@ -218,7 +216,7 @@ class Trident extends EngineHandler
             'is_sencha_touch_ok' => true,
             
             // html
-            'image_inlining' => false,
+            'image_inlining' => true,
             'canvas_support' => 'none',
             'viewport_width' => null,
             'html_preferred_dtd' => 'html4',
@@ -231,11 +229,11 @@ class Trident extends EngineHandler
             'handheldfriendly' => false,
             
             // css
-            'css_spriting' => false,
-            'css_gradient' => 'none',
-            'css_gradient_linear' => 'none',
-            'css_border_image' => 'none',
-            'css_rounded_corners' => 'none',
+            'css_spriting' => true,
+            'css_gradient' => 'webkit',
+            'css_gradient_linear' => 'webkit',
+            'css_border_image' => 'webkit',
+            'css_rounded_corners' => 'webkit',
             'css_supports_width_as_percentage' => true,
         );
     }
@@ -247,37 +245,15 @@ class Trident extends EngineHandler
      */
     public function canHandle()
     {
-        $noTridentEngines = array(
-            'KHTML', 'AppleWebKit', 'WebKit', 'Presto', 'RGAnalytics',
-            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Mac_PowerPC',
-            'Opera'
-        );
-        
-        if ($this->utils->checkIfContains($noTridentEngines)) {
+        if (!$this->utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Safari'))) {
             return false;
         }
         
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            if ($matches[1] < 7 && $this->utils->checkIfContains('Gecko')) {
-                return false;
-            }
-            
-            if ($matches[1] == 7 && !$this->utils->checkIfContains('Gecko')) {
-                return false;
-            }
-            
-            return true;
+        if ($this->utils->checkIfContains(array('Trident', 'Presto', 'Konqueror'))) {
+            return false;
         }
         
-        if ($this->utils->checkIfContains('Mozilla/') 
-            && $this->utils->checkIfContains(array('MSIE', 'Trident'))
-        ) {
-            return true;
-        }
-        
-        return false;
+        return true;
     }
     
     /**
@@ -289,57 +265,13 @@ class Trident extends EngineHandler
     {
         $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
         
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $this->setCapability(
-                'renderingengine_version', $detector->setVersion($matches[1])
-            );
-            return;
-        }
-        
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
-        
-        if ($doMatch) {
-            $version = '';
-            
-            switch ((float) $matches[1]) {
-                case 11.0:
-                    $version = '7.0';
-                    break;
-                case 10.0:
-                    $version = '6.0';
-                    break;
-                case 9.0:
-                    $version = '5.0';
-                    break;
-                case 8.0:
-                case 7.0:
-                case 6.0:
-                    $version = '4.0';
-                    break;
-                case 5.5:
-                case 5.01:
-                case 5.0:
-                case 4.01:
-                case 4.0:
-                case 3.0:
-                case 2.0:
-                case 1.0:
-                default:
-                    // do nothing here
-            }
-            
-            $this->setCapability(
-                'renderingengine_version', $detector->setVersion($version)
-            );
-            return;
-        }
+        $searches = array(
+            'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit'
+        );
         
         $this->setCapability(
-            'renderingengine_version', $detector->setVersion('')
+            'renderingengine_version', $detector->detectVersion($searches)
         );
     }
     
@@ -350,24 +282,6 @@ class Trident extends EngineHandler
      */
     public function getWeight()
     {
-        return 86837;
-    }
-    
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        OsHandler $os, DeviceHandler $device, BrowserHandler $browser)
-    {
-        parent::detectDependProperties($os, $device, $browser);
-        
-        if ($device->getCapability('device_type')->isMobile()) {
-            $this->setCapability('xhtml_make_phone_call_string', 'tel:');
-        } else {
-            $this->setCapability('xhtml_make_phone_call_string', 'none');
-        }
+        return 2455;
     }
 }

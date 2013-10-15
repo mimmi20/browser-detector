@@ -79,7 +79,7 @@ class Gecko extends EngineHandler
             // engine
             'renderingengine_name'         => 'Gecko', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Mozilla',
+            'renderingengine_manufacturer' => new Company\Mozilla(),
             
             // markup
             'utf8_support' => false,

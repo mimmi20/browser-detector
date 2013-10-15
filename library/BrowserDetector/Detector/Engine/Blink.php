@@ -79,7 +79,7 @@ class Blink extends EngineHandler
             // engine
             'renderingengine_name'         => 'Blink', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Google',
+            'renderingengine_manufacturer' => new Company\Google(),
             
             // markup
             'utf8_support' => false,

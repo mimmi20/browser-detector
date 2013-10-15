@@ -79,7 +79,7 @@ class Presto extends EngineHandler
             // engine
             'renderingengine_name'         => 'Presto', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Opera',
+            'renderingengine_manufacturer' => new Company\Opera(),
             
             // markup
             'utf8_support' => false,

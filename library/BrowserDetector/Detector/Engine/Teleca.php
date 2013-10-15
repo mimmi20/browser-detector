@@ -79,7 +79,7 @@ class Teleca extends EngineHandler
             // engine
             'renderingengine_name'         => 'Teleca', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => 'Obigo',
+            'renderingengine_manufacturer' => new Company\Obigo(),
             
             // markup
             'utf8_support' => null,
