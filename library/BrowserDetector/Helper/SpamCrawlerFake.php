@@ -183,6 +183,7 @@ class SpamCrawlerFake
             'tlsprober',
             'ua:',
             'unister-test',
+            'unister-https-test',
             'unwindfetchor',
             'user-agent: ',
             'web walker',
