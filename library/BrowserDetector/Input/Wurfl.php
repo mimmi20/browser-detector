@@ -740,7 +740,7 @@ class Wurfl extends Core
             $result->setCapability('xhtml_support_level', (int) $xhtmlLevel);
         }
         
-        if (($type == 'Mobile Phone' || $type == 'Tablet')
+        if (($type == 'Mobile Phone' || $type == 'Tablet' || $type == 'FonePad')
             && 'true' === $device->getCapability('dual_orientation')
         ) {
             $width  = (int) $device->getCapability('resolution_width');
@@ -749,7 +749,7 @@ class Wurfl extends Core
             if ($type == 'Mobile Phone') {
                 $result->setCapability('resolution_width', min($height, $width));
                 $result->setCapability('resolution_height', max($height, $width));
-            } elseif ($type == 'Tablet') {
+            } elseif ($type == 'Tablet' || $type == 'FonePad') {
                 $result->setCapability('resolution_width', max($height, $width));
                 $result->setCapability('resolution_height', min($height, $width));
             } else {
