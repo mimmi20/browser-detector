@@ -46,6 +46,8 @@ use \BrowserDetector\Detector\BrowserHandler;
 use \BrowserDetector\Detector\OsHandler;
 use \BrowserDetector\Detector\DeviceHandler;
 use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
 
 /**
  * MSIEAgentHandler
@@ -79,7 +81,7 @@ class Gecko extends EngineHandler
             // engine
             'renderingengine_name'         => 'Gecko', // not in wurfl
             'renderingengine_version'      => '', // not in wurfl
-            'renderingengine_manufacturer' => new Company\Mozilla(),
+            'renderingengine_manufacturer' => new Company\MozillaFoundation(),
             
             // markup
             'utf8_support' => false,

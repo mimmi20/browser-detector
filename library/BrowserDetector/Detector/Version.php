@@ -429,8 +429,8 @@ class Version implements \Serializable
         $version  = trim(trim(str_replace('_', '.', $version)), '.');
         $splitted = explode('.', $version, 3);
 
-        $this->_major = (!empty($splitted[0]) ? (int) $splitted[0] : 0);
-        $this->_minor = (!empty($splitted[1]) ? (int) $splitted[1] : 0);
+        $this->_major = (!empty($splitted[0]) ? $splitted[0] : '0');
+        $this->_minor = (!empty($splitted[1]) ? $splitted[1] : '0');
         $this->_micro = (!empty($splitted[2]) ? $splitted[2] : '0');
 
         $this->_version = $version;

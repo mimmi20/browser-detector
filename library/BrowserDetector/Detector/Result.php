@@ -832,6 +832,16 @@ class Result implements \Serializable
      */
     public function getCapabilities()
     {
+        return $this->getAllCapabilities();
+    }
+
+    /**
+     * Returns the values of all capabilities for the current device
+     *
+     * @return array All Capability values
+     */
+    public function getAllCapabilities()
+    {
         return $this->properties;
     }
 

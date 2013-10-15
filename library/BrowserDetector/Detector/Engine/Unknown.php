@@ -46,6 +46,8 @@ use \BrowserDetector\Detector\BrowserHandler;
 use \BrowserDetector\Detector\OsHandler;
 use \BrowserDetector\Detector\DeviceHandler;
 use \BrowserDetector\Detector\MatcherInterface;
+use \BrowserDetector\Detector\Version;
+use \BrowserDetector\Detector\Company;
 
 /**
  * @category  BrowserDetector
