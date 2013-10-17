@@ -133,20 +133,6 @@ class Uaparser extends Core
             );
         }
         
-        if (null !== $this->cache) {
-            $this->parser->setCache($this->cache)
-                ->setCachePrefix($this->cachePrefix)
-            ;
-        }
-        
-        if (null !== $this->localFile) {
-            $this->parser->setLocaleFile($this->localFile);
-        }
-        
-        if (null !== $this->logger) {
-            $this->setLogger($this->logger);
-        }
-        
         return $this->parser;
     }
 }
