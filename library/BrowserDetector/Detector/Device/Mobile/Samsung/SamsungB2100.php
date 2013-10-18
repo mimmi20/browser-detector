@@ -59,7 +59,7 @@ use \BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SamsungGtb2100
+class SamsungB2100
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -86,14 +86,14 @@ class SamsungGtb2100
             'device_type' => new DeviceType\MobilePhone(), // not in wurfl
             
             // device
-            'model_name'                => 'GT-B2100',
+            'model_name'                => 'B2100',
             'model_version'             => null, // not in wurfl
             'manufacturer_name' => new Company\Samsung(),
             'brand_name' => new Company\Samsung(),
             'model_extra_info'          => null,
-            'marketing_name'            => 'GT-B2100',
+            'marketing_name'            => 'B2100',
             'has_qwerty_keyboard'       => false,
-            'pointing_method'           => 'touchscreen',
+            'pointing_method'           => '',
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
             
@@ -112,10 +112,10 @@ class SamsungGtb2100
             'rows'                   => null,
             'max_image_width'        => null,
             'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => null,
-            'colors'                 => null,
+            'resolution_width'       => 128,
+            'resolution_height'      => 160,
+            'dual_orientation'       => false,
+            'colors'                 => 65536,
             
             // sms
             'sms_enabled' => true,
@@ -132,7 +132,7 @@ class SamsungGtb2100
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GT-B2100'))) {
+        if (!$this->utils->checkIfContains(array('SAMSUNG-B2100'))) {
             return false;
         }
         
