@@ -444,11 +444,11 @@ class Browscap extends Core
     
     public function expandIni($doSort = true)
     {
-        $this->log('loading ini', \Monolog\Logger::DEBUG);
+        $this->log(\Monolog\Logger::DEBUG, 'loading ini');
         
         $browsers = $this->initParser()->getLoader()->load();
         
-        $this->log('init', \Monolog\Logger::DEBUG);
+        $this->log(\Monolog\Logger::DEBUG, 'init');
         
         $browserBitHelper = new BitsDetector\Browser();
         $osBitHelper      = new BitsDetector\Os();
@@ -464,7 +464,7 @@ class Browscap extends Core
         
         $userAgent = array_keys($browsers);
         
-        $this->log('expand', \Monolog\Logger::DEBUG);
+        $this->log(\Monolog\Logger::DEBUG, 'expand');
         
         foreach ($browsers as $key => $properties) {
             if (!isset($properties['Parent'])) {
@@ -477,8 +477,8 @@ class Browscap extends Core
             while (isset($browsers[$userAgent]['Parent'])) {
                 if ($userAgent === $browsers[$userAgent]['Parent']) {
                     $this->log(
-                        'Parent is identical to itself for key "' . $userAgent . '"',
-                        \Monolog\Logger::ALERT
+                        \Monolog\Logger::ALERT,
+                        'Parent is identical to itself for key "' . $userAgent . '"'
                     );
                     break;
                 }
@@ -494,16 +494,16 @@ class Browscap extends Core
             foreach ($parents as $parent) {
                 if (!isset($browsers[$parent])) {
                     $this->log(
-                        'Parent not found for key "' . $parent . '"',
-                        \Monolog\Logger::ALERT
+                        \Monolog\Logger::ALERT,
+                        'Parent not found for key "' . $parent . '"'
                     );
                     continue;
                 }
                 
                 if (!is_array($browsers[$parent])) {
                     $this->log(
-                        'empty Parent found for key "' . $parent . '"',
-                        \Monolog\Logger::ALERT
+                        \Monolog\Logger::ALERT,
+                        'empty Parent found for key "' . $parent . '"'
                     );
                     continue;
                 }
@@ -1187,7 +1187,7 @@ class Browscap extends Core
             $browsers[$key] = $properties;
         }
         
-        $this->log('build groups', \Monolog\Logger::DEBUG);
+        $this->log(\Monolog\Logger::DEBUG, 'build groups');
         
         foreach ($browsers as $key => $properties) {
             if (!empty($properties['Parents'])) {
@@ -1197,7 +1197,7 @@ class Browscap extends Core
         
         //sort
         if ($doSort) {
-            $this->log('sort', \Monolog\Logger::DEBUG);
+            $this->log(\Monolog\Logger::DEBUG, 'sort');
             
             $sort1  = array();
             $sort2  = array();
@@ -1420,7 +1420,7 @@ class Browscap extends Core
         $outputPhp = '';
         $outputAsp = '';
         
-        $this->log('shrink and output', \Monolog\Logger::DEBUG);
+        $this->log(\Monolog\Logger::DEBUG, 'shrink and output');
         
         $fp = fopen($this->localFile . '.full.php.ini', 'w');
         fwrite(
