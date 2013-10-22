@@ -129,7 +129,7 @@ class Bada
      */
     public function getWeight()
     {
-        return 4;
+        return 112469;
     }
     
     /**

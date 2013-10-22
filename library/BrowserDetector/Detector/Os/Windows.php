@@ -268,6 +268,6 @@ class Windows
      */
     public function getWeight()
     {
-        return 92993;
+        return 817419325;
     }
 }

@@ -129,6 +129,6 @@ class FreeBsd
      */
     public function getWeight()
     {
-        return 8;
+        return 13702;
     }
 }

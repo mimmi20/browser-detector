@@ -146,7 +146,7 @@ class RimOs
      */
     public function getWeight()
     {
-        return 43;
+        return 219627;
     }
     
     /**

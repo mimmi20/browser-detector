@@ -164,6 +164,6 @@ class Linux
      */
     public function getWeight()
     {
-        return 606;
+        return 5846999;
     }
 }

@@ -138,6 +138,6 @@ class Macosx
      */
     public function getWeight()
     {
-        return 295;
+        return 35975963;
     }
 }

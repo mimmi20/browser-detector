@@ -129,7 +129,7 @@ class Brew
      */
     public function getWeight()
     {
-        return 2;
+        return 19;
     }
     
     /**

@@ -129,7 +129,7 @@ class MeeGo
      */
     public function getWeight()
     {
-        return 2;
+        return 13953;
     }
     
     /**

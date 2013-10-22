@@ -138,7 +138,7 @@ class Symbianos
      */
     public function getWeight()
     {
-        return 54;
+        return 304042;
     }
     
     /**

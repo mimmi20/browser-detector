@@ -109,6 +109,6 @@ class LinuxTv
      */
     public function getWeight()
     {
-        return 7;
+        return 57634;
     }
 }

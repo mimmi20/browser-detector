@@ -133,7 +133,7 @@ class Ubuntu
      */
     public function getWeight()
     {
-        return 72;
+        return 5798025;
     }
     
     /**

@@ -150,7 +150,7 @@ class Ios
      */
     public function getWeight()
     {
-        return 404;
+        return 66458261;
     }
     
     /**

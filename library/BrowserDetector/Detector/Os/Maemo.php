@@ -129,7 +129,7 @@ class Maemo
      */
     public function getWeight()
     {
-        return 3;
+        return 9342;
     }
     
     /**

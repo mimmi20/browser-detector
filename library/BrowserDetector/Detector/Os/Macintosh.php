@@ -137,6 +137,6 @@ class Macintosh
      */
     public function getWeight()
     {
-        return 250;
+        return 7303;
     }
 }

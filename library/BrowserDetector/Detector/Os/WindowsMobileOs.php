@@ -185,7 +185,7 @@ class WindowsMobileOs
      */
     public function getWeight()
     {
-        return 2;
+        return 42347;
     }
     
     /**

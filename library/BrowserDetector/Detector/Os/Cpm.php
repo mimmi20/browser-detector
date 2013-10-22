@@ -109,6 +109,6 @@ class Cpm
      */
     public function getWeight()
     {
-        return 2;
+        return 78;
     }
 }

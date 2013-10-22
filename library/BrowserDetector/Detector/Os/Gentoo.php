@@ -109,6 +109,6 @@ class Gentoo
      */
     public function getWeight()
     {
-        return 4;
+        return 4552;
     }
 }

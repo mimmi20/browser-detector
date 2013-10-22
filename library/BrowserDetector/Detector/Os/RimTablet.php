@@ -140,7 +140,7 @@ class RimTablet
      */
     public function getWeight()
     {
-        return 3;
+        return 80286;
     }
     
     /**

@@ -129,7 +129,7 @@ class Darwin
      */
     public function getWeight()
     {
-        return 128;
+        return 70150;
     }
     
     /**

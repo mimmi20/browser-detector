@@ -148,7 +148,7 @@ class Java
      */
     public function getWeight()
     {
-        return 218;
+        return 147240;
     }
     
     /**

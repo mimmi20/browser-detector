@@ -104,6 +104,6 @@ class Cygwin
     
     public function getWeight()
     {
-        return 6;
+        return 2;
     }
 }

@@ -129,6 +129,6 @@ class Mint
      */
     public function getWeight()
     {
-        return 7;
+        return 46155;
     }
 }

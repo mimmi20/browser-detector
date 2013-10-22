@@ -109,6 +109,6 @@ class Moblin
      */
     public function getWeight()
     {
-        return 3;
+        return 5464;
     }
 }

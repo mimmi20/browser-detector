@@ -162,7 +162,7 @@ class WindowsPhoneOs
      */
     public function getWeight()
     {
-        return 2;
+        return 805140;
     }
     
     /**

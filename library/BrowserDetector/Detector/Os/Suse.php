@@ -101,4 +101,14 @@ class Suse
         
         return true;
     }
+    
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 219924;
+    }
 }
