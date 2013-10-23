@@ -156,7 +156,7 @@ class NetFront
      */
     public function getWeight()
     {
-        return 30;
+        return 9846;
     }
     
     /**

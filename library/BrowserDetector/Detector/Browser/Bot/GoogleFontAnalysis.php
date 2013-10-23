@@ -149,7 +149,7 @@ class GoogleFontAnalysis
      */
     public function getWeight()
     {
-        return 724458;
+        return 577;
     }
     
     /**

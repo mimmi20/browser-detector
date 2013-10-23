@@ -161,6 +161,6 @@ class Openwave
      */
     public function getWeight()
     {
-        return 4;
+        return 100;
     }
 }

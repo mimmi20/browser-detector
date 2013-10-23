@@ -153,7 +153,7 @@ class YouWaveAndroidOnPc
      */
     public function getWeight()
     {
-        return 5;
+        return 26185;
     }
     
     /**

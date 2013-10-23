@@ -147,7 +147,7 @@ class Wget
      */
     public function getWeight()
     {
-        return 4;
+        return 516772;
     }
     
     /**

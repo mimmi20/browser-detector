@@ -147,7 +147,7 @@ class SpiderLing
      */
     public function getWeight()
     {
-        return 12;
+        return 3712;
     }
     
     /**

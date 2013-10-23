@@ -147,7 +147,7 @@ class Larbin
      */
     public function getWeight()
     {
-        return 3;
+        return 5887;
     }
     
     /**

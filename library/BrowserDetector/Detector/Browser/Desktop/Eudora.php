@@ -162,7 +162,7 @@ class Eudora
      */
     public function getWeight()
     {
-        return 4;
+        return 1132;
     }
     
     /**

@@ -149,7 +149,7 @@ class Nagios
      */
     public function getWeight()
     {
-        return 3;
+        return 14476;
     }
     
     /**

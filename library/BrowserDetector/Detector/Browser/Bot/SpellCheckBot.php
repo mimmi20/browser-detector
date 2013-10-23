@@ -147,7 +147,7 @@ class SpellCheckBot
      */
     public function getWeight()
     {
-        return 724998;
+        return 3554;
     }
     
     /**

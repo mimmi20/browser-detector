@@ -128,7 +128,7 @@ class Sistrix
      */
     public function getWeight()
     {
-        return 3;
+        return 179206;
     }
     
     /**

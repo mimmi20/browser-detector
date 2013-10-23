@@ -147,7 +147,7 @@ class QupZilla
      */
     public function getWeight()
     {
-        return 6;
+        return 196;
     }
     
     /**

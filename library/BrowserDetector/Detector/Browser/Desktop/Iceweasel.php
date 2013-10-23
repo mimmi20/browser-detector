@@ -178,6 +178,6 @@ class Iceweasel
      */
     public function getWeight()
     {
-        return 131670;
+        return 284454;
     }
 }

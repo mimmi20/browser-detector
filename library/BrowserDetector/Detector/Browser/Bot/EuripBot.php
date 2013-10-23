@@ -147,7 +147,7 @@ class EuripBot
      */
     public function getWeight()
     {
-        return 3;
+        return 12;
     }
     
     /**

@@ -147,7 +147,7 @@ class ShowyouBot
      */
     public function getWeight()
     {
-        return 3;
+        return 520;
     }
     
     /**

@@ -147,7 +147,7 @@ class ApacheHttpClient
      */
     public function getWeight()
     {
-        return 3275874;
+        return 3368;
     }
     
     /**

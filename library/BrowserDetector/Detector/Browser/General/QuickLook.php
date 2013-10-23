@@ -147,7 +147,7 @@ class QuickLook
      */
     public function getWeight()
     {
-        return 2;
+        return 52532;
     }
     
     /**

@@ -147,7 +147,7 @@ class Baidu
      */
     public function getWeight()
     {
-        return 3;
+        return 121205;
     }
     
     /**

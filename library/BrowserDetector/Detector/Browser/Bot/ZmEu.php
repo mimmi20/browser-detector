@@ -128,7 +128,7 @@ class ZmEu
      */
     public function getWeight()
     {
-        return 3;
+        return 5813;
     }
     
     /**

@@ -84,7 +84,7 @@ class ArchiveDeBot
             'browser_type' => new BrowserType\Bot(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'Internet Archive',
+            'mobile_browser'              => 'Internet Archive DE',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => 'www.archive-de.com', // not in wurfl
@@ -128,7 +128,7 @@ class ArchiveDeBot
      */
     public function getWeight()
     {
-        return 3;
+        return 426;
     }
     
     /**

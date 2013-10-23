@@ -151,7 +151,7 @@ class Libwww
      */
     public function getWeight()
     {
-        return 3;
+        return 70465;
     }
     
     /**

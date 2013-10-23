@@ -142,7 +142,7 @@ class Airmail
     
     public function getWeight()
     {
-        return 3;
+        return 2116;
     }
     
     /**

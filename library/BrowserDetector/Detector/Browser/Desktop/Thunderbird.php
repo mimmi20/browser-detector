@@ -171,7 +171,7 @@ class Thunderbird
      */
     public function getWeight()
     {
-        return 236840;
+        return 962445;
     }
     
     /**

@@ -128,7 +128,7 @@ class LinkdexComBot
      */
     public function getWeight()
     {
-        return 724998;
+        return 1153;
     }
     
     /**

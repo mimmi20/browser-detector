@@ -128,7 +128,7 @@ class QuerySeekerSpider
      */
     public function getWeight()
     {
-        return 3;
+        return 689;
     }
     
     /**

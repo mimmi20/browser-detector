@@ -128,7 +128,7 @@ class AppleMail
      */
     public function getWeight()
     {
-        return 3;
+        return 115;
     }
     
     /**

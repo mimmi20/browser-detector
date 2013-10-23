@@ -178,7 +178,7 @@ class ComodoDragon
      */
     public function getWeight()
     {
-        return 6;
+        return 226543;
     }
     
     /**

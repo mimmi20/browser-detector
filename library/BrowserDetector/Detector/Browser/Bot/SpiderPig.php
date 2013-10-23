@@ -128,7 +128,7 @@ class SpiderPig
      */
     public function getWeight()
     {
-        return 3;
+        return 66048;
     }
     
     /**

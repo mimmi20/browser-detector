@@ -147,7 +147,7 @@ class Postbox
      */
     public function getWeight()
     {
-        return 5;
+        return 1064;
     }
     
     /**

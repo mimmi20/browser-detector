@@ -128,7 +128,7 @@ class Seokicks
      */
     public function getWeight()
     {
-        return 3;
+        return 322257;
     }
     
     /**

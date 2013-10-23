@@ -128,7 +128,7 @@ class TweetmemeBot
      */
     public function getWeight()
     {
-        return 724998;
+        return 866;
     }
     
     /**

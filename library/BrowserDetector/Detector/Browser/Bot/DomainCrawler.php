@@ -147,7 +147,7 @@ class DomainCrawler
      */
     public function getWeight()
     {
-        return 3;
+        return 63;
     }
     
     /**

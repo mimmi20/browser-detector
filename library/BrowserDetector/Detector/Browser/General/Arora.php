@@ -172,7 +172,7 @@ class Arora
      */
     public function getWeight()
     {
-        return 6;
+        return 1983;
     }
     
     /**

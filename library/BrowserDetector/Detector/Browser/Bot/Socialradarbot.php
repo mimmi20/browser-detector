@@ -128,7 +128,7 @@ class Socialradarbot
      */
     public function getWeight()
     {
-        return 3;
+        return 835;
     }
     
     /**

@@ -147,7 +147,7 @@ class GoogleAdsbotMobile
      */
     public function getWeight()
     {
-        return 147264;
+        return 10873;
     }
     
     /**

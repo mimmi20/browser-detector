@@ -147,7 +147,7 @@ class ZendHttpClient
      */
     public function getWeight()
     {
-        return 24673244;
+        return 68455141;
     }
     
     /**

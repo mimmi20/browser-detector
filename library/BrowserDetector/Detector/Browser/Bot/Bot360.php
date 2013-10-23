@@ -128,7 +128,7 @@ class Bot360
      */
     public function getWeight()
     {
-        return 3;
+        return 13827;
     }
     
     /**

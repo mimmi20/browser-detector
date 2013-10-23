@@ -147,7 +147,7 @@ class GoogleAdSenseBot
      */
     public function getWeight()
     {
-        return 155084;
+        return 509949;
     }
     
     /**

@@ -167,7 +167,7 @@ class Kmeleon
      */
     public function getWeight()
     {
-        return 3;
+        return 10210;
     }
     
     /**

@@ -128,7 +128,7 @@ class IntegromedbCrawler
      */
     public function getWeight()
     {
-        return 52218;
+        return 77417;
     }
     
     /**

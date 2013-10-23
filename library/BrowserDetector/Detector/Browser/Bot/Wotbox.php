@@ -128,7 +128,7 @@ class Wotbox
      */
     public function getWeight()
     {
-        return 3;
+        return 4776;
     }
     
     /**

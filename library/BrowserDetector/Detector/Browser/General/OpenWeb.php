@@ -128,7 +128,7 @@ class OpenWeb
      */
     public function getWeight()
     {
-        return 19123;
+        return 676;
     }
     
     /**

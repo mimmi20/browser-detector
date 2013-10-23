@@ -147,6 +147,6 @@ class W3m
      */
     public function getWeight()
     {
-        return 4;
+        return 278463;
     }
 }

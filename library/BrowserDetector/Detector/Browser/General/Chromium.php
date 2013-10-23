@@ -167,7 +167,7 @@ class Chromium
      */
     public function getWeight()
     {
-        return 149475;
+        return 302204;
     }
     
     /**

@@ -151,7 +151,7 @@ class Unisterbot
      */
     public function getWeight()
     {
-        return 300;
+        return 106656;
     }
     
     /**

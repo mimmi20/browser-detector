@@ -174,7 +174,7 @@ class Lunascape
      */
     public function getWeight()
     {
-        return 20;
+        return 30814;
     }
     
     /**

@@ -128,7 +128,7 @@ class OpenVas
      */
     public function getWeight()
     {
-        return 19123;
+        return 19165;
     }
     
     /**

@@ -147,7 +147,7 @@ class Python
      */
     public function getWeight()
     {
-        return 9;
+        return 71248;
     }
     
     /**

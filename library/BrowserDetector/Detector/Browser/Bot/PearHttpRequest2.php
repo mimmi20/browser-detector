@@ -147,7 +147,7 @@ class PearHttpRequest2
      */
     public function getWeight()
     {
-        return 9;
+        return 189;
     }
     
     /**

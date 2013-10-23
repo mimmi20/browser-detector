@@ -147,7 +147,7 @@ class Midori
      */
     public function getWeight()
     {
-        return 8;
+        return 6943;
     }
     
     /**

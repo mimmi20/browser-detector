@@ -151,7 +151,7 @@ class GoogleAdsbot
      */
     public function getWeight()
     {
-        return 147264;
+        return 410017;
     }
     
     /**

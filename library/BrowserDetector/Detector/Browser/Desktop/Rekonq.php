@@ -171,7 +171,7 @@ class Rekonq
      */
     public function getWeight()
     {
-        return 6;
+        return 12755;
     }
     
     /**

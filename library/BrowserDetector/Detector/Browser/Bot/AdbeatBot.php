@@ -147,7 +147,7 @@ class AdbeatBot
      */
     public function getWeight()
     {
-        return 3;
+        return 5407;
     }
     
     /**

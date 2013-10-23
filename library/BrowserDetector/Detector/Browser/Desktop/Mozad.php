@@ -147,7 +147,7 @@ class Mozad
      */
     public function getWeight()
     {
-        return 2;
+        return 3118;
     }
     
     /**

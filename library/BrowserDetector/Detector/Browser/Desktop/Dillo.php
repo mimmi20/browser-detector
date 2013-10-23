@@ -147,6 +147,6 @@ class Dillo
      */
     public function getWeight()
     {
-        return 2;
+        return 765;
     }
 }

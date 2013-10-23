@@ -147,7 +147,7 @@ class Ucweb
      */
     public function getWeight()
     {
-        return 4;
+        return 7976;
     }
     
     /**

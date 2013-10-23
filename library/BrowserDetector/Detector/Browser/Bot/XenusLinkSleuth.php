@@ -132,7 +132,7 @@ class XenusLinkSleuth
      */
     public function getWeight()
     {
-        return 3;
+        return 4930;
     }
     
     /**

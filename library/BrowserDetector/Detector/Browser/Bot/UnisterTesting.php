@@ -147,7 +147,7 @@ class UnisterTesting
      */
     public function getWeight()
     {
-        return 53286905;
+        return 161860168;
     }
     
     /**

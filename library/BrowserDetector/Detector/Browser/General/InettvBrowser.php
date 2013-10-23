@@ -147,7 +147,7 @@ class InettvBrowser
      */
     public function getWeight()
     {
-        return 690;
+        return 1996;
     }
     
     /**

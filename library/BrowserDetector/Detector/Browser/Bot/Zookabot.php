@@ -147,7 +147,7 @@ class Zookabot
      */
     public function getWeight()
     {
-        return 3;
+        return 20;
     }
     
     /**

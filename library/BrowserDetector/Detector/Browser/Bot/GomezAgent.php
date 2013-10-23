@@ -147,7 +147,7 @@ class GomezAgent
      */
     public function getWeight()
     {
-        return 7244089;
+        return 20293749;
     }
     
     /**

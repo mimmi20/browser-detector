@@ -147,7 +147,7 @@ class MsSearch
      */
     public function getWeight()
     {
-        return 3;
+        return 1390;
     }
     
     /**

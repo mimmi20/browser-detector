@@ -156,7 +156,7 @@ class Googlebot
      */
     public function getWeight()
     {
-        return 724458;
+        return 1945836;
     }
     
     /**

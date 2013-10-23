@@ -166,7 +166,7 @@ class Galeon
      */
     public function getWeight()
     {
-        return 4;
+        return 2742;
     }
     
     /**

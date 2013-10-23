@@ -155,7 +155,7 @@ class Qt
      */
     public function getWeight()
     {
-        return 1098152;
+        return 1884243;
     }
     
     /**

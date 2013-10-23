@@ -147,7 +147,7 @@ class CoreClassHttpClientCached
      */
     public function getWeight()
     {
-        return 3275874;
+        return 3315624;
     }
     
     /**

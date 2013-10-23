@@ -147,7 +147,7 @@ class RukyBot
      */
     public function getWeight()
     {
-        return 3;
+        return 344;
     }
     
     /**

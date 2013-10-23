@@ -151,7 +151,7 @@ class Sosospider
      */
     public function getWeight()
     {
-        return 3;
+        return 588;
     }
     
     /**

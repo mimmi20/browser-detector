@@ -147,7 +147,7 @@ class KomodiaBot
      */
     public function getWeight()
     {
-        return 3;
+        return 263;
     }
     
     /**

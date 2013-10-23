@@ -180,7 +180,7 @@ class Epiphany
      */
     public function getWeight()
     {
-        return 6;
+        return 12063;
     }
     
     /**

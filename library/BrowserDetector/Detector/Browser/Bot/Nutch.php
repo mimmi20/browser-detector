@@ -151,7 +151,7 @@ class Nutch
      */
     public function getWeight()
     {
-        return 12;
+        return 8116;
     }
     
     /**

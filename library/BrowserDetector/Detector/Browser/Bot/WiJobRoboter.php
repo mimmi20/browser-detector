@@ -147,7 +147,7 @@ class WiJobRoboter
      */
     public function getWeight()
     {
-        return 3;
+        return 24999;
     }
     
     /**

@@ -219,6 +219,6 @@ class MicrosoftOutlook extends MicrosoftOffice
      */
     public function getWeight()
     {
-        return 675518;
+        return 2839566;
     }
 }

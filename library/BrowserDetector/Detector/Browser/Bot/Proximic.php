@@ -147,7 +147,7 @@ class Proximic
      */
     public function getWeight()
     {
-        return 3;
+        return 38074;
     }
     
     /**

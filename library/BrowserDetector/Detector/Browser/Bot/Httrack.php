@@ -147,7 +147,7 @@ class Httrack
      */
     public function getWeight()
     {
-        return 108628;
+        return 202976;
     }
     
     /**

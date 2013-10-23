@@ -147,7 +147,7 @@ class SeoEngineWorldBot
      */
     public function getWeight()
     {
-        return 3;
+        return 1662;
     }
     
     /**

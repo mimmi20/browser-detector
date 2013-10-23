@@ -128,7 +128,7 @@ class RamblerMail
      */
     public function getWeight()
     {
-        return 724998;
+        return 7659;
     }
     
     /**

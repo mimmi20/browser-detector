@@ -128,7 +128,7 @@ class CrystalSemanticsBot
      */
     public function getWeight()
     {
-        return 3;
+        return 4619;
     }
     
     /**

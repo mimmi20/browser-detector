@@ -155,7 +155,7 @@ class QtWeb
      */
     public function getWeight()
     {
-        return 1098152;
+        return 371;
     }
     
     /**

@@ -147,7 +147,7 @@ class ContextadBot
      */
     public function getWeight()
     {
-        return 3;
+        return 800;
     }
     
     /**

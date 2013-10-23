@@ -147,7 +147,7 @@ class WordPress
      */
     public function getWeight()
     {
-        return 3959;
+        return 4686;
     }
     
     /**

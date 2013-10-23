@@ -128,7 +128,7 @@ class CoobyBot
      */
     public function getWeight()
     {
-        return 3;
+        return 35;
     }
     
     /**

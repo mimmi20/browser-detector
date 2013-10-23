@@ -128,7 +128,7 @@ class YacyBot
      */
     public function getWeight()
     {
-        return 143;
+        return 10625;
     }
     
     /**

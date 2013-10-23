@@ -178,7 +178,7 @@ class Camino
      */
     public function getWeight()
     {
-        return 43;
+        return 41576;
     }
     
     /**

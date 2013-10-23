@@ -168,7 +168,7 @@ class Icab
      */
     public function getWeight()
     {
-        return 2;
+        return 1685;
     }
     
     /**

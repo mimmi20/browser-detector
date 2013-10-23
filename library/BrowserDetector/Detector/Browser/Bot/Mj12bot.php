@@ -151,7 +151,7 @@ class Mj12bot
      */
     public function getWeight()
     {
-        return 3;
+        return 422276;
     }
     
     /**

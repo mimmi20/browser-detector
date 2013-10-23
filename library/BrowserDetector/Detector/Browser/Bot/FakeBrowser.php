@@ -132,7 +132,7 @@ class FakeBrowser
      */
     public function getWeight()
     {
-        return 2627;
+        return 899739;
     }
     
     /**

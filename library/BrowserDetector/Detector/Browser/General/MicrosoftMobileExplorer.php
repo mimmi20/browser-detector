@@ -199,7 +199,7 @@ class MicrosoftMobileExplorer
      */
     public function getWeight()
     {
-        return 299565;
+        return 828786;
     }
     
     /**

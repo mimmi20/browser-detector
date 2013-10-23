@@ -128,7 +128,7 @@ class SemagerBot
      */
     public function getWeight()
     {
-        return 724998;
+        return 1611;
     }
     
     /**

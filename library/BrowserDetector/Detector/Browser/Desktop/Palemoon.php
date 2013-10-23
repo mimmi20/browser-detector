@@ -176,7 +176,7 @@ class Palemoon
      */
     public function getWeight()
     {
-        return 4;
+        return 22208;
     }
     
     /**

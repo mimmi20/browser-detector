@@ -151,7 +151,7 @@ class Bingbot
      */
     public function getWeight()
     {
-        return 350548;
+        return 1993194;
     }
     
     /**

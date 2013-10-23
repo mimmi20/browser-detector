@@ -128,7 +128,7 @@ class ArchiveOrgBot
      */
     public function getWeight()
     {
-        return 3;
+        return 48003;
     }
     
     /**

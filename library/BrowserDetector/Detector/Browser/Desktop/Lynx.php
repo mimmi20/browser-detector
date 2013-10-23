@@ -122,6 +122,16 @@ class Lynx
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 85;
+    }
+    
+    /**
      * detects the browser version from the given user agent
      *
      * @return string

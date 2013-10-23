@@ -186,7 +186,7 @@ class Konqueror
      */
     public function getWeight()
     {
-        return 19;
+        return 36711;
     }
     
     /**

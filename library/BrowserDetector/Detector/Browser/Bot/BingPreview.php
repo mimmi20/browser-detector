@@ -147,7 +147,7 @@ class BingPreview
      */
     public function getWeight()
     {
-        return 161062;
+        return 284717;
     }
     
     /**

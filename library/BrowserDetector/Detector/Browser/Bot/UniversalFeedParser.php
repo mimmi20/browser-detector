@@ -147,7 +147,7 @@ class UniversalFeedParser
      */
     public function getWeight()
     {
-        return 53;
+        return 4;
     }
     
     /**

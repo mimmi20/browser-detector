@@ -151,7 +151,7 @@ class NokiaBrowser
      */
     public function getWeight()
     {
-        return 120328;
+        return 260003;
     }
     
     /**

@@ -186,7 +186,7 @@ class Maxthon
      */
     public function getWeight()
     {
-        return 190680;
+        return 497330;
     }
     
     /**

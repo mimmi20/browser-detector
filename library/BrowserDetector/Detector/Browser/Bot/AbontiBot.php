@@ -128,7 +128,7 @@ class AbontiBot
      */
     public function getWeight()
     {
-        return 724998;
+        return 20807;
     }
     
     /**

@@ -147,7 +147,7 @@ class AcoonBot
      */
     public function getWeight()
     {
-        return 3;
+        return 32;
     }
     
     /**

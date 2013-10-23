@@ -147,7 +147,7 @@ class ExbLanguageCrawler
      */
     public function getWeight()
     {
-        return 3;
+        return 2051;
     }
     
     /**

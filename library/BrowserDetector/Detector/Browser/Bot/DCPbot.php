@@ -147,7 +147,7 @@ class DCPbot
      */
     public function getWeight()
     {
-        return 3;
+        return 373;
     }
     
     /**

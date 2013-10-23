@@ -128,7 +128,7 @@ class AlcoholSearch
      */
     public function getWeight()
     {
-        return 3;
+        return 3868;
     }
     
     /**

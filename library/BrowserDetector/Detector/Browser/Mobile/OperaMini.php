@@ -205,7 +205,7 @@ class OperaMini
      */
     public function getWeight()
     {
-        return 112532;
+        return 365459;
     }
     
     /**

@@ -128,7 +128,7 @@ class ThumbSniper
      */
     public function getWeight()
     {
-        return 3;
+        return 2391;
     }
     
     /**

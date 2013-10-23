@@ -147,7 +147,7 @@ class Spiderlytics
      */
     public function getWeight()
     {
-        return 3;
+        return 18198;
     }
     
     /**

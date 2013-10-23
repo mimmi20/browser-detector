@@ -147,7 +147,7 @@ class GoogleWirelessTranscoder
      */
     public function getWeight()
     {
-        return 3;
+        return 44297;
     }
     
     /**

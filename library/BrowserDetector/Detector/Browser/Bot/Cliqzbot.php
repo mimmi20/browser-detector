@@ -147,7 +147,7 @@ class Cliqzbot
      */
     public function getWeight()
     {
-        return 3;
+        return 56;
     }
     
     /**

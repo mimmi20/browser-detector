@@ -189,7 +189,7 @@ class Firebird
      */
     public function getWeight()
     {
-        return 4;
+        return 3817;
     }
     
     /**

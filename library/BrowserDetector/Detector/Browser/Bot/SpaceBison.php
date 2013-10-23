@@ -128,7 +128,7 @@ class SpaceBison
      */
     public function getWeight()
     {
-        return 724998;
+        return 1453;
     }
     
     /**

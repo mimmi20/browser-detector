@@ -147,7 +147,7 @@ class SprayCan
      */
     public function getWeight()
     {
-        return 3;
+        return 300;
     }
     
     /**

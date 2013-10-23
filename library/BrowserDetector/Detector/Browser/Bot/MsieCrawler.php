@@ -147,7 +147,7 @@ class MsieCrawler
      */
     public function getWeight()
     {
-        return 3;
+        return 3597;
     }
     
     /**

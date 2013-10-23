@@ -147,7 +147,7 @@ class Seoprofiler
      */
     public function getWeight()
     {
-        return 3;
+        return 1751;
     }
     
     /**

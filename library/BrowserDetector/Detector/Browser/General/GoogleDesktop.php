@@ -147,6 +147,6 @@ class GoogleDesktop
      */
     public function getWeight()
     {
-        return 6;
+        return 49124;
     }
 }

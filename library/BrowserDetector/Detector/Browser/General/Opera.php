@@ -172,7 +172,7 @@ class Opera
      */
     public function getWeight()
     {
-        return 6895069;
+        return 13249665;
     }
     
     /**

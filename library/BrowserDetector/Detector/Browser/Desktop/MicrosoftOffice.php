@@ -243,7 +243,7 @@ class MicrosoftOffice
      */
     public function getWeight()
     {
-        return 1264100;
+        return 3485393;
     }
     
     /**

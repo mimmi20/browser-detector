@@ -166,7 +166,7 @@ class GoogleEarth
      */
     public function getWeight()
     {
-        return 3;
+        return 4905;
     }
     
     /**

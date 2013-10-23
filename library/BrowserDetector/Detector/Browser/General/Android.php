@@ -258,7 +258,7 @@ class Android
      */
     public function getWeight()
     {
-        return 17304690;
+        return 38951839;
     }
     
     /**

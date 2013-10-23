@@ -147,7 +147,7 @@ class NewsBot
      */
     public function getWeight()
     {
-        return 5;
+        return 1094;
     }
     
     /**

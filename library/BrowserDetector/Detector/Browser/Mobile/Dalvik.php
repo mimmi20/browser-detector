@@ -149,7 +149,7 @@ class Dalvik
      */
     public function getWeight()
     {
-        return 4;
+        return 5179;
     }
     
     /**

@@ -164,6 +164,6 @@ class FacebookApp
      */
     public function getWeight()
     {
-        return 4;
+        return 199899;
     }
 }

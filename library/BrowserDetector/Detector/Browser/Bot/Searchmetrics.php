@@ -128,7 +128,7 @@ class Searchmetrics
      */
     public function getWeight()
     {
-        return 3;
+        return 53897;
     }
     
     /**

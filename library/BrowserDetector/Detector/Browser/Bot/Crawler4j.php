@@ -147,7 +147,7 @@ class Crawler4j
      */
     public function getWeight()
     {
-        return 3;
+        return 18132;
     }
     
     /**

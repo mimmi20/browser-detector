@@ -147,7 +147,7 @@ class ImageSearcherS
      */
     public function getWeight()
     {
-        return 3;
+        return 15;
     }
     
     /**

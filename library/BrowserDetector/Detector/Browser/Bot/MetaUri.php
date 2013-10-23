@@ -147,7 +147,7 @@ class MetaUri
      */
     public function getWeight()
     {
-        return 3;
+        return 426;
     }
     
     /**

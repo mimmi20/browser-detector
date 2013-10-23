@@ -147,7 +147,7 @@ class Rippers
      */
     public function getWeight()
     {
-        return 7244089;
+        return 1480281;
     }
     
     /**

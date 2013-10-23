@@ -147,7 +147,7 @@ class YahooPipes
      */
     public function getWeight()
     {
-        return 3;
+        return 1837;
     }
     
     /**

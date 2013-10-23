@@ -147,7 +147,7 @@ class FlyFlow
      */
     public function getWeight()
     {
-        return 8;
+        return 873;
     }
     
     /**

@@ -147,7 +147,7 @@ class Camcrawler
      */
     public function getWeight()
     {
-        return 3;
+        return 28;
     }
     
     /**

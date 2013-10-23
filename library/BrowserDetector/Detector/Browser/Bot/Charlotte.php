@@ -147,7 +147,7 @@ class Charlotte
      */
     public function getWeight()
     {
-        return 3;
+        return 1792;
     }
     
     /**

@@ -158,7 +158,7 @@ class OperaMobile
      */
     public function getWeight()
     {
-        return 165228;
+        return 383409;
     }
     
     /**

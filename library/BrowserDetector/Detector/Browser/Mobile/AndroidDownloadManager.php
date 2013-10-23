@@ -129,7 +129,7 @@ class AndroidDownloadManager
      */
     public function getWeight()
     {
-        return 4;
+        return 1240;
     }
     
     /**

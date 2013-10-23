@@ -156,7 +156,7 @@ class JakartaCommonsHttpClient
      */
     public function getWeight()
     {
-        return 484372;
+        return 1087189;
     }
     
     /**

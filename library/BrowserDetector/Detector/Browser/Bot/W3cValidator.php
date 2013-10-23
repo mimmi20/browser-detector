@@ -147,7 +147,7 @@ class W3cValidator
      */
     public function getWeight()
     {
-        return 3;
+        return 627;
     }
     
     /**

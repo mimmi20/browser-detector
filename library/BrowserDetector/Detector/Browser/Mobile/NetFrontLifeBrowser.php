@@ -156,7 +156,7 @@ class NetFrontLifeBrowser
      */
     public function getWeight()
     {
-        return 31;
+        return 83;
     }
     
     /**

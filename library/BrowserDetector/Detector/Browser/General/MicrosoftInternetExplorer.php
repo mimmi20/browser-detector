@@ -243,7 +243,7 @@ class MicrosoftInternetExplorer
      */
     public function getWeight()
     {
-        return 175451664;
+        return 369968046;
     }
     
     /**

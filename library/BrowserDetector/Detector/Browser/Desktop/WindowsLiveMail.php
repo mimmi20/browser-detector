@@ -147,7 +147,7 @@ class WindowsLiveMail
      */
     public function getWeight()
     {
-        return 110771;
+        return 995343;
     }
     
     /**

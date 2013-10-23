@@ -192,7 +192,7 @@ class Safari
      */
     public function getWeight()
     {
-        return 43797417;
+        return 93432480;
     }
     
     /**

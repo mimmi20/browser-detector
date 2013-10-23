@@ -147,7 +147,7 @@ class Awesomebot
      */
     public function getWeight()
     {
-        return 3;
+        return 31;
     }
     
     /**

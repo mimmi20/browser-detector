@@ -147,7 +147,7 @@ class Plukkie
      */
     public function getWeight()
     {
-        return 3;
+        return 339;
     }
     
     /**

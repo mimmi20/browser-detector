@@ -187,7 +187,7 @@ class Chrome
      */
     public function getWeight()
     {
-        return 53384052;
+        return 116398328;
     }
     
     /**

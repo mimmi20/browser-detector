@@ -147,6 +147,6 @@ class Mercury
      */
     public function getWeight()
     {
-        return 8;
+        return 1235;
     }
 }

@@ -147,7 +147,7 @@ class Php
      */
     public function getWeight()
     {
-        return 9;
+        return 31809903;
     }
     
     /**

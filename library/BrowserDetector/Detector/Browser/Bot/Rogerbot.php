@@ -147,7 +147,7 @@ class Rogerbot
      */
     public function getWeight()
     {
-        return 208367;
+        return 211018;
     }
     
     /**

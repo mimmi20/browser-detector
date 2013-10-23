@@ -128,7 +128,7 @@ class Findlinks
      */
     public function getWeight()
     {
-        return 724998;
+        return 5293;
     }
     
     /**

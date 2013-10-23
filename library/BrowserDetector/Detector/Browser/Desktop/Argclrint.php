@@ -178,7 +178,7 @@ class Argclrint
      */
     public function getWeight()
     {
-        return 5;
+        return 5468;
     }
     
     /**

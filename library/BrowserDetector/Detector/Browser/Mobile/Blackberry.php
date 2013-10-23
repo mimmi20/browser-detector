@@ -156,7 +156,7 @@ class Blackberry
      */
     public function getWeight()
     {
-        return 99383;
+        return 216731;
     }
     
     /**

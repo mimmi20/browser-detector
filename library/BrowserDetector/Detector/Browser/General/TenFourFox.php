@@ -148,7 +148,7 @@ class TenFourFox
      */
     public function getWeight()
     {
-        return 15;
+        return 10373;
     }
     
     /**

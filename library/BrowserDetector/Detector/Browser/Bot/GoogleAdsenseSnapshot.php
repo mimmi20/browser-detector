@@ -147,7 +147,7 @@ class GoogleAdsenseSnapshot
      */
     public function getWeight()
     {
-        return 147264;
+        return 2654;
     }
     
     /**

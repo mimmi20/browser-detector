@@ -84,7 +84,7 @@ class BluecoatDrtr
             'browser_type' => new BrowserType\Bot(), // not in wurfl
             
             // browser
-            'mobile_browser'              => 'Bluecoat Dynamic Realtime Rating',
+            'mobile_browser'              => 'Dynamic Realtime Rating',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\Bluecoat(), // not in wurfl
@@ -147,7 +147,7 @@ class BluecoatDrtr
      */
     public function getWeight()
     {
-        return 3;
+        return 504;
     }
     
     /**

@@ -147,7 +147,7 @@ class Obot
      */
     public function getWeight()
     {
-        return 3;
+        return 4237;
     }
     
     /**

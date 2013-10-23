@@ -177,7 +177,7 @@ class Seamonkey
      */
     public function getWeight()
     {
-        return 271629;
+        return 665801;
     }
     
     /**

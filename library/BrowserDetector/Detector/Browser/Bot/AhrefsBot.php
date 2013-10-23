@@ -147,7 +147,7 @@ class AhrefsBot
      */
     public function getWeight()
     {
-        return 197877;
+        return 337381;
     }
     
     /**

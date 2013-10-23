@@ -147,7 +147,7 @@ class Omniweb
      */
     public function getWeight()
     {
-        return 5;
+        return 3487;
     }
     
     /**

@@ -166,7 +166,7 @@ class Iron
      */
     public function getWeight()
     {
-        return 360951;
+        return 705618;
     }
     
     /**

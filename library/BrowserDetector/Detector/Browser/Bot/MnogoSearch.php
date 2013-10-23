@@ -147,7 +147,7 @@ class MnogoSearch
      */
     public function getWeight()
     {
-        return 3;
+        return 437;
     }
     
     /**

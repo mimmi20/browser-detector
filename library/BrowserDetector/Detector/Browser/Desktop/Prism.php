@@ -189,7 +189,7 @@ class Prism
      */
     public function getWeight()
     {
-        return 4;
+        return 743;
     }
     
     /**

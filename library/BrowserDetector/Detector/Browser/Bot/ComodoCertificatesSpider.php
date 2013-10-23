@@ -147,7 +147,7 @@ class ComodoCertificatesSpider
      */
     public function getWeight()
     {
-        return 3275874;
+        return 646;
     }
     
     /**

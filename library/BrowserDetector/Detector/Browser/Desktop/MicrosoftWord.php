@@ -176,6 +176,6 @@ class MicrosoftWord extends MicrosoftOffice
      */
     public function getWeight()
     {
-        return 126410;
+        return 336;
     }
 }

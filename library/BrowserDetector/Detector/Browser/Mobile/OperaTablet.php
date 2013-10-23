@@ -157,7 +157,7 @@ class OperaTablet
      */
     public function getWeight()
     {
-        return parent::getWeight() + 1;
+        return 103400;
     }
     
     /**

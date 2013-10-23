@@ -147,7 +147,7 @@ class Linguatools
      */
     public function getWeight()
     {
-        return 12;
+        return 2153;
     }
     
     /**

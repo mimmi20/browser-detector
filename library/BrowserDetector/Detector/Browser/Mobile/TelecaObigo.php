@@ -179,7 +179,7 @@ class TelecaObigo
      */
     public function getWeight()
     {
-        return 3;
+        return 627;
     }
     
     /**

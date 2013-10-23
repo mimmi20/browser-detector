@@ -142,7 +142,7 @@ class MqqBrowser
     
     public function getWeight()
     {
-        return 3;
+        return 653;
     }
     
     /**

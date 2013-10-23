@@ -147,7 +147,7 @@ class HitLeapViewer
      */
     public function getWeight()
     {
-        return 3;
+        return 4;
     }
     
     /**

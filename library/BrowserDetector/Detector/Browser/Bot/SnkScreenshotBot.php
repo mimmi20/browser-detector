@@ -147,7 +147,7 @@ class SnkScreenshotBot
      */
     public function getWeight()
     {
-        return 3;
+        return 992;
     }
     
     /**

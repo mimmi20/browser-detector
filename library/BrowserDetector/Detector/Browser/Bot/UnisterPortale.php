@@ -139,7 +139,7 @@ class UnisterPortale
      */
     public function getWeight()
     {
-        return 11643743;
+        return 30594804;
     }
     
     /**

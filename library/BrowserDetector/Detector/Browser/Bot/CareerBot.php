@@ -147,7 +147,7 @@ class CareerBot
      */
     public function getWeight()
     {
-        return 3;
+        return 6683;
     }
     
     /**

@@ -200,7 +200,7 @@ class Firefox
      */
     public function getWeight()
     {
-        return 163495370;
+        return 330161978;
     }
     
     /**

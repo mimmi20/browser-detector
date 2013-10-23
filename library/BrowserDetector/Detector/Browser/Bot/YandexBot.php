@@ -147,7 +147,7 @@ class YandexBot
      */
     public function getWeight()
     {
-        return 117819;
+        return 390259;
     }
     
     /**

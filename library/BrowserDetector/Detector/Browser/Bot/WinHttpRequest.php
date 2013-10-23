@@ -128,7 +128,7 @@ class WinHttpRequest
      */
     public function getWeight()
     {
-        return 3;
+        return 430;
     }
     
     /**

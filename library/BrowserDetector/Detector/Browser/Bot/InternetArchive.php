@@ -147,7 +147,7 @@ class InternetArchive
      */
     public function getWeight()
     {
-        return 3;
+        return 3406;
     }
     
     /**

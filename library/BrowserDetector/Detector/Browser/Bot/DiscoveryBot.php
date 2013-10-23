@@ -147,7 +147,7 @@ class DiscoveryBot
      */
     public function getWeight()
     {
-        return 3;
+        return 850;
     }
     
     /**

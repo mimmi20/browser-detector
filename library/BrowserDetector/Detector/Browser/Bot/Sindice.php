@@ -147,7 +147,7 @@ class Sindice
      */
     public function getWeight()
     {
-        return 3;
+        return 10683;
     }
     
     /**

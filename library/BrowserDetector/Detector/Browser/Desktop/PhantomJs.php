@@ -126,6 +126,16 @@ class PhantomJs
     }
     
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 44069;
+    }
+    
+    /**
      * detects the browser version from the given user agent
      *
      * @return string

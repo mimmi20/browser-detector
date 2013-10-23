@@ -147,7 +147,7 @@ class Terra
      */
     public function getWeight()
     {
-        return 2;
+        return 1104;
     }
     
     /**

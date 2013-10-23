@@ -147,7 +147,7 @@ class SemrushBot
      */
     public function getWeight()
     {
-        return 3;
+        return 23794;
     }
     
     /**

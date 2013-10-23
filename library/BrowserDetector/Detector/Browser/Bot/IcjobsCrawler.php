@@ -147,7 +147,7 @@ class IcjobsCrawler
      */
     public function getWeight()
     {
-        return 3;
+        return 59675;
     }
     
     /**

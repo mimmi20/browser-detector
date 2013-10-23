@@ -128,7 +128,7 @@ class RebelMouse
      */
     public function getWeight()
     {
-        return 724998;
+        return 1028;
     }
     
     /**

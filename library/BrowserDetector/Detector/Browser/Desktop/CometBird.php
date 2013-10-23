@@ -176,7 +176,7 @@ class CometBird
      */
     public function getWeight()
     {
-        return 4;
+        return 9076;
     }
     
     /**

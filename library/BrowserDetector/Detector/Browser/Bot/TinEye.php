@@ -149,7 +149,7 @@ class TinEye
      */
     public function getWeight()
     {
-        return 3;
+        return 263;
     }
     
     /**

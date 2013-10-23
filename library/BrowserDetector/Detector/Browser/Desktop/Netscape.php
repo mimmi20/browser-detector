@@ -202,7 +202,7 @@ class Netscape
      */
     public function getWeight()
     {
-        return 2;
+        return 53545;
     }
     
     /**
