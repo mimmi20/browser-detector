@@ -247,11 +247,7 @@ class U3 extends EngineHandler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Safari'))) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains(array('Trident', 'Presto', 'Konqueror'))) {
+        if (!$this->utils->checkIfContains(array('U3/'))) {
             return false;
         }
         

@@ -270,6 +270,6 @@ class NetFront extends EngineHandler
      */
     public function getWeight()
     {
-        return 8;
+        return 12474;
     }
 }

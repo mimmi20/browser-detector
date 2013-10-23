@@ -282,7 +282,7 @@ class Gecko extends EngineHandler
      */
     public function getWeight()
     {
-        return 5244;
+        return 332322245;
     }
     
     /**

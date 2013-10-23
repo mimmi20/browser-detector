@@ -350,7 +350,7 @@ class Trident extends EngineHandler
      */
     public function getWeight()
     {
-        return 86837;
+        return 378311339;
     }
     
     /**

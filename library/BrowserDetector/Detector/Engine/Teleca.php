@@ -270,6 +270,6 @@ class Teleca extends EngineHandler
      */
     public function getWeight()
     {
-        return 8;
+        return 627;
     }
 }

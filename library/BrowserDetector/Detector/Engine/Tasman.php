@@ -272,6 +272,6 @@ class Tasman extends EngineHandler
      */
     public function getWeight()
     {
-        return 8;
+        return 93;
     }
 }

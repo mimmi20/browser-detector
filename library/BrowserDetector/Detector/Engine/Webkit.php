@@ -251,7 +251,7 @@ class Webkit extends EngineHandler
             return false;
         }
         
-        if ($this->utils->checkIfContains(array('Trident', 'Presto', 'Konqueror'))) {
+        if ($this->utils->checkIfContains(array('Trident', 'Presto', 'Konqueror', 'U3/'))) {
             return false;
         }
         
@@ -284,6 +284,6 @@ class Webkit extends EngineHandler
      */
     public function getWeight()
     {
-        return 2455;
+        return 254241975;
     }
 }
