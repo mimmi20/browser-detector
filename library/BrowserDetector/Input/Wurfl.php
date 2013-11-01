@@ -631,8 +631,10 @@ class Wurfl extends Core
         if ($apiDev || $apiBro) {
             $versionFields = array(
                 'mobile_browser_version', 'renderingengine_version', 
-                'device_os_version'
+                'device_os_version', 'controlcap_advertised_browser_version',
+                'controlcap_advertised_device_os_version'
             );
+            
             $integerFields = array(
                 'max_deck_size', 'max_length_of_username', 'max_no_of_bookmarks',
                 'max_length_of_password', 'max_no_of_connection_settings',

@@ -109,6 +109,9 @@ class Result implements \Serializable
         'uaprof3' => null,
         'model_extra_info' => null,
         'unique' => null,
+        'nokia_feature_pack' => null,
+        'nokia_series' => null,
+        'nokia_edition' => null,
 
         // display
         'physical_screen_width'  => null,
@@ -145,6 +148,26 @@ class Result implements \Serializable
         'renderingengine_manufacturer' => null, // not in wurfl
         'renderingengine_brand_name'   => null, // not in wurfl
         'renderingengine_icon'         => null, // not in wurfl
+        
+        // virtual
+        'controlcap_is_app' => null,
+        'controlcap_is_mobile' => null,
+        'controlcap_is_robot' => null,
+        'controlcap_is_smartphone' => null,
+        'controlcap_is_ios' => null,
+        'controlcap_is_android' => null,
+        'controlcap_is_windows_phone' => null,
+        'controlcap_is_touchscreen' => null,
+        'controlcap_is_full_desktop' => null,
+        'controlcap_is_html_preferred' => null,
+        'controlcap_is_wml_preferred' => null,
+        'controlcap_is_xhtmlmp_preferred' => null,
+        'controlcap_is_largescreen' => null,
+        'controlcap_advertised_browser' => null,
+        'controlcap_advertised_browser_version' => null,
+        'controlcap_advertised_device_os' => null,
+        'controlcap_advertised_device_os_version' => null,
+        
 
         // markup
         'html_web_3_2' => null,
@@ -748,7 +771,7 @@ class Result implements \Serializable
      *                ndefined, the property from the renderAs result will be
      *                included also
      *
-     * @return string Capability value
+     * @return string|Version Capability value
      * @throws InvalidArgumentException
      */
     public function getCapability($capabilityName, $includeRenderAs = false)
@@ -843,6 +866,43 @@ class Result implements \Serializable
     public function getAllCapabilities()
     {
         return $this->properties;
+    }
+    
+    /**
+     * Returns the value of a given capability name for the current result
+     *
+     * @param string  $capabilityName must be a valid name of an virtual
+     *                capability
+     * @param boolean $includeRenderAs If TRUE and the renderAs resulr is
+     *                ndefined, the property from the renderAs result will be
+     *                included also
+     *
+     * @return string|Version Capability value
+     * @throws InvalidArgumentException
+     */
+    public function getVirtualCapability($name, $includeRenderAs = false)
+    {
+        $name = 'controlcap_' . $name;
+        
+        return $this->getCapability($name, $includeRenderAs);
+    }
+    
+    /**
+     * Returns the values of all capabilities for the current device
+     *
+     * @return array All virtual Capability values
+     */
+    public function getAllVirtualCapabilities()
+    {
+        $properties = array();
+        
+        foreach ($this->properties as $property => $value) {
+            if ('controlcap_' === substr($property, 0, 11)) {
+                $properties[substr($property, 12)] = $value;
+            }
+        }
+        
+        return $properties;
     }
 
     /**
@@ -1451,6 +1511,7 @@ class Result implements \Serializable
                         $value = $value->getName();
                         break;
                     case 'is_wireless_device':
+                    case 'controlcap_is_mobile':
                         $value = $device->getCapability('device_type');
 
                         if (!($value instanceof Type\Device\TypeInterface)) {
@@ -1487,6 +1548,7 @@ class Result implements \Serializable
                         $value = $value->isConsole();
                         break;
                     case 'ux_full_desktop':
+                    case 'controlcap_is_full_desktop':
                         $value = $device->getCapability('device_type');
 
                         if (!($value instanceof Type\Device\TypeInterface)) {
@@ -1503,6 +1565,12 @@ class Result implements \Serializable
                         }
 
                         $value = $value->isPhone();
+                        break;
+                    case 'controlcap_is_touchscreen':
+                        $value = ($device->getCapability('pointing_method') === 'touchscreen');
+                        break;
+                    case 'controlcap_is_largescreen':
+                        $value = ($device->getCapability('resolution_width') >= 480 && $device->getCapability('resolution_height') >= 480);
                         break;
                     case 'model_name':
                     case 'model_version':
@@ -1557,6 +1625,7 @@ class Result implements \Serializable
                         $value = $value->getBrandName();
                         break;
                     case 'is_bot':
+                    case 'controlcap_is_robot':
                         $value = $browser->getCapability('browser_type');
 
                         if (!($value instanceof Type\Browser\TypeInterface)) {
@@ -1602,7 +1671,13 @@ class Result implements \Serializable
                         $value = $value->getName();
                         break;
                     case 'mobile_browser':
+                    case 'controlcap_advertised_browser':
+                        $value = $browser->getCapability('mobile_browser');
+                        break;
                     case 'mobile_browser_version':
+                    case 'controlcap_advertised_browser_version':
+                        $value = $browser->getCapability('mobile_browser_version');
+                        break;
                     case 'mobile_browser_bits':
                     case 'mobile_browser_modus':
                     case 'can_skip_aligned_link_row':
@@ -1615,10 +1690,25 @@ class Result implements \Serializable
                     case 'rss_support':
                         $value = $browser->getCapability($property);
                         break;
-                    case 'device_os':
-                    case 'device_os_version':
                     case 'device_os_bits':
                         $value = $os->getCapability($property);
+                        break;
+                    case 'device_os':
+                    case 'controlcap_advertised_device_os':
+                        $value = $os->getCapability('device_os');
+                        break;
+                    case 'controlcap_is_windows_phone':
+                        $value = ('Windows Phone OS' === $os->getCapability('device_os'));
+                        break;
+                    case 'controlcap_is_android':
+                        $value = ('Android' === $os->getCapability('device_os'));
+                        break;
+                    case 'controlcap_is_ios':
+                        $value = ('iOS' === $os->getCapability('device_os'));
+                        break;
+                    case 'device_os_version':
+                    case 'controlcap_advertised_device_os_version':
+                        $value = $os->getCapability('device_os_version');
                         break;
                     case 'device_os_manufacturer':
                         $value = $os->getCapability('device_os_manufacturer');
@@ -1793,6 +1883,15 @@ class Result implements \Serializable
                     case 'wml_displays_image_in_center':
                     case 'times_square_mode_support':
                         $value = $engine->getCapability($property);
+                        break;
+                    case 'controlcap_is_xhtmlmp_preferred':
+                        $value = ($engine->getCapability('xhtml_support_level') > 0 && strpos($engine->getCapability('preferred_markup'), 'html_web') !== 0);
+                        break;
+                    case 'controlcap_is_wml_preferred':
+                        $value = ($engine->getCapability('xhtml_support_level') <= 0);
+                        break;
+                    case 'controlcap_is_html_preferred':
+                        $value = (strpos($engine->getCapability('preferred_markup'), 'html_web') === 0);
                         break;
                     default:
                         // nothing to do here
