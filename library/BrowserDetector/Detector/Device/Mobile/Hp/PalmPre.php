@@ -10,28 +10,28 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -41,16 +41,12 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\DeviceHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
-use \BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +65,7 @@ class PalmPre
      * @var array
      */
     protected $properties = array();
-    
+
     /**
      * Class Constructor
      *
@@ -78,53 +74,53 @@ class PalmPre
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->properties = array(
-            'wurflKey' => 'palm_pre_ver1', // not in wurfl
-            
+            'wurflKey'                => 'palm_pre_ver1', // not in wurfl
+
             // kind of device
-            'device_type' => new DeviceType\MobilePhone(), // not in wurfl
-            
+            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+
             // device
-            'model_name'                => 'Pre',
-            'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Palm(),
-            'brand_name' => new Company\Palm(),
-            'model_extra_info'          => null,
-            'marketing_name'            => 'Pre',
-            'has_qwerty_keyboard'       => true,
-            'pointing_method'           => 'touchscreen',
-            'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
-            
+            'model_name'              => 'Pre',
+            'model_version'           => null, // not in wurfl
+            'manufacturer_name'       => new Company\Palm(),
+            'brand_name'              => new Company\Palm(),
+            'model_extra_info'        => null,
+            'marketing_name'          => 'Pre',
+            'has_qwerty_keyboard'     => true,
+            'pointing_method'         => 'touchscreen',
+            'device_bits'             => null, // not in wurfl
+            'device_cpu'              => null, // not in wurfl
+
             // product info
-            'can_assign_phone_number'   => true,
-            'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
-            'uaprof2'                   => null,
-            'uaprof3'                   => null,
-            'unique'                    => true,
-            
+            'can_assign_phone_number' => true,
+            'ununiqueness_handler'    => null,
+            'uaprof'                  => null,
+            'uaprof2'                 => null,
+            'uaprof3'                 => null,
+            'unique'                  => true,
+
             // display
-            'physical_screen_width'  => 44,
-            'physical_screen_height' => 66,
-            'columns'                => 18,
-            'rows'                   => 10,
-            'max_image_width'        => 320,
-            'max_image_height'       => 480,
-            'resolution_width'       => 320,
-            'resolution_height'      => 480,
-            'dual_orientation'       => false,
-            'colors'                 => 256, // wurflkey: palm_pre_ver1_subwebos141
-            
+            'physical_screen_width'   => 44,
+            'physical_screen_height'  => 66,
+            'columns'                 => 18,
+            'rows'                    => 10,
+            'max_image_width'         => 320,
+            'max_image_height'        => 480,
+            'resolution_width'        => 320,
+            'resolution_height'       => 480,
+            'dual_orientation'        => false,
+            'colors'                  => 256, // wurflkey: palm_pre_ver1_subwebos141
+
             // sms
-            'sms_enabled' => true,
-            
+            'sms_enabled'             => true,
+
             // chips
-            'nfc_support' => true,
+            'nfc_support'             => true,
         );
     }
-    
+
     /**
      * checks if this device is able to handle the useragent
      *
@@ -135,10 +131,10 @@ class PalmPre
         if (!$this->utils->checkIfContains('Pre/')) {
             return false;
         }
-        
+
         return true;
     }
-    
+
     /**
      * gets the weight of the handler, which is used for sorting
      *
@@ -148,7 +144,7 @@ class PalmPre
     {
         return 3;
     }
-    
+
     /**
      * detects the device name from the given user agent
      *
@@ -160,7 +156,7 @@ class PalmPre
     {
         return $this;
     }
-    
+
     /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
@@ -171,12 +167,12 @@ class PalmPre
     {
         $handler = new \BrowserDetector\Detector\Os\WebOs();
         $handler->setUseragent($this->_useragent);
-        
+
         return $handler->detect();
     }
-    
+
     /**
-     * detects properties who are depending on the device version or the user 
+     * detects properties who are depending on the device version or the user
      * agent
      *
      * @return DeviceHandler
@@ -186,11 +182,11 @@ class PalmPre
         $modelVersion = $this->getCapability('model_version')->getVersion(
             Version::MAJORONLY
         );
-        
+
         if (3 == $modelVersion) {
             $this->setCapability('resolution_width', 480);
             $this->setCapability('resolution_height', 800);
-            
+
             $this->setCapability('model_name', 'Pre3');
             $this->setCapability('manufacturer_name', 'HP');
             $this->setCapability('brand_name', 'HP');
@@ -198,10 +194,10 @@ class PalmPre
             $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
             $this->setCapability('colors', 262144);
         }
-        
+
         return $this;
     }
-    
+
     /**
      * detects the device name from the given user agent
      *
@@ -212,9 +208,9 @@ class PalmPre
         $detector = new \BrowserDetector\Detector\Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-        
+
         $searches = array('Pre');
-        
+
         $this->setCapability(
             'model_version', $detector->detectVersion($searches)
         );

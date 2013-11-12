@@ -10,28 +10,28 @@ namespace BrowserDetector\Detector\Device\Mobile\Apple;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -41,16 +41,15 @@ namespace BrowserDetector\Detector\Device\Mobile\Apple;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\DeviceHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
-use \BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +68,7 @@ class Ipod
      * @var array
      */
     protected $properties = array();
-    
+
     /**
      * Class Constructor
      *
@@ -78,53 +77,53 @@ class Ipod
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->properties = array(
-            'wurflKey' => 'apple_ipod_touch_ver5', // not in wurfl
-            
+            'wurflKey'                => 'apple_ipod_touch_ver5', // not in wurfl
+
             // kind of device
-            'device_type' => new DeviceType\MobileDevice(), // not in wurfl
-            
+            'device_type'             => new DeviceType\MobileDevice(), // not in wurfl
+
             // device
-            'model_name'                => 'iPod Touch',
-            'model_version'             => null, // not in wurfl
-            'manufacturer_name' => new Company\Apple(),
-            'brand_name' => new Company\Apple(),
-            'model_extra_info'          => null,
-            'marketing_name'            => 'iPod Touch',
-            'has_qwerty_keyboard'       => true,
-            'pointing_method'           => 'touchscreen',
-            'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
-            
+            'model_name'              => 'iPod Touch',
+            'model_version'           => null, // not in wurfl
+            'manufacturer_name'       => new Company\Apple(),
+            'brand_name'              => new Company\Apple(),
+            'model_extra_info'        => null,
+            'marketing_name'          => 'iPod Touch',
+            'has_qwerty_keyboard'     => true,
+            'pointing_method'         => 'touchscreen',
+            'device_bits'             => null, // not in wurfl
+            'device_cpu'              => null, // not in wurfl
+
             // product info
-            'can_assign_phone_number'   => false,
-            'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
-            'uaprof2'                   => null,
-            'uaprof3'                   => null,
-            'unique'                    => true,
-            
+            'can_assign_phone_number' => false,
+            'ununiqueness_handler'    => null,
+            'uaprof'                  => null,
+            'uaprof2'                 => null,
+            'uaprof3'                 => null,
+            'unique'                  => true,
+
             // display
-            'physical_screen_width'  => 50,
-            'physical_screen_height' => 74,
-            'columns'                => 20,
-            'rows'                   => 20,
-            'max_image_width'        => 320,
-            'max_image_height'       => 360,
-            'resolution_width'       => 320, // wurflkey: apple_ipod_touch_ver5
-            'resolution_height'      => 480, // wurflkey: apple_ipod_touch_ver5
-            'dual_orientation'       => true,
-            'colors'                 => 65536,
-            
+            'physical_screen_width'   => 50,
+            'physical_screen_height'  => 74,
+            'columns'                 => 20,
+            'rows'                    => 20,
+            'max_image_width'         => 320,
+            'max_image_height'        => 360,
+            'resolution_width'        => 320, // wurflkey: apple_ipod_touch_ver5
+            'resolution_height'       => 480, // wurflkey: apple_ipod_touch_ver5
+            'dual_orientation'        => true,
+            'colors'                  => 65536,
+
             // sms
-            'sms_enabled' => false,
-            
+            'sms_enabled'             => false,
+
             // chips
-            'nfc_support' => false,
+            'nfc_support'             => false,
         );
     }
-    
+
     /**
      * checks if this device is able to handle the useragent
      *
@@ -135,10 +134,10 @@ class Ipod
         if (!$this->utils->checkIfContains('iPod')) {
             return false;
         }
-        
+
         return true;
     }
-    
+
     /**
      * detects the device name from the given user agent
      *
@@ -150,7 +149,7 @@ class Ipod
     {
         return $this;
     }
-    
+
     /**
      * gets the weight of the handler, which is used for sorting
      *
@@ -160,7 +159,7 @@ class Ipod
     {
         return 381078;
     }
-    
+
     /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
@@ -173,15 +172,15 @@ class Ipod
             new \BrowserDetector\Detector\Os\Ios(),
             new \BrowserDetector\Detector\Os\Darwin()
         );
-        
+
         $chain = new \BrowserDetector\Detector\Chain();
         $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
-        
+
         return $chain->detect();
     }
-    
+
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
@@ -189,53 +188,52 @@ class Ipod
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os)
-    {
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORONLY
         );
-        
+
         if (6 <= $osVersion) {
             $this->setCapability('resolution_width', 640);
             $this->setCapability('resolution_height', 960);
         }
-        
+
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
         );
-        
+
         $this->setCapability('model_extra_info', $osVersion);
-        
+
         parent::detectDependProperties($browser, $engine, $os);
-        
+
         $engine->setCapability('accept_third_party_cookie', false);
         $engine->setCapability('xhtml_make_phone_call_string', 'none');
         $engine->setCapability('xhtml_send_sms_string', 'none');
         $browser->setCapability('pdf_support', false);
         $engine->setCapability('css_gradient', 'none');
         $engine->setCapability('supports_java_applets', true);
-        
-        if (6.0 <= (float) $osVersion) {
+
+        if (6.0 <= (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');
         }
-        
+
         $osVersion = $os->getCapability('device_os_version')->getVersion();
-        
+
         switch ($osVersion) {
-            case '4.2.1':
-                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
-                break;
-            case '4.3.5':
-                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
-                break;
-            default:
-                // nothing to do here
-                break;
+        case '4.2.1':
+            $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+            break;
+        case '4.3.5':
+            $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
+            break;
+        default:
+            // nothing to do here
+            break;
         }
         if ('4.2.1' == $osVersion) {
-            
         }
-        
+
         return $this;
     }
 }

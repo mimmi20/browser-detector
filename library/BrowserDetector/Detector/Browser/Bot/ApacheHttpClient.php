@@ -10,28 +10,28 @@ namespace BrowserDetector\Detector\Browser\Bot;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -41,16 +41,11 @@ namespace BrowserDetector\Detector\Browser\Bot;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\DeviceHandler;
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
-use \BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +64,7 @@ class ApacheHttpClient
      * @var array
      */
     protected $properties = array();
-    
+
     /**
      * Class Constructor
      *
@@ -78,35 +73,35 @@ class ApacheHttpClient
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Bot(), // not in wurfl
-            
+            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
+
             // browser
-            'mobile_browser'              => 'Apache-HttpClient',
-            'mobile_browser_version'      => null,
-            'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Apache(), // not in wurfl
-            'mobile_browser_modus'        => null, // not in wurfl
-            
+            'mobile_browser'               => 'Apache-HttpClient',
+            'mobile_browser_version'       => null,
+            'mobile_browser_bits'          => null, // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Apache(), // not in wurfl
+            'mobile_browser_modus'         => null, // not in wurfl
+
             // product info
-            'can_skip_aligned_link_row' => false,
-            'device_claims_web_support' => false,
-            
+            'can_skip_aligned_link_row'    => false,
+            'device_claims_web_support'    => false,
+
             // pdf
-            'pdf_support' => true,
-            
+            'pdf_support'                  => true,
+
             // bugs
-            'empty_option_value_support' => true,
+            'empty_option_value_support'   => true,
             'basic_authentication_support' => true,
-            'post_method_support' => true,
-            
+            'post_method_support'          => true,
+
             // rss
-            'rss_support' => false,
+            'rss_support'                  => false,
         );
     }
-    
+
     /**
      * Returns true if this handler can handle the given user agent
      *
@@ -117,10 +112,10 @@ class ApacheHttpClient
         if (!$this->utils->checkIfContains('Apache-HttpClient')) {
             return false;
         }
-        
+
         return true;
     }
-    
+
     /**
      * detects the browser version from the given user agent
      *
@@ -129,17 +124,17 @@ class ApacheHttpClient
     protected function _detectVersion()
     {
         $detector = new \BrowserDetector\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
+        $detector->setUserAgent($this->useragent);
+
         $searches = array('Apache\-HttpClient');
-        
+
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
-        
+
         return $this;
     }
-    
+
     /**
      * gets the weight of the handler, which is used for sorting
      *
@@ -149,7 +144,7 @@ class ApacheHttpClient
     {
         return 3368;
     }
-    
+
     /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
@@ -159,8 +154,8 @@ class ApacheHttpClient
     public function detectEngine()
     {
         $handler = new \BrowserDetector\Detector\Engine\Unknown();
-        $handler->setUseragent($this->_useragent);
-        
+        $handler->setUseragent($this->useragent);
+
         return $handler->detect();
     }
 }
