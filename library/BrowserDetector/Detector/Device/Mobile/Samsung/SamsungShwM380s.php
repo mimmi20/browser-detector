@@ -68,7 +68,7 @@ class SamsungShwM380s
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungShwM380s
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class SamsungShwM380s
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

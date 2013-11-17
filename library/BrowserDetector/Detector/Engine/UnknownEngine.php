@@ -52,7 +52,7 @@ use BrowserDetector\Detector\MatcherInterface;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Unknown extends EngineHandler
+class UnknownEngine extends EngineHandler
 {
     /**
      * the detected browser properties
@@ -64,7 +64,7 @@ class Unknown extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function __construct()
     {

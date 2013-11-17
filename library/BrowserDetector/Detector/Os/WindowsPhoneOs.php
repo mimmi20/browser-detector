@@ -131,7 +131,7 @@ class WindowsPhoneOs
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
@@ -168,7 +168,7 @@ class WindowsPhoneOs
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectBrowser()
     {

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Browser\Mobile\OperaMini;
 use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
 use BrowserDetector\Detector\Browser\Mobile\Safari;
 use BrowserDetector\Detector\Browser\Mobile\Sleipnir;
-use BrowserDetector\Detector\Browser\Unknown;
+use BrowserDetector\Detector\Browser\Unknown as UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
@@ -170,7 +170,7 @@ class Ios
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectBrowser()
     {
@@ -194,7 +194,7 @@ class Ios
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

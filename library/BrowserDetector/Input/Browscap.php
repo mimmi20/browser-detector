@@ -91,6 +91,7 @@ class Browscap extends Core
      *
      * @param string $filename the file name
      *
+     * @throws Exception
      * @return void
      */
     public function setLocaleFile($filename)
@@ -461,8 +462,6 @@ class Browscap extends Core
 
         unset($browsers[\phpbrowscap\Browscap::BROWSCAP_VERSION_KEY]);
 
-        $userAgent = array_keys($browsers);
-
         $this->log(\Monolog\Logger::DEBUG, 'expand');
 
         foreach ($browsers as $key => $properties) {
@@ -609,12 +608,15 @@ class Browscap extends Core
             $properties['isBanned']         = $isBanned;
             $properties['Browser_isBanned'] = $isBanned;
 
-            $crawler = $properties['Crawler'];
-
             if (!empty($properties['Browser_isBot'])) {
                 $crawler               = $properties['Browser_isBot'];
                 $properties['Crawler'] = $crawler;
+            } else {
+                $crawler = $properties['Crawler'];
             }
+
+            $properties['Crawler']       = $crawler;
+            $properties['Browser_isBot'] = $crawler;
 
             if (array_key_exists('Browser_isAlpha', $properties)) {
                 $properties['Alpha'] = $properties['Browser_isAlpha'];
@@ -1420,9 +1422,6 @@ class Browscap extends Core
             );
         }
 
-        $outputPhp = '';
-        $outputAsp = '';
-
         $this->log(\Monolog\Logger::DEBUG, 'shrink and output');
 
         $fp = fopen($this->localFile . '.full.php.ini', 'w');
@@ -1536,10 +1535,8 @@ class Browscap extends Core
 
                 if (true === $value || $value === 'true') {
                     $valuePhp = 'true';
-                    $valueAsp = 'true';
                 } elseif (false === $value || $value === 'false') {
                     $valuePhp = 'false';
-                    $valueAsp = 'false';
                 } elseif ('0' === $value
                     || 'Parent' === $property
                     || 'Version' === $property

@@ -67,7 +67,7 @@ class Khtml extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\Khtml
      */
     public function __construct()
     {

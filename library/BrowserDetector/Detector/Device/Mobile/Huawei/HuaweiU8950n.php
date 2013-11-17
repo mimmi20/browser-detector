@@ -68,7 +68,7 @@ class HuaweiU8950n
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Huawei\HuaweiU8950n
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class HuaweiU8950n
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

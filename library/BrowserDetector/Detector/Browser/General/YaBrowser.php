@@ -46,6 +46,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -133,7 +134,7 @@ class YaBrowser
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('YaBrowser');
@@ -149,7 +150,7 @@ class YaBrowser
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
@@ -161,7 +162,7 @@ class YaBrowser
         $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
 
         return $chain->detect();
     }

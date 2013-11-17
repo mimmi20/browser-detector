@@ -60,7 +60,7 @@ class Safari
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Helper\Safari
      */
     public function __construct()
     {
@@ -70,7 +70,9 @@ class Safari
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return \BrowserDetector\Helper\Safari
      */
     public function setUserAgent($userAgent)
     {

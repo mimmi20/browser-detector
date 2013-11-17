@@ -55,7 +55,9 @@ class Utils
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param $userAgent
+     *
+     * @return Utils
      */
     public function setUserAgent($userAgent)
     {
@@ -67,8 +69,8 @@ class Utils
     /**
      * Returns true if $haystack contains $needle
      *
-     * @param string $haystack Haystack
-     * @param string $needle   Needle
+     * @param string $needle Needle
+     * @param bool   $ci
      *
      * @return bool
      */

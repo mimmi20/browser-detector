@@ -41,7 +41,6 @@ namespace BrowserDetector\Detector\Browser\Desktop;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -66,7 +65,7 @@ class MicrosoftExcel extends MicrosoftOffice
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Desktop\MicrosoftExcel
      */
     public function __construct()
     {

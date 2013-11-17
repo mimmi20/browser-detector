@@ -67,7 +67,7 @@ class U3 extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\U3
      */
     public function __construct()
     {

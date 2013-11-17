@@ -68,7 +68,7 @@ class ArchosA101it
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Archos\ArchosA101it
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class ArchosA101it
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

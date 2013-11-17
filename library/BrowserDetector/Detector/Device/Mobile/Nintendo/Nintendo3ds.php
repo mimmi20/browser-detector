@@ -68,7 +68,7 @@ class Nintendo3ds
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Nintendo\Nintendo3ds
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class Nintendo3ds
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectBrowser()
     {
@@ -181,7 +181,7 @@ class Nintendo3ds
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

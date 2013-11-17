@@ -68,7 +68,7 @@ class SamsungSphm930
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungSphm930
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class SamsungSphm930
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

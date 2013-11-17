@@ -164,7 +164,7 @@ class MdLifetabP9514
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
@@ -198,6 +198,7 @@ class MdLifetabP9514
                 if ('530.17' == $engineVersion) {
                     $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
                 }
+                break;
             case 2.2:
             case 2.3:
             case 3.1:

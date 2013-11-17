@@ -97,12 +97,6 @@ class Windows
      */
     protected $_manufacturer = 'Microsoft';
 
-    private $_windows
-        = array(
-            'Windows NT', 'Windows 98', 'Windows 95', 'Windows 3.1',
-            'win9x/NT 4.90'
-        );
-
     /**
      * Returns true if this handler can handle the given $useragent
      *
@@ -133,7 +127,7 @@ class Windows
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 

@@ -51,7 +51,7 @@ use BrowserDetector\Detector\Os\Android;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Os\Handler;
+use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector

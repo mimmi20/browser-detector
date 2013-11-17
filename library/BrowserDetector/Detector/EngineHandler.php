@@ -604,7 +604,9 @@ abstract class EngineHandler
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return EngineHandler
      */
     public function setUserAgent($userAgent)
     {
@@ -619,7 +621,8 @@ abstract class EngineHandler
      *
      * @param \Zend\Cache\Frontend\Core $cache
      *
-     * @return
+     * @throws \InvalidArgumentException
+     * @return EngineHandler
      */
     public function setCache(\Zend\Cache\Frontend\Core $cache)
     {
@@ -647,7 +650,7 @@ abstract class EngineHandler
     /**
      * detects the browser name from the given user agent
      *
-     * @return StdClass
+     * @return EngineHandler
      */
     public function detect()
     {
@@ -659,8 +662,6 @@ abstract class EngineHandler
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -675,7 +676,7 @@ abstract class EngineHandler
     /**
      * detect the bits of the cpu which is build into the device
      *
-     * @return Handler
+     * @return EngineHandler
      */
     protected function _detectProperties()
     {
@@ -713,6 +714,7 @@ abstract class EngineHandler
 
                 $this->setCapability('renderingengine_version', $detector);
             }
+            break;
         default:
             // nothing to do here
             break;
@@ -727,8 +729,8 @@ abstract class EngineHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
-     * @throws InvalidArgumentException
+     * @param null   $capabilityValue
+     * @return EngineHandler
      */
     public function setCapability($capabilityName, $capabilityValue = null)
     {
@@ -745,8 +747,7 @@ abstract class EngineHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     protected function checkCapability($capabilityName)
     {
@@ -777,7 +778,10 @@ abstract class EngineHandler
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param OsHandler      $os
+     * @param DeviceHandler  $device
+     * @param BrowserHandler $browser
+     * @return EngineHandler
      */
     public function detectDependProperties(
         OsHandler $os, DeviceHandler $device, BrowserHandler $browser

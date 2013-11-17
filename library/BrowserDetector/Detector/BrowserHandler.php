@@ -42,7 +42,6 @@ namespace BrowserDetector\Detector;
  */
 
 use BrowserDetector\Detector\Bits\Browser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\BlackBerry;
 use BrowserDetector\Detector\Engine\Gecko;
@@ -51,12 +50,12 @@ use BrowserDetector\Detector\Engine\NetFront;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Tasman;
 use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\Engine\Unknown;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 
 /**
@@ -252,6 +251,7 @@ abstract class BrowserHandler
 
                 $this->setCapability('mobile_browser_version', $detector);
             }
+            break;
         default:
             // nothing to do here
             break;
@@ -265,9 +265,9 @@ abstract class BrowserHandler
      * for the current device
      *
      * @param string $capabilityName must be a valid capability name
+     * @param mixed  $capabilityValue
      *
      * @return BrowserHandler
-     * @throws \InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null)
     {
@@ -284,7 +284,6 @@ abstract class BrowserHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return void
      * @throws \InvalidArgumentException
      */
     protected function checkCapability($capabilityName)
@@ -306,7 +305,7 @@ abstract class BrowserHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return EngineHandler
      */
     public function detectEngine()
     {
@@ -343,7 +342,11 @@ abstract class BrowserHandler
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param EngineHandler $engine
+     * @param OsHandler     $os
+     * @param DeviceHandler $device
+     *
+     * @return BrowserHandler
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

@@ -113,7 +113,6 @@ class NokiaLumia
             'resolution_width'        => null,
             'resolution_height'       => null,
             'dual_orientation'        => null,
-            'colors'                  => null,
             'colors'                  => 65536,
 
             // sms
@@ -174,7 +173,7 @@ class NokiaLumia
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

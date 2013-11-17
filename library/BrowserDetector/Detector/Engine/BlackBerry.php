@@ -67,7 +67,7 @@ class BlackBerry extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\BlackBerry
      */
     public function __construct()
     {

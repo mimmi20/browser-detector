@@ -68,7 +68,7 @@ class PrestigioPmp5580c
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Prestigio\PrestigioPmp5580c
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class PrestigioPmp5580c
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

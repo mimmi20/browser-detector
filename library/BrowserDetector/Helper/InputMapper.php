@@ -63,6 +63,7 @@ class InputMapper
      *
      * @param string $browserInput
      *
+     * @throws \UnexpectedValueException
      * @return string
      */
     public function mapBrowserName($browserInput)
@@ -119,9 +120,6 @@ class InputMapper
             break;
         case 'gomeza':
             $browserName = 'GomezAgent';
-            break;
-        case 'dolfin/jasmine webkit':
-            $browserName = 'Dolfin';
             break;
         case 'yandex.browser':
             $browserName = 'Yandex Browser';
@@ -882,7 +880,7 @@ class InputMapper
             break;
             // HTC
         case 'htc desire sv':
-            $deviceName = 'Desire SV';
+            $marketingName = 'Desire SV';
             break;
             // Apple
         case 'ipad':
@@ -967,7 +965,7 @@ class InputMapper
             break;
             // HTC
         case 'htc desire sv':
-            $deviceName = 'HTC';
+            $brandName = 'HTC';
             break;
             // Apple
         case 'ipad':

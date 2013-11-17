@@ -67,7 +67,7 @@ class Webkit extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function __construct()
     {

@@ -68,7 +68,7 @@ class Chain
      *
      * @param mixed $handler
      *
-     * @return
+     * @return Chain
      */
     public function setDefaultHandler($handler)
     {
@@ -82,7 +82,7 @@ class Chain
      *
      * @param array $handlersToUse
      *
-     * @return
+     * @return Chain
      */
     public function setHandlers(array $handlersToUse)
     {
@@ -96,7 +96,7 @@ class Chain
      *
      * @param string $directory
      *
-     * @return
+     * @return Chain
      */
     public function setDirectory($directory)
     {
@@ -110,7 +110,7 @@ class Chain
      *
      * @param string $directory
      *
-     * @return
+     * @return Chain
      */
     public function setNamespace($namespace)
     {
@@ -124,7 +124,7 @@ class Chain
      *
      * @param string $agent
      *
-     * @return
+     * @return Chain
      */
     public function setUserAgent($agent)
     {

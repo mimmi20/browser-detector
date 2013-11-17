@@ -164,7 +164,7 @@ class SamsungGtp7500
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
@@ -204,8 +204,6 @@ class SamsungGtp7500
             case 2.1:
             case 2.2:
             case 2.3:
-            case 3.1:
-            case 3.2:
             case 4.1:
             case 4.2:
             default:

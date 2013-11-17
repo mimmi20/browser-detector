@@ -60,7 +60,7 @@ class MobileDevice
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Helper\MobileDevice
      */
     public function __construct()
     {
@@ -70,7 +70,9 @@ class MobileDevice
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return \BrowserDetector\Helper\MobileDevice
      */
     public function setUserAgent($userAgent)
     {

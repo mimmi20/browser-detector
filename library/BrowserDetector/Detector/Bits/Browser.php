@@ -79,7 +79,7 @@ class Browser
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @return Browser
      */
     public function setUserAgent($userAgent)
     {
@@ -89,6 +89,10 @@ class Browser
         return $this;
     }
 
+    /**
+     * @return string
+     * @throws \UnexpectedValueException
+     */
     public function getBits()
     {
         if (null === $this->useragent) {
@@ -105,7 +109,7 @@ class Browser
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @return void
+     * @return Browser
      */
     private function _detectBits()
     {

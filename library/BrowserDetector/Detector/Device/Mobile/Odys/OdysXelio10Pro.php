@@ -68,7 +68,7 @@ class OdysXelio10Pro
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Odys\OdysXelio10Pro
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class OdysXelio10Pro
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

@@ -68,7 +68,7 @@ class AsusTransformerPadTf700T
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Asus\AsusTransformerPadTf700T
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class AsusTransformerPadTf700T
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

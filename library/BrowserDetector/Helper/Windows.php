@@ -60,7 +60,7 @@ class Windows
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Helper\Windows
      */
     public function __construct()
     {
@@ -70,7 +70,9 @@ class Windows
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return \BrowserDetector\Helper\Windows
      */
     public function setUserAgent($userAgent)
     {

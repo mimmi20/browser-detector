@@ -68,7 +68,7 @@ class SamsungGtp6210
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGtp6210
      */
     public function __construct()
     {

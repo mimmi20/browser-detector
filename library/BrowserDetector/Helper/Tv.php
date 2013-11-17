@@ -60,7 +60,7 @@ class Tv
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Helper\Tv
      */
     public function __construct()
     {
@@ -70,7 +70,9 @@ class Tv
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return \BrowserDetector\Helper\Tv
      */
     public function setUserAgent($userAgent)
     {

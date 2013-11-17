@@ -49,6 +49,8 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -132,7 +134,7 @@ class Googlebot
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array(
@@ -190,11 +192,11 @@ class Googlebot
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Unknown();
+        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

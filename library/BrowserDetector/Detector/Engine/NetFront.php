@@ -67,7 +67,7 @@ class NetFront extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\NetFront
      */
     public function __construct()
     {

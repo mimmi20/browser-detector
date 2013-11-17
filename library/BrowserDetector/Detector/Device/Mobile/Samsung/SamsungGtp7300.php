@@ -68,7 +68,7 @@ class SamsungGtp7300
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGtp7300
      */
     public function __construct()
     {
@@ -164,7 +164,7 @@ class SamsungGtp7300
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

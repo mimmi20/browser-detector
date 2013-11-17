@@ -107,7 +107,7 @@ abstract class OsHandler
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @return OsHandler
      */
     public function setUserAgent($userAgent)
     {
@@ -130,7 +130,7 @@ abstract class OsHandler
     /**
      * detects the operating system name (platform) from the given user agent
      *
-     * @return StdClass
+     * @return OsHandler
      */
     public function detect()
     {
@@ -143,10 +143,6 @@ abstract class OsHandler
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -158,10 +154,6 @@ abstract class OsHandler
 
     /**
      * detects the bit count by this browser from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectBits()
     {
@@ -174,7 +166,7 @@ abstract class OsHandler
     /**
      * detect the bits of the cpu which is build into the device
      *
-     * @return Handler
+     * @return OsHandler
      */
     protected function _detectProperties()
     {
@@ -212,6 +204,7 @@ abstract class OsHandler
 
                 $this->setCapability('device_os_version', $detector);
             }
+            break;
         default:
             // nothing to do here
             break;
@@ -226,7 +219,7 @@ abstract class OsHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
+     * @return OsHandler
      * @throws InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null)
@@ -276,7 +269,11 @@ abstract class OsHandler
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param BrowserHandler $browser
+     * @param EngineHandler  $engine
+     * @param DeviceHandler  $device
+     *
+     * @return OsHandler
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
@@ -288,7 +285,7 @@ abstract class OsHandler
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null
      */
     public function detectBrowser()
     {

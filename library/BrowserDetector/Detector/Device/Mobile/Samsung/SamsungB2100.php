@@ -47,7 +47,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Os\Handler;
+use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector

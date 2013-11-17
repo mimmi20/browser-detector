@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Os;
+namespace BrowserDetector\Detector\Device;
 
 /**
  * PHP version 5.3
@@ -42,9 +42,10 @@ namespace BrowserDetector\Detector\Os;
  */
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
  * @category  BrowserDetector
@@ -53,9 +54,10 @@ use BrowserDetector\Detector\OsHandler;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Unknown
-    extends OsHandler
-    implements MatcherInterface, OsInterface
+
+class UnknownDevice
+    extends DeviceHandler
+    implements MatcherInterface, DeviceInterface
 {
     /**
      * the detected browser properties
@@ -67,25 +69,62 @@ class Unknown
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return DeviceHandler
      */
     public function __construct()
     {
         parent::__construct();
 
         $this->properties = array(
-            // os
-            'device_os'              => 'unknown',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
+            'wurflKey'                => null, // not in wurfl
+
+            // kind of device
+            'device_type'             => new DeviceType\Unknown(), // not in wurfl
+
+            // device
+            'model_name'              => 'unknown Device',
+            'model_version'           => null, // not in wurfl
+            'manufacturer_name'       => new Company\Unknown(),
+            'brand_name'              => new Company\Unknown(),
+            'model_extra_info'        => null,
+            'marketing_name'          => 'unknown Device',
+            'has_qwerty_keyboard'     => false,
+            'pointing_method'         => null,
+            'device_bits'             => null, // not in wurfl
+            'device_cpu'              => null, // not in wurfl
+
+            // product info
+            'can_assign_phone_number' => false,
+            'ununiqueness_handler'    => null,
+            'uaprof'                  => null,
+            'uaprof2'                 => null,
+            'uaprof3'                 => null,
+            'unique'                  => true,
+
+            // display
+            'physical_screen_width'   => null,
+            'physical_screen_height'  => null,
+            'columns'                 => null,
+            'rows'                    => null,
+            'max_image_width'         => null,
+            'max_image_height'        => null,
+            'resolution_width'        => null,
+            'resolution_height'       => null,
+            'dual_orientation'        => false,
+            'colors'                  => 65536,
+
+            // sms
+            'sms_enabled'             => false,
+
+            // chips
+            'nfc_support'             => false,
         );
     }
 
     /**
-     * Returns true if this handler can handle the given $useragent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {

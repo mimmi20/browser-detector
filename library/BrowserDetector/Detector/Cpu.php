@@ -66,7 +66,9 @@ class Cpu
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return Cpu
      */
     public function setUserAgent($userAgent)
     {
@@ -93,7 +95,7 @@ class Cpu
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @return void
+     * @return Cpu
      */
     private function _detectCpu()
     {

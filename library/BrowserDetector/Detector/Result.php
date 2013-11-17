@@ -822,8 +822,8 @@ class Result implements \Serializable
      * @param string $capabilityName must be a valid capability name
      * @param string $capabilityValue
      *
+     * @throws \InvalidArgumentException
      * @return Result
-     * @throws InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null)
     {
@@ -871,14 +871,14 @@ class Result implements \Serializable
     /**
      * Returns the value of a given capability name for the current result
      *
-     * @param string  $capabilityName  must be a valid name of an virtual
-     *                                 capability
+     * @param         $name
      * @param boolean $includeRenderAs If TRUE and the renderAs resulr is
      *                                 ndefined, the property from the renderAs result will be
      *                                 included also
      *
+     * @internal param string $capabilityName must be a valid name of an virtual
+     *                                 capability
      * @return string|Version Capability value
-     * @throws InvalidArgumentException
      */
     public function getVirtualCapability($name, $includeRenderAs = false)
     {
@@ -935,8 +935,8 @@ class Result implements \Serializable
      *
      * @param string $capabilityName must be a valid capability name
      *
+     * @throws \InvalidArgumentException
      * @return string Capability value
-     * @throws InvalidArgumentException
      */
     private function checkCapability($capabilityName)
     {
@@ -958,6 +958,7 @@ class Result implements \Serializable
      *
      * @param string $name
      *
+     * @throws \InvalidArgumentException
      * @return string
      */
     public function __get($name)
@@ -1098,6 +1099,8 @@ class Result implements \Serializable
     /**
      * returns the name of the actual device with version
      *
+     * @param bool $withManufacturer
+     *
      * @return string
      */
     public function getFullDevice($withManufacturer = false)
@@ -1118,6 +1121,7 @@ class Result implements \Serializable
     /**
      * returns the name of the actual device with version
      *
+     * @param bool $withManufacturer
      * @return string
      */
     public function getFullDeviceName($withManufacturer = false)
@@ -1453,7 +1457,11 @@ class Result implements \Serializable
     /**
      * Returns the value of a given capability name for the current device
      *
-     * @param array $capabilities An array of name/value pairs
+     * @param DeviceHandler  $device
+     * @param OsHandler      $os
+     * @param BrowserHandler $browser
+     * @param EngineHandler  $engine
+     * @internal param array $capabilities An array of name/value pairs
      *
      * @return Result
      */

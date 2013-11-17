@@ -49,7 +49,7 @@ use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\Unknown as UnknownDevice;
-use BrowserDetector\Detector\Engine\Unknown as UnknownEngine;
+use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface;
@@ -165,7 +165,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return
+     * @return \BrowserDetector\Detector\BrowserHandler
      */
     private function detectBrowser()
     {
@@ -201,7 +201,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the device by User Agent
      *
-     * @return UserAgent
+     * @return MatcherInterface\DeviceInterface
      */
     private function detectDevice()
     {

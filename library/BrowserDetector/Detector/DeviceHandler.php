@@ -308,6 +308,7 @@ abstract class DeviceHandler
 
                 $this->setCapability('model_version', $detector);
             }
+            break;
         default:
             // nothing to do here
             break;
@@ -322,8 +323,9 @@ abstract class DeviceHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
+     * @param null   $capabilityValue
+     *
      * @return DeviceHandler
-     * @throws InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null)
     {
@@ -340,8 +342,8 @@ abstract class DeviceHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
+     * @throws \InvalidArgumentException
      * @return void
-     * @throws InvalidArgumentException
      */
     protected function checkCapability($capabilityName)
     {
@@ -363,6 +365,7 @@ abstract class DeviceHandler
      *
      * @param string $name
      *
+     * @throws \InvalidArgumentException
      * @return string
      */
     public function __get($name)
@@ -397,7 +400,7 @@ abstract class DeviceHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectBrowser()
     {
@@ -411,7 +414,7 @@ abstract class DeviceHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

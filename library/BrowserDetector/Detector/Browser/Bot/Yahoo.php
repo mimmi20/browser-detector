@@ -137,11 +137,11 @@ class Yahoo
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Unknown();
+        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

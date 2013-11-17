@@ -68,7 +68,7 @@ class IconBitNt1002t
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\IconBit\IconBitNt1002t
      */
     public function __construct()
     {
@@ -160,7 +160,7 @@ class IconBitNt1002t
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

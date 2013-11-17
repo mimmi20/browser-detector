@@ -82,6 +82,7 @@ class Uaparser extends Core
     /**
      * Gets the information about the browser by User Agent
      *
+     * @throws \UnexpectedValueException
      * @return \BrowserDetector\Detector\Result
      */
     public function getBrowser()

@@ -81,6 +81,7 @@ class Wurfl extends Core
      *
      * @var Manager $wurfl
      *
+     * @throws \UnexpectedValueException
      * @return Wurfl
      */
     public function setWurflManager($wurfl)
@@ -527,24 +528,6 @@ class Wurfl extends Core
                         $apiVer = '4.0.1';
                     }
                     $browserMaker = 'Google';
-                    break;
-                case 'unknown':
-                    $browserMaker = 'unknown';
-                    $apiBro       = 'unknown';
-
-                    switch (strtolower($apiVer)) {
-                    case 'bot or crawler':
-                        $apiDesktop = false;
-                        $apiBot     = true;
-                        $apiTv      = false;
-                        $apiDev     = 'general Bot';
-                        $apiBro     = 'unknown';
-                        $apiVer     = '';
-                        break;
-                    default:
-                        // nothing to do
-                        break;
-                    }
                     break;
                 case 'UCWeb':
                     $apiBro = 'UC Browser';

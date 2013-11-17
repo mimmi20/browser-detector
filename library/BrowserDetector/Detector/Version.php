@@ -373,9 +373,8 @@ class Version implements \Serializable
             array(' \(', '\;')
         );
 
-        $version = $this->_default;
-        $found   = false;
-
+        /** @var $version string */
+        $version   = $this->_default;
         $useragent = $this->_useragent;
 
         if (false !== strpos($useragent, '%')) {

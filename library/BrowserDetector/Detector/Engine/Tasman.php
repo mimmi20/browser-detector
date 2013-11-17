@@ -67,7 +67,7 @@ class Tasman extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\Tasman
      */
     public function __construct()
     {

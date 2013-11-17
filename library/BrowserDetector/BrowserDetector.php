@@ -104,13 +104,6 @@ class BrowserDetector
     private $interface = null;
 
     /**
-     * the detection result
-     *
-     * @var \BrowserDetector\Detector\Result
-     */
-    private $result = null;
-
-    /**
      * sets the cache used to make the detection faster
      *
      * @param CacheInterface $cache
@@ -143,6 +136,7 @@ class BrowserDetector
      *
      * @param string $prefix the new prefix
      *
+     * @throws \UnexpectedValueException
      * @return BrowserDetector
      */
     public function setCachePrefix($prefix)
@@ -187,6 +181,7 @@ class BrowserDetector
      *
      * @param integer $interface the new Interface to use
      *
+     * @throws \UnexpectedValueException
      * @return BrowserDetector
      */
     public function setInterface($interface)
@@ -267,6 +262,8 @@ class BrowserDetector
      *
      * @param boolean $forceDetect if TRUE a possible cache hit is ignored
      *
+     * @throws Input\Exception
+     * @throws \UnexpectedValueException
      * @return \BrowserDetector\Detector\Result
      */
     public function getBrowser($forceDetect = false)

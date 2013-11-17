@@ -136,6 +136,7 @@ abstract class Core
      *
      * @param string $prefix the new prefix
      *
+     * @throws \UnexpectedValueException
      * @return Core
      */
     public function setCachePrefix($prefix)

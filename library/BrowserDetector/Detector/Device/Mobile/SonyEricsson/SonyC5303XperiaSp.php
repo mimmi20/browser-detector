@@ -68,7 +68,7 @@ class SonyC5303XperiaSp
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyC5303XperiaSp
      */
     public function __construct()
     {
@@ -164,7 +164,7 @@ class SonyC5303XperiaSp
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

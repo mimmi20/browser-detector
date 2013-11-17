@@ -60,7 +60,7 @@ class SpamCrawlerFake
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Helper\SpamCrawlerFake
      */
     public function __construct()
     {
@@ -70,7 +70,9 @@ class SpamCrawlerFake
     /**
      * sets the user agent to be handled
      *
-     * @return void
+     * @param string $userAgent
+     *
+     * @return \BrowserDetector\Helper\SpamCrawlerFake
      */
     public function setUserAgent($userAgent)
     {

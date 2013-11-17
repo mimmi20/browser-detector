@@ -67,7 +67,7 @@ class Teleca extends EngineHandler
     /**
      * Class Constructor
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\Engine\Teleca
      */
     public function __construct()
     {

@@ -60,6 +60,10 @@ interface OsInterface
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\DeviceHandler  $device
+     *
      * @return DeviceHandler
      */
     public function detectDependProperties(
@@ -70,7 +74,7 @@ interface OsInterface
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser();
 }

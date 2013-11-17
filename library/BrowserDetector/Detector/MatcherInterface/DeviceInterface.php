@@ -59,8 +59,6 @@ interface DeviceInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return DeviceHandler
      */
     public function detectDevice();
@@ -68,6 +66,10 @@ interface DeviceInterface
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
      *
      * @return DeviceHandler
      */
@@ -79,7 +81,7 @@ interface DeviceInterface
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\Os\Handler
      */
     public function detectBrowser();
 
@@ -87,7 +89,7 @@ interface DeviceInterface
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\Os\Handler
      */
     public function detectOs();
 }

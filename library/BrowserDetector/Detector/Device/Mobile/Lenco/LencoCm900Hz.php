@@ -127,11 +127,11 @@ class LencoCm900Hz
      */
     public function canHandle()
     {
-        $LencoPhones = array(
+        $lencoPhones = array(
             'Lenco', 'LENCM900HZ'
         );
 
-        if ($this->utils->checkIfContains('LENCM900HZ')) {
+        if ($this->utils->checkIfContains($lencoPhones)) {
             return true;
         }
 
@@ -164,7 +164,7 @@ class LencoCm900Hz
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

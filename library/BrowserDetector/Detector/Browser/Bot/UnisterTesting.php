@@ -49,6 +49,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -126,7 +127,7 @@ class UnisterTesting
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('UnisterTesting');
@@ -152,11 +153,11 @@ class UnisterTesting
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Unknown();
+        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

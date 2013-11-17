@@ -171,7 +171,7 @@ class Sleipnir
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
@@ -184,7 +184,7 @@ class Sleipnir
         $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
 
         return $chain->detect();
     }

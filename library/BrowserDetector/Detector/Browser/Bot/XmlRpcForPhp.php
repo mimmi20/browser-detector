@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -120,11 +121,11 @@ class XmlRpcForPhp
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Unknown();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

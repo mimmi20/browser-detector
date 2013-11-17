@@ -359,6 +359,10 @@ class Trident extends EngineHandler
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     * @param \BrowserDetector\Detector\DeviceHandler  $device
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     *
      * @return DeviceHandler
      */
     public function detectDependProperties(

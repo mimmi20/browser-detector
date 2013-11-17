@@ -54,7 +54,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Unknown
+class UnknownBrowser
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
