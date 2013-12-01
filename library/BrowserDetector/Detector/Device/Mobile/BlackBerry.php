@@ -48,7 +48,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\RimOs;
-use BrowserDetector\Detector\Os\RimTablet;
+use BrowserDetector\Detector\Os\RimTabletOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -180,7 +180,7 @@ class BlackBerry
     {
         $os = array(
             new RimOs(),
-            new RimTablet(),
+            new RimTabletOs(),
             new WindowsMobileOs(),
             new AndroidOs()
         );

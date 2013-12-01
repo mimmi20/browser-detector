@@ -47,7 +47,7 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\RimTablet;
+use BrowserDetector\Detector\Os\RimTabletOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -167,7 +167,7 @@ class RimPlayBook
     public function detectOs()
     {
         $os = array(
-            new RimTablet(),
+            new RimTabletOs(),
             new AndroidOs()
         );
 

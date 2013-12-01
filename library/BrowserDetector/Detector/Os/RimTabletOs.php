@@ -64,7 +64,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class RimTablet
+class RimTabletOs
     extends OsHandler
     implements MatcherInterface, OsInterface
 {
@@ -78,7 +78,7 @@ class RimTablet
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\RimTabletOs
      */
     public function __construct()
     {
@@ -120,10 +120,6 @@ class RimTablet
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -152,7 +148,7 @@ class RimTablet
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
