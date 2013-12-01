@@ -170,7 +170,7 @@ class Ios
      */
     public function detectBrowser()
     {
-        $browsers = [
+        $browsers = array(
             new Safari(),
             new Chrome(),
             new OperaMobile(),
@@ -185,7 +185,7 @@ class Ios
             new Incredimail(),
             new Lunascape(),
             new MqqBrowser()
-        ];
+        );
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
