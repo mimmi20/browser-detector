@@ -41,6 +41,8 @@ namespace BrowserDetector\Detector\Device;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
@@ -147,7 +149,7 @@ class GeneralTv
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace(__NAMESPACE__ . '\\Tv');
         $chain->setDirectory(
@@ -183,11 +185,11 @@ class GeneralTv
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Tv');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

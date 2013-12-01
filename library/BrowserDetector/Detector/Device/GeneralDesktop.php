@@ -234,7 +234,7 @@ class GeneralDesktop
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
 
         return $chain->detect();
     }

@@ -41,10 +41,14 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -147,9 +151,7 @@ class HtcTouchDiamond2
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcTouchDiamond2
      */
     public function detectDevice()
     {
@@ -165,12 +167,12 @@ class HtcTouchDiamond2
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\WindowsMobileOs(),
-            new \BrowserDetector\Detector\Os\Android()
+            new WindowsMobileOs(),
+            new AndroidOs()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

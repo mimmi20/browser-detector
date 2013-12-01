@@ -184,7 +184,7 @@ class GeneralBot
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Unknown();
+        $handler = new \BrowserDetector\Detector\Os\UnknownOs();
         $handler->setUserAgent($this->_useragent);
 
         return $handler->detect();

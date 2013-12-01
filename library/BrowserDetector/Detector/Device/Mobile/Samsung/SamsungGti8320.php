@@ -41,10 +41,14 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\Symbianos;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -165,12 +169,12 @@ class SamsungGti8320
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Symbianos(),
-            new \BrowserDetector\Detector\Os\Maemo()
+            new Symbianos(),
+            new Maemo()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

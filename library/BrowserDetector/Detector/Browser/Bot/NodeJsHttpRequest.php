@@ -46,7 +46,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -137,7 +137,7 @@ class NodeJsHttpRequest
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

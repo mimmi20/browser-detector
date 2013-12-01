@@ -44,6 +44,7 @@ namespace BrowserDetector\Detector\Browser\Bot;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
@@ -157,7 +158,7 @@ class UnisterTesting
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

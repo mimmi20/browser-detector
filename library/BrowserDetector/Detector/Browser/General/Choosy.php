@@ -43,9 +43,11 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -138,7 +140,7 @@ class Choosy
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Choosy');
@@ -158,7 +160,7 @@ class Choosy
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Webkit();
+        $handler = new Webkit();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

@@ -41,6 +41,10 @@ namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Mobile\NetFront;
+use BrowserDetector\Detector\Browser\Mobile\Opera;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
@@ -165,14 +169,14 @@ class NintendoWii
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\NetFront(),
-            new \BrowserDetector\Detector\Browser\Mobile\Opera()
+            new NetFront(),
+            new Opera()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }
@@ -185,7 +189,7 @@ class NintendoWii
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Unknown();
+        $handler = new \BrowserDetector\Detector\Os\UnknownOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

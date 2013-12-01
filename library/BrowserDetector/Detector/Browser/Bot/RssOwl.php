@@ -46,7 +46,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +69,7 @@ class RssOwl
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\RssOwl
      */
     public function __construct()
     {
@@ -139,7 +139,7 @@ class RssOwl
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('RSSOwl');

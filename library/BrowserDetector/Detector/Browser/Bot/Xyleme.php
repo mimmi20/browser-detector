@@ -69,7 +69,7 @@ class Xyleme
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Xyleme
      */
     public function __construct()
     {
@@ -121,11 +121,11 @@ class Xyleme
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function detectEngine()
     {
-        $handler = new Unknown();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

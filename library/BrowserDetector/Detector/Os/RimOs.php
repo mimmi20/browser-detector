@@ -41,6 +41,13 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Mobile\Blackberry;
+use BrowserDetector\Detector\Browser\Mobile\BlackberryPlaybookTablet;
+use BrowserDetector\Detector\Browser\Mobile\MqqBrowser;
+use BrowserDetector\Detector\Browser\Mobile\OperaMini;
+use BrowserDetector\Detector\Browser\Mobile\Ucweb;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -156,18 +163,17 @@ class RimOs
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Blackberry(),
-            new \BrowserDetector\Detector\Browser\Mobile\BlackberryPlaybookTablet(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
-            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
-            new \BrowserDetector\Detector\Browser\Mobile\MqqBrowser(),
-            //new \BrowserDetector\Detector\Os\FreeBsd()
+            new Blackberry(),
+            new BlackberryPlaybookTablet(),
+            new OperaMini(),
+            new Ucweb(),
+            new MqqBrowser()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

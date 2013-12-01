@@ -41,10 +41,12 @@ namespace BrowserDetector\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -147,7 +149,7 @@ class Microsoft
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace(__NAMESPACE__ . '\\Microsoft');
         $chain->setDirectory(
@@ -176,7 +178,7 @@ class Microsoft
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Windows();
+        $handler = new Windows();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

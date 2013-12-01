@@ -68,7 +68,7 @@ class ArchosA70HB
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Archos\ArchosA70HB
      */
     public function __construct()
     {
@@ -164,7 +164,7 @@ class ArchosA70HB
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

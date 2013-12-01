@@ -41,6 +41,9 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Mobile\OperaMini;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -139,13 +142,13 @@ class Brew
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMini()
+            new OperaMini()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

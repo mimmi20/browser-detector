@@ -42,19 +42,19 @@ namespace BrowserDetector\Input;
  * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
-use BrowserDetector\Detector\Browser\Unknown as UnknownBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Device\GeneralBot;
 use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
-use BrowserDetector\Detector\Device\Unknown as UnknownDevice;
-use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
+use BrowserDetector\Detector\Device\UnknownDevice;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\Os\Unknown;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
 
 /**
@@ -71,28 +71,28 @@ class UserAgent extends Core
     /**
      * the detected browser
      *
-     * @var Stdclass
+     * @var \BrowserDetector\Detector\BrowserHandler
      */
     private $browser = null;
 
     /**
      * the detected browser engine
      *
-     * @var Stdclass
+     * @var \BrowserDetector\Detector\EngineHandler
      */
     private $engine = null;
 
     /**
      * the detected platform
      *
-     * @var Stdclass
+     * @var \BrowserDetector\Detector\OsHandler
      */
     private $os = null;
 
     /**
      * the detected device
      *
-     * @var Stdclass
+     * @var MatcherInterface\DeviceInterface
      */
     private $device = null;
 
@@ -115,7 +115,7 @@ class UserAgent extends Core
         $this->browser = $this->os->detectBrowser();
 
         if (!($this->browser instanceof BrowserInterface)
-            || ($this->os instanceof Unknown
+            || ($this->os instanceof UnknownOs
                 && is_callable(array($this->device, 'detectBrowser')))
         ) {
             $this->browser = $this->device->detectBrowser();
@@ -193,7 +193,7 @@ class UserAgent extends Core
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new Unknown());
+        $chain->setDefaultHandler(new UnknownOs());
 
         return $chain->detect();
     }

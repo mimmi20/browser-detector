@@ -42,6 +42,7 @@ namespace BrowserDetector\Detector\Device;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
@@ -151,7 +152,7 @@ class GeneralMobile
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace(__NAMESPACE__ . '\\Mobile');
         $chain->setDirectory(
@@ -187,11 +188,11 @@ class GeneralMobile
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Mobile');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
 
         return $chain->detect();
     }

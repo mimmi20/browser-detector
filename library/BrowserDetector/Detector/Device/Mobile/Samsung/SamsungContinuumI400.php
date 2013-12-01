@@ -45,9 +45,8 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Android;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector
@@ -70,7 +69,7 @@ class SamsungContinuumI400
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungContinuumI400
      */
     public function __construct()
     {
@@ -149,8 +148,6 @@ class SamsungContinuumI400
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return StdClass
      */
     public function detectDevice()
@@ -166,7 +163,7 @@ class SamsungContinuumI400
      */
     public function detectOs()
     {
-        $handler = new Android();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

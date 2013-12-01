@@ -68,7 +68,7 @@ class DellStreak10Pro
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Dell\DellStreak10Pro
      */
     public function __construct()
     {
@@ -164,7 +164,7 @@ class DellStreak10Pro
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

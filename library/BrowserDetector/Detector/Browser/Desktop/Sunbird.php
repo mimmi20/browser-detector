@@ -68,7 +68,7 @@ class Sunbird
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Desktop\Sunbird
      */
     public function __construct()
     {

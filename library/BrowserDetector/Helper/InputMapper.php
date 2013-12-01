@@ -192,7 +192,7 @@ class InputMapper
      * @param string $browserType
      * @param string $browserName
      *
-     * @return string
+     * @return BrowserType\TypeInterface
      */
     public function mapBrowserType($browserType, $browserName = null)
     {

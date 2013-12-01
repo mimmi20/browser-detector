@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\Mobile;
 
 use BrowserDetector\Detector\Browser\General\CfNetwork as CfNetworkBase;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -141,7 +142,7 @@ class Ipick extends CfNetworkBase
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Webkit();
+        $handler = new Webkit();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -68,7 +69,7 @@ class PointOfViewProtab25
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\PointOfView\PointOfViewProtab25
      */
     public function __construct()
     {
@@ -137,9 +138,7 @@ class PointOfViewProtab25
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\PointOfView\PointOfViewProtab25
      */
     public function detectDevice()
     {
@@ -164,7 +163,7 @@ class PointOfViewProtab25
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

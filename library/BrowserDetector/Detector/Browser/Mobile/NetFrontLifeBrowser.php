@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\Mobile;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\NetFront;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -163,7 +164,7 @@ class NetFrontLifeBrowser
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\NetFront();
+        $handler = new NetFront();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

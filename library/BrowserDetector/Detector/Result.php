@@ -64,7 +64,7 @@ class Result implements \Serializable
     /**
      * the detected browser properties
      *
-     * @var Stdclass
+     * @var array
      */
     private $properties
         = array(
@@ -772,7 +772,7 @@ class Result implements \Serializable
      *                                 included also
      *
      * @return string|Version Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName, $includeRenderAs = false)
     {

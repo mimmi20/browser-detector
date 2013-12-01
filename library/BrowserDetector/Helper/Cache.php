@@ -61,8 +61,9 @@ class Cache
         $userAgent = null, $cachePrefix = null
     ) {
         $cacheId = $this->getCacheIdFromAgent($userAgent, $cachePrefix);
+        $success = true;
 
-        return $cache->load($cacheId);
+        return $cache->getItem($cacheId, $success);
     }
 
     /**

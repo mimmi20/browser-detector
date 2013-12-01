@@ -146,7 +146,7 @@ abstract class OsHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $this->setCapability('device_os_version', $detector->setVersion(''));
@@ -157,7 +157,7 @@ abstract class OsHandler
      */
     protected function _detectBits()
     {
-        $detector = new \BrowserDetector\Detector\Bits\Os();
+        $detector = new Bits\Os();
         $detector->setUserAgent($this->_useragent);
 
         $this->setCapability('device_os_bits', $detector->getBits());

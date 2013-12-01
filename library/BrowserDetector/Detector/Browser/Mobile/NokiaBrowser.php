@@ -42,8 +42,11 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
@@ -162,13 +165,13 @@ class NokiaBrowser
     public function detectEngine()
     {
         $engines = array(
-            new \BrowserDetector\Detector\Engine\Webkit()
+            new Webkit()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
+        $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
     }

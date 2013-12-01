@@ -41,10 +41,14 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -69,7 +73,7 @@ class AmazonKindle
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKindle
      */
     public function __construct()
     {
@@ -153,7 +157,7 @@ class AmazonKindle
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKindle
      */
     public function detectDevice()
     {
@@ -169,12 +173,12 @@ class AmazonKindle
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Maemo()
+            new AndroidOs(),
+            new Maemo()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
@@ -184,11 +188,11 @@ class AmazonKindle
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKindle
      */
     protected function _detectDeviceVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 

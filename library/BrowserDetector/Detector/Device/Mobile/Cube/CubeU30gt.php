@@ -68,7 +68,7 @@ class CubeU30gt
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Cube\CubeU30gt
      */
     public function __construct()
     {
@@ -168,7 +168,7 @@ class CubeU30gt
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

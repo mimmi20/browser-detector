@@ -44,9 +44,8 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Android;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +68,7 @@ class Fx2Pad10
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Fx2Pad10
      */
     public function __construct()
     {
@@ -148,8 +147,6 @@ class Fx2Pad10
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return StdClass
      */
     public function detectDevice()
@@ -165,7 +162,7 @@ class Fx2Pad10
      */
     public function detectOs()
     {
-        $handler = new Android();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

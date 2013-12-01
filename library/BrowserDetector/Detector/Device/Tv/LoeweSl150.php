@@ -41,10 +41,21 @@ namespace BrowserDetector\Detector\Device\Tv;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Tv\Boxee;
+use BrowserDetector\Detector\Browser\Tv\HbbTv;
+use BrowserDetector\Detector\Browser\Tv\InettvBrowser;
+use BrowserDetector\Detector\Browser\Tv\NetTv;
+use BrowserDetector\Detector\Browser\Tv\Opera;
+use BrowserDetector\Detector\Browser\Tv\Safari;
+use BrowserDetector\Detector\Browser\Tv\SmartTv;
+use BrowserDetector\Detector\Browser\Tv\SmartTvWebBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -164,7 +175,7 @@ class LoeweSl150
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\LinuxTv();
+        $handler = new LinuxTv();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();
@@ -179,20 +190,20 @@ class LoeweSl150
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Tv\Boxee(),
-            new \BrowserDetector\Detector\Browser\Tv\Safari(),
-            new \BrowserDetector\Detector\Browser\Tv\Opera(),
-            new \BrowserDetector\Detector\Browser\Tv\SmartTvWebBrowser(),
-            new \BrowserDetector\Detector\Browser\Tv\SmartTv(),
-            new \BrowserDetector\Detector\Browser\Tv\HbbTv(),
-            new \BrowserDetector\Detector\Browser\Tv\InettvBrowser(),
-            new \BrowserDetector\Detector\Browser\Tv\NetTv(),
+            new Boxee(),
+            new Safari(),
+            new Opera(),
+            new SmartTvWebBrowser(),
+            new SmartTv(),
+            new HbbTv(),
+            new InettvBrowser(),
+            new NetTv(),
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

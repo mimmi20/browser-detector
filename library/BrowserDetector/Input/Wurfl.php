@@ -125,6 +125,9 @@ class Wurfl extends Core
             );
         }
 
+        $marketingName = null;
+        $xhtmlLevel = 0;
+
         try {
             $agent         = str_replace('Toolbar', '', $this->_agent);
             $device        = $this->wurflManager->getDeviceForUserAgent($agent);

@@ -42,11 +42,15 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -71,7 +75,7 @@ class HpTouchpad
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
      */
     public function __construct()
     {
@@ -150,9 +154,7 @@ class HpTouchpad
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
      */
     public function detectDevice()
     {
@@ -168,12 +170,12 @@ class HpTouchpad
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\WebOs(),
-            new \BrowserDetector\Detector\Os\Android()
+            new WebOs(),
+            new AndroidOs()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
@@ -183,6 +185,10 @@ class HpTouchpad
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
      *
      * @return DeviceHandler
      */

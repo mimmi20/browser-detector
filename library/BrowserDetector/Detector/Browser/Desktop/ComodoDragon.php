@@ -134,7 +134,7 @@ class ComodoDragon
         }
 
         if (!$this->utils->checkIfContains(array('Comodo Dragon'))) {
-            $detector = new \BrowserDetector\Detector\Version();
+            $detector = new Version();
             $detector->setUserAgent($this->useragent);
             $detector->detectVersion(array('Chrome'));
 
@@ -155,7 +155,7 @@ class ComodoDragon
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Comodo Dragon', 'Chrome');

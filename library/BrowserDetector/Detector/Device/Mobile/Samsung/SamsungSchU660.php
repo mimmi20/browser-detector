@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Brew;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -164,7 +165,7 @@ class SamsungSchU660
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Brew();
+        $handler = new Brew();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

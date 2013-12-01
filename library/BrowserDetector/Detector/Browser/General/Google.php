@@ -68,7 +68,7 @@ class Google
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Google
      */
     public function __construct()
     {

@@ -47,7 +47,6 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -70,7 +69,7 @@ class JakartaCommonsHttpClient
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\JakartaCommonsHttpClient
      */
     public function __construct()
     {

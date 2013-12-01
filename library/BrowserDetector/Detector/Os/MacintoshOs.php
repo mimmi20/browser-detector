@@ -57,7 +57,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Macintosh
+class MacintoshOs
     extends OsHandler
     implements MatcherInterface, OsInterface
 {
@@ -71,7 +71,7 @@ class Macintosh
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\MacintoshOs
      */
     public function __construct()
     {
@@ -110,10 +110,6 @@ class Macintosh
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {

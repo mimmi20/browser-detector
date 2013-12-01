@@ -41,11 +41,18 @@ namespace BrowserDetector\Detector\Device\Desktop;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Darwin;
+use BrowserDetector\Detector\Os\MacintoshOs;
+use BrowserDetector\Detector\Os\Macosx;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -68,7 +75,7 @@ class PowerMac
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Desktop\PowerMac
      */
     public function __construct()
     {
@@ -148,11 +155,11 @@ class PowerMac
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Desktop\PowerMac
      */
     protected function _detectDeviceVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $searches = array('PowerMac');
@@ -172,13 +179,13 @@ class PowerMac
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Macintosh(),
-            new \BrowserDetector\Detector\Os\Macosx(),
-            new \BrowserDetector\Detector\Os\Darwin()
+            new MacintoshOs(),
+            new Macosx(),
+            new Darwin()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
@@ -189,7 +196,7 @@ class PowerMac
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
@@ -200,11 +207,11 @@ class PowerMac
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

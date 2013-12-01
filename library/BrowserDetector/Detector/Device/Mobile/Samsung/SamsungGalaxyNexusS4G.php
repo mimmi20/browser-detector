@@ -45,9 +45,8 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Android;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector
@@ -70,7 +69,7 @@ class SamsungGalaxyNexusS4G
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGalaxyNexusS4G
      */
     public function __construct()
     {
@@ -139,9 +138,7 @@ class SamsungGalaxyNexusS4G
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGalaxyNexusS4G
      */
     public function detectDevice()
     {
@@ -152,11 +149,11 @@ class SamsungGalaxyNexusS4G
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|Handler
+     * @return Android
      */
     public function detectOs()
     {
-        $handler = new Android();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

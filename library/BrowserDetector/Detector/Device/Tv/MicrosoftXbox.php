@@ -41,10 +41,17 @@ namespace BrowserDetector\Detector\Device\Tv;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Tv\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\Tv\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\Windows;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -165,13 +172,12 @@ class MicrosoftXbox
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\WindowsPhoneOs(),
-            new \BrowserDetector\Detector\Os\Windows()
-            //new \BrowserDetector\Detector\Os\FreeBsd()
+            new WindowsPhoneOs(),
+            new Windows()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
@@ -187,14 +193,14 @@ class MicrosoftXbox
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Tv\MicrosoftInternetExplorer(),
-            new \BrowserDetector\Detector\Browser\Tv\MicrosoftMobileExplorer()
+            new MicrosoftInternetExplorer(),
+            new MicrosoftMobileExplorer()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

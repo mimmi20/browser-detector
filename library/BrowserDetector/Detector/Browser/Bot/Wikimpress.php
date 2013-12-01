@@ -43,9 +43,11 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -142,7 +144,7 @@ class Wikimpress
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Wikimpress');
@@ -162,7 +164,7 @@ class Wikimpress
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

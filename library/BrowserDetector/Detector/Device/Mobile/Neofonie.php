@@ -41,10 +41,12 @@ namespace BrowserDetector\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\MeeGo;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -143,7 +145,7 @@ class Neofonie
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace(__NAMESPACE__ . '\\Neofonie');
         $chain->setDirectory(
@@ -168,11 +170,11 @@ class Neofonie
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\MeeGo
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\MeeGo();
+        $handler = new MeeGo();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

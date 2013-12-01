@@ -79,7 +79,7 @@ abstract class DeviceHandler
     /**
      * a \Zend\Cache object
      *
-     * @var \Zend\Cache
+     * @var \phpbrowscap\Cache\CacheInterface
      */
     protected $cache = null;
 
@@ -152,6 +152,8 @@ abstract class DeviceHandler
     /**
      * sets the user agent to be handled
      *
+     * @param string $userAgent
+     *
      * @return DeviceHandler
      */
     public function setUserAgent($userAgent)
@@ -175,8 +177,6 @@ abstract class DeviceHandler
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return DeviceHandler
      */
     public function detect()
@@ -192,8 +192,6 @@ abstract class DeviceHandler
 
     /**
      * detects the device name from the given user agent
-     *
-     * @param string $userAgent
      *
      * @return DeviceHandler
      */
@@ -227,7 +225,7 @@ abstract class DeviceHandler
     protected function _detectCpu()
     {
         if (null === $this->getCapability('device_cpu')) {
-            $detector = new \BrowserDetector\Detector\Cpu();
+            $detector = new Cpu();
             $detector->setUserAgent($this->_useragent);
 
             $this->setCapability('device_cpu', $detector->getCpu());
@@ -243,7 +241,7 @@ abstract class DeviceHandler
      */
     protected function _detectBits()
     {
-        $detector = new \BrowserDetector\Detector\Bits\Device();
+        $detector = new Bits\Device();
         $detector->setUserAgent($this->_useragent);
 
         $this->setCapability('device_bits', $detector->getBits());
@@ -265,6 +263,10 @@ abstract class DeviceHandler
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param BrowserHandler $browser
+     * @param EngineHandler  $engine
+     * @param OsHandler      $os
      *
      * @return DeviceHandler
      */
@@ -294,7 +296,7 @@ abstract class DeviceHandler
      * @param string $capabilityName must be a valid capability name
      *
      * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName)
     {
@@ -404,7 +406,7 @@ abstract class DeviceHandler
      */
     public function detectBrowser()
     {
-        $browser = new \BrowserDetector\Detector\Browser\Unknown();
+        $browser = new Browser\UnknownBrowser();
         $browser->setUserAgent($this->_useragent);
 
         return $browser->detect();
@@ -418,8 +420,8 @@ abstract class DeviceHandler
      */
     public function detectOs()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new Os\UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
         $chain->setDirectory(

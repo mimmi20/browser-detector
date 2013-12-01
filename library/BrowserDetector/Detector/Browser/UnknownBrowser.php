@@ -68,7 +68,7 @@ class UnknownBrowser
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\UnknownBrowser
      */
     public function __construct()
     {

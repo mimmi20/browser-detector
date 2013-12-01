@@ -47,7 +47,6 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector
@@ -70,7 +69,7 @@ class SamsungB2100
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungB2100
      */
     public function __construct()
     {
@@ -148,8 +147,6 @@ class SamsungB2100
 
     /**
      * detects the device name from the given user agent
-     *
-     * @param string $userAgent
      *
      * @return StdClass
      */

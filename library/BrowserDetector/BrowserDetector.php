@@ -47,7 +47,6 @@ use BrowserDetector\Input\Uaparser;
 use BrowserDetector\Input\Uasparser;
 use BrowserDetector\Input\UserAgent;
 use BrowserDetector\Input\Wurfl;
-use BrowserDetector\Input\WurflCloud;
 use phpbrowscap\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
@@ -210,9 +209,6 @@ class BrowserDetector
             break;
         case self::INTERFACE_WURFL_FILE:
             $this->interface = new Wurfl();
-            break;
-        case self::INTERFACE_WURFL_CLOUD:
-            $this->interface = new WurflCloud();
             break;
         case self::INTERFACE_UAPARSER:
             $this->interface = new Uaparser();

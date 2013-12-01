@@ -48,7 +48,7 @@ namespace BrowserDetector\Detector\Type\Browser;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class UseragentAnonymizer extends AbstractType implements TypeInterface
+class Validator extends AbstractType implements TypeInterface
 {
     /**
      * the name of the browser

@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -160,11 +161,11 @@ class HtcTitan
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\WindowsPhoneOs();
+        $handler = new WindowsPhoneOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

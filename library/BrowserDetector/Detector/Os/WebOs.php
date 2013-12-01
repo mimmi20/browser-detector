@@ -41,7 +41,12 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\Browser\Unknown;
+use BrowserDetector\Detector\Browser\Mobile\NokiaBrowser;
+use BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser;
+use BrowserDetector\Detector\Browser\Mobile\OperaMini;
+use BrowserDetector\Detector\Browser\Mobile\Ucweb;
+use BrowserDetector\Detector\Browser\Mobile\WebkitWebos;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
@@ -73,7 +78,7 @@ class WebOs
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\WebOs
      */
     public function __construct()
     {
@@ -114,10 +119,6 @@ class WebOs
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -157,7 +158,7 @@ class WebOs
         $browserNs   = 'BrowserDetector\\Browser\\Handlers\\Mobile';
 
         $chain = new Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
         $chain->setUseragent($this->_useragent);
 
         return $chain->detect();
@@ -172,17 +173,17 @@ class WebOs
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\WebkitWebos(),
-            new \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
-            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
-            new \BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser()
+            new WebkitWebos(),
+            new NokiaBrowser(),
+            new OperaMini(),
+            new Ucweb(),
+            new NokiaProxyBrowser()
         );
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\MeeGo;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -154,9 +155,7 @@ class NokiaN9
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN9
      */
     public function detectDevice()
     {
@@ -167,11 +166,11 @@ class NokiaN9
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\MeeGo
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\MeeGo();
+        $handler = new MeeGo();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

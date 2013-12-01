@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Browser\Mobile\OperaMini;
 use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
 use BrowserDetector\Detector\Browser\Mobile\Safari;
 use BrowserDetector\Detector\Browser\Mobile\Sleipnir;
-use BrowserDetector\Detector\Browser\Unknown as UnknownBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
@@ -87,7 +87,7 @@ class Ios
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\Ios
      */
     public function __construct()
     {
@@ -127,10 +127,6 @@ class Ios
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -170,7 +166,7 @@ class Ios
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
@@ -206,7 +202,7 @@ class Ios
      * @param string $capabilityName must be a valid capability name
      *
      * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName)
     {

@@ -67,7 +67,7 @@ class UnknownOs
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Os\Unknown
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
     public function __construct()
     {

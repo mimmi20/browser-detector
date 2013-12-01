@@ -49,6 +49,7 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -169,11 +170,11 @@ class HtcRadar
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\WindowsPhoneOs();
+        $handler = new WindowsPhoneOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();
@@ -182,6 +183,10 @@ class HtcRadar
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
      *
      * @return DeviceHandler
      */

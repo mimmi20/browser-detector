@@ -68,7 +68,7 @@ class NetscapeNavigator
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Desktop\NetscapeNavigator
      */
     public function __construct()
     {

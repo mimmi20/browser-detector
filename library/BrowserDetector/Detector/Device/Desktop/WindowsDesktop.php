@@ -41,10 +41,13 @@ namespace BrowserDetector\Detector\Device\Desktop;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 
@@ -69,7 +72,7 @@ class WindowsDesktop
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Desktop\WindowsDesktop
      */
     public function __construct()
     {
@@ -141,9 +144,7 @@ class WindowsDesktop
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Desktop\WindowsDesktop
      */
     public function detectDevice()
     {
@@ -164,11 +165,11 @@ class WindowsDesktop
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Windows
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Windows();
+        $handler = new Windows();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();
@@ -189,11 +190,11 @@ class WindowsDesktop
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

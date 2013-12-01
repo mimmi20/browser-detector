@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -165,7 +166,7 @@ class PalmPixi
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\WebOs();
+        $handler = new WebOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();
@@ -198,7 +199,7 @@ class PalmPixi
      */
     protected function _detectDeviceVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 

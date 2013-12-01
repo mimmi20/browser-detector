@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -148,9 +149,7 @@ class Nokia5310
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\Nokia5310
      */
     public function detectDevice()
     {
@@ -161,11 +160,11 @@ class Nokia5310
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Symbianos();
+        $handler = new Symbianos();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

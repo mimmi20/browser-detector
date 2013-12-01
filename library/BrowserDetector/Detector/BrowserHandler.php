@@ -52,7 +52,6 @@ use BrowserDetector\Detector\Engine\Tasman;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -145,6 +144,8 @@ abstract class BrowserHandler
 
     /**
      * sets the user agent to be handled
+     *
+     * @param string $userAgent
      *
      * @return BrowserHandler
      */
@@ -268,6 +269,8 @@ abstract class BrowserHandler
      * @param mixed  $capabilityValue
      *
      * @return BrowserHandler
+     *
+     * @throws \InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null)
     {
@@ -305,7 +308,7 @@ abstract class BrowserHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return EngineHandler
+     * @return \BrowserDetector\Detector\EngineHandler
      */
     public function detectEngine()
     {
@@ -323,7 +326,7 @@ abstract class BrowserHandler
         $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new Unknown());
+        $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
     }

@@ -41,10 +41,12 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Mobile\NetFront;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -164,7 +166,7 @@ class PlayStationPortable
      */
     public function detectBrowser()
     {
-        $handler = new \BrowserDetector\Detector\Browser\Mobile\NetFront();
+        $handler = new NetFront();
         $handler->setUserAgent($this->_useragent);
 
         return $handler->detect();
@@ -178,7 +180,7 @@ class PlayStationPortable
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Java();
+        $handler = new Java();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

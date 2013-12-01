@@ -41,10 +41,17 @@ namespace BrowserDetector\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\Symbianos;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -139,13 +146,11 @@ class Ionik
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Ionik
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace(__NAMESPACE__ . '\\Ionik');
         $chain->setDirectory(
@@ -175,15 +180,15 @@ class Ionik
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Java(),
-            new \BrowserDetector\Detector\Os\Symbianos(),
-            new \BrowserDetector\Detector\Os\WindowsMobileOs(),
-            new \BrowserDetector\Detector\Os\WindowsPhoneOs()
+            new AndroidOs(),
+            new Java(),
+            new Symbianos(),
+            new WindowsMobileOs(),
+            new WindowsPhoneOs()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

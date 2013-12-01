@@ -41,6 +41,11 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Mobile\Android;
+use BrowserDetector\Detector\Browser\Mobile\Chrome;
+use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -71,7 +76,7 @@ class MeeGo
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\MeeGo
      */
     public function __construct()
     {
@@ -102,10 +107,6 @@ class MeeGo
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -134,20 +135,20 @@ class MeeGo
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMobile(),
+            new Android(),
+            new Chrome(),
+            new OperaMobile(),
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

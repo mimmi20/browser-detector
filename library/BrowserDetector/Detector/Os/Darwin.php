@@ -41,6 +41,26 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Bot\Bingbot;
+use BrowserDetector\Detector\Browser\Bot\Maven;
+use BrowserDetector\Detector\Browser\Mobile\AppleMail;
+use BrowserDetector\Detector\Browser\Mobile\AtomicBrowser;
+use BrowserDetector\Detector\Browser\Mobile\Coast;
+use BrowserDetector\Detector\Browser\Mobile\DarwinBrowser;
+use BrowserDetector\Detector\Browser\Mobile\Incredimail;
+use BrowserDetector\Detector\Browser\Mobile\Mercury;
+use BrowserDetector\Detector\Browser\Mobile\Omniweb;
+use BrowserDetector\Detector\Browser\Mobile\OnePassword;
+use BrowserDetector\Detector\Browser\Mobile\PerfectBrowser;
+use BrowserDetector\Detector\Browser\Mobile\Puffin;
+use BrowserDetector\Detector\Browser\Mobile\QuickLook;
+use BrowserDetector\Detector\Browser\Mobile\Safari;
+use BrowserDetector\Detector\Browser\Mobile\Sleipnir;
+use BrowserDetector\Detector\Browser\Mobile\SmartSync;
+use BrowserDetector\Detector\Browser\Mobile\Spector;
+use BrowserDetector\Detector\Browser\Mobile\Terra;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -139,30 +159,30 @@ class Darwin
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Safari(),
-            new \BrowserDetector\Detector\Browser\Mobile\OnePassword(),
-            new \BrowserDetector\Detector\Browser\Mobile\Sleipnir(),
-            new \BrowserDetector\Detector\Browser\Mobile\DarwinBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Terra(),
-            new \BrowserDetector\Detector\Browser\Mobile\Puffin(),
-            new \BrowserDetector\Detector\Browser\Mobile\Omniweb(),
-            new \BrowserDetector\Detector\Browser\Mobile\AtomicBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Mercury(),
-            new \BrowserDetector\Detector\Browser\Bot\Bingbot(),
-            new \BrowserDetector\Detector\Browser\Bot\Maven(),
-            new \BrowserDetector\Detector\Browser\Mobile\PerfectBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Spector(),
-            new \BrowserDetector\Detector\Browser\Mobile\SmartSync(),
-            new \BrowserDetector\Detector\Browser\Mobile\Incredimail(),
-            new \BrowserDetector\Detector\Browser\Mobile\AppleMail(),
-            new \BrowserDetector\Detector\Browser\Mobile\Coast(),
-            new \BrowserDetector\Detector\Browser\Mobile\QuickLook()
+            new Safari(),
+            new OnePassword(),
+            new Sleipnir(),
+            new DarwinBrowser(),
+            new Terra(),
+            new Puffin(),
+            new Omniweb(),
+            new AtomicBrowser(),
+            new Mercury(),
+            new Bingbot(),
+            new Maven(),
+            new PerfectBrowser(),
+            new Spector(),
+            new SmartSync(),
+            new Incredimail(),
+            new AppleMail(),
+            new Coast(),
+            new QuickLook()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

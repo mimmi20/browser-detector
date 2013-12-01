@@ -41,10 +41,29 @@ namespace BrowserDetector\Detector\Device\Desktop;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\CentOs;
+use BrowserDetector\Detector\Os\CrOs;
+use BrowserDetector\Detector\Os\Debian;
+use BrowserDetector\Detector\Os\Fedora;
+use BrowserDetector\Detector\Os\JoliOs;
+use BrowserDetector\Detector\Os\Kubuntu;
+use BrowserDetector\Detector\Os\Linux;
+use BrowserDetector\Detector\Os\LinuxTv;
+use BrowserDetector\Detector\Os\Mandriva;
+use BrowserDetector\Detector\Os\Mint;
+use BrowserDetector\Detector\Os\Redhat;
+use BrowserDetector\Detector\Os\Slackware;
+use BrowserDetector\Detector\Os\Suse;
+use BrowserDetector\Detector\Os\Ubuntu;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\Ventana;
+use BrowserDetector\Detector\Os\ZenwalkGnu;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -68,7 +87,7 @@ class EeePc
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Desktop\EeePc
      */
     public function __construct()
     {
@@ -136,9 +155,7 @@ class EeePc
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Desktop\EeePc
      */
     public function detectDevice()
     {
@@ -164,26 +181,26 @@ class EeePc
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Linux(),
-            new \BrowserDetector\Detector\Os\Debian(),
-            new \BrowserDetector\Detector\Os\Fedora(),
-            new \BrowserDetector\Detector\Os\JoliOs(),
-            new \BrowserDetector\Detector\Os\Kubuntu(),
-            new \BrowserDetector\Detector\Os\Mint(),
-            new \BrowserDetector\Detector\Os\Redhat(),
-            new \BrowserDetector\Detector\Os\Slackware(),
-            new \BrowserDetector\Detector\Os\Suse(),
-            new \BrowserDetector\Detector\Os\Ubuntu(),
-            new \BrowserDetector\Detector\Os\ZenwalkGnu(),
-            new \BrowserDetector\Detector\Os\CentOs(),
-            new \BrowserDetector\Detector\Os\LinuxTv(),
-            new \BrowserDetector\Detector\Os\CrOs(),
-            new \BrowserDetector\Detector\Os\Ventana(),
-            new \BrowserDetector\Detector\Os\Mandriva()
+            new Linux(),
+            new Debian(),
+            new Fedora(),
+            new JoliOs(),
+            new Kubuntu(),
+            new Mint(),
+            new Redhat(),
+            new Slackware(),
+            new Suse(),
+            new Ubuntu(),
+            new ZenwalkGnu(),
+            new CentOs(),
+            new LinuxTv(),
+            new CrOs(),
+            new Ventana(),
+            new Mandriva()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
@@ -194,7 +211,7 @@ class EeePc
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
@@ -205,11 +222,11 @@ class EeePc
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

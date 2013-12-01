@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 
@@ -142,7 +143,7 @@ class WindowsMobileOs
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         if ($this->utils->checkIfContains('Windows NT 5.1')) {
@@ -204,7 +205,7 @@ class WindowsMobileOs
         $chain = new \BrowserDetector\Detector\Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
 
         return $chain->detect();
     }

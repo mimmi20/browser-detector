@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -164,7 +165,7 @@ class SonyEricssonU1iv
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Symbianos();
+        $handler = new Symbianos();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

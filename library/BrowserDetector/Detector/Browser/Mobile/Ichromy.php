@@ -68,7 +68,7 @@ class Ichromy
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\Ichromy
      */
     public function __construct()
     {

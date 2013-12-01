@@ -68,7 +68,7 @@ class WindowsRt8Tablet
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Microsoft\WindowsRt8Tablet
      */
     public function __construct()
     {

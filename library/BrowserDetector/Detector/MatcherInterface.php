@@ -89,7 +89,7 @@ interface MatcherInterface
      * @param string $capabilityName must be a valid capability name
      *
      * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName);
 
@@ -99,8 +99,10 @@ interface MatcherInterface
      *
      * @param string $capabilityName must be a valid capability name
      *
+     * @param mixed   $capabilityValue
+     *
      * @return DeviceHandler
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null);
 

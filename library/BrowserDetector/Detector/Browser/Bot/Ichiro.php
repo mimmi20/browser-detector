@@ -50,7 +50,8 @@ use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -124,7 +125,7 @@ class Ichiro
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Ichiro
      */
     protected function _detectVersion()
     {
@@ -154,7 +155,11 @@ class Ichiro
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\Bot\Ichiro
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
@@ -163,7 +168,7 @@ class Ichiro
 
         $agent = str_ireplace(array('ichiro/mobile', 'ichiro', 'search.goo'), '', $this->useragent);
 
-        $detector = new \BrowserDetector\Input\UserAgent();
+        $detector = new UserAgent();
         $detector->setAgent($agent);
 
         $device->setRenderAs($detector->getBrowser());
@@ -175,11 +180,11 @@ class Ichiro
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return UnknownEngine
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

@@ -68,7 +68,7 @@ class AlcatelOt991
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Alcatel\AlcatelOt991
      */
     public function __construct()
     {
@@ -167,7 +167,7 @@ class AlcatelOt991
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

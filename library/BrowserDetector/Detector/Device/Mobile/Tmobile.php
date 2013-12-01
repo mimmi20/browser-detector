@@ -68,7 +68,7 @@ class Tmobile
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Tmobile
      */
     public function __construct()
     {
@@ -186,7 +186,7 @@ class Tmobile
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Android(),
+            new \BrowserDetector\Detector\Os\AndroidOs(),
             new \BrowserDetector\Detector\Os\Java(),
             new \BrowserDetector\Detector\Os\Symbianos(),
             new \BrowserDetector\Detector\Os\WindowsMobileOs(),
@@ -194,7 +194,7 @@ class Tmobile
         );
 
         $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

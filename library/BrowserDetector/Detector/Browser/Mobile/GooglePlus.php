@@ -68,7 +68,7 @@ class GooglePlus
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\GooglePlus
      */
     public function __construct()
     {

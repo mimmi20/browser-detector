@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -168,7 +169,7 @@ class SamsungGts5230
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Java();
+        $handler = new Java();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

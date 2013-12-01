@@ -41,10 +41,14 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Bada;
+use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -165,12 +169,12 @@ class SamsungGts5260
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Bada(),
-            new \BrowserDetector\Detector\Os\Java()
+            new Bada(),
+            new Java()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

@@ -41,10 +41,14 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Bada;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -147,9 +151,7 @@ class SamsungGts5250
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGts5250
      */
     public function detectDevice()
     {
@@ -165,12 +167,12 @@ class SamsungGts5250
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\Android(),
-            new \BrowserDetector\Detector\Os\Bada()
+            new AndroidOs(),
+            new Bada()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

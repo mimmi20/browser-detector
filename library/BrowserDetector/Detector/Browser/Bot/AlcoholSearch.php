@@ -49,7 +49,8 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Engine\UnknownEngine as UnknownEngine;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -143,7 +144,7 @@ class AlcoholSearch
 
         $agent = str_ireplace('alcohol search', '', $this->useragent);
 
-        $detector = new \BrowserDetector\Input\UserAgent();
+        $detector = new UserAgent();
         $detector->setAgent($agent);
 
         $device->setRenderAs($detector->getBrowser());
@@ -159,7 +160,7 @@ class AlcoholSearch
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

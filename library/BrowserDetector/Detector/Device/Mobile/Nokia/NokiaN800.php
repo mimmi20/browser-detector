@@ -47,6 +47,7 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -71,7 +72,7 @@ class NokiaN800
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
      */
     public function __construct()
     {
@@ -150,9 +151,7 @@ class NokiaN800
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
      */
     public function detectDevice()
     {
@@ -163,11 +162,11 @@ class NokiaN800
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Symbianos();
+        $handler = new Symbianos();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();
@@ -177,7 +176,11 @@ class NokiaN800
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os

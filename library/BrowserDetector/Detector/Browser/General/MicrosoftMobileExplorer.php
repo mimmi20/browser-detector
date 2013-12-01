@@ -151,7 +151,7 @@ class MicrosoftMobileExplorer
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {

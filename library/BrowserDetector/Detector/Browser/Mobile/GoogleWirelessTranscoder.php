@@ -68,7 +68,7 @@ class GoogleWirelessTranscoder
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\GoogleWirelessTranscoder
      */
     public function __construct()
     {

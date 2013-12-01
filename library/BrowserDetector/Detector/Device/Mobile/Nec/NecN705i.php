@@ -68,7 +68,7 @@ class NecN705i
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Nec\NecN705i
      */
     public function __construct()
     {

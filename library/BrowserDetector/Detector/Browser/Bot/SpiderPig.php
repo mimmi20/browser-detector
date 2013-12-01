@@ -44,11 +44,13 @@ namespace BrowserDetector\Detector\Browser\Bot;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -137,7 +139,7 @@ class SpiderPig
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\UnknownEngine();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();
@@ -157,7 +159,7 @@ class SpiderPig
         if ($this->utils->checkIfContains('spider-pig', true)) {
             $agent = str_ireplace(array('spider-pig'), '', $this->useragent);
 
-            $detector = new \BrowserDetector\Input\UserAgent();
+            $detector = new UserAgent();
             $detector->setAgent($agent);
 
             $device->setRenderAs($detector->getBrowser());

@@ -68,7 +68,7 @@ class AlcatelOt6030X
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Alcatel\AlcatelOt6030X
      */
     public function __construct()
     {
@@ -164,7 +164,7 @@ class AlcatelOt6030X
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Android();
+        $handler = new \BrowserDetector\Detector\Os\AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Browser\Mobile\OperaTablet;
 use BrowserDetector\Detector\Browser\Mobile\Silk;
 use BrowserDetector\Detector\Browser\Mobile\Ucweb;
 use BrowserDetector\Detector\Browser\Mobile\YaBrowser;
-use BrowserDetector\Detector\Browser\Unknown;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
@@ -91,7 +91,7 @@ class Ubuntu
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\Ubuntu
      */
     public function __construct()
     {
@@ -126,10 +126,6 @@ class Ubuntu
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -158,7 +154,7 @@ class Ubuntu
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
@@ -187,7 +183,7 @@ class Ubuntu
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new Unknown());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

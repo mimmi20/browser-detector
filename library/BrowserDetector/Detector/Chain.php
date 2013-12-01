@@ -40,6 +40,8 @@ namespace BrowserDetector\Detector;
      * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
      * @version   SVN: $Id$
      */
+use BrowserDetector\Helper\Classname;
+use DirectoryIterator;
 
 /**
  * a general chain used for detecting devices, browsers, platforms and engines
@@ -108,7 +110,7 @@ class Chain
     /**
      * sets the actual directory where the chain is searching
      *
-     * @param string $directory
+     * @param string $namespace
      *
      * @return Chain
      */
@@ -150,10 +152,11 @@ class Chain
 
         if (!empty($this->_directory)) {
             // get all Handlers from the directory
-            $iterator = new \DirectoryIterator($this->_directory);
-            $utils    = new \BrowserDetector\Helper\Classname();
+            $iterator = new DirectoryIterator($this->_directory);
+            $utils    = new Classname();
 
             foreach ($iterator as $fileinfo) {
+                /** @var $fileinfo \SplFileInfo */
                 if (!$fileinfo->isFile() || !$fileinfo->isReadable()) {
                     continue;
                 }
@@ -163,7 +166,7 @@ class Chain
                 $className = $utils->getClassNameFromFile(
                     $filename, $this->_namespace, true
                 );
-                //var_dump('1: ' . $className);
+
                 try {
                     $handler = new $className();
                 } catch (\Exception $e) {
@@ -180,7 +183,7 @@ class Chain
             while ($chain->valid()) {
                 $handler = $chain->current();
                 $handler->setUserAgent($this->_userAgent);
-                //var_dump('2: ' . get_class($handler));
+
                 if ($handler->canHandle()) {
                     return $handler->detect();
                 }
@@ -194,13 +197,13 @@ class Chain
         ) {
             $handler = $this->_defaultHandler;
         } else {
-            $utils     = new \BrowserDetector\Helper\Classname();
+            $utils     = new Classname();
             $className = $utils->getClassNameFromFile(
                 'Unknown', $this->_namespace, true
             );
             $handler   = new $className();
         }
-        //var_dump('3: ' . get_class($handler));
+
         $handler->setUserAgent($this->_userAgent);
 
         return $handler;
