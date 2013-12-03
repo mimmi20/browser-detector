@@ -45,6 +45,7 @@ namespace BrowserDetector\Input;
 use BrowserDetector\BrowserDetector;
 use phpbrowscap\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
@@ -58,7 +59,7 @@ use Psr\Log\LoggerInterface;
 abstract class Core
 {
     /**
-     * a \phpbrowscap\Cache\CacheInterface object
+     * a \WurflCache\Adapter\AdapterInterface object
      *
      * @var CacheInterface
      */
@@ -86,11 +87,11 @@ abstract class Core
     /**
      * sets the cache used to make the detection faster
      *
-     * @param CacheInterface $cache
+     * @param \WurflCache\Adapter\AdapterInterface $cache
      *
      * @return Core
      */
-    public function setCache(CacheInterface $cache)
+    public function setCache(AdapterInterface $cache)
     {
         $this->cache = $cache;
 

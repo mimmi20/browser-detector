@@ -38,6 +38,7 @@ namespace BrowserDetector\Helper;
      * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
      */
 use phpbrowscap\Cache\CacheInterface;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * a general helper to work with \Zend\Cache
@@ -49,7 +50,7 @@ class Cache
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param CacheInterface $cache
+     * @param \WurflCache\Adapter\AdapterInterface $cache
      * @param string                            $userAgent the user agent string
      *
      * @param string                            $cachePrefix
@@ -57,7 +58,7 @@ class Cache
      * @return mixed
      */
     public function getBrowserFromCache(
-        CacheInterface $cache,
+        AdapterInterface $cache,
         $userAgent = null, $cachePrefix = null
     ) {
         $cacheId = $this->getCacheIdFromAgent($userAgent, $cachePrefix);

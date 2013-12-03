@@ -41,6 +41,23 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler;
+use BrowserDetector\Detector\Browser\Mobile\Dalvik;
+use BrowserDetector\Detector\Browser\Mobile\Dolfin;
+use BrowserDetector\Detector\Browser\Mobile\Jasmine;
+use BrowserDetector\Detector\Browser\Mobile\Motorola;
+use BrowserDetector\Detector\Browser\Mobile\NetFront;
+use BrowserDetector\Detector\Browser\Mobile\NokiaBrowser;
+use BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser;
+use BrowserDetector\Detector\Browser\Mobile\Openwave;
+use BrowserDetector\Detector\Browser\Mobile\OperaMini;
+use BrowserDetector\Detector\Browser\Mobile\Phantom;
+use BrowserDetector\Detector\Browser\Mobile\PlaystationBrowser;
+use BrowserDetector\Detector\Browser\Mobile\Silk;
+use BrowserDetector\Detector\Browser\Mobile\TelecaObigo;
+use BrowserDetector\Detector\Browser\Mobile\Ucweb;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -71,7 +88,7 @@ class Java
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function __construct()
     {
@@ -127,10 +144,6 @@ class Java
 
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
@@ -164,27 +177,27 @@ class Java
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Openwave(),
-            new \BrowserDetector\Detector\Browser\Mobile\TelecaObigo(),
-            new \BrowserDetector\Detector\Browser\Mobile\NetFront(),
-            new \BrowserDetector\Detector\Browser\Mobile\Phantom(),
-            new \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dalvik(),
-            new \BrowserDetector\Detector\Browser\Mobile\Dolfin(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMini(),
-            new \BrowserDetector\Detector\Browser\Mobile\Ucweb(),
-            new \BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Motorola(),
-            new \BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler(),
-            new \BrowserDetector\Detector\Browser\Mobile\PlaystationBrowser(),
-            new \BrowserDetector\Detector\Browser\Mobile\Silk(),
-            new \BrowserDetector\Detector\Browser\Mobile\Jasmine()
+            new Openwave(),
+            new TelecaObigo(),
+            new NetFront(),
+            new Phantom(),
+            new NokiaBrowser(),
+            new Dalvik(),
+            new Dolfin(),
+            new OperaMini(),
+            new Ucweb(),
+            new NokiaProxyBrowser(),
+            new Motorola(),
+            new GenericJavaCrawler(),
+            new PlaystationBrowser(),
+            new Silk(),
+            new Jasmine()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -141,9 +142,7 @@ class SimvalleySpx5
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Simvalley\SimvalleySpx5
      */
     public function detectDevice()
     {
@@ -164,11 +163,11 @@ class SimvalleySpx5
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\AndroidOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

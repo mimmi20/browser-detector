@@ -42,7 +42,11 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -70,7 +74,7 @@ class OperaTablet
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\OperaTablet
      */
     public function __construct()
     {
@@ -130,7 +134,7 @@ class OperaTablet
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Mobile\OperaTablet
      */
     protected function _detectVersion()
     {
@@ -160,20 +164,20 @@ class OperaTablet
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\EngineHandler
      */
     public function detectEngine()
     {
         $engines = array(
-            new \BrowserDetector\Detector\Engine\Presto(),
-            new \BrowserDetector\Detector\Engine\Webkit(),
-            new \BrowserDetector\Detector\Engine\Blink()
+            new Presto(),
+            new Webkit(),
+            new Blink()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\Presto());
+        $chain->setDefaultHandler(new Presto());
 
         return $chain->detect();
     }

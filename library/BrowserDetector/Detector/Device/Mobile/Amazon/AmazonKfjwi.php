@@ -41,10 +41,14 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -147,9 +151,7 @@ class AmazonKfjwi
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKfjwi
      */
     public function detectDevice()
     {
@@ -165,12 +167,12 @@ class AmazonKfjwi
     public function detectOs()
     {
         $os = array(
-            new \BrowserDetector\Detector\Os\AndroidOs(),
-            new \BrowserDetector\Detector\Os\Maemo()
+            new AndroidOs(),
+            new Maemo()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\UnknownOs());
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 

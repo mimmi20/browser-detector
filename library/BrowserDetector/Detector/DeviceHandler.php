@@ -77,9 +77,9 @@ abstract class DeviceHandler
     protected $renderAs = null;
 
     /**
-     * a \Zend\Cache object
+     * a Cache object
      *
-     * @var \phpbrowscap\Cache\CacheInterface
+     * @var \WurflCache\Adapter\AdapterInterface
      */
     protected $cache = null;
 

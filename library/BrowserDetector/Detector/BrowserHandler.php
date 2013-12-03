@@ -80,9 +80,9 @@ abstract class BrowserHandler
     protected $utils = null;
 
     /**
-     * a \Zend\Cache object
+     * a Cache object
      *
-     * @var \phpbrowscap\Cache\CacheInterface
+     * @var \WurflCache\Adapter\AdapterInterface
      */
     protected $cache = null;
 

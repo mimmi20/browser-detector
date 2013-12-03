@@ -41,10 +41,13 @@ namespace BrowserDetector\Detector\Device;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Bot\GeneralBot as GeneralBotDevice;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\SpamCrawlerFake;
 
@@ -69,7 +72,7 @@ class GeneralBot
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\GeneralBot
      */
     public function __construct()
     {
@@ -167,11 +170,11 @@ class GeneralBot
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Bot');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Bot\GeneralBot());
+        $chain->setDefaultHandler(new GeneralBotDevice());
 
         return $chain->detect();
     }
@@ -180,11 +183,11 @@ class GeneralBot
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\UnknownOs();
+        $handler = new UnknownOs();
         $handler->setUserAgent($this->_useragent);
 
         return $handler->detect();

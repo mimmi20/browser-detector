@@ -21,20 +21,22 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "garetjax/phpbrowscap": "dev-master",
+        "mimmi20/wurflcache": "dev-master",
         "psr/log": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
         "ext-xdebug": "*",
         "synchro/uasparser": "dev-master",
-        "dubcanada/uaparser": "dev-master"
+        "dubcanada/uaparser": "dev-master",
+        "mimmi20/wurfl": "dev-master",
+        "garetjax/phpbrowscap": "dev-master"
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
         "dubcanada/uaparser": "for using the ua parser as alternative parser",
-        "zendframework/zend-cache": "if you want to use zend cache"
+        "garetjax/phpbrowscap": "for using the browscap ini parser as alternative parser"
     },
     "autoload": {
         "psr-0": {
