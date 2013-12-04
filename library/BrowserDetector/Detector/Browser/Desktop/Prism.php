@@ -43,9 +43,11 @@ namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * PrismUserAgentHandler
@@ -71,7 +73,7 @@ class Prism
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Desktop\Prism
      */
     public function __construct()
     {
@@ -161,11 +163,11 @@ class Prism
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Desktop\Prism
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Prism');
@@ -191,11 +193,11 @@ class Prism
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\Gecko
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Gecko();
+        $handler = new Gecko();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

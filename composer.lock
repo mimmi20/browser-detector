@@ -3,52 +3,53 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fa7f760f9693c91caffd7970b68a15c0",
+    "hash": "3044618a8c0ac5685568b9ab06acceda",
     "packages": [
         {
-            "name": "garetjax/phpbrowscap",
+            "name": "mimmi20/wurflcache",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mimmi20/phpbrowscap.git",
-                "reference": "cf2e679022cfc5152bcbba32ac810721a7e45ec0"
+                "url": "https://github.com/mimmi20/WurflCache.git",
+                "reference": "1fe91fe04cf0cda6f60b0e57d4d3226a60c4eefa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mimmi20/WurflCache/zipball/1fe91fe04cf0cda6f60b0e57d4d3226a60c4eefa",
+                "reference": "1fe91fe04cf0cda6f60b0e57d4d3226a60c4eefa",
+                "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
+                "desarrolla2/cache": "dev-master",
+                "doctrine/cache": "1.4.*@dev",
                 "ext-xdebug": "*",
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "*",
+                "zendframework/zend-cache": "2.2.*",
+                "zetacomponents/cache": "dev-master"
             },
             "suggest": {
-                "ext-curl": "to use curl requests to get the browscap.ini file",
-                "zendframework/zend-cache": "if you want to use zend cache instead of the original one"
+                "zendframework/zend-cache": "to use other caches"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "phpbrowscap": "src/"
+                    "WurflCache\\": "library/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT License"
+                "LGPL-2.1"
             ],
-            "authors": [
-                {
-                    "name": "Jonathan Stoppani",
-                    "email": "jonathan.stoppani@gmail.com"
-                }
-            ],
-            "description": "Standalone replacement for php's native get_browser() function",
-            "homepage": "http://github.com/GaretJax/phpbrowscap",
+            "description": "the Cache Classes for the Wurfl PHP Library for PHP 5.3",
+            "homepage": "https://github.com/mimmi20/WurflCache",
             "keywords": [
-                "browser",
-                "capabilities",
-                "get_browser",
-                "user agent"
+                "Wurfl",
+                "cache"
             ],
-            "time": "2013-10-24 21:14:56"
+            "time": "2013-11-28 22:37:23"
         },
         {
             "name": "psr/log",
@@ -498,17 +499,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.3.6",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "6bb881b948368482e1abf1a75c08bcf88a1c5fc3"
+                "reference": "1ae235a1b9d3ad3d9f3860ff20acc072df95b7f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6bb881b948368482e1abf1a75c08bcf88a1c5fc3",
-                "reference": "6bb881b948368482e1abf1a75c08bcf88a1c5fc3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1ae235a1b9d3ad3d9f3860ff20acc072df95b7f5",
+                "reference": "1ae235a1b9d3ad3d9f3860ff20acc072df95b7f5",
                 "shasum": ""
             },
             "require": {
@@ -517,7 +518,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -541,7 +542,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-22 18:04:39"
+            "time": "2013-11-26 16:40:27"
         },
         {
             "name": "synchro/uasparser",
@@ -549,7 +550,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/UASparser.git",
-                "reference": "e952a93d6b1aea7d8847f4710f611b8c70d6ffc1"
+                "reference": "833ffdc21306a13c88e8156234687bc83369b74d"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -561,7 +562,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "UAS": "UAS/"
+                    "UAS": ""
                 }
             },
             "license": [
@@ -587,7 +588,7 @@
                 "parser",
                 "user-agent"
             ],
-            "time": "2013-10-06 18:50:14"
+            "time": "2013-11-17 09:50:20"
         }
     ],
     "aliases": [
@@ -595,7 +596,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "garetjax/phpbrowscap": 20,
+        "mimmi20/wurflcache": 20,
         "synchro/uasparser": 20,
         "dubcanada/uaparser": 20
     },

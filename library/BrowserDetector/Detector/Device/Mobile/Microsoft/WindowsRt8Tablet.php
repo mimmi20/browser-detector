@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -141,9 +142,7 @@ class WindowsRt8Tablet
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Microsoft\WindowsRt8Tablet
      */
     public function detectDevice()
     {
@@ -164,11 +163,11 @@ class WindowsRt8Tablet
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Windows
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Windows();
+        $handler = new Windows();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

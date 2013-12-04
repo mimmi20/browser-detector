@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Maemo;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -150,9 +151,7 @@ class NecN705i
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Nec\NecN705i
      */
     public function detectDevice()
     {
@@ -163,11 +162,11 @@ class NecN705i
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Maemo
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\Maemo();
+        $handler = new Maemo();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

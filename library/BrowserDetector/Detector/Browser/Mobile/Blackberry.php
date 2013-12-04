@@ -42,8 +42,12 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\BlackBerry as BlackBerryEngine;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
@@ -75,7 +79,7 @@ class Blackberry
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\Blackberry
      */
     public function __construct()
     {
@@ -130,7 +134,7 @@ class Blackberry
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Mobile\Blackberry
      */
     protected function _detectVersion()
     {
@@ -162,19 +166,19 @@ class Blackberry
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\EngineHandler
      */
     public function detectEngine()
     {
         $engines = array(
-            new \BrowserDetector\Detector\Engine\Webkit(),
-            new \BrowserDetector\Detector\Engine\BlackBerry()
+            new Webkit(),
+            new BlackBerryEngine()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
+        $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
     }
@@ -183,7 +187,11 @@ class Blackberry
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\Mobile\Blackberry
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

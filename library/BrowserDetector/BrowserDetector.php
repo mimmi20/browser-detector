@@ -50,6 +50,7 @@ use BrowserDetector\Input\Wurfl;
 use phpbrowscap\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * Browser Detection class
@@ -70,7 +71,7 @@ class BrowserDetector
     const INTERFACE_UASPARSER    = 6;
 
     /**
-     * a \phpbrowscap\Cache\CacheInterface object
+     * a \WurflCache\Adapter\AdapterInterface object
      *
      * @var CacheInterface
      */
@@ -105,11 +106,11 @@ class BrowserDetector
     /**
      * sets the cache used to make the detection faster
      *
-     * @param CacheInterface $cache
+     * @param \WurflCache\Adapter\AdapterInterface $cache
      *
      * @return BrowserDetector
      */
-    public function setCache(CacheInterface $cache)
+    public function setCache(AdapterInterface $cache)
     {
         $this->cache = $cache;
 
