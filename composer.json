@@ -30,7 +30,8 @@
         "synchro/uasparser": "dev-master",
         "dubcanada/uaparser": "dev-master",
         "mimmi20/wurfl": "dev-master",
-        "garetjax/phpbrowscap": "dev-parser-cache"
+        "garetjax/phpbrowscap": "dev-parser-cache",
+        "monolog/monolog": "1.*@dev"
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
