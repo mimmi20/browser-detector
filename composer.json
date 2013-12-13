@@ -30,16 +30,11 @@
         "synchro/uasparser": "dev-master",
         "dubcanada/uaparser": "dev-master",
         "mimmi20/wurfl": "dev-master",
-<<<<<<< HEAD
         "garetjax/phpbrowscap": "dev-master",
         "monolog/monolog": "1.*@dev",
         "mikey179/vfsStream": "1.3.*@dev",
         "satooshi/php-coveralls": "dev-master",
         "phpunit/phpcov": "2.0.*@dev"
-=======
-        "garetjax/phpbrowscap": "dev-parser-cache",
-        "monolog/monolog": "1.*@dev"
->>>>>>> 4c83e5b72b8c903ab6b032c67b95ded94c857bf6
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
