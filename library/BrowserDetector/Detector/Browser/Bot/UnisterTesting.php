@@ -176,7 +176,7 @@ class UnisterTesting
         parent::detectDependProperties($engine, $os, $device);
 
         $agent = str_ireplace(
-            array('unistertesting', 'unister-test'),
+            array('unistertesting', 'unister-test', 'unister-https-test'),
             '', $this->useragent
         );
 
