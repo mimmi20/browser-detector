@@ -16,7 +16,7 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/mimmi20/kairos-uaparser.git"
+            "url":  "https://github.com/mimmi20/ua-parser.git"
         }
     ],
     "require": {
@@ -28,7 +28,7 @@
         "phpunit/phpunit": "*",
         "ext-xdebug": "*",
         "synchro/uasparser": "dev-master",
-        "dubcanada/uaparser": "dev-master",
+        "tobie/ua-parser": "dev-master",
         "mimmi20/wurfl": "dev-master",
         "garetjax/phpbrowscap": "dev-master",
         "monolog/monolog": "1.*@dev",
@@ -39,7 +39,7 @@
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
-        "dubcanada/uaparser": "for using the ua parser as alternative parser",
+        "tobie/ua-parser": "for using the ua parser as alternative parser",
         "garetjax/phpbrowscap": "for using the browscap ini parser as alternative parser"
     },
     "autoload": {

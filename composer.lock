@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b06adb28518301d5a4722c47c45962cb",
+    "hash": "c984ae29acd4e95d2856bad3d8afe1ac",
     "packages": [
         {
             "name": "mimmi20/wurflcache",
@@ -93,51 +93,12 @@
     ],
     "packages-dev": [
         {
-            "name": "dubcanada/uaparser",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mimmi20/kairos-uaparser.git",
-                "reference": "7417e012135e94cf7a3be336effe672b2e07c7d7"
-            },
-            "require": {
-                "php": ">=5.3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/UA.php"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steven Verbeek",
-                    "role": "composer"
-                },
-                {
-                    "name": "Tobie",
-                    "role": "original developer"
-                }
-            ],
-            "description": "User Agent parser in php from https://github.com/tobie/ua-parser modified to use JSON",
-            "homepage": "http://github.com/dubcanada",
-            "keywords": [
-                "php",
-                "ua",
-                "user-agent"
-            ],
-            "time": "2013-04-09 14:11:09"
-        },
-        {
             "name": "garetjax/phpbrowscap",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/phpbrowscap.git",
-                "reference": "8c33fb949f7f63a02a29a74168e2223a6fd8ddeb"
+                "reference": "b198313d5d466771691b503bb19c354388eb6b2b"
             },
             "require": {
                 "php": ">=5.3.0",
@@ -145,7 +106,10 @@
             },
             "require-dev": {
                 "ext-xdebug": "*",
-                "phpunit/phpunit": "*"
+                "mikey179/vfsstream": "1.3.*@dev",
+                "phpunit/phpcov": "2.0.*@dev",
+                "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master"
             },
             "suggest": {
                 "ext-curl": "to use curl requests to get the browscap.ini file",
@@ -174,7 +138,7 @@
                 "get_browser",
                 "user agent"
             ],
-            "time": "2013-12-04 22:09:26"
+            "time": "2013-12-13 21:39:41"
         },
         {
             "name": "guzzle/guzzle",
@@ -313,12 +277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/Wurfl.git",
-                "reference": "86ee92c7f487ab6e86e9f376ff984a744805eaf9"
+                "reference": "ab125bb077725e9da0afb387ad9d081c46f84445"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/86ee92c7f487ab6e86e9f376ff984a744805eaf9",
-                "reference": "86ee92c7f487ab6e86e9f376ff984a744805eaf9",
+                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/ab125bb077725e9da0afb387ad9d081c46f84445",
+                "reference": "ab125bb077725e9da0afb387ad9d081c46f84445",
                 "shasum": ""
             },
             "require": {
@@ -328,8 +292,11 @@
             },
             "require-dev": {
                 "ext-xdebug": "*",
+                "mikey179/vfsstream": "1.3.*@dev",
                 "monolog/monolog": "1.*@dev",
+                "phpunit/phpcov": "2.0.*@dev",
                 "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master",
                 "zendframework/zend-config": "2.2.*"
             },
             "suggest": {
@@ -357,7 +324,7 @@
                 "user agent",
                 "user-agent"
             ],
-            "time": "2013-12-12 23:02:09"
+            "time": "2013-12-13 21:42:33"
         },
         {
             "name": "monolog/monolog",
@@ -365,12 +332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "5ad421d6a1d5d7066a45b617e5164d309c4e2852"
+                "reference": "c9db00f8821b2cc7238732529f8d4007296a630c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5ad421d6a1d5d7066a45b617e5164d309c4e2852",
-                "reference": "5ad421d6a1d5d7066a45b617e5164d309c4e2852",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c9db00f8821b2cc7238732529f8d4007296a630c",
+                "reference": "c9db00f8821b2cc7238732529f8d4007296a630c",
                 "shasum": ""
             },
             "require": {
@@ -424,7 +391,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-12-02 09:38:32"
+            "time": "2013-12-14 13:52:08"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1388,14 +1355,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/UASparser.git",
-                "reference": "833ffdc21306a13c88e8156234687bc83369b74d"
+                "reference": "a8d220c37222cbc72b061cd09ec1d2b35f3c10f8"
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
                 "ext-xdebug": "*",
-                "phpunit/phpunit": "*"
+                "mikey179/vfsstream": "1.3.*@dev",
+                "phpunit/phpcov": "2.0.*@dev",
+                "phpunit/phpunit": "*",
+                "phpunit/phpunit-selenium": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1426,7 +1397,7 @@
                 "parser",
                 "user-agent"
             ],
-            "time": "2013-11-17 09:50:20"
+            "time": "2013-12-14 09:02:51"
         },
         {
             "name": "theseer/fdomdocument",
@@ -1467,6 +1438,41 @@
             "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convinience and to simplify the usage of DOM.",
             "homepage": "https://github.com/theseer/fDOMDocument",
             "time": "2013-06-30 12:26:39"
+        },
+        {
+            "name": "tobie/ua-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mimmi20/ua-parser.git",
+                "reference": "68f321c7b97b979e258db4945796f913b281f12f"
+            },
+            "require": {
+                "symfony/console": "~2",
+                "symfony/filesystem": "~2",
+                "symfony/finder": "~2",
+                "symfony/yaml": "~2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "UAParser": "php/src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Olsen",
+                    "email": "dmolsen@gmail.com"
+                }
+            ],
+            "description": "A multi-language port of Browserscope's user agent parser.",
+            "time": "2013-12-11 08:45:44"
         }
     ],
     "aliases": [
@@ -1475,7 +1481,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "synchro/uasparser": 20,
-        "dubcanada/uaparser": 20,
+        "tobie/ua-parser": 20,
         "mimmi20/wurfl": 20,
         "garetjax/phpbrowscap": 20,
         "monolog/monolog": 20,
