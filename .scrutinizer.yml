@@ -25,7 +25,7 @@ tools:
 
     # Copy/Paste Detector
     php_cpd:
-        enabled:              true
+        enabled:              false
         command:              phpcpd
         excluded_dirs:
             - 'vendor'
@@ -33,7 +33,7 @@ tools:
 
     # PHP CS Fixer (http://http://cs.sensiolabs.org/).
     php_cs_fixer:
-        enabled:              true
+        enabled:              false
         command:              php-cs-fixer
         config:
             level:            psr2
@@ -44,7 +44,7 @@ tools:
 
     # Analyzes the size and structure of a PHP project.
     php_loc:
-        enabled:              true
+        enabled:              false
         command:              phploc
         excluded_dirs:
             - vendor
@@ -52,7 +52,7 @@ tools:
 
     # PHP Mess Detector (http://phpmd.org).
     php_mess_detector:
-        enabled:              true
+        enabled:              false
         command:              phpmd
         config:
             rulesets:
@@ -68,17 +68,17 @@ tools:
 
     # Analyzes the size and structure of a PHP project.
     php_pdepend:
-        enabled:              true
+        enabled:              false
         command:              pdepend
         excluded_dirs:
             - vendor
 
     # Runs Scrutinizer's PHP Analyzer Tool
     php_analyzer:
-        enabled:              true
+        enabled:              false
         filter:
             excluded_paths:
               - 'vendor/*'
 
     # Security Advisory Checker
-    sensiolabs_security_checker: true
+    sensiolabs_security_checker: false
