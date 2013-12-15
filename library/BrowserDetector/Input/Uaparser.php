@@ -61,18 +61,18 @@ class Uaparser extends Core
     /**
      * the UAParser class
      *
-     * @var \UA
+     * @var \UAParser\Parser
      */
     private $parser = null;
 
     /**
      * sets the UA Parser detector
      *
-     * @var \UA $parser
+     * @var \UAParser\Parser $parser
      *
      * @return \BrowserDetector\Input\Uaparser
      */
-    public function setParser(\UA $parser)
+    public function setParser(\UAParser\Parser $parser)
     {
         $this->parser = $parser;
 
@@ -87,9 +87,9 @@ class Uaparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->parser instanceof \UA)) {
+        if (!($this->parser instanceof \UAParser\Parser)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\UA'
+                'the parser object has to be an instance of \\UAParser\\Parser'
             );
         }
 
