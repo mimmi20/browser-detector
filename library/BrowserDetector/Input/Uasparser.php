@@ -91,12 +91,6 @@ class Uasparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->parser instanceof Parser)) {
-            throw new UnexpectedValueException(
-                'the parser object has to be an instance of \\UAS\\Parser'
-            );
-        }
-
         $parserResult = $this->initParser()->Parse($this->_agent);
 
         $result = new Result();

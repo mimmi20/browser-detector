@@ -87,12 +87,6 @@ class Uaparser extends Core
      */
     public function getBrowser()
     {
-        if (!($this->parser instanceof \UAParser\Parser)) {
-            throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\UAParser\\Parser'
-            );
-        }
-
         $parserResult = $this->initParser()->parse($this->_agent);
 
         $result = new Result();
@@ -119,13 +113,13 @@ class Uaparser extends Core
      * sets the main parameters to the parser
      *
      * @throws \UnexpectedValueException
-     * @return \UA
+     * @return \UAParser\Parser
      */
     private function initParser()
     {
-        if (!($this->parser instanceof \UA)) {
+        if (!($this->parser instanceof \UAParser\Parser)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\UA'
+                'the parser object has to be an instance of \\UAParser\\Parser'
             );
         }
 

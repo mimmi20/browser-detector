@@ -65,7 +65,7 @@ class Wurfl extends Core
     /**
      * the wurfl detector class
      *
-     * @var
+     * @var \Wurfl\Manager
      */
     private $wurflManager = null;
 
@@ -79,12 +79,12 @@ class Wurfl extends Core
     /**
      * sets the wurfl detection manager
      *
-     * @var Manager $wurfl
+     * @var \Wurfl\Manager $wurfl
      *
      * @throws \UnexpectedValueException
      * @return Wurfl
      */
-    public function setWurflManager($wurfl)
+    public function setWurflManager(Manager $wurfl)
     {
         if (!($wurfl instanceof Manager)) {
             throw new UnexpectedValueException(
@@ -112,6 +112,23 @@ class Wurfl extends Core
     }
 
     /**
+     * sets the main parameters to the parser
+     *
+     * @throws UnexpectedValueException
+     * @return Parser
+     */
+    private function initParser()
+    {
+        if (!($this->wurflManager instanceof Manager)) {
+            throw new UnexpectedValueException(
+                'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory'
+            );
+        }
+
+        return $this->wurflManager;
+    }
+
+    /**
      * Gets the information about the browser by User Agent
      *
      * @throws UnexpectedValueException
@@ -119,18 +136,12 @@ class Wurfl extends Core
      */
     public function getBrowser()
     {
-        if (!($this->wurflManager instanceof Manager)) {
-            throw new UnexpectedValueException(
-                'the $wurfl object has to be an instance of \\Wurfl\\ManagerFactory or an instance of \\Wurfl\\ManagerFactory'
-            );
-        }
-
         $marketingName = null;
-        $xhtmlLevel = 0;
+        $xhtmlLevel    = 0;
 
         try {
             $agent         = str_replace('Toolbar', '', $this->_agent);
-            $device        = $this->wurflManager->getDeviceForUserAgent($agent);
+            $device        = $this->initParser()->getDeviceForUserAgent($agent);
             $allProperties = $device->getAllCapabilities();
 
             $apiKey = $device->id;
