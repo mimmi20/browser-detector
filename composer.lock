@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "584647804f8f0d8a15c80cb88101edde",
+    "hash": "3b11baadc2df21eef8cdb6fa75e5e003",
     "packages": [
         {
             "name": "mimmi20/wurflcache",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/WurflCache.git",
-                "reference": "04991be58c7d6bd1fcfed3650899abb9375cc1d2"
+                "reference": "107e517ff8c347701efdf7c9f3c8def52db51821"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/WurflCache/zipball/04991be58c7d6bd1fcfed3650899abb9375cc1d2",
-                "reference": "04991be58c7d6bd1fcfed3650899abb9375cc1d2",
+                "url": "https://api.github.com/repos/mimmi20/WurflCache/zipball/107e517ff8c347701efdf7c9f3c8def52db51821",
+                "reference": "107e517ff8c347701efdf7c9f3c8def52db51821",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,13 @@
                 "doctrine/cache": "1.4.*@dev",
                 "ext-xdebug": "*",
                 "mikey179/vfsstream": "1.3.*@dev",
+                "pdepend/pdepend": "dev-master",
+                "phpmd/phpmd": "dev-master",
+                "phpunit/phpcov": "2.0.*@dev",
                 "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.*@dev",
+                "squizlabs/php_codesniffer": "dev-master",
                 "zendframework/zend-cache": "2.2.*",
                 "zetacomponents/cache": "dev-master"
             },
@@ -37,12 +43,24 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "WurflCache\\": "library/"
+                    "WurflCache\\": "library/",
+                    "WurflCacheTest\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Müller",
+                    "homepage": "https://github.com/mimmi20",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/mimmi20/WurflCache/graphs/contributors"
+                }
             ],
             "description": "the Cache Classes for the Wurfl PHP Library for PHP 5.3",
             "homepage": "https://github.com/mimmi20/WurflCache",
@@ -50,7 +68,7 @@
                 "Wurfl",
                 "cache"
             ],
-            "time": "2013-12-10 19:26:05"
+            "time": "2013-12-19 22:48:38"
         },
         {
             "name": "psr/log",
@@ -98,18 +116,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/phpbrowscap.git",
-                "reference": "b198313d5d466771691b503bb19c354388eb6b2b"
+                "reference": "029cb6a90df2ac2a499b660fd7215198a463a5f2"
             },
             "require": {
+                "mimmi20/file-loader": "1.1.*",
                 "php": ">=5.3.0",
                 "psr/log": "~1.0"
             },
             "require-dev": {
                 "ext-xdebug": "*",
                 "mikey179/vfsstream": "1.3.*@dev",
+                "pdepend/pdepend": "dev-master",
+                "phpmd/phpmd": "dev-master",
                 "phpunit/phpcov": "2.0.*@dev",
                 "phpunit/phpunit": "*",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.*@dev",
+                "squizlabs/php_codesniffer": "dev-master"
             },
             "suggest": {
                 "ext-curl": "to use curl requests to get the browscap.ini file",
@@ -138,7 +161,7 @@
                 "get_browser",
                 "user agent"
             ],
-            "time": "2013-12-13 21:39:41"
+            "time": "2013-12-21 18:49:46"
         },
         {
             "name": "guzzle/guzzle",
@@ -272,21 +295,78 @@
             "time": "2013-11-09 22:34:08"
         },
         {
+            "name": "mimmi20/file-loader",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mimmi20/FileLoader.git",
+                "reference": "3104784658131fdd5864e7c7e17ef33f339696b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mimmi20/FileLoader/zipball/3104784658131fdd5864e7c7e17ef33f339696b4",
+                "reference": "3104784658131fdd5864e7c7e17ef33f339696b4",
+                "shasum": ""
+            },
+            "require": {
+                "mimmi20/wurflcache": "1.1.*",
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "ext-xdebug": "*",
+                "mikey179/vfsstream": "1.3.*@dev",
+                "monolog/monolog": "1.*@dev",
+                "pdepend/pdepend": "dev-master",
+                "phpmd/phpmd": "dev-master",
+                "phpunit/phpcov": "2.0.*@dev",
+                "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.*@dev",
+                "squizlabs/php_codesniffer": "dev-master"
+            },
+            "suggest": {
+                "ext-curl": "to use curl requests to get the file"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "FileLoader\\": "library/",
+                    "FileLoaderTest\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Thomas Müller",
+                    "homepage": "https://github.com/mimmi20",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/mimmi20/FileLoader/graphs/contributors"
+                }
+            ],
+            "description": "a class to load remote or local files",
+            "homepage": "http://github.com/mimmi20/FileLoader",
+            "time": "2013-12-21 17:18:11"
+        },
+        {
             "name": "mimmi20/wurfl",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/Wurfl.git",
-                "reference": "282da68ecee7534eaf9d5198d09d94559e1a1c31"
+                "reference": "c13f5571aef849be3827b1cd0e21f0671ca927f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/282da68ecee7534eaf9d5198d09d94559e1a1c31",
-                "reference": "282da68ecee7534eaf9d5198d09d94559e1a1c31",
+                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/c13f5571aef849be3827b1cd0e21f0671ca927f8",
+                "reference": "c13f5571aef849be3827b1cd0e21f0671ca927f8",
                 "shasum": ""
             },
             "require": {
-                "mimmi20/wurflcache": "1.0.*",
+                "mimmi20/wurflcache": "1.1.*",
                 "php": ">=5.3.3",
                 "psr/log": "~1.0"
             },
@@ -294,9 +374,13 @@
                 "ext-xdebug": "*",
                 "mikey179/vfsstream": "1.3.*@dev",
                 "monolog/monolog": "1.*@dev",
+                "pdepend/pdepend": "dev-master",
+                "phpmd/phpmd": "dev-master",
                 "phpunit/phpcov": "2.0.*@dev",
                 "phpunit/phpunit": "*",
                 "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.*@dev",
+                "squizlabs/php_codesniffer": "dev-master",
                 "zendframework/zend-config": "2.2.*"
             },
             "suggest": {
@@ -307,7 +391,8 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Wurfl\\": "library/"
+                    "Wurfl\\": "library/",
+                    "WurflTest\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -324,7 +409,7 @@
                 "user agent",
                 "user-agent"
             ],
-            "time": "2013-12-15 22:41:36"
+            "time": "2013-12-21 17:26:12"
         },
         {
             "name": "monolog/monolog",
@@ -1604,7 +1689,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/UASparser.git",
-                "reference": "c490e8975c17e07fa54d25c59575119a0d8b7c00"
+                "reference": "1821917de47c0e177ba2748379518802b1389482"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -1612,10 +1697,14 @@
             "require-dev": {
                 "ext-xdebug": "*",
                 "mikey179/vfsstream": "1.3.*@dev",
+                "pdepend/pdepend": "dev-master",
+                "phpmd/phpmd": "dev-master",
                 "phpunit/phpcov": "2.0.*@dev",
                 "phpunit/phpunit": "*",
                 "phpunit/phpunit-selenium": "dev-master",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.*@dev",
+                "squizlabs/php_codesniffer": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1646,20 +1735,20 @@
                 "parser",
                 "user-agent"
             ],
-            "time": "2013-12-16 11:40:02"
+            "time": "2013-12-16 20:50:50"
         },
         {
             "name": "theseer/fdomdocument",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/fDOMDocument.git",
-                "reference": "871515e1a48aa216627ad7cbfc3516d0838578e1"
+                "reference": "f0875e4331b092e6059dd5570e89c9455db90537"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/fDOMDocument/zipball/871515e1a48aa216627ad7cbfc3516d0838578e1",
-                "reference": "871515e1a48aa216627ad7cbfc3516d0838578e1",
+                "url": "https://api.github.com/repos/theseer/fDOMDocument/zipball/f0875e4331b092e6059dd5570e89c9455db90537",
+                "reference": "f0875e4331b092e6059dd5570e89c9455db90537",
                 "shasum": ""
             },
             "require": {
@@ -1684,9 +1773,9 @@
                     "role": "lead"
                 }
             ],
-            "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convinience and to simplify the usage of DOM.",
+            "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convenience and to simplify the usage of DOM.",
             "homepage": "https://github.com/theseer/fDOMDocument",
-            "time": "2013-06-30 12:26:39"
+            "time": "2013-12-20 21:32:08"
         },
         {
             "name": "tobie/ua-parser",

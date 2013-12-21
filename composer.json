@@ -5,6 +5,21 @@
     "license": "BSD-3-Clause",
     "keywords": ["Browser", "user agent", "http", "parser", "user-agent"],
     "homepage": "https://github.com/mimmi20/BrowserDetector",
+    "authors": [
+        {
+            "name": "Thomas Müller",
+            "homepage": "https://github.com/mimmi20",
+            "role": "Developer"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/mimmi20/BrowserDetector/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mimmi20/BrowserDetector/issues",
+        "source": "https://github.com/mimmi20/BrowserDetector"
+    },
     "repositories": [
         {
             "type": "git",
@@ -21,7 +36,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "mimmi20/wurflcache": "1.0.*",
+        "mimmi20/wurflcache": "1.1.*",
         "psr/log": "~1.0"
     },
     "require-dev": {

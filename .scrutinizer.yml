@@ -71,8 +71,9 @@ tools:
                 - design
                 - controversial
         filter:
-            excluded_paths:
-                - 'vendor/*'
+            paths:
+                - 'library/*'
+                - 'tests/*'
 
 
     # Analyzes the size and structure of a PHP project.
