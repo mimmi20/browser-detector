@@ -70,7 +70,7 @@ class Scoutjet
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Scoutjet
      */
     public function __construct()
     {

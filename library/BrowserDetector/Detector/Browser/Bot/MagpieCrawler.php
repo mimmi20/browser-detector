@@ -70,7 +70,7 @@ class MagpieCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MagpieCrawler
      */
     public function __construct()
     {

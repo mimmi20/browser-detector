@@ -70,7 +70,7 @@ class TasapImageRobot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TasapImageRobot
      */
     public function __construct()
     {

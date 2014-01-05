@@ -70,7 +70,7 @@ class Realplayer
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Realplayer
      */
     public function __construct()
     {

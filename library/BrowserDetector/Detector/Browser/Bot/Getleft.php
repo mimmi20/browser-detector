@@ -70,7 +70,7 @@ class Getleft
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Getleft
      */
     public function __construct()
     {

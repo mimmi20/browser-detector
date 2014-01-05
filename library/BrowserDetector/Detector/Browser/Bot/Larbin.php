@@ -70,7 +70,7 @@ class Larbin
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Larbin
      */
     public function __construct()
     {

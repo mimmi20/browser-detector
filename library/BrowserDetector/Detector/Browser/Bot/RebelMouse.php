@@ -70,7 +70,7 @@ class RebelMouse
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\RebelMouse
      */
     public function __construct()
     {

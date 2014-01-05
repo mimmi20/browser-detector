@@ -70,7 +70,7 @@ class TuringMachine
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TuringMachine
      */
     public function __construct()
     {

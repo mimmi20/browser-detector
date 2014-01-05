@@ -70,7 +70,7 @@ class Steeler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Steeler
      */
     public function __construct()
     {

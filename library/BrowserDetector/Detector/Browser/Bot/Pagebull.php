@@ -70,7 +70,7 @@ class Pagebull
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Pagebull
      */
     public function __construct()
     {

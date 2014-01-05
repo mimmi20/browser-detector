@@ -70,7 +70,7 @@ class MailRuBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MailRuBot
      */
     public function __construct()
     {

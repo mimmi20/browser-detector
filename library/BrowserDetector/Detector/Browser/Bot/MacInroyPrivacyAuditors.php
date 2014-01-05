@@ -70,7 +70,7 @@ class MacInroyPrivacyAuditors
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MacInroyPrivacyAuditors
      */
     public function __construct()
     {

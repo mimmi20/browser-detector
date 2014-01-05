@@ -70,7 +70,7 @@ class Nutch
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Nutch
      */
     public function __construct()
     {

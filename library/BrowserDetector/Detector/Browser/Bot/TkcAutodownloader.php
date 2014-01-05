@@ -70,7 +70,7 @@ class TkcAutodownloader
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TkcAutodownloader
      */
     public function __construct()
     {

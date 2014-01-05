@@ -70,7 +70,7 @@ class Godzilla
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Godzilla
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class LingueeBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\LingueeBot
      */
     public function __construct()
     {

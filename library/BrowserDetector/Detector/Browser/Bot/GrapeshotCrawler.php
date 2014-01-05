@@ -70,7 +70,7 @@ class GrapeshotCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GrapeshotCrawler
      */
     public function __construct()
     {
@@ -111,7 +111,7 @@ class GrapeshotCrawler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GrapeshotCrawler'))) {
+        if (!$this->utils->checkIfContains(array('GrapeshotCrawler', 'grapeFX', 'grapeshot.co.uk'))) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class GrapeshotCrawler
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('GrapeshotCrawler');
+        $searches = array('GrapeshotCrawler', 'grapeFX');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

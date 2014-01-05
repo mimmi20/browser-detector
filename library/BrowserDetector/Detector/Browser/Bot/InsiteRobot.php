@@ -73,7 +73,7 @@ class InsiteRobot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\InsiteRobot
      */
     public function __construct()
     {

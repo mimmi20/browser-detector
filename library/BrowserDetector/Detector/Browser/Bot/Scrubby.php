@@ -70,7 +70,7 @@ class Scrubby
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Scrubby
      */
     public function __construct()
     {

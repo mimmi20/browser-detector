@@ -70,7 +70,7 @@ class GoogleFeedfetcher
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GoogleFeedfetcher
      */
     public function __construct()
     {

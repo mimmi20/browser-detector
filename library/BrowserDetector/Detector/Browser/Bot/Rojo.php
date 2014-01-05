@@ -70,7 +70,7 @@ class Rojo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Rojo
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class Mj12bot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Mj12bot
      */
     public function __construct()
     {

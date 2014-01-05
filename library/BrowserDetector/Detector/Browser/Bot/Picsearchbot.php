@@ -70,7 +70,7 @@ class Picsearchbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Picsearchbot
      */
     public function __construct()
     {

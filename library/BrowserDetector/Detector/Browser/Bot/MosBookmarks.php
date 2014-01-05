@@ -73,7 +73,7 @@ class MosBookmarks
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MosBookmarks
      */
     public function __construct()
     {

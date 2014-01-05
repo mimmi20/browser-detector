@@ -70,7 +70,7 @@ class Viralheat
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Viralheat
      */
     public function __construct()
     {

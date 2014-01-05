@@ -70,7 +70,7 @@ class GoogleAdsbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GoogleAdsbot
      */
     public function __construct()
     {

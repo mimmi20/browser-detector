@@ -70,7 +70,7 @@ class LinkCheckerBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\LinkCheckerBot
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class Naver
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Naver
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class SemagerBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SemagerBot
      */
     public function __construct()
     {

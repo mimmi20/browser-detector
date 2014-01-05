@@ -70,7 +70,7 @@ class IisBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\IisBot
      */
     public function __construct()
     {

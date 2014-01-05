@@ -70,7 +70,7 @@ class Scraper
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Scraper
      */
     public function __construct()
     {

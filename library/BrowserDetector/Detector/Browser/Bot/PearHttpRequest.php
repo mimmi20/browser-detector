@@ -70,7 +70,7 @@ class PearHttpRequest
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\PearHttpRequest
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class MsSearch
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MsSearch
      */
     public function __construct()
     {

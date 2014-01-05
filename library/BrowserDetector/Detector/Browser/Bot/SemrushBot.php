@@ -70,7 +70,7 @@ class SemrushBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SemrushBot
      */
     public function __construct()
     {

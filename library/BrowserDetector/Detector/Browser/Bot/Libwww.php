@@ -70,7 +70,7 @@ class Libwww
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Libwww
      */
     public function __construct()
     {

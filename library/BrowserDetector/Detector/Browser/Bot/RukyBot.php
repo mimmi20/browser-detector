@@ -70,7 +70,7 @@ class RukyBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\RukyBot
      */
     public function __construct()
     {

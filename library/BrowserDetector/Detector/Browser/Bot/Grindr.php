@@ -70,7 +70,7 @@ class Grindr
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Grindr
      */
     public function __construct()
     {

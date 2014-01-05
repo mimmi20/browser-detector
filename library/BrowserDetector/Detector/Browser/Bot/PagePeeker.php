@@ -70,7 +70,7 @@ class PagePeeker
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\PagePeeker
      */
     public function __construct()
     {

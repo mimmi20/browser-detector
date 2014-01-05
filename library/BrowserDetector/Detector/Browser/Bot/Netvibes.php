@@ -69,7 +69,7 @@ class Netvibes
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Netvibes
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class HitLeapViewer
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\HitLeapViewer
      */
     public function __construct()
     {

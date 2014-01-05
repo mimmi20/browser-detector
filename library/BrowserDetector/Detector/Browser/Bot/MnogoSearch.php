@@ -70,7 +70,7 @@ class MnogoSearch
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MnogoSearch
      */
     public function __construct()
     {

@@ -43,11 +43,11 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class ThemeSearchAndExtractionCrawler
+class NikiBot
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -70,7 +70,7 @@ class ThemeSearchAndExtractionCrawler
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\ThemeSearchAndExtractionCrawler
+     * @return \BrowserDetector\Detector\Browser\Bot\NikiBot
      */
     public function __construct()
     {
@@ -81,7 +81,7 @@ class ThemeSearchAndExtractionCrawler
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'ThemeSearchAndExtractionCrawler',
+            'mobile_browser'               => 'NikiBot',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
@@ -111,7 +111,7 @@ class ThemeSearchAndExtractionCrawler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ThemeSearchAndExtraction-crawler')) {
+        if (!$this->utils->checkIfContains('niki-bot')) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class ThemeSearchAndExtractionCrawler
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('ThemeSearchAndExtraction\-crawler');
+        $searches = array('niki-bot');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

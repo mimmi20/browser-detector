@@ -70,7 +70,7 @@ class Unisterbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Unisterbot
      */
     public function __construct()
     {

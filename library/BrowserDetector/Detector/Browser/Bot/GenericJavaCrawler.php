@@ -70,7 +70,7 @@ class GenericJavaCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler
      */
     public function __construct()
     {

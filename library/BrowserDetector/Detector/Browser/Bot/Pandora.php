@@ -70,7 +70,7 @@ class Pandora
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Pandora
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class TinEyeBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TinEyeBot
      */
     public function __construct()
     {

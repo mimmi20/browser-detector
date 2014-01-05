@@ -70,7 +70,7 @@ class Nagios
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Nagios
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class Thunderstone
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Thunderstone
      */
     public function __construct()
     {

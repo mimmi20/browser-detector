@@ -70,7 +70,7 @@ class TweetedTimesBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TweetedTimesBot
      */
     public function __construct()
     {

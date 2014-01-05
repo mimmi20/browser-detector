@@ -69,7 +69,7 @@ class GoogleAppEngine
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GoogleAppEngine
      */
     public function __construct()
     {

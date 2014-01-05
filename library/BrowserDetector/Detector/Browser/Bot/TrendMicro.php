@@ -70,7 +70,7 @@ class TrendMicro
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TrendMicro
      */
     public function __construct()
     {

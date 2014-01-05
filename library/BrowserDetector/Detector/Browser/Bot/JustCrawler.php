@@ -70,7 +70,7 @@ class JustCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\JustCrawler
      */
     public function __construct()
     {

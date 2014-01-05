@@ -70,7 +70,7 @@ class GoogleFontAnalysis
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GoogleFontAnalysis
      */
     public function __construct()
     {

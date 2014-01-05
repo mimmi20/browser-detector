@@ -70,7 +70,7 @@ class Shopsalad
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Shopsalad
      */
     public function __construct()
     {

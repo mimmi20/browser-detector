@@ -70,7 +70,7 @@ class Snapbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Snapbot
      */
     public function __construct()
     {

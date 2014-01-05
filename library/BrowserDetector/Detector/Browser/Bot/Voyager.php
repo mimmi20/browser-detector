@@ -70,7 +70,7 @@ class Voyager
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Voyager
      */
     public function __construct()
     {

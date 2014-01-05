@@ -69,7 +69,7 @@ class Sistrix
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Sistrix
      */
     public function __construct()
     {

@@ -4,14 +4,19 @@ php:
   - 5.5
   - 5.4
   - 5.3
+  - hhvm
+
+matrix:
+  allow_failures:
+    - php: hhvm
 
 before_script:
   - composer self-update
   - composer install --dev --prefer-source
   - php vendor/autoload.php
+  - mkdir -p build/logs
 
 script:
-  - mkdir -p build/logs
   - phpunit --configuration travis.phpunit.xml.dist --colors --verbose
 
 after_script:

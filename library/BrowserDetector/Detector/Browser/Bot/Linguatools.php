@@ -70,7 +70,7 @@ class Linguatools
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Linguatools
      */
     public function __construct()
     {

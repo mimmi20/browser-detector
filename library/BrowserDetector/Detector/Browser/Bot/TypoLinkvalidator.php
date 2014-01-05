@@ -70,7 +70,7 @@ class TypoLinkvalidator
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TypoLinkvalidator
      */
     public function __construct()
     {

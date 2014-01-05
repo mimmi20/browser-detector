@@ -70,7 +70,7 @@ class SiteExplorer
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SiteExplorer
      */
     public function __construct()
     {

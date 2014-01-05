@@ -73,7 +73,7 @@ class GomezAgent
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GomezAgent
      */
     public function __construct()
     {

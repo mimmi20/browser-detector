@@ -70,7 +70,7 @@ class ShowyouBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ShowyouBot
      */
     public function __construct()
     {

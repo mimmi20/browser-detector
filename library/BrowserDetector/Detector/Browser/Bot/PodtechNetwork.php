@@ -70,7 +70,7 @@ class PodtechNetwork
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\PodtechNetwork
      */
     public function __construct()
     {

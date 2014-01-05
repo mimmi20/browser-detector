@@ -70,7 +70,7 @@ class Sqwidgebot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Sqwidgebot
      */
     public function __construct()
     {

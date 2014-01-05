@@ -70,7 +70,7 @@ class SurveyBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SurveyBot
      */
     public function __construct()
     {

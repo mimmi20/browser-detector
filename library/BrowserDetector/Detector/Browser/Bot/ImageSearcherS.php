@@ -70,7 +70,7 @@ class ImageSearcherS
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ImageSearcherS
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class SquidWall
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SquidWall
      */
     public function __construct()
     {

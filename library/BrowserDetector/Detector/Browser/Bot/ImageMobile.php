@@ -70,7 +70,7 @@ class ImageMobile
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ImageMobile
      */
     public function __construct()
     {

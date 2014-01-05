@@ -70,7 +70,7 @@ class Voilabot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Voilabot
      */
     public function __construct()
     {

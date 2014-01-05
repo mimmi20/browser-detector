@@ -69,7 +69,7 @@ class GeneralBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GeneralBot
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class TumblrRssSyndication
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TumblrRssSyndication
      */
     public function __construct()
     {

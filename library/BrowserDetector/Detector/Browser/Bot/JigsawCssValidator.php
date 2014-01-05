@@ -70,7 +70,7 @@ class JigsawCssValidator
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\JigsawCssValidator
      */
     public function __construct()
     {

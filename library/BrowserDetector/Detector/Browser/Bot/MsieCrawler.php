@@ -70,7 +70,7 @@ class MsieCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MsieCrawler
      */
     public function __construct()
     {

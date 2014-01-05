@@ -70,7 +70,7 @@ class Scorpionbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Scorpionbot
      */
     public function __construct()
     {

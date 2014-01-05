@@ -70,7 +70,7 @@ class Spiderlytics
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Spiderlytics
      */
     public function __construct()
     {

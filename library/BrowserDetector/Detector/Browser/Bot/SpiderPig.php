@@ -73,7 +73,7 @@ class SpiderPig
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SpiderPig
      */
     public function __construct()
     {
@@ -148,6 +148,10 @@ class SpiderPig
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
      *
      * @return DeviceHandler
      */

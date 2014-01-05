@@ -70,7 +70,7 @@ class Sosospider
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Sosospider
      */
     public function __construct()
     {

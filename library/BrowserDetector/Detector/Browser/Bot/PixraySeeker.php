@@ -70,7 +70,7 @@ class PixraySeeker
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\PixraySeeker
      */
     public function __construct()
     {

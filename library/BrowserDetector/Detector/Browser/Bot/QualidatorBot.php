@@ -70,7 +70,7 @@ class QualidatorBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\QualidatorBot
      */
     public function __construct()
     {

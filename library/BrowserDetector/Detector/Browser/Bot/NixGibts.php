@@ -70,7 +70,7 @@ class NixGibts
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\NixGibts
      */
     public function __construct()
     {

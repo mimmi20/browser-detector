@@ -70,7 +70,7 @@ class Vagabondo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Vagabondo
      */
     public function __construct()
     {

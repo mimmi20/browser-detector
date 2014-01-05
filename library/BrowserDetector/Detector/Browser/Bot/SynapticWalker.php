@@ -70,7 +70,7 @@ class SynapticWalker
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SynapticWalker
      */
     public function __construct()
     {

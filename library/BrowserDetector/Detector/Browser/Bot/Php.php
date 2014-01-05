@@ -70,7 +70,7 @@ class Php
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Php
      */
     public function __construct()
     {

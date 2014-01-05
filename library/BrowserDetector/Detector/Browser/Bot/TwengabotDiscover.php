@@ -70,7 +70,7 @@ class TwengabotDiscover
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TwengabotDiscover
      */
     public function __construct()
     {

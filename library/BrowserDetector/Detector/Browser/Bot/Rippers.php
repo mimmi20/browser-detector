@@ -70,7 +70,7 @@ class Rippers
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Rippers
      */
     public function __construct()
     {

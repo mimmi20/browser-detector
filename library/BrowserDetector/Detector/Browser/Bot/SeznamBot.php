@@ -70,7 +70,7 @@ class SeznamBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SeznamBot
      */
     public function __construct()
     {

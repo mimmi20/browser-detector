@@ -69,7 +69,7 @@ class Seokicks
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Seokicks
      */
     public function __construct()
     {

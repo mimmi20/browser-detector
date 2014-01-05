@@ -70,7 +70,7 @@ class RamblerMail
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\RamblerMail
      */
     public function __construct()
     {

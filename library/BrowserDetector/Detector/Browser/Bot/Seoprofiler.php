@@ -70,7 +70,7 @@ class Seoprofiler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Seoprofiler
      */
     public function __construct()
     {

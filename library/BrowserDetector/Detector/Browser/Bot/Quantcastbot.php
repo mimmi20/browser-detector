@@ -70,7 +70,7 @@ class Quantcastbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Quantcastbot
      */
     public function __construct()
     {

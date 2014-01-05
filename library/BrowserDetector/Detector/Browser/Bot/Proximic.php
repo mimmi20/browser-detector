@@ -70,7 +70,7 @@ class Proximic
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Proximic
      */
     public function __construct()
     {

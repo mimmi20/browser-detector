@@ -70,7 +70,7 @@ class StrategicBoardBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\StrategicBoardBot
      */
     public function __construct()
     {

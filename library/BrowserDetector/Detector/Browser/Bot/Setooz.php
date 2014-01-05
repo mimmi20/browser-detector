@@ -70,7 +70,7 @@ class Setooz
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Setooz
      */
     public function __construct()
     {

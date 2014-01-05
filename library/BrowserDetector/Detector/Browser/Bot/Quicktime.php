@@ -70,7 +70,7 @@ class Quicktime
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Quicktime
      */
     public function __construct()
     {

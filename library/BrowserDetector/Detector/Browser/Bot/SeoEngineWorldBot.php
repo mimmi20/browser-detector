@@ -70,7 +70,7 @@ class SeoEngineWorldBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SeoEngineWorldBot
      */
     public function __construct()
     {

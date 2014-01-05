@@ -70,7 +70,7 @@ class UoftdbExperiment
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\UoftdbExperiment
      */
     public function __construct()
     {

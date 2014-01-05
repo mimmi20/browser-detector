@@ -70,7 +70,7 @@ class Genieo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Genieo
      */
     public function __construct()
     {

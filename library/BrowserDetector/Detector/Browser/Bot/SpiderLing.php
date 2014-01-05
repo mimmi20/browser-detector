@@ -70,7 +70,7 @@ class SpiderLing
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SpiderLing
      */
     public function __construct()
     {

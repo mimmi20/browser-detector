@@ -70,7 +70,7 @@ class SpaceBison
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SpaceBison
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class Sindice
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Sindice
      */
     public function __construct()
     {

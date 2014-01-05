@@ -70,7 +70,7 @@ class Tailrank
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Tailrank
      */
     public function __construct()
     {

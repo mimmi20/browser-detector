@@ -69,7 +69,7 @@ class NodeJsHttpRequest
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\NodeJsHttpRequest
      */
     public function __construct()
     {

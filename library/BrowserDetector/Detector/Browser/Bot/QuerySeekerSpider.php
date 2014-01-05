@@ -70,7 +70,7 @@ class QuerySeekerSpider
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\QuerySeekerSpider
      */
     public function __construct()
     {

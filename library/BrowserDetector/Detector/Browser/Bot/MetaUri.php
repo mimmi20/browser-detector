@@ -70,7 +70,7 @@ class MetaUri
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MetaUri
      */
     public function __construct()
     {

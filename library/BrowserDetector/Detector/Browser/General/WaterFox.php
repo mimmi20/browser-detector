@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Browser\Bot;
+namespace BrowserDetector\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -43,7 +43,7 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class ThemeSearchAndExtractionCrawler
+class WaterFox
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -70,7 +70,7 @@ class ThemeSearchAndExtractionCrawler
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\ThemeSearchAndExtractionCrawler
+     * @return \BrowserDetector\Detector\Browser\General\WaterFox
      */
     public function __construct()
     {
@@ -78,18 +78,18 @@ class ThemeSearchAndExtractionCrawler
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
+            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'ThemeSearchAndExtractionCrawler',
+            'mobile_browser'               => 'WaterFox',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Mozilla(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
-            'can_skip_aligned_link_row'    => false,
-            'device_claims_web_support'    => false,
+            'can_skip_aligned_link_row'    => true,
+            'device_claims_web_support'    => true,
 
             // pdf
             'pdf_support'                  => true,
@@ -111,7 +111,7 @@ class ThemeSearchAndExtractionCrawler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ThemeSearchAndExtraction-crawler')) {
+        if (!$this->utils->checkIfContains('WaterFox')) {
             return false;
         }
 
@@ -127,8 +127,9 @@ class ThemeSearchAndExtractionCrawler
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('ThemeSearchAndExtraction\-crawler');
+        $searches = array('WaterFox');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -144,18 +145,18 @@ class ThemeSearchAndExtractionCrawler
      */
     public function getWeight()
     {
-        return 3;
+        return 10;
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $handler = new UnknownEngine();
+        $handler = new Gecko();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

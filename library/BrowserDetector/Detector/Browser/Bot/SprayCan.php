@@ -70,7 +70,7 @@ class SprayCan
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SprayCan
      */
     public function __construct()
     {

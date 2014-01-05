@@ -153,6 +153,7 @@ class Firefox
             'Firebird',
             'IceDragon',
             'TenFourFox',
+            'WaterFox',
             //Nutch
             'Nutch',
             'CazoodleBot',

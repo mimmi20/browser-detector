@@ -70,7 +70,7 @@ class KomodiaBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\KomodiaBot
      */
     public function __construct()
     {

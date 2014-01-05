@@ -70,7 +70,7 @@ class LinkdexComBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\LinkdexComBot
      */
     public function __construct()
     {

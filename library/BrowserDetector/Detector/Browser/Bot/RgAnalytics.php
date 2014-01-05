@@ -70,7 +70,7 @@ class RgAnalytics
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\RgAnalytics
      */
     public function __construct()
     {

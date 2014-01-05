@@ -69,7 +69,7 @@ class ThumbSniper
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ThumbSniper
      */
     public function __construct()
     {

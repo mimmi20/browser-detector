@@ -70,7 +70,7 @@ class Rogerbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Rogerbot
      */
     public function __construct()
     {

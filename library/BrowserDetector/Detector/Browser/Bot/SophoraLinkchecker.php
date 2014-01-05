@@ -70,7 +70,7 @@ class SophoraLinkchecker
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SophoraLinkchecker
      */
     public function __construct()
     {

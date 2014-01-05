@@ -70,7 +70,7 @@ class SeznamScreenshotGenerator
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SeznamScreenshotGenerator
      */
     public function __construct()
     {

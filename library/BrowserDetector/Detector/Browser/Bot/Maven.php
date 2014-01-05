@@ -70,7 +70,7 @@ class Maven
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Maven
      */
     public function __construct()
     {

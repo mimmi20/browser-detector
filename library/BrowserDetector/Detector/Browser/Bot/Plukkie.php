@@ -70,7 +70,7 @@ class Plukkie
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Plukkie
      */
     public function __construct()
     {

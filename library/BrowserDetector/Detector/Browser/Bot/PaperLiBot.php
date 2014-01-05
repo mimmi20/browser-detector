@@ -70,7 +70,7 @@ class PaperLiBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\PaperLiBot
      */
     public function __construct()
     {

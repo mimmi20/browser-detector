@@ -69,7 +69,7 @@ class GSLFbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GSLFbot
      */
     public function __construct()
     {

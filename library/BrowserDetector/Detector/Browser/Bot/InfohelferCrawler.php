@@ -70,7 +70,7 @@ class InfohelferCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\InfohelferCrawler
      */
     public function __construct()
     {

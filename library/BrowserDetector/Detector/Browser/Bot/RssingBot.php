@@ -69,7 +69,7 @@ class RssingBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\RssingBot
      */
     public function __construct()
     {

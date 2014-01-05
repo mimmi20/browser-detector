@@ -70,7 +70,7 @@ class UnwindFetchor
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\UnwindFetchor
      */
     public function __construct()
     {

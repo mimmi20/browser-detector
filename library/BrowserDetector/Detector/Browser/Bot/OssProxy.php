@@ -70,7 +70,7 @@ class OssProxy
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\OssProxy
      */
     public function __construct()
     {

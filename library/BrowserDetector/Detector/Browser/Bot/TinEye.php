@@ -73,7 +73,7 @@ class TinEye
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TinEye
      */
     public function __construct()
     {

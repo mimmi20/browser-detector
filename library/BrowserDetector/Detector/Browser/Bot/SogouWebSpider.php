@@ -70,7 +70,7 @@ class SogouWebSpider
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SogouWebSpider
      */
     public function __construct()
     {

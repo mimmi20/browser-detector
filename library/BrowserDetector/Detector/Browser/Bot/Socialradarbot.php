@@ -70,7 +70,7 @@ class Socialradarbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Socialradarbot
      */
     public function __construct()
     {

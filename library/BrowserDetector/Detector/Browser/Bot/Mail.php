@@ -70,7 +70,7 @@ class Mail
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Mail
      */
     public function __construct()
     {

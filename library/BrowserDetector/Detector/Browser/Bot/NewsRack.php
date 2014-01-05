@@ -70,7 +70,7 @@ class NewsRack
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\NewsRack
      */
     public function __construct()
     {

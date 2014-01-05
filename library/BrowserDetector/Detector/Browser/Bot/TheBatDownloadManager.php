@@ -70,7 +70,7 @@ class TheBatDownloadManager
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TheBatDownloadManager
      */
     public function __construct()
     {

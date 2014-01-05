@@ -70,7 +70,7 @@ class SsearchCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SsearchCrawler
      */
     public function __construct()
     {

@@ -73,7 +73,7 @@ class Mechanize
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Mechanize
      */
     public function __construct()
     {

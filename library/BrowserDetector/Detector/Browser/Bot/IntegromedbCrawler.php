@@ -70,7 +70,7 @@ class IntegromedbCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\IntegromedbCrawler
      */
     public function __construct()
     {

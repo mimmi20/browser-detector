@@ -70,7 +70,7 @@ class Snowtape
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Snowtape
      */
     public function __construct()
     {

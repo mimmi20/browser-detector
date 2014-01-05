@@ -70,7 +70,7 @@ class SnkScreenshotBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SnkScreenshotBot
      */
     public function __construct()
     {

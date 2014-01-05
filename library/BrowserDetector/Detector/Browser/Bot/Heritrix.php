@@ -70,7 +70,7 @@ class Heritrix
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Heritrix
      */
     public function __construct()
     {

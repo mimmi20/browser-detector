@@ -70,7 +70,7 @@ class IcjobsCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\IcjobsCrawler
      */
     public function __construct()
     {

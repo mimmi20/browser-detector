@@ -69,7 +69,7 @@ class Searchmetrics
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Searchmetrics
      */
     public function __construct()
     {

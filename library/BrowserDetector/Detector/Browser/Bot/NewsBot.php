@@ -70,7 +70,7 @@ class NewsBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\NewsBot
      */
     public function __construct()
     {

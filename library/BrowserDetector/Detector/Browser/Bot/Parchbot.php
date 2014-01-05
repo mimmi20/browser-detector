@@ -70,7 +70,7 @@ class Parchbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Parchbot
      */
     public function __construct()
     {

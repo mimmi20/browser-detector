@@ -70,7 +70,7 @@ class SpellCheckBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\SpellCheckBot
      */
     public function __construct()
     {

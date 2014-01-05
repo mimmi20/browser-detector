@@ -70,7 +70,7 @@ class Qihoo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Qihoo
      */
     public function __construct()
     {

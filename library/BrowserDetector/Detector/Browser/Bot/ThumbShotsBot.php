@@ -69,7 +69,7 @@ class ThumbShotsBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ThumbShotsBot
      */
     public function __construct()
     {

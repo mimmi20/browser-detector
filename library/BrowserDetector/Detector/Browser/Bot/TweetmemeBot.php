@@ -70,7 +70,7 @@ class TweetmemeBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TweetmemeBot
      */
     public function __construct()
     {

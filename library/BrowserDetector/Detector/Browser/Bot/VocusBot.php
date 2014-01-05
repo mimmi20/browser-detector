@@ -70,7 +70,7 @@ class VocusBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\VocusBot
      */
     public function __construct()
     {

@@ -69,7 +69,7 @@ class UnisterPortale
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\UnisterPortale
      */
     public function __construct()
     {

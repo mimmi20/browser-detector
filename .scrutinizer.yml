@@ -5,7 +5,7 @@ tools:
     # Code Coverage
     external_code_coverage:
         enabled: true
-        timeout: 300
+        timeout: 600
         filter:
             excluded_paths:
                 - 'vendor/*'

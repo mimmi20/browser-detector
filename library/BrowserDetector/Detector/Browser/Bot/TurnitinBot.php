@@ -70,7 +70,7 @@ class TurnitinBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\TurnitinBot
      */
     public function __construct()
     {

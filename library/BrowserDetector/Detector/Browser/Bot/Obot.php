@@ -70,7 +70,7 @@ class Obot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Obot
      */
     public function __construct()
     {

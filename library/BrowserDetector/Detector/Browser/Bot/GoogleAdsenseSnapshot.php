@@ -70,7 +70,7 @@ class GoogleAdsenseSnapshot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GoogleAdsenseSnapshot
      */
     public function __construct()
     {

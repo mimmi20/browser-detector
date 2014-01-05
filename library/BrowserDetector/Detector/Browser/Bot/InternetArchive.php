@@ -70,7 +70,7 @@ class InternetArchive
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\InternetArchive
      */
     public function __construct()
     {

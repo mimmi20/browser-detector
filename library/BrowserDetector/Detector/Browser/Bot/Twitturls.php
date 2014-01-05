@@ -70,7 +70,7 @@ class Twitturls
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Twitturls
      */
     public function __construct()
     {

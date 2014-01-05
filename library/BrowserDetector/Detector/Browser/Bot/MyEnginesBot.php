@@ -70,7 +70,7 @@ class MyEnginesBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\MyEnginesBot
      */
     public function __construct()
     {

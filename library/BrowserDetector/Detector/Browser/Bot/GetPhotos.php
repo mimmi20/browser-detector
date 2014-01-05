@@ -70,7 +70,7 @@ class GetPhotos
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\GetPhotos
      */
     public function __construct()
     {
