@@ -95,13 +95,13 @@ class Uaparser extends Core
         $mapper = new InputMapper();
 
         $browserName    = $mapper->mapBrowserName($parserResult->ua->family);
-        $browserVersion = $mapper->mapBrowserVersion($parserResult->ua->toVersionString, $browserName);
+        $browserVersion = $mapper->mapBrowserVersion($parserResult->ua->toVersion(), $browserName);
 
         $result->setCapability('mobile_browser', $browserName);
         $result->setCapability('mobile_browser_version', $browserVersion);
 
         $osName    = $mapper->mapOsName($parserResult->os->family);
-        $osVersion = $mapper->mapOsVersion($parserResult->os->toVersionString, $osName);
+        $osVersion = $mapper->mapOsVersion($parserResult->os->toVersion(), $osName);
 
         $result->setCapability('device_os', $osName);
         $result->setCapability('device_os_version', $osVersion);
