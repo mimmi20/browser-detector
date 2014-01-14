@@ -10,28 +10,28 @@ namespace BrowserDetector\Detector\Os;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -41,13 +41,16 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\OsInterface;
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Browser\Mobile\Android;
+use BrowserDetector\Detector\Browser\Mobile\Chrome;
+use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -69,16 +72,16 @@ class Maemo
      * @var array
      */
     protected $properties = array();
-    
+
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\Maemo
      */
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->properties = array(
             // os
             'device_os'              => 'Linux Smartphone OS (Maemo)',
@@ -87,7 +90,7 @@ class Maemo
             'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
         );
     }
-    
+
     /**
      * Returns true if this handler can handle the given $useragent
      *
@@ -98,30 +101,26 @@ class Maemo
         if (!$this->utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
             return false;
         }
-        
+
         return true;
     }
-    
+
     /**
      * detects the browser version from the given user agent
-     *
-     * @param string $this->_useragent
-     *
-     * @return string
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
-        
+
         $searches = array('Maemo');
-        
+
         $this->setCapability(
-            'device_os_version', 
+            'device_os_version',
             $detector->detectVersion($searches)
         );
     }
-    
+
     /**
      * gets the weight of the handler, which is used for sorting
      *
@@ -131,26 +130,26 @@ class Maemo
     {
         return 9342;
     }
-    
+
     /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\Android(),
-            new \BrowserDetector\Detector\Browser\Mobile\Chrome(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMobile(),
+            new Android(),
+            new Chrome(),
+            new OperaMobile(),
         );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
+
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
+        $chain->setDefaultHandler(new UnknownBrowser());
+
         return $chain->detect();
     }
 }

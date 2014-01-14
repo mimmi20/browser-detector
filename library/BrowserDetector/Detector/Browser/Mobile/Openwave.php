@@ -41,16 +41,12 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\DeviceHandler;
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
-use \BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * MotorolaUserAgentHandler
@@ -84,29 +80,29 @@ class Openwave
 
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Browser(), // not in wurfl
+            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
 
             // browser
-            'mobile_browser'              => 'Openwave Mobile Browser',
-            'mobile_browser_version'      => null,
-            'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Myriad(), // not in wurfl
-            'mobile_browser_modus'        => null, // not in wurfl
+            'mobile_browser'               => 'Openwave Mobile Browser',
+            'mobile_browser_version'       => null,
+            'mobile_browser_bits'          => null, // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Myriad(), // not in wurfl
+            'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
-            'can_skip_aligned_link_row' => true,
-            'device_claims_web_support' => false,
+            'can_skip_aligned_link_row'    => true,
+            'device_claims_web_support'    => false,
 
             // pdf
-            'pdf_support' => true,
+            'pdf_support'                  => true,
 
             // bugs
-            'empty_option_value_support' => true,
+            'empty_option_value_support'   => true,
             'basic_authentication_support' => true,
-            'post_method_support' => true,
+            'post_method_support'          => true,
 
             // rss
-            'rss_support' => false,
+            'rss_support'                  => false,
         );
     }
 
@@ -142,8 +138,8 @@ class Openwave
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
 
         $searches = array('UP\.Browser', 'UP', 'OpenWave');
 

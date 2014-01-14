@@ -3,38 +3,58 @@
     "description": "Library for PHP 5.3 to detect Browsers and Devices",
     "type": "library",
     "license": "BSD-3-Clause",
-    "keywords": ["Browser","user agent","http","parser","user-agent"],
+    "keywords": ["Browser", "user agent", "http", "parser", "user-agent"],
     "homepage": "https://github.com/mimmi20/BrowserDetector",
+    "authors": [
+        {
+            "name": "Thomas Müller",
+            "homepage": "https://github.com/mimmi20",
+            "role": "Developer"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/mimmi20/BrowserDetector/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mimmi20/BrowserDetector/issues",
+        "source": "https://github.com/mimmi20/BrowserDetector"
+    },
     "repositories": [
         {
             "type": "git",
-            "url":  "https://github.com/mimmi20/phpbrowscap.git"
+            "url": "https://github.com/mimmi20/phpbrowscap.git"
         },
         {
             "type": "git",
-            "url":  "https://github.com/mimmi20/UASparser.git"
+            "url": "https://github.com/mimmi20/UASparser.git"
         },
         {
             "type": "git",
-            "url":  "https://github.com/mimmi20/kairos-uaparser.git"
+            "url":  "https://github.com/mimmi20/ua-parser.git"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "garetjax/phpbrowscap": "dev-master",
+        "mimmi20/wurflcache": "1.1.*",
         "psr/log": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
-        "ext-xdebug": "*",
         "synchro/uasparser": "dev-master",
-        "dubcanada/uaparser": "dev-master"
+        "tobie/ua-parser": "dev-master",
+        "mimmi20/wurfl": "dev-master",
+        "garetjax/phpbrowscap": "dev-master",
+        "monolog/monolog": "1.*@dev",
+        "mikey179/vfsStream": "1.3.*@dev",
+        "satooshi/php-coveralls": "dev-master",
+        "phpunit/phpcov": "2.0.*@dev"
     },
     "suggest": {
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
-        "dubcanada/uaparser": "for using the ua parser as alternative parser",
-        "zendframework/zend-cache": "if you want to use zend cache"
+        "tobie/ua-parser": "for using the ua parser as alternative parser",
+        "garetjax/phpbrowscap": "for using the browscap ini parser as alternative parser"
     },
     "autoload": {
         "psr-0": {

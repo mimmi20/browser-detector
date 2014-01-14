@@ -10,28 +10,28 @@ namespace BrowserDetector\Detector\Browser\General;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  *
@@ -42,17 +42,16 @@ namespace BrowserDetector\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Helper\Safari as SafariHelper;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\DeviceHandler;
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
-use \BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -71,7 +70,7 @@ class Android
      * @var array
      */
     protected $properties = array();
-    
+
     /**
      * Class Constructor
      *
@@ -80,35 +79,35 @@ class Android
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Browser(), // not in wurfl
-            
+            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
+
             // browser
-            'mobile_browser'              => 'Android Webkit',
-            'mobile_browser_version'      => null,
-            'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Google(), // not in wurfl
-            'mobile_browser_modus'        => null, // not in wurfl
-            
+            'mobile_browser'               => 'Android Webkit',
+            'mobile_browser_version'       => null,
+            'mobile_browser_bits'          => null, // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
+            'mobile_browser_modus'         => null, // not in wurfl
+
             // product info
-            'can_skip_aligned_link_row' => true,
-            'device_claims_web_support' => true,
-            
+            'can_skip_aligned_link_row'    => true,
+            'device_claims_web_support'    => true,
+
             // pdf
-            'pdf_support' => true,
-            
+            'pdf_support'                  => true,
+
             // bugs
-            'empty_option_value_support' => true,
+            'empty_option_value_support'   => true,
             'basic_authentication_support' => true,
-            'post_method_support' => true,
-            
+            'post_method_support'          => true,
+
             // rss
-            'rss_support' => false,
+            'rss_support'                  => false,
         );
     }
-    
+
     /**
      * Returns true if this handler can handle the given user agent
      *
@@ -117,14 +116,14 @@ class Android
     public function canHandle()
     {
         $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->_useragent);
-        
+        $safariHelper->setUserAgent($this->useragent);
+
         if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;'))
             && !$safariHelper->isMobileAsSafari()
         ) {
             return false;
         }
-        
+
         $noAndroid = array(
             'AndroidDownloadManager',
             'BlackBerry',
@@ -139,7 +138,7 @@ class Android
             'Fennec',
             'Firefox',
             'FlyFlow',
-            'iPad', 
+            'iPad',
             'iPhone',
             'Maxthon',
             'MQQBrowser',
@@ -156,14 +155,14 @@ class Android
             'i9988_custom',
             'i9999_custom'
         );
-        
+
         if ($this->utils->checkIfContains($noAndroid)) {
             return false;
         }
-        
+
         return true;
     }
-    
+
     /**
      * detects the browser version from the given user agent
      *
@@ -172,85 +171,85 @@ class Android
     protected function _detectVersion()
     {
         $detector = new \BrowserDetector\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-        
+
         $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->_useragent);
-        
+        $safariHelper->setUserAgent($this->useragent);
+
         $doMatch = preg_match(
-            '/Version\/([\d\.]+)/', $this->_useragent, $matches
+            '/Version\/([\d\.]+)/', $this->useragent, $matches
         );
-        
+
         if ($doMatch) {
             $this->setCapability(
-                'mobile_browser_version', 
+                'mobile_browser_version',
                 $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
-            
+
             return $this;
         }
-        
+
         $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/', $this->_useragent, $matches
+            '/Safari\/([\d\.]+)/', $this->useragent, $matches
         );
-        
+
         if ($doMatch) {
             $this->setCapability(
-                'mobile_browser_version', 
+                'mobile_browser_version',
                 $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
-            
+
             return $this;
         }
-        
+
         $doMatch = preg_match(
-            '/AppleWebKit\/([\d\.]+)/', $this->_useragent, $matches
+            '/AppleWebKit\/([\d\.]+)/', $this->useragent, $matches
         );
-        
+
         if ($doMatch) {
             $this->setCapability(
-                'mobile_browser_version', 
+                'mobile_browser_version',
                 $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
-            
+
             return $this;
         }
-        
+
         $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/', $this->_useragent, $matches
+            '/MobileSafari\/([\d\.]+)/', $this->useragent, $matches
         );
-        
+
         if ($doMatch) {
             $this->setCapability(
-                'mobile_browser_version', 
+                'mobile_browser_version',
                 $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
             );
-            
+
             return $this;
         }
-        
+
         $doMatch = preg_match(
-            '/Android\/([\d\.]+)/', $this->_useragent, $matches
+            '/Android\/([\d\.]+)/', $this->useragent, $matches
         );
-        
+
         if ($doMatch) {
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion($matches[1])
             );
-            
+
             return $this;
         }
-        
+
         $searches = array('Version', 'Safari', 'JUC \(Linux\; U\;');
-        
+
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
-        
+
         return $this;
     }
-    
+
     /**
      * gets the weight of the handler, which is used for sorting
      *
@@ -260,32 +259,36 @@ class Android
     {
         return 38951839;
     }
-    
+
     /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
         $handler = new \BrowserDetector\Detector\Engine\Webkit();
-        $handler->setUseragent($this->_useragent);
-        
+        $handler->setUseragent($this->useragent);
+
         return $handler->detect();
     }
-    
+
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
-    {
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+    ) {
         parent::detectDependProperties($engine, $os, $device);
-        
+
         $engine->setCapability('html_wi_imode_compact_generic', false);
         $engine->setCapability('xhtml_avoid_accesskeys', true);
         $engine->setCapability('xhtml_supports_forms_in_table', true);
@@ -294,24 +297,24 @@ class Android
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
         $engine->setCapability('xhtml_supports_invisible_text', false);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
-        
+
         $osVersion = $os->getCapability('device_os_version')->getVersion(
             Version::MAJORMINOR
         );
-        
+
         if ($osVersion <= 2.3) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
             $engine->setCapability('bmp', true);
         }
-        
+
         $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(
             Version::MAJORMINOR
         );
-        
+
         if ($browserVersion <= 2.1) {
             $engine->setCapability('jqm_grade', 'C');
         }
-        
+
         return $this;
     }
 }

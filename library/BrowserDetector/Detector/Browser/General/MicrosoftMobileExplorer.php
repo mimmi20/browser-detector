@@ -10,28 +10,28 @@ namespace BrowserDetector\Detector\Browser\General;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -41,16 +41,15 @@ namespace BrowserDetector\Detector\Browser\General;
  * @version   SVN: $Id$
  */
 
-use \BrowserDetector\Detector\BrowserHandler;
-use \BrowserDetector\Helper\Utils;
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\DeviceHandler;
-use \BrowserDetector\Detector\OsHandler;
-use \BrowserDetector\Detector\Version;
-use \BrowserDetector\Detector\Company;
-use \BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +68,7 @@ class MicrosoftMobileExplorer
      * @var array
      */
     protected $properties = array();
-    
+
     /**
      * Class Constructor
      *
@@ -78,35 +77,35 @@ class MicrosoftMobileExplorer
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->properties = array(
             // kind of device
-            'browser_type' => new BrowserType\Browser(), // not in wurfl
-            
+            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
+
             // browser
-            'mobile_browser'              => 'IEMobile',
-            'mobile_browser_version'      => null,
-            'mobile_browser_bits'         => null, // not in wurfl
-            'mobile_browser_manufacturer' => new Company\Microsoft(), // not in wurfl
-            'mobile_browser_modus'        => null, // not in wurfl
-            
+            'mobile_browser'               => 'IEMobile',
+            'mobile_browser_version'       => null,
+            'mobile_browser_bits'          => null, // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
+            'mobile_browser_modus'         => null, // not in wurfl
+
             // product info
-            'can_skip_aligned_link_row' => true,
-            'device_claims_web_support' => true,
-            
+            'can_skip_aligned_link_row'    => true,
+            'device_claims_web_support'    => true,
+
             // pdf
-            'pdf_support' => true,
-            
+            'pdf_support'                  => true,
+
             // bugs
-            'empty_option_value_support' => true,
+            'empty_option_value_support'   => true,
             'basic_authentication_support' => true,
-            'post_method_support' => true,
-            
+            'post_method_support'          => true,
+
             // rss
-            'rss_support' => true,
+            'rss_support'                  => true,
         );
     }
-    
+
     /**
      * Returns true if this handler can handle the given user agent
      *
@@ -117,7 +116,7 @@ class MicrosoftMobileExplorer
         if (!$this->utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
             return false;
         }
-        
+
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
             'Maxthon',
@@ -137,14 +136,14 @@ class MicrosoftMobileExplorer
             'WebTV',
             'ArgClrInt'
         );
-        
+
         if ($this->utils->checkIfContains($isNotReallyAnIE)) {
             return false;
         }
-        
+
         return true;
     }
-    
+
     /**
      * detects the browser version from the given user agent
      *
@@ -152,46 +151,46 @@ class MicrosoftMobileExplorer
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
-        $detector->setUserAgent($this->_useragent);
-        
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion('9.0')
             );
             return $this;
         }
-        
+
         if ($this->utils->checkIfContains('WPDesktop')) {
             $this->setCapability(
                 'mobile_browser_version', $detector->setVersion('10.0')
             );
             return $this;
         }
-        
+
         $searches = array('IEMobile', 'MSIE');
-        
+
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
         );
-        
+
         return $this;
     }
-    
+
     /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Os\Handler
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
         $handler = new \BrowserDetector\Detector\Engine\Trident();
-        $handler->setUseragent($this->_useragent);
-        
+        $handler->setUseragent($this->useragent);
+
         return $handler->detect();
     }
-    
+
     /**
      * gets the weight of the handler, which is used for sorting
      *
@@ -201,7 +200,7 @@ class MicrosoftMobileExplorer
     {
         return 828786;
     }
-    
+
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
@@ -209,10 +208,10 @@ class MicrosoftMobileExplorer
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device)
-    {
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+    ) {
         parent::detectDependProperties($engine, $os, $device);
-        
+
         $engine->setCapability('html_web_3_2', false);
         $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
         $engine->setCapability('chtml_table_support', false);
@@ -241,18 +240,18 @@ class MicrosoftMobileExplorer
         $engine->setCapability('css_spriting', true);
         $engine->setCapability('supports_background_sounds', false);
         $engine->setCapability('supports_java_applets', false);
-        
-        $version = (float) $this->getCapability('mobile_browser_version')->getVersion(
+
+        $version = (float)$this->getCapability('mobile_browser_version')->getVersion(
             Version::MAJORMINOR
         );
-        
+
         if ($version >= 8) {
             $engine->setCapability('tiff', true);
             $engine->setCapability('image_inlining', true);
         }
-        
+
         $engine->setCapability('is_sencha_touch_ok', false);
-        
+
         if ($version >= 10) {
             $engine->setCapability('jqm_grade', 'A');
             $engine->setCapability('is_sencha_touch_ok', true);
@@ -263,11 +262,11 @@ class MicrosoftMobileExplorer
         } else {
             $engine->setCapability('jqm_grade', 'C');
         }
-        
+
         if ($this->utils->checkIfContains('WPDesktop')) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
-        
+
         return $this;
     }
 }

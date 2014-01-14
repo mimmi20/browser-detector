@@ -12,28 +12,28 @@ namespace BrowserDetector\Input;
  *
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- * * Redistributions of source code must retain the above copyright notice, 
+ * * Redistributions of source code must retain the above copyright notice,
  *   this list of conditions and the following disclaimer.
- * * Redistributions in binary form must reproduce the above copyright notice, 
- *   this list of conditions and the following disclaimer in the documentation 
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
  *   and/or other materials provided with the distribution.
- * * Neither the name of the authors nor the names of its contributors may be 
- *   used to endorse or promote products derived from this software without 
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
  *   specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @category  BrowserDetector
@@ -42,12 +42,20 @@ namespace BrowserDetector\Input;
  * @copyright 2012-2013 Thomas Mueller
  * @version   SVN: $Id$
  */
-use \BrowserDetector\Detector\MatcherInterface;
-use \BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use \BrowserDetector\Detector\MatcherInterface\OsInterface;
-use \BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use \BrowserDetector\Detector\EngineHandler;
-use \BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
+use BrowserDetector\Detector\Device\GeneralBot;
+use BrowserDetector\Detector\Device\GeneralDesktop;
+use BrowserDetector\Detector\Device\GeneralMobile;
+use BrowserDetector\Detector\Device\GeneralTv;
+use BrowserDetector\Detector\Device\UnknownDevice;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Result;
 
 /**
  * Browser detection class
@@ -63,28 +71,28 @@ class UserAgent extends Core
     /**
      * the detected browser
      *
-     * @var Stdclass
+     * @var \BrowserDetector\Detector\BrowserHandler
      */
     private $browser = null;
-    
+
     /**
      * the detected browser engine
      *
-     * @var Stdclass
+     * @var \BrowserDetector\Detector\EngineHandler
      */
     private $engine = null;
-    
+
     /**
      * the detected platform
      *
-     * @var Stdclass
+     * @var \BrowserDetector\Detector\OsHandler
      */
     private $os = null;
-    
+
     /**
      * the detected device
      *
-     * @var Stdclass
+     * @var MatcherInterface\DeviceInterface
      */
     private $device = null;
 
@@ -96,122 +104,120 @@ class UserAgent extends Core
     public function getBrowser()
     {
         $this->device = $this->detectDevice();
-        
+
         // detect the os which runs on the device
         $this->os = $this->device->detectOs();
         if (!($this->os instanceof OsInterface)) {
             $this->os = $this->detectOs();
         }
-        
+
         // detect the browser which is used
         $this->browser = $this->os->detectBrowser();
-        
+
         if (!($this->browser instanceof BrowserInterface)
-            || ($this->os instanceof \BrowserDetector\Detector\Os\Unknown
-            && is_callable(array($this->device, 'detectBrowser')))
+            || ($this->os instanceof UnknownOs
+                && is_callable(array($this->device, 'detectBrowser')))
         ) {
             $this->browser = $this->device->detectBrowser();
         }
-        
+
         if (!($this->browser instanceof BrowserInterface)) {
             $this->browser = $this->detectBrowser();
         }
-        
+
         // detect the engine which is used in the browser
         $this->engine = $this->browser->detectEngine();
         if (!($this->engine instanceof EngineHandler)) {
             $this->engine = $this->detectEngine();
         }
-        
+
         $this->device->detectDependProperties(
             $this->browser, $this->engine, $this->os
         );
-        
+
         $result = new Result();
         $result->setDetectionResult(
             $this->device, $this->os, $this->browser, $this->engine
         );
         $result->setCapability('useragent', $this->_agent);
-        
+
         return $result;
     }
 
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @return 
+     * @return
      */
     private function detectEngine()
     {
         $handlersToUse = array();
-        
-        $chain = new \BrowserDetector\Detector\Chain();
+
+        $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Engine');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\Unknown());
-        
+        $chain->setDefaultHandler(new UnknownEngine());
+
         return $chain->detect();
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return 
+     * @return \BrowserDetector\Detector\BrowserHandler
      */
     private function detectBrowser()
     {
-        $handlersToUse = array(
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
+        $handlersToUse = array();
+
+        $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\Unknown());
-        
+        $chain->setDefaultHandler(new UnknownBrowser());
+
         return $chain->detect();
     }
 
     /**
      * Gets the information about the os by User Agent
      *
-     * @return 
+     * @return
      */
     private function detectOs()
     {
-        $handlersToUse = array(
-        );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
+        $handlersToUse = array();
+
+        $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Os\Unknown());
-        
+        $chain->setDefaultHandler(new UnknownOs());
+
         return $chain->detect();
     }
 
     /**
      * Gets the information about the device by User Agent
      *
-     * @return UserAgent
+     * @return MatcherInterface\DeviceInterface
      */
     private function detectDevice()
     {
         $handlersToUse = array(
-            new \BrowserDetector\Detector\Device\GeneralBot(),
-            new \BrowserDetector\Detector\Device\GeneralMobile(),
-            new \BrowserDetector\Detector\Device\GeneralTv(),
-            new \BrowserDetector\Detector\Device\GeneralDesktop()
+            new GeneralBot(),
+            new GeneralMobile(),
+            new GeneralTv(),
+            new GeneralDesktop()
         );
-        
-        $chain = new \BrowserDetector\Detector\Chain();
+
+        $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Device');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Device\Unknown());
-        
+        $chain->setDefaultHandler(new UnknownDevice());
+
         return $chain->detect();
     }
 }
