@@ -42,7 +42,9 @@ namespace BrowserDetector;
      * @copyright 2012-2013 Thomas Mueller
      * @version   SVN: $Id$
      */
+
 use BrowserDetector\Input\Browscap;
+use BrowserDetector\Input\BrowscapDetector;
 use BrowserDetector\Input\Uaparser;
 use BrowserDetector\Input\Uasparser;
 use BrowserDetector\Input\UserAgent;
@@ -69,6 +71,7 @@ class BrowserDetector
     const INTERFACE_WURFL_CLOUD  = 4;
     const INTERFACE_UAPARSER     = 5;
     const INTERFACE_UASPARSER    = 6;
+    const INTERFACE_BROWSCAP_DETECTOR = 7;
 
     /**
      * a \WurflCache\Adapter\AdapterInterface object
@@ -192,7 +195,8 @@ class BrowserDetector
             self::INTERFACE_WURFL_FILE,
             self::INTERFACE_WURFL_CLOUD,
             self::INTERFACE_UAPARSER,
-            self::INTERFACE_UASPARSER
+            self::INTERFACE_UASPARSER,
+            self::INTERFACE_BROWSCAP_DETECTOR
         );
 
         if (!is_int($interface) || !in_array($interface, $allowedInterfaces)) {
@@ -216,6 +220,9 @@ class BrowserDetector
             break;
         case self::INTERFACE_UASPARSER:
             $this->interface = new Uasparser();
+            break;
+        case self::INTERFACE_BROWSCAP_DETECTOR:
+            $this->interface = new BrowscapDetector();
             break;
         default:
             throw new UnexpectedValueException(

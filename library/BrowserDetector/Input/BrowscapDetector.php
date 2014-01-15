@@ -56,12 +56,12 @@ use BrowserDetector\Helper\InputMapper;
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class Browscap extends Core
+class BrowscapDetector extends Core
 {
     /**
      * the UAParser class
      *
-     * @var \phpbrowscap\Browscap
+     * @var \phpbrowscap\Detector
      */
     private $parser = null;
 
@@ -77,9 +77,9 @@ class Browscap extends Core
      *
      * @var \phpbrowscap\Browscap $parser
      *
-     * @return \phpbrowscap\Browscap
+     * @return \phpbrowscap\Detector
      */
-    public function setParser(\phpbrowscap\Browscap $parser)
+    public function setParser(\phpbrowscap\Detector $parser)
     {
         $this->parser = $parser;
 
@@ -113,14 +113,23 @@ class Browscap extends Core
      */
     private function initParser()
     {
-        if (!($this->parser instanceof \phpbrowscap\Browscap)) {
+        if (!($this->parser instanceof \phpbrowscap\Detector)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\phpbrowscap\\Browscap'
+                'the parser object has to be an instance of \\phpbrowscap\\Detector'
             );
         }
 
+        if (null !== $this->cache) {
+            $this->parser->setCache($this->cache)
+                ->setCachePrefix($this->cachePrefix);
+        }
+
         if (null !== $this->localFile) {
-            $this->parser->localfile = $this->localFile;
+            $this->parser->setLocaleFile($this->localFile);
+        }
+
+        if (null !== $this->logger) {
+            $this->setLogger($this->logger);
         }
 
         return $this->parser;
