@@ -160,6 +160,9 @@ class Netscape
             'K-Meleon',
             // other rendering engines
             'Trident',
+            // other applications
+            'LotusNotes/',
+            'Lotus-Notes/',
             // Fakes
             'Mac; Mac OS '
         );
