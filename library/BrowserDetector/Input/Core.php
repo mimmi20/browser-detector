@@ -42,6 +42,7 @@ namespace BrowserDetector\Input;
      * @copyright 2012-2013 Thomas Mueller
      * @version   SVN: $Id$
      */
+
 use BrowserDetector\BrowserDetector;
 use phpbrowscap\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;

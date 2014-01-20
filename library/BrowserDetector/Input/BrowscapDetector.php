@@ -43,9 +43,12 @@ namespace BrowserDetector\Input;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\Bits as BitsDetector;use BrowserDetector\Detector\Company;use BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Bits as BitsDetector;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -120,8 +123,13 @@ class BrowscapDetector extends Core
         }
 
         if (null !== $this->cache) {
-            $this->parser->setCache($this->cache)
-                ->setCachePrefix($this->cachePrefix);
+            $cache = $this->parser->getCache();
+
+            if (!($cache instanceof AdapterInterface)) {
+                $this->parser->setCache($this->cache);
+            }
+
+            $this->parser->setCachePrefix($this->cachePrefix);
         }
 
         if (null !== $this->localFile) {
