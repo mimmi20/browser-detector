@@ -127,7 +127,6 @@ class Maxthon
             'PaleMoon',
             'Flock',
             // other Browsers
-            'Linux',
             'MSOffice',
             'Outlook',
             'IEMobile',
