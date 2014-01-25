@@ -190,17 +190,17 @@ class Android
             return $this;
         }
 
-        if (!$this->getCapability('device_os_version')->getVersion()) {
+        if (!$this->getCapability('mobile_browser_version')->getVersion()) {
             if ($this->utils->checkIfContains('android eclair', true)) {
                 $this->setCapability(
-                    'device_os_version',
+                    'mobile_browser_version',
                     $detector->setVersion('2.1')
                 );
             }
 
             if ($this->utils->checkIfContains('gingerbread', true)) {
                 $this->setCapability(
-                    'device_os_version',
+                    'mobile_browser_version',
                     $detector->setVersion('2.3')
                 );
             }
