@@ -167,7 +167,7 @@ class Maxthon
 
         $detector->setDefaulVersion('2.0');
 
-        $searches = array('Maxthon');
+        $searches = array('Maxthon', 'Version');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

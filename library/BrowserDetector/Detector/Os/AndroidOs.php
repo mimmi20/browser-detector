@@ -170,14 +170,6 @@ class AndroidOs
             return;
         }
 
-        if ($this->utils->checkIfContains('android eclair', true)) {
-            $this->setCapability(
-                'device_os_version',
-                $detector->setVersion('2.1')
-            );
-            return;
-        }
-
         $searches = array(
             'Android android', 'Android AndroidHouse Team',
             'Android WildPuzzleROM v8 froyo', 'Android', 'JUC\(Linux;U;',
@@ -188,6 +180,22 @@ class AndroidOs
             'device_os_version',
             $detector->detectVersion($searches)
         );
+
+        if (!$this->getCapability('device_os_version')->getVersion()) {
+            if ($this->utils->checkIfContains('android eclair', true)) {
+                $this->setCapability(
+                    'device_os_version',
+                    $detector->setVersion('2.1')
+                );
+            }
+
+            if ($this->utils->checkIfContains('gingerbread', true)) {
+                $this->setCapability(
+                    'device_os_version',
+                    $detector->setVersion('2.3')
+                );
+            }
+        }
     }
 
     /**
