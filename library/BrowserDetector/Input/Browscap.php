@@ -574,9 +574,9 @@ class Browscap extends Core
             if (!empty($completeVersion)
                 && '0.0' != $completeVersion
             ) {
-                $properties['Browser_Full'] = trim($browserName . ' ' . $completeVersion);
+                $properties['Browser_FullName'] = trim($browserName . ' ' . $completeVersion);
             } else {
-                $properties['Browser_Full'] = $browserName;
+                $properties['Browser_FullName'] = $browserName;
             }
 
             $syndicationReader = $properties['isSyndicationReader'];
