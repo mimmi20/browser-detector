@@ -155,7 +155,7 @@ class Bot80Legs
      */
     public function detectEngine()
     {
-        $handler = new Gecko();
+        $handler = new \BrowserDetector\Detector\Engine\Gecko();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();
