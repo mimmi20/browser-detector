@@ -525,10 +525,6 @@ class Browscap extends Core
 
             $completeVersion = $properties['Version'];
 
-            if (!empty($properties['Browser_Version'])) {
-                $completeVersion = $properties['Browser_Version'];
-            }
-
             $version->setVersion($completeVersion);
             $version->setUserAgent($key);
 
@@ -542,80 +538,16 @@ class Browscap extends Core
 
             $browserName = $properties['Browser'];
 
-            if (!empty($properties['Browser_Name'])) {
-                $browserName = $properties['Browser_Name'];
-            }
-
             $properties['Version'] = $completeVersion;
             $properties['Browser'] = $browserName;
 
             if (!empty($properties['Browser_Type'])) {
                 $browserType = $properties['Browser_Type'];
-            } elseif (!empty($properties['Category'])) {
-                $browserType = $properties['Category'];
             } else {
                 $browserType = 'all';
             }
 
-            $properties['Category']     = $browserType;
             $properties['Browser_Type'] = $browserType;
-
-            if (!empty($properties['Browser_Type'])) {
-                $browserSubType = $properties['Browser_Type'];
-            } elseif (!empty($properties['SubCategory'])) {
-                $browserSubType = $properties['SubCategory'];
-            } else {
-                $browserSubType = 'all';
-            }
-
-            $properties['SubCategory']     = $browserSubType;
-            $properties['Browser_SubType'] = $browserSubType;
-
-            if (!empty($completeVersion)
-                && '0.0' != $completeVersion
-            ) {
-                $properties['Browser_FullName'] = trim($browserName . ' ' . $completeVersion);
-            } else {
-                $properties['Browser_FullName'] = $browserName;
-            }
-
-            $syndicationReader = $properties['isSyndicationReader'];
-
-            if (array_key_exists('Browser_isSyndicationReader', $properties)) {
-                $syndicationReader = $properties['Browser_isSyndicationReader'];
-            }
-
-            $properties['isSyndicationReader']         = $syndicationReader;
-            $properties['Browser_isSyndicationReader'] = $syndicationReader;
-
-            if (array_key_exists('Browser_isBanned', $properties)) {
-                $isBanned = $properties['Browser_isBanned'];
-            } elseif (array_key_exists('isBanned', $properties)) {
-                $isBanned = $properties['isBanned'];
-            } else {
-                $isBanned = false;
-            }
-
-            $properties['isBanned']         = $isBanned;
-            $properties['Browser_isBanned'] = $isBanned;
-
-            if (!empty($properties['Browser_isBot'])) {
-                $crawler               = $properties['Browser_isBot'];
-                $properties['Crawler'] = $crawler;
-            } else {
-                $crawler = $properties['Crawler'];
-            }
-
-            $properties['Crawler']       = $crawler;
-            $properties['Browser_isBot'] = $crawler;
-
-            if (array_key_exists('Browser_isAlpha', $properties)) {
-                $properties['Alpha'] = $properties['Browser_isAlpha'];
-            }
-
-            if (array_key_exists('Browser_isBeta', $properties)) {
-                $properties['Beta'] = $properties['Browser_isBeta'];
-            }
 
             $browserBitHelper->setUserAgent($key);
             $osBitHelper->setUserAgent($key);
@@ -630,8 +562,7 @@ class Browscap extends Core
             $platform = $properties['Platform'];
 
             if (!empty($properties['Platform_Name'])) {
-                $platform               = $properties['Platform_Name'];
-                $properties['Platform'] = $platform;
+                $platform = $properties['Platform_Name'];
             }
 
             if ('Windows' == $platform) {
@@ -644,46 +575,10 @@ class Browscap extends Core
                 }
             }
 
-            if ('0.0' != $properties['Platform_Version']) {
-                $properties['Platform_Full'] = trim($platform . ' ' . $properties['Platform_Version']);
-            } else {
-                $properties['Platform_Full'] = $platform;
-            }
+            $properties['Device_isMobileDevice'] = $properties['isMobileDevice'];
+            $properties['Device_isTablet']       = $properties['isTablet'];
 
-            if (!empty($properties['RenderingEngine_Version'])
-                && !empty($properties['RenderingEngine_Name'])
-                && '0.0' != $properties['RenderingEngine_Version']
-            ) {
-                $properties['RenderingEngine_Full'] = trim(
-                    $properties['RenderingEngine_Name'] . ' ' . $properties['RenderingEngine_Version']
-                );
-            } elseif (!empty($properties['RenderingEngine_Name'])) {
-                $properties['RenderingEngine_Full'] = $properties['RenderingEngine_Name'];
-            } else {
-                $properties['RenderingEngine_Full'] = '';
-            }
-
-            $mobileDevice = $properties['isMobileDevice'];
-
-            if (!empty($properties['Device_isMobileDevice'])) {
-                $mobileDevice = $properties['Device_isMobileDevice'];
-            }
-
-            $properties['isMobileDevice']        = $mobileDevice;
-            $properties['Device_isMobileDevice'] = $mobileDevice;
-
-            if (!empty($properties['Device_isTablet'])) {
-                $isTablet = $properties['Device_isTablet'];
-            } elseif (!empty($properties['isTablet'])) {
-                $isTablet = $properties['isTablet'];
-            } else {
-                $isTablet = false;
-            }
-
-            $properties['Device_isTablet'] = $isTablet;
-            $properties['isTablet']        = $isTablet;
-
-            if ($isTablet) {
+            if ($properties['Device_isTablet']) {
                 $properties['Device_Type'] = 'Tablet';
             }
 
@@ -777,6 +672,7 @@ class Browscap extends Core
                     $properties['Device_isTablet']       = false;
                     $properties['Device_isDesktop']      = false;
                     $properties['Device_isTv']           = false;
+                    $properties['Platform']              = 'SymbianOS';
                     $properties['Platform_Name']         = 'Symbian OS';
                     $properties['Platform_Maker']        = 'Symbian Foundation';
                     $properties['Device_Type']           = 'Mobile Phone';
