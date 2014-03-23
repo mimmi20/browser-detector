@@ -354,10 +354,12 @@ class InputMapper
         case 'winxp':
         case 'win7':
         case 'win8':
+        case 'win8.1':
         case 'winvista':
         case 'win2000':
         case 'win2003':
         case 'win98':
+        case 'win95':
             $osName = 'Windows';
             break;
         case 'winphone7':

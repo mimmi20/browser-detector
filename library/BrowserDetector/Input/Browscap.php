@@ -1298,15 +1298,15 @@ class Browscap extends Core
                 $sort7, SORT_ASC, // Parents
                 $sort8, SORT_ASC, // Parent first
                 $sort2, SORT_ASC, // Browser Name
-                $sort3, SORT_NUMERIC, // Browser Version::Major
-                $sort13, SORT_NUMERIC, // Browser Version::Minor
-                $sort14, SORT_NUMERIC, // Browser Version::Micro
+                $sort3, SORT_ASC, SORT_NUMERIC, // Browser Version::Major
+                $sort13, SORT_ASC, SORT_NUMERIC, // Browser Version::Minor
+                $sort14, SORT_ASC, SORT_NUMERIC, // Browser Version::Micro
                 $sort4, SORT_ASC, // Platform Name
-                $sort6, SORT_NUMERIC, // Platform Version::Major
-                $sort15, SORT_NUMERIC, // Platform Version::Minor
-                $sort16, SORT_NUMERIC, // Platform Version::Micro
-                $sort9, SORT_NUMERIC, // Platform Bits
-                $sort5, SORT_NUMERIC, // Browser Bits
+                $sort6, SORT_ASC, SORT_NUMERIC, // Platform Version::Major
+                $sort15, SORT_ASC, SORT_NUMERIC, // Platform Version::Minor
+                $sort16, SORT_ASC, SORT_NUMERIC, // Platform Version::Micro
+                $sort9, SORT_ASC, SORT_NUMERIC, // Platform Bits
+                $sort5, SORT_ASC, SORT_NUMERIC, // Browser Bits
                 $sort11, SORT_ASC, // Device Hersteller
                 $sort12, SORT_ASC, // Device Name
                 $sort10, SORT_ASC,
@@ -1320,32 +1320,32 @@ class Browscap extends Core
         fwrite(
             $fp,
             ';;; Provided courtesy of https://browsers.garykeith.com
-            ;;; Created on Tuesday, March 12, 2013 at 3:03 AM UTC
+;;; Created on Tuesday, March 12, 2013 at 3:03 AM UTC
 
-            ;;; Keep up with the latest goings-on with the project:
-            ;;; Follow us on Twitter <https://twitter.com/browscap>, or...
-            ;;; Like us on Facebook <https://facebook.com/browscap>, or...
-            ;;; Collaborate on GitHub <https://github.com/GaryKeith/browscap>, or...
-            ;;; Discuss on Google Groups <https://groups.google.com/d/forum/browscap>.
+;;; Keep up with the latest goings-on with the project:
+;;; Follow us on Twitter <https://twitter.com/browscap>, or...
+;;; Like us on Facebook <https://facebook.com/browscap>, or...
+;;; Collaborate on GitHub <https://github.com/GaryKeith/browscap>, or...
+;;; Discuss on Google Groups <https://groups.google.com/d/forum/browscap>.
 
-            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browscap Version
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browscap Version
 
-            [GJK_Browscap_Version]
-            Version=5020
-            Released=$Date: 2013-09-11 21:09:35 +0200 (Mi, 11 Sep 2013) $
+[GJK_Browscap_Version]
+Version=5020
+Released=$Date: 2013-09-11 21:09:35 +0200 (Mi, 11 Sep 2013) $
 
-            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; known Platforms
-            ;
-            ;unknown - not detected
-            ;Dalvik  - VM on Andoid
-            ;Darwin  - Free BSD based Hybridkernel OS for the MAC
-            ;Bada    - a OS developt by Samsung
-            ;Mac OS X
-            ;MacPPC
-            ;WAP
-            ;Solaris
-            ;Polaris - a free clone of Solaris
-            ;' . "\n"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; known Platforms
+;
+;unknown - not detected
+;Dalvik  - VM on Andoid
+;Darwin  - Free BSD based Hybridkernel OS for the MAC
+;Bada    - a OS developt by Samsung
+;Mac OS X
+;MacPPC
+;WAP
+;Solaris
+;Polaris - a free clone of Solaris
+;' . "\n"
         );
 
         // shrink
@@ -1374,7 +1374,7 @@ class Browscap extends Core
             }
 
             $propertiesToOutput = $properties;
-
+/*
             foreach ($propertiesToOutput as $property => $value) {
                 if (!isset($parent[$property])) {
                     continue;
@@ -1386,7 +1386,7 @@ class Browscap extends Core
 
                 unset($propertiesToOutput[$property]);
             }
-
+/**/
             // create output - php
 
             if ('DefaultProperties' == $key
@@ -1395,31 +1395,14 @@ class Browscap extends Core
             ) {
                 fwrite(
                     $fp,
-                    ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; '
-                    . $key . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'
-                    . "\n\n"
+                    ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $key. "\n\n"
                 );
-            }
-
-            $parents = (empty($properties['Parents']) ? '' : $properties['Parents'] . ',') . $key;
-
-            if ('DefaultProperties' != $key
-                && !empty($properties['Parent'])
-                && 'DefaultProperties' != $properties['Parent']
-                && !empty($groups[$parents])
-                && count($groups[$parents])
-            ) {
-                if (false !== strpos($key, ' on ')) {
-                    fwrite($fp, '; ' . $key . "\n\n");
-                } else {
-                    fwrite($fp, ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $key . "\n\n");
-                }
             }
 
             fwrite($fp, '[' . $key . ']' . "\n");
 
             foreach ($allProperties as $property) {
-                if (!isset($propertiesToOutput[$property]) || 'Parents' === $property) {
+                if ('Parents' === $property) {
                     continue;
                 }
 
@@ -1430,7 +1413,6 @@ class Browscap extends Core
                 } elseif (false === $value || $value === 'false') {
                     $valuePhp = 'false';
                 } elseif ('0' === $value
-                    || 'Parent' === $property
                     || 'Version' === $property
                     || 'MajorVer' === $property
                     || 'MinorVer' === $property

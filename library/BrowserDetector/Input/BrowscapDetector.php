@@ -173,10 +173,8 @@ class BrowscapDetector extends Core
             );
         }
 
-        $browserName    = $mapper->mapBrowserName($browserName);
-        $browserVersion = $mapper->mapBrowserVersion(
-            $browserVersion, $browserName
-        );
+        $browserName    = trim($browserName);
+        $browserVersion = trim($browserVersion);
 
         $browserBits  = $this->detectProperty(
             $parserResult, 'Browser_Bits', true, $browserName
@@ -219,18 +217,14 @@ class BrowscapDetector extends Core
 
         $result->setCapability('mobile_browser_icon', $browserIcon);
 
-        if (!empty($parserResult['Platform_Name'])) {
-            $platform = $this->detectProperty($parserResult, 'Platform_Name');
-        } else {
-            $platform = $this->detectProperty($parserResult, 'Platform');
-        }
+        $platform = $this->detectProperty($parserResult, 'Platform');
 
         $platformVersion = $this->detectProperty(
             $parserResult, 'Platform_Version', true, $platform
         );
 
-        $platformVersion = $mapper->mapOsVersion(trim($platformVersion), trim($platform));
-        $platform        = $mapper->mapOsName(trim($platform));
+        $platformVersion = trim($platformVersion);
+        $platform        = trim($platform);
 
         $platformbits  = $this->detectProperty(
             $parserResult, 'Platform_Bits', true, $platform
@@ -238,15 +232,11 @@ class BrowscapDetector extends Core
         $platformMaker = $this->detectProperty(
             $parserResult, 'Platform_Maker', true, $platform
         );
-        $platformIcon  = $this->detectProperty(
-            $parserResult, 'Platform_Icon', true, $platform
-        );
 
         $result->setCapability('device_os', $platform);
         $result->setCapability('device_os_version', $platformVersion);
         $result->setCapability('device_os_bits', $platformbits);
         $result->setCapability('device_os_manufacturer', $platformMaker);
-        $result->setCapability('device_os_icon', $platformIcon);
 
         $deviceName = $this->detectProperty($parserResult, 'Device_Code_Name');
         $deviceType = $this->detectProperty($parserResult, 'Device_Type');
@@ -296,58 +286,24 @@ class BrowscapDetector extends Core
         );
 
         $result->setCapability('renderingengine_manufacturer', $engineMaker);
-        $result->setCapability('renderingengine_icon', $engineIcon);
 
-        if (!empty($parserResult['Device_isDesktop'])) {
-            $result->setCapability(
-                'ux_full_desktop',
-                $parserResult['Device_isDesktop']
-            );
-        }
-
-        if (!empty($parserResult['Device_isTv'])) {
-            $result->setCapability('is_smarttv', $parserResult['Device_isTv']);
-        }
-
-        if (!empty($parserResult['Device_isMobileDevice'])) {
-            $result->setCapability(
-                'is_wireless_device', $parserResult['Device_isMobileDevice']
-            );
-        } elseif (!empty($parserResult['isMobileDevice'])) {
+        if (!empty($parserResult['isMobileDevice'])) {
             $result->setCapability(
                 'is_wireless_device', $parserResult['isMobileDevice']
             );
         }
 
-        if (!empty($parserResult['Device_isTablet'])) {
-            $result->setCapability('is_tablet', $parserResult['Device_isTablet']);
-        } elseif (!empty($parserResult['isTablet'])) {
+        if (!empty($parserResult['isTablet'])) {
             $result->setCapability('is_tablet', $parserResult['isTablet']);
         }
 
-        if (!empty($parserResult['Browser_isBot'])) {
-            $result->setCapability('is_bot', $parserResult['Browser_isBot']);
-        } elseif (!empty($parserResult['Crawler'])) {
+        if (!empty($parserResult['Crawler'])) {
             $result->setCapability('is_bot', $parserResult['Crawler']);
         }
 
-        if (!empty($parserResult['Browser_isSyndicationReader'])) {
-            $result->setCapability(
-                'is_syndication_reader', $parserResult['Browser_isSyndicationReader']
-            );
-        } elseif (!empty($parserResult['isSyndicationReader'])) {
+        if (!empty($parserResult['isSyndicationReader'])) {
             $result->setCapability(
                 'is_syndication_reader', $parserResult['isSyndicationReader']
-            );
-        }
-
-        if (!empty($parserResult['Browser_isBanned'])) {
-            $result->setCapability(
-                'is_banned', $parserResult['Browser_isBanned']
-            );
-        } elseif (!empty($parserResult['isBanned'])) {
-            $result->setCapability(
-                'is_banned', $parserResult['isBanned']
             );
         }
 
@@ -547,10 +503,6 @@ class BrowscapDetector extends Core
 
             $completeVersion = $properties['Version'];
 
-            if (!empty($properties['Browser_Version'])) {
-                $completeVersion = $properties['Browser_Version'];
-            }
-
             $version->setVersion($completeVersion);
             $version->setUserAgent($key);
 
@@ -562,82 +514,15 @@ class BrowscapDetector extends Core
                 $properties['MinorVer'] = 0;
             }
 
-            $browserName = $properties['Browser'];
-
-            if (!empty($properties['Browser_Name'])) {
-                $browserName = $properties['Browser_Name'];
-            }
-
             $properties['Version'] = $completeVersion;
-            $properties['Browser'] = $browserName;
 
             if (!empty($properties['Browser_Type'])) {
                 $browserType = $properties['Browser_Type'];
-            } elseif (!empty($properties['Category'])) {
-                $browserType = $properties['Category'];
             } else {
                 $browserType = 'all';
             }
 
-            $properties['Category']     = $browserType;
             $properties['Browser_Type'] = $browserType;
-
-            if (!empty($properties['Browser_Type'])) {
-                $browserSubType = $properties['Browser_Type'];
-            } elseif (!empty($properties['SubCategory'])) {
-                $browserSubType = $properties['SubCategory'];
-            } else {
-                $browserSubType = 'all';
-            }
-
-            $properties['SubCategory']     = $browserSubType;
-            $properties['Browser_SubType'] = $browserSubType;
-
-            if (!empty($completeVersion)
-                && '0.0' != $completeVersion
-            ) {
-                $properties['Browser_Full'] = trim($browserName . ' ' . $completeVersion);
-            } else {
-                $properties['Browser_Full'] = $browserName;
-            }
-
-            $syndicationReader = $properties['isSyndicationReader'];
-
-            if (array_key_exists('Browser_isSyndicationReader', $properties)) {
-                $syndicationReader = $properties['Browser_isSyndicationReader'];
-            }
-
-            $properties['isSyndicationReader']         = $syndicationReader;
-            $properties['Browser_isSyndicationReader'] = $syndicationReader;
-
-            if (array_key_exists('Browser_isBanned', $properties)) {
-                $isBanned = $properties['Browser_isBanned'];
-            } elseif (array_key_exists('isBanned', $properties)) {
-                $isBanned = $properties['isBanned'];
-            } else {
-                $isBanned = false;
-            }
-
-            $properties['isBanned']         = $isBanned;
-            $properties['Browser_isBanned'] = $isBanned;
-
-            if (!empty($properties['Browser_isBot'])) {
-                $crawler               = $properties['Browser_isBot'];
-                $properties['Crawler'] = $crawler;
-            } else {
-                $crawler = $properties['Crawler'];
-            }
-
-            $properties['Crawler']       = $crawler;
-            $properties['Browser_isBot'] = $crawler;
-
-            if (array_key_exists('Browser_isAlpha', $properties)) {
-                $properties['Alpha'] = $properties['Browser_isAlpha'];
-            }
-
-            if (array_key_exists('Browser_isBeta', $properties)) {
-                $properties['Beta'] = $properties['Browser_isBeta'];
-            }
 
             $browserBitHelper->setUserAgent($key);
             $osBitHelper->setUserAgent($key);
@@ -645,65 +530,16 @@ class BrowscapDetector extends Core
             $properties['Browser_Bits']  = (int)$browserBitHelper->getBits();
             $properties['Platform_Bits'] = (int)$osBitHelper->getBits();
 
-            $properties['Win64'] = false;
-            $properties['Win32'] = false;
-            $properties['Win16'] = false;
-
-            $platform = $properties['Platform'];
-
-            if (!empty($properties['Platform_Name'])) {
-                $platform               = $properties['Platform_Name'];
-                $properties['Platform'] = $platform;
-            }
-
-            if ('Windows' == $platform) {
-                if (64 == $properties['Browser_Bits']) {
-                    $properties['Win64'] = true;
-                } elseif (32 == $properties['Browser_Bits']) {
-                    $properties['Win32'] = true;
-                } elseif (16 == $properties['Browser_Bits']) {
-                    $properties['Win16'] = true;
-                }
-            }
-
-            if ('0.0' != $properties['Platform_Version']) {
-                $properties['Platform_Full'] = trim($platform . ' ' . $properties['Platform_Version']);
-            } else {
-                $properties['Platform_Full'] = $platform;
-            }
-
-            if (!empty($properties['RenderingEngine_Version'])
-                && !empty($properties['RenderingEngine_Name'])
-                && '0.0' != $properties['RenderingEngine_Version']
-            ) {
-                $properties['RenderingEngine_Full'] = trim(
-                    $properties['RenderingEngine_Name'] . ' ' . $properties['RenderingEngine_Version']
-                );
-            } elseif (!empty($properties['RenderingEngine_Name'])) {
-                $properties['RenderingEngine_Full'] = $properties['RenderingEngine_Name'];
-            } else {
-                $properties['RenderingEngine_Full'] = '';
-            }
-
+            $platform     = $properties['Platform'];
             $mobileDevice = $properties['isMobileDevice'];
 
-            if (!empty($properties['Device_isMobileDevice'])) {
-                $mobileDevice = $properties['Device_isMobileDevice'];
-            }
-
-            $properties['isMobileDevice']        = $mobileDevice;
-            $properties['Device_isMobileDevice'] = $mobileDevice;
-
-            if (!empty($properties['Device_isTablet'])) {
-                $isTablet = $properties['Device_isTablet'];
-            } elseif (!empty($properties['isTablet'])) {
+            if (!empty($properties['isTablet'])) {
                 $isTablet = $properties['isTablet'];
             } else {
                 $isTablet = false;
             }
 
-            $properties['Device_isTablet'] = $isTablet;
-            $properties['isTablet']        = $isTablet;
+            $properties['isTablet'] = $isTablet;
 
             if ($isTablet) {
                 $properties['Device_Type'] = 'Tablet';
@@ -717,93 +553,69 @@ class BrowscapDetector extends Core
                 $properties['isTablet']             = false;
                 $properties['Device_Type']          = 'unknown';
                 $properties['Platform_Description'] = '';
-                $properties['Platform_Icon']        = '';
             } else {
                 switch ($platform) {
                 case 'RIM OS':
                     $properties['Device_Maker']          = 'Research In Motion Limited';
                     $properties['isMobileDevice']        = true;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = true;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Research In Motion Limited';
                     $properties['Device_Type']           = 'Mobile Phone';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Windows':
                 case 'Win32':
+                case 'WinXP':
+                case 'WinVista':
+                case 'Win7':
+                case 'Win8':
+                case 'Win8.1':
+                case 'Win95':
+                case 'Win98':
+                case 'Win2000':
+                case 'Win2003':
+                case 'WinNT':
                     $properties['Device_Code_Name']      = 'Windows Desktop';
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
-                    $properties['Platform']              = 'Windows';
-                    $properties['Platform_Name']         = 'Windows';
                     $properties['Platform_Maker']        = 'Microsoft Corporation';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'CygWin':
                     $properties['Device_Code_Name']      = 'Windows Desktop';
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Microsoft Corporation';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'WinMobile':
                 case 'Windows Mobile OS':
                     $properties['isMobileDevice']        = true;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = true;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform']              = 'Windows Mobile OS';
-                    $properties['Platform_Name']         = 'Windows Mobile OS';
                     $properties['Platform_Maker']        = 'Microsoft Corporation';
                     $properties['Device_Type']           = 'Mobile Phone';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Windows Phone OS':
                     $properties['isMobileDevice']        = true;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = true;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Microsoft Corporation';
                     $properties['Device_Type']           = 'Mobile Phone';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Symbian OS':
                 case 'SymbianOS':
                     $properties['isMobileDevice']        = true;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = true;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Name']         = 'Symbian OS';
                     $properties['Platform_Maker']        = 'Symbian Foundation';
                     $properties['Device_Type']           = 'Mobile Phone';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Debian':
                 case 'Linux':
@@ -822,10 +634,6 @@ class BrowscapDetector extends Core
                         $properties['Device_Maker']          = 'unknown';
                         $properties['isMobileDevice']        = false;
                         $properties['isTablet']              = false;
-                        $properties['Device_isMobileDevice'] = false;
-                        $properties['Device_isTablet']       = false;
-                        $properties['Device_isDesktop']      = true;
-                        $properties['Device_isTv']           = false;
                         $properties['Device_Type']           = 'Desktop';
                     } elseif (!empty($properties['Device_isTv'])
                         && $properties['Device_isTv'] === true
@@ -834,17 +642,10 @@ class BrowscapDetector extends Core
                         $properties['Device_Maker']          = 'unknown';
                         $properties['isMobileDevice']        = false;
                         $properties['isTablet']              = false;
-                        $properties['Device_isMobileDevice'] = false;
-                        $properties['Device_isTablet']       = false;
-                        $properties['Device_isDesktop']      = false;
-                        $properties['Device_isTv']           = true;
                         $properties['Platform_Name']         = 'Linux for TV';
                         $properties['Device_Type']           = 'TV Device';
                     } elseif ($mobileDevice == true) {
                         $properties['isMobileDevice']        = true;
-                        $properties['Device_isMobileDevice'] = true;
-                        $properties['Device_isDesktop']      = false;
-                        $properties['Device_isTv']           = false;
                         $properties['Platform']              = 'Linux Smartphone OS';
                         $properties['Platform_Name']         = 'Linux Smartphone OS';
                         $properties['Device_Type']           = 'Mobile Phone';
@@ -855,13 +656,8 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Macintosh':
                 case 'MacOSX':
@@ -872,27 +668,17 @@ class BrowscapDetector extends Core
                     $properties['Device_Brand_Name']     = 'Apple';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Apple Inc';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Darwin':
                     $properties['Device_Maker']          = 'Apple Inc';
                     $properties['Device_Brand_Name']     = 'Apple';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Apple Inc';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
 
                     if (!empty($properties['Device_Code_Name'])) {
                         switch ($properties['Device_Code_Name']) {
@@ -900,26 +686,22 @@ class BrowscapDetector extends Core
                             $properties['isMobileDevice']        = true;
                             $properties['Device_isMobileDevice'] = true;
                             $properties['isTablet']              = true;
-                            $properties['Device_isTablet']       = true;
                             $properties['Device_Type']           = 'Tablet';
                             break;
                         case 'iPod':
                             $properties['isMobileDevice']        = true;
                             $properties['Device_isMobileDevice'] = true;
                             $properties['isTablet']              = false;
-                            $properties['Device_isTablet']       = false;
                             $properties['Device_Type']           = 'Mobile Device';
                             break;
                         case 'iPhone':
                             $properties['isMobileDevice']        = true;
                             $properties['Device_isMobileDevice'] = true;
                             $properties['isTablet']              = false;
-                            $properties['Device_isTablet']       = false;
                             $properties['Device_Type']           = 'Mobile Phone';
                             break;
                         default:
                             $properties['Device_Code_Name'] = 'Macintosh';
-                            $properties['Device_isDesktop'] = true;
                             $properties['Device_Type']      = 'Desktop';
                             break;
                         }
@@ -929,28 +711,21 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'Apple Inc';
                     $properties['Device_Brand_Name']     = 'Apple';
                     $properties['isMobileDevice']        = true;
-                    $properties['Device_isMobileDevice'] = true;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Apple Inc';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
 
                     if (!empty($properties['Device_Code_Name'])) {
                         switch ($properties['Device_Code_Name']) {
                         case 'iPad':
                             $properties['isTablet']        = true;
-                            $properties['Device_isTablet'] = true;
                             $properties['Device_Type']     = 'Tablet';
                             break;
                         case 'iPod':
                             $properties['isTablet']        = false;
-                            $properties['Device_isTablet'] = false;
                             $properties['Device_Type']     = 'Mobile Device';
                             break;
                         case 'iPhone':
                             $properties['isTablet']        = false;
-                            $properties['Device_isTablet'] = false;
                             $properties['Device_Type']     = 'Mobile Phone';
                             break;
                         default:
@@ -964,28 +739,18 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Access';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'AIX':
                     $properties['Device_Code_Name']      = 'general Desktop';
                     $properties['Device_Maker']          = 'IBM';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'IBM';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Digital Unix':
                 case 'Tru64 UNIX':
@@ -993,17 +758,12 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'HP';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform']              = 'Tru64 UNIX';
                     $properties['Platform_Name']         = 'Tru64 UNIX';
                     $properties['Platform_Maker']        = 'HP';
                     $properties['Platform_Bits']         = '64';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'HPUX':
                 case 'HP-UX':
@@ -1012,14 +772,9 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'HP';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'HP';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'IRIX':
                 case 'IRIX64':
@@ -1027,14 +782,9 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'SGI';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'SGI';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Solaris':
                 case 'SunOS':
@@ -1043,27 +793,17 @@ class BrowscapDetector extends Core
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Oracle';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'OS/2':
                     $properties['Device_Code_Name']      = 'general Desktop';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'IBM';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Android':
                 case 'Dalvik':
@@ -1072,9 +812,6 @@ class BrowscapDetector extends Core
 
                     if (!empty($properties['Device_Code_Name']) && $properties['Device_Code_Name'] !== 'NBPC724') {
                         $properties['isMobileDevice']        = true;
-                        $properties['Device_isMobileDevice'] = true;
-                        $properties['Device_isDesktop']      = false;
-                        $properties['Device_isTv']           = false;
                         $properties['Platform_Maker']        = 'Google Inc';
                         if ($isTablet) {
                             $properties['Device_Type'] = 'Tablet';
@@ -1085,9 +822,6 @@ class BrowscapDetector extends Core
                         && $properties['Device_Code_Name'] === 'NBPC724'
                     ) {
                         $properties['isMobileDevice']        = false;
-                        $properties['Device_isMobileDevice'] = false;
-                        $properties['Device_isDesktop']      = true;
-                        $properties['Device_isTv']           = false;
                         $properties['Platform_Maker']        = 'Google Inc';
                         $properties['Device_Type']           = 'Desktop';
                     }
@@ -1098,25 +832,20 @@ class BrowscapDetector extends Core
                     ) {
                         $properties['Device_Code_Name'] = 'Linux Desktop';
                         $properties['Device_isDesktop'] = true;
-                        $properties['Device_isTv']      = false;
                         $properties['Device_Type']      = 'Desktop';
                     } elseif (!empty($properties['Device_isTv'])
                         && $properties['Device_isTv'] === true
                     ) {
                         $properties['Device_Code_Name'] = 'general TV Device';
                         $properties['Device_isDesktop'] = false;
-                        $properties['Device_isTv']      = true;
                         $properties['Device_Type']      = 'TV Device';
                     }
 
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
                     $properties['Platform_Maker']        = 'FreeBSD Foundation';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'NetBSD':
                 case 'OpenBSD':
@@ -1125,55 +854,35 @@ class BrowscapDetector extends Core
                     $properties['Device_Code_Name']      = 'general Desktop';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'unknown';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'WebTV':
                     $properties['Device_Code_Name']      = 'General TV Device';
                     $properties['Device_Maker']          = 'unknown';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = false;
-                    $properties['Device_isTv']           = true;
                     $properties['Platform_Maker']        = 'unknown';
                     $properties['Device_Type']           = 'TV Device';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'ChromeOS':
                     $properties['Device_Code_Name']      = 'general Desktop';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Google Inc';
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 case 'Ubuntu':
                     $properties['Device_Code_Name']      = 'Linux Desktop';
                     $properties['isMobileDevice']        = false;
                     $properties['isTablet']              = false;
-                    $properties['Device_isMobileDevice'] = false;
-                    $properties['Device_isTablet']       = false;
-                    $properties['Device_isDesktop']      = true;
-                    $properties['Device_isTv']           = false;
                     $properties['Platform_Maker']        = 'Canonical Ltd';
                     $properties['Platform_Bits']         = 0;
                     $properties['Device_Type']           = 'Desktop';
                     $properties['Platform_Description']  = '';
-                    $properties['Platform_Icon']         = '';
                     break;
                 default:
                     $properties['Platform_Description'] = '';
@@ -1237,8 +946,8 @@ class BrowscapDetector extends Core
             foreach ($browsers as $key => $properties) {
                 $x = 0;
 
-                if (!empty($properties['Category'])) {
-                    switch ($properties['Category']) {
+                if (!empty($properties['Browser_Type'])) {
+                    switch ($properties['Browser_Type']) {
                     case 'Bot/Crawler':
                         $x = 1;
                         break;
@@ -1277,17 +986,13 @@ class BrowscapDetector extends Core
 
                 $sort1[$key] = $x;
 
-                if (!empty($properties['Browser_Name'])) {
-                    $sort2[$key] = strtolower($properties['Browser_Name']);
-                } elseif (!empty($properties['Browser'])) {
+                if (!empty($properties['Browser'])) {
                     $sort2[$key] = strtolower($properties['Browser']);
                 } else {
                     $sort2[$key] = '';
                 }
 
-                if (!empty($properties['Browser_Version'])) {
-                    $v = (float)$properties['Browser_Version'];
-                } elseif (!empty($properties['Version'])) {
+                if (!empty($properties['Version'])) {
                     $v = (float)$properties['Version'];
                 } else {
                     $v = 0.0;
@@ -1307,17 +1012,13 @@ class BrowscapDetector extends Core
 
                 $sort5[$key] = $bits;
 
-                if (!empty($properties['Platform_Name'])) {
-                    $sort4[$key] = strtolower($properties['Platform_Name']);
-                } elseif (!empty($properties['Platform'])) {
+                if (!empty($properties['Platform'])) {
                     $sort4[$key] = strtolower($properties['Platform']);
                 } else {
                     $sort4[$key] = '';
                 }
 
-                if (!empty($properties['Browser_Version'])) {
-                    $v = $properties['Browser_Version'];
-                } elseif (!empty($properties['Version'])) {
+                if (!empty($properties['Version'])) {
                     $v = $properties['Version'];
                 } else {
                     $v = 0.0;
@@ -1441,32 +1142,32 @@ class BrowscapDetector extends Core
         fwrite(
             $fp,
             ';;; Provided courtesy of https://browsers.garykeith.com
-            ;;; Created on Tuesday, March 12, 2013 at 3:03 AM UTC
+;;; Created on Tuesday, March 12, 2013 at 3:03 AM UTC
 
-            ;;; Keep up with the latest goings-on with the project:
-            ;;; Follow us on Twitter <https://twitter.com/browscap>, or...
-            ;;; Like us on Facebook <https://facebook.com/browscap>, or...
-            ;;; Collaborate on GitHub <https://github.com/GaryKeith/browscap>, or...
-            ;;; Discuss on Google Groups <https://groups.google.com/d/forum/browscap>.
+;;; Keep up with the latest goings-on with the project:
+;;; Follow us on Twitter <https://twitter.com/browscap>, or...
+;;; Like us on Facebook <https://facebook.com/browscap>, or...
+;;; Collaborate on GitHub <https://github.com/GaryKeith/browscap>, or...
+;;; Discuss on Google Groups <https://groups.google.com/d/forum/browscap>.
 
-            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browscap Version
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Browscap Version
 
-            [GJK_Browscap_Version]
-            Version=5020
-            Released=$Date: 2013-09-11 21:09:35 +0200 (Mi, 11 Sep 2013) $
+[GJK_Browscap_Version]
+Version=5020
+Released=$Date: 2013-09-11 21:09:35 +0200 (Mi, 11 Sep 2013) $
 
-            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; known Platforms
-            ;
-            ;unknown - not detected
-            ;Dalvik  - VM on Andoid
-            ;Darwin  - Free BSD based Hybridkernel OS for the MAC
-            ;Bada    - a OS developt by Samsung
-            ;Mac OS X
-            ;MacPPC
-            ;WAP
-            ;Solaris
-            ;Polaris - a free clone of Solaris
-            ;' . "\n"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; known Platforms
+;
+;unknown - not detected
+;Dalvik  - VM on Andoid
+;Darwin  - Free BSD based Hybridkernel OS for the MAC
+;Bada    - a OS developt by Samsung
+;Mac OS X
+;MacPPC
+;WAP
+;Solaris
+;Polaris - a free clone of Solaris
+;' . "\n"
         );
 
         // shrink
@@ -1495,7 +1196,7 @@ class BrowscapDetector extends Core
             }
 
             $propertiesToOutput = $properties;
-
+/**/
             foreach ($propertiesToOutput as $property => $value) {
                 if (!isset($parent[$property])) {
                     continue;
@@ -1507,19 +1208,14 @@ class BrowscapDetector extends Core
 
                 unset($propertiesToOutput[$property]);
             }
-
+/**/
             // create output - php
 
             if ('DefaultProperties' == $key
                 || empty($properties['Parent'])
                 || 'DefaultProperties' == $properties['Parent']
             ) {
-                fwrite(
-                    $fp,
-                    ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' . "\n" . '; '
-                    . $key . "\n" . ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'
-                    . "\n\n"
-                );
+                fwrite($fp, ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ' . $key . "\n\n");
             }
 
             $parents = (empty($properties['Parents']) ? '' : $properties['Parents'] . ',') . $key;
@@ -1544,27 +1240,33 @@ class BrowscapDetector extends Core
                     continue;
                 }
 
-                $value = $propertiesToOutput[$property];
+                $value       = $propertiesToOutput[$property];
+                $valueOutput = $value;
 
-                if (true === $value || $value === 'true') {
-                    $valuePhp = 'true';
-                } elseif (false === $value || $value === 'false') {
-                    $valuePhp = 'false';
-                } elseif ('0' === $value
-                    || 'Parent' === $property
-                    || 'Version' === $property
-                    || 'MajorVer' === $property
-                    || 'MinorVer' === $property
-                    || 'RenderingEngine_Version' === $property
-                    || 'Platform_Version' === $property
-                    || 'Browser_Version' === $property
-                ) {
-                    $valuePhp = $value;
-                } else {
-                    $valuePhp = '"' . $value . '"';
+                try {
+                    switch (\Browscap\Generator\CollectionParser::getPropertyType($property)) {
+                        case 'string':
+                            $valueOutput = '"' . $value . '"';
+                            break;
+                        case 'boolean':
+                            if (true === $value || $value === 'true') {
+                                $valueOutput = 'true';
+                            } elseif (false === $value || $value === 'false') {
+                                $valueOutput = 'false';
+                            }
+                            break;
+                        case 'generic':
+                        case 'number':
+                        default:
+                            // nothing t do here
+                            break;
+                    }
+                } catch (\Exception $e) {
+                    //$this->log(\Monolog\Logger::DEBUG, $e);
+                    continue;
                 }
 
-                fwrite($fp, $property . '=' . $valuePhp . "\n");
+                fwrite($fp, $property . '=' . $valueOutput . PHP_EOL);
             }
 
             fwrite($fp, "\n");
