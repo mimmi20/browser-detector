@@ -267,10 +267,15 @@ class BrowscapDetector extends Core
             $parserResult, 'Device_Brand_Name', true, $deviceName
         );
 
+        $devicePointingMethod = $this->detectProperty(
+            $parserResult, 'Device_Pointing_Method', true, $deviceName
+        );
+
         $result->setCapability('model_name', $deviceName);
         $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName($deviceMarketingName, $deviceName));
         $result->setCapability('brand_name', $mapper->mapDeviceBrandName($deviceBrandName, $deviceName));
         $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker($deviceMaker, $deviceName));
+        $result->setCapability('pointing_method', $devicePointingMethod);
 
         $engineName = $this->detectProperty($parserResult, 'RenderingEngine_Name');
 

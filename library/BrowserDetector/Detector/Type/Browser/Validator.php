@@ -55,7 +55,7 @@ class Validator extends AbstractType implements TypeInterface
      *
      * @var string
      */
-    protected $name = 'Useragent Anonymizer';
+    protected $name = 'Validator';
 
     /**
      * the Browser is a Bot
