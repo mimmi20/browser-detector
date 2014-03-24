@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Input;
+namespace BrowserDetectorTest\Input;
 
 use BrowserDetector\Detector\Version;
 

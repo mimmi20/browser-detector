@@ -43,7 +43,9 @@ namespace BrowserDetector\Input;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\Bits as BitsDetector;use BrowserDetector\Detector\Company;use BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Bits as BitsDetector;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
 
@@ -119,17 +121,8 @@ class Browscap extends Core
             );
         }
 
-        if (null !== $this->cache) {
-            $this->parser->setCache($this->cache)
-                ->setCachePrefix($this->cachePrefix);
-        }
-
         if (null !== $this->localFile) {
-            $this->parser->setLocaleFile($this->localFile);
-        }
-
-        if (null !== $this->logger) {
-            $this->setLogger($this->logger);
+            $this->parser->localFile = $this->localFile;
         }
 
         return $this->parser;
@@ -150,20 +143,10 @@ class Browscap extends Core
 
         $mapper = new InputMapper();
 
-        if (empty($parserResult['Browser_Name'])) {
-            $browserName = $this->detectProperty($parserResult, 'Browser');
-        } else {
-            $browserName = $this->detectProperty($parserResult, 'Browser_Name');
-        }
-        if (!empty($parserResult['Browser_Version'])) {
-            $browserVersion = $this->detectProperty(
-                $parserResult, 'Browser_Version', true, $browserName
-            );
-        } else {
-            $browserVersion = $this->detectProperty(
-                $parserResult, 'Version', true, $browserName
-            );
-        }
+        $browserName = $this->detectProperty($parserResult, 'Browser');
+        $browserVersion = $this->detectProperty(
+            $parserResult, 'Version', true, $browserName
+        );
 
         $browserName    = $mapper->mapBrowserName($browserName);
         $browserVersion = $mapper->mapBrowserVersion(
@@ -187,8 +170,6 @@ class Browscap extends Core
 
         if (!empty($parserResult['Browser_Type'])) {
             $browserType = $parserResult['Browser_Type'];
-        } elseif (!empty($parserResult['Category'])) {
-            $browserType = $parserResult['Category'];
         } else {
             $browserType = null;
         }
@@ -203,19 +184,7 @@ class Browscap extends Core
 
         $result->setCapability('mobile_browser_modus', $browserModus);
 
-        if (!empty($parserResult['Browser_Icon'])) {
-            $browserIcon = $parserResult['Browser_Icon'];
-        } else {
-            $browserIcon = '';
-        }
-
-        $result->setCapability('mobile_browser_icon', $browserIcon);
-
-        if (!empty($parserResult['Platform_Name'])) {
-            $platform = $this->detectProperty($parserResult, 'Platform_Name');
-        } else {
-            $platform = $this->detectProperty($parserResult, 'Platform');
-        }
+        $platform = $this->detectProperty($parserResult, 'Platform');
 
         $platformVersion = $this->detectProperty(
             $parserResult, 'Platform_Version', true, $platform
@@ -230,15 +199,11 @@ class Browscap extends Core
         $platformMaker = $this->detectProperty(
             $parserResult, 'Platform_Maker', true, $platform
         );
-        $platformIcon  = $this->detectProperty(
-            $parserResult, 'Platform_Icon', true, $platform
-        );
 
         $result->setCapability('device_os', $platform);
         $result->setCapability('device_os_version', $platformVersion);
         $result->setCapability('device_os_bits', $platformbits);
         $result->setCapability('device_os_manufacturer', $platformMaker);
-        $result->setCapability('device_os_icon', $platformIcon);
 
         $deviceName = $this->detectProperty($parserResult, 'Device_Code_Name');
         $deviceType = $this->detectProperty($parserResult, 'Device_Type');
@@ -274,69 +239,27 @@ class Browscap extends Core
             $parserResult, 'RenderingEngine_Maker', true, $engineName
         );
 
-        $engineIcon = $this->detectProperty(
-            $parserResult, 'RenderingEngine_Icon', true, $engineName
-        );
-
         $result->setCapability(
             'renderingengine_name', $engineName
         );
 
         $result->setCapability('renderingengine_manufacturer', $engineMaker);
-        $result->setCapability('renderingengine_icon', $engineIcon);
 
-        if (!empty($parserResult['Device_isDesktop'])) {
-            $result->setCapability(
-                'ux_full_desktop',
-                $parserResult['Device_isDesktop']
-            );
-        }
-
-        if (!empty($parserResult['Device_isTv'])) {
-            $result->setCapability('is_smarttv', $parserResult['Device_isTv']);
-        }
-
-        if (!empty($parserResult['Device_isMobileDevice'])) {
-            $result->setCapability(
-                'is_wireless_device', $parserResult['Device_isMobileDevice']
-            );
-        } elseif (!empty($parserResult['isMobileDevice'])) {
+        $result->setCapability('ux_full_desktop', $deviceType === 'Desktop');
+        $result->setCapability('is_smarttv', $deviceType === 'TV Device');
+        $result->setCapability('is_tablet', $deviceType === 'Tablet');
+        
+        if (array_key_exists('isMobileDevice', $parserResult)) {
             $result->setCapability(
                 'is_wireless_device', $parserResult['isMobileDevice']
             );
         }
 
-        if (!empty($parserResult['Device_isTablet'])) {
-            $result->setCapability('is_tablet', $parserResult['Device_isTablet']);
-        } elseif (!empty($parserResult['isTablet'])) {
-            $result->setCapability('is_tablet', $parserResult['isTablet']);
-        }
+        $result->setCapability('is_bot', $parserResult['Crawler']);
 
-        if (!empty($parserResult['Browser_isBot'])) {
-            $result->setCapability('is_bot', $parserResult['Browser_isBot']);
-        } elseif (!empty($parserResult['Crawler'])) {
-            $result->setCapability('is_bot', $parserResult['Crawler']);
-        }
-
-        if (!empty($parserResult['Browser_isSyndicationReader'])) {
-            $result->setCapability(
-                'is_syndication_reader', $parserResult['Browser_isSyndicationReader']
-            );
-        } elseif (!empty($parserResult['isSyndicationReader'])) {
-            $result->setCapability(
-                'is_syndication_reader', $parserResult['isSyndicationReader']
-            );
-        }
-
-        if (!empty($parserResult['Browser_isBanned'])) {
-            $result->setCapability(
-                'is_banned', $parserResult['Browser_isBanned']
-            );
-        } elseif (!empty($parserResult['isBanned'])) {
-            $result->setCapability(
-                'is_banned', $parserResult['isBanned']
-            );
-        }
+        $result->setCapability(
+            'is_syndication_reader', $parserResult['isSyndicationReader']
+        );
 
         if (!empty($parserResult['Frames'])) {
             $framesSupport = $parserResult['Frames'];
