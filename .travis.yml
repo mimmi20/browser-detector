@@ -15,10 +15,16 @@ matrix:
 before_script:
   - composer self-update
   - composer install --dev --prefer-source
+  - php vendor/autoload.php
+  - mkdir -p build/logs
 
 script:
-  - phpunit --configuration tests/phpunit.xml --coverage-text --coverage-clover=coverage.clover --colors --verbose
+  - phpunit --configuration travis.phpunit.xml.dist --colors --verbose
 
 after_script:
+  - php vendor/bin/coveralls -v
   - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
+
+notifications:
+  email: false
