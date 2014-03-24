@@ -14,7 +14,7 @@
          processIsolation="false">
     <testsuites>
         <testsuite name="Browser Detector Tests">
-            <directory>./BrowserDetector/</directory>
+            <directory>./BrowserDetectorTest/</directory>
         </testsuite>
     </testsuites>
     <filter>

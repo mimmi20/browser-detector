@@ -20,7 +20,7 @@ class InputUaparserTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new Uaparser();
+        $this->object = new \BrowserDetector\Input\Uaparser();
     }
 
     /**

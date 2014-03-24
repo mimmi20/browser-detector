@@ -22,7 +22,7 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new UserAgent();
+        $this->object = new \BrowserDetector\Input\UserAgent();
     }
 
     /**
