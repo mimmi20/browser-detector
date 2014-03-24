@@ -1,7 +1,9 @@
 <?php
 namespace BrowserDetectorTest\Input;
 
+use BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -10,7 +12,7 @@ use BrowserDetector\Detector\Version;
 class InputUserAgentTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var KreditCore_Class_Browscap
+     * @var \BrowserDetector\Input\UserAgent
      */
     private $object = null;
 
@@ -22,7 +24,7 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new \BrowserDetector\Input\UserAgent();
+        $this->object = new UserAgent();
     }
 
     /**
@@ -68,6 +70,8 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
         $this->markTestSkipped('not implemented yet');
 
         $this->object->setAgent($agent);
+
+        /** @var \BrowserDetector\Detector\Result $result */
         $result = $this->object->getBrowser();
 
         $this->_x(
@@ -79,12 +83,12 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
     }
 
     private function _x(
-        $result, $agent, $browser, $browserVersion, $platform,
+        Result $result, $agent, $browser, $browserVersion, $platform,
         $platformVersion, $device, $mobile, $tablet, $bot, $desktop, $transcoder,
         $frames, $iframes, $tables, $cookies, $bgsound, $javascript, $vbscript,
         $java, $activex, $synreader, $pdf, $rss
     ) {
-        $this->assertInstanceOf('BrowserDetector\\Detector\\Result', $result);
+        $this->assertInstanceOf('\BrowserDetector\Detector\Result', $result);
 
         $this->assertSame($device, $result->getFullDevice(true), 'device mismatch');
         $this->assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');

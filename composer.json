@@ -37,8 +37,7 @@
     "require": {
         "php": ">=5.3.3",
         "mimmi20/wurflcache": "1.1.*",
-        "psr/log": "~1.0",
-        "browscap/browscap": "dev-master"
+        "psr/log": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
