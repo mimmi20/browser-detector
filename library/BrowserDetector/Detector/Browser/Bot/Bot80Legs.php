@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Browser\General;
+namespace BrowserDetector\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -55,7 +56,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Maxthon
+class Bot80Legs
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -77,18 +78,18 @@ class Maxthon
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
+            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'Maxthon',
+            'mobile_browser'               => '80Legs',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Maxthon(), // not in wurfl
+            'mobile_browser_manufacturer'  => null, // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
-            'can_skip_aligned_link_row'    => true,
-            'device_claims_web_support'    => true,
+            'can_skip_aligned_link_row'    => false,
+            'device_claims_web_support'    => false,
 
             // pdf
             'pdf_support'                  => true,
@@ -110,37 +111,21 @@ class Maxthon
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Maxthon', 'MyIE'))) {
-            return false;
-        }
-
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'Crazy Browser',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            // other Browsers
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Firefox'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
+        if (!$this->utils->checkIfContains(array('80legs'))) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 10679;
     }
 
     /**
@@ -153,21 +138,7 @@ class Maxthon
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        if (false !== strpos($this->useragent, 'MyIE2')) {
-            $this->setCapability('mobile_browser_version', $detector->setVersion('2.0'));
-
-            return $this;
-        }
-
-        if (false !== strpos($this->useragent, 'MyIE')) {
-            $this->setCapability('mobile_browser_version', $detector->setVersion('1.0'));
-
-            return $this;
-        }
-
-        $detector->setDefaulVersion('2.0');
-
-        $searches = array('Maxthon', 'Version');
+        $searches = array('80legs', '008');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -177,34 +148,16 @@ class Maxthon
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 497330;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $engines = array(
-            new \BrowserDetector\Detector\Engine\Webkit(),
-            new \BrowserDetector\Detector\Engine\Gecko(),
-            new \BrowserDetector\Detector\Engine\Trident()
-        );
+        $handler = new \BrowserDetector\Detector\Engine\Gecko();
+        $handler->setUseragent($this->useragent);
 
-        $chain = new \BrowserDetector\Detector\Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
-
-        return $chain->detect();
+        return $handler->detect();
     }
 }
