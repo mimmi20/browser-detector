@@ -20,20 +20,6 @@
         "issues": "https://github.com/mimmi20/BrowserDetector/issues",
         "source": "https://github.com/mimmi20/BrowserDetector"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/mimmi20/browscap-php.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/mimmi20/UASparser.git"
-        },
-        {
-            "type": "git",
-            "url":  "https://github.com/mimmi20/ua-parser.git"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "mimmi20/wurflcache": "1.1.*",
@@ -53,11 +39,11 @@
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
         "tobie/ua-parser": "for using the ua parser as alternative parser",
-        "garetjax/phpbrowscap": "for using the browscap ini parser as alternative parser"
+        "browscap/browscap-php": "for using the browscap ini parser as alternative parser"
     },
     "autoload": {
-        "psr-0": {
-            "BrowserDetector\\": "library/",
+        "psr-4": {
+            "BrowserDetector\\": "src/",
             "BrowserDetectorTest\\": "tests/"
         }
     }

@@ -14,12 +14,12 @@
          processIsolation="false">
     <testsuites>
         <testsuite name="Browser Detector Tests">
-            <directory>./BrowserDetectorTest/</directory>
+            <directory suffix="Test.php">./</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist>
-            <directory suffix=".php">../library/BrowserDetector</directory>
+            <directory suffix=".php">../src/</directory>
         </whitelist>
     </filter>
 </phpunit>

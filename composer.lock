@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f70a286e6d8e5aa9840445c5c8650beb",
+    "hash": "52ebf53e6213a035a2345707aa39bd51",
     "packages": [
         {
             "name": "browscap/browscap",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/browscap/browscap.git",
-                "reference": "513444ef149860be26464ec27b63c9f193564f74"
+                "reference": "6d82ea5e3e154855c0a5fa5c4070eb22008ab0fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/browscap/browscap/zipball/513444ef149860be26464ec27b63c9f193564f74",
-                "reference": "513444ef149860be26464ec27b63c9f193564f74",
+                "url": "https://api.github.com/repos/browscap/browscap/zipball/6d82ea5e3e154855c0a5fa5c4070eb22008ab0fa",
+                "reference": "6d82ea5e3e154855c0a5fa5c4070eb22008ab0fa",
                 "shasum": ""
             },
             "require": {
@@ -73,20 +73,20 @@
             "keywords": [
                 "Browscap"
             ],
-            "time": "2014-03-23 10:02:15"
+            "time": "2014-04-09 13:54:12"
         },
         {
             "name": "mimmi20/wurflcache",
-            "version": "1.1.2",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/WurflCache.git",
-                "reference": "4143eee605149e870edeb67413ffea63ab1685bf"
+                "reference": "ba6b6b8fc1c745310ad214ec1049d7692d7ffc4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/WurflCache/zipball/4143eee605149e870edeb67413ffea63ab1685bf",
-                "reference": "4143eee605149e870edeb67413ffea63ab1685bf",
+                "url": "https://api.github.com/repos/mimmi20/WurflCache/zipball/ba6b6b8fc1c745310ad214ec1049d7692d7ffc4e",
+                "reference": "ba6b6b8fc1c745310ad214ec1049d7692d7ffc4e",
                 "shasum": ""
             },
             "require": {
@@ -96,9 +96,7 @@
                 "desarrolla2/cache": "*",
                 "doctrine/cache": "1.4.*@dev",
                 "mikey179/vfsstream": "1.3.*@dev",
-                "phpunit/phpcov": "2.0.*@dev",
                 "phpunit/phpunit": "*",
-                "satooshi/php-coveralls": "dev-master",
                 "zendframework/zend-cache": "2.2.*",
                 "zetacomponents/cache": "dev-master"
             },
@@ -136,7 +134,7 @@
                 "Wurfl",
                 "cache"
             ],
-            "time": "2014-03-07 19:52:57"
+            "time": "2014-03-25 21:42:33"
         },
         {
             "name": "monolog/monolog",
@@ -144,12 +142,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "98b2d0ba0a9a8f6d0e3b8fda31ce0fb227208fbd"
+                "reference": "607f20d4f9757e28e762f71d4a89d49f6900c564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/98b2d0ba0a9a8f6d0e3b8fda31ce0fb227208fbd",
-                "reference": "98b2d0ba0a9a8f6d0e3b8fda31ce0fb227208fbd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/607f20d4f9757e28e762f71d4a89d49f6900c564",
+                "reference": "607f20d4f9757e28e762f71d4a89d49f6900c564",
                 "shasum": ""
             },
             "require": {
@@ -204,7 +202,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-24 11:36:34"
+            "time": "2014-04-08 08:59:38"
         },
         {
             "name": "psr/log",
@@ -246,17 +244,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef20f1f58d7f693ee888353962bd2db336e3bbcb",
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +295,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-01 17:35:04"
         }
     ],
     "packages-dev": [
@@ -306,13 +304,17 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mimmi20/browscap-php.git",
-                "reference": "39d5c2bdde766dfe1b31aac7f35d4d4943571f9c"
+                "url": "https://github.com/browscap/browscap-php.git",
+                "reference": "d3a7bf961a1eee14adb29105cdcc0740af05cec8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/browscap/browscap-php/zipball/d3a7bf961a1eee14adb29105cdcc0740af05cec8",
+                "reference": "d3a7bf961a1eee14adb29105cdcc0740af05cec8",
+                "shasum": ""
             },
             "require": {
-                "mimmi20/wurflcache": "1.1.*",
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
+                "php": ">=5.3.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -329,6 +331,7 @@
                     "phpbrowscapTest": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -346,11 +349,7 @@
                 "get_browser",
                 "user agent"
             ],
-            "support": {
-                "issues": "https://github.com/browscap/browscap-php/issues",
-                "source": "https://github.com/browscap/browscap-php"
-            },
-            "time": "2014-03-13 22:06:07"
+            "time": "2014-03-26 08:21:28"
         },
         {
             "name": "mikey179/vfsStream",
@@ -396,12 +395,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/Wurfl.git",
-                "reference": "ad6e230c6508fed3a969248a1c302839621c9815"
+                "reference": "d5f63f6a61869419d9d5f63ecbacd11ba04795fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/ad6e230c6508fed3a969248a1c302839621c9815",
-                "reference": "ad6e230c6508fed3a969248a1c302839621c9815",
+                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/d5f63f6a61869419d9d5f63ecbacd11ba04795fd",
+                "reference": "d5f63f6a61869419d9d5f63ecbacd11ba04795fd",
                 "shasum": ""
             },
             "require": {
@@ -441,20 +440,20 @@
                 "user agent",
                 "user-agent"
             ],
-            "time": "2014-03-07 19:13:44"
+            "time": "2014-04-08 15:59:46"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "a05618d03c60eb07b37432583aabf80ae5f5f447"
+                "reference": "3dcca2120451b98a98fe60221ca279a184ee64db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/a05618d03c60eb07b37432583aabf80ae5f5f447",
-                "reference": "a05618d03c60eb07b37432583aabf80ae5f5f447",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3dcca2120451b98a98fe60221ca279a184ee64db",
+                "reference": "3dcca2120451b98a98fe60221ca279a184ee64db",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +504,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-03-20 16:12:25"
+            "time": "2014-03-28 10:54:55"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -692,16 +691,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.0.12",
+            "version": "4.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e7631ea91f9e41149c55527047b5dee94538ae1d"
+                "reference": "a80b77d92a6c7723d77c6728b4ae37e92a65ac1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7631ea91f9e41149c55527047b5dee94538ae1d",
-                "reference": "e7631ea91f9e41149c55527047b5dee94538ae1d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a80b77d92a6c7723d77c6728b4ae37e92a65ac1d",
+                "reference": "a80b77d92a6c7723d77c6728b4ae37e92a65ac1d",
                 "shasum": ""
             },
             "require": {
@@ -763,7 +762,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-03-20 16:22:50"
+            "time": "2014-03-28 11:10:03"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1026,17 +1025,17 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "7e65abb06d3b38f4be89266fe3fb4a759544e713"
+                "reference": "b717952487176a993e9b12a08b87beae25ae419c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/7e65abb06d3b38f4be89266fe3fb4a759544e713",
-                "reference": "7e65abb06d3b38f4be89266fe3fb4a759544e713",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/b717952487176a993e9b12a08b87beae25ae419c",
+                "reference": "b717952487176a993e9b12a08b87beae25ae419c",
                 "shasum": ""
             },
             "require": {
@@ -1071,21 +1070,21 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-26 11:55:03"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518",
                 "shasum": ""
             },
             "require": {
@@ -1120,21 +1119,21 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3"
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
                 "shasum": ""
             },
             "require": {
@@ -1169,15 +1168,21 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-12 18:29:58"
         },
         {
             "name": "synchro/uasparser",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mimmi20/UASparser.git",
-                "reference": "19f4b810d1b88a8df04ca41d0590b7ca9e60f053"
+                "url": "https://github.com/Synchro/UASparser.git",
+                "reference": "5d765f499984e396beda1c8e49ec826f2770cafe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Synchro/UASparser/zipball/5d765f499984e396beda1c8e49ec826f2770cafe",
+                "reference": "5d765f499984e396beda1c8e49ec826f2770cafe",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -1196,6 +1201,7 @@
                     "UAS": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -1219,15 +1225,21 @@
                 "parser",
                 "user-agent"
             ],
-            "time": "2014-03-02 20:08:21"
+            "time": "2014-02-24 18:19:58"
         },
         {
             "name": "tobie/ua-parser",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mimmi20/ua-parser.git",
-                "reference": "d41c1db458bc4d72e514fa942050a3eeca154ffe"
+                "url": "https://github.com/tobie/ua-parser.git",
+                "reference": "4f9e75e8dd6d8a3f7e6cacb02dad07e19731e9bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tobie/ua-parser/zipball/4f9e75e8dd6d8a3f7e6cacb02dad07e19731e9bc",
+                "reference": "4f9e75e8dd6d8a3f7e6cacb02dad07e19731e9bc",
+                "shasum": ""
             },
             "require": {
                 "symfony/console": "~2",
@@ -1247,6 +1259,7 @@
                     "UAParser": "php/src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1257,7 +1270,7 @@
                 }
             ],
             "description": "A multi-language port of Browserscope's user agent parser.",
-            "time": "2014-03-05 18:35:14"
+            "time": "2014-04-04 06:38:55"
         }
     ],
     "aliases": [
