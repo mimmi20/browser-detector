@@ -148,9 +148,9 @@ class Browscap extends Core
             $parserResult, 'Version', true, $browserName
         );
 
-        $browserName    = $mapper->mapBrowserName($browserName);
+        $browserName    = $mapper->mapBrowserName(trim($browserName));
         $browserVersion = $mapper->mapBrowserVersion(
-            $browserVersion, $browserName
+            trim($browserVersion), $browserName
         );
 
         $browserBits  = $this->detectProperty(

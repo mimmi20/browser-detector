@@ -158,23 +158,15 @@ class BrowscapDetector extends Core
 
         $mapper = new InputMapper();
 
-        if (empty($parserResult['Browser_Name'])) {
-            $browserName = $this->detectProperty($parserResult, 'Browser');
-        } else {
-            $browserName = $this->detectProperty($parserResult, 'Browser_Name');
-        }
-        if (!empty($parserResult['Browser_Version'])) {
-            $browserVersion = $this->detectProperty(
-                $parserResult, 'Browser_Version', true, $browserName
-            );
-        } else {
-            $browserVersion = $this->detectProperty(
-                $parserResult, 'Version', true, $browserName
-            );
-        }
+        $browserName = $this->detectProperty($parserResult, 'Browser');
+        $browserVersion = $this->detectProperty(
+            $parserResult, 'Version', true, $browserName
+        );
 
-        $browserName    = trim($browserName);
-        $browserVersion = trim($browserVersion);
+        $browserName    = $mapper->mapBrowserName(trim($browserName));
+        $browserVersion = $mapper->mapBrowserVersion(
+            trim($browserVersion), $browserName
+        );
 
         $browserBits  = $this->detectProperty(
             $parserResult, 'Browser_Bits', true, $browserName
@@ -223,8 +215,8 @@ class BrowscapDetector extends Core
             $parserResult, 'Platform_Version', true, $platform
         );
 
-        $platformVersion = trim($platformVersion);
-        $platform        = trim($platform);
+        $platformVersion = $mapper->mapOsVersion(trim($platformVersion), trim($platform));
+        $platform        = $mapper->mapOsName(trim($platform));
 
         $platformbits  = $this->detectProperty(
             $parserResult, 'Platform_Bits', true, $platform
