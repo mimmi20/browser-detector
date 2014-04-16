@@ -285,7 +285,7 @@ class MicrosoftInternetExplorer
 
                 $this->setCapability(
                     'mobile_browser_modus',
-                    'IE ' . $detectedVersion . ' Compatibility Mode'
+                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
                 );
             }
             break;
@@ -295,7 +295,7 @@ class MicrosoftInternetExplorer
 
                 $this->setCapability(
                     'mobile_browser_modus',
-                    'IE ' . $detectedVersion . ' Compatibility Mode'
+                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
                 );
             }
             break;
@@ -305,7 +305,7 @@ class MicrosoftInternetExplorer
 
                 $this->setCapability(
                     'mobile_browser_modus',
-                    'IE ' . $detectedVersion . ' Compatibility Mode'
+                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
                 );
             }
             break;
@@ -315,7 +315,7 @@ class MicrosoftInternetExplorer
 
                 $this->setCapability(
                     'mobile_browser_modus',
-                    'IE ' . $detectedVersion . ' Compatibility Mode'
+                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
                 );
             }
             break;
