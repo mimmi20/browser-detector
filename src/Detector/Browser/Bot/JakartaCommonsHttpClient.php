@@ -105,11 +105,6 @@ class JakartaCommonsHttpClient
     }
 
     /**
-     * @var string the manufacturer/creator of this OS
-     */
-    //protected $_manufacturer = 'Unister';
-
-    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool

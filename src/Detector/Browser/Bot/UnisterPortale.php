@@ -77,7 +77,7 @@ class UnisterPortale
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Unister(), // not in wurfl
+            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
             'mobile_browser'               => 'UnisterPortale',
