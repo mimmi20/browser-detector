@@ -258,6 +258,7 @@ class InputMapper
         case 'other':
         case 'software in the public interest, inc.':
         case 'bot':
+        case 'various':
             $maker = null;
             break;
         case 'microsoft corporation.':
