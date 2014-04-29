@@ -91,7 +91,7 @@ abstract class AbstractBrowscapInput extends Core
         }
 
         $localFile = realpath($filename);
-        
+
         if (false === $localFile) {
             throw new Exception(
                 'the filename is invalid: ' . $filename, Exception::LOCAL_FILE_MISSING
@@ -137,9 +137,10 @@ abstract class AbstractBrowscapInput extends Core
             trim($browserVersion), $browserName
         );
 
-        $browserBits  = $this->detectProperty(
+        $browserBits = $this->detectProperty(
             $parserResult, 'Browser_Bits', true, $browserName
         );
+
         $browserMaker = $this->detectProperty(
             $parserResult, 'Browser_Maker', true, $browserName
         );
@@ -237,7 +238,7 @@ abstract class AbstractBrowscapInput extends Core
         $result->setCapability('ux_full_desktop', $deviceType === 'Desktop');
         $result->setCapability('is_smarttv', $deviceType === 'TV Device');
         $result->setCapability('is_tablet', $deviceType === 'Tablet');
-        
+
         if (array_key_exists('isMobileDevice', $parserResult)) {
             $result->setCapability(
                 'is_wireless_device', $parserResult['isMobileDevice']

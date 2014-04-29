@@ -101,6 +101,7 @@ class InputMapper
             $browserName = 'Chrome';
             break;
         case 'android':
+        case 'android browser':
             $browserName = 'Android Webkit';
             break;
         case 'googlebot':
