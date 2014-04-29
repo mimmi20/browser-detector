@@ -84,7 +84,7 @@ class GomezAgent
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'              => 'GomezAgent',
+            'mobile_browser'              => 'Gomez Site Monitor',
             'mobile_browser_version'      => null,
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\CompuwareApm(), // not in wurfl
