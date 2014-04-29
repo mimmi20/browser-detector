@@ -62,5 +62,5 @@ class CatSound extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $brandname = 'Cat';
+    protected $brandname = 'CatSound';
 }
