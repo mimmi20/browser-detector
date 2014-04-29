@@ -138,6 +138,10 @@ class InputMapper
         case 'dolphin':
             $browserName = 'Dolfin';
             break;
+        case 'facebookexternalhit':
+        case 'facebookbot':
+            $browserName = 'FaceBook Bot';
+            break;
         default:
             // nothing to do here
             break;
