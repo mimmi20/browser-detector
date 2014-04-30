@@ -761,7 +761,7 @@ class Wurfl extends Core
         }
 
         $result->setCapability('wurflKey', $apiKey);
-        $result->setCapability('device_type', $deviceType);
+        $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
 
         return $result;
     }

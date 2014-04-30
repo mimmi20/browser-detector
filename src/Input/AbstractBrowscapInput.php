@@ -193,7 +193,7 @@ abstract class AbstractBrowscapInput extends Core
         $deviceName = $this->detectProperty($parserResult, 'Device_Code_Name');
         $deviceType = $this->detectProperty($parserResult, 'Device_Type');
 
-        $result->setCapability('device_type', $deviceType);
+        $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
 
         $deviceName = $mapper->mapDeviceName($deviceName);
 

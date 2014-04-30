@@ -497,6 +497,28 @@ class InputMapper
      *
      * @return string
      */
+    public function mapDeviceType($deviceType)
+    {
+        switch (strtolower($deviceType)) {
+        case '':
+        case 'unknown':
+            $deviceType = null;
+            break;
+        default:
+            // nothing to do
+            break;
+        }
+
+        return $deviceType;
+    }
+
+    /**
+     * maps the name of a device
+     *
+     * @param string $deviceName
+     *
+     * @return string
+     */
     public function mapDeviceName($deviceName)
     {
         switch (strtolower($deviceName)) {
