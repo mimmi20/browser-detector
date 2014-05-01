@@ -43,9 +43,11 @@ namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -181,7 +183,7 @@ class Netscape
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Netscape', 'Netscape6', 'rv\:', 'Mozilla');
@@ -211,7 +213,7 @@ class Netscape
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Gecko();
+        $handler = new Gecko();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

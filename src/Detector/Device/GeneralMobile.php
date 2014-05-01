@@ -41,6 +41,7 @@ namespace BrowserDetector\Detector\Device;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
@@ -192,7 +193,7 @@ class GeneralMobile
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Mobile');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

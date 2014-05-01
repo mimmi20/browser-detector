@@ -152,9 +152,7 @@ class SonyC1505XperiaE
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyC1505XperiaE
      */
     public function detectDevice()
     {

@@ -148,9 +148,7 @@ class SonyEricssonLT28at
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonLT28at
      */
     public function detectDevice()
     {

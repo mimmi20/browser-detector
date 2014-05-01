@@ -51,6 +51,7 @@ use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -183,7 +184,7 @@ class Googlebot
                 '', $this->useragent
             );
 
-            $detector = new \BrowserDetector\Input\UserAgent();
+            $detector = new UserAgent();
             $detector->setAgent($agent);
 
             $device->setRenderAs($detector->getBrowser());

@@ -51,6 +51,7 @@ use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -89,7 +90,7 @@ class GomezAgent
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => new Company\CompuwareApm(), // not in wurfl
             'mobile_browser_modus'        => null, // not in wurfl
-            
+
             // product info
             'can_skip_aligned_link_row'    => false,
             'device_claims_web_support'    => false,
@@ -168,6 +169,10 @@ class GomezAgent
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
      * @return DeviceHandler
      */
     public function detectDependProperties(
@@ -177,7 +182,7 @@ class GomezAgent
 
         $agent = str_ireplace(array('GomezAgent'), '', $this->useragent);
 
-        $detector = new \BrowserDetector\Input\UserAgent();
+        $detector = new UserAgent();
         $detector->setAgent($agent);
 
         $device->setRenderAs($detector->getBrowser());

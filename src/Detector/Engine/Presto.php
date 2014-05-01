@@ -47,6 +47,7 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -260,13 +261,11 @@ class Presto extends EngineHandler
     /**
      * detects the browser version from the given user agent
      *
-     * @param string $this ->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $searches = array('Presto');

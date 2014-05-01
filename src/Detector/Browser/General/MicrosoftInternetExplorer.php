@@ -44,6 +44,7 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
@@ -205,7 +206,7 @@ class MicrosoftInternetExplorer
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
@@ -254,7 +255,7 @@ class MicrosoftInternetExplorer
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Trident();
+        $handler = new Trident();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();
@@ -263,6 +264,10 @@ class MicrosoftInternetExplorer
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
      *
      * @return DeviceHandler
      */

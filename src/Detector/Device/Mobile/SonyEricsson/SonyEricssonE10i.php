@@ -72,7 +72,7 @@ class SonyEricssonE10i
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonE10i
      */
     public function __construct()
     {
@@ -151,9 +151,7 @@ class SonyEricssonE10i
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonE10i
      */
     public function detectDevice()
     {

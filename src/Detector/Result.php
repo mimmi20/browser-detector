@@ -1466,10 +1466,10 @@ class Result implements \Serializable
      * @return Result
      */
     public function setDetectionResult(
-        \BrowserDetector\Detector\DeviceHandler $device,
-        \BrowserDetector\Detector\OsHandler $os,
-        \BrowserDetector\Detector\BrowserHandler $browser,
-        \BrowserDetector\Detector\EngineHandler $engine
+        DeviceHandler $device,
+        OsHandler $os,
+        BrowserHandler $browser,
+        EngineHandler $engine
     ) {
         $properties = array_keys($this->getCapabilities());
 

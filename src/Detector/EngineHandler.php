@@ -44,6 +44,7 @@ namespace BrowserDetector\Detector;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 use BrowserDetector\Helper\Utils;
+use Zend\Cache\Frontend\Core;
 
 /**
  * base class for all rendering engines to detect
@@ -624,9 +625,9 @@ abstract class EngineHandler
      * @throws \InvalidArgumentException
      * @return EngineHandler
      */
-    public function setCache(\Zend\Cache\Frontend\Core $cache)
+    public function setCache(Core $cache)
     {
-        if (!($cache instanceof \Zend\Cache\Frontend\Core)) {
+        if (!($cache instanceof Core)) {
             throw new \InvalidArgumentException(
                 'the cache must be an instance of \\Zend\\Cache\\Frontend\\Core'
             );
@@ -665,7 +666,7 @@ abstract class EngineHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $this->setCapability(
@@ -700,7 +701,7 @@ abstract class EngineHandler
      * @param string $capabilityName must be a valid capability name
      *
      * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName)
     {

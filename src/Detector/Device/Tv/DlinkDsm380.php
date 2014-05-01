@@ -79,7 +79,7 @@ class DlinkDsm380
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return DlinkDsm380
      */
     public function __construct()
     {
@@ -148,9 +148,7 @@ class DlinkDsm380
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return DlinkDsm380
      */
     public function detectDevice()
     {
@@ -203,7 +201,7 @@ class DlinkDsm380
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBroser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

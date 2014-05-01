@@ -148,9 +148,7 @@ class SonyEricssonG700
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonG700
      */
     public function detectDevice()
     {

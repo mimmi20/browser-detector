@@ -72,7 +72,7 @@ class SonyEricssonR800i
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonR800i
      */
     public function __construct()
     {
@@ -155,9 +155,7 @@ class SonyEricssonR800i
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonR800i
      */
     public function detectDevice()
     {
@@ -186,7 +184,7 @@ class SonyEricssonR800i
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonR800i
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os

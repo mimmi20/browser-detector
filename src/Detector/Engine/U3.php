@@ -44,6 +44,7 @@ namespace BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -257,7 +258,7 @@ class U3 extends EngineHandler
      */
     protected function _detectVersion()
     {
-        $detector = new \BrowserDetector\Detector\Version();
+        $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $searches = array(
