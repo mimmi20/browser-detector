@@ -288,11 +288,11 @@ class BrowserDetector
         $result  = null;
         $success = false;
 
-        if (!$forceDetect) {
+        if (!$forceDetect && null !== $this->cache) {
             $result = $this->cache->getItem($cacheId, $success);
         }
 
-        if ($forceDetect || !$success || !($result instanceof Detector\Result)) {
+        if ($forceDetect || null === $this->cache || !$success || !($result instanceof Detector\Result)) {
             $result = $this->getInterface()->getBrowser();
 
             if (!($result instanceof Detector\Result)) {
@@ -302,7 +302,7 @@ class BrowserDetector
                 );
             }
 
-            if (!$forceDetect) {
+            if (!$forceDetect && null !== $this->cache) {
                 $this->cache->setItem($cacheId, $result);
             }
         }
