@@ -1,6 +1,7 @@
 <?php
 namespace BrowserDetectorTest\Input;
 
+use BrowserDetector\Input\Uasparser;
 use UAS\Parser;
 
 /**
@@ -10,7 +11,7 @@ use UAS\Parser;
 class InputUasparserTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var KreditCore_Class_BrowserDetector
+     * @var \BrowserDetector\Input\Uasparser
      */
     private $object = null;
 
@@ -22,7 +23,7 @@ class InputUasparserTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new \BrowserDetector\Input\Uasparser();
+        $this->object = new Uasparser();
     }
 
     /**
