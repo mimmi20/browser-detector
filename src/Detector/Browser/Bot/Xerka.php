@@ -70,7 +70,7 @@ class Xerka
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Xerka
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Xerka
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Xerka
      */
     protected function _detectVersion()
     {

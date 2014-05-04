@@ -69,7 +69,7 @@ class Yahoo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Yahoo
      */
     public function __construct()
     {

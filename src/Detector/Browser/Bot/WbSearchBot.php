@@ -70,7 +70,7 @@ class WbSearchBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\WbSearchBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class WbSearchBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\WbSearchBot
      */
     protected function _detectVersion()
     {

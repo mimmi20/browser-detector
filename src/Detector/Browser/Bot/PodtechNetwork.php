@@ -126,7 +126,7 @@ class PodtechNetwork
     /**
      * Returns true if this handler can handle the given user agent
      *
-     * @return bool
+     * @return \BrowserDetector\Detector\Browser\Bot\PodtechNetwork
      */
     protected function _detectVersion()
     {

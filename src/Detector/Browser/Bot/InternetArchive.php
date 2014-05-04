@@ -121,7 +121,7 @@ class InternetArchive
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\InternetArchive
      */
     protected function _detectVersion()
     {

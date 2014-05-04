@@ -121,7 +121,7 @@ class SeoEngineWorldBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\SeoEngineWorldBot
      */
     protected function _detectVersion()
     {

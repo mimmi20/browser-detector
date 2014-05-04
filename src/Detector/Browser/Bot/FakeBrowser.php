@@ -70,7 +70,7 @@ class FakeBrowser
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\FakeBrowser
      */
     public function __construct()
     {

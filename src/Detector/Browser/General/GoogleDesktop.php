@@ -69,7 +69,7 @@ class GoogleDesktop
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\GoogleDesktop
      */
     public function __construct()
     {
@@ -120,7 +120,7 @@ class GoogleDesktop
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\GoogleDesktop
      */
     protected function _detectVersion()
     {

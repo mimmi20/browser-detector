@@ -70,7 +70,7 @@ class A6Indexer
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\A6Indexer
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class A6Indexer
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\A6Indexer
      */
     protected function _detectVersion()
     {

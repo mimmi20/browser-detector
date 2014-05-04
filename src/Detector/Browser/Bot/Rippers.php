@@ -121,14 +121,14 @@ class Rippers
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Rippers
      */
     protected function _detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('GomezAgent');
+        $searches = array();
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)

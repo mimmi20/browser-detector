@@ -70,7 +70,7 @@ class AdobeAIR
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\AdobeAIR
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AdobeAIR
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\AdobeAIR
      */
     protected function _detectVersion()
     {

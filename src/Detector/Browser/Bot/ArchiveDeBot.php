@@ -70,7 +70,7 @@ class ArchiveDeBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ArchiveDeBot
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class ArchiveDeBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\ArchiveDeBot
      */
     protected function _detectVersion()
     {

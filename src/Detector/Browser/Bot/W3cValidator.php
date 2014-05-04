@@ -70,7 +70,7 @@ class W3cValidator
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\W3cValidator
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class W3cValidator
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\W3cValidator
      */
     protected function _detectVersion()
     {

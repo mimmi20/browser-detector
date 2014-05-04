@@ -70,7 +70,7 @@ class BnfFrBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\BnfFrBot
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class BnfFrBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\BnfFrBot
      */
     protected function _detectVersion()
     {

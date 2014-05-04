@@ -70,7 +70,7 @@ class AdvancedEmailExtractor
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AdvancedEmailExtractor
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AdvancedEmailExtractor
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AdvancedEmailExtractor
      */
     protected function _detectVersion()
     {

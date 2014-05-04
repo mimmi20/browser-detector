@@ -75,7 +75,7 @@ class Android
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Android
      */
     public function __construct()
     {
@@ -167,7 +167,7 @@ class Android
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Android
      */
     protected function _detectVersion()
     {
@@ -299,7 +299,7 @@ class Android
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Browser\General\Android
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

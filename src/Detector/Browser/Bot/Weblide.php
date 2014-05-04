@@ -70,7 +70,7 @@ class Weblide
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Weblide
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Weblide
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Weblide
      */
     protected function _detectVersion()
     {

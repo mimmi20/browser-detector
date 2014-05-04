@@ -70,7 +70,7 @@ class Elefent
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Elefent
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Elefent
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Elefent
      */
     protected function _detectVersion()
     {

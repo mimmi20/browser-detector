@@ -70,7 +70,7 @@ class BoardReader
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\BoardReader
      */
     public function __construct()
     {
@@ -136,7 +136,7 @@ class BoardReader
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\BoardReader
      */
     protected function _detectVersion()
     {

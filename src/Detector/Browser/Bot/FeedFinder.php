@@ -70,7 +70,7 @@ class FeedFinder
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\FeedFinder
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class FeedFinder
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\FeedFinder
      */
     protected function _detectVersion()
     {

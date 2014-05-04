@@ -70,7 +70,7 @@ class Bingbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Bingbot
      */
     public function __construct()
     {
@@ -128,7 +128,7 @@ class Bingbot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Bingbot
      */
     protected function _detectVersion()
     {

@@ -121,7 +121,7 @@ class Naver
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Naver
      */
     protected function _detectVersion()
     {

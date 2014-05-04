@@ -70,7 +70,7 @@ class AhrefsBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AhrefsBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AhrefsBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AhrefsBot
      */
     protected function _detectVersion()
     {

@@ -91,17 +91,6 @@ class TinEye
             'mobile_browser_bits'         => null, // not in wurfl
             'mobile_browser_manufacturer' => 'tineye.com', // not in wurfl
 
-            // os
-            // 'device_os'              => null,
-            // 'device_os_version'      => null,
-            // 'device_os_bits'         => null, // not in wurfl
-            // 'device_os_manufacturer' => null, // not in wurfl
-
-            // engine
-            // 'renderingengine_name'         => null, // not in wurfl
-            // 'renderingengine_version'      => null, // not in wurfl
-            // 'renderingengine_manufacturer' => null, // not in wurfl
-
             // product info
             'can_skip_aligned_link_row'   => false,
             'can_assign_phone_number'     => false,
@@ -125,7 +114,7 @@ class TinEye
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\TinEye
      */
     protected function _detectVersion()
     {

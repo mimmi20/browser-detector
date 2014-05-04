@@ -69,7 +69,7 @@ class YacyBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\YacyBot
      */
     public function __construct()
     {

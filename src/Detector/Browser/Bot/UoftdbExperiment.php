@@ -125,7 +125,7 @@ class UoftdbExperiment
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\UoftdbExperiment
      */
     protected function _detectVersion()
     {

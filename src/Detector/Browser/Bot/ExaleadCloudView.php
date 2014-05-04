@@ -70,7 +70,7 @@ class ExaleadCloudView
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ExaleadCloudView
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class ExaleadCloudView
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\ExaleadCloudView
      */
     protected function _detectVersion()
     {

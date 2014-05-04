@@ -74,7 +74,7 @@ class Firefox
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Firefox
      */
     public function __construct()
     {
@@ -175,7 +175,7 @@ class Firefox
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Firefox
      */
     protected function _detectVersion()
     {
@@ -226,7 +226,7 @@ class Firefox
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Browser\General\Firefox
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

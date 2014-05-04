@@ -70,7 +70,7 @@ class EventGuruBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\EventGuruBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class EventGuruBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\EventGuruBot
      */
     protected function _detectVersion()
     {

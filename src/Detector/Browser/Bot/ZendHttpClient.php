@@ -70,7 +70,7 @@ class ZendHttpClient
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ZendHttpClient
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class ZendHttpClient
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\ZendHttpClient
      */
     protected function _detectVersion()
     {

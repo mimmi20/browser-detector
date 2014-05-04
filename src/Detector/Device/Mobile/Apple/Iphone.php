@@ -76,7 +76,7 @@ class Iphone
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Iphone
      */
     public function __construct()
     {
@@ -149,9 +149,7 @@ class Iphone
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Iphone
      */
     public function detectDevice()
     {
@@ -197,12 +195,17 @@ class Iphone
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Iphone
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
         $osVersion = $os->getCapability('device_os_version')->getVersion();
+
+        if (6 <= $osVersion) {
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
+        }
 
         $this->setCapability('model_extra_info', $osVersion);
 

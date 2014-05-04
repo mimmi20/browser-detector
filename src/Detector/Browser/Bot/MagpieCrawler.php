@@ -121,7 +121,7 @@ class MagpieCrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\MagpieCrawler
      */
     protected function _detectVersion()
     {

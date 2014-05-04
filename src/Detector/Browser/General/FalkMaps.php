@@ -69,7 +69,7 @@ class FalkMaps
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\FalkMaps
      */
     public function __construct()
     {
@@ -120,7 +120,7 @@ class FalkMaps
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\FalkMaps
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class TenFourFox
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\TenFourFox
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class TenFourFox
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\TenFourFox
      */
     protected function _detectVersion()
     {

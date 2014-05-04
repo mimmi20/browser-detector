@@ -136,7 +136,7 @@ class RssOwl
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\RssOwl
      */
     protected function _detectVersion()
     {

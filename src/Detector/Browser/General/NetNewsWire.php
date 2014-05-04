@@ -70,7 +70,7 @@ class NetNewsWire
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\NetNewsWire
      */
     public function __construct()
     {
@@ -152,7 +152,7 @@ class NetNewsWire
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\NetNewsWire
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class XchaosArachne
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\XchaosArachne
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class XchaosArachne
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\XchaosArachne
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class WiJobRoboter
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\WiJobRoboter
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class WiJobRoboter
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\WiJobRoboter
      */
     protected function _detectVersion()
     {

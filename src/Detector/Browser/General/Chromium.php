@@ -73,7 +73,7 @@ class Chromium
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Chromium
      */
     public function __construct()
     {
@@ -143,7 +143,7 @@ class Chromium
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Chromium
      */
     protected function _detectVersion()
     {

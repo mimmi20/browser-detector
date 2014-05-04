@@ -70,7 +70,7 @@ class Wepbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wepbot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Wepbot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wepbot
      */
     protected function _detectVersion()
     {

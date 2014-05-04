@@ -70,7 +70,7 @@ class ScrapyBot
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\Rogerbot
+     * @return \BrowserDetector\Detector\Browser\Bot\ScrapyBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class ScrapyBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\ScrapyBot
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class Webaroo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Webaroo
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ class Webaroo
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Webaroo
      */
     protected function _detectVersion()
     {

@@ -121,7 +121,7 @@ class PagePeeker
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\PagePeeker
      */
     protected function _detectVersion()
     {

@@ -74,7 +74,7 @@ class Safari
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Safari
      */
     public function __construct()
     {
@@ -118,13 +118,21 @@ class Safari
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->useragent);
 
-        return $safariHelper->isSafari();
+        if (!$safariHelper->isSafari()) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContains(array('Safari'))) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Safari
      */
     protected function _detectVersion()
     {
@@ -217,7 +225,11 @@ class Safari
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\Safari
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

@@ -70,7 +70,7 @@ class LittleBookmarkBox
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\LittleBookmarkBox
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class LittleBookmarkBox
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\LittleBookmarkBox
      */
     protected function _detectVersion()
     {

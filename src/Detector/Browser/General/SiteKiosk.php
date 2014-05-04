@@ -70,7 +70,7 @@ class SiteKiosk
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\SiteKiosk
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class SiteKiosk
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\SiteKiosk
      */
     protected function _detectVersion()
     {

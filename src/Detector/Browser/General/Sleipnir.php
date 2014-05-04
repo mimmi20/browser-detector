@@ -74,7 +74,7 @@ class Sleipnir
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Sleipnir
      */
     public function __construct()
     {
@@ -147,7 +147,7 @@ class Sleipnir
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Sleipnir
      */
     protected function _detectVersion()
     {

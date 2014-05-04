@@ -125,7 +125,7 @@ class UnisterTesting
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\UnisterTesting
      */
     protected function _detectVersion()
     {
@@ -173,7 +173,7 @@ class UnisterTesting
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\UnisterTesting
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

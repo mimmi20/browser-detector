@@ -70,7 +70,7 @@ class CompSpyBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\CompSpyBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class CompSpyBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\CompSpyBot
      */
     protected function _detectVersion()
     {

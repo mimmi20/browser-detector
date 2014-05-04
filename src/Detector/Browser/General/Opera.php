@@ -74,7 +74,7 @@ class Opera
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Opera
      */
     public function __construct()
     {
@@ -148,7 +148,7 @@ class Opera
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Opera
      */
     protected function _detectVersion()
     {

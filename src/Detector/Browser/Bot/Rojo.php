@@ -125,7 +125,7 @@ class Rojo
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Rojo
      */
     protected function _detectVersion()
     {

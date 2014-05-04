@@ -70,7 +70,7 @@ class Coast
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Coast
      */
     public function __construct()
     {
@@ -84,7 +84,7 @@ class Coast
             'mobile_browser'               => 'Surfers Paradise Gold Coast App',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Opera(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +131,7 @@ class Coast
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Coast
      */
     protected function _detectVersion()
     {

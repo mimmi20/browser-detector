@@ -74,7 +74,7 @@ class Lunascape
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Lunascape
      */
     public function __construct()
     {
@@ -152,7 +152,7 @@ class Lunascape
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Lunascape
      */
     protected function _detectVersion()
     {
@@ -176,16 +176,6 @@ class Lunascape
     public function getWeight()
     {
         return 30814;
-    }
-
-    /**
-     * returns TRUE if the device has a specific Operating System
-     *
-     * @return boolean
-     */
-    public function hasEngine()
-    {
-        return true;
     }
 
     /**

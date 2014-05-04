@@ -70,7 +70,7 @@ class BndCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\BndCrawler
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class BndCrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\BndCrawler
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class Midori
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Midori
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Midori
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Midori
      */
     protected function _detectVersion()
     {

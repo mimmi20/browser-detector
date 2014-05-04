@@ -70,7 +70,7 @@ class Crawler4j
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Crawler4j
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Crawler4j
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Crawler4j
      */
     protected function _detectVersion()
     {

@@ -74,7 +74,7 @@ class Maxthon
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Maxthon
      */
     public function __construct()
     {
@@ -151,7 +151,7 @@ class Maxthon
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Maxthon
      */
     protected function _detectVersion()
     {

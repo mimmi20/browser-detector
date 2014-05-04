@@ -126,7 +126,7 @@ class InsiteRobot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\InsiteRobot
      */
     protected function _detectVersion()
     {

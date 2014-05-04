@@ -70,7 +70,7 @@ class WebDownloader
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\WebDownloader
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class WebDownloader
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\WebDownloader
      */
     protected function _detectVersion()
     {

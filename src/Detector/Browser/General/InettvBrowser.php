@@ -70,7 +70,7 @@ class InettvBrowser
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\InettvBrowser
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class InettvBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\InettvBrowser
      */
     protected function _detectVersion()
     {

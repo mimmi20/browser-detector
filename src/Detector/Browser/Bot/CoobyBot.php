@@ -69,7 +69,7 @@ class CoobyBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\CoobyBot
      */
     public function __construct()
     {

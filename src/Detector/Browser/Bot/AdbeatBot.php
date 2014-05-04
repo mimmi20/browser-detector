@@ -70,7 +70,7 @@ class AdbeatBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AdbeatBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AdbeatBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AdbeatBot
      */
     protected function _detectVersion()
     {

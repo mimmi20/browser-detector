@@ -69,7 +69,7 @@ class XmlRpcForPhp
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\XmlRpcForPhp
      */
     public function __construct()
     {

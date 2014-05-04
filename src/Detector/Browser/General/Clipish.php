@@ -70,7 +70,7 @@ class Clipish
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Clipish
      */
     public function __construct()
     {
@@ -122,7 +122,7 @@ class Clipish
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Clipish
      */
     protected function _detectVersion()
     {

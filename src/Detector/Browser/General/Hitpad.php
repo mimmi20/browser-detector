@@ -70,7 +70,7 @@ class Hitpad
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Hitpad
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Hitpad
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Hitpad
      */
     protected function _detectVersion()
     {

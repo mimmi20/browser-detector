@@ -70,7 +70,7 @@ class Omniweb
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Omniweb
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Omniweb
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Omniweb
      */
     protected function _detectVersion()
     {

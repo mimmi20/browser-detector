@@ -70,7 +70,7 @@ class Wwwster
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wwwster
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Wwwster
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wwwster
      */
     protected function _detectVersion()
     {

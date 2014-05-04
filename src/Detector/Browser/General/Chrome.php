@@ -76,7 +76,7 @@ class Chrome
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Chrome
      */
     public function __construct()
     {
@@ -166,7 +166,7 @@ class Chrome
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Chrome
      */
     protected function _detectVersion()
     {
@@ -222,7 +222,7 @@ class Chrome
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Browser\General\Chrome
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

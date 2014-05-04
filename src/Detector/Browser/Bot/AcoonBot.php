@@ -70,7 +70,7 @@ class AcoonBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AcoonBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AcoonBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AcoonBot
      */
     protected function _detectVersion()
     {

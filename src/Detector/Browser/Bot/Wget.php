@@ -70,7 +70,7 @@ class Wget
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wget
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Wget
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wget
      */
     protected function _detectVersion()
     {

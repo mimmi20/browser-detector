@@ -70,7 +70,7 @@ class Wikimpress
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wikimpress
      */
     public function __construct()
     {
@@ -140,7 +140,7 @@ class Wikimpress
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wikimpress
      */
     protected function _detectVersion()
     {

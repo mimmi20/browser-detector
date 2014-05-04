@@ -69,7 +69,7 @@ class Webimages
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Webimages
      */
     public function __construct()
     {
@@ -111,11 +111,10 @@ class Webimages
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('WebImages')) {
-            $this->_version = false;
-            return;
+            return false;
         }
 
-        $this->_version = true;
+        return true;
     }
 
     /**

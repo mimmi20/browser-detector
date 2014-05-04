@@ -121,7 +121,7 @@ class SemrushBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\SemrushBot
      */
     protected function _detectVersion()
     {

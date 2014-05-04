@@ -70,7 +70,7 @@ class Zookabot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Zookabot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Zookabot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Zookabot
      */
     protected function _detectVersion()
     {

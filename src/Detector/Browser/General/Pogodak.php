@@ -69,7 +69,7 @@ class Pogodak
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Pogodak
      */
     public function __construct()
     {
@@ -124,7 +124,7 @@ class Pogodak
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Pogodak
      */
     protected function _detectVersion()
     {

@@ -131,7 +131,7 @@ class SiteExplorer
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\SiteExplorer
      */
     protected function _detectVersion()
     {

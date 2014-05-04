@@ -70,7 +70,7 @@ class Spector
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Spector
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class Spector
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Spector
      */
     protected function _detectVersion()
     {

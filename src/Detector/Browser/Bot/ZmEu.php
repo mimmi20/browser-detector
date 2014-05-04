@@ -69,7 +69,7 @@ class ZmEu
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ZmEu
      */
     public function __construct()
     {

@@ -70,7 +70,7 @@ class Awesomebot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Awesomebot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Awesomebot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Awesomebot
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class CamelHttpStream
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\CamelHttpStream
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class CamelHttpStream
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\CamelHttpStream
      */
     protected function _detectVersion()
     {

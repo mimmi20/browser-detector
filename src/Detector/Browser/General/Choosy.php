@@ -70,7 +70,7 @@ class Choosy
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Choosy
      */
     public function __construct()
     {
@@ -136,7 +136,7 @@ class Choosy
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Choosy
      */
     protected function _detectVersion()
     {

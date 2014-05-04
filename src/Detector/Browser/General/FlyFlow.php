@@ -70,7 +70,7 @@ class FlyFlow
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\FlyFlow
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class FlyFlow
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\FlyFlow
      */
     protected function _detectVersion()
     {

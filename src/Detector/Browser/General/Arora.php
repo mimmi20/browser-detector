@@ -70,7 +70,7 @@ class Arora
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Arora
      */
     public function __construct()
     {
@@ -146,7 +146,7 @@ class Arora
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Arora
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class EuripBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\EuripBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class EuripBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\EuripBot
      */
     protected function _detectVersion()
     {

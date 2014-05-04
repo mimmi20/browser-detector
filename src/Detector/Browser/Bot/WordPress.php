@@ -70,7 +70,7 @@ class WordPress
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\WordPress
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class WordPress
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\WordPress
      */
     protected function _detectVersion()
     {

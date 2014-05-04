@@ -131,7 +131,7 @@ class TweetedTimesBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\TweetedTimesBot
      */
     protected function _detectVersion()
     {

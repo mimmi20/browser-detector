@@ -70,7 +70,7 @@ class AtomicBrowser
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\AtomicBrowser
      */
     public function __construct()
     {
@@ -123,7 +123,7 @@ class AtomicBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\AtomicBrowser
      */
     protected function _detectVersion()
     {

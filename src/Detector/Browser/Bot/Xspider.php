@@ -69,7 +69,7 @@ class Xspider
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Xspider
      */
     public function __construct()
     {

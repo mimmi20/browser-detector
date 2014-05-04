@@ -70,7 +70,7 @@ class AugustBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AugustBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AugustBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AugustBot
      */
     protected function _detectVersion()
     {

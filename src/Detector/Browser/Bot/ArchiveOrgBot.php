@@ -69,7 +69,7 @@ class ArchiveOrgBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ArchiveOrgBot
      */
     public function __construct()
     {

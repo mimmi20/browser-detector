@@ -70,7 +70,7 @@ class Wisebot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wisebot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Wisebot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wisebot
      */
     protected function _detectVersion()
     {

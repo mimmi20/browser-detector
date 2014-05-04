@@ -69,7 +69,7 @@ class DarwinBrowser
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\DarwinBrowser
      */
     public function __construct()
     {

@@ -73,7 +73,7 @@ class AlcoholSearch
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AlcoholSearch
      */
     public function __construct()
     {
@@ -135,7 +135,11 @@ class AlcoholSearch
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\Bot\AlcoholSearch
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

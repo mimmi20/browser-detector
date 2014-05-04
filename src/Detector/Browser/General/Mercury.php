@@ -69,7 +69,7 @@ class Mercury
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Mercury
      */
     public function __construct()
     {
@@ -120,7 +120,7 @@ class Mercury
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Mercury
      */
     protected function _detectVersion()
     {

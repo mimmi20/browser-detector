@@ -95,7 +95,7 @@ class MicrosoftInternetExplorer
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
      */
     public function __construct()
     {
@@ -202,7 +202,7 @@ class MicrosoftInternetExplorer
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
      */
     protected function _detectVersion()
     {
@@ -269,7 +269,7 @@ class MicrosoftInternetExplorer
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
