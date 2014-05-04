@@ -52,11 +52,11 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
 
         $result = $this->object->getBrowser();
 
-        $this->assertInstanceOf('BrowserDetector\\Detector\\Result', $result);
+        self::assertInstanceOf('BrowserDetector\Detector\Result', $result);
 
-        $this->assertSame($browser, $result->getCapability('mobile_browser', true), 'browser name mismatch');
-        $this->assertSame($version, $result->getCapability('mobile_browser_version', false)->getVersion(Version::MAJORMINOR), 'browser version mismatch');
-        $this->assertSame($platform, $result->getCapability('device_os', false), 'platform name mismatch');
+        self::assertSame($browser, $result->getCapability('mobile_browser', true), 'browser name mismatch');
+        self::assertSame($version, $result->getCapability('mobile_browser_version', false)->getVersion(Version::MAJORMINOR), 'browser version mismatch');
+        self::assertSame($platform, $result->getCapability('device_os', false), 'platform name mismatch');
     }
 
     public function providerGetBrowser()

@@ -90,39 +90,39 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
         $frames, $iframes, $tables, $cookies, $bgsound, $javascript, $vbscript,
         $java, $activex, $synreader, $pdf, $rss
     ) {
-        $this->assertInstanceOf('\BrowserDetector\Detector\Result', $result);
+        self::assertInstanceOf('\BrowserDetector\Detector\Result', $result);
 
-        $this->assertSame($device, $result->getFullDevice(true), 'device mismatch');
-        $this->assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');
-        $this->assertSame($tablet, $result->isTablet(), 'tablet mismatch');
-        $this->assertSame($bot, $result->isCrawler(), 'crawler mismatch');
-        $this->assertSame($desktop, $result->isDesktop(), 'desktop device mismatch');
-        $this->assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
-        $this->assertSame($browser, $result->getCapability('mobile_browser', true), 'browser name mismatch');
-        $this->assertSame(
+        self::assertSame($device, $result->getFullDevice(true), 'device mismatch');
+        self::assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');
+        self::assertSame($tablet, $result->isTablet(), 'tablet mismatch');
+        self::assertSame($bot, $result->isCrawler(), 'crawler mismatch');
+        self::assertSame($desktop, $result->isDesktop(), 'desktop device mismatch');
+        self::assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
+        self::assertSame($browser, $result->getCapability('mobile_browser', true), 'browser name mismatch');
+        self::assertSame(
             $browserVersion, $result->getCapability('mobile_browser_version', false)->getVersion(
                 Version::COMPLETE
             ), 'browser version mismatch'
         );
-        $this->assertSame($platform, $result->getCapability('device_os', false), 'platform name mismatch');
-        // $this->assertSame($platformVersion, $result->getCapability('device_os_version', false)->getVersion(\BrowserDetector\Detector\Version::COMPLETE), 'platform version mismach');
-        // $this->assertSame($frames, $result->supportsFrames(), 'frames mismatch');
-        // $this->assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
-        // $this->assertSame($tables, $result->supportsTables(), 'tables mismatch');
-        // $this->assertSame($cookies, $result->supportsCookies(), 'cookies mismatch');
-        // $this->assertSame($bgsound, $result->supportsBackgroundSounds(), 'bgsound mismatch');
-        // $this->assertSame($javascript, $result->supportsJavaScript(), 'js mismatch');
-        // $this->assertSame($vbscript, $result->supportsVbScript(), 'vbs mismatch');
-        // $this->assertSame($java, $result->supportsJavaApplets(), 'java mismatch');
-        // $this->assertSame($activex, $result->supportsActivexControls(), 'activex mismatch');
-        // $this->assertSame($synreader, $result->isSyndicationReader(), 'syndreader mismatch');
-        // $this->assertSame($pdf, $result->isPdfSupported(), 'pdf mismatch');
-        // $this->assertSame($rss, $result->isRssSupported(), 'rss mismatch');
+        self::assertSame($platform, $result->getCapability('device_os', false), 'platform name mismatch');
+        // self::assertSame($platformVersion, $result->getCapability('device_os_version', false)->getVersion(\BrowserDetector\Detector\Version::COMPLETE), 'platform version mismach');
+        // self::assertSame($frames, $result->supportsFrames(), 'frames mismatch');
+        // self::assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
+        // self::assertSame($tables, $result->supportsTables(), 'tables mismatch');
+        // self::assertSame($cookies, $result->supportsCookies(), 'cookies mismatch');
+        // self::assertSame($bgsound, $result->supportsBackgroundSounds(), 'bgsound mismatch');
+        // self::assertSame($javascript, $result->supportsJavaScript(), 'js mismatch');
+        // self::assertSame($vbscript, $result->supportsVbScript(), 'vbs mismatch');
+        // self::assertSame($java, $result->supportsJavaApplets(), 'java mismatch');
+        // self::assertSame($activex, $result->supportsActivexControls(), 'activex mismatch');
+        // self::assertSame($synreader, $result->isSyndicationReader(), 'syndreader mismatch');
+        // self::assertSame($pdf, $result->isPdfSupported(), 'pdf mismatch');
+        // self::assertSame($rss, $result->isRssSupported(), 'rss mismatch');
     }
 
     public function providerGetBrowser()
     {
-        return array( /*   Browser              BrowserVersion   OS                     OSVersion    Device                     mobile tablet bot    desk   transc framesiframes tabellecookiesbgsound js    vbs    java   activex syn   pdf    rss  */
+        return array(
             /* Firefox */
             array(
                 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/20100101 Firefox/5.0 FirePHP/0.5', 'Firefox', '5.0.0',

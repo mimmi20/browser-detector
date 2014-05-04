@@ -53,30 +53,30 @@ class InputUasparserTest extends \PHPUnit_Framework_TestCase
 
         $result = $this->object->getBrowser();
 
-        $this->assertInstanceOf('BrowserDetector\\Detector\\Result', $result);
+        self::assertInstanceOf('BrowserDetector\\Detector\\Result', $result);
 
-        // $this->assertSame($device, $result->getFullDevice(true), 'device mismatch');
-        // $this->assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');
-        // $this->assertSame($tablet, $result->isTablet(), 'tablet mismatch');
-        // $this->assertSame($bot, $result->isCrawler(), 'crawler mismatch');
-        // $this->assertSame($desktop, $result->isDesktop(), 'desktop device mismatch');
-        // $this->assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
-        // $this->assertSame($browser, $result->getFullBrowser(), 'browser name mismatch');
-        // $this->assertSame($browserVersion, $result->getVersion()->getVersion(\BrowserDetector\Detector\Version::COMPLETE), 'browser version mismatch');
-        // $this->assertSame($platform, $result->getPlatform(), 'platform name mismatch');
-        // $this->assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\BrowserDetector\Detector\Version::COMPLETE), 'platform version mismach');
-        // $this->assertSame($frames, $result->supportsFrames(), 'frames mismatch');
-        // $this->assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
-        // $this->assertSame($tables, $result->supportsTables(), 'tables mismatch');
-        // $this->assertSame($cookies, $result->supportsCookies(), 'cookies mismatch');
-        // $this->assertSame($bgsound, $result->supportsBackgroundSounds(), 'bgsound mismatch');
-        // $this->assertSame($javascript, $result->supportsJavaScript(), 'js mismatch');
-        // $this->assertSame($vbscript, $result->supportsVbScript(), 'vbs mismatch');
-        // $this->assertSame($java, $result->supportsJavaApplets(), 'java mismatch');
-        // $this->assertSame($activex, $result->supportsActivexControls(), 'activex mismatch');
-        // $this->assertSame($synreader, $result->isSyndicationReader(), 'syndreader mismatch');
-        // $this->assertSame($pdf, $result->isPdfSupported(), 'pdf mismatch');
-        // $this->assertSame($rss, $result->isRssSupported(), 'rss mismatch');
+        // self::assertSame($device, $result->getFullDevice(true), 'device mismatch');
+        // self::assertSame($mobile, $result->isMobileDevice(), 'mobile device mismatch');
+        // self::assertSame($tablet, $result->isTablet(), 'tablet mismatch');
+        // self::assertSame($bot, $result->isCrawler(), 'crawler mismatch');
+        // self::assertSame($desktop, $result->isDesktop(), 'desktop device mismatch');
+        // self::assertSame($transcoder, $result->isTranscoder(), 'transcoder mismatch');
+        // self::assertSame($browser, $result->getFullBrowser(), 'browser name mismatch');
+        // self::assertSame($browserVersion, $result->getVersion()->getVersion(\BrowserDetector\Detector\Version::COMPLETE), 'browser version mismatch');
+        // self::assertSame($platform, $result->getPlatform(), 'platform name mismatch');
+        // self::assertSame($platformVersion, $result->getPlatformVersion()->getVersion(\BrowserDetector\Detector\Version::COMPLETE), 'platform version mismach');
+        // self::assertSame($frames, $result->supportsFrames(), 'frames mismatch');
+        // self::assertSame($iframes, $result->supportsIframes(), 'iframes mismatch');
+        // self::assertSame($tables, $result->supportsTables(), 'tables mismatch');
+        // self::assertSame($cookies, $result->supportsCookies(), 'cookies mismatch');
+        // self::assertSame($bgsound, $result->supportsBackgroundSounds(), 'bgsound mismatch');
+        // self::assertSame($javascript, $result->supportsJavaScript(), 'js mismatch');
+        // self::assertSame($vbscript, $result->supportsVbScript(), 'vbs mismatch');
+        // self::assertSame($java, $result->supportsJavaApplets(), 'java mismatch');
+        // self::assertSame($activex, $result->supportsActivexControls(), 'activex mismatch');
+        // self::assertSame($synreader, $result->isSyndicationReader(), 'syndreader mismatch');
+        // self::assertSame($pdf, $result->isPdfSupported(), 'pdf mismatch');
+        // self::assertSame($rss, $result->isRssSupported(), 'rss mismatch');
     }
 
     public function providerGetBrowser()
