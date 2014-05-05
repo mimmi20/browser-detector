@@ -70,7 +70,7 @@ class AiHitBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AiHitBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AiHitBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AiHitBot
      */
     protected function _detectVersion()
     {

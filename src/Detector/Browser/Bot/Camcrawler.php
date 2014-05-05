@@ -70,7 +70,7 @@ class Camcrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Camcrawler
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Camcrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Camcrawler
      */
     protected function _detectVersion()
     {

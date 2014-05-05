@@ -70,7 +70,7 @@ class BlekkoBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\BlekkoBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class BlekkoBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\BlekkoBot
      */
     protected function _detectVersion()
     {

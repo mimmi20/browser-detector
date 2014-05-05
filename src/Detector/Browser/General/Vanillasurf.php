@@ -70,7 +70,7 @@ class Vanillasurf
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Vanillasurf
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ class Vanillasurf
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Vanillasurf
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class QtWeb
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\QtWeb
      */
     public function __construct()
     {
@@ -129,7 +129,7 @@ class QtWeb
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\QtWeb
      */
     protected function _detectVersion()
     {

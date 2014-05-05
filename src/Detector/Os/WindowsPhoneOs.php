@@ -41,7 +41,13 @@ namespace BrowserDetector\Detector\Os;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\Mobile\Opera;
+use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
@@ -76,7 +82,7 @@ class WindowsPhoneOs
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function __construct()
     {
@@ -125,8 +131,6 @@ class WindowsPhoneOs
     /**
      * detects the browser name from the given user agent
      *
-     * @param string $this ->_useragent
-     *
      * @return string
      */
     protected function _detectVersion()
@@ -173,16 +177,16 @@ class WindowsPhoneOs
     public function detectBrowser()
     {
         $browsers = array(
-            new \BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer(),
-            new \BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer(),
-            new \BrowserDetector\Detector\Browser\Mobile\OperaMobile(),
-            new \BrowserDetector\Detector\Browser\Mobile\Opera()
+            new MicrosoftInternetExplorer(),
+            new MicrosoftMobileExplorer(),
+            new OperaMobile(),
+            new Opera()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }
@@ -190,6 +194,10 @@ class WindowsPhoneOs
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\DeviceHandler  $device
      *
      * @return DeviceHandler
      */

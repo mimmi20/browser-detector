@@ -70,7 +70,7 @@ class YandexBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\YandexBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class YandexBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\YandexBot
      */
     protected function _detectVersion()
     {

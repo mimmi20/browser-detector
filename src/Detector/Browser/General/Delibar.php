@@ -69,7 +69,7 @@ class Delibar
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Delibar
      */
     public function __construct()
     {
@@ -120,7 +120,7 @@ class Delibar
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Delibar
      */
     protected function _detectVersion()
     {

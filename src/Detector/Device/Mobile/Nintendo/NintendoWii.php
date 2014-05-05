@@ -49,6 +49,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -189,7 +190,7 @@ class NintendoWii
      */
     public function detectOs()
     {
-        $handler = new \BrowserDetector\Detector\Os\UnknownOs();
+        $handler = new UnknownOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();

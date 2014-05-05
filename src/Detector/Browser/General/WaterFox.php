@@ -84,7 +84,7 @@ class WaterFox
             'mobile_browser'               => 'WaterFox',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Mozilla(), // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -121,7 +121,7 @@ class WaterFox
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\WaterFox
      */
     protected function _detectVersion()
     {

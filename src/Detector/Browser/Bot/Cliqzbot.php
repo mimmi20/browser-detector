@@ -70,7 +70,7 @@ class Cliqzbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Cliqzbot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Cliqzbot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Cliqzbot
      */
     protected function _detectVersion()
     {

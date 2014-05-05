@@ -44,6 +44,7 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
@@ -72,7 +73,7 @@ class MicrosoftMobileExplorer
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
      */
     public function __construct()
     {
@@ -147,7 +148,7 @@ class MicrosoftMobileExplorer
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
      */
     protected function _detectVersion()
     {
@@ -185,7 +186,7 @@ class MicrosoftMobileExplorer
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Trident();
+        $handler = new Trident();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();
@@ -205,7 +206,11 @@ class MicrosoftMobileExplorer
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

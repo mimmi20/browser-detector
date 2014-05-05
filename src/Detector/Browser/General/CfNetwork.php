@@ -69,7 +69,7 @@ class CfNetwork
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\CfNetwork
      */
     public function __construct()
     {

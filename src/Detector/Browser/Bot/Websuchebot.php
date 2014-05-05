@@ -70,7 +70,7 @@ class Websuchebot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Websuchebot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Websuchebot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Websuchebot
      */
     protected function _detectVersion()
     {

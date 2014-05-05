@@ -46,6 +46,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\Result;
 use BrowserDetector\Helper\InputMapper;
+use UAParser\Parser;
 
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
@@ -72,7 +73,7 @@ class Uaparser extends Core
      *
      * @return \BrowserDetector\Input\Uaparser
      */
-    public function setParser(\UAParser\Parser $parser)
+    public function setParser(Parser $parser)
     {
         $this->parser = $parser;
 
@@ -117,7 +118,7 @@ class Uaparser extends Core
      */
     private function initParser()
     {
-        if (!($this->parser instanceof \UAParser\Parser)) {
+        if (!($this->parser instanceof Parser)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\UAParser\\Parser'
             );

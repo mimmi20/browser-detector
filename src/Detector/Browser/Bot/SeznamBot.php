@@ -121,7 +121,7 @@ class SeznamBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\SeznamBot
      */
     protected function _detectVersion()
     {

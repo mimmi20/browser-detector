@@ -42,7 +42,11 @@ namespace BrowserDetector\Detector\Browser\Desktop;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Gecko;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -188,14 +192,14 @@ class Epiphany
     public function detectEngine()
     {
         $engines = array(
-            new \BrowserDetector\Detector\Engine\Webkit(),
-            new \BrowserDetector\Detector\Engine\Gecko()
+            new Webkit(),
+            new Gecko()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
+        $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
     }

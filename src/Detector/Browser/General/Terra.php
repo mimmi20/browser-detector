@@ -70,7 +70,7 @@ class Terra
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Terra
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Terra
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Terra
      */
     protected function _detectVersion()
     {

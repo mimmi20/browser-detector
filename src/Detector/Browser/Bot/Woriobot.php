@@ -69,7 +69,7 @@ class Woriobot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Woriobot
      */
     public function __construct()
     {

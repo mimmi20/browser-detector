@@ -70,7 +70,7 @@ class ApacheHttpClient
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ApacheHttpClient
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class ApacheHttpClient
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\ApacheHttpClient
      */
     protected function _detectVersion()
     {

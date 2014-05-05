@@ -41,6 +41,8 @@ namespace BrowserDetector\Detector\Device;
  * @version   SVN: $Id$
  */
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
@@ -188,13 +190,11 @@ class GeneralDesktop
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return GeneralDesktop
      */
     public function detectDevice()
     {
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace(__NAMESPACE__ . '\\Desktop');
         $chain->setDirectory(
@@ -230,11 +230,11 @@ class GeneralDesktop
             . DIRECTORY_SEPARATOR
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Browser\UnknownBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

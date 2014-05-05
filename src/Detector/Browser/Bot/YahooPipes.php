@@ -70,7 +70,7 @@ class YahooPipes
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\YahooPipes
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class YahooPipes
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\YahooPipes
      */
     protected function _detectVersion()
     {

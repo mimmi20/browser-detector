@@ -121,7 +121,7 @@ class JustCrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\JustCrawler
      */
     protected function _detectVersion()
     {

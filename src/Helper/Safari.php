@@ -82,6 +82,9 @@ class Safari
         return $this;
     }
 
+    /**
+     * @return bool
+     */
     public function isSafari()
     {
         if (!$this->utils->checkIfContains('Mozilla/')

@@ -70,7 +70,7 @@ class Browser360
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Browser360
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Browser360
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Browser360
      */
     protected function _detectVersion()
     {

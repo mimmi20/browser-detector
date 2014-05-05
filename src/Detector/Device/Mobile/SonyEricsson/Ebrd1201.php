@@ -148,9 +148,7 @@ class Ebrd1201
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\Ebrd1201
      */
     public function detectDevice()
     {

@@ -70,7 +70,7 @@ class Incredimail
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Incredimail
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Incredimail
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Incredimail
      */
     protected function _detectVersion()
     {

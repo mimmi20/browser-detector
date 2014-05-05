@@ -42,7 +42,11 @@ namespace BrowserDetector\Detector\Browser\General;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -69,7 +73,7 @@ class Chromium
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Chromium
      */
     public function __construct()
     {
@@ -139,7 +143,7 @@ class Chromium
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Chromium
      */
     protected function _detectVersion()
     {
@@ -175,14 +179,14 @@ class Chromium
     public function detectEngine()
     {
         $engines = array(
-            new \BrowserDetector\Detector\Engine\Webkit(),
-            new \BrowserDetector\Detector\Engine\Blink()
+            new Webkit(),
+            new Blink()
         );
 
-        $chain = new \BrowserDetector\Detector\Chain();
+        $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new \BrowserDetector\Detector\Engine\UnknownEngine());
+        $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
     }

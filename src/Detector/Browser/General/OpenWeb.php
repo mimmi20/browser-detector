@@ -70,7 +70,7 @@ class OpenWeb
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\OpenWeb
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class OpenWeb
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\OpenWeb
      */
     protected function _detectVersion()
     {

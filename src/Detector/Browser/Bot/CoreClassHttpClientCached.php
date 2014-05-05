@@ -70,7 +70,7 @@ class CoreClassHttpClientCached
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\CoreClassHttpClientCached
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class CoreClassHttpClientCached
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\CoreClassHttpClientCached
      */
     protected function _detectVersion()
     {

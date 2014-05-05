@@ -70,7 +70,7 @@ class FaceBookBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\FaceBookBot
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ class FaceBookBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\FaceBookBot
      */
     protected function _detectVersion()
     {

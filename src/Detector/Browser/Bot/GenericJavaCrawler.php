@@ -121,7 +121,7 @@ class GenericJavaCrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler
      */
     protected function _detectVersion()
     {

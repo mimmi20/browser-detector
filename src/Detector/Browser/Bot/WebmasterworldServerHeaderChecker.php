@@ -70,7 +70,7 @@ class WebmasterworldServerHeaderChecker
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\WebmasterworldServerHeaderChecker
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ class WebmasterworldServerHeaderChecker
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\WebmasterworldServerHeaderChecker
      */
     protected function _detectVersion()
     {

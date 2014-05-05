@@ -70,7 +70,7 @@ class Winkbot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Winkbot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Winkbot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Winkbot
      */
     protected function _detectVersion()
     {

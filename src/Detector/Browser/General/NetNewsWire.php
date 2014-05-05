@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -69,7 +70,7 @@ class NetNewsWire
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\NetNewsWire
      */
     public function __construct()
     {
@@ -151,7 +152,7 @@ class NetNewsWire
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\NetNewsWire
      */
     protected function _detectVersion()
     {
@@ -185,7 +186,7 @@ class NetNewsWire
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Webkit();
+        $handler = new Webkit();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

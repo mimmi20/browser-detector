@@ -70,7 +70,7 @@ class BingPreview
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\BingPreview
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class BingPreview
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\BingPreview
      */
     protected function _detectVersion()
     {

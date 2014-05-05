@@ -69,7 +69,7 @@ class Boxee
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Boxee
      */
     public function __construct()
     {
@@ -126,7 +126,7 @@ class Boxee
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Boxee
      */
     protected function _detectVersion()
     {

@@ -70,7 +70,7 @@ class DiscoveryBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\DiscoveryBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class DiscoveryBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\DiscoveryBot
      */
     protected function _detectVersion()
     {

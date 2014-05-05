@@ -228,6 +228,9 @@ class InputMapper
         case 'useragent anonymizer':
             $browserType = new BrowserType\UseragentAnonymizer();
             break;
+        case 'wap browser':
+            $browserType = new BrowserType\WapBrowser();
+            break;
         default:
             switch (strtolower($browserName)) {
             case 'unknown':

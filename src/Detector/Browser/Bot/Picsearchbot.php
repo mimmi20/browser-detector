@@ -121,7 +121,7 @@ class Picsearchbot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Picsearchbot
      */
     protected function _detectVersion()
     {

@@ -69,7 +69,7 @@ class Extras4iMovie
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Extras4iMovie
      */
     public function __construct()
     {
@@ -120,7 +120,7 @@ class Extras4iMovie
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Extras4iMovie
      */
     protected function _detectVersion()
     {

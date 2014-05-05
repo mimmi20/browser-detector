@@ -121,7 +121,7 @@ class HitLeapViewer
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\HitLeapViewer
      */
     protected function _detectVersion()
     {

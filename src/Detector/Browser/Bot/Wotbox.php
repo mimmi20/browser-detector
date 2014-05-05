@@ -70,7 +70,7 @@ class Wotbox
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wotbox
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class Wotbox
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wotbox
      */
     protected function _detectVersion()
     {

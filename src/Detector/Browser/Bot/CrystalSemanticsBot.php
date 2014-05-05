@@ -69,7 +69,7 @@ class CrystalSemanticsBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\CrystalSemanticsBot
      */
     public function __construct()
     {

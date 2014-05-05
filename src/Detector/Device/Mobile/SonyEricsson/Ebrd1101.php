@@ -148,9 +148,7 @@ class Ebrd1101
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\Ebrd1101
      */
     public function detectDevice()
     {
@@ -161,7 +159,7 @@ class Ebrd1101
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {

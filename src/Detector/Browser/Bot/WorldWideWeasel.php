@@ -70,7 +70,7 @@ class WorldWideWeasel
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\WorldWideWeasel
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class WorldWideWeasel
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\WorldWideWeasel
      */
     protected function _detectVersion()
     {

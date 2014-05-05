@@ -48,6 +48,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -70,7 +71,7 @@ class AppleMail
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\AppleMail
      */
     public function __construct()
     {
@@ -115,6 +116,13 @@ class AppleMail
             return true;
         }
 
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->useragent);
+
+        if ($safariHelper->isSafari() && !$this->utils->checkIfContains(array('Safari'))) {
+            return true;
+        }
+
         return false;
     }
 
@@ -131,7 +139,7 @@ class AppleMail
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\AppleMail
      */
     protected function _detectVersion()
     {

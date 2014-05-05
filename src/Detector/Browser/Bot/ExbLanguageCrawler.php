@@ -70,7 +70,7 @@ class ExbLanguageCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\ExbLanguageCrawler
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class ExbLanguageCrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\ExbLanguageCrawler
      */
     protected function _detectVersion()
     {

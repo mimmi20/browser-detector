@@ -70,7 +70,7 @@ class Findlinks
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Findlinks
      */
     public function __construct()
     {
@@ -131,7 +131,7 @@ class Findlinks
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Findlinks
      */
     protected function _detectVersion()
     {

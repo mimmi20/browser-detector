@@ -48,6 +48,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
+use phpbrowscap\Detector;
 use WurflCache\Adapter\AdapterInterface;
 
 /**
@@ -71,11 +72,13 @@ class BrowscapDetector extends AbstractBrowscapInput
     /**
      * sets the UA Parser detector
      *
-     * @var \phpbrowscap\Browscap $parser
+     * @param \phpbrowscap\Detector $parser
      *
-     * @return \phpbrowscap\Detector
+     * @internal param \phpbrowscap\Browscap $parser
+     *
+     * @return BrowscapDetector
      */
-    public function setParser(\phpbrowscap\Detector $parser)
+    public function setParser(Detector $parser)
     {
         $this->parser = $parser;
 
@@ -86,11 +89,11 @@ class BrowscapDetector extends AbstractBrowscapInput
      * sets the main parameters to the parser
      *
      * @throws \UnexpectedValueException
-     * @return \phpbrowscap\Browscap
+     * @return \phpbrowscap\Detector
      */
     protected function initParser()
     {
-        if (!($this->parser instanceof \phpbrowscap\Detector)) {
+        if (!($this->parser instanceof Detector)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \\phpbrowscap\\Detector'
             );

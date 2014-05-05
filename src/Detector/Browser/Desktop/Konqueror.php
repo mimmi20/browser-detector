@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Khtml;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -193,7 +194,7 @@ class Konqueror
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Khtml();
+        $handler = new Khtml();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

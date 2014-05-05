@@ -69,7 +69,7 @@ class Worldlingo
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Worldlingo
      */
     public function __construct()
     {

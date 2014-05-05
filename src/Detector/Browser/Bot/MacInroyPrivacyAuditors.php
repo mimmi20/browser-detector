@@ -121,7 +121,7 @@ class MacInroyPrivacyAuditors
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\MacInroyPrivacyAuditors
      */
     protected function _detectVersion()
     {

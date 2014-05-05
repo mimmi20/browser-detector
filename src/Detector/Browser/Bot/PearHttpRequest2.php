@@ -121,7 +121,7 @@ class PearHttpRequest2
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\PearHttpRequest2
      */
     protected function _detectVersion()
     {

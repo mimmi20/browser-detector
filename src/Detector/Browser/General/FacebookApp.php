@@ -69,7 +69,7 @@ class FacebookApp
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\FacebookApp
      */
     public function __construct()
     {
@@ -137,7 +137,7 @@ class FacebookApp
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\FacebookApp
      */
     protected function _detectVersion()
     {

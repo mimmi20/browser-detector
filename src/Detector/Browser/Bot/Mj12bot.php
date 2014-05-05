@@ -125,7 +125,7 @@ class Mj12bot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Mj12bot
      */
     protected function _detectVersion()
     {

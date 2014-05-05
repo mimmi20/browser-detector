@@ -70,7 +70,7 @@ class WebClip
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\WebClip
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ class WebClip
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\WebClip
      */
     protected function _detectVersion()
     {

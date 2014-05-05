@@ -69,7 +69,7 @@ class Coverscout
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Coverscout
      */
     public function __construct()
     {
@@ -120,7 +120,7 @@ class Coverscout
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Coverscout
      */
     protected function _detectVersion()
     {

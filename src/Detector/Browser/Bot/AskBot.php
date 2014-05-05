@@ -70,7 +70,7 @@ class AskBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\AskBot
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class AskBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\AskBot
      */
     protected function _detectVersion()
     {

@@ -121,7 +121,7 @@ class MsSearch
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\MsSearch
      */
     protected function _detectVersion()
     {

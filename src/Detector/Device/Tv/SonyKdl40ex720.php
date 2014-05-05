@@ -79,7 +79,7 @@ class SonyKdl40ex720
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return SonyKdl40ex720
      */
     public function __construct()
     {
@@ -148,9 +148,7 @@ class SonyKdl40ex720
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return SonyKdl40ex720
      */
     public function detectDevice()
     {
@@ -203,7 +201,7 @@ class SonyKdl40ex720
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBroser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

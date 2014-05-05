@@ -70,7 +70,7 @@ class Flipboard
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\Flipboard
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Flipboard
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\Flipboard
      */
     protected function _detectVersion()
     {

@@ -622,7 +622,8 @@ class Wurfl extends Core
             $brandName    = null;
             $xhtmlLevel   = null;
             $browserMaker = '';
-            //throw $e;
+
+            $device = null;
         }
 
         $result = new Result();
@@ -742,6 +743,15 @@ class Wurfl extends Core
             $result->setCapability('xhtml_support_level', (int)$xhtmlLevel);
         }
 
+        $result->setCapability('wurflKey', $apiKey);
+
+        $mapper = new InputMapper();
+        $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
+
+        if (null === $device) {
+            return $result;
+        }
+
         if (($deviceType == 'Mobile Phone' || $deviceType == 'Tablet' || $deviceType == 'FonePad')
             && 'true' === $device->getCapability('dual_orientation')
         ) {
@@ -759,9 +769,6 @@ class Wurfl extends Core
                 $result->setCapability('resolution_height', $height);
             }
         }
-
-        $result->setCapability('wurflKey', $apiKey);
-        $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
 
         return $result;
     }

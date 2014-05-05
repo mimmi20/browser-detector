@@ -70,7 +70,7 @@ class CurlPhp
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\CurlPhp
      */
     public function __construct()
     {
@@ -125,7 +125,7 @@ class CurlPhp
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\CurlPhp
      */
     protected function _detectVersion()
     {

@@ -125,7 +125,7 @@ class Snowtape
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Snowtape
      */
     protected function _detectVersion()
     {

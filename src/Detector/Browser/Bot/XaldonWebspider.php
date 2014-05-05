@@ -69,7 +69,7 @@ class XaldonWebspider
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\XaldonWebspider
      */
     public function __construct()
     {

@@ -121,7 +121,7 @@ class KomodiaBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\KomodiaBot
      */
     protected function _detectVersion()
     {

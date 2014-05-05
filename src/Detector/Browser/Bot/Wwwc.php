@@ -70,7 +70,7 @@ class Wwwc
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wwwc
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Wwwc
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wwwc
      */
     protected function _detectVersion()
     {

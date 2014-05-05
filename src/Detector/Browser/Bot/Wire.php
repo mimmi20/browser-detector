@@ -70,7 +70,7 @@ class Wire
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wire
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Wire
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Wire
      */
     protected function _detectVersion()
     {

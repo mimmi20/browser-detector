@@ -125,7 +125,7 @@ class Scoutjet
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Scoutjet
      */
     protected function _detectVersion()
     {

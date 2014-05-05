@@ -125,7 +125,7 @@ class TkcAutodownloader
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\TkcAutodownloader
      */
     protected function _detectVersion()
     {

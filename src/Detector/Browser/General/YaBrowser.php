@@ -73,7 +73,7 @@ class YaBrowser
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\General\YaBrowser
      */
     public function __construct()
     {
@@ -134,7 +134,7 @@ class YaBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\General\YaBrowser
      */
     protected function _detectVersion()
     {

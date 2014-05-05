@@ -69,7 +69,7 @@ class Wizz
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Wizz
      */
     public function __construct()
     {

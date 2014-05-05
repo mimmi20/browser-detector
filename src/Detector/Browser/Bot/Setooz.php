@@ -125,7 +125,7 @@ class Setooz
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Setooz
      */
     protected function _detectVersion()
     {

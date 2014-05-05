@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -185,7 +186,7 @@ class Argclrint
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\Trident();
+        $handler = new Trident();
         $handler->setUseragent($this->useragent);
 
         return $handler->detect();

@@ -121,7 +121,7 @@ class PixraySeeker
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\PixraySeeker
      */
     protected function _detectVersion()
     {

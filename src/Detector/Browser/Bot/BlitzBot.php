@@ -69,7 +69,7 @@ class BlitzBot
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\BlitzBot
      */
     public function __construct()
     {

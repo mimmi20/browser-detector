@@ -131,7 +131,7 @@ class SemagerBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\SemagerBot
      */
     protected function _detectVersion()
     {

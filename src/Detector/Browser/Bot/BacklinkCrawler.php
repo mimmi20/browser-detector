@@ -69,7 +69,7 @@ class BacklinkCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\BacklinkCrawler
      */
     public function __construct()
     {

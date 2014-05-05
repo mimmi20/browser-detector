@@ -70,7 +70,7 @@ class Charlotte
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\Charlotte
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class Charlotte
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\Charlotte
      */
     protected function _detectVersion()
     {

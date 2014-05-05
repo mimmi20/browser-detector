@@ -70,7 +70,7 @@ class DomainCrawler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Bot\DomainCrawler
      */
     public function __construct()
     {
@@ -121,7 +121,7 @@ class DomainCrawler
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\DomainCrawler
      */
     protected function _detectVersion()
     {

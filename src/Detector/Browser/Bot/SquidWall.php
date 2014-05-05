@@ -131,7 +131,7 @@ class SquidWall
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Bot\SquidWall
      */
     protected function _detectVersion()
     {
