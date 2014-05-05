@@ -134,6 +134,7 @@ class SpamCrawlerFake
             'google-fontanalysis',
             'google wireless transcoder',
             'grabber',
+            'gsa/',
             'heritrix',
             'hitleap',
             'http_client',
