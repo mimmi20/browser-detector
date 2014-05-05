@@ -132,6 +132,7 @@ class InputMapper
             $browserName = 'Nokia Proxy Browser';
             break;
         case 'firefox mobile':
+        case 'mobile firefox mobile':
             $browserName = 'Firefox';
             break;
         case 'dolfin/jasmine webkit':
@@ -547,6 +548,7 @@ class InputMapper
         case 'android 4.1':
         case 'android 4.2':
         case 'android 4.3':
+        case 'android 4.4':
         case 'disguised as macintosh':
         case 'mini 1':
         case 'mini 4':
@@ -565,6 +567,8 @@ class InputMapper
         case 'windows mobile (opera)':
         case 'mobi for android':
         case 'nokia unrecognized ovi browser':
+        case 'mozilla firefox for android':
+        case 'firefox for android':
             $deviceName = 'general Mobile Device';
             break;
         case 'spider':
