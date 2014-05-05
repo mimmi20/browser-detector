@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Browser\General;
+namespace BrowserDetector\Detector\Browser\Bot;
 
 /**
  * PHP version 5.3
@@ -46,6 +46,8 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +56,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Google
+class GoogleWebSnippet
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -68,7 +70,7 @@ class Google
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Browser\General\Google
+     * @return \BrowserDetector\Detector\Browser\Bot\GoogleFontAnalysis
      */
     public function __construct()
     {
@@ -76,17 +78,17 @@ class Google
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
+            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'Google',
+            'mobile_browser'               => 'Google Web Snippet',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
-            'can_skip_aligned_link_row'    => true,
+            'can_skip_aligned_link_row'    => false,
             'device_claims_web_support'    => false,
 
             // pdf
@@ -109,21 +111,11 @@ class Google
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Google'))) {
-            return false;
+        if (this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
+            return true;
         }
 
-        if ($this->utils->checkIfContains(
-            array(
-                'GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot', 'AppEngine-Google',
-                'code.google.com/appengine', 'developers.google.com/+/web/snippet/'
-            )
-        )
-        ) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -133,6 +125,20 @@ class Google
      */
     public function getWeight()
     {
-        return 6;
+        return 5;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\OsHandler
+     */
+    public function detectEngine()
+    {
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
+
+        return $handler->detect();
     }
 }

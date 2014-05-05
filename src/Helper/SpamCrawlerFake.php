@@ -114,6 +114,7 @@ class SpamCrawlerFake
             'clecko',
             'compatible; googletoolbar',
             'crawl',
+            'developers.google.com/+/web/snippet/',
             'detection',
             'downloader',
             'elefent',
