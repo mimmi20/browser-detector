@@ -87,11 +87,11 @@ class SamsungGtp5200
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'GT-P5200',
+            'marketing_name'          => 'Galaxy Tab 3 10.1 3G',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
+            'device_cpu'              => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -102,14 +102,14 @@ class SamsungGtp5200
             'unique'                  => true,
 
             // display
-            'physical_screen_width'   => 90,
-            'physical_screen_height'  => 154,
-            'columns'                 => 25,
-            'rows'                    => 21,
-            'max_image_width'         => 980,
-            'max_image_height'        => 472,
-            'resolution_width'        => 1024,
-            'resolution_height'       => 600,
+            'physical_screen_width'   => null,
+            'physical_screen_height'  => null,
+            'columns'                 => null,
+            'rows'                    => null,
+            'max_image_width'         => null,
+            'max_image_height'        => null,
+            'resolution_width'        => 1280,
+            'resolution_height'       => 800,
             'dual_orientation'        => true,
             'colors'                  => 65536,
 
