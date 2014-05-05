@@ -78,13 +78,13 @@ class Httrack
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
+            'browser_type'                 => new BrowserType\OfflineBrowser(), // not in wurfl
 
             // browser
             'mobile_browser'               => 'HTTrack',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\XavierRoche(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
