@@ -55,7 +55,7 @@ class Unister extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'Unister GmbH';
+    protected $name = 'Unister Holding GmbH';
 
     /**
      * the brand name of the company
