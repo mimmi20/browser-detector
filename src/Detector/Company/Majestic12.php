@@ -55,7 +55,7 @@ class Majestic12 extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'Majestic-12';
+    protected $name = 'Majestic-12 Ltd';
 
     /**
      * the brand name of the company
