@@ -84,7 +84,7 @@ class BlekkoBot
             'mobile_browser'               => 'BlekkoBot Scoutjet',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => 'blekko.com', // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\BlekkoCom(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
