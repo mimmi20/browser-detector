@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Bingbot
+class Adidxbot
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -81,7 +81,7 @@ class Bingbot
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'BingBot',
+            'mobile_browser'               => 'adidxbot',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
@@ -111,14 +111,7 @@ class Bingbot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
-            array('bingbot/', 'Bing/', 'Bing for iPad/', 'msnbot', 'msnbot-media', 'MSN/')
-        )
-        ) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('BingPreview/'))) {
+        if (!$this->utils->checkIfContains(array('adidxbot'))) {
             return false;
         }
 
@@ -135,7 +128,7 @@ class Bingbot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('bingbot', 'Bing', 'Bing for iPad', 'msnbot', 'msnbot\-media');
+        $searches = array('adidxbot');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
