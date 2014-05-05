@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Python
+class PythonUrlLib
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -78,13 +78,13 @@ class Python
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
+            'browser_type'                 => new BrowserType\Library(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'Python',
+            'mobile_browser'               => 'Python-urllib',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\PythonSoftwareFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -111,11 +111,7 @@ class Python
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Python', 'python'))) {
-            return false;
-        }
-        
-        if ($this->utils->checkIfContains(array('Python-urllib'))) {
+        if (!$this->utils->checkIfContains(array('Python-urllib'))) {
             return false;
         }
 
@@ -132,7 +128,7 @@ class Python
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Python', 'python\-requests');
+        $searches = array('Python\-urllib');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
@@ -148,7 +144,7 @@ class Python
      */
     public function getWeight()
     {
-        return 71248;
+        return 7;
     }
 
     /**
