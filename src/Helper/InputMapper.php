@@ -456,6 +456,9 @@ class InputMapper
         case 'win8':
             $osVersion = '8';
             break;
+        case 'win8.1':
+            $osVersion = '8.1';
+            break;
         case 'winvista':
             $osVersion = 'Vista';
             break;
