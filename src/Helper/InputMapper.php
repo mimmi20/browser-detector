@@ -376,6 +376,10 @@ class InputMapper
         case 'windows phone 7':
             $osName = 'Windows Phone OS';
             break;
+        case 'WinRT8':
+        case 'WinRT8.1':
+            $osName = 'Windows RT';
+            break;
         case 'blackberry os':
             $osName = 'RIM OS';
             break;
@@ -458,9 +462,11 @@ class InputMapper
             $osVersion = '7';
             break;
         case 'win8':
+        case 'winrt8':
             $osVersion = '8';
             break;
         case 'win8.1':
+        case 'winrt8.1':
             $osVersion = '8.1';
             break;
         case 'winvista':
