@@ -85,10 +85,10 @@ class CatNova8
             'device_type'             => new DeviceType\Tablet(), // not in wurfl
 
             // device
-            'model_name'              => 'Nova 8',
+            'model_name'              => 'Cat Nova 8',
             'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\CatSound(),
-            'brand_name'              => new Company\CatSound(),
+            'brand_name'              => new Company\Weltbild(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Tablet PC',
             'has_qwerty_keyboard'     => true,
