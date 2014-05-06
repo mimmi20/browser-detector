@@ -79,15 +79,15 @@ class MdLifeE10312
             'wurflKey'                => null, // not in wurfl
 
             // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+            'device_type'             => new DeviceType\Tablet(), // not in wurfl
 
             // device
-            'model_name'              => 'Life E10312',
+            'model_name'              => 'LifeTab E10312',
             'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Medion(),
             'brand_name'              => new Company\Medion(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'Life E10312',
+            'marketing_name'          => 'LifeTab E10312',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
