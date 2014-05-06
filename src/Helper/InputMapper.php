@@ -143,6 +143,9 @@ class InputMapper
         case 'facebookbot':
             $browserName = 'FaceBook Bot';
             break;
+        case 'java':
+            $browserName = 'Generic Java Crawler';
+            break;
         default:
             // nothing to do here
             break;
