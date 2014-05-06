@@ -84,7 +84,7 @@ class Proximic
             'mobile_browser'               => 'proximic',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => 'www.proximic.com', // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Proximic(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
