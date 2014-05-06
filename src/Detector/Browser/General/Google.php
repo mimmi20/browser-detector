@@ -116,7 +116,8 @@ class Google
         if ($this->utils->checkIfContains(
             array(
                 'GoogleToolbar', 'Google Earth', 'Googlebot', 'GoogleBot', 'AppEngine-Google',
-                'code.google.com/appengine', 'developers.google.com/+/web/snippet/'
+                'code.google.com/appengine', 'developers.google.com/+/web/snippet/',
+                'Google Web Preview'
             )
         )
         ) {
