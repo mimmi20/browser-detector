@@ -376,6 +376,8 @@ class InputMapper
             $osName = 'Windows';
             break;
         case 'winphone7':
+        case 'winphone8':
+        case 'winphone8.1':
         case 'windows phone 7':
             $osName = 'Windows Phone OS';
             break;
@@ -462,14 +464,20 @@ class InputMapper
             $osVersion = 'XP';
             break;
         case 'win7':
+        case 'winphone7':
+        case 'windows phone 7':
             $osVersion = '7';
             break;
         case 'win8':
         case 'winrt8':
+        case 'winphone8':
+        case 'windows phone 8':
             $osVersion = '8';
             break;
         case 'win8.1':
         case 'winrt8.1':
+        case 'winphone8.1':
+        case 'windows phone 8.1':
             $osVersion = '8.1';
             break;
         case 'winvista':
@@ -486,10 +494,6 @@ class InputMapper
             break;
         case 'win95':
             $osVersion = '95';
-            break;
-        case 'winphone7':
-        case 'windows phone 7':
-            $osVersion = '7';
             break;
         default:
             // nothing to do here
