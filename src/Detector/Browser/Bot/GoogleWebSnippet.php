@@ -111,7 +111,7 @@ class GoogleWebSnippet
      */
     public function canHandle()
     {
-        if (this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
+        if ($this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
             return true;
         }
 
