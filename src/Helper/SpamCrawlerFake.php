@@ -132,6 +132,7 @@ class SpamCrawlerFake
             'gomezagent',
             'googlebot',
             'google-fontanalysis',
+            'google web preview',
             'google wireless transcoder',
             'grabber',
             'gsa/',
