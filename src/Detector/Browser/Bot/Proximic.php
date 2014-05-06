@@ -81,7 +81,7 @@ class Proximic
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'Proximic Spider',
+            'mobile_browser'               => 'proximic',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'www.proximic.com', // not in wurfl
