@@ -81,10 +81,10 @@ class IntegromedbCrawler
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'integromedb Crawler',
+            'mobile_browser'               => 'IntegromeDB Crawler',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => 'www.integromedb.org', // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\BiologicalNetworks(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
