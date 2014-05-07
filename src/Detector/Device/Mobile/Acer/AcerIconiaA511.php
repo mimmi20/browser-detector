@@ -82,7 +82,7 @@ class AcerIconiaA511
             'wurflKey'                => 'acer_iconia_tab_a511_ver1', // not in wurfl
 
             // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+            'device_type'             => new DeviceType\FonePad(), // not in wurfl
 
             // device
             'model_name'              => 'A511',
