@@ -84,7 +84,7 @@ class Spiderlytics
             'mobile_browser'               => 'Spiderlytics Bot',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => 'spiderlytics.com', // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\Spiderlytics(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
