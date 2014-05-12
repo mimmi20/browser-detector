@@ -87,7 +87,7 @@ class HuaweiP6U06
             'manufacturer_name'       => new Company\Huawei(),
             'brand_name'              => new Company\Huawei(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'Ascend Edge',
+            'marketing_name'          => 'Ascend P6',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
