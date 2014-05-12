@@ -84,7 +84,7 @@ class WiJobRoboter
             'mobile_browser'               => 'WI Job Roboter',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => 'www.webintegration.at', // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\WebIntegrationItService(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +128,7 @@ class WiJobRoboter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('WI Job Roboter Spider Version');
+        $searches = array('WI Job Roboter Spider Version', 'WI Job Roboter Spider Version');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
