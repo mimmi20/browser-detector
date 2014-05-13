@@ -91,7 +91,7 @@ class OdysSpace
             'manufacturer_name'       => new Company\Odys(),
             'brand_name'              => new Company\Odys(),
             'model_extra_info'        => null,
-            'marketing_name'          => null,
+            'marketing_name'          => 'Space',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
