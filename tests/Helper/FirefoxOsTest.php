@@ -10,7 +10,7 @@ use BrowserDetector\Helper\FirefoxOs;
 class FirefoxOsTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Input\Uaparser
+     * @var \BrowserDetector\Helper\FirefoxOs
      */
     private $object = null;
 

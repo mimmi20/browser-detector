@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -70,7 +71,7 @@ class FirefoxOs
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\Os\FirefoxOs
      */
     public function __construct()
     {
@@ -81,7 +82,7 @@ class FirefoxOs
             'device_os'              => 'FirefoxOs',
             'device_os_version'      => '',
             'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Mozilla(), // not in wurfl
+            'device_os_manufacturer' => new Company\MozillaFoundation(), // not in wurfl
         );
     }
 

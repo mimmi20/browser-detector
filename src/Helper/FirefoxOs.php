@@ -60,7 +60,7 @@ class FirefoxOs
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Helper\Safari
+     * @return \BrowserDetector\Helper\FirefoxOs
      */
     public function __construct()
     {
@@ -92,7 +92,7 @@ class FirefoxOs
         ) {
             return false;
         }
-        
+
         $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet); rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->_useragent, $matches);
 
         if (!$doMatch) {
