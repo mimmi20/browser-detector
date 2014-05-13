@@ -90,7 +90,7 @@ class SonyEricssonST15i
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'ST15i',
+            'marketing_name'          => 'Xperia Mini',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
