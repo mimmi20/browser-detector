@@ -87,7 +87,7 @@ class SamsungGti9205
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'GT-I9205',
+            'marketing_name'          => 'Galaxy Mega 6.3',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
