@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 /**
  * PHP version 5.3
@@ -41,7 +41,6 @@ namespace BrowserDetector\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
@@ -56,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class TrekStor
+class TrekStorSt701041
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -70,7 +69,7 @@ class TrekStor
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\TrekStor
+     * @return DeviceHandler
      */
     public function __construct()
     {
@@ -83,19 +82,19 @@ class TrekStor
             'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
 
             // device
-            'model_name'              => 'general TrekStor Device',
+            'model_name'              => 'ST701041',
             'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\TrekStor(),
             'brand_name'              => new Company\TrekStor(),
             'model_extra_info'        => null,
-            'marketing_name'          => null,
+            'marketing_name'          => 'SurfTab Breeze 7.0',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
             'device_cpu'              => null, // not in wurfl
 
             // product info
-            'can_assign_phone_number' => false,
+            'can_assign_phone_number' => true,
             'ununiqueness_handler'    => null,
             'uaprof'                  => null,
             'uaprof2'                 => null,
@@ -109,10 +108,10 @@ class TrekStor
             'rows'                    => null,
             'max_image_width'         => null,
             'max_image_height'        => null,
-            'resolution_width'        => null,
-            'resolution_height'       => null,
-            'dual_orientation'        => null,
-            'colors'                  => null,
+            'resolution_width'        => 480,
+            'resolution_height'       => 800,
+            'dual_orientation'        => false,
+            'colors'                  => 65536,
 
             // sms
             'sms_enabled'             => true,
@@ -129,9 +128,7 @@ class TrekStor
      */
     public function canHandle()
     {
-        $trekStorPhones = array(
-            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color', 'SurfTab_', 'ST701041'
-        );
+        $trekStorPhones = array('ST70104');
 
         if ($this->utils->checkIfContains($trekStorPhones)) {
             return true;
@@ -143,19 +140,13 @@ class TrekStor
     /**
      * detects the device name from the given user agent
      *
+     * @param string $userAgent
+     *
      * @return StdClass
      */
     public function detectDevice()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\TrekStor');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'TrekStor' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return $this;
     }
 
     /**
