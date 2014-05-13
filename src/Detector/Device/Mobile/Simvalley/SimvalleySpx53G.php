@@ -90,7 +90,7 @@ class SimvalleySpx53G
             'manufacturer_name'       => new Company\Simvalley(),
             'brand_name'              => new Company\Simvalley(),
             'model_extra_info'        => null,
-            'marketing_name'          => null,
+            'marketing_name'          => 'SPX-5 3G',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
