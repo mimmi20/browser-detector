@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 /**
  * PHP version 5.3
@@ -41,13 +41,16 @@ namespace BrowserDetector\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\Chain;
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -56,7 +59,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class Asus
+class AsusMe173x
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -83,12 +86,12 @@ class Asus
             'device_type'             => new DeviceType\Tablet(), // not in wurfl
 
             // device
-            'model_name'              => 'general Asus Device',
+            'model_name'              => 'ME173X',
             'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Asus(),
             'brand_name'              => new Company\Asus(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'general Asus Device',
+            'marketing_name'          => 'Memo Pad HD7',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
@@ -109,16 +112,16 @@ class Asus
             'rows'                    => null,
             'max_image_width'         => null,
             'max_image_height'        => null,
-            'resolution_width'        => null,
-            'resolution_height'       => null,
-            'dual_orientation'        => null,
-            'colors'                  => null,
+            'resolution_width'        => 1920,
+            'resolution_height'       => 1200,
+            'dual_orientation'        => true,
+            'colors'                  => 65536,
 
             // sms
-            'sms_enabled'             => true,
+            'sms_enabled'             => false,
 
             // chips
-            'nfc_support'             => true,
+            'nfc_support'             => false,
         );
     }
 
@@ -129,29 +132,21 @@ class Asus
      */
     public function canHandle()
     {
-        $asusPhones = array(
-            'Asus',
-            'Transformer',
-            'Slider SL101',
-            'eee_701',
-            'eeepc',
-            'Nexus 7',
-            'PadFone',
-            'ME301T',
-            'ME302C',
-            'ME371MG',
-            'ME173X'
-        );
-
-        if (!$this->utils->checkIfContains($asusPhones)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('IdeaTab'))) {
+        if (!$this->utils->checkIfContains('ME173X')) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
@@ -163,25 +158,7 @@ class Asus
      */
     public function detectDevice()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Asus');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Asus' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 182775;
+        return $this;
     }
 
     /**
@@ -196,5 +173,67 @@ class Asus
         $handler->setUseragent($this->_useragent);
 
         return $handler->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $osVersion = $os->getCapability('device_os_version')->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getCapability('mobile_browser')) {
+        case 'Android Webkit':
+            switch ((float)$osVersion) {
+            case 4.0:
+                $this->setCapability('wurflKey', 'asus_eee_pad_tf101_ver1_suban40');
+                break;
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        case 'Chrome':
+            $engine->setCapability('is_sencha_touch_ok', false);
+
+            switch ((float)$osVersion) {
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        default:
+            // nothing to do here
+            break;
+        }
+
+        return $this;
     }
 }
