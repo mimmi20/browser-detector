@@ -214,6 +214,13 @@ class MobileDevice
         if ($doMatch) {
             return true;
         }
+        
+        $helper = new \BrowserDetector\Helper\FirefoxOs();
+        $helper->setUserAgent($this->_useragent);
+
+        if ($helper->isFirefoxOs()) {
+            return true;
+        }
 
         return false;
     }

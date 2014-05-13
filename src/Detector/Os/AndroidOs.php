@@ -136,6 +136,13 @@ class AndroidOs
         if ($this->utils->checkIfContains($noAndroid)) {
             return false;
         }
+        
+        $firefoxOshelper = new \BrowserDetector\Helper\FirefoxOs();
+        $firefoxOshelper->setUserAgent($this->_useragent);
+        
+        if ($firefoxOshelper->isFirefoxOs()) {
+            return false;
+        }
 
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->_useragent);
