@@ -128,7 +128,7 @@ class TrekStorSt701041
      */
     public function canHandle()
     {
-        $trekStorPhones = array('ST70104');
+        $trekStorPhones = array('ST701041', 'SurfTab_7.0');
 
         if ($this->utils->checkIfContains($trekStorPhones)) {
             return true;
