@@ -87,7 +87,7 @@ class MotorolaXt890
             'manufacturer_name'       => new Company\Motorola(),
             'brand_name'              => new Company\Motorola(),
             'model_extra_info'        => null,
-            'marketing_name'          => 'XT890',
+            'marketing_name'          => 'RAZR i',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
