@@ -143,6 +143,7 @@ class MeeGo
             new Android(),
             new Chrome(),
             new OperaMobile(),
+            new \BrowserDetector\Detector\Browser\Mobile\WeTabBrowser(),
         );
 
         $chain = new Chain();
