@@ -81,10 +81,10 @@ class Nagios
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'Nagios',
+            'mobile_browser'               => 'HTTP nagios plugin',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\NagiosEnterprises(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
