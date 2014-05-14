@@ -83,7 +83,7 @@ class AcerIconiaA701
             'wurflKey'                => null, // not in wurfl
 
             // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+            'device_type'             => new DeviceType\FonePad(), // not in wurfl
 
             // device
             'model_name'              => 'A701',
