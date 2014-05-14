@@ -160,6 +160,7 @@ class Netscape
             'libwww',
             'OviBrowser',
             'K-Meleon',
+            'Google Desktop',
             // other rendering engines
             'Trident',
             // other applications
