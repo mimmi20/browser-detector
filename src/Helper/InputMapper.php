@@ -580,6 +580,7 @@ class InputMapper
         case 'mini 1':
         case 'mini 4':
         case 'mini 5':
+        case 'mini 7':
         case 'windows mobile 6.5':
         case 'windows mobile 7':
         case 'windows mobile 7.5':
