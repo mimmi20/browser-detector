@@ -84,6 +84,7 @@ class InputMapper
         case 'unknown':
         case 'other':
         case 'default browser':
+        case 'generic':
             $browserName = null;
             break;
         case 'ie':
