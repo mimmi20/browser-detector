@@ -81,10 +81,10 @@ class GrapeshotCrawler
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
-            'mobile_browser'               => 'Grapeshot Crawler',
+            'mobile_browser'               => 'GrapeshotCrawler',
             'mobile_browser_version'       => null,
             'mobile_browser_bits'          => null, // not in wurfl
-            'mobile_browser_manufacturer'  => 'www.grapeshot.co.uk', // not in wurfl
+            'mobile_browser_manufacturer'  => new Company\GrapeshotLimited(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
