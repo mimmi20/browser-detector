@@ -146,6 +146,9 @@ class InputMapper
         case 'java':
             $browserName = 'Generic Java Crawler';
             break;
+        case 'nokia web browser':
+            $browserName = 'Nokia Browser';
+            break;
         default:
             // nothing to do here
             break;
