@@ -134,6 +134,8 @@ class InputMapper
             break;
         case 'firefox mobile':
         case 'mobile firefox mobile':
+        case 'mobile firefox tablet':
+        case 'mobile firefox':
             $browserName = 'Firefox';
             break;
         case 'dolfin/jasmine webkit':
