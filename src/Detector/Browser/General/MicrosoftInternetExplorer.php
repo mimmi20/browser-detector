@@ -145,40 +145,40 @@ class MicrosoftInternetExplorer
         }
 
         $isNotReallyAnIE = array(
-            'Presto',
-            'Webkit',
-            'KHTML',
+            'presto',
+            'webkit',
+            'khtml',
             // using also the Trident rendering engine
-            'Crazy Browser',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Maxthon',
-            'MyIE',
-            'Opera',
-            'PaleMoon',
+            'crazy browser',
+            'flock',
+            'galeon',
+            'lunascape',
+            'maxthon',
+            'myie',
+            'opera',
+            'palemoon',
             // other Browsers
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Firefox',
-            'MSIECrawler',
+            'applewebkit',
+            'chrome',
+            'linux',
+            'msoffice',
+            'outlook',
+            'iemobile',
+            'blackberry',
+            'webtv',
+            'argclrint',
+            'firefox',
+            'msiecrawler',
             // mobile IE
-            'XBLWP7',
-            'ZuneWP7',
-            'WPDesktop',
-            'HTC_HD2',
+            'xblwp7',
+            'zunewp7',
+            'wpdesktop',
+            'htc_hd2',
             // Fakes
-            'Mac; Mac OS '
+            'mac; mac os '
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnIE)
+        if ($this->utils->checkIfContains($isNotReallyAnIE, true)
             && !$this->utils->checkIfContains('Bitte Mozilla Firefox verwenden')
         ) {
             return false;
