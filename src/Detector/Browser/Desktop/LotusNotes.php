@@ -77,7 +77,7 @@ class LotusNotes
 
         $this->properties = array(
             // kind of device
-            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
+            'browser_type'                 => new BrowserType\Application(), // not in wurfl
 
             // browser
             'mobile_browser'               => 'Lotus Notes',
