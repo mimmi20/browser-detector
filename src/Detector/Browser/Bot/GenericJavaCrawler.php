@@ -115,7 +115,11 @@ class GenericJavaCrawler
             return false;
         }
 
-        return true;
+        if ($this->utils->checkIfContains('Phantom')) {
+            return false;
+        }
+
+         true;
     }
 
     /**

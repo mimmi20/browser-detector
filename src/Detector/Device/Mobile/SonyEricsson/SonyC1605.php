@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 /**
  * PHP version 5.3
@@ -41,20 +41,11 @@ namespace BrowserDetector\Detector\Device\Mobile;
  * @version   SVN: $Id$
  */
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\Brew;
-use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Linux;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -64,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  * @version   SVN: $Id$
  */
-class SonyEricsson
+class SonyC1605
     extends DeviceHandler
     implements MatcherInterface, DeviceInterface
 {
@@ -78,7 +69,7 @@ class SonyEricsson
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyC1605
      */
     public function __construct()
     {
@@ -91,19 +82,19 @@ class SonyEricsson
             'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
 
             // device
-            'model_name'              => 'general SonyEricsson Device',
+            'model_name'              => 'C1605',
             'model_version'           => null, // not in wurfl
-            'manufacturer_name'       => new Company\SonyEricsson(),
-            'brand_name'              => new Company\SonyEricsson(),
+            'manufacturer_name'       => new Company\Sony(),
+            'brand_name'              => new Company\Sony(),
             'model_extra_info'        => null,
-            'marketing_name'          => null,
+            'marketing_name'          => 'C1605',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
             'device_bits'             => null, // not in wurfl
             'device_cpu'              => null, // not in wurfl
 
             // product info
-            'can_assign_phone_number' => false,
+            'can_assign_phone_number' => true,
             'ununiqueness_handler'    => null,
             'uaprof'                  => null,
             'uaprof2'                 => null,
@@ -117,10 +108,10 @@ class SonyEricsson
             'rows'                    => null,
             'max_image_width'         => null,
             'max_image_height'        => null,
-            'resolution_width'        => null,
-            'resolution_height'       => null,
-            'dual_orientation'        => null,
-            'colors'                  => null,
+            'resolution_width'        => 480,
+            'resolution_height'       => 854,
+            'dual_orientation'        => true,
+            'colors'                  => 65536,
 
             // sms
             'sms_enabled'             => true,
@@ -137,90 +128,15 @@ class SonyEricsson
      */
     public function canHandle()
     {
-        $sonyPhones = array(
-            'sonyericsson',
-            'sony',
-            'c1605',
-            'c1905',
-            'c2105',
-            'c5303',
-            'c6602',
-            'c6603',
-            'c6503',
-            'c6903',
-            'e10i',
-            'e15i',
-            'e15av',
-            'ebrd1',
-            'lt15i',
-            'lt18',
-            'lt18i',
-            'lt22i',
-            'lt25i',
-            'lt26i',
-            'lt28h',
-            'lt30p',
-            'mk16i',
-            'mt11i',
-            'mt15i',
-            'mt27i',
-            'nexushd2',
-            'r800i',
-            's312',
-            'sk17i',
-            'sgp311',
-            'sgp321',
-            'sgpt12',
-            'sgpt13',
-            'st15i',
-            'st16i',
-            'st17i',
-            'st18i',
-            'st19i',
-            'st20i',
-            'st21i',
-            'st22i',
-            'st23i',
-            'st24i',
-            'st25i',
-            'st26i',
-            'st27i',
-            'u20i',
-            'w508a',
-            'w760i',
-            'wt13i',
-            'wt19i',
-            'x1i',
-            'x10',
-            'xst2',
-            'playstation',
-            'psp',
-            'xperia arc'
-        );
-
-        if ($this->utils->checkIfContains($sonyPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains(array('SonyEricssonC1605', 'SonyC1605', 'C1605'))) {
+            return false;
         }
 
-        return false;
-    }
+        if ($this->utils->checkIfContains(array('SonyEricssonC1605v', 'SonyC1605v', 'C1605v'))) {
+            return false;
+        }
 
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return null|\BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\SonyEricsson');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return true;
     }
 
     /**
@@ -230,7 +146,17 @@ class SonyEricsson
      */
     public function getWeight()
     {
-        return 1633866;
+        return 3;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyC1605
+     */
+    public function detectDevice()
+    {
+        return $this;
     }
 
     /**
@@ -241,22 +167,9 @@ class SonyEricsson
      */
     public function detectOs()
     {
-        $os = array(
-            new AndroidOs(),
-            new Bada(),
-            new Brew(),
-            new Java(),
-            new Symbianos(),
-            new WindowsMobileOs(),
-            new WindowsPhoneOs(),
-            new Linux()
-        );
+        $handler = new AndroidOs();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
+        return $handler->detect();
     }
 }
