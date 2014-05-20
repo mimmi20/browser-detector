@@ -406,6 +406,9 @@ class InputMapper
         case 'bada os':
             $osName = 'Bada';
             break;
+        case 'symbianos':
+            $osName = 'Symbian OS';
+            break;
         default:
             // nothing to do here
             break;
