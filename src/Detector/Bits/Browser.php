@@ -151,7 +151,7 @@ class Browser
             return $this;
         }
 
-        $this->bits = '';
+        $this->bits = '32';
 
         return $this;
     }

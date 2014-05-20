@@ -147,7 +147,7 @@ class Device
             return $this;
         }
 
-        $this->_bits = '';
+        $this->_bits = '32';
 
         return $this;
     }

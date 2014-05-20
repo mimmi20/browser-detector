@@ -144,7 +144,7 @@ class Os
             return $this;
         }
 
-        $this->bits = '';
+        $this->bits = '32';
 
         return $this;
     }
