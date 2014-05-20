@@ -137,7 +137,7 @@ class AmazonKindle
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI'))) {
+        if ($this->utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI'))) {
             return false;
         }
 
