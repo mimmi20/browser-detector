@@ -111,7 +111,7 @@ class Seoprofiler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('spbot', 'seoprofiler'))) {
+        if (!$this->utils->checkIfContains(array('spbot', 'seoprofiler', 'sp_auditbot'))) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class Seoprofiler
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('spbot');
+        $searches = array('spbot', 'sp_auditbot');
 
         $this->setCapability(
             'mobile_browser_version', $detector->detectVersion($searches)
