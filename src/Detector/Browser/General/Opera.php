@@ -183,17 +183,15 @@ class Opera
      */
     public function detectEngine()
     {
-        $engines = array(
-            new Presto(),
-            new Webkit(),
-            new Blink()
-        );
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new Presto());
-
-        return $chain->detect();
+        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJOR_ONLY);
+        
+        if ($version >= 15) {
+            $engine = new Blink();
+        } else {
+            $engine = new Presto();
+        }
+        
+        $engine->setUseragent($this->useragent);
+        return $engine->detect();
     }
 }

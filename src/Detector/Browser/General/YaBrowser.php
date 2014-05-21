@@ -158,16 +158,15 @@ class YaBrowser
      */
     public function detectEngine()
     {
-        $engines = array(
-            new Webkit(),
-            new Blink()
-        );
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
-
-        return $chain->detect();
+        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJOR_MINOR);
+        
+        if ($version >= '1.20') {
+            $engine = new Blink();
+        } else {
+            $engine = new Webkit();
+        }
+        
+        $engine->setUseragent($this->useragent);
+        return $engine->detect();
     }
 }
