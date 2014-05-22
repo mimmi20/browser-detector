@@ -161,6 +161,7 @@ class Netscape
             'OviBrowser',
             'K-Meleon',
             'Google Desktop',
+            'Konqueror',
             // other rendering engines
             'Trident',
             // other applications
