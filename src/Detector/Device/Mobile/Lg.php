@@ -151,6 +151,10 @@ class Lg
         if (!$this->utils->checkIfContains($lgPhones)) {
             return false;
         }
+        
+        if ($this->utils->checkIfContains(array('-LGG-'))) {
+            return false;
+        }
 
         return true;
     }
