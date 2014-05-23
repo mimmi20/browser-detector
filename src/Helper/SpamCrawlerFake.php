@@ -401,19 +401,25 @@ class SpamCrawlerFake
         }
 
         $ntVersions = array(
-            '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1',
+            '3.5', '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1',
             '6.2', '6.3'
         );
 
-        $doMatch = (preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
-                || preg_match('/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches))
-            && !$this->utils->checkIfContains('anonym', true);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
+                || preg_match('/(Win|Windows )(ME|2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches);
 
         if ($doMatch) {
-            if ((!$this->utils->checkIfContains('linux', true)
-                    || $this->utils->checkIfContains('edition linux mint', true))
-                && in_array($matches[1], $ntVersions)
+            if ($this->utils->checkIfContains('anonym', true)) {
+                return false;
+            }
+            
+            if ($this->utils->checkIfContains('linux', true)
+                    && !$this->utils->checkIfContains('edition linux mint', true)
             ) {
+                return true;
+            }
+            
+            if (in_array($matches[1], $ntVersions)) {
                 return false;
             }
 
