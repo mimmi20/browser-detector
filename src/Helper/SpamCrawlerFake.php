@@ -326,7 +326,7 @@ class SpamCrawlerFake
             return true;
         }
 
-        if ($this->isFakeWindows()) {
+        if ($this->isFakeWindows() || $this->isFakeIe()) {
             return true;
         }
 
@@ -377,6 +377,19 @@ class SpamCrawlerFake
 
         return false;
     }
+    
+    public function isFakeIe()
+    {
+        $doMatch = preg_match('/MSIE (\d+)\.(\d+)/', $this->_useragent, $matches);
+        
+        if ($doMatch && isset($matches[1])) {
+            if ($matches[1] >= 6 && $matches[2] > 0) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
 
     public function isFakeWindows()
     {
@@ -425,15 +438,6 @@ class SpamCrawlerFake
 
         if ($this->utils->checkIfContains('X11; MSIE')) {
             return true;
-        }
-
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
-        if ($doMatch && isset($matches[1])) {
-            $versions = explode('.', $matches[1]);
-
-            if ($versions[0] >= 6 && $versions[1] > 0) {
-                return true;
-            }
         }
 
         return false;

@@ -114,7 +114,7 @@ class FakeBrowser
         $spamHelper = new SpamCrawlerFake();
         $spamHelper->setUserAgent($this->useragent);
 
-        if ($spamHelper->isFakeBrowser()) {
+        if ($spamHelper->isFakeBrowser() || $spamHelper->isFakeIe()) {
             return true;
         }
 
