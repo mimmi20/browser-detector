@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector\Os;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\Company;
@@ -55,7 +54,6 @@ use BrowserDetector\Detector\Version;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class Hpux
     extends OsHandler

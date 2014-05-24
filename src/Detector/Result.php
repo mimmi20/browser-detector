@@ -40,7 +40,6 @@ namespace BrowserDetector\Detector;
      * @package   BrowserDetector
      * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
      * @copyright 2012-2013 Thomas Mueller
-     * @version   SVN: $Id$
      */
 
 /**

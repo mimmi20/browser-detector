@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector\Browser\General;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\BrowserHandler;
@@ -58,7 +57,6 @@ use BrowserDetector\Helper\MobileDevice;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class Opera
     extends BrowserHandler
@@ -183,14 +181,14 @@ class Opera
      */
     public function detectEngine()
     {
-        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJOR_ONLY);
-        
+        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORONLY);
+
         if ($version >= 15) {
             $engine = new Blink();
         } else {
             $engine = new Presto();
         }
-        
+
         $engine->setUseragent($this->useragent);
         return $engine->detect();
     }

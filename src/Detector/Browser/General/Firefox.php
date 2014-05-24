@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector\Browser\General;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\BrowserHandler;
@@ -58,7 +57,6 @@ use BrowserDetector\Helper\SpamCrawlerFake;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class Firefox
     extends BrowserHandler

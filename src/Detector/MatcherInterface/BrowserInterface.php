@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector\MatcherInterface;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\DeviceHandler;
@@ -52,7 +51,6 @@ use BrowserDetector\Detector\OsHandler;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 interface BrowserInterface
 {

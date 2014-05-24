@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector\Device\Tv;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\Browser\Tv\Boxee;
@@ -64,7 +63,6 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class PhilipsTv
     extends DeviceHandler

@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\Browser\General\Extras4iMovie as DefaultExtras4iMovie;
@@ -48,7 +47,6 @@ use BrowserDetector\Detector\Browser\General\Extras4iMovie as DefaultExtras4iMov
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class Extras4iMovie extends DefaultExtras4iMovie
 {

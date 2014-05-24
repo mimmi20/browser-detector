@@ -39,7 +39,6 @@ namespace BrowserDetector\Detector\Browser\Desktop;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\Browser\General\AdobeAIR as AdobeAirBase;
@@ -49,7 +48,6 @@ use BrowserDetector\Detector\Browser\General\AdobeAIR as AdobeAirBase;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class AdobeAIR extends AdobeAirBase
 {

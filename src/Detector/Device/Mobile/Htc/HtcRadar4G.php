@@ -40,7 +40,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
  * @package   BrowserDetector
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2013 Thomas Mueller
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\Company;
@@ -55,7 +54,6 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 class HtcRadar4G
     extends DeviceHandler

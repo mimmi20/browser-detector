@@ -38,7 +38,6 @@ namespace BrowserDetector\Detector;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 
 use BrowserDetector\Detector\MatcherInterface;
@@ -52,7 +51,6 @@ use BrowserDetector\Helper\Utils;
  * @package   BrowserDetector
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
- * @version   SVN: $Id$
  */
 abstract class OsHandler
     implements MatcherInterface, OsInterface
@@ -84,7 +82,7 @@ abstract class OsHandler
     /**
      * Class Constructor
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function __construct()
     {
@@ -107,7 +105,9 @@ abstract class OsHandler
     /**
      * sets the user agent to be handled
      *
-     * @return OsHandler
+     * @param string $userAgent
+     *
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function setUserAgent($userAgent)
     {
@@ -130,7 +130,7 @@ abstract class OsHandler
     /**
      * detects the operating system name (platform) from the given user agent
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detect()
     {
@@ -166,7 +166,7 @@ abstract class OsHandler
     /**
      * detect the bits of the cpu which is build into the device
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     protected function _detectProperties()
     {
@@ -190,7 +190,7 @@ abstract class OsHandler
      * @param string $capabilityName must be a valid capability name
      *
      * @return string Capability value
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName)
     {
@@ -219,8 +219,9 @@ abstract class OsHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return OsHandler
-     * @throws InvalidArgumentException
+     * @param null   $capabilityValue
+     *
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function setCapability($capabilityName, $capabilityValue = null)
     {
@@ -273,7 +274,7 @@ abstract class OsHandler
      * @param EngineHandler  $engine
      * @param DeviceHandler  $device
      *
-     * @return OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
