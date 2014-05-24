@@ -166,6 +166,6 @@ class HtcMdaVarioIi
         $handler = new WindowsMobileOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

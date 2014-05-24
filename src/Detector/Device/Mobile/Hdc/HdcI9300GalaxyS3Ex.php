@@ -166,6 +166,6 @@ class HdcI9300GalaxyS3Ex
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

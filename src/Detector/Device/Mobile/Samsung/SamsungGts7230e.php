@@ -166,6 +166,6 @@ class SamsungGts7230e
         $handler = new Bada();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

@@ -166,6 +166,6 @@ class ArchosA7eb
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

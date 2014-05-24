@@ -166,6 +166,6 @@ class BlackBerry9520
         $handler = new RimOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

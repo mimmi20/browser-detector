@@ -177,7 +177,7 @@ class PhilipsTv
         $handler = new LinuxTv();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**

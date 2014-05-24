@@ -170,7 +170,7 @@ class HtcA9192Inspire4g
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**

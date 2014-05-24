@@ -143,6 +143,6 @@ class Ipick extends CfNetworkBase
         $handler = new Webkit();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

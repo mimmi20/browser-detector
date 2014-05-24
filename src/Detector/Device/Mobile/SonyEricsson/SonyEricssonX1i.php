@@ -170,6 +170,6 @@ class SonyEricssonX1i
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

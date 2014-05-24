@@ -188,6 +188,6 @@ class TelecaObigo
         $handler = new Teleca();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

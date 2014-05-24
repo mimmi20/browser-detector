@@ -166,6 +166,6 @@ class ArchosA80KSC
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

@@ -174,7 +174,7 @@ class SonyEricssonU1i
         $handler = new Symbianos();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**

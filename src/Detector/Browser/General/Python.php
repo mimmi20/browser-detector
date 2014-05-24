@@ -112,7 +112,7 @@ class Python
         if (!$this->utils->checkIfContains(array('Python', 'python'))) {
             return false;
         }
-        
+
         if ($this->utils->checkIfContains(array('Python-urllib'))) {
             return false;
         }
@@ -160,6 +160,6 @@ class Python
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

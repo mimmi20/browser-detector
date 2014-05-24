@@ -164,6 +164,6 @@ class Nokia3710
         $handler = new Symbianos();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

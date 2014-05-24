@@ -165,7 +165,7 @@ class PlayStationPortable
         $handler = new NetFront();
         $handler->setUserAgent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**
@@ -179,6 +179,6 @@ class PlayStationPortable
         $handler = new Java();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

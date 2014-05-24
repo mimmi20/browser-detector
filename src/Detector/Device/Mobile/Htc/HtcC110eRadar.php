@@ -166,6 +166,6 @@ class HtcC110eRadar
         $handler = new WindowsPhoneOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

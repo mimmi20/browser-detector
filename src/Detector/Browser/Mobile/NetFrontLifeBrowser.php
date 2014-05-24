@@ -165,6 +165,6 @@ class NetFrontLifeBrowser
         $handler = new NetFront();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

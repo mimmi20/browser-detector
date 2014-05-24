@@ -166,6 +166,6 @@ class MotorolaDroidRazr4g
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

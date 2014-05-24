@@ -180,6 +180,6 @@ class Postbox
         $handler = new Gecko();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

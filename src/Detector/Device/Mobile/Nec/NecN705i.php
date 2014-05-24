@@ -167,6 +167,6 @@ class NecN705i
         $handler = new Maemo();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

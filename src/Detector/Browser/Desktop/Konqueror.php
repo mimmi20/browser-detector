@@ -195,6 +195,6 @@ class Konqueror
         $handler = new Khtml();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

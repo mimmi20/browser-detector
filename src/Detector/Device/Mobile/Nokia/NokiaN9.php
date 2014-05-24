@@ -171,6 +171,6 @@ class NokiaN9
         $handler = new MeeGo();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

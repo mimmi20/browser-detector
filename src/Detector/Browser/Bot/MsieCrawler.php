@@ -156,6 +156,6 @@ class MsieCrawler
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

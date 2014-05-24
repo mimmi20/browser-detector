@@ -164,6 +164,6 @@ class SonyC6903ExperiaZ1
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

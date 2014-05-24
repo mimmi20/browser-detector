@@ -166,6 +166,6 @@ class SamsungSchU485
         $handler = new Brew();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

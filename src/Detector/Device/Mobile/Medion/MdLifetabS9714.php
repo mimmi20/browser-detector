@@ -166,6 +166,6 @@ class MdLifetabS9714
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

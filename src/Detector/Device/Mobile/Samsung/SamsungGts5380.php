@@ -166,6 +166,6 @@ class SamsungGts5380
         $handler = new Bada();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

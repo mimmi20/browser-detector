@@ -126,6 +126,6 @@ class WindowsPhoneSearch
         $handler = new Trident();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

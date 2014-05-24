@@ -171,6 +171,6 @@ class SonyEricssonU10i
         $handler = new Symbianos();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

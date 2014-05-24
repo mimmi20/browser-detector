@@ -170,7 +170,7 @@ class HtcA9191DesireHd
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**

@@ -168,6 +168,6 @@ class RimTablet
         $handler = new RimTabletOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

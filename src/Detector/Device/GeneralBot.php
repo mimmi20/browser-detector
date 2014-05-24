@@ -188,6 +188,6 @@ class GeneralBot
         $handler = new UnknownOs();
         $handler->setUserAgent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

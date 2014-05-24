@@ -156,6 +156,6 @@ class W3cValidator
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

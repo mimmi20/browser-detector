@@ -166,6 +166,6 @@ class SamsungGtp7500M
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

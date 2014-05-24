@@ -168,6 +168,6 @@ class SonyC5303XperiaSp
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

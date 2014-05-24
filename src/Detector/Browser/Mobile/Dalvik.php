@@ -158,6 +158,6 @@ class Dalvik
         $handler = new Webkit();
         $handler->setUseragent($this->useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

@@ -166,6 +166,6 @@ class SamsungGtp7300B
         $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 }

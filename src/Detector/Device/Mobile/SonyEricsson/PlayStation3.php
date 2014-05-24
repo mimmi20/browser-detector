@@ -165,7 +165,7 @@ class PlayStation3
         $handler = new Java();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**

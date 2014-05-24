@@ -167,7 +167,7 @@ class PalmPixi
         $handler = new WebOs();
         $handler->setUseragent($this->_useragent);
 
-        return $handler->detect();
+        return $handler;
     }
 
     /**
