@@ -351,7 +351,7 @@ class Version implements \Serializable
      * @return Version
      * @throws \UnexpectedValueException
      */
-    public function detectVersion($searches = null)
+    public function detectVersion($searches = '')
     {
         if (!is_array($searches) && !is_string($searches)) {
             throw new \UnexpectedValueException(
