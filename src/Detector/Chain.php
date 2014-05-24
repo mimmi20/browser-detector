@@ -184,7 +184,7 @@ class Chain
                 $handler->setUserAgent($this->_userAgent);
 
                 if ($handler->canHandle()) {
-                    return $handler->detect();
+                    return $handler;
                 }
 
                 $chain->next();

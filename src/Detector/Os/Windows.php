@@ -61,41 +61,6 @@ class Windows
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return OsHandler
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'Windows',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Microsoft(), // not in wurfl
-        );
-    }
-
-    /**
-     * @var string the detected platform
-     */
-    protected $_name = 'Windows';
-
-    /**
-     * @var string the manufacturer/creator of this OS
-     */
-    protected $_manufacturer = 'Microsoft';
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -117,41 +82,48 @@ class Windows
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
+     * returns the name of the operating system/platform
      *
      * @return string
      */
-    protected function _detectVersion()
+    public function getName()
+    {
+        return 'Windows';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
         if ($this->utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90'))) {
-            $this->setCapability('device_os_version', $detector->setVersion('ME'));
-            return;
+            return $detector->setVersion('ME');
         }
 
         if ($this->utils->checkIfContains(array('Win98'))) {
-            $this->setCapability('device_os_version', $detector->setVersion('98'));
-            return;
+            return $detector->setVersion('98');
         }
 
         if ($this->utils->checkIfContains(array('Win95'))) {
-            $this->setCapability('device_os_version', $detector->setVersion('95'));
-            return;
+            return $detector->setVersion('95');
+        }
+
+        if ($this->utils->checkIfContains(array('Windows NT 6.3; ARM;'))) {
+            return $detector->setVersion('RT 8.1');
         }
 
         if ($this->utils->checkIfContains(array('Windows NT 6.2; ARM;'))) {
-            $this->setCapability('device_os_version', $detector->setVersion('RT 8'));
-            return;
+            return $detector->setVersion('RT 8');
         }
 
         if ($this->utils->checkIfContains(array('Windows-NT'))) {
-            $this->setCapability('device_os_version', $detector->setVersion('NT'));
-            return;
+            return $detector->setVersion('NT');
         }
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
@@ -188,8 +160,7 @@ class Windows
                 break;
             }
 
-            $this->setCapability('device_os_version', $detector->setVersion($version));
-            return;
+            return $detector->setVersion($version);
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->_useragent, $matches);
@@ -244,11 +215,20 @@ class Windows
                 break;
             }
 
-            $this->setCapability('device_os_version', $detector->setVersion($version));
-            return;
+            return $detector->setVersion($version);
         }
 
-        $this->setCapability('device_os_version', $detector->setVersion(''));
+        return $detector->setVersion('');
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Microsoft();
     }
 
     /**

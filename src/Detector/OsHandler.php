@@ -66,20 +66,6 @@ abstract class OsHandler
     protected $utils = null;
 
     /**
-     * a \Zend\Cache object
-     *
-     * @var \Zend\Cache
-     */
-    protected $cache = null;
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
      * Class Constructor
      *
      * @return \BrowserDetector\Detector\OsHandler
@@ -87,19 +73,6 @@ abstract class OsHandler
     public function __construct()
     {
         $this->utils = new Utils();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'unknown',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
-        );
-
-        $detector = new Version();
-        $detector->setVersion('');
-
-        $this->setCapability('device_os_version', $detector);
     }
 
     /**
@@ -128,52 +101,6 @@ abstract class OsHandler
     }
 
     /**
-     * detects the operating system name (platform) from the given user agent
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detect()
-    {
-        $this->_detectVersion();
-        $this->_detectBits();
-        $this->_detectProperties();
-
-        return $this;
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     */
-    protected function _detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
-
-        $this->setCapability('device_os_version', $detector->setVersion(''));
-    }
-
-    /**
-     * detects the bit count by this browser from the given user agent
-     */
-    protected function _detectBits()
-    {
-        $detector = new Bits\Os();
-        $detector->setUserAgent($this->_useragent);
-
-        $this->setCapability('device_os_bits', $detector->getBits());
-    }
-
-    /**
-     * detect the bits of the cpu which is build into the device
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    protected function _detectProperties()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -181,89 +108,6 @@ abstract class OsHandler
     public function getWeight()
     {
         return 1;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @return string Capability value
-     * @throws \InvalidArgumentException
-     */
-    public function getCapability($capabilityName)
-    {
-        $this->checkCapability($capabilityName);
-
-        switch ($capabilityName) {
-        case 'device_os_version':
-            if (!($this->properties['device_os_version'] instanceof Version)) {
-                $detector = new Version();
-                $detector->setVersion('');
-
-                $this->setCapability('device_os_version', $detector);
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
-        }
-
-        return $this->properties[$capabilityName];
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @param null   $capabilityValue
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function setCapability($capabilityName, $capabilityValue = null)
-    {
-        $this->checkCapability($capabilityName);
-
-        $this->properties[$capabilityName] = $capabilityValue;
-
-        return $this;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @return string Capability value
-     * @throws \InvalidArgumentException
-     */
-    protected function checkCapability($capabilityName)
-    {
-        if (empty($capabilityName)) {
-            throw new \InvalidArgumentException(
-                'capability name must not be empty'
-            );
-        }
-
-        if (!array_key_exists($capabilityName, $this->properties)) {
-            throw new \InvalidArgumentException(
-                'no capability named [' . $capabilityName . '] is present.'
-            );
-        }
-    }
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getCapabilities()
-    {
-        return $this->properties;
     }
 
     /**

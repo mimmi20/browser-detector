@@ -69,10 +69,31 @@ interface OsInterface
     );
 
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the platform does not have a specific Browser
+     * returns the Browser Handler otherwise
      *
      * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser();
+
+    /**
+     * returns the name of the operating system/platform
+     *
+     * @return string
+     */
+    public function getName();
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion();
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer();
 }

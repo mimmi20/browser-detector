@@ -60,31 +60,6 @@ class Slackware
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return OsHandler
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'Slackware Linux',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Slackware(), // not in wurfl
-        );
-    }
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -99,23 +74,38 @@ class Slackware
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @param string $this ->_useragent
+     * returns the name of the operating system/platform
      *
      * @return string
      */
-    protected function _detectVersion()
+    public function getName()
+    {
+        return 'Slackware Linux';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $searches = array('Slackware');
 
-        $this->setCapability(
-            'device_os_version',
-            $detector->detectVersion($searches)
-        );
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Slackware();
     }
 
     /**

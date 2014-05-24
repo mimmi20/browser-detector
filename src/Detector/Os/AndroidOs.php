@@ -85,31 +85,6 @@ class AndroidOs
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'Android',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Google(), // not in wurfl
-        );
-    }
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -134,10 +109,10 @@ class AndroidOs
         if ($this->utils->checkIfContains($noAndroid)) {
             return false;
         }
-        
+
         $firefoxOshelper = new \BrowserDetector\Helper\FirefoxOs();
         $firefoxOshelper->setUserAgent($this->_useragent);
-        
+
         if ($firefoxOshelper->isFirefoxOs()) {
             return false;
         }
@@ -160,19 +135,27 @@ class AndroidOs
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns the name of the operating system/platform
+     *
+     * @return string
      */
-    protected function _detectVersion()
+    public function getName()
+    {
+        return 'Android';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         if ($this->utils->checkIfContains('android 2.1-update1', true)) {
-            $this->setCapability(
-                'device_os_version',
-                $detector->setVersion('2.1.1')
-            );
-            return;
+            return $detector->setVersion('2.1.1');
         }
 
         $searches = array(
@@ -181,26 +164,29 @@ class AndroidOs
             'Android OS'
         );
 
-        $this->setCapability(
-            'device_os_version',
-            $detector->detectVersion($searches)
-        );
+        $detector->detectVersion($searches);
 
-        if (!$this->getCapability('device_os_version')->getVersion()) {
+        if (!$detector->getVersion()) {
             if ($this->utils->checkIfContains('android eclair', true)) {
-                $this->setCapability(
-                    'device_os_version',
-                    $detector->setVersion('2.1')
-                );
+                $detector->setVersion('2.1');
             }
 
             if ($this->utils->checkIfContains('gingerbread', true)) {
-                $this->setCapability(
-                    'device_os_version',
-                    $detector->setVersion('2.3')
-                );
+                $detector->setVersion('2.3');
             }
         }
+
+        return $detector;
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Google();
     }
 
     /**

@@ -44,6 +44,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
@@ -59,31 +60,6 @@ class Cpm
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return OsHandler
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'CP/M',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Unknown(), // not in wurfl
-        );
-    }
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -95,6 +71,41 @@ class Cpm
         }
 
         return true;
+    }
+
+    /**
+     * returns the name of the operating system/platform
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'CP/M';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->_useragent);
+
+        $searches = array('AIX');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
     }
 
     /**

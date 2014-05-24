@@ -146,7 +146,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @return
+     * @return string
      */
     private function detectEngine()
     {
@@ -182,7 +182,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the os by User Agent
      *
-     * @return
+     * @return string
      */
     private function detectOs()
     {

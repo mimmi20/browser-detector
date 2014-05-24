@@ -69,41 +69,6 @@ class WindowsMobileOs
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return OsHandler
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'Windows Mobile OS',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Microsoft(), // not in wurfl
-        );
-    }
-
-    /**
-     * @var string the detected platform
-     */
-    protected $_name = 'Windows Mobile OS';
-
-    /**
-     * @var string the manufacturer/creator of this OS
-     */
-    protected $_manufacturer = 'Microsoft';
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -140,24 +105,27 @@ class WindowsMobileOs
     }
 
     /**
-     * detects the browser name from the given user agent
-     *
-     * @param string $this ->_useragent
+     * returns the name of the operating system/platform
      *
      * @return string
      */
-    protected function _detectVersion()
+    public function getName()
+    {
+        return 'Windows Mobile OS';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         if ($this->utils->checkIfContains('Windows NT 5.1')) {
-            $this->setCapability(
-                'device_os_version',
-                $detector->setVersion('6.0')
-            );
-
-            return;
+            return $detector->setVersion('6.0');
         }
 
         if ($this->utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
@@ -165,20 +133,22 @@ class WindowsMobileOs
 
             $searches = array('MSIEMobile');
 
-            $this->setCapability(
-                'device_os_version',
-                $detector->detectVersion($searches)
-            );
-
-            return;
+            return $detector->detectVersion($searches);
         }
 
         $searches = array('Windows Phone');
 
-        $this->setCapability(
-            'device_os_version',
-            $detector->detectVersion($searches)
-        );
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Microsoft();
     }
 
     /**

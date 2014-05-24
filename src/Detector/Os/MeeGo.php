@@ -43,6 +43,7 @@ namespace BrowserDetector\Detector\Os;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
 use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
+use BrowserDetector\Detector\Browser\Mobile\WeTabBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
@@ -65,31 +66,6 @@ class MeeGo
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Os\MeeGo
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'MeeGo',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\LinuxFoundation(), // not in wurfl
-        );
-    }
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -104,19 +80,38 @@ class MeeGo
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns the name of the operating system/platform
+     *
+     * @return string
      */
-    protected function _detectVersion()
+    public function getName()
+    {
+        return 'MeeGo';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $searches = array('MeeGo');
 
-        $this->setCapability(
-            'device_os_version',
-            $detector->detectVersion($searches)
-        );
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\LinuxFoundation();
     }
 
     /**
@@ -141,7 +136,7 @@ class MeeGo
             new Android(),
             new Chrome(),
             new OperaMobile(),
-            new \BrowserDetector\Detector\Browser\Mobile\WeTabBrowser(),
+            new WeTabBrowser(),
         );
 
         $chain = new Chain();

@@ -76,31 +76,6 @@ class Ios
     implements MatcherInterface, OsInterface
 {
     /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Os\Ios
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-            // os
-            'device_os'              => 'iOS',
-            'device_os_version'      => '',
-            'device_os_bits'         => '', // not in wurfl
-            'device_os_manufacturer' => new Company\Apple(), // not in wurfl
-        );
-    }
-
-    /**
      * Returns true if this handler can handle the given $useragent
      *
      * @return bool
@@ -124,9 +99,21 @@ class Ios
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns the name of the operating system/platform
+     *
+     * @return string
      */
-    protected function _detectVersion()
+    public function getName()
+    {
+        return 'iOS';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
@@ -136,18 +123,25 @@ class Ios
             'iPhone OS', 'iPhone_OS', 'IUC\(U\;iOS'
         );
 
-        $this->setCapability(
-            'device_os_version',
-            $detector->detectVersion($searches)
-        );
+        $detector->detectVersion($searches);
 
         $doMatch = preg_match('/CPU like Mac OS X/', $this->_useragent, $matches);
 
         if ($doMatch) {
-            $this->setCapability(
-                'device_os_version', $detector->setVersion('1.0')
-            );
+            $detector->setVersion('1.0');
         }
+
+        return $detector;
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Apple();
     }
 
     /**
@@ -191,30 +185,5 @@ class Ios
         $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @return string Capability value
-     * @throws \InvalidArgumentException
-     */
-    public function getCapability($capabilityName)
-    {
-        $this->checkCapability($capabilityName);
-
-        switch ($capabilityName) {
-        case 'model_extra_info':
-            return $this->properties['device_os_version']->getVersion(
-                Version::MAJORMINOR
-            );
-            break;
-        default:
-            return $this->properties[$capabilityName];
-            break;
-        }
     }
 }
