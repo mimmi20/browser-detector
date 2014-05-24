@@ -54,7 +54,7 @@ use BrowserDetector\Detector\Version;
  */
 class UnknownOs
     extends OsHandler
-    implements MatcherInterface, OsInterface
+    implements OsInterface
 {
     /**
      * Returns true if this handler can handle the given $useragent

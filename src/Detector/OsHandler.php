@@ -53,7 +53,7 @@ use BrowserDetector\Helper\Utils;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 abstract class OsHandler
-    implements MatcherInterface, OsInterface
+    implements OsInterface
 {
     /**
      * @var string the user agent to handle
