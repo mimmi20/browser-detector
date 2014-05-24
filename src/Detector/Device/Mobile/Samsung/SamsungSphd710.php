@@ -195,7 +195,7 @@ class SamsungSphd710
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('bmp', false);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -195,7 +195,7 @@ class Chrome
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\Webkit|\BrowserDetector\Detector\Engine\Blink
      */
     public function detectEngine()
     {
@@ -226,7 +226,7 @@ class Chrome
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
-        $osname = $os->getCapability('device_os');
+        $osname = $os->getName();
 
         if ('iOS' === $osname) {
             $engine->setCapability('xhtml_format_as_css_property', true);

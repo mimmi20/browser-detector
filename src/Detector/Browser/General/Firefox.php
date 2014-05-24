@@ -206,7 +206,7 @@ class Firefox
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\Engine\Gecko
      */
     public function detectEngine()
     {
@@ -232,7 +232,7 @@ class Firefox
         parent::detectDependProperties($engine, $os, $device);
 
         if ($device->getCapability('device_type')->isMobile()
-            && 'Android' == $os->getCapability('device_os')
+            && 'Android' == $os->getName()
         ) {
             $device->setCapability('has_qwerty_keyboard', true);
             $device->setCapability('pointing_method', 'touchscreen');

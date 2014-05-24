@@ -193,7 +193,7 @@ class SonyEricssonST18i
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

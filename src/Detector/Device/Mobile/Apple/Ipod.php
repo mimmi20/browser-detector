@@ -194,7 +194,7 @@ class Ipod
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORONLY
         );
 
@@ -203,7 +203,7 @@ class Ipod
             $this->setCapability('resolution_height', 960);
         }
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -222,7 +222,7 @@ class Ipod
             $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');
         }
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion();
+        $osVersion = $os->getVersion()->getVersion();
 
         switch ($osVersion) {
         case '4.2.1':

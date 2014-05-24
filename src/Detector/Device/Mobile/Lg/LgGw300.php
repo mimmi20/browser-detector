@@ -70,7 +70,7 @@ class LgGw300
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Lg\LgGw300
      */
     public function __construct()
     {
@@ -94,22 +94,6 @@ class LgGw300
             'device_claims_web_support' => true,
             'device_bits'               => null, // not in wurfl
             'device_cpu'                => null, // not in wurfl
-
-            // browser
-            // 'mobile_browser'         => null,
-            // 'mobile_browser_version' => null,
-            // 'mobile_browser_bits'    => null, // not in wurfl
-
-            // os
-            // 'device_os'              => null,
-            // 'device_os_version'      => null,
-            // 'device_os_bits'         => null, // not in wurfl
-            // 'device_os_manufacturer' => null, // not in wurfl
-
-            // engine
-            // 'renderingengine_name'         => null, // not in wurfl
-            // 'renderingengine_version'      => null, // not in wurfl
-            // 'renderingengine_manufacturer' => null, // not in wurfl
 
             // product info
             'can_skip_aligned_link_row' => null,
@@ -135,12 +119,9 @@ class LgGw300
     }
 
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @param string $this ->_useragent
-     *
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -164,9 +145,7 @@ class LgGw300
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Lg\LgGw300
      */
     public function detectDevice()
     {
@@ -177,7 +156,7 @@ class LgGw300
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {

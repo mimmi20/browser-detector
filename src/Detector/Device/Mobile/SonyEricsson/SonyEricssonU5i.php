@@ -70,7 +70,7 @@ class SonyEricssonU5i
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU5i
      */
     public function __construct()
     {
@@ -150,9 +150,7 @@ class SonyEricssonU5i
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU5i
      */
     public function detectDevice()
     {
@@ -163,7 +161,7 @@ class SonyEricssonU5i
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
@@ -181,14 +179,14 @@ class SonyEricssonU5i
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU5i
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        if ('Symbian OS' == $os->getCapability('device_os')) {
+        if ('Symbian OS' == $os->getName()) {
             $browser->setCapability('pdf_support', false);
         }
 

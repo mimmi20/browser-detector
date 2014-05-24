@@ -71,7 +71,7 @@ class AcerIconiaA701
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA701
      */
     public function __construct()
     {
@@ -151,7 +151,7 @@ class AcerIconiaA701
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
@@ -165,7 +165,11 @@ class AcerIconiaA701
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA701
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
@@ -177,7 +181,7 @@ class AcerIconiaA701
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

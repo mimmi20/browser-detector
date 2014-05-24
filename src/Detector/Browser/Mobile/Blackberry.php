@@ -164,7 +164,7 @@ class Blackberry
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\EngineHandler
+     * @return \BrowserDetector\Detector\EngineHandler
      */
     public function detectEngine()
     {
@@ -220,7 +220,7 @@ class Blackberry
         $engine->setCapability('css_rounded_corners', 'none');
         $engine->setCapability('wml_1_1', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+        $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
 
         if ($osVersion == 6.0) {
             $this->setCapability('pdf_support', true);

@@ -71,7 +71,7 @@ class AcerE310
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerE310
      */
     public function __construct()
     {
@@ -150,9 +150,7 @@ class AcerE310
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerE310
      */
     public function detectDevice()
     {
@@ -163,7 +161,7 @@ class AcerE310
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
@@ -181,7 +179,7 @@ class AcerE310
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerE310
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
@@ -192,7 +190,7 @@ class AcerE310
         $engine->setCapability('bmp', true);
         // $engine->setCapability('gif_animated', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

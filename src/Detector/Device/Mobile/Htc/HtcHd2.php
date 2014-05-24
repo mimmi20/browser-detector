@@ -167,7 +167,7 @@ class HtcHd2
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
@@ -192,12 +192,12 @@ class HtcHd2
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHd2
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osName = $os->getCapability('device_os');
+        $osName = $os->getName();
 
         if ('Android' == $osName) {
             // htc_hd2_android_ver1_subua40htc

@@ -182,7 +182,7 @@ class SamsungGalaxyNexus
 
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

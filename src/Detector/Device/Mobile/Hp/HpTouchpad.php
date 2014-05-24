@@ -163,7 +163,7 @@ class HpTouchpad
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
@@ -188,7 +188,7 @@ class HpTouchpad
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
@@ -204,7 +204,7 @@ class HpTouchpad
 
         if (('Android Webkit' == $browser->getCapability('mobile_browser')
                 || 'Chrome' == $browser->getCapability('mobile_browser'))
-            && 'Android' == $os->getCapability('device_os')
+            && 'Android' == $os->getName()
         ) {
             $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
             $this->setCapability('model_extra_info', 'Android port');

@@ -194,7 +194,7 @@ class SonyEricssonLT22i
         $engine->setCapability('bmp', true);
         // $engine->setCapability('gif_animated', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

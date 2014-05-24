@@ -73,7 +73,7 @@ class GeneralMobile
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\GeneralMobile
      */
     public function __construct()
     {
@@ -145,9 +145,7 @@ class GeneralMobile
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {
@@ -176,7 +174,7 @@ class GeneralMobile
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectBrowser()
     {
@@ -200,7 +198,7 @@ class GeneralMobile
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\GeneralMobile
      */
     protected function _parseProperties()
     {
@@ -344,7 +342,7 @@ class GeneralMobile
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\GeneralMobile
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
@@ -359,8 +357,8 @@ class GeneralMobile
 
         switch ($brwoserName) {
         case 'Firefox':
-            if ('Android' == $os->getCapability('device_os')) {
-                $os->getCapability('device_os_version')->setVersion('2.0');
+            if ('Android' == $os->getName()) {
+                $os->getVersion()->setVersion('2.0');
 
                 if ($this->getCapability('device_type')->isTablet()) {
                     $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec_tablet');
@@ -372,8 +370,8 @@ class GeneralMobile
             }
             break;
         case 'Opera Mobile':
-            if ('Android' == $os->getCapability('device_os')) {
-                $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            if ('Android' == $os->getName()) {
+                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
 
                 if (4.0 == (float)$osVersion) {
                     $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
@@ -395,14 +393,14 @@ class GeneralMobile
                     $engine->setCapability('css_border_image', 'opera');
                     $engine->setCapability('css_rounded_corners', 'opera');
                 }
-            } elseif ('Windows Mobile OS' == $os->getCapability('device_os')) {
+            } elseif ('Windows Mobile OS' == $os->getName()) {
                 $this->setCapability('has_qwerty_keyboard', false);
                 $this->setCapability('pointing_method', 'stylus');
                 $this->setCapability('resolution_width', 240);
                 $this->setCapability('resolution_height', 320);
                 $this->setCapability('dual_orientation', false);
                 $this->setCapability('colors', 4096);
-            } elseif ('Symbian OS' == $os->getCapability('device_os')) {
+            } elseif ('Symbian OS' == $os->getName()) {
                 $this->setCapability('has_qwerty_keyboard', false);
                 $this->setCapability('pointing_method', null);
                 $this->setCapability('resolution_width', 240);
@@ -412,8 +410,8 @@ class GeneralMobile
             }
             break;
         case 'Opera Tablet':
-            if ('Android' == $os->getCapability('device_os')) {
-                $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            if ('Android' == $os->getName()) {
+                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
 
                 if (3.2 == (float)$osVersion) {
                     $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');
@@ -441,8 +439,8 @@ class GeneralMobile
             }
             break;
         case 'Opera Mini':
-            if ('Android' == $os->getCapability('device_os')) {
-                $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            if ('Android' == $os->getName()) {
+                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
 
                 if (5.0 == (float)$osVersion) {
                     $this->setCapability('wurflKey', 'generic_opera_mini_android_version5');
@@ -451,21 +449,21 @@ class GeneralMobile
                 $this->setCapability('resolution_width', 240);
                 $this->setCapability('resolution_height', 320);
                 $this->setCapability('dual_orientation', false);
-            } elseif ('Java' == $os->getCapability('device_os')) {
+            } elseif ('Java' == $os->getName()) {
                 $this->setCapability('wurflKey', 'uabait_opera_mini_v10_op98');
                 $this->setCapability('colors', 256);
             }
             break;
         case 'Android Webkit':
-            if ('Android' == $os->getCapability('device_os')) {
+            if ('Android' == $os->getName()) {
                 $this->setCapability('has_qwerty_keyboard', true);
                 $this->setCapability('pointing_method', 'touchscreen');
             }
             break;
         case 'Internet Explorer':
         case 'IEMobile':
-            if ('Windows Mobile OS' == $os->getCapability('device_os')) {
-                $osVersion = $os->getCapability('device_os_version')->getVersion(Version::MAJORMINOR);
+            if ('Windows Mobile OS' == $os->getName()) {
+                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
 
                 if (6.5 == (float)$osVersion) {
                     // $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');

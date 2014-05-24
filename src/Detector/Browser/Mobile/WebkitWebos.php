@@ -71,7 +71,7 @@ class WebkitWebos
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\WebkitWebos
      */
     public function __construct()
     {
@@ -132,7 +132,7 @@ class WebkitWebos
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Browser\Mobile\WebkitWebos
      */
     protected function _detectVersion()
     {
@@ -152,7 +152,7 @@ class WebkitWebos
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function detectEngine()
     {
@@ -166,7 +166,11 @@ class WebkitWebos
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @return DeviceHandler
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\Mobile\WebkitWebos
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
@@ -181,7 +185,7 @@ class WebkitWebos
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

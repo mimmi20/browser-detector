@@ -194,7 +194,7 @@ class Ipad
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -221,7 +221,7 @@ class Ipad
             $this->setCapability('wurflKey', 'apple_ipad_ver1_sub6');
         }
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion();
+        $osVersion = $os->getVersion()->getVersion();
 
         switch ($osVersion) {
         case '3.1.3':

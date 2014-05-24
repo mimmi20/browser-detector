@@ -191,7 +191,7 @@ class SamsungGti9000
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('supports_java_applets', false);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

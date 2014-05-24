@@ -192,7 +192,7 @@ class Lgp990
         $engine->setCapability('bmp', true);
         $engine->setCapability('softkey_support', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -202,7 +202,7 @@ class Lgp990
             case 2.2:
                 $this->setCapability('wurflKey', 'lg_p990_ver1_suban22');
 
-                $osVersion = $os->getCapability('device_os_version')->getVersion();
+                $osVersion = $os->getVersion()->getVersion();
 
                 if ('2.2.2' == $osVersion) {
                     //Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; LG-P990 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2

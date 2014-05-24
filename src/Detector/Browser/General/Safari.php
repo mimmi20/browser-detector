@@ -209,7 +209,7 @@ class Safari
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function detectEngine()
     {
@@ -245,7 +245,7 @@ class Safari
 
         parent::detectDependProperties($engine, $os, $device);
 
-        $osVersion = (float)$os->getCapability('device_os_version')->getVersion(
+        $osVersion = (float)$os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -263,8 +263,8 @@ class Safari
             $engine->setCapability('jqm_grade', 'B');
         }
 
-        $osname    = $os->getCapability('device_os');
-        $osVersion = (float)$os->getCapability('device_os_version')->getVersion(
+        $osname    = $os->getName();
+        $osVersion = (float)$os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

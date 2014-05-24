@@ -191,7 +191,7 @@ class HuaweiU8860
         // wurflkey: huawei_u8860_ver1_suban40noh
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 

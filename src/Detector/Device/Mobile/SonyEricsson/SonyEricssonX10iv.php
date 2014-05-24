@@ -188,7 +188,7 @@ class SonyEricssonX10iv
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORONLY
         );
 

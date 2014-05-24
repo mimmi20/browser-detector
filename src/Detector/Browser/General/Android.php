@@ -313,7 +313,7 @@ class Android
         $engine->setCapability('xhtml_supports_invisible_text', false);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
 
-        $osVersion = $os->getCapability('device_os_version')->getVersion(
+        $osVersion = $os->getVersion()->getVersion(
             Version::MAJORMINOR
         );
 
