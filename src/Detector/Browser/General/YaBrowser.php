@@ -156,7 +156,7 @@ class YaBrowser
      */
     public function detectEngine()
     {
-        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJOR_MINOR);
+        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORMINOR);
         
         if ($version >= '1.20') {
             $engine = new Blink();
