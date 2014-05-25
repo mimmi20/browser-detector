@@ -177,7 +177,8 @@ class HpTouchpad
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 
     /**

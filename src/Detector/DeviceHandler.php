@@ -426,7 +426,8 @@ abstract class DeviceHandler
             __DIR__ . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
         );
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 
     /**

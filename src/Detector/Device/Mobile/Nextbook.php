@@ -161,7 +161,8 @@ class Nextbook
         );
         $chain->setDefaultHandler($this);
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 
     /**

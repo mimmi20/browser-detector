@@ -210,6 +210,7 @@ class MacBookAir
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 }

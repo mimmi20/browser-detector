@@ -155,7 +155,8 @@ class GeneralTv
         );
         $chain->setDefaultHandler($this);
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 
     /**
@@ -189,6 +190,7 @@ class GeneralTv
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 }

@@ -174,7 +174,8 @@ class GeneralBot
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new GeneralBotDevice());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 
     /**

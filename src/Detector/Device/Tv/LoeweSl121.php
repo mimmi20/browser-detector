@@ -203,6 +203,7 @@ class LoeweSl121
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 }

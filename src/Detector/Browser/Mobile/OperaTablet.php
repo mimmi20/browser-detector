@@ -177,6 +177,7 @@ class OperaTablet
         $chain->setHandlers($engines);
         $chain->setDefaultHandler(new Presto());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 }

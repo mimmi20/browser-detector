@@ -153,7 +153,8 @@ class WebOs
         $chain->setDefaultHandler(new UnknownBrowser());
         $chain->setUseragent($this->_useragent);
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 
     /**
@@ -177,6 +178,7 @@ class WebOs
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        return $device->detect();
     }
 }
