@@ -145,16 +145,6 @@ class Iphone
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Iphone
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

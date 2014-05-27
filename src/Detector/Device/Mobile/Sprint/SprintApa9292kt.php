@@ -134,16 +134,6 @@ class SprintApa9292kt
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Sprint\SprintApa9292kt
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

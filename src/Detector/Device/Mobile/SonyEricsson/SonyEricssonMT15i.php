@@ -151,16 +151,6 @@ class SonyEricssonMT15i
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonMT15i
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * detects properties who are depending on the device version or the user
      * agent
      *

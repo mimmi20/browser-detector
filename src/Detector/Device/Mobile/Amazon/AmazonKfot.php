@@ -147,16 +147,6 @@ class AmazonKfot
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKfot
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

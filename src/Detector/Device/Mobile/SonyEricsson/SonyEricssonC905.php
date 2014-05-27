@@ -144,16 +144,6 @@ class SonyEricssonC905
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonC905
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

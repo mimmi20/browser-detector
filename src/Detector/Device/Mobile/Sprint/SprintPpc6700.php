@@ -134,16 +134,6 @@ class SprintPpc6700
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Sprint\SprintPpc6700
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

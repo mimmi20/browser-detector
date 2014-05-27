@@ -55,13 +55,6 @@ use BrowserDetector\Detector\OsHandler;
 interface DeviceInterface
 {
     /**
-     * detects the device name from the given user agent
-     *
-     * @return DeviceInterface
-     */
-    public function detectDevice();
-
-    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *

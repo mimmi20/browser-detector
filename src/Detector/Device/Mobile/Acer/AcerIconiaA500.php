@@ -148,16 +148,6 @@ class AcerIconiaA500
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA500
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

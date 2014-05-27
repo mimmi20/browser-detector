@@ -151,16 +151,6 @@ class Macintosh
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Desktop\Macintosh
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

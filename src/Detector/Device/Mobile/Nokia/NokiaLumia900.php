@@ -147,16 +147,6 @@ class NokiaLumia900
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia900
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

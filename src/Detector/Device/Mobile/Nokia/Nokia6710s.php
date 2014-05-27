@@ -141,17 +141,7 @@ class Nokia6710s
     public function getWeight()
     {
         return 3;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\Nokia6710s
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
+    }}
 
     /**
      * returns null, if the device does not have a specific Operating System

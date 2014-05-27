@@ -149,18 +149,6 @@ class HtcAdr6350
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @param string $userAgent
-     *
-     * @return StdClass
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *

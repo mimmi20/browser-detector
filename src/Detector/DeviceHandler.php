@@ -193,16 +193,6 @@ abstract class DeviceHandler
      *
      * @return DeviceHandler
      */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return DeviceHandler
-     */
     protected function _detectDeviceVersion()
     {
         $detector = new Version();

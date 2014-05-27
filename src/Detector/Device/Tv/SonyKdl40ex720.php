@@ -144,16 +144,6 @@ class SonyKdl40ex720
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return SonyKdl40ex720
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

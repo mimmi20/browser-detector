@@ -144,16 +144,6 @@ class DlinkDsm380
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return DlinkDsm380
-     */
-    public function detectDevice()
-    {
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
