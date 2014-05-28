@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LgKp500
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class LgKp500
 
             // device
             'model_name'              => 'KP500',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Lg(),
             'brand_name'              => new Company\Lg(),
             'model_extra_info'        => null,
             'marketing_name'          => 'KP500',
             'has_qwerty_keyboard'     => false,
             'pointing_method'         => 'stylus',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

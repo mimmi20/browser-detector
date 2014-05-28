@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGtb7610
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungGtb7610
 
             // device
             'model_name'              => 'GT-B7610',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => 'Vodafone', // wurflkey: samsung_gt_b7610_ver1_subvoda
             'marketing_name'          => 'Louvre', // wurflkey: samsung_gt_b7610_ver1_subvoda
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_b7610_ver1_subvoda
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM11763 S3C6410', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

@@ -103,6 +103,7 @@ class UserAgent extends Core
     public function getBrowser()
     {
         $this->device = $this->detectDevice();
+        $this->device->detectSpecialProperties();
 
         // detect the os which runs on the device
         $this->os = $this->device->detectOs();
@@ -217,6 +218,12 @@ class UserAgent extends Core
         $chain->setHandlers($handlersToUse);
         $chain->setDefaultHandler(new UnknownDevice());
 
-        return $chain->detect();
+        $device = $chain->detect();
+        
+        if ($device instanceof DeviceHasChildrenInterface) {
+            $device = $device->detectDevice();
+        }
+        
+        return $device;
     }
 }

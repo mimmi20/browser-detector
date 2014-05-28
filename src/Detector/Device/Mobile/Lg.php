@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Bada;
 use BrowserDetector\Detector\Os\Brew;
@@ -63,7 +64,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Lg
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -89,15 +90,12 @@ class Lg
 
             // device
             'model_name'              => 'general LG Device',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Lg(),
             'brand_name'              => new Company\Lg(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general LG Device',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -182,8 +180,7 @@ class Lg
         );
         $chain->setDefaultHandler($this);
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**

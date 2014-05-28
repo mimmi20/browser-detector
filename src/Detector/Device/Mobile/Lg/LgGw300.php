@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LgGw300
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,7 +84,6 @@ class LgGw300
 
             // device
             'model_name'                => 'GW300',
-            'model_version'             => null, // not in wurfl
             'manufacturer_name'         => new Company\Lg(),
             'brand_name'                => new Company\Lg(),
             'model_extra_info'          => null,
@@ -92,8 +91,6 @@ class LgGw300
             'has_qwerty_keyboard'       => true,
             'pointing_method'           => 'touchscreen',
             'device_claims_web_support' => true,
-            'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
 
             // product info
             'can_skip_aligned_link_row' => null,

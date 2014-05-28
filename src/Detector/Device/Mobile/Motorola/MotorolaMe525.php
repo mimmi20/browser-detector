@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class MotorolaMe525
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class MotorolaMe525
 
             // device
             'model_name'              => 'ME525',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Motorola(),
             'brand_name'              => new Company\Motorola(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Defy',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

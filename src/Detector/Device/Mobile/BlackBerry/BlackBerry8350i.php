@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class BlackBerry8350i
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class BlackBerry8350i
 
             // device
             'model_name'              => 'BlackBerry 8350i',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Rim(),
             'brand_name'              => new Company\Rim(),
             'model_extra_info'        => null,
             'marketing_name'          => 'BlackBerry 8350i',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'clickwheel',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

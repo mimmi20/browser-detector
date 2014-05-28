@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LencoCm900Hz
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class LencoCm900Hz
 
             // device
             'model_name'              => 'CM900HZ',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Lenco(),
             'brand_name'              => new Company\Lenco(),
             'model_extra_info'        => null,
             'marketing_name'          => 'CM900HZ',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

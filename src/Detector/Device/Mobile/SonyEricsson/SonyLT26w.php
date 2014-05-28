@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyLT26w
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SonyLT26w
 
             // device
             'model_name'              => 'LT26w',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Sony(),
             'brand_name'              => new Company\Sony(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Xperia Acro S',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

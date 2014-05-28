@@ -46,6 +46,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\SpamCrawlerFake;
@@ -60,7 +61,7 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  */
 class GeneralDesktop
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -86,15 +87,12 @@ class GeneralDesktop
 
             // device
             'model_name'              => 'general Desktop',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Unknown(),
             'brand_name'              => new Company\Unknown(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general Desktop',
             'has_qwerty_keyboard'     => null,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -201,7 +199,12 @@ class GeneralDesktop
         $chain->setDefaultHandler($this);
 
         $device = $chain->detect();
-        return $device->detect();
+        
+        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
+            $device = $device->detectDevice();
+        }
+        
+        return $device;
     }
 
     /**

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LenovoA1000f
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class LenovoA1000f
 
             // device
             'model_name'              => 'A1000-F',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Lenovo(),
             'brand_name'              => new Company\Lenovo(),
             'model_extra_info'        => null,
             'marketing_name'          => 'IdeaPad A1000-F',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

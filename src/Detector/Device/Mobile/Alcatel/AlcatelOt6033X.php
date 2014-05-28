@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AlcatelOt6033X
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class AlcatelOt6033X
 
             // device
             'model_name'              => 'OT-6033X',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Alcatel(),
             'brand_name'              => new Company\Alcatel(),
             'model_extra_info'        => null,
             'marketing_name'          => 'One Touch Idol Ultra',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

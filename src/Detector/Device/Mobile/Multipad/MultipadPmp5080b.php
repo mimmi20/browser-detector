@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class MultipadPmp5080b
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class MultipadPmp5080b
 
             // device
             'model_name'              => 'PMP5080B',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Multipad(),
             'brand_name'              => new Company\Multipad(), // wurflkey: multipad_pmp5080b_ver1_suban40
             'model_extra_info'        => null,
             'marketing_name'          => null,
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

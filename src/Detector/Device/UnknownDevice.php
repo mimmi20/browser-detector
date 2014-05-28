@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
 
 class UnknownDevice
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class UnknownDevice
 
             // device
             'model_name'              => 'unknown Device',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Unknown(),
             'brand_name'              => new Company\Unknown(),
             'model_extra_info'        => null,
             'marketing_name'          => 'unknown Device',
             'has_qwerty_keyboard'     => false,
             'pointing_method'         => null,
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

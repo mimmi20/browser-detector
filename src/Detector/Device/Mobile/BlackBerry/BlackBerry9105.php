@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class BlackBerry9105
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class BlackBerry9105
 
             // device
             'model_name'              => 'BlackBerry 9105',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Rim(),
             'brand_name'              => new Company\Rim(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
             'has_qwerty_keyboard'     => false, // wurflkey: blackberry9105_ver1_subos6
             'pointing_method'         => 'clickwheel',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

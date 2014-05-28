@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGtp7501
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class SamsungGtp7501
 
             // device
             'model_name'              => 'GT-P7501',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => '10.1 N',
             'marketing_name'          => 'Galaxy Tab 10.1N',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

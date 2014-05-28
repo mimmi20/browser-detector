@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Version;
  */
 class PlayStation3
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -82,15 +82,12 @@ class PlayStation3
 
             // device
             'model_name'              => 'Playstation 3',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Sony(),
             'brand_name'              => new Company\Sony(),
             'model_extra_info'        => null,
             'marketing_name'          => null,
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -161,9 +158,9 @@ class PlayStation3
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectDeviceVersion()
+    public function getDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
@@ -171,9 +168,6 @@ class PlayStation3
 
         $searches = array('PLAYSTATION 3');
 
-        $this->setCapability(
-            'model_version', $detector->detectVersion($searches)
-        );
-        return $this;
+        return $detector->detectVersion($searches);
     }
 }

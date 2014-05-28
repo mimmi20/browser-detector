@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class MotorolaA953
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class MotorolaA953
 
             // device
             'model_name'              => 'A953',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Motorola(),
             'brand_name'              => new Company\Motorola(),
             'model_extra_info'        => null,
             'marketing_name'          => 'MILESTONE 2',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

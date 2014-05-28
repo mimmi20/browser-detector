@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class ZteV970
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class ZteV970
 
             // device
             'model_name'              => 'V970',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Zte(),
             'brand_name'              => new Company\Zte(),
             'model_extra_info'        => null,
             'marketing_name'          => 'V970',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

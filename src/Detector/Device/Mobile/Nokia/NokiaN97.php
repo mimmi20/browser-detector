@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class NokiaN97
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class NokiaN97
 
             // device
             'model_name'              => 'N97', // wurflkey: nokia_n97_ver1_sub_220110
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nokia(),
             'brand_name'              => new Company\Nokia(),
             'model_extra_info'        => null,
             'marketing_name'          => 'N97',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

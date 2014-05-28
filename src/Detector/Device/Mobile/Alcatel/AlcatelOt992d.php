@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AlcatelOt992d
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class AlcatelOt992d
 
             // device
             'model_name'              => 'OT-992D',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Alcatel(),
             'brand_name'              => new Company\Alcatel(),
             'model_extra_info'        => null,
             'marketing_name'          => 'One Touch 992 Play', // wurflkey: alcatel_ot992_ver1_subuad
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'MT6575', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

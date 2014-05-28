@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class P4dSirius
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class P4dSirius
 
             // device
             'model_name'              => 'P4D Sirius',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nvsbl(),
             'brand_name'              => new Company\Nvsbl(),
             'model_extra_info'        => null,
             'marketing_name'          => 'P4D Sirius',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LgKm900
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class LgKm900
 
             // device
             'model_name'              => 'KM900',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Lg(),
             'brand_name'              => new Company\Lg(),
             'model_extra_info'        => null,
             'marketing_name'          => 'KM900',
             'has_qwerty_keyboard'     => false, // wurflkey: lg_km900_ver1_subv10b
             'pointing_method'         => 'touchscreen', // wurflkey: lg_km900_ver1_subv10b
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

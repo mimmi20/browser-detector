@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGti7500Galaxy
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungGti7500Galaxy
 
             // device
             'model_name'              => 'GT-I7500', // wurflkey: samsung_gt_i7500_ver1_suban16
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => 'Donut', // wurflkey: samsung_gt_i7500_ver1_suban16
             'marketing_name'          => 'Galaxy', // wurflkey: samsung_gt_i7500_ver1_suban16
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i7500_ver1_suban16
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

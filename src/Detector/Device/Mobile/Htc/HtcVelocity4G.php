@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HtcVelocity4G
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class HtcVelocity4G
 
             // device
             'model_name'              => 'Velocity 4G',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Htc(),
             'model_extra_info'        => 'for Telstra',
             'marketing_name'          => 'Velocity 4G',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

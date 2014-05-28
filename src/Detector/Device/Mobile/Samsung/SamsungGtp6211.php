@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGtp6211
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungGtp6211
 
             // device
             'model_name'              => 'GT-P6211',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Samsung Galaxy Tab 7.0 Plus', // wurflkey: samsung_gt_p6210_ver1_subua6211ics
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_p6210_ver1_subua6211ics
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

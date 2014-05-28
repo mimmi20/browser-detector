@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class SonyEricssonLT22i
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class SonyEricssonLT22i
 
             // device
             'model_name'              => 'LT22i',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Xperia P LT22i', // wurflkey: sonyericsson_lt22i_ver1_subua40_subuachr
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'Cortex-A8', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class NokiaC202
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class NokiaC202
 
             // device
             'model_name'              => 'C2-02',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nokia(),
             'brand_name'              => new Company\Nokia(),
             'model_extra_info'        => null,
             'marketing_name'          => null,
             'has_qwerty_keyboard'     => false, // wurflkey: nokia_c2_02_ver1_subovibrsr
             'pointing_method'         => 'touchscreen', // wurflkey: nokia_c2_02_ver1_subovibrsr
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

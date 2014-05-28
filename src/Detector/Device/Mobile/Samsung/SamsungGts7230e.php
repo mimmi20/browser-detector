@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGts7230e
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungGts7230e
 
             // device
             'model_name'              => 'GT-S7230E',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => 'Orange', // wurflkey: samsung_gt_s7230e_ver1_suborange
             'marketing_name'          => 'Wave 723', // wurflkey: samsung_gt_s7230e_ver1_suborange
             'has_qwerty_keyboard'     => false,
             'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s7230e_ver1_suborange
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

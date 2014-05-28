@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LenovoA2109aIdeaTab
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class LenovoA2109aIdeaTab
 
             // device
             'model_name'              => 'A2109A',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Lenovo(),
             'brand_name'              => new Company\Lenovo(),
             'model_extra_info'        => null,
             'marketing_name'          => 'IdeaTab A2109A',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'MTK 6575 1.0GHz Cortex A9', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

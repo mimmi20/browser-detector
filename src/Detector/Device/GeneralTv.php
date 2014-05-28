@@ -46,6 +46,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Tv as TvHelper;
 
@@ -57,7 +58,7 @@ use BrowserDetector\Helper\Tv as TvHelper;
  */
 class GeneralTv
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -83,15 +84,12 @@ class GeneralTv
 
             // device
             'model_name'              => 'general TV Device',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Unknown(),
             'brand_name'              => new Company\Unknown(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general TV Device',
             'has_qwerty_keyboard'     => null,
             'pointing_method'         => null,
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -156,7 +154,12 @@ class GeneralTv
         $chain->setDefaultHandler($this);
 
         $device = $chain->detect();
-        return $device->detect();
+        
+        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
+            $device = $device->detectDevice();
+        }
+        
+        return $device;
     }
 
     /**

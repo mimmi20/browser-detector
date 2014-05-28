@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HdcI9300GalaxyS3Ex
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class HdcI9300GalaxyS3Ex
 
             // device
             'model_name'              => 'i9300',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Hdc(),
             'brand_name'              => new Company\Hdc(),
             'model_extra_info'        => null,
             'marketing_name'          => 'i9300 Galaxy S3 EX',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

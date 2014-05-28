@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class NBPC724
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class NBPC724
 
             // device
             'model_name'              => 'NBPC724',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Coby(),
             'brand_name'              => new Company\Coby(),
             'model_extra_info'        => 'Netbook',
             'marketing_name'          => 'NBPC724',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

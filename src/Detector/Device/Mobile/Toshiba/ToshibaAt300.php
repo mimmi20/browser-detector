@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class ToshibaAt300
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class ToshibaAt300
 
             // device
             'model_name'              => 'AT300',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Toshiba(),
             'brand_name'              => new Company\Toshiba(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Regza AT300',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

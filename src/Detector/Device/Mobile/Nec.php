@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Os\Linux;
@@ -63,7 +64,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Nec
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -89,15 +90,12 @@ class Nec
 
             // device
             'model_name'              => 'general Nec Device',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nec(),
             'brand_name'              => new Company\Nec(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general Nec Device',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,
@@ -175,8 +173,7 @@ class Nec
         );
         $chain->setDefaultHandler($this);
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**

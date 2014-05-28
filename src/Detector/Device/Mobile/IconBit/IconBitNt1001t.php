@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class IconBitNt1001t
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class IconBitNt1001t
 
             // device
             'model_name'              => 'NT-1001T',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\IconBit(),
             'brand_name'              => new Company\IconBit(),
             'model_extra_info'        => null,
             'marketing_name'          => 'THOR LE NT-1001T',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

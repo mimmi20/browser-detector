@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class SonyEricssonMT15iv
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class SonyEricssonMT15iv
 
             // device
             'model_name'              => 'MT15iv',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Xperia Neo',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,
@@ -153,7 +150,7 @@ class SonyEricssonMT15iv
      *
      * @return DeviceHandler
      */
-    protected function _parseProperties()
+    public function detectSpecialProperties()
     {
         if ($this->utils->checkIfContains(array('Build/4.0.2.'))) {
             $this->setCapability(

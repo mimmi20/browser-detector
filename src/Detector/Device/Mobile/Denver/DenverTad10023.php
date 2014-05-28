@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class DenverTad10023
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class DenverTad10023
 
             // device
             'model_name'              => 'TAD-10023',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Denver(),
             'brand_name'              => new Company\Denver(),
             'model_extra_info'        => null,
             'marketing_name'          => 'TAD-10023',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

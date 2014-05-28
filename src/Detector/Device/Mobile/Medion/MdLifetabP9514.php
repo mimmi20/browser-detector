@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class MdLifetabP9514
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class MdLifetabP9514
 
             // device
             'model_name'              => 'LifeTab P9514',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Medion(),
             'brand_name'              => new Company\Medion(),
             'model_extra_info'        => null,
             'marketing_name'          => 'LifeTab P9514',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

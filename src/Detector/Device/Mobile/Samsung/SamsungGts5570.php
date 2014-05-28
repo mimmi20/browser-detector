@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class SamsungGts5570
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class SamsungGts5570
 
             // device
             'model_name'              => 'GT-S5570',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Galaxy Mini', // wurflkey: samsung_gt_s5570_ver1_sub221
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_s5570_ver1_sub221
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

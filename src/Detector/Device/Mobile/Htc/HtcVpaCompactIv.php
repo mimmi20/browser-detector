@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HtcVpaCompactIv
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class HtcVpaCompactIv
 
             // device
             'model_name'              => 'VPA Compact IV',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Vodafone(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Herald/Wing/Atlas',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'stylus',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

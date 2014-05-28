@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyC6903ExperiaZ1
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SonyC6903ExperiaZ1
 
             // device
             'model_name'              => 'C6903',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Xperia Z1',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'QUALCOMM APQ8064', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

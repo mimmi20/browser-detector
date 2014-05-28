@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class OdysEvo
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class OdysEvo
 
             // device
             'model_name'              => 'Evo',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Odys(),
             'brand_name'              => new Company\Odys(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Evo',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

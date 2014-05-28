@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class MotorolaMz607
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class MotorolaMz607
 
             // device
             'model_name'              => 'MZ607',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Motorola(),
             'brand_name'              => new Company\Motorola(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Xoom 2 Media Edition',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

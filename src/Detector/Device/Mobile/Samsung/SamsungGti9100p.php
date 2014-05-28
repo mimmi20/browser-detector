@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGti9100p
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungGti9100p
 
             // device
             'model_name'              => 'GT-I9100P',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

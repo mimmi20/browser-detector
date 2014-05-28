@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class MotorolaMb525
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class MotorolaMb525
 
             // device
             'model_name'              => 'MB525',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Motorola(),
             'brand_name'              => new Company\Motorola(),
             'model_extra_info'        => null,
             'marketing_name'          => 'DEFY', // wurflkey: mot_mb525_ver1_sub_android221
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'OMAP3610', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

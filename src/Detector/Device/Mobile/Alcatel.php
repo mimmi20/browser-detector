@@ -45,6 +45,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -56,7 +57,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Alcatel
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -82,15 +83,12 @@ class Alcatel
 
             // device
             'model_name'              => 'general Alcatel Device',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Alcatel(),
             'brand_name'              => new Company\Alcatel(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general Alcatel Device',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -159,8 +157,7 @@ class Alcatel
         );
         $chain->setDefaultHandler($this);
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonU8i
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SonyEricssonU8i
 
             // device
             'model_name'              => 'U8i',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
             'marketing_name'          => 'kanna', // wurflkey: sonyericsson_u8i_ver1
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen', // wurflkey: sonyericsson_u8i_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

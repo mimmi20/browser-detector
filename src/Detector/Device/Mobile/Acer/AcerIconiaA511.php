@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AcerIconiaA511
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class AcerIconiaA511
 
             // device
             'model_name'              => 'A511',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Acer(),
             'brand_name'              => new Company\Acer(),
             'model_extra_info'        => null,
             'marketing_name'          => 'A511',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'NVIDIA Tegra 3', // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

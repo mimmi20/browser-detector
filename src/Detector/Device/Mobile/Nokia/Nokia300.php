@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Nokia300
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class Nokia300
 
             // device
             'model_name'              => 'Asha 300',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nokia(),
             'brand_name'              => new Company\Nokia(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Nokia Asha 300', // wurflkey: nokia_300_ver1
             'has_qwerty_keyboard'     => false, // wurflkey: nokia_300_ver1
             'pointing_method'         => 'touchscreen', // wurflkey: nokia_300_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

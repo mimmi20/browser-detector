@@ -58,7 +58,7 @@ use BrowserDetector\Helper\SpamCrawlerFake;
  */
 class GeneralBot
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class GeneralBot
 
             // device
             'model_name'              => 'general Bot',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Unknown(),
             'brand_name'              => new Company\Unknown(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general Bot',
             'has_qwerty_keyboard'     => false,
             'pointing_method'         => null,
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

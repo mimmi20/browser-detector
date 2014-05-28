@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class HtcA310e
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class HtcA310e
 
             // device
             'model_name'              => 'A310e',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Htc(),
             'model_extra_info'        => 'HTC Pico', // wurflkey: htc_a310e_ver1_subuauscore
             'marketing_name'          => 'Explorer', // wurflkey: htc_a310e_ver1_subuauscore
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true, // wurflkey: htc_a310e_ver1_subuauscore

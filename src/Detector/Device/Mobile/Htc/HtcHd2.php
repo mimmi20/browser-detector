@@ -61,7 +61,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HtcHd2
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -87,15 +87,12 @@ class HtcHd2
 
             // device
             'model_name'              => 'HD2', // wurflkey: htc_t8585_ver1
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Htc(),
             'model_extra_info'        => null,
             'marketing_name'          => 'HD2',
             'has_qwerty_keyboard'     => false, // wurflkey: htc_t8585_ver1
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

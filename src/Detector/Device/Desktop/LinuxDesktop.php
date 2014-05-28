@@ -76,7 +76,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class LinuxDesktop
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -102,15 +102,12 @@ class LinuxDesktop
 
             // device
             'model_name'              => 'Linux Desktop',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Unknown(),
             'brand_name'              => new Company\Unknown(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Linux Desktop',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

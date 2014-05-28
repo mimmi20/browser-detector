@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Version;
  */
 class ZteBaseTab
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -82,15 +82,12 @@ class ZteBaseTab
 
             // device
             'model_name'              => 'BASE Tab',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Zte(),
             'brand_name'              => new Company\Zte(),
             'model_extra_info'        => null,
             'marketing_name'          => 'BASE Tab',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -161,9 +158,9 @@ class ZteBaseTab
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectDeviceVersion()
+    public function getDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
@@ -171,9 +168,6 @@ class ZteBaseTab
 
         $searches = array('BASE Tab');
 
-        $this->setCapability(
-            'model_version', $detector->detectVersion($searches)
-        );
-        return $this;
+        return $detector->detectVersion($searches);
     }
 }

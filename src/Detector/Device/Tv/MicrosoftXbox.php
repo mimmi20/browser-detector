@@ -61,7 +61,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class MicrosoftXbox
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -87,15 +87,12 @@ class MicrosoftXbox
 
             // device
             'model_name'              => 'Xbox 360',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Microsoft(),
             'brand_name'              => new Company\Microsoft(),
             'model_extra_info'        => null,
             'marketing_name'          => null,
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

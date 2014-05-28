@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class AcerE310
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class AcerE310
 
             // device
             'model_name'              => 'E310', // wurflkey: acer_e310_ver1_suban221
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Acer(),
             'brand_name'              => new Company\Acer(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
             'has_qwerty_keyboard'     => false, // wurflkey: acer_e310_ver1_suban221
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

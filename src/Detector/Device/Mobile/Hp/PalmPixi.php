@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Version;
  */
 class PalmPixi
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -82,15 +82,12 @@ class PalmPixi
 
             // device
             'model_name'              => 'Pixi',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Palm(),
             'brand_name'              => new Company\Palm(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Pixi',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,
@@ -164,7 +161,7 @@ class PalmPixi
      *
      * @return DeviceHandler
      */
-    protected function _parseProperties()
+    public function detectSpecialProperties()
     {
         $modelVersion = $this->getCapability('model_version')->getVersion(
             Version::MAJORMINOR
@@ -181,9 +178,9 @@ class PalmPixi
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectDeviceVersion()
+    public function getDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
@@ -191,9 +188,6 @@ class PalmPixi
 
         $searches = array('Pixi');
 
-        $this->setCapability(
-            'model_version', $detector->detectVersion($searches)
-        );
-        return $this;
+        return $detector->detectVersion($searches);
     }
 }

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungGalaxyNexusS
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungGalaxyNexusS
 
             // device
             'model_name'              => 'Nexus S',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Google(), // wurflkey: samsung_nexus_s_ver1_suban41
             'model_extra_info'        => null,
             'marketing_name'          => 'Nexus S',
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_nexus_s_ver1_suban41
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true, // wurflkey: samsung_nexus_s_ver1_suban41

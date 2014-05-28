@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class PointOfViewProtab2ips
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class PointOfViewProtab2ips
 
             // device
             'model_name'              => 'Protab 2 IPS',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\PointOfView(),
             'brand_name'              => new Company\PointOfView(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Protab 2 IPS',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

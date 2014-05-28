@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Nokia6303classic
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class Nokia6303classic
 
             // device
             'model_name'              => '6303 classic',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nokia(),
             'brand_name'              => new Company\Nokia(),
             'model_extra_info'        => null,
             'marketing_name'          => 'classic', // wurflkey: nokia_6303c_ver1
             'has_qwerty_keyboard'     => false, // wurflkey: nokia_6303c_ver1
             'pointing_method'         => '', // wurflkey: nokia_6303c_ver1     // wurflkey: nokia_6303c_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

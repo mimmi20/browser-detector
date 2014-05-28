@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class ArchosA70S
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class ArchosA70S
 
             // device
             'model_name'              => 'A70S', // archos_a70s_ver1_sub02
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Archos(),
             'brand_name'              => new Company\Archos(),
             'model_extra_info'        => null,
             'marketing_name'          => 'A70S',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true, // archos_a70s_ver1_sub02

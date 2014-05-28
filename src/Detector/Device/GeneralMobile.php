@@ -48,6 +48,7 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
@@ -61,7 +62,7 @@ use BrowserDetector\Helper\MobileDevice;
  */
 class GeneralMobile
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -87,15 +88,12 @@ class GeneralMobile
 
             // device
             'model_name'              => 'general Mobile Device',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Unknown(),
             'brand_name'              => new Company\Unknown(),
             'model_extra_info'        => null,
             'marketing_name'          => 'general Mobile Device',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,
@@ -158,7 +156,12 @@ class GeneralMobile
         $chain->setDefaultHandler($this);
 
         $device = $chain->detect();
-        return $device->detect();
+        
+        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
+            $device = $device->detectDevice();
+        }
+        
+        return $device;
     }
 
     /**
@@ -202,7 +205,7 @@ class GeneralMobile
      *
      * @return \BrowserDetector\Detector\Device\GeneralMobile
      */
-    protected function _parseProperties()
+    public function detectSpecialProperties()
     {
         if ($this->utils->checkIfContains(array('Android; Tablet'))) {
             $this->setCapability('device_type', new DeviceType\Tablet());

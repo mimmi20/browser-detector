@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class CubeU30gt
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class CubeU30gt
 
             // device
             'model_name'              => 'U30GT',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Cube(),
             'brand_name'              => new Company\Cube(),
             'model_extra_info'        => null,
             'marketing_name'          => 'U30GT',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

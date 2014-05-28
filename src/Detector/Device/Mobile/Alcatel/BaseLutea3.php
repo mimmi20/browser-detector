@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class BaseLutea3
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class BaseLutea3
 
             // device
             'model_name'              => 'Lutea 3',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Alcatel(),
             'brand_name'              => new Company\Base(),
             'model_extra_info'        => 'for Base',
             'marketing_name'          => 'Lutea 3',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

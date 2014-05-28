@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungSchR530u
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungSchR530u
 
             // device
             'model_name'              => 'GT-I9300', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => 'for US Cellular', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
             'marketing_name'          => 'Galaxy S III', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i9300_ver1_subuauscellular
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

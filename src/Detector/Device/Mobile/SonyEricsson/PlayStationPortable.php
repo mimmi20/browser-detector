@@ -56,7 +56,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class PlayStationPortable
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -82,15 +82,12 @@ class PlayStationPortable
 
             // device
             'model_name'              => 'PlayStation Portable',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Sony(),
             'brand_name'              => new Company\Sony(),
             'model_extra_info'        => null,
             'marketing_name'          => 'PSP',
             'has_qwerty_keyboard'     => false,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

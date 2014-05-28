@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AcerIconiaA200
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class AcerIconiaA200
 
             // device
             'model_name'              => 'A200',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Acer(),
             'brand_name'              => new Company\Acer(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Picasso_E', // wurflkey: acer_iconia_tab_a200_ver1_suban4
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'NVIDIA Tegra 2', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class AcerIconiaA701
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class AcerIconiaA701
 
             // device
             'model_name'              => 'A701',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Acer(),
             'brand_name'              => new Company\Acer(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Iconia Tab A701',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class MotorolaMz601
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class MotorolaMz601
 
             // device
             'model_name'              => 'MZ601', // wurflkey: mot_mz601_ver1_suban41
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Motorola(),
             'brand_name'              => new Company\Motorola(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Xoom', // wurflkey: mot_mz601_ver1_suban41
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'Motorola', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

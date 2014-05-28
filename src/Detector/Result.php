@@ -829,7 +829,7 @@ class Result implements \Serializable
 
         $versionfields = array(
             'mobile_browser_version', 'renderingengine_version',
-            'device_os_version', 'model_version'
+            'device_os_version'
         );
 
         if (in_array($capabilityName, $versionfields)
@@ -1581,14 +1581,26 @@ class Result implements \Serializable
                     $value = ($device->getCapability('resolution_width') >= 480
                         && $device->getCapability('resolution_height') >= 480);
                     break;
-                case 'model_name':
                 case 'model_version':
+                    $value = $device->getDeviceVersion();
+                    break;
+                case 'device_bits':
+                    $detector = new Bits\Device();
+                    $detector->setUserAgent($this->getCapability('useragent', false));
+
+                    $value = $detector->getBits();
+                    break;
+                case 'device_cpu':
+                    $detector = new Cpu();
+                    $detector->setUserAgent($this->getCapability('useragent', false));
+
+                    $value = $detector->getCpu();
+                    break;
+                case 'model_name':
                 case 'model_extra_info':
                 case 'marketing_name':
                 case 'has_qwerty_keyboard':
                 case 'pointing_method':
-                case 'device_bits':
-                case 'device_cpu':
                 case 'ununiqueness_handler':
                 case 'uaprof':
                 case 'uaprof2':

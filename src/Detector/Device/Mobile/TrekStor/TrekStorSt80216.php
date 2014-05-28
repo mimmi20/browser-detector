@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class TrekStorSt80216
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class TrekStorSt80216
 
             // device
             'model_name'              => 'ST80216',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\TrekStor(),
             'brand_name'              => new Company\TrekStor(),
             'model_extra_info'        => null,
             'marketing_name'          => 'SurfTab Ventos 8.0',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

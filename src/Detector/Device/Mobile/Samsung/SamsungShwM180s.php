@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SamsungShwM180s
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SamsungShwM180s
 
             // device
             'model_name'              => 'SHW-M180S',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
             'marketing_name'          => 'GALAXY Tab (SKT)', // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

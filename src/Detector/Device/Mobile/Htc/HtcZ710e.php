@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class HtcZ710e
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class HtcZ710e
 
             // device
             'model_name'              => 'Z710e',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Htc(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Sensation',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

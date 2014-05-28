@@ -61,7 +61,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AmazonKftt
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -87,15 +87,12 @@ class AmazonKftt
 
             // device
             'model_name'              => 'KFTT',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Amazon(),
             'brand_name'              => new Company\Amazon(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'TI OMAP4460', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonW995
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SonyEricssonW995
 
             // device
             'model_name'              => 'W995',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => 'Walkman phone', // wurflkey: sonyericsson_w995_ver1
             'marketing_name'          => 'W995',
             'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_w995_ver1
             'pointing_method'         => '', // wurflkey: sonyericsson_w995_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

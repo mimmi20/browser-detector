@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class PrestigioPmp5197dUltra
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class PrestigioPmp5197dUltra
 
             // device
             'model_name'              => 'PMP5197DULTRA',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Prestigio(),
             'brand_name'              => new Company\Prestigio(),
             'model_extra_info'        => null,
             'marketing_name'          => 'MultiPad 9.7 Ultra',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM 1 GHz Allwinner A10', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class SamsungGalaxyNexus
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class SamsungGalaxyNexus
 
             // device
             'model_name'              => 'Galaxy Nexus',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Galaxy Nexus',
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_galaxy_nexus_ver1
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

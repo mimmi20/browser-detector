@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HuaweiU9508
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class HuaweiU9508
 
             // device
             'model_name'              => 'U9508',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Huawei(),
             'brand_name'              => new Company\Huawei(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Honor 2',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

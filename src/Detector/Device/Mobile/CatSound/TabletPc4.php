@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class TabletPc4
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class TabletPc4
 
             // device
             'model_name'              => 'Tablet PC 4',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\CatSound(),
             'brand_name'              => new Company\CatSound(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Tablet PC 4',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'Cortex A9 1,6 GHz DualCore', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

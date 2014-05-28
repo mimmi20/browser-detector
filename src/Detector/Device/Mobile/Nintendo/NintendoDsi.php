@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class NintendoDsi
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class NintendoDsi
 
             // device
             'model_name'              => 'DSi',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nintendo(),
             'brand_name'              => new Company\Nintendo(),
             'model_extra_info'        => null,
             'marketing_name'          => null,
             'has_qwerty_keyboard'     => false, // wurflkey: nintendo_dsi_ver1
             'pointing_method'         => '', // wurflkey: nintendo_dsi_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

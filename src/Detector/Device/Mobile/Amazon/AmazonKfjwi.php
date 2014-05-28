@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AmazonKfjwi
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class AmazonKfjwi
 
             // device
             'model_name'              => 'Kfjwi',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Amazon(),
             'brand_name'              => new Company\Amazon(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Kindle Fire HD 8.9',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'TI OMAP4470', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

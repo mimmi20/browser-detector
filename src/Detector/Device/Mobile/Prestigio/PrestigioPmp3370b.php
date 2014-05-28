@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class PrestigioPmp3370b
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class PrestigioPmp3370b
 
             // device
             'model_name'              => 'PMP3370B',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Prestigio(),
             'brand_name'              => new Company\Prestigio(),
             'model_extra_info'        => null,
             'marketing_name'          => 'MultiPad 7.0 Ultra',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM Cortex A8', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

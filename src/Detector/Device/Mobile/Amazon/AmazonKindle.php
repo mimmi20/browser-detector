@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class AmazonKindle
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class AmazonKindle
 
             // device
             'model_name'              => 'Kindle',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Amazon(),
             'brand_name'              => new Company\Amazon(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Kindle',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -176,9 +173,9 @@ class AmazonKindle
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKindle
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectDeviceVersion()
+    public function getDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
@@ -186,9 +183,6 @@ class AmazonKindle
 
         $searches = array('Kindle');
 
-        $this->setCapability(
-            'model_version', $detector->detectVersion($searches)
-        );
-        return $this;
+        return $detector->detectVersion($searches);
     }
 }

@@ -65,7 +65,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class TechniSatDigiCorderIsioS
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -91,15 +91,12 @@ class TechniSatDigiCorderIsioS
 
             // device
             'model_name'              => 'DigiCorder ISIO S',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\TechniSat(),
             'brand_name'              => new Company\TechniSat(),
             'model_extra_info'        => null,
             'marketing_name'          => 'DigiCorder ISIO S',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

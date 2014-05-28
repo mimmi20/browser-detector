@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SprintApa9292kt
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SprintApa9292kt
 
             // device
             'model_name'              => 'APA9292KT',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Sprint(),
             'brand_name'              => new Company\Sprint(),
             'model_extra_info'        => null,
             'marketing_name'          => 'APA9292KT',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

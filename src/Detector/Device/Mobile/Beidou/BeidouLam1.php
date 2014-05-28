@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class BeidouLam1
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class BeidouLam1
 
             // device
             'model_name'              => 'LA-M1',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Beidou(),
             'brand_name'              => new Company\Beidou(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Chili Pepper LA-M1',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

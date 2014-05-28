@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonJ10i2
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class SonyEricssonJ10i2
 
             // device
             'model_name'              => 'J10i2',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Elm', // wurflkey: sonyericsson_j10i2_ver1
             'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_j10i2_ver1
             'pointing_method'         => '', // wurflkey: sonyericsson_j10i2_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

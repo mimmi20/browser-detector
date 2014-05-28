@@ -73,7 +73,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class EeePc
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -99,15 +99,12 @@ class EeePc
 
             // device
             'model_name'              => 'eee pc',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Asus(),
             'brand_name'              => new Company\Asus(),
             'model_extra_info'        => null,
             'marketing_name'          => 'eee pc',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

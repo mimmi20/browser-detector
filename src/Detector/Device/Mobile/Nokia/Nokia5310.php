@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Nokia5310
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,7 +81,6 @@ class Nokia5310
 
             // device
             'model_name'              => '5310 XpressMusic', // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Nokia(),
             'brand_name'              => new Company\Nokia(),
             'model_extra_info'        => null, // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
@@ -89,8 +88,6 @@ class Nokia5310
             'has_qwerty_keyboard'     => false, // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
             'pointing_method'         => '',
             // wurflkey: nokia_5310_xpressmusic_ver1_sub0363              // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

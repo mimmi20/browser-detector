@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonC902
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,7 +81,6 @@ class SonyEricssonC902
 
             // device
             'model_name'              => 'C902',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\SonyEricsson(),
             'brand_name'              => new Company\SonyEricsson(),
             'model_extra_info'        => null,
@@ -89,8 +88,6 @@ class SonyEricssonC902
             'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_c902_ver1_subr3da
             'pointing_method'         => 'joystick',
             // wurflkey: sonyericsson_c902_ver1_subr3da      // wurflkey: sonyericsson_c902_ver1_subr3da
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

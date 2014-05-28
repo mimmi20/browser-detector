@@ -55,7 +55,7 @@ use BrowserDetector\Helper\Utils;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 abstract class DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * @var string the user agent to handle
@@ -105,7 +105,6 @@ abstract class DeviceHandler
 
             // device
             'model_name'                => 'unknown',
-            'model_version'             => null, // not in wurfl
             'manufacturer_name'         => new Company\Unknown(),
             'brand_name'                => new Company\Unknown(),
             'model_extra_info'          => null,
@@ -113,8 +112,6 @@ abstract class DeviceHandler
             'has_qwerty_keyboard'       => null,
             'pointing_method'           => null,
             'device_claims_web_support' => null,
-            'device_bits'               => null, // not in wurfl
-            'device_cpu'                => null, // not in wurfl
 
             // product info
             'can_skip_aligned_link_row' => null,
@@ -175,66 +172,15 @@ abstract class DeviceHandler
     /**
      * detects the device name from the given user agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Version
      */
-    public function detect()
-    {
-        $device = $this->detectDevice();
-
-        return $device
-            ->_detectCpu()
-            ->_detectBits()
-            ->_detectDeviceVersion()
-            ->_parseProperties();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return DeviceHandler
-     */
-    protected function _detectDeviceVersion()
+    public function getDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $this->setCapability(
-            'model_version', $detector->setVersion('')
-        );
-        return $this;
-    }
-
-    /**
-     * detect the cpu which is build into the device
-     *
-     * @return DeviceHandler
-     */
-    protected function _detectCpu()
-    {
-        if (null === $this->getCapability('device_cpu')) {
-            $detector = new Cpu();
-            $detector->setUserAgent($this->_useragent);
-
-            $this->setCapability('device_cpu', $detector->getCpu());
-        }
-
-        return $this;
-    }
-
-    /**
-     * detect the bits of the cpu which is build into the device
-     *
-     * @return DeviceHandler
-     */
-    protected function _detectBits()
-    {
-        $detector = new Bits\Device();
-        $detector->setUserAgent($this->_useragent);
-
-        $this->setCapability('device_bits', $detector->getBits());
-
-        return $this;
+        return $detector->setVersion('');
     }
 
     /**
@@ -243,7 +189,7 @@ abstract class DeviceHandler
      *
      * @return DeviceHandler
      */
-    protected function _parseProperties()
+    public function detectSpecialProperties()
     {
         return $this;
     }
@@ -289,20 +235,6 @@ abstract class DeviceHandler
     public function getCapability($capabilityName)
     {
         $this->checkCapability($capabilityName);
-
-        switch ($capabilityName) {
-        case 'model_version':
-            if (!($this->properties['model_version'] instanceof Version)) {
-                $detector = new Version();
-                $detector->setVersion('');
-
-                $this->setCapability('model_version', $detector);
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
-        }
 
         return $this->properties[$capabilityName];
     }

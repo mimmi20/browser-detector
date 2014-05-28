@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class SamsungSphd710
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class SamsungSphd710
 
             // device
             'model_name'              => 'SPH-D710',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Galaxy S II Epic 4G Touch',
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_sph_d710_ver1_suban40rom
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

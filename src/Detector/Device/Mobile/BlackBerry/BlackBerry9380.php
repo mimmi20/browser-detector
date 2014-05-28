@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class BlackBerry9380
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class BlackBerry9380
 
             // device
             'model_name'              => 'BlackBerry 9380',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Rim(),
             'brand_name'              => new Company\Rim(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Blackberry 9380 Curve', // wurflkey: blackberry9380_ver1
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen', // wurflkey: blackberry9380_ver1
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

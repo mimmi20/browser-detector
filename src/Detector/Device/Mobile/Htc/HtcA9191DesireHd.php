@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class HtcA9191DesireHd
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class HtcA9191DesireHd
 
             // device
             'model_name'              => 'A9191', // wurflkey: htc_desirehd_ver1_suban23a9191
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Htc(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Desire HD',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true,

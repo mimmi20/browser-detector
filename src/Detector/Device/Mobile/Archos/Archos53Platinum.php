@@ -55,7 +55,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Archos53Platinum
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -81,15 +81,12 @@ class Archos53Platinum
 
             // device
             'model_name'              => '53 Platinum',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Archos(),
             'brand_name'              => new Company\Archos(),
             'model_extra_info'        => null,
             'marketing_name'          => '53 Platinum',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

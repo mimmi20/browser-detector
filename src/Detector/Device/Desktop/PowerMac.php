@@ -61,7 +61,7 @@ use BrowserDetector\Detector\Version;
  */
 class PowerMac
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -87,15 +87,12 @@ class PowerMac
 
             // device
             'model_name'              => 'PowerMac',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Apple(),
             'brand_name'              => new Company\Apple(),
             'model_extra_info'        => null,
             'marketing_name'          => 'PowerMac',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'mouse',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,
@@ -153,19 +150,16 @@ class PowerMac
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\Desktop\PowerMac
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectDeviceVersion()
+    public function getDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
         $searches = array('PowerMac');
 
-        $this->setCapability(
-            'model_version', $detector->detectVersion($searches)
-        );
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

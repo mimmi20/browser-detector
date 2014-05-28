@@ -83,4 +83,19 @@ interface DeviceInterface
      * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectOs();
+
+    /**
+     * detects properties who are depending on the device version or the user
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    public function detectSpecialProperties();
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function getDeviceVersion();
 }

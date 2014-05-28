@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HtcA510
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class HtcA510
 
             // device
             'model_name'              => 'A510',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Htc(),
             'brand_name'              => new Company\Htc(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Wildfire S', // wurflkey: htc_wildfire_s_ver1_subua
             'has_qwerty_keyboard'     => false, // wurflkey: htc_wildfire_s_ver1_subua
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => true, // wurflkey: htc_wildfire_s_ver1

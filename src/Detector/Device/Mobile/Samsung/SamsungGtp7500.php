@@ -59,7 +59,7 @@ use BrowserDetector\Detector\Version;
  */
 class SamsungGtp7500
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -85,15 +85,12 @@ class SamsungGtp7500
 
             // device
             'model_name'              => 'GT-P7500',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Samsung(),
             'brand_name'              => new Company\Samsung(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Galaxy Tab 10.1', // wurflkey: samsung_galaxy_tab_p4_ver1_suban31
             'has_qwerty_keyboard'     => true, // wurflkey: samsung_galaxy_tab_p4_ver1_suban31
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

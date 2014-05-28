@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class HuaweiMediaPad10Link
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class HuaweiMediaPad10Link
 
             // device
             'model_name'              => 'S7-301w',
-            'model_version'           => null, // not in wurfl
             'manufacturer_name'       => new Company\Huawei(),
             'brand_name'              => new Company\Huawei(),
             'model_extra_info'        => null,
             'marketing_name'          => 'MediaPad 10 Link',
             'has_qwerty_keyboard'     => true,
             'pointing_method'         => 'touchscreen',
-            'device_bits'             => null, // not in wurfl
-            'device_cpu'              => null, // not in wurfl
 
             // product info
             'can_assign_phone_number' => false,

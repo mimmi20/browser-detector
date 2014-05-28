@@ -58,7 +58,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonX10i
     extends DeviceHandler
-    implements MatcherInterface, DeviceInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -84,15 +84,12 @@ class SonyEricssonX10i
 
             // device
             'model_name'                    => 'X10i',
-            'model_version'                 => null, // not in wurfl
             'manufacturer_name'             => new Company\SonyEricsson(),
             'brand_name'                    => new Company\SonyEricsson(),
             'model_extra_info'              => null,
             'marketing_name'                => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
             'has_qwerty_keyboard'           => true,
             'pointing_method'               => 'touchscreen',
-            'device_bits'                   => null, // not in wurfl
-            'device_cpu'                    => 'ARM11', // not in wurfl
 
             // product info
             'can_assign_phone_number'       => true, // wurflkey: sonyericsson_x10i_ver1_suban23
