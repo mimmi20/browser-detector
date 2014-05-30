@@ -160,7 +160,7 @@ abstract class AbstractBrowscapInput extends Core
 
         $result->setCapability('browser_type', $browserType);
 
-        if (!empty($parserResult['Browser_Modus'])) {
+        if (!empty($parserResult['Browser_Modus']) && 'unknown' !== $parserResult['Browser_Modus']) {
             $browserModus = $parserResult['Browser_Modus'];
         } else {
             $browserModus = '';
