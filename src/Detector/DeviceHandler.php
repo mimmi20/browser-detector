@@ -137,11 +137,6 @@ abstract class DeviceHandler
             // chips
             'nfc_support'               => null,
         );
-
-        $detector = new Version();
-        $detector->setVersion('');
-
-        $this->setCapability('model_version', $detector);
     }
 
     /**
