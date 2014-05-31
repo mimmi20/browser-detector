@@ -186,7 +186,7 @@ class GeneralDesktop
     /**
      * detects the device name from the given user agent
      *
-     * @return GeneralDesktop
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {

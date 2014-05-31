@@ -142,7 +142,7 @@ class Ionik
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\Ionik
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {

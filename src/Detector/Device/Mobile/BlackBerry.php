@@ -141,7 +141,7 @@ class BlackBerry
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {

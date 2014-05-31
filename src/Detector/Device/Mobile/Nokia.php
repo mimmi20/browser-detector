@@ -195,7 +195,7 @@ class Nokia
     /**
      * detects the device name from the given user agent
      *
-     * @return null|\BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {

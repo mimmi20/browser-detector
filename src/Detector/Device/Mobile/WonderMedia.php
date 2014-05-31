@@ -175,7 +175,7 @@ class WonderMedia
     /**
      * detects the device name from the given user agent
      *
-     * @return StdClass
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {

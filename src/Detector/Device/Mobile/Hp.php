@@ -142,7 +142,7 @@ class Hp
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\Hp
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectDevice()
     {
