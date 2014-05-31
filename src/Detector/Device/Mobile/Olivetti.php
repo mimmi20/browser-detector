@@ -69,7 +69,7 @@ class Olivetti
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Olivetti
      */
     public function __construct()
     {
@@ -143,8 +143,6 @@ class Olivetti
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return StdClass
      */
     public function detectDevice()
@@ -168,6 +166,36 @@ class Olivetti
     public function getWeight()
     {
         return 495;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

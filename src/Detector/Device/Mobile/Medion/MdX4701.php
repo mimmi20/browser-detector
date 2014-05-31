@@ -67,7 +67,7 @@ class MdX4701
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\Medion\MdLifeX4701
+     * @return \BrowserDetector\Detector\Device\Mobile\Medion\MdX4701
      */
     public function __construct()
     {
@@ -138,6 +138,36 @@ class MdX4701
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

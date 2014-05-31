@@ -67,7 +67,7 @@ class MdLifeE10316
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\Medion\MdLifeE3501
+     * @return \BrowserDetector\Detector\Device\Mobile\Medion\MdLifeE10316
      */
     public function __construct()
     {
@@ -138,6 +138,36 @@ class MdLifeE10316
     public function getWeight()
     {
         return 73802;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

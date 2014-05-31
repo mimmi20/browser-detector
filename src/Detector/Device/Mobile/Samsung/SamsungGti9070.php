@@ -70,7 +70,7 @@ class SamsungGti9070
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGti9070
      */
     public function __construct()
     {
@@ -148,6 +148,36 @@ class SamsungGti9070
     }
 
     /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
@@ -164,6 +194,10 @@ class SamsungGti9070
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
      *
      * @return DeviceHandler
      */

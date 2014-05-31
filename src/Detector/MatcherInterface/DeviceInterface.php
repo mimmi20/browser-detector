@@ -88,7 +88,7 @@ interface DeviceInterface
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceHandler
+     * @return DeviceInterface
      */
     public function detectSpecialProperties();
 
@@ -98,4 +98,25 @@ interface DeviceInterface
      * @return \BrowserDetector\Detector\Version
      */
     public function getDeviceVersion();
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType();
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer();
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand();
 }

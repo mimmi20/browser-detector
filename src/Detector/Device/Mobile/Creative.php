@@ -69,7 +69,7 @@ class Creative
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Creative
      */
     public function __construct()
     {
@@ -137,8 +137,6 @@ class Creative
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return StdClass
      */
     public function detectDevice()
@@ -162,6 +160,36 @@ class Creative
     public function getWeight()
     {
         return 375;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

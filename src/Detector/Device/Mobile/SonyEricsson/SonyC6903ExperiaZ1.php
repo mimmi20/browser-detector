@@ -67,7 +67,7 @@ class SonyC6903ExperiaZ1
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyC6903ExperiaZ
+     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyC6903ExperiaZ1
      */
     public function __construct()
     {
@@ -138,6 +138,36 @@ class SonyC6903ExperiaZ1
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

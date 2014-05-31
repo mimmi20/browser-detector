@@ -73,7 +73,7 @@ class GeneralDesktop
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\GeneralDesktop
      */
     public function __construct()
     {
@@ -199,11 +199,11 @@ class GeneralDesktop
         $chain->setDefaultHandler($this);
 
         $device = $chain->detect();
-        
+
         if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
             $device = $device->detectDevice();
         }
-        
+
         return $device;
     }
 
@@ -215,6 +215,36 @@ class GeneralDesktop
     public function getWeight()
     {
         return 1;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

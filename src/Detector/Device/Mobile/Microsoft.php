@@ -69,7 +69,7 @@ class Microsoft
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Microsoft
      */
     public function __construct()
     {
@@ -139,8 +139,6 @@ class Microsoft
     /**
      * detects the device name from the given user agent
      *
-     * @param string $userAgent
-     *
      * @return StdClass
      */
     public function detectDevice()
@@ -164,6 +162,36 @@ class Microsoft
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

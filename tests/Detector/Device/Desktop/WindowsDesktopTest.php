@@ -9,7 +9,7 @@ use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 class WindowsDesktopTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Device\WindowsDesktop
+     * @var \BrowserDetector\Detector\Device\Desktop\WindowsDesktop
      */
     private $object = null;
 
