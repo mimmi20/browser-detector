@@ -156,11 +156,11 @@ class GeneralMobile
         $chain->setDefaultHandler($this);
 
         $device = $chain->detect();
-        
-        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
+
+        if (($device !== $this) && ($device instanceof DeviceHasChildrenInterface)) {
             $device = $device->detectDevice();
         }
-        
+
         return $device;
     }
 

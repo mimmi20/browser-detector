@@ -51,6 +51,7 @@ use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\Os\UnknownOs;
@@ -219,11 +220,11 @@ class UserAgent extends Core
         $chain->setDefaultHandler(new UnknownDevice());
 
         $device = $chain->detect();
-        
+
         if ($device instanceof DeviceHasChildrenInterface) {
             $device = $device->detectDevice();
         }
-        
+
         return $device;
     }
 }
