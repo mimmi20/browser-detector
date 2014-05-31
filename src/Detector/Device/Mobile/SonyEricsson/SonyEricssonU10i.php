@@ -179,7 +179,7 @@ class SonyEricssonU10i
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {

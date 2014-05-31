@@ -196,7 +196,7 @@ class iMac
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
