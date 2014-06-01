@@ -62,59 +62,42 @@ class BlackBerry8700
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'blackberry8700_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry\BlackBerry8700
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'BlackBerry 8700',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'BlackBerry 8700',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'clickwheel', // wurflkey: blackberry8700_ver1
 
-        $this->properties = array(
-            'wurflKey'                => 'blackberry8700_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 27,
+        'physical_screen_height'  => 27,
+        'columns'                 => 32,
+        'rows'                    => 16,
+        'max_image_width'         => 315,
+        'max_image_height'        => 220,
+        'resolution_width'        => 320,
+        'resolution_height'       => 240,
+        'dual_orientation'        => false,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'BlackBerry 8700',
-            'manufacturer_name'       => new Company\Rim(),
-            'brand_name'              => new Company\Rim(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'BlackBerry 8700',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'clickwheel', // wurflkey: blackberry8700_ver1
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 27,
-            'physical_screen_height'  => 27,
-            'columns'                 => 32,
-            'rows'                    => 16,
-            'max_image_width'         => 315,
-            'max_image_height'        => 220,
-            'resolution_width'        => 320,
-            'resolution_height'       => 240,
-            'dual_orientation'        => false,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class BlackBerry8700
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class BlackBerry8700
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**
@@ -167,7 +150,7 @@ class BlackBerry8700
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

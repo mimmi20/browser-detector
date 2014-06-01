@@ -62,59 +62,42 @@ class AcerG100W
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'acer_g100w_ver1_suban32', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerG100W
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'G100W',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'G100W',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'acer_g100w_ver1_suban32', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 217,
+        'physical_screen_height'  => 136,
+        'columns'                 => 28,
+        'rows'                    => 30,
+        'max_image_width'         => 980,
+        'max_image_height'        => 472,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 768,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'G100W',
-            'manufacturer_name'       => new Company\Acer(),
-            'brand_name'              => new Company\Acer(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'G100W',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 217,
-            'physical_screen_height'  => 136,
-            'columns'                 => 28,
-            'rows'                    => 30,
-            'max_image_width'         => 980,
-            'max_image_height'        => 472,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 768,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class AcerG100W
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +140,7 @@ class AcerG100W
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Acer();
     }
 
     /**
@@ -167,7 +150,7 @@ class AcerG100W
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Acer();
     }
 
     /**

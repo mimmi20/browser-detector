@@ -68,59 +68,42 @@ class AmazonKftt
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'amazon_kindle_fire_hd7_ver1_subuadesktop', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKftt
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'KFTT',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
 
-        $this->properties = array(
-            'wurflKey'                => 'amazon_kindle_fire_hd7_ver1_subuadesktop', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 95,
+        'physical_screen_height'  => 151,
+        'columns'                 => 80,
+        'rows'                    => 100,
+        'max_image_width'         => 580,
+        'max_image_height'        => 1000,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 256,
 
-            // device
-            'model_name'              => 'KFTT',
-            'manufacturer_name'       => new Company\Amazon(),
-            'brand_name'              => new Company\Amazon(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
+        // sms
+        'sms_enabled'             => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 95,
-            'physical_screen_height'  => 151,
-            'columns'                 => 80,
-            'rows'                    => 100,
-            'max_image_width'         => 580,
-            'max_image_height'        => 1000,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 256,
-
-            // sms
-            'sms_enabled'             => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
-
-            // chips
-            'nfc_support'             => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
-        );
-    }
+        // chips
+        'nfc_support'             => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -153,7 +136,7 @@ class AmazonKftt
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -163,7 +146,7 @@ class AmazonKftt
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Amazon();
     }
 
     /**
@@ -173,7 +156,7 @@ class AmazonKftt
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Amazon();
     }
 
     /**

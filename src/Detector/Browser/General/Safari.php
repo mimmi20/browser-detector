@@ -232,10 +232,10 @@ class Safari
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
     ) {
-        if ($device->getCapability('device_type')->isMobile()) {
+        if ($device->getDeviceType()->isMobile()) {
             $engine->setCapability('xhtml_format_as_css_property', true);
 
-            if (!$device->getCapability('device_type')->isTablet()) {
+            if (!$device->getDeviceType()->isTablet()) {
                 $engine->setCapability('xhtml_send_sms_string', 'sms:');
                 $engine->setCapability('css_gradient', 'webkit');
             }
@@ -249,7 +249,7 @@ class Safari
             Version::MAJORMINOR
         );
 
-        if (!$device->getCapability('device_type')->isTablet()
+        if (!$device->getDeviceType()->isTablet()
             && $osVersion >= 6.0
         ) {
             $engine->setCapability('xhtml_file_upload', 'supported'); //iPhone with iOS 6.0 and Safari 6.0

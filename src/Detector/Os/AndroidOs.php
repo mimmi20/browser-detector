@@ -253,7 +253,7 @@ class AndroidOs
     ) {
         parent::detectDependProperties($browser, $engine, $device);
 
-        if (!$device->getCapability('device_type')->isTablet()) {
+        if (!$device->getDeviceType()->isTablet()) {
             $engine->setCapability('xhtml_send_mms_string', 'mms:');
             $engine->setCapability('xhtml_send_sms_string', 'sms:');
         }

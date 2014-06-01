@@ -62,59 +62,42 @@ class BlackBerry9105
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'blackberry9105_ver1_subos6', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry\BlackBerry9105
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'BlackBerry 9105',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
+        'has_qwerty_keyboard'     => false, // wurflkey: blackberry9105_ver1_subos6
+        'pointing_method'         => 'clickwheel',
 
-        $this->properties = array(
-            'wurflKey'                => 'blackberry9105_ver1_subos6', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_gprs/5.0.0.rdf',
+        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_umts/5.0.0.rdf',
+        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_edge/5.0.0.rdf',
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 27,
+        'physical_screen_height'  => 27,
+        'columns'                 => 36,
+        'rows'                    => 26,
+        'max_image_width'         => 340,
+        'max_image_height'        => 360,
+        'resolution_width'        => 360,
+        'resolution_height'       => 400,
+        'dual_orientation'        => false,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'BlackBerry 9105',
-            'manufacturer_name'       => new Company\Rim(),
-            'brand_name'              => new Company\Rim(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
-            'has_qwerty_keyboard'     => false, // wurflkey: blackberry9105_ver1_subos6
-            'pointing_method'         => 'clickwheel',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_gprs/5.0.0.rdf',
-            'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_umts/5.0.0.rdf',
-            'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_edge/5.0.0.rdf',
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 27,
-            'physical_screen_height'  => 27,
-            'columns'                 => 36,
-            'rows'                    => 26,
-            'max_image_width'         => 340,
-            'max_image_height'        => 360,
-            'resolution_width'        => 360,
-            'resolution_height'       => 400,
-            'dual_orientation'        => false,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class BlackBerry9105
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class BlackBerry9105
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**
@@ -167,7 +150,7 @@ class BlackBerry9105
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

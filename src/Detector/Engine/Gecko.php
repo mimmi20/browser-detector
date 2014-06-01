@@ -298,7 +298,7 @@ class Gecko extends EngineHandler
     ) {
         parent::detectDependProperties($os, $device, $browser);
 
-        if ($device->getCapability('device_type')->isMobile()) {
+        if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {
             $this->setCapability('xhtml_make_phone_call_string', 'none');

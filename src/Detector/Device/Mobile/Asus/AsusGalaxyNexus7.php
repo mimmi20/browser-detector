@@ -66,59 +66,42 @@ class AsusGalaxyNexus7
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'google_nexus7_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Asus\AsusGalaxyNexus7
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'Nexus 7',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Nexus 7',
+        'has_qwerty_keyboard'     => true, //wurflkey: google_nexus7_ver1
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'google_nexus7_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 95,
+        'physical_screen_height'  => 151,
+        'columns'                 => 60,
+        'rows'                    => 40,
+        'max_image_width'         => 800,
+        'max_image_height'        => 1200,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'Nexus 7',
-            'manufacturer_name'       => new Company\Asus(), //wurflkey: google_nexus7_ver1
-            'brand_name'              => new Company\Google(), //wurflkey: google_nexus7_ver1
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Nexus 7',
-            'has_qwerty_keyboard'     => true, //wurflkey: google_nexus7_ver1
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true, // wurflkey: google_nexus7_ver1
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 95,
-            'physical_screen_height'  => 151,
-            'columns'                 => 60,
-            'rows'                    => 40,
-            'max_image_width'         => 800,
-            'max_image_height'        => 1200,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true, // wurflkey: google_nexus7_ver1
-
-            // chips
-            'nfc_support'             => true, // wurflkey: google_nexus7_ver1
-        );
-    }
+        // chips
+        'nfc_support'             => true, // wurflkey: google_nexus7_ver1
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class AsusGalaxyNexus7
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -161,7 +144,7 @@ class AsusGalaxyNexus7
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Asus();
     }
 
     /**
@@ -171,7 +154,7 @@ class AsusGalaxyNexus7
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

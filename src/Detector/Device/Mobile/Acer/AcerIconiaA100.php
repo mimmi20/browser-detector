@@ -65,59 +65,42 @@ class AcerIconiaA100
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'acer_iconia_tab_a100_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA100
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'A100',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Vangogh',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'acer_iconia_tab_a100_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A100_Profile.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 95, // wurflkey: acer_iconia_tab_a100_ver1_suban40
+        'physical_screen_height'  => 150,
+        'columns'                 => 80,
+        'rows'                    => 25,
+        'max_image_width'         => 980,
+        'max_image_height'        => 472,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 600,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216, // wurflkey: acer_iconia_tab_a100_ver1_suban40
 
-            // device
-            'model_name'              => 'A100',
-            'manufacturer_name'       => new Company\Acer(),
-            'brand_name'              => new Company\Acer(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Vangogh',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A100_Profile.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 95, // wurflkey: acer_iconia_tab_a100_ver1_suban40
-            'physical_screen_height'  => 150,
-            'columns'                 => 80,
-            'rows'                    => 25,
-            'max_image_width'         => 980,
-            'max_image_height'        => 472,
-            'resolution_width'        => 1024,
-            'resolution_height'       => 600,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216, // wurflkey: acer_iconia_tab_a100_ver1_suban40
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +133,7 @@ class AcerIconiaA100
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -160,7 +143,7 @@ class AcerIconiaA100
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Acer();
     }
 
     /**
@@ -170,7 +153,7 @@ class AcerIconiaA100
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Acer();
     }
 
     /**

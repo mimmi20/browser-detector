@@ -62,60 +62,43 @@ class BlackBerry9500
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'blackberry9500_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry\BlackBerry9500
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'BlackBerry 9500',
+        'model_extra_info'        => 'Thunder', // wurflkey: blackberry9500_ver1_subos5
+        'marketing_name'          => 'Storm', // wurflkey: blackberry9500_ver1_subos5
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
+        // wurflkey: blackberry9500_ver1_subos5     // wurflkey: blackberry9500_ver1_subos5
 
-        $this->properties = array(
-            'wurflKey'                => 'blackberry9500_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: blackberry9500_ver1_subos470141
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_edge/5.0.0.rdf',
+        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_gprs/5.0.0.rdf',
+        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_umts/5.0.0.rdf',
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50,
+        'physical_screen_height'  => 66,
+        'columns'                 => 36,
+        'rows'                    => 32,
+        'max_image_width'         => 340,
+        'max_image_height'        => 440,
+        'resolution_width'        => 360,
+        'resolution_height'       => 480,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'BlackBerry 9500',
-            'manufacturer_name'       => new Company\Rim(),
-            'brand_name'              => new Company\Rim(),
-            'model_extra_info'        => 'Thunder', // wurflkey: blackberry9500_ver1_subos5
-            'marketing_name'          => 'Storm', // wurflkey: blackberry9500_ver1_subos5
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
-            // wurflkey: blackberry9500_ver1_subos5     // wurflkey: blackberry9500_ver1_subos5
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: blackberry9500_ver1_subos470141
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_edge/5.0.0.rdf',
-            'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_gprs/5.0.0.rdf',
-            'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_umts/5.0.0.rdf',
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50,
-            'physical_screen_height'  => 66,
-            'columns'                 => 36,
-            'rows'                    => 32,
-            'max_image_width'         => 340,
-            'max_image_height'        => 440,
-            'resolution_width'        => 360,
-            'resolution_height'       => 480,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -148,7 +131,7 @@ class BlackBerry9500
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -158,7 +141,7 @@ class BlackBerry9500
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**
@@ -168,7 +151,7 @@ class BlackBerry9500
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

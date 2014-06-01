@@ -65,59 +65,42 @@ class RimPlayBook
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'rim_playbook_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry\RimPlayBook
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'PlayBook',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'PlayBook',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'rim_playbook_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false, // wurflkey: rim_playbook_android_ver1
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 154,
+        'physical_screen_height'  => 90,
+        'columns'                 => 60,
+        'rows'                    => 40,
+        'max_image_width'         => 1024,
+        'max_image_height'        => 600,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 600,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'PlayBook',
-            'manufacturer_name'       => new Company\Rim(),
-            'brand_name'              => new Company\Rim(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'PlayBook',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false, // wurflkey: rim_playbook_android_ver1
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 154,
-            'physical_screen_height'  => 90,
-            'columns'                 => 60,
-            'rows'                    => 40,
-            'max_image_width'         => 1024,
-            'max_image_height'        => 600,
-            'resolution_width'        => 1024,
-            'resolution_height'       => 600,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +133,7 @@ class RimPlayBook
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -160,7 +143,7 @@ class RimPlayBook
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**
@@ -170,7 +153,7 @@ class RimPlayBook
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

@@ -76,13 +76,8 @@ class DenverTad10023
         $this->properties = array(
             'wurflKey'                => null, // not in wurfl
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
-
             // device
             'model_name'              => 'TAD-10023',
-            'manufacturer_name'       => new Company\Denver(),
-            'brand_name'              => new Company\Denver(),
             'model_extra_info'        => null,
             'marketing_name'          => 'TAD-10023',
             'has_qwerty_keyboard'     => true,
@@ -147,7 +142,7 @@ class DenverTad10023
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +152,7 @@ class DenverTad10023
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Denver();
     }
 
     /**
@@ -167,7 +162,7 @@ class DenverTad10023
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Denver();
     }
 
     /**

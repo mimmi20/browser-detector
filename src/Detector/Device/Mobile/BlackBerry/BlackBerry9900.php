@@ -66,59 +66,42 @@ class BlackBerry9900
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'blackberry9900_ver1_subua71', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry\BlackBerry9900
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'BlackBerry Bold Touch 9900',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Dakota',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'blackberry9900_ver1_subua71', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: blackberry9900_ver1_subua71
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_gprs/7.1.0.rdf',
+        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_edge/7.1.0.rdf',
+        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_umts/7.1.0.rdf',
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 57,
+        'physical_screen_height'  => 43,
+        'columns'                 => 28,
+        'rows'                    => 16,
+        'max_image_width'         => 640,
+        'max_image_height'        => 480,
+        'resolution_width'        => 640,
+        'resolution_height'       => 480,
+        'dual_orientation'        => false,
+        'colors'                  => 256, // wurflkey: blackberry9900_ver1_subua71
 
-            // device
-            'model_name'              => 'BlackBerry Bold Touch 9900',
-            'manufacturer_name'       => new Company\Rim(),
-            'brand_name'              => new Company\Rim(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Dakota',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: blackberry9900_ver1_subua71
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_gprs/7.1.0.rdf',
-            'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_edge/7.1.0.rdf',
-            'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_umts/7.1.0.rdf',
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 57,
-            'physical_screen_height'  => 43,
-            'columns'                 => 28,
-            'rows'                    => 16,
-            'max_image_width'         => 640,
-            'max_image_height'        => 480,
-            'resolution_width'        => 640,
-            'resolution_height'       => 480,
-            'dual_orientation'        => false,
-            'colors'                  => 256, // wurflkey: blackberry9900_ver1_subua71
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class BlackBerry9900
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -161,7 +144,7 @@ class BlackBerry9900
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**
@@ -171,7 +154,7 @@ class BlackBerry9900
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

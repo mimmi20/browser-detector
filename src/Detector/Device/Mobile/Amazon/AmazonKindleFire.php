@@ -65,59 +65,42 @@ class AmazonKindleFire
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Amazon\AmazonKindleFire
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'D01400', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Kindle Fire', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_ver1_suban40rom
 
-        $this->properties = array(
-            'wurflKey'                => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => null,
+        'resolution_height'       => null,
+        'dual_orientation'        => null,
+        'colors'                  => null,
 
-            // device
-            'model_name'              => 'D01400', // wurflkey: amazon_kindle_fire_ver1_suban40rom
-            'manufacturer_name'       => new Company\Amazon(),
-            'brand_name'              => new Company\Amazon(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Kindle Fire', // wurflkey: amazon_kindle_fire_ver1_suban40rom
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => null,
-            'resolution_height'       => null,
-            'dual_orientation'        => null,
-            'colors'                  => null,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +133,7 @@ class AmazonKindleFire
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -160,7 +143,7 @@ class AmazonKindleFire
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Amazon();
     }
 
     /**
@@ -170,7 +153,7 @@ class AmazonKindleFire
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Amazon();
     }
 
     /**

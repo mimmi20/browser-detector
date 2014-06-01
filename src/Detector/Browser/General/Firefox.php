@@ -231,7 +231,7 @@ class Firefox
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
-        if ($device->getCapability('device_type')->isMobile()
+        if ($device->getDeviceType()->isMobile()
             && 'Android' == $os->getName()
         ) {
             $device->setCapability('has_qwerty_keyboard', true);
@@ -255,7 +255,7 @@ class Firefox
             $engine->setCapability('css_border_image', 'mozilla');
             $engine->setCapability('css_rounded_corners', 'mozilla');
 
-            if (!$device->getCapability('device_type')->isTablet()) {
+            if (!$device->getDeviceType()->isTablet()) {
                 $device->setCapability('sms_enabled', true);
                 $device->setCapability('nfc_support', true);
             }

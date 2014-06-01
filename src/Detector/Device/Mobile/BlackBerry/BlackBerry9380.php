@@ -62,59 +62,42 @@ class BlackBerry9380
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'blackberry9380_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\BlackBerry\BlackBerry9380
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'BlackBerry 9380',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Blackberry 9380 Curve', // wurflkey: blackberry9380_ver1
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen', // wurflkey: blackberry9380_ver1
 
-        $this->properties = array(
-            'wurflKey'                => 'blackberry9380_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 360,
+        'resolution_height'       => 480,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'BlackBerry 9380',
-            'manufacturer_name'       => new Company\Rim(),
-            'brand_name'              => new Company\Rim(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Blackberry 9380 Curve', // wurflkey: blackberry9380_ver1
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen', // wurflkey: blackberry9380_ver1
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => 360,
-            'resolution_height'       => 480,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class BlackBerry9380
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class BlackBerry9380
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**
@@ -167,7 +150,7 @@ class BlackBerry9380
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

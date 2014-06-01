@@ -86,7 +86,41 @@ abstract class DeviceHandler
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                  => null, // not in wurfl
+
+        // device
+        'model_name'                => 'unknown',
+        'model_extra_info'          => null,
+        'marketing_name'            => null,
+        'has_qwerty_keyboard'       => null,
+        'pointing_method'           => null,
+        'device_claims_web_support' => null,
+
+        // product info
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number'   => false,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
+
+        // display
+        'physical_screen_width'     => 27,
+        'physical_screen_height'    => 27,
+        'columns'                   => 11,
+        'rows'                      => 6,
+        'max_image_width'           => 90,
+        'max_image_height'          => 35,
+        'resolution_width'          => 90,
+        'resolution_height'         => 40,
+        'dual_orientation'          => false,
+        'colors'                    => 65536,
+
+        // chips
+        'nfc_support'               => null,
+    );
 
     /**
      * Class Constructor
@@ -96,47 +130,6 @@ abstract class DeviceHandler
     public function __construct()
     {
         $this->utils = new Utils();
-
-        $this->properties = array(
-            'wurflKey'                  => null, // not in wurfl
-
-            // kind of device
-            'device_type'               => new DeviceType\Unknown(), // not in wurfl
-
-            // device
-            'model_name'                => 'unknown',
-            'manufacturer_name'         => new Company\Unknown(),
-            'brand_name'                => new Company\Unknown(),
-            'model_extra_info'          => null,
-            'marketing_name'            => null,
-            'has_qwerty_keyboard'       => null,
-            'pointing_method'           => null,
-            'device_claims_web_support' => null,
-
-            // product info
-            'can_skip_aligned_link_row' => null,
-            'can_assign_phone_number'   => false,
-            'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
-            'uaprof2'                   => null,
-            'uaprof3'                   => null,
-            'unique'                    => true,
-
-            // display
-            'physical_screen_width'     => 27,
-            'physical_screen_height'    => 27,
-            'columns'                   => 11,
-            'rows'                      => 6,
-            'max_image_width'           => 90,
-            'max_image_height'          => 35,
-            'resolution_width'          => 90,
-            'resolution_height'         => 40,
-            'dual_orientation'          => false,
-            'colors'                    => 65536,
-
-            // chips
-            'nfc_support'               => null,
-        );
     }
 
     /**
@@ -179,16 +172,6 @@ abstract class DeviceHandler
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new DeviceType\Unknown();
-    }
-
-    /**
      * detects properties who are depending on the device version or the user
      * agent
      *
@@ -226,6 +209,36 @@ abstract class DeviceHandler
     public function getWeight()
     {
         return 1;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Unknown();
     }
 
     /**

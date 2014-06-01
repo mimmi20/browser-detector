@@ -1492,7 +1492,7 @@ class Result implements \Serializable
                     $value = $device->getCapability('wurflKey');
                     break;
                 case 'manufacturer_name':
-                    $value = $device->getCapability('manufacturer_name');
+                    $value = $device->getManufacturer();
 
                     if (!($value instanceof Company\CompanyInterface)) {
                         $value = new Company\Unknown();
@@ -1501,7 +1501,7 @@ class Result implements \Serializable
                     $value = $value->getName();
                     break;
                 case 'brand_name':
-                    $value = $device->getCapability('brand_name');
+                    $value = $device->getBrand();
 
                     if (!($value instanceof Company\CompanyInterface)) {
                         $value = new Company\Unknown();
@@ -1510,7 +1510,7 @@ class Result implements \Serializable
                     $value = $value->getBrandName();
                     break;
                 case 'device_type':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();
@@ -1520,7 +1520,7 @@ class Result implements \Serializable
                     break;
                 case 'is_wireless_device':
                 case 'controlcap_is_mobile':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();
@@ -1529,7 +1529,7 @@ class Result implements \Serializable
                     $value = $value->isMobile();
                     break;
                 case 'is_tablet':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();
@@ -1538,7 +1538,7 @@ class Result implements \Serializable
                     $value = $value->isTablet();
                     break;
                 case 'is_smarttv':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();
@@ -1547,7 +1547,7 @@ class Result implements \Serializable
                     $value = $value->isTv();
                     break;
                 case 'is_console':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();
@@ -1557,7 +1557,7 @@ class Result implements \Serializable
                     break;
                 case 'ux_full_desktop':
                 case 'controlcap_is_full_desktop':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();
@@ -1566,7 +1566,7 @@ class Result implements \Serializable
                     $value = $value->isDesktop();
                     break;
                 case 'can_assign_phone_number':
-                    $value = $device->getCapability('device_type');
+                    $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
                         $value = new Type\Device\Unknown();

@@ -69,59 +69,42 @@ class Ipod
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'apple_ipod_touch_ver5', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipod
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'iPod Touch',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'iPod Touch',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'apple_ipod_touch_ver5', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobileDevice(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50,
+        'physical_screen_height'  => 74,
+        'columns'                 => 20,
+        'rows'                    => 20,
+        'max_image_width'         => 320,
+        'max_image_height'        => 360,
+        'resolution_width'        => 320, // wurflkey: apple_ipod_touch_ver5
+        'resolution_height'       => 480, // wurflkey: apple_ipod_touch_ver5
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'iPod Touch',
-            'manufacturer_name'       => new Company\Apple(),
-            'brand_name'              => new Company\Apple(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'iPod Touch',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50,
-            'physical_screen_height'  => 74,
-            'columns'                 => 20,
-            'rows'                    => 20,
-            'max_image_width'         => 320,
-            'max_image_height'        => 360,
-            'resolution_width'        => 320, // wurflkey: apple_ipod_touch_ver5
-            'resolution_height'       => 480, // wurflkey: apple_ipod_touch_ver5
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -154,7 +137,7 @@ class Ipod
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobileDevice();
     }
 
     /**
@@ -164,7 +147,7 @@ class Ipod
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apple();
     }
 
     /**
@@ -174,7 +157,7 @@ class Ipod
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Apple();
     }
 
     /**

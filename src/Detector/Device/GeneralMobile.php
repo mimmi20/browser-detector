@@ -69,59 +69,42 @@ class GeneralMobile
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'generic_mobile', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\GeneralMobile
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'general Mobile Device',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'general Mobile Device',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'generic_mobile', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 40,
+        'physical_screen_height'  => 60,
+        'columns'                 => 15,
+        'rows'                    => 12,
+        'max_image_width'         => 240,
+        'max_image_height'        => 320,
+        'resolution_width'        => 240,
+        'resolution_height'       => 320,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'general Mobile Device',
-            'manufacturer_name'       => new Company\Unknown(),
-            'brand_name'              => new Company\Unknown(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'general Mobile Device',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 40,
-            'physical_screen_height'  => 60,
-            'columns'                 => 15,
-            'rows'                    => 12,
-            'max_image_width'         => 240,
-            'max_image_height'        => 320,
-            'resolution_width'        => 240,
-            'resolution_height'       => 320,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -181,7 +164,7 @@ class GeneralMobile
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -395,7 +378,7 @@ class GeneralMobile
             if ('Android' == $os->getName()) {
                 $os->getVersion()->setVersion('2.0');
 
-                if ($this->getCapability('device_type')->isTablet()) {
+                if ($this->getDeviceType()->isTablet()) {
                     $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec_tablet');
                 } else {
                     $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec');
@@ -533,7 +516,7 @@ class GeneralMobile
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 
-        if ($this->getCapability('device_type')->isTablet()) {
+        if ($this->getDeviceType()->isTablet()) {
             $this->setCapability('sms_enabled', false);
             $this->setCapability('nfc_support', false);
             $this->setCapability('can_assign_phone_number', false);

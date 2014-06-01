@@ -62,59 +62,42 @@ class DellStreak10Pro
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'dell_streak_10_pro_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Dell\DellStreak10Pro
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'Streak 10 Pro',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Streak 10 Pro',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'dell_streak_10_pro_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 216,
+        'physical_screen_height'  => 135,
+        'columns'                 => 100,
+        'rows'                    => 100,
+        'max_image_width'         => 980,
+        'max_image_height'        => 472,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'Streak 10 Pro',
-            'manufacturer_name'       => new Company\Dell(),
-            'brand_name'              => new Company\Dell(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Streak 10 Pro',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 216,
-            'physical_screen_height'  => 135,
-            'columns'                 => 100,
-            'rows'                    => 100,
-            'max_image_width'         => 980,
-            'max_image_height'        => 472,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class DellStreak10Pro
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +140,7 @@ class DellStreak10Pro
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Dell();
     }
 
     /**
@@ -167,7 +150,7 @@ class DellStreak10Pro
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Dell();
     }
 
     /**

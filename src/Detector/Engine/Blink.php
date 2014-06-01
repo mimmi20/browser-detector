@@ -298,7 +298,7 @@ class Blink extends EngineHandler
     public function detectDependProperties(
         OsHandler $os, DeviceHandler $device, BrowserHandler $browser
     ) {
-        if ($device->getCapability('device_type')->isMobile()) {
+        if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);
             $this->setCapability('html_wi_imode_compact_generic', true);
             $this->setCapability('chtml_table_support', false);

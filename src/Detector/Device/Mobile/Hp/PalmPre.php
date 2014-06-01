@@ -193,9 +193,7 @@ class PalmPre
      */
     public function detectSpecialProperties()
     {
-        $modelVersion = $this->getCapability('model_version')->getVersion(
-            Version::MAJORONLY
-        );
+        $modelVersion = $this->getDeviceVersion()->getVersion(Version::MAJORONLY);
 
         if (3 == $modelVersion) {
             $this->setCapability('resolution_width', 480);

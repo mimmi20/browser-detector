@@ -65,59 +65,42 @@ class CatNova8
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'CatSound_catnova8_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\CatSound\CatNova8
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'Cat Nova 8',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Tablet PC',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'CatSound_catnova8_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 123,
+        'physical_screen_height'  => 164,
+        'columns'                 => 60,
+        'rows'                    => 40,
+        'max_image_width'         => 320,
+        'max_image_height'        => 400,
+        'resolution_width'        => 800,
+        'resolution_height'       => 600,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'Cat Nova 8',
-            'manufacturer_name'       => new Company\CatSound(),
-            'brand_name'              => new Company\Weltbild(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Tablet PC',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true, // wurflkey: CatSound_catnova8_ver1
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 123,
-            'physical_screen_height'  => 164,
-            'columns'                 => 60,
-            'rows'                    => 40,
-            'max_image_width'         => 320,
-            'max_image_height'        => 400,
-            'resolution_width'        => 800,
-            'resolution_height'       => 600,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true, // wurflkey: CatSound_catnova8_ver1
-
-            // chips
-            'nfc_support'             => true, // wurflkey: CatSound_catnova8_ver1
-        );
-    }
+        // chips
+        'nfc_support'             => true, // wurflkey: CatSound_catnova8_ver1
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +133,7 @@ class CatNova8
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -160,7 +143,7 @@ class CatNova8
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\CatSound();
     }
 
     /**
@@ -170,7 +153,7 @@ class CatNova8
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Weltbild();
     }
 
     /**

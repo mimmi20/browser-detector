@@ -65,59 +65,42 @@ class AsusPadFone
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'asus_padfone_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Asus\AsusPadFone
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'PadFone',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'PadFone',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'asus_padfone_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 34,
+        'physical_screen_height'  => 50,
+        'columns'                 => 16,
+        'rows'                    => 36,
+        'max_image_width'         => 320,
+        'max_image_height'        => 400,
+        'resolution_width'        => 540,
+        'resolution_height'       => 960,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'PadFone',
-            'manufacturer_name'       => new Company\Asus(),
-            'brand_name'              => new Company\Asus(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'PadFone',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 34,
-            'physical_screen_height'  => 50,
-            'columns'                 => 16,
-            'rows'                    => 36,
-            'max_image_width'         => 320,
-            'max_image_height'        => 400,
-            'resolution_width'        => 540,
-            'resolution_height'       => 960,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -154,7 +137,7 @@ class AsusPadFone
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -164,7 +147,7 @@ class AsusPadFone
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Asus();
     }
 
     /**
@@ -174,7 +157,7 @@ class AsusPadFone
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Asus();
     }
 
     /**

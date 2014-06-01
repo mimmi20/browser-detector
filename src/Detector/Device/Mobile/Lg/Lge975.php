@@ -191,7 +191,6 @@ class Lge975
         $chain->setUseragent($this->_useragent);
         $chain->setHandlers($os);
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

@@ -64,59 +64,42 @@ class Microsoft
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'windows_8_rt_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Microsoft
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'general Microsoft Device',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'general Microsoft Device',
+        'has_qwerty_keyboard'     => false, // windows_8_rt_ver1
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'windows_8_rt_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 27,
+        'physical_screen_height'  => 27,
+        'columns'                 => 80,
+        'rows'                    => 20,
+        'max_image_width'         => 1280,
+        'max_image_height'        => 800,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'general Microsoft Device',
-            'manufacturer_name'       => new Company\Microsoft(),
-            'brand_name'              => new Company\Microsoft(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'general Microsoft Device',
-            'has_qwerty_keyboard'     => false, // windows_8_rt_ver1
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 27,
-            'physical_screen_height'  => 27,
-            'columns'                 => 80,
-            'rows'                    => 20,
-            'max_image_width'         => 1280,
-            'max_image_height'        => 800,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -171,7 +154,7 @@ class Microsoft
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -181,7 +164,7 @@ class Microsoft
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**
@@ -191,7 +174,7 @@ class Microsoft
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

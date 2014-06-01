@@ -193,9 +193,7 @@ class PalmPixi
      */
     public function detectSpecialProperties()
     {
-        $modelVersion = $this->getCapability('model_version')->getVersion(
-            Version::MAJORMINOR
-        );
+        $modelVersion = $this->getDeviceVersion()->getVersion(Version::MAJORMINOR);
 
         if ('1.1' == $modelVersion) {
             $this->setCapability('model_name', 'Pixi Plus');

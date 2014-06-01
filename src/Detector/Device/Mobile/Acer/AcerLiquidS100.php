@@ -62,59 +62,42 @@ class AcerLiquidS100
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'acer_liquid_ver1_subandroid_2_1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerLiquidS100
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'Acer S100',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Liquid',
+        'has_qwerty_keyboard'     => false, // wurflkey: acer_liquid_ver1_subandroid_2_1
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'acer_liquid_ver1_subandroid_2_1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 40,
+        'physical_screen_height'  => 60,
+        'columns'                 => 28,
+        'rows'                    => 24,
+        'max_image_width'         => 480,
+        'max_image_height'        => 800,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'Acer S100',
-            'manufacturer_name'       => new Company\Acer(),
-            'brand_name'              => new Company\Acer(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Liquid',
-            'has_qwerty_keyboard'     => false, // wurflkey: acer_liquid_ver1_subandroid_2_1
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 40,
-            'physical_screen_height'  => 60,
-            'columns'                 => 28,
-            'rows'                    => 24,
-            'max_image_width'         => 480,
-            'max_image_height'        => 800,
-            'resolution_width'        => 480,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class AcerLiquidS100
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -161,7 +144,7 @@ class AcerLiquidS100
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Acer();
     }
 
     /**
@@ -171,7 +154,7 @@ class AcerLiquidS100
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Acer();
     }
 
     /**
