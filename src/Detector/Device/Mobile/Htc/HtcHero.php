@@ -62,59 +62,42 @@ class HtcHero
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => null, // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHero
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'Hero',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Hero',
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => null, // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://www.htcmms.com.tw/Android/TMO/Hero/ua-profile.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 44,
+        'physical_screen_height'  => 67,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 300,
+        'max_image_height'        => 460,
+        'resolution_width'        => 320,
+        'resolution_height'       => 480,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'Hero',
-            'manufacturer_name'       => new Company\Htc(),
-            'brand_name'              => new Company\Htc(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Hero',
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://www.htcmms.com.tw/Android/TMO/Hero/ua-profile.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 44,
-            'physical_screen_height'  => 67,
-            'columns'                 => 25,
-            'rows'                    => 21,
-            'max_image_width'         => 300,
-            'max_image_height'        => 460,
-            'resolution_width'        => 320,
-            'resolution_height'       => 480,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class HtcHero
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class HtcHero
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Htc();
     }
 
     /**
@@ -167,7 +150,7 @@ class HtcHero
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Htc();
     }
 
     /**

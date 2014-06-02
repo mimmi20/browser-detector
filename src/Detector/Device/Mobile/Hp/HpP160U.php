@@ -63,59 +63,42 @@ class HpP160U
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'hp_veer_ver1_subwebos211', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpP160U
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'P160U',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Veer', // wurflkey: hp_veer_ver1_subwebos211
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'hp_veer_ver1_subwebos211', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://downloads.palm.com/profiles/P160U_R1.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50,
+        'physical_screen_height'  => 50,
+        'columns'                 => 20,
+        'rows'                    => 10,
+        'max_image_width'         => 300,
+        'max_image_height'        => 360,
+        'resolution_width'        => 320,
+        'resolution_height'       => 400,
+        'dual_orientation'        => false,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'P160U',
-            'manufacturer_name'       => new Company\Hp(),
-            'brand_name'              => new Company\Hp(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Veer', // wurflkey: hp_veer_ver1_subwebos211
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://downloads.palm.com/profiles/P160U_R1.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50,
-            'physical_screen_height'  => 50,
-            'columns'                 => 20,
-            'rows'                    => 10,
-            'max_image_width'         => 300,
-            'max_image_height'        => 360,
-            'resolution_width'        => 320,
-            'resolution_height'       => 400,
-            'dual_orientation'        => false,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -148,7 +131,7 @@ class HpP160U
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -158,7 +141,7 @@ class HpP160U
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Hp();
     }
 
     /**
@@ -168,7 +151,7 @@ class HpP160U
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Hp();
     }
 
     /**

@@ -68,59 +68,42 @@ class HpTouchpad
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'hp_touchpad_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'Touchpad',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Touchpad',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'hp_touchpad_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: hp_touchpad_ver1
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://downloads.palm.com/profiles/HSTNH-I29C_R1.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 100,
+        'physical_screen_height'  => 200,
+        'columns'                 => 100,
+        'rows'                    => 50,
+        'max_image_width'         => 768,
+        'max_image_height'        => 1000,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 768,
+        'dual_orientation'        => true,
+        'colors'                  => 262144,
 
-            // device
-            'model_name'              => 'Touchpad',
-            'manufacturer_name'       => new Company\Hp(),
-            'brand_name'              => new Company\Hp(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Touchpad',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true, // wurflkey: hp_touchpad_ver1
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: hp_touchpad_ver1
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://downloads.palm.com/profiles/HSTNH-I29C_R1.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 100,
-            'physical_screen_height'  => 200,
-            'columns'                 => 100,
-            'rows'                    => 50,
-            'max_image_width'         => 768,
-            'max_image_height'        => 1000,
-            'resolution_width'        => 1024,
-            'resolution_height'       => 768,
-            'dual_orientation'        => true,
-            'colors'                  => 262144,
-
-            // sms
-            'sms_enabled'             => true, // wurflkey: hp_touchpad_ver1
-
-            // chips
-            'nfc_support'             => true, // wurflkey: hp_touchpad_ver1
-        );
-    }
+        // chips
+        'nfc_support'             => true, // wurflkey: hp_touchpad_ver1
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -153,7 +136,7 @@ class HpTouchpad
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -163,7 +146,7 @@ class HpTouchpad
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Hp();
     }
 
     /**
@@ -173,7 +156,7 @@ class HpTouchpad
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Hp();
     }
 
     /**
