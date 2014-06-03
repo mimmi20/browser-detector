@@ -66,59 +66,42 @@ class HuaweiU8860
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'huawei_u8860_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Huawei\HuaweiU8860
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'U8860',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Honor', // wurflkey: huawei_u8860_ver1_suban40noh
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'huawei_u8860_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8860WCDMA-NORMAL.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50, // wurflkey: huawei_u8860_ver1_suban40noh
+        'physical_screen_height'  => 89,
+        'columns'                 => 10,
+        'rows'                    => 12,
+        'max_image_width'         => 320,
+        'max_image_height'        => 400,
+        'resolution_width'        => 480,
+        'resolution_height'       => 854,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'U8860',
-            'manufacturer_name'       => new Company\Huawei(),
-            'brand_name'              => new Company\Huawei(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Honor', // wurflkey: huawei_u8860_ver1_suban40noh
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8860WCDMA-NORMAL.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50, // wurflkey: huawei_u8860_ver1_suban40noh
-            'physical_screen_height'  => 89,
-            'columns'                 => 10,
-            'rows'                    => 12,
-            'max_image_width'         => 320,
-            'max_image_height'        => 400,
-            'resolution_width'        => 480,
-            'resolution_height'       => 854,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class HuaweiU8860
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -161,7 +144,7 @@ class HuaweiU8860
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Huawei();
     }
 
     /**
@@ -171,7 +154,7 @@ class HuaweiU8860
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Huawei();
     }
 
     /**

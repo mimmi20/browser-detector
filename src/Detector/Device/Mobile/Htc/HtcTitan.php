@@ -62,59 +62,42 @@ class HtcTitan
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'htc_titan_x310e_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcTitan
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'X310e',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Titan',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'htc_titan_x310e_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50,
+        'physical_screen_height'  => 84,
+        'columns'                 => 12,
+        'rows'                    => 20,
+        'max_image_width'         => 320,
+        'max_image_height'        => 480,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'X310e',
-            'manufacturer_name'       => new Company\Htc(),
-            'brand_name'              => new Company\Htc(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Titan',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50,
-            'physical_screen_height'  => 84,
-            'columns'                 => 12,
-            'rows'                    => 20,
-            'max_image_width'         => 320,
-            'max_image_height'        => 480,
-            'resolution_width'        => 480,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class HtcTitan
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class HtcTitan
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Htc();
     }
 
     /**
@@ -167,7 +150,7 @@ class HtcTitan
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Htc();
     }
 
     /**

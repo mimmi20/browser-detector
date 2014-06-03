@@ -65,59 +65,42 @@ class HuaweiMediaPad
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'huawei_mediapad_ver1_suban40', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Huawei\HuaweiMediaPad
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'S7-301w',
+        'model_extra_info'        => 'aka T-Mobile Springboard',
+        'marketing_name'          => 'MediaPad',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'huawei_mediapad_ver1_suban40', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 151,
+        'physical_screen_height'  => 95,
+        'columns'                 => 80,
+        'rows'                    => 25,
+        'max_image_width'         => 980,
+        'max_image_height'        => 472,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 4294967296,
 
-            // device
-            'model_name'              => 'S7-301w',
-            'manufacturer_name'       => new Company\Huawei(),
-            'brand_name'              => new Company\Huawei(),
-            'model_extra_info'        => 'aka T-Mobile Springboard',
-            'marketing_name'          => 'MediaPad',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 151,
-            'physical_screen_height'  => 95,
-            'columns'                 => 80,
-            'rows'                    => 25,
-            'max_image_width'         => 980,
-            'max_image_height'        => 472,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 4294967296,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -154,7 +137,7 @@ class HuaweiMediaPad
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -164,7 +147,7 @@ class HuaweiMediaPad
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Huawei();
     }
 
     /**
@@ -174,7 +157,7 @@ class HuaweiMediaPad
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Huawei();
     }
 
     /**

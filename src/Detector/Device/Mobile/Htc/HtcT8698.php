@@ -65,59 +65,42 @@ class HtcT8698
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'htc_mozart_ver1_subos75b', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcT8698
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'T8698',
+        'model_extra_info'        => null,
+        'marketing_name'          => '7 Mozart', // wurflkey: htc_mozart_ver1_subos75b
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'htc_mozart_ver1_subos75b', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: htc_mozart_ver1_subos75b
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://www.htcmms.com.tw/gen/mozart-1.0.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50, // wurflkey: htc_mozart_ver1_subos75b
+        'physical_screen_height'  => 84,
+        'columns'                 => 16,
+        'rows'                    => 36,
+        'max_image_width'         => 480,
+        'max_image_height'        => 800,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'T8698',
-            'manufacturer_name'       => new Company\Htc(),
-            'brand_name'              => new Company\Htc(),
-            'model_extra_info'        => null,
-            'marketing_name'          => '7 Mozart', // wurflkey: htc_mozart_ver1_subos75b
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: htc_mozart_ver1_subos75b
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://www.htcmms.com.tw/gen/mozart-1.0.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50, // wurflkey: htc_mozart_ver1_subos75b
-            'physical_screen_height'  => 84,
-            'columns'                 => 16,
-            'rows'                    => 36,
-            'max_image_width'         => 480,
-            'max_image_height'        => 800,
-            'resolution_width'        => 480,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +133,7 @@ class HtcT8698
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -160,7 +143,7 @@ class HtcT8698
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Htc();
     }
 
     /**
@@ -170,7 +153,7 @@ class HtcT8698
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Htc();
     }
 
     /**
