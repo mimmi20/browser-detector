@@ -79,13 +79,8 @@ class Lge970
         $this->properties = array(
             'wurflKey'                => null, // not in wurfl
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
-
             // device
             'model_name'              => 'E970',
-            'manufacturer_name'       => new Company\Lg(),
-            'brand_name'              => new Company\Lg(),
             'model_extra_info'        => null,
             'marketing_name'          => 'Optimus G',
             'has_qwerty_keyboard'     => true,
@@ -150,7 +145,7 @@ class Lge970
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -160,7 +155,7 @@ class Lge970
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**
@@ -170,7 +165,7 @@ class Lge970
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**

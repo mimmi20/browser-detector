@@ -62,59 +62,42 @@ class LgKm900
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'lg_km900_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Lg\LgKm900
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'KM900',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'KM900',
+        'has_qwerty_keyboard'     => false, // wurflkey: lg_km900_ver1_subv10b
+        'pointing_method'         => 'touchscreen', // wurflkey: lg_km900_ver1_subv10b
 
-        $this->properties = array(
-            'wurflKey'                => 'lg_km900_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => null,
+        'resolution_height'       => null,
+        'dual_orientation'        => null,
+        'colors'                  => null,
 
-            // device
-            'model_name'              => 'KM900',
-            'manufacturer_name'       => new Company\Lg(),
-            'brand_name'              => new Company\Lg(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'KM900',
-            'has_qwerty_keyboard'     => false, // wurflkey: lg_km900_ver1_subv10b
-            'pointing_method'         => 'touchscreen', // wurflkey: lg_km900_ver1_subv10b
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => null,
-            'resolution_height'       => null,
-            'dual_orientation'        => null,
-            'colors'                  => null,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class LgKm900
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class LgKm900
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**
@@ -167,7 +150,7 @@ class LgKm900
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**

@@ -65,55 +65,38 @@ class LgGw300
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                  => null, // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Lg\LgGw300
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'                => 'GW300',
+        'model_extra_info'          => null,
+        'marketing_name'            => 'GW300',
+        'has_qwerty_keyboard'       => true,
+        'pointing_method'           => 'touchscreen',
+        'device_claims_web_support' => true,
 
-        $this->properties = array(
-            'wurflKey'                  => null, // not in wurfl
+        // product info
+        'can_skip_aligned_link_row' => null,
+        'can_assign_phone_number'   => false,
+        'ununiqueness_handler'      => null,
+        'uaprof'                    => null,
+        'uaprof2'                   => null,
+        'uaprof3'                   => null,
+        'unique'                    => true,
 
-            // kind of device
-            'device_type'               => new DeviceType\MobilePhone(), // not in wurfl
-
-            // device
-            'model_name'                => 'GW300',
-            'manufacturer_name'         => new Company\Lg(),
-            'brand_name'                => new Company\Lg(),
-            'model_extra_info'          => null,
-            'marketing_name'            => 'GW300',
-            'has_qwerty_keyboard'       => true,
-            'pointing_method'           => 'touchscreen',
-            'device_claims_web_support' => true,
-
-            // product info
-            'can_skip_aligned_link_row' => null,
-            'can_assign_phone_number'   => false,
-            'ununiqueness_handler'      => null,
-            'uaprof'                    => null,
-            'uaprof2'                   => null,
-            'uaprof3'                   => null,
-            'unique'                    => true,
-
-            // display
-            'physical_screen_width'     => null,
-            'physical_screen_height'    => null,
-            'columns'                   => null,
-            'rows'                      => null,
-            'max_image_width'           => null,
-            'max_image_height'          => null,
-            'resolution_width'          => null,
-            'resolution_height'         => null,
-            'dual_orientation'          => null,
-            'colors'                    => null,
-        );
-    }
+        // display
+        'physical_screen_width'     => null,
+        'physical_screen_height'    => null,
+        'columns'                   => null,
+        'rows'                      => null,
+        'max_image_width'           => null,
+        'max_image_height'          => null,
+        'resolution_width'          => null,
+        'resolution_height'         => null,
+        'dual_orientation'          => null,
+        'colors'                    => null,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -146,7 +129,7 @@ class LgGw300
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -156,7 +139,7 @@ class LgGw300
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**
@@ -166,7 +149,7 @@ class LgGw300
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**

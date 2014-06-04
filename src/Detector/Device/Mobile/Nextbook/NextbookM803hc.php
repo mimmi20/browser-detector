@@ -147,7 +147,7 @@ class NextbookM803hc
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +157,7 @@ class NextbookM803hc
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nextbook();
     }
 
     /**
@@ -167,7 +167,7 @@ class NextbookM803hc
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nextbook();
     }
 
     /**

@@ -62,59 +62,42 @@ class LenovoIdeaPadK1
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'lenovo_k1_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Lenovo\LenovoIdeaPadK1
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'K1', // wurflkey: lenovo_k1_ver1_suban32
+        'model_extra_info'        => null,
+        'marketing_name'          => 'IdeaPad K1',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'lenovo_k1_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 218,
+        'physical_screen_height'  => 136,
+        'columns'                 => 100,
+        'rows'                    => 100,
+        'max_image_width'         => 980,
+        'max_image_height'        => 472,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'K1', // wurflkey: lenovo_k1_ver1_suban32
-            'manufacturer_name'       => new Company\Lenovo(),
-            'brand_name'              => new Company\Lenovo(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'IdeaPad K1',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 218,
-            'physical_screen_height'  => 136,
-            'columns'                 => 100,
-            'rows'                    => 100,
-            'max_image_width'         => 980,
-            'max_image_height'        => 472,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class LenovoIdeaPadK1
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +140,7 @@ class LenovoIdeaPadK1
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Lenovo();
     }
 
     /**
@@ -167,7 +150,7 @@ class LenovoIdeaPadK1
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Lenovo();
     }
 
     /**
