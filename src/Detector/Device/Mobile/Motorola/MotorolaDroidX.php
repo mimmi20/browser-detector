@@ -62,59 +62,42 @@ class MotorolaDroidX
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'mot_droidx_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Motorola\MotorolaDroidX
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'DroidX',
+        'model_extra_info'        => 'Verizon',
+        'marketing_name'          => 'DroidX',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'mot_droidx_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 53,
+        'physical_screen_height'  => 95,
+        'columns'                 => 15,
+        'rows'                    => 12,
+        'max_image_width'         => 460,
+        'max_image_height'        => 800,
+        'resolution_width'        => 480,
+        'resolution_height'       => 854,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'DroidX',
-            'manufacturer_name'       => new Company\Motorola(),
-            'brand_name'              => new Company\Motorola(),
-            'model_extra_info'        => 'Verizon',
-            'marketing_name'          => 'DroidX',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 53,
-            'physical_screen_height'  => 95,
-            'columns'                 => 15,
-            'rows'                    => 12,
-            'max_image_width'         => 460,
-            'max_image_height'        => 800,
-            'resolution_width'        => 480,
-            'resolution_height'       => 854,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class MotorolaDroidX
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class MotorolaDroidX
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**
@@ -167,7 +150,7 @@ class MotorolaDroidX
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**

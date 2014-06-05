@@ -66,59 +66,42 @@ class MotorolaMz604
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Motorola\MotorolaMz604
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Xoom', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 218, // wurflkey: mot_mz601_ver1_suban40mz604
+        'physical_screen_height'  => 137,
+        'columns'                 => 80,
+        'rows'                    => 25,
+        'max_image_width'         => 1200,
+        'max_image_height'        => 760,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
-            'manufacturer_name'       => new Company\Motorola(),
-            'brand_name'              => new Company\Motorola(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Xoom', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 218, // wurflkey: mot_mz601_ver1_suban40mz604
-            'physical_screen_height'  => 137,
-            'columns'                 => 80,
-            'rows'                    => 25,
-            'max_image_width'         => 1200,
-            'max_image_height'        => 760,
-            'resolution_width'        => 1280,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class MotorolaMz604
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -161,7 +144,7 @@ class MotorolaMz604
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**
@@ -171,7 +154,7 @@ class MotorolaMz604
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**

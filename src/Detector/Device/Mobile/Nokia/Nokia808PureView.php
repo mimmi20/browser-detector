@@ -62,59 +62,42 @@ class Nokia808PureView
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_808_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\Nokia808PureView
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => '808 PureView',
+        'model_extra_info'        => null,
+        'marketing_name'          => null,
+        'has_qwerty_keyboard'     => false, // wurflkey: nokia_808_ver1
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_808_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/N808PureViewr100.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50,
+        'physical_screen_height'  => 89,
+        'columns'                 => 17,
+        'rows'                    => 13,
+        'max_image_width'         => 168,
+        'max_image_height'        => 144,
+        'resolution_width'        => 360,
+        'resolution_height'       => 640,
+        'dual_orientation'        => false,
+        'colors'                  => 16777216, // wurflkey: nokia_808_ver1
 
-            // device
-            'model_name'              => '808 PureView',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => null,
-            'has_qwerty_keyboard'     => false, // wurflkey: nokia_808_ver1
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/N808PureViewr100.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50,
-            'physical_screen_height'  => 89,
-            'columns'                 => 17,
-            'rows'                    => 13,
-            'max_image_width'         => 168,
-            'max_image_height'        => 144,
-            'resolution_width'        => 360,
-            'resolution_height'       => 640,
-            'dual_orientation'        => false,
-            'colors'                  => 16777216, // wurflkey: nokia_808_ver1
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class Nokia808PureView
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class Nokia808PureView
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -167,7 +150,7 @@ class Nokia808PureView
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

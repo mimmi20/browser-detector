@@ -62,59 +62,42 @@ class MotorolaWx308
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'mot_wx308_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Motorola\MotorolaWx308
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'WX308',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Gleam+/WX308', // wurflkey: mot_wx308_ver1
+        'has_qwerty_keyboard'     => false, // wurflkey: mot_wx308_ver1
+        'pointing_method'         => '', // wurflkey: mot_wx308_ver1          // wurflkey: mot_wx308_ver1
 
-        $this->properties = array(
-            'wurflKey'                => 'mot_wx308_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => null,
+        'resolution_height'       => null,
+        'dual_orientation'        => null,
+        'colors'                  => null,
 
-            // device
-            'model_name'              => 'WX308',
-            'manufacturer_name'       => new Company\Motorola(),
-            'brand_name'              => new Company\Motorola(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Gleam+/WX308', // wurflkey: mot_wx308_ver1
-            'has_qwerty_keyboard'     => false, // wurflkey: mot_wx308_ver1
-            'pointing_method'         => '', // wurflkey: mot_wx308_ver1          // wurflkey: mot_wx308_ver1
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => null,
-            'resolution_height'       => null,
-            'dual_orientation'        => null,
-            'colors'                  => null,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class MotorolaWx308
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class MotorolaWx308
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**
@@ -167,7 +150,7 @@ class MotorolaWx308
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**
