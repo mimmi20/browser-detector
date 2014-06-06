@@ -62,59 +62,42 @@ class Nokia7230
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_7230_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\Nokia7230
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => '7230',
+        'model_extra_info'        => null,
+        'marketing_name'          => null,
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => null,
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_7230_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/N7230r100.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 37,
+        'physical_screen_height'  => 49,
+        'columns'                 => 15,
+        'rows'                    => 16,
+        'max_image_width'         => 228,
+        'max_image_height'        => 280,
+        'resolution_width'        => 240,
+        'resolution_height'       => 320,
+        'dual_orientation'        => false,
+        'colors'                  => 262144,
 
-            // device
-            'model_name'              => '7230',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => null,
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => null,
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/N7230r100.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 37,
-            'physical_screen_height'  => 49,
-            'columns'                 => 15,
-            'rows'                    => 16,
-            'max_image_width'         => 228,
-            'max_image_height'        => 280,
-            'resolution_width'        => 240,
-            'resolution_height'       => 320,
-            'dual_orientation'        => false,
-            'colors'                  => 262144,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class Nokia7230
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class Nokia7230
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -167,7 +150,7 @@ class Nokia7230
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

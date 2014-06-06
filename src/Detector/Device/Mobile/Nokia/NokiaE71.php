@@ -62,59 +62,42 @@ class NokiaE71
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_e71_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaE71
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'E71',
+        'model_extra_info'        => null,
+        'marketing_name'          => null,
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'joystick',
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_e71_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE71-1r100.xml',
+        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/ne71-1r100-vf3g.xml',
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 48,
+        'physical_screen_height'  => 36,
+        'columns'                 => 28,
+        'rows'                    => 13,
+        'max_image_width'         => 312,
+        'max_image_height'        => 200,
+        'resolution_width'        => 320,
+        'resolution_height'       => 240,
+        'dual_orientation'        => false,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'E71',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => null,
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'joystick',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE71-1r100.xml',
-            'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/ne71-1r100-vf3g.xml',
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 48,
-            'physical_screen_height'  => 36,
-            'columns'                 => 28,
-            'rows'                    => 13,
-            'max_image_width'         => 312,
-            'max_image_height'        => 200,
-            'resolution_width'        => 320,
-            'resolution_height'       => 240,
-            'dual_orientation'        => false,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class NokiaE71
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class NokiaE71
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -167,7 +150,7 @@ class NokiaE71
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

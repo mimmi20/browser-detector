@@ -62,59 +62,42 @@ class NokiaE700
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_e7_00_ver1_subua53', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaE700
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'E7-00',
+        'model_extra_info'        => null,
+        'marketing_name'          => null,
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_e7_00_ver1_subua53', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: nokia_e7_00_ver1_subua53
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE7-00r100.xml',
+        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r300.xml',
+        'uaprof3'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r310.xml',
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50, // wurflkey: nokia_e7_00_ver1_subua53
+        'physical_screen_height'  => 89,
+        'columns'                 => 17,
+        'rows'                    => 13,
+        'max_image_width'         => 360,
+        'max_image_height'        => 640,
+        'resolution_width'        => 360,
+        'resolution_height'       => 640,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216, // wurflkey: nokia_e7_00_ver1_subua53
 
-            // device
-            'model_name'              => 'E7-00',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => null,
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: nokia_e7_00_ver1_subua53
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE7-00r100.xml',
-            'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r300.xml',
-            'uaprof3'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r310.xml',
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50, // wurflkey: nokia_e7_00_ver1_subua53
-            'physical_screen_height'  => 89,
-            'columns'                 => 17,
-            'rows'                    => 13,
-            'max_image_width'         => 360,
-            'max_image_height'        => 640,
-            'resolution_width'        => 360,
-            'resolution_height'       => 640,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216, // wurflkey: nokia_e7_00_ver1_subua53
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class NokiaE700
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class NokiaE700
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -167,7 +150,7 @@ class NokiaE700
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

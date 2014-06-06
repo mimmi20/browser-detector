@@ -62,59 +62,42 @@ class NokiaC500
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_c5_00_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaC500
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'C5-00',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'C5',
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => '', // wurflkey nokia_c5_00_ver1
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_c5_00_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100.xml',
+        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100-VF3G.xml',
+        'uaprof3'                 => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100-VF2G.xml',
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 34,
+        'physical_screen_height'  => 45,
+        'columns'                 => 21,
+        'rows'                    => 18,
+        'max_image_width'         => 240,
+        'max_image_height'        => 280,
+        'resolution_width'        => 240,
+        'resolution_height'       => 320,
+        'dual_orientation'        => false,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'C5-00',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'C5',
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => '', // wurflkey nokia_c5_00_ver1
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100.xml',
-            'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100-VF3G.xml',
-            'uaprof3'                 => 'http://nds1.nds.nokia.com/uaprof/NC5-00r100-VF2G.xml',
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 34,
-            'physical_screen_height'  => 45,
-            'columns'                 => 21,
-            'rows'                    => 18,
-            'max_image_width'         => 240,
-            'max_image_height'        => 280,
-            'resolution_width'        => 240,
-            'resolution_height'       => 320,
-            'dual_orientation'        => false,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class NokiaC500
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class NokiaC500
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -167,7 +150,7 @@ class NokiaC500
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
