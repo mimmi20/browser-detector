@@ -62,59 +62,42 @@ class SamsungGti5800
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_i5800_ver1_suban22', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGti5800
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'GT-I5800',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Galaxy 3 Apollo',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_i5800_ver1_suban22', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i5800.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 40,
+        'physical_screen_height'  => 60,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 228,
+        'max_image_height'        => 360,
+        'resolution_width'        => 240,
+        'resolution_height'       => 400,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216, // wurflkey: samsung_gt_i5800_ver1
 
-            // device
-            'model_name'              => 'GT-I5800',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Galaxy 3 Apollo',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i5800.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 40,
-            'physical_screen_height'  => 60,
-            'columns'                 => 25,
-            'rows'                    => 21,
-            'max_image_width'         => 228,
-            'max_image_height'        => 360,
-            'resolution_width'        => 240,
-            'resolution_height'       => 400,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216, // wurflkey: samsung_gt_i5800_ver1
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class SamsungGti5800
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class SamsungGti5800
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -167,7 +150,7 @@ class SamsungGti5800
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**

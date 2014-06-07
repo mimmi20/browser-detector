@@ -62,59 +62,42 @@ class NokiaN95
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_n95_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN95
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'N95',
+        'model_extra_info'        => null,
+        'marketing_name'          => null,
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => 'joystick',
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_n95_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN95-1r100.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 43,
+        'physical_screen_height'  => 57,
+        'columns'                 => 25,
+        'rows'                    => 15,
+        'max_image_width'         => 234,
+        'max_image_height'        => 273,
+        'resolution_width'        => 240,
+        'resolution_height'       => 320,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'N95',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => null,
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => 'joystick',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN95-1r100.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 43,
-            'physical_screen_height'  => 57,
-            'columns'                 => 25,
-            'rows'                    => 15,
-            'max_image_width'         => 234,
-            'max_image_height'        => 273,
-            'resolution_width'        => 240,
-            'resolution_height'       => 320,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class NokiaN95
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class NokiaN95
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -167,7 +150,7 @@ class NokiaN95
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

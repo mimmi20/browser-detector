@@ -66,59 +66,42 @@ class SamsungGti9195
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_i9195_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGti9195
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'GT-I9195',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Galaxy S4 Mini',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_i9195_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9195_ver1_suban40rom
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9195.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'GT-I9195',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Galaxy S4 Mini',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9195_ver1_suban40rom
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9195.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => 480,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -155,7 +138,7 @@ class SamsungGti9195
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -165,7 +148,7 @@ class SamsungGti9195
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -175,7 +158,7 @@ class SamsungGti9195
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**

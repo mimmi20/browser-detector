@@ -62,59 +62,42 @@ class PrestigioPmp5580c
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => null, // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Prestigio\PrestigioPmp5580c
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'PMP5580C',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'MultiPad 8.0 Pro Duo',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => null, // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 122,
+        'physical_screen_height'  => 163,
+        'columns'                 => 60,
+        'rows'                    => 40,
+        'max_image_width'         => 320,
+        'max_image_height'        => 400,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 768,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'PMP5580C',
-            'manufacturer_name'       => new Company\Prestigio(),
-            'brand_name'              => new Company\Prestigio(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'MultiPad 8.0 Pro Duo',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 122,
-            'physical_screen_height'  => 163,
-            'columns'                 => 60,
-            'rows'                    => 40,
-            'max_image_width'         => 320,
-            'max_image_height'        => 400,
-            'resolution_width'        => 1024,
-            'resolution_height'       => 768,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class PrestigioPmp5580c
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +140,7 @@ class PrestigioPmp5580c
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Prestigio();
     }
 
     /**
@@ -167,7 +150,7 @@ class PrestigioPmp5580c
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Prestigio();
     }
 
     /**

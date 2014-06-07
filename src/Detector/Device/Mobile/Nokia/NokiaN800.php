@@ -65,59 +65,42 @@ class NokiaN800
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'nokia_n8_00_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'N8-00',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'N8', // wurflkey: nokia_n8_00_ver1
+        'has_qwerty_keyboard'     => false, // wurflkey: nokia_n8_00_ver1
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'nokia_n8_00_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
+        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 44,
+        'physical_screen_height'  => 78,
+        'columns'                 => 17,
+        'rows'                    => 13,
+        'max_image_width'         => 360,
+        'max_image_height'        => 600,
+        'resolution_width'        => 360,
+        'resolution_height'       => 640,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
 
-            // device
-            'model_name'              => 'N8-00',
-            'manufacturer_name'       => new Company\Nokia(),
-            'brand_name'              => new Company\Nokia(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'N8', // wurflkey: nokia_n8_00_ver1
-            'has_qwerty_keyboard'     => false, // wurflkey: nokia_n8_00_ver1
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
-            'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 44,
-            'physical_screen_height'  => 78,
-            'columns'                 => 17,
-            'rows'                    => 13,
-            'max_image_width'         => 360,
-            'max_image_height'        => 600,
-            'resolution_width'        => 360,
-            'resolution_height'       => 640,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,7 +133,7 @@ class NokiaN800
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -160,7 +143,7 @@ class NokiaN800
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**
@@ -170,7 +153,7 @@ class NokiaN800
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

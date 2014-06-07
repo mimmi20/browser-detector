@@ -66,59 +66,42 @@ class SamsungGtn7000
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_n7000_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGtn7000
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'GT-N7000',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Galaxy Note',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_n7000_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: samsung_gt_n7000_ver1_suban40
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-N7000.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 72,
+        'physical_screen_height'  => 115,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 400,
+        'max_image_height'        => 580,
+        'resolution_width'        => 800,
+        'resolution_height'       => 1280,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'GT-N7000',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Galaxy Note',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: samsung_gt_n7000_ver1_suban40
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-N7000.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 72,
-            'physical_screen_height'  => 115,
-            'columns'                 => 25,
-            'rows'                    => 21,
-            'max_image_width'         => 400,
-            'max_image_height'        => 580,
-            'resolution_width'        => 800,
-            'resolution_height'       => 1280,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class SamsungGtn7000
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -161,7 +144,7 @@ class SamsungGtn7000
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -171,7 +154,7 @@ class SamsungGtn7000
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**

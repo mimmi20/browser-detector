@@ -62,59 +62,42 @@ class SamsungGti9100p
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_i9100p_ver1_suban40nosam', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGti9100p
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'GT-I9100P',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
+        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_i9100p_ver1_suban40nosam', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9100P.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 56,
+        'physical_screen_height'  => 94,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 320,
+        'max_image_height'        => 800,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'GT-I9100P',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
-            'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9100P.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 56,
-            'physical_screen_height'  => 94,
-            'columns'                 => 25,
-            'rows'                    => 21,
-            'max_image_width'         => 320,
-            'max_image_height'        => 800,
-            'resolution_width'        => 480,
-            'resolution_height'       => 800,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class SamsungGti9100p
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class SamsungGti9100p
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -167,7 +150,7 @@ class SamsungGti9100p
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
