@@ -62,59 +62,42 @@ class SamsungGts5230
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_s5230_ver1_subjasmine1_0', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGts5230
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'GT-S5230',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Star', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_s5230_ver1_subjasmine1_0', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5230.xml',
+        'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5230.rdf',
+        'uaprof3'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5230MR.rdf',
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 40,
+        'physical_screen_height'  => 67,
+        'columns'                 => 20,
+        'rows'                    => 16,
+        'max_image_width'         => 228,
+        'max_image_height'        => 360,
+        'resolution_width'        => 240,
+        'resolution_height'       => 400,
+        'dual_orientation'        => false,
+        'colors'                  => 262144,
 
-            // device
-            'model_name'              => 'GT-S5230',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Star', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5230.xml',
-            'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5230.rdf',
-            'uaprof3'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5230MR.rdf',
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 40,
-            'physical_screen_height'  => 67,
-            'columns'                 => 20,
-            'rows'                    => 16,
-            'max_image_width'         => 228,
-            'max_image_height'        => 360,
-            'resolution_width'        => 240,
-            'resolution_height'       => 400,
-            'dual_orientation'        => false,
-            'colors'                  => 262144,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -151,7 +134,7 @@ class SamsungGts5230
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -161,7 +144,7 @@ class SamsungGts5230
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -171,7 +154,7 @@ class SamsungGts5230
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**

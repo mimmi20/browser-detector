@@ -62,59 +62,42 @@ class SamsungSchI5354G
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_i9300_ver1_subverizon', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungSchI5354G
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'SCH-I535 4G',
+        'model_extra_info'        => 'Verizon',
+        'marketing_name'          => 'Galaxy S III 4G CDMA',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_i9300_ver1_subverizon', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://uaprof.vtext.com/sam/SCH-I535/SCH-I535.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 60,
+        'physical_screen_height'  => 107,
+        'columns'                 => 60,
+        'rows'                    => 40,
+        'max_image_width'         => 360,
+        'max_image_height'        => 640,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'SCH-I535 4G',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => 'Verizon',
-            'marketing_name'          => 'Galaxy S III 4G CDMA',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://uaprof.vtext.com/sam/SCH-I535/SCH-I535.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 60,
-            'physical_screen_height'  => 107,
-            'columns'                 => 60,
-            'rows'                    => 40,
-            'max_image_width'         => 360,
-            'max_image_height'        => 640,
-            'resolution_width'        => 720,
-            'resolution_height'       => 1280,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class SamsungSchI5354G
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class SamsungSchI5354G
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -167,7 +150,7 @@ class SamsungSchI5354G
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**

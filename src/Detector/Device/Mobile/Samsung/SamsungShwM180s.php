@@ -62,59 +62,42 @@ class SamsungShwM180s
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_galaxy_tab_ver1_sub_shwm180s_suban23b', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungShwM180s
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'SHW-M180S',
+        'model_extra_info'        => null, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
+        'marketing_name'          => 'GALAXY Tab (SKT)', // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
+        'has_qwerty_keyboard'     => true, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_galaxy_tab_ver1_sub_shwm180s_suban23b', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P1000.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\Tablet(), // not in wurfl
+        // display
+        'physical_screen_width'   => 90,
+        'physical_screen_height'  => 154,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 400,
+        'max_image_height'        => 400,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 600,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'SHW-M180S',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => null, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
-            'marketing_name'          => 'GALAXY Tab (SKT)', // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
-            'has_qwerty_keyboard'     => true, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P1000.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 90,
-            'physical_screen_height'  => 154,
-            'columns'                 => 25,
-            'rows'                    => 21,
-            'max_image_width'         => 400,
-            'max_image_height'        => 400,
-            'resolution_width'        => 1024,
-            'resolution_height'       => 600,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class SamsungShwM180s
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -157,7 +140,7 @@ class SamsungShwM180s
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -167,7 +150,7 @@ class SamsungShwM180s
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**

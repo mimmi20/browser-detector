@@ -62,59 +62,42 @@ class SamsungGts7230e
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'samsung_gt_s7230e_ver1_suborange', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGts7230e
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'GT-S7230E',
+        'model_extra_info'        => 'Orange', // wurflkey: samsung_gt_s7230e_ver1_suborange
+        'marketing_name'          => 'Wave 723', // wurflkey: samsung_gt_s7230e_ver1_suborange
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s7230e_ver1_suborange
 
-        $this->properties = array(
-            'wurflKey'                => 'samsung_gt_s7230e_ver1_suborange', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S7230E.rdf',
+        'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S7230E_3G.rdf',
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 240,
+        'resolution_height'       => 400,
+        'dual_orientation'        => false,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'GT-S7230E',
-            'manufacturer_name'       => new Company\Samsung(),
-            'brand_name'              => new Company\Samsung(),
-            'model_extra_info'        => 'Orange', // wurflkey: samsung_gt_s7230e_ver1_suborange
-            'marketing_name'          => 'Wave 723', // wurflkey: samsung_gt_s7230e_ver1_suborange
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s7230e_ver1_suborange
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S7230E.rdf',
-            'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S7230E_3G.rdf',
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => 240,
-            'resolution_height'       => 400,
-            'dual_orientation'        => false,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class SamsungGts7230e
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class SamsungGts7230e
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -167,7 +150,7 @@ class SamsungGts7230e
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
