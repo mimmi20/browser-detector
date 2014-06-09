@@ -65,60 +65,43 @@ class SonyEricssonU1i
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'sonyericsson_u1i_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU1i
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'U1i',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Satio', // wurflkey: sonyericsson_u1i_ver1
+        'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_u1i_ver1
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'sonyericsson_u1i_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/U1iR000.xml',
+        // wurflkey: sonyericsson_u1i_ver1
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 27,
+        'physical_screen_height'  => 27,
+        'columns'                 => 17,
+        'rows'                    => 13,
+        'max_image_width'         => 330,
+        'max_image_height'        => 610,
+        'resolution_width'        => 360,
+        'resolution_height'       => 640,
+        'dual_orientation'        => false,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'U1i',
-            'manufacturer_name'       => new Company\SonyEricsson(),
-            'brand_name'              => new Company\SonyEricsson(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Satio', // wurflkey: sonyericsson_u1i_ver1
-            'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_u1i_ver1
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/U1iR000.xml',
-            // wurflkey: sonyericsson_u1i_ver1
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 27,
-            'physical_screen_height'  => 27,
-            'columns'                 => 17,
-            'rows'                    => 13,
-            'max_image_width'         => 330,
-            'max_image_height'        => 610,
-            'resolution_width'        => 360,
-            'resolution_height'       => 640,
-            'dual_orientation'        => false,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -155,7 +138,7 @@ class SonyEricssonU1i
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -165,7 +148,7 @@ class SonyEricssonU1i
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**
@@ -175,7 +158,7 @@ class SonyEricssonU1i
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**

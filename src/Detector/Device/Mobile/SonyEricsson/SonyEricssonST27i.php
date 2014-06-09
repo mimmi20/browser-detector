@@ -65,59 +65,42 @@ class SonyEricssonST27i
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'sonyericsson_st27_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonST27i
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'ST27i',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'ST27i',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'sonyericsson_st27_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true, // wurflkey: sonyericsson_st27_ver1
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST27iR601.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 50, // wurflkey: sonyericsson_st27_ver1
+        'physical_screen_height'  => 74,
+        'columns'                 => 44,
+        'rows'                    => 32,
+        'max_image_width'         => 300,
+        'max_image_height'        => 400,
+        'resolution_width'        => 320,
+        'resolution_height'       => 480,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'ST27i',
-            'manufacturer_name'       => new Company\SonyEricsson(),
-            'brand_name'              => new Company\SonyEricsson(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'ST27i',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true, // wurflkey: sonyericsson_st27_ver1
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST27iR601.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 50, // wurflkey: sonyericsson_st27_ver1
-            'physical_screen_height'  => 74,
-            'columns'                 => 44,
-            'rows'                    => 32,
-            'max_image_width'         => 300,
-            'max_image_height'        => 400,
-            'resolution_width'        => 320,
-            'resolution_height'       => 480,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -154,7 +137,7 @@ class SonyEricssonST27i
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -164,7 +147,7 @@ class SonyEricssonST27i
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**
@@ -174,7 +157,7 @@ class SonyEricssonST27i
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**

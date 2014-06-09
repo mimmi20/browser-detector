@@ -62,59 +62,42 @@ class PlayStationVita
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'sony_playstation_vita_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\PlayStationVita
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'PlayStation Vita',
+        'model_extra_info'        => null,
+        'marketing_name'          => null,
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'sony_playstation_vita_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobileConsole(), // not in wurfl
+        // display
+        'physical_screen_width'   => 111,
+        'physical_screen_height'  => 63,
+        'columns'                 => 11,
+        'rows'                    => 6,
+        'max_image_width'         => 940,
+        'max_image_height'        => 520,
+        'resolution_width'        => 960,
+        'resolution_height'       => 544,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
-            // device
-            'model_name'              => 'PlayStation Vita',
-            'manufacturer_name'       => new Company\Sony(),
-            'brand_name'              => new Company\Sony(),
-            'model_extra_info'        => null,
-            'marketing_name'          => null,
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 111,
-            'physical_screen_height'  => 63,
-            'columns'                 => 11,
-            'rows'                    => 6,
-            'max_image_width'         => 940,
-            'max_image_height'        => 520,
-            'resolution_width'        => 960,
-            'resolution_height'       => 544,
-            'dual_orientation'        => true,
-            'colors'                  => 16777216,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class PlayStationVita
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobileConsole();
     }
 
     /**
@@ -157,7 +140,7 @@ class PlayStationVita
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**
@@ -167,7 +150,7 @@ class PlayStationVita
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**

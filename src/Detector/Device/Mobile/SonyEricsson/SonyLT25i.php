@@ -66,59 +66,42 @@ class SonyLT25i
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => null, // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyLT25i
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'LT25i',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Xperia V',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => null, // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-            // device
-            'model_name'              => 'LT25i',
-            'manufacturer_name'       => new Company\Sony(),
-            'brand_name'              => new Company\Sony(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'Xperia V',
-            'has_qwerty_keyboard'     => true,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => null,
-            'physical_screen_height'  => null,
-            'columns'                 => null,
-            'rows'                    => null,
-            'max_image_width'         => null,
-            'max_image_height'        => null,
-            'resolution_width'        => 720,
-            'resolution_height'       => 1280,
-            'dual_orientation'        => true,
-            'colors'                  => 65536,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -155,7 +138,7 @@ class SonyLT25i
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -165,7 +148,7 @@ class SonyLT25i
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**
@@ -175,7 +158,7 @@ class SonyLT25i
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**

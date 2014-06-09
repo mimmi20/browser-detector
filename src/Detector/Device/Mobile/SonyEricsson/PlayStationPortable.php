@@ -63,59 +63,42 @@ class PlayStationPortable
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'sony_psp_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\PlayStationPortable
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'PlayStation Portable',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'PSP',
+        'has_qwerty_keyboard'     => false,
+        'pointing_method'         => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                => 'sony_psp_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobileDevice(), // not in wurfl
+        // display
+        'physical_screen_width'   => 27,
+        'physical_screen_height'  => 27,
+        'columns'                 => 11,
+        'rows'                    => 6,
+        'max_image_width'         => 480,
+        'max_image_height'        => 272,
+        'resolution_width'        => 480,
+        'resolution_height'       => 272,
+        'dual_orientation'        => false,
+        'colors'                  => 256,
 
-            // device
-            'model_name'              => 'PlayStation Portable',
-            'manufacturer_name'       => new Company\Sony(),
-            'brand_name'              => new Company\Sony(),
-            'model_extra_info'        => null,
-            'marketing_name'          => 'PSP',
-            'has_qwerty_keyboard'     => false,
-            'pointing_method'         => 'touchscreen',
+        // sms
+        'sms_enabled'             => false,
 
-            // product info
-            'can_assign_phone_number' => false,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => null,
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 27,
-            'physical_screen_height'  => 27,
-            'columns'                 => 11,
-            'rows'                    => 6,
-            'max_image_width'         => 480,
-            'max_image_height'        => 272,
-            'resolution_width'        => 480,
-            'resolution_height'       => 272,
-            'dual_orientation'        => false,
-            'colors'                  => 256,
-
-            // sms
-            'sms_enabled'             => false,
-
-            // chips
-            'nfc_support'             => false,
-        );
-    }
+        // chips
+        'nfc_support'             => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -148,7 +131,7 @@ class PlayStationPortable
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobileConsole();
     }
 
     /**
@@ -158,7 +141,7 @@ class PlayStationPortable
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**
@@ -168,7 +151,7 @@ class PlayStationPortable
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**

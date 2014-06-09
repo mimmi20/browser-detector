@@ -65,70 +65,53 @@ class SonyEricssonX10i
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                      => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonX10i
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'                    => 'X10i',
+        'model_extra_info'              => null,
+        'marketing_name'                => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
+        'has_qwerty_keyboard'           => true,
+        'pointing_method'               => 'touchscreen',
 
-        $this->properties = array(
-            'wurflKey'                      => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
+        // product info
+        'can_assign_phone_number'       => true, // wurflkey: sonyericsson_x10i_ver1_suban23
+        'ununiqueness_handler'          => null,
+        'uaprof'                        => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
+        'uaprof2'                       => null,
+        'uaprof3'                       => null,
+        'unique'                        => true,
 
-            // kind of device
-            'device_type'                   => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'         => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
+        'physical_screen_height'        => 60,
+        'columns'                       => 44,
+        'rows'                          => 32,
+        'max_image_width'               => 320,
+        'max_image_height'              => 480,
+        'resolution_width'              => 480,
+        'resolution_height'             => 854,
+        'dual_orientation'              => true,
+        'colors'                        => 65536,
 
-            // device
-            'model_name'                    => 'X10i',
-            'manufacturer_name'             => new Company\SonyEricsson(),
-            'brand_name'                    => new Company\SonyEricsson(),
-            'model_extra_info'              => null,
-            'marketing_name'                => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
-            'has_qwerty_keyboard'           => true,
-            'pointing_method'               => 'touchscreen',
+        // security
+        'phone_id_provided'             => false,
 
-            // product info
-            'can_assign_phone_number'       => true, // wurflkey: sonyericsson_x10i_ver1_suban23
-            'ununiqueness_handler'          => null,
-            'uaprof'                        => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
-            'uaprof2'                       => null,
-            'uaprof3'                       => null,
-            'unique'                        => true,
+        // storage
+        'max_deck_size'                 => 1000000,
+        'max_length_of_username'        => 0,
+        'max_no_of_bookmarks'           => 0,
+        'max_length_of_password'        => 0,
+        'max_no_of_connection_settings' => 0,
+        'max_object_size'               => 0,
 
-            // display
-            'physical_screen_width'         => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
-            'physical_screen_height'        => 60,
-            'columns'                       => 44,
-            'rows'                          => 32,
-            'max_image_width'               => 320,
-            'max_image_height'              => 480,
-            'resolution_width'              => 480,
-            'resolution_height'             => 854,
-            'dual_orientation'              => true,
-            'colors'                        => 65536,
+        // sms
+        'sms_enabled'                   => true,
 
-            // security
-            'phone_id_provided'             => false,
-
-            // storage
-            'max_deck_size'                 => 1000000,
-            'max_length_of_username'        => 0,
-            'max_no_of_bookmarks'           => 0,
-            'max_length_of_password'        => 0,
-            'max_no_of_connection_settings' => 0,
-            'max_object_size'               => 0,
-
-            // sms
-            'sms_enabled'                   => true,
-
-            // chips
-            'nfc_support'                   => true,
-        );
-    }
+        // chips
+        'nfc_support'                   => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -165,7 +148,7 @@ class SonyEricssonX10i
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -175,7 +158,7 @@ class SonyEricssonX10i
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**
@@ -185,7 +168,7 @@ class SonyEricssonX10i
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**

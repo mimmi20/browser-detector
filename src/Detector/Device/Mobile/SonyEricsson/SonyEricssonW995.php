@@ -62,59 +62,42 @@ class SonyEricssonW995
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        'wurflKey'                => 'sonyericsson_w995_ver1', // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonW995
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // device
+        'model_name'              => 'W995',
+        'model_extra_info'        => 'Walkman phone', // wurflkey: sonyericsson_w995_ver1
+        'marketing_name'          => 'W995',
+        'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_w995_ver1
+        'pointing_method'         => '', // wurflkey: sonyericsson_w995_ver1
 
-        $this->properties = array(
-            'wurflKey'                => 'sonyericsson_w995_ver1', // not in wurfl
+        // product info
+        'can_assign_phone_number' => true,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/W995R101.xml',
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-            // kind of device
-            'device_type'             => new DeviceType\MobilePhone(), // not in wurfl
+        // display
+        'physical_screen_width'   => 40,
+        'physical_screen_height'  => 53,
+        'columns'                 => 11,
+        'rows'                    => 6,
+        'max_image_width'         => 228,
+        'max_image_height'        => 280,
+        'resolution_width'        => 240,
+        'resolution_height'       => 320,
+        'dual_orientation'        => false,
+        'colors'                  => 262144,
 
-            // device
-            'model_name'              => 'W995',
-            'manufacturer_name'       => new Company\SonyEricsson(),
-            'brand_name'              => new Company\SonyEricsson(),
-            'model_extra_info'        => 'Walkman phone', // wurflkey: sonyericsson_w995_ver1
-            'marketing_name'          => 'W995',
-            'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_w995_ver1
-            'pointing_method'         => '', // wurflkey: sonyericsson_w995_ver1
+        // sms
+        'sms_enabled'             => true,
 
-            // product info
-            'can_assign_phone_number' => true,
-            'ununiqueness_handler'    => null,
-            'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/W995R101.xml',
-            'uaprof2'                 => null,
-            'uaprof3'                 => null,
-            'unique'                  => true,
-
-            // display
-            'physical_screen_width'   => 40,
-            'physical_screen_height'  => 53,
-            'columns'                 => 11,
-            'rows'                    => 6,
-            'max_image_width'         => 228,
-            'max_image_height'        => 280,
-            'resolution_width'        => 240,
-            'resolution_height'       => 320,
-            'dual_orientation'        => false,
-            'colors'                  => 262144,
-
-            // sms
-            'sms_enabled'             => true,
-
-            // chips
-            'nfc_support'             => true,
-        );
-    }
+        // chips
+        'nfc_support'             => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -147,7 +130,7 @@ class SonyEricssonW995
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -157,7 +140,7 @@ class SonyEricssonW995
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**
@@ -167,7 +150,7 @@ class SonyEricssonW995
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\SonyEricsson();
     }
 
     /**
