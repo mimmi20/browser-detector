@@ -65,6 +65,11 @@ class GeneralMobile
     implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
+     * @var DeviceType\MobilePhone
+     */
+    private $deviceType = null;
+    
+    /**
      * the detected browser properties
      *
      * @var array
@@ -164,7 +169,11 @@ class GeneralMobile
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        if (null === $this->deviceType) {
+            $this->deviceType = new DeviceType\MobilePhone();
+        }
+        
+        return $this->deviceType;
     }
 
     /**
@@ -221,7 +230,7 @@ class GeneralMobile
     public function detectSpecialProperties()
     {
         if ($this->utils->checkIfContains(array('Android; Tablet'))) {
-            $this->setCapability('device_type', new DeviceType\Tablet());
+            $this->deviceType = new DeviceType\Tablet();
 
             $this->setCapability('physical_screen_width', 112);
             $this->setCapability('physical_screen_height', 187);
@@ -240,13 +249,13 @@ class GeneralMobile
         }
 
         if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux'))) {
-            $this->setCapability('device_type', new DeviceType\MobilePhone());
+            $this->deviceType = new DeviceType\MobilePhone();
 
             return $this;
         }
 
         if ($this->utils->checkIfContains(array('Opera Tablet'))) {
-            $this->setCapability('device_type', new DeviceType\Tablet());
+            $this->deviceType = new DeviceType\Tablet();
 
             $this->setCapability('physical_screen_width', 100);
             $this->setCapability('physical_screen_height', 200);
@@ -263,7 +272,7 @@ class GeneralMobile
         }
 
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            $this->setCapability('device_type', new DeviceType\MobilePhone());
+            $this->deviceType = new DeviceType\MobilePhone();
 
             $this->setCapability('physical_screen_width', 50);
             $this->setCapability('physical_screen_height', 84);
@@ -286,7 +295,7 @@ class GeneralMobile
         }
 
         if ($this->utils->checkIfContains(array('Opera Mobi'))) {
-            $this->setCapability('device_type', new DeviceType\MobilePhone());
+            $this->deviceType = new DeviceType\MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -307,7 +316,7 @@ class GeneralMobile
         }
 
         if ($this->utils->checkIfContains(array('Opera Mini'))) {
-            $this->setCapability('device_type', new DeviceType\MobilePhone());
+            $this->deviceType = new DeviceType\MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -328,7 +337,7 @@ class GeneralMobile
         }
 
         if ($this->utils->checkIfContains(array('Windows Phone 6.5'))) {
-            $this->setCapability('device_type', new DeviceType\MobilePhone());
+            $this->deviceType = new DeviceType\MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
