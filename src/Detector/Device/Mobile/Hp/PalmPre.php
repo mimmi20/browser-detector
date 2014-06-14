@@ -59,6 +59,16 @@ class PalmPre
     implements DeviceInterface
 {
     /**
+     * @var \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    private $brand = null;
+
+    /**
+     * @var \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    private $manufacturer = null;
+
+    /**
      * the detected browser properties
      *
      * @var array
@@ -141,7 +151,11 @@ class PalmPre
      */
     public function getManufacturer()
     {
-        return new Company\Palm();
+        if (null === $this->manufacturer) {
+            return new Company\Palm();
+        }
+
+        return $this->manufacturer;
     }
 
     /**
@@ -151,7 +165,11 @@ class PalmPre
      */
     public function getBrand()
     {
-        return new Company\Palm();
+        if (null === $this->brand) {
+            return new Company\Palm();
+        }
+
+        return $this->brand;
     }
 
     /**
@@ -183,11 +201,12 @@ class PalmPre
             $this->setCapability('resolution_height', 800);
 
             $this->setCapability('model_name', 'Pre3');
-            $this->setCapability('manufacturer_name', 'HP');
-            $this->setCapability('brand_name', 'HP');
             $this->setCapability('wurflKey', 'hp_pre3_ver1');
             $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
             $this->setCapability('colors', 262144);
+
+            $this->manufacturer = new Company\Hp();
+            $this->brand        = new Company\Hp();
         }
 
         return $this;

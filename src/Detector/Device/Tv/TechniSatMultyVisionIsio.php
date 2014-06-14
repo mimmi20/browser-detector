@@ -86,12 +86,8 @@ class TechniSatMultyVisionIsio
         $this->properties = array(
             'wurflKey'                => null, // not in wurfl
 
-            // kind of device
-            'device_type'             => new DeviceType\Tv(), // not in wurfl
-
-            // device
+           // device
             'model_name'              => 'MultyVision ISIO',
-            'manufacturer_name'       => new Company\TechniSat(),
             'brand_name'              => new Company\TechniSat(),
             'model_extra_info'        => null,
             'marketing_name'          => null,
@@ -157,7 +153,7 @@ class TechniSatMultyVisionIsio
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new DeviceType\Tv();
     }
 
     /**
@@ -167,7 +163,7 @@ class TechniSatMultyVisionIsio
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\TechniSat();
     }
 
     /**
@@ -177,7 +173,7 @@ class TechniSatMultyVisionIsio
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\TechniSat();
     }
 
     /**
