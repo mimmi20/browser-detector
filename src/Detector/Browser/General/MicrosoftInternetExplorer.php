@@ -177,7 +177,7 @@ class MicrosoftInternetExplorer
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)
-            && !$this->utils->checkIfContains('Bitte Mozilla Firefox verwenden')
+            && !$this->utils->checkIfContains(array('Bitte Mozilla Firefox verwenden', 'chromeframe'))
         ) {
             return false;
         }
