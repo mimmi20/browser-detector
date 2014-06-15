@@ -69,7 +69,7 @@ interface MatcherInterface
     /**
      * detects the operating system name (platform) from the given user agent
      *
-     * @return StdClass
+     * @return \StdClass
      */
     public function detect();
 

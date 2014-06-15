@@ -1753,7 +1753,7 @@ class Result implements \Serializable
                     $value = $value->getBrandName();
                     break;
                 case 'renderingengine_manufacturer':
-                    $value = $engine->getCapability('renderingengine_manufacturer');
+                    $value = $engine->getManufacturer();
 
                     if (!($value instanceof Company\CompanyInterface)) {
                         $value = new Company\Unknown();
@@ -1762,7 +1762,7 @@ class Result implements \Serializable
                     $value = $value->getName();
                     break;
                 case 'renderingengine_brand_name':
-                    $value = $engine->getCapability('renderingengine_manufacturer');
+                    $value = $engine->getManufacturer();
 
                     if (!($value instanceof Company\CompanyInterface)) {
                         $value = new Company\Unknown();
@@ -1770,8 +1770,12 @@ class Result implements \Serializable
 
                     $value = $value->getBrandName();
                     break;
-                case 'renderingengine_name':
                 case 'renderingengine_version':
+                    $value = $engine->detectVersion();
+                    break;
+                case 'renderingengine_name':
+                    $value = $engine->getName();
+                    break;
                 case 'preferred_markup':
                 case 'xhtml_support_level':
                 case 'css_spriting':

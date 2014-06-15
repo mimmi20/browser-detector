@@ -55,6 +55,60 @@ use BrowserDetector\Detector\OsHandler;
 interface EngineInterface
 {
     /**
+     * sets the user agent to be handled
+     *
+     * @param string $userAgent
+     *
+     * @return void
+     */
+    public function setUserAgent($userAgent);
+
+    /**
+     * Returns true if this handler can handle the given useragent
+     *
+     * @return bool
+     */
+    public function canHandle();
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight();
+
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     *
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @return string Capability value
+     * @throws \InvalidArgumentException
+     */
+    public function getCapability($capabilityName);
+
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     *
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @param mixed   $capabilityValue
+     *
+     * @return DeviceHandler
+     * @throws \InvalidArgumentException
+     */
+    public function setCapability($capabilityName, $capabilityValue = null);
+
+    /**
+     * Returns the values of all capabilities for the current device
+     *
+     * @return array All Capability values
+     */
+    public function getCapabilities();
+
+    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
@@ -67,4 +121,25 @@ interface EngineInterface
     public function detectDependProperties(
         OsHandler $os, DeviceHandler $device, BrowserHandler $browser
     );
+
+    /**
+     * gets the name of the platform
+     *
+     * @return string
+     */
+    public function getName();
+
+    /**
+     * gets the maker of the platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer();
+
+    /**
+     * detects the engine version from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion();
 }

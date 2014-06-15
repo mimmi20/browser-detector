@@ -46,6 +46,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
 
 /**
  * @category  BrowserDetector
@@ -157,11 +158,11 @@ class NetFront
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\NetFront
      */
     public function detectEngine()
     {
-        $handler = new \BrowserDetector\Detector\Engine\NetFront();
+        $handler = new NetFrontEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler;

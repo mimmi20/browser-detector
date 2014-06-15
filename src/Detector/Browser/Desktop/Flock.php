@@ -172,7 +172,7 @@ class Flock
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
@@ -187,7 +187,6 @@ class Flock
         $chain->setHandlers($engines);
         $chain->setDefaultHandler(new UnknownEngine());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

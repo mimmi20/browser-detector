@@ -162,22 +162,19 @@ class OperaTablet
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\EngineHandler
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
-        $engines = array(
-            new Presto(),
-            new Webkit(),
-            new Blink()
-        );
+        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORONLY);
 
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new Presto());
+        if ($version >= 14) {
+            $engine = new Blink();
+        } else {
+            $engine = new Presto();
+        }
 
-        $device = $chain->detect();
-        return $device->detect();
+        $engine->setUseragent($this->useragent);
+        return $engine;
     }
 }

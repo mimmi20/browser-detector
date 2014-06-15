@@ -46,6 +46,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\Gecko;
 
 /**
  * @category  BrowserDetector
@@ -165,5 +166,19 @@ class IceCat
     public function getWeight()
     {
         return 86;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Gecko
+     */
+    public function detectEngine()
+    {
+        $handler = new Gecko();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

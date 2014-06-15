@@ -195,7 +195,7 @@ class Chrome
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit|\BrowserDetector\Detector\Engine\Blink
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
@@ -208,7 +208,7 @@ class Chrome
         }
 
         $engine->setUseragent($this->useragent);
-        return $engine->detect();
+        return $engine;
     }
 
     /**

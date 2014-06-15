@@ -210,13 +210,12 @@ class OperaMini
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
         $engines = array(
             new Presto(),
-            new Webkit(),
             new Blink()
         );
 
@@ -225,7 +224,6 @@ class OperaMini
         $chain->setHandlers($engines);
         $chain->setDefaultHandler(new Presto());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

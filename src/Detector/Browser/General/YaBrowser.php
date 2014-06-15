@@ -152,19 +152,19 @@ class YaBrowser
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
         $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORMINOR);
-        
+
         if ($version >= '1.20') {
             $engine = new Blink();
         } else {
             $engine = new Webkit();
         }
-        
+
         $engine->setUseragent($this->useragent);
-        return $engine->detect();
+        return $engine;
     }
 }

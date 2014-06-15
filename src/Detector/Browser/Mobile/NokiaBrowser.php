@@ -171,8 +171,7 @@ class NokiaBrowser
         $chain->setHandlers($engines);
         $chain->setDefaultHandler(new UnknownEngine());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**

@@ -306,7 +306,7 @@ abstract class BrowserHandler
      * returns null, if the device does not have a specific Operating System
      * returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\EngineHandler
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
@@ -326,8 +326,7 @@ abstract class BrowserHandler
         $chain->setHandlers($engines);
         $chain->setDefaultHandler(new UnknownEngine());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**

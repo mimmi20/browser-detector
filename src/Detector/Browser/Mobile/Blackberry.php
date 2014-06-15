@@ -178,8 +178,7 @@ class Blackberry
         $chain->setHandlers($engines);
         $chain->setDefaultHandler(new UnknownEngine());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**
