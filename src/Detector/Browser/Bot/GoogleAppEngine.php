@@ -79,7 +79,6 @@ class GoogleAppEngine
 
             // browser
             'mobile_browser'               => 'Google App Engine',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -130,7 +129,7 @@ class GoogleAppEngine
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

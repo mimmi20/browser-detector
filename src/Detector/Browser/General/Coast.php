@@ -80,7 +80,6 @@ class Coast
 
             // browser
             'mobile_browser'               => 'Surfers Paradise Gold Coast App',
-            'mobile_browser_manufacturer'  => new Company\Opera(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Coast
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Opera();
     }
 
     /**

@@ -80,7 +80,6 @@ class Wget
 
             // browser
             'mobile_browser'               => 'wget',
-            'mobile_browser_manufacturer'  => new Company\FreeSoftwareFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Wget
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\FreeSoftwareFoundation();
     }
 
     /**

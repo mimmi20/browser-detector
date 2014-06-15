@@ -80,7 +80,6 @@ class PaperLiBot
 
             // browser
             'mobile_browser'               => 'PaperLiBot',
-            'mobile_browser_manufacturer'  => new Company\PaperLi(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class PaperLiBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\PaperLi();
     }
 
     /**

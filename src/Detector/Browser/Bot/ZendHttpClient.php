@@ -80,7 +80,6 @@ class ZendHttpClient
 
             // browser
             'mobile_browser'               => 'Zend_Http_Client',
-            'mobile_browser_manufacturer'  => new Company\Zend(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class ZendHttpClient
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Zend();
     }
 
     /**

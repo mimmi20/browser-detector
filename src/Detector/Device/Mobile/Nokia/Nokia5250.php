@@ -73,7 +73,6 @@ class Nokia5250
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/Nokia5250r100.xml',
         'uaprof2'                 => null,

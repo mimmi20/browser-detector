@@ -76,7 +76,6 @@ class HtcOneV
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_one_v_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PK76/ua-profile.xml',
         'uaprof2'                 => null,

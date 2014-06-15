@@ -76,7 +76,6 @@ class SonyEricssonE10i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/E10iR201.xml',
         'uaprof2'                 => null,

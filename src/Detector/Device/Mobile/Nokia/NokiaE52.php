@@ -73,7 +73,6 @@ class NokiaE52
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE52-1r100.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NE52-2r100.xml',

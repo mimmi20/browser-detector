@@ -73,7 +73,6 @@ class SamsungGti9105p
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9105P.xml',
         'uaprof2'                 => null,

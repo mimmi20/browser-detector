@@ -80,7 +80,6 @@ class PhantomJs
 
             // browser
             'mobile_browser'               => 'PhantomJS',
-            'mobile_browser_manufacturer'  => new Company\PhantomJs(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class PhantomJs
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\PhantomJs();
     }
 
     /**

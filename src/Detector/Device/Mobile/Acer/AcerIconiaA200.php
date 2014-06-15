@@ -73,7 +73,6 @@ class AcerIconiaA200
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A200_Profile.xml',
         'uaprof2'                 => null,

@@ -241,9 +241,6 @@ abstract class EngineHandler
         'max_data_rate'                                     => null,
         'vpn'                                               => null,
 
-        // pdf
-        'pdf_support'                                       => null,
-
         // flash_lite
         'full_flash_support'                                => null,
         'flash_lite_version'                                => null,
@@ -283,9 +280,6 @@ abstract class EngineHandler
 
         // bugs
         'emptyok'                                           => null,
-        'empty_option_value_support'                        => null,
-        'basic_authentication_support'                      => null,
-        'post_method_support'                               => null,
 
         // wta
         'nokia_voice_call'                                  => null,
@@ -566,9 +560,6 @@ abstract class EngineHandler
 
         // transcoding
         'transcoder_ua_header'                              => null,
-
-        // rss
-        'rss_support'                                       => null,
     );
 
     /**

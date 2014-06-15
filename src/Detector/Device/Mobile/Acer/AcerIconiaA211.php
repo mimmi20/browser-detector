@@ -77,7 +77,6 @@ class AcerIconiaA211
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'https://support.acer.com/UAprofile/Acer_A211_IMM76D_Profile.xml',
         'uaprof2'                 => null,
@@ -204,7 +203,7 @@ class AcerIconiaA211
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.1:

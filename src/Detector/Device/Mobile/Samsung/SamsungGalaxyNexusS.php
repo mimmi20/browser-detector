@@ -73,7 +73,6 @@ class SamsungGalaxyNexusS
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_nexus_s_ver1_suban41
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

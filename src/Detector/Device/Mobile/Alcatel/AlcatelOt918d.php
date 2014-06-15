@@ -76,7 +76,6 @@ class AlcatelOt918d
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_918D.xml',
         'uaprof2'                 => null,

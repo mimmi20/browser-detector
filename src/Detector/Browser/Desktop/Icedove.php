@@ -80,7 +80,6 @@ class Icedove
 
             // browser
             'mobile_browser'               => 'Icedove',
-            'mobile_browser_manufacturer'  => new Company\Debian(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -156,7 +155,7 @@ class Icedove
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Debian();
     }
 
     /**

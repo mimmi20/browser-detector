@@ -80,7 +80,6 @@ class NetFront
 
             // browser
             'mobile_browser'               => 'NetFront',
-            'mobile_browser_manufacturer'  => new Company\Access(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -140,7 +139,7 @@ class NetFront
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Access();
     }
 
     /**

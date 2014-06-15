@@ -80,7 +80,6 @@ class ApacheHttpClient
 
             // browser
             'mobile_browser'               => 'Apache-HttpClient',
-            'mobile_browser_manufacturer'  => new Company\Apache(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class ApacheHttpClient
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apache();
     }
 
     /**

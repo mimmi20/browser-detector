@@ -73,7 +73,6 @@ class MotorolaXt530
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // mot_xt530_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

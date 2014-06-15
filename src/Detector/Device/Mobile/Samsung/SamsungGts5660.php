@@ -77,7 +77,6 @@ class SamsungGts5660
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5660.xml',
         'uaprof2'                 => null,

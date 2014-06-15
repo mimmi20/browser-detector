@@ -76,7 +76,6 @@ class AcerIconiaA510
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A510_IML74K_Profile.xml',
         'uaprof2'                 => null,

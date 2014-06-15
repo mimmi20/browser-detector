@@ -81,7 +81,6 @@ class Sharp
 
             // browser
             'mobile_browser'               => 'Sharp',
-            'mobile_browser_manufacturer'  => new Company\Sharp(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +127,7 @@ class Sharp
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sharp();
     }
 
     /**

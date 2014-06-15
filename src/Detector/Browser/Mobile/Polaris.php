@@ -80,7 +80,6 @@ class Polaris
 
             // browser
             'mobile_browser'               => 'Polaris',
-            'mobile_browser_manufacturer'  => new Company\Infraware(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class Polaris
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Infraware();
     }
 
     /**

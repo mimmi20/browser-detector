@@ -80,7 +80,6 @@ class Naver
 
             // browser
             'mobile_browser'               => 'NaverBot',
-            'mobile_browser_manufacturer'  => new Company\NhnCorporation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Naver
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\NhnCorporation();
     }
 
     /**

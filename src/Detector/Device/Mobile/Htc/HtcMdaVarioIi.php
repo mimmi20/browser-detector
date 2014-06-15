@@ -73,7 +73,6 @@ class HtcMdaVarioIi
         'pointing_method'         => 'stylus',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/tmo/mdavario-2.1.xml',
         'uaprof2'                 => null,

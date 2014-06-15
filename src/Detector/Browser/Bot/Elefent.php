@@ -80,7 +80,6 @@ class Elefent
 
             // browser
             'mobile_browser'               => 'Elefent',
-            'mobile_browser_manufacturer'  => new Company\Elefent(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Elefent
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Elefent();
     }
 
     /**

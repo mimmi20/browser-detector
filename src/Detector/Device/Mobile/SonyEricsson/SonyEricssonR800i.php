@@ -76,7 +76,6 @@ class SonyEricssonR800i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: sonyericsson_r800i_ver1_suban233
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/R800iR401.xml',
         'uaprof2'                 => null,

@@ -75,7 +75,6 @@ class MicrosoftOutlook extends MicrosoftOffice
 
             // browser
             'mobile_browser'               => 'Outlook',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -155,7 +154,7 @@ class MicrosoftOutlook extends MicrosoftOffice
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

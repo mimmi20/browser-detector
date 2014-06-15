@@ -80,7 +80,6 @@ class Bot360
 
             // browser
             'mobile_browser'               => '360Spider',
-            'mobile_browser_manufacturer'  => null, // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

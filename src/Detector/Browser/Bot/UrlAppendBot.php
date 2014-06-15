@@ -80,7 +80,6 @@ class UrlAppendBot
 
             // browser
             'mobile_browser'               => 'URLAppendBot',
-            'mobile_browser_manufacturer'  => new Company\ProfoundNetworks(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class UrlAppendBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\ProfoundNetworks();
     }
 
     /**

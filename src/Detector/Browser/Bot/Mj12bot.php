@@ -80,7 +80,6 @@ class Mj12bot
 
             // browser
             'mobile_browser'               => 'MJ12bot',
-            'mobile_browser_manufacturer'  => new Company\Majestic12(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class Mj12bot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Majestic12();
     }
 
     /**

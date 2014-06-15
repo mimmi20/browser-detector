@@ -73,7 +73,6 @@ class SamsungGts5560
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5560.xml',
         'uaprof2'                 => null,

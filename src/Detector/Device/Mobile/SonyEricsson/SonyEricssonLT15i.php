@@ -77,7 +77,6 @@ class SonyEricssonLT15i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/LT15iR401.xml',
         'uaprof2'                 => null,
@@ -220,7 +219,7 @@ class SonyEricssonLT15i
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.3:

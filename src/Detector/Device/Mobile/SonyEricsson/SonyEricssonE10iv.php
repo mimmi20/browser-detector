@@ -73,7 +73,6 @@ class SonyEricssonE10iv
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

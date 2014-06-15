@@ -73,7 +73,6 @@ class BlackBerry9360
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9360_edge/7.1.0.rdf',
         'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9360_umts/7.1.0.rdf',

@@ -73,7 +73,6 @@ class NokiaE51
         'pointing_method'         => '', // wurflkey: nokia_e51_ver1_sub13003456
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

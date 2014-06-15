@@ -73,7 +73,6 @@ class HuaweiU8350
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.huawei.com/uaprof/HuaweiU8350v100WCDMA.xml',
         'uaprof2'                 => null,

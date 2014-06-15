@@ -77,7 +77,6 @@ class SamsungGtn7000
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_n7000_ver1_suban40
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-N7000.xml',
         'uaprof2'                 => null,
@@ -193,7 +192,7 @@ class SamsungGtn7000
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

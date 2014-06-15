@@ -80,7 +80,6 @@ class PearHttpRequest2
 
             // browser
             'mobile_browser'               => 'PEAR HTTP_Request2',
-            'mobile_browser_manufacturer'  => new Company\PhpGroup(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class PearHttpRequest2
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\PhpGroup();
     }
 
     /**

@@ -73,7 +73,6 @@ class AlcatelOt991
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_991.xml',
         'uaprof2'                 => null,

@@ -80,7 +80,6 @@ class Origin
 
             // browser
             'mobile_browser'               => 'Origin',
-            'mobile_browser_manufacturer'  => new Company\ElectronicArts(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Origin
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\ElectronicArts();
     }
 
     /**

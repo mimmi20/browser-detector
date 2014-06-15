@@ -73,7 +73,6 @@ class BlackBerry8800
         'pointing_method'         => 'clickwheel', // wurflkey: blackberry8800_ver1_sub45055
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

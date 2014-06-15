@@ -76,7 +76,6 @@ class HtcS510eDesireS
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_s510e_ver1_subdesires
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PG88/ua-profile.xml',
         'uaprof2'                 => null,

@@ -76,7 +76,6 @@ class SamsungGti8700Omnia7
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_omnia7_ver1_subos75
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i8700.xml',
         'uaprof2'                 => null,

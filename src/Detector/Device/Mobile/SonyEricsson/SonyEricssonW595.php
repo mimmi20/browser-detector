@@ -73,7 +73,6 @@ class SonyEricssonW595
         'pointing_method'         => 'touchscreen', // wurflkey: sonyericsson_w595_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

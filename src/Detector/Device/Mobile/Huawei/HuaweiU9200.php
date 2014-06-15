@@ -76,7 +76,6 @@ class HuaweiU9200
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: huawei_u9200_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.huawei.com/uaprof/HUAWEI_U9200_UAProfile.xml',
         'uaprof2'                 => null,

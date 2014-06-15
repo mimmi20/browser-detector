@@ -77,7 +77,6 @@ class SamsungGti9195
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9195_ver1_suban40rom
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9195.xml',
         'uaprof2'                 => null,
@@ -198,7 +197,7 @@ class SamsungGti9195
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.3:

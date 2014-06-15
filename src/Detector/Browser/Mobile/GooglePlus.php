@@ -78,7 +78,6 @@ class GooglePlus
 
             // browser
             'mobile_browser'               => 'GooglePlus App',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -129,7 +128,7 @@ class GooglePlus
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

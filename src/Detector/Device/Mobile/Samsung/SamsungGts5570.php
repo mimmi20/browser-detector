@@ -77,7 +77,6 @@ class SamsungGts5570
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5570.xml',
         'uaprof2'                 => null,
@@ -197,7 +196,7 @@ class SamsungGts5570
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.2:

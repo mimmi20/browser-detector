@@ -80,7 +80,6 @@ class BluecoatDrtr
 
             // browser
             'mobile_browser'               => 'Dynamic Realtime Rating',
-            'mobile_browser_manufacturer'  => new Company\Bluecoat(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class BluecoatDrtr
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Bluecoat();
     }
 
     /**

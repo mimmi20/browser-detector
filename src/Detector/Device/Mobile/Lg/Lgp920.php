@@ -76,7 +76,6 @@ class Lgp920
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: lg_p920_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/P920-M3-D2.xml',
         'uaprof2'                 => 'http://gsm.lge.com/html/gsm/P920-M6-D2.xml',

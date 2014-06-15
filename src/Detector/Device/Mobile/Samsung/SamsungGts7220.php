@@ -73,7 +73,6 @@ class SamsungGts7220
         'pointing_method'         => '', // wurflkey: samsung_s7220_ver1 // wurflkey: samsung_s7220_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

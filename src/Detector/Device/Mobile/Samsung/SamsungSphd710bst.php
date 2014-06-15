@@ -77,7 +77,6 @@ class SamsungSphd710bst
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://device.sprintpcs.com/Samsung/SPH-D710BST/EG30.rdf',
         'uaprof2'                 => 'http://device.sprintpcs.com/Samsung/SPH-D710BSTBST/FG20.rdf',
@@ -193,7 +192,7 @@ class SamsungSphd710bst
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

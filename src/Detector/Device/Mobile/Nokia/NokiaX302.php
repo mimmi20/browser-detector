@@ -73,7 +73,6 @@ class NokiaX302
         'pointing_method'         => 'touchscreen', // wurflkey: nokia_x3_02_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NX3-02r100.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NX3-02.5r100.xml',

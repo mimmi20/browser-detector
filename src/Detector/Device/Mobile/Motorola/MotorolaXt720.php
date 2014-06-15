@@ -73,7 +73,6 @@ class MotorolaXt720
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/motoa853/Profile/motoa853.',
         'uaprof2'                 => null,

@@ -73,7 +73,6 @@ class MotorolaXt615
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/xt615/Profile/xt615.rdf',
         'uaprof2'                 => null,

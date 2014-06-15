@@ -73,7 +73,6 @@ class Nokia6303iclassic
         'pointing_method'         => null,
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/N6303iclassicr100.xml',
         'uaprof2'                 => null,

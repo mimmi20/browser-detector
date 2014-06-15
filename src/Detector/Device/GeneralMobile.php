@@ -85,7 +85,6 @@ class GeneralMobile
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,
@@ -240,7 +239,6 @@ class GeneralMobile
             $this->setCapability('resolution_width', 800);
             $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', true);
-            $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('sms_enabled', true);
             $this->setCapability('nfc_support', true);
 
@@ -265,7 +263,6 @@ class GeneralMobile
             $this->setCapability('resolution_width', 640); // 1280 bei Ver 11, Android 3.2
             $this->setCapability('resolution_height', 480); // 768 bei Ver 11, Android 3.2
             $this->setCapability('dual_orientation', true);
-            $this->setCapability('can_assign_phone_number', true);
 
             return $this;
         }
@@ -282,7 +279,6 @@ class GeneralMobile
             $this->setCapability('resolution_width', 480);
             $this->setCapability('resolution_height', 800);
             $this->setCapability('dual_orientation', true);
-            $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('pointing_method', 'touchscreen');
             $this->setCapability('sms_enabled', true);
@@ -305,7 +301,6 @@ class GeneralMobile
             $this->setCapability('resolution_width', 320);
             $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', true);
-            $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('pointing_method', 'touchscreen');
 
@@ -326,7 +321,6 @@ class GeneralMobile
             $this->setCapability('resolution_width', 320);
             $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', true);
-            $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('pointing_method', 'touchscreen');
 
@@ -347,7 +341,6 @@ class GeneralMobile
             $this->setCapability('resolution_width', 320);
             $this->setCapability('resolution_height', 480);
             $this->setCapability('dual_orientation', false);
-            $this->setCapability('can_assign_phone_number', true);
             $this->setCapability('has_qwerty_keyboard', false);
             $this->setCapability('pointing_method', 'stylus');
             $this->setCapability('colors', 4096);
@@ -379,7 +372,7 @@ class GeneralMobile
         $engine->setCapability('wbmp', false);
         $engine->setCapability('tiff', false);
 
-        $brwoserName = $browser->getCapability('mobile_browser');
+        $brwoserName = $browser->getName();
 
         switch ($brwoserName) {
         case 'Firefox':
@@ -527,11 +520,9 @@ class GeneralMobile
         if ($this->getDeviceType()->isTablet()) {
             $this->setCapability('sms_enabled', false);
             $this->setCapability('nfc_support', false);
-            $this->setCapability('can_assign_phone_number', false);
         } else {
             $this->setCapability('sms_enabled', true);
             $this->setCapability('nfc_support', true);
-            $this->setCapability('can_assign_phone_number', true);
         }
 
         return $this;

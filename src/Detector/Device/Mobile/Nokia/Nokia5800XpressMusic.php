@@ -73,7 +73,6 @@ class Nokia5800XpressMusic
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/Nokia5800d-1r100-3G.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/N5800XpressMusicr100-2G.xml',

@@ -76,7 +76,6 @@ class SonyEricssonMT15a
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/MT15aR401.xml',
         'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/MT15aR411.xml',

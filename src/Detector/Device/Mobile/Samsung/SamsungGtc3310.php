@@ -76,7 +76,6 @@ class SamsungGtc3310
         'pointing_method'         => '', // wurflkey: samsung_gt_c3310_ver1 // wurflkey: samsung_gt_c3310_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-C3310UAProf.xml',
         'uaprof2'                 => null,

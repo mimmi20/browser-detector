@@ -80,7 +80,6 @@ class Heritrix
 
             // browser
             'mobile_browser'               => 'Heritrix',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

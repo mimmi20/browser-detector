@@ -77,7 +77,6 @@ class HtcA9292Apa9292kt
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://device.sprintpcs.com/HTC/APA9292KT/1226511.rdf',
         'uaprof2'                 => null,
@@ -192,7 +191,7 @@ class HtcA9292Apa9292kt
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.3:

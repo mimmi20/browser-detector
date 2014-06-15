@@ -73,7 +73,6 @@ class SamsungGts5670
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_s5670_ver1_suban23
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5670.xml',
         'uaprof2'                 => null,

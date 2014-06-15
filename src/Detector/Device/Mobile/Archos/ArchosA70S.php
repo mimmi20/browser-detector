@@ -73,7 +73,6 @@ class ArchosA70S
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // archos_a70s_ver1_sub02
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

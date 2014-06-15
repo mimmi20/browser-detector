@@ -80,7 +80,6 @@ class WindowsRssPlatform
 
             // browser
             'mobile_browser'               => 'Windows-RSS-Platform',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class WindowsRssPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

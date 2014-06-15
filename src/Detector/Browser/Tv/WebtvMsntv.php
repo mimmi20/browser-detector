@@ -79,7 +79,6 @@ class WebtvMsntv
 
             // browser
             'mobile_browser'               => 'WebTV/MSNTV',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

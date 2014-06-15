@@ -80,7 +80,6 @@ class GoogleWebPreview
 
             // browser
             'mobile_browser'               => 'Google Web Preview',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class GoogleWebPreview
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

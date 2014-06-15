@@ -76,7 +76,6 @@ class SonyEricssonST25i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST25iR601.xml',
         'uaprof2'                 => null,

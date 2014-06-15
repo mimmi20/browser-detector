@@ -77,7 +77,6 @@ class SamsungGtp3100
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P3100.xml',
         'uaprof2'                 => null,

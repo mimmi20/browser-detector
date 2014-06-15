@@ -76,7 +76,6 @@ class SonyEricssonX10i
         'pointing_method'               => 'touchscreen',
 
         // product info
-        'can_assign_phone_number'       => true, // wurflkey: sonyericsson_x10i_ver1_suban23
         'ununiqueness_handler'          => null,
         'uaprof'                        => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
         'uaprof2'                       => null,

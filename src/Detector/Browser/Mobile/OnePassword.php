@@ -80,7 +80,6 @@ class OnePassword
 
             // browser
             'mobile_browser'               => '1Password',
-            'mobile_browser_manufacturer'  => new Company\Apple(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class OnePassword
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apple();
     }
 
     /**

@@ -77,7 +77,6 @@ class HuaweiU8860
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8860WCDMA-NORMAL.xml',
         'uaprof2'                 => null,
@@ -193,7 +192,7 @@ class HuaweiU8860
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.3:

@@ -73,7 +73,6 @@ class SamsungGtp7310
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P7310.xml',
         'uaprof2'                 => null,

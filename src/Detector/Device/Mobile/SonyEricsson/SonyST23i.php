@@ -76,7 +76,6 @@ class SonyST23i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.sonymobile.com/ST23iR402.xml',
         'uaprof2'                 => null,

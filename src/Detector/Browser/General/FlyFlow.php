@@ -80,7 +80,6 @@ class FlyFlow
 
             // browser
             'mobile_browser'               => 'FlyFlow',
-            'mobile_browser_manufacturer'  => new Company\Baidu(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class FlyFlow
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Baidu();
     }
 
     /**

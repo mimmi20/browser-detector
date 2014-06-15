@@ -1628,7 +1628,7 @@ class Result implements \Serializable
                     $value = $device->getCapability($property);
                     break;
                 case 'mobile_browser_manufacturer':
-                    $value = $browser->getCapability('mobile_browser_manufacturer');
+                    $value = $browser->getManufacturer();
 
                     if (!($value instanceof Company\CompanyInterface)) {
                         $value = new Company\Unknown();
@@ -1637,7 +1637,7 @@ class Result implements \Serializable
                     $value = $value->getName();
                     break;
                 case 'mobile_browser_brand_name':
-                    $value = $browser->getCapability('mobile_browser_manufacturer');
+                    $value = $browser->getManufacturer();
 
                     if (!($value instanceof Company\CompanyInterface)) {
                         $value = new Company\Unknown();
@@ -1683,7 +1683,7 @@ class Result implements \Serializable
                     $value = $value->isBanned();
                     break;
                 case 'browser_type':
-                    $value = $browser->getCapability('browser_type');
+                    $value = $browser->getBrowserType();
 
                     if (!($value instanceof Type\Browser\TypeInterface)) {
                         $value = new Type\Browser\Unknown();
@@ -1693,7 +1693,7 @@ class Result implements \Serializable
                     break;
                 case 'mobile_browser':
                 case 'controlcap_advertised_browser':
-                    $value = $browser->getCapability('mobile_browser');
+                    $value = $browser->getName();
                     break;
                 case 'mobile_browser_version':
                 case 'controlcap_advertised_browser_version':

@@ -73,7 +73,6 @@ class SamsungGts8000
         'pointing_method'         => 'touchscreen', //wurflkey: samsung_s8000_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S8000.xml',
         'uaprof2'                 => null,

@@ -73,7 +73,6 @@ class Nokia300
         'pointing_method'         => 'touchscreen', // wurflkey: nokia_300_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/300r100.xml',
         'uaprof2'                 => null,

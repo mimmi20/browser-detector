@@ -80,7 +80,6 @@ class Curl
 
             // browser
             'mobile_browser'               => 'cURL',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

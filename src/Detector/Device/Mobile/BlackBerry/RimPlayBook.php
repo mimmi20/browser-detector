@@ -76,7 +76,6 @@ class RimPlayBook
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false, // wurflkey: rim_playbook_android_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

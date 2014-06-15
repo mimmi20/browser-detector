@@ -76,7 +76,6 @@ class NokiaLumia800
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: nokia_lumia_800_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/Nokia800r100.xml',
         'uaprof2'                 => null,

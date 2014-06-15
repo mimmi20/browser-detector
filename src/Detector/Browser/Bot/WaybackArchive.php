@@ -80,7 +80,6 @@ class WaybackArchive
 
             // browser
             'mobile_browser'               => 'Wayback Archive Bot',
-            'mobile_browser_manufacturer'  => new Company\WaybackArchiveOrg(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class WaybackArchive
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\WaybackArchiveOrg();
     }
 
     /**

@@ -76,7 +76,6 @@ class HuaweiVodafone858
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiV858WCDMA-Vod',
         'uaprof2'                 => 'http://wap1.huawei.com/uaprof/HuaweiV858GPRS-Vod',

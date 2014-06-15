@@ -81,7 +81,6 @@ class Siemens
 
             // browser
             'mobile_browser'               => 'Siemens',
-            'mobile_browser_manufacturer'  => new Company\Siemens(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +127,7 @@ class Siemens
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Siemens();
     }
 
     /**

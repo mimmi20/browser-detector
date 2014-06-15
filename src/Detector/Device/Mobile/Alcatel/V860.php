@@ -76,7 +76,6 @@ class V860
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www-ccpp.tcl-ta.com/files/Vodafone_Smart_II_3G.xml',
         'uaprof2'                 => 'http://www-ccpp.tcl-ta.com/files/Vodafone_Smart_II.xml',

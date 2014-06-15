@@ -81,7 +81,6 @@ class Panasonic
 
             // browser
             'mobile_browser'               => 'Panasonic',
-            'mobile_browser_manufacturer'  => new Company\Panasonic(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +127,7 @@ class Panasonic
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Panasonic();
     }
 
     /**

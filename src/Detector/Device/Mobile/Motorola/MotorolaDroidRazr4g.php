@@ -73,7 +73,6 @@ class MotorolaDroidRazr4g
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.vtext.com/mot/xt912/xt912.xml',
         'uaprof2'                 => null,

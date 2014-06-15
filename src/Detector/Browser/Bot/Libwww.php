@@ -80,7 +80,6 @@ class Libwww
 
             // browser
             'mobile_browser'               => 'libwww',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

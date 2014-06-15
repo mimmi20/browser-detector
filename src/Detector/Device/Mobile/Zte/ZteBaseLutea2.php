@@ -76,7 +76,6 @@ class ZteBaseLutea2
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.zte.com.cn/mobile/uaprof/Skate_Aqua.xml',
         'uaprof2'                 => null,

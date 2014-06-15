@@ -76,7 +76,6 @@ class SamsungGts5360
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml',
         'uaprof2'                 => null,

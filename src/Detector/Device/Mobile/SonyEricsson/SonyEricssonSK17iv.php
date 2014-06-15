@@ -76,7 +76,6 @@ class SonyEricssonSK17iv
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/SK17iR402.xml',
         'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/SK17iR411.xml',

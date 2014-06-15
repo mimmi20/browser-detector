@@ -82,7 +82,6 @@ class OperaMobile
 
             // browser
             'mobile_browser'               => 'Opera Mobile',
-            'mobile_browser_manufacturer'  => new Company\Opera(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -142,7 +141,7 @@ class OperaMobile
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Opera();
     }
 
     /**

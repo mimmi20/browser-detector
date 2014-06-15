@@ -76,7 +76,6 @@ class HtcA810eChaCha
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => 'http://www.htcmms.com.tw/Android/Common/PH06/ua-profile.xml',

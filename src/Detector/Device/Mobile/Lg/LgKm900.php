@@ -73,7 +73,6 @@ class LgKm900
         'pointing_method'         => 'touchscreen', // wurflkey: lg_km900_ver1_subv10b
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

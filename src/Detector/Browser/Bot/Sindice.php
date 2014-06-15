@@ -80,7 +80,6 @@ class Sindice
 
             // browser
             'mobile_browser'               => 'Sindice Fetcher',
-            'mobile_browser_manufacturer'  => new Company\Sindice(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Sindice
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sindice();
     }
 
     /**

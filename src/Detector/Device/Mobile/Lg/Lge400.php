@@ -76,7 +76,6 @@ class Lge400
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/E400-M6-D2.xml',
         'uaprof2'                 => null,

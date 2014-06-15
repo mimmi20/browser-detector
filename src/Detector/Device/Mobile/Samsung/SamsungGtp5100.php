@@ -77,7 +77,6 @@ class SamsungGtp5100
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P5100.xml',
         'uaprof2'                 => null,
@@ -197,7 +196,7 @@ class SamsungGtp5100
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         }
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.1:

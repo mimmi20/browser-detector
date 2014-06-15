@@ -73,7 +73,6 @@ class Lgt385
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/LG-T385.xml',
         'uaprof2'                 => 'http://gsm.lge.com/html/gsm/LG-T385b-M3-D1.xml',

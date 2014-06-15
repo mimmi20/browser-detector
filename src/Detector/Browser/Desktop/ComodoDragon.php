@@ -81,7 +81,6 @@ class ComodoDragon
 
             // browser
             'mobile_browser'               => 'Dragon',
-            'mobile_browser_manufacturer'  => new Company\Comodo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -163,7 +162,7 @@ class ComodoDragon
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Comodo();
     }
 
     /**

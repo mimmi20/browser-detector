@@ -76,7 +76,6 @@ class SonyEricssonU1i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/U1iR000.xml',
         // wurflkey: sonyericsson_u1i_ver1

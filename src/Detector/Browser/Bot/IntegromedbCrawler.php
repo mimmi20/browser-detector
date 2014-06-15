@@ -80,7 +80,6 @@ class IntegromedbCrawler
 
             // browser
             'mobile_browser'               => 'IntegromeDB Crawler',
-            'mobile_browser_manufacturer'  => new Company\BiologicalNetworks(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class IntegromedbCrawler
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\BiologicalNetworks();
     }
 
     /**

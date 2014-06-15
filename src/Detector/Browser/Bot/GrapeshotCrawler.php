@@ -80,7 +80,6 @@ class GrapeshotCrawler
 
             // browser
             'mobile_browser'               => 'GrapeshotCrawler',
-            'mobile_browser_manufacturer'  => new Company\GrapeshotLimited(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class GrapeshotCrawler
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\GrapeshotLimited();
     }
 
     /**

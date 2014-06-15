@@ -83,7 +83,6 @@ class Prism
 
             // browser
             'mobile_browser'               => 'Prism',
-            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -173,7 +172,7 @@ class Prism
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MozillaFoundation();
     }
 
     /**

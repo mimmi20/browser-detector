@@ -73,7 +73,6 @@ class NokiaX700
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NX7-00r100-2G.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NX7-00r100-3G.xml',

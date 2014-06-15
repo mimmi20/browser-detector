@@ -80,7 +80,6 @@ class AdbeatBot
 
             // browser
             'mobile_browser'               => 'adbeat',
-            'mobile_browser_manufacturer'  => new Company\Adbeat(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class AdbeatBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Adbeat();
     }
 
     /**

@@ -75,14 +75,11 @@ class InfohelferCrawler
         parent::__construct();
 
         $this->properties = array(
-            'wurflKey'                     => null, // not in wurfl
-
             // kind of device
             'browser_type'                 => new BrowserType\Bot(), // not in wurfl
 
             // browser
             'mobile_browser'               => 'Infohelfer Crawler',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

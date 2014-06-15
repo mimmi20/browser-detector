@@ -76,7 +76,6 @@ class SonyEricssonU5i
         'pointing_method'         => null, // wurflkey: sonyericsson_u5i_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.sonyericsson.com/downloads/U5iR000.xml',
         // wurflkey: sonyericsson_u5i_ver1

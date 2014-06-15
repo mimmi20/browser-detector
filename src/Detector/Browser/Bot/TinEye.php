@@ -89,7 +89,6 @@ class TinEye
 
             // product info
             'can_skip_aligned_link_row'   => false,
-            'can_assign_phone_number'     => false,
         );
     }
 

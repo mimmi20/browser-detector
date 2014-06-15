@@ -79,7 +79,6 @@ class HtcHd2
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml',
         'uaprof2'                 => 'http://www.htcmms.com.tw/tmo/HTC_HD2-1.0.xml',

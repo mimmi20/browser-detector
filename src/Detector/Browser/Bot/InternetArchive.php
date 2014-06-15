@@ -80,7 +80,6 @@ class InternetArchive
 
             // browser
             'mobile_browser'               => 'Internet Archive Bot',
-            'mobile_browser_manufacturer'  => new Company\ArchiveOrg(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class InternetArchive
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\ArchiveOrg();
     }
 
     /**

@@ -77,7 +77,6 @@ class AcerIconiaA500
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A500_IML74K_Profile.xml',
         'uaprof2'                 => null,
@@ -204,7 +203,7 @@ class AcerIconiaA500
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 3.2:

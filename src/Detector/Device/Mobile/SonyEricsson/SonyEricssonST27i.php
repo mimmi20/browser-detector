@@ -76,7 +76,6 @@ class SonyEricssonST27i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: sonyericsson_st27_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST27iR601.xml',
         'uaprof2'                 => null,

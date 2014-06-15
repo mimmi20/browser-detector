@@ -80,7 +80,6 @@ class Php
 
             // browser
             'mobile_browser'               => 'PHP',
-            'mobile_browser_manufacturer'  => new Company\PhpGroup(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Php
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\PhpGroup();
     }
 
     /**

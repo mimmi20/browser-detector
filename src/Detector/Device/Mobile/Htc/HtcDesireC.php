@@ -76,7 +76,6 @@ class HtcDesireC
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_desire_c_ver1_subuadesire
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/L01/ua-profile.xml',
         'uaprof2'                 => null,

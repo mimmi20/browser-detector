@@ -76,7 +76,6 @@ class SonyEricssonST15i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST15iR401.xml',
         'uaprof2'                 => null,

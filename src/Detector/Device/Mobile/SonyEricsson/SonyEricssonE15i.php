@@ -76,7 +76,6 @@ class SonyEricssonE15i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: sonyericsson_e15i_ver1_sub21_01
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

@@ -76,7 +76,6 @@ class HtcX515m
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PG863/ua-profile.xml',
         'uaprof2'                 => null,

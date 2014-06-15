@@ -73,7 +73,6 @@ class SamsungSchI5354G
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.vtext.com/sam/SCH-I535/SCH-I535.xml',
         'uaprof2'                 => null,

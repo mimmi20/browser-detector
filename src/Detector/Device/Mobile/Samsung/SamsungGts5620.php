@@ -73,7 +73,6 @@ class SamsungGts5620
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5620_2G.rdf',
         'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5620_3G.rdf',

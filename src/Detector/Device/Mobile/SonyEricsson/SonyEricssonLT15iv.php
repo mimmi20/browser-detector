@@ -76,7 +76,6 @@ class SonyEricssonLT15iv
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: sonyericsson_lt15i_ver1_subua232
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/LT15iR402.xml',
         'uaprof2'                 => null,

@@ -73,7 +73,6 @@ class BlackBerry9550
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9550_unknown/',
         'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9550_umts/5.0',

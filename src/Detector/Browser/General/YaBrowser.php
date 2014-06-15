@@ -81,7 +81,6 @@ class YaBrowser
 
             // browser
             'mobile_browser'               => 'Yandex Browser',
-            'mobile_browser_manufacturer'  => new Company\Yandex(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -132,7 +131,7 @@ class YaBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Yandex();
     }
 
     /**

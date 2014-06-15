@@ -73,7 +73,6 @@ class MotorolaXt389
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/xt389/Profile/xt389.rdf',
         'uaprof2'                 => null,

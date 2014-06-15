@@ -80,7 +80,6 @@ class Palemoon
 
             // browser
             'mobile_browser'               => 'PaleMoon',
-            'mobile_browser_manufacturer'  => new Company\MoonchildProductions(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -160,7 +159,7 @@ class Palemoon
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MoonchildProductions();
     }
 
     /**

@@ -80,7 +80,6 @@ class Dolfin
 
             // browser
             'mobile_browser'               => 'Dolfin',
-            'mobile_browser_manufacturer'  => new Company\MopoTab(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -148,7 +147,7 @@ class Dolfin
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MopoTab();
     }
 
     /**

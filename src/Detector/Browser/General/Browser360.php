@@ -80,7 +80,6 @@ class Browser360
 
             // browser
             'mobile_browser'               => '360 Browser',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

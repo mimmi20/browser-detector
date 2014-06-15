@@ -84,7 +84,6 @@ class UnisterTesting
 
             // browser
             'mobile_browser'               => 'UnisterTesting',
-            'mobile_browser_manufacturer'  => new Company\Unister(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class UnisterTesting
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Unister();
     }
 
     /**

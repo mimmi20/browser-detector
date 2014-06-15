@@ -73,7 +73,6 @@ class HuaweiM635
         'pointing_method'         => '', // wurflkey: huawei_m635_ver1 // wurflkey: huawei_m635_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

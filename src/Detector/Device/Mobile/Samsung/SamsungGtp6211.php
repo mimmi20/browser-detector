@@ -73,7 +73,6 @@ class SamsungGtp6211
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P6210.xml',
         'uaprof2'                 => null,

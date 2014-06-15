@@ -85,7 +85,6 @@ class NokiaBrowser
 
             // browser
             'mobile_browser'               => 'Nokia Browser',
-            'mobile_browser_manufacturer'  => new Company\Nokia(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -140,7 +139,7 @@ class NokiaBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nokia();
     }
 
     /**

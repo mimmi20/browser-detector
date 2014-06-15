@@ -80,7 +80,6 @@ class MicrosoftOfficeProtocolDiscovery
 
             // browser
             'mobile_browser'               => 'MS OPD',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class MicrosoftOfficeProtocolDiscovery
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

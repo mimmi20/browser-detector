@@ -80,7 +80,6 @@ class NetNewsWire
 
             // browser
             'mobile_browser'               => 'NetNewsWire',
-            'mobile_browser_manufacturer'  => new Company\BlackPixel(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -162,7 +161,7 @@ class NetNewsWire
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\BlackPixel();
     }
 
     /**

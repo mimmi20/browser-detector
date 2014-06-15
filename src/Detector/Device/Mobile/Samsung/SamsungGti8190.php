@@ -77,7 +77,6 @@ class SamsungGti8190
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i8190_ver1_suban41
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I8190.xml',
         'uaprof2'                 => null,
@@ -196,7 +195,7 @@ class SamsungGti8190
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.1:

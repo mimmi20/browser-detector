@@ -77,7 +77,6 @@ class HtcA310e
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_a310e_ver1_subuauscore
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PJ03/ua-profile.xml',
         'uaprof2'                 => null,
@@ -201,7 +200,7 @@ class HtcA310e
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.3:

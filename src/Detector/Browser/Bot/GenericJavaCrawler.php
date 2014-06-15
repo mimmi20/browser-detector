@@ -80,7 +80,6 @@ class GenericJavaCrawler
 
             // browser
             'mobile_browser'               => 'Generic Java Crawler',
-            'mobile_browser_manufacturer'  => new Company\Oracle(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class GenericJavaCrawler
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Oracle();
     }
 
     /**

@@ -73,7 +73,6 @@ class BlackBerry8700
         'pointing_method'         => 'clickwheel', // wurflkey: blackberry8700_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

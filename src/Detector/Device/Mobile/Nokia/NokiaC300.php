@@ -73,7 +73,6 @@ class NokiaC300
         'pointing_method'         => 'joystick',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NokiaC3-00r100.xml',
         'uaprof2'                 => null,

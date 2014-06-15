@@ -74,7 +74,6 @@ class HpP160U
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://downloads.palm.com/profiles/P160U_R1.xml',
         'uaprof2'                 => null,

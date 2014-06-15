@@ -80,7 +80,6 @@ class BlekkoBot
 
             // browser
             'mobile_browser'               => 'BlekkoBot Scoutjet',
-            'mobile_browser_manufacturer'  => new Company\BlekkoCom(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class BlekkoBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\BlekkoCom();
     }
 
     /**

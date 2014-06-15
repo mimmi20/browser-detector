@@ -80,7 +80,6 @@ class CoreClassHttpClientCached
 
             // browser
             'mobile_browser'               => 'Core_Class_HttpClient_Cached',
-            'mobile_browser_manufacturer'  => new Company\Unister(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class CoreClassHttpClientCached
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Unister();
     }
 
     /**

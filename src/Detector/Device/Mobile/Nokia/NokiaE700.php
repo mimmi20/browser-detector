@@ -73,7 +73,6 @@ class NokiaE700
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: nokia_e7_00_ver1_subua53
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE7-00r100.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r300.xml',

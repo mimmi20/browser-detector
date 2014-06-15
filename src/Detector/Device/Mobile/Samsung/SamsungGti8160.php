@@ -76,7 +76,6 @@ class SamsungGti8160
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i8160_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I8160.xml',
         'uaprof2'                 => null,

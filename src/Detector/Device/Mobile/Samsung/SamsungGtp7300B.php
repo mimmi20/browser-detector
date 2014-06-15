@@ -73,7 +73,6 @@ class SamsungGtp7300B
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P7300B.xml',
         'uaprof2'                 => null,

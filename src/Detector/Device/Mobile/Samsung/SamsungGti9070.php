@@ -76,7 +76,6 @@ class SamsungGti9070
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9070_ver1_subuanosamsung
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9070.xml',
         'uaprof2'                 => null,

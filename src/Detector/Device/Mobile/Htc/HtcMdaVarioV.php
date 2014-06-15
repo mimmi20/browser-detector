@@ -73,7 +73,6 @@ class HtcMdaVarioV
         'pointing_method'         => 'stylus',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

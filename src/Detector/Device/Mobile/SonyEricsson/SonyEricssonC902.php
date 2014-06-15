@@ -74,7 +74,6 @@ class SonyEricssonC902
         // wurflkey: sonyericsson_c902_ver1_subr3da      // wurflkey: sonyericsson_c902_ver1_subr3da
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

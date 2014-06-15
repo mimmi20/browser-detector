@@ -80,7 +80,6 @@ class EuripBot
 
             // browser
             'mobile_browser'               => 'Europe Internet Portal',
-            'mobile_browser_manufacturer'  => new Company\Eurip(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class EuripBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Eurip();
     }
 
     /**

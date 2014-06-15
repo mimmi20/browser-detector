@@ -73,7 +73,6 @@ class BlackBerry8520
         'pointing_method'         => 'clickwheel',
 
         // product info
-        'can_assign_phone_number' => true, // blackberry8520_ver1_sub500822
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_edge/5.0.0.rdf',
         'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/5.0.0.rdf',

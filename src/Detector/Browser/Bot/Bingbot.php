@@ -80,7 +80,6 @@ class Bingbot
 
             // browser
             'mobile_browser'               => 'BingBot',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -138,7 +137,7 @@ class Bingbot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

@@ -83,7 +83,6 @@ class MicrosoftMobileExplorer
 
             // browser
             'mobile_browser'               => 'IEMobile',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -158,7 +157,7 @@ class MicrosoftMobileExplorer
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

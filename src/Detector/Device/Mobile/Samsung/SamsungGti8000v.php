@@ -73,7 +73,6 @@ class SamsungGti8000v
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I8000V.xml',
         'uaprof2'                 => null,

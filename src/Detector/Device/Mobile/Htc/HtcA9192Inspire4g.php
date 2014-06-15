@@ -77,7 +77,6 @@ class HtcA9192Inspire4g
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/Ace/A9192-1.0.xml',
         'uaprof2'                 => null,

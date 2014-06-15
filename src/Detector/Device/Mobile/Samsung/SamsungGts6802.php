@@ -76,7 +76,6 @@ class SamsungGts6802
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_s6802_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S6802.xml',
         'uaprof2'                 => null,

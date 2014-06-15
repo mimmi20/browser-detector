@@ -73,7 +73,6 @@ class NokiaX205
         'pointing_method'         => null,
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NokiaX2-05r100.xml',
         'uaprof2'                 => null,

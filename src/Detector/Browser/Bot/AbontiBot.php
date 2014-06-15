@@ -80,7 +80,6 @@ class AbontiBot
 
             // browser
             'mobile_browser'               => 'Abonti Bot',
-            'mobile_browser_manufacturer'  => new Company\Abonti(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class AbontiBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Abonti();
     }
 
     /**

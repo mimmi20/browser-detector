@@ -80,7 +80,6 @@ class GoogleEarth
 
             // browser
             'mobile_browser'               => 'Google Earth',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -150,7 +149,7 @@ class GoogleEarth
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

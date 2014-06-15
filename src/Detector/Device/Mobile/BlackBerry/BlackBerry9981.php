@@ -73,7 +73,6 @@ class BlackBerry9981
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9981_umts/7.0.0.rdf',
         'uaprof2'                 => null,

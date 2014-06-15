@@ -77,7 +77,6 @@ class SonyEricssonST18iv
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: sonyericsson_st18i_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST18iR401.xml',
         'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/ST18iR411.xml',
@@ -193,7 +192,7 @@ class SonyEricssonST18iv
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

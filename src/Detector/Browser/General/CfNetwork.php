@@ -79,7 +79,6 @@ class CfNetwork
 
             // browser
             'mobile_browser'               => 'general CFNetwork Application',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

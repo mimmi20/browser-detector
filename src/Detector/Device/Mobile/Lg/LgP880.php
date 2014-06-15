@@ -77,7 +77,6 @@ class LgP880
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/P880-M3-D1.xml',
         'uaprof2'                 => 'http://gsm.lge.com/html/gsm/P880-M6-D2.xml',
@@ -193,7 +192,7 @@ class LgP880
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.1:

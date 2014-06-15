@@ -77,7 +77,6 @@ class LgGt540
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/GT540_M6_D2_CL.xml',
         'uaprof2'                 => 'http://gsm.lge.com/html/gsm/GT540.xml',
@@ -190,7 +189,7 @@ class LgGt540
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.1:

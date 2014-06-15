@@ -80,7 +80,6 @@ class Dreamweaver
 
             // browser
             'mobile_browser'               => 'Dreamweaver',
-            'mobile_browser_manufacturer'  => new Company\Adobe(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Dreamweaver
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Adobe();
     }
 
     /**

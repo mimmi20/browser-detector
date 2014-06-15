@@ -79,7 +79,6 @@ class Boxee
 
             // browser
             'mobile_browser'               => 'Boxee',
-            'mobile_browser_manufacturer'  => new Company\Boxee(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -126,7 +125,7 @@ class Boxee
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Boxee();
     }
 
     /**

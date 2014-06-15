@@ -81,7 +81,6 @@ class Sanyo
 
             // browser
             'mobile_browser'               => 'Sanyo',
-            'mobile_browser_manufacturer'  => new Company\Sanyo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +127,7 @@ class Sanyo
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sanyo();
     }
 
     /**

@@ -76,7 +76,6 @@ class SamsungGti8160p
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I8160P.xml',
         'uaprof2'                 => null,

@@ -79,7 +79,6 @@ class W3m
 
             // browser
             'mobile_browser'               => 'w3m',
-            'mobile_browser_manufacturer'  => new Company\SakamotoHironori(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -130,7 +129,7 @@ class W3m
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SakamotoHironori();
     }
 
     /**

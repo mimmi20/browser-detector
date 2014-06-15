@@ -73,7 +73,6 @@ class SonyEricssonC905
         'pointing_method'         => '', // wurflkey: sonyericsson_c905_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

@@ -79,7 +79,6 @@ class HpTouchpad
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: hp_touchpad_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://downloads.palm.com/profiles/HSTNH-I29C_R1.xml',
         'uaprof2'                 => null,
@@ -202,8 +201,8 @@ class HpTouchpad
         $engine->setCapability('bmp', true); // wurflkey: hp_touchpad_ver1
         $engine->setCapability('ajax_support_javascript', true);
 
-        if (('Android Webkit' == $browser->getCapability('mobile_browser')
-                || 'Chrome' == $browser->getCapability('mobile_browser'))
+        if (('Android Webkit' == $browser->getName()
+                || 'Chrome' == $browser->getName())
             && 'Android' == $os->getName()
         ) {
             $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');

@@ -73,7 +73,6 @@ class BlackBerry9800
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_edge/6.0.0.rdf',
         'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_umts/6.0.0.rdf',

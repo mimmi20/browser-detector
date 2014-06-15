@@ -81,7 +81,6 @@ class AppleMail
 
             // browser
             'mobile_browser'               => 'Apple Mail',
-            'mobile_browser_manufacturer'  => new Company\Apple(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -139,7 +138,7 @@ class AppleMail
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apple();
     }
 
     /**

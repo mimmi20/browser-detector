@@ -80,7 +80,6 @@ class WordPress
 
             // browser
             'mobile_browser'               => 'WordPress',
-            'mobile_browser_manufacturer'  => new Company\WordPress(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class WordPress
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\WordPress();
     }
 
     /**

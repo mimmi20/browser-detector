@@ -73,7 +73,6 @@ class SamsungGts8530
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S8530_3G.rdf',
         'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S8530_2G.rdf',

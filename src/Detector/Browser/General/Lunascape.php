@@ -84,7 +84,6 @@ class Lunascape
 
             // browser
             'mobile_browser'               => 'Lunascape',
-            'mobile_browser_manufacturer'  => new Company\Lunascape(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -162,7 +161,7 @@ class Lunascape
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Lunascape();
     }
 
     /**

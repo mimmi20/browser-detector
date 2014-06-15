@@ -77,7 +77,6 @@ class HtcA8181Desire
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire_A8181.xml',
         'uaprof2'                 => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',

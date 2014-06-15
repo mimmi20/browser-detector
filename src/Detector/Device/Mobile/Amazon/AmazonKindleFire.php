@@ -76,7 +76,6 @@ class AmazonKindleFire
         'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_ver1_suban40rom
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

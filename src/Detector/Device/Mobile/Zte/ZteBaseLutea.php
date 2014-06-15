@@ -76,7 +76,6 @@ class ZteBaseLutea
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.zte.com.cn/mobile/uaprof/ZTE-BLADE.xml',
         'uaprof2'                 => null,

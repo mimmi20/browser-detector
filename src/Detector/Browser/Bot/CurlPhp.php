@@ -80,7 +80,6 @@ class CurlPhp
 
             // browser
             'mobile_browser'               => 'cURL PHP',
-            'mobile_browser_manufacturer'  => new Company\TeamHaxx(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class CurlPhp
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\TeamHaxx();
     }
 
     /**

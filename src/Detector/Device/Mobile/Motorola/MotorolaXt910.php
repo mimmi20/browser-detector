@@ -77,7 +77,6 @@ class MotorolaXt910
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/motoxt910/Profile/motoxt910.rdf',
         'uaprof2'                 => null,
@@ -193,7 +192,7 @@ class MotorolaXt910
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

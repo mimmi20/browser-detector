@@ -73,7 +73,6 @@ class SamsungGts8500
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S8500_3G.rdf',
         'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S8500.rdf',

@@ -73,7 +73,6 @@ class SonyST21iv
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonymobile.com/UAprof/ST21iR402.xml',
         'uaprof2'                 => null,

@@ -86,7 +86,6 @@ class Phantom
 
             // browser
             'mobile_browser'               => 'Phantom',
-            'mobile_browser_manufacturer'  => new Company\Lg(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -137,7 +136,7 @@ class Phantom
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Lg();
     }
 
     /**

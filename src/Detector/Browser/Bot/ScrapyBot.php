@@ -80,7 +80,6 @@ class ScrapyBot
 
             // browser
             'mobile_browser'               => 'Scrapy Bot',
-            'mobile_browser_manufacturer'  => new Company\ScrapyOrg(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class ScrapyBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\ScrapyOrg();
     }
 
     /**

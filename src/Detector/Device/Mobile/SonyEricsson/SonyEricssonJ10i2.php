@@ -73,7 +73,6 @@ class SonyEricssonJ10i2
         'pointing_method'         => '', // wurflkey: sonyericsson_j10i2_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/J10i2R101.xml',
         'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/J10i1R101.xml',

@@ -77,7 +77,6 @@ class SonyEricssonLT18i
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: sonyericsson_lt18i_ver1_subuai
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/LT18iR402.xml',
         'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/LT18iR411.xml',
@@ -198,7 +197,7 @@ class SonyEricssonLT18i
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

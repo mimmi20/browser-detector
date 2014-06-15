@@ -77,7 +77,6 @@ class AsusTf101
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprofile.asus.com/uaprof/ASUS-TF101.xml',
         'uaprof2'                 => null,
@@ -194,7 +193,7 @@ class AsusTf101
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

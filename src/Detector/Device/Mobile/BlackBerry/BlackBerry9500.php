@@ -74,7 +74,6 @@ class BlackBerry9500
         // wurflkey: blackberry9500_ver1_subos5     // wurflkey: blackberry9500_ver1_subos5
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: blackberry9500_ver1_subos470141
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_edge/5.0.0.rdf',
         'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9500_gprs/5.0.0.rdf',

@@ -73,7 +73,6 @@ class Nokia311
         'pointing_method'         => 'touchscreen', // wurflkey: nokia_311_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/311r100.xml',
         'uaprof2'                 => null,

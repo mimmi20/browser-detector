@@ -83,7 +83,6 @@ class Firebird
 
             // browser
             'mobile_browser'               => 'Firebird',
-            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -173,7 +172,7 @@ class Firebird
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MozillaFoundation();
     }
 
     /**

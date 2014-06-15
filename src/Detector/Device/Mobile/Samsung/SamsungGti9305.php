@@ -73,7 +73,6 @@ class SamsungGti9305
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9305_ver1_suban41xxa
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9305.xml',
         'uaprof2'                 => null,

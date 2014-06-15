@@ -73,7 +73,6 @@ class Nokia6303classic
         'pointing_method'         => '', // wurflkey: nokia_6303c_ver1     // wurflkey: nokia_6303c_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

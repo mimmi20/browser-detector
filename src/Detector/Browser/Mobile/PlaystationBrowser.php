@@ -81,7 +81,6 @@ class PlaystationBrowser
 
             // browser
             'mobile_browser'               => 'Playstation Browser',
-            'mobile_browser_manufacturer'  => new Company\Sony(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -132,7 +131,7 @@ class PlaystationBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sony();
     }
 
     /**

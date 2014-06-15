@@ -77,7 +77,6 @@ class HtcOneX
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PJ461/ua-profile.xml',
         'uaprof2'                 => null,
@@ -199,7 +198,7 @@ class HtcOneX
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.1:

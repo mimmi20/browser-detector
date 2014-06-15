@@ -84,7 +84,6 @@ class YouWaveAndroidOnPc
 
             // browser
             'mobile_browser'               => 'YouWave Android on PC',
-            'mobile_browser_manufacturer'  => new Company\YouWave(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class YouWaveAndroidOnPc
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\YouWave();
     }
 
     /**

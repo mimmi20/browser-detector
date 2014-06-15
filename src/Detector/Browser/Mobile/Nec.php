@@ -81,7 +81,6 @@ class Nec
 
             // browser
             'mobile_browser'               => 'Nec',
-            'mobile_browser_manufacturer'  => new Company\Nec(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +127,7 @@ class Nec
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Nec();
     }
 
     /**

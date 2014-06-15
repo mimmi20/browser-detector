@@ -73,7 +73,6 @@ class SamsungGti9010
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i9010.xml',
         'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9000.xml',

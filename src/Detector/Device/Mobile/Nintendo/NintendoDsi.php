@@ -77,7 +77,6 @@ class NintendoDsi
         'pointing_method'         => '', // wurflkey: nintendo_dsi_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

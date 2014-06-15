@@ -79,7 +79,6 @@ class GoogleDesktop
 
             // browser
             'mobile_browser'               => 'Google Desktop',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -130,7 +129,7 @@ class GoogleDesktop
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

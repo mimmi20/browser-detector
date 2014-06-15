@@ -74,7 +74,6 @@ class SonyEricssonU10i
         // wurflkey: sonyericsson_u10i_ver1_subua2  // wurflkey: sonyericsson_u10i_ver1_subua2
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

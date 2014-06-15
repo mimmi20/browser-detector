@@ -83,7 +83,6 @@ class MicrosoftOffice
 
             // browser
             'mobile_browser'               => 'Office',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -164,7 +163,7 @@ class MicrosoftOffice
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

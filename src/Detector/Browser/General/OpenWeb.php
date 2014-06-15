@@ -80,7 +80,6 @@ class OpenWeb
 
             // browser
             'mobile_browser'               => 'OpenWeb',
-            'mobile_browser_manufacturer'  => new Company\OpenWave(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class OpenWeb
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\OpenWave();
     }
 
     /**

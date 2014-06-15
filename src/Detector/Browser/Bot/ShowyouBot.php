@@ -80,7 +80,6 @@ class ShowyouBot
 
             // browser
             'mobile_browser'               => 'ShowYou Bot',
-            'mobile_browser_manufacturer'  => new Company\Ask(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class ShowyouBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Ask();
     }
 
     /**

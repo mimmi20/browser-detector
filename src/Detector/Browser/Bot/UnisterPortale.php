@@ -79,7 +79,6 @@ class UnisterPortale
 
             // browser
             'mobile_browser'               => 'UnisterPortale',
-            'mobile_browser_manufacturer'  => new Company\Unister(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -141,7 +140,7 @@ class UnisterPortale
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Unister();
     }
 
     /**

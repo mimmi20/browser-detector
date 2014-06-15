@@ -80,7 +80,6 @@ class PalmPixi
 
             // browser
             'mobile_browser'               => 'PalmPixi',
-            'mobile_browser_manufacturer'  => new Company\Hp(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class PalmPixi
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Hp();
     }
 
     /**

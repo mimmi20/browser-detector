@@ -272,7 +272,7 @@ class AndroidOs
         $engine->setCapability('menu_with_list_of_links_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
 
-        if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
+        if ('Android Webkit' == $browser->getName()) {
             $engine->setCapability('is_sencha_touch_ok', false);
         }
 

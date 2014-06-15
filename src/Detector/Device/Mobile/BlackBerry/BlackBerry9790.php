@@ -73,7 +73,6 @@ class BlackBerry9790
         'pointing_method'         => 'clickwheel',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9790_umts/7.0',
         'uaprof2'                 => null,

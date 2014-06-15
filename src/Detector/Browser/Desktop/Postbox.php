@@ -80,7 +80,6 @@ class Postbox
 
             // browser
             'mobile_browser'               => 'Postbox',
-            'mobile_browser_manufacturer'  => new Company\Postbox(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -155,7 +154,7 @@ class Postbox
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Postbox();
     }
 
     /**

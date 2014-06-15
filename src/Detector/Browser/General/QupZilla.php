@@ -80,7 +80,6 @@ class QupZilla
 
             // browser
             'mobile_browser'               => 'QupZilla',
-            'mobile_browser_manufacturer'  => new Company\DavidRosca(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class QupZilla
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\DavidRosca();
     }
 
     /**

@@ -80,7 +80,6 @@ class Omniweb
 
             // browser
             'mobile_browser'               => 'Omniweb',
-            'mobile_browser_manufacturer'  => new Company\OmniDevelopment(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Omniweb
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\OmniDevelopment();
     }
 
     /**

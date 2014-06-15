@@ -77,7 +77,6 @@ class SamsungGti9100g
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9100_ver1_subuag
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9100G.xml',
         // wurflkey: samsung_gt_i9100_ver1_subuag
@@ -195,7 +194,7 @@ class SamsungGti9100g
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

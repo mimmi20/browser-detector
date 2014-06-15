@@ -80,7 +80,6 @@ class Quicktime
 
             // browser
             'mobile_browser'               => 'Quicktime',
-            'mobile_browser_manufacturer'  => new Company\Apple(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -117,7 +116,7 @@ class Quicktime
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apple();
     }
 
     /**

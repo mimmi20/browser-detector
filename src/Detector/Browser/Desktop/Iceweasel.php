@@ -80,7 +80,6 @@ class Iceweasel
 
             // browser
             'mobile_browser'               => 'Iceweasel',
-            'mobile_browser_manufacturer'  => new Company\Debian(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -162,7 +161,7 @@ class Iceweasel
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Debian();
     }
 
     /**

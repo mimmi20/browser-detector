@@ -76,7 +76,6 @@ class HuaweiMediaPad
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
         'uaprof2'                 => null,

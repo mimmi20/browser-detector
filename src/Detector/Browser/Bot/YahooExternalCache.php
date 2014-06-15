@@ -79,7 +79,6 @@ class YahooExternalCache
 
             // browser
             'mobile_browser'               => 'YahooExternalCache',
-            'mobile_browser_manufacturer'  => new Company\Yahoo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -130,7 +129,7 @@ class YahooExternalCache
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Yahoo();
     }
 
     /**

@@ -77,7 +77,6 @@ class HtcA9191DesireHd
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/DesireHD/ua-profile.xml',
         'uaprof2'                 => null,

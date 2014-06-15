@@ -73,7 +73,6 @@ class NokiaN95
         'pointing_method'         => 'joystick',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN95-1r100.xml',
         'uaprof2'                 => null,

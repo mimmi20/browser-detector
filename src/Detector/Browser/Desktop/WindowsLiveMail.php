@@ -80,7 +80,6 @@ class WindowsLiveMail
 
             // browser
             'mobile_browser'               => 'Windows Live Mail',
-            'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class WindowsLiveMail
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

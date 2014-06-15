@@ -100,29 +100,17 @@ abstract class BrowserHandler
         $this->utils = new Utils();
 
         $this->properties = array(
-            // kind of browser
-            'browser_type'                 => new BrowserType\Unknown(), // not in wurfl
-
-            'device_claims_web_support'    => false,
-
             // browser
-            'mobile_browser'               => 'unknown',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
             'can_skip_aligned_link_row'    => false,
-            'can_assign_phone_number'      => false,
+            'device_claims_web_support'    => false,
 
             // pdf
             'pdf_support'                  => true,
 
-            // cache
-            'time_to_live_support'         => null,
-            'total_cache_disable_support'  => null,
-
             // bugs
-            'emptyok'                      => false,
             'empty_option_value_support'   => null,
             'basic_authentication_support' => true,
             'post_method_support'          => true,

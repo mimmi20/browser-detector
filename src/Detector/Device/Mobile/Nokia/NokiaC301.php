@@ -73,7 +73,6 @@ class NokiaC301
         'pointing_method'         => 'touchscreen', // wurflkey: nokia_c3_01_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

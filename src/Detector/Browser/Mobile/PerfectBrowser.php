@@ -80,7 +80,6 @@ class PerfectBrowser
 
             // browser
             'mobile_browser'               => 'PERFECT Browser',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

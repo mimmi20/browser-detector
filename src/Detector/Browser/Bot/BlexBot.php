@@ -80,7 +80,6 @@ class BlexBot
 
             // browser
             'mobile_browser'               => 'BLEXBot',
-            'mobile_browser_manufacturer'  => new Company\WebmeupCrawlerCom(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class BlexBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\WebmeupCrawlerCom();
     }
 
     /**

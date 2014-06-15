@@ -84,7 +84,6 @@ class GooglebotMobileBot
 
             // browser
             'mobile_browser'               => 'Google Bot Mobile',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class GooglebotMobileBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

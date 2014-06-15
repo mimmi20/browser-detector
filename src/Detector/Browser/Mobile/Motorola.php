@@ -82,7 +82,6 @@ class Motorola
 
             // browser
             'mobile_browser'               => 'Motorola Internet Browser',
-            'mobile_browser_manufacturer'  => new Company\Motorola(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -137,7 +136,7 @@ class Motorola
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Motorola();
     }
 
     /**

@@ -80,7 +80,6 @@ class YahooPipes
 
             // browser
             'mobile_browser'               => 'Yahoo! Pipes',
-            'mobile_browser_manufacturer'  => new Company\Yahoo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class YahooPipes
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Yahoo();
     }
 
     /**

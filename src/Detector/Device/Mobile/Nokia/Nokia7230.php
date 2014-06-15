@@ -73,7 +73,6 @@ class Nokia7230
         'pointing_method'         => null,
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/N7230r100.xml',
         'uaprof2'                 => null,

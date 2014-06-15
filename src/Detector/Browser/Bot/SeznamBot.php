@@ -80,7 +80,6 @@ class SeznamBot
 
             // browser
             'mobile_browser'               => 'SeznamBot',
-            'mobile_browser_manufacturer'  => new Company\Seznam(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class SeznamBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Seznam();
     }
 
     /**

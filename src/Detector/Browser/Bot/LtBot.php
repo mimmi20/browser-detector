@@ -80,7 +80,6 @@ class LtBot
 
             // browser
             'mobile_browser'               => 'ltbot',
-            'mobile_browser_manufacturer'  => new Company\LanguageTools(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class LtBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\LanguageTools();
     }
 
     /**

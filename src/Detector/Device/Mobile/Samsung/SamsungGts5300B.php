@@ -76,7 +76,6 @@ class SamsungGts5300B
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5300B.xml',
         'uaprof2'                 => null,

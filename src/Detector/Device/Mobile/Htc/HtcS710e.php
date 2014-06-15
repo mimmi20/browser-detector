@@ -77,7 +77,6 @@ class HtcS710e
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_incredibles_s710e_ver1_suban40
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PG32/ua-profile.xml',
         'uaprof2'                 => null,
@@ -193,7 +192,7 @@ class HtcS710e
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

@@ -80,7 +80,6 @@ class Sunbird
 
             // browser
             'mobile_browser'               => 'Sunbird',
-            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -175,7 +174,7 @@ class Sunbird
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MozillaFoundation();
     }
 
     /**

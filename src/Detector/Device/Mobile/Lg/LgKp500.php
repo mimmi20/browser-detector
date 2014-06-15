@@ -73,7 +73,6 @@ class LgKp500
         'pointing_method'         => 'stylus',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/LG-KP500.xml',
         'uaprof2'                 => null,

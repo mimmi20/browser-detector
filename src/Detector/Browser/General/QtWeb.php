@@ -80,7 +80,6 @@ class QtWeb
 
             // browser
             'mobile_browser'               => 'QtWeb Internet Browser',
-            'mobile_browser_manufacturer'  => new Company\LogicWare(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -139,7 +138,7 @@ class QtWeb
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\LogicWare();
     }
 
     /**

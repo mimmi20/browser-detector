@@ -73,7 +73,6 @@ class SamsungGti9003l
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i9003.xml',
         'uaprof2'                 => null,

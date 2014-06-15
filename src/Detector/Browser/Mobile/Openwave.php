@@ -82,7 +82,6 @@ class Openwave
 
             // browser
             'mobile_browser'               => 'Openwave Mobile Browser',
-            'mobile_browser_manufacturer'  => new Company\Myriad(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -144,7 +143,7 @@ class Openwave
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Myriad();
     }
 
     /**

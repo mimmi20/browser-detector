@@ -79,7 +79,6 @@ class LotusNotes
 
             // browser
             'mobile_browser'               => 'Lotus Notes',
-            'mobile_browser_manufacturer'  => new Company\Ibm(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -134,7 +133,7 @@ class LotusNotes
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Ibm();
     }
 
     /**

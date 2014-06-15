@@ -73,7 +73,6 @@ class SonyEricssonW995
         'pointing_method'         => '', // wurflkey: sonyericsson_w995_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/W995R101.xml',
         'uaprof2'                 => null,

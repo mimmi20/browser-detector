@@ -73,7 +73,6 @@ class HtcT8282
         'pointing_method'         => 'stylus', // wurflkey: htc_t8282_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

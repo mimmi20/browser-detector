@@ -73,7 +73,6 @@ class SamsungGts7230e
         'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s7230e_ver1_suborange
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S7230E.rdf',
         'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-S7230E_3G.rdf',

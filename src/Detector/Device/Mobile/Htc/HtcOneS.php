@@ -77,7 +77,6 @@ class HtcOneS
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_one_s_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
         // wurflkey: htc_one_s_ver1
@@ -198,7 +197,7 @@ class HtcOneS
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

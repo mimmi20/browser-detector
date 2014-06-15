@@ -80,7 +80,6 @@ class Jasmine
 
             // browser
             'mobile_browser'               => 'Jasmine Webkit',
-            'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

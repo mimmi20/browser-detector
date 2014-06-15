@@ -77,7 +77,6 @@ class NokiaC700
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100-VF3G.xml',

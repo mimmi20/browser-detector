@@ -73,7 +73,6 @@ class AcerIconiaA101
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A101_Profile.xml',
         'uaprof2'                 => null,

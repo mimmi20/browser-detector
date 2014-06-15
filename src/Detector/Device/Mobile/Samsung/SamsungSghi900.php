@@ -76,7 +76,6 @@ class SamsungSghi900
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/SGH-i900.xml',
         'uaprof2'                 => null,

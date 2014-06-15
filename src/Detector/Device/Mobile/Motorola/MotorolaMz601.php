@@ -77,7 +77,6 @@ class MotorolaMz601
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz601.rdf',
         'uaprof2'                 => null,
@@ -190,7 +189,7 @@ class MotorolaMz601
             Version::MAJORMINOR
         );
 
-        switch ($browser->getCapability('mobile_browser')) {
+        switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:

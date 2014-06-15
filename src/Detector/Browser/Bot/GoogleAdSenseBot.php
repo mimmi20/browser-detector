@@ -84,7 +84,6 @@ class GoogleAdSenseBot
 
             // browser
             'mobile_browser'               => 'AdSense Bot',
-            'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class GoogleAdSenseBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**

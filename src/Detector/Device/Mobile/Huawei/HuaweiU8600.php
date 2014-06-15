@@ -76,7 +76,6 @@ class HuaweiU8600
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8600WCDMA-T-Mobile.xml',
         'uaprof2'                 => null,

@@ -73,7 +73,6 @@ class BlackBerry9105
         'pointing_method'         => 'clickwheel',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_gprs/5.0.0.rdf',
         'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9105_umts/5.0.0.rdf',

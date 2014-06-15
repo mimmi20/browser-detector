@@ -80,7 +80,6 @@ class Rogerbot
 
             // browser
             'mobile_browser'               => 'Rogerbot',
-            'mobile_browser_manufacturer'  => new Company\SeoMoz(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Rogerbot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SeoMoz();
     }
 
     /**

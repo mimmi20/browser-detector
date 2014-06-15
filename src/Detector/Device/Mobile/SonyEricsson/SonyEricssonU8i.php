@@ -73,7 +73,6 @@ class SonyEricssonU8i
         'pointing_method'         => 'touchscreen', // wurflkey: sonyericsson_u8i_ver1
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.sonyericsson.com/downloads/U8iR000.xml',
         'uaprof2'                 => null,

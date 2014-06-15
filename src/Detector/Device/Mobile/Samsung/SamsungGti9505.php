@@ -73,7 +73,6 @@ class SamsungGti9505
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9505.xml',
         'uaprof2'                 => null,

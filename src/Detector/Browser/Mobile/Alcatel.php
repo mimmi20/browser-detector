@@ -82,7 +82,6 @@ class Alcatel
 
             // browser
             'mobile_browser'               => 'Alcatel',
-            'mobile_browser_manufacturer'  => new Company\Alcatel(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -129,7 +128,7 @@ class Alcatel
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Alcatel();
     }
 
     /**

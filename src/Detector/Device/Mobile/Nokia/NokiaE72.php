@@ -73,7 +73,6 @@ class NokiaE72
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE72-1r100.xml',
         'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NE72-2r100.xml',

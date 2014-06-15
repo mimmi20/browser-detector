@@ -80,7 +80,6 @@ class TenFourFox
 
             // browser
             'mobile_browser'               => 'TenFourFox',
-            'mobile_browser_manufacturer'  => new Company\CameronKaiser(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class TenFourFox
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\CameronKaiser();
     }
 
     /**

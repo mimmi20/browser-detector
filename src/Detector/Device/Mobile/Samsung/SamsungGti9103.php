@@ -76,7 +76,6 @@ class SamsungGti9103
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: samsung_gt_i9103_ver1
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9103.xml',
         'uaprof2'                 => null,

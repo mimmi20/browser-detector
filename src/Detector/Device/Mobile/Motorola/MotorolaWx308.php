@@ -73,7 +73,6 @@ class MotorolaWx308
         'pointing_method'         => '', // wurflkey: mot_wx308_ver1          // wurflkey: mot_wx308_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

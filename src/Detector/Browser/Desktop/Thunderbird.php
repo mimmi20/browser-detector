@@ -80,7 +80,6 @@ class Thunderbird
 
             // browser
             'mobile_browser'               => 'Thunderbird',
-            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -155,7 +154,7 @@ class Thunderbird
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MozillaFoundation();
     }
 
     /**

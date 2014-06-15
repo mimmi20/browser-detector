@@ -73,7 +73,6 @@ class BlackBerry9380
         'pointing_method'         => 'touchscreen', // wurflkey: blackberry9380_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

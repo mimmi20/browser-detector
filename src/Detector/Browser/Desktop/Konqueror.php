@@ -83,7 +83,6 @@ class Konqueror
 
             // browser
             'mobile_browser'               => 'Konqueror',
-            'mobile_browser_manufacturer'  => new Company\Kde(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -170,7 +169,7 @@ class Konqueror
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Kde();
     }
 
     /**

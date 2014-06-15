@@ -81,7 +81,6 @@ class DoCoMo
 
             // browser
             'mobile_browser'               => 'DoCoMo',
-            'mobile_browser_manufacturer'  => new Company\DoCoMo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -128,7 +127,7 @@ class DoCoMo
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\DoCoMo();
     }
 
     /**

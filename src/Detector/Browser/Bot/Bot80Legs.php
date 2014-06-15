@@ -80,7 +80,6 @@ class Bot80Legs
 
             // browser
             'mobile_browser'               => '80Legs',
-            'mobile_browser_manufacturer'  => null, // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info

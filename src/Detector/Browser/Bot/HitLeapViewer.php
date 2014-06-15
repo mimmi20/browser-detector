@@ -80,7 +80,6 @@ class HitLeapViewer
 
             // browser
             'mobile_browser'               => 'HitLeap Viewer',
-            'mobile_browser_manufacturer'  => new Company\HitLeap(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class HitLeapViewer
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\HitLeap();
     }
 
     /**

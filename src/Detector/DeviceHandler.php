@@ -95,11 +95,8 @@ abstract class DeviceHandler
         'marketing_name'            => null,
         'has_qwerty_keyboard'       => null,
         'pointing_method'           => null,
-        'device_claims_web_support' => null,
 
         // product info
-        'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
         'ununiqueness_handler'      => null,
         'uaprof'                    => null,
         'uaprof2'                   => null,

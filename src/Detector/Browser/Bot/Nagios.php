@@ -80,7 +80,6 @@ class Nagios
 
             // browser
             'mobile_browser'               => 'HTTP nagios plugin',
-            'mobile_browser_manufacturer'  => new Company\NagiosEnterprises(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -133,7 +132,7 @@ class Nagios
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\NagiosEnterprises();
     }
 
     /**

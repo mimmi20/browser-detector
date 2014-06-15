@@ -80,7 +80,6 @@ class NetFrontLifeBrowser
 
             // browser
             'mobile_browser'               => 'NetFrontLifeBrowser',
-            'mobile_browser_manufacturer'  => new Company\Access(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -140,7 +139,7 @@ class NetFrontLifeBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Access();
     }
 
     /**

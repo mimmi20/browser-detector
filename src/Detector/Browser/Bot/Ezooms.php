@@ -80,7 +80,6 @@ class Ezooms
 
             // browser
             'mobile_browser'               => 'Ezooms',
-            'mobile_browser_manufacturer'  => new Company\SeoMoz(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Ezooms
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SeoMoz();
     }
 
     /**

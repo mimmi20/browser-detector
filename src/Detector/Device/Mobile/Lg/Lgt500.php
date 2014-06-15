@@ -73,7 +73,6 @@ class Lgt500
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://gsm.lge.com/html/gsm/LG-T500-M3-D1.xml',
         'uaprof2'                 => null,

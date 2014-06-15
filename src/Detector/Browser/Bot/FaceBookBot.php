@@ -80,7 +80,6 @@ class FaceBookBot
 
             // browser
             'mobile_browser'               => 'FaceBook Bot',
-            'mobile_browser_manufacturer'  => new Company\Facebook(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class FaceBookBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Facebook();
     }
 
     /**

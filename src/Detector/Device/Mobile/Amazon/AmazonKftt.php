@@ -79,7 +79,6 @@ class AmazonKftt
         'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,
@@ -195,7 +194,7 @@ class AmazonKftt
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        if ('Android Webkit' == $browser->getCapability('mobile_browser')) {
+        if ('Android Webkit' == $browser->getName()) {
             $this->setCapability('wurflKey', 'amazon_kindle_fire_hd7_ver1_subuanosilk');
         }
 

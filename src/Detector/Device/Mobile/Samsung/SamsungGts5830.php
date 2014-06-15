@@ -80,7 +80,6 @@ class SamsungGts5830
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkry: samsung_gt_s5830_ver1_suban23
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5830.xml',
         'uaprof2'                 => null,

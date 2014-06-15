@@ -73,7 +73,6 @@ class SamsungGti5801
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i5801.xml',
         'uaprof2'                 => null,

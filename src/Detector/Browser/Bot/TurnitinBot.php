@@ -80,7 +80,6 @@ class TurnitinBot
 
             // browser
             'mobile_browser'               => 'TurnitinBot',
-            'mobile_browser_manufacturer'  => new Company\Iparadigms(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class TurnitinBot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Iparadigms();
     }
 
     /**

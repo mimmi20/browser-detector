@@ -73,7 +73,6 @@ class NokiaC202
         'pointing_method'         => 'touchscreen', // wurflkey: nokia_c2_02_ver1_subovibrsr
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

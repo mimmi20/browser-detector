@@ -80,7 +80,6 @@ class Iphone
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: apple_iphone_ver6
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,
@@ -207,7 +206,7 @@ class Iphone
 
         $this->setCapability('model_extra_info', $osVersion);
 
-        if ('Safari' == $browser->getCapability('mobile_browser')
+        if ('Safari' == $browser->getName()
             && !$browser->detectVersion()->getVersion()
         ) {
             $browser->detectVersion()->setVersion($osVersion);

@@ -84,7 +84,6 @@ class Sleipnir
 
             // browser
             'mobile_browser'               => 'Sleipnir',
-            'mobile_browser_manufacturer'  => new Company\Fenrir(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -157,7 +156,7 @@ class Sleipnir
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Fenrir();
     }
 
     /**

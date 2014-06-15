@@ -80,7 +80,6 @@ class WiJobRoboter
 
             // browser
             'mobile_browser'               => 'WI Job Roboter',
-            'mobile_browser_manufacturer'  => new Company\WebIntegrationItService(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class WiJobRoboter
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\WebIntegrationItService();
     }
 
     /**

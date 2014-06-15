@@ -73,7 +73,6 @@ class SamsungGts7250
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S7250_3G.rdf',
         'uaprof2'                 => null,

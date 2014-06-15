@@ -80,7 +80,6 @@ class Netscape
 
             // browser
             'mobile_browser'               => 'Netscape',
-            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -191,7 +190,7 @@ class Netscape
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MozillaFoundation();
     }
 
     /**

@@ -80,7 +80,6 @@ class JakartaCommonsHttpClient
 
             // browser
             'mobile_browser'               => 'Jakarta Commons HttpClient',
-            'mobile_browser_manufacturer'  => new Company\Apache(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -135,7 +134,7 @@ class JakartaCommonsHttpClient
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apache();
     }
 
     /**

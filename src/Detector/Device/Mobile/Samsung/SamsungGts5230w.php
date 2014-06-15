@@ -73,7 +73,6 @@ class SamsungGts5230w
         'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s5230w_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5230W.xml',
         'uaprof2'                 => null,

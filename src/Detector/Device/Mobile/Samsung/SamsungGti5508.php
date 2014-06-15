@@ -73,7 +73,6 @@ class SamsungGti5508
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I5508.xml',
         'uaprof2'                 => null,

@@ -79,7 +79,6 @@ class Yahoo
 
             // browser
             'mobile_browser'               => 'Yahoo!',
-            'mobile_browser_manufacturer'  => new Company\Yahoo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -137,7 +136,7 @@ class Yahoo
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Yahoo();
     }
 
     /**

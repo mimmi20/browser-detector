@@ -73,7 +73,6 @@ class MotorolaMb511
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/MotoMB511/profile/MotoMB511.rdf',
         'uaprof2'                 => null,

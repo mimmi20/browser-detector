@@ -80,7 +80,6 @@ class Proximic
 
             // browser
             'mobile_browser'               => 'proximic',
-            'mobile_browser_manufacturer'  => new Company\Proximic(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -131,7 +130,7 @@ class Proximic
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Proximic();
     }
 
     /**

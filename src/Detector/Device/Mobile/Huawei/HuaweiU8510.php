@@ -76,7 +76,6 @@ class HuaweiU8510
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8510-1WCDMA-VDF_PT.xml',
         'uaprof2'                 => null,

@@ -83,7 +83,6 @@ class BlackberryPlaybookTablet
 
             // browser
             'mobile_browser'               => 'Blackberry Playbook Tablet',
-            'mobile_browser_manufacturer'  => new Company\Rim(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -134,7 +133,7 @@ class BlackberryPlaybookTablet
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Rim();
     }
 
     /**

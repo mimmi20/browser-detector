@@ -73,7 +73,6 @@ class HtcSmartF3188
         'pointing_method'         => '', // wurflkey: htc_smart_f3188_ver1
 
         // product info
-        'can_assign_phone_number' => false,
         'ununiqueness_handler'    => null,
         'uaprof'                  => null,
         'uaprof2'                 => null,

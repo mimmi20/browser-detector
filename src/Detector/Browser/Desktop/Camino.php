@@ -80,7 +80,6 @@ class Camino
 
             // browser
             'mobile_browser'               => 'Camino',
-            'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
             // product info
@@ -162,7 +161,7 @@ class Camino
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MozillaFoundation();
     }
 
     /**

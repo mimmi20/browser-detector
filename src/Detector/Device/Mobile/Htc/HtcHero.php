@@ -73,7 +73,6 @@ class HtcHero
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/Android/TMO/Hero/ua-profile.xml',
         'uaprof2'                 => null,

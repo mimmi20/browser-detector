@@ -73,7 +73,6 @@ class HuaweiVodafone845
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://wap1.huawei.com/uaprof/Vodafone845v100GPRS.xml',
         'uaprof2'                 => 'http://wap1.huawei.com/uaprof/Vodafone845v100WCDMA.xml',

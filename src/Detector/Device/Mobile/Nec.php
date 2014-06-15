@@ -82,7 +82,6 @@ class Nec
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true,
         'Nec_feature_pack'        => 0,
         'Nec_series'              => 0,
         'Nec_edition'             => 0,

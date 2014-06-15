@@ -76,7 +76,6 @@ class HtcT8698
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_mozart_ver1_subos75b
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/gen/mozart-1.0.xml',
         'uaprof2'                 => null,

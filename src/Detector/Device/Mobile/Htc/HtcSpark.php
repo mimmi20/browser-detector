@@ -73,7 +73,6 @@ class HtcSpark
         'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_assign_phone_number' => true, // wurflkey: htc_spark_ver1_subtrophy75
         'ununiqueness_handler'    => null,
         'uaprof'                  => 'http://www.htcmms.com.tw/voda/Spark-1.0.xml',
         'uaprof2'                 => null,

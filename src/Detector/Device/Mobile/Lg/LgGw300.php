@@ -74,11 +74,8 @@ class LgGw300
         'marketing_name'            => 'GW300',
         'has_qwerty_keyboard'       => true,
         'pointing_method'           => 'touchscreen',
-        'device_claims_web_support' => true,
 
         // product info
-        'can_skip_aligned_link_row' => null,
-        'can_assign_phone_number'   => false,
         'ununiqueness_handler'      => null,
         'uaprof'                    => null,
         'uaprof2'                   => null,
