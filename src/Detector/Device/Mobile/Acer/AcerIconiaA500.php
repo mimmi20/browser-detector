@@ -184,7 +184,7 @@ class AcerIconiaA500
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
         );
 
@@ -200,7 +200,7 @@ class AcerIconiaA500
             $engine->setCapability('bmp', true);
         }
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

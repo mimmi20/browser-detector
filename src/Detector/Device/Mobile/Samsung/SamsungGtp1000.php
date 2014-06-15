@@ -190,7 +190,7 @@ class SamsungGtp1000
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

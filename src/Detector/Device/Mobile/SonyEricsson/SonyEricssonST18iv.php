@@ -189,7 +189,7 @@ class SonyEricssonST18iv
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

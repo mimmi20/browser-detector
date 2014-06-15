@@ -189,7 +189,7 @@ class HtcS710e
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -189,7 +189,7 @@ class MotorolaMb525
         // wurflkey: mot_mb525_ver1_sub_android221
         $engine->setCapability('xhtml_file_upload', 'not_supported');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

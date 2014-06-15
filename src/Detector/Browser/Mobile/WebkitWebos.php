@@ -118,6 +118,36 @@ class WebkitWebos
     }
 
     /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'unknown';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Unknown();
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -179,7 +209,7 @@ class WebkitWebos
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

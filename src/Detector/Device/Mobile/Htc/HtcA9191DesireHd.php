@@ -188,7 +188,7 @@ class HtcA9191DesireHd
 
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -188,7 +188,7 @@ class HtcA9292Apa9292kt
 
         $engine->setCapability('xhtml_file_upload', 'not_supported');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

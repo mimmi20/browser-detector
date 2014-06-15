@@ -193,7 +193,7 @@ class AsusTf300T
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

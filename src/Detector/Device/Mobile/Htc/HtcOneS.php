@@ -194,7 +194,7 @@ class HtcOneS
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

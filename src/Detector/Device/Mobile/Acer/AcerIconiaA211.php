@@ -184,7 +184,7 @@ class AcerIconiaA211
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
         );
 
@@ -200,7 +200,7 @@ class AcerIconiaA211
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -1582,7 +1582,7 @@ class Result implements \Serializable
                         && $device->getCapability('resolution_height') >= 480);
                     break;
                 case 'model_version':
-                    $value = $device->getDeviceVersion();
+                    $value = $device->detectVersion();
                     break;
                 case 'device_bits':
                     $detector = new Bits\Device();
@@ -1737,7 +1737,7 @@ class Result implements \Serializable
                     break;
                 case 'device_os_version':
                 case 'controlcap_advertised_device_os_version':
-                    $value = $os->getVersion();
+                    $value = $os->detectVersion();
                     break;
                 case 'device_os_manufacturer':
                     $value = $os->getManufacturer();

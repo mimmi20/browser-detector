@@ -189,7 +189,7 @@ class HtcA8181Desire
         $engine->setCapability('bmp', true);
         // $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

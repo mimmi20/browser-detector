@@ -190,7 +190,7 @@ class ToshibaAt100
         $engine->setCapability('bmp', true);
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
-        $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
+        $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if (3.2 == (float)$osVersion) {
             $this->setCapability('wurflKey', 'toshiba_at100_ver1_suban32');

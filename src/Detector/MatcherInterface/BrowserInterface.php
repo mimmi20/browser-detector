@@ -75,4 +75,32 @@ interface BrowserInterface
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
     );
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName();
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer();
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion();
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType();
 }

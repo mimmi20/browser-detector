@@ -197,7 +197,7 @@ class HtcA310e
 
         $engine->setCapability('xhtml_can_embed_video', 'none');
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

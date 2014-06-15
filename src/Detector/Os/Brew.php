@@ -91,7 +91,7 @@ class Brew
      *
      * @return \BrowserDetector\Detector\Version
      */
-    public function getVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);

@@ -194,7 +194,7 @@ class PalmPre
      */
     public function detectSpecialProperties()
     {
-        $modelVersion = $this->getDeviceVersion()->getVersion(Version::MAJORONLY);
+        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         if (3 == $modelVersion) {
             $this->setCapability('resolution_width', 480);
@@ -217,7 +217,7 @@ class PalmPre
      *
      * @return \BrowserDetector\Detector\Version
      */
-    public function getDeviceVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);

@@ -191,7 +191,7 @@ class AcerIconiaA701
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

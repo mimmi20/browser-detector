@@ -190,7 +190,7 @@ class SamsungGtp5110
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('supports_java_applets', false);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -93,11 +93,11 @@ interface DeviceInterface
     public function detectSpecialProperties();
 
     /**
-     * detects the device name from the given user agent
+     * detects the device version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
      */
-    public function getDeviceVersion();
+    public function detectVersion();
 
     /**
      * returns the type of the current device

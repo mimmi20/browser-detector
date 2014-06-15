@@ -384,7 +384,7 @@ class GeneralMobile
         switch ($brwoserName) {
         case 'Firefox':
             if ('Android' == $os->getName()) {
-                $os->getVersion()->setVersion('2.0');
+                $os->detectVersion()->setVersion('2.0');
 
                 if ($this->getDeviceType()->isTablet()) {
                     $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec_tablet');
@@ -397,7 +397,7 @@ class GeneralMobile
             break;
         case 'Opera Mobile':
             if ('Android' == $os->getName()) {
-                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
+                $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
                 if (4.0 == (float)$osVersion) {
                     $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
@@ -437,7 +437,7 @@ class GeneralMobile
             break;
         case 'Opera Tablet':
             if ('Android' == $os->getName()) {
-                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
+                $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
                 if (3.2 == (float)$osVersion) {
                     $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');
@@ -466,7 +466,7 @@ class GeneralMobile
             break;
         case 'Opera Mini':
             if ('Android' == $os->getName()) {
-                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
+                $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
                 if (5.0 == (float)$osVersion) {
                     $this->setCapability('wurflKey', 'generic_opera_mini_android_version5');
@@ -489,7 +489,7 @@ class GeneralMobile
         case 'Internet Explorer':
         case 'IEMobile':
             if ('Windows Mobile OS' == $os->getName()) {
-                $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
+                $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
                 if (6.5 == (float)$osVersion) {
                     // $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');

@@ -108,6 +108,36 @@ class TinEye
     }
 
     /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'unknown';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Unknown();
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version

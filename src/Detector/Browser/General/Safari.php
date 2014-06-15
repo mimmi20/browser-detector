@@ -126,6 +126,36 @@ class Safari
     }
 
     /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'unknown';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Unknown();
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -219,7 +249,7 @@ class Safari
 
         parent::detectDependProperties($engine, $os, $device);
 
-        $osVersion = (float)$os->getVersion()->getVersion(
+        $osVersion = (float)$os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -238,7 +268,7 @@ class Safari
         }
 
         $osname    = $os->getName();
-        $osVersion = (float)$os->getVersion()->getVersion(
+        $osVersion = (float)$os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

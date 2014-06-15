@@ -189,7 +189,7 @@ class LgP880
         // wurflkey: lg_p880_ver1
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

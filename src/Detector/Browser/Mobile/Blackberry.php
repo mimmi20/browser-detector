@@ -128,6 +128,36 @@ class Blackberry
     }
 
     /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'unknown';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Unknown();
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -214,7 +244,7 @@ class Blackberry
         $engine->setCapability('css_rounded_corners', 'none');
         $engine->setCapability('wml_1_1', true);
 
-        $osVersion = $os->getVersion()->getVersion(Version::MAJORMINOR);
+        $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if ($osVersion == 6.0) {
             $this->setCapability('pdf_support', true);

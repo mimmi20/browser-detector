@@ -88,7 +88,7 @@ interface OsInterface
      *
      * @return \BrowserDetector\Detector\Version
      */
-    public function getVersion();
+    public function detectVersion();
 
     /**
      * returns the version of the operating system/platform

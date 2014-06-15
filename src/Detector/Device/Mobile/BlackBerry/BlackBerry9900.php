@@ -184,7 +184,7 @@ class BlackBerry9900
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

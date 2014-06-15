@@ -189,7 +189,7 @@ class MotorolaXt910
         // wurflkey: mot_xt910_ver1_suban40
         $engine->setCapability('bmp', true);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

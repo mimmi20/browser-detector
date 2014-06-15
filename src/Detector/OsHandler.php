@@ -136,4 +136,17 @@ abstract class OsHandler
     {
         return null;
     }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->_useragent);
+
+        return $detector->setVersion('');
+    }
 }

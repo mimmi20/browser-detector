@@ -176,7 +176,7 @@ class PalmPixi
      */
     public function detectSpecialProperties()
     {
-        $modelVersion = $this->getDeviceVersion()->getVersion(Version::MAJORMINOR);
+        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if ('1.1' == $modelVersion) {
             $this->setCapability('model_name', 'Pixi Plus');
@@ -191,7 +191,7 @@ class PalmPixi
      *
      * @return \BrowserDetector\Detector\Version
      */
-    public function getDeviceVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);

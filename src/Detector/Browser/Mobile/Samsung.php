@@ -118,4 +118,34 @@ class Samsung
         return $this->utils->checkIfContains('Samsung/SGH')
         || $this->utils->checkIfContains(array('SEC-', 'Samsung', 'SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'unknown';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Unknown();
+    }
 }

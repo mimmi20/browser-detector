@@ -173,7 +173,7 @@ class HpP160U
      *
      * @return \BrowserDetector\Detector\Version
      */
-    public function getDeviceVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);

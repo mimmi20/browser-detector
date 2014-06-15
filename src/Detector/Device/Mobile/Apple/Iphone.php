@@ -198,7 +198,7 @@ class Iphone
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
-        $osVersion = $os->getVersion()->getVersion();
+        $osVersion = $os->detectVersion()->getVersion();
 
         if (6 <= $osVersion) {
             $this->setCapability('resolution_width', 640);
@@ -222,7 +222,7 @@ class Iphone
         $engine->setCapability('accept_third_party_cookie', false);
         $engine->setCapability('accept_third_party_cookie', false);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -254,7 +254,7 @@ class Iphone
             $engine->setCapability('xhtml_file_upload', 'supported');
         }
 
-        $osVersion = $os->getVersion()->getVersion();
+        $osVersion = $os->detectVersion()->getVersion();
 
         switch ($osVersion) {
         case '3.1.3':

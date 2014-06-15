@@ -188,7 +188,7 @@ class SamsungGti9300
 
         $engine->setCapability('supports_java_applets', false);
 
-        $osVersion = $os->getVersion()->getVersion(
+        $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 
