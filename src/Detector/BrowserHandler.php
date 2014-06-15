@@ -40,7 +40,6 @@ namespace BrowserDetector\Detector;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 
-use BrowserDetector\Detector\Bits\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\BlackBerry;
 use BrowserDetector\Detector\Engine\Gecko;
@@ -108,8 +107,6 @@ abstract class BrowserHandler
 
             // browser
             'mobile_browser'               => 'unknown',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -133,11 +130,6 @@ abstract class BrowserHandler
             // rss
             'rss_support'                  => false,
         );
-
-        $detector = new Version();
-        $detector->setVersion('');
-
-        $this->setCapability('mobile_browser_version', $detector);
     }
 
     /**
@@ -166,57 +158,16 @@ abstract class BrowserHandler
     }
 
     /**
-     * detects the browser name from the given user agent
-     *
-     * @return BrowserHandler
-     */
-    public function detect()
-    {
-        $this->_detectVersion();
-        $this->_detectBits();
-        $this->_detectProperties();
-
-        return $this;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $this->setCapability('mobile_browser_version', $detector->setVersion(''));
-
-        return $this;
-    }
-
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @return BrowserHandler
-     */
-    protected function _detectBits()
-    {
-        $detector = new Browser();
-        $detector->setUserAgent($this->useragent);
-
-        $this->setCapability('mobile_browser_bits', $detector->getBits());
-
-        return $this;
-    }
-
-    /**
-     * detect the bits of the cpu which is build into the device
-     *
-     * @return BrowserHandler
-     */
-    protected function _detectProperties()
-    {
-        return $this;
+        return $detector->setVersion('');
     }
 
     /**
@@ -241,20 +192,6 @@ abstract class BrowserHandler
     public function getCapability($capabilityName)
     {
         $this->checkCapability($capabilityName);
-
-        switch ($capabilityName) {
-        case 'mobile_browser_version':
-            if (!($this->properties['mobile_browser_version'] instanceof Version)) {
-                $detector = new Version();
-                $detector->setVersion('');
-
-                $this->setCapability('mobile_browser_version', $detector);
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
-        }
 
         return $this->properties[$capabilityName];
     }

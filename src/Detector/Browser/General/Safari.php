@@ -84,8 +84,6 @@ class Safari
 
             // browser
             'mobile_browser'               => 'Safari',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Apple(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -130,9 +128,9 @@ class Safari
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Safari
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -143,12 +141,7 @@ class Safari
         $doMatch = preg_match('/Version\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -156,23 +149,13 @@ class Safari
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match('/Safari([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -180,19 +163,10 @@ class Safari
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->setVersion('')
-        );
-
-        return $this;
+        return $detector->setVersion('');
     }
 
     /**
@@ -255,7 +229,7 @@ class Safari
             $engine->setCapability('xhtml_file_upload', 'supported'); //iPhone with iOS 6.0 and Safari 6.0
         }
 
-        $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(
+        $browserVersion = $this->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -79,8 +79,6 @@ class ArchiveOrgBot
 
             // browser
             'mobile_browser'               => 'Internet Archive',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\ArchiveOrg(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

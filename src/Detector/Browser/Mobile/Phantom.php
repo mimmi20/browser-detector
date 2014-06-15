@@ -86,8 +86,6 @@ class Phantom
 
             // browser
             'mobile_browser'               => 'Phantom',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Lg(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -135,20 +133,16 @@ class Phantom
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Phantom', 'Phantom\/V');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -168,6 +162,10 @@ class Phantom
     /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
      *
      * @return DeviceHandler
      */

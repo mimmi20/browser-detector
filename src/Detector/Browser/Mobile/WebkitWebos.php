@@ -83,8 +83,6 @@ class WebkitWebos
 
             // browser
             'mobile_browser'               => 'WebKit/webOS',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Hp(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -132,20 +130,16 @@ class WebkitWebos
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Mobile\WebkitWebos
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('webOS', 'webOSBrowser');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

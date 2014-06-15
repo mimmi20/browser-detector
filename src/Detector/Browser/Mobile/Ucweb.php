@@ -42,11 +42,14 @@ namespace BrowserDetector\Detector\Browser\Mobile;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\U3;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Chain;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -80,8 +83,6 @@ class Ucweb
 
             // browser
             'mobile_browser'               => 'UC Browser',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\UcMobile(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -119,20 +120,16 @@ class Ucweb
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('UC Browser', 'UCBrowser', 'UCWEB', 'Browser');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -149,13 +146,20 @@ class Ucweb
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
+        $engines = array(
+            new Webkit(),
+            new U3(),
+        );
 
-        return $handler;
+        $chain = new Chain();
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new UnknownEngine());
+
+        return $chain->detect();
     }
 }

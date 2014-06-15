@@ -214,7 +214,6 @@ class TechniSatMultyVisionIsio
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

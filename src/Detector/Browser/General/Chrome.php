@@ -41,11 +41,9 @@ namespace BrowserDetector\Detector\Browser\General;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
@@ -86,8 +84,6 @@ class Chrome
 
             // browser
             'mobile_browser'               => 'Chrome',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -164,9 +160,9 @@ class Chrome
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Chrome
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -174,11 +170,7 @@ class Chrome
 
         $searches = array('Chrome', 'CrMo', 'CriOS');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -199,7 +191,7 @@ class Chrome
      */
     public function detectEngine()
     {
-        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORONLY);
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         if ($version >= 28) {
             $engine = new Blink();

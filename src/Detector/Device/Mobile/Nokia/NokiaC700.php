@@ -186,7 +186,7 @@ class NokiaC700
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        $browserVersion = $browser->getCapability('mobile_browser_version')->getVersion(
+        $browserVersion = $browser->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -80,8 +80,6 @@ class Bot80Legs
 
             // browser
             'mobile_browser'               => '80Legs',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => null, // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -129,20 +127,16 @@ class Bot80Legs
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\Bot80Legs
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('80legs', '008');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

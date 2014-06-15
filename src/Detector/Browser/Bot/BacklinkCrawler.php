@@ -79,8 +79,6 @@ class BacklinkCrawler
 
             // browser
             'mobile_browser'               => 'BacklinkCrawler',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'www.backlinktest.com', // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

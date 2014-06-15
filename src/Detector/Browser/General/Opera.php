@@ -82,8 +82,6 @@ class Opera
 
             // browser
             'mobile_browser'               => 'Opera',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Opera(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -144,9 +142,9 @@ class Opera
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Opera
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -154,11 +152,7 @@ class Opera
 
         $searches = array('Version', 'Opera', 'OPR');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -179,7 +173,7 @@ class Opera
      */
     public function detectEngine()
     {
-        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORONLY);
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         if ($version >= 15) {
             $engine = new Blink();

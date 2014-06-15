@@ -79,8 +79,6 @@ class YahooExternalCache
 
             // browser
             'mobile_browser'               => 'YahooExternalCache',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Yahoo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

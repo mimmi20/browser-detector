@@ -85,8 +85,6 @@ class Android
 
             // browser
             'mobile_browser'               => 'Android Webkit',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Google(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -165,9 +163,9 @@ class Android
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Android
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -181,28 +179,15 @@ class Android
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
-        if (!$this->getCapability('mobile_browser_version')->getVersion()) {
-            if ($this->utils->checkIfContains('android eclair', true)) {
-                $this->setCapability(
-                    'mobile_browser_version',
-                    $detector->setVersion('2.1')
-                );
-            }
+        if ($this->utils->checkIfContains('android eclair', true)) {
+            return $detector->setVersion('2.1');
+        }
 
-            if ($this->utils->checkIfContains('gingerbread', true)) {
-                $this->setCapability(
-                    'mobile_browser_version',
-                    $detector->setVersion('2.3')
-                );
-            }
+        if ($this->utils->checkIfContains('gingerbread', true)) {
+            return $detector->setVersion('2.3');
         }
 
         $doMatch = preg_match(
@@ -210,12 +195,7 @@ class Android
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -223,12 +203,7 @@ class Android
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -236,12 +211,7 @@ class Android
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($safariHelper->mapSafariVersions($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -249,20 +219,12 @@ class Android
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-
-            return $this;
+            return $detector->setVersion($matches[1]);
         }
 
         $searches = array('Version', 'Safari', 'JUC \(Linux\; U\;');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -322,7 +284,7 @@ class Android
             $engine->setCapability('bmp', true);
         }
 
-        $browserVersion = $this->getCapability('mobile_browser_version')->getVersion(
+        $browserVersion = $this->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

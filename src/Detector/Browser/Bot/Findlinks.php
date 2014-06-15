@@ -80,8 +80,6 @@ class Findlinks
 
             // browser
             'mobile_browser'               => 'findlinks',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'wortschatz.uni-leipzig.de', // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -129,20 +127,16 @@ class Findlinks
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\Findlinks
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('findlinks');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

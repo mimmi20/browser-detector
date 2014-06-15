@@ -151,7 +151,6 @@ class Symbianos
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new NokiaBrowser());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

@@ -68,7 +68,7 @@ class GeneralMobile
      * @var DeviceType\MobilePhone
      */
     private $deviceType = null;
-    
+
     /**
      * the detected browser properties
      *
@@ -172,7 +172,7 @@ class GeneralMobile
         if (null === $this->deviceType) {
             $this->deviceType = new DeviceType\MobilePhone();
         }
-        
+
         return $this->deviceType;
     }
 
@@ -217,8 +217,7 @@ class GeneralMobile
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 
     /**

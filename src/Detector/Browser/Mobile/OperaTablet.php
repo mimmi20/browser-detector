@@ -41,11 +41,9 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -84,8 +82,6 @@ class OperaTablet
 
             // browser
             'mobile_browser'               => 'Opera Tablet',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Opera(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -132,20 +128,16 @@ class OperaTablet
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Mobile\OperaTablet
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Version', 'Opera Mobi', 'Opera');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -166,7 +158,7 @@ class OperaTablet
      */
     public function detectEngine()
     {
-        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORONLY);
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         if ($version >= 14) {
             $engine = new Blink();

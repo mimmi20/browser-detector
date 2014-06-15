@@ -196,7 +196,7 @@ class WindowsPhoneOs
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 
-        $browserVersion = (float)$browser->getCapability('mobile_browser_version')->getVersion(
+        $browserVersion = (float)$browser->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

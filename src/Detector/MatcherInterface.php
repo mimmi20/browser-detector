@@ -67,13 +67,6 @@ interface MatcherInterface
     public function canHandle();
 
     /**
-     * detects the operating system name (platform) from the given user agent
-     *
-     * @return \StdClass
-     */
-    public function detect();
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

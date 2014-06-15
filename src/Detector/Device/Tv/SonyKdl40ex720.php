@@ -201,7 +201,6 @@ class SonyKdl40ex720
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

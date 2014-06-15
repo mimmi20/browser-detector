@@ -80,8 +80,6 @@ class MyEnginesBot
 
             // browser
             'mobile_browser'               => 'MyEngines Bot',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'www.d-o-m-a-i-n.de', // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -119,20 +117,16 @@ class MyEnginesBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\MyEnginesBot
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('MyEngines-Bot', 'Version: ');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

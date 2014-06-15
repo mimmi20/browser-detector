@@ -81,8 +81,6 @@ class Sharp
 
             // browser
             'mobile_browser'               => 'Sharp',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Sharp(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

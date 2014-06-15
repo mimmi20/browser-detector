@@ -80,8 +80,6 @@ class ApacheHttpClient
 
             // browser
             'mobile_browser'               => 'Apache-HttpClient',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Apache(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -119,20 +117,16 @@ class ApacheHttpClient
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\ApacheHttpClient
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Apache\-HttpClient');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

@@ -83,8 +83,6 @@ class TelecaObigo
 
             // browser
             'mobile_browser'               => 'Teleca-Obigo',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Obigo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -123,9 +121,9 @@ class TelecaObigo
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -135,11 +133,7 @@ class TelecaObigo
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-
-            return $this;
+            return $detector->setVersion($matches[1]);
         }
 
         $doMatch = preg_match(
@@ -147,11 +141,7 @@ class TelecaObigo
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-
-            return $this;
+            return $detector->setVersion($matches[1]);
         }
 
         $searches = array(
@@ -160,11 +150,7 @@ class TelecaObigo
             'Obigo\-Q', 'Obigo\/Q', 'Teleca\/Q'
         );
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

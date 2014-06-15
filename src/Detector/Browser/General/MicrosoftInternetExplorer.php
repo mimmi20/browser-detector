@@ -105,8 +105,6 @@ class MicrosoftInternetExplorer
 
             // browser
             'mobile_browser'               => 'Internet Explorer',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -200,9 +198,9 @@ class MicrosoftInternetExplorer
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -211,28 +209,16 @@ class MicrosoftInternetExplorer
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion($matches[1])
-            );
-
-            return $this;
+            return $detector->setVersion($matches[1]);
         }
 
         foreach ($this->patterns as $pattern => $version) {
             if (preg_match($pattern, $this->useragent)) {
-                $this->setCapability(
-                    'mobile_browser_version', $detector->setVersion($version)
-                );
-
-                return $this;
+                return $detector->setVersion($version);
             }
         }
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->setVersion('')
-        );
-
-        return $this;
+        return $detector->setVersion('');
     }
 
     /**
@@ -272,11 +258,11 @@ class MicrosoftInternetExplorer
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
     ) {
-        $engineVersion = (int)$engine->getCapability('renderingengine_version')->getVersion(
+        $engineVersion = (int)$engine->detectVersion()->getVersion(
             Version::MAJORONLY
         );
 
-        $browserVersion  = $this->getCapability('mobile_browser_version');
+        $browserVersion  = $this->detectVersion();
         $detectedVersion = $browserVersion->getVersion(Version::MAJORONLY);
 
         switch ($engineVersion) {

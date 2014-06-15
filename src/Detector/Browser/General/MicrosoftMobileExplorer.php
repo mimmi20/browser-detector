@@ -83,8 +83,6 @@ class MicrosoftMobileExplorer
 
             // browser
             'mobile_browser'               => 'IEMobile',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -146,34 +144,24 @@ class MicrosoftMobileExplorer
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion('9.0')
-            );
-            return $this;
+            return $detector->setVersion('9.0');
         }
 
         if ($this->utils->checkIfContains('WPDesktop')) {
-            $this->setCapability(
-                'mobile_browser_version', $detector->setVersion('10.0')
-            );
-            return $this;
+            return $detector->setVersion('10.0');
         }
 
         $searches = array('IEMobile', 'MSIE');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -244,7 +232,7 @@ class MicrosoftMobileExplorer
         $engine->setCapability('supports_background_sounds', false);
         $engine->setCapability('supports_java_applets', false);
 
-        $version = (float)$this->getCapability('mobile_browser_version')->getVersion(
+        $version = (float)$this->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

@@ -79,8 +79,6 @@ class CrystalSemanticsBot
 
             // browser
             'mobile_browser'               => 'CrystalSemanticsBot',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'CrystalSemantics', // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

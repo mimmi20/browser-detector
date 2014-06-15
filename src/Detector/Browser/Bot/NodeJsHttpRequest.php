@@ -79,8 +79,6 @@ class NodeJsHttpRequest
 
             // browser
             'mobile_browser'               => 'node.js HTTP_Request',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Unknown(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

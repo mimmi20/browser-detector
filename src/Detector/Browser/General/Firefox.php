@@ -84,8 +84,6 @@ class Firefox
 
             // browser
             'mobile_browser'               => 'Firefox',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\MozillaFoundation(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -173,9 +171,9 @@ class Firefox
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Firefox
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -185,11 +183,7 @@ class Firefox
             'Firefox', 'Minefield', 'Shiretoko', 'BonEcho', 'Namoroka', 'Fennec'
         );
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

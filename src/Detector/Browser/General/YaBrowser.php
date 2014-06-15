@@ -41,10 +41,8 @@ namespace BrowserDetector\Detector\Browser\General;
  */
 
 use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
@@ -83,8 +81,6 @@ class YaBrowser
 
             // browser
             'mobile_browser'               => 'Yandex Browser',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Yandex(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -132,20 +128,16 @@ class YaBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\YaBrowser
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('YaBrowser');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -156,7 +148,7 @@ class YaBrowser
      */
     public function detectEngine()
     {
-        $version = $this->getCapability('mobile_browser_version')->getVersion(Version::MAJORMINOR);
+        $version = $this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if ($version >= '1.20') {
             $engine = new Blink();

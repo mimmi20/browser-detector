@@ -75,8 +75,6 @@ class MicrosoftExcel extends MicrosoftOffice
 
             // browser
             'mobile_browser'               => 'Excel',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -138,9 +136,9 @@ class MicrosoftExcel extends MicrosoftOffice
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -151,16 +149,10 @@ class MicrosoftExcel extends MicrosoftOffice
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($this->_mapVersion($matches[1]))
-            );
-            return $this;
+            return $detector->setVersion($this->_mapVersion($matches[1]));
         }
 
-        parent::_detectVersion();
-
-        return $this;
+        return parent::detectVersion();
     }
 
     /**

@@ -81,8 +81,6 @@ class DoCoMo
 
             // browser
             'mobile_browser'               => 'DoCoMo',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\DoCoMo(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

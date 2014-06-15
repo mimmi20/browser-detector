@@ -81,8 +81,6 @@ class Siemens
 
             // browser
             'mobile_browser'               => 'Siemens',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Siemens(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

@@ -80,8 +80,6 @@ class Omniweb
 
             // browser
             'mobile_browser'               => 'Omniweb',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\OmniDevelopment(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -119,20 +117,16 @@ class Omniweb
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Omniweb
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Version', 'Omniweb', 'OmniWeb');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

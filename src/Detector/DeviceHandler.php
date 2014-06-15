@@ -347,7 +347,7 @@ abstract class DeviceHandler
         $browser = new Browser\UnknownBrowser();
         $browser->setUserAgent($this->_useragent);
 
-        return $browser->detect();
+        return $browser;
     }
 
     /**

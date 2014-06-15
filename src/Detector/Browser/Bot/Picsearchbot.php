@@ -80,8 +80,6 @@ class Picsearchbot
 
             // browser
             'mobile_browser'               => 'Picsearchbot',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'www.picsearch.com', // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -119,20 +117,16 @@ class Picsearchbot
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\Picsearchbot
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Picsearchbot', 'psbot');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

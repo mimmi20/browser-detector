@@ -1697,9 +1697,14 @@ class Result implements \Serializable
                     break;
                 case 'mobile_browser_version':
                 case 'controlcap_advertised_browser_version':
-                    $value = $browser->getCapability('mobile_browser_version');
+                    $value = $browser->detectVersion();
                     break;
                 case 'mobile_browser_bits':
+                    $detector = new Bits\Browser();
+                    $detector->setUserAgent($this->getCapability('useragent', false));
+
+                    $value = $detector->getBits();
+                    break;
                 case 'mobile_browser_modus':
                 case 'can_skip_aligned_link_row':
                 case 'device_claims_web_support':

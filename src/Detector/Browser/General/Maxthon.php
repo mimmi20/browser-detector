@@ -84,8 +84,6 @@ class Maxthon
 
             // browser
             'mobile_browser'               => 'Maxthon',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Maxthon(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -149,34 +147,26 @@ class Maxthon
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\Maxthon
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         if (false !== strpos($this->useragent, 'MyIE2')) {
-            $this->setCapability('mobile_browser_version', $detector->setVersion('2.0'));
-
-            return $this;
+            return $detector->setVersion('2.0');
         }
 
         if (false !== strpos($this->useragent, 'MyIE')) {
-            $this->setCapability('mobile_browser_version', $detector->setVersion('1.0'));
-
-            return $this;
+            return $detector->setVersion('1.0');
         }
 
         $detector->setDefaulVersion('2.0');
 
         $searches = array('Maxthon', 'Version');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

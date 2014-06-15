@@ -201,7 +201,6 @@ class MacMini
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 
-        $device = $chain->detect();
-        return $device->detect();
+        return $chain->detect();
     }
 }

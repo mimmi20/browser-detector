@@ -83,8 +83,6 @@ class MicrosoftOffice
 
             // browser
             'mobile_browser'               => 'Office',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -152,9 +150,9 @@ class MicrosoftOffice
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -165,23 +163,13 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($this->_mapVersion($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($this->_mapVersion($matches[1]));
         }
 
         $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($this->_mapVersion($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($this->_mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -189,12 +177,7 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($this->_mapVersion($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($this->_mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -202,19 +185,10 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            $this->setCapability(
-                'mobile_browser_version',
-                $detector->setVersion($this->_mapVersion($matches[1]))
-            );
-
-            return $this;
+            return $detector->setVersion($this->_mapVersion($matches[1]));
         }
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->setVersion('')
-        );
-
-        return $this;
+        return $detector->setVersion('');
     }
 
     protected function _mapVersion($version)

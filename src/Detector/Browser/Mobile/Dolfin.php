@@ -80,8 +80,6 @@ class Dolfin
 
             // browser
             'mobile_browser'               => 'Dolfin',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\MopoTab(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
@@ -136,20 +134,16 @@ class Dolfin
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\Version
      */
-    protected function _detectVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         $searches = array('Dolphin HD', 'Dolphin\/INT\-', 'Dolphin\/INT', 'Dolfin', 'Dolphin');
 
-        $this->setCapability(
-            'mobile_browser_version', $detector->detectVersion($searches)
-        );
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**

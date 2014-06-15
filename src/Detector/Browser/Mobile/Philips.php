@@ -81,8 +81,6 @@ class Philips
 
             // browser
             'mobile_browser'               => 'Philips',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Philips(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

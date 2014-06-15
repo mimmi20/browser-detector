@@ -158,7 +158,7 @@ class PlayStationPortable
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Browser\Mobile\NetFront
      */
     public function detectBrowser()
     {

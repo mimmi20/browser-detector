@@ -79,8 +79,6 @@ class Searchmetrics
 
             // browser
             'mobile_browser'               => 'Searchmetrics Bot',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => 'www.searchmetrics.com', // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 

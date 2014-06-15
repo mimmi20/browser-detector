@@ -79,8 +79,6 @@ class WindowsPhoneSearch
 
             // browser
             'mobile_browser'               => 'Windows Phone Search',
-            'mobile_browser_version'       => null,
-            'mobile_browser_bits'          => null, // not in wurfl
             'mobile_browser_manufacturer'  => new Company\Microsoft(), // not in wurfl
             'mobile_browser_modus'         => null, // not in wurfl
 
