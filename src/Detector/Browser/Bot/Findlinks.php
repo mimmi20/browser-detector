@@ -121,7 +121,7 @@ class Findlinks
      */
     public function getName()
     {
-        return 'unknown';
+        return 'findlinks';
     }
 
     /**
@@ -141,7 +141,7 @@ class Findlinks
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Bot();
     }
 
     /**
