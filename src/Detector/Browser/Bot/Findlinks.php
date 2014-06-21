@@ -63,42 +63,25 @@ class Findlinks
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Browser\Bot\Findlinks
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // product info
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
 
-        $this->properties = array(
-            // kind of device
-            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
+        // pdf
+        'pdf_support'                  => true,
 
-            // browser
-            'mobile_browser'               => 'findlinks',
-            'mobile_browser_manufacturer'  => 'wortschatz.uni-leipzig.de', // not in wurfl
-            'mobile_browser_modus'         => null, // not in wurfl
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
 
-            // product info
-            'can_skip_aligned_link_row'    => false,
-            'device_claims_web_support'    => false,
-
-            // pdf
-            'pdf_support'                  => true,
-
-            // bugs
-            'empty_option_value_support'   => true,
-            'basic_authentication_support' => true,
-            'post_method_support'          => true,
-
-            // rss
-            'rss_support'                  => false,
-        );
-    }
+        // rss
+        'rss_support'                  => false,
+    );
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -131,7 +114,7 @@ class Findlinks
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\WortschatzUniLeipzig();
     }
 
     /**
