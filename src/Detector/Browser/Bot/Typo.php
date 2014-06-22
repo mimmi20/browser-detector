@@ -140,7 +140,7 @@ class Typo
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Bot();
     }
 
     /**

@@ -141,7 +141,7 @@ class SeoEngineWorldBot
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Bot();
     }
 
     /**

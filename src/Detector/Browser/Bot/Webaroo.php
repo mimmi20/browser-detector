@@ -144,7 +144,7 @@ class Webaroo
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Bot();
     }
 
     /**
