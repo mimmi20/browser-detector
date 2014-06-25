@@ -63,7 +63,25 @@ class TweetedTimesBot
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
+
+        // product info
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+
+        // pdf
+        'pdf_support'                  => true,
+
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+
+        // rss
+        'rss_support'                  => false,
+    );
 
     /**
      * Class Constructor
@@ -74,29 +92,7 @@ class TweetedTimesBot
     {
         parent::__construct();
 
-        $this->properties = array(
-            // kind of device
-            'browser_type'                 => new BrowserType\Bot(), // not in wurfl
-
-            // browser
-            'mobile_browser'               => 'TweetedTimes Bot',
-            'mobile_browser_modus'         => null, // not in wurfl
-
-            // product info
-            'can_skip_aligned_link_row'    => false,
-            'device_claims_web_support'    => false,
-
-            // pdf
-            'pdf_support'                  => true,
-
-            // bugs
-            'empty_option_value_support'   => true,
-            'basic_authentication_support' => true,
-            'post_method_support'          => true,
-
-            // rss
-            'rss_support'                  => false,
-        );
+        $this->properties = ;
     }
 
     /**
@@ -120,7 +116,7 @@ class TweetedTimesBot
      */
     public function getName()
     {
-        return 'unknown';
+        return 'TweetedTimes Bot';
     }
 
     /**
