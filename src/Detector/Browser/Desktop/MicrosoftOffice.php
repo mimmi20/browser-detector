@@ -66,41 +66,25 @@ class MicrosoftOffice
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
 
-    /**
-     * Class Constructor
-     *
-     * @return BrowserHandler
-     */
-    public function __construct()
-    {
-        parent::__construct();
+        // product info
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
 
-        $this->properties = array(
-            // kind of device
-            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
+        // pdf
+        'pdf_support'                  => true,
 
-            // browser
-            'mobile_browser'               => 'Office',
-            'mobile_browser_modus'         => null, // not in wurfl
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
 
-            // product info
-            'can_skip_aligned_link_row'    => true,
-            'device_claims_web_support'    => true,
-
-            // pdf
-            'pdf_support'                  => true,
-
-            // bugs
-            'empty_option_value_support'   => true,
-            'basic_authentication_support' => true,
-            'post_method_support'          => true,
-
-            // rss
-            'rss_support'                  => false,
-        );
-    }
+        // rss
+        'rss_support'                  => false,
+    );
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -153,7 +137,7 @@ class MicrosoftOffice
      */
     public function getName()
     {
-        return 'unknown';
+        return 'Office';
     }
 
     /**
@@ -173,7 +157,7 @@ class MicrosoftOffice
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Application();
     }
 
     /**

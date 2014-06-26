@@ -139,7 +139,7 @@ class WeTabBrowser
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Browser();
     }
 
     /**

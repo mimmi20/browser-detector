@@ -62,7 +62,25 @@ class Boxee
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
+
+        // product info
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
+
+        // pdf
+        'pdf_support'                  => true,
+
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+
+        // rss
+        'rss_support'                  => false,
+    );
 
     /**
      * Class Constructor
@@ -73,29 +91,7 @@ class Boxee
     {
         parent::__construct();
 
-        $this->properties = array(
-            // kind of device
-            'browser_type'                 => new BrowserType\Browser(), // not in wurfl
-
-            // browser
-            'mobile_browser'               => 'Boxee',
-            'mobile_browser_modus'         => null, // not in wurfl
-
-            // product info
-            'can_skip_aligned_link_row'    => true,
-            'device_claims_web_support'    => true,
-
-            // pdf
-            'pdf_support'                  => true,
-
-            // bugs
-            'empty_option_value_support'   => true,
-            'basic_authentication_support' => true,
-            'post_method_support'          => true,
-
-            // rss
-            'rss_support'                  => false,
-        );
+        $this->properties = ;
     }
 
     /**
@@ -115,7 +111,7 @@ class Boxee
      */
     public function getName()
     {
-        return 'unknown';
+        return 'Boxee';
     }
 
     /**
@@ -135,7 +131,7 @@ class Boxee
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new BrowserType\Browser();
     }
 
     /**
