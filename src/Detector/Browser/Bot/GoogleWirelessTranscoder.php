@@ -40,13 +40,7 @@ namespace BrowserDetector\Detector\Browser\Bot;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 
-use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Browser\General\GoogleWirelessTranscoder as GoogleWirelessTranscoderBase;
 
 /**
  * @category  BrowserDetector
@@ -54,115 +48,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class GoogleWirelessTranscoder
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+class GoogleWirelessTranscoder extends GoogleWirelessTranscoderBase
 {
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = array(
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
-
-        // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
-
-        // pdf
-        'pdf_support'                  => true,
-
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-
-        // rss
-        'rss_support'                  => false,
-    );
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Google Wireless Transcoder')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Google Wireless Transcoder';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Google();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new BrowserType\BotTrancoder();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Google Wireless Transcoder');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 44297;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\OsHandler
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
+    // nothing to do here
 }

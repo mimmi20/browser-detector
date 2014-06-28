@@ -1,5 +1,5 @@
 <?php
-namespace BrowserDetector\Detector\Browser\Mobile;
+namespace BrowserDetector\Detector\Browser\General;
 
 /**
  * PHP version 5.3
@@ -40,12 +40,13 @@ namespace BrowserDetector\Detector\Browser\Mobile;
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
 
-use BrowserDetector\Detector\Browser\General\CfNetwork as CfNetworkBase;
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -53,7 +54,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class Ipick extends CfNetworkBase
+class GoogleWirelessTranscoder
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties
@@ -65,7 +68,7 @@ class Ipick extends CfNetworkBase
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
 
         // pdf
@@ -87,7 +90,7 @@ class Ipick extends CfNetworkBase
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iPick')) {
+        if (!$this->utils->checkIfContains('Google Wireless Transcoder')) {
             return false;
         }
 
@@ -101,7 +104,7 @@ class Ipick extends CfNetworkBase
      */
     public function getName()
     {
-        return 'iPick';
+        return 'Google Wireless Transcoder';
     }
 
     /**
@@ -111,7 +114,7 @@ class Ipick extends CfNetworkBase
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Google();
     }
 
     /**
@@ -121,7 +124,7 @@ class Ipick extends CfNetworkBase
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\BotTrancoder();
     }
 
     /**
@@ -134,20 +137,30 @@ class Ipick extends CfNetworkBase
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('iPick');
+        $searches = array('Google Wireless Transcoder');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 44297;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System
+     * returns the OS Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\OsHandler
      */
     public function detectEngine()
     {
-        $handler = new Webkit();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler;
