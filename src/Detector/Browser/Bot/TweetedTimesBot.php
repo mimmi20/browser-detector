@@ -84,18 +84,6 @@ class TweetedTimesBot
     );
 
     /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Browser\Bot\TweetedTimesBot
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = ;
-    }
-
-    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return bool
