@@ -79,7 +79,7 @@ class FirefoxOs
      */
     public function getName()
     {
-        return 'FirefoxOs';
+        return 'FirefoxOS';
     }
 
     /**

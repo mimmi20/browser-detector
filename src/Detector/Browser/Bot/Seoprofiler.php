@@ -114,7 +114,7 @@ class Seoprofiler
      */
     public function getManufacturer()
     {
-        return new Company\SeoProfiler();
+        return new Company\Axandra();
     }
 
     /**
