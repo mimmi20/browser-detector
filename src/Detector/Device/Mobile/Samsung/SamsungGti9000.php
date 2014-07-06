@@ -196,7 +196,7 @@ class SamsungGti9000
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 2.1:
-                $engineVersion = $engine->getCapability('renderingengine_version')->getVersion(Version::MAJORMINOR);
+                $engineVersion = $engine->detectVersion()->getVersion(Version::MAJORMINOR);
 
                 if ('530.17' == $engineVersion) {
                     $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
