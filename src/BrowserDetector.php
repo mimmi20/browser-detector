@@ -1,46 +1,46 @@
 <?php
-namespace BrowserDetector;
+/**
+ * Browser Detection class
+ *
+ * PHP version 5.3
+ *
+ * LICENSE:
+ *
+ * Copyright (c) 2013, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ *
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * * Redistributions of source code must retain the above copyright notice,
+ *   this list of conditions and the following disclaimer.
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
+ *   and/or other materials provided with the distribution.
+ * * Neither the name of the authors nor the names of its contributors may be
+ *   used to endorse or promote products derived from this software without
+ *   specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @category  BrowserDetector
+ * @package   BrowserDetector
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @copyright 2012-2013 Thomas Mueller
+ */
 
-    /**
-     * Browser Detection class
-     *
-     * PHP version 5.3
-     *
-     * LICENSE:
-     *
-     * Copyright (c) 2013, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
-     *
-     * All rights reserved.
-     *
-     * Redistribution and use in source and binary forms, with or without
-     * modification, are permitted provided that the following conditions are met:
-     *
-     * * Redistributions of source code must retain the above copyright notice,
-     *   this list of conditions and the following disclaimer.
-     * * Redistributions in binary form must reproduce the above copyright notice,
-     *   this list of conditions and the following disclaimer in the documentation
-     *   and/or other materials provided with the distribution.
-     * * Neither the name of the authors nor the names of its contributors may be
-     *   used to endorse or promote products derived from this software without
-     *   specific prior written permission.
-     *
-     * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-     * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-     * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-     * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-     * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-     * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-     * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-     * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-     * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-     * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-     * POSSIBILITY OF SUCH DAMAGE.
-     *
-     * @category  BrowserDetector
-     * @package   BrowserDetector
-     * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
-     * @copyright 2012-2013 Thomas Mueller
-     */
+namespace BrowserDetector;
 
 use BrowserDetector\Input\Browscap;
 use BrowserDetector\Input\BrowscapDetector;
@@ -75,7 +75,7 @@ class BrowserDetector
     /**
      * a \WurflCache\Adapter\AdapterInterface object
      *
-     * @var CacheInterface
+     * @var \WurflCache\Adapter\AdapterInterface
      */
     private $cache = null;
 
@@ -120,17 +120,13 @@ class BrowserDetector
     }
 
     /**
-     * sets the logger
+     * returns the actual Cache Adapter
      *
-     * @param LoggerInterface $logger
-     *
-     * @return BrowserDetector
+     * @return \WurflCache\Adapter\AdapterInterface
      */
-    public function setLogger(LoggerInterface $logger)
+    public function getCache()
     {
-        $this->logger = $logger;
-
-        return $this;
+        return $this->cache;
     }
 
     /**
@@ -152,6 +148,40 @@ class BrowserDetector
         $this->cachePrefix = $prefix;
 
         return $this;
+    }
+
+    /**
+     * returns the actual cache prefix
+     *
+     * @return string
+     */
+    public function getCachePrefix()
+    {
+        return $this->cachePrefix;
+    }
+
+    /**
+     * sets the logger
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return BrowserDetector
+     */
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+
+        return $this;
+    }
+
+    /**
+     * returns the logger
+     *
+     * @return \Psr\Log\LoggerInterface
+     */
+    public function getLogger()
+    {
+        return $this->logger;
     }
 
     /**
@@ -246,13 +276,13 @@ class BrowserDetector
             $this->setInterface(self::INTERFACE_INTERNAL);
         }
 
-        if (null !== $this->cache) {
-            $this->interface->setCache($this->cache)
-                ->setCachePrefix($this->cachePrefix);
+        if (null !== $this->getCache()) {
+            $this->interface->setCache($this->getCache())
+                ->setCachePrefix($this->getCachePrefix());
         }
 
-        if (null !== $this->logger) {
-            $this->interface->setLogger($this->logger);
+        if (null !== $this->getLogger()) {
+            $this->interface->setLogger($this->getLogger());
         }
 
         $this->interface->setAgent($this->agent);
@@ -283,15 +313,15 @@ class BrowserDetector
             );
         }
 
-        $cacheId = $this->cachePrefix . $this->agent; //hash('sha512', $this->cachePrefix . $this->agent);
+        $cacheId = $this->getCachePrefix() . $this->agent; //hash('sha512', $this->getCachePrefix() . $this->agent);
         $result  = null;
         $success = false;
 
-        if (!$forceDetect && null !== $this->cache) {
-            $result = $this->cache->getItem($cacheId, $success);
+        if (!$forceDetect && null !== $this->getCache()) {
+            $result = $this->getCache()->getItem($cacheId, $success);
         }
 
-        if ($forceDetect || null === $this->cache || !$success || !($result instanceof Detector\Result)) {
+        if ($forceDetect || null === $this->getCache() || !$success || !($result instanceof Detector\Result)) {
             $result = $this->getInterface()->getBrowser();
 
             if (!($result instanceof Detector\Result)) {
@@ -301,8 +331,8 @@ class BrowserDetector
                 );
             }
 
-            if (!$forceDetect && null !== $this->cache) {
-                $this->cache->setItem($cacheId, $result);
+            if (!$forceDetect && null !== $this->getCache()) {
+                $this->getCache()->setItem($cacheId, $result);
             }
         }
 

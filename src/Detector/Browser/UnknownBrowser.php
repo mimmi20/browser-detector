@@ -1,6 +1,4 @@
 <?php
-namespace BrowserDetector\Detector\Browser;
-
 /**
  * PHP version 5.3
  *
@@ -39,6 +37,8 @@ namespace BrowserDetector\Detector\Browser;
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
+
+namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;

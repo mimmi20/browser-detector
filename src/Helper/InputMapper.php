@@ -1,6 +1,4 @@
 <?php
-namespace BrowserDetector\Helper;
-
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
  *
@@ -41,6 +39,9 @@ namespace BrowserDetector\Helper;
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2013 Thomas Mueller
  */
+
+namespace BrowserDetector\Helper;
+
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;

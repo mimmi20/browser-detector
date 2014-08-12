@@ -1,6 +1,4 @@
 <?php
-namespace BrowserDetector\Input;
-
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
@@ -41,6 +39,8 @@ namespace BrowserDetector\Input;
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2013 Thomas Mueller
  */
+
+namespace BrowserDetector\Input;
 
 use BrowserDetector\Detector\Bits as BitsDetector;
 use BrowserDetector\Detector\Company;
