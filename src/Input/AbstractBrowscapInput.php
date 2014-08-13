@@ -114,9 +114,9 @@ abstract class AbstractBrowscapInput extends Core
 
         $mapper = new InputMapper();
 
-        $browserName = $this->detectProperty($parserResult, 'Browser');
+        $browserName = $this->detectProperty($parserResult, 'browser');
         $browserVersion = $this->detectProperty(
-            $parserResult, 'Version', true, $browserName
+            $parserResult, 'version', true, $browserName
         );
 
         $browserName    = $mapper->mapBrowserName(trim($browserName));
@@ -125,11 +125,11 @@ abstract class AbstractBrowscapInput extends Core
         );
 
         $browserBits = $this->detectProperty(
-            $parserResult, 'Browser_Bits', true, $browserName
+            $parserResult, 'browser_bits', true, $browserName
         );
 
         $browserMaker = $this->detectProperty(
-            $parserResult, 'Browser_Maker', true, $browserName
+            $parserResult, 'browser_maker', true, $browserName
         );
 
         $result->setCapability('mobile_browser', $browserName);
@@ -140,36 +140,36 @@ abstract class AbstractBrowscapInput extends Core
             $mapper->mapBrowserMaker($browserMaker, $browserName)
         );
 
-        if (!empty($parserResult['Browser_Type'])) {
-            $browserType = $parserResult['Browser_Type'];
+        if (!empty($parserResult->browser_type)) {
+            $browserType = $parserResult->browser_type;
         } else {
             $browserType = null;
         }
 
         $result->setCapability('browser_type', $browserType);
 
-        if (!empty($parserResult['Browser_Modus']) && 'unknown' !== $parserResult['Browser_Modus']) {
-            $browserModus = $parserResult['Browser_Modus'];
+        if (!empty($parserResult->browser_modus) && 'unknown' !== $parserResult->browser_modus) {
+            $browserModus = $parserResult->browser_modus;
         } else {
-            $browserModus = '';
+            $browserModus = null;
         }
 
         $result->setCapability('mobile_browser_modus', $browserModus);
 
-        $platform = $this->detectProperty($parserResult, 'Platform');
+        $platform = $this->detectProperty($parserResult, 'platform');
 
         $platformVersion = $this->detectProperty(
-            $parserResult, 'Platform_Version', true, $platform
+            $parserResult, 'platform_version', true, $platform
         );
 
         $platformVersion = $mapper->mapOsVersion(trim($platformVersion), trim($platform));
         $platform        = $mapper->mapOsName(trim($platform));
 
         $platformbits  = $this->detectProperty(
-            $parserResult, 'Platform_Bits', true, $platform
+            $parserResult, 'platform_bits', true, $platform
         );
         $platformMaker = $this->detectProperty(
-            $parserResult, 'Platform_Maker', true, $platform
+            $parserResult, 'platform_maker', true, $platform
         );
 
         $result->setCapability('device_os', $platform);
@@ -177,27 +177,27 @@ abstract class AbstractBrowscapInput extends Core
         $result->setCapability('device_os_bits', $platformbits);
         $result->setCapability('device_os_manufacturer', $platformMaker);
 
-        $deviceName = $this->detectProperty($parserResult, 'Device_Code_Name');
-        $deviceType = $this->detectProperty($parserResult, 'Device_Type');
+        $deviceName = $this->detectProperty($parserResult, 'device_code_name');
+        $deviceType = $this->detectProperty($parserResult, 'device_type');
 
         $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
 
         $deviceName = $mapper->mapDeviceName($deviceName);
 
         $deviceMaker = $this->detectProperty(
-            $parserResult, 'Device_Maker', true, $deviceName
+            $parserResult, 'device_maker', true, $deviceName
         );
 
         $deviceMarketingName = $this->detectProperty(
-            $parserResult, 'Device_Name', true, $deviceName
+            $parserResult, 'device_name', true, $deviceName
         );
 
         $deviceBrandName = $this->detectProperty(
-            $parserResult, 'Device_Brand_Name', true, $deviceName
+            $parserResult, 'device_brand_name', true, $deviceName
         );
 
         $devicePointingMethod = $this->detectProperty(
-            $parserResult, 'Device_Pointing_Method', true, $deviceName
+            $parserResult, 'device_pointing_method', true, $deviceName
         );
 
         $result->setCapability('model_name', $deviceName);
@@ -206,14 +206,14 @@ abstract class AbstractBrowscapInput extends Core
         $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker($deviceMaker, $deviceName));
         $result->setCapability('pointing_method', $devicePointingMethod);
 
-        $engineName = $this->detectProperty($parserResult, 'RenderingEngine_Name');
+        $engineName = $this->detectProperty($parserResult, 'renderingengine_name');
 
         if ('unknown' === $engineName || '' === $engineName) {
             $engineName = null;
         }
 
         $engineMaker = $this->detectProperty(
-            $parserResult, 'RenderingEngine_Maker', true, $engineName
+            $parserResult, 'renderingengine_maker', true, $engineName
         );
 
         $result->setCapability(
@@ -226,89 +226,89 @@ abstract class AbstractBrowscapInput extends Core
         $result->setCapability('is_smarttv', $deviceType === 'TV Device');
         $result->setCapability('is_tablet', $deviceType === 'Tablet');
 
-        if (array_key_exists('isMobileDevice', $parserResult)) {
+        if (!empty($parserResult->ismobiledevice)) {
             $result->setCapability(
-                'is_wireless_device', $parserResult['isMobileDevice']
+                'is_wireless_device', $parserResult->ismobiledevice
             );
         }
 
-        if (isset($parserResult['isTablet'])) {
-            $result->setCapability('is_tablet', $parserResult['isTablet']);
+        if (!empty($parserResult->istablet)) {
+            $result->setCapability('is_tablet', $parserResult->istablet);
         } else {
-            $result->setCapability('is_tablet', false);
+            $result->setCapability('is_tablet', null);
         }
-        $result->setCapability('is_bot', $parserResult['Crawler']);
+        $result->setCapability('is_bot', $parserResult->crawler);
 
         $result->setCapability(
-            'is_syndication_reader', $parserResult['isSyndicationReader']
+            'is_syndication_reader', $parserResult->issyndicationreader
         );
 
-        if (!empty($parserResult['Frames'])) {
-            $framesSupport = $parserResult['Frames'];
+        if (!empty($parserResult->frames)) {
+            $framesSupport = $parserResult->frames;
         } else {
             $framesSupport = null;
         }
 
         $result->setCapability('xhtml_supports_frame', $mapper->mapFrameSupport($framesSupport));
 
-        if (!empty($parserResult['IFrames'])) {
-            $framesSupport = $parserResult['IFrames'];
+        if (!empty($parserResult->iframes)) {
+            $framesSupport = $parserResult->iframes;
         } else {
             $framesSupport = null;
         }
 
         $result->setCapability('xhtml_supports_iframe', $mapper->mapFrameSupport($framesSupport));
 
-        if (!empty($parserResult['Tables'])) {
-            $tablesSupport = $parserResult['Tables'];
+        if (!empty($parserResult->tables)) {
+            $tablesSupport = $parserResult->tables;
         } else {
             $tablesSupport = null;
         }
 
         $result->setCapability('xhtml_table_support', $tablesSupport);
 
-        if (!empty($parserResult['Cookies'])) {
-            $cookieSupport = $parserResult['Cookies'];
+        if (!empty($parserResult->cookies)) {
+            $cookieSupport = $parserResult->cookies;
         } else {
             $cookieSupport = null;
         }
 
         $result->setCapability('cookie_support', $cookieSupport);
 
-        if (!empty($parserResult['BackgroundSounds'])) {
-            $bgsoundSupport = $parserResult['BackgroundSounds'];
+        if (!empty($parserResult->backgroundsounds)) {
+            $bgsoundSupport = $parserResult->backgroundsounds;
         } else {
             $bgsoundSupport = null;
         }
 
         $result->setCapability('supports_background_sounds', $bgsoundSupport);
 
-        if (!empty($parserResult['VBScript'])) {
-            $vbSupport = $parserResult['VBScript'];
+        if (!empty($parserResult->vbscript)) {
+            $vbSupport = $parserResult->vbscript;
         } else {
             $vbSupport = null;
         }
 
         $result->setCapability('supports_vb_script', $vbSupport);
 
-        if (!empty($parserResult['JavaScript'])) {
-            $jsSupport = $parserResult['JavaScript'];
+        if (!empty($parserResult->javascript)) {
+            $jsSupport = $parserResult->javascript;
         } else {
             $jsSupport = null;
         }
 
         $result->setCapability('ajax_support_javascript', $jsSupport);
 
-        if (!empty($parserResult['JavaApplets'])) {
-            $appletsSupport = $parserResult['JavaApplets'];
+        if (!empty($parserResult->javaapplets)) {
+            $appletsSupport = $parserResult->javaapplets;
         } else {
             $appletsSupport = null;
         }
 
         $result->setCapability('supports_java_applets', $appletsSupport);
 
-        if (!empty($parserResult['ActiveXControls'])) {
-            $activexSupport = $parserResult['ActiveXControls'];
+        if (!empty($parserResult->activexcontrols)) {
+            $activexSupport = $parserResult->activexcontrols;
         } else {
             $activexSupport = null;
         }
@@ -321,17 +321,18 @@ abstract class AbstractBrowscapInput extends Core
     /**
      * checks the parser result for special keys
      *
-     * @param array   $allProperties  The parser result array
-     * @param string  $propertyName   The name of the property to detect
-     * @param boolean $depended       If TRUE the parameter $dependingValue has to be set
-     * @param string  $dependingValue An master value
+     * @param \stdClass $allProperties  The parser result array
+     * @param string    $propertyName   The name of the property to detect
+     * @param boolean   $depended       If TRUE the parameter $dependingValue has to be set
+     * @param string    $dependingValue An master value
      *
      * @return string|integer|boolean The value of the detected property
      */
     protected function detectProperty(
-        array $allProperties, $propertyName, $depended = false,
+        \stdClass $allProperties, $propertyName, $depended = false,
         $dependingValue = null
     ) {
+        $propertyName  = strtolower($propertyName);
         $propertyValue = (empty($allProperties[$propertyName]) ? null : trim($allProperties[$propertyName]));
 
         if (empty($propertyValue)
