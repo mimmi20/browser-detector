@@ -333,7 +333,7 @@ abstract class AbstractBrowscapInput extends Core
         $dependingValue = null
     ) {
         $propertyName  = strtolower($propertyName);
-        $propertyValue = (empty($allProperties[$propertyName]) ? null : trim($allProperties[$propertyName]));
+        $propertyValue = (empty($allProperties->$propertyName) ? null : trim($allProperties->$propertyName));
 
         if (empty($propertyValue)
             || '' == $propertyValue
