@@ -48,13 +48,6 @@ use BrowserDetector\Helper\InputMapper;
 abstract class AbstractBrowscapInput extends Core
 {
     /**
-     * the Browscap parser class
-     *
-     * @var \phpbrowscap\Browscap|\phpbrowscap\Detector
-     */
-    protected $parser = null;
-
-    /**
      * the location of the local ini file
      *
      * @var string
@@ -94,10 +87,7 @@ abstract class AbstractBrowscapInput extends Core
      * @throws \UnexpectedValueException
      * @return \phpbrowscap\Browscap
      */
-    protected function initParser()
-    {
-        return $this->parser;
-    }
+    abstract protected function initParser();
 
     /**
      * Gets the information about the browser by User Agent
@@ -107,8 +97,48 @@ abstract class AbstractBrowscapInput extends Core
      */
     public function getBrowser()
     {
-        $parserResult = $this->initParser()->getBrowser($this->_agent, true);
+        throw new \UnexpectedValueException('need to be overwritten by the child classes');
+    }
 
+    /**
+     * checks the parser result for special keys
+     *
+     * @param \stdClass $allProperties  The parser result array
+     * @param string    $propertyName   The name of the property to detect
+     * @param boolean   $depended       If TRUE the parameter $dependingValue has to be set
+     * @param string    $dependingValue An master value
+     *
+     * @return string|integer|boolean The value of the detected property
+     */
+    protected function detectProperty(
+        \stdClass $allProperties, $propertyName, $depended = false,
+        $dependingValue = null
+    ) {
+        $propertyName  = strtolower($propertyName);
+        $propertyValue = (empty($allProperties->$propertyName) ? null : trim($allProperties->$propertyName));
+
+        if (empty($propertyValue)
+            || '' == $propertyValue
+        ) {
+            $propertyValue = null;
+        }
+
+        if ($depended && null !== $propertyValue && !$dependingValue) {
+            $propertyValue = null;
+        }
+
+        return $propertyValue;
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param array $parserResult
+     *
+     * @return \BrowserDetector\Detector\Result the object containing the browsers details.
+     */
+    protected function setResultData(array $parserResult)
+    {
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
 
@@ -316,35 +346,5 @@ abstract class AbstractBrowscapInput extends Core
         $result->setCapability('supports_activex_controls', $activexSupport);
 
         return $result;
-    }
-
-    /**
-     * checks the parser result for special keys
-     *
-     * @param \stdClass $allProperties  The parser result array
-     * @param string    $propertyName   The name of the property to detect
-     * @param boolean   $depended       If TRUE the parameter $dependingValue has to be set
-     * @param string    $dependingValue An master value
-     *
-     * @return string|integer|boolean The value of the detected property
-     */
-    protected function detectProperty(
-        \stdClass $allProperties, $propertyName, $depended = false,
-        $dependingValue = null
-    ) {
-        $propertyName  = strtolower($propertyName);
-        $propertyValue = (empty($allProperties->$propertyName) ? null : trim($allProperties->$propertyName));
-
-        if (empty($propertyValue)
-            || '' == $propertyValue
-        ) {
-            $propertyValue = null;
-        }
-
-        if ($depended && null !== $propertyValue && !$dependingValue) {
-            $propertyValue = null;
-        }
-
-        return $propertyValue;
     }
 }

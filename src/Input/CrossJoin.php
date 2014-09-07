@@ -35,6 +35,10 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
+use Crossjoin\Browscap\Browscap;
+use Crossjoin\Browscap\Updater\Local;
+use Monolog\Logger;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * Browscap.ini parsing class with caching and update capabilities
@@ -45,23 +49,25 @@ use BrowserDetector\Helper\InputMapper;
  * @copyright 2012-2013 Thomas Mueller
  * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
  */
-class Browscap extends AbstractBrowscapInput
+class CrossJoin extends AbstractBrowscapInput
 {
     /**
-     * the UAParser class
+     * the parser class
      *
-     * @var \phpbrowscap\Browscap
+     * @var \Crossjoin\Browscap\Browscap
      */
     private $parser = null;
 
     /**
      * sets the UA Parser detector
      *
-     * @var \phpbrowscap\Browscap $parser
+     * @param \Crossjoin\Browscap\Browscap $parser
      *
-     * @return \phpbrowscap\Browscap
+     * @internal param \Crossjoin\Browscap\Browscap $parser
+     *
+     * @return CrossJoin
      */
-    public function setParser(\phpbrowscap\Browscap $parser)
+    public function setParser(Browscap $parser)
     {
         $this->parser = $parser;
 
@@ -72,18 +78,20 @@ class Browscap extends AbstractBrowscapInput
      * sets the main parameters to the parser
      *
      * @throws \UnexpectedValueException
-     * @return \phpbrowscap\Browscap
+     * @return \Crossjoin\Browscap\Browscap
      */
     protected function initParser()
     {
-        if (!($this->parser instanceof \phpbrowscap\Browscap)) {
+        if (!($this->parser instanceof Browscap)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\phpbrowscap\\Browscap'
+                'the parser object has to be an instance of \\phpbrowscap\\Detector'
             );
         }
 
         if (null !== $this->localFile) {
-            $this->parser->localFile = $this->localFile;
+            $updater = new Local();
+            $updater->setOption('LocalFile', $this->localFile);
+            Browscap::setUpdater($updater);
         }
 
         return $this->parser;
@@ -97,7 +105,7 @@ class Browscap extends AbstractBrowscapInput
      */
     public function getBrowser()
     {
-        $parserResult = (array) $this->initParser()->getBrowser($this->_agent);
+        $parserResult = (array) $this->initParser()->getBrowser($this->_agent)->getData();
 
         return $this->setResultData($parserResult);
     }

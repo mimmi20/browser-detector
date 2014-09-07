@@ -39,7 +39,8 @@
         "mimmi20/wurfl": "for using a wurfl xml file as data source",
         "synchro/uasparser": "for using the uas parser as alternative parser",
         "tobie/ua-parser": "for using the ua parser as alternative parser",
-        "browscap/browscap-php": "for using the browscap ini parser as alternative parser"
+        "browscap/browscap-php": "for using the browscap ini parser as alternative parser",
+        "crossjoin/browscap": "for using an alterantive browscap ini parser as alternative parser"
     },
     "autoload": {
         "psr-4": {

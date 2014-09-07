@@ -30,12 +30,6 @@
 
 namespace BrowserDetector;
 
-use BrowserDetector\Input\Browscap;
-use BrowserDetector\Input\BrowscapDetector;
-use BrowserDetector\Input\Uaparser;
-use BrowserDetector\Input\Uasparser;
-use BrowserDetector\Input\UserAgent;
-use BrowserDetector\Input\Wurfl;
 use phpbrowscap\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
@@ -58,7 +52,7 @@ class BrowserDetector
     const INTERFACE_WURFL_CLOUD  = 4;
     const INTERFACE_UAPARSER     = 5;
     const INTERFACE_UASPARSER    = 6;
-    const INTERFACE_BROWSCAP_DETECTOR = 7;
+    const INTERFACE_BROWSCAP_CROSSJOIN = 7;
 
     /**
      * a \WurflCache\Adapter\AdapterInterface object
@@ -70,7 +64,7 @@ class BrowserDetector
     /**
      * an logger instance
      *
-     * @var LoggerInterface
+     * @var \Psr\Log\LoggerInterface
      */
     private $logger = null;
 
@@ -98,7 +92,7 @@ class BrowserDetector
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return BrowserDetector
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setCache(AdapterInterface $cache)
     {
@@ -123,7 +117,7 @@ class BrowserDetector
      * @param string $prefix the new prefix
      *
      * @throws \UnexpectedValueException
-     * @return BrowserDetector
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setCachePrefix($prefix)
     {
@@ -153,7 +147,7 @@ class BrowserDetector
      *
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return BrowserDetector
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setLogger(LoggerInterface $logger)
     {
@@ -177,7 +171,7 @@ class BrowserDetector
      *
      * @param string
      *
-     * @return BrowserDetector
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setAgent($userAgent)
     {
@@ -202,7 +196,7 @@ class BrowserDetector
      * @param integer $interface the new Interface to use
      *
      * @throws \UnexpectedValueException
-     * @return BrowserDetector
+     * @return \BrowserDetector\BrowserDetector
      */
     public function setInterface($interface)
     {
@@ -213,7 +207,7 @@ class BrowserDetector
             self::INTERFACE_WURFL_CLOUD,
             self::INTERFACE_UAPARSER,
             self::INTERFACE_UASPARSER,
-            self::INTERFACE_BROWSCAP_DETECTOR
+            self::INTERFACE_BROWSCAP_CROSSJOIN
         );
 
         if (!is_int($interface) || !in_array($interface, $allowedInterfaces)) {
@@ -223,29 +217,29 @@ class BrowserDetector
         }
 
         switch ($interface) {
-        case self::INTERFACE_BROWSCAP_INI:
-            $this->interface = new Browscap();
-            break;
-        case self::INTERFACE_INTERNAL:
-            $this->interface = new UserAgent();
-            break;
-        case self::INTERFACE_WURFL_FILE:
-            $this->interface = new Wurfl();
-            break;
-        case self::INTERFACE_UAPARSER:
-            $this->interface = new Uaparser();
-            break;
-        case self::INTERFACE_UASPARSER:
-            $this->interface = new Uasparser();
-            break;
-        case self::INTERFACE_BROWSCAP_DETECTOR:
-            $this->interface = new BrowscapDetector();
-            break;
-        default:
-            throw new UnexpectedValueException(
-                'an unsupported interface was set'
-            );
-            break;
+            case self::INTERFACE_INTERNAL:
+                $this->interface = new Input\UserAgent();
+                break;
+            case self::INTERFACE_BROWSCAP_INI:
+                $this->interface = new Input\Browscap();
+                break;
+            case self::INTERFACE_WURFL_FILE:
+                $this->interface = new Input\Wurfl();
+                break;
+            case self::INTERFACE_UAPARSER:
+                $this->interface = new Input\Uaparser();
+                break;
+            case self::INTERFACE_UASPARSER:
+                $this->interface = new Input\Uasparser();
+                break;
+            case self::INTERFACE_BROWSCAP_CROSSJOIN:
+                $this->interface = new Input\CrossJoin();
+                break;
+            default:
+                throw new UnexpectedValueException(
+                    'an unsupported interface was set'
+                );
+                break;
         }
 
         return $this;
