@@ -21,20 +21,7 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        parent::setUp();
-
         $this->object = new \BrowserDetector\Input\Browscap();
-    }
-
-    /**
-     * Tears down the fixture, for example, closes a network connection.
-     * This method is called after a test is executed.
-     */
-    protected function tearDown()
-    {
-        unset($this->object);
-
-        parent::tearDown();
     }
 
     /**
@@ -42,6 +29,8 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetBrowser($agent, $browser, $version, $platform)
     {
+        $this->markTestSkipped('not implemented yet');
+
         $this->object->setLocaleFile('tests/data/full_php_browscap.ini');
         $this->object->setCachePrefix('original_ini_');
         $this->object->setAgent($agent);
