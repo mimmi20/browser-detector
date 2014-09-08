@@ -30,16 +30,6 @@
 
 namespace BrowserDetector\Input;
 
-use BrowserDetector\Detector\Bits as BitsDetector;
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Result;
-use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\InputMapper;
-use Crossjoin\Browscap\Browscap;
-use Crossjoin\Browscap\Updater\Local;
-use Monolog\Logger;
-use WurflCache\Adapter\AdapterInterface;
-
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
@@ -67,7 +57,7 @@ class CrossJoin extends AbstractBrowscapInput
      *
      * @return CrossJoin
      */
-    public function setParser(Browscap $parser)
+    public function setParser(\Crossjoin\Browscap\Browscap $parser)
     {
         $this->parser = $parser;
 
@@ -82,16 +72,16 @@ class CrossJoin extends AbstractBrowscapInput
      */
     protected function initParser()
     {
-        if (!($this->parser instanceof Browscap)) {
+        if (!($this->parser instanceof \Crossjoin\Browscap\Browscap)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\phpbrowscap\\Detector'
+                'the parser object has to be an instance of \Crossjoin\Browscap\Browscap'
             );
         }
 
         if (null !== $this->localFile) {
-            $updater = new Local();
+            $updater = new \Crossjoin\Browscap\Updater\Local();
             $updater->setOption('LocalFile', $this->localFile);
-            Browscap::setUpdater($updater);
+            \Crossjoin\Browscap\Browscap::setUpdater($updater);
         }
 
         return $this->parser;

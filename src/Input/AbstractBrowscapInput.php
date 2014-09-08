@@ -33,7 +33,6 @@ namespace BrowserDetector\Input;
 use BrowserDetector\Detector\Bits as BitsDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result;
-use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
 
 /**
