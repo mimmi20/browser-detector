@@ -95,7 +95,7 @@ class CrossJoin extends AbstractBrowscapInput
      */
     public function getBrowser()
     {
-        $parserResult = (array) $this->initParser()->getBrowser($this->_agent)->getData();
+        $parserResult = (object) $this->initParser()->getBrowser($this->_agent)->getData();
 
         return $this->setResultData($parserResult);
     }

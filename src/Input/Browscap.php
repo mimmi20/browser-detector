@@ -91,7 +91,7 @@ class Browscap extends AbstractBrowscapInput
      */
     public function getBrowser()
     {
-        $parserResult = (array) $this->initParser()->getBrowser($this->_agent);
+        $parserResult = (object) $this->initParser()->getBrowser($this->_agent);
 
         return $this->setResultData($parserResult);
     }

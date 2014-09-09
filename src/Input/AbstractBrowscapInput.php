@@ -132,11 +132,11 @@ abstract class AbstractBrowscapInput extends Core
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param array $parserResult
+     * @param \stdClass $parserResult
      *
      * @return \BrowserDetector\Detector\Result the object containing the browsers details.
      */
-    protected function setResultData(array $parserResult)
+    protected function setResultData(\stdClass $parserResult)
     {
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
