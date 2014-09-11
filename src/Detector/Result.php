@@ -1635,7 +1635,7 @@ class Result implements \Serializable
                     break;
                 case 'is_bot':
                 case 'controlcap_is_robot':
-                    $value = $browser->getCapability('browser_type');
+                    $value = $browser->getBrowserType();
 
                     if (!($value instanceof Type\Browser\TypeInterface)) {
                         $value = new Type\Browser\Unknown();
@@ -1644,7 +1644,7 @@ class Result implements \Serializable
                     $value = $value->isBot();
                     break;
                 case 'is_transcoder':
-                    $value = $browser->getCapability('browser_type');
+                    $value = $browser->getBrowserType();
 
                     if (!($value instanceof Type\Browser\TypeInterface)) {
                         $value = new Type\Browser\Unknown();
@@ -1653,7 +1653,7 @@ class Result implements \Serializable
                     $value = $value->isTranscoder();
                     break;
                 case 'is_syndication_reader':
-                    $value = $browser->getCapability('browser_type');
+                    $value = $browser->getBrowserType();
 
                     if (!($value instanceof Type\Browser\TypeInterface)) {
                         $value = new Type\Browser\Unknown();
@@ -1662,7 +1662,7 @@ class Result implements \Serializable
                     $value = $value->isSyndicationReader();
                     break;
                 case 'is_banned':
-                    $value = $browser->getCapability('browser_type');
+                    $value = $browser->getBrowserType();
 
                     if (!($value instanceof Type\Browser\TypeInterface)) {
                         $value = new Type\Browser\Unknown();
