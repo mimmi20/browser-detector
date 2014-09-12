@@ -101,7 +101,7 @@ class Safari
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Safari'))) {
+        if (!$this->utils->checkIfContains(array('Safari', 'Mobile'))) {
             return false;
         }
 

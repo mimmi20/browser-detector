@@ -131,7 +131,6 @@ class Safari
             'WeTab',
             'wOSBrowser',
             //mobile Version
-            //'Mobile',
             'Tablet',
             'Android',
             // Fakes
@@ -171,6 +170,8 @@ class Safari
     /**
      * maps different Safari Versions to a normalized format
      *
+     * @param string $detectedVersion
+     *
      * @return string
      */
     public function mapSafariVersions($detectedVersion)
@@ -197,7 +198,7 @@ class Safari
 
         $regularVersions = array(
             '3.0', '3.1', '3.2', '4.0', '4.1', '5.0', '5.1', '5.2', '6.0',
-            '6.1', '7.0', '7.1'
+            '6.1', '7.0', '7.1', '8.0'
         );
 
         if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {
