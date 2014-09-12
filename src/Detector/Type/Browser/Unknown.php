@@ -53,7 +53,7 @@ class Unknown extends AbstractType implements TypeInterface
      *
      * @var string
      */
-    protected $name = null;
+    protected $name = 'unknown';
 
     /**
      * the Browser is a Bot

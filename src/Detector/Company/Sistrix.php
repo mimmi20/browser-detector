@@ -53,7 +53,7 @@ class Sistrix extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'sistrix.net';
+    protected $name = 'SISTRIX GmbH';
 
     /**
      * the brand name of the company

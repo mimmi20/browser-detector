@@ -79,7 +79,7 @@ class Safari
     {
         if (!$this->utils->checkIfContains('Mozilla/')
             && !$this->utils->checkIfContains('Safari')
-            && !$this->utils->checkIfContains('MobileSafari')
+            && !$this->utils->checkIfContains('Mobile')
         ) {
             return false;
         }

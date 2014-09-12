@@ -53,7 +53,7 @@ class Searchmetrics extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'www.searchmetrics.com';
+    protected $name = 'Searchmetrics GmbH';
 
     /**
      * the brand name of the company

@@ -132,7 +132,7 @@ class Qt
      */
     public function getBrowserType()
     {
-        return new BrowserType\Library();
+        return new BrowserType\Browser();
     }
 
     /**

@@ -160,6 +160,7 @@ class SpamCrawlerFake
             'rebelmouse',
             'retriever',
             'scraper',
+            'scrapy',
             'scraping',
             'secmon',
             'semager',

@@ -53,12 +53,12 @@ class WebmeupCrawlerCom extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'webmeup-crawler.com';
+    protected $name = 'WebMeUp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'webmeup-crawler.com';
+    protected $brandname = 'WebMeUp';
 }

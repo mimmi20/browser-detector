@@ -140,6 +140,12 @@ class InputMapper
         case 'nokia web browser':
             $browserName = 'Nokia Browser';
             break;
+        case 'applemail':
+            $browserName = 'Apple Mail';
+            break;
+        case 'sistrix':
+            $browserName = 'Sistrix Crawler';
+            break;
         default:
             // nothing to do here
             break;
@@ -376,8 +382,8 @@ class InputMapper
         case 'windows phone 7':
             $osName = 'Windows Phone OS';
             break;
-        case 'WinRT8':
-        case 'WinRT8.1':
+        case 'winrt8':
+        case 'winrt8.1':
             $osName = 'Windows RT';
             break;
         case 'blackberry os':
