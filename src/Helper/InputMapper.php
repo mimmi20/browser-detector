@@ -377,6 +377,7 @@ class InputMapper
             $osName = 'Windows';
             break;
         case 'winphone7':
+        case 'winphone7.5':
         case 'winphone8':
         case 'winphone8.1':
         case 'windows phone 7':
@@ -471,6 +472,10 @@ class InputMapper
         case 'winphone7':
         case 'windows phone 7':
             $osVersion = '7';
+            break;
+        case 'winphone7.5':
+        case 'windows phone 7.5':
+            $osVersion = '7.5';
             break;
         case 'win8':
         case 'winrt8':

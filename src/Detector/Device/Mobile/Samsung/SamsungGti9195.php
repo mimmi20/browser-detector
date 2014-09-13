@@ -90,8 +90,8 @@ class SamsungGti9195
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
+        'resolution_width'        => 540,
+        'resolution_height'       => 960,
         'dual_orientation'        => true,
         'colors'                  => 16777216,
 

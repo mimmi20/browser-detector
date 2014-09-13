@@ -75,8 +75,6 @@ class SpamCrawlerFake
     /**
      * Returns true if the give $userAgent is from a spam bot or crawler
      *
-     * @param string $userAgent
-     *
      * @return bool
      */
     public function isSpamOrCrawler()
@@ -144,6 +142,7 @@ class SpamCrawlerFake
             'mailwalker',
             'mediapartners-google',
             'metauri',
+            'moozilla',
             'nagios',
             'naver',
             'nutch',

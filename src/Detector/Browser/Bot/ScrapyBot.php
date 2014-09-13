@@ -104,7 +104,7 @@ class ScrapyBot
      */
     public function getName()
     {
-        return 'Scrapy Bot';
+        return 'Scrapy';
     }
 
     /**
