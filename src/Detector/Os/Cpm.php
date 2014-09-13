@@ -93,9 +93,7 @@ class Cpm
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
-        $searches = array('AIX');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('0.0');
     }
 
     /**

@@ -98,7 +98,7 @@ class NintendoWii
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
-        return $detector;
+        return $detector->setVersion('0.0');
     }
 
     /**
