@@ -684,6 +684,8 @@ class Wurfl extends Core
             $apiTv      = false;
             $apiMob     = false;
             $apiPhone   = false;
+
+            $result->setCapability('pointing_method', null);
         }
 
         $deviceType = null;
