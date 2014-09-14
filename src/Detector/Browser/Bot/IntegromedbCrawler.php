@@ -146,7 +146,7 @@ class IntegromedbCrawler
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function detectEngine()
     {

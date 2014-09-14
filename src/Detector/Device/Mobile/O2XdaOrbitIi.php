@@ -143,8 +143,7 @@ class O2XdaOrbitIi
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */

@@ -146,6 +146,10 @@ class InputMapper
         case 'sistrix':
             $browserName = 'Sistrix Crawler';
             break;
+        case 'blackberry webkit':
+        case 'blackberry browser':
+            $browserName = 'BlackBerry';
+            break;
         default:
             // nothing to do here
             break;

@@ -57,8 +57,6 @@ abstract class OsHandler
 
     /**
      * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\OsHandler
      */
     public function __construct()
     {

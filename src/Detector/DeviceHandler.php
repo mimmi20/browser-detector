@@ -65,13 +65,6 @@ abstract class DeviceHandler
     protected $renderAs = null;
 
     /**
-     * a Cache object
-     *
-     * @var \WurflCache\Adapter\AdapterInterface
-     */
-    protected $cache = null;
-
-    /**
      * the detected browser properties
      *
      * @var array
@@ -324,10 +317,9 @@ abstract class DeviceHandler
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Browser\UnknownBrowser
      */
     public function detectBrowser()
     {
@@ -338,10 +330,9 @@ abstract class DeviceHandler
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System
-     * returns the OS Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
