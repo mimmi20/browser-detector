@@ -58,7 +58,7 @@ class TrekStorSt10216
         // device
         'model_name'              => 'ST10216',
         'model_extra_info'        => null,
-        'marketing_name'          => 'SurfTab Ventos 10.1',
+        'marketing_name'          => 'SurfTab ventos 10.1 v2',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

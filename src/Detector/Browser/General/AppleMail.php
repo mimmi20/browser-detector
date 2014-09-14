@@ -85,14 +85,71 @@ class AppleMail
             return true;
         }
 
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
-
-        if ($safariHelper->isSafari() && !$this->utils->checkIfContains(array('Safari'))) {
-            return true;
+        if (!$this->utils->checkIfContains('Mozilla/')
+            || $this->utils->checkIfContains('Safari')
+            || $this->utils->checkIfContains('Mobile')
+        ) {
+            return false;
         }
 
-        return false;
+        if (!$this->utils->checkIfContains(array('AppleWebKit', 'CFNetwork'))) {
+            return false;
+        }
+
+        $isNotReallyAnSafari = array(
+            // using also the KHTML rendering engine
+            '1Password',
+            'AdobeAIR',
+            'Arora',
+            'BlackBerry',
+            'BrowserNG',
+            'Chrome',
+            'Chromium',
+            'Dolfin',
+            'Dreamweaver',
+            'Epiphany',
+            'FBAN/',
+            'FBAV/',
+            'FBForIPhone',
+            'Flock',
+            'Galeon',
+            'Google Earth',
+            'iCab',
+            'Iron',
+            'konqueror',
+            'Lunascape',
+            'Maemo',
+            'Maxthon',
+            'Midori',
+            'MQQBrowser',
+            'NokiaBrowser',
+            'OmniWeb',
+            'Origin',
+            'PaleMoon',
+            'PhantomJS',
+            'Qt',
+            'QuickLook',
+            'QupZilla',
+            'rekonq',
+            'Rockmelt',
+            'Silk',
+            'Shiira',
+            'WebBrowser',
+            'WebClip',
+            'WeTab',
+            'wOSBrowser',
+            //mobile Version
+            'Tablet',
+            'Android',
+            // Fakes
+            'Mac; Mac OS '
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
