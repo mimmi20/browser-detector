@@ -22,6 +22,8 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
+        $this->markTestSkipped('not implemented yet');
+
         $this->object = new UserAgent();
     }
 

@@ -35,8 +35,8 @@ use BrowserDetector\Detector\Browser\General\Omniweb as DefaultOmniweb;
 /**
  * @category  BrowserDetector
  * @package   BrowserDetector
- * @copyright 2012-2013 Thomas Mueller
- * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @copyright 2012-2014 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  * @version   SVN: $Id: Omniweb.php 500 2013-04-14 12:00:06Z tmu $
  */
 class Omniweb extends DefaultOmniweb

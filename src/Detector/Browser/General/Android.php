@@ -45,8 +45,8 @@ use BrowserDetector\Helper\Safari as SafariHelper;
 /**
  * @category  BrowserDetector
  * @package   BrowserDetector
- * @copyright 2012-2013 Thomas Mueller
- * @license   http://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @copyright 2012-2014 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Android
     extends BrowserHandler

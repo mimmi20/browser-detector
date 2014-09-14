@@ -21,6 +21,8 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
+        $this->markTestSkipped('not implemented yet');
+
         $this->object = new \BrowserDetector\Input\Browscap();
     }
 
@@ -29,8 +31,6 @@ class InputBrowscapTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetBrowser($agent, $browser, $version, $platform)
     {
-        $this->markTestSkipped('not implemented yet');
-
         $this->object->setLocaleFile('tests/data/full_php_browscap.ini');
         $this->object->setCachePrefix('original_ini_');
         $this->object->setAgent($agent);

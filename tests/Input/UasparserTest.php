@@ -21,6 +21,8 @@ class InputUasparserTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
+        $this->markTestSkipped('not implemented yet');
+
         $this->object = new Uasparser();
     }
 
@@ -29,8 +31,6 @@ class InputUasparserTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetBrowser($agent, $browser, $version, $platform)
     {
-        $this->markTestSkipped('not implemented yet');
-
         $this->object->setCachePrefix('modified_ini_');
         $this->object->setAgent($agent);
 
