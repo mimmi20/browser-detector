@@ -690,15 +690,13 @@ class Wurfl extends Core
 
         $deviceType = null;
 
-        if ($apiBot) {
-            $deviceType = 'Bot';
-        } elseif (!$apiMob) {
+        if (!$apiMob) {
             if ($apiTv) {
                 $deviceType = 'TV Device';
             } elseif ($apiDesktop) {
                 $deviceType = 'Desktop';
             } else {
-                $deviceType = 'general Device';
+                $deviceType = 'unknown';
             }
         } else {
             if ($apiTab && $apiPhone) {

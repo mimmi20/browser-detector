@@ -174,17 +174,4 @@ class GeneralBot
 
         return $chain->detect();
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        $handler = new UnknownOs();
-        $handler->setUserAgent($this->_useragent);
-
-        return $handler;
-    }
 }

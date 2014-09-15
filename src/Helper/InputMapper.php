@@ -109,7 +109,8 @@ class InputMapper
             $browserName = 'SEOkicks Robot';
             break;
         case 'gomeza':
-            $browserName = 'GomezAgent';
+        case 'gomezagent':
+            $browserName = 'Gomez Site Monitor';
             break;
         case 'yandex.browser':
             $browserName = 'Yandex Browser';

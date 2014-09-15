@@ -1563,11 +1563,11 @@ class Result implements \Serializable
                     $value = $value->isPhone();
                     break;
                 case 'controlcap_is_touchscreen':
-                    $value = ($device->getCapability('pointing_method') === 'touchscreen');
+                    $value = ($device->getCapability('pointing_method', false) === 'touchscreen');
                     break;
                 case 'controlcap_is_largescreen':
-                    $value = ($device->getCapability('resolution_width') >= 480
-                        && $device->getCapability('resolution_height') >= 480);
+                    $value = ($device->getCapability('resolution_width', false) >= 480
+                        && $device->getCapability('resolution_height', false) >= 480);
                     break;
                 case 'model_version':
                     $value = $device->detectVersion();
@@ -1577,6 +1577,7 @@ class Result implements \Serializable
                     $detector->setUserAgent($this->getCapability('useragent', false));
 
                     $value = $detector->getBits();
+                    var_dump($this->getCapability('useragent', false), $value);exit;
                     break;
                 case 'device_cpu':
                     $detector = new Cpu();

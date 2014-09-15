@@ -143,7 +143,7 @@ abstract class AbstractBrowscapInput extends Core
 
         $mapper = new InputMapper();
 
-        $browserName = $this->detectProperty($parserResult, 'browser');
+        $browserName    = $this->detectProperty($parserResult, 'browser');
         $browserVersion = $this->detectProperty(
             $parserResult, 'version', true, $browserName
         );

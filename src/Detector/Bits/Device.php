@@ -104,7 +104,7 @@ class Device
     {
         // 64 bits
         if ($this->utils->checkIfContains(
-            array('x64', 'Win64', 'x86_64', 'amd64', 'AMD64', 'ppc64', 'i686 on x86_64')
+            array('x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64'), true
         )
         ) {
             $this->_bits = '64';
@@ -113,24 +113,14 @@ class Device
         }
 
         // old deprecated 16 bit windows systems
-        if ($this->utils->checkIfContains(array('Win3.1', 'Windows 3.1'))) {
+        if ($this->utils->checkIfContains(array('win3.1', 'windows 3.1'), true)) {
             $this->_bits = '16';
 
             return $this;
         }
 
-        // general windows or a 32 bit browser on a 64 bit system (WOW64)
-        if ($this->utils->checkIfContains(
-            array('Win', 'WOW64', 'i586', 'i686', 'i386', 'i486', 'i86', 'Intel Mac OS X', 'Android', 'PPC', 'x86')
-        )
-        ) {
-            $this->_bits = '32';
-
-            return $this;
-        }
-
         // old deprecated 8 bit systems
-        if ($this->utils->checkIfContains(array('CP/M', '8-bit'))) {
+        if ($this->utils->checkIfContains(array('cp/m', '8-bit'), true)) {
             $this->bits = '8';
 
             return $this;

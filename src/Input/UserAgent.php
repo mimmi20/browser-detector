@@ -196,7 +196,6 @@ class UserAgent extends Core
     private function detectDevice()
     {
         $handlersToUse = array(
-            new GeneralBot(),
             new GeneralMobile(),
             new GeneralTv(),
             new GeneralDesktop()
