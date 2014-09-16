@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA2109aIdeaTab
+class LenovoS6000hIdeaTab
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +56,9 @@ class LenovoA2109aIdeaTab
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'A2109A',
+        'model_name'              => 'S6000-H',
         'model_extra_info'        => null,
-        'marketing_name'          => 'IdeaTab A2109A',
+        'marketing_name'          => 'IdeaTab S6000-H',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -95,11 +95,7 @@ class LenovoA2109aIdeaTab
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('IdeaTab_A1107', 'IdeaTabS2110AF', 'IdeaTab A2107A-H', 'IdeaTab S6000-H'))) {
+        if (!$this->utils->checkIfContains(array('IdeaTab S6000-H'))) {
             return false;
         }
 

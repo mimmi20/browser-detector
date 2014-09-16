@@ -392,7 +392,7 @@ class SpamCrawlerFake
 
         $ntVersions = array(
             '3.5', '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1',
-            '6.2', '6.3'
+            '6.2', '6.3', '6.4'
         );
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)

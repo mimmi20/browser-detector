@@ -38,6 +38,7 @@ class AppleMailTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko)'),
+            array('Mozilla/5.0 (iPhone; CPU iPhone OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko)'),
         );
     }
 

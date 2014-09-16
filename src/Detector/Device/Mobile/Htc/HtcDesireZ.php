@@ -99,7 +99,11 @@ class HtcDesireZ
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_DesireZ', 'HTC Desire Z', 'HTC_Desire_Z', 'HTC_DesireZ_A7272'))) {
+        if (!$this->utils->checkIfContains(array('HTC_DesireZ', 'HTC Desire Z', 'HTC_Desire_Z'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('HTC_DesireZ_A7272'))) {
             return false;
         }
 

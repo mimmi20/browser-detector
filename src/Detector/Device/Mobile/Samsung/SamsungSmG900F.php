@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA2109aIdeaTab
+class SamsungSmG900F
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +56,9 @@ class LenovoA2109aIdeaTab
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'A2109A',
+        'model_name'              => 'SM-G900F',
         'model_extra_info'        => null,
-        'marketing_name'          => 'IdeaTab A2109A',
+        'marketing_name'          => 'Galaxy S5 LTE',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -70,16 +70,16 @@ class LenovoA2109aIdeaTab
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 218,
-        'physical_screen_height'  => 136,
-        'columns'                 => 100,
-        'rows'                    => 100,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
         'resolution_width'        => 1280,
         'resolution_height'       => 800,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -95,11 +95,7 @@ class LenovoA2109aIdeaTab
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('IdeaTab_A1107', 'IdeaTabS2110AF', 'IdeaTab A2107A-H', 'IdeaTab S6000-H'))) {
+        if (!$this->utils->checkIfContains('SM-G900F')) {
             return false;
         }
 
@@ -123,7 +119,7 @@ class LenovoA2109aIdeaTab
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -133,7 +129,7 @@ class LenovoA2109aIdeaTab
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\Samsung();
     }
 
     /**
@@ -143,7 +139,7 @@ class LenovoA2109aIdeaTab
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company\Samsung();
     }
 
     /**

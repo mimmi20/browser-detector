@@ -58,7 +58,7 @@ class SamsungSmN9005
         // device
         'model_name'              => 'SM-N9005',
         'model_extra_info'        => null,
-        'marketing_name'          => 'SM-N9005',
+        'marketing_name'          => 'Galaxy Note 3 LTE',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

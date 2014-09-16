@@ -58,7 +58,7 @@ class SamsungSmP600
         // device
         'model_name'              => 'SM-P600',
         'model_extra_info'        => null,
-        'marketing_name'          => 'SM-P600',
+        'marketing_name'          => 'Galaxy Note 10.1 2014 Edition Wi-Fi',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

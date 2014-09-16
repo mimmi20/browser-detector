@@ -166,7 +166,8 @@ class Ios
             new NetNewsWire(),
             new Incredimail(),
             new Lunascape(),
-            new MqqBrowser()
+            new MqqBrowser(),
+            new \BrowserDetector\Detector\Browser\General\AppleMail()
         );
 
         $chain = new Chain();

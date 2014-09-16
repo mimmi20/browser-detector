@@ -28,14 +28,18 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA2109aIdeaTab
+class HtcDesireZA7272
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -53,30 +57,30 @@ class LenovoA2109aIdeaTab
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'htc_desire_z_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'A2109A',
+        'model_name'              => 'A7272',
         'model_extra_info'        => null,
-        'marketing_name'          => 'IdeaTab A2109A',
+        'marketing_name'          => 'Desire Z',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
+        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/DesireZ/ua-profile.xml',
+        'uaprof2'                 => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
         'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 218,
-        'physical_screen_height'  => 136,
-        'columns'                 => 100,
-        'rows'                    => 100,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
+        'physical_screen_width'   => 49,
+        'physical_screen_height'  => 80,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 320,
+        'max_image_height'        => 760,
+        'resolution_width'        => 480,
         'resolution_height'       => 800,
         'dual_orientation'        => true,
         'colors'                  => 65536,
@@ -95,11 +99,7 @@ class LenovoA2109aIdeaTab
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('IdeaTab_A1107', 'IdeaTabS2110AF', 'IdeaTab A2107A-H', 'IdeaTab S6000-H'))) {
+        if (!$this->utils->checkIfContains(array('HTC_DesireZ_A7272'))) {
             return false;
         }
 
@@ -123,7 +123,7 @@ class LenovoA2109aIdeaTab
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -133,7 +133,7 @@ class LenovoA2109aIdeaTab
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\Htc();
     }
 
     /**
@@ -143,7 +143,7 @@ class LenovoA2109aIdeaTab
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company\Htc();
     }
 
     /**
@@ -157,5 +157,28 @@ class LenovoA2109aIdeaTab
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        // Android 2.3
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+
+        return $this;
     }
 }
