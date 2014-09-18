@@ -175,7 +175,7 @@ abstract class AbstractBrowscapInput extends Core
             $browserType = null;
         }
 
-        $result->setCapability('browser_type', $mapper->mapBrowserType($browserType, $browserName));
+        $result->setCapability('browser_type', $mapper->mapBrowserType($browserType, $browserName)->getName());
 
         if (!empty($parserResult->browser_modus) && 'unknown' !== $parserResult->browser_modus) {
             $browserModus = $parserResult->browser_modus;
