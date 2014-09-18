@@ -215,6 +215,7 @@ class InputMapper
             $browserType = new BrowserType\Browser();
             break;
         case 'robot':
+        case 'bot/crawler':
             $browserType = new BrowserType\Bot();
             break;
         case '':
@@ -534,7 +535,7 @@ class InputMapper
     /**
      * maps the name of a device
      *
-     * @param string $deviceName
+     * @param string $deviceType
      *
      * @return string
      */
