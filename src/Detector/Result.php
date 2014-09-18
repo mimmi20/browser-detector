@@ -1457,10 +1457,14 @@ class Result implements \Serializable
         BrowserHandler $browser,
         EngineHandler $engine
     ) {
-        $properties = array_keys($this->getCapabilities());
+        $properties = array_keys($this->getAllCapabilities());
 
         foreach ($properties as $property) {
             $value = null;
+            
+            if ('useragent' === $property) {
+                continue;
+            }
 
             try {
                 switch ($property) {
@@ -1577,7 +1581,6 @@ class Result implements \Serializable
                     $detector->setUserAgent($this->getCapability('useragent', false));
 
                     $value = $detector->getBits();
-                    var_dump($this->getCapability('useragent', false), $value);exit;
                     break;
                 case 'device_cpu':
                     $detector = new Cpu();

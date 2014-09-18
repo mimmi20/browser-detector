@@ -208,6 +208,30 @@ class MicrosoftInternetExplorer
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
+        
+        $engine = $this->detectEngine();
+        
+        $engineVersion = (int)$engine->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+        
+        switch ($engineVersion) {
+            case 4:
+                return $detector->setVersion('8.0');
+                break;
+            case 5:
+                return $detector->setVersion('9.0');
+                break;
+            case 6:
+                return $detector->setVersion('10.0');
+                break;
+            case 7:
+                return $detector->setVersion('11.0');
+                break;
+            default:
+                //nothing to do
+                break;
+        }
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
@@ -273,8 +297,6 @@ class MicrosoftInternetExplorer
             if ($this->utils->checkIfContains('Trident/4.0')
                 && 8 > $detectedVersion
             ) {
-                $browserVersion->setVersion('8.0');
-
                 $this->setCapability(
                     'mobile_browser_modus',
                     'IE ' . $detectedVersion . '.0 Compatibility Mode'
@@ -283,8 +305,6 @@ class MicrosoftInternetExplorer
             break;
         case 5:
             if (9 > $detectedVersion) {
-                $browserVersion->setVersion('9.0');
-
                 $this->setCapability(
                     'mobile_browser_modus',
                     'IE ' . $detectedVersion . '.0 Compatibility Mode'
@@ -293,8 +313,6 @@ class MicrosoftInternetExplorer
             break;
         case 6:
             if (10 > $detectedVersion) {
-                $browserVersion->setVersion('10.0');
-
                 $this->setCapability(
                     'mobile_browser_modus',
                     'IE ' . $detectedVersion . '.0 Compatibility Mode'
@@ -303,8 +321,6 @@ class MicrosoftInternetExplorer
             break;
         case 7:
             if (11 > $detectedVersion) {
-                $browserVersion->setVersion('11.0');
-
                 $this->setCapability(
                     'mobile_browser_modus',
                     'IE ' . $detectedVersion . '.0 Compatibility Mode'
