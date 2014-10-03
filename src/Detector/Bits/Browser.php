@@ -110,7 +110,7 @@ class Browser
         }
 
         // 64 bits
-        if ($this->utils->checkIfContains(array('x64', 'win64', 'x86_64', 'amd64', 'ppc64'), true)) {
+        if ($this->utils->checkIfContains(array('x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'sparc64'), true)) {
             $this->bits = '64';
 
             return $this;

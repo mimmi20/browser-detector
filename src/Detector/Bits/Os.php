@@ -103,7 +103,7 @@ class Os
     private function _detectBits()
     {
         if ($this->utils->checkIfContains(
-            array('x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64'),
+            array('x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'),
             true
         )
         ) {

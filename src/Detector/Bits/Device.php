@@ -104,7 +104,7 @@ class Device
     {
         // 64 bits
         if ($this->utils->checkIfContains(
-            array('x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64'), true
+            array('x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'), true
         )
         ) {
             $this->_bits = '64';
