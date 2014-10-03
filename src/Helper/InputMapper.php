@@ -375,6 +375,7 @@ class InputMapper
         case 'win8':
         case 'win8.1':
         case 'win9':
+        case 'win10':
         case 'winvista':
         case 'win2000':
         case 'win2003':
@@ -498,6 +499,9 @@ class InputMapper
             break;
         case 'win9':
             $osVersion = '9';
+            break;
+        case 'win10':
+            $osVersion = '10';
             break;
         case 'winvista':
             $osVersion = 'Vista';
