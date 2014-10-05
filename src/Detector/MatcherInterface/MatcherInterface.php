@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\MatcherInterface;
 
 /**
  * generic interface for all browsers, devices, platforms and engines to detect

@@ -1,17 +1,14 @@
 <?php
 /**
  * Copyright (c) 2012-2014, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
  * to deal in the Software without restriction, including without limitation
  * the rights to use, copy, modify, merge, publish, distribute, sublicense,
  * and/or sell copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following conditions:
- *
  * The above copyright notice and this permission notice shall be included
  * in all copies or substantial portions of the Software.
- *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
  * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -34,14 +31,13 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
- *
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
@@ -83,7 +79,6 @@ class Trident
         'html_wi_w3_xhtmlbasic'                           => true,
         'html_wi_imode_compact_generic'                   => false,
         'voicexml'                                        => false,
-
         // chtml
         'chtml_table_support'                             => true,
         'imode_region'                                    => 'none',
@@ -92,7 +87,6 @@ class Trident
         'chtml_make_phone_call_string'                    => 'tel:',
         'chtml_display_accesskey'                         => false,
         'emoji'                                           => false,
-
         // xhtml
         'xhtml_select_as_radiobutton'                     => true,
         'xhtml_avoid_accesskeys'                          => true,
@@ -128,7 +122,6 @@ class Trident
         'opwv_xhtml_extensions_support'                   => false,
         'xhtml_marquee_as_css_property'                   => false,
         'xhtml_nowrap_mode'                               => false,
-
         // image format
         'jpg'                                             => true,
         'gif'                                             => true,
@@ -143,16 +136,13 @@ class Trident
         'svgt_1_1'                                        => false,
         'transparent_png_alpha'                           => false,
         'tiff'                                            => false,
-
         // security
         'https_support'                                   => true,
-
         // storage
         'max_url_length_bookmark'                         => 0,
         'max_url_length_cached_page'                      => 0,
         'max_url_length_in_requests'                      => 128,
         'max_url_length_homepage'                         => 0,
-
         // ajax
         'ajax_support_getelementbyid'                     => true,
         'ajax_xhr_type'                                   => 'standard',
@@ -163,7 +153,6 @@ class Trident
         'ajax_manipulate_css'                             => true,
         'ajax_support_events'                             => true,
         'ajax_preferred_geoloc_api'                       => 'none',
-
         // wml
         'wml_make_phone_call_string'                      => 'none',
         'card_title_support'                              => false,
@@ -187,11 +176,9 @@ class Trident
         'access_key_support'                              => false,
         'wml_displays_image_in_center'                    => false,
         'times_square_mode_support'                       => false,
-
         // third_party
         'jqm_grade'                                       => 'A',
         'is_sencha_touch_ok'                              => true,
-
         // html
         'image_inlining'                                  => false,
         'canvas_support'                                  => 'none',
@@ -204,7 +191,6 @@ class Trident
         'viewport_maximum_scale'                          => null,
         'viewport_userscalable'                           => null,
         'handheldfriendly'                                => false,
-
         // css
         'css_spriting'                                    => false,
         'css_gradient'                                    => 'none',
@@ -222,8 +208,16 @@ class Trident
     public function canHandle()
     {
         $noTridentEngines = array(
-            'KHTML', 'AppleWebKit', 'WebKit', 'Presto', 'RGAnalytics',
-            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Mac_PowerPC',
+            'KHTML',
+            'AppleWebKit',
+            'WebKit',
+            'Presto',
+            'RGAnalytics',
+            'libwww',
+            'iPhone',
+            'Firefox',
+            'Mozilla/5.0 (en)',
+            'Mac_PowerPC',
             'Opera'
         );
 
@@ -245,8 +239,7 @@ class Trident
             return true;
         }
 
-        if ($this->utils->checkIfContains('Mozilla/')
-            && $this->utils->checkIfContains(array('MSIE', 'Trident'))
+        if ($this->utils->checkIfContains('Mozilla/') && $this->utils->checkIfContains(array('MSIE', 'Trident'))
         ) {
             return true;
         }
@@ -296,31 +289,21 @@ class Trident
         if ($doMatch) {
             $version = '';
 
-            switch ((float)$matches[1]) {
-            case 11.0:
-                $version = '7.0';
-                break;
-            case 10.0:
-                $version = '6.0';
-                break;
-            case 9.0:
-                $version = '5.0';
-                break;
-            case 8.0:
-            case 7.0:
-            case 6.0:
-                $version = '4.0';
-                break;
-            case 5.5:
-            case 5.01:
-            case 5.0:
-            case 4.01:
-            case 4.0:
-            case 3.0:
-            case 2.0:
-            case 1.0:
-            default:
-                // do nothing here
+            switch ((float) $matches[1]) {
+                case 11.0:
+                    $version = '7.0';
+                    break;
+                case 10.0:
+                    $version = '6.0';
+                    break;
+                case 9.0:
+                    $version = '5.0';
+                    break;
+                case 8.0:
+                    $version = '4.0';
+                    break;
+                default:
+                    // do nothing here
             }
 
             return $detector->setVersion($version);
@@ -347,17 +330,23 @@ class Trident
      * @param \BrowserDetector\Detector\DeviceHandler  $device
      * @param \BrowserDetector\Detector\BrowserHandler $browser
      *
-     * @return DeviceHandler
+     * @return Trident
      */
     public function detectDependProperties(
-        OsHandler $os, DeviceHandler $device, BrowserHandler $browser
+        OsHandler $os,
+        DeviceHandler $device,
+        BrowserHandler $browser
     ) {
         parent::detectDependProperties($os, $device, $browser);
 
-        if ($device->getDeviceType()->isMobile()) {
+        if ($device->getDeviceType()
+            ->isMobile()
+        ) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {
             $this->setCapability('xhtml_make_phone_call_string', 'none');
         }
+
+        return $this;
     }
 }

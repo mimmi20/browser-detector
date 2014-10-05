@@ -34,7 +34,7 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\U3;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;

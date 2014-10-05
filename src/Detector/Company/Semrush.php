@@ -43,7 +43,7 @@ class Semrush extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'www.semrush.com';
+    protected $name = 'SEMrush';
 
     /**
      * the brand name of the company

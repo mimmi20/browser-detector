@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Engine\Tasman;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Helper\Utils;

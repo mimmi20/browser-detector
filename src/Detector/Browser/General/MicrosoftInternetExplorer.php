@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -208,13 +208,13 @@ class MicrosoftInternetExplorer
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
-        
+
         $engine = $this->detectEngine();
-        
+
         $engineVersion = (int)$engine->detectVersion()->getVersion(
             Version::MAJORONLY
         );
-        
+
         switch ($engineVersion) {
             case 4:
                 return $detector->setVersion('8.0');

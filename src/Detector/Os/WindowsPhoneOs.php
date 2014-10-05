@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;

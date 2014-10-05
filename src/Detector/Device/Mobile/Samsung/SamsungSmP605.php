@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -58,7 +58,7 @@ class SamsungSmP605
         // device
         'model_name'              => 'SM-P605',
         'model_extra_info'        => null,
-        'marketing_name'          => 'SM-P605',
+        'marketing_name'          => 'Galaxy Note 10.1 2014 Edition WI-FI + 4G LTE',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

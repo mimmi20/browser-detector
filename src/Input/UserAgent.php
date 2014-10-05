@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
@@ -127,7 +127,7 @@ class UserAgent extends Core
 
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
-        
+
         $result->setDetectionResult(
             $this->device, $this->os, $this->browser, $this->engine
         );

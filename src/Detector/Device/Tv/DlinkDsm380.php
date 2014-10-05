@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Type\Device as DeviceType;

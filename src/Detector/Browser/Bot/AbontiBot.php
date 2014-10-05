@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -94,7 +94,7 @@ class AbontiBot
      */
     public function getName()
     {
-        return 'Abonti Bot';
+        return 'Abonti WebSearch';
     }
 
     /**

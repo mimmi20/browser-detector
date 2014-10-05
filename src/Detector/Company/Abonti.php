@@ -43,7 +43,7 @@ class Abonti extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'www.abonti.com';
+    protected $name = 'abonti.com';
 
     /**
      * the brand name of the company

@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -58,7 +58,7 @@ class SamsungGtp6210
         // device
         'model_name'              => 'GT-P6210',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Samsung Galaxy Tab 7.0 Plus', // wurflkey: samsung_gt_p6210_ver1_suban40
+        'marketing_name'          => 'Galaxy Tab 7.0 Plus', // wurflkey: samsung_gt_p6210_ver1_suban40
         'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_p6210_ver1_suban40
         'pointing_method'         => 'touchscreen',
 

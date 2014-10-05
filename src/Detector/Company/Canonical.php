@@ -43,7 +43,7 @@ class Canonical extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'Canonical Ltd';
+    protected $name = 'Canonical Foundation';
 
     /**
      * the brand name of the company
