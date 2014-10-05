@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\AppleMail;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
 use BrowserDetector\Detector\Browser\Mobile\DarwinBrowser;
 use BrowserDetector\Detector\Browser\Mobile\FacebookApp;
@@ -167,7 +168,7 @@ class Ios
             new Incredimail(),
             new Lunascape(),
             new MqqBrowser(),
-            new \BrowserDetector\Detector\Browser\General\AppleMail()
+            new AppleMail()
         );
 
         $chain = new Chain();

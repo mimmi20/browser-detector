@@ -68,6 +68,8 @@ class Device
     /**
      * sets the user agent to be handled
      *
+     * @param string $userAgent
+     *
      * @return Device
      */
     public function setUserAgent($userAgent)

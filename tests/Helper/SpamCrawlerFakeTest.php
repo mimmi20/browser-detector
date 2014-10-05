@@ -38,6 +38,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerIsFakeIePositive
+     * @param string $agent
      */
     public function testIsFakeIePositive($agent)
     {
@@ -55,6 +56,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerIsFakeIeNegative
+     * @param string $agent
      */
     public function testIsFakeIeNegative($agent)
     {
@@ -73,6 +75,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerisFakeWindowsPositive
+     * @param string $agent
      */
     public function testisFakeWindowsPositive($agent)
     {
@@ -90,6 +93,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerisFakeWindowsNegative
+     * @param string $agent
      */
     public function testisFakeWindowsNegative($agent)
     {

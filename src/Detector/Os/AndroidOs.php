@@ -59,6 +59,7 @@ use BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\FirefoxOs;
 use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
@@ -100,7 +101,7 @@ class AndroidOs
             return false;
         }
 
-        $firefoxOshelper = new \BrowserDetector\Helper\FirefoxOs();
+        $firefoxOshelper = new FirefoxOs();
         $firefoxOshelper->setUserAgent($this->_useragent);
 
         if ($firefoxOshelper->isFirefoxOs()) {

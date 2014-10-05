@@ -102,9 +102,9 @@ abstract class OsHandler
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param BrowserHandler $browser
-     * @param EngineHandler  $engine
-     * @param DeviceHandler  $device
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\DeviceHandler  $device
      *
      * @return \BrowserDetector\Detector\OsHandler
      */

@@ -90,8 +90,8 @@ class Utils
     /**
      * Returns true if $haystack contains all of the(string)needles in $needles
      *
-     * @param string $haystack Haystack
-     * @param array  $needles  Array of(string)needles
+     * @param array $needles Array of(string)needles
+     * @param bool  $ci
      *
      * @return bool
      */
@@ -109,8 +109,8 @@ class Utils
     /**
      * Returns true if $haystack starts with $needle
      *
-     * @param string $haystack Haystack
-     * @param string $needle   Needle
+     * @param string $needle Needle
+     * @param bool   $ci
      *
      * @return bool
      */

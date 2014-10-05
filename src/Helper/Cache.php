@@ -64,8 +64,9 @@ class Cache
      * Gets the information about the browser by User Agent
      *
      * @param string $userAgent the user agent string
+     * @param string $cachePrefix
      *
-     * @return
+     * @return string
      */
     public function getCacheIdFromAgent($userAgent = null, $cachePrefix = null)
     {

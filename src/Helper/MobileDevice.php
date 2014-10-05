@@ -75,8 +75,6 @@ class MobileDevice
     /**
      * Returns true if the give $userAgent is from a mobile device
      *
-     * @param string $userAgent
-     *
      * @return bool
      */
     public function isMobileBrowser()
@@ -205,7 +203,7 @@ class MobileDevice
             return true;
         }
 
-        $helper = new \BrowserDetector\Helper\FirefoxOs();
+        $helper = new FirefoxOs();
         $helper->setUserAgent($this->_useragent);
 
         if ($helper->isFirefoxOs()) {

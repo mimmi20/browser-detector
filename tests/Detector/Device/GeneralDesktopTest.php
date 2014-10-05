@@ -37,6 +37,7 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerCanHandlePositive
+     * @param string $agent
      */
     public function testCanHandlePositive($agent)
     {
@@ -57,6 +58,7 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerCanHandleNegative
+     * @param string $agent
      */
     public function testCanHandleNegative($agent)
     {
@@ -74,6 +76,8 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerDetectDevice
+     * @param string $agent
+     * @param string $device
      */
     public function testDetectDevice($agent, $device)
     {

@@ -27,6 +27,11 @@ class InputUaparserTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerGetBrowser
+     *
+     * @param string $agent
+     * @param string $browser
+     * @param string $version
+     * @param string $platform
      */
     public function testGetBrowser($agent, $browser, $version, $platform)
     {

@@ -151,6 +151,8 @@ abstract class Core
     /**
      * returns the stored user agent
      *
+     * @param string $userAgent
+     *
      * @return UserAgent
      */
     public function setAgent($userAgent)

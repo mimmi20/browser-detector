@@ -68,6 +68,8 @@ class Os
     /**
      * sets the user agent to be handled
      *
+     * @param string $userAgent
+     *
      * @return Os
      */
     public function setUserAgent($userAgent)

@@ -30,6 +30,9 @@
 
 namespace BrowserDetector\Input;
 
+use Crossjoin\Browscap\Browscap;
+use Crossjoin\Browscap\Updater\Local;
+
 /**
  * Browscap.ini parsing class with caching and update capabilities
  *
@@ -44,20 +47,20 @@ class CrossJoin extends AbstractBrowscapInput
     /**
      * the parser class
      *
-     * @var \Crossjoin\Browscap\Browscap
+     * @var Browscap
      */
     private $parser = null;
 
     /**
      * sets the UA Parser detector
      *
-     * @param \Crossjoin\Browscap\Browscap $parser
+     * @param Browscap $parser
      *
      * @internal param \Crossjoin\Browscap\Browscap $parser
      *
      * @return CrossJoin
      */
-    public function setParser(\Crossjoin\Browscap\Browscap $parser)
+    public function setParser(Browscap $parser)
     {
         $this->parser = $parser;
 
@@ -68,20 +71,20 @@ class CrossJoin extends AbstractBrowscapInput
      * sets the main parameters to the parser
      *
      * @throws \UnexpectedValueException
-     * @return \Crossjoin\Browscap\Browscap
+     * @return Browscap
      */
     protected function initParser()
     {
-        if (!($this->parser instanceof \Crossjoin\Browscap\Browscap)) {
+        if (!($this->parser instanceof Browscap)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \Crossjoin\Browscap\Browscap'
             );
         }
 
         if (null !== $this->localFile) {
-            $updater = new \Crossjoin\Browscap\Updater\Local();
+            $updater = new Local();
             $updater->setOption('LocalFile', $this->localFile);
-            \Crossjoin\Browscap\Browscap::setUpdater($updater);
+            Browscap::setUpdater($updater);
         }
 
         return $this->parser;

@@ -263,8 +263,6 @@ class SpamCrawlerFake
     /**
      * Returns true if the give $userAgent is from a spam bot or crawler
      *
-     * @param string $userAgent
-     *
      * @return bool
      */
     public function isFakeBrowser()

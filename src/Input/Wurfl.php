@@ -667,13 +667,8 @@ class Wurfl extends Core
 
         $result->setCapability('mobile_browser', $apiBro);
         $result->setCapability('mobile_browser_manufacturer', $browserMaker);
-        $result->setCapability(
-            'mobile_browser_version',
-            $version->setVersion($apiVer)
-        );
-
+        $result->setCapability('mobile_browser_version', $version->setVersion($apiVer));
         $result->setCapability('device_os', $apiOs);
-
         $result->setCapability('model_name', $apiDev);
         $result->setCapability('manufacturer_name', $apiMan);
         $result->setCapability('marketing_name', $marketingName);
@@ -688,11 +683,14 @@ class Wurfl extends Core
             $result->setCapability('pointing_method', null);
         }
 
-        $deviceType = null;
+        $deviceType = $device->getVirtualCapability('form_factor');
 
-        if (!$apiMob) {
+        /*
+        if ($apiBot) {
+            $deviceType = 'Robot';
+        } elseif (!$apiMob) {
             if ($apiTv) {
-                $deviceType = 'TV Device';
+                $deviceType = 'Smart-TV';
             } elseif ($apiDesktop) {
                 $deviceType = 'Desktop';
             } else {
@@ -709,6 +707,7 @@ class Wurfl extends Core
                 $deviceType = 'Mobile Device';
             }
         }
+        /**/
 
         if (!$apiBro) {
             $apiDesktop = null;
@@ -740,7 +739,7 @@ class Wurfl extends Core
             return $result;
         }
 
-        if (($deviceType == 'Mobile Phone' || $deviceType == 'Tablet' || $deviceType == 'FonePad')
+        if (($deviceType == 'Mobile Phone' || $deviceType == 'Tablet' || $deviceType == 'FonePad' || $deviceType == 'Feature Phone')
             && 'true' === $device->getCapability('dual_orientation')
         ) {
             $width  = (int)$device->getCapability('resolution_width');

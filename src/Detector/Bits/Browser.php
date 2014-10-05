@@ -68,6 +68,8 @@ class Browser
     /**
      * sets the user agent to be handled
      *
+     * @param string $userAgent
+     *
      * @return Browser
      */
     public function setUserAgent($userAgent)

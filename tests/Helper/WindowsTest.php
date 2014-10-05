@@ -38,6 +38,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerIsWindowsPositive
+     * @param string $agent
      */
     public function testIsWindowsPositive($agent)
     {
@@ -58,6 +59,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerIsWindowsNegative
+     * @param string $agent
      */
     public function testIsWindowsNegative($agent)
     {

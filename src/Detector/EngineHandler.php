@@ -701,10 +701,10 @@ abstract class EngineHandler
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param OsHandler      $os
-     * @param DeviceHandler  $device
-     * @param BrowserHandler $browser
-     * @return EngineHandler
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     * @param \BrowserDetector\Detector\DeviceHandler  $device
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @return \BrowserDetector\Detector\EngineHandler
      */
     public function detectDependProperties(
         OsHandler $os, DeviceHandler $device, BrowserHandler $browser

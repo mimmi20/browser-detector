@@ -38,6 +38,7 @@ class FirefoxOsTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerIsFirefoxOsPositive
+     * @param string $agent
      */
     public function testIsFirefoxOsPositive($agent)
     {
@@ -59,6 +60,7 @@ class FirefoxOsTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerIsFirefoxOsNegative
+     * @param string $agent
      */
     public function testIsFirefoxOsNegative($agent)
     {

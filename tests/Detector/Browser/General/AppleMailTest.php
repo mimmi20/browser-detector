@@ -26,6 +26,7 @@ class AppleMailTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerCanHandlePositive
+     * @param string $agent
      */
     public function testCanHandlePositive($agent)
     {
@@ -44,6 +45,7 @@ class AppleMailTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerCanHandleNegative
+     * @param string $agent
      */
     public function testCanHandleNegative($agent)
     {

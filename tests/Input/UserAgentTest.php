@@ -29,6 +29,30 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerGetBrowser
+     *
+     * @param $agent
+     * @param $browser
+     * @param $browserVersion
+     * @param $platform
+     * @param $platformVersion
+     * @param $device
+     * @param $mobile
+     * @param $tablet
+     * @param $bot
+     * @param $desktop
+     * @param $transcoder
+     * @param $frames
+     * @param $iframes
+     * @param $tables
+     * @param $cookies
+     * @param $bgsound
+     * @param $javascript
+     * @param $vbscript
+     * @param $java
+     * @param $activex
+     * @param $synreader
+     * @param $pdf
+     * @param $rss
      */
     public function testGetBrowserWithSetter(
         $agent, $browser, $browserVersion, $platform,
@@ -51,6 +75,30 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerGetBrowser
+     *
+     * @param $agent
+     * @param $browser
+     * @param $browserVersion
+     * @param $platform
+     * @param $platformVersion
+     * @param $device
+     * @param $mobile
+     * @param $tablet
+     * @param $bot
+     * @param $desktop
+     * @param $transcoder
+     * @param $frames
+     * @param $iframes
+     * @param $tables
+     * @param $cookies
+     * @param $bgsound
+     * @param $javascript
+     * @param $vbscript
+     * @param $java
+     * @param $activex
+     * @param $synreader
+     * @param $pdf
+     * @param $rss
      */
     public function testGetBrowserWithoutForce(
         $agent, $browser, $browserVersion, $platform,

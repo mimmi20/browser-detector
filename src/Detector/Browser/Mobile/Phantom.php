@@ -170,7 +170,7 @@ class Phantom
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return Phantom
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

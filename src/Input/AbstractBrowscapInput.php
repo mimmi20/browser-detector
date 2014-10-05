@@ -241,14 +241,11 @@ abstract class AbstractBrowscapInput extends Core
             $engineName = null;
         }
 
-        $engineMaker = $this->detectProperty(
-            $parserResult, 'renderingengine_maker', true, $engineName
-        );
+        $engineMaker   = $this->detectProperty($parserResult, 'renderingengine_maker', true, $engineName);
+        $engineVersion = $this->detectProperty($parserResult, 'renderingengine_version', true, $engineName);
 
-        $result->setCapability(
-            'renderingengine_name', $engineName
-        );
-
+        $result->setCapability('renderingengine_name', $engineName);
+        $result->setCapability('renderingengine_version', $engineVersion);
         $result->setCapability('renderingengine_manufacturer', $engineMaker);
 
         $result->setCapability('ux_full_desktop', $deviceType === 'Desktop');
