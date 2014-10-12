@@ -685,30 +685,6 @@ class Wurfl extends Core
 
         $deviceType = $device->getVirtualCapability('form_factor');
 
-        /*
-        if ($apiBot) {
-            $deviceType = 'Robot';
-        } elseif (!$apiMob) {
-            if ($apiTv) {
-                $deviceType = 'Smart-TV';
-            } elseif ($apiDesktop) {
-                $deviceType = 'Desktop';
-            } else {
-                $deviceType = 'unknown';
-            }
-        } else {
-            if ($apiTab && $apiPhone) {
-                $deviceType = 'FonePad';
-            } elseif ($apiTab) {
-                $deviceType = 'Tablet';
-            } elseif ($apiPhone) {
-                $deviceType = 'Mobile Phone';
-            } else {
-                $deviceType = 'Mobile Device';
-            }
-        }
-        /**/
-
         if (!$apiBro) {
             $apiDesktop = null;
             $apiTv      = null;
