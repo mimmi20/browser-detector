@@ -33,6 +33,7 @@ namespace BrowserDetector\Input;
 use BrowserDetector\Detector\Bits as BitsDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
 
 /**
@@ -58,7 +59,7 @@ abstract class AbstractBrowscapInput extends Core
      *
      * @param string $filename the file name
      *
-     * @throws Exception
+     * @throws \BrowserDetector\Input\Exception
      * @return void
      */
     public function setLocaleFile($filename)
@@ -241,8 +242,16 @@ abstract class AbstractBrowscapInput extends Core
             $engineName = null;
         }
 
-        $engineMaker   = $this->detectProperty($parserResult, 'renderingengine_maker', true, $engineName);
-        $engineVersion = $this->detectProperty($parserResult, 'renderingengine_version', true, $engineName);
+        $engineMaker = $this->detectProperty($parserResult, 'renderingengine_maker', true, $engineName);
+
+        $version = new Version();
+        $version->setMode(
+            Version::COMPLETE | Version::IGNORE_MINOR_IF_EMPTY | Version::IGNORE_MICRO_IF_EMPTY
+        );
+
+        $engineVersion = $version->setVersion(
+            $this->detectProperty($parserResult, 'renderingengine_version', true, $engineName)
+        );
 
         $result->setCapability('renderingengine_name', $engineName);
         $result->setCapability('renderingengine_version', $engineVersion);
