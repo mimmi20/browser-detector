@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 
 /**
  * MSIEAgentHandler
@@ -56,7 +56,7 @@ class FirefoxOs
      */
     public function canHandle()
     {
-        $helper = new \BrowserDetector\Helper\FirefoxOs();
+        $helper = new FirefoxOsHelper();
         $helper->setUserAgent($this->_useragent);
 
         return $helper->isFirefoxOs();
