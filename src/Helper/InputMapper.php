@@ -1110,4 +1110,32 @@ class InputMapper
 
         return $support;
     }
+
+    /**
+     * maps the version of the operating system
+     *
+     * @param string $engineVersion
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function mapEngineVersion($engineVersion)
+    {
+        switch (strtolower($engineVersion)) {
+            case '':
+            case 'unknown':
+            case 'other':
+                $engineVersion = null;
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        $version = new Version();
+        $version->setMode(
+            Version::COMPLETE | Version::IGNORE_MINOR_IF_EMPTY | Version::IGNORE_MICRO_IF_EMPTY
+        );
+
+        return $version->setVersion($osVersion);
+    }
 }
