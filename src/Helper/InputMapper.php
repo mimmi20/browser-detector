@@ -215,6 +215,7 @@ class InputMapper
                 break;
             case 'robot':
             case 'bot/crawler':
+            case 'library':
                 $browserType = new BrowserType\Bot();
                 break;
             case '':

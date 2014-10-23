@@ -118,7 +118,7 @@ class PearHttpRequest
      */
     public function getBrowserType()
     {
-        return new BrowserType\Library();
+        return new BrowserType\Bot();
     }
 
     /**
