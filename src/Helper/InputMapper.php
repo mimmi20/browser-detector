@@ -1137,6 +1137,6 @@ class InputMapper
             Version::COMPLETE | Version::IGNORE_MINOR_IF_EMPTY | Version::IGNORE_MICRO_IF_EMPTY
         );
 
-        return $version->setVersion($osVersion);
+        return $version->setVersion($engineVersion);
     }
 }
