@@ -38,11 +38,7 @@ use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
 
@@ -81,7 +77,7 @@ class UserAgent extends Core
     /**
      * the detected device
      *
-     * @var MatcherInterface\DeviceInterface
+     * @var \BrowserDetector\Detector\MatcherInterface\DeviceInterface
      */
     private $device = null;
 
@@ -96,30 +92,13 @@ class UserAgent extends Core
         $this->device->detectSpecialProperties();
 
         // detect the os which runs on the device
-        $this->os = $this->device->detectOs();
-        if (!($this->os instanceof OsInterface)) {
-            $this->os = $this->detectOs();
-        }
+        $this->os = $this->detectOs();
 
         // detect the browser which is used
-        $this->browser = $this->os->detectBrowser();
-
-        if (!($this->browser instanceof BrowserInterface)
-            || ($this->os instanceof UnknownOs
-                && is_callable(array($this->device, 'detectBrowser')))
-        ) {
-            $this->browser = $this->device->detectBrowser();
-        }
-
-        if (!($this->browser instanceof BrowserInterface)) {
-            $this->browser = $this->detectBrowser();
-        }
+        $this->browser = $this->detectBrowser();
 
         // detect the engine which is used in the browser
-        $this->engine = $this->browser->detectEngine();
-        if (!($this->engine instanceof EngineHandler)) {
-            $this->engine = $this->detectEngine();
-        }
+        $this->engine = $this->detectEngine();
 
         $this->device->detectDependProperties(
             $this->browser, $this->engine, $this->os
@@ -146,7 +125,7 @@ class UserAgent extends Core
 
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Engine');
+        $chain->setNamespace('\BrowserDetector\Detector\Engine');
         $chain->setHandlers($handlersToUse);
         $chain->setDefaultHandler(new UnknownEngine());
 
@@ -164,7 +143,7 @@ class UserAgent extends Core
 
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser');
         $chain->setHandlers($handlersToUse);
         $chain->setDefaultHandler(new UnknownBrowser());
 
@@ -182,7 +161,7 @@ class UserAgent extends Core
 
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
+        $chain->setNamespace('\BrowserDetector\Detector\Os');
         $chain->setHandlers($handlersToUse);
         $chain->setDefaultHandler(new UnknownOs());
 
@@ -192,7 +171,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the device by User Agent
      *
-     * @return MatcherInterface\DeviceInterface
+     * @return \BrowserDetector\Detector\MatcherInterface\DeviceInterface
      */
     private function detectDevice()
     {
@@ -205,7 +184,7 @@ class UserAgent extends Core
 
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Device');
+        $chain->setNamespace('\BrowserDetector\Detector\Device');
         $chain->setHandlers($handlersToUse);
         $chain->setDefaultHandler(new UnknownDevice());
 
