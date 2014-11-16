@@ -97,7 +97,7 @@ class XenusLinkSleuth
      */
     public function getName()
     {
-        return 'Xenu\'s Link Sleuth';
+        return 'Xenus Link Sleuth';
     }
 
     /**

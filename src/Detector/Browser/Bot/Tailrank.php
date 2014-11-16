@@ -108,7 +108,7 @@ class Tailrank
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Tailrank();
     }
 
     /**

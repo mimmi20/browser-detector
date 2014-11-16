@@ -94,7 +94,7 @@ class OpenVas
      */
     public function getName()
     {
-        return 'OpenVAS';
+        return 'Open Vulnerability Assessment System';
     }
 
     /**

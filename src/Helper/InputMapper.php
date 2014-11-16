@@ -383,6 +383,7 @@ class InputMapper
             case 'win98':
             case 'win95':
             case 'winnt':
+            case 'winme':
                 $osName = 'Windows';
                 break;
             case 'winphone7':
@@ -521,6 +522,9 @@ class InputMapper
                 break;
             case 'winnt':
                 $osVersion = 'NT';
+                break;
+            case 'winme':
+                $osVersion = 'ME';
                 break;
             default:
                 // nothing to do here

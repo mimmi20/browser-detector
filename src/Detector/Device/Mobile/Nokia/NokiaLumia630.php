@@ -80,9 +80,9 @@ class NokiaLumia630
         'max_image_width'         => null,
         'max_image_height'        => null,
         'resolution_width'        => 480,
-        'resolution_height'       => 800,
+        'resolution_height'       => 854,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

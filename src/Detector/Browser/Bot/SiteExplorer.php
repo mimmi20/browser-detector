@@ -104,7 +104,7 @@ class SiteExplorer
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\SiteExplorer();
     }
 
     /**

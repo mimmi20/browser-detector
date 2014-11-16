@@ -76,9 +76,9 @@ class TrekStorSt701041
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => false,
+        'resolution_width'        => 800,
+        'resolution_height'       => 480,
+        'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
@@ -121,7 +121,7 @@ class TrekStorSt701041
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**

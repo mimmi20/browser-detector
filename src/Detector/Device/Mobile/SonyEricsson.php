@@ -166,11 +166,17 @@ class SonyEricsson
             'xperia arc'
         );
 
-        if ($this->utils->checkIfContains($sonyPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($sonyPhones, true)) {
+            return false;
         }
 
-        return false;
+        $others = array('uno_x10');
+
+        if ($this->utils->checkIfContains($others, true)) {
+            return false;
+        }
+
+        return true;
     }
 
     /**

@@ -28,15 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser\Bot;
+namespace BrowserDetector\Detector\Device\Mobile\Prestigio;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
  * @category  BrowserDetector
@@ -44,9 +43,9 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Seoprofiler
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+class PrestigioPmp7100D3g
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -54,82 +53,53 @@ class Seoprofiler
      * @var array
      */
     protected $properties = array(
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+        'wurflKey'                => null, // not in wurfl
+
+        // device
+        'model_name'              => 'PMP7100D3G',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Multipad',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-        // pdf
-        'pdf_support'                  => true,
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
+        // sms
+        'sms_enabled'             => true,
 
-        // rss
-        'rss_support'                  => false,
+        // chips
+        'nfc_support'             => true,
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('spbot', 'seoprofiler', 'sp_auditbot'))) {
+        if (!$this->utils->checkIfContains(array('PMP7100D3G'))) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'SEOprofiler';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Axandra();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new BrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('spbot', 'sp_auditbot');
-
-        return $detector->detectVersion($searches);
     }
 
     /**
@@ -139,18 +109,48 @@ class Seoprofiler
      */
     public function getWeight()
     {
-        return 1751;
+        return 3;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Tablet();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Prestigio();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Prestigio();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectEngine()
+    public function detectOs()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
+        $handler = new AndroidOs();
+        $handler->setUseragent($this->_useragent);
 
         return $handler;
     }

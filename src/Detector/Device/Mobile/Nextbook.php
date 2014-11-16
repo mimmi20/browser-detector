@@ -97,7 +97,7 @@ class Nextbook
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nextbook', 'DATAM803HC'))) {
+        if (!$this->utils->checkIfContains(array('Nextbook', 'DATAM803HC', 'NEXT'))) {
             return false;
         }
 

@@ -117,7 +117,7 @@ class LotusNotes
      */
     public function getBrowserType()
     {
-        return new BrowserType\Application();
+        return new BrowserType\EmailClient();
     }
 
     /**

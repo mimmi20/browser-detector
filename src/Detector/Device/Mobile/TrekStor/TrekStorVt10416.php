@@ -56,7 +56,7 @@ class TrekStorVt10416
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'VT10416',
+        'model_name'              => 'VT10416-1',
         'model_extra_info'        => null,
         'marketing_name'          => 'Peoples Tablet',
         'has_qwerty_keyboard'     => true,
@@ -95,7 +95,7 @@ class TrekStorVt10416
      */
     public function canHandle()
     {
-        $trekStorPhones = array('VT10416');
+        $trekStorPhones = array('VT10416-1');
 
         if ($this->utils->checkIfContains($trekStorPhones)) {
             return true;

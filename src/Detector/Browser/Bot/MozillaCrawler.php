@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Seoprofiler
+class MozillaCrawler
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -80,7 +80,7 @@ class Seoprofiler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('spbot', 'seoprofiler', 'sp_auditbot'))) {
+        if (!$this->utils->checkIfContains('Mozilla crawl')) {
             return false;
         }
 
@@ -94,7 +94,7 @@ class Seoprofiler
      */
     public function getName()
     {
-        return 'SEOprofiler';
+        return 'Mozilla Crawler';
     }
 
     /**
@@ -104,7 +104,7 @@ class Seoprofiler
      */
     public function getManufacturer()
     {
-        return new Company\Axandra();
+        return new Company\Fairshare();
     }
 
     /**
@@ -127,7 +127,7 @@ class Seoprofiler
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('spbot', 'sp_auditbot');
+        $searches = array('Mozilla crawl');
 
         return $detector->detectVersion($searches);
     }
@@ -139,7 +139,7 @@ class Seoprofiler
      */
     public function getWeight()
     {
-        return 1751;
+        return 31;
     }
 
     /**

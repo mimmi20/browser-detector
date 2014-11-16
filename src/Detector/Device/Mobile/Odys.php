@@ -104,7 +104,8 @@ class Odys
             ' noon ',
             ' loox ',
             'xpress pro',
-            'xelio'
+            'xelio',
+            'uno_x10'
         );
 
         if ($this->utils->checkIfContains($odysPhones, true)) {

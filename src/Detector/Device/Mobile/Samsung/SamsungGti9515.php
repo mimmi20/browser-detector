@@ -28,14 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -45,9 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Acer
+class SamsungGti9515
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -58,15 +55,15 @@ class Acer
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'general Acer Device',
+        'model_name'              => 'GT-I9515',
         'model_extra_info'        => null,
-        'marketing_name'          => 'general Acer Device',
+        'marketing_name'          => 'Galaxy S4 Value Edition',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
+        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9515.xml',
         'uaprof2'                 => null,
         'uaprof3'                 => null,
         'unique'                  => true,
@@ -78,10 +75,10 @@ class Acer
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
+        'resolution_width'        => 1080,
+        'resolution_height'       => 1920,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
         // sms
         'sms_enabled'             => true,
@@ -97,59 +94,15 @@ class Acer
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'IdeaTab', 'Wildfire S A510e', 'A101IT', 'SmartTabII7'))) {
+        if (!$this->utils->checkIfContains('GT-I9515')) {
             return false;
         }
 
-        $acerPhones = array(
-            'Acer',
-            'Iconia',
-            ' A100 ',
-            ' A101 ',
-            ' A200 ',
-            ' A210 ',
-            ' A211 ',
-            ' A500 ',
-            ' A501 ',
-            ' A510 ',
-            ' A511 ',
-            ' A700 ',
-            ' A701 ',
-            ' A1-',
-            ' A3-',
-            ' B1-',
-            ' E140 ',
-            ' E310 ',
-            ' E320 ',
-            ' G100W ',
-            'Stream-S110',
-            ' Liquid ',
-            ' S500 ',
-        );
-
-        if ($this->utils->checkIfContains($acerPhones)) {
-            return true;
+        if ($this->utils->checkIfContains(array('GT-I9515X', 'GT-I9515G'))) {
+            return false;
         }
 
-        return false;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Acer');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Acer' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return true;
     }
 
     /**
@@ -159,7 +112,7 @@ class Acer
      */
     public function getWeight()
     {
-        return 321280;
+        return 91981;
     }
 
     /**
@@ -179,7 +132,7 @@ class Acer
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company\Samsung();
     }
 
     /**
@@ -189,7 +142,7 @@ class Acer
      */
     public function getBrand()
     {
-        return new Company\Acer();
+        return new Company\Samsung();
     }
 
     /**

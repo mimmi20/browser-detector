@@ -76,8 +76,8 @@ class MobistelCynusT5
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 

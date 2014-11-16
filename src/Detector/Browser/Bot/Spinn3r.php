@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Seoprofiler
+class Spinn3r
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -80,7 +80,7 @@ class Seoprofiler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('spbot', 'seoprofiler', 'sp_auditbot'))) {
+        if (!$this->utils->checkIfContains(array('Spinn3r'))) {
             return false;
         }
 
@@ -94,7 +94,7 @@ class Seoprofiler
      */
     public function getName()
     {
-        return 'SEOprofiler';
+        return 'Spinn3r RSS Aggregator';
     }
 
     /**
@@ -104,7 +104,7 @@ class Seoprofiler
      */
     public function getManufacturer()
     {
-        return new Company\Axandra();
+        return new Company\Tailrank();
     }
 
     /**
@@ -127,23 +127,14 @@ class Seoprofiler
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('spbot', 'sp_auditbot');
+        $searches = array('Spinn3r');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1751;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
