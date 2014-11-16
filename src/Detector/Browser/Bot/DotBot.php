@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WiJobRoboter
+class DotBot
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -80,7 +80,7 @@ class WiJobRoboter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('WI Job Roboter')) {
+        if (!$this->utils->checkIfContains(array('DotBot'))) {
             return false;
         }
 
@@ -94,7 +94,7 @@ class WiJobRoboter
      */
     public function getName()
     {
-        return 'WI Job Roboter';
+        return 'DotBot';
     }
 
     /**
@@ -104,7 +104,7 @@ class WiJobRoboter
      */
     public function getManufacturer()
     {
-        return new Company\WebIntegrationItService();
+        return new Company\Unknown();
     }
 
     /**
@@ -118,6 +118,16 @@ class WiJobRoboter
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 1132;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -127,23 +137,14 @@ class WiJobRoboter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('WI Job Roboter Spider Version');
+        $searches = array('DotBot');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 24999;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */

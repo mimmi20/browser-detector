@@ -218,351 +218,355 @@ class Wurfl extends Core
                 }
 
                 switch (strtolower($apiBro)) {
-                case 'microsoft':
-                    $browserMaker = 'Microsoft';
+                    case 'microsoft':
+                        $browserMaker = 'Microsoft';
 
-                    switch (strtolower($apiVer)) {
-                    case 'internet explorer':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '';
+                        switch (strtolower($apiVer)) {
+                            case 'internet explorer':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '';
+                                break;
+                            case 'internet explorer 10':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '10.0';
+                                break;
+                            case 'internet explorer 9':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '9.0';
+                                break;
+                            case 'internet explorer 8':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '8.0';
+                                break;
+                            case 'internet explorer 7':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '7.0';
+                                break;
+                            case 'internet explorer 6':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '6.0';
+                                break;
+                            case 'internet explorer 5.5':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '5.5';
+                                break;
+                            case 'internet explorer 5':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '5.0';
+                                break;
+                            case 'internet explorer 4.0':
+                            case 'internet explorer 4':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '4.0';
+                                break;
+                            case 'mobile explorer':
+                                $apiBro = 'IEMobile';
+                                $apiVer = '';
+                                break;
+                            case 'mobile explorer 4.0':
+                                $apiBro = 'IEMobile';
+                                $apiVer = '4.0';
+                                break;
+                            case 'mobile explorer 6':
+                                $apiBro = 'IEMobile';
+                                $apiVer = '6.0';
+                                break;
+                            case 'mobile explorer 7.6':
+                                $apiBro = 'IEMobile';
+                                $apiVer = '7.6';
+                                break;
+                            case 'mobile explorer 7.11':
+                                $apiBro = 'IEMobile';
+                                $apiVer = '7.11';
+                                break;
+                            case 'mobile explorer 6.12':
+                                $apiBro = 'IEMobile';
+                                $apiVer = '6.12';
+                                break;
+                            case 'xbox 360':
+                                $apiBro = 'Internet Explorer';
+                                $apiVer = '9.0';
+                                $apiDev = 'Xbox 360';
+                                $apiMan = 'Microsoft';
+                                break;
+                            case 'outlook express':
+                                $apiBro = 'Windows Live Mail';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
                         break;
-                    case 'internet explorer 10':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '10.0';
+                    case 'microsoft internet explorer':
+                    case 'msie':
+                        $apiBro       = 'Internet Explorer';
+                        $browserMaker = 'Microsoft';
                         break;
-                    case 'internet explorer 9':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '9.0';
+                    case 'microsoft mobile explorer':
+                        $apiBro       = 'IEMobile';
+                        $browserMaker = 'Microsoft';
                         break;
-                    case 'internet explorer 8':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '8.0';
+                    case 'opera mobi':
+                        $browserMaker = 'Opera Software ASA';
+                        $apiBro       = 'Opera Mobile';
+                        $apiVer       = '';
                         break;
-                    case 'internet explorer 7':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '7.0';
+                    case 'opera tablet':
+                        $browserMaker = 'Opera Software ASA';
+                        $apiBro       = 'Opera Tablet';
+                        $apiVer       = '';
                         break;
-                    case 'internet explorer 6':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '6.0';
-                        break;
-                    case 'internet explorer 5.5':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '5.5';
-                        break;
-                    case 'internet explorer 5':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '5.0';
-                        break;
-                    case 'internet explorer 4.0':
-                    case 'internet explorer 4':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '4.0';
-                        break;
-                    case 'mobile explorer':
-                        $apiBro = 'IEMobile';
-                        $apiVer = '';
-                        break;
-                    case 'mobile explorer 4.0':
-                        $apiBro = 'IEMobile';
-                        $apiVer = '4.0';
-                        break;
-                    case 'mobile explorer 6':
-                        $apiBro = 'IEMobile';
-                        $apiVer = '6.0';
-                        break;
-                    case 'mobile explorer 7.6':
-                        $apiBro = 'IEMobile';
-                        $apiVer = '7.6';
-                        break;
-                    case 'mobile explorer 7.11':
-                        $apiBro = 'IEMobile';
-                        $apiVer = '7.11';
-                        break;
-                    case 'mobile explorer 6.12':
-                        $apiBro = 'IEMobile';
-                        $apiVer = '6.12';
-                        break;
-                    case 'xbox 360':
-                        $apiBro = 'Internet Explorer';
-                        $apiVer = '9.0';
-                        $apiDev = 'Xbox 360';
-                        $apiMan = 'Microsoft';
-                        break;
-                    case 'outlook express':
-                        $apiBro = 'Windows Live Mail';
-                        $apiVer = '';
-                        break;
-                    default:
-                        // nothing to do
-                        break;
-                    }
-                    break;
-                case 'microsoft internet explorer':
-                case 'msie':
-                    $apiBro       = 'Internet Explorer';
-                    $browserMaker = 'Microsoft';
-                    break;
-                case 'microsoft mobile explorer':
-                    $apiBro       = 'IEMobile';
-                    $browserMaker = 'Microsoft';
-                    break;
-                case 'opera mobi':
-                    $browserMaker = 'Opera Software ASA';
-                    $apiBro       = 'Opera Mobile';
-                    $apiVer       = '';
-                    break;
-                case 'opera tablet':
-                    $browserMaker = 'Opera Software ASA';
-                    $apiBro       = 'Opera Tablet';
-                    $apiVer       = '';
-                    break;
-                case 'google chrome':
-                case 'chrome mobile':
-                case 'chrome':
-                    $apiBro       = 'Chrome';
-                    $apiVer       = '';
-                    $browserMaker = 'Google';
-                    break;
-                case 'google':
-                    $browserMaker = 'Google';
-
-                    switch (strtolower($apiVer)) {
+                    case 'google chrome':
+                    case 'chrome mobile':
                     case 'chrome':
-                        $apiBro = 'Chrome';
-                        $apiVer = '';
+                        $apiBro       = 'Chrome';
+                        $apiVer       = '';
+                        $browserMaker = 'Google';
                         break;
-                    case 'bot':
-                        $apiBro     = 'Google Bot';
-                        $apiVer     = '';
-                        $apiDesktop = false;
-                        $apiBot     = true;
-                        break;
-                    case 'wireless transcoder':
-                        $apiBro        = 'Google Wireless Transcoder';
-                        $apiVer        = '';
-                        $apiDesktop    = false;
-                        $apiBot        = true;
-                        $apiTranscoder = true;
-                        break;
-                    case 'adsense bot':
-                        $apiBro        = 'AdSense Bot';
-                        $apiVer        = '';
-                        $apiDesktop    = false;
-                        $apiBot        = true;
-                        $apiTranscoder = true;
-                        break;
-                    default:
-                        // nothing to do
-                        break;
-                    }
-                    break;
-                case 'mozilla firefox':
-                case 'firefox':
-                    $apiBro       = 'Firefox';
-                    $browserMaker = 'Mozilla';
-                    if ('3.0' == $apiVer) {
-                        $apiVer = null;
-                    }
-                    break;
-                case 'mozilla':
-                    $browserMaker = 'Mozilla';
+                    case 'google':
+                        $browserMaker = 'Google';
 
-                    switch (strtolower($apiVer)) {
+                        switch (strtolower($apiVer)) {
+                            case 'chrome':
+                                $apiBro = 'Chrome';
+                                $apiVer = '';
+                                break;
+                            case 'bot':
+                                $apiBro     = 'Google Bot';
+                                $apiVer     = '';
+                                $apiDesktop = false;
+                                $apiBot     = true;
+                                break;
+                            case 'wireless transcoder':
+                                $apiBro        = 'Google Wireless Transcoder';
+                                $apiVer        = '';
+                                $apiDesktop    = false;
+                                $apiBot        = true;
+                                $apiTranscoder = true;
+                                break;
+                            case 'adsense bot':
+                                $apiBro        = 'AdSense Bot';
+                                $apiVer        = '';
+                                $apiDesktop    = false;
+                                $apiBot        = true;
+                                $apiTranscoder = true;
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'mozilla firefox':
                     case 'firefox':
-                        $apiBro = 'Firefox';
-                        $apiVer = '';
+                        $apiBro       = 'Firefox';
+                        $browserMaker = 'Mozilla';
+                        if ('3.0' == $apiVer) {
+                            $apiVer = null;
+                        }
                         break;
-                    default:
-                        // nothing to do
-                        break;
-                    }
-                    break;
-                case 'fennec':
-                    $apiBro       = 'Firefox';
-                    $browserMaker = 'Mozilla';
-                    $apiVer       = null;
-                    break;
-                case 'apple safari':
-                case 'safari':
-                    $apiBro       = 'Safari';
-                    $browserMaker = 'Apple';
-                    $apiVer       = '';
-                    break;
-                case 'apple':
-                    $browserMaker = 'Apple';
+                    case 'mozilla':
+                        $browserMaker = 'Mozilla';
 
-                    switch (strtolower($apiVer)) {
+                        switch (strtolower($apiVer)) {
+                            case 'firefox':
+                                $apiBro = 'Firefox';
+                                $apiVer = '';
+                                break;
+                            case 'thunderbird':
+                                $apiBro = 'Thunderbird';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'fennec':
+                        $apiBro       = 'Fennec';
+                        $browserMaker = 'Mozilla';
+                        $apiVer       = null;
+                        break;
+                    case 'apple safari':
                     case 'safari':
-                        $apiBro = 'Safari';
-                        $apiVer = '';
+                        $apiBro       = 'Safari';
+                        $browserMaker = 'Apple';
+                        $apiVer       = '';
                         break;
-                    default:
-                        // nothing to do
-                        break;
-                    }
-                    break;
-                case 'opera software opera':
-                case 'opera':
-                    $apiBro       = 'Opera';
-                    $browserMaker = 'Opera Software ASA';
-                    $apiVer       = '';
-                    break;
-                case 'opera software':
-                    $browserMaker = 'Opera Software ASA';
+                    case 'apple':
+                        $browserMaker = 'Apple';
 
-                    switch (strtolower($apiVer)) {
+                        switch (strtolower($apiVer)) {
+                            case 'safari':
+                                $apiBro = 'Safari';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'opera software opera':
                     case 'opera':
-                        $apiBro = 'Opera';
-                        $apiVer = '';
+                        $apiBro       = 'Opera';
+                        $browserMaker = 'Opera Software ASA';
+                        $apiVer       = '';
                         break;
-                    default:
-                        // nothing to do
+                    case 'opera software':
+                        $browserMaker = 'Opera Software ASA';
+
+                        switch (strtolower($apiVer)) {
+                            case 'opera':
+                                $apiBro = 'Opera';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
                         break;
-                    }
-                    break;
-                case 'konqueror':
-                    $apiBro = 'Konqueror';
-                    break;
-                case 'access netfront':
-                    $apiBro       = 'NetFront';
-                    $browserMaker = 'Access';
-                    break;
-                case 'nokia':
-                case 'nokia browserng':
-                    $apiBro = 'Nokia Browser';
-                    break;
-                case 'facebook':
-                    switch (strtolower($apiVer)) {
-                    case 'bot':
-                        $apiBro     = 'FaceBook Bot';
-                        $apiVer     = '';
+                    case 'konqueror':
+                        $apiBro = 'Konqueror';
+                        break;
+                    case 'access netfront':
+                        $apiBro       = 'NetFront';
+                        $browserMaker = 'Access';
+                        break;
+                    case 'nokia':
+                    case 'nokia browserng':
+                        $apiBro = 'Nokia Browser';
+                        break;
+                    case 'facebook':
+                        switch (strtolower($apiVer)) {
+                            case 'bot':
+                                $apiBro     = 'FaceBook Bot';
+                                $apiVer     = '';
+                                $apiDesktop = false;
+                                $apiBot     = true;
+                                break;
+                            default:
+                                // nothing to do here
+                                break;
+                        }
+                        break;
+                    case 'bing bot':
+                        $apiBro       = 'BingBot';
+                        $browserMaker = 'Microsoft';
+                        $apiDesktop   = false;
+                        $apiBot       = true;
+                        $apiTv        = false;
+                        break;
+                    case 'bing':
+                        $browserMaker = 'Microsoft';
+
+                        switch (strtolower($apiVer)) {
+                            case 'bot':
+                                $apiBro = 'BingBot';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'google bot':
+                    case 'facebook bot':
                         $apiDesktop = false;
                         $apiBot     = true;
+                        $apiTv      = false;
                         break;
-                    default:
-                        // nothing to do here
+                    case 'generic web browser':
+                        $apiBro     = null;
+                        $apiOs      = null;
+                        $apiMob     = null;
+                        $apiTab     = null;
+                        $apiDev     = null;
+                        $apiMan     = null;
+                        $apiBot     = null;
+                        $apiTv      = null;
+                        $apiDesktop = null;
                         break;
-                    }
-                    break;
-                case 'bing bot':
-                    $apiBro       = 'BingBot';
-                    $browserMaker = 'Microsoft';
-                    $apiDesktop   = false;
-                    $apiBot       = true;
-                    $apiTv        = false;
-                    break;
-                case 'bing':
-                    $browserMaker = 'Microsoft';
-
-                    switch (strtolower($apiVer)) {
-                    case 'bot':
-                        $apiBro = 'BingBot';
-                        $apiVer = '';
-                        break;
-                    default:
-                        // nothing to do
-                        break;
-                    }
-                    break;
-                case 'google bot':
-                case 'facebook bot':
-                    $apiDesktop = false;
-                    $apiBot     = true;
-                    $apiTv      = false;
-                    break;
-                case 'generic web browser':
-                    $apiBro     = null;
-                    $apiOs      = null;
-                    $apiMob     = null;
-                    $apiTab     = null;
-                    $apiDev     = null;
-                    $apiMan     = null;
-                    $apiBot     = null;
-                    $apiTv      = null;
-                    $apiDesktop = null;
-                    break;
-                case 'robot bot or crawler':
-                case 'robot':
-                    $apiDesktop = false;
-                    $apiBot     = true;
-                    $apiTv      = false;
-                    $apiDev     = 'general Bot';
-                    $apiBro     = 'unknown';
-                    break;
-                case 'generic smarttv':
-                    $apiDesktop = false;
-                    $apiBot     = false;
-                    $apiTv      = true;
-                    $apiDev     = 'general TV Device';
-                    $apiBro     = 'unknown';
-                    break;
-                case 'unknown':
-                    $browserMaker = 'unknown';
-                    $apiBro       = 'unknown';
-
-                    switch (strtolower($apiVer)) {
-                    case 'bot or crawler':
+                    case 'robot bot or crawler':
+                    case 'robot':
                         $apiDesktop = false;
                         $apiBot     = true;
                         $apiTv      = false;
                         $apiDev     = 'general Bot';
                         $apiBro     = 'unknown';
-                        $apiVer     = '';
                         break;
-                    default:
-                        // nothing to do
+                    case 'generic smarttv':
+                        $apiDesktop = false;
+                        $apiBot     = false;
+                        $apiTv      = true;
+                        $apiDev     = 'general TV Device';
+                        $apiBro     = 'unknown';
                         break;
-                    }
-                    break;
-                case 'wii':
-                    $apiDesktop = false;
-                    $apiBot     = false;
-                    $apiTv      = true;
-                    $apiDev     = 'Wii';
-                    $apiBro     = 'Wii Browser';
-                    $apiMan     = 'Nintendo';
-                    break;
-                case 'android webkit':
-                case 'android':
-                    $apiBro = 'Android Webkit';
-                    if ('4.01' == $apiVer) {
-                        $apiVer = '4.0.1';
-                    }
-                    $browserMaker = 'Google';
-                    break;
-                case 'UCWeb':
-                    $apiBro = 'UC Browser';
-                    break;
-                case 'seomoz':
-                    $browserMaker = 'SEOmoz';
+                    case 'unknown':
+                        $browserMaker = 'unknown';
+                        $apiBro       = 'unknown';
 
-                    switch (strtolower($apiVer)) {
-                    case 'rogerbot':
-                        $apiBro = 'Rogerbot';
-                        $apiVer = '';
+                        switch (strtolower($apiVer)) {
+                            case 'bot or crawler':
+                                $apiDesktop = false;
+                                $apiBot     = true;
+                                $apiTv      = false;
+                                $apiDev     = 'general Bot';
+                                $apiBro     = 'unknown';
+                                $apiVer     = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
                         break;
-                    default:
-                        // nothing to do
+                    case 'wii':
+                        $apiDesktop = false;
+                        $apiBot     = false;
+                        $apiTv      = true;
+                        $apiDev     = 'Wii';
+                        $apiBro     = 'Wii Browser';
+                        $apiMan     = 'Nintendo';
                         break;
-                    }
-                    break;
-                case 'java':
-                    $browserMaker = 'unknown';
+                    case 'android webkit':
+                    case 'android':
+                        $apiBro = 'Android Webkit';
+                        if ('4.01' == $apiVer) {
+                            $apiVer = '4.0.1';
+                        }
+                        $browserMaker = 'Google';
+                        break;
+                    case 'UCWeb':
+                        $apiBro = 'UC Browser';
+                        break;
+                    case 'seomoz':
+                        $browserMaker = 'SEOmoz';
 
-                    switch (strtolower($apiVer)) {
-                    case 'updater':
-                        $apiBro = 'Generic Java Crawler';
-                        $apiVer = '';
+                        switch (strtolower($apiVer)) {
+                            case 'rogerbot':
+                                $apiBro = 'Rogerbot';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
+                        break;
+                    case 'java':
+                        $browserMaker = 'unknown';
+
+                        switch (strtolower($apiVer)) {
+                            case 'updater':
+                                $apiBro = 'Generic Java Crawler';
+                                $apiVer = '';
+                                break;
+                            default:
+                                // nothing to do
+                                break;
+                        }
                         break;
                     default:
-                        // nothing to do
+                        // nothing to do here
                         break;
-                    }
-                    break;
-                default:
-                    // nothing to do here
-                    break;
                 }
 
                 $apiBro = trim($apiBro);

@@ -160,7 +160,8 @@ class MobileDevice
             'windows phone os',
             'wireless',
             'xda_diamond_2',
-            'zunewp7'
+            'zunewp7',
+            'wpdesktop'
         );
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = array(

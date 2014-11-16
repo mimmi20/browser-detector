@@ -80,10 +80,10 @@ class SonyLT30p
         'rows'                    => 40,
         'max_image_width'         => 320,
         'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

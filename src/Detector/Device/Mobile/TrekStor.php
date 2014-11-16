@@ -98,7 +98,7 @@ class TrekStor
     public function canHandle()
     {
         $trekStorPhones = array(
-            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color', 'SurfTab_', 'ST701041'
+            'TrekStor', 'ST10216-1', 'ST70104', 'ST80216', 'Liro_Color', 'SurfTab_', 'ST701041', 'VT10416'
         );
 
         if ($this->utils->checkIfContains($trekStorPhones)) {

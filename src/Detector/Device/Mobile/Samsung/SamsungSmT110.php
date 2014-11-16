@@ -28,18 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Asus;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AsusMe173x
+class SamsungSmT110
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -60,9 +55,9 @@ class AsusMe173x
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'ME173X',
+        'model_name'              => 'SM-T110',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Memo Pad HD7',
+        'marketing_name'          => 'Galaxy Tab 3 Lite 7',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -80,16 +75,16 @@ class AsusMe173x
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 600,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => false,
+        'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => false,
+        'nfc_support'             => true,
     );
 
     /**
@@ -99,7 +94,7 @@ class AsusMe173x
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ME173X')) {
+        if (!$this->utils->checkIfContains('SM-T110')) {
             return false;
         }
 
@@ -133,7 +128,7 @@ class AsusMe173x
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company\Samsung();
     }
 
     /**
@@ -143,7 +138,7 @@ class AsusMe173x
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company\Samsung();
     }
 
     /**
@@ -157,67 +152,5 @@ class AsusMe173x
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'asus_eee_pad_tf101_ver1_suban40');
-                break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
-
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
-        }
-
-        return $this;
     }
 }

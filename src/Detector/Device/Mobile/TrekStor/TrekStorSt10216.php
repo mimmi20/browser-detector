@@ -78,7 +78,7 @@ class TrekStorSt10216
         'max_image_height'        => null,
         'resolution_width'        => 1280,
         'resolution_height'       => 800,
-        'dual_orientation'        => false,
+        'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms

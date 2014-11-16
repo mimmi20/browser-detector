@@ -62,7 +62,7 @@ class AsusMe302c
         // device
         'model_name'              => 'ME302C',
         'model_extra_info'        => null,
-        'marketing_name'          => 'MeMO Pad ME302C',
+        'marketing_name'          => 'MeMO Pad FHD 10',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

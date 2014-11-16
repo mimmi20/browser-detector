@@ -111,6 +111,7 @@ class Chrome
             'YaBrowser',
             // Bots trying to be a Chrome
             'PagePeeker',
+            'Google Web Preview',
             // Fakes
             'Mac; Mac OS '
         );

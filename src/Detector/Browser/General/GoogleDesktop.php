@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -139,5 +140,19 @@ class GoogleDesktop
     public function getWeight()
     {
         return 49124;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function detectEngine()
+    {
+        $handler = new Webkit();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

@@ -58,8 +58,8 @@ class SamsungGti9105p
         // device
         'model_name'              => 'GT-I9105P',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9105p_ver1_suban40nosam
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i9105p_ver1_suban40nosam
+        'marketing_name'          => 'Galaxy S II Plus NFC',
+        'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info

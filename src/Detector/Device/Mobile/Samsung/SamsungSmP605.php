@@ -76,8 +76,8 @@ class SamsungSmP605
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
+        'resolution_width'        => 2560,
+        'resolution_height'       => 1600,
         'dual_orientation'        => true,
         'colors'                  => 16777216,
 
@@ -119,7 +119,7 @@ class SamsungSmP605
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**

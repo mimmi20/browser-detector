@@ -30,11 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -53,7 +55,7 @@ class SonyST26i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'sony_st26i_ver1', // not in wurfl
 
         // device
         'model_name'              => 'ST26i',
@@ -64,22 +66,22 @@ class SonyST26i
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
+        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST26iR601.xml',
         'uaprof2'                 => null,
         'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 46,
-        'physical_screen_height'  => 68,
-        'columns'                 => 60,
-        'rows'                    => 40,
+        'physical_screen_width'   => 44,
+        'physical_screen_height'  => 78,
+        'columns'                 => 44,
+        'rows'                    => 32,
         'max_image_width'         => 320,
         'max_image_height'        => 400,
         'resolution_width'        => 480,
         'resolution_height'       => 854,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 262144,
 
         // sms
         'sms_enabled'             => true,
@@ -157,5 +159,26 @@ class SonyST26i
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+
+        return $this;
     }
 }

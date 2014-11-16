@@ -99,7 +99,9 @@ class LenovoA2109aIdeaTab
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('IdeaTab_A1107', 'IdeaTabS2110AF', 'IdeaTab A2107A-H', 'IdeaTab S6000-H'))) {
+        $otherLenovoTabs = array('IdeaTab_A1107', 'IdeaTabS2110AF', 'IdeaTab A2107A-H', 'IdeaTab S6000-H', 'S6000L-F');
+
+        if ($this->utils->checkIfContains($otherLenovoTabs)) {
             return false;
         }
 

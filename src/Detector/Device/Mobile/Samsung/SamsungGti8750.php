@@ -79,7 +79,7 @@ class SamsungGti8750
         'resolution_width'        => 720,
         'resolution_height'       => 1280,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

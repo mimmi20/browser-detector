@@ -28,16 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -46,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonST26i
+class SamsungSmT530
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,33 +52,33 @@ class SonyEricssonST26i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sony_st26i_ver1', // not in wurfl
+        'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'ST26i',
+        'model_name'              => 'SM-T530',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia J',
+        'marketing_name'          => 'Galaxy Tab 4 10.1',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST26iR601.xml',
+        'uaprof'                  => null,
         'uaprof2'                 => null,
         'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 44,
-        'physical_screen_height'  => 78,
-        'columns'                 => 44,
-        'rows'                    => 32,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
         'dual_orientation'        => true,
-        'colors'                  => 262144,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -98,11 +94,7 @@ class SonyEricssonST26i
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonST26i', 'SonyST26i', 'ST26i'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('SonyEricssonST26iv', 'SonyST26iv', 'ST26iv'))) {
+        if (!$this->utils->checkIfContains('SM-T530')) {
             return false;
         }
 
@@ -126,7 +118,7 @@ class SonyEricssonST26i
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -136,7 +128,7 @@ class SonyEricssonST26i
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company\Samsung();
     }
 
     /**
@@ -146,7 +138,7 @@ class SonyEricssonST26i
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company\Samsung();
     }
 
     /**
@@ -160,26 +152,5 @@ class SonyEricssonST26i
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
     }
 }

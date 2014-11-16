@@ -65,7 +65,7 @@ class WindowsMobileOs
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7'))) {
+        if ($this->utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7', 'WPDesktop'))) {
             return false;
         }
 

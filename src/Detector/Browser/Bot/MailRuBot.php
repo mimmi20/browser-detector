@@ -94,7 +94,7 @@ class MailRuBot
      */
     public function getName()
     {
-        return 'mail.ru Bot';
+        return 'Mail.Ru';
     }
 
     /**

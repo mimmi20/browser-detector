@@ -136,7 +136,7 @@ class InputMapper
                 $browserName = 'FaceBook Bot';
                 break;
             case 'java':
-                $browserName = 'Generic Java Crawler';
+                $browserName = 'Java Standard Library';
                 break;
             case 'nokia web browser':
                 $browserName = 'Nokia Browser';
@@ -318,6 +318,9 @@ class InputMapper
                 break;
             case 'red hat, inc.':
                 $maker = 'Red Hat Inc';
+                break;
+            case 'rim':
+                $maker = 'Research In Motion Limited';
                 break;
             default:
                 // nothing to do here
@@ -611,6 +614,7 @@ class InputMapper
             case 'android 4.2':
             case 'android 4.3':
             case 'android 4.4':
+            case 'android 4 tablet':
             case 'android 4.1 tablet':
             case 'android 4.2 tablet':
             case 'android 4.3 tablet':
@@ -754,6 +758,9 @@ class InputMapper
                 break;
             case 'lifetab s9512':
                 $deviceName = 'LifeTab S9512';
+                break;
+            case 'e10312 (md 98486)':
+                $deviceName = 'LifeTab E10312';
                 break;
             default:
                 // nothing to do here
@@ -934,6 +941,9 @@ class InputMapper
                 break;
             case 'galaxy s3 lte international':
                 $marketingName = 'Galaxy S III LTE International';
+                break;
+            case 'lifetab':
+                $marketingName = 'LifeTab';
                 break;
             default:
                 // nothing to do here

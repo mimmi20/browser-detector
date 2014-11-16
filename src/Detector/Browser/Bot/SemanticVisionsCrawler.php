@@ -28,14 +28,15 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Medion;
+namespace BrowserDetector\Detector\Browser\Bot;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -43,9 +44,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MdLifeE10312
-    extends DeviceHandler
-    implements DeviceInterface
+class SemanticVisionsCrawler
+    extends BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties
@@ -53,53 +54,82 @@ class MdLifeE10312
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
-
-        // device
-        'model_name'              => 'LifeTab E10312',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'LifeTab E10312',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
 
-        // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
+        // pdf
+        'pdf_support'                  => true,
 
-        // sms
-        'sms_enabled'             => true,
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
 
-        // chips
-        'nfc_support'             => true,
+        // rss
+        'rss_support'                  => false,
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * Returns true if this handler can handle the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LIFETAB_E10312')) {
+        if (!$this->utils->checkIfContains('semantic-visions.com crawler')) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'semantic-visions.com crawler';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\SemanticVisions();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('semantic\-visions.com crawler; HTTPClient');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -109,48 +139,18 @@ class MdLifeE10312
      */
     public function getWeight()
     {
-        return 73802;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new DeviceType\Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Medion();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company\Medion();
+        return 3;
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectOs()
+    public function detectEngine()
     {
-        $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

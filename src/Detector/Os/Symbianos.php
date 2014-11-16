@@ -89,15 +89,7 @@ class Symbianos
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
-        if ($this->utils->checkIfContains(array('Symbian/3'))) {
-            return $detector->setVersion('S3');
-        }
-
-        $searches = array('Symbian', 'SymbianOS');
-
-        $detector->detectVersion($searches);
-
-        return $detector;
+        return $detector->setVersion('0.0');
     }
 
     /**

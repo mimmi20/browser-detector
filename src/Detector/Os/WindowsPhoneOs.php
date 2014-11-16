@@ -79,7 +79,7 @@ class WindowsPhoneOs
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone'))) {
+        if (!$this->utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop'))) {
             return false;
         }
 

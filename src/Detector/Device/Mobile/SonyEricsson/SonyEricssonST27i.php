@@ -61,7 +61,7 @@ class SonyEricssonST27i
         // device
         'model_name'              => 'ST27i',
         'model_extra_info'        => null,
-        'marketing_name'          => 'ST27i',
+        'marketing_name'          => 'Xperia Go',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

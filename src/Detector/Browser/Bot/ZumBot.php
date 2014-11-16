@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WiJobRoboter
+class ZumBot
     extends BrowserHandler
     implements MatcherInterface, BrowserInterface
 {
@@ -80,11 +80,11 @@ class WiJobRoboter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('WI Job Roboter')) {
-            return false;
+        if ($this->utils->checkIfContains(array('ZumBot'))) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -94,7 +94,7 @@ class WiJobRoboter
      */
     public function getName()
     {
-        return 'WI Job Roboter';
+        return 'ZumBot';
     }
 
     /**
@@ -104,7 +104,7 @@ class WiJobRoboter
      */
     public function getManufacturer()
     {
-        return new Company\WebIntegrationItService();
+        return new Company\ZuminternetCorp();
     }
 
     /**
@@ -127,7 +127,7 @@ class WiJobRoboter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('WI Job Roboter Spider Version');
+        $searches = array('ZumBot');
 
         return $detector->detectVersion($searches);
     }
@@ -139,7 +139,7 @@ class WiJobRoboter
      */
     public function getWeight()
     {
-        return 24999;
+        return 390259;
     }
 
     /**

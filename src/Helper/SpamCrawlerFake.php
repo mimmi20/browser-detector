@@ -96,6 +96,7 @@ class SpamCrawlerFake
             'bing',
             'bluecoat drtr',
             'bot',
+            'bubing',
             'camelhttpstream',
             'catalog',
             'check_http',
@@ -121,6 +122,7 @@ class SpamCrawlerFake
             'googlebot',
             'google-fontanalysis',
             'google web preview',
+            'google page speed',
             'google wireless transcoder',
             'grabber',
             'gsa/',
@@ -142,6 +144,7 @@ class SpamCrawlerFake
             'mailwalker',
             'mediapartners-google',
             'metauri',
+            'microsoft office protocol discovery',
             'moozilla',
             'nagios',
             'naver',
@@ -211,8 +214,8 @@ class SpamCrawlerFake
         if ($this->utils->checkIfContains($bots, true)) {
             $noBot = array(
                 'google earth', 'google desktop', 'googletoolbar', 'googlet5',
-                'simbar', 'google web preview', 'googletv', 'google_impact',
-                'google page speed', 'google-tr', '=google', 'enusbingip',
+                'simbar', 'googletv', 'google_impact',
+                'google-tr', '=google', 'enusbingip',
                 'fbmapping', 'yandex.translate', 'yandex browser'
             );
 

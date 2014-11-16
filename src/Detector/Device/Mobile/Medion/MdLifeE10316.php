@@ -76,10 +76,10 @@ class MdLifeE10316
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

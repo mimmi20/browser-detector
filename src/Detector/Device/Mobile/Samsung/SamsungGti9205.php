@@ -70,16 +70,16 @@ class SamsungGti9205
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 59,
-        'physical_screen_height'  => 99,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

@@ -79,7 +79,7 @@ class SonyEricssonMK16i
         'resolution_width'        => 480,
         'resolution_height'       => 854,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

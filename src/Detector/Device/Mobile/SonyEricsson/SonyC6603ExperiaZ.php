@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -133,7 +132,7 @@ class SonyC6603ExperiaZ
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company\Sony();
     }
 
     /**
@@ -143,7 +142,7 @@ class SonyC6603ExperiaZ
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company\Sony();
     }
 
     /**
