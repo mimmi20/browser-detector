@@ -31,7 +31,6 @@
 namespace BrowserDetector\Helper;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
@@ -543,37 +542,37 @@ class InputMapper
     public function mapDeviceType($deviceType)
     {
         switch (strtolower($deviceType)) {
-            case 'Smart-TV':
-            case 'TV Device':
+            case 'smart-tv':
+            case 'tv device':
                 $deviceType = new DeviceType\Tv();
                 break;
-            case 'Desktop':
+            case 'desktop':
                 $deviceType = new DeviceType\Desktop();
                 break;
-            case 'FonePad':
+            case 'fonepad':
                 $deviceType = new DeviceType\FonePad();
                 break;
-            case 'Tablet':
+            case 'tablet':
                 $deviceType = new DeviceType\Tablet();
                 break;
-            case 'Mobile Phone':
+            case 'mobile phone':
                 $deviceType = new DeviceType\MobilePhone();
                 break;
-            case 'Mobile Device':
+            case 'mobile device':
                 $deviceType = new DeviceType\MobileDevice();
                 break;
-            case 'Robot':
+            case 'robot':
                 $deviceType = new DeviceType\Bot();
                 break;
-            case  'Smartphone':
-                $deviceType = new DeviceType\MobilePhone();
+            case 'smartphone':
+                $deviceType = new DeviceType\Smartphone();
                 break;
-            case  'Feature Phone':
-                $deviceType = new DeviceType\MobilePhone();
+            case 'feature phone':
+                $deviceType = new DeviceType\FeaturePhone();
                 break;
             case '':
             case 'unknown':
-            case 'Other Non-Mobile':
+            case 'other non-mobile':
             default:
                 $deviceType = new DeviceType\Unknown();
                 break;

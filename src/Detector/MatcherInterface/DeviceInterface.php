@@ -77,7 +77,7 @@ interface DeviceInterface
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceInterface
+     * @return \BrowserDetector\Detector\MatcherInterface\DeviceInterface
      */
     public function detectSpecialProperties();
 

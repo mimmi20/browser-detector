@@ -118,7 +118,7 @@ class GoogleAdSenseBot
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\BotTrancoder();
     }
 
     /**

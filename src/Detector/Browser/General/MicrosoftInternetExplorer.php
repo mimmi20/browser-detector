@@ -290,46 +290,53 @@ class MicrosoftInternetExplorer
         );
 
         $browserVersion  = $this->detectVersion();
+
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
+
+        if ($doMatch) {
+            $browserVersion->setVersion($matches[1]);
+        }
+
         $detectedVersion = $browserVersion->getVersion(Version::MAJORONLY);
 
         switch ($engineVersion) {
-        case 4:
-            if ($this->utils->checkIfContains('Trident/4.0')
-                && 8 > $detectedVersion
-            ) {
-                $this->setCapability(
-                    'mobile_browser_modus',
-                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                );
-            }
-            break;
-        case 5:
-            if (9 > $detectedVersion) {
-                $this->setCapability(
-                    'mobile_browser_modus',
-                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                );
-            }
-            break;
-        case 6:
-            if (10 > $detectedVersion) {
-                $this->setCapability(
-                    'mobile_browser_modus',
-                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                );
-            }
-            break;
-        case 7:
-            if (11 > $detectedVersion) {
-                $this->setCapability(
-                    'mobile_browser_modus',
-                    'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                );
-            }
-            break;
-        default:
-            //nothing to do
-            break;
+            case 4:
+                if ($this->utils->checkIfContains('Trident/4.0')
+                    && 8 > $detectedVersion
+                ) {
+                    $this->setCapability(
+                        'mobile_browser_modus',
+                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                    );
+                }
+                break;
+            case 5:
+                if (9 > $detectedVersion) {
+                    $this->setCapability(
+                        'mobile_browser_modus',
+                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                    );
+                }
+                break;
+            case 6:
+                if (10 > $detectedVersion) {
+                    $this->setCapability(
+                        'mobile_browser_modus',
+                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                    );
+                }
+                break;
+            case 7:
+                if (11 > $detectedVersion) {
+                    $this->setCapability(
+                        'mobile_browser_modus',
+                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                    );
+                }
+                break;
+            default:
+                //nothing to do
+                break;
         }
 
         parent::detectDependProperties($engine, $os, $device);
@@ -342,46 +349,46 @@ class MicrosoftInternetExplorer
         $browserVersion = (int)$browserVersion->getVersion(Version::MAJORONLY);
 
         switch ($browserVersion) {
-        case 11:
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-            $engine->setCapability('image_inlining', true);
-            $engine->setCapability('css_spriting', true);
-            $engine->setCapability('svgt_1_1', true);
-            break;
-        case 10:
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-            $engine->setCapability('image_inlining', true);
-            $engine->setCapability('css_spriting', true);
-            $engine->setCapability('svgt_1_1', true);
-            break;
-        case 9:
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-            $engine->setCapability('image_inlining', true); //wurflkey: msie_9
-            $engine->setCapability('css_spriting', true);
-            $engine->setCapability('svgt_1_1', true);
-            break;
-        case 8:
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-            $engine->setCapability('image_inlining', false);
-            $engine->setCapability('css_spriting', true);
-            break;
-        case 7:
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-            $engine->setCapability('image_inlining', false);
-            $engine->setCapability('css_spriting', true);
-            break;
-        case 6:
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('is_sencha_touch_ok', true);
-            break;
-        default:
-            // nothing to do here
-            break;
+            case 11:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
+                break;
+            case 10:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
+                break;
+            case 9:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true); //wurflkey: msie_9
+                $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
+                break;
+            case 8:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 7:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 6:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                break;
+            default:
+                // nothing to do here
+                break;
         }
 
         return $this;
