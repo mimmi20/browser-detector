@@ -130,6 +130,8 @@ class Safari
             'WebClip',
             'WeTab',
             'wOSBrowser',
+            'GSA',
+            'GoogleBot',
             //mobile Version
             'Tablet',
             'Android',
@@ -137,7 +139,7 @@ class Safari
             'Mac; Mac OS '
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
+        if ($this->utils->checkIfContains(strtolower($isNotReallyAnSafari), true)) {
             return false;
         }
 

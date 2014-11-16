@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Browser\Bot;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 
 /**
  * @category  BrowserDetector
@@ -94,7 +94,7 @@ class GoogleSearchAppliance
      */
     public function getName()
     {
-        return 'Google Search Appliance';
+        return 'Google App';
     }
 
     /**
@@ -114,7 +114,7 @@ class GoogleSearchAppliance
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\Application();
     }
 
     /**
@@ -147,11 +147,11 @@ class GoogleSearchAppliance
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function detectEngine()
     {
-        $handler = new UnknownEngine();
+        $handler = new Webkit();
         $handler->setUseragent($this->useragent);
 
         return $handler;

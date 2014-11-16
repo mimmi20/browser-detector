@@ -635,6 +635,7 @@ class InputMapper
             case 'mobi for android':
             case 'nokia unrecognized ovi browser':
             case 'mozilla firefox for android':
+            case 'firefox for android tablet':
             case 'firefox for android':
                 $deviceName = 'general Mobile Device';
                 break;
@@ -806,6 +807,10 @@ class InputMapper
             case 'opera for series 60':
             case 'opera mini for s60':
             case 'windows mobile (opera)':
+            case 'mobi for android':
+            case 'mozilla firefox for android':
+            case 'firefox for android tablet':
+            case 'firefox for android':
                 $deviceMaker = null;
                 break;
             // Motorola
@@ -967,6 +972,11 @@ class InputMapper
             case 'opera for series 60':
             case 'opera mini for s60':
             case 'windows mobile (opera)':
+            case 'mobi for android':
+            case 'nokia unrecognized ovi browser':
+            case 'mozilla firefox for android':
+            case 'firefox for android tablet':
+            case 'firefox for android':
                 $marketingName = null;
                 break;
             // Acer

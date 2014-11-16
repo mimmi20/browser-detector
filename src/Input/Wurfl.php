@@ -617,6 +617,10 @@ class Wurfl extends Core
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
 
+        if (null === $device) {
+            return $result;
+        }
+
         if ($apiDev || $apiBro) {
             $versionFields = array(
                 'mobile_browser_version', 'renderingengine_version',
@@ -663,16 +667,17 @@ class Wurfl extends Core
             }
         }
 
+        $mapper  = new InputMapper();
         $version = new Version();
 
-        $result->setCapability('mobile_browser', $apiBro);
-        $result->setCapability('mobile_browser_manufacturer', $browserMaker);
-        $result->setCapability('mobile_browser_version', $version->setVersion($apiVer));
-        $result->setCapability('device_os', $apiOs);
-        $result->setCapability('model_name', $apiDev);
-        $result->setCapability('manufacturer_name', $apiMan);
-        $result->setCapability('marketing_name', $marketingName);
-        $result->setCapability('brand_name', $brandName);
+        $result->setCapability('mobile_browser', $mapper->mapBrowserName($apiBro));
+        $result->setCapability('mobile_browser_manufacturer', $mapper->mapBrowserMaker($browserMaker));
+        $result->setCapability('mobile_browser_version', $version->setVersion($mapper->mapBrowserVersion($apiVer)));
+        $result->setCapability('device_os', $mapper->mapOsName($apiOs));
+        $result->setCapability('model_name', $mapper->mapDeviceName($apiDev));
+        $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker($apiMan));
+        $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName($marketingName));
+        $result->setCapability('brand_name', $mapper->mapDeviceBrandName($brandName));
 
         if ($apiBot) {
             $apiDesktop = false;
@@ -683,15 +688,15 @@ class Wurfl extends Core
             $result->setCapability('pointing_method', null);
         }
 
-        $deviceType = $device->getVirtualCapability('form_factor');
-
-        if (!$apiBro) {
+        if (!$apiBro || !$device) {
             $apiDesktop = null;
             $apiTv      = null;
             $apiMob     = null;
             $apiBot     = null;
             $apiPhone   = null;
             $deviceType = null;
+        } else {
+            $deviceType = $device->getVirtualCapability('form_factor');
         }
 
         $result->setCapability('is_bot', $apiBot);
@@ -707,13 +712,7 @@ class Wurfl extends Core
         }
 
         $result->setCapability('wurflKey', $apiKey);
-
-        $mapper = new InputMapper();
         $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
-
-        if (null === $device) {
-            return $result;
-        }
 
         if (($deviceType == 'Mobile Phone' || $deviceType == 'Tablet' || $deviceType == 'FonePad' || $deviceType == 'Feature Phone')
             && 'true' === $device->getCapability('dual_orientation')

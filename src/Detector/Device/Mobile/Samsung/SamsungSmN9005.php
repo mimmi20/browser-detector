@@ -76,8 +76,8 @@ class SamsungSmN9005
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
+        'resolution_width'        => 1080,
+        'resolution_height'       => 1920,
         'dual_orientation'        => true,
         'colors'                  => 16777216,
 

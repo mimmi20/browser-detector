@@ -124,10 +124,11 @@ class Firefox
             'IceDragon',
             'TenFourFox',
             'WaterFox',
-            //Nutch
+            //Bots
             'Nutch',
             'CazoodleBot',
             'LOOQ',
+            'GoogleImageProxy',
             //others
             'MSIE',
             // Fakes
