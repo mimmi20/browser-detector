@@ -28,13 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\RimOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerryZ10
+class SamsungSmT520
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +55,9 @@ class BlackBerryZ10
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Z10',
+        'model_name'              => 'SM-T520',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Z10',
+        'marketing_name'          => 'Galaxy Tab Pro 10.1',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -76,9 +75,9 @@ class BlackBerryZ10
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 768,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => false,
+        'resolution_width'        => 2560,
+        'resolution_height'       => 1600,
+        'dual_orientation'        => true,
         'colors'                  => 16777216,
 
         // sms
@@ -95,7 +94,7 @@ class BlackBerryZ10
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BB10')) {
+        if (!$this->utils->checkIfContains('SM-T520')) {
             return false;
         }
 
@@ -119,7 +118,7 @@ class BlackBerryZ10
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -129,7 +128,7 @@ class BlackBerryZ10
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company\Samsung();
     }
 
     /**
@@ -139,17 +138,17 @@ class BlackBerryZ10
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company\Samsung();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\RimOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new RimOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;

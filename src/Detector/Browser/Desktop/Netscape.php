@@ -164,7 +164,7 @@ class Netscape
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company\Netscape();
     }
 
     /**

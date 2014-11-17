@@ -137,7 +137,7 @@ class MailRuBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Mail.RU_Bot', 'Mail.RU');
+        $searches = array('Mail.RU_Bot\/Fast', 'Mail.RU_Bot', 'Mail.RU');
 
         return $detector->detectVersion($searches);
     }

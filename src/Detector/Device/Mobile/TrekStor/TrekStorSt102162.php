@@ -28,22 +28,22 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
+namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\RimOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
-/**
+/*
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerryZ10
+class TrekStorSt102162
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +56,9 @@ class BlackBerryZ10
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Z10',
+        'model_name'              => 'ST10216-2',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Z10',
+        'marketing_name'          => 'ST10216-2',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -76,10 +76,10 @@ class BlackBerryZ10
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 768,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => false,
-        'colors'                  => 16777216,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
         // sms
         'sms_enabled'             => true,
@@ -95,11 +95,13 @@ class BlackBerryZ10
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BB10')) {
-            return false;
+        $trekStorPhones = array('ST10216-2');
+
+        if ($this->utils->checkIfContains($trekStorPhones)) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -109,7 +111,7 @@ class BlackBerryZ10
      */
     public function getWeight()
     {
-        return 3;
+        return 70634;
     }
 
     /**
@@ -119,7 +121,7 @@ class BlackBerryZ10
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -129,7 +131,7 @@ class BlackBerryZ10
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company\TrekStor();
     }
 
     /**
@@ -139,17 +141,17 @@ class BlackBerryZ10
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company\TrekStor();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\RimOs
+     * @return\BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new RimOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;

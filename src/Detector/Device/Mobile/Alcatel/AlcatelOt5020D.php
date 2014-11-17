@@ -58,7 +58,7 @@ class AlcatelOt5020D
         // device
         'model_name'              => 'OT-5020D',
         'model_extra_info'        => null,
-        'marketing_name'          => 'One Touch M Pop',
+        'marketing_name'          => 'One Touch MPop',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

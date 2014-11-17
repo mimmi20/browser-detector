@@ -56,7 +56,7 @@ class TrekStorSt10216
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'ST10216',
+        'model_name'              => 'ST10216-1',
         'model_extra_info'        => null,
         'marketing_name'          => 'SurfTab ventos 10.1 v2',
         'has_qwerty_keyboard'     => true,

@@ -96,7 +96,7 @@ class Nagios
      */
     public function getName()
     {
-        return 'HTTP nagios plugin';
+        return 'Nagios';
     }
 
     /**

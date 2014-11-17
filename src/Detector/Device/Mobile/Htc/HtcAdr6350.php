@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -58,7 +57,7 @@ class HtcAdr6350
         // device
         'model_name'              => 'ADR6350',
         'model_extra_info'        => 'ADR6350',
-        'marketing_name'          => 'Explorer',
+        'marketing_name'          => 'Droid Incredible 2',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

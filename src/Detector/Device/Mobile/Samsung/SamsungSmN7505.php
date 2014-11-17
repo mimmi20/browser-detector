@@ -58,7 +58,7 @@ class SamsungSmN7505
         // device
         'model_name'              => 'SM-N7505',
         'model_extra_info'        => null,
-        'marketing_name'          => 'SM-N7505',
+        'marketing_name'          => 'Note 3 Neo Duos',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -76,8 +76,8 @@ class SamsungSmN7505
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
         'dual_orientation'        => true,
         'colors'                  => 16777216,
 

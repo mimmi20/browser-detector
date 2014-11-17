@@ -108,6 +108,7 @@ class Chrome
             'OPR',
             'PaleMoon',
             'RockMelt',
+            'Silk',
             'YaBrowser',
             // Bots trying to be a Chrome
             'PagePeeker',

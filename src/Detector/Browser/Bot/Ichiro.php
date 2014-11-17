@@ -98,7 +98,7 @@ class Ichiro
      */
     public function getName()
     {
-        return 'Ichiro Crawler';
+        return 'Ichiro Bot';
     }
 
     /**
@@ -108,7 +108,7 @@ class Ichiro
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Ichiro();
     }
 
     /**
