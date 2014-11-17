@@ -39,6 +39,9 @@ use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
 
@@ -92,13 +95,29 @@ class UserAgent extends Core
         $this->device->detectSpecialProperties();
 
         // detect the os which runs on the device
-        $this->os = $this->detectOs();
+        $this->os = $this->device->detectOs();
+        if (!($this->os instanceof OsInterface)) {
+            $this->os = $this->detectOs();
+        }
 
         // detect the browser which is used
-        $this->browser = $this->detectBrowser();
+        $this->browser = $this->os->detectBrowser();
+        if (!($this->browser instanceof BrowserInterface)
+            || ($this->os instanceof UnknownOs
+                && is_callable(array($this->device, 'detectBrowser')))
+        ) {
+            $this->browser = $this->device->detectBrowser();
+        }
+
+        if (!($this->browser instanceof BrowserInterface)) {
+            $this->browser = $this->detectBrowser();
+        }
 
         // detect the engine which is used in the browser
-        $this->engine = $this->detectEngine();
+        $this->engine = $this->browser->detectEngine();
+        if (!($this->engine instanceof EngineHandler)) {
+            $this->engine = $this->detectEngine();
+        }
 
         $this->device->detectDependProperties(
             $this->browser, $this->engine, $this->os
