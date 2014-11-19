@@ -94,7 +94,7 @@ class Larbin
      */
     public function getName()
     {
-        return 'larbin';
+        return 'Larbin';
     }
 
     /**

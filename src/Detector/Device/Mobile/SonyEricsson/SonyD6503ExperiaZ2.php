@@ -28,16 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -46,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BaseLutea3
+class SonyD6503ExperiaZ2
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -59,30 +55,30 @@ class BaseLutea3
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Lutea 3',
-        'model_extra_info'        => 'for Base',
-        'marketing_name'          => 'Lutea 3',
+        'model_name'              => 'D6503',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Xperia Z2',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.zte.com.cn/mobile/uaprof/Skate_Aqua.xml',
+        'uaprof'                  => null,
         'uaprof2'                 => null,
         'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 95,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 1080,
+        'resolution_height'       => 1920,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -98,7 +94,7 @@ class BaseLutea3
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('base_lutea_3', true)) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonD6503', 'SonyD6503', 'D6503'))) {
             return false;
         }
 
@@ -132,7 +128,7 @@ class BaseLutea3
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company\Sony();
     }
 
     /**
@@ -142,7 +138,7 @@ class BaseLutea3
      */
     public function getBrand()
     {
-        return new Company\Base();
+        return new Company\Sony();
     }
 
     /**
@@ -156,25 +152,5 @@ class BaseLutea3
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
     }
 }

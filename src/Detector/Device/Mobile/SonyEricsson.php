@@ -116,6 +116,7 @@ class SonyEricsson
             'c6603',
             'c6503',
             'c6903',
+            'd6503',
             'e10i',
             'e15i',
             'e15av',
