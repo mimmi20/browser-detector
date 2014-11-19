@@ -140,12 +140,12 @@ class UserAgent extends Core
      */
     private function detectEngine()
     {
-        $handlersToUse = array();
-
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\BrowserDetector\Detector\Engine');
-        $chain->setHandlers($handlersToUse);
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Engine' . DIRECTORY_SEPARATOR
+        );
         $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
@@ -158,12 +158,12 @@ class UserAgent extends Core
      */
     private function detectBrowser()
     {
-        $handlersToUse = array();
-
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser');
-        $chain->setHandlers($handlersToUse);
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
+        );
         $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
@@ -176,12 +176,12 @@ class UserAgent extends Core
      */
     private function detectOs()
     {
-        $handlersToUse = array();
-
         $chain = new Chain();
         $chain->setUserAgent($this->_agent);
         $chain->setNamespace('\BrowserDetector\Detector\Os');
-        $chain->setHandlers($handlersToUse);
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
+        );
         $chain->setDefaultHandler(new UnknownOs());
 
         return $chain->detect();
