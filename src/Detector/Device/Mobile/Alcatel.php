@@ -100,7 +100,6 @@ class Alcatel
         $alcatelPhones = array(
             'ALCATEL',
             'Alcatel',
-            'BASE_Lutea_3',
             'Vodafone 975N',
             'Vodafone Smart II'
         );

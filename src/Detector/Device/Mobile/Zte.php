@@ -98,7 +98,7 @@ class Zte
     public function canHandle()
     {
         $ztePhones = array(
-            'zte', 'base tab', 'base lutea', 'racerii', ' x920 ', ' n600 ',
+            'zte', 'base tab', 'base lutea', 'BASE_Lutea_3', 'racerii', ' x920 ', ' n600 ',
             ' w713 ', ' v880 ', ' v9 ', 'smarttab7', 'smarttab10', 'blade'
         );
 
