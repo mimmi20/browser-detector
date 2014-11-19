@@ -28,10 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Motorola;
+namespace BrowserDetector\Detector\Device\Mobile\Arnova;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MotorolaDroidBionic4G
+class Arnova9G2I
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +56,9 @@ class MotorolaDroidBionic4G
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'XT875',
+        'model_name'              => 'AN9G2I',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Droid Bionic 4G LTE',
+        'marketing_name'          => 'AN9G2I',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,8 +76,8 @@ class MotorolaDroidBionic4G
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 768,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
@@ -94,7 +95,7 @@ class MotorolaDroidBionic4G
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DROID BIONIC 4G', 'XT875')) {
+        if (!$this->utils->checkIfContains('AN9G2I')) {
             return false;
         }
 
@@ -118,7 +119,7 @@ class MotorolaDroidBionic4G
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -128,7 +129,7 @@ class MotorolaDroidBionic4G
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company\Arnova();
     }
 
     /**
@@ -138,7 +139,7 @@ class MotorolaDroidBionic4G
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company\Arnova();
     }
 
     /**

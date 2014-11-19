@@ -43,12 +43,12 @@ class Linkdex extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'linkdex.com';
+    protected $name = 'Linkdex Limited';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'linkdex.com';
+    protected $brandname = 'Linkdex';
 }

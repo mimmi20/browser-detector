@@ -104,7 +104,8 @@ class Arnova
             'AN10BG3',
             'AN10DG3',
             'ARCHM901',
-            'AN7BG2DT'
+            'AN7BG2DT',
+            'AN9G2I'
         );
 
         if (!$this->utils->checkIfContains($arnovaPhones)) {

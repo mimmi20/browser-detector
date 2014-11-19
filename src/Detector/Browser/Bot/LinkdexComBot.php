@@ -94,7 +94,7 @@ class LinkdexComBot
      */
     public function getName()
     {
-        return 'linkdex';
+        return 'Linkdex Bot';
     }
 
     /**
@@ -137,7 +137,7 @@ class LinkdexComBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('linkdex\.com', 'linkdex\.com\/v');
+        $searches = array('linkdex\.com', 'linkdex\.com\/v', 'linkdexbot');
 
         return $detector->detectVersion($searches);
     }
