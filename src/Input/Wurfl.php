@@ -103,7 +103,7 @@ class Wurfl extends Core
      * sets the main parameters to the parser
      *
      * @throws UnexpectedValueException
-     * @return Parser
+     * @return \Wurfl\Manager
      */
     private function initParser()
     {
@@ -674,14 +674,20 @@ class Wurfl extends Core
         $mapper  = new InputMapper();
         $version = new Version();
 
-        $result->setCapability('mobile_browser', $mapper->mapBrowserName($apiBro));
-        $result->setCapability('mobile_browser_manufacturer', $mapper->mapBrowserMaker($browserMaker));
-        $result->setCapability('mobile_browser_version', $version->setVersion($mapper->mapBrowserVersion($apiVer)));
+        $browserName = $mapper->mapBrowserName($apiBro);
+        $deviceName  = $mapper->mapDeviceName($apiDev);
+
+        $result->setCapability('mobile_browser', $browserName);
+        $result->setCapability('mobile_browser_manufacturer', $mapper->mapBrowserMaker($browserMaker, $browserName));
+        $result->setCapability(
+            'mobile_browser_version',
+            $version->setVersion($mapper->mapBrowserVersion($apiVer, $browserName))
+        );
         $result->setCapability('device_os', $mapper->mapOsName($apiOs));
-        $result->setCapability('model_name', $mapper->mapDeviceName($apiDev));
-        $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker($apiMan));
-        $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName($marketingName));
-        $result->setCapability('brand_name', $mapper->mapDeviceBrandName($brandName));
+        $result->setCapability('model_name', $deviceName);
+        $result->setCapability('manufacturer_name', $mapper->mapDeviceMaker($apiMan, $deviceName));
+        $result->setCapability('marketing_name', $mapper->mapDeviceMarketingName($marketingName, $deviceName));
+        $result->setCapability('brand_name', $mapper->mapDeviceBrandName($brandName, $deviceName));
 
         if ($apiBot) {
             $apiDesktop = false;
@@ -724,7 +730,7 @@ class Wurfl extends Core
             $width  = (int)$device->getCapability('resolution_width');
             $height = (int)$device->getCapability('resolution_height');
 
-            if ($deviceType == 'Mobile Phone') {
+            if ($deviceType == 'Mobile Phone' || $deviceType == 'Smartphone' || $deviceType == 'Feature Phone') {
                 $result->setCapability('resolution_width', min($height, $width));
                 $result->setCapability('resolution_height', max($height, $width));
             } elseif ($deviceType == 'Tablet' || $deviceType == 'FonePad') {
