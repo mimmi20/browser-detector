@@ -28,15 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser\Bot;
+namespace BrowserDetector\Detector\Device\Mobile\Mobistel;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
  * @category  BrowserDetector
@@ -44,9 +43,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SsearchCrawler
-    extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
+class MobistelCynusF4
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -54,67 +53,53 @@ class SsearchCrawler
      * @var array
      */
     protected $properties = array(
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+        'wurflKey'                => null, // not in wurfl
+
+        // device
+        'model_name'              => 'Cynus F4',
+        'model_extra_info'        => null,
+        'marketing_name'          => 'Cynus F4',
+        'has_qwerty_keyboard'     => true,
+        'pointing_method'         => 'touchscreen',
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'ununiqueness_handler'    => null,
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
+        'unique'                  => true,
 
-        // pdf
-        'pdf_support'                  => true,
+        // display
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 480,
+        'resolution_height'       => 854,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
+        // sms
+        'sms_enabled'             => true,
 
-        // rss
-        'rss_support'                  => false,
+        // chips
+        'nfc_support'             => true,
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sSearch Crawler')) {
+        if (!$this->utils->checkIfContains('Cynus F4')) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'sSearch Crawler';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Semantissimo();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new BrowserType\Bot();
     }
 
     /**
@@ -124,33 +109,48 @@ class SsearchCrawler
      */
     public function getWeight()
     {
-        return 3431;
+        return 3;
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
      */
-    public function detectVersion()
+    public function getDeviceType()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
+        return new DeviceType\MobilePhone();
+    }
 
-        $searches = array('sSearch Crawler');
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Mobistel();
+    }
 
-        return $detector->detectVersion($searches);
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Mobistel();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectEngine()
+    public function detectOs()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
+        $handler = new AndroidOs();
+        $handler->setUseragent($this->_useragent);
 
         return $handler;
     }

@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler;
+use BrowserDetector\Detector\Browser\Bot\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\Mobile\Dalvik;
 use BrowserDetector\Detector\Browser\Mobile\Dolfin;
 use BrowserDetector\Detector\Browser\Mobile\Jasmine;
@@ -48,7 +49,6 @@ use BrowserDetector\Detector\Browser\Mobile\Ucweb;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
@@ -173,7 +173,8 @@ class Java
             new GenericJavaCrawler(),
             new PlaystationBrowser(),
             new Silk(),
-            new Jasmine()
+            new Jasmine(),
+            new GooglebotMobileBot(),
         );
 
         $chain = new Chain();
