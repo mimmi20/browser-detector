@@ -34,7 +34,6 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\OsHandler;
@@ -46,7 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia
+class NokiaLumia720
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -59,9 +58,9 @@ class NokiaLumia
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Lumia',
+        'model_name'              => 'Lumia 720',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Lumia',
+        'marketing_name'          => 'Lumia 720',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -79,10 +78,10 @@ class NokiaLumia
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => 65536,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -98,17 +97,7 @@ class NokiaLumia
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia', true)) {
-            return false;
-        }
-
-        $specialLumias = array(
-            'nokia; lumia 520', 'nokia; lumia 610', 'nokia; lumia 620',
-            'nokia; lumia 710', 'nokia; lumia 720', 'nokia; lumia 800', 'nokia; lumia 820',
-            'nokia; lumia 900', 'nokia; lumia 920', 'nokia; lumia 925'
-        );
-
-        if ($this->utils->checkIfContains($specialLumias, true)) {
+        if (!$this->utils->checkIfContains('nokia; lumia 720', true)) {
             return false;
         }
 
@@ -176,12 +165,16 @@ class NokiaLumia
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia720
      */
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
+
+        if ($this->utils->checkIfContains('vodafone', true)) {
+            $this->setCapability('model_extra_info', 'Vodafone branding');
+        }
 
         return $this;
     }
