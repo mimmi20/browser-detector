@@ -143,7 +143,7 @@ class Safari
             'Mac; Mac OS '
         );
 
-        if ($this->utils->checkIfContains(strtolower($isNotReallyAnSafari), true)) {
+        if ($this->utils->checkIfContains($isNotReallyAnSafari, true)) {
             return false;
         }
 

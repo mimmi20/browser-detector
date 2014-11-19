@@ -81,7 +81,7 @@ class Utils
         }
 
         if ($ci) {
-            return stripos($this->_useragent, $needle) !== false;
+            return stripos($this->_useragent, strtolower($needle)) !== false;
         }
 
         return strpos($this->_useragent, $needle) !== false;
