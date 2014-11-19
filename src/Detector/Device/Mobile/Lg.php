@@ -113,7 +113,8 @@ class Lg
             ' p990 ',
             ' GT540 ',
             ' GT-540 ',
-            'Nexus 4'
+            'Nexus 4',
+            'Nexus 5',
         );
 
         if (!$this->utils->checkIfContains($lgPhones)) {
