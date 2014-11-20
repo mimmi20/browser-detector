@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\Bot\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\Bot\GoogleSearchAppliance;
 use BrowserDetector\Detector\Browser\General\AppleMail;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
 use BrowserDetector\Detector\Browser\Mobile\DarwinBrowser;
@@ -48,7 +50,6 @@ use BrowserDetector\Detector\Browser\Mobile\Sleipnir;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
@@ -168,7 +169,9 @@ class Ios
             new Incredimail(),
             new Lunascape(),
             new MqqBrowser(),
-            new AppleMail()
+            new AppleMail(),
+            new GooglebotMobileBot(),
+            new GoogleSearchAppliance(),
         );
 
         $chain = new Chain();

@@ -556,7 +556,7 @@ class Wurfl extends Core
 
                         switch (strtolower($apiVer)) {
                             case 'updater':
-                                $apiBro = 'Generic Java Crawler';
+                                $apiBro = 'Java Standard Library';
                                 $apiVer = '';
                                 break;
                             default:
@@ -707,6 +707,10 @@ class Wurfl extends Core
             $deviceType = null;
         } else {
             $deviceType = $device->getVirtualCapability('form_factor');
+        }
+
+        if ($apiPhone && $deviceType === 'Tablet') {
+            $deviceType = 'FonePad';
         }
 
         $result->setCapability('is_bot', $apiBot);
