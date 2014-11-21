@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector;
 
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Helper\Utils;
 

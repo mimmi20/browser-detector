@@ -1443,16 +1443,16 @@ class Result implements \Serializable
     /**
      * Returns the value of a given capability name for the current device
      *
-     * @param DeviceHandler  $device
-     * @param OsHandler      $os
-     * @param BrowserHandler $browser
-     * @param EngineHandler  $engine
-     * @internal param array $capabilities An array of name/value pairs
+     * @param \BrowserDetector\Detector\MatcherInterface\DeviceInterface $device
+     * @param OsHandler                        $os
+     * @param BrowserHandler                   $browser
+     * @param EngineHandler                    $engine
      *
+     * @internal param array $capabilities An array of name/value pairs
      * @return Result
      */
     public function setDetectionResult(
-        DeviceHandler $device,
+        MatcherInterface\DeviceInterface $device,
         OsHandler $os,
         BrowserHandler $browser,
         EngineHandler $engine
@@ -1461,7 +1461,7 @@ class Result implements \Serializable
 
         foreach ($properties as $property) {
             $value = null;
-            
+
             if ('useragent' === $property) {
                 continue;
             }

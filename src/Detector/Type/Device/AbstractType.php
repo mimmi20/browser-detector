@@ -39,6 +39,55 @@ namespace BrowserDetector\Detector\Type\Device;
 abstract class AbstractType implements TypeInterface
 {
     /**
+     * the name of the company
+     *
+     * @var string
+     */
+    protected $name = null;
+
+    /**
+     * the Device is a mobile device
+     *
+     * @var string
+     */
+    protected $mobile = false;
+
+    /**
+     * the Device is a desktop device
+     *
+     * @var string
+     */
+    protected $desktop = false;
+
+    /**
+     * the Device is a console
+     *
+     * @var string
+     */
+    protected $console = false;
+
+    /**
+     * the Device is a tv device
+     *
+     * @var string
+     */
+    protected $tv = false;
+
+    /**
+     * the Device is a mobile phone
+     *
+     * @var string
+     */
+    protected $phone = false;
+
+    /**
+     * the Device is a tablet device
+     *
+     * @var string
+     */
+    protected $tablet = false;
+
+    /**
      * Returns the name of the type
      *
      * @return string

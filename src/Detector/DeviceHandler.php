@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Utils;

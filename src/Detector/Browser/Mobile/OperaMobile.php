@@ -34,8 +34,6 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -48,7 +46,6 @@ use BrowserDetector\Helper\MobileDevice;
  */
 class OperaMobile
     extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 use BrowserDetector\Detector\Browser\Mobile\NetFront;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;

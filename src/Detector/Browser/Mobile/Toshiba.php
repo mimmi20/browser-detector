@@ -32,8 +32,6 @@ namespace BrowserDetector\Detector\Browser\Mobile;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
@@ -47,7 +45,6 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  */
 class Toshiba
     extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

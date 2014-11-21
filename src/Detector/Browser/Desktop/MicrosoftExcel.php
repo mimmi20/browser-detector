@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 

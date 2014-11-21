@@ -31,7 +31,6 @@
 namespace BrowserDetector\Input;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Result;
 use BrowserDetector\Helper\InputMapper;
 use UAParser\Parser;

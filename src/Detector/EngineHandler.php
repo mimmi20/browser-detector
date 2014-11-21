@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector;
 
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 use BrowserDetector\Helper\Utils;
 //use Zend\Cache\Frontend\Core;

@@ -32,11 +32,9 @@ namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Engine\Gecko;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +44,6 @@ use BrowserDetector\Detector\Engine\Gecko;
  */
 class Iceape
     extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

@@ -37,8 +37,6 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -51,7 +49,6 @@ use BrowserDetector\Detector\Version;
  */
 class NokiaBrowser
     extends BrowserHandler
-    implements MatcherInterface, BrowserInterface
 {
     /**
      * the detected browser properties

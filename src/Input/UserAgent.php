@@ -136,7 +136,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     private function detectEngine()
     {
@@ -172,7 +172,7 @@ class UserAgent extends Core
     /**
      * Gets the information about the os by User Agent
      *
-     * @return string
+     * @return \BrowserDetector\Detector\OsHandler
      */
     private function detectOs()
     {
