@@ -38,11 +38,6 @@ namespace BrowserDetector\Helper;
 class Tv
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $_useragent = '';
-
-    /**
      * @var \BrowserDetector\Helper\Utils the helper class
      */
     private $utils = null;
@@ -66,7 +61,6 @@ class Tv
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;

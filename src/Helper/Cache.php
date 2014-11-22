@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Helper;
 
-use phpbrowscap\Cache\CacheInterface;
 use WurflCache\Adapter\AdapterInterface;
 
 /**

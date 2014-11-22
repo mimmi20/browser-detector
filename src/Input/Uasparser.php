@@ -30,9 +30,7 @@
 
 namespace BrowserDetector\Input;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result;
-use BrowserDetector\Detector\Type;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\InputMapper;
 use UAS\Parser;
@@ -52,14 +50,14 @@ class Uasparser extends Core
     /**
      * the UAParser class
      *
-     * @var \UASparser
+     * @var \UAS\Parser
      */
     private $parser = null;
 
     /**
      * sets the UAS Parser detector
      *
-     * @var Parser $parser
+     * @var \UAS\Parser $parser
      *
      * @return Uasparser
      */
@@ -124,7 +122,7 @@ class Uasparser extends Core
      * sets the main parameters to the parser
      *
      * @throws UnexpectedValueException
-     * @return Parser
+     * @return \UAS\Parser
      */
     private function initParser()
     {

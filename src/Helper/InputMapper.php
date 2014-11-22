@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Helper;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;

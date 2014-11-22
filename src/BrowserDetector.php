@@ -30,7 +30,6 @@
 
 namespace BrowserDetector;
 
-use phpbrowscap\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 use WurflCache\Adapter\AdapterInterface;
