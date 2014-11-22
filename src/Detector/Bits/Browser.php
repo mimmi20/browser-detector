@@ -92,7 +92,7 @@ class Browser
             );
         }
 
-        $this->_detectBits();
+        $this->detectBits();
 
         return $this->bits;
     }
@@ -102,7 +102,7 @@ class Browser
      *
      * @return Browser
      */
-    private function _detectBits()
+    private function detectBits()
     {
         // 32 bits on 64 bit system
         if ($this->utils->checkIfContains(array('i686 on x86_64'), true)) {

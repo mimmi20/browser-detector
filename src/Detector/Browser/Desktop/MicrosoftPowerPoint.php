@@ -151,7 +151,7 @@ class MicrosoftPowerPoint extends MicrosoftOffice
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->_mapVersion($matches[1]));
+            return $detector->setVersion($this->mapVersion($matches[1]));
         }
 
         return parent::detectVersion();

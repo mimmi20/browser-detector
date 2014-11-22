@@ -75,7 +75,7 @@ class Cpu
         }
 
         if (null === $this->_cpu) {
-            $this->_detectCpu();
+            $this->detectCpu();
         }
 
         return $this->_cpu;
@@ -86,7 +86,7 @@ class Cpu
      *
      * @return Cpu
      */
-    private function _detectCpu()
+    private function detectCpu()
     {
         $utils = new Utils();
         $utils->setUserAgent($this->_useragent);

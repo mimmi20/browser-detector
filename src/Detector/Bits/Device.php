@@ -92,7 +92,7 @@ class Device
             );
         }
 
-        $this->_detectBits();
+        $this->detectBits();
 
         return $this->_bits;
     }
@@ -102,7 +102,7 @@ class Device
      *
      * @return Device
      */
-    private function _detectBits()
+    private function detectBits()
     {
         // 64 bits
         if ($this->utils->checkIfContains(

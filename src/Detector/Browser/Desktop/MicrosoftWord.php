@@ -149,7 +149,7 @@ class MicrosoftWord extends MicrosoftOffice
         $doMatch = preg_match('/Word\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return $detector->setVersion($this->_mapVersion($matches[1]));
+            return $detector->setVersion($this->mapVersion($matches[1]));
         }
 
         return parent::detectVersion();

@@ -163,13 +163,13 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->_mapVersion($matches[1]));
+            return $detector->setVersion($this->mapVersion($matches[1]));
         }
 
         $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return $detector->setVersion($this->_mapVersion($matches[1]));
+            return $detector->setVersion($this->mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -177,7 +177,7 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->_mapVersion($matches[1]));
+            return $detector->setVersion($this->mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -185,13 +185,13 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->_mapVersion($matches[1]));
+            return $detector->setVersion($this->mapVersion($matches[1]));
         }
 
         return $detector->setVersion('');
     }
 
-    protected function _mapVersion($version)
+    protected function mapVersion($version)
     {
         if (15 == (int)$version) {
             return '2013';

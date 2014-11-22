@@ -92,7 +92,7 @@ class Os
             );
         }
 
-        $this->_detectBits();
+        $this->detectBits();
 
         return $this->bits;
     }
@@ -102,7 +102,7 @@ class Os
      *
      * @return Os
      */
-    private function _detectBits()
+    private function detectBits()
     {
         if ($this->utils->checkIfContains(
             array('x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'),
