@@ -107,17 +107,6 @@ class GeneralDesktop
             return false;
         }
 
-        $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->_useragent);
-
-        if ($spamHelper->isSpamOrCrawler()) {
-            return false;
-        }
-
-        if ($spamHelper->isFakeBrowser()) {
-            return false;
-        }
-
         $tvHelper = new TvHelper();
         $tvHelper->setUserAgent($this->_useragent);
 
