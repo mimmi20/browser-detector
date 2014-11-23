@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
@@ -135,5 +137,28 @@ class UnknownDevice
     public function getBrand()
     {
         return new Company\Unknown();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\BrowserHandler
+     */
+    public function detectBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..'
+            . DIRECTORY_SEPARATOR . 'Browser'
+            . DIRECTORY_SEPARATOR . 'General'
+            . DIRECTORY_SEPARATOR
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\General');
+        $chain->setDirectory($browserPath);
+        $chain->setDefaultHandler(new UnknownBrowser());
+
+        return $chain->detect();
     }
 }

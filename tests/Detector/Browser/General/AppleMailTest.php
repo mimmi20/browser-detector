@@ -4,12 +4,12 @@ namespace BrowserDetectorTest\Detector\Browser\General;
 use BrowserDetector\Detector\Browser\General\AppleMail;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\Bot\AppleMail
+ * Test class for \BrowserDetector\Detector\Browser\General\AppleMail
  */
 class AppleMailTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\Bot\AppleMail
+     * @var \BrowserDetector\Detector\Browser\General\AppleMail
      */
     private $object = null;
 

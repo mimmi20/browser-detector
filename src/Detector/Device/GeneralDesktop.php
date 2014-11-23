@@ -38,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\SpamCrawlerFake;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 
