@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\NetNewsWire as NetNewsWireBase;
  */
 class NetNewsWire extends NetNewsWireBase
 {
-    // nothing to do
+    // nothing to do here
 }

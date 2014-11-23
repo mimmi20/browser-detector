@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\SiteKiosk as DefaultSiteKiosk;
  */
 class SiteKiosk extends DefaultSiteKiosk
 {
-    // nothing to do
+    // nothing to do here
 }

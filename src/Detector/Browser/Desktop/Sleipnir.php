@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Sleipnir as DefaultSleipnir;
  */
 class Sleipnir extends DefaultSleipnir
 {
-    // nothing to do
+    // nothing to do here
 }

@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\FlyFlow as DefaultFlyFlow;
  */
 class FlyFlow extends DefaultFlyFlow
 {
-    // nothing to do
+    // nothing to do here
 }

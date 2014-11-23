@@ -42,3 +42,4 @@ class AdobeAIR extends AdobeAirBase
 {
     // nothing to do here
 }
+

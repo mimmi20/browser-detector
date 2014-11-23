@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Incredimail as DefaultIncredimail;
  */
 class Incredimail extends DefaultIncredimail
 {
-    // nothing to do
+    // nothing to do here
 }

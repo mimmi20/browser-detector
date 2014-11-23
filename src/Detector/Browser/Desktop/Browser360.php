@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Browser360 as DefaultBrowser360;
  */
 class Browser360 extends DefaultBrowser360
 {
-    // nothing to do
+    // nothing to do here
 }

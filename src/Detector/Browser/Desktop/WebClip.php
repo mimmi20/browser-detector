@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\WebClip as DefaultWebClip;
  */
 class WebClip extends DefaultWebClip
 {
-    // nothing to do
+    // nothing to do here
 }

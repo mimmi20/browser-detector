@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\FacebookApp as DefaultFacebook;
  */
 class FacebookApp extends DefaultFacebook
 {
-    // nothing to do
+    // nothing to do here
 }

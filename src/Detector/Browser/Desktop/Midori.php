@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Midori as DefaultMidori;
  */
 class Midori extends DefaultMidori
 {
-    // nothing to do
+    // nothing to do here
 }

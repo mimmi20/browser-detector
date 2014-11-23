@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Opera as DefaultOpera;
  */
 class Opera extends DefaultOpera
 {
-    // nothing to do
+    // nothing to do here
 }

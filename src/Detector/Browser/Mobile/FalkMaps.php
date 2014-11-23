@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\FalkMaps as DefaultFalkMaps;
  */
 class FalkMaps extends DefaultFalkMaps
 {
-    // nothing to do
+    // nothing to do here
 }

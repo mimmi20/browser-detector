@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\OpenVas as DefaultOpenVas;
  */
 class OpenVas extends DefaultOpenVas
 {
-    // nothing to do
+    // nothing to do here
 }

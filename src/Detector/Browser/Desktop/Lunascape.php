@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Lunascape as LunascapeBase;
  */
 class Lunascape extends LunascapeBase
 {
-    // nothing to do
+    // nothing to do here
 }

@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Delibar as DefaultDelibar;
  */
 class Delibar extends DefaultDelibar
 {
-    // nothing to do
+    // nothing to do here
 }

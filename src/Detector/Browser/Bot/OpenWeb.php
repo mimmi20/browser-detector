@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\OpenWeb as DefaultOpenWeb;
  */
 class OpenWeb extends DefaultOpenWeb
 {
-    // nothing to do
+    // nothing to do here
 }

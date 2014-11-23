@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Puffin as DefaultPuffin;
  */
 class Puffin extends DefaultPuffin
 {
-    // nothing to do
+    // nothing to do here
 }

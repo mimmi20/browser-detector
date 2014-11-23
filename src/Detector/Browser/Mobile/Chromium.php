@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Chromium as DefaultChromium;
  */
 class Chromium extends DefaultChromium
 {
-    // nothing to do
+    // nothing to do here
 }

@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Hitpad as DefaultHitpad;
  */
 class Hitpad extends DefaultHitpad
 {
-    // nothing to do
+    // nothing to do here
 }

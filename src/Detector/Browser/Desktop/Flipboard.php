@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Flipboard as FlipboardBase;
  */
 class Flipboard extends FlipboardBase
 {
-    // nothing to do
+    // nothing to do here
 }

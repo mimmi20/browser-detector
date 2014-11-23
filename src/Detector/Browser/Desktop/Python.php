@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Python as DefaultPython;
  */
 class Python extends DefaultPython
 {
-    // nothing to do
+    // nothing to do here
 }

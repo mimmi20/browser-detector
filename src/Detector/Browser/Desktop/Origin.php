@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Origin as DefaultOrigin;
  */
 class Origin extends DefaultOrigin
 {
-    // nothing to do
+    // nothing to do here
 }

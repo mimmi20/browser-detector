@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Extras4iMovie as DefaultExtras4iMov
  */
 class Extras4iMovie extends DefaultExtras4iMovie
 {
-    // nothing to do
+    // nothing to do here
 }

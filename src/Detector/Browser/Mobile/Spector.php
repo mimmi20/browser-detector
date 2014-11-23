@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Spector as DefaultSpector;
  */
 class Spector extends DefaultSpector
 {
-    // nothing to do
+    // nothing to do here
 }

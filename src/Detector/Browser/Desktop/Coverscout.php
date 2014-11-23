@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Coverscout as DefaultCoverscout;
  */
 class Coverscout extends DefaultCoverscout
 {
-    // nothing to do
+    // nothing to do here
 }

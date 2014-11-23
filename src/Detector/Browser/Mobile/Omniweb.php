@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Omniweb as DefaultOmniweb;
  */
 class Omniweb extends DefaultOmniweb
 {
-    // nothing to do
+    // nothing to do here
 }

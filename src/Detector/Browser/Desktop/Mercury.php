@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\Mercury as MercuryBase;
  */
 class Mercury extends MercuryBase
 {
-    // nothing to do
+    // nothing to do here
 }

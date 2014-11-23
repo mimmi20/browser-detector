@@ -40,5 +40,5 @@ use BrowserDetector\Detector\Browser\General\AtomicBrowser as DefaultAtomicBrows
  */
 class AtomicBrowser extends DefaultAtomicBrowser
 {
-    // nothing to do
+    // nothing to do here
 }
