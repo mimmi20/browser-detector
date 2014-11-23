@@ -121,7 +121,7 @@ class HtcT8698
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

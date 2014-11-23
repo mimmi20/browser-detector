@@ -118,7 +118,7 @@ class PantechP2020
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

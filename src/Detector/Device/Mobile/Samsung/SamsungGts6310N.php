@@ -118,7 +118,7 @@ class SamsungGts6310N
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

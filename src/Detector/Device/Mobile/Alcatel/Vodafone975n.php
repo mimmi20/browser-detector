@@ -121,7 +121,7 @@ class Vodafone975n
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

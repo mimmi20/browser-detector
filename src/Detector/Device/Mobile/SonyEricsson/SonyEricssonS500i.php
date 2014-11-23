@@ -118,7 +118,7 @@ class SonyEricssonS500i
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

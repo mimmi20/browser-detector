@@ -118,7 +118,7 @@ class SamsungGtp7300B
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

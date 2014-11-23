@@ -43,7 +43,7 @@ class SeoMoz extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'SEOmoz';
+    protected $name = 'SEOmoz, Inc.';
 
     /**
      * the brand name of the company

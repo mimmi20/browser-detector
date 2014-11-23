@@ -124,7 +124,7 @@ class HtcHd2T8585
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

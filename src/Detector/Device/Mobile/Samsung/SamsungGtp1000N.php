@@ -118,7 +118,7 @@ class SamsungGtp1000N
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

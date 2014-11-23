@@ -118,7 +118,7 @@ class SonyEricssonLT28at
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

@@ -118,7 +118,7 @@ class SamsungGti8200n
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

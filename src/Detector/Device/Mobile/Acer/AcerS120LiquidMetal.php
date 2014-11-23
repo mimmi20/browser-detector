@@ -118,7 +118,7 @@ class AcerS120LiquidMetal
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

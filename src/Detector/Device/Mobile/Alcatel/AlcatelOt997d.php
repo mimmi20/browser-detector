@@ -118,7 +118,7 @@ class AlcatelOt997d
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

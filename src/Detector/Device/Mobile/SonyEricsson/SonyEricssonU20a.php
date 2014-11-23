@@ -118,7 +118,7 @@ class SonyEricssonU20a
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

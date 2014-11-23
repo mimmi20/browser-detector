@@ -121,7 +121,7 @@ class HtcS510eDesireS
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

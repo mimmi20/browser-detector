@@ -118,7 +118,7 @@ class Nokia5800XpressMusic
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

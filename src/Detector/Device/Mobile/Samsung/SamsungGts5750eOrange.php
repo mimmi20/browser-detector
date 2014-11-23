@@ -118,7 +118,7 @@ class SamsungGts5750eOrange
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

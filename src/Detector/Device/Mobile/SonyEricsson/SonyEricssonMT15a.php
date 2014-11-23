@@ -121,7 +121,7 @@ class SonyEricssonMT15a
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

@@ -121,7 +121,7 @@ class SamsungGtS6102B
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

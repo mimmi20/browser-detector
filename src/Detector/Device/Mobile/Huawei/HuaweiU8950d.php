@@ -118,7 +118,7 @@ class HuaweiU8950d
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

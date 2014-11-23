@@ -122,7 +122,7 @@ class SonyEricssonE15a
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

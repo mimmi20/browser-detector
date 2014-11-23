@@ -121,7 +121,7 @@ class SonyEricssonU20iv
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

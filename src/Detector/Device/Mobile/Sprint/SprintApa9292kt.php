@@ -118,7 +118,7 @@ class SprintApa9292kt
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

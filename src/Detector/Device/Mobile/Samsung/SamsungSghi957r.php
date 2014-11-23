@@ -118,7 +118,7 @@ class SamsungSghi957r
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

@@ -122,7 +122,7 @@ class SonyC5303XperiaSp
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

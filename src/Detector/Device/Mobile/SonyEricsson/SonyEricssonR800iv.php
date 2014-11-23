@@ -121,7 +121,7 @@ class SonyEricssonR800iv
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

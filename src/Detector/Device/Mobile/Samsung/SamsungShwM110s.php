@@ -118,7 +118,7 @@ class SamsungShwM110s
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**
