@@ -204,38 +204,4 @@ class Chrome
         $engine->setUseragent($this->useragent);
         return $engine;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\General\Chrome
-     */
-    public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $osname = $os->getName();
-
-        if ('iOS' === $osname) {
-            $engine->setCapability('xhtml_format_as_css_property', true);
-            $this->setCapability('rss_support', true);
-        }
-
-        if ('Android' === $osname) {
-            $engine->setCapability('html_wi_imode_compact_generic', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', true);
-            $engine->setCapability('xhtml_supports_forms_in_table', true);
-            $engine->setCapability('xhtml_file_upload', 'supported');
-            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        }
-
-        return $this;
-    }
 }

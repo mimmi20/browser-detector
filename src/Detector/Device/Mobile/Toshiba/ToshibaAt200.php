@@ -157,36 +157,4 @@ class ToshibaAt200
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        // wurflkey: toshiba_at200_ver1
-        //$engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if (3.2 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'toshiba_at200_ver1_suban32');
-        }
-
-        if (4.0 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'toshiba_at200_ver1_suban40');
-        }
-
-        return $this;
-    }
 }

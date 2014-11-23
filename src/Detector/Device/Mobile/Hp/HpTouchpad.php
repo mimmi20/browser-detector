@@ -166,38 +166,4 @@ class HpTouchpad
 
         return $chain->detect();
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_avoid_accesskeys', false);
-        $engine->setCapability('xhtml_supports_forms_in_table', false);
-        $engine->setCapability('xhtml_allows_disabled_form_elements', false);
-        $engine->setCapability('xhtml_supports_invisible_text', false);
-        $engine->setCapability('bmp', true); // wurflkey: hp_touchpad_ver1
-        $engine->setCapability('ajax_support_javascript', true);
-
-        if (('Android Webkit' == $browser->getName()
-                || 'Chrome' == $browser->getName())
-            && 'Android' == $os->getName()
-        ) {
-            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
-            $this->setCapability('model_extra_info', 'Android port');
-            $this->setCapability('colors', 65536);
-        }
-
-        return $this;
-    }
 }

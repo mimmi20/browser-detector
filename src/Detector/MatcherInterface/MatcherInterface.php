@@ -82,7 +82,7 @@ interface MatcherInterface
      *
      * @param mixed   $capabilityValue
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\DeviceHandler
      * @throws \InvalidArgumentException
      */
     public function setCapability($capabilityName, $capabilityValue = null);

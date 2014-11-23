@@ -249,49 +249,5 @@ class Android
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\General\Android
-     */
-    public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $engine->setCapability('html_wi_imode_compact_generic', false);
-        $engine->setCapability('xhtml_avoid_accesskeys', true);
-        $engine->setCapability('xhtml_supports_forms_in_table', true);
-        $engine->setCapability('xhtml_file_upload', 'supported');
-        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-        $engine->setCapability('xhtml_supports_invisible_text', false);
-        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ($osVersion <= 2.3) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-            $engine->setCapability('bmp', true);
-        }
-
-        $browserVersion = $this->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ($browserVersion <= 2.1) {
-            $engine->setCapability('jqm_grade', 'C');
-        }
-
-        return $this;
-    }
 }
 

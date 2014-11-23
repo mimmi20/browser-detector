@@ -187,38 +187,4 @@ class HtcZ710
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('bmp', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (4.0 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'htc_sensation_ver1_suban40rom');
-            $this->setCapability('uaprof', 'http://www.htcmms.com.tw/Android/TMO/Pyramid/ua-profile.xml');
-
-            if ($this->utils->checkIfContains('HTC_Sensation Build/IML74K')) {
-                $this->setCapability('wurflKey', 'htc_sensation_ver1_subua40uscore');
-            }
-        }
-
-        return $this;
-    }
 }

@@ -320,32 +320,4 @@ class Trident
     {
         return 378311339;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     * @param \BrowserDetector\Detector\DeviceHandler  $device
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     *
-     * @return Trident
-     */
-    public function detectDependProperties(
-        OsHandler $os,
-        DeviceHandler $device,
-        BrowserHandler $browser
-    ) {
-        parent::detectDependProperties($os, $device, $browser);
-
-        if ($device->getDeviceType()
-            ->isMobile()
-        ) {
-            $this->setCapability('xhtml_make_phone_call_string', 'tel:');
-        } else {
-            $this->setCapability('xhtml_make_phone_call_string', 'none');
-        }
-
-        return $this;
-    }
 }

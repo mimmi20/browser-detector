@@ -157,33 +157,4 @@ class HtcA9192Inspire4g
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.3 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'htc_inspire4g_ver1_suban23');
-        }
-
-        return $this;
-    }
 }

@@ -175,36 +175,4 @@ class AcerIconiaA210
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA210
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
-        if (3 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            $this->setCapability('resolution_height', 768);
-            $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml');
-        }
-
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('bmp', true);
-
-        return $this;
-    }
 }

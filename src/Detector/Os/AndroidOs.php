@@ -242,30 +242,6 @@ class AndroidOs
     ) {
         parent::detectDependProperties($browser, $engine, $device);
 
-        if (!$device->getDeviceType()->isTablet()) {
-            $engine->setCapability('xhtml_send_mms_string', 'mms:');
-            $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        }
-
-        $engine->setCapability('bmp', false);
-        $engine->setCapability('wbmp', true);
-        $engine->setCapability('gif_animated', false);
-        $engine->setCapability('transparent_png_index', true);
-        $engine->setCapability('transparent_png_alpha', true);
-        $engine->setCapability('wml_make_phone_call_string', 'wtai://wp/mc;');
-        $engine->setCapability('max_url_length_in_requests', 256);
-        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-        $engine->setCapability('xhtml_preferred_charset', 'iso-8859-1');
-        $engine->setCapability('card_title_support', true);
-        $engine->setCapability('table_support', true);
-        $engine->setCapability('elective_forms_recommended', true);
-        $engine->setCapability('menu_with_list_of_links_recommended', true);
-        $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
-
-        if ('Android Webkit' == $browser->getName()) {
-            $engine->setCapability('is_sencha_touch_ok', false);
-        }
-
         if ($this->utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Mac OS X'))
             && !$this->utils->checkIfContains('Android')
         ) {

@@ -166,32 +166,4 @@ class HtcHd2T8585
 
         return $chain->detect();
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHd2T8585
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        $osName = $os->getName();
-
-        if ('Android' == $osName) {
-            // htc_hd2_android_ver1_subua40htc
-            $this->setCapability('has_qwerty_keyboard', true);
-            $this->setCapability('physical_screen_width', 57);
-            $this->setCapability('physical_screen_height', 94);
-            $this->setCapability('dual_orientation', true);
-        }
-
-        parent::detectDependProperties($browser, $engine, $os);
-
-        return $this;
-    }
 }

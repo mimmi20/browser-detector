@@ -156,31 +156,4 @@ class NokiaLumia630
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia630
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        // wurflkey: nokia_lumia_620_ver1
-        //$engine->setCapability('bmp', false);
-        //$engine->setCapability('wbmp', false);
-        //$engine->setCapability('tiff', false);
-
-        //if ($this->utils->checkIfContains('vodafone', true)) {
-        //    $this->setCapability('model_extra_info', 'for Vodafone');
-        //}
-
-        return $this;
-    }
 }

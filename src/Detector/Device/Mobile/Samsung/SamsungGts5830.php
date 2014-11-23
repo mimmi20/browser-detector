@@ -171,44 +171,4 @@ class SamsungGts5830
 
         return $chain->detect();
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGts5830
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ((float)$osVersion) {
-        case 2.2:
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban22');
-            break;
-        case 2.3:
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban23');
-            break;
-        case 4.0:
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban40');
-            break;
-        case 4.1:
-        default:
-            // nothing to do here
-            break;
-        }
-
-        return $this;
-    }
 }

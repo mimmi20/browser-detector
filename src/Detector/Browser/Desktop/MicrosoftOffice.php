@@ -231,30 +231,4 @@ class MicrosoftOffice
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $engine->setCapability('supports_background_sounds', false);
-        $engine->setCapability('supports_vb_script', false);
-        $engine->setCapability('supports_java_applets', false);
-        $engine->setCapability('supports_activex_controls', false);
-        $engine->setCapability('xhtml_supports_iframe', 'none');
-        $engine->setCapability('cookie_support', false);
-        $engine->setCapability('ajax_support_javascript', false);
-
-        return $this;
-    }
 }
