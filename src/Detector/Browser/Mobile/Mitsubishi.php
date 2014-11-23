@@ -111,3 +111,4 @@ class Mitsubishi
         return new BrowserType\Browser();
     }
 }
+

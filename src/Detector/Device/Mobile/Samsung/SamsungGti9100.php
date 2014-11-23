@@ -238,3 +238,4 @@ class SamsungGti9100
         return $this;
     }
 }
+

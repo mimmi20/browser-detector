@@ -111,3 +111,4 @@ class Nec
         return new BrowserType\Browser();
     }
 }
+

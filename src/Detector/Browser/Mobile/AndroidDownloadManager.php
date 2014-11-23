@@ -153,3 +153,4 @@ class AndroidDownloadManager
         return $handler;
     }
 }
+

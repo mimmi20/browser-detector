@@ -125,3 +125,4 @@ class PlaystationBrowser
         return 74458;
     }
 }
+

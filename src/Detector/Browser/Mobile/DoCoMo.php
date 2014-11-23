@@ -111,3 +111,4 @@ class DoCoMo
         return new BrowserType\Browser();
     }
 }
+

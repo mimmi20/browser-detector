@@ -111,3 +111,4 @@ class Panasonic
         return new BrowserType\Browser();
     }
 }
+

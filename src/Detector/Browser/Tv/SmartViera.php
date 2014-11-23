@@ -156,3 +156,4 @@ class SmartViera
         return $handler;
     }
 }
+

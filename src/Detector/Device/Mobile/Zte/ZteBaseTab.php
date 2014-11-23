@@ -171,3 +171,4 @@ class ZteBaseTab
         return $detector->detectVersion($searches);
     }
 }
+

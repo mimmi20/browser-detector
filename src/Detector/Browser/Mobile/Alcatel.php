@@ -111,3 +111,4 @@ class Alcatel
         return new BrowserType\Browser();
     }
 }
+

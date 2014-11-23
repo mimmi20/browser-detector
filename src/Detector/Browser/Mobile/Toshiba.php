@@ -111,3 +111,4 @@ class Toshiba
         return new BrowserType\Browser();
     }
 }
+

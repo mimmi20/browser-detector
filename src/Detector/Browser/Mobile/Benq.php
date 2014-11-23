@@ -111,3 +111,4 @@ class Benq
         return new BrowserType\Browser();
     }
 }
+

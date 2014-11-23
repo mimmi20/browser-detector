@@ -111,3 +111,4 @@ class SPV
         return new BrowserType\Browser();
     }
 }
+

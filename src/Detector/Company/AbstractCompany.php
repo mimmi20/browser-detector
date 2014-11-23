@@ -68,3 +68,4 @@ abstract class AbstractCompany implements CompanyInterface
         return $this->brandname;
     }
 }
+

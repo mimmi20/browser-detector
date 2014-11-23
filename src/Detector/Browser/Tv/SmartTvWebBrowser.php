@@ -156,3 +156,4 @@ class SmartTvWebBrowser
         return $handler;
     }
 }
+

@@ -135,3 +135,4 @@ class Uasparser extends Core
         return $this->parser;
     }
 }
+

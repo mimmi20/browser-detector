@@ -111,3 +111,4 @@ class Qtek
         return new BrowserType\Browser();
     }
 }
+

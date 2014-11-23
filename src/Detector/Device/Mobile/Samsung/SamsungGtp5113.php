@@ -154,3 +154,4 @@ class SamsungGtp5113
         return $handler;
     }
 }
+

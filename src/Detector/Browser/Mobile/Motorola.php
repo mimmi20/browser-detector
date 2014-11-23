@@ -145,3 +145,4 @@ class Motorola
         return $detector->detectVersion($searches);
     }
 }
+

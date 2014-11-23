@@ -111,3 +111,4 @@ class Philips
         return new BrowserType\Browser();
     }
 }
+

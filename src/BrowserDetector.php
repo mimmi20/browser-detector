@@ -320,3 +320,4 @@ class BrowserDetector
         return $result;
     }
 }
+

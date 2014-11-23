@@ -238,3 +238,4 @@ class SamsungGti9192
         return $this;
     }
 }
+

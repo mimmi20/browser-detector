@@ -216,3 +216,4 @@ class NokiaBrowser
         return $this;
     }
 }
+

@@ -178,3 +178,4 @@ class MaemoBrowser
         return $handler;
     }
 }
+

@@ -111,3 +111,4 @@ class Sharp
         return new BrowserType\Browser();
     }
 }
+

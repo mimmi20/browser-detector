@@ -149,3 +149,4 @@ class NokiaProxyBrowser
         return $handler;
     }
 }
+

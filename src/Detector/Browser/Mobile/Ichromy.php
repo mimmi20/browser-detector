@@ -118,3 +118,4 @@ class Ichromy
         return new BrowserType\Browser();
     }
 }
+

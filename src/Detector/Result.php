@@ -1964,3 +1964,4 @@ class Result implements \Serializable
         return $this->renderAs;
     }
 }
+

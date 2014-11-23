@@ -178,3 +178,4 @@ class YuandaoN90DualCore2
         return $this;
     }
 }
+

@@ -757,3 +757,4 @@ class Wurfl extends Core
         return $this->getAgent();
     }
 }
+

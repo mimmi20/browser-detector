@@ -141,3 +141,4 @@ class SonyEricsson
         return 3;
     }
 }
+
