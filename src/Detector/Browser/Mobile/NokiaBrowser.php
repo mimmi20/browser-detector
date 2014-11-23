@@ -33,11 +33,8 @@ namespace BrowserDetector\Detector\Browser\Mobile;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 

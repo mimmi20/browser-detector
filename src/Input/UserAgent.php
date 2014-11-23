@@ -38,10 +38,10 @@ use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
 
