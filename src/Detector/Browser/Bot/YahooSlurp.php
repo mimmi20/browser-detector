@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Yahoo
+class YahooSlurp
     extends BrowserHandler
 {
     /**
@@ -76,17 +76,7 @@ class Yahoo
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('Yahoo Pipes', 'Yahoo! Slurp'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('Mozilla/5.0 (YahooYSMcm')
-            || $this->utils->checkIfContains('Scooter')
-            || $this->utils->checkIfContains('Y!OASIS')
-            || $this->utils->checkIfContains('YahooYSMcm')
-            || $this->utils->checkIfContains('YRL_ODP_CRAWLER')
-            || $this->utils->checkIfContains('www.yahoo.com')
-        ) {
+        if ($this->utils->checkIfContains('Yahoo! Slurp')) {
             return true;
         }
 
@@ -100,7 +90,7 @@ class Yahoo
      */
     public function getName()
     {
-        return 'Yahoo!';
+        return 'Yahoo! Slurp';
     }
 
     /**
