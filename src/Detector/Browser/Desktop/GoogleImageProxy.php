@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser\Bot;
+namespace BrowserDetector\Detector\Browser\Desktop;
 
 use BrowserDetector\Detector\Browser\General\GoogleImageProxy as GoogleImageProxyBase;
 
