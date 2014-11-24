@@ -30,8 +30,8 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Bot\GenericJavaCrawler;
-use BrowserDetector\Detector\Browser\Bot\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\General\GenericJavaCrawler;
+use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\Mobile\Dalvik;
 use BrowserDetector\Detector\Browser\Mobile\Dolfin;
 use BrowserDetector\Detector\Browser\Mobile\Jasmine;

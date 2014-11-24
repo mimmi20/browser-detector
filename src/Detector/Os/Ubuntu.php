@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Bot\Googlebot;
+use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\Desktop\Chrome;
 use BrowserDetector\Detector\Browser\Desktop\Chromium;
 use BrowserDetector\Detector\Browser\Desktop\Firefox;

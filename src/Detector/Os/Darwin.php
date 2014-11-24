@@ -30,8 +30,8 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Bot\Bingbot;
-use BrowserDetector\Detector\Browser\Bot\Maven;
+use BrowserDetector\Detector\Browser\General\Bingbot;
+use BrowserDetector\Detector\Browser\General\Maven;
 use BrowserDetector\Detector\Browser\Mobile\AppleMail;
 use BrowserDetector\Detector\Browser\Mobile\AtomicBrowser;
 use BrowserDetector\Detector\Browser\Mobile\Coast;
