@@ -123,6 +123,7 @@ class Firefox
             'CazoodleBot',
             'LOOQ',
             'GoogleImageProxy',
+            'GomezAgent',
             //others
             'MSIE',
             // Fakes

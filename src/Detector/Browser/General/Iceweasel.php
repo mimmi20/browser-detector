@@ -87,6 +87,16 @@ class Iceweasel
             return false;
         }
 
+        $bots = array(
+            'unistertesting',
+            'unister-test',
+            'unister-https-test'
+        );
+
+        if ($this->utils->checkIfContains($bots, true)) {
+            return false;
+        }
+
         $isNotReallyAnFirefox = array(
             // using also the Gecko rendering engine
             'Maemo',
