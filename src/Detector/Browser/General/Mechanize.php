@@ -84,6 +84,10 @@ class Mechanize
             return false;
         }
 
+        if ($this->utils->checkIfContains('WWW-Mechanize')) {
+            return false;
+        }
+
         return true;
     }
 

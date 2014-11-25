@@ -124,6 +124,7 @@ class Firefox
             'LOOQ',
             'GoogleImageProxy',
             'GomezAgent',
+            '360Spider',
             //others
             'MSIE',
             // Fakes

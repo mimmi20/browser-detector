@@ -123,7 +123,8 @@ class Samsung
             'i9100',
             'i9300',
             'yp-g',
-            'continuum-'
+            'continuum-',
+            'blaze'
         );
 
         if (!$this->utils->checkIfContains($samsungPhones, true)) {

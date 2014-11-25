@@ -40,6 +40,7 @@ use BrowserDetector\Detector\Browser\Mobile\GooglePlus;
 use BrowserDetector\Detector\Browser\Mobile\Incredimail;
 use BrowserDetector\Detector\Browser\Mobile\Isource;
 use BrowserDetector\Detector\Browser\Mobile\Lunascape;
+use BrowserDetector\Detector\Browser\Mobile\Mercury;
 use BrowserDetector\Detector\Browser\Mobile\MqqBrowser;
 use BrowserDetector\Detector\Browser\Mobile\NetNewsWire;
 use BrowserDetector\Detector\Browser\Mobile\OnePassword;
@@ -172,6 +173,7 @@ class Ios
             new AppleMail(),
             new GooglebotMobileBot(),
             new GoogleSearchAppliance(),
+            new Mercury(),
         );
 
         $chain = new Chain();

@@ -28,77 +28,18 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
+namespace BrowserDetector\Detector\Browser\Desktop;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\OsHandler;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Browser\General\WindowsLiveMail as WindowsLiveMailBase;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CrOs
-    extends OsHandler
-    implements OsInterface
+class WindowsLiveMail extends WindowsLiveMailBase
 {
-    /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('CrOS')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * returns the name of the operating system/platform
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'ChromeOS';
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
-
-        $searches = array('CrOS');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Google();
-    }
-
-    public function getWeight()
-    {
-        return 22828;
-    }
+    // nothing to do here
 }
+

@@ -133,8 +133,10 @@ class Netscape
             // other applications
             'LotusNotes/',
             'Lotus-Notes/',
-            // Fakes
-            'Mac; Mac OS '
+            // Fakes/Bots
+            'Mac; Mac OS ',
+            'Esribot',
+            'sp_auditbot'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

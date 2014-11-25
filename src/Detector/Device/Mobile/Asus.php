@@ -107,7 +107,8 @@ class Asus
             'ME301T',
             'ME302C',
             'ME371MG',
-            'ME173X'
+            'ME173X',
+            'ME302KL'
         );
 
         if (!$this->utils->checkIfContains($asusPhones)) {

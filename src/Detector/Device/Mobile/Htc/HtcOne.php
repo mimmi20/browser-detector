@@ -100,7 +100,7 @@ class HtcOne
 
         $specialOne = array(
             'HTC_One_', 'HTC/One_', 'HTC_OneX', 'HTC_OneS', 'HTC One X',
-            'HTC One S', 'HTC One V', 'HTC One mini'
+            'HTC One S', 'HTC One V', 'HTC One mini', 'HTC One_M8'
         );
 
         if ($this->utils->checkIfContains($specialOne)) {

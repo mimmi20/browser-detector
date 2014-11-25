@@ -28,20 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -49,9 +43,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lenovo
+class PlayStation4
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -62,11 +56,11 @@ class Lenovo
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'general Lenovo Device',
+        'model_name'              => 'Playstation 4',
         'model_extra_info'        => null,
-        'marketing_name'          => 'general Lenovo Device',
+        'marketing_name'          => 'Playstation 4',
         'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
+        'pointing_method'         => 'mouse',
 
         // product info
         'ununiqueness_handler'    => null,
@@ -82,10 +76,10 @@ class Lenovo
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
+        'resolution_width'        => 685,
+        'resolution_height'       => 600,
+        'dual_orientation'        => false,
+        'colors'                  => 65536,
 
         // sms
         'sms_enabled'             => true,
@@ -101,27 +95,11 @@ class Lenovo
      */
     public function canHandle()
     {
-        $LenovoPhones = array(
-            'Lenovo-',
-            'Lenovo/',
-            'Lenovo',
-            'A1_07',
-            ' K1 ',
-            'ThinkPad',
-            'IdeaTab',
-            'SmartTab II',
-            'SmartTabII7',
-            'SmartTabII10',
-            'SmartTabIII10',
-            'Vodafone Smart Tab III 10',
-            'Vodafone Smart Tab 4'
-        );
-
-        if (!$this->utils->checkIfContains($LenovoPhones)) {
-            return false;
+        if ($this->utils->checkIfContains(array('PlayStation 4'))) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -131,7 +109,7 @@ class Lenovo
      */
     public function getWeight()
     {
-        return 28907;
+        return 3;
     }
 
     /**
@@ -141,7 +119,7 @@ class Lenovo
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\Tv();
     }
 
     /**
@@ -151,7 +129,7 @@ class Lenovo
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\Sony();
     }
 
     /**
@@ -161,47 +139,35 @@ class Lenovo
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Lenovo');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Lenovo' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Company\Sony();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        $os = array(
-            new AndroidOs(),
-            new Java(),
-            new Symbianos(),
-            new WindowsMobileOs(),
-            new WindowsPhoneOs()
-        );
+        $handler = new Java();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
+        return $handler;
+    }
 
-        return $chain->detect();
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->_useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
+
+        $searches = array('PLAYSTATION 3');
+
+        return $detector->detectVersion($searches);
     }
 }

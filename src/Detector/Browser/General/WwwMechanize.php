@@ -28,15 +28,16 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
+namespace BrowserDetector\Detector\Browser\General;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
 /**
- * MSIEAgentHandler
+ * KonquerorHandler
  *
  *
  * @category  BrowserDetector
@@ -44,18 +45,42 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CrOs
-    extends OsHandler
-    implements OsInterface
+class WwwMechanize
+    extends BrowserHandler
 {
     /**
-     * Returns true if this handler can handle the given $useragent
+     * the detected browser properties
+     *
+     * @var array
+     */
+    protected $properties = array(
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
+
+        // product info
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+
+        // pdf
+        'pdf_support'                  => true,
+
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+
+        // rss
+        'rss_support'                  => false,
+    );
+
+    /**
+     * Returns true if this handler can handle the given user agent
      *
      * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('CrOS')) {
+        if (!$this->utils->checkIfContains('WWW-Mechanize')) {
             return false;
         }
 
@@ -63,42 +88,66 @@ class CrOs
     }
 
     /**
-     * returns the name of the operating system/platform
+     * gets the name of the browser
      *
      * @return string
      */
     public function getName()
     {
-        return 'ChromeOS';
+        return 'WWW-Mechanize';
     }
 
     /**
-     * returns the version of the operating system/platform
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Unknown();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
      */
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
-        $searches = array('CrOS');
+        $searches = array('Mechanize');
 
         return $detector->detectVersion($searches);
     }
 
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Google();
-    }
-
     public function getWeight()
     {
-        return 22828;
+        return 3;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
+     */
+    public function detectEngine()
+    {
+        $handler = new Webkit();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

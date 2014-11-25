@@ -96,7 +96,7 @@ class Pearl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' X7G ')) {
+        if (!$this->utils->checkIfContains(array(' X7G ', 'X10.Dual'))) {
             return false;
         }
 

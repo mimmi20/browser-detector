@@ -94,7 +94,7 @@ class HtcOneM8
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_One_M8'))) {
+        if (!$this->utils->checkIfContains(array('HTC_One_M8', 'HTC One_M8'))) {
             return false;
         }
 

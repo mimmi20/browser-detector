@@ -101,7 +101,7 @@ class Wepbot
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apache();
     }
 
     /**

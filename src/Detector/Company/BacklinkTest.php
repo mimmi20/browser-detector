@@ -43,12 +43,12 @@ class BacklinkTest extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'www.backlinktest.com';
+    protected $name = 'backlinktest.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.backlinktest.com';
+    protected $brandname = 'backlinktest.com';
 }

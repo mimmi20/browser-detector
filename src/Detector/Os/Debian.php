@@ -100,7 +100,7 @@ class Debian
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Debian();
     }
 
     /**

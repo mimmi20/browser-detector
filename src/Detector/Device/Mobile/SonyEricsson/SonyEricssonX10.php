@@ -98,7 +98,7 @@ class SonyEricssonX10
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('SonyEricssonX10i', 'SonyEricssonX10a', 'X10i', 'X10a'))) {
+        if ($this->utils->checkIfContains(array('SonyEricssonX10i', 'SonyEricssonX10a', 'X10i', 'X10a', 'X10.Dual'))) {
             return false;
         }
 

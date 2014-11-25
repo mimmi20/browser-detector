@@ -118,7 +118,7 @@ class HtcFlyerP510e
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\FonePad();
     }
 
     /**

@@ -46,7 +46,7 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ichiro
+class IchiroMobileBot
     extends BrowserHandler
 {
     /**
@@ -81,11 +81,7 @@ class Ichiro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ichiro')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('ichiro/mobile')) {
+        if (!$this->utils->checkIfContains('ichiro/mobile')) {
             return false;
         }
 
@@ -99,7 +95,7 @@ class Ichiro
      */
     public function getName()
     {
-        return 'Ichiro Bot';
+        return 'Ichiro Mobile Bot';
     }
 
     /**
@@ -132,9 +128,7 @@ class Ichiro
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('ichiro');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('0.0');
     }
 
     /**
@@ -155,7 +149,7 @@ class Ichiro
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\Ichiro
+     * @return \BrowserDetector\Detector\Browser\General\IchiroMobileBot
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

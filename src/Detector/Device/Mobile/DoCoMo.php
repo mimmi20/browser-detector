@@ -35,12 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -49,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lenovo
+class DoCoMo
     extends DeviceHandler
     implements DeviceInterface, DeviceHasChildrenInterface
 {
@@ -62,9 +57,9 @@ class Lenovo
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'general Lenovo Device',
+        'model_name'              => 'general DoCoMo Device',
         'model_extra_info'        => null,
-        'marketing_name'          => 'general Lenovo Device',
+        'marketing_name'          => 'general DoCoMo Device',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -101,27 +96,34 @@ class Lenovo
      */
     public function canHandle()
     {
-        $LenovoPhones = array(
-            'Lenovo-',
-            'Lenovo/',
-            'Lenovo',
-            'A1_07',
-            ' K1 ',
-            'ThinkPad',
-            'IdeaTab',
-            'SmartTab II',
-            'SmartTabII7',
-            'SmartTabII10',
-            'SmartTabIII10',
-            'Vodafone Smart Tab III 10',
-            'Vodafone Smart Tab 4'
+        $doCoMophones = array(
+            'DoCoMo',
+            'P900i'
         );
 
-        if (!$this->utils->checkIfContains($LenovoPhones)) {
-            return false;
+        if ($this->utils->checkIfContains($doCoMophones, true)) {
+            return true;
         }
 
-        return true;
+        return false;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\DeviceHandler
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\DoCoMo');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'DoCoMo' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -131,7 +133,7 @@ class Lenovo
      */
     public function getWeight()
     {
-        return 28907;
+        return 25091;
     }
 
     /**
@@ -151,7 +153,7 @@ class Lenovo
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\DoCoMo();
     }
 
     /**
@@ -161,47 +163,19 @@ class Lenovo
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Lenovo');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Lenovo' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Company\DoCoMo();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $os = array(
-            new AndroidOs(),
-            new Java(),
-            new Symbianos(),
-            new WindowsMobileOs(),
-            new WindowsPhoneOs()
-        );
+        $handler = new Java();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
+        return $handler;
     }
 }
