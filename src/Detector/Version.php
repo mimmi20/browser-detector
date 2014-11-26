@@ -381,7 +381,7 @@ class Version implements \Serializable
             $found = false;
 
             foreach ($modifiers as $modifier) {
-                $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\,\_ab]*)' . $modifier[1] . '/';
+                $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\_ab]*)' . $modifier[1] . '/';
 
                 $doMatch = preg_match(
                     $compareString, $useragent, $matches

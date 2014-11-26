@@ -148,7 +148,7 @@ class SpiderPig
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\SpiderPig
+     * @return \BrowserDetector\Detector\Browser\General\SpiderPig
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

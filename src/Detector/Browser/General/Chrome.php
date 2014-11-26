@@ -107,6 +107,7 @@ class Chrome
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',
+            'Google Wireless Transcoder',
             // Fakes
             'Mac; Mac OS '
         );

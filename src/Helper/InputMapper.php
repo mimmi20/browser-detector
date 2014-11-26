@@ -1045,6 +1045,7 @@ class InputMapper
             case 'unknown':
             case 'other':
             case 'generic':
+            case 'mozilla':
                 $brandName = null;
                 break;
             default:

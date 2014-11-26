@@ -127,11 +127,15 @@ class Firefox
             '360Spider',
             //others
             'MSIE',
-            // Fakes
+            // Fakes / Bots
             'Mac; Mac OS '
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
             return false;
         }
 

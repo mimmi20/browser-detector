@@ -136,10 +136,28 @@ class Netscape
             // Fakes/Bots
             'Mac; Mac OS ',
             'Esribot',
-            'sp_auditbot'
+            'sp_auditbot',
+            'BLEXBot',
+            'Yahoo',
+            'ca-crawler',
+            'fr-crawler',
+            'sindice-fetcher',
+            'DotBot',
+            'semantic-visions.com crawler',
+            'proximic',
+            'publiclibraryarchive'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
+            return false;
+        }
+
+        $isNotReallyAnNetscapeLowerCased = array(
+            'www.archive.org',
+            'archive.org_bot'
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {
             return false;
         }
 

@@ -140,8 +140,10 @@ class MicrosoftInternetExplorer
             'wpdesktop',
             'htc_hd2',
             'gomezagent',
-            // Fakes
-            'mac; mac os '
+            // Fakes / Bots
+            'mac; mac os ',
+            'bingpreview',
+            'crystalsemanticsbot'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

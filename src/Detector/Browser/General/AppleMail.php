@@ -137,8 +137,9 @@ class AppleMail
             //mobile Version
             'Tablet',
             'Android',
-            // Fakes
-            'Mac; Mac OS '
+            // Fakes/Bots
+            'Mac; Mac OS ',
+            'BingPreview'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnSafari)) {

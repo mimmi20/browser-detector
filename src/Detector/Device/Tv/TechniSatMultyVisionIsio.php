@@ -77,7 +77,6 @@ class TechniSatMultyVisionIsio
 
            // device
             'model_name'              => 'MultyVision ISIO',
-            'brand_name'              => new Company\TechniSat(),
             'model_extra_info'        => null,
             'marketing_name'          => null,
             'has_qwerty_keyboard'     => true,

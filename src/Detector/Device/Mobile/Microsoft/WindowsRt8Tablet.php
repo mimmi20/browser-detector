@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
+use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
@@ -156,5 +158,26 @@ class WindowsRt8Tablet
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\OsHandler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new MicrosoftInternetExplorer(),
+            new MicrosoftMobileExplorer()
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new UnknownBrowser());
+
+        return $chain->detect();
     }
 }

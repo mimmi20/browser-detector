@@ -120,7 +120,7 @@ class TrekStorVt10416
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\Tablet();
     }
 
     /**
