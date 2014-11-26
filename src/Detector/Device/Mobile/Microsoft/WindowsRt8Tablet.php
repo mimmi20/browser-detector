@@ -32,7 +32,9 @@ namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
 use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
 use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Windows;
