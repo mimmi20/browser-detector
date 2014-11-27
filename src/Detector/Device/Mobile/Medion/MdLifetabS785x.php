@@ -128,7 +128,7 @@ class MdLifetabS785x
      */
     public function getManufacturer()
     {
-        return new Company\Medion();
+        return new Company\Lenovo();
     }
 
     /**
@@ -138,7 +138,7 @@ class MdLifetabS785x
      */
     public function getBrand()
     {
-        return new Company\Medion();
+        return new Company\Lenovo();
     }
 
     /**

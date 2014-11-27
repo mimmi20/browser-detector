@@ -100,7 +100,7 @@ class LibreOffice
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\TheDocumentFoundation();
     }
 
     /**

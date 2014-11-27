@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Medion;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Symbianos;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaE700
+class MdLifeP4310
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,39 +52,39 @@ class NokiaE700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_e7_00_ver1_subua53', // not in wurfl
+        'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'E7-00',
+        'model_name'              => 'Life P4310',
         'model_extra_info'        => null,
-        'marketing_name'          => 'E7',
+        'marketing_name'          => 'Life P4310',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE7-00r100.xml',
-        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r300.xml',
-        'uaprof3'                 => 'http://nds1.nds.nokia.com/uaprof/NE7-00r310.xml',
+        'uaprof'                  => null,
+        'uaprof2'                 => null,
+        'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 50, // wurflkey: nokia_e7_00_ver1_subua53
-        'physical_screen_height'  => 89,
-        'columns'                 => 17,
-        'rows'                    => 13,
-        'max_image_width'         => 360,
-        'max_image_height'        => 640,
-        'resolution_width'        => 360,
-        'resolution_height'       => 640,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
         'dual_orientation'        => true,
-        'colors'                  => 16777216, // wurflkey: nokia_e7_00_ver1_subua53
+        'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => true,
+        'sms_enabled'             => false,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -94,7 +94,7 @@ class NokiaE700
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaE7-00')) {
+        if (!$this->utils->checkIfContains('MEDION LIFE P4310')) {
             return false;
         }
 
@@ -118,7 +118,7 @@ class NokiaE700
      */
     public function getDeviceType()
     {
-        return new DeviceType\FeaturePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**
@@ -128,7 +128,7 @@ class NokiaE700
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Medion();
     }
 
     /**
@@ -138,17 +138,17 @@ class NokiaE700
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Medion();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\Symbianos
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new Symbianos();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;

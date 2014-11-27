@@ -948,6 +948,18 @@ class InputMapper
             case 'lifetab':
                 $marketingName = 'LifeTab';
                 break;
+            case 'galaxy sii epic 4g touch':
+                $marketingName = 'Galaxy S II Epic 4G Touch';
+                break;
+            case 'prestigio multipad':
+                $marketingName = 'Multipad';
+                break;
+            case 'samsung galaxy tab 7.0 plus':
+                $marketingName = 'Galaxy Tab 7.0 Plus';
+                break;
+            case 'one touch m\'pop':
+                $marketingName = 'One Touch MPop';
+                break;
             default:
                 // nothing to do here
                 break;

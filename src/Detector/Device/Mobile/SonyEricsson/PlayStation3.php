@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\CellOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -149,7 +149,7 @@ class PlayStation3
      */
     public function detectOs()
     {
-        $handler = new Java();
+        $handler = new CellOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;

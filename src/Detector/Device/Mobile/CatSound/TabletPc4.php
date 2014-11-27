@@ -98,6 +98,10 @@ class TabletPc4
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('INM8002KP'))) {
+            return false;
+        }
+
         return true;
     }
 

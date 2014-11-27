@@ -28,7 +28,9 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Company;
+namespace BrowserDetector\Detector\Browser\Desktop;
+
+use BrowserDetector\Detector\Browser\General\Spinn3r as Spinn3rBase;
 
 /**
  * @category  BrowserDetector
@@ -36,19 +38,8 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Apache extends AbstractCompany implements CompanyInterface
+class Spinn3r extends Spinn3rBase
 {
-    /**
-     * the name of the company
-     *
-     * @var string
-     */
-    protected $name = 'Apache Foundation';
-
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    protected $brandname = 'Apache';
+    // nothing to do here
 }
+

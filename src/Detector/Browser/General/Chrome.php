@@ -108,6 +108,8 @@ class Chrome
             'PagePeeker',
             'Google Web Preview',
             'Google Wireless Transcoder',
+            'Google Page Speed',
+            'HubSpot Webcrawler',
             // Fakes
             'Mac; Mac OS '
         );

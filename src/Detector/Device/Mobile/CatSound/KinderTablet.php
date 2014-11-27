@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Medion;
+namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MdLifetabP4310
+class KinderTablet
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class MdLifetabP4310
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'LifeTab P4310',
+        'model_name'              => 'Kinder-Tablet',
         'model_extra_info'        => null,
-        'marketing_name'          => 'LifeTab P4310',
+        'marketing_name'          => 'Tablet PC Junior+',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,16 +75,16 @@ class MdLifetabP4310
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 600,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => false,
+        'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => false,
+        'nfc_support'             => true,
     );
 
     /**
@@ -94,7 +94,7 @@ class MdLifetabP4310
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MEDION LIFE P4310')) {
+        if (!$this->utils->checkIfContains(array('Kinder-Tablet'))) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class MdLifetabP4310
      */
     public function getManufacturer()
     {
-        return new Company\Medion();
+        return new Company\Weltbild();
     }
 
     /**
@@ -138,7 +138,7 @@ class MdLifetabP4310
      */
     public function getBrand()
     {
-        return new Company\Medion();
+        return new Company\Weltbild();
     }
 
     /**

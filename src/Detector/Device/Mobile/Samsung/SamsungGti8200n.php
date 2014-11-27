@@ -58,7 +58,7 @@ class SamsungGti8200n
         'model_name'              => 'GT-I8200N',
         'model_extra_info'        => null,
         'marketing_name'          => 'S III mini',
-        'has_qwerty_keyboard'     => false,
+        'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info

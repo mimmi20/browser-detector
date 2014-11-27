@@ -145,7 +145,15 @@ class Netscape
             'DotBot',
             'semantic-visions.com crawler',
             'proximic',
-            'publiclibraryarchive'
+            'publiclibraryarchive',
+            'nbot',
+            'WI Job Roboter',
+            'Spiderlytics',
+            'SemrushBot',
+            'XoviBot',
+            'aggregator:Spinn3r',
+            'URLAppendBot',
+            'GrapeshotCrawler'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
@@ -154,7 +162,11 @@ class Netscape
 
         $isNotReallyAnNetscapeLowerCased = array(
             'www.archive.org',
-            'archive.org_bot'
+            'archive.org_bot',
+            'memorybot',
+            'waybackarchive',
+            'spbot',
+            'heritrix'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {

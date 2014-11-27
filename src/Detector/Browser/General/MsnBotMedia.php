@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MailRuBot
+class MsnBotMedia
     extends BrowserHandler
 {
     /**
@@ -77,7 +77,9 @@ class MailRuBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mail.RU_Bot', 'Mail.RU'))) {
+        $bingBots = array('msnbot-media');
+
+        if (!$this->utils->checkIfContains($bingBots, true)) {
             return false;
         }
 
@@ -91,7 +93,7 @@ class MailRuBot
      */
     public function getName()
     {
-        return 'Mail.Ru';
+        return 'msnbot-media';
     }
 
     /**
@@ -101,7 +103,7 @@ class MailRuBot
      */
     public function getManufacturer()
     {
-        return new Company\MailRu();
+        return new Company\Microsoft();
     }
 
     /**
@@ -115,16 +117,6 @@ class MailRuBot
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 15082;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -134,20 +126,29 @@ class MailRuBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Mail.RU_Bot\/Fast', 'Mail.RU_Bot', 'Mail.RU');
+        $searches = array('msnbot\-media');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 1993194;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function detectEngine()
     {
-        $handler = new Webkit();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler;

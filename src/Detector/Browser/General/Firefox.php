@@ -125,9 +125,10 @@ class Firefox
             'GoogleImageProxy',
             'GomezAgent',
             '360Spider',
+            'Spinn3r',
             //others
             'MSIE',
-            // Fakes / Bots
+            // Fakes
             'Mac; Mac OS '
         );
 

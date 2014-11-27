@@ -94,7 +94,7 @@ class HuaweiY530u00
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HuaweiY300', 'HUAWEI-Y300', 'HUAWEI Y300'))) {
+        if (!$this->utils->checkIfContains(array('HuaweiY530-U00', 'HUAWEI-Y530-U00', 'HUAWEI Y530-U00'))) {
             return false;
         }
 

@@ -137,6 +137,7 @@ class Safari
             'msnbot-media',
             'bingpreview',
             'spider-pig',
+            'adsbot-google-mobile',
             //mobile Version
             'Tablet',
             'Android',

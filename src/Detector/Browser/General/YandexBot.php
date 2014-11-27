@@ -77,7 +77,7 @@ class YandexBot
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('YandexBot', 'YandexImages'))) {
+        if ($this->utils->checkIfContains(array('YandexBot'))) {
             return true;
         }
 
@@ -124,7 +124,7 @@ class YandexBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('YandexBot', 'YandexImages');
+        $searches = array('YandexBot');
 
         return $detector->detectVersion($searches);
     }

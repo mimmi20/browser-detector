@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WinHttpRequest
+class YandexImagesBot
     extends BrowserHandler
 {
     /**
@@ -77,11 +77,11 @@ class WinHttpRequest
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('winhttprequest', 'winhttp'), true)) {
-            return false;
+        if ($this->utils->checkIfContains(array('YandexImages'))) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -91,7 +91,7 @@ class WinHttpRequest
      */
     public function getName()
     {
-        return 'WinHttp';
+        return 'YandexImages';
     }
 
     /**
@@ -101,7 +101,7 @@ class WinHttpRequest
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Yandex();
     }
 
     /**
@@ -115,16 +115,6 @@ class WinHttpRequest
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 430;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -134,9 +124,19 @@ class WinHttpRequest
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('WinHttpRequest', 'WinHttpRequest\.');
+        $searches = array('YandexImages');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 390259;
     }
 
     /**

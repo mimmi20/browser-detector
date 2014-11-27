@@ -103,10 +103,16 @@ class CatSound
             'Cat StarGate',
             'Cat Tablet',
             'Tablet-PC-4',
-            'TOLINO_BROWSER'
+            'TOLINO_BROWSER',
+            'Weltbild',
+            'Kinder-Tablet'
         );
 
         if (!$this->utils->checkIfContains($catSoundPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('INM8002KP'))) {
             return false;
         }
 

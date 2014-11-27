@@ -28,27 +28,80 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Company;
+namespace BrowserDetector\Detector\Os;
+
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
+ * MSIEAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Apache extends AbstractCompany implements CompanyInterface
+class CellOs
+    extends OsHandler
+    implements OsInterface
 {
     /**
-     * the name of the company
+     * Returns true if this handler can handle the given $useragent
      *
-     * @var string
+     * @return bool
      */
-    protected $name = 'Apache Foundation';
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains('playstation', true)) {
+            return false;
+        }
+
+        return true;
+    }
 
     /**
-     * the brand name of the company
+     * returns the name of the operating system/platform
      *
-     * @var string
+     * @return string
      */
-    protected $brandname = 'Apache';
+    public function getName()
+    {
+        return 'CellOS';
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->_useragent);
+
+        return $detector->setVersion('0.0');
+    }
+
+    /**
+     * returns the version of the operating system/platform
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Sony();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 9790;
+    }
 }

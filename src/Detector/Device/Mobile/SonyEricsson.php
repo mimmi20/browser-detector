@@ -107,6 +107,7 @@ class SonyEricsson
         $sonyPhones = array(
             'sonyericsson',
             'sony',
+            'c1505',
             'c1605',
             'c1905',
             'c2105',

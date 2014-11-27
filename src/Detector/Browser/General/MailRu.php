@@ -52,7 +52,6 @@ class MailRu
      */
     protected $properties = array(
         // browser
-        'mobile_browser'               => 'Mail.RU',
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -78,7 +77,7 @@ class MailRu
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mail.RU'))) {
+        if (!$this->utils->checkIfContains(array('mail.ru', 'mail.ru_bot'), true)) {
             return false;
         }
 
@@ -92,7 +91,7 @@ class MailRu
      */
     public function getName()
     {
-        return 'Mail.RU';
+        return 'Mail.Ru';
     }
 
     /**
@@ -137,7 +136,7 @@ class MailRu
      */
     public function getWeight()
     {
-        return 7;
+        return 15082;
     }
 
     /**

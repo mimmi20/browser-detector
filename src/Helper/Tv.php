@@ -85,10 +85,10 @@ class Tv
             'xbox'
         );
 
-        if ($this->utils->checkIfContains($tvDevices, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($tvDevices, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 }

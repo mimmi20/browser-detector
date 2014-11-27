@@ -87,6 +87,10 @@ class Bingbot
             return false;
         }
 
+        if ($this->utils->checkIfContains($bingBots, true)) {
+            return false;
+        }
+
         return true;
     }
 
@@ -130,7 +134,7 @@ class Bingbot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('bingbot', 'Bing', 'Bing for iPad', 'msnbot', 'msnbot\-media');
+        $searches = array('bingbot', 'Bing', 'Bing for iPad', 'msnbot');
 
         return $detector->detectVersion($searches);
     }
