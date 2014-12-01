@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\General\GoogleSearchAppliance;
 use BrowserDetector\Detector\Browser\General\AppleMail;
@@ -171,6 +172,7 @@ class Ios
             new Lunascape(),
             new MqqBrowser(),
             new AppleMail(),
+            new Googlebot(),
             new GooglebotMobileBot(),
             new GoogleSearchAppliance(),
             new Mercury(),

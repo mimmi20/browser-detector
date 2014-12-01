@@ -98,10 +98,9 @@ class HtcA510
             return false;
         }
 
-        if ($this->utils->checkIfContains(
-            array('HTC Wildfire S A510e', 'HTC_WildfireS-orange-LS', 'Wildfire S A510e')
-        )
-        ) {
+        $otherHtc = array('HTC Wildfire S A510e', 'HTC_WildfireS-orange-LS', 'Wildfire S A510e', 'HTC_WildfireS_A510e');
+        
+        if ($this->utils->checkIfContains($otherHtc)) {
             return false;
         }
 

@@ -123,6 +123,7 @@ class Htc
             'Vision-T-Mobile-G2',
             'Wildfire S',
             'Wildfire S A510e',
+            'HTC_WildfireS_A510e',
             'VPA_Touch',
             'APA9292KT',
             'APA7373KT',

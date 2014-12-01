@@ -166,7 +166,8 @@ class Netscape
             'memorybot',
             'waybackarchive',
             'spbot',
-            'heritrix'
+            'heritrix',
+            'bingbot'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {
