@@ -128,6 +128,7 @@ class Firefox
             'Spinn3r',
             //others
             'MSIE',
+            'Trident',
             // Fakes
             'Mac; Mac OS '
         );

@@ -648,6 +648,8 @@ class Wurfl extends Core
                 if (in_array($capabilityName, $versionFields)) {
                     $version         = new Version();
                     $capabilityValue = $version->setVersion($capabilityValue);
+                } elseif ('colors' === $capabilityName && $capabilityValue == '65536') {
+                    $capabilityValue = null;
                 } elseif (in_array($capabilityName, $integerFields)) {
                     $capabilityValue = (int)$capabilityValue;
                 } elseif ('unknown' === $capabilityValue

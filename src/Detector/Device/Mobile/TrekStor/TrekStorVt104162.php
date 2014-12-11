@@ -57,7 +57,7 @@ class TrekStorVt104162
         // device
         'model_name'              => 'VT10416-2',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Peoples Tablet',
+        'marketing_name'          => 'VT10416-2',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

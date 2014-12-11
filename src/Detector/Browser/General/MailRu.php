@@ -124,7 +124,7 @@ class MailRu
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Mail\.RU');
+        $searches = array('Mail\.RU', 'Mail\.RU_Bot');
 
         return $detector->detectVersion($searches);
     }

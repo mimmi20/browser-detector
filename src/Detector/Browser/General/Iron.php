@@ -78,15 +78,15 @@ class Iron
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
+        if (!$this->utils->checkIfContainsAll(array('Mozilla/', 'AppleWebKit'))) {
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Iron'))) {
+        if (!$this->utils->checkIfContains(array('Iron', 'Chrome'))) {
             return false;
         }
 
-        $isNotReallyAnSafari = array(
+        $isNotReallyAnIron = array(
             // using also the KHTML rendering engine
             'Chromium',
             'Flock',
@@ -97,7 +97,7 @@ class Iron
             'Rockmelt'
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
+        if ($this->utils->checkIfContains($isNotReallyAnIron)) {
             return false;
         }
 
@@ -144,7 +144,7 @@ class Iron
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Iron');
+        $searches = array('Iron', 'Chrome');
 
         return $detector->detectVersion($searches);
     }
