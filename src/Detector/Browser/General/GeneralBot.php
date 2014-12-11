@@ -87,11 +87,19 @@ class GeneralBot
             '<'
         );
 
-        if ($this->utils->checkIfContains($bots, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($bots, true)) {
+            return false;
         }
 
-        return false;
+        $specialBots = array(
+            'bing'
+        );
+
+        if ($this->utils->checkIfContains($specialBots, true)) {
+            return false;
+        }
+
+        return true;
     }
 
     /**

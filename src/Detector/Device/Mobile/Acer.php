@@ -97,7 +97,7 @@ class Acer
     public function canHandle()
     {
         $otherPhones = array('HTC', 'IdeaTab', 'Wildfire S A510e', 'HTC_WildfireS_A510e', 'A101IT', 'SmartTabII7');
-        
+
         if ($this->utils->checkIfContains($otherPhones)) {
             return false;
         }
@@ -128,11 +128,11 @@ class Acer
             ' S500 ',
         );
 
-        if ($this->utils->checkIfContains($acerPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($acerPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
