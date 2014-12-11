@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
 use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
@@ -124,6 +125,7 @@ class Maemo
             new Android(),
             new Chrome(),
             new OperaMobile(),
+            new GooglebotMobileBot(),
         );
 
         $chain = new Chain();

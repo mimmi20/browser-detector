@@ -77,7 +77,7 @@ class AdbeatBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('adbeat.com')) {
+        if (!$this->utils->checkIfContains(array('adbeat.com', 'adbeat_bot'))) {
             return false;
         }
 
@@ -91,7 +91,7 @@ class AdbeatBot
      */
     public function getName()
     {
-        return 'adbeat';
+        return 'Adbeat Bot';
     }
 
     /**

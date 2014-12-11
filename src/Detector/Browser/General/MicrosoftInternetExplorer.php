@@ -122,6 +122,7 @@ class MicrosoftInternetExplorer
             'myie',
             'opera',
             'palemoon',
+            'avant',
             // other Browsers
             'applewebkit',
             'chrome',

@@ -94,7 +94,7 @@ class TolinoTab89
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('tolino tab 8.9', true)) {
+        if (!$this->utils->checkIfContains(array('tolino tab 8.9'), true)) {
             return false;
         }
 

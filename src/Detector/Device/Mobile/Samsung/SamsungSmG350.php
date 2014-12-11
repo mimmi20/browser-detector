@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts5369
+class SamsungSmG350
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,31 +52,31 @@ class SamsungGts5369
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s5360_ver1_subua5369', // not in wurfl
+        'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'GT-S5369',
+        'model_name'              => 'SM-G350',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Y',
+        'marketing_name'          => 'Galaxy Core Plus',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5369.xml',
+        'uaprof'                  => null,
         'uaprof2'                 => null,
         'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 480,
+        'resolution_height'       => 800,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
@@ -94,7 +94,7 @@ class SamsungGts5369
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SAMSUNG-GT-S5369', 'GT-S5369'))) {
+        if (!$this->utils->checkIfContains('SM-G350')) {
             return false;
         }
 
@@ -118,7 +118,7 @@ class SamsungGts5369
      */
     public function getDeviceType()
     {
-        return new DeviceType\FeaturePhone();
+        return new DeviceType\Smartphone();
     }
 
     /**

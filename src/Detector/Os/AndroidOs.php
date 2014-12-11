@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
+use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
@@ -216,7 +217,8 @@ class AndroidOs
             new YaBrowser(),
             new MqqBrowser(),
             new FlyFlow(),
-            new Maxthon()
+            new Maxthon(),
+            new GooglebotMobileBot(),
         );
 
         $chain = new Chain();

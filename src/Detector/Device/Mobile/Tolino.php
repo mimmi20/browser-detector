@@ -96,7 +96,7 @@ class Tolino
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Tolino')) {
+        if (!$this->utils->checkIfContains(array('tolino'), true)) {
             return false;
         }
 

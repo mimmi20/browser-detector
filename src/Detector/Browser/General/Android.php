@@ -101,7 +101,6 @@ class Android
             'Fennec',
             'Firefox',
             'FlyFlow',
-            'iPad',
             'iPhone',
             'Maxthon',
             'MQQBrowser',
@@ -120,6 +119,10 @@ class Android
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('iPad') && !$this->utils->checkIfContains('TechniPad')) {
             return false;
         }
 

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -143,13 +144,19 @@ class Silk
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        return $handler;
+        if ((float) $version >= 3.21) {
+            $engine = new Blink();
+        } else {
+            $engine = new Webkit();
+        }
+
+        $engine->setUseragent($this->useragent);
+        return $engine;
     }
 }

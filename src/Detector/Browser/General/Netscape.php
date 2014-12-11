@@ -153,7 +153,9 @@ class Netscape
             'XoviBot',
             'aggregator:Spinn3r',
             'URLAppendBot',
-            'GrapeshotCrawler'
+            'GrapeshotCrawler',
+            'SeznamBot',
+            'linkdexbot'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
