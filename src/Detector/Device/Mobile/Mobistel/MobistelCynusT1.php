@@ -138,7 +138,7 @@ class MobistelCynusT1
      */
     public function getBrand()
     {
-        return new Company\Mobistel();
+        return new Company\Elson();
     }
 
     /**
