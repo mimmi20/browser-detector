@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\GoogleAdsbotMobile;
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\General\GoogleSearchAppliance;
@@ -178,6 +179,7 @@ class Ios
             new GoogleSearchAppliance(),
             new Mercury(),
             new MsnBotMedia(),
+            new GoogleAdsbotMobile(),
         );
 
         $chain = new Chain();

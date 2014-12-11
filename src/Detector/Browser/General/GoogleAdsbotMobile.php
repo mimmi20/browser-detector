@@ -91,7 +91,7 @@ class GoogleAdsbotMobile
      */
     public function getName()
     {
-        return 'AdsBot Google Mobile';
+        return 'AdsBot Google-Mobile';
     }
 
     /**
