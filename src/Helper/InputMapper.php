@@ -960,6 +960,9 @@ class InputMapper
             case 'one touch m\'pop':
                 $marketingName = 'One Touch MPop';
                 break;
+            case 'people\'s tablet':
+                $marketingName = 'Peoples Tablet';
+                break;
             default:
                 // nothing to do here
                 break;

@@ -81,6 +81,10 @@ class Nbot
             return false;
         }
 
+        if ($this->utils->checkIfContains('msnbot')) {
+            return false;
+        }
+
         return true;
     }
 
