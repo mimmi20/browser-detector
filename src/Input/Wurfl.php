@@ -619,7 +619,7 @@ class Wurfl extends Core
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
 
-        if (null === $device) {
+        if (null === $device || 'Bot' === $device->getVirtualCapability('form_factor')) {
             return $result;
         }
 
@@ -703,12 +703,18 @@ class Wurfl extends Core
             $apiBot     = null;
             $apiPhone   = null;
             $deviceType = null;
+            $xhtmlLevel = null;
+            $apiKey     = null;
         } else {
             $deviceType = $device->getVirtualCapability('form_factor');
         }
 
         if ($apiPhone && $deviceType === 'Tablet') {
             $deviceType = 'FonePad';
+        }
+
+        if (!$apiPhone && $deviceType === 'Feature Phone') {
+            $deviceType = 'Mobile Device';
         }
 
         $result->setCapability('is_bot', $apiBot);
