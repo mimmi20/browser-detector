@@ -155,7 +155,9 @@ class Netscape
             'URLAppendBot',
             'GrapeshotCrawler',
             'SeznamBot',
-            'linkdexbot'
+            'linkdexbot',
+            'CareerBot',
+            'WBSearchBot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

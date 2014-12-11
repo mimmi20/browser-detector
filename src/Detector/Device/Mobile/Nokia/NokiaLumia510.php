@@ -28,17 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Amazon;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AmazonKindle
+class NokiaLumia510
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -59,9 +55,9 @@ class AmazonKindle
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Kindle',
+        'model_name'              => 'Lumia 510',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Kindle',
+        'marketing_name'          => 'Lumia 510',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -73,13 +69,13 @@ class AmazonKindle
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 600,
+        'physical_screen_width'   => 41,
+        'physical_screen_height'  => 89,
+        'columns'                 => 12,
+        'rows'                    => 20,
+        'max_image_width'         => 320,
+        'max_image_height'        => 480,
+        'resolution_width'        => 480,
         'resolution_height'       => 800,
         'dual_orientation'        => true,
         'colors'                  => 65536,
@@ -92,18 +88,13 @@ class AmazonKindle
     );
 
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Kindle', 'Silk'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI'))) {
+        if (!$this->utils->checkIfContains('nokia; Lumia 510', true)) {
             return false;
         }
 
@@ -127,7 +118,7 @@ class AmazonKindle
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\Smartphone();
     }
 
     /**
@@ -137,7 +128,7 @@ class AmazonKindle
      */
     public function getManufacturer()
     {
-        return new Company\Amazon();
+        return new Company\Nokia();
     }
 
     /**
@@ -147,42 +138,19 @@ class AmazonKindle
      */
     public function getBrand()
     {
-        return new Company\Amazon();
+        return new Company\Nokia();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function detectOs()
     {
-        $os = array(
-            new AndroidOs(),
-            new Maemo()
-        );
+        $handler = new WindowsPhoneOs();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
-
-        $searches = array('Kindle');
-
-        return $detector->detectVersion($searches);
+        return $handler;
     }
 }

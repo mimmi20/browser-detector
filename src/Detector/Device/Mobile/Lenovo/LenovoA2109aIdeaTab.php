@@ -103,6 +103,7 @@ class LenovoA2109aIdeaTab
             'IdeaTabS2110AF',
             'IdeaTab A2107A-H',
             'IdeaTab S6000-H',
+            'IdeaTab A3000-H',
             'S6000L',
             'S6000'
         );

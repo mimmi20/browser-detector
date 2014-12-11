@@ -101,7 +101,7 @@ class SogouWebSpider
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Sogou();
     }
 
     /**

@@ -126,6 +126,8 @@ class Firefox
             'GomezAgent',
             '360Spider',
             'Spinn3r',
+            'Yahoo!',
+            'Slurp',
             //others
             'MSIE',
             'Trident',

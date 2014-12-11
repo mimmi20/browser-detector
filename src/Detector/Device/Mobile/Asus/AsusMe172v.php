@@ -28,17 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Amazon;
+namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AmazonKindle
+class AsusMe172v
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -59,9 +55,9 @@ class AmazonKindle
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Kindle',
+        'model_name'              => 'ME172V',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Kindle',
+        'marketing_name'          => 'MeMO Pad ME172V',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -79,31 +75,26 @@ class AmazonKindle
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 600,
-        'resolution_height'       => 800,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 600,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => true,
+        'sms_enabled'             => false,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
+     * checks if this device is able to handle the useragent
      *
-     * @return boolean always true
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Kindle', 'Silk'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI'))) {
+        if (!$this->utils->checkIfContains('ME172V')) {
             return false;
         }
 
@@ -137,7 +128,7 @@ class AmazonKindle
      */
     public function getManufacturer()
     {
-        return new Company\Amazon();
+        return new Company\Asus();
     }
 
     /**
@@ -147,42 +138,19 @@ class AmazonKindle
      */
     public function getBrand()
     {
-        return new Company\Amazon();
+        return new Company\Asus();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $os = array(
-            new AndroidOs(),
-            new Maemo()
-        );
+        $handler = new AndroidOs();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
-
-        $searches = array('Kindle');
-
-        return $detector->detectVersion($searches);
+        return $handler;
     }
 }

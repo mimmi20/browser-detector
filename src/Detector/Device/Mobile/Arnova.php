@@ -97,6 +97,7 @@ class Arnova
     public function canHandle()
     {
         $arnovaPhones = array(
+            'ARNOVA',
             'AN7CG2',
             'AN7DG3',
             'AN7FG3',
