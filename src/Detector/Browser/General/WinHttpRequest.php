@@ -101,7 +101,7 @@ class WinHttpRequest
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Microsoft();
     }
 
     /**

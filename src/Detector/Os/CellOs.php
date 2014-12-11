@@ -30,10 +30,13 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\PlaystationBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 
 /**
  * MSIEAgentHandler
@@ -103,5 +106,25 @@ class CellOs
     public function getWeight()
     {
         return 9790;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\BrowserHandler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new PlaystationBrowser(),
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new UnknownBrowser());
+
+        return $chain->detect();
     }
 }

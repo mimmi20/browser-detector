@@ -28,15 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\CellOs;
-use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlayStation4
+class SamsungSmT230
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -57,11 +55,11 @@ class PlayStation4
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Playstation 4',
+        'model_name'              => 'SM-T230',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Playstation 4',
+        'marketing_name'          => 'Galaxy Tab 4 7.0',
         'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'mouse',
+        'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
@@ -77,9 +75,9 @@ class PlayStation4
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 685,
-        'resolution_height'       => 600,
-        'dual_orientation'        => false,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
@@ -96,11 +94,11 @@ class PlayStation4
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('PlayStation 4'))) {
-            return true;
+        if (!$this->utils->checkIfContains('SM-T230')) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -120,7 +118,7 @@ class PlayStation4
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tv();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -130,7 +128,7 @@ class PlayStation4
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company\Samsung();
     }
 
     /**
@@ -140,35 +138,19 @@ class PlayStation4
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company\Samsung();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\CellOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new CellOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
-
-        $searches = array('PLAYSTATION 3');
-
-        return $detector->detectVersion($searches);
     }
 }

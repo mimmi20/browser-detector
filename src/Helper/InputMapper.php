@@ -617,11 +617,13 @@ class InputMapper
             case 'android 4.2':
             case 'android 4.3':
             case 'android 4.4':
+            case 'android 5.0':
             case 'android 4 tablet':
             case 'android 4.1 tablet':
             case 'android 4.2 tablet':
             case 'android 4.3 tablet':
             case 'android 4.4 tablet':
+            case 'android 5.0 tablet':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':
@@ -802,6 +804,14 @@ class InputMapper
             case 'android 4.1':
             case 'android 4.2':
             case 'android 4.3':
+            case 'android 4.4':
+            case 'android 5.0':
+            case 'android 4 tablet':
+            case 'android 4.1 tablet':
+            case 'android 4.2 tablet':
+            case 'android 4.3 tablet':
+            case 'android 4.4 tablet':
+            case 'android 5.0 tablet':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':
@@ -985,6 +995,14 @@ class InputMapper
             case 'android 4.1':
             case 'android 4.2':
             case 'android 4.3':
+            case 'android 4.4':
+            case 'android 5.0':
+            case 'android 4 tablet':
+            case 'android 4.1 tablet':
+            case 'android 4.2 tablet':
+            case 'android 4.3 tablet':
+            case 'android 4.4 tablet':
+            case 'android 5.0 tablet':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':
@@ -1085,6 +1103,14 @@ class InputMapper
             case 'android 4.1':
             case 'android 4.2':
             case 'android 4.3':
+            case 'android 4.4':
+            case 'android 5.0':
+            case 'android 4 tablet':
+            case 'android 4.1 tablet':
+            case 'android 4.2 tablet':
+            case 'android 4.3 tablet':
+            case 'android 4.4 tablet':
+            case 'android 5.0 tablet':
             case 'disguised as macintosh':
             case 'mini 1':
             case 'mini 4':

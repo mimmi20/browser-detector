@@ -163,11 +163,12 @@ class MobileDevice
             'zunewp7',
             'wpdesktop'
         );
+
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = array(
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
-                'i9999_custom', 'wuid='
+                'i9999_custom', 'wuid=', 'smart-tv'
             );
 
             if ($this->utils->checkIfContains($noMobiles, true)) {
