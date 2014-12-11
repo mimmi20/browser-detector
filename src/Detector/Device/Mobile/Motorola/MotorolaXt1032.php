@@ -57,7 +57,7 @@ class MotorolaXt1032
         // device
         'model_name'              => 'XT1032',
         'model_extra_info'        => null,
-        'marketing_name'          => 'DVX',
+        'marketing_name'          => 'Moto G',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,10 +75,10 @@ class MotorolaXt1032
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
+        'resolution_width'        => 720,
+        'resolution_height'       => 1280,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,

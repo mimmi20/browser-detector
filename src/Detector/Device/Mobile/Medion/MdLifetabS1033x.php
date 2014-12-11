@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile\Medion;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824
+class MdLifetabS1033x
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class IntensoTab824
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'INM8002KP',
+        'model_name'              => 'Lifetab S1033X',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Tab 824',
+        'marketing_name'          => 'Lifetab S1033X',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,16 +75,16 @@ class IntensoTab824
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 768,
+        'resolution_width'        => 1200,
+        'resolution_height'       => 1920,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => true,
+        'sms_enabled'             => false,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -94,7 +94,7 @@ class IntensoTab824
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
+        if (!$this->utils->checkIfContains('LIFETAB_S1033X')) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class IntensoTab824
      */
     public function getManufacturer()
     {
-        return new Company\Intenso();
+        return new Company\Lenovo();
     }
 
     /**
@@ -138,7 +138,7 @@ class IntensoTab824
      */
     public function getBrand()
     {
-        return new Company\Intenso();
+        return new Company\Lenovo();
     }
 
     /**

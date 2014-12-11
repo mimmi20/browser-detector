@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Khtml;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -186,7 +187,12 @@ class Konqueror
      */
     public function detectEngine()
     {
-        $handler = new Khtml();
+        if ($this->utils->checkIfContains(array('like Gecko'))) {
+            $handler = new Webkit();
+        } else {
+            $handler = new Khtml();
+        }
+
         $handler->setUseragent($this->useragent);
 
         return $handler;

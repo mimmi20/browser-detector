@@ -102,7 +102,8 @@ class Prestigio
             'PMP3370B',
             'PMP5197DULTRA',
             'PMP5580C',
-            'PMP7100D3G'
+            'PMP7100D3G',
+            'PMP7280C3G'
         );
 
         if (!$this->utils->checkIfContains($phones)) {

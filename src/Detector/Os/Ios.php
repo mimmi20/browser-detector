@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\BingPreview;
 use BrowserDetector\Detector\Browser\General\GoogleAdsbotMobile;
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
@@ -180,6 +181,7 @@ class Ios
             new Mercury(),
             new MsnBotMedia(),
             new GoogleAdsbotMobile(),
+            new BingPreview(),
         );
 
         $chain = new Chain();

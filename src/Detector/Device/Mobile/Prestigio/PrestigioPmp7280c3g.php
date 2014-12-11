@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile\Prestigio;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824
+class PrestigioPmp7280c3g
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class IntensoTab824
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'INM8002KP',
+        'model_name'              => 'PMP7280C3G',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Tab 824',
+        'marketing_name'          => 'Multipad 2 Ultra Duo 8.0 3G',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -94,7 +94,7 @@ class IntensoTab824
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
+        if (!$this->utils->checkIfContains(array('PMP7280C3G'))) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class IntensoTab824
      */
     public function getManufacturer()
     {
-        return new Company\Intenso();
+        return new Company\Prestigio();
     }
 
     /**
@@ -138,7 +138,7 @@ class IntensoTab824
      */
     public function getBrand()
     {
-        return new Company\Intenso();
+        return new Company\Prestigio();
     }
 
     /**

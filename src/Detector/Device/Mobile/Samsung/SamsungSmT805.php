@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824
+class SamsungSmT805
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class IntensoTab824
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'INM8002KP',
+        'model_name'              => 'SM-T805',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Tab 824',
+        'marketing_name'          => 'Galaxy Tab S 10.5 LTE',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,10 +75,10 @@ class IntensoTab824
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 768,
+        'resolution_width'        => 2560,
+        'resolution_height'       => 1600,
         'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -94,7 +94,7 @@ class IntensoTab824
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
+        if (!$this->utils->checkIfContains('SM-T805')) {
             return false;
         }
 
@@ -118,7 +118,7 @@ class IntensoTab824
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\FonePad();
     }
 
     /**
@@ -128,7 +128,7 @@ class IntensoTab824
      */
     public function getManufacturer()
     {
-        return new Company\Intenso();
+        return new Company\Samsung();
     }
 
     /**
@@ -138,7 +138,7 @@ class IntensoTab824
      */
     public function getBrand()
     {
-        return new Company\Intenso();
+        return new Company\Samsung();
     }
 
     /**
