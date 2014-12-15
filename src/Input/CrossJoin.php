@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Input;
 
-use Crossjoin\Browscap\Browscap;
+use Crossjoin\Browscap\Browscap as CrBrowscap;
 use Crossjoin\Browscap\Updater\Local;
 
 /**
@@ -54,13 +54,11 @@ class CrossJoin extends AbstractBrowscapInput
     /**
      * sets the UA Parser detector
      *
-     * @param Browscap $parser
-     *
-     * @internal param \Crossjoin\Browscap\Browscap $parser
+     * @param \Crossjoin\Browscap\Browscap $parser
      *
      * @return CrossJoin
      */
-    public function setParser(Browscap $parser)
+    public function setParser(CrBrowscap $parser)
     {
         $this->parser = $parser;
 
@@ -75,7 +73,7 @@ class CrossJoin extends AbstractBrowscapInput
      */
     protected function initParser()
     {
-        if (!($this->parser instanceof Browscap)) {
+        if (!($this->parser instanceof CrBrowscap)) {
             throw new \UnexpectedValueException(
                 'the parser object has to be an instance of \Crossjoin\Browscap\Browscap'
             );
