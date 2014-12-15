@@ -44,18 +44,18 @@ class Browscap extends AbstractBrowscapInput
     /**
      * the UAParser class
      *
-     * @var \phpbrowscap\Browscap
+     * @var \BrowscapPHP\Browscap
      */
     private $parser = null;
 
     /**
      * sets the UA Parser detector
      *
-     * @var \phpbrowscap\Browscap $parser
+     * @var \BrowscapPHP\Browscap $parser
      *
-     * @return \phpbrowscap\Browscap
+     * @return \BrowscapPHP\Browscap
      */
-    public function setParser(\phpbrowscap\Browscap $parser)
+    public function setParser(\BrowscapPHP\Browscap $parser)
     {
         $this->parser = $parser;
 
@@ -66,13 +66,13 @@ class Browscap extends AbstractBrowscapInput
      * sets the main parameters to the parser
      *
      * @throws \UnexpectedValueException
-     * @return \phpbrowscap\Browscap
+     * @return \BrowscapPHP\Browscap
      */
     protected function initParser()
     {
-        if (!($this->parser instanceof \phpbrowscap\Browscap)) {
+        if (!($this->parser instanceof \BrowscapPHP\Browscap)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \phpbrowscap\Browscap'
+                'the parser object has to be an instance of \BrowscapPHP\Browscap'
             );
         }
 

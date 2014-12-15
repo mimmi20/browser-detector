@@ -2,7 +2,7 @@
 namespace BrowserDetectorTest\Input;
 
 use BrowserDetector\Detector\Version;
-use phpbrowscap\Browscap;
+use BrowscapPHP\Browscap;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.

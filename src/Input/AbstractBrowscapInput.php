@@ -83,7 +83,7 @@ abstract class AbstractBrowscapInput extends Core
      * sets the main parameters to the parser
      *
      * @throws \UnexpectedValueException
-     * @return \phpbrowscap\Browscap
+     * @return \BrowscapPHP\Browscap
      */
     abstract protected function initParser();
 

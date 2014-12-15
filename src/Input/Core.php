@@ -31,7 +31,7 @@
 namespace BrowserDetector\Input;
 
 use BrowserDetector\BrowserDetector;
-use phpbrowscap\Cache\CacheInterface;
+use BrowscapPHP\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 
