@@ -619,7 +619,7 @@ class Wurfl extends Core
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
 
-        if (null === $device || 'Bot' === $device->getVirtualCapability('form_factor')) {
+        if (null === $device || 'robot' === strtolower($device->getVirtualCapability('form_factor'))) {
             return $result;
         }
 

@@ -72,7 +72,7 @@ class Browscap extends AbstractBrowscapInput
     {
         if (!($this->parser instanceof \phpbrowscap\Browscap)) {
             throw new \UnexpectedValueException(
-                'the parser object has to be an instance of \\phpbrowscap\\Browscap'
+                'the parser object has to be an instance of \phpbrowscap\Browscap'
             );
         }
 
