@@ -77,7 +77,7 @@ class AndroidWebView
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'Version/'))) {
+        if (!$this->utils->checkIfContainsAll(array('Mozilla/', 'Chrome/', 'Version/'))) {
             return false;
         }
 
