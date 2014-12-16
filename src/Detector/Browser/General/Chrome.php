@@ -82,6 +82,10 @@ class Chrome
             return false;
         }
 
+        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
+            return false;
+        }
+
         if ($this->utils->checkIfContains(array('Version/'))) {
             return false;
         }
@@ -104,12 +108,15 @@ class Chrome
             'RockMelt',
             'Silk',
             'YaBrowser',
+            'Firefox',
+            'Iceweasel',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',
             'Google Wireless Transcoder',
             'Google Page Speed',
             'HubSpot Webcrawler',
+            'GomezAgent',
             // Fakes
             'Mac; Mac OS '
         );

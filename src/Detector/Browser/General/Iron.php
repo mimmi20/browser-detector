@@ -101,6 +101,7 @@ class Iron
             'Google Wireless Transcoder',
             'Google Web Preview',
             'HubSpot Webcrawler',
+            'Google Page Speed',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIron)) {

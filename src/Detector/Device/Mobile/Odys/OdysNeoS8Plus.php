@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
+namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelOt991
+class OdysNeoS8Plus
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,33 +52,33 @@ class AlcatelOt991
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'alcatel_ot991_ver1', // not in wurfl
+        'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'OT-991',
+        'model_name'              => 'ADM816KC',
         'model_extra_info'        => null,
-        'marketing_name'          => 'One Touch 991',
+        'marketing_name'          => 'Neo S8 Plus',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
         'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_991.xml',
+        'uaprof'                  => null,
         'uaprof2'                 => null,
         'uaprof3'                 => null,
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 85,
-        'columns'                 => 36,
-        'rows'                    => 10,
-        'max_image_width'         => 300,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 800,
+        'resolution_height'       => 600,
         'dual_orientation'        => true,
-        'colors'                  => 262144,
+        'colors'                  => 65536,
 
         // sms
         'sms_enabled'             => true,
@@ -94,15 +94,7 @@ class AlcatelOt991
      */
     public function canHandle()
     {
-        $phones = array('ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991');
-
-        if (!$this->utils->checkIfContains($phones)) {
-            return false;
-        }
-
-        $otherPhones = array('ALCATEL ONE TOUCH 991D', 'ALCATEL_one_touch_991D');
-
-        if ($this->utils->checkIfContains($otherPhones)) {
+        if (!$this->utils->checkIfContains(array('ADM816KC'))) {
             return false;
         }
 
@@ -126,7 +118,7 @@ class AlcatelOt991
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -136,7 +128,7 @@ class AlcatelOt991
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company\Odys();
     }
 
     /**
@@ -146,7 +138,7 @@ class AlcatelOt991
      */
     public function getBrand()
     {
-        return new Company\Alcatel();
+        return new Company\Odys();
     }
 
     /**

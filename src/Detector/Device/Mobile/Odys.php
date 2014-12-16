@@ -104,7 +104,8 @@ class Odys
             ' loox ',
             'xpress pro',
             'xelio',
-            'uno_x10'
+            'uno_x10',
+            'adm816kc',
         );
 
         if ($this->utils->checkIfContains($odysPhones, true)) {
