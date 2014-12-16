@@ -94,7 +94,13 @@ class Iron
             'Lunascape',
             'Maemo',
             'PaleMoon',
-            'Rockmelt'
+            'Rockmelt',
+            'Maxthon',
+            'RockMelt',
+            // Bots
+            'Google Wireless Transcoder',
+            'Google Web Preview',
+            'HubSpot Webcrawler',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIron)) {

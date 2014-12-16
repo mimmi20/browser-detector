@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -43,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
+class AndroidWebView
     extends BrowserHandler
 {
     /**
@@ -78,11 +77,7 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Version/'))) {
+        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'Version/'))) {
             return false;
         }
 
@@ -136,7 +131,7 @@ class Chrome
      */
     public function getName()
     {
-        return 'Chrome';
+        return 'Android WebView';
     }
 
     /**
@@ -170,7 +165,7 @@ class Chrome
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
+        $searches = array('Version');
 
         return $detector->detectVersion($searches);
     }
@@ -189,17 +184,11 @@ class Chrome
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\Engine\Blink
      */
     public function detectEngine()
     {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if ($version >= 28) {
-            $engine = new Blink();
-        } else {
-            $engine = new Webkit();
-        }
+        $engine = new Blink();
 
         $engine->setUseragent($this->useragent);
         return $engine;
