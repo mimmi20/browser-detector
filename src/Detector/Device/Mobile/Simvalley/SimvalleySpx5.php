@@ -57,7 +57,7 @@ class SimvalleySpx5
         // device
         'model_name'              => 'SPX-5',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => 'SPX-5',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

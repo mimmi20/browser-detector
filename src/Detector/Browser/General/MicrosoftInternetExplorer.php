@@ -144,7 +144,8 @@ class MicrosoftInternetExplorer
             // Fakes / Bots
             'mac; mac os ',
             'bingpreview',
-            'crystalsemanticsbot'
+            'crystalsemanticsbot',
+            '360spider',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

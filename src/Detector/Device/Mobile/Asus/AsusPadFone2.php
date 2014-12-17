@@ -55,7 +55,7 @@ class AsusPadFone2
         'wurflKey'                => 'asus_padfone2_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'PadFone 2',
+        'model_name'              => 'A68',
         'model_extra_info'        => null,
         'marketing_name'          => 'PadFone 2',
         'has_qwerty_keyboard'     => true,

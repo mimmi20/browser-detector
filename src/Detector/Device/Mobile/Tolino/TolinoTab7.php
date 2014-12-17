@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Odys;
+namespace BrowserDetector\Detector\Device\Mobile\Tolino;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OdysXelio
+class TolinoTab7
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class OdysXelio
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Xelio',
+        'model_name'              => 'Tab 7',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Xelio',
+        'marketing_name'          => 'Tab 7',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -69,22 +69,22 @@ class OdysXelio
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 163,
-        'physical_screen_height'  => 122,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 800,
-        'resolution_height'       => 600,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 1440,
+        'resolution_height'       => 900,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => true,
+        'sms_enabled'             => false,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -94,11 +94,7 @@ class OdysXelio
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Xelio')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Xelio 10 Pro', 'XELIO7PRO'))) {
+        if (!$this->utils->checkIfContains(array('tolino tab 7'), true)) {
             return false;
         }
 
@@ -132,7 +128,7 @@ class OdysXelio
      */
     public function getManufacturer()
     {
-        return new Company\Odys();
+        return new Company\TrekStor();
     }
 
     /**
@@ -142,7 +138,7 @@ class OdysXelio
      */
     public function getBrand()
     {
-        return new Company\Odys();
+        return new Company\Tolino();
     }
 
     /**

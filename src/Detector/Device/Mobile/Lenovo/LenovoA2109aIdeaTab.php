@@ -102,10 +102,11 @@ class LenovoA2109aIdeaTab
             'IdeaTab_A1107',
             'IdeaTabS2110AF',
             'IdeaTab A2107A-H',
+            'IdeaTab S6000-F',
             'IdeaTab S6000-H',
             'IdeaTab A3000-H',
             'S6000L',
-            'S6000'
+            'S6000',
         );
 
         if ($this->utils->checkIfContains($otherLenovoTabs)) {

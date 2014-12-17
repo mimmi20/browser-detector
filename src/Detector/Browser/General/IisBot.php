@@ -91,7 +91,7 @@ class IisBot
      */
     public function getName()
     {
-        return 'iisbot';
+        return 'IIS Site Analysis Web Crawler';
     }
 
     /**

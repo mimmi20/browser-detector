@@ -58,7 +58,7 @@ class SamsungSghT769
         'model_name'              => 'SGH-T769',
         'model_extra_info'        => null,
         'marketing_name'          => 'Galaxy S Blaze 4G',
-        'has_qwerty_keyboard'     => false,
+        'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info

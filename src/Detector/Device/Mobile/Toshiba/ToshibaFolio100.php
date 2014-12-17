@@ -57,7 +57,7 @@ class ToshibaFolio100
         // device
         'model_name'              => 'Folio 100',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => 'Folio 100',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

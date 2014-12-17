@@ -118,6 +118,7 @@ class SonyEricsson
             'c6903',
             'd6503',
             'd5503',
+            'd6603',
             'e10i',
             'e15i',
             'e15av',
@@ -172,7 +173,7 @@ class SonyEricsson
             return false;
         }
 
-        $others = array('uno_x10');
+        $others = array('uno_x10', 'x10.dual');
 
         if ($this->utils->checkIfContains($others, true)) {
             return false;

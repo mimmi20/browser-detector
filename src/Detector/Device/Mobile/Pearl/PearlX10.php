@@ -98,6 +98,10 @@ class PearlX10
             return false;
         }
 
+        if ($this->utils->checkIfContains('X10.Dual+')) {
+            return false;
+        }
+
         return true;
     }
 

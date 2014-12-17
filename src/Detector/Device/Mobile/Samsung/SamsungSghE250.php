@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -118,7 +118,7 @@ class SamsungSghE250
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\FeaturePhone();
     }
 
     /**
@@ -148,7 +148,7 @@ class SamsungSghE250
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
+        $handler = new Java();
         $handler->setUseragent($this->_useragent);
 
         return $handler;

@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -43,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
+class TagInspectorBot
     extends BrowserHandler
 {
     /**
@@ -56,8 +55,8 @@ class Chrome
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
 
         // pdf
         'pdf_support'                  => true,
@@ -78,59 +77,7 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Version/'))) {
-            return false;
-        }
-
-        $isNotReallyAnChrome = array(
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chromium',
-            'Comodo Dragon',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'Iron',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'Midori',
-            'OPR',
-            'PaleMoon',
-            'RockMelt',
-            'Silk',
-            'YaBrowser',
-            'Firefox',
-            'Iceweasel',
-            // Bots trying to be a Chrome
-            'PagePeeker',
-            'Google Web Preview',
-            'Google Wireless Transcoder',
-            'Google Page Speed',
-            'HubSpot Webcrawler',
-            'GomezAgent',
-            'TagInspector',
-            // Fakes
-            'Mac; Mac OS '
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
-            return false;
-        }
-
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
-
-        if (0 != $detector->getVersion(Version::MINORONLY)) {
+        if (!$this->utils->checkIfContains(array('TagInspector'))) {
             return false;
         }
 
@@ -144,7 +91,7 @@ class Chrome
      */
     public function getName()
     {
-        return 'Chrome';
+        return 'TagInspector';
     }
 
     /**
@@ -154,7 +101,7 @@ class Chrome
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company\Infotrust();
     }
 
     /**
@@ -164,7 +111,7 @@ class Chrome
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
     }
 
     /**
@@ -176,11 +123,8 @@ class Chrome
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('0.0');
     }
 
     /**
@@ -190,26 +134,19 @@ class Chrome
      */
     public function getWeight()
     {
-        return 116398328;
+        return 4;
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function detectEngine()
     {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        $handler = new WebKit();
+        $handler->setUseragent($this->useragent);
 
-        if ($version >= 28) {
-            $engine = new Blink();
-        } else {
-            $engine = new Webkit();
-        }
-
-        $engine->setUseragent($this->useragent);
-        return $engine;
+        return $handler;
     }
 }

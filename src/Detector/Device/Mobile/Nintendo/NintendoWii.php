@@ -102,6 +102,10 @@ class NintendoWii
             return false;
         }
 
+        if ($this->utils->checkIfContains('Nintendo WiiU')) {
+            return false;
+        }
+
         return true;
     }
 

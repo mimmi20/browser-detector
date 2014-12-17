@@ -55,7 +55,7 @@ class MdLifetabE10310
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Lifetab E10310',
+        'model_name'              => 'E10310',
         'model_extra_info'        => null,
         'marketing_name'          => 'Lifetab E10310',
         'has_qwerty_keyboard'     => true,

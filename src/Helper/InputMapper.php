@@ -618,6 +618,7 @@ class InputMapper
             case 'android 4.3':
             case 'android 4.4':
             case 'android 5.0':
+            case 'android 2.2 tablet':
             case 'android 4 tablet':
             case 'android 4.1 tablet':
             case 'android 4.2 tablet':
@@ -806,6 +807,7 @@ class InputMapper
             case 'android 4.3':
             case 'android 4.4':
             case 'android 5.0':
+            case 'android 2.2 tablet':
             case 'android 4 tablet':
             case 'android 4.1 tablet':
             case 'android 4.2 tablet':
@@ -997,6 +999,7 @@ class InputMapper
             case 'android 4.3':
             case 'android 4.4':
             case 'android 5.0':
+            case 'android 2.2 tablet':
             case 'android 4 tablet':
             case 'android 4.1 tablet':
             case 'android 4.2 tablet':
@@ -1105,6 +1108,7 @@ class InputMapper
             case 'android 4.3':
             case 'android 4.4':
             case 'android 5.0':
+            case 'android 2.2 tablet':
             case 'android 4 tablet':
             case 'android 4.1 tablet':
             case 'android 4.2 tablet':

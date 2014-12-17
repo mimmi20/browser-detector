@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Odys;
+namespace BrowserDetector\Detector\Device\Mobile\Pearl;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OdysXelio
+class PearlX10Plus
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class OdysXelio
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Xelio',
+        'model_name'              => 'X10+',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Xelio',
+        'marketing_name'          => 'Touchlet X10.Dual+',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -69,14 +69,14 @@ class OdysXelio
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 163,
-        'physical_screen_height'  => 122,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 800,
-        'resolution_height'       => 600,
+        'physical_screen_width'   => null,
+        'physical_screen_height'  => null,
+        'columns'                 => null,
+        'rows'                    => null,
+        'max_image_width'         => null,
+        'max_image_height'        => null,
+        'resolution_width'        => 1024,
+        'resolution_height'       => 768,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
@@ -94,11 +94,7 @@ class OdysXelio
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Xelio')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Xelio 10 Pro', 'XELIO7PRO'))) {
+        if (!$this->utils->checkIfContains('X10.Dual+')) {
             return false;
         }
 
@@ -132,7 +128,7 @@ class OdysXelio
      */
     public function getManufacturer()
     {
-        return new Company\Odys();
+        return new Company\Pearl();
     }
 
     /**
@@ -142,7 +138,7 @@ class OdysXelio
      */
     public function getBrand()
     {
-        return new Company\Odys();
+        return new Company\Pearl();
     }
 
     /**
