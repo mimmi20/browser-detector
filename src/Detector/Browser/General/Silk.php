@@ -148,9 +148,9 @@ class Silk
      */
     public function detectEngine()
     {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        $version = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
 
-        if ((float) $version >= 3.21) {
+        if ($version >= 3.21) {
             $engine = new Blink();
         } else {
             $engine = new Webkit();
