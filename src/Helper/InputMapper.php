@@ -568,7 +568,7 @@ class InputMapper
                 $deviceType = new DeviceType\Bot();
                 break;
             case 'mobile phone':
-            case 'Smartphone':
+            case 'smartphone':
             case 'feature phone':
                 $deviceType = new DeviceType\MobilePhone();
                 break;
