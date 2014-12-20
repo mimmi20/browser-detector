@@ -75,7 +75,7 @@ class Maemo
      */
     public function getName()
     {
-        return 'Linux Smartphone OS (Maemo)';
+        return 'Linux MobilePhone OS (Maemo)';
     }
 
     /**

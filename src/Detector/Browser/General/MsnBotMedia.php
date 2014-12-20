@@ -126,7 +126,7 @@ class MsnBotMedia
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('msnbot\-media');
+        $searches = array('MsnBot\-Media ', 'msnbot\-media');
 
         return $detector->detectVersion($searches);
     }

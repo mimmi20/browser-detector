@@ -43,12 +43,12 @@ class TorstenRueckertInternetdienstleistungen extends AbstractCompany implements
      *
      * @var string
      */
-    protected $name = 'Torsten Rückert Internetdienstleistungen';
+    protected $name = 'Torsten Rueckert Internetdienstleistungen';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Torsten R�ckert';
+    protected $brandname = 'Torsten Rueckert';
 }

@@ -50,14 +50,14 @@ class Unknown extends AbstractType implements TypeInterface
      *
      * @var boolean
      */
-    protected $bot = null;
+    protected $bot = false;
 
     /**
      * the Browser is a Syndication Reader
      *
      * @var boolean
      */
-    protected $reader = null;
+    protected $reader = false;
 
     /**
      * the Browser uses a transcoding webservice

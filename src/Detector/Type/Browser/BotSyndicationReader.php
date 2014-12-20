@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Type\Device;
+namespace BrowserDetector\Detector\Type\Browser;
 
 /**
  * @category  BrowserDetector
@@ -36,54 +36,40 @@ namespace BrowserDetector\Detector\Type\Device;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Smartphone extends AbstractType implements TypeInterface
+class BotSyndicationReader extends AbstractType implements TypeInterface
 {
     /**
-     * the name of the company
+     * the name of the browser
      *
      * @var string
      */
-    protected $name = 'Smartphone';
+    protected $name = 'Bot/Crawler';
 
     /**
-     * the Device is a mobile device
+     * the Browser is a Bot
      *
-     * @var string
+     * @var boolean
      */
-    protected $mobile = true;
+    protected $bot = true;
 
     /**
-     * the Device is a desktop device
+     * the Browser is a Syndication Reader
      *
-     * @var string
+     * @var boolean
      */
-    protected $desktop = false;
+    protected $reader = true;
 
     /**
-     * the Device is a console
+     * the Browser uses a transcoding webservice
      *
-     * @var string
+     * @var boolean
      */
-    protected $console = false;
+    protected $transcoder = false;
 
     /**
-     * the Device is a tv device
+     * the Browser should be banned
      *
-     * @var string
+     * @var boolean
      */
-    protected $tv = false;
-
-    /**
-     * the Device is a mobile phone
-     *
-     * @var string
-     */
-    protected $phone = true;
-
-    /**
-     * the Device is a tablet device
-     *
-     * @var string
-     */
-    protected $tablet = false;
+    protected $banned = false;
 }

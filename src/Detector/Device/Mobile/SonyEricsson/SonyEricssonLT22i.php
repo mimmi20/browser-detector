@@ -122,7 +122,7 @@ class SonyEricssonLT22i
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\MobilePhone();
     }
 
     /**

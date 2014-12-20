@@ -99,7 +99,7 @@ class HtcA510
         }
 
         $otherHtc = array('HTC Wildfire S A510e', 'HTC_WildfireS-orange-LS', 'Wildfire S A510e', 'HTC_WildfireS_A510e');
-        
+
         if ($this->utils->checkIfContains($otherHtc)) {
             return false;
         }
@@ -124,7 +124,7 @@ class HtcA510
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\MobilePhone();
     }
 
     /**

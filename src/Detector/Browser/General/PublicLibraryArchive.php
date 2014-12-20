@@ -124,7 +124,7 @@ class PublicLibraryArchive
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('publiclibraryarchive');
+        $searches = array('publiclibraryarchive', 'publiclibraryarchive\.org');
 
         return $detector->detectVersion($searches);
     }

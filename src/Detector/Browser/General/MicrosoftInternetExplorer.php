@@ -133,7 +133,6 @@ class MicrosoftInternetExplorer
             'blackberry',
             'webtv',
             'argclrint',
-            'firefox',
             'msiecrawler',
             // mobile IE
             'xblwp7',

@@ -118,7 +118,7 @@ class HuaweiVodafone858
      */
     public function getDeviceType()
     {
-        return new DeviceType\FeaturePhone();
+        return new DeviceType\MobilePhone();
     }
 
     /**

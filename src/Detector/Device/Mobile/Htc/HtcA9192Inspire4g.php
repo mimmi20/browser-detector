@@ -118,7 +118,7 @@ class HtcA9192Inspire4g
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\MobilePhone();
     }
 
     /**

@@ -94,7 +94,7 @@ class SamsungGti8750
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SAMSUNG; OMNIA7', 'GT-I8750'))) {
+        if (!$this->utils->checkIfContains(array('GT-I8750'))) {
             return false;
         }
 
@@ -118,7 +118,7 @@ class SamsungGti8750
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\MobilePhone();
     }
 
     /**

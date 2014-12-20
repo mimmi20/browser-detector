@@ -96,7 +96,11 @@ class Microsoft
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll(array('Windows NT 6.2', 'ARM;'))) {
+        if (!$this->utils->checkIfContains(array('ARM;'))) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContains(array('Windows NT 6.2', 'Windows NT 6.3'))) {
             return false;
         }
 

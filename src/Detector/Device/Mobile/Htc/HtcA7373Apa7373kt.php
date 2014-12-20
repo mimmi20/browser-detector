@@ -118,7 +118,7 @@ class HtcA7373Apa7373kt
      */
     public function getDeviceType()
     {
-        return new DeviceType\Smartphone();
+        return new DeviceType\MobilePhone();
     }
 
     /**

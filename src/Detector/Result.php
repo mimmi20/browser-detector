@@ -140,7 +140,7 @@ class Result implements \Serializable
         'controlcap_is_app'                                 => null,
         'controlcap_is_mobile'                              => null,
         'controlcap_is_robot'                               => null,
-        'controlcap_is_smartphone'                          => null,
+        'controlcap_is_MobilePhone'                          => null,
         'controlcap_is_ios'                                 => null,
         'controlcap_is_android'                             => null,
         'controlcap_is_windows_phone'                       => null,

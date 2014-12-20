@@ -561,20 +561,16 @@ class InputMapper
             case 'tablet':
                 $deviceType = new DeviceType\Tablet();
                 break;
-            case 'mobile phone':
-                $deviceType = new DeviceType\MobilePhone();
-                break;
             case 'mobile device':
                 $deviceType = new DeviceType\MobileDevice();
                 break;
             case 'robot':
                 $deviceType = new DeviceType\Bot();
                 break;
-            case 'smartphone':
-                $deviceType = new DeviceType\Smartphone();
-                break;
+            case 'mobile phone':
+            case 'Smartphone':
             case 'feature phone':
-                $deviceType = new DeviceType\FeaturePhone();
+                $deviceType = new DeviceType\MobilePhone();
                 break;
             case '':
             case 'unknown':

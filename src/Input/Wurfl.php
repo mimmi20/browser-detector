@@ -740,7 +740,7 @@ class Wurfl extends Core
             $width  = (int)$device->getCapability('resolution_width');
             $height = (int)$device->getCapability('resolution_height');
 
-            if ($deviceType == 'Mobile Phone' || $deviceType == 'Smartphone' || $deviceType == 'Feature Phone') {
+            if ($deviceType == 'Mobile Phone' || $deviceType == 'MobilePhone' || $deviceType == 'Feature Phone') {
                 $result->setCapability('resolution_width', min($height, $width));
                 $result->setCapability('resolution_height', max($height, $width));
             } elseif ($deviceType == 'Tablet' || $deviceType == 'FonePad') {

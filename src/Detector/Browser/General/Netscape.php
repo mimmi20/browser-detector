@@ -158,6 +158,8 @@ class Netscape
             'linkdexbot',
             'CareerBot',
             'WBSearchBot',
+            'Mail.RU_Bot',
+            '80legs'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
