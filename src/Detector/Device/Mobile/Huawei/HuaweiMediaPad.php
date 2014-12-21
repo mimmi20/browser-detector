@@ -98,7 +98,7 @@ class HuaweiMediaPad
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('MediaPad 7 Lite', 'MediaPad 10 LINK'))) {
+        if ($this->utils->checkIfContains(array('MediaPad 7 Lite', 'MediaPad 10 LINK', 'MediaPad M1 8.0'))) {
             return false;
         }
 

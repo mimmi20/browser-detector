@@ -118,6 +118,7 @@ class Firefox
             'IceDragon',
             'TenFourFox',
             'WaterFox',
+            'Waterfox',
             //Bots
             'Nutch',
             'CazoodleBot',
@@ -128,6 +129,7 @@ class Firefox
             'Spinn3r',
             'Yahoo!',
             'Slurp',
+            'adbeat.com',
             //others
             'MSIE',
             'Trident',

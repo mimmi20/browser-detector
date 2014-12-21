@@ -57,7 +57,7 @@ class AlcatelOt903d
         // device
         'model_name'              => 'OT-903D',
         'model_extra_info'        => null,
-        'marketing_name'          => 'OT-903D',
+        'marketing_name'          => 'One Touch 903D',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

@@ -711,10 +711,6 @@ class Wurfl extends Core
             $deviceType = $device->getVirtualCapability('form_factor');
         }
 
-        if ($apiPhone && $deviceType === 'Tablet') {
-            $deviceType = 'FonePad';
-        }
-
         if (!$apiPhone && $deviceType === 'Feature Phone') {
             $deviceType = 'Mobile Device';
         }

@@ -90,7 +90,7 @@ class ThumbSniper
      */
     public function getName()
     {
-        return 'Thumb Sniper';
+        return 'ThumbSniper';
     }
 
     /**
@@ -100,7 +100,7 @@ class ThumbSniper
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\ThomasSchulte();
     }
 
     /**

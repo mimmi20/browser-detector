@@ -28,22 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Archos;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\Brew;
-use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Linux;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -52,9 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson
+class Archos50Titanium
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -65,9 +55,9 @@ class SonyEricsson
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'general SonyEricsson Device',
+        'model_name'              => '50 Titanium',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => '50 Titanium',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -85,10 +75,10 @@ class SonyEricsson
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
+        'resolution_width'        => 540,
+        'resolution_height'       => 960,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
         // sms
         'sms_enabled'             => true,
@@ -104,101 +94,11 @@ class SonyEricsson
      */
     public function canHandle()
     {
-        $sonyPhones = array(
-            'sonyericsson',
-            'sony',
-            'c1505',
-            'c1605',
-            'c1905',
-            'c2105',
-            'c5303',
-            'c6602',
-            'c6603',
-            'c6503',
-            'c6903',
-            'd6503',
-            'd5503',
-            'd6603',
-            'd5803',
-            'e10i',
-            'e15i',
-            'e15av',
-            'ebrd1',
-            'lt15i',
-            'lt18',
-            'lt18i',
-            'lt22i',
-            'lt25i',
-            'lt26i',
-            'lt28h',
-            'lt30p',
-            'mk16i',
-            'mt11i',
-            'mt15i',
-            'mt27i',
-            'nexushd2',
-            'r800i',
-            's312',
-            'sk17i',
-            'sgp311',
-            'sgp321',
-            'sgpt12',
-            'sgpt13',
-            'st15i',
-            'st16i',
-            'st17i',
-            'st18i',
-            'st19i',
-            'st20i',
-            'st21i',
-            'st22i',
-            'st23i',
-            'st24i',
-            'st25i',
-            'st26i',
-            'st27i',
-            'u20i',
-            'w508a',
-            'w760i',
-            'wt13i',
-            'wt19i',
-            'x1i',
-            'x10',
-            'xst2',
-            'playstation',
-            'psp',
-            'xperia arc'
-        );
-
-        if (!$this->utils->checkIfContains($sonyPhones, true)) {
-            return false;
-        }
-
-        $others = array('uno_x10', 'x10.dual');
-
-        if ($this->utils->checkIfContains($others, true)) {
+        if (!$this->utils->checkIfContains('Archos 50 Titanium')) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\SonyEricsson');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -208,7 +108,7 @@ class SonyEricsson
      */
     public function getWeight()
     {
-        return 1633866;
+        return 3;
     }
 
     /**
@@ -228,7 +128,7 @@ class SonyEricsson
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company\Archos();
     }
 
     /**
@@ -238,32 +138,19 @@ class SonyEricsson
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company\Archos();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $os = array(
-            new AndroidOs(),
-            new Bada(),
-            new Brew(),
-            new Java(),
-            new Symbianos(),
-            new WindowsMobileOs(),
-            new WindowsPhoneOs(),
-            new Linux()
-        );
+        $handler = new AndroidOs();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
+        return $handler;
     }
 }

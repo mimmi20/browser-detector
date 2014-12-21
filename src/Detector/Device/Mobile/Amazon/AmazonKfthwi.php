@@ -97,7 +97,7 @@ class AmazonKfthwi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Kfthwi'))) {
+        if (!$this->utils->checkIfContains(array('Kfthwi', 'KFTHWI'))) {
             return false;
         }
 

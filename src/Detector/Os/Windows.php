@@ -203,6 +203,7 @@ class Windows
                 break;
             case '4.1':
             case '4.0':
+            case 'NT':
                 $version = 'NT';
                 break;
             default:

@@ -97,7 +97,7 @@ class Amazon
     public function canHandle()
     {
         $amazonPhones = array(
-            'Amazon', 'Kindle', 'Silk', 'KFTT', 'KFOT', 'KFJWI'
+            'Amazon', 'Kindle', 'Silk', 'KFTT', 'KFOT', 'KFJWI', 'KFSOWI', 'KFTHWI',
         );
 
         if (!$this->utils->checkIfContains($amazonPhones)) {

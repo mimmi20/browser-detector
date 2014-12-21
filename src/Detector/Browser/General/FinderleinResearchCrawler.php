@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Cliqzbot
+class FinderleinResearchCrawler
     extends BrowserHandler
 {
     /**
@@ -77,7 +77,7 @@ class Cliqzbot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Cliqzbot')) {
+        if (!$this->utils->checkIfContains(array('Finderlein Research Crawler'))) {
             return false;
         }
 
@@ -91,7 +91,7 @@ class Cliqzbot
      */
     public function getName()
     {
-        return 'Cliqzbot';
+        return 'Finderlein Research Crawler';
     }
 
     /**
@@ -101,7 +101,7 @@ class Cliqzbot
      */
     public function getManufacturer()
     {
-        return new Company\Tenbetterpages();
+        return new Company\Unknown();
     }
 
     /**
@@ -124,7 +124,7 @@ class Cliqzbot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Cliqzbot');
+        $searches = array('Finderlein Research Crawler');
 
         return $detector->detectVersion($searches);
     }
@@ -136,7 +136,7 @@ class Cliqzbot
      */
     public function getWeight()
     {
-        return 56;
+        return 4;
     }
 
     /**

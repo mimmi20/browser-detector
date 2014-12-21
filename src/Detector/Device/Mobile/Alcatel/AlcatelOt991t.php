@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
+namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\RimOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerryZ10
+class AlcatelOt991t
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class BlackBerryZ10
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Z10',
+        'model_name'              => 'OT-991T',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Z10',
+        'marketing_name'          => 'One Touch 991T Play', // wurflkey: alcatel_ot991_ver1_subuad
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -69,16 +69,16 @@ class BlackBerryZ10
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 768,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => false,
-        'colors'                  => 16777216,
+        'physical_screen_width'   => 57,
+        'physical_screen_height'  => 85,
+        'columns'                 => 36,
+        'rows'                    => 10,
+        'max_image_width'         => 300,
+        'max_image_height'        => 400,
+        'resolution_width'        => 320,
+        'resolution_height'       => 480,
+        'dual_orientation'        => true,
+        'colors'                  => 262144,
 
         // sms
         'sms_enabled'             => true,
@@ -94,7 +94,9 @@ class BlackBerryZ10
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BB10; Touch')) {
+        $phones = array('ALCATEL ONE TOUCH 991T');
+
+        if (!$this->utils->checkIfContains($phones)) {
             return false;
         }
 
@@ -128,7 +130,7 @@ class BlackBerryZ10
      */
     public function getManufacturer()
     {
-        return new Company\BlackBerry();
+        return new Company\Alcatel();
     }
 
     /**
@@ -138,17 +140,17 @@ class BlackBerryZ10
      */
     public function getBrand()
     {
-        return new Company\BlackBerry();
+        return new Company\Alcatel();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\RimOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new RimOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;

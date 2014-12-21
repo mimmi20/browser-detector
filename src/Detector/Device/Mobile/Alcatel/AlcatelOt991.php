@@ -100,7 +100,7 @@ class AlcatelOt991
             return false;
         }
 
-        $otherPhones = array('ALCATEL ONE TOUCH 991D', 'ALCATEL_one_touch_991D');
+        $otherPhones = array('ALCATEL ONE TOUCH 991D', 'ALCATEL_one_touch_991D', 'ALCATEL ONE TOUCH 991T');
 
         if ($this->utils->checkIfContains($otherPhones)) {
             return false;

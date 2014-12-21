@@ -59,7 +59,7 @@ class BlackBerry9780
         'model_extra_info'        => null,
         'marketing_name'          => 'BlackBerry 9780',
         'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'clickwheel',
+        'pointing_method'         => 'trackpad',
 
         // product info
         'ununiqueness_handler'    => null,

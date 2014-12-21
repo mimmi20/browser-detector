@@ -98,14 +98,14 @@ class Zte
     {
         $ztePhones = array(
             'zte', 'base tab', 'base lutea', 'BASE_Lutea_3', 'racerii', ' x920 ', ' n600 ',
-            ' w713 ', ' v880 ', ' v9 ', 'smarttab7', 'smarttab10', 'blade'
+            ' w713 ', ' v880 ', ' v9 ', 'smarttab7', 'smarttab10', 'blade', 'kis plus'
         );
 
-        if ($this->utils->checkIfContains($ztePhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($ztePhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**

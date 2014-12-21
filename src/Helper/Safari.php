@@ -131,6 +131,7 @@ class Safari
             'WebClip',
             'WeTab',
             'wOSBrowser',
+            'Skyfire',
             //Bots
             'GSA',
             'GoogleBot',

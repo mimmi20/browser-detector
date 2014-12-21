@@ -57,7 +57,7 @@ class MotorolaDroidRazr
         // device
         'model_name'              => 'Razr',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Razr',
+        'marketing_name'          => 'Droid Razr',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,10 +75,10 @@ class MotorolaDroidRazr
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
+        'resolution_width'        => 540,
+        'resolution_height'       => 960,
+        'dual_orientation'        => true,
+        'colors'                  => 65536,
 
         // sms
         'sms_enabled'             => true,

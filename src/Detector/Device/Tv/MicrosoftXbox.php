@@ -63,7 +63,7 @@ class MicrosoftXbox
         // device
         'model_name'              => 'Xbox 360',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => 'Xbox 360',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'mouse',
 
@@ -101,6 +101,10 @@ class MicrosoftXbox
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('Xbox')) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('Xbox One')) {
             return false;
         }
 

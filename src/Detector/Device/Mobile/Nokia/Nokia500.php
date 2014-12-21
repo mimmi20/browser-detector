@@ -57,7 +57,7 @@ class Nokia500
         // device
         'model_name'              => '500',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => '500',
         'has_qwerty_keyboard'     => false, // wurflkey: nokia_500_ver1
         'pointing_method'         => 'touchscreen',
 

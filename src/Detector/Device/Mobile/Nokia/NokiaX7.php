@@ -57,7 +57,7 @@ class NokiaX7
         // device
         'model_name'              => 'X7',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => 'X7',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -95,6 +95,10 @@ class NokiaX7
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('NokiaX7')) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('NokiaX7-00')) {
             return false;
         }
 
