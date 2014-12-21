@@ -94,7 +94,7 @@ class MdLifeE3501
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MobilePhone LIFE E3501')) {
+        if (!$this->utils->checkIfContains('LIFE E3501')) {
             return false;
         }
 

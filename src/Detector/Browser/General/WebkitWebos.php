@@ -134,7 +134,7 @@ class WebkitWebos
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('webOS', 'webOSBrowser');
+        $searches = array('Version', 'webOS', 'webOSBrowser');
 
         return $detector->detectVersion($searches);
     }

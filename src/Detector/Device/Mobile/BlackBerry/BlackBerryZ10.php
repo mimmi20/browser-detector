@@ -128,7 +128,7 @@ class BlackBerryZ10
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company\BlackBerry();
     }
 
     /**
@@ -138,7 +138,7 @@ class BlackBerryZ10
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company\BlackBerry();
     }
 
     /**

@@ -47,7 +47,6 @@ use BrowserDetector\Detector\Browser\Mobile\NetFrontLifeBrowser;
 use BrowserDetector\Detector\Browser\Mobile\Opera;
 use BrowserDetector\Detector\Browser\Mobile\OperaMini;
 use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\Mobile\OperaTablet;
 use BrowserDetector\Detector\Browser\Mobile\Silk;
 use BrowserDetector\Detector\Browser\Mobile\Ucweb;
 use BrowserDetector\Detector\Browser\Mobile\YaBrowser;
@@ -210,7 +209,6 @@ class AndroidOs
             new Opera(),
             new OperaMini(),
             new OperaMobile(),
-            new OperaTablet(),
             new Firefox(),
             new YouWaveAndroidOnPc(),
             new AndroidDownloadManager(),

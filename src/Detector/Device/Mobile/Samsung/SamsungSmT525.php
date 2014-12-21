@@ -118,7 +118,7 @@ class SamsungSmT525
      */
     public function getDeviceType()
     {
-        return new DeviceType\FonePad();
+        return new DeviceType\Tablet();
     }
 
     /**

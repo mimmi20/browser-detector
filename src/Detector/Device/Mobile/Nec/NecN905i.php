@@ -59,7 +59,7 @@ class NecN905i
         'model_extra_info'        => null,
         'marketing_name'          => null,
         'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
+        'pointing_method'         => 'unknown',
 
         // product info
         'Nec_feature_pack'        => 0,

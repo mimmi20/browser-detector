@@ -101,7 +101,7 @@ class ComodoDragon
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Comodo Dragon'))) {
+        if (!$this->utils->checkIfContains(array('Comodo Dragon', 'Dragon'))) {
             $detector = new Version();
             $detector->setUserAgent($this->useragent);
             $detector->detectVersion(array('Chrome'));

@@ -118,7 +118,7 @@ class SamsungSmT805
      */
     public function getDeviceType()
     {
-        return new DeviceType\FonePad();
+        return new DeviceType\Tablet();
     }
 
     /**

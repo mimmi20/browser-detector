@@ -28,9 +28,9 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser\Mobile;
+namespace BrowserDetector\Detector\Browser\Desktop;
 
-use BrowserDetector\Detector\Browser\General\OperaTablet as OperaTabletBase;
+use BrowserDetector\Detector\Browser\General\Avant as AvantBase;
 
 /**
  * @category  BrowserDetector
@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\OperaTablet as OperaTabletBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaTablet extends OperaTabletBase
+class Avant extends AvantBase
 {
     // nothing to do here
 }
-

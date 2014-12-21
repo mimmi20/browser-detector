@@ -59,7 +59,7 @@ class SamsungSghE250i
         'model_extra_info'        => null,
         'marketing_name'          => 'SGH-E250I',
         'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
+        'pointing_method'         => 'unknown',
 
         // product info
         'ununiqueness_handler'    => null,

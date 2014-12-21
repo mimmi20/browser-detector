@@ -118,7 +118,7 @@ class LenovoS6000fIdeaTab
      */
     public function getDeviceType()
     {
-        return new DeviceType\FonePad();
+        return new DeviceType\Tablet();
     }
 
     /**

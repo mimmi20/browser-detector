@@ -88,7 +88,7 @@ class OperaMobile
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Opera Mini', 'Opera Tablet'))) {
+        if ($this->utils->checkIfContains(array('Opera Mini'))) {
             return false;
         }
 

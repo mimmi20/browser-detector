@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\General\GenericJavaCrawler;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\General\IchiroMobileBot;
 use BrowserDetector\Detector\Browser\Mobile\Dalvik;
 use BrowserDetector\Detector\Browser\Mobile\Dolfin;
 use BrowserDetector\Detector\Browser\Mobile\Jasmine;
@@ -175,6 +176,7 @@ class Java
             new Silk(),
             new Jasmine(),
             new GooglebotMobileBot(),
+            new IchiroMobileBot(),
         );
 
         $chain = new Chain();

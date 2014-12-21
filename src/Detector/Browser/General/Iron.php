@@ -102,6 +102,7 @@ class Iron
             'Google Web Preview',
             'HubSpot Webcrawler',
             'Google Page Speed',
+            'TagInspector',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIron)) {

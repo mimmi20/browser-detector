@@ -101,7 +101,7 @@ class Bot360
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\So360cn();
     }
 
     /**

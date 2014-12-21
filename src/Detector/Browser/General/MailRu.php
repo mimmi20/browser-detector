@@ -111,7 +111,7 @@ class MailRu
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
     }
 
     /**
@@ -124,7 +124,7 @@ class MailRu
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Mail\.RU', 'Mail\.RU_Bot');
+        $searches = array('Mail\.RU_Bot\/Fast', 'Mail\.RU_Bot', 'Mail\.RU');
 
         return $detector->detectVersion($searches);
     }

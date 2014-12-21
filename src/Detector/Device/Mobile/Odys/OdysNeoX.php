@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Medion;
+namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MdLifetabS1033x
+class OdysNeoX
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class MdLifetabS1033x
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Lifetab S1033X',
+        'model_name'              => 'ADM816HC',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Lifetab S1033X',
+        'marketing_name'          => 'Neo X',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,16 +75,16 @@ class MdLifetabS1033x
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 1200,
-        'resolution_height'       => 1920,
+        'resolution_width'        => 800,
+        'resolution_height'       => 600,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => false,
+        'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => false,
+        'nfc_support'             => true,
     );
 
     /**
@@ -94,7 +94,7 @@ class MdLifetabS1033x
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LIFETAB_S1033X')) {
+        if (!$this->utils->checkIfContains(array('ADM816HC'))) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class MdLifetabS1033x
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\Odys();
     }
 
     /**
@@ -138,7 +138,7 @@ class MdLifetabS1033x
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company\Odys();
     }
 
     /**

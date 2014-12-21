@@ -91,7 +91,7 @@ class Windows
         $detector->setUserAgent($this->_useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        if ($this->utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90'))) {
+        if ($this->utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'))) {
             return $detector->setVersion('ME');
         }
 

@@ -84,7 +84,7 @@ class SmartTv
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('WebBrowser'))) {
+        if ($this->utils->checkIfContains(array('WebBrowser', 'Chromium'))) {
             return false;
         }
 

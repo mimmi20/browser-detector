@@ -95,6 +95,7 @@ class Chrome
             'Arora',
             'Chromium',
             'Comodo Dragon',
+            'Dragon',
             'Flock',
             'Galeon',
             'Google Earth',

@@ -58,9 +58,9 @@ class NintendoWiiU
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Wii U',
+        'model_name'              => 'WiiU',
         'model_extra_info'        => null,
-        'marketing_name'          => null,
+        'marketing_name'          => 'WiiU',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'mouse',
 

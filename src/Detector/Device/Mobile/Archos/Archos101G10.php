@@ -55,9 +55,9 @@ class Archos101G10
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => '101 G10',
+        'model_name'              => '101G10',
         'model_extra_info'        => null,
-        'marketing_name'          => '101 G10',
+        'marketing_name'          => 'Gen10 101 XS',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 

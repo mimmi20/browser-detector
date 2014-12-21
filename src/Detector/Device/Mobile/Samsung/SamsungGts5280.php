@@ -58,7 +58,7 @@ class SamsungGts5280
         'model_name'              => 'GT-S5280',
         'model_extra_info'        => null,
         'marketing_name'          => 'Galaxy Star',
-        'has_qwerty_keyboard'     => false,
+        'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
         // product info
@@ -77,7 +77,7 @@ class SamsungGts5280
         'max_image_height'        => null,
         'resolution_width'        => 240,
         'resolution_height'       => 320,
-        'dual_orientation'        => false,
+        'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms

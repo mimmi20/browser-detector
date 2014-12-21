@@ -159,7 +159,10 @@ class Netscape
             'CareerBot',
             'WBSearchBot',
             'Mail.RU_Bot',
-            '80legs'
+            '80legs',
+            'ThumbShotsBot',
+            'OpenVAS',
+            'Genieo',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
