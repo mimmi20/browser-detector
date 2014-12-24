@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
+use BrowserDetector\Detector\Browser\General\MicrosoftOffice;
+use BrowserDetector\Detector\Browser\General\MicrosoftOutlook;
 use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
 use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
@@ -176,7 +178,9 @@ class WindowsRt8Tablet
     {
         $browsers = array(
             new MicrosoftInternetExplorer(),
-            new MicrosoftMobileExplorer()
+            new MicrosoftMobileExplorer(),
+            new MicrosoftOutlook(),
+            new MicrosoftOffice(),
         );
 
         $chain = new Chain();
