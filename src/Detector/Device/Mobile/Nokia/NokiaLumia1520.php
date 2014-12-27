@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia1320
+class NokiaLumia1520
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class NokiaLumia1320
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'Lumia 1320',
+        'model_name'              => 'Lumia 1520',
         'model_extra_info'        => null,
-        'marketing_name'          => 'Lumia 1320',
+        'marketing_name'          => 'Lumia 1520',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,8 +75,8 @@ class NokiaLumia1320
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
+        'resolution_width'        => 1080,
+        'resolution_height'       => 1920,
         'dual_orientation'        => true,
         'colors'                  => 16777216,
 
@@ -94,7 +94,7 @@ class NokiaLumia1320
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('nokia; lumia 1320'), true)) {
+        if (!$this->utils->checkIfContains(array('nokia; lumia 1520'), true)) {
             return false;
         }
 

@@ -110,6 +110,7 @@ class NokiaLumia
             'nokia; lumia 920',
             'nokia; lumia 925',
             'nokia; lumia 1320',
+            'nokia; lumia 1520',
         );
 
         if ($this->utils->checkIfContains($specialLumias, true)) {
