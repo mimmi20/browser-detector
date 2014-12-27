@@ -91,7 +91,7 @@ class ShowyouBot
      */
     public function getName()
     {
-        return 'ShowYou Bot';
+        return 'ShowyouBot';
     }
 
     /**
@@ -101,7 +101,7 @@ class ShowyouBot
      */
     public function getManufacturer()
     {
-        return new Company\Ask();
+        return new Company\Remixation();
     }
 
     /**
