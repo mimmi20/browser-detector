@@ -81,7 +81,7 @@ class GenericJavaCrawler
             return false;
         }
 
-        if ($this->utils->checkIfContains('Phantom')) {
+        if ($this->utils->checkIfContains(array('Phantom', 'UCWEB', 'UCBrowser'))) {
             return false;
         }
 

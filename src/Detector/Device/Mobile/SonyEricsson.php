@@ -257,7 +257,7 @@ class SonyEricsson
             new Symbianos(),
             new WindowsMobileOs(),
             new WindowsPhoneOs(),
-            new Linux()
+            new Linux(),
         );
 
         $chain = new Chain();
