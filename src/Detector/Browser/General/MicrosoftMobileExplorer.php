@@ -155,11 +155,11 @@ class MicrosoftMobileExplorer
             return $detector->setVersion('9.0');
         }
 
-        if ($this->utils->checkIfContains('WPDesktop')) {
+        if ($this->utils->checkIfContains('WPDesktop') && !$this->utils->checkIfContains('rv:')) {
             return $detector->setVersion('10.0');
         }
 
-        $searches = array('IEMobile', 'MSIE');
+        $searches = array('IEMobile', 'MSIE', 'rv\:');
 
         return $detector->detectVersion($searches);
     }
