@@ -28,16 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -46,9 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Hp
+class HpSlate10
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -59,9 +55,9 @@ class Hp
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'general HP Device',
+        'model_name'              => 'Slate 10',
         'model_extra_info'        => null,
-        'marketing_name'          => 'general HP Device',
+        'marketing_name'          => 'Slate 10',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -79,10 +75,10 @@ class Hp
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -98,34 +94,11 @@ class Hp
      */
     public function canHandle()
     {
-        $hpPhones = array(
-            'HP', 'Hp', 'P160U', 'TouchPad', 'hpwOS', 'hp-tablet', 'Pre/', 'Pixi/',
-            'Touchpad', 'Palm', 'Blazer', 'HPiPAQ', 'cm_tenderloin'
-        );
-
-        if (!$this->utils->checkIfContains($hpPhones)) {
+        if (!$this->utils->checkIfContains('HP Slate 10 HD')) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Hp');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Hp' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -135,7 +108,7 @@ class Hp
      */
     public function getWeight()
     {
-        return 49771;
+        return 3;
     }
 
     /**
@@ -171,20 +144,13 @@ class Hp
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\OsHandler
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $os = array(
-            new WebOs(),
-            new AndroidOs()
-        );
+        $handler = new AndroidOs();
+        $handler->setUseragent($this->_useragent);
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
+        return $handler;
     }
 }
