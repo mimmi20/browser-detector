@@ -28,12 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -44,9 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Asus
+class AsusFonePad7
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -57,9 +55,9 @@ class Asus
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'general Asus Device',
+        'model_name'              => 'K00E',
         'model_extra_info'        => null,
-        'marketing_name'          => 'general Asus Device',
+        'marketing_name'          => 'FonePad 7',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -77,10 +75,10 @@ class Asus
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
+        'resolution_width'        => 1280,
+        'resolution_height'       => 800,
+        'dual_orientation'        => true,
+        'colors'                  => 16777216,
 
         // sms
         'sms_enabled'             => true,
@@ -96,51 +94,11 @@ class Asus
      */
     public function canHandle()
     {
-        $asusPhones = array(
-            'Asus',
-            'Transformer',
-            'Slider SL101',
-            'eee_701',
-            'eeepc',
-            'Nexus 7',
-            'PadFone',
-            'ME301T',
-            'ME302C',
-            'ME371MG',
-            'ME173X',
-            'ME302KL',
-            'ME172V',
-            'K00E',
-            'ME372CG',
-        );
-
-        if (!$this->utils->checkIfContains($asusPhones)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('IdeaTab'))) {
+        if (!$this->utils->checkIfContains(array('K00E', 'ME372CG'))) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Asus');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Asus' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -150,7 +108,7 @@ class Asus
      */
     public function getWeight()
     {
-        return 182775;
+        return 3;
     }
 
     /**
