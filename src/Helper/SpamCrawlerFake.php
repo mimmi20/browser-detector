@@ -384,8 +384,12 @@ class SpamCrawlerFake
 
     public function isFakeWindows()
     {
+        if ($this->utils->checkIfContains('X11; MSIE')) {
+            return true;
+        }
+
         $doMatch = preg_match(
-            '/(Win|Windows )(31|3\.1|95|98|ME|2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->_useragent, $matches
+            '/(Win|Windows )(2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->_useragent, $matches
         );
         if ($doMatch && !$this->utils->checkIfContains('anonym', true)) {
             return true;
@@ -397,7 +401,7 @@ class SpamCrawlerFake
         );
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
-                || preg_match('/(Win|Windows )(ME|2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches);
+                || preg_match('/(Win|Windows )(2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches);
 
         if ($doMatch) {
             if ($this->utils->checkIfContains('anonym', true)) {
@@ -431,10 +435,6 @@ class SpamCrawlerFake
             if (!$doMatch) {
                 return true;
             }
-        }
-
-        if ($this->utils->checkIfContains('X11; MSIE')) {
-            return true;
         }
 
         return false;
