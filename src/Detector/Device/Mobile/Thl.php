@@ -28,10 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pomp;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -42,9 +44,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PompW88
+class Thl
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -55,9 +57,9 @@ class PompW88
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'W88',
+        'model_name'              => 'general THL Device',
         'model_extra_info'        => null,
-        'marketing_name'          => 'W88',
+        'marketing_name'          => 'general THL Device', // wurflkey: Thl_touch_ver1
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -75,10 +77,10 @@ class PompW88
         'rows'                    => null,
         'max_image_width'         => null,
         'max_image_height'        => null,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
+        'resolution_width'        => null,
+        'resolution_height'       => null,
+        'dual_orientation'        => null,
+        'colors'                  => null,
 
         // sms
         'sms_enabled'             => true,
@@ -94,11 +96,29 @@ class PompW88
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('POMP W88')) {
+        if (!$this->utils->checkIfContains(array('thl'), true)) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\DeviceHandler
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace(__NAMESPACE__ . '\\Thl');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Thl' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -128,7 +148,7 @@ class PompW88
      */
     public function getManufacturer()
     {
-        return new Company\Pomp();
+        return new Company\Thl();
     }
 
     /**
@@ -138,7 +158,7 @@ class PompW88
      */
     public function getBrand()
     {
-        return new Company\Pomp();
+        return new Company\Thl();
     }
 
     /**

@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pomp;
+namespace BrowserDetector\Detector\Device\Mobile\Thl;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PompW88
+class ThlW8
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class PompW88
         'wurflKey'                => null, // not in wurfl
 
         // device
-        'model_name'              => 'W88',
+        'model_name'              => 'W8',
         'model_extra_info'        => null,
-        'marketing_name'          => 'W88',
+        'marketing_name'          => 'W8',
         'has_qwerty_keyboard'     => true,
         'pointing_method'         => 'touchscreen',
 
@@ -94,7 +94,7 @@ class PompW88
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('POMP W88')) {
+        if (!$this->utils->checkIfContains('ThL W8')) {
             return false;
         }
 
@@ -128,7 +128,7 @@ class PompW88
      */
     public function getManufacturer()
     {
-        return new Company\Pomp();
+        return new Company\Thl();
     }
 
     /**
@@ -138,7 +138,7 @@ class PompW88
      */
     public function getBrand()
     {
-        return new Company\Pomp();
+        return new Company\Thl();
     }
 
     /**
