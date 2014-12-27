@@ -133,7 +133,7 @@ class MicrosoftInternetExplorer
             'blackberry',
             'webtv',
             'argclrint',
-            'msiecrawler',
+            'slimbrowser',
             // mobile IE
             'xblwp7',
             'zunewp7',
@@ -141,6 +141,7 @@ class MicrosoftInternetExplorer
             'htc_hd2',
             'gomezagent',
             // Fakes / Bots
+            'msiecrawler',
             'mac; mac os ',
             'bingpreview',
             'crystalsemanticsbot',
