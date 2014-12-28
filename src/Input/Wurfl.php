@@ -617,7 +617,7 @@ class Wurfl extends Core
 
                 $xhtmlLevel = null;
 
-                if ($apiDev || $apiBro) {
+                if ((null !== $device) && ($apiDev || $apiBro)) {
                     $xhtmlLevel = $device->getCapability('xhtml_support_level');
                 }
             }
