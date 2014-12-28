@@ -30,12 +30,12 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\Desktop\Chrome;
 use BrowserDetector\Detector\Browser\Desktop\Chromium;
 use BrowserDetector\Detector\Browser\Desktop\Firefox;
 use BrowserDetector\Detector\Browser\Desktop\Opera;
 use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
+use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;
 use BrowserDetector\Detector\Browser\Mobile\Dalvik;

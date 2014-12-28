@@ -1,8 +1,8 @@
 <?php
 namespace BrowserDetectorTest\Input;
 
-use BrowserDetector\Detector\Version;
 use BrowscapPHP\Browscap;
+use BrowserDetector\Detector\Version;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.

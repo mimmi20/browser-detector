@@ -31,12 +31,12 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\General\PlaystationBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 
 /**
  * MSIEAgentHandler

@@ -32,13 +32,13 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
-use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector

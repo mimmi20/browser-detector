@@ -27,9 +27,12 @@
 
 namespace BrowserDetector\Detector\Engine;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
 
 /**

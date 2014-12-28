@@ -30,9 +30,9 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
 use BrowserDetector\Detector\Browser\General\AndroidWebView;
 use BrowserDetector\Detector\Browser\General\Googlebot;
-use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;

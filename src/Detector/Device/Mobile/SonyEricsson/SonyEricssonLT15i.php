@@ -30,11 +30,15 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -143,6 +147,29 @@ class SonyEricssonLT15i
     public function getBrand()
     {
         return new Company\SonyEricsson();
+    }
+
+    /**
+     * detects properties who are depending on the device version or the user
+     * agent
+     *
+     * @return DeviceHandler
+     */
+    public function detectSpecialProperties()
+    {
+        if ($this->utils->checkIfContains(array('Build/4.1.'))) {
+            $this->setCapability(
+                'uaprof', 'http://wap.sonyericsson.com/UAprof/LT15iR411.xml'
+            );
+        }
+        /*
+        if ($this->utils->checkIfContains(array('Build/4.0.2'))) {
+            $this->setCapability(
+                'uaprof', 'http://wap.sonyericsson.com/UAprof/LT15iR402.xml'
+            );
+        }
+        */
+        return $this;
     }
 
     /**

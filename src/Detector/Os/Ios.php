@@ -30,12 +30,12 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\AppleMail;
 use BrowserDetector\Detector\Browser\General\BingPreview;
 use BrowserDetector\Detector\Browser\General\GoogleAdsbotMobile;
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\General\GoogleSearchAppliance;
-use BrowserDetector\Detector\Browser\General\AppleMail;
 use BrowserDetector\Detector\Browser\General\MsnBotMedia;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
 use BrowserDetector\Detector\Browser\Mobile\DarwinBrowser;
