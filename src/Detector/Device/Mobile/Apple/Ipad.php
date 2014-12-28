@@ -163,4 +163,80 @@ class Ipad
 
         return $chain->detect();
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipad
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        $this->setCapability('model_extra_info', $osVersion);
+
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('supports_java_applets', true);
+
+        if (3.2 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_subua32');
+        }
+
+        if (5.0 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub5');
+        }
+
+        if (5.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub51');
+        }
+
+        if (6.0 <= (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub6');
+        }
+
+        $osVersion = $os->detectVersion()->getVersion();
+
+        switch ($osVersion) {
+        case '3.1.3':
+            // $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
+            break;
+        case '3.2.2':
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub321');
+            break;
+        case '4.2.1':
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub421');
+            break;
+        case '4.3.0':
+            // $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
+            break;
+        case '4.3.1':
+            // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
+            break;
+        case '4.3.2':
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub432');
+            break;
+        case '4.3.3':
+            // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
+            break;
+        case '4.3.4':
+        case '4.3.5':
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub435');
+            break;
+        default:
+            // nothing to do here
+            break;
+        }
+
+        return $this;
+    }
 }

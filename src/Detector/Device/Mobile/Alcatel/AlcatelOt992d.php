@@ -153,4 +153,26 @@ class AlcatelOt992d
 
         return $handler;
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        // wurflkey: alcatel_ot992_ver1_subuad
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('bmp', true);
+
+        return $this;
+    }
 }

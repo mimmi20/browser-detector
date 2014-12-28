@@ -153,4 +153,29 @@ class NokiaN800
 
         return $handler;
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        if ($this->utils->checkIfContains(array('Series60/5.3'))) {
+            $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
+            $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');
+            $this->setCapability('colors', 16777216);
+            $engine->setCapability('image_inlining', true);
+        }
+
+        return $this;
+    }
 }

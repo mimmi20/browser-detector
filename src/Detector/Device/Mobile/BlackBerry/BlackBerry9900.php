@@ -153,4 +153,34 @@ class BlackBerry9900
 
         return $handler;
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if ('7.0' == $osVersion) {
+            $this->setCapability(
+                'uaprof',
+                'http://www.blackberry.net/go/mobile/profiles/uaprof/9900/7.0.0.rdf'
+            );
+            $this->setCapability('wurflKey', 'blackberry9900_ver1_sub_os7');
+        }
+
+        parent::detectDependProperties($browser, $engine, $os);
+
+        return $this;
+    }
 }

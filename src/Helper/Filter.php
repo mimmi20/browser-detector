@@ -39,7 +39,7 @@ namespace BrowserDetector\Helper;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 
-interface FilterInterface
+interface Filter
 {
     /**
      * The filter() method is used to classify devices based on patterns

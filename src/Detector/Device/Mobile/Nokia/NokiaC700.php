@@ -153,4 +153,34 @@ class NokiaC700
 
         return $handler;
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaC700
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $browserVersion = $browser->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (!$this->utils->checkIfContains(array('Series60/5.3'))) {
+            $this->setCapability('wurflKey', 'nokia_c7_00_ver1_subuaseries53');
+            // $this->setCapability('colors', 16777216);
+        } elseif (7.3 == (float)$browserVersion) {
+            $this->setCapability('wurflKey', 'nokia_c7_00_ver1_subbrowserng73');
+            $this->setCapability('colors', 16777216);
+        }
+
+        return $this;
+    }
 }

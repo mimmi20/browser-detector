@@ -153,4 +153,69 @@ class SonyEricssonST18iv
 
         return $handler;
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('bmp', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+        case 'Android Webkit':
+            switch ((float)$osVersion) {
+            case 4.0:
+                $this->setCapability('wurflKey', 'sonyericsson_st18i_ver1_suban40i');
+                break;
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        case 'Chrome':
+            $engine->setCapability('is_sencha_touch_ok', false);
+
+            switch ((float)$osVersion) {
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        default:
+            // nothing to do here
+            break;
+        }
+
+        return $this;
+    }
 }

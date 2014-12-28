@@ -82,6 +82,9 @@ class FirefoxOs
         $detector = new Version();
         $detector->setUserAgent($this->_useragent);
 
+        //$searches = array('Gecko');
+
+        //return $detector->detectVersion($searches);
         return $detector->setVersion('0.0');
     }
 

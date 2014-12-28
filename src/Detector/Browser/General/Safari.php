@@ -189,4 +189,65 @@ class Safari
 
         return $handler;
     }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\Safari
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+    ) {
+        if ($device->getDeviceType()->isMobile()) {
+            $engine->setCapability('xhtml_format_as_css_property', true);
+
+            if (!$device->getDeviceType()->isTablet()) {
+                $engine->setCapability('xhtml_send_sms_string', 'sms:');
+                $engine->setCapability('css_gradient', 'webkit');
+            }
+        } else {
+            $this->setCapability('rss_support', false);
+        }
+
+        parent::detectDependProperties($engine, $os, $device);
+
+        $osVersion = (float)$os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (!$device->getDeviceType()->isTablet()
+            && $osVersion >= 6.0
+        ) {
+            $engine->setCapability('xhtml_file_upload', 'supported'); //iPhone with iOS 6.0 and Safari 6.0
+        }
+
+        $browserVersion = $this->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if ((float)$browserVersion < 4.0) {
+            $engine->setCapability('jqm_grade', 'B');
+        }
+
+        $osname    = $os->getName();
+        $osVersion = (float)$os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if ('iOS' === $osname && 5.1 <= $osVersion) {
+            $engine->setCapability('jqm_grade', 'A');
+            $engine->setCapability('supports_java_applets', true);
+        }
+
+        if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
+            $engine->setCapability('jqm_grade', 'A');
+        }
+
+        return $this;
+    }
 }

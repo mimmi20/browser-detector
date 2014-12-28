@@ -771,8 +771,8 @@ class Result implements \Serializable
             && $renderedAs instanceof Result
             && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
         ) {
-            $propertyValue = $this->propertyToString($this->properties[$capabilityName]);
-            $propertyValue .= ' [' . $this->propertyToString($renderedAs->getCapability($capabilityName, false)) . ']';
+            $propertyValue = $this->_propertyToString($this->properties[$capabilityName]);
+            $propertyValue .= ' [' . $this->_propertyToString($renderedAs->getCapability($capabilityName, false)) . ']';
         }
 
         return $propertyValue;
@@ -785,7 +785,7 @@ class Result implements \Serializable
      *
      * @return string
      */
-    private function propertyToString($property)
+    private function _propertyToString($property)
     {
         if (null === $property) {
             $strProperty = '(NULL)';
@@ -1215,7 +1215,7 @@ class Result implements \Serializable
      */
     public function getDeviceVersion()
     {
-        return null;
+        return null; // $this->getCapability('mobile_browser', false);
     }
 
     /**

@@ -37,6 +37,9 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\DeviceHandler;
 
 /**
  * @category  BrowserDetector
@@ -163,6 +166,54 @@ class NokiaBrowser
         $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $engine->setCapability('multipart_support', true);
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('wml_1_2', true);
+        $engine->setCapability('wml_1_3', true);
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/xhtml+xml');
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_make_phone_call_string', 'wtai://wp/mc;');
+        $engine->setCapability('xhtml_send_mms_string', 'mmsto:');
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('xhtml_format_as_css_property', true);
+        $engine->setCapability('wbmp', true);
+        $engine->setCapability('epoc_bmp', true);
+        $engine->setCapability('transparent_png_alpha', true);
+        $engine->setCapability('tiff', true);
+        $engine->setCapability('max_url_length_bookmark', 255);
+        $engine->setCapability('max_url_length_cached_page', 128);
+        $engine->setCapability('max_url_length_in_requests', 255);
+        $engine->setCapability('max_url_length_homepage', 100);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'none');
+        $engine->setCapability('jqm_grade', 'B');
+        $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('image_inlining', false); // version 8.3
+        $engine->setCapability('canvas_support', 'none');
+        $engine->setCapability('css_border_image', 'none');
+        $engine->setCapability('css_rounded_corners', 'none');
+
+        return $this;
     }
 }
 
