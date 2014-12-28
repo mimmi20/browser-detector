@@ -81,7 +81,7 @@ class Avant
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('avant')) {
+        if (!$this->utils->checkIfContains('avant', true)) {
             return false;
         }
 
