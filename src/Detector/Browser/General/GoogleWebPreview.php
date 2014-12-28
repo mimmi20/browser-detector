@@ -32,9 +32,13 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -150,5 +154,30 @@ class GoogleWebPreview
         $handler->setUseragent($this->useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\AlcoholSearch
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $agent = str_ireplace('Google Web Preview', '', $this->useragent);
+
+        $detector = new UserAgent();
+        $detector->setAgent($agent);
+
+        $device->setRenderAs($detector->getBrowser());
+
+        return $this;
     }
 }

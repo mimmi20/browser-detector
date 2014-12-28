@@ -125,7 +125,7 @@ class AcerIconiaA511
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\FonePad();
     }
 
     /**
