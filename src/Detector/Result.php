@@ -1448,7 +1448,6 @@ class Result implements \Serializable
      * @param BrowserHandler                   $browser
      * @param EngineHandler                    $engine
      *
-     * @internal param array $capabilities An array of name/value pairs
      * @return Result
      */
     public function setDetectionResult(

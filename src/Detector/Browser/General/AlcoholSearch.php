@@ -135,7 +135,7 @@ class AlcoholSearch
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\AlcoholSearch
+     * @return \BrowserDetector\Detector\Browser\General\AlcoholSearch
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

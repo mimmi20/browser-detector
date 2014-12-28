@@ -36,6 +36,9 @@ use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
 
 /**
  * @category  BrowserDetector
