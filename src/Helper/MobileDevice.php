@@ -196,7 +196,9 @@ class MobileDevice
             return true;
         }
 
-        if ($this->utils->checkIfContains('Windows NT 6.2; ARM;')) {
+        if ($this->utils->checkIfContains(array('ARM;'))
+            && $this->utils->checkIfContains(array('Windows NT 6.2', 'Windows NT 6.3'))
+        ) {
             return true;
         }
 
