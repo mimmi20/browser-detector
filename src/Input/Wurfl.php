@@ -291,6 +291,17 @@ class Wurfl extends Core
                                 $apiBro = 'Windows Live Mail';
                                 $apiVer = '';
                                 break;
+                            case 'office 2007':
+                                $apiBro = 'Office';
+                                $apiVer = '2007';
+                                break;
+                            case 'microsoft office 2007':
+                                $apiBro = 'Office';
+                                $apiVer = '2007';
+                                break;
+                            case 'microsoft office':
+                                $apiBro = 'Office';
+                                break;
                             default:
                                 // nothing to do
                                 break;
@@ -304,6 +315,15 @@ class Wurfl extends Core
                     case 'microsoft mobile explorer':
                         $apiBro       = 'IEMobile';
                         $browserMaker = 'Microsoft';
+                        break;
+                    case 'microsoft office 2007':
+                        $browserMaker = 'Microsoft';
+                        $apiBro = 'Office';
+                        $apiVer = '2007';
+                        break;
+                    case 'microsoft office':
+                        $browserMaker = 'Microsoft';
+                        $apiBro = 'Office';
                         break;
                     case 'opera mobi':
                         $browserMaker = 'Opera Software ASA';
