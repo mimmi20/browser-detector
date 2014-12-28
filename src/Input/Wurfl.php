@@ -735,6 +735,10 @@ class Wurfl extends Core
             $deviceType = 'Mobile Device';
         }
 
+        if ($apiPhone && $deviceType === 'Tablet') {
+            $deviceType = 'FonePad';
+        }
+
         $result->setCapability('is_bot', $apiBot);
         $result->setCapability('is_smarttv', $apiTv);
         $result->setCapability('ux_full_desktop', $apiDesktop);
@@ -750,16 +754,16 @@ class Wurfl extends Core
         $result->setCapability('wurflKey', $apiKey);
         $result->setCapability('device_type', $mapper->mapDeviceType($deviceType));
 
-        if (($deviceType == 'Mobile Phone' || $deviceType == 'Tablet' || $deviceType == 'FonePad' || $deviceType == 'Feature Phone')
+        if (in_array($deviceType, array('Mobile Phone', 'Tablet', 'FonePad', 'Feature Phone', 'Mobile Device'))
             && 'true' === $device->getCapability('dual_orientation')
         ) {
             $width  = (int)$device->getCapability('resolution_width');
             $height = (int)$device->getCapability('resolution_height');
 
-            if ($deviceType == 'Mobile Phone' || $deviceType == 'MobilePhone' || $deviceType == 'Feature Phone') {
+            if (in_array($deviceType, array('Mobile Phone', 'Feature Phone', 'Mobile Device'))) {
                 $result->setCapability('resolution_width', min($height, $width));
                 $result->setCapability('resolution_height', max($height, $width));
-            } elseif ($deviceType == 'Tablet' || $deviceType == 'FonePad') {
+            } elseif (in_array($deviceType, array('Tablet', 'FonePad'))) {
                 $result->setCapability('resolution_width', max($height, $width));
                 $result->setCapability('resolution_height', min($height, $width));
             } else {

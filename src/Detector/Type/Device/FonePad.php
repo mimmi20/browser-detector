@@ -43,7 +43,7 @@ class FonePad extends AbstractType implements TypeInterface
      *
      * @var string
      */
-    protected $name = 'FonePad';
+    protected $name = 'Tablet';
 
     /**
      * the Device is a mobile device

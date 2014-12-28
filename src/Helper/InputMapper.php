@@ -556,6 +556,8 @@ class InputMapper
                 $deviceType = new DeviceType\Desktop();
                 break;
             case 'fonepad':
+                $deviceType = new DeviceType\FonePad();
+                break;
             case 'tablet':
                 $deviceType = new DeviceType\Tablet();
                 break;
