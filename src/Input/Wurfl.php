@@ -325,6 +325,10 @@ class Wurfl extends Core
                         $browserMaker = 'Microsoft';
                         $apiBro = 'Office';
                         break;
+                    case 'microsoft outlook':
+                        $browserMaker = 'Microsoft';
+                        $apiBro = 'Outlook';
+                        break;
                     case 'opera mobi':
                         $browserMaker = 'Opera Software ASA';
                         $apiBro       = 'Opera Mobile';
@@ -574,8 +578,14 @@ class Wurfl extends Core
 
                         switch (strtolower($apiVer)) {
                             case 'updater':
-                                $apiBro = 'Java Standard Library';
-                                $apiVer = '';
+                                $apiBro       = 'Java Standard Library';
+                                $apiVer       = '';
+                                $browserMaker = 'Oracle';
+                                $apiDesktop   = false;
+                                $apiBot       = true;
+                                $apiTv        = false;
+                                $apiPhone     = false;
+                                $device       = null;
                                 break;
                             default:
                                 // nothing to do
