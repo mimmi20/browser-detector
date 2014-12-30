@@ -78,7 +78,25 @@ abstract class BrowserHandler
      *
      * @var array
      */
-    protected $properties = array();
+    protected $properties = array(
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
+
+        // product info
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+
+        // pdf
+        'pdf_support'                  => true,
+
+        // bugs
+        'empty_option_value_support'   => null,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+
+        // rss
+        'rss_support'                  => false,
+    );
 
     /**
      * Class Constructor
@@ -88,26 +106,6 @@ abstract class BrowserHandler
     public function __construct()
     {
         $this->utils = new Utils();
-
-        $this->properties = array(
-            // browser
-            'mobile_browser_modus'         => null, // not in wurfl
-
-            // product info
-            'can_skip_aligned_link_row'    => false,
-            'device_claims_web_support'    => false,
-
-            // pdf
-            'pdf_support'                  => true,
-
-            // bugs
-            'empty_option_value_support'   => null,
-            'basic_authentication_support' => true,
-            'post_method_support'          => true,
-
-            // rss
-            'rss_support'                  => false,
-        );
     }
 
     /**

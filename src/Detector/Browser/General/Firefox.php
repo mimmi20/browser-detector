@@ -272,6 +272,7 @@ class Firefox
         
         if ($version >= 16) {
             $engine->setCapability('css_gradient', 'css3');
+            $engine->setCapability('xhtml_table_support', false);
         }
         
         if ($version >= 33) {

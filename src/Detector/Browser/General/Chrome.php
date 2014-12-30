@@ -247,6 +247,17 @@ class Chrome
             $engine->setCapability('xhtml_allows_disabled_form_elements', true);
             $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         }
+        
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        
+        if ($version >= 22) {
+            $engine->setCapability('css_gradient', 'webkit');
+            $engine->setCapability('xhtml_make_phone_call_string', 'none');
+            $engine->setCapability('xhtml_table_support', false);
+            $engine->setCapability('css_gradient_linear', 'none');
+            $engine->setCapability('css_border_image', 'none');
+            $engine->setCapability('css_rounded_corners', 'none');
+        }
 
         return $this;
     }
