@@ -276,6 +276,20 @@ class Android
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
         $engine->setCapability('xhtml_supports_invisible_text', false);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
+        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+        $engine->setCapability('chtml_table_support', false);
+        $engine->setCapability('xhtml_select_as_radiobutton', false);
+        $engine->setCapability('xhtml_select_as_dropdown', false);
+        $engine->setCapability('xhtml_select_as_popup', false);
+        $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_supports_table_for_layout', true);
+        $engine->setCapability('canvas_support', 'full');
+        $engine->setCapability('viewport_width', 'device_width_token');
+        $engine->setCapability('viewport_supported', true);
+        $engine->setCapability('viewport_userscalable', 'no');
+        $engine->setCapability('css_gradient', 'none');
+        $engine->setCapability('css_gradient_linear', 'none');
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

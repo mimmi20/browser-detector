@@ -208,6 +208,10 @@ class Ipad
             $this->setCapability('wurflKey', 'apple_ipad_ver1_sub6');
         }
 
+        if (7.1 <= (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub71');
+        }
+
         $osVersion = $os->detectVersion()->getVersion();
 
         switch ($osVersion) {

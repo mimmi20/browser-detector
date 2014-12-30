@@ -235,6 +235,14 @@ class Iphone
             $this->setCapability('resolution_height', 480);
         }
 
+        if (7.0 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver7');
+        }
+
+        if (7.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver7_1');
+        }
+
         $browserVersion = $browser->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
