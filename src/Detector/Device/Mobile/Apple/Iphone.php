@@ -231,6 +231,8 @@ class Iphone
 
         if (6.0 <= (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_iphone_ver6');
+            $this->setCapability('resolution_width', 320);
+            $this->setCapability('resolution_height', 480);
         }
 
         $browserVersion = $browser->detectVersion()->getVersion(

@@ -269,6 +269,12 @@ class Safari
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
             $engine->setCapability('jqm_grade', 'A');
+            $engine->setCapability('xhtml_make_phone_call_string', 'none');
+            $engine->setCapability('xhtml_table_support', false);
+            $engine->setCapability('css_gradient', 'none');
+            $engine->setCapability('css_gradient_linear', 'none');
+            $engine->setCapability('css_border_image', 'none');
+            $engine->setCapability('css_rounded_corners', 'none');
         }
 
         return $this;
