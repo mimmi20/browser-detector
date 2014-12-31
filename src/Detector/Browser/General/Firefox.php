@@ -291,7 +291,7 @@ class Firefox
         
         switch ($browserVersion) {
             case 3.5:
-                $this->setCapability('wurflKey', 'firefox_3_5';
+                $this->setCapability('wurflKey', 'firefox_3_5');
                 break;
             default:
                 $this->setCapability('wurflKey', 'firefox_' . (int) $browserVersion . '_0');
