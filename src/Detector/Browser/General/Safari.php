@@ -265,6 +265,8 @@ class Safari
             $engine->setCapability('viewport_userscalable', 'no');
             $engine->setCapability('css_gradient', 'none');
             $engine->setCapability('css_gradient_linear', 'none');
+            $engine->setCapability('max_url_length_in_requests', 512);
+            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c');
         }
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {

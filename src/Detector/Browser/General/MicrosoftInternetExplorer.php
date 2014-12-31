@@ -347,6 +347,7 @@ class MicrosoftInternetExplorer
         $engine->setCapability('image_inlining', false);
         $engine->setCapability('css_spriting', false);
         $engine->setCapability('jqm_grade', 'C');
+        $engine->setCapability('xhtml_table_support', false);
 
         $browserVersion = (int)$browserVersion->getVersion(Version::MAJORONLY);
 
@@ -371,12 +372,11 @@ class MicrosoftInternetExplorer
                 $engine->setCapability('image_inlining', true); //wurflkey: msie_9
                 $engine->setCapability('css_spriting', true);
                 $engine->setCapability('svgt_1_1', true);
-                $engine->setCapability('xhtml_table_support', false);
                 break;
             case 8:
                 $engine->setCapability('jqm_grade', 'A');
                 $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('image_inlining', true);
                 $engine->setCapability('css_spriting', true);
                 break;
             case 7:
