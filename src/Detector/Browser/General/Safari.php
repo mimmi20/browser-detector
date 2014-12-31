@@ -265,7 +265,6 @@ class Safari
             $engine->setCapability('viewport_userscalable', 'no');
             $engine->setCapability('css_gradient', 'none');
             $engine->setCapability('css_gradient_linear', 'none');
-            $this->setCapability('rss_support', true);
         }
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
