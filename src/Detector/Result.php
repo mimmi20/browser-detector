@@ -140,7 +140,7 @@ class Result implements \Serializable
         'controlcap_is_app'                                 => null,
         'controlcap_is_mobile'                              => null,
         'controlcap_is_robot'                               => null,
-        'controlcap_is_MobilePhone'                          => null,
+        'controlcap_is_mobilephone'                         => null,
         'controlcap_is_ios'                                 => null,
         'controlcap_is_android'                             => null,
         'controlcap_is_windows_phone'                       => null,
@@ -1480,7 +1480,11 @@ class Result implements \Serializable
                     $value = get_class($os);
                     break;
                 case 'wurflKey':
-                    $value = $device->getCapability('wurflKey');
+                    if ($device->getDeviceType()->isMobile()) {
+                        $value = $device->getCapability('wurflKey');
+                    } else {
+                        $value = $browser->getCapability('wurflKey');
+                    }
                     break;
                 case 'manufacturer_name':
                     $value = $device->getManufacturer();

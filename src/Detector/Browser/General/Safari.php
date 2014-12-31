@@ -56,6 +56,7 @@ class Safari
      */
     protected $properties = array(
         // browser
+        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -264,7 +265,7 @@ class Safari
             $engine->setCapability('viewport_userscalable', 'no');
             $engine->setCapability('css_gradient', 'none');
             $engine->setCapability('css_gradient_linear', 'none');
-            $engine->setCapability('rss_support', true);
+            $this->setCapability('rss_support', true);
         }
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {

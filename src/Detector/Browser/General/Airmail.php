@@ -52,6 +52,7 @@ class Airmail
      */
     protected $properties = array(
         // browser
+        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info

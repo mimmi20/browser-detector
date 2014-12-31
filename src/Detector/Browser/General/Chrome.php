@@ -56,6 +56,7 @@ class Chrome
      */
     protected $properties = array(
         // browser
+        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -266,6 +267,8 @@ class Chrome
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');
         }
+        
+        $this->setCapability('wurflKey', 'google_chrome_' . (int) $version);
 
         return $this;
     }

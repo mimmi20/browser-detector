@@ -76,6 +76,7 @@ class MicrosoftInternetExplorer
      */
     protected $properties = array(
         // browser
+        'wurflKey'                     => 'msie', // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -370,6 +371,7 @@ class MicrosoftInternetExplorer
                 $engine->setCapability('image_inlining', true); //wurflkey: msie_9
                 $engine->setCapability('css_spriting', true);
                 $engine->setCapability('svgt_1_1', true);
+                $engine->setCapability('xhtml_table_support', false);
                 break;
             case 8:
                 $engine->setCapability('jqm_grade', 'A');
@@ -391,6 +393,8 @@ class MicrosoftInternetExplorer
                 // nothing to do here
                 break;
         }
+        
+        $this->setCapability('wurflKey', 'msie_' . (int) $browserVersion);
 
         return $this;
     }
