@@ -257,7 +257,7 @@ class Chrome
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
-        });
+        }
         
         if ($version >= 38) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
