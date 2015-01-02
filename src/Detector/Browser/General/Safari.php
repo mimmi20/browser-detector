@@ -209,10 +209,10 @@ class Safari
     ) {
         if ($device->getDeviceType()->isMobile()) {
             $engine->setCapability('xhtml_format_as_css_property', true);
+            $engine->setCapability('css_gradient', 'webkit');
 
             if (!$device->getDeviceType()->isTablet()) {
                 $engine->setCapability('xhtml_send_sms_string', 'sms:');
-                $engine->setCapability('css_gradient', 'webkit');
             }
         } else {
             $this->setCapability('rss_support', false);
@@ -266,7 +266,7 @@ class Safari
             $engine->setCapability('css_gradient', 'none');
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('max_url_length_in_requests', 512);
-            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c');
+            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
         }
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
@@ -277,6 +277,8 @@ class Safari
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
+            
+            $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_mac');
         }
 
         return $this;

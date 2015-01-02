@@ -32,8 +32,11 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -184,5 +187,28 @@ class Opera
 
         $engine->setUseragent($this->useragent);
         return $engine;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
+     */
+    public function detectDependProperties(
+        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+        
+        $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        $this->setCapability('wurflKey', 'opera_' . (int) $browserVersion);
+        $engine->setCapability('xhtml_table_support', false);
+
+        return $this;
     }
 }

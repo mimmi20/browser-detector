@@ -73,7 +73,7 @@ class SamsungGti9100
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 56,
+        'physical_screen_width'   => 57, // wurflkey: samsung_gt_i9100_ver1_suban40rom
         'physical_screen_height'  => 94,
         'columns'                 => 25,
         'rows'                    => 21,
@@ -180,6 +180,7 @@ class SamsungGti9100
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('svgt_1_1', false);
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

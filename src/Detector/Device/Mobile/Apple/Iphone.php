@@ -231,8 +231,6 @@ class Iphone
 
         if (6.0 <= (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_iphone_ver6');
-            $this->setCapability('resolution_width', 320);
-            $this->setCapability('resolution_height', 480);
         }
 
         if (7.0 == (float)$osVersion) {
@@ -249,6 +247,9 @@ class Iphone
 
         if (6.0 <= (float)$browserVersion) {
             $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('css_gradient_linear', 'webkit');
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
         }
 
         $osVersion = $os->detectVersion()->getVersion();

@@ -217,7 +217,7 @@ class Iceweasel
         
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
         
-        if ($version >= 15) {
+        if ($version >= 14) {
             $engine->setCapability('css_gradient', 'mozilla');
         }
         
@@ -225,7 +225,7 @@ class Iceweasel
             $engine->setCapability('css_gradient', 'css3');
         }
         
-        if ($version >= 33) {
+        if ($version >= 32) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');
