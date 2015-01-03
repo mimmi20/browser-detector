@@ -188,6 +188,7 @@ class SamsungGti8190
             switch ((float)$osVersion) {
             case 4.1:
                 $this->setCapability('wurflKey', 'samsung_gt_i8190_ver1_suban41');
+                $engine->setCapability('xhtml_can_embed_video', 'none');
                 break;
             case 2.1:
             case 2.2:
