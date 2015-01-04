@@ -262,13 +262,13 @@ class Chrome
             $engine->setCapability('css_rounded_corners', 'none');
         }
         
-        if ($version >= 30) {
+        if ($version >= 26) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
             $engine->setCapability('css_gradient', 'css3');
             $engine->setCapability('svgt_1_1', true);
         }
         
-        if ($version >= 38) {
+        if ($version >= 31) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');

@@ -273,7 +273,7 @@ class Firefox
         
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
         
-        if ($version >= 14) {
+        if ($version >= 12) {
             $engine->setCapability('css_gradient', 'mozilla');
         }
         
@@ -281,7 +281,7 @@ class Firefox
             $engine->setCapability('css_gradient', 'css3');
         }
         
-        if ($version >= 32) {
+        if ($version >= 31) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');

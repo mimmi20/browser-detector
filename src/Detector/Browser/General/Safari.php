@@ -267,6 +267,10 @@ class Safari
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('max_url_length_in_requests', 512);
             $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+
+            if ((float)$browserVersion >= 5.1) {
+                $engine->setCapability('css_gradient_linear', 'webkit');
+            }
         }
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
