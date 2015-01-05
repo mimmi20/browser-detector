@@ -174,6 +174,7 @@ class SamsungGts5830i
 
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }
