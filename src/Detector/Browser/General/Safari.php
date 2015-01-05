@@ -242,31 +242,37 @@ class Safari
         $osVersion = (float)$os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
+        
+        $engine->setCapability('chtml_table_support', false);
 
-        if ('iOS' === $osname && 5.1 <= $osVersion) {
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('supports_java_applets', true);
-            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-            $engine->setCapability('html_wi_imode_compact_generic', true);
-            $engine->setCapability('chtml_table_support', false);
-            $engine->setCapability('xhtml_select_as_radiobutton', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', false);
-            $engine->setCapability('xhtml_select_as_dropdown', false);
-            $engine->setCapability('xhtml_supports_forms_in_table', false);
-            $engine->setCapability('xhtml_select_as_popup', false);
-            $engine->setCapability('xhtml_file_upload', 'not_supported');
-            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
-            $engine->setCapability('xhtml_can_embed_video', 'none');
-            $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
-            $engine->setCapability('xhtml_supports_table_for_layout', true);
-            $engine->setCapability('canvas_support', 'full');
-            $engine->setCapability('viewport_width', 'device_width_token');
-            $engine->setCapability('viewport_supported', true);
-            $engine->setCapability('viewport_userscalable', 'no');
-            $engine->setCapability('css_gradient', 'none');
-            $engine->setCapability('css_gradient_linear', 'none');
-            $engine->setCapability('max_url_length_in_requests', 512);
-            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+        if ('iOS' === $osname) {
+            if ($osVersion >= 4.3) {
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('html_wi_imode_compact_generic', true);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_supports_forms_in_table', false);
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_file_upload', 'not_supported');
+                $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                $engine->setCapability('xhtml_can_embed_video', 'none');
+                $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
+                $engine->setCapability('xhtml_supports_table_for_layout', true);
+                $engine->setCapability('max_url_length_in_requests', 512);
+                $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+                $engine->setCapability('canvas_support', 'full');
+                $engine->setCapability('viewport_width', 'device_width_token');
+                $engine->setCapability('viewport_supported', true);
+                $engine->setCapability('viewport_userscalable', 'no');
+                $engine->setCapability('css_gradient', 'none');
+                $engine->setCapability('css_gradient_linear', 'none');
+            }
+            
+            if ($osVersion >= 5.1) {
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('supports_java_applets', true);
+            }
 
             if ((float)$browserVersion >= 5.1) {
                 $engine->setCapability('css_gradient_linear', 'webkit');
@@ -283,6 +289,18 @@ class Safari
             $engine->setCapability('css_rounded_corners', 'none');
             
             $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_mac');
+        }
+
+        if ('Windows' === $osname && 10.0 <= $osVersion) {
+            $engine->setCapability('jqm_grade', 'A');
+            $engine->setCapability('xhtml_make_phone_call_string', 'none');
+            $engine->setCapability('xhtml_table_support', false);
+            $engine->setCapability('css_gradient', 'none');
+            $engine->setCapability('css_gradient_linear', 'none');
+            $engine->setCapability('css_border_image', 'none');
+            $engine->setCapability('css_rounded_corners', 'none');
+            
+            $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_windows');
         }
 
         return $this;
