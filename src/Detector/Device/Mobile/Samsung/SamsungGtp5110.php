@@ -184,6 +184,10 @@ class SamsungGtp5110
         switch ($browser->getName()) {
         case 'Android Webkit':
             switch ((float)$osVersion) {
+            case 4.2:
+                $this->setCapability('wurflKey', 'samsung_gt_p5100_ver1_suban42p5110');
+                $this->setCapability('max_image_width', 1280);
+                break;
             case 2.1:
             case 2.2:
             case 2.3:
@@ -191,7 +195,6 @@ class SamsungGtp5110
             case 3.2:
             case 4.0:
             case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;

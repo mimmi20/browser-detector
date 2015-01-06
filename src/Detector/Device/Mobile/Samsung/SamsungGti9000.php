@@ -75,8 +75,8 @@ class SamsungGti9000
         // display
         'physical_screen_width'   => 53,
         'physical_screen_height'  => 88,
-        'columns'                 => 15,
-        'rows'                    => 12,
+        'columns'                 => 60,
+        'rows'                    => 40,
         'max_image_width'         => 320,
         'max_image_height'        => 452,
         'resolution_width'        => 480,
@@ -175,6 +175,7 @@ class SamsungGti9000
 
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('svgt_1_1', false);
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

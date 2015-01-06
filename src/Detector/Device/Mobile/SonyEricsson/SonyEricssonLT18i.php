@@ -180,6 +180,7 @@ class SonyEricssonLT18i
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('svgt_1_1', false);
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

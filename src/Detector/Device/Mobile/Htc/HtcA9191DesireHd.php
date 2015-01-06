@@ -88,7 +88,7 @@ class HtcA9191DesireHd
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -174,6 +174,7 @@ class HtcA9191DesireHd
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('svgt_1_1', false);
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

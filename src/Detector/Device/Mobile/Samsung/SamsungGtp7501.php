@@ -72,7 +72,7 @@ class SamsungGtp7501
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 217,
+        'physical_screen_width'   => 218,
         'physical_screen_height'  => 136,
         'columns'                 => 25,
         'rows'                    => 21,

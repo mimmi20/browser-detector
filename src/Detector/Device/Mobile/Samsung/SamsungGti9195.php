@@ -73,12 +73,12 @@ class SamsungGti9195
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
+        'physical_screen_width'   => 54,
+        'physical_screen_height'  => 96,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 360,
+        'max_image_height'        => 400,
         'resolution_width'        => 540,
         'resolution_height'       => 960,
         'dual_orientation'        => true,
@@ -88,7 +88,7 @@ class SamsungGti9195
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => false,
+        'nfc_support'             => true,
     );
 
     /**
@@ -180,6 +180,7 @@ class SamsungGti9195
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
         $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('svgt_1_1', false);
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
@@ -212,11 +213,25 @@ class SamsungGti9195
             }
             break;
         case 'Chrome':
+        case 'Android WebView':
             $engine->setCapability('is_sencha_touch_ok', false);
+            $engine->setCapability('html_wi_imode_compact_generic', false);
+            $engine->setCapability('xhtml_avoid_accesskeys', true);
+            $engine->setCapability('xhtml_supports_forms_in_table', true);
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+            $engine->setCapability('gif_animated', false);
+            $engine->setCapability('svgt_1_1', true);
+            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
 
             switch ((float)$osVersion) {
             case 4.0:
                 $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40chrome');
+                break;
+            case 4.2:
+                $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_subua9195_subuachrome');
                 break;
             case 2.1:
             case 2.2:
@@ -224,7 +239,6 @@ class SamsungGti9195
             case 3.1:
             case 3.2:
             case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
