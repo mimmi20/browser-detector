@@ -77,7 +77,7 @@ class SamsungGtn7100
         'physical_screen_height'  => 122,
         'columns'                 => 60,
         'rows'                    => 40,
-        'max_image_width'         => 320,
+        'max_image_width'         => 360,
         'max_image_height'        => 400,
         'resolution_width'        => 720,
         'resolution_height'       => 1280,
@@ -173,7 +173,7 @@ class SamsungGtn7100
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('xhtml_can_embed_video', 'none');
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

@@ -177,6 +177,7 @@ class SamsungGti8160
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }
