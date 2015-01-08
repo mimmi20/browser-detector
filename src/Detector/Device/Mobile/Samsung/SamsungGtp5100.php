@@ -88,7 +88,7 @@ class SamsungGtp5100
         'sms_enabled'             => true, // wurflkey: samsung_gt_p5100_ver1
 
         // chips
-        'nfc_support'             => true, // wurflkey: samsung_gt_p5100_ver1
+        'nfc_support'             => false, // wurflkey: samsung_gt_p5100_ver1
     );
 
     /**

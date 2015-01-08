@@ -159,18 +159,28 @@ class MicrosoftOffice
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
+        return $detector->setVersion($this->mapVersion($this->detectInternalVersion()));
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string|null
+     */
+    protected function detectInternalVersion()
+    {
         $doMatch = preg_match(
             '/MSOffice ([\d\.]+)/', $this->useragent, $matches
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->mapVersion($matches[1]));
+            return $matches[1];
         }
 
         $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return $detector->setVersion($this->mapVersion($matches[1]));
+            return $matches[1];
         }
 
         $doMatch = preg_match(
@@ -178,7 +188,7 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->mapVersion($matches[1]));
+            return $matches[1];
         }
 
         $doMatch = preg_match(
@@ -186,10 +196,10 @@ class MicrosoftOffice
         );
 
         if ($doMatch) {
-            return $detector->setVersion($this->mapVersion($matches[1]));
+            return $matches[1];
         }
 
-        return $detector->setVersion('');
+        return null;
     }
 
     protected function mapVersion($version)
@@ -255,6 +265,25 @@ class MicrosoftOffice
         $engine->setCapability('xhtml_supports_iframe', 'none');
         $engine->setCapability('cookie_support', false);
         $engine->setCapability('ajax_support_javascript', false);
+        
+        $browserVersion = (int)$this->detectInternalVersion();
+
+        switch ($browserVersion) {
+            case 12:
+                $engine->setCapability('xhtml_supports_iframe', 'full');
+                $engine->setCapability('cookie_support', true);
+                $engine->setCapability('xhtml_table_support', false);
+                $engine->setCapability('svgt_1_1', true);
+                $engine->setCapability('ajax_support_javascript', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        
+        $this->setCapability('wurflKey', 'ms_office_subua' . $browserVersion);
 
         return $this;
     }

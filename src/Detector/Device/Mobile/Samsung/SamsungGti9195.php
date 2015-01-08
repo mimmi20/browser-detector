@@ -223,8 +223,6 @@ class SamsungGti9195
             $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
             $engine->setCapability('gif_animated', false);
             $engine->setCapability('svgt_1_1', true);
-            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
 
             switch ((float)$osVersion) {
             case 4.0:
@@ -232,6 +230,9 @@ class SamsungGti9195
                 break;
             case 4.2:
                 $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_subua9195_subuachrome');
+                break;
+            case 4.4:
+                $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_suban44i9195');
                 break;
             case 2.1:
             case 2.2:

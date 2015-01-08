@@ -394,7 +394,7 @@ class MicrosoftInternetExplorer
                 break;
         }
         
-        $this->setCapability('wurflKey', 'msie_' . (int) $browserVersion);
+        $this->setCapability('wurflKey', 'msie_' . $browserVersion);
 
         return $this;
     }

@@ -72,12 +72,12 @@ class SamsungGts5360
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
+        'physical_screen_width'   => 46,
+        'physical_screen_height'  => 61,
         'columns'                 => 60,
         'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
+        'max_image_width'         => 240,
+        'max_image_height'        => 320,
         'resolution_width'        => 240,
         'resolution_height'       => 320,
         'dual_orientation'        => true,
@@ -87,7 +87,7 @@ class SamsungGts5360
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -173,6 +173,7 @@ class SamsungGts5360
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }

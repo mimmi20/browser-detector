@@ -87,7 +87,7 @@ class NokiaLumia800
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -171,6 +171,11 @@ class NokiaLumia800
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+        $engine->setCapability('canvas_support', 'full');
 
         return $this;
     }

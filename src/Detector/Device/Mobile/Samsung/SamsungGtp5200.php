@@ -30,10 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -52,7 +55,7 @@ class SamsungGtp5200
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'samsung_gt_p5200_ver1', // not in wurfl
 
         // device
         'model_name'              => 'GT-P5200',
@@ -69,19 +72,19 @@ class SamsungGtp5200
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
+        'physical_screen_width'   => 136,
+        'physical_screen_height'  => 218,
+        'columns'                 => 21,
+        'rows'                    => 25,
+        'max_image_width'         => 320,
+        'max_image_height'        => 400,
         'resolution_width'        => 1280,
         'resolution_height'       => 800,
         'dual_orientation'        => true,
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => false,
+        'sms_enabled'             => true,
 
         // chips
         'nfc_support'             => false,
@@ -152,5 +155,26 @@ class SamsungGtp5200
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+
+        return $this;
     }
 }
