@@ -72,8 +72,8 @@ class SamsungGti8150
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
+        'physical_screen_width'   => 49,
+        'physical_screen_height'  => 81,
         'columns'                 => 25,
         'rows'                    => 21,
         'max_image_width'         => 320,
@@ -87,7 +87,7 @@ class SamsungGti8150
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -173,6 +173,7 @@ class SamsungGti8150
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }

@@ -87,7 +87,7 @@ class HtcS510eDesireS
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -175,6 +175,7 @@ class HtcS510eDesireS
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }

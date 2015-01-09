@@ -78,7 +78,7 @@ class HtcOneS
         'physical_screen_height'  => 96,
         'columns'                 => 25,
         'rows'                    => 21,
-        'max_image_width'         => 320,
+        'max_image_width'         => 360,
         'max_image_height'        => 400,
         'resolution_width'        => 540,
         'resolution_height'       => 960,
@@ -89,7 +89,7 @@ class HtcOneS
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -189,8 +189,8 @@ class HtcOneS
         case 'Android Webkit':
             switch ((float)$osVersion) {
             case 4.0:
-                $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore');
-                break;
+            //    $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore');
+            //    break;
             case 2.1:
             case 2.2:
             case 2.3:

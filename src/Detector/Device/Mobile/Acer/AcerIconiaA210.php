@@ -189,6 +189,12 @@ class AcerIconiaA210
     public function detectDependProperties(
         BrowserHandler $browser, EngineHandler $engine, OsHandler $os
     ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('bmp', true);
+
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
         );
@@ -199,11 +205,52 @@ class AcerIconiaA210
             $this->setCapability('uaprof', 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml');
         }
 
-        parent::detectDependProperties($browser, $engine, $os);
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
 
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('bmp', true);
+        switch ($browser->getName()) {
+        case 'Android Webkit':
+            switch ((float)$osVersion) {
+            case 4.1:
+                $this->setCapability('wurflKey', 'acer_iconia_tab_a210_ver1_suban41');
+                $this->setCapability('physical_screen_width', 218);
+                $this->setCapability('physical_screen_height', 136);
+                $this->setCapability('max_image_width', 400);
+                $this->setCapability('max_image_height', 320);
+                break;
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        case 'Chrome':
+        case 'Android WebView':
+            switch ((float)$osVersion) {
+            case 4.1:
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        default:
+            // nothing to do here
+            break;
+        }
 
         return $this;
     }

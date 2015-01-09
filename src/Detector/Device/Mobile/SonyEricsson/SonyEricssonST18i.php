@@ -88,7 +88,7 @@ class SonyEricssonST18i
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -179,6 +179,7 @@ class SonyEricssonST18i
 
         $engine->setCapability('bmp', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

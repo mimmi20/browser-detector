@@ -287,6 +287,10 @@ class Firefox
             $engine->setCapability('css_rounded_corners', 'css3');
         }
         
+        if ($version >= 34) 
+            $engine->setCapability('svgt_1_1', false);
+        }
+        
         $browserVersion = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
         
         switch ($browserVersion) {

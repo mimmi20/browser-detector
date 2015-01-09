@@ -72,8 +72,8 @@ class Lgp970
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
+        'physical_screen_width'   => 53,
+        'physical_screen_height'  => 88,
         'columns'                 => 60,
         'rows'                    => 40,
         'max_image_width'         => 320,
@@ -87,7 +87,7 @@ class Lgp970
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -173,6 +173,7 @@ class Lgp970
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }

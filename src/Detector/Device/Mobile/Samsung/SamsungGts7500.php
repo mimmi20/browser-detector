@@ -87,7 +87,7 @@ class SamsungGts7500
         'sms_enabled'             => true,
 
         // chips
-        'nfc_support'             => true,
+        'nfc_support'             => false,
     );
 
     /**
@@ -173,6 +173,7 @@ class SamsungGts7500
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }

@@ -88,7 +88,7 @@ class SamsungGtp1000
         'sms_enabled'             => true, // wurflkey: samsung_galaxy_tab_ver1
 
         // chips
-        'nfc_support'             => true, // wurflkey: samsung_galaxy_tab_ver1
+        'nfc_support'             => false, // wurflkey: samsung_galaxy_tab_ver1
     );
 
     /**
@@ -187,6 +187,7 @@ class SamsungGtp1000
 
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('svgt_1_1', false);
 
         return $this;
     }
