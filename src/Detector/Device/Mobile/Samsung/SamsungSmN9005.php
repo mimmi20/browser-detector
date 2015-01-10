@@ -30,10 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -52,7 +55,7 @@ class SamsungSmN9005
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'samsung_sm_n900_ver1_suban44n9005', // not in wurfl
 
         // device
         'model_name'              => 'SM-N9005',
@@ -69,12 +72,12 @@ class SamsungSmN9005
         'unique'                  => true,
 
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
+        'physical_screen_width'   => 71,
+        'physical_screen_height'  => 127,
+        'columns'                 => 25,
+        'rows'                    => 21,
+        'max_image_width'         => 320,
+        'max_image_height'        => 400,
         'resolution_width'        => 1080,
         'resolution_height'       => 1920,
         'dual_orientation'        => true,
@@ -152,5 +155,75 @@ class SamsungSmN9005
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtml_supports_forms_in_table', true);
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('svgt_1_1', false);
+        $engine->setCapability('is_sencha_touch_ok', false);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+        case 'Android Webkit':
+            switch ((float)$osVersion) {
+            case 4.4:
+                $this->setCapability('wurflKey', 'samsung_sm_n900_ver1_suban44n9005');
+                break;
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        case 'Chrome':
+        case 'Android WebView':
+            switch ((float)$osVersion) {
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        default:
+            // nothing to do here
+            break;
+        }
+
+        return $this;
     }
 }
