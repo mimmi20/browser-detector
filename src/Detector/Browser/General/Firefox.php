@@ -238,7 +238,7 @@ class Firefox
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
-        
+
         $engine->setCapability('xhtml_table_support', false);
 
         if ($device->getDeviceType()->isMobile()
@@ -270,29 +270,29 @@ class Firefox
                 $device->setCapability('nfc_support', true);
             }
         }
-        
+
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-        
+
         if ($version >= 12) {
             $engine->setCapability('css_gradient', 'mozilla');
         }
-        
+
         if ($version >= 16) {
             $engine->setCapability('css_gradient', 'css3');
         }
-        
+
         if ($version >= 31) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');
         }
-        
-        if ($version >= 34) 
+
+        if ($version >= 34) {
             $engine->setCapability('svgt_1_1', false);
         }
-        
+
         $browserVersion = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
-        
+
         switch ($browserVersion) {
             case 3.5:
                 $this->setCapability('wurflKey', 'firefox_3_5');
