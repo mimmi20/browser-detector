@@ -233,6 +233,12 @@ class Iphone
             $this->setCapability('wurflKey', 'apple_iphone_ver6');
         }
 
+        if (6.1 <= (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver6_1');
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('css_gradient_linear', 'webkit');
+        }
+
         if (7.0 == (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_iphone_ver7');
         }

@@ -180,7 +180,7 @@ class SamsungGti9505
         $engine->setCapability('html_wi_imode_compact_generic', false);
         $engine->setCapability('xhtml_avoid_accesskeys', true);
         $engine->setCapability('xhtml_supports_forms_in_table', true);
-        $engine->setCapability('xhtml_file_upload', true);
+        $engine->setCapability('xhtml_file_upload', 'supported');
         $engine->setCapability('xhtml_allows_disabled_form_elements', true);
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('svgt_1_1', true);

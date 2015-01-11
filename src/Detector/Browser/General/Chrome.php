@@ -248,32 +248,32 @@ class Chrome
             $engine->setCapability('xhtml_allows_disabled_form_elements', true);
             $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         }
-        
+
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-        
+
         if (!$device->getDeviceType()->isMobile()) {
             $engine->setCapability('xhtml_make_phone_call_string', 'none');
         }
-        
-        if ($version >= 21) {
+
+        if ($version >= 11) {
             $engine->setCapability('css_gradient', 'webkit');
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
         }
-        
+
         if ($version >= 26) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
             $engine->setCapability('css_gradient', 'css3');
             $engine->setCapability('svgt_1_1', true);
         }
-        
+
         if ($version >= 31) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');
         }
-        
+
         $this->setCapability('wurflKey', 'google_chrome_' . (int) $version);
         $engine->setCapability('xhtml_table_support', false);
 

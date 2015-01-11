@@ -84,7 +84,7 @@ class SamsungGtp5210
         'colors'                  => 65536,
 
         // sms
-        'sms_enabled'             => false,
+        'sms_enabled'             => true,
 
         // chips
         'nfc_support'             => false,
@@ -174,7 +174,6 @@ class SamsungGtp5210
 
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('sms_enabled', true);
 
         return $this;
     }
