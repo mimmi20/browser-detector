@@ -281,7 +281,7 @@ class Firefox
             $engine->setCapability('css_gradient', 'css3');
         }
 
-        if ($version >= 28) {
+        if ($version >= 27) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');

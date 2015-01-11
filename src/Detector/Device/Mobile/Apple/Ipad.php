@@ -207,6 +207,7 @@ class Ipad
 
         if (6.0 <= (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_ipad_ver1_sub6');
+            $engine->setCapability('css_gradient_linear', 'none');
         }
 
         if (7.1 <= (float)$osVersion) {
