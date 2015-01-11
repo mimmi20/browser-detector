@@ -273,7 +273,7 @@ class Firefox
 
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        if ($version >= 11) {
+        if ($version >= 10) {
             $engine->setCapability('css_gradient', 'mozilla');
         }
 

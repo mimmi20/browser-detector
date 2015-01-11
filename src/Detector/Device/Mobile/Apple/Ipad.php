@@ -198,6 +198,25 @@ class Ipad
 
         if (5.0 == (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_ipad_ver1_sub5');
+            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+            $engine->setCapability('html_wi_imode_compact_generic', true);
+            $engine->setCapability('xhtml_select_as_radiobutton', false);
+            $engine->setCapability('xhtml_avoid_accesskeys', false);
+            $engine->setCapability('xhtml_select_as_dropdown', false);
+            $engine->setCapability('xhtml_supports_forms_in_table', false);
+            $engine->setCapability('xhtml_select_as_popup', false);
+            $engine->setCapability('xhtml_file_upload', 'not_supported');
+            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+            $engine->setCapability('xhtml_can_embed_video', 'none');
+            $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
+            $engine->setCapability('xhtml_supports_table_for_layout', true);
+            $engine->setCapability('max_url_length_in_requests', 512);
+            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+            $engine->setCapability('canvas_support', 'full');
+            $engine->setCapability('viewport_width', 'device_width_token');
+            $engine->setCapability('viewport_supported', true);
+            $engine->setCapability('viewport_userscalable', 'no');
+            $engine->setCapability('css_gradient', 'none');
             $engine->setCapability('css_gradient_linear', 'none');
         }
 

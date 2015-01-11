@@ -292,7 +292,7 @@ class Safari
             $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_mac');
         }
 
-        if ('Windows' === $osname && 10.0 <= $osVersion) {
+        if ('Windows' === $osname) {
             $engine->setCapability('jqm_grade', 'A');
             $engine->setCapability('xhtml_make_phone_call_string', 'none');
             $engine->setCapability('xhtml_table_support', false);
@@ -300,6 +300,7 @@ class Safari
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
+            $engine->setCapability('chtml_table_support', true);
 
             $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_windows');
         }
