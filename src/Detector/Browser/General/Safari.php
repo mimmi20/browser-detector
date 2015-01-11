@@ -242,7 +242,7 @@ class Safari
         $osVersion = (float)$os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
-        
+
         $engine->setCapability('chtml_table_support', false);
 
         if ('iOS' === $osname) {
@@ -268,7 +268,7 @@ class Safari
                 $engine->setCapability('css_gradient', 'none');
                 $engine->setCapability('css_gradient_linear', 'none');
             }
-            
+
             if ($osVersion >= 5.1) {
                 $engine->setCapability('jqm_grade', 'A');
                 $engine->setCapability('supports_java_applets', true);
@@ -287,7 +287,8 @@ class Safari
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
-            
+            $engine->setCapability('chtml_table_support', true);
+
             $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_mac');
         }
 
@@ -299,7 +300,7 @@ class Safari
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
-            
+
             $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_windows');
         }
 
