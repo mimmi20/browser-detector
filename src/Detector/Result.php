@@ -1456,12 +1456,25 @@ class Result implements \Serializable
         BrowserHandler $browser,
         EngineHandler $engine
     ) {
+        if ($device->getDeviceType()->isMobile()) {
+            $wurflKey = $device->getCapability('wurflKey');
+        } else {
+            $wurflKey = $browser->getCapability('wurflKey');
+        }
+        $this->setCapability('wurflKey', $wurflKey);
+        
+        if (file_exists('data/' . $wurflKey . '.php')) {
+            $additionalData = require_once 'data/' . $wurflKey . '.php';
+        } else {
+            $additionalData = null;
+        }
+                
         $properties = array_keys($this->getAllCapabilities());
 
         foreach ($properties as $property) {
             $value = null;
 
-            if ('useragent' === $property) {
+            if ('useragent' === $property || 'wurflKey' === $property) {
                 continue;
             }
 
@@ -1478,13 +1491,6 @@ class Result implements \Serializable
                     break;
                 case 'osClass':
                     $value = get_class($os);
-                    break;
-                case 'wurflKey':
-                    if ($device->getDeviceType()->isMobile()) {
-                        $value = $device->getCapability('wurflKey');
-                    } else {
-                        $value = $browser->getCapability('wurflKey');
-                    }
                     break;
                 case 'manufacturer_name':
                     $value = $device->getManufacturer();
@@ -1591,37 +1597,6 @@ class Result implements \Serializable
 
                     $value = $detector->getCpu();
                     break;
-                case 'model_name':
-                case 'model_extra_info':
-                case 'marketing_name':
-                case 'has_qwerty_keyboard':
-                case 'pointing_method':
-                case 'ununiqueness_handler':
-                case 'uaprof':
-                case 'uaprof2':
-                case 'uaprof3':
-                case 'physical_screen_width':
-                case 'physical_screen_height':
-                case 'columns':
-                case 'rows':
-                case 'max_image_width':
-                case 'max_image_height':
-                case 'resolution_width':
-                case 'resolution_height':
-                case 'dual_orientation':
-                case 'colors':
-                case 'unique':
-                case 'phone_id_provided':
-                case 'max_deck_size':
-                case 'max_length_of_username':
-                case 'max_no_of_bookmarks':
-                case 'max_length_of_password':
-                case 'max_no_of_connection_settings':
-                case 'max_object_size':
-                case 'sms_enabled':
-                case 'nfc_support':
-                    $value = $device->getCapability($property);
-                    break;
                 case 'mobile_browser_manufacturer':
                     $value = $browser->getManufacturer();
 
@@ -1700,17 +1675,6 @@ class Result implements \Serializable
 
                     $value = $detector->getBits();
                     break;
-                case 'mobile_browser_modus':
-                case 'can_skip_aligned_link_row':
-                case 'device_claims_web_support':
-                case 'pdf_support':
-                case 'emptyok':
-                case 'empty_option_value_support':
-                case 'basic_authentication_support':
-                case 'post_method_support':
-                case 'rss_support':
-                    $value = $browser->getCapability($property);
-                    break;
                 case 'device_os_bits':
                     $detector = new Bits\Os();
                     $detector->setUserAgent($this->getCapability('useragent', false));
@@ -1776,142 +1740,6 @@ class Result implements \Serializable
                 case 'renderingengine_name':
                     $value = $engine->getName();
                     break;
-                case 'preferred_markup':
-                case 'xhtml_support_level':
-                case 'css_spriting':
-                case 'css_gradient':
-                case 'css_gradient_linear':
-                case 'css_border_image':
-                case 'css_rounded_corners':
-                case 'css_supports_width_as_percentage':
-                case 'jqm_grade':
-                case 'is_sencha_touch_ok':
-                case 'image_inlining':
-                case 'canvas_support':
-                case 'viewport_width':
-                case 'html_preferred_dtd':
-                case 'viewport_supported':
-                case 'viewport_minimum_scale':
-                case 'viewport_initial_scale':
-                case 'mobileoptimized':
-                case 'viewport_maximum_scale':
-                case 'viewport_userscalable':
-                case 'handheldfriendly':
-                case 'https_support':
-                case 'max_url_length_bookmark':
-                case 'max_url_length_cached_page':
-                case 'max_url_length_in_requests':
-                case 'max_url_length_homepage':
-                case 'ajax_support_getelementbyid':
-                case 'ajax_xhr_type':
-                case 'ajax_support_event_listener':
-                case 'ajax_support_javascript':
-                case 'ajax_manipulate_dom':
-                case 'ajax_support_inner_html':
-                case 'ajax_manipulate_css':
-                case 'ajax_support_events':
-                case 'ajax_preferred_geoloc_api':
-                case 'utf8_support':
-                case 'multipart_support':
-                case 'supports_background_sounds':
-                case 'supports_vb_script':
-                case 'supports_java_applets':
-                case 'supports_activex_controls':
-                case 'html_web_3_2':
-                case 'html_web_4_0':
-                case 'html_wi_oma_xhtmlmp_1_0':
-                case 'wml_1_1':
-                case 'wml_1_2':
-                case 'wml_1_3':
-                case 'html_wi_imode_html_1':
-                case 'html_wi_imode_html_2':
-                case 'html_wi_imode_html_3':
-                case 'html_wi_imode_html_4':
-                case 'html_wi_imode_html_5':
-                case 'html_wi_imode_htmlx_1':
-                case 'html_wi_imode_htmlx_1_1':
-                case 'html_wi_w3_xhtmlbasic':
-                case 'html_wi_imode_compact_generic':
-                case 'voicexml':
-                case 'chtml_table_support':
-                case 'imode_region':
-                case 'chtml_can_display_images_and_text_on_same_line':
-                case 'chtml_displays_image_in_center':
-                case 'chtml_make_phone_call_string':
-                case 'chtml_display_accesskey':
-                case 'emoji':
-                case 'xhtml_select_as_radiobutton':
-                case 'xhtml_avoid_accesskeys':
-                case 'xhtml_select_as_dropdown':
-                case 'xhtml_supports_frame': // not in wurfl
-                case 'xhtml_supports_iframe':
-                case 'xhtml_supports_forms_in_table':
-                case 'xhtmlmp_preferred_mime_type':
-                case 'xhtml_select_as_popup':
-                case 'xhtml_honors_bgcolor':
-                case 'xhtml_file_upload':
-                case 'xhtml_preferred_charset':
-                case 'xhtml_supports_css_cell_table_coloring':
-                case 'xhtml_autoexpand_select':
-                case 'accept_third_party_cookie':
-                case 'xhtml_make_phone_call_string':
-                case 'xhtml_allows_disabled_form_elements':
-                case 'xhtml_supports_invisible_text':
-                case 'cookie_support':
-                case 'xhtml_send_mms_string':
-                case 'xhtml_table_support':
-                case 'xhtml_display_accesskey':
-                case 'xhtml_can_embed_video':
-                case 'xhtml_supports_monospace_font':
-                case 'xhtml_supports_inline_input':
-                case 'xhtml_document_title_support':
-                case 'xhtml_support_wml2_namespace':
-                case 'xhtml_readable_background_color1':
-                case 'xhtml_format_as_attribute':
-                case 'xhtml_supports_table_for_layout':
-                case 'xhtml_readable_background_color2':
-                case 'xhtml_send_sms_string':
-                case 'xhtml_format_as_css_property':
-                case 'opwv_xhtml_extensions_support':
-                case 'xhtml_marquee_as_css_property':
-                case 'xhtml_nowrap_mode':
-                case 'jpg':
-                case 'gif':
-                case 'bmp':
-                case 'wbmp':
-                case 'gif_animated':
-                case 'png':
-                case 'greyscale':
-                case 'transparent_png_index':
-                case 'epoc_bmp':
-                case 'svgt_1_1_plus':
-                case 'svgt_1_1':
-                case 'transparent_png_alpha':
-                case 'tiff':
-                case 'wml_make_phone_call_string':
-                case 'card_title_support':
-                case 'table_support':
-                case 'elective_forms_recommended':
-                case 'menu_with_list_of_links_recommended':
-                case 'break_list_of_links_with_br_element_recommended':
-                case 'icons_on_menu_items_support':
-                case 'opwv_wml_extensions_support':
-                case 'built_in_back_button_support':
-                case 'proportional_font':
-                case 'insert_br_element_after_widget_recommended':
-                case 'wizards_recommended':
-                case 'wml_can_display_images_and_text_on_same_line':
-                case 'softkey_support':
-                case 'deck_prefetch_support':
-                case 'menu_with_select_element_recommended':
-                case 'numbered_menus':
-                case 'image_as_link_support':
-                case 'wrap_mode_support':
-                case 'access_key_support':
-                case 'wml_displays_image_in_center':
-                case 'times_square_mode_support':
-                    $value = $engine->getCapability($property);
-                    break;
                 case 'controlcap_is_xhtmlmp_preferred':
                     $value = ($engine->getCapability('xhtml_support_level') > 0
                         && strpos($engine->getCapability('preferred_markup'), 'html_web') !== 0);
@@ -1923,7 +1751,11 @@ class Result implements \Serializable
                     $value = (strpos($engine->getCapability('preferred_markup'), 'html_web') === 0);
                     break;
                 default:
-                    // nothing to do here
+                    if (is_array($additionalData) && array_kry_exists($property, $additionalData)) {
+                        $value = $additionalData[$property];
+                    } else {
+                        $value = null;
+                    }
                     break;
                 }
             } catch (\Exception $e) {
