@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\NetFront;
+use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -157,7 +157,7 @@ class NetFrontLifeBrowser
      */
     public function detectEngine()
     {
-        $handler = new NetFront();
+        $handler = new NetFrontEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler;

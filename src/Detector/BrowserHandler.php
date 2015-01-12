@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\BlackBerry;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Engine\Khtml;
-use BrowserDetector\Detector\Engine\NetFront;
+use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Tasman;
 use BrowserDetector\Detector\Engine\Trident;
@@ -261,7 +261,7 @@ abstract class BrowserHandler
             new Tasman(),
             new BlackBerry(),
             new Khtml(),
-            new NetFront()
+            new NetFrontEngine()
         );
 
         $chain = new Chain();
