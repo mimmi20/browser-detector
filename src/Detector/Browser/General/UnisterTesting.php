@@ -56,7 +56,7 @@ class UnisterTesting
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
+        'wurflKey'                     => 'generic', // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info

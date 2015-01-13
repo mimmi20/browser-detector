@@ -393,11 +393,11 @@ class Wurfl extends Core
                         switch (strtolower($apiVer)) {
                             case 'firefox':
                                 $apiBro = 'Firefox';
-                                $apiVer = '';
+                                $apiVer = $device->getCapability('mobile_browser_version');
                                 break;
                             case 'thunderbird':
                                 $apiBro = 'Thunderbird';
-                                $apiVer = '';
+                                $apiVer = $device->getCapability('mobile_browser_version');
                                 break;
                             default:
                                 // nothing to do

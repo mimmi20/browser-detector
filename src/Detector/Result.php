@@ -1463,12 +1463,14 @@ class Result implements \Serializable
         }
         $this->setCapability('wurflKey', $wurflKey);
         
-        if (file_exists('data/' . $wurflKey . '.php')) {
-            $additionalData = require_once 'data/' . $wurflKey . '.php';
+        $datafile = realpath(__DIR__ . '/../../data/' . $wurflKey . '.php');
+        
+        if (null !== $wurflKey && false !== $datafile && file_exists($datafile)) {
+            $additionalData = require $datafile;
         } else {
             $additionalData = null;
         }
-                
+        
         $properties = array_keys($this->getAllCapabilities());
 
         foreach ($properties as $property) {
@@ -1751,7 +1753,7 @@ class Result implements \Serializable
                     $value = (strpos($engine->getCapability('preferred_markup'), 'html_web') === 0);
                     break;
                 default:
-                    if (is_array($additionalData) && array_kry_exists($property, $additionalData)) {
+                    if (is_array($additionalData) && array_key_exists($property, $additionalData)) {
                         $value = $additionalData[$property];
                     } else {
                         $value = null;
