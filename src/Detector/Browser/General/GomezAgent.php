@@ -56,7 +56,8 @@ class GomezAgent
      */
     protected $properties = array(
         // browser
-        'mobile_browser_modus'        => null, // not in wurfl
+        'wurflKey'                     => null, // not in wurfl
+        'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
         'can_skip_aligned_link_row'    => false,
