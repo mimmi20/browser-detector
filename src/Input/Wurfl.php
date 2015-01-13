@@ -352,7 +352,7 @@ class Wurfl extends Core
                         switch (strtolower($apiVer)) {
                             case 'chrome':
                                 $apiBro = 'Chrome';
-                                $apiVer = '';
+                                $apiVer = $device->getCapability('mobile_browser_version');
                                 break;
                             case 'bot':
                                 $apiBro     = 'Google Bot';

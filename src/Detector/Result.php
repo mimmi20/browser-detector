@@ -1512,6 +1512,60 @@ class Result implements \Serializable
 
                     $value = $value->getBrandName();
                     break;
+                case 'model_name':
+                    $value = $device->getCapability('model_name', false);
+                    break;
+                case 'marketing_name':
+                    $value = $device->getCapability('marketing_name', false);
+                    break;
+                case 'pointing_method':
+                    $value = $device->getCapability('pointing_method', false);
+                    break;
+                case 'resolution_width':
+                    $value = $device->getCapability('resolution_width', false);
+                    break;
+                case 'resolution_height':
+                    $value = $device->getCapability('resolution_height', false);
+                    break;
+                case 'dual_orientation':
+                    $value = $device->getCapability('dual_orientation', false);
+                    break;
+                case 'colors':
+                    $value = $device->getCapability('colors', false);
+                    break;
+                case 'sms_enabled':
+                    $value = $device->getCapability('sms_enabled', false);
+                    break;
+                case 'nfc_support':
+                    $value = $device->getCapability('nfc_support', false);
+                    break;
+                case 'has_qwerty_keyboard':
+                    $value = $device->getCapability('has_qwerty_keyboard', false);
+                    break;
+                case 'model_extra_info':
+                    $value = $device->getCapability('model_extra_info', false);
+                    break;
+                case 'pdf_support':
+                    $value = $browser->getCapability('pdf_support', false);
+                    break;
+                case 'rss_support':
+                    $value = $browser->getCapability('rss_support', false);
+                    break;
+                case 'can_skip_aligned_link_row':
+                    $value = $browser->getCapability('can_skip_aligned_link_row', false);
+                    break;
+                case 'device_claims_web_support':
+                    $value = $browser->getCapability('device_claims_web_support', false);
+                    break;
+                case 'empty_option_value_support':
+                    $value = $browser->getCapability('empty_option_value_support', false);
+                    break;
+                case 'basic_authentication_support':
+                    $value = $browser->getCapability('basic_authentication_support', false);
+                    break;
+                case 'post_method_support':
+                    $value = $browser->getCapability('post_method_support', false);
+                    break;
                 case 'device_type':
                     $value = $device->getDeviceType();
 
