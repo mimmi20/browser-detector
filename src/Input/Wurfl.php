@@ -552,12 +552,12 @@ class Wurfl extends Core
                     case 'android webkit':
                     case 'android':
                         $apiBro = 'Android Webkit';
-                        if ('4.01' == $apiVer) {
+                        if ('4.01' === $apiVer) {
                             $apiVer = '4.0.1';
                         }
                         $browserMaker = 'Google';
                         break;
-                    case 'UCWeb':
+                    case 'ucweb':
                         $apiBro = 'UC Browser';
                         break;
                     case 'seomoz':
