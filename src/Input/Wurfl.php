@@ -222,7 +222,7 @@ class Wurfl extends Core
                         switch (strtolower($apiVer)) {
                             case 'internet explorer':
                                 $apiBro = 'Internet Explorer';
-                                $apiVer = '';
+                                $apiVer = $device->getCapability('mobile_browser_version');
                                 break;
                             case 'internet explorer 10':
                                 $apiBro = 'Internet Explorer';
