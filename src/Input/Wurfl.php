@@ -421,7 +421,7 @@ class Wurfl extends Core
                         switch (strtolower($apiVer)) {
                             case 'safari':
                                 $apiBro = 'Safari';
-                                $apiVer = '';
+                                $apiVer = $device->getCapability('mobile_browser_version');
                                 break;
                             default:
                                 // nothing to do
@@ -440,7 +440,7 @@ class Wurfl extends Core
                         switch (strtolower($apiVer)) {
                             case 'opera':
                                 $apiBro = 'Opera';
-                                $apiVer = '';
+                                $apiVer = $device->getCapability('mobile_browser_version');
                                 break;
                             default:
                                 // nothing to do
