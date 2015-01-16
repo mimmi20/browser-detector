@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Detector;
 
+use BrowserDetector\Helper\Utils;
+
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
  *
@@ -154,6 +156,8 @@ class Result implements \Serializable
         'controlcap_advertised_browser_version'             => null,
         'controlcap_advertised_device_os'                   => null,
         'controlcap_advertised_device_os_version'           => null,
+        'controlcap_form_factor'                            => null,
+        'controlcap_is_smartphone'                          => null,
 
         // markup
         'html_web_3_2'                                      => null,
@@ -1567,6 +1571,7 @@ class Result implements \Serializable
                     $value = $browser->getCapability('post_method_support', false);
                     break;
                 case 'device_type':
+                case 'controlcap_form_factor':
                     $value = $device->getDeviceType();
 
                     if (!($value instanceof Type\Device\TypeInterface)) {
@@ -1805,6 +1810,133 @@ class Result implements \Serializable
                     break;
                 case 'controlcap_is_html_preferred':
                     $value = (strpos($engine->getCapability('preferred_markup'), 'html_web') === 0);
+                    break;
+                case 'controlcap_is_app':
+                    $ua    = $this->getCapability('useragent', false);
+                    $utils = new Utils();
+                    $utils->setUserAgent($ua);
+                    
+                    if ($os->getName() == 'iOS' && !$utils->checkIfContains('Safari')) {
+                        $value = true;
+                    } else {
+                        $patterns = array(
+                            '^Dalvik',
+                            'Darwin/',
+                            'CFNetwork',
+                            '^Windows Phone Ad Client',
+                            '^NativeHost',
+                            '^AndroidDownloadManager',
+                            '-HttpClient',
+                            '^AppCake',
+                            'AppEngine-Google',
+                            'AppleCoreMedia',
+                            '^AppTrailers',
+                            '^ChoiceFM',
+                            '^ClassicFM',
+                            '^Clipfish',
+                            '^FaceFighter',
+                            '^Flixster',
+                            '^Gold/',
+                            '^GoogleAnalytics/',
+                            '^Heart/',
+                            '^iBrowser/',
+                            'iTunes-',
+                            '^Java/',
+                            '^LBC/3.',
+                            'Twitter',
+                            'Pinterest',
+                            '^Instagram',
+                            'FBAN',
+                            '#iP(hone|od|ad)[\d],[\d]#',
+                            // namespace notation (com.google.youtube)
+                            '#[a-z]{3,}(?:\.[a-z]+){2,}#',
+                            //Windows MSIE Webview
+                            'WebView',
+                        );
+                        
+                        foreach ($patterns as $pattern) {
+                            if ($pattern[0] === '#') {
+                                // Regex
+                                if (preg_match($pattern, $ua)) {
+                                    $value = true;
+                                    break;
+                                }
+                                continue;
+                            }
+                                
+                            // Substring matches are not abstracted for performance
+                            $pattern_len = strlen($pattern);
+                            $ua_len = strlen($ua);
+
+                            if ($pattern[0] === '^') {
+                                // Starts with
+                                if (strpos($ua, substr($pattern, 1)) === 0) {
+                                    $value = true;
+                                    break;
+                                }
+
+                            } elseif ($pattern[$pattern_len - 1] === '$') {
+                                // Ends with
+                                $pattern_len--;
+                                $pattern = substr($pattern, 0, $pattern_len);
+                                if (strpos($ua, $pattern) === ($ua_len - $pattern_len)) {
+                                    $value = true;
+                                    break;
+                                }
+                            } else {
+                                // Match anywhere
+                                if (strpos($ua, $pattern) !== false) {
+                                    $value = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case 'controlcap_is_smartphone':
+                    if (!$this->getCapability('is_wireless_device', false)) {
+                        $value = false;
+                    } elseif ($this->getCapability('is_tablet', false)) {
+                        $value = false;
+                    } elseif (!$this->getCapability('can_assign_phone_number', false)) {
+                        $value = false;
+                    } elseif (!$this->getCapability('controlcap_is_touchscreen', false)) {
+                        $value = false;
+                    } elseif ($this->getCapability('resolution_width', false) < 320) {
+                        $value = false;
+                    } else {
+                        $os_ver = (float)$os->detectVersion()->getVersion(Version::MAJORMINOR);
+                        
+                        switch ($os->getName()) {
+                            case 'iOS':
+                                $value = ($os_ver >= 3.0);
+                                break;
+                            case 'Android':
+                                $value = ($os_ver >= 2.2);
+                                break;
+                            case 'Windows Phone OS':
+                                $value = true;
+                                break;
+                            case 'RIM OS':
+                                $value = ($os_ver >= 7.0);
+                                break;
+                            case 'webOS':
+                                $value = true;
+                                break;
+                            case 'MeeGo':
+                                $value = true;
+                                break;
+                            case 'Bada OS':
+                                $value = ($os_ver >= 2.0);
+                                break;
+                            default:
+                                $value = false;
+                                break;
+                        }
+                    }
+                    break;
+                case 'controlcap_is_mobilephone':
+                    $value = null;
                     break;
                 default:
                     if (is_array($additionalData) && array_key_exists($property, $additionalData)) {
