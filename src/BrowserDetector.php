@@ -192,7 +192,7 @@ class BrowserDetector
     /**
      * sets the the detection interface
      *
-     * @param integer $interface the new Interface to use
+     * @param \BrowserDetector\Input\InputInterface $interface the new Interface to use
      *
      * @throws \UnexpectedValueException
      * @return \BrowserDetector\BrowserDetector
@@ -208,7 +208,7 @@ class BrowserDetector
      * returns the actual interface, the actual cache and the user agent are
      * pushed to the interface
      *
-     * @return \BrowserDetector\Input\Core
+     * @return \BrowserDetector\Input\InputInterface
      */
     public function getInterface()
     {
@@ -218,8 +218,10 @@ class BrowserDetector
         }
 
         if (null !== $this->getCache()) {
-            $this->interface->setCache($this->getCache())
-                ->setCachePrefix($this->getCachePrefix());
+            $this->interface
+                ->setCache($this->getCache())
+                ->setCachePrefix($this->getCachePrefix())
+            ;
         }
 
         if (null !== $this->getLogger()) {
