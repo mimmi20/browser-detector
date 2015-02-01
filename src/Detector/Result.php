@@ -862,13 +862,10 @@ class Result implements \Serializable
     /**
      * Returns the value of a given capability name for the current result
      *
-     * @param         $name
-     * @param boolean $includeRenderAs If TRUE and the renderAs resulr is
-     *                                 ndefined, the property from the renderAs result will be
-     *                                 included also
+     * @param string  $name            must be a valid name of an virtual capability
+     * @param boolean $includeRenderAs If TRUE and the renderAs result is defined,
+     *                                 the property from the renderAs result will be included too
      *
-     * @internal param string $capabilityName must be a valid name of an virtual
-     *                                 capability
      * @return string|Version Capability value
      */
     public function getVirtualCapability($name, $includeRenderAs = false)

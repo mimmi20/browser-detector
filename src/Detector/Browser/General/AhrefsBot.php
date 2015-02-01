@@ -52,7 +52,7 @@ class AhrefsBot
      */
     protected $properties = array(
         // browser
-        'mobile_browser'               => 'AhrefsBot',
+        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
