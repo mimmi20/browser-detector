@@ -69,15 +69,6 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
         self::assertSame($agent, $this->object->getAgent());
     }
 
-    /**
-     * @expectedException \UnexpectedValueException
-     * @expectedExceptionMessage the interface is unknown
-     */
-    public function testSetWrongInterface()
-    {
-        $this->object->setInterface(0);
-    }
-
     public function testGetDefaultInterface()
     {
         self::assertInstanceOf('\BrowserDetector\Input\UserAgent', $this->object->getInterface());
@@ -91,8 +82,16 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
         $cache = $this->getMock('\WurflCache\Adapter\Memory', array(), array(), '', false);
         $this->object->setCache($cache);
 
-        $this->object->setInterface(BrowserDetector::INTERFACE_BROWSCAP_INI);
 
-        self::assertInstanceOf('\BrowserDetector\Input\Browscap', $this->object->getInterface());
+        $interface = $this->getMock('\BrowserDetector\Input\UserAgent', array('setCache'), array(), '', false);
+        $interface
+            ->expects(self::once())
+            ->method('setCache')
+            ->will(self::returnSelf())
+        ;
+
+        $this->object->setInterface($interface);
+
+        self::assertSame($interface, $this->object->getInterface());
     }
 }
