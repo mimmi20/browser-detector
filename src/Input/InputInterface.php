@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Input;
 
-use BrowscapPHP\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 
@@ -50,16 +49,16 @@ interface InputInterface
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return Core
+     * @return \BrowserDetector\Input\InputInterface
      */
     public function setCache(AdapterInterface $cache);
 
     /**
      * sets the logger
      *
-     * @param LoggerInterface $logger
+     * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return UaComparator
+     * @return \BrowserDetector\Input\InputInterface
      */
     public function setLogger(LoggerInterface $logger);
 
@@ -69,7 +68,7 @@ interface InputInterface
      * @param string $prefix the new prefix
      *
      * @throws \UnexpectedValueException
-     * @return Core
+     * @return \BrowserDetector\Input\InputInterface
      */
     public function setCachePrefix($prefix);
 
@@ -85,7 +84,7 @@ interface InputInterface
      *
      * @param string $userAgent
      *
-     * @return UserAgent
+     * @return \BrowserDetector\Input\InputInterface
      */
     public function setAgent($userAgent);
 

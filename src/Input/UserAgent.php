@@ -32,7 +32,6 @@ namespace BrowserDetector\Input;
 
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
-use BrowserDetector\Detector\Device\GeneralBot;
 use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;

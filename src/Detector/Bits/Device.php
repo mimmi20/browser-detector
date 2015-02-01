@@ -123,7 +123,7 @@ class Device
 
         // old deprecated 8 bit systems
         if ($this->utils->checkIfContains(array('cp/m', '8-bit'), true)) {
-            $this->bits = '8';
+            $this->_bits = '8';
 
             return $this;
         }

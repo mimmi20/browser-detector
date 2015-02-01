@@ -38,38 +38,5 @@ namespace BrowserDetector\Detector\Type\Browser;
  */
 class Unknown extends AbstractType implements TypeInterface
 {
-    /**
-     * the name of the browser
-     *
-     * @var string
-     */
-    protected $name = null;
-
-    /**
-     * the Browser is a Bot
-     *
-     * @var boolean
-     */
-    protected $bot = false;
-
-    /**
-     * the Browser is a Syndication Reader
-     *
-     * @var boolean
-     */
-    protected $reader = false;
-
-    /**
-     * the Browser uses a transcoding webservice
-     *
-     * @var boolean
-     */
-    protected $transcoder = null;
-
-    /**
-     * the Browser should be banned
-     *
-     * @return boolean
-     */
-    protected $banned = null;
+    // nothing to do here
 }

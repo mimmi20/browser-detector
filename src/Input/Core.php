@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Input;
 
-use BrowscapPHP\Cache\CacheInterface;
 use BrowserDetector\BrowserDetector;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
@@ -49,7 +48,7 @@ abstract class Core implements InputInterface
     /**
      * a \WurflCache\Adapter\AdapterInterface object
      *
-     * @var \BrowscapPHP\Cache\CacheInterface
+     * @var \WurflCache\Adapter\AdapterInterface
      */
     protected $cache = null;
 
@@ -77,7 +76,7 @@ abstract class Core implements InputInterface
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return Core
+     * @return \BrowserDetector\Input\Core
      */
     public function setCache(AdapterInterface $cache)
     {
@@ -91,7 +90,7 @@ abstract class Core implements InputInterface
      *
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return BrowserDetector
+     * @return \BrowserDetector\Input\Core
      */
     public function setLogger(LoggerInterface $logger)
     {
@@ -109,7 +108,7 @@ abstract class Core implements InputInterface
      * @param  string $message The log message
      * @param  array  $context The log context
      *
-     * @return BrowserDetector
+     * @return \BrowserDetector\Input\Core
      */
     protected function log($level, $message, array $context = array())
     {
@@ -126,7 +125,7 @@ abstract class Core implements InputInterface
      * @param string $prefix the new prefix
      *
      * @throws \UnexpectedValueException
-     * @return Core
+     * @return \BrowserDetector\Input\Core
      */
     public function setCachePrefix($prefix)
     {
@@ -153,7 +152,7 @@ abstract class Core implements InputInterface
      *
      * @param string $userAgent
      *
-     * @return UserAgent
+     * @return \BrowserDetector\Input\Core
      */
     public function setAgent($userAgent)
     {
