@@ -119,7 +119,7 @@ class Ionik
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Ionik');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Ionik');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Ionik' . DIRECTORY_SEPARATOR
         );

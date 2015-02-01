@@ -112,7 +112,7 @@ class Oppo
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Oppo');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Oppo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Oppo' . DIRECTORY_SEPARATOR
         );

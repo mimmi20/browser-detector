@@ -119,7 +119,7 @@ class IconBit
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\IconBit');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\IconBit');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'IconBit' . DIRECTORY_SEPARATOR
         );

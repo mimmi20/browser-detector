@@ -112,7 +112,7 @@ class Panasonic
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Panasonic');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Panasonic');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Panasonic' . DIRECTORY_SEPARATOR
         );

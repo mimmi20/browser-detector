@@ -116,7 +116,7 @@ class GeneralTv
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Tv');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Tv');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Tv' . DIRECTORY_SEPARATOR
         );
@@ -187,7 +187,7 @@ class GeneralTv
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Tv');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Tv');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 

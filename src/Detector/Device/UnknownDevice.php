@@ -155,7 +155,7 @@ class UnknownDevice
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\General');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\General');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 

@@ -116,7 +116,7 @@ class BarnesNoble
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\BarnesNoble');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\BarnesNoble');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'BarnesNoble' . DIRECTORY_SEPARATOR
         );

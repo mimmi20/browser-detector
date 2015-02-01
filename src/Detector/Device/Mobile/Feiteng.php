@@ -112,7 +112,7 @@ class Feiteng
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Feiteng');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Feiteng');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Feiteng' . DIRECTORY_SEPARATOR
         );

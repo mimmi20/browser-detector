@@ -120,7 +120,7 @@ class Olivetti
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Olivetti');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Olivetti');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Olivetti' . DIRECTORY_SEPARATOR
         );

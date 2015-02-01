@@ -114,7 +114,7 @@ class Star
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Star');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Star');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Star' . DIRECTORY_SEPARATOR
         );

@@ -157,7 +157,7 @@ class Qmobile
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Qmobile');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Qmobile');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Qmobile' . DIRECTORY_SEPARATOR
         );

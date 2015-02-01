@@ -120,7 +120,7 @@ class Microsoft
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Microsoft');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Microsoft');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Microsoft' . DIRECTORY_SEPARATOR
         );

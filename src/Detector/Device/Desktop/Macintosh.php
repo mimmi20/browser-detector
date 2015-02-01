@@ -195,7 +195,7 @@ class Macintosh
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 

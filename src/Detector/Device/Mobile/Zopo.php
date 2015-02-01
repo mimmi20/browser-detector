@@ -166,7 +166,7 @@ class Zopo
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Zopo');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Zopo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Zopo' . DIRECTORY_SEPARATOR
         );

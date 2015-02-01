@@ -112,7 +112,7 @@ class Logikpd
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Logikpd');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Logikpd');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Logikpd' . DIRECTORY_SEPARATOR
         );

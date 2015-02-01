@@ -152,7 +152,7 @@ class Cube
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Cube');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Cube');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Cube' . DIRECTORY_SEPARATOR
         );

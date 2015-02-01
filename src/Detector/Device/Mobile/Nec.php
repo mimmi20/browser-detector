@@ -168,7 +168,7 @@ class Nec
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Nec');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Nec');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Nec' . DIRECTORY_SEPARATOR
         );

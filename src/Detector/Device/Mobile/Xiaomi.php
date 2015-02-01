@@ -116,7 +116,7 @@ class Xiaomi
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Xiaomi');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Xiaomi');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Xiaomi' . DIRECTORY_SEPARATOR
         );

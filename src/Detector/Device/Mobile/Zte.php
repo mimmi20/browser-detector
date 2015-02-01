@@ -117,7 +117,7 @@ class Zte
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Zte');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Zte');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Zte' . DIRECTORY_SEPARATOR
         );

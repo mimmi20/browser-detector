@@ -157,7 +157,7 @@ class Yusu
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Yusu');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Yusu');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Yusu' . DIRECTORY_SEPARATOR
         );

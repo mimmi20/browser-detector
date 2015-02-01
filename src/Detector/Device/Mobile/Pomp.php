@@ -119,7 +119,7 @@ class Pomp
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Pomp');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pomp');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pomp' . DIRECTORY_SEPARATOR
         );

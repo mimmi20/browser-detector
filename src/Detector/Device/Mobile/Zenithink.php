@@ -116,7 +116,7 @@ class Zenithink
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Zenithink');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Zenithink');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Zenithink' . DIRECTORY_SEPARATOR
         );

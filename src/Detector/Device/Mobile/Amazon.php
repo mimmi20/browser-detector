@@ -120,7 +120,7 @@ class Amazon
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Amazon');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Amazon');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Amazon' . DIRECTORY_SEPARATOR
         );

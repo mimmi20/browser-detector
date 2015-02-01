@@ -165,7 +165,7 @@ class Odys
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Odys');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Odys');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Odys' . DIRECTORY_SEPARATOR
         );

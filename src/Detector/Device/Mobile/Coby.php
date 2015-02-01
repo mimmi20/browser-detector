@@ -125,7 +125,7 @@ class Coby
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Coby');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Coby');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Coby' . DIRECTORY_SEPARATOR
         );

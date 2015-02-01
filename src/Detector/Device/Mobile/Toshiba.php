@@ -172,7 +172,7 @@ class Toshiba
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Toshiba');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Toshiba');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Toshiba' . DIRECTORY_SEPARATOR
         );

@@ -112,7 +112,7 @@ class Amoi
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Amoi');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Amoi');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Amoi' . DIRECTORY_SEPARATOR
         );

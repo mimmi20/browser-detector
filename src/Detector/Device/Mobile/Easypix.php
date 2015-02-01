@@ -112,7 +112,7 @@ class Easypix
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Easypix');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Easypix');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Easypix' . DIRECTORY_SEPARATOR
         );

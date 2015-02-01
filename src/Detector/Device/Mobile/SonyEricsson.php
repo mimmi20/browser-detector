@@ -193,7 +193,7 @@ class SonyEricsson
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\SonyEricsson');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\SonyEricsson');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
         );

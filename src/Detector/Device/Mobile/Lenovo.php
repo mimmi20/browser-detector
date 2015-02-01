@@ -173,7 +173,7 @@ class Lenovo
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Lenovo');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Lenovo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Lenovo' . DIRECTORY_SEPARATOR
         );

@@ -170,7 +170,7 @@ class Huawei
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Huawei');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Huawei');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Huawei' . DIRECTORY_SEPARATOR
         );

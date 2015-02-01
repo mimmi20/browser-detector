@@ -120,7 +120,7 @@ class Sharp
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Sharp');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Sharp');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Sharp' . DIRECTORY_SEPARATOR
         );

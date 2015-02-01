@@ -119,7 +119,7 @@ class Meizu
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Meizu');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Meizu');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Meizu' . DIRECTORY_SEPARATOR
         );

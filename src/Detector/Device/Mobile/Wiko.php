@@ -117,7 +117,7 @@ class Wiko
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Wiko');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Wiko');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Wiko' . DIRECTORY_SEPARATOR
         );

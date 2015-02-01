@@ -135,7 +135,7 @@ class Asus
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Asus');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Asus');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Asus' . DIRECTORY_SEPARATOR
         );

@@ -170,7 +170,7 @@ class Tmobile
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Tmobile');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Tmobile');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Tmobile' . DIRECTORY_SEPARATOR
         );

@@ -114,7 +114,7 @@ class Dell
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Dell');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Dell');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Dell' . DIRECTORY_SEPARATOR
         );

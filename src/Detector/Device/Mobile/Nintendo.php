@@ -114,7 +114,7 @@ class Nintendo
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Nintendo');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Nintendo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Nintendo' . DIRECTORY_SEPARATOR
         );

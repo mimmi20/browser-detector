@@ -112,7 +112,7 @@ class Sanyo
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Sanyo');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Sanyo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Sanyo' . DIRECTORY_SEPARATOR
         );

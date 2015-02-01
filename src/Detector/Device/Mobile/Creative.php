@@ -114,7 +114,7 @@ class Creative
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Creative');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Creative');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Creative' . DIRECTORY_SEPARATOR
         );

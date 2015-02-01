@@ -116,7 +116,7 @@ class Htm
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Htm');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Htm');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Htm' . DIRECTORY_SEPARATOR
         );

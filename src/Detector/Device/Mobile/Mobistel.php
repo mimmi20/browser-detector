@@ -112,7 +112,7 @@ class Mobistel
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Mobistel');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Mobistel');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Mobistel' . DIRECTORY_SEPARATOR
         );

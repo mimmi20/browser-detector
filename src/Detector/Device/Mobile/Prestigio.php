@@ -123,7 +123,7 @@ class Prestigio
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Prestigio');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Prestigio');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Prestigio' . DIRECTORY_SEPARATOR
         );

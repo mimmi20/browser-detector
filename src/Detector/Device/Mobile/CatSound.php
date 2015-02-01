@@ -128,7 +128,7 @@ class CatSound
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\CatSound');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\CatSound');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'CatSound' . DIRECTORY_SEPARATOR
         );

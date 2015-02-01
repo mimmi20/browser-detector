@@ -112,7 +112,7 @@ class Epad
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Epad');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Epad');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Epad' . DIRECTORY_SEPARATOR
         );

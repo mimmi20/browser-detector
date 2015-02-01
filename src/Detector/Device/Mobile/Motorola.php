@@ -190,7 +190,7 @@ class Motorola
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Motorola');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Motorola');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR
         );

@@ -112,7 +112,7 @@ class ViewSonic
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\ViewSonic');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\ViewSonic');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'ViewSonic' . DIRECTORY_SEPARATOR
         );

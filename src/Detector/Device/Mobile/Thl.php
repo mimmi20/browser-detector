@@ -112,7 +112,7 @@ class Thl
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Thl');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Thl');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Thl' . DIRECTORY_SEPARATOR
         );

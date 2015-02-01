@@ -176,7 +176,7 @@ class Lg
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Lg');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Lg');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Lg' . DIRECTORY_SEPARATOR
         );

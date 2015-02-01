@@ -117,7 +117,7 @@ class DoCoMo
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\DoCoMo');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\DoCoMo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'DoCoMo' . DIRECTORY_SEPARATOR
         );

@@ -112,7 +112,7 @@ class Pandigital
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Pandigital');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pandigital');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pandigital' . DIRECTORY_SEPARATOR
         );

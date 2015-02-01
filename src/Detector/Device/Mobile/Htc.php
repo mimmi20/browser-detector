@@ -153,7 +153,7 @@ class Htc
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Htc');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Htc');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Htc' . DIRECTORY_SEPARATOR
         );

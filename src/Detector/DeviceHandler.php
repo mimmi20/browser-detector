@@ -338,7 +338,7 @@ abstract class DeviceHandler
         $chain = new Chain();
         $chain->setDefaultHandler(new Os\UnknownOs());
         $chain->setUseragent($this->_useragent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Os');
+        $chain->setNamespace('\BrowserDetector\Detector\Os');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
         );

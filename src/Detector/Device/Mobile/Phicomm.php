@@ -117,7 +117,7 @@ class Phicomm
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Phicomm');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Phicomm');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Phicomm' . DIRECTORY_SEPARATOR
         );

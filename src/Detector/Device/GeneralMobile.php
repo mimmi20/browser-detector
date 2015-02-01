@@ -125,7 +125,7 @@ class GeneralMobile
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Mobile');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
         );
@@ -200,7 +200,7 @@ class GeneralMobile
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Mobile');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Mobile');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 

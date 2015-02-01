@@ -150,7 +150,7 @@ class GeneralDesktop
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Desktop');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Desktop');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
         );
@@ -221,7 +221,7 @@ class GeneralDesktop
 
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\\BrowserDetector\\Detector\\Browser\\Desktop');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());
 

@@ -118,7 +118,7 @@ class BlackBerry
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\BlackBerry');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\BlackBerry');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'BlackBerry' . DIRECTORY_SEPARATOR
         );

@@ -119,7 +119,7 @@ class Alcatel
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Alcatel');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Alcatel');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Alcatel' . DIRECTORY_SEPARATOR
         );

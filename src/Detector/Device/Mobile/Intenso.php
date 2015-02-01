@@ -112,7 +112,7 @@ class Intenso
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Intenso');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Intenso');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Intenso' . DIRECTORY_SEPARATOR
         );

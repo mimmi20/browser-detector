@@ -112,7 +112,7 @@ class Fujitsu
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Fujitsu');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Fujitsu');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Fujitsu' . DIRECTORY_SEPARATOR
         );

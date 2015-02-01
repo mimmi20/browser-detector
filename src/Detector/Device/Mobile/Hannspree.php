@@ -112,7 +112,7 @@ class Hannspree
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Hannspree');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Hannspree');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Hannspree' . DIRECTORY_SEPARATOR
         );

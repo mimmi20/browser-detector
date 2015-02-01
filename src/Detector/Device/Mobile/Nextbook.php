@@ -152,7 +152,7 @@ class Nextbook
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Nextbook');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Nextbook');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Nextbook' . DIRECTORY_SEPARATOR
         );

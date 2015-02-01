@@ -152,7 +152,7 @@ class Tolino
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Tolino');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Tolino');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Tolino' . DIRECTORY_SEPARATOR
         );

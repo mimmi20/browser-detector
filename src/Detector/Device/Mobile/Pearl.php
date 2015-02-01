@@ -112,7 +112,7 @@ class Pearl
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Pearl');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pearl');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pearl' . DIRECTORY_SEPARATOR
         );

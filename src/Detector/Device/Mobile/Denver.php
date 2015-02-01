@@ -112,7 +112,7 @@ class Denver
     {
         $chain = new Chain();
         $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace(__NAMESPACE__ . '\\Denver');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Denver');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Denver' . DIRECTORY_SEPARATOR
         );
