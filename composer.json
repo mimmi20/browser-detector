@@ -23,24 +23,14 @@
     "require": {
         "php": ">=5.4.0",
         "mimmi20/wurflcache": "1.2.*",
+        "mimmi20/wurfl-data": "dev-master",
         "psr/log": "~1.0",
         "browscap/browscap": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
-        "synchro/uasparser": "dev-master",
-        "tobie/ua-parser": "dev-master",
-        "mimmi20/wurfl": "dev-master",
-        "browscap/browscap-php": "dev-master",
         "monolog/monolog": "dev-master",
         "mikey179/vfsStream": "dev-master"
-    },
-    "suggest": {
-        "mimmi20/wurfl": "for using a wurfl xml file as data source",
-        "synchro/uasparser": "for using the uas parser as alternative parser",
-        "tobie/ua-parser": "for using the ua parser as alternative parser",
-        "browscap/browscap-php": "for using the browscap ini parser as alternative parser",
-        "crossjoin/browscap": "for using an alterantive browscap ini parser as alternative parser"
     },
     "autoload": {
         "psr-4": {

@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector;
 
 use BrowserDetector\Helper\Utils;
+use WurflData\Loader;
 
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
@@ -1466,15 +1467,9 @@ class Result implements \Serializable
             $wurflKey = $browser->getCapability('wurflKey');
         }
         $this->setCapability('wurflKey', $wurflKey);
-        
-        $datafile = realpath(__DIR__ . '/../../data/' . $wurflKey . '.php');
-        
-        if (null !== $wurflKey && false !== $datafile && file_exists($datafile)) {
-            $additionalData = require $datafile;
-        } else {
-            $additionalData = null;
-        }
-        
+
+        $additionalData = Loader::load($wurflKey);
+
         $properties = array_keys($this->getAllCapabilities());
 
         foreach ($properties as $property) {
@@ -1815,7 +1810,7 @@ class Result implements \Serializable
                     $ua    = $this->getCapability('useragent', false);
                     $utils = new Utils();
                     $utils->setUserAgent($ua);
-                    
+
                     if ($os->getName() == 'iOS' && !$utils->checkIfContains('Safari')) {
                         $value = true;
                     } else {
@@ -1853,7 +1848,7 @@ class Result implements \Serializable
                             //Windows MSIE Webview
                             'WebView',
                         );
-                        
+
                         foreach ($patterns as $pattern) {
                             if ($pattern[0] === '#') {
                                 // Regex
@@ -1863,7 +1858,7 @@ class Result implements \Serializable
                                 }
                                 continue;
                             }
-                                
+
                             // Substring matches are not abstracted for performance
                             $pattern_len = strlen($pattern);
                             $ua_len = strlen($ua);
@@ -1906,7 +1901,7 @@ class Result implements \Serializable
                         $value = false;
                     } else {
                         $os_ver = (float)$os->detectVersion()->getVersion(Version::MAJORMINOR);
-                        
+
                         switch ($os->getName()) {
                             case 'iOS':
                                 $value = ($os_ver >= 3.0);

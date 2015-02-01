@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffd41ae30c1d2d64eae7d6f9c1a995bd",
+    "hash": "97e4ee2765af133b752433876c57c1e0",
     "packages": [
         {
             "name": "browscap/browscap",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/browscap/browscap.git",
-                "reference": "fde64aa4afb9c91777696b9b415451325cce07ef"
+                "reference": "1b2479490d7cc084a2641180e5291c001881e458"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/browscap/browscap/zipball/fde64aa4afb9c91777696b9b415451325cce07ef",
-                "reference": "fde64aa4afb9c91777696b9b415451325cce07ef",
+                "url": "https://api.github.com/repos/browscap/browscap/zipball/1b2479490d7cc084a2641180e5291c001881e458",
+                "reference": "1b2479490d7cc084a2641180e5291c001881e458",
                 "shasum": ""
             },
             "require": {
@@ -27,8 +27,10 @@
             },
             "require-dev": {
                 "browscap/browscap-php": "*@dev",
+                "fabpot/php-cs-fixer": "*",
                 "mikey179/vfsstream": "dev-master",
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "2.*"
             },
             "bin": [
                 "bin/browscap"
@@ -69,7 +71,59 @@
             "keywords": [
                 "Browscap"
             ],
-            "time": "2015-01-08 15:05:24"
+            "time": "2015-01-29 17:23:37"
+        },
+        {
+            "name": "mimmi20/wurfl-data",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mimmi20/wurfl-data.git",
+                "reference": "593c689624848cdc273afd9ef71992ddbfb73b02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mimmi20/wurfl-data/zipball/593c689624848cdc273afd9ef71992ddbfb73b02",
+                "reference": "593c689624848cdc273afd9ef71992ddbfb73b02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WurflData\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Müller",
+                    "homepage": "https://github.com/mimmi20",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/mimmi20/wurfl-data/graphs/contributors"
+                }
+            ],
+            "description": "a Data Store that holds decompiled data from Wurfl",
+            "homepage": "https://github.com/mimmi20/wurfl-data",
+            "keywords": [
+                "browser",
+                "http",
+                "parser",
+                "user agent",
+                "user-agent"
+            ],
+            "time": "2015-01-27 18:19:45"
         },
         {
             "name": "mimmi20/wurflcache",
@@ -138,12 +192,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "b18a6eff04b15184375a6875ef2aa54bc5a7c9f2"
+                "reference": "7583a2b96b9fda7ece90e34a23cd46e4858b3352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b18a6eff04b15184375a6875ef2aa54bc5a7c9f2",
-                "reference": "b18a6eff04b15184375a6875ef2aa54bc5a7c9f2",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/7583a2b96b9fda7ece90e34a23cd46e4858b3352",
+                "reference": "7583a2b96b9fda7ece90e34a23cd46e4858b3352",
                 "shasum": ""
             },
             "require": {
@@ -202,7 +256,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-01-07 15:29:03"
+            "time": "2015-01-29 16:05:08"
         },
         {
             "name": "psr/log",
@@ -345,61 +399,6 @@
     ],
     "packages-dev": [
         {
-            "name": "browscap/browscap-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/browscap/browscap-php.git",
-                "reference": "e3e1d1f0b42b6b572115ad5c04c65805698d386d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/browscap/browscap-php/zipball/e3e1d1f0b42b6b572115ad5c04c65805698d386d",
-                "reference": "e3e1d1f0b42b6b572115ad5c04c65805698d386d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "phpbrowscap": "src/",
-                    "phpbrowscapTest": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Stoppani",
-                    "email": "jonathan.stoppani@gmail.com"
-                },
-                {
-                    "name": "Thomas Mueller",
-                    "email": "t_mueller_stolzenhain@yahoo.de"
-                },
-                {
-                    "name": "James Titcumb",
-                    "email": "james@asgrim.com"
-                }
-            ],
-            "description": "Standalone replacement for php's native get_browser() function",
-            "homepage": "https://github.com/browscap/browscap-php",
-            "keywords": [
-                "browser",
-                "capabilities",
-                "get_browser",
-                "user agent"
-            ],
-            "time": "2014-12-30 14:44:26"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.0.4",
             "source": {
@@ -459,12 +458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikey179/vfsStream.git",
-                "reference": "2d5131709917b80a315a83c08a56516d867ba59f"
+                "reference": "66f9615356a67e9dc4455cb13b32b303a97a4e07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/2d5131709917b80a315a83c08a56516d867ba59f",
-                "reference": "2d5131709917b80a315a83c08a56516d867ba59f",
+                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/66f9615356a67e9dc4455cb13b32b303a97a4e07",
+                "reference": "66f9615356a67e9dc4455cb13b32b303a97a4e07",
                 "shasum": ""
             },
             "require": {
@@ -486,76 +485,24 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "description": "Virtual file system to mock the real file system in unit tests.",
             "homepage": "http://vfs.bovigo.org/",
-            "time": "2014-12-12 18:31:31"
-        },
-        {
-            "name": "mimmi20/wurfl",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mimmi20/Wurfl.git",
-                "reference": "14e4747acaf86ed3e352e688d3a897cad1f0d18d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/Wurfl/zipball/14e4747acaf86ed3e352e688d3a897cad1f0d18d",
-                "reference": "14e4747acaf86ed3e352e688d3a897cad1f0d18d",
-                "shasum": ""
-            },
-            "require": {
-                "mimmi20/wurflcache": "1.2.*",
-                "php": ">=5.3.3",
-                "psr/log": "~1.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "1.3.*@dev",
-                "monolog/monolog": "1.*@dev",
-                "phpunit/phpunit": "*",
-                "zendframework/zend-config": "2.*"
-            },
-            "suggest": {
-                "monolog/monolog": "if you want to log to more than a file",
-                "zendframework/zend-config": "to use an other configuration"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Wurfl\\": "src/",
-                    "WurflTest\\": "tests/WurflTest/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "description": "the Wurfl PHP Library for PHP 5.3",
-            "homepage": "https://github.com/mimmi20/Wurfl",
-            "keywords": [
-                "Wurfl",
-                "browser",
-                "http",
-                "parser",
-                "user agent",
-                "user-agent"
-            ],
-            "time": "2014-10-09 05:23:25"
+            "time": "2015-01-17 11:05:36"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "ca158276c1200cc27f5409a5e338486bc0b4fc94"
+                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ca158276c1200cc27f5409a5e338486bc0b4fc94",
-                "reference": "ca158276c1200cc27f5409a5e338486bc0b4fc94",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/34cc484af1ca149188d0d9e91412191e398e0b67",
+                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +515,7 @@
             },
             "require-dev": {
                 "ext-xdebug": ">=2.1.4",
-                "phpunit/phpunit": "~4.1"
+                "phpunit/phpunit": "~4"
             },
             "suggest": {
                 "ext-dom": "*",
@@ -587,9 +534,6 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                ""
-            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -607,7 +551,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-26 13:28:33"
+            "time": "2015-01-24 10:06:35"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -744,16 +688,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "f8d5d08c56de5cfd592b3340424a81733259a876"
+                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/f8d5d08c56de5cfd592b3340424a81733259a876",
-                "reference": "f8d5d08c56de5cfd592b3340424a81733259a876",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db32c18eba00b121c145575fcbcd4d4d24e6db74",
+                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74",
                 "shasum": ""
             },
             "require": {
@@ -766,7 +710,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -789,20 +733,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2014-08-31 06:12:13"
+            "time": "2015-01-17 09:51:32"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.4.1",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6a5e49a86ce5e33b8d0657abe145057fc513543a"
+                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6a5e49a86ce5e33b8d0657abe145057fc513543a",
-                "reference": "6a5e49a86ce5e33b8d0657abe145057fc513543a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2e8580deebb7d1ac92ac878595e6bffe01069c2a",
+                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a",
                 "shasum": ""
             },
             "require": {
@@ -820,8 +764,9 @@
                 "sebastian/comparator": "~1.0",
                 "sebastian/diff": "~1.1",
                 "sebastian/environment": "~1.1",
-                "sebastian/exporter": "~1.0",
+                "sebastian/exporter": "~1.1",
                 "sebastian/global-state": "~1.0",
+                "sebastian/recursion-context": "~1.0",
                 "sebastian/version": "~1.0",
                 "symfony/yaml": "~2.0"
             },
@@ -860,7 +805,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-28 07:57:05"
+            "time": "2015-01-27 16:06:15"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -919,25 +864,25 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "c484a80f97573ab934e37826dba0135a3301b26a"
+                "reference": "1dd8869519a225f7f2b9eb663e225298fade819e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/c484a80f97573ab934e37826dba0135a3301b26a",
-                "reference": "c484a80f97573ab934e37826dba0135a3301b26a",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1dd8869519a225f7f2b9eb663e225298fade819e",
+                "reference": "1dd8869519a225f7f2b9eb663e225298fade819e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "sebastian/diff": "~1.1",
-                "sebastian/exporter": "~1.0"
+                "sebastian/diff": "~1.2",
+                "sebastian/exporter": "~1.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.1"
+                "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
@@ -979,7 +924,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2014-11-16 21:32:38"
+            "time": "2015-01-29 16:28:08"
         },
         {
             "name": "sebastian/diff",
@@ -1085,28 +1030,29 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "1.0.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "c7d59948d6e82818e1bdff7cadb6c34710eb7dc0"
+                "reference": "84839970d05254c73cde183a721c7af13aede943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c7d59948d6e82818e1bdff7cadb6c34710eb7dc0",
-                "reference": "c7d59948d6e82818e1bdff7cadb6c34710eb7dc0",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/84839970d05254c73cde183a721c7af13aede943",
+                "reference": "84839970d05254c73cde183a721c7af13aede943",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.3",
+                "sebastian/recursion-context": "~1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -1146,7 +1092,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2014-09-10 00:51:36"
+            "time": "2015-01-27 07:23:06"
         },
         {
             "name": "sebastian/global-state",
@@ -1200,6 +1146,59 @@
             "time": "2014-10-06 09:23:50"
         },
         {
+            "name": "sebastian/recursion-context",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/recursion-context.git",
+                "reference": "3989662bbb30a29d20d9faa04a846af79b276252"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/3989662bbb30a29d20d9faa04a846af79b276252",
+                "reference": "3989662bbb30a29d20d9faa04a846af79b276252",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                }
+            ],
+            "description": "Provides functionality to recursively process PHP variables",
+            "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+            "time": "2015-01-24 09:48:32"
+        },
+        {
             "name": "sebastian/version",
             "version": "1.0.4",
             "source": {
@@ -1233,53 +1232,6 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2014-12-15 14:25:24"
-        },
-        {
-            "name": "symfony/finder",
-            "version": "v2.6.3",
-            "target-dir": "Symfony/Component/Finder",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Finder.git",
-                "reference": "16513333bca64186c01609961a2bb1b95b5e1355"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/16513333bca64186c01609961a2bb1b95b5e1355",
-                "reference": "16513333bca64186c01609961a2bb1b95b5e1355",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Finder\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-01-03 08:01:59"
         },
         {
             "name": "symfony/yaml",
@@ -1327,117 +1279,13 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2015-01-03 15:33:07"
-        },
-        {
-            "name": "synchro/uasparser",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Synchro/UASparser.git",
-                "reference": "3e15df436a9a2e5034c1bcd0559ce2a59d329f06"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Synchro/UASparser/zipball/3e15df436a9a2e5034c1bcd0559ce2a59d329f06",
-                "reference": "3e15df436a9a2e5034c1bcd0559ce2a59d329f06",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "1.4.*@dev",
-                "phpunit/phpcov": "dev-master",
-                "phpunit/phpunit": "4.3.*",
-                "phpunit/phpunit-story": "*",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "UAS": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Jaroslav Mallat",
-                    "homepage": "http://user-agent-string.info/",
-                    "role": "developer"
-                },
-                {
-                    "name": "Marcus Bointon",
-                    "email": "marcus@synchromedia.co.uk",
-                    "homepage": "https://github.com/Synchro",
-                    "role": "developer"
-                }
-            ],
-            "description": "UASparser is a PHP parser and classifier for user agent strings presented by HTTP clients using databases from http://user-agent-string.info/.",
-            "homepage": "https://github.com/Synchro/UASparser",
-            "keywords": [
-                "http",
-                "parser",
-                "user-agent"
-            ],
-            "time": "2014-11-25 13:12:43"
-        },
-        {
-            "name": "tobie/ua-parser",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tobie/ua-parser.git",
-                "reference": "d851cdb43b4d32cd90514645436f017e52db8f23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tobie/ua-parser/zipball/d851cdb43b4d32cd90514645436f017e52db8f23",
-                "reference": "d851cdb43b4d32cd90514645436f017e52db8f23",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/console": "~2",
-                "symfony/filesystem": "~2",
-                "symfony/finder": "~2",
-                "symfony/yaml": "~2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3"
-            },
-            "bin": [
-                "php/bin/uaparser.php"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "UAParser": "php/src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Olsen",
-                    "email": "dmolsen@gmail.com"
-                }
-            ],
-            "description": "A multi-language port of Browserscope's user agent parser.",
-            "time": "2014-11-23 19:31:34"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "mimmi20/wurfl-data": 20,
         "browscap/browscap": 20,
-        "synchro/uasparser": 20,
-        "tobie/ua-parser": 20,
-        "mimmi20/wurfl": 20,
-        "browscap/browscap-php": 20,
         "monolog/monolog": 20,
         "mikey179/vfsstream": 20
     },
