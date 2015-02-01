@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Input;
 
-use BrowserDetector\BrowserDetector;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 
