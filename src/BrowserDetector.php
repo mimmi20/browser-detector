@@ -197,49 +197,9 @@ class BrowserDetector
      * @throws \UnexpectedValueException
      * @return \BrowserDetector\BrowserDetector
      */
-    public function setInterface($interface)
+    public function setInterface(Input\InputInterface $interface)
     {
-        $allowedInterfaces = array(
-            self::INTERFACE_INTERNAL,
-            self::INTERFACE_BROWSCAP_INI,
-            self::INTERFACE_WURFL_FILE,
-            self::INTERFACE_WURFL_CLOUD,
-            self::INTERFACE_UAPARSER,
-            self::INTERFACE_UASPARSER,
-            self::INTERFACE_BROWSCAP_CROSSJOIN
-        );
-
-        if (!is_int($interface) || !in_array($interface, $allowedInterfaces)) {
-            throw new UnexpectedValueException(
-                'the interface is unknown'
-            );
-        }
-
-        switch ($interface) {
-            case self::INTERFACE_INTERNAL:
-                $this->interface = new Input\UserAgent();
-                break;
-            case self::INTERFACE_BROWSCAP_INI:
-                $this->interface = new Input\Browscap();
-                break;
-            case self::INTERFACE_WURFL_FILE:
-                $this->interface = new Input\Wurfl();
-                break;
-            case self::INTERFACE_UAPARSER:
-                $this->interface = new Input\Uaparser();
-                break;
-            case self::INTERFACE_UASPARSER:
-                $this->interface = new Input\Uasparser();
-                break;
-            case self::INTERFACE_BROWSCAP_CROSSJOIN:
-                $this->interface = new Input\CrossJoin();
-                break;
-            default:
-                throw new UnexpectedValueException(
-                    'an unsupported interface was set'
-                );
-                break;
-        }
+        $this->interface = $interface;
 
         return $this;
     }
@@ -254,7 +214,7 @@ class BrowserDetector
     {
         if (null === $this->interface) {
             // set the internal interface as default
-            $this->setInterface(self::INTERFACE_INTERNAL);
+            $this->setInterface(new Input\UserAgent());
         }
 
         if (null !== $this->getCache()) {

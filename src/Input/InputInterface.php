@@ -31,47 +31,20 @@
 namespace BrowserDetector\Input;
 
 use BrowscapPHP\Cache\CacheInterface;
-use BrowserDetector\BrowserDetector;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 
 /**
- * BrowserDetector.ini parsing class with caching and update capabilities
+ * UaComparator.ini parsing class with caching and update capabilities
  *
- * @category  BrowserDetector
- * @package   BrowserDetector
+ * @category  UaComparator
+ * @package   UaComparator
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2014 Thomas Mueller
+ * @copyright 2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class Core implements InputInterface
+interface InputInterface
 {
-    /**
-     * a \WurflCache\Adapter\AdapterInterface object
-     *
-     * @var \BrowscapPHP\Cache\CacheInterface
-     */
-    protected $cache = null;
-
-    /**
-     * an logger instance
-     *
-     * @var \Psr\Log\LoggerInterface
-     */
-    protected $logger = null;
-
-    /*
-     * @var string
-     */
-    protected $cachePrefix = '';
-
-    /**
-     * the user agent sent from the browser
-     *
-     * @var string
-     */
-    protected $_agent = '';
-
     /**
      * sets the cache used to make the detection faster
      *
@@ -79,46 +52,16 @@ abstract class Core implements InputInterface
      *
      * @return Core
      */
-    public function setCache(AdapterInterface $cache)
-    {
-        $this->cache = $cache;
-
-        return $this;
-    }
+    public function setCache(AdapterInterface $cache);
 
     /**
      * sets the logger
      *
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param LoggerInterface $logger
      *
-     * @return BrowserDetector
+     * @return UaComparator
      */
-    public function setLogger(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-
-        return $this;
-    }
-
-    /**
-     * Adds a log record at an arbitrary level.
-     *
-     * This method allows for compatibility with common interfaces.
-     *
-     * @param  mixed  $level   The log level
-     * @param  string $message The log message
-     * @param  array  $context The log context
-     *
-     * @return BrowserDetector
-     */
-    protected function log($level, $message, array $context = array())
-    {
-        if (null !== $this->logger) {
-            $this->logger->log($level, $message, $context);
-        }
-
-        return $this;
-    }
+    public function setLogger(LoggerInterface $logger);
 
     /**
      * sets the the cache prefix
@@ -128,25 +71,14 @@ abstract class Core implements InputInterface
      * @throws \UnexpectedValueException
      * @return Core
      */
-    public function setCachePrefix($prefix)
-    {
-        if (!is_string($prefix)) {
-            throw new \UnexpectedValueException(
-                'the cache prefix has to be a string'
-            );
-        }
-
-        $this->cachePrefix = $prefix;
-
-        return $this;
-    }
+    public function setCachePrefix($prefix);
 
     /**
      * Gets the information about the browser by User Agent
      *
      * @return mixed
      */
-    abstract public function getBrowser();
+    public function getBrowser();
 
     /**
      * returns the stored user agent
@@ -155,30 +87,19 @@ abstract class Core implements InputInterface
      *
      * @return UserAgent
      */
-    public function setAgent($userAgent)
-    {
-        $this->_agent = $userAgent;
-
-        return $this;
-    }
+    public function setAgent($userAgent);
 
     /**
      * returns the stored user agent
      *
      * @return string
      */
-    public function getAgent()
-    {
-        return $this->_agent;
-    }
+    public function getAgent();
 
     /**
      * returns the stored user agent
      *
      * @return string
      */
-    public function __toString()
-    {
-        return $this->getAgent();
-    }
+    public function __toString();
 }

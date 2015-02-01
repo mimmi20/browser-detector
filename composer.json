@@ -44,7 +44,11 @@
     },
     "autoload": {
         "psr-4": {
-            "BrowserDetector\\": "src/",
+            "BrowserDetector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "BrowserDetectorTest\\": "tests/"
         }
     }
