@@ -38,17 +38,5 @@ namespace BrowserDetector\Detector\Company;
  */
 class Unknown extends AbstractCompany implements CompanyInterface
 {
-    /**
-     * the name of the company
-     *
-     * @var string
-     */
-    protected $name = null;
-
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    protected $brandname = null;
+    // nothing to do
 }

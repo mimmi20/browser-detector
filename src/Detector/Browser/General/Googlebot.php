@@ -161,7 +161,7 @@ class Googlebot
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\Googlebot
+     * @return \BrowserDetector\Detector\Browser\General\Googlebot
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device

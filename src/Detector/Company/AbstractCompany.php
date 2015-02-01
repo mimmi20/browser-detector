@@ -39,6 +39,20 @@ namespace BrowserDetector\Detector\Company;
 abstract class AbstractCompany implements CompanyInterface
 {
     /**
+     * the name of the company
+     *
+     * @var string
+     */
+    protected $name = null;
+
+    /**
+     * the brand name of the company
+     *
+     * @var string
+     */
+    protected $brandname = null;
+
+    /**
      * Returns the name of the company
      *
      * @return string

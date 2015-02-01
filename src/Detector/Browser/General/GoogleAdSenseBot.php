@@ -122,7 +122,7 @@ class GoogleAdSenseBot
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\GoogleAdSenseBot
+     * @return \BrowserDetector\Detector\Browser\General\GoogleAdSenseBot
      */
     public function detectVersion()
     {
@@ -152,7 +152,7 @@ class GoogleAdSenseBot
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return \BrowserDetector\Detector\Browser\Bot\GoogleAdSenseBot
+     * @return \BrowserDetector\Detector\Browser\General\GoogleAdSenseBot
      */
     public function detectDependProperties(
         EngineHandler $engine, OsHandler $os, DeviceHandler $device
