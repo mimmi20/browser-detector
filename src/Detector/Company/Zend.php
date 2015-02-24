@@ -43,7 +43,7 @@ class Zend extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'Zend Technologies Ltd';
+    protected $name = 'Zend Technologies Ltd.';
 
     /**
      * the brand name of the company
