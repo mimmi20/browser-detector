@@ -249,6 +249,10 @@ class Iphone
             $this->setCapability('wurflKey', 'apple_iphone_ver7_1');
         }
 
+        if (8.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver8_1');
+        }
+
         $browserVersion = $browser->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
