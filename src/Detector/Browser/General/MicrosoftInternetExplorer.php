@@ -49,24 +49,25 @@ class MicrosoftInternetExplorer
     extends BrowserHandler
 {
     private $patterns = array(
-        '/Mozilla\/5\.0.*\(.*Trident\/7\.0.*rv\:11\.0.*\) like Gecko.*/' => '11.0',
-        '/Mozilla\/5\.0.*\(.*MSIE 10\.0.*/'                              => '10.0',
-        '/Mozilla\/5\.0.*\(.*MSIE 9\.0.*/'                               => '9.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'                            => '8.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'                            => '7.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'                            => '6.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'                            => '5.5',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/'                           => '5.23',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.22.*/'                           => '5.22',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.17.*/'                           => '5.17',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.16.*/'                           => '5.16',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/'                           => '5.01',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'                            => '5.0',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/'                           => '4.01',
-        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.0.*/'                            => '4.0',
-        '/Mozilla\/.*\(.*MSIE 3\..*/'                                    => '3.0',
-        '/Mozilla\/.*\(.*MSIE 2\..*/'                                    => '2.0',
-        '/Mozilla\/.*\(.*MSIE 1\..*/'                                    => '1.0'
+        '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
+        '/Mozilla\/5\.0.*\(.*Trident\/7\.0.*rv\:11\.0.*\) like Gecko.*/'                       => '11.0',
+        '/Mozilla\/5\.0.*\(.*MSIE 10\.0.*/'                                                    => '10.0',
+        '/Mozilla\/5\.0.*\(.*MSIE 9\.0.*/'                                                     => '9.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 8\.0.*/'                                                  => '8.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 7\.0.*/'                                                  => '7.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 6\.0.*/'                                                  => '6.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.5.*/'                                                  => '5.5',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.23.*/'                                                 => '5.23',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.22.*/'                                                 => '5.22',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.17.*/'                                                 => '5.17',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.16.*/'                                                 => '5.16',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.01.*/'                                                 => '5.01',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 5\.0.*/'                                                  => '5.0',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.01.*/'                                                 => '4.01',
+        '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.0.*/'                                                  => '4.0',
+        '/Mozilla\/.*\(.*MSIE 3\..*/'                                                          => '3.0',
+        '/Mozilla\/.*\(.*MSIE 2\..*/'                                                          => '2.0',
+        '/Mozilla\/.*\(.*MSIE 1\..*/'                                                          => '1.0'
     );
 
     /**
@@ -125,8 +126,6 @@ class MicrosoftInternetExplorer
             'palemoon',
             'avant',
             // other Browsers
-            'applewebkit',
-            'chrome',
             'linux',
             'msoffice',
             'outlook',

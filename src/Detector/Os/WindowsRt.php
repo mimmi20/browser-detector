@@ -45,7 +45,7 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Windows
+class WindowsRt
     extends OsHandler
     implements OsInterface
 {
@@ -67,7 +67,7 @@ class Windows
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('ARM;'))) {
+        if (!$this->utils->checkIfContains(array('ARM;'))) {
             return false;
         }
 
@@ -81,7 +81,7 @@ class Windows
      */
     public function getName()
     {
-        return 'Windows';
+        return 'Windows RT';
     }
 
     /**

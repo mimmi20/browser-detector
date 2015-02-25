@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Windows;
+use BrowserDetector\Detector\Os\WindowsRt;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
@@ -166,7 +166,7 @@ class WindowsRt8Tablet
      */
     public function detectOs()
     {
-        $handler = new Windows();
+        $handler = new WindowsRt();
         $handler->setUseragent($this->_useragent);
 
         return $handler;
@@ -217,8 +217,9 @@ class WindowsRt8Tablet
             Version::MAJORMINOR
         );
 
-        switch ((float)$osVersion) {
-        case 8.1:
+        switch ($osVersion) {
+        case '8.1':
+        case 'RT 8.1':
             $this->setCapability('wurflKey', 'windows_8_rt_ver1_subos81');
             $this->setCapability('has_qwerty_keyboard', true);
             $this->setCapability('physical_screen_width', 22);

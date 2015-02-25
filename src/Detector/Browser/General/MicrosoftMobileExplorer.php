@@ -95,7 +95,6 @@ class MicrosoftMobileExplorer
             'Flock',
             'MyIE',
             //others
-            'AppleWebKit',
             'Chrome',
             'Linux',
             'MSOffice',

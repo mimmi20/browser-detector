@@ -182,7 +182,7 @@ class AmazonKftt
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        if ('Android Webkit' == $browser->getName()) {
+        if ('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) {
             $this->setCapability('wurflKey', 'amazon_kindle_fire_hd7_ver1_subuanosilk');
         }
 
