@@ -103,7 +103,7 @@ class MicrosoftInternetExplorer
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'MSIE', 'Trident'))) {
+        if (!$this->utils->checkIfContains(array('Mozilla/', 'MSIE', 'Trident', 'Edge'))) {
             return false;
         }
 
@@ -113,8 +113,6 @@ class MicrosoftInternetExplorer
 
         $isNotReallyAnIE = array(
             'presto',
-            'webkit',
-            'khtml',
             // using also the Trident rendering engine
             'crazy browser',
             'flock',

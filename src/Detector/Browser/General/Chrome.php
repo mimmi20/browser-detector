@@ -115,6 +115,7 @@ class Chrome
             'YaBrowser',
             'Firefox',
             'Iceweasel',
+            'Edge',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',
