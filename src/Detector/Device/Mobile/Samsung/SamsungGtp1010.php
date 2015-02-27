@@ -52,39 +52,36 @@ class SamsungGtp1010
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_galaxy_tab_ver1_subp1010', // not in wurfl
+        'wurflKey'               => 'samsung_galaxy_tab_ver1_subp1010', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P1010',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P1010',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P1000.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P1000.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 178,
-        'physical_screen_height'  => 304,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 400,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 600,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216, // wurflkey: samsung_galaxy_tab_ver1_subp1010
+        'physical_screen_width'  => 178,
+        'physical_screen_height' => 304,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 400,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216, // wurflkey: samsung_galaxy_tab_ver1_subp1010
 
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

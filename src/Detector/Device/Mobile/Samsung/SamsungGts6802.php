@@ -55,39 +55,35 @@ class SamsungGts6802
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s6802_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s6802_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-S6802',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Ace Duos', // wurflkey: samsung_gt_s6802_ver1
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_s6802_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-S6802',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Ace Duos', // wurflkey: samsung_gt_s6802_ver1
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_s6802_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S6802.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S6802.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50, // wurflkey: samsung_gt_s6802_ver1
-        'physical_screen_height'  => 74,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 300,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50, // wurflkey: samsung_gt_s6802_ver1
+        'physical_screen_height' => 74,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class SamsungGts6802
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

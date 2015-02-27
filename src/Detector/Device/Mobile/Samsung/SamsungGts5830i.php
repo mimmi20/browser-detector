@@ -55,39 +55,35 @@ class SamsungGts5830i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s5830_ver1_subuai', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s5830_ver1_subuai', // not in wurfl
 
         // device
-        'model_name'              => 'GT-S5830i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Ace',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-S5830i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Ace',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5830.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5830.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 74,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 74,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -168,7 +164,9 @@ class SamsungGts5830i
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

@@ -56,39 +56,36 @@ class SamsungGtn8000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_n8000_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_n8000_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-N8000',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Note 10.1', // wurflkey: samsung_gt_n8000_ver1
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_n8000_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-N8000',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Note 10.1', // wurflkey: samsung_gt_n8000_ver1
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_n8000_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-N8000.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-N8000.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 218,
-        'physical_screen_height'  => 136,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 136,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true, // wurflkey: samsung_gt_n8000_ver1_suban41
+        'sms_enabled'            => true, // wurflkey: samsung_gt_n8000_ver1_suban41
 
         // chips
-        'nfc_support'             => true, // wurflkey: samsung_gt_n8000_ver1_suban41
+        'nfc_support'            => true, // wurflkey: samsung_gt_n8000_ver1_suban41
     );
 
     /**
@@ -169,7 +166,9 @@ class SamsungGtn8000
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

@@ -56,39 +56,35 @@ class SamsungGti9300
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i9300_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9300_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I9300',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy S III',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I9300',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy S III',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9300.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9300.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 60,
-        'physical_screen_height'  => 107,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 360,
-        'max_image_height'        => 640,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 60,
+        'physical_screen_height' => 107,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class SamsungGti9300
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -181,27 +179,41 @@ class SamsungGti9300
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41');
-                        break;
-                    case 4.3:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban43');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-
                 if ($this->utils->checkIfContains('SAMSUNG GT-I9300/I9300')) {
-                    $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_subuasamsung');
+                    switch ((float)$osVersion) {
+                        case 4.3:
+                            $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban43samsung');
+                            break;
+                        case 2.1:
+                        case 2.2:
+                        case 2.3:
+                        case 3.1:
+                        case 3.2:
+                        case 4.0:
+                        case 4.2:
+                        default:
+                            $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_subuasamsung');
+                            break;
+                    }
+                } else {
+                    switch ((float)$osVersion) {
+                        case 4.1:
+                            $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41');
+                            break;
+                        case 4.3:
+                            $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban43');
+                            break;
+                        case 2.1:
+                        case 2.2:
+                        case 2.3:
+                        case 3.1:
+                        case 3.2:
+                        case 4.0:
+                        case 4.2:
+                        default:
+                            // nothing to do here
+                            break;
+                    }
                 }
                 break;
             case 'Chrome':
@@ -213,6 +225,9 @@ class SamsungGti9300
                         break;
                     case 4.1:
                         $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41_subuachrome');
+                        break;
+                    case 4.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban43');
                         break;
                     case 2.1:
                     case 2.2:

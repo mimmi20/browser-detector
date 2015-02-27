@@ -56,39 +56,35 @@ class SamsungSmG900F
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_sm_g900_ver1_subuaf28', // not in wurfl
+        'wurflKey'               => 'samsung_sm_g900f_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'SM-G900F',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy S5 LTE',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'SM-G900F',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy S5 LTE',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1080,
-        'resolution_height'       => 1920,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -169,7 +165,9 @@ class SamsungSmG900F
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -181,52 +179,52 @@ class SamsungSmG900F
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            }
-            break;
-        case 'Chrome':
-        case 'Android WebView':
-            $engine->setCapability('is_sencha_touch_ok', false);
-            $engine->setCapability('html_wi_imode_compact_generic', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', true);
-            $engine->setCapability('xhtml_supports_forms_in_table', true);
-            $engine->setCapability('xhtml_file_upload', 'supported');
-            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-            $engine->setCapability('gif_animated', false);
-            $engine->setCapability('svgt_1_1', true);
+            case 'Chrome':
+            case 'Android WebView':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $engine->setCapability('html_wi_imode_compact_generic', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', true);
+                $engine->setCapability('xhtml_supports_forms_in_table', true);
+                $engine->setCapability('xhtml_file_upload', 'supported');
+                $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+                $engine->setCapability('gif_animated', false);
+                $engine->setCapability('svgt_1_1', true);
 
-            switch ((float)$osVersion) {
-            case 4.1:
-                $this->setCapability('wurflKey', 'samsung_gt_n7100_ver1_subuachrome');
+                switch ((float)$osVersion) {
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_n7100_ver1_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

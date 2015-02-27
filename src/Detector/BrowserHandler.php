@@ -86,15 +86,12 @@ abstract class BrowserHandler
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => null,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -132,6 +129,83 @@ abstract class BrowserHandler
     public function canHandle()
     {
         return false;
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 1;
+    }
+
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     *
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @return string Capability value
+     * @throws \InvalidArgumentException
+     */
+    public function getCapability($capabilityName)
+    {
+        $this->checkCapability($capabilityName);
+
+        return $this->properties[$capabilityName];
+    }
+
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     *
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @throws \InvalidArgumentException
+     */
+    protected function checkCapability($capabilityName)
+    {
+        if (empty($capabilityName)) {
+            throw new \InvalidArgumentException('capability name must not be empty');
+        }
+
+        if (!array_key_exists($capabilityName, $this->properties)) {
+            throw new \InvalidArgumentException('no capability named [' . $capabilityName . '] is present.');
+        }
+    }
+
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     *
+     * @param string $capabilityName must be a valid capability name
+     * @param mixed  $capabilityValue
+     *
+     * @return BrowserHandler
+     *
+     * @throws \InvalidArgumentException
+     */
+    public function setCapability(
+        $capabilityName,
+        $capabilityValue = null
+    ) {
+        $this->checkCapability($capabilityName);
+
+        $this->properties[$capabilityName] = $capabilityValue;
+
+        return $this;
+    }
+
+    /**
+     * Returns the values of all capabilities for the current device
+     *
+     * @return array All Capability values
+     */
+    public function getCapabilities()
+    {
+        return $this->properties;
     }
 
     /**
@@ -178,76 +252,8 @@ abstract class BrowserHandler
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @return string Capability value
-     * @throws \InvalidArgumentException
-     */
-    public function getCapability($capabilityName)
-    {
-        $this->checkCapability($capabilityName);
-
-        return $this->properties[$capabilityName];
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     * @param mixed  $capabilityValue
-     *
-     * @return BrowserHandler
-     *
-     * @throws \InvalidArgumentException
-     */
-    public function setCapability($capabilityName, $capabilityValue = null)
-    {
-        $this->checkCapability($capabilityName);
-
-        $this->properties[$capabilityName] = $capabilityValue;
-
-        return $this;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @throws \InvalidArgumentException
-     */
-    protected function checkCapability($capabilityName)
-    {
-        if (empty($capabilityName)) {
-            throw new \InvalidArgumentException(
-                'capability name must not be empty'
-            );
-        }
-
-        if (!array_key_exists($capabilityName, $this->properties)) {
-            throw new \InvalidArgumentException(
-                'no capability named [' . $capabilityName . '] is present.'
-            );
-        }
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the device does not have a specific Operating System,
+     * returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
@@ -273,27 +279,19 @@ abstract class BrowserHandler
     }
 
     /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getCapabilities()
-    {
-        return $this->properties;
-    }
-
-    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param EngineHandler $engine
-     * @param OsHandler     $os
-     * @param DeviceHandler $device
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return BrowserHandler
+     * @return \BrowserDetector\Detector\BrowserHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         $engine->detectDependProperties($os, $device, $this);
 

@@ -61,15 +61,12 @@ class MicrosoftOffice
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -162,46 +159,6 @@ class MicrosoftOffice
         return $detector->setVersion($this->mapVersion($this->detectInternalVersion()));
     }
 
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string|null
-     */
-    protected function detectInternalVersion()
-    {
-        $doMatch = preg_match(
-            '/MSOffice ([\d\.]+)/', $this->useragent, $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office\/([\d\.]+)/', $this->useragent, $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office\/(\d+)/', $this->useragent, $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        return null;
-    }
-
     protected function mapVersion($version)
     {
         if (15 == (int)$version) {
@@ -217,6 +174,52 @@ class MicrosoftOffice
         }
 
         return '';
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string|null
+     */
+    protected function detectInternalVersion()
+    {
+        $doMatch = preg_match(
+            '/MSOffice ([\d\.]+)/',
+            $this->useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match(
+            '/microsoft Office\/([\d\.]+)/',
+            $this->useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match(
+            '/microsoft Office\/(\d+)/',
+            $this->useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        return null;
     }
 
     /**
@@ -251,10 +254,12 @@ class MicrosoftOffice
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftOffice
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
@@ -265,7 +270,7 @@ class MicrosoftOffice
         $engine->setCapability('xhtml_supports_iframe', 'none');
         $engine->setCapability('cookie_support', false);
         $engine->setCapability('ajax_support_javascript', false);
-        
+
         $browserVersion = (int)$this->detectInternalVersion();
 
         switch ($browserVersion) {
@@ -282,7 +287,7 @@ class MicrosoftOffice
                 // nothing to do here
                 break;
         }
-        
+
         $this->setCapability('wurflKey', 'ms_office_subua' . $browserVersion);
 
         return $this;

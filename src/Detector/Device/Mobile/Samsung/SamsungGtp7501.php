@@ -55,39 +55,35 @@ class SamsungGtp7501
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_galaxy_tab_p4_ver1_subuap7501', // not in wurfl
+        'wurflKey'               => 'samsung_galaxy_tab_p4_ver1_subuap7501', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P7501',
-        'model_extra_info'        => '10.1 N',
-        'marketing_name'          => 'Galaxy Tab 10.1N',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P7501',
+        'model_extra_info'       => '10.1 N',
+        'marketing_name'         => 'Galaxy Tab 10.1N',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P7501.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P7501.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 218,
-        'physical_screen_height'  => 136,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 136,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -168,7 +164,9 @@ class SamsungGtp7501
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

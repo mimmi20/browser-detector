@@ -52,39 +52,35 @@ class SamsungGtp5113
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_p5100_ver1_subua5113', // not in wurfl
+        'wurflKey'               => 'samsung_gt_p5100_ver1_subua5113', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P5113',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab 2 10.1 WiFi', // wurflkey: samsung_gt_p5100_ver1_subua5113
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_p5100_ver1_subua5113
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P5113',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 2 10.1 WiFi', // wurflkey: samsung_gt_p5100_ver1_subua5113
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p5100_ver1_subua5113
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P5113.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P5113.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

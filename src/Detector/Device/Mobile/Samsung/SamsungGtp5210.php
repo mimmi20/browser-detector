@@ -56,39 +56,35 @@ class SamsungGtp5210
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_p5200_ver1_subua5210', // not in wurfl
+        'wurflKey'               => 'samsung_gt_p5200_ver1_subua5210', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P5210',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab 3 10.1',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P5210',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 3 10.1',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P5210.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P5210.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 136,
-        'physical_screen_height'  => 218,
-        'columns'                 => 21,
-        'rows'                    => 25,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 136,
+        'physical_screen_height' => 218,
+        'columns'                => 21,
+        'rows'                   => 25,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -169,7 +165,9 @@ class SamsungGtp5210
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -185,44 +183,44 @@ class SamsungGtp5210
         }
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 4.4:
-                $this->setCapability('wurflKey', 'samsung_gt_p5200_ver1_suban44p5210');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'samsung_gt_p5200_ver1_suban44p5210');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

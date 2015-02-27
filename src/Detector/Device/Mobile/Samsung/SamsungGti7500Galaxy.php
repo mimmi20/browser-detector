@@ -52,39 +52,35 @@ class SamsungGti7500Galaxy
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i7500_ver1_suban16', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i7500_ver1_suban16', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I7500', // wurflkey: samsung_gt_i7500_ver1_suban16
-        'model_extra_info'        => 'Donut', // wurflkey: samsung_gt_i7500_ver1_suban16
-        'marketing_name'          => 'Galaxy', // wurflkey: samsung_gt_i7500_ver1_suban16
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i7500_ver1_suban16
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I7500', // wurflkey: samsung_gt_i7500_ver1_suban16
+        'model_extra_info'       => 'Donut', // wurflkey: samsung_gt_i7500_ver1_suban16
+        'marketing_name'         => 'Galaxy', // wurflkey: samsung_gt_i7500_ver1_suban16
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i7500_ver1_suban16
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

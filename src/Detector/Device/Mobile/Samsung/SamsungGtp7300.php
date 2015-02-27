@@ -52,39 +52,35 @@ class SamsungGtp7300
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_p7300_ver1_suban32', // not in wurfl
+        'wurflKey'               => 'samsung_gt_p7300_ver1_suban32', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P7300',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab 8.9',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P7300',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 8.9',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P7300.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P7300.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 217,
-        'physical_screen_height'  => 136,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**

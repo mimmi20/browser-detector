@@ -56,39 +56,35 @@ class SamsungGtp3113
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_p3100_ver1_subua3113', // not in wurfl
+        'wurflKey'               => 'samsung_gt_p3100_ver1_subua3113', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P3113',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab 2 7.0', // wurflkey: samsung_gt_p3100_ver1_subua3113
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_p3100_ver1_subua3113
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P3113',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 2 7.0', // wurflkey: samsung_gt_p3100_ver1_subua3113
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p3100_ver1_subua3113
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P3113.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P3113.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 154,
-        'physical_screen_height'  => 90,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 600,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 154,
+        'physical_screen_height' => 90,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class SamsungGtp3113
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

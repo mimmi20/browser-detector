@@ -55,39 +55,35 @@ class SamsungGti8320
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i8320_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i8320_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I8320',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'GT-I8320',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I8320',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'GT-I8320',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/I8320UAProf3G.rdf',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/I8320UAProf3G.rdf',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 90,
-        'columns'                 => 32,
-        'rows'                    => 40,
-        'max_image_width'         => 380,
-        'max_image_height'        => 700,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 90,
+        'columns'                => 32,
+        'rows'                   => 40,
+        'max_image_width'        => 380,
+        'max_image_height'       => 700,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

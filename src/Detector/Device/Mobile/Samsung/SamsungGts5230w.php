@@ -52,39 +52,36 @@ class SamsungGts5230w
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s5230w_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s5230w_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT S5230W',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Star', // wurflkey: samsung_gt_s5230w_ver1
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen', // wurflkey: samsung_gt_s5230w_ver1
+        'model_name'             => 'GT S5230W',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Star', // wurflkey: samsung_gt_s5230w_ver1
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen', // wurflkey: samsung_gt_s5230w_ver1
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5230W.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5230W.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 240,
-        'resolution_height'       => 400,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

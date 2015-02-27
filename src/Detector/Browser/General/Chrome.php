@@ -62,15 +62,12 @@ class Chrome
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -203,19 +200,24 @@ class Chrome
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
+     * @param \BrowserDetector\Detector\OsHandler $os
+     *
      * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
-    public function detectEngine()
+    public function detectEngine(OsHandler $os = null)
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        if ($version >= 28) {
+        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+            $engine = new Webkit();
+        } elseif ($version >= 28) {
             $engine = new Blink();
         } else {
             $engine = new Webkit();
         }
 
         $engine->setUseragent($this->useragent);
+
         return $engine;
     }
 
@@ -230,7 +232,9 @@ class Chrome
      * @return \BrowserDetector\Detector\Browser\General\Chrome
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
@@ -275,7 +279,7 @@ class Chrome
             $engine->setCapability('css_rounded_corners', 'css3');
         }
 
-        $this->setCapability('wurflKey', 'google_chrome_' . (int) $version);
+        $this->setCapability('wurflKey', 'google_chrome_' . (int)$version);
         $engine->setCapability('xhtml_table_support', false);
 
         return $this;

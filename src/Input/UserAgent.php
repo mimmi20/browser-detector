@@ -53,7 +53,8 @@ use BrowserDetector\Detector\Result;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UserAgent extends Core
+class UserAgent
+    extends Core
 {
     /**
      * the detected browser
@@ -102,8 +103,7 @@ class UserAgent extends Core
         // detect the browser which is used
         $this->browser = $this->os->detectBrowser();
         if (!($this->browser instanceof BrowserInterface)
-            || ($this->os instanceof UnknownOs
-                && is_callable(array($this->device, 'detectBrowser')))
+            || ($this->os instanceof UnknownOs && is_callable(array($this->device, 'detectBrowser')))
         ) {
             $this->browser = $this->device->detectBrowser();
         }
@@ -113,77 +113,28 @@ class UserAgent extends Core
         }
 
         // detect the engine which is used in the browser
-        $this->engine = $this->browser->detectEngine();
+        $this->engine = $this->browser->detectEngine($this->os);
         if (!($this->engine instanceof EngineHandler)) {
             $this->engine = $this->detectEngine();
         }
 
         $this->device->detectDependProperties(
-            $this->browser, $this->engine, $this->os
+            $this->browser,
+            $this->engine,
+            $this->os
         );
 
         $result = new Result();
         $result->setCapability('useragent', $this->_agent);
 
         $result->setDetectionResult(
-            $this->device, $this->os, $this->browser, $this->engine
+            $this->device,
+            $this->os,
+            $this->browser,
+            $this->engine
         );
 
         return $result;
-    }
-
-    /**
-     * Gets the information about the rendering engine by User Agent
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    private function detectEngine()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Engine');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Engine' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownEngine());
-
-        return $chain->detect();
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @return \BrowserDetector\Detector\BrowserHandler
-     */
-    private function detectBrowser()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
-    }
-
-    /**
-     * Gets the information about the os by User Agent
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    private function detectOs()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Os');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownOs());
-
-        return $chain->detect();
     }
 
     /**
@@ -212,5 +163,59 @@ class UserAgent extends Core
         }
 
         return $device;
+    }
+
+    /**
+     * Gets the information about the os by User Agent
+     *
+     * @return \BrowserDetector\Detector\OsHandler
+     */
+    private function detectOs()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\BrowserDetector\Detector\Os');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler(new UnknownOs());
+
+        return $chain->detect();
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @return \BrowserDetector\Detector\BrowserHandler
+     */
+    private function detectBrowser()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\BrowserDetector\Detector\Browser');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler(new UnknownBrowser());
+
+        return $chain->detect();
+    }
+
+    /**
+     * Gets the information about the rendering engine by User Agent
+     *
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     */
+    private function detectEngine()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_agent);
+        $chain->setNamespace('\BrowserDetector\Detector\Engine');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Engine' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler(new UnknownEngine());
+
+        return $chain->detect();
     }
 }

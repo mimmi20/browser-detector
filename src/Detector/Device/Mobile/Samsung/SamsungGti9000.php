@@ -56,39 +56,35 @@ class SamsungGti9000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i9000_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9000_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I9000',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy S',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I9000',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy S',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i9000.xml',
-        'uaprof2'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9000.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-i9000.xml',
+        'uaprof2'                => 'http://wap.samsungmobile.com/uaprof/GT-I9000.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 53,
-        'physical_screen_height'  => 88,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 452,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 53,
+        'physical_screen_height' => 88,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 452,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -169,7 +165,9 @@ class SamsungGti9000
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -182,55 +180,55 @@ class SamsungGti9000
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-                $engineVersion = $engine->detectVersion()->getVersion(Version::MAJORMINOR);
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                        $engineVersion = $engine->detectVersion()->getVersion(Version::MAJORMINOR);
 
-                if ('530.17' == $engineVersion) {
-                    $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
+                        if ('530.17' == $engineVersion) {
+                            $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
+                        }
+                        break;
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
+                        break;
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
+                        break;
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
                 }
                 break;
-            case 2.2:
-                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
-                break;
-            case 2.3:
-                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
-                break;
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
-                break;
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

@@ -56,39 +56,35 @@ class SamsungGtn7000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_n7000_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_n7000_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-N7000',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Note',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-N7000',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Note',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-N7000.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-N7000.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 72,
-        'physical_screen_height'  => 115,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 400,
-        'max_image_height'        => 580,
-        'resolution_width'        => 800,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 72,
+        'physical_screen_height' => 115,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 400,
+        'max_image_height'       => 580,
+        'resolution_width'       => 800,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -169,7 +165,9 @@ class SamsungGtn7000
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -182,45 +180,45 @@ class SamsungGtn7000
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40_subuachrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

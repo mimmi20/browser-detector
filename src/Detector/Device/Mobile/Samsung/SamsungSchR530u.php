@@ -52,39 +52,35 @@ class SamsungSchR530u
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i9300_ver1_subuauscellular', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9300_ver1_subuauscellular', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I9300', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'model_extra_info'        => 'for US Cellular', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'marketing_name'          => 'Galaxy S III', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I9300', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'model_extra_info'       => 'for US Cellular', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'marketing_name'         => 'Galaxy S III', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

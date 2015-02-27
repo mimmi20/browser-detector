@@ -52,39 +52,35 @@ class SamsungSchI5354G
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i9300_ver1_subverizon', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9300_ver1_subverizon', // not in wurfl
 
         // device
-        'model_name'              => 'SCH-I535 4G',
-        'model_extra_info'        => 'Verizon',
-        'marketing_name'          => 'Galaxy S III 4G CDMA',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'SCH-I535 4G',
+        'model_extra_info'       => 'Verizon',
+        'marketing_name'         => 'Galaxy S III 4G CDMA',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://uaprof.vtext.com/sam/SCH-I535/SCH-I535.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://uaprof.vtext.com/sam/SCH-I535/SCH-I535.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 60,
-        'physical_screen_height'  => 107,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 360,
-        'max_image_height'        => 640,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 60,
+        'physical_screen_height' => 107,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

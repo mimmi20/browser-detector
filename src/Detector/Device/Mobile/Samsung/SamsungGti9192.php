@@ -56,39 +56,35 @@ class SamsungGti9192
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'GT-I9192',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'GT-I9192',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I9192',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'GT-I9192',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9192.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9192.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -173,7 +169,9 @@ class SamsungGti9192
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -186,53 +184,53 @@ class SamsungGti9192
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.3:
-                $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1');
 
-                if ($this->utils->checkIfContains('SAMSUNG GT-I9192/I9192')) {
-                    $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_subua');
+                        if ($this->utils->checkIfContains('SAMSUNG GT-I9192/I9192')) {
+                            $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_subua');
+                        }
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40');
+                        break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban41rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
                 }
                 break;
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40');
-                break;
-            case 4.1:
-                $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban41rom');
-                break;
-            case 2.1:
-            case 2.2:
-            case 3.1:
-            case 3.2:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40chrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40chrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

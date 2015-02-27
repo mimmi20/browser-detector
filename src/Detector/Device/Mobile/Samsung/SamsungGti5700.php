@@ -52,39 +52,35 @@ class SamsungGti5700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i5700_ver1_subos21', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i5700_ver1_subos21', // not in wurfl
 
         // device
-        'model_name'              => 'GT i5700', // wurflkey: samsung_gt_i5700_ver1_subos21
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Spica', // wurflkey: samsung_gt_i5700_ver1_subos21
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT i5700', // wurflkey: samsung_gt_i5700_ver1_subos21
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Spica', // wurflkey: samsung_gt_i5700_ver1_subos21
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i5700.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-i5700.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

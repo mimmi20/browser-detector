@@ -45,7 +45,8 @@ use BrowserDetector\Detector\OsHandler;
 interface BrowserInterface
 {
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine,
+     * returns the Engine Handler otherwise
      *
      * @return null|\BrowserDetector\Detector\EngineHandler
      */
@@ -59,10 +60,12 @@ interface BrowserInterface
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\MatcherInterface\BrowserInterface
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     );
 
     /**
@@ -87,9 +90,9 @@ interface BrowserInterface
     public function detectVersion();
 
     /**
-     * returns the type of the current device
+     * returns the type of the current browser
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \BrowserDetector\Detector\Type\Browser\TypeInterface
      */
     public function getBrowserType();
 }

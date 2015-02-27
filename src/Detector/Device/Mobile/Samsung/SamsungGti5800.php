@@ -52,39 +52,36 @@ class SamsungGti5800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i5800_ver1_suban22', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i5800_ver1_suban22', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I5800',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy 3 Apollo',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I5800',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy 3 Apollo',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-i5800.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-i5800.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 228,
-        'max_image_height'        => 360,
-        'resolution_width'        => 240,
-        'resolution_height'       => 400,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216, // wurflkey: samsung_gt_i5800_ver1
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 228,
+        'max_image_height'       => 360,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216, // wurflkey: samsung_gt_i5800_ver1
 
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

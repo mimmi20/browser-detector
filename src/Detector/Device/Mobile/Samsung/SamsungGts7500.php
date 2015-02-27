@@ -55,39 +55,35 @@ class SamsungGts7500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s7500_ver1_subuanosam', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s7500_ver1_subuanosam', // not in wurfl
 
         // device
-        'model_name'              => 'GT-S7500',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Ace Plus', // wurflkey: samsung_gt_s7500_ver1_subuanosam
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_s7500_ver1_subuanosam
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-S7500',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Ace Plus', // wurflkey: samsung_gt_s7500_ver1_subuanosam
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_s7500_ver1_subuanosam
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S7500.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S7500.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 52,
-        'physical_screen_height'  => 78,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 300,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 52,
+        'physical_screen_height' => 78,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -168,7 +164,9 @@ class SamsungGts7500
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

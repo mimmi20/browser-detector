@@ -56,39 +56,35 @@ class SamsungGts5570
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s5570_ver1_sub221', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s5570_ver1_sub221', // not in wurfl
 
         // device
-        'model_name'              => 'GT-S5570',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Mini', // wurflkey: samsung_gt_s5570_ver1_sub221
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_s5570_ver1_sub221
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-S5570',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Mini', // wurflkey: samsung_gt_s5570_ver1_sub221
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_s5570_ver1_sub221
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5570.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5570.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -173,7 +169,9 @@ class SamsungGts5570
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -185,45 +183,45 @@ class SamsungGts5570
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.2:
-                $this->setCapability('wurflKey', 'samsung_gt_s5570_ver1_sub221');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'samsung_gt_s5570_ver1_sub221');
+                        break;
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_s5570_ver1_suban234b');
+                        break;
+                    case 2.1:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.3:
-                $this->setCapability('wurflKey', 'samsung_gt_s5570_ver1_suban234b');
-                break;
-            case 2.1:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

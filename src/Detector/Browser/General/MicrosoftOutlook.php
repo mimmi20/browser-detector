@@ -31,6 +31,9 @@
 namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -40,7 +43,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftOutlook extends MicrosoftOffice
+class MicrosoftOutlook
+    extends MicrosoftOffice
 {
     /**
      * the detected browser properties
@@ -55,15 +59,12 @@ class MicrosoftOutlook extends MicrosoftOffice
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -153,7 +154,9 @@ class MicrosoftOutlook extends MicrosoftOffice
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
         $doMatch = preg_match(
-            '/microsoft Office Outlook ([\d\.]+)/', $this->useragent, $matches
+            '/microsoft Office Outlook ([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -161,7 +164,9 @@ class MicrosoftOutlook extends MicrosoftOffice
         }
 
         $doMatch = preg_match(
-            '/microsoft Office Outlook (\d+)/', $this->useragent, $matches
+            '/microsoft Office Outlook (\d+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -169,7 +174,9 @@ class MicrosoftOutlook extends MicrosoftOffice
         }
 
         $doMatch = preg_match(
-            '/microsoft Outlook ([\d\.]+)/', $this->useragent, $matches
+            '/microsoft Outlook ([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -177,7 +184,9 @@ class MicrosoftOutlook extends MicrosoftOffice
         }
 
         $doMatch = preg_match(
-            '/microsoft Outlook (\d+)/', $this->useragent, $matches
+            '/microsoft Outlook (\d+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -195,5 +204,29 @@ class MicrosoftOutlook extends MicrosoftOffice
     public function getWeight()
     {
         return 2839566;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftOutlook
+     */
+    public function detectDependProperties(
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $browserVersion = (int)$this->detectInternalVersion();
+
+        $this->setCapability('wurflKey', 'ms_outlook_subua' . $browserVersion);
+
+        return $this;
     }
 }

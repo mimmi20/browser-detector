@@ -52,39 +52,35 @@ class SamsungGtp6210
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_p6210_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_p6210_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P6210',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab 7.0 Plus', // wurflkey: samsung_gt_p6210_ver1_suban40
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_p6210_ver1_suban40
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P6210',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 7.0 Plus', // wurflkey: samsung_gt_p6210_ver1_suban40
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p6210_ver1_suban40
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P6210.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P6210.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 154,
-        'physical_screen_height'  => 90,
-        'columns'                 => 100,
-        'rows'                    => 100,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 154,
+        'physical_screen_height' => 90,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**

@@ -43,7 +43,7 @@ class Yahoo extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'Yahoo!';
+    protected $name = 'Yahoo! Inc.';
 
     /**
      * the brand name of the company

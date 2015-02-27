@@ -52,39 +52,35 @@ class SamsungGte2550
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'GT-E2550',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'GT-E2550',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-E2550',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'GT-E2550',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-E2550.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-E2550.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => 8,
-        'rows'                    => 12,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 128,
-        'resolution_height'       => 160,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => 8,
+        'rows'                   => 12,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 128,
+        'resolution_height'      => 160,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

@@ -52,39 +52,35 @@ class SamsungGtn7105
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'GT-N7105',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Note II',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-N7105',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Note II',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-N7105.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-N7105.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 69,
-        'physical_screen_height'  => 122,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 69,
+        'physical_screen_height' => 122,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

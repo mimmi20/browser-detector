@@ -52,39 +52,35 @@ class YPGs1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_yp_gs1_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_yp_gs1_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'YP-GS1',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Player 3.6',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'YP-GS1',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Player 3.6',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 48,
-        'physical_screen_height'  => 79,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 48,
+        'physical_screen_height' => 79,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

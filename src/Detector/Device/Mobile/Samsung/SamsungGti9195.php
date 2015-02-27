@@ -56,39 +56,35 @@ class SamsungGti9195
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_i9195_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9195_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-I9195',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy S4 Mini',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I9195',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy S4 Mini',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9195.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9195.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 54,
-        'physical_screen_height'  => 96,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 360,
-        'max_image_height'        => 400,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 54,
+        'physical_screen_height' => 96,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 360,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -173,7 +169,9 @@ class SamsungGti9195
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -187,67 +185,67 @@ class SamsungGti9195
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.3:
-                $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1');
 
-                if ($this->utils->checkIfContains('SAMSUNG GT-I9195/I9195')) {
-                    $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_subua');
+                        if ($this->utils->checkIfContains('SAMSUNG GT-I9195/I9195')) {
+                            $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_subua');
+                        }
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40');
+                        break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban41rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
                 }
                 break;
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40');
-                break;
-            case 4.1:
-                $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban41rom');
-                break;
-            case 2.1:
-            case 2.2:
-            case 3.1:
-            case 3.2:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-        case 'Android WebView':
-            $engine->setCapability('is_sencha_touch_ok', false);
-            $engine->setCapability('html_wi_imode_compact_generic', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', true);
-            $engine->setCapability('xhtml_supports_forms_in_table', true);
-            $engine->setCapability('xhtml_file_upload', 'supported');
-            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-            $engine->setCapability('gif_animated', false);
-            $engine->setCapability('svgt_1_1', true);
+            case 'Chrome':
+            case 'Android WebView':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $engine->setCapability('html_wi_imode_compact_generic', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', true);
+                $engine->setCapability('xhtml_supports_forms_in_table', true);
+                $engine->setCapability('xhtml_file_upload', 'supported');
+                $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+                $engine->setCapability('gif_animated', false);
+                $engine->setCapability('svgt_1_1', true);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40chrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40chrome');
+                        break;
+                    case 4.2:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_subua9195_subuachrome');
+                        break;
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_suban44i9195');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 4.2:
-                $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_subua9195_subuachrome');
-                break;
-            case 4.4:
-                $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_suban44i9195');
-                break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

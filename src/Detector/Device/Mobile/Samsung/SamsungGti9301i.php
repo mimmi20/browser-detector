@@ -52,39 +52,35 @@ class SamsungGti9301i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'GT-I9301I',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy S III Neo+',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-I9301I',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy S III Neo+',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-I9301I.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9301I.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 60,
-        'physical_screen_height'  => 107,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 360,
-        'max_image_height'        => 640,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 60,
+        'physical_screen_height' => 107,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

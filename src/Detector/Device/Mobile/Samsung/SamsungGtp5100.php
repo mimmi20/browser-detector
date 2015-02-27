@@ -56,39 +56,36 @@ class SamsungGtp5100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_p5100_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_p5100_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-P5100',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Tab 2 10.1', // wurflkey: samsung_gt_p5100_ver1
-        'has_qwerty_keyboard'     => true, // wurflkey: samsung_gt_p5100_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-P5100',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 2 10.1', // wurflkey: samsung_gt_p5100_ver1
+        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p5100_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-P5100.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-P5100.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 218, // wurflkey: samsung_gt_p5100_ver1
-        'physical_screen_height'  => 136,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 218, // wurflkey: samsung_gt_p5100_ver1
+        'physical_screen_height' => 136,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true, // wurflkey: samsung_gt_p5100_ver1
+        'sms_enabled'            => true, // wurflkey: samsung_gt_p5100_ver1
 
         // chips
-        'nfc_support'             => false, // wurflkey: samsung_gt_p5100_ver1
+        'nfc_support'            => false, // wurflkey: samsung_gt_p5100_ver1
     );
 
     /**
@@ -169,7 +166,9 @@ class SamsungGtp5100
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -185,43 +184,43 @@ class SamsungGtp5100
         }
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_p5100_ver1_subuachrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_p5100_ver1_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

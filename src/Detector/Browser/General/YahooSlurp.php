@@ -91,7 +91,7 @@ class YahooSlurp
      */
     public function getName()
     {
-        return 'Yahoo! Slurp';
+        return 'Slurp';
     }
 
     /**

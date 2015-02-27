@@ -55,39 +55,35 @@ class SamsungGts5360
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s5360_ver1_subua', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s5360_ver1_subua', // not in wurfl
 
         // device
-        'model_name'              => 'GT-S5360',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Y',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-S5360',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Y',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 46,
-        'physical_screen_height'  => 61,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 240,
-        'max_image_height'        => 320,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 46,
+        'physical_screen_height' => 61,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -168,7 +164,9 @@ class SamsungGts5360
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

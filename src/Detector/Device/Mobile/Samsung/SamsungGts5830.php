@@ -59,39 +59,35 @@ class SamsungGts5830
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_gt_s5830_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_gt_s5830_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'GT-S5830',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Galaxy Ace',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'GT-S5830',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Ace',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/GT-S5830.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S5830.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 74,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 74,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -183,7 +179,9 @@ class SamsungGts5830
      * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGts5830
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -195,19 +193,19 @@ class SamsungGts5830
         );
 
         switch ((float)$osVersion) {
-        case 2.2:
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban22');
-            break;
-        case 2.3:
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban23');
-            break;
-        case 4.0:
-            $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban40');
-            break;
-        case 4.1:
-        default:
-            // nothing to do here
-            break;
+            case 2.2:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban22');
+                break;
+            case 2.3:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban23');
+                break;
+            case 4.0:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban40');
+                break;
+            case 4.1:
+            default:
+                // nothing to do here
+                break;
         }
 
         return $this;

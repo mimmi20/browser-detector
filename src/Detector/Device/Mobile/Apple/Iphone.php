@@ -59,39 +59,35 @@ class Iphone
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'apple_iphone_ver1', // not in wurfl
+        'wurflKey'               => 'apple_iphone_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'iPhone',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'iPhone',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'iPhone',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'iPhone',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 74,
-        'columns'                 => 20,
-        'rows'                    => 20,
-        'max_image_width'         => 320,
-        'max_image_height'        => 480,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 74,
+        'columns'                => 20,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -183,7 +179,9 @@ class Iphone
      * @return \BrowserDetector\Detector\Device\Mobile\Apple\Iphone
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $osVersion = $os->detectVersion()->getVersion();
 
@@ -249,6 +247,10 @@ class Iphone
             $this->setCapability('wurflKey', 'apple_iphone_ver7_1');
         }
 
+        if (8.0 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver8');
+        }
+
         if (8.1 == (float)$osVersion) {
             $this->setCapability('wurflKey', 'apple_iphone_ver8_1');
         }
@@ -267,51 +269,54 @@ class Iphone
         $osVersion = $os->detectVersion()->getVersion();
 
         switch ($osVersion) {
-        case '3.1.3':
-            $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
-            break;
-        case '4.2.1':
-            $this->setCapability('wurflKey', 'apple_iphone_ver4_2_1');
-            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-            $engine->setCapability('html_wi_imode_compact_generic', true);
-            $engine->setCapability('xhtml_select_as_radiobutton', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', false);
-            $engine->setCapability('xhtml_select_as_dropdown', false);
-            $engine->setCapability('xhtml_supports_forms_in_table', false);
-            $engine->setCapability('xhtml_select_as_popup', false);
-            $engine->setCapability('xhtml_file_upload', 'not_supported');
-            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
-            $engine->setCapability('xhtml_can_embed_video', 'none');
-            $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
-            $engine->setCapability('xhtml_supports_table_for_layout', true);
-            $engine->setCapability('max_url_length_in_requests', 512);
-            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-            $engine->setCapability('canvas_support', 'full');
-            $engine->setCapability('viewport_width', 'device_width_token');
-            $engine->setCapability('viewport_supported', true);
-            $engine->setCapability('viewport_userscalable', 'no');
-            $engine->setCapability('css_gradient', 'none');
-            $engine->setCapability('css_gradient_linear', 'none');
-            break;
-        case '4.3.0':
-            $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
-            break;
-        case '4.3.1':
-            $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
-            break;
-        case '4.3.2':
-            $this->setCapability('wurflKey', 'apple_iphone_ver4_3_2');
-            break;
-        case '4.3.3':
-            $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
-            break;
-        case '4.3.4':
-        case '4.3.5':
-            $this->setCapability('wurflKey', 'apple_iphone_ver4_3_5');
-            break;
-        default:
-            // nothing to do here
-            break;
+            case '3.1.3':
+                $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
+                break;
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_2_1');
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('html_wi_imode_compact_generic', true);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_supports_forms_in_table', false);
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_file_upload', 'not_supported');
+                $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                $engine->setCapability('xhtml_can_embed_video', 'none');
+                $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
+                $engine->setCapability('xhtml_supports_table_for_layout', true);
+                $engine->setCapability('max_url_length_in_requests', 512);
+                $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+                $engine->setCapability('canvas_support', 'full');
+                $engine->setCapability('viewport_width', 'device_width_token');
+                $engine->setCapability('viewport_supported', true);
+                $engine->setCapability('viewport_userscalable', 'no');
+                $engine->setCapability('css_gradient', 'none');
+                $engine->setCapability('css_gradient_linear', 'none');
+                break;
+            case '4.3.0':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
+                break;
+            case '4.3.1':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
+                break;
+            case '4.3.2':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_2');
+                break;
+            case '4.3.3':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
+                break;
+            case '4.3.4':
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_5');
+                break;
+            case '8.0.2':
+                $this->setCapability('wurflKey', 'apple_iphone_ver8_subua802');
+                break;
+            default:
+                // nothing to do here
+                break;
         }
 
         return $this;

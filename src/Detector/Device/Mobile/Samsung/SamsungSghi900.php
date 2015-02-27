@@ -55,39 +55,35 @@ class SamsungSghi900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'samsung_sgh_i900_ver1_subopera95', // not in wurfl
+        'wurflKey'               => 'samsung_sgh_i900_ver1_subopera95', // not in wurfl
 
         // device
-        'model_name'              => 'SGH-I900', // wurflkey: samsung_sgh_i900_ver1_subopera95
-        'model_extra_info'        => null,
-        'marketing_name'          => 'OMNIA', // wurflkey: samsung_sgh_i900_ver1_subopera95
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'SGH-I900', // wurflkey: samsung_sgh_i900_ver1_subopera95
+        'model_extra_info'       => null,
+        'marketing_name'         => 'OMNIA', // wurflkey: samsung_sgh_i900_ver1_subopera95
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.samsungmobile.com/uaprof/SGH-i900.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/SGH-i900.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 42,
-        'physical_screen_height'  => 70,
-        'columns'                 => 16,
-        'rows'                    => 20,
-        'max_image_width'         => 228,
-        'max_image_height'        => 340,
-        'resolution_width'        => 240,
-        'resolution_height'       => 400,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 42,
+        'physical_screen_height' => 70,
+        'columns'                => 16,
+        'rows'                   => 20,
+        'max_image_width'        => 228,
+        'max_image_height'       => 340,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
