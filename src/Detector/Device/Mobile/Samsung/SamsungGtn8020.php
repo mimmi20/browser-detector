@@ -179,6 +179,10 @@ class SamsungGtn8020
             $this->setCapability('wurflKey', 'samsung_gt_n8000_ver1_suban41n8020');
         }
 
+        if (4.4 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'samsung_gt_n8000_ver1_suban44n8020');
+        }
+
         return $this;
     }
 }

@@ -52,7 +52,7 @@ class HuaweiG510
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'huawei_t8951_ver1_suban41g5100100', // not in wurfl
 
         // device
         'model_name'              => 'G510',

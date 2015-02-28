@@ -36,14 +36,16 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Apache extends AbstractCompany implements CompanyInterface
+class Apache
+    extends AbstractCompany
+    implements CompanyInterface
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Apache Foundation';
+    protected $name = 'The Apache Software Foundation';
 
     /**
      * the brand name of the company

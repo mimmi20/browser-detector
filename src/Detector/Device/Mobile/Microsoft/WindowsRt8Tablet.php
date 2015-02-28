@@ -246,7 +246,7 @@ class WindowsRt8Tablet
             $engine->setCapability('svgt_1_1', false);
             $engine->setCapability('max_url_length_in_requests', 512);
             $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-            $engine->setCapability('pdf_support', false);
+            $browser->setCapability('pdf_support', false);
             $engine->setCapability('jqm_grade', 'none');
             $engine->setCapability('is_sencha_touch_ok', false);
             $engine->setCapability('image_inlining', false);
