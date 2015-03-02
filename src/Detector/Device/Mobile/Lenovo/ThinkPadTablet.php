@@ -52,39 +52,35 @@ class ThinkPadTablet
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'lenovo_thankpad_tablet_ver1_suban40', // not in wurfl
+        'wurflKey'               => 'lenovo_thankpad_tablet_ver1_suban40', // not in wurfl
 
         // device
-        'model_name'              => '1838',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'ThinkPad Tablet',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => '1838',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'ThinkPad Tablet',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 218,
-        'physical_screen_height'  => 136,
-        'columns'                 => 80,
-        'rows'                    => 25,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 136,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**

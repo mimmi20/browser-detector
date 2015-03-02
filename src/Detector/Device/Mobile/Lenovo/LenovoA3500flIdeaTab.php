@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class VodafoneSmartTabIi10
+class LenovoA3500flIdeaTab
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class VodafoneSmartTabIi10
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'SmartTab II 10',
+        'model_name'             => 'A3500-FL',
         'model_extra_info'       => null,
-        'marketing_name'         => 'SmartTab II 10',
+        'marketing_name'         => 'IdeaTab A3500-FL',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,14 +67,14 @@ class VodafoneSmartTabIi10
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 60,
-        'rows'                   => 40,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => 218,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -90,7 +90,7 @@ class VodafoneSmartTabIi10
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Vodafone SmartTab II 10', 'SmartTabII10'))) {
+        if (!$this->utils->checkIfContains(array('A3500-FL'))) {
             return false;
         }
 
@@ -134,7 +134,7 @@ class VodafoneSmartTabIi10
      */
     public function getBrand()
     {
-        return new Company\Vodafone();
+        return new Company\Lenovo();
     }
 
     /**

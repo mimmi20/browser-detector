@@ -52,7 +52,7 @@ class Lgp710
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'lg_p710_ver1', // not in wurfl
 
         // device
         'model_name'              => 'P710',

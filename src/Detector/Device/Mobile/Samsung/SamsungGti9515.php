@@ -211,7 +211,7 @@ class SamsungGti9515
 
                 switch ((float)$osVersion) {
                     case 4.4:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9500_ver1_suban44i9515');
+                        $this->setCapability('wurflKey', 'samsung_gt_i9500_ver1_suban44i9515chrome');
                         break;
                     case 2.1:
                     case 2.2:

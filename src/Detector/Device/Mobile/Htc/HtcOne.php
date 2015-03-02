@@ -192,8 +192,7 @@ class HtcOne
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
-        )
-        ;
+        );
 
         if (2.3 == $osVersion) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
@@ -203,7 +202,7 @@ class HtcOne
             case 'Android Webkit':
                 switch ((float)$osVersion) {
                     case 4.4:
-                        $this->setCapability('wurflKey', 'htc_m7_ver1_suban44uscore');
+                        $this->setCapability('wurflKey', 'htc_m7_ver1_suban44');
                         break;
                     case 2.1:
                     case 2.2:
@@ -222,6 +221,9 @@ class HtcOne
                 $engine->setCapability('is_sencha_touch_ok', false);
 
                 switch ((float)$osVersion) {
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'htc_m7_ver1_suban44uscore');
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:

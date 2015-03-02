@@ -55,39 +55,35 @@ class NokiaLumia
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'Lumia',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Lumia',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Lumia',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Lumia',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -112,6 +108,7 @@ class NokiaLumia
             'nokia; lumia 900',
             'nokia; lumia 920',
             'nokia; lumia 925',
+            'nokia; lumia 930',
             'nokia; lumia 1320',
             'nokia; lumia 1520',
         );
@@ -187,7 +184,9 @@ class NokiaLumia
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

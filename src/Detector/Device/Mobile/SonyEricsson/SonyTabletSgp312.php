@@ -52,39 +52,35 @@ class SonyTabletSgp312
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => 'sony_xperia_tablet_sgp312_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'SGP312',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia Tablet Z',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'SGP312',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia Tablet Z',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 1920,
-        'resolution_height'       => 1200,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1920,
+        'resolution_height'      => 1200,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
