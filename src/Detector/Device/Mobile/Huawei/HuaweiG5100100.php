@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts7710
+class HuaweiG5100100
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,12 +52,12 @@ class SamsungGts7710
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s7710_ver1', // not in wurfl
+        'wurflKey'               => 'huawei_t8951_ver1_suban41g5100100', // not in wurfl
 
         // device
-        'model_name'             => 'GT-S7710',
+        'model_name'             => 'G510-0100',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Xcover 2',
+        'marketing_name'         => 'Ascend G510',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -74,9 +74,9 @@ class SamsungGts7710
         'max_image_width'        => null,
         'max_image_height'       => null,
         'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_height'      => 854,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,7 +90,7 @@ class SamsungGts7710
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GT-S7710', 'SAMSUNG-S7710'))) {
+        if (!$this->utils->checkIfContains(array('HUAWEI G510-0100'))) {
             return false;
         }
 
@@ -124,7 +124,7 @@ class SamsungGts7710
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company\Huawei();
     }
 
     /**
@@ -134,7 +134,7 @@ class SamsungGts7710
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company\Huawei();
     }
 
     /**

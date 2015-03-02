@@ -94,6 +94,10 @@ class SamsungN9005
             return false;
         }
 
+        if ($this->utils->checkIfContains('SM-N9005')) {
+            return false;
+        }
+
         return true;
     }
 

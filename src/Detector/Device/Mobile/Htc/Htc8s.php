@@ -52,7 +52,7 @@ class Htc8s
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'                => 'htc_8s_ver1_subuaorange', // not in wurfl
 
         // device
         'model_name'              => '8S',
