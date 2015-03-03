@@ -56,39 +56,35 @@ class HtcA310e
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_a310e_ver1', // not in wurfl
+        'wurflKey'               => 'htc_a310e_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'A310e',
-        'model_extra_info'        => 'HTC Pico', // wurflkey: htc_a310e_ver1_subuauscore
-        'marketing_name'          => 'Explorer', // wurflkey: htc_a310e_ver1_subuauscore
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'A310e',
+        'model_extra_info'       => 'HTC Pico', // wurflkey: htc_a310e_ver1_subuauscore
+        'marketing_name'         => 'Explorer', // wurflkey: htc_a310e_ver1_subuauscore
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PJ03/ua-profile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PJ03/ua-profile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 82, // wurflkey: htc_a310e_ver1_subuauscore
-        'physical_screen_height'  => 122,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 82, // wurflkey: htc_a310e_ver1_subuauscore
+        'physical_screen_height' => 122,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -178,7 +174,9 @@ class HtcA310e
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -189,47 +187,47 @@ class HtcA310e
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.3:
-                $this->setCapability('wurflKey', 'htc_a310e_ver1_subuauscore');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'htc_a310e_ver1_subuauscore');
 
-                if ($this->utils->checkIfContains('HTC/Explorer/')) {
-                    $this->setCapability('wurflKey', 'htc_a310e_ver1_subuaslash');
+                        if ($this->utils->checkIfContains('HTC/Explorer/')) {
+                            $this->setCapability('wurflKey', 'htc_a310e_ver1_subuaslash');
+                        }
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
                 }
                 break;
-            case 2.1:
-            case 2.2:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

@@ -58,39 +58,35 @@ class HtcHd2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_t8585_ver1', // not in wurfl
+        'wurflKey'               => 'htc_t8585_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'HD2', // wurflkey: htc_t8585_ver1
-        'model_extra_info'        => null,
-        'marketing_name'          => 'HD2',
-        'has_qwerty_keyboard'     => false, // wurflkey: htc_t8585_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'HD2', // wurflkey: htc_t8585_ver1
+        'model_extra_info'       => null,
+        'marketing_name'         => 'HD2',
+        'has_qwerty_keyboard'    => false, // wurflkey: htc_t8585_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml',
-        'uaprof2'                 => 'http://www.htcmms.com.tw/tmo/HTC_HD2-1.0.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml',
+        'uaprof2'                => 'http://www.htcmms.com.tw/tmo/HTC_HD2-1.0.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 94,
-        'physical_screen_height'  => 57,
-        'columns'                 => 16,
-        'rows'                    => 36,
-        'max_image_width'         => 460,
-        'max_image_height'        => 760,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 94,
+        'physical_screen_height' => 57,
+        'columns'                => 16,
+        'rows'                   => 36,
+        'max_image_width'        => 460,
+        'max_image_height'       => 760,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -182,7 +178,9 @@ class HtcHd2
      * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHd2
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $osName = $os->getName();
 

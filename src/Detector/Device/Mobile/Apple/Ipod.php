@@ -59,39 +59,35 @@ class Ipod
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'apple_ipod_touch_ver5', // not in wurfl
+        'wurflKey'               => 'apple_ipod_touch_ver5', // not in wurfl
 
         // device
-        'model_name'              => 'iPod Touch',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'iPod Touch',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'iPod Touch',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'iPod Touch',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 74,
-        'columns'                 => 20,
-        'rows'                    => 20,
-        'max_image_width'         => 320,
-        'max_image_height'        => 360,
-        'resolution_width'        => 320, // wurflkey: apple_ipod_touch_ver5
-        'resolution_height'       => 480, // wurflkey: apple_ipod_touch_ver5
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 74,
+        'columns'                => 20,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 360,
+        'resolution_width'       => 320, // wurflkey: apple_ipod_touch_ver5
+        'resolution_height'      => 480, // wurflkey: apple_ipod_touch_ver5
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -179,7 +175,9 @@ class Ipod
      * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipod
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
@@ -212,15 +210,15 @@ class Ipod
         $osVersion = $os->detectVersion()->getVersion();
 
         switch ($osVersion) {
-        case '4.2.1':
-            $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
-            break;
-        case '4.3.5':
-            $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
-            break;
-        default:
-            // nothing to do here
-            break;
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+                break;
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
+                break;
+            default:
+                // nothing to do here
+                break;
         }
         if ('4.2.1' == $osVersion) {
         }

@@ -55,39 +55,35 @@ class AlcatelOt992d
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'alcatel_ot992_ver1_subuad', // not in wurfl
+        'wurflKey'               => 'alcatel_ot992_ver1_subuad', // not in wurfl
 
         // device
-        'model_name'              => 'OT-992D',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'One Touch 992 Play', // wurflkey: alcatel_ot992_ver1_subuad
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'OT-992D',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'One Touch 992 Play', // wurflkey: alcatel_ot992_ver1_subuad
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_992D.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_992D.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 85,
-        'columns'                 => 36,
-        'rows'                    => 10,
-        'max_image_width'         => 300,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 85,
+        'columns'                => 36,
+        'rows'                   => 10,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class AlcatelOt992d
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

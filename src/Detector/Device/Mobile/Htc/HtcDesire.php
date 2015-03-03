@@ -56,39 +56,35 @@ class HtcDesire
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_desire_ver1', // not in wurfl
+        'wurflKey'               => 'htc_desire_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Desire',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Desire',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Desire',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Desire',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml',
-        'uaprof2'                 => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml',
+        'uaprof2'                => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -103,8 +99,17 @@ class HtcDesire
         }
 
         $specialHtcDesire = array(
-            'DesireS', 'A7272', 'A8181', 'A9191', 'Desire_C', 'Desire C',
-            'Desire Z', 'Desire S', 'Desire X', 'Desire_S'
+            'DesireS',
+            'A7272',
+            'A8181',
+            'A9191',
+            'Desire_C',
+            'Desire C',
+            'Desire Z',
+            'Desire S',
+            'Desire X',
+            'Desire_S',
+            'Desire_500'
         );
 
         if ($this->utils->checkIfContains($specialHtcDesire)) {
@@ -178,7 +183,9 @@ class HtcDesire
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

@@ -56,39 +56,35 @@ class HtcA9192Inspire4g
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_inspire4g_ver1_suban40a9192', // not in wurfl
+        'wurflKey'               => 'htc_inspire4g_ver1_suban40a9192', // not in wurfl
 
         // device
-        'model_name'              => 'Inspire 4G', // wurflkey: htc_inspire4g_ver1_suban40a9192
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Inspire 4G',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Inspire 4G', // wurflkey: htc_inspire4g_ver1_suban40a9192
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Inspire 4G',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/Ace/A9192-1.0.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/Ace/A9192-1.0.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class HtcA9192Inspire4g
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

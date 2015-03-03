@@ -52,39 +52,35 @@ class AcerIconiaB1710
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'B1-710',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Iconia B1-710',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'B1-710',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Iconia B1-710',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 95,
-        'physical_screen_height'  => 150,
-        'columns'                 => 80,
-        'rows'                    => 25,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 600,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 95,
+        'physical_screen_height' => 150,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

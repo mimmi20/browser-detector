@@ -55,39 +55,36 @@ class AcerIconiaA511
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'acer_iconia_tab_a511_ver1', // not in wurfl
+        'wurflKey'               => 'acer_iconia_tab_a511_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'A511',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'A511',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'A511',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'A511',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A511_IML74K_Profile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://support.acer.com/UAprofile/Acer_A511_IML74K_Profile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 4294967296,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 4294967296,
         // sms
-        'sms_enabled'             => true, // wurflkey: acer_iconia_tab_a511_ver1
+        'sms_enabled'            => true, // wurflkey: acer_iconia_tab_a511_ver1
 
         // chips
-        'nfc_support'             => true, // wurflkey: acer_iconia_tab_a511_ver1
+        'nfc_support'            => true, // wurflkey: acer_iconia_tab_a511_ver1
     );
 
     /**
@@ -172,7 +169,9 @@ class AcerIconiaA511
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

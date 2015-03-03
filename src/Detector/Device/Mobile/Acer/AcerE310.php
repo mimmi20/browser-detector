@@ -56,39 +56,35 @@ class AcerE310
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'acer_e310_ver1_suban221', // not in wurfl
+        'wurflKey'               => 'acer_e310_ver1_suban221', // not in wurfl
 
         // device
-        'model_name'              => 'E310', // wurflkey: acer_e310_ver1_suban221
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
-        'has_qwerty_keyboard'     => false, // wurflkey: acer_e310_ver1_suban221
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'E310', // wurflkey: acer_e310_ver1_suban221
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
+        'has_qwerty_keyboard'    => false, // wurflkey: acer_e310_ver1_suban221
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 60,
-        'rows'                    => 24,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 24,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class AcerE310
      * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerE310
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -182,45 +180,45 @@ class AcerE310
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.2:
-                $this->setCapability('wurflKey', 'acer_e310_ver1_suban221');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'acer_e310_ver1_suban221');
+                        break;
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'acer_e310_ver1_suban23cm');
+                        break;
+                    case 2.1:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.3:
-                $this->setCapability('wurflKey', 'acer_e310_ver1_suban23cm');
-                break;
-            case 2.1:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

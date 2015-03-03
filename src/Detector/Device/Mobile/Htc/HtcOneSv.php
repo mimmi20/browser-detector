@@ -55,40 +55,36 @@ class HtcOneSv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_one_s_ver1_subuanouscore', // not in wurfl
+        'wurflKey'               => 'htc_one_s_ver1_subuanouscore', // not in wurfl
 
         // device
-        'model_name'              => 'One SV',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'One SV',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'One SV',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'One SV',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
         // wurflkey: htc_one_s_ver1
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 54,
-        'physical_screen_height'  => 96,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 54,
+        'physical_screen_height' => 96,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class HtcOneSv
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

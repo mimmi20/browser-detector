@@ -55,39 +55,35 @@ class HtcWildfire
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_wildfire_ver1_subua22', // not in wurfl
+        'wurflKey'               => 'htc_wildfire_ver1_subua22', // not in wurfl
 
         // device
-        'model_name'              => 'Wildfire',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Wildfire',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Wildfire',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Wildfire',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/Wildfire',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/Wildfire',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 48,
-        'physical_screen_height'  => 64,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 48,
+        'physical_screen_height' => 64,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -175,11 +171,14 @@ class HtcWildfire
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('bmp', true);
+
         //$engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

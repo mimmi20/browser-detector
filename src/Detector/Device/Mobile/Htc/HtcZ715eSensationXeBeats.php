@@ -55,39 +55,35 @@ class HtcZ715eSensationXeBeats
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_sensationxe_z715e_ver1', // not in wurfl
+        'wurflKey'               => 'htc_sensationxe_z715e_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Sensation XE Beats Z715e', // wurflkey: htc_sensationxe_z715e_ver1_subuanohtc
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Sensation', // wurflkey: htc_sensationxe_z715e_ver1_subuanohtc
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Sensation XE Beats Z715e', // wurflkey: htc_sensationxe_z715e_ver1_subuanohtc
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Sensation', // wurflkey: htc_sensationxe_z715e_ver1_subuanohtc
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PG5813/ua-profile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PG5813/ua-profile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 360,
-        'max_image_height'        => 640,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -181,7 +177,9 @@ class HtcZ715eSensationXeBeats
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

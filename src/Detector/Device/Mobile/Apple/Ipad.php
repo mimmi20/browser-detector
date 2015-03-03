@@ -59,39 +59,35 @@ class Ipad
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'apple_ipad_ver1', // not in wurfl
+        'wurflKey'               => 'apple_ipad_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'iPad',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'iPad',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'iPad',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'iPad',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 148,
-        'physical_screen_height'  => 198,
-        'columns'                 => 100,
-        'rows'                    => 100,
-        'max_image_width'         => 768,
-        'max_image_height'        => 1024,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 768,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 148,
+        'physical_screen_height' => 198,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 768,
+        'max_image_height'       => 1024,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false, // wurflkey: apple_ipad_ver1_sub51
+        'nfc_support'            => false, // wurflkey: apple_ipad_ver1_sub51
     );
 
     /**
@@ -179,7 +175,9 @@ class Ipad
      * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipad
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
@@ -253,34 +251,34 @@ class Ipad
         $osVersion = $os->detectVersion()->getVersion();
 
         switch ($osVersion) {
-        case '3.1.3':
-            // $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
-            break;
-        case '3.2.2':
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub321');
-            break;
-        case '4.2.1':
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub421');
-            break;
-        case '4.3.0':
-            // $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
-            break;
-        case '4.3.1':
-            // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
-            break;
-        case '4.3.2':
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub432');
-            break;
-        case '4.3.3':
-            // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
-            break;
-        case '4.3.4':
-        case '4.3.5':
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub435');
-            break;
-        default:
-            // nothing to do here
-            break;
+            case '3.1.3':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
+                break;
+            case '3.2.2':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub321');
+                break;
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub421');
+                break;
+            case '4.3.0':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
+                break;
+            case '4.3.1':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
+                break;
+            case '4.3.2':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub432');
+                break;
+            case '4.3.3':
+                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
+                break;
+            case '4.3.4':
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub435');
+                break;
+            default:
+                // nothing to do here
+                break;
         }
 
         return $this;

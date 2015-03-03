@@ -56,39 +56,36 @@ class AsusTf300T
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'asus_transformer_pad_tf300t_ver1', // not in wurfl
+        'wurflKey'               => 'asus_transformer_pad_tf300t_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'TF300T',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Transformer Pad TF300T',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'TF300T',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Transformer Pad TF300T',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 136,
-        'physical_screen_height'  => 218,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 136,
+        'physical_screen_height' => 218,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41
+        'sms_enabled'            => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41
 
         // chips
-        'nfc_support'             => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41
+        'nfc_support'            => true, // wurflkey: asus_transformer_pad_tf300t_ver1_suban41
     );
 
     /**
@@ -173,7 +170,9 @@ class AsusTf300T
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -185,43 +184,43 @@ class AsusTf300T
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 4.1:
-                $this->setCapability('wurflKey', 'asus_transformer_pad_tf300t_ver1_suban41');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'asus_transformer_pad_tf300t_ver1_suban41');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

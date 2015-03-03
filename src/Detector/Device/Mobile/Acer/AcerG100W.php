@@ -52,39 +52,35 @@ class AcerG100W
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'acer_g100w_ver1_suban32', // not in wurfl
+        'wurflKey'               => 'acer_g100w_ver1_suban32', // not in wurfl
 
         // device
-        'model_name'              => 'G100W',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'G100W',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'G100W',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'G100W',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://support.acer.com/UAprofile/Acer_A500_Profile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 217,
-        'physical_screen_height'  => 136,
-        'columns'                 => 28,
-        'rows'                    => 30,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 768,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 28,
+        'rows'                   => 30,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**

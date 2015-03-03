@@ -52,39 +52,35 @@ class HtcFlyer
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_flyer_ver1', // not in wurfl
+        'wurflKey'               => 'htc_flyer_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Flyer',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Flyer',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Flyer',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Flyer',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 90,
-        'physical_screen_height'  => 154,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 580,
-        'max_image_height'        => 1000,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 600,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 90,
+        'physical_screen_height' => 154,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 580,
+        'max_image_height'       => 1000,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

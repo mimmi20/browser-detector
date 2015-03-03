@@ -52,39 +52,35 @@ class ArchosA70HB
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'archos_a70hb_ver1', // not in wurfl
+        'wurflKey'               => 'archos_a70hb_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'A70HB',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'A70HB',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'A70HB',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'A70HB',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 240,
-        'max_image_height'        => 320,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 256,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 256,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

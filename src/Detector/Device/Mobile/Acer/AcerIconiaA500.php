@@ -56,39 +56,35 @@ class AcerIconiaA500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'acer_iconia_tab_a500_ver1', // not in wurfl
+        'wurflKey'               => 'acer_iconia_tab_a500_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'A500',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Picasso', // wurflkey: acer_iconia_tab_a500_ver1_suban40
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'A500',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Picasso', // wurflkey: acer_iconia_tab_a500_ver1_suban40
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://support.acer.com/UAprofile/Acer_A500_IML74K_Profile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://support.acer.com/UAprofile/Acer_A500_IML74K_Profile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 217,
-        'physical_screen_height'  => 136,
-        'columns'                 => 80,
-        'rows'                    => 25,
-        'max_image_width'         => 980,
-        'max_image_height'        => 472,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -169,7 +165,9 @@ class AcerIconiaA500
      * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA500
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
@@ -192,48 +190,48 @@ class AcerIconiaA500
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 3.2:
-                $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban32');
-                $this->setCapability('colors', 65536);
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 3.2:
+                        $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban32');
+                        $this->setCapability('colors', 65536);
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban40');
+                        break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban41');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 4.0:
-                $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban40');
-                break;
-            case 4.1:
-                $this->setCapability('wurflKey', 'acer_iconia_tab_a500_ver1_suban41');
-                break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

@@ -58,39 +58,37 @@ class AmazonKftt
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'amazon_kindle_fire_hd7_ver1_subuadesktop', // not in wurfl
+        'wurflKey'               => 'amazon_kindle_fire_hd7_ver1_subuadesktop', // not in wurfl
 
         // device
-        'model_name'              => 'KFTT',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
+        'model_name'             => 'KFTT',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 95,
-        'physical_screen_height'  => 151,
-        'columns'                 => 80,
-        'rows'                    => 100,
-        'max_image_width'         => 580,
-        'max_image_height'        => 1000,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 256,
-
+        'physical_screen_width'  => 95,
+        'physical_screen_height' => 151,
+        'columns'                => 80,
+        'rows'                   => 100,
+        'max_image_width'        => 580,
+        'max_image_height'       => 1000,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 256,
         // sms
-        'sms_enabled'             => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
+        'sms_enabled'            => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
 
         // chips
-        'nfc_support'             => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
+        'nfc_support'            => true, // wurflkey: amazon_kindle_fire_hd7_ver1_subuadesktop
     );
 
     /**
@@ -178,7 +176,9 @@ class AmazonKftt
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

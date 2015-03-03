@@ -102,7 +102,7 @@ class MailRu
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MailRu();
     }
 
     /**

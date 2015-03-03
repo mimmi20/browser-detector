@@ -52,39 +52,35 @@ class HtcMdaVarioIi
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'tmobile_mda_varioii_ver1', // not in wurfl
+        'wurflKey'               => 'tmobile_mda_varioii_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'MDA Vario II',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'MDA Vario II',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'stylus',
-
+        'model_name'             => 'MDA Vario II',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'MDA Vario II',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'stylus',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/tmo/mdavario-2.1.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/tmo/mdavario-2.1.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 43,
-        'physical_screen_height'  => 57,
-        'columns'                 => 16,
-        'rows'                    => 36,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 43,
+        'physical_screen_height' => 57,
+        'columns'                => 16,
+        'rows'                   => 36,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

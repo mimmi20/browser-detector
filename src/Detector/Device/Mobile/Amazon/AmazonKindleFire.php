@@ -55,39 +55,36 @@ class AmazonKindleFire
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl
+        'wurflKey'               => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl
 
         // device
-        'model_name'              => 'D01400', // wurflkey: amazon_kindle_fire_ver1_suban40rom
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Kindle Fire', // wurflkey: amazon_kindle_fire_ver1_suban40rom
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'model_name'             => 'D01400', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Kindle Fire', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen', // wurflkey: amazon_kindle_fire_ver1_suban40rom
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

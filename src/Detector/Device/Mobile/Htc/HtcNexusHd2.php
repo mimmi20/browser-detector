@@ -52,39 +52,35 @@ class HtcNexusHd2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_hd2_android_ver1_subuanexus', // not in wurfl
+        'wurflKey'               => 'htc_hd2_android_ver1_subuanexus', // not in wurfl
 
         // device
-        'model_name'              => 'HD2',
-        'model_extra_info'        => 'Nexus HD2 ROM',
-        'marketing_name'          => 'HD2',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'HD2',
+        'model_extra_info'       => 'Nexus HD2 ROM',
+        'marketing_name'         => 'HD2',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 94,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 94,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

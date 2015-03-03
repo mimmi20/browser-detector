@@ -55,39 +55,35 @@ class HtcX515m
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_evo_3d_ver1_suban40m', // not in wurfl
+        'wurflKey'               => 'htc_evo_3d_ver1_suban40m', // not in wurfl
 
         // device
-        'model_name'              => 'X515m',
-        'model_extra_info'        => 'aka Shooter',
-        'marketing_name'          => 'EVO 3D',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'X515m',
+        'model_extra_info'       => 'aka Shooter',
+        'marketing_name'         => 'EVO 3D',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PG863/ua-profile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PG863/ua-profile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -99,7 +95,12 @@ class HtcX515m
     {
         if (!$this->utils->checkIfContains(
             array(
-                'HTC/EVO_3D', 'HTC EVO 3D', 'HTC_EVO3D', 'HTC EVO 3D X515m', 'HTC_EVO3D_X515m', 'EVO3D_X515m',
+                'HTC/EVO_3D',
+                'HTC EVO 3D',
+                'HTC_EVO3D',
+                'HTC EVO 3D X515m',
+                'HTC_EVO3D_X515m',
+                'EVO3D_X515m',
                 'HTC_EVO_3D_GSM_X515m'
             )
         )
@@ -174,13 +175,16 @@ class HtcX515m
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: htc_evo_3d_ver1_suban40
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
+
         //$engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

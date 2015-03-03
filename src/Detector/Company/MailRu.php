@@ -43,12 +43,12 @@ class MailRu extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'mail.ru';
+    protected $name = 'Mail.Ru Group';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'mail.ru';
+    protected $brandname = 'Mail.Ru';
 }

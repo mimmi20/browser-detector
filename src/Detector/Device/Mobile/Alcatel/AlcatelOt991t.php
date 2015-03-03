@@ -52,39 +52,35 @@ class AlcatelOt991t
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'OT-991T',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'One Touch 991T Play', // wurflkey: alcatel_ot991_ver1_subuad
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'OT-991T',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'One Touch 991T Play', // wurflkey: alcatel_ot991_ver1_subuad
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 85,
-        'columns'                 => 36,
-        'rows'                    => 10,
-        'max_image_width'         => 300,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 85,
+        'columns'                => 36,
+        'rows'                   => 10,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

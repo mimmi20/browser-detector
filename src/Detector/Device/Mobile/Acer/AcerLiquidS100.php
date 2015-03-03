@@ -52,39 +52,35 @@ class AcerLiquidS100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'acer_liquid_ver1_subandroid_2_1', // not in wurfl
+        'wurflKey'               => 'acer_liquid_ver1_subandroid_2_1', // not in wurfl
 
         // device
-        'model_name'              => 'Acer S100',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Liquid',
-        'has_qwerty_keyboard'     => false, // wurflkey: acer_liquid_ver1_subandroid_2_1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Acer S100',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Liquid',
+        'has_qwerty_keyboard'    => false, // wurflkey: acer_liquid_ver1_subandroid_2_1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 28,
-        'rows'                    => 24,
-        'max_image_width'         => 480,
-        'max_image_height'        => 800,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 28,
+        'rows'                   => 24,
+        'max_image_width'        => 480,
+        'max_image_height'       => 800,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

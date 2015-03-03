@@ -52,39 +52,35 @@ class AlcatelOt216
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'OT-216',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'OT-216',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'OT-216',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'OT-216',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 18,
-        'rows'                    => 6,
-        'max_image_width'         => 120,
-        'max_image_height'        => 120,
-        'resolution_width'        => 128,
-        'resolution_height'       => 128,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 18,
+        'rows'                   => 6,
+        'max_image_width'        => 120,
+        'max_image_height'       => 120,
+        'resolution_width'       => 128,
+        'resolution_height'      => 128,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

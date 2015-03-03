@@ -56,39 +56,35 @@ class HtcA9292Apa9292kt
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sprint_apa9292_ver1', // not in wurfl
+        'wurflKey'               => 'sprint_apa9292_ver1', // not in wurfl
 
         // device
-        'model_name'              => '9292',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'EVO 4G',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => '9292',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'EVO 4G',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://device.sprintpcs.com/HTC/APA9292KT/1226511.rdf',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://device.sprintpcs.com/HTC/APA9292KT/1226511.rdf',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 56,
-        'physical_screen_height'  => 93,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 460,
-        'max_image_height'        => 760,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 56,
+        'physical_screen_height' => 93,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 460,
+        'max_image_height'       => 760,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class HtcA9292Apa9292kt
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -180,43 +178,43 @@ class HtcA9292Apa9292kt
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.3:
-                $this->setCapability('wurflKey', 'sprint_apa9292_ver1_sub233');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'sprint_apa9292_ver1_sub233');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

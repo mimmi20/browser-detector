@@ -38,6 +38,7 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcDesireSv
+class HtcDesire500
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,29 +56,29 @@ class HtcDesireSv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_desire_s_ver1', // not in wurfl
+        'wurflKey'               => 'htc_desire_500_ver1_subuauscore', // not in wurfl
 
         // device
-        'model_name'             => 'Desire SV', // wurflkey: htc_desire_s_ver1
+        'model_name'             => 'Desire 500',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Desire SV',
+        'marketing_name'         => 'Desire 500',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml',
+        'uaprof2'                => 'http://www.htcmms.com.tw/Android/Telstra/Desire/ua-profile.xml',
         'uaprof3'                => null,
         'unique'                 => true,
         // display
         'physical_screen_width'  => 34,
         'physical_screen_height' => 50,
-        'columns'                => 25,
-        'rows'                   => 21,
+        'columns'                => 60,
+        'rows'                   => 40,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 480, // wurflkey: htc_desire_s_ver1
-        'resolution_height'      => 800, // wurflkey: htc_desire_s_ver1
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -93,7 +94,7 @@ class HtcDesireSv
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_DesireSV', 'Desire SV', 'HTC/DesireSV', 'HTC Desire SV'))) {
+        if (!$this->utils->checkIfContains(array('Desire_500'))) {
             return false;
         }
 
@@ -170,10 +171,15 @@ class HtcDesireSv
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        // Android 2.3
-        $engine->setCapability('wml_1_1', true);
         $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (2.3 == (float)$osVersion) {
+            $engine->setCapability('bmp', false);
+        }
 
         return $this;
     }

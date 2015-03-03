@@ -52,39 +52,35 @@ class HtcSpark
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_spark_ver1_subtrophy75', // not in wurfl
+        'wurflKey'               => 'htc_spark_ver1_subtrophy75', // not in wurfl
 
         // device
-        'model_name'              => 'Spark',
-        'model_extra_info'        => null,
-        'marketing_name'          => '7 Trophy', // wurflkey: htc_spark_ver1_subtrophy75
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Spark',
+        'model_extra_info'       => null,
+        'marketing_name'         => '7 Trophy', // wurflkey: htc_spark_ver1_subtrophy75
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/voda/Spark-1.0.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/voda/Spark-1.0.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50, // wurflkey: htc_spark_ver1_subtrophy75
-        'physical_screen_height'  => 83,
-        'columns'                 => 16,
-        'rows'                    => 36,
-        'max_image_width'         => 480,
-        'max_image_height'        => 800,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50, // wurflkey: htc_spark_ver1_subtrophy75
+        'physical_screen_height' => 83,
+        'columns'                => 16,
+        'rows'                   => 36,
+        'max_image_width'        => 480,
+        'max_image_height'       => 800,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

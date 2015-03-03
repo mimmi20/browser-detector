@@ -56,40 +56,36 @@ class HtcOneS
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'htc_one_s_ver1', // not in wurfl
+        'wurflKey'               => 'htc_one_s_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'PJ401',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'One S',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'PJ401',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'One S',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
         // wurflkey: htc_one_s_ver1
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 54,
-        'physical_screen_height'  => 96,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 360,
-        'max_image_height'        => 400,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 54,
+        'physical_screen_height' => 96,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 360,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -174,7 +170,9 @@ class HtcOneS
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -186,45 +184,45 @@ class HtcOneS
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 4.0:
-            //    $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore');
-            //    break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        //    $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore');
+                        //    break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore_subuachrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

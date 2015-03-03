@@ -192,8 +192,7 @@ class Iphone
 
         $this->setCapability('model_extra_info', $osVersion);
 
-        if ('Safari' == $browser->getName()
-            && !$browser->detectVersion()->getVersion()
+        if ('Safari' == $browser->getName() && !$browser->detectVersion()->getVersion()
         ) {
             $browser->detectVersion()->setVersion($osVersion);
         }

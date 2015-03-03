@@ -52,39 +52,35 @@ class ArchosA101it
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'archos_a101it_ver1', // not in wurfl
+        'wurflKey'               => 'archos_a101it_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'A101IT',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'A101IT',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'A101IT',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'A101IT',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 240,
-        'max_image_height'        => 320,
-        'resolution_width'        => 320, // wurflkey: archos_a101it_ver1_subua22
-        'resolution_height'       => 240,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
+        'resolution_width'       => 320, // wurflkey: archos_a101it_ver1_subua22
+        'resolution_height'      => 240,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

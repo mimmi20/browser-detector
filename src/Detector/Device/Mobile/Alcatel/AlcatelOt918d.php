@@ -55,39 +55,35 @@ class AlcatelOt918d
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'alcatel_ot918_ver1', // not in wurfl
+        'wurflKey'               => 'alcatel_ot918_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'OT-918D',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'One Touch 918D',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'OT-918D',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'One Touch 918D',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_918D.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_918D.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 46,
-        'physical_screen_height'  => 68,
-        'columns'                 => 36,
-        'rows'                    => 10,
-        'max_image_width'         => 300,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 46,
+        'physical_screen_height' => 68,
+        'columns'                => 36,
+        'rows'                   => 10,
+        'max_image_width'        => 300,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -98,7 +94,8 @@ class AlcatelOt918d
     public function canHandle()
     {
         $phones = array(
-            'ALCATEL ONE TOUCH 918D', 'ALCATEL_one_touch_918D',
+            'ALCATEL ONE TOUCH 918D',
+            'ALCATEL_one_touch_918D',
             'ALCATEL_OT_918D'
         );
 
@@ -173,7 +170,9 @@ class AlcatelOt918d
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
